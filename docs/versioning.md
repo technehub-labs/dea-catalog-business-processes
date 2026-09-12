@@ -31,7 +31,8 @@ the `CHANGELOG.md` format. Versioning is SemVer once a tag is cut.
 | Stage | When | Bump |
 |---|---|---|
 | `0.1.0` | **cut** 2026-09-09 (CR-BP-26). First release; lands the seven-domain programme + ECF v2.5.0 + Phase 20 closure. | n/a (initial) |
-| `0.2.0` | **cut** 2026-09-09 (CR-BP-29). Register v3 -> v4 re-derivation against ECF v2.5.0 (CR-BP-28); content unchanged from v0.1.0; register-version stamp only. | minor (register-version stamp) |
+| `0.2.0` | **abandoned** 2026-09-09 (CR-BP-29). Register v3 -> v4 re-derivation against ECF v2.5.0 (CR-BP-28); content unchanged from v0.1.0; register-version stamp only. The carrier CR-BP-29 (PR #66) merged but the tag was never cut per user directive 2026-09-12 ("ignore the cut"). Preserved as a CHANGELOG `## [v0.2.0]` block as a historical artifact; the first git tag after `v0.1.0` is `v0.3.0`. | minor (register-version stamp) — abandoned, no tag pushed |
+| `0.3.0` | **cut** 2026-09-12 (CR-BP-41). Substantial post-v0.1.0 evolution: ECF v2.3.0/v2.4.0/v2.5.0 cascade (CR-BP-17, -18, -23); BP-32/33/34 tranche plan (CR-BP-32, -33, -34a-d, -35, -36, -37, -38); XRI asset + gate promotion (CR-BP-37 + CR-BP-40); CHANGELOG + README reconciliation (CR-BP-39); carrier CRs (CR-BP-30, -31). Catalogue is materially different from v0.1.0: 17 commits; 5 new conformance gates ([14]–[18]) bringing total to 23 (10 blocking + 13 advisory); 23 conformance gates vs the 15-gate v0.1.0 baseline. | minor (canonical admission wave + Domain rename cascade) |
 | `0.x.y` (x >= 3) | `0.x` evolution: new admission waves, new conformance rules, documentation reconciliations | minor on a canonical admission wave or a Domain rename; patch on a documentation / governance-artifact reconciliation |
 | `1.0.0` | The catalogue is stable in a stronger sense than "Phase 20 closed for one programme": the upstream ECF is also at a stable point and a sustained conformance pass is observed | major |
 

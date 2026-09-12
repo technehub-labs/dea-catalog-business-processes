@@ -9,14 +9,14 @@ message: >-
   specifically.
 title: "dea-catalog-processes"
 type: software
-version: 0.2.0
-date-released: 2026-09-09
+version: 0.3.0
+date-released: 2026-09-12
 license: Apache-2.0
 authors:
   - name: TechNeHub Labs
     alias: technehub-labs
 repository-code: "https://github.com/technehub-labs/dea-catalog-processes"
-url: "https://github.com/technehub-labs/dea-catalog-processes/releases/tag/v0.2.0"
+url: "https://github.com/technehub-labs/dea-catalog-processes/releases/tag/v0.3.0"
 keywords:
   - enterprise-architecture
   - business-process
