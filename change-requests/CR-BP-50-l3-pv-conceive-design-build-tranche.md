@@ -1,0 +1,86 @@
+# CR-BP-50: L3 Activity PV Conceive + Design + Build Tranche
+
+**Status**: Proposed
+**Layer**: L3
+**Owner**: Coder (for eaojnr)
+**Date**: 2026-09-13
+**Carrier**: Ninth L3 (Activity) contribution slice; first of two tranches completing the ProductAndValue domain's L3 coverage (this slice: Conceive + Design + Build; Improve + Operate follow as CR-BP-51).
+**Depends on**: CR-BP-32 (Activity Model; ACT-001..010), CR-BP-42 (pilot), CR-BP-43..49 (scaled tranches)
+**Lands against**: 126 canonical BP records, 35 canonical PG records, 35 canonical PC records, 209 canonical Activity records; 23 conformance gates CONFORMANT; v0.3.0 tagged (CR-BP-41)
+
+---
+
+## 1. Change Request
+
+Land L3 Activity decompositions for the 10 Business Processes of ProductAndValue's Conceive, Design, and Build stages.
+
+Per-BP depositions (4 Activities each, 40 total):
+
+| Coordinate | Business Process | Activities |
+|---|---|---|
+| PV / Conceive | `dea:process-frame-value-proposition-thesis` | Bound Proposition Scope; Identify Target Parties; Articulate Value Claim; Commit Proposition Thesis |
+| PV / Conceive | `dea:process-frame-portfolio-direction` | Frame Investment Envelopes; Order Portfolio Priorities; Assess Portfolio Balance; Commit Portfolio Direction |
+| PV / Conceive | `dea:process-frame-innovation-thesis` | Select Innovation Focus Areas; Bound Experimentation Boundaries; Assess Innovation Option Space; Commit Innovation Thesis |
+| PV / Design | `dea:process-design-product-and-service-propositions` | Design Proposition Architecture; Specify Proposition Components; Design Configuration Options; Commit Proposition Design |
+| PV / Design | `dea:process-design-packaging-and-configuration` | Design Packaging Formats; Design Segment Configurations; Define Configuration Rules; Commit Packaging Design |
+| PV / Design | `dea:process-design-innovation-experiment` | Formulate Experiment Hypothesis; Define Success Criteria; Bound Experiment Timebox; Commit Experiment Design |
+| PV / Build | `dea:process-build-innovation-prototype` | Construct Prototype; Instrument Prototype; Verify Prototype Readiness; Document Prototype Build |
+| PV / Build | `dea:process-build-service-capability` | Stand Up Service Delivery Mechanism; Prepare Service Personnel; Integrate Service with Delivery Model; Verify Service Capability Readiness |
+| PV / Build | `dea:process-develop-product-variants` | Construct Product Variants; Verify Variant Conformance; Stage Variants for Readiness; Document Variant Baseline |
+| PV / Build | `dea:process-prepare-market-readiness` | Assemble Go-to-Market Assets; Set Launch Pricing; Configure Launch Channels; Certify Market Readiness |
+
+Every candidate was tested against the four L2 criteria (CR-BP-32 §5); all 40 FAIL Standalone Executability and Resource Dedication and classify as Activities. Cohesion scores (§6) are recorded per candidate in each research deposition.
+
+## 2. Deposition mechanics (pattern per CR-BP-42 §2)
+
+1. **Research deposition** per BP at `entities/v1-alpha/dea:process-<bp>/research/l3-candidate-universe.yaml` (+ state-directory README.md).
+2. **Canonical landing**: one record per Activity, conforming to `schemas/entities/activity.schema.json`; `ecfConformance` blocks inherit each BP's own canonical coordinate identifier (read from the BP record, not assumed). All 40 records pass Draft-07 validation.
+3. **Decomposition boundary**: all records carry `decomposition_boundary: l4-reached` (CR-BP-32 §12).
+4. **Bidirectional traceability (ACT-010)**: each parent BP gains `metadata.activity_references[]` and a CR-BP-50 `change_history` entry. All 10 records carry the current metadata shape. Versions unchanged per SIV-004.
+5. **Reconciliation artifacts**: baseline and conformance report regenerated (445 records, all at L4).
+6. **Count assertion updates**: ACT suite 209 -> 249; EXE suite 370 -> 410; conformance-report test 405 -> 445.
+
+## 3. Gate posture
+
+- Gate [15] ACT-001..010 live run: **CONFORMANT, 249 Activity records, 0 findings**.
+- Gate [8] ECF conformance: **410 entries conform** (was 370).
+- Full suite: **23 gates, 0 blocking, 0 advisory failures**.
+
+## 4. Repository changes
+
+| Path | Status | Notes |
+|---|---|---|
+| `entities/v1-alpha/dea:activity-*/` (40 dirs) | NEW | Canonical Activity records (4 per BP) |
+| `entities/v1-alpha/dea:process-<bp>/research/` (x10) | NEW | Depositions + READMEs |
+| `entities/v1-alpha/dea:process-<bp>/dea:process-<bp>.yaml` (x10) | MOD | `metadata.activity_references[]` + CR-BP-50 change_history |
+| `tests/test_check_activity_model.py` | MOD | Count assertions: 249 Activity records |
+| `tests/test_check_execution_boundary.py` | MOD | Count assertions: 410 records checked |
+| `tests/test_architectural_regression.py` | MOD | Conformance report: 445 records, all L4 |
+| `reconciliation/baseline/v1.yaml` | MOD | Regenerated (10 mutated parent BP hash lines) |
+| `reconciliation/conformance_report.yaml` | MOD | Regenerated by gate [10]; 445 records |
+| `CATALOG.yaml` | MOD | Regenerator bumps `open_change_requests` 61 -> 62 |
+| `change-requests/CR-BP-50-l3-pv-conceive-design-build-tranche.md` | NEW | Slice carrier CR (this document) |
+| `change-requests/README.md` | MOD | CR-BP-50 row added |
+
+## 5. What this CR is NOT
+
+- **NOT a Task (L4) landing.** All Activities terminate at `l4-reached`.
+- **NOT a schema, validator-rule, CI, or gate change.** Wiring from CR-BP-42 is reused unchanged.
+- **NOT the complete ProductAndValue L3 sweep.** Improve + Operate (6 BPs) follow as CR-BP-51.
+- **NOT a remediation of the dangling `dea:process-frame-financial-policy-thesis` composes reference** (queued separately).
+
+## 6. Acceptance criteria
+
+1. All 40 new Activity records validate against `schemas/entities/activity.schema.json` (Draft-07).
+2. `python3 scripts/check_activity_model.py` runs CONFORMANT: 249 Activity records, 0 findings.
+3. Each of the 10 parent BPs declares its 4 Activity ids in `metadata.activity_references[]` (ACT-010).
+4. `python3 scripts/check_ecf_conformance.py` reports 410 entries conform.
+5. `python3 scripts/build_inventory.py --self-test --strict` passes after regeneration.
+6. Full pytest suite passes; `scripts/conformance_result.py` remains CONFORMANT (23 gates).
+7. `python3 scripts/check_cr_metadata.py` reports 0 new findings.
+8. `python3 scripts/check_catalog_index.py --strict` passes (all 10 new research/ state directories carry README.md).
+9. No validator-rule, schema, CI, or governance-decision change.
+
+## 7. Result
+
+CR-BP-50 lands L3 coverage for ProductAndValue's Conceive, Design, and Build stages: 40 new canonical Activity records across 10 Business Processes, bringing the catalog to 249 Activity records at 0 findings against gate [15]. After this slice, ProductAndValue has L3 coverage in 3 of 5 stages; Improve + Operate complete the domain as CR-BP-51. The structured deposition pattern has held across nine slices without modification.

@@ -40,6 +40,11 @@ ecfConformance:
 metadata:
   established_by: CR-BP-21c
   established_at: '2026-09-08'
+  activity_references:
+  - dea:activity-construct-product-variants
+  - dea:activity-verify-variant-conformance
+  - dea:activity-stage-variants-for-readiness
+  - dea:activity-document-variant-baseline
   change_history:
   - cr: CR-BP-21c
     date: '2026-09-08'
@@ -51,6 +56,18 @@ metadata:
       hybrid agents without reclassification. One of the 5 L2
       landings targeting the 5 ratified cells of the
       ProductAndValue domain.
+  - cr: CR-BP-50
+    date: '2026-09-13'
+    change: |
+      L3 decomposition of this Business Process: 4 Activities
+      landed under the structured deposition pattern (research
+      deposition at research/l3-candidate-universe.yaml, then
+      canonical Activity records) as part of the CR-BP-50
+      ProductAndValue Conceive + Design + Build tranche. Adds
+      metadata.activity_references[] back-references per ACT-010
+      bidirectional traceability. Additive metadata-only change;
+      BP identity and semantics unchanged, so version remains
+      unchanged per SIV-004 (CR-BP-34d).
 links:
 - rel: change-request
   href: change-requests/CR-BP-21c-product-value-landing.md
