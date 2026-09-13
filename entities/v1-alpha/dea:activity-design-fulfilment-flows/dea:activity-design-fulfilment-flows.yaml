@@ -1,0 +1,34 @@
+id: dea:activity-design-fulfilment-flows
+type: Activity
+name: Design Fulfilment Flows
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: "The cohesive grouping of work within Design Delivery Model that designs the fulfilment flows realizing the framed fulfilment patterns."
+belongs_to_business_process: dea:process-design-delivery-model
+cohesion_rationale: "Constituent work shares a single flow concern (order to delivery paths), one input class (fulfilment patterns, channel configurations), and one output (the fulfilment flow designs). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6)."
+decomposition_boundary: l4-reached
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: EnablementAndOperations
+    stage: Design
+    identifier: ecf:enablementAndOperations.design
+metadata:
+  established_by: CR-BP-46
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-46
+    date: '2026-09-13'
+    change: |
+      Initial L3 Activity entry; lands as part of the CR-BP-46
+      EnablementAndOperations Conceive + Design tranche (pattern proven
+      by CR-BP-42, CR-BP-43, CR-BP-44, CR-BP-45). Classified per CR-BP-32
+      section 5 (fails standalone executability and resource dedication);
+      decomposition boundary marker per CR-BP-32 section 12 pending Task
+      records (dea:Task lifecycle: proposed).

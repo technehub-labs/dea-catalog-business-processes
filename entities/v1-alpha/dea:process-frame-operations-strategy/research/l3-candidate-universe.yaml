@@ -1,0 +1,104 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-46
+status: candidate-not-canonical; subject to review
+parent_business_process: dea:process-frame-operations-strategy
+coordinate:
+  domain: EnablementAndOperations
+  stage: Conceive
+  process_context: dea:pc-oe-conceive
+  process_group: dea:group-operations-model-conception
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42,
+  scaled by CR-BP-43, CR-BP-44, and CR-BP-45)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/dea:process-frame-operations-strategy
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: dea:activity-assess-execution-engine-context
+  name: "Assess Execution Engine Context"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Engine state assessment; shift signal review; strategy scope bounding"
+  out_of_scope:
+  - "Strategy commitment (dea:activity-commit-operations-strategy)"
+  - "Delivery model conception (dea:process-frame-delivery-model-conception)"
+  evidence:
+  - "Parent BP trigger (new engine, reframe, or delivery-model shift)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-46
+- id: dea:activity-bound-delivery-model-envelope
+  name: "Bound Delivery Model Envelope"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Envelope dimensions; envelope constraints; envelope rationale"
+  out_of_scope:
+  - "Delivery model conception detail (dea:process-frame-delivery-model-conception)"
+  - "Technology and asset framing (dea:activity-frame-enablement-and-asset-direction)"
+  evidence:
+  - "Parent BP outcome (bounded delivery model)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-46
+- id: dea:activity-frame-enablement-and-asset-direction
+  name: "Frame Enablement and Asset Direction"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Enablement direction framing; asset direction framing; direction-to-envelope coherence"
+  out_of_scope:
+  - "Detailed enablement framing (dea:process-frame-technology-enablement-approach)"
+  - "Detailed asset framing (dea:process-frame-physical-asset-approach)"
+  evidence:
+  - "Parent BP outcome (technology enablement approach and physical asset approach)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-46
+- id: dea:activity-commit-operations-strategy
+  name: "Commit Operations Strategy"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Strategy consolidation; coherence review; commitment and handoff to conception and design"
+  out_of_scope:
+  - "Strategy governance approval (GovernanceAndExistence concern)"
+  - "Operations model design (dea:process-design-operations-model)"
+  evidence:
+  - "Parent BP outcome (operations strategy committed)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-46
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."
