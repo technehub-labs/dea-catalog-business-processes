@@ -2,10 +2,10 @@ catalog:
   abbreviation: BP
   counts:
     candidates: 0
-    canonical: 233
-    entities: 234
-    open_change_requests: 57
-    research_files: 84
+    canonical: 269
+    entities: 270
+    open_change_requests: 58
+    research_files: 102
     retired: 1
   cross_cutting:
     change_requests: change-requests/
@@ -58,6 +58,61 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-assess-churn-risk/dea:activity-assess-churn-risk.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-assess-enablement-fit
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-assess-enablement-fit/dea:activity-assess-enablement-fit.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-assess-execution-engine-context
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-assess-execution-engine-context/dea:activity-assess-execution-engine-context.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-assess-footprint-options
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-assess-footprint-options/dea:activity-assess-footprint-options.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-bound-asset-lifecycle-envelopes
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-bound-asset-lifecycle-envelopes/dea:activity-bound-asset-lifecycle-envelopes.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-bound-delivery-model-envelope
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-bound-delivery-model-envelope/dea:activity-bound-delivery-model-envelope.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -120,10 +175,43 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-commit-delivery-model-conception
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-commit-delivery-model-conception/dea:activity-commit-delivery-model-conception.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-commit-delivery-model-design
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-commit-delivery-model-design/dea:activity-commit-delivery-model-design.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-commit-demand-model
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-commit-demand-model/dea:activity-commit-demand-model.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-commit-facility-blueprint
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-commit-facility-blueprint/dea:activity-commit-facility-blueprint.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -142,10 +230,76 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-commit-logistics-design
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-commit-logistics-design/dea:activity-commit-logistics-design.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-commit-market-demand-thesis
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-commit-market-demand-thesis/dea:activity-commit-market-demand-thesis.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-commit-operations-model-design
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-commit-operations-model-design/dea:activity-commit-operations-model-design.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-commit-operations-strategy
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-commit-operations-strategy/dea:activity-commit-operations-strategy.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-commit-physical-asset-approach
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-commit-physical-asset-approach/dea:activity-commit-physical-asset-approach.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-commit-platform-architecture
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-commit-platform-architecture/dea:activity-commit-platform-architecture.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-commit-technology-enablement-approach
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-commit-technology-enablement-approach/dea:activity-commit-technology-enablement-approach.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -186,6 +340,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-configure-channels
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-configure-channels/dea:activity-configure-channels.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-coordinate-daily-service-operations
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -219,10 +384,43 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-define-deployment-topology
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-define-deployment-topology/dea:activity-define-deployment-topology.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-define-experience-principles
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-define-experience-principles/dea:activity-define-experience-principles.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-design-facility-layouts
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-design-facility-layouts/dea:activity-design-facility-layouts.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-design-fulfilment-flows
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-design-fulfilment-flows/dea:activity-design-fulfilment-flows.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -241,10 +439,43 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-design-integration-patterns
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-design-integration-patterns/dea:activity-design-integration-patterns.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-design-journey-handoffs
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-design-journey-handoffs/dea:activity-design-journey-handoffs.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-design-routing-logic
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-design-routing-logic/dea:activity-design-routing-logic.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-design-service-levels
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-design-service-levels/dea:activity-design-service-levels.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -395,10 +626,65 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-frame-enablement-and-asset-direction
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-frame-enablement-and-asset-direction/dea:activity-frame-enablement-and-asset-direction.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-frame-footprint-principles
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-frame-footprint-principles/dea:activity-frame-footprint-principles.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-frame-fulfilment-patterns
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-frame-fulfilment-patterns/dea:activity-frame-fulfilment-patterns.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-frame-segment-thesis
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-frame-segment-thesis/dea:activity-frame-segment-thesis.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-frame-service-level-envelopes
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-frame-service-level-envelopes/dea:activity-frame-service-level-envelopes.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-frame-sourcing-principles
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-frame-sourcing-principles/dea:activity-frame-sourcing-principles.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -439,6 +725,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-identify-platform-families
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-identify-platform-families/dea:activity-identify-platform-families.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-integrate-channels-with-experience
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -454,6 +751,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-integrate-demand-engine-with-channels/dea:activity-integrate-demand-engine-with-channels.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-integrate-model-components
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-integrate-model-components/dea:activity-integrate-model-components.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -560,6 +868,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-model-capacity-envelopes
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-model-capacity-envelopes/dea:activity-model-capacity-envelopes.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-monitor-platform-availability
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -608,6 +927,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-plan-transport-and-deliveries/dea:activity-plan-transport-and-deliveries.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-position-network-nodes
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-position-network-nodes/dea:activity-position-network-nodes.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -769,6 +1099,28 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-select-channel-patterns
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-select-channel-patterns/dea:activity-select-channel-patterns.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-select-transport-modes
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-select-transport-modes/dea:activity-select-transport-modes.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-set-experience-quality-criteria
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -780,10 +1132,54 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-specify-equipment
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-specify-equipment/dea:activity-specify-equipment.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-specify-interaction-patterns
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-specify-interaction-patterns/dea:activity-specify-interaction-patterns.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-specify-operating-rhythms
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-specify-operating-rhythms/dea:activity-specify-operating-rhythms.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-specify-platform-components
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-specify-platform-components/dea:activity-specify-platform-components.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-structure-operations-model
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-structure-operations-model/dea:activity-structure-operations-model.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -1595,10 +1991,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-design-delivery-model
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-design-delivery-model/dea:process-design-delivery-model.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -1606,10 +2002,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-design-facility-and-asset-blueprint
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-design-facility-and-asset-blueprint/dea:process-design-facility-and-asset-blueprint.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -1661,10 +2057,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-design-logistics-and-routing
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-design-logistics-and-routing/dea:process-design-logistics-and-routing.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -1683,10 +2079,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-design-operations-model
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-design-operations-model/dea:process-design-operations-model.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -1793,10 +2189,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-design-technology-platform-architecture
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-design-technology-platform-architecture/dea:process-design-technology-platform-architecture.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -1925,10 +2321,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-frame-delivery-model-conception
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-frame-delivery-model-conception/dea:process-frame-delivery-model-conception.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -1958,10 +2354,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-frame-operations-strategy
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-frame-operations-strategy/dea:process-frame-operations-strategy.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -1991,10 +2387,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-frame-physical-asset-approach
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-frame-physical-asset-approach/dea:process-frame-physical-asset-approach.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -2035,10 +2431,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-frame-technology-enablement-approach
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-frame-technology-enablement-approach/dea:process-frame-technology-enablement-approach.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -2611,6 +3007,21 @@ catalog:
   - entity_id: dea:activity-assess-churn-risk
     files: []
     path: entities/v1-alpha/dea:activity-assess-churn-risk/research/
+  - entity_id: dea:activity-assess-enablement-fit
+    files: []
+    path: entities/v1-alpha/dea:activity-assess-enablement-fit/research/
+  - entity_id: dea:activity-assess-execution-engine-context
+    files: []
+    path: entities/v1-alpha/dea:activity-assess-execution-engine-context/research/
+  - entity_id: dea:activity-assess-footprint-options
+    files: []
+    path: entities/v1-alpha/dea:activity-assess-footprint-options/research/
+  - entity_id: dea:activity-bound-asset-lifecycle-envelopes
+    files: []
+    path: entities/v1-alpha/dea:activity-bound-asset-lifecycle-envelopes/research/
+  - entity_id: dea:activity-bound-delivery-model-envelope
+    files: []
+    path: entities/v1-alpha/dea:activity-bound-delivery-model-envelope/research/
   - entity_id: dea:activity-build-acquisition-engines
     files: []
     path: entities/v1-alpha/dea:activity-build-acquisition-engines/research/
@@ -2626,15 +3037,42 @@ catalog:
   - entity_id: dea:activity-commit-customer-strategy
     files: []
     path: entities/v1-alpha/dea:activity-commit-customer-strategy/research/
+  - entity_id: dea:activity-commit-delivery-model-conception
+    files: []
+    path: entities/v1-alpha/dea:activity-commit-delivery-model-conception/research/
+  - entity_id: dea:activity-commit-delivery-model-design
+    files: []
+    path: entities/v1-alpha/dea:activity-commit-delivery-model-design/research/
   - entity_id: dea:activity-commit-demand-model
     files: []
     path: entities/v1-alpha/dea:activity-commit-demand-model/research/
+  - entity_id: dea:activity-commit-facility-blueprint
+    files: []
+    path: entities/v1-alpha/dea:activity-commit-facility-blueprint/research/
   - entity_id: dea:activity-commit-journey-design
     files: []
     path: entities/v1-alpha/dea:activity-commit-journey-design/research/
+  - entity_id: dea:activity-commit-logistics-design
+    files: []
+    path: entities/v1-alpha/dea:activity-commit-logistics-design/research/
   - entity_id: dea:activity-commit-market-demand-thesis
     files: []
     path: entities/v1-alpha/dea:activity-commit-market-demand-thesis/research/
+  - entity_id: dea:activity-commit-operations-model-design
+    files: []
+    path: entities/v1-alpha/dea:activity-commit-operations-model-design/research/
+  - entity_id: dea:activity-commit-operations-strategy
+    files: []
+    path: entities/v1-alpha/dea:activity-commit-operations-strategy/research/
+  - entity_id: dea:activity-commit-physical-asset-approach
+    files: []
+    path: entities/v1-alpha/dea:activity-commit-physical-asset-approach/research/
+  - entity_id: dea:activity-commit-platform-architecture
+    files: []
+    path: entities/v1-alpha/dea:activity-commit-platform-architecture/research/
+  - entity_id: dea:activity-commit-technology-enablement-approach
+    files: []
+    path: entities/v1-alpha/dea:activity-commit-technology-enablement-approach/research/
   - entity_id: dea:activity-conduct-cycle-counts
     files: []
     path: entities/v1-alpha/dea:activity-conduct-cycle-counts/research/
@@ -2644,6 +3082,9 @@ catalog:
   - entity_id: dea:activity-conduct-relationship-reviews
     files: []
     path: entities/v1-alpha/dea:activity-conduct-relationship-reviews/research/
+  - entity_id: dea:activity-configure-channels
+    files: []
+    path: entities/v1-alpha/dea:activity-configure-channels/research/
   - entity_id: dea:activity-coordinate-daily-service-operations
     files: []
     path: entities/v1-alpha/dea:activity-coordinate-daily-service-operations/research/
@@ -2653,15 +3094,33 @@ catalog:
   - entity_id: dea:activity-define-demand-shaping-levers
     files: []
     path: entities/v1-alpha/dea:activity-define-demand-shaping-levers/research/
+  - entity_id: dea:activity-define-deployment-topology
+    files: []
+    path: entities/v1-alpha/dea:activity-define-deployment-topology/research/
   - entity_id: dea:activity-define-experience-principles
     files: []
     path: entities/v1-alpha/dea:activity-define-experience-principles/research/
+  - entity_id: dea:activity-design-facility-layouts
+    files: []
+    path: entities/v1-alpha/dea:activity-design-facility-layouts/research/
+  - entity_id: dea:activity-design-fulfilment-flows
+    files: []
+    path: entities/v1-alpha/dea:activity-design-fulfilment-flows/research/
   - entity_id: dea:activity-design-hypothesis-tests
     files: []
     path: entities/v1-alpha/dea:activity-design-hypothesis-tests/research/
+  - entity_id: dea:activity-design-integration-patterns
+    files: []
+    path: entities/v1-alpha/dea:activity-design-integration-patterns/research/
   - entity_id: dea:activity-design-journey-handoffs
     files: []
     path: entities/v1-alpha/dea:activity-design-journey-handoffs/research/
+  - entity_id: dea:activity-design-routing-logic
+    files: []
+    path: entities/v1-alpha/dea:activity-design-routing-logic/research/
+  - entity_id: dea:activity-design-service-levels
+    files: []
+    path: entities/v1-alpha/dea:activity-design-service-levels/research/
   - entity_id: dea:activity-design-touchpoints
     files: []
     path: entities/v1-alpha/dea:activity-design-touchpoints/research/
@@ -2701,9 +3160,24 @@ catalog:
   - entity_id: dea:activity-formulate-demand-thesis
     files: []
     path: entities/v1-alpha/dea:activity-formulate-demand-thesis/research/
+  - entity_id: dea:activity-frame-enablement-and-asset-direction
+    files: []
+    path: entities/v1-alpha/dea:activity-frame-enablement-and-asset-direction/research/
+  - entity_id: dea:activity-frame-footprint-principles
+    files: []
+    path: entities/v1-alpha/dea:activity-frame-footprint-principles/research/
+  - entity_id: dea:activity-frame-fulfilment-patterns
+    files: []
+    path: entities/v1-alpha/dea:activity-frame-fulfilment-patterns/research/
   - entity_id: dea:activity-frame-segment-thesis
     files: []
     path: entities/v1-alpha/dea:activity-frame-segment-thesis/research/
+  - entity_id: dea:activity-frame-service-level-envelopes
+    files: []
+    path: entities/v1-alpha/dea:activity-frame-service-level-envelopes/research/
+  - entity_id: dea:activity-frame-sourcing-principles
+    files: []
+    path: entities/v1-alpha/dea:activity-frame-sourcing-principles/research/
   - entity_id: dea:activity-handle-relationship-escalations
     files: []
     path: entities/v1-alpha/dea:activity-handle-relationship-escalations/research/
@@ -2713,12 +3187,18 @@ catalog:
   - entity_id: dea:activity-identify-moments-of-truth
     files: []
     path: entities/v1-alpha/dea:activity-identify-moments-of-truth/research/
+  - entity_id: dea:activity-identify-platform-families
+    files: []
+    path: entities/v1-alpha/dea:activity-identify-platform-families/research/
   - entity_id: dea:activity-integrate-channels-with-experience
     files: []
     path: entities/v1-alpha/dea:activity-integrate-channels-with-experience/research/
   - entity_id: dea:activity-integrate-demand-engine-with-channels
     files: []
     path: entities/v1-alpha/dea:activity-integrate-demand-engine-with-channels/research/
+  - entity_id: dea:activity-integrate-model-components
+    files: []
+    path: entities/v1-alpha/dea:activity-integrate-model-components/research/
   - entity_id: dea:activity-issue-purchase-orders
     files: []
     path: entities/v1-alpha/dea:activity-issue-purchase-orders/research/
@@ -2746,6 +3226,9 @@ catalog:
   - entity_id: dea:activity-model-capacity-assumptions
     files: []
     path: entities/v1-alpha/dea:activity-model-capacity-assumptions/research/
+  - entity_id: dea:activity-model-capacity-envelopes
+    files: []
+    path: entities/v1-alpha/dea:activity-model-capacity-envelopes/research/
   - entity_id: dea:activity-monitor-platform-availability
     files: []
     path: entities/v1-alpha/dea:activity-monitor-platform-availability/research/
@@ -2761,6 +3244,9 @@ catalog:
   - entity_id: dea:activity-plan-transport-and-deliveries
     files: []
     path: entities/v1-alpha/dea:activity-plan-transport-and-deliveries/research/
+  - entity_id: dea:activity-position-network-nodes
+    files: []
+    path: entities/v1-alpha/dea:activity-position-network-nodes/research/
   - entity_id: dea:activity-process-purchase-requisitions
     files: []
     path: entities/v1-alpha/dea:activity-process-purchase-requisitions/research/
@@ -2803,12 +3289,30 @@ catalog:
   - entity_id: dea:activity-schedule-production-cycles
     files: []
     path: entities/v1-alpha/dea:activity-schedule-production-cycles/research/
+  - entity_id: dea:activity-select-channel-patterns
+    files: []
+    path: entities/v1-alpha/dea:activity-select-channel-patterns/research/
+  - entity_id: dea:activity-select-transport-modes
+    files: []
+    path: entities/v1-alpha/dea:activity-select-transport-modes/research/
   - entity_id: dea:activity-set-experience-quality-criteria
     files: []
     path: entities/v1-alpha/dea:activity-set-experience-quality-criteria/research/
+  - entity_id: dea:activity-specify-equipment
+    files: []
+    path: entities/v1-alpha/dea:activity-specify-equipment/research/
   - entity_id: dea:activity-specify-interaction-patterns
     files: []
     path: entities/v1-alpha/dea:activity-specify-interaction-patterns/research/
+  - entity_id: dea:activity-specify-operating-rhythms
+    files: []
+    path: entities/v1-alpha/dea:activity-specify-operating-rhythms/research/
+  - entity_id: dea:activity-specify-platform-components
+    files: []
+    path: entities/v1-alpha/dea:activity-specify-platform-components/research/
+  - entity_id: dea:activity-structure-operations-model
+    files: []
+    path: entities/v1-alpha/dea:activity-structure-operations-model/research/
   - entity_id: dea:activity-track-and-trace-flows
     files: []
     path: entities/v1-alpha/dea:activity-track-and-trace-flows/research/
@@ -3076,10 +3580,14 @@ catalog:
     files: []
     path: entities/v1-alpha/dea:process-design-competency-framework/research/
   - entity_id: dea:process-design-delivery-model
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-design-delivery-model/research/
   - entity_id: dea:process-design-facility-and-asset-blueprint
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-design-facility-and-asset-blueprint/research/
   - entity_id: dea:process-design-financial-controls-and-policies
     files: []
@@ -3096,13 +3604,17 @@ catalog:
     files: []
     path: entities/v1-alpha/dea:process-design-innovation-experiment/research/
   - entity_id: dea:process-design-logistics-and-routing
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-design-logistics-and-routing/research/
   - entity_id: dea:process-design-objectives-and-targets
     files: []
     path: entities/v1-alpha/dea:process-design-objectives-and-targets/research/
   - entity_id: dea:process-design-operations-model
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-design-operations-model/research/
   - entity_id: dea:process-design-organization-structure
     files: []
@@ -3134,7 +3646,9 @@ catalog:
     files: []
     path: entities/v1-alpha/dea:process-design-tax-position-and-strategy/research/
   - entity_id: dea:process-design-technology-platform-architecture
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-design-technology-platform-architecture/research/
   - entity_id: dea:process-design-treasury-and-funding-model
     files: []
@@ -3174,7 +3688,9 @@ catalog:
     files: []
     path: entities/v1-alpha/dea:process-execute-payroll/research/
   - entity_id: dea:process-frame-delivery-model-conception
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-frame-delivery-model-conception/research/
   - entity_id: dea:process-frame-finance-strategy
     files: []
@@ -3183,7 +3699,9 @@ catalog:
     files: []
     path: entities/v1-alpha/dea:process-frame-innovation-thesis/research/
   - entity_id: dea:process-frame-operations-strategy
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-frame-operations-strategy/research/
   - entity_id: dea:process-frame-organization-and-agent-strategy
     files: []
@@ -3192,7 +3710,9 @@ catalog:
     files: []
     path: entities/v1-alpha/dea:process-frame-organization-model/research/
   - entity_id: dea:process-frame-physical-asset-approach
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-frame-physical-asset-approach/research/
   - entity_id: dea:process-frame-portfolio-direction
     files: []
@@ -3204,7 +3724,9 @@ catalog:
     files: []
     path: entities/v1-alpha/dea:process-frame-strategic-horizons/research/
   - entity_id: dea:process-frame-technology-enablement-approach
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-frame-technology-enablement-approach/research/
   - entity_id: dea:process-frame-value-proposition-thesis
     files: []
