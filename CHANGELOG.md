@@ -6,6 +6,16 @@ All notable changes to this repository are documented here. Format follows
 
 ## [Unreleased]
 
+## [v0.3.0] - 2026-09-12
+
+Third tagged release. Captures the entire post-v0.1.0 work as a single versioned snapshot: the ECF v2.3.0/v2.4.0/v2.5.0 cascade (CR-BP-17, -18, -23), the BP-32/33/34 tranche plan (CR-BP-32, -33, -34a-d, -35, -36, -37, -38), the XRI asset + gate promotion (CR-BP-37 + CR-BP-40), the CHANGELOG + README reconciliation (CR-BP-39), and the carrier CRs (CR-BP-30, -31). The catalogue at v0.3.0 is materially different from v0.1.0 in every dimension that downstream consumers care about.
+
+Per `docs/versioning.md` §"What triggers a version bump", this is a **minor bump** capturing a canonical admission wave + a Domain rename cascade (ECF v2.3.0/v2.4.0/v2.5.0). Not patch (those are reserved for documentation / governance-artifact reconciliations); not major (those require ECF stability + sustained conformance).
+
+The stranded `## [v0.2.0]` block below this section represents a never-tagged release state per user directive 2026-09-12 ("ignore the cut"); it is preserved as a historical artifact of the abandoned v0.2.0 cut (CR-BP-29, PR #66 MERGED on 2026-09-09). The first tag after `v0.1.0` is `v0.3.0`.
+
+The 14 CRs that accumulated under `[Unreleased]` since v0.1.0 was cut:
+
 ### CR-BP-34c: Lifecycle State-Machine Validators (LCM-001..005) — third execution slice of CR-BP-34
 
 Codifies the lifecycle state-machine rules from CR-BP-34 §10 as a
