@@ -2,17 +2,37 @@ schema_version: 1
 report_at_run: CR-BP-16 S23
 report_at_source: scripts/build_conformance_report.py
 catalog_root: /home/hermes/dea-catalog-processes
-total_records: 241
+total_records: 269
 conformance_levels:
   0: 0
   1: 0
   2: 0
   3: 0
-  4: 241
+  4: 269
 records:
 - id: dea:activity-allocate-relationship-attention
   kind: Activity
   path: entities/v1-alpha/dea:activity-allocate-relationship-attention/dea:activity-allocate-relationship-attention.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-articulate-supply-paths
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-articulate-supply-paths/dea:activity-articulate-supply-paths.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-articulate-value-exchange
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-articulate-value-exchange/dea:activity-articulate-value-exchange.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -30,9 +50,79 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-build-acquisition-engines
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-build-acquisition-engines/dea:activity-build-acquisition-engines.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-build-demand-program-assets
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-build-demand-program-assets/dea:activity-build-demand-program-assets.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-calibrate-demand-programs
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-calibrate-demand-programs/dea:activity-calibrate-demand-programs.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-collect-customer-feedback
   kind: Activity
   path: entities/v1-alpha/dea:activity-collect-customer-feedback/dea:activity-collect-customer-feedback.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-commit-customer-strategy
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-commit-customer-strategy/dea:activity-commit-customer-strategy.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-commit-demand-model
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-commit-demand-model/dea:activity-commit-demand-model.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-commit-journey-design
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-commit-journey-design/dea:activity-commit-journey-design.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-commit-market-demand-thesis
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-commit-market-demand-thesis/dea:activity-commit-market-demand-thesis.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -83,6 +173,56 @@ records:
 - id: dea:activity-coordinate-renewals
   kind: Activity
   path: entities/v1-alpha/dea:activity-coordinate-renewals/dea:activity-coordinate-renewals.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-define-demand-shaping-levers
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-define-demand-shaping-levers/dea:activity-define-demand-shaping-levers.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-define-experience-principles
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-define-experience-principles/dea:activity-define-experience-principles.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-design-hypothesis-tests
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-design-hypothesis-tests/dea:activity-design-hypothesis-tests.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-design-journey-handoffs
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-design-journey-handoffs/dea:activity-design-journey-handoffs.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-design-touchpoints
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-design-touchpoints/dea:activity-design-touchpoints.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -190,6 +330,36 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-formulate-demand-hypotheses
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-formulate-demand-hypotheses/dea:activity-formulate-demand-hypotheses.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-formulate-demand-thesis
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-formulate-demand-thesis/dea:activity-formulate-demand-thesis.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-frame-segment-thesis
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-frame-segment-thesis/dea:activity-frame-segment-thesis.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-handle-relationship-escalations
   kind: Activity
   path: entities/v1-alpha/dea:activity-handle-relationship-escalations/dea:activity-handle-relationship-escalations.yaml
@@ -203,6 +373,36 @@ records:
 - id: dea:activity-handle-service-exceptions
   kind: Activity
   path: entities/v1-alpha/dea:activity-handle-service-exceptions/dea:activity-handle-service-exceptions.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-identify-moments-of-truth
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-identify-moments-of-truth/dea:activity-identify-moments-of-truth.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-integrate-channels-with-experience
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-integrate-channels-with-experience/dea:activity-integrate-channels-with-experience.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-integrate-demand-engine-with-channels
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-integrate-demand-engine-with-channels/dea:activity-integrate-demand-engine-with-channels.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -280,6 +480,26 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-map-journey-stages
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-map-journey-stages/dea:activity-map-journey-stages.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-model-capacity-assumptions
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-model-capacity-assumptions/dea:activity-model-capacity-assumptions.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-monitor-platform-availability
   kind: Activity
   path: entities/v1-alpha/dea:activity-monitor-platform-availability/dea:activity-monitor-platform-availability.yaml
@@ -333,6 +553,16 @@ records:
 - id: dea:activity-process-purchase-requisitions
   kind: Activity
   path: entities/v1-alpha/dea:activity-process-purchase-requisitions/dea:activity-process-purchase-requisitions.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-provision-channel-infrastructure
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-provision-channel-infrastructure/dea:activity-provision-channel-infrastructure.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -430,6 +660,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-scan-market-and-segments
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-scan-market-and-segments/dea:activity-scan-market-and-segments.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-schedule-facility-work-orders
   kind: Activity
   path: entities/v1-alpha/dea:activity-schedule-facility-work-orders/dea:activity-schedule-facility-work-orders.yaml
@@ -450,9 +690,49 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-set-experience-quality-criteria
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-set-experience-quality-criteria/dea:activity-set-experience-quality-criteria.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-specify-interaction-patterns
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-specify-interaction-patterns/dea:activity-specify-interaction-patterns.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-track-and-trace-flows
   kind: Activity
   path: entities/v1-alpha/dea:activity-track-and-trace-flows/dea:activity-track-and-trace-flows.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-verify-acquisition-readiness
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-verify-acquisition-readiness/dea:activity-verify-acquisition-readiness.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-verify-initial-demand-production
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-verify-initial-demand-production/dea:activity-verify-initial-demand-production.yaml
   level: 4
   level_breakdown:
     L1_structural: true
