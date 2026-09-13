@@ -1,0 +1,34 @@
+id: dea:activity-deliver-effectiveness-reviews
+type: Activity
+name: Deliver Effectiveness Reviews
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: "The cohesive grouping of work within Review Governance Effectiveness that delivers the consolidated effectiveness reviews to the governance bodies."
+belongs_to_business_process: dea:process-review-governance-effectiveness
+cohesion_rationale: "Constituent work shares a single delivery concern (review to governance body), one artifact (the effectiveness review document), and a common terminus (delivery to bodies). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6)."
+decomposition_boundary: l4-reached
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: GovernanceAndExistence
+    stage: Improve
+    identifier: ecf:governanceExistence.improve
+metadata:
+  established_by: CR-BP-49
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-49
+    date: '2026-09-13'
+    change: |
+      Initial L3 Activity entry; lands as part of the CR-BP-49
+      GovernanceAndExistence Improve + Operate tranche (completes the GE
+      domain's L3 coverage; pattern proven by CR-BP-42 through CR-BP-48).
+      Classified per CR-BP-32 section 5 (fails standalone executability
+      and resource dedication); decomposition boundary marker per CR-BP-32
+      section 12 pending Task records (dea:Task lifecycle: proposed).

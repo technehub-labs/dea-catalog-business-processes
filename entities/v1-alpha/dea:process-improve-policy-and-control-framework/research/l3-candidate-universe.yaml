@@ -1,0 +1,104 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-49
+status: candidate-not-canonical; subject to review
+parent_business_process: dea:process-improve-policy-and-control-framework
+coordinate:
+  domain: GovernanceAndExistence
+  stage: Improve
+  process_context: dea:pc-ge-im
+  process_group: dea:group-governance-review-and-learning
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42,
+  scaled by CR-BP-43 through CR-BP-48)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/dea:process-improve-policy-and-control-framework
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: dea:activity-measure-policy-gaps
+  name: "Measure Policy Gaps"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Gap identification from findings; gap severity measurement; gap-to-policy mapping"
+  out_of_scope:
+  - "Audit operation (dea:process-audit-policy-compliance)"
+  - "Audit finding scoring (dea:process-score-audit-findings)"
+  evidence:
+  - "Parent BP trigger (audit findings or policy gaps surface)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-49
+- id: dea:activity-update-policy-standards
+  name: "Update Policy Standards"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Standard revision drafting; control objective adjustment; update impact review"
+  out_of_scope:
+  - "Gap measurement (dea:activity-measure-policy-gaps)"
+  - "Policy codification (dea:process-codify-charters-and-policies)"
+  evidence:
+  - "Parent BP outcome (standards updated)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-49
+- id: dea:activity-strengthen-compliance-posture
+  name: "Strengthen Compliance Posture"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Compliance regime tightening; attestation cycle adjustment; posture verification planning"
+  out_of_scope:
+  - "Compliance regime design (dea:process-design-policies-and-controls)"
+  - "Standard updating (dea:activity-update-policy-standards)"
+  evidence:
+  - "Parent BP outcome (compliance posture strengthened)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-49
+- id: dea:activity-commit-framework-improvements
+  name: "Commit Framework Improvements"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Improvement consolidation; coherence review against governance system design; commitment and transition planning"
+  out_of_scope:
+  - "Standard updating (dea:activity-update-policy-standards)"
+  - "Governance effectiveness review (dea:process-review-governance-effectiveness)"
+  evidence:
+  - "Parent BP outcome (policy and control framework improved)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-49
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."
