@@ -40,6 +40,11 @@ ecfConformance:
 metadata:
   established_by: CR-BP-21a
   established_at: '2026-09-07'
+  activity_references:
+  - dea:activity-consolidate-adaptation-drivers
+  - dea:activity-formulate-direction-adjustments
+  - dea:activity-assess-adjustment-implications
+  - dea:activity-commit-direction-adjustment
   change_history:
   - cr: CR-BP-21a
     date: '2026-09-07'
@@ -49,6 +54,18 @@ metadata:
       register v2 (CR-BP-19). One of the 5 L2 landings
       targeting the 5 ratified cells of the StrategyAndDirection
       domain.
+  - cr: CR-BP-55
+    date: '2026-09-14'
+    change: |
+      L3 decomposition of this Business Process: 4 Activities
+      landed under the structured deposition pattern (research
+      deposition at research/l3-candidate-universe.yaml, then
+      canonical Activity records) as part of the CR-BP-55
+      StrategyAndDirection Improve + Operate tranche.
+      Adds metadata.activity_references[] back-references per
+      ACT-010 bidirectional traceability. Additive metadata-only
+      change; BP identity and semantics unchanged, so version
+      remains unchanged per SIV-004 (CR-BP-34d).
 links:
 - rel: change-request
   href: change-requests/CR-BP-21a-strategy-direction-landing.md

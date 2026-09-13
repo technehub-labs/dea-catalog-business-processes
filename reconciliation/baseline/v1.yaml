@@ -337,7 +337,7 @@ records:
   - id: dea:process-adapt-strategic-direction
     type: Process
     path: entities/v1-alpha/dea:process-adapt-strategic-direction/dea:process-adapt-strategic-direction.yaml
-    sha256: 5e66a9a653cfc6f6648833242f55a0a7c539ed229d6a37f6858c0bfa510cb77c
+    sha256: 9e0c958867497b1e5cd83d110dc9baafcb8937bdfd7c44a55201a2c2a5ba3ad1
   - id: dea:process-audit-policy-compliance
     type: Process
     path: entities/v1-alpha/dea:process-audit-policy-compliance/dea:process-audit-policy-compliance.yaml
@@ -677,7 +677,7 @@ records:
   - id: dea:process-monitor-strategic-performance
     type: Process
     path: entities/v1-alpha/dea:process-monitor-strategic-performance/dea:process-monitor-strategic-performance.yaml
-    sha256: 962bda9758cbeb3e69f12b74f863d8d110ff3b5d541707d1cebb542703c3c740
+    sha256: 5a9ecacc673a894a07583f8e8723a34e65429c378639b75f2ea78d8a5739a2cd
   - id: dea:process-onboard-tax-and-compliance-capability
     type: Process
     path: entities/v1-alpha/dea:process-onboard-tax-and-compliance-capability/dea:process-onboard-tax-and-compliance-capability.yaml
@@ -741,7 +741,7 @@ records:
   - id: dea:process-operate-strategic-review-cycle
     type: Process
     path: entities/v1-alpha/dea:process-operate-strategic-review-cycle/dea:process-operate-strategic-review-cycle.yaml
-    sha256: 5bc3e4e822280175c1c8063bb1561f5b528cc05229d50a86389f837166fef047
+    sha256: 86f44f4e9e133b9038d586c87fef6cbf6ce545da2a1dc19807cbfd7edcdbd930
   - id: dea:process-operate-technology-platforms
     type: Process
     path: entities/v1-alpha/dea:process-operate-technology-platforms/dea:process-operate-technology-platforms.yaml
@@ -781,7 +781,7 @@ records:
   - id: dea:process-refresh-objectives-and-targets
     type: Process
     path: entities/v1-alpha/dea:process-refresh-objectives-and-targets/dea:process-refresh-objectives-and-targets.yaml
-    sha256: c89aa16cdc944894440ffb78558f27729af66286b85ae3de4c810d8c954225a4
+    sha256: d450c8d0234a25c4b3641f4c4d5d62c2df78e6a6ee2bbde0fdb4439527f7d9b9
   - id: dea:process-reorganize-structures
     type: Process
     path: entities/v1-alpha/dea:process-reorganize-structures/dea:process-reorganize-structures.yaml
@@ -793,7 +793,7 @@ records:
   - id: dea:process-review-strategy-effectiveness
     type: Process
     path: entities/v1-alpha/dea:process-review-strategy-effectiveness/dea:process-review-strategy-effectiveness.yaml
-    sha256: 36b10c3e35c99de5b01ef2262440ee2b66a9163569707141cd696f981790ec7d
+    sha256: d9afb820aa07c01cb4f43acc23e8495ecdc6d6c137497477c3ea47a67d1a3454
   - id: dea:process-run-accounts-payable
     type: Process
     path: entities/v1-alpha/dea:process-run-accounts-payable/dea:process-run-accounts-payable.yaml
@@ -817,7 +817,7 @@ records:
   - id: dea:process-sense-environmental-signals
     type: Process
     path: entities/v1-alpha/dea:process-sense-environmental-signals/dea:process-sense-environmental-signals.yaml
-    sha256: 41d7633dce4dea1013c5c6b9937b5271d4ddc6bc97b425f3d1120d75fdaf2ef3
+    sha256: 2dba1ef384cde07cabd2d916543e234ed1a02bc0781286263667b9ad6c1971e5
   - id: dea:process-set-resource-allocation-priorities
     type: Process
     path: entities/v1-alpha/dea:process-set-resource-allocation-priorities/dea:process-set-resource-allocation-priorities.yaml
@@ -825,7 +825,7 @@ records:
   - id: dea:process-steer-initiative-portfolio
     type: Process
     path: entities/v1-alpha/dea:process-steer-initiative-portfolio/dea:process-steer-initiative-portfolio.yaml
-    sha256: e9f0926517e3bfd6ef4cc76a4f2df6199224151eae778244730cbc5ce6b4495b
+    sha256: f220fa49da1714260ffc3c8d615a0d6d4b4db995cdd2d3d660b75857cb8577c8
   - id: dea:process-translate-strategic-choices-into-initiatives
     type: Process
     path: entities/v1-alpha/dea:process-translate-strategic-choices-into-initiatives/dea:process-translate-strategic-choices-into-initiatives.yaml

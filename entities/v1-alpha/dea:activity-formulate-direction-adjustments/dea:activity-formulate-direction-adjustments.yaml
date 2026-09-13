@@ -1,0 +1,34 @@
+id: dea:activity-formulate-direction-adjustments
+type: Activity
+name: Formulate Direction Adjustments
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: "The cohesive grouping of work within Adapt Strategic Direction that formulates candidate adjustments to the strategic direction in response to the consolidated adaptation case."
+belongs_to_business_process: dea:process-adapt-strategic-direction
+cohesion_rationale: "Constituent work shares a single formulation concern (candidate direction adjustments from the adaptation case), one input class (the consolidated adaptation case), and one output (the candidate direction adjustments). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6)."
+decomposition_boundary: l4-reached
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: StrategyAndDirection
+    stage: Improve
+    identifier: ecf:strategyDirection.improve
+metadata:
+  established_by: CR-BP-55
+  established_at: '2026-09-14'
+  change_history:
+  - cr: CR-BP-55
+    date: '2026-09-14'
+    change: |
+      Initial L3 Activity entry; lands as part of the CR-BP-55
+      StrategyAndDirection Improve + Operate tranche (pattern proven by CR-BP-42 through CR-BP-54).
+      Classified per CR-BP-32 section 5 (fails standalone
+      executability and resource dedication); decomposition
+      boundary marker per CR-BP-32 section 12 pending Task
+      records (dea:Task lifecycle: proposed).
