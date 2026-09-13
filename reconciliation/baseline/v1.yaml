@@ -401,7 +401,7 @@ records:
   - id: dea:process-conduct-cost-optimization-review
     type: Process
     path: entities/v1-alpha/dea:process-conduct-cost-optimization-review/dea:process-conduct-cost-optimization-review.yaml
-    sha256: 768c74c3da9a346cb7584d875c386dccd8458601a66de7d17a9dbe78a2fc959b
+    sha256: daff513184e09ffee5d23cc480343cce05faa562255c11fd1dd766f453d67609
   - id: dea:process-conduct-engagement-and-alignment-review
     type: Process
     path: entities/v1-alpha/dea:process-conduct-engagement-and-alignment-review/dea:process-conduct-engagement-and-alignment-review.yaml
@@ -581,11 +581,11 @@ records:
   - id: dea:process-evolve-treasury-and-funding-model
     type: Process
     path: entities/v1-alpha/dea:process-evolve-treasury-and-funding-model/dea:process-evolve-treasury-and-funding-model.yaml
-    sha256: c62bfd23d16ffc5fb8f76788ee995dba0196bac0d8197b7ca0de7b475d680d15
+    sha256: 5ca67d3d00f09fb4b29341d7f5b91b2a719b271f6beaa04147d44af5b633a0e5
   - id: dea:process-execute-payroll
     type: Process
     path: entities/v1-alpha/dea:process-execute-payroll/dea:process-execute-payroll.yaml
-    sha256: 8f8f91f772eaa8876bcfba3d313490a126eece043f37ca8fb0f14f23bf47787f
+    sha256: c4eb42f9db280105e13d8a01a35388eb9c34c40a2e0f4774acaae8163fb46a42
   - id: dea:process-frame-delivery-model-conception
     type: Process
     path: entities/v1-alpha/dea:process-frame-delivery-model-conception/dea:process-frame-delivery-model-conception.yaml
@@ -653,7 +653,7 @@ records:
   - id: dea:process-manage-cash-and-liquidity
     type: Process
     path: entities/v1-alpha/dea:process-manage-cash-and-liquidity/dea:process-manage-cash-and-liquidity.yaml
-    sha256: 6a8e0c6c37f89efc208bc778c442691f5e13a9e1eb7f0afc0124ee27b8322a1e
+    sha256: c69ffed1405719fa79995dd3d1769f7a6f81a714c870406dee03533a865a9133
   - id: dea:process-manage-customer-relationship
     type: Process
     path: entities/v1-alpha/dea:process-manage-customer-relationship/dea:process-manage-customer-relationship.yaml
@@ -669,7 +669,7 @@ records:
   - id: dea:process-manage-tax-compliance-and-filings
     type: Process
     path: entities/v1-alpha/dea:process-manage-tax-compliance-and-filings/dea:process-manage-tax-compliance-and-filings.yaml
-    sha256: 329e50d24ef3f66a2235d3064b7c9138d2c37b343b3abdd98cab57599bb428fa
+    sha256: d133105dc81db61ca7f2779e9b6e983deeebdd467720996e9e845ad329841d7a
   - id: dea:process-market-and-demand-conception
     type: Process
     path: entities/v1-alpha/dea:process-market-and-demand-conception/dea:process-market-and-demand-conception.yaml
@@ -701,11 +701,11 @@ records:
   - id: dea:process-operate-financial-reporting-and-disclosure
     type: Process
     path: entities/v1-alpha/dea:process-operate-financial-reporting-and-disclosure/dea:process-operate-financial-reporting-and-disclosure.yaml
-    sha256: 3a656349730ed3278a265ffcd673d00c6ccb3331465ada5e9d39e967a410c335
+    sha256: 8dbee1df1831e1c739cf3e43fffe10bd314ad180d110d9bc5553b12da6d24983
   - id: dea:process-operate-general-ledger
     type: Process
     path: entities/v1-alpha/dea:process-operate-general-ledger/dea:process-operate-general-ledger.yaml
-    sha256: c279f65c72dd9157d71235a49a7495f7423401f501dc92447cc06243ad9f2621
+    sha256: 75ba79f24734429896eb0f2009a3223437948bb13ab95516ad0795dcf7108f2c
   - id: dea:process-operate-governance-oversight
     type: Process
     path: entities/v1-alpha/dea:process-operate-governance-oversight/dea:process-operate-governance-oversight.yaml
@@ -761,7 +761,7 @@ records:
   - id: dea:process-perform-financial-close
     type: Process
     path: entities/v1-alpha/dea:process-perform-financial-close/dea:process-perform-financial-close.yaml
-    sha256: 288e38b927625b2efbb1534c127bbc78a37d0b4b2f764f2aef5c3b4d9c56e8d4
+    sha256: ca7b0dc4458465f1f840712ce7e6bb4ffae8e035f375d5a983f2769e9baac971
   - id: dea:process-prepare-market-readiness
     type: Process
     path: entities/v1-alpha/dea:process-prepare-market-readiness/dea:process-prepare-market-readiness.yaml
@@ -777,7 +777,7 @@ records:
   - id: dea:process-refine-financial-controls-and-policies
     type: Process
     path: entities/v1-alpha/dea:process-refine-financial-controls-and-policies/dea:process-refine-financial-controls-and-policies.yaml
-    sha256: a2e75595c9da9399e5b978b6b01f2e8b9ae9244af7699d3b6f881831c791cde9
+    sha256: 6d67ecae4f2d7f737a9a5bfa2ff1e3de35c4c186cd80a019e97ff7dfe445de98
   - id: dea:process-refresh-objectives-and-targets
     type: Process
     path: entities/v1-alpha/dea:process-refresh-objectives-and-targets/dea:process-refresh-objectives-and-targets.yaml
@@ -797,11 +797,11 @@ records:
   - id: dea:process-run-accounts-payable
     type: Process
     path: entities/v1-alpha/dea:process-run-accounts-payable/dea:process-run-accounts-payable.yaml
-    sha256: 58dcbd27bb2d7a28547b23a7d95ceced0d4c17180a09f6fec2d0e0e0c6434720
+    sha256: f489beccf39747aee85389de5c45c04179a77cdad87dab560f482b3227d15f3d
   - id: dea:process-run-accounts-receivable
     type: Process
     path: entities/v1-alpha/dea:process-run-accounts-receivable/dea:process-run-accounts-receivable.yaml
-    sha256: 972f6f88fa74d02841f4ae44e6c81d89401e8f6f64603e05cbb3edbe0619abee
+    sha256: 19c89a96f88b3ce93b62f63233e7789042dcfc7928b0a33666185891c36dde99
   - id: dea:process-run-production-line
     type: Process
     path: entities/v1-alpha/dea:process-run-production-line/dea:process-run-production-line.yaml
