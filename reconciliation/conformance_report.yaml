@@ -2,14 +2,44 @@ schema_version: 1
 report_at_run: CR-BP-16 S23
 report_at_source: scripts/build_conformance_report.py
 catalog_root: /home/hermes/dea-catalog-processes
-total_records: 233
+total_records: 241
 conformance_levels:
   0: 0
   1: 0
   2: 0
   3: 0
-  4: 233
+  4: 241
 records:
+- id: dea:activity-allocate-relationship-attention
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-allocate-relationship-attention/dea:activity-allocate-relationship-attention.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-assess-churn-risk
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-assess-churn-risk/dea:activity-assess-churn-risk.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-collect-customer-feedback
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-collect-customer-feedback/dea:activity-collect-customer-feedback.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-conduct-cycle-counts
   kind: Activity
   path: entities/v1-alpha/dea:activity-conduct-cycle-counts/dea:activity-conduct-cycle-counts.yaml
@@ -30,9 +60,29 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-conduct-relationship-reviews
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-conduct-relationship-reviews/dea:activity-conduct-relationship-reviews.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-coordinate-daily-service-operations
   kind: Activity
   path: entities/v1-alpha/dea:activity-coordinate-daily-service-operations/dea:activity-coordinate-daily-service-operations.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-coordinate-renewals
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-coordinate-renewals/dea:activity-coordinate-renewals.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -100,6 +150,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-execute-retention-actions
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-execute-retention-actions/dea:activity-execute-retention-actions.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-execute-scheduled-maintenance
   kind: Activity
   path: entities/v1-alpha/dea:activity-execute-scheduled-maintenance/dea:activity-execute-scheduled-maintenance.yaml
@@ -123,6 +183,16 @@ records:
 - id: dea:activity-execute-shipments
   kind: Activity
   path: entities/v1-alpha/dea:activity-execute-shipments/dea:activity-execute-shipments.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-handle-relationship-escalations
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-handle-relationship-escalations/dea:activity-handle-relationship-escalations.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -173,6 +243,16 @@ records:
 - id: dea:activity-maintain-stock-accuracy
   kind: Activity
   path: entities/v1-alpha/dea:activity-maintain-stock-accuracy/dea:activity-maintain-stock-accuracy.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-maintain-win-back-pipeline
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-maintain-win-back-pipeline/dea:activity-maintain-win-back-pipeline.yaml
   level: 4
   level_breakdown:
     L1_structural: true

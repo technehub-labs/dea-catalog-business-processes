@@ -112,6 +112,11 @@ metadata:
       relationship management).
 
       '
+  activity_references:
+  - dea:activity-allocate-relationship-attention
+  - dea:activity-conduct-relationship-reviews
+  - dea:activity-handle-relationship-escalations
+  - dea:activity-coordinate-renewals
   change_history:
   - cr: CR-BP-03C
     date: '2026-09-03'
@@ -136,6 +141,18 @@ metadata:
       entry is preserved as provenance; canonical `ecf:partyRelationship.operate` is
       now the conformance-resolving reference for the dea:pc-pr-op cell.
       '
+  - cr: CR-BP-44
+    date: '2026-09-13'
+    change: |
+      L3 decomposition of this Business Process: 4 Activities
+      landed under the structured deposition pattern (research
+      deposition at research/l3-candidate-universe.yaml, then
+      canonical Activity records) as part of the CR-BP-44
+      PartyAndRelationship Operate + Improve tranche. Adds
+      metadata.activity_references[] back-references per ACT-010
+      bidirectional traceability. Additive metadata-only change;
+      BP identity and semantics unchanged, so version remains
+      unchanged per SIV-004 (CR-BP-34d).
 links:
 - rel: documentation
   href: docs/examples/manage-customer-relationship.md

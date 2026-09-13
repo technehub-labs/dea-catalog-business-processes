@@ -437,7 +437,7 @@ records:
   - id: dea:process-customer-insight-and-retention
     type: Process
     path: entities/v1-alpha/dea:process-customer-insight-and-retention/dea:process-customer-insight-and-retention.yaml
-    sha256: f546e24b52ef41ad48f55bc035f67fb1f5450a898e3226825bf963e952524afa
+    sha256: bb84b43afaede6ee902fec92edf7a0f3df264d159a21acd8eefd7a21d4b59bf2
   - id: dea:process-customer-journey-design
     type: Process
     path: entities/v1-alpha/dea:process-customer-journey-design/dea:process-customer-journey-design.yaml
@@ -657,7 +657,7 @@ records:
   - id: dea:process-manage-customer-relationship
     type: Process
     path: entities/v1-alpha/dea:process-manage-customer-relationship/dea:process-manage-customer-relationship.yaml
-    sha256: c99d40897eb93d9f64a96ab73303dc8332e011de7045880c53f9fc0ede01835f
+    sha256: d55e0c5452a5c6f6c8149ed34cbc925ce902c2c3b2f6a99c858fe2fb1f8f9ecf
   - id: dea:process-manage-portfolio-performance
     type: Process
     path: entities/v1-alpha/dea:process-manage-portfolio-performance/dea:process-manage-portfolio-performance.yaml
