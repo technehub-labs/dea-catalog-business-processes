@@ -40,9 +40,30 @@ ecfConformance:
     stage: Operate
     identifier: ecf:governanceExistence.operate
   target_id: ecf:governanceExistence.operate
+metadata:
+  established_by: CR-BP-21f.1
+  established_at: '2026-09-08'
+  activity_references:
+  - dea:activity-execute-risk-reviews
+  - dea:activity-surface-risk-exposures
+  - dea:activity-deliver-mitigations-to-bodies
+  - dea:activity-maintain-risk-registers
 change_history:
 - version: '1.0.0'
   date: '2026-09-08'
   cr: CR-BP-21f.1
   change: |
     Initial landing under CR-BP-21f.1 (GovernanceAndExistence completion).
+- date: '2026-09-13'
+  cr: CR-BP-49
+  change: |
+    L3 decomposition of this Business Process: 4 Activities
+    landed under the structured deposition pattern (research
+    deposition at research/l3-candidate-universe.yaml, then
+    canonical Activity records) as part of the CR-BP-49
+    GovernanceAndExistence Improve + Operate tranche (completes
+    the GE domain's L3 coverage). Adds metadata.activity_references[]
+    back-references per ACT-010 bidirectional traceability.
+    Additive metadata-only change; BP identity and semantics
+    unchanged, so version remains unchanged per SIV-004
+    (CR-BP-34d).

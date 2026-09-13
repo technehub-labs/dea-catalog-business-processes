@@ -341,7 +341,7 @@ records:
   - id: dea:process-audit-policy-compliance
     type: Process
     path: entities/v1-alpha/dea:process-audit-policy-compliance/dea:process-audit-policy-compliance.yaml
-    sha256: 659c016f3e2b75ec4cf24d64d194e8b7652e850e3aa649ec09c4440e1c0eabff
+    sha256: 41fb644b4f775565164fbc9c692bc9ba6d25f7db9d6f17447f40da448d49a630
   - id: dea:process-build-budgeting-and-forecasting-systems
     type: Process
     path: entities/v1-alpha/dea:process-build-budgeting-and-forecasting-systems/dea:process-build-budgeting-and-forecasting-systems.yaml
@@ -393,7 +393,7 @@ records:
   - id: dea:process-conduct-assurance-review
     type: Process
     path: entities/v1-alpha/dea:process-conduct-assurance-review/dea:process-conduct-assurance-review.yaml
-    sha256: 3734024c4aa93c36705888dd2e4ced9315e0545b1c65d8dd5836974dd1d34ce6
+    sha256: 9062e3ae4d703f4e3d54013584cb6903c894c59db5b7badb190556b1019ce03e
   - id: dea:process-conduct-capability-gap-analysis
     type: Process
     path: entities/v1-alpha/dea:process-conduct-capability-gap-analysis/dea:process-conduct-capability-gap-analysis.yaml
@@ -641,7 +641,7 @@ records:
   - id: dea:process-improve-policy-and-control-framework
     type: Process
     path: entities/v1-alpha/dea:process-improve-policy-and-control-framework/dea:process-improve-policy-and-control-framework.yaml
-    sha256: 37067729fd38ca98915a19c57ce11832371deecc2cef2327d991596ad8a78ff6
+    sha256: 533dee203e559010bfc6c08061dcfa655088e9575f72cf7ef9b02f45e06a838a
   - id: dea:process-improve-technology-platforms
     type: Process
     path: entities/v1-alpha/dea:process-improve-technology-platforms/dea:process-improve-technology-platforms.yaml
@@ -693,7 +693,7 @@ records:
   - id: dea:process-operate-enterprise-risk-oversight
     type: Process
     path: entities/v1-alpha/dea:process-operate-enterprise-risk-oversight/dea:process-operate-enterprise-risk-oversight.yaml
-    sha256: 4032a0357a7c4d782312ec224f0d055fb072e9578aed2facfa4a48948af181fb
+    sha256: 1bf8a01472da18912caa53c4da3fd2c8e215e6bbbcfa9c927a0c772e16b3d699
   - id: dea:process-operate-facility-management
     type: Process
     path: entities/v1-alpha/dea:process-operate-facility-management/dea:process-operate-facility-management.yaml
@@ -709,7 +709,7 @@ records:
   - id: dea:process-operate-governance-oversight
     type: Process
     path: entities/v1-alpha/dea:process-operate-governance-oversight/dea:process-operate-governance-oversight.yaml
-    sha256: 3ddbc84d86f24fe1eac679b10bfb8234ebb7ee2db68e50d78931035fd000d645
+    sha256: 41b88a936c461f005080cb396e0a5469eb517d96721ff05fa9052d876a88fb27
   - id: dea:process-operate-learning-and-development
     type: Process
     path: entities/v1-alpha/dea:process-operate-learning-and-development/dea:process-operate-learning-and-development.yaml
@@ -789,7 +789,7 @@ records:
   - id: dea:process-review-governance-effectiveness
     type: Process
     path: entities/v1-alpha/dea:process-review-governance-effectiveness/dea:process-review-governance-effectiveness.yaml
-    sha256: e1c68a55d48ef084a709deebf9f93f63a19827e1d053449d529b4e0a3ced16bf
+    sha256: 464fa06b73fcdfe15d12a41788b84f8c23862dc7d4583a1c9421650af8a60a8b
   - id: dea:process-review-strategy-effectiveness
     type: Process
     path: entities/v1-alpha/dea:process-review-strategy-effectiveness/dea:process-review-strategy-effectiveness.yaml
@@ -809,7 +809,7 @@ records:
   - id: dea:process-score-audit-findings
     type: Process
     path: entities/v1-alpha/dea:process-score-audit-findings/dea:process-score-audit-findings.yaml
-    sha256: 1454f2e08c8872f7ff98cc2dd1e885eb4ed4f40bd90ed58f2070d1ec7632766d
+    sha256: 9fd4017d4bd4f7d4d9ce3bca976a81c8d1eba9a0b9c50fb507c7b8514ceed4d3
   - id: dea:process-secure-funding-facilities
     type: Process
     path: entities/v1-alpha/dea:process-secure-funding-facilities/dea:process-secure-funding-facilities.yaml
