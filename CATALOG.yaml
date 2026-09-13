@@ -2,10 +2,10 @@ catalog:
   abbreviation: BP
   counts:
     candidates: 0
-    canonical: 165
-    entities: 166
-    open_change_requests: 54
-    research_files: 59
+    canonical: 197
+    entities: 198
+    open_change_requests: 55
+    research_files: 75
     retired: 1
   cross_cutting:
     change_requests: change-requests/
@@ -21,10 +21,54 @@ catalog:
   entities:
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-conduct-cycle-counts
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-conduct-cycle-counts/dea:activity-conduct-cycle-counts.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-conduct-facility-inspections
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-conduct-facility-inspections/dea:activity-conduct-facility-inspections.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-coordinate-daily-service-operations
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-coordinate-daily-service-operations/dea:activity-coordinate-daily-service-operations.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-disposition-nonconforming-output
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-disposition-nonconforming-output/dea:activity-disposition-nonconforming-output.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-execute-facility-work-orders
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-execute-facility-work-orders/dea:activity-execute-facility-work-orders.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -43,10 +87,230 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-execute-picking-and-dispatch
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-execute-picking-and-dispatch/dea:activity-execute-picking-and-dispatch.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-execute-production-run
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-execute-production-run/dea:activity-execute-production-run.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-execute-replenishment
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-execute-replenishment/dea:activity-execute-replenishment.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-execute-scheduled-maintenance
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-execute-scheduled-maintenance/dea:activity-execute-scheduled-maintenance.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-execute-scheduled-platform-routines
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-execute-scheduled-platform-routines/dea:activity-execute-scheduled-platform-routines.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-execute-shipments
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-execute-shipments/dea:activity-execute-shipments.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-handle-service-exceptions
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-handle-service-exceptions/dea:activity-handle-service-exceptions.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-issue-purchase-orders
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-issue-purchase-orders/dea:activity-issue-purchase-orders.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-maintain-procurement-compliance
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-maintain-procurement-compliance/dea:activity-maintain-procurement-compliance.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-maintain-safety-and-compliance
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-maintain-safety-and-compliance/dea:activity-maintain-safety-and-compliance.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-maintain-stock-accuracy
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-maintain-stock-accuracy/dea:activity-maintain-stock-accuracy.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-manage-capacity-and-performance
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-manage-capacity-and-performance/dea:activity-manage-capacity-and-performance.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-manage-line-changeovers
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-manage-line-changeovers/dea:activity-manage-line-changeovers.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-monitor-platform-availability
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-monitor-platform-availability/dea:activity-monitor-platform-availability.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-monitor-service-levels
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-monitor-service-levels/dea:activity-monitor-service-levels.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-plan-maintenance-schedules
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-plan-maintenance-schedules/dea:activity-plan-maintenance-schedules.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-plan-quality-inspection
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-plan-quality-inspection/dea:activity-plan-quality-inspection.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-plan-transport-and-deliveries
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-plan-transport-and-deliveries/dea:activity-plan-transport-and-deliveries.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-process-purchase-requisitions
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-process-purchase-requisitions/dea:activity-process-purchase-requisitions.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-receive-and-verify-deliveries
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-receive-and-verify-deliveries/dea:activity-receive-and-verify-deliveries.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-record-asset-availability
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-record-asset-availability/dea:activity-record-asset-availability.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -65,10 +329,98 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-record-production-output
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-record-production-output/dea:activity-record-production-output.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-report-quality-performance
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-report-quality-performance/dea:activity-report-quality-performance.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-report-service-delivery-performance
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-report-service-delivery-performance/dea:activity-report-service-delivery-performance.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-resolve-logistics-exceptions
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-resolve-logistics-exceptions/dea:activity-resolve-logistics-exceptions.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-respond-to-asset-breakdowns
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-respond-to-asset-breakdowns/dea:activity-respond-to-asset-breakdowns.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-respond-to-platform-incidents
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-respond-to-platform-incidents/dea:activity-respond-to-platform-incidents.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-schedule-facility-work-orders
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-schedule-facility-work-orders/dea:activity-schedule-facility-work-orders.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-schedule-production-cycles
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-schedule-production-cycles/dea:activity-schedule-production-cycles.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-track-and-trace-flows
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-track-and-trace-flows/dea:activity-track-and-trace-flows.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -1452,10 +1804,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-operate-asset-maintenance
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-operate-asset-maintenance/dea:process-operate-asset-maintenance.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -1474,10 +1826,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-operate-facility-management
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-operate-facility-management/dea:process-operate-facility-management.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -1529,10 +1881,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-operate-logistics
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-operate-logistics/dea:process-operate-logistics.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -1551,10 +1903,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-operate-procurement-cycle
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-operate-procurement-cycle/dea:process-operate-procurement-cycle.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -1584,10 +1936,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-operate-service-delivery
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-operate-service-delivery/dea:process-operate-service-delivery.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -1606,10 +1958,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-operate-technology-platforms
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-operate-technology-platforms/dea:process-operate-technology-platforms.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -1628,10 +1980,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-operate-warehouse-and-inventory
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-operate-warehouse-and-inventory/dea:process-operate-warehouse-and-inventory.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -1771,10 +2123,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-run-production-line
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-run-production-line/dea:process-run-production-line.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -1851,21 +2203,117 @@ catalog:
   owner: TechNeHub Labs
   repository: https://github.com/technehub-labs/dea-catalog-processes.git
   research_registers:
+  - entity_id: dea:activity-conduct-cycle-counts
+    files: []
+    path: entities/v1-alpha/dea:activity-conduct-cycle-counts/research/
+  - entity_id: dea:activity-conduct-facility-inspections
+    files: []
+    path: entities/v1-alpha/dea:activity-conduct-facility-inspections/research/
+  - entity_id: dea:activity-coordinate-daily-service-operations
+    files: []
+    path: entities/v1-alpha/dea:activity-coordinate-daily-service-operations/research/
   - entity_id: dea:activity-disposition-nonconforming-output
     files: []
     path: entities/v1-alpha/dea:activity-disposition-nonconforming-output/research/
+  - entity_id: dea:activity-execute-facility-work-orders
+    files: []
+    path: entities/v1-alpha/dea:activity-execute-facility-work-orders/research/
   - entity_id: dea:activity-execute-inspection-and-testing
     files: []
     path: entities/v1-alpha/dea:activity-execute-inspection-and-testing/research/
+  - entity_id: dea:activity-execute-picking-and-dispatch
+    files: []
+    path: entities/v1-alpha/dea:activity-execute-picking-and-dispatch/research/
+  - entity_id: dea:activity-execute-production-run
+    files: []
+    path: entities/v1-alpha/dea:activity-execute-production-run/research/
+  - entity_id: dea:activity-execute-replenishment
+    files: []
+    path: entities/v1-alpha/dea:activity-execute-replenishment/research/
+  - entity_id: dea:activity-execute-scheduled-maintenance
+    files: []
+    path: entities/v1-alpha/dea:activity-execute-scheduled-maintenance/research/
+  - entity_id: dea:activity-execute-scheduled-platform-routines
+    files: []
+    path: entities/v1-alpha/dea:activity-execute-scheduled-platform-routines/research/
+  - entity_id: dea:activity-execute-shipments
+    files: []
+    path: entities/v1-alpha/dea:activity-execute-shipments/research/
+  - entity_id: dea:activity-handle-service-exceptions
+    files: []
+    path: entities/v1-alpha/dea:activity-handle-service-exceptions/research/
+  - entity_id: dea:activity-issue-purchase-orders
+    files: []
+    path: entities/v1-alpha/dea:activity-issue-purchase-orders/research/
+  - entity_id: dea:activity-maintain-procurement-compliance
+    files: []
+    path: entities/v1-alpha/dea:activity-maintain-procurement-compliance/research/
+  - entity_id: dea:activity-maintain-safety-and-compliance
+    files: []
+    path: entities/v1-alpha/dea:activity-maintain-safety-and-compliance/research/
+  - entity_id: dea:activity-maintain-stock-accuracy
+    files: []
+    path: entities/v1-alpha/dea:activity-maintain-stock-accuracy/research/
+  - entity_id: dea:activity-manage-capacity-and-performance
+    files: []
+    path: entities/v1-alpha/dea:activity-manage-capacity-and-performance/research/
+  - entity_id: dea:activity-manage-line-changeovers
+    files: []
+    path: entities/v1-alpha/dea:activity-manage-line-changeovers/research/
+  - entity_id: dea:activity-monitor-platform-availability
+    files: []
+    path: entities/v1-alpha/dea:activity-monitor-platform-availability/research/
+  - entity_id: dea:activity-monitor-service-levels
+    files: []
+    path: entities/v1-alpha/dea:activity-monitor-service-levels/research/
+  - entity_id: dea:activity-plan-maintenance-schedules
+    files: []
+    path: entities/v1-alpha/dea:activity-plan-maintenance-schedules/research/
   - entity_id: dea:activity-plan-quality-inspection
     files: []
     path: entities/v1-alpha/dea:activity-plan-quality-inspection/research/
+  - entity_id: dea:activity-plan-transport-and-deliveries
+    files: []
+    path: entities/v1-alpha/dea:activity-plan-transport-and-deliveries/research/
+  - entity_id: dea:activity-process-purchase-requisitions
+    files: []
+    path: entities/v1-alpha/dea:activity-process-purchase-requisitions/research/
+  - entity_id: dea:activity-receive-and-verify-deliveries
+    files: []
+    path: entities/v1-alpha/dea:activity-receive-and-verify-deliveries/research/
+  - entity_id: dea:activity-record-asset-availability
+    files: []
+    path: entities/v1-alpha/dea:activity-record-asset-availability/research/
   - entity_id: dea:activity-record-inspection-results
     files: []
     path: entities/v1-alpha/dea:activity-record-inspection-results/research/
+  - entity_id: dea:activity-record-production-output
+    files: []
+    path: entities/v1-alpha/dea:activity-record-production-output/research/
   - entity_id: dea:activity-report-quality-performance
     files: []
     path: entities/v1-alpha/dea:activity-report-quality-performance/research/
+  - entity_id: dea:activity-report-service-delivery-performance
+    files: []
+    path: entities/v1-alpha/dea:activity-report-service-delivery-performance/research/
+  - entity_id: dea:activity-resolve-logistics-exceptions
+    files: []
+    path: entities/v1-alpha/dea:activity-resolve-logistics-exceptions/research/
+  - entity_id: dea:activity-respond-to-asset-breakdowns
+    files: []
+    path: entities/v1-alpha/dea:activity-respond-to-asset-breakdowns/research/
+  - entity_id: dea:activity-respond-to-platform-incidents
+    files: []
+    path: entities/v1-alpha/dea:activity-respond-to-platform-incidents/research/
+  - entity_id: dea:activity-schedule-facility-work-orders
+    files: []
+    path: entities/v1-alpha/dea:activity-schedule-facility-work-orders/research/
+  - entity_id: dea:activity-schedule-production-cycles
+    files: []
+    path: entities/v1-alpha/dea:activity-schedule-production-cycles/research/
+  - entity_id: dea:activity-track-and-trace-flows
+    files: []
+    path: entities/v1-alpha/dea:activity-track-and-trace-flows/research/
   - entity_id: dea:group-agent-acquisition-and-onboarding
     files: []
     path: entities/v1-alpha/dea:group-agent-acquisition-and-onboarding/research/
@@ -2295,13 +2743,17 @@ catalog:
     files: []
     path: entities/v1-alpha/dea:process-operate-agent-performance/research/
   - entity_id: dea:process-operate-asset-maintenance
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-operate-asset-maintenance/research/
   - entity_id: dea:process-operate-enterprise-risk-oversight
     files: []
     path: entities/v1-alpha/dea:process-operate-enterprise-risk-oversight/research/
   - entity_id: dea:process-operate-facility-management
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-operate-facility-management/research/
   - entity_id: dea:process-operate-financial-reporting-and-disclosure
     files: []
@@ -2318,13 +2770,17 @@ catalog:
     files: []
     path: entities/v1-alpha/dea:process-operate-learning-and-development/research/
   - entity_id: dea:process-operate-logistics
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-operate-logistics/research/
   - entity_id: dea:process-operate-payroll-and-benefits
     files: []
     path: entities/v1-alpha/dea:process-operate-payroll-and-benefits/research/
   - entity_id: dea:process-operate-procurement-cycle
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-operate-procurement-cycle/research/
   - entity_id: dea:process-operate-product-catalogue
     files: []
@@ -2335,19 +2791,25 @@ catalog:
     - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-operate-quality-control/research/
   - entity_id: dea:process-operate-service-delivery
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-operate-service-delivery/research/
   - entity_id: dea:process-operate-strategic-review-cycle
     files: []
     path: entities/v1-alpha/dea:process-operate-strategic-review-cycle/research/
   - entity_id: dea:process-operate-technology-platforms
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-operate-technology-platforms/research/
   - entity_id: dea:process-operate-time-and-attendance
     files: []
     path: entities/v1-alpha/dea:process-operate-time-and-attendance/research/
   - entity_id: dea:process-operate-warehouse-and-inventory
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-operate-warehouse-and-inventory/research/
   - entity_id: dea:process-optimize-asset-utilization
     files: []
@@ -2388,7 +2850,9 @@ catalog:
     files: []
     path: entities/v1-alpha/dea:process-run-accounts-receivable/research/
   - entity_id: dea:process-run-production-line
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-run-production-line/research/
   - entity_id: dea:process-score-audit-findings
     files: []
