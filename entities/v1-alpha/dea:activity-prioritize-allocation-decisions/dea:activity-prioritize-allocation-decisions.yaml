@@ -1,0 +1,34 @@
+id: dea:activity-prioritize-allocation-decisions
+type: Activity
+name: Prioritize Allocation Decisions
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: "The cohesive grouping of work within Set Resource Allocation Priorities that prioritizes the allocation decisions against the bounded envelopes and strategic plan."
+belongs_to_business_process: dea:process-set-resource-allocation-priorities
+cohesion_rationale: "Constituent work shares a single prioritization concern (allocations to prioritized decisions), one reference class (the strategic plan), and one output (the prioritized decisions). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6)."
+decomposition_boundary: l4-reached
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: StrategyAndDirection
+    stage: Build
+    identifier: ecf:strategyDirection.build
+metadata:
+  established_by: CR-BP-54
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-54
+    date: '2026-09-13'
+    change: |
+      Initial L3 Activity entry; lands as part of the CR-BP-54
+      StrategyAndDirection Conceive + Design + Build tranche (pattern
+      proven by CR-BP-42 through CR-BP-53). Classified per CR-BP-32
+      section 5 (fails standalone executability and resource dedication);
+      decomposition boundary marker per CR-BP-32 section 12 pending Task
+      records (dea:Task lifecycle: proposed).
