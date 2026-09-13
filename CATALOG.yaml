@@ -2,10 +2,10 @@ catalog:
   abbreviation: BP
   counts:
     candidates: 0
-    canonical: 197
-    entities: 198
-    open_change_requests: 55
-    research_files: 75
+    canonical: 205
+    entities: 206
+    open_change_requests: 56
+    research_files: 77
     retired: 1
   cross_cutting:
     change_requests: change-requests/
@@ -19,6 +19,39 @@ catalog:
 
     '
   entities:
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-allocate-relationship-attention
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-allocate-relationship-attention/dea:activity-allocate-relationship-attention.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-assess-churn-risk
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-assess-churn-risk/dea:activity-assess-churn-risk.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-collect-customer-feedback
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-collect-customer-feedback/dea:activity-collect-customer-feedback.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
     id: dea:activity-conduct-cycle-counts
@@ -43,10 +76,32 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-conduct-relationship-reviews
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-conduct-relationship-reviews/dea:activity-conduct-relationship-reviews.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-coordinate-daily-service-operations
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-coordinate-daily-service-operations/dea:activity-coordinate-daily-service-operations.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-coordinate-renewals
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-coordinate-renewals/dea:activity-coordinate-renewals.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -120,6 +175,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-execute-retention-actions
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-execute-retention-actions/dea:activity-execute-retention-actions.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-execute-scheduled-maintenance
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -146,6 +212,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-execute-shipments/dea:activity-execute-shipments.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-handle-relationship-escalations
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-handle-relationship-escalations/dea:activity-handle-relationship-escalations.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -201,6 +278,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-maintain-stock-accuracy/dea:activity-maintain-stock-accuracy.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-maintain-win-back-pipeline
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-maintain-win-back-pipeline/dea:activity-maintain-win-back-pipeline.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -1111,10 +1199,10 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: dea:process-customer-insight-and-retention
-    last_modified: '2026-09-10'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-customer-insight-and-retention/dea:process-customer-insight-and-retention.yaml
-    research_count: 2
+    research_count: 3
     retired_count: 1
     state: canonical
     type: Process
@@ -1716,10 +1804,10 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: dea:process-manage-customer-relationship
-    last_modified: '2026-09-10'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-manage-customer-relationship/dea:process-manage-customer-relationship.yaml
-    research_count: 1
+    research_count: 2
     retired_count: 1
     state: canonical
     type: Process
@@ -2203,15 +2291,30 @@ catalog:
   owner: TechNeHub Labs
   repository: https://github.com/technehub-labs/dea-catalog-processes.git
   research_registers:
+  - entity_id: dea:activity-allocate-relationship-attention
+    files: []
+    path: entities/v1-alpha/dea:activity-allocate-relationship-attention/research/
+  - entity_id: dea:activity-assess-churn-risk
+    files: []
+    path: entities/v1-alpha/dea:activity-assess-churn-risk/research/
+  - entity_id: dea:activity-collect-customer-feedback
+    files: []
+    path: entities/v1-alpha/dea:activity-collect-customer-feedback/research/
   - entity_id: dea:activity-conduct-cycle-counts
     files: []
     path: entities/v1-alpha/dea:activity-conduct-cycle-counts/research/
   - entity_id: dea:activity-conduct-facility-inspections
     files: []
     path: entities/v1-alpha/dea:activity-conduct-facility-inspections/research/
+  - entity_id: dea:activity-conduct-relationship-reviews
+    files: []
+    path: entities/v1-alpha/dea:activity-conduct-relationship-reviews/research/
   - entity_id: dea:activity-coordinate-daily-service-operations
     files: []
     path: entities/v1-alpha/dea:activity-coordinate-daily-service-operations/research/
+  - entity_id: dea:activity-coordinate-renewals
+    files: []
+    path: entities/v1-alpha/dea:activity-coordinate-renewals/research/
   - entity_id: dea:activity-disposition-nonconforming-output
     files: []
     path: entities/v1-alpha/dea:activity-disposition-nonconforming-output/research/
@@ -2230,6 +2333,9 @@ catalog:
   - entity_id: dea:activity-execute-replenishment
     files: []
     path: entities/v1-alpha/dea:activity-execute-replenishment/research/
+  - entity_id: dea:activity-execute-retention-actions
+    files: []
+    path: entities/v1-alpha/dea:activity-execute-retention-actions/research/
   - entity_id: dea:activity-execute-scheduled-maintenance
     files: []
     path: entities/v1-alpha/dea:activity-execute-scheduled-maintenance/research/
@@ -2239,6 +2345,9 @@ catalog:
   - entity_id: dea:activity-execute-shipments
     files: []
     path: entities/v1-alpha/dea:activity-execute-shipments/research/
+  - entity_id: dea:activity-handle-relationship-escalations
+    files: []
+    path: entities/v1-alpha/dea:activity-handle-relationship-escalations/research/
   - entity_id: dea:activity-handle-service-exceptions
     files: []
     path: entities/v1-alpha/dea:activity-handle-service-exceptions/research/
@@ -2254,6 +2363,9 @@ catalog:
   - entity_id: dea:activity-maintain-stock-accuracy
     files: []
     path: entities/v1-alpha/dea:activity-maintain-stock-accuracy/research/
+  - entity_id: dea:activity-maintain-win-back-pipeline
+    files: []
+    path: entities/v1-alpha/dea:activity-maintain-win-back-pipeline/research/
   - entity_id: dea:activity-manage-capacity-and-performance
     files: []
     path: entities/v1-alpha/dea:activity-manage-capacity-and-performance/research/
@@ -2534,6 +2646,7 @@ catalog:
     files:
     - .gitkeep
     - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-customer-insight-and-retention/research/
   - entity_id: dea:process-customer-journey-design
     files:
@@ -2718,6 +2831,7 @@ catalog:
   - entity_id: dea:process-manage-customer-relationship
     files:
     - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-manage-customer-relationship/research/
   - entity_id: dea:process-manage-portfolio-performance
     files: []

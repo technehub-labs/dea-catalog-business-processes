@@ -1,24 +1,33 @@
-# Research register: dea:process-manage-customer-relationship
+# Research register: `dea:process-manage-customer-relationship`
 
-This directory holds research artifacts specific to this L2 Business
-Process entity.
+This directory holds research artifacts specific to
+this L2 Business Process.
+
+## Contents
+
+- `l3-candidate-universe.yaml` (CR-BP-44, 2026-09-13):
+  L3 (Activity) candidate universe decomposing
+  `dea:process-manage-customer-relationship` into 4 candidates, each tested
+  against the four L2 criteria (CR-BP-32 section 5),
+  scored for cohesion (CR-BP-32 section 6, 0-9 scale),
+  and assigned a disposition. All candidates landed as
+  canonical Activity records under
+  `entities/v1-alpha/dea:activity-*/`.
 
 ## Provenance
 
-No research files have been moved into this subtree yet. The CR-BP-11
-49-coordinate register (moved into the composing L1 Process Group's
-research subtree) covers the broader L1 disposition that produced the
-first L1 group; L2-specific evidence is collected here as it accumulates.
+Established by CR-BP-44 on 2026-09-13 as part of the
+PartyAndRelationship Operate + Improve L3 tranche
+(pattern proven by the CR-BP-42 pilot and the CR-BP-43
+EO/Operate tranche).
 
 ## Governing CRs
 
-- **CR-BP-03** (merged): the Business Process architecture and the
-  original admission of this canonical entry.
-- **CR-BP-03A** (merged): legacy migration gate; this entity uses the
-  canonical `dea:process-*` id family.
-- **CR-BP-04** (merged): id-family reconciliation locking the four
-  canonical families (`dea:process-*`, `dea:pc-*`, `dea:group-*`,
-  `dea:scope-*`).
-- **CR-BP-12** (merged): the Process Group profile that promoted
-  `dea:group-customer-lifecycle-management` from a `metadata.group`
-  label on this entity into a first-class L1 record.
+- **CR-BP-32**: Activity Model (definition, cohesion,
+  composition, boundary; ACT-001..010).
+- **CR-BP-42**: L3 Activity pilot deposition (pattern
+  origin).
+- **CR-BP-43**: L3 EO/Operate tranche (tranche-scale
+  proof).
+- **CR-BP-44**: this tranche (this directory's first
+  artifact).
