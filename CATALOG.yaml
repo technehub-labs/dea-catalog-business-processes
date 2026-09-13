@@ -2,10 +2,10 @@ catalog:
   abbreviation: BP
   counts:
     candidates: 0
-    canonical: 433
-    entities: 434
-    open_change_requests: 63
-    research_files: 176
+    canonical: 469
+    entities: 470
+    open_change_requests: 64
+    research_files: 194
     retired: 1
   cross_cutting:
     change_requests: change-requests/
@@ -47,6 +47,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-analyze-asset-utilization/dea:activity-analyze-asset-utilization.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-analyze-control-and-policy-gaps
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-analyze-control-and-policy-gaps/dea:activity-analyze-control-and-policy-gaps.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -219,6 +230,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-assess-finance-strategy-context
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-assess-finance-strategy-context/dea:activity-assess-finance-strategy-context.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-assess-finding-recurrence
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -267,6 +289,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-assess-portfolio-balance/dea:activity-assess-portfolio-balance.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-assess-tax-exposures
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-assess-tax-exposures/dea:activity-assess-tax-exposures.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -344,6 +377,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-build-acquisition-engines/dea:activity-build-acquisition-engines.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-build-budget-models
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-build-budget-models/dea:activity-build-budget-models.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -472,6 +516,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-commit-controls-and-policies-design
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-commit-controls-and-policies-design/dea:activity-commit-controls-and-policies-design.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-commit-customer-strategy
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -542,6 +597,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-commit-facility-blueprint/dea:activity-commit-facility-blueprint.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-commit-finance-strategy
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-commit-finance-strategy/dea:activity-commit-finance-strategy.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -663,6 +729,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-commit-physical-asset-approach/dea:activity-commit-physical-asset-approach.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-commit-plan-structure
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-commit-plan-structure/dea:activity-commit-plan-structure.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -813,10 +890,32 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-commit-tax-position-and-strategy
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-commit-tax-position-and-strategy/dea:activity-commit-tax-position-and-strategy.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-commit-technology-enablement-approach
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-commit-technology-enablement-approach/dea:activity-commit-technology-enablement-approach.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-commit-treasury-and-funding-model
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-commit-treasury-and-funding-model/dea:activity-commit-treasury-and-funding-model.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -883,6 +982,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-configure-line-controls/dea:activity-configure-line-controls.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-configure-posting-rules
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-configure-posting-rules/dea:activity-configure-posting-rules.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -1066,6 +1176,39 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-deploy-chart-of-accounts
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-deploy-chart-of-accounts/dea:activity-deploy-chart-of-accounts.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-deploy-erp-finance-module
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-deploy-erp-finance-module/dea:activity-deploy-erp-finance-module.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-deploy-financial-reports
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-deploy-financial-reports/dea:activity-deploy-financial-reports.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-deploy-monitoring-tooling
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -1110,6 +1253,28 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-design-cash-and-liquidity-policy
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-design-cash-and-liquidity-policy/dea:activity-design-cash-and-liquidity-policy.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-design-chart-of-accounts
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-design-chart-of-accounts/dea:activity-design-chart-of-accounts.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-design-compliance-regime
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -1132,6 +1297,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-design-cost-allocation-model
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-design-cost-allocation-model/dea:activity-design-cost-allocation-model.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-design-facility-layouts
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -1143,10 +1319,54 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-design-financial-control-objectives
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-design-financial-control-objectives/dea:activity-design-financial-control-objectives.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-design-financial-controls-framework
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-design-financial-controls-framework/dea:activity-design-financial-controls-framework.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-design-financial-policies
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-design-financial-policies/dea:activity-design-financial-policies.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-design-fulfilment-flows
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-design-fulfilment-flows/dea:activity-design-fulfilment-flows.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-design-funding-structure
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-design-funding-structure/dea:activity-design-funding-structure.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -1308,10 +1528,32 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-design-tax-strategy
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-design-tax-strategy/dea:activity-design-tax-strategy.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-design-touchpoints
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-design-touchpoints/dea:activity-design-touchpoints.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-design-treasury-operating-model
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-design-treasury-operating-model/dea:activity-design-treasury-operating-model.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -1352,6 +1594,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-document-tax-positions
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-document-tax-positions/dea:activity-document-tax-positions.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-document-variant-baseline
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -1378,6 +1631,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-equip-bodies-with-instruments/dea:activity-equip-bodies-with-instruments.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-establish-compliance-calendar
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-establish-compliance-calendar/dea:activity-establish-compliance-calendar.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -1444,6 +1708,28 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-execute-facility-work-orders/dea:activity-execute-facility-work-orders.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-execute-filings-and-registrations
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-execute-filings-and-registrations/dea:activity-execute-filings-and-registrations.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-execute-funding-line-documentation
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-execute-funding-line-documentation/dea:activity-execute-funding-line-documentation.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -1693,6 +1979,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-frame-funding-and-capital-approach
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-frame-funding-and-capital-approach/dea:activity-frame-funding-and-capital-approach.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-frame-governance-posture-for-risk
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -1708,6 +2005,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-frame-investment-envelopes/dea:activity-frame-investment-envelopes.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-frame-monetary-model
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-frame-monetary-model/dea:activity-frame-monetary-model.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -1825,6 +2133,28 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-implement-planning-controls
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-implement-planning-controls/dea:activity-implement-planning-controls.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-implement-tax-controls
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-implement-tax-controls/dea:activity-implement-tax-controls.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-install-line-equipment
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -1884,6 +2214,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-integrate-demand-engine-with-channels/dea:activity-integrate-demand-engine-with-channels.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-integrate-forecasting-integrations
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-integrate-forecasting-integrations/dea:activity-integrate-forecasting-integrations.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -2236,6 +2577,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-monitor-service-levels/dea:activity-monitor-service-levels.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-negotiate-funding-lines
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-negotiate-funding-lines/dea:activity-negotiate-funding-lines.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -2826,6 +3178,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-stand-up-finance-function
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-stand-up-finance-function/dea:activity-stand-up-finance-function.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-stand-up-service-delivery-mechanism
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -2980,10 +3343,32 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-verify-ledger-implementation
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-verify-ledger-implementation/dea:activity-verify-ledger-implementation.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-verify-network-readiness
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-verify-network-readiness/dea:activity-verify-network-readiness.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-verify-planning-system-readiness
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-verify-planning-system-readiness/dea:activity-verify-planning-system-readiness.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -3006,6 +3391,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-verify-service-capability-readiness/dea:activity-verify-service-capability-readiness.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-verify-tax-capability-readiness
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-verify-tax-capability-readiness/dea:activity-verify-tax-capability-readiness.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -3454,10 +3850,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-build-budgeting-and-forecasting-systems
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-build-budgeting-and-forecasting-systems/dea:process-build-budgeting-and-forecasting-systems.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -3817,10 +4213,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-design-financial-controls-and-policies
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-design-financial-controls-and-policies/dea:process-design-financial-controls-and-policies.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -3828,10 +4224,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-design-financial-plan-structure
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-design-financial-plan-structure/dea:process-design-financial-plan-structure.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -3982,10 +4378,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-design-tax-position-and-strategy
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-design-tax-position-and-strategy/dea:process-design-tax-position-and-strategy.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -4004,10 +4400,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-design-treasury-and-funding-model
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-design-treasury-and-funding-model/dea:process-design-treasury-and-funding-model.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -4136,10 +4532,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-frame-finance-strategy
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-frame-finance-strategy/dea:process-frame-finance-strategy.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -4257,10 +4653,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-implement-financial-systems-and-ledger
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-implement-financial-systems-and-ledger/dea:process-implement-financial-systems-and-ledger.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -4378,10 +4774,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-onboard-tax-and-compliance-capability
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-onboard-tax-and-compliance-capability/dea:process-onboard-tax-and-compliance-capability.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -4741,10 +5137,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-secure-funding-facilities
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-secure-funding-facilities/dea:process-secure-funding-facilities.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -4808,6 +5204,9 @@ catalog:
   - entity_id: dea:activity-analyze-asset-utilization
     files: []
     path: entities/v1-alpha/dea:activity-analyze-asset-utilization/research/
+  - entity_id: dea:activity-analyze-control-and-policy-gaps
+    files: []
+    path: entities/v1-alpha/dea:activity-analyze-control-and-policy-gaps/research/
   - entity_id: dea:activity-analyze-evolution-drivers
     files: []
     path: entities/v1-alpha/dea:activity-analyze-evolution-drivers/research/
@@ -4853,6 +5252,9 @@ catalog:
   - entity_id: dea:activity-assess-execution-engine-context
     files: []
     path: entities/v1-alpha/dea:activity-assess-execution-engine-context/research/
+  - entity_id: dea:activity-assess-finance-strategy-context
+    files: []
+    path: entities/v1-alpha/dea:activity-assess-finance-strategy-context/research/
   - entity_id: dea:activity-assess-finding-recurrence
     files: []
     path: entities/v1-alpha/dea:activity-assess-finding-recurrence/research/
@@ -4868,6 +5270,9 @@ catalog:
   - entity_id: dea:activity-assess-portfolio-balance
     files: []
     path: entities/v1-alpha/dea:activity-assess-portfolio-balance/research/
+  - entity_id: dea:activity-assess-tax-exposures
+    files: []
+    path: entities/v1-alpha/dea:activity-assess-tax-exposures/research/
   - entity_id: dea:activity-bound-asset-lifecycle-envelopes
     files: []
     path: entities/v1-alpha/dea:activity-bound-asset-lifecycle-envelopes/research/
@@ -4889,6 +5294,9 @@ catalog:
   - entity_id: dea:activity-build-acquisition-engines
     files: []
     path: entities/v1-alpha/dea:activity-build-acquisition-engines/research/
+  - entity_id: dea:activity-build-budget-models
+    files: []
+    path: entities/v1-alpha/dea:activity-build-budget-models/research/
   - entity_id: dea:activity-build-demand-program-assets
     files: []
     path: entities/v1-alpha/dea:activity-build-demand-program-assets/research/
@@ -4922,6 +5330,9 @@ catalog:
   - entity_id: dea:activity-commission-technology-assets
     files: []
     path: entities/v1-alpha/dea:activity-commission-technology-assets/research/
+  - entity_id: dea:activity-commit-controls-and-policies-design
+    files: []
+    path: entities/v1-alpha/dea:activity-commit-controls-and-policies-design/research/
   - entity_id: dea:activity-commit-customer-strategy
     files: []
     path: entities/v1-alpha/dea:activity-commit-customer-strategy/research/
@@ -4943,6 +5354,9 @@ catalog:
   - entity_id: dea:activity-commit-facility-blueprint
     files: []
     path: entities/v1-alpha/dea:activity-commit-facility-blueprint/research/
+  - entity_id: dea:activity-commit-finance-strategy
+    files: []
+    path: entities/v1-alpha/dea:activity-commit-finance-strategy/research/
   - entity_id: dea:activity-commit-framework-improvements
     files: []
     path: entities/v1-alpha/dea:activity-commit-framework-improvements/research/
@@ -4976,6 +5390,9 @@ catalog:
   - entity_id: dea:activity-commit-physical-asset-approach
     files: []
     path: entities/v1-alpha/dea:activity-commit-physical-asset-approach/research/
+  - entity_id: dea:activity-commit-plan-structure
+    files: []
+    path: entities/v1-alpha/dea:activity-commit-plan-structure/research/
   - entity_id: dea:activity-commit-platform-architecture
     files: []
     path: entities/v1-alpha/dea:activity-commit-platform-architecture/research/
@@ -5015,9 +5432,15 @@ catalog:
   - entity_id: dea:activity-commit-risk-framework-direction
     files: []
     path: entities/v1-alpha/dea:activity-commit-risk-framework-direction/research/
+  - entity_id: dea:activity-commit-tax-position-and-strategy
+    files: []
+    path: entities/v1-alpha/dea:activity-commit-tax-position-and-strategy/research/
   - entity_id: dea:activity-commit-technology-enablement-approach
     files: []
     path: entities/v1-alpha/dea:activity-commit-technology-enablement-approach/research/
+  - entity_id: dea:activity-commit-treasury-and-funding-model
+    files: []
+    path: entities/v1-alpha/dea:activity-commit-treasury-and-funding-model/research/
   - entity_id: dea:activity-conduct-cycle-counts
     files: []
     path: entities/v1-alpha/dea:activity-conduct-cycle-counts/research/
@@ -5036,6 +5459,9 @@ catalog:
   - entity_id: dea:activity-configure-line-controls
     files: []
     path: entities/v1-alpha/dea:activity-configure-line-controls/research/
+  - entity_id: dea:activity-configure-posting-rules
+    files: []
+    path: entities/v1-alpha/dea:activity-configure-posting-rules/research/
   - entity_id: dea:activity-constitute-bodies
     files: []
     path: entities/v1-alpha/dea:activity-constitute-bodies/research/
@@ -5084,6 +5510,15 @@ catalog:
   - entity_id: dea:activity-deliver-mitigations-to-bodies
     files: []
     path: entities/v1-alpha/dea:activity-deliver-mitigations-to-bodies/research/
+  - entity_id: dea:activity-deploy-chart-of-accounts
+    files: []
+    path: entities/v1-alpha/dea:activity-deploy-chart-of-accounts/research/
+  - entity_id: dea:activity-deploy-erp-finance-module
+    files: []
+    path: entities/v1-alpha/dea:activity-deploy-erp-finance-module/research/
+  - entity_id: dea:activity-deploy-financial-reports
+    files: []
+    path: entities/v1-alpha/dea:activity-deploy-financial-reports/research/
   - entity_id: dea:activity-deploy-monitoring-tooling
     files: []
     path: entities/v1-alpha/dea:activity-deploy-monitoring-tooling/research/
@@ -5096,18 +5531,39 @@ catalog:
   - entity_id: dea:activity-design-bounded-enhancements
     files: []
     path: entities/v1-alpha/dea:activity-design-bounded-enhancements/research/
+  - entity_id: dea:activity-design-cash-and-liquidity-policy
+    files: []
+    path: entities/v1-alpha/dea:activity-design-cash-and-liquidity-policy/research/
+  - entity_id: dea:activity-design-chart-of-accounts
+    files: []
+    path: entities/v1-alpha/dea:activity-design-chart-of-accounts/research/
   - entity_id: dea:activity-design-compliance-regime
     files: []
     path: entities/v1-alpha/dea:activity-design-compliance-regime/research/
   - entity_id: dea:activity-design-configuration-options
     files: []
     path: entities/v1-alpha/dea:activity-design-configuration-options/research/
+  - entity_id: dea:activity-design-cost-allocation-model
+    files: []
+    path: entities/v1-alpha/dea:activity-design-cost-allocation-model/research/
   - entity_id: dea:activity-design-facility-layouts
     files: []
     path: entities/v1-alpha/dea:activity-design-facility-layouts/research/
+  - entity_id: dea:activity-design-financial-control-objectives
+    files: []
+    path: entities/v1-alpha/dea:activity-design-financial-control-objectives/research/
+  - entity_id: dea:activity-design-financial-controls-framework
+    files: []
+    path: entities/v1-alpha/dea:activity-design-financial-controls-framework/research/
+  - entity_id: dea:activity-design-financial-policies
+    files: []
+    path: entities/v1-alpha/dea:activity-design-financial-policies/research/
   - entity_id: dea:activity-design-fulfilment-flows
     files: []
     path: entities/v1-alpha/dea:activity-design-fulfilment-flows/research/
+  - entity_id: dea:activity-design-funding-structure
+    files: []
+    path: entities/v1-alpha/dea:activity-design-funding-structure/research/
   - entity_id: dea:activity-design-governance-integration
     files: []
     path: entities/v1-alpha/dea:activity-design-governance-integration/research/
@@ -5150,9 +5606,15 @@ catalog:
   - entity_id: dea:activity-design-service-levels
     files: []
     path: entities/v1-alpha/dea:activity-design-service-levels/research/
+  - entity_id: dea:activity-design-tax-strategy
+    files: []
+    path: entities/v1-alpha/dea:activity-design-tax-strategy/research/
   - entity_id: dea:activity-design-touchpoints
     files: []
     path: entities/v1-alpha/dea:activity-design-touchpoints/research/
+  - entity_id: dea:activity-design-treasury-operating-model
+    files: []
+    path: entities/v1-alpha/dea:activity-design-treasury-operating-model/research/
   - entity_id: dea:activity-develop-improvement-capability
     files: []
     path: entities/v1-alpha/dea:activity-develop-improvement-capability/research/
@@ -5162,6 +5624,9 @@ catalog:
   - entity_id: dea:activity-document-prototype-build
     files: []
     path: entities/v1-alpha/dea:activity-document-prototype-build/research/
+  - entity_id: dea:activity-document-tax-positions
+    files: []
+    path: entities/v1-alpha/dea:activity-document-tax-positions/research/
   - entity_id: dea:activity-document-variant-baseline
     files: []
     path: entities/v1-alpha/dea:activity-document-variant-baseline/research/
@@ -5171,6 +5636,9 @@ catalog:
   - entity_id: dea:activity-equip-bodies-with-instruments
     files: []
     path: entities/v1-alpha/dea:activity-equip-bodies-with-instruments/research/
+  - entity_id: dea:activity-establish-compliance-calendar
+    files: []
+    path: entities/v1-alpha/dea:activity-establish-compliance-calendar/research/
   - entity_id: dea:activity-establish-network-nodes
     files: []
     path: entities/v1-alpha/dea:activity-establish-network-nodes/research/
@@ -5189,6 +5657,12 @@ catalog:
   - entity_id: dea:activity-execute-facility-work-orders
     files: []
     path: entities/v1-alpha/dea:activity-execute-facility-work-orders/research/
+  - entity_id: dea:activity-execute-filings-and-registrations
+    files: []
+    path: entities/v1-alpha/dea:activity-execute-filings-and-registrations/research/
+  - entity_id: dea:activity-execute-funding-line-documentation
+    files: []
+    path: entities/v1-alpha/dea:activity-execute-funding-line-documentation/research/
   - entity_id: dea:activity-execute-gate-decisions
     files: []
     path: entities/v1-alpha/dea:activity-execute-gate-decisions/research/
@@ -5255,12 +5729,18 @@ catalog:
   - entity_id: dea:activity-frame-fulfilment-patterns
     files: []
     path: entities/v1-alpha/dea:activity-frame-fulfilment-patterns/research/
+  - entity_id: dea:activity-frame-funding-and-capital-approach
+    files: []
+    path: entities/v1-alpha/dea:activity-frame-funding-and-capital-approach/research/
   - entity_id: dea:activity-frame-governance-posture-for-risk
     files: []
     path: entities/v1-alpha/dea:activity-frame-governance-posture-for-risk/research/
   - entity_id: dea:activity-frame-investment-envelopes
     files: []
     path: entities/v1-alpha/dea:activity-frame-investment-envelopes/research/
+  - entity_id: dea:activity-frame-monetary-model
+    files: []
+    path: entities/v1-alpha/dea:activity-frame-monetary-model/research/
   - entity_id: dea:activity-frame-segment-thesis
     files: []
     path: entities/v1-alpha/dea:activity-frame-segment-thesis/research/
@@ -5291,6 +5771,12 @@ catalog:
   - entity_id: dea:activity-identify-target-parties
     files: []
     path: entities/v1-alpha/dea:activity-identify-target-parties/research/
+  - entity_id: dea:activity-implement-planning-controls
+    files: []
+    path: entities/v1-alpha/dea:activity-implement-planning-controls/research/
+  - entity_id: dea:activity-implement-tax-controls
+    files: []
+    path: entities/v1-alpha/dea:activity-implement-tax-controls/research/
   - entity_id: dea:activity-install-line-equipment
     files: []
     path: entities/v1-alpha/dea:activity-install-line-equipment/research/
@@ -5309,6 +5795,9 @@ catalog:
   - entity_id: dea:activity-integrate-demand-engine-with-channels
     files: []
     path: entities/v1-alpha/dea:activity-integrate-demand-engine-with-channels/research/
+  - entity_id: dea:activity-integrate-forecasting-integrations
+    files: []
+    path: entities/v1-alpha/dea:activity-integrate-forecasting-integrations/research/
   - entity_id: dea:activity-integrate-model-components
     files: []
     path: entities/v1-alpha/dea:activity-integrate-model-components/research/
@@ -5405,6 +5894,9 @@ catalog:
   - entity_id: dea:activity-monitor-service-levels
     files: []
     path: entities/v1-alpha/dea:activity-monitor-service-levels/research/
+  - entity_id: dea:activity-negotiate-funding-lines
+    files: []
+    path: entities/v1-alpha/dea:activity-negotiate-funding-lines/research/
   - entity_id: dea:activity-order-portfolio-priorities
     files: []
     path: entities/v1-alpha/dea:activity-order-portfolio-priorities/research/
@@ -5564,6 +6056,9 @@ catalog:
   - entity_id: dea:activity-stand-up-delivery-components
     files: []
     path: entities/v1-alpha/dea:activity-stand-up-delivery-components/research/
+  - entity_id: dea:activity-stand-up-finance-function
+    files: []
+    path: entities/v1-alpha/dea:activity-stand-up-finance-function/research/
   - entity_id: dea:activity-stand-up-service-delivery-mechanism
     files: []
     path: entities/v1-alpha/dea:activity-stand-up-service-delivery-mechanism/research/
@@ -5606,15 +6101,24 @@ catalog:
   - entity_id: dea:activity-verify-initial-demand-production
     files: []
     path: entities/v1-alpha/dea:activity-verify-initial-demand-production/research/
+  - entity_id: dea:activity-verify-ledger-implementation
+    files: []
+    path: entities/v1-alpha/dea:activity-verify-ledger-implementation/research/
   - entity_id: dea:activity-verify-network-readiness
     files: []
     path: entities/v1-alpha/dea:activity-verify-network-readiness/research/
+  - entity_id: dea:activity-verify-planning-system-readiness
+    files: []
+    path: entities/v1-alpha/dea:activity-verify-planning-system-readiness/research/
   - entity_id: dea:activity-verify-prototype-readiness
     files: []
     path: entities/v1-alpha/dea:activity-verify-prototype-readiness/research/
   - entity_id: dea:activity-verify-service-capability-readiness
     files: []
     path: entities/v1-alpha/dea:activity-verify-service-capability-readiness/research/
+  - entity_id: dea:activity-verify-tax-capability-readiness
+    files: []
+    path: entities/v1-alpha/dea:activity-verify-tax-capability-readiness/research/
   - entity_id: dea:activity-verify-variant-conformance
     files: []
     path: entities/v1-alpha/dea:activity-verify-variant-conformance/research/
@@ -5763,7 +6267,9 @@ catalog:
     - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-audit-policy-compliance/research/
   - entity_id: dea:process-build-budgeting-and-forecasting-systems
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-build-budgeting-and-forecasting-systems/research/
   - entity_id: dea:process-build-contractor-and-partner-agent-pool
     files: []
@@ -5910,10 +6416,14 @@ catalog:
     - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-design-facility-and-asset-blueprint/research/
   - entity_id: dea:process-design-financial-controls-and-policies
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-design-financial-controls-and-policies/research/
   - entity_id: dea:process-design-financial-plan-structure
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-design-financial-plan-structure/research/
   - entity_id: dea:process-design-governance-system
     files:
@@ -5973,7 +6483,9 @@ catalog:
     files: []
     path: entities/v1-alpha/dea:process-design-strategic-scenarios/research/
   - entity_id: dea:process-design-tax-position-and-strategy
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-design-tax-position-and-strategy/research/
   - entity_id: dea:process-design-technology-platform-architecture
     files:
@@ -5981,7 +6493,9 @@ catalog:
     - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-design-technology-platform-architecture/research/
   - entity_id: dea:process-design-treasury-and-funding-model
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-design-treasury-and-funding-model/research/
   - entity_id: dea:process-develop-agents-and-organization
     files: []
@@ -6030,7 +6544,9 @@ catalog:
     - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-frame-delivery-model-conception/research/
   - entity_id: dea:process-frame-finance-strategy
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-frame-finance-strategy/research/
   - entity_id: dea:process-frame-innovation-thesis
     files:
@@ -6077,7 +6593,9 @@ catalog:
     - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-frame-value-proposition-thesis/research/
   - entity_id: dea:process-implement-financial-systems-and-ledger
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-implement-financial-systems-and-ledger/research/
   - entity_id: dea:process-improve-policy-and-control-framework
     files:
@@ -6126,7 +6644,9 @@ catalog:
     files: []
     path: entities/v1-alpha/dea:process-monitor-strategic-performance/research/
   - entity_id: dea:process-onboard-tax-and-compliance-capability
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-onboard-tax-and-compliance-capability/research/
   - entity_id: dea:process-operate-agent-performance
     files: []
@@ -6263,7 +6783,9 @@ catalog:
     - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-score-audit-findings/research/
   - entity_id: dea:process-secure-funding-facilities
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-secure-funding-facilities/research/
   - entity_id: dea:process-sense-environmental-signals
     files: []

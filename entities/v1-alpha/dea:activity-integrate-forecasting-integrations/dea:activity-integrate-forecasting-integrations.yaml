@@ -1,0 +1,34 @@
+id: dea:activity-integrate-forecasting-integrations
+type: Activity
+name: Integrate Forecasting Integrations
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: "The cohesive grouping of work within Build Budgeting and Forecasting Systems that builds the integrations feeding the budgeting and forecasting systems from operational sources."
+belongs_to_business_process: dea:process-build-budgeting-and-forecasting-systems
+cohesion_rationale: "Constituent work shares a single integration concern (operational data into planning models), one input class (operational data sources), and one output (working integrations). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6)."
+decomposition_boundary: l4-reached
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: FinanceAndAccounting
+    stage: Build
+    identifier: ecf:financeAccounting.build
+metadata:
+  established_by: CR-BP-52
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-52
+    date: '2026-09-13'
+    change: |
+      Initial L3 Activity entry; lands as part of the CR-BP-52
+      FinanceAndAccounting Conceive + Design + Build tranche (pattern
+      proven by CR-BP-42 through CR-BP-51). Classified per CR-BP-32
+      section 5 (fails standalone executability and resource dedication);
+      decomposition boundary marker per CR-BP-32 section 12 pending Task
+      records (dea:Task lifecycle: proposed).

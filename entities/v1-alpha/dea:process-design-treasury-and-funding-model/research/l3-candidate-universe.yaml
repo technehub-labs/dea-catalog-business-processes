@@ -1,0 +1,104 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-52
+status: candidate-not-canonical; subject to review
+parent_business_process: dea:process-design-treasury-and-funding-model
+coordinate:
+  domain: FinanceAndAccounting
+  stage: Design
+  process_context: dea:pc-fa-design
+  process_group: dea:group-financial-design
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42,
+  scaled by CR-BP-43 through CR-BP-51)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/dea:process-design-treasury-and-funding-model
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: dea:activity-design-cash-and-liquidity-policy
+  name: "Design Cash and Liquidity Policy"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Liquidity buffer design; cash pooling posture; liquidity limit articulation"
+  out_of_scope:
+  - "Treasury policy review (parent BP trigger)"
+  - "Cash and liquidity management operation (dea:process-manage-cash-and-liquidity)"
+  evidence:
+  - "Parent BP outcome (cash and liquidity policy coordinated)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-52
+- id: dea:activity-design-funding-structure
+  name: "Design Funding Structure"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Facility and instrument mix design; maturity ladder design; covenant posture framing"
+  out_of_scope:
+  - "Funding approach framing (dea:process-frame-finance-strategy)"
+  - "Funding facility securing (dea:process-secure-funding-facilities)"
+  evidence:
+  - "Parent BP outcome (funding policy coordinated)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-52
+- id: dea:activity-design-treasury-operating-model
+  name: "Design Treasury Operating Model"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Treasury mandate design; operating rhythm design; treasury system requirement framing"
+  out_of_scope:
+  - "Liquidity policy design (dea:activity-design-cash-and-liquidity-policy)"
+  - "Cash and liquidity management operation (dea:process-manage-cash-and-liquidity)"
+  evidence:
+  - "Parent BP outcome (treasury model coordinated for operations)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-52
+- id: dea:activity-commit-treasury-and-funding-model
+  name: "Commit Treasury and Funding Model"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Model consolidation; coherence review against finance strategy; commitment and handoff"
+  out_of_scope:
+  - "Funding facility securing (dea:process-secure-funding-facilities)"
+  - "Finance strategy framing (dea:process-frame-finance-strategy)"
+  evidence:
+  - "Parent BP outcome (treasury and funding model designed)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-52
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."
