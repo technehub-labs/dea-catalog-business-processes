@@ -40,9 +40,30 @@ ecfConformance:
     stage: Operate
     identifier: ecf:financeAccounting.operate
   target_id: ecf:financeAccounting.operate
+metadata:
+  established_by: CR-BP-21e.1
+  established_at: '2026-09-08'
+  activity_references:
+  - dea:activity-issue-customer-invoices
+  - dea:activity-manage-collections
+  - dea:activity-apply-cash-to-ledger
+  - dea:activity-maintain-receivables-record
 change_history:
 - version: '1.0.0'
   date: '2026-09-08'
   cr: CR-BP-21e.1
   change: |
     Initial landing under CR-BP-21e.1 (FinanceAndAccounting completion).
+- date: '2026-09-13'
+  cr: CR-BP-53
+  change: |
+    L3 decomposition of this Business Process: 4 Activities
+    landed under the structured deposition pattern (research
+    deposition at research/l3-candidate-universe.yaml, then
+    canonical Activity records) as part of the CR-BP-53
+    FinanceAndAccounting Improve + Operate tranche (completes
+    the FA domain's L3 coverage). Adds metadata.activity_references[]
+    back-references per ACT-010 bidirectional traceability.
+    Additive metadata-only change; BP identity and semantics
+    unchanged, so version remains unchanged per SIV-004
+    (CR-BP-34d).
