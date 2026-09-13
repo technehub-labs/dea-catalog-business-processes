@@ -1,0 +1,34 @@
+id: dea:activity-select-improvement-projects
+type: Activity
+name: Select Improvement Projects
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: "The cohesive grouping of work within Conduct Lean Six Sigma Programme that selects the bounded improvement projects the programme will deliver."
+belongs_to_business_process: dea:process-conduct-lean-six-sigma-programme
+cohesion_rationale: "Constituent work shares a single selection concern (waste and variation evidence to project portfolio), one input class (performance evidence, programme mandate), and one output (the selected project portfolio). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6)."
+decomposition_boundary: l4-reached
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: EnablementAndOperations
+    stage: Improve
+    identifier: ecf:enablementAndOperations.improve
+metadata:
+  established_by: CR-BP-47
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-47
+    date: '2026-09-13'
+    change: |
+      Initial L3 Activity entry; lands as part of the CR-BP-47
+      EnablementAndOperations Build + Improve tranche (completes the EO
+      domain's L3 coverage; pattern proven by CR-BP-42 through CR-BP-46).
+      Classified per CR-BP-32 section 5 (fails standalone executability
+      and resource dedication); decomposition boundary marker per CR-BP-32
+      section 12 pending Task records (dea:Task lifecycle: proposed).
