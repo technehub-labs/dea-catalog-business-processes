@@ -733,7 +733,7 @@ records:
   - id: dea:process-operate-quality-control
     type: Process
     path: entities/v1-alpha/dea:process-operate-quality-control/dea:process-operate-quality-control.yaml
-    sha256: e9258cf1e2f0d9dbadbbcd940fe09bb6d15fa4520d0802ca743e33626e370350
+    sha256: ffa63d2991789907aedec4abafe7a955cd111693ef012858609fb7ad06f87a87
   - id: dea:process-operate-service-delivery
     type: Process
     path: entities/v1-alpha/dea:process-operate-service-delivery/dea:process-operate-service-delivery.yaml

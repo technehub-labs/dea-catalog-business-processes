@@ -40,6 +40,12 @@ ecfConformance:
 metadata:
   established_by: CR-BP-21d.1
   established_at: '2026-09-08'
+  activity_references:
+  - dea:activity-plan-quality-inspection
+  - dea:activity-execute-inspection-and-testing
+  - dea:activity-record-inspection-results
+  - dea:activity-disposition-nonconforming-output
+  - dea:activity-report-quality-performance
   change_history:
   - cr: CR-BP-21d.1
     date: '2026-09-08'
@@ -48,6 +54,16 @@ metadata:
       EnablementAndOperations completion tranche under ECF v2.4.0
       register v2 (CR-BP-19). Closes the remaining register v2 L2
       candidates for this cell.
+  - cr: CR-BP-42
+    date: '2026-09-13'
+    change: |
+      First L3 decomposition of this Business Process: five Activities
+      landed under the structured deposition pattern (research
+      deposition at research/l3-candidate-universe.yaml, then canonical
+      Activity records). Adds metadata.activity_references[] back-
+      references per ACT-010 bidirectional traceability. Additive
+      metadata-only change; BP identity and semantics unchanged, so
+      version remains 1.0.0 per SIV-004 (CR-BP-34d).
 links:
 - rel: change-request
   href: change-requests/CR-BP-21d.1-enablement-operations-completion.md

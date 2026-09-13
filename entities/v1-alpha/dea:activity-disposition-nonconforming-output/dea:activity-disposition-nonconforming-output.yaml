@@ -1,0 +1,39 @@
+id: dea:activity-disposition-nonconforming-output
+type: Activity
+name: Disposition Nonconforming Output
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Operate Quality Control that
+  evaluates recorded nonconformities and decides the fate of nonconforming
+  output (accept-with-concession, rework, scrap, or return), including
+  containment of affected batches.
+belongs_to_business_process: dea:process-operate-quality-control
+cohesion_rationale: Constituent work shares a single decision concern
+  (disposition of nonconforming output per ISO 9001:2015 clause 8.7), a
+  common input (recorded nonconformities), and one recognizable portion of
+  the parent outcome (the disposition record). Cohesion score 9/9 assessed
+  at deposition (CR-BP-32 §6; research/l3-candidate-universe.yaml).
+decomposition_boundary: l4-reached
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: EnablementAndOperations
+    stage: Operate
+    identifier: ecf:enablementAndOperations.operate
+metadata:
+  established_by: CR-BP-42
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-42
+    date: '2026-09-13'
+    change: |
+      Initial L3 Activity entry; first Activity deposition in the catalog
+      (pilot slice). Classified per CR-BP-32 §5 (fails standalone
+      executability and resource dedication); decomposition boundary marker
+      per CR-BP-32 §12 pending Task records (dea:Task lifecycle: proposed).
