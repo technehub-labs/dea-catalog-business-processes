@@ -1,0 +1,34 @@
+id: dea:activity-establish-risk-registers
+type: Activity
+name: Establish Risk Registers
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: "The cohesive grouping of work within Establish Risk and Control Apparatus that establishes the risk registers populated per the designed taxonomy and scales."
+belongs_to_business_process: dea:process-establish-risk-and-control-apparatus
+cohesion_rationale: "Constituent work shares a single establishment concern (framework design to working registers), one reference class (the risk framework design), and one output (operating risk registers). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6)."
+decomposition_boundary: l4-reached
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: GovernanceAndExistence
+    stage: Build
+    identifier: ecf:governanceExistence.build
+metadata:
+  established_by: CR-BP-48
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-48
+    date: '2026-09-13'
+    change: |
+      Initial L3 Activity entry; lands as part of the CR-BP-48
+      GovernanceAndExistence Conceive + Design + Build tranche (pattern
+      proven by CR-BP-42 through CR-BP-47). Classified per CR-BP-32
+      section 5 (fails standalone executability and resource dedication);
+      decomposition boundary marker per CR-BP-32 section 12 pending Task
+      records (dea:Task lifecycle: proposed).

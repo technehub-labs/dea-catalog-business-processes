@@ -40,9 +40,29 @@ ecfConformance:
     stage: Build
     identifier: ecf:governanceExistence.build
   target_id: ecf:governanceExistence.build
+metadata:
+  established_by: CR-BP-21f.1
+  established_at: '2026-09-08'
+  activity_references:
+  - dea:activity-establish-risk-registers
+  - dea:activity-deploy-monitoring-tooling
+  - dea:activity-establish-reporting-lines
+  - dea:activity-verify-apparatus-readiness
 change_history:
 - version: '1.0.0'
   date: '2026-09-08'
   cr: CR-BP-21f.1
   change: |
     Initial landing under CR-BP-21f.1 (GovernanceAndExistence completion).
+- date: '2026-09-13'
+  cr: CR-BP-48
+  change: |
+    L3 decomposition of this Business Process: 4 Activities
+    landed under the structured deposition pattern (research
+    deposition at research/l3-candidate-universe.yaml, then
+    canonical Activity records) as part of the CR-BP-48
+    GovernanceAndExistence Conceive + Design + Build tranche.
+    Adds metadata.activity_references[] back-references per
+    ACT-010 bidirectional traceability. Additive metadata-only
+    change; BP identity and semantics unchanged, so version
+    remains unchanged per SIV-004 (CR-BP-34d).

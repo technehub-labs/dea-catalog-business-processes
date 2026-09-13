@@ -377,7 +377,7 @@ records:
   - id: dea:process-codify-charters-and-policies
     type: Process
     path: entities/v1-alpha/dea:process-codify-charters-and-policies/dea:process-codify-charters-and-policies.yaml
-    sha256: ae4a29404aa08a356e8376eefb2b620526a18fdfa747550113bc94bc4b7d91df
+    sha256: 1133f7272aa87c1689cab100620ba0d6045d7f1c3c3ab0bc8de9bc1afaeb81b0
   - id: dea:process-commission-production-line
     type: Process
     path: entities/v1-alpha/dea:process-commission-production-line/dea:process-commission-production-line.yaml
@@ -485,7 +485,7 @@ records:
   - id: dea:process-design-governance-system
     type: Process
     path: entities/v1-alpha/dea:process-design-governance-system/dea:process-design-governance-system.yaml
-    sha256: fbde918776f3b26ac4967faaaf765322e2fe81c5e8f2aee6f7a873276711c858
+    sha256: 5a8567a8103edf23fc8bef7a3dc434e6c15f71aa09cb9a74356c5d841d1ad6f3
   - id: dea:process-design-innovation-experiment
     type: Process
     path: entities/v1-alpha/dea:process-design-innovation-experiment/dea:process-design-innovation-experiment.yaml
@@ -513,7 +513,7 @@ records:
   - id: dea:process-design-policies-and-controls
     type: Process
     path: entities/v1-alpha/dea:process-design-policies-and-controls/dea:process-design-policies-and-controls.yaml
-    sha256: 76ef41d5660d3e8844351194c382d212cfe58b2bf504448657f76b7856c832b6
+    sha256: 44f1e5a47d0f225e56886523c9629c55697d22089b085e372230c456e567981b
   - id: dea:process-design-product-and-service-propositions
     type: Process
     path: entities/v1-alpha/dea:process-design-product-and-service-propositions/dea:process-design-product-and-service-propositions.yaml
@@ -521,7 +521,7 @@ records:
   - id: dea:process-design-risk-framework
     type: Process
     path: entities/v1-alpha/dea:process-design-risk-framework/dea:process-design-risk-framework.yaml
-    sha256: 8d7ddb4e2f1d9630682a74bc60c15b081dd78251b3c3b1a2a35cdc972763dac1
+    sha256: 7f022acbf85c7b02510d9b569f7056ed6caeb149580a8346b23821560d71f14c
   - id: dea:process-design-role-catalogue
     type: Process
     path: entities/v1-alpha/dea:process-design-role-catalogue/dea:process-design-role-catalogue.yaml
@@ -565,11 +565,11 @@ records:
   - id: dea:process-establish-governance-bodies
     type: Process
     path: entities/v1-alpha/dea:process-establish-governance-bodies/dea:process-establish-governance-bodies.yaml
-    sha256: 4b15a2b05c4dca7e4097b6fc69e2d848a591370ab41a246f70fb6d7ae1519712
+    sha256: 29a8c0d7e84870c0cc23968a3ce652f0d622ad17da322d1a1a6a8c803c0bc242
   - id: dea:process-establish-risk-and-control-apparatus
     type: Process
     path: entities/v1-alpha/dea:process-establish-risk-and-control-apparatus/dea:process-establish-risk-and-control-apparatus.yaml
-    sha256: 56ad40ab2ca76e3dd8569d0bf6f28638905c899433eaaf9699025134a826f76f
+    sha256: 82d7037f3c36f5399ca4ee0a89add1976cbbc51219bd18ce0ce655c3d4530792
   - id: dea:process-evaluate-strategic-alternatives
     type: Process
     path: entities/v1-alpha/dea:process-evaluate-strategic-alternatives/dea:process-evaluate-strategic-alternatives.yaml
@@ -621,7 +621,7 @@ records:
   - id: dea:process-frame-risk-framework-direction
     type: Process
     path: entities/v1-alpha/dea:process-frame-risk-framework-direction/dea:process-frame-risk-framework-direction.yaml
-    sha256: 55ec9a3909a65537e6832c027666bcc1a24247d4bd018e3d83de83a0939f6d41
+    sha256: 63b56851598f821d5c3dfd3f138718e48d66bba536e86613b33506c255838468
   - id: dea:process-frame-strategic-horizons
     type: Process
     path: entities/v1-alpha/dea:process-frame-strategic-horizons/dea:process-frame-strategic-horizons.yaml
@@ -649,7 +649,7 @@ records:
   - id: dea:process-initiate-policy-and-charter
     type: Process
     path: entities/v1-alpha/dea:process-initiate-policy-and-charter/dea:process-initiate-policy-and-charter.yaml
-    sha256: c40af2ae1b73028a666a6032025ea3036282065bdb3c66f24e5e3126b8b59720
+    sha256: c1891394b63ed437da7e6a5545fef843f171d6cba682181aea4427a1a20e9002
   - id: dea:process-manage-cash-and-liquidity
     type: Process
     path: entities/v1-alpha/dea:process-manage-cash-and-liquidity/dea:process-manage-cash-and-liquidity.yaml
