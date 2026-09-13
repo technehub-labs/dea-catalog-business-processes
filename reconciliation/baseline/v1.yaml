@@ -421,7 +421,7 @@ records:
   - id: dea:process-conduct-proposition-performance-review
     type: Process
     path: entities/v1-alpha/dea:process-conduct-proposition-performance-review/dea:process-conduct-proposition-performance-review.yaml
-    sha256: 23b8ab069ad05500036975824a6bb538aa58d16f9dfd9a5d4743711f6781e255
+    sha256: 929d47031403c9c354983872c386d8e0c4cca1cffbe76ac4715cbc4dbe27c204
   - id: dea:process-coordinate-collaboration
     type: Process
     path: entities/v1-alpha/dea:process-coordinate-collaboration/dea:process-coordinate-collaboration.yaml
@@ -577,7 +577,7 @@ records:
   - id: dea:process-evolve-products-and-services
     type: Process
     path: entities/v1-alpha/dea:process-evolve-products-and-services/dea:process-evolve-products-and-services.yaml
-    sha256: 592be249cd9a7842f88ab4106fcce5a477f885f1b747222b03e9e215cfdecfa0
+    sha256: ccec7b5a9596080a1d8dbcbd6e572f1cf15a67b5f1c10451823285cd07d1f23a
   - id: dea:process-evolve-treasury-and-funding-model
     type: Process
     path: entities/v1-alpha/dea:process-evolve-treasury-and-funding-model/dea:process-evolve-treasury-and-funding-model.yaml
@@ -661,11 +661,11 @@ records:
   - id: dea:process-manage-portfolio-performance
     type: Process
     path: entities/v1-alpha/dea:process-manage-portfolio-performance/dea:process-manage-portfolio-performance.yaml
-    sha256: c7fcb7f9528bd60a2e5e221f005eada394c06f72bcae3cdc278ceff2e364cf6c
+    sha256: a62e7a8e90ed97dea0d4455a00b7af081d529b606d7ebc16697ae797a3cc1df1
   - id: dea:process-manage-proposition-lifecycle
     type: Process
     path: entities/v1-alpha/dea:process-manage-proposition-lifecycle/dea:process-manage-proposition-lifecycle.yaml
-    sha256: 9a8edf70987701063a77530c669335859363d8a43cda039d1c9a12bfe155ae39
+    sha256: 6d3e40b439de379577cd5312492aaf618e031ba995f6b0993a3c474a7003c43f
   - id: dea:process-manage-tax-compliance-and-filings
     type: Process
     path: entities/v1-alpha/dea:process-manage-tax-compliance-and-filings/dea:process-manage-tax-compliance-and-filings.yaml
@@ -729,7 +729,7 @@ records:
   - id: dea:process-operate-product-catalogue
     type: Process
     path: entities/v1-alpha/dea:process-operate-product-catalogue/dea:process-operate-product-catalogue.yaml
-    sha256: 1772df43ca1f684d2c063dc30b558ff0f37d1cd1abf988c2c15f3a32111d43f6
+    sha256: c56839c38dd7f0e2731fd17c35d2f63335b258657a77352db31b76b26da01a90
   - id: dea:process-operate-quality-control
     type: Process
     path: entities/v1-alpha/dea:process-operate-quality-control/dea:process-operate-quality-control.yaml
@@ -773,7 +773,7 @@ records:
   - id: dea:process-rationalize-portfolio
     type: Process
     path: entities/v1-alpha/dea:process-rationalize-portfolio/dea:process-rationalize-portfolio.yaml
-    sha256: ff42acbd7453beee2751800fcb074062c192a2c7edeaabd1614de4d15bb7c8af
+    sha256: 34537dfacd7d94b5b5a4e272103734f1785bbe9669c2623e8ac391af44ff4cf1
   - id: dea:process-refine-financial-controls-and-policies
     type: Process
     path: entities/v1-alpha/dea:process-refine-financial-controls-and-policies/dea:process-refine-financial-controls-and-policies.yaml

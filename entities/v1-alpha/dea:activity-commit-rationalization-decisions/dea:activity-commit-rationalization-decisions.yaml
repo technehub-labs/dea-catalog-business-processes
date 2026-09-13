@@ -1,0 +1,34 @@
+id: dea:activity-commit-rationalization-decisions
+type: Activity
+name: Commit Rationalization Decisions
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: "The cohesive grouping of work within Rationalize Portfolio that commits the retire-or-pivot decisions selected from the formed options."
+belongs_to_business_process: dea:process-rationalize-portfolio
+cohesion_rationale: "Constituent work shares a single commitment concern (options to decisions), one input class (the assessed option set), and one output (committed rationalization decisions). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6)."
+decomposition_boundary: l4-reached
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: ProductAndValue
+    stage: Improve
+    identifier: ecf:productValue.improve
+metadata:
+  established_by: CR-BP-51
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-51
+    date: '2026-09-13'
+    change: |
+      Initial L3 Activity entry; lands as part of the CR-BP-51
+      ProductAndValue Improve + Operate tranche (completes the PV
+      domain's L3 coverage; pattern proven by CR-BP-42 through CR-BP-50).
+      Classified per CR-BP-32 section 5 (fails standalone executability
+      and resource dedication); decomposition boundary marker per CR-BP-32
+      section 12 pending Task records (dea:Task lifecycle: proposed).

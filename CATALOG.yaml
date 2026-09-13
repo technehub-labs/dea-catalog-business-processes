@@ -2,10 +2,10 @@ catalog:
   abbreviation: BP
   counts:
     candidates: 0
-    canonical: 409
-    entities: 410
-    open_change_requests: 62
-    research_files: 164
+    canonical: 433
+    entities: 434
+    open_change_requests: 63
+    research_files: 176
     retired: 1
   cross_cutting:
     change_requests: change-requests/
@@ -19,6 +19,17 @@ catalog:
 
     '
   entities:
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-administer-catalogue-pricing
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-administer-catalogue-pricing/dea:activity-administer-catalogue-pricing.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
     id: dea:activity-allocate-relationship-attention
@@ -36,6 +47,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-analyze-asset-utilization/dea:activity-analyze-asset-utilization.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-analyze-evolution-drivers
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-analyze-evolution-drivers/dea:activity-analyze-evolution-drivers.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -153,6 +175,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-assemble-proposition-performance-evidence
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-assemble-proposition-performance-evidence/dea:activity-assemble-proposition-performance-evidence.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-assess-churn-risk
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -212,6 +245,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-assess-innovation-option-space/dea:activity-assess-innovation-option-space.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-assess-investment-justification
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-assess-investment-justification/dea:activity-assess-investment-justification.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -472,6 +516,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-commit-enhancements
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-commit-enhancements/dea:activity-commit-enhancements.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-commit-experiment-design
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -681,10 +736,32 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-commit-proposition-review-outcomes
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-commit-proposition-review-outcomes/dea:activity-commit-proposition-review-outcomes.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-commit-proposition-thesis
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-commit-proposition-thesis/dea:activity-commit-proposition-thesis.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-commit-rationalization-decisions
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-commit-rationalization-decisions/dea:activity-commit-rationalization-decisions.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -1015,6 +1092,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-design-authority-delegations/dea:activity-design-authority-delegations.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-design-bounded-enhancements
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-design-bounded-enhancements/dea:activity-design-bounded-enhancements.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -1363,6 +1451,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-execute-gate-decisions
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-execute-gate-decisions/dea:activity-execute-gate-decisions.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-execute-inspection-and-testing
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -1477,6 +1576,28 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-fit-out-facilities/dea:activity-fit-out-facilities.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-form-proposition-review-findings
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-form-proposition-review-findings/dea:activity-form-proposition-review-findings.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-form-retire-or-pivot-options
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-form-retire-or-pivot-options/dea:activity-form-retire-or-pivot-options.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -1814,10 +1935,43 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-maintain-catalogue-entries
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-maintain-catalogue-entries/dea:activity-maintain-catalogue-entries.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-maintain-governance-machinery
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-maintain-governance-machinery/dea:activity-maintain-governance-machinery.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-maintain-lifecycle-record
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-maintain-lifecycle-record/dea:activity-maintain-lifecycle-record.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-maintain-portfolio-record
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-maintain-portfolio-record/dea:activity-maintain-portfolio-record.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -1902,6 +2056,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-manage-stage-transitions
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-manage-stage-transitions/dea:activity-manage-stage-transitions.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-map-journey-stages
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -1917,6 +2082,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-measure-evidence-against-standards/dea:activity-measure-evidence-against-standards.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-measure-evolution-outcomes
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-measure-evolution-outcomes/dea:activity-measure-evolution-outcomes.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -1979,6 +2155,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-measure-rationalization-outcomes
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-measure-rationalization-outcomes/dea:activity-measure-rationalization-outcomes.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-measure-utilization-outcomes
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -2012,10 +2199,32 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-monitor-catalogue-integrity
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-monitor-catalogue-integrity/dea:activity-monitor-catalogue-integrity.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-monitor-platform-availability
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-monitor-platform-availability/dea:activity-monitor-platform-availability.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-monitor-proposition-performance
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-monitor-proposition-performance/dea:activity-monitor-proposition-performance.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -2166,10 +2375,32 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-publish-catalogue-to-channels
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-publish-catalogue-to-channels/dea:activity-publish-catalogue-to-channels.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-publish-codified-instruments
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-publish-codified-instruments/dea:activity-publish-codified-instruments.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-rebalance-portfolio-allocations
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-rebalance-portfolio-allocations/dea:activity-rebalance-portfolio-allocations.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -2265,6 +2496,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-report-portfolio-performance
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-report-portfolio-performance/dea:activity-report-portfolio-performance.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-report-quality-performance
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -2324,6 +2566,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-respond-to-platform-incidents/dea:activity-respond-to-platform-incidents.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-route-findings-to-evolution-tracks
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-route-findings-to-evolution-tracks/dea:activity-route-findings-to-evolution-tracks.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -2643,6 +2896,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-track-follow-up-actions/dea:activity-track-follow-up-actions.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-track-lifecycle-stages
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-track-lifecycle-stages/dea:activity-track-lifecycle-stages.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -3399,10 +3663,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-conduct-proposition-performance-review
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-conduct-proposition-performance-review/dea:process-conduct-proposition-performance-review.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -3828,10 +4092,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-evolve-products-and-services
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-evolve-products-and-services/dea:process-evolve-products-and-services.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -4059,10 +4323,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-manage-portfolio-performance
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-manage-portfolio-performance/dea:process-manage-portfolio-performance.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -4070,10 +4334,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-manage-proposition-lifecycle
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-manage-proposition-lifecycle/dea:process-manage-proposition-lifecycle.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -4246,10 +4510,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-operate-product-catalogue
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-operate-product-catalogue/dea:process-operate-product-catalogue.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -4367,10 +4631,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-rationalize-portfolio
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-rationalize-portfolio/dea:process-rationalize-portfolio.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -4535,12 +4799,18 @@ catalog:
   owner: TechNeHub Labs
   repository: https://github.com/technehub-labs/dea-catalog-processes.git
   research_registers:
+  - entity_id: dea:activity-administer-catalogue-pricing
+    files: []
+    path: entities/v1-alpha/dea:activity-administer-catalogue-pricing/research/
   - entity_id: dea:activity-allocate-relationship-attention
     files: []
     path: entities/v1-alpha/dea:activity-allocate-relationship-attention/research/
   - entity_id: dea:activity-analyze-asset-utilization
     files: []
     path: entities/v1-alpha/dea:activity-analyze-asset-utilization/research/
+  - entity_id: dea:activity-analyze-evolution-drivers
+    files: []
+    path: entities/v1-alpha/dea:activity-analyze-evolution-drivers/research/
   - entity_id: dea:activity-analyze-platform-gaps
     files: []
     path: entities/v1-alpha/dea:activity-analyze-platform-gaps/research/
@@ -4571,6 +4841,9 @@ catalog:
   - entity_id: dea:activity-assemble-performance-evidence
     files: []
     path: entities/v1-alpha/dea:activity-assemble-performance-evidence/research/
+  - entity_id: dea:activity-assemble-proposition-performance-evidence
+    files: []
+    path: entities/v1-alpha/dea:activity-assemble-proposition-performance-evidence/research/
   - entity_id: dea:activity-assess-churn-risk
     files: []
     path: entities/v1-alpha/dea:activity-assess-churn-risk/research/
@@ -4589,6 +4862,9 @@ catalog:
   - entity_id: dea:activity-assess-innovation-option-space
     files: []
     path: entities/v1-alpha/dea:activity-assess-innovation-option-space/research/
+  - entity_id: dea:activity-assess-investment-justification
+    files: []
+    path: entities/v1-alpha/dea:activity-assess-investment-justification/research/
   - entity_id: dea:activity-assess-portfolio-balance
     files: []
     path: entities/v1-alpha/dea:activity-assess-portfolio-balance/research/
@@ -4658,6 +4934,9 @@ catalog:
   - entity_id: dea:activity-commit-demand-model
     files: []
     path: entities/v1-alpha/dea:activity-commit-demand-model/research/
+  - entity_id: dea:activity-commit-enhancements
+    files: []
+    path: entities/v1-alpha/dea:activity-commit-enhancements/research/
   - entity_id: dea:activity-commit-experiment-design
     files: []
     path: entities/v1-alpha/dea:activity-commit-experiment-design/research/
@@ -4715,9 +4994,15 @@ catalog:
   - entity_id: dea:activity-commit-proposition-design
     files: []
     path: entities/v1-alpha/dea:activity-commit-proposition-design/research/
+  - entity_id: dea:activity-commit-proposition-review-outcomes
+    files: []
+    path: entities/v1-alpha/dea:activity-commit-proposition-review-outcomes/research/
   - entity_id: dea:activity-commit-proposition-thesis
     files: []
     path: entities/v1-alpha/dea:activity-commit-proposition-thesis/research/
+  - entity_id: dea:activity-commit-rationalization-decisions
+    files: []
+    path: entities/v1-alpha/dea:activity-commit-rationalization-decisions/research/
   - entity_id: dea:activity-commit-redeployment-decisions
     files: []
     path: entities/v1-alpha/dea:activity-commit-redeployment-decisions/research/
@@ -4808,6 +5093,9 @@ catalog:
   - entity_id: dea:activity-design-authority-delegations
     files: []
     path: entities/v1-alpha/dea:activity-design-authority-delegations/research/
+  - entity_id: dea:activity-design-bounded-enhancements
+    files: []
+    path: entities/v1-alpha/dea:activity-design-bounded-enhancements/research/
   - entity_id: dea:activity-design-compliance-regime
     files: []
     path: entities/v1-alpha/dea:activity-design-compliance-regime/research/
@@ -4901,6 +5189,9 @@ catalog:
   - entity_id: dea:activity-execute-facility-work-orders
     files: []
     path: entities/v1-alpha/dea:activity-execute-facility-work-orders/research/
+  - entity_id: dea:activity-execute-gate-decisions
+    files: []
+    path: entities/v1-alpha/dea:activity-execute-gate-decisions/research/
   - entity_id: dea:activity-execute-inspection-and-testing
     files: []
     path: entities/v1-alpha/dea:activity-execute-inspection-and-testing/research/
@@ -4934,6 +5225,12 @@ catalog:
   - entity_id: dea:activity-fit-out-facilities
     files: []
     path: entities/v1-alpha/dea:activity-fit-out-facilities/research/
+  - entity_id: dea:activity-form-proposition-review-findings
+    files: []
+    path: entities/v1-alpha/dea:activity-form-proposition-review-findings/research/
+  - entity_id: dea:activity-form-retire-or-pivot-options
+    files: []
+    path: entities/v1-alpha/dea:activity-form-retire-or-pivot-options/research/
   - entity_id: dea:activity-form-review-findings
     files: []
     path: entities/v1-alpha/dea:activity-form-review-findings/research/
@@ -5024,9 +5321,18 @@ catalog:
   - entity_id: dea:activity-maintain-audit-quality
     files: []
     path: entities/v1-alpha/dea:activity-maintain-audit-quality/research/
+  - entity_id: dea:activity-maintain-catalogue-entries
+    files: []
+    path: entities/v1-alpha/dea:activity-maintain-catalogue-entries/research/
   - entity_id: dea:activity-maintain-governance-machinery
     files: []
     path: entities/v1-alpha/dea:activity-maintain-governance-machinery/research/
+  - entity_id: dea:activity-maintain-lifecycle-record
+    files: []
+    path: entities/v1-alpha/dea:activity-maintain-lifecycle-record/research/
+  - entity_id: dea:activity-maintain-portfolio-record
+    files: []
+    path: entities/v1-alpha/dea:activity-maintain-portfolio-record/research/
   - entity_id: dea:activity-maintain-procurement-compliance
     files: []
     path: entities/v1-alpha/dea:activity-maintain-procurement-compliance/research/
@@ -5048,12 +5354,18 @@ catalog:
   - entity_id: dea:activity-manage-line-changeovers
     files: []
     path: entities/v1-alpha/dea:activity-manage-line-changeovers/research/
+  - entity_id: dea:activity-manage-stage-transitions
+    files: []
+    path: entities/v1-alpha/dea:activity-manage-stage-transitions/research/
   - entity_id: dea:activity-map-journey-stages
     files: []
     path: entities/v1-alpha/dea:activity-map-journey-stages/research/
   - entity_id: dea:activity-measure-evidence-against-standards
     files: []
     path: entities/v1-alpha/dea:activity-measure-evidence-against-standards/research/
+  - entity_id: dea:activity-measure-evolution-outcomes
+    files: []
+    path: entities/v1-alpha/dea:activity-measure-evolution-outcomes/research/
   - entity_id: dea:activity-measure-findings-against-standards
     files: []
     path: entities/v1-alpha/dea:activity-measure-findings-against-standards/research/
@@ -5069,6 +5381,9 @@ catalog:
   - entity_id: dea:activity-measure-policy-gaps
     files: []
     path: entities/v1-alpha/dea:activity-measure-policy-gaps/research/
+  - entity_id: dea:activity-measure-rationalization-outcomes
+    files: []
+    path: entities/v1-alpha/dea:activity-measure-rationalization-outcomes/research/
   - entity_id: dea:activity-measure-utilization-outcomes
     files: []
     path: entities/v1-alpha/dea:activity-measure-utilization-outcomes/research/
@@ -5078,9 +5393,15 @@ catalog:
   - entity_id: dea:activity-model-capacity-envelopes
     files: []
     path: entities/v1-alpha/dea:activity-model-capacity-envelopes/research/
+  - entity_id: dea:activity-monitor-catalogue-integrity
+    files: []
+    path: entities/v1-alpha/dea:activity-monitor-catalogue-integrity/research/
   - entity_id: dea:activity-monitor-platform-availability
     files: []
     path: entities/v1-alpha/dea:activity-monitor-platform-availability/research/
+  - entity_id: dea:activity-monitor-proposition-performance
+    files: []
+    path: entities/v1-alpha/dea:activity-monitor-proposition-performance/research/
   - entity_id: dea:activity-monitor-service-levels
     files: []
     path: entities/v1-alpha/dea:activity-monitor-service-levels/research/
@@ -5120,9 +5441,15 @@ catalog:
   - entity_id: dea:activity-provision-warehouse-capacity
     files: []
     path: entities/v1-alpha/dea:activity-provision-warehouse-capacity/research/
+  - entity_id: dea:activity-publish-catalogue-to-channels
+    files: []
+    path: entities/v1-alpha/dea:activity-publish-catalogue-to-channels/research/
   - entity_id: dea:activity-publish-codified-instruments
     files: []
     path: entities/v1-alpha/dea:activity-publish-codified-instruments/research/
+  - entity_id: dea:activity-rebalance-portfolio-allocations
+    files: []
+    path: entities/v1-alpha/dea:activity-rebalance-portfolio-allocations/research/
   - entity_id: dea:activity-receive-and-verify-deliveries
     files: []
     path: entities/v1-alpha/dea:activity-receive-and-verify-deliveries/research/
@@ -5147,6 +5474,9 @@ catalog:
   - entity_id: dea:activity-report-audit-findings
     files: []
     path: entities/v1-alpha/dea:activity-report-audit-findings/research/
+  - entity_id: dea:activity-report-portfolio-performance
+    files: []
+    path: entities/v1-alpha/dea:activity-report-portfolio-performance/research/
   - entity_id: dea:activity-report-quality-performance
     files: []
     path: entities/v1-alpha/dea:activity-report-quality-performance/research/
@@ -5165,6 +5495,9 @@ catalog:
   - entity_id: dea:activity-respond-to-platform-incidents
     files: []
     path: entities/v1-alpha/dea:activity-respond-to-platform-incidents/research/
+  - entity_id: dea:activity-route-findings-to-evolution-tracks
+    files: []
+    path: entities/v1-alpha/dea:activity-route-findings-to-evolution-tracks/research/
   - entity_id: dea:activity-route-findings-to-improvement-tracks
     files: []
     path: entities/v1-alpha/dea:activity-route-findings-to-improvement-tracks/research/
@@ -5252,6 +5585,9 @@ catalog:
   - entity_id: dea:activity-track-follow-up-actions
     files: []
     path: entities/v1-alpha/dea:activity-track-follow-up-actions/research/
+  - entity_id: dea:activity-track-lifecycle-stages
+    files: []
+    path: entities/v1-alpha/dea:activity-track-lifecycle-stages/research/
   - entity_id: dea:activity-update-policy-standards
     files: []
     path: entities/v1-alpha/dea:activity-update-policy-standards/research/
@@ -5505,7 +5841,9 @@ catalog:
     - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-conduct-operations-performance-review/research/
   - entity_id: dea:process-conduct-proposition-performance-review
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-conduct-proposition-performance-review/research/
   - entity_id: dea:process-coordinate-collaboration
     files: []
@@ -5676,7 +6014,9 @@ catalog:
     files: []
     path: entities/v1-alpha/dea:process-evaluate-strategic-alternatives/research/
   - entity_id: dea:process-evolve-products-and-services
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-evolve-products-and-services/research/
   - entity_id: dea:process-evolve-treasury-and-funding-model
     files: []
@@ -5764,10 +6104,14 @@ catalog:
     - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-manage-customer-relationship/research/
   - entity_id: dea:process-manage-portfolio-performance
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-manage-portfolio-performance/research/
   - entity_id: dea:process-manage-proposition-lifecycle
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-manage-proposition-lifecycle/research/
   - entity_id: dea:process-manage-tax-compliance-and-filings
     files: []
@@ -5831,7 +6175,9 @@ catalog:
     - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-operate-procurement-cycle/research/
   - entity_id: dea:process-operate-product-catalogue
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-operate-product-catalogue/research/
   - entity_id: dea:process-operate-quality-control
     files:
@@ -5878,7 +6224,9 @@ catalog:
     - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-provision-facilities/research/
   - entity_id: dea:process-rationalize-portfolio
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-rationalize-portfolio/research/
   - entity_id: dea:process-refine-financial-controls-and-policies
     files: []
