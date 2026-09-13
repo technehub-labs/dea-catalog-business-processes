@@ -1,0 +1,34 @@
+id: dea:activity-formulate-experiment-hypothesis
+type: Activity
+name: Formulate Experiment Hypothesis
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: "The cohesive grouping of work within Design Innovation Experiment that formulates the bounded hypothesis the experiment tests."
+belongs_to_business_process: dea:process-design-innovation-experiment
+cohesion_rationale: "Constituent work shares a single hypothesis concern (thesis direction to testable statement), one input class (the committed innovation thesis), and one output (the formulated hypothesis). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6)."
+decomposition_boundary: l4-reached
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: ProductAndValue
+    stage: Design
+    identifier: ecf:productValue.design
+metadata:
+  established_by: CR-BP-50
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-50
+    date: '2026-09-13'
+    change: |
+      Initial L3 Activity entry; lands as part of the CR-BP-50
+      ProductAndValue Conceive + Design + Build tranche (pattern proven
+      by CR-BP-42 through CR-BP-49). Classified per CR-BP-32 section 5
+      (fails standalone executability and resource dedication);
+      decomposition boundary marker per CR-BP-32 section 12 pending Task
+      records (dea:Task lifecycle: proposed).
