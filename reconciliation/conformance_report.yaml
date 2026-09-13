@@ -2,14 +2,64 @@ schema_version: 1
 report_at_run: CR-BP-16 S23
 report_at_source: scripts/build_conformance_report.py
 catalog_root: /home/hermes/dea-catalog-processes
-total_records: 196
+total_records: 201
 conformance_levels:
   0: 0
   1: 0
   2: 0
   3: 0
-  4: 196
+  4: 201
 records:
+- id: dea:activity-disposition-nonconforming-output
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-disposition-nonconforming-output/dea:activity-disposition-nonconforming-output.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-execute-inspection-and-testing
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-execute-inspection-and-testing/dea:activity-execute-inspection-and-testing.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-plan-quality-inspection
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-plan-quality-inspection/dea:activity-plan-quality-inspection.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-record-inspection-results
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-record-inspection-results/dea:activity-record-inspection-results.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-report-quality-performance
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-report-quality-performance/dea:activity-report-quality-performance.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:group-agent-acquisition-and-onboarding
   kind: Entity
   path: entities/v1-alpha/dea:group-agent-acquisition-and-onboarding/dea:group-agent-acquisition-and-onboarding.yaml

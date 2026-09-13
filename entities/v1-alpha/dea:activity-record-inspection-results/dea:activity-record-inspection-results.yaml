@@ -1,0 +1,38 @@
+id: dea:activity-record-inspection-results
+type: Activity
+name: Record Inspection Results
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Operate Quality Control that
+  registers inspection and test outcomes into the quality record, producing
+  the per-batch inspection lot record the parent process outcome requires.
+belongs_to_business_process: dea:process-operate-quality-control
+cohesion_rationale: Constituent work shares a single documentation concern
+  (transforming raw measurements into the authoritative per-batch quality
+  record), operates on one artifact (the inspection lot record), and is
+  bounded by the completion of inspection execution. Cohesion score 8/9
+  assessed at deposition (CR-BP-32 §6; research/l3-candidate-universe.yaml).
+decomposition_boundary: l4-reached
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: EnablementAndOperations
+    stage: Operate
+    identifier: ecf:enablementAndOperations.operate
+metadata:
+  established_by: CR-BP-42
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-42
+    date: '2026-09-13'
+    change: |
+      Initial L3 Activity entry; first Activity deposition in the catalog
+      (pilot slice). Classified per CR-BP-32 §5 (fails standalone
+      executability and resource dedication); decomposition boundary marker
+      per CR-BP-32 §12 pending Task records (dea:Task lifecycle: proposed).

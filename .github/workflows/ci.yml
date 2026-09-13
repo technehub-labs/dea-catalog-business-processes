@@ -103,6 +103,7 @@ jobs:
 
             type: Process       -> schemas/entity.schema.json (L2 Business Process)
             type: ProcessGroup  -> schemas/entities/process-group.schema.json (L1)
+            type: Activity      -> schemas/entities/activity.schema.json (L3, CR-BP-42)
           """
           import glob, json, sys
           from pathlib import Path
@@ -112,6 +113,7 @@ jobs:
           SCHEMAS = {
               "Process": "schemas/entity.schema.json",
               "ProcessGroup": "schemas/entities/process-group.schema.json",
+              "Activity": "schemas/entities/activity.schema.json",
           }
           FALLBACK = "schemas/entity.schema.json"
 

@@ -1,0 +1,41 @@
+id: dea:activity-plan-quality-inspection
+type: Activity
+name: Plan Quality Inspection
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: >-
+  The cohesive grouping of work within Operate Quality Control that
+  establishes what, how, and when production output will be inspected:
+  selecting the sampling scheme, resolving the applicable specification and
+  tolerances, and scheduling the inspection for each batch.
+belongs_to_business_process: dea:process-operate-quality-control
+cohesion_rationale: Constituent work shares a single planning concern
+  (preparing inspection of a batch before any measurement exists), draws on
+  the same inputs (specifications, sampling standards, production schedule),
+  and produces one recognizable portion of the parent outcome (an executable
+  inspection plan). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6;
+  research/l3-candidate-universe.yaml).
+decomposition_boundary: l4-reached
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: EnablementAndOperations
+    stage: Operate
+    identifier: ecf:enablementAndOperations.operate
+metadata:
+  established_by: CR-BP-42
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-42
+    date: '2026-09-13'
+    change: |
+      Initial L3 Activity entry; first Activity deposition in the catalog
+      (pilot slice). Classified per CR-BP-32 §5 (fails standalone
+      executability and resource dedication); decomposition boundary marker
+      per CR-BP-32 §12 pending Task records (dea:Task lifecycle: proposed).

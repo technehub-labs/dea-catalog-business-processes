@@ -95,6 +95,50 @@
       "type": "string",
       "description": "Legacy status field. LCM-002 enforces consistency with `lifecycle_status` (identical, or both in legacy compatibility set)."
     },
+    "ecfConformance": {
+      "type": "object",
+      "description": "ECF Conformance Gate manifest (CR-ECF-CG-001..004), mirrored from schemas/entity.schema.json. An Activity inherits its ECF coordinate from the parent Business Process (belongs_to_business_process); the block is declared on the record itself because scripts/check_ecf_conformance.py enforces presence on every canonical entity file under entities/v1-alpha/. canonicalReferences must match the parent BP's coordinate.",
+      "properties": {
+        "framework": {
+          "type": "string",
+          "const": "EnterpriseConceptFramework"
+        },
+        "contractVersion": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "profile": {
+          "type": "string",
+          "pattern": "^dea:ecf@\\d+\\.\\d+\\.\\d+$"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "conformant",
+            "conformant-with-extension",
+            "non-conformant",
+            "not-yet-assessed"
+          ]
+        },
+        "affiliation": {
+          "type": "string",
+          "enum": [
+            "mapped",
+            "held-unmapped",
+            "inherits-catalog"
+          ]
+        },
+        "rationaleRef": {
+          "type": "string"
+        },
+        "canonicalReferences": {
+          "type": "array"
+        },
+        "extensions": {
+          "type": "array"
+        }
+      }
+    },
     "metadata": {
       "type": "object",
       "description": "Optional metadata block. The validator (ACT-001..010) tolerates `metadata.belongs_to_business_process` and `metadata.cohesion_rationale` as alternatives to top-level placement. Other metadata fields are tolerated but not interpreted.",

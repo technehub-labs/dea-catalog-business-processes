@@ -2,10 +2,10 @@ catalog:
   abbreviation: BP
   counts:
     candidates: 0
-    canonical: 160
-    entities: 161
-    open_change_requests: 52
-    research_files: 57
+    canonical: 165
+    entities: 166
+    open_change_requests: 53
+    research_files: 59
     retired: 1
   cross_cutting:
     change_requests: change-requests/
@@ -19,6 +19,61 @@ catalog:
 
     '
   entities:
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-disposition-nonconforming-output
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-disposition-nonconforming-output/dea:activity-disposition-nonconforming-output.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-execute-inspection-and-testing
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-execute-inspection-and-testing/dea:activity-execute-inspection-and-testing.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-plan-quality-inspection
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-plan-quality-inspection/dea:activity-plan-quality-inspection.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-record-inspection-results
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-record-inspection-results/dea:activity-record-inspection-results.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-report-quality-performance
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-report-quality-performance/dea:activity-report-quality-performance.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
     id: dea:group-agent-acquisition-and-onboarding
@@ -1518,10 +1573,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-operate-quality-control
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-operate-quality-control/dea:process-operate-quality-control.yaml
-    research_count: 0
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -1796,6 +1851,21 @@ catalog:
   owner: TechNeHub Labs
   repository: https://github.com/technehub-labs/dea-catalog-processes.git
   research_registers:
+  - entity_id: dea:activity-disposition-nonconforming-output
+    files: []
+    path: entities/v1-alpha/dea:activity-disposition-nonconforming-output/research/
+  - entity_id: dea:activity-execute-inspection-and-testing
+    files: []
+    path: entities/v1-alpha/dea:activity-execute-inspection-and-testing/research/
+  - entity_id: dea:activity-plan-quality-inspection
+    files: []
+    path: entities/v1-alpha/dea:activity-plan-quality-inspection/research/
+  - entity_id: dea:activity-record-inspection-results
+    files: []
+    path: entities/v1-alpha/dea:activity-record-inspection-results/research/
+  - entity_id: dea:activity-report-quality-performance
+    files: []
+    path: entities/v1-alpha/dea:activity-report-quality-performance/research/
   - entity_id: dea:group-agent-acquisition-and-onboarding
     files: []
     path: entities/v1-alpha/dea:group-agent-acquisition-and-onboarding/research/
@@ -2260,7 +2330,9 @@ catalog:
     files: []
     path: entities/v1-alpha/dea:process-operate-product-catalogue/research/
   - entity_id: dea:process-operate-quality-control
-    files: []
+    files:
+    - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-operate-quality-control/research/
   - entity_id: dea:process-operate-service-delivery
     files: []
