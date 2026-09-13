@@ -40,6 +40,11 @@ ecfConformance:
 metadata:
   established_by: CR-BP-21d
   established_at: '2026-09-08'
+  activity_references:
+  - dea:activity-coordinate-daily-service-operations
+  - dea:activity-monitor-service-levels
+  - dea:activity-handle-service-exceptions
+  - dea:activity-report-service-delivery-performance
   change_history:
   - cr: CR-BP-21d
     date: '2026-09-08'
@@ -50,7 +55,18 @@ metadata:
       §5 / CR-ECF-007: applies to biological, artificial, and
       hybrid agents without reclassification. One of the 5 L2
       landings targeting the 5 ratified cells of the
-      EnablementAndOperations domain.
+      EnablementAndOperations domain.  - cr: CR-BP-43
+    date: '2026-09-13'
+    change: |
+      L3 decomposition of this Business Process: 4 Activities
+      landed under the structured deposition pattern (research
+      deposition at research/l3-candidate-universe.yaml, then
+      canonical Activity records) as part of the CR-BP-43
+      EnablementAndOperations / Operate tranche. Adds
+      metadata.activity_references[] back-references per ACT-010
+      bidirectional traceability. Additive metadata-only change;
+      BP identity and semantics unchanged, so version remains
+      unchanged per SIV-004 (CR-BP-34d).
 links:
 - rel: change-request
   href: change-requests/CR-BP-21d-enablement-operations-landing.md

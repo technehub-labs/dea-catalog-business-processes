@@ -689,7 +689,7 @@ records:
   - id: dea:process-operate-asset-maintenance
     type: Process
     path: entities/v1-alpha/dea:process-operate-asset-maintenance/dea:process-operate-asset-maintenance.yaml
-    sha256: 883f27250e880401eb8d89ed0c819f46eafb0ef5b7b25746cb5e7b4672099fc5
+    sha256: 0f4e8f9c8d290808ecedc8693ef5d43225223201c06d526d140ed0046d78919e
   - id: dea:process-operate-enterprise-risk-oversight
     type: Process
     path: entities/v1-alpha/dea:process-operate-enterprise-risk-oversight/dea:process-operate-enterprise-risk-oversight.yaml
@@ -697,7 +697,7 @@ records:
   - id: dea:process-operate-facility-management
     type: Process
     path: entities/v1-alpha/dea:process-operate-facility-management/dea:process-operate-facility-management.yaml
-    sha256: 009d1822670e9391242928fbb33d7a2761ca3ff82b0edc665c9a1cf8bc9c529e
+    sha256: b74f55c5fe94da5078cc2e8b1505d8833569976b3a37381b63e4597dfc482bba
   - id: dea:process-operate-financial-reporting-and-disclosure
     type: Process
     path: entities/v1-alpha/dea:process-operate-financial-reporting-and-disclosure/dea:process-operate-financial-reporting-and-disclosure.yaml
@@ -717,7 +717,7 @@ records:
   - id: dea:process-operate-logistics
     type: Process
     path: entities/v1-alpha/dea:process-operate-logistics/dea:process-operate-logistics.yaml
-    sha256: ec074de7ffa1809f1f73207d73709411c9885ddabf81bbd714558f8de63e37ba
+    sha256: c4adbfe2da028472bdb9e7824aba8418fd2786725a7773161298572b7e955cbe
   - id: dea:process-operate-payroll-and-benefits
     type: Process
     path: entities/v1-alpha/dea:process-operate-payroll-and-benefits/dea:process-operate-payroll-and-benefits.yaml
@@ -725,7 +725,7 @@ records:
   - id: dea:process-operate-procurement-cycle
     type: Process
     path: entities/v1-alpha/dea:process-operate-procurement-cycle/dea:process-operate-procurement-cycle.yaml
-    sha256: a0813798b420b90106675651b2fdac16d896404498c4b03fbd44c85e02ca9edb
+    sha256: 54d4b1dfc59621065d4642810b774edaea0e49cf0256e960712ac07a38bf0102
   - id: dea:process-operate-product-catalogue
     type: Process
     path: entities/v1-alpha/dea:process-operate-product-catalogue/dea:process-operate-product-catalogue.yaml
@@ -737,7 +737,7 @@ records:
   - id: dea:process-operate-service-delivery
     type: Process
     path: entities/v1-alpha/dea:process-operate-service-delivery/dea:process-operate-service-delivery.yaml
-    sha256: c8366c5593766f58749a1689d8204cfb03ba6cae10374d198c24aa1c6305665a
+    sha256: c6683a5cbb89623d3c47ea9b900dd78870a4fbe496caad8460edf12335224d70
   - id: dea:process-operate-strategic-review-cycle
     type: Process
     path: entities/v1-alpha/dea:process-operate-strategic-review-cycle/dea:process-operate-strategic-review-cycle.yaml
@@ -745,7 +745,7 @@ records:
   - id: dea:process-operate-technology-platforms
     type: Process
     path: entities/v1-alpha/dea:process-operate-technology-platforms/dea:process-operate-technology-platforms.yaml
-    sha256: a3ba1f346a126ed19b2774b1436f902d1139911fe429ed43a227c9509148acdc
+    sha256: c9faaf3ea830cda92796f0c994e36aa3e058c0aad1701bc401db3b41b7bdc6a4
   - id: dea:process-operate-time-and-attendance
     type: Process
     path: entities/v1-alpha/dea:process-operate-time-and-attendance/dea:process-operate-time-and-attendance.yaml
@@ -753,7 +753,7 @@ records:
   - id: dea:process-operate-warehouse-and-inventory
     type: Process
     path: entities/v1-alpha/dea:process-operate-warehouse-and-inventory/dea:process-operate-warehouse-and-inventory.yaml
-    sha256: 567b0973783a4eb688e5e6b8b009d0838feb07b3bbcebcc11c09b29058295a78
+    sha256: 906cf895472ee67e41be0bf69e38c55ba6a60c0a66056dbfe7c8d8d16fbd9b6a
   - id: dea:process-optimize-asset-utilization
     type: Process
     path: entities/v1-alpha/dea:process-optimize-asset-utilization/dea:process-optimize-asset-utilization.yaml
@@ -805,7 +805,7 @@ records:
   - id: dea:process-run-production-line
     type: Process
     path: entities/v1-alpha/dea:process-run-production-line/dea:process-run-production-line.yaml
-    sha256: 23374b899d7fa7549aa24dd9e0ea7d3746f540a8a0c3bc28e7707ffa51d0daaf
+    sha256: c1c4e5ddb24bc2c50fc090bf66daf80c9835d9f6013437828459286dccfdccd2
   - id: dea:process-score-audit-findings
     type: Process
     path: entities/v1-alpha/dea:process-score-audit-findings/dea:process-score-audit-findings.yaml

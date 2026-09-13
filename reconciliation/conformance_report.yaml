@@ -2,17 +2,57 @@ schema_version: 1
 report_at_run: CR-BP-16 S23
 report_at_source: scripts/build_conformance_report.py
 catalog_root: /home/hermes/dea-catalog-processes
-total_records: 201
+total_records: 233
 conformance_levels:
   0: 0
   1: 0
   2: 0
   3: 0
-  4: 201
+  4: 233
 records:
+- id: dea:activity-conduct-cycle-counts
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-conduct-cycle-counts/dea:activity-conduct-cycle-counts.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-conduct-facility-inspections
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-conduct-facility-inspections/dea:activity-conduct-facility-inspections.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-coordinate-daily-service-operations
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-coordinate-daily-service-operations/dea:activity-coordinate-daily-service-operations.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-disposition-nonconforming-output
   kind: Activity
   path: entities/v1-alpha/dea:activity-disposition-nonconforming-output/dea:activity-disposition-nonconforming-output.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-execute-facility-work-orders
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-execute-facility-work-orders/dea:activity-execute-facility-work-orders.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -30,9 +70,209 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-execute-picking-and-dispatch
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-execute-picking-and-dispatch/dea:activity-execute-picking-and-dispatch.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-execute-production-run
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-execute-production-run/dea:activity-execute-production-run.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-execute-replenishment
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-execute-replenishment/dea:activity-execute-replenishment.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-execute-scheduled-maintenance
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-execute-scheduled-maintenance/dea:activity-execute-scheduled-maintenance.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-execute-scheduled-platform-routines
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-execute-scheduled-platform-routines/dea:activity-execute-scheduled-platform-routines.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-execute-shipments
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-execute-shipments/dea:activity-execute-shipments.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-handle-service-exceptions
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-handle-service-exceptions/dea:activity-handle-service-exceptions.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-issue-purchase-orders
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-issue-purchase-orders/dea:activity-issue-purchase-orders.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-maintain-procurement-compliance
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-maintain-procurement-compliance/dea:activity-maintain-procurement-compliance.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-maintain-safety-and-compliance
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-maintain-safety-and-compliance/dea:activity-maintain-safety-and-compliance.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-maintain-stock-accuracy
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-maintain-stock-accuracy/dea:activity-maintain-stock-accuracy.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-manage-capacity-and-performance
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-manage-capacity-and-performance/dea:activity-manage-capacity-and-performance.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-manage-line-changeovers
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-manage-line-changeovers/dea:activity-manage-line-changeovers.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-monitor-platform-availability
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-monitor-platform-availability/dea:activity-monitor-platform-availability.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-monitor-service-levels
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-monitor-service-levels/dea:activity-monitor-service-levels.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-plan-maintenance-schedules
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-plan-maintenance-schedules/dea:activity-plan-maintenance-schedules.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-plan-quality-inspection
   kind: Activity
   path: entities/v1-alpha/dea:activity-plan-quality-inspection/dea:activity-plan-quality-inspection.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-plan-transport-and-deliveries
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-plan-transport-and-deliveries/dea:activity-plan-transport-and-deliveries.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-process-purchase-requisitions
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-process-purchase-requisitions/dea:activity-process-purchase-requisitions.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-receive-and-verify-deliveries
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-receive-and-verify-deliveries/dea:activity-receive-and-verify-deliveries.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-record-asset-availability
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-record-asset-availability/dea:activity-record-asset-availability.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -50,9 +290,89 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-record-production-output
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-record-production-output/dea:activity-record-production-output.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-report-quality-performance
   kind: Activity
   path: entities/v1-alpha/dea:activity-report-quality-performance/dea:activity-report-quality-performance.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-report-service-delivery-performance
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-report-service-delivery-performance/dea:activity-report-service-delivery-performance.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-resolve-logistics-exceptions
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-resolve-logistics-exceptions/dea:activity-resolve-logistics-exceptions.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-respond-to-asset-breakdowns
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-respond-to-asset-breakdowns/dea:activity-respond-to-asset-breakdowns.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-respond-to-platform-incidents
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-respond-to-platform-incidents/dea:activity-respond-to-platform-incidents.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-schedule-facility-work-orders
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-schedule-facility-work-orders/dea:activity-schedule-facility-work-orders.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-schedule-production-cycles
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-schedule-production-cycles/dea:activity-schedule-production-cycles.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-track-and-trace-flows
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-track-and-trace-flows/dea:activity-track-and-trace-flows.yaml
   level: 4
   level_breakdown:
     L1_structural: true

@@ -1,0 +1,103 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-43
+status: candidate-not-canonical; subject to review
+parent_business_process: dea:process-operate-asset-maintenance
+coordinate:
+  domain: EnablementAndOperations
+  stage: Operate
+  process_context: dea:pc-oe-operate
+  process_group: dea:group-execution-and-fulfillment
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/dea:process-operate-asset-maintenance
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: dea:activity-plan-maintenance-schedules
+  name: "Plan Maintenance Schedules"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Maintenance scheduling; preventive-plan upkeep; parts and crew alignment"
+  out_of_scope:
+  - "Asset strategy and replacement planning (conceive/design-stage concern)"
+  - "Schedule execution (dea:activity-execute-scheduled-maintenance)"
+  evidence:
+  - "Parent BP trigger (installed assets degrade and require scheduled and reactive maintenance)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-43
+- id: dea:activity-execute-scheduled-maintenance
+  name: "Execute Scheduled Maintenance"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Planned maintenance execution; service record capture; return-to-service confirmation"
+  out_of_scope:
+  - "Reactive breakdown work (dea:activity-respond-to-asset-breakdowns)"
+  - "Maintenance planning (dea:activity-plan-maintenance-schedules)"
+  evidence:
+  - "Parent BP outcome (scheduled work completed)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-43
+- id: dea:activity-respond-to-asset-breakdowns
+  name: "Respond to Asset Breakdowns"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Breakdown triage; reactive repair; failure record completion"
+  out_of_scope:
+  - "Reliability improvement programmes (improvement-stage concern of dea:pc-oe-improve)"
+  - "Scheduled maintenance (dea:activity-execute-scheduled-maintenance)"
+  evidence:
+  - "Parent BP outcome (reactive work completed and asset availability recorded)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-43
+- id: dea:activity-record-asset-availability
+  name: "Record Asset Availability"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Availability record upkeep; downtime registration; maintenance-history completeness"
+  out_of_scope:
+  - "Availability target setting (design-stage concern)"
+  - "Execution of the maintenance work itself (dea:activity-execute-scheduled-maintenance)"
+  evidence:
+  - "Parent BP outcome statement (asset availability recorded)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-43
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."
