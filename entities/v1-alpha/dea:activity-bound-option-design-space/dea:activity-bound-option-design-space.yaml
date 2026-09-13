@@ -1,0 +1,34 @@
+id: dea:activity-bound-option-design-space
+type: Activity
+name: Bound Option Design Space
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: "The cohesive grouping of work within Design Strategic Options that bounds the option design space the conceived strategic intent and scoped trade-offs permit."
+belongs_to_business_process: dea:process-design-strategic-options
+cohesion_rationale: "Constituent work shares a single bounding concern (intent and trade-offs to bounded design space), one input class (committed strategic intent, scoped trade-offs), and one output (the bounded design space). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6)."
+decomposition_boundary: l4-reached
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: StrategyAndDirection
+    stage: Design
+    identifier: ecf:strategyDirection.design
+metadata:
+  established_by: CR-BP-54
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-54
+    date: '2026-09-13'
+    change: |
+      Initial L3 Activity entry; lands as part of the CR-BP-54
+      StrategyAndDirection Conceive + Design + Build tranche (pattern
+      proven by CR-BP-42 through CR-BP-53). Classified per CR-BP-32
+      section 5 (fails standalone executability and resource dedication);
+      decomposition boundary marker per CR-BP-32 section 12 pending Task
+      records (dea:Task lifecycle: proposed).

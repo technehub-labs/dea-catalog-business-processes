@@ -2,13 +2,13 @@ schema_version: 1
 report_at_run: CR-BP-16 S23
 report_at_source: scripts/build_conformance_report.py
 catalog_root: /home/hermes/dea-catalog-processes
-total_records: 549
+total_records: 597
 conformance_levels:
   0: 0
   1: 0
   2: 0
   3: 0
-  4: 549
+  4: 597
 records:
 - id: dea:activity-administer-catalogue-pricing
   kind: Activity
@@ -20,9 +20,29 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-align-horizons-with-intent
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-align-horizons-with-intent/dea:activity-align-horizons-with-intent.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-allocate-relationship-attention
   kind: Activity
   path: entities/v1-alpha/dea:activity-allocate-relationship-attention/dea:activity-allocate-relationship-attention.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-allocate-resources-to-initiatives
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-allocate-resources-to-initiatives/dea:activity-allocate-resources-to-initiatives.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -90,6 +110,26 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-anchor-horizon-milestones
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-anchor-horizon-milestones/dea:activity-anchor-horizon-milestones.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-anchor-roadmap-milestones
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-anchor-roadmap-milestones/dea:activity-anchor-roadmap-milestones.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-apply-cash-to-ledger
   kind: Activity
   path: entities/v1-alpha/dea:activity-apply-cash-to-ledger/dea:activity-apply-cash-to-ledger.yaml
@@ -113,6 +153,26 @@ records:
 - id: dea:activity-articulate-risk-appetite
   kind: Activity
   path: entities/v1-alpha/dea:activity-articulate-risk-appetite/dea:activity-articulate-risk-appetite.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-articulate-strategic-preference
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-articulate-strategic-preference/dea:activity-articulate-strategic-preference.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-articulate-strategic-trajectory
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-articulate-strategic-trajectory/dea:activity-articulate-strategic-trajectory.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -193,6 +253,26 @@ records:
 - id: dea:activity-assemble-proposition-performance-evidence
   kind: Activity
   path: entities/v1-alpha/dea:activity-assemble-proposition-performance-evidence/dea:activity-assemble-proposition-performance-evidence.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-assemble-strategic-plan
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-assemble-strategic-plan/dea:activity-assemble-strategic-plan.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-assemble-strategic-roadmap
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-assemble-strategic-roadmap/dea:activity-assemble-strategic-roadmap.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -300,6 +380,26 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-assign-target-ownership
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-assign-target-ownership/dea:activity-assign-target-ownership.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-bound-allocation-envelopes
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-bound-allocation-envelopes/dea:activity-bound-allocation-envelopes.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-bound-asset-lifecycle-envelopes
   kind: Activity
   path: entities/v1-alpha/dea:activity-bound-asset-lifecycle-envelopes/dea:activity-bound-asset-lifecycle-envelopes.yaml
@@ -313,6 +413,16 @@ records:
 - id: dea:activity-bound-delivery-model-envelope
   kind: Activity
   path: entities/v1-alpha/dea:activity-bound-delivery-model-envelope/dea:activity-bound-delivery-model-envelope.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-bound-evaluation-scope
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-bound-evaluation-scope/dea:activity-bound-evaluation-scope.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -340,6 +450,56 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-bound-horizon-timeframes
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-bound-horizon-timeframes/dea:activity-bound-horizon-timeframes.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-bound-initiative-scope
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-bound-initiative-scope/dea:activity-bound-initiative-scope.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-bound-objectives-scope
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-bound-objectives-scope/dea:activity-bound-objectives-scope.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-bound-option-design-space
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-bound-option-design-space/dea:activity-bound-option-design-space.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-bound-plan-version
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-bound-plan-version/dea:activity-bound-plan-version.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-bound-policy-scope
   kind: Activity
   path: entities/v1-alpha/dea:activity-bound-policy-scope/dea:activity-bound-policy-scope.yaml
@@ -353,6 +513,16 @@ records:
 - id: dea:activity-bound-proposition-scope
   kind: Activity
   path: entities/v1-alpha/dea:activity-bound-proposition-scope/dea:activity-bound-proposition-scope.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-bound-scenario-assumptions
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-bound-scenario-assumptions/dea:activity-bound-scenario-assumptions.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -450,6 +620,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-choose-strategic-trajectory
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-choose-strategic-trajectory/dea:activity-choose-strategic-trajectory.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-codify-charters
   kind: Activity
   path: entities/v1-alpha/dea:activity-codify-charters/dea:activity-codify-charters.yaml
@@ -510,9 +690,29 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-commit-allocation-priorities
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-commit-allocation-priorities/dea:activity-commit-allocation-priorities.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-commit-controls-and-policies-design
   kind: Activity
   path: entities/v1-alpha/dea:activity-commit-controls-and-policies-design/dea:activity-commit-controls-and-policies-design.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-commit-corporate-strategy
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-commit-corporate-strategy/dea:activity-commit-corporate-strategy.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -690,6 +890,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-commit-objectives-and-targets
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-commit-objectives-and-targets/dea:activity-commit-objectives-and-targets.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-commit-operations-model-design
   kind: Activity
   path: entities/v1-alpha/dea:activity-commit-operations-model-design/dea:activity-commit-operations-model-design.yaml
@@ -820,6 +1030,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-commit-purpose-and-ambition
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-commit-purpose-and-ambition/dea:activity-commit-purpose-and-ambition.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-commit-rationalization-decisions
   kind: Activity
   path: entities/v1-alpha/dea:activity-commit-rationalization-decisions/dea:activity-commit-rationalization-decisions.yaml
@@ -873,6 +1093,86 @@ records:
 - id: dea:activity-commit-risk-framework-direction
   kind: Activity
   path: entities/v1-alpha/dea:activity-commit-risk-framework-direction/dea:activity-commit-risk-framework-direction.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-commit-strategic-horizons
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-commit-strategic-horizons/dea:activity-commit-strategic-horizons.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-commit-strategic-initiatives
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-commit-strategic-initiatives/dea:activity-commit-strategic-initiatives.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-commit-strategic-intent
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-commit-strategic-intent/dea:activity-commit-strategic-intent.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-commit-strategic-option-designs
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-commit-strategic-option-designs/dea:activity-commit-strategic-option-designs.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-commit-strategic-plan
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-commit-strategic-plan/dea:activity-commit-strategic-plan.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-commit-strategic-preference
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-commit-strategic-preference/dea:activity-commit-strategic-preference.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-commit-strategic-roadmap
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-commit-strategic-roadmap/dea:activity-commit-strategic-roadmap.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-commit-strategic-scenarios
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-commit-strategic-scenarios/dea:activity-commit-strategic-scenarios.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -1490,6 +1790,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-design-scenario-signposts
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-design-scenario-signposts/dea:activity-design-scenario-signposts.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-design-segment-configurations
   kind: Activity
   path: entities/v1-alpha/dea:activity-design-segment-configurations/dea:activity-design-segment-configurations.yaml
@@ -1603,6 +1913,46 @@ records:
 - id: dea:activity-draft-initial-policy-document
   kind: Activity
   path: entities/v1-alpha/dea:activity-draft-initial-policy-document/dea:activity-draft-initial-policy-document.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-draft-objectives-and-targets
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-draft-objectives-and-targets/dea:activity-draft-objectives-and-targets.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-draft-strategic-initiatives
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-draft-strategic-initiatives/dea:activity-draft-strategic-initiatives.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-draft-strategic-options
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-draft-strategic-options/dea:activity-draft-strategic-options.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-draft-strategic-scenarios
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-draft-strategic-scenarios/dea:activity-draft-strategic-scenarios.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -1850,6 +2200,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-execute-strategic-comparison
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-execute-strategic-comparison/dea:activity-execute-strategic-comparison.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-facilitate-governance-decisions
   kind: Activity
   path: entities/v1-alpha/dea:activity-facilitate-governance-decisions/dea:activity-facilitate-governance-decisions.yaml
@@ -1960,6 +2320,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-frame-ambition-envelope
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-frame-ambition-envelope/dea:activity-frame-ambition-envelope.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-frame-enablement-and-asset-direction
   kind: Activity
   path: entities/v1-alpha/dea:activity-frame-enablement-and-asset-direction/dea:activity-frame-enablement-and-asset-direction.yaml
@@ -2030,6 +2400,26 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-frame-option-evaluation-criteria
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-frame-option-evaluation-criteria/dea:activity-frame-option-evaluation-criteria.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-frame-purpose-statement
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-frame-purpose-statement/dea:activity-frame-purpose-statement.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-frame-segment-thesis
   kind: Activity
   path: entities/v1-alpha/dea:activity-frame-segment-thesis/dea:activity-frame-segment-thesis.yaml
@@ -2053,6 +2443,16 @@ records:
 - id: dea:activity-frame-sourcing-principles
   kind: Activity
   path: entities/v1-alpha/dea:activity-frame-sourcing-principles/dea:activity-frame-sourcing-principles.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-frame-strategic-intent-narrative
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-frame-strategic-intent-narrative/dea:activity-frame-strategic-intent-narrative.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -2770,6 +3170,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-prioritize-allocation-decisions
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-prioritize-allocation-decisions/dea:activity-prioritize-allocation-decisions.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-process-journal-entries
   kind: Activity
   path: entities/v1-alpha/dea:activity-process-journal-entries/dea:activity-process-journal-entries.yaml
@@ -3060,6 +3470,26 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-review-strategic-fit
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-review-strategic-fit/dea:activity-review-strategic-fit.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-review-strategic-plan
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-review-strategic-plan/dea:activity-review-strategic-plan.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-review-treasury-exposures
   kind: Activity
   path: entities/v1-alpha/dea:activity-review-treasury-exposures/dea:activity-review-treasury-exposures.yaml
@@ -3160,6 +3590,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-scope-intent-trade-offs
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-scope-intent-trade-offs/dea:activity-scope-intent-trade-offs.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-score-finding-severity
   kind: Activity
   path: entities/v1-alpha/dea:activity-score-finding-severity/dea:activity-score-finding-severity.yaml
@@ -3213,6 +3653,36 @@ records:
 - id: dea:activity-select-transport-modes
   kind: Activity
   path: entities/v1-alpha/dea:activity-select-transport-modes/dea:activity-select-transport-modes.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-sense-intent-imperatives
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-sense-intent-imperatives/dea:activity-sense-intent-imperatives.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-sense-purpose-imperatives
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-sense-purpose-imperatives/dea:activity-sense-purpose-imperatives.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-sequence-strategic-initiatives
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-sequence-strategic-initiatives/dea:activity-sequence-strategic-initiatives.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -3373,6 +3843,16 @@ records:
 - id: dea:activity-sustain-improvement-gains
   kind: Activity
   path: entities/v1-alpha/dea:activity-sustain-improvement-gains/dea:activity-sustain-improvement-gains.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-synthesize-strategic-direction
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-synthesize-strategic-direction/dea:activity-synthesize-strategic-direction.yaml
   level: 4
   level_breakdown:
     L1_structural: true

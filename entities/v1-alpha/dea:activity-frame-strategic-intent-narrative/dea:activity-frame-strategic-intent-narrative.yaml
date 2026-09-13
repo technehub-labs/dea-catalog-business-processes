@@ -1,0 +1,34 @@
+id: dea:activity-frame-strategic-intent-narrative
+type: Activity
+name: Frame Strategic Intent Narrative
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: "The cohesive grouping of work within Conceive Strategic Intent that frames the strategic intent narrative the sensed imperatives demand."
+belongs_to_business_process: dea:process-conceive-strategic-intent
+cohesion_rationale: "Constituent work shares a single framing concern (imperatives to coherent intent narrative), one reference class (the conceived strategic horizons), and one output (the intent narrative). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6)."
+decomposition_boundary: l4-reached
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: StrategyAndDirection
+    stage: Conceive
+    identifier: ecf:strategyDirection.conceive
+metadata:
+  established_by: CR-BP-54
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-54
+    date: '2026-09-13'
+    change: |
+      Initial L3 Activity entry; lands as part of the CR-BP-54
+      StrategyAndDirection Conceive + Design + Build tranche (pattern
+      proven by CR-BP-42 through CR-BP-53). Classified per CR-BP-32
+      section 5 (fails standalone executability and resource dedication);
+      decomposition boundary marker per CR-BP-32 section 12 pending Task
+      records (dea:Task lifecycle: proposed).

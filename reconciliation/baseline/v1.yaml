@@ -369,11 +369,11 @@ records:
   - id: dea:process-build-strategic-plan
     type: Process
     path: entities/v1-alpha/dea:process-build-strategic-plan/dea:process-build-strategic-plan.yaml
-    sha256: 07cb0f759fe62ef9de6b7cd3d9c6676f28d643645820cd327f641acd87860e36
+    sha256: 1794622e723ab76453e51feef4d274654c43abb697da06c73c983b0a37c87d44
   - id: dea:process-build-strategic-roadmap
     type: Process
     path: entities/v1-alpha/dea:process-build-strategic-roadmap/dea:process-build-strategic-roadmap.yaml
-    sha256: 611a93fc72c18b098d1d3863da275fe4c3bfc61df62c4c05d68be3054171f6ea
+    sha256: 65547b3c2f133b6aa112f691ad0c89f2da21c981370f64f38c389e378258973d
   - id: dea:process-codify-charters-and-policies
     type: Process
     path: entities/v1-alpha/dea:process-codify-charters-and-policies/dea:process-codify-charters-and-policies.yaml
@@ -385,7 +385,7 @@ records:
   - id: dea:process-conceive-strategic-intent
     type: Process
     path: entities/v1-alpha/dea:process-conceive-strategic-intent/dea:process-conceive-strategic-intent.yaml
-    sha256: f80f37a241581d1e763dfc5816cbb4ce02a970aad3bf4accb36db7a24c02d2fc
+    sha256: 5ed086637c11030687b633a5372b4628f36f5c0ac339a6da6f4606cc2f110ca2
   - id: dea:process-conceive-workforce-and-agent-mix
     type: Process
     path: entities/v1-alpha/dea:process-conceive-workforce-and-agent-mix/dea:process-conceive-workforce-and-agent-mix.yaml
@@ -449,7 +449,7 @@ records:
   - id: dea:process-define-enterprise-purpose-and-ambition
     type: Process
     path: entities/v1-alpha/dea:process-define-enterprise-purpose-and-ambition/dea:process-define-enterprise-purpose-and-ambition.yaml
-    sha256: 406c6210ae4e5fecc9e8932829b538fc024b6dd0d46da56e3fbfdf59430ef56b
+    sha256: ed2e90af5aca84f8a4f5160bc311209ca64a8cd7b52e8187a0b26e62d8dcdb32
   - id: dea:process-demand-design
     type: Process
     path: entities/v1-alpha/dea:process-demand-design/dea:process-demand-design.yaml
@@ -497,7 +497,7 @@ records:
   - id: dea:process-design-objectives-and-targets
     type: Process
     path: entities/v1-alpha/dea:process-design-objectives-and-targets/dea:process-design-objectives-and-targets.yaml
-    sha256: fb3dcce3434b6f763f4816534ac5588eb1ce638bc4d4128f1d1588ad5f3ba630
+    sha256: 53d083058cf95c2962cb7c9517a64a20b079c0388b479602903ba6a05974bd00
   - id: dea:process-design-operations-model
     type: Process
     path: entities/v1-alpha/dea:process-design-operations-model/dea:process-design-operations-model.yaml
@@ -529,11 +529,11 @@ records:
   - id: dea:process-design-strategic-options
     type: Process
     path: entities/v1-alpha/dea:process-design-strategic-options/dea:process-design-strategic-options.yaml
-    sha256: 6e2e542e5c749eabf0d7446e694c151fb50bf8a2f1241bf331daa431f59e5009
+    sha256: 07e755563a1399ea3abfd60a98e47600bec07fd9093c9ccc8c9a70fca6185dba
   - id: dea:process-design-strategic-scenarios
     type: Process
     path: entities/v1-alpha/dea:process-design-strategic-scenarios/dea:process-design-strategic-scenarios.yaml
-    sha256: 91495f305cee9457ba310256bf14fd5563269858e8c75341b596efca5186b811
+    sha256: bbf2c6564e6827f276dbee5d9d9a6d375d8c7ce8c0043302f22e78a2d9afed09
   - id: dea:process-design-tax-position-and-strategy
     type: Process
     path: entities/v1-alpha/dea:process-design-tax-position-and-strategy/dea:process-design-tax-position-and-strategy.yaml
@@ -553,7 +553,7 @@ records:
   - id: dea:process-develop-corporate-strategy
     type: Process
     path: entities/v1-alpha/dea:process-develop-corporate-strategy/dea:process-develop-corporate-strategy.yaml
-    sha256: e55a1f829de31ffe6d3fb61793673c1d7a20e0c8a7c7c993b420853f0d419719
+    sha256: d40479b8af31da4e4acc6a6156bfe810b92032674daca7ebed88f0c34533e561
   - id: dea:process-develop-governance-strategy
     type: Process
     path: entities/v1-alpha/dea:process-develop-governance-strategy/dea:process-develop-governance-strategy.yaml
@@ -573,7 +573,7 @@ records:
   - id: dea:process-evaluate-strategic-alternatives
     type: Process
     path: entities/v1-alpha/dea:process-evaluate-strategic-alternatives/dea:process-evaluate-strategic-alternatives.yaml
-    sha256: f12332121aaa4cf09f091d87a18c9f451b6eb24926d212edc3822e8e114b2c4d
+    sha256: 070a81e2344f0b291d643971aeb834086440e18d78266dabe0493f9ce0b4aa9c
   - id: dea:process-evolve-products-and-services
     type: Process
     path: entities/v1-alpha/dea:process-evolve-products-and-services/dea:process-evolve-products-and-services.yaml
@@ -625,7 +625,7 @@ records:
   - id: dea:process-frame-strategic-horizons
     type: Process
     path: entities/v1-alpha/dea:process-frame-strategic-horizons/dea:process-frame-strategic-horizons.yaml
-    sha256: 889ba13ba19c04774ce6db3b931416d383e46924392059dd3ab7a3bfb38b5e92
+    sha256: 8bf8dd4e4c42fbdb24c1d5dda5ef415dd97a4590305bf4b5284a8a908dba0795
   - id: dea:process-frame-technology-enablement-approach
     type: Process
     path: entities/v1-alpha/dea:process-frame-technology-enablement-approach/dea:process-frame-technology-enablement-approach.yaml
@@ -821,7 +821,7 @@ records:
   - id: dea:process-set-resource-allocation-priorities
     type: Process
     path: entities/v1-alpha/dea:process-set-resource-allocation-priorities/dea:process-set-resource-allocation-priorities.yaml
-    sha256: 92284fc22aed294dc8853740be8946114b256878ba49c593e1b9051f294bd1fd
+    sha256: 5cd338b48fe2d19c97cd9254fd8a7804b373a23ce3e3f123b12036b8552d9ed9
   - id: dea:process-steer-initiative-portfolio
     type: Process
     path: entities/v1-alpha/dea:process-steer-initiative-portfolio/dea:process-steer-initiative-portfolio.yaml
@@ -829,5 +829,5 @@ records:
   - id: dea:process-translate-strategic-choices-into-initiatives
     type: Process
     path: entities/v1-alpha/dea:process-translate-strategic-choices-into-initiatives/dea:process-translate-strategic-choices-into-initiatives.yaml
-    sha256: 69dd850c33bdab66daeb4a16c98c7650be6695162d5e794f01dd9d504f9fa533
+    sha256: d1e598b4b756faab0097e6e45f6d7309dc2b9046df658ca3dff88531e9552e5a
 
