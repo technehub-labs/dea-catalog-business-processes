@@ -429,11 +429,11 @@ records:
   - id: dea:process-customer-channel-and-acquisition-build
     type: Process
     path: entities/v1-alpha/dea:process-customer-channel-and-acquisition-build/dea:process-customer-channel-and-acquisition-build.yaml
-    sha256: a090abc0bc4970ed0d36c12946166693669bf0f0664c4d1cfa223992ca4a06fd
+    sha256: e78929a3d2faba802076eaa8ef232c344fcef7f848e9cca910918b6bf0801b06
   - id: dea:process-customer-experience-design
     type: Process
     path: entities/v1-alpha/dea:process-customer-experience-design/dea:process-customer-experience-design.yaml
-    sha256: 8f3291b8c7ae1b5c466c4ee77c6c7ca0af86aae1a306196db91bacf130b5652b
+    sha256: b4504880ff4bc768eb5571d7e8346f6f9c9b3dd3b34e87e86e2573a1ff491a0e
   - id: dea:process-customer-insight-and-retention
     type: Process
     path: entities/v1-alpha/dea:process-customer-insight-and-retention/dea:process-customer-insight-and-retention.yaml
@@ -441,11 +441,11 @@ records:
   - id: dea:process-customer-journey-design
     type: Process
     path: entities/v1-alpha/dea:process-customer-journey-design/dea:process-customer-journey-design.yaml
-    sha256: d26e4e2e69bd0994bfdd72d30e0358cba6e719aee0963e2f084de8dca0d8dfa7
+    sha256: 78f1fd1bc2fec39a1650fee7cd2a6ea3257b13079885eb4cb353b86ea4c96c12
   - id: dea:process-customer-strategy-conception
     type: Process
     path: entities/v1-alpha/dea:process-customer-strategy-conception/dea:process-customer-strategy-conception.yaml
-    sha256: 102d2d9be80b6735452dc85f6b0aa33cf482b0a68f85f5cc8ff1fb9121182b08
+    sha256: 712f2172cf72f30a15a6453f2e2a0678499d0de1f503f1b3c5e0daf4a754498a
   - id: dea:process-define-enterprise-purpose-and-ambition
     type: Process
     path: entities/v1-alpha/dea:process-define-enterprise-purpose-and-ambition/dea:process-define-enterprise-purpose-and-ambition.yaml
@@ -453,11 +453,11 @@ records:
   - id: dea:process-demand-design
     type: Process
     path: entities/v1-alpha/dea:process-demand-design/dea:process-demand-design.yaml
-    sha256: c69a22c7ecc5a2854fe7b8b4f156d55c9140946d57ee0b200df6f930bc3e62ac
+    sha256: 3959f4dcca64c641abdd6f416b5f332d04178faf287f379ab4051d7e6e4cbc23
   - id: dea:process-demand-generation-build
     type: Process
     path: entities/v1-alpha/dea:process-demand-generation-build/dea:process-demand-generation-build.yaml
-    sha256: 13f214ca0b1f35f511cc7c3f9c31f7f2b83988b2be9a3f9897d3208e95c3cf9c
+    sha256: 600f028be1ea933387552c4786129ecf9a610dce7130d54fa1a7dc67c2138857
   - id: dea:process-design-agent-topology
     type: Process
     path: entities/v1-alpha/dea:process-design-agent-topology/dea:process-design-agent-topology.yaml
@@ -673,7 +673,7 @@ records:
   - id: dea:process-market-and-demand-conception
     type: Process
     path: entities/v1-alpha/dea:process-market-and-demand-conception/dea:process-market-and-demand-conception.yaml
-    sha256: 40fdee9af4510fb6dd7ed7d1e85dade95e64270d2180e6f30ddaaa14441ca5e4
+    sha256: 51387d783e37b0cba7a3abc17a49f0268f6fd10be1a3d504bf426130aac70e56
   - id: dea:process-monitor-strategic-performance
     type: Process
     path: entities/v1-alpha/dea:process-monitor-strategic-performance/dea:process-monitor-strategic-performance.yaml

@@ -58,6 +58,11 @@ ecfConformance:
 metadata:
   established_by: CR-BP-13a
   established_at: '2026-09-05'
+  activity_references:
+  - dea:activity-build-demand-program-assets
+  - dea:activity-integrate-demand-engine-with-channels
+  - dea:activity-calibrate-demand-programs
+  - dea:activity-verify-initial-demand-production
   change_history:
   - cr: CR-BP-13a
     date: '2026-09-05'
@@ -73,6 +78,27 @@ metadata:
       legacy scalar `process_context` migrated to canonical `context:` block; legacy
       `process_audience` removed (CR-BP-14 /13); canonical `serves` relationship toward
       the ECF coordinate added.'
+  - cr: CR-BP-45
+    date: '2026-09-13'
+    change: 'L3 decomposition of this Business Process: 4 Activities
+
+      landed under the structured deposition pattern (research
+
+      deposition at research/l3-candidate-universe.yaml, then
+
+      canonical Activity records) as part of the CR-BP-45
+
+      PartyAndRelationship Conceive + Design + Build tranche.
+
+      Adds metadata.activity_references[] back-references per
+
+      ACT-010 bidirectional traceability. Additive metadata-only
+
+      change; BP identity and semantics unchanged, so version
+
+      remains unchanged per SIV-004 (CR-BP-34d).
+
+      '
 links:
 - rel: change-request
   href: change-requests/cr-bp-13a-customer-and-demand-admission.md

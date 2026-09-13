@@ -2,10 +2,10 @@ catalog:
   abbreviation: BP
   counts:
     candidates: 0
-    canonical: 205
-    entities: 206
-    open_change_requests: 56
-    research_files: 77
+    canonical: 233
+    entities: 234
+    open_change_requests: 57
+    research_files: 84
     retired: 1
   cross_cutting:
     change_requests: change-requests/
@@ -32,6 +32,28 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-articulate-supply-paths
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-articulate-supply-paths/dea:activity-articulate-supply-paths.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-articulate-value-exchange
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-articulate-value-exchange/dea:activity-articulate-value-exchange.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-assess-churn-risk
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -43,10 +65,87 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-build-acquisition-engines
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-build-acquisition-engines/dea:activity-build-acquisition-engines.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-build-demand-program-assets
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-build-demand-program-assets/dea:activity-build-demand-program-assets.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-calibrate-demand-programs
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-calibrate-demand-programs/dea:activity-calibrate-demand-programs.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-collect-customer-feedback
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-collect-customer-feedback/dea:activity-collect-customer-feedback.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-commit-customer-strategy
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-commit-customer-strategy/dea:activity-commit-customer-strategy.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-commit-demand-model
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-commit-demand-model/dea:activity-commit-demand-model.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-commit-journey-design
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-commit-journey-design/dea:activity-commit-journey-design.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-commit-market-demand-thesis
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-commit-market-demand-thesis/dea:activity-commit-market-demand-thesis.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -102,6 +201,61 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-coordinate-renewals/dea:activity-coordinate-renewals.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-define-demand-shaping-levers
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-define-demand-shaping-levers/dea:activity-define-demand-shaping-levers.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-define-experience-principles
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-define-experience-principles/dea:activity-define-experience-principles.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-design-hypothesis-tests
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-design-hypothesis-tests/dea:activity-design-hypothesis-tests.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-design-journey-handoffs
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-design-journey-handoffs/dea:activity-design-journey-handoffs.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-design-touchpoints
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-design-touchpoints/dea:activity-design-touchpoints.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -219,6 +373,39 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-formulate-demand-hypotheses
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-formulate-demand-hypotheses/dea:activity-formulate-demand-hypotheses.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-formulate-demand-thesis
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-formulate-demand-thesis/dea:activity-formulate-demand-thesis.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-frame-segment-thesis
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-frame-segment-thesis/dea:activity-frame-segment-thesis.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-handle-relationship-escalations
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -234,6 +421,39 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-handle-service-exceptions/dea:activity-handle-service-exceptions.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-identify-moments-of-truth
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-identify-moments-of-truth/dea:activity-identify-moments-of-truth.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-integrate-channels-with-experience
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-integrate-channels-with-experience/dea:activity-integrate-channels-with-experience.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-integrate-demand-engine-with-channels
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-integrate-demand-engine-with-channels/dea:activity-integrate-demand-engine-with-channels.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -318,6 +538,28 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-map-journey-stages
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-map-journey-stages/dea:activity-map-journey-stages.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-model-capacity-assumptions
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-model-capacity-assumptions/dea:activity-model-capacity-assumptions.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-monitor-platform-availability
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -377,6 +619,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-process-purchase-requisitions/dea:activity-process-purchase-requisitions.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-provision-channel-infrastructure
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-provision-channel-infrastructure/dea:activity-provision-channel-infrastructure.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -483,6 +736,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-scan-market-and-segments
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-scan-market-and-segments/dea:activity-scan-market-and-segments.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-schedule-facility-work-orders
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -505,10 +769,54 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-set-experience-quality-criteria
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-set-experience-quality-criteria/dea:activity-set-experience-quality-criteria.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-specify-interaction-patterns
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-specify-interaction-patterns/dea:activity-specify-interaction-patterns.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-track-and-trace-flows
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-track-and-trace-flows/dea:activity-track-and-trace-flows.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-verify-acquisition-readiness
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-verify-acquisition-readiness/dea:activity-verify-acquisition-readiness.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-verify-initial-demand-production
+    last_modified: '2026-09-13'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-verify-initial-demand-production/dea:activity-verify-initial-demand-production.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -1177,10 +1485,10 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: dea:process-customer-channel-and-acquisition-build
-    last_modified: '2026-09-07'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-customer-channel-and-acquisition-build/dea:process-customer-channel-and-acquisition-build.yaml
-    research_count: 2
+    research_count: 3
     retired_count: 1
     state: canonical
     type: Process
@@ -1188,10 +1496,10 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: dea:process-customer-experience-design
-    last_modified: '2026-09-10'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-customer-experience-design/dea:process-customer-experience-design.yaml
-    research_count: 2
+    research_count: 3
     retired_count: 1
     state: canonical
     type: Process
@@ -1210,10 +1518,10 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: dea:process-customer-journey-design
-    last_modified: '2026-09-10'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-customer-journey-design/dea:process-customer-journey-design.yaml
-    research_count: 2
+    research_count: 3
     retired_count: 1
     state: canonical
     type: Process
@@ -1221,10 +1529,10 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: dea:process-customer-strategy-conception
-    last_modified: '2026-09-10'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-customer-strategy-conception/dea:process-customer-strategy-conception.yaml
-    research_count: 2
+    research_count: 3
     retired_count: 1
     state: canonical
     type: Process
@@ -1243,10 +1551,10 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: dea:process-demand-design
-    last_modified: '2026-09-10'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-demand-design/dea:process-demand-design.yaml
-    research_count: 2
+    research_count: 3
     retired_count: 1
     state: canonical
     type: Process
@@ -1254,10 +1562,10 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: dea:process-demand-generation-build
-    last_modified: '2026-09-07'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-demand-generation-build/dea:process-demand-generation-build.yaml
-    research_count: 2
+    research_count: 3
     retired_count: 1
     state: canonical
     type: Process
@@ -1848,10 +2156,10 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: dea:process-market-and-demand-conception
-    last_modified: '2026-09-10'
+    last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-market-and-demand-conception/dea:process-market-and-demand-conception.yaml
-    research_count: 2
+    research_count: 3
     retired_count: 1
     state: canonical
     type: Process
@@ -2294,12 +2602,39 @@ catalog:
   - entity_id: dea:activity-allocate-relationship-attention
     files: []
     path: entities/v1-alpha/dea:activity-allocate-relationship-attention/research/
+  - entity_id: dea:activity-articulate-supply-paths
+    files: []
+    path: entities/v1-alpha/dea:activity-articulate-supply-paths/research/
+  - entity_id: dea:activity-articulate-value-exchange
+    files: []
+    path: entities/v1-alpha/dea:activity-articulate-value-exchange/research/
   - entity_id: dea:activity-assess-churn-risk
     files: []
     path: entities/v1-alpha/dea:activity-assess-churn-risk/research/
+  - entity_id: dea:activity-build-acquisition-engines
+    files: []
+    path: entities/v1-alpha/dea:activity-build-acquisition-engines/research/
+  - entity_id: dea:activity-build-demand-program-assets
+    files: []
+    path: entities/v1-alpha/dea:activity-build-demand-program-assets/research/
+  - entity_id: dea:activity-calibrate-demand-programs
+    files: []
+    path: entities/v1-alpha/dea:activity-calibrate-demand-programs/research/
   - entity_id: dea:activity-collect-customer-feedback
     files: []
     path: entities/v1-alpha/dea:activity-collect-customer-feedback/research/
+  - entity_id: dea:activity-commit-customer-strategy
+    files: []
+    path: entities/v1-alpha/dea:activity-commit-customer-strategy/research/
+  - entity_id: dea:activity-commit-demand-model
+    files: []
+    path: entities/v1-alpha/dea:activity-commit-demand-model/research/
+  - entity_id: dea:activity-commit-journey-design
+    files: []
+    path: entities/v1-alpha/dea:activity-commit-journey-design/research/
+  - entity_id: dea:activity-commit-market-demand-thesis
+    files: []
+    path: entities/v1-alpha/dea:activity-commit-market-demand-thesis/research/
   - entity_id: dea:activity-conduct-cycle-counts
     files: []
     path: entities/v1-alpha/dea:activity-conduct-cycle-counts/research/
@@ -2315,6 +2650,21 @@ catalog:
   - entity_id: dea:activity-coordinate-renewals
     files: []
     path: entities/v1-alpha/dea:activity-coordinate-renewals/research/
+  - entity_id: dea:activity-define-demand-shaping-levers
+    files: []
+    path: entities/v1-alpha/dea:activity-define-demand-shaping-levers/research/
+  - entity_id: dea:activity-define-experience-principles
+    files: []
+    path: entities/v1-alpha/dea:activity-define-experience-principles/research/
+  - entity_id: dea:activity-design-hypothesis-tests
+    files: []
+    path: entities/v1-alpha/dea:activity-design-hypothesis-tests/research/
+  - entity_id: dea:activity-design-journey-handoffs
+    files: []
+    path: entities/v1-alpha/dea:activity-design-journey-handoffs/research/
+  - entity_id: dea:activity-design-touchpoints
+    files: []
+    path: entities/v1-alpha/dea:activity-design-touchpoints/research/
   - entity_id: dea:activity-disposition-nonconforming-output
     files: []
     path: entities/v1-alpha/dea:activity-disposition-nonconforming-output/research/
@@ -2345,12 +2695,30 @@ catalog:
   - entity_id: dea:activity-execute-shipments
     files: []
     path: entities/v1-alpha/dea:activity-execute-shipments/research/
+  - entity_id: dea:activity-formulate-demand-hypotheses
+    files: []
+    path: entities/v1-alpha/dea:activity-formulate-demand-hypotheses/research/
+  - entity_id: dea:activity-formulate-demand-thesis
+    files: []
+    path: entities/v1-alpha/dea:activity-formulate-demand-thesis/research/
+  - entity_id: dea:activity-frame-segment-thesis
+    files: []
+    path: entities/v1-alpha/dea:activity-frame-segment-thesis/research/
   - entity_id: dea:activity-handle-relationship-escalations
     files: []
     path: entities/v1-alpha/dea:activity-handle-relationship-escalations/research/
   - entity_id: dea:activity-handle-service-exceptions
     files: []
     path: entities/v1-alpha/dea:activity-handle-service-exceptions/research/
+  - entity_id: dea:activity-identify-moments-of-truth
+    files: []
+    path: entities/v1-alpha/dea:activity-identify-moments-of-truth/research/
+  - entity_id: dea:activity-integrate-channels-with-experience
+    files: []
+    path: entities/v1-alpha/dea:activity-integrate-channels-with-experience/research/
+  - entity_id: dea:activity-integrate-demand-engine-with-channels
+    files: []
+    path: entities/v1-alpha/dea:activity-integrate-demand-engine-with-channels/research/
   - entity_id: dea:activity-issue-purchase-orders
     files: []
     path: entities/v1-alpha/dea:activity-issue-purchase-orders/research/
@@ -2372,6 +2740,12 @@ catalog:
   - entity_id: dea:activity-manage-line-changeovers
     files: []
     path: entities/v1-alpha/dea:activity-manage-line-changeovers/research/
+  - entity_id: dea:activity-map-journey-stages
+    files: []
+    path: entities/v1-alpha/dea:activity-map-journey-stages/research/
+  - entity_id: dea:activity-model-capacity-assumptions
+    files: []
+    path: entities/v1-alpha/dea:activity-model-capacity-assumptions/research/
   - entity_id: dea:activity-monitor-platform-availability
     files: []
     path: entities/v1-alpha/dea:activity-monitor-platform-availability/research/
@@ -2390,6 +2764,9 @@ catalog:
   - entity_id: dea:activity-process-purchase-requisitions
     files: []
     path: entities/v1-alpha/dea:activity-process-purchase-requisitions/research/
+  - entity_id: dea:activity-provision-channel-infrastructure
+    files: []
+    path: entities/v1-alpha/dea:activity-provision-channel-infrastructure/research/
   - entity_id: dea:activity-receive-and-verify-deliveries
     files: []
     path: entities/v1-alpha/dea:activity-receive-and-verify-deliveries/research/
@@ -2417,15 +2794,30 @@ catalog:
   - entity_id: dea:activity-respond-to-platform-incidents
     files: []
     path: entities/v1-alpha/dea:activity-respond-to-platform-incidents/research/
+  - entity_id: dea:activity-scan-market-and-segments
+    files: []
+    path: entities/v1-alpha/dea:activity-scan-market-and-segments/research/
   - entity_id: dea:activity-schedule-facility-work-orders
     files: []
     path: entities/v1-alpha/dea:activity-schedule-facility-work-orders/research/
   - entity_id: dea:activity-schedule-production-cycles
     files: []
     path: entities/v1-alpha/dea:activity-schedule-production-cycles/research/
+  - entity_id: dea:activity-set-experience-quality-criteria
+    files: []
+    path: entities/v1-alpha/dea:activity-set-experience-quality-criteria/research/
+  - entity_id: dea:activity-specify-interaction-patterns
+    files: []
+    path: entities/v1-alpha/dea:activity-specify-interaction-patterns/research/
   - entity_id: dea:activity-track-and-trace-flows
     files: []
     path: entities/v1-alpha/dea:activity-track-and-trace-flows/research/
+  - entity_id: dea:activity-verify-acquisition-readiness
+    files: []
+    path: entities/v1-alpha/dea:activity-verify-acquisition-readiness/research/
+  - entity_id: dea:activity-verify-initial-demand-production
+    files: []
+    path: entities/v1-alpha/dea:activity-verify-initial-demand-production/research/
   - entity_id: dea:group-agent-acquisition-and-onboarding
     files: []
     path: entities/v1-alpha/dea:group-agent-acquisition-and-onboarding/research/
@@ -2636,11 +3028,13 @@ catalog:
     files:
     - .gitkeep
     - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-customer-channel-and-acquisition-build/research/
   - entity_id: dea:process-customer-experience-design
     files:
     - .gitkeep
     - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-customer-experience-design/research/
   - entity_id: dea:process-customer-insight-and-retention
     files:
@@ -2652,11 +3046,13 @@ catalog:
     files:
     - .gitkeep
     - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-customer-journey-design/research/
   - entity_id: dea:process-customer-strategy-conception
     files:
     - .gitkeep
     - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-customer-strategy-conception/research/
   - entity_id: dea:process-define-enterprise-purpose-and-ambition
     files: []
@@ -2665,11 +3061,13 @@ catalog:
     files:
     - .gitkeep
     - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-demand-design/research/
   - entity_id: dea:process-demand-generation-build
     files:
     - .gitkeep
     - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-demand-generation-build/research/
   - entity_id: dea:process-design-agent-topology
     files: []
@@ -2846,6 +3244,7 @@ catalog:
     files:
     - .gitkeep
     - README.md
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-market-and-demand-conception/research/
   - entity_id: dea:process-monitor-strategic-performance
     files: []
