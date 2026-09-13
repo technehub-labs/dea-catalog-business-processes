@@ -1,0 +1,34 @@
+id: dea:activity-maintain-catalogue-entries
+type: Activity
+name: Maintain Catalogue Entries
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: "The cohesive grouping of work within Operate Product Catalogue that maintains the catalogue entries for products in active operation."
+belongs_to_business_process: dea:process-operate-product-catalogue
+cohesion_rationale: "Constituent work shares a single maintenance concern (entry currency for active products), one input class (variant baselines, lifecycle states), and one output (current catalogue entries). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6)."
+decomposition_boundary: l4-reached
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: ProductAndValue
+    stage: Operate
+    identifier: ecf:productValue.operate
+metadata:
+  established_by: CR-BP-51
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-51
+    date: '2026-09-13'
+    change: |
+      Initial L3 Activity entry; lands as part of the CR-BP-51
+      ProductAndValue Improve + Operate tranche (completes the PV
+      domain's L3 coverage; pattern proven by CR-BP-42 through CR-BP-50).
+      Classified per CR-BP-32 section 5 (fails standalone executability
+      and resource dedication); decomposition boundary marker per CR-BP-32
+      section 12 pending Task records (dea:Task lifecycle: proposed).
