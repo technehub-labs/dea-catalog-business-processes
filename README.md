@@ -175,6 +175,18 @@ records (CR-BP-32 §12). Activities link to their parent Business
 Process bidirectionally per ACT-010 (`belongs_to_business_process`
 on the Activity; `metadata.activity_references[]` on the parent).
 
+**Lifecycle process discovery is evidence-based, not matrix-inferred**
+(CR-BP-62). An ECF coordinate does not automatically generate a
+Business Process, and a lifecycle stage's transitional semantics do
+not disqualify one either: Context Does Not Imply Process -- and
+Context Does Not Exclude Process. Candidate processes at any ECF
+coordinate are evaluated through the CR-BP-62 discovery method
+(BP-LIFE-001..015; discovery records at `discovery/v1-alpha/`;
+structural gate DISC-001..008). The Activate and Retire stages
+remain register-deferred pending the CR-BP-63 discovery exercise,
+which replaces the uniform deferral rationale with per-cell
+documented evaluation outcomes.
+
 **No separate top-level directories** for L0. L0 is a
 **conceptual construct** documented here + [`docs/architecture.md`](docs/architecture.md).
 L1 / L2 / L3 records live at `entities/v1-alpha/` (currently

@@ -1,0 +1,237 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://technehub-labs.github.io/dea-catalog-processes/schemas/discovery/lifecycle-discovery.schema.json",
+  "title": "LifecycleDiscoveryRecord",
+  "description": "Schema for lifecycle process-discovery records in technehub-labs/dea-catalog-processes (CR-BP-62 section 17). One record per discovery exercise per ECF context, stored at discovery/v1-alpha/<domain-slug>-<stage-slug>.yaml. The record captures the candidate universe, the BP-LIFE-001..015 evaluation dimensions, the section-10 canonicality scoring, and the section-16 disposition. CI validates structural completeness only (DISC-001..008); canonical admission remains governed (CR-BP-62 section 20).",
+  "type": "object",
+  "required": ["discovery"],
+  "additionalProperties": false,
+  "properties": {
+    "discovery": {
+      "type": "object",
+      "required": [
+        "id",
+        "ecf_context",
+        "candidates",
+        "context_evaluation",
+        "rationale"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^dea:discovery-[a-z0-9-]+$",
+          "description": "Discovery record id. Family: dea:discovery-* (catalog-owned; not a metamodel entity)."
+        },
+        "ecf_context": {
+          "type": "object",
+          "required": ["domain", "lifecycle_stage"],
+          "additionalProperties": false,
+          "properties": {
+            "domain": {
+              "type": "string",
+              "enum": [
+                "GovernanceAndExistence",
+                "PartyAndRelationship",
+                "ProductAndValue",
+                "FinanceAndAccounting",
+                "AgencyAndOrganization",
+                "EnablementAndOperations",
+                "StrategyAndDirection"
+              ]
+            },
+            "lifecycle_stage": {
+              "type": "string",
+              "enum": [
+                "Conceive",
+                "Design",
+                "Build",
+                "Activate",
+                "Operate",
+                "Improve",
+                "Retire"
+              ]
+            }
+          }
+        },
+        "candidates": {
+          "type": "array",
+          "minItems": 1,
+          "description": "Candidate processes evaluated in this exercise. At least one candidate OR an explicit empty-declaration via context_evaluation.process_empty with rationale (section 15).",
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "proposed_identity",
+              "trigger",
+              "transformation",
+              "outcome",
+              "boundary",
+              "evidence",
+              "evaluation",
+              "scoring",
+              "disposition"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "name": {"type": "string", "minLength": 1},
+              "proposed_identity": {
+                "type": "object",
+                "required": ["verb", "object"],
+                "additionalProperties": false,
+                "properties": {
+                  "verb": {"type": "string", "minLength": 1},
+                  "object": {"type": "string", "minLength": 1},
+                  "scope": {"type": "string"}
+                }
+              },
+              "trigger": {"type": "string", "minLength": 1},
+              "inputs": {"type": "string"},
+              "transformation": {"type": "string", "minLength": 1},
+              "outcome": {"type": "string", "minLength": 1},
+              "boundary": {"type": "string", "minLength": 1},
+              "actors": {"type": "string"},
+              "controls": {"type": "string"},
+              "evidence": {
+                "type": "object",
+                "required": ["sources", "evidence_strength"],
+                "additionalProperties": false,
+                "properties": {
+                  "sources": {
+                    "type": "array",
+                    "items": {"type": "string", "minLength": 1}
+                  },
+                  "evidence_strength": {
+                    "type": "string",
+                    "enum": ["weak", "moderate", "authoritative"]
+                  }
+                }
+              },
+              "evaluation": {
+                "type": "object",
+                "required": [
+                  "process_reality",
+                  "transformation",
+                  "trigger",
+                  "outcome",
+                  "boundary",
+                  "semantic_identity",
+                  "cross_context_stability",
+                  "cross_domain_applicability",
+                  "ecf_independence",
+                  "duplication",
+                  "composition",
+                  "capability_distinction",
+                  "governance_distinction",
+                  "lifecycle_span"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "process_reality": {"type": "string", "minLength": 1},
+                  "transformation": {"type": "string", "minLength": 1},
+                  "trigger": {"type": "string", "minLength": 1},
+                  "outcome": {"type": "string", "minLength": 1},
+                  "boundary": {"type": "string", "minLength": 1},
+                  "semantic_identity": {"type": "string", "minLength": 1},
+                  "cross_context_stability": {"type": "string", "minLength": 1},
+                  "cross_domain_applicability": {"type": "string", "minLength": 1},
+                  "ecf_independence": {"type": "string", "minLength": 1},
+                  "duplication": {"type": "string", "minLength": 1},
+                  "composition": {"type": "string", "minLength": 1},
+                  "capability_distinction": {"type": "string", "minLength": 1},
+                  "governance_distinction": {"type": "string", "minLength": 1},
+                  "lifecycle_span": {"type": "string", "minLength": 1}
+                }
+              },
+              "scoring": {
+                "type": "object",
+                "required": [
+                  "process_reality",
+                  "semantic_stability",
+                  "cross_domain_applicability",
+                  "boundary_clarity",
+                  "evidence_strength",
+                  "total",
+                  "rationale"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "process_reality": {"type": "integer", "minimum": 0, "maximum": 2},
+                  "semantic_stability": {"type": "integer", "minimum": 0, "maximum": 2},
+                  "cross_domain_applicability": {"type": "integer", "minimum": 0, "maximum": 2},
+                  "boundary_clarity": {"type": "integer", "minimum": 0, "maximum": 2},
+                  "evidence_strength": {"type": "integer", "minimum": 0, "maximum": 2},
+                  "total": {"type": "integer", "minimum": 0, "maximum": 10},
+                  "rationale": {"type": "string", "minLength": 1}
+                }
+              },
+              "disposition": {
+                "type": "object",
+                "required": ["type"],
+                "additionalProperties": false,
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "ADMIT-CANONICAL",
+                      "ADMIT-SPECIALIZATION",
+                      "ADMIT-CROSS-STAGE",
+                      "RECORD-PATTERN",
+                      "DEFER",
+                      "MERGE",
+                      "RECLASSIFY",
+                      "REJECT"
+                    ]
+                  },
+                  "canonical_process_ref": {"type": "string"},
+                  "specialization_of": {"type": "string"},
+                  "related_contexts": {
+                    "type": "array",
+                    "items": {"type": "string"}
+                  }
+                }
+              }
+            }
+          }
+        },
+        "context_evaluation": {
+          "type": "object",
+          "required": [
+            "concerns_identified",
+            "candidates_considered",
+            "adjacent_contexts_reviewed",
+            "existing_processes_searched",
+            "lifecycle_spanning_considered",
+            "capability_distinctions_tested",
+            "pattern_candidates_considered",
+            "evidence_assessed",
+            "process_empty"
+          ],
+          "additionalProperties": false,
+          "description": "The section-15 process-absence checklist. All nine items must be affirmatively recorded before a Context may be declared process-empty.",
+          "properties": {
+            "concerns_identified": {"type": "boolean"},
+            "candidates_considered": {"type": "boolean"},
+            "adjacent_contexts_reviewed": {"type": "boolean"},
+            "existing_processes_searched": {"type": "boolean"},
+            "lifecycle_spanning_considered": {"type": "boolean"},
+            "capability_distinctions_tested": {"type": "boolean"},
+            "pattern_candidates_considered": {"type": "boolean"},
+            "evidence_assessed": {"type": "boolean"},
+            "process_empty": {"type": "boolean"}
+          }
+        },
+        "rationale": {
+          "type": "object",
+          "required": ["included", "excluded", "unresolved"],
+          "additionalProperties": false,
+          "properties": {
+            "included": {"type": "string", "minLength": 1},
+            "excluded": {"type": "string", "minLength": 1},
+            "unresolved": {"type": "string", "minLength": 1}
+          }
+        }
+      }
+    }
+  }
+}

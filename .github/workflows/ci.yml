@@ -256,6 +256,14 @@ jobs:
         if: steps.check.outputs.skip != 'true'
         run: python scripts/check_process_group.py
 
+      - name: Run lifecycle discovery gate (CR-BP-62; DISC-001..008)
+        if: steps.check.outputs.skip != 'true'
+        # Advisory. Structural completeness of lifecycle-discovery
+        # records (discovery/v1-alpha/); never admits or rejects
+        # canonicality (CR-BP-62 S20). Regression guard until
+        # CR-BP-63 lands the Activate/Retire discovery records.
+        run: python scripts/check_lifecycle_discovery.py
+
       - name: Run cross-repo conformance suite (CR-CATALOG-STRUCT-01 §11)
         if: steps.check.outputs.skip != 'true'
         run: |
