@@ -1,0 +1,104 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-56
+status: candidate-not-canonical; subject to review
+parent_business_process: dea:process-conceive-workforce-and-agent-mix
+coordinate:
+  domain: AgencyAndOrganization
+  stage: Conceive
+  process_context: dea:pc-ao-conceive
+  process_group: dea:group-organization-and-agent-conception
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42,
+  scaled by CR-BP-43 through CR-BP-55)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/dea:process-conceive-workforce-and-agent-mix
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: dea:activity-bound-substrate-proportions
+  name: "Bound Substrate Proportions"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Proportion bounding; substrate rationale record; proportion-to-strategy trace"
+  out_of_scope:
+  - "Strategy commitment (dea:activity-commit-organization-and-agent-strategy)"
+  - "Envelope bounding (dea:activity-bound-capacity-envelopes)"
+  evidence:
+  - "Parent BP outcome (the workforce and agent mix is conceived with substrate proportions and capacity envelopes)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-56
+- id: dea:activity-bound-capacity-envelopes
+  name: "Bound Capacity Envelopes"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Envelope bounding; envelope assumption record; envelope-to-proportion trace"
+  out_of_scope:
+  - "Proportion bounding (dea:activity-bound-substrate-proportions)"
+  - "Mix drafting (dea:activity-draft-workforce-and-agent-mix)"
+  evidence:
+  - "Parent BP trigger (the committed organization and agent strategy requires bounded substrate proportions and capacity envelopes)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-56
+- id: dea:activity-draft-workforce-and-agent-mix
+  name: "Draft Workforce and Agent Mix"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Mix drafting; mix coherence review; mix-to-envelope trace"
+  out_of_scope:
+  - "Envelope bounding (dea:activity-bound-capacity-envelopes)"
+  - "Mix commitment (dea:activity-commit-workforce-and-agent-mix)"
+  evidence:
+  - "Parent BP outcome (the workforce and agent mix is conceived with substrate proportions and capacity envelopes)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-56
+- id: dea:activity-commit-workforce-and-agent-mix
+  name: "Commit Workforce and Agent Mix"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Governance ratification; mix publication; handoff to organization design"
+  out_of_scope:
+  - "Mix drafting (dea:activity-draft-workforce-and-agent-mix)"
+  - "Organization structure design (dea:process-design-organization-structure)"
+  evidence:
+  - "Parent BP outcome (the workforce and agent mix is conceived ...)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-56
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."
