@@ -1886,3 +1886,33 @@ dispositions:
       CR-BP-19 /l1-register.yaml governanceExistence.improve;
       CR-BP-21f.1-governance-existence-completion.md.
     note: null
+  - record_id: dea:process-transition-to-service
+    disposition: RETAIN
+    changes: []
+    tranche: cr-bp-64
+    rationale: |
+      First discovery-driven admission (CR-BP-62 method; CR-BP-63
+      exercise; CR-BP-64 admission). Transition to Service scored 10/10
+      with an ADMIT-CANONICAL recommendation at ProductAndValue x
+      Activate; landed as the first canonical BP at an Activate
+      coordinate with its PC (dea:pc-pv-activate) and PG
+      (dea:group-service-transition-activation).
+    evidence: |
+      discovery/v1-alpha/product-and-value-activate.yaml (CR-BP-63);
+      CR-BP-64-pv-activate-retire-admission.md.
+    note: null
+  - record_id: dea:process-transition-out-of-service
+    disposition: RETAIN
+    changes: []
+    tranche: cr-bp-64
+    rationale: |
+      First discovery-driven admission (CR-BP-62 method; CR-BP-63
+      exercise; CR-BP-64 admission). Transition Out of Service scored
+      10/10 with an ADMIT-CANONICAL recommendation at ProductAndValue x
+      Retire; landed as the first canonical BP at a Retire coordinate
+      with its PC (dea:pc-pv-retire) and PG
+      (dea:group-service-transition-retirement).
+    evidence: |
+      discovery/v1-alpha/product-and-value-retire.yaml (CR-BP-63);
+      CR-BP-64-pv-activate-retire-admission.md.
+    note: null

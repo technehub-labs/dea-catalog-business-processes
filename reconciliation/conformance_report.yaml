@@ -2,13 +2,13 @@ schema_version: 1
 report_at_run: CR-BP-16 S23
 report_at_source: scripts/build_conformance_report.py
 catalog_root: /home/hermes/dea-work/dea-catalog-processes
-total_records: 697
+total_records: 703
 conformance_levels:
   0: 0
   1: 0
   2: 0
   3: 0
-  4: 697
+  4: 703
 records:
 - id: dea:activity-address-performance-exceptions
   kind: Activity
@@ -5320,6 +5320,26 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:group-service-transition-activation
+  kind: Entity
+  path: entities/v1-alpha/dea:group-service-transition-activation/dea:group-service-transition-activation.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:group-service-transition-retirement
+  kind: Entity
+  path: entities/v1-alpha/dea:group-service-transition-retirement/dea:group-service-transition-retirement.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:group-strategic-adaptation
   kind: Entity
   path: entities/v1-alpha/dea:group-strategic-adaptation/dea:group-strategic-adaptation.yaml
@@ -6620,6 +6640,26 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:process-transition-out-of-service
+  kind: Entity
+  path: entities/v1-alpha/dea:process-transition-out-of-service/dea:process-transition-out-of-service.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:process-transition-to-service
+  kind: Entity
+  path: entities/v1-alpha/dea:process-transition-to-service/dea:process-transition-to-service.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:process-translate-strategic-choices-into-initiatives
   kind: Entity
   path: entities/v1-alpha/dea:process-translate-strategic-choices-into-initiatives/dea:process-translate-strategic-choices-into-initiatives.yaml
@@ -6880,6 +6920,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:pc-pv-activate
+  kind: Unknown
+  path: contexts/v1-alpha/dea-pc-pv-activate.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:pc-pv-build
   kind: Unknown
   path: contexts/v1-alpha/dea-pc-pv-build.yaml
@@ -6923,6 +6973,16 @@ records:
 - id: dea:pc-pv-operate
   kind: Unknown
   path: contexts/v1-alpha/dea-pc-pv-operate.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:pc-pv-retire
+  kind: Unknown
+  path: contexts/v1-alpha/dea-pc-pv-retire.yaml
   level: 4
   level_breakdown:
     L1_structural: true

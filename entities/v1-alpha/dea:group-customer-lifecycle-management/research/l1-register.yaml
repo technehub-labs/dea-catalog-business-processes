@@ -15,12 +15,19 @@ stages:
 - Improve
 - Retire
 ratification:
-  version: 4
-  cr: CR-BP-28
-  ratified_at: '2026-09-08'
-  supersedes: version 3 (CR-BP-22, ratified 2026-09-08)
-  ratified_accepted: 35
-  backlog_deferred: 14
+  version: 5
+  cr: CR-BP-64
+  ratified_at: '2026-09-14'
+  supersedes: version 4 (CR-BP-28, ratified 2026-09-08)
+  ratified_accepted: 37
+  backlog_deferred: 12
+  v4_to_v5_note: 'Two ProductAndValue cells (Activate, Retire) reverse from
+    backlog-deferred to ratified-accepted/landed on CR-BP-63 discovery evidence
+    under the CR-BP-62 lifecycle process-discovery method. The remaining 12
+    Activate/Retire cells keep their v4 dispositions unchanged; their CR-BP-63
+    discovery outcomes (RECORD-PATTERN / DEFER / process-empty with documented
+    rationale) do not warrant register changes. This is a targeted disposition
+    reversal, not a re-derivation; the v4 rederivation_basis still stands.'
   rederivation_basis: 'Re-derived against dea-metaframework framework/domain-grounding.md
     at ECF
 
@@ -794,14 +801,20 @@ register:
       evidence:
       - TM Forum eTOM Service Activation
       - APQC PCF Market and Sell Launch
-      disposition: backlog-deferred
-      ratified_at: '2026-09-07'
-      ratified_by: CR-BP-19
-      deferral_reason: Activate and Retire are lifecycle transition stages, not stable
-        Process Group operating scopes (register-wide deferred_rationale). v1 ratified
-        this cell; normalized to deferred in v2. Market launch is a sub-step of the
-        receiving Operate group (portfolio management).
-      audit_status: backlog-deferred
+      disposition: ratified-accepted
+      ratified_at: '2026-09-14'
+      ratified_by: CR-BP-64
+      admission: >-
+        Reversed from backlog-deferred on CR-BP-63 discovery evidence
+        (discovery/v1-alpha/product-and-value-activate.yaml): Transition to Service
+        scored 10/10 with an ADMIT-CANONICAL recommendation (ITIL 4 transition
+        practices; COBIT 2019 BAI07; IT4IT Requirement to Deploy). CR-BP-64 lands
+        the PC (dea:pc-pv-activate), PG (dea:group-service-transition-activation)
+        and BP (dea:process-transition-to-service). Prior deferral (v2): market
+        launch treated as a sub-step of the receiving Operate group; the discovery
+        evaluation established the transition identity as ECF-independent and
+        bounded (BP-LIFE-005/009).
+      audit_status: landed
     Operate:
       process_context: dea:pc-pv-operate
       l1_candidates:
@@ -858,15 +871,20 @@ register:
       evidence:
       - dea-metaframework/framework/domain-grounding.md §3.5
       - ITIL 4 Service Transition to retirement
-      disposition: backlog-deferred
-      ratified_at: '2026-09-07'
-      ratified_by: CR-BP-19
-      deferral_reason: Activate and Retire are lifecycle transition stages, not stable
-        Process Group operating scopes (register-wide deferred_rationale). Proposition
-        retirement often overlaps with relationship termination and asset retirement;
-        defer until an L2 example (e.g. product end-of-life) requires a standalone
-        group.
-      audit_status: backlog-deferred
+      disposition: ratified-accepted
+      ratified_at: '2026-09-14'
+      ratified_by: CR-BP-64
+      admission: >-
+        Reversed from backlog-deferred on CR-BP-63 discovery evidence
+        (discovery/v1-alpha/product-and-value-retire.yaml): Transition Out of
+        Service scored 10/10 with an ADMIT-CANONICAL recommendation (ITIL service
+        retirement; eTOM lifecycle management; industry EOL practice). CR-BP-64
+        lands the PC (dea:pc-pv-retire), PG (dea:group-service-transition-retirement)
+        and BP (dea:process-transition-out-of-service). Prior deferral (v2):
+        retirement treated as overlapping relationship termination and asset
+        retirement; the discovery evaluation established withdrawal-from-service
+        as a bounded, ECF-independent transformation distinct from both.
+      audit_status: landed
   EnablementAndOperations:
     Conceive:
       process_context: dea:pc-oe-conceive

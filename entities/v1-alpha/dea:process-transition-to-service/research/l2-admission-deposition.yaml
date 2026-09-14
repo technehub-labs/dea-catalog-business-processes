@@ -1,0 +1,46 @@
+# L2 admission deposition: dea:process-transition-to-service
+# CR-BP-64, 2026-09-14. Population-slice pattern: deposition first,
+# canonical record second. The substantive evaluation lives in the
+# CR-BP-63 discovery record; this deposition cites it and records
+# the admission decision.
+
+deposition:
+  subject: dea:process-transition-to-service
+  cr: CR-BP-64
+  date: '2026-09-14'
+  discovery_record: discovery/v1-alpha/product-and-value-activate.yaml
+  discovery_outcome:
+    candidate: Transition to Service
+    score: 10/10
+    disposition: ADMIT-CANONICAL (recommended; governed admission
+      pending per CR-BP-62 section 20)
+  evidence_base:
+    - ITIL 4 service transition practices (deployment management, release management, service validation and testing)
+    - COBIT 2019 BAI07 (Managed IT Change Acceptance and Transitioning)
+    - IT4IT Reference Architecture: Requirement to Deploy value stream
+  admission_decision:
+    decision: admit
+    admitted_as: dea:process-transition-to-service
+    process_context: dea:pc-pv-activate
+    process_group: dea:group-service-transition-activation
+    rationale: |
+      The discovery record establishes process reality, transformation,
+      trigger, outcome, boundary, semantic identity, cross-context
+      stability and non-duplication (BP-LIFE-001..015) with
+      authoritative evidence. This tranche enacts the recommendation:
+      the register cell flips to ratified-accepted / landed and the
+      canonical PC, PG and BP records land together.
+
+    naming_note: >-
+      The admitted record name is refined at admission to satisfy the
+      BP-ARC-ID-001 identity contract (name = verb + object): the
+      discovery candidate name is retained in the discovery record;
+      the canonical record name and identity object carry the full
+      form. The id is unchanged from the discovery proposal.
+  follow_ons:
+    - L3 decomposition of this Business Process under the CR-BP-32
+      pattern (4 Activities + deposition), to be scheduled as an L3
+      tranche slice.
+    - Discovery-recommended canonical admissions at the remaining four
+      cells (G&E Activate; P&V Retire is in this tranche; E&O Retire;
+      P&R Retire) land as their own slices.
