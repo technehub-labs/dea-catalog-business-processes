@@ -46,7 +46,7 @@ except ImportError:
 # Re-export at module scope for type checkers.
 Draft7Validator = _Draft7Validator
 
-DEFAULT_SCHEMA_PATH = "tools/catalog-index-schema.json"
+DEFAULT_SCHEMA_PATH = "catalog-index-schema/catalog-index-schema.json"
 
 ENTITY_ID_PATTERN = re.compile(r"^dea:[a-z0-9-]+(:[a-z0-9-]+)*$")
 
