@@ -108,6 +108,93 @@ def _catalog_ids(root: Path) -> set[str]:
     return ids
 
 
+def _prose_blocks(lines: list[str]):
+    """Yield (start_lineno, text) of prose blocks for DOC-001/DOC-003.
+
+    The docs are hard-wrapped, so per-line evaluation misfires on wrap
+    boundaries and on multi-line distinction sentences (CR-BP-61).
+    Blocks join wrapped lines (a blank line ends a block; list items
+    join the enclosing block so an intro line's preferred term covers
+    its items). Fenced code blocks, ATX headings, and table rows are
+    skipped: code carries literal tokens that must appear verbatim,
+    headings name concepts, and table rows carry taxonomy labels
+    (e.g. the process-types vocabulary names).
+    """
+    in_fence = False
+    buf: list[str] = []
+    start: int | None = None
+
+    def flush():
+        nonlocal buf, start
+        if buf:
+            yield_block = (start, " ".join(buf))
+            buf, start = [], None
+            return yield_block
+        return None
+
+    for i, line in enumerate(lines, 1):
+        stripped = line.strip()
+        if stripped.startswith("```") or stripped.startswith("~~~"):
+            pending = flush()
+            if pending:
+                yield pending
+            in_fence = not in_fence
+            continue
+        if in_fence:
+            continue
+        if not stripped:
+            pending = flush()
+            if pending:
+                yield pending
+            continue
+        if line.lstrip().startswith("#"):
+            pending = flush()
+            if pending:
+                yield pending
+            continue
+        if line.lstrip().startswith("|"):
+            pending = flush()
+            if pending:
+                yield pending
+            continue
+        if start is None:
+            start = i
+        buf.append(stripped)
+    pending = flush()
+    if pending:
+        yield pending
+
+
+def _strip_inline_code(text: str) -> str:
+    """Remove backtick-quoted spans (literal tokens, e.g. field names)."""
+    return re.sub(r"`[^`]*`", " ", text)
+
+
+# DOC-003 allowed compounds. Canonical catalog/metamodel vocabulary:
+# L0/L1 construct names, classification vocabulary (classifications/
+# process-types.yaml), and document-concept names. Matched
+# case-insensitively after whitespace/hyphen normalization so
+# hard-wraps ("Process\nspecialization") and hyphenated forms
+# ("process-kernel") resolve.
+ALLOWED_PROCESS_COMPOUNDS = [
+    "Business Process", "Process Group", "Process Context",
+    "Process Intent", "Process Kernel", "Process Specialization",
+    "Process Architecture", "Process Examples", "Process Type",
+    "Process Record", "Process Catalog", "Process Conformance",
+    "Process Description", "Process Discovery", "Process Entry",
+    "Process Identity", "Process Implementation", "Process Instantiation",
+    "Process Inventory", "Process Lifecycle", "Process Lineage",
+    "Process Population", "Process Profile", "Process Property",
+    "Process Reference", "Process Representation", "Process Sample",
+    "Process Schema", "Process Set", "Process Structure",
+    "Process Scope", "Process Classification", "Process Contribution",
+    "Process Decomposition", "Process Landscape", "Process Discipline",
+    # classifications/process-types.yaml vocabulary names
+    "Strategic Process", "Management Process", "Core Process",
+    "Support Process", "Standardization Process",
+]
+
+
 def check_doc(path: Path, catalog_ids: set[str]) -> list[tuple[str, str]]:
     """Return [(rule_code, finding), ...] for a docs file."""
     findings: list[tuple[str, str]] = []
@@ -120,29 +207,37 @@ def check_doc(path: Path, catalog_ids: set[str]) -> list[tuple[str, str]]:
     # DOC-001: legacy synonym usage without the preferred term
     # acknowledged nearby. The architecture docs legitimately
     # describe distinctions ("Business Process != Process Kernel");
-    # those lines SHOULD have BOTH terms present. A line that has
-    # only the legacy term is suspect.
-    for i, line in enumerate(lines, 1):
+    # those passages SHOULD have BOTH terms present. Evaluated per
+    # prose block (hard-wrapped lines joined) so multi-line
+    # distinction sentences resolve; fenced code, headings, tables,
+    # and inline code spans are excluded (CR-BP-61).
+    for start, block in _prose_blocks(lines):
+        hay = _strip_inline_code(block)
+        low = hay.lower()
         for preferred, synonyms in LEGACY_TERMS:
             for syn in synonyms:
-                if syn.lower() not in line.lower():
-                    continue
-                idx = line.lower().index(syn.lower())
-                window = line[max(0, idx - 40): idx + len(syn) + 40].lower()
-                # Allow if the line contains "legacy"/"formerly"/"deprecated"
-                # within 40 chars of the synonym.
-                if "legacy" in window or "formerly" in window or "deprecated" in window:
-                    continue
-                # Allow if the preferred term is also on the same line
-                # (i.e., the line describes the distinction).
-                if preferred.lower() in line.lower():
-                    continue
-                findings.append((
-                    "DOC-001",
-                    f"{path.name}:{i}: legacy synonym {syn!r} used "
-                    f"without preferred {preferred!r} or legacy qualifier "
-                    f"(CR-BP-16 S22)",
-                ))
+                pos = 0
+                while True:
+                    idx = low.find(syn.lower(), pos)
+                    if idx == -1:
+                        break
+                    window = low[max(0, idx - 40): idx + len(syn) + 40]
+                    pos = idx + len(syn)
+                    # Allow if a legacy qualifier sits within 40 chars
+                    # of the synonym.
+                    if "legacy" in window or "formerly" in window or "deprecated" in window:
+                        continue
+                    # Allow if the preferred term appears anywhere in
+                    # the same prose block (distinction-drawing).
+                    if preferred.lower() in low:
+                        continue
+                    findings.append((
+                        "DOC-001",
+                        f"{path.name}:{start}: legacy synonym {syn!r} used "
+                        f"without preferred {preferred!r} or legacy qualifier "
+                        f"(CR-BP-16 S22)",
+                    ))
+                    break
 
     # DOC-002: unresolvable canonical id references.
     for i, line in enumerate(lines, 1):
@@ -159,38 +254,27 @@ def check_doc(path: Path, catalog_ids: set[str]) -> list[tuple[str, str]]:
 
     # DOC-003: "Process" used alone as the noun for an L2 Business
     # Process in a way that might confuse with Process Group or
-    # Process Kernel. Allow "Business Process", "Process Group",
-    # "Process Context", "Process Intent", "Process Kernel" etc.
-    for i, line in enumerate(lines, 1):
-        # Tokenise roughly by word boundaries; flag standalone "Process"
-        # outside compound forms.
-        if re.search(r"\bProcess\b", line):
-            allowed_compounds = [
-                "Business Process", "Process Group", "Process Context",
-                "Process Intent", "Process Kernel", "Process Specialization",
-                "Process Architecture", "Process Examples", "Process Type",
-                "Process Examples", "Process Record", "Process Catalog",
-                "Process Conformance", "Process Description",
-                "Process Discovery", "Process Entry", "Process Identity",
-                "Process Implementation", "Process Instantiation",
-                "Process Inventory", "Process Lifecycle", "Process Lineage",
-                "Process Population", "Process Profile", "Process Property",
-                "Process Record", "Process Reference", "Process Reference",
-                "Process Representation", "Process Sample", "Process Sample",
-                "Process Schema", "Process Set", "Process Structure",
-                "Process Specialization",
-            ]
-            if any(comp in line for comp in allowed_compounds):
-                continue
-            # Allow "this Process" or "the Process" : these refer to
-            # the Business Process in context.
-            if re.search(r"\b(this|the|a|an|every|each|canonical)\s+Process\b", line):
-                continue
-            findings.append((
-                "DOC-003",
-                f"{path.name}:{i}: standalone 'Process' used as noun; "
-                f"consider 'Business Process' (CR-BP-16 S22)",
-            ))
+    # Process Kernel. Evaluated per prose block (hard-wrapped lines
+    # joined, whitespace/hyphens normalized) so wrap artifacts like
+    # "Business / Process." resolve to the allowed compound; fenced
+    # code, headings, tables, and inline code spans are excluded
+    # (CR-BP-61).
+    for start, block in _prose_blocks(lines):
+        hay = _strip_inline_code(block)
+        if not re.search(r"\bProcess\b", hay):
+            continue
+        norm = re.sub(r"[\s_-]+", " ", hay).lower()
+        if any(comp.lower() in norm for comp in ALLOWED_PROCESS_COMPOUNDS):
+            continue
+        # Allow "this Process" / "the Process" etc.: these refer to
+        # the Business Process in context.
+        if re.search(r"\b(this|the|a|an|every|each|canonical)\s+Process\b", hay):
+            continue
+        findings.append((
+            "DOC-003",
+            f"{path.name}:{start}: standalone 'Process' used as noun; "
+            f"consider 'Business Process' (CR-BP-16 S22)",
+        ))
 
     return findings
 
