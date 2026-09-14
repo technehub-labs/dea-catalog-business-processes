@@ -71,10 +71,10 @@ Rules (derived from CR-BP-34 §4 and the catalog's actual structure):
              is an orphan.
 
 Coverage on the live catalog (2026-09-12):
-  128 BP + 37 PG + 37 PC records.
+  129 BP + 38 PG + 38 PC records.
   Expected findings: MECE-001..008 = 0.
   The catalog is fully aligned: 35 register-landed coordinates each
-  have a PC, a PG, and BPs; 128 BPs each have a unique (verb, object)
+  have a PC, a PG, and BPs; 129 BPs each have a unique (verb, object)
   and are composed by exactly one PG.
 
 Exit codes:

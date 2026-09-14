@@ -1,0 +1,118 @@
+# Process Context Cell Charter: GovernanceAndExistence x Activate.
+#
+# Lands as part of CR-BP-65 (G&E Activate admission tranche), a
+# governed admission from the CR-BP-63 lifecycle discovery exercise.
+# The register cell was backlog-deferred under CR-BP-19 (uniform
+# Activate/Retire rationale; per-cell note: "governance activation is
+# an attribute of governance operate"). CR-BP-63's discovery record
+# (discovery/v1-alpha/governance-and-existence-activate.yaml)
+# established an evidence-backed canonical candidate (Bring into
+# Force, 9/10) on universal entry-into-force semantics, and CR-BP-65
+# reverses the cell disposition to ratified-accepted.
+#
+# Substrate independence (ADR-ECF-002 §5, CR-ECF-007): this context
+# applies to biological, artificial, and hybrid agents without
+# reclassification.
+
+id: dea:pc-ge-activate
+domain: GovernanceAndExistence
+lifecycle_stage: Activate
+name: Governance Instrument Commencement
+
+# Normative definition (PC-006).
+definition: |
+  The bounded enterprise context for **bringing adopted governance
+  instruments into force** in the **Governance & Existence** domain.
+  This context addresses the commencement-stage work of verifying
+  commencement conditions, promulgating adopted instruments, and
+  confirming effectiveness. Entry-into-force semantics are universal
+  in legal-regulatory systems (adoption vs commencement are distinct
+  events in every jurisdiction's statute and regulation practice) and
+  in corporate governance (resolutions and charters take effect upon
+  adoption-plus-commencement conditions).
+
+# Scope (PC-005).
+scope:
+  includes:
+    - Commencement condition verification
+    - Promulgation of adopted instruments
+    - Effectiveness confirmation and recording
+  excludes:
+    - Instrument conception and drafting (Conceive/Design stages; adjacent contexts)
+    - Instrument adoption and approval (Build stage; adjacent context)
+    - Enforcement and operation of in-force instruments (Operate stage; adjacent context)
+    - Instrument review and amendment (Improve stage; adjacent context)
+
+# Intended outcomes.
+outcomes:
+    - Adopted instruments are brought into force with commencement conditions verified.
+    - Promulgation is recorded with effectiveness dates.
+    - Obligations, rights and duties attach to in-force instruments.
+
+# Adjacent contexts (CR-BP-02 §11).
+adjacent_contexts:
+    - dea:pc-ge-conceive
+    - dea:pc-ge-design
+    - dea:pc-ge-build
+    - dea:pc-ge-operate
+    - dea:pc-ge-improve
+
+# Business Processes belonging to this context (PC-008).
+processes:
+    - dea:process-bring-into-force
+
+# Cell Charter (CR-BP-02 §7; PC-006).
+cell_charter:
+  enterprise_concern: "Governance & Existence: the commencement of adopted governance instruments."
+  lifecycle_concern: "Activate: commencement verification, promulgation, and effectiveness confirmation."
+  combined_semantic_meaning: |
+    The commencement-stage work of moving adopted policy instruments,
+    mandates and charters from adopted-but-dormant to in-force.
+  expected_outcomes:
+    - Adopted instruments are brought into force with commencement conditions verified.
+    - Promulgation is recorded with effectiveness dates.
+    - Obligations, rights and duties attach to in-force instruments.
+  inclusions:
+    - Commencement condition verification
+    - Promulgation of adopted instruments
+    - Effectiveness confirmation and recording
+  exclusions:
+    - Instrument conception and drafting (Conceive/Design stages; adjacent contexts)
+    - Instrument adoption and approval (Build stage; adjacent context)
+    - Enforcement and operation of in-force instruments (Operate stage; adjacent context)
+    - Instrument review and amendment (Improve stage; adjacent context)
+  adjacent_boundaries:
+    - "dea:pc-ge-build (adjacent context): adopted instruments hand over at commencement-condition verification."
+    - "dea:pc-ge-operate (adjacent context): in-force instruments hand over at effectiveness confirmation."
+    - "dea:pc-ge-improve (adjacent context): amendment of in-force instruments begins there."
+
+# Lifecycle status (CR-BP-02 §17).
+lifecycle_status: candidate
+status: candidate
+
+# Provenance.
+established_by: CR-BP-65
+established_at: '2026-09-14'
+
+# Change history.
+change_history:
+  - cr: CR-BP-65
+    date: '2026-09-14'
+    change: |
+      Initial Process Context record. The cell was backlog-deferred
+      under register v2 (CR-BP-19) with the per-cell note that
+      governance activation is an attribute of governance operate;
+      CR-BP-63's discovery exercise established the evidence-backed
+      canonical candidate Bring into Force (9/10, ADMIT-CANONICAL
+      recommendation at
+      discovery/v1-alpha/governance-and-existence-activate.yaml) on
+      universal entry-into-force semantics, and this tranche reverses
+      the cell disposition to ratified-accepted.
+
+links:
+  - rel: change-request
+    href: change-requests/CR-BP-65-ge-activate-admission.md
+  - rel: discovery-record
+    href: discovery/v1-alpha/governance-and-existence-activate.yaml
+  - rel: research-register
+    href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

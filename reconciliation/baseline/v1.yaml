@@ -110,6 +110,10 @@ records:
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-governance-conception/dea:group-governance-conception.yaml
     sha256: 5a6db06e2378db639367d2841d699a1a838c0b7f445ad403323ca3e367956e89
+  - id: dea:group-governance-instrument-commencement
+    type: ProcessGroup
+    path: entities/v1-alpha/dea:group-governance-instrument-commencement/dea:group-governance-instrument-commencement.yaml
+    sha256: 2ffdbc847886437ff624c103d43767036b138ec7505d826c1b64255db51a14d6
   - id: dea:group-governance-oversight
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-governance-oversight/dea:group-governance-oversight.yaml
@@ -234,6 +238,10 @@ records:
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-fa-operate.yaml
     sha256: d6e78a4d95fa5fe8ec98b30cd164f09e5b4f2cf475ee27851cb0072888f7d5ee
+  - id: dea:pc-ge-activate
+    type: ProcessContext
+    path: contexts/v1-alpha/dea-pc-ge-activate.yaml
+    sha256: abc5cd35f3eab31f3153f882b8585874f9a9b4a80042253fa463047d76d572cd
   - id: dea:pc-ge-b
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-ge-b.yaml
@@ -358,6 +366,10 @@ records:
     type: Process
     path: entities/v1-alpha/dea:process-audit-policy-compliance/dea:process-audit-policy-compliance.yaml
     sha256: 41fb644b4f775565164fbc9c692bc9ba6d25f7db9d6f17447f40da448d49a630
+  - id: dea:process-bring-into-force
+    type: Process
+    path: entities/v1-alpha/dea:process-bring-into-force/dea:process-bring-into-force.yaml
+    sha256: 6595976984ffbcba9cbf52982d72c174e385b2f40370ad8fe824c21450d18802
   - id: dea:process-build-budgeting-and-forecasting-systems
     type: Process
     path: entities/v1-alpha/dea:process-build-budgeting-and-forecasting-systems/dea:process-build-budgeting-and-forecasting-systems.yaml

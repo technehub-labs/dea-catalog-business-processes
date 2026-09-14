@@ -2,13 +2,13 @@ schema_version: 1
 report_at_run: CR-BP-16 S23
 report_at_source: scripts/build_conformance_report.py
 catalog_root: /home/hermes/dea-work/dea-catalog-processes
-total_records: 703
+total_records: 706
 conformance_levels:
   0: 0
   1: 0
   2: 0
   3: 0
-  4: 703
+  4: 706
 records:
 - id: dea:activity-address-performance-exceptions
   kind: Activity
@@ -5180,6 +5180,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:group-governance-instrument-commencement
+  kind: Entity
+  path: entities/v1-alpha/dea:group-governance-instrument-commencement/dea:group-governance-instrument-commencement.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:group-governance-oversight
   kind: Entity
   path: entities/v1-alpha/dea:group-governance-oversight/dea:group-governance-oversight.yaml
@@ -5423,6 +5433,16 @@ records:
 - id: dea:process-audit-policy-compliance
   kind: Entity
   path: entities/v1-alpha/dea:process-audit-policy-compliance/dea:process-audit-policy-compliance.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:process-bring-into-force
+  kind: Entity
+  path: entities/v1-alpha/dea:process-bring-into-force/dea:process-bring-into-force.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -6763,6 +6783,16 @@ records:
 - id: dea:pc-fa-operate
   kind: Unknown
   path: contexts/v1-alpha/dea-pc-fa-operate.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:pc-ge-activate
+  kind: Unknown
+  path: contexts/v1-alpha/dea-pc-ge-activate.yaml
   level: 4
   level_breakdown:
     L1_structural: true
