@@ -40,6 +40,11 @@ ecfConformance:
 metadata:
   established_by: CR-BP-21b.1
   established_at: '2026-09-08'
+  activity_references:
+  - dea:activity-compute-cycle-payroll
+  - dea:activity-execute-disbursements
+  - dea:activity-administer-benefits
+  - dea:activity-file-statutory-returns
   change_history:
   - cr: CR-BP-21b.1
     date: '2026-09-08'
@@ -50,6 +55,18 @@ metadata:
       section 5 / CR-ECF-007: applies to biological, artificial,
       and hybrid agents without reclassification. Closes the
       remaining register v2 L2 candidates for this cell.
+  - cr: CR-BP-57
+    date: '2026-09-14'
+    change: |
+      L3 decomposition of this Business Process: 4 Activities
+      landed under the structured deposition pattern (research
+      deposition at research/l3-candidate-universe.yaml, then
+      canonical Activity records) as part of the CR-BP-57
+      AgencyAndOrganization Improve + Operate tranche.
+      Adds metadata.activity_references[] back-references per
+      ACT-010 bidirectional traceability. Additive metadata-only
+      change; BP identity and semantics unchanged, so version
+      remains unchanged per SIV-004 (CR-BP-34d).
 links:
 - rel: change-request
   href: change-requests/CR-BP-21b.1-agency-organization-completion.md

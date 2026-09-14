@@ -1,0 +1,104 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-57
+status: candidate-not-canonical; subject to review
+parent_business_process: dea:process-conduct-capability-gap-analysis
+coordinate:
+  domain: AgencyAndOrganization
+  stage: Improve
+  process_context: dea:pc-ao-improve
+  process_group: dea:group-agent-and-organization-improvement
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42,
+  scaled by CR-BP-43 through CR-BP-56)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/dea:process-conduct-capability-gap-analysis
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: dea:activity-baseline-population-competencies
+  name: "Baseline Population Competencies"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Competency baselining; assessment anchor application; baseline coverage check"
+  out_of_scope:
+  - "Competency framework design (dea:process-design-competency-framework)"
+  - "Gap identification (dea:activity-identify-capability-gaps)"
+  evidence:
+  - "Parent BP trigger (the designed competency framework must be compared against the current agent population to expose gaps)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-57
+- id: dea:activity-identify-capability-gaps
+  name: "Identify Capability Gaps"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Gap identification; gap sizing; gap-to-domain trace"
+  out_of_scope:
+  - "Competency baselining (dea:activity-baseline-population-competencies)"
+  - "Gap prioritization (dea:activity-prioritize-capability-gaps)"
+  evidence:
+  - "Parent BP outcome (capability gaps are analyzed ...)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-57
+- id: dea:activity-prioritize-capability-gaps
+  name: "Prioritize Capability Gaps"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Gap prioritization; impact scoring; priority rationale record"
+  out_of_scope:
+  - "Gap identification (dea:activity-identify-capability-gaps)"
+  - "Priority commitment (dea:activity-commit-gap-priorities)"
+  evidence:
+  - "Parent BP outcome (capability gaps are analyzed with priorities committed)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-57
+- id: dea:activity-commit-gap-priorities
+  name: "Commit Gap Priorities"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Priority ratification; decision recording; routing to development and learning"
+  out_of_scope:
+  - "Gap prioritization (dea:activity-prioritize-capability-gaps)"
+  - "Learning and development operation (dea:process-operate-learning-and-development)"
+  evidence:
+  - "Parent BP outcome (capability gaps are analyzed with priorities committed)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-57
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."
