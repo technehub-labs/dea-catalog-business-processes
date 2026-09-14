@@ -44,11 +44,13 @@ def test_cli_self_test_passes():
     assert "self-test PASS" in r.stdout
 
 
-def test_cli_live_run_conformant_zero_records():
+def test_cli_live_run_conformant_on_discovery_records():
     r = _run([])
     assert r.returncode == 0, r.stdout + r.stderr
     assert "CONFORMANT" in r.stdout
-    assert "Discovery records checked: 0" in r.stdout
+    # CR-BP-63 landed the 14 Activate/Retire discovery records.
+    assert "Discovery records checked: 14" in r.stdout
+    assert "Findings:                  0" in r.stdout
 
 
 def test_cli_json_shape():
@@ -56,7 +58,7 @@ def test_cli_json_shape():
     assert r.returncode == 0
     data = json.loads(r.stdout)
     assert data["verdict"] == "CONFORMANT"
-    assert data["record_count"] == 0
+    assert data["record_count"] == 14
     assert data["finding_count"] == 0
     assert isinstance(data["findings"], list)
     assert len(data["rules"]) == 8
@@ -135,6 +137,8 @@ def test_evaluate_runs_all_rules_on_fixture(tmp_path):
     assert findings == [], findings
 
 
-def test_load_records_ignores_non_discovery_dirs():
+def test_load_records_covers_discovery_dir():
     pairs = _load_records(ROOT)
-    assert pairs == []
+    assert len(pairs) == 14
+    stages = {p.name.rsplit("-", 1)[-1].removesuffix(".yaml") for p, _ in pairs}
+    assert stages == {"activate", "retire"}

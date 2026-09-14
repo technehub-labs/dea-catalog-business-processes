@@ -36,6 +36,8 @@ KNOWN_TOP_LEVEL: frozenset[str] = frozenset({
     "classifications",
     "contexts",
     "contributions",
+    # Lifecycle process-discovery records (CR-BP-62 S17; populated by CR-BP-63)
+    "discovery",
     "docs",
     "entities",
     "schemas",

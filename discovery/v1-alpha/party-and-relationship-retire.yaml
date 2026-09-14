@@ -1,0 +1,316 @@
+# Lifecycle process-discovery record (CR-BP-62 section 17).
+# Exercise: CR-BP-63 (Activate/Retire boundary-stage discovery).
+# Context: PartyAndRelationship / Retire. Dispositions are discovery outcomes;
+# canonical admission remains governed (CR-BP-62 section 20).
+discovery:
+  id: dea:discovery-party-and-relationship-retire
+  ecf_context:
+    domain: PartyAndRelationship
+    lifecycle_stage: Retire
+  candidates:
+  - name: Transition Out of Service
+    proposed_identity:
+      verb: Transition
+      object: Party Relationship Out of Service
+      scope: enterprise
+    trigger: An approved retirement decision exists for the party relationship.
+    inputs: Active party relationship; retirement decision; dependency and impact analysis.
+    transformation: 'Move the party relationship from operational reliance toward controlled exit: withdrawal
+      planning, stakeholder transition, and removal from operational dependence.'
+    outcome: The party relationship is no longer operationally relied upon; residual obligations are identified
+      and routed.
+    boundary: Begins at the approved retirement decision; ends at confirmed removal from operational reliance.
+      Excludes post-exit obligation closure (Improve/Operate) and asset disposal execution.
+    actors: Retirement owner; service owner; affected stakeholders.
+    controls: Retirement approval; communication policy; data retention rules.
+    evidence:
+      sources:
+      - ITIL service portfolio management practice includes service retirement as governed lifecycle work
+      - eTOM (TM Forum GB921) lifecycle management covers service/resource withdrawal from operation
+      - 'Industry end-of-life practice: product and service EOL policies standardize withdrawal-from-service
+        work (notice, migration windows, final support)'
+      evidence_strength: authoritative
+    evaluation:
+      process_reality: 'Established: service/product retirement is governed, repeatable enterprise work.'
+      transformation: Clear state change from operationally relied-upon to exited.
+      trigger: Approved retirement decision; meaningful and observable.
+      outcome: Removal from operational reliance; distinguishable and auditable.
+      boundary: 'Strong: retirement decision before, post-exit closure after.'
+      semantic_identity: Verb (transition) + object (service object) + outcome (out of service) stand
+        without the ECF label (BP-LIFE-009).
+      cross_context_stability: Stable whether the object is a product, service, technology service or
+        relationship.
+      cross_domain_applicability: Broadest in service-bearing domains; recognizable elsewhere.
+      ecf_independence: Identity survives removal of the Retire label.
+      duplication: No existing canonical BP carries withdrawal-from-service semantics; checked against
+        all 126 BP records.
+      composition: 'L2: spans withdrawal planning, stakeholder transition and reliance removal.'
+      capability_distinction: Transformation work, not an ability.
+      governance_distinction: Governed work; not itself a policy or decision.
+      lifecycle_span: Primarily Retire; migration steps legitimately touch Improve/Build under lifecycle-spanning
+        rules.
+    scoring:
+      process_reality: 2
+      semantic_stability: 2
+      cross_domain_applicability: 1
+      boundary_clarity: 2
+      evidence_strength: 2
+      total: 8
+      rationale: 'Established and stable with authoritative evidence; thinner outside service-bearing
+        domains: record the pattern with the canonical home at ProductAndValue/Retire.'
+    disposition:
+      type: RECORD-PATTERN
+      related_contexts:
+      - ProductAndValue/Retire
+  - name: Decommission
+    proposed_identity:
+      verb: Decommission
+      object: Party Relationship
+      scope: enterprise
+    trigger: A retired party relationship is released for decommissioning.
+    inputs: Retired party relationship; decommissioning plan.
+    transformation: Take the party relationship out of commission and prepare it for disposal or recovery.
+    outcome: The party relationship is decommissioned.
+    boundary: Begins at release for decommissioning; ends at disposal or recovery readiness.
+    actors: Asset owner; engineering; safety and compliance functions.
+    controls: Safety and environmental regulation; disposal policy.
+    evidence:
+      sources:
+      - 'ISO 55000 asset management: decommissioning as a lifecycle activity (asset-context evidence)'
+      - eTOM resource lifecycle management
+      evidence_strength: moderate
+    evaluation:
+      process_reality: Established in asset contexts; thinner for non-asset objects.
+      transformation: Material where the object is asset-like; metaphorical otherwise.
+      trigger: Release for decommissioning; observable.
+      outcome: Decommissioned state; distinguishable and inspectable.
+      boundary: Workable only where the object is asset-like.
+      semantic_identity: Identity is an asset-context narrowing of Transition Out of Service.
+      cross_context_stability: Stable only in asset-like contexts.
+      cross_domain_applicability: Limited beyond asset-bearing domains.
+      ecf_independence: Recognizable but derivative here.
+      duplication: No existing BP duplicates decommissioning semantics.
+      composition: Composition favors the Transition Out of Service parent for non-asset objects.
+      capability_distinction: Transformation work, not an ability.
+      governance_distinction: Heavily regulated work; not itself a policy.
+      lifecycle_span: Primarily Retire; disposal execution may span into Operate under spanning rules.
+    scoring:
+      process_reality: 2
+      semantic_stability: 2
+      cross_domain_applicability: 1
+      boundary_clarity: 2
+      evidence_strength: 1
+      total: 7
+      rationale: 'Strong in asset contexts; as a general cross-domain candidate it is the asset-object
+        narrowing of the recorded pattern: record pattern with canonical home at EnablementAndOperations/Retire.'
+    disposition:
+      type: RECORD-PATTERN
+      related_contexts:
+      - EnablementAndOperations/Retire
+  - name: Migrate / Transfer
+    proposed_identity:
+      verb: Migrate
+      object: Party Relationship
+      scope: enterprise
+    trigger: Users, data or dependencies of a retiring party relationship must move to a successor.
+    inputs: Retiring party relationship; successor target; migration plan.
+    transformation: Move users, data and dependencies from the retiring party relationship to the successor.
+    outcome: Dependencies run on the successor; the retiring party relationship carries no live load.
+    boundary: Begins at migration start; ends at dependency cutover to the successor.
+    actors: Migration owner; successor owner; affected users.
+    controls: Migration windows; data-handling policy.
+    evidence:
+      sources:
+      - TOGAF migration planning (ADM Phases E/F) treats migration as governed transition work
+      - Industry migration practice (platform, data and customer migrations) is standardized and repeatable
+      evidence_strength: moderate
+    evaluation:
+      process_reality: Established and repeatable.
+      transformation: Dependency-location change; real.
+      trigger: Migration requirement from a retiring object; meaningful.
+      outcome: Successor carries the load; distinguishable.
+      boundary: Workable.
+      semantic_identity: Recognizable across contexts.
+      cross_context_stability: Stable transformation with highly variable implementation.
+      cross_domain_applicability: Broad, but the same candidate legitimately participates at Build and
+        Improve (platform migrations, restructurings), not only Retire.
+      ecf_independence: Independent of the Retire label.
+      duplication: No duplication; the question is stage span, not overlap.
+      composition: L2-scale work in large migrations; often an Activity set within retirement or improvement
+        processes.
+      capability_distinction: Transformation work.
+      governance_distinction: Not governance.
+      lifecycle_span: 'Lifecycle-spanning by nature (BP-LIFE-014): record as a pattern spanning Build/Improve/Retire
+        rather than duplicating per stage.'
+    scoring:
+      process_reality: 2
+      semantic_stability: 1
+      cross_domain_applicability: 2
+      boundary_clarity: 1
+      evidence_strength: 1
+      total: 7
+      rationale: 'Stable, cross-domain, lifecycle-spanning transformation with variable implementation:
+        record as a pattern; do not duplicate per stage.'
+    disposition:
+      type: RECORD-PATTERN
+      related_contexts: []
+  - name: Close Enterprise Relationship
+    proposed_identity:
+      verb: Close
+      object: Enterprise Relationship
+      scope: enterprise
+    trigger: A contract or relationship reaches termination, expiry or an approved exit decision.
+    inputs: Active relationship; termination terms; outstanding obligations register.
+    transformation: 'Wind down the relationship: terminate or let expire, settle outstanding obligations,
+      and close the accounts of the relationship.'
+    outcome: The relationship is formally closed; residual obligations are settled or routed.
+    boundary: Begins at termination/expiry trigger; ends at formal closure with obligations settled or
+      routed.
+    actors: Relationship owner; counterparty; legal and finance functions.
+    controls: Termination provisions; notice periods; settlement policy.
+    evidence:
+      sources:
+      - 'Contract administration practice: termination, expiry handling and close-out (final accounts,
+        releases, notices) are standardized across industries'
+      - 'Outsourcing and procurement practice: exit management and relationship closure are governed,
+        repeatable work'
+      evidence_strength: authoritative
+    evaluation:
+      process_reality: Established wherever contracts and relationships end.
+      transformation: Relationship-state change from active to closed; material and auditable.
+      trigger: Termination, expiry or approved exit; observable.
+      outcome: Formal closure with obligations settled or routed; distinguishable.
+      boundary: Strong in relationship contexts.
+      semantic_identity: 'Stands without the ECF label: relationship closure is named directly.'
+      cross_context_stability: Stable across customer, supplier, partner and employee relationships.
+      cross_domain_applicability: Home ground is PartyAndRelationship; recognizable kin in FinanceAndAccounting
+        (account closure).
+      ecf_independence: Independent.
+      duplication: No existing BP duplicates relationship-closure semantics.
+      composition: 'L2: spans notice, settlement and closure confirmation.'
+      capability_distinction: Transformation work.
+      governance_distinction: Contains legal acts but is closure work.
+      lifecycle_span: Primarily Retire.
+    scoring:
+      process_reality: 2
+      semantic_stability: 2
+      cross_domain_applicability: 1
+      boundary_clarity: 2
+      evidence_strength: 2
+      total: 9
+      rationale: Authoritative contract close-out evidence; canonical home at PartyAndRelationship/Retire.
+    disposition:
+      type: ADMIT-CANONICAL
+      canonical_process_ref: dea:process-close-enterprise-relationship (proposed; governed admission pending
+        per CR-BP-62 section 20)
+  - name: Recover / Reclaim
+    proposed_identity:
+      verb: Recover
+      object: Residual Value
+      scope: enterprise
+    trigger: A decommissioned or exited party relationship holds recoverable value.
+    inputs: Exited party relationship; recovery options.
+    transformation: Reclaim residual value (materials, licenses, deposits, capacity) from the exited object.
+    outcome: Recoverable value is reclaimed and accounted for.
+    boundary: Begins at recovery decision; ends at reclaimed value booked.
+    actors: Asset owner; finance; recovery vendors.
+    controls: Recovery policy; accounting rules.
+    evidence:
+      sources:
+      - Asset recovery and salvage practice (asset-context evidence)
+      evidence_strength: weak
+    evaluation:
+      process_reality: Real but situational work.
+      transformation: Value-location change; real but downstream of exit.
+      trigger: Recovery decision; situational.
+      outcome: Reclaimed value; distinguishable.
+      boundary: Nested inside exit work.
+      semantic_identity: Subordinate to Transition Out of Service / Decommission outcomes.
+      cross_context_stability: Variable by object class.
+      cross_domain_applicability: Concentrated in asset-bearing domains.
+      ecf_independence: Recognizable but derivative.
+      duplication: Overlaps the exit candidates' outcomes.
+      composition: Activity-scale within exit processes.
+      capability_distinction: Transformation work, wrong level.
+      governance_distinction: Not governance.
+      lifecycle_span: None independent.
+    scoring:
+      process_reality: 1
+      semantic_stability: 1
+      cross_domain_applicability: 0
+      boundary_clarity: 1
+      evidence_strength: 0
+      total: 3
+      rationale: 'Derivative recovery step: merge into the exit candidates as an outcome activity.'
+    disposition:
+      type: MERGE
+      related_contexts:
+      - ProductAndValue/Retire
+      - EnablementAndOperations/Retire
+      canonical_process_ref: dea:process-transition-out-of-service (proposed)
+  - name: Resolve Residual Obligations
+    proposed_identity:
+      verb: Resolve
+      object: Residual Obligations
+      scope: enterprise
+    trigger: An exited party relationship leaves obligations that outlive the exit (retention, warranty,
+      support tail, regulatory duties).
+    inputs: Residual obligations register; applicable policies and statutes.
+    transformation: Track, discharge or transfer obligations that survive the object's exit until each
+      is closed.
+    outcome: No unmanaged residual obligations remain.
+    boundary: Begins at exit completion; ends at final obligation closure.
+    actors: Obligation owner; legal; compliance.
+    controls: Retention policy; statutory duties; warranty terms.
+    evidence:
+      sources:
+      - Data retention and disposal obligations under privacy and records-management regimes (e.g. GDPR
+        storage-limitation principle) are universal post-exit work
+      - Warranty and support-tail administration in product practice
+      evidence_strength: moderate
+    evaluation:
+      process_reality: Established wherever exits occur.
+      transformation: Obligation-state change to closed; real but asynchronous and long-tailed.
+      trigger: Exit completion with residual register non-empty; meaningful.
+      outcome: All residuals closed; distinguishable.
+      boundary: Workable but temporally unbounded; governed by obligation terms.
+      semantic_identity: Recognizable across domains.
+      cross_context_stability: Stable transformation; highly variable obligation mix.
+      cross_domain_applicability: 'Broad: every domain''s exits leave residuals.'
+      ecf_independence: Independent of the Retire label.
+      duplication: No duplication of existing BPs.
+      composition: Long-tailed obligation tracking reads as a pattern feeding multiple domains rather
+        than one concrete L2 process.
+      capability_distinction: Transformation work.
+      governance_distinction: Adjacent to compliance governance but is discharge work.
+      lifecycle_span: Post-exit span legitimately reaches into Operate/Improve; handle via spanning rules.
+    scoring:
+      process_reality: 2
+      semantic_stability: 1
+      cross_domain_applicability: 2
+      boundary_clarity: 1
+      evidence_strength: 1
+      total: 7
+      rationale: 'Stable cross-domain closure work with variable implementation and unbounded tail: record
+        as a pattern.'
+    disposition:
+      type: RECORD-PATTERN
+      related_contexts: []
+  context_evaluation:
+    concerns_identified: true
+    candidates_considered: true
+    adjacent_contexts_reviewed: true
+    existing_processes_searched: true
+    lifecycle_spanning_considered: true
+    capability_distinctions_tested: true
+    pattern_candidates_considered: true
+    evidence_assessed: true
+    process_empty: false
+  rationale:
+    included: 'Evaluated 6 candidates for the PartyAndRelationship/Retire context against the BP-LIFE-001..015
+      battery. Canonical admission recommended for: Close Enterprise Relationship (governed admission
+      pending per CR-BP-62 section 20). Recorded as reusable patterns: Transition Out of Service, Decommission,
+      Migrate / Transfer, Resolve Residual Obligations.'
+    excluded: 'Excluded from canonical admission: merged as duplicate/terminal-phase semantics: Recover
+      / Reclaim.'
+    unresolved: 'Unresolved: .'

@@ -1,0 +1,319 @@
+# Lifecycle process-discovery record (CR-BP-62 section 17).
+# Exercise: CR-BP-63 (Activate/Retire boundary-stage discovery).
+# Context: ProductAndValue / Activate. Dispositions are discovery outcomes;
+# canonical admission remains governed (CR-BP-62 section 20).
+discovery:
+  id: dea:discovery-product-and-value-activate
+  ecf_context:
+    domain: ProductAndValue
+    lifecycle_stage: Activate
+  candidates:
+  - name: Transition to Service
+    proposed_identity:
+      verb: Transition
+      object: Product Or Service to Service
+      scope: enterprise
+    trigger: Approved product, service or value offering has met its readiness threshold and is authorized
+      for operational transition.
+    inputs: Validated and build-complete product, service or value offering; readiness evidence; operational
+      acceptance criteria.
+    transformation: Move the product or service from a prepared (built, validated) state into operational
+      service, with ownership, controls and operational readiness confirmed.
+    outcome: The product or service is accepted into operational service and relied upon operationally.
+    boundary: Begins at transition authorization after readiness validation; ends at formal acceptance
+      into operation. Excludes build completion (Build) and steady-state operation (Operate).
+    actors: Transition owner; receiving operational owner; acceptance authority.
+    controls: Transition authorization; acceptance criteria; operational readiness policy.
+    evidence:
+      sources:
+      - ITIL 4 service transition practices (deployment management, release management, service validation
+        and testing) establish transition-into-operation as repeatable enterprise work
+      - COBIT 2019 BAI07 (Managed IT Change Acceptance and Transitioning) establishes acceptance-into-operation
+        as a governed, repeatable transformation
+      - 'IT4IT Reference Architecture: the Requirement to Deploy value stream operationalizes transition
+        into the operating environment'
+      evidence_strength: authoritative
+    evaluation:
+      process_reality: 'Established: transition-into-operation is performed and governed in service-bearing
+        enterprises across industries (ITIL, COBIT).'
+      transformation: Clear state change from prepared/validated to operational; materially distinct from
+        build and from operation.
+      trigger: Transition authorization after readiness validation; meaningful and observable.
+      outcome: Acceptance into operational service; distinguishable and auditable.
+      boundary: 'Strong: bounded by readiness validation (before) and operational acceptance (after).'
+      semantic_identity: Verb (transition) + object (service-bound object) + outcome (accepted into operation)
+        stand without the ECF label (BP-LIFE-009).
+      cross_context_stability: The transformation remains recognizable whether the object is a product,
+        service, technology service or facility.
+      cross_domain_applicability: Broadest in service-bearing domains (ProductAndValue, EnablementAndOperations);
+        recognizable but thinner elsewhere.
+      ecf_independence: 'Identity survives removal of the Activate label: ''transition X to service''
+        names the transformation directly.'
+      duplication: No existing canonical BP carries transition-into-operation semantics; checked against
+        all 126 BP records.
+      composition: 'Sits at L2: too broad for an Activity (spans readiness, acceptance, handover), too
+        narrow for a Process Group.'
+      capability_distinction: Names work (a transformation), not an ability; not a capability restatement.
+      governance_distinction: Not a policy or approval; it is the governed work of transitioning.
+      lifecycle_span: Contributes primarily at Activate; handover participation touches Build/Operate
+        boundaries without duplicating them.
+    scoring:
+      process_reality: 2
+      semantic_stability: 2
+      cross_domain_applicability: 2
+      boundary_clarity: 2
+      evidence_strength: 2
+      total: 10
+      rationale: Established, stable, authoritative evidence; cross-domain applicability strongest in
+        service-bearing domains.
+    disposition:
+      type: ADMIT-CANONICAL
+      canonical_process_ref: dea:process-transition-to-service (proposed; governed admission pending per
+        CR-BP-62 section 20)
+  - name: Accept into Operation
+    proposed_identity:
+      verb: Accept
+      object: Product Or Service into Operation
+      scope: enterprise
+    trigger: A transitioned product or service is presented for operational acceptance.
+    inputs: Transitioned product or service; acceptance criteria; operational readiness evidence.
+    transformation: Evaluate the transitioned product or service against acceptance criteria and formally
+      accept it into operation.
+    outcome: Formal acceptance record; the product or service is operationally owned.
+    boundary: Begins at presentation for acceptance; ends at the acceptance decision.
+    actors: Acceptance authority; operational owner.
+    controls: Acceptance criteria; sign-off policy.
+    evidence:
+      sources:
+      - COBIT 2019 BAI07 acceptance-and-transitioning practices
+      - ITIL 4 service validation and testing practice
+      evidence_strength: moderate
+    evaluation:
+      process_reality: Established as the terminal step of transition work.
+      transformation: The acceptance act is real, but it is the outcome-producing terminal step of Transition
+        to Service rather than an independent transformation.
+      trigger: Presentation for acceptance; meaningful.
+      outcome: Formal acceptance; distinguishable.
+      boundary: Workable, but wholly inside the transition boundary.
+      semantic_identity: Identity is a narrowing of Transition to Service's terminal phase.
+      cross_context_stability: Stable wherever transition is stable.
+      cross_domain_applicability: Same profile as its parent candidate.
+      ecf_independence: Recognizable without the ECF label.
+      duplication: 'Duplication test (BP-LIFE-010) fails as a standalone: trigger, transformation and
+        outcome are a subset of Transition to Service.'
+      composition: Terminal-phase composition of the parent candidate.
+      capability_distinction: Process-oriented.
+      governance_distinction: Contains a decision, but the surrounding work is transitional.
+      lifecycle_span: No independent span.
+    scoring:
+      process_reality: 2
+      semantic_stability: 1
+      cross_domain_applicability: 1
+      boundary_clarity: 1
+      evidence_strength: 1
+      total: 6
+      rationale: 'Real work but not an independent identity: merges into Transition to Service as its
+        terminal phase.'
+    disposition:
+      type: MERGE
+      related_contexts:
+      - ProductAndValue/Activate
+      canonical_process_ref: dea:process-transition-to-service (proposed)
+  - name: Deploy / Cut Over
+    proposed_identity:
+      verb: Deploy
+      object: Product Or Service
+      scope: operating environment
+    trigger: A build-complete product or service is released for deployment.
+    inputs: Build-complete product or service; release package; deployment plan.
+    transformation: Install and activate the product or service in the target operating environment.
+    outcome: The product or service is present and functioning in the operating environment.
+    boundary: Begins at release for deployment; ends at confirmed presence in the environment.
+    actors: Deployment engineers; operations.
+    controls: Release policy; deployment windows; rollback plans.
+    evidence:
+      sources:
+      - ITIL 4 deployment management practice
+      - IT4IT Requirement to Deploy value stream
+      evidence_strength: moderate
+    evaluation:
+      process_reality: Established work, but as an execution activity within build/release processes.
+      transformation: Environment-presence change; real but technical.
+      trigger: Release for deployment; meaningful.
+      outcome: Presence in the environment; distinguishable.
+      boundary: Workable at execution level.
+      semantic_identity: Identifiable, but at the wrong composition level.
+      cross_context_stability: Stable as an activity pattern.
+      cross_domain_applicability: Concentrated in technology-heavy domains.
+      ecf_independence: Recognizable without the ECF label.
+      duplication: No duplication; the issue is composition, not overlap.
+      composition: 'Composition test (BP-LIFE-011) fails at L2: deploy/cutover is an Activity within build-and-release
+        Business Processes, lacking the trigger-to-outcome span of a canonical process.'
+      capability_distinction: Process-oriented work, wrong level.
+      governance_distinction: Not a governance construct.
+      lifecycle_span: Execution spans Build/Activate; handled by lifecycle-spanning rules rather than
+        duplication.
+    scoring:
+      process_reality: 2
+      semantic_stability: 1
+      cross_domain_applicability: 1
+      boundary_clarity: 1
+      evidence_strength: 1
+      total: 6
+      rationale: 'Real, repeatable work at the wrong composition level: reclassify as Activity within
+        build/release processes.'
+    disposition:
+      type: RECLASSIFY
+      related_contexts: []
+  - name: Mobilize Capability
+    proposed_identity:
+      verb: Mobilize
+      object: Capability
+      scope: enterprise
+    trigger: A capability is approved for operational use.
+    inputs: Approved capability definition; resourcing.
+    transformation: Assemble and ready the capability's elements for use.
+    outcome: The capability is available for operational use.
+    boundary: 'Unclear: readiness assembly blends into build and into operation.'
+    actors: Capability owner; resourcing functions.
+    controls: Resourcing policy.
+    evidence:
+      sources:
+      - General management usage of 'mobilization'; no authoritative process-model treatment identified
+      evidence_strength: weak
+    evaluation:
+      process_reality: Used colloquially; limited evidence as a defined, repeatable process.
+      transformation: Restates capability readiness rather than naming a distinct transformation.
+      trigger: Approval for use; weak as a distinct initiating condition.
+      outcome: Availability; overlaps with capability management outcomes.
+      boundary: Unclear.
+      semantic_identity: Identity leans on the capability noun, not on a transformation.
+      cross_context_stability: Variable usage.
+      cross_domain_applicability: 'Domain-independence test weak: usage shifts meaning per domain.'
+      ecf_independence: Weak without the lifecycle framing.
+      duplication: Overlaps capability management and resourcing processes.
+      composition: Reads as a Process Group or capability-management concern, not a single L2 process.
+      capability_distinction: 'Capability distinction test (BP-LIFE-012) fails: the candidate restates
+        a Business Capability (ability) rather than transformation work.'
+      governance_distinction: Not governance.
+      lifecycle_span: No defensible span.
+    scoring:
+      process_reality: 1
+      semantic_stability: 0
+      cross_domain_applicability: 0
+      boundary_clarity: 0
+      evidence_strength: 0
+      total: 1
+      rationale: 'Capability restatement with weak evidence and no defensible boundary: reclassify out
+        of process space.'
+    disposition:
+      type: RECLASSIFY
+      related_contexts: []
+  - name: Commence Service
+    proposed_identity:
+      verb: Commence
+      object: Service
+      scope: enterprise
+    trigger: A service is accepted and authorized to commence.
+    inputs: Accepted service; commencement authorization.
+    transformation: Begin operational delivery of the service.
+    outcome: The service is in operation.
+    boundary: Begins at commencement authorization; ends at first stable operation.
+    actors: Service owner; operations.
+    controls: Commencement authorization.
+    evidence:
+      sources:
+      - ITIL 4 service lifecycle practice language
+      evidence_strength: weak
+    evaluation:
+      process_reality: Real event, thin as an independent process.
+      transformation: A point-in-time commencement, not a sustained transformation.
+      trigger: Commencement authorization; meaningful but narrow.
+      outcome: In-operation state; identical to Transition to Service's outcome.
+      boundary: Point event rather than a bounded span.
+      semantic_identity: Subsumed by Transition to Service.
+      cross_context_stability: Stable but derivative.
+      cross_domain_applicability: Derivative of the parent candidate.
+      ecf_independence: Recognizable, but not independently needed.
+      duplication: 'Duplication test fails against Transition to Service: same trigger class, same outcome.'
+      composition: Terminal phase of the parent candidate.
+      capability_distinction: Process-oriented.
+      governance_distinction: Not governance.
+      lifecycle_span: None independent.
+    scoring:
+      process_reality: 1
+      semantic_stability: 1
+      cross_domain_applicability: 1
+      boundary_clarity: 0
+      evidence_strength: 0
+      total: 3
+      rationale: 'Duplicate semantics of Transition to Service: merge.'
+    disposition:
+      type: MERGE
+      related_contexts:
+      - ProductAndValue/Activate
+      canonical_process_ref: dea:process-transition-to-service (proposed)
+  - name: Transfer to Operational Ownership
+    proposed_identity:
+      verb: Transfer
+      object: Product Or Service to Operational Ownership
+      scope: enterprise
+    trigger: A transitioned product or service requires formal ownership transfer to the operating organization.
+    inputs: Transitioned product or service; ownership terms; accountability matrix.
+    transformation: Move formal ownership and accountability for the product or service from the building
+      organization to the operating organization.
+    outcome: Operational ownership of the product or service is formally held by the operating organization.
+    boundary: Entangled with commercial, legal and contractual closure; standalone boundary not yet defensible.
+    actors: Building owner; operating owner; governance authority.
+    controls: Accountability policy; transfer agreements.
+    evidence:
+      sources:
+      - 'Contract practice: assignment, novation and handover of operational responsibility'
+      - COBIT 2019 BAI07 accountability-transfer language
+      evidence_strength: moderate
+    evaluation:
+      process_reality: Established in outsourcing, handover and in-house transfer settings.
+      transformation: Ownership/accountability change; real and distinct in kind.
+      trigger: Ownership-transfer requirement; meaningful.
+      outcome: Formal ownership held operationally; distinguishable.
+      boundary: 'Not yet defensible: entangled with contractual closure and acceptance events.'
+      semantic_identity: Recognizable, but the boundary question dominates.
+      cross_context_stability: Stable as a concept across domains.
+      cross_domain_applicability: Potentially broad (any transferred object).
+      ecf_independence: Recognizable without the ECF label.
+      duplication: No existing BP duplicates it.
+      composition: Plausibly L2 once boundary resolves.
+      capability_distinction: Process-oriented.
+      governance_distinction: Contains governance acts but is itself transfer work.
+      lifecycle_span: Participates at Activate with Build/Operate adjacency.
+    scoring:
+      process_reality: 2
+      semantic_stability: 1
+      cross_domain_applicability: 2
+      boundary_clarity: 0
+      evidence_strength: 1
+      total: 6
+      rationale: 'Strong concept with unresolved boundary: defer pending boundary evidence rather than
+        admit with an unstable edge.'
+    disposition:
+      type: DEFER
+      related_contexts: []
+  context_evaluation:
+    concerns_identified: true
+    candidates_considered: true
+    adjacent_contexts_reviewed: true
+    existing_processes_searched: true
+    lifecycle_spanning_considered: true
+    capability_distinctions_tested: true
+    pattern_candidates_considered: true
+    evidence_assessed: true
+    process_empty: false
+  rationale:
+    included: 'Evaluated 6 candidates for the ProductAndValue/Activate context against the BP-LIFE-001..015
+      battery. Canonical admission recommended for: Transition to Service (governed admission pending
+      per CR-BP-62 section 20). '
+    excluded: 'Excluded from canonical admission: merged as duplicate/terminal-phase semantics: Accept
+      into Operation, Commence Service; reclassified out of L2 process space: Deploy / Cut Over, Mobilize
+      Capability.'
+    unresolved: 'Unresolved: deferred pending further evidence or boundary resolution: Transfer to Operational
+      Ownership.'
