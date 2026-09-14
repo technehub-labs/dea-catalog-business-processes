@@ -96,7 +96,7 @@ def _load_process_ids(catalog_root: Path) -> set[str]:
     if not entities_dir.exists():
         return set()
     ids: set[str] = set()
-    for path in entities_dir.glob("*.yaml"):
+    for path in entities_dir.rglob("*.yaml"):
         try:
             with path.open() as f:
                 data = yaml.safe_load(f) or {}
@@ -260,7 +260,7 @@ def run_checks(catalog_root: Path) -> tuple[list[str], list[dict]]:
         return errors, suggestions
 
     entries: list[dict] = []
-    for path in sorted(entities_dir.glob("*.yaml")):
+    for path in sorted(entities_dir.rglob("*.yaml")):
         try:
             with path.open() as f:
                 data = yaml.safe_load(f) or {}

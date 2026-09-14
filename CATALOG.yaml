@@ -4,7 +4,7 @@ catalog:
     candidates: 0
     canonical: 661
     entities: 662
-    open_change_requests: 69
+    open_change_requests: 70
     research_files: 290
     retired: 1
   cross_cutting:
@@ -5665,7 +5665,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:group-financial-model-conception
-    last_modified: '2026-09-08'
+    last_modified: '2026-09-14'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:group-financial-model-conception/dea:group-financial-model-conception.yaml
     research_count: 0
