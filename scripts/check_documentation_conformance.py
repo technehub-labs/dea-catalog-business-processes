@@ -192,6 +192,10 @@ ALLOWED_PROCESS_COMPOUNDS = [
     # classifications/process-types.yaml vocabulary names
     "Strategic Process", "Management Process", "Core Process",
     "Support Process", "Standardization Process",
+    # CR-BP-62 defined terms (sections 6.3-6.7, 10, 11, 15)
+    "Candidate Process", "Canonical Process", "Specialized Process",
+    "Process Pattern", "Process Absence", "Lifecycle-Spanning Process",
+    "Process Reality",
 ]
 
 

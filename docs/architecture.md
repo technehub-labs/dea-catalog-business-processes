@@ -120,6 +120,45 @@ metamodel-owned Task records (CR-BP-32 §12). L3 coverage is complete
 across all seven ECF domains: 501 canonical Activity records over 126
 Business Processes (CR-BP-42 pilot; CR-BP-43..57 tranches).
 
+## Lifecycle process discovery
+
+Discovery is evidence-based, not matrix-inferred (CR-BP-62). The ECF
+provides the contextual coordinate; the catalog determines process
+identity and structure. An ECF coordinate never automatically
+generates a Business Process, and a lifecycle stage's transitional
+semantics never disqualify one: Context Does Not Imply Process --
+and Context Does Not Exclude Process.
+
+```text
+ECF Context
+     |
+     v
+Process Discovery
+     |
+     v
+Candidate
+     |
+     v
+Evaluation (BP-LIFE-001..015)
+     |
+     v
+Disposition (eight outcomes; CR-BP-62 section 16)
+     |
+     v
+Canonical Process Architecture
+```
+
+Discovery exercises produce machine-readable records at
+`discovery/v1-alpha/<domain>-<stage>.yaml` (schema:
+`schemas/discovery/lifecycle-discovery.schema.json`). CI validates
+structural completeness only (DISC-001..008, advisory gate [19]);
+canonical admission remains governed (CR-BP-62 section 20). The
+Activate and Retire stages are register-deferred pending the
+CR-BP-63 discovery exercise, which evaluates the boundary-stage
+candidate hypotheses (Transition to Service, Decommission, and
+kin) per cell and replaces the uniform deferral rationale with
+documented per-cell outcomes (CR-BP-62 section 15).
+
 ## Structural composition
 
 Process decomposition uses the authoritative OpenDEA relationship
