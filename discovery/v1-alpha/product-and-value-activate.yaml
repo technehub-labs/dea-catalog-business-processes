@@ -66,6 +66,11 @@ discovery:
       total: 10
       rationale: Established, stable, authoritative evidence; cross-domain applicability strongest in
         service-bearing domains.
+    admission:
+      status: admitted
+      admitted_by: CR-BP-64
+      admitted_as: dea:process-transition-to-service
+      admitted_at: '2026-09-14'
     disposition:
       type: ADMIT-CANONICAL
       canonical_process_ref: dea:process-transition-to-service (proposed; governed admission pending per

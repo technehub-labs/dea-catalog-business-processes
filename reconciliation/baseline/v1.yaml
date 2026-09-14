@@ -174,6 +174,10 @@ records:
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-proposition-design/dea:group-proposition-design.yaml
     sha256: 11ee3ca73d22d617a8ddbe3d0e411e68e4fa105c01fda08af8fe0e08d9ee09c1
+  - id: dea:group-relationship-termination
+    type: ProcessGroup
+    path: entities/v1-alpha/dea:group-relationship-termination/dea:group-relationship-termination.yaml
+    sha256: a376adcffc7b2227f4f2847028dbc7698b99d2b2137e5b742ddc39726e37fd07
   - id: dea:group-service-transition-activation
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-service-transition-activation/dea:group-service-transition-activation.yaml
@@ -310,6 +314,10 @@ records:
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-pr-op.yaml
     sha256: 4a73edc167d57eac7002160afc3810896d8b8e97bf7a41f0c37179dbcbf84be0
+  - id: dea:pc-pr-retire
+    type: ProcessContext
+    path: contexts/v1-alpha/dea-pc-pr-retire.yaml
+    sha256: 5c49d38bfc28dbd201c1284bf05c52fbbbaa8b066ceb5f8908b374c220ab0a6a
   - id: dea:pc-pv-activate
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-pv-activate.yaml
@@ -410,6 +418,10 @@ records:
     type: Process
     path: entities/v1-alpha/dea:process-build-strategic-roadmap/dea:process-build-strategic-roadmap.yaml
     sha256: 65547b3c2f133b6aa112f691ad0c89f2da21c981370f64f38c389e378258973d
+  - id: dea:process-close-enterprise-relationship
+    type: Process
+    path: entities/v1-alpha/dea:process-close-enterprise-relationship/dea:process-close-enterprise-relationship.yaml
+    sha256: 7b1297fc91e4d2091195a6baae29fcf8d099b219492d9739b41df1dd50784b87
   - id: dea:process-codify-charters-and-policies
     type: Process
     path: entities/v1-alpha/dea:process-codify-charters-and-policies/dea:process-codify-charters-and-policies.yaml

@@ -1948,4 +1948,20 @@ dispositions:
       discovery/v1-alpha/enablement-and-operations-retire.yaml (CR-BP-63);
       CR-BP-66-eo-retire-admission.md.
     note: null
+  - record_id: dea:process-close-enterprise-relationship
+    disposition: RETAIN
+    changes: []
+    tranche: cr-bp-67
+    rationale: |
+      Discovery-driven admission (CR-BP-62 method; CR-BP-63 exercise;
+      CR-BP-67 admission). Close Enterprise Relationship scored 9/10
+      with an ADMIT-CANONICAL recommendation at PartyAndRelationship x
+      Retire on contract close-out and regulated offboarding evidence;
+      landed with its PC (dea:pc-pr-retire) and PG
+      (dea:group-relationship-termination). The register v2 escape
+      condition (regulated offboarding as a distinct group) is met.
+    evidence: |
+      discovery/v1-alpha/party-and-relationship-retire.yaml (CR-BP-63);
+      CR-BP-67-pr-retire-admission.md.
+    note: null
 

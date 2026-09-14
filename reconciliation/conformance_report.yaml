@@ -2,13 +2,13 @@ schema_version: 1
 report_at_run: CR-BP-16 S23
 report_at_source: scripts/build_conformance_report.py
 catalog_root: /home/hermes/dea-work/dea-catalog-processes
-total_records: 709
+total_records: 712
 conformance_levels:
   0: 0
   1: 0
   2: 0
   3: 0
-  4: 709
+  4: 712
 records:
 - id: dea:activity-address-performance-exceptions
   kind: Activity
@@ -5340,6 +5340,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:group-relationship-termination
+  kind: Entity
+  path: entities/v1-alpha/dea:group-relationship-termination/dea:group-relationship-termination.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:group-service-transition-activation
   kind: Entity
   path: entities/v1-alpha/dea:group-service-transition-activation/dea:group-service-transition-activation.yaml
@@ -5533,6 +5543,16 @@ records:
 - id: dea:process-build-strategic-roadmap
   kind: Entity
   path: entities/v1-alpha/dea:process-build-strategic-roadmap/dea:process-build-strategic-roadmap.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:process-close-enterprise-relationship
+  kind: Entity
+  path: entities/v1-alpha/dea:process-close-enterprise-relationship/dea:process-close-enterprise-relationship.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -6973,6 +6993,16 @@ records:
 - id: dea:pc-pr-op
   kind: Unknown
   path: contexts/v1-alpha/dea-pc-pr-op.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:pc-pr-retire
+  kind: Unknown
+  path: contexts/v1-alpha/dea-pc-pr-retire.yaml
   level: 4
   level_breakdown:
     L1_structural: true

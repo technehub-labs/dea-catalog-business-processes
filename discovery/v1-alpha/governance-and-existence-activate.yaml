@@ -354,6 +354,11 @@ discovery:
       total: 9
       rationale: Universal entry-into-force semantics with authoritative legal-regulatory evidence; cross-domain
         reach concentrated in governance instruments.
+    admission:
+      status: admitted
+      admitted_by: CR-BP-65
+      admitted_as: dea:process-bring-into-force
+      admitted_at: '2026-09-14'
     disposition:
       type: ADMIT-CANONICAL
       canonical_process_ref: dea:process-bring-into-force (proposed; governed admission pending per CR-BP-62

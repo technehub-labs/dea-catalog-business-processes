@@ -131,7 +131,7 @@ def test_evaluate_runs_all_rules_on_fixture(tmp_path):
     schema = json.loads(
         (ROOT / "schemas" / "discovery" / "lifecycle-discovery.schema.json").read_text()
     )
-    findings = evaluate([(tmp_path / "x.yaml", _fixture())], schema, set())
+    findings = evaluate([(tmp_path / "x.yaml", _fixture())], schema, (set(), set()))
     # The bare fixture fails DISC-001 against the real schema only if the
     # fixture drifts from the schema; it should pass all eight rules.
     assert findings == [], findings

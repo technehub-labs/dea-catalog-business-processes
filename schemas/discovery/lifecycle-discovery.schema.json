@@ -165,6 +165,17 @@
                   "rationale": {"type": "string", "minLength": 1}
                 }
               },
+              "admission": {
+                "type": "object",
+                "required": ["status", "admitted_by", "admitted_as", "admitted_at"],
+                "additionalProperties": false,
+                "properties": {
+                  "status": {"type": "string", "enum": ["admitted"]},
+                  "admitted_by": {"type": "string", "pattern": "^CR-BP-[0-9]+[a-z]?(\\.[0-9]+)?$"},
+                  "admitted_as": {"type": "string", "pattern": "^dea:process-[a-z0-9-]+$"},
+                  "admitted_at": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"}
+                }
+              },
               "disposition": {
                 "type": "object",
                 "required": ["type"],

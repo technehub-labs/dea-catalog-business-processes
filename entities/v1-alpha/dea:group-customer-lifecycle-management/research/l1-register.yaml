@@ -15,12 +15,12 @@ stages:
 - Improve
 - Retire
 ratification:
-  version: 7
-  cr: CR-BP-66
+  version: 8
+  cr: CR-BP-67
   ratified_at: '2026-09-14'
-  supersedes: version 6 (CR-BP-65, ratified 2026-09-14)
-  ratified_accepted: 39
-  backlog_deferred: 10
+  supersedes: version 7 (CR-BP-66, ratified 2026-09-14)
+  ratified_accepted: 40
+  backlog_deferred: 9
   v4_to_v5_note: 'Two ProductAndValue cells (Activate, Retire) reverse from
     backlog-deferred to ratified-accepted/landed on CR-BP-63 discovery evidence
     under the CR-BP-62 lifecycle process-discovery method. The remaining 12
@@ -41,6 +41,14 @@ ratification:
     standalone group" is met). The remaining 10 Activate/Retire cells keep
     their dispositions unchanged. Targeted disposition reversal, not a
     re-derivation; the v4 rederivation_basis still stands.'
+  v7_to_v8_note: 'One PartyAndRelationship cell (Retire) reverses from
+    backlog-deferred to ratified-accepted/landed on CR-BP-63 discovery evidence
+    (Close Enterprise Relationship, 9/10, contract close-out and regulated
+    offboarding practice; the v2 per-cell escape condition "until a regulated
+    offboarding requires a distinct group" is met). The remaining 9
+    Activate/Retire cells keep their dispositions unchanged with documented
+    CR-BP-63 outcomes. Targeted disposition reversal, not a re-derivation;
+    the v4 rederivation_basis still stands.'
   rederivation_basis: 'Re-derived against dea-metaframework framework/domain-grounding.md
     at ECF
 
@@ -735,14 +743,24 @@ register:
       evidence:
       - dea-metaframework/framework/domain-grounding.md §3.4
       - TM Forum eTOM Service Retirement
-      disposition: backlog-deferred
-      ratified_at: '2026-09-07'
-      ratified_by: CR-BP-19
-      deferral_reason: Activate and Retire are lifecycle transition stages, not stable
-        Process Group operating scopes (register-wide deferred_rationale). Relationship
-        termination is often handled within relationship operations; defer until a
-        regulated offboarding (e.g. GDPR-driven erasure) requires a distinct group.
-      audit_status: backlog-deferred
+      disposition: ratified-accepted
+      ratified_at: '2026-09-14'
+      ratified_by: CR-BP-67
+      admission: >-
+        Reversed from backlog-deferred on CR-BP-63 discovery evidence
+        (discovery/v1-alpha/party-and-relationship-retire.yaml): Close
+        Enterprise Relationship scored 9/10 with an ADMIT-CANONICAL
+        recommendation on contract close-out and regulated offboarding
+        practice. CR-BP-67 lands the PC (dea:pc-pr-retire), PG
+        (dea:group-relationship-termination, adopting the v2 l1 candidate
+        name) and BP (dea:process-close-enterprise-relationship). Prior
+        deferral (v2, per-cell note): relationship termination treated as
+        handled within relationship operations, deferred "until a regulated
+        offboarding (e.g. GDPR-driven erasure) requires a distinct group";
+        the discovery evaluation established close-out as exactly that
+        governed discipline (BP-LIFE-002/003/004/009). The v2 escape
+        condition is met.
+      audit_status: landed
   ProductAndValue:
     Conceive:
       process_context: dea:pc-pv-conceive

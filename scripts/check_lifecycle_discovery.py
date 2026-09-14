@@ -104,7 +104,13 @@ def _load_records(catalog_root: Path) -> list[tuple[Path, dict]]:
 
 def _load_bp_names(catalog_root: Path) -> set[str]:
     """Canonical BP record names (DISC-007 duplicate check)."""
+    return _load_bp_index(catalog_root)[0]
+
+
+def _load_bp_index(catalog_root: Path) -> tuple[set[str], set[str]]:
+    """Canonical BP record names and ids (DISC-007 checks)."""
     names: set[str] = set()
+    ids: set[str] = set()
     for path in sorted(catalog_root.glob("entities/v1-alpha/*/dea:process-*.yaml")):
         try:
             data = yaml.safe_load(path.read_text())
@@ -114,7 +120,10 @@ def _load_bp_names(catalog_root: Path) -> set[str]:
             name = data.get("name")
             if isinstance(name, str):
                 names.add(name.strip().lower())
-    return names
+            rid = data.get("id")
+            if isinstance(rid, str):
+                ids.add(rid.strip())
+    return names, ids
 
 
 def _check_disc_001(schema: dict):
@@ -195,17 +204,32 @@ def _check_disc_006(record: dict) -> str | None:
     return None
 
 
-def _check_disc_007(bp_names: set[str]):
+def _check_disc_007(bp_index: tuple[set[str], set[str]]):
+    bp_names, bp_ids = bp_index
+
     def fn(record: dict) -> str | None:
         for cand in _candidates(record):
             disp = (cand.get("disposition") or {}).get("type")
-            if disp == "ADMIT-CANONICAL":
-                name = (cand.get("name") or "").strip().lower()
-                if name in bp_names:
+            if disp != "ADMIT-CANONICAL":
+                continue
+            admission = cand.get("admission")
+            if admission and admission.get("status") == "admitted":
+                # Recommendation enacted (CR-BP-67 lifecycle extension):
+                # the duplicate-name face no longer applies; instead the
+                # admitted_as reference must resolve to a canonical BP.
+                admitted_as = (admission.get("admitted_as") or "").strip()
+                if admitted_as not in bp_ids:
                     return (
-                        f"candidate {cand.get('name')!r}: name duplicates an "
-                        f"existing canonical BP record (BP-LIFE-008/010 structural face)"
+                        f"candidate {cand.get('name')!r}: admission.admitted_as "
+                        f"{admitted_as!r} does not resolve to a canonical BP record"
                     )
+                continue
+            name = (cand.get("name") or "").strip().lower()
+            if name in bp_names:
+                return (
+                    f"candidate {cand.get('name')!r}: name duplicates an "
+                    f"existing canonical BP record (BP-LIFE-008/010 structural face)"
+                )
         return None
     return fn
 
@@ -228,7 +252,7 @@ def _check_disc_008(record: dict) -> str | None:
     return None
 
 
-def _rule_list(schema: dict, bp_names: set[str]):
+def _rule_list(schema: dict, bp_index: tuple[set[str], set[str]]):
     return (
         ("DISC-001", _check_disc_001(schema), "discovery record schema validity"),
         ("DISC-002", _check_disc_002, "canonical ECF coordinate vocabulary"),
@@ -236,16 +260,16 @@ def _rule_list(schema: dict, bp_names: set[str]):
         ("DISC-004", _check_disc_004, "disposition vocabulary"),
         ("DISC-005", _check_disc_005, "disposition-conditional rationale"),
         ("DISC-006", _check_disc_006, "ADMIT-CANONICAL requires evidence sources"),
-        ("DISC-007", _check_disc_007(bp_names), "ADMIT-CANONICAL duplicate name check"),
+        ("DISC-007", _check_disc_007(bp_index), "ADMIT-CANONICAL duplicate name / admission resolution check"),
         ("DISC-008", _check_disc_008, "canonicality scoring shape"),
     )
 
 
-def evaluate(pairs, schema: dict, bp_names: set[str]) -> list[dict]:
+def evaluate(pairs, schema: dict, bp_index: tuple[set[str], set[str]]) -> list[dict]:
     findings: list[dict] = []
     for path, record in pairs:
         rec_id = (record.get("discovery") or {}).get("id") or path.name
-        for rule_id, fn, _label in _rule_list(schema, bp_names):
+        for rule_id, fn, _label in _rule_list(schema, bp_index):
             diagnostic = fn(record)
             if diagnostic is not None:
                 findings.append({
@@ -278,9 +302,9 @@ def main(argv: list[str] | None = None) -> int:
         print(f"error: cannot load {SCHEMA_PATH}: {exc}", file=sys.stderr)
         return 2
     pairs = _load_records(catalog_root)
-    bp_names = _load_bp_names(catalog_root)
-    rules = _rule_list(schema, bp_names)
-    findings = evaluate(pairs, schema, bp_names)
+    bp_index = _load_bp_index(catalog_root)
+    rules = _rule_list(schema, bp_index)
+    findings = evaluate(pairs, schema, bp_index)
     verdict = _verdict(findings)
 
     if args.json:
@@ -356,8 +380,8 @@ def _self_test() -> int:
         "required": ["discovery"],
         "properties": {"discovery": {"type": "object", "required": ["id"]}},
     }
-    bp_names = {"operate quality control"}
-    rules = dict((rid, fn) for rid, fn, _ in _rule_list(schema, bp_names))
+    bp_index = ({"operate quality control"}, {"dea:process-operate-quality-control"})
+    rules = dict((rid, fn) for rid, fn, _ in _rule_list(schema, bp_index))
 
     cases: list[tuple[str, str, bool]] = []  # (rule, case-label, expect_finding)
 
@@ -383,6 +407,23 @@ def _self_test() -> int:
     bad_total["discovery"]["candidates"][0]["scoring"]["total"] = 11
     missing_dim = _fixture()
     del missing_dim["discovery"]["candidates"][0]["scoring"]["boundary_clarity"]
+    admitted_ok = _fixture(disposition="ADMIT-CANONICAL")
+    admitted_ok["discovery"]["candidates"][0]["disposition"]["canonical_process_ref"] = "dea:process-x"
+    admitted_ok["discovery"]["candidates"][0]["admission"] = {
+        "status": "admitted",
+        "admitted_by": "CR-BP-99",
+        "admitted_as": "dea:process-operate-quality-control",
+        "admitted_at": "2026-09-14",
+    }
+    admitted_ok["discovery"]["candidates"][0]["name"] = "Operate Quality Control"
+    admitted_dangling = _fixture(disposition="ADMIT-CANONICAL")
+    admitted_dangling["discovery"]["candidates"][0]["disposition"]["canonical_process_ref"] = "dea:process-x"
+    admitted_dangling["discovery"]["candidates"][0]["admission"] = {
+        "status": "admitted",
+        "admitted_by": "CR-BP-99",
+        "admitted_as": "dea:process-does-not-exist",
+        "admitted_at": "2026-09-14",
+    }
 
     checks = [
         ("DISC-001", good, False), ("DISC-001", bad_schema, True),
@@ -393,6 +434,7 @@ def _self_test() -> int:
         ("DISC-005", admit_no_ref, True), ("DISC-005", spec_no_ref, True),
         ("DISC-006", admit_no_evidence, True), ("DISC-006", admit_dup, False),
         ("DISC-007", admit_dup, True), ("DISC-007", good, False),
+        ("DISC-007", admitted_ok, False), ("DISC-007", admitted_dangling, True),
         ("DISC-008", bad_total, True), ("DISC-008", missing_dim, True),
         ("DISC-008", good, False),
     ]

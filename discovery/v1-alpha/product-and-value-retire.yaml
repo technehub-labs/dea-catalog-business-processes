@@ -57,6 +57,11 @@ discovery:
       evidence_strength: 2
       total: 10
       rationale: Established, stable, authoritative evidence; canonical home proposed at ProductAndValue/Retire.
+    admission:
+      status: admitted
+      admitted_by: CR-BP-64
+      admitted_as: dea:process-transition-out-of-service
+      admitted_at: '2026-09-14'
     disposition:
       type: ADMIT-CANONICAL
       canonical_process_ref: dea:process-transition-out-of-service (proposed; governed admission pending
