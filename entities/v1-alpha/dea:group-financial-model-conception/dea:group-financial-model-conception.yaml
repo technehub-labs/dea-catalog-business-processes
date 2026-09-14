@@ -57,22 +57,6 @@ composes:
       asserted_by: dea-team
       asserted_at: '2026-09-08'
   - source_id: dea:group-financial-model-conception
-    target_id: dea:process-frame-financial-policy-thesis
-    relationship_type: composes
-    direction: source-to-target
-    status: active
-    asserted_by: dea-team
-    rationale: |
-      The L2 process frames the financial-policy thesis used to
-      govern the finance model. Lands under CR-BP-21e (FinanceAndAccounting
-      landing tranche).
-    evidence: docs/examples/frame-financial-policy-thesis.md
-    provenance:
-      type: architecture-review
-      reference: CR-BP-21e
-      asserted_by: dea-team
-      asserted_at: '2026-09-08'
-  - source_id: dea:group-financial-model-conception
     target_id: dea:process-frame-physical-asset-approach
     relationship_type: composes
     direction: source-to-target
@@ -209,6 +193,18 @@ metadata:
         extends the 4 non-Conceive Process Groups and 5 FA
         Process Contexts; this change_history records the
         upstream group's composes-edge expansion.
+    - cr: CR-BP-58
+      date: '2026-09-14'
+      change: |
+        Removed the dangling composes edge to
+        dea:process-frame-financial-policy-thesis. The target never
+        existed: no canonical BP record, no register v2 entry
+        (CR-BP-19), no CR-BP-21e landing-table row, no evidence
+        document. The edge was born dangling at CR-BP-21e and
+        survived because the PG gate's entity scan was vacuous
+        (repaired under the same CR). PG identity and declared
+        semantics (definition, scope, coordinate) are unchanged,
+        so version remains 1.0.0 per SIV-004 (CR-BP-34d).
 
 links:
   - rel: change-request

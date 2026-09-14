@@ -97,7 +97,7 @@ records:
   - id: dea:group-financial-model-conception
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-financial-model-conception/dea:group-financial-model-conception.yaml
-    sha256: 18ad632dc1aa7e5340181c10ac1ef8e9155f25248eb33bdf9f1f36f3dd89c7ad
+    sha256: 9e21c510f682db84c336a976535ff5d0c14a492c984671cfabf8a162cb75e208
   - id: dea:group-financial-operate
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-financial-operate/dea:group-financial-operate.yaml
