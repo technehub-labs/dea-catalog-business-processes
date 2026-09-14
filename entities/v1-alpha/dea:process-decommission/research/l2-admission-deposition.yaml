@@ -1,0 +1,53 @@
+# L2 admission deposition: dea:process-decommission
+# CR-BP-66, 2026-09-14. Population-slice pattern: deposition first,
+# canonical record second. The substantive evaluation lives in the
+# CR-BP-63 discovery record; this deposition cites it and records
+# the admission decision.
+
+deposition:
+  subject: dea:process-decommission
+  cr: CR-BP-66
+  date: '2026-09-14'
+  discovery_record: discovery/v1-alpha/enablement-and-operations-retire.yaml
+  discovery_outcome:
+    candidate: Decommission
+    score: 9/10
+    disposition: ADMIT-CANONICAL (recommended; governed admission
+      pending per CR-BP-62 section 20)
+  evidence_base:
+    - "ISO 55000 asset management: asset end-of-life, decommissioning and
+      disposal are normative lifecycle activities"
+    - "APQC and eTOM: asset disposition and resource retirement are
+      stable, industry-neutral process identities"
+    - "Industry practice: data center, facility and fleet decommissioning
+      disciplines with safety and data-sanitization evidence"
+  admission_decision:
+    decision: admit
+    admitted_as: dea:process-decommission
+    process_context: dea:pc-oe-retire
+    process_group: dea:group-operations-and-asset-decommissioning
+    rationale: |
+      The discovery record establishes process reality, transformation,
+      trigger, outcome, boundary, semantic identity, cross-context
+      stability and non-duplication (BP-LIFE-001..015) with
+      authoritative evidence. The register v2 per-cell note
+      (decommissioning as capability lifecycle management) does not
+      survive the ISO 55000 / eTOM evidence: decommissioning is a
+      governed end-of-life discipline with its own trigger,
+      transformation and outcome, distinct from capability lifecycle
+      management. This tranche enacts the recommendation: the register
+      cell flips to ratified-accepted / landed and the canonical PC, PG
+      and BP records land together.
+    naming_note: >-
+      The admitted record name is refined at admission to satisfy the
+      BP-ARC-ID-001 identity contract (name = verb + object): the
+      discovery candidate name (Decommission) is retained in the
+      discovery record; the canonical record name and identity object
+      carry the full form (Decommission Enterprise Asset). The id is
+      unchanged from the discovery proposal.
+  follow_ons:
+    - L3 decomposition of this Business Process under the CR-BP-32
+      pattern (4 Activities + deposition), to be scheduled as an L3
+      tranche slice.
+    - The final discovery-recommended canonical admission (P&R Retire,
+      Close Enterprise Relationship) lands as its own slice.

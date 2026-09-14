@@ -271,7 +271,7 @@ def check_admission(path: Path, root: Path,
         # the CR-BP-62/63 lifecycle discovery programme: each admission
         # tranche registers its own CR number here as it lands.
         _ADMISSION_CR_RE = re.compile(
-            r"^(?:CR-BP-13[a-z]?|CR-BP-19|CR-BP-20|CR-BP-21[a-z]?|CR-BP-03C|CR-BP-64|CR-BP-65)(?:\.\d+)*$"
+            r"^(?:CR-BP-13[a-z]?|CR-BP-19|CR-BP-20|CR-BP-21[a-z]?|CR-BP-03C|CR-BP-64|CR-BP-65|CR-BP-66)(?:\.\d+)*$"
         )
         has_admission = any(
             isinstance(e, dict) and _ADMISSION_CR_RE.match(

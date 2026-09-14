@@ -126,6 +126,10 @@ records:
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-governance-system-design/dea:group-governance-system-design.yaml
     sha256: 0de88acc7aa2b7d7d371b60d14fe167462ce7b3e669400dfc449cbd961135300
+  - id: dea:group-operations-and-asset-decommissioning
+    type: ProcessGroup
+    path: entities/v1-alpha/dea:group-operations-and-asset-decommissioning/dea:group-operations-and-asset-decommissioning.yaml
+    sha256: 7e3b52dbcd2566fc93150e38c7cfdcada2a7e6142a3b924dc933c48036f86463
   - id: dea:group-operations-and-enablement-build
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-operations-and-enablement-build/dea:group-operations-and-enablement-build.yaml
@@ -282,6 +286,10 @@ records:
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-oe-operate.yaml
     sha256: f79ee8e3b9c57d40008ffee4e5b39cfe0a7a98438ff76bf4ed6030b944391a58
+  - id: dea:pc-oe-retire
+    type: ProcessContext
+    path: contexts/v1-alpha/dea-pc-oe-retire.yaml
+    sha256: b28ef84281c80b92de9bf3ef9239c1928b941528a34ebe1aef25ea97e7abc739
   - id: dea:pc-pr-b
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-pr-b.yaml
@@ -474,6 +482,10 @@ records:
     type: Process
     path: entities/v1-alpha/dea:process-customer-strategy-conception/dea:process-customer-strategy-conception.yaml
     sha256: 712f2172cf72f30a15a6453f2e2a0678499d0de1f503f1b3c5e0daf4a754498a
+  - id: dea:process-decommission
+    type: Process
+    path: entities/v1-alpha/dea:process-decommission/dea:process-decommission.yaml
+    sha256: 3ff59e6f90e83b5ba4f5364f861e4238ed7018b0c46f263521a70c7066eac1e1
   - id: dea:process-define-enterprise-purpose-and-ambition
     type: Process
     path: entities/v1-alpha/dea:process-define-enterprise-purpose-and-ambition/dea:process-define-enterprise-purpose-and-ambition.yaml

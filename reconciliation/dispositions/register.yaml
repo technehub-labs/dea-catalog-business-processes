@@ -1931,4 +1931,21 @@ dispositions:
       discovery/v1-alpha/governance-and-existence-activate.yaml (CR-BP-63);
       CR-BP-65-ge-activate-admission.md.
     note: null
+  - record_id: dea:process-decommission
+    disposition: RETAIN
+    changes: []
+    tranche: cr-bp-66
+    rationale: |
+      Discovery-driven admission (CR-BP-62 method; CR-BP-63 exercise;
+      CR-BP-66 admission). Decommission scored 9/10 with an
+      ADMIT-CANONICAL recommendation at EnablementAndOperations x
+      Retire on ISO 55000 asset end-of-life evidence; landed with its
+      PC (dea:pc-oe-retire) and PG
+      (dea:group-operations-and-asset-decommissioning). The register
+      v2 escape condition (regulated decommission as a standalone
+      group) is met.
+    evidence: |
+      discovery/v1-alpha/enablement-and-operations-retire.yaml (CR-BP-63);
+      CR-BP-66-eo-retire-admission.md.
+    note: null
 

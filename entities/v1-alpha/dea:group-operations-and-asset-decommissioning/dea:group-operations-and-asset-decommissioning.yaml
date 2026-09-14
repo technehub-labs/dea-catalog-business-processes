@@ -1,0 +1,114 @@
+id: dea:group-operations-and-asset-decommissioning
+type: ProcessGroup
+version: 1.0.0
+
+name: Operations and Asset Decommissioning
+
+# Normative definition (PG-006 / MECE).
+definition: |
+  The bounded Process Group that organises the Business Process
+  responsibilities of withdrawing and retiring operational assets in
+  the EnablementAndOperations x Retire context (retirement planning,
+  isolation and withdrawal, decommissioning and disposal, residual
+  resolution).
+
+# Process Context reference (PG-003 enforces resolution).
+process_context: dea:pc-oe-retire
+
+# Scope (MECE boundary; PG-006 depends on excludes).
+scope:
+  includes:
+    - Retirement planning and approval
+    - Isolation and withdrawal from service
+    - Decommissioning and disposal (including data sanitization)
+    - Residual value and obligation resolution
+  excludes:
+    - Steady-state operation and maintenance (Operate)
+    - Asset improvement and upgrade (Improve)
+    - Product and service withdrawal (ProductAndValue x Retire)
+
+# Intended enterprise outcomes.
+outcomes:
+  - Assets are withdrawn, decommissioned and disposed of under approved retirement plans with residual obligations resolved.
+
+# Canonical containment (PG-004 / PG-005 / PG-006 enforce).
+composes:
+  - source_id: dea:group-operations-and-asset-decommissioning
+    target_id: dea:process-decommission
+    relationship_type: composes
+    direction: source-to-target
+    status: active
+    asserted_by: dea-team
+    rationale: |
+      The L2 process belongs to this cell per the CR-BP-63 discovery
+      outcome (ADMIT-CANONICAL recommendation) landed by CR-BP-66.
+    provenance:
+      type: architecture-review
+      reference: CR-BP-66
+      asserted_by: dea-team
+      asserted_at: '2026-09-14'
+
+# Process Group kind (PG-007 enforces controlled vocabulary).
+process_group_kind: functional
+
+# Discovery / governance status (mirrors register values).
+status: accepted
+
+# Catalog entry lifecycle (PG-008 enforces).
+lifecycle_status: candidate
+
+# ECF Conformance Gate (CR-ECF-CG-001..004).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: '1.0.0'
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+    - kind: coordinate
+      domain: EnablementAndOperations
+      stage: Retire
+      identifier: ecf:enablementAndOperations.retire
+
+# Evidence (CR-BP-11 register strength scale E0..E5).
+evidence:
+  - source: CR-BP-63 lifecycle discovery exercise
+    claim: |
+      This Process Group's coordinate was evaluated by the CR-BP-63
+      discovery record
+      discovery/v1-alpha/enablement-and-operations-retire.yaml: the
+      cell's canonical candidate Decommission scored 9/10 with an
+      ADMIT-CANONICAL recommendation on ISO 55000 asset end-of-life,
+      eTOM and industry retirement practice, overturning (with
+      evidence) the register v2 per-cell deferral note.
+    strength: E4
+    reference: discovery/v1-alpha/enablement-and-operations-retire.yaml
+  - source: CR-BP-66 admission tranche
+    claim: |
+      CR-BP-66 lands this Process Group as the L1 home of the
+      discovery-admitted Business Process and flips the register cell
+      to ratified-accepted / landed.
+    strength: E4
+    reference: change-requests/CR-BP-66-eo-retire-admission.md
+
+# Metadata (PG-006 cross-context overlap exception path lives here).
+metadata:
+  established_by: CR-BP-66
+  established_at: '2026-09-14'
+  cross_context_overlap: []
+  change_history:
+    - cr: CR-BP-66
+      date: '2026-09-14'
+      change: |
+        Initial Process Group record; the third L1 group at an
+        Activate/Retire coordinate (the first at a Retire coordinate
+        outside ProductAndValue), landed from the CR-BP-63
+        evidence-backed discovery outcome under the CR-BP-62 method.
+
+links:
+  - rel: change-request
+    href: change-requests/CR-BP-66-eo-retire-admission.md
+  - rel: discovery-record
+    href: discovery/v1-alpha/enablement-and-operations-retire.yaml
+  - rel: research-register
+    href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

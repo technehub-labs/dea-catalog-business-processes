@@ -1,0 +1,74 @@
+id: dea:process-decommission
+name: Decommission Enterprise Asset
+type: Process
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+process_intent: transform
+process_type: core
+process_specialization: []
+description: 'Withdraw and retire an operational asset (technology or
+  physical): plan and approve the retirement, isolate and withdraw the asset
+  from service, decommission and dispose of it, and resolve its residual
+  value, data and obligations, within the dea:pc-oe-retire Cell Charter. See
+  trigger and outcome for the bounded work this process owns; see
+  identity.outcome_statement for the testable outcome the process produces.
+  '
+trigger: 'An operational asset reaches end of life, is superseded, or is
+  approved for retirement.
+  '
+outcome: 'The asset is withdrawn from operation, decommissioned and disposed
+  of through executed retirement and disposal routes, with residual value,
+  data and obligations resolved and recorded.
+  '
+identity:
+  verb: Decommission
+  object: Enterprise Asset
+  scope: (all enterprise segments)
+  outcome_statement: 'The asset is out of service and disposed of through
+    executed retirement routes, with residual value, data and obligations
+    resolved and recorded.
+    '
+  evidence_links:
+  - type: standard
+    ref: https://www.iso.org/iso-55001-asset-management.html
+  - type: standard
+    ref: https://www.tmforum.org/
+  - type: standard
+    ref: https://www.apqc.org/
+relationships:
+- source_id: dea:process-decommission
+  relationship_type: serves
+  target_id: ecf:enablementAndOperations.retire
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: EnablementAndOperations
+    stage: Retire
+    identifier: ecf:enablementAndOperations.retire
+metadata:
+  established_by: CR-BP-66
+  established_at: '2026-09-14'
+  change_history:
+  - cr: CR-BP-66
+    date: '2026-09-14'
+    change: |
+      Initial L2 Process entry; the first canonical Business Process
+      admitted at an EnablementAndOperations Retire coordinate, from
+      the CR-BP-63 discovery outcome (9/10, ADMIT-CANONICAL
+      recommendation) under the CR-BP-62 method. Admission is governed:
+      the discovery record recommends, this tranche admits.
+links:
+- rel: change-request
+  href: change-requests/CR-BP-66-eo-retire-admission.md
+- rel: discovery-record
+  href: discovery/v1-alpha/enablement-and-operations-retire.yaml
+- rel: process-context
+  href: contexts/v1-alpha/dea-pc-oe-retire.yaml
+context:
+- ref: dea:pc-oe-retire
