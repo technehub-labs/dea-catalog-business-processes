@@ -2,14 +2,34 @@ schema_version: 1
 report_at_run: CR-BP-16 S23
 report_at_source: scripts/build_conformance_report.py
 catalog_root: /home/hermes/dea-work/dea-catalog-processes
-total_records: 661
+total_records: 697
 conformance_levels:
   0: 0
   1: 0
   2: 0
   3: 0
-  4: 661
+  4: 697
 records:
+- id: dea:activity-address-performance-exceptions
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-address-performance-exceptions/dea:activity-address-performance-exceptions.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-administer-benefits
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-administer-benefits/dea:activity-administer-benefits.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-administer-catalogue-pricing
   kind: Activity
   path: entities/v1-alpha/dea:activity-administer-catalogue-pricing/dea:activity-administer-catalogue-pricing.yaml
@@ -320,6 +340,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-assess-agent-alignment
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-assess-agent-alignment/dea:activity-assess-agent-alignment.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-assess-churn-risk
   kind: Activity
   path: entities/v1-alpha/dea:activity-assess-churn-risk/dea:activity-assess-churn-risk.yaml
@@ -443,6 +473,16 @@ records:
 - id: dea:activity-assign-target-ownership
   kind: Activity
   path: entities/v1-alpha/dea:activity-assign-target-ownership/dea:activity-assign-target-ownership.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-baseline-population-competencies
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-baseline-population-competencies/dea:activity-baseline-population-competencies.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -620,6 +660,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-bound-reorganization-scope
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-bound-reorganization-scope/dea:activity-bound-reorganization-scope.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-bound-reporting-spans
   kind: Activity
   path: entities/v1-alpha/dea:activity-bound-reporting-spans/dea:activity-bound-reporting-spans.yaml
@@ -720,6 +770,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-capture-time-and-attendance
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-capture-time-and-attendance/dea:activity-capture-time-and-attendance.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-certify-line-for-production
   kind: Activity
   path: entities/v1-alpha/dea:activity-certify-line-for-production/dea:activity-certify-line-for-production.yaml
@@ -813,6 +873,16 @@ records:
 - id: dea:activity-collect-customer-feedback
   kind: Activity
   path: entities/v1-alpha/dea:activity-collect-customer-feedback/dea:activity-collect-customer-feedback.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-collect-engagement-signals
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-collect-engagement-signals/dea:activity-collect-engagement-signals.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -980,6 +1050,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-commit-engagement-review-findings
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-commit-engagement-review-findings/dea:activity-commit-engagement-review-findings.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-commit-enhancements
   kind: Activity
   path: entities/v1-alpha/dea:activity-commit-enhancements/dea:activity-commit-enhancements.yaml
@@ -1023,6 +1103,16 @@ records:
 - id: dea:activity-commit-framework-improvements
   kind: Activity
   path: entities/v1-alpha/dea:activity-commit-framework-improvements/dea:activity-commit-framework-improvements.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-commit-gap-priorities
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-commit-gap-priorities/dea:activity-commit-gap-priorities.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -1490,6 +1580,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-compute-cycle-payroll
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-compute-cycle-payroll/dea:activity-compute-cycle-payroll.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-compute-withholdings
   kind: Activity
   path: entities/v1-alpha/dea:activity-compute-withholdings/dea:activity-compute-withholdings.yaml
@@ -1783,6 +1883,16 @@ records:
 - id: dea:activity-deliver-improvement-projects
   kind: Activity
   path: entities/v1-alpha/dea:activity-deliver-improvement-projects/dea:activity-deliver-improvement-projects.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-deliver-learning-sessions
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-deliver-learning-sessions/dea:activity-deliver-learning-sessions.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -2420,6 +2530,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-evaluate-programme-effectiveness
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-evaluate-programme-effectiveness/dea:activity-evaluate-programme-effectiveness.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-evaluate-strategy-effectiveness
   kind: Activity
   path: entities/v1-alpha/dea:activity-evaluate-strategy-effectiveness/dea:activity-evaluate-strategy-effectiveness.yaml
@@ -2433,6 +2553,26 @@ records:
 - id: dea:activity-execute-compliance-audits
   kind: Activity
   path: entities/v1-alpha/dea:activity-execute-compliance-audits/dea:activity-execute-compliance-audits.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-execute-development-actions
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-execute-development-actions/dea:activity-execute-development-actions.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-execute-disbursements
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-execute-disbursements/dea:activity-execute-disbursements.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -2620,9 +2760,49 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-execute-structure-transition
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-execute-structure-transition/dea:activity-execute-structure-transition.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-facilitate-cross-team-interactions
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-facilitate-cross-team-interactions/dea:activity-facilitate-cross-team-interactions.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-facilitate-governance-decisions
   kind: Activity
   path: entities/v1-alpha/dea:activity-facilitate-governance-decisions/dea:activity-facilitate-governance-decisions.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-feed-payroll-time-data
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-feed-payroll-time-data/dea:activity-feed-payroll-time-data.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-file-statutory-returns
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-file-statutory-returns/dea:activity-file-statutory-returns.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -2753,6 +2933,16 @@ records:
 - id: dea:activity-formulate-effectiveness-recommendations
   kind: Activity
   path: entities/v1-alpha/dea:activity-formulate-effectiveness-recommendations/dea:activity-formulate-effectiveness-recommendations.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-formulate-engagement-findings
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-formulate-engagement-findings/dea:activity-formulate-engagement-findings.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -2920,6 +3110,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-gather-development-drivers
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-gather-development-drivers/dea:activity-gather-development-drivers.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-gather-objective-performance-evidence
   kind: Activity
   path: entities/v1-alpha/dea:activity-gather-objective-performance-evidence/dea:activity-gather-objective-performance-evidence.yaml
@@ -2963,6 +3163,16 @@ records:
 - id: dea:activity-handover-facilities-to-operations
   kind: Activity
   path: entities/v1-alpha/dea:activity-handover-facilities-to-operations/dea:activity-handover-facilities-to-operations.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-identify-capability-gaps
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-identify-capability-gaps/dea:activity-identify-capability-gaps.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -3213,6 +3423,16 @@ records:
 - id: dea:activity-maintain-governance-machinery
   kind: Activity
   path: entities/v1-alpha/dea:activity-maintain-governance-machinery/dea:activity-maintain-governance-machinery.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-maintain-interaction-norms
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-maintain-interaction-norms/dea:activity-maintain-interaction-norms.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -3490,6 +3710,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-monitor-agent-performance
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-monitor-agent-performance/dea:activity-monitor-agent-performance.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-monitor-cash-positions
   kind: Activity
   path: entities/v1-alpha/dea:activity-monitor-cash-positions/dea:activity-monitor-cash-positions.yaml
@@ -3600,6 +3830,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-plan-agent-development
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-plan-agent-development/dea:activity-plan-agent-development.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-plan-compliance-audits
   kind: Activity
   path: entities/v1-alpha/dea:activity-plan-compliance-audits/dea:activity-plan-compliance-audits.yaml
@@ -3700,6 +3940,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-prioritize-capability-gaps
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-prioritize-capability-gaps/dea:activity-prioritize-capability-gaps.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-process-journal-entries
   kind: Activity
   path: entities/v1-alpha/dea:activity-process-journal-entries/dea:activity-process-journal-entries.yaml
@@ -3780,6 +4030,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-provision-collaboration-workspaces
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-provision-collaboration-workspaces/dea:activity-provision-collaboration-workspaces.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-provision-warehouse-capacity
   kind: Activity
   path: entities/v1-alpha/dea:activity-provision-warehouse-capacity/dea:activity-provision-warehouse-capacity.yaml
@@ -3830,6 +4090,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-record-accountability-handovers
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-record-accountability-handovers/dea:activity-record-accountability-handovers.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-record-asset-availability
   kind: Activity
   path: entities/v1-alpha/dea:activity-record-asset-availability/dea:activity-record-asset-availability.yaml
@@ -3873,6 +4143,16 @@ records:
 - id: dea:activity-record-production-output
   kind: Activity
   path: entities/v1-alpha/dea:activity-record-production-output/dea:activity-record-production-output.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-record-programme-completion
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-record-programme-completion/dea:activity-record-programme-completion.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -3990,6 +4270,26 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-resolve-attendance-exceptions
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-resolve-attendance-exceptions/dea:activity-resolve-attendance-exceptions.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-resolve-collaboration-frictions
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-resolve-collaboration-frictions/dea:activity-resolve-collaboration-frictions.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-resolve-logistics-exceptions
   kind: Activity
   path: entities/v1-alpha/dea:activity-resolve-logistics-exceptions/dea:activity-resolve-logistics-exceptions.yaml
@@ -4013,6 +4313,26 @@ records:
 - id: dea:activity-respond-to-platform-incidents
   kind: Activity
   path: entities/v1-alpha/dea:activity-respond-to-platform-incidents/dea:activity-respond-to-platform-incidents.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-review-agent-performance-cycles
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-review-agent-performance-cycles/dea:activity-review-agent-performance-cycles.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-review-development-outcomes
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-review-development-outcomes/dea:activity-review-development-outcomes.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -4143,6 +4463,16 @@ records:
 - id: dea:activity-scan-market-and-segments
   kind: Activity
   path: entities/v1-alpha/dea:activity-scan-market-and-segments/dea:activity-scan-market-and-segments.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-schedule-development-programmes
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-schedule-development-programmes/dea:activity-schedule-development-programmes.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -4310,6 +4640,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-sequence-structure-transition
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-sequence-structure-transition/dea:activity-sequence-structure-transition.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-set-experience-quality-criteria
   kind: Activity
   path: entities/v1-alpha/dea:activity-set-experience-quality-criteria/dea:activity-set-experience-quality-criteria.yaml
@@ -4323,6 +4663,16 @@ records:
 - id: dea:activity-set-launch-pricing
   kind: Activity
   path: entities/v1-alpha/dea:activity-set-launch-pricing/dea:activity-set-launch-pricing.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-set-performance-expectations
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-set-performance-expectations/dea:activity-set-performance-expectations.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -4523,6 +4873,16 @@ records:
 - id: dea:activity-update-policy-standards
   kind: Activity
   path: entities/v1-alpha/dea:activity-update-policy-standards/dea:activity-update-policy-standards.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-validate-attendance-records
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-validate-attendance-records/dea:activity-validate-attendance-records.yaml
   level: 4
   level_breakdown:
     L1_structural: true

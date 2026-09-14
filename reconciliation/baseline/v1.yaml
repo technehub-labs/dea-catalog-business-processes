@@ -397,7 +397,7 @@ records:
   - id: dea:process-conduct-capability-gap-analysis
     type: Process
     path: entities/v1-alpha/dea:process-conduct-capability-gap-analysis/dea:process-conduct-capability-gap-analysis.yaml
-    sha256: 4098a973bdcbaa953a902c19bb8b5f084c104c73a819a597efe57e0892d9d12a
+    sha256: 4232a3760cb2cdbb30ca940545b5a076fc2455aef78cf0894a2c0d1b1a7da9a0
   - id: dea:process-conduct-cost-optimization-review
     type: Process
     path: entities/v1-alpha/dea:process-conduct-cost-optimization-review/dea:process-conduct-cost-optimization-review.yaml
@@ -405,7 +405,7 @@ records:
   - id: dea:process-conduct-engagement-and-alignment-review
     type: Process
     path: entities/v1-alpha/dea:process-conduct-engagement-and-alignment-review/dea:process-conduct-engagement-and-alignment-review.yaml
-    sha256: 2d22d9deceedef3efe53ed6e1871de0dadb90e4e307ed811f117f03e7cc9efdc
+    sha256: 70ce12270a2f9e12feb0f3542b855bc61d4517dc8baf2634bed18246c0ad4f88
   - id: dea:process-conduct-lean-six-sigma-programme
     type: Process
     path: entities/v1-alpha/dea:process-conduct-lean-six-sigma-programme/dea:process-conduct-lean-six-sigma-programme.yaml
@@ -425,7 +425,7 @@ records:
   - id: dea:process-coordinate-collaboration
     type: Process
     path: entities/v1-alpha/dea:process-coordinate-collaboration/dea:process-coordinate-collaboration.yaml
-    sha256: f70391a27eae6af0a60bba336e9a2b780b447bb060f78271b5e999ee8a418360
+    sha256: 6bb87613985a7619f86ea0bf34b0fc16c7af1a0db501d91de22e340ac9f3c8f7
   - id: dea:process-customer-channel-and-acquisition-build
     type: Process
     path: entities/v1-alpha/dea:process-customer-channel-and-acquisition-build/dea:process-customer-channel-and-acquisition-build.yaml
@@ -549,7 +549,7 @@ records:
   - id: dea:process-develop-agents-and-organization
     type: Process
     path: entities/v1-alpha/dea:process-develop-agents-and-organization/dea:process-develop-agents-and-organization.yaml
-    sha256: 5e2eb553c28379babefe0c7ce0bc9116119fdbcf41f8e4eca33eb0e8db444a21
+    sha256: c11db07f6eae7ec30cd0162b3c997e413f230ac914162fe9d4650f772f087761
   - id: dea:process-develop-corporate-strategy
     type: Process
     path: entities/v1-alpha/dea:process-develop-corporate-strategy/dea:process-develop-corporate-strategy.yaml
@@ -685,7 +685,7 @@ records:
   - id: dea:process-operate-agent-performance
     type: Process
     path: entities/v1-alpha/dea:process-operate-agent-performance/dea:process-operate-agent-performance.yaml
-    sha256: 87ffe1db214d6fda418fd3ca1881d253fa41e4959d83718761dbcb299d2b16a5
+    sha256: 7572a94bbbe6948bc166996b11acc47410221ff9c43854fd12c9c57c69fe26f4
   - id: dea:process-operate-asset-maintenance
     type: Process
     path: entities/v1-alpha/dea:process-operate-asset-maintenance/dea:process-operate-asset-maintenance.yaml
@@ -713,7 +713,7 @@ records:
   - id: dea:process-operate-learning-and-development
     type: Process
     path: entities/v1-alpha/dea:process-operate-learning-and-development/dea:process-operate-learning-and-development.yaml
-    sha256: 8b363d02d41b92fce00e47c89d87ee447142cffe7ebd6731f31bdfcc80ea73de
+    sha256: 67f3a30c72d1756cc1acb61acc6c47d31d20471ed5f94d4512b250d06fd5f0e0
   - id: dea:process-operate-logistics
     type: Process
     path: entities/v1-alpha/dea:process-operate-logistics/dea:process-operate-logistics.yaml
@@ -721,7 +721,7 @@ records:
   - id: dea:process-operate-payroll-and-benefits
     type: Process
     path: entities/v1-alpha/dea:process-operate-payroll-and-benefits/dea:process-operate-payroll-and-benefits.yaml
-    sha256: 88c7fbf9f501a5c8556dccffe74f27e3499f6768f7056de6c2cb1377046e4770
+    sha256: 5f796bc72dab9a7c9aa47f4d5f090340144f105be899721b1a66ce00040c191b
   - id: dea:process-operate-procurement-cycle
     type: Process
     path: entities/v1-alpha/dea:process-operate-procurement-cycle/dea:process-operate-procurement-cycle.yaml
@@ -749,7 +749,7 @@ records:
   - id: dea:process-operate-time-and-attendance
     type: Process
     path: entities/v1-alpha/dea:process-operate-time-and-attendance/dea:process-operate-time-and-attendance.yaml
-    sha256: 4ec36078342d6808ef3c6e6dbe227c1acd2f613c3e5145c5e45a48084d0ad9bd
+    sha256: 0580ede00c46e7a5c69e807a4e8c4fe4060996441e84701c7225b484f12a6707
   - id: dea:process-operate-warehouse-and-inventory
     type: Process
     path: entities/v1-alpha/dea:process-operate-warehouse-and-inventory/dea:process-operate-warehouse-and-inventory.yaml
@@ -785,7 +785,7 @@ records:
   - id: dea:process-reorganize-structures
     type: Process
     path: entities/v1-alpha/dea:process-reorganize-structures/dea:process-reorganize-structures.yaml
-    sha256: 1a5d71a506e7bd9beaa4a690be7af31e6c8efa7106863ed7038c68023fdd3c84
+    sha256: f6997cd6df1956a9bfce93cb62da7a0e6f0ef3f81bd29b195555a06a021acc22
   - id: dea:process-review-governance-effectiveness
     type: Process
     path: entities/v1-alpha/dea:process-review-governance-effectiveness/dea:process-review-governance-effectiveness.yaml
