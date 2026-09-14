@@ -40,6 +40,11 @@ ecfConformance:
 metadata:
   established_by: CR-BP-21b
   established_at: '2026-09-07'
+  activity_references:
+  - dea:activity-draft-organizational-architecture
+  - dea:activity-bound-authority-chains
+  - dea:activity-review-structure-against-model
+  - dea:activity-commit-organization-structure-design
   change_history:
   - cr: CR-BP-21b
     date: '2026-09-07'
@@ -51,6 +56,18 @@ metadata:
       hybrid agents without reclassification. One of the 5 L2
       landings targeting the 5 ratified cells of the
       AgencyAndOrganization domain.
+  - cr: CR-BP-56
+    date: '2026-09-14'
+    change: |
+      L3 decomposition of this Business Process: 4 Activities
+      landed under the structured deposition pattern (research
+      deposition at research/l3-candidate-universe.yaml, then
+      canonical Activity records) as part of the CR-BP-56
+      AgencyAndOrganization Conceive + Design + Build tranche.
+      Adds metadata.activity_references[] back-references per
+      ACT-010 bidirectional traceability. Additive metadata-only
+      change; BP identity and semantics unchanged, so version
+      remains unchanged per SIV-004 (CR-BP-34d).
 links:
 - rel: change-request
   href: change-requests/CR-BP-21b-agency-organization-landing.md

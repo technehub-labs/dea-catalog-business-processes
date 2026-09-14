@@ -1,0 +1,34 @@
+id: dea:activity-identify-competency-domains
+type: Activity
+name: Identify Competency Domains
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: "The cohesive grouping of work within Design Competency Framework that identifies the competency domains the designed organization structure requires."
+belongs_to_business_process: dea:process-design-competency-framework
+cohesion_rationale: "Constituent work shares a single identification concern (competency domains required by the structure), one input class (the committed organization structure design), and one output (the identified competency domains). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6)."
+decomposition_boundary: l4-reached
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: AgencyAndOrganization
+    stage: Design
+    identifier: ecf:agencyOrganization.design
+metadata:
+  established_by: CR-BP-56
+  established_at: '2026-09-14'
+  change_history:
+  - cr: CR-BP-56
+    date: '2026-09-14'
+    change: |
+      Initial L3 Activity entry; lands as part of the CR-BP-56
+      AgencyAndOrganization Conceive + Design + Build tranche (pattern proven by CR-BP-42 through CR-BP-55).
+      Classified per CR-BP-32 section 5 (fails standalone
+      executability and resource dedication); decomposition
+      boundary marker per CR-BP-32 section 12 pending Task
+      records (dea:Task lifecycle: proposed).

@@ -329,7 +329,7 @@ records:
   - id: dea:process-acquire-and-onboard-agents
     type: Process
     path: entities/v1-alpha/dea:process-acquire-and-onboard-agents/dea:process-acquire-and-onboard-agents.yaml
-    sha256: c341516a64da2e05db362ee767f1e0560d78e0acd9116b5d628574d294381169
+    sha256: 8b82d13f76c420a8f1b683dc054891b0ffd5cf7d4dd6bd6a91764f4823b364e0
   - id: dea:process-acquire-technology-assets
     type: Process
     path: entities/v1-alpha/dea:process-acquire-technology-assets/dea:process-acquire-technology-assets.yaml
@@ -349,7 +349,7 @@ records:
   - id: dea:process-build-contractor-and-partner-agent-pool
     type: Process
     path: entities/v1-alpha/dea:process-build-contractor-and-partner-agent-pool/dea:process-build-contractor-and-partner-agent-pool.yaml
-    sha256: 7f2cdaf3e4eb28446db696b28a7c840b4ddc87fbc1836b184b0999140f2b62e9
+    sha256: 37fa7b993f16666ccd4c2a13bca76454a14a16b321468773d3c8cdfdd978c582
   - id: dea:process-build-delivery-capability
     type: Process
     path: entities/v1-alpha/dea:process-build-delivery-capability/dea:process-build-delivery-capability.yaml
@@ -389,7 +389,7 @@ records:
   - id: dea:process-conceive-workforce-and-agent-mix
     type: Process
     path: entities/v1-alpha/dea:process-conceive-workforce-and-agent-mix/dea:process-conceive-workforce-and-agent-mix.yaml
-    sha256: 91d8edc7cc433362368591400edcf3ab5b01c4aa52519153e3a0da419baceed2
+    sha256: 270c0ae4cdd32a51c1ab3c9b4e6aff625bb307a940884f1c2f033c0560fd0cb3
   - id: dea:process-conduct-assurance-review
     type: Process
     path: entities/v1-alpha/dea:process-conduct-assurance-review/dea:process-conduct-assurance-review.yaml
@@ -461,11 +461,11 @@ records:
   - id: dea:process-design-agent-topology
     type: Process
     path: entities/v1-alpha/dea:process-design-agent-topology/dea:process-design-agent-topology.yaml
-    sha256: 3d5e5e0c52c02c740aa3228abc35c36cb32507b1f2fca706e7b948c4be9dd2a6
+    sha256: 9b99a60af0b9071d5c06fb483e124610f2787d633d4e43be4642227bcba23b60
   - id: dea:process-design-competency-framework
     type: Process
     path: entities/v1-alpha/dea:process-design-competency-framework/dea:process-design-competency-framework.yaml
-    sha256: 6c688da6119352be8998fd65dbed8fd509cee5a7176c471dc218896b4ce4e17e
+    sha256: 82b035b142e808491a7398695b3d8485a9d88016bcc72dd1b9319581b82231a5
   - id: dea:process-design-delivery-model
     type: Process
     path: entities/v1-alpha/dea:process-design-delivery-model/dea:process-design-delivery-model.yaml
@@ -505,7 +505,7 @@ records:
   - id: dea:process-design-organization-structure
     type: Process
     path: entities/v1-alpha/dea:process-design-organization-structure/dea:process-design-organization-structure.yaml
-    sha256: 3c0a9b94eb54b724ddc3a8e31776924686a707e0a2bd5293ab6de035f8fe4919
+    sha256: cea8c6dffd1c8ce657432cdb62f0c66e924cefe7396e2e504efba1c518e34045
   - id: dea:process-design-packaging-and-configuration
     type: Process
     path: entities/v1-alpha/dea:process-design-packaging-and-configuration/dea:process-design-packaging-and-configuration.yaml
@@ -525,7 +525,7 @@ records:
   - id: dea:process-design-role-catalogue
     type: Process
     path: entities/v1-alpha/dea:process-design-role-catalogue/dea:process-design-role-catalogue.yaml
-    sha256: 78efd11f7946c7a9e24416c66eb4ce231a3fc4e1d0be51c02cd38fa6938702e0
+    sha256: 94235651763c195f619e297c4d49ed230f04b283992cefa921e9b94b4314db5c
   - id: dea:process-design-strategic-options
     type: Process
     path: entities/v1-alpha/dea:process-design-strategic-options/dea:process-design-strategic-options.yaml
@@ -605,11 +605,11 @@ records:
   - id: dea:process-frame-organization-and-agent-strategy
     type: Process
     path: entities/v1-alpha/dea:process-frame-organization-and-agent-strategy/dea:process-frame-organization-and-agent-strategy.yaml
-    sha256: b500f05459200706b20e1e4ba98bad89252ee270a57d28c16592cf11ced14b4a
+    sha256: 082dbfa89c5322f5aa9d5311444cdef82a7f8079d9d8c4bcddcaad26d386d6ed
   - id: dea:process-frame-organization-model
     type: Process
     path: entities/v1-alpha/dea:process-frame-organization-model/dea:process-frame-organization-model.yaml
-    sha256: c75dcd3bc412ad5882491ccb27e8d022f0ca8aad97a89b7b97a6a9a7f67aceb7
+    sha256: 82a9166e7d7968e4da9c76f91e2a62f50087623efb8cfefc86971656e3a6c1c7
   - id: dea:process-frame-physical-asset-approach
     type: Process
     path: entities/v1-alpha/dea:process-frame-physical-asset-approach/dea:process-frame-physical-asset-approach.yaml
