@@ -49,7 +49,7 @@ STATE_PRECEDENCE: dict[str, int] = {
 RETIRED_LIFECYCLE_STATUSES: frozenset[str] = frozenset({"deprecated", "retired"})
 
 # Schema path default; relative to the catalog root.
-DEFAULT_SCHEMA_PATH = "tools/catalog-index-schema.json"
+DEFAULT_SCHEMA_PATH = "catalog-index-schema/catalog-index-schema.json"
 
 # metamodel-pointer.yaml keys we consume (case-sensitive; mirrors what other
 # catalog repos already use).

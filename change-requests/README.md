@@ -100,6 +100,8 @@ Cross-repo mandatory standard applied by every TechNeHub Labs catalog repo (L1 l
 
 | [CR-BP-58](CR-BP-58-pg-gate-repair-dangle-removal.md) | PG Gate Repair + Dangling Composes Edge Removal | **Proposed (this PR)** | Hygiene slice remediating the dangling `dea:process-frame-financial-policy-thesis` composes edge disclosed since CR-BP-44. Repairs `check_process_group.py` (two non-recursive `glob` -> `rglob` fixes: entity scan and `_load_process_ids`; the live PG gate was vacuous since the CR-BP-23 per-directory layout) and removes the born-dangling CR-BP-21e-era edge (target never in register v2, never landed, no evidence file). Repaired gate scans 35 PG records against 126 BP ids: PG-001..008 PASS, 0 errors, 0 suggestions; pre-fix tree reported exactly the removed edge. PG record keeps version 1.0.0 per SIV-004 (no resolvable semantics lost). Record counts unchanged (ACT 501 / EXE 662 / report 697 all L4). Baseline + report + CATALOG regenerated (`open_change_requests` 69 -> 70). No schema or CI change; checker contract unchanged. |
 
+| [CR-BP-59](CR-BP-59-catalog-schema-default-path.md) | Catalog Schema Default Path Repair | **Proposed (this PR)** | Hygiene slice repairing the stale `--schema` default in `regenerate_catalog.py` and `check_catalog_index.py` (`tools/catalog-index-schema.json`, which never existed in this repo, -> `catalog-index-schema/catalog-index-schema.json`). Both scripts now succeed on bare invocation; tests and CI pass `--schema` explicitly and are unaffected. Record counts unchanged (ACT 501 / EXE 662 / report 697 all L4). Baseline + report + CATALOG regenerated (`open_change_requests` 71 -> 72). No schema, CI, or test change. |
+
 ## Cross-repo context
 
 CG-001 lands in `dea-metaframework` (PR #9 MERGED, commit `f5b8e01`).
