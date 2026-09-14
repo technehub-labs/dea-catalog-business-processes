@@ -132,31 +132,33 @@ can declare any subset. `process_type` defaults to `core` when the
 entry is a Business Process. See [`docs/classification.md`](docs/classification.md)
 for the full classification narrative.
 
-## 3. Process Decomposition (L0 / L1 / L2: conceptual)
+## 3. Process Decomposition (L0 / L1 / L2 / L3)
 
 The Business Process catalog decomposes the enterprise process
-landscape through a conceptual L0 / L1 / L2 hierarchy. **L0 and L1
-are catalog topology constructs; L2 is the canonical semantic
-level** (`dea:BusinessProcess`).
+landscape through an L0 / L1 / L2 / L3 hierarchy. **L0 is a
+catalog topology construct; L1 (Process Group), L2 (Business
+Process), and L3 (Activity) are canonical records** (`dea:group-*`,
+`dea:process-*`, `dea:activity-*` under `entities/v1-alpha/`).
 
 ```text
 ECF Domain × Lifecycle Stage
          │
          ▼
-   Process Context          (CR-BP-02; contexts/v1/)
+   Process Context          (CR-BP-02; contexts/v1-alpha/)
          │   conceptual L0 (Process Scope)
          ▼
-   Process Group            (conceptual L1; documented; not
-         │       a separate directory)
+   Process Group            (L1; CR-BP-12; entities/v1-alpha/;
+         │       dea:group-*; PG-001..008)
          ▼
-   Business Process         (L2; entities/v1/; dea:BusinessProcess)
-         │
+   Business Process         (L2; entities/v1-alpha/;
+         │       dea:process-*)
          ▼
-   Activity                 (CR-BP-04; future)
-         │
+   Activity                 (L3; CR-BP-32; entities/v1-alpha/;
+         │       dea:activity-*; ACT-001..010)
          ▼
-   Workflow / Task          (CR-BP-05; future; authoritative
-                             metamodel)
+   Workflow / Task          (L4; future; authoritative
+                             metamodel; dea:Task lifecycle:
+                             proposed)
 ```
 
 **Process Group is NOT equivalent to Business Function.** A Business
@@ -165,9 +167,18 @@ grouping of capabilities and ownership. Process Group is concerned
 with organizing processes. They answer different questions and live
 at different modeling concerns.
 
-**No separate top-level directories** for L0 / L1 / L2. L0 / L1 are
-**conceptual constructs** documented here + [`docs/architecture.md`](docs/architecture.md).
-The L2 entries live at `entities/v1/` (currently `v1-alpha/`).
+**L3 Activity coverage is complete across all seven ECF domains**
+(CR-BP-42 pilot; CR-BP-43..57 tranches): 126 Business Processes
+decompose into 501 canonical Activity records, each carrying
+`decomposition_boundary: l4-reached` pending metamodel-owned Task
+records (CR-BP-32 §12). Activities link to their parent Business
+Process bidirectionally per ACT-010 (`belongs_to_business_process`
+on the Activity; `metadata.activity_references[]` on the parent).
+
+**No separate top-level directories** for L0. L0 is a
+**conceptual construct** documented here + [`docs/architecture.md`](docs/architecture.md).
+L1 / L2 / L3 records live at `entities/v1-alpha/` (currently
+`v1-alpha/`).
 
 ## 4. Structural Composition
 
