@@ -4,7 +4,9 @@
 
 The **OpenDEA Business Process Catalog** establishes the canonical,
 structured and machine-consumable foundation for the **Business Process
-specialization** of the OpenDEA Process kernel.
+specialization** of the OpenDEA Process kernel. Star and follow the repo
+as it evolves to meet the needs of **AI-Native Enterprise Architecture
+Transformation** (AI-NEAT).
 
 The catalog supports the **Business Architecture** and **Business
 Operations** use cases (CR-MM-PROC-01; CR-AR-FMWK-01; CR-BP-SPEC-BP-01).
