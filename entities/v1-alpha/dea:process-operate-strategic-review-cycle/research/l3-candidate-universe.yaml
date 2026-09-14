@@ -1,0 +1,104 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-55
+status: candidate-not-canonical; subject to review
+parent_business_process: dea:process-operate-strategic-review-cycle
+coordinate:
+  domain: StrategyAndDirection
+  stage: Operate
+  process_context: dea:pc-sd-operate
+  process_group: dea:group-strategic-steering-operation
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42,
+  scaled by CR-BP-43 through CR-BP-54)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/dea:process-operate-strategic-review-cycle
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: dea:activity-schedule-review-cadence
+  name: "Schedule Review Cadence"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Cadence scheduling; calendar maintenance; cadence change control"
+  out_of_scope:
+  - "Review input assembly (dea:activity-assemble-review-inputs)"
+  - "Performance reporting (dea:activity-report-strategic-performance)"
+  evidence:
+  - "Parent BP trigger (strategic performance monitoring and steering require a standing cadence of review)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-55
+- id: dea:activity-assemble-review-inputs
+  name: "Assemble Review Inputs"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Input assembly; agenda drafting; input completeness check"
+  out_of_scope:
+  - "Cadence scheduling (dea:activity-schedule-review-cadence)"
+  - "Review conduct (dea:activity-conduct-strategic-reviews)"
+  evidence:
+  - "Parent BP outcome (the strategic review cycle is operated with cadence, inputs, and decisions recorded)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-55
+- id: dea:activity-conduct-strategic-reviews
+  name: "Conduct Strategic Reviews"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Review facilitation; evidence walkthrough; decision elicitation"
+  out_of_scope:
+  - "Input assembly (dea:activity-assemble-review-inputs)"
+  - "Decision recording (dea:activity-record-review-decisions)"
+  evidence:
+  - "Parent BP trigger (a standing cadence of review with recorded decisions)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-55
+- id: dea:activity-record-review-decisions
+  name: "Record Review Decisions"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Decision recording; action assignment; routing to steering and adaptation"
+  out_of_scope:
+  - "Review conduct (dea:activity-conduct-strategic-reviews)"
+  - "Portfolio steering (dea:process-steer-initiative-portfolio)"
+  evidence:
+  - "Parent BP outcome (the strategic review cycle is operated with cadence, inputs, and decisions recorded)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-55
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."

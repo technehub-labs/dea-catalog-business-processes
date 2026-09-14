@@ -40,6 +40,11 @@ ecfConformance:
 metadata:
   established_by: CR-BP-21a.1
   established_at: '2026-09-08'
+  activity_references:
+  - dea:activity-gather-objective-performance-evidence
+  - dea:activity-assess-objective-fit
+  - dea:activity-redraft-objectives-and-targets
+  - dea:activity-commit-refreshed-objectives
   change_history:
   - cr: CR-BP-21a.1
     date: '2026-09-08'
@@ -48,6 +53,18 @@ metadata:
       StrategyAndDirection completion tranche under ECF v2.4.0
       register v2 (CR-BP-19). Closes the remaining register v2 L2
       candidates for this cell.
+  - cr: CR-BP-55
+    date: '2026-09-14'
+    change: |
+      L3 decomposition of this Business Process: 4 Activities
+      landed under the structured deposition pattern (research
+      deposition at research/l3-candidate-universe.yaml, then
+      canonical Activity records) as part of the CR-BP-55
+      StrategyAndDirection Improve + Operate tranche.
+      Adds metadata.activity_references[] back-references per
+      ACT-010 bidirectional traceability. Additive metadata-only
+      change; BP identity and semantics unchanged, so version
+      remains unchanged per SIV-004 (CR-BP-34d).
 links:
 - rel: change-request
   href: change-requests/CR-BP-21a.1-strategy-direction-completion.md

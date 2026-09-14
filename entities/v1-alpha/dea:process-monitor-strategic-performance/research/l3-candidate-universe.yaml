@@ -1,0 +1,104 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-55
+status: candidate-not-canonical; subject to review
+parent_business_process: dea:process-monitor-strategic-performance
+coordinate:
+  domain: StrategyAndDirection
+  stage: Operate
+  process_context: dea:pc-sd-operate
+  process_group: dea:group-strategic-steering-operation
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42,
+  scaled by CR-BP-43 through CR-BP-54)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/dea:process-monitor-strategic-performance
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: dea:activity-collect-strategic-performance-measures
+  name: "Collect Strategic Performance Measures"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Measure collection; measure validation; measure trace to plan"
+  out_of_scope:
+  - "Plan execution reporting sources (dea:process-build-strategic-plan)"
+  - "Plan tracking (dea:activity-track-performance-against-plan)"
+  evidence:
+  - "Parent BP trigger (the plan is in execution and strategic performance requires ongoing monitoring)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-55
+- id: dea:activity-track-performance-against-plan
+  name: "Track Performance against Plan"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Plan comparison; trend tracking; objective attainment tracking"
+  out_of_scope:
+  - "Measure collection (dea:activity-collect-strategic-performance-measures)"
+  - "Deviation flagging (dea:activity-flag-performance-deviations)"
+  evidence:
+  - "Parent BP outcome (strategic performance is monitored against the plan)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-55
+- id: dea:activity-flag-performance-deviations
+  name: "Flag Performance Deviations"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Deviation detection; deviation triage; escalation routing"
+  out_of_scope:
+  - "Plan tracking (dea:activity-track-performance-against-plan)"
+  - "Portfolio steering (dea:process-steer-initiative-portfolio)"
+  evidence:
+  - "Parent BP trigger (strategic performance requires ongoing monitoring and steering)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-55
+- id: dea:activity-report-strategic-performance
+  name: "Report Strategic Performance"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Report assembly; distribution into the review cycle; report trace retention"
+  out_of_scope:
+  - "Deviation flagging (dea:activity-flag-performance-deviations)"
+  - "Review cycle operation (dea:process-operate-strategic-review-cycle)"
+  evidence:
+  - "Parent BP outcome (strategic performance is monitored against the plan)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-55
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."
