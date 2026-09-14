@@ -86,7 +86,7 @@ Rules (derived from CR-BP-32 §15):
             "forward reference present".
 
 Coverage on the live catalog (2026-09-12): zero Activity records.
-Expected findings: ACT-001..010 = 0 across all 129 BP records (the
+Expected findings: ACT-001..010 = 0 across all 130 BP records (the
 validator never touches BP records). The validator is therefore a
 forward-looking regression guard, not a corrective gate.
 

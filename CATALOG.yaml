@@ -2,10 +2,10 @@ catalog:
   abbreviation: BP
   counts:
     candidates: 0
-    canonical: 667
-    entities: 668
-    open_change_requests: 77
-    research_files: 296
+    canonical: 669
+    entities: 670
+    open_change_requests: 78
+    research_files: 298
     retired: 1
   cross_cutting:
     change_requests: change-requests/
@@ -5752,6 +5752,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:group-operations-and-asset-decommissioning
+    last_modified: '2026-09-14'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:group-operations-and-asset-decommissioning/dea:group-operations-and-asset-decommissioning.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: ProcessGroup
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:group-operations-and-enablement-build
     last_modified: '2026-09-08'
     lifecycle_status: candidate
@@ -6286,6 +6297,17 @@ catalog:
     path: entities/v1-alpha/dea:process-customer-strategy-conception/dea:process-customer-strategy-conception.yaml
     research_count: 3
     retired_count: 1
+    state: canonical
+    type: Process
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:process-decommission
+    last_modified: '2026-09-14'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:process-decommission/dea:process-decommission.yaml
+    research_count: 2
+    retired_count: 0
     state: canonical
     type: Process
     version: 1.0.0
@@ -8958,6 +8980,9 @@ catalog:
     - .gitkeep
     - README.md
     path: entities/v1-alpha/dea:group-governance-system-design/research/
+  - entity_id: dea:group-operations-and-asset-decommissioning
+    files: []
+    path: entities/v1-alpha/dea:group-operations-and-asset-decommissioning/research/
   - entity_id: dea:group-operations-and-enablement-build
     files: []
     path: entities/v1-alpha/dea:group-operations-and-enablement-build/research/
@@ -9174,6 +9199,11 @@ catalog:
     - README.md
     - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-customer-strategy-conception/research/
+  - entity_id: dea:process-decommission
+    files:
+    - README.md
+    - l2-admission-deposition.yaml
+    path: entities/v1-alpha/dea:process-decommission/research/
   - entity_id: dea:process-define-enterprise-purpose-and-ambition
     files:
     - README.md

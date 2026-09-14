@@ -22,8 +22,8 @@ ordering_rationale: 'The 10 Process Contexts map to the ECF matrix
 
   '
 summary:
-  total_tranches: 68
-  total_records: 129
+  total_tranches: 69
+  total_records: 130
   records_per_tranche:
     cd-b: 2
     cd-c: 2
@@ -93,6 +93,7 @@ summary:
     pv-act.64: 1
     pv-ret.64: 1
     ge-act.65: 1
+    oe-ret.66: 1
 tranches:
 - tranche_id: cd-b
   context_ref: dea:pc-pr-b
@@ -1151,6 +1152,20 @@ tranches:
     Bring into Force scored 9/10 with an ADMIT-CANONICAL recommendation on
     universal entry-into-force semantics; the cell reverses from
     backlog-deferred to ratified-accepted/landed in register v6.
+- tranche_id: oe-ret.66
+  context_ref: dea:pc-oe-retire
+  context_name: enablement-and-operations / retire
+  group_ref: dea:group-operations-and-asset-decommissioning
+  cell: EnablementAndOperations.Retire
+  records:
+  - dea:process-decommission
+  status: applied
+  applied_by: CR-BP-66
+  applied_pr: null
+  rationale: Discovery-driven admission at the E&O Retire coordinate.
+    Decommission scored 9/10 with an ADMIT-CANONICAL recommendation on
+    ISO 55000 asset end-of-life evidence; the cell reverses from
+    backlog-deferred to ratified-accepted/landed in register v7.
 cross_tranche_dependencies: none
 review_checkpoints:
   cd-b: 1
@@ -1219,3 +1234,4 @@ review_checkpoints:
   ge-op.1: 1
   ge-im.1: 1
   ge-act.65: 1
+  oe-ret.66: 1
