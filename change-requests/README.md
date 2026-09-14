@@ -102,6 +102,8 @@ Cross-repo mandatory standard applied by every TechNeHub Labs catalog repo (L1 l
 
 | [CR-BP-59](CR-BP-59-catalog-schema-default-path.md) | Catalog Schema Default Path Repair | **Proposed (this PR)** | Hygiene slice repairing the stale `--schema` default in `regenerate_catalog.py` and `check_catalog_index.py` (`tools/catalog-index-schema.json`, which never existed in this repo, -> `catalog-index-schema/catalog-index-schema.json`). Both scripts now succeed on bare invocation; tests and CI pass `--schema` explicitly and are unaffected. Record counts unchanged (ACT 501 / EXE 662 / report 697 all L4). Baseline + report + CATALOG regenerated (`open_change_requests` 71 -> 72). No schema, CI, or test change. |
 
+| [CR-BP-60](CR-BP-60-l3-docs-currency.md) | Documentation Currency for the Landed L3 Layer | **Proposed (this PR)** | Documentation slice bringing README section 3 and docs/architecture.md into agreement with the landed catalog: Activity was listed as "(CR-BP-04; future)" despite 501 canonical records (CR-BP-32; ACT-001..010); L1 Process Group was described as conceptual-only despite 35 canonical records (PG-001..008); the CR mapping pointed at placeholders CR-BP-04/05 instead of the landed CR-BP-32/33; paths referenced v1/ instead of v1-alpha/. Post-fix the docs present L0 conceptual / L1-L3 canonical / L4 future and metamodel-owned. Documentation conformance per-line comparison: 0 genuinely new findings in edited files. Record counts unchanged (ACT 501 / EXE 662 / report 697 all L4). Baseline + report + CATALOG regenerated (`open_change_requests` 72 -> 73). No record, gate, schema, or CI change. |
+
 ## Cross-repo context
 
 CG-001 lands in `dea-metaframework` (PR #9 MERGED, commit `f5b8e01`).

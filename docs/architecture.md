@@ -29,23 +29,25 @@ prose conflicts with CR-BP-14, the CR governs.
 ECF Domain × Lifecycle Stage
          │
          ▼
-   Process Context          (CR-BP-02; contexts/v1/)
+   Process Context          (CR-BP-02; contexts/v1-alpha/)
          │
          ▼
    L0 Process Scope         (conceptual; documented here)
          │
          ▼
-   L1 Process Group         (conceptual; documented here)
-         │
+   L1 Process Group         (canonical; entities/v1-alpha/;
+         │       dea:group-*; PG-001..008)
          ▼
-   L2 Business Process      (entities/v1/; dea:BusinessProcess)
-         │
+   L2 Business Process      (canonical; entities/v1-alpha/;
+         │       dea:process-*)
          ▼
-   Activity                 (CR-BP-04; future)
-         │
+   L3 Activity              (canonical; CR-BP-32;
+         │       entities/v1-alpha/; dea:activity-*;
+         │       ACT-001..010)
          ▼
-   Workflow / Task          (CR-BP-05; future; authoritative
-                             metamodel)
+   Workflow / Task          (L4; future; authoritative
+                             metamodel; dea:Task lifecycle:
+                             proposed)
 ```
 
 ## Process Context
@@ -89,11 +91,15 @@ support for systematic decomposition. Process Group is NOT
 equivalent to Business Function, Business Capability, Process Intent,
 Process Classification or Business Process. The catalog maintains
 Process Group as a catalog construct; it is not an OpenDEA metamodel
-entity.
+entity. Since the CR-BP-19 register landings (CR-BP-21a..21e), each
+Process Group is a canonical record at `entities/v1-alpha/dea:group-*/`,
+gated by PG-001..008.
 
 The containment direction is `L1 group --composes--> L2 process`; the
 inverse `part-of` view is generated at query time (see CR-BP-12
-PG-004/PG-005).
+PG-004/PG-005). The L2-to-L3 linkage is bidirectional per ACT-010:
+`metadata.activity_references[]` on the Business Process and
+`belongs_to_business_process` on the Activity.
 
 ## L2 Business Process
 
@@ -101,6 +107,18 @@ The first canonical semantic entity: `dea:BusinessProcess`. All
 L2 process definitions must conform to the authoritative OpenDEA
 metamodel. The L2 entry lives in `entities/v1/` (currently
 `v1-alpha/`).
+
+## L3 Activity
+
+The cohesive grouping of work within a Business Process (CR-BP-32;
+ACT-001..010). An Activity fails standalone executability and resource
+dedication (CR-BP-32 §5) and is therefore not itself a Business
+Process. Every Activity record conforms to
+`schemas/entities/activity.schema.json`, inherits its parent BP's ECF
+coordinate, and carries `decomposition_boundary: l4-reached` pending
+metamodel-owned Task records (CR-BP-32 §12). L3 coverage is complete
+across all seven ECF domains: 501 canonical Activity records over 126
+Business Processes (CR-BP-42 pilot; CR-BP-43..57 tranches).
 
 ## Structural composition
 
@@ -172,8 +190,9 @@ already exist in the OpenDEA metamodel and should not be
 reinvented by the process catalog.
 
 - **CR-BP-03** → structural process architecture (this document)
-- **CR-BP-04** → Activity Model
-- **CR-BP-05** → Execution Boundary
+- **CR-BP-32** → Activity Model (landed; ACT-001..010; depends on the
+  CR-BP-04 id-family contract)
+- **CR-BP-33** → Execution Boundary (landed; EXE-001..010)
 
 ## The `relationships` shape (CR-BP-03A §3.1)
 
