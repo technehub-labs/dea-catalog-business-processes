@@ -108,6 +108,11 @@ discovery:
       evidence_strength: 2
       total: 9
       rationale: Authoritative asset-lifecycle evidence (ISO 55000, APQC, eTOM); canonical home at EnablementAndOperations/Retire.
+    admission:
+      status: admitted
+      admitted_by: CR-BP-66
+      admitted_as: dea:process-decommission
+      admitted_at: '2026-09-14'
     disposition:
       type: ADMIT-CANONICAL
       canonical_process_ref: dea:process-decommission (proposed; governed admission pending per CR-BP-62

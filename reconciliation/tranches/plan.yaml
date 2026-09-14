@@ -22,8 +22,8 @@ ordering_rationale: 'The 10 Process Contexts map to the ECF matrix
 
   '
 summary:
-  total_tranches: 69
-  total_records: 130
+  total_tranches: 70
+  total_records: 131
   records_per_tranche:
     cd-b: 2
     cd-c: 2
@@ -94,6 +94,7 @@ summary:
     pv-ret.64: 1
     ge-act.65: 1
     oe-ret.66: 1
+    pr-ret.67: 1
 tranches:
 - tranche_id: cd-b
   context_ref: dea:pc-pr-b
@@ -1166,6 +1167,22 @@ tranches:
     Decommission scored 9/10 with an ADMIT-CANONICAL recommendation on
     ISO 55000 asset end-of-life evidence; the cell reverses from
     backlog-deferred to ratified-accepted/landed in register v7.
+- tranche_id: pr-ret.67
+  context_ref: dea:pc-pr-retire
+  context_name: party-and-relationship / retire
+  group_ref: dea:group-relationship-termination
+  cell: PartyAndRelationship.Retire
+  records:
+  - dea:process-close-enterprise-relationship
+  status: applied
+  applied_by: CR-BP-67
+  applied_pr: null
+  rationale: Final discovery-driven admission (P&R Retire coordinate).
+    Close Enterprise Relationship scored 9/10 with an ADMIT-CANONICAL
+    recommendation on contract close-out and regulated offboarding
+    evidence; the cell reverses from backlog-deferred to
+    ratified-accepted/landed in register v8. This completes the
+    CR-BP-63 recommended admissions.
 cross_tranche_dependencies: none
 review_checkpoints:
   cd-b: 1
@@ -1235,3 +1252,4 @@ review_checkpoints:
   ge-im.1: 1
   ge-act.65: 1
   oe-ret.66: 1
+  pr-ret.67: 1

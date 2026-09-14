@@ -1,0 +1,113 @@
+id: dea:group-relationship-termination
+type: ProcessGroup
+version: 1.0.0
+
+name: Relationship Termination
+
+# Normative definition (PG-006 / MECE).
+definition: |
+  The bounded Process Group that organises the Business Process
+  responsibilities of closing out enterprise relationships in the
+  PartyAndRelationship x Retire context (contract close-out, party
+  offboarding, residual obligation and record resolution).
+
+# Process Context reference (PG-003 enforces resolution).
+process_context: dea:pc-pr-retire
+
+# Scope (MECE boundary; PG-006 depends on excludes).
+scope:
+  includes:
+    - Contract close-out and termination settlement
+    - Party offboarding across roles (customer, supplier, partner)
+    - Residual obligation and record resolution
+  excludes:
+    - Steady-state relationship operation (Operate)
+    - Relationship improvement and development (Improve)
+    - Asset retirement and decommissioning (EnablementAndOperations x Retire)
+
+# Intended enterprise outcomes.
+outcomes:
+  - Relationships are closed out under approved termination plans with residual obligations settled and regulated offboarding evidenced.
+
+# Canonical containment (PG-004 / PG-005 / PG-006 enforce).
+composes:
+  - source_id: dea:group-relationship-termination
+    target_id: dea:process-close-enterprise-relationship
+    relationship_type: composes
+    direction: source-to-target
+    status: active
+    asserted_by: dea-team
+    rationale: |
+      The L2 process belongs to this cell per the CR-BP-63 discovery
+      outcome (ADMIT-CANONICAL recommendation) landed by CR-BP-67.
+    provenance:
+      type: architecture-review
+      reference: CR-BP-67
+      asserted_by: dea-team
+      asserted_at: '2026-09-14'
+
+# Process Group kind (PG-007 enforces controlled vocabulary).
+process_group_kind: cross-cutting
+
+# Discovery / governance status (mirrors register values).
+status: accepted
+
+# Catalog entry lifecycle (PG-008 enforces).
+lifecycle_status: candidate
+
+# ECF Conformance Gate (CR-ECF-CG-001..004).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: '1.0.0'
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+    - kind: coordinate
+      domain: PartyAndRelationship
+      stage: Retire
+      identifier: ecf:partyRelationship.retire
+
+# Evidence (CR-BP-11 register strength scale E0..E5).
+evidence:
+  - source: CR-BP-63 lifecycle discovery exercise
+    claim: |
+      This Process Group's coordinate was evaluated by the CR-BP-63
+      discovery record
+      discovery/v1-alpha/party-and-relationship-retire.yaml: the
+      cell's canonical candidate Close Enterprise Relationship scored
+      9/10 with an ADMIT-CANONICAL recommendation on contract
+      close-out and regulated offboarding evidence, overturning (with
+      evidence) the register v2 per-cell deferral note.
+    strength: E4
+    reference: discovery/v1-alpha/party-and-relationship-retire.yaml
+  - source: CR-BP-67 admission tranche
+    claim: |
+      CR-BP-67 lands this Process Group as the L1 home of the
+      discovery-admitted Business Process and flips the register cell
+      to ratified-accepted / landed.
+    strength: E4
+    reference: change-requests/CR-BP-67-pr-retire-admission.md
+
+# Metadata (PG-006 cross-context overlap exception path lives here).
+metadata:
+  established_by: CR-BP-67
+  established_at: '2026-09-14'
+  cross_context_overlap: []
+  change_history:
+    - cr: CR-BP-67
+      date: '2026-09-14'
+      change: |
+        Initial Process Group record; the fourth and final L1 group at
+        an Activate/Retire coordinate from the CR-BP-63 discovery
+        recommendations, landed under the CR-BP-62 method. The group
+        name adopts the register v2 l1 candidate (Relationship
+        Termination), which the discovery evaluation confirmed.
+
+links:
+  - rel: change-request
+    href: change-requests/CR-BP-67-pr-retire-admission.md
+  - rel: discovery-record
+    href: discovery/v1-alpha/party-and-relationship-retire.yaml
+  - rel: research-register
+    href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

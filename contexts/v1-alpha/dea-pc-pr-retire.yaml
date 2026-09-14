@@ -1,0 +1,122 @@
+# Process Context Cell Charter: PartyAndRelationship x Retire.
+#
+# Lands as part of CR-BP-67 (P&R Retire admission tranche), the
+# final governed admission from the CR-BP-63 lifecycle discovery
+# exercise. The register cell was backlog-deferred under CR-BP-19
+# (uniform Activate/Retire rationale; per-cell note: "relationship
+# termination is often handled within relationship operations; defer
+# until a regulated offboarding requires a distinct group").
+# CR-BP-63's discovery record
+# (discovery/v1-alpha/party-and-relationship-retire.yaml) established
+# an evidence-backed canonical candidate (Close Enterprise
+# Relationship, 9/10) on contract close-out and regulated offboarding
+# practice, and CR-BP-67 reverses the cell disposition to
+# ratified-accepted.
+#
+# Substrate independence (ADR-ECF-002 §5, CR-ECF-007): this context
+# applies to biological, artificial, and hybrid agents without
+# reclassification.
+
+id: dea:pc-pr-retire
+domain: PartyAndRelationship
+lifecycle_stage: Retire
+name: Enterprise Relationship Close-Out
+
+# Normative definition (PC-006).
+definition: |
+  The bounded enterprise context for **closing out enterprise
+  relationships** in the **Party & Relationship** domain. This
+  context addresses the termination-stage work of closing contracts,
+  offboarding parties, settling residual obligations, and resolving
+  records and rights across customer, supplier and partner roles.
+  Relationship close-out is a mature, universally governed discipline
+  (contract close-out practice; regulated offboarding and erasure
+  obligations; eTOM service retirement) with a stable identity wholly
+  independent of the ECF stage label.
+
+# Scope (PC-005).
+scope:
+  includes:
+    - Contract close-out and termination settlement
+    - Party offboarding across roles (customer, supplier, partner)
+    - Residual obligation and record resolution
+  excludes:
+    - Relationship establishment and activation (Activate stage; sibling coordinate)
+    - Steady-state relationship operation (Operate stage; adjacent context)
+    - Relationship improvement and development (Improve stage; adjacent context)
+    - Asset retirement and decommissioning (EnablementAndOperations x Retire; sibling cell)
+
+# Intended outcomes.
+outcomes:
+    - Relationships are closed out under approved termination plans.
+    - Residual obligations are settled and records and rights resolved.
+    - Regulated offboarding obligations (including erasure) are evidenced.
+
+# Adjacent contexts (CR-BP-02 §11).
+adjacent_contexts:
+    - dea:pc-pr-conceive
+    - dea:pc-pr-design
+    - dea:pc-pr-build
+    - dea:pc-pr-operate
+    - dea:pc-pr-improve
+
+# Business Processes belonging to this context (PC-008).
+processes:
+    - dea:process-close-enterprise-relationship
+
+# Cell Charter (CR-BP-02 §7; PC-006).
+cell_charter:
+  enterprise_concern: "Party & Relationship: the close-out of enterprise relationships across party roles."
+  lifecycle_concern: "Retire: contract close-out, party offboarding, residual obligation and record resolution."
+  combined_semantic_meaning: |
+    The termination-stage work of closing enterprise relationships
+    and resolving what they leave behind, across customer, supplier
+    and partner roles.
+  expected_outcomes:
+    - Relationships are closed out under approved termination plans.
+    - Residual obligations are settled and records and rights resolved.
+    - Regulated offboarding obligations (including erasure) are evidenced.
+  inclusions:
+    - Contract close-out and termination settlement
+    - Party offboarding across roles (customer, supplier, partner)
+    - Residual obligation and record resolution
+  exclusions:
+    - Relationship establishment and activation (Activate stage; sibling coordinate)
+    - Steady-state relationship operation (Operate stage; adjacent context)
+    - Relationship improvement and development (Improve stage; adjacent context)
+    - Asset retirement and decommissioning (EnablementAndOperations x Retire; sibling cell)
+  adjacent_boundaries:
+    - "dea:pc-pr-operate (adjacent context): operating relationships hand over at termination planning and approval."
+    - "dea:pc-oe-retire (sibling cell): asset decommissioning is distinct from relationship close-out."
+
+# Lifecycle status (CR-BP-02 §17).
+lifecycle_status: candidate
+status: candidate
+
+# Provenance.
+established_by: CR-BP-67
+established_at: '2026-09-14'
+
+# Change history.
+change_history:
+  - cr: CR-BP-67
+    date: '2026-09-14'
+    change: |
+      Initial Process Context record. The cell was backlog-deferred
+      under register v2 (CR-BP-19) with the per-cell note that
+      relationship termination is often handled within relationship
+      operations, deferred until a regulated offboarding requires a
+      distinct group; CR-BP-63's discovery exercise established the
+      evidence-backed canonical candidate Close Enterprise
+      Relationship (9/10, ADMIT-CANONICAL recommendation at
+      discovery/v1-alpha/party-and-relationship-retire.yaml) on
+      contract close-out and regulated offboarding practice, and this
+      tranche reverses the cell disposition to ratified-accepted.
+
+links:
+  - rel: change-request
+    href: change-requests/CR-BP-67-pr-retire-admission.md
+  - rel: discovery-record
+    href: discovery/v1-alpha/party-and-relationship-retire.yaml
+  - rel: research-register
+    href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

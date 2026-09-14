@@ -1,0 +1,77 @@
+id: dea:process-close-enterprise-relationship
+name: Close Enterprise Relationship
+type: Process
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+process_intent: transform
+process_type: core
+process_specialization: []
+description: 'Close out an enterprise relationship with a customer, supplier
+  or partner: settle the contract, offboard the party, and resolve residual
+  obligations, records and rights, within the dea:pc-pr-retire Cell Charter.
+  See trigger and outcome for the bounded work this process owns; see
+  identity.outcome_statement for the testable outcome the process produces.
+  '
+trigger: 'A customer, supplier or partner relationship reaches its agreed or
+  mandated end (contract expiry, termination, or regulated offboarding
+  requirement).
+  '
+outcome: 'The relationship is closed out: obligations are fulfilled or
+  settled, records and rights are resolved, and the close is executed with
+  evidence.
+  '
+identity:
+  verb: Close
+  object: Enterprise Relationship
+  scope: (all enterprise segments)
+  outcome_statement: 'The relationship is closed out: obligations are
+    fulfilled or settled, records and rights are resolved, and the close is
+    executed with evidence.
+    '
+  evidence_links:
+  - type: standard
+    ref: https://www.worldcc.com/
+  - type: standard
+    ref: https://www.tmforum.org/
+  - type: standard
+    ref: https://gdpr.eu/
+relationships:
+- source_id: dea:process-close-enterprise-relationship
+  relationship_type: serves
+  target_id: ecf:partyRelationship.retire
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: PartyAndRelationship
+    stage: Retire
+    identifier: ecf:partyRelationship.retire
+metadata:
+  established_by: CR-BP-67
+  established_at: '2026-09-14'
+  change_history:
+  - cr: CR-BP-67
+    date: '2026-09-14'
+    change: |
+      Initial L2 Process entry; the first canonical Business Process
+      admitted at a PartyAndRelationship Retire coordinate, from the
+      CR-BP-63 discovery outcome (9/10, ADMIT-CANONICAL
+      recommendation) under the CR-BP-62 method. The record name
+      satisfies BP-ARC-ID-001 directly (name = verb + object: Close +
+      Enterprise Relationship); no admission-time refinement was
+      required. Admission is governed: the discovery record
+      recommends, this tranche admits.
+links:
+- rel: change-request
+  href: change-requests/CR-BP-67-pr-retire-admission.md
+- rel: discovery-record
+  href: discovery/v1-alpha/party-and-relationship-retire.yaml
+- rel: process-context
+  href: contexts/v1-alpha/dea-pc-pr-retire.yaml
+context:
+- ref: dea:pc-pr-retire

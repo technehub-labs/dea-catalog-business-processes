@@ -2,10 +2,10 @@ catalog:
   abbreviation: BP
   counts:
     candidates: 0
-    canonical: 669
-    entities: 670
-    open_change_requests: 78
-    research_files: 298
+    canonical: 671
+    entities: 672
+    open_change_requests: 79
+    research_files: 300
     retired: 1
   cross_cutting:
     change_requests: change-requests/
@@ -5884,6 +5884,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:group-relationship-termination
+    last_modified: '2026-09-14'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:group-relationship-termination/dea:group-relationship-termination.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: ProcessGroup
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:group-service-transition-activation
     last_modified: '2026-09-14'
     lifecycle_status: candidate
@@ -6097,6 +6108,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-build-strategic-roadmap/dea:process-build-strategic-roadmap.yaml
+    research_count: 2
+    retired_count: 0
+    state: canonical
+    type: Process
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:process-close-enterprise-relationship
+    last_modified: '2026-09-14'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:process-close-enterprise-relationship/dea:process-close-enterprise-relationship.yaml
     research_count: 2
     retired_count: 0
     state: canonical
@@ -9016,6 +9038,9 @@ catalog:
   - entity_id: dea:group-proposition-design
     files: []
     path: entities/v1-alpha/dea:group-proposition-design/research/
+  - entity_id: dea:group-relationship-termination
+    files: []
+    path: entities/v1-alpha/dea:group-relationship-termination/research/
   - entity_id: dea:group-service-transition-activation
     files: []
     path: entities/v1-alpha/dea:group-service-transition-activation/research/
@@ -9103,6 +9128,11 @@ catalog:
     - README.md
     - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-build-strategic-roadmap/research/
+  - entity_id: dea:process-close-enterprise-relationship
+    files:
+    - README.md
+    - l2-admission-deposition.yaml
+    path: entities/v1-alpha/dea:process-close-enterprise-relationship/research/
   - entity_id: dea:process-codify-charters-and-policies
     files:
     - .gitkeep
