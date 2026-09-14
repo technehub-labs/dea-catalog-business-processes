@@ -86,7 +86,7 @@ def test_cli_live_catalog_conformant():
     result = _run(["--strict"])
     assert result.returncode == 0, result.stdout + result.stderr
     assert "CONFORMANT" in result.stdout
-    assert "Records checked:  126" in result.stdout
+    assert "Records checked:  128" in result.stdout
     assert "Findings:         0" in result.stdout
 
 
@@ -96,7 +96,7 @@ def test_cli_json_emits_well_formed_payload():
     import json
     payload = json.loads(result.stdout)
     assert payload["verdict"] == "CONFORMANT"
-    assert payload["candidate_count"] == 126
+    assert payload["candidate_count"] == 128
     assert payload["finding_count"] == 0
     rule_ids = {r["id"] for r in payload["rules"]}
     assert rule_ids == {"BP-C1", "BP-C2", "BP-C3", "BP-C4"}

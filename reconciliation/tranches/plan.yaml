@@ -22,8 +22,8 @@ ordering_rationale: 'The 10 Process Contexts map to the ECF matrix
 
   '
 summary:
-  total_tranches: 65
-  total_records: 126
+  total_tranches: 67
+  total_records: 128
   records_per_tranche:
     cd-b: 2
     cd-c: 2
@@ -90,6 +90,8 @@ summary:
     ge-b.1: 1
     ge-op.1: 2
     ge-im.1: 2
+    pv-act.64: 1
+    pv-ret.64: 1
 tranches:
 - tranche_id: cd-b
   context_ref: dea:pc-pr-b
@@ -1106,6 +1108,34 @@ tranches:
   applied_by: CR-BP-21f.1
   applied_pr: 60
   rationale: Register v2 L2 completion for the GE Improve cell; composed by the existing dea:group-governance-review-and-learning.
+- tranche_id: pv-act.64
+  context_ref: dea:pc-pv-activate
+  context_name: product-and-value / activate
+  group_ref: dea:group-service-transition-activation
+  cell: ProductAndValue.Activate
+  records:
+  - dea:process-transition-to-service
+  status: applied
+  applied_by: CR-BP-64
+  applied_pr: null
+  rationale: First discovery-driven admission (CR-BP-62 method; CR-BP-63
+    exercise; CR-BP-64 admission). Transition to Service scored 10/10 with an
+    ADMIT-CANONICAL recommendation; the cell reverses from backlog-deferred to
+    ratified-accepted/landed in register v5.
+- tranche_id: pv-ret.64
+  context_ref: dea:pc-pv-retire
+  context_name: product-and-value / retire
+  group_ref: dea:group-service-transition-retirement
+  cell: ProductAndValue.Retire
+  records:
+  - dea:process-transition-out-of-service
+  status: applied
+  applied_by: CR-BP-64
+  applied_pr: null
+  rationale: First discovery-driven admission at a Retire coordinate.
+    Transition Out of Service scored 10/10 with an ADMIT-CANONICAL
+    recommendation; the cell reverses from backlog-deferred to
+    ratified-accepted/landed in register v5.
 cross_tranche_dependencies: none
 review_checkpoints:
   cd-b: 1

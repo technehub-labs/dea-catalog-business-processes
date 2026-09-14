@@ -2,10 +2,10 @@ catalog:
   abbreviation: BP
   counts:
     candidates: 0
-    canonical: 661
-    entities: 662
-    open_change_requests: 75
-    research_files: 290
+    canonical: 665
+    entities: 666
+    open_change_requests: 76
+    research_files: 294
     retired: 1
   cross_cutting:
     change_requests: change-requests/
@@ -5599,7 +5599,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: dea:group-customer-lifecycle-management
-    last_modified: '2026-09-09'
+    last_modified: '2026-09-14'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:group-customer-lifecycle-management/dea:group-customer-lifecycle-management.yaml
     research_count: 4
@@ -5855,6 +5855,28 @@ catalog:
     last_modified: '2026-09-08'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:group-proposition-design/dea:group-proposition-design.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: ProcessGroup
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:group-service-transition-activation
+    last_modified: '2026-09-14'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:group-service-transition-activation/dea:group-service-transition-activation.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: ProcessGroup
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:group-service-transition-retirement
+    last_modified: '2026-09-14'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:group-service-transition-retirement/dea:group-service-transition-retirement.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -7285,6 +7307,28 @@ catalog:
     last_modified: '2026-09-14'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-steer-initiative-portfolio/dea:process-steer-initiative-portfolio.yaml
+    research_count: 2
+    retired_count: 0
+    state: canonical
+    type: Process
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:process-transition-out-of-service
+    last_modified: '2026-09-14'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:process-transition-out-of-service/dea:process-transition-out-of-service.yaml
+    research_count: 2
+    retired_count: 0
+    state: canonical
+    type: Process
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:process-transition-to-service
+    last_modified: '2026-09-14'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:process-transition-to-service/dea:process-transition-to-service.yaml
     research_count: 2
     retired_count: 0
     state: canonical
@@ -8922,6 +8966,12 @@ catalog:
   - entity_id: dea:group-proposition-design
     files: []
     path: entities/v1-alpha/dea:group-proposition-design/research/
+  - entity_id: dea:group-service-transition-activation
+    files: []
+    path: entities/v1-alpha/dea:group-service-transition-activation/research/
+  - entity_id: dea:group-service-transition-retirement
+    files: []
+    path: entities/v1-alpha/dea:group-service-transition-retirement/research/
   - entity_id: dea:group-strategic-adaptation
     files: []
     path: entities/v1-alpha/dea:group-strategic-adaptation/research/
@@ -9578,6 +9628,16 @@ catalog:
     - README.md
     - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-steer-initiative-portfolio/research/
+  - entity_id: dea:process-transition-out-of-service
+    files:
+    - README.md
+    - l2-admission-deposition.yaml
+    path: entities/v1-alpha/dea:process-transition-out-of-service/research/
+  - entity_id: dea:process-transition-to-service
+    files:
+    - README.md
+    - l2-admission-deposition.yaml
+    path: entities/v1-alpha/dea:process-transition-to-service/research/
   - entity_id: dea:process-translate-strategic-choices-into-initiatives
     files:
     - README.md

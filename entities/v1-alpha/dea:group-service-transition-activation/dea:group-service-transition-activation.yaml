@@ -1,0 +1,105 @@
+id: dea:group-service-transition-activation
+type: ProcessGroup
+version: 1.0.0
+
+name: Service Transition Activation
+
+# Normative definition (PG-006 / MECE).
+definition: |
+  The bounded Process Group that organises the Business Process responsibilities of transitioning validated propositions, products and services into operational service in the ProductAndValue x Activate context (readiness validation, service transition, operational acceptance).
+
+# Process Context reference (PG-003 enforces resolution).
+process_context: dea:pc-pv-activate
+
+# Scope (MECE boundary; PG-006 depends on excludes).
+scope:
+  includes:
+    - Transition readiness validation
+    - Service transition into operation
+    - Operational acceptance
+  excludes:
+    - Proposition development (Build)
+    - Steady-state proposition operation (Operate)
+    - Operational delivery of the product (enablement-operations)
+
+# Intended enterprise outcomes.
+outcomes:
+  - Validated propositions are transitioned into operational service with acceptance recorded.
+
+# Canonical containment (PG-004 / PG-005 / PG-006 enforce).
+composes:
+  - source_id: dea:group-service-transition-activation
+    target_id: dea:process-transition-to-service
+    relationship_type: composes
+    direction: source-to-target
+    status: active
+    asserted_by: dea-team
+    rationale: |
+      The L2 process belongs to this cell per the CR-BP-63 discovery
+      outcome (ADMIT-CANONICAL recommendation) landed by CR-BP-64.
+    provenance:
+      type: architecture-review
+      reference: CR-BP-64
+      asserted_by: dea-team
+      asserted_at: '2026-09-14'
+
+# Process Group kind (PG-007 enforces controlled vocabulary).
+process_group_kind: cross-cutting
+
+# Discovery / governance status (mirrors register values).
+status: accepted
+
+# Catalog entry lifecycle (PG-008 enforces).
+lifecycle_status: candidate
+
+# ECF Conformance Gate (CR-ECF-CG-001..004).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: '1.0.0'
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+    - kind: coordinate
+      domain: ProductAndValue
+      stage: Activate
+      identifier: ecf:productValue.activate
+
+# Evidence (CR-BP-11 register strength scale E0..E5).
+evidence:
+  - source: CR-BP-63 lifecycle discovery exercise
+    claim: |
+      This Process Group's coordinate was evaluated by the CR-BP-63
+      discovery record discovery/v1-alpha/product-and-value-activate.yaml: the cell's canonical candidate
+      scored 10/10 with an ADMIT-CANONICAL recommendation,
+      overturning (with evidence) the register v2 uniform deferral.
+    strength: E4
+    reference: discovery/v1-alpha/product-and-value-activate.yaml
+  - source: CR-BP-64 admission tranche
+    claim: |
+      CR-BP-64 lands this Process Group as the L1 home of the
+      discovery-admitted Business Process and flips the register cell
+      to ratified-accepted / landed.
+    strength: E4
+    reference: change-requests/CR-BP-64-pv-activate-retire-admission.md
+
+# Metadata (PG-006 cross-context overlap exception path lives here).
+metadata:
+  established_by: CR-BP-64
+  established_at: '2026-09-14'
+  cross_context_overlap: []
+  change_history:
+    - cr: CR-BP-64
+      date: '2026-09-14'
+      change: |
+        Initial Process Group record; the first L1 group at an
+        Activate/Retire coordinate, landed from the CR-BP-63
+        evidence-backed discovery outcome under the CR-BP-62 method.
+
+links:
+  - rel: change-request
+    href: change-requests/CR-BP-64-pv-activate-retire-admission.md
+  - rel: discovery-record
+    href: discovery/v1-alpha/product-and-value-activate.yaml
+  - rel: research-register
+    href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

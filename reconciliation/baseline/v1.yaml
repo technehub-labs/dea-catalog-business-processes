@@ -166,6 +166,14 @@ records:
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-proposition-design/dea:group-proposition-design.yaml
     sha256: 11ee3ca73d22d617a8ddbe3d0e411e68e4fa105c01fda08af8fe0e08d9ee09c1
+  - id: dea:group-service-transition-activation
+    type: ProcessGroup
+    path: entities/v1-alpha/dea:group-service-transition-activation/dea:group-service-transition-activation.yaml
+    sha256: dbf93475b50afe16d1ec0e9e33c285eb50f264e17da871fc281963f06422c5da
+  - id: dea:group-service-transition-retirement
+    type: ProcessGroup
+    path: entities/v1-alpha/dea:group-service-transition-retirement/dea:group-service-transition-retirement.yaml
+    sha256: d64361c94c7f94496a6aeda09525633f3a4e42f7035f52b8d6fa943eb4012322
   - id: dea:group-strategic-adaptation
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-strategic-adaptation/dea:group-strategic-adaptation.yaml
@@ -286,6 +294,10 @@ records:
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-pr-op.yaml
     sha256: 4a73edc167d57eac7002160afc3810896d8b8e97bf7a41f0c37179dbcbf84be0
+  - id: dea:pc-pv-activate
+    type: ProcessContext
+    path: contexts/v1-alpha/dea-pc-pv-activate.yaml
+    sha256: 73e384f337986ea260d4faea7412ddc539f8ca191a7e7d42c639140b9aa4f736
   - id: dea:pc-pv-build
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-pv-build.yaml
@@ -306,6 +318,10 @@ records:
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-pv-operate.yaml
     sha256: a6978f932ddb65a68a0e0b8130c04121e6e664676ef34a207f896178ea9a5a57
+  - id: dea:pc-pv-retire
+    type: ProcessContext
+    path: contexts/v1-alpha/dea-pc-pv-retire.yaml
+    sha256: 3bf309905c737116b247852f227022766a9d9477825d16b8a72fb5e9f8219133
   - id: dea:pc-sd-build
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-sd-build.yaml
@@ -826,6 +842,14 @@ records:
     type: Process
     path: entities/v1-alpha/dea:process-steer-initiative-portfolio/dea:process-steer-initiative-portfolio.yaml
     sha256: f220fa49da1714260ffc3c8d615a0d6d4b4db995cdd2d3d660b75857cb8577c8
+  - id: dea:process-transition-out-of-service
+    type: Process
+    path: entities/v1-alpha/dea:process-transition-out-of-service/dea:process-transition-out-of-service.yaml
+    sha256: 4159b042b46e87ecf987eff87f9cdd8963e5b9a168854f857afd1652b9a99c61
+  - id: dea:process-transition-to-service
+    type: Process
+    path: entities/v1-alpha/dea:process-transition-to-service/dea:process-transition-to-service.yaml
+    sha256: 9cc609eede88fec22969be8904c42eb8118d754865d201ac1f2d7ca4a31f402e
   - id: dea:process-translate-strategic-choices-into-initiatives
     type: Process
     path: entities/v1-alpha/dea:process-translate-strategic-choices-into-initiatives/dea:process-translate-strategic-choices-into-initiatives.yaml
