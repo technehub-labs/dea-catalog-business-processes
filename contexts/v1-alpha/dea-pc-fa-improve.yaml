@@ -46,9 +46,10 @@ adjacent_contexts:
 
 # Business Processes belonging to this context (PC-008).
 processes:
-    - dea:process-conduct-cost-optimization-review
-      - dea:process-refine-financial-controls-and-policies
-      - dea:process-evolve-treasury-and-funding-model
+  - dea:process-conduct-cost-optimization-review
+  - dea:process-refine-financial-controls-and-policies
+  - dea:process-evolve-treasury-and-funding-model
+
 
 # Cell Charter (CR-BP-02 §7; PC-006).
 cell_charter:

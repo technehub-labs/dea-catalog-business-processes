@@ -31,6 +31,11 @@ Rules:
            id (`dea:BusinessProcess` in dea-metamodel; `dea:entity-business-process`
            in OpenDEAM root model v0.6.0). The Process Context's
            `processes:` list is governed by CR-BP-02 + CR-BP-SPEC-BP-01.
+           Extended by CR-BP-68: each `dea:process-*` entry must be a single
+           well-formed id string (a concatenated multi-id scalar from a
+           YAML indentation error is a violation) and must resolve to an
+           existing canonical Business Process record in the entities tree
+           (skipped only when the catalog under check has no entities tree).
 
 Exit: 0 = all rules pass; 2 = self-test.
 
@@ -79,7 +84,8 @@ def _load_yaml(path: Path):
     return yaml.safe_load(path.read_text())
 
 
-def _check_one(ctx: dict, all_contexts: list[dict], errors: list[str]) -> None:
+def _check_one(ctx: dict, all_contexts: list[dict], errors: list[str],
+               known_bp_ids: set | None = None) -> None:
     label = ctx.get("id", "<unknown>")
 
     # PC-001: domain must reference an authoritative ECF Domain.
@@ -146,9 +152,33 @@ def _check_one(ctx: dict, all_contexts: list[dict], errors: list[str]) -> None:
     # PC-008: processes: list (when present) references canonical Business Process
     # specialization ids. The catalog's process_intent enum (operational/support/
     # management) does NOT promote to root-model entities (BP-SPEC-01-007).
+    # CR-BP-68 extension: entries must be single well-formed id strings (a
+    # concatenated scalar from a YAML continuation-indent error is flagged),
+    # and each dea:process-* entry must resolve to an existing BP record when
+    # the catalog under check carries an entities tree.
     for proc_id in ctx.get("processes", []) or []:
+        if not isinstance(proc_id, str):
+            errors.append(
+                f"PC-008 ({label}): processes entry {proc_id!r} is not a string "
+                f"identifier. Each entry must be a single dea:process-* id."
+            )
+            continue
+        if proc_id.count("dea:process-") > 1 or " - dea:process-" in proc_id:
+            errors.append(
+                f"PC-008 ({label}): processes entry {proc_id!r} concatenates "
+                f"multiple process ids into one scalar (YAML indentation "
+                f"defect). Each process id must be its own list item."
+            )
+            continue
         if proc_id.startswith("dea:process-"):
-            # OK: lowercase-namespaced catalog entry id
+            # OK: lowercase-namespaced catalog entry id; CR-BP-68 also
+            # requires it to resolve when an entities tree is present.
+            if known_bp_ids is not None and proc_id not in known_bp_ids:
+                errors.append(
+                    f"PC-008 ({label}): processes entry {proc_id!r} does not "
+                    f"resolve to an existing canonical Business Process record "
+                    f"in entities/v1-alpha/."
+                )
             continue
         if proc_id.startswith("dea:entity-operational-process") \
                 or proc_id.startswith("dea:entity-support-process") \
@@ -168,6 +198,25 @@ def _check_one(ctx: dict, all_contexts: list[dict], errors: list[str]) -> None:
             )
 
 
+def _load_known_bp_ids(catalog_root: Path) -> set | None:
+    """Load the ids of canonical Business Process records (CR-BP-68).
+
+    Returns None when the catalog under check has no entities tree (e.g.
+    minimal fixture catalogs), in which case PC-008 resolution is skipped.
+    """
+    ent_dir = catalog_root / "entities" / "v1-alpha"
+    if not ent_dir.exists():
+        return None
+    ids: set = set()
+    for yml in sorted(ent_dir.glob("dea:process-*/dea:process-*.yaml")):
+        rec = _load_yaml(yml)
+        if isinstance(rec, dict) and isinstance(rec.get("id"), str):
+            ids.add(rec["id"])
+        else:
+            ids.add(yml.parent.name)
+    return ids
+
+
 def run_checks(catalog_root: Path) -> list[str]:
     errors: list[str] = []
     ctx_dir = catalog_root / "contexts"
@@ -175,11 +224,12 @@ def run_checks(catalog_root: Path) -> list[str]:
         # No contexts yet; that's allowed (CR-BP-02 §19 explicitly defers
         # population until after the architecture is established).
         return errors
+    known_bp_ids = _load_known_bp_ids(catalog_root)
     all_contexts: list[dict] = []
     for yml in sorted(ctx_dir.rglob("*.yaml")):
         ctx = _load_yaml(yml)
         all_contexts.append(ctx)
-        _check_one(ctx, all_contexts, errors)
+        _check_one(ctx, all_contexts, errors, known_bp_ids)
     # second pass for uniqueness across all loaded contexts (the in-loop
     # check is incremental; this catches the case where duplicates live in
     # different files).
@@ -299,6 +349,62 @@ def self_test() -> int:
             yaml.safe_dump(broken_ctx_3, sort_keys=False)
         )
 
+        # CR-BP-68: entities fixture so PC-008 resolution checking is active.
+        bp_dir = tmp_path / "entities" / "v1-alpha" / "dea:process-real-one"
+        bp_dir.mkdir(parents=True)
+        (bp_dir / "dea:process-real-one.yaml").write_text(
+            yaml.safe_dump({"id": "dea:process-real-one", "type": "Process",
+                            "name": "Real One", "status": "established"},
+                           sort_keys=False)
+        )
+
+        charter_ok = {
+            "enterprise_concern": "x",
+            "lifecycle_concern": "x",
+            "combined_semantic_meaning": "x",
+            "expected_outcomes": [],
+            "inclusions": [],
+            "exclusions": [],
+            "adjacent_boundaries": [],
+        }
+
+        # CR-BP-68 PC-008 violation: concatenated multi-id scalar (the YAML
+        # continuation-indent defect found in 5 legacy PC records).
+        broken_ctx_4 = {
+            "id": "dea:pc-bad-04",
+            "domain": "FinanceAndAccounting",
+            "lifecycle_stage": "Build",
+            "name": "Concatenated",
+            "definition": "x",
+            "scope": {"includes": [], "excludes": []},
+            "outcomes": [],
+            "adjacent_contexts": [],
+            "cell_charter": dict(charter_ok),
+            "processes": ["dea:process-real-one - dea:process-other-one"],
+            "status": "candidate",
+        }
+        (ctx_dir / "concat-violator.yaml").write_text(
+            yaml.safe_dump(broken_ctx_4, sort_keys=False)
+        )
+
+        # CR-BP-68 PC-008 violation: dangling process reference.
+        broken_ctx_5 = {
+            "id": "dea:pc-bad-05",
+            "domain": "FinanceAndAccounting",
+            "lifecycle_stage": "Design",
+            "name": "Dangling",
+            "definition": "x",
+            "scope": {"includes": [], "excludes": []},
+            "outcomes": [],
+            "adjacent_contexts": [],
+            "cell_charter": dict(charter_ok),
+            "processes": ["dea:process-does-not-exist"],
+            "status": "candidate",
+        }
+        (ctx_dir / "dangling-violator.yaml").write_text(
+            yaml.safe_dump(broken_ctx_5, sort_keys=False)
+        )
+
         errs = run_checks(tmp_path)
         for prefix in ("PC-001", "PC-002", "PC-003", "PC-006", "PC-007", "PC-008"):
             if not any(e.startswith(prefix) for e in errs):
@@ -333,6 +439,7 @@ def self_test() -> int:
                 "Demand signals propagated upstream for planning",
             ],
             "adjacent_contexts": ["dea:pc-pr-dsgn"],
+            "processes": ["dea:process-real-one"],
             "cell_charter": {
                 "enterprise_concern": "Customer-facing value delivery.",
                 "lifecycle_concern": "Steady-state operation of customer demand.",

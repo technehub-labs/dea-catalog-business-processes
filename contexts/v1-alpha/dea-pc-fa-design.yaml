@@ -48,10 +48,11 @@ adjacent_contexts:
 
 # Business Processes belonging to this context (PC-008).
 processes:
-    - dea:process-design-financial-plan-structure
-      - dea:process-design-financial-controls-and-policies
-      - dea:process-design-tax-position-and-strategy
-      - dea:process-design-treasury-and-funding-model
+  - dea:process-design-financial-plan-structure
+  - dea:process-design-financial-controls-and-policies
+  - dea:process-design-tax-position-and-strategy
+  - dea:process-design-treasury-and-funding-model
+
 
 # Cell Charter (CR-BP-02 §7; PC-006).
 cell_charter:

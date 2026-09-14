@@ -61,9 +61,10 @@ adjacent_contexts:
 # (Purpose, Intent, Horizons) land in CR-BP-21a.1.
 processes:
   - dea:process-develop-corporate-strategy
-    - dea:process-define-enterprise-purpose-and-ambition
-    - dea:process-conceive-strategic-intent
-    - dea:process-frame-strategic-horizons
+  - dea:process-define-enterprise-purpose-and-ambition
+  - dea:process-conceive-strategic-intent
+  - dea:process-frame-strategic-horizons
+
 
 # Cell Charter (CR-BP-02 §7; PC-006).
 cell_charter:
