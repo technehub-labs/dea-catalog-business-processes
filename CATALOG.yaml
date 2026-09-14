@@ -2,10 +2,10 @@ catalog:
   abbreviation: BP
   counts:
     candidates: 0
-    canonical: 665
-    entities: 666
-    open_change_requests: 76
-    research_files: 294
+    canonical: 667
+    entities: 668
+    open_change_requests: 77
+    research_files: 296
     retired: 1
   cross_cutting:
     change_requests: change-requests/
@@ -5706,6 +5706,17 @@ catalog:
     state: canonical
     type: ProcessGroup
     version: 1.1.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:group-governance-instrument-commencement
+    last_modified: '2026-09-14'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:group-governance-instrument-commencement/dea:group-governance-instrument-commencement.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: ProcessGroup
+    version: 1.0.0
   - candidate_count: 1
     canonical_count: 1
     id: dea:group-governance-oversight
@@ -5978,6 +5989,17 @@ catalog:
     path: entities/v1-alpha/dea:process-audit-policy-compliance/dea:process-audit-policy-compliance.yaml
     research_count: 3
     retired_count: 1
+    state: canonical
+    type: Process
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:process-bring-into-force
+    last_modified: '2026-09-14'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:process-bring-into-force/dea:process-bring-into-force.yaml
+    research_count: 2
+    retired_count: 0
     state: canonical
     type: Process
     version: 1.0.0
@@ -8918,6 +8940,9 @@ catalog:
     - .gitkeep
     - README.md
     path: entities/v1-alpha/dea:group-governance-conception/research/
+  - entity_id: dea:group-governance-instrument-commencement
+    files: []
+    path: entities/v1-alpha/dea:group-governance-instrument-commencement/research/
   - entity_id: dea:group-governance-oversight
     files:
     - .gitkeep
@@ -9008,6 +9033,11 @@ catalog:
     - README.md
     - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-audit-policy-compliance/research/
+  - entity_id: dea:process-bring-into-force
+    files:
+    - README.md
+    - l2-admission-deposition.yaml
+    path: entities/v1-alpha/dea:process-bring-into-force/research/
   - entity_id: dea:process-build-budgeting-and-forecasting-systems
     files:
     - README.md

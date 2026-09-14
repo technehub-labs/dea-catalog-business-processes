@@ -1916,3 +1916,19 @@ dispositions:
       discovery/v1-alpha/product-and-value-retire.yaml (CR-BP-63);
       CR-BP-64-pv-activate-retire-admission.md.
     note: null
+  - record_id: dea:process-bring-into-force
+    disposition: RETAIN
+    changes: []
+    tranche: cr-bp-65
+    rationale: |
+      Discovery-driven admission (CR-BP-62 method; CR-BP-63 exercise;
+      CR-BP-65 admission). Bring into Force scored 9/10 with an
+      ADMIT-CANONICAL recommendation at GovernanceAndExistence x
+      Activate on universal entry-into-force evidence; landed with its
+      PC (dea:pc-ge-activate) and PG
+      (dea:group-governance-instrument-commencement).
+    evidence: |
+      discovery/v1-alpha/governance-and-existence-activate.yaml (CR-BP-63);
+      CR-BP-65-ge-activate-admission.md.
+    note: null
+

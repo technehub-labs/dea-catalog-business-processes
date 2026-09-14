@@ -22,8 +22,8 @@ ordering_rationale: 'The 10 Process Contexts map to the ECF matrix
 
   '
 summary:
-  total_tranches: 67
-  total_records: 128
+  total_tranches: 68
+  total_records: 129
   records_per_tranche:
     cd-b: 2
     cd-c: 2
@@ -92,6 +92,7 @@ summary:
     ge-im.1: 2
     pv-act.64: 1
     pv-ret.64: 1
+    ge-act.65: 1
 tranches:
 - tranche_id: cd-b
   context_ref: dea:pc-pr-b
@@ -1136,6 +1137,20 @@ tranches:
     Transition Out of Service scored 10/10 with an ADMIT-CANONICAL
     recommendation; the cell reverses from backlog-deferred to
     ratified-accepted/landed in register v5.
+- tranche_id: ge-act.65
+  context_ref: dea:pc-ge-activate
+  context_name: governance-and-existence / activate
+  group_ref: dea:group-governance-instrument-commencement
+  cell: GovernanceAndExistence.Activate
+  records:
+  - dea:process-bring-into-force
+  status: applied
+  applied_by: CR-BP-65
+  applied_pr: null
+  rationale: Discovery-driven admission at the G&E Activate coordinate.
+    Bring into Force scored 9/10 with an ADMIT-CANONICAL recommendation on
+    universal entry-into-force semantics; the cell reverses from
+    backlog-deferred to ratified-accepted/landed in register v6.
 cross_tranche_dependencies: none
 review_checkpoints:
   cd-b: 1
@@ -1203,3 +1218,4 @@ review_checkpoints:
   ge-b.1: 1
   ge-op.1: 1
   ge-im.1: 1
+  ge-act.65: 1
