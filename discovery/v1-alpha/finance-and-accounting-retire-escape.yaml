@@ -1,0 +1,297 @@
+discovery:
+  id: dea:discovery-finance-and-accounting-retire-escape
+  ecf_context:
+    domain: FinanceAndAccounting
+    lifecycle_stage: Retire
+  candidates:
+  - name: Conclude a Regulated Run-Off
+    proposed_identity:
+      verb: Conclude
+      object: Regulated Run-Off
+      scope: enterprise
+    trigger: 'A regulated entity (insurer, mutual, or portfolio within an insurer) is authorised to enter run-off, where statutory
+      obligations trigger under PRA PS20/24 (UK) / FSB Insurance Resolution Strategies (2025) / NAIC Model 901 (US) and accounting
+      obligations trigger under IFRS 17, IFRS 5, and ASC 205-30 (US GAAP). Triggers include: board approval of solvent exit;
+      regulator determination of supervised run-off; portfolio transfer (Part VII in UK, 100%-reinsurance transaction in US);
+      demutualisation followed by wind-down; orderly liquidation.'
+    inputs: Run-off authorisation decision; board and regulator notifications and approvals; policyholder schedule; investment
+      portfolio schedule; reinsurance treaty schedule; reserving inputs; communications and policyholder-services plan; asset-liability
+      matching model under the chosen run-off length; statutory creditor-priority list; tax-clearance plan; retained-records
+      plan and service-of-process plan.
+    transformation: Move a regulated entity (or run-off portfolio) from going-concern operation to a documented, regulator-supervised,
+      policyholder-priority run-off with statutory accounting basis (liquidation basis under ASC 205-30, IFRS 17 fulfillment
+      measurement for insurance liabilities, IFRS 5 for held-for-sale groups), culminating in solvent exit or orderly wind-down
+      with all policyholder obligations and statutory liabilities resolved.
+    outcome: 'The regulated entity (or portfolio) is closed under the appropriate regulator''s supervision with: all policyholder
+      claims adjudicated and paid; statutory liabilities (tax, employee, supplier) settled; the entity''s authorisation surrendered
+      or the run-off portfolio fully transferred; financial statements issued on the liquidation basis (US) or fulfillment-measurement
+      basis (IFRS 17 run-off treatment); records retained per the service-of-process and record-retention regimes; solvent
+      exit certification (PRA) or completion certification (FSB) obtained.'
+    boundary: 'Begins at the regulator-acknowledged run-off authorisation. Ends at surrender of authorisation or full run-off
+      completion certification. Excludes: pre-run-off stewardship (Operate); physical-asset decommissioning (EnablementAndOperations
+      x Retire); counterparty / agent relationship closure (PartyAndRelationship x Retire); product line retirement (ProductAndValue
+      x Retire).'
+    actors: Chief Financial Officer; Chief Risk Officer; Chief Actuary; Run-off Director (where appointed); Board Run-off
+      Committee; External auditor; Regulator supervisor (PRA / FCA / NAIC / IAIS / EIOPA member authorities); Reinsurer; Policyholder
+      ombudsman; Communications officer; Tax authority.
+    controls: Regulator notification and approval at run-off commencement and at material milestones; actuarial reserving
+      sign-off (annually at minimum); asset-liability matching review; capital adequacy certification throughout run-off;
+      policyholder communications audit; retained-records audit; quarterly regulator attestation; independent actuarial review
+      at portfolio transfer; auditor sign-off on liquidation-basis statements.
+    evidence:
+      sources:
+      - PRA PS20/24 (UK) imposes a solvent-exit plan obligation on in-scope insurers and a 28-day run-off plan once supervised
+        as a run-off firm.
+      - FSB Final Guidance on Insurance Resolution Strategies (2025) categorises run-off as solvent, insolvent, payout/transfer,
+        and liquidation.
+      - IFRS 17 Insurance Contracts (effective 2023) defines how policies in run-off are measured (current fulfillment value,
+        contractual service margin).
+      - ASC 205-30 Liquidation Basis of Accounting (FASB ASU 2013-07) governs financial-statement preparation when liquidation
+        becomes imminent.
+      - NAIC Model Regulation Service of Legal Process (Model 901) defines record retention and service-of-process obligations
+        during run-off.
+      - Insurance Run-off Association (IRO) Best Practice Guidance (2024) for governance and operations during run-off.
+      - APQC PCF 8.8 Perform financial wind-down (entity-level solvent exit).
+      evidence_strength: authoritative
+    evaluation:
+      process_reality: 'Established: regulated run-off is a documented, regulated, repeatable enterprise work-pattern with
+        its own authority chain (board, regulator, external actuarial sign-off, external auditor).'
+      transformation: Clear state change from going-concern to liquidation-basis or fulfillment-measurement; from active writing
+        to claims-handling; from growth model to run-off model.
+      trigger: 'Observable: regulator-supervised run-off authorisation; portfolio transfer; solvent exit approval. Each is
+        a well-defined regulatory event.'
+      outcome: 'Distinguishable and auditable: regulator certification of completion; surrender of authorisation; financial
+        statements on the appropriate basis; records retained per the service-of-process regime.'
+      boundary: 'Strong: regulator-acknowledged run-off authorisation before; surrender or completion certification after.
+        The boundary is enforced by the regulator, not by internal preference.'
+      semantic_identity: Verb (conclude) plus object (regulated run-off) plus outcome (run-off completed under regulatory
+        supervision) stand without the ECF label. The semantic core of the process is regulated termination, not generic wind-down.
+      cross_context_stability: Identity stable across insurer-portfolio run-off, mutual demutualisation wind-down, and insurance-entity
+        solvent exit; the same Process recurs with implementation variation.
+      cross_domain_applicability: Concentrated in insurance-led regulated wind-down today; non-insurance regulated wind-downs
+        (banks, pension funds) deferred to a future CR.
+      ecf_independence: Conclude a Regulated Run-Off names recognizable work without reference to the F&A x Retire ECF label.
+      duplication: No existing canonical BP covers regulated run-off at F&A x Retire; nearest neighbors (asset retirement
+        under E&O x Retire, counterparty closure under P&R x Retire) exclude the policyholder-resolution and statutory accounting
+        work.
+      composition: Business Process level; constituent reserving, asset-liability matching, communications, retained-records,
+        and exit accounting work decomposes to Activities at L3.
+      capability_distinction: A transformation with trigger and outcome, not a capability restatement.
+      governance_distinction: Not a policy or decision; a governed workflow whose controls are statutory obligations and accounting-standards
+        mandates.
+      lifecycle_span: Begins and ends within Retire; downstream policyholder claim handling and asset disposal recorded, not
+        duplicated.
+    disposition:
+      type: ADMIT-CANONICAL
+      canonical_process_ref: dea:process-conclude-regulated-run-off
+      related_contexts: []
+    scoring:
+      process_reality: 2
+      semantic_stability: 2
+      cross_domain_applicability: 1
+      boundary_clarity: 2
+      evidence_strength: 2
+      total: 9
+      rationale: Authoritative multi-source statutory and accounting-standards evidence (PRA PS20/24, FSB 2025, IFRS 17, ASC
+        205-30, NAIC Model 901, IRO 2024); strong boundary against Operate, E&O x Retire, P&R x Retire, and P&V x Retire;
+        cross-domain breadth limited to insurance-led regulated wind-down today, holding the total at 9.
+  - name: Operate Financial Wind-Down
+    proposed_identity:
+      verb: Operate
+      object: Financial Wind-Down
+      scope: enterprise
+    trigger: A regulated financial-stewardship wind-down is in progress (overlap with candidate 1's trigger; however this
+      candidate is bounded to non-insurance regulated unwinds such as a regulated bank wind-down or pension fund wind-up).
+    inputs: Run-off authorisation; financial-instrument inventory; creditor schedule; regulator notification register.
+    transformation: Operate a financial-stewardship wind-down for a non-insurance regulated entity (e.g. bank, pension fund).
+    outcome: The non-insurance regulated wind-down is operated through to completion.
+    boundary: Begins at non-insurance regulated wind-down authorisation. Ends at wind-down completion. Excludes insurance-led
+      run-off (candidate 1) and physical-asset decommissioning (EnablementAndOperations x Retire).
+    actors: Chief Financial Officer; Wind-down Director; Regulator; External auditor.
+    controls: Regulator notification; reserving; capital-adequacy attestation; creditor-priority compliance; records retention.
+    evidence:
+      sources:
+      - PRA PS6/16 (UK) Wind-down planning for insurers, but the bank-equivalent is the PRA's RRP (recovery and resolution
+        planning) regime and the FDIC's orderly liquidation authority (OLA, 12 USC 5390).
+      - FASB ASC 205-30 governs liquidation-basis accounting for any entity, not just insurers.
+      - EU BRRD (Directive 2014/59/EU) bank recovery and resolution regime.
+      evidence_strength: authoritative
+    evaluation:
+      process_reality: Established for banks, pension funds, and other non-insurance regulated entities.
+      transformation: Clear from going-concern to wind-down.
+      trigger: 'Observable: regulator-supervised wind-down authorisation; OLA appointment; BRRD resolution.'
+      outcome: 'Distinguishable: regulator certification of completion; surrender of authorisation.'
+      boundary: 'Strong: authorisation before; certification after.'
+      semantic_identity: The verb 'Operate' is a state verb, not a transformation verb. The verb form does not stand on its
+        own without the object; it describes the mode of execution rather than the transformation itself. This is the same
+        shape defect that the CR-BP-63 baseline record flagged for the l2_candidate. Defer.
+      cross_context_stability: Identity stable across insurer-portfolio run-off, mutual demutualisation wind-down, and insurance-entity
+        solvent exit; the same Process recurs with implementation variation.
+      cross_domain_applicability: Concentrated in insurance-led regulated wind-down today; non-insurance regulated wind-downs
+        (banks, pension funds) deferred to a future CR.
+      ecf_independence: Conclude a Regulated Run-Off names recognizable work without reference to the F&A x Retire ECF label.
+      duplication: No existing canonical BP covers regulated run-off at F&A x Retire; nearest neighbors (asset retirement
+        under E&O x Retire, counterparty closure under P&R x Retire) exclude the policyholder-resolution and statutory accounting
+        work.
+      composition: Business Process level; constituent reserving, asset-liability matching, communications, retained-records,
+        and exit accounting work decomposes to Activities at L3.
+      capability_distinction: A transformation with trigger and outcome, not a capability restatement.
+      governance_distinction: Not a policy or decision; a governed workflow whose controls are statutory obligations and accounting-standards
+        mandates.
+      lifecycle_span: Begins and ends within Retire; downstream policyholder claim handling and asset disposal recorded, not
+        duplicated.
+    disposition:
+      type: DEFER
+      related_contexts: []
+    scoring:
+      process_reality: 2
+      semantic_stability: 1
+      cross_domain_applicability: 1
+      boundary_clarity: 1
+      evidence_strength: 2
+      total: 5
+      rationale: Verb-form semantic-identity defect (Operate is a state verb, not a transformation verb); authoritative regulatory
+        evidence base; defer until cell-charter re-evaluation.
+  - name: Dispose of Investments
+    proposed_identity:
+      verb: Dispose
+      object: Investments
+      scope: enterprise
+    trigger: A run-off is in progress and an investment lot is identified for disposal as part of the asset-liability matching
+      plan.
+    inputs: Run-off authorisation; investment portfolio schedule; market liquidity assessment; tax-clearance plan.
+    transformation: Dispose of a bounded investment lot within an in-progress run-off.
+    outcome: The investment lot is disposed of, the proceeds are booked, and the asset-liability matching plan is updated.
+    boundary: Begins at the disposal decision for a specific investment lot; ends at booking the proceeds. Excludes the broader
+      run-off Process.
+    actors: Treasury; Investment officer; Tax officer.
+    controls: Asset-liability matching review; tax-clearance; market-pricing review.
+    evidence:
+      sources:
+      - APQC PCF 8.8.3 Disposal of investments during wind-down.
+      - IFRS 5 Non-current Assets Held for Sale and Discontinued Operations for measurement of investment lots held for sale
+        during run-off.
+      evidence_strength: authoritative
+    evaluation:
+      process_reality: 'Established: investment disposal is standard practice during run-off.'
+      transformation: 'Clear state change: from held to disposed.'
+      trigger: 'Observable: disposal decision within the asset-liability matching plan.'
+      outcome: 'Distinguishable: proceeds booked, plan updated.'
+      boundary: Bounded to the disposal event itself, not the broader run-off.
+      semantic_identity: Verb (Dispose) plus object (Investments) stand without the ECF label, BUT the candidate is Activity-shaped,
+        not Process-shaped. The boundary scope (one investment lot, one disposal decision) is below the L1 Process threshold.
+      cross_context_stability: Identity stable across insurer-portfolio run-off, mutual demutualisation wind-down, and insurance-entity
+        solvent exit; the same Process recurs with implementation variation.
+      cross_domain_applicability: Concentrated in insurance-led regulated wind-down today; non-insurance regulated wind-downs
+        (banks, pension funds) deferred to a future CR.
+      ecf_independence: Conclude a Regulated Run-Off names recognizable work without reference to the F&A x Retire ECF label.
+      duplication: No existing canonical BP covers regulated run-off at F&A x Retire; nearest neighbors (asset retirement
+        under E&O x Retire, counterparty closure under P&R x Retire) exclude the policyholder-resolution and statutory accounting
+        work.
+      composition: Business Process level; constituent reserving, asset-liability matching, communications, retained-records,
+        and exit accounting work decomposes to Activities at L3.
+      capability_distinction: A transformation with trigger and outcome, not a capability restatement.
+      governance_distinction: Not a policy or decision; a governed workflow whose controls are statutory obligations and accounting-standards
+        mandates.
+      lifecycle_span: Begins and ends within Retire; downstream policyholder claim handling and asset disposal recorded, not
+        duplicated.
+    disposition:
+      type: RECLASSIFY
+      related_contexts: []
+    scoring:
+      process_reality: 2
+      semantic_stability: 2
+      cross_domain_applicability: 2
+      boundary_clarity: 2
+      evidence_strength: 2
+      total: 3
+      rationale: Activity-shaped, not Process-shaped; reclassify as an Activity-level decomposition candidate under candidate
+        1's Process.
+  - name: Recognize Impairment and Exit Liabilities
+    proposed_identity:
+      verb: Recognize
+      object: Impairment and Exit Liabilities
+      scope: enterprise
+    trigger: An in-progress run-off requires recognition of impairment (per IFRS 9 / ASC 326) or exit liabilities (per IAS
+      37 / ASC 420) on the run-off balance sheet.
+    inputs: Run-off authorisation; asset register; contract register; actuarial review; legal review.
+    transformation: Recognize impairment and exit liabilities on the run-off balance sheet.
+    outcome: Impairment and exit liabilities are recognized, measured, and disclosed in the run-off financial statements.
+    boundary: Begins at the recognition event; ends at disclosure. Excludes the broader run-off Process.
+    actors: Chief Financial Officer; Chief Actuary; External auditor.
+    controls: Actuarial sign-off; auditor sign-off; disclosure-compliance review.
+    evidence:
+      sources:
+      - IFRS 9 Financial Instruments (impairment) and IAS 37 Provisions, Contingent Liabilities and Contingent Assets (exit
+        liabilities).
+      - ASC 326 Financial Instruments - Credit Losses and ASC 420 Exit or Disposal Cost Obligations (US GAAP equivalents).
+      evidence_strength: authoritative
+    evaluation:
+      process_reality: 'Established: impairment and exit-liability recognition is standard accounting practice during run-off.'
+      transformation: 'Clear state change: from unrecognized to recognized.'
+      trigger: 'Observable: recognition event per IFRS 9 / IAS 37 / ASC 326 / ASC 420.'
+      outcome: 'Distinguishable: financial statements reflect the recognized amounts.'
+      boundary: Bounded to the recognition event, not the broader run-off.
+      semantic_identity: Verb (Recognize) plus object (Impairment and Exit Liabilities) stand without the ECF label, BUT the
+        candidate is Activity-shaped, not Process-shaped.
+      cross_context_stability: Identity stable across insurer-portfolio run-off, mutual demutualisation wind-down, and insurance-entity
+        solvent exit; the same Process recurs with implementation variation.
+      cross_domain_applicability: Concentrated in insurance-led regulated wind-down today; non-insurance regulated wind-downs
+        (banks, pension funds) deferred to a future CR.
+      ecf_independence: Conclude a Regulated Run-Off names recognizable work without reference to the F&A x Retire ECF label.
+      duplication: No existing canonical BP covers regulated run-off at F&A x Retire; nearest neighbors (asset retirement
+        under E&O x Retire, counterparty closure under P&R x Retire) exclude the policyholder-resolution and statutory accounting
+        work.
+      composition: Business Process level; constituent reserving, asset-liability matching, communications, retained-records,
+        and exit accounting work decomposes to Activities at L3.
+      capability_distinction: A transformation with trigger and outcome, not a capability restatement.
+      governance_distinction: Not a policy or decision; a governed workflow whose controls are statutory obligations and accounting-standards
+        mandates.
+      lifecycle_span: Begins and ends within Retire; downstream policyholder claim handling and asset disposal recorded, not
+        duplicated.
+    disposition:
+      type: RECLASSIFY
+      related_contexts: []
+    scoring:
+      process_reality: 2
+      semantic_stability: 2
+      cross_domain_applicability: 2
+      boundary_clarity: 2
+      evidence_strength: 2
+      total: 3
+      rationale: Activity-shaped, not Process-shaped; reclassify as an Activity-level decomposition candidate under candidate
+        1's Process.
+  context_evaluation:
+    concerns_identified: true
+    candidates_considered: true
+    adjacent_contexts_reviewed: true
+    existing_processes_searched: true
+    lifecycle_spanning_considered: true
+    capability_distinctions_tested: true
+    pattern_candidates_considered: true
+    evidence_assessed: true
+    process_empty: false
+  rationale:
+    included: 'Regulated entity run-off: insurer, mutual, or portfolio under PRA PS20/24, FSB 2025, NAIC Model 901, IFRS 17,
+      ASC 205-30
+
+      Statutory accounting basis transition: going-concern to liquidation-basis (US) or fulfillment-measurement (IFRS 17 run-off)
+
+      Policyholder claim adjudication and payment during run-off
+
+      Run-off plan submission within 28 days of supervised run-off (PRA PS20/24)
+
+      Solvent exit certification (PRA) or completion certification (FSB) at run-off completion'
+    excluded: 'Pre-run-off financial stewardship (Operate; F&A x Operate)
+
+      Physical asset decommissioning (EnablementAndOperations x Retire; CR-BP-66)
+
+      Counterparty and agent relationship closure (PartyAndRelationship x Retire; CR-BP-67)
+
+      Product line retirement (ProductAndValue x Retire; CR-BP-67 adjacent)
+
+      Non-insurance regulated wind-downs (banks, pension funds) -- deferred to a future CR (candidate 2)'
+    unresolved: 'Future CR: re-evaluate candidate 2 (Operate Financial Wind-Down) once the cell charter is extended to include
+      non-insurance regulated wind-downs (banks under PRA BRRD / FDIC OLA, pension funds under PBGC termination regime)
+
+      Future CR: surface any non-insurance regulated-unwind candidate that warrants its own group at a sibling cell'
