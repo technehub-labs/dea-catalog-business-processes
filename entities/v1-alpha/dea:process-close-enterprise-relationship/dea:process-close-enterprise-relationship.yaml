@@ -54,6 +54,11 @@ ecfConformance:
 metadata:
   established_by: CR-BP-67
   established_at: '2026-09-14'
+  activity_references:
+  - dea:activity-plan-relationship-close-out
+  - dea:activity-settle-outstanding-obligations
+  - dea:activity-resolve-records-and-rights
+  - dea:activity-execute-evidenced-closure
   change_history:
   - cr: CR-BP-67
     date: '2026-09-14'
@@ -66,6 +71,12 @@ metadata:
       Enterprise Relationship); no admission-time refinement was
       required. Admission is governed: the discovery record
       recommends, this tranche admits.
+  - cr: CR-BP-69
+    date: '2026-09-15'
+    change: |
+      L3 decomposition landed: 4 Activity records deposited under the
+      CR-BP-69 admitted-BP L3 tranche (research/l3-candidate-universe.yaml).
+      Version unchanged per SIV-004 (additive metadata-only change).
 links:
 - rel: change-request
   href: change-requests/CR-BP-67-pr-retire-admission.md

@@ -51,6 +51,11 @@ ecfConformance:
 metadata:
   established_by: CR-BP-65
   established_at: '2026-09-14'
+  activity_references:
+  - dea:activity-verify-commencement-conditions
+  - dea:activity-effect-instrument-commencement
+  - dea:activity-communicate-obligations-and-rights
+  - dea:activity-establish-enforcement-baseline
   change_history:
   - cr: CR-BP-65
     date: '2026-09-14'
@@ -60,6 +65,12 @@ metadata:
       the CR-BP-63 discovery outcome (9/10, ADMIT-CANONICAL
       recommendation) under the CR-BP-62 method. Admission is governed:
       the discovery record recommends, this tranche admits.
+  - cr: CR-BP-69
+    date: '2026-09-15'
+    change: |
+      L3 decomposition landed: 4 Activity records deposited under the
+      CR-BP-69 admitted-BP L3 tranche (research/l3-candidate-universe.yaml).
+      Version unchanged per SIV-004 (additive metadata-only change).
 links:
 - rel: change-request
   href: change-requests/CR-BP-65-ge-activate-admission.md

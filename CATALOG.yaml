@@ -2,10 +2,10 @@ catalog:
   abbreviation: BP
   counts:
     candidates: 0
-    canonical: 671
-    entities: 672
-    open_change_requests: 80
-    research_files: 300
+    canonical: 691
+    entities: 692
+    open_change_requests: 81
+    research_files: 305
     retired: 1
   cross_cutting:
     change_requests: change-requests/
@@ -1748,6 +1748,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-communicate-obligations-and-rights
+    last_modified: '2026-09-15'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-communicate-obligations-and-rights/dea:activity-communicate-obligations-and-rights.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-compute-cycle-payroll
     last_modified: '2026-09-14'
     lifecycle_status: candidate
@@ -1851,6 +1862,28 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-configure-posting-rules/dea:activity-configure-posting-rules.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-confirm-operational-acceptance
+    last_modified: '2026-09-15'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-confirm-operational-acceptance/dea:activity-confirm-operational-acceptance.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-confirm-retirement-closure
+    last_modified: '2026-09-15'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-confirm-retirement-closure/dea:activity-confirm-retirement-closure.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -2716,6 +2749,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-effect-instrument-commencement
+    last_modified: '2026-09-15'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-effect-instrument-commencement/dea:activity-effect-instrument-commencement.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-equip-bodies-with-instruments
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -2742,6 +2786,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-establish-compliance-calendar/dea:activity-establish-compliance-calendar.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-establish-enforcement-baseline
+    last_modified: '2026-09-15'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-establish-enforcement-baseline/dea:activity-establish-enforcement-baseline.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -2841,6 +2896,28 @@ catalog:
     last_modified: '2026-09-14'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-execute-disbursements/dea:activity-execute-disbursements.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-execute-disposal-routes
+    last_modified: '2026-09-15'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-execute-disposal-routes/dea:activity-execute-disposal-routes.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-execute-evidenced-closure
+    last_modified: '2026-09-15'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-execute-evidenced-closure/dea:activity-execute-evidenced-closure.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -3017,6 +3094,28 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-execute-scheduled-platform-routines/dea:activity-execute-scheduled-platform-routines.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-execute-service-cutover
+    last_modified: '2026-09-15'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-execute-service-cutover/dea:activity-execute-service-cutover.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-execute-service-withdrawal
+    last_modified: '2026-09-15'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-execute-service-withdrawal/dea:activity-execute-service-withdrawal.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -4234,6 +4333,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-plan-asset-retirement
+    last_modified: '2026-09-15'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-plan-asset-retirement/dea:activity-plan-asset-retirement.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-plan-compliance-audits
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -4260,6 +4370,28 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-plan-quality-inspection/dea:activity-plan-quality-inspection.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-plan-relationship-close-out
+    last_modified: '2026-09-15'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-plan-relationship-close-out/dea:activity-plan-relationship-close-out.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-plan-service-withdrawal
+    last_modified: '2026-09-15'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-plan-service-withdrawal/dea:activity-plan-service-withdrawal.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -4326,6 +4458,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-prepare-tax-returns/dea:activity-prepare-tax-returns.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-prepare-transition-readiness
+    last_modified: '2026-09-15'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-prepare-transition-readiness/dea:activity-prepare-transition-readiness.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -4733,6 +4876,39 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-resolve-logistics-exceptions/dea:activity-resolve-logistics-exceptions.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-resolve-records-and-rights
+    last_modified: '2026-09-15'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-resolve-records-and-rights/dea:activity-resolve-records-and-rights.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-resolve-residual-obligations
+    last_modified: '2026-09-15'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-resolve-residual-obligations/dea:activity-resolve-residual-obligations.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-resolve-residual-value-and-obligations
+    last_modified: '2026-09-15'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-resolve-residual-value-and-obligations/dea:activity-resolve-residual-value-and-obligations.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -5158,6 +5334,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-settle-outstanding-obligations
+    last_modified: '2026-09-15'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-settle-outstanding-obligations/dea:activity-settle-outstanding-obligations.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-specify-decision-rights
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -5217,6 +5404,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-specify-proposition-components/dea:activity-specify-proposition-components.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-stabilize-early-operations
+    last_modified: '2026-09-15'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-stabilize-early-operations/dea:activity-stabilize-early-operations.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -5422,6 +5620,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-verify-commencement-conditions
+    last_modified: '2026-09-15'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-verify-commencement-conditions/dea:activity-verify-commencement-conditions.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-verify-delivery-capability
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -5532,6 +5741,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-withdraw-asset-from-operation
+    last_modified: '2026-09-15'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-withdraw-asset-from-operation/dea:activity-withdraw-asset-from-operation.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:group-agent-acquisition-and-onboarding
     last_modified: '2026-09-08'
     lifecycle_status: candidate
@@ -5599,7 +5819,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: dea:group-customer-lifecycle-management
-    last_modified: '2026-09-14'
+    last_modified: '2026-09-15'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:group-customer-lifecycle-management/dea:group-customer-lifecycle-management.yaml
     research_count: 4
@@ -6017,10 +6237,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-bring-into-force
-    last_modified: '2026-09-14'
+    last_modified: '2026-09-15'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-bring-into-force/dea:process-bring-into-force.yaml
-    research_count: 2
+    research_count: 3
     retired_count: 0
     state: canonical
     type: Process
@@ -6116,10 +6336,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-close-enterprise-relationship
-    last_modified: '2026-09-14'
+    last_modified: '2026-09-15'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-close-enterprise-relationship/dea:process-close-enterprise-relationship.yaml
-    research_count: 2
+    research_count: 3
     retired_count: 0
     state: canonical
     type: Process
@@ -6325,10 +6545,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-decommission
-    last_modified: '2026-09-14'
+    last_modified: '2026-09-15'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-decommission/dea:process-decommission.yaml
-    research_count: 2
+    research_count: 3
     retired_count: 0
     state: canonical
     type: Process
@@ -7381,10 +7601,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-transition-out-of-service
-    last_modified: '2026-09-14'
+    last_modified: '2026-09-15'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-transition-out-of-service/dea:process-transition-out-of-service.yaml
-    research_count: 2
+    research_count: 3
     retired_count: 0
     state: canonical
     type: Process
@@ -7392,10 +7612,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-transition-to-service
-    last_modified: '2026-09-14'
+    last_modified: '2026-09-15'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-transition-to-service/dea:process-transition-to-service.yaml
-    research_count: 2
+    research_count: 3
     retired_count: 0
     state: canonical
     type: Process
@@ -7888,6 +8108,9 @@ catalog:
   - entity_id: dea:activity-commit-workforce-and-agent-mix
     files: []
     path: entities/v1-alpha/dea:activity-commit-workforce-and-agent-mix/research/
+  - entity_id: dea:activity-communicate-obligations-and-rights
+    files: []
+    path: entities/v1-alpha/dea:activity-communicate-obligations-and-rights/research/
   - entity_id: dea:activity-compute-cycle-payroll
     files: []
     path: entities/v1-alpha/dea:activity-compute-cycle-payroll/research/
@@ -7918,6 +8141,12 @@ catalog:
   - entity_id: dea:activity-configure-posting-rules
     files: []
     path: entities/v1-alpha/dea:activity-configure-posting-rules/research/
+  - entity_id: dea:activity-confirm-operational-acceptance
+    files: []
+    path: entities/v1-alpha/dea:activity-confirm-operational-acceptance/research/
+  - entity_id: dea:activity-confirm-retirement-closure
+    files: []
+    path: entities/v1-alpha/dea:activity-confirm-retirement-closure/research/
   - entity_id: dea:activity-consolidate-adaptation-drivers
     files: []
     path: entities/v1-alpha/dea:activity-consolidate-adaptation-drivers/research/
@@ -8152,6 +8381,9 @@ catalog:
   - entity_id: dea:activity-draft-workforce-and-agent-mix
     files: []
     path: entities/v1-alpha/dea:activity-draft-workforce-and-agent-mix/research/
+  - entity_id: dea:activity-effect-instrument-commencement
+    files: []
+    path: entities/v1-alpha/dea:activity-effect-instrument-commencement/research/
   - entity_id: dea:activity-equip-bodies-with-instruments
     files: []
     path: entities/v1-alpha/dea:activity-equip-bodies-with-instruments/research/
@@ -8161,6 +8393,9 @@ catalog:
   - entity_id: dea:activity-establish-compliance-calendar
     files: []
     path: entities/v1-alpha/dea:activity-establish-compliance-calendar/research/
+  - entity_id: dea:activity-establish-enforcement-baseline
+    files: []
+    path: entities/v1-alpha/dea:activity-establish-enforcement-baseline/research/
   - entity_id: dea:activity-establish-network-nodes
     files: []
     path: entities/v1-alpha/dea:activity-establish-network-nodes/research/
@@ -8188,6 +8423,12 @@ catalog:
   - entity_id: dea:activity-execute-disbursements
     files: []
     path: entities/v1-alpha/dea:activity-execute-disbursements/research/
+  - entity_id: dea:activity-execute-disposal-routes
+    files: []
+    path: entities/v1-alpha/dea:activity-execute-disposal-routes/research/
+  - entity_id: dea:activity-execute-evidenced-closure
+    files: []
+    path: entities/v1-alpha/dea:activity-execute-evidenced-closure/research/
   - entity_id: dea:activity-execute-facility-work-orders
     files: []
     path: entities/v1-alpha/dea:activity-execute-facility-work-orders/research/
@@ -8236,6 +8477,12 @@ catalog:
   - entity_id: dea:activity-execute-scheduled-platform-routines
     files: []
     path: entities/v1-alpha/dea:activity-execute-scheduled-platform-routines/research/
+  - entity_id: dea:activity-execute-service-cutover
+    files: []
+    path: entities/v1-alpha/dea:activity-execute-service-cutover/research/
+  - entity_id: dea:activity-execute-service-withdrawal
+    files: []
+    path: entities/v1-alpha/dea:activity-execute-service-withdrawal/research/
   - entity_id: dea:activity-execute-shipments
     files: []
     path: entities/v1-alpha/dea:activity-execute-shipments/research/
@@ -8566,6 +8813,9 @@ catalog:
   - entity_id: dea:activity-plan-agent-development
     files: []
     path: entities/v1-alpha/dea:activity-plan-agent-development/research/
+  - entity_id: dea:activity-plan-asset-retirement
+    files: []
+    path: entities/v1-alpha/dea:activity-plan-asset-retirement/research/
   - entity_id: dea:activity-plan-compliance-audits
     files: []
     path: entities/v1-alpha/dea:activity-plan-compliance-audits/research/
@@ -8575,6 +8825,12 @@ catalog:
   - entity_id: dea:activity-plan-quality-inspection
     files: []
     path: entities/v1-alpha/dea:activity-plan-quality-inspection/research/
+  - entity_id: dea:activity-plan-relationship-close-out
+    files: []
+    path: entities/v1-alpha/dea:activity-plan-relationship-close-out/research/
+  - entity_id: dea:activity-plan-service-withdrawal
+    files: []
+    path: entities/v1-alpha/dea:activity-plan-service-withdrawal/research/
   - entity_id: dea:activity-plan-transport-and-deliveries
     files: []
     path: entities/v1-alpha/dea:activity-plan-transport-and-deliveries/research/
@@ -8593,6 +8849,9 @@ catalog:
   - entity_id: dea:activity-prepare-tax-returns
     files: []
     path: entities/v1-alpha/dea:activity-prepare-tax-returns/research/
+  - entity_id: dea:activity-prepare-transition-readiness
+    files: []
+    path: entities/v1-alpha/dea:activity-prepare-transition-readiness/research/
   - entity_id: dea:activity-prioritize-allocation-decisions
     files: []
     path: entities/v1-alpha/dea:activity-prioritize-allocation-decisions/research/
@@ -8704,6 +8963,15 @@ catalog:
   - entity_id: dea:activity-resolve-logistics-exceptions
     files: []
     path: entities/v1-alpha/dea:activity-resolve-logistics-exceptions/research/
+  - entity_id: dea:activity-resolve-records-and-rights
+    files: []
+    path: entities/v1-alpha/dea:activity-resolve-records-and-rights/research/
+  - entity_id: dea:activity-resolve-residual-obligations
+    files: []
+    path: entities/v1-alpha/dea:activity-resolve-residual-obligations/research/
+  - entity_id: dea:activity-resolve-residual-value-and-obligations
+    files: []
+    path: entities/v1-alpha/dea:activity-resolve-residual-value-and-obligations/research/
   - entity_id: dea:activity-respond-to-asset-breakdowns
     files: []
     path: entities/v1-alpha/dea:activity-respond-to-asset-breakdowns/research/
@@ -8818,6 +9086,9 @@ catalog:
   - entity_id: dea:activity-set-performance-expectations
     files: []
     path: entities/v1-alpha/dea:activity-set-performance-expectations/research/
+  - entity_id: dea:activity-settle-outstanding-obligations
+    files: []
+    path: entities/v1-alpha/dea:activity-settle-outstanding-obligations/research/
   - entity_id: dea:activity-specify-decision-rights
     files: []
     path: entities/v1-alpha/dea:activity-specify-decision-rights/research/
@@ -8836,6 +9107,9 @@ catalog:
   - entity_id: dea:activity-specify-proposition-components
     files: []
     path: entities/v1-alpha/dea:activity-specify-proposition-components/research/
+  - entity_id: dea:activity-stabilize-early-operations
+    files: []
+    path: entities/v1-alpha/dea:activity-stabilize-early-operations/research/
   - entity_id: dea:activity-stage-variants-for-readiness
     files: []
     path: entities/v1-alpha/dea:activity-stage-variants-for-readiness/research/
@@ -8890,6 +9164,9 @@ catalog:
   - entity_id: dea:activity-verify-body-readiness
     files: []
     path: entities/v1-alpha/dea:activity-verify-body-readiness/research/
+  - entity_id: dea:activity-verify-commencement-conditions
+    files: []
+    path: entities/v1-alpha/dea:activity-verify-commencement-conditions/research/
   - entity_id: dea:activity-verify-delivery-capability
     files: []
     path: entities/v1-alpha/dea:activity-verify-delivery-capability/research/
@@ -8920,6 +9197,9 @@ catalog:
   - entity_id: dea:activity-vet-pool-sources
     files: []
     path: entities/v1-alpha/dea:activity-vet-pool-sources/research/
+  - entity_id: dea:activity-withdraw-asset-from-operation
+    files: []
+    path: entities/v1-alpha/dea:activity-withdraw-asset-from-operation/research/
   - entity_id: dea:group-agent-acquisition-and-onboarding
     files: []
     path: entities/v1-alpha/dea:group-agent-acquisition-and-onboarding/research/
@@ -9087,6 +9367,7 @@ catalog:
     files:
     - README.md
     - l2-admission-deposition.yaml
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-bring-into-force/research/
   - entity_id: dea:process-build-budgeting-and-forecasting-systems
     files:
@@ -9132,6 +9413,7 @@ catalog:
     files:
     - README.md
     - l2-admission-deposition.yaml
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-close-enterprise-relationship/research/
   - entity_id: dea:process-codify-charters-and-policies
     files:
@@ -9233,6 +9515,7 @@ catalog:
     files:
     - README.md
     - l2-admission-deposition.yaml
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-decommission/research/
   - entity_id: dea:process-define-enterprise-purpose-and-ambition
     files:
@@ -9722,11 +10005,13 @@ catalog:
     files:
     - README.md
     - l2-admission-deposition.yaml
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-transition-out-of-service/research/
   - entity_id: dea:process-transition-to-service
     files:
     - README.md
     - l2-admission-deposition.yaml
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-transition-to-service/research/
   - entity_id: dea:process-translate-strategic-choices-into-initiatives
     files:

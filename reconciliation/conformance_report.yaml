@@ -2,13 +2,13 @@ schema_version: 1
 report_at_run: CR-BP-16 S23
 report_at_source: scripts/build_conformance_report.py
 catalog_root: /home/hermes/dea-work/dea-catalog-processes
-total_records: 712
+total_records: 732
 conformance_levels:
   0: 0
   1: 0
   2: 0
   3: 0
-  4: 712
+  4: 732
 records:
 - id: dea:activity-address-performance-exceptions
   kind: Activity
@@ -1580,6 +1580,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-communicate-obligations-and-rights
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-communicate-obligations-and-rights/dea:activity-communicate-obligations-and-rights.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-compute-cycle-payroll
   kind: Activity
   path: entities/v1-alpha/dea:activity-compute-cycle-payroll/dea:activity-compute-cycle-payroll.yaml
@@ -1673,6 +1683,26 @@ records:
 - id: dea:activity-configure-posting-rules
   kind: Activity
   path: entities/v1-alpha/dea:activity-configure-posting-rules/dea:activity-configure-posting-rules.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-confirm-operational-acceptance
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-confirm-operational-acceptance/dea:activity-confirm-operational-acceptance.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-confirm-retirement-closure
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-confirm-retirement-closure/dea:activity-confirm-retirement-closure.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -2460,6 +2490,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-effect-instrument-commencement
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-effect-instrument-commencement/dea:activity-effect-instrument-commencement.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-equip-bodies-with-instruments
   kind: Activity
   path: entities/v1-alpha/dea:activity-equip-bodies-with-instruments/dea:activity-equip-bodies-with-instruments.yaml
@@ -2483,6 +2523,16 @@ records:
 - id: dea:activity-establish-compliance-calendar
   kind: Activity
   path: entities/v1-alpha/dea:activity-establish-compliance-calendar/dea:activity-establish-compliance-calendar.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-establish-enforcement-baseline
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-establish-enforcement-baseline/dea:activity-establish-enforcement-baseline.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -2573,6 +2623,26 @@ records:
 - id: dea:activity-execute-disbursements
   kind: Activity
   path: entities/v1-alpha/dea:activity-execute-disbursements/dea:activity-execute-disbursements.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-execute-disposal-routes
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-execute-disposal-routes/dea:activity-execute-disposal-routes.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-execute-evidenced-closure
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-execute-evidenced-closure/dea:activity-execute-evidenced-closure.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -2733,6 +2803,26 @@ records:
 - id: dea:activity-execute-scheduled-platform-routines
   kind: Activity
   path: entities/v1-alpha/dea:activity-execute-scheduled-platform-routines/dea:activity-execute-scheduled-platform-routines.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-execute-service-cutover
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-execute-service-cutover/dea:activity-execute-service-cutover.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-execute-service-withdrawal
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-execute-service-withdrawal/dea:activity-execute-service-withdrawal.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -3840,6 +3930,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-plan-asset-retirement
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-plan-asset-retirement/dea:activity-plan-asset-retirement.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-plan-compliance-audits
   kind: Activity
   path: entities/v1-alpha/dea:activity-plan-compliance-audits/dea:activity-plan-compliance-audits.yaml
@@ -3863,6 +3963,26 @@ records:
 - id: dea:activity-plan-quality-inspection
   kind: Activity
   path: entities/v1-alpha/dea:activity-plan-quality-inspection/dea:activity-plan-quality-inspection.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-plan-relationship-close-out
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-plan-relationship-close-out/dea:activity-plan-relationship-close-out.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-plan-service-withdrawal
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-plan-service-withdrawal/dea:activity-plan-service-withdrawal.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -3923,6 +4043,16 @@ records:
 - id: dea:activity-prepare-tax-returns
   kind: Activity
   path: entities/v1-alpha/dea:activity-prepare-tax-returns/dea:activity-prepare-tax-returns.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-prepare-transition-readiness
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-prepare-transition-readiness/dea:activity-prepare-transition-readiness.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -4293,6 +4423,36 @@ records:
 - id: dea:activity-resolve-logistics-exceptions
   kind: Activity
   path: entities/v1-alpha/dea:activity-resolve-logistics-exceptions/dea:activity-resolve-logistics-exceptions.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-resolve-records-and-rights
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-resolve-records-and-rights/dea:activity-resolve-records-and-rights.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-resolve-residual-obligations
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-resolve-residual-obligations/dea:activity-resolve-residual-obligations.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-resolve-residual-value-and-obligations
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-resolve-residual-value-and-obligations/dea:activity-resolve-residual-value-and-obligations.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -4680,6 +4840,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-settle-outstanding-obligations
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-settle-outstanding-obligations/dea:activity-settle-outstanding-obligations.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-specify-decision-rights
   kind: Activity
   path: entities/v1-alpha/dea:activity-specify-decision-rights/dea:activity-specify-decision-rights.yaml
@@ -4733,6 +4903,16 @@ records:
 - id: dea:activity-specify-proposition-components
   kind: Activity
   path: entities/v1-alpha/dea:activity-specify-proposition-components/dea:activity-specify-proposition-components.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-stabilize-early-operations
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-stabilize-early-operations/dea:activity-stabilize-early-operations.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -4920,6 +5100,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-verify-commencement-conditions
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-verify-commencement-conditions/dea:activity-verify-commencement-conditions.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-verify-delivery-capability
   kind: Activity
   path: entities/v1-alpha/dea:activity-verify-delivery-capability/dea:activity-verify-delivery-capability.yaml
@@ -5013,6 +5203,16 @@ records:
 - id: dea:activity-vet-pool-sources
   kind: Activity
   path: entities/v1-alpha/dea:activity-vet-pool-sources/dea:activity-vet-pool-sources.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-withdraw-asset-from-operation
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-withdraw-asset-from-operation/dea:activity-withdraw-asset-from-operation.yaml
   level: 4
   level_breakdown:
     L1_structural: true
