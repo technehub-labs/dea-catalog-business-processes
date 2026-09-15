@@ -754,7 +754,7 @@ records:
       type: Process
       path: entities/v1-alpha/dea:process-onboard-regulated-party-relationship/dea:process-onboard-regulated-party-relationship.yaml
       process_intent: manage
-      process_classification: standardization
+      process_classification: management
       legacy_findings:
         - no-specialization
     - id: dea:process-onboard-tax-and-compliance-capability
