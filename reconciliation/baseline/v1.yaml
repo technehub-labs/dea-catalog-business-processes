@@ -174,6 +174,10 @@ records:
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-proposition-design/dea:group-proposition-design.yaml
     sha256: 11ee3ca73d22d617a8ddbe3d0e411e68e4fa105c01fda08af8fe0e08d9ee09c1
+  - id: dea:group-regulated-onboarding
+    type: ProcessGroup
+    path: entities/v1-alpha/dea:group-regulated-onboarding/dea:group-regulated-onboarding.yaml
+    sha256: a55fcf19885a4ac3dffa384e3378809f7c4b7a0e4cccbe155ee7134f7e6ded4b
   - id: dea:group-relationship-termination
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-relationship-termination/dea:group-relationship-termination.yaml
@@ -294,6 +298,10 @@ records:
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-oe-retire.yaml
     sha256: b28ef84281c80b92de9bf3ef9239c1928b941528a34ebe1aef25ea97e7abc739
+  - id: dea:pc-pr-act
+    type: ProcessContext
+    path: contexts/v1-alpha/dea-pc-pr-act.yaml
+    sha256: b0d538a2858189385edc0f1d8d7a3df169985c5d6ff4ab28b44b364887ca5b82
   - id: dea:pc-pr-b
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-pr-b.yaml
@@ -730,6 +738,10 @@ records:
     type: Process
     path: entities/v1-alpha/dea:process-monitor-strategic-performance/dea:process-monitor-strategic-performance.yaml
     sha256: 5a9ecacc673a894a07583f8e8723a34e65429c378639b75f2ea78d8a5739a2cd
+  - id: dea:process-onboard-regulated-party-relationship
+    type: Process
+    path: entities/v1-alpha/dea:process-onboard-regulated-party-relationship/dea:process-onboard-regulated-party-relationship.yaml
+    sha256: 7564cba1573314f7ae31debcc34bb411d517a17cc84160957c01bdcc817aa19b
   - id: dea:process-onboard-tax-and-compliance-capability
     type: Process
     path: entities/v1-alpha/dea:process-onboard-tax-and-compliance-capability/dea:process-onboard-tax-and-compliance-capability.yaml

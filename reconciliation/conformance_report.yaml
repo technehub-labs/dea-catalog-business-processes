@@ -2,13 +2,13 @@ schema_version: 1
 report_at_run: CR-BP-16 S23
 report_at_source: scripts/build_conformance_report.py
 catalog_root: /home/hermes/dea-work/dea-catalog-processes
-total_records: 732
+total_records: 735
 conformance_levels:
   0: 0
   1: 0
   2: 0
   3: 0
-  4: 732
+  4: 735
 records:
 - id: dea:activity-address-performance-exceptions
   kind: Activity
@@ -5540,6 +5540,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:group-regulated-onboarding
+  kind: Entity
+  path: entities/v1-alpha/dea:group-regulated-onboarding/dea:group-regulated-onboarding.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:group-relationship-termination
   kind: Entity
   path: entities/v1-alpha/dea:group-relationship-termination/dea:group-relationship-termination.yaml
@@ -6530,6 +6540,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:process-onboard-regulated-party-relationship
+  kind: Entity
+  path: entities/v1-alpha/dea:process-onboard-regulated-party-relationship/dea:process-onboard-regulated-party-relationship.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:process-onboard-tax-and-compliance-capability
   kind: Entity
   path: entities/v1-alpha/dea:process-onboard-tax-and-compliance-capability/dea:process-onboard-tax-and-compliance-capability.yaml
@@ -7143,6 +7163,16 @@ records:
 - id: dea:pc-oe-retire
   kind: Unknown
   path: contexts/v1-alpha/dea-pc-oe-retire.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:pc-pr-act
+  kind: Unknown
+  path: contexts/v1-alpha/dea-pc-pr-act.yaml
   level: 4
   level_breakdown:
     L1_structural: true

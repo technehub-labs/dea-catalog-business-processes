@@ -146,12 +146,13 @@ def test_tranche_count_is_ten() -> None:
     + 2 CR-BP-64 discovery-driven admissions (pv-act.64, pv-ret.64)
     + 1 CR-BP-65 discovery-driven admission (ge-act.65)
     + 1 CR-BP-66 discovery-driven admission (oe-ret.66)
-    + 1 CR-BP-67 discovery-driven admission (pr-ret.67).
+    + 1 CR-BP-67 discovery-driven admission (pr-ret.67)
+    + 1 CR-BP-71 discovery-driven admission (pr-act.71, escape-clause KYC).
     """
     plan = yaml.safe_load(
         (REPO_ROOT / "reconciliation/tranches/plan.yaml").read_text()
     )
-    assert len(plan["tranches"]) == 70
+    assert len(plan["tranches"]) == 71
 
 
 def test_live_check_dispositions_passes() -> None:

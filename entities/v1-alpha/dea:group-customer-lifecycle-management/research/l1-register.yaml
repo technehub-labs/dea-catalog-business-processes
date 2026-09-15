@@ -15,12 +15,12 @@ stages:
 - Improve
 - Retire
 ratification:
-  version: 8
-  cr: CR-BP-67
-  ratified_at: '2026-09-14'
-  supersedes: version 7 (CR-BP-66, ratified 2026-09-14)
-  ratified_accepted: 40
-  backlog_deferred: 9
+  version: 9
+  cr: CR-BP-71
+  ratified_at: '2026-09-15'
+  supersedes: version 8 (CR-BP-67, ratified 2026-09-14)
+  ratified_accepted: 41
+  backlog_deferred: 8
   v4_to_v5_note: 'Two ProductAndValue cells (Activate, Retire) reverse from
     backlog-deferred to ratified-accepted/landed on CR-BP-63 discovery evidence
     under the CR-BP-62 lifecycle process-discovery method. The remaining 12
@@ -49,6 +49,16 @@ ratification:
     Activate/Retire cells keep their dispositions unchanged with documented
     CR-BP-63 outcomes. Targeted disposition reversal, not a re-derivation;
     the v4 rederivation_basis still stands.'
+  v8_to_v9_note: 'One PartyAndRelationship cell (Activate) reverses from backlog-deferred
+    to ratified-accepted/landed on CR-BP-70 escape-clause discovery evidence
+    (Onboard Regulated Party Relationship, 9/10, FATF R.10 + FinCEN CDD 31 CFR
+    1010.230 + CIP + EU AMLD4/AMLD5/AMLD6 + Basel BCBS ML/FT guidelines + Wolfsberg
+    Group guidance). The v2 per-cell escape condition ("defer until a regulated
+    onboarding (e.g. KYC for financial services) requires a distinct group") is
+    activated. The remaining 8 Activate/Retire cells keep their dispositions
+    unchanged. Targeted disposition reversal, not a re-derivation; the v4
+    rederivation_basis still stands.'
+
   rederivation_basis: 'Re-derived against dea-metaframework framework/domain-grounding.md
     at ECF
 
@@ -652,26 +662,39 @@ register:
       ratified_by: CR-BP-19
       audit_status: landed
     Activate:
-      process_context: dea:pc-pr-activate
+      process_context: dea:pc-pr-act
       l1_candidates:
-      - Relationship Activation
+      - Regulated Onboarding
       l2_candidates:
-      - Activate new customer onboarding
-      - Activate customer journeys
-      in_scope: First-time relationship activation
+      - Onboard regulated party relationship
+      in_scope: Regulated onboarding (KYC/AML/CDD), identity verification, beneficial-ownership
+        resolution, risk classification, and onboarding approval
       out_of_scope:
+      - Non-regulated first-time activation (handled inside dea:pc-pr-operate per register
+        v2 doctrine)
       - Relationship sustainment (Operate)
       evidence:
+      - FATF Recommendation 10 (CDD when establishing business relationships)
+      - FinCEN CDD Rule 31 CFR 1010.230 + Customer Identification Program
+      - EU AMLD4/AMLD5/AMLD6 (CDD on establishing business relationship)
+      - Basel BCBS guidelines on the sound management of ML/FT risks
+      - Wolfsberg Group guidance on customer onboarding and due diligence
       - TM Forum eTOM Customer Acquisition & Lifecycle Management
-      disposition: backlog-deferred
-      ratified_at: '2026-09-07'
-      ratified_by: CR-BP-19
-      deferral_reason: Activate and Retire are lifecycle transition stages, not stable
-        Process Group operating scopes (register-wide deferred_rationale). First-time
-        activation is mostly handled inside the L1 group Operate in practice; defer
-        until a regulated onboarding (e.g. KYC for financial services) requires a
-        distinct group.
-      audit_status: backlog-deferred
+      - CR-BP-70 escape-clause discovery record
+      disposition: ratified-accepted
+      ratified_at: '2026-09-15'
+      ratified_by: CR-BP-71
+      admission: Reversed from backlog-deferred on CR-BP-70 escape-clause discovery evidence
+        (9/10, ADMIT-CANONICAL, dea:discovery-party-and-relationship-activate-escape).
+        The register v2 cell''s verbatim escape condition ("defer until a regulated onboarding
+        (e.g. KYC for financial services) requires a distinct group") is activated by
+        FATF R.10, FinCEN CDD 31 CFR 1010.230 + CIP, EU AMLD4/AMLD5/AMLD6, Basel BCBS
+        ML/FT guidelines, and Wolfsberg Group guidance.
+      migration_note: Activate and Retire are lifecycle transition stages; non-regulated
+        first-time activation continues to be handled inside dea:pc-pr-operate per
+        register v2 doctrine. Regulated onboarding now requires a distinct group
+        (Regulated Onboarding) per the activated escape clause.
+      audit_status: landed
     Operate:
       process_context: dea:pc-pr-operate
       l1_candidates:

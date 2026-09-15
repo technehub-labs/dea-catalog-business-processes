@@ -22,8 +22,8 @@ ordering_rationale: 'The 10 Process Contexts map to the ECF matrix
 
   '
 summary:
-  total_tranches: 70
-  total_records: 131
+  total_tranches: 71
+  total_records: 132
   records_per_tranche:
     cd-b: 2
     cd-c: 2
@@ -95,6 +95,7 @@ summary:
     ge-act.65: 1
     oe-ret.66: 1
     pr-ret.67: 1
+    pr-act.71: 1
 tranches:
 - tranche_id: cd-b
   context_ref: dea:pc-pr-b
@@ -1183,6 +1184,28 @@ tranches:
     evidence; the cell reverses from backlog-deferred to
     ratified-accepted/landed in register v8. This completes the
     CR-BP-63 recommended admissions.
+
+- tranche_id: pr-act.71
+  context_ref: dea:pc-pr-act
+  context_name: party-and-relationship / activate
+  group_ref: dea:group-regulated-onboarding
+  cell: PartyAndRelationship.Activate
+  records:
+  - dea:process-onboard-regulated-party-relationship
+  status: applied
+  applied_by: CR-BP-71
+  applied_pr: null
+  rationale: >-
+    First discovery-driven admission under the CR-BP-62 escape-clause
+    method (CR-BP-70 discovery exercise; CR-BP-71 admission tranche).
+    Onboard Regulated Party Relationship scored 9/10 with an
+    ADMIT-CANONICAL recommendation at PartyAndRelationship x Activate
+    on the register v2 cell verbatim escape condition (defer until a
+    regulated onboarding, e.g. KYC for financial services, requires a
+    distinct group). Evidence base -- FATF R.10, FinCEN CDD 31 CFR
+    1010.230 + CIP, EU AMLD4/AMLD5/AMLD6, Basel BCBS ML/FT guidelines,
+    Wolfsberg Group guidance. The cell reverses from backlog-deferred
+    to ratified-accepted/landed in register v9.
 cross_tranche_dependencies: none
 review_checkpoints:
   cd-b: 1
@@ -1253,3 +1276,4 @@ review_checkpoints:
   ge-act.65: 1
   oe-ret.66: 1
   pr-ret.67: 1
+  pr-act.71: 1
