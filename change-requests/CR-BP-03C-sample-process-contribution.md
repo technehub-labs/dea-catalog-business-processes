@@ -74,15 +74,15 @@ portfolio.
 relationships:
   # Structural: this BP is the root; no composes relationship.
   # Capability realization: realizes the Business Capability
-  # `Manage Customer Relationship`.
-  - source_id: dea:process-manage-customer-relationship
-    target_id: dea:entity-capability:manage-customer-relationship
+  # `Customer Relationship Management`.
+  - source_id: dea:process-customer-relationship-management
+    target_id: dea:entity-capability:customer-relationship-management
     relationship_type: realizes
     status: active
     direction: "outgoing"
     rationale: |
       The Business Process realizes the Business Capability
-      `Manage Customer Relationship`. The capability is the
+      `Customer Relationship Management`. The capability is the
       abstract "what the enterprise can do"; the process is
       the structured "how it does it".
     asserted_by: "DEa team"
@@ -166,7 +166,7 @@ md5:  d6a3c1f8...  (refined during implementation)
   of the machinery. Future CRs (CR-BP-06, CR-BP-07, ...)
   will add more BPs.
 - **The capability reference is forward-looking**. The
-  Business Capability `dea:entity-capability:manage-customer-relationship`
+  Business Capability `dea:entity-capability:customer-relationship-management`
   will live in `dea-catalog-business-capabilities`. Until
   that catalog lands the capability entry, the BP's
   `realizes` relationship references a forward-looking
@@ -215,5 +215,4 @@ md5:  d6a3c1f8...  (refined during implementation)
 
 ## 9. Pause-before-merge
 
-Per CR-programme convention, paused before merge. Awaiting
-sign-off.
+Processes are adopted through a submission and CR-gate (CR-programme convention, is gated with a pause for processing, and voting) before merging into the main catalog. 
