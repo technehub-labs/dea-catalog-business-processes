@@ -46,10 +46,11 @@ adjacent_contexts:
 
 # Business Processes belonging to this context (PC-008).
 processes:
-    - dea:process-secure-funding-facilities
-      - dea:process-implement-financial-systems-and-ledger
-      - dea:process-build-budgeting-and-forecasting-systems
-      - dea:process-onboard-tax-and-compliance-capability
+  - dea:process-secure-funding-facilities
+  - dea:process-implement-financial-systems-and-ledger
+  - dea:process-build-budgeting-and-forecasting-systems
+  - dea:process-onboard-tax-and-compliance-capability
+
 
 # Cell Charter (CR-BP-02 §7; PC-006).
 cell_charter:

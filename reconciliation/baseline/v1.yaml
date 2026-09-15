@@ -73,7 +73,7 @@ records:
   - id: dea:group-customer-lifecycle-management
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-customer-lifecycle-management/dea:group-customer-lifecycle-management.yaml
-    sha256: d8dcd2fb97eddcbc14f62f6525ba965f285e702e22493606ea859c5494345a76
+    sha256: ce7b32d4817917399eff98c38120fa5e643653411a5451ed91d561eed25fd0db
   - id: dea:group-customer-strategy-conception
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-customer-strategy-conception/dea:group-customer-strategy-conception.yaml
@@ -229,7 +229,7 @@ records:
   - id: dea:pc-fa-build
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-fa-build.yaml
-    sha256: c98ede5df620f901029a274c9ac8bfe80c568593f02a200da6561d6a6f53611d
+    sha256: b46a5e1eb68929569ac9db0b61c2c3476c5b6a177b0f918928260e475e9ef417
   - id: dea:pc-fa-conceive
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-fa-conceive.yaml
@@ -237,15 +237,15 @@ records:
   - id: dea:pc-fa-design
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-fa-design.yaml
-    sha256: 65c86b985643b92af9a7b84b725cb2f47c10b6a892bf5b4753d38bc3fb6fc524
+    sha256: fec0108f88f634e338fb20441a4bd1960d0f22b2bd4965194776bc93b79de4e5
   - id: dea:pc-fa-improve
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-fa-improve.yaml
-    sha256: ac07d11622db3e4b16a1b19bf1d8275f366434532d22724c204b42f0eea0e7ff
+    sha256: aaaa9cce0c0b656c70354c434432fc4c5c17090bd978dc7905576fa4b8de4496
   - id: dea:pc-fa-operate
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-fa-operate.yaml
-    sha256: d6e78a4d95fa5fe8ec98b30cd164f09e5b4f2cf475ee27851cb0072888f7d5ee
+    sha256: 352eccfdf26d1696ec9e243d7f0d983aabf6940d421a15b8204cddb4eb921add
   - id: dea:pc-ge-activate
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-ge-activate.yaml
@@ -353,7 +353,7 @@ records:
   - id: dea:pc-sd-conceive
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-sd-conceive.yaml
-    sha256: bcf0f3ef9812b8786bf27e8bf0e9e0363ec54102f08286a017a45d288a0bb8a1
+    sha256: bbd212993a39de058fb139e17fb964c743c40e06657c854e989ff18517083f1c
   - id: dea:pc-sd-design
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-sd-design.yaml

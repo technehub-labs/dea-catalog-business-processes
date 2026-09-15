@@ -130,7 +130,7 @@ evidence:
       candidates; this record is the first to be promoted from the
       register.
     strength: E4
-    reference: docs/research/L1-REGISTER-v0.1.md
+    reference: entities/v1-alpha/dea:group-customer-lifecycle-management/research/L1-REGISTER-v0.1.md
 
 # Metadata (PG-006 cross-context overlap exception path lives here).
 metadata:

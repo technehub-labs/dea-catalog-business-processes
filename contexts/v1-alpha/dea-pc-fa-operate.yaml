@@ -53,14 +53,15 @@ adjacent_contexts:
 
 # Business Processes belonging to this context (PC-008).
 processes:
-    - dea:process-operate-general-ledger
-      - dea:process-run-accounts-payable
-      - dea:process-run-accounts-receivable
-      - dea:process-execute-payroll
-      - dea:process-manage-cash-and-liquidity
-      - dea:process-perform-financial-close
-      - dea:process-manage-tax-compliance-and-filings
-      - dea:process-operate-financial-reporting-and-disclosure
+  - dea:process-operate-general-ledger
+  - dea:process-run-accounts-payable
+  - dea:process-run-accounts-receivable
+  - dea:process-execute-payroll
+  - dea:process-manage-cash-and-liquidity
+  - dea:process-perform-financial-close
+  - dea:process-manage-tax-compliance-and-filings
+  - dea:process-operate-financial-reporting-and-disclosure
+
 
 # Cell Charter (CR-BP-02 §7; PC-006).
 cell_charter:
