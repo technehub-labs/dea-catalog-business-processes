@@ -1,0 +1,308 @@
+discovery:
+  id: dea:discovery-agency-and-organization-retire-escape
+  ecf_context:
+    domain: AgencyAndOrganization
+    lifecycle_stage: Retire
+  candidates:
+  - name: Conduct Regulated Workforce Wind-Down
+    proposed_identity:
+      verb: Conduct
+      object: Regulated Workforce Wind-Down
+      scope: enterprise
+    trigger: >-
+      A regulated wind-down event is authorized (mass layoff, agent unit
+      decommission, or organizational unit wind-down) where statutory
+      advance-notice and consultation obligations are triggered by the
+      size and nature of the employment reduction.
+    inputs: >-
+      Authorized wind-down decision; headcount scope; statutory thresholds
+      and consultation obligations; representative bodies (union, works
+      council, employee representatives); state dislocated-worker units.
+    transformation: >-
+      Move a workforce or agent unit from active employment to a
+      documented, consultation-satisfied, notice-served retirement with
+      statutory liabilities and transition supports resolved.
+    outcome: >-
+      The wind-down is executed under statutory notice, consultation
+      obligations are satisfied with documentation, statutory liabilities
+      (notice pay, severance, benefits continuation) are recorded and
+      funded, and transition supports (state dislocated-worker referral,
+      training, health-care continuation) are routed to the affected
+      population.
+    boundary: >-
+      Begins at authorization of a regulated wind-down; ends at notice
+      served and statutory obligations recorded. Steady-state offboarding
+      of individual agents (non-mass events) remains inside the Operate
+      coordinate. Asset retirement and decommissioning belongs to the
+      EnablementAndOperations x Retire coordinate (CR-BP-66).
+    actors: >-
+      HR function; legal counsel; worker representatives; state
+      dislocated-worker unit; affected managers; transition support
+      providers.
+    controls: >-
+      Statutory notice periods; consultation obligations; severance and
+      benefits continuation; WARN / EU Collective Redundancies Directive
+      compliance; layoff selection criteria (anti-discrimination).
+    evidence:
+      sources:
+      - >-
+        U.S. Worker Adjustment and Retraining Notification Act (WARN,
+        29 U.S.C. § 2101 et seq.; 20 CFR Part 639): employers with 100+
+        employees must provide 60 calendar days advance written notice
+        of plant closings and mass layoffs affecting 50+ employees at a
+        single site; notice to employees, representatives, the State
+        dislocated worker unit, and the chief elected official of local
+        government.
+      - >-
+        EU Council Directive 98/59/EC on collective redundancies:
+        information and consultation obligations with workers'
+        representatives; thresholds at member-state choice (typically 10
+        in 30 days or 20 in 90 days depending on workforce size); aim
+        of reaching agreement on ways to avoid or reduce redundancies.
+      - >-
+        ILO Termination of Employment Convention, 1982 (No. 158) and
+        ILO Workers' Representatives Convention, 1971 (No. 135):
+        consultation and fair-selection standards for collective
+        terminations across ILO member states.
+      - >-
+        OECD Employment Outlook (chapter on collective dismissals and
+        worker reallocation): mass-layoff obligations and transition
+        supports are universal practice across OECD economies.
+      - >-
+        Jurisdiction-specific statutes implementing the EU directive
+        (e.g. UK Trade Union and Labour Relations (Consolidation) Act
+        1992 s.188 TULRCA; German Kündigungsschutzgesetz mass-layoff
+        consultation under Betriebsverfassungsgesetz § 17).
+      - >-
+        APQC PCF and SHRM body of practice: large-organization HR
+        universally operates a documented wind-down process distinct
+        from steady-state HR operation.
+      evidence_strength: authoritative
+    evaluation:
+      process_reality: >-
+        Established and legally mandated across regulated jurisdictions;
+        performed by dedicated HR and legal functions in any enterprise
+        subject to a mass-layoff threshold.
+      transformation: >-
+        Active workforce to documented, statutory-compliant wind-down;
+        a real state transformation with material liability work.
+      trigger: >-
+        Mass-layoff authorization; observable and legally mandated.
+      outcome: >-
+        Documented notice served, consultation satisfied, statutory
+        liabilities recorded; distinguishable and evidenced.
+      boundary: >-
+        Strong; regulated wind-down authorization to notice served and
+        liabilities recorded; individual-agent offboarding and asset
+        retirement explicitly excluded to adjacent coordinates.
+      semantic_identity: >-
+        Verb + object identity independent of the ECF coordinate;
+        recognizable across jurisdictions as regulated workforce
+        wind-down.
+      cross_context_stability: >-
+        The same transformation recurs in organizational-unit
+        decommission, agent-team dissolution, and divestiture-induced
+        workforce reduction; identity stable, implementation varies.
+      cross_domain_applicability: >-
+        Concentrated in regulated jurisdictions (US, EU, OECD); not
+        universal across all enterprises (small enterprises and
+        non-regulated sectors are largely exempt).
+      ecf_independence: >-
+        "Conduct Regulated Workforce Wind-Down" names recognizable work
+        without reference to the Retire label.
+      duplication: >-
+        No existing canonical BP covers regulated wind-down; nearest
+        neighbors (individual offboarding under Operate, asset
+        decommissioning under E&O x Retire) exclude the mass-layoff
+        statutory work.
+      composition: >-
+        Business Process level; constituent notification, consultation,
+        selection, severance, and transition support work decomposes to
+        Activities at L3.
+      capability_distinction: >-
+        A transformation with trigger and outcome, not a capability
+        restatement.
+      governance_distinction: >-
+        Not a policy or decision; a governed workflow whose controls
+        are statutory obligations.
+      lifecycle_span: >-
+        Begins and ends within Retire; downstream reallocation of
+        affected workers recorded, not duplicated.
+    scoring:
+      process_reality: 2
+      semantic_stability: 2
+      cross_domain_applicability: 1
+      boundary_clarity: 2
+      evidence_strength: 2
+      total: 9
+      rationale: >-
+        Authoritative multi-source statutory evidence and universal
+        regulated-jurisdiction practice; strong boundary against
+        Operate and E&O x Retire; cross-domain breadth limited to
+        regulated jurisdictions, holding the total at 9.
+    disposition:
+      type: ADMIT-CANONICAL
+      canonical_process_ref: dea:process-conduct-regulated-workforce-wind-down
+      related_contexts: []
+  - name: Decommission Agent or Workforce Cohort
+    proposed_identity:
+      verb: Decommission
+      object: Agent or Workforce Cohort
+      scope: enterprise
+    trigger: >-
+      A non-regulated agent cohort or organizational unit is approved
+      for decommission.
+    inputs: Authorized decommission decision; agent roster.
+    transformation: >-
+      Move the cohort from active to decommissioned with knowledge
+      transfer and records disposition.
+    outcome: >-
+      The cohort is decommissioned and residual knowledge and records
+      are routed.
+    boundary: >-
+      Entangled with the existing Agent Transition and Wind-down
+      candidate space; non-regulated cohort work is operationally
+      indistinguishable from steady-state agent management.
+    actors: Agent operations; HR.
+    controls: Decommission approval; knowledge transfer.
+    evidence:
+      sources:
+      - >-
+        Agent lifecycle management practice (APQC, SHRM) treats cohort
+        decommission as a step within agent operations, not as a
+        standalone regulated process.
+      evidence_strength: weak
+    evaluation:
+      process_reality: >-
+        Limited standalone evidence; usually a step inside cohort
+        operations.
+      transformation: Configuration and lifecycle change.
+      trigger: Decommission approval; not independent of operations.
+      outcome: Decommissioned cohort; a release-level outcome.
+      boundary: >-
+        Not defensible as a standalone process absent the regulated
+        wind-down context.
+      semantic_identity: Restates cohort decommission at agent level.
+      cross_context_stability: Variable.
+      cross_domain_applicability: Single-domain flavor.
+      ecf_independence: Depends on the Retire label for its identity.
+      duplication: >-
+        Overlaps with the regulated wind-down candidate when the cohort
+        triggers statutory thresholds; otherwise operationally
+        subsumed.
+      composition: >-
+        Activity level within agent operations or the regulated
+        wind-down process.
+      capability_distinction: Not a capability.
+      governance_distinction: Not a governance construct.
+      lifecycle_span: Terminal-phase variant of agent operations.
+    scoring:
+      process_reality: 1
+      semantic_stability: 1
+      cross_domain_applicability: 0
+      boundary_clarity: 0
+      evidence_strength: 0
+      total: 2
+      rationale: >-
+        Execution-level cohort step; reclassify as Activity under
+        agent operations or under the regulated wind-down process
+        when statutory thresholds apply.
+    disposition:
+      type: RECLASSIFY
+      related_contexts:
+      - AgencyAndOrganization/Operate
+  - name: Retire Knowledge Assets of Decommissioned Workforce
+    proposed_identity:
+      verb: Retire
+      object: Knowledge Assets of Decommissioned Workforce
+      scope: enterprise
+    trigger: >-
+      A workforce is decommissioned and its institutional knowledge
+      is at risk of loss.
+    inputs: Workforce roster; knowledge asset inventory.
+    transformation: >-
+      Capture and archive critical knowledge from the decommissioned
+      workforce.
+    outcome: >-
+      Critical knowledge is captured and archived for successor
+      operations.
+    boundary: >-
+      Best handled as part of the regulated wind-down process (capture
+      as part of transition supports) or as a knowledge-management
+      activity within the Operate coordinate.
+    actors: Knowledge management; HR.
+    controls: Knowledge asset taxonomy.
+    evidence:
+      sources:
+      - Knowledge management practice literature
+      evidence_strength: weak
+    evaluation:
+      process_reality: >-
+        Recognized in practice literature but rarely a standalone
+        governed process.
+      transformation: Knowledge capture and archival.
+      trigger: Workforce decommission.
+      outcome: Archived knowledge.
+      boundary: >-
+        Subsumed by the regulated wind-down transition supports or by
+        knowledge management activities.
+      semantic_identity: Restates knowledge archival at Retire boundary.
+      cross_context_stability: Variable.
+      cross_domain_applicability: Broad but operationally diffuse.
+      ecf_independence: Depends on the Retire label for its identity.
+      duplication: >-
+        Overlaps with knowledge-management activities in the Operate
+        coordinate.
+      composition: Activity level.
+      capability_distinction: Not a capability.
+      governance_distinction: Not a governance construct.
+      lifecycle_span: Terminal-phase variant of knowledge management.
+    scoring:
+      process_reality: 1
+      semantic_stability: 1
+      cross_domain_applicability: 1
+      boundary_clarity: 0
+      evidence_strength: 0
+      total: 3
+      rationale: >-
+        Operational concern subsumed by the regulated wind-down
+        transition supports; reclassify as Activity.
+    disposition:
+      type: RECLASSIFY
+      related_contexts:
+      - AgencyAndOrganization/Operate
+  context_evaluation:
+    concerns_identified: true
+    candidates_considered: true
+    adjacent_contexts_reviewed: true
+    existing_processes_searched: true
+    lifecycle_spanning_considered: true
+    capability_distinctions_tested: true
+    pattern_candidates_considered: true
+    evidence_assessed: true
+    process_empty: false
+  rationale:
+    included: >-
+      Targeted escape-clause evaluation of the AgencyAndOrganization x
+      Retire register cell (register v9, backlog-deferred). The cell's
+      escape condition reads "defer until a regulated wind-down (e.g.
+      mass layoff) requires a dedicated L1 group". The discovery finds
+      that condition met: regulated workforce wind-down under WARN,
+      EU Directive 98/59/EC, ILO C158 and C135, and OECD practice is a
+      legally mandated, boundary-clear, evidence-authoritative
+      transformation distinct from steady-state agent operations and
+      from asset decommissioning, scoring 9/10 and recommended
+      ADMIT-CANONICAL as
+      dea:process-conduct-regulated-workforce-wind-down. This record
+      re-evaluates the cell; the CR-BP-63 baseline record
+      (dea:discovery-agency-and-organization-retire) remains the
+      baseline evidence for the cell's other candidates.
+    excluded: >-
+      Non-regulated cohort decommission is reclassified as Activity
+      within agent operations or under the regulated wind-down process;
+      knowledge-asset archival is reclassified as Activity within the
+      wind-down transition supports or under knowledge management.
+    unresolved: >-
+      Admission of the recommended candidate is a separate governed
+      step (admission tranche with PC + PG + BP stack and register
+      flip); this discovery record recommends and does not admit.
