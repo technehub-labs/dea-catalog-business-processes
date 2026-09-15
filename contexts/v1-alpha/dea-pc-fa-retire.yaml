@@ -1,0 +1,204 @@
+# Process Context Cell Charter: FinanceAndAccounting x Retire.
+#
+# Lands as part of CR-BP-75 (F&A Retire admission tranche), the second
+# catalog cell at a FinanceAndAccounting x Retire coordinate, the
+# second to be admitted via the Option B escape-clause sequence
+# (after CR-BP-73 at AgencyAndOrganization x Retire).
+#
+# This PC is the spatial coordinate that hosts the regulated run-off
+# governed workflow at the FinanceAndAccounting x Retire
+# intersection. The cell admits a single canonical Process Group
+# (dea:group-regulated-run-off) and a single canonical Business
+# Process (dea:process-conclude-regulated-run-off). Additional
+# Process Groups and Business Processes at this coordinate require
+# further escape-clause evaluation under CR-BP-62 method.
+#
+# The register v2 deferral was activated by CR-BP-74 escape-clause
+# evidence: regulated run-off under PRA PS20/24 (UK, in force 30
+# June 2026), FSB Final Guidance on Insurance Resolution Strategies
+# (2025), NAIC Model 901, IFRS 17 (effective 2023), IFRS 5,
+# ASC 205-30 Liquidation Basis (FASB ASU 2013-07), ASC 944, IRO
+# Best Practice Guidance 2024. The cell's verbatim escape clause
+# is "defer until a regulated unwind (e.g. mutual insurer run-off)
+# requires a standalone group"; the 2024-2026 regulatory landscape
+# satisfies that escape condition.
+#
+# Scope contract (BP-LIFE-009 / MECE-007 / boundary-face):
+# - In scope: regulated entity run-off activities (statutory
+#   notification, run-off plan submission, reserving, asset-liability
+#   matching, capital adequacy, policyholder priority, communications,
+#   retained-records, exit accounting on the liquidation basis or
+#   IFRS 17 fulfillment measurement, solvent-exit or completion
+#   certification) for insurers, mutuals, and run-off portfolios
+#   under PRA PS20/24 / FSB 2025 / NAIC Model 901.
+# - Out of scope: pre-run-off financial stewardship (Operate
+#   coordinate); physical asset decommissioning
+#   (EnablementAndOperations x Retire / CR-BP-66); counterparty and
+#   agent relationship closure (PartyAndRelationship x Retire /
+#   CR-BP-67); product line retirement (ProductAndValue x Retire);
+#   non-insurance regulated wind-downs (banks under PRA BRRD / FDIC
+#   OLA, pension funds under PBGC termination) -- deferred to a
+#   future CR.
+# - Boundary explicit: this PC cell governs the regulated run-off
+#   workflow whose trigger is a regulator-acknowledged run-off
+#   authorisation; the boundary is the regulatory authorisation, not
+#   an enterprise-internal decision.
+#
+# Cross-coordinate doctrine (register v2 / v10):
+# - Pre-run-off stewardship remains execution-level inside the
+#   FinanceAndAccounting x Operate coordinate.
+# - Asset retirement and decommissioning remains exclusively at
+#   EnablementAndOperations x Retire (CR-BP-66).
+# - Counterparty and agent relationship closure remains exclusively
+#   at PartyAndRelationship x Retire (CR-BP-67).
+# - Knowledge archival absent regulated run-off triggers remains
+#   execution-level inside the FinanceAndAccounting x Operate
+#   coordinate or under knowledge management.
+#
+# Provenance:
+# - Carrier: CR-BP-75 (this slice)
+# - Escape-clause discovery: CR-BP-74
+#   (dea:discovery-finance-and-accounting-retire-escape)
+# - Baseline discovery: CR-BP-63
+#   (dea:discovery-finance-and-accounting-retire)
+# - Register cell ratified backlog-deferred at v2; cell flipped
+#   ratified-accepted/landed at v11 by this slice.
+# - Register cell carry-forward content retained in the
+#   l1-register.yaml v11 entry for evidence traceability.
+
+schema: dea/v1
+schema_version: 1
+id: dea:pc-fa-retire
+domain: FinanceAndAccounting
+lifecycle_stage: Retire
+name: Financial Run-Off
+process_context:
+  id: dea:pc-fa-retire
+  domain: FinanceAndAccounting
+  lifecycle_stage: Retire
+  scope_summary: >-
+    Governed retirement of a regulated financial entity (insurer,
+    mutual, or run-off portfolio) under statutory run-off
+    obligations, distinct from pre-run-off stewardship and from
+    physical asset decommissioning.
+  process_empty: false
+  lifecycle_status: candidate
+  status: candidate
+cell_charter:
+  enterprise_concern: "Finance & Accounting: the regulated run-off of a financial entity under statutory accounting basis transition, reserving, capital adequacy, policyholder priority, communications, retained-records, and exit-accounting obligations."
+  lifecycle_concern: "Retire: regulated run-off of an entity (or run-off portfolio) triggered by a regulator-acknowledged run-off authorisation."
+  combined_semantic_meaning: |
+    The regulated-run-off work that moves an enterprise financial
+    entity (or run-off portfolio) from going-concern operation to a
+    documented, regulator-supervised, policyholder-priority run-off
+    with statutory accounting basis (liquidation basis under ASC
+    205-30, IFRS 17 fulfillment measurement for insurance
+    liabilities, IFRS 5 for held-for-sale groups), culminating in
+    solvent exit or orderly wind-down with all policyholder
+    obligations and statutory liabilities resolved.
+  expected_outcomes:
+    - "Regulator-acknowledged run-off authorisation documented and submitted per the controlling regulator's requirements (PRA PS20/24, FSB 2025, NAIC Model 901, equivalent jurisdictional regulators)"
+    - "Run-off plan submitted within the controlling regulator's window (28-day window under PRA PS20/24 once a firm is supervised as a run-off firm)"
+    - "Statutory accounting basis established: liquidation basis (ASC 205-30) or IFRS 17 fulfillment measurement for insurance liabilities, with IFRS 5 applied to held-for-sale groups"
+    - "Reserving and capital adequacy maintained throughout the run-off period, with annual actuarial sign-off and quarterly regulator attestation"
+    - "Policyholder claims adjudicated and paid under policyholder-priority creditor treatment"
+    - "Asset-liability matching maintained; investment portfolio managed per the run-off plan"
+    - "Communications to policyholders and stakeholders executed per the run-off communications plan"
+    - "Retained-records and service-of-process obligations satisfied throughout the run-off and post-run-off retention period"
+    - "Solvent exit certification (PRA) or run-off completion certification (FSB) obtained; entity authorisation surrendered or run-off portfolio fully transferred"
+  inclusions:
+    - "Regulator-acknowledged run-off authorisation (PRA, FCA, NAIC, IAIS, EIOPA member authorities)"
+    - "Run-off plan submission within the controlling regulator's window (28-day window under PRA PS20/24)"
+    - "Statutory accounting basis transition: going-concern to liquidation-basis (ASC 205-30) or fulfillment-measurement (IFRS 17 run-off treatment)"
+    - "Reserving, capital adequacy, and asset-liability matching throughout the run-off period"
+    - "Policyholder priority creditor treatment and policyholder claim adjudication and payment"
+    - "Communications to policyholders and stakeholders"
+    - "Retained-records and service-of-process obligations"
+    - "Tax-clearance and statutory liability settlement"
+    - "Solvent exit certification or run-off completion certification"
+  exclusions:
+    - "Pre-run-off financial stewardship (Operate coordinate)"
+    - "Physical asset decommissioning (EnablementAndOperations x Retire; CR-BP-66)"
+    - "Counterparty and agent relationship closure (PartyAndRelationship x Retire; CR-BP-67)"
+    - "Product line retirement (ProductAndValue x Retire; CR-BP-67 adjacent)"
+    - "Non-insurance regulated wind-downs (banks under PRA BRRD / FDIC OLA, pension funds under PBGC termination) -- deferred to a future CR"
+    - "Investment disposal as a standalone Process (subsumed as an Activity under this cell's BP; CR-BP-74 candidate 3)"
+    - "Impairment and exit-liability recognition as a standalone Process (subsumed as an Activity under this cell's BP; CR-BP-74 candidate 4)"
+  adjacent_boundaries:
+    - "dea:pc-fa-operate (adjacent context): the Operate cell continues ongoing financial stewardship, accounting close, and treasury operations; the Retire cell only governs regulator-supervised run-off workflows."
+    - "dea:pc-eo-retire (sibling cell, CR-BP-66): the Retire cell at EnablementAndOperations handles asset retirement, decommissioning, and shutdown of physical / IT / data assets; the F&A Retire cell handles the regulated run-off of a financial entity under statutory accounting basis and policyholder resolution."
+    - "dea:pc-pr-retire (sibling cell, CR-BP-67): the Retire cell at PartyAndRelationship handles party-relationship close-out and regulated offboarding; the F&A Retire cell handles the run-off of a financial entity at the entity and policyholder level."
+    - "dea:pc-pv-retire (sibling cell, CR-BP-67 adjacent): the Retire cell at ProductAndValue handles product line retirement; the F&A Retire cell handles the run-off of a financial entity, not product line retirement."
+process_groups:
+- id: dea:group-regulated-run-off
+  kind: functional
+  scope: >-
+    Governs the regulated run-off of a financial entity (insurer,
+    mutual, or run-off portfolio) under statutory run-off
+    obligations: regulator-acknowledged run-off authorisation,
+    run-off plan submission, statutory accounting basis transition,
+    reserving, capital adequacy, asset-liability matching,
+    policyholder priority, communications, retained-records, exit
+    accounting, and solvent-exit or run-off completion
+    certification.
+  processes:
+  - dea:process-conclude-regulated-run-off
+admission:
+  recommended_by: dea:discovery-finance-and-accounting-retire-escape
+  recommended_at: '2026-09-15'
+  recommended_score: 9
+  carrier_cr: CR-BP-75
+  bp_id: dea:process-conclude-regulated-run-off
+  pg_id: dea:group-regulated-run-off
+  pc_id: dea:pc-fa-retire
+  evidence_summary: >-
+    Authoritative statutory and accounting-standards basis for
+    regulated run-off: PRA PS20/24 (UK, in force 30 June 2026) +
+    FSB Final Guidance on Insurance Resolution Strategies (2025) +
+    NAIC Model Regulation Service of Legal Process (Model 901) +
+    IFRS 17 Insurance Contracts (effective 2023) + IFRS 5
+    Non-current Assets Held for Sale and Discontinued Operations +
+    ASC 205-30 Liquidation Basis of Accounting (FASB ASU 2013-07) +
+    ASC 944 Financial Services - Insurance + APQC PCF 8.8 Perform
+    financial wind-down + TM Forum eTOM GB921 Level 3 + IRO Best
+    Practice Guidance 2024.
+  register_flip:
+    from:
+      audit_status: backlog-deferred
+      ratified_at: '2026-09-07'
+      ratified_by: CR-BP-19
+    to:
+      audit_status: ratified-accepted
+      ratified_at: '2026-09-15'
+      ratified_by: CR-BP-75
+processes:
+- dea:process-conclude-regulated-run-off
+intent:
+  decomposition: BP decomposition at L3 is the next slice (CR-BP-7x+)
+  lifecycle_stage: Retire
+  coordinate: FinanceAndAccounting x Retire
+# Change history.
+change_history:
+  - cr: CR-BP-75
+    date: '2026-09-15'
+    change: |
+      Initial Process Context record. The cell was backlog-deferred
+      under CR-BP-19 with the per-cell escape note "defer until a
+      regulated unwind (e.g. mutual insurer run-off) requires a
+      standalone group". CR-BP-74 escape-clause discovery evaluated
+      that escape condition and established the evidence-backed
+      canonical candidate Conclude a Regulated Run-Off (9/10,
+      ADMIT-CANONICAL) on PRA PS20/24 (UK, in force 30 June 2026),
+      FSB Final Guidance on Insurance Resolution Strategies (2025),
+      NAIC Model 901, IFRS 17 (effective 2023), IFRS 5, ASC 205-30
+      Liquidation Basis (FASB ASU 2013-07), ASC 944, IRO Best
+      Practice Guidance 2024. CR-BP-75 reverses the cell disposition
+      to ratified-accepted and lands the Process Group and Business
+      Process as the canonical decomposition at this coordinate.
+audit:
+  authored: '2026-09-15'
+  author: Coder (for eaojnr)
+  reviewed_by: null
+  status: candidate
+  change_request: CR-BP-75
+  register_version_at_landing: v11

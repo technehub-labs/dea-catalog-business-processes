@@ -152,7 +152,7 @@ def test_tranche_count_is_ten() -> None:
     plan = yaml.safe_load(
         (REPO_ROOT / "reconciliation/tranches/plan.yaml").read_text()
     )
-    assert len(plan["tranches"]) == 72
+    assert len(plan["tranches"]) == 73
 
 
 def test_live_check_dispositions_passes() -> None:

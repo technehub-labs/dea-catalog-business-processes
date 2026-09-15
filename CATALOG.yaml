@@ -2,10 +2,10 @@ catalog:
   abbreviation: BP
   counts:
     candidates: 0
-    canonical: 695
-    entities: 696
-    open_change_requests: 86
-    research_files: 309
+    canonical: 697
+    entities: 698
+    open_change_requests: 87
+    research_files: 311
     retired: 1
   cross_cutting:
     change_requests: change-requests/
@@ -6115,6 +6115,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:group-regulated-run-off
+    last_modified: '2026-09-15'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:group-regulated-run-off/dea:group-regulated-run-off.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: ProcessGroup
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:group-regulated-workforce-wind-down
     last_modified: '2026-09-15'
     lifecycle_status: candidate
@@ -6405,6 +6416,17 @@ catalog:
     last_modified: '2026-09-14'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-conceive-workforce-and-agent-mix/dea:process-conceive-workforce-and-agent-mix.yaml
+    research_count: 2
+    retired_count: 0
+    state: canonical
+    type: Process
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:process-conclude-regulated-run-off
+    last_modified: '2026-09-15'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:process-conclude-regulated-run-off/dea:process-conclude-regulated-run-off.yaml
     research_count: 2
     retired_count: 0
     state: canonical
@@ -9365,6 +9387,9 @@ catalog:
   - entity_id: dea:group-regulated-onboarding
     files: []
     path: entities/v1-alpha/dea:group-regulated-onboarding/research/
+  - entity_id: dea:group-regulated-run-off
+    files: []
+    path: entities/v1-alpha/dea:group-regulated-run-off/research/
   - entity_id: dea:group-regulated-workforce-wind-down
     files: []
     path: entities/v1-alpha/dea:group-regulated-workforce-wind-down/research/
@@ -9486,6 +9511,11 @@ catalog:
     - README.md
     - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-conceive-workforce-and-agent-mix/research/
+  - entity_id: dea:process-conclude-regulated-run-off
+    files:
+    - README.md
+    - l2-admission-deposition.yaml
+    path: entities/v1-alpha/dea:process-conclude-regulated-run-off/research/
   - entity_id: dea:process-conduct-assurance-review
     files:
     - README.md

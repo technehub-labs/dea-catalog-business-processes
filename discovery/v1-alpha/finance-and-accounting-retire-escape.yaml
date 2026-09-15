@@ -95,6 +95,11 @@ discovery:
       rationale: Authoritative multi-source statutory and accounting-standards evidence (PRA PS20/24, FSB 2025, IFRS 17, ASC
         205-30, NAIC Model 901, IRO 2024); strong boundary against Operate, E&O x Retire, P&R x Retire, and P&V x Retire;
         cross-domain breadth limited to insurance-led regulated wind-down today, holding the total at 9.
+    admission:
+      status: admitted
+      admitted_as: dea:process-conclude-regulated-run-off
+      admitted_at: '2026-09-15'
+      admitted_by: CR-BP-75
   - name: Operate Financial Wind-Down
     proposed_identity:
       verb: Operate
