@@ -48,8 +48,9 @@ def test_cli_live_run_conformant_on_discovery_records():
     r = _run([])
     assert r.returncode == 0, r.stdout + r.stderr
     assert "CONFORMANT" in r.stdout
-    # CR-BP-63 landed the 14 Activate/Retire discovery records.
-    assert "Discovery records checked: 14" in r.stdout
+    # CR-BP-63 landed the 14 Activate/Retire discovery records; CR-BP-70
+    # added one escape-clause record (party-and-relationship-activate-escape).
+    assert "Discovery records checked: 15" in r.stdout
     assert "Findings:                  0" in r.stdout
 
 
@@ -58,7 +59,7 @@ def test_cli_json_shape():
     assert r.returncode == 0
     data = json.loads(r.stdout)
     assert data["verdict"] == "CONFORMANT"
-    assert data["record_count"] == 14
+    assert data["record_count"] == 15
     assert data["finding_count"] == 0
     assert isinstance(data["findings"], list)
     assert len(data["rules"]) == 8
@@ -139,6 +140,15 @@ def test_evaluate_runs_all_rules_on_fixture(tmp_path):
 
 def test_load_records_covers_discovery_dir():
     pairs = _load_records(ROOT)
-    assert len(pairs) == 14
-    stages = {p.name.rsplit("-", 1)[-1].removesuffix(".yaml") for p, _ in pairs}
-    assert stages == {"activate", "retire"}
+    assert len(pairs) == 15
+    # Stages are read from each record's ecf_context.lifecycle_stage field;
+    # filename-suffix parsing was incorrect for escape records whose slug ends
+    # in '-escape.yaml' (CR-BP-70). The file's outer dict wraps the discovery
+    # body under the `discovery:` key.
+    def _stage(rec):
+        body = rec.get("discovery") if isinstance(rec, dict) else None
+        if not isinstance(body, dict):
+            return None
+        return body.get("ecf_context", {}).get("lifecycle_stage")
+    stages = {_stage(rec) for _, rec in pairs}
+    assert stages == {"Activate", "Retire"}
