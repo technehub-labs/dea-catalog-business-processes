@@ -74,8 +74,8 @@ def test_conformance_report_live_is_level_4():
     report = yaml.safe_load(
         (ROOT / "reconciliation" / "conformance_report.yaml").read_text()
     )
-    assert report["total_records"] == 712
-    assert report["conformance_levels"] == {0: 0, 1: 0, 2: 0, 3: 0, 4: 712}
+    assert report["total_records"] == 732
+    assert report["conformance_levels"] == {0: 0, 1: 0, 2: 0, 3: 0, 4: 732}
 
 
 def test_conformance_report_check_passes():

@@ -1,0 +1,103 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-69
+status: candidate-not-canonical; subject to review
+parent_business_process: dea:process-decommission
+coordinate:
+  domain: EnablementAndOperations
+  stage: Retire
+  process_context: dea:pc-oe-retire
+  process_group: dea:group-operations-and-asset-decommissioning
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/dea:process-decommission
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: dea:activity-plan-asset-retirement
+  name: "Plan Asset Retirement"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Retirement scheduling, dependency assessment, safety and regulatory constraint capture."
+  out_of_scope:
+  - "Withdrawal from operation (dea:activity-withdraw-asset-from-operation)"
+  - "Disposal execution (dea:activity-execute-disposal-routes)"
+  evidence:
+  - "Parent BP trigger: an operational asset reaches end of life, is superseded, or is approved for retirement."
+  disposition: landed
+  landed_at: '2026-09-15'
+  landed_by: CR-BP-69
+- id: dea:activity-withdraw-asset-from-operation
+  name: "Withdraw Asset from Operation"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Operational shutdown, disconnection, isolation of the asset."
+  out_of_scope:
+  - "Retirement planning (dea:activity-plan-asset-retirement)"
+  - "Disposal execution (dea:activity-execute-disposal-routes)"
+  evidence:
+  - "Parent BP outcome: the asset is withdrawn from operation."
+  disposition: landed
+  landed_at: '2026-09-15'
+  landed_by: CR-BP-69
+- id: dea:activity-execute-disposal-routes
+  name: "Execute Disposal Routes"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Disposal route execution per policy: sale, recycling, destruction, return."
+  out_of_scope:
+  - "Operational withdrawal (dea:activity-withdraw-asset-from-operation)"
+  - "Residual value resolution (dea:activity-resolve-residual-value-and-obligations)"
+  evidence:
+  - "Parent BP outcome: the asset is decommissioned and disposed of through executed retirement and disposal routes."
+  disposition: landed
+  landed_at: '2026-09-15'
+  landed_by: CR-BP-69
+- id: dea:activity-resolve-residual-value-and-obligations
+  name: "Resolve Residual Value and Obligations"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Residual value recovery, data sanitization, residual obligation recording."
+  out_of_scope:
+  - "Disposal execution (dea:activity-execute-disposal-routes)"
+  - "Service withdrawal for proposition-level retirement (dea:process-transition-out-of-service concern)"
+  evidence:
+  - "Parent BP outcome: residual value, data and obligations are resolved and recorded."
+  disposition: landed
+  landed_at: '2026-09-15'
+  landed_by: CR-BP-69
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."

@@ -385,7 +385,7 @@ records:
   - id: dea:process-bring-into-force
     type: Process
     path: entities/v1-alpha/dea:process-bring-into-force/dea:process-bring-into-force.yaml
-    sha256: 6595976984ffbcba9cbf52982d72c174e385b2f40370ad8fe824c21450d18802
+    sha256: 8a73ddfc9f960fe53966fd1a14215bc640a92586fc0aa03fbefd2421f9842b2b
   - id: dea:process-build-budgeting-and-forecasting-systems
     type: Process
     path: entities/v1-alpha/dea:process-build-budgeting-and-forecasting-systems/dea:process-build-budgeting-and-forecasting-systems.yaml
@@ -421,7 +421,7 @@ records:
   - id: dea:process-close-enterprise-relationship
     type: Process
     path: entities/v1-alpha/dea:process-close-enterprise-relationship/dea:process-close-enterprise-relationship.yaml
-    sha256: 7b1297fc91e4d2091195a6baae29fcf8d099b219492d9739b41df1dd50784b87
+    sha256: d582f6df7e0013cd52c5b28d849fa5ca6158178d146800fcc8e018ce20fc8aab
   - id: dea:process-codify-charters-and-policies
     type: Process
     path: entities/v1-alpha/dea:process-codify-charters-and-policies/dea:process-codify-charters-and-policies.yaml
@@ -497,7 +497,7 @@ records:
   - id: dea:process-decommission
     type: Process
     path: entities/v1-alpha/dea:process-decommission/dea:process-decommission.yaml
-    sha256: 3ff59e6f90e83b5ba4f5364f861e4238ed7018b0c46f263521a70c7066eac1e1
+    sha256: b742c48c7d45d24f51614d1f44e9e76250296bddce6e5e2052eec8f217e9802a
   - id: dea:process-define-enterprise-purpose-and-ambition
     type: Process
     path: entities/v1-alpha/dea:process-define-enterprise-purpose-and-ambition/dea:process-define-enterprise-purpose-and-ambition.yaml
@@ -881,11 +881,11 @@ records:
   - id: dea:process-transition-out-of-service
     type: Process
     path: entities/v1-alpha/dea:process-transition-out-of-service/dea:process-transition-out-of-service.yaml
-    sha256: 4159b042b46e87ecf987eff87f9cdd8963e5b9a168854f857afd1652b9a99c61
+    sha256: cdbc4d4e6ee6abf95e1f8f1260d4ba4e2b5eaeeaf92b2cc2ac8ca9d370f12d9c
   - id: dea:process-transition-to-service
     type: Process
     path: entities/v1-alpha/dea:process-transition-to-service/dea:process-transition-to-service.yaml
-    sha256: 9cc609eede88fec22969be8904c42eb8118d754865d201ac1f2d7ca4a31f402e
+    sha256: 2de8112961407fb187727c710dde0b58b04d597e14d319a237350e34b502d123
   - id: dea:process-translate-strategic-choices-into-initiatives
     type: Process
     path: entities/v1-alpha/dea:process-translate-strategic-choices-into-initiatives/dea:process-translate-strategic-choices-into-initiatives.yaml

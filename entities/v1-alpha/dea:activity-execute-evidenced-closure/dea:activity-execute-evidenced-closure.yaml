@@ -1,0 +1,34 @@
+id: dea:activity-execute-evidenced-closure
+type: Activity
+name: Execute Evidenced Closure
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: "The cohesive grouping of work within Close Enterprise Relationship that executes the final closure with counterparty confirmation, evidence capture and archival."
+belongs_to_business_process: dea:process-close-enterprise-relationship
+cohesion_rationale: "Constituent work shares a single evidenced closure concern, one input class (the settled obligations and resolved records and rights), and one output (the executed close with evidence). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6)."
+decomposition_boundary: l4-reached
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: PartyAndRelationship
+    stage: Retire
+    identifier: ecf:partyRelationship.retire
+metadata:
+  established_by: CR-BP-69
+  established_at: '2026-09-15'
+  change_history:
+  - cr: CR-BP-69
+    date: '2026-09-15'
+    change: |
+      Initial L3 Activity entry; lands as part of the CR-BP-69
+      admitted-BP L3 decomposition tranche (pattern proven by CR-BP-42 through CR-BP-57).
+      Classified per CR-BP-32 section 5 (fails standalone
+      executability and resource dedication); decomposition
+      boundary marker per CR-BP-32 section 12 pending Task
+      records (dea:Task lifecycle: proposed).
