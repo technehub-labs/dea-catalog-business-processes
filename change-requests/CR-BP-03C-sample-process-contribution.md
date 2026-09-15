@@ -213,6 +213,6 @@ md5:  d6a3c1f8...  (refined during implementation)
 
 ---
 
-## 9. Pause-before-merge
+## 9. Review & Voting Before Committing 
 
 Processes are adopted through a submission and CR-gate (CR-programme convention, is gated with a pause for processing, and voting) before merging into the main catalog. 
