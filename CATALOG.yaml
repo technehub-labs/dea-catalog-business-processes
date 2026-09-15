@@ -2,10 +2,10 @@ catalog:
   abbreviation: BP
   counts:
     candidates: 0
-    canonical: 691
-    entities: 692
-    open_change_requests: 82
-    research_files: 305
+    canonical: 693
+    entities: 694
+    open_change_requests: 83
+    research_files: 307
     retired: 1
   cross_cutting:
     change_requests: change-requests/
@@ -6104,6 +6104,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:group-regulated-onboarding
+    last_modified: '2026-09-15'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:group-regulated-onboarding/dea:group-regulated-onboarding.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: ProcessGroup
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:group-relationship-termination
     last_modified: '2026-09-14'
     lifecycle_status: candidate
@@ -7186,6 +7197,17 @@ catalog:
     last_modified: '2026-09-14'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-monitor-strategic-performance/dea:process-monitor-strategic-performance.yaml
+    research_count: 2
+    retired_count: 0
+    state: canonical
+    type: Process
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:process-onboard-regulated-party-relationship
+    last_modified: '2026-09-15'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:process-onboard-regulated-party-relationship/dea:process-onboard-regulated-party-relationship.yaml
     research_count: 2
     retired_count: 0
     state: canonical
@@ -9318,6 +9340,9 @@ catalog:
   - entity_id: dea:group-proposition-design
     files: []
     path: entities/v1-alpha/dea:group-proposition-design/research/
+  - entity_id: dea:group-regulated-onboarding
+    files: []
+    path: entities/v1-alpha/dea:group-regulated-onboarding/research/
   - entity_id: dea:group-relationship-termination
     files: []
     path: entities/v1-alpha/dea:group-relationship-termination/research/
@@ -9814,6 +9839,11 @@ catalog:
     - README.md
     - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-monitor-strategic-performance/research/
+  - entity_id: dea:process-onboard-regulated-party-relationship
+    files:
+    - README.md
+    - l2-admission-deposition.yaml
+    path: entities/v1-alpha/dea:process-onboard-regulated-party-relationship/research/
   - entity_id: dea:process-onboard-tax-and-compliance-capability
     files:
     - README.md

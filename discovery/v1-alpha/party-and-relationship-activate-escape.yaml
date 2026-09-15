@@ -120,6 +120,11 @@ discovery:
       type: ADMIT-CANONICAL
       canonical_process_ref: dea:process-onboard-regulated-party-relationship
       related_contexts: []
+    admission:
+      status: admitted
+      admitted_as: dea:process-onboard-regulated-party-relationship
+      admitted_by: CR-BP-71
+      admitted_at: '2026-09-15'
   - name: Commence Relationship
     proposed_identity:
       verb: Commence

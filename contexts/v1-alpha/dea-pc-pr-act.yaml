@@ -1,0 +1,133 @@
+# Process Context Cell Charter: PartyAndRelationship x Activate.
+#
+# Lands as part of CR-BP-71 (P&R Activate admission tranche), the
+# first cell in the catalog at a PartyAndRelationship x Activate
+# coordinate. The register cell was backlog-deferred under CR-BP-19
+# (uniform Activate/Retire rationale) with the per-cell escape note
+# "defer until a regulated onboarding (e.g. KYC for financial
+# services) requires a distinct group". CR-BP-70's escape-clause
+# discovery record
+# (discovery/v1-alpha/party-and-relationship-activate-escape.yaml)
+# evaluated that escape clause and established the evidence-backed
+# canonical candidate Onboard Regulated Party Relationship (9/10,
+# ADMIT-CANONICAL) on FATF R.10, FinCEN CDD (31 CFR 1010.230) + CIP,
+# EU AMLD4/AMLD5/AMLD6, Basel BCBS ML/FT guidelines, and Wolfsberg
+# Group guidance; CR-BP-71 reverses the cell disposition to
+# ratified-accepted.
+#
+# Substrate independence (ADR-ECF-002 §5, CR-ECF-007): this context
+# applies to biological, artificial, and hybrid agents without
+# reclassification.
+
+id: dea:pc-pr-act
+domain: PartyAndRelationship
+lifecycle_stage: Activate
+name: Enterprise Relationship Activation
+
+# Normative definition (PC-006).
+definition: |
+  The bounded enterprise context for **activating enterprise
+  relationships** in the **Party & Relationship** domain where
+  regulatory obligations (identity verification, beneficial-ownership
+  resolution, risk classification, onboarding approval) trigger
+  distinct group-level work before the relationship may commence.
+  This context addresses the regulated-onboarding dimension of
+  relationship activation; non-regulated first-time activation remains
+  covered by the receiving Operate cell (relationship operation
+  includes habitual onboarding) and is excluded.
+
+# Scope (PC-005).
+scope:
+  includes:
+    - Regulated onboarding (KYC/AML/CDD) and identity verification
+    - Beneficial-ownership identification, verification, and resolution
+    - Risk classification and onboarding approval
+    - Onboarding refusal with recorded rationale
+  excludes:
+    - Relationship establishment and acquisition work (Build stage; sibling coordinate)
+    - Steady-state relationship operation (Operate stage; adjacent context)
+    - Relationship improvement and development (Improve stage; adjacent context)
+    - Relationship close-out and regulated offboarding (Retire stage; sibling coordinate, CR-BP-67)
+    - Non-regulated first-time activation (handled inside dea:pc-pr-operate per register v2 doctrine)
+
+# Intended outcomes.
+outcomes:
+    - Relationships are activated under verified identity, resolved beneficial ownership, and an assigned risk classification.
+    - Onboarding decisions (approve / decline) are recorded with their evidence.
+    - Downstream monitoring obligations are handed off to the Operate context.
+
+# Adjacent contexts (CR-BP-02 §11).
+adjacent_contexts:
+    - dea:pc-pr-conceive
+    - dea:pc-pr-design
+    - dea:pc-pr-build
+    - dea:pc-pr-operate
+    - dea:pc-pr-improve
+    - dea:pc-pr-retire
+
+# Business Processes belonging to this context (PC-008).
+processes:
+    - dea:process-onboard-regulated-party-relationship
+
+# Cell Charter (CR-BP-02 §7; PC-006).
+cell_charter:
+  enterprise_concern: "Party & Relationship: the regulated activation of enterprise relationships across party roles (customer, supplier, partner)."
+  lifecycle_concern: "Activate: regulated onboarding with verified identity, resolved beneficial ownership, and onboarding approval."
+  combined_semantic_meaning: |
+    The regulated-onboarding activation work that brings an enterprise
+    relationship from unverified applicant to verified, risk-rated,
+    approved (or declined) party under KYC/AML/CDD controls, before
+    commencement of the relationship itself.
+  expected_outcomes:
+    - Verified identity and resolved beneficial ownership at the time of activation
+    - Risk classification assigned and onboarding decision recorded
+    - Downstream monitoring obligations handed off to the Operate context
+  inclusions:
+    - Customer Identification Program (CIP) and Customer Due Diligence (CDD/EDD)
+    - Beneficial-ownership resolution at account opening (FinCEN CDD Rule, 31 CFR 1010.230)
+    - Sanctions and PEP screening; onboarding approval authority
+    - Onboarding refusal with recorded rationale
+  exclusions:
+    - Non-regulated first-time activation (handled inside dea:pc-pr-operate)
+    - Steady-state relationship operation (Operate context)
+    - Relationship close-out and regulated offboarding (Retire context, CR-BP-67)
+    - Asset retirement and decommissioning (EnablementAndOperations x Retire; sibling cell)
+  adjacent_boundaries:
+    - "dea:pc-pr-operate (adjacent context): the Operate cell continues onboarding decisions not gated by regulated onboarding and conducts ongoing monitoring."
+    - "dea:pc-pr-retire (sibling cell, CR-BP-67): the Retire cell handles close-out and regulated offboarding (including GDPR-driven erasure); the Activate cell handles regulated onboarding at the relationship's start."
+    - "dea:pc-ge-activate (sibling cell, CR-BP-65): Bring Policy Instrument into Force handles regulatory instrument commencement, distinct from party-relationship activation."
+
+# Lifecycle status (CR-BP-02 §17).
+lifecycle_status: candidate
+status: candidate
+
+# Provenance.
+established_by: CR-BP-71
+established_at: '2026-09-15'
+
+# Change history.
+change_history:
+  - cr: CR-BP-71
+    date: '2026-09-15'
+    change: |
+      Initial Process Context record. The cell was backlog-deferred
+      under register v2 (CR-BP-19) with the per-cell escape note
+      "defer until a regulated onboarding (e.g. KYC for financial
+      services) requires a distinct group"; CR-BP-70's escape-clause
+      discovery record (discovery/v1-alpha/party-and-relationship-activate-escape.yaml)
+      evaluated that escape clause against FATF R.10, FinCEN CDD
+      (31 CFR 1010.230) + CIP, EU AMLD4/AMLD5/AMLD6, Basel BCBS
+      ML/FT guidelines, and Wolfsberg Group guidance, scoring 9/10
+      and recommending ADMIT-CANONICAL at
+      discovery/v1-alpha/party-and-relationship-activate-escape.yaml.
+      This tranche reverses the cell disposition to ratified-accepted.
+
+links:
+  - rel: change-request
+    href: change-requests/CR-BP-71-pr-activate-admission.md
+  - rel: discovery-record-escape
+    href: discovery/v1-alpha/party-and-relationship-activate-escape.yaml
+  - rel: discovery-record-baseline
+    href: discovery/v1-alpha/party-and-relationship-activate.yaml
+  - rel: research-register
+    href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

@@ -270,8 +270,10 @@ def check_admission(path: Path, root: Path,
         # CR-BP-64.. are the discovery-driven admission tranches under
         # the CR-BP-62/63 lifecycle discovery programme: each admission
         # tranche registers its own CR number here as it lands.
+        # CR-BP-70: escape-clause discovery for P&R x Activate (KYC);
+        # CR-BP-71: P&R Activate admission tranche landed under it.
         _ADMISSION_CR_RE = re.compile(
-            r"^(?:CR-BP-13[a-z]?|CR-BP-19|CR-BP-20|CR-BP-21[a-z]?|CR-BP-03C|CR-BP-64|CR-BP-65|CR-BP-66|CR-BP-67)(?:\.\d+)*$"
+            r"^(?:CR-BP-13[a-z]?|CR-BP-19|CR-BP-20|CR-BP-21[a-z]?|CR-BP-03C|CR-BP-64|CR-BP-65|CR-BP-66|CR-BP-67|CR-BP-71)(?:\.\d+)*$"
         )
         has_admission = any(
             isinstance(e, dict) and _ADMISSION_CR_RE.match(
