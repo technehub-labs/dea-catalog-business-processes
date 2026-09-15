@@ -178,6 +178,10 @@ records:
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-regulated-onboarding/dea:group-regulated-onboarding.yaml
     sha256: a55fcf19885a4ac3dffa384e3378809f7c4b7a0e4cccbe155ee7134f7e6ded4b
+  - id: dea:group-regulated-run-off
+    type: ProcessGroup
+    path: entities/v1-alpha/dea:group-regulated-run-off/dea:group-regulated-run-off.yaml
+    sha256: 27efe2f0c3501af0a2002964d4008a8582f0763e78434b5bcfc8225df017b4fc
   - id: dea:group-regulated-workforce-wind-down
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-regulated-workforce-wind-down/dea:group-regulated-workforce-wind-down.yaml
@@ -258,6 +262,10 @@ records:
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-fa-operate.yaml
     sha256: 352eccfdf26d1696ec9e243d7f0d983aabf6940d421a15b8204cddb4eb921add
+  - id: dea:pc-fa-retire
+    type: ProcessContext
+    path: contexts/v1-alpha/dea-pc-fa-retire.yaml
+    sha256: 9945e6df6fd2e15ba43d079b49d65a7946232d0e936c76e982e24499cc8d130c
   - id: dea:pc-ge-activate
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-ge-activate.yaml
@@ -454,6 +462,10 @@ records:
     type: Process
     path: entities/v1-alpha/dea:process-conceive-workforce-and-agent-mix/dea:process-conceive-workforce-and-agent-mix.yaml
     sha256: 270c0ae4cdd32a51c1ab3c9b4e6aff625bb307a940884f1c2f033c0560fd0cb3
+  - id: dea:process-conclude-regulated-run-off
+    type: Process
+    path: entities/v1-alpha/dea:process-conclude-regulated-run-off/dea:process-conclude-regulated-run-off.yaml
+    sha256: d0c28bd44de9fd70948e73cbe2005527dda3869276ecbb716774bfa6faeebeca
   - id: dea:process-conduct-assurance-review
     type: Process
     path: entities/v1-alpha/dea:process-conduct-assurance-review/dea:process-conduct-assurance-review.yaml

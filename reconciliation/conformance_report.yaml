@@ -2,13 +2,13 @@ schema_version: 1
 report_at_run: CR-BP-16 S23
 report_at_source: scripts/build_conformance_report.py
 catalog_root: /home/hermes/dea-work/dea-catalog-processes
-total_records: 738
+total_records: 741
 conformance_levels:
   0: 0
   1: 0
   2: 0
   3: 0
-  4: 738
+  4: 741
 records:
 - id: dea:activity-address-performance-exceptions
   kind: Activity
@@ -5550,6 +5550,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:group-regulated-run-off
+  kind: Entity
+  path: entities/v1-alpha/dea:group-regulated-run-off/dea:group-regulated-run-off.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:group-regulated-workforce-wind-down
   kind: Entity
   path: entities/v1-alpha/dea:group-regulated-workforce-wind-down/dea:group-regulated-workforce-wind-down.yaml
@@ -5813,6 +5823,16 @@ records:
 - id: dea:process-conceive-workforce-and-agent-mix
   kind: Entity
   path: entities/v1-alpha/dea:process-conceive-workforce-and-agent-mix/dea:process-conceive-workforce-and-agent-mix.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:process-conclude-regulated-run-off
+  kind: Entity
+  path: entities/v1-alpha/dea:process-conclude-regulated-run-off/dea:process-conclude-regulated-run-off.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -7073,6 +7093,16 @@ records:
 - id: dea:pc-fa-operate
   kind: Unknown
   path: contexts/v1-alpha/dea-pc-fa-operate.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:pc-fa-retire
+  kind: Unknown
+  path: contexts/v1-alpha/dea-pc-fa-retire.yaml
   level: 4
   level_breakdown:
     L1_structural: true

@@ -15,12 +15,12 @@ stages:
 - Improve
 - Retire
 ratification:
-  version: 10
-  cr: CR-BP-71
+  version: 11
+  cr: CR-BP-75
   ratified_at: '2026-09-15'
-  supersedes: version 8 (CR-BP-67, ratified 2026-09-14)
-  ratified_accepted: 41
-  backlog_deferred: 8
+  supersedes: version 10 (CR-BP-73, ratified 2026-09-15)
+  ratified_accepted: 42
+  backlog_deferred: 7
   v4_to_v5_note: 'Two ProductAndValue cells (Activate, Retire) reverse from
     backlog-deferred to ratified-accepted/landed on CR-BP-63 discovery evidence
     under the CR-BP-62 lifecycle process-discovery method. The remaining 12
@@ -59,6 +59,7 @@ ratification:
     unchanged. Targeted disposition reversal, not a re-derivation; the v4
     rederivation_basis still stands.'
 
+  v10_to_v11_note: 'One FinanceAndAccounting cell (Retire) reverses from backlog-deferred to ratified-accepted/landed on CR-BP-74 escape-clause discovery evidence (Conclude a Regulated Run-Off, 9/10, PRA PS20/24 UK in force 30 June 2026 + FSB Final Guidance on Insurance Resolution Strategies 2025 + NAIC Model 901 + IFRS 17 effective 2023 + IFRS 5 + ASC 205-30 Liquidation Basis FASB ASU 2013-07 + ASC 944 + IRO Best Practice Guidance 2024). The v2 per-cell escape condition ("defer until a regulated unwind (e.g. mutual insurer run-off) requires a standalone group") is activated. The remaining 7 Activate/Retire cells keep their dispositions unchanged. Targeted disposition reversal, not a re-derivation; the v4 rederivation_basis still stands.'
   rederivation_basis: 'Re-derived against dea-metaframework framework/domain-grounding.md
     at ECF
 
@@ -1352,14 +1353,36 @@ register:
       - dea-metaframework/framework/domain-grounding.md §3.7
       - IFRS 5 Non-current Assets Held for Sale
       - ASC 205-30 Liquidation Basis
-      disposition: backlog-deferred
-      ratified_at: '2026-09-07'
-      ratified_by: CR-BP-19
+      - CR-BP-74 escape-clause discovery (2026-09-15)
+      disposition: ratified-accepted
+      ratified_at: '2026-09-15'
+      ratified_by: CR-BP-75
       deferral_reason: Activate and Retire are lifecycle transition stages, not stable
         Process Group operating scopes (register-wide deferred_rationale). Financial
         wind-down is often handled within financial stewardship; defer until a regulated
         unwind (e.g. mutual insurer run-off) requires a standalone group.
-      audit_status: backlog-deferred
+      v2_escape_clause: 'defer until a regulated unwind (e.g. mutual insurer run-off)
+        requires a standalone group'
+      v2_escape_clause_evaluation: Activated by CR-BP-74 escape-clause discovery
+        (2026-09-15) on PRA PS20/24 (UK, in force 30 June 2026), FSB Final Guidance
+        on Insurance Resolution Strategies (2025), NAIC Model 901, IFRS 17
+        (effective 2023), IFRS 5, ASC 205-30 Liquidation Basis (FASB ASU 2013-07),
+        ASC 944, IRO Best Practice Guidance 2024. Conclude a Regulated Run-Off
+        scored 9/10 ADMIT-CANONICAL.
+      v11_landing_note: |
+        Cell flipped from backlog-deferred to ratified-accepted/landed by CR-BP-75
+        admission tranche. The carry-forward candidates (Operate financial wind-down,
+        Dispose of investments, Recognize impairment and exit liabilities) remain
+        in l2_candidates for traceability: candidate 2 (Operate financial wind-down)
+        is DEFER (5/10) pending a non-insurance regulated wind-down re-evaluation;
+        candidates 3 and 4 (Dispose of investments, Recognize impairment and exit
+        liabilities) are RECLASSIFY (3/10 each) as Activity-level decomposition
+        candidates for CR-BP-7x+. The dea:pc-fa-retire cell charter is framed for
+        insurance-led regulated run-off today with the option to extend scope at
+        a later CR should non-insurance evidence emerge. The dea:discovery-finance-and-accounting-retire
+        admission block at the escape record resolves the DISC-007 duplicate-name
+        face.
+      audit_status: landed
 audit_counts:
   landed: 12
   ratified-pending-landing: 23

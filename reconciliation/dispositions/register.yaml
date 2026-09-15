@@ -1,54 +1,31 @@
-# Process Catalog Reconciliation Disposition Register (CR-BP-15-IMP Phase 3)
-#
-# This file records the per-record disposition decision for every
-# record in the canonical catalogue. The disposition schema lives at
-# reconciliation/dispositions/schema.yaml and is enforced by
-# scripts/check_dispositions.py.
-#
-# Authoritative reference: CR-BP-15 /28 (the ten dispositions);
-# CR-BP-15-IMP /3 (the disposition register); CR-BP-14 /17 (the
-# intent migration mapping).
-#
-# Status: PRELIMINARY. Dispositions recorded here are evidence-based
-# preliminary decisions. They will be LOCKED during CR-BP-15-IMP
-# Phases 5-7 (PR-6..9), at which point the dispositions become
-# authoritative for the per-tranche migrations.
-#
-# Records: 18 (Business Processes); 18 disposition entries.
-
 schema_version: 1
 schema_ref: reconciliation/dispositions/schema.yaml
 register_at: 2026-09-06
 register_status: LOCKED
 register_lock_target: CR-BP-15-IMP Phase 5 (PR-9 closure)
 register_lock_progress:
-  locked_tranches: [cd-b, cd-c, cd-d, cd-im, cd-op, ge-b, ge-c, ge-d, ge-im, ge-op]
+  locked_tranches:
+  - cd-b
+  - cd-c
+  - cd-d
+  - cd-im
+  - cd-op
+  - ge-b
+  - ge-c
+  - ge-d
+  - ge-im
+  - ge-op
   locked_records: 18
   remaining_records: 0
-
-# Phase 6 specialization status (CR-BP-15-IMP).
-# Phase 6 introduces the BP-SEM-013 specialization-relationship
-# validation rule but does NOT introduce new `specializes`
-# relationships on the canonical 18 records. Rationale: every
-# candidate pair examined in Phase 6 planning
-# (cd-d journey-vs-experience; ge-d policies-vs-system;
-# cd-c market-vs-strategy) is sequential work within a single
-# bounded context (uses `composes`), not pattern-based
-# refinement (uses `specializes`). The CR-BP-14 S24 admission
-# freeze prevents new admission tranches that would introduce
-# clean fan-out candidates.
 phase6_status:
   specializations_introduced: 0
   bp_sem_013_rule_added: true
   validation_mode: machinery-only
-  decision_basis: >
-    No canonical record pair exhibits the cardinality fan-out
-    that distinguishes specialization (CR-BP-14 S23) from
-    decomposition. Every same-context pair is sequential work
-    within a single bounded context (uses composes), not
-    pattern-based refinement (uses specializes).
+  decision_basis: 'No canonical record pair exhibits the cardinality fan-out that distinguishes specialization (CR-BP-14 S23)
+    from decomposition. Every same-context pair is sequential work within a single bounded context (uses composes), not pattern-based
+    refinement (uses specializes).
 
-# Disposition summary by axis. Computed at register generation time.
+    '
 summary:
   total_records: 18
   by_disposition:
@@ -64,1940 +41,2445 @@ summary:
   by_lock_status:
     LOCKED: 18
     PRELIMINARY: 0
-
 dispositions:
+- record_id: dea:process-customer-channel-and-acquisition-build
+  disposition: RECLASSIFY
+  changes:
+  - axis: process_intent
+    from: operational
+    to: operate
+  - axis: process_context
+    from: dea:pc-pr-b
+    to: dea:pc-pr-b
+  - axis: process_audience
+    from: party-relationship
+    to: REMOVE
+  tranche: cd-b
+  rationale: 'The record''s identity, name and process_type are sound. The
 
-  # ----- dea:pc-pr-b: party-relationship / build -----
-
-  - record_id: dea:process-customer-channel-and-acquisition-build
-    disposition: RECLASSIFY
-    changes:
-      - axis: process_intent
-        from: operational
-        to: operate
-      - axis: process_context
-        from: dea:pc-pr-b
-        to: dea:pc-pr-b   # unchanged context, migrate scalar -> block
-      - axis: process_audience
-        from: party-relationship
-        to: REMOVE        # legacy alias no longer needed once context: block in place
-    tranche: cd-b
-    rationale: |
-      The record's identity, name and process_type are sound. The
-      legacy `process_intent: operational` maps to the canonical
-      `operate` vocabulary (CR-BP-14 /17). The legacy scalar
-      `process_context` migrates to the canonical `context:` block
-      (CR-BP-14 /13, BP-SEM-007). The `process_audience` legacy
-      alias is removed because the canonical `context:` block
-      already declares the ECF Domain x Lifecycle placement.
-    evidence: |
-      CR-BP-14 /17 mapping table; CR-BP-14 /13 audience vs context
-      separation; the record's name ("Build Customer Acquisition
-      Channels") and outcome statement establish that the work is
-      operational in nature (operate).
-    note: null
-
-  - record_id: dea:process-demand-generation-build
-    disposition: RECLASSIFY
-    changes:
-      - axis: process_intent
-        from: operational
-        to: operate
-      - axis: process_context
-        from: dea:pc-pr-b
-        to: dea:pc-pr-b
-      - axis: process_audience
-        from: party-relationship
-        to: REMOVE
-    tranche: cd-b
-    rationale: |
-      Same disposition as dea:process-customer-channel-and-acquisition-build.
-      The record's identity, name ("Build Demand Generation
-      Programs") and outcome establish operational nature (operate).
-      The legacy scalar and audience migrate to the canonical
-      `context:` block.
-    evidence: |
-      CR-BP-14 /17; the record's outcome statement establishes that
-      the work performs recurring demand-generation activities.
-    note: null
-
-  # ----- dea:pc-pr-c: party-relationship / conceive -----
-
-  - record_id: dea:process-customer-strategy-conception
-    disposition: RECLASSIFY
-    changes:
-      - axis: process_intent
-        from: management
-        to: develop
-      - axis: process_context
-        from: dea:pc-pr-c
-        to: dea:pc-pr-c
-      - axis: process_audience
-        from: party-relationship
-        to: REMOVE
-    tranche: cd-c
-    rationale: |
-      The record's name is "Develop Customer Strategy" (its display
-      name diverges from the slug but the record's outcome statement
-      describes strategy conception). Legacy intent "management"
-      maps to canonical `develop` because strategy conception is
-      purpose-oriented development (CR-BP-14 /17). The legacy
-      scalar and audience migrate to the canonical `context:` block.
-    evidence: |
-      CR-BP-14 /17; the record's outcome statement establishes that
-      the work creates and evolves the customer strategy.
-    note: |
-      The record's `name` field still reads "Develop Customer
-      Strategy"; the slug "customer-strategy-conception" is a
-      legacy artifact and is NOT a RENAME target (Phase 4).
-
-  - record_id: dea:process-market-and-demand-conception
-    disposition: RECLASSIFY
-    changes:
-      - axis: process_intent
-        from: management
-        to: develop
-      - axis: process_context
-        from: dea:pc-pr-c
-        to: dea:pc-pr-c
-      - axis: process_audience
-        from: party-relationship
-        to: REMOVE
-    tranche: cd-c
-    rationale: |
-      The record's display name "Develop Market Intelligence" and
-      its outcome statement establish that the work creates market
-      and demand intelligence (develop). Legacy "management" maps
-      to `develop`. Legacy scalar and audience migrate to the
-      canonical `context:` block.
-    evidence: |
-      CR-BP-14 /17; the record's outcome statement.
-    note: null
-
-  # ----- dea:pc-pr-d: party-relationship / design -----
-
-  - record_id: dea:process-customer-experience-design
-    disposition: RECLASSIFY
-    changes:
-      - axis: process_intent
-        from: management
-        to: develop
-      - axis: process_context
-        from: dea:pc-d-cd-d
-        to: dea:pc-pr-d
-      - axis: process_audience
-        from: party-relationship
-        to: REMOVE
-    tranche: cd-d
-    rationale: |
-      The record's name is "Design Customer Experience" and the
-      outcome statement establishes that the work creates the
-      customer experience (develop). Legacy "management" maps to
-      `develop`. The legacy scalar and audience migrate to the
-      canonical `context:` block.
-    evidence: |
-      CR-BP-14 /17; the record's outcome statement.
-    note: null
-
-  - record_id: dea:process-customer-journey-design
-    disposition: RECLASSIFY
-    changes:
-      - axis: process_intent
-        from: support
-        to: develop
-      - axis: process_context
-        from: dea:pc-pr-d
-        to: dea:pc-pr-d
-      - axis: process_audience
-        from: party-relationship
-        to: REMOVE
-    tranche: cd-d
-    rationale: |
-      The record's name "Design Customer Journey" and outcome
-      statement establish that the work creates the customer
-      journey (develop). Legacy "support" maps to `develop` here
-      because "support" was misapplied; the work is purpose-
-      oriented development. Legacy scalar and audience migrate to
-      the canonical `context:` block.
-    evidence: |
-      CR-BP-14 /17 mapping; the record's outcome statement
-      establishes that the work creates and evolves the customer
-      journey artifacts.
-    note: null
-
-  - record_id: dea:process-demand-design
-    disposition: RECLASSIFY
-    changes:
-      - axis: process_intent
-        from: management
-        to: develop
-      - axis: process_context
-        from: dea:pc-pr-d
-        to: dea:pc-pr-d
-      - axis: process_audience
-        from: party-relationship
-        to: REMOVE
-    tranche: cd-d
-    rationale: |
-      The record's name "Design Demand Model" and outcome
-      statement establish that the work creates the demand model
-      (develop). Legacy "management" maps to `develop`.
-    evidence: |
-      CR-BP-14 /17; the record's outcome statement.
-    note: null
-
-  # ----- dea:pc-pr-im: party-relationship / improve -----
-
-  - record_id: dea:process-customer-insight-and-retention
-    disposition: RECLASSIFY
-    changes:
-      - axis: process_intent
-        from: management
-        to: operate
-      - axis: process_context
-        from: dea:pc-pr-im
-        to: dea:pc-pr-im
-      - axis: process_audience
-        from: party-relationship
-        to: REMOVE
-    tranche: cd-im
-    rationale: |
-      The record's display name "Operate Customer Retention
-      Programs" and outcome statement establish that the work
-      performs recurring customer retention activities (operate).
-      Legacy "management" maps to `operate` here.
-    evidence: |
-      CR-BP-14 /17; the record's outcome statement.
-    note: null
-
-  # ----- dea:pc-pr-op: party-relationship / operate -----
-
-  - record_id: dea:process-manage-customer-relationship
-    disposition: RECLASSIFY
-    changes:
-      - axis: process_intent
-        from: management
-        to: manage
-      - axis: process_context
-        from: dea:pc-pr-op
-        to: dea:pc-pr-op
-      - axis: process_audience
-        from: party-relationship
-        to: REMOVE
-    tranche: cd-op
-    rationale: |
-      The record's name "Manage Customer Relationship" and outcome
-      statement establish that the work plans, coordinates and
-      controls customer relationships (manage). Legacy "management"
-      maps to canonical `manage` (no actual change in token, but
-      the canonical vocabulary is recorded).
-    evidence: |
-      CR-BP-14 /9.2; CR-BP-14 /17.
-    note: null
-
-  # ----- dea:pc-ge-b: governance / build -----
-
-  - record_id: dea:process-codify-charters-and-policies
-    disposition: RECLASSIFY
-    changes:
-      - axis: process_intent
-        from: operational
-        to: operate
-      - axis: process_context
-        from: dea:pc-ge-b
-        to: dea:pc-ge-b
-      - axis: process_audience
-        from: party-relationship
-        to: REMOVE
-    tranche: ge-b
-    rationale: |
-      The record's name "Codify Charters and Policies" and
-      outcome statement establish that the work performs
-      recurring charter and policy codification activities
-      (operate). Legacy "operational" maps to `operate`. Note:
-      the record's `process_audience` was originally
-      `party-relationship` (a 13b generator artifact); the
-      canonical `context:` block is `dea:pc-ge-b` (governance /
-      build), so the legacy audience is replaced by the
-      canonical context.
-    evidence: |
-      CR-BP-14 /17; the canonical context is governance /
-      build (CR-BP-02 register); the record's outcome statement
-      establishes that the work codifies governance artefacts.
-    note: |
-      Audience-vs-context mismatch resolved by the canonical
-      `context:` block (CR-BP-14 /13).
-
-  - record_id: dea:process-establish-governance-bodies
-    disposition: RECLASSIFY
-    changes:
-      - axis: process_intent
-        from: operational
-        to: operate
-      - axis: process_context
-        from: dea:pc-ge-b
-        to: dea:pc-ge-b
-      - axis: process_audience
-        from: party-relationship
-        to: REMOVE
-    tranche: ge-b
-    rationale: |
-      The record's name "Establish Governance Bodies" and
-      outcome statement establish that the work performs
-      recurring governance-body establishment activities
-      (operate). Legacy "operational" maps to `operate`. Same
-      audience-vs-context mismatch as dea:process-codify-charters-and-policies.
-    evidence: |
-      CR-BP-14 /17; CR-BP-02 governance / build register.
-    note: null
-
-  # ----- dea:pc-ge-c: governance / conceive -----
-
-  - record_id: dea:process-develop-governance-strategy
-    disposition: RECLASSIFY
-    changes:
-      - axis: process_intent
-        from: management
-        to: develop
-      - axis: process_context
-        from: dea:pc-ge-c
-        to: dea:pc-ge-c
-      - axis: process_audience
-        from: party-relationship
-        to: REMOVE
-    tranche: ge-c
-    rationale: |
-      The record's name "Develop Governance Strategy" and
-      outcome statement establish that the work creates and
-      evolves the governance strategy (develop). Legacy
-      "management" maps to `develop`.
-    evidence: |
-      CR-BP-14 /17.
-    note: null
-
-  - record_id: dea:process-initiate-policy-and-charter
-    disposition: RECLASSIFY
-    changes:
-      - axis: process_intent
-        from: management
-        to: manage
-      - axis: process_context
-        from: dea:pc-ge-c
-        to: dea:pc-ge-c
-      - axis: process_audience
-        from: party-relationship
-        to: REMOVE
-    tranche: ge-c
-    rationale: |
-      The record's name "Initiate Policy and Charter" and
-      outcome statement establish that the work initiates
-      (plans, coordinates) policies and charters (manage).
-      Legacy "management" maps to `manage`.
-    evidence: |
-      CR-BP-14 /17.
-    note: null
-
-  # ----- dea:pc-ge-d: governance / design -----
-
-  - record_id: dea:process-design-governance-system
-    disposition: RECLASSIFY
-    changes:
-      - axis: process_intent
-        from: management
-        to: develop
-      - axis: process_context
-        from: dea:pc-ge-d
-        to: dea:pc-ge-d
-      - axis: process_audience
-        from: party-relationship
-        to: REMOVE
-    tranche: ge-d
-    rationale: |
-      The record's name "Design Governance System" and outcome
-      statement establish that the work creates the governance
-      system (develop). Legacy "management" maps to `develop`.
-    evidence: |
-      CR-BP-14 /17.
-    note: null
-
-  - record_id: dea:process-design-policies-and-controls
-    disposition: RECLASSIFY
-    changes:
-      - axis: process_intent
-        from: management
-        to: develop
-      - axis: process_context
-        from: dea:pc-ge-d
-        to: dea:pc-ge-d
-      - axis: process_audience
-        from: party-relationship
-        to: REMOVE
-    tranche: ge-d
-    rationale: |
-      The record's name "Design Policies and Controls" and
-      outcome statement establish that the work creates
-      policies and controls (develop). Legacy "management" maps
-      to `develop`.
-    evidence: |
-      CR-BP-14 /17.
-    note: null
-
-  # ----- dea:pc-ge-im: governance / improve -----
-
-  - record_id: dea:process-review-governance-effectiveness
-    disposition: RECLASSIFY
-    changes:
-      - axis: process_intent
-        from: management
-        to: govern
-      - axis: process_context
-        from: dea:pc-ge-im
-        to: dea:pc-ge-im
-      - axis: process_audience
-        from: party-relationship
-        to: REMOVE
-    tranche: ge-im
-    rationale: |
-      The record's name "Review Governance Effectiveness" and
-      outcome statement establish that the work governs
-      (assures, evaluates) governance effectiveness (govern).
-      Legacy "management" maps to `govern` per CR-BP-14 /17
-      (governance is the defining purpose, not management).
-    evidence: |
-      CR-BP-14 /17 example: "Govern Enterprise Risk" should be
-      `govern`, not `manage`, when governance is the defining
-      purpose.
-    note: null
-
-  # ----- dea:pc-ge-op: governance / operate -----
-
-  - record_id: dea:process-audit-policy-compliance
-    disposition: RECLASSIFY
-    changes:
-      - axis: process_intent
-        from: support
-        to: govern
-      - axis: process_context
-        from: dea:pc-ge-op
-        to: dea:pc-ge-op
-      - axis: process_audience
-        from: party-relationship
-        to: REMOVE
-    tranche: ge-op
-    rationale: |
-      The record's name "Audit Policy Compliance" and outcome
-      statement establish that the work governs (assures,
-      enforces) policy compliance (govern). Legacy "support"
-      maps to `govern` per CR-BP-14 /17 (audit is a governing
-      activity). Same audience-vs-context mismatch as the ge-b
-      records.
-    evidence: |
-      CR-BP-14 /17; the record's outcome statement establishes
-      audit, compliance and assurance responsibilities.
-    note: null
-
-  - record_id: dea:process-operate-governance-oversight
-    disposition: RECLASSIFY
-    changes:
-      - axis: process_intent
-        from: management
-        to: operate
-      - axis: process_context
-        from: dea:pc-ge-op
-        to: dea:pc-ge-op
-      - axis: process_audience
-        from: party-relationship
-        to: REMOVE
-    tranche: ge-op
-    rationale: |
-      The record's name "Operate Governance Oversight" and
-      outcome statement establish that the work performs
-      recurring governance oversight activities (operate).
-      Legacy "management" maps to `operate` here.
-    evidence: |
-      CR-BP-14 /17.
-    note: null
-
-  # ----- CR-BP-21a: StrategyAndDirection landing -----
-  # 4 fresh L2 landings on SD cells (Design/Build/Operate/Improve)
-  # and 1 L2 migration (MOVE) from governance-existence x conceive to
-  # strategy-direction x conceive (CR-BP-20 Option A split).
-
-  - record_id: dea:process-design-strategic-options
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21a
-    rationale: |
-      Fresh L2 landing for the StrategyAndDirection x Design cell,
-      per CR-BP-21a and CR-BP-19 register v2. No prior record
-      existed at this coordinate under v2.4.0.
-    evidence: |
-      CR-BP-19 /l1-register.yaml strategyAndDirection.design;
-      CR-BP-21a-strategy-direction-landing.md.
-    note: null
-
-  - record_id: dea:process-build-strategic-plan
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21a
-    rationale: |
-      Fresh L2 landing for the StrategyAndDirection x Build cell,
-      per CR-BP-21a and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml strategyAndDirection.build;
-      CR-BP-21a-strategy-direction-landing.md.
-    note: null
-
-  - record_id: dea:process-monitor-strategic-performance
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21a
-    rationale: |
-      Fresh L2 landing for the StrategyAndDirection x Operate cell,
-      per CR-BP-21a and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml strategyAndDirection.operate;
-      CR-BP-21a-strategy-direction-landing.md.
-    note: null
-
-  - record_id: dea:process-adapt-strategic-direction
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21a
-    rationale: |
-      Fresh L2 landing for the StrategyAndDirection x Improve cell,
-      per CR-BP-21a and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml strategyAndDirection.improve;
-      CR-BP-21a-strategy-direction-landing.md.
-    note: null
-
-  - record_id: dea:process-develop-corporate-strategy
-    disposition: MOVE
-    changes:
-      - axis: process_context
-        from: dea:pc-ge-conceive
-        to: dea:pc-sd-conceive
-      - axis: process_audience
-        from: governance-existence
-        to: strategy-direction
-    tranche: cr-bp-21a
-    rationale: |
-      L2 migration per CR-BP-20 Option A split (user-approved
-      2026-09-07) and CR-BP-21a execution. Develop corporate
-      strategy is excluded from GovernanceAndExistence per v2.4.0
-      (domain-grounding.md §3.1: GE authorises but does not direct;
-      Strategy & Direction directs within the authorised frame).
-      The previous record dea:process-develop-governance-strategy
-      is deprecated and remains in the tree with lifecycle_status:
-      deprecated for traceability.
-    evidence: |
-      CR-BP-19 /l1-register.yaml strategyAndDirection.conceive;
-      CR-BP-20-l1-l2-alignment-ecf-v240.md;
-      CR-BP-21a-strategy-direction-landing.md.
-    note: |
-      The previous record id (dea:process-develop-governance-strategy)
-      is deprecated; new canonical id is
-      dea:process-develop-corporate-strategy.
-
-  # ----- CR-BP-21b: AgencyAndOrganization landing -----
-  # 5 fresh L2 landings on AO cells (Conceive/Design/Build/Operate/
-  # Improve). All substrate-neutral per ADR-ECF-002 §5 / CR-ECF-007.
-  # Composes the L1 group dea:group-organization-and-agent-conception.
-
-  - record_id: dea:process-frame-organization-and-agent-strategy
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21b
-    rationale: |
-      Fresh L2 landing for the AgencyAndOrganization x Conceive
-      cell, per CR-BP-21b and CR-BP-19 register v2. Substrate-
-      neutral per ADR-ECF-002 §5 / CR-ECF-007.
-    evidence: |
-      CR-BP-19 /l1-register.yaml agencyOrganization.conceive;
-      CR-BP-21b-agency-organization-landing.md.
-    note: null
-
-  - record_id: dea:process-design-organization-structure
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21b
-    rationale: |
-      Fresh L2 landing for the AgencyAndOrganization x Design
-      cell, per CR-BP-21b and CR-BP-19 register v2. Substrate-
-      neutral per ADR-ECF-002 §5 / CR-ECF-007.
-    evidence: |
-      CR-BP-19 /l1-register.yaml agencyOrganization.design;
-      CR-BP-21b-agency-organization-landing.md.
-    note: null
-
-  - record_id: dea:process-acquire-and-onboard-agents
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21b
-    rationale: |
-      Fresh L2 landing for the AgencyAndOrganization x Build
-      cell, per CR-BP-21b and CR-BP-19 register v2. Substrate-
-      neutral: covers recruitment (biological), model deployment
-      and API integration (artificial), and hybrid provisioning.
-    evidence: |
-      CR-BP-19 /l1-register.yaml agencyOrganization.build;
-      CR-BP-21b-agency-organization-landing.md.
-    note: null
-
-  - record_id: dea:process-operate-agent-performance
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21b
-    rationale: |
-      Fresh L2 landing for the AgencyAndOrganization x Operate
-      cell, per CR-BP-21b and CR-BP-19 register v2. Substrate-
-      neutral.
-    evidence: |
-      CR-BP-19 /l1-register.yaml agencyOrganization.operate;
-      CR-BP-21b-agency-organization-landing.md.
-    note: null
-
-  - record_id: dea:process-develop-agents-and-organization
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21b
-    rationale: |
-      Fresh L2 landing for the AgencyAndOrganization x Improve
-      cell, per CR-BP-21b and CR-BP-19 register v2. Substrate-
-      neutral.
-    evidence: |
-      CR-BP-19 /l1-register.yaml agencyOrganization.improve;
-      CR-BP-21b-agency-organization-landing.md.
-    note: null
-
-  # ----- CR-BP-21c: ProductAndValue landing -----
-
-  - record_id: dea:process-frame-value-proposition-thesis
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21c
-    rationale: |
-      Fresh L2 landing for the ProductAndValue x Conceive
-      cell, per CR-BP-21c and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml productValue.conceive;
-      CR-BP-21c-product-value-landing.md.
-    note: null
-
-  - record_id: dea:process-design-product-and-service-propositions
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21c
-    rationale: |
-      Fresh L2 landing for the ProductAndValue x Design
-      cell, per CR-BP-21c and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml productValue.design;
-      CR-BP-21c-product-value-landing.md.
-    note: null
-
-  - record_id: dea:process-develop-product-variants
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21c
-    rationale: |
-      Fresh L2 landing for the ProductAndValue x Build
-      cell, per CR-BP-21c and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml productValue.build;
-      CR-BP-21c-product-value-landing.md.
-    note: null
-
-  - record_id: dea:process-operate-product-catalogue
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21c
-    rationale: |
-      Fresh L2 landing for the ProductAndValue x Operate
-      cell, per CR-BP-21c and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml productValue.operate;
-      CR-BP-21c-product-value-landing.md.
-    note: null
-
-  - record_id: dea:process-conduct-proposition-performance-review
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21c
-    rationale: |
-      Fresh L2 landing for the ProductAndValue x Improve
-      cell, per CR-BP-21c and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml productValue.improve;
-      CR-BP-21c-product-value-landing.md.
-    note: null
-
-  # ----- CR-BP-21d: EnablementAndOperations landing -----
-
-  - record_id: dea:process-frame-operations-strategy
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21d
-    rationale: |
-      Fresh L2 landing for the EnablementAndOperations x Conceive
-      cell, per CR-BP-21d and CR-BP-19 register v2. Absorbs
-      execution-side sourcing/asset conception from the dissolved
-      Supply & Resources domain.
-    evidence: |
-      CR-BP-19 /l1-register.yaml operationsEnablement.conceive;
-      CR-BP-21d-enablement-operations-landing.md.
-    note: null
-
-  - record_id: dea:process-design-operations-model
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21d
-    rationale: |
-      Fresh L2 landing for the EnablementAndOperations x Design
-      cell, per CR-BP-21d and CR-BP-19 register v2. Absorbs
-      asset/facility blueprint design from the dissolved Supply &
-      Resources domain.
-    evidence: |
-      CR-BP-19 /l1-register.yaml operationsEnablement.design;
-      CR-BP-21d-enablement-operations-landing.md.
-    note: null
-
-  - record_id: dea:process-build-delivery-capability
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21d
-    rationale: |
-      Fresh L2 landing for the EnablementAndOperations x Build
-      cell, per CR-BP-21d and CR-BP-19 register v2. Absorbs asset
-      acquisition and facility provisioning from the dissolved
-      Supply & Resources domain.
-    evidence: |
-      CR-BP-19 /l1-register.yaml operationsEnablement.build;
-      CR-BP-21d-enablement-operations-landing.md.
-    note: null
-
-  - record_id: dea:process-operate-service-delivery
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21d
-    rationale: |
-      Fresh L2 landing for the EnablementAndOperations x Operate
-      cell, per CR-BP-21d and CR-BP-19 register v2. Absorbs
-      procurement execution, facility operation, and asset
-      maintenance from the dissolved Supply & Resources domain.
-    evidence: |
-      CR-BP-19 /l1-register.yaml operationsEnablement.operate;
-      CR-BP-21d-enablement-operations-landing.md.
-    note: null
-
-  - record_id: dea:process-conduct-operations-performance-review
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21d
-    rationale: |
-      Fresh L2 landing for the EnablementAndOperations x Improve
-      cell, per CR-BP-21d and CR-BP-19 register v2. Absorbs asset
-      utilization improvement from the dissolved Supply & Resources
-      domain.
-    evidence: |
-      CR-BP-19 /l1-register.yaml operationsEnablement.improve;
-      CR-BP-21d-enablement-operations-landing.md.
-    note: null
-
-  # ----- CR-BP-21e: FinanceAndAccounting landing -----
-
-  - record_id: dea:process-frame-finance-strategy
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21e
-    rationale: |
-      Fresh L2 landing for the FinanceAndAccounting x Conceive
-      cell, per CR-BP-21e and CR-BP-19 register v2. v2.4.0 monetary
-      scoping: abstract value removed (domain-grounding §3.7).
-    evidence: |
-      CR-BP-19 /l1-register.yaml financeAccounting.conceive;
-      CR-BP-21e-finance-accounting-landing.md.
-    note: null
-
-  - record_id: dea:process-design-financial-plan-structure
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21e
-    rationale: |
-      Fresh L2 landing for the FinanceAndAccounting x Design
-      cell, per CR-BP-21e and CR-BP-19 register v2. Value
-      architecture design removed per v2.4.0 monetary scoping.
-    evidence: |
-      CR-BP-19 /l1-register.yaml financeAccounting.design;
-      CR-BP-21e-finance-accounting-landing.md.
-    note: null
-
-  - record_id: dea:process-secure-funding-facilities
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21e
-    rationale: |
-      Fresh L2 landing for the FinanceAndAccounting x Build
-      cell, per CR-BP-21e and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml financeAccounting.build;
-      CR-BP-21e-finance-accounting-landing.md.
-    note: null
-
-  - record_id: dea:process-operate-general-ledger
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21e
-    rationale: |
-      Fresh L2 landing for the FinanceAndAccounting x Operate
-      cell, per CR-BP-21e and CR-BP-19 register v2. Monetary
-      recording of procure-to-pay and order-to-cash remains here;
-      operational execution lives in enablement-operations.
-    evidence: |
-      CR-BP-19 /l1-register.yaml financeAccounting.operate;
-      CR-BP-21e-finance-accounting-landing.md.
-    note: null
-
-  - record_id: dea:process-conduct-cost-optimization-review
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21e
-    rationale: |
-      Fresh L2 landing for the FinanceAndAccounting x Improve
-      cell, per CR-BP-21e and CR-BP-19 register v2. Margin and
-      value analysis retained only in the monetary-consequence
-      sense.
-    evidence: |
-      CR-BP-19 /l1-register.yaml financeAccounting.improve;
-      CR-BP-21e-finance-accounting-landing.md.
-    note: null
-
-  # ----- CR-BP-21a.1: StrategyAndDirection completion -----
-
-
-  - record_id: dea:process-define-enterprise-purpose-and-ambition
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21a.1
-    rationale: |
-      Register v2 L2 completion landing for the StrategyAndDirection
-      x Conceive cell, per CR-BP-21a.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml strategyDirection.conceive;
-      CR-BP-21a.1-strategy-direction-completion.md.
-    note: null
-
-  - record_id: dea:process-conceive-strategic-intent
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21a.1
-    rationale: |
-      Register v2 L2 completion landing for the StrategyAndDirection
-      x Conceive cell, per CR-BP-21a.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml strategyDirection.conceive;
-      CR-BP-21a.1-strategy-direction-completion.md.
-    note: null
-
-  - record_id: dea:process-frame-strategic-horizons
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21a.1
-    rationale: |
-      Register v2 L2 completion landing for the StrategyAndDirection
-      x Conceive cell, per CR-BP-21a.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml strategyDirection.conceive;
-      CR-BP-21a.1-strategy-direction-completion.md.
-    note: null
-
-  - record_id: dea:process-evaluate-strategic-alternatives
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21a.1
-    rationale: |
-      Register v2 L2 completion landing for the StrategyAndDirection
-      x Design cell, per CR-BP-21a.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml strategyDirection.design;
-      CR-BP-21a.1-strategy-direction-completion.md.
-    note: null
-
-  - record_id: dea:process-design-objectives-and-targets
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21a.1
-    rationale: |
-      Register v2 L2 completion landing for the StrategyAndDirection
-      x Design cell, per CR-BP-21a.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml strategyDirection.design;
-      CR-BP-21a.1-strategy-direction-completion.md.
-    note: null
-
-  - record_id: dea:process-design-strategic-scenarios
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21a.1
-    rationale: |
-      Register v2 L2 completion landing for the StrategyAndDirection
-      x Design cell, per CR-BP-21a.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml strategyDirection.design;
-      CR-BP-21a.1-strategy-direction-completion.md.
-    note: null
-
-  - record_id: dea:process-build-strategic-roadmap
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21a.1
-    rationale: |
-      Register v2 L2 completion landing for the StrategyAndDirection
-      x Build cell, per CR-BP-21a.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml strategyDirection.build;
-      CR-BP-21a.1-strategy-direction-completion.md.
-    note: null
-
-  - record_id: dea:process-translate-strategic-choices-into-initiatives
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21a.1
-    rationale: |
-      Register v2 L2 completion landing for the StrategyAndDirection
-      x Build cell, per CR-BP-21a.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml strategyDirection.build;
-      CR-BP-21a.1-strategy-direction-completion.md.
-    note: null
-
-  - record_id: dea:process-set-resource-allocation-priorities
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21a.1
-    rationale: |
-      Register v2 L2 completion landing for the StrategyAndDirection
-      x Build cell, per CR-BP-21a.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml strategyDirection.build;
-      CR-BP-21a.1-strategy-direction-completion.md.
-    note: null
-
-  - record_id: dea:process-sense-environmental-signals
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21a.1
-    rationale: |
-      Register v2 L2 completion landing for the StrategyAndDirection
-      x Operate cell, per CR-BP-21a.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml strategyDirection.operate;
-      CR-BP-21a.1-strategy-direction-completion.md.
-    note: null
-
-  - record_id: dea:process-steer-initiative-portfolio
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21a.1
-    rationale: |
-      Register v2 L2 completion landing for the StrategyAndDirection
-      x Operate cell, per CR-BP-21a.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml strategyDirection.operate;
-      CR-BP-21a.1-strategy-direction-completion.md.
-    note: null
-
-  - record_id: dea:process-operate-strategic-review-cycle
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21a.1
-    rationale: |
-      Register v2 L2 completion landing for the StrategyAndDirection
-      x Operate cell, per CR-BP-21a.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml strategyDirection.operate;
-      CR-BP-21a.1-strategy-direction-completion.md.
-    note: null
-
-  - record_id: dea:process-refresh-objectives-and-targets
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21a.1
-    rationale: |
-      Register v2 L2 completion landing for the StrategyAndDirection
-      x Improve cell, per CR-BP-21a.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml strategyDirection.improve;
-      CR-BP-21a.1-strategy-direction-completion.md.
-    note: null
-
-  - record_id: dea:process-review-strategy-effectiveness
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21a.1
-    rationale: |
-      Register v2 L2 completion landing for the StrategyAndDirection
-      x Improve cell, per CR-BP-21a.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml strategyDirection.improve;
-      CR-BP-21a.1-strategy-direction-completion.md.
-    note: null
-
-  # ----- CR-BP-21b.1: AgencyAndOrganization completion -----
-
-
-  - record_id: dea:process-frame-organization-model
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21b.1
-    rationale: |
-      Register v2 L2 completion landing for the AgencyAndOrganization
-      x Conceive cell, per CR-BP-21b.1 and CR-BP-19 register v2.
-      Substrate-neutral naming per CR-BP-21b §5.
-    evidence: |
-      CR-BP-19 /l1-register.yaml agencyOrganization.conceive;
-      CR-BP-21b.1-agency-organization-completion.md.
-    note: null
-
-  - record_id: dea:process-conceive-workforce-and-agent-mix
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21b.1
-    rationale: |
-      Register v2 L2 completion landing for the AgencyAndOrganization
-      x Conceive cell, per CR-BP-21b.1 and CR-BP-19 register v2.
-      Substrate-neutral naming per CR-BP-21b §5.
-    evidence: |
-      CR-BP-19 /l1-register.yaml agencyOrganization.conceive;
-      CR-BP-21b.1-agency-organization-completion.md.
-    note: null
-
-  - record_id: dea:process-design-role-catalogue
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21b.1
-    rationale: |
-      Register v2 L2 completion landing for the AgencyAndOrganization
-      x Design cell, per CR-BP-21b.1 and CR-BP-19 register v2.
-      Substrate-neutral naming per CR-BP-21b §5.
-    evidence: |
-      CR-BP-19 /l1-register.yaml agencyOrganization.design;
-      CR-BP-21b.1-agency-organization-completion.md.
-    note: null
-
-  - record_id: dea:process-design-competency-framework
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21b.1
-    rationale: |
-      Register v2 L2 completion landing for the AgencyAndOrganization
-      x Design cell, per CR-BP-21b.1 and CR-BP-19 register v2.
-      Substrate-neutral naming per CR-BP-21b §5.
-    evidence: |
-      CR-BP-19 /l1-register.yaml agencyOrganization.design;
-      CR-BP-21b.1-agency-organization-completion.md.
-    note: null
-
-  - record_id: dea:process-design-agent-topology
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21b.1
-    rationale: |
-      Register v2 L2 completion landing for the AgencyAndOrganization
-      x Design cell, per CR-BP-21b.1 and CR-BP-19 register v2.
-      Substrate-neutral naming per CR-BP-21b §5.
-    evidence: |
-      CR-BP-19 /l1-register.yaml agencyOrganization.design;
-      CR-BP-21b.1-agency-organization-completion.md.
-    note: null
-
-  - record_id: dea:process-build-contractor-and-partner-agent-pool
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21b.1
-    rationale: |
-      Register v2 L2 completion landing for the AgencyAndOrganization
-      x Build cell, per CR-BP-21b.1 and CR-BP-19 register v2.
-      Substrate-neutral naming per CR-BP-21b §5.
-    evidence: |
-      CR-BP-19 /l1-register.yaml agencyOrganization.build;
-      CR-BP-21b.1-agency-organization-completion.md.
-    note: null
-
-  - record_id: dea:process-operate-payroll-and-benefits
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21b.1
-    rationale: |
-      Register v2 L2 completion landing for the AgencyAndOrganization
-      x Operate cell, per CR-BP-21b.1 and CR-BP-19 register v2.
-      Substrate-neutral naming per CR-BP-21b §5.
-    evidence: |
-      CR-BP-19 /l1-register.yaml agencyOrganization.operate;
-      CR-BP-21b.1-agency-organization-completion.md.
-    note: null
-
-  - record_id: dea:process-operate-time-and-attendance
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21b.1
-    rationale: |
-      Register v2 L2 completion landing for the AgencyAndOrganization
-      x Operate cell, per CR-BP-21b.1 and CR-BP-19 register v2.
-      Substrate-neutral naming per CR-BP-21b §5.
-    evidence: |
-      CR-BP-19 /l1-register.yaml agencyOrganization.operate;
-      CR-BP-21b.1-agency-organization-completion.md.
-    note: null
-
-  - record_id: dea:process-operate-learning-and-development
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21b.1
-    rationale: |
-      Register v2 L2 completion landing for the AgencyAndOrganization
-      x Operate cell, per CR-BP-21b.1 and CR-BP-19 register v2.
-      Substrate-neutral naming per CR-BP-21b §5.
-    evidence: |
-      CR-BP-19 /l1-register.yaml agencyOrganization.operate;
-      CR-BP-21b.1-agency-organization-completion.md.
-    note: null
-
-  - record_id: dea:process-coordinate-collaboration
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21b.1
-    rationale: |
-      Register v2 L2 completion landing for the AgencyAndOrganization
-      x Operate cell, per CR-BP-21b.1 and CR-BP-19 register v2.
-      Substrate-neutral naming per CR-BP-21b §5.
-    evidence: |
-      CR-BP-19 /l1-register.yaml agencyOrganization.operate;
-      CR-BP-21b.1-agency-organization-completion.md.
-    note: null
-
-  - record_id: dea:process-conduct-engagement-and-alignment-review
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21b.1
-    rationale: |
-      Register v2 L2 completion landing for the AgencyAndOrganization
-      x Improve cell, per CR-BP-21b.1 and CR-BP-19 register v2.
-      Substrate-neutral naming per CR-BP-21b §5.
-    evidence: |
-      CR-BP-19 /l1-register.yaml agencyOrganization.improve;
-      CR-BP-21b.1-agency-organization-completion.md.
-    note: null
-
-  - record_id: dea:process-conduct-capability-gap-analysis
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21b.1
-    rationale: |
-      Register v2 L2 completion landing for the AgencyAndOrganization
-      x Improve cell, per CR-BP-21b.1 and CR-BP-19 register v2.
-      Substrate-neutral naming per CR-BP-21b §5.
-    evidence: |
-      CR-BP-19 /l1-register.yaml agencyOrganization.improve;
-      CR-BP-21b.1-agency-organization-completion.md.
-    note: null
-
-  - record_id: dea:process-reorganize-structures
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21b.1
-    rationale: |
-      Register v2 L2 completion landing for the AgencyAndOrganization
-      x Improve cell, per CR-BP-21b.1 and CR-BP-19 register v2.
-      Substrate-neutral naming per CR-BP-21b §5.
-    evidence: |
-      CR-BP-19 /l1-register.yaml agencyOrganization.improve;
-      CR-BP-21b.1-agency-organization-completion.md.
-    note: null
-
-  # ----- CR-BP-21c.1: ProductAndValue completion -----
-
-
-  - record_id: dea:process-frame-portfolio-direction
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21c.1
-    rationale: |
-      Register v2 L2 completion landing for the ProductAndValue
-      x Conceive cell, per CR-BP-21c.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml productAndValue.conceive;
-      CR-BP-21c.1-product-value-completion.md.
-    note: null
-
-  - record_id: dea:process-frame-innovation-thesis
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21c.1
-    rationale: |
-      Register v2 L2 completion landing for the ProductAndValue
-      x Conceive cell, per CR-BP-21c.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml productAndValue.conceive;
-      CR-BP-21c.1-product-value-completion.md.
-    note: null
-
-  - record_id: dea:process-design-packaging-and-configuration
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21c.1
-    rationale: |
-      Register v2 L2 completion landing for the ProductAndValue
-      x Design cell, per CR-BP-21c.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml productAndValue.design;
-      CR-BP-21c.1-product-value-completion.md.
-    note: null
-
-  - record_id: dea:process-design-innovation-experiment
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21c.1
-    rationale: |
-      Register v2 L2 completion landing for the ProductAndValue
-      x Design cell, per CR-BP-21c.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml productAndValue.design;
-      CR-BP-21c.1-product-value-completion.md.
-    note: null
-
-  - record_id: dea:process-build-service-capability
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21c.1
-    rationale: |
-      Register v2 L2 completion landing for the ProductAndValue
-      x Build cell, per CR-BP-21c.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml productAndValue.build;
-      CR-BP-21c.1-product-value-completion.md.
-    note: null
-
-  - record_id: dea:process-build-innovation-prototype
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21c.1
-    rationale: |
-      Register v2 L2 completion landing for the ProductAndValue
-      x Build cell, per CR-BP-21c.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml productAndValue.build;
-      CR-BP-21c.1-product-value-completion.md.
-    note: null
-
-  - record_id: dea:process-prepare-market-readiness
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21c.1
-    rationale: |
-      Register v2 L2 completion landing for the ProductAndValue
-      x Build cell, per CR-BP-21c.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml productAndValue.build;
-      CR-BP-21c.1-product-value-completion.md.
-    note: null
-
-  - record_id: dea:process-manage-portfolio-performance
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21c.1
-    rationale: |
-      Register v2 L2 completion landing for the ProductAndValue
-      x Operate cell, per CR-BP-21c.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml productAndValue.operate;
-      CR-BP-21c.1-product-value-completion.md.
-    note: null
-
-  - record_id: dea:process-manage-proposition-lifecycle
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21c.1
-    rationale: |
-      Register v2 L2 completion landing for the ProductAndValue
-      x Operate cell, per CR-BP-21c.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml productAndValue.operate;
-      CR-BP-21c.1-product-value-completion.md.
-    note: null
-
-  - record_id: dea:process-evolve-products-and-services
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21c.1
-    rationale: |
-      Register v2 L2 completion landing for the ProductAndValue
-      x Improve cell, per CR-BP-21c.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml productAndValue.improve;
-      CR-BP-21c.1-product-value-completion.md.
-    note: null
-
-  - record_id: dea:process-rationalize-portfolio
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21c.1
-    rationale: |
-      Register v2 L2 completion landing for the ProductAndValue
-      x Improve cell, per CR-BP-21c.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml productAndValue.improve;
-      CR-BP-21c.1-product-value-completion.md.
-    note: null
-
-  # ----- CR-BP-21d.1: EnablementAndOperations completion -----
-
-
-  - record_id: dea:process-frame-delivery-model-conception
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21d.1
-    rationale: |
-      Register v2 L2 completion landing for the EnablementAndOperations
-      x Conceive cell, per CR-BP-21d.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml enablementAndOperations.conceive;
-      CR-BP-21d.1-enablement-operations-completion.md.
-    note: null
-
-  - record_id: dea:process-frame-technology-enablement-approach
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21d.1
-    rationale: |
-      Register v2 L2 completion landing for the EnablementAndOperations
-      x Conceive cell, per CR-BP-21d.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml enablementAndOperations.conceive;
-      CR-BP-21d.1-enablement-operations-completion.md.
-    note: null
-
-  - record_id: dea:process-frame-physical-asset-approach
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21d.1
-    rationale: |
-      Register v2 L2 completion landing for the EnablementAndOperations
-      x Conceive cell, per CR-BP-21d.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml enablementAndOperations.conceive;
-      CR-BP-21d.1-enablement-operations-completion.md.
-    note: null
-
-  - record_id: dea:process-design-delivery-model
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21d.1
-    rationale: |
-      Register v2 L2 completion landing for the EnablementAndOperations
-      x Design cell, per CR-BP-21d.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml enablementAndOperations.design;
-      CR-BP-21d.1-enablement-operations-completion.md.
-    note: null
-
-  - record_id: dea:process-design-technology-platform-architecture
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21d.1
-    rationale: |
-      Register v2 L2 completion landing for the EnablementAndOperations
-      x Design cell, per CR-BP-21d.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml enablementAndOperations.design;
-      CR-BP-21d.1-enablement-operations-completion.md.
-    note: null
-
-  - record_id: dea:process-design-facility-and-asset-blueprint
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21d.1
-    rationale: |
-      Register v2 L2 completion landing for the EnablementAndOperations
-      x Design cell, per CR-BP-21d.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml enablementAndOperations.design;
-      CR-BP-21d.1-enablement-operations-completion.md.
-    note: null
-
-  - record_id: dea:process-design-logistics-and-routing
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21d.1
-    rationale: |
-      Register v2 L2 completion landing for the EnablementAndOperations
-      x Design cell, per CR-BP-21d.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml enablementAndOperations.design;
-      CR-BP-21d.1-enablement-operations-completion.md.
-    note: null
-
-  - record_id: dea:process-commission-production-line
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21d.1
-    rationale: |
-      Register v2 L2 completion landing for the EnablementAndOperations
-      x Build cell, per CR-BP-21d.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml enablementAndOperations.build;
-      CR-BP-21d.1-enablement-operations-completion.md.
-    note: null
-
-  - record_id: dea:process-build-logistics-network
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21d.1
-    rationale: |
-      Register v2 L2 completion landing for the EnablementAndOperations
-      x Build cell, per CR-BP-21d.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml enablementAndOperations.build;
-      CR-BP-21d.1-enablement-operations-completion.md.
-    note: null
-
-  - record_id: dea:process-acquire-technology-assets
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21d.1
-    rationale: |
-      Register v2 L2 completion landing for the EnablementAndOperations
-      x Build cell, per CR-BP-21d.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml enablementAndOperations.build;
-      CR-BP-21d.1-enablement-operations-completion.md.
-    note: null
-
-  - record_id: dea:process-provision-facilities
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21d.1
-    rationale: |
-      Register v2 L2 completion landing for the EnablementAndOperations
-      x Build cell, per CR-BP-21d.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml enablementAndOperations.build;
-      CR-BP-21d.1-enablement-operations-completion.md.
-    note: null
-
-  - record_id: dea:process-run-production-line
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21d.1
-    rationale: |
-      Register v2 L2 completion landing for the EnablementAndOperations
-      x Operate cell, per CR-BP-21d.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml enablementAndOperations.operate;
-      CR-BP-21d.1-enablement-operations-completion.md.
-    note: null
-
-  - record_id: dea:process-operate-logistics
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21d.1
-    rationale: |
-      Register v2 L2 completion landing for the EnablementAndOperations
-      x Operate cell, per CR-BP-21d.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml enablementAndOperations.operate;
-      CR-BP-21d.1-enablement-operations-completion.md.
-    note: null
-
-  - record_id: dea:process-operate-warehouse-and-inventory
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21d.1
-    rationale: |
-      Register v2 L2 completion landing for the EnablementAndOperations
-      x Operate cell, per CR-BP-21d.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml enablementAndOperations.operate;
-      CR-BP-21d.1-enablement-operations-completion.md.
-    note: null
-
-  - record_id: dea:process-operate-quality-control
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21d.1
-    rationale: |
-      Register v2 L2 completion landing for the EnablementAndOperations
-      x Operate cell, per CR-BP-21d.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml enablementAndOperations.operate;
-      CR-BP-21d.1-enablement-operations-completion.md.
-    note: null
-
-  - record_id: dea:process-operate-technology-platforms
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21d.1
-    rationale: |
-      Register v2 L2 completion landing for the EnablementAndOperations
-      x Operate cell, per CR-BP-21d.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml enablementAndOperations.operate;
-      CR-BP-21d.1-enablement-operations-completion.md.
-    note: null
-
-  - record_id: dea:process-operate-facility-management
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21d.1
-    rationale: |
-      Register v2 L2 completion landing for the EnablementAndOperations
-      x Operate cell, per CR-BP-21d.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml enablementAndOperations.operate;
-      CR-BP-21d.1-enablement-operations-completion.md.
-    note: null
-
-  - record_id: dea:process-operate-asset-maintenance
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21d.1
-    rationale: |
-      Register v2 L2 completion landing for the EnablementAndOperations
-      x Operate cell, per CR-BP-21d.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml enablementAndOperations.operate;
-      CR-BP-21d.1-enablement-operations-completion.md.
-    note: null
-
-  - record_id: dea:process-operate-procurement-cycle
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21d.1
-    rationale: |
-      Register v2 L2 completion landing for the EnablementAndOperations
-      x Operate cell, per CR-BP-21d.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml enablementAndOperations.operate;
-      CR-BP-21d.1-enablement-operations-completion.md.
-    note: null
-
-  - record_id: dea:process-conduct-logistics-optimization
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21d.1
-    rationale: |
-      Register v2 L2 completion landing for the EnablementAndOperations
-      x Improve cell, per CR-BP-21d.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml enablementAndOperations.improve;
-      CR-BP-21d.1-enablement-operations-completion.md.
-    note: null
-
-  - record_id: dea:process-conduct-lean-six-sigma-programme
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21d.1
-    rationale: |
-      Register v2 L2 completion landing for the EnablementAndOperations
-      x Improve cell, per CR-BP-21d.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml enablementAndOperations.improve;
-      CR-BP-21d.1-enablement-operations-completion.md.
-    note: null
-
-  - record_id: dea:process-optimize-asset-utilization
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21d.1
-    rationale: |
-      Register v2 L2 completion landing for the EnablementAndOperations
-      x Improve cell, per CR-BP-21d.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml enablementAndOperations.improve;
-      CR-BP-21d.1-enablement-operations-completion.md.
-    note: null
-
-  - record_id: dea:process-improve-technology-platforms
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21d.1
-    rationale: |
-      Register v2 L2 completion landing for the EnablementAndOperations
-      x Improve cell, per CR-BP-21d.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml enablementAndOperations.improve;
-      CR-BP-21d.1-enablement-operations-completion.md.
-    note: null
-
-  - record_id: dea:process-design-financial-controls-and-policies
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21e.1
-    rationale: |
-      Register v2 L2 completion landing for the FinanceAndAccounting
-      x Design cell, per CR-BP-21e.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml financeAccounting.design;
-      CR-BP-21e.1-finance-accounting-completion.md.
-    note: null
-
-  - record_id: dea:process-design-tax-position-and-strategy
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21e.1
-    rationale: |
-      Register v2 L2 completion landing for the FinanceAndAccounting
-      x Design cell, per CR-BP-21e.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml financeAccounting.design;
-      CR-BP-21e.1-finance-accounting-completion.md.
-    note: null
-
-  - record_id: dea:process-design-treasury-and-funding-model
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21e.1
-    rationale: |
-      Register v2 L2 completion landing for the FinanceAndAccounting
-      x Design cell, per CR-BP-21e.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml financeAccounting.design;
-      CR-BP-21e.1-finance-accounting-completion.md.
-    note: null
-
-  - record_id: dea:process-implement-financial-systems-and-ledger
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21e.1
-    rationale: |
-      Register v2 L2 completion landing for the FinanceAndAccounting
-      x Build cell, per CR-BP-21e.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml financeAccounting.build;
-      CR-BP-21e.1-finance-accounting-completion.md.
-    note: null
-
-  - record_id: dea:process-build-budgeting-and-forecasting-systems
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21e.1
-    rationale: |
-      Register v2 L2 completion landing for the FinanceAndAccounting
-      x Build cell, per CR-BP-21e.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml financeAccounting.build;
-      CR-BP-21e.1-finance-accounting-completion.md.
-    note: null
-
-  - record_id: dea:process-onboard-tax-and-compliance-capability
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21e.1
-    rationale: |
-      Register v2 L2 completion landing for the FinanceAndAccounting
-      x Build cell, per CR-BP-21e.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml financeAccounting.build;
-      CR-BP-21e.1-finance-accounting-completion.md.
-    note: null
-
-  - record_id: dea:process-run-accounts-payable
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21e.1
-    rationale: |
-      Register v2 L2 completion landing for the FinanceAndAccounting
-      x Operate cell, per CR-BP-21e.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml financeAccounting.operate;
-      CR-BP-21e.1-finance-accounting-completion.md.
-    note: null
-
-  - record_id: dea:process-run-accounts-receivable
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21e.1
-    rationale: |
-      Register v2 L2 completion landing for the FinanceAndAccounting
-      x Operate cell, per CR-BP-21e.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml financeAccounting.operate;
-      CR-BP-21e.1-finance-accounting-completion.md.
-    note: null
-
-  - record_id: dea:process-execute-payroll
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21e.1
-    rationale: |
-      Register v2 L2 completion landing for the FinanceAndAccounting
-      x Operate cell, per CR-BP-21e.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml financeAccounting.operate;
-      CR-BP-21e.1-finance-accounting-completion.md.
-    note: null
-
-  - record_id: dea:process-manage-cash-and-liquidity
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21e.1
-    rationale: |
-      Register v2 L2 completion landing for the FinanceAndAccounting
-      x Operate cell, per CR-BP-21e.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml financeAccounting.operate;
-      CR-BP-21e.1-finance-accounting-completion.md.
-    note: null
-
-  - record_id: dea:process-perform-financial-close
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21e.1
-    rationale: |
-      Register v2 L2 completion landing for the FinanceAndAccounting
-      x Operate cell, per CR-BP-21e.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml financeAccounting.operate;
-      CR-BP-21e.1-finance-accounting-completion.md.
-    note: null
-
-  - record_id: dea:process-manage-tax-compliance-and-filings
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21e.1
-    rationale: |
-      Register v2 L2 completion landing for the FinanceAndAccounting
-      x Operate cell, per CR-BP-21e.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml financeAccounting.operate;
-      CR-BP-21e.1-finance-accounting-completion.md.
-    note: null
-
-  - record_id: dea:process-operate-financial-reporting-and-disclosure
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21e.1
-    rationale: |
-      Register v2 L2 completion landing for the FinanceAndAccounting
-      x Operate cell, per CR-BP-21e.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml financeAccounting.operate;
-      CR-BP-21e.1-finance-accounting-completion.md.
-    note: null
-
-  - record_id: dea:process-refine-financial-controls-and-policies
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21e.1
-    rationale: |
-      Register v2 L2 completion landing for the FinanceAndAccounting
-      x Improve cell, per CR-BP-21e.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml financeAccounting.improve;
-      CR-BP-21e.1-finance-accounting-completion.md.
-    note: null
-
-  - record_id: dea:process-evolve-treasury-and-funding-model
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21e.1
-    rationale: |
-      Register v2 L2 completion landing for the FinanceAndAccounting
-      x Improve cell, per CR-BP-21e.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml financeAccounting.improve;
-      CR-BP-21e.1-finance-accounting-completion.md.
-    note: null
-  - record_id: dea:process-frame-risk-framework-direction
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21f.1
-    rationale: |
-      Register v2 L2 completion landing for the GovernanceAndExistence
-      x Conceive cell, per CR-BP-21f.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml governanceExistence.conceive;
-      CR-BP-21f.1-governance-existence-completion.md.
-    note: null
-  - record_id: dea:process-design-risk-framework
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21f.1
-    rationale: |
-      Register v2 L2 completion landing for the GovernanceAndExistence
-      x Design cell, per CR-BP-21f.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml governanceExistence.design;
-      CR-BP-21f.1-governance-existence-completion.md.
-    note: null
-  - record_id: dea:process-establish-risk-and-control-apparatus
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21f.1
-    rationale: |
-      Register v2 L2 completion landing for the GovernanceAndExistence
-      x Build cell, per CR-BP-21f.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml governanceExistence.build;
-      CR-BP-21f.1-governance-existence-completion.md.
-    note: null
-  - record_id: dea:process-operate-enterprise-risk-oversight
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21f.1
-    rationale: |
-      Register v2 L2 completion landing for the GovernanceAndExistence
-      x Operate cell, per CR-BP-21f.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml governanceExistence.operate;
-      CR-BP-21f.1-governance-existence-completion.md.
-    note: null
-  - record_id: dea:process-conduct-assurance-review
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21f.1
-    rationale: |
-      Register v2 L2 completion landing for the GovernanceAndExistence
-      x Operate cell, per CR-BP-21f.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml governanceExistence.operate;
-      CR-BP-21f.1-governance-existence-completion.md.
-    note: null
-  - record_id: dea:process-score-audit-findings
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21f.1
-    rationale: |
-      Register v2 L2 completion landing for the GovernanceAndExistence
-      x Improve cell, per CR-BP-21f.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml governanceExistence.improve;
-      CR-BP-21f.1-governance-existence-completion.md.
-    note: null
-  - record_id: dea:process-improve-policy-and-control-framework
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-21f.1
-    rationale: |
-      Register v2 L2 completion landing for the GovernanceAndExistence
-      x Improve cell, per CR-BP-21f.1 and CR-BP-19 register v2.
-    evidence: |
-      CR-BP-19 /l1-register.yaml governanceExistence.improve;
-      CR-BP-21f.1-governance-existence-completion.md.
-    note: null
-  - record_id: dea:process-transition-to-service
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-64
-    rationale: |
-      First discovery-driven admission (CR-BP-62 method; CR-BP-63
-      exercise; CR-BP-64 admission). Transition to Service scored 10/10
-      with an ADMIT-CANONICAL recommendation at ProductAndValue x
-      Activate; landed as the first canonical BP at an Activate
-      coordinate with its PC (dea:pc-pv-activate) and PG
-      (dea:group-service-transition-activation).
-    evidence: |
-      discovery/v1-alpha/product-and-value-activate.yaml (CR-BP-63);
-      CR-BP-64-pv-activate-retire-admission.md.
-    note: null
-  - record_id: dea:process-transition-out-of-service
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-64
-    rationale: |
-      First discovery-driven admission (CR-BP-62 method; CR-BP-63
-      exercise; CR-BP-64 admission). Transition Out of Service scored
-      10/10 with an ADMIT-CANONICAL recommendation at ProductAndValue x
-      Retire; landed as the first canonical BP at a Retire coordinate
-      with its PC (dea:pc-pv-retire) and PG
-      (dea:group-service-transition-retirement).
-    evidence: |
-      discovery/v1-alpha/product-and-value-retire.yaml (CR-BP-63);
-      CR-BP-64-pv-activate-retire-admission.md.
-    note: null
-  - record_id: dea:process-bring-into-force
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-65
-    rationale: |
-      Discovery-driven admission (CR-BP-62 method; CR-BP-63 exercise;
-      CR-BP-65 admission). Bring into Force scored 9/10 with an
-      ADMIT-CANONICAL recommendation at GovernanceAndExistence x
-      Activate on universal entry-into-force evidence; landed with its
-      PC (dea:pc-ge-activate) and PG
-      (dea:group-governance-instrument-commencement).
-    evidence: |
-      discovery/v1-alpha/governance-and-existence-activate.yaml (CR-BP-63);
-      CR-BP-65-ge-activate-admission.md.
-    note: null
-  - record_id: dea:process-decommission
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-66
-    rationale: |
-      Discovery-driven admission (CR-BP-62 method; CR-BP-63 exercise;
-      CR-BP-66 admission). Decommission scored 9/10 with an
-      ADMIT-CANONICAL recommendation at EnablementAndOperations x
-      Retire on ISO 55000 asset end-of-life evidence; landed with its
-      PC (dea:pc-oe-retire) and PG
-      (dea:group-operations-and-asset-decommissioning). The register
-      v2 escape condition (regulated decommission as a standalone
-      group) is met.
-    evidence: |
-      discovery/v1-alpha/enablement-and-operations-retire.yaml (CR-BP-63);
-      CR-BP-66-eo-retire-admission.md.
-    note: null
-  - record_id: dea:process-close-enterprise-relationship
-    disposition: RETAIN
-    changes: []
-    tranche: cr-bp-67
-    rationale: |
-      Discovery-driven admission (CR-BP-62 method; CR-BP-63 exercise;
-      CR-BP-67 admission). Close Enterprise Relationship scored 9/10
-      with an ADMIT-CANONICAL recommendation at PartyAndRelationship x
-      Retire on contract close-out and regulated offboarding evidence;
-      landed with its PC (dea:pc-pr-retire) and PG
-      (dea:group-relationship-termination). The register v2 escape
-      condition (regulated offboarding as a distinct group) is met.
-    evidence: |
-      discovery/v1-alpha/party-and-relationship-retire.yaml (CR-BP-63);
-      CR-BP-67-pr-retire-admission.md.
-    note: null
-
-
-
-  - record_id: dea:process-onboard-regulated-party-relationship
-    cr: CR-BP-71
-    disposition: RETAIN
-    rationale: |
-      Discovery-driven admission under the CR-BP-62 method (CR-BP-70
-      escape-clause exercise; CR-BP-71 admission tranche). The
-      candidate Onboard Regulated Party Relationship scored 9/10 with
-      an ADMIT-CANONICAL recommendation at PartyAndRelationship x
-      Activate on the register v2 cell''s verbatim escape condition
-      ("defer until a regulated onboarding (e.g. KYC for financial
-      services) requires a distinct group"). Evidence base: FATF R.10,
-      FinCEN CDD (31 CFR 1010.230) + CIP, EU AMLD4/AMLD5/AMLD6, Basel
-      BCBS ML/FT guidelines, Wolfsberg Group guidance. Landed with its
-      PC (dea:pc-pr-act) and PG (dea:group-regulated-onboarding). The
-      register v2 escape condition is met verbatim.
-    evidence: |
-      discovery/v1-alpha/party-and-relationship-activate-escape.yaml
-      (CR-BP-70); CR-BP-71-pr-activate-admission.md.
-    note: null
-
-  - record_id: dea:process-conduct-regulated-workforce-wind-down
-    ecf_context:
-      domain: AgencyAndOrganization
-      lifecycle_stage: Retire
-    process_context: dea:pc-ao-retire
-    process_group: dea:group-regulated-workforce-wind-down
-    disposition: RETAIN
-    cr: CR-BP-73
-    evidence: 'discovery/v1-alpha/agency-and-organization-retire-escape.yaml: scored 9/10 ADMIT-CANONICAL on WARN (29 U.S.C. 2101 et seq.; 20 CFR Part 639) + EU Directive 98/59/EC + ILO C158/C135 + OECD evidence; CR-BP-72 escape-clause discovery; CR-BP-73 admission tranche.'
-    related_records:
-      - CR-BP-72
-    audit_status: ratified-accepted
-    note: null
+    legacy `process_intent: operational` maps to the canonical
 
+    `operate` vocabulary (CR-BP-14 /17). The legacy scalar
+
+    `process_context` migrates to the canonical `context:` block
+
+    (CR-BP-14 /13, BP-SEM-007). The `process_audience` legacy
+
+    alias is removed because the canonical `context:` block
+
+    already declares the ECF Domain x Lifecycle placement.
+
+    '
+  evidence: 'CR-BP-14 /17 mapping table; CR-BP-14 /13 audience vs context
+
+    separation; the record''s name ("Build Customer Acquisition
+
+    Channels") and outcome statement establish that the work is
+
+    operational in nature (operate).
+
+    '
+  note: null
+- record_id: dea:process-demand-generation-build
+  disposition: RECLASSIFY
+  changes:
+  - axis: process_intent
+    from: operational
+    to: operate
+  - axis: process_context
+    from: dea:pc-pr-b
+    to: dea:pc-pr-b
+  - axis: process_audience
+    from: party-relationship
+    to: REMOVE
+  tranche: cd-b
+  rationale: 'Same disposition as dea:process-customer-channel-and-acquisition-build.
+
+    The record''s identity, name ("Build Demand Generation
+
+    Programs") and outcome establish operational nature (operate).
+
+    The legacy scalar and audience migrate to the canonical
+
+    `context:` block.
+
+    '
+  evidence: 'CR-BP-14 /17; the record''s outcome statement establishes that
+
+    the work performs recurring demand-generation activities.
+
+    '
+  note: null
+- record_id: dea:process-customer-strategy-conception
+  disposition: RECLASSIFY
+  changes:
+  - axis: process_intent
+    from: management
+    to: develop
+  - axis: process_context
+    from: dea:pc-pr-c
+    to: dea:pc-pr-c
+  - axis: process_audience
+    from: party-relationship
+    to: REMOVE
+  tranche: cd-c
+  rationale: 'The record''s name is "Develop Customer Strategy" (its display
+
+    name diverges from the slug but the record''s outcome statement
+
+    describes strategy conception). Legacy intent "management"
+
+    maps to canonical `develop` because strategy conception is
+
+    purpose-oriented development (CR-BP-14 /17). The legacy
+
+    scalar and audience migrate to the canonical `context:` block.
+
+    '
+  evidence: 'CR-BP-14 /17; the record''s outcome statement establishes that
+
+    the work creates and evolves the customer strategy.
+
+    '
+  note: 'The record''s `name` field still reads "Develop Customer
+
+    Strategy"; the slug "customer-strategy-conception" is a
+
+    legacy artifact and is NOT a RENAME target (Phase 4).
+
+    '
+- record_id: dea:process-market-and-demand-conception
+  disposition: RECLASSIFY
+  changes:
+  - axis: process_intent
+    from: management
+    to: develop
+  - axis: process_context
+    from: dea:pc-pr-c
+    to: dea:pc-pr-c
+  - axis: process_audience
+    from: party-relationship
+    to: REMOVE
+  tranche: cd-c
+  rationale: 'The record''s display name "Develop Market Intelligence" and
+
+    its outcome statement establish that the work creates market
+
+    and demand intelligence (develop). Legacy "management" maps
+
+    to `develop`. Legacy scalar and audience migrate to the
+
+    canonical `context:` block.
+
+    '
+  evidence: 'CR-BP-14 /17; the record''s outcome statement.
+
+    '
+  note: null
+- record_id: dea:process-customer-experience-design
+  disposition: RECLASSIFY
+  changes:
+  - axis: process_intent
+    from: management
+    to: develop
+  - axis: process_context
+    from: dea:pc-d-cd-d
+    to: dea:pc-pr-d
+  - axis: process_audience
+    from: party-relationship
+    to: REMOVE
+  tranche: cd-d
+  rationale: 'The record''s name is "Design Customer Experience" and the
+
+    outcome statement establishes that the work creates the
+
+    customer experience (develop). Legacy "management" maps to
+
+    `develop`. The legacy scalar and audience migrate to the
+
+    canonical `context:` block.
+
+    '
+  evidence: 'CR-BP-14 /17; the record''s outcome statement.
+
+    '
+  note: null
+- record_id: dea:process-customer-journey-design
+  disposition: RECLASSIFY
+  changes:
+  - axis: process_intent
+    from: support
+    to: develop
+  - axis: process_context
+    from: dea:pc-pr-d
+    to: dea:pc-pr-d
+  - axis: process_audience
+    from: party-relationship
+    to: REMOVE
+  tranche: cd-d
+  rationale: 'The record''s name "Design Customer Journey" and outcome
+
+    statement establish that the work creates the customer
+
+    journey (develop). Legacy "support" maps to `develop` here
+
+    because "support" was misapplied; the work is purpose-
+
+    oriented development. Legacy scalar and audience migrate to
+
+    the canonical `context:` block.
+
+    '
+  evidence: 'CR-BP-14 /17 mapping; the record''s outcome statement
+
+    establishes that the work creates and evolves the customer
+
+    journey artifacts.
+
+    '
+  note: null
+- record_id: dea:process-demand-design
+  disposition: RECLASSIFY
+  changes:
+  - axis: process_intent
+    from: management
+    to: develop
+  - axis: process_context
+    from: dea:pc-pr-d
+    to: dea:pc-pr-d
+  - axis: process_audience
+    from: party-relationship
+    to: REMOVE
+  tranche: cd-d
+  rationale: 'The record''s name "Design Demand Model" and outcome
+
+    statement establish that the work creates the demand model
+
+    (develop). Legacy "management" maps to `develop`.
+
+    '
+  evidence: 'CR-BP-14 /17; the record''s outcome statement.
+
+    '
+  note: null
+- record_id: dea:process-customer-insight-and-retention
+  disposition: RECLASSIFY
+  changes:
+  - axis: process_intent
+    from: management
+    to: operate
+  - axis: process_context
+    from: dea:pc-pr-im
+    to: dea:pc-pr-im
+  - axis: process_audience
+    from: party-relationship
+    to: REMOVE
+  tranche: cd-im
+  rationale: 'The record''s display name "Operate Customer Retention
+
+    Programs" and outcome statement establish that the work
+
+    performs recurring customer retention activities (operate).
+
+    Legacy "management" maps to `operate` here.
+
+    '
+  evidence: 'CR-BP-14 /17; the record''s outcome statement.
+
+    '
+  note: null
+- record_id: dea:process-manage-customer-relationship
+  disposition: RECLASSIFY
+  changes:
+  - axis: process_intent
+    from: management
+    to: manage
+  - axis: process_context
+    from: dea:pc-pr-op
+    to: dea:pc-pr-op
+  - axis: process_audience
+    from: party-relationship
+    to: REMOVE
+  tranche: cd-op
+  rationale: 'The record''s name "Manage Customer Relationship" and outcome
+
+    statement establish that the work plans, coordinates and
+
+    controls customer relationships (manage). Legacy "management"
+
+    maps to canonical `manage` (no actual change in token, but
+
+    the canonical vocabulary is recorded).
+
+    '
+  evidence: 'CR-BP-14 /9.2; CR-BP-14 /17.
+
+    '
+  note: null
+- record_id: dea:process-codify-charters-and-policies
+  disposition: RECLASSIFY
+  changes:
+  - axis: process_intent
+    from: operational
+    to: operate
+  - axis: process_context
+    from: dea:pc-ge-b
+    to: dea:pc-ge-b
+  - axis: process_audience
+    from: party-relationship
+    to: REMOVE
+  tranche: ge-b
+  rationale: 'The record''s name "Codify Charters and Policies" and
+
+    outcome statement establish that the work performs
+
+    recurring charter and policy codification activities
+
+    (operate). Legacy "operational" maps to `operate`. Note:
+
+    the record''s `process_audience` was originally
+
+    `party-relationship` (a 13b generator artifact); the
+
+    canonical `context:` block is `dea:pc-ge-b` (governance /
+
+    build), so the legacy audience is replaced by the
+
+    canonical context.
+
+    '
+  evidence: 'CR-BP-14 /17; the canonical context is governance /
+
+    build (CR-BP-02 register); the record''s outcome statement
+
+    establishes that the work codifies governance artefacts.
+
+    '
+  note: 'Audience-vs-context mismatch resolved by the canonical
+
+    `context:` block (CR-BP-14 /13).
+
+    '
+- record_id: dea:process-establish-governance-bodies
+  disposition: RECLASSIFY
+  changes:
+  - axis: process_intent
+    from: operational
+    to: operate
+  - axis: process_context
+    from: dea:pc-ge-b
+    to: dea:pc-ge-b
+  - axis: process_audience
+    from: party-relationship
+    to: REMOVE
+  tranche: ge-b
+  rationale: 'The record''s name "Establish Governance Bodies" and
+
+    outcome statement establish that the work performs
+
+    recurring governance-body establishment activities
+
+    (operate). Legacy "operational" maps to `operate`. Same
+
+    audience-vs-context mismatch as dea:process-codify-charters-and-policies.
+
+    '
+  evidence: 'CR-BP-14 /17; CR-BP-02 governance / build register.
+
+    '
+  note: null
+- record_id: dea:process-develop-governance-strategy
+  disposition: RECLASSIFY
+  changes:
+  - axis: process_intent
+    from: management
+    to: develop
+  - axis: process_context
+    from: dea:pc-ge-c
+    to: dea:pc-ge-c
+  - axis: process_audience
+    from: party-relationship
+    to: REMOVE
+  tranche: ge-c
+  rationale: 'The record''s name "Develop Governance Strategy" and
+
+    outcome statement establish that the work creates and
+
+    evolves the governance strategy (develop). Legacy
+
+    "management" maps to `develop`.
+
+    '
+  evidence: 'CR-BP-14 /17.
+
+    '
+  note: null
+- record_id: dea:process-initiate-policy-and-charter
+  disposition: RECLASSIFY
+  changes:
+  - axis: process_intent
+    from: management
+    to: manage
+  - axis: process_context
+    from: dea:pc-ge-c
+    to: dea:pc-ge-c
+  - axis: process_audience
+    from: party-relationship
+    to: REMOVE
+  tranche: ge-c
+  rationale: 'The record''s name "Initiate Policy and Charter" and
+
+    outcome statement establish that the work initiates
+
+    (plans, coordinates) policies and charters (manage).
+
+    Legacy "management" maps to `manage`.
+
+    '
+  evidence: 'CR-BP-14 /17.
+
+    '
+  note: null
+- record_id: dea:process-design-governance-system
+  disposition: RECLASSIFY
+  changes:
+  - axis: process_intent
+    from: management
+    to: develop
+  - axis: process_context
+    from: dea:pc-ge-d
+    to: dea:pc-ge-d
+  - axis: process_audience
+    from: party-relationship
+    to: REMOVE
+  tranche: ge-d
+  rationale: 'The record''s name "Design Governance System" and outcome
+
+    statement establish that the work creates the governance
+
+    system (develop). Legacy "management" maps to `develop`.
+
+    '
+  evidence: 'CR-BP-14 /17.
+
+    '
+  note: null
+- record_id: dea:process-design-policies-and-controls
+  disposition: RECLASSIFY
+  changes:
+  - axis: process_intent
+    from: management
+    to: develop
+  - axis: process_context
+    from: dea:pc-ge-d
+    to: dea:pc-ge-d
+  - axis: process_audience
+    from: party-relationship
+    to: REMOVE
+  tranche: ge-d
+  rationale: 'The record''s name "Design Policies and Controls" and
+
+    outcome statement establish that the work creates
+
+    policies and controls (develop). Legacy "management" maps
+
+    to `develop`.
+
+    '
+  evidence: 'CR-BP-14 /17.
+
+    '
+  note: null
+- record_id: dea:process-review-governance-effectiveness
+  disposition: RECLASSIFY
+  changes:
+  - axis: process_intent
+    from: management
+    to: govern
+  - axis: process_context
+    from: dea:pc-ge-im
+    to: dea:pc-ge-im
+  - axis: process_audience
+    from: party-relationship
+    to: REMOVE
+  tranche: ge-im
+  rationale: 'The record''s name "Review Governance Effectiveness" and
+
+    outcome statement establish that the work governs
+
+    (assures, evaluates) governance effectiveness (govern).
+
+    Legacy "management" maps to `govern` per CR-BP-14 /17
+
+    (governance is the defining purpose, not management).
+
+    '
+  evidence: 'CR-BP-14 /17 example: "Govern Enterprise Risk" should be
+
+    `govern`, not `manage`, when governance is the defining
+
+    purpose.
+
+    '
+  note: null
+- record_id: dea:process-audit-policy-compliance
+  disposition: RECLASSIFY
+  changes:
+  - axis: process_intent
+    from: support
+    to: govern
+  - axis: process_context
+    from: dea:pc-ge-op
+    to: dea:pc-ge-op
+  - axis: process_audience
+    from: party-relationship
+    to: REMOVE
+  tranche: ge-op
+  rationale: 'The record''s name "Audit Policy Compliance" and outcome
+
+    statement establish that the work governs (assures,
+
+    enforces) policy compliance (govern). Legacy "support"
+
+    maps to `govern` per CR-BP-14 /17 (audit is a governing
+
+    activity). Same audience-vs-context mismatch as the ge-b
+
+    records.
+
+    '
+  evidence: 'CR-BP-14 /17; the record''s outcome statement establishes
+
+    audit, compliance and assurance responsibilities.
+
+    '
+  note: null
+- record_id: dea:process-operate-governance-oversight
+  disposition: RECLASSIFY
+  changes:
+  - axis: process_intent
+    from: management
+    to: operate
+  - axis: process_context
+    from: dea:pc-ge-op
+    to: dea:pc-ge-op
+  - axis: process_audience
+    from: party-relationship
+    to: REMOVE
+  tranche: ge-op
+  rationale: 'The record''s name "Operate Governance Oversight" and
+
+    outcome statement establish that the work performs
+
+    recurring governance oversight activities (operate).
+
+    Legacy "management" maps to `operate` here.
+
+    '
+  evidence: 'CR-BP-14 /17.
+
+    '
+  note: null
+- record_id: dea:process-design-strategic-options
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21a
+  rationale: 'Fresh L2 landing for the StrategyAndDirection x Design cell,
+
+    per CR-BP-21a and CR-BP-19 register v2. No prior record
+
+    existed at this coordinate under v2.4.0.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml strategyAndDirection.design;
+
+    CR-BP-21a-strategy-direction-landing.md.
+
+    '
+  note: null
+- record_id: dea:process-build-strategic-plan
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21a
+  rationale: 'Fresh L2 landing for the StrategyAndDirection x Build cell,
+
+    per CR-BP-21a and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml strategyAndDirection.build;
+
+    CR-BP-21a-strategy-direction-landing.md.
+
+    '
+  note: null
+- record_id: dea:process-monitor-strategic-performance
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21a
+  rationale: 'Fresh L2 landing for the StrategyAndDirection x Operate cell,
+
+    per CR-BP-21a and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml strategyAndDirection.operate;
+
+    CR-BP-21a-strategy-direction-landing.md.
+
+    '
+  note: null
+- record_id: dea:process-adapt-strategic-direction
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21a
+  rationale: 'Fresh L2 landing for the StrategyAndDirection x Improve cell,
+
+    per CR-BP-21a and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml strategyAndDirection.improve;
+
+    CR-BP-21a-strategy-direction-landing.md.
+
+    '
+  note: null
+- record_id: dea:process-develop-corporate-strategy
+  disposition: MOVE
+  changes:
+  - axis: process_context
+    from: dea:pc-ge-conceive
+    to: dea:pc-sd-conceive
+  - axis: process_audience
+    from: governance-existence
+    to: strategy-direction
+  tranche: cr-bp-21a
+  rationale: 'L2 migration per CR-BP-20 Option A split (user-approved
+
+    2026-09-07) and CR-BP-21a execution. Develop corporate
+
+    strategy is excluded from GovernanceAndExistence per v2.4.0
+
+    (domain-grounding.md §3.1: GE authorises but does not direct;
+
+    Strategy & Direction directs within the authorised frame).
+
+    The previous record dea:process-develop-governance-strategy
+
+    is deprecated and remains in the tree with lifecycle_status:
+
+    deprecated for traceability.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml strategyAndDirection.conceive;
+
+    CR-BP-20-l1-l2-alignment-ecf-v240.md;
+
+    CR-BP-21a-strategy-direction-landing.md.
+
+    '
+  note: 'The previous record id (dea:process-develop-governance-strategy)
+
+    is deprecated; new canonical id is
+
+    dea:process-develop-corporate-strategy.
+
+    '
+- record_id: dea:process-frame-organization-and-agent-strategy
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21b
+  rationale: 'Fresh L2 landing for the AgencyAndOrganization x Conceive
+
+    cell, per CR-BP-21b and CR-BP-19 register v2. Substrate-
+
+    neutral per ADR-ECF-002 §5 / CR-ECF-007.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml agencyOrganization.conceive;
+
+    CR-BP-21b-agency-organization-landing.md.
+
+    '
+  note: null
+- record_id: dea:process-design-organization-structure
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21b
+  rationale: 'Fresh L2 landing for the AgencyAndOrganization x Design
+
+    cell, per CR-BP-21b and CR-BP-19 register v2. Substrate-
+
+    neutral per ADR-ECF-002 §5 / CR-ECF-007.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml agencyOrganization.design;
+
+    CR-BP-21b-agency-organization-landing.md.
+
+    '
+  note: null
+- record_id: dea:process-acquire-and-onboard-agents
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21b
+  rationale: 'Fresh L2 landing for the AgencyAndOrganization x Build
+
+    cell, per CR-BP-21b and CR-BP-19 register v2. Substrate-
+
+    neutral: covers recruitment (biological), model deployment
+
+    and API integration (artificial), and hybrid provisioning.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml agencyOrganization.build;
+
+    CR-BP-21b-agency-organization-landing.md.
+
+    '
+  note: null
+- record_id: dea:process-operate-agent-performance
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21b
+  rationale: 'Fresh L2 landing for the AgencyAndOrganization x Operate
+
+    cell, per CR-BP-21b and CR-BP-19 register v2. Substrate-
+
+    neutral.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml agencyOrganization.operate;
+
+    CR-BP-21b-agency-organization-landing.md.
+
+    '
+  note: null
+- record_id: dea:process-develop-agents-and-organization
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21b
+  rationale: 'Fresh L2 landing for the AgencyAndOrganization x Improve
+
+    cell, per CR-BP-21b and CR-BP-19 register v2. Substrate-
+
+    neutral.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml agencyOrganization.improve;
+
+    CR-BP-21b-agency-organization-landing.md.
+
+    '
+  note: null
+- record_id: dea:process-frame-value-proposition-thesis
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21c
+  rationale: 'Fresh L2 landing for the ProductAndValue x Conceive
+
+    cell, per CR-BP-21c and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml productValue.conceive;
+
+    CR-BP-21c-product-value-landing.md.
+
+    '
+  note: null
+- record_id: dea:process-design-product-and-service-propositions
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21c
+  rationale: 'Fresh L2 landing for the ProductAndValue x Design
+
+    cell, per CR-BP-21c and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml productValue.design;
+
+    CR-BP-21c-product-value-landing.md.
+
+    '
+  note: null
+- record_id: dea:process-develop-product-variants
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21c
+  rationale: 'Fresh L2 landing for the ProductAndValue x Build
+
+    cell, per CR-BP-21c and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml productValue.build;
+
+    CR-BP-21c-product-value-landing.md.
+
+    '
+  note: null
+- record_id: dea:process-operate-product-catalogue
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21c
+  rationale: 'Fresh L2 landing for the ProductAndValue x Operate
+
+    cell, per CR-BP-21c and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml productValue.operate;
+
+    CR-BP-21c-product-value-landing.md.
+
+    '
+  note: null
+- record_id: dea:process-conduct-proposition-performance-review
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21c
+  rationale: 'Fresh L2 landing for the ProductAndValue x Improve
+
+    cell, per CR-BP-21c and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml productValue.improve;
+
+    CR-BP-21c-product-value-landing.md.
+
+    '
+  note: null
+- record_id: dea:process-frame-operations-strategy
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21d
+  rationale: 'Fresh L2 landing for the EnablementAndOperations x Conceive
+
+    cell, per CR-BP-21d and CR-BP-19 register v2. Absorbs
+
+    execution-side sourcing/asset conception from the dissolved
+
+    Supply & Resources domain.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml operationsEnablement.conceive;
+
+    CR-BP-21d-enablement-operations-landing.md.
+
+    '
+  note: null
+- record_id: dea:process-design-operations-model
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21d
+  rationale: 'Fresh L2 landing for the EnablementAndOperations x Design
+
+    cell, per CR-BP-21d and CR-BP-19 register v2. Absorbs
+
+    asset/facility blueprint design from the dissolved Supply &
+
+    Resources domain.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml operationsEnablement.design;
+
+    CR-BP-21d-enablement-operations-landing.md.
+
+    '
+  note: null
+- record_id: dea:process-build-delivery-capability
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21d
+  rationale: 'Fresh L2 landing for the EnablementAndOperations x Build
+
+    cell, per CR-BP-21d and CR-BP-19 register v2. Absorbs asset
+
+    acquisition and facility provisioning from the dissolved
+
+    Supply & Resources domain.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml operationsEnablement.build;
+
+    CR-BP-21d-enablement-operations-landing.md.
+
+    '
+  note: null
+- record_id: dea:process-operate-service-delivery
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21d
+  rationale: 'Fresh L2 landing for the EnablementAndOperations x Operate
+
+    cell, per CR-BP-21d and CR-BP-19 register v2. Absorbs
+
+    procurement execution, facility operation, and asset
+
+    maintenance from the dissolved Supply & Resources domain.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml operationsEnablement.operate;
+
+    CR-BP-21d-enablement-operations-landing.md.
+
+    '
+  note: null
+- record_id: dea:process-conduct-operations-performance-review
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21d
+  rationale: 'Fresh L2 landing for the EnablementAndOperations x Improve
+
+    cell, per CR-BP-21d and CR-BP-19 register v2. Absorbs asset
+
+    utilization improvement from the dissolved Supply & Resources
+
+    domain.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml operationsEnablement.improve;
+
+    CR-BP-21d-enablement-operations-landing.md.
+
+    '
+  note: null
+- record_id: dea:process-frame-finance-strategy
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21e
+  rationale: 'Fresh L2 landing for the FinanceAndAccounting x Conceive
+
+    cell, per CR-BP-21e and CR-BP-19 register v2. v2.4.0 monetary
+
+    scoping: abstract value removed (domain-grounding §3.7).
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml financeAccounting.conceive;
+
+    CR-BP-21e-finance-accounting-landing.md.
+
+    '
+  note: null
+- record_id: dea:process-design-financial-plan-structure
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21e
+  rationale: 'Fresh L2 landing for the FinanceAndAccounting x Design
+
+    cell, per CR-BP-21e and CR-BP-19 register v2. Value
+
+    architecture design removed per v2.4.0 monetary scoping.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml financeAccounting.design;
+
+    CR-BP-21e-finance-accounting-landing.md.
+
+    '
+  note: null
+- record_id: dea:process-secure-funding-facilities
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21e
+  rationale: 'Fresh L2 landing for the FinanceAndAccounting x Build
+
+    cell, per CR-BP-21e and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml financeAccounting.build;
+
+    CR-BP-21e-finance-accounting-landing.md.
+
+    '
+  note: null
+- record_id: dea:process-operate-general-ledger
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21e
+  rationale: 'Fresh L2 landing for the FinanceAndAccounting x Operate
+
+    cell, per CR-BP-21e and CR-BP-19 register v2. Monetary
+
+    recording of procure-to-pay and order-to-cash remains here;
+
+    operational execution lives in enablement-operations.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml financeAccounting.operate;
+
+    CR-BP-21e-finance-accounting-landing.md.
+
+    '
+  note: null
+- record_id: dea:process-conduct-cost-optimization-review
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21e
+  rationale: 'Fresh L2 landing for the FinanceAndAccounting x Improve
+
+    cell, per CR-BP-21e and CR-BP-19 register v2. Margin and
+
+    value analysis retained only in the monetary-consequence
+
+    sense.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml financeAccounting.improve;
+
+    CR-BP-21e-finance-accounting-landing.md.
+
+    '
+  note: null
+- record_id: dea:process-define-enterprise-purpose-and-ambition
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21a.1
+  rationale: 'Register v2 L2 completion landing for the StrategyAndDirection
+
+    x Conceive cell, per CR-BP-21a.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml strategyDirection.conceive;
+
+    CR-BP-21a.1-strategy-direction-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-conceive-strategic-intent
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21a.1
+  rationale: 'Register v2 L2 completion landing for the StrategyAndDirection
+
+    x Conceive cell, per CR-BP-21a.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml strategyDirection.conceive;
+
+    CR-BP-21a.1-strategy-direction-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-frame-strategic-horizons
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21a.1
+  rationale: 'Register v2 L2 completion landing for the StrategyAndDirection
+
+    x Conceive cell, per CR-BP-21a.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml strategyDirection.conceive;
+
+    CR-BP-21a.1-strategy-direction-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-evaluate-strategic-alternatives
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21a.1
+  rationale: 'Register v2 L2 completion landing for the StrategyAndDirection
+
+    x Design cell, per CR-BP-21a.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml strategyDirection.design;
+
+    CR-BP-21a.1-strategy-direction-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-design-objectives-and-targets
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21a.1
+  rationale: 'Register v2 L2 completion landing for the StrategyAndDirection
+
+    x Design cell, per CR-BP-21a.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml strategyDirection.design;
+
+    CR-BP-21a.1-strategy-direction-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-design-strategic-scenarios
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21a.1
+  rationale: 'Register v2 L2 completion landing for the StrategyAndDirection
+
+    x Design cell, per CR-BP-21a.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml strategyDirection.design;
+
+    CR-BP-21a.1-strategy-direction-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-build-strategic-roadmap
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21a.1
+  rationale: 'Register v2 L2 completion landing for the StrategyAndDirection
+
+    x Build cell, per CR-BP-21a.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml strategyDirection.build;
+
+    CR-BP-21a.1-strategy-direction-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-translate-strategic-choices-into-initiatives
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21a.1
+  rationale: 'Register v2 L2 completion landing for the StrategyAndDirection
+
+    x Build cell, per CR-BP-21a.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml strategyDirection.build;
+
+    CR-BP-21a.1-strategy-direction-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-set-resource-allocation-priorities
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21a.1
+  rationale: 'Register v2 L2 completion landing for the StrategyAndDirection
+
+    x Build cell, per CR-BP-21a.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml strategyDirection.build;
+
+    CR-BP-21a.1-strategy-direction-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-sense-environmental-signals
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21a.1
+  rationale: 'Register v2 L2 completion landing for the StrategyAndDirection
+
+    x Operate cell, per CR-BP-21a.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml strategyDirection.operate;
+
+    CR-BP-21a.1-strategy-direction-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-steer-initiative-portfolio
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21a.1
+  rationale: 'Register v2 L2 completion landing for the StrategyAndDirection
+
+    x Operate cell, per CR-BP-21a.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml strategyDirection.operate;
+
+    CR-BP-21a.1-strategy-direction-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-operate-strategic-review-cycle
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21a.1
+  rationale: 'Register v2 L2 completion landing for the StrategyAndDirection
+
+    x Operate cell, per CR-BP-21a.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml strategyDirection.operate;
+
+    CR-BP-21a.1-strategy-direction-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-refresh-objectives-and-targets
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21a.1
+  rationale: 'Register v2 L2 completion landing for the StrategyAndDirection
+
+    x Improve cell, per CR-BP-21a.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml strategyDirection.improve;
+
+    CR-BP-21a.1-strategy-direction-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-review-strategy-effectiveness
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21a.1
+  rationale: 'Register v2 L2 completion landing for the StrategyAndDirection
+
+    x Improve cell, per CR-BP-21a.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml strategyDirection.improve;
+
+    CR-BP-21a.1-strategy-direction-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-frame-organization-model
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21b.1
+  rationale: 'Register v2 L2 completion landing for the AgencyAndOrganization
+
+    x Conceive cell, per CR-BP-21b.1 and CR-BP-19 register v2.
+
+    Substrate-neutral naming per CR-BP-21b §5.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml agencyOrganization.conceive;
+
+    CR-BP-21b.1-agency-organization-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-conceive-workforce-and-agent-mix
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21b.1
+  rationale: 'Register v2 L2 completion landing for the AgencyAndOrganization
+
+    x Conceive cell, per CR-BP-21b.1 and CR-BP-19 register v2.
+
+    Substrate-neutral naming per CR-BP-21b §5.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml agencyOrganization.conceive;
+
+    CR-BP-21b.1-agency-organization-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-design-role-catalogue
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21b.1
+  rationale: 'Register v2 L2 completion landing for the AgencyAndOrganization
+
+    x Design cell, per CR-BP-21b.1 and CR-BP-19 register v2.
+
+    Substrate-neutral naming per CR-BP-21b §5.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml agencyOrganization.design;
+
+    CR-BP-21b.1-agency-organization-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-design-competency-framework
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21b.1
+  rationale: 'Register v2 L2 completion landing for the AgencyAndOrganization
+
+    x Design cell, per CR-BP-21b.1 and CR-BP-19 register v2.
+
+    Substrate-neutral naming per CR-BP-21b §5.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml agencyOrganization.design;
+
+    CR-BP-21b.1-agency-organization-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-design-agent-topology
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21b.1
+  rationale: 'Register v2 L2 completion landing for the AgencyAndOrganization
+
+    x Design cell, per CR-BP-21b.1 and CR-BP-19 register v2.
+
+    Substrate-neutral naming per CR-BP-21b §5.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml agencyOrganization.design;
+
+    CR-BP-21b.1-agency-organization-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-build-contractor-and-partner-agent-pool
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21b.1
+  rationale: 'Register v2 L2 completion landing for the AgencyAndOrganization
+
+    x Build cell, per CR-BP-21b.1 and CR-BP-19 register v2.
+
+    Substrate-neutral naming per CR-BP-21b §5.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml agencyOrganization.build;
+
+    CR-BP-21b.1-agency-organization-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-operate-payroll-and-benefits
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21b.1
+  rationale: 'Register v2 L2 completion landing for the AgencyAndOrganization
+
+    x Operate cell, per CR-BP-21b.1 and CR-BP-19 register v2.
+
+    Substrate-neutral naming per CR-BP-21b §5.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml agencyOrganization.operate;
+
+    CR-BP-21b.1-agency-organization-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-operate-time-and-attendance
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21b.1
+  rationale: 'Register v2 L2 completion landing for the AgencyAndOrganization
+
+    x Operate cell, per CR-BP-21b.1 and CR-BP-19 register v2.
+
+    Substrate-neutral naming per CR-BP-21b §5.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml agencyOrganization.operate;
+
+    CR-BP-21b.1-agency-organization-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-operate-learning-and-development
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21b.1
+  rationale: 'Register v2 L2 completion landing for the AgencyAndOrganization
+
+    x Operate cell, per CR-BP-21b.1 and CR-BP-19 register v2.
+
+    Substrate-neutral naming per CR-BP-21b §5.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml agencyOrganization.operate;
+
+    CR-BP-21b.1-agency-organization-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-coordinate-collaboration
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21b.1
+  rationale: 'Register v2 L2 completion landing for the AgencyAndOrganization
+
+    x Operate cell, per CR-BP-21b.1 and CR-BP-19 register v2.
+
+    Substrate-neutral naming per CR-BP-21b §5.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml agencyOrganization.operate;
+
+    CR-BP-21b.1-agency-organization-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-conduct-engagement-and-alignment-review
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21b.1
+  rationale: 'Register v2 L2 completion landing for the AgencyAndOrganization
+
+    x Improve cell, per CR-BP-21b.1 and CR-BP-19 register v2.
+
+    Substrate-neutral naming per CR-BP-21b §5.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml agencyOrganization.improve;
+
+    CR-BP-21b.1-agency-organization-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-conduct-capability-gap-analysis
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21b.1
+  rationale: 'Register v2 L2 completion landing for the AgencyAndOrganization
+
+    x Improve cell, per CR-BP-21b.1 and CR-BP-19 register v2.
+
+    Substrate-neutral naming per CR-BP-21b §5.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml agencyOrganization.improve;
+
+    CR-BP-21b.1-agency-organization-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-reorganize-structures
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21b.1
+  rationale: 'Register v2 L2 completion landing for the AgencyAndOrganization
+
+    x Improve cell, per CR-BP-21b.1 and CR-BP-19 register v2.
+
+    Substrate-neutral naming per CR-BP-21b §5.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml agencyOrganization.improve;
+
+    CR-BP-21b.1-agency-organization-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-frame-portfolio-direction
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21c.1
+  rationale: 'Register v2 L2 completion landing for the ProductAndValue
+
+    x Conceive cell, per CR-BP-21c.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml productAndValue.conceive;
+
+    CR-BP-21c.1-product-value-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-frame-innovation-thesis
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21c.1
+  rationale: 'Register v2 L2 completion landing for the ProductAndValue
+
+    x Conceive cell, per CR-BP-21c.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml productAndValue.conceive;
+
+    CR-BP-21c.1-product-value-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-design-packaging-and-configuration
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21c.1
+  rationale: 'Register v2 L2 completion landing for the ProductAndValue
+
+    x Design cell, per CR-BP-21c.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml productAndValue.design;
+
+    CR-BP-21c.1-product-value-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-design-innovation-experiment
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21c.1
+  rationale: 'Register v2 L2 completion landing for the ProductAndValue
+
+    x Design cell, per CR-BP-21c.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml productAndValue.design;
+
+    CR-BP-21c.1-product-value-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-build-service-capability
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21c.1
+  rationale: 'Register v2 L2 completion landing for the ProductAndValue
+
+    x Build cell, per CR-BP-21c.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml productAndValue.build;
+
+    CR-BP-21c.1-product-value-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-build-innovation-prototype
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21c.1
+  rationale: 'Register v2 L2 completion landing for the ProductAndValue
+
+    x Build cell, per CR-BP-21c.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml productAndValue.build;
+
+    CR-BP-21c.1-product-value-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-prepare-market-readiness
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21c.1
+  rationale: 'Register v2 L2 completion landing for the ProductAndValue
+
+    x Build cell, per CR-BP-21c.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml productAndValue.build;
+
+    CR-BP-21c.1-product-value-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-manage-portfolio-performance
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21c.1
+  rationale: 'Register v2 L2 completion landing for the ProductAndValue
+
+    x Operate cell, per CR-BP-21c.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml productAndValue.operate;
+
+    CR-BP-21c.1-product-value-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-manage-proposition-lifecycle
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21c.1
+  rationale: 'Register v2 L2 completion landing for the ProductAndValue
+
+    x Operate cell, per CR-BP-21c.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml productAndValue.operate;
+
+    CR-BP-21c.1-product-value-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-evolve-products-and-services
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21c.1
+  rationale: 'Register v2 L2 completion landing for the ProductAndValue
+
+    x Improve cell, per CR-BP-21c.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml productAndValue.improve;
+
+    CR-BP-21c.1-product-value-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-rationalize-portfolio
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21c.1
+  rationale: 'Register v2 L2 completion landing for the ProductAndValue
+
+    x Improve cell, per CR-BP-21c.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml productAndValue.improve;
+
+    CR-BP-21c.1-product-value-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-frame-delivery-model-conception
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21d.1
+  rationale: 'Register v2 L2 completion landing for the EnablementAndOperations
+
+    x Conceive cell, per CR-BP-21d.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml enablementAndOperations.conceive;
+
+    CR-BP-21d.1-enablement-operations-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-frame-technology-enablement-approach
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21d.1
+  rationale: 'Register v2 L2 completion landing for the EnablementAndOperations
+
+    x Conceive cell, per CR-BP-21d.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml enablementAndOperations.conceive;
+
+    CR-BP-21d.1-enablement-operations-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-frame-physical-asset-approach
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21d.1
+  rationale: 'Register v2 L2 completion landing for the EnablementAndOperations
+
+    x Conceive cell, per CR-BP-21d.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml enablementAndOperations.conceive;
+
+    CR-BP-21d.1-enablement-operations-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-design-delivery-model
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21d.1
+  rationale: 'Register v2 L2 completion landing for the EnablementAndOperations
+
+    x Design cell, per CR-BP-21d.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml enablementAndOperations.design;
+
+    CR-BP-21d.1-enablement-operations-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-design-technology-platform-architecture
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21d.1
+  rationale: 'Register v2 L2 completion landing for the EnablementAndOperations
+
+    x Design cell, per CR-BP-21d.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml enablementAndOperations.design;
+
+    CR-BP-21d.1-enablement-operations-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-design-facility-and-asset-blueprint
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21d.1
+  rationale: 'Register v2 L2 completion landing for the EnablementAndOperations
+
+    x Design cell, per CR-BP-21d.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml enablementAndOperations.design;
+
+    CR-BP-21d.1-enablement-operations-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-design-logistics-and-routing
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21d.1
+  rationale: 'Register v2 L2 completion landing for the EnablementAndOperations
+
+    x Design cell, per CR-BP-21d.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml enablementAndOperations.design;
+
+    CR-BP-21d.1-enablement-operations-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-commission-production-line
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21d.1
+  rationale: 'Register v2 L2 completion landing for the EnablementAndOperations
+
+    x Build cell, per CR-BP-21d.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml enablementAndOperations.build;
+
+    CR-BP-21d.1-enablement-operations-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-build-logistics-network
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21d.1
+  rationale: 'Register v2 L2 completion landing for the EnablementAndOperations
+
+    x Build cell, per CR-BP-21d.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml enablementAndOperations.build;
+
+    CR-BP-21d.1-enablement-operations-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-acquire-technology-assets
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21d.1
+  rationale: 'Register v2 L2 completion landing for the EnablementAndOperations
+
+    x Build cell, per CR-BP-21d.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml enablementAndOperations.build;
+
+    CR-BP-21d.1-enablement-operations-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-provision-facilities
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21d.1
+  rationale: 'Register v2 L2 completion landing for the EnablementAndOperations
+
+    x Build cell, per CR-BP-21d.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml enablementAndOperations.build;
+
+    CR-BP-21d.1-enablement-operations-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-run-production-line
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21d.1
+  rationale: 'Register v2 L2 completion landing for the EnablementAndOperations
+
+    x Operate cell, per CR-BP-21d.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml enablementAndOperations.operate;
+
+    CR-BP-21d.1-enablement-operations-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-operate-logistics
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21d.1
+  rationale: 'Register v2 L2 completion landing for the EnablementAndOperations
+
+    x Operate cell, per CR-BP-21d.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml enablementAndOperations.operate;
+
+    CR-BP-21d.1-enablement-operations-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-operate-warehouse-and-inventory
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21d.1
+  rationale: 'Register v2 L2 completion landing for the EnablementAndOperations
+
+    x Operate cell, per CR-BP-21d.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml enablementAndOperations.operate;
+
+    CR-BP-21d.1-enablement-operations-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-operate-quality-control
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21d.1
+  rationale: 'Register v2 L2 completion landing for the EnablementAndOperations
+
+    x Operate cell, per CR-BP-21d.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml enablementAndOperations.operate;
+
+    CR-BP-21d.1-enablement-operations-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-operate-technology-platforms
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21d.1
+  rationale: 'Register v2 L2 completion landing for the EnablementAndOperations
+
+    x Operate cell, per CR-BP-21d.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml enablementAndOperations.operate;
+
+    CR-BP-21d.1-enablement-operations-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-operate-facility-management
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21d.1
+  rationale: 'Register v2 L2 completion landing for the EnablementAndOperations
+
+    x Operate cell, per CR-BP-21d.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml enablementAndOperations.operate;
+
+    CR-BP-21d.1-enablement-operations-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-operate-asset-maintenance
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21d.1
+  rationale: 'Register v2 L2 completion landing for the EnablementAndOperations
+
+    x Operate cell, per CR-BP-21d.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml enablementAndOperations.operate;
+
+    CR-BP-21d.1-enablement-operations-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-operate-procurement-cycle
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21d.1
+  rationale: 'Register v2 L2 completion landing for the EnablementAndOperations
+
+    x Operate cell, per CR-BP-21d.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml enablementAndOperations.operate;
+
+    CR-BP-21d.1-enablement-operations-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-conduct-logistics-optimization
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21d.1
+  rationale: 'Register v2 L2 completion landing for the EnablementAndOperations
+
+    x Improve cell, per CR-BP-21d.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml enablementAndOperations.improve;
+
+    CR-BP-21d.1-enablement-operations-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-conduct-lean-six-sigma-programme
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21d.1
+  rationale: 'Register v2 L2 completion landing for the EnablementAndOperations
+
+    x Improve cell, per CR-BP-21d.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml enablementAndOperations.improve;
+
+    CR-BP-21d.1-enablement-operations-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-optimize-asset-utilization
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21d.1
+  rationale: 'Register v2 L2 completion landing for the EnablementAndOperations
+
+    x Improve cell, per CR-BP-21d.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml enablementAndOperations.improve;
+
+    CR-BP-21d.1-enablement-operations-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-improve-technology-platforms
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21d.1
+  rationale: 'Register v2 L2 completion landing for the EnablementAndOperations
+
+    x Improve cell, per CR-BP-21d.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml enablementAndOperations.improve;
+
+    CR-BP-21d.1-enablement-operations-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-design-financial-controls-and-policies
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21e.1
+  rationale: 'Register v2 L2 completion landing for the FinanceAndAccounting
+
+    x Design cell, per CR-BP-21e.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml financeAccounting.design;
+
+    CR-BP-21e.1-finance-accounting-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-design-tax-position-and-strategy
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21e.1
+  rationale: 'Register v2 L2 completion landing for the FinanceAndAccounting
+
+    x Design cell, per CR-BP-21e.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml financeAccounting.design;
+
+    CR-BP-21e.1-finance-accounting-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-design-treasury-and-funding-model
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21e.1
+  rationale: 'Register v2 L2 completion landing for the FinanceAndAccounting
+
+    x Design cell, per CR-BP-21e.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml financeAccounting.design;
+
+    CR-BP-21e.1-finance-accounting-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-implement-financial-systems-and-ledger
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21e.1
+  rationale: 'Register v2 L2 completion landing for the FinanceAndAccounting
+
+    x Build cell, per CR-BP-21e.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml financeAccounting.build;
+
+    CR-BP-21e.1-finance-accounting-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-build-budgeting-and-forecasting-systems
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21e.1
+  rationale: 'Register v2 L2 completion landing for the FinanceAndAccounting
+
+    x Build cell, per CR-BP-21e.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml financeAccounting.build;
+
+    CR-BP-21e.1-finance-accounting-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-onboard-tax-and-compliance-capability
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21e.1
+  rationale: 'Register v2 L2 completion landing for the FinanceAndAccounting
+
+    x Build cell, per CR-BP-21e.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml financeAccounting.build;
+
+    CR-BP-21e.1-finance-accounting-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-run-accounts-payable
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21e.1
+  rationale: 'Register v2 L2 completion landing for the FinanceAndAccounting
+
+    x Operate cell, per CR-BP-21e.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml financeAccounting.operate;
+
+    CR-BP-21e.1-finance-accounting-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-run-accounts-receivable
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21e.1
+  rationale: 'Register v2 L2 completion landing for the FinanceAndAccounting
+
+    x Operate cell, per CR-BP-21e.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml financeAccounting.operate;
+
+    CR-BP-21e.1-finance-accounting-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-execute-payroll
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21e.1
+  rationale: 'Register v2 L2 completion landing for the FinanceAndAccounting
+
+    x Operate cell, per CR-BP-21e.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml financeAccounting.operate;
+
+    CR-BP-21e.1-finance-accounting-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-manage-cash-and-liquidity
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21e.1
+  rationale: 'Register v2 L2 completion landing for the FinanceAndAccounting
+
+    x Operate cell, per CR-BP-21e.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml financeAccounting.operate;
+
+    CR-BP-21e.1-finance-accounting-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-perform-financial-close
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21e.1
+  rationale: 'Register v2 L2 completion landing for the FinanceAndAccounting
+
+    x Operate cell, per CR-BP-21e.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml financeAccounting.operate;
+
+    CR-BP-21e.1-finance-accounting-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-manage-tax-compliance-and-filings
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21e.1
+  rationale: 'Register v2 L2 completion landing for the FinanceAndAccounting
+
+    x Operate cell, per CR-BP-21e.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml financeAccounting.operate;
+
+    CR-BP-21e.1-finance-accounting-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-operate-financial-reporting-and-disclosure
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21e.1
+  rationale: 'Register v2 L2 completion landing for the FinanceAndAccounting
+
+    x Operate cell, per CR-BP-21e.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml financeAccounting.operate;
+
+    CR-BP-21e.1-finance-accounting-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-refine-financial-controls-and-policies
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21e.1
+  rationale: 'Register v2 L2 completion landing for the FinanceAndAccounting
+
+    x Improve cell, per CR-BP-21e.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml financeAccounting.improve;
+
+    CR-BP-21e.1-finance-accounting-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-evolve-treasury-and-funding-model
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21e.1
+  rationale: 'Register v2 L2 completion landing for the FinanceAndAccounting
+
+    x Improve cell, per CR-BP-21e.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml financeAccounting.improve;
+
+    CR-BP-21e.1-finance-accounting-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-frame-risk-framework-direction
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21f.1
+  rationale: 'Register v2 L2 completion landing for the GovernanceAndExistence
+
+    x Conceive cell, per CR-BP-21f.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml governanceExistence.conceive;
+
+    CR-BP-21f.1-governance-existence-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-design-risk-framework
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21f.1
+  rationale: 'Register v2 L2 completion landing for the GovernanceAndExistence
+
+    x Design cell, per CR-BP-21f.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml governanceExistence.design;
+
+    CR-BP-21f.1-governance-existence-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-establish-risk-and-control-apparatus
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21f.1
+  rationale: 'Register v2 L2 completion landing for the GovernanceAndExistence
+
+    x Build cell, per CR-BP-21f.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml governanceExistence.build;
+
+    CR-BP-21f.1-governance-existence-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-operate-enterprise-risk-oversight
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21f.1
+  rationale: 'Register v2 L2 completion landing for the GovernanceAndExistence
+
+    x Operate cell, per CR-BP-21f.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml governanceExistence.operate;
+
+    CR-BP-21f.1-governance-existence-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-conduct-assurance-review
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21f.1
+  rationale: 'Register v2 L2 completion landing for the GovernanceAndExistence
+
+    x Operate cell, per CR-BP-21f.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml governanceExistence.operate;
+
+    CR-BP-21f.1-governance-existence-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-score-audit-findings
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21f.1
+  rationale: 'Register v2 L2 completion landing for the GovernanceAndExistence
+
+    x Improve cell, per CR-BP-21f.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml governanceExistence.improve;
+
+    CR-BP-21f.1-governance-existence-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-improve-policy-and-control-framework
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-21f.1
+  rationale: 'Register v2 L2 completion landing for the GovernanceAndExistence
+
+    x Improve cell, per CR-BP-21f.1 and CR-BP-19 register v2.
+
+    '
+  evidence: 'CR-BP-19 /l1-register.yaml governanceExistence.improve;
+
+    CR-BP-21f.1-governance-existence-completion.md.
+
+    '
+  note: null
+- record_id: dea:process-transition-to-service
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-64
+  rationale: 'First discovery-driven admission (CR-BP-62 method; CR-BP-63
+
+    exercise; CR-BP-64 admission). Transition to Service scored 10/10
+
+    with an ADMIT-CANONICAL recommendation at ProductAndValue x
+
+    Activate; landed as the first canonical BP at an Activate
+
+    coordinate with its PC (dea:pc-pv-activate) and PG
+
+    (dea:group-service-transition-activation).
+
+    '
+  evidence: 'discovery/v1-alpha/product-and-value-activate.yaml (CR-BP-63);
+
+    CR-BP-64-pv-activate-retire-admission.md.
+
+    '
+  note: null
+- record_id: dea:process-transition-out-of-service
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-64
+  rationale: 'First discovery-driven admission (CR-BP-62 method; CR-BP-63
+
+    exercise; CR-BP-64 admission). Transition Out of Service scored
+
+    10/10 with an ADMIT-CANONICAL recommendation at ProductAndValue x
+
+    Retire; landed as the first canonical BP at a Retire coordinate
+
+    with its PC (dea:pc-pv-retire) and PG
+
+    (dea:group-service-transition-retirement).
+
+    '
+  evidence: 'discovery/v1-alpha/product-and-value-retire.yaml (CR-BP-63);
+
+    CR-BP-64-pv-activate-retire-admission.md.
+
+    '
+  note: null
+- record_id: dea:process-bring-into-force
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-65
+  rationale: 'Discovery-driven admission (CR-BP-62 method; CR-BP-63 exercise;
+
+    CR-BP-65 admission). Bring into Force scored 9/10 with an
+
+    ADMIT-CANONICAL recommendation at GovernanceAndExistence x
+
+    Activate on universal entry-into-force evidence; landed with its
+
+    PC (dea:pc-ge-activate) and PG
+
+    (dea:group-governance-instrument-commencement).
+
+    '
+  evidence: 'discovery/v1-alpha/governance-and-existence-activate.yaml (CR-BP-63);
+
+    CR-BP-65-ge-activate-admission.md.
+
+    '
+  note: null
+- record_id: dea:process-decommission
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-66
+  rationale: 'Discovery-driven admission (CR-BP-62 method; CR-BP-63 exercise;
+
+    CR-BP-66 admission). Decommission scored 9/10 with an
+
+    ADMIT-CANONICAL recommendation at EnablementAndOperations x
+
+    Retire on ISO 55000 asset end-of-life evidence; landed with its
+
+    PC (dea:pc-oe-retire) and PG
+
+    (dea:group-operations-and-asset-decommissioning). The register
+
+    v2 escape condition (regulated decommission as a standalone
+
+    group) is met.
+
+    '
+  evidence: 'discovery/v1-alpha/enablement-and-operations-retire.yaml (CR-BP-63);
+
+    CR-BP-66-eo-retire-admission.md.
+
+    '
+  note: null
+- record_id: dea:process-close-enterprise-relationship
+  disposition: RETAIN
+  changes: []
+  tranche: cr-bp-67
+  rationale: 'Discovery-driven admission (CR-BP-62 method; CR-BP-63 exercise;
+
+    CR-BP-67 admission). Close Enterprise Relationship scored 9/10
+
+    with an ADMIT-CANONICAL recommendation at PartyAndRelationship x
+
+    Retire on contract close-out and regulated offboarding evidence;
+
+    landed with its PC (dea:pc-pr-retire) and PG
+
+    (dea:group-relationship-termination). The register v2 escape
+
+    condition (regulated offboarding as a distinct group) is met.
+
+    '
+  evidence: 'discovery/v1-alpha/party-and-relationship-retire.yaml (CR-BP-63);
+
+    CR-BP-67-pr-retire-admission.md.
+
+    '
+  note: null
+- record_id: dea:process-onboard-regulated-party-relationship
+  cr: CR-BP-71
+  disposition: RETAIN
+  rationale: 'Discovery-driven admission under the CR-BP-62 method (CR-BP-70
+
+    escape-clause exercise; CR-BP-71 admission tranche). The
+
+    candidate Onboard Regulated Party Relationship scored 9/10 with
+
+    an ADMIT-CANONICAL recommendation at PartyAndRelationship x
+
+    Activate on the register v2 cell''''s verbatim escape condition
+
+    ("defer until a regulated onboarding (e.g. KYC for financial
+
+    services) requires a distinct group"). Evidence base: FATF R.10,
+
+    FinCEN CDD (31 CFR 1010.230) + CIP, EU AMLD4/AMLD5/AMLD6, Basel
+
+    BCBS ML/FT guidelines, Wolfsberg Group guidance. Landed with its
+
+    PC (dea:pc-pr-act) and PG (dea:group-regulated-onboarding). The
+
+    register v2 escape condition is met verbatim.
+
+    '
+  evidence: 'discovery/v1-alpha/party-and-relationship-activate-escape.yaml
+
+    (CR-BP-70); CR-BP-71-pr-activate-admission.md.
+
+    '
+  note: null
+- record_id: dea:process-conduct-regulated-workforce-wind-down
+  ecf_context:
+    domain: AgencyAndOrganization
+    lifecycle_stage: Retire
+  process_context: dea:pc-ao-retire
+  process_group: dea:group-regulated-workforce-wind-down
+  disposition: RETAIN
+  cr: CR-BP-73
+  evidence: 'discovery/v1-alpha/agency-and-organization-retire-escape.yaml: scored 9/10 ADMIT-CANONICAL on WARN (29 U.S.C.
+    2101 et seq.; 20 CFR Part 639) + EU Directive 98/59/EC + ILO C158/C135 + OECD evidence; CR-BP-72 escape-clause discovery;
+    CR-BP-73 admission tranche.'
+  related_records:
+  - CR-BP-72
+  audit_status: ratified-accepted
+  note: null
+- record_id: dea:process-conclude-regulated-run-off
+  ecf_context:
+    domain: FinanceAndAccounting
+    lifecycle_stage: Retire
+  process_context: dea:pc-fa-retire
+  process_group: dea:group-regulated-run-off
+  disposition: RETAIN
+  cr: CR-BP-75
+  evidence: 'discovery/v1-alpha/finance-and-accounting-retire-escape.yaml: scored 9/10 ADMIT-CANONICAL on PRA PS20/24 (UK,
+    in force 30 June 2026) + FSB Final Guidance on Insurance Resolution Strategies 2025 + NAIC Model 901 + IFRS 17 (effective
+    2023) + IFRS 5 + ASC 205-30 Liquidation Basis (FASB ASU 2013-07) + ASC 944 + IRO Best Practice Guidance 2024 evidence;
+    CR-BP-74 escape-clause discovery; CR-BP-75 admission tranche.'
+  related_records:
+  - CR-BP-74
+  audit_status: ratified-accepted
+  note: 'Verbatim escape clause (CR-BP-19, register v2) activated: ''defer until a regulated unwind (e.g. mutual insurer run-off)
+    requires a standalone group''.'

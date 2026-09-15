@@ -22,8 +22,8 @@ ordering_rationale: 'The 10 Process Contexts map to the ECF matrix
 
   '
 summary:
-  total_tranches: 72
-  total_records: 133
+  total_tranches: 73
+  total_records: 134
   records_per_tranche:
     cd-b: 2
     cd-c: 2
@@ -97,6 +97,7 @@ summary:
     pr-ret.67: 1
     pr-act.71: 1
     ao-ret.73: 1
+    fa-ret.75: 1
 tranches:
 - tranche_id: cd-b
   context_ref: dea:pc-pr-b
@@ -1230,6 +1231,17 @@ tranches:
     158 (1982) and 135 (1971), OECD Employment Outlook, UK TULRCA
     s.188, German BetrVG section 17. The cell reverses from
     backlog-deferred to ratified-accepted/landed in register v10.
+- tranche_id: fa-ret.75
+  context_ref: dea:pc-fa-retire
+  context_name: finance-and-accounting / retire
+  group_ref: dea:group-regulated-run-off
+  cell: FinanceAndAccounting.Retire
+  records:
+  - dea:process-conclude-regulated-run-off
+  status: applied
+  applied_by: CR-BP-75
+  applied_pr: '116'
+  rationale: 'Third discovery-driven admission under the CR-BP-62 escape-clause method (CR-BP-74 discovery exercise; CR-BP-75 admission tranche). Conclude a Regulated Run-Off scored 9/10 with an ADMIT-CANONICAL recommendation at FinanceAndAccounting x Retire on the register v2 cell verbatim escape condition (defer until a regulated unwind, e.g. mutual insurer run-off, requires a standalone group). Evidence base -- PRA PS20/24 (UK, in force 30 June 2026) + FSB Final Guidance on Insurance Resolution Strategies 2025 + NAIC Model Regulation Service of Legal Process (Model 901) + IFRS 17 Insurance Contracts (effective 2023) + IFRS 5 + ASC 205-30 Liquidation Basis (FASB ASU 2013-07) + ASC 944 + IRO Best Practice Guidance 2024. The cell reverses from backlog-deferred to ratified-accepted/landed in register v11.'
 cross_tranche_dependencies: none
 review_checkpoints:
   cd-b: 1
