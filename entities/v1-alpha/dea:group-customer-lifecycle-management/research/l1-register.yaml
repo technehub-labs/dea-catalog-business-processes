@@ -15,7 +15,7 @@ stages:
 - Improve
 - Retire
 ratification:
-  version: 9
+  version: 10
   cr: CR-BP-71
   ratified_at: '2026-09-15'
   supersedes: version 8 (CR-BP-67, ratified 2026-09-14)
@@ -583,7 +583,49 @@ register:
         Process Group operating scopes (register-wide deferred_rationale). Agent transition
         is often handled within agent operations; defer until a regulated wind-down
         (e.g. mass layoff) requires a dedicated L1 group.
-      audit_status: backlog-deferred
+      process_context: dea:pc-ao-retire
+      l1_candidates:
+      - Agent Transition and Wind-down
+      l2_candidates:
+      - Manage redundancy
+      - Offboard departing agents
+      - Decommission artificial agents
+      - Decommission organizational unit
+      - Conduct regulated workforce wind-down
+      in_scope: Regulated workforce wind-down under statutory mass-layoff,
+        consultation, notice, severance, benefits continuation, and transition-support
+        obligations (WARN, EU Directive 98/59/EC, ILO C158/C135, OECD)
+      out_of_scope:
+      - Asset retirement (enablement-operations)
+      - Steady-state offboarding of individual agents (operate coordinate)
+      - Non-regulated cohort decommission (operate coordinate or activity under
+        agent operations)
+      evidence:
+      - dea-metaframework/framework/domain-grounding.md §3.3
+      - dea-catalog-business-capabilities/capability-workforce-management
+      disposition: ratified-accepted
+      ratified_at: '2026-09-15'
+      ratified_by: CR-BP-73
+      deferral_reason: null
+      audit_status: ratified-accepted
+      carrier_cr: CR-BP-73
+      discovery_record: dea:discovery-agency-and-organization-retire-escape
+      escape_clause_activated: |
+        Targeted escape-clause evaluation of the AgencyAndOrganization x Retire register
+        cell against its verbatim deferral condition ("defer until a regulated wind-down
+        (e.g. mass layoff) requires a dedicated L1 group"). The escape clause was found
+        met: regulated workforce wind-down under WARN (29 U.S.C. 2101 et seq.; 20 CFR
+        Part 639), EU Council Directive 98/59/EC, ILO Conventions 158 (1982) and 135
+        (1971), OECD Employment Outlook, UK TULRCA s.188, German BetrVG section 17 is a
+        legally mandated, boundary-clear, evidence-authoritative transformation distinct
+        from steady-state agent operations and from asset decommissioning. Score 9/10,
+        ADMIT-CANONICAL recommendation on authoritative statutory evidence.
+      v10_landing_note: |
+        Cell flipped from backlog-deferred to ratified-accepted/landed by CR-BP-73 admission
+        tranche. The carry-forward candidates (Manage redundancy, Offboard departing agents,
+        Decommission artificial agents, Decommission organizational unit) remain in
+        l2_candidates for traceability but are now subsumed by the admitted BP and the
+        Operate coordinate.
   PartyAndRelationship:
     Conceive:
       process_context: dea:pc-pr-conceive

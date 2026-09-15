@@ -1986,3 +1986,18 @@ dispositions:
       discovery/v1-alpha/party-and-relationship-activate-escape.yaml
       (CR-BP-70); CR-BP-71-pr-activate-admission.md.
     note: null
+
+  - record_id: dea:process-conduct-regulated-workforce-wind-down
+    ecf_context:
+      domain: AgencyAndOrganization
+      lifecycle_stage: Retire
+    process_context: dea:pc-ao-retire
+    process_group: dea:group-regulated-workforce-wind-down
+    disposition: RETAIN
+    cr: CR-BP-73
+    evidence: 'discovery/v1-alpha/agency-and-organization-retire-escape.yaml: scored 9/10 ADMIT-CANONICAL on WARN (29 U.S.C. 2101 et seq.; 20 CFR Part 639) + EU Directive 98/59/EC + ILO C158/C135 + OECD evidence; CR-BP-72 escape-clause discovery; CR-BP-73 admission tranche.'
+    related_records:
+      - CR-BP-72
+    audit_status: ratified-accepted
+    note: null
+
