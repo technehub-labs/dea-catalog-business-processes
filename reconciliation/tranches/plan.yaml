@@ -22,8 +22,8 @@ ordering_rationale: 'The 10 Process Contexts map to the ECF matrix
 
   '
 summary:
-  total_tranches: 71
-  total_records: 132
+  total_tranches: 72
+  total_records: 133
   records_per_tranche:
     cd-b: 2
     cd-c: 2
@@ -96,6 +96,7 @@ summary:
     oe-ret.66: 1
     pr-ret.67: 1
     pr-act.71: 1
+    ao-ret.73: 1
 tranches:
 - tranche_id: cd-b
   context_ref: dea:pc-pr-b
@@ -1194,7 +1195,7 @@ tranches:
   - dea:process-onboard-regulated-party-relationship
   status: applied
   applied_by: CR-BP-71
-  applied_pr: null
+  applied_pr: '112'
   rationale: >-
     First discovery-driven admission under the CR-BP-62 escape-clause
     method (CR-BP-70 discovery exercise; CR-BP-71 admission tranche).
@@ -1206,6 +1207,29 @@ tranches:
     1010.230 + CIP, EU AMLD4/AMLD5/AMLD6, Basel BCBS ML/FT guidelines,
     Wolfsberg Group guidance. The cell reverses from backlog-deferred
     to ratified-accepted/landed in register v9.
+
+- tranche_id: ao-ret.73
+  context_ref: dea:pc-ao-retire
+  context_name: agency-and-organization / retire
+  group_ref: dea:group-regulated-workforce-wind-down
+  cell: AgencyAndOrganization.Retire
+  records:
+  - dea:process-conduct-regulated-workforce-wind-down
+  status: applied
+  applied_by: CR-BP-73
+  applied_pr: '113'
+  rationale: >-
+    Second discovery-driven admission under the CR-BP-62 escape-clause
+    method (CR-BP-72 discovery exercise; CR-BP-73 admission tranche).
+    Conduct Regulated Workforce Wind-Down scored 9/10 with an
+    ADMIT-CANONICAL recommendation at AgencyAndOrganization x Retire
+    on the register v2 cell verbatim escape condition (defer until a
+    regulated wind-down, e.g. mass layoff, requires a dedicated L1
+    group). Evidence base -- U.S. WARN Act (29 U.S.C. 2101 et seq.;
+    20 CFR Part 639), EU Council Directive 98/59/EC, ILO Conventions
+    158 (1982) and 135 (1971), OECD Employment Outlook, UK TULRCA
+    s.188, German BetrVG section 17. The cell reverses from
+    backlog-deferred to ratified-accepted/landed in register v10.
 cross_tranche_dependencies: none
 review_checkpoints:
   cd-b: 1
@@ -1277,3 +1301,4 @@ review_checkpoints:
   oe-ret.66: 1
   pr-ret.67: 1
   pr-act.71: 1
+  ao-ret.73: 1

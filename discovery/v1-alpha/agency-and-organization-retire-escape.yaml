@@ -9,6 +9,11 @@ discovery:
       verb: Conduct
       object: Regulated Workforce Wind-Down
       scope: enterprise
+    admission:
+      status: admitted
+      admitted_as: dea:process-conduct-regulated-workforce-wind-down
+      admitted_at: '2026-09-15'
+      admitted_by: CR-BP-73
     trigger: >-
       A regulated wind-down event is authorized (mass layoff, agent unit
       decommission, or organizational unit wind-down) where statutory

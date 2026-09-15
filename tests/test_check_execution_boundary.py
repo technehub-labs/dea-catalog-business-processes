@@ -114,7 +114,7 @@ def test_cli_live_run_returns_conformant():
     result = _run([])
     assert result.returncode == 0, result.stdout + result.stderr
     assert "Execution Boundary (CR-BP-33; EXE-001..010): CONFORMANT" in result.stdout
-    assert "Records checked:   694" in result.stdout
+    assert "Records checked:   696" in result.stdout
     assert "Opted-in (with Workflow refs): 0" in result.stdout
     assert "Findings:          0" in result.stdout
 
@@ -124,7 +124,7 @@ def test_cli_json_shape():
     assert result.returncode == 0, result.stdout + result.stderr
     data = json.loads(result.stdout)
     assert data["verdict"] == "CONFORMANT"
-    assert data["record_count"] == 694
+    assert data["record_count"] == 696
     assert data["opted_in_record_count"] == 0
     assert data["finding_count"] == 0
     rule_ids = {r["id"] for r in data["rules"]}

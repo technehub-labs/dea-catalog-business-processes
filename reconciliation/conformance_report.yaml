@@ -2,13 +2,13 @@ schema_version: 1
 report_at_run: CR-BP-16 S23
 report_at_source: scripts/build_conformance_report.py
 catalog_root: /home/hermes/dea-work/dea-catalog-processes
-total_records: 735
+total_records: 738
 conformance_levels:
   0: 0
   1: 0
   2: 0
   3: 0
-  4: 735
+  4: 738
 records:
 - id: dea:activity-address-performance-exceptions
   kind: Activity
@@ -5550,6 +5550,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:group-regulated-workforce-wind-down
+  kind: Entity
+  path: entities/v1-alpha/dea:group-regulated-workforce-wind-down/dea:group-regulated-workforce-wind-down.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:group-relationship-termination
   kind: Entity
   path: entities/v1-alpha/dea:group-relationship-termination/dea:group-relationship-termination.yaml
@@ -5883,6 +5893,16 @@ records:
 - id: dea:process-conduct-proposition-performance-review
   kind: Entity
   path: entities/v1-alpha/dea:process-conduct-proposition-performance-review/dea:process-conduct-proposition-performance-review.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:process-conduct-regulated-workforce-wind-down
+  kind: Entity
+  path: entities/v1-alpha/dea:process-conduct-regulated-workforce-wind-down/dea:process-conduct-regulated-workforce-wind-down.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -6993,6 +7013,16 @@ records:
 - id: dea:pc-ao-operate
   kind: Unknown
   path: contexts/v1-alpha/dea-pc-ao-operate.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:pc-ao-retire
+  kind: Unknown
+  path: contexts/v1-alpha/dea-pc-ao-retire.yaml
   level: 4
   level_breakdown:
     L1_structural: true

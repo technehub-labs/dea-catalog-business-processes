@@ -2,10 +2,10 @@ catalog:
   abbreviation: BP
   counts:
     candidates: 0
-    canonical: 693
-    entities: 694
-    open_change_requests: 84
-    research_files: 307
+    canonical: 695
+    entities: 696
+    open_change_requests: 85
+    research_files: 309
     retired: 1
   cross_cutting:
     change_requests: change-requests/
@@ -6115,6 +6115,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:group-regulated-workforce-wind-down
+    last_modified: '2026-09-15'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:group-regulated-workforce-wind-down/dea:group-regulated-workforce-wind-down.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: ProcessGroup
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:group-relationship-termination
     last_modified: '2026-09-14'
     lifecycle_status: candidate
@@ -6482,6 +6493,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-conduct-proposition-performance-review/dea:process-conduct-proposition-performance-review.yaml
+    research_count: 2
+    retired_count: 0
+    state: canonical
+    type: Process
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:process-conduct-regulated-workforce-wind-down
+    last_modified: '2026-09-15'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:process-conduct-regulated-workforce-wind-down/dea:process-conduct-regulated-workforce-wind-down.yaml
     research_count: 2
     retired_count: 0
     state: canonical
@@ -9343,6 +9365,9 @@ catalog:
   - entity_id: dea:group-regulated-onboarding
     files: []
     path: entities/v1-alpha/dea:group-regulated-onboarding/research/
+  - entity_id: dea:group-regulated-workforce-wind-down
+    files: []
+    path: entities/v1-alpha/dea:group-regulated-workforce-wind-down/research/
   - entity_id: dea:group-relationship-termination
     files: []
     path: entities/v1-alpha/dea:group-relationship-termination/research/
@@ -9501,6 +9526,11 @@ catalog:
     - README.md
     - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-conduct-proposition-performance-review/research/
+  - entity_id: dea:process-conduct-regulated-workforce-wind-down
+    files:
+    - README.md
+    - l2-admission-deposition.yaml
+    path: entities/v1-alpha/dea:process-conduct-regulated-workforce-wind-down/research/
   - entity_id: dea:process-coordinate-collaboration
     files:
     - README.md

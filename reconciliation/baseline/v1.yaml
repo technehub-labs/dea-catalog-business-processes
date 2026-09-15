@@ -178,6 +178,10 @@ records:
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-regulated-onboarding/dea:group-regulated-onboarding.yaml
     sha256: a55fcf19885a4ac3dffa384e3378809f7c4b7a0e4cccbe155ee7134f7e6ded4b
+  - id: dea:group-regulated-workforce-wind-down
+    type: ProcessGroup
+    path: entities/v1-alpha/dea:group-regulated-workforce-wind-down/dea:group-regulated-workforce-wind-down.yaml
+    sha256: 436617cd13b6f9b7e3da4ce877d55d4b3a5d74c57744b585027bd26dc5a0b3fc
   - id: dea:group-relationship-termination
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-relationship-termination/dea:group-relationship-termination.yaml
@@ -230,6 +234,10 @@ records:
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-ao-operate.yaml
     sha256: 5ab964c0496ebd27f1b522c2c28cd7156fc0b02857dc5303d15424f915e4351e
+  - id: dea:pc-ao-retire
+    type: ProcessContext
+    path: contexts/v1-alpha/dea-pc-ao-retire.yaml
+    sha256: fd120af080f1c5ff7d599222587b5cad6b7c242c5a3b9884a5ce71300131db84
   - id: dea:pc-fa-build
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-fa-build.yaml
@@ -478,6 +486,10 @@ records:
     type: Process
     path: entities/v1-alpha/dea:process-conduct-proposition-performance-review/dea:process-conduct-proposition-performance-review.yaml
     sha256: 929d47031403c9c354983872c386d8e0c4cca1cffbe76ac4715cbc4dbe27c204
+  - id: dea:process-conduct-regulated-workforce-wind-down
+    type: Process
+    path: entities/v1-alpha/dea:process-conduct-regulated-workforce-wind-down/dea:process-conduct-regulated-workforce-wind-down.yaml
+    sha256: 2c2dc624e654e43b37054a3165c5c40ed96f341f782b8b4a36ae7d953a526d3a
   - id: dea:process-coordinate-collaboration
     type: Process
     path: entities/v1-alpha/dea:process-coordinate-collaboration/dea:process-coordinate-collaboration.yaml
