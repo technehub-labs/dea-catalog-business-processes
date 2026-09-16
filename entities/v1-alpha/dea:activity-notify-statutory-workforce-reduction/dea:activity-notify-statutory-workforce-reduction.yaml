@@ -1,0 +1,34 @@
+id: dea:activity-notify-statutory-workforce-reduction
+type: Activity
+name: Notify Statutory Workforce Reduction
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: "The cohesive grouping of work within Conduct Regulated Workforce Wind-Down that issues the statutory advance-notice filings and individual notifications required when an employment reduction crosses the size and nature thresholds of the controlling labour statute."
+belongs_to_business_process: dea:process-conduct-regulated-workforce-wind-down
+cohesion_rationale: "Constituent work shares a single statutory notification concern, one input class (the authorized wind-down event and the workforce roster scoped to the reduction), and one output (the served advance-notice and the regulator-filed notice record). Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6)."
+decomposition_boundary: l4-reached
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: AgencyAndOrganization
+    stage: Retire
+    identifier: ecf:agencyOrganization.retire
+metadata:
+  established_by: CR-BP-77
+  established_at: '2026-09-16'
+  change_history:
+  - cr: CR-BP-77
+    date: '2026-09-16'
+    change: |
+      Initial L3 Activity entry; lands as part of the CR-BP-77
+      admitted-regulated-BP L3 tranche (pattern proven by the pilot
+      and prior tranches). Classified per CR-BP-32 section 5 (fails
+      standalone executability and resource dedication); decomposition
+      boundary marker per CR-BP-32 section 12 pending Task records
+      (dea:Task lifecycle: proposed).

@@ -52,6 +52,11 @@ ecfConformance:
 metadata:
   established_by: CR-BP-71
   established_at: '2026-09-15'
+  activity_references:
+  - dea:activity-verify-party-identity
+  - dea:activity-resolve-beneficial-ownership
+  - dea:activity-classify-party-risk
+  - dea:activity-record-onboarding-decision
   change_history:
   - cr: CR-BP-71
     date: '2026-09-15'
@@ -68,6 +73,14 @@ metadata:
       Group guidance. BP-ARC-ID-001 satisfied: name "Onboard
       Regulated Party Relationship" is verb + object form; id
       preserved unchanged from the CR-BP-70 discovery recommendation.
+  - cr: CR-BP-77
+    date: '2026-09-16'
+    change: |
+      Initial L3 decomposition; lands 4 Activity records
+      as part of the CR-BP-77 admitted-regulated-BP tranche
+      (pattern proven by CR-BP-42..69). Activity ids recorded
+      in metadata.activity_references; parent BP version
+      unchanged per SIV-004 (additive metadata-only).
 links:
 - rel: change-request
   href: change-requests/CR-BP-71-pr-activate-admission.md

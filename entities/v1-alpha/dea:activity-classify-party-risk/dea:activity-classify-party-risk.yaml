@@ -1,0 +1,34 @@
+id: dea:activity-classify-party-risk
+type: Activity
+name: Classify Party Risk
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: "The cohesive grouping of work within Onboard Regulated Party Relationship that assigns the applicant a risk classification by combining the verified identity, resolved beneficial ownership, jurisdictional risk, product and channel exposure, and the controlling regime's risk-sensitive sectors into a defensible risk rating."
+belongs_to_business_process: dea:process-onboard-regulated-party-relationship
+cohesion_rationale: "Constituent work shares a single risk-classification concern, one input class (the verified identity record, the beneficial-ownership register, jurisdictional risk indicators, and product-channel facts), and one output (an assigned risk tier with documented rationale and any enhanced-due-diligence triggers). Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6)."
+decomposition_boundary: l4-reached
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: PartyAndRelationship
+    stage: Activate
+    identifier: ecf:partyRelationship.activate
+metadata:
+  established_by: CR-BP-77
+  established_at: '2026-09-16'
+  change_history:
+  - cr: CR-BP-77
+    date: '2026-09-16'
+    change: |
+      Initial L3 Activity entry; lands as part of the CR-BP-77
+      admitted-regulated-BP L3 tranche (pattern proven by the pilot
+      and prior tranches). Classified per CR-BP-32 section 5 (fails
+      standalone executability and resource dedication); decomposition
+      boundary marker per CR-BP-32 section 12 pending Task records
+      (dea:Task lifecycle: proposed).

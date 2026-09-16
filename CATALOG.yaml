@@ -2,10 +2,10 @@ catalog:
   abbreviation: BP
   counts:
     candidates: 0
-    canonical: 697
-    entities: 698
-    open_change_requests: 87
-    research_files: 311
+    canonical: 709
+    entities: 710
+    open_change_requests: 88
+    research_files: 314
     retired: 1
   cross_cutting:
     change_requests: change-requests/
@@ -25,6 +25,17 @@ catalog:
     last_modified: '2026-09-14'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-address-performance-exceptions/dea:activity-address-performance-exceptions.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-adjudicate-policyholder-claims
+    last_modified: '2026-09-16'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-adjudicate-policyholder-claims/dea:activity-adjudicate-policyholder-claims.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -923,6 +934,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-classify-party-risk
+    last_modified: '2026-09-16'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-classify-party-risk/dea:activity-classify-party-risk.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-classify-placement-candidates
     last_modified: '2026-09-14'
     lifecycle_status: candidate
@@ -1770,6 +1792,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-compute-statutory-liabilities
+    last_modified: '2026-09-16'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-compute-statutory-liabilities/dea:activity-compute-statutory-liabilities.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-compute-withholdings
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -1935,6 +1968,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-consult-representative-bodies
+    last_modified: '2026-09-16'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-consult-representative-bodies/dea:activity-consult-representative-bodies.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-contract-carriers
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -1972,6 +2016,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-coordinate-subledger-flows/dea:activity-coordinate-subledger-flows.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-coordinate-transition-supports
+    last_modified: '2026-09-16'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-coordinate-transition-supports/dea:activity-coordinate-transition-supports.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -2848,6 +2903,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-establish-run-off-accounting-basis
+    last_modified: '2026-09-16'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-establish-run-off-accounting-basis/dea:activity-establish-run-off-accounting-basis.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-evaluate-programme-effectiveness
     last_modified: '2026-09-14'
     lifecycle_status: candidate
@@ -3182,6 +3248,17 @@ catalog:
     last_modified: '2026-09-14'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-feed-payroll-time-data/dea:activity-feed-payroll-time-data.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-file-run-off-closure-evidence
+    last_modified: '2026-09-16'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-file-run-off-closure-evidence/dea:activity-file-run-off-closure-evidence.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -3948,6 +4025,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-maintain-reserving-discipline
+    last_modified: '2026-09-16'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-maintain-reserving-discipline/dea:activity-maintain-reserving-discipline.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-maintain-risk-registers
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -4293,6 +4381,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-negotiate-funding-lines/dea:activity-negotiate-funding-lines.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-notify-statutory-workforce-reduction
+    last_modified: '2026-09-16'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-notify-statutory-workforce-reduction/dea:activity-notify-statutory-workforce-reduction.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -4696,6 +4795,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-record-onboarding-decision
+    last_modified: '2026-09-16'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-record-onboarding-decision/dea:activity-record-onboarding-decision.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-record-payment-approvals
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -4854,6 +4964,17 @@ catalog:
     last_modified: '2026-09-14'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-resolve-attendance-exceptions/dea:activity-resolve-attendance-exceptions.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-resolve-beneficial-ownership
+    last_modified: '2026-09-16'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-resolve-beneficial-ownership/dea:activity-resolve-beneficial-ownership.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -5675,6 +5796,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-verify-party-identity
+    last_modified: '2026-09-16'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-verify-party-identity/dea:activity-verify-party-identity.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-verify-planning-system-readiness
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -6424,10 +6556,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-conclude-regulated-run-off
-    last_modified: '2026-09-15'
+    last_modified: '2026-09-16'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-conclude-regulated-run-off/dea:process-conclude-regulated-run-off.yaml
-    research_count: 2
+    research_count: 3
     retired_count: 0
     state: canonical
     type: Process
@@ -6523,10 +6655,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-conduct-regulated-workforce-wind-down
-    last_modified: '2026-09-15'
+    last_modified: '2026-09-16'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-conduct-regulated-workforce-wind-down/dea:process-conduct-regulated-workforce-wind-down.yaml
-    research_count: 2
+    research_count: 3
     retired_count: 0
     state: canonical
     type: Process
@@ -7249,10 +7381,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-onboard-regulated-party-relationship
-    last_modified: '2026-09-15'
+    last_modified: '2026-09-16'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-onboard-regulated-party-relationship/dea:process-onboard-regulated-party-relationship.yaml
-    research_count: 2
+    research_count: 3
     retired_count: 0
     state: canonical
     type: Process
@@ -7706,6 +7838,9 @@ catalog:
   - entity_id: dea:activity-address-performance-exceptions
     files: []
     path: entities/v1-alpha/dea:activity-address-performance-exceptions/research/
+  - entity_id: dea:activity-adjudicate-policyholder-claims
+    files: []
+    path: entities/v1-alpha/dea:activity-adjudicate-policyholder-claims/research/
   - entity_id: dea:activity-administer-benefits
     files: []
     path: entities/v1-alpha/dea:activity-administer-benefits/research/
@@ -7949,6 +8084,9 @@ catalog:
   - entity_id: dea:activity-classify-environmental-signals
     files: []
     path: entities/v1-alpha/dea:activity-classify-environmental-signals/research/
+  - entity_id: dea:activity-classify-party-risk
+    files: []
+    path: entities/v1-alpha/dea:activity-classify-party-risk/research/
   - entity_id: dea:activity-classify-placement-candidates
     files: []
     path: entities/v1-alpha/dea:activity-classify-placement-candidates/research/
@@ -8180,6 +8318,9 @@ catalog:
   - entity_id: dea:activity-compute-cycle-payroll
     files: []
     path: entities/v1-alpha/dea:activity-compute-cycle-payroll/research/
+  - entity_id: dea:activity-compute-statutory-liabilities
+    files: []
+    path: entities/v1-alpha/dea:activity-compute-statutory-liabilities/research/
   - entity_id: dea:activity-compute-withholdings
     files: []
     path: entities/v1-alpha/dea:activity-compute-withholdings/research/
@@ -8225,6 +8366,9 @@ catalog:
   - entity_id: dea:activity-construct-prototype
     files: []
     path: entities/v1-alpha/dea:activity-construct-prototype/research/
+  - entity_id: dea:activity-consult-representative-bodies
+    files: []
+    path: entities/v1-alpha/dea:activity-consult-representative-bodies/research/
   - entity_id: dea:activity-contract-carriers
     files: []
     path: entities/v1-alpha/dea:activity-contract-carriers/research/
@@ -8237,6 +8381,9 @@ catalog:
   - entity_id: dea:activity-coordinate-subledger-flows
     files: []
     path: entities/v1-alpha/dea:activity-coordinate-subledger-flows/research/
+  - entity_id: dea:activity-coordinate-transition-supports
+    files: []
+    path: entities/v1-alpha/dea:activity-coordinate-transition-supports/research/
   - entity_id: dea:activity-decide-substrate-placement
     files: []
     path: entities/v1-alpha/dea:activity-decide-substrate-placement/research/
@@ -8474,6 +8621,9 @@ catalog:
   - entity_id: dea:activity-establish-risk-registers
     files: []
     path: entities/v1-alpha/dea:activity-establish-risk-registers/research/
+  - entity_id: dea:activity-establish-run-off-accounting-basis
+    files: []
+    path: entities/v1-alpha/dea:activity-establish-run-off-accounting-basis/research/
   - entity_id: dea:activity-evaluate-programme-effectiveness
     files: []
     path: entities/v1-alpha/dea:activity-evaluate-programme-effectiveness/research/
@@ -8567,6 +8717,9 @@ catalog:
   - entity_id: dea:activity-feed-payroll-time-data
     files: []
     path: entities/v1-alpha/dea:activity-feed-payroll-time-data/research/
+  - entity_id: dea:activity-file-run-off-closure-evidence
+    files: []
+    path: entities/v1-alpha/dea:activity-file-run-off-closure-evidence/research/
   - entity_id: dea:activity-file-statutory-returns
     files: []
     path: entities/v1-alpha/dea:activity-file-statutory-returns/research/
@@ -8774,6 +8927,9 @@ catalog:
   - entity_id: dea:activity-maintain-receivables-record
     files: []
     path: entities/v1-alpha/dea:activity-maintain-receivables-record/research/
+  - entity_id: dea:activity-maintain-reserving-discipline
+    files: []
+    path: entities/v1-alpha/dea:activity-maintain-reserving-discipline/research/
   - entity_id: dea:activity-maintain-risk-registers
     files: []
     path: entities/v1-alpha/dea:activity-maintain-risk-registers/research/
@@ -8870,6 +9026,9 @@ catalog:
   - entity_id: dea:activity-negotiate-funding-lines
     files: []
     path: entities/v1-alpha/dea:activity-negotiate-funding-lines/research/
+  - entity_id: dea:activity-notify-statutory-workforce-reduction
+    files: []
+    path: entities/v1-alpha/dea:activity-notify-statutory-workforce-reduction/research/
   - entity_id: dea:activity-onboard-agents
     files: []
     path: entities/v1-alpha/dea:activity-onboard-agents/research/
@@ -8978,6 +9137,9 @@ catalog:
   - entity_id: dea:activity-record-inspection-results
     files: []
     path: entities/v1-alpha/dea:activity-record-inspection-results/research/
+  - entity_id: dea:activity-record-onboarding-decision
+    files: []
+    path: entities/v1-alpha/dea:activity-record-onboarding-decision/research/
   - entity_id: dea:activity-record-payment-approvals
     files: []
     path: entities/v1-alpha/dea:activity-record-payment-approvals/research/
@@ -9023,6 +9185,9 @@ catalog:
   - entity_id: dea:activity-resolve-attendance-exceptions
     files: []
     path: entities/v1-alpha/dea:activity-resolve-attendance-exceptions/research/
+  - entity_id: dea:activity-resolve-beneficial-ownership
+    files: []
+    path: entities/v1-alpha/dea:activity-resolve-beneficial-ownership/research/
   - entity_id: dea:activity-resolve-collaboration-frictions
     files: []
     path: entities/v1-alpha/dea:activity-resolve-collaboration-frictions/research/
@@ -9245,6 +9410,9 @@ catalog:
   - entity_id: dea:activity-verify-network-readiness
     files: []
     path: entities/v1-alpha/dea:activity-verify-network-readiness/research/
+  - entity_id: dea:activity-verify-party-identity
+    files: []
+    path: entities/v1-alpha/dea:activity-verify-party-identity/research/
   - entity_id: dea:activity-verify-planning-system-readiness
     files: []
     path: entities/v1-alpha/dea:activity-verify-planning-system-readiness/research/
@@ -9515,6 +9683,7 @@ catalog:
     files:
     - README.md
     - l2-admission-deposition.yaml
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-conclude-regulated-run-off/research/
   - entity_id: dea:process-conduct-assurance-review
     files:
@@ -9560,6 +9729,7 @@ catalog:
     files:
     - README.md
     - l2-admission-deposition.yaml
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-conduct-regulated-workforce-wind-down/research/
   - entity_id: dea:process-coordinate-collaboration
     files:
@@ -9903,6 +10073,7 @@ catalog:
     files:
     - README.md
     - l2-admission-deposition.yaml
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-onboard-regulated-party-relationship/research/
   - entity_id: dea:process-onboard-tax-and-compliance-capability
     files:

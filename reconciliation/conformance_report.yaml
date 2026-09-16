@@ -2,17 +2,27 @@ schema_version: 1
 report_at_run: CR-BP-16 S23
 report_at_source: scripts/build_conformance_report.py
 catalog_root: /home/hermes/dea-work/dea-catalog-processes
-total_records: 741
+total_records: 753
 conformance_levels:
   0: 0
   1: 0
   2: 0
   3: 0
-  4: 741
+  4: 753
 records:
 - id: dea:activity-address-performance-exceptions
   kind: Activity
   path: entities/v1-alpha/dea:activity-address-performance-exceptions/dea:activity-address-performance-exceptions.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-adjudicate-policyholder-claims
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-adjudicate-policyholder-claims/dea:activity-adjudicate-policyholder-claims.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -830,6 +840,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-classify-party-risk
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-classify-party-risk/dea:activity-classify-party-risk.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-classify-placement-candidates
   kind: Activity
   path: entities/v1-alpha/dea:activity-classify-placement-candidates/dea:activity-classify-placement-candidates.yaml
@@ -1600,6 +1620,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-compute-statutory-liabilities
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-compute-statutory-liabilities/dea:activity-compute-statutory-liabilities.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-compute-withholdings
   kind: Activity
   path: entities/v1-alpha/dea:activity-compute-withholdings/dea:activity-compute-withholdings.yaml
@@ -1750,6 +1780,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-consult-representative-bodies
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-consult-representative-bodies/dea:activity-consult-representative-bodies.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-contract-carriers
   kind: Activity
   path: entities/v1-alpha/dea:activity-contract-carriers/dea:activity-contract-carriers.yaml
@@ -1783,6 +1823,16 @@ records:
 - id: dea:activity-coordinate-subledger-flows
   kind: Activity
   path: entities/v1-alpha/dea:activity-coordinate-subledger-flows/dea:activity-coordinate-subledger-flows.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-coordinate-transition-supports
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-coordinate-transition-supports/dea:activity-coordinate-transition-supports.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -2580,6 +2630,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-establish-run-off-accounting-basis
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-establish-run-off-accounting-basis/dea:activity-establish-run-off-accounting-basis.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-evaluate-programme-effectiveness
   kind: Activity
   path: entities/v1-alpha/dea:activity-evaluate-programme-effectiveness/dea:activity-evaluate-programme-effectiveness.yaml
@@ -2883,6 +2943,16 @@ records:
 - id: dea:activity-feed-payroll-time-data
   kind: Activity
   path: entities/v1-alpha/dea:activity-feed-payroll-time-data/dea:activity-feed-payroll-time-data.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-file-run-off-closure-evidence
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-file-run-off-closure-evidence/dea:activity-file-run-off-closure-evidence.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -3580,6 +3650,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-maintain-reserving-discipline
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-maintain-reserving-discipline/dea:activity-maintain-reserving-discipline.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-maintain-risk-registers
   kind: Activity
   path: entities/v1-alpha/dea:activity-maintain-risk-registers/dea:activity-maintain-risk-registers.yaml
@@ -3893,6 +3973,16 @@ records:
 - id: dea:activity-negotiate-funding-lines
   kind: Activity
   path: entities/v1-alpha/dea:activity-negotiate-funding-lines/dea:activity-negotiate-funding-lines.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-notify-statutory-workforce-reduction
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-notify-statutory-workforce-reduction/dea:activity-notify-statutory-workforce-reduction.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -4260,6 +4350,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-record-onboarding-decision
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-record-onboarding-decision/dea:activity-record-onboarding-decision.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-record-payment-approvals
   kind: Activity
   path: entities/v1-alpha/dea:activity-record-payment-approvals/dea:activity-record-payment-approvals.yaml
@@ -4403,6 +4503,16 @@ records:
 - id: dea:activity-resolve-attendance-exceptions
   kind: Activity
   path: entities/v1-alpha/dea:activity-resolve-attendance-exceptions/dea:activity-resolve-attendance-exceptions.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-resolve-beneficial-ownership
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-resolve-beneficial-ownership/dea:activity-resolve-beneficial-ownership.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -5143,6 +5253,16 @@ records:
 - id: dea:activity-verify-network-readiness
   kind: Activity
   path: entities/v1-alpha/dea:activity-verify-network-readiness/dea:activity-verify-network-readiness.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-verify-party-identity
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-verify-party-identity/dea:activity-verify-party-identity.yaml
   level: 4
   level_breakdown:
     L1_structural: true

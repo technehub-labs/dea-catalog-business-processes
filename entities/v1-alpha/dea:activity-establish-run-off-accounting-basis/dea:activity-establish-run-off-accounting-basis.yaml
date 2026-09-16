@@ -1,0 +1,34 @@
+id: dea:activity-establish-run-off-accounting-basis
+type: Activity
+name: Establish Run-Off Accounting Basis
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: "The cohesive grouping of work within Conclude Regulated Run-Off that transitions the financial statements from going-concern to run-off statutory accounting basis as required by the controlling regulator, including recognition basis, liability measurement, and asset admissibility under the run-off rule set."
+belongs_to_business_process: dea:process-conclude-regulated-run-off
+cohesion_rationale: "Constituent work shares a single run-off accounting basis concern, one input class (the going-concern financial position, the regulator-acknowledged run-off authorisation, and the controlling statutory accounting rule set), and one output (the run-off statutory accounts with basis-of-preparation disclosure and transition adjustments). Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6)."
+decomposition_boundary: l4-reached
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: FinanceAndAccounting
+    stage: Retire
+    identifier: ecf:financeAccounting.retire
+metadata:
+  established_by: CR-BP-77
+  established_at: '2026-09-16'
+  change_history:
+  - cr: CR-BP-77
+    date: '2026-09-16'
+    change: |
+      Initial L3 Activity entry; lands as part of the CR-BP-77
+      admitted-regulated-BP L3 tranche (pattern proven by the pilot
+      and prior tranches). Classified per CR-BP-32 section 5 (fails
+      standalone executability and resource dedication); decomposition
+      boundary marker per CR-BP-32 section 12 pending Task records
+      (dea:Task lifecycle: proposed).

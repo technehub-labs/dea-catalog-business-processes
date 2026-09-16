@@ -1,5 +1,10 @@
-# Research: Onboard Regulated Party Relationship
+# Research depositions — dea:process-onboard-regulated-party-relationship
 
-Structured deposition for the L2 admission tranche (CR-BP-71).
-Evidence base: CR-BP-70 escape-clause discovery (FATF R.10, FinCEN CDD 31 CFR 1010.230,
-CIP, EU AMLD4/AMLD5/AMLD6, Basel BCBS ML/FT guidelines, Wolfsberg Group).
+Parent BP: `dea:process-onboard-regulated-party-relationship` (Onboard Regulated Party Relationship)
+Coordinate: `PartyAndRelationship` x `Activate`
+Admitted by: CR-BP-71 (escape-clause discovery CR-BP-70).
+L3 decomposition: CR-BP-77 (2026-09-16).
+
+## Files
+
+- `l3-candidate-universe.yaml` — CR-BP-77 deposition; 4 L3 candidates derived from the parent BP trigger and outcome text.
