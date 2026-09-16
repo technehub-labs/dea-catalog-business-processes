@@ -2,13 +2,13 @@ schema_version: 1
 report_at_run: CR-BP-16 S23
 report_at_source: scripts/build_conformance_report.py
 catalog_root: /home/hermes/dea-work/dea-catalog-processes
-total_records: 760
+total_records: 763
 conformance_levels:
   0: 0
   1: 0
   2: 0
   3: 0
-  4: 760
+  4: 763
 records:
 - id: dea:activity-address-performance-exceptions
   kind: Activity
@@ -5580,6 +5580,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:group-licensed-workforce-mobilization
+  kind: Entity
+  path: entities/v1-alpha/dea:group-licensed-workforce-mobilization/dea:group-licensed-workforce-mobilization.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:group-operations-and-asset-decommissioning
   kind: Entity
   path: entities/v1-alpha/dea:group-operations-and-asset-decommissioning/dea:group-operations-and-asset-decommissioning.yaml
@@ -6750,6 +6760,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:process-mobilize-licensed-workforce
+  kind: Entity
+  path: entities/v1-alpha/dea:process-mobilize-licensed-workforce/dea:process-mobilize-licensed-workforce.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:process-monitor-strategic-performance
   kind: Entity
   path: entities/v1-alpha/dea:process-monitor-strategic-performance/dea:process-monitor-strategic-performance.yaml
@@ -7163,6 +7183,16 @@ records:
 - id: dea:process-translate-strategic-choices-into-initiatives
   kind: Entity
   path: entities/v1-alpha/dea:process-translate-strategic-choices-into-initiatives/dea:process-translate-strategic-choices-into-initiatives.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:pc-ao-activate
+  kind: Unknown
+  path: contexts/v1-alpha/dea-pc-ao-activate.yaml
   level: 4
   level_breakdown:
     L1_structural: true

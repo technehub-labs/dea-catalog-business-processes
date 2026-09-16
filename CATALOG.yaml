@@ -2,10 +2,10 @@ catalog:
   abbreviation: BP
   counts:
     candidates: 0
-    canonical: 715
-    entities: 716
-    open_change_requests: 92
-    research_files: 317
+    canonical: 717
+    entities: 718
+    open_change_requests: 93
+    research_files: 319
     retired: 1
   cross_cutting:
     change_requests: change-requests/
@@ -6148,6 +6148,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:group-licensed-workforce-mobilization
+    last_modified: '2026-09-16'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:group-licensed-workforce-mobilization/dea:group-licensed-workforce-mobilization.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: ProcessGroup
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:group-operations-and-asset-decommissioning
     last_modified: '2026-09-14'
     lifecycle_status: candidate
@@ -7430,6 +7441,17 @@ catalog:
     path: entities/v1-alpha/dea:process-market-and-demand-conception/dea:process-market-and-demand-conception.yaml
     research_count: 3
     retired_count: 1
+    state: canonical
+    type: Process
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:process-mobilize-licensed-workforce
+    last_modified: '2026-09-16'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:process-mobilize-licensed-workforce/dea:process-mobilize-licensed-workforce.yaml
+    research_count: 2
+    retired_count: 0
     state: canonical
     type: Process
     version: 1.0.0
@@ -9594,6 +9616,9 @@ catalog:
     - .gitkeep
     - README.md
     path: entities/v1-alpha/dea:group-governance-system-design/research/
+  - entity_id: dea:group-licensed-workforce-mobilization
+    files: []
+    path: entities/v1-alpha/dea:group-licensed-workforce-mobilization/research/
   - entity_id: dea:group-operations-and-asset-decommissioning
     files: []
     path: entities/v1-alpha/dea:group-operations-and-asset-decommissioning/research/
@@ -10151,6 +10176,11 @@ catalog:
     - README.md
     - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-market-and-demand-conception/research/
+  - entity_id: dea:process-mobilize-licensed-workforce
+    files:
+    - README.md
+    - l2-admission-deposition.yaml
+    path: entities/v1-alpha/dea:process-mobilize-licensed-workforce/research/
   - entity_id: dea:process-monitor-strategic-performance
     files:
     - README.md

@@ -73,6 +73,11 @@ discovery:
     disposition:
       type: ADMIT-CANONICAL
       canonical_process_ref: dea:process-mobilize-licensed-workforce (proposed)
+    admission:
+      status: admitted
+      admitted_as: dea:process-mobilize-licensed-workforce
+      admitted_by: CR-BP-81
+      admitted_at: '2026-09-16'
   context_evaluation:
     concerns_identified: true
     candidates_considered: true

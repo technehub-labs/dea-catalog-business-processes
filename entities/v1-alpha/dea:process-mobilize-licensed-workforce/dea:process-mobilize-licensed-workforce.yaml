@@ -1,0 +1,88 @@
+id: dea:process-mobilize-licensed-workforce
+name: Mobilize Licensed Workforce
+type: Process
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+process_intent: manage
+process_type: management
+process_specialization: []
+description: 'Mobilize a licensed or regulated workforce under the enterprise regulated-entity approval authority within the dea:pc-ao-activate Cell Charter. The trigger is the enterprise regulated-entity approval for a licensed role; the outcome is the live-readiness activation of the licensed role with the supervisor-controlled scope preserved (signing authority or controlled-function designation), fitness-and-propriety attestation recorded, supervised-training completion preserved, and continuing-supervisor notification activated, so that the licensed individual is live on the regulated personnel record under the regulator continuing supervision.'
+
+trigger: 'A workforce role whose holders must hold a regulator-issued licence is approved by the enterprise regulated-entity approval authority for live work (banking controlled functions under FCA SMCR; healthcare practitioners under US state licensure; licensed professional services under UK SRA / US bar admissions; aviation crew under FAA / EASA type-rating; insurance producers under NAIC Producer Licensing), and the licensed individual is readied for live work on the regulated personnel record.'
+
+outcome: 'The licensed or regulated workforce role is formally mobilized under the enterprise regulated-entity approval authority with the regulator-controlled scope preserved, the fitness-and-propriety attestation recorded, supervised-training completion preserved, and the continuing-supervisor notification activated; the licensed individual is live on the regulated personnel record under the regulator continuing supervision and may perform live work in the licensed role.'
+
+identity:
+  verb: Mobilize
+  object: Licensed Workforce
+  scope: enterprise
+  outcome_statement: 'The licensed or regulated workforce role is formally mobilized under the enterprise regulated-entity approval authority. The regulator-controlled scope is preserved (signing authority or controlled-function designation). The fitness-and-propriety attestation is recorded. The supervised-training completion is preserved. The continuing-supervisor notification is activated. The licensed individual is live on the regulated personnel record under the regulator continuing supervision. Workforce recruitment and general onboarding remain coordinated to Build. Steady-state workforce performance and supervision remain coordinated to Operate. Workforce offboarding and licence surrender remain coordinated to Retire. Non-licensed workforce activation is excluded.'
+  evidence_links:
+    - type: regulation
+      ref: 'https://www.handbook.fca.org.uk/handbook/SYSC/25/Annex1/'
+    - type: regulation
+      ref: 'https://www.federalregister.gov/documents/2012016/05/02/2016-10567/consumer-due-diligence-requirements-for-financial-institutions'
+    - type: standard
+      ref: 'https://content.naic.org/cipr-topics/producer-licensing-model-act'
+    - type: regulation
+      ref: 'https://www.easa.europa.eu/en/document-library/regulations'
+    - type: regulation
+      ref: 'https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-119'
+    - type: standard
+      ref: 'https://www.sra.org.uk/solicitors/standards-regulations/'
+relationships:
+- source_id: dea:process-mobilize-licensed-workforce
+  relationship_type: serves
+  target_id: ecf:agencyOrganization.activate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+    - kind: coordinate
+      domain: AgencyAndOrganization
+      stage: Activate
+      identifier: ecf:agencyOrganization.activate
+metadata:
+  established_by: CR-BP-81
+  established_at: '2026-09-16'
+  change_history:
+  - cr: CR-BP-81
+    date: '2026-09-16'
+    change: |
+      Initial L2 Process entry; the first canonical Business Process
+      admitted at the AgencyAndOrganization x Activate coordinate,
+      from the CR-BP-80 escape-clause discovery outcome (10/10,
+      ADMIT-CANONICAL recommendation) under the CR-BP-62 method.
+      The admission activates the register v2 cell verbatim escape
+      rationale: "workforce activation is often an attribute of
+      build (hire-and-onboard)" is superseded by the regulator-
+      controlled scope, fitness-and-propriety attestation, supervised
+      -training completion, and continuing-supervisor notification
+      that distinguish licensed-workforce mobilization from general
+      workforce build. Evidence base: FCA SMCR (UK CF1..CF11
+      controlled functions), US state healthcare licensure regimes,
+      NAIC Producer Licensing Model Act and state insurance-producer
+      licensing, EASA / FAA crew licensing (type-rated licences),
+      UK SRA regulated-professionals regime and US state bar
+      admissions. BP-ARC-ID-001 satisfied: name "Mobilize Licensed
+      Workforce" is verb + object form; id preserved unchanged from
+      the CR-BP-80 discovery recommendation.
+links:
+- rel: change-request
+  href: change-requests/CR-BP-81-ao-activate-admission.md
+- rel: discovery-record-escape
+  href: discovery/v1-alpha/agency-and-organization-activate-escape.yaml
+- rel: discovery-record-baseline
+  href: discovery/v1-alpha/agency-and-organization-activate.yaml
+- rel: process-context
+  href: contexts/v1-alpha/dea-pc-ao-activate.yaml
+- rel: process-group
+  href: entities/v1-alpha/dea:group-licensed-workforce-mobilization/dea:group-licensed-workforce-mobilization.yaml
+- rel: l2-admission-deposition
+  href: entities/v1-alpha/dea:process-mobilize-licensed-workforce/research/l2-admission-deposition.yaml
+context:
+- ref: dea:pc-ao-activate
