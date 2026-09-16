@@ -73,6 +73,11 @@ discovery:
     disposition:
       type: ADMIT-CANONICAL
       canonical_process_ref: dea:process-activate-operations-capability (proposed)
+    admission:
+      status: admitted
+      admitted_as: dea:process-activate-operations-capability
+      admitted_by: CR-BP-82
+      admitted_at: '2026-09-16'
   context_evaluation:
     concerns_identified: true
     candidates_considered: true

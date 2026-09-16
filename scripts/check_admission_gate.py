@@ -284,8 +284,11 @@ def check_admission(path: Path, root: Path,
         # CR-BP-80: escape-clause discovery for the five backlog-deferred
         # cells (SD.Activate, SD.Retire, AO.Activate, EO.Activate, FA.Activate);
         # CR-BP-81: AO.Activate admission tranche landed under it.
+        # CR-BP-80: escape-clause discovery for the five backlog-deferred
+        # cells (SD.Activate, SD.Retire, AO.Activate, EO.Activate, FA.Activate);
+        # CR-BP-82: EO.Activate admission tranche landed under it.
         _ADMISSION_CR_RE = re.compile(
-            r"^(?:CR-BP-13[a-z]?|CR-BP-19|CR-BP-20|CR-BP-21[a-z]?|CR-BP-03C|CR-BP-64|CR-BP-65|CR-BP-66|CR-BP-67|CR-BP-71|CR-BP-73|CR-BP-75|CR-BP-78|CR-BP-81)(?:\.\d+)*$"
+            r"^(?:CR-BP-13[a-z]?|CR-BP-19|CR-BP-20|CR-BP-21[a-z]?|CR-BP-03C|CR-BP-64|CR-BP-65|CR-BP-66|CR-BP-67|CR-BP-71|CR-BP-73|CR-BP-75|CR-BP-78|CR-BP-81|CR-BP-82)(?:\.\d+)*$"
         )
         has_admission = any(
             isinstance(e, dict) and _ADMISSION_CR_RE.match(

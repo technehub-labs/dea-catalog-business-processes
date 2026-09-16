@@ -186,6 +186,10 @@ records:
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-regulated-onboarding/dea:group-regulated-onboarding.yaml
     sha256: a55fcf19885a4ac3dffa384e3378809f7c4b7a0e4cccbe155ee7134f7e6ded4b
+  - id: dea:group-regulated-operations-activation
+    type: ProcessGroup
+    path: entities/v1-alpha/dea:group-regulated-operations-activation/dea:group-regulated-operations-activation.yaml
+    sha256: 70387c720fb5ffec13369f75cca0f240dd0a9f9d2ff089f53c49e014dc85239b
   - id: dea:group-regulated-run-off
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-regulated-run-off/dea:group-regulated-run-off.yaml
@@ -306,6 +310,10 @@ records:
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-ge-retire.yaml
     sha256: 44de832ca10ec31c74b58f7ff486c856a12024e903fd27000ff72bbd18a8f9bb
+  - id: dea:pc-oe-activate
+    type: ProcessContext
+    path: contexts/v1-alpha/dea-pc-oe-activate.yaml
+    sha256: c100632dd2277b46f4954322f078ee7bf6b7aef9831e805faac7b415f309e6ed
   - id: dea:pc-oe-build
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-oe-build.yaml
@@ -414,6 +422,10 @@ records:
     type: Process
     path: entities/v1-alpha/dea:process-acquire-technology-assets/dea:process-acquire-technology-assets.yaml
     sha256: 7d2363accdf5cf0dc88ec7c51fadbf0781470b510e2ddfffb2e1dcf54798b79c
+  - id: dea:process-activate-operations-capability
+    type: Process
+    path: entities/v1-alpha/dea:process-activate-operations-capability/dea:process-activate-operations-capability.yaml
+    sha256: 18c18a4104a09650af87c4bf9a9eaff2384c9f451116f74c00d9c829e4ab204c
   - id: dea:process-adapt-strategic-direction
     type: Process
     path: entities/v1-alpha/dea:process-adapt-strategic-direction/dea:process-adapt-strategic-direction.yaml
@@ -781,7 +793,7 @@ records:
   - id: dea:process-mobilize-licensed-workforce
     type: Process
     path: entities/v1-alpha/dea:process-mobilize-licensed-workforce/dea:process-mobilize-licensed-workforce.yaml
-    sha256: b8576f73d9f92ccee325381bfc112d677bd8654a4c51b11117eb67ccefe61897
+    sha256: 7a11aa2b4b26b3baaf8ca86c84edf788849631ffa2d46a78913b67bc237ff364
   - id: dea:process-monitor-strategic-performance
     type: Process
     path: entities/v1-alpha/dea:process-monitor-strategic-performance/dea:process-monitor-strategic-performance.yaml

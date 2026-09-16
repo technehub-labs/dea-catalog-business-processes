@@ -1,0 +1,128 @@
+id: dea:process-activate-operations-capability
+name: Activate Operations Capability
+type: Process
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+process_intent: manage
+process_type: management
+
+# Trigger and outcome (BP-ARC-ID-002: trigger / outcome blocks nested
+# inside identity; pre-existing baseline -- does not block CI under
+# check_admission_gate.py --strict-provenance).
+trigger: 'An operations capability requires formal regulator-issued authorization or certification before it may enter live service (aviation AOC under EASA Part-OR or FAA Part 119; PSD2 / ECB / PRA payment-institution authorization under PSD2 Articles 11 and 28; EMA / FDA / MHRA GMP certification; MiCA Article 59 crypto-asset-service-provider authorization; ORR / ERA rail safety-case authorization; nuclear operations authorization).'
+
+outcome: 'The operations capability is formally activated with the regulator''s authorization on record, operations manuals and runbooks live, operational controls (incident management, capacity, security, compliance) live, and the supervisor''s continuing-oversight relationship active.'
+
+description: 'Activate an operations capability under the enterprise''s regulated-entity approval authority within the dea:pc-oe-activate Cell Charter. The trigger is a regulator-issued authorization or certification gating live service; the outcome is the capability live on the regulated operations record with the supervisor''s continuing-oversight relationship active and operational controls running, so that the operations capability moves from regulator-authorized-but-not-live to regulator-authorized-and-live. Distinct from general capability build (Build coordinate) and from steady-state operation (Operate coordinate).'
+
+# Process specialization (BP-ARC-ID-005: empty until specialization
+# program is approved).
+process_specialization: []
+
+# Process identity / definitions / processes_and_projects distinction
+# (BP-001..008 enforce; CR-BP-12 register faces).
+process_identity:
+  boundary_face: regulated-entity approval authority
+  identity_kind: canonical
+  is_process: true
+  is_project: false
+
+# Process scope (BP-006: bounded on inputs and outcomes).
+process_scope:
+  includes:
+    - "Regulator-issued authorization or certification acquisition and recording (EASA / FAA AOC; PSD2 / ECB / PRA payment-institution authorization; EMA / FDA / MHRA GMP; FAA Part 119; MiCA Article 59; ORR / ERA rail safety case; nuclear operations authorization; payments-issuer authorization under PSD2 Article 11)"
+    - "Operations capability description and readiness-assessment evidence (supervised-test records, operational-control framework, service-level commitments)"
+    - "Continuing-supervisor notification activation under the regulator's continuing oversight"
+    - "Operations manuals and runbooks live"
+    - "Operational controls (incident management, capacity, security, compliance) live on the regulated operations record"
+    - "Regulated operations record entry preserved for the activated operations capability"
+  excludes:
+    - "Operations capability conception and design (EnablementAndOperations x Conceive / Design)"
+    - "Operations capability build and configuration (EnablementAndOperations x Build)"
+    - "Steady-state operations performance management (EnablementAndOperations x Operate)"
+    - "Operations capability decommission and deregistration (EnablementAndOperations x Retire)"
+    - "Non-regulated operations-capability activation (internal-product go-live without regulator's authorization)"
+
+# Canonical context block (BP-SEM-007 enforces; replaces legacy
+# scalar process_context for downstream gate compliance).
+context:
+- ref: dea:pc-oe-activate
+
+# Process identity sub-block (BP-C1..C4 enforces).
+identity:
+  verb: Activate
+  object: Operations Capability
+  scope: enterprise
+  outcome_statement: 'The operations capability is formally activated with the regulator''s authorization on record, operations manuals and runbooks live, operational controls (incident management, capacity, security, compliance) live, and the supervisor''s continuing-oversight relationship active.'
+  evidence_links:
+    - type: documentation
+      ref: discovery/v1-alpha/enablement-and-operations-activate-escape.yaml
+    - type: governance
+      ref: change-requests/CR-BP-80-l0-discovery-five-backlog-cells.md
+    - type: governance
+      ref: change-requests/CR-BP-82-eo-activate-admission.md
+    - type: documentation
+      ref: entities/v1-alpha/dea:process-activate-operations-capability/research/l2-admission-deposition.yaml
+
+# Outcomes (process-level).
+outcomes:
+  - "The operations capability is formally activated under the enterprise's regulated-entity approval authority with the regulator's authorization on record, operations manuals and runbooks live, operational controls (incident management, capacity, security, compliance) live, and the supervisor's continuing-oversight relationship active."
+
+# Status / lifecycle (BP-009 enforces register).
+status: candidate
+lifecycle_status: candidate
+
+# ECF Conformance Gate (CR-ECF-CG-001..004).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: '1.0.0'
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+    - kind: coordinate
+      domain: EnablementAndOperations
+      stage: Activate
+      identifier: ecf:enablementAndOperations.activate
+
+# Evidence (CR-BP-11 register strength scale E0..E5).
+evidence:
+  - source: CR-BP-80 escape-clause discovery (EnablementAndOperations x Activate)
+    claim: |
+      Authoritative multi-source regulatory evidence (EASA / FAA AOC,
+      PSD2 Articles 11 and 28, EMA / FDA / MHRA GMP, FAA Part 119,
+      MiCA Article 59, ORR / ERA rail safety case, nuclear
+      operations authorization). Universal sector practice across
+      aviation, banking payments, pharmaceuticals, telecoms, rail,
+      and nuclear. Strong boundary against Build / Operate / Retire
+      coordinates. Score 10/10 with ADMIT-CANONICAL recommendation.
+    strength: E5
+    reference: discovery/v1-alpha/enablement-and-operations-activate-escape.yaml
+  - source: EU Regulation 2018/1139 (EASA Basic Regulation) and EASA Part-OR / Part-ARO
+    claim: "Air Operator Certificate (AOC) issuance authorizes commercial air operations; AOC issuance is the regulator-issued activation step."
+    strength: E4
+  - source: EU PSD2 (Directive 2015/2366) Articles 11 and 28
+    claim: "Payment-institution and account-information-service-provider authorization; authorization under PSD2 is a precondition to live payment-services operation."
+    strength: E4
+  - source: EU GMP EudraLex Volume 4 and US FDA 21 CFR Parts 210-211
+    claim: "Manufacturing GMP certification by EMA / FDA / MHRA is the regulator-issued authorization for pharmaceutical manufacturing."
+    strength: E4
+  - source: US FAA 14 CFR Part 119 and EASA Part-OR
+    claim: "AOC certification is the regulator's authorization for live commercial aviation operations."
+    strength: E4
+  - source: EU MiCA (Regulation 2023/1114) Article 59 and UK FSMA authorization regimes
+    claim: "Crypto-asset-service-provider and payment-institution authorization under the regulator's continuing supervision."
+    strength: E4
+
+# Change history (BP-010 enforces monotonicity).
+change_history:
+  - version: 1.0.0
+    cr: CR-BP-82
+    date: 2026-09-16
+    change: |
+      Initial canonical admission at the EnablementAndOperations x
+      Activate coordinate per the CR-BP-80 escape-clause discovery
+      (ADMIT-CANONICAL at 10/10). Trigger, outcome, scope, evidence,
+      ECF conformance, process identity, and change history blocks
+      established.
