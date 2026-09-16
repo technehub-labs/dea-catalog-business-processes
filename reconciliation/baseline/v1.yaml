@@ -126,6 +126,10 @@ records:
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-governance-system-design/dea:group-governance-system-design.yaml
     sha256: 0de88acc7aa2b7d7d371b60d14fe167462ce7b3e669400dfc449cbd961135300
+  - id: dea:group-licensed-workforce-mobilization
+    type: ProcessGroup
+    path: entities/v1-alpha/dea:group-licensed-workforce-mobilization/dea:group-licensed-workforce-mobilization.yaml
+    sha256: 77ed7b0fe2b6fc0bebb96eb267ba3e3e4a24cf06b47a18ece1986017c43f4168
   - id: dea:group-operations-and-asset-decommissioning
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-operations-and-asset-decommissioning/dea:group-operations-and-asset-decommissioning.yaml
@@ -222,6 +226,10 @@ records:
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-strategy-direction-conception/dea:group-strategy-direction-conception.yaml
     sha256: cf350994c31b7478fe97a4a988bbb981729d8f9a55a3828fb08c56b56d435908
+  - id: dea:pc-ao-activate
+    type: ProcessContext
+    path: contexts/v1-alpha/dea-pc-ao-activate.yaml
+    sha256: af04faa9ea115e032d8e3123c68d2b85b76726515b9c07d8c5cf22c18cdf760c
   - id: dea:pc-ao-build
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-ao-build.yaml
@@ -770,6 +778,10 @@ records:
     type: Process
     path: entities/v1-alpha/dea:process-market-and-demand-conception/dea:process-market-and-demand-conception.yaml
     sha256: 51387d783e37b0cba7a3abc17a49f0268f6fd10be1a3d504bf426130aac70e56
+  - id: dea:process-mobilize-licensed-workforce
+    type: Process
+    path: entities/v1-alpha/dea:process-mobilize-licensed-workforce/dea:process-mobilize-licensed-workforce.yaml
+    sha256: b8576f73d9f92ccee325381bfc112d677bd8654a4c51b11117eb67ccefe61897
   - id: dea:process-monitor-strategic-performance
     type: Process
     path: entities/v1-alpha/dea:process-monitor-strategic-performance/dea:process-monitor-strategic-performance.yaml

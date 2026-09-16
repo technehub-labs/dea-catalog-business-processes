@@ -98,6 +98,8 @@ summary:
     pr-act.71: 1
     ao-ret.73: 1
     fa-ret.75: 1
+    ge-ret.78: 1
+    ao-act.81: 1
 tranches:
 - tranche_id: cd-b
   context_ref: dea:pc-pr-b
@@ -1269,6 +1271,33 @@ tranches:
     ratified-accepted/landed in register v12. Voluntary governance
     sunset absent regulator or court mandate remains out of scope and
     is reserved for a future G&E x Improve coordinate charter extension.
+- tranche_id: ao-act.81
+  context_ref: dea:pc-ao-activate
+  context_name: agency-and-organization / activate
+  group_ref: dea:group-licensed-workforce-mobilization
+  cell: AgencyAndOrganization.Activate
+  records:
+  - dea:process-mobilize-licensed-workforce
+  status: applied
+  applied_by: CR-BP-81
+  applied_pr: 'PENDING'
+  rationale: >-
+    Fifth discovery-driven admission under the CR-BP-62 escape-clause
+    method (CR-BP-80 discovery exercise; CR-BP-81 admission tranche).
+    Mobilize Licensed Workforce scored 10/10 with an ADMIT-CANONICAL
+    recommendation at AgencyAndOrganization x Activate on the register
+    v12 cell verbatim escape rationale (workforce activation is often
+    an attribute of build). The 2024-2026 supervised-individual-
+    licensing landscape -- FCA SMCR Statements of Responsibilities
+    (UK CF1..CF11 controlled functions), US state healthcare licensure
+    regimes, NAIC Producer Licensing Model Act, EASA / FAA crew
+    licensing, UK SRA regulated-professionals regime, US state bar
+    admissions -- establishes regulator-controlled scope, fitness-
+    and-propriety attestation, supervised-training completion, and
+    continuing-supervisor notification as distinct enterprise concerns
+    that supersede the deferral rationale. The cell reverses from
+    backlog-deferred to ratified-accepted/landed in register v13.
+    L3 decomposition follows as CR-BP-87 (next slice).
 cross_tranche_dependencies: none
 review_checkpoints:
   cd-b: 1
@@ -1343,3 +1372,4 @@ review_checkpoints:
   ao-ret.73: 1
   fa-ret.75: 1
   ge-ret.78: 1
+  ao-act.81: 1

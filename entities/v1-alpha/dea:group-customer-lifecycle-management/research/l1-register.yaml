@@ -15,12 +15,26 @@ stages:
 - Improve
 - Retire
 ratification:
-  version: 12
-  cr: CR-BP-78
+  version: 13
+  cr: CR-BP-81
   ratified_at: '2026-09-16'
-  supersedes: version 11 (CR-BP-75, ratified 2026-09-15)
-  ratified_accepted: 43
-  backlog_deferred: 6
+  supersedes: version 12 (CR-BP-78, ratified 2026-09-16)
+  ratified_accepted: 44
+  backlog_deferred: 5
+  v12_to_v13_note: 'AgencyAndOrganization x Activate cell reverses from
+    backlog-deferred to ratified-accepted/landed on CR-BP-80 escape-clause
+    discovery evidence under the CR-BP-62 lifecycle process-discovery
+    method (Mobilize Licensed Workforce, 10/10, ADMIT-CANONICAL).
+    The remaining 5 backlog-deferred cells keep their v12 dispositions
+    unchanged; CR-BP-80 documented each cell evidence-backed
+    outcome (3 ADMIT-CANONICAL recommendations for EO.Activate,
+    FA.Activate, SD.Activate; 1 DEFER for SD.Retire; 1 DEFER for
+    AO.Activate cross-check) -- of these, AO.Activate is admitted by
+    CR-BP-81 (this slice) and the remaining 4 are pending admission
+    tranches CR-BP-82 (EO.Activate), CR-BP-83 (FA.Activate), and
+    CR-BP-86 (SD.Activate; SD.Ret retired without admission). This
+    is a targeted disposition reversal of the AO.Activate cell only;
+    the other 4 backlog-deferred cells remain pending.'
   v4_to_v5_note: 'Two ProductAndValue cells (Activate, Retire) reverse from
     backlog-deferred to ratified-accepted/landed on CR-BP-63 discovery evidence
     under the CR-BP-62 lifecycle process-discovery method. The remaining 12
@@ -516,15 +530,31 @@ register:
       out_of_scope:
       - Capability activation
       evidence:
-      - TOGAF ADM Phase G
-      disposition: backlog-deferred
-      ratified_at: '2026-09-07'
-      ratified_by: CR-BP-19
+      - "TOGAF ADM Phase G"
+      - "CR-BP-80 escape-clause discovery (2026-09-16)"
+      disposition: ratified-accepted
+      ratified_at: '2026-09-16'
+      ratified_by: CR-BP-81
       deferral_reason: Activate and Retire are lifecycle transition stages, not stable
         Process Group operating scopes (register-wide deferred_rationale). Workforce
         activation is often an attribute of build (hire-and-onboard) or operate (deploy-on-assignment);
         defer until organizational mobilization becomes a recurring programme.
-      audit_status: backlog-deferred
+      admission_note: 'CR-BP-80 escape-clause discovery evaluated the cell against 2024-2026
+        licensed-workforce regulation (FCA SMCR, US state healthcare licensure, NAIC Producer
+        Licensing Model Act, EASA/FAA crew licensing, UK SRA / US state bar admissions) and
+        established the evidence-backed canonical candidate Mobilize Licensed Workforce (10/10,
+        ADMIT-CANONICAL). The cell deferral rationale ("workforce activation is often an attribute
+        of build") is superseded by the regulator-controlled scope, fitness-and-propriety attestation,
+        supervised-training completion, and continuing-supervisor notification that distinguish
+        licensed-workforce mobilization from general build. CR-BP-81 (this slice) reverses the
+        cell disposition to ratified-accepted and lands the Process Group and Business Process
+        as the canonical decomposition at this coordinate. applied_pr TBD (back-fill in the next
+        slice after the CR-BP-81 PR merges).'
+      audit_status: landed
+      landed_at: '2026-09-16'
+      landed_by: CR-BP-81
+      cr: CR-BP-81
+      applied_pr: TBD
     Operate:
       process_context: dea:pc-ao-operate
       l1_candidates:

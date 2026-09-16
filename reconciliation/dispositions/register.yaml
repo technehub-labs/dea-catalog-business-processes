@@ -2499,3 +2499,16 @@ dispositions:
   - CR-BP-76
   audit_status: ratified-accepted
   note: 'Verbatim escape clause (CR-BP-19, register v2) activated: ''defer until a sector example (e.g. regulator-mandated unwind) requires it''.'
+- record_id: dea:process-mobilize-licensed-workforce
+  ecf_context:
+    domain: AgencyAndOrganization
+    lifecycle_stage: Activate
+  process_context: dea:pc-ao-activate
+  process_group: dea:group-licensed-workforce-mobilization
+  disposition: RETAIN
+  cr: CR-BP-81
+  evidence: 'discovery/v1-alpha/agency-and-organization-activate-escape.yaml: scored 10/10 ADMIT-CANONICAL on FCA SMCR Statements of Responsibilities (UK CF1..CF11 controlled functions) + US state healthcare licensure regimes + NAIC Producer Licensing Model Act + EASA / FAA crew licensing (type-rated licences) + UK SRA regulated-professionals regime + US state bar admissions; CR-BP-80 escape-clause discovery; CR-BP-81 admission tranche.'
+  related_records:
+  - CR-BP-80
+  audit_status: ratified-accepted
+  note: 'CR-BP-80 escape-clause discovery evaluated the cell against 2024-2026 licensed-workforce regulation; the cell verbatim escape rationale ("workforce activation is often an attribute of build") is superseded by regulator-controlled scope, fitness-and-propriety attestation, supervised-training completion, and continuing-supervisor notification.'
