@@ -2,10 +2,10 @@ catalog:
   abbreviation: BP
   counts:
     candidates: 0
-    canonical: 719
-    entities: 720
-    open_change_requests: 94
-    research_files: 321
+    canonical: 721
+    entities: 722
+    open_change_requests: 95
+    research_files: 323
     retired: 1
   cross_cutting:
     change_requests: change-requests/
@@ -6291,6 +6291,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:group-regulated-billing-activation
+    last_modified: '2026-09-16'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:group-regulated-billing-activation/dea:group-regulated-billing-activation.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: ProcessGroup
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:group-regulated-governance-unwind
     last_modified: '2026-09-16'
     lifecycle_status: candidate
@@ -6449,6 +6460,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-acquire-technology-assets/dea:process-acquire-technology-assets.yaml
+    research_count: 2
+    retired_count: 0
+    state: canonical
+    type: Process
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:process-activate-billing-capability
+    last_modified: '2026-09-16'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:process-activate-billing-capability/dea:process-activate-billing-capability.yaml
     research_count: 2
     retired_count: 0
     state: canonical
@@ -9677,6 +9699,9 @@ catalog:
   - entity_id: dea:group-proposition-design
     files: []
     path: entities/v1-alpha/dea:group-proposition-design/research/
+  - entity_id: dea:group-regulated-billing-activation
+    files: []
+    path: entities/v1-alpha/dea:group-regulated-billing-activation/research/
   - entity_id: dea:group-regulated-governance-unwind
     files: []
     path: entities/v1-alpha/dea:group-regulated-governance-unwind/research/
@@ -9726,6 +9751,11 @@ catalog:
     - README.md
     - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-acquire-technology-assets/research/
+  - entity_id: dea:process-activate-billing-capability
+    files:
+    - README.md
+    - l2-admission-deposition.yaml
+    path: entities/v1-alpha/dea:process-activate-billing-capability/research/
   - entity_id: dea:process-activate-operations-capability
     files:
     - README.md
