@@ -120,7 +120,7 @@ def test_cli_live_run_returns_conformant():
     assert result.returncode == 0, result.stdout + result.stderr
     assert "Activity Model (CR-BP-32; ACT-001..010): CONFORMANT" in result.stdout
     assert "Activity records: 537" in result.stdout
-    assert "BP records:       137" in result.stdout
+    assert "BP records:       138" in result.stdout
     assert "Findings:         0" in result.stdout
 
 
@@ -160,7 +160,7 @@ def test_cli_json_shape():
     data = json.loads(result.stdout)
     assert data["verdict"] == "CONFORMANT"
     assert data["activity_record_count"] == 537
-    assert data["bp_record_count"] == 137
+    assert data["bp_record_count"] == 138
     assert data["finding_count"] == 0
     assert data["canonical_composition_type"] == CANONICAL_COMPOSITION_TYPE
     assert sorted(data["forbidden_composition_types"]) == sorted(FORBIDDEN_COMPOSITION_TYPES)

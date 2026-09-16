@@ -178,6 +178,10 @@ records:
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-proposition-design/dea:group-proposition-design.yaml
     sha256: 11ee3ca73d22d617a8ddbe3d0e411e68e4fa105c01fda08af8fe0e08d9ee09c1
+  - id: dea:group-regulated-billing-activation
+    type: ProcessGroup
+    path: entities/v1-alpha/dea:group-regulated-billing-activation/dea:group-regulated-billing-activation.yaml
+    sha256: e80c27a1e239dd80f1f43fc84c631072e990087cf579e702c25013dd434383cc
   - id: dea:group-regulated-governance-unwind
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-regulated-governance-unwind/dea:group-regulated-governance-unwind.yaml
@@ -189,7 +193,7 @@ records:
   - id: dea:group-regulated-operations-activation
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-regulated-operations-activation/dea:group-regulated-operations-activation.yaml
-    sha256: 70387c720fb5ffec13369f75cca0f240dd0a9f9d2ff089f53c49e014dc85239b
+    sha256: d5ed9d570161aaac4d78cf9c06d2a5743ea4937909d5a28683906788410f3f24
   - id: dea:group-regulated-run-off
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-regulated-run-off/dea:group-regulated-run-off.yaml
@@ -258,6 +262,10 @@ records:
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-ao-retire.yaml
     sha256: fd120af080f1c5ff7d599222587b5cad6b7c242c5a3b9884a5ce71300131db84
+  - id: dea:pc-fa-activate
+    type: ProcessContext
+    path: contexts/v1-alpha/dea-pc-fa-activate.yaml
+    sha256: f83731dde222e74413fe94eb3e853ffb4905e6a0d9b9d68a6e9757dd0fabc00d
   - id: dea:pc-fa-build
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-fa-build.yaml
@@ -422,10 +430,14 @@ records:
     type: Process
     path: entities/v1-alpha/dea:process-acquire-technology-assets/dea:process-acquire-technology-assets.yaml
     sha256: 7d2363accdf5cf0dc88ec7c51fadbf0781470b510e2ddfffb2e1dcf54798b79c
+  - id: dea:process-activate-billing-capability
+    type: Process
+    path: entities/v1-alpha/dea:process-activate-billing-capability/dea:process-activate-billing-capability.yaml
+    sha256: 10fe5382e3c6987e4b596cdfe2508fb06bec73664b37c53856fd7f6a33c368d0
   - id: dea:process-activate-operations-capability
     type: Process
     path: entities/v1-alpha/dea:process-activate-operations-capability/dea:process-activate-operations-capability.yaml
-    sha256: 18c18a4104a09650af87c4bf9a9eaff2384c9f451116f74c00d9c829e4ab204c
+    sha256: 466ae4d796836a68fd83f016428a85c37d687b16ba015f430abb25de8d174861
   - id: dea:process-adapt-strategic-direction
     type: Process
     path: entities/v1-alpha/dea:process-adapt-strategic-direction/dea:process-adapt-strategic-direction.yaml

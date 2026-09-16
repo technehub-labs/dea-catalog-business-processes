@@ -1,0 +1,121 @@
+id: dea:group-regulated-billing-activation
+type: ProcessGroup
+version: 1.0.0
+
+name: Regulated Billing Activation
+
+# Normative definition (PG-006 / MECE).
+definition: |
+  The bounded Process Group that organises the Business Process
+  responsibilities of moving a billing or revenue-recognition
+  capability from regulator-acknowledged-but-not-live to
+  regulator-acknowledged-and-live in the FinanceAndAccounting x
+  Activate context where regulator-acknowledged accounting or rate
+  framework (insurance statutory accounting; IFRS 17; bank treasury
+  under capital rules; PUC rate-effective billing; PSD2 settlement-
+  account) creates a distinct group-level activation concern
+  separate from capability build and from steady-state billing.
+
+# Process Context reference (PG-003 enforces resolution).
+process_context: dea:pc-fa-activate
+
+# Scope (MECE boundary; PG-006 depends on excludes).
+scope:
+  includes:
+    - "Regulator-acknowledged accounting or rate framework activation (state insurance department supervision; IFRS 17 transition; ECB / PRA capital-rules supervision; PUC rate-effective framework; PSD2 / Federal Reserve / ECB settlement-account framework)"
+    - "Tariff or pricing approval acquisition and recording (insurance statutory accounting rate filings; PUC rate-case approval; PSD2 interchange-fee framework; bank treasury capital-rule pricing; settlement-account fee schedule)"
+    - "Billing-capability description and readiness-assessment evidence (supervised-test records, operational-control framework, first-invoice or first-recognition runbook)"
+    - "Continuing-supervisor notification activation under the regulator's continuing oversight"
+    - "Operational controls (segregation of duties, audit trail, reconciliation) live on the regulated billing record"
+    - "Regulated billing record entry preserved for the activated billing capability"
+  excludes:
+    - "Billing-capability conception and design (FinanceAndAccounting x Conceive / Design)"
+    - "Billing-capability build and configuration (FinanceAndAccounting x Build)"
+    - "Steady-state billing operations performance management (FinanceAndAccounting x Operate)"
+    - "Billing-capability decommission and deregistration (FinanceAndAccounting x Retire; CR-BP-75 adjacent cell)"
+    - "Non-regulated billing-capability activation (internal-finance cutover without regulator's acknowledgement): remains RECORD-PATTERN or MERGE per CR-BP-63 baseline"
+    - "Capabilities sourcing or licensing absent a regulator-acknowledged accounting or rate framework"
+
+# Intended enterprise outcomes.
+outcomes:
+  - "The billing or revenue-recognition capability is formally activated under the enterprise's regulated-entity approval authority with the regulator's acknowledgement on record, the tariff or pricing approval preserved, operational controls (segregation of duties, audit trail, reconciliation) live, and the supervisor's continuing-oversight relationship active."
+
+# Canonical containment (PG-004 / PG-005 / PG-006 enforce).
+composes:
+  - source_id: dea:group-regulated-billing-activation
+    target_id: dea:process-activate-billing-capability
+    relationship_type: composes
+    direction: source-to-target
+    status: active
+    asserted_by: dea-team
+    rationale: |
+      The L2 process belongs to this cell per the CR-BP-80
+      escape-clause discovery outcome (ADMIT-CANONICAL recommendation
+      at 10/10) landed by CR-BP-83. The discovery evidence (IFRS 17
+      transition; NAIC annual statement and statutory accounting;
+      Solvency II; PUC rate-effective billing; PSD2 / Federal
+      Reserve / ECB settlement-account activation) activates the
+      register v2 cell's verbatim escape condition:
+      "Activate and Retire are lifecycle transition stages" is
+      superseded by the regulator-acknowledged accounting or rate
+      framework that creates a distinct activation step with
+      continuing-supervisor notification, tariff or pricing approval,
+      and operational controls live on the regulated billing record.
+    provenance:
+      type: architecture-review
+      reference: CR-BP-83
+      asserted_by: dea-team
+      asserted_at: '2026-09-16'
+
+# Process Group kind (PG-007 enforces controlled vocabulary).
+process_group_kind: functional
+
+# Discovery / governance status (mirrors register values).
+status: accepted
+
+# Catalog entry lifecycle (PG-008 enforces).
+lifecycle_status: candidate
+
+# ECF Conformance Gate (CR-ECF-CG-001..004).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: '1.0.0'
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+    - kind: coordinate
+      domain: FinanceAndAccounting
+      stage: Activate
+      identifier: ecf:financeAccounting.activate
+
+# Evidence (CR-BP-11 register strength scale E0..E5).
+evidence:
+  - source: CR-BP-80 escape-clause discovery
+    claim: |
+      This Process Group's coordinate was evaluated by the CR-BP-80
+      escape-clause discovery record at
+      discovery/v1-alpha/finance-and-accounting-activate-escape.yaml.
+      The cell's deferral rationale ("Activate and Retire are
+      lifecycle transition stages") was found superseded by the
+      universal-sector regulator-acknowledged accounting or rate
+      framework regime: regulator-acknowledged accounting or rate
+      framework creates a distinct activation step with continuing-
+      supervisor notification, tariff or pricing approval, and
+      operational controls (segregation of duties, audit trail,
+      reconciliation) live on the regulated billing record. The cell
+      scores 10/10 with an ADMIT-CANONICAL recommendation on
+      authoritative regulatory evidence across insurance (NAIC
+      statutory accounting; IFRS 17 transition; Solvency II),
+      banking (PSD2 settlement-account; ECB / PRA capital-rules
+      supervision), utilities (PUC rate-effective billing), and
+      payments (PSD2 / Federal Reserve / ECB settlement-account).
+    strength: E5
+    reference: discovery/v1-alpha/finance-and-accounting-activate-escape.yaml
+  - source: CR-BP-83 admission tranche
+    claim: |
+      CR-BP-83 lands this Process Group as the L1 home of the
+      discovery-admitted Business Process and flips the register cell
+      to ratified-accepted / landed.
+    strength: E4
+    reference: change-requests/CR-BP-83-fa-activate-admission.md

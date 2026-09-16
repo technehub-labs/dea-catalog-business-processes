@@ -2,13 +2,13 @@ schema_version: 1
 report_at_run: CR-BP-16 S23
 report_at_source: scripts/build_conformance_report.py
 catalog_root: /home/hermes/dea-work/dea-catalog-processes
-total_records: 766
+total_records: 769
 conformance_levels:
   0: 0
   1: 0
   2: 0
-  3: 1
-  4: 765
+  3: 2
+  4: 767
 records:
 - id: dea:activity-address-performance-exceptions
   kind: Activity
@@ -5710,6 +5710,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:group-regulated-billing-activation
+  kind: Entity
+  path: entities/v1-alpha/dea:group-regulated-billing-activation/dea:group-regulated-billing-activation.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:group-regulated-governance-unwind
   kind: Entity
   path: entities/v1-alpha/dea:group-regulated-governance-unwind/dea:group-regulated-governance-unwind.yaml
@@ -5853,6 +5863,16 @@ records:
 - id: dea:process-acquire-technology-assets
   kind: Entity
   path: entities/v1-alpha/dea:process-acquire-technology-assets/dea:process-acquire-technology-assets.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:process-activate-billing-capability
+  kind: Entity
+  path: entities/v1-alpha/dea:process-activate-billing-capability/dea:process-activate-billing-capability.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -7279,6 +7299,16 @@ records:
     L2_semantic: true
     L3_architectural: true
     L4_canonical: true
+  findings: []
+- id: dea:pc-fa-activate
+  kind: Unknown
+  path: contexts/v1-alpha/dea-pc-fa-activate.yaml
+  level: 3
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: false
   findings: []
 - id: dea:pc-fa-build
   kind: Unknown

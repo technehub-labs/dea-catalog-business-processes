@@ -15,12 +15,13 @@ stages:
 - Improve
 - Retire
 ratification:
-  version: 14
-  cr: CR-BP-82
+  version: 15
+  cr: CR-BP-83
   ratified_at: '2026-09-16'
-  supersedes: version 13 (CR-BP-81, ratified 2026-09-16)
-  ratified_accepted: 45
-  backlog_deferred: 4
+  supersedes: version 14 (CR-BP-82, ratified 2026-09-16)
+  ratified_accepted: 46
+  backlog_deferred: 3
+  v14_to_v15_note: 'FinanceAndAccounting x Activate (FA.Activate) cell flips from backlog-deferred to ratified-accepted/landed per CR-BP-80 escape-clause discovery (10/10 ADMIT-CANONICAL) and CR-BP-83 admission tranche. FA.Activate now hosts dea:pc-fa-activate (Process Context) + dea:group-regulated-billing-activation (Process Group) + dea:process-activate-billing-capability (Business Process). Remaining 3 backlog-deferred cells: SD.Activate (CR-BP-86 pending), SD.Retire (DEFER documented without admission), plus the follow-on per CR-BP-19 register methodology. FA.Retire (CR-BP-75 admitted) remains landed.'
   v13_to_v14_note: 'EnablementAndOperations x Activate (EO.Activate) cell flips from backlog-deferred to ratified-accepted/landed per CR-BP-80 escape-clause discovery (10/10 ADMIT-CANONICAL) and CR-BP-82 admission tranche. EO.Activate now hosts dea:pc-oe-activate (Process Context) + dea:group-regulated-operations-activation (Process Group) + dea:process-activate-operations-capability (Business Process). Remaining 4 backlog-deferred cells: SD.Activate (CR-BP-86 pending), SD.Retire (DEFER documented without admission), FA.Activate (CR-BP-83 pending), plus 1 follow-on per CR-BP-19 register methodology.'
   v12_to_v13_note: 'AgencyAndOrganization x Activate cell reverses from
     backlog-deferred to ratified-accepted/landed on CR-BP-80 escape-clause
@@ -1328,22 +1329,48 @@ register:
       process_context: dea:pc-fa-activate
       l1_candidates:
       - Period Activation
+      - Regulated Billing Activation
       l2_candidates:
       - Open new accounting period
       - Activate finance system cutover
-      in_scope: Cutover of finance systems and periods
+      - Activate regulator-acknowledged billing capability
+      in_scope: Cutover of finance systems and periods; regulator-acknowledged
+        billing-capability activation (insurance statutory accounting; IFRS 17
+        transition; bank treasury under capital-rules supervision; PUC rate-
+        effective billing; PSD2 / Federal Reserve / ECB settlement-account)
       out_of_scope:
       - Capability activation (their domain)
+      - Non-regulated billing-capability activation (internal-finance cutover
+        without regulator's acknowledgement) - RECORD-PATTERN or MERGE per CR-BP-63
       evidence:
       - IFRS IAS 1 Presentation of Financial Statements
-      disposition: backlog-deferred
-      ratified_at: '2026-09-07'
-      ratified_by: CR-BP-19
+      - CR-BP-80 escape-clause discovery (finance-and-accounting-activate-escape)
+        scoring 10/10 ADMIT-CANONICAL for dea:process-activate-billing-capability
+      disposition: ratified-accepted
+      ratified_at: '2026-09-16'
+      ratified_by: CR-BP-83
+      landed_at: '2026-09-16'
+      landed_by: CR-BP-83
+      applied_pr: TBD
+      admission_note: |
+        Register cell flips from backlog-deferred to ratified-accepted/landed
+        per CR-BP-80 escape-clause discovery (10/10 ADMIT-CANONICAL) and
+        CR-BP-83 admission tranche. Deferral rationale superseded by
+        regulator-acknowledged accounting or rate framework regime creating
+        a distinct activation step with continuing-supervisor notification,
+        tariff or pricing approval, and operational controls (segregation of
+        duties, audit trail, reconciliation) live on the regulated billing
+        record.
+      carry_forward: |
+        Prior v2 deferral_reason content (Activate and Retire as lifecycle
+        transition stages) retained as audit-trail context per CR-BP-19
+        register methodology. The supersession is documented in the
+        admission_note.
       deferral_reason: Activate and Retire are lifecycle transition stages, not stable
         Process Group operating scopes (register-wide deferred_rationale). Period
         opening and finance cutovers are usually handled within Operate; defer until
         an L2 process (e.g. new entity onboarding) requires a distinct group.
-      audit_status: backlog-deferred
+      audit_status: landed
     Operate:
       process_context: dea:pc-fa-operate
       l1_candidates:
