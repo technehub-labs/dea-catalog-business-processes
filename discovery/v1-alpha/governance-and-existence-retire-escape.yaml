@@ -1,0 +1,320 @@
+discovery:
+  ecf_context:
+    domain: GovernanceAndExistence
+    lifecycle_stage: Retire
+  candidates:
+  - name: Effect Regulator-Mandated Governance Unwind
+    proposed_identity:
+      verb: Effect
+      object: Regulator-Mandated Governance Unwind
+      scope: enterprise
+    trigger: A regulator or court issues a mandatory dissolution, revocation, wind-down, or equivalent order (FCA WDPG wind-down
+      authorisation revocation, state attorney-general charity dissolution under Corp Code 5033-5034, federal banking regulator
+      cease-and-desist order, federal court receivership decree, or sectoral regulator-equivalent), triggering a formally
+      governed wind-down of governance bodies, policies, and mandates.
+    inputs: Regulator-issued order or court decree; current governance constitution and policy regime; dissolution plan; creditor
+      and stakeholder register; retained-records custodian assignment; successor-entity arrangements.
+    transformation: The governance regime moves from active operation to formally authorised wind-down under regulator supervision,
+      with policies sunset, mandates rescinded, governance bodies reduced to wind-down quorum, succession arrangements documented,
+      retained-records custodianship transferred, and statutory closure filings prepared.
+    outcome: 'The governance regime is wound down under the controlling regulator or court authority: governance bodies are
+      reduced to wind-down quorum per the controlling statute or regulator order, policy instruments are sunset per the governance
+      constitution, statutory dissolution filings are submitted, retained-records custodianship is assigned per the service-of-process
+      regime, and the entity is dissolved or authorisation surrendered per the regulator or court determination.'
+    boundary: The boundary is the regulator or court order itself. Distinct from EnablementAndOperations x Retire (asset retirement),
+      PartyAndRelationship x Retire (counterparty close-out), and A&O x Retire (workforce wind-down). Does NOT cover voluntary
+      dissolution absent a regulator or court mandate (voluntary governance sunset handled in a separate discovery exercise
+      under Improve).
+    actors: Governing body (board or equivalent), regulator or court, retained-records custodian, dissolution plan administrator,
+      statutory filings agent, successor-entity arrangements coordinator.
+    controls: Statutory or regulator-mandated order is the binding control. Dissolution plan must conform to state nonprofit
+      corporation codes (Corp Code 5033-5034, 6610, 8610, 9680 and equivalents), FCA WDPG wind-down planning expectations,
+      IRS 501(c)(3) dissolution notice requirements, and AG charity oversight requirements.
+    evidence:
+      evidence_strength: authoritative
+      sources:
+      - >-
+        CR-BP-19 register v2 per-cell escape condition |  |  |
+        claim: 'Verbatim deferral: "Retirement of governance is rare and largely an attribute of operating-model retirement;
+          defer until a sector example (e.g. regulator-mandated unwind) requires it."'
+        strength: E5
+        reference: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+      - >-
+        FCA Handbook WDPG 3 (Concept and Process of Wind-Down Planning) |  |  |
+        claim: 'UK regulator-mandated wind-down governance expectations: scenarios, plan, resources assessment, governance
+          and internal controls, wind-down thresholds, alert thresholds, cancellation of permissions.'
+        strength: E5
+        reference: https://handbook.fca.org.uk/handbook/wdpg3
+      - >-
+        FCA Wind-Down Plan Requirements announcement (FSCom 2024) |  |  |
+        claim: Three-month minimum wind-down period; nine months typical. Wind-down threshold and alert threshold. Client
+          refund and residual obligation handling.
+        strength: E5
+        reference: https://fscom.co/insights/blog/fca-announces-wind-down-plan-requirements
+      - >-
+        California Corporations Code 5033-5034, 6610, 8610, 9680 |  |  |
+        claim: US nonprofit corporation dissolution by board resolution, certificate of dissolution filing with Secretary
+          of State and Attorney General Registry of Charities and Fundraisers.
+        strength: E5
+        reference: https://oag.ca.gov/charities/dissolution
+      - >-
+        IRS 501(c)(3) dissolution notice and asset distribution rules |  |  |
+        claim: 'Federal tax-exempt entity dissolution obligations: notice, asset distribution per exempt purpose, final Form
+          990 filing.'
+        strength: E5
+        reference: https://www.501c3.org/dissolving-a-501c3-nonprofit-a-comprehensive-guide
+      - >-
+        National Council of Nonprofits Dissolving a Nonprofit Corporation guidance |  |  |
+        claim: Plan of dissolution, certificate or articles of dissolution, retained board quorum through wind-down.
+        strength: E4
+        reference: https://www.councilofnonprofits.org/running-nonprofit/governance-leadership/dissolving-nonprofit-corporation
+      - >-
+        Wolters Kluwer Dissolving a Nonprofit guidance |  |  |
+        claim: Board resolution, plan of dissolution, asset distribution, AG oversight for nonprofits.
+        strength: E4
+        reference: https://www.wolterskluwer.com/en/expert-insights/dissolving-a-nonprofit-when-and-how-to-dissolve-a-nonprofit
+    evaluation:
+      process_reality: 'Observable, regulator-anchored workflow: regulator-issued order triggers a documented plan; the plan
+        drives governance body reductions, policy sunset, retained-records custodianship, statutory filings, and dissolution
+        certification.'
+      transformation: 'Yes: governance regime moves from active operation to formally authorised wind-down under regulator
+        supervision.'
+      trigger: 'Yes, anchor-verifiable: regulator or court order with a defined effective date and statutory basis.'
+      outcome: 'Yes, verifiable: statutory filings accepted; AG (or equivalent) closure letter received; FCA authorisation
+        surrendered; court decree recorded.'
+      boundary: Distinct from voluntary governance sunset (Improve coordinate); from physical asset retirement (E&O Retire);
+        from counterparty close-out (P&R Retire); from workforce wind-down (A&O Retire). Boundary is the regulator or court
+        order itself.
+      semantic_identity: 'Stable identity: "Effect Regulator-Mandated Governance Unwind" is verb+object+scope; the same Process
+        recurs across UK FCA WDPG, US nonprofit dissolution, federal banking regulator cease-and-desist, and court receivership
+        regimes.'
+      cross_context_stability: Identity stable across nonprofit dissolution, financial-services firm wind-down, and court-receivership
+        scenarios; the same Process recurs with implementation variation.
+      cross_domain_applicability: Concentrated today in the regulator-mandated unwind scenario; voluntary governance sunset
+        deferred to Improve coordinate.
+      ecf_independence: Effects Regulator-Mandated Governance Unwind names recognisable work without reference to the G&E x Retire
+        ECF label.
+      duplication: No existing canonical BP covers regulator-mandated governance unwind at G&E x Retire; nearest neighbor
+        (Voluntary Governance Sunset, Improve coordinate) excludes the regulator or court mandate.
+      composition: Business Process level; constituent board-quorum management, policy-sunset procedures, retained-records
+        custodianship, statutory filings, and dissolution certification decompose to Activities at L3.
+      capability_distinction: A transformation with regulator or court trigger and outcome, not a capability restatement.
+      governance_distinction: Not a policy or decision; a governed workflow whose controls are statutory or regulator mandates.
+      lifecycle_span: Begins and ends within Retire; downstream record-retention obligations (post-dissolution) recorded but
+        not duplicated.
+    scoring:
+      process_reality: 2
+      semantic_stability: 2
+      cross_domain_applicability: 1
+      boundary_clarity: 2
+      evidence_strength: 2
+      total: 9
+      rationale: Authoritative multi-source statutory and regulator evidence base (FCA WDPG, US state nonprofit codes, IRS
+        501(c)(3), AG oversight); strong boundary against Operate, E&O x Retire, P&R x Retire, A&O x Retire, and the voluntary-governance-sunset
+        Improve coordinate; cross-domain breadth limited to regulator-mandated unwind today, holding the total at 9.
+    disposition:
+      type: ADMIT-CANONICAL
+      canonical_process_ref: dea:process-effect-regulator-mandated-governance-unwind
+      related_contexts: []
+  - name: Operate Governance Sunset Procedures
+    proposed_identity:
+      verb: Operate
+      object: Governance Sunset Procedures
+      scope: enterprise
+    trigger: A voluntary governance sunset is approved (board resolution with no regulator or court mandate) where the governance
+      constitution permits dissolution or wind-down absent external mandate.
+    inputs: Voluntary board resolution; governance constitution; dissolution plan; retained-records custodian assignment.
+    transformation: The governance regime moves from active operation to voluntary wind-down under the governance constitution
+      only, with no external mandate.
+    outcome: 'The governance regime is voluntarily wound down: governance bodies reduced to wind-down quorum per the constitution,
+      policies sunset per the constitution, retained-records custodianship assigned, dissolution filings submitted per the
+      governing state law.'
+    boundary: Voluntary governance sunset, not regulator-mandated. Currently deferred to the Improve coordinate per CR-BP-63
+      disposition; this candidate flags the structural overlap with the regulator-mandated BP and is DEFER pending the Improve
+      coordinate re-evaluation.
+    actors: Governing body, retained-records custodian, statutory filings agent.
+    controls: Governance constitution; state nonprofit corporation code (voluntary dissolution procedures); IRS voluntary
+      dissolution obligations.
+    evidence:
+      evidence_strength: authoritative
+      sources:
+      - >-
+        CR-BP-63 baseline discovery |  |  |
+        claim: Voluntary governance sunset is currently RECORD-PATTERN at the Improve coordinate (CR-BP-63 disposition for
+          Sunset / Rescind Policy Instrument).
+        strength: E4
+        reference: discovery/v1-alpha/governance-and-existence-retire.yaml
+      - >-
+        California Corporations Code voluntary dissolution procedures |  |  |
+        claim: US state voluntary governance dissolution procedures (Corp Code 6610.5, 8610.5).
+        strength: E4
+        reference: https://oag.ca.gov/charities/dissolution
+    evaluation:
+      process_reality: Observable, but currently RECORD-PATTERN at Improve per CR-BP-63.
+      transformation: 'Yes: governance regime moves from active operation to voluntary wind-down.'
+      trigger: 'Yes: voluntary board resolution.'
+      outcome: 'Yes: constitutional dissolution.'
+      boundary: Distinct from regulator-mandated unwind (no external mandate). Currently overlaps with Improve coordinate.
+      semantic_identity: Stable; same Process under Improve coordinate.
+      cross_context_stability: Cross-context stable; voluntary governance sunset exists across jurisdictions.
+      cross_domain_applicability: Narrow today; voluntary governance sunset rarely triggers a standalone L1 group at the Retire
+        coordinate.
+      ecf_independence: Operate Governance Sunset Procedures is a continuation of policy lifecycle, not a fresh Retire Process.
+      duplication: Overlaps with the Sunset / Rescind Policy Instrument Improve-coordinate work per CR-BP-63.
+      composition: Process level; sub-Activities are constitutional filings and retained-records custodianship.
+      capability_distinction: Capability restatement; overlaps with Improve coordinate.
+      governance_distinction: Voluntary; no regulator mandate.
+      lifecycle_span: Begins and ends within Retire (voluntary).
+    scoring:
+      process_reality: 2
+      semantic_stability: 1
+      cross_domain_applicability: 1
+      boundary_clarity: 1
+      evidence_strength: 2
+      total: 5
+      rationale: Authoritative regulatory evidence base; verb-form semantic-identity risk (Operate is a state verb, not a
+        transformation verb); overlap with Improve coordinate; defer until the Improve coordinate re-evaluates voluntary governance
+        sunset as a candidate at the Retire coordinate.
+    disposition:
+      type: DEFER
+      related_contexts: []
+  - name: Document Governance Wind-Down Plan
+    proposed_identity:
+      verb: Document
+      object: Governance Wind-Down Plan
+      scope: enterprise
+    trigger: A wind-down trigger is identified (regulator alert threshold or constitutional trigger) and a governance wind-down
+      plan needs to be drafted for the controlling regulator or for board approval.
+    inputs: Wind-down trigger; scenarios assessment; resources assessment; governance and internal control mapping; stakeholder
+      register.
+    transformation: A documented plan is produced describing the governance wind-down approach, scenarios, resources, processes,
+      and stakeholder communications.
+    outcome: A wind-down plan is documented, approved by the governing body, and submitted to the controlling regulator where
+      required (FCA WDPG wind-down plan submission).
+    boundary: 'Activity-shaped: the wind-down plan document is a bounded sub-step under the Effect Regulator-Mandated Governance
+      Unwind Process (for regulator-mandated scenarios) or the Operate Governance Sunset Procedures Process (for voluntary
+      scenarios). Not a standalone Process at L1.'
+    actors: Governing body, governance secretary, external counsel, regulator liaison.
+    controls: FCA WDPG plan content requirements; state nonprofit corporation code plan-of-dissolution requirements; AG plan-of-dissolution
+      requirements.
+    evidence:
+      evidence_strength: authoritative
+      sources:
+      - >-
+        FCA WDPG wind-down plan requirements |  |  |
+        claim: A typical wind-down plan includes scenarios, plan, resources assessment, processes.
+        strength: E4
+        reference: https://handbook.fca.org.uk/handbook/wdpg3
+      - >-
+        California AG plan-of-dissolution guidance |  |  |
+        claim: Plan of dissolution is a written description of how the nonprofit intends to distribute assets and address
+          liabilities.
+        strength: E4
+        reference: https://oag.ca.gov/charities/dissolution
+    evaluation:
+      process_reality: Observable as a bounded document-production activity.
+      transformation: 'Yes, but bounded: produces a document, not the wind-down itself.'
+      trigger: 'Yes: regulator alert threshold or constitutional trigger.'
+      outcome: 'Yes: documented plan approved.'
+      boundary: 'Activity-shaped: a sub-step under the candidate 1 Process.'
+      semantic_identity: Document is a bounded verb, not a Process-level transformation.
+      cross_context_stability: Cross-context stable.
+      cross_domain_applicability: 'Cross-domain: any regulated entity that must submit a wind-down plan.'
+      ecf_independence: Document Governance Wind-Down Plan is a sub-step under the regulator-mandated unwind Process.
+      duplication: No Process-level duplication; an Activity under candidate 1.
+      composition: Activity-shaped.
+      capability_distinction: Document production; not a Process-level capability restatement.
+      governance_distinction: Document; the Process owns the regulatory submission.
+      lifecycle_span: Begins at trigger identification and ends at plan approval.
+    scoring:
+      process_reality: 2
+      semantic_stability: 2
+      cross_domain_applicability: 2
+      boundary_clarity: 2
+      evidence_strength: 2
+      total: 3
+      rationale: Activity-shaped; not Process-level. Reclassify as an Activity under candidate 1 (Effect Regulator-Mandated
+        Governance Unwind) once admitted.
+    disposition:
+      type: RECLASSIFY
+      related_contexts: []
+  - name: File Statutory Governance Dissolution Filings
+    proposed_identity:
+      verb: File
+      object: Statutory Governance Dissolution Filings
+      scope: enterprise
+    trigger: A dissolution certificate or articles of dissolution is ready for filing (board resolution passed; plan of dissolution
+      documented; creditor notification complete; AG or FCA acceptance prerequisites met).
+    inputs: Dissolution certificate; plan of dissolution; creditor notification; AG or FCA prerequisites.
+    transformation: A statutory filing is prepared and submitted to the controlling authority (Secretary of State, AG Registry
+      of Charities and Fundraisers, FCA, federal banking regulator, court clerk) recording the entity dissolution.
+    outcome: The statutory filing is accepted; the entity is dissolved in the public record; the AG (or equivalent) closure
+      letter is received.
+    boundary: 'Activity-shaped: a bounded sub-step under the Effect Regulator-Mandated Governance Unwind Process. Not a standalone
+      Process at L1.'
+    actors: Statutory filings agent, governance secretary, AG liaison, FCA liaison.
+    controls: State nonprofit corporation code filing requirements; AG Registry filing requirements; FCA cancellation of permissions
+      requirements; court decree entry requirements.
+    evidence:
+      evidence_strength: authoritative
+      sources:
+      - >-
+        California Corporations Code filing requirements |  |  |
+        claim: Certificate of dissolution filing with Secretary of State and forwarding to AG Registry of Charities and Fundraisers.
+        strength: E4
+        reference: https://oag.ca.gov/charities/dissolution
+      - >-
+        FCA cancellation of permissions |  |  |
+        claim: Cancellation of permissions is the regulatory endpoint of a wind-down plan.
+        strength: E4
+        reference: https://www.fca.org.uk/firms/authorisation/apply/preparing-wind-down-plan
+    evaluation:
+      process_reality: Observable as a bounded statutory filing activity.
+      transformation: 'Yes, but bounded: produces a filing acceptance.'
+      trigger: 'Yes: dissolution certificate ready.'
+      outcome: 'Yes: filing accepted.'
+      boundary: 'Activity-shaped: a sub-step under candidate 1.'
+      semantic_identity: File is a bounded verb; Activity-level.
+      cross_context_stability: Cross-context stable.
+      cross_domain_applicability: 'Cross-domain: any governed entity that must file dissolution paperwork.'
+      ecf_independence: File Statutory Governance Dissolution Filings is a sub-step.
+      duplication: No Process-level duplication; an Activity under candidate 1.
+      composition: Activity-shaped.
+      capability_distinction: Filing production; not a Process-level capability restatement.
+      governance_distinction: Filing; the Process owns the regulator interaction.
+      lifecycle_span: Begins at filing prep and ends at acceptance.
+    scoring:
+      process_reality: 2
+      semantic_stability: 2
+      cross_domain_applicability: 2
+      boundary_clarity: 2
+      evidence_strength: 2
+      total: 3
+      rationale: Activity-shaped; not Process-level. Reclassify as an Activity under candidate 1 once admitted.
+    disposition:
+      type: RECLASSIFY
+      related_contexts: []
+  context_evaluation:
+    concerns_identified: true
+    candidates_considered: true
+    adjacent_contexts_reviewed: true
+    existing_processes_searched: true
+    lifecycle_spanning_considered: true
+    capability_distinctions_tested: true
+    pattern_candidates_considered: true
+    evidence_assessed: true
+    process_empty: false
+  rationale:
+    included: 'Regulator or court mandates governance wind-down under statutory authority: FCA WDPG (UK), California Corporations
+      Code 5033-5034, 6610, 8610, 9680 (US nonprofit dissolution), IRS 501(c)(3) federal tax-exempt dissolution obligations,
+      state attorney-general charity oversight, federal banking regulator cease-and-desist orders, court receivership decrees.
+      Board resolution, plan of dissolution, statutory filings, retained-records custodianship, dissolution certification.'
+    excluded: 'Voluntary governance sunset absent regulator or court mandate (CR-BP-63 disposition: Improve coordinate). Asset
+      retirement and decommissioning (EnablementAndOperations x Retire; CR-BP-66). Counterparty and agent relationship closure
+      (PartyAndRelationship x Retire; CR-BP-67). Product line retirement (ProductAndValue x Retire; CR-BP-67 adjacent). Workforce
+      wind-down (AgencyAndOrganization x Retire; CR-BP-73). Regulated entity run-off (FinanceAndAccounting x Retire; CR-BP-75).'
+    unresolved: 'Future CR: re-evaluate candidate 2 (Operate Governance Sunset Procedures) once the Improve coordinate charter
+      is extended to include voluntary governance sunset as a candidate at the Retire coordinate. Future CR: surface any Activity-level
+      decomposition under candidate 1 for CR-BP-7x+ (Document Governance Wind-Down Plan, File Statutory Governance Dissolution
+      Filings, plus retained-records custodianship, board-quorum management, and policy sunset procedures).'
+  id: dea:discovery-governance-and-existence-retire-escape
