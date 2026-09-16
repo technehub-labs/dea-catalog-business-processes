@@ -15,12 +15,13 @@ stages:
 - Improve
 - Retire
 ratification:
-  version: 13
-  cr: CR-BP-81
+  version: 14
+  cr: CR-BP-82
   ratified_at: '2026-09-16'
-  supersedes: version 12 (CR-BP-78, ratified 2026-09-16)
-  ratified_accepted: 44
-  backlog_deferred: 5
+  supersedes: version 13 (CR-BP-81, ratified 2026-09-16)
+  ratified_accepted: 45
+  backlog_deferred: 4
+  v13_to_v14_note: 'EnablementAndOperations x Activate (EO.Activate) cell flips from backlog-deferred to ratified-accepted/landed per CR-BP-80 escape-clause discovery (10/10 ADMIT-CANONICAL) and CR-BP-82 admission tranche. EO.Activate now hosts dea:pc-oe-activate (Process Context) + dea:group-regulated-operations-activation (Process Group) + dea:process-activate-operations-capability (Business Process). Remaining 4 backlog-deferred cells: SD.Activate (CR-BP-86 pending), SD.Retire (DEFER documented without admission), FA.Activate (CR-BP-83 pending), plus 1 follow-on per CR-BP-19 register methodology.'
   v12_to_v13_note: 'AgencyAndOrganization x Activate cell reverses from
     backlog-deferred to ratified-accepted/landed on CR-BP-80 escape-clause
     discovery evidence under the CR-BP-62 lifecycle process-discovery
@@ -1114,23 +1115,48 @@ register:
       process_context: dea:pc-oe-activate
       l1_candidates:
       - Operations Activation
+      - Regulated Operations Activation
       l2_candidates:
       - Activate operations line
       - Activate delivery routes
-      in_scope: Cutover of operations and delivery
+      - Activate regulator-authorized operations capability
+      in_scope: Cutover of operations and delivery; regulator-authorized
+        operations-capability activation (AOC, PSD2 / MiCA payment-institution
+        authorization, GMP, FAA Part 119, ORR / ERA rail safety case, nuclear
+        operations authorization)
       out_of_scope:
       - Customer onboarding (party-relationship)
+      - Non-regulated operations-capability activation (internal-product go-live
+        without regulator's authorization) - RECORD-PATTERN or MERGE per CR-BP-63
       evidence:
       - ITIL 4 Service Transition
       - SCOR Plan
-      disposition: backlog-deferred
-      ratified_at: '2026-09-07'
-      ratified_by: CR-BP-19
+      - CR-BP-80 escape-clause discovery (enablement-and-operations-activate-escape)
+        scoring 10/10 ADMIT-CANONICAL for dea:process-activate-operations-capability
+      disposition: ratified-accepted
+      ratified_at: '2026-09-16'
+      ratified_by: CR-BP-82
+      landed_at: '2026-09-16'
+      landed_by: CR-BP-82
+      applied_pr: TBD
+      admission_note: |
+        Register cell flips from backlog-deferred to ratified-accepted/landed
+        per CR-BP-80 escape-clause discovery (10/10 ADMIT-CANONICAL) and
+        CR-BP-82 admission tranche. Deferral rationale superseded by
+        regulator-issued authorization or certification regime creating a
+        distinct activation step with continuing-supervisor notification,
+        operations manuals, and operational controls live on the regulated
+        operations record.
+      carry_forward: |
+        Prior v2 deferral_reason content (Activate and Retire as lifecycle
+        transition stages) retained as audit-trail context per CR-BP-19
+        register methodology. The supersession is documented in the
+        admission_note.
       deferral_reason: Activate and Retire are lifecycle transition stages, not stable
         Process Group operating scopes (register-wide deferred_rationale). v1 ratified
         this cell; normalized to deferred in v2. Operations cutover is a sub-step
         of the receiving Operate group.
-      audit_status: backlog-deferred
+      audit_status: landed
     Operate:
       process_context: dea:pc-oe-operate
       l1_candidates:

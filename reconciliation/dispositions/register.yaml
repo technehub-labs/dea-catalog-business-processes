@@ -2512,3 +2512,22 @@ dispositions:
   - CR-BP-80
   audit_status: ratified-accepted
   note: 'CR-BP-80 escape-clause discovery evaluated the cell against 2024-2026 licensed-workforce regulation; the cell verbatim escape rationale ("workforce activation is often an attribute of build") is superseded by regulator-controlled scope, fitness-and-propriety attestation, supervised-training completion, and continuing-supervisor notification.'
+- record_id: dea:process-activate-operations-capability
+  ecf_context:
+    domain: EnablementAndOperations
+    stage: Activate
+    ecf_identifier: ecf:enablementAndOperations.activate
+  disposition: RETAIN
+  rationale: |
+    The process is canonically admitted under the CR-BP-62 escape-clause
+    method on the basis of CR-BP-80 escape-clause discovery
+    (10/10 ADMIT-CANONICAL recommendation). The carrier CR-BP-82
+    lands the PC + PG + BP stack and registers the admission. The
+    escape evidence is multi-source authoritative regulatory practice
+    across aviation (EASA / FAA AOC; FAA Part 119), banking payments
+    (PSD2 / ECB / PRA authorization under PSD2 Articles 11 and 28),
+    pharmaceuticals (EMA / FDA / MHRA GMP), crypto-assets (MiCA
+    Article 59), rail (ORR / ERA safety case), and nuclear operations.
+  related_records:
+    - CR-BP-80
+    - CR-BP-82

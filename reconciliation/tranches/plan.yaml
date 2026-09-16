@@ -100,6 +100,7 @@ summary:
     fa-ret.75: 1
     ge-ret.78: 1
     ao-act.81: 1
+    oe-act.82: 1
 tranches:
 - tranche_id: cd-b
   context_ref: dea:pc-pr-b
@@ -1298,6 +1299,37 @@ tranches:
     that supersede the deferral rationale. The cell reverses from
     backlog-deferred to ratified-accepted/landed in register v13.
     L3 decomposition follows as CR-BP-87 (next slice).
+- tranche_id: oe-act.82
+  context_ref: dea:pc-oe-activate
+  context_name: enablement-and-operations / activate
+  group_ref: dea:group-regulated-operations-activation
+  cell: EnablementAndOperations.Activate
+  records:
+  - dea:process-activate-operations-capability
+  status: applied
+  applied_by: CR-BP-82
+  applied_pr: 'PENDING'
+  rationale: >-
+    Sixth discovery-driven admission under the CR-BP-62 escape-clause
+    method (CR-BP-80 discovery exercise; CR-BP-82 admission tranche).
+    Activate Operations Capability scored 10/10 with an
+    ADMIT-CANONICAL recommendation at EnablementAndOperations x
+    Activate on the register v12 cell verbatim escape rationale
+    (operations-capability activation is often an attribute of
+    build or steady-state operation). The 2024-2026
+    regulator-issued authorization landscape -- EASA / FAA Air
+    Operator Certificate (Part-OR / Part 119); PSD2 Articles 11
+    and 28 payment-institution authorization; EMA / FDA / MHRA
+    GMP certification; MiCA Article 59 crypto-asset-service-
+    provider authorization; ORR / ERA rail safety-case; nuclear
+    operations authorization -- establishes regulator-issued
+    authorization or certification as a distinct activation step
+    with continuing-supervisor notification, operations manuals,
+    and operational controls live on the regulated operations
+    record, distinct from capability build and from steady-state
+    operation. The cell reverses from backlog-deferred to
+    ratified-accepted/landed in register v14. L3 decomposition
+    follows as CR-BP-87 (next slice).
 cross_tranche_dependencies: none
 review_checkpoints:
   cd-b: 1
@@ -1373,3 +1405,4 @@ review_checkpoints:
   fa-ret.75: 1
   ge-ret.78: 1
   ao-act.81: 1
+  oe-act.82: 1

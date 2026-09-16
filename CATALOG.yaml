@@ -2,10 +2,10 @@ catalog:
   abbreviation: BP
   counts:
     candidates: 0
-    canonical: 717
-    entities: 718
-    open_change_requests: 93
-    research_files: 319
+    canonical: 719
+    entities: 720
+    open_change_requests: 94
+    research_files: 321
     retired: 1
   cross_cutting:
     change_requests: change-requests/
@@ -6313,6 +6313,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:group-regulated-operations-activation
+    last_modified: '2026-09-16'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:group-regulated-operations-activation/dea:group-regulated-operations-activation.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: ProcessGroup
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:group-regulated-run-off
     last_modified: '2026-09-15'
     lifecycle_status: candidate
@@ -6438,6 +6449,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-acquire-technology-assets/dea:process-acquire-technology-assets.yaml
+    research_count: 2
+    retired_count: 0
+    state: canonical
+    type: Process
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:process-activate-operations-capability
+    last_modified: '2026-09-16'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:process-activate-operations-capability/dea:process-activate-operations-capability.yaml
     research_count: 2
     retired_count: 0
     state: canonical
@@ -9661,6 +9683,9 @@ catalog:
   - entity_id: dea:group-regulated-onboarding
     files: []
     path: entities/v1-alpha/dea:group-regulated-onboarding/research/
+  - entity_id: dea:group-regulated-operations-activation
+    files: []
+    path: entities/v1-alpha/dea:group-regulated-operations-activation/research/
   - entity_id: dea:group-regulated-run-off
     files: []
     path: entities/v1-alpha/dea:group-regulated-run-off/research/
@@ -9701,6 +9726,11 @@ catalog:
     - README.md
     - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-acquire-technology-assets/research/
+  - entity_id: dea:process-activate-operations-capability
+    files:
+    - README.md
+    - l2-admission-deposition.yaml
+    path: entities/v1-alpha/dea:process-activate-operations-capability/research/
   - entity_id: dea:process-adapt-strategic-direction
     files:
     - README.md
