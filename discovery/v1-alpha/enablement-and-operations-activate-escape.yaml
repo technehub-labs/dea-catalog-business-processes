@@ -1,0 +1,92 @@
+discovery:
+  id: dea:discovery-enablement-and-operations-activate-escape
+  ecf_context:
+    domain: EnablementAndOperations
+    lifecycle_stage: Activate
+  candidates:
+  - name: Activate Operations Capability
+    proposed_identity:
+      verb: Activate
+      object: Operations Capability
+      scope: enterprise
+    trigger: >
+      An operations capability requires formal regulator-issued authorization or certification before it may enter live service (e.g. aviation Air Operator Certificate (AOC) issuance by EASA or FAA; bank payments-license activation under PSD2 / ECB / PRA; manufacturing GMP certification by EMA / FDA / MHRA; telco operations-license activation; energy utility operational authority; rail safety-case authorization by ORR / ERA; nuclear operations authorization; payments-issuer authorization under PSD2 Article 11).
+    inputs: >
+      Regulator-issued authorization or certification; operations capability description; readiness-assessment evidence; supervised-test records; operational-control framework; continuing-supervisor notification; operations manuals and runbooks; service-level commitments to customers or counterparties.
+    transformation: >
+      Move the operations capability from regulator-authorized-but-not-live to regulator-authorized-and-live, with the supervisor's continuing oversight activated and operational controls live on the regulated operations record.
+    outcome: >
+      The operations capability is formally activated with the regulator's authorization on record, the operations manuals and runbooks live, operational controls (incident management, capacity, security, compliance) live, and the supervisor's continuing-oversight relationship active.
+    boundary: >
+      Begins at the regulator's authorization issuance; ends at the capability being live on the regulated operations record. Capability conception, design, and build are upstream (Conceive/Design/Build). Steady-state operation, performance review, and decommission are downstream (Operate/Improve/Retire).
+    actors: >
+      Chief operating officer; head of operations; chief compliance officer; the regulator's authorization supervisor; operations engineers; security and incident management; legal; internal-audit.
+    controls: >
+      Regulator-issued authorization or certification; readiness-assessment evidence; supervised-test records; operations manuals and runbooks; operational-control framework (incident, capacity, security, compliance); continuing-supervisor notification.
+    evidence:
+      sources:
+      - "EU Regulation 2018/1139 (EASA Basic Regulation) and EASA Part-OR / Part-ARO: Air Operator Certificate (AOC) issuance authorizes commercial air operations; AOC issuance is the regulator-issued activation step"
+      - "EU PSD2 (Directive 2015/2366) Articles 11 and 28: payment-institution and account-information-s issuance; authorization under PSD2 is a precondition to live payment-services operation"
+      - "EU GMP EudraLex Volume 4 and US FDA 21 CFR Parts 210-211: manufacturing GMP certification by EMA / FDA / MHRA is the regulator-issued authorization for pharmaceutical manufacturing"
+      - "US FAA 14 CFR Part 119 and EASA Part-OR: AOC certification is the regulator's authorization for live commercial aviation operations"
+      - "EU MiCA (Regulation 2023/1114) Article 59 and UK FSMA authorization regimes: crypto-asset-service-provider and payment-institution authorization under the regulator's continuing supervision"
+      - "Manufacturing, telecoms, energy, and rail practice universally operate operations-capability activation as a distinct, controlled, regulator-issued authorization step separate from steady-state operation"
+      evidence_strength: authoritative
+    evaluation:
+      process_reality: >
+        Established and regulator-mandated across regulated sectors; performed by operations and compliance functions jointly worldwide.
+      transformation: >
+        Regulator-authorized-but-not-live to regulator-authorized-and-live; a real state transformation with material control work.
+      trigger: >
+        Regulator's authorization issuance; observable and mandated.
+      outcome: >
+        Live operations capability with supervisor's continuing-oversight active; distinguishable and evidenced by the authorization record.
+      boundary: >
+        Strong: authorization issuance to live operations; conceive/design/build upstream; operate/improve/retire downstream.
+      semantic_identity: >
+        Verb + object identity independent of the ECF coordinate; recognizable across sectors as regulated operations-capability activation.
+      cross_context_stability: >
+        The transformation recurs in aviation, banking payments, pharmaceutical manufacturing, telecoms, energy, rail, and nuclear; identity stable, implementation varies per sector.
+      cross_domain_applicability: >
+        Concentrated in sectors with regulator-issued operational authorizations; not universal across all enterprises.
+      ecf_independence: >
+        "Activate Operations Capability" names recognizable work without reference to the Activate label.
+      duplication: >
+        No existing canonical BP covers regulator-authorized operations-capability activation; nearest neighbors (cut-over under EO/Build, run under EO/Operate) exclude the regulator-issued authorization and continuing-oversight activation.
+      composition: >
+        Business Process level; constituent readiness assessment, supervised-test verification, operations-manual release, continuing-supervisor notification, and operational-control launch work decomposes to Activities at L3.
+      capability_distinction: >
+        A transformation with trigger and outcome, not a capability restatement.
+      governance_distinction: >
+        Not a policy; a governed workflow whose controls are regulatory obligations.
+      lifecycle_span: >
+        Begins and ends within Activate; steady-state operation tracked downstream, not duplicated.
+    scoring:
+      process_reality: 2
+      semantic_stability: 2
+      cross_domain_applicability: 2
+      boundary_clarity: 2
+      evidence_strength: 2
+      total: 10
+      rationale: >
+        Authoritative multi-source regulatory evidence; universal sector practice across aviation, banking payments, pharmaceuticals, telecoms, rail, and nuclear; strong boundary against Build/Operate/Retire; cross-domain breadth covers the majority of regulated-sectors with operations-authorization regimes. Recommend ADMIT-CANONICAL.
+    disposition:
+      type: ADMIT-CANONICAL
+      canonical_process_ref: dea:process-activate-operations-capability (proposed)
+  context_evaluation:
+    concerns_identified: true
+    candidates_considered: true
+    adjacent_contexts_reviewed: true
+    existing_processes_searched: true
+    lifecycle_spanning_considered: true
+    capability_distinctions_tested: true
+    pattern_candidates_considered: true
+    evidence_assessed: true
+    process_empty: false
+  rationale:
+    included: >
+      Targeted escape-clause evaluation of the EnablementAndOperations x Activate register cell (register v12, backlog-deferred). The discovery finds that regulator-authorized operations-capability activation (AOC, PSD2 authorization, GMP certification, MiCA authorization, FAA Part 119, EU PSD2 Articles 11 and 28) is a legally-mandated, boundary-clear, evidence-authoritative transformation distinct from steady-state operation, scoring 10/10 and recommended ADMIT-CANONICAL as dea:process-activate-operations-capability.
+    excluded: >
+      Non-regulated operations-capability activation (internal-product go-live without regulator's authorization) remains RECORD-PATTERN or MERGE per the CR-BP-63 baseline; no non-regulated candidate is promoted by the escape evidence.
+    unresolved: >
+      Admission of the recommended candidate is a separate governed step (admission tranche with PC + PG + BP stack and register flip); this discovery record recommends and does not admit.

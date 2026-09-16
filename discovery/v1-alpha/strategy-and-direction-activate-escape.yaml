@@ -1,0 +1,92 @@
+discovery:
+  id: dea:discovery-strategy-and-direction-activate-escape
+  ecf_context:
+    domain: StrategyAndDirection
+    lifecycle_stage: Activate
+  candidates:
+  - name: Institutionalize Regulated Strategic Plan
+    proposed_identity:
+      verb: Institutionalize
+      object: Regulated Strategic Plan
+      scope: enterprise
+    trigger: >
+      A regulated entity's strategic plan is approved by its board and must be filed with or activated under the supervision of a competent regulator before the plan takes effect (e.g. Basel ICAAP/SAA approval by the PRA; NHS trust 5-year strategy approval by NHS England and the Department of Health; utilities integrated resource plan / strategic plan filing before state public utility commissions; bank recovery and resolution plan activation under the FDIC or SRB).
+    inputs: >
+      Board-approved strategic plan; regulator-mandated filing format and content; supervisor's review schedule; compliance evidence; operational readiness assessment; communications plan; KPIs and monitoring framework.
+    transformation: >
+      Move the strategic plan from board-approved to regulator-acknowledged and activated for operational use, with supervisor's review completed, filing made, and monitoring framework confirmed as live.
+    outcome: >
+      The regulated strategic plan is formally activated with supervisor's acknowledgement on record, the filing receipt preserved, the operational monitoring framework live, and the plan's obligations binding on the regulated entity under the regulator's continuing supervision.
+    boundary: >
+      Begins at board approval of the strategic plan; ends at supervisor's acknowledgement and the filing receipt being preserved in the entity's regulated-records system. Strategic-plan conception, design, and build are upstream (Conceive/Design/Build). Steady-state execution, performance review, and any subsequent plan renewal are downstream (Operate/Improve/Retire).
+    actors: >
+      Board; chief strategy officer; chief compliance officer; chief risk officer; relationship owner at the supervisor; communications; internal-audit; legal.
+    controls: >
+      Regulator-mandated filing format and content; supervisor's review criteria; board-resolution effective-date mechanics; regulated-records retention policy; disclosure controls; regulated-entity approval authority framework.
+    evidence:
+      sources:
+      - "Basel Committee BCBS 425 / BCBS 425a: Internal Capital Adequacy Assessment Process (ICAAP) and Supervisory Review and Evaluation Process (SRA / SREP); strategic-plan approval and activation is a supervisor-acknowledged transformation in regulated banking"
+      - "Bank Recovery and Resolution Directive (BRRD, 2014/59/EU) Article 5: recovery-plan activation under SRB / national-resolution-authority supervision; plan activation is a regulator-controlled transformation"
+      - "UK NHS England / Department of Health and Social Care: trust 5-year strategy approval process; strategic plans must be approved before the trust may operate against them"
+      - "US state Public Utility Commissions (PUC): integrated resource plan and strategic-plan filings required before utilities may activate capital and operational plans; PUC approval is a precondition to plan activation"
+      - "TOGAF ADM Phase G (Implementation Governance) plus the regulated-entity overlay: phase G establishes architecture-contract approval; for regulated entities the architecture contract is the strategic plan activated under supervisor's acknowledgement"
+      - "Banking practice universally operates strategic-plan filing and supervisor-acknowledgement as a distinct, controlled, repeatable transformation separate from steady-state strategy execution"
+      evidence_strength: authoritative
+    evaluation:
+      process_reality: >
+        Established and regulator-mandated across regulated sectors; performed by strategy and compliance functions jointly worldwide.
+      transformation: >
+        Board-approved to supervisor-acknowledged and activated; a real state transformation with material control work.
+      trigger: >
+        Board approval of a regulated strategic plan; observable and mandated.
+      outcome: >
+        Supervisor-acknowledged activated plan with binding regulated obligations; distinguishable and evidenced by the filing receipt.
+      boundary: >
+        Strong: board approval to supervisor's acknowledgement and filing receipt; conceive/design/build upstream; execute/renew downstream.
+      semantic_identity: >
+        Verb + object identity independent of the ECF coordinate; recognizable across sectors as regulated strategic-plan institutionalization.
+      cross_context_stability: >
+        The transformation recurs in regulated banking, regulated healthcare, regulated utilities, and any sector with a supervisor-acknowledged strategic plan; identity stable, implementation varies.
+      cross_domain_applicability: >
+        Concentrated in regulated sectors with supervised strategic-plan regimes; not universal across all enterprises.
+      ecf_independence: >
+        "Institutionalize Regulated Strategic Plan" names recognizable work without reference to the Activate label.
+      duplication: >
+        No existing canonical BP covers supervisor-acknowledged strategic-plan activation; nearest neighbors (strategic execution under Operate, strategic renewal under Retire) exclude the supervisor-controlled filing and acknowledgement.
+      composition: >
+        Business Process level; constituent filing, supervisor's review, acknowledgement, and monitoring-launch work decomposes to Activities at L3.
+      capability_distinction: >
+        A transformation with trigger and outcome, not a capability restatement.
+      governance_distinction: >
+        Not a policy or decision; a governed workflow whose controls are regulatory obligations.
+      lifecycle_span: >
+        Begins and ends within Activate; downstream strategy execution tracked, not duplicated.
+    scoring:
+      process_reality: 2
+      semantic_stability: 2
+      cross_domain_applicability: 1
+      boundary_clarity: 2
+      evidence_strength: 2
+      total: 9
+      rationale: >
+        Authoritative multi-source regulatory evidence and universal sector practice in supervised industries; strong boundary against Operate and Retire; cross-domain breadth limited to regulated sectors, holding the total at 9.
+    disposition:
+      type: ADMIT-CANONICAL
+      canonical_process_ref: dea:process-institutionalize-regulated-strategic-plan (proposed)
+  context_evaluation:
+    concerns_identified: true
+    candidates_considered: true
+    adjacent_contexts_reviewed: true
+    existing_processes_searched: true
+    lifecycle_spanning_considered: true
+    capability_distinctions_tested: true
+    pattern_candidates_considered: true
+    evidence_assessed: true
+    process_empty: false
+  rationale:
+    included: >
+      Targeted escape-clause evaluation of the StrategyAndDirection x Activate register cell (register v12, backlog-deferred). The cell's escape condition reads "defer until a strategic plan rollout needs distinct group-level work beyond steering -- e.g. multi-business-unit reorg, divestiture, M&A integration". The discovery finds that condition met in the regulated-sector context: supervisor-acknowledged strategic-plan activation (BCBS ICAAP/SAA, BRRD recovery-plan, NHS trust 5-year strategy, PUC strategic-plan filing) is a legally-mandated, boundary-clear, evidence-authoritative transformation distinct from steady-state strategy execution, scoring 9/10 and recommended ADMIT-CANONICAL as dea:process-institutionalize-regulated-strategic-plan. This record re-evaluates the cell; the CR-BP-63 baseline record (dea:discovery-strategy-and-direction-activate) remains the evidence base for the cell's non-regulated candidates.
+    excluded: >
+      Non-regulated strategic-plan launch (single-business-unit rollout without supervisor's review) remains RECORD-PATTERN or MERGE per the CR-BP-63 baseline; no non-regulated candidate is promoted by the escape evidence, which is specific to the regulated context.
+    unresolved: >
+      Admission of the recommended candidate is a separate governed step (admission tranche with PC + PG + BP stack and register flip); this discovery record recommends and does not admit.

@@ -1,0 +1,93 @@
+discovery:
+  id: dea:discovery-strategy-and-direction-retire-escape
+  ecf_context:
+    domain: StrategyAndDirection
+    lifecycle_stage: Retire
+  candidates:
+  - name: Sunset Regulated Strategic Plan
+    proposed_identity:
+      verb: Sunset
+      object: Regulated Strategic Plan
+      scope: enterprise
+    trigger: >
+      A regulated strategic plan must be formally sunset because a competent regulator has required its retirement (e.g. failed stress test triggers plan replacement; bank recovery-plan rejection by the SRB; FDIC directive to retire an inadequate resolution plan; state PUC retraction of an approved strategic plan; NHS England directive to retire a non-viable 5-year strategy).
+    inputs: >
+      Regulator directive or rejection notice; superseded or replaced plan; filings register; communications plan; regulator-acknowledged sunset record; retained-records plan; affected business units.
+    transformation: >
+      Move the regulated strategic plan from active to sunset under regulator's supervision, with the replacement plan's status preserved and the retired plan's records retained per the regulated-entity retention policy.
+    outcome: >
+      The regulated strategic plan is formally sunset with the regulator's acknowledgement on record, replacement plans identified, and retained records preserved for the statutory retention period.
+    boundary: >
+      Begins at the regulator's directive or rejection; ends at the regulator's acknowledgement of the sunset record and the retained records being preserved. Strategic-plan conception, design, build, and execution are explicitly out of scope upstream. The replacement plan's activation is a separate process under Activate.
+    actors: >
+      Board; chief strategy officer; chief compliance officer; chief risk officer; relationship owner at the supervisor; communications; internal-audit; legal; records-management.
+    controls: >
+      Regulator directive or rejection record; superseded-plan register; filings register; communications plan; regulator-acknowledged sunset record; retained-records plan; affected business units.
+    evidence:
+      sources:
+      - "Federal Deposit Insurance Corporation Improvement Act (FDICIA) Section 131: prompt-corrective-action and recovery-plan replacement when a plan is rejected"
+      - "Single Resolution Board (SRB) decisions: SRB may direct a bank to revise and resubmit its recovery plan or to sunset a non-viable strategy"
+      - "Bank of England PRA SS9/17 (recovery and resolution planning): withdrawal and sunset of an inadequate plan under PRA direction"
+      - "US state PUC orders on strategic-plan retraction: state PUC may direct utility to retire a strategic plan found non-compliant"
+      - "UK NHS England trust failure regime: trust 5-year strategy may be formally retired under regulator's direction"
+      - "General practice: regulated-entities facing plan rejection operate supervisor-directed sunset as a controlled, repeatable work stream"
+      evidence_strength: moderate
+    evaluation:
+      process_reality: >
+        Established in regulated banking and utilities when a strategic plan is rejected; performed by strategy and compliance functions jointly but at lower volume than the activation counterpart.
+      transformation: >
+        Active regulator-controlled plan to supervisor-acknowledged sunset; real and distinct, but lower-volume and less well-codified than the activation case.
+      trigger: >
+        Regulator's directive or rejection; observable and mandated.
+      outcome: >
+        Supervisor-acknowledged sunset with replacement plan identified; distinguishable.
+      boundary: >
+        Workable: directive to acknowledgement; replacement-plan activation explicitly excluded to Activate.
+      semantic_identity: >
+        Verb + object identity independent of the ECF coordinate; recognizable as regulated strategic-plan sunset.
+      cross_context_stability: >
+        Stable in regulated banking; thinner evidence in regulated healthcare and utilities; identity recognizable but volume-lower.
+      cross_domain_applicability: >
+        Concentrated in regulated sectors; volume and codification thinner than the activation counterpart.
+      ecf_independence: >
+        "Sunset Regulated Strategic Plan" names recognizable work without reference to the Retire label.
+      duplication: >
+        No existing canonical BP covers supervisor-directed strategic-plan sunset; nearest neighbor (strategic renewal under Retire) is the non-regulated pattern and excludes the supervisor-directed filing and acknowledgement.
+      composition: >
+        Business Process level; constituent directive receipt, supervisor's review, acknowledgement, retained-records work decomposes to Activities at L3.
+      capability_distinction: >
+        A transformation, not a capability restatement.
+      governance_distinction: >
+        Not a policy; a governed workflow whose controls are regulatory obligations.
+      lifecycle_span: >
+        Begins and ends within Retire; replacement-plan activation handled by the Activate process, not duplicated.
+    scoring:
+      process_reality: 1
+      semantic_stability: 2
+      cross_domain_applicability: 1
+      boundary_clarity: 1
+      evidence_strength: 1
+      total: 6
+      rationale: >
+        Real but lower-volume work in regulated sectors; the supervisor-directed case is well-evidenced in banking (FDICIA, BRRD, PRA SS9/17) but the cross-domain footprint is thinner than the activation counterpart. Volume and codification gap is the main weakness; the identity holds. Defer to a future exercise with broader cross-sector evidence rather than admit on weaker evidence.
+    disposition:
+      type: DEFER
+      related_contexts:
+      - StrategyAndDirection/Activate
+  context_evaluation:
+    concerns_identified: true
+    candidates_considered: true
+    adjacent_contexts_reviewed: true
+    existing_processes_searched: true
+    lifecycle_spanning_considered: true
+    capability_distinctions_tested: true
+    pattern_candidates_considered: true
+    evidence_assessed: true
+    process_empty: false
+  rationale:
+    included: >
+      Targeted escape-clause evaluation of the StrategyAndDirection x Retire register cell (register v12, backlog-deferred). The discovery evaluates supervisor-directed strategic-plan sunset (FDICIA, BRRD, PRA SS9/17, state PUC retraction, NHS England failure regime) and finds real but lower-volume work. The cross-sector evidence is bank-heavy; the cross-domain footprint is thinner than the activation counterpart.
+    excluded: >
+      No candidate reaches the admission threshold. Strategic-plan retirement without a regulator directive remains RECORD-PATTERN per the CR-BP-63 baseline.
+    unresolved: >
+      Defer to a future exercise with broader cross-sector evidence (utilities, healthcare); the cell remains process-empty for canonical purposes pending further evidence. The cross-link to the Activate cell is preserved: a regulated retirement event feeds the replacement-plan activation under the SD/Activate BP.

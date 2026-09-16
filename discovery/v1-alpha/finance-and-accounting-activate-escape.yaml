@@ -1,0 +1,92 @@
+discovery:
+  id: dea:discovery-finance-and-accounting-activate-escape
+  ecf_context:
+    domain: FinanceAndAccounting
+    lifecycle_stage: Activate
+  candidates:
+  - name: Activate Billing Capability
+    proposed_identity:
+      verb: Activate
+      object: Billing Capability
+      scope: enterprise
+    trigger: >
+      A billing or revenue-recognition capability requires formal regulator-acknowledged activation before live invoicing or revenue recognition may commence (e.g. insurance statutory-accounting framework activation under state insurance department supervision; IFRS 17 transition to active for insurers; bank treasury capability activation under capital-rules supervision; utility rate-effective billing activation under state PUC approval; payments-issuer settlement-account activation under PSD2 / Federal Reserve / ECB).
+    inputs: >
+      Regulator-acknowledged accounting or rate framework; billing-capability description; readiness-assessment evidence; supervised-test records; tariff or pricing approval; operational-control framework; continuing-supervisor notification; first-invoice or first-recognition runbook.
+    transformation: >
+      Move the billing capability from regulator-acknowledged-but-not-live to regulator-acknowledged-and-live, with the supervisor's continuing oversight activated and operational controls live on the regulated billing record.
+    outcome: >
+      The billing capability is formally activated with the regulator's acknowledgement on record, the tariff or pricing approval preserved, operational controls (segregation of duties, audit trail, reconciliation) live, and the supervisor's continuing-oversight relationship active.
+    boundary: >
+      Begins at the regulator's framework acknowledgement or pricing approval; ends at the capability being live on the regulated billing record. Capability conception, design, and build are upstream (Conceive/Design/Build). Steady-state billing, revenue-recognition, margin analysis, and write-off are downstream (Operate/Improve/Retire).
+    actors: >
+      Chief financial officer; controller; chief compliance officer; the regulator's accounting or rate supervisor; billing operations; treasury; tax; legal; internal-audit.
+    controls: >
+      Regulator-acknowledged accounting or rate framework; tariff or pricing approval; readiness-assessment evidence; supervised-test records; first-invoice or first-recognition runbook; operational-control framework (segregation of duties, audit trail, reconciliation); continuing-supervisor notification.
+    evidence:
+      sources:
+      - "IFRS 17 Insurance Contracts: IFRS 17 transition requires a formal activation step where the insurer's accounting framework moves from previous GAAP / IFRS 4 to IFRS 17, with regulator acknowledgement"
+      - "US NAIC Accounting Practices and Procedures Manual (AP&P) and state insurance department supervision: statutory-accounting framework activation under state regulator supervision"
+      - "EU Solvency II Directive 2009/138/EC and EIOPA guidance: insurance billing and reserving capability activation under Solvency II supervision"
+      - "US state Public Utility Commissions (PUC): rate-effective billing activation requires PUC approval of the rate case before utility may bill at the approved rate"
+      - "EU PSD2 (Directive 2015/2366) and Federal Reserve Regulation E / ECB: payment-issuer settlement-account activation under regulator-acknowledged framework"
+      - "Banking and insurance practice universally operate billing-capability activation as a distinct, controlled, regulator-acknowledged transformation separate from steady-state billing and revenue recognition"
+      evidence_strength: authoritative
+    evaluation:
+      process_reality: >
+        Established and regulator-mandated across regulated sectors; performed by finance and compliance functions jointly worldwide.
+      transformation: >
+        Regulator-acknowledged-but-not-live to regulator-acknowledged-and-live; a real state transformation with material control work.
+      trigger: >
+        Regulator's framework acknowledgement or pricing approval; observable and mandated.
+      outcome: >
+        Live billing capability with supervisor's continuing-oversight active; distinguishable and evidenced by the framework acknowledgement and pricing approval.
+      boundary: >
+        Strong: framework acknowledgement to live billing; conceive/design/build upstream; operate/improve/retire downstream.
+      semantic_identity: >
+        Verb + object identity independent of the ECF coordinate; recognizable across sectors as regulated billing-capability activation.
+      cross_context_stability: >
+        The transformation recurs in insurance, banking, utilities, and payments; identity stable, implementation varies per sector.
+      cross_domain_applicability: >
+        Concentrated in regulated sectors with supervised billing or accounting regimes; not universal across all enterprises.
+      ecf_independence: >
+        "Activate Billing Capability" names recognizable work without reference to the Activate label.
+      duplication: >
+        No existing canonical BP covers regulator-acknowledged billing-capability activation; nearest neighbors (revenue-and-cost under FA/Operate, write-off under FA/Retire) exclude the regulator-acknowledged framework activation and continuing-oversight launch.
+      composition: >
+        Business Process level; constituent framework acknowledgement, pricing approval, readiness assessment, first-invoice runbook, operational-control launch work decomposes to Activities at L3.
+      capability_distinction: >
+        A transformation with trigger and outcome, not a capability restatement.
+      governance_distinction: >
+        Not a policy; a governed workflow whose controls are regulatory obligations.
+      lifecycle_span: >
+        Begins and ends within Activate; steady-state billing and revenue recognition tracked downstream, not duplicated.
+    scoring:
+      process_reality: 2
+      semantic_stability: 2
+      cross_domain_applicability: 2
+      boundary_clarity: 2
+      evidence_strength: 2
+      total: 10
+      rationale: >
+        Authoritative multi-source regulatory evidence; universal sector practice across insurance (IFRS 17, Solvency II, NAIC), banking (PSD2, Reg E), and utilities (PUC rate cases); strong boundary against Operate and Retire; cross-domain breadth covers the major regulated sectors with billing or accounting-authorization regimes. Recommend ADMIT-CANONICAL.
+    disposition:
+      type: ADMIT-CANONICAL
+      canonical_process_ref: dea:process-activate-billing-capability (proposed)
+  context_evaluation:
+    concerns_identified: true
+    candidates_considered: true
+    adjacent_contexts_reviewed: true
+    existing_processes_searched: true
+    lifecycle_spanning_considered: true
+    capability_distinctions_tested: true
+    pattern_candidates_considered: true
+    evidence_assessed: true
+    process_empty: false
+  rationale:
+    included: >
+      Targeted escape-clause evaluation of the FinanceAndAccounting x Activate register cell (register v12, backlog-deferred). The discovery finds that regulator-acknowledged billing-capability activation (IFRS 17 transition, NAIC statutory-accounting activation, Solvency II billing activation, PUC rate-effective billing activation, PSD2 settlement-account activation) is a legally-mandated, boundary-clear, evidence-authoritative transformation distinct from steady-state billing and revenue recognition, scoring 10/10 and recommended ADMIT-CANONICAL as dea:process-activate-billing-capability.
+    excluded: >
+      Non-regulated billing-capability activation (internal billing-system go-live without regulator's framework acknowledgement) remains RECORD-PATTERN or MERGE per the CR-BP-63 baseline; no non-regulated candidate is promoted by the escape evidence.
+    unresolved: >
+      Admission of the recommended candidate is a separate governed step (admission tranche with PC + PG + BP stack and register flip); this discovery record recommends and does not admit.

@@ -53,7 +53,9 @@ def test_cli_live_run_conformant_on_discovery_records():
     # CR-BP-72 added one A&O x Retire escape-clause record;
     # CR-BP-74 added one F&A x Retire escape-clause record;
     # CR-BP-76 added one G&E x Retire escape-clause record.
-    assert "Discovery records checked: 18" in r.stdout
+    # CR-BP-80 added five escape-clause records (one per backlog-deferred cell:
+    # SD.Activate, SD.Retire, AO.Activate, EO.Activate, FA.Activate).
+    assert "Discovery records checked: 23" in r.stdout
     assert "Findings:                  0" in r.stdout
 
 
@@ -62,7 +64,7 @@ def test_cli_json_shape():
     assert r.returncode == 0
     data = json.loads(r.stdout)
     assert data["verdict"] == "CONFORMANT"
-    assert data["record_count"] == 18
+    assert data["record_count"] == 23
     assert data["finding_count"] == 0
     assert isinstance(data["findings"], list)
     assert len(data["rules"]) == 8
@@ -143,7 +145,7 @@ def test_evaluate_runs_all_rules_on_fixture(tmp_path):
 
 def test_load_records_covers_discovery_dir():
     pairs = _load_records(ROOT)
-    assert len(pairs) == 18
+    assert len(pairs) == 23
     # Stages are read from each record's ecf_context.lifecycle_stage field;
     # filename-suffix parsing was incorrect for escape records whose slug ends
     # in '-escape.yaml' (CR-BP-70). The file's outer dict wraps the discovery

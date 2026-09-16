@@ -1,0 +1,92 @@
+discovery:
+  id: dea:discovery-agency-and-organization-activate-escape
+  ecf_context:
+    domain: AgencyAndOrganization
+    lifecycle_stage: Activate
+  candidates:
+  - name: Mobilize Licensed Workforce
+    proposed_identity:
+      verb: Mobilize
+      object: Licensed Workforce
+      scope: enterprise
+    trigger: >
+      An enterprise is activating a workforce role whose holders must hold a regulator-issued licence or registration before they may perform live work (e.g. bankers holding FCA CF1/CF2/CF3 or CF11 controlled functions; healthcare practitioners holding state licensure; licensed professional services such as law, accounting, and pharmacy; telecommunications licensed engineers under FCC commercial-operator regime; aviation crew holding DOT / FAA / EASA licences; insurance producers holding state insurance-producer licences).
+    inputs: >
+      Regulator-issued licence or registration; role assignment; supervised training completion; fitness-and-propriety attestation; competency-assessment record; the enterprise's regulated-entity approval-authority framework; the supervisor-controlled scope of the role (signing authority, controlled-function designation, etc.).
+    transformation: >
+      Move the workforce role from credentialed-but-not-live to credentialed-and-live under the enterprise's regulated-entity approval authority, with the supervisor-controlled scope and fitness-and-propriety attestation preserved on the regulated personnel record.
+    outcome: >
+      The licensed workforce role is formally mobilized with the regulator's scope preserved, the fitness-and-propriety attestation on record, supervised-training completion recorded, and the role's signing authority or controlled-function designation binding under the regulator's continuing supervision.
+    boundary: >
+      Begins at the enterprise's regulated-entity approval for the licensed role; ends at the role being live on the regulated personnel record. Recruitment, hiring, and onboarding are upstream (Build). Steady-state performance, development, and supervision are downstream (Operate/Improve). Offboarding and licence surrender are explicit out of scope and live at Retire.
+    actors: >
+      Chief people officer; chief compliance officer; the licensed individual; the regulator's fitness-and-propriety supervisor; regulated-entity compliance function; legal; HR operations.
+    controls: >
+      Regulator-issued licence verification; fitness-and-propriety attestation; supervised-training completion record; competency-assessment record; regulated-entity approval authority framework; signing-authority or controlled-function designation; continuing-supervisor notification.
+    evidence:
+      sources:
+      - "UK FCA Statements of Responsibilities and the FCA's controlled-functions regime (SMCR): CF1/CF2/CF3/CF11 controlled functions require fitness-and-propriety attestation and Statements of Responsibilities before the individual performs live controlled-function work"
+      - "US state licensure regimes for healthcare practitioners (medical, nursing, pharmacy, allied health): state licensure is a precondition to live practice; the enterprise's credentialing process is the controlled mobilization step"
+      - "US state insurance-producer licensing (NAIC Producer Licensing Model Act): insurance producers must hold state licences and the enterprise's appointments before live producer work"
+      - "EU Aviation Safety Agency (EASA) and US Federal Aviation Administration (FAA) crew licensing: airline crew must hold current type-rated licences before flight operations; airline mobilization is the controlled step"
+      - "UK SRA regulated-professionals regime and US state bar admissions: licensed professionals must hold current practising certificates or admissions before live client work; firm-level mobilization is controlled"
+      - "Banking practice universally operates licensed-workforce mobilization as a distinct, controlled, repeatable process separate from steady-state performance management and from offboarding at Retire"
+      evidence_strength: authoritative
+    evaluation:
+      process_reality: >
+        Established and legally-mandated across regulated sectors; performed by HR, compliance, and the regulator's fitness-and-propriety supervisor jointly.
+      transformation: >
+        Credentialed-but-not-live to credentialed-and-live under regulator's supervision; real state transformation with material control work.
+      trigger: >
+        Enterprise's regulated-entity approval for the licensed role; observable and mandated.
+      outcome: >
+        Live licensed role with supervisor-controlled scope and fitness-and-propriety attestation; distinguishable.
+      boundary: >
+        Strong: enterprise approval to live role; recruitment and onboarding upstream; performance management downstream; offboarding explicit out of scope to Retire.
+      semantic_identity: >
+        Verb + object identity independent of the ECF coordinate; recognizable across sectors as regulated licensed-workforce mobilization.
+      cross_context_stability: >
+        The transformation recurs in banking, healthcare, insurance, legal, accounting, telecoms, and aviation; identity stable, implementation varies per sector.
+      cross_domain_applicability: >
+        Concentrated in sectors with regulator-issued individual licences; not universal across all enterprises.
+      ecf_independence: >
+        "Mobilize Licensed Workforce" names recognizable work without reference to the Activate label.
+      duplication: >
+        No existing canonical BP covers licensed-workforce mobilization; nearest neighbors (workforce performance under Operate, offboarding under Retire) exclude the credentialing and fitness-and-propriety work.
+      composition: >
+        Business Process level; constituent credentialing verification, fitness-and-propriety attestation, supervised-training completion, and signing-authority designation work decomposes to Activities at L3.
+      capability_distinction: >
+        A transformation with trigger and outcome, not a capability restatement.
+      governance_distinction: >
+        Not a policy; a governed workflow whose controls are regulatory obligations.
+      lifecycle_span: >
+        Begins and ends within Activate; performance management and supervision tracked downstream, not duplicated.
+    scoring:
+      process_reality: 2
+      semantic_stability: 2
+      cross_domain_applicability: 2
+      boundary_clarity: 2
+      evidence_strength: 2
+      total: 10
+      rationale: >
+        Authoritative multi-source regulatory evidence; universal sector practice across banking, healthcare, insurance, professional services, telecoms, aviation; strong boundary against Operate and Retire; cross-domain breadth covers the majority of regulated sectors, with the strongest evidence in financial services. Recommend ADMIT-CANONICAL.
+    disposition:
+      type: ADMIT-CANONICAL
+      canonical_process_ref: dea:process-mobilize-licensed-workforce (proposed)
+  context_evaluation:
+    concerns_identified: true
+    candidates_considered: true
+    adjacent_contexts_reviewed: true
+    existing_processes_searched: true
+    lifecycle_spanning_considered: true
+    capability_distinctions_tested: true
+    pattern_candidates_considered: true
+    evidence_assessed: true
+    process_empty: false
+  rationale:
+    included: >
+      Targeted escape-clause evaluation of the AgencyAndOrganization x Activate register cell (register v12, backlog-deferred). The discovery finds that licensed-workforce mobilization is a legally-mandated, boundary-clear, evidence-authoritative transformation distinct from steady-state workforce performance management, scoring 10/10 and recommended ADMIT-CANONICAL as dea:process-mobilize-licensed-workforce. The candidate is the strongest in this exercise because of its cross-sector breadth (banking, healthcare, insurance, professional services, telecoms, aviation).
+    excluded: >
+      Non-regulated workforce mobilization remains RECORD-PATTERN or MERGE per the CR-BP-63 baseline; no non-regulated candidate is promoted by the escape evidence.
+    unresolved: >
+      Admission of the recommended candidate is a separate governed step (admission tranche with PC + PG + BP stack and register flip); this discovery record recommends and does not admit.
