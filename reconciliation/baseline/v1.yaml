@@ -465,7 +465,7 @@ records:
   - id: dea:process-conclude-regulated-run-off
     type: Process
     path: entities/v1-alpha/dea:process-conclude-regulated-run-off/dea:process-conclude-regulated-run-off.yaml
-    sha256: d0c28bd44de9fd70948e73cbe2005527dda3869276ecbb716774bfa6faeebeca
+    sha256: 20eb9214a3a8da5e9292f2e4d88db2df0ff19f0bc4710e5ea8fabe9609f110f3
   - id: dea:process-conduct-assurance-review
     type: Process
     path: entities/v1-alpha/dea:process-conduct-assurance-review/dea:process-conduct-assurance-review.yaml
@@ -501,7 +501,7 @@ records:
   - id: dea:process-conduct-regulated-workforce-wind-down
     type: Process
     path: entities/v1-alpha/dea:process-conduct-regulated-workforce-wind-down/dea:process-conduct-regulated-workforce-wind-down.yaml
-    sha256: 2c2dc624e654e43b37054a3165c5c40ed96f341f782b8b4a36ae7d953a526d3a
+    sha256: 755de074309e7ad4e05154dd5288fedd78510bfe065d93fe8054bcb0fb1b8bf9
   - id: dea:process-coordinate-collaboration
     type: Process
     path: entities/v1-alpha/dea:process-coordinate-collaboration/dea:process-coordinate-collaboration.yaml
@@ -765,7 +765,7 @@ records:
   - id: dea:process-onboard-regulated-party-relationship
     type: Process
     path: entities/v1-alpha/dea:process-onboard-regulated-party-relationship/dea:process-onboard-regulated-party-relationship.yaml
-    sha256: a9338f8e2d5528a2a4501cf6c16e9b56a9a5389bd525e4976a9a2e1ef02fe380
+    sha256: 98a0c3012b6e64623ff675384a65ecae44f4757d17391787552fb167ce97ebfe
   - id: dea:process-onboard-tax-and-compliance-capability
     type: Process
     path: entities/v1-alpha/dea:process-onboard-tax-and-compliance-capability/dea:process-onboard-tax-and-compliance-capability.yaml

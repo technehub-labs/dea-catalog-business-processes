@@ -54,6 +54,11 @@ ecfConformance:
 metadata:
   established_by: CR-BP-75
   established_at: '2026-09-15'
+  activity_references:
+  - dea:activity-establish-run-off-accounting-basis
+  - dea:activity-adjudicate-policyholder-claims
+  - dea:activity-maintain-reserving-discipline
+  - dea:activity-file-run-off-closure-evidence
   change_history:
   - cr: CR-BP-75
     date: '2026-09-15'
@@ -75,6 +80,14 @@ metadata:
       2024. BP-ARC-ID-001 satisfied: name "Conclude a Regulated
       Run-Off" is verb + object form; id preserved unchanged from
       the CR-BP-74 discovery recommendation.
+  - cr: CR-BP-77
+    date: '2026-09-16'
+    change: |
+      Initial L3 decomposition; lands 4 Activity records
+      as part of the CR-BP-77 admitted-regulated-BP tranche
+      (pattern proven by CR-BP-42..69). Activity ids recorded
+      in metadata.activity_references; parent BP version
+      unchanged per SIV-004 (additive metadata-only).
 links:
 - rel: change-request
   href: change-requests/CR-BP-75-fa-retire-admission.md

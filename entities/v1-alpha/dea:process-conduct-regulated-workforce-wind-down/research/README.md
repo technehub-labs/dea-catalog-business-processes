@@ -1,29 +1,10 @@
-# Research and governance artefacts for dea:process-conduct-regulated-workforce-wind-down
+# Research depositions — dea:process-conduct-regulated-workforce-wind-down
 
-This directory contains the audit and governance artefacts that
-support the admission of the Business Process
-`dea:process-conduct-regulated-workforce-wind-down` at the
-AgencyAndOrganization x Retire coordinate.
-
-## Carrier
-
-CR-BP-73 (admission tranche) — see
-`change-requests/CR-BP-73-ao-retire-admission.md`.
-
-## Discovery provenance
-
-CR-BP-72 (escape-clause discovery) — see
-`discovery/v1-alpha/agency-and-organization-retire-escape.yaml`.
+Parent BP: `dea:process-conduct-regulated-workforce-wind-down` (Conduct Regulated Workforce Wind-Down)
+Coordinate: `AgencyAndOrganization` x `Retire`
+Admitted by: CR-BP-73 (escape-clause discovery CR-BP-72).
+L3 decomposition: CR-BP-77 (2026-09-16).
 
 ## Files
 
-- `l2-admission-deposition.yaml` — the L2 admission deposition
-  evidence for this BP, mirroring the CR-BP-71 deposition shape.
-
-## Cross-references
-
-- Process Context: `contexts/v1-alpha/dea-pc-ao-retire.yaml`
-- Process Group: `entities/v1-alpha/dea:group-regulated-workforce-wind-down/`
-- Discovery record (escape): `discovery/v1-alpha/agency-and-organization-retire-escape.yaml`
-- Discovery record (baseline): `discovery/v1-alpha/agency-and-organization-retire.yaml`
-- Register (v10): `entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml`
+- `l3-candidate-universe.yaml` — CR-BP-77 deposition; 4 L3 candidates derived from the parent BP trigger and outcome text.

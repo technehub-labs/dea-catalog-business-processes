@@ -1,0 +1,34 @@
+id: dea:activity-verify-party-identity
+type: Activity
+name: Verify Party Identity
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: "The cohesive grouping of work within Onboard Regulated Party Relationship that establishes the applicant's identity to the standard required by the controlling KYC/AML regime, including the collection and verification of identity documents, electronic identity checks, and corroborating independent sources."
+belongs_to_business_process: dea:process-onboard-regulated-party-relationship
+cohesion_rationale: "Constituent work shares a single identity verification concern, one input class (the applicant's claimed identity attributes and the documents and electronic traces supporting them), and one output (a verified identity record with verification method and confidence rating). Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6)."
+decomposition_boundary: l4-reached
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: PartyAndRelationship
+    stage: Activate
+    identifier: ecf:partyRelationship.activate
+metadata:
+  established_by: CR-BP-77
+  established_at: '2026-09-16'
+  change_history:
+  - cr: CR-BP-77
+    date: '2026-09-16'
+    change: |
+      Initial L3 Activity entry; lands as part of the CR-BP-77
+      admitted-regulated-BP L3 tranche (pattern proven by the pilot
+      and prior tranches). Classified per CR-BP-32 section 5 (fails
+      standalone executability and resource dedication); decomposition
+      boundary marker per CR-BP-32 section 12 pending Task records
+      (dea:Task lifecycle: proposed).

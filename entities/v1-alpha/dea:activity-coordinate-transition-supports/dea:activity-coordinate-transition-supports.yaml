@@ -1,0 +1,34 @@
+id: dea:activity-coordinate-transition-supports
+type: Activity
+name: Coordinate Transition Supports
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: "The cohesive grouping of work within Conduct Regulated Workforce Wind-Down that arranges the state dislocated-worker referral, retraining support, health-care continuation, and re-employment services that supplement the statutory entitlements of affected employees."
+belongs_to_business_process: dea:process-conduct-regulated-workforce-wind-down
+cohesion_rationale: "Constituent work shares a single transition-support coordination concern, one input class (the affected-employee roster and the available public and private support programmes), and one output (the package of supports offered to each affected employee with delivery and uptake evidence). Cohesion score 8/9 assessed at deposition (CR-BP-32 section 6): coordination spans multiple delivery partners and uptake is contingent on employee choice."
+decomposition_boundary: l4-reached
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: AgencyAndOrganization
+    stage: Retire
+    identifier: ecf:agencyOrganization.retire
+metadata:
+  established_by: CR-BP-77
+  established_at: '2026-09-16'
+  change_history:
+  - cr: CR-BP-77
+    date: '2026-09-16'
+    change: |
+      Initial L3 Activity entry; lands as part of the CR-BP-77
+      admitted-regulated-BP L3 tranche (pattern proven by the pilot
+      and prior tranches). Classified per CR-BP-32 section 5 (fails
+      standalone executability and resource dedication); decomposition
+      boundary marker per CR-BP-32 section 12 pending Task records
+      (dea:Task lifecycle: proposed).
