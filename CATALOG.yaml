@@ -2,10 +2,10 @@ catalog:
   abbreviation: BP
   counts:
     candidates: 0
-    canonical: 711
-    entities: 712
-    open_change_requests: 90
-    research_files: 316
+    canonical: 715
+    entities: 716
+    open_change_requests: 91
+    research_files: 317
     retired: 1
   cross_cutting:
     change_requests: change-requests/
@@ -527,10 +527,32 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-assess-regulator-order-scope
+    last_modified: '2026-09-16'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-assess-regulator-order-scope/dea:activity-assess-regulator-order-scope.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-assess-tax-exposures
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-assess-tax-exposures/dea:activity-assess-tax-exposures.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-assign-retained-records-custodianship
+    last_modified: '2026-09-16'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-assign-retained-records-custodianship/dea:activity-assign-retained-records-custodianship.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -4861,6 +4883,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-reduce-governance-to-wind-down-quorum
+    last_modified: '2026-09-16'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-reduce-governance-to-wind-down-quorum/dea:activity-reduce-governance-to-wind-down-quorum.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-register-acquired-assets
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -5602,6 +5635,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-structure-operations-model/dea:activity-structure-operations-model.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-submit-statutory-dissolution-filings
+    last_modified: '2026-09-16'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-submit-statutory-dissolution-filings/dea:activity-submit-statutory-dissolution-filings.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -7076,7 +7120,7 @@ catalog:
     last_modified: '2026-09-16'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-effect-regulator-mandated-governance-unwind/dea:process-effect-regulator-mandated-governance-unwind.yaml
-    research_count: 2
+    research_count: 3
     retired_count: 0
     state: canonical
     type: Process
@@ -7995,9 +8039,15 @@ catalog:
   - entity_id: dea:activity-assess-portfolio-balance
     files: []
     path: entities/v1-alpha/dea:activity-assess-portfolio-balance/research/
+  - entity_id: dea:activity-assess-regulator-order-scope
+    files: []
+    path: entities/v1-alpha/dea:activity-assess-regulator-order-scope/research/
   - entity_id: dea:activity-assess-tax-exposures
     files: []
     path: entities/v1-alpha/dea:activity-assess-tax-exposures/research/
+  - entity_id: dea:activity-assign-retained-records-custodianship
+    files: []
+    path: entities/v1-alpha/dea:activity-assign-retained-records-custodianship/research/
   - entity_id: dea:activity-assign-target-ownership
     files: []
     path: entities/v1-alpha/dea:activity-assign-target-ownership/research/
@@ -9177,6 +9227,9 @@ catalog:
   - entity_id: dea:activity-redraft-objectives-and-targets
     files: []
     path: entities/v1-alpha/dea:activity-redraft-objectives-and-targets/research/
+  - entity_id: dea:activity-reduce-governance-to-wind-down-quorum
+    files: []
+    path: entities/v1-alpha/dea:activity-reduce-governance-to-wind-down-quorum/research/
   - entity_id: dea:activity-register-acquired-assets
     files: []
     path: entities/v1-alpha/dea:activity-register-acquired-assets/research/
@@ -9381,6 +9434,9 @@ catalog:
   - entity_id: dea:activity-structure-operations-model
     files: []
     path: entities/v1-alpha/dea:activity-structure-operations-model/research/
+  - entity_id: dea:activity-submit-statutory-dissolution-filings
+    files: []
+    path: entities/v1-alpha/dea:activity-submit-statutory-dissolution-filings/research/
   - entity_id: dea:activity-surface-risk-exposures
     files: []
     path: entities/v1-alpha/dea:activity-surface-risk-exposures/research/
@@ -9950,6 +10006,7 @@ catalog:
     files:
     - README.md
     - l2-admission-deposition.yaml
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-effect-regulator-mandated-governance-unwind/research/
   - entity_id: dea:process-establish-governance-bodies
     files:

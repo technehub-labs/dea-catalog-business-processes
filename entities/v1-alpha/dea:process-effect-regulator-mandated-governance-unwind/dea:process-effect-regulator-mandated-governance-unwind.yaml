@@ -47,6 +47,11 @@ ecfConformance:
 metadata:
   established_by: CR-BP-78
   established_at: '2026-09-16'
+  activity_references:
+    - dea:activity-assess-regulator-order-scope
+    - dea:activity-reduce-governance-to-wind-down-quorum
+    - dea:activity-submit-statutory-dissolution-filings
+    - dea:activity-assign-retained-records-custodianship
   change_history:
     - cr: CR-BP-78
       date: '2026-09-16'
@@ -71,6 +76,21 @@ metadata:
         Mandated Governance Unwind" is verb + object form;
         id preserved unchanged from the CR-BP-76 discovery
         recommendation.
+    - cr: CR-BP-79
+      date: '2026-09-16'
+      change: |
+        L3 Activity decomposition (4 Activity records):
+        Assess Regulator Or Court Order Scope, Reduce
+        Governance To Wind-Down Quorum, Submit Statutory
+        Dissolution Filings, Assign Retained-Records
+        Custodianship. All four candidates FAIL standalone
+        executability and resource dedication per CR-BP-32
+        section 5 and therefore classify as Activities, not
+        BPs. Cohesion 9/9 on each. decomposition_boundary:
+        l4-reached per CR-BP-32 section 12. Activity
+        references added to metadata.activity_references.
+        Version unchanged per SIV-004 (additive
+        metadata-only).
 links:
   - rel: change-request
     href: change-requests/CR-BP-78-ge-retire-admission.md

@@ -2,13 +2,13 @@ schema_version: 1
 report_at_run: CR-BP-16 S23
 report_at_source: scripts/build_conformance_report.py
 catalog_root: /home/hermes/dea-work/dea-catalog-processes
-total_records: 756
+total_records: 760
 conformance_levels:
   0: 0
   1: 0
   2: 0
   3: 0
-  4: 756
+  4: 760
 records:
 - id: dea:activity-address-performance-exceptions
   kind: Activity
@@ -470,9 +470,29 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-assess-regulator-order-scope
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-assess-regulator-order-scope/dea:activity-assess-regulator-order-scope.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-assess-tax-exposures
   kind: Activity
   path: entities/v1-alpha/dea:activity-assess-tax-exposures/dea:activity-assess-tax-exposures.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-assign-retained-records-custodianship
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-assign-retained-records-custodianship/dea:activity-assign-retained-records-custodianship.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -4410,6 +4430,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-reduce-governance-to-wind-down-quorum
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-reduce-governance-to-wind-down-quorum/dea:activity-reduce-governance-to-wind-down-quorum.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-register-acquired-assets
   kind: Activity
   path: entities/v1-alpha/dea:activity-register-acquired-assets/dea:activity-register-acquired-assets.yaml
@@ -5083,6 +5113,16 @@ records:
 - id: dea:activity-structure-operations-model
   kind: Activity
   path: entities/v1-alpha/dea:activity-structure-operations-model/dea:activity-structure-operations-model.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-submit-statutory-dissolution-filings
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-submit-statutory-dissolution-filings/dea:activity-submit-statutory-dissolution-filings.yaml
   level: 4
   level_breakdown:
     L1_structural: true
