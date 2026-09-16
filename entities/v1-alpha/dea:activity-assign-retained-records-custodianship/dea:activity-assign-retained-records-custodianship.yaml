@@ -1,0 +1,42 @@
+id: dea:activity-assign-retained-records-custodianship
+type: Activity
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+
+name: Assign Retained-Records Custodianship
+
+definition: |
+  The cohesive grouping of work within Effect Regulator-Mandated Governance Unwind that assigns retained-records custodianship to a designated custodian (with the service-of-process agent retained for the duration of the statutory retention period), confirms the custodian accepts the role, and confirms the regulator or court is satisfied with the assignment.
+
+belongs_to_business_process: dea:process-effect-regulator-mandated-governance-unwind
+
+cohesion_rationale: "Constituent work shares a single records-custodianship concern (the post-dissolution retention of entity records for the statutory period plus a service-of-process agent), one input class (order-scope register plus entity records plus statutory retention map), and one output (a documented custodian designation with regulator or court acknowledgement). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6)."
+
+decomposition_boundary: l4-reached
+
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: '1.0.0'
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+    - kind: coordinate
+      domain: GovernanceAndExistence
+      stage: Retire
+      identifier: ecf:governanceExistence.retire
+
+metadata:
+  established_by: CR-BP-79
+  established_at: '2026-09-16'
+  change_history:
+    - cr: CR-BP-79
+      date: '2026-09-16'
+      change: |
+        Initial L3 Activity entry for dea:process-effect-regulator-mandated-governance-unwind; lands as part of the CR-BP-79
+        L3 GE Retire admission tranche (pattern proven by the pilot and prior
+        tranches, including CR-BP-77 admitted-regulated-tranche). Classified
+        per CR-BP-32 section 5 (fails standalone executability and resource
+        dedication); decomposition boundary marker per CR-BP-32 section 12
+        pending Task records (dea:Task lifecycle: proposed).

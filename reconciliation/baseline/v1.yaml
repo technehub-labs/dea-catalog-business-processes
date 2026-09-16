@@ -177,7 +177,7 @@ records:
   - id: dea:group-regulated-governance-unwind
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-regulated-governance-unwind/dea:group-regulated-governance-unwind.yaml
-    sha256: 9e157c2aebd1814e7d238d7f90327552e3776f448f8541f13c074182a3d57b8f
+    sha256: 2011f03d0314cd994ddf088b53b9893dd8cf17c0cda6a8adb512be410b298886
   - id: dea:group-regulated-onboarding
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-regulated-onboarding/dea:group-regulated-onboarding.yaml
@@ -657,7 +657,7 @@ records:
   - id: dea:process-effect-regulator-mandated-governance-unwind
     type: Process
     path: entities/v1-alpha/dea:process-effect-regulator-mandated-governance-unwind/dea:process-effect-regulator-mandated-governance-unwind.yaml
-    sha256: e42bde5917cacabdae3ee7c2cd03b3863101c9a9c735f18d9c7faba1a89bdcdc
+    sha256: b03a2f4d51515acaa922c0ef4ff480a8460890c4a65f9726537a2f733bca13cc
   - id: dea:process-establish-governance-bodies
     type: Process
     path: entities/v1-alpha/dea:process-establish-governance-bodies/dea:process-establish-governance-bodies.yaml
