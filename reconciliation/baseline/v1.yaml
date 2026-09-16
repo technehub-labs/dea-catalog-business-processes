@@ -174,6 +174,10 @@ records:
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-proposition-design/dea:group-proposition-design.yaml
     sha256: 11ee3ca73d22d617a8ddbe3d0e411e68e4fa105c01fda08af8fe0e08d9ee09c1
+  - id: dea:group-regulated-governance-unwind
+    type: ProcessGroup
+    path: entities/v1-alpha/dea:group-regulated-governance-unwind/dea:group-regulated-governance-unwind.yaml
+    sha256: 9e157c2aebd1814e7d238d7f90327552e3776f448f8541f13c074182a3d57b8f
   - id: dea:group-regulated-onboarding
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-regulated-onboarding/dea:group-regulated-onboarding.yaml
@@ -290,6 +294,10 @@ records:
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-ge-op.yaml
     sha256: 40f0bee9ea109c8ebb3974d038c9a10078972195dea610da68566ac65bc1158f
+  - id: dea:pc-ge-retire
+    type: ProcessContext
+    path: contexts/v1-alpha/dea-pc-ge-retire.yaml
+    sha256: 44de832ca10ec31c74b58f7ff486c856a12024e903fd27000ff72bbd18a8f9bb
   - id: dea:pc-oe-build
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-oe-build.yaml
@@ -646,6 +654,10 @@ records:
     type: Process
     path: entities/v1-alpha/dea:process-develop-product-variants/dea:process-develop-product-variants.yaml
     sha256: 19a2abeadfd464e9668bb9d1c098f1031b0a00303b6659104e5926bbcd94b8ff
+  - id: dea:process-effect-regulator-mandated-governance-unwind
+    type: Process
+    path: entities/v1-alpha/dea:process-effect-regulator-mandated-governance-unwind/dea:process-effect-regulator-mandated-governance-unwind.yaml
+    sha256: e42bde5917cacabdae3ee7c2cd03b3863101c9a9c735f18d9c7faba1a89bdcdc
   - id: dea:process-establish-governance-bodies
     type: Process
     path: entities/v1-alpha/dea:process-establish-governance-bodies/dea:process-establish-governance-bodies.yaml

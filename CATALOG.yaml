@@ -2,10 +2,10 @@ catalog:
   abbreviation: BP
   counts:
     candidates: 0
-    canonical: 709
-    entities: 710
-    open_change_requests: 89
-    research_files: 314
+    canonical: 711
+    entities: 712
+    open_change_requests: 90
+    research_files: 316
     retired: 1
   cross_cutting:
     change_requests: change-requests/
@@ -5951,7 +5951,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: dea:group-customer-lifecycle-management
-    last_modified: '2026-09-15'
+    last_modified: '2026-09-16'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:group-customer-lifecycle-management/dea:group-customer-lifecycle-management.yaml
     research_count: 4
@@ -6229,6 +6229,17 @@ catalog:
     last_modified: '2026-09-08'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:group-proposition-design/dea:group-proposition-design.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: ProcessGroup
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:group-regulated-governance-unwind
+    last_modified: '2026-09-16'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:group-regulated-governance-unwind/dea:group-regulated-governance-unwind.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -7054,6 +7065,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-develop-product-variants/dea:process-develop-product-variants.yaml
+    research_count: 2
+    retired_count: 0
+    state: canonical
+    type: Process
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:process-effect-regulator-mandated-governance-unwind
+    last_modified: '2026-09-16'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:process-effect-regulator-mandated-governance-unwind/dea:process-effect-regulator-mandated-governance-unwind.yaml
     research_count: 2
     retired_count: 0
     state: canonical
@@ -9552,6 +9574,9 @@ catalog:
   - entity_id: dea:group-proposition-design
     files: []
     path: entities/v1-alpha/dea:group-proposition-design/research/
+  - entity_id: dea:group-regulated-governance-unwind
+    files: []
+    path: entities/v1-alpha/dea:group-regulated-governance-unwind/research/
   - entity_id: dea:group-regulated-onboarding
     files: []
     path: entities/v1-alpha/dea:group-regulated-onboarding/research/
@@ -9921,6 +9946,11 @@ catalog:
     - README.md
     - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-develop-product-variants/research/
+  - entity_id: dea:process-effect-regulator-mandated-governance-unwind
+    files:
+    - README.md
+    - l2-admission-deposition.yaml
+    path: entities/v1-alpha/dea:process-effect-regulator-mandated-governance-unwind/research/
   - entity_id: dea:process-establish-governance-bodies
     files:
     - .gitkeep

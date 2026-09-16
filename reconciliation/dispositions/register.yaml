@@ -2421,6 +2421,7 @@ dispositions:
   note: null
 - record_id: dea:process-onboard-regulated-party-relationship
   cr: CR-BP-71
+  applied_pr: '#112 (CR-BP-71 admission; merged 2026-09-15)'
   disposition: RETAIN
   rationale: 'Discovery-driven admission under the CR-BP-62 method (CR-BP-70
 
@@ -2459,6 +2460,7 @@ dispositions:
   process_group: dea:group-regulated-workforce-wind-down
   disposition: RETAIN
   cr: CR-BP-73
+  applied_pr: '#114 (CR-BP-73 admission; merged 2026-09-15)'
   evidence: 'discovery/v1-alpha/agency-and-organization-retire-escape.yaml: scored 9/10 ADMIT-CANONICAL on WARN (29 U.S.C.
     2101 et seq.; 20 CFR Part 639) + EU Directive 98/59/EC + ILO C158/C135 + OECD evidence; CR-BP-72 escape-clause discovery;
     CR-BP-73 admission tranche.'
@@ -2474,6 +2476,7 @@ dispositions:
   process_group: dea:group-regulated-run-off
   disposition: RETAIN
   cr: CR-BP-75
+  applied_pr: '#116 (CR-BP-75 admission; merged 2026-09-15)'
   evidence: 'discovery/v1-alpha/finance-and-accounting-retire-escape.yaml: scored 9/10 ADMIT-CANONICAL on PRA PS20/24 (UK,
     in force 30 June 2026) + FSB Final Guidance on Insurance Resolution Strategies 2025 + NAIC Model 901 + IFRS 17 (effective
     2023) + IFRS 5 + ASC 205-30 Liquidation Basis (FASB ASU 2013-07) + ASC 944 + IRO Best Practice Guidance 2024 evidence;
@@ -2483,3 +2486,16 @@ dispositions:
   audit_status: ratified-accepted
   note: 'Verbatim escape clause (CR-BP-19, register v2) activated: ''defer until a regulated unwind (e.g. mutual insurer run-off)
     requires a standalone group''.'
+- record_id: dea:process-effect-regulator-mandated-governance-unwind
+  ecf_context:
+    domain: GovernanceAndExistence
+    lifecycle_stage: Retire
+  process_context: dea:pc-ge-retire
+  process_group: dea:group-regulated-governance-unwind
+  disposition: RETAIN
+  cr: CR-BP-78
+  evidence: 'discovery/v1-alpha/governance-and-existence-retire-escape.yaml: scored 9/10 ADMIT-CANONICAL on FCA WDPG 3 (UK firm wind-down planning) + California Corporations Code 5033-5034 (US nonprofit dissolution) + IRS 501(c)(3) (federal tax-exempt dissolution) + state attorney-general charity oversight + federal banking regulator cease-and-desist + federal/state court receivership evidence; CR-BP-76 escape-clause discovery; CR-BP-78 admission tranche.'
+  related_records:
+  - CR-BP-76
+  audit_status: ratified-accepted
+  note: 'Verbatim escape clause (CR-BP-19, register v2) activated: ''defer until a sector example (e.g. regulator-mandated unwind) requires it''.'

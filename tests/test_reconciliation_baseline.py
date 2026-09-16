@@ -56,9 +56,9 @@ def test_build_inventory_records_match_canonical_population() -> None:
         (REPO_ROOT / "reconciliation/inventory.yaml").read_text()
     )
     recs = inv["records"]
-    assert len(recs["business_processes"]) == 134
-    assert len(recs["process_groups"]) == 43
-    assert len(recs["process_contexts"]) == 43
+    assert len(recs["business_processes"]) == 135
+    assert len(recs["process_groups"]) == 44
+    assert len(recs["process_contexts"]) == 44
 
 
 def test_build_inventory_legacy_findings_present() -> None:

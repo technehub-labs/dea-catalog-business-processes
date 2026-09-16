@@ -116,6 +116,11 @@ discovery:
       type: ADMIT-CANONICAL
       canonical_process_ref: dea:process-effect-regulator-mandated-governance-unwind
       related_contexts: []
+    admission:
+      status: admitted
+      admitted_by: CR-BP-78
+      admitted_as: dea:process-effect-regulator-mandated-governance-unwind
+      admitted_at: '2026-09-16'
   - name: Operate Governance Sunset Procedures
     proposed_identity:
       verb: Operate
