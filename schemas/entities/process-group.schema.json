@@ -155,6 +155,50 @@
         }
       }
     },
+    "grouping_basis": {
+      "type": "object",
+      "description": "Optional: explicit grouping basis declared by CR-BP-95. When present, PG-009 enforces structural integrity. Back-compat with pre-CR-BP-95 PG records: the field is OPTIONAL and existing records remain conformant.",
+      "required": ["type", "statement"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "value-stream",
+            "functional-responsibility",
+            "support-capability",
+            "cross-cutting-concern",
+            "governance-obligation",
+            "innovation-candidate"
+          ],
+          "description": "Controlled vocabulary for the grouping basis type. The six values mirror the existing process_group_kind vocabulary (classifications/process-group-kinds.yaml) but are stated as a declarative grouping principle rather than a classification."
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000,
+          "description": "A declarative sentence describing the process-centric grouping principle. Example: 'Groups processes by the customer-facing value stream they participate in.'"
+        }
+      }
+    },
+    "membership_criteria": {
+      "type": "object",
+      "description": "Optional: explicit membership criteria declared by CR-BP-95. When present, PG-010 enforces structural integrity. Back-compat: OPTIONAL.",
+      "required": ["inclusion_test", "exclusion_test"],
+      "properties": {
+        "inclusion_test": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000,
+          "description": "A testable predicate that determines whether a candidate L2 Business Process belongs in this Process Group. Example: 'A Business Process belongs in this group if its trigger is a customer-initiated request.'"
+        },
+        "exclusion_test": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000,
+          "description": "A testable predicate that determines whether a candidate L2 Business Process is explicitly excluded from this Process Group. Example: 'A Business Process is excluded from this group if its trigger is regulator-initiated.'"
+        }
+      }
+    },
     "metadata": {
       "type": "object",
       "properties": {
