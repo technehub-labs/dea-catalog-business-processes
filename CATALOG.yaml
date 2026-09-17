@@ -4,7 +4,7 @@ catalog:
     candidates: 0
     canonical: 739
     entities: 740
-    open_change_requests: 100
+    open_change_requests: 101
     research_files: 329
     retired: 1
   cross_cutting:
@@ -7337,7 +7337,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: dea:process-develop-governance-strategy
-    last_modified: '2026-09-07'
+    last_modified: '2026-09-17'
     lifecycle_status: deprecated
     path: entities/v1-alpha/dea:process-develop-governance-strategy/dea:process-develop-governance-strategy.yaml
     research_count: 2

@@ -689,7 +689,7 @@ records:
   - id: dea:process-develop-governance-strategy
     type: Process
     path: entities/v1-alpha/dea:process-develop-governance-strategy/dea:process-develop-governance-strategy.yaml
-    sha256: 7bbf3e1fc5a4207fed83203c42405a2119b22737fd5ea13f92726a68a5a2516a
+    sha256: 722044f9115d3f6b8a57f71f51c2154b2aa18998790a006406f37447a9161ec0
   - id: dea:process-develop-product-variants
     type: Process
     path: entities/v1-alpha/dea:process-develop-product-variants/dea:process-develop-product-variants.yaml
