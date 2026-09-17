@@ -2,14 +2,84 @@ schema_version: 1
 report_at_run: CR-BP-16 S23
 report_at_source: scripts/build_conformance_report.py
 catalog_root: /home/hermes/dea-work/dea-catalog-processes
-total_records: 772
+total_records: 788
 conformance_levels:
   0: 0
   1: 0
   2: 0
   3: 3
-  4: 769
+  4: 785
 records:
+- id: dea:activity-acquire-regulator-acknowledged-accounting-or-rate-framework
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-acquire-regulator-acknowledged-accounting-or-rate-framework/dea:activity-acquire-regulator-acknowledged-accounting-or-rate-framework.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-acquire-regulator-issued-operations-authorization
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-acquire-regulator-issued-operations-authorization/dea:activity-acquire-regulator-issued-operations-authorization.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-acquire-tariff-or-pricing-approval
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-acquire-tariff-or-pricing-approval/dea:activity-acquire-tariff-or-pricing-approval.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-activate-communications-plan-under-regulator-continuing-supervision
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-activate-communications-plan-under-regulator-continuing-supervision/dea:activity-activate-communications-plan-under-regulator-continuing-supervision.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-activate-continuing-supervisor-notification
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-activate-continuing-supervisor-notification/dea:activity-activate-continuing-supervisor-notification.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-activate-continuing-supervisor-notification-fa
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-activate-continuing-supervisor-notification-fa/dea:activity-activate-continuing-supervisor-notification-fa.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-activate-signing-authority-or-controlled-function-designation
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-activate-signing-authority-or-controlled-function-designation/dea:activity-activate-signing-authority-or-controlled-function-designation.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-address-performance-exceptions
   kind: Activity
   path: entities/v1-alpha/dea:activity-address-performance-exceptions/dea:activity-address-performance-exceptions.yaml
@@ -510,6 +580,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-attest-fitness-and-propriety
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-attest-fitness-and-propriety/dea:activity-attest-fitness-and-propriety.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-baseline-population-competencies
   kind: Activity
   path: entities/v1-alpha/dea:activity-baseline-population-competencies/dea:activity-baseline-population-competencies.yaml
@@ -733,6 +813,36 @@ records:
 - id: dea:activity-bound-substrate-proportions
   kind: Activity
   path: entities/v1-alpha/dea:activity-bound-substrate-proportions/dea:activity-bound-substrate-proportions.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-bring-operational-controls-live-on-the-regulated-billing-record
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-bring-operational-controls-live-on-the-regulated-billing-record/dea:activity-bring-operational-controls-live-on-the-regulated-billing-record.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-bring-operational-controls-live-on-the-regulated-operations-record
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-bring-operational-controls-live-on-the-regulated-operations-record/dea:activity-bring-operational-controls-live-on-the-regulated-operations-record.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-bring-operations-manuals-and-runbooks-live
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-bring-operations-manuals-and-runbooks-live/dea:activity-bring-operations-manuals-and-runbooks-live.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -1623,6 +1733,16 @@ records:
 - id: dea:activity-communicate-obligations-and-rights
   kind: Activity
   path: entities/v1-alpha/dea:activity-communicate-obligations-and-rights/dea:activity-communicate-obligations-and-rights.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-complete-supervisor-review-and-obtain-acknowledgement-on-record
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-complete-supervisor-review-and-obtain-acknowledgement-on-record/dea:activity-complete-supervisor-review-and-obtain-acknowledgement-on-record.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -2990,6 +3110,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-file-supervisor-acknowledged-strategic-plan-submission
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-file-supervisor-acknowledged-strategic-plan-submission/dea:activity-file-supervisor-acknowledged-strategic-plan-submission.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-filter-environmental-signals
   kind: Activity
   path: entities/v1-alpha/dea:activity-filter-environmental-signals/dea:activity-filter-environmental-signals.yaml
@@ -3553,6 +3683,16 @@ records:
 - id: dea:activity-issue-purchase-orders
   kind: Activity
   path: entities/v1-alpha/dea:activity-issue-purchase-orders/dea:activity-issue-purchase-orders.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-launch-operational-monitoring-framework
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-launch-operational-monitoring-framework/dea:activity-launch-operational-monitoring-framework.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -4413,6 +4553,16 @@ records:
 - id: dea:activity-record-review-decisions
   kind: Activity
   path: entities/v1-alpha/dea:activity-record-review-decisions/dea:activity-record-review-decisions.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-record-supervised-training-completion
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-record-supervised-training-completion/dea:activity-record-supervised-training-completion.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -5323,6 +5473,16 @@ records:
 - id: dea:activity-verify-prototype-readiness
   kind: Activity
   path: entities/v1-alpha/dea:activity-verify-prototype-readiness/dea:activity-verify-prototype-readiness.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-verify-regulator-licence-or-registration
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-verify-regulator-licence-or-registration/dea:activity-verify-regulator-licence-or-registration.yaml
   level: 4
   level_breakdown:
     L1_structural: true

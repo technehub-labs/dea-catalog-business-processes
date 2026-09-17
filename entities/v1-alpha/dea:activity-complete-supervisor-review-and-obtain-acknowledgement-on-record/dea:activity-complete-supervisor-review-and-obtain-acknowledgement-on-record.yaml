@@ -1,0 +1,35 @@
+id: dea:activity-complete-supervisor-review-and-obtain-acknowledgement-on-record
+type: Activity
+name: Complete Supervisor Review and Obtain Acknowledgement on Record
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: "The cohesive grouping of work within Institutionalize Regulated Strategic Plan that completes the supervisor's review and obtains the acknowledgement on record before the strategic plan takes effect (Basel SREP review completion; SRB resolution-plan review completion; NHS England / Department of Health strategy review completion; PUC rate-case strategic-plan review completion)."
+belongs_to_business_process: dea:process-institutionalize-regulated-strategic-plan
+cohesion_rationale: "Constituent work shares a single supervisor-review-completion concern, one input class (the filed strategic-plan submission and the supervisor's review criteria), and one output (the supervisor's acknowledgement on record preserved on the regulated strategic-plan record). Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6)."
+decomposition_boundary: l4-reached
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: StrategyAndDirection
+    stage: Activate
+    identifier: ecf:strategyDirection.activate
+metadata:
+  established_by: CR-BP-87
+  established_at: '2026-09-17'
+  change_history:
+  - cr: CR-BP-87
+    date: '2026-09-17'
+    change: |
+      Initial L3 Activity entry; lands as part of the CR-BP-87
+      L3 decomposition tranche for the four ADMIT-CANONICAL
+      Activate Business Processes (CR-BP-81 / CR-BP-82 / CR-BP-83 /
+      CR-BP-86). Classified per CR-BP-32 section 5 (fails standalone
+      executability and resource dedication); decomposition boundary
+      marker per CR-BP-32 section 12 pending Task records (dea:Task
+      lifecycle: proposed).

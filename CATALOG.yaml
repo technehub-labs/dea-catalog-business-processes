@@ -2,10 +2,10 @@ catalog:
   abbreviation: BP
   counts:
     candidates: 0
-    canonical: 723
-    entities: 724
-    open_change_requests: 96
-    research_files: 325
+    canonical: 739
+    entities: 740
+    open_change_requests: 97
+    research_files: 329
     retired: 1
   cross_cutting:
     change_requests: change-requests/
@@ -19,6 +19,83 @@ catalog:
 
     '
   entities:
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-acquire-regulator-acknowledged-accounting-or-rate-framework
+    last_modified: '2026-09-17'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-acquire-regulator-acknowledged-accounting-or-rate-framework/dea:activity-acquire-regulator-acknowledged-accounting-or-rate-framework.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-acquire-regulator-issued-operations-authorization
+    last_modified: '2026-09-17'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-acquire-regulator-issued-operations-authorization/dea:activity-acquire-regulator-issued-operations-authorization.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-acquire-tariff-or-pricing-approval
+    last_modified: '2026-09-17'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-acquire-tariff-or-pricing-approval/dea:activity-acquire-tariff-or-pricing-approval.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-activate-communications-plan-under-regulator-continuing-supervision
+    last_modified: '2026-09-17'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-activate-communications-plan-under-regulator-continuing-supervision/dea:activity-activate-communications-plan-under-regulator-continuing-supervision.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-activate-continuing-supervisor-notification
+    last_modified: '2026-09-17'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-activate-continuing-supervisor-notification/dea:activity-activate-continuing-supervisor-notification.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-activate-continuing-supervisor-notification-fa
+    last_modified: '2026-09-17'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-activate-continuing-supervisor-notification-fa/dea:activity-activate-continuing-supervisor-notification-fa.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-activate-signing-authority-or-controlled-function-designation
+    last_modified: '2026-09-17'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-activate-signing-authority-or-controlled-function-designation/dea:activity-activate-signing-authority-or-controlled-function-designation.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
     id: dea:activity-address-performance-exceptions
@@ -571,6 +648,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-attest-fitness-and-propriety
+    last_modified: '2026-09-17'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-attest-fitness-and-propriety/dea:activity-attest-fitness-and-propriety.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-baseline-population-competencies
     last_modified: '2026-09-14'
     lifecycle_status: candidate
@@ -817,6 +905,39 @@ catalog:
     last_modified: '2026-09-14'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-bound-substrate-proportions/dea:activity-bound-substrate-proportions.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-bring-operational-controls-live-on-the-regulated-billing-record
+    last_modified: '2026-09-17'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-bring-operational-controls-live-on-the-regulated-billing-record/dea:activity-bring-operational-controls-live-on-the-regulated-billing-record.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-bring-operational-controls-live-on-the-regulated-operations-record
+    last_modified: '2026-09-17'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-bring-operational-controls-live-on-the-regulated-operations-record/dea:activity-bring-operational-controls-live-on-the-regulated-operations-record.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-bring-operations-manuals-and-runbooks-live
+    last_modified: '2026-09-17'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-bring-operations-manuals-and-runbooks-live/dea:activity-bring-operations-manuals-and-runbooks-live.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -1796,6 +1917,17 @@ catalog:
     last_modified: '2026-09-15'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-communicate-obligations-and-rights/dea:activity-communicate-obligations-and-rights.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-complete-supervisor-review-and-obtain-acknowledgement-on-record
+    last_modified: '2026-09-17'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-complete-supervisor-review-and-obtain-acknowledgement-on-record/dea:activity-complete-supervisor-review-and-obtain-acknowledgement-on-record.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -3299,6 +3431,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-file-supervisor-acknowledged-strategic-plan-submission
+    last_modified: '2026-09-17'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-file-supervisor-acknowledged-strategic-plan-submission/dea:activity-file-supervisor-acknowledged-strategic-plan-submission.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-filter-environmental-signals
     last_modified: '2026-09-14'
     lifecycle_status: candidate
@@ -3919,6 +4062,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-issue-purchase-orders/dea:activity-issue-purchase-orders.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-launch-operational-monitoring-framework
+    last_modified: '2026-09-17'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-launch-operational-monitoring-framework/dea:activity-launch-operational-monitoring-framework.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -4865,6 +5019,17 @@ catalog:
     last_modified: '2026-09-14'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-record-review-decisions/dea:activity-record-review-decisions.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-record-supervised-training-completion
+    last_modified: '2026-09-17'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-record-supervised-training-completion/dea:activity-record-supervised-training-completion.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -5873,6 +6038,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-verify-regulator-licence-or-registration
+    last_modified: '2026-09-17'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-verify-regulator-licence-or-registration/dea:activity-verify-regulator-licence-or-registration.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-verify-service-capability-readiness
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -6479,10 +6655,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-activate-billing-capability
-    last_modified: '2026-09-16'
+    last_modified: '2026-09-17'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-activate-billing-capability/dea:process-activate-billing-capability.yaml
-    research_count: 2
+    research_count: 3
     retired_count: 0
     state: canonical
     type: Process
@@ -6490,10 +6666,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-activate-operations-capability
-    last_modified: '2026-09-16'
+    last_modified: '2026-09-17'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-activate-operations-capability/dea:process-activate-operations-capability.yaml
-    research_count: 2
+    research_count: 3
     retired_count: 0
     state: canonical
     type: Process
@@ -7439,7 +7615,7 @@ catalog:
     last_modified: '2026-09-17'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-institutionalize-regulated-strategic-plan/dea:process-institutionalize-regulated-strategic-plan.yaml
-    research_count: 2
+    research_count: 3
     retired_count: 0
     state: canonical
     type: Process
@@ -7513,10 +7689,10 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:process-mobilize-licensed-workforce
-    last_modified: '2026-09-16'
+    last_modified: '2026-09-17'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-mobilize-licensed-workforce/dea:process-mobilize-licensed-workforce.yaml
-    research_count: 2
+    research_count: 3
     retired_count: 0
     state: canonical
     type: Process
@@ -7989,6 +8165,27 @@ catalog:
   owner: TechNeHub Labs
   repository: https://github.com/technehub-labs/dea-catalog-processes.git
   research_registers:
+  - entity_id: dea:activity-acquire-regulator-acknowledged-accounting-or-rate-framework
+    files: []
+    path: entities/v1-alpha/dea:activity-acquire-regulator-acknowledged-accounting-or-rate-framework/research/
+  - entity_id: dea:activity-acquire-regulator-issued-operations-authorization
+    files: []
+    path: entities/v1-alpha/dea:activity-acquire-regulator-issued-operations-authorization/research/
+  - entity_id: dea:activity-acquire-tariff-or-pricing-approval
+    files: []
+    path: entities/v1-alpha/dea:activity-acquire-tariff-or-pricing-approval/research/
+  - entity_id: dea:activity-activate-communications-plan-under-regulator-continuing-supervision
+    files: []
+    path: entities/v1-alpha/dea:activity-activate-communications-plan-under-regulator-continuing-supervision/research/
+  - entity_id: dea:activity-activate-continuing-supervisor-notification
+    files: []
+    path: entities/v1-alpha/dea:activity-activate-continuing-supervisor-notification/research/
+  - entity_id: dea:activity-activate-continuing-supervisor-notification-fa
+    files: []
+    path: entities/v1-alpha/dea:activity-activate-continuing-supervisor-notification-fa/research/
+  - entity_id: dea:activity-activate-signing-authority-or-controlled-function-designation
+    files: []
+    path: entities/v1-alpha/dea:activity-activate-signing-authority-or-controlled-function-designation/research/
   - entity_id: dea:activity-address-performance-exceptions
     files: []
     path: entities/v1-alpha/dea:activity-address-performance-exceptions/research/
@@ -8139,6 +8336,9 @@ catalog:
   - entity_id: dea:activity-assign-target-ownership
     files: []
     path: entities/v1-alpha/dea:activity-assign-target-ownership/research/
+  - entity_id: dea:activity-attest-fitness-and-propriety
+    files: []
+    path: entities/v1-alpha/dea:activity-attest-fitness-and-propriety/research/
   - entity_id: dea:activity-baseline-population-competencies
     files: []
     path: entities/v1-alpha/dea:activity-baseline-population-competencies/research/
@@ -8208,6 +8408,15 @@ catalog:
   - entity_id: dea:activity-bound-substrate-proportions
     files: []
     path: entities/v1-alpha/dea:activity-bound-substrate-proportions/research/
+  - entity_id: dea:activity-bring-operational-controls-live-on-the-regulated-billing-record
+    files: []
+    path: entities/v1-alpha/dea:activity-bring-operational-controls-live-on-the-regulated-billing-record/research/
+  - entity_id: dea:activity-bring-operational-controls-live-on-the-regulated-operations-record
+    files: []
+    path: entities/v1-alpha/dea:activity-bring-operational-controls-live-on-the-regulated-operations-record/research/
+  - entity_id: dea:activity-bring-operations-manuals-and-runbooks-live
+    files: []
+    path: entities/v1-alpha/dea:activity-bring-operations-manuals-and-runbooks-live/research/
   - entity_id: dea:activity-build-acquisition-engines
     files: []
     path: entities/v1-alpha/dea:activity-build-acquisition-engines/research/
@@ -8475,6 +8684,9 @@ catalog:
   - entity_id: dea:activity-communicate-obligations-and-rights
     files: []
     path: entities/v1-alpha/dea:activity-communicate-obligations-and-rights/research/
+  - entity_id: dea:activity-complete-supervisor-review-and-obtain-acknowledgement-on-record
+    files: []
+    path: entities/v1-alpha/dea:activity-complete-supervisor-review-and-obtain-acknowledgement-on-record/research/
   - entity_id: dea:activity-compute-cycle-payroll
     files: []
     path: entities/v1-alpha/dea:activity-compute-cycle-payroll/research/
@@ -8883,6 +9095,9 @@ catalog:
   - entity_id: dea:activity-file-statutory-returns
     files: []
     path: entities/v1-alpha/dea:activity-file-statutory-returns/research/
+  - entity_id: dea:activity-file-supervisor-acknowledged-strategic-plan-submission
+    files: []
+    path: entities/v1-alpha/dea:activity-file-supervisor-acknowledged-strategic-plan-submission/research/
   - entity_id: dea:activity-filter-environmental-signals
     files: []
     path: entities/v1-alpha/dea:activity-filter-environmental-signals/research/
@@ -9054,6 +9269,9 @@ catalog:
   - entity_id: dea:activity-issue-purchase-orders
     files: []
     path: entities/v1-alpha/dea:activity-issue-purchase-orders/research/
+  - entity_id: dea:activity-launch-operational-monitoring-framework
+    files: []
+    path: entities/v1-alpha/dea:activity-launch-operational-monitoring-framework/research/
   - entity_id: dea:activity-maintain-account-integrity
     files: []
     path: entities/v1-alpha/dea:activity-maintain-account-integrity/research/
@@ -9312,6 +9530,9 @@ catalog:
   - entity_id: dea:activity-record-review-decisions
     files: []
     path: entities/v1-alpha/dea:activity-record-review-decisions/research/
+  - entity_id: dea:activity-record-supervised-training-completion
+    files: []
+    path: entities/v1-alpha/dea:activity-record-supervised-training-completion/research/
   - entity_id: dea:activity-redraft-objectives-and-targets
     files: []
     path: entities/v1-alpha/dea:activity-redraft-objectives-and-targets/research/
@@ -9585,6 +9806,9 @@ catalog:
   - entity_id: dea:activity-verify-prototype-readiness
     files: []
     path: entities/v1-alpha/dea:activity-verify-prototype-readiness/research/
+  - entity_id: dea:activity-verify-regulator-licence-or-registration
+    files: []
+    path: entities/v1-alpha/dea:activity-verify-regulator-licence-or-registration/research/
   - entity_id: dea:activity-verify-service-capability-readiness
     files: []
     path: entities/v1-alpha/dea:activity-verify-service-capability-readiness/research/
@@ -9780,11 +10004,13 @@ catalog:
     files:
     - README.md
     - l2-admission-deposition.yaml
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-activate-billing-capability/research/
   - entity_id: dea:process-activate-operations-capability
     files:
     - README.md
     - l2-admission-deposition.yaml
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-activate-operations-capability/research/
   - entity_id: dea:process-adapt-strategic-direction
     files:
@@ -10234,6 +10460,7 @@ catalog:
     files:
     - README.md
     - l2-admission-deposition.yaml
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-institutionalize-regulated-strategic-plan/research/
   - entity_id: dea:process-manage-cash-and-liquidity
     files:
@@ -10270,6 +10497,7 @@ catalog:
     files:
     - README.md
     - l2-admission-deposition.yaml
+    - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-mobilize-licensed-workforce/research/
   - entity_id: dea:process-monitor-strategic-performance
     files:

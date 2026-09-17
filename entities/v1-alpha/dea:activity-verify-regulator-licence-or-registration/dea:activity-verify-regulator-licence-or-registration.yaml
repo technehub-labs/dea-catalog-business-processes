@@ -1,0 +1,35 @@
+id: dea:activity-verify-regulator-licence-or-registration
+type: Activity
+name: Verify Regulator Licence Or Registration
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: "The cohesive grouping of work within Mobilize Licensed Workforce that confirms the licence or registration is current, in good standing, and matches the controlled-function designation or signing authority required for the live role (FCA SMCR Statements of Responsibilities; state healthcare licensure verification; NAIC producer licence status; FAA / EASA type-rating currency; SRA practising certificate; bar admission status)."
+belongs_to_business_process: dea:process-mobilize-licensed-workforce
+cohesion_rationale: "Constituent work shares a single licence-verification concern, one input class (the regulator-controlled role and the licence record), and one output (the verified licence record and the scope-of-practice attestation). Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6)."
+decomposition_boundary: l4-reached
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: AgencyAndOrganization
+    stage: Activate
+    identifier: ecf:agencyOrganization.activate
+metadata:
+  established_by: CR-BP-87
+  established_at: '2026-09-17'
+  change_history:
+  - cr: CR-BP-87
+    date: '2026-09-17'
+    change: |
+      Initial L3 Activity entry; lands as part of the CR-BP-87
+      L3 decomposition tranche for the four ADMIT-CANONICAL
+      Activate Business Processes (CR-BP-81 / CR-BP-82 / CR-BP-83 /
+      CR-BP-86). Classified per CR-BP-32 section 5 (fails standalone
+      executability and resource dedication); decomposition boundary
+      marker per CR-BP-32 section 12 pending Task records (dea:Task
+      lifecycle: proposed).

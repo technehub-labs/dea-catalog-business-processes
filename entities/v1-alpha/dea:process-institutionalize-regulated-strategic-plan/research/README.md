@@ -13,7 +13,7 @@ This directory contains the L2 admission deposition and the L3 candidate-univers
 
 ## L3 decomposition preview
 
-CR-BP-87 (forthcoming) will land 4 Activity records decomposing this BP into its L3 components. The candidate-universe is bounded by the BP's `scope.includes` block:
+CR-BP-87 (landed 2026-09-17; PR #126) will land 4 Activity records decomposing this BP into its L3 components. The candidate-universe is bounded by the BP's `scope.includes` block:
 
 | # | Activity (proposed) | Bounded by |
 |---|---|---|
