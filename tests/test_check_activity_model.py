@@ -115,12 +115,12 @@ def test_cli_self_test_passes():
 
 
 def test_cli_live_run_returns_conformant():
-    """Live run: 537 Activity records (5 CR-BP-42 + 32 CR-BP-43 + 8 CR-BP-44 + 28 CR-BP-45 + 36 CR-BP-46 + 40 CR-BP-47 + 32 CR-BP-48 + 28 CR-BP-49 + 40 CR-BP-50 + 24 CR-BP-51 + 36 CR-BP-52 + 44 CR-BP-53 + 48 CR-BP-54 + 28 CR-BP-55 + 36 CR-BP-56 + 36 CR-BP-57 + 20 CR-BP-69 + 12 CR-BP-77 + 4 CR-BP-79), 136 BP records (126 + 2 CR-BP-64 + 1 CR-BP-65 + 1 CR-BP-66 + 1 CR-BP-67 + 1 CR-BP-71 + 1 CR-BP-73 + 1 CR-BP-75 + 1 CR-BP-78 + 1 CR-BP-81 admissions), 0 findings."""
+    """Live run: 537 Activity records (5 CR-BP-42 + 32 CR-BP-43 + 8 CR-BP-44 + 28 CR-BP-45 + 36 CR-BP-46 + 40 CR-BP-47 + 32 CR-BP-48 + 28 CR-BP-49 + 40 CR-BP-50 + 24 CR-BP-51 + 36 CR-BP-52 + 44 CR-BP-53 + 48 CR-BP-54 + 28 CR-BP-55 + 36 CR-BP-56 + 36 CR-BP-57 + 20 CR-BP-69 + 12 CR-BP-77 + 4 CR-BP-79), 138 BP records (126 + 2 CR-BP-64 + 1 CR-BP-65 + 1 CR-BP-66 + 1 CR-BP-67 + 1 CR-BP-71 + 1 CR-BP-73 + 1 CR-BP-75 + 1 CR-BP-78 + 1 CR-BP-81 + 1 CR-BP-82 + 1 CR-BP-83 + 1 CR-BP-86 admissions), 0 findings."""
     result = _run([])
     assert result.returncode == 0, result.stdout + result.stderr
     assert "Activity Model (CR-BP-32; ACT-001..010): CONFORMANT" in result.stdout
     assert "Activity records: 537" in result.stdout
-    assert "BP records:       138" in result.stdout
+    assert "BP records:       139" in result.stdout
     assert "Findings:         0" in result.stdout
 
 
@@ -160,7 +160,7 @@ def test_cli_json_shape():
     data = json.loads(result.stdout)
     assert data["verdict"] == "CONFORMANT"
     assert data["activity_record_count"] == 537
-    assert data["bp_record_count"] == 138
+    assert data["bp_record_count"] == 139
     assert data["finding_count"] == 0
     assert data["canonical_composition_type"] == CANONICAL_COMPOSITION_TYPE
     assert sorted(data["forbidden_composition_types"]) == sorted(FORBIDDEN_COMPOSITION_TYPES)

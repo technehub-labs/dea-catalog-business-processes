@@ -15,13 +15,13 @@ stages:
 - Improve
 - Retire
 ratification:
-  version: 15
-  cr: CR-BP-83
+  version: 16
+  cr: CR-BP-86
   ratified_at: '2026-09-16'
-  supersedes: version 14 (CR-BP-82, ratified 2026-09-16)
-  ratified_accepted: 46
-  backlog_deferred: 3
-  v14_to_v15_note: 'FinanceAndAccounting x Activate (FA.Activate) cell flips from backlog-deferred to ratified-accepted/landed per CR-BP-80 escape-clause discovery (10/10 ADMIT-CANONICAL) and CR-BP-83 admission tranche. FA.Activate now hosts dea:pc-fa-activate (Process Context) + dea:group-regulated-billing-activation (Process Group) + dea:process-activate-billing-capability (Business Process). Remaining 3 backlog-deferred cells: SD.Activate (CR-BP-86 pending), SD.Retire (DEFER documented without admission), plus the follow-on per CR-BP-19 register methodology. FA.Retire (CR-BP-75 admitted) remains landed.'
+  supersedes: version 15 (CR-BP-83, ratified 2026-09-16)
+  ratified_accepted: 47
+  backlog_deferred: 2
+  v15_to_v16_note: 'StrategyAndDirection x Activate (SD.Activate) cell flips from backlog-deferred to ratified-accepted/landed per CR-BP-80 escape-clause discovery (9/10 ADMIT-CANONICAL) and CR-BP-86 admission tranche. SD.Activate now hosts dea:pc-sd-activate (Process Context) + dea:group-regulated-strategic-plan-activation (Process Group) + dea:process-institutionalize-regulated-strategic-plan (Business Process). Remaining 2 backlog-deferred cells: SD.Retire (DEFER documented without admission), plus the follow-on per CR-BP-19 register methodology. AOAct (CR-BP-81), EOAct (CR-BP-82), FAAct (CR-BP-83) all remain landed.'
   v13_to_v14_note: 'EnablementAndOperations x Activate (EO.Activate) cell flips from backlog-deferred to ratified-accepted/landed per CR-BP-80 escape-clause discovery (10/10 ADMIT-CANONICAL) and CR-BP-82 admission tranche. EO.Activate now hosts dea:pc-oe-activate (Process Context) + dea:group-regulated-operations-activation (Process Group) + dea:process-activate-operations-capability (Business Process). Remaining 4 backlog-deferred cells: SD.Activate (CR-BP-86 pending), SD.Retire (DEFER documented without admission), FA.Activate (CR-BP-83 pending), plus 1 follow-on per CR-BP-19 register methodology.'
   v12_to_v13_note: 'AgencyAndOrganization x Activate cell reverses from
     backlog-deferred to ratified-accepted/landed on CR-BP-80 escape-clause
@@ -379,15 +379,37 @@ register:
       - Initiative execution (enablement-operations)
       evidence:
       - dea-metaframework/framework/lifecycle-grounding.md §1 Activate
-      disposition: backlog-deferred
-      ratified_at: '2026-09-07'
-      ratified_by: CR-BP-19
+      - CR-BP-80 escape-clause discovery (strategy-and-direction-activate-escape)
+        scoring 9/10 ADMIT-CANONICAL for dea:process-institutionalize-regulated-strategic-plan
+      disposition: ratified-accepted
+      ratified_at: '2026-09-16'
+      ratified_by: CR-BP-86
+      landed_at: '2026-09-16'
+      admission_note: >-
+        Activated by CR-BP-80 escape-clause discovery (9/10 ADMIT-CANONICAL)
+        and CR-BP-86 admission tranche. Supervisor-acknowledged strategic-
+        plan activation (Basel ICAAP / SAA approval by PRA / ECB; BRRD
+        Article 5 recovery-plan activation under SRB / national-resolution-
+        authority supervision; NHS trust 5-year strategy approval by NHS
+        England / Department of Health; PUC integrated resource plan and
+        strategic-plan filing before state public utility commissions; bank
+        recovery and resolution plan activation under FDIC or SRB) is
+        universally performed across regulated sectors as a legally-
+        mandated, boundary-clear, evidence-authoritative transformation
+        distinct from steady-state strategy execution. The v2 per-cell
+        escape rationale ("Activate and Retire are lifecycle transition
+        stages, not stable Process Group operating scopes") is superseded
+        by the universal-sector supervisor-acknowledged strategic-plan
+        regime. SDAct now hosts dea:pc-sd-activate (Process Context) +
+        dea:group-regulated-strategic-plan-activation (Process Group) +
+        dea:process-institutionalize-regulated-strategic-plan (Business
+        Process).
       deferral_reason: Activate and Retire are lifecycle transition stages, not stable
         Process Group operating scopes (register-wide deferred_rationale). Strategy
         rollout is a sub-step of the receiving Operate group (strategic steering).
         v1 ratified this cell under the dissolved Supply & Resources content; normalized
         to deferred in v2.
-      audit_status: backlog-deferred
+      audit_status: landed
     Operate:
       process_context: dea:pc-sd-operate
       l1_candidates:
