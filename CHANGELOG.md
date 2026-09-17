@@ -6,6 +6,8 @@ All notable changes to this repository are documented here. Format follows
 
 ## [Unreleased]
 
+## [v0.4.0] - 2026-09-17
+
 
 ## [Unreleased]
 
