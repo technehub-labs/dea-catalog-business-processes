@@ -1,7 +1,7 @@
 schema_version: 1
 report_at_run: CR-BP-16 S23
 report_at_source: scripts/build_conformance_report.py
-catalog_root: /home/hermes/dea-work/dea-catalog-processes
+catalog_root: /home/hermes/dea-catalog-processes
 total_records: 788
 conformance_levels:
   0: 0

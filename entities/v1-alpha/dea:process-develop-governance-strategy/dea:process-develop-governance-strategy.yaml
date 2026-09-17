@@ -91,17 +91,23 @@ metadata:
       Strategy & Direction directs within the authorised frame.
       External links should update to the new id. A redirect README
       is in place.
-  - cr: CR-BP-21a
-    date: '2026-09-07'
+  - cr: CR-BP-91
+    date: '2026-09-18'
     change: |
-      L2 migration executed. This entry is now DEPRECATED; the active
-      process lives at dea:process-develop-corporate-strategy in
-      StrategyAndDirection x Conceive (CR-BP-21a). The migration follows
-      the user-approved Option A split in CR-BP-20 grounded in
-      domain-grounding.md §3.1: GE authorises but does not direct;
-      Strategy & Direction directs within the authorised frame.
-      External links should update to the new id. A redirect README
-      is in place.
+      L3 decomposition explicitly DELIBERATELY EXCLUDED for this deprecated
+      Business Process. CR-BP-91 documents the exclusion at the carrier-CR
+      level. Rationale: (1) CR-BP-21a retired this entry in favour of
+      dea:process-develop-corporate-strategy (StrategyAndDirection x Conceive)
+      under the user-approved CR-BP-20 Option A split (GE authorises but does
+      not direct; Strategy & Direction directs within the authorised frame);
+      (2) MECE-008 (CR-BP-36) exempts deprecated records from the BP-composed-
+      by-PG gate, and by extension from L3 decomposition per the same
+      deactivation logic that parked this record; (3) the active sibling
+      dea:process-develop-corporate-strategy already carries 4 Activity records
+      (deposited under CR-BP-52). Adding phantom L3 entries to the deprecated
+      duplicate would re-litigate the split decision and create stranded
+      Activities at a coordinate whose semantics are owned by the S&D
+      sibling. Version unchanged per SIV-004 (metadata-only additive change).
 links:
 - rel: change-request
   href: change-requests/cr-bp-13a-customer-and-demand-admission.md
