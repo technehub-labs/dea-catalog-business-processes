@@ -2,10 +2,10 @@ catalog:
   abbreviation: BP
   counts:
     candidates: 0
-    canonical: 721
-    entities: 722
-    open_change_requests: 95
-    research_files: 323
+    canonical: 723
+    entities: 724
+    open_change_requests: 96
+    research_files: 325
     retired: 1
   cross_cutting:
     change_requests: change-requests/
@@ -5995,7 +5995,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: dea:group-customer-lifecycle-management
-    last_modified: '2026-09-16'
+    last_modified: '2026-09-17'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:group-customer-lifecycle-management/dea:group-customer-lifecycle-management.yaml
     research_count: 4
@@ -6339,6 +6339,17 @@ catalog:
     last_modified: '2026-09-15'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:group-regulated-run-off/dea:group-regulated-run-off.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: ProcessGroup
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:group-regulated-strategic-plan-activation
+    last_modified: '2026-09-17'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:group-regulated-strategic-plan-activation/dea:group-regulated-strategic-plan-activation.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -7419,6 +7430,17 @@ catalog:
     path: entities/v1-alpha/dea:process-initiate-policy-and-charter/dea:process-initiate-policy-and-charter.yaml
     research_count: 3
     retired_count: 1
+    state: canonical
+    type: Process
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:process-institutionalize-regulated-strategic-plan
+    last_modified: '2026-09-17'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:process-institutionalize-regulated-strategic-plan/dea:process-institutionalize-regulated-strategic-plan.yaml
+    research_count: 2
+    retired_count: 0
     state: canonical
     type: Process
     version: 1.0.0
@@ -9714,6 +9736,9 @@ catalog:
   - entity_id: dea:group-regulated-run-off
     files: []
     path: entities/v1-alpha/dea:group-regulated-run-off/research/
+  - entity_id: dea:group-regulated-strategic-plan-activation
+    files: []
+    path: entities/v1-alpha/dea:group-regulated-strategic-plan-activation/research/
   - entity_id: dea:group-regulated-workforce-wind-down
     files: []
     path: entities/v1-alpha/dea:group-regulated-workforce-wind-down/research/
@@ -10205,6 +10230,11 @@ catalog:
     - README.md
     - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-initiate-policy-and-charter/research/
+  - entity_id: dea:process-institutionalize-regulated-strategic-plan
+    files:
+    - README.md
+    - l2-admission-deposition.yaml
+    path: entities/v1-alpha/dea:process-institutionalize-regulated-strategic-plan/research/
   - entity_id: dea:process-manage-cash-and-liquidity
     files:
     - README.md

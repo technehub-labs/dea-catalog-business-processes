@@ -110,11 +110,11 @@ def test_cli_self_test_passes():
 
 
 def test_cli_live_run_returns_conformant():
-    """Live run: 722 records (161 pre-CR-BP-42 + 501 Activity records from CR-BP-42..57 + 4 CR-BP-64 + 2 CR-BP-65 + 2 CR-BP-66 + 2 CR-BP-67 admission records + 20 CR-BP-69 Activity records + 2 CR-BP-71 admission records + 1 CR-BP-73 admission record + 1 CR-BP-75 admission record + 12 CR-BP-77 Activity records + 1 CR-BP-78 admission record + 4 CR-BP-79 Activity records + 2 CR-BP-81 admission records + 2 CR-BP-82 admission records + 2 CR-BP-83 admission records), 0 opted-in, 0 findings."""
+    """Live run: 724 records (161 pre-CR-BP-42 + 501 Activity records from CR-BP-42..57 + 4 CR-BP-64 + 2 CR-BP-65 + 2 CR-BP-66 + 2 CR-BP-67 admission records + 20 CR-BP-69 Activity records + 2 CR-BP-71 admission records + 1 CR-BP-73 admission record + 1 CR-BP-75 admission record + 12 CR-BP-77 Activity records + 1 CR-BP-78 admission record + 4 CR-BP-79 Activity records + 2 CR-BP-81 admission records + 2 CR-BP-82 admission records + 2 CR-BP-83 admission records + 2 CR-BP-86 admission records), 0 opted-in, 0 findings."""
     result = _run([])
     assert result.returncode == 0, result.stdout + result.stderr
     assert "Execution Boundary (CR-BP-33; EXE-001..010): CONFORMANT" in result.stdout
-    assert "Records checked:   722" in result.stdout
+    assert "Records checked:   724" in result.stdout
     assert "Opted-in (with Workflow refs): 0" in result.stdout
     assert "Findings:          0" in result.stdout
 
@@ -124,7 +124,7 @@ def test_cli_json_shape():
     assert result.returncode == 0, result.stdout + result.stderr
     data = json.loads(result.stdout)
     assert data["verdict"] == "CONFORMANT"
-    assert data["record_count"] == 722
+    assert data["record_count"] == 724
     assert data["opted_in_record_count"] == 0
     assert data["finding_count"] == 0
     rule_ids = {r["id"] for r in data["rules"]}

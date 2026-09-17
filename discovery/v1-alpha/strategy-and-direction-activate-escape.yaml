@@ -73,6 +73,11 @@ discovery:
     disposition:
       type: ADMIT-CANONICAL
       canonical_process_ref: dea:process-institutionalize-regulated-strategic-plan (proposed)
+    admission:
+      status: admitted
+      admitted_by: CR-BP-86
+      admitted_as: dea:process-institutionalize-regulated-strategic-plan
+      admitted_at: '2026-09-16'
   context_evaluation:
     concerns_identified: true
     candidates_considered: true

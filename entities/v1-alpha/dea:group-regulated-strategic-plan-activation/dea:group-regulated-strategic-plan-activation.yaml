@@ -1,0 +1,122 @@
+id: dea:group-regulated-strategic-plan-activation
+type: ProcessGroup
+version: 1.0.0
+
+name: Regulated Strategic Plan Activation
+
+# Normative definition (PG-006 / MECE).
+definition: |
+  The bounded Process Group that organises the Business Process
+  responsibilities of moving a regulated entity's strategic plan from
+  board-approved-but-not-live to supervisor-acknowledged-and-live in
+  the StrategyAndDirection x Activate context where supervisor-
+  acknowledged strategic-plan filing (Basel ICAAP / SAA approval;
+  BRRD recovery-plan activation; NHS trust 5-year strategy
+  approval; PUC integrated resource plan and strategic-plan filing;
+  bank recovery and resolution plan activation) creates a distinct
+  group-level activation concern separate from strategy build and
+  from steady-state strategy execution.
+
+# Process Context reference (PG-003 enforces resolution).
+process_context: dea:pc-sd-activate
+
+# Scope (MECE boundary; PG-006 depends on excludes).
+scope:
+  includes:
+    - "Supervisor-acknowledged strategic-plan filing (Basel ICAAP / SAA approval by PRA / ECB; BRRD recovery-plan activation under SRB / national-resolution-authority supervision; NHS trust 5-year strategy approval; PUC integrated resource plan and strategic-plan filing; bank recovery and resolution plan activation under FDIC or SRB)"
+    - "Supervisor's review completion and acknowledgement on record (Basel SREP review; NHS England / Department of Health strategy review; PUC rate-case strategic-plan review; SRB resolution-plan review)"
+    - "Filing receipt preservation and regulated-records entry (Basel SREP filing receipt; NHS England strategy-approval letter; PUC strategic-plan filing order; SRB resolution-plan acknowledgment)"
+    - "Operational monitoring framework launch (KPIs; risk-appetite statement; early-warning indicators; supervisor's continuing-oversight relationship)"
+    - "Communications plan activation under the regulator's continuing supervision (disclosure controls; investor-relations briefing; regulated-entity announcement)"
+    - "Regulated strategic-plan record entry preserved for the activated strategic plan"
+  excludes:
+    - "Strategic-plan conception, design, and build (StrategyAndDirection x Conceive / Design / Build)"
+    - "Steady-state strategy execution and performance review (StrategyAndDirection x Operate / Improve)"
+    - "Strategic-plan sunset under regulatory mandate (StrategyAndDirection x Retire; CR-BP-80 escape record documented DEFER without admission)"
+    - "Non-regulated strategic-plan launch (single-business-unit rollout without supervisor's review): remains RECORD-PATTERN or MERGE per CR-BP-63 baseline"
+    - "Strategic plans absent a supervisor-acknowledged filing regime"
+
+# Intended enterprise outcomes.
+outcomes:
+  - "The regulated strategic plan is formally activated under the enterprise's regulated-entity approval authority with the supervisor's acknowledgement on record, the filing receipt preserved, the operational monitoring framework live, and the plan's obligations binding on the regulated entity under the regulator's continuing supervision."
+
+# Canonical containment (PG-004 / PG-005 / PG-006 enforce).
+composes:
+  - source_id: dea:group-regulated-strategic-plan-activation
+    target_id: dea:process-institutionalize-regulated-strategic-plan
+    relationship_type: composes
+    direction: source-to-target
+    status: active
+    asserted_by: dea-team
+    rationale: |
+      The L2 process belongs to this cell per the CR-BP-80
+      escape-clause discovery outcome (ADMIT-CANONICAL recommendation
+      at 9/10) landed by CR-BP-86. The discovery evidence (Basel
+      ICAAP / SAA approval; BRRD Article 5 recovery-plan activation;
+      NHS trust 5-year strategy approval; PUC integrated resource
+      plan and strategic-plan filing; bank recovery and resolution
+      plan activation) activates the register v2 cell's verbatim
+      escape condition: "Activate and Retire are lifecycle transition
+      stages" is superseded by the supervisor-acknowledged strategic-
+      plan regime that creates a distinct activation step with
+      supervisor's review completion, filing receipt preservation,
+      and operational monitoring framework launch under the
+      regulator's continuing supervision.
+    provenance:
+      type: architecture-review
+      reference: CR-BP-86
+      asserted_by: dea-team
+      asserted_at: '2026-09-16'
+
+# Process Group kind (PG-007 enforces controlled vocabulary).
+process_group_kind: functional
+
+# Discovery / governance status (mirrors register values).
+status: accepted
+
+# Catalog entry lifecycle (PG-008 enforces).
+lifecycle_status: candidate
+
+# ECF Conformance Gate (CR-ECF-CG-001..004).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: '1.0.0'
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+    - kind: coordinate
+      domain: StrategyAndDirection
+      stage: Activate
+      identifier: ecf:strategyDirection.activate
+
+# Evidence (CR-BP-11 register strength scale E0..E5).
+evidence:
+  - source: CR-BP-80 escape-clause discovery
+    claim: |
+      This Process Group's coordinate was evaluated by the CR-BP-80
+      escape-clause discovery record at
+      discovery/v1-alpha/strategy-and-direction-activate-escape.yaml.
+      The cell's deferral rationale ("Activate and Retire are
+      lifecycle transition stages") was found superseded by the
+      universal-sector supervisor-acknowledged strategic-plan regime:
+      supervisor-acknowledged strategic-plan filing creates a
+      distinct activation step with supervisor's review completion,
+      filing receipt preservation, and operational monitoring
+      framework launch under the regulator's continuing supervision.
+      The cell scores 9/10 with an ADMIT-CANONICAL recommendation
+      on authoritative regulatory evidence across banking (Basel
+      ICAAP / SAA approval; BRRD Article 5 recovery-plan activation),
+      healthcare (NHS trust 5-year strategy approval), utilities
+      (PUC integrated resource plan and strategic-plan filing), and
+      resolution authorities (SRB / national-resolution-authority
+      supervision).
+    strength: E5
+    reference: discovery/v1-alpha/strategy-and-direction-activate-escape.yaml
+  - source: CR-BP-86 admission tranche
+    claim: |
+      CR-BP-86 lands this Process Group as the L1 home of the
+      discovery-admitted Business Process and flips the register cell
+      to ratified-accepted / landed.
+    strength: E4
+    reference: change-requests/CR-BP-86-sd-activate-admission.md

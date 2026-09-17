@@ -198,6 +198,10 @@ records:
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-regulated-run-off/dea:group-regulated-run-off.yaml
     sha256: 27efe2f0c3501af0a2002964d4008a8582f0763e78434b5bcfc8225df017b4fc
+  - id: dea:group-regulated-strategic-plan-activation
+    type: ProcessGroup
+    path: entities/v1-alpha/dea:group-regulated-strategic-plan-activation/dea:group-regulated-strategic-plan-activation.yaml
+    sha256: 460ddce3e9a34194d279709b0e506d87f6202985977146f96f6e5ab86b398dc7
   - id: dea:group-regulated-workforce-wind-down
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-regulated-workforce-wind-down/dea:group-regulated-workforce-wind-down.yaml
@@ -402,6 +406,10 @@ records:
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-pv-retire.yaml
     sha256: 3bf309905c737116b247852f227022766a9d9477825d16b8a72fb5e9f8219133
+  - id: dea:pc-sd-activate
+    type: ProcessContext
+    path: contexts/v1-alpha/dea-pc-sd-activate.yaml
+    sha256: 0a9ff84e2f91aea593f08a107d92258ce9d736ac940c57bd95d2640aff8c0369
   - id: dea:pc-sd-build
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-sd-build.yaml
@@ -778,6 +786,10 @@ records:
     type: Process
     path: entities/v1-alpha/dea:process-initiate-policy-and-charter/dea:process-initiate-policy-and-charter.yaml
     sha256: c1891394b63ed437da7e6a5545fef843f171d6cba682181aea4427a1a20e9002
+  - id: dea:process-institutionalize-regulated-strategic-plan
+    type: Process
+    path: entities/v1-alpha/dea:process-institutionalize-regulated-strategic-plan/dea:process-institutionalize-regulated-strategic-plan.yaml
+    sha256: 3045b55922a648f79612696daa3f0fadb35c72567c81a343616d09fb8cffc680
   - id: dea:process-manage-cash-and-liquidity
     type: Process
     path: entities/v1-alpha/dea:process-manage-cash-and-liquidity/dea:process-manage-cash-and-liquidity.yaml

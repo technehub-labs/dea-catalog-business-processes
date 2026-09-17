@@ -2,13 +2,13 @@ schema_version: 1
 report_at_run: CR-BP-16 S23
 report_at_source: scripts/build_conformance_report.py
 catalog_root: /home/hermes/dea-work/dea-catalog-processes
-total_records: 769
+total_records: 772
 conformance_levels:
   0: 0
   1: 0
   2: 0
-  3: 2
-  4: 767
+  3: 3
+  4: 769
 records:
 - id: dea:activity-address-performance-exceptions
   kind: Activity
@@ -5760,6 +5760,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:group-regulated-strategic-plan-activation
+  kind: Entity
+  path: entities/v1-alpha/dea:group-regulated-strategic-plan-activation/dea:group-regulated-strategic-plan-activation.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:group-regulated-workforce-wind-down
   kind: Entity
   path: entities/v1-alpha/dea:group-regulated-workforce-wind-down/dea:group-regulated-workforce-wind-down.yaml
@@ -6740,6 +6750,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:process-institutionalize-regulated-strategic-plan
+  kind: Entity
+  path: entities/v1-alpha/dea:process-institutionalize-regulated-strategic-plan/dea:process-institutionalize-regulated-strategic-plan.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:process-manage-cash-and-liquidity
   kind: Entity
   path: entities/v1-alpha/dea:process-manage-cash-and-liquidity/dea:process-manage-cash-and-liquidity.yaml
@@ -7649,6 +7669,16 @@ records:
     L2_semantic: true
     L3_architectural: true
     L4_canonical: true
+  findings: []
+- id: dea:pc-sd-activate
+  kind: Unknown
+  path: contexts/v1-alpha/dea-pc-sd-activate.yaml
+  level: 3
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: false
   findings: []
 - id: dea:pc-sd-build
   kind: Unknown
