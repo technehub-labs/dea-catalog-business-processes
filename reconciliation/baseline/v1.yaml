@@ -441,11 +441,11 @@ records:
   - id: dea:process-activate-billing-capability
     type: Process
     path: entities/v1-alpha/dea:process-activate-billing-capability/dea:process-activate-billing-capability.yaml
-    sha256: 10fe5382e3c6987e4b596cdfe2508fb06bec73664b37c53856fd7f6a33c368d0
+    sha256: 37d3affc9e2722a08350a595c207472444d2fae0cafa2be53e43d61b89702139
   - id: dea:process-activate-operations-capability
     type: Process
     path: entities/v1-alpha/dea:process-activate-operations-capability/dea:process-activate-operations-capability.yaml
-    sha256: 466ae4d796836a68fd83f016428a85c37d687b16ba015f430abb25de8d174861
+    sha256: ee65902ee6daf2efb3aadf316487770ebe8132fd8dd9060fa600642dea64fde9
   - id: dea:process-adapt-strategic-direction
     type: Process
     path: entities/v1-alpha/dea:process-adapt-strategic-direction/dea:process-adapt-strategic-direction.yaml
@@ -789,7 +789,7 @@ records:
   - id: dea:process-institutionalize-regulated-strategic-plan
     type: Process
     path: entities/v1-alpha/dea:process-institutionalize-regulated-strategic-plan/dea:process-institutionalize-regulated-strategic-plan.yaml
-    sha256: 3045b55922a648f79612696daa3f0fadb35c72567c81a343616d09fb8cffc680
+    sha256: 1b445b485ab6336c8f517caa375a986595a566618de19620bcc7fea6f1fbec63
   - id: dea:process-manage-cash-and-liquidity
     type: Process
     path: entities/v1-alpha/dea:process-manage-cash-and-liquidity/dea:process-manage-cash-and-liquidity.yaml
@@ -817,7 +817,7 @@ records:
   - id: dea:process-mobilize-licensed-workforce
     type: Process
     path: entities/v1-alpha/dea:process-mobilize-licensed-workforce/dea:process-mobilize-licensed-workforce.yaml
-    sha256: 7a11aa2b4b26b3baaf8ca86c84edf788849631ffa2d46a78913b67bc237ff364
+    sha256: 434d86e03b3899da77abe67766d16c562416a8ae94d1587fc28060788afbff5f
   - id: dea:process-monitor-strategic-performance
     type: Process
     path: entities/v1-alpha/dea:process-monitor-strategic-performance/dea:process-monitor-strategic-performance.yaml

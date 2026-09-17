@@ -49,6 +49,11 @@ ecfConformance:
 metadata:
   established_by: CR-BP-81
   established_at: '2026-09-16'
+  activity_references:
+    - dea:activity-verify-regulator-licence-or-registration
+    - dea:activity-attest-fitness-and-propriety
+    - dea:activity-record-supervised-training-completion
+    - dea:activity-activate-signing-authority-or-controlled-function-designation
   change_history:
   - cr: CR-BP-81
     date: '2026-09-16'
@@ -71,6 +76,15 @@ metadata:
       admissions. BP-ARC-ID-001 satisfied: name "Mobilize Licensed
       Workforce" is verb + object form; id preserved unchanged from
       the CR-BP-80 discovery recommendation.
+  - cr: CR-BP-87
+    date: '2026-09-17'
+    change: |
+      L3 decomposition tranche (CR-BP-87): added metadata.activity_references
+      back-references to the 4 Activity records decomposing this BP. Version
+      unchanged per SIV-004 (additive metadata-only). Activities classified
+      per CR-BP-32 section 5; decomposition boundary marker l4-reached
+      per CR-BP-32 section 12 pending Task records (dea:Task lifecycle:
+      proposed). See research/l3-candidate-universe.yaml.
 links:
 - rel: change-request
   href: change-requests/CR-BP-81-ao-activate-admission.md

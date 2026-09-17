@@ -108,7 +108,15 @@ evidence:
     strength: E4
 
 # Change history (BP-010 enforces monotonicity).
-change_history:
+metadata:
+  established_by: CR-BP-87
+  established_at: '2026-09-17'
+  activity_references:
+    - dea:activity-file-supervisor-acknowledged-strategic-plan-submission
+    - dea:activity-complete-supervisor-review-and-obtain-acknowledgement-on-record
+    - dea:activity-launch-operational-monitoring-framework
+    - dea:activity-activate-communications-plan-under-regulator-continuing-supervision
+  change_history:
   - version: 1.0.0
     cr: CR-BP-86
     date: 2026-09-16
@@ -118,3 +126,13 @@ change_history:
       (ADMIT-CANONICAL at 9/10). Trigger, outcome, scope, evidence,
       ECF conformance, process identity, and change history blocks
       established.
+  - version: 1.0.0
+    cr: CR-BP-87
+    date: 2026-09-17
+    change: |
+      L3 decomposition tranche (CR-BP-87): added metadata.activity_references
+      back-references to the 4 Activity records decomposing this BP. Version
+      unchanged per SIV-004 (additive metadata-only). Activities classified
+      per CR-BP-32 section 5; decomposition boundary marker l4-reached
+      per CR-BP-32 section 12 pending Task records (dea:Task lifecycle:
+      proposed). See research/l3-candidate-universe.yaml.
