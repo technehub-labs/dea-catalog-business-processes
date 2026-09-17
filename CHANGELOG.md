@@ -6,6 +6,502 @@ All notable changes to this repository are documented here. Format follows
 
 ## [Unreleased]
 
+
+## [Unreleased]
+
+### Phase 2 conformance validators
+
+CR-BP-32/33/34/36 codify the activity, execution, semantic identity vs version, and MECE validators as standalone, machine-testable scripts wired into `conformance_result.py`. Four blocking + advisory gates added (gates [14]-[17]).
+
+#### CR-BP-34d: Semantic-Identity-vs-Version Validators (SIV-001..004) (PR #73)
+
+Phase 2 conformance validator: codifies semantic identity vs version rules from CR-BP-34 section 10 as SIV-001..004. Script `scripts/check_semantic_identity_version.py` + tests `tests/test_check_semantic_identity_version.py` (27 tests). Wired into conformance_result as gate [14]. Pure regression guard; no entity, schema, or gate change.
+
+Merged: 2026-09-12T01:59:37Z.
+
+Carrier: [change-requests/cr-bp-34d](change-requests/bp.md).
+
+#### CR-BP-32: Activity Model Validators (ACT-001..010) (PR #74)
+
+Activity Model validators: ACT-001..010 codifying BP-C3 standalone executability, BP-C4 resource dedication, ACT-002..010 traceability rules. Script `scripts/check_activity_model.py` + tests `tests/test_check_activity_model.py`. Wired into conformance_result as gate [15]. Pure regression guard.
+
+Merged: 2026-09-12T03:19:19Z.
+
+Carrier: [change-requests/cr-bp-32](change-requests/bp.md).
+
+#### CR-BP-33: Execution Boundary Validators (EXE-001..010) (PR #75)
+
+Execution Boundary validators: EXE-001..010 codifying BP-C1 input-output transformation, BP-C2 objective contribution, EXE-003..010 boundary rules. Script `scripts/check_execution_boundary.py` + tests `tests/test_check_execution_boundary.py`. Wired into conformance_result as gate [16].
+
+Merged: 2026-09-12T03:44:11Z.
+
+Carrier: [change-requests/cr-bp-33](change-requests/bp.md).
+
+#### CR-BP-36: MECE Validation (MECE-001..008) (PR #76)
+
+MECE validators: MECE-001..008 codifying Mutually Exclusive, Collectively Exhaustive rules across the L0-L3 hierarchy. Script `scripts/check_mECE_validity.py` (typo in path; renamed `scripts/check_mECE_validity.py`). 0 findings on landed catalog.
+
+Merged: 2026-09-12T04:19:47Z.
+
+Carrier: [change-requests/cr-bp-36](change-requests/bp.md).
+
+### Architecture retrospective
+
+CR-BP-35 anchors the long-form process catalog architecture ADR.
+
+#### CR-BP-35: Process Catalog Architecture Retrospective (PR #77)
+
+Process Catalog architecture retrospective. Documents the L0-L4 hierarchy, identity contract, 4-axis classification system, and the discovery-programme-loop rationale. Anchors the long-form ADR at `docs/architecture.md`.
+
+Merged: 2026-09-12T08:53:43Z.
+
+Carrier: [change-requests/cr-bp-35](change-requests/bp.md).
+
+### Cross-repo integrity + retrospective
+
+CR-BP-37 + CR-BP-38 codify the cross-repo integrity rules (XRI-001..005) and the ECF matrix population retrospective.
+
+#### CR-BP-37: Cross-Repository Integrity (XRI-001..005) (PR #78)
+
+Cross-Repository Integrity validators: XRI-001..005 codifying the rules for cross-repo identifier resolution, asymmetric identifier rule, coordinate consistency, evidence linkage, and boundary interpretation. Script `scripts/check_cross_repo_integrity.py` + tests.
+
+Merged: 2026-09-12T09:54:20Z.
+
+Carrier: [change-requests/cr-bp-37](change-requests/bp.md).
+
+#### CR-BP-38: ECF Matrix Population Retrospective (PR #79)
+
+ECF Matrix Population retrospective: documents the 49-coordinate matrix (7 Domains x 7 Stages) and the population progress (38 accepted / 11 deferred at v1; 35/14 at v2.4.0; 47/2 at post-CR-BP-87). Anchors the long-form ADR at `docs/ecf-matrix-population.md`.
+
+Merged: 2026-09-12T10:10:53Z.
+
+Carrier: [change-requests/cr-bp-38](change-requests/bp.md).
+
+### v0.3.0 reconciliation
+
+CR-BP-39 / -40 / -41 close the post-v0.1.0 documentation gap, promote XRI to gate [18], and cut the v0.3.0 release tag.
+
+#### CR-BP-39: CHANGELOG + README + docs Reconciliation (PR #80)
+
+First post-v0.1.0 reconciliation slice. Reconciles tracking artifacts (CHANGELOG, root README, change-requests/README) with main at `e371cff6` after the BP-32/33/34 tranche plan closure. Adds 7 missing `[Unreleased]` CHANGELOG entries (CR-BP-34d, -32, -33, -36, -35, -37, -38); corrects stale "Proposed (this PR)" status rows in both READMEs.
+
+Merged: 2026-09-12T13:01:06Z.
+
+Carrier: [change-requests/cr-bp-39](change-requests/bp.md).
+
+#### CR-BP-40: XRI Gate Promotion (XRI-001..005 -> Gate [18]) (PR #81)
+
+Promotes the XRI validators (CR-BP-37) to a blocking conformance gate [18]. Re-runs conformance_result to confirm 23 gates (10 blocking + 13 advisory) vs the 15-gate v0.1.0 baseline.
+
+Merged: 2026-09-12T14:13:28Z.
+
+Carrier: [change-requests/cr-bp-40](change-requests/bp.md).
+
+#### CR-BP-41: Third Release Cut (v0.3.0) (PR #82)
+
+Third release cut. Tags v0.3.0 at main @ `254678e6` (post-#81). Captures the entire post-v0.1.0 work as a single versioned snapshot. CHANGELOG [v0.3.0] section; CITATION.cff bumped 0.2.0 -> 0.3.0.
+
+Merged: 2026-09-13T07:52:17Z.
+
+Carrier: [change-requests/cr-bp-41](change-requests/bp.md).
+
+### L3 EO/PV/FA/S&D/A&O domain tranches
+
+CR-BP-42 (pilot) + CR-BP-43..57 (16 tranches across the 7 domains) land L3 coverage across all canonical domains: EO/PR/GE/PV/FA/S&D/A&O. From 5 Activity records (post-pilot) to 537 Activity records (post-CR-BP-79).
+
+#### CR-BP-42: L3 Activity Pilot Deposition (PR #83)
+
+L3 Activity pilot deposition: 4 Activity records for `dea:process-operate-quality-control`. Validates the structured deposition pattern (research/l3-candidate-universe.yaml + canonical Activity records + parent BP metadata.activity_references[]).
+
+Merged: 2026-09-13T06:59:15Z.
+
+Carrier: [change-requests/cr-bp-42](change-requests/bp.md).
+
+#### CR-BP-43: L3 Activity EO/Operate Tranche (PR #84)
+
+L3 EO/Operate tranche: 32 Activity records across 8 BPs in `dea:group-execution-and-fulfillment`. ecfConformance inheriting `ecf:enablementAndOperations.operate`.
+
+Merged: 2026-09-13T09:16:46Z.
+
+Carrier: [change-requests/cr-bp-43](change-requests/bp.md).
+
+#### CR-BP-44: L3 Activity PR Operate + Improve Tranche (PR #85)
+
+L3 PR Operate + Improve tranche: 8 Activity records across `dea:process-manage-customer-relationship` and `dea:process-customer-insight-and-retention`.
+
+Merged: 2026-09-13T09:27:50Z.
+
+Carrier: [change-requests/cr-bp-44](change-requests/bp.md).
+
+#### CR-BP-45: L3 Activity PR Conceive + Design + Build Tranche (PR #86)
+
+L3 PR Conceive + Design + Build tranche: 28 Activity records across 7 BPs. PartyAndRelationship is the first fully L3-covered domain (5/5 coordinates, 9 BPs, 36 Activities).
+
+Merged: 2026-09-13T10:44:43Z.
+
+Carrier: [change-requests/cr-bp-45](change-requests/bp.md).
+
+#### CR-BP-46: L3 Activity EO Conceive + Design Tranche (PR #87)
+
+L3 EO Conceive + Design tranche: 36 Activity records across 9 BPs (frame-operations-strategy through design-logistics-and-routing).
+
+Merged: 2026-09-13T12:08:45Z.
+
+Carrier: [change-requests/cr-bp-46](change-requests/bp.md).
+
+#### CR-BP-47: L3 Activity EO Build + Improve Tranche (PR #88)
+
+L3 EO Build + Improve tranche: 40 Activity records across 10 BPs. EnablementAndOperations is the second fully L3-covered domain (5/5 coordinates, 28 BPs, 113 Activities).
+
+Merged: 2026-09-13T12:48:35Z.
+
+Carrier: [change-requests/cr-bp-47](change-requests/bp.md).
+
+#### CR-BP-48: L3 Activity GE Conceive + Design + Build Tranche (PR #89)
+
+L3 GE Conceive + Design + Build tranche: 32 Activity records across 8 BPs. Deprecated `dea:process-develop-governance-strategy` excluded.
+
+Merged: 2026-09-13T13:19:48Z.
+
+Carrier: [change-requests/cr-bp-48](change-requests/bp.md).
+
+#### CR-BP-49: L3 Activity GE Improve + Operate Tranche (PR #90)
+
+L3 GE Improve + Operate tranche: 28 Activity records across 7 BPs. GovernanceAndExistence is the third fully L3-covered domain.
+
+Merged: 2026-09-13T13:41:29Z.
+
+Carrier: [change-requests/cr-bp-49](change-requests/bp.md).
+
+#### CR-BP-50: L3 Activity PV Conceive + Design + Build Tranche (PR #91)
+
+L3 PV Conceive + Design + Build tranche: 40 Activity records across 10 BPs. ProductAndValue domain.
+
+Merged: 2026-09-13T13:58:39Z.
+
+Carrier: [change-requests/cr-bp-50](change-requests/bp.md).
+
+#### CR-BP-51: L3 Activity PV Improve + Operate Tranche (PR #92)
+
+L3 PV Improve + Operate tranche: 24 Activity records across 6 BPs. ProductAndValue is the fourth fully L3-covered domain.
+
+Merged: 2026-09-13T14:17:22Z.
+
+Carrier: [change-requests/cr-bp-51](change-requests/bp.md).
+
+#### CR-BP-52: L3 Activity FA Conceive + Design + Build Tranche (PR #93)
+
+L3 FA Conceive + Design + Build tranche: 36 Activity records across 9 BPs. FinanceAndAccounting domain.
+
+Merged: 2026-09-13T14:45:03Z.
+
+Carrier: [change-requests/cr-bp-52](change-requests/bp.md).
+
+#### CR-BP-53: L3 Activity FA Improve + Operate Tranche (PR #94)
+
+L3 FA Improve + Operate tranche: 44 Activity records across 11 BPs. FinanceAndAccounting is the fifth fully L3-covered domain.
+
+Merged: 2026-09-13T15:08:40Z.
+
+Carrier: [change-requests/cr-bp-53](change-requests/bp.md).
+
+#### CR-BP-54: L3 Activity S&D Conceive + Design + Build Tranche (PR #95)
+
+L3 S&D Conceive + Design + Build tranche: 48 Activity records across 12 BPs. SupplyAndDemand domain.
+
+Merged: 2026-09-13T23:11:23Z.
+
+Carrier: [change-requests/cr-bp-54](change-requests/bp.md).
+
+#### CR-BP-55: L3 Activity S&D Improve + Operate Tranche (PR #96)
+
+L3 S&D Improve + Operate tranche: 28 Activity records across 7 BPs. SupplyAndDemand is the sixth fully L3-covered domain.
+
+Merged: 2026-09-14T01:55:44Z.
+
+Carrier: [change-requests/cr-bp-55](change-requests/bp.md).
+
+#### CR-BP-56: L3 Activity A&O Conceive + Design + Build Tranche (PR #97)
+
+L3 A&O Conceive + Design + Build tranche: 36 Activity records across 9 BPs. AgencyAndOrganization domain.
+
+Merged: 2026-09-14T02:08:54Z.
+
+Carrier: [change-requests/cr-bp-56](change-requests/bp.md).
+
+#### CR-BP-57: L3 Activity A&O Improve + Operate Tranche (PR #98)
+
+L3 A&O Improve + Operate tranche: 36 Activity records across 9 BPs. AgencyAndOrganization is the seventh fully L3-covered domain. All seven canonical domains now covered end-to-end at L0-L3.
+
+Merged: 2026-09-14T03:38:21Z.
+
+Carrier: [change-requests/cr-bp-57](change-requests/bp.md).
+
+### Gate / documentation repair
+
+CR-BP-58..61 repair the PG gate, catalog schema default path, documentation currency, and DOC-001/DOC-003 gate precision.
+
+#### CR-BP-58: PG gate repair + dangling composes edge removal (PR #99)
+
+PG gate repair slice: removes dangling composes edges; resolves PG-006..PG-008 gate findings on the promoted PGs. Additive-only; no record, schema, or validator-rule change.
+
+Merged: 2026-09-14T04:51:43Z.
+
+Carrier: [change-requests/cr-bp-58](change-requests/bp.md).
+
+#### CR-BP-59: catalog schema default path repair (PR #100)
+
+Catalog schema default-path repair: fixes the catalog-index-schema default path resolution in conformance_result.py + regenerate_catalog.py. No schema content change.
+
+Merged: 2026-09-14T05:02:09Z.
+
+Carrier: [change-requests/cr-bp-59](change-requests/bp.md).
+
+#### CR-BP-60: documentation currency for the landed L3 layer (PR #101)
+
+Documentation currency slice: updates `docs/architecture.md`, `docs/process-catalog.md`, `docs/ecf-matrix-population.md` to reflect the post-v0.3.0 L3 layer (553 Activities across all 7 domains). No entity change.
+
+Merged: 2026-09-14T05:22:41Z.
+
+Carrier: [change-requests/cr-bp-60](change-requests/bp.md).
+
+#### CR-BP-61: documentation gate precision repair (DOC-001/DOC-003) (PR #102)
+
+Documentation gate precision repair: DOC-001 (every BP must link to its carrier CR) and DOC-003 (every PC must link to its cell charter) tightened; gate wired into conformance_result as gate [17]. 0 findings.
+
+Merged: 2026-09-14T06:12:26Z.
+
+Carrier: [change-requests/cr-bp-61](change-requests/bp.md).
+
+### Lifecycle discovery method + Activate/Retire exercise
+
+CR-BP-62 / -63 codify the BP-LIFE-001..015 lifecycle criteria + the first Activate/Retire discovery exercise.
+
+#### CR-BP-62: lifecycle process discovery method + DISC-001..008 gate (PR #103)
+
+Lifecycle process discovery method: codifies the BP-LIFE-001..015 lifecycle criteria + the escape-clause method (DISC-001..008). Disc-gate suite. Foundation for the four-cell discovery programme.
+
+Merged: 2026-09-14T08:34:09Z.
+
+Carrier: [change-requests/cr-bp-62](change-requests/bp.md).
+
+#### CR-BP-63: Activate/Retire lifecycle discovery exercise (PR #104)
+
+First Activate/Retire lifecycle discovery exercise: 7 escape records at the 14 backlog-deferred Activate/Retire cells. Dispositions: 9 ADMIT-CANONICAL, 4 DEFER (Activate/Retire cross-domain overlap), 1 follow-on.
+
+Merged: 2026-09-14T11:05:34Z.
+
+Carrier: [change-requests/cr-bp-63](change-requests/bp.md).
+
+### First admission tranche wave
+
+CR-BP-64..68 land the first 4 admission tranches (P&V Activate+Retire, G&E Activate, E&O Retire, P&R Retire, PC processes-list hygiene). Register v9 -> v13.
+
+#### CR-BP-64: P&V Activate/Retire admission tranche (PR #105)
+
+P&V Activate + Retire admission tranche: 4 BPs at P&V.Activate + P&V.Retire cells. Register v9 -> v10 (cells flip from backlog-deferred to ratified-accepted/landed).
+
+Merged: 2026-09-14T11:20:04Z.
+
+Carrier: [change-requests/cr-bp-64](change-requests/bp.md).
+
+#### CR-BP-65: G&E Activate admission tranche (Bring into Force) (PR #106)
+
+G&E Activate admission tranche: 1 BP `dea:process-bring-into-force`. Register v10 -> v11.
+
+Merged: 2026-09-14T14:29:05Z.
+
+Carrier: [change-requests/cr-bp-65](change-requests/bp.md).
+
+#### CR-BP-66: E&O Retire admission tranche (Decommission) (PR #107)
+
+E&O Retire admission tranche: 1 BP `dea:process-decommission`. Register v11 -> v12.
+
+Merged: 2026-09-14T14:45:14Z.
+
+Carrier: [change-requests/cr-bp-66](change-requests/bp.md).
+
+#### CR-BP-67: P&R Retire admission tranche (Close Enterprise Relationship) (PR #108)
+
+P&R Retire admission tranche: 1 BP `dea:process-close-enterprise-relationship`. Register v12 -> v13.
+
+Merged: 2026-09-14T15:56:19Z.
+
+Carrier: [change-requests/cr-bp-67](change-requests/bp.md).
+
+### PC processes-list hygiene
+
+CR-BP-68 repairs the PC processes-list hygiene; PC-008 wired as a blocking gate.
+
+#### CR-BP-68: PC processes-list hygiene + PC-008 resolution gate (PR #109)
+
+PC processes-list hygiene: every PC carries a non-empty processes list; PC-008 wired as a blocking gate. 0 findings.
+
+Merged: 2026-09-15T04:20:14Z.
+
+Carrier: [change-requests/cr-bp-68](change-requests/bp.md).
+
+### First admitted-BP L3 tranche
+
+CR-BP-69 decomposes the 5 BPs from the first admission wave to 20 Activity records.
+
+#### CR-BP-69: admitted-BP L3 decomposition tranche (PR #110)
+
+First admitted-BP L3 decomposition tranche: 5 BPs (from the first admission tranche wave) decomposed to 20 Activity records. Pattern validation for subsequent admitted-BP tranches.
+
+Merged: 2026-09-15T04:31:52Z.
+
+Carrier: [change-requests/cr-bp-69](change-requests/bp.md).
+
+### Escape-clause discovery + admission wave 2
+
+CR-BP-70..76 / -78 land the second discovery wave at P&R.Activate, A&O.Retire, F&A.Retire, G&E.Retire (4 escape records + 4 admissions). Register v13 -> v17.
+
+#### CR-BP-70: P&R Activate escape-clause discovery (KYC) (PR #111)
+
+P&R Activate escape-clause discovery: 1 escape record for the P&R.Activate backlog-deferred cell. Candidate: `Onboard Regulated Party Relationship` (KYC). 10/10 ADMIT-CANONICAL.
+
+Merged: 2026-09-15T06:26:02Z.
+
+Carrier: [change-requests/cr-bp-70](change-requests/bp.md).
+
+#### CR-BP-71: P&R Activate admission tranche (Regulated Onboarding, KYC) (PR #112)
+
+P&R Activate admission tranche: 1 BP `dea:process-onboard-regulated-party-relationship`. Register v13 -> v14.
+
+Merged: 2026-09-15T08:04:02Z.
+
+Carrier: [change-requests/cr-bp-71](change-requests/bp.md).
+
+#### CR-BP-72: A&O Retire escape-clause discovery (mass-layoff regulated wind-down) (PR #113)
+
+A&O Retire escape-clause discovery: 1 escape record. Candidate: `Conduct Regulated Workforce Wind-Down` (mass-layoff regulated wind-down). 10/10 ADMIT-CANONICAL.
+
+Merged: 2026-09-15T08:23:49Z.
+
+Carrier: [change-requests/cr-bp-72](change-requests/bp.md).
+
+#### CR-BP-73: A&O Retire admission tranche (Regulated Workforce Wind-Down) (PR #114)
+
+A&O Retire admission tranche: 1 BP `dea:process-conduct-regulated-workforce-wind-down`. Register v14 -> v15.
+
+Merged: 2026-09-15T11:49:16Z.
+
+Carrier: [change-requests/cr-bp-73](change-requests/bp.md).
+
+#### CR-BP-74: F&A Retire escape-clause discovery (Regulated Run-Off) (PR #115)
+
+F&A Retire escape-clause discovery: 1 escape record. Candidate: `Conclude Regulated Run-Off`. 10/10 ADMIT-CANONICAL.
+
+Merged: 2026-09-15T13:28:14Z.
+
+Carrier: [change-requests/cr-bp-74](change-requests/bp.md).
+
+#### CR-BP-75: F&A Retire admission tranche (Regulated Run-Off) (PR #116)
+
+F&A Retire admission tranche: 1 BP `dea:process-conclude-regulated-run-off`. Register v15 -> v16.
+
+Merged: 2026-09-15T17:31:14Z.
+
+Carrier: [change-requests/cr-bp-75](change-requests/bp.md).
+
+#### CR-BP-76: G&E Retire escape-clause discovery (regulator-mandated governance unwind) (PR #118)
+
+G&E Retire escape-clause discovery: 1 escape record. Candidate: `Effect Regulator-Mandated Governance Unwind`. 10/10 ADMIT-CANONICAL.
+
+Merged: 2026-09-16T01:25:52Z.
+
+Carrier: [change-requests/cr-bp-76](change-requests/bp.md).
+
+#### CR-BP-78: G&E Retire admission tranche (Regulator-Mandated Governance Unwind) (PR #119)
+
+G&E Retire admission tranche: 1 BP `dea:process-effect-regulator-mandated-governance-unwind`. Register v16 -> v17.
+
+Merged: 2026-09-16T05:43:53Z.
+
+Carrier: [change-requests/cr-bp-78](change-requests/bp.md).
+
+### Second admitted-BP L3 tranche
+
+CR-BP-77 + CR-BP-79 decompose the 4 BPs from wave 2 to 16 Activity records (12 + 4).
+
+#### CR-BP-77: L3 Activity Admitted-Regulated-BP Tranche (PR #117)
+
+Second admitted-BP L3 tranche: 3 BPs (P&R.Activate / A&O.Retire / F&A.Retire) decomposed to 12 Activity records.
+
+Merged: 2026-09-16T00:58:10Z.
+
+Carrier: [change-requests/cr-bp-77](change-requests/bp.md).
+
+#### CR-BP-79: L3 Activity G&E-Retire admission tranche (PR #120)
+
+L3 G&E.Retire admitted-BP tranche: 4 Activity records decomposing `dea:process-effect-regulator-mandated-governance-unwind`.
+
+Merged: 2026-09-16T06:54:24Z.
+
+Carrier: [change-requests/cr-bp-79](change-requests/bp.md).
+
+### Five-cell escape-clause discovery exercise
+
+CR-BP-80 exercises the 5 backlog-deferred cells: 4 ADMIT-CANONICAL, 1 DEFER. Sets up the four-cell discovery programme.
+
+#### CR-BP-80: L0 escape-clause discovery for the five backlog-deferred cells (PR #121)
+
+Fifth escape-clause exercise: 5 escape records at the 5 backlog-deferred cells after CR-BP-63 + four cell-flip tranches. Dispositions: 4 ADMIT-CANONICAL (AO.Activate / EO.Activate / FA.Activate / SD.Activate), 1 DEFER (SD.Retire).
+
+Merged: 2026-09-16T08:07:35Z.
+
+Carrier: [change-requests/cr-bp-80](change-requests/bp.md).
+
+### Four-cell discovery programme (admissions)
+
+CR-BP-81 / -82 / -83 / -86 land the four admission tranches at AO.Activate / EO.Activate / FA.Activate / SD.Activate. Register v17 -> v21. All four ADMIT-CANONICAL cells now have canonical PC + PG + BP stacks.
+
+#### CR-BP-81: AO.Activate admission (Mobilize Licensed Workforce) (PR #122)
+
+AO.Activate admission tranche: 1 BP `dea:process-mobilize-licensed-workforce`. Register v17 -> v18. First of the four-cell discovery programme admissions.
+
+Merged: 2026-09-16T08:46:25Z.
+
+Carrier: [change-requests/cr-bp-81](change-requests/bp.md).
+
+#### CR-BP-82: EO.Activate admission (Activate Operations Capability) (PR #123)
+
+EO.Activate admission tranche: 1 BP `dea:process-activate-operations-capability`. Register v18 -> v19.
+
+Merged: 2026-09-16T13:28:16Z.
+
+Carrier: [change-requests/cr-bp-82](change-requests/bp.md).
+
+#### CR-BP-83: FA.Activate admission (Activate Billing Capability) (PR #124)
+
+FA.Activate admission tranche: 1 BP `dea:process-activate-billing-capability`. Register v19 -> v20.
+
+Merged: 2026-09-16T15:52:59Z.
+
+Carrier: [change-requests/cr-bp-83](change-requests/bp.md).
+
+#### CR-BP-86: SD.Activate admission (Institutionalize Regulated Strategic Plan) (PR #125)
+
+SD.Activate admission tranche: 1 BP `dea:process-institutionalize-regulated-strategic-plan`. Register v20 -> v21. Trigger maxLength 500 trimmed during recipe discipline; final 359 chars.
+
+Merged: 2026-09-17T00:31:24Z.
+
+Carrier: [change-requests/cr-bp-86](change-requests/bp.md).
+
+### Combined L3 decomposition tranche
+
+CR-BP-87 decomposes the 4 newly-admitted Activate BPs to 16 Activity records in a single combined slice (Option A). Discovery-programme closure.
+
+#### CR-BP-87: L3 Activity Admitted-Activate-BP Decomposition Tranche (PR #126)
+
+Combined L3 decomposition tranche: 4 BPs (Mobilize Licensed Workforce / Activate Operations Capability / Activate Billing Capability / Institutionalize Regulated Strategic Plan) decomposed to 16 Activity records. Discovery-programme closure: all 5 backlog-deferred cells from CR-BP-80 are now closed.
+
+Merged: 2026-09-17T05:38:01Z.
+
+Carrier: [change-requests/cr-bp-87](change-requests/bp.md).
+
+
 ## [v0.3.0] - 2026-09-12
 
 Third tagged release. Captures the entire post-v0.1.0 work as a single versioned snapshot: the ECF v2.3.0/v2.4.0/v2.5.0 cascade (CR-BP-17, -18, -23), the BP-32/33/34 tranche plan (CR-BP-32, -33, -34a-d, -35, -36, -37, -38), the XRI asset + gate promotion (CR-BP-37 + CR-BP-40), the CHANGELOG + README reconciliation (CR-BP-39), and the carrier CRs (CR-BP-30, -31). The catalogue at v0.3.0 is materially different from v0.1.0 in every dimension that downstream consumers care about.
