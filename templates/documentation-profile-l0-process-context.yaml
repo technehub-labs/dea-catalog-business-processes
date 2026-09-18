@@ -1,0 +1,152 @@
+# =============================================================================
+# templates/documentation-profile-l0-process-context.yaml
+# CR-BP-94-EXT-01a (L0 ProcessContext profile).
+# Reopens CR-BP-94-EXT-01 (PR #137, merged at 35a0a838) to add the
+# cardinal-entity profile coverage that the original slice omitted.
+#
+# Cardinal entities are ProcessContext (L0) and ProcessGroup (L1) per
+# CR-BP-92 §7 (decomposition matrix) and CR-BP-93 (semantic contract).
+# Their documentation is structurally distinct from L2/L3/L4 and
+# cannot be folded into those profiles.
+# =============================================================================
+
+profile_id: dea:profile-readme-l0-process-context-v1
+profile_version: 1.0.0
+
+# Discriminator key (CR-BP-94-EXT-01 critical design decision: do not
+# conflate entity type with decomposition level).
+applies_to:
+  entity_type: ProcessContext
+  decomposition_level: L0
+
+# Lifecycle-specific applicability (REQ-09). L0 ProcessContexts are
+# the top-level decomposition units; they are not deprecated; they
+# are reorganized under a different metamodel.
+lifecycle_applicability:
+  candidate:
+    obligations: [structure]
+  active:
+    obligations: [structure, semantics]
+  research:
+    obligations: [structure]
+  deprecated:
+    note: |
+      L0 ProcessContexts are not deprecated. Lifecycle transitions at L0
+      are: candidate -> active -> reorganized. The reorganized state
+      has its own obligations (see EXT-04 lifecycle coverage model).
+    obligations: []
+  retired:
+    note: |
+      L0 ProcessContexts are not retired in the canonical sense; they
+      are reorganized. The retired state does not apply to L0.
+    obligations: []
+
+# Required section identifiers (CR-BP-94-EXT-01 §3.2).
+required_section_ids:
+  - entity-identity            # REQ-04.1: canonical id, name, type, level
+  - formal-definition         # REQ-04.2: bounded scope + adjacency
+  - semantic-dimensions       # REQ-04.3: ontological + teleological only
+  - decomposition             # REQ-04.4: contained L1 Process Groups
+  - behavior                  # REQ-04.5: lifecycle stage profile (advisory)
+  - interfaces                # REQ-04.6: adjacent contexts (PG-006 MECE)
+  - roles                     # REQ-04.7: domain ownership / stewardship
+  - rules-controls            # REQ-04.8: ECF alignment rules + governance
+  - evidence                  # REQ-04.9: CR-BP history + provenance
+  - completeness              # REQ-04.10: per-dimension coverage status
+  - revision-history          # REQ-04.11: governing CR + change log
+
+# Conditional sections (included when applicable).
+conditional_section_ids:
+  - outcomes                   # L0 does NOT own metrics; inherited from ECF framework
+  - business-rules             # only if domain-specific controls exist
+  - workflow-visualization     # only if stage profile is non-trivial
+
+# Sections NOT applicable at L0 (omitted entirely).
+not_applicable_section_ids:
+  - execution-steps            # L0 has no execution semantics
+
+# Evidence requirements.
+evidence_requirements:
+  - identity facts cross-checked against metamodel registry
+  - contained L1 Process Groups enumerated in `decomposition`
+  - adjacent contexts cross-checked against ECF framework
+  - governing CR cross-referenced
+
+# Section definitions (stable identifiers).
+sections:
+  entity-identity:
+    title: "Entity Identity and Classification"
+    source: yaml
+    structure: table
+
+  formal-definition:
+    title: "Formal Definition and Scope"
+    subsections:
+      - definition
+      - bounded_scope
+      - adjacency
+      - applicability
+
+  semantic-dimensions:
+    title: "Canonical Semantic Dimensions"
+    subsections:
+      - ontological
+      - teleological
+    note: |
+      Behavioral, structural, and governance dimensions are inherited
+      from contained L1 Process Groups and the ECF framework.
+
+  decomposition:
+    title: "Decomposition and Composition"
+    subsections:
+      - contained_process_groups
+      - bounded_coverage_statement
+      - boundary_and_responsibility
+
+  behavior:
+    title: "Lifecycle Stage Profile"
+    subsections:
+      - lifecycle_stages
+      - ack_marker
+
+  interfaces:
+    title: "Adjacent Contexts and Interfaces"
+    subsections:
+      - adjacent_contexts_table
+      - adjacency_rationale
+
+  roles:
+    title: "Stewardship and Ownership"
+    subsections:
+      - domain_steward
+      - governing_committee
+
+  rules-controls:
+    title: "Governance and Controls"
+    subsections:
+      - ecf_alignment_rules
+      - domain_governance
+
+  evidence:
+    title: "Evidence and Traceability"
+    structure: table
+
+  completeness:
+    title: "Documentation Completeness"
+    structure: table
+
+  revision-history:
+    title: "Revision History"
+    structure: table
+
+# Validation hook (the in-process validator consumes this profile).
+validator:
+  family: documentation-profile
+  rule_range: [DOC-001, DOC-005]
+  generator_outputs: |
+    ${profile_id} resolves to `entity-identity`, `formal-definition`,
+    `semantic-dimensions`, `decomposition`, `behavior`, `interfaces`,
+    `roles`, `rules-controls`, `evidence`, `completeness`,
+    `revision-history`. Conditional sections may be omitted. All
+    required sections are subject to DOC-001/DOC-002/DOC-003/DOC-005
+    checks at `validated` lifecycle state.

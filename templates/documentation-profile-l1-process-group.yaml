@@ -1,0 +1,157 @@
+# =============================================================================
+# templates/documentation-profile-l1-process-group.yaml
+# CR-BP-94-EXT-01a (L1 ProcessGroup profile).
+# Reopens CR-BP-94-EXT-01 (PR #137, merged at 35a0a838) to add the
+# cardinal-entity profile coverage that the original slice omitted.
+#
+# Cardinal entities are ProcessContext (L0) and ProcessGroup (L1) per
+# CR-BP-92 §7 (decomposition matrix) and CR-BP-93 (semantic contract).
+# =============================================================================
+
+profile_id: dea:profile-readme-l1-process-group-v1
+profile_version: 1.0.0
+
+# Discriminator key.
+applies_to:
+  entity_type: ProcessGroup
+  decomposition_level: L1
+
+# Lifecycle-specific applicability.
+lifecycle_applicability:
+  candidate:
+    obligations: [structure]
+  active:
+    obligations: [structure, semantics]
+  research:
+    obligations: [structure]
+  deprecated:
+    note: |
+      L1 ProcessGroups are not deprecated in the canonical sense;
+      they are reorganized under a different ProcessContext when the
+      value stream changes.
+    obligations: []
+  retired:
+    note: |
+      L1 ProcessGroups are not retired in the canonical sense; they
+      are reorganized. The retired state does not apply to L1.
+    obligations: []
+
+# Required section identifiers.
+required_section_ids:
+  - entity-identity
+  - formal-definition
+  - semantic-dimensions
+  - decomposition
+  - behavior
+  - interfaces
+  - roles
+  - rules-controls
+  - evidence
+  - completeness
+  - revision-history
+
+# Conditional sections.
+conditional_section_ids:
+  - outcomes                   # L1 does not own BP-level metrics
+  - workflow-visualization     # only if MECE boundaries are non-trivial
+
+# Sections NOT applicable at L1.
+not_applicable_section_ids:
+  - execution-steps            # L1 has no execution semantics
+
+# Evidence requirements.
+evidence_requirements:
+  - identity facts cross-checked against metamodel registry
+  - contained L2 Business Processes enumerated
+  - parent ProcessContext cross-checked (PG-003 resolution)
+  - adjacent Process Groups cross-checked (PG-006 MECE)
+  - grouping_basis field cross-checked when present (CR-BP-95 PG-009)
+  - membership_criteria field cross-checked when present (CR-BP-95 PG-010)
+  - governing CR cross-referenced
+
+# Section definitions.
+sections:
+  entity-identity:
+    title: "Entity Identity and Classification"
+    source: yaml
+    structure: table
+
+  formal-definition:
+    title: "Formal Definition and Scope"
+    subsections:
+      - definition
+      - bounded_scope
+      - includes
+      - excludes
+      - applicability
+
+  semantic-dimensions:
+    title: "Canonical Semantic Dimensions"
+    subsections:
+      - ontological
+      - teleological
+    note: |
+      Behavioral and structural dimensions reference contained L2
+      Business Processes and the parent ProcessContext.
+
+  decomposition:
+    title: "Decomposition and Composition"
+    subsections:
+      - parent_process_context
+      - contained_business_processes
+      - grouping_basis
+      - membership_criteria
+      - bounded_coverage_statement
+      - boundary_and_responsibility
+
+  behavior:
+    title: "Lifecycle Stage Coverage and Behavior"
+    subsections:
+      - lifecycle_stages_covered
+      - main_flow
+      - exception_paths
+
+  interfaces:
+    title: "Adjacent Process Groups and Interfaces"
+    subsections:
+      - adjacent_process_groups_table
+      - adjacency_rationale
+      - upstream_dependencies
+      - downstream_dependencies
+
+  roles:
+    title: "Stewardship and Ownership"
+    subsections:
+      - domain_steward
+      - bp_owners
+
+  rules-controls:
+    title: "Governance and Controls"
+    subsections:
+      - mece_guarantees
+      - grouping_basis_rules
+
+  evidence:
+    title: "Evidence and Traceability"
+    structure: table
+
+  completeness:
+    title: "Documentation Completeness"
+    structure: table
+
+  revision-history:
+    title: "Revision History"
+    structure: table
+
+# Validation hook.
+validator:
+  family: documentation-profile
+  rule_range: [DOC-001, DOC-005]
+  generator_outputs: |
+    ${profile_id} resolves to `entity-identity`, `formal-definition`,
+    `semantic-dimensions`, `decomposition`, `behavior`, `interfaces`,
+    `roles`, `rules-controls`, `evidence`, `completeness`,
+    `revision-history`. Conditional sections may be omitted. The
+    `grouping_basis` and `membership_criteria` subsections (per
+    CR-BP-95 PG-009/PG-010) are required when those fields are
+    present in the YAML; they are otherwise conditional.
