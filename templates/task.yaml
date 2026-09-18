@@ -2,9 +2,12 @@
 # templates/task.yaml
 # CR-BP-94 (Decomposition Record Templates); recon-programme slice CR-BP-92 §9.
 # CR-BP-93 (Decomposition Semantic Contract) §7 normative basis.
-# CR-BP-98 (Task Boundary and Workflow Realization): future slice; this
-# template is the first normative description of the L4 record shape and
-# will be reconciled against CR-BP-98 when that slice lands.
+# CR-BP-98 (Task Boundary and Workflow Realization): SLICE LANDED.
+#   The `# TODO(CR-BP-98):` placeholders from CR-BP-94 are now resolved
+#   by `schemas/entities/task.schema.json` (the canonical L4 schema)
+#   and `scripts/check_task_model.py` (TASK-001..005 structural
+#   validator). The schema is normative; this template is the
+#   authoring skeleton.
 # =============================================================================
 #
 # What this template IS:
@@ -20,65 +23,65 @@
 # Authoring flow:
 #   1. Copy to entities/v1-alpha/dea:task-<kebab-name>/dea:task-<kebab-name>.yaml.
 #   2. Replace every `<...>` placeholder.
-#   3. CR-BP-98 (Task Boundary and Workflow Realization) will establish the
-#      L4 schema + gate. Until then, this template is normative-by-template;
-#      no gate enforces its structure today.
+#   3. The structural validator `scripts/check_task_model.py` (TASK-001..005)
+#      enforces the schema-derived invariants on every PR.
+#   4. The Execution Boundary validator (EXE-001..010) ensures no
+#      workflow / orchestration semantics leak into the Task record.
 #
 # CR-BP-94 design intent: this template carries the normative L4 shape so
 # that future L4 population tranches (CR-BP-99 reconciliation or a dedicated
-# L4 tranche) have an authoritative authoring skeleton. The fields marked
-# `# TODO(CR-BP-98):` are placeholders that will be reconciled when the
-# L4/WF slice lands.
+# L4 tranche) have an authoritative authoring skeleton. CR-BP-98 lands the
+# formal schema and the TASK-001..005 gate that enforces it.
 
-id: dea:task-<kebab-name>           # TODO(CR-BP-98): id family `dea:task-*` per CR-BP-04 §4.
-type: Task                           # TODO(CR-BP-98): discriminator; always `Task` for L4 entries.
+id: dea:task-<kebab-name>           # CR-BP-04 §4 id family: dea:task-*.
+type: Task                           # Discriminator; always `Task` for L4 entries.
 
 # -----------------------------------------------------------------------------
-# TODO(CR-BP-98): L4 required fields. Below is the normative L4 shape per
-# CR-BP-93 §7. CR-BP-98 will codify the schema + gate enforcement.
+# Required fields (CR-BP-93 §9: Definition / Boundary / Trigger / Outcome /
+# Responsibility / Evidence are Required at L4).
 # -----------------------------------------------------------------------------
 
-name: <Verb Object>                  # TODO(CR-BP-98): 1-200 chars. Verb-object form.
-                                     # Example: 'Submit Filing to Regulator', 'Verify Party Identity'.
-version: 1.0.0                       # TODO(CR-BP-98): SemVer; bump on semantic change (SIV-001..004).
+name: <Verb Object>                  # 1-200 chars. Verb-object form.
+                                     # Example: 'Submit Filing to Regulator'.
+version: 1.0.0                       # SemVer; bump on semantic change (SIV-001..004).
 
-lifecycle_status: candidate          # TODO(CR-BP-98): `candidate | active | deprecated | retired`.
-status: candidate                    # TODO(CR-BP-98): Discovery status (CR-BP-11 dispositions).
+lifecycle_status: candidate          # candidate | active | deprecated | retired.
+status: candidate                    # Discovery status (CR-BP-11 dispositions).
 
-definition: |                        # TODO(CR-BP-98): 1-2000 chars; bounded, actionable, single-responsibility.
+definition: |                        # 1-2000 chars; bounded, actionable, single-responsibility.
   <The bounded unit of work performed at the L4 layer.
-  A good definition answers: 'What is the single bounded unit of work?
+  A good definition answers: 'What is the single bounded unit of work?'
   A Task is independently verifiable for completion.>
 
-belongs_to_activity: dea:activity-<parent-activity-id>  # TODO(CR-BP-98): must resolve to a canonical L3 Activity.
+belongs_to_activity: dea:activity-<parent-activity-id>  # Must resolve to a canonical L3 Activity.
 
-trigger: |                           # TODO(CR-BP-98): required at L4 (per CR-BP-92 §5 matrix).
+trigger: |                           # Required at L4 (per CR-BP-92 §5 matrix).
   <What initiates this Task. Single-responsibility, bounded.>
 
-outcome: |                           # TODO(CR-BP-98): required at L4 (Completion state per CR-BP-92 §5).
+outcome: |                           # Required at L4 (Completion state per CR-BP-92 §5).
   <The completion state. Verifiable for completion.>
 
 # -----------------------------------------------------------------------------
-# TODO(CR-BP-98): responsibility, evidence, boundary.
+# Responsibility + boundary + evidence (TASK-002/003/004).
 # -----------------------------------------------------------------------------
 
-responsibility: |                    # TODO(CR-BP-98): bounded responsibility (one role or capability).
+responsibility: |                    # Bounded responsibility (one role or capability).
   <The role or capability responsible for executing this Task.>
 
-boundary:                            # TODO(CR-BP-98): inclusions / exclusions.
+boundary:                            # Inclusions / exclusions (Required at L4).
   inclusions:
     - <what this Task does include>
   exclusions:
     - <what this Task does NOT include (deferred to other Tasks or downstream)>
 
-evidence:                            # TODO(CR-BP-98): structured evidence.
+evidence:                            # Structured evidence per CR-BP-92 §13.
   - source: <evidence source>
     claim: <the claim>
     strength: E2
     # url: <https://...>
 
 # -----------------------------------------------------------------------------
-# ECF conformance (gate [8] expectation): inherits the parent Activity's
+# ECF conformance (CR-ECF-CG-004): inherits the parent Activity's
 # coordinate (which inherits the parent BP's coordinate).
 # -----------------------------------------------------------------------------
 
@@ -95,7 +98,7 @@ ecfConformance:
       identifier: ecf:<domainCamel>.<stage>
 
 # -----------------------------------------------------------------------------
-# Metadata + change_history (CR-BP-98 will codify gate enforcement).
+# Metadata + change_history.
 # -----------------------------------------------------------------------------
 
 metadata:
@@ -120,6 +123,10 @@ metadata:
 #   - orchestration         (choreography)
 #   - state transitions     (state machines)
 #   - automation            (RPA, scheduled, etc.)
+#
+# TASK-005 (check_task_model.py) enforces this constraint: any field
+# from DISALLOWED_L4_FIELDS triggers a finding. CR-BP-33 EXE-001..010
+# enforce the same discipline on BP records.
 #
 # Composition (Activity --composes--> Task) is structural only and does NOT
 # imply any of the above. (CR-BP-32 §7, §11; CR-BP-92 §11 RF-09.)
