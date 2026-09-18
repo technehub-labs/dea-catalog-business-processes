@@ -7,7 +7,8 @@
 #   - schemas/entities/activity.schema.json (sibling reference)
 # Gates (gate [11] L2 Qualification, gate [4] Semantics, gate [12] Intent Purposive,
 # gate [13] Lifecycle State-Machine, gate [14] Semantic Identity vs Version):
-#   - BP-C1..C4  (scripts/check_l2_qualification.py)
+#   - BP-C1..C4  (scripts/check_l2_qualification.py)  (CR-BP-34a; mandatory)
+#   - BP-QUAL-001..012  (scripts/check_l2_qualification.py)  (CR-BP-96; alias family + advisory extensions)
 #   - BP-SEM-001..014 (scripts/check_process_semantics.py)
 #   - BP-AR-001..007 (scripts/check_architectural_regression.py)
 #   - LCM-001..005 (scripts/check_lifecycle_state.py)
@@ -140,6 +141,43 @@ metadata:
       date: <YYYY-MM-DD>
       change: |
         <Concise description.>
+
+# -----------------------------------------------------------------------------
+# OPTIONAL: inputs / transformation / outputs / responsibility / boundary.
+# CR-BP-96 BP-QUAL-003/004/005/008/009 (advisory). When present, the
+# structure is enforced by scripts/check_l2_qualification.py.
+# Back-compat: existing pre-CR-BP-96 BP records remain conformant without
+# these fields (advisory passes vacuously when the field is absent).
+# Backfill across the existing 139 BP records is the work of CR-BP-99 or a
+# dedicated L2 enrichment tranche, NOT of CR-BP-96.
+# -----------------------------------------------------------------------------
+
+# inputs:                              # BP-QUAL-003: each entry must have id/name/description/source.
+#   - id: <input-id>
+#     name: <input name>
+#     description: |
+#       <What this input represents.>
+#     source: <source entity id or free-text origin>
+
+# transformation: |                   # BP-QUAL-004: non-empty string OR non-empty list of step objects.
+#   <One-sentence description of how inputs become outputs.>
+
+# outputs:                             # BP-QUAL-005: each entry must have id/name/description/consumer.
+#   - id: <output-id>
+#     name: <output name>
+#     description: |
+#       <What this output represents.>
+#     consumer: <consumer entity id or free-text destination>
+
+# responsibility: |                   # BP-QUAL-008: non-empty string OR non-empty object.
+#   <The role or capability responsible for executing this process.>
+
+# boundary:                            # BP-QUAL-009: non-empty string OR non-empty object.
+#   scope: <boundary scope statement>
+#   inclusions:
+#     - <inclusion-1>
+#   exclusions:
+#     - <exclusion-1>
 
 # -----------------------------------------------------------------------------
 # Optional: links + activity_references (back-references to L3 Activities).
