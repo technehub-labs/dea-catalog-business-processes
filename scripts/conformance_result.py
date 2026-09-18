@@ -98,6 +98,8 @@ GATES: list[tuple[str, bool, list[str]]] = [
      False, ["python", "scripts/check_lifecycle_discovery.py", "--strict"]),  # CR-BP-62; advisory
     ("[20] Process Scope (PSCOPE-001..008)",
      False, ["python", "scripts/check_process_scope.py"]),  # CR-BP-95; advisory
+    ("[21] Documentation Profile (DOC-001..005)",
+     False, ["python", "scripts/check_documentation_profile.py"]),  # CR-BP-94-EXT-01; advisory
 ]
 
 

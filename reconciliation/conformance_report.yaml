@@ -2,13 +2,13 @@ schema_version: 1
 report_at_run: CR-BP-16 S23
 report_at_source: scripts/build_conformance_report.py
 catalog_root: /home/hermes/dea-catalog-processes
-total_records: 788
+total_records: 789
 conformance_levels:
   0: 0
   1: 0
   2: 0
   3: 3
-  4: 785
+  4: 786
 records:
 - id: dea:activity-acquire-regulator-acknowledged-accounting-or-rate-framework
   kind: Activity
@@ -6353,6 +6353,16 @@ records:
 - id: dea:process-customer-insight-and-retention
   kind: Entity
   path: entities/v1-alpha/dea:process-customer-insight-and-retention/dea:process-customer-insight-and-retention.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:process-customer-insight-and-retention
+  kind: Entity
+  path: entities/v1-alpha/dea:process-customer-insight-and-retention/documentation/manifest.yaml
   level: 4
   level_breakdown:
     L1_structural: true

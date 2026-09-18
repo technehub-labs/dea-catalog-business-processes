@@ -1,0 +1,154 @@
+# =============================================================================
+# entities/v1-alpha/dea:process-customer-insight-and-retention/documentation/manifest.yaml
+# CR-BP-94-EXT-01 (Documentation Architecture slice).
+# Pilot scaffold for the customer-insight-and-retention L2 Business Process.
+# The manifest is the per-entity index of documentation status (REQ-03
+# stub; full schema lands in EXT-03).
+#
+# Schema note: this file is a documentation asset of the parent BP entity
+# (dea:process-customer-insight-and-retention). The top-level identity
+# fields mirror the parent BP so the catalog schema validator accepts
+# the file; the documentation-specific content lives under
+# `documentation:` below.
+# =============================================================================
+
+id: dea:process-customer-insight-and-retention
+name: Operate Customer Retention Programs (documentation manifest)
+type: Process
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+process_intent: operate
+process_type: core
+description: |
+  Documentation manifest for the L2 Business Process
+  `dea:process-customer-insight-and-retention`. The parent BP record
+  at `dea:process-customer-insight-and-retention.yaml` is the
+  authoritative entity model; this manifest is the per-entity index
+  of documentation status per the CR-BP-94-EXT-01 documentation
+  architecture.
+trigger: |
+  Documentation work is initiated for this entity. The manifest is
+  updated whenever documentation state, profile, or coverage changes.
+outcome: |
+  The manifest provides a machine-readable index of documentation
+  status across the six coverage dimensions defined in
+  `docs/process-documentation-architecture.md`.
+
+documentation:
+  profile_id: dea:profile-readme-l2-process-v1
+  profile_version: 1.0.0
+  status: draft
+  documentation_version: 0.1.0
+  documentation_lifecycle_state: not-started
+
+  # Identity (REQ-04.1: generated from canonical YAML; not human-authored).
+  canonical_entity:
+    id: dea:process-customer-insight-and-retention
+    name: Operate Customer Retention Programs
+    type: Process
+    level: L2
+    lifecycle_status: candidate
+    process_intent: operate
+    process_type: core
+    process_context: dea:pc-pr-im
+    governing_cr: CR-BP-13a
+    source_ref: entities/v1-alpha/dea:process-customer-insight-and-retention/dea:process-customer-insight-and-retention.yaml
+
+  # Coverage dimension status (REQ-05 stub). Full scoring schema in EXT-03.
+  coverage:
+    identity: pending              # README §1 not yet authored at the new profile shape
+    decomposition: pending         # child activity documentation not yet authored
+    behavioral: pending
+    structural: pending
+    teleological: pending
+    governance: pending
+    evidence: pending
+
+  # Assets tracked under this documentation manifest.
+  assets:
+    - type: readme
+      path: entities/v1-alpha/dea:process-customer-insight-and-retention/README.md
+      status: superseded           # existing README is the introductory entry; will be expanded in EXT-02
+      profile_applied: dea:profile-readme-l2-process-v1
+      profile_version: 1.0.0
+      pending_replacement: true
+
+    - type: manifest
+      path: entities/v1-alpha/dea:process-customer-insight-and-retention/documentation/manifest.yaml
+      status: draft
+      profile_applied: dea:profile-readme-l2-process-v1
+
+  # Validation state. Structural validation runs in EXT-04.
+  validation:
+    structural: pending           # DOC-001..005 not yet enforced against this entity
+    semantic_review: not-started
+    relationship_consistency: not-started
+    coverage_scoring: not-started
+
+  # Governing CRs for this documentation effort.
+  governing_cr:
+    - CR-BP-13a                    # original BP admission
+    - CR-BP-44                     # L3 decomposition change
+    - CR-BP-94-EXT-01              # documentation architecture (this slice)
+
+  # Profile registration metadata.
+  registration:
+    profile_registered_at: '2026-09-18'
+    profile_registered_by: CR-BP-94-EXT-01
+    profile_governed_by: docs/process-documentation-architecture.md
+
+  # Decomposition context (REQ-04 L2 BP profile §decomposition).
+  decomposition:
+    parent_process_group: dea:group-customer-insight-and-retention
+    parent_process_context: dea:pc-pr-im
+    child_activity_references:
+      - dea:activity-collect-customer-feedback
+      - dea:activity-assess-churn-risk
+      - dea:activity-execute-retention-actions
+      - dea:activity-maintain-win-back-pipeline
+    coverage_statement: pending
+    note: "Child activity documentation is the work of subsequent slices (EXT-05/06)."
+
+  # Notes for the EXT-06 pilot completion.
+  pilot_notes:
+    pilot_target: dea:process-customer-insight-and-retention
+    pilot_rationale: |
+      This L2 BP is selected as the pilot because its canonical YAML
+      identifies the L2 process and four activity references
+      (CR-BP-44), giving the profile machinery an end-to-end
+      validation surface.
+    expected_lifecycle_after_pilot: published
+    expected_documentation_state_after_pilot: validated
+
+# ECF conformance block (required by gate [8] Provenance per CR-BP-31).
+# The documentation manifest inherits its parent entity's ECF alignment.
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+    - kind: coordinate
+      domain: PartyAndRelationship
+      stage: Operate
+      identifier: ecf:partyRelationship.operate
+    - kind: coordinate
+      domain: ProductAndValue
+      stage: Operate
+      identifier: ecf:productValue.operate
+
+metadata:
+  established_by: CR-BP-94-EXT-01
+  established_at: '2026-09-18'
+  change_history:
+    - cr: CR-BP-94-EXT-01
+      date: '2026-09-18'
+      change: |
+        Pilot scaffold for the documentation manifest schema. This
+        record is the per-entity index of documentation status
+        (REQ-03 stub; full schema lands in EXT-03). It carries the
+        ECF conformance block inherited from the parent
+        dea:process-customer-insight-and-retention BP per CR-BP-31.
+        Structural validation (DOC-001..005) runs in the EXT-04 slice.
