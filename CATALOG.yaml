@@ -4,7 +4,7 @@ catalog:
     candidates: 0
     canonical: 739
     entities: 740
-    open_change_requests: 107
+    open_change_requests: 108
     research_files: 329
     retired: 1
   cross_cutting:
@@ -6996,7 +6996,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: dea:process-customer-insight-and-retention
-    last_modified: '2026-09-13'
+    last_modified: '2026-09-18'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-customer-insight-and-retention/dea:process-customer-insight-and-retention.yaml
     research_count: 3

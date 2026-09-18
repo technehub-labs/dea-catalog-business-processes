@@ -64,8 +64,10 @@ def _normalize_status(value: str) -> str:
 #                             convention change)
 #   CR-BP-NN-slug             (descriptive: CR-BP-12-process-group-profile)
 #   CR-BP-NN.x-slug           (descriptive + sub-letter: CR-BP-13a-...)
+#   CR-BP-NN-EXT-NN           (extension sub-pipeline: CR-BP-94-EXT-01 per CR-BP-94-EXT-01)
+#   CR-BP-NN-EXT-NN-slug      (extension + slug: CR-BP-94-EXT-01-...)
 CR_NUMBER_PATTERN = re.compile(
-    r"^CR-BP-(\d+)([a-zA-Z]?(?:\.\d+)*)?(?:[-_a-z0-9]+)?$"
+    r"^CR-BP-(\d+)(?:[a-zA-Z](?:\.\d+)*)?(?:-(?:EXT-\d+|[a-z0-9]+))*$"
 )
 CR_REF_PATTERN = re.compile(r"CR-BP-\d+[a-zA-Z]?(?:\.\d+)*")
 # Match the metadata line. Two conventions are admitted:

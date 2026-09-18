@@ -1,0 +1,189 @@
+# =============================================================================
+# templates/documentation-profile-l2.yaml
+# CR-BP-94-EXT-01 (Documentation Architecture slice).
+# Part of the profile registry described in docs/process-documentation-architecture.md.
+# Profile ID: dea:profile-readme-l2-process-v1
+# Applies to: entity.type=Process, level=L2 (Business Process)
+# =============================================================================
+
+profile_id: dea:profile-readme-l2-process-v1
+profile_version: 1.0.0
+profile_status: draft
+classification:
+  entity_type: Process            # must match entity.type
+  level: L2                       # must match resolved level from CR-BP-93 mapping
+  description: |
+    L2 Business Process documentation profile. Applies to canonical
+    Business Process records in the DEA Process Catalog. Generated
+    sections (Identity, Decomposition refs, Revision History) are
+    derived from the canonical YAML record; semantic sections
+    (Definition, Behavior, Governance, Outcomes) are human-authored.
+
+# REQ-04.2: required sections. Validator DOC-002 checks each `id` is present.
+required_sections:
+  - id: entity-identity
+    heading: "## 1. Entity Identity and Classification"
+    source: generated
+    description: |
+      Canonical ID, name, type, level, lifecycle, intent, type,
+      context, governing CR, source ref. Auto-populated from the
+      YAML record by the EXT-04 generator.
+
+  - id: formal-definition
+    heading: "## 2. Formal Definition and Scope"
+    source: curated
+    description: |
+      Definition, purpose, in-scope / out-of-scope statements,
+      applicability. Human-authored. Substantive prose required.
+
+  - id: semantic-dimensions
+    heading: "## 3. Canonical Semantic Dimensions"
+    source: curated
+    description: |
+      Five-dimension framework: ontological, behavioral, structural,
+      teleological, governance. Human-authored.
+
+  - id: decomposition
+    heading: "## 4. Decomposition and Composition"
+    source: mixed
+    description: |
+      Parent + child refs are generated from the YAML
+      (belongs_to_process_group + activity_references); decomposition
+      coverage statement and boundary allocation are human-authored.
+
+  - id: behavior
+    heading: "## 5. Behavior and Workflow"
+    source: curated
+    description: |
+      Triggers, main flow, exceptions, completion criteria, optional
+      workflow visualization reference. Human-authored.
+
+  - id: interfaces
+    heading: "## 6. Inputs, Outputs, and Interfaces"
+    source: curated
+    description: |
+      Inputs (id/name/description/source), outputs (id/name/description/
+      consumer), upstream + downstream dependencies, systems + info.
+      Human-authored. Back-compat: existing BP records may have
+      `inputs[]` / `outputs[]` OPTIONAL fields per CR-BP-96 BP-QUAL-003/005.
+
+  - id: roles
+    heading: "## 7. Roles, Responsibilities, and Accountability"
+    source: curated
+    description: |
+      Roles, capabilities, resources. Human-authored. Back-compat:
+      BP `responsibility:` field is OPTIONAL per CR-BP-96 BP-QUAL-008.
+
+  - id: rules-controls
+    heading: "## 8. Business Rules and Controls"
+    source: curated
+    description: |
+      Business rules, regulatory controls, SLAs. Human-authored;
+      conditional on lifecycle state (REQ-09).
+
+  - id: outcomes
+    heading: "## 9. Outcomes and Performance"
+    source: curated
+    description: |
+      Outcome definition, metric table (name, definition,
+      applicability, source/target). Human-authored; metrics MUST
+      have explicit governance adoption evidence (REQ-06).
+
+  - id: evidence
+    heading: "## 10. Evidence and Traceability"
+    source: mixed
+    description: |
+      Assertion table (assertion, source type, reference, review
+      status). YAML evidence_links are generated; curation rows
+      are human-authored.
+
+  - id: completeness
+    heading: "## 11. Documentation Completeness"
+    source: generated
+    description: |
+      Six-dimension coverage status (identity, decomposition,
+      behavioral, structural, teleological, governance). Generated
+      by the EXT-03 manifest builder.
+
+  - id: revision-history
+    heading: "## 12. Revision History"
+    source: generated
+    description: |
+      Versioned table generated from the YAML change_history.
+
+# REQ-04.3: conditional sections. Each is required only when the
+# `trigger` condition is satisfied.
+conditional_sections:
+  - id: exception-flows
+    heading: "## 5a. Alternative and Exception Flows"
+    trigger: entity declares exception handling or `boundary` field
+    source: curated
+
+  - id: systems
+    heading: "## 6a. Systems and Information"
+    trigger: entity declares system interaction
+    source: curated
+
+  - id: regulatory
+    heading: "## 8a. Regulatory Controls"
+    trigger: entity is in a regulated domain (F&A, PV, Healthcare, etc.)
+    source: curated
+
+  - id: approvals
+    heading: "## 7a. Human Approvals"
+    trigger: entity triggers human approvals
+    source: curated
+
+  - id: workflow-viz
+    heading: "## 5b. Workflow Visualization"
+    trigger: entity has BPMN or equivalent artifact
+    source: curated
+
+# REQ-04.4: inherited content markers. Inherited sections must carry
+# the `> Inherited from:` marker at section opening.
+inherited_markers:
+  - "<!-- generated: do-not-edit -->"
+  - "<!-- curated: edit-here -->"
+  - "> Inherited from:"
+  - "> Assumption:"
+  - "> Expert:"
+
+# REQ-04.5: evidence requirements for curated claims.
+evidence_requirements:
+  canonical_model: derived from YAML; no human authoring
+  business_assumption: requires `> Assumption:` marker + evidence ref
+  external_standard: requires stable URI reference
+  expert_interpretation: requires `> Expert:` marker
+  example_value: must not be presented as approved target without governance evidence
+
+# REQ-09: lifecycle-specific obligations.
+lifecycle_obligations:
+  research:
+    mandatory_sections: [entity-identity, formal-definition]
+    allowed_gaps: [behavioral, structural, governance]
+    notes: "Decomposition may be incomplete; gaps documented in §11 completeness."
+  candidate:
+    mandatory_sections: [entity-identity, formal-definition, decomposition, behavior, evidence]
+    allowed_gaps: [outcomes-marked-pending, governance-conditional]
+    notes: "Outcomes may be marked pending; governance conditional."
+  active:
+    mandatory_sections: all
+    allowed_gaps: none
+    notes: "All sections required; no pending states; review gate passed."
+  deprecated:
+    mandatory_sections: [entity-identity, formal-definition, decomposition, retirement-rationale]
+    allowed_gaps: [behavioral-not-applicable, governance-not-applicable]
+    notes: "Behavioral / governance may be marked not_applicable."
+  retired:
+    mandatory_sections: [entity-identity, formal-definition, retirement-rationale, historical-preservation]
+    allowed_gaps: [all-operational-not-applicable]
+    notes: "Operational sections may be not_applicable; historical preservation required."
+
+# Profile registration metadata.
+registration:
+  registered_at: '2026-09-18'
+  registered_by: CR-BP-94-EXT-01
+  governed_by: docs/process-documentation-architecture.md
+  parent_template: CR-BP-94 (Decomposition Record Templates)
+  supersedes: none
+  superseded_by: null

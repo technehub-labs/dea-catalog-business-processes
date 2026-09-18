@@ -1,0 +1,170 @@
+# =============================================================================
+# templates/documentation-profile-l4-task.yaml
+# CR-BP-94-EXT-01 (Documentation Architecture slice).
+# Profile ID: dea:profile-readme-l4-task-v1
+# Applies to: entity.type=Task, level=L4
+# Note: L4 Task schema not yet codified; this profile is the first
+# normative description of the L4 documentation contract. Fields marked
+# `# TODO(CR-BP-98):` are placeholders awaiting schema codification.
+# =============================================================================
+
+profile_id: dea:profile-readme-l4-task-v1
+profile_version: 1.0.0
+profile_status: draft
+classification:
+  entity_type: Task               # must match entity.type (CR-BP-98 codifies)
+  level: L4                       # semantic execution boundary (CR-BP-93)
+  description: |
+    L4 Task documentation profile. Applies to canonical Task records
+    in the DEA Process Catalog. L4 is the SEMANTIC EXECUTION BOUNDARY
+    per CR-BP-93 §3. Detailed operational instructions (e.g., SOPs)
+    are NOT required in the task README; they may be maintained as
+    separate controlled assets referenced by this documentation.
+
+required_sections:
+  - id: entity-identity
+    heading: "## 1. Entity Identity and Classification"
+    source: generated
+    description: |
+      Canonical ID, name, type, level, lifecycle, parent Activity,
+      decomposition boundary marker. Auto-populated.
+
+  - id: formal-definition
+    heading: "## 2. Formal Definition and Scope"
+    source: curated
+    description: |
+      Task identity, work objective, preconditions. Human-authored.
+
+  - id: semantic-dimensions
+    heading: "## 3. Canonical Semantic Dimensions"
+    source: curated
+    description: |
+      Five-dimension framework at L4: behavioral emphasis is on
+      execution steps and decision points; structural emphasis is
+      on the role/actor/system executing the task.
+
+  - id: decomposition
+    heading: "## 4. Decomposition and Composition"
+    source: mixed
+    description: |
+      Parent Activity reference is generated. Decomposition boundary
+      marker (CR-BP-32 ACT-004 `decomposition_boundary: l4-reached`)
+      is generated. No further decomposition expected at L4.
+
+  - id: behavior
+    heading: "## 5. Behavior and Workflow"
+    source: curated
+    description: |
+      Work objective, preconditions, execution steps, decision points
+      and rules, completion criteria, exceptions + escalation
+      conditions. Human-authored. This is the most semantically
+      detailed section at L4.
+
+  - id: interfaces
+    heading: "## 6. Inputs, Outputs, and Interfaces"
+    source: curated
+    description: |
+      Required inputs, expected output, system interaction where
+      relevant. Human-authored.
+
+  - id: roles
+    heading: "## 7. Roles, Responsibilities, and Accountability"
+    source: curated
+    description: |
+      Responsible role / actor, escalation contacts. Human-authored.
+
+  - id: rules-controls
+    heading: "## 8. Business Rules and Controls"
+    source: curated
+    description: |
+      Business rules, validation criteria, evidence-of-completion
+      requirements. Human-authored.
+
+  - id: outcomes
+    heading: "## 9. Outcomes and Performance"
+    source: not_applicable
+    description: |
+      L4 Tasks do not own outcome metrics; outcomes are reported at
+      parent Activity or BP level. Section is marked `not_applicable`
+      in the README.
+
+  - id: evidence
+    heading: "## 10. Evidence and Traceability"
+    source: mixed
+    description: |
+      Evidence-of-completion references (e.g., system log entries,
+      output artifact ids). YAML evidence_links are generated;
+      curation rows are human-authored.
+
+  - id: completeness
+    heading: "## 11. Documentation Completeness"
+    source: generated
+
+  - id: revision-history
+    heading: "## 12. Revision History"
+    source: generated
+
+conditional_sections:
+  - id: systems
+    heading: "## 6a. Systems and Information"
+    trigger: entity declares system interaction
+    source: curated
+
+  - id: regulatory
+    heading: "## 8a. Regulatory Controls"
+    trigger: entity is in a regulated domain
+    source: curated
+
+  - id: approvals
+    heading: "## 7a. Human Approvals"
+    trigger: entity triggers human approvals
+    source: curated
+
+  - id: sop-reference
+    heading: "## 5b. Standard Operating Procedure"
+    trigger: entity has a separate controlled SOP document
+    source: curated
+    description: |
+      Detailed operational instructions (SOPs) MAY be maintained as
+      separate controlled assets referenced from the task README.
+
+inherited_markers:
+  - "<!-- generated: do-not-edit -->"
+  - "<!-- curated: edit-here -->"
+  - "> Inherited from:"
+  - "> Assumption:"
+  - "> Expert:"
+  - "> Reference SOP:"
+
+evidence_requirements:
+  canonical_model: derived from YAML
+  business_assumption: requires `> Assumption:` marker + evidence ref
+  external_standard: requires stable URI reference
+  expert_interpretation: requires `> Expert:` marker
+  sop_reference: requires `> Reference SOP:` marker + asset id
+
+lifecycle_obligations:
+  research:
+    mandatory_sections: [entity-identity, formal-definition]
+    allowed_gaps: [behavioral, structural, governance]
+  candidate:
+    mandatory_sections: [entity-identity, formal-definition, behavior, evidence]
+    allowed_gaps: [governance-conditional]
+  active:
+    mandatory_sections: all
+    allowed_gaps: none
+  deprecated:
+    mandatory_sections: [entity-identity, formal-definition, retirement-rationale]
+    allowed_gaps: [behavioral-not-applicable, governance-not-applicable]
+  retired:
+    mandatory_sections: [entity-identity, formal-definition, retirement-rationale, historical-preservation]
+    allowed_gaps: [all-operational-not-applicable]
+
+registration:
+  registered_at: '2026-09-18'
+  registered_by: CR-BP-94-EXT-01
+  governed_by: docs/process-documentation-architecture.md
+  parent_template: CR-BP-94
+  supersedes: none
+  superseded_by: null
+  schema_dependency: "Task schema codification lands in CR-BP-98"
