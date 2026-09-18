@@ -1,0 +1,111 @@
+# =============================================================================
+# templates/process-scope.yaml
+# CR-BP-94 (Decomposition Record Templates); recon-programme slice CR-BP-92 §9.
+# CR-BP-93 (Decomposition Semantic Contract) §3 normative basis.
+# Schema: schemas/entities/process-scope.schema.json (Draft-07).
+# Gate: scripts/check_process_scope.py (PSCOPE-001..008, advisory gate [20]).
+# =============================================================================
+#
+# What this template IS:
+#   A canonical authoring skeleton for an L0 Process Scope record. The fields
+#   below are the PSCOPE-002 required set, plus optional evidence + metadata +
+#   links. Comments at every required field document the PSCOPE-### rule that
+#   enforces the field.
+#
+# What this template is NOT:
+#   Not a `business-process.yaml` template (see templates/business-process.yaml).
+#   Not a `process-group.yaml` template (see templates/process-group.yaml).
+#   Process Scope is a NON-EXECUTABLE architectural boundary (CR-BP-93 §3):
+#   it has no inputs, outputs, transformation, outcome, or trigger.
+#
+# Authoring flow:
+#   1. Copy this file to entities/v1-alpha/dea:scope-<kebab-name>/dea:scope-<kebab-name>.yaml.
+#   2. Replace every `<...>` placeholder with the actual value.
+#   3. Run: python scripts/check_process_scope.py --self-test  (sanity check)
+#   4. Run: python scripts/check_process_scope.py             (live gate)
+#   5. The `additionalProperties: false` schema rejects unknown fields; do
+#      not add fields that are not in this template or the schema.
+#
+# CR-BP-94 design intent: this template makes it difficult to create a
+# superficially complete Process Scope whose semantic definition is
+# inadequate. The `definition:` field minimum (2000 chars) and the
+# `decomposition_basis.statement` field (1000 chars) force the author to
+# write substantive prose at the L0 layer.
+
+id: dea:scope-<kebab-name>          # PSCOPE-001: id must match `^dea:scope-[a-z0-9-]+$`. CR-BP-04 §4 family.
+type: ProcessScope                  # PSCOPE-extra: discriminator; always `ProcessScope` for L0 entries.
+
+# -----------------------------------------------------------------------------
+# PSCOPE-002: required fields (id, name, definition, process_context, scope,
+# outcomes, decomposition_basis, composes, scope_kind, status, lifecycle_status,
+# version). Every field below is required.
+# -----------------------------------------------------------------------------
+
+name: <Human-readable name>          # 1-200 chars.
+version: 1.0.0                       # SemVer; bump on semantic change (CR-BP-04 / SIV-001..004).
+definition: |                        # 1-2000 chars; the normative semantic meaning.
+  <Normative definition of this Process Scope. Not a description; a definition.
+  This field is the L0 layer's prose contract; PSCOPE-006 (MECE) depends on
+  it being non-overlapping with peer Process Scopes in the same Process Context.
+  A good definition answers: 'What coherent process responsibility is bounded
+  by this Scope?' See CR-BP-93 §3 for the normative definition pattern.>
+
+process_context: dea:pc-<kebab>     # PSCOPE-003: must match `^dea:pc-[a-z0-9-]+$` AND resolve to a known Process Context.
+
+scope:                               # PSCOPE-002: scope.includes + scope.excludes are required.
+  includes:                          # Explicitly included enterprise responsibilities.
+    - <inclusion-1>
+    - <inclusion-2>
+  excludes:                          # Explicitly excluded responsibilities (belong in adjacent Process Scopes).
+    - <exclusion-1>
+    - <exclusion-2>
+
+outcomes:                            # Intended architectural outcomes (distinguishes this Scope from peers).
+  - <outcome-1>
+  - <outcome-2>
+
+decomposition_basis:                 # Required (PSCOPE-002); PSCOPE-extra enforces the controlled vocabulary.
+  type: value-stream                 # Controlled vocabulary mirrors process-group-kinds.yaml (six values):
+                                     #   value-stream | functional-responsibility | support-capability
+                                     #   cross-cutting-concern | governance-obligation | innovation-candidate
+  statement: |                       # 1-1000 chars; declarative sentence describing the decomposition basis.
+    <Example: 'Decomposes the customer-facing value stream at the L0 layer.'>
+
+composes:                            # Canonical containment: L0 scope --bounds--> L1 group.
+  - source_id: dea:scope-<kebab-name>
+    target_id: dea:group-<kebab>     # PSCOPE-004: must match `^dea:group-[a-z0-9-]+$`.
+    relationship_type: composes       # PSCOPE-004: must be exactly `composes` (not `part_of`, etc.).
+    status: active                   # PSCOPE-008: `active` lifecycle_status requires at least one `status: active` composes.
+    # Optional:
+    # effective_from: <YYYY-MM-DD>
+    # effective_to: <YYYY-MM-DD>
+    # asserted_by: <CR id>
+    # rationale: <string, max 1000 chars>
+
+scope_kind: value-stream             # PSCOPE-007: must be in the controlled vocabulary (six values).
+
+status: active                       # Discovery / governance status (mirrors CR-BP-11 register dispositions).
+lifecycle_status: active             # PSCOPE-008: `candidate | active | deprecated | retired`. `active` requires >=1 active composes.
+
+# -----------------------------------------------------------------------------
+# Optional fields (recommended when the record needs traceability).
+# -----------------------------------------------------------------------------
+
+evidence:                            # Structured evidence supporting the definition.
+  - source: <evidence source>        # Free-text source label (standard, document, etc.).
+    claim: <the claim this evidence supports>
+    strength: E2                      # E0 (none) .. E5 (authoritative regulatory).
+    # url: <https://...>             # Optional URL.
+
+metadata:
+  established_by: <CR-id>            # CR that first admitted this record.
+  established_at: <YYYY-MM-DD>
+  change_history:                    # Additive change_history; do not retroactively rewrite prior entries.
+    - cr: <CR-id>
+      date: <YYYY-MM-DD>
+      change: |
+        <Concise description of the change.>
+
+links:                               # Navigation links (documentation, related CRs).
+  - rel: documentation
+    href: docs/<path>.md

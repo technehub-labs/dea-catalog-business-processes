@@ -1,0 +1,105 @@
+# =============================================================================
+# templates/activity.yaml
+# CR-BP-94 (Decomposition Record Templates); recon-programme slice CR-BP-92 §9.
+# CR-BP-93 (Decomposition Semantic Contract) §6 normative basis.
+# Schema: schemas/entities/activity.schema.json (Draft-07).
+# Gates: ACT-001..010 (gate [15] Activity Model); EXE-001..010 (gate [16]).
+# =============================================================================
+#
+# What this template IS:
+#   A canonical authoring skeleton for an L3 Activity record.
+#
+# What this template is NOT:
+#   Not a Business Process template (see templates/business-process.yaml).
+#   Activity is the L3 layer: a cohesive body of work within a Business
+#   Process that contributes materially to the parent process outcome while
+#   NOT independently satisfying the qualification criteria of a Business
+#   Process. See CR-BP-93 §6.
+#
+# Authoring flow:
+#   1. Copy to entities/v1-alpha/dea:activity-<kebab-name>/dea:activity-<kebab-name>.yaml.
+#   2. Replace every `<...>` placeholder.
+#   3. Run: python scripts/check_activity_model.py --strict
+#   4. Run: python scripts/check_execution_boundary.py --strict
+#
+# CR-BP-94 design intent: every Activity is authored through structured
+# deposition (research/l3-candidate-universe.yaml per BP) per CR-BP-32 §2.
+# The definition + cohesion_rationale fields together constitute the
+# L3 cohesive-work contract (ACT-003 + CR-BP-32 §6).
+
+id: dea:activity-<kebab-name>       # ACT-007: id must NOT collide with Business Function ids; pattern `^dea:activity-[a-z0-9-]+$`.
+type: Activity                       # Discriminator; always `Activity` for L3 entries.
+
+# -----------------------------------------------------------------------------
+# L3 required fields (ACT-001..010; CR-BP-32 §5 classification).
+# -----------------------------------------------------------------------------
+
+name: <Verb Object>                  # 1-200 chars. Verb-object form (e.g. 'Address Performance Exceptions',
+                                     # 'Plan Asset Retirement'). NOT a gerund. NOT 'Perform X' or 'Conduct X'.
+
+version: 1.0.0                       # SemVer. Initial 1.0.0; bump on semantic change (SIV-001..004).
+
+lifecycle_status: candidate          # LCM: `candidate | active | deprecated | retired`.
+status: candidate
+
+definition: |                        # ACT-003: must be non-empty; the cohesive-work statement.
+  The cohesive grouping of work within <Parent Business Process name> that <what the work does>.
+  CR-BP-32 §6 requires substantive prose here; the definition is the prose contract
+  that distinguishes this Activity from peer Activities in the same parent BP.
+
+belongs_to_business_process: dea:process-<parent-bp-id>  # ACT-001: must resolve to a canonical L2 BP; ACT-010 traceability.
+
+cohesion_rationale: |                # ACT-003: must be non-empty; documents the cohesion assessment.
+  Constituent work shares a single <concern>, one input class (<input>), and one output
+  (<output>). Cohesion score <8|9>/9 assessed at deposition (CR-BP-32 §6).
+  CR-BP-94 design intent: this field is mandatory and substantive. A short or
+  formulaic cohesion_rationale is a review rejection risk (ACT-003).
+
+decomposition_boundary: l4-reached   # ACT-004: until Task records exist, terminate decomposition here (CR-BP-32 §12).
+                                     # Once Task records land, REPLACE this marker with `composes:` entries.
+
+# -----------------------------------------------------------------------------
+# Optional: composes (CR-BP-32 §7 structural relationship to L4 Tasks).
+# When present, ACT-005 enforces `relationship_type: dea:composes` and rejects
+# the forbidden alternatives (parent_activity, child_activities, decomposes).
+# Until Task records exist, use the `decomposition_boundary: l4-reached` marker
+# above instead of populating `composes`.
+# -----------------------------------------------------------------------------
+
+# composes:
+#   - source_id: dea:activity-<kebab-name>
+#     target_id: dea:task-<slug>      # L4 Task id (CR-BP-98 will establish the Task record type).
+#     relationship_type: dea:composes
+#     # Optional:
+#     # direction: source-to-target
+#     # status: active
+#     # rationale: <string, max 1000 chars>
+
+# -----------------------------------------------------------------------------
+# ECF conformance (gate [8]): inherits the parent BP's coordinate.
+# -----------------------------------------------------------------------------
+
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+    - kind: coordinate
+      domain: <Domain>                # MUST match the parent BP's ecfConformance.canonicalReferences[0].domain.
+      stage: <Stage>                  # MUST match the parent BP's stage.
+      identifier: ecf:<domainCamel>.<stage>
+
+# -----------------------------------------------------------------------------
+# Metadata + change_history (gate [10] ADM).
+# -----------------------------------------------------------------------------
+
+metadata:
+  established_by: <CR-id>            # The L3 deposition CR (e.g. CR-BP-42..57, CR-BP-69, CR-BP-77, CR-BP-79, CR-BP-87).
+  established_at: <YYYY-MM-DD>
+  change_history:
+    - cr: <CR-id>
+      date: <YYYY-MM-DD>
+      change: |
+        <Concise description.>
