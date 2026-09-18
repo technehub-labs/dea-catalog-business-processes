@@ -1,0 +1,209 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://technehub-labs.github.io/dea-catalog-processes/schemas/entities/process-scope.schema.json",
+  "title": "ProcessScope",
+  "description": "Schema for L0 Process Scope entries in technehub-labs/dea-catalog-processes. Established by CR-BP-95 (L0/L1 Conformance Gate), recon-programme slice CR-BP-92 §10, decomposition contract CR-BP-93 §3. A Process Scope is a non-executable architectural boundary that defines a coherent and bounded area of process responsibility within a Process Context. The Process Scope is NOT a metamodel entity; it is catalog-owned and lives only in this catalog. The canonical containment direction is `L0 scope --bounds--> L1 group`; the inverse is a derived view. ID family: `dea:scope-*` (CR-BP-04 §4; docs/identity.md). L0 Process Scope is non-executable: it has no inputs, outputs, transformation, outcome, or trigger. An ECF coordinate does NOT automatically constitute a Process Scope (CR-BP-93 §3).",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "name",
+    "definition",
+    "process_context",
+    "scope",
+    "outcomes",
+    "decomposition_basis",
+    "composes",
+    "scope_kind",
+    "status",
+    "lifecycle_status",
+    "version"
+  ],
+  "properties": {
+    "type": {
+      "type": "string",
+      "const": "ProcessScope",
+      "description": "Discriminator. Always 'ProcessScope' for L0 entries."
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^dea:scope-[a-z0-9-]+$",
+      "description": "Stable Process Scope id. CR-BP-04 §4 family. Convention: dea:scope-<kebab-name>. Stable across renames."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "definition": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000,
+      "description": "Normative semantic meaning of this Process Scope. Not a description; a definition. PSCOPE-006 (MECE) depends on this being non-overlapping with peer Process Scopes in the same Process Context."
+    },
+    "process_context": {
+      "type": "string",
+      "pattern": "^dea:pc-[a-z0-9-]+$",
+      "description": "Reference to the canonical Process Context (dea:pc-*) within which this Process Scope bounds process responsibility. PSCOPE-003 enforces resolution to a known context."
+    },
+    "scope": {
+      "type": "object",
+      "required": ["includes", "excludes"],
+      "properties": {
+        "includes": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Explicitly included enterprise responsibilities bounded by this Process Scope."
+        },
+        "excludes": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Explicitly excluded responsibilities (belong in adjacent Process Scopes or peer coordinates)."
+        }
+      },
+      "description": "Inclusion / Exclusion boundaries (PSCOPE-006 / MECE)."
+    },
+    "outcomes": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Intended architectural outcomes for this Process Scope (e.g. 'bounded area of process responsibility at the L0 layer'). The outcomes distinguish this Process Scope from peer Process Scopes in the same Process Context."
+    },
+    "decomposition_basis": {
+      "type": "object",
+      "required": ["type", "statement"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "value-stream",
+            "functional-responsibility",
+            "support-capability",
+            "cross-cutting-concern",
+            "governance-obligation",
+            "innovation-candidate"
+          ],
+          "description": "Controlled vocabulary for the decomposition basis type. Mirrors the L1 grouping_basis vocabulary (see process-group.schema.json)."
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000,
+          "description": "A declarative sentence describing the decomposition basis. Example: 'Decomposes the customer-facing value stream at the L0 layer.'"
+        }
+      },
+      "description": "The architectural basis on which the Process Scope decomposes its parent Process Context into bounded sub-areas."
+    },
+    "composes": {
+      "type": "array",
+      "description": "Canonical containment relationships: every entry declares that this Process Scope bounds (composes) an L1 Process Group. Each entry conforms to the metamodel relationship-instance shape (source_id, target_id, relationship_type, plus optional direction, status, effective_from/to, asserted_by, rationale, evidence, provenance). PSCOPE-004 (target_id pattern) and PSCOPE-005 (target resolution) enforce.",
+      "items": {
+        "type": "object",
+        "required": ["source_id", "target_id", "relationship_type"],
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "pattern": "^dea:scope-[a-z0-9-]+$"
+          },
+          "target_id": {
+            "type": "string",
+            "pattern": "^dea:group-[a-z0-9-]+$",
+            "description": "Target L1 Process Group id (dea:group-*)."
+          },
+          "relationship_type": {
+            "type": "string",
+            "const": "composes",
+            "description": "The Process Scope's canonical containment relationship is `composes`. Other relationship types are not permitted in this array."
+          },
+          "direction": {
+            "type": "string",
+            "enum": ["source-to-target"],
+            "default": "source-to-target"
+          },
+          "status": {
+            "type": "string",
+            "enum": ["proposed", "planned", "active", "deprecated", "retired"],
+            "default": "active"
+          },
+          "effective_from": {"type": "string", "format": "date"},
+          "effective_to": {"type": "string", "format": "date"},
+          "asserted_by": {"type": "string"},
+          "rationale": {"type": "string", "maxLength": 1000},
+          "evidence": {"type": "string", "maxLength": 1000},
+          "provenance": {
+            "type": "object",
+            "properties": {
+              "type": {"type": "string", "enum": ["architecture-review", "discovery", "assessment", "inference", "migration", "manual"]},
+              "reference": {"type": "string"},
+              "asserted_by": {"type": "string"},
+              "asserted_at": {"type": "string", "format": "date"}
+            }
+          }
+        }
+      }
+    },
+    "scope_kind": {
+      "type": "string",
+      "enum": [
+        "value-stream",
+        "functional-responsibility",
+        "support-capability",
+        "cross-cutting-concern",
+        "governance-obligation",
+        "innovation-candidate"
+      ],
+      "description": "Process Scope classification. Mirrors the L1 process_group_kind vocabulary (classifications/process-group-kinds.yaml). PSCOPE-007 enforces."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["candidate", "accepted", "deferred", "deprecated", "rejected"],
+      "description": "Discovery / governance status (mirrors CR-BP-11 register disposition values)."
+    },
+    "lifecycle_status": {
+      "type": "string",
+      "enum": ["candidate", "active", "deprecated", "retired"],
+      "description": "Catalog entry lifecycle. `active` requires at least one composes entry with status: active (PSCOPE-008)."
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "evidence": {
+      "type": "array",
+      "description": "Optional: structured evidence supporting the Process Scope definition.",
+      "items": {
+        "type": "object",
+        "required": ["source", "claim", "strength"],
+        "properties": {
+          "source": {"type": "string"},
+          "claim": {"type": "string"},
+          "strength": {"type": "string", "enum": ["E0", "E1", "E2", "E3", "E4", "E5"]},
+          "url": {"type": "string", "format": "uri"}
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "established_by": {"type": "string"},
+        "established_at": {"type": "string", "format": "date"},
+        "change_history": {
+          "type": "array",
+          "items": {"type": "object"}
+        }
+      }
+    },
+    "links": {
+      "type": "array",
+      "description": "Optional: navigation links to related artifacts (documentation, change requests, process groups).",
+      "items": {
+        "type": "object",
+        "required": ["rel", "href"],
+        "properties": {
+          "rel": {"type": "string"},
+          "href": {"type": "string", "format": "uri-reference"}
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

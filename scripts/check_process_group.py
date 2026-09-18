@@ -2,7 +2,8 @@
 """
 check_process_group.py — Process Group (L1) validator.
 
-Implements CR-BP-12 rules PG-001..PG-008.
+Implements CR-BP-12 rules PG-001..PG-008 and CR-BP-95 extensions
+PG-009 (grouping_basis) and PG-010 (membership_criteria).
 
 Rules:
   PG-001 — ID pattern: id matches `^dea:group-[a-z0-9-]+$`.
@@ -27,6 +28,13 @@ Rules:
            one composes entry with status: active. `deprecated` and
            `retired` must reference at least one terminal-state L2
            process in the rationale field.
+  PG-009 (CR-BP-95) — grouping_basis (when present): structure check.
+           The field is OPTIONAL; existing pre-CR-BP-95 records remain
+           conformant when absent. When present, the structure must be
+           {type, statement} with type from a controlled vocabulary.
+  PG-010 (CR-BP-95) — membership_criteria (when present): structure check.
+           The field is OPTIONAL. When present, the structure must be
+           {inclusion_test, exclusion_test}, both non-empty strings.
 
 Exit: 0 = all rules pass (or no entries); 2 = self-test; 1 = at least one rule failed.
 
@@ -246,6 +254,61 @@ def _check_one(entry: dict, *, kinds: set[str], context_ids: set[str], process_i
             f"PG-extra ({eid}): type must be 'ProcessGroup' for a Process Group entry (got {entry.get('type')!r})."
         )
 
+    # PG-009 (CR-BP-95): grouping_basis — when present, structure check.
+    # Back-compat: the field is OPTIONAL; existing pre-CR-BP-95 records remain
+    # conformant when the field is absent.
+    grouping_basis = entry.get("grouping_basis")
+    if grouping_basis is not None:
+        if not isinstance(grouping_basis, dict):
+            errors.append(
+                f"PG-009 ({eid}): grouping_basis must be an object with `type` and `statement` "
+                f"(CR-BP-95; CR-BP-93 §4)."
+            )
+        else:
+            gb_type = grouping_basis.get("type")
+            gb_statement = grouping_basis.get("statement")
+            valid_types = {
+                "value-stream",
+                "functional-responsibility",
+                "support-capability",
+                "cross-cutting-concern",
+                "governance-obligation",
+                "innovation-candidate",
+            }
+            if gb_type not in valid_types:
+                errors.append(
+                    f"PG-009 ({eid}): grouping_basis.type={gb_type!r} is not in the controlled "
+                    f"vocabulary {sorted(valid_types)} (CR-BP-95)."
+                )
+            if not isinstance(gb_statement, str) or not gb_statement.strip():
+                errors.append(
+                    f"PG-009 ({eid}): grouping_basis.statement is required and must be a "
+                    f"non-empty string (CR-BP-95)."
+                )
+
+    # PG-010 (CR-BP-95): membership_criteria — when present, structure check.
+    # Back-compat: OPTIONAL; existing pre-CR-BP-95 records remain conformant when absent.
+    membership_criteria = entry.get("membership_criteria")
+    if membership_criteria is not None:
+        if not isinstance(membership_criteria, dict):
+            errors.append(
+                f"PG-010 ({eid}): membership_criteria must be an object with `inclusion_test` "
+                f"and `exclusion_test` (CR-BP-95; CR-BP-93 §4)."
+            )
+        else:
+            inc = membership_criteria.get("inclusion_test")
+            exc = membership_criteria.get("exclusion_test")
+            if not isinstance(inc, str) or not inc.strip():
+                errors.append(
+                    f"PG-010 ({eid}): membership_criteria.inclusion_test is required and must be "
+                    f"a non-empty string (CR-BP-95)."
+                )
+            if not isinstance(exc, str) or not exc.strip():
+                errors.append(
+                    f"PG-010 ({eid}): membership_criteria.exclusion_test is required and must be "
+                    f"a non-empty string (CR-BP-95)."
+                )
+
 
 def run_checks(catalog_root: Path) -> tuple[list[str], list[dict]]:
     errors: list[str] = []
@@ -454,7 +517,7 @@ def self_test() -> int:
             for e in errors:
                 print(f"  ✗ {e}")
             return 2
-        print("Process Group validation: PASS (PG-001..008)")
+        print("Process Group validation: PASS (PG-001..010)")
     return 0
 
 
@@ -481,7 +544,7 @@ def main() -> int:
             print(f"  → {s['target']}: {s['suggestion_type']} "
                   f"(confidence={s['confidence']:.2f}) — {s['rationale'][:120]}")
         return 0
-    print("Process Group validation: PASS (PG-001..008)")
+    print("Process Group validation: PASS (PG-001..010)")
     return 0
 
 
