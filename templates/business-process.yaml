@@ -1,0 +1,157 @@
+# =============================================================================
+# templates/business-process.yaml
+# CR-BP-94 (Decomposition Record Templates); recon-programme slice CR-BP-92 §9.
+# CR-BP-93 (Decomposition Semantic Contract) §5 normative basis.
+# Schemas (implicit; no business-process.schema.json exists today):
+#   - process-context.schema.json (for `context:` block)
+#   - schemas/entities/activity.schema.json (sibling reference)
+# Gates (gate [11] L2 Qualification, gate [4] Semantics, gate [12] Intent Purposive,
+# gate [13] Lifecycle State-Machine, gate [14] Semantic Identity vs Version):
+#   - BP-C1..C4  (scripts/check_l2_qualification.py)
+#   - BP-SEM-001..014 (scripts/check_process_semantics.py)
+#   - BP-AR-001..007 (scripts/check_architectural_regression.py)
+#   - LCM-001..005 (scripts/check_lifecycle_state.py)
+#   - SIV-001..004 (scripts/check_semantic_identity_version.py)
+#   - PSP-001..003 (scripts/check_intent_purposive.py)
+# =============================================================================
+#
+# What this template IS:
+#   A canonical authoring skeleton for an L2 Business Process record.
+#
+# What this template is NOT:
+#   Not an Activity template (see templates/activity.yaml).
+#   Not a Process Group template (see templates/process-group.yaml).
+#   Business Process is the L2 layer: an independently meaningful, bounded
+#   enterprise transformation (Trigger -> Input -> Transformation -> Output
+#   -> Outcome -> Objective Contribution under Responsibility + Boundary).
+#   See CR-BP-93 §5.
+#
+# Authoring flow:
+#   1. Copy to entities/v1-alpha/dea:process-<kebab-name>/dea:process-<kebab-name>.yaml.
+#   2. Replace every `<...>` placeholder.
+#   3. Run: python scripts/check_l2_qualification.py --strict
+#   4. Run: python scripts/check_process_semantics.py --strict
+#   5. Run: python scripts/conformance_result.py  (full pipeline)
+#
+# CR-BP-94 design intent: this template forces substantive prose at every
+# required-field site (description, trigger, outcome, identity.outcome_statement).
+# The verb-object identity contract (BP-C1..C4 / BP-SEM-001..014) is encoded
+# in the `identity:` block.
+
+id: dea:process-<kebab-name>        # BP-ARC-ID-001: must match `^dea:process-[a-z0-9-]+$`. CR-BP-04 §4 family.
+type: Process                        # Discriminator; always `Process` for L2 BP entries.
+
+# -----------------------------------------------------------------------------
+# L2 required fields (BP-C1..C4, LCM, SIV, PSP gate families).
+# -----------------------------------------------------------------------------
+
+name: <Verb Object>                  # 1-200 chars. Verb-object form per BP-ARC-ID-001 (e.g. 'Frame Strategic Horizons').
+version: 1.0.0                       # SemVer. Bump on semantic change. Initial 1.0.0 per SIV-004.
+
+lifecycle_status: candidate          # LCM-001..005: `candidate | active | deprecated | retired`.
+status: candidate                    # Discovery status (CR-BP-11 register dispositions).
+
+process_intent: develop              # PSP-001..003: controlled vocabulary (7 values):
+                                     #   govern | manage | operate | deliver | support | develop | transform.
+                                     # See docs/classification.md for the Intent vs Classification distinction.
+
+process_type: strategic              # BP-SEM-001..014: classification position; one of:
+                                     #   strategic | core | support | standardization | management.
+
+process_specialization: []           # BP-SPEC-01-001..007 (advisory gate under program governance carve-out,
+                                     # see CR-BP-92 §21). Leave empty for canonical / non-specialized entries.
+
+description: |                       # 1-2000 chars; reader-facing summary.
+  <What this Business Process does. Not a definition; a description.>
+  Cross-references: dea:process-<parent-bp-id> (if applicable); dea:activity-<id> (composed Activities).
+
+trigger: |                           # BP-C1: trigger must be non-empty; describes when the process is invoked.
+  <A new <BP purpose> is needed because <condition>.>
+  Example pattern: 'A new governance strategy framing is needed because the enterprise is establishing
+  a new mandate, reframing an existing one, or responding to a regulatory or strategic shift
+  that requires board-level realignment.'
+
+outcome: |                           # BP-C1: outcome must be non-empty; describes the produced result.
+  <A <process output> with <bounded properties> is committed.>
+  Example pattern: 'A governance strategy document with bounded mandate, strategic posture,
+  and policy direction is committed.'
+
+# -----------------------------------------------------------------------------
+# Identity contract (BP-SEM, BP-ARC-ID, BP-C2).
+# Verb + Object + scope + outcome_statement + evidence_links. See docs/identity.md.
+# -----------------------------------------------------------------------------
+
+identity:
+  verb: <Verb>                       # The action (Frame, Develop, Operate, etc.). Matches the start of `name`.
+  object: <Object>                   # The thing acted upon (Strategic Horizons, Governance Strategy, etc.).
+  scope: (all customer segments)      # Free-text scope qualifier (or enterprise / line-of-business / etc.).
+  outcome_statement: |               # BP-C2: must be non-empty; the testable outcome statement.
+    <A <thing> is <produced state>, ready to drive <downstream use>.>
+  evidence_links:                    # BP-C4: must be non-empty.
+    - type: standard                 # standard | documentation | evidence | reference.
+      ref: https://www.<authority>.org/<path>
+    - type: documentation
+      ref: docs/examples/<example>.md
+
+# -----------------------------------------------------------------------------
+# Relationships (BP-SEM-008..011): the `serves` relationship to the ECF
+# coordinate is mandatory. Other relationships (realizes, depends-on, etc.)
+# are optional.
+# -----------------------------------------------------------------------------
+
+relationships:
+  - source_id: dea:process-<kebab-name>
+    relationship_type: serves         # BP-SEM-008..011: `serves` to ECF coordinate is canonical.
+    target_id: ecf:<domain>.<stage>   # One of the seven canonical ECF coordinates.
+
+# -----------------------------------------------------------------------------
+# ECF conformance (gate [8]): every canonical BP record carries this block.
+# -----------------------------------------------------------------------------
+
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:               # BP-AR-001..007: exactly one canonical coordinate per record.
+    - kind: coordinate
+      domain: <AgencyAndOrganization|EnablementAndOperations|FinanceAndAccounting|GovernanceAndExistence|PartyAndRelationship|ProductAndValue|StrategyAndDirection>
+      stage: <Conceive|Design|Build|Operate|Improve|Activate|Retire>
+      identifier: ecf:<domainCamel>.<stage>
+
+# -----------------------------------------------------------------------------
+# Process Context block (gate [3]): every canonical BP record carries this.
+# -----------------------------------------------------------------------------
+
+context:
+  - ref: dea:pc-<kebab>              # Must match the `process_context` PG field of the parent Process Group.
+
+# -----------------------------------------------------------------------------
+# Metadata + change_history (gate [10] ADM-001..008): change_history must be
+# non-empty and each entry must carry cr / date / change.
+# -----------------------------------------------------------------------------
+
+metadata:
+  established_by: <CR-id>
+  established_at: <YYYY-MM-DD>
+  change_history:
+    - cr: <CR-id>
+      date: <YYYY-MM-DD>
+      change: |
+        <Concise description.>
+
+# -----------------------------------------------------------------------------
+# Optional: links + activity_references (back-references to L3 Activities).
+# activity_references is mandatory once L3 decomposition lands (ACT-010).
+# -----------------------------------------------------------------------------
+
+links:
+  - rel: change-request
+    href: change-requests/<CR-id>.md
+
+# activity_references:               # ACT-010: populated post-L3 decomposition.
+#   - dea:activity-<slug>
+#   - dea:activity-<slug>
+#   - dea:activity-<slug>
+#   - dea:activity-<slug>

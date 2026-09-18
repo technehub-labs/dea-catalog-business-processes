@@ -1,0 +1,118 @@
+# =============================================================================
+# templates/process-group.yaml
+# CR-BP-94 (Decomposition Record Templates); recon-programme slice CR-BP-92 §9.
+# CR-BP-93 (Decomposition Semantic Contract) §4 normative basis.
+# Schema: schemas/entities/process-group.schema.json (Draft-07; extended under
+# CR-BP-95 with OPTIONAL grouping_basis + membership_criteria fields).
+# Gate: scripts/check_process_group.py (PG-001..010, gate [7] MECE).
+# =============================================================================
+#
+# What this template IS:
+#   A canonical authoring skeleton for an L1 Process Group record. The fields
+#   below are the PG-002 required set, plus the optional grouping_basis +
+#   membership_criteria blocks added by CR-BP-95, plus optional evidence +
+#   metadata + links.
+#
+# What this template is NOT:
+#   Not a `business-process.yaml` template. Not a `process-scope.yaml` template.
+#   Process Group is a CANONICAL entity (catalog-owned, L1 layer); it is
+#   process-centric (NOT a Business Function, NOT an organizational unit,
+#   NOT a Capability). See CR-BP-93 §4 and CR-BP-12 §1.
+#
+# Authoring flow:
+#   1. Copy this file to entities/v1-alpha/dea:group-<kebab-name>/dea:group-<kebab-name>.yaml.
+#   2. Replace every `<...>` placeholder.
+#   3. Run: python scripts/check_process_group.py --self-test   (sanity check)
+#   4. Run: python scripts/check_process_group.py              (live gate)
+#
+# CR-BP-94 design intent: the OPTIONAL `grouping_basis` and `membership_criteria`
+# blocks added by CR-BP-95 are strongly recommended for new PG records. Existing
+# 48 PG records remain conformant without them (PG-009 / PG-010 are optional
+# back-compat); backfill is the work of a future reconciliation slice
+# (CR-BP-99 or a dedicated L1 enrichment tranche).
+
+id: dea:group-<kebab-name>          # PG-001: id must match `^dea:group-[a-z0-9-]+$`. CR-BP-04 §4 family.
+type: ProcessGroup                   # PG-extra: discriminator; always `ProcessGroup` for L1 entries.
+
+# -----------------------------------------------------------------------------
+# PG-002: required fields (id, name, definition, process_context, scope,
+# outcomes, composes, process_group_kind, status, lifecycle_status, version).
+# -----------------------------------------------------------------------------
+
+name: <Human-readable name>          # 1-200 chars.
+version: 1.0.0                       # SemVer; bump on semantic change (CR-BP-04 / SIV-001..004).
+definition: |                        # 1-2000 chars; the normative semantic meaning.
+  <Normative definition of this Process Group. Not a description; a definition.
+  This field is the L1 layer's prose contract; PG-006 (MECE) depends on it
+  being non-overlapping with peer Process Groups in the same Process Context.
+  A good definition answers: 'How are related Business Processes grouped by
+  this group?' See CR-BP-93 §4 and CR-BP-12 §3.>
+
+process_context: dea:pc-<kebab>     # PG-003: must match `^dea:pc-[a-z0-9-]+$` AND resolve to a known Process Context.
+
+scope:                               # PG-002: scope.includes + scope.excludes are required.
+  includes:
+    - <inclusion-1>
+  excludes:
+    - <exclusion-1>
+
+outcomes:                            # Distinguishes this PG from peer PGs in the same Process Context.
+  - <outcome-1>
+
+composes:                            # Canonical containment: L1 group --composes--> L2 BP.
+  - source_id: dea:group-<kebab-name>
+    target_id: dea:process-<kebab>   # PG-004: must match `^dea:process-[a-z0-9-]+$`.
+    relationship_type: composes       # PG-004: must be exactly `composes`.
+    status: active                   # PG-008: `active` lifecycle requires >=1 `status: active` composes.
+    # Optional:
+    # effective_from: <YYYY-MM-DD>
+    # rationale: <string, max 1000 chars>
+
+process_group_kind: end-to-end       # PG-007: must be in classifications/process-group-kinds.yaml vocabulary.
+                                     # Allowed: end-to-end | functional | support | cross-cutting | governance | innovation.
+
+status: accepted                     # Discovery / governance status (CR-BP-11 dispositions).
+lifecycle_status: active             # PG-008: `candidate | active | deprecated | retired`.
+
+# -----------------------------------------------------------------------------
+# OPTIONAL but strongly recommended (CR-BP-95): grouping_basis + membership_criteria.
+# Back-compat: pre-CR-BP-95 PG records remain conformant without these fields.
+# PG-009 and PG-010 enforce structural integrity WHEN these fields are present.
+# -----------------------------------------------------------------------------
+
+grouping_basis:                      # PG-009 (when present): must be {type, statement}.
+  type: value-stream                 # Controlled vocabulary (six values, mirrors process_group_kind):
+                                     #   value-stream | functional-responsibility | support-capability
+                                     #   cross-cutting-concern | governance-obligation | innovation-candidate
+  statement: |                       # 1-1000 chars; declarative sentence describing the grouping principle.
+    <Example: 'Groups processes by the customer-facing value stream they participate in.'>
+
+membership_criteria:                 # PG-010 (when present): must be {inclusion_test, exclusion_test}.
+  inclusion_test: |                  # 1-1000 chars; testable predicate for L2 BP inclusion.
+    <Example: 'A Business Process belongs in this group if its trigger is customer-initiated.'>
+  exclusion_test: |                  # 1-1000 chars; testable predicate for L2 BP exclusion.
+    <Example: 'A Business Process is excluded from this group if its trigger is regulator-initiated.'>
+
+# -----------------------------------------------------------------------------
+# Optional fields (recommended when the record needs traceability).
+# -----------------------------------------------------------------------------
+
+evidence:
+  - source: <evidence source>
+    claim: <the claim>
+    strength: E2
+    # url: <https://...>
+
+metadata:
+  cross_context_overlap: []          # PG-006 / MECE: explicit declaration of cross-context membership.
+  established_by: <CR-id>
+  established_at: <YYYY-MM-DD>
+  change_history:
+    - cr: <CR-id>
+      date: <YYYY-MM-DD>
+      change: |
+        <Concise description.>
+
+links:
+  - rel: documentation
+    href: docs/<path>.md
