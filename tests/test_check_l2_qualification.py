@@ -2,8 +2,14 @@
 
 Locks behaviour for BP-C1..C4 by exercising both the in-process
 `evaluate()` function and the CLI self-test entry point, plus a
-live-catalog assertion that all 126 canonical Business Process
+live-catalog assertion that all 139 canonical Business Process
 records pass all four rules.
+
+CR-BP-96 extends the validator with BP-QUAL-001..012. The
+001/002/006/007/010/012 rules are aliases of the BP-C family; the
+003/004/005/008/009 rules are advisory structure checks for OPTIONAL
+fields (CR-BP-96 design intent). BP-QUAL-011 (Specialization
+Integrity) is deferred under CR-BP-92 §21.
 """
 
 import subprocess
@@ -19,6 +25,7 @@ SCRIPT = ROOT / "scripts" / "check_l2_qualification.py"
 # directly without spinning up subprocesses for every rule.
 sys.path.insert(0, str(ROOT / "scripts"))
 from check_l2_qualification import (  # noqa: E402
+    _BP_QUAL_ALIASES,
     _RULES,
     evaluate,
     _self_test,
@@ -99,11 +106,13 @@ def test_cli_json_emits_well_formed_payload():
     assert payload["candidate_count"] == 139
     assert payload["finding_count"] == 0
     rule_ids = {r["id"] for r in payload["rules"]}
-    assert rule_ids == {"BP-C1", "BP-C2", "BP-C3", "BP-C4"}
+    assert rule_ids == {"BP-C1", "BP-C2", "BP-C3", "BP-C4",
+                        "BP-QUAL-003", "BP-QUAL-004", "BP-QUAL-005",
+                        "BP-QUAL-008", "BP-QUAL-009"}
 
 
 # -----------------------------------------------------------------------------
-# evaluate() — per-rule
+# evaluate(): per-rule
 # -----------------------------------------------------------------------------
 
 
@@ -208,4 +217,117 @@ def test_evaluate_aggregates_across_records():
 def test_rules_metadata_has_four_entries():
     """Sanity: BP-C1..C4 is the complete rule set; no extras, no gaps."""
     rule_ids = [rid for rid, _fn, _label in _RULES]
-    assert rule_ids == ["BP-C1", "BP-C2", "BP-C3", "BP-C4"]
+    assert rule_ids == ["BP-C1", "BP-C2", "BP-C3", "BP-C4",
+                        "BP-QUAL-003", "BP-QUAL-004", "BP-QUAL-005",
+                        "BP-QUAL-008", "BP-QUAL-009"]
+
+
+# -----------------------------------------------------------------------------
+# CR-BP-96 BP-QUAL extensions (advisory; OPTIONAL fields).
+# -----------------------------------------------------------------------------
+
+
+def test_evaluate_bp_qual_003_passes_vacuously_when_field_absent() -> None:
+    """BP-QUAL-003: input field absent -> advisory passes vacuously."""
+    f = evaluate([_baseline_record()])
+    assert not any(fnd["rule"] == "BP-QUAL-003" for fnd in f)
+
+
+def test_evaluate_bp_qual_003_fires_when_inputs_empty_list() -> None:
+    """BP-QUAL-003: inputs present but empty -> advisory finding."""
+    f = evaluate([_baseline_record(inputs=[])])
+    assert any(fnd["rule"] == "BP-QUAL-003" and fnd["advisory"] for fnd in f), f
+
+
+def test_evaluate_bp_qual_003_fires_when_input_entry_missing_required() -> None:
+    """BP-QUAL-003: input entry missing required field -> advisory finding."""
+    f = evaluate([_baseline_record(inputs=[{"id": "in-1", "name": "Input 1"}])])
+    assert any(fnd["rule"] == "BP-QUAL-003" for fnd in f), f
+
+
+def test_evaluate_bp_qual_003_passes_on_valid_input_entry() -> None:
+    """BP-QUAL-003: input entry with full shape -> no finding."""
+    f = evaluate([_baseline_record(inputs=[
+        {"id": "in-1", "name": "Input 1", "description": "A description.",
+         "source": "dea:source-x"},
+    ])])
+    assert not any(fnd["rule"] == "BP-QUAL-003" for fnd in f)
+
+
+def test_evaluate_bp_qual_004_passes_on_valid_transformation_string() -> None:
+    """BP-QUAL-004: transformation as non-empty string -> no finding."""
+    f = evaluate([_baseline_record(transformation="Input X is converted to output Y.")])
+    assert not any(fnd["rule"] == "BP-QUAL-004" for fnd in f)
+
+
+def test_evaluate_bp_qual_004_passes_on_valid_transformation_list() -> None:
+    """BP-QUAL-004: transformation as list of step objects -> no finding."""
+    f = evaluate([_baseline_record(transformation=[
+        {"name": "Step 1", "description": "First step."},
+        {"name": "Step 2", "description": "Second step."},
+    ])])
+    assert not any(fnd["rule"] == "BP-QUAL-004" for fnd in f)
+
+
+def test_evaluate_bp_qual_004_fires_on_empty_string() -> None:
+    """BP-QUAL-004: transformation present but empty string -> advisory."""
+    f = evaluate([_baseline_record(transformation="")])
+    assert any(fnd["rule"] == "BP-QUAL-004" and fnd["advisory"] for fnd in f), f
+
+
+def test_evaluate_bp_qual_005_passes_on_valid_output_entry() -> None:
+    """BP-QUAL-005: output entry with full shape -> no finding."""
+    f = evaluate([_baseline_record(outputs=[
+        {"id": "out-1", "name": "Output 1", "description": "A description.",
+         "consumer": "dea:consumer-x"},
+    ])])
+    assert not any(fnd["rule"] == "BP-QUAL-005" for fnd in f)
+
+
+def test_evaluate_bp_qual_005_fires_when_output_entry_missing_required() -> None:
+    """BP-QUAL-005: output entry missing required field -> advisory."""
+    f = evaluate([_baseline_record(outputs=[{"id": "out-1"}])])
+    assert any(fnd["rule"] == "BP-QUAL-005" for fnd in f), f
+
+
+def test_evaluate_bp_qual_008_passes_on_valid_responsibility_string() -> None:
+    """BP-QUAL-008: responsibility as non-empty string -> no finding."""
+    f = evaluate([_baseline_record(responsibility="Operations team")])
+    assert not any(fnd["rule"] == "BP-QUAL-008" for fnd in f)
+
+
+def test_evaluate_bp_qual_008_fires_on_empty_string() -> None:
+    """BP-QUAL-008: responsibility present but empty string -> advisory."""
+    f = evaluate([_baseline_record(responsibility="")])
+    assert any(fnd["rule"] == "BP-QUAL-008" and fnd["advisory"] for fnd in f), f
+
+
+def test_evaluate_bp_qual_009_passes_on_valid_boundary_object() -> None:
+    """BP-QUAL-009: boundary as non-empty object -> no finding."""
+    f = evaluate([_baseline_record(boundary={"scope": "all customer segments"})])
+    assert not any(fnd["rule"] == "BP-QUAL-009" for fnd in f)
+
+
+def test_evaluate_bp_qual_009_fires_on_empty_object() -> None:
+    """BP-QUAL-009: boundary present but empty object -> advisory."""
+    f = evaluate([_baseline_record(boundary={})])
+    assert any(fnd["rule"] == "BP-QUAL-009" and fnd["advisory"] for fnd in f), f
+
+
+def test_bp_qual_aliases_match_existing_bp_c_family() -> None:
+    """The BP-QUAL-001/002/006/007/010/012 aliases inherit BP-C verdicts."""
+    assert _BP_QUAL_ALIASES["BP-QUAL-001"] == "BP-C3"
+    assert _BP_QUAL_ALIASES["BP-QUAL-002"] == "BP-C1"
+    assert _BP_QUAL_ALIASES["BP-QUAL-006"] == "BP-C1+BP-C2"
+    assert _BP_QUAL_ALIASES["BP-QUAL-007"] == "BP-C2"
+    assert _BP_QUAL_ALIASES["BP-QUAL-010"] == "BP-C3"
+    assert _BP_QUAL_ALIASES["BP-QUAL-012"] == "BP-C4"
+
+
+def test_bp_qual_findings_are_tagged_advisory() -> None:
+    """BP-QUAL findings must carry advisory=True so --strict does not fail."""
+    f = evaluate([_baseline_record(inputs=[])])
+    bp_qual_findings = [fnd for fnd in f if fnd["rule"].startswith("BP-QUAL")]
+    assert bp_qual_findings, "expected at least one BP-QUAL finding"
+    for fnd in bp_qual_findings:
+        assert fnd["advisory"] is True, fnd
