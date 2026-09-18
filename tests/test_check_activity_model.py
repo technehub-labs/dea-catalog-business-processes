@@ -60,6 +60,12 @@ from check_activity_model import (  # noqa: E402
     _check_act_007,
     _check_act_008,
     _check_act_009,
+    _check_act_011,
+    _check_act_012,
+    _check_act_013,
+    _check_act_014,
+    _check_act_015,
+    _RULES_RECORD,
     _build_parent_index,
     _is_activity,
     _load_records,
@@ -115,13 +121,20 @@ def test_cli_self_test_passes():
 
 
 def test_cli_live_run_returns_conformant():
-    """Live run: 537 Activity records (5 CR-BP-42 + 32 CR-BP-43 + 8 CR-BP-44 + 28 CR-BP-45 + 36 CR-BP-46 + 40 CR-BP-47 + 32 CR-BP-48 + 28 CR-BP-49 + 40 CR-BP-50 + 24 CR-BP-51 + 36 CR-BP-52 + 44 CR-BP-53 + 48 CR-BP-54 + 28 CR-BP-55 + 36 CR-BP-56 + 36 CR-BP-57 + 20 CR-BP-69 + 12 CR-BP-77 + 4 CR-BP-79), 138 BP records (126 + 2 CR-BP-64 + 1 CR-BP-65 + 1 CR-BP-66 + 1 CR-BP-67 + 1 CR-BP-71 + 1 CR-BP-73 + 1 CR-BP-75 + 1 CR-BP-78 + 1 CR-BP-81 + 1 CR-BP-82 + 1 CR-BP-83 + 1 CR-BP-86 admissions), 0 findings."""
+    """Live run: 553 Activity records; 138 BP records. ACT-001..010 are mandatory
+    (CONFORMANT when they pass); ACT-011..015 are advisory (CR-BP-97 design intent).
+    Live catalog emits 9 advisory ACT-011 findings (existing Activity records
+    whose `definition:` is < 120 chars); --strict does NOT fail on advisory
+    findings.
+    """
     result = _run([])
     assert result.returncode == 0, result.stdout + result.stderr
-    assert "Activity Model (CR-BP-32; ACT-001..010): CONFORMANT" in result.stdout
+    assert "Activity Model (CR-BP-32 ACT-001..010 + CR-BP-97 ACT-011..015): CONFORMANT" in result.stdout
     assert "Activity records: 553" in result.stdout
     assert "BP records:       139" in result.stdout
-    assert "Findings:         0" in result.stdout
+    # CR-BP-97 surfaces 9 advisory ACT-011 findings (documented behavior).
+    assert "Findings:         9" in result.stdout
+    assert "ACT-011" in result.stdout
 
 
 def test_cli_strict_mode_treats_findings_as_failure(tmp_path, monkeypatch):
@@ -161,13 +174,18 @@ def test_cli_json_shape():
     assert data["verdict"] == "CONFORMANT"
     assert data["activity_record_count"] == 553
     assert data["bp_record_count"] == 139
-    assert data["finding_count"] == 0
-    assert data["canonical_composition_type"] == CANONICAL_COMPOSITION_TYPE
+    # CR-BP-97 surfaces 9 advisory ACT-011 findings (documented behavior).
+    assert data["finding_count"] == 9
+    assert canonical_composition_type(data) == CANONICAL_COMPOSITION_TYPE
     assert sorted(data["forbidden_composition_types"]) == sorted(FORBIDDEN_COMPOSITION_TYPES)
     rule_ids = {r["id"] for r in data["rules"]}
-    assert "ACT-001" in rule_ids
-    assert "ACT-009" in rule_ids
-    assert "ACT-010" in {r["id"] for r in data["rules"]}
+    for expected in ("ACT-001", "ACT-009", "ACT-010",
+                    "ACT-011", "ACT-012", "ACT-013", "ACT-014", "ACT-015"):
+        assert expected in rule_ids, f"missing {expected} from rules list"
+
+
+def canonical_composition_type(data):
+    return data["canonical_composition_type"]
 
 
 # -----------------------------------------------------------------------------
@@ -363,7 +381,7 @@ def test_act_010_parent_bp_absent_degrades_to_forward():
 
 
 # -----------------------------------------------------------------------------
-# Type filter — BP records are NEVER inspected
+# Type filter: BP records are NEVER inspected
 # -----------------------------------------------------------------------------
 
 
@@ -401,3 +419,126 @@ def test_load_records_empty_when_no_activity_dir(tmp_path, monkeypatch):
 
 def _build_parent_index_for(catalog_root: Path) -> dict[str, Path]:
     return _build_parent_index(catalog_root)
+
+
+# -----------------------------------------------------------------------------
+# CR-BP-97 ACT-011..015 extensions (advisory; OPTIONAL fields).
+# -----------------------------------------------------------------------------
+
+
+def test_rules_metadata_includes_act_011_through_015() -> None:
+    """Sanity: ACT-011..015 are present in the rule set."""
+    rule_ids = [rid for rid, _fn, _label in _RULES_RECORD]
+    for expected in ("ACT-011", "ACT-012", "ACT-013", "ACT-014", "ACT-015"):
+        assert expected in rule_ids, f"missing {expected} from _RULES_RECORD"
+
+
+def test_act_011_definition_too_short() -> None:
+    """ACT-011: definition < 120 chars -> advisory finding."""
+    r = _record(extra={"definition": "too short"})
+    f = evaluate([(Path("/x"), r)])
+    assert any(fnd["rule"] == "ACT-011" and fnd["advisory"] for fnd in f), f
+
+
+def test_act_011_definition_acceptable_length() -> None:
+    """ACT-011: definition >= 120 chars -> no finding."""
+    r = _record(extra={
+        "definition": (
+            "The cohesive grouping of work within the parent Business "
+            "Process that validates customer eligibility prior to "
+            "fulfilment, contributing materially to the parent process "
+            "outcome without independently satisfying the qualification "
+            "criteria of a Business Process."
+        ),
+    })
+    f = evaluate([(Path("/x"), r)])
+    assert not any(fnd["rule"] == "ACT-011" for fnd in f)
+
+
+def test_act_011_skips_deprecated_records() -> None:
+    """ACT-011: deprecated records are exempt from the definition minimum."""
+    r = _record(extra={"definition": "too short", "lifecycle_status": "deprecated"})
+    f = evaluate([(Path("/x"), r)])
+    assert not any(fnd["rule"] == "ACT-011" for fnd in f)
+
+
+def test_act_012_inputs_missing_required_field() -> None:
+    """ACT-012: inputs entry missing source -> advisory."""
+    r = _record(extra={"inputs": [{"id": "in-1", "name": "Input 1", "description": "Desc."}]})
+    f = evaluate([(Path("/x"), r)])
+    assert any(fnd["rule"] == "ACT-012" for fnd in f), f
+
+
+def test_act_012_valid_inputs_outputs() -> None:
+    """ACT-012: valid inputs + outputs -> no finding."""
+    r = _record(extra={
+        "inputs": [{"id": "in-1", "name": "Input 1", "description": "Desc.", "source": "dea:x"}],
+        "outputs": [{"id": "out-1", "name": "Output 1", "description": "Desc.", "consumer": "dea:y"}],
+    })
+    f = evaluate([(Path("/x"), r)])
+    assert not any(fnd["rule"] == "ACT-012" for fnd in f)
+
+
+def test_act_013_outcome_contribution_empty_string() -> None:
+    """ACT-013: outcome_contribution present but empty -> advisory."""
+    r = _record(extra={"outcome_contribution": ""})
+    f = evaluate([(Path("/x"), r)])
+    assert any(fnd["rule"] == "ACT-013" and fnd["advisory"] for fnd in f), f
+
+
+def test_act_014_boundary_empty_object() -> None:
+    """ACT-014: boundary present but empty object -> advisory."""
+    r = _record(extra={"boundary": {}})
+    f = evaluate([(Path("/x"), r)])
+    assert any(fnd["rule"] == "ACT-014" and fnd["advisory"] for fnd in f), f
+
+
+def test_act_015_sibling_distinction_finds_duplicate_name() -> None:
+    """ACT-015: two Activities in the same parent BP with the same name -> advisory."""
+    r1 = _record(id_="dea:activity-a", name="Same Name",
+                 belongs_to="dea:process-x",
+                 extra={"definition": "The first activity record in this sibling test that demonstrates duplicate-name detection in ACT-015."})
+    r2 = _record(id_="dea:activity-b", name="Same Name",
+                 belongs_to="dea:process-x",
+                 extra={"definition": "The second activity record in this sibling test that demonstrates duplicate-name detection in ACT-015."})
+    f = evaluate([(Path("/x"), r1), (Path("/y"), r2)])
+    assert any(fnd["rule"] == "ACT-015" and fnd["advisory"] for fnd in f), f
+
+
+def test_act_015_sibling_distinction_passes_for_distinct_names() -> None:
+    """ACT-015: distinct names in the same parent BP -> no finding."""
+    r1 = _record(id_="dea:activity-a", name="Alpha", belongs_to="dea:process-x",
+                 extra={"definition": "First activity in the distinct-name test demonstrating ACT-015 passes for sibling records."})
+    r2 = _record(id_="dea:activity-b", name="Beta", belongs_to="dea:process-x",
+                 extra={"definition": "Second activity in the distinct-name test demonstrating ACT-015 passes for sibling records."})
+    f = evaluate([(Path("/x"), r1), (Path("/y"), r2)])
+    assert not any(fnd["rule"] == "ACT-015" for fnd in f)
+
+
+def test_act_097_findings_are_tagged_advisory() -> None:
+    """ACT-011..015 findings carry advisory=True so --strict does not fail."""
+    r = _record(extra={"definition": "too short"})
+    f = evaluate([(Path("/x"), r)])
+    act_097_findings = [fnd for fnd in f if fnd["rule"] in (
+        "ACT-011", "ACT-012", "ACT-013", "ACT-014", "ACT-015",
+    )]
+    assert act_097_findings
+    for fnd in act_097_findings:
+        assert fnd["advisory"] is True, fnd
+
+
+def test_live_catalog_advisory_findings_are_non_blocking() -> None:
+    """The 9 live-catalog ACT-011 advisory findings are documented behavior.
+
+    Per CR-BP-95 back-compat rule, advisory findings are expected when
+    existing records don't yet meet the new minimum. --strict must NOT
+    fail on advisory findings; this assertion documents the invariant.
+    """
+    result = subprocess.run(
+        [sys.executable, str(SCRIPT), "--strict"],
+        capture_output=True, text=True, cwd=str(ROOT),
+    )
+    # exit code 0 because all findings are advisory (CR-BP-97 design intent).
+    assert result.returncode == 0, result.stdout + result.stderr
+    # The CR-BP-97 ACT-011 findings appear in stdout (advisory surfaced for transparency).
+    assert "ACT-011" in result.stdout
