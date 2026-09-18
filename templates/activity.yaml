@@ -2,8 +2,10 @@
 # templates/activity.yaml
 # CR-BP-94 (Decomposition Record Templates); recon-programme slice CR-BP-92 §9.
 # CR-BP-93 (Decomposition Semantic Contract) §6 normative basis.
+# CR-BP-97 (Activity Cohesion and Decomposition Gate): recon-programme extension
+# that adds ACT-011..015 as advisory structure checks for OPTIONAL fields.
 # Schema: schemas/entities/activity.schema.json (Draft-07).
-# Gates: ACT-001..010 (gate [15] Activity Model); EXE-001..010 (gate [16]).
+# Gates: ACT-001..015 (gate [15] Activity Model); EXE-001..010 (gate [16]).
 # =============================================================================
 #
 # What this template IS:
@@ -90,6 +92,40 @@ ecfConformance:
       domain: <Domain>                # MUST match the parent BP's ecfConformance.canonicalReferences[0].domain.
       stage: <Stage>                  # MUST match the parent BP's stage.
       identifier: ecf:<domainCamel>.<stage>
+
+# -----------------------------------------------------------------------------
+# OPTIONAL: inputs / outputs / outcome_contribution / boundary.
+# CR-BP-97 ACT-012/013/014 (advisory). When present, structure is enforced
+# by scripts/check_activity_model.py. Back-compat: existing pre-CR-BP-97
+# Activity records remain conformant without these fields (advisory passes
+# vacuously when the field is absent). Backfill across the existing 553
+# Activity records is the work of CR-BP-99 or a dedicated L3 enrichment
+# tranche, NOT of CR-BP-97.
+# -----------------------------------------------------------------------------
+
+# inputs:                              # ACT-012: each entry must have id/name/description/source.
+#   - id: <input-id>
+#     name: <input name>
+#     description: |
+#       <What this input represents.>
+#     source: <source entity id or free-text origin>
+
+# outputs:                             # ACT-012: each entry must have id/name/description/consumer.
+#   - id: <output-id>
+#     name: <output name>
+#     description: |
+#       <What this output represents.>
+#     consumer: <consumer entity id or free-text destination>
+
+# outcome_contribution: |              # ACT-013: non-empty string when present.
+#   <The contribution this Activity makes to the parent process outcome.>
+
+# boundary:                            # ACT-014: non-empty string or object when present.
+#   scope: <boundary scope statement>
+#   inclusions:
+#     - <inclusion-1>
+#   exclusions:
+#     - <exclusion-1>
 
 # -----------------------------------------------------------------------------
 # Metadata + change_history (gate [10] ADM).

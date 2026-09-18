@@ -3,23 +3,58 @@
 check_activity_model.py
 ========================
 
-Activity Model validator (CR-BP-32; ACT-001..010).
+Activity Model validator (CR-BP-32 ACT-001..010 + CR-BP-97 ACT-011..015).
 
 Codifies the Activity Model rules from CR-BP-32 §15 as machine-testable
-per-record invariants. Today the catalog has zero Activity records; the
-validator is therefore a regression guard that emits no findings on the
-existing 126 Business Process records (none of which are Activity-typed)
-and prepares the catalog for the first Activity contributions.
+per-record invariants. The CR-BP-97 extensions (ACT-011..015) are five
+structure checks for OPTIONAL fields on the Activity record (per CR-BP-92 §12):
+
+  ACT-011  Cohesive work statement adequacy (extends ACT-003).
+           When the Activity is non-deprecated, the `definition` field
+           must be a substantive prose statement (>= 120 chars). Back-compat:
+           ACT-003 already requires `cohesion_rationale`; ACT-011 strengthens
+           the `definition` minimum.
+
+  ACT-012  Inputs/Outputs integrity (advisory; OPTIONAL field).
+           When `inputs[]` or `outputs[]` is present, structure is enforced
+           (id/name/description/source per CR-BP-92 §4 universal contract).
+
+  ACT-013  Outcome contribution (advisory; OPTIONAL field).
+           When `outcome_contribution:` is present, must be a non-empty string.
+
+  ACT-014  Boundary and exclusions (advisory; OPTIONAL field).
+           When `boundary:` is present, must be a non-empty string or
+           non-empty object with inclusions/exclusions.
+
+  ACT-015  Sibling distinction (advisory; cross-record check).
+           When two Activities share the same parent Business Process and
+           the same `name`, emit a finding. The check is scoped to records
+           whose names are non-empty and matching exactly.
+
+Back-compat rule (per CR-BP-95): the underlying OPTIONAL fields are absent
+on all existing Activity records; advisory checks pass vacuously when the
+field is absent. Backfill across the existing record population is the
+work of a separate reconciliation slice (CR-BP-99 or a dedicated L3
+enrichment tranche), not CR-BP-97.
+
+ACT-016..020 from the recon programme are covered by the existing
+ACT-004 (Task decomposition integrity) and ACT-010 (Activity traceability)
+checks; CR-BP-97 reconciles the prose rather than introducing net-new
+rules for these.
+
+Today the catalog has zero Activity records; the validator is therefore
+a regression guard that emits no findings on the existing canonical
+Business Process records (none of which are Activity-typed) and prepares
+the catalog for the first Activity contributions.
 
 The validator only inspects records whose `type` discriminator is
 `Activity` (or records that opt into Activity decomposition by declaring
-the `composes` shape defined in §14). The 126 canonical Business
-Process records (`type: Process`) are NEVER inspected and produce
-zero findings by construction (CR-BP-32 §17 "Result (post-landing)":
-existing BPs without Activity decomposition are valid and remain at
-L4 conformance).
+the `composes` shape defined in §14). The canonical Business Process
+records (`type: Process`) are NEVER inspected and produce zero findings
+by construction (CR-BP-32 §17 "Result (post-landing)": existing BPs
+without Activity decomposition are valid and remain at L4 conformance).
 
-Rules (derived from CR-BP-32 §15):
+Rules (derived from CR-BP-32 §15 + CR-BP-97 §12):
 
   ACT-001 — Every Activity belongs to a Business Process.
             type=Activity ⇒ belongs_to_business_process (top-level or
@@ -492,6 +527,138 @@ def _check_act_010_wrapper(record: dict, _path: Path) -> str | None:
     return _check_act_010_reverse(record)
 
 
+# CR-BP-97 ACT-011..015 extensions (advisory; OPTIONAL fields).
+# These checks pass vacuously when the field is absent (back-compat rule
+# per CR-BP-95). When the field IS present, structure is enforced.
+# ACT-016..020 are covered by existing ACT-004 / ACT-010; CR-BP-97
+# reconciles the prose rather than introducing net-new rules.
+
+MIN_DEFINITION_LEN_ACT_011 = 120  # Substantive prose minimum for the cohesive work statement.
+
+
+def _definition(record: dict) -> str:
+    """Return the Activity's `definition:` string, top-level or metadata."""
+    val = record.get("definition")
+    if isinstance(val, str):
+        return val.strip()
+    md = record.get("metadata") or {}
+    if isinstance(md, dict):
+        val = md.get("definition")
+        if isinstance(val, str):
+            return val.strip()
+    return ""
+
+
+def _check_act_011(record: dict) -> str | None:
+    """ACT-011 (CR-BP-97): Cohesive work statement adequacy.
+
+    The Activity's `definition:` field must be substantive prose (>= 120 chars).
+    Back-compat: ACT-003 already requires `cohesion_rationale`; ACT-011
+    strengthens the `definition` minimum. The check skips `deprecated`
+    lifecycle records (deprecation may carry a minimal definition).
+    """
+    lifecycle = (record.get("lifecycle_status") or "").strip().lower()
+    if lifecycle in ("deprecated", "retired"):
+        return None
+    definition = _definition(record)
+    if len(definition) < MIN_DEFINITION_LEN_ACT_011:
+        return (
+            f"Activity `definition` is too short "
+            f"({len(definition)} chars; need >= {MIN_DEFINITION_LEN_ACT_011}). "
+            f"A cohesive work statement is required, not a label."
+        )
+    return None
+
+
+def _check_act_012(record: dict) -> str | None:
+    """ACT-012 (CR-BP-97): Inputs/Outputs integrity (advisory; OPTIONAL).
+
+    When `inputs[]` or `outputs[]` is present, every entry must conform to
+    the universal-contract shape (CR-BP-92 §4).
+    """
+    inputs = record.get("inputs")
+    if inputs is not None:
+        if not isinstance(inputs, list) or not inputs:
+            return "inputs present but empty"
+        for idx, item in enumerate(inputs):
+            if not isinstance(item, dict):
+                return f"inputs[{idx}] must be an object with id/name/description/source"
+            for required in ("id", "name", "description", "source"):
+                if not str(item.get(required, "")).strip():
+                    return f"inputs[{idx}].{required} missing or empty"
+    outputs = record.get("outputs")
+    if outputs is not None:
+        if not isinstance(outputs, list) or not outputs:
+            return "outputs present but empty"
+        for idx, item in enumerate(outputs):
+            if not isinstance(item, dict):
+                return f"outputs[{idx}] must be an object with id/name/description/consumer"
+            for required in ("id", "name", "description", "consumer"):
+                if not str(item.get(required, "")).strip():
+                    return f"outputs[{idx}].{required} missing or empty"
+    return None
+
+
+def _check_act_013(record: dict) -> str | None:
+    """ACT-013 (CR-BP-97): Outcome contribution (advisory; OPTIONAL).
+
+    When `outcome_contribution:` is present, must be a non-empty string.
+    """
+    contribution = record.get("outcome_contribution")
+    if contribution is None:
+        return None
+    if not isinstance(contribution, str) or not contribution.strip():
+        return "outcome_contribution present but empty string"
+    return None
+
+
+def _check_act_014(record: dict) -> str | None:
+    """ACT-014 (CR-BP-97): Boundary and exclusions (advisory; OPTIONAL).
+
+    When `boundary:` is present, must be a non-empty string or a non-empty
+    object with inclusions/exclusions.
+    """
+    boundary = record.get("boundary")
+    if boundary is None:
+        return None
+    if isinstance(boundary, str):
+        if not boundary.strip():
+            return "boundary present but empty string"
+        return None
+    if isinstance(boundary, dict):
+        if not boundary:
+            return "boundary present but empty object"
+        return None
+    return "boundary must be a string or a non-empty object"
+
+
+# Cross-record check; populated by evaluate() via _SIBLING_INDEX.
+# _SIBLING_INDEX maps (parent_bp_id, activity_name) -> list of activity ids.
+_SIBLING_INDEX: dict[tuple[str, str], list[str]] = {}
+
+
+def _check_act_015(record: dict) -> str | None:
+    """ACT-015 (CR-BP-97): Sibling distinction (advisory; cross-record).
+
+    When two or more Activities share the same parent Business Process and
+    the same `name`, emit a finding. The check uses the in-memory sibling
+    index populated by evaluate().
+    """
+    rec_id = record.get("id")
+    name = (record.get("name") or "").strip()
+    bp_ref = _belongs_to_bp(record)
+    if not isinstance(rec_id, str) or not name or not bp_ref:
+        return None
+    siblings = _SIBLING_INDEX.get((bp_ref, name), [])
+    if len(siblings) > 1 and rec_id in siblings:
+        return (
+            f"Activity name={name!r} appears on multiple sibling Activities "
+            f"in the same parent BP ({bp_ref!r}): {siblings}. "
+            f"Each sibling should have a distinct name."
+        )
+    return None
+
+
 _RULES_RECORD = (
     ("ACT-001", _check_act_001,
      "Every Activity belongs to a Business Process"),
@@ -511,6 +678,17 @@ _RULES_RECORD = (
      "No implementation-detail marker fields"),
     ("ACT-009", _check_act_009,
      "No execution-model fields (CR-BP-33 owns execution)"),
+    # CR-BP-97 extensions (advisory; OPTIONAL fields).
+    ("ACT-011", _check_act_011,
+     "Cohesive work statement adequacy"),
+    ("ACT-012", _check_act_012,
+     "Inputs/Outputs integrity (advisory; OPTIONAL)"),
+    ("ACT-013", _check_act_013,
+     "Outcome contribution (advisory; OPTIONAL)"),
+    ("ACT-014", _check_act_014,
+     "Boundary and exclusions (advisory; OPTIONAL)"),
+    ("ACT-015", _check_act_015,
+     "Sibling distinction (advisory; cross-record)"),
 )
 
 
@@ -549,15 +727,31 @@ def _build_parent_index(catalog_root: Path) -> dict[str, Path]:
 
 
 def evaluate(pairs, parent_index: dict[str, Path] | None = None) -> list[dict]:
-    """Run all ten rules against every (path, record) pair.
+    """Run all rules (ACT-001..009 + ACT-011..015) against every (path, record) pair.
 
     Only records with type=Activity are inspected (per CR-BP-32 §17).
     Business Process records (type=Process) are NEVER inspected.
+
+    CR-BP-97: this function also populates the in-memory _SIBLING_INDEX
+    (used by ACT-015 cross-record check) before running the rule set.
+    Findings from ACT-011..015 are tagged `advisory: True` so the
+    --strict mode does not fail on them.
     """
-    global _PARENT_INDEX
+    global _PARENT_INDEX, _SIBLING_INDEX
     if parent_index is None:
         parent_index = {}
     _PARENT_INDEX = parent_index
+    # Populate the sibling index from the activity records themselves.
+    _SIBLING_INDEX = {}
+    for _path, record in pairs:
+        if not _is_activity(record):
+            continue
+        rec_id = record.get("id")
+        name = (record.get("name") or "").strip()
+        bp_ref = _belongs_to_bp(record)
+        if not isinstance(rec_id, str) or not name or not bp_ref:
+            continue
+        _SIBLING_INDEX.setdefault((bp_ref, name), []).append(rec_id)
 
     findings: list[dict] = []
     for path, record in pairs:
@@ -572,6 +766,10 @@ def evaluate(pairs, parent_index: dict[str, Path] | None = None) -> list[dict]:
                     "rule": rule_id,
                     "record_id": rec_id,
                     "diagnostic": diagnostic,
+                    "advisory": rule_id.startswith("ACT-01") and rule_id not in (
+                        "ACT-001", "ACT-002", "ACT-003", "ACT-004",
+                        "ACT-005", "ACT-006", "ACT-007", "ACT-008", "ACT-009",
+                    ),
                 })
         # ACT-010 (reverse-traceability)
         diagnostic = _check_act_010_wrapper(record, path)
@@ -580,12 +778,20 @@ def evaluate(pairs, parent_index: dict[str, Path] | None = None) -> list[dict]:
                 "rule": "ACT-010",
                 "record_id": rec_id,
                 "diagnostic": diagnostic,
+                "advisory": False,
             })
     return findings
 
 
 def _verdict(findings: list[dict]) -> str:
-    if findings:
+    """Compute verdict from findings.
+
+    CR-BP-97 design intent: only mandatory (non-advisory) findings count
+    toward NON-CONFORMANT. Advisory findings are surfaced for transparency
+    but do not change the verdict.
+    """
+    mandatory = [f for f in findings if not f.get("advisory", False)]
+    if mandatory:
         return "NON-CONFORMANT"
     return "CONFORMANT"
 
@@ -647,22 +853,27 @@ def main(argv: list[str] | None = None) -> int:
             "canonical_composition_type": CANONICAL_COMPOSITION_TYPE,
         }, indent=2, sort_keys=True))
     else:
-        print(f"Activity Model (CR-BP-32; ACT-001..010): {verdict}")
+        print(f"Activity Model (CR-BP-32 ACT-001..010 + CR-BP-97 ACT-011..015): {verdict}")
         print(f"  Activity records: {len(activity_pairs)}")
         print(f"  BP records:       {len(parent_index)}")
         print(f"  Findings:         {len(findings)}")
         for rid, _fn, label in _RULES_RECORD:
             n = sum(1 for f in findings if f["rule"] == rid)
-            print(f"    {rid} ({label}): {n}")
+            advisory_marker = " [advisory]" if rid.startswith("ACT-011") or rid.startswith("ACT-012") or rid.startswith("ACT-013") or rid.startswith("ACT-014") or rid.startswith("ACT-015") else ""
+            print(f"    {rid} ({label}): {n}{advisory_marker}")
         n = sum(1 for f in findings if f["rule"] == "ACT-010")
         print(f"    ACT-010 (Activity traceability to parent BP): {n}")
         if findings:
             print("\nFindings:")
             for f in findings:
-                print(f"  [{f['rule']}] {f['record_id']}: {f['diagnostic']}")
+                adv = " [advisory]" if f.get("advisory") else ""
+                print(f"  [{f['rule']}{adv}] {f['record_id']}: {f['diagnostic']}")
 
     if findings and args.strict:
-        return 1
+        # CR-BP-97: --strict only fails on mandatory findings, not advisory.
+        mandatory_findings = [f for f in findings if not f.get("advisory", False)]
+        if mandatory_findings:
+            return 1
     return 0
 
 
@@ -681,6 +892,13 @@ def _record(id_: str = "dea:activity-self-test",
                 "decision to proceed or hold."),
             composes: list | None = None,
             boundary: str | None = "l4-reached",
+            definition: str | None = (
+                "The cohesive grouping of work within the parent Business "
+                "Process that validates customer eligibility prior to "
+                "fulfilment, contributing materially to the parent process "
+                "outcome without independently satisfying the qualification "
+                "criteria of a Business Process. The grouping is justified "
+                "by the single outcome: a decision to proceed or hold."),
             extra: dict | None = None) -> dict:
     d = {
         "id": id_,
@@ -694,6 +912,8 @@ def _record(id_: str = "dea:activity-self-test",
         d["composes"] = composes
     if boundary is not None:
         d["decomposition_boundary"] = boundary
+    if definition is not None:
+        d["definition"] = definition
     if extra:
         d.update(extra)
     return d
