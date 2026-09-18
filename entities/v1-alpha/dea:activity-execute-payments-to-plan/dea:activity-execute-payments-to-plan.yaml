@@ -4,9 +4,9 @@ name: Execute Payments to Plan
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
-definition: "The cohesive grouping of work within Run Accounts Payable that executes the approved payments to the payment plan."
+definition: The cohesive grouping of work within Run Accounts Payable that executes the approved payments to the payment plan, applying due-date ordering and settlement-instrument selection.
 belongs_to_business_process: dea:process-run-accounts-payable
-cohesion_rationale: "Constituent work shares a single execution concern (approved invoice to paid supplier), one input class (approved invoices, payment plan), and one output (executed payments). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6)."
+cohesion_rationale: Constituent work shares a single execution concern (approved invoice to paid supplier), one input class (approved invoices, payment plan), and one output (executed payments). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 decomposition_boundary: l4-reached
 ecfConformance:
   framework: EnterpriseConceptFramework
@@ -23,12 +23,21 @@ metadata:
   established_by: CR-BP-53
   established_at: '2026-09-13'
   change_history:
+  - cr: CR-BP-99
+    date: '2026-09-18'
+    change: 'ACT-011 backfill: definition expanded to >= 120 chars (cohesive work statement adequacy, CR-BP-97).'
   - cr: CR-BP-53
     date: '2026-09-13'
-    change: |
-      Initial L3 Activity entry; lands as part of the CR-BP-53
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-53
+
       FinanceAndAccounting Improve + Operate tranche (completes the FA
-      domain's L3 coverage; pattern proven by CR-BP-42 through CR-BP-52).
+
+      domain''s L3 coverage; pattern proven by CR-BP-42 through CR-BP-52).
+
       Classified per CR-BP-32 section 5 (fails standalone executability
+
       and resource dedication); decomposition boundary marker per CR-BP-32
+
       section 12 pending Task records (dea:Task lifecycle: proposed).
+
+      '
