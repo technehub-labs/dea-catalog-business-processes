@@ -1,0 +1,190 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://technehub-labs.github.io/dea-catalog-processes/schemas/entities/task.schema.json",
+  "title": "Task",
+  "description": "Schema for Task (L4) entries in technehub-labs/dea-catalog-processes. CR-BP-98; supersedes the `# TODO(CR-BP-98):` placeholders in `templates/task.yaml` (CR-BP-94). A Task is the lowest semantic level of process decomposition (CR-BP-93 §7). Tasks are bounded, actionable, single-responsibility, and independently verifiable for completion. ID family: `dea:task-*` (CR-BP-04 §4).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "name",
+    "definition",
+    "belongs_to_activity",
+    "trigger",
+    "outcome",
+    "version",
+    "lifecycle_status",
+    "status",
+    "ecfConformance"
+  ],
+  "properties": {
+    "type": {
+      "type": "string",
+      "const": "Task",
+      "description": "Discriminator. Always `Task` for L4 entries."
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^dea:task-[a-z0-9-]+$",
+      "description": "Stable Task id. CR-BP-04 §4 family. Convention: `dea:task-<kebab-name>`. Must be stable across renames."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "Verb-object form. Example: `Submit Filing to Regulator`, `Verify Party Identity`."
+    },
+    "definition": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000,
+      "description": "Bounded, actionable, single-responsibility. Answers: `What is the single bounded unit of work?` A Task is independently verifiable for completion."
+    },
+    "belongs_to_activity": {
+      "type": "string",
+      "pattern": "^dea:activity-[a-z0-9-]+$",
+      "description": "The single parent L3 Activity this Task belongs to. Per CR-BP-93 §7: `L4 is composed by exactly one parent L3 Activity`."
+    },
+    "trigger": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1000,
+      "description": "What initiates this Task. Single-responsibility, bounded."
+    },
+    "outcome": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1000,
+      "description": "The completion state. Verifiable for completion. Per CR-BP-93 §9: at L4, `Outcomes` is `Completion state`."
+    },
+    "responsibility": {
+      "type": "string",
+      "maxLength": 1000,
+      "description": "Bounded responsibility: one role or capability. Per CR-BP-93 §9: `Responsibility` is `Required` at L4."
+    },
+    "boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "inclusions": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1, "maxLength": 500 }
+        },
+        "exclusions": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1, "maxLength": 500 }
+        }
+      },
+      "description": "Inclusions / exclusions. Per CR-BP-93 §9: `Boundary` is `Required` at L4."
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source", "claim"],
+        "properties": {
+          "source": { "type": "string", "minLength": 1, "maxLength": 500 },
+          "claim": { "type": "string", "minLength": 1, "maxLength": 1000 },
+          "strength": {
+            "type": "string",
+            "enum": ["E0", "E1", "E2", "E3", "E4", "E5"]
+          },
+          "url": { "type": "string", "format": "uri" }
+        },
+        "additionalProperties": false
+      },
+      "description": "Structured evidence per CR-BP-92 §13 evidence-strength scale (E0..E5)."
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(-[a-z0-9.-]+)?$",
+      "description": "SemVer; bump on semantic change (SIV-001..004)."
+    },
+    "lifecycle_status": {
+      "type": "string",
+      "enum": ["candidate", "active", "deprecated", "retired"],
+      "description": "Entity lifecycle. Distinct from documentation lifecycle."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["candidate", "proposed", "accepted", "active", "deprecated", "retired"],
+      "description": "Discovery status (CR-BP-11 dispositions)."
+    },
+    "ecfConformance": {
+      "type": "object",
+      "required": [
+        "framework",
+        "contractVersion",
+        "profile",
+        "status",
+        "affiliation",
+        "canonicalReferences"
+      ],
+      "properties": {
+        "framework": { "type": "string", "const": "EnterpriseConceptFramework" },
+        "contractVersion": { "type": "string" },
+        "profile": { "type": "string", "const": "dea:ecf@1.0.0" },
+        "status": {
+          "type": "string",
+          "enum": ["conformant", "non-conformant", "held-unmapped"]
+        },
+        "affiliation": {
+          "type": "string",
+          "enum": ["mapped", "held-unmapped", "inherits-catalog"]
+        },
+        "rationaleRef": { "type": "string" },
+        "canonicalReferences": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["kind", "domain", "stage", "identifier"],
+            "properties": {
+              "kind": { "type": "string", "const": "coordinate" },
+              "domain": { "type": "string" },
+              "stage": { "type": "string" },
+              "identifier": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false,
+      "description": "ECF conformance block (CR-ECF-CG-004). Inherits the parent Activity's coordinate."
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "established_by": { "type": "string" },
+        "established_at": { "type": "string", "format": "date" },
+        "change_history": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["cr", "date", "change"],
+            "properties": {
+              "cr": { "type": "string" },
+              "date": { "type": "string", "format": "date" },
+              "change": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "links": {
+      "type": "array",
+      "description": "Navigation links to related artifacts.",
+      "items": {
+        "type": "object",
+        "required": ["rel", "href"],
+        "properties": {
+          "rel": { "type": "string" },
+          "href": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

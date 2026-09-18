@@ -100,6 +100,8 @@ GATES: list[tuple[str, bool, list[str]]] = [
      False, ["python", "scripts/check_process_scope.py"]),  # CR-BP-95; advisory
     ("[21] Documentation Profile (DOC-001..005)",
      False, ["python", "scripts/check_documentation_profile.py"]),  # CR-BP-94-EXT-01; advisory
+    ("[22] Task Model (TASK-001..005)",
+     True, ["python", "scripts/check_task_model.py"]),  # CR-BP-98; blocking
 ]
 
 
