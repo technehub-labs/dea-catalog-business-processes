@@ -62,6 +62,42 @@ except ImportError:
 # -----------------------------------------------------------------------------
 
 PROFILE_REGISTRY: dict[tuple[str, str], dict] = {
+    # Cardinal entities (CR-BP-92 §7, CR-BP-93 §3).
+    # CR-BP-94-EXT-01a adds L0/L1 profiles; CR-BP-94-EXT-01 (PR #137) covered L2/L3/L4.
+    ("ProcessContext", "L0"): {
+        "profile_id": "dea:profile-readme-l0-process-context-v1",
+        "required_section_ids": [
+            "entity-identity",
+            "formal-definition",
+            "semantic-dimensions",
+            "decomposition",
+            "behavior",
+            "interfaces",
+            "roles",
+            "rules-controls",
+            # outcomes is conditional at L0 (inherited from ECF framework)
+            "evidence",
+            "completeness",
+            "revision-history",
+        ],
+    },
+    ("ProcessGroup", "L1"): {
+        "profile_id": "dea:profile-readme-l1-process-group-v1",
+        "required_section_ids": [
+            "entity-identity",
+            "formal-definition",
+            "semantic-dimensions",
+            "decomposition",
+            "behavior",
+            "interfaces",
+            "roles",
+            "rules-controls",
+            # outcomes is conditional at L1
+            "evidence",
+            "completeness",
+            "revision-history",
+        ],
+    },
     ("Process", "L2"): {
         "profile_id": "dea:profile-readme-l2-process-v1",
         "required_section_ids": [
@@ -147,10 +183,13 @@ CR_REFERENCE_PATTERN = re.compile(r"CR-BP-\d+[a-zA-Z\-]*")
 # Type / level resolution
 # -----------------------------------------------------------------------------
 
-# CR-BP-93 §3 level mapping: type -> level. Activity is L3; Task is L4
-# (placeholder until CR-BP-98 codifies the L4 schema). Process is L2
-# (Business Process).
+# CR-BP-93 §3 level mapping: type -> level. ProcessContext is L0
+# (cardinal); ProcessGroup is L1 (cardinal); Process is L2 (Business
+# Process); Activity is L3; Task is L4 (placeholder until CR-BP-98
+# codifies the L4 schema).
 LEVEL_BY_TYPE: dict[str, str] = {
+    "ProcessContext": "L0",
+    "ProcessGroup": "L1",
     "Process": "L2",
     "Activity": "L3",
     "Task": "L4",

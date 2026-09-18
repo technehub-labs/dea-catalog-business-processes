@@ -296,19 +296,42 @@ The pilot is **not** the full pilot implementation (that is EXT-06); it is a str
 
 | Sub-CR | Status | Scope |
 |---|---|---|
-| CR-BP-94-EXT-01 (this slice) | Proposed (PR pending) | Architecture + profile registry + DOC-001..005 + pilot scaffold |
+| CR-BP-94-EXT-01 (PR #137) | Merged | Architecture + profile registry (L2/L3/L4) + DOC-001..005 + pilot scaffold |
+| CR-BP-94-EXT-01a (this slice) | Proposed (PR pending) | L0 ProcessContext + L1 ProcessGroup profile additions; validator profile registry extension; LEVEL_BY_TYPE extension |
 | CR-BP-94-EXT-02 | Reserved | README Markdown template with section identifiers + profile-specific extensions + versioning |
 | CR-BP-94-EXT-03 | Reserved | Documentation manifest schema + coverage dimension scoring + lifecycle rules |
 | CR-BP-94-EXT-04 | Reserved | Profile-aware generator + structural validator + CI integration + evidence-state machine |
 | CR-BP-94-EXT-05 | Reserved | Decomposition reconciliation + parent-child traceability + catalog-wide coverage report |
 | CR-BP-94-EXT-06 | Reserved | Pilot completion + catalog-wide rollout |
 
+## 13. Cardinal entities: L0 (ProcessContext) and L1 (ProcessGroup)
+
+L0 (ProcessContext) and L1 (ProcessGroup) are cardinal entities per **CR-BP-92 §7** (decomposition matrix) and **CR-BP-93 §3** (semantic contract). They are catalog-owned types that pre-exist the L2 Business Process.
+
+CR-BP-94-EXT-01 (PR #137) covered L2/L3/L4; CR-BP-94-EXT-01a (this slice) adds the L0 and L1 profiles:
+
+| Profile ID | Type | Level | Required Sections | Notes |
+|---|---|---|---|---|
+| `dea:profile-readme-l0-process-context-v1` | `ProcessContext` | L0 | 11 | outcomes is conditional (inherited from ECF framework); not_applicable: execution-steps |
+| `dea:profile-readme-l1-process-group-v1` | `ProcessGroup` | L1 | 11 | outcomes is conditional; not_applicable: execution-steps |
+
+### Cardinal-entity constraints
+
+1. **L0 ProcessContexts are not deprecated or retired.** Their lifecycle transitions are: candidate -> active -> reorganized. The `reorganized` state lands in EXT-04 (lifecycle coverage model).
+2. **L1 ProcessGroups are not deprecated or retired.** Their lifecycle transitions are: candidate -> active -> reorganized. The `reorganized` state lands in EXT-04.
+3. **Schema strictness differs by level.** The L1 PG schema (`schemas/entities/process-group.schema.json`) declares `additionalProperties: false` and requires 12 fields including `composes` and `process_group_kind`. The L2 BP schema (`schemas/entity.schema.json`) is permissive (`additionalProperties` not set; only 5 required fields). The L0 ProcessContext schema is permissive.
+4. **Pilot manifests for L1 require a sibling-file pattern.** Because the L1 schema bans additional properties, the L1 documentation profile content lives in a sibling file (`docs/manifests/<id>-profile.yaml`) referenced from the manifest via a `links:` entry. The L2 BP pilot (EXT-01, PR #137) is structurally simpler because the BP schema is permissive.
+
+### L1 pilot decision (EXT-01a)
+
+The L1 pilot record on `dea:group-customer-insight-and-retention` is deferred to EXT-06 (pilot + catalog rollout). The pilot record would require schema gymnastics: empty `composes: []` would fail PG-002; non-empty would fail PG-006 MECE because the parent record already composes the same BP. EXT-06 lands the pilot at the L0/L1 level once the catalog-wide rollout scope is defined.
+
 ---
 
-## 13. Acceptance criteria (this slice)
+## 14. Acceptance criteria (this slice)
 
 1. `docs/process-documentation-architecture.md` (this document) is published.
-2. Three documentation profile templates exist under `templates/`: `documentation-profile-l2.yaml`, `documentation-profile-l3-activity.yaml`, `documentation-profile-l4-task.yaml`.
+2. Five documentation profile templates exist under `templates/`: `documentation-profile-l0-process-context.yaml`, `documentation-profile-l1-process-group.yaml`, `documentation-profile-l2.yaml`, `documentation-profile-l3-activity.yaml`, `documentation-profile-l4-task.yaml`.
 3. `scripts/check_documentation_profile.py` implements DOC-001..005.
 4. Gate [21] Documentation Profile is wired as **advisory** in `scripts/conformance_result.py`.
 5. `entities/v1-alpha/dea:process-customer-insight-and-retention/documentation/manifest.yaml` exists as the pilot scaffold.

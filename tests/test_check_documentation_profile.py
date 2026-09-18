@@ -36,8 +36,53 @@ from check_documentation_profile import (  # noqa: E402
 # -----------------------------------------------------------------------------
 
 
-def test_profile_registry_has_three_entries() -> None:
-    assert set(PROFILE_REGISTRY.keys()) == {("Process", "L2"), ("Activity", "L3"), ("Task", "L4")}
+def test_profile_registry_has_five_entries() -> None:
+    """CR-BP-94-EXT-01a: registry now covers L0/L1/L2/L3/L4 (was L2/L3/L4 in EXT-01)."""
+    assert set(PROFILE_REGISTRY.keys()) == {
+        ("ProcessContext", "L0"),
+        ("ProcessGroup", "L1"),
+        ("Process", "L2"),
+        ("Activity", "L3"),
+        ("Task", "L4"),
+    }
+
+
+def test_l0_profile_resolves_for_processcontext_record() -> None:
+    record = {"type": "ProcessContext"}
+    profile = _resolve_profile(record)
+    assert profile is not None
+    assert profile["profile_id"] == "dea:profile-readme-l0-process-context-v1"
+
+
+def test_l1_profile_resolves_for_processgroup_record() -> None:
+    record = {"type": "ProcessGroup"}
+    profile = _resolve_profile(record)
+    assert profile is not None
+    assert profile["profile_id"] == "dea:profile-readme-l1-process-group-v1"
+
+
+def test_l0_profile_required_sections() -> None:
+    """L0 ProcessContext profile: 11 required sections; outcomes is conditional."""
+    profile = PROFILE_REGISTRY[("ProcessContext", "L0")]
+    required = profile["required_section_ids"]
+    assert len(required) == 11
+    assert "outcomes" not in required
+    for sec in ("entity-identity", "formal-definition", "semantic-dimensions",
+                "decomposition", "behavior", "interfaces", "roles",
+                "rules-controls", "evidence", "completeness", "revision-history"):
+        assert sec in required, sec
+
+
+def test_l1_profile_required_sections() -> None:
+    """L1 ProcessGroup profile: 11 required sections; outcomes is conditional."""
+    profile = PROFILE_REGISTRY[("ProcessGroup", "L1")]
+    required = profile["required_section_ids"]
+    assert len(required) == 11
+    assert "outcomes" not in required
+    for sec in ("entity-identity", "formal-definition", "semantic-dimensions",
+                "decomposition", "behavior", "interfaces", "roles",
+                "rules-controls", "evidence", "completeness", "revision-history"):
+        assert sec in required, sec
 
 
 def test_profile_resolves_for_process_record() -> None:
@@ -60,6 +105,9 @@ def test_profile_unresolved_for_unknown_type() -> None:
 
 
 def test_resolve_level_by_type() -> None:
+    # CR-BP-94-EXT-01a: cardinal entities L0/L1 added to LEVEL_BY_TYPE.
+    assert _resolve_level({"type": "ProcessContext"}) == "L0"
+    assert _resolve_level({"type": "ProcessGroup"}) == "L1"
     assert _resolve_level({"type": "Process"}) == "L2"
     assert _resolve_level({"type": "Activity"}) == "L3"
     assert _resolve_level({"type": "Task"}) == "L4"
@@ -359,7 +407,13 @@ def test_cli_json_emits_well_formed_payload():
     # Profile registry is exposed.
     assert "profile_registry" in payload
     profile_keys = {tuple(p["key"]) for p in payload["profile_registry"]}
-    assert profile_keys == {("Process", "L2"), ("Activity", "L3"), ("Task", "L4")}
+    assert profile_keys == {
+        ("ProcessContext", "L0"),
+        ("ProcessGroup", "L1"),
+        ("Process", "L2"),
+        ("Activity", "L3"),
+        ("Task", "L4"),
+    }
 
 
 def test_findings_are_tagged_advisory():
