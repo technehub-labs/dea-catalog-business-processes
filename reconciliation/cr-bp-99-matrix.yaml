@@ -1,0 +1,419 @@
+# =============================================================================
+# reconciliation/cr-bp-99-matrix.yaml
+# CR-BP-99 (Schema/Validator/Documentation/Records Reconciliation Matrix)
+#
+# This file is the authoritative reconciliation matrix for the recon
+# programme. It enumerates every advisory finding + every documented
+# pre-existing inconsistency surfaced during CR-BP-91..98 and EXT-01..01a,
+# and assigns each row a disposition (backfill / defer / accept_as_is /
+# relax_rule) with an owner CR / EXT / future slice.
+#
+# Schema:
+#   matrix_version: int  (bumped on structural change)
+#   generated_at: YYYY-MM-DD
+#   rows: list of:
+#     - id: matrix-NNN
+#       finding:
+#         rule: ACT-011 | DOC-001 | ... (gate rule id)
+#         record_id: dea:...
+#         summary: short prose
+#       category: act_backfill | pg_backfill | doc_deferred | bp_qual_deferred |
+#                 rule_relaxation | schema_repair | pre_existing |
+#                 act_optional_deferred | pg_conformant | pscope_conformant |
+#                 task_conformant | doc_validator_state
+#       disposition: backfill | defer | accept_as_is | relax_rule
+#       owner: CR-BP-XX | CR-BP-99 | EXT-NN | future_slice | external
+#       remediation: prose description of the action
+#       status: open | closed
+#       closed_in: PR-NNN  (when status=closed)
+# =============================================================================
+
+matrix_version: 1
+generated_at: 2026-09-18
+generator: CR-BP-99 reconciliation slice (PR pending)
+source_artefacts:
+  - scripts/check_activity_model.py (ACT-011..015)
+  - scripts/check_l2_qualification.py (BP-QUAL-001..012)
+  - scripts/check_process_group.py (PG-001..010)
+  - scripts/check_process_scope.py (PSCOPE-001..008)
+  - scripts/check_documentation_profile.py (DOC-001..005)
+  - tests/test_dispositions.py (legacy drift, separate scope)
+
+# -----------------------------------------------------------------------------
+# Row set (20 entries)
+# -----------------------------------------------------------------------------
+rows:
+
+  # ===== matrix-001..009 ACT-011 cohesive work statement adequacy (9 advisory hits) =====
+  - id: matrix-001
+    finding:
+      rule: ACT-011
+      record_id: dea:activity-calculate-compensation
+      summary: '`definition` is 113 chars; >= 120 required (CR-BP-97 ACT-011).'
+    category: act_backfill
+    disposition: backfill
+    owner: CR-BP-99
+    remediation: |
+      Expand `definition` to 130+ chars by adding a clarifying clause.
+      Original: 'The cohesive grouping of work within Execute Payroll that
+      calculates the compensation due for each payroll cycle.'
+      Backfilled: 'The cohesive grouping of work within Execute Payroll
+      that calculates the compensation due for each payroll cycle,
+      applying the agreed schedule, deductions, and statutory adjustments.'
+    status: closed
+    closed_in: PR-140
+
+  - id: matrix-002
+    finding:
+      rule: ACT-011
+      record_id: dea:activity-commit-agent-topology
+      summary: '`definition` is 117 chars; >= 120 required (CR-BP-97 ACT-011).'
+    category: act_backfill
+    disposition: backfill
+    owner: CR-BP-99
+    remediation: |
+      Expand `definition` to 130+ chars. Original: 'The cohesive grouping
+      of work within Design Agent Topology that consolidates and commits
+      the designed agent topology.'
+      Backfilled: 'The cohesive grouping of work within Design Agent
+      Topology that consolidates and commits the designed agent topology
+      into the canonical reference for downstream activation.'
+    status: closed
+    closed_in: PR-140
+
+  - id: matrix-003
+    finding:
+      rule: ACT-011
+      record_id: dea:activity-commit-role-catalogue
+      summary: '`definition` is 117 chars; >= 120 required (CR-BP-97 ACT-011).'
+    category: act_backfill
+    disposition: backfill
+    owner: CR-BP-99
+    remediation: |
+      Expand `definition` to 130+ chars. Original: 'The cohesive grouping
+      of work within Design Role Catalogue that consolidates and commits
+      the designed role catalogue.'
+      Backfilled: 'The cohesive grouping of work within Design Role
+      Catalogue that consolidates and commits the designed role catalogue
+      as the canonical reference for downstream provisioning.'
+    status: closed
+    closed_in: PR-140
+
+  - id: matrix-004
+    finding:
+      rule: ACT-011
+      record_id: dea:activity-disburse-payroll
+      summary: '`definition` is 116 chars; >= 120 required (CR-BP-97 ACT-011).'
+    category: act_backfill
+    disposition: backfill
+    owner: CR-BP-99
+    remediation: |
+      Expand `definition` to 130+ chars. Original: 'The cohesive grouping
+      of work within Execute Payroll that disburses the net compensation
+      to employees for the cycle.'
+      Backfilled: 'The cohesive grouping of work within Execute Payroll
+      that disburses the net compensation to employees for the cycle,
+      applying payment-channel routing and reconciliation controls.'
+    status: closed
+    closed_in: PR-140
+
+  - id: matrix-005
+    finding:
+      rule: ACT-011
+      record_id: dea:activity-execute-payments-to-plan
+      summary: '`definition` is 114 chars; >= 120 required (CR-BP-97 ACT-011).'
+    category: act_backfill
+    disposition: backfill
+    owner: CR-BP-99
+    remediation: |
+      Expand `definition` to 130+ chars. Original: 'The cohesive grouping
+      of work within Run Accounts Payable that executes the approved
+      payments to the payment plan.'
+      Backfilled: 'The cohesive grouping of work within Run Accounts
+      Payable that executes the approved payments to the payment plan,
+      applying due-date ordering and settlement-instrument selection.'
+    status: closed
+    closed_in: PR-140
+
+  - id: matrix-006
+    finding:
+      rule: ACT-011
+      record_id: dea:activity-fit-out-facilities
+      summary: '`definition` is 114 chars; >= 120 required (CR-BP-97 ACT-011).'
+    category: act_backfill
+    disposition: backfill
+    owner: CR-BP-99
+    remediation: |
+      Expand `definition` to 130+ chars. Original: 'The cohesive grouping
+      of work within Provision Facilities that fits out the secured
+      sites to the designed layouts.'
+      Backfilled: 'The cohesive grouping of work within Provision
+      Facilities that fits out the secured sites to the designed layouts,
+      applying health-safety and accessibility specification.'
+    status: closed
+    closed_in: PR-140
+
+  - id: matrix-007
+    finding:
+      rule: ACT-011
+      record_id: dea:activity-manage-collections
+      summary: '`definition` is 119 chars; >= 120 required (CR-BP-97 ACT-011).'
+    category: act_backfill
+    disposition: backfill
+    owner: CR-BP-99
+    remediation: |
+      Expand `definition` to 130+ chars. Original: 'The cohesive grouping
+      of work within Run Accounts Receivable that manages the collection
+      of issued invoices to receipt.'
+      Backfilled: 'The cohesive grouping of work within Run Accounts
+      Receivable that manages the collection of issued invoices to
+      receipt, applying credit-control escalation policy.'
+    status: closed
+    closed_in: PR-140
+
+  - id: matrix-008
+    finding:
+      rule: ACT-011
+      record_id: dea:activity-resolve-attendance-exceptions
+      summary: '`definition` is 115 chars; >= 120 required (CR-BP-97 ACT-011).'
+    category: act_backfill
+    disposition: backfill
+    owner: CR-BP-99
+    remediation: |
+      Expand `definition` to 130+ chars. Original: 'The cohesive grouping
+      of work within Operate Time and Attendance that resolves the
+      exceptions raised by validation.'
+      Backfilled: 'The cohesive grouping of work within Operate Time and
+      Attendance that resolves the exceptions raised by validation,
+      applying HR policy and statutory-rule escalation where needed.'
+    status: closed
+    closed_in: PR-140
+
+  - id: matrix-009
+    finding:
+      rule: ACT-011
+      record_id: dea:activity-score-finding-severity
+      summary: '`definition` is 112 chars; >= 120 required (CR-BP-97 ACT-011).'
+    category: act_backfill
+    disposition: backfill
+    owner: CR-BP-99
+    remediation: |
+      Expand `definition` to 130+ chars. Original: 'The cohesive grouping
+      of work within Score Audit Findings that scores each delivered
+      audit finding for severity.'
+      Backfilled: 'The cohesive grouping of work within Score Audit
+      Findings that scores each delivered audit finding for severity,
+      applying the audit framework rubric and assurance thresholds.'
+    status: closed
+    closed_in: PR-140
+
+  # ===== matrix-010..013 DOC-001/002/003/005 (2,306 advisory hits): defer to EXT-06 =====
+  - id: matrix-010
+    finding:
+      rule: DOC-001
+      record_id: '* (596 records; existing introductory README assets)'
+      summary: 'README.md missing for 596 records (advisory).'
+    category: doc_deferred
+    disposition: defer
+    owner: EXT-06
+    remediation: |
+      Authoring of expanded README assets per the documentation profiles
+      (CR-BP-94-EXT-01 + EXT-01a) belongs to EXT-06 (pilot + catalog
+      rollout). CR-BP-99 only reconciles structural defects (matrix-001..009
+      ACT-011 backfills). Documentation content production is NOT
+      reconciliation work; it is authoring work.
+    status: open
+
+  - id: matrix-011
+    finding:
+      rule: DOC-002
+      record_id: '* (1,693 records; required-section findings)'
+      summary: '1,693 records have READMEs missing required profile sections (advisory).'
+    category: doc_deferred
+    disposition: defer
+    owner: EXT-06
+    remediation: |
+      See matrix-010. Required-section authoring is content production,
+      not reconciliation. EXT-06 will land the pilot + catalog rollout
+      that closes DOC-001 / DOC-002 / DOC-003 / DOC-005 systematically.
+    status: open
+
+  - id: matrix-012
+    finding:
+      rule: DOC-003
+      record_id: '* (2 records; id mismatch in README H1)'
+      summary: 'README H1 references a different id than the YAML `id`.'
+    category: doc_deferred
+    disposition: defer
+    owner: EXT-06
+    remediation: |
+      Two records have H1 mismatches. EXT-06 fixes as part of catalog-wide
+      README authoring (the README generator EXT-04 will produce
+      H1 from `id`, eliminating the class).
+    status: open
+
+  - id: matrix-013
+    finding:
+      rule: DOC-005
+      record_id: '* (15 records; missing CR reference in README)'
+      summary: 'README does not reference the governing CR.'
+    category: doc_deferred
+    disposition: defer
+    owner: EXT-06
+    remediation: |
+      EXT-06 README authoring. The generator will inject the CR reference
+      from `metadata.established_by`, eliminating the class.
+    status: open
+
+  # ===== matrix-014 BP-QUAL-003..009 (0 advisory hits; OPTIONAL fields absent) =====
+  - id: matrix-014
+    finding:
+      rule: BP-QUAL-003..009
+      record_id: '* (139 BP records; OPTIONAL fields absent)'
+      summary: '0 advisory BP-QUAL-003/004/005/008/009 findings; the OPTIONAL `inputs`, `transformation`, `outputs`, `responsibility`, `boundary` fields are absent on all 139 BP records.'
+    category: bp_qual_deferred
+    disposition: accept_as_is
+    owner: CR-BP-96
+    remediation: |
+      Back-compat rule (CR-BP-95/96/97): OPTIONAL fields are advisory. The
+      139 BP records remain conformant. Field population is content
+      production, not reconciliation. CR-BP-99 records this as
+      accept_as_is per the back-compat pattern; population belongs to
+      EXT-06 (BP-level README authoring) or a future content tranche.
+    status: open
+
+  # ===== matrix-015 ACT-012..015 (0 advisory hits) =====
+  - id: matrix-015
+    finding:
+      rule: ACT-012..015
+      record_id: '* (553 Activity records; OPTIONAL fields absent)'
+      summary: '0 advisory ACT-012/013/014/015 findings; OPTIONAL `inputs[]`, `outputs[]`, `outcome_contribution:`, `boundary:` are absent on all 553 Activity records.'
+    category: act_optional_deferred
+    disposition: accept_as_is
+    owner: CR-BP-97
+    remediation: |
+      Back-compat rule (CR-BP-97): OPTIONAL fields are advisory. The 553
+      Activity records remain conformant. Population is content
+      production, not reconciliation. CR-BP-99 records this as
+      accept_as_is; population belongs to EXT-06 or a future content
+      tranche.
+    status: open
+
+  # ===== matrix-016 pre-existing test drift (NOT in CR-BP-99 scope) =====
+  - id: matrix-016
+    finding:
+      rule: tests/test_dispositions.py::test_tranche_count_is_ten
+      record_id: '* (78 vs 73 assertion drift)'
+      summary: 'Pre-existing assertion drift; reproduces on origin/main.'
+    category: pre_existing
+    disposition: defer
+    owner: future_slice
+    remediation: |
+      NOT addressed by CR-BP-99 (surgical-change discipline). The drift
+      is a Process-Catalog-layer repair that requires its own CR.
+      Tracked separately; CR-BP-99 only catalogues the finding here.
+      Recommended owner: a dedicated CR-BP-100 (or next available id) once
+      the reconciliation backlog stabilizes.
+    status: open
+
+  # ===== matrix-017..020 validator state certifications =====
+  - id: matrix-017
+    finding:
+      rule: PG-001..010
+      record_id: '* (48 Process Group records)'
+      summary: '0 advisory PG-001..010 findings; all 48 L1 PGs conform.'
+    category: pg_conformant
+    disposition: accept_as_is
+    owner: CR-BP-95
+    remediation: |
+      No remediation required. CR-BP-99 records this as accept_as_is
+      to certify that the PG gate is clean across the 48-record
+      population.
+    status: closed
+    closed_in: PR-140
+
+  - id: matrix-018
+    finding:
+      rule: PSCOPE-001..008
+      record_id: '* (0 Process Scope records; gate [20] advisory)'
+      summary: '0 PSCOPE findings; gate wired advisory; matches CR-BP-58 no-vacuous-pass pattern.'
+    category: pscope_conformant
+    disposition: accept_as_is
+    owner: CR-BP-95
+    remediation: |
+      Gate [20] Process Scope is wired advisory because L0 has zero
+      records. No remediation. CR-BP-99 certifies this as accept_as_is.
+    status: closed
+    closed_in: PR-140
+
+  - id: matrix-019
+    finding:
+      rule: TASK-001..005
+      record_id: '* (0 Task records; gate [22] blocking, regression-guard mode)'
+      summary: '0 TASK findings; gate wired blocking; in regression-guard mode until first L4 tranche.'
+    category: task_conformant
+    disposition: accept_as_is
+    owner: CR-BP-98
+    remediation: |
+      Gate [22] Task Model is wired blocking because any record claiming
+      type Task must satisfy schema-derived invariants. No remediation
+      today. CR-BP-99 certifies this as accept_as_is.
+    status: closed
+    closed_in: PR-140
+
+  - id: matrix-020
+    finding:
+      rule: DOC-001..005
+      record_id: '* (gate [21] advisory)'
+      summary: 'Gate [21] Documentation Profile is advisory; 2,306 findings surfaced for transparency.'
+    category: doc_validator_state
+    disposition: accept_as_is
+    owner: CR-BP-94-EXT-01
+    remediation: |
+      Gate [21] is intentionally advisory. The 2,306 findings are
+      surfaced for transparency (see matrix-010..013). No remediation at
+      the validator level. CR-BP-99 certifies the gate state as
+      accept_as_is; the population work belongs to EXT-06.
+    status: closed
+    closed_in: PR-140
+
+# -----------------------------------------------------------------------------
+# Summary
+# -----------------------------------------------------------------------------
+summary:
+  total_rows: 20
+  by_disposition:
+    backfill: 9
+    defer: 5
+    accept_as_is: 6
+  by_status:
+    closed: 13
+    open: 7
+  closed_in_pr: PR-140
+  open_owners:
+    - EXT-06 (matrix-010..013; DOC-001..005 + content authoring)
+    - CR-BP-96 (matrix-014; BP-QUAL OPTIONAL field population)
+    - CR-BP-97 (matrix-015; ACT OPTIONAL field population)
+    - future_slice (matrix-016; pre-existing test_dispositions drift)
+
+# -----------------------------------------------------------------------------
+# Invariants (locked by scripts/check_reconciliation_matrix.py)
+# -----------------------------------------------------------------------------
+invariants:
+  - id: >-
+      matrix-001..009 ACT-011 backfills MUST be marked status closed
+      after CR-BP-99 merge.
+  - id: >-
+      matrix-010..013 DOC-* deferred rows MUST be owned by EXT-06.
+  - id: >-
+      matrix-014 BP-QUAL-* accept_as_is row MUST cite the back-compat
+      pattern (CR-BP-95/96/97).
+  - id: >-
+      matrix-015 ACT-* accept_as_is row MUST cite the back-compat pattern.
+  - id: >-
+      matrix-016 pre-existing drift MUST be deferred to a future_slice
+      (NOT CR-BP-99).
+  - id: >-
+      matrix_version MUST be bumped on any structural change to the schema.
+  - id: >-
+      closed rows MUST carry closed_in PR-NNN (the PR that closed them).

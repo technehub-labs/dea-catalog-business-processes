@@ -102,6 +102,8 @@ GATES: list[tuple[str, bool, list[str]]] = [
      False, ["python", "scripts/check_documentation_profile.py"]),  # CR-BP-94-EXT-01; advisory
     ("[22] Task Model (TASK-001..005)",
      True, ["python", "scripts/check_task_model.py"]),  # CR-BP-98; blocking
+    ("[23] Reconciliation Matrix (RCM-001..010)",
+     False, ["python", "scripts/check_reconciliation_matrix.py"]),  # CR-BP-99; advisory
 ]
 
 

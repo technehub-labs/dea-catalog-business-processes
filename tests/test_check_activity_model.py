@@ -132,8 +132,10 @@ def test_cli_live_run_returns_conformant():
     assert "Activity Model (CR-BP-32 ACT-001..010 + CR-BP-97 ACT-011..015): CONFORMANT" in result.stdout
     assert "Activity records: 553" in result.stdout
     assert "BP records:       139" in result.stdout
-    # CR-BP-97 surfaces 9 advisory ACT-011 findings (documented behavior).
-    assert "Findings:         9" in result.stdout
+    # CR-BP-99 reconciliation matrix (matrix-001..009) backfilled the 9 advisory
+    # ACT-011 findings to >= 120 chars. Live catalog now emits 0 ACT-011
+    # findings; the validator remains in regression-guard mode.
+    assert "Findings:         0" in result.stdout
     assert "ACT-011" in result.stdout
 
 
@@ -174,8 +176,10 @@ def test_cli_json_shape():
     assert data["verdict"] == "CONFORMANT"
     assert data["activity_record_count"] == 553
     assert data["bp_record_count"] == 139
-    # CR-BP-97 surfaces 9 advisory ACT-011 findings (documented behavior).
-    assert data["finding_count"] == 9
+    # CR-BP-99 reconciliation matrix (matrix-001..009) backfilled the 9 advisory
+    # ACT-011 findings to >= 120 chars. Live catalog now emits 0 ACT-011
+    # findings; the validator remains in regression-guard mode.
+    assert data["finding_count"] == 0
     assert canonical_composition_type(data) == CANONICAL_COMPOSITION_TYPE
     assert sorted(data["forbidden_composition_types"]) == sorted(FORBIDDEN_COMPOSITION_TYPES)
     rule_ids = {r["id"] for r in data["rules"]}

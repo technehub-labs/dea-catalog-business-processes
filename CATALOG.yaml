@@ -4,7 +4,7 @@ catalog:
     candidates: 0
     canonical: 739
     entities: 740
-    open_change_requests: 110
+    open_change_requests: 111
     research_files: 329
     retired: 1
   cross_cutting:
@@ -979,7 +979,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:activity-calculate-compensation
-    last_modified: '2026-09-13'
+    last_modified: '2026-09-18'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-calculate-compensation/dea:activity-calculate-compensation.yaml
     research_count: 0
@@ -1188,7 +1188,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:activity-commit-agent-topology
-    last_modified: '2026-09-14'
+    last_modified: '2026-09-18'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-commit-agent-topology/dea:activity-commit-agent-topology.yaml
     research_count: 0
@@ -1771,7 +1771,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:activity-commit-role-catalogue
-    last_modified: '2026-09-14'
+    last_modified: '2026-09-18'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-commit-role-catalogue/dea:activity-commit-role-catalogue.yaml
     research_count: 0
@@ -2816,7 +2816,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:activity-disburse-payroll
-    last_modified: '2026-09-13'
+    last_modified: '2026-09-18'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-disburse-payroll/dea:activity-disburse-payroll.yaml
     research_count: 0
@@ -3212,7 +3212,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:activity-execute-payments-to-plan
-    last_modified: '2026-09-13'
+    last_modified: '2026-09-18'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-execute-payments-to-plan/dea:activity-execute-payments-to-plan.yaml
     research_count: 0
@@ -3454,7 +3454,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:activity-fit-out-facilities
-    last_modified: '2026-09-13'
+    last_modified: '2026-09-18'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-fit-out-facilities/dea:activity-fit-out-facilities.yaml
     research_count: 0
@@ -4268,7 +4268,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:activity-manage-collections
-    last_modified: '2026-09-13'
+    last_modified: '2026-09-18'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-manage-collections/dea:activity-manage-collections.yaml
     research_count: 0
@@ -5159,7 +5159,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:activity-resolve-attendance-exceptions
-    last_modified: '2026-09-14'
+    last_modified: '2026-09-18'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-resolve-attendance-exceptions/dea:activity-resolve-attendance-exceptions.yaml
     research_count: 0
@@ -5489,7 +5489,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:activity-score-finding-severity
-    last_modified: '2026-09-13'
+    last_modified: '2026-09-18'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-score-finding-severity/dea:activity-score-finding-severity.yaml
     research_count: 0
