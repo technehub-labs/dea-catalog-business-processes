@@ -72,6 +72,7 @@ ALLOWED_CATEGORIES = frozenset({
     "pscope_conformant",
     "task_conformant",
     "doc_validator_state",
+    "pscope_dormant",
 })
 REQUIRED_ROW_FIELDS = frozenset({
     "id", "finding", "category", "disposition", "owner",
