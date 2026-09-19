@@ -121,7 +121,7 @@ def test_cli_self_test_passes():
 
 
 def test_cli_live_run_returns_conformant():
-    """Live run: 553 Activity records; 138 BP records. ACT-001..010 are mandatory
+    """Live run: 560 Activity records; 140 BP records. ACT-001..010 are mandatory
     (CONFORMANT when they pass); ACT-011..015 are advisory (CR-BP-97 design intent).
     Live catalog emits 9 advisory ACT-011 findings (existing Activity records
     whose `definition:` is < 120 chars); --strict does NOT fail on advisory
@@ -130,8 +130,8 @@ def test_cli_live_run_returns_conformant():
     result = _run([])
     assert result.returncode == 0, result.stdout + result.stderr
     assert "Activity Model (CR-BP-32 ACT-001..010 + CR-BP-97 ACT-011..015): CONFORMANT" in result.stdout
-    assert "Activity records: 553" in result.stdout
-    assert "BP records:       139" in result.stdout
+    assert "Activity records: 560" in result.stdout
+    assert "BP records:       140" in result.stdout
     # CR-BP-99 reconciliation matrix (matrix-001..009) backfilled the 9 advisory
     # ACT-011 findings to >= 120 chars. Live catalog now emits 0 ACT-011
     # findings; the validator remains in regression-guard mode.
@@ -174,8 +174,8 @@ def test_cli_json_shape():
     assert result.returncode == 0, result.stdout + result.stderr
     data = json.loads(result.stdout)
     assert data["verdict"] == "CONFORMANT"
-    assert data["activity_record_count"] == 553
-    assert data["bp_record_count"] == 139
+    assert data["activity_record_count"] == 560
+    assert data["bp_record_count"] == 140
     # CR-BP-99 reconciliation matrix (matrix-001..009) backfilled the 9 advisory
     # ACT-011 findings to >= 120 chars. Live catalog now emits 0 ACT-011
     # findings; the validator remains in regression-guard mode.

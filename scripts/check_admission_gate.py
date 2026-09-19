@@ -290,8 +290,9 @@ def check_admission(path: Path, root: Path,
         # CR-BP-83: FA.Activate admission tranche landed under it.
         # CR-BP-86: SD.Activate admission tranche landed under it.
         # CR-BP-101: SD.Retire admission tranche (closes the 49-cell matrix).
+        # CR-BP-101a: SD.Retire L3 Activity decomposition tranche (7 activities).
         _ADMISSION_CR_RE = re.compile(
-            r"^(?:CR-BP-13[a-z]?|CR-BP-19|CR-BP-20|CR-BP-21[a-z]?|CR-BP-03C|CR-BP-64|CR-BP-65|CR-BP-66|CR-BP-67|CR-BP-71|CR-BP-73|CR-BP-75|CR-BP-78|CR-BP-81|CR-BP-82|CR-BP-83|CR-BP-86|CR-BP-101)(?:\.\d+)*$"
+            r"^(?:CR-BP-13[a-z]?|CR-BP-19|CR-BP-20|CR-BP-21[a-z]?|CR-BP-03C|CR-BP-64|CR-BP-65|CR-BP-66|CR-BP-67|CR-BP-71|CR-BP-73|CR-BP-75|CR-BP-78|CR-BP-81|CR-BP-82|CR-BP-83|CR-BP-86|CR-BP-101|CR-BP-101a)(?:\.\d+)*$"
         )
         has_admission = any(
             isinstance(e, dict) and _ADMISSION_CR_RE.match(
