@@ -357,11 +357,11 @@ def test_cli_self_test_passes():
 
 
 def test_cli_live_run_conformant():
-    """Live matrix: 20 rows / 0 findings / CONFORMANT."""
+    """Live matrix: 21 rows / 0 findings / CONFORMANT."""
     result = _run([])
     assert result.returncode == 0, result.stdout + result.stderr
     assert "CONFORMANT" in result.stdout
-    assert "Rows checked:  20" in result.stdout
+    assert "Rows checked:  21" in result.stdout
 
 
 def test_cli_json_emits_well_formed_payload():
@@ -369,17 +369,17 @@ def test_cli_json_emits_well_formed_payload():
     assert result.returncode == 0, result.stdout + result.stderr
     payload = json.loads(result.stdout)
     assert payload["verdict"] == "CONFORMANT"
-    assert payload["rows_checked"] == 20
+    assert payload["rows_checked"] == 21
     rule_ids = {r["id"] for r in payload["rules"]}
     assert rule_ids == {"RCM-001", "RCM-002", "RCM-003", "RCM-004", "RCM-005",
                         "RCM-006", "RCM-007", "RCM-008", "RCM-009", "RCM-010"}
 
 
-def test_live_matrix_has_20_rows():
-    """Cross-check: live matrix actually has 20 rows."""
+def test_live_matrix_has_21_rows():
+    """Cross-check: live matrix actually has 21 rows (CR-BP-100 matrix-021)."""
     with open(MATRIX_PATH) as f:
         matrix = yaml.safe_load(f)
-    assert len(matrix["rows"]) == 20
+    assert len(matrix["rows"]) == 21
     # All 9 ACT-011 backfills are closed.
     backfills = [r for r in matrix["rows"] if r["disposition"] == "backfill"]
     assert len(backfills) == 9
@@ -411,5 +411,5 @@ def test_live_matrix_summary_counts_consistent():
         matrix = yaml.safe_load(f)
     summary = matrix["summary"]
     assert summary["total_rows"] == len(matrix["rows"])
-    assert summary["by_disposition"] == {"backfill": 9, "defer": 5, "accept_as_is": 6}
-    assert summary["by_status"] == {"closed": 13, "open": 7}
+    assert summary["by_disposition"] == {"backfill": 9, "defer": 5, "accept_as_is": 7}
+    assert summary["by_status"] == {"closed": 14, "open": 7}
