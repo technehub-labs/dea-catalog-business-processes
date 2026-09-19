@@ -2,13 +2,13 @@ schema_version: 1
 report_at_run: CR-BP-16 S23
 report_at_source: scripts/build_conformance_report.py
 catalog_root: /home/hermes/dea-catalog-processes
-total_records: 792
+total_records: 799
 conformance_levels:
   0: 0
   1: 0
   2: 0
   3: 3
-  4: 789
+  4: 796
 records:
 - id: dea:activity-acquire-regulator-acknowledged-accounting-or-rate-framework
   kind: Activity
@@ -2800,6 +2800,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-execute-communications-plan-regulated-strategic-plan-sunset
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-execute-communications-plan-regulated-strategic-plan-sunset/dea:activity-execute-communications-plan-regulated-strategic-plan-sunset.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-execute-compliance-audits
   kind: Activity
   path: entities/v1-alpha/dea:activity-execute-compliance-audits/dea:activity-execute-compliance-audits.yaml
@@ -2963,6 +2973,16 @@ records:
 - id: dea:activity-execute-replenishment
   kind: Activity
   path: entities/v1-alpha/dea:activity-execute-replenishment/dea:activity-execute-replenishment.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-execute-retained-records-plan-regulated-entity
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-execute-retained-records-plan-regulated-entity/dea:activity-execute-retained-records-plan-regulated-entity.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -3533,6 +3553,16 @@ records:
 - id: dea:activity-identify-portfolio-drift
   kind: Activity
   path: entities/v1-alpha/dea:activity-identify-portfolio-drift/dea:activity-identify-portfolio-drift.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-identify-superseded-regulated-strategic-plan
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-identify-superseded-regulated-strategic-plan/dea:activity-identify-superseded-regulated-strategic-plan.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -4140,6 +4170,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-notify-affected-business-units-regulator-continuing-supervision
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-notify-affected-business-units-regulator-continuing-supervision/dea:activity-notify-affected-business-units-regulator-continuing-supervision.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-notify-statutory-workforce-reduction
   kind: Activity
   path: entities/v1-alpha/dea:activity-notify-statutory-workforce-reduction/dea:activity-notify-statutory-workforce-reduction.yaml
@@ -4310,6 +4350,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:activity-preserve-regulator-acknowledged-sunset-record
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-preserve-regulator-acknowledged-sunset-record/dea:activity-preserve-regulator-acknowledged-sunset-record.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:activity-prioritize-allocation-decisions
   kind: Activity
   path: entities/v1-alpha/dea:activity-prioritize-allocation-decisions/dea:activity-prioritize-allocation-decisions.yaml
@@ -4463,6 +4513,16 @@ records:
 - id: dea:activity-receive-and-verify-deliveries
   kind: Activity
   path: entities/v1-alpha/dea:activity-receive-and-verify-deliveries/dea:activity-receive-and-verify-deliveries.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-receive-regulator-sunset-directive
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-receive-regulator-sunset-directive/dea:activity-receive-regulator-sunset-directive.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -5343,6 +5403,16 @@ records:
 - id: dea:activity-track-performance-against-plan
   kind: Activity
   path: entities/v1-alpha/dea:activity-track-performance-against-plan/dea:activity-track-performance-against-plan.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:activity-update-filings-register-regulated-strategic-plan
+  kind: Activity
+  path: entities/v1-alpha/dea:activity-update-filings-register-regulated-strategic-plan/dea:activity-update-filings-register-regulated-strategic-plan.yaml
   level: 4
   level_breakdown:
     L1_structural: true

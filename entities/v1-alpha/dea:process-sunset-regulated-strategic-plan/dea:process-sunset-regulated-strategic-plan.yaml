@@ -135,6 +135,14 @@ ecfConformance:
 metadata:
   established_by: CR-BP-101
   established_at: '2026-09-19'
+  activity_references:
+    - dea:activity-receive-regulator-sunset-directive
+    - dea:activity-identify-superseded-regulated-strategic-plan
+    - dea:activity-update-filings-register-regulated-strategic-plan
+    - dea:activity-execute-communications-plan-regulated-strategic-plan-sunset
+    - dea:activity-preserve-regulator-acknowledged-sunset-record
+    - dea:activity-execute-retained-records-plan-regulated-entity
+    - dea:activity-notify-affected-business-units-regulator-continuing-supervision
   change_history:
     - cr: CR-BP-101
       date: '2026-09-19'
@@ -146,3 +154,13 @@ metadata:
         7x7 = 49-cell matrix. BP-only admission; Activity
         decomposition is downstream per the CR-BP-86 /
         CR-BP-87 precedent at SD.Activate.
+    - cr: CR-BP-101a
+      date: '2026-09-19'
+      change: |
+        L3 decomposition tranche (CR-BP-101a): added
+        metadata.activity_references back-references to the 7
+        Activity records decomposing this BP. Version unchanged
+        per SIV-004 (additive metadata-only). Activities classified
+        per CR-BP-32 section 5; decomposition boundary marker
+        l4-reached per CR-BP-32 section 12 pending Task records
+        (dea:Task lifecycle: proposed).
