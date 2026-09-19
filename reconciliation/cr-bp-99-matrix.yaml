@@ -28,9 +28,9 @@
 #       closed_in: PR-NNN  (when status=closed)
 # =============================================================================
 
-matrix_version: 3
+matrix_version: 4
 generated_at: 2026-09-19
-generator: CR-BP-100a 49-cell assertion refresh (PR pending); matrix-017 + matrix-020 count updates
+generator: CR-BP-94-EXT-02 README generation pipeline (PR pending); matrix-010 DOC-001 closed (598 -> 0)
 source_artefacts:
   - scripts/check_activity_model.py (ACT-011..015)
   - scripts/check_l2_qualification.py (BP-QUAL-001..012)
@@ -208,22 +208,23 @@ rows:
     status: closed
     closed_in: PR-140
 
-  # ===== matrix-010..013 DOC-001/002/003/005 (2,306 advisory hits): defer to EXT-06 =====
+  # ===== matrix-010..013 DOC-001/002/003/005 (was 2,308 advisory hits): matrix-010 closed by CR-BP-94-EXT-02 (PR #145) =====
   - id: matrix-010
     finding:
       rule: DOC-001
-      record_id: '* (596 records; existing introductory README assets)'
-      summary: 'README.md missing for 596 records (advisory).'
-    category: doc_deferred
-    disposition: defer
-    owner: EXT-06
+      record_id: '* (598 -> 0 records; README generated for 654 records by CR-BP-94-EXT-02 generator)'
+      summary: 'README.md coverage closed by EXT-02 generator (was 596/598 advisory; now 0).'
+    category: doc_conformant
+    disposition: accept_as_is
+    owner: CR-BP-94-EXT-02
     remediation: |
-      Authoring of expanded README assets per the documentation profiles
-      (CR-BP-94-EXT-01 + EXT-01a) belongs to EXT-06 (pilot + catalog
-      rollout). CR-BP-99 only reconciles structural defects (matrix-001..009
-      ACT-011 backfills). Documentation content production is NOT
-      reconciliation work; it is authoring work.
-    status: open
+      README generation slice (CR-BP-94-EXT-02, PR #145). scripts/generate_readmes.py
+      produces a profile-compliant README.md for every canonical record that does
+      not already have one (605 entity + 49 PC = 654 files generated). DOC-001
+      closed from 598 to 0. Existing 293 tracked stub READMEs are preserved as-is
+      and remain DOC-002 non-compliant by separate scope (matrix-011).
+    status: closed
+    closed_in: PR-145
 
   - id: matrix-011
     finding:
@@ -404,15 +405,15 @@ summary:
   total_rows: 21
   by_disposition:
     backfill: 9
-    defer: 5
-    accept_as_is: 7
+    defer: 4
+    accept_as_is: 8
   by_status:
-    closed: 14
-    open: 7
+    closed: 15
+    open: 6
   closed_in_pr: PR-140
-  closed_in_pr_recent: PR-141 (matrix-021) + PR-143 (CR-BP-100a 49-cell assertion refresh; matrix-017 + matrix-020 count updates)
+  closed_in_pr_recent: PR-141 (matrix-021) + PR-143 (CR-BP-100a 49-cell assertion refresh; matrix-017 + matrix-020 count updates) + PR-145 (CR-BP-94-EXT-02 README generation pipeline; matrix-010 DOC-001 closure 598 -> 0)
   open_owners:
-    - EXT-06 (matrix-010..013; DOC-001..005 + content authoring)
+    - EXT-06 (matrix-011..013; DOC-002/003/005 + content authoring)
     - CR-BP-96 (matrix-014; BP-QUAL OPTIONAL field population)
     - CR-BP-97 (matrix-015; ACT OPTIONAL field population)
     - future_slice (matrix-016; pre-existing test_dispositions drift)

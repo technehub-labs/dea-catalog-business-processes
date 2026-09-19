@@ -411,5 +411,5 @@ def test_live_matrix_summary_counts_consistent():
         matrix = yaml.safe_load(f)
     summary = matrix["summary"]
     assert summary["total_rows"] == len(matrix["rows"])
-    assert summary["by_disposition"] == {"backfill": 9, "defer": 5, "accept_as_is": 7}
-    assert summary["by_status"] == {"closed": 14, "open": 7}
+    assert summary["by_disposition"] == {"backfill": 9, "defer": 4, "accept_as_is": 8}
+    assert summary["by_status"] == {"closed": 15, "open": 6}
