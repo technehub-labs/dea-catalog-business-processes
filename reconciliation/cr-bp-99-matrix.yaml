@@ -28,19 +28,20 @@
 #       closed_in: PR-NNN  (when status=closed)
 # =============================================================================
 
-matrix_version: 1
-generated_at: 2026-09-18
-generator: CR-BP-99 reconciliation slice (PR pending)
+matrix_version: 2
+generated_at: 2026-09-19
+generator: CR-BP-100 L0<->L1 cardinality gate (PR pending); +1 row
 source_artefacts:
   - scripts/check_activity_model.py (ACT-011..015)
   - scripts/check_l2_qualification.py (BP-QUAL-001..012)
   - scripts/check_process_group.py (PG-001..010)
   - scripts/check_process_scope.py (PSCOPE-001..008)
   - scripts/check_documentation_profile.py (DOC-001..005)
+  - scripts/check_l0_l1_cardinality.py (L0L1-CARD-001..003)
   - tests/test_dispositions.py (legacy drift, separate scope)
 
 # -----------------------------------------------------------------------------
-# Row set (20 entries)
+# Row set (21 entries)
 # -----------------------------------------------------------------------------
 rows:
 
@@ -377,19 +378,39 @@ rows:
     status: closed
     closed_in: PR-140
 
+  # ===== matrix-021 ProcessScope dormancy (CR-BP-100 L0<->L1 Cardinality Gate) =====
+  - id: matrix-021
+    finding:
+      rule: L0L1-CARD-003
+      record_id: '* (gate [24] advisory; 0 ProcessScope records in catalog)'
+      summary: 'ProcessScope layer (dea:scope-*) declared dormant: L0 layer IS the Process Context matrix (eaojnr 2026-09-19 doctrine).'
+    category: pscope_dormant
+    disposition: accept_as_is
+    owner: CR-BP-100
+    remediation: |
+      Gate [24] L0L1-CARD-003 enforces the dormancy declaratively: any
+      ProcessScope record admitted to entities/v1-alpha/ fails the gate
+      and requires an explicit CR justifying why the L0 layer is no
+      longer identical to the Process Context matrix. CR-BP-95's schema
+      + template + validator + doc profile remain in place as dormant
+      forward-compatibility surface; population is NOT a future tranche.
+    status: closed
+    closed_in: PR-141
+
 # -----------------------------------------------------------------------------
 # Summary
 # -----------------------------------------------------------------------------
 summary:
-  total_rows: 20
+  total_rows: 21
   by_disposition:
     backfill: 9
     defer: 5
-    accept_as_is: 6
+    accept_as_is: 7
   by_status:
-    closed: 13
+    closed: 14
     open: 7
   closed_in_pr: PR-140
+  closed_in_pr_recent: PR-141 (matrix-021)
   open_owners:
     - EXT-06 (matrix-010..013; DOC-001..005 + content authoring)
     - CR-BP-96 (matrix-014; BP-QUAL OPTIONAL field population)
