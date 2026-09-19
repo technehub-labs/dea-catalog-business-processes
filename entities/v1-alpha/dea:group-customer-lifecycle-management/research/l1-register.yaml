@@ -15,12 +15,13 @@ stages:
 - Improve
 - Retire
 ratification:
-  version: 16
-  cr: CR-BP-86
-  ratified_at: '2026-09-16'
-  supersedes: version 15 (CR-BP-83, ratified 2026-09-16)
-  ratified_accepted: 47
-  backlog_deferred: 2
+  version: 17
+  cr: CR-BP-101
+  ratified_at: '2026-09-19'
+  supersedes: version 16 (CR-BP-86, ratified 2026-09-16)
+  ratified_accepted: 48
+  backlog_deferred: 1
+  v16_to_v17_note: 'StrategyAndDirection x Retire (SD.Retire) cell flips from backlog-deferred to ratified-accepted/landed per CR-BP-80 escape-clause discovery (Sunset Regulated Strategic Plan, score 8, ADMIT-CANONICAL) and CR-BP-101 admission tranche. SD.Retire now hosts dea:pc-sd-retire (Process Context) + dea:group-regulated-strategic-plan-sunset (Process Group) + dea:process-sunset-regulated-strategic-plan (Business Process). The 7x7 = 49-cell matrix is now COMPLETE: every ECF coordinate has a canonical Process Context + Process Group + Business Process. Remaining 1 backlog-deferred: 1 follow-on per CR-BP-19 register methodology. SD.Activate (CR-BP-86) remains landed.'
   v15_to_v16_note: 'StrategyAndDirection x Activate (SD.Activate) cell flips from backlog-deferred to ratified-accepted/landed per CR-BP-80 escape-clause discovery (9/10 ADMIT-CANONICAL) and CR-BP-86 admission tranche. SD.Activate now hosts dea:pc-sd-activate (Process Context) + dea:group-regulated-strategic-plan-activation (Process Group) + dea:process-institutionalize-regulated-strategic-plan (Business Process). Remaining 2 backlog-deferred cells: SD.Retire (DEFER documented without admission), plus the follow-on per CR-BP-19 register methodology. AOAct (CR-BP-81), EOAct (CR-BP-82), FAAct (CR-BP-83) all remain landed.'
   v13_to_v14_note: 'EnablementAndOperations x Activate (EO.Activate) cell flips from backlog-deferred to ratified-accepted/landed per CR-BP-80 escape-clause discovery (10/10 ADMIT-CANONICAL) and CR-BP-82 admission tranche. EO.Activate now hosts dea:pc-oe-activate (Process Context) + dea:group-regulated-operations-activation (Process Group) + dea:process-activate-operations-capability (Business Process). Remaining 4 backlog-deferred cells: SD.Activate (CR-BP-86 pending), SD.Retire (DEFER documented without admission), FA.Activate (CR-BP-83 pending), plus 1 follow-on per CR-BP-19 register methodology.'
   v12_to_v13_note: 'AgencyAndOrganization x Activate cell reverses from
