@@ -63,6 +63,7 @@ ALLOWED_CATEGORIES = frozenset({
     "act_backfill",
     "pg_backfill",
     "doc_deferred",
+    "doc_conformant",
     "bp_qual_deferred",
     "act_optional_deferred",
     "rule_relaxation",
