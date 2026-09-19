@@ -2,9 +2,9 @@ catalog:
   abbreviation: BP
   counts:
     candidates: 0
-    canonical: 739
-    entities: 740
-    open_change_requests: 111
+    canonical: 741
+    entities: 742
+    open_change_requests: 112
     research_files: 329
     retired: 1
   cross_cutting:
@@ -6171,7 +6171,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: dea:group-customer-lifecycle-management
-    last_modified: '2026-09-17'
+    last_modified: '2026-09-19'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:group-customer-lifecycle-management/dea:group-customer-lifecycle-management.yaml
     research_count: 4
@@ -6526,6 +6526,17 @@ catalog:
     last_modified: '2026-09-17'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:group-regulated-strategic-plan-activation/dea:group-regulated-strategic-plan-activation.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: ProcessGroup
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:group-regulated-strategic-plan-sunset
+    last_modified: '2026-09-19'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:group-regulated-strategic-plan-sunset/dea:group-regulated-strategic-plan-sunset.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -8122,6 +8133,17 @@ catalog:
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:process-steer-initiative-portfolio/dea:process-steer-initiative-portfolio.yaml
     research_count: 2
+    retired_count: 0
+    state: canonical
+    type: Process
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:process-sunset-regulated-strategic-plan
+    last_modified: '2026-09-19'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:process-sunset-regulated-strategic-plan/dea:process-sunset-regulated-strategic-plan.yaml
+    research_count: 0
     retired_count: 0
     state: canonical
     type: Process
@@ -9963,6 +9985,9 @@ catalog:
   - entity_id: dea:group-regulated-strategic-plan-activation
     files: []
     path: entities/v1-alpha/dea:group-regulated-strategic-plan-activation/research/
+  - entity_id: dea:group-regulated-strategic-plan-sunset
+    files: []
+    path: entities/v1-alpha/dea:group-regulated-strategic-plan-sunset/research/
   - entity_id: dea:group-regulated-workforce-wind-down
     files: []
     path: entities/v1-alpha/dea:group-regulated-workforce-wind-down/research/
@@ -10697,6 +10722,9 @@ catalog:
     - README.md
     - l3-candidate-universe.yaml
     path: entities/v1-alpha/dea:process-steer-initiative-portfolio/research/
+  - entity_id: dea:process-sunset-regulated-strategic-plan
+    files: []
+    path: entities/v1-alpha/dea:process-sunset-regulated-strategic-plan/research/
   - entity_id: dea:process-transition-out-of-service
     files:
     - README.md

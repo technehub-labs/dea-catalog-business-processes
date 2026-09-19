@@ -2,13 +2,13 @@ schema_version: 1
 report_at_run: CR-BP-16 S23
 report_at_source: scripts/build_conformance_report.py
 catalog_root: /home/hermes/dea-catalog-processes
-total_records: 789
+total_records: 792
 conformance_levels:
   0: 0
   1: 0
   2: 0
   3: 3
-  4: 786
+  4: 789
 records:
 - id: dea:activity-acquire-regulator-acknowledged-accounting-or-rate-framework
   kind: Activity
@@ -5930,6 +5930,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:group-regulated-strategic-plan-sunset
+  kind: Entity
+  path: entities/v1-alpha/dea:group-regulated-strategic-plan-sunset/dea:group-regulated-strategic-plan-sunset.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:group-regulated-workforce-wind-down
   kind: Entity
   path: entities/v1-alpha/dea:group-regulated-workforce-wind-down/dea:group-regulated-workforce-wind-down.yaml
@@ -7390,6 +7400,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: dea:process-sunset-regulated-strategic-plan
+  kind: Entity
+  path: entities/v1-alpha/dea:process-sunset-regulated-strategic-plan/dea:process-sunset-regulated-strategic-plan.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: dea:process-transition-out-of-service
   kind: Entity
   path: entities/v1-alpha/dea:process-transition-out-of-service/dea:process-transition-out-of-service.yaml
@@ -7893,6 +7913,16 @@ records:
 - id: dea:pc-sd-operate
   kind: Unknown
   path: contexts/v1-alpha/dea-pc-sd-operate.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: dea:pc-sd-retire
+  kind: Unknown
+  path: contexts/v1-alpha/dea-pc-sd-retire.yaml
   level: 4
   level_breakdown:
     L1_structural: true
