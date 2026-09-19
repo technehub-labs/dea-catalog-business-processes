@@ -2,9 +2,9 @@ catalog:
   abbreviation: BP
   counts:
     candidates: 0
-    canonical: 741
-    entities: 742
-    open_change_requests: 114
+    canonical: 748
+    entities: 749
+    open_change_requests: 115
     research_files: 329
     retired: 1
   cross_cutting:
@@ -3090,6 +3090,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-execute-communications-plan-regulated-strategic-plan-sunset
+    last_modified: '2026-09-19'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-execute-communications-plan-regulated-strategic-plan-sunset/dea:activity-execute-communications-plan-regulated-strategic-plan-sunset.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-execute-compliance-audits
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -3270,6 +3281,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-execute-replenishment/dea:activity-execute-replenishment.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-execute-retained-records-plan-regulated-entity
+    last_modified: '2026-09-19'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-execute-retained-records-plan-regulated-entity/dea:activity-execute-retained-records-plan-regulated-entity.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -3897,6 +3919,17 @@ catalog:
     last_modified: '2026-09-14'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-identify-portfolio-drift/dea:activity-identify-portfolio-drift.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-identify-superseded-regulated-strategic-plan
+    last_modified: '2026-09-19'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-identify-superseded-regulated-strategic-plan/dea:activity-identify-superseded-regulated-strategic-plan.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -4564,6 +4597,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-notify-affected-business-units-regulator-continuing-supervision
+    last_modified: '2026-09-19'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-notify-affected-business-units-regulator-continuing-supervision/dea:activity-notify-affected-business-units-regulator-continuing-supervision.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-notify-statutory-workforce-reduction
     last_modified: '2026-09-16'
     lifecycle_status: candidate
@@ -4751,6 +4795,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:activity-preserve-regulator-acknowledged-sunset-record
+    last_modified: '2026-09-19'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-preserve-regulator-acknowledged-sunset-record/dea:activity-preserve-regulator-acknowledged-sunset-record.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:activity-prioritize-allocation-decisions
     last_modified: '2026-09-13'
     lifecycle_status: candidate
@@ -4920,6 +4975,17 @@ catalog:
     last_modified: '2026-09-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-receive-and-verify-deliveries/dea:activity-receive-and-verify-deliveries.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-receive-regulator-sunset-directive
+    last_modified: '2026-09-19'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-receive-regulator-sunset-directive/dea:activity-receive-regulator-sunset-directive.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -5888,6 +5954,17 @@ catalog:
     last_modified: '2026-09-14'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:activity-track-performance-against-plan/dea:activity-track-performance-against-plan.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:activity-update-filings-register-regulated-strategic-plan
+    last_modified: '2026-09-19'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/dea:activity-update-filings-register-regulated-strategic-plan/dea:activity-update-filings-register-regulated-strategic-plan.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -9024,6 +9101,9 @@ catalog:
   - entity_id: dea:activity-evaluate-strategy-effectiveness
     files: []
     path: entities/v1-alpha/dea:activity-evaluate-strategy-effectiveness/research/
+  - entity_id: dea:activity-execute-communications-plan-regulated-strategic-plan-sunset
+    files: []
+    path: entities/v1-alpha/dea:activity-execute-communications-plan-regulated-strategic-plan-sunset/research/
   - entity_id: dea:activity-execute-compliance-audits
     files: []
     path: entities/v1-alpha/dea:activity-execute-compliance-audits/research/
@@ -9075,6 +9155,9 @@ catalog:
   - entity_id: dea:activity-execute-replenishment
     files: []
     path: entities/v1-alpha/dea:activity-execute-replenishment/research/
+  - entity_id: dea:activity-execute-retained-records-plan-regulated-entity
+    files: []
+    path: entities/v1-alpha/dea:activity-execute-retained-records-plan-regulated-entity/research/
   - entity_id: dea:activity-execute-retention-actions
     files: []
     path: entities/v1-alpha/dea:activity-execute-retention-actions/research/
@@ -9246,6 +9329,9 @@ catalog:
   - entity_id: dea:activity-identify-portfolio-drift
     files: []
     path: entities/v1-alpha/dea:activity-identify-portfolio-drift/research/
+  - entity_id: dea:activity-identify-superseded-regulated-strategic-plan
+    files: []
+    path: entities/v1-alpha/dea:activity-identify-superseded-regulated-strategic-plan/research/
   - entity_id: dea:activity-identify-target-parties
     files: []
     path: entities/v1-alpha/dea:activity-identify-target-parties/research/
@@ -9426,6 +9512,9 @@ catalog:
   - entity_id: dea:activity-negotiate-funding-lines
     files: []
     path: entities/v1-alpha/dea:activity-negotiate-funding-lines/research/
+  - entity_id: dea:activity-notify-affected-business-units-regulator-continuing-supervision
+    files: []
+    path: entities/v1-alpha/dea:activity-notify-affected-business-units-regulator-continuing-supervision/research/
   - entity_id: dea:activity-notify-statutory-workforce-reduction
     files: []
     path: entities/v1-alpha/dea:activity-notify-statutory-workforce-reduction/research/
@@ -9477,6 +9566,9 @@ catalog:
   - entity_id: dea:activity-prepare-transition-readiness
     files: []
     path: entities/v1-alpha/dea:activity-prepare-transition-readiness/research/
+  - entity_id: dea:activity-preserve-regulator-acknowledged-sunset-record
+    files: []
+    path: entities/v1-alpha/dea:activity-preserve-regulator-acknowledged-sunset-record/research/
   - entity_id: dea:activity-prioritize-allocation-decisions
     files: []
     path: entities/v1-alpha/dea:activity-prioritize-allocation-decisions/research/
@@ -9525,6 +9617,9 @@ catalog:
   - entity_id: dea:activity-receive-and-verify-deliveries
     files: []
     path: entities/v1-alpha/dea:activity-receive-and-verify-deliveries/research/
+  - entity_id: dea:activity-receive-regulator-sunset-directive
+    files: []
+    path: entities/v1-alpha/dea:activity-receive-regulator-sunset-directive/research/
   - entity_id: dea:activity-record-accountability-handovers
     files: []
     path: entities/v1-alpha/dea:activity-record-accountability-handovers/research/
@@ -9789,6 +9884,9 @@ catalog:
   - entity_id: dea:activity-track-performance-against-plan
     files: []
     path: entities/v1-alpha/dea:activity-track-performance-against-plan/research/
+  - entity_id: dea:activity-update-filings-register-regulated-strategic-plan
+    files: []
+    path: entities/v1-alpha/dea:activity-update-filings-register-regulated-strategic-plan/research/
   - entity_id: dea:activity-update-policy-standards
     files: []
     path: entities/v1-alpha/dea:activity-update-policy-standards/research/
