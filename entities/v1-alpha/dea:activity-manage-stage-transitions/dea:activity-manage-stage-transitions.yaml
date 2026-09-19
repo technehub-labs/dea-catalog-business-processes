@@ -4,10 +4,13 @@ name: Manage Stage Transitions
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
-definition: "The cohesive grouping of work within Manage Proposition Lifecycle that manages the transitions of propositions between lifecycle stages."
+definition: The cohesive grouping of work within Manage Proposition Lifecycle that
+  manages the transitions of propositions between lifecycle stages.
 belongs_to_business_process: dea:process-manage-proposition-lifecycle
-cohesion_rationale: "Constituent work shares a single transition concern (stage to stage), one reference class (stage criteria, tracked positions), and one output (executed transitions). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6)."
-decomposition_boundary: l4-reached
+cohesion_rationale: "Constituent work shares a single transition concern (stage to\
+  \ stage), one reference class (stage criteria, tracked positions), and one output\
+  \ (executed transitions). Cohesion score 9/9 assessed at deposition (CR-BP-32 \xA7\
+  6)."
 ecfConformance:
   framework: EnterpriseConceptFramework
   contractVersion: 1.0.0
@@ -25,10 +28,58 @@ metadata:
   change_history:
   - cr: CR-BP-51
     date: '2026-09-13'
-    change: |
-      Initial L3 Activity entry; lands as part of the CR-BP-51
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-51
+
       ProductAndValue Improve + Operate tranche (completes the PV
-      domain's L3 coverage; pattern proven by CR-BP-42 through CR-BP-50).
+
+      domain''s L3 coverage; pattern proven by CR-BP-42 through CR-BP-50).
+
       Classified per CR-BP-32 section 5 (fails standalone executability
+
       and resource dedication); decomposition boundary marker per CR-BP-32
+
       section 12 pending Task records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (dea:task-manage-stage-transitions-intake, dea:task-manage-stage-transitions-verify,
+      dea:task-manage-stage-transitions-transform, dea:task-manage-stage-transitions-confirm,
+      dea:task-manage-stage-transitions-record).'
+composes:
+- source_id: dea:activity-manage-stage-transitions
+  target_id: dea:task-manage-stage-transitions-intake
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-manage-stage-transitions
+  target_id: dea:task-manage-stage-transitions-verify
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-manage-stage-transitions
+  target_id: dea:task-manage-stage-transitions-transform
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-manage-stage-transitions
+  target_id: dea:task-manage-stage-transitions-confirm
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-manage-stage-transitions
+  target_id: dea:task-manage-stage-transitions-record
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.

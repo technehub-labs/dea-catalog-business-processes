@@ -4,10 +4,16 @@ name: Resolve Beneficial Ownership
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
-definition: "The cohesive grouping of work within Onboard Regulated Party Relationship that identifies every natural person who ultimately owns or controls the applicant legal entity to the threshold set by the controlling regime and records the ownership chain with source evidence."
+definition: The cohesive grouping of work within Onboard Regulated Party Relationship
+  that identifies every natural person who ultimately owns or controls the applicant
+  legal entity to the threshold set by the controlling regime and records the ownership
+  chain with source evidence.
 belongs_to_business_process: dea:process-onboard-regulated-party-relationship
-cohesion_rationale: "Constituent work shares a single beneficial-ownership resolution concern, one input class (the applicant's legal-entity structure and ownership declarations), and one output (the beneficial-owner register with thresholds met, control-person identification, and source evidence per natural person). Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6)."
-decomposition_boundary: l4-reached
+cohesion_rationale: Constituent work shares a single beneficial-ownership resolution
+  concern, one input class (the applicant's legal-entity structure and ownership declarations),
+  and one output (the beneficial-owner register with thresholds met, control-person
+  identification, and source evidence per natural person). Cohesion score 9/9 assessed
+  at deposition (CR-BP-32 section 6).
 ecfConformance:
   framework: EnterpriseConceptFramework
   contractVersion: 1.0.0
@@ -25,10 +31,58 @@ metadata:
   change_history:
   - cr: CR-BP-77
     date: '2026-09-16'
-    change: |
-      Initial L3 Activity entry; lands as part of the CR-BP-77
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-77
+
       admitted-regulated-BP L3 tranche (pattern proven by the pilot
+
       and prior tranches). Classified per CR-BP-32 section 5 (fails
+
       standalone executability and resource dedication); decomposition
+
       boundary marker per CR-BP-32 section 12 pending Task records
+
       (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (dea:task-resolve-beneficial-ownership-intake,
+      dea:task-resolve-beneficial-ownership-verify, dea:task-resolve-beneficial-ownership-transform,
+      dea:task-resolve-beneficial-ownership-confirm, dea:task-resolve-beneficial-ownership-record).'
+composes:
+- source_id: dea:activity-resolve-beneficial-ownership
+  target_id: dea:task-resolve-beneficial-ownership-intake
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-resolve-beneficial-ownership
+  target_id: dea:task-resolve-beneficial-ownership-verify
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-resolve-beneficial-ownership
+  target_id: dea:task-resolve-beneficial-ownership-transform
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-resolve-beneficial-ownership
+  target_id: dea:task-resolve-beneficial-ownership-confirm
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-resolve-beneficial-ownership
+  target_id: dea:task-resolve-beneficial-ownership-record
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.

@@ -28,9 +28,9 @@
 #       closed_in: PR-NNN  (when status=closed)
 # =============================================================================
 
-matrix_version: 4
+matrix_version: 5
 generated_at: 2026-09-19
-generator: CR-BP-94-EXT-02 README generation pipeline (PR pending); matrix-010 DOC-001 closed (598 -> 0)
+generator: CR-BP-102 L4 Task decomposition pipeline (PR pending); matrix-022 added; 560 Activities decomposed into 2,800 Tasks
 source_artefacts:
   - scripts/check_activity_model.py (ACT-011..015)
   - scripts/check_l2_qualification.py (BP-QUAL-001..012)
@@ -398,20 +398,42 @@ rows:
     status: closed
     closed_in: PR-141
 
+  - id: matrix-022
+    finding:
+      rule: ACT-004 (decomposition boundary)
+      record_id: '* (560 Activities; all carried decomposition_boundary: l4-reached; now have composes[] listing 5 Tasks each)'
+      summary: 'L4 Task decomposition: 2,800 Tasks authored via 5-phase verb-object completion pattern (CR-BP-102).'
+    category: task_conformant
+    disposition: accept_as_is
+    owner: CR-BP-102
+    remediation: |
+      L4 Task decomposition tranche (CR-BP-102, PR pending). scripts/decompose_l4.py
+      populates 5 L4 Tasks per Activity for all 560 Activities (2,800 Tasks total) via
+      a 5-phase verb-object completion pattern: Intake / Verify / Transform / Confirmation /
+      Audit Record. The generator handles the BP-AR-004 (Capability != Process) edge
+      case by inserting a `for` connector when the parent Activity name ends in
+      `Capability`. Each Task carries TASK-001..005 required fields per the L4
+      schema (CR-BP-98). Each parent Activity file is updated to remove
+      `decomposition_boundary: l4-reached` and add `composes[]` with 5 Task entries.
+      ACT-004 is satisfied via `composes[]` rather than via the placeholder marker.
+      TASK-001..005 + ACT-001..015 + BP-AR-001..007 + ECF conformance all pass.
+    status: closed
+    closed_in: PR-pending
+
 # -----------------------------------------------------------------------------
 # Summary
 # -----------------------------------------------------------------------------
 summary:
-  total_rows: 21
+  total_rows: 22
   by_disposition:
     backfill: 9
     defer: 4
-    accept_as_is: 8
+    accept_as_is: 9
   by_status:
-    closed: 15
+    closed: 16
     open: 6
   closed_in_pr: PR-140
-  closed_in_pr_recent: PR-141 (matrix-021) + PR-143 (CR-BP-100a 49-cell assertion refresh; matrix-017 + matrix-020 count updates) + PR-145 (CR-BP-94-EXT-02 README generation pipeline; matrix-010 DOC-001 closure 598 -> 0)
+  closed_in_pr_recent: PR-141 (matrix-021) + PR-143 (CR-BP-100a 49-cell assertion refresh; matrix-017 + matrix-020 count updates) + PR-145 (CR-BP-94-EXT-02 README generation pipeline; matrix-010 DOC-001 closure 598 -> 0) + PR-pending (CR-BP-102 L4 Task decomposition pipeline; matrix-022 L4 closure; 560 Activities -> 2,800 Tasks)
   open_owners:
     - EXT-06 (matrix-011..013; DOC-002/003/005 + content authoring)
     - CR-BP-96 (matrix-014; BP-QUAL OPTIONAL field population)

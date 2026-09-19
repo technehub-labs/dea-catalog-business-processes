@@ -4,10 +4,13 @@ name: Prepare Footnotes and Disclosures
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
-definition: "The cohesive grouping of work within Operate Financial Reporting and Disclosure that prepares the footnotes and disclosures accompanying the statements."
+definition: The cohesive grouping of work within Operate Financial Reporting and Disclosure
+  that prepares the footnotes and disclosures accompanying the statements.
 belongs_to_business_process: dea:process-operate-financial-reporting-and-disclosure
-cohesion_rationale: "Constituent work shares a single disclosure concern (statement context to disclosure text), one reference class (disclosure requirements), and one output (prepared footnotes and disclosures). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6)."
-decomposition_boundary: l4-reached
+cohesion_rationale: "Constituent work shares a single disclosure concern (statement\
+  \ context to disclosure text), one reference class (disclosure requirements), and\
+  \ one output (prepared footnotes and disclosures). Cohesion score 9/9 assessed at\
+  \ deposition (CR-BP-32 \xA76)."
 ecfConformance:
   framework: EnterpriseConceptFramework
   contractVersion: 1.0.0
@@ -25,10 +28,58 @@ metadata:
   change_history:
   - cr: CR-BP-53
     date: '2026-09-13'
-    change: |
-      Initial L3 Activity entry; lands as part of the CR-BP-53
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-53
+
       FinanceAndAccounting Improve + Operate tranche (completes the FA
-      domain's L3 coverage; pattern proven by CR-BP-42 through CR-BP-52).
+
+      domain''s L3 coverage; pattern proven by CR-BP-42 through CR-BP-52).
+
       Classified per CR-BP-32 section 5 (fails standalone executability
+
       and resource dedication); decomposition boundary marker per CR-BP-32
+
       section 12 pending Task records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (dea:task-prepare-footnotes-and-disclosures-intake,
+      dea:task-prepare-footnotes-and-disclosures-verify, dea:task-prepare-footnotes-and-disclosures-transform,
+      dea:task-prepare-footnotes-and-disclosures-confirm, dea:task-prepare-footnotes-and-disclosures-record).'
+composes:
+- source_id: dea:activity-prepare-footnotes-and-disclosures
+  target_id: dea:task-prepare-footnotes-and-disclosures-intake
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-prepare-footnotes-and-disclosures
+  target_id: dea:task-prepare-footnotes-and-disclosures-verify
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-prepare-footnotes-and-disclosures
+  target_id: dea:task-prepare-footnotes-and-disclosures-transform
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-prepare-footnotes-and-disclosures
+  target_id: dea:task-prepare-footnotes-and-disclosures-confirm
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-prepare-footnotes-and-disclosures
+  target_id: dea:task-prepare-footnotes-and-disclosures-record
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.

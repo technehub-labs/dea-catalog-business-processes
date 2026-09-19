@@ -3,40 +3,89 @@ type: Activity
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
-
 name: Assess Regulator Or Court Order Scope
+definition: 'The cohesive grouping of work within Effect Regulator-Mandated Governance
+  Unwind that interprets the controlling regulator or court order, identifies the
+  binding obligations and deadlines, and maps them to the governance regime and policy
+  instruments that the entity must wind down.
 
-definition: |
-  The cohesive grouping of work within Effect Regulator-Mandated Governance Unwind that interprets the controlling regulator or court order, identifies the binding obligations and deadlines, and maps them to the governance regime and policy instruments that the entity must wind down.
-
+  '
 belongs_to_business_process: dea:process-effect-regulator-mandated-governance-unwind
-
-cohesion_rationale: "Constituent work shares a single interpretive concern (the binding order and its conditions), one input class (regulator or court order text plus governance constitution), and one output (a documented order-scope register with binding obligations, deadlines, and affected governance instruments). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6)."
-
-decomposition_boundary: l4-reached
-
+cohesion_rationale: "Constituent work shares a single interpretive concern (the binding\
+  \ order and its conditions), one input class (regulator or court order text plus\
+  \ governance constitution), and one output (a documented order-scope register with\
+  \ binding obligations, deadlines, and affected governance instruments). Cohesion\
+  \ score 9/9 assessed at deposition (CR-BP-32 \xA76)."
 ecfConformance:
   framework: EnterpriseConceptFramework
-  contractVersion: '1.0.0'
+  contractVersion: 1.0.0
   profile: dea:ecf@1.0.0
   status: conformant
   affiliation: inherits-catalog
   canonicalReferences:
-    - kind: coordinate
-      domain: GovernanceAndExistence
-      stage: Retire
-      identifier: ecf:governanceExistence.retire
-
+  - kind: coordinate
+    domain: GovernanceAndExistence
+    stage: Retire
+    identifier: ecf:governanceExistence.retire
 metadata:
   established_by: CR-BP-79
   established_at: '2026-09-16'
   change_history:
-    - cr: CR-BP-79
-      date: '2026-09-16'
-      change: |
-        Initial L3 Activity entry for dea:process-effect-regulator-mandated-governance-unwind; lands as part of the CR-BP-79
-        L3 GE Retire admission tranche (pattern proven by the pilot and prior
-        tranches, including CR-BP-77 admitted-regulated-tranche). Classified
-        per CR-BP-32 section 5 (fails standalone executability and resource
-        dedication); decomposition boundary marker per CR-BP-32 section 12
-        pending Task records (dea:Task lifecycle: proposed).
+  - cr: CR-BP-79
+    date: '2026-09-16'
+    change: 'Initial L3 Activity entry for dea:process-effect-regulator-mandated-governance-unwind;
+      lands as part of the CR-BP-79
+
+      L3 GE Retire admission tranche (pattern proven by the pilot and prior
+
+      tranches, including CR-BP-77 admitted-regulated-tranche). Classified
+
+      per CR-BP-32 section 5 (fails standalone executability and resource
+
+      dedication); decomposition boundary marker per CR-BP-32 section 12
+
+      pending Task records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (dea:task-assess-regulator-order-scope-intake,
+      dea:task-assess-regulator-order-scope-verify, dea:task-assess-regulator-order-scope-transform,
+      dea:task-assess-regulator-order-scope-confirm, dea:task-assess-regulator-order-scope-record).'
+composes:
+- source_id: dea:activity-assess-regulator-order-scope
+  target_id: dea:task-assess-regulator-order-scope-intake
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-assess-regulator-order-scope
+  target_id: dea:task-assess-regulator-order-scope-verify
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-assess-regulator-order-scope
+  target_id: dea:task-assess-regulator-order-scope-transform
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-assess-regulator-order-scope
+  target_id: dea:task-assess-regulator-order-scope-confirm
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-assess-regulator-order-scope
+  target_id: dea:task-assess-regulator-order-scope-record
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.

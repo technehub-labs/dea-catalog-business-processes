@@ -4,10 +4,14 @@ name: Commit Framework Improvements
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
-definition: "The cohesive grouping of work within Improve Policy and Control Framework that consolidates gap measurements, standard updates, and posture strengthening into committed framework improvements."
+definition: The cohesive grouping of work within Improve Policy and Control Framework
+  that consolidates gap measurements, standard updates, and posture strengthening
+  into committed framework improvements.
 belongs_to_business_process: dea:process-improve-policy-and-control-framework
-cohesion_rationale: "Constituent work shares a single consolidation-and-commitment concern, one artifact (the improvement record), and a common terminus (improvements committed for adoption). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6)."
-decomposition_boundary: l4-reached
+cohesion_rationale: "Constituent work shares a single consolidation-and-commitment\
+  \ concern, one artifact (the improvement record), and a common terminus (improvements\
+  \ committed for adoption). Cohesion score 8/9 assessed at deposition (CR-BP-32 \xA7\
+  6)."
 ecfConformance:
   framework: EnterpriseConceptFramework
   contractVersion: 1.0.0
@@ -25,10 +29,58 @@ metadata:
   change_history:
   - cr: CR-BP-49
     date: '2026-09-13'
-    change: |
-      Initial L3 Activity entry; lands as part of the CR-BP-49
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-49
+
       GovernanceAndExistence Improve + Operate tranche (completes the GE
-      domain's L3 coverage; pattern proven by CR-BP-42 through CR-BP-48).
+
+      domain''s L3 coverage; pattern proven by CR-BP-42 through CR-BP-48).
+
       Classified per CR-BP-32 section 5 (fails standalone executability
+
       and resource dedication); decomposition boundary marker per CR-BP-32
+
       section 12 pending Task records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (dea:task-commit-framework-improvements-intake,
+      dea:task-commit-framework-improvements-verify, dea:task-commit-framework-improvements-transform,
+      dea:task-commit-framework-improvements-confirm, dea:task-commit-framework-improvements-record).'
+composes:
+- source_id: dea:activity-commit-framework-improvements
+  target_id: dea:task-commit-framework-improvements-intake
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-commit-framework-improvements
+  target_id: dea:task-commit-framework-improvements-verify
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-commit-framework-improvements
+  target_id: dea:task-commit-framework-improvements-transform
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-commit-framework-improvements
+  target_id: dea:task-commit-framework-improvements-confirm
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-commit-framework-improvements
+  target_id: dea:task-commit-framework-improvements-record
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.

@@ -4,10 +4,13 @@ name: Establish Compliance Calendar
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
-definition: "The cohesive grouping of work within Onboard Tax and Compliance Capability that establishes the compliance calendar governing filing and reporting obligations."
+definition: The cohesive grouping of work within Onboard Tax and Compliance Capability
+  that establishes the compliance calendar governing filing and reporting obligations.
 belongs_to_business_process: dea:process-onboard-tax-and-compliance-capability
-cohesion_rationale: "Constituent work shares a single calendar concern (obligations to scheduled compliance), one input class (jurisdictional obligations), and one output (the compliance calendar). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6)."
-decomposition_boundary: l4-reached
+cohesion_rationale: "Constituent work shares a single calendar concern (obligations\
+  \ to scheduled compliance), one input class (jurisdictional obligations), and one\
+  \ output (the compliance calendar). Cohesion score 8/9 assessed at deposition (CR-BP-32\
+  \ \xA76)."
 ecfConformance:
   framework: EnterpriseConceptFramework
   contractVersion: 1.0.0
@@ -25,10 +28,58 @@ metadata:
   change_history:
   - cr: CR-BP-52
     date: '2026-09-13'
-    change: |
-      Initial L3 Activity entry; lands as part of the CR-BP-52
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-52
+
       FinanceAndAccounting Conceive + Design + Build tranche (pattern
+
       proven by CR-BP-42 through CR-BP-51). Classified per CR-BP-32
+
       section 5 (fails standalone executability and resource dedication);
+
       decomposition boundary marker per CR-BP-32 section 12 pending Task
+
       records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (dea:task-establish-compliance-calendar-intake,
+      dea:task-establish-compliance-calendar-verify, dea:task-establish-compliance-calendar-transform,
+      dea:task-establish-compliance-calendar-confirm, dea:task-establish-compliance-calendar-record).'
+composes:
+- source_id: dea:activity-establish-compliance-calendar
+  target_id: dea:task-establish-compliance-calendar-intake
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-establish-compliance-calendar
+  target_id: dea:task-establish-compliance-calendar-verify
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-establish-compliance-calendar
+  target_id: dea:task-establish-compliance-calendar-transform
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-establish-compliance-calendar
+  target_id: dea:task-establish-compliance-calendar-confirm
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-establish-compliance-calendar
+  target_id: dea:task-establish-compliance-calendar-record
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
