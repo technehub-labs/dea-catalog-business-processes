@@ -4,10 +4,13 @@ name: Bound Evaluation Scope
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
-definition: "The cohesive grouping of work within Evaluate Strategic Alternatives that bounds the scope of the strategic alternatives evaluation against the chosen criteria."
+definition: The cohesive grouping of work within Evaluate Strategic Alternatives that
+  bounds the scope of the strategic alternatives evaluation against the chosen criteria.
 belongs_to_business_process: dea:process-evaluate-strategic-alternatives
-cohesion_rationale: "Constituent work shares a single scope concern (criteria to bounded evaluation scope), one input class (committed strategic option designs, evaluation criteria), and one output (the bounded evaluation scope). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6)."
-decomposition_boundary: l4-reached
+cohesion_rationale: "Constituent work shares a single scope concern (criteria to bounded\
+  \ evaluation scope), one input class (committed strategic option designs, evaluation\
+  \ criteria), and one output (the bounded evaluation scope). Cohesion score 9/9 assessed\
+  \ at deposition (CR-BP-32 \xA76)."
 ecfConformance:
   framework: EnterpriseConceptFramework
   contractVersion: 1.0.0
@@ -25,10 +28,58 @@ metadata:
   change_history:
   - cr: CR-BP-54
     date: '2026-09-13'
-    change: |
-      Initial L3 Activity entry; lands as part of the CR-BP-54
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-54
+
       StrategyAndDirection Conceive + Design + Build tranche (pattern
+
       proven by CR-BP-42 through CR-BP-53). Classified per CR-BP-32
+
       section 5 (fails standalone executability and resource dedication);
+
       decomposition boundary marker per CR-BP-32 section 12 pending Task
+
       records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (dea:task-bound-evaluation-scope-intake, dea:task-bound-evaluation-scope-verify,
+      dea:task-bound-evaluation-scope-transform, dea:task-bound-evaluation-scope-confirm,
+      dea:task-bound-evaluation-scope-record).'
+composes:
+- source_id: dea:activity-bound-evaluation-scope
+  target_id: dea:task-bound-evaluation-scope-intake
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-bound-evaluation-scope
+  target_id: dea:task-bound-evaluation-scope-verify
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-bound-evaluation-scope
+  target_id: dea:task-bound-evaluation-scope-transform
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-bound-evaluation-scope
+  target_id: dea:task-bound-evaluation-scope-confirm
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-bound-evaluation-scope
+  target_id: dea:task-bound-evaluation-scope-record
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.

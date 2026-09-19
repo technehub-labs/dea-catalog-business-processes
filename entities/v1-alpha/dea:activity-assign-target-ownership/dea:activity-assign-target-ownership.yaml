@@ -4,10 +4,13 @@ name: Assign Target Ownership
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
-definition: "The cohesive grouping of work within Design Objectives and Targets that assigns ownership of each target to a designable organizational unit or role."
+definition: The cohesive grouping of work within Design Objectives and Targets that
+  assigns ownership of each target to a designable organizational unit or role.
 belongs_to_business_process: dea:process-design-objectives-and-targets
-cohesion_rationale: "Constituent work shares a single assignment concern (drafted targets to owners), one input class (drafted targets, organizational structure), and one output (assigned ownership). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6)."
-decomposition_boundary: l4-reached
+cohesion_rationale: "Constituent work shares a single assignment concern (drafted\
+  \ targets to owners), one input class (drafted targets, organizational structure),\
+  \ and one output (assigned ownership). Cohesion score 8/9 assessed at deposition\
+  \ (CR-BP-32 \xA76)."
 ecfConformance:
   framework: EnterpriseConceptFramework
   contractVersion: 1.0.0
@@ -25,10 +28,58 @@ metadata:
   change_history:
   - cr: CR-BP-54
     date: '2026-09-13'
-    change: |
-      Initial L3 Activity entry; lands as part of the CR-BP-54
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-54
+
       StrategyAndDirection Conceive + Design + Build tranche (pattern
+
       proven by CR-BP-42 through CR-BP-53). Classified per CR-BP-32
+
       section 5 (fails standalone executability and resource dedication);
+
       decomposition boundary marker per CR-BP-32 section 12 pending Task
+
       records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (dea:task-assign-target-ownership-intake, dea:task-assign-target-ownership-verify,
+      dea:task-assign-target-ownership-transform, dea:task-assign-target-ownership-confirm,
+      dea:task-assign-target-ownership-record).'
+composes:
+- source_id: dea:activity-assign-target-ownership
+  target_id: dea:task-assign-target-ownership-intake
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-assign-target-ownership
+  target_id: dea:task-assign-target-ownership-verify
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-assign-target-ownership
+  target_id: dea:task-assign-target-ownership-transform
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-assign-target-ownership
+  target_id: dea:task-assign-target-ownership-confirm
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-assign-target-ownership
+  target_id: dea:task-assign-target-ownership-record
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.

@@ -1,0 +1,74 @@
+id: dea:task-submit-statutory-dissolution-filings-record
+type: Task
+name: Submit Statutory Dissolution Filings Audit Record
+definition: 'The bounded unit of work within `dea:activity-submit-statutory-dissolution-filings`
+  (Submit Statutory Dissolution Filings) that carries out the record phase of the
+  parent''s verb-object decomposition. Phase responsibility: records custodian. Phase
+  trigger: Confirmation issued (phase 4 complete); audit record retention may begin
+  per parent Activity''s evidence requirements. Phase outcome: Audit record preserved
+  at the specified retention tier; retrieval handles established per parent Activity''s
+  evidence discipline.'
+belongs_to_activity: dea:activity-submit-statutory-dissolution-filings
+trigger: Confirmation issued (phase 4 complete); audit record retention may begin
+  per parent Activity's evidence requirements.
+outcome: Audit record preserved at the specified retention tier; retrieval handles
+  established per parent Activity's evidence discipline.
+responsibility: records custodian
+boundary:
+  inclusions:
+  - Preservation of the audit record at the specified retention tier.
+  - Establishment of retrieval handles per evidence discipline.
+  exclusions:
+  - Re-execution of prior phases.
+  - Downstream consumption of the audit record (out of Activity scope).
+evidence:
+- source: dea:activity-submit-statutory-dissolution-filings
+  claim: "Parent Activity cohesion rationale (CR-BP-32 \xA76): Constituent work shares\
+    \ a single statutory-filing concern (the regulated filings required to dissolve\
+    \ the entity or surrender authorisation under the controlling authority), one\
+    \ input class (order-scope register plus reduced governance regime plus entity\
+    \ records), and one output (filed and recorded statutory dissolution submissions\
+    \ with filing receipts preserved). Cohesion score 9/9 assessed at deposition (CR-BP-32\
+    \ \xA76)."
+  strength: E3
+- source: CR-BP-102
+  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
+  strength: E2
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: GovernanceAndExistence
+    stage: Retire
+    identifier: ecf:governanceExistence.retire
+metadata:
+  established_by: CR-BP-102
+  established_at: '2026-09-19'
+  change_history:
+  - cr: CR-BP-79
+    date: '2026-09-16'
+    change: 'Initial L3 Activity entry for dea:process-effect-regulator-mandated-governance-unwind;
+      lands as part of the CR-BP-79
+
+      L3 GE Retire admission tranche (pattern proven by the pilot and prior
+
+      tranches, including CR-BP-77 admitted-regulated-tranche). Classified
+
+      per CR-BP-32 section 5 (fails standalone executability and resource
+
+      dedication); decomposition boundary marker per CR-BP-32 section 12
+
+      pending Task records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline
+      (5-phase verb-object pattern).

@@ -4,10 +4,13 @@ name: Design Cash and Liquidity Policy
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
-definition: "The cohesive grouping of work within Design Treasury and Funding Model that designs the cash and liquidity policy coordinating treasury operations."
+definition: The cohesive grouping of work within Design Treasury and Funding Model
+  that designs the cash and liquidity policy coordinating treasury operations.
 belongs_to_business_process: dea:process-design-treasury-and-funding-model
-cohesion_rationale: "Constituent work shares a single liquidity concern (cash posture design), one input class (treasury policy review, funding posture), and one output (the liquidity policy design). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6)."
-decomposition_boundary: l4-reached
+cohesion_rationale: "Constituent work shares a single liquidity concern (cash posture\
+  \ design), one input class (treasury policy review, funding posture), and one output\
+  \ (the liquidity policy design). Cohesion score 9/9 assessed at deposition (CR-BP-32\
+  \ \xA76)."
 ecfConformance:
   framework: EnterpriseConceptFramework
   contractVersion: 1.0.0
@@ -25,10 +28,58 @@ metadata:
   change_history:
   - cr: CR-BP-52
     date: '2026-09-13'
-    change: |
-      Initial L3 Activity entry; lands as part of the CR-BP-52
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-52
+
       FinanceAndAccounting Conceive + Design + Build tranche (pattern
+
       proven by CR-BP-42 through CR-BP-51). Classified per CR-BP-32
+
       section 5 (fails standalone executability and resource dedication);
+
       decomposition boundary marker per CR-BP-32 section 12 pending Task
+
       records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (dea:task-design-cash-and-liquidity-policy-intake,
+      dea:task-design-cash-and-liquidity-policy-verify, dea:task-design-cash-and-liquidity-policy-transform,
+      dea:task-design-cash-and-liquidity-policy-confirm, dea:task-design-cash-and-liquidity-policy-record).'
+composes:
+- source_id: dea:activity-design-cash-and-liquidity-policy
+  target_id: dea:task-design-cash-and-liquidity-policy-intake
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-design-cash-and-liquidity-policy
+  target_id: dea:task-design-cash-and-liquidity-policy-verify
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-design-cash-and-liquidity-policy
+  target_id: dea:task-design-cash-and-liquidity-policy-transform
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-design-cash-and-liquidity-policy
+  target_id: dea:task-design-cash-and-liquidity-policy-confirm
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-design-cash-and-liquidity-policy
+  target_id: dea:task-design-cash-and-liquidity-policy-record
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.

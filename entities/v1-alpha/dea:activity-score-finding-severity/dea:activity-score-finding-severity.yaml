@@ -4,10 +4,14 @@ name: Score Finding Severity
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
-definition: The cohesive grouping of work within Score Audit Findings that scores each delivered audit finding for severity, applying the audit framework rubric and assurance thresholds.
+definition: The cohesive grouping of work within Score Audit Findings that scores
+  each delivered audit finding for severity, applying the audit framework rubric and
+  assurance thresholds.
 belongs_to_business_process: dea:process-score-audit-findings
-cohesion_rationale: Constituent work shares a single severity concern (finding to severity grade), one input class (the delivered audit report), and one output (severity-scored findings). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
-decomposition_boundary: l4-reached
+cohesion_rationale: "Constituent work shares a single severity concern (finding to\
+  \ severity grade), one input class (the delivered audit report), and one output\
+  \ (severity-scored findings). Cohesion score 9/9 assessed at deposition (CR-BP-32\
+  \ \xA76)."
 ecfConformance:
   framework: EnterpriseConceptFramework
   contractVersion: 1.0.0
@@ -25,7 +29,8 @@ metadata:
   change_history:
   - cr: CR-BP-99
     date: '2026-09-18'
-    change: 'ACT-011 backfill: definition expanded to >= 120 chars (cohesive work statement adequacy, CR-BP-97).'
+    change: 'ACT-011 backfill: definition expanded to >= 120 chars (cohesive work
+      statement adequacy, CR-BP-97).'
   - cr: CR-BP-49
     date: '2026-09-13'
     change: 'Initial L3 Activity entry; lands as part of the CR-BP-49
@@ -41,3 +46,45 @@ metadata:
       section 12 pending Task records (dea:Task lifecycle: proposed).
 
       '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (dea:task-score-finding-severity-intake, dea:task-score-finding-severity-verify,
+      dea:task-score-finding-severity-transform, dea:task-score-finding-severity-confirm,
+      dea:task-score-finding-severity-record).'
+composes:
+- source_id: dea:activity-score-finding-severity
+  target_id: dea:task-score-finding-severity-intake
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-score-finding-severity
+  target_id: dea:task-score-finding-severity-verify
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-score-finding-severity
+  target_id: dea:task-score-finding-severity-transform
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-score-finding-severity
+  target_id: dea:task-score-finding-severity-confirm
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-score-finding-severity
+  target_id: dea:task-score-finding-severity-record
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.

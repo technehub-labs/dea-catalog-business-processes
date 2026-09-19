@@ -295,7 +295,7 @@ def test_cli_live_run_conformant():
     result = _run([])
     assert result.returncode == 0, result.stdout + result.stderr
     assert "CONFORMANT" in result.stdout
-    assert "Records checked:  0" in result.stdout
+    assert "Records checked:  2800" in result.stdout
 
 
 def test_cli_json_emits_well_formed_payload():
@@ -303,7 +303,7 @@ def test_cli_json_emits_well_formed_payload():
     assert result.returncode == 0, result.stdout + result.stderr
     payload = json.loads(result.stdout)
     assert payload["verdict"] == "CONFORMANT"
-    assert payload["records_checked"] == 0
+    assert payload["records_checked"] == 2800
     assert payload["findings"] == []
     rule_ids = {r["id"] for r in payload["rules"]}
     assert rule_ids == {"TASK-001", "TASK-002", "TASK-003", "TASK-004", "TASK-005"}

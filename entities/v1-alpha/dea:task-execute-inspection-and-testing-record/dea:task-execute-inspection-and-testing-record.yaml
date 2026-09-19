@@ -1,0 +1,62 @@
+id: dea:task-execute-inspection-and-testing-record
+type: Task
+name: Execute Inspection and Testing Audit Record
+definition: 'The bounded unit of work within `dea:activity-execute-inspection-and-testing`
+  (Execute Inspection and Testing) that carries out the record phase of the parent''s
+  verb-object decomposition. Phase responsibility: records custodian. Phase trigger:
+  Confirmation issued (phase 4 complete); audit record retention may begin per parent
+  Activity''s evidence requirements. Phase outcome: Audit record preserved at the
+  specified retention tier; retrieval handles established per parent Activity''s evidence
+  discipline.'
+belongs_to_activity: dea:activity-execute-inspection-and-testing
+trigger: Confirmation issued (phase 4 complete); audit record retention may begin
+  per parent Activity's evidence requirements.
+outcome: Audit record preserved at the specified retention tier; retrieval handles
+  established per parent Activity's evidence discipline.
+responsibility: records custodian
+boundary:
+  inclusions:
+  - Preservation of the audit record at the specified retention tier.
+  - Establishment of retrieval handles per evidence discipline.
+  exclusions:
+  - Re-execution of prior phases.
+  - Downstream consumption of the audit record (out of Activity scope).
+evidence:
+- source: dea:activity-execute-inspection-and-testing
+  claim: "Parent Activity cohesion rationale (CR-BP-32 \xA76): Constituent work shares\
+    \ a single execution concern (applying the inspection plan to physical output),\
+    \ the same resources (inspection equipment, test apparatus, batch samples), and\
+    \ a common trigger (an approved inspection plan). Cohesion score 9/9 assessed\
+    \ at deposition (CR-BP-32 \xA76; research/l3-candidate-universe.yaml)."
+  strength: E3
+- source: CR-BP-102
+  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
+  strength: E2
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: EnablementAndOperations
+    stage: Operate
+    identifier: ecf:enablementAndOperations.operate
+metadata:
+  established_by: CR-BP-102
+  established_at: '2026-09-19'
+  change_history:
+  - cr: CR-BP-42
+    date: '2026-09-13'
+    change: "Initial L3 Activity entry; first Activity deposition in the catalog\n\
+      (pilot slice). Classified per CR-BP-32 \xA75 (fails standalone\nexecutability\
+      \ and resource dedication); decomposition boundary marker\nper CR-BP-32 \xA7\
+      12 pending Task records (dea:Task lifecycle: proposed).\n"
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline
+      (5-phase verb-object pattern).

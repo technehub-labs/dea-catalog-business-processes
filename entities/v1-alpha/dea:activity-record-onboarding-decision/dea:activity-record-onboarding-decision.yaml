@@ -4,10 +4,16 @@ name: Record Onboarding Decision
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
-definition: "The cohesive grouping of work within Onboard Regulated Party Relationship that applies the four-eye or higher-approver regime, records the activation or refusal decision with the supporting rationale and approver identity, and issues the onboarding record to the systems that open or close the relationship."
+definition: The cohesive grouping of work within Onboard Regulated Party Relationship
+  that applies the four-eye or higher-approver regime, records the activation or refusal
+  decision with the supporting rationale and approver identity, and issues the onboarding
+  record to the systems that open or close the relationship.
 belongs_to_business_process: dea:process-onboard-regulated-party-relationship
-cohesion_rationale: "Constituent work shares a single decision-recording concern, one input class (the completed identity, ownership, and risk artefacts plus the approver's adjudication), and one output (an evidenced decision record that triggers relationship activation or refusal). Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6)."
-decomposition_boundary: l4-reached
+cohesion_rationale: Constituent work shares a single decision-recording concern, one
+  input class (the completed identity, ownership, and risk artefacts plus the approver's
+  adjudication), and one output (an evidenced decision record that triggers relationship
+  activation or refusal). Cohesion score 9/9 assessed at deposition (CR-BP-32 section
+  6).
 ecfConformance:
   framework: EnterpriseConceptFramework
   contractVersion: 1.0.0
@@ -25,10 +31,58 @@ metadata:
   change_history:
   - cr: CR-BP-77
     date: '2026-09-16'
-    change: |
-      Initial L3 Activity entry; lands as part of the CR-BP-77
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-77
+
       admitted-regulated-BP L3 tranche (pattern proven by the pilot
+
       and prior tranches). Classified per CR-BP-32 section 5 (fails
+
       standalone executability and resource dedication); decomposition
+
       boundary marker per CR-BP-32 section 12 pending Task records
+
       (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (dea:task-record-onboarding-decision-intake, dea:task-record-onboarding-decision-verify,
+      dea:task-record-onboarding-decision-transform, dea:task-record-onboarding-decision-confirm,
+      dea:task-record-onboarding-decision-record).'
+composes:
+- source_id: dea:activity-record-onboarding-decision
+  target_id: dea:task-record-onboarding-decision-intake
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-record-onboarding-decision
+  target_id: dea:task-record-onboarding-decision-verify
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-record-onboarding-decision
+  target_id: dea:task-record-onboarding-decision-transform
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-record-onboarding-decision
+  target_id: dea:task-record-onboarding-decision-confirm
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-record-onboarding-decision
+  target_id: dea:task-record-onboarding-decision-record
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.

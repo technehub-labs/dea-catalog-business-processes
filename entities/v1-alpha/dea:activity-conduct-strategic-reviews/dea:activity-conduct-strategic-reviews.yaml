@@ -4,10 +4,13 @@ name: Conduct Strategic Reviews
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
-definition: "The cohesive grouping of work within Operate Strategic Review Cycle that conducts the scheduled strategic reviews against the assembled inputs."
+definition: The cohesive grouping of work within Operate Strategic Review Cycle that
+  conducts the scheduled strategic reviews against the assembled inputs.
 belongs_to_business_process: dea:process-operate-strategic-review-cycle
-cohesion_rationale: "Constituent work shares a single conduct concern (the review sessions run against the assembled inputs), one input class (the assembled review inputs), and one output (the conducted strategic reviews). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6)."
-decomposition_boundary: l4-reached
+cohesion_rationale: "Constituent work shares a single conduct concern (the review\
+  \ sessions run against the assembled inputs), one input class (the assembled review\
+  \ inputs), and one output (the conducted strategic reviews). Cohesion score 8/9\
+  \ assessed at deposition (CR-BP-32 \xA76)."
 ecfConformance:
   framework: EnterpriseConceptFramework
   contractVersion: 1.0.0
@@ -25,10 +28,59 @@ metadata:
   change_history:
   - cr: CR-BP-55
     date: '2026-09-14'
-    change: |
-      Initial L3 Activity entry; lands as part of the CR-BP-55
-      StrategyAndDirection Improve + Operate tranche (pattern proven by CR-BP-42 through CR-BP-54).
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-55
+
+      StrategyAndDirection Improve + Operate tranche (pattern proven by CR-BP-42 through
+      CR-BP-54).
+
       Classified per CR-BP-32 section 5 (fails standalone
+
       executability and resource dedication); decomposition
+
       boundary marker per CR-BP-32 section 12 pending Task
+
       records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (dea:task-conduct-strategic-reviews-intake, dea:task-conduct-strategic-reviews-verify,
+      dea:task-conduct-strategic-reviews-transform, dea:task-conduct-strategic-reviews-confirm,
+      dea:task-conduct-strategic-reviews-record).'
+composes:
+- source_id: dea:activity-conduct-strategic-reviews
+  target_id: dea:task-conduct-strategic-reviews-intake
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-conduct-strategic-reviews
+  target_id: dea:task-conduct-strategic-reviews-verify
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-conduct-strategic-reviews
+  target_id: dea:task-conduct-strategic-reviews-transform
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-conduct-strategic-reviews
+  target_id: dea:task-conduct-strategic-reviews-confirm
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-conduct-strategic-reviews
+  target_id: dea:task-conduct-strategic-reviews-record
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.

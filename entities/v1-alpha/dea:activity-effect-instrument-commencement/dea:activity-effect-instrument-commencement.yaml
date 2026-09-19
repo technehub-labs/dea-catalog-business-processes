@@ -4,10 +4,13 @@ name: Effect Instrument Commencement
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
-definition: "The cohesive grouping of work within Bring Policy Instrument into Force that executes the act that brings the instrument into force: publication, proclamation or effective-date activation."
+definition: 'The cohesive grouping of work within Bring Policy Instrument into Force
+  that executes the act that brings the instrument into force: publication, proclamation
+  or effective-date activation.'
 belongs_to_business_process: dea:process-bring-into-force
-cohesion_rationale: "Constituent work shares a single commencement execution concern, one input class (the verified commencement readiness), and one output (the instrument in force). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6)."
-decomposition_boundary: l4-reached
+cohesion_rationale: "Constituent work shares a single commencement execution concern,\
+  \ one input class (the verified commencement readiness), and one output (the instrument\
+  \ in force). Cohesion score 9/9 assessed at deposition (CR-BP-32 \xA76)."
 ecfConformance:
   framework: EnterpriseConceptFramework
   contractVersion: 1.0.0
@@ -25,10 +28,58 @@ metadata:
   change_history:
   - cr: CR-BP-69
     date: '2026-09-15'
-    change: |
-      Initial L3 Activity entry; lands as part of the CR-BP-69
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-69
+
       admitted-BP L3 decomposition tranche (pattern proven by CR-BP-42 through CR-BP-57).
+
       Classified per CR-BP-32 section 5 (fails standalone
+
       executability and resource dedication); decomposition
+
       boundary marker per CR-BP-32 section 12 pending Task
+
       records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (dea:task-effect-instrument-commencement-intake,
+      dea:task-effect-instrument-commencement-verify, dea:task-effect-instrument-commencement-transform,
+      dea:task-effect-instrument-commencement-confirm, dea:task-effect-instrument-commencement-record).'
+composes:
+- source_id: dea:activity-effect-instrument-commencement
+  target_id: dea:task-effect-instrument-commencement-intake
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-effect-instrument-commencement
+  target_id: dea:task-effect-instrument-commencement-verify
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-effect-instrument-commencement
+  target_id: dea:task-effect-instrument-commencement-transform
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-effect-instrument-commencement
+  target_id: dea:task-effect-instrument-commencement-confirm
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-effect-instrument-commencement
+  target_id: dea:task-effect-instrument-commencement-record
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.

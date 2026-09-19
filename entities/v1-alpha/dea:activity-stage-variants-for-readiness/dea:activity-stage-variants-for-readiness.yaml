@@ -4,10 +4,12 @@ name: Stage Variants for Readiness
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
-definition: "The cohesive grouping of work within Develop Product Variants that stages the conforming variants for market readiness preparation."
+definition: The cohesive grouping of work within Develop Product Variants that stages
+  the conforming variants for market readiness preparation.
 belongs_to_business_process: dea:process-develop-product-variants
-cohesion_rationale: "Constituent work shares a single staging concern (conforming variant to readiness input), one input class (verified variants), and one output (staged variants). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6)."
-decomposition_boundary: l4-reached
+cohesion_rationale: "Constituent work shares a single staging concern (conforming\
+  \ variant to readiness input), one input class (verified variants), and one output\
+  \ (staged variants). Cohesion score 8/9 assessed at deposition (CR-BP-32 \xA76)."
 ecfConformance:
   framework: EnterpriseConceptFramework
   contractVersion: 1.0.0
@@ -25,10 +27,58 @@ metadata:
   change_history:
   - cr: CR-BP-50
     date: '2026-09-13'
-    change: |
-      Initial L3 Activity entry; lands as part of the CR-BP-50
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-50
+
       ProductAndValue Conceive + Design + Build tranche (pattern proven
+
       by CR-BP-42 through CR-BP-49). Classified per CR-BP-32 section 5
+
       (fails standalone executability and resource dedication);
+
       decomposition boundary marker per CR-BP-32 section 12 pending Task
+
       records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (dea:task-stage-variants-for-readiness-intake,
+      dea:task-stage-variants-for-readiness-verify, dea:task-stage-variants-for-readiness-transform,
+      dea:task-stage-variants-for-readiness-confirm, dea:task-stage-variants-for-readiness-record).'
+composes:
+- source_id: dea:activity-stage-variants-for-readiness
+  target_id: dea:task-stage-variants-for-readiness-intake
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-stage-variants-for-readiness
+  target_id: dea:task-stage-variants-for-readiness-verify
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-stage-variants-for-readiness
+  target_id: dea:task-stage-variants-for-readiness-transform
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-stage-variants-for-readiness
+  target_id: dea:task-stage-variants-for-readiness-confirm
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-stage-variants-for-readiness
+  target_id: dea:task-stage-variants-for-readiness-record
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.

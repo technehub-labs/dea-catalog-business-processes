@@ -1,0 +1,77 @@
+id: dea:task-notify-affected-business-units-regulator-continuing-supervision-verify
+type: Task
+name: Notify Affected Business Units Under Regulator Continuing Supervision Verification
+definition: 'The bounded unit of work within `dea:activity-notify-affected-business-units-regulator-continuing-supervision`
+  (Notify Affected Business Units Under Regulator Continuing Supervision) that carries
+  out the verify phase of the parent''s verb-object decomposition. Phase responsibility:
+  verification custodian. Phase trigger: Intake registered (phase 1 complete); verification
+  of input against parent Activity''s specification can begin. Phase outcome: Verified
+  that the input meets parent Activity''s specification; nonconformities are recorded
+  for rejection or remediation.'
+belongs_to_activity: dea:activity-notify-affected-business-units-regulator-continuing-supervision
+trigger: Intake registered (phase 1 complete); verification of input against parent
+  Activity's specification can begin.
+outcome: Verified that the input meets parent Activity's specification; nonconformities
+  are recorded for rejection or remediation.
+responsibility: verification custodian
+boundary:
+  inclusions:
+  - Comparison of input against parent Activity's specification.
+  - Recording of verification results (conformance / nonconformance).
+  exclusions:
+  - Transformation of the input (phase 3).
+  - Issuance of downstream confirmation (phase 4).
+evidence:
+- source: dea:activity-notify-affected-business-units-regulator-continuing-supervision
+  claim: "Parent Activity cohesion rationale (CR-BP-32 \xA76): Constituent work shares\
+    \ a single affected-business-unit-notification concern, one input class (the regulated\
+    \ strategic-plan record plus the regulator directive or rejection notice plus\
+    \ the superseded-plan identification plus the filings register update plus the\
+    \ executed communications plan plus the preserved regulator-acknowledged sunset\
+    \ record plus the executed retained-records plan), and one output (the affected\
+    \ business units notified under the regulator's continuing supervision with the\
+    \ regulator-prescribed acknowledgement recorded). Cohesion score 9/9 assessed\
+    \ at deposition (CR-BP-32 section 6)."
+  strength: E3
+- source: CR-BP-102
+  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
+  strength: E2
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: StrategyAndDirection
+    stage: Retire
+    identifier: ecf:strategyDirection.retire
+metadata:
+  established_by: CR-BP-102
+  established_at: '2026-09-19'
+  change_history:
+  - cr: CR-BP-101a
+    date: '2026-09-19'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-101a
+
+      L3 decomposition tranche for the SD/Retire Business Process
+
+      (dea:process-sunset-regulated-strategic-plan) admitted under
+
+      CR-BP-101. Classified per CR-BP-32 section 5 (fails standalone
+
+      executability and resource dedication); decomposition boundary
+
+      marker per CR-BP-32 section 12 pending Task records (dea:Task
+
+      lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline
+      (5-phase verb-object pattern).

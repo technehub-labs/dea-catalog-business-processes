@@ -4,10 +4,20 @@ name: Update Filings Register for Regulated Strategic Plan
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
-definition: "The cohesive grouping of work within Sunset Regulated Strategic Plan that updates the regulated-entity filings register to reflect the regulated strategic plan's retirement (the supervisor-filed filings register entry marking the plan as retired under regulator directive; the replacement plan's status preserved on the same register; the regulator identifier, directive date, and effective-retirement date recorded; the filings register update transmitted to the supervisor under the regulator's continuing supervision)."
+definition: The cohesive grouping of work within Sunset Regulated Strategic Plan that
+  updates the regulated-entity filings register to reflect the regulated strategic
+  plan's retirement (the supervisor-filed filings register entry marking the plan
+  as retired under regulator directive; the replacement plan's status preserved on
+  the same register; the regulator identifier, directive date, and effective-retirement
+  date recorded; the filings register update transmitted to the supervisor under the
+  regulator's continuing supervision).
 belongs_to_business_process: dea:process-sunset-regulated-strategic-plan
-cohesion_rationale: "Constituent work shares a single filings-register-update concern, one input class (the regulated strategic-plan record plus the regulator directive or rejection notice plus the superseded-plan identification), and one output (the filings register updated with the regulated strategic-plan retirement recorded and the replacement plan's status preserved). Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6)."
-decomposition_boundary: l4-reached
+cohesion_rationale: Constituent work shares a single filings-register-update concern,
+  one input class (the regulated strategic-plan record plus the regulator directive
+  or rejection notice plus the superseded-plan identification), and one output (the
+  filings register updated with the regulated strategic-plan retirement recorded and
+  the replacement plan's status preserved). Cohesion score 9/9 assessed at deposition
+  (CR-BP-32 section 6).
 ecfConformance:
   framework: EnterpriseConceptFramework
   contractVersion: 1.0.0
@@ -25,11 +35,60 @@ metadata:
   change_history:
   - cr: CR-BP-101a
     date: '2026-09-19'
-    change: |
-      Initial L3 Activity entry; lands as part of the CR-BP-101a
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-101a
+
       L3 decomposition tranche for the SD/Retire Business Process
+
       (dea:process-sunset-regulated-strategic-plan) admitted under
+
       CR-BP-101. Classified per CR-BP-32 section 5 (fails standalone
+
       executability and resource dedication); decomposition boundary
+
       marker per CR-BP-32 section 12 pending Task records (dea:Task
+
       lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (dea:task-update-filings-register-regulated-strategic-plan-intake,
+      dea:task-update-filings-register-regulated-strategic-plan-verify, dea:task-update-filings-register-regulated-strategic-plan-transform,
+      dea:task-update-filings-register-regulated-strategic-plan-confirm, dea:task-update-filings-register-regulated-strategic-plan-record).'
+composes:
+- source_id: dea:activity-update-filings-register-regulated-strategic-plan
+  target_id: dea:task-update-filings-register-regulated-strategic-plan-intake
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-update-filings-register-regulated-strategic-plan
+  target_id: dea:task-update-filings-register-regulated-strategic-plan-verify
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-update-filings-register-regulated-strategic-plan
+  target_id: dea:task-update-filings-register-regulated-strategic-plan-transform
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-update-filings-register-regulated-strategic-plan
+  target_id: dea:task-update-filings-register-regulated-strategic-plan-confirm
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: dea:activity-update-filings-register-regulated-strategic-plan
+  target_id: dea:task-update-filings-register-regulated-strategic-plan-record
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
