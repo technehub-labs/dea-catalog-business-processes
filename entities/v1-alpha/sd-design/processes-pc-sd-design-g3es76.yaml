@@ -1,0 +1,87 @@
+id: processes:pc-sd-design-g3es76
+domain: StrategyAndDirection
+lifecycle_stage: Design
+name: Strategic Choices Design
+definition: 'The bounded enterprise context for **designing** the strategic choices, alternatives, objectives, and scenarios of the enterprise in the **Strategy & Direction** domain. This context addresses the analytical work of producing designs for strategic options, evaluating alternatives, defining objectives and targets, and framing scenarios. v2.4.0: design mechanics that translate conceived strategic intent into candidate options and choices.
+
+  '
+scope:
+  includes:
+  - Strategic option design
+  - Strategic alternative evaluation
+  - Objectives and targets design
+  - Strategic scenario design
+  excludes:
+  - Strategic intent conception (Conceive stage; adjacent context)
+  - Strategic plan and roadmap build (Build stage; adjacent context)
+  - Operational planning (enablement-operations x design)
+  - Financial plan design (finance-accounting x design)
+outcomes:
+- Strategic options are designed with bounded trade-offs.
+- Strategic alternatives are evaluated against stated criteria.
+- Objectives and targets are designed and committed.
+- Strategic scenarios are framed for resilience assessment.
+adjacent_contexts:
+- processes:pc-sd-conceive-ucb3gx
+- processes:pc-sd-build-gmzrrm
+- processes:pc-sd-operate-5cs5ee
+- processes:pc-sd-improve-ft9k5f
+processes:
+- processes:process-sd-design-ewvbsh
+- processes:process-sd-design-ed7jd5
+- processes:process-sd-design-vdwkmh
+- processes:process-sd-design-uenzna
+cell_charter:
+  enterprise_concern: 'Strategy & Direction: the design of strategic choices and trade-offs.'
+  lifecycle_concern: 'Design: designing options, evaluating alternatives, defining objectives and scenarios.'
+  combined_semantic_meaning: 'The analytical work of producing designs for strategic options, alternatives, objectives, and scenarios from the conceived intent.
+
+    '
+  expected_outcomes:
+  - Strategic options are designed with bounded trade-offs.
+  - Strategic alternatives are evaluated against stated criteria.
+  - Objectives and targets are designed and committed.
+  - Strategic scenarios are framed for resilience assessment.
+  inclusions:
+  - Strategic option design
+  - Strategic alternative evaluation
+  - Objectives and targets design
+  - Strategic scenario design
+  exclusions:
+  - Strategic intent conception (Conceive stage; adjacent context)
+  - Strategic plan and roadmap build (Build stage; adjacent context)
+  - Operational planning (enablement-operations x design)
+  - Financial plan design (finance-accounting x design)
+  adjacent_boundaries:
+  - 'processes:pc-sd-conceive-ucb3gx (adjacent context): strategy flows between Design and the adjacent cell.'
+  - 'processes:pc-sd-build-gmzrrm (adjacent context): strategy flows between Design and the adjacent cell.'
+  - 'processes:pc-sd-operate-5cs5ee (adjacent context): strategy flows between Design and the adjacent cell.'
+  - 'processes:pc-sd-improve-ft9k5f (adjacent context): strategy flows between Design and the adjacent cell.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-21a
+established_at: '2026-09-07'
+change_history:
+- cr: CR-BP-21a.1
+  date: '2026-09-08'
+  change: 'Processes list extended with the remaining register v2 L2
+
+    candidates for this cell under CR-BP-21a.1.
+
+    '
+- cr: CR-BP-21a
+  date: '2026-09-07'
+  change: 'Initial Process Context record; promoted from the CR-BP-19
+
+    register v2 (ratified against ECF v2.4.0) as part of the
+
+    StrategyAndDirection landing tranche.
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21a-strategy-direction-landing.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

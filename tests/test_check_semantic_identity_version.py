@@ -64,7 +64,7 @@ def _record(version: str = "1.0.0",
     (the conventional location in the live catalog).
     """
     d: dict = {
-        "id": "dea:process-self-test",
+        "id": "processes:process-self-test",
         "name": "Self Test",
         "type": "Process",
         "version": version,
@@ -99,7 +99,7 @@ def test_cli_live_catalog_conformant():
     result = _run(["--strict"])
     assert result.returncode == 0, result.stdout + result.stderr
     assert "CONFORMANT" in result.stdout
-    assert "Records checked:  139" in result.stdout
+    assert "Records checked:  140" in result.stdout
     assert "Findings:         0" in result.stdout
 
 
@@ -108,7 +108,7 @@ def test_cli_json_emits_well_formed_payload(tmp_path: Path):
     assert result.returncode == 0, result.stdout + result.stderr
     payload = json.loads(result.stdout)
     assert payload["verdict"] == "CONFORMANT"
-    assert payload["candidate_count"] == 139
+    assert payload["candidate_count"] == 140
     assert payload["finding_count"] == 0
     assert payload["blocking_count"] == 0
     assert payload["advisory_count"] == 0
@@ -123,10 +123,10 @@ def test_cli_strict_mode_exits_nonzero_when_blocking_finding(
     tmp_path: Path,
 ):
     """Build a tiny catalog with one bad BP; --strict must exit 1."""
-    bad_dir = tmp_path / "entities" / "v1-alpha" / "dea:process-bad"
+    bad_dir = tmp_path / "entities" / "v1-alpha" / "process-bad"
     bad_dir.mkdir(parents=True)
-    (bad_dir / "dea:process-bad.yaml").write_text(
-        "id: dea:process-bad\n"
+    (bad_dir / "processes-process-bad.yaml").write_text(
+        "id: processes:process-fa-operate-bad001\n"
         "name: Bad\n"
         "type: Process\n"
         "version: 2.0.0\n"   # MAJOR bump

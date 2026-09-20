@@ -1,0 +1,88 @@
+id: processes:pc-pv-operate-ewpwjc
+domain: ProductAndValue
+lifecycle_stage: Operate
+name: Portfolio Management and Proposition Lifecycle Operation
+definition: 'The bounded enterprise context for **operating** the product catalogue, portfolio performance, and proposition lifecycle of the enterprise in the **Product & Value** domain. This context addresses the steady-state work of operating the product catalogue, managing portfolio performance, and managing the proposition lifecycle. v2.4.0: operational delivery of the product is Enablement & Operations; this cell covers the proposition-side operation (domain-grounding.md §3.5).
+
+  '
+scope:
+  includes:
+  - Product catalogue operation
+  - Portfolio performance management
+  - Proposition lifecycle management
+  - Proposition performance monitoring
+  excludes:
+  - Product development (Build stage; adjacent context)
+  - Operational delivery of the product (enablement-operations x operate; adjacent domain)
+  - Partner alliance programme (party-relationship x operate; adjacent domain)
+  - Workforce operation (agency-organization x operate; adjacent domain)
+outcomes:
+- Product catalogue is operated across the portfolio.
+- Portfolio performance is managed against targets.
+- Proposition lifecycle is managed from launch to retirement.
+- Proposition performance is monitored and reported.
+adjacent_contexts:
+- processes:pc-pv-conceive-fe9awk
+- processes:pc-pv-design-8dhwpn
+- processes:pc-pv-build-ygbmxb
+- processes:pc-pv-improve-wpyfx7
+processes:
+- processes:process-pv-operate-zyguzp
+- processes:process-pv-operate-en8rdz
+- processes:process-pv-operate-cau4gv
+cell_charter:
+  enterprise_concern: 'Product & Value: the steady-state operation of the enterprise''s product portfolio.'
+  lifecycle_concern: 'Operate: operating product catalogue, portfolio performance, and proposition lifecycle.'
+  combined_semantic_meaning: 'The steady-state work of operating the product catalogue, managing portfolio performance, and managing the proposition lifecycle.
+
+    '
+  expected_outcomes:
+  - Product catalogue is operated across the portfolio.
+  - Portfolio performance is managed against targets.
+  - Proposition lifecycle is managed from launch to retirement.
+  - Proposition performance is monitored and reported.
+  inclusions:
+  - Product catalogue operation
+  - Portfolio performance management
+  - Proposition lifecycle management
+  - Proposition performance monitoring
+  exclusions:
+  - Product development (Build stage; adjacent context)
+  - Operational delivery of the product (enablement-operations x operate; adjacent domain)
+  - Partner alliance programme (party-relationship x operate; adjacent domain)
+  - Workforce operation (agency-organization x operate; adjacent domain)
+  adjacent_boundaries:
+  - 'processes:pc-pv-conceive-fe9awk (adjacent context): proposition flow between Operate and the adjacent cell.'
+  - 'processes:pc-pv-design-8dhwpn (adjacent context): proposition flow between Operate and the adjacent cell.'
+  - 'processes:pc-pv-build-ygbmxb (adjacent context): proposition flow between Operate and the adjacent cell.'
+  - 'processes:pc-pv-improve-wpyfx7 (adjacent context): proposition flow between Operate and the adjacent cell.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-21c
+established_at: '2026-09-08'
+change_history:
+- cr: CR-BP-21c.1
+  date: '2026-09-08'
+  change: 'Processes list extended with the remaining register v2 L2
+
+    candidates for this cell under CR-BP-21c.1.
+
+    '
+- cr: CR-BP-21c
+  date: '2026-09-08'
+  change: 'Initial Process Context record; promoted from the CR-BP-19
+
+    register v2 (ratified against ECF v2.4.0) as part of the
+
+    ProductAndValue landing tranche. Substrate-neutral
+
+    per ADR-ECF-002 §5 / CR-ECF-007.
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21c-product-value-landing.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

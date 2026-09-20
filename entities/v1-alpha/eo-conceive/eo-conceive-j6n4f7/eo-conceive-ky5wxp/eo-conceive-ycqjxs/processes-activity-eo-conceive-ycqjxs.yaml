@@ -1,0 +1,73 @@
+id: processes:activity-eo-conceive-ycqjxs
+type: Activity
+name: Commit Delivery Model Conception
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Frame Delivery Model Conception that consolidates channel patterns, service-level envelopes, and fulfilment patterns into the committed delivery model conception.
+belongs_to_business_process: processes:process-eo-conceive-ky5wxp
+cohesion_rationale: Constituent work shares a single consolidation-and-commitment concern, one artifact (the delivery model conception document), and a common terminus (readiness for design). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: EnablementAndOperations
+    stage: Conceive
+    identifier: ecf:enablementAndOperations.conceive
+metadata:
+  established_by: CR-BP-46
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-46
+    date: '2026-09-13'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-46
+
+      EnablementAndOperations Conceive + Design tranche (pattern proven
+
+      by CR-BP-42, CR-BP-43, CR-BP-44, CR-BP-45). Classified per CR-BP-32
+
+      section 5 (fails standalone executability and resource dedication);
+
+      decomposition boundary marker per CR-BP-32 section 12 pending Task
+
+      records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-commit-delivery-model-conception-intake, dea:task-commit-delivery-model-conception-verify, dea:task-commit-delivery-model-conception-transform, dea:task-commit-delivery-model-conception-confirm, dea:task-commit-delivery-model-conception-record).'
+composes:
+- source_id: processes:activity-eo-conceive-ycqjxs
+  target_id: processes:task-eo-conceive-intake-n34fcv
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-conceive-ycqjxs
+  target_id: processes:task-eo-conceive-verify-av9wnh
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-conceive-ycqjxs
+  target_id: processes:task-eo-conceive-transform-jp83v5
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-conceive-ycqjxs
+  target_id: processes:task-eo-conceive-confirm-m8zmsw
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-conceive-ycqjxs
+  target_id: processes:task-eo-conceive-record-xn47hd
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

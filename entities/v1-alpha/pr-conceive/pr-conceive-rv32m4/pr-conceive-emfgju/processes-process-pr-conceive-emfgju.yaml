@@ -1,0 +1,108 @@
+id: processes:process-pr-conceive-emfgju
+name: Develop Customer Strategy
+type: Process
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+process_intent: develop
+process_type: management
+process_specialization: []
+description: 'Operate the Develop Customer Strategy L2 process within the
+
+  dea:pc-pr-c Cell Charter. See trigger and outcome for
+
+  the bounded work this process owns; see identity.outcome_statement
+
+  for the testable outcome the process produces.
+
+  '
+trigger: 'A new customer strategy framing is needed because the enterprise is entering a new segment, the existing strategy has drifted, or the demand thesis needs to be re-tested.
+
+  '
+outcome: 'A customer strategy document with bounded segment thesis, value exchange, and demand thesis is committed.
+
+  '
+identity:
+  verb: Develop
+  object: Customer Strategy
+  scope: (all customer segments)
+  outcome_statement: 'A customer strategy document with bounded segment thesis, value exchange, and demand thesis is committed and ready to drive Design work.
+
+    '
+  evidence_links:
+  - type: standard
+    ref: https://www.apqc.org/resource-library/resource-collections/56391
+  - type: documentation
+    ref: docs/examples/develop-customer-strategy.md
+relationships:
+- source_id: processes:process-pr-conceive-emfgju
+  relationship_type: serves
+  target_id: ecf:customerAndDemand.conceive
+- source_id: processes:process-pr-conceive-emfgju
+  relationship_type: serves
+  target_id: ecf:partyRelationship.conceive
+  added_by: CR-BP-31
+  added_at: '2026-09-10'
+  rationale: 'Canonical v2.5.0 serves relationship added alongside v2.3.0 historical entry per CR-BP-31 (migration-pair completion). The v2.3.0 `customerAndDemand` entry is preserved as provenance. '
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: PartyAndRelationship
+    stage: Conceive
+    identifier: ecf:partyRelationship.conceive
+metadata:
+  established_by: CR-BP-13a
+  established_at: '2026-09-05'
+  activity_references:
+  - processes:activity-pr-conceive-3tgws4
+  - processes:activity-pr-conceive-6habrm
+  - processes:activity-pr-conceive-8frfby
+  - processes:activity-pr-conceive-kbwtdj
+  change_history:
+  - cr: CR-BP-13a
+    date: '2026-09-05'
+    change: 'Initial L2 Process entry; lands as part of the CR-BP-13a
+
+      PartyAndRelationship admission tranche.
+
+      '
+  - cr: CR-BP-15-IMP
+    phase: phase-5
+    date: '2026-09-06'
+    change: 'Phase 5 tranche migration: legacy intent migrated to canonical vocabulary; legacy scalar `process_context` migrated to canonical `context:` block; legacy `process_audience` removed (CR-BP-14 /13); canonical `serves` relationship toward the ECF coordinate added.'
+  - cr: CR-BP-31
+    date: '2026-09-10'
+    change: 'Added canonical v2.5.0 `serves` relationship alongside v2.3.0 historical entry (migration-pair completion per CR-BP-31). The legacy `customerAndDemand` entry is preserved as provenance; canonical `ecf:partyRelationship.conceive` is now the conformance-resolving reference. '
+  - cr: CR-BP-45
+    date: '2026-09-13'
+    change: 'L3 decomposition of this Business Process: 4 Activities
+
+      landed under the structured deposition pattern (research
+
+      deposition at research/l3-candidate-universe.yaml, then
+
+      canonical Activity records) as part of the CR-BP-45
+
+      PartyAndRelationship Conceive + Design + Build tranche.
+
+      Adds metadata.activity_references[] back-references per
+
+      ACT-010 bidirectional traceability. Additive metadata-only
+
+      change; BP identity and semantics unchanged, so version
+
+      remains unchanged per SIV-004 (CR-BP-34d).
+
+      '
+links:
+- rel: change-request
+  href: change-requests/cr-bp-13a-customer-and-demand-admission.md
+- rel: process-context
+  href: contexts/v1-alpha/dea-pc-pr-c.yaml
+context:
+- ref: processes:pc-pr-conceive-6xztsq

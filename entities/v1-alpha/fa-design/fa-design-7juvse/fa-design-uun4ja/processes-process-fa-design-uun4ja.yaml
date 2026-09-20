@@ -1,0 +1,80 @@
+id: processes:process-fa-design-uun4ja
+name: Design Financial Controls and Policies
+type: Process
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+process_intent: develop
+process_type: management
+context:
+- ref: processes:pc-fa-design-4j8evh
+description: 'Design Financial Controls and Policies (design stage, management process). Landed by CR-BP-21e.1
+
+  from the FinanceAndAccounting register v2.
+
+  '
+trigger: A control or policy gap is identified.
+outcome: Financial controls and policies are designed to the approved financial architecture, with the policy framework ready for control implementation.
+triggers:
+- A control or policy gap is identified.
+outcomes:
+- Financial controls and policies are designed to the approved financial architecture, with the policy framework ready for control implementation.
+identity:
+  verb: Design
+  object: Financial Controls and Policies
+  outcome_statement: Financial controls and policies are designed to the approved financial architecture, with the policy framework ready for control implementation.
+  evidence_links:
+  - type: documentation
+    ref: change-requests/CR-BP-21e.1.md
+relationships:
+- source_id: processes:process-fa-design-uun4ja
+  relationship_type: serves
+  target_id: ecf:financeAccounting.design
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: FinanceAndAccounting
+    stage: Design
+    identifier: ecf:financeAccounting.design
+  target_id: ecf:financeAccounting.design
+metadata:
+  established_by: CR-BP-21e.1
+  established_at: '2026-09-08'
+  activity_references:
+  - processes:activity-fa-design-xycsv4
+  - processes:activity-fa-design-2qrkhv
+  - processes:activity-fa-design-ppadqj
+  - processes:activity-fa-design-k8ucbk
+change_history:
+- version: 1.0.0
+  date: '2026-09-08'
+  cr: CR-BP-21e.1
+  change: 'Initial landing under CR-BP-21e.1 (FinanceAndAccounting completion).
+
+    '
+- date: '2026-09-13'
+  cr: CR-BP-52
+  change: 'L3 decomposition of this Business Process: 4 Activities
+
+    landed under the structured deposition pattern (research
+
+    deposition at research/l3-candidate-universe.yaml, then
+
+    canonical Activity records) as part of the CR-BP-52
+
+    FinanceAndAccounting Conceive + Design + Build tranche.
+
+    Adds metadata.activity_references[] back-references per
+
+    ACT-010 bidirectional traceability. Additive metadata-only
+
+    change; BP identity and semantics unchanged, so version
+
+    remains unchanged per SIV-004 (CR-BP-34d).
+
+    '

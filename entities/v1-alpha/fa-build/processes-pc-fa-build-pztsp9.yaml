@@ -1,0 +1,76 @@
+id: processes:pc-fa-build-pztsp9
+domain: FinanceAndAccounting
+lifecycle_stage: Build
+name: Finance Capability and System Build
+definition: 'The bounded enterprise context for **building** the finance function, finance systems, and funding facilities of the enterprise in the **Finance & Accounting** domain. This context addresses the constructive work of standing up the finance function, deploying ERP finance modules, and securing funding facilities. v2.4.0: scoped to monetary consequence (domain-grounding.md §3.7).
+
+  '
+scope:
+  includes:
+  - Finance function stand-up
+  - ERP finance module deployment
+  - Funding facility establishment
+  excludes:
+  - Financial planning design (Design stage; adjacent context)
+  - Building non-finance capabilities (owning domains; adjacent domains)
+  - Technology platform build (enablement-operations x build; adjacent domain)
+outcomes:
+- Finance function is stood up and staffed.
+- ERP finance module is deployed and configured.
+- Funding facilities are secured.
+adjacent_contexts:
+- processes:pc-fa-conceive-phabh2
+- processes:pc-fa-design-4j8evh
+- processes:pc-fa-operate-afew7e
+- processes:pc-fa-improve-haqf4w
+processes:
+- processes:process-fa-build-ydnzjc
+- processes:process-fa-build-d5kb5m
+- processes:process-fa-build-92v24c
+- processes:process-fa-build-ucfjgt
+cell_charter:
+  enterprise_concern: 'Finance & Accounting: the construction of the enterprise''s finance capability and systems.'
+  lifecycle_concern: 'Build: standing up the finance function, deploying finance systems, and securing funding facilities.'
+  combined_semantic_meaning: 'The constructive work of standing up the finance function, deploying ERP finance modules, and securing funding facilities.
+
+    '
+  expected_outcomes:
+  - Finance function is stood up and staffed.
+  - ERP finance module is deployed and configured.
+  - Funding facilities are secured.
+  inclusions:
+  - Finance function stand-up
+  - ERP finance module deployment
+  - Funding facility establishment
+  exclusions:
+  - Financial planning design (Design stage; adjacent context)
+  - Building non-finance capabilities (owning domains; adjacent domains)
+  - Technology platform build (enablement-operations x build; adjacent domain)
+  adjacent_boundaries:
+  - 'processes:pc-fa-conceive-phabh2 (adjacent context): monetary flow between Build and the adjacent cell.'
+  - 'processes:pc-fa-design-4j8evh (adjacent context): monetary flow between Build and the adjacent cell.'
+  - 'processes:pc-fa-operate-afew7e (adjacent context): monetary flow between Build and the adjacent cell.'
+  - 'processes:pc-fa-improve-haqf4w (adjacent context): monetary flow between Build and the adjacent cell.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-21e
+established_at: '2026-09-08'
+change_history:
+- cr: CR-BP-21e
+  date: '2026-09-08'
+  change: 'Initial Process Context record; promoted from the CR-BP-19
+
+    register v2 (ratified against ECF v2.4.0) as part of the
+
+    FinanceAndAccounting landing tranche. Substrate-neutral
+
+    per ADR-ECF-002 §5 / CR-ECF-007.
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21e-finance-accounting-landing.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

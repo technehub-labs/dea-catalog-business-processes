@@ -1,0 +1,82 @@
+id: processes:process-ge-operate-zwaes5
+name: Conduct Assurance Review
+type: Process
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+process_intent: operate
+process_type: standardization
+context:
+- ref: processes:pc-ge-operate-hb2dac
+description: 'Conduct Assurance Review (operate stage, standardization process). Landed by CR-BP-21f.1
+
+  from the GovernanceAndExistence register v2.
+
+  '
+trigger: An assurance cycle or audit mandate arrives.
+outcome: Assurance reviews are conducted with evidence measured against standards, findings reported, and audit quality maintained.
+triggers:
+- An assurance cycle or audit mandate arrives.
+outcomes:
+- Assurance reviews are conducted with evidence measured against standards, findings reported, and audit quality maintained.
+identity:
+  verb: Conduct
+  object: Assurance Review
+  outcome_statement: Assurance reviews are conducted with evidence measured against standards, findings reported, and audit quality maintained.
+  evidence_links:
+  - type: documentation
+    ref: change-requests/CR-BP-21f.1.md
+relationships:
+- source_id: processes:process-ge-operate-zwaes5
+  relationship_type: serves
+  target_id: ecf:governanceExistence.operate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: GovernanceAndExistence
+    stage: Operate
+    identifier: ecf:governanceExistence.operate
+  target_id: ecf:governanceExistence.operate
+metadata:
+  established_by: CR-BP-21f.1
+  established_at: '2026-09-08'
+  activity_references:
+  - processes:activity-ge-operate-x79d9p
+  - processes:activity-ge-operate-gjnh3s
+  - processes:activity-ge-operate-q4qn2x
+  - processes:activity-ge-operate-yczj9n
+change_history:
+- version: 1.0.0
+  date: '2026-09-08'
+  cr: CR-BP-21f.1
+  change: 'Initial landing under CR-BP-21f.1 (GovernanceAndExistence completion).
+
+    '
+- date: '2026-09-13'
+  cr: CR-BP-49
+  change: 'L3 decomposition of this Business Process: 4 Activities
+
+    landed under the structured deposition pattern (research
+
+    deposition at research/l3-candidate-universe.yaml, then
+
+    canonical Activity records) as part of the CR-BP-49
+
+    GovernanceAndExistence Improve + Operate tranche (completes
+
+    the GE domain''s L3 coverage). Adds metadata.activity_references[]
+
+    back-references per ACT-010 bidirectional traceability.
+
+    Additive metadata-only change; BP identity and semantics
+
+    unchanged, so version remains unchanged per SIV-004
+
+    (CR-BP-34d).
+
+    '

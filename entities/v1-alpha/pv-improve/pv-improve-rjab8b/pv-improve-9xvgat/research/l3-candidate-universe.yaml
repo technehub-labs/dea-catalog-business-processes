@@ -1,0 +1,104 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-51
+status: candidate-not-canonical; subject to review
+parent_business_process: processes:process-pv-improve-9xvgat
+coordinate:
+  domain: ProductAndValue
+  stage: Improve
+  process_context: processes:pc-pv-improve-wpyfx7
+  process_group: processes:group-pv-improve-rjab8b
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42,
+  scaled by CR-BP-43 through CR-BP-50)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/processes:process-pv-improve-9xvgat
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: processes:activity-pv-improve-439c76
+  name: "Assess Investment Justification"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Per-proposition justification assessment; envelope consumption analysis; underjustification flagging"
+  out_of_scope:
+  - "Portfolio direction framing (processes:process-pv-conceive-jb4xtg)"
+  - "Portfolio performance management (processes:process-pv-operate-en8rdz)"
+  evidence:
+  - "Parent BP trigger (portfolio accumulates propositions that no longer justify envelopes)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-51
+- id: processes:activity-pv-improve-vaxgzn
+  name: "Form Retire-or-Pivot Options"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Retire path design; pivot path design; option impact assessment"
+  out_of_scope:
+  - "Justification assessment (processes:activity-pv-improve-439c76)"
+  - "Proposition lifecycle management (processes:process-pv-operate-cau4gv)"
+  evidence:
+  - "Parent BP outcome (retire-or-pivot options formed)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-51
+- id: processes:activity-pv-improve-qvw5ea
+  name: "Commit Rationalization Decisions"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Decision selection; transition planning per decision; decision record upkeep"
+  out_of_scope:
+  - "Option formation (processes:activity-pv-improve-vaxgzn)"
+  - "Lifecycle transition execution (processes:process-pv-operate-cau4gv)"
+  evidence:
+  - "Parent BP outcome (portfolio rationalized with retire-or-pivot decisions)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-51
+- id: processes:activity-pv-improve-k3hy7t
+  name: "Measure Rationalization Outcomes"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Post-decision portfolio measurement; envelope release confirmation; learning capture"
+  out_of_scope:
+  - "Decision commitment (processes:activity-pv-improve-qvw5ea)"
+  - "Portfolio performance management (processes:process-pv-operate-en8rdz)"
+  evidence:
+  - "Parent BP outcome (portfolio rationalized and measured)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-51
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."

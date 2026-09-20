@@ -1,5 +1,13 @@
 # CR-BP-78 - G&E Retire Admission Tranche (Regulator-Mandated Governance Unwind)
 
+> **Layout note (CR-BP-mv1, 2026-09-20):** This CR was authored against the
+> pre-migration entity layout (`entities/v1-alpha/dea:*`, `contexts/v1-alpha/`)
+> and the legacy `dea:*` id family, and may reference the pre-rename repo name
+> `dea-catalog-processes`. Paths, ids, and repo names cited below are historical;
+> see `reconciliation/migration-id-map.yaml` for the old-to-new id mapping and
+> the dea-metaframework `docs/entity-storage-layout.md` for the current
+> containment tree.
+
 **Status**: Proposed
 **Layer**: L2
 **Owner**: Coder (for eaojnr)

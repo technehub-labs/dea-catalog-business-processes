@@ -1,0 +1,87 @@
+id: processes:process-ao-build-b38bkg
+name: Build Contractor and Partner-Agent Pool
+type: Process
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+process_intent: develop
+process_type: core
+process_specialization: []
+description: 'Operate the Build Contractor and Partner-Agent Pool L2 process within the dea:pc-ao-build Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces. '
+trigger: 'A contractor and partner-agent pool build is needed because direct acquisition cannot serve surge or specialist demand within the required timeframes. '
+outcome: 'The contractor and partner-agent pool is built with vetted sources and activation paths. '
+identity:
+  verb: Build
+  object: Contractor and Partner-Agent Pool
+  scope: (all enterprise segments)
+  outcome_statement: 'The contractor and partner-agent pool is built with vetted sources and activation paths, ready to serve surge demand. '
+  evidence_links:
+  - type: standard
+    ref: https://www.apqc.org/resource-overview/resource-library/apqc-process-classification-framework-pcf
+relationships:
+- source_id: processes:process-ao-build-b38bkg
+  relationship_type: serves
+  target_id: ecf:agencyOrganization.build
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: AgencyAndOrganization
+    stage: Build
+    identifier: ecf:agencyOrganization.build
+metadata:
+  established_by: CR-BP-21b.1
+  established_at: '2026-09-08'
+  activity_references:
+  - processes:activity-ao-build-yjbucg
+  - processes:activity-ao-build-9bwc8j
+  - processes:activity-ao-build-jgtegj
+  - processes:activity-ao-build-cxafrf
+  change_history:
+  - cr: CR-BP-21b.1
+    date: '2026-09-08'
+    change: 'Initial L2 Process entry; lands as part of the CR-BP-21b.1
+
+      AgencyAndOrganization completion tranche under ECF v2.4.0
+
+      register v2 (CR-BP-19). Substrate-neutral per ADR-ECF-002
+
+      section 5 / CR-ECF-007: applies to biological, artificial,
+
+      and hybrid agents without reclassification. Closes the
+
+      remaining register v2 L2 candidates for this cell.
+
+      '
+  - cr: CR-BP-56
+    date: '2026-09-14'
+    change: 'L3 decomposition of this Business Process: 4 Activities
+
+      landed under the structured deposition pattern (research
+
+      deposition at research/l3-candidate-universe.yaml, then
+
+      canonical Activity records) as part of the CR-BP-56
+
+      AgencyAndOrganization Conceive + Design + Build tranche.
+
+      Adds metadata.activity_references[] back-references per
+
+      ACT-010 bidirectional traceability. Additive metadata-only
+
+      change; BP identity and semantics unchanged, so version
+
+      remains unchanged per SIV-004 (CR-BP-34d).
+
+      '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21b.1-agency-organization-completion.md
+- rel: process-context
+  href: contexts/v1-alpha/pc-ao-build.yaml
+context:
+- ref: processes:pc-ao-build-pjk4rz

@@ -1,0 +1,75 @@
+id: processes:activity-eo-activate-w8tgv6
+type: Activity
+name: Acquire Regulator-Issued Operations Authorization
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Activate Operations Capability that acquires and records the regulator-issued authorization or certification required for live operations (EASA / FAA AOC; FAA Part 119; PSD2 / ECB / PRA authorization under PSD2 Articles 11 and 28; EMA / FDA / MHRA GMP certification; MiCA Article 59 authorization; ORR / ERA safety case; nuclear operations authorization).
+belongs_to_business_process: processes:process-eo-activate-sy5qsa
+cohesion_rationale: Constituent work shares a single regulator-authorization-acquisition concern, one input class (the operations-capability description and the regulator-mandated filing format), and one output (the regulator-issued authorization preserved on the regulated operations record). Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: EnablementAndOperations
+    stage: Activate
+    identifier: ecf:enablementAndOperations.activate
+metadata:
+  established_by: CR-BP-87
+  established_at: '2026-09-17'
+  change_history:
+  - cr: CR-BP-87
+    date: '2026-09-17'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-87
+
+      L3 decomposition tranche for the four ADMIT-CANONICAL
+
+      Activate Business Processes (CR-BP-81 / CR-BP-82 / CR-BP-83 /
+
+      CR-BP-86). Classified per CR-BP-32 section 5 (fails standalone
+
+      executability and resource dedication); decomposition boundary
+
+      marker per CR-BP-32 section 12 pending Task records (dea:Task
+
+      lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-acquire-regulator-issued-operations-authorization-intake, dea:task-acquire-regulator-issued-operations-authorization-verify, dea:task-acquire-regulator-issued-operations-authorization-transform, dea:task-acquire-regulator-issued-operations-authorization-confirm, dea:task-acquire-regulator-issued-operations-authorization-record).'
+composes:
+- source_id: processes:activity-eo-activate-w8tgv6
+  target_id: processes:task-eo-activate-intake-u3z2mv
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-activate-w8tgv6
+  target_id: processes:task-eo-activate-verify-5f2mhx
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-activate-w8tgv6
+  target_id: processes:task-eo-activate-transform-jthh9z
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-activate-w8tgv6
+  target_id: processes:task-eo-activate-confirm-kb792y
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-activate-w8tgv6
+  target_id: processes:task-eo-activate-record-xtvzq8
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

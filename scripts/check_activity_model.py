@@ -156,10 +156,10 @@ import yaml
 # ID families (CR-BP-04 §4 + CR-BP-32 §14).
 # Activity ids use the `dea:activity-*` family (mirrors the
 # `dea:process-*` / `dea:group-*` / `dea:pc-*` / `dea:scope-*` families).
-BP_ID_PATTERN = re.compile(r"^dea:process-[a-z0-9-]+$")
-ACTIVITY_ID_PATTERN = re.compile(r"^dea:activity-[a-z0-9-]+$")
+BP_ID_PATTERN = re.compile(r"^processes:process-[a-z0-9-]+$")
+ACTIVITY_ID_PATTERN = re.compile(r"^processes:activity-[a-z0-9-]+$")
 FUNCTION_ID_PATTERN = re.compile(r"^dea:function-[a-z0-9-]+$")
-TASK_ID_PATTERN = re.compile(r"^dea:task-[a-z0-9-]+$")
+TASK_ID_PATTERN = re.compile(r"^processes:task-[a-z0-9-]+$")
 
 # CR-BP-32 §7 forbids these relationship_type values for composition.
 # The canonical name is `dea:composes` (same as PG-005 / BP-ARC conventions).
@@ -220,11 +220,11 @@ ACTIVITY_TYPE = "Activity"
 def _load_records(catalog_root: Path) -> list[tuple[Path, dict]]:
     """Load every Activity record (with path).
 
-    Walks `entities/v1-alpha/dea:activity-*/<id>.yaml`. Skips dirs
-    without the expected YAML file. Also picks up any record whose
-    `type: Activity` discriminator is set even if its id does not
-    match the family (defensive — the regenerator may admit Activity
-    records before the id family is enforced).
+    CR-BP-mv1: walks the containment tree for `processes-activity-*.yaml`
+    record files. Also picks up any record whose `type: Activity`
+    discriminator is set even if its filename does not match the family
+    (defensive: the regenerator may admit Activity records before the id
+    family is enforced).
 
     Returns (path, record) pairs.
     """
@@ -232,33 +232,15 @@ def _load_records(catalog_root: Path) -> list[tuple[Path, dict]]:
     pairs: list[tuple[Path, dict]] = []
     if not base.exists():
         return pairs
-    for entry in sorted(base.iterdir()):
-        if not entry.is_dir():
+    for yf in sorted(base.rglob("processes-activity-*.yaml")):
+        try:
+            data = yaml.safe_load(yf.read_text())
+        except yaml.YAMLError as exc:
+            print(f"WARN: {yf}: YAML parse error: {exc}",
+                  file=sys.stderr)
             continue
-        # Conventional Activity dir (id family)
-        yaml_path = entry / f"{entry.name}.yaml"
-        if yaml_path.exists():
-            try:
-                data = yaml.safe_load(yaml_path.read_text())
-            except yaml.YAMLError as exc:
-                print(f"WARN: {yaml_path}: YAML parse error: {exc}",
-                      file=sys.stderr)
-                continue
-            if isinstance(data, dict):
-                pairs.append((yaml_path, data))
-                continue
-        # Defensive: any record file under v1-alpha that declares
-        # type: Activity. Useful for contributors testing the
-        # schema before the id-family is enforced.
-        for yf in sorted(entry.glob("*.yaml")):
-            try:
-                data = yaml.safe_load(yf.read_text())
-            except yaml.YAMLError as exc:
-                print(f"WARN: {yf}: YAML parse error: {exc}",
-                      file=sys.stderr)
-                continue
-            if isinstance(data, dict) and data.get("type") == ACTIVITY_TYPE:
-                pairs.append((yf, data))
+        if isinstance(data, dict):
+            pairs.append((yf, data))
     return pairs
 
 
@@ -330,7 +312,7 @@ def _check_act_001(record: dict) -> str | None:
     if not BP_ID_PATTERN.match(bp):
         return (
             f"belongs_to_business_process={bp!r} does not match the "
-            f"`dea:process-*` id family (CR-BP-04 §4 BP id pattern)"
+            f"`processes:process-*` id family (CR-BP-04 §4 BP id pattern)"
         )
     return None
 
@@ -709,12 +691,7 @@ def _build_parent_index(catalog_root: Path) -> dict[str, Path]:
     index: dict[str, Path] = {}
     if not base.exists():
         return index
-    for entry in sorted(base.iterdir()):
-        if not entry.is_dir() or not entry.name.startswith("dea:process-"):
-            continue
-        yaml_path = entry / f"{entry.name}.yaml"
-        if not yaml_path.exists():
-            continue
+    for yaml_path in sorted(base.rglob("processes-process-*.yaml")):
         try:
             data = yaml.safe_load(yaml_path.read_text())
         except yaml.YAMLError:
@@ -882,9 +859,9 @@ def main(argv: list[str] | None = None) -> int:
 # -----------------------------------------------------------------------------
 
 
-def _record(id_: str = "dea:activity-self-test",
+def _record(id_: str = "processes:activity-self-test",
             name: str = "Self Test Activity",
-            belongs_to: str = "dea:process-manage-customer-relationship",
+            belongs_to: str = "processes:process-manage-customer-relationship",
             cohesion: str = (
                 "This activity groups the cohesive logical work of "
                 "validating customer eligibility prior to fulfilment. "
@@ -971,13 +948,13 @@ def _self_test() -> int:
 
     # --- ACT-004: composes present but no Task target
     f = evaluate([(Path("/x"), _record(composes=[
-        {"target_id": "dea:group-foo",
+        {"target_id": "processes:group-foo",
          "relationship_type": CANONICAL_COMPOSITION_TYPE}]))])
     assert any(x["rule"] == "ACT-004" for x in f), f
 
     # --- ACT-004: composes with Task target passes
     assert evaluate([(Path("/x"), _record(composes=[
-        {"target_id": "dea:task-validate-eligibility",
+        {"target_id": "processes:task-validate-eligibility",
          "relationship_type": CANONICAL_COMPOSITION_TYPE}]))]) == []
 
     # --- ACT-004: boundary marker passes
@@ -987,19 +964,19 @@ def _self_test() -> int:
 
     # --- ACT-005: forbidden relationship_type
     f = evaluate([(Path("/x"), _record(composes=[
-        {"target_id": "dea:task-x",
+        {"target_id": "processes:task-x",
          "relationship_type": "decomposes"}]))])
     assert any(x["rule"] == "ACT-005" for x in f), f
 
     # --- ACT-005: non-canonical relationship_type
     f = evaluate([(Path("/x"), _record(composes=[
-        {"target_id": "dea:task-x",
+        {"target_id": "processes:task-x",
          "relationship_type": "contains"}]))])
     assert any(x["rule"] == "ACT-005" for x in f), f
 
     # --- ACT-005: canonical passes
     assert evaluate([(Path("/x"), _record(composes=[
-        {"target_id": "dea:task-x",
+        {"target_id": "processes:task-x",
          "relationship_type": CANONICAL_COMPOSITION_TYPE}]))]) == []
 
     # --- ACT-006: execution-ordering field
@@ -1041,7 +1018,7 @@ def _self_test() -> int:
     # Build a temp parent BP that does NOT reference this Activity.
     with tempfile.TemporaryDirectory() as td:
         td_path = Path(td)
-        bp_id: str = "dea:process-test-bp"
+        bp_id: str = "processes:process-test-bp"
         bp_yaml = td_path / "bp.yaml"
         bp_yaml.write_text(yaml.safe_dump({
             "id": bp_id,
@@ -1052,8 +1029,8 @@ def _self_test() -> int:
         # Parent index present but no reverse reference → ACT-010 fires
         idx = {bp_id: bp_yaml}
         r = _record(belongs_to=bp_id,
-                    id_="dea:activity-orphan")
-        f = evaluate([(td_path / "dea:activity-orphan.yaml", r)],
+                    id_="processes:activity-orphan")
+        f = evaluate([(td_path / "processes:activity-orphan.yaml", r)],
                      parent_index=idx)
         assert any(x["rule"] == "ACT-010" for x in f), f
 
@@ -1063,24 +1040,24 @@ def _self_test() -> int:
             "name": "Test BP",
             "type": "Process",
             "version": "1.0.0",
-            "metadata": {"activity_references": ["dea:activity-tracked"]},
+            "metadata": {"activity_references": ["processes:activity-tracked"]},
         }))
         r = _record(belongs_to=bp_id,
-                    id_="dea:activity-tracked")
-        f = evaluate([(td_path / "dea:activity-tracked.yaml", r)],
+                    id_="processes:activity-tracked")
+        f = evaluate([(td_path / "processes:activity-tracked.yaml", r)],
                      parent_index=idx)
         assert not any(x["rule"] == "ACT-010" for x in f), f
 
         # Parent BP absent → ACT-010 degrades to forward check only
-        r = _record(belongs_to="dea:process-nonexistent",
-                    id_="dea:activity-solo")
-        f = evaluate([(td_path / "dea:activity-solo.yaml", r)],
+        r = _record(belongs_to="processes:process-nonexistent",
+                    id_="processes:activity-solo")
+        f = evaluate([(td_path / "processes:activity-solo.yaml", r)],
                      parent_index={})
         assert not any(x["rule"] == "ACT-010" for x in f), f
 
     # --- Type filter: BP records are never inspected
     bp_record = {
-        "id": "dea:process-foo",
+        "id": "processes:process-foo",
         "name": "Foo",
         "type": "Process",
         "version": "1.0.0",

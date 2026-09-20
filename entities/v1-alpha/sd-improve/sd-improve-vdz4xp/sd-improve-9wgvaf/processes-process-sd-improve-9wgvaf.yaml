@@ -1,0 +1,85 @@
+id: processes:process-sd-improve-9wgvaf
+name: Adapt Strategic Direction
+type: Process
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+process_intent: develop
+process_type: strategic
+process_specialization: []
+description: 'Operate the Adapt Strategic Direction L2 process within the dea:pc-sd-improve Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces. '
+trigger: 'Strategic adaptation is required because environmental signals, performance monitoring, or effectiveness review indicate that the strategic direction needs to be refreshed or adapted. '
+outcome: 'Strategic direction is adapted, objectives and targets are refreshed, and strategy effectiveness is reviewed. '
+identity:
+  verb: Adapt
+  object: Strategic Direction
+  scope: (all enterprise segments)
+  outcome_statement: 'Strategic direction is adapted, objectives and targets are refreshed, and strategy effectiveness is reviewed and learned from, ready to drive the next planning cycle. '
+  evidence_links:
+  - type: standard
+    ref: https://www.apqc.org/resource-overview/resource-library/apqc-process-classification-framework-pcf
+relationships:
+- source_id: processes:process-sd-improve-9wgvaf
+  relationship_type: serves
+  target_id: ecf:strategyDirection.improve
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: StrategyAndDirection
+    stage: Improve
+    identifier: ecf:strategyDirection.improve
+metadata:
+  established_by: CR-BP-21a
+  established_at: '2026-09-07'
+  activity_references:
+  - processes:activity-sd-improve-dhkxf6
+  - processes:activity-sd-improve-qxsaqc
+  - processes:activity-sd-improve-r5jbb6
+  - processes:activity-sd-improve-m6ww6z
+  change_history:
+  - cr: CR-BP-21a
+    date: '2026-09-07'
+    change: 'Initial L2 Process entry; lands as part of the CR-BP-21a
+
+      StrategyAndDirection landing tranche under ECF v2.4.0
+
+      register v2 (CR-BP-19). One of the 5 L2 landings
+
+      targeting the 5 ratified cells of the StrategyAndDirection
+
+      domain.
+
+      '
+  - cr: CR-BP-55
+    date: '2026-09-14'
+    change: 'L3 decomposition of this Business Process: 4 Activities
+
+      landed under the structured deposition pattern (research
+
+      deposition at research/l3-candidate-universe.yaml, then
+
+      canonical Activity records) as part of the CR-BP-55
+
+      StrategyAndDirection Improve + Operate tranche.
+
+      Adds metadata.activity_references[] back-references per
+
+      ACT-010 bidirectional traceability. Additive metadata-only
+
+      change; BP identity and semantics unchanged, so version
+
+      remains unchanged per SIV-004 (CR-BP-34d).
+
+      '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21a-strategy-direction-landing.md
+- rel: process-context
+  href: contexts/v1-alpha/pc-sd-improve.yaml
+context:
+- ref: processes:pc-sd-improve-ft9k5f

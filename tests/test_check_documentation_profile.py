@@ -169,7 +169,7 @@ def test_l4_profile_treats_outcomes_as_not_applicable() -> None:
 # -----------------------------------------------------------------------------
 
 
-def _record(id_="dea:process-self-test", name="Self Test",
+def _record(id_="processes:process-self-test", name="Self Test",
             type_="Process", governing_cr="CR-BP-13a",
             lifecycle_status="candidate"):
     return {
@@ -182,7 +182,7 @@ def _record(id_="dea:process-self-test", name="Self Test",
     }
 
 
-def _readme(entity_id="dea:process-self-test", cr="CR-BP-13a",
+def _readme(entity_id="processes:process-self-test", cr="CR-BP-13a",
             include_all_sections=True):
     body = [f"# Canonical Business Process: `{entity_id}`", ""]
     body.append(f"Governed by {cr}.")
@@ -221,20 +221,20 @@ def _run(args):
 
 def test_doc_001_readme_missing(tmp_path):
     """A record with no README.md emits DOC-001."""
-    d = tmp_path / "dea:process-x"
+    d = tmp_path / "processes:process-x"
     d.mkdir()
-    (d / "dea:process-x.yaml").write_text(yaml.safe_dump(_record(id_="dea:process-x")))
-    f = evaluate([(d / "dea:process-x.yaml", _record(id_="dea:process-x"))])
+    (d / "processes:process-x.yaml").write_text(yaml.safe_dump(_record(id_="processes:process-x")))
+    f = evaluate([(d / "processes:process-x.yaml", _record(id_="processes:process-x"))])
     assert any(fnd["rule"] == "DOC-001" and fnd["advisory"] for fnd in f), f
 
 
 def test_doc_001_readme_present_no_finding(tmp_path):
     """A record with a well-formed README emits no DOC-001 finding."""
-    d = tmp_path / "dea:process-x"
+    d = tmp_path / "processes:process-x"
     d.mkdir()
-    (d / "dea:process-x.yaml").write_text(yaml.safe_dump(_record(id_="dea:process-x")))
-    (d / "README.md").write_text(_readme("dea:process-x"))
-    f = evaluate([(d / "dea:process-x.yaml", _record(id_="dea:process-x"))])
+    (d / "processes:process-x.yaml").write_text(yaml.safe_dump(_record(id_="processes:process-x")))
+    (d / "README.md").write_text(_readme("processes:process-x"))
+    f = evaluate([(d / "processes:process-x.yaml", _record(id_="processes:process-x"))])
     assert not any(fnd["rule"] == "DOC-001" for fnd in f), f
 
 
@@ -245,12 +245,12 @@ def test_doc_001_readme_present_no_finding(tmp_path):
 
 def test_doc_002_missing_section(tmp_path):
     """A record with a README missing required sections emits DOC-002."""
-    d = tmp_path / "dea:process-y"
+    d = tmp_path / "processes:process-y"
     d.mkdir()
-    (d / "dea:process-y.yaml").write_text(yaml.safe_dump(_record(id_="dea:process-y")))
+    (d / "processes:process-y.yaml").write_text(yaml.safe_dump(_record(id_="processes:process-y")))
     (d / "README.md").write_text("# Canonical Business Process: `dea:process-y`\n\n## 1. Entity Identity and Classification\n")
-    f = evaluate([(d / "dea:process-y.yaml", _record(id_="dea:process-y"))])
-    missing = [fnd for fnd in f if fnd["rule"] == "DOC-002" and fnd["record_id"] == "dea:process-y"]
+    f = evaluate([(d / "processes:process-y.yaml", _record(id_="processes:process-y"))])
+    missing = [fnd for fnd in f if fnd["rule"] == "DOC-002" and fnd["record_id"] == "processes:process-y"]
     assert missing, f
     # Should be missing at least 11 of the 12 required sections.
     assert len(missing) >= 11, f"expected many DOC-002 findings, got {len(missing)}"
@@ -258,11 +258,11 @@ def test_doc_002_missing_section(tmp_path):
 
 def test_doc_002_full_readme_passes(tmp_path):
     """A record with a fully-populated README emits no DOC-002 finding."""
-    d = tmp_path / "dea:process-z"
+    d = tmp_path / "processes:process-z"
     d.mkdir()
-    (d / "dea:process-z.yaml").write_text(yaml.safe_dump(_record(id_="dea:process-z")))
-    (d / "README.md").write_text(_readme("dea:process-z"))
-    f = evaluate([(d / "dea:process-z.yaml", _record(id_="dea:process-z"))])
+    (d / "processes:process-z.yaml").write_text(yaml.safe_dump(_record(id_="processes:process-z")))
+    (d / "README.md").write_text(_readme("processes:process-z"))
+    f = evaluate([(d / "processes:process-z.yaml", _record(id_="processes:process-z"))])
     assert not any(fnd["rule"] == "DOC-002" for fnd in f), f
 
 
@@ -273,21 +273,21 @@ def test_doc_002_full_readme_passes(tmp_path):
 
 def test_doc_003_id_mismatch(tmp_path):
     """README's H1 doesn't reference the YAML id -> DOC-003 fires."""
-    d = tmp_path / "dea:process-q"
+    d = tmp_path / "processes:process-q"
     d.mkdir()
-    (d / "dea:process-q.yaml").write_text(yaml.safe_dump(_record(id_="dea:process-q")))
-    (d / "README.md").write_text("# Canonical Business Process: `dea:process-other`\n\n" + _readme("dea:process-other")[200:])
-    f = evaluate([(d / "dea:process-q.yaml", _record(id_="dea:process-q"))])
+    (d / "processes:process-q.yaml").write_text(yaml.safe_dump(_record(id_="processes:process-q")))
+    (d / "README.md").write_text("# Canonical Business Process: `dea:process-other`\n\n" + _readme("processes:process-other")[200:])
+    f = evaluate([(d / "processes:process-q.yaml", _record(id_="processes:process-q"))])
     assert any(fnd["rule"] == "DOC-003" for fnd in f), f
 
 
 def test_doc_003_id_match(tmp_path):
     """README's H1 references the YAML id -> no DOC-003 finding."""
-    d = tmp_path / "dea:process-r"
+    d = tmp_path / "processes:process-r"
     d.mkdir()
-    (d / "dea:process-r.yaml").write_text(yaml.safe_dump(_record(id_="dea:process-r")))
-    (d / "README.md").write_text(_readme("dea:process-r"))
-    f = evaluate([(d / "dea:process-r.yaml", _record(id_="dea:process-r"))])
+    (d / "processes:process-r.yaml").write_text(yaml.safe_dump(_record(id_="processes:process-r")))
+    (d / "README.md").write_text(_readme("processes:process-r"))
+    f = evaluate([(d / "processes:process-r.yaml", _record(id_="processes:process-r"))])
     assert not any(fnd["rule"] == "DOC-003" for fnd in f), f
 
 
@@ -298,21 +298,21 @@ def test_doc_003_id_match(tmp_path):
 
 def test_doc_004_placeholder_at_validated_lifecycle(tmp_path):
     """Placeholder at validated lifecycle -> DOC-004 fires."""
-    d = tmp_path / "dea:process-s"
+    d = tmp_path / "processes:process-s"
     d.mkdir()
-    (d / "dea:process-s.yaml").write_text(yaml.safe_dump(_record(id_="dea:process-s", lifecycle_status="active")))
-    (d / "README.md").write_text(_readme("dea:process-s").replace("## 1.", "## 1. {{section_name}}\n\n## 1.", 1))
-    f = evaluate([(d / "dea:process-s.yaml", _record(id_="dea:process-s", lifecycle_status="active"))])
+    (d / "processes:process-s.yaml").write_text(yaml.safe_dump(_record(id_="processes:process-s", lifecycle_status="active")))
+    (d / "README.md").write_text(_readme("processes:process-s").replace("## 1.", "## 1. {{section_name}}\n\n## 1.", 1))
+    f = evaluate([(d / "processes:process-s.yaml", _record(id_="processes:process-s", lifecycle_status="active"))])
     assert any(fnd["rule"] == "DOC-004" for fnd in f), f
 
 
 def test_doc_004_placeholder_at_candidate_allowed(tmp_path):
     """Placeholder at candidate lifecycle does NOT fire DOC-004 (EXT-04 promotes)."""
-    d = tmp_path / "dea:process-t"
+    d = tmp_path / "processes:process-t"
     d.mkdir()
-    (d / "dea:process-t.yaml").write_text(yaml.safe_dump(_record(id_="dea:process-t", lifecycle_status="candidate")))
-    (d / "README.md").write_text(_readme("dea:process-t").replace("## 1.", "## 1. {{section_name}}\n\n## 1.", 1))
-    f = evaluate([(d / "dea:process-t.yaml", _record(id_="dea:process-t", lifecycle_status="candidate"))])
+    (d / "processes:process-t.yaml").write_text(yaml.safe_dump(_record(id_="processes:process-t", lifecycle_status="candidate")))
+    (d / "README.md").write_text(_readme("processes:process-t").replace("## 1.", "## 1. {{section_name}}\n\n## 1.", 1))
+    f = evaluate([(d / "processes:process-t.yaml", _record(id_="processes:process-t", lifecycle_status="candidate"))])
     assert not any(fnd["rule"] == "DOC-004" for fnd in f), f
 
 
@@ -323,22 +323,22 @@ def test_doc_004_placeholder_at_candidate_allowed(tmp_path):
 
 def test_doc_005_cr_referenced(tmp_path):
     """README references the governing CR -> no DOC-005 finding."""
-    d = tmp_path / "dea:process-u"
+    d = tmp_path / "processes:process-u"
     d.mkdir()
-    (d / "dea:process-u.yaml").write_text(yaml.safe_dump(_record(id_="dea:process-u")))
-    (d / "README.md").write_text(_readme("dea:process-u", cr="CR-BP-13a"))
-    f = evaluate([(d / "dea:process-u.yaml", _record(id_="dea:process-u"))])
+    (d / "processes:process-u.yaml").write_text(yaml.safe_dump(_record(id_="processes:process-u")))
+    (d / "README.md").write_text(_readme("processes:process-u", cr="CR-BP-13a"))
+    f = evaluate([(d / "processes:process-u.yaml", _record(id_="processes:process-u"))])
     assert not any(fnd["rule"] == "DOC-005" for fnd in f), f
 
 
 def test_doc_005_cr_not_referenced(tmp_path):
     """README does NOT reference the governing CR -> DOC-005 fires."""
-    d = tmp_path / "dea:process-v"
+    d = tmp_path / "processes:process-v"
     d.mkdir()
-    (d / "dea:process-v.yaml").write_text(yaml.safe_dump(_record(id_="dea:process-v")))
-    readme_text = _readme("dea:process-v", cr="CR-BP-13a").replace("Governed by CR-BP-13a.", "")
+    (d / "processes:process-v.yaml").write_text(yaml.safe_dump(_record(id_="processes:process-v")))
+    readme_text = _readme("processes:process-v", cr="CR-BP-13a").replace("Governed by CR-BP-13a.", "")
     (d / "README.md").write_text(readme_text)
-    f = evaluate([(d / "dea:process-v.yaml", _record(id_="dea:process-v"))])
+    f = evaluate([(d / "processes:process-v.yaml", _record(id_="processes:process-v"))])
     assert any(fnd["rule"] == "DOC-005" for fnd in f), f
 
 

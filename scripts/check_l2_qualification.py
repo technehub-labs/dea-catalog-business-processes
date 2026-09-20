@@ -91,26 +91,20 @@ from typing import Iterable
 
 import yaml
 
-ID_PATTERN = re.compile(r"^dea:process-[a-z0-9-]+$")
+ID_PATTERN = re.compile(r"^processes:process-[a-z0-9-]+$")
 
 
 def _load_bp_records(catalog_root: Path) -> list[dict]:
     """Load every canonical Business Process record.
 
-    Walks `entities/v1-alpha/dea:process-*/<id>.yaml`. Returns the
-    parsed YAML for each. Skips directories that lack the expected
-    YAML file (e.g. `candidates/`, `retired/`, `research/`).
+    CR-BP-mv1: walks the containment tree for `processes-process-*.yaml`.
+    Returns the parsed YAML for each. Skips files that fail to parse.
     """
     base = catalog_root / "entities" / "v1-alpha"
     records: list[dict] = []
     if not base.exists():
         return records
-    for entry in sorted(base.iterdir()):
-        if not entry.is_dir() or not entry.name.startswith("dea:process-"):
-            continue
-        yaml_path = entry / f"{entry.name}.yaml"
-        if not yaml_path.exists():
-            continue
+    for yaml_path in sorted(base.rglob("processes-process-*.yaml")):
         try:
             data = yaml.safe_load(yaml_path.read_text())
         except yaml.YAMLError as exc:
@@ -428,7 +422,7 @@ def _self_test() -> int:
 
     def _record(**overrides):
         base = {
-            "id": "dea:process-self-test",
+            "id": "processes:process-self-test",
             "name": "Self Test",
             "type": "Process",
             "version": "1.0.0",

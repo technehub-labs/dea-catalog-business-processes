@@ -8,11 +8,11 @@ intentionally never inspected per CR-BP-32 §17).
 
 The tests cover:
 
-* ACT-001  parent-BP reference present + matches `dea:process-*`
+* ACT-001  parent-BP reference present + matches `processes-process-*`
 * ACT-002  Activity is not promoted to BusinessProcess via auxiliary
            fields (`kind`, `process_kind`, `promoted_to`)
 * ACT-003  cohesion rationale present + ≥ 20 chars
-* ACT-004  Activity has `composes[]` with a `dea:task-*` target OR
+* ACT-004  Activity has `composes[]` with a `processes-task-*` target OR
            `decomposition_boundary: l4-reached`
 * ACT-005  composition entries use `dea:composes` (forbidden
            alternatives: `parent_activity`, `child_activities`,
@@ -82,9 +82,9 @@ def _run(args: list[str]) -> subprocess.CompletedProcess:
     )
 
 
-def _record(id_="dea:activity-self-test",
+def _record(id_="processes:activity-self-test",
             name="Self Test Activity",
-            belongs_to="dea:process-manage-customer-relationship",
+            belongs_to="processes:process-manage-customer-relationship",
             cohesion=("This activity groups the cohesive logical work of "
                       "validating customer eligibility prior to fulfilment. "
                       "The grouping is justified by the single outcome: a "
@@ -142,20 +142,20 @@ def test_cli_live_run_returns_conformant():
 def test_cli_strict_mode_treats_findings_as_failure(tmp_path, monkeypatch):
     """--strict exits 1 only when findings exist."""
     # Construct an Activity fixture that violates ACT-003.
-    activity_dir = tmp_path / "dea:activity-bad"
+    activity_dir = tmp_path / "processes:activity-bad"
     activity_dir.mkdir()
-    activity_yaml = activity_dir / "dea:activity-bad.yaml"
+    activity_yaml = activity_dir / "processes:activity-bad.yaml"
     activity_yaml.write_text(yaml.safe_dump(_record(
-        id_="dea:activity-bad",
+        id_="processes:activity-bad",
         cohesion="",  # ACT-003 violation
         boundary=None,
     )))
-    # Mirror the v1-alpha/ structure expected by _load_records
+    # Mirror the containment-tree structure expected by _load_records
     v1 = tmp_path / "entities" / "v1-alpha"
     v1.mkdir(parents=True)
-    target = v1 / "dea:activity-bad"
+    target = v1 / "activity-bad"
     target.mkdir()
-    (target / "dea:activity-bad.yaml").write_text(
+    (target / "processes-activity-bad.yaml").write_text(
         activity_yaml.read_text()
     )
     # Run with --strict against the temp catalog; expect non-zero exit
@@ -206,7 +206,7 @@ def test_act_001_missing_belongs_to():
 def test_act_001_bad_pattern():
     r = _record(belongs_to="dea:function-foo")
     diag = _check_act_001(r)
-    assert diag is not None and "dea:process-*" in diag
+    assert diag is not None and "processes:process-*" in diag
 
 
 def test_act_001_pass():
@@ -244,7 +244,7 @@ def test_act_004_no_composes_no_boundary():
 
 def test_act_004_composes_without_task_target():
     r = _record(composes=[{
-        "target_id": "dea:group-foo",
+        "target_id": "processes:group-foo",
         "relationship_type": CANONICAL_COMPOSITION_TYPE,
     }])
     assert _check_act_004(r) is not None
@@ -252,7 +252,7 @@ def test_act_004_composes_without_task_target():
 
 def test_act_004_composes_with_task_target():
     r = _record(composes=[{
-        "target_id": "dea:task-validate-eligibility",
+        "target_id": "processes:task-validate-eligibility",
         "relationship_type": CANONICAL_COMPOSITION_TYPE,
     }])
     assert _check_act_004(r) is None
@@ -267,7 +267,7 @@ def test_act_004_boundary_marker_passes():
 def test_act_005_forbidden_relationship_type():
     for bad in FORBIDDEN_COMPOSITION_TYPES:
         r = _record(composes=[{
-            "target_id": "dea:task-x",
+            "target_id": "processes:task-x",
             "relationship_type": bad,
         }])
         assert _check_act_005(r) is not None, bad
@@ -275,7 +275,7 @@ def test_act_005_forbidden_relationship_type():
 
 def test_act_005_non_canonical_relationship_type():
     r = _record(composes=[{
-        "target_id": "dea:task-x",
+        "target_id": "processes:task-x",
         "relationship_type": "contains",
     }])
     assert _check_act_005(r) is not None
@@ -283,7 +283,7 @@ def test_act_005_non_canonical_relationship_type():
 
 def test_act_005_canonical_passes():
     r = _record(composes=[{
-        "target_id": "dea:task-x",
+        "target_id": "processes:task-x",
         "relationship_type": CANONICAL_COMPOSITION_TYPE,
     }])
     assert _check_act_005(r) is None
@@ -337,7 +337,7 @@ def test_act_010_reverse_traceability_missing():
     """Parent BP on disk but does not reference the Activity."""
     with tempfile.TemporaryDirectory() as td:
         td_path = Path(td)
-        bp_id = "dea:process-test-bp"
+        bp_id = "processes:process-test-bp"
         bp_yaml = td_path / "bp.yaml"
         bp_yaml.write_text(yaml.safe_dump({
             "id": bp_id,
@@ -348,8 +348,8 @@ def test_act_010_reverse_traceability_missing():
         idx = _build_parent_index_for(td_path)
         # idx may or may not find the BP depending on layout;
         # the test below uses direct injection via evaluate().
-        r = _record(belongs_to=bp_id, id_="dea:activity-orphan")
-        f = evaluate([(td_path / "dea:activity-orphan.yaml", r)],
+        r = _record(belongs_to=bp_id, id_="processes:activity-orphan")
+        f = evaluate([(td_path / "processes:activity-orphan.yaml", r)],
                      parent_index={bp_id: bp_yaml})
         assert any(x["rule"] == "ACT-010" for x in f)
 
@@ -358,17 +358,17 @@ def test_act_010_reverse_traceability_present():
     """Parent BP declares the Activity in metadata.activity_references[]."""
     with tempfile.TemporaryDirectory() as td:
         td_path = Path(td)
-        bp_id = "dea:process-test-bp"
+        bp_id = "processes:process-test-bp"
         bp_yaml = td_path / "bp.yaml"
         bp_yaml.write_text(yaml.safe_dump({
             "id": bp_id,
             "name": "Test BP",
             "type": "Process",
             "version": "1.0.0",
-            "metadata": {"activity_references": ["dea:activity-tracked"]},
+            "metadata": {"activity_references": ["processes:activity-tracked"]},
         }))
-        r = _record(belongs_to=bp_id, id_="dea:activity-tracked")
-        f = evaluate([(td_path / "dea:activity-tracked.yaml", r)],
+        r = _record(belongs_to=bp_id, id_="processes:activity-tracked")
+        f = evaluate([(td_path / "processes:activity-tracked.yaml", r)],
                      parent_index={bp_id: bp_yaml})
         assert not any(x["rule"] == "ACT-010" for x in f)
 
@@ -377,9 +377,9 @@ def test_act_010_parent_bp_absent_degrades_to_forward():
     """Parent BP not on disk → ACT-010 forward-only check."""
     with tempfile.TemporaryDirectory() as td:
         td_path = Path(td)
-        r = _record(belongs_to="dea:process-nonexistent",
-                    id_="dea:activity-solo")
-        f = evaluate([(td_path / "dea:activity-solo.yaml", r)],
+        r = _record(belongs_to="processes:process-nonexistent",
+                    id_="processes:activity-solo")
+        f = evaluate([(td_path / "processes:activity-solo.yaml", r)],
                      parent_index={})
         assert not any(x["rule"] == "ACT-010" for x in f)
 
@@ -392,7 +392,7 @@ def test_act_010_parent_bp_absent_degrades_to_forward():
 def test_bp_records_are_never_inspected():
     """A Process record with deliberately-bad Activity fields stays clean."""
     bp = {
-        "id": "dea:process-foo",
+        "id": "processes:process-foo",
         "name": "Foo",
         "type": "Process",
         "version": "1.0.0",
@@ -499,11 +499,11 @@ def test_act_014_boundary_empty_object() -> None:
 
 def test_act_015_sibling_distinction_finds_duplicate_name() -> None:
     """ACT-015: two Activities in the same parent BP with the same name -> advisory."""
-    r1 = _record(id_="dea:activity-a", name="Same Name",
-                 belongs_to="dea:process-x",
+    r1 = _record(id_="processes:activity-a", name="Same Name",
+                 belongs_to="processes:process-x",
                  extra={"definition": "The first activity record in this sibling test that demonstrates duplicate-name detection in ACT-015."})
-    r2 = _record(id_="dea:activity-b", name="Same Name",
-                 belongs_to="dea:process-x",
+    r2 = _record(id_="processes:activity-b", name="Same Name",
+                 belongs_to="processes:process-x",
                  extra={"definition": "The second activity record in this sibling test that demonstrates duplicate-name detection in ACT-015."})
     f = evaluate([(Path("/x"), r1), (Path("/y"), r2)])
     assert any(fnd["rule"] == "ACT-015" and fnd["advisory"] for fnd in f), f
@@ -511,9 +511,9 @@ def test_act_015_sibling_distinction_finds_duplicate_name() -> None:
 
 def test_act_015_sibling_distinction_passes_for_distinct_names() -> None:
     """ACT-015: distinct names in the same parent BP -> no finding."""
-    r1 = _record(id_="dea:activity-a", name="Alpha", belongs_to="dea:process-x",
+    r1 = _record(id_="processes:activity-a", name="Alpha", belongs_to="processes:process-x",
                  extra={"definition": "First activity in the distinct-name test demonstrating ACT-015 passes for sibling records."})
-    r2 = _record(id_="dea:activity-b", name="Beta", belongs_to="dea:process-x",
+    r2 = _record(id_="processes:activity-b", name="Beta", belongs_to="processes:process-x",
                  extra={"definition": "Second activity in the distinct-name test demonstrating ACT-015 passes for sibling records."})
     f = evaluate([(Path("/x"), r1), (Path("/y"), r2)])
     assert not any(fnd["rule"] == "ACT-015" for fnd in f)

@@ -2,7 +2,7 @@
 
 Locks behaviour for BP-C1..C4 by exercising both the in-process
 `evaluate()` function and the CLI self-test entry point, plus a
-live-catalog assertion that all 139 canonical Business Process
+live-catalog assertion that all 140 canonical Business Process
 records pass all four rules.
 
 CR-BP-96 extends the validator with BP-QUAL-001..012. The
@@ -44,7 +44,7 @@ def _run(args: list[str]) -> subprocess.CompletedProcess:
 def _baseline_record(**overrides):
     """Return a record that satisfies all four L2 qualification criteria."""
     base = {
-        "id": "dea:process-self-test",
+        "id": "processes:process-self-test",
         "name": "Self Test",
         "type": "Process",
         "version": "1.0.0",
@@ -93,7 +93,7 @@ def test_cli_live_catalog_conformant():
     result = _run(["--strict"])
     assert result.returncode == 0, result.stdout + result.stderr
     assert "CONFORMANT" in result.stdout
-    assert "Records checked:  139" in result.stdout
+    assert "Records checked:  140" in result.stdout
     assert "Findings:         0" in result.stdout
 
 
@@ -103,7 +103,7 @@ def test_cli_json_emits_well_formed_payload():
     import json
     payload = json.loads(result.stdout)
     assert payload["verdict"] == "CONFORMANT"
-    assert payload["candidate_count"] == 139
+    assert payload["candidate_count"] == 140
     assert payload["finding_count"] == 0
     rule_ids = {r["id"] for r in payload["rules"]}
     assert rule_ids == {"BP-C1", "BP-C2", "BP-C3", "BP-C4",
@@ -202,10 +202,10 @@ def test_evaluate_multi_rule_failure_yields_one_finding_per_rule():
 
 def test_evaluate_aggregates_across_records():
     rec_a = _baseline_record()  # passes all four
-    rec_b = _baseline_record(id="dea:process-self-test-b", trigger="")
+    rec_b = _baseline_record(id="processes:process-self-test-b", trigger="")
     findings = evaluate([rec_a, rec_b])
     assert len(findings) == 1
-    assert findings[0]["record_id"] == "dea:process-self-test-b"
+    assert findings[0]["record_id"] == "processes:process-self-test-b"
     assert findings[0]["rule"] == "BP-C1"
 
 

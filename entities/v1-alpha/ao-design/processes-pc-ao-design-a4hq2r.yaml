@@ -1,0 +1,89 @@
+id: processes:pc-ao-design-a4hq2r
+domain: AgencyAndOrganization
+lifecycle_stage: Design
+name: Organization and Agent Topology Design
+definition: 'The bounded enterprise context for **designing** the organization structure, role catalogue, competency framework, and agent topology of the enterprise in the **Agency & Organization** domain. This context addresses the analytical work of producing designs for organizational architecture, agent topology, role definitions, and authority chains. v2.4.0: substrate-neutral — applies to biological, artificial, and hybrid agents without reclassification.
+
+  '
+scope:
+  includes:
+  - Organization structure design
+  - Role catalogue design
+  - Competency framework design
+  - Agent topology design
+  excludes:
+  - Agent capacity strategy framing (Conceive stage; adjacent context)
+  - Agent acquisition (Build stage; adjacent context)
+  - Strategic direction design (strategy-direction x design; adjacent domain)
+  - Product design (product-value x design; adjacent domain)
+outcomes:
+- Organization structure is designed with bounded authority chains.
+- Role catalogue is designed for the agentive mix.
+- Competency framework is designed substrate-neutrally.
+- Agent topology is designed for biological, artificial, and hybrid agents.
+adjacent_contexts:
+- processes:pc-ao-conceive-wtq4cr
+- processes:pc-ao-build-pjk4rz
+- processes:pc-ao-operate-zfevmp
+- processes:pc-ao-improve-qkmh6b
+processes:
+- processes:process-ao-design-7dkbur
+- processes:process-ao-design-34e95r
+- processes:process-ao-design-rve8j5
+- processes:process-ao-design-8fzp2b
+cell_charter:
+  enterprise_concern: 'Agency & Organization: the design of the enterprise''s organizational architecture.'
+  lifecycle_concern: 'Design: designing organization structure, roles, competencies, and agent topology.'
+  combined_semantic_meaning: 'The analytical work of producing designs for organizational architecture, agent topology, role definitions, and authority chains.
+
+    '
+  expected_outcomes:
+  - Organization structure is designed with bounded authority chains.
+  - Role catalogue is designed for the agentive mix.
+  - Competency framework is designed substrate-neutrally.
+  - Agent topology is designed for biological, artificial, and hybrid agents.
+  inclusions:
+  - Organization structure design
+  - Role catalogue design
+  - Competency framework design
+  - Agent topology design
+  exclusions:
+  - Agent capacity strategy framing (Conceive stage; adjacent context)
+  - Agent acquisition (Build stage; adjacent context)
+  - Strategic direction design (strategy-direction x design; adjacent domain)
+  - Product design (product-value x design; adjacent domain)
+  adjacent_boundaries:
+  - 'processes:pc-ao-conceive-wtq4cr (adjacent context): agentive flow between Design and the adjacent cell.'
+  - 'processes:pc-ao-build-pjk4rz (adjacent context): agentive flow between Design and the adjacent cell.'
+  - 'processes:pc-ao-operate-zfevmp (adjacent context): agentive flow between Design and the adjacent cell.'
+  - 'processes:pc-ao-improve-qkmh6b (adjacent context): agentive flow between Design and the adjacent cell.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-21b
+established_at: '2026-09-07'
+change_history:
+- cr: CR-BP-21b.1
+  date: '2026-09-08'
+  change: 'Processes list extended with the remaining register v2 L2
+
+    candidates for this cell under CR-BP-21b.1.
+
+    '
+- cr: CR-BP-21b
+  date: '2026-09-07'
+  change: 'Initial Process Context record; promoted from the CR-BP-19
+
+    register v2 (ratified against ECF v2.4.0) as part of the
+
+    AgencyAndOrganization landing tranche. Substrate-neutral
+
+    per ADR-ECF-002 §5 / CR-ECF-007.
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21b-agency-organization-landing.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

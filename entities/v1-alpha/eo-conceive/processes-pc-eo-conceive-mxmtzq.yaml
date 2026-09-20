@@ -1,0 +1,91 @@
+id: processes:pc-eo-conceive-mxmtzq
+domain: EnablementAndOperations
+lifecycle_stage: Conceive
+name: Operations Model and Enablement Conception
+definition: 'The bounded enterprise context for **conceiving** the enterprise''s operations model and enablement approach in the **Enablement & Operations** domain. This context addresses the front-end work of framing the operations strategy, the delivery model, the technology enablement approach, and the physical asset approach. v2.4.0: absorbs execution-side sourcing and asset conception from the dissolved Supply & Resources domain; physical and virtual resources are enablers of execution (domain-grounding.md §3.6).
+
+  '
+scope:
+  includes:
+  - Operations strategy framing
+  - Delivery model conception
+  - Technology enablement approach framing
+  - Physical asset approach framing
+  excludes:
+  - Customer strategy (party-relationship x conceive; adjacent domain)
+  - Strategic direction for operations (strategy-direction x conceive; adjacent domain)
+  - Supplier relationship conception (party-relationship x conceive; adjacent domain)
+  - Operations model design (Design stage; adjacent context)
+  - Operations build (Build stage; adjacent context)
+outcomes:
+- Operations strategy is framed for the enterprise.
+- Delivery model is conceived with bounded scope.
+- Technology enablement approach is framed.
+- Physical asset approach is framed.
+adjacent_contexts:
+- processes:pc-eo-design-kxdfnz
+- processes:pc-eo-build-zwkhxc
+- processes:pc-eo-operate-ydqb96
+- processes:pc-eo-improve-pka6dk
+processes:
+- processes:process-eo-conceive-xhjdr2
+- processes:process-eo-conceive-ky5wxp
+- processes:process-eo-conceive-68mp6v
+- processes:process-eo-conceive-87kx9n
+cell_charter:
+  enterprise_concern: 'Enablement & Operations: the conception of the enterprise''s operations model and enablement approach.'
+  lifecycle_concern: 'Conceive: framing operations strategy, delivery model, technology enablement approach, and physical asset approach.'
+  combined_semantic_meaning: 'The front-end work of framing the operations strategy, the delivery model, the technology enablement approach, and the physical asset approach.
+
+    '
+  expected_outcomes:
+  - Operations strategy is framed for the enterprise.
+  - Delivery model is conceived with bounded scope.
+  - Technology enablement approach is framed.
+  - Physical asset approach is framed.
+  inclusions:
+  - Operations strategy framing
+  - Delivery model conception
+  - Technology enablement approach framing
+  - Physical asset approach framing
+  exclusions:
+  - Customer strategy (party-relationship x conceive; adjacent domain)
+  - Strategic direction for operations (strategy-direction x conceive; adjacent domain)
+  - Supplier relationship conception (party-relationship x conceive; adjacent domain)
+  - Operations model design (Design stage; adjacent context)
+  - Operations build (Build stage; adjacent context)
+  adjacent_boundaries:
+  - 'processes:pc-eo-design-kxdfnz (adjacent context): execution flow between Conceive and the adjacent cell.'
+  - 'processes:pc-eo-build-zwkhxc (adjacent context): execution flow between Conceive and the adjacent cell.'
+  - 'processes:pc-eo-operate-ydqb96 (adjacent context): execution flow between Conceive and the adjacent cell.'
+  - 'processes:pc-eo-improve-pka6dk (adjacent context): execution flow between Conceive and the adjacent cell.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-21d
+established_at: '2026-09-08'
+change_history:
+- cr: CR-BP-21d.1
+  date: '2026-09-08'
+  change: 'Processes list extended with the remaining register v2 L2
+
+    candidates for this cell under CR-BP-21d.1.
+
+    '
+- cr: CR-BP-21d
+  date: '2026-09-08'
+  change: 'Initial Process Context record; promoted from the CR-BP-19
+
+    register v2 (ratified against ECF v2.4.0) as part of the
+
+    EnablementAndOperations landing tranche. Substrate-neutral
+
+    per ADR-ECF-002 §5 / CR-ECF-007.
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21d-enablement-operations-landing.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

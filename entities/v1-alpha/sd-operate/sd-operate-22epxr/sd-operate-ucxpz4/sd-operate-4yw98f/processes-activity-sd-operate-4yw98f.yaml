@@ -1,0 +1,73 @@
+id: processes:activity-sd-operate-4yw98f
+type: Activity
+name: Schedule Review Cadence
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Operate Strategic Review Cycle that schedules and maintains the standing cadence of strategic reviews.
+belongs_to_business_process: processes:process-sd-operate-ucxpz4
+cohesion_rationale: Constituent work shares a single scheduling concern (the standing cadence of reviews set and maintained), one input class (the strategic review cycle mandate), and one output (the scheduled review cadence). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: StrategyAndDirection
+    stage: Operate
+    identifier: ecf:strategyDirection.operate
+metadata:
+  established_by: CR-BP-55
+  established_at: '2026-09-14'
+  change_history:
+  - cr: CR-BP-55
+    date: '2026-09-14'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-55
+
+      StrategyAndDirection Improve + Operate tranche (pattern proven by CR-BP-42 through CR-BP-54).
+
+      Classified per CR-BP-32 section 5 (fails standalone
+
+      executability and resource dedication); decomposition
+
+      boundary marker per CR-BP-32 section 12 pending Task
+
+      records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-schedule-review-cadence-intake, dea:task-schedule-review-cadence-verify, dea:task-schedule-review-cadence-transform, dea:task-schedule-review-cadence-confirm, dea:task-schedule-review-cadence-record).'
+composes:
+- source_id: processes:activity-sd-operate-4yw98f
+  target_id: processes:task-sd-operate-intake-3rtpj4
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-operate-4yw98f
+  target_id: processes:task-sd-operate-verify-48yfvb
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-operate-4yw98f
+  target_id: processes:task-sd-operate-transform-ya3f8z
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-operate-4yw98f
+  target_id: processes:task-sd-operate-confirm-fwjk4g
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-operate-4yw98f
+  target_id: processes:task-sd-operate-record-834suj
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

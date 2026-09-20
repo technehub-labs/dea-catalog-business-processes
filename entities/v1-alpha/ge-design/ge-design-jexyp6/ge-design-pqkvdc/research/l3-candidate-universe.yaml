@@ -1,0 +1,104 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-48
+status: candidate-not-canonical; subject to review
+parent_business_process: processes:process-ge-design-pqkvdc
+coordinate:
+  domain: GovernanceAndExistence
+  stage: Design
+  process_context: processes:pc-ge-design-3f2gjr
+  process_group: processes:group-ge-design-jexyp6
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42,
+  scaled by CR-BP-43 through CR-BP-47)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/processes:process-ge-design-pqkvdc
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: processes:activity-ge-design-q5tqn5
+  name: "Design Risk Taxonomy"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Risk class definition; taxonomy hierarchy design; class-to-appetite mapping"
+  out_of_scope:
+  - "Risk framework direction framing (processes:process-ge-conceive-6qnkhh)"
+  - "Risk register population (processes:process-ge-build-rx7kt5)"
+  evidence:
+  - "Parent BP outcome (taxonomy designed)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-48
+- id: processes:activity-ge-design-fwc3b2
+  name: "Design Assessment Scales"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Scale dimension selection; scale calibration to tolerance bands; scale usage rules"
+  out_of_scope:
+  - "Risk taxonomy design (processes:activity-ge-design-q5tqn5)"
+  - "Risk oversight operation (processes:process-ge-operate-tpenm6)"
+  evidence:
+  - "Parent BP outcome (assessment scales designed)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-48
+- id: processes:activity-ge-design-u5gpsy
+  name: "Design Governance Integration"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Risk reporting line design; escalation path design; body mandate alignment for risk"
+  out_of_scope:
+  - "Governance system design (processes:process-ge-design-zbrg8b)"
+  - "Risk apparatus establishment (processes:process-ge-build-rx7kt5)"
+  evidence:
+  - "Parent BP outcome (governance integration designed)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-48
+- id: processes:activity-ge-design-feyvse
+  name: "Commit Risk Framework Design"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Design consolidation; coherence review against risk direction; commitment and handoff to build"
+  out_of_scope:
+  - "Risk apparatus establishment (processes:process-ge-build-rx7kt5)"
+  - "Risk framework direction framing (processes:process-ge-conceive-6qnkhh)"
+  evidence:
+  - "Parent BP outcome (risk framework design committed)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-48
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."

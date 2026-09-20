@@ -36,14 +36,14 @@ def test_discover_activities_count():
 def test_slugify_task_id():
     from scripts.decompose_l4 import _slugify_task_id
     assert (
-        _slugify_task_id("dea:activity-receive-regulator-sunset-directive", "intake")
-        == "dea:task-receive-regulator-sunset-directive-intake"
+        _slugify_task_id("processes:activity-sd-retire-z2y3pr", "intake")
+        == "processes:task-sd-retire-z2y3pr-intake"
     )
     # Determinism: same inputs produce same output across calls.
-    a = _slugify_task_id("dea:activity-acquire-licensed-product", "verify")
-    b = _slugify_task_id("dea:activity-acquire-licensed-product", "verify")
+    a = _slugify_task_id("processes:activity-acquire-licensed-product", "verify")
+    b = _slugify_task_id("processes:activity-acquire-licensed-product", "verify")
     assert a == b
-    assert a == "dea:task-acquire-licensed-product-verify"
+    assert a == "processes:task-acquire-licensed-product-verify"
 
 
 def test_build_task_yaml_required_fields():
@@ -54,8 +54,7 @@ def test_build_task_yaml_required_fields():
         PHASES,
     )
     sample = yaml.safe_load(
-        (ENTITY_ROOT / "dea:activity-receive-regulator-sunset-directive"
-         / "dea:activity-receive-regulator-sunset-directive.yaml").read_text()
+        next(ENTITY_ROOT.rglob("processes-activity-sd-retire-z2y3pr.yaml")).read_text()
     )
     ctx = ActivityContext(
         activity_id=sample["id"],
@@ -80,7 +79,7 @@ def test_build_task_yaml_required_fields():
         assert not missing, f"Task {tid} missing fields: {missing}"
         assert tyaml["type"] == "Task"
         assert tyaml["belongs_to_activity"] == ctx.activity_id
-        assert tyaml["id"].startswith("dea:task-")
+        assert tyaml["id"].startswith("processes:task-")
         # Boundary is inclusions + exclusions.
         assert "inclusions" in tyaml["boundary"]
         assert "exclusions" in tyaml["boundary"]
@@ -101,8 +100,7 @@ def test_task_name_avoids_capability_process():
         PHASES,
     )
     sample = yaml.safe_load(
-        (ENTITY_ROOT / "dea:activity-develop-improvement-capability"
-         / "dea:activity-develop-improvement-capability.yaml").read_text()
+        next(ENTITY_ROOT.rglob("processes-activity-eo-improve-334m2m.yaml")).read_text()
     )
     ctx = ActivityContext(
         activity_id=sample["id"],
@@ -156,7 +154,7 @@ def test_cli_scope_filters_by_activity_id():
     subprocess.run(
         [
             sys.executable, "scripts/decompose_l4.py",
-            "--scope", "dea:activity-receive-regulator-sunset-directive",
+            "--scope", "processes:activity-sd-retire-z2y3pr",
             "--dry-run",
         ],
         capture_output=True, text=True, cwd=str(REPO_ROOT),
@@ -167,7 +165,7 @@ def test_cli_scope_filters_by_activity_id():
     result = subprocess.run(
         [
             sys.executable, "scripts/decompose_l4.py",
-            "--scope", "dea:activity-receive-regulator-sunset-directive",
+            "--scope", "processes:activity-sd-retire-z2y3pr",
             "--dry-run",
         ],
         capture_output=True, text=True, cwd=str(REPO_ROOT),
@@ -179,7 +177,7 @@ def test_cli_scope_filters_by_activity_id():
     fake = subprocess.run(
         [
             sys.executable, "scripts/decompose_l4.py",
-            "--scope", "dea:activity-does-not-exist-xyz",
+            "--scope", "processes:activity-does-not-exist-xyz",
             "--dry-run",
         ],
         capture_output=True, text=True, cwd=str(REPO_ROOT),
@@ -199,7 +197,7 @@ def test_live_decomposition_pass_validators():
     """
     # Count Tasks after a live run (assuming the working tree has been
     # decomposed; this test runs in the post-decomposition state).
-    task_files = list(ENTITY_ROOT.glob("dea:task-*/*.yaml"))
+    task_files = list(ENTITY_ROOT.rglob("processes-task-*.yaml"))
     assert len(task_files) == 2800, (
         f"Expected 2,800 Task files after live run, got {len(task_files)}"
     )

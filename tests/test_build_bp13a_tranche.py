@@ -69,7 +69,7 @@ def test_render_process_group_parses_yaml() -> None:
         # Each composes entry should resolve to a known L2.
         for c in doc.get("composes", []):
             assert c["relationship_type"] == "composes"
-            assert c["target_id"].startswith("dea:process-")
+            assert c["target_id"].startswith("processes:process-")
 
 
 def test_render_l2_process_parses_yaml() -> None:

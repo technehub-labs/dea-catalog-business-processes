@@ -1,0 +1,75 @@
+id: processes:activity-eo-operate-9nhpgy
+type: Activity
+name: Monitor Platform Availability
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Operate Technology Platforms that tracks platform health and availability against agreed targets across each service window.
+belongs_to_business_process: processes:process-eo-operate-4njp7b
+cohesion_rationale: Constituent work shares a single measurement concern (actual availability versus target), one data class (platform health signals), and a common frame (the service window). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: EnablementAndOperations
+    stage: Operate
+    identifier: ecf:enablementAndOperations.operate
+metadata:
+  established_by: CR-BP-43
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-43
+    date: '2026-09-13'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-43
+
+      EnablementAndOperations / Operate tranche completing the L3
+
+      deposition of the pilot coordinate (pattern proven by CR-BP-42).
+
+      Classified per CR-BP-32 section 5 (fails standalone executability
+
+      and resource dedication); decomposition boundary marker per
+
+      CR-BP-32 section 12 pending Task records (dea:Task lifecycle:
+
+      proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-monitor-platform-availability-intake, dea:task-monitor-platform-availability-verify, dea:task-monitor-platform-availability-transform, dea:task-monitor-platform-availability-confirm, dea:task-monitor-platform-availability-record).'
+composes:
+- source_id: processes:activity-eo-operate-9nhpgy
+  target_id: processes:task-eo-operate-intake-f5bp8x
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-operate-9nhpgy
+  target_id: processes:task-eo-operate-verify-zh6n3p
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-operate-9nhpgy
+  target_id: processes:task-eo-operate-transform-b8yje4
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-operate-9nhpgy
+  target_id: processes:task-eo-operate-confirm-axveus
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-operate-9nhpgy
+  target_id: processes:task-eo-operate-record-68ucw6
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

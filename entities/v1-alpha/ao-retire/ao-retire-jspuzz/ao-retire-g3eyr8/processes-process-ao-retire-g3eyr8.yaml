@@ -1,0 +1,121 @@
+id: processes:process-ao-retire-g3eyr8
+name: Conduct Regulated Workforce Wind-Down
+type: Process
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+process_intent: manage
+process_type: management
+process_specialization: []
+description: 'Conduct a regulated workforce wind-down under statutory mass-layoff, consultation, notice, severance, and transition-support obligations within the dea:pc-ao-retire Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces.
+
+  '
+trigger: 'A regulated wind-down event is authorized (mass layoff, agent unit decommission, or organizational unit wind-down) where statutory advance-notice and consultation obligations are triggered by the size and nature of the employment reduction.
+
+  '
+outcome: 'The wind-down is executed under statutory notice, consultation obligations are satisfied with documentation, statutory liabilities (notice pay, severance, benefits continuation) are recorded and funded, and transition supports (state dislocated-worker referral, training, health-care continuation) are routed to the affected population.
+
+  '
+identity:
+  verb: Conduct
+  object: Regulated Workforce Wind-Down
+  scope: enterprise
+  outcome_statement: 'The workforce is wound down under controlled regulated obligations: statutory notice is served, worker-representative consultation is documented, fair-selection criteria are applied and recorded, severance and benefits continuation are funded and recorded, and transition supports are routed to the affected population. Affected workers and their representatives, the state dislocated-worker unit, and the local chief elected official all receive the notice the controlling statute or regulation requires. Steady-state offboarding of individual agents and asset retirement are explicitly coordinated out to the Operate and EnablementAndOperations x Retire coordinates respectively.
+
+    '
+  evidence_links:
+  - type: regulation
+    ref: https://www.ecfr.gov/current/title-20/chapter-V/part-639
+  - type: regulation
+    ref: https://www.dol.gov/general/topic/termination/plantclosings
+  - type: regulation
+    ref: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A31998L0059
+  - type: standard
+    ref: https://www.ilo.org/dyn/normlex/en/f?p=NORMLEXPUB:12100:0::NO::P12100_ILO_CODE:C158
+  - type: standard
+    ref: https://www.ilo.org/dyn/normlex/en/f?p=NORMLEXPUB:12100:0::NO::P12100_ILO_CODE:C135
+  - type: standard
+    ref: https://www.oecd.org/employment/employment-outlook/
+  - type: regulation
+    ref: https://www.legislation.gov.uk/ukpga/1992/52/section/188
+relationships:
+- source_id: processes:process-ao-retire-g3eyr8
+  relationship_type: serves
+  target_id: ecf:agencyOrganization.retire
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: AgencyAndOrganization
+    stage: Retire
+    identifier: ecf:agencyOrganization.retire
+metadata:
+  established_by: CR-BP-73
+  established_at: '2026-09-15'
+  activity_references:
+  - processes:activity-ao-retire-uqgpmh
+  - processes:activity-ao-retire-zmc7yk
+  - processes:activity-ao-retire-sqdecn
+  - processes:activity-ao-retire-herzuz
+  change_history:
+  - cr: CR-BP-73
+    date: '2026-09-15'
+    change: 'Initial L2 Process entry; the first canonical Business Process
+
+      admitted at the AgencyAndOrganization x Retire coordinate, from
+
+      the CR-BP-72 escape-clause discovery outcome (9/10,
+
+      ADMIT-CANONICAL recommendation) under the CR-BP-62 method. The
+
+      admission activates the register v2 cell''s verbatim escape
+
+      condition ("defer until a regulated wind-down (e.g. mass layoff)
+
+      requires a dedicated L1 group"). Evidence base: U.S. WARN Act
+
+      (29 U.S.C. 2101 et seq.; 20 CFR Part 639), EU Council Directive
+
+      98/59/EC, ILO Conventions 158 (1982) and 135 (1971), OECD
+
+      Employment Outlook, UK TULRCA s.188, German BetrVG section 17.
+
+      BP-ARC-ID-001 satisfied: name "Conduct Regulated Workforce
+
+      Wind-Down" is verb + object form; id preserved unchanged from
+
+      the CR-BP-72 discovery recommendation.
+
+      '
+  - cr: CR-BP-77
+    date: '2026-09-16'
+    change: 'Initial L3 decomposition; lands 4 Activity records
+
+      as part of the CR-BP-77 admitted-regulated-BP tranche
+
+      (pattern proven by CR-BP-42..69). Activity ids recorded
+
+      in metadata.activity_references; parent BP version
+
+      unchanged per SIV-004 (additive metadata-only).
+
+      '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-73-ao-retire-admission.md
+- rel: discovery-record-escape
+  href: discovery/v1-alpha/agency-and-organization-retire-escape.yaml
+- rel: discovery-record-baseline
+  href: discovery/v1-alpha/agency-and-organization-retire.yaml
+- rel: process-context
+  href: contexts/v1-alpha/dea-pc-ao-retire.yaml
+- rel: process-group
+  href: entities/v1-alpha/dea:group-regulated-workforce-wind-down/dea:group-regulated-workforce-wind-down.yaml
+- rel: l2-admission-deposition
+  href: entities/v1-alpha/dea:process-conduct-regulated-workforce-wind-down/research/l2-admission-deposition.yaml
+context:
+- ref: processes:pc-ao-retire-3kqe9c

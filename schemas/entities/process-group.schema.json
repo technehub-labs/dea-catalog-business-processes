@@ -26,7 +26,7 @@
     },
     "id": {
       "type": "string",
-      "pattern": "^dea:group-[a-z0-9-]+$",
+      "pattern": "^processes:group-[a-z0-9-]+$",
       "description": "Stable Process Group id. CR-BP-04 §4 family. Convention: dea:group-<kebab-name>. The id must be stable across renames of name/definition; renames go through the CR-programme."
     },
     "name": {
@@ -42,7 +42,7 @@
     },
     "process_context": {
       "type": "string",
-      "pattern": "^dea:pc-[a-z0-9-]+$",
+      "pattern": "^processes:pc-[a-z0-9-]+$",
       "description": "Reference to the canonical Process Context (dea:pc-*) within which this Process Group organizes L2 processes. PG-003 enforces resolution to a known context."
     },
     "scope": {
@@ -76,11 +76,11 @@
         "properties": {
           "source_id": {
             "type": "string",
-            "pattern": "^dea:group-[a-z0-9-]+$"
+            "pattern": "^processes:group-[a-z0-9-]+$"
           },
           "target_id": {
             "type": "string",
-            "pattern": "^dea:process-[a-z0-9-]+$",
+            "pattern": "^processes:process-[a-z0-9-]+$",
             "description": "Target Business Process specialization id (dea:process-*)."
           },
           "relationship_type": {
@@ -204,7 +204,7 @@
       "properties": {
         "cross_context_overlap": {
           "type": "array",
-          "items": {"type": "string", "pattern": "^dea:pc-[a-z0-9-]+$"},
+          "items": {"type": "string", "pattern": "^processes:pc-[a-z0-9-]+$"},
           "description": "Optional: explicit declaration of other Process Contexts this Process Group participates in via cross-context membership. PG-006 enforces intent vs. accident."
         },
         "established_by": {"type": "string"},

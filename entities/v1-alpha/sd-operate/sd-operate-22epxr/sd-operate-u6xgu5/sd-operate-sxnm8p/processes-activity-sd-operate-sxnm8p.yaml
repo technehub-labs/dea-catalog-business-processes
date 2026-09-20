@@ -1,0 +1,73 @@
+id: processes:activity-sd-operate-sxnm8p
+type: Activity
+name: Identify Portfolio Drift
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Steer Initiative Portfolio that identifies where the initiative portfolio has drifted from the alignment the strategy requires.
+belongs_to_business_process: processes:process-sd-operate-u6xgu5
+cohesion_rationale: Constituent work shares a single identification concern (portfolio drift surfaced from the alignment assessment), one input class (the initiative alignment assessment), and one output (the identified portfolio drift). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: StrategyAndDirection
+    stage: Operate
+    identifier: ecf:strategyDirection.operate
+metadata:
+  established_by: CR-BP-55
+  established_at: '2026-09-14'
+  change_history:
+  - cr: CR-BP-55
+    date: '2026-09-14'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-55
+
+      StrategyAndDirection Improve + Operate tranche (pattern proven by CR-BP-42 through CR-BP-54).
+
+      Classified per CR-BP-32 section 5 (fails standalone
+
+      executability and resource dedication); decomposition
+
+      boundary marker per CR-BP-32 section 12 pending Task
+
+      records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-identify-portfolio-drift-intake, dea:task-identify-portfolio-drift-verify, dea:task-identify-portfolio-drift-transform, dea:task-identify-portfolio-drift-confirm, dea:task-identify-portfolio-drift-record).'
+composes:
+- source_id: processes:activity-sd-operate-sxnm8p
+  target_id: processes:task-sd-operate-intake-wpc4gb
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-operate-sxnm8p
+  target_id: processes:task-sd-operate-verify-4reedd
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-operate-sxnm8p
+  target_id: processes:task-sd-operate-transform-psge8c
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-operate-sxnm8p
+  target_id: processes:task-sd-operate-confirm-sb22eq
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-operate-sxnm8p
+  target_id: processes:task-sd-operate-record-vnqd68
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

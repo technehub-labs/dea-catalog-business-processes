@@ -1,0 +1,104 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-56
+status: candidate-not-canonical; subject to review
+parent_business_process: processes:process-ao-design-8fzp2b
+coordinate:
+  domain: AgencyAndOrganization
+  stage: Design
+  process_context: processes:pc-ao-design-a4hq2r
+  process_group: processes:group-ao-design-pjrfr9
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42,
+  scaled by CR-BP-43 through CR-BP-55)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/processes:process-ao-design-8fzp2b
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: processes:activity-ao-design-vtuma6
+  name: "Classify Placement Candidates"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Candidate classification; placement criteria record; candidate-to-model trace"
+  out_of_scope:
+  - "Model framing (processes:process-ao-conceive-ruxjvh)"
+  - "Placement decision (processes:activity-ao-design-h3q5rc)"
+  evidence:
+  - "Parent BP trigger (the framed organization model requires bounded human, artificial, and hybrid placement decisions)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-56
+- id: processes:activity-ao-design-h3q5rc
+  name: "Decide Substrate Placement"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Placement decision; decision rationale record; placement-to-mix trace"
+  out_of_scope:
+  - "Candidate classification (processes:activity-ao-design-vtuma6)"
+  - "Coordination design (processes:activity-ao-design-j98gk4)"
+  evidence:
+  - "Parent BP outcome (the agent topology is designed with human, artificial, and hybrid placement ...)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-56
+- id: processes:activity-ao-design-j98gk4
+  name: "Design Coordination Patterns"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Pattern design; pattern interface record; pattern-to-placement trace"
+  out_of_scope:
+  - "Placement decision (processes:activity-ao-design-h3q5rc)"
+  - "Topology commitment (processes:activity-ao-design-pc9dh3)"
+  evidence:
+  - "Parent BP outcome (the agent topology is designed with ... placement and coordination patterns)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-56
+- id: processes:activity-ao-design-pc9dh3
+  name: "Commit Agent Topology"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Topology consolidation; governance ratification; topology publication"
+  out_of_scope:
+  - "Coordination design (processes:activity-ao-design-j98gk4)"
+  - "Agent acquisition and onboarding (processes:process-ao-build-w2qurd)"
+  evidence:
+  - "Parent BP outcome (the agent topology is designed with human, artificial, and hybrid placement and coordination patterns)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-56
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."

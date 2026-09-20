@@ -111,11 +111,11 @@ discovery:
     admission:
       status: admitted
       admitted_by: CR-BP-66
-      admitted_as: dea:process-decommission
+      admitted_as: processes:process-eo-retire-rpg6d4
       admitted_at: '2026-09-14'
     disposition:
       type: ADMIT-CANONICAL
-      canonical_process_ref: dea:process-decommission (proposed; governed admission pending per CR-BP-62
+      canonical_process_ref: processes:process-eo-retire-rpg6d4 (proposed; governed admission pending per CR-BP-62
         section 20)
   - name: Migrate / Transfer
     proposed_identity:
@@ -254,7 +254,7 @@ discovery:
       related_contexts:
       - ProductAndValue/Retire
       - EnablementAndOperations/Retire
-      canonical_process_ref: dea:process-transition-out-of-service (proposed)
+      canonical_process_ref: processes:process-pv-retire-6us5am (proposed)
   - name: Resolve Residual Obligations
     proposed_identity:
       verb: Resolve

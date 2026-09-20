@@ -86,10 +86,16 @@ def _new_id(old_id: str, record: dict, content: str) -> str:
     level = parsed["level"]
     slug = parsed["slug"]
 
-    coord = record.get("ecfConformance", {}).get("canonicalReferences", [{}])[0]
-    domain = coord.get("domain", "")
-    stage = coord.get("stage", "").lower()
-    domain_code = DOMAIN_CODES.get(domain, domain[:2].lower())
+    if level == "pc":
+        # PCs carry domain + lifecycle_stage fields (no ecfConformance block).
+        domain = record.get("domain", "")
+        stage = str(record.get("lifecycle_stage", "")).lower()
+        domain_code = DOMAIN_CODES.get(domain, domain[:2].lower())
+    else:
+        coord = record.get("ecfConformance", {}).get("canonicalReferences", [{}])[0]
+        domain = coord.get("domain", "")
+        stage = coord.get("stage", "").lower()
+        domain_code = DOMAIN_CODES.get(domain, domain[:2].lower())
 
     # For tasks, strip the phase suffix
     phase = None
@@ -353,6 +359,13 @@ def _migrate(records: dict[str, tuple[Path, dict, str]], id_map: dict[str, str],
             new_readme = new_path.parent / "README.md"
             if not new_readme.exists():
                 new_readme.write_text(old_readme.read_text())
+        elif old_path.parent == CONTEXTS:
+            # PC READMEs live in a synthesized sibling dir: contexts/v1-alpha/<stem>/README.md
+            pc_readme = CONTEXTS / old_path.stem / "README.md"
+            if pc_readme.exists():
+                new_readme = new_path.parent / "README.md"
+                if not new_readme.exists():
+                    new_readme.write_text(pc_readme.read_text())
 
         stats["migrated"] += 1
 

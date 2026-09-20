@@ -1,0 +1,72 @@
+id: processes:pc-ge-design-3f2gjr
+domain: GovernanceAndExistence
+lifecycle_stage: Design
+name: Governance System Design
+definition: 'The bounded enterprise context for **designing** the governance system, control objectives, and policy architecture in the **governance and existence** domain. This context addresses the work of translating strategy and mandate into a designed governance architecture, a set of control objectives, and an articulated policy architecture that the enterprise can build.
+
+  '
+scope:
+  includes:
+  - Governance system architecture
+  - Control objectives
+  - Policy architecture
+  - Authority delegation design
+  excludes:
+  - Strategy framing (Conceive stage)
+  - Body and charter construction (Build stage)
+  - Governance operation (Operate stage)
+outcomes:
+- Governance system is designed and testable.
+- Control objectives are articulated.
+- Policy architecture is ready to be built.
+adjacent_contexts:
+- processes:pc-ge-conceive-b5xwpd
+- processes:pc-ge-build-52hjrc
+- processes:pc-ge-operate-hb2dac
+- processes:pc-ge-improve-c78ppp
+processes:
+- processes:process-ge-design-zbrg8b
+- processes:process-ge-design-kpsj5b
+- processes:process-ge-design-pqkvdc
+cell_charter:
+  enterprise_concern: 'Governance and existence: the enterprise''s mandate, policy posture, and charter direction.'
+  lifecycle_concern: 'Design: articulating how governance and policy will be structured and controlled.'
+  combined_semantic_meaning: 'Translating strategy and mandate into a designed governance architecture, control objectives, and policy architecture.
+
+    '
+  expected_outcomes:
+  - Governance system is designed and testable.
+  - Control objectives are articulated.
+  - Policy architecture is ready to be built.
+  inclusions:
+  - Governance system architecture
+  - Control objectives
+  - Policy architecture
+  exclusions:
+  - Strategy framing (Conceive stage)
+  - Body and charter construction (Build stage)
+  - Governance operation (Operate stage)
+  adjacent_boundaries:
+  - 'processes:pc-ge-conceive-b5xwpd (Conceive): the prior lifecycle stage; strategy flows into design.'
+  - 'processes:pc-ge-build-52hjrc (Build): designs flow into body and charter construction.'
+  - 'processes:pc-ge-operate-hb2dac (Operate): designed system is realised in board and committee operations.'
+  - 'processes:pc-ge-improve-c78ppp (Improve): designed system is reviewed and refreshed.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-13a
+established_at: '2026-09-05'
+change_history:
+- cr: CR-BP-13a
+  date: '2026-09-05'
+  change: 'Initial Process Context record; promoted from the CR-BP-11
+
+    49-coordinate register (ratified by CR-BP-13) as part of the
+
+    CustomerAndDomain admission tranche (CR-BP-13a).
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-13a-customer-and-demand-admission.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

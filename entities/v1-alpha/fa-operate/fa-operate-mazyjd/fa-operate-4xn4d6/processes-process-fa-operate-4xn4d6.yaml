@@ -1,0 +1,82 @@
+id: processes:process-fa-operate-4xn4d6
+name: Perform Financial Close
+type: Process
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+process_intent: operate
+process_type: core
+context:
+- ref: processes:pc-fa-operate-afew7e
+description: 'Perform Financial Close (operate stage, core process). Landed by CR-BP-21e.1
+
+  from the FinanceAndAccounting register v2.
+
+  '
+trigger: A period close boundary is reached.
+outcome: Financial close is performed with period-end entries, reconciliations, and management reports produced for reporting.
+triggers:
+- A period close boundary is reached.
+outcomes:
+- Financial close is performed with period-end entries, reconciliations, and management reports produced for reporting.
+identity:
+  verb: Perform
+  object: Financial Close
+  outcome_statement: Financial close is performed with period-end entries, reconciliations, and management reports produced for reporting.
+  evidence_links:
+  - type: documentation
+    ref: change-requests/CR-BP-21e.1.md
+relationships:
+- source_id: processes:process-fa-operate-4xn4d6
+  relationship_type: serves
+  target_id: ecf:financeAccounting.operate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: FinanceAndAccounting
+    stage: Operate
+    identifier: ecf:financeAccounting.operate
+  target_id: ecf:financeAccounting.operate
+metadata:
+  established_by: CR-BP-21e.1
+  established_at: '2026-09-08'
+  activity_references:
+  - processes:activity-fa-operate-ayt4aq
+  - processes:activity-fa-operate-5dp28t
+  - processes:activity-fa-operate-bsq94u
+  - processes:activity-fa-operate-5dufzc
+change_history:
+- version: 1.0.0
+  date: '2026-09-08'
+  cr: CR-BP-21e.1
+  change: 'Initial landing under CR-BP-21e.1 (FinanceAndAccounting completion).
+
+    '
+- date: '2026-09-13'
+  cr: CR-BP-53
+  change: 'L3 decomposition of this Business Process: 4 Activities
+
+    landed under the structured deposition pattern (research
+
+    deposition at research/l3-candidate-universe.yaml, then
+
+    canonical Activity records) as part of the CR-BP-53
+
+    FinanceAndAccounting Improve + Operate tranche (completes
+
+    the FA domain''s L3 coverage). Adds metadata.activity_references[]
+
+    back-references per ACT-010 bidirectional traceability.
+
+    Additive metadata-only change; BP identity and semantics
+
+    unchanged, so version remains unchanged per SIV-004
+
+    (CR-BP-34d).
+
+    '

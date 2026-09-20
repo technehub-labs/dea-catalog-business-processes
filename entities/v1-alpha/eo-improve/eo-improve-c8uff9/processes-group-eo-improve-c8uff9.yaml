@@ -1,0 +1,140 @@
+id: processes:group-eo-improve-c8uff9
+type: ProcessGroup
+version: 1.0.0
+name: Operations and Enablement Improvement
+definition: 'The bounded Process Group that organises the Business Process responsibilities of reviewing operations performance, optimizing logistics and asset utilization, conducting lean programmes, and improving technology platforms in the EnablementAndOperations x Improve context. v2.4.0 grounding (domain-grounding.md §3.6).
+
+  '
+process_context: processes:pc-eo-improve-pka6dk
+scope:
+  includes:
+  - Operations performance review
+  - Logistics optimization
+  - Lean six sigma programme
+  - Asset utilization optimization
+  - Technology platform improvement
+  excludes:
+  - Capability improvement (owning domains)
+  - Operations execution (Operate stage; adjacent context)
+outcomes:
+- Operations performance is reviewed with findings committed.
+- Logistics and asset utilization are optimized.
+- Lean programmes deliver improvement projects.
+- Technology platforms are improved on evidence.
+composes:
+- source_id: processes:group-eo-improve-c8uff9
+  target_id: processes:process-eo-improve-g3ngp3
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (landed CR-BP-21d).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21d.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-eo-improve-c8uff9
+  target_id: processes:process-eo-improve-3fem63
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21d.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21d.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-eo-improve-c8uff9
+  target_id: processes:process-eo-improve-us272s
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21d.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21d.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-eo-improve-c8uff9
+  target_id: processes:process-eo-improve-q58ecg
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21d.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21d.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-eo-improve-c8uff9
+  target_id: processes:process-eo-improve-babwdc
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21d.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21d.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+process_group_kind: end-to-end
+status: accepted
+lifecycle_status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: EnablementAndOperations
+    stage: Improve
+    identifier: ecf:enablementAndOperations.improve
+evidence:
+- source: CR-BP-19 (register v2, ratified against ECF v2.4.0)
+  claim: 'This Process Group''s coordinate is ratified-accepted in register
+
+    v2. CR-BP-21d.1 lands the corresponding L1 group as part of the
+
+    EnablementAndOperations completion tranche.
+
+    '
+  strength: E4
+  reference: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+metadata:
+  established_by: CR-BP-21d.1
+  established_at: '2026-09-08'
+  cross_context_overlap: []
+  change_history:
+  - cr: CR-BP-21d.1
+    date: '2026-09-08'
+    change: 'Initial Process Group record; promoted from the CR-BP-19 register
+
+      v2 (ratified against ECF v2.4.0) as part of the CR-BP-21d.1
+
+      EnablementAndOperations completion tranche.
+
+      '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21d.1-enablement-operations-completion.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

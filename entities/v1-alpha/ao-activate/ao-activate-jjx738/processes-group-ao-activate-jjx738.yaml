@@ -1,0 +1,131 @@
+id: processes:group-ao-activate-jjx738
+type: ProcessGroup
+version: 1.0.0
+name: Licensed Workforce Mobilization
+definition: 'The bounded Process Group that organises the Business Process
+
+  responsibilities of activating a workforce whose individuals must
+
+  hold regulator-issued licences or registrations before performing
+
+  live work, in the AgencyAndOrganization x Activate context where
+
+  regulator-controlled scope, fitness-and-propriety attestation,
+
+  supervised-training completion, and continuing-supervisor
+
+  notification create a distinct group-level mobilization concern
+
+  separate from general workforce build and from steady-state
+
+  performance management.
+
+  '
+process_context: processes:pc-ao-activate-kusw2u
+scope:
+  includes:
+  - Regulator-issued licence or registration verification (FCA SMCR Statements of Responsibilities; US state healthcare licensure; NAIC producer licence; FAA/EASA crew licence; UK SRA practising certificate; US state bar admission)
+  - Fitness-and-propriety attestation (SMCR; state healthcare; NAIC producer; FAA/EASA; SRA; bar)
+  - Supervised-training completion record (SMCR; state healthcare; NAIC; FAA/EASA; SRA; bar)
+  - Competency assessment for the licensed role
+  - Enterprise's regulated-entity approval authority framework
+  - Signing authority or controlled-function designation (SMCR CF1..CF11; NAIC producer line of authority; FAA/EASA type-rating; SRA role; bar area of practice)
+  - Continuing-supervisor notification and continuing-oversight relationship activation
+  - Regulated personnel record entry preserved for the licensed individual
+  excludes:
+  - Workforce recruitment, hiring, and general onboarding (AgencyAndOrganization x Build)
+  - Steady-state workforce performance and development (AgencyAndOrganization x Operate / Improve)
+  - Workforce offboarding and licence surrender (AgencyAndOrganization x Retire; CR-BP-73 adjacent cells)
+  - Non-licensed workforce activation (deferred to a future CR)
+  - Internal non-regulated personnel activation without regulator-issued licence prerequisite
+  - Capabilities sourcing/licensing absent a regulator-controlled scope
+outcomes:
+- The licensed or regulated workforce is mobilized under the enterprise's regulated-entity approval authority with regulator-controlled scope preserved (signing authority or controlled-function designation), fitness-and-propriety attestation recorded, supervised-training completion preserved, and continuing-supervisor notification activated, so that licensed individuals are live on the regulated personnel record under the regulator's continuing supervision.
+composes:
+- source_id: processes:group-ao-activate-jjx738
+  target_id: processes:process-ao-activate-jqxtqn
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per the CR-BP-80
+
+    escape-clause discovery outcome (ADMIT-CANONICAL recommendation)
+
+    landed by CR-BP-81. The discovery evidence (FCA SMCR, US state
+
+    healthcare licensure, NAIC Producer Licensing Model Act,
+
+    EASA/FAA crew licensing, UK SRA / US state bar admissions)
+
+    activates the register v2 cell''s verbatim escape condition:
+
+    "workforce activation is often an attribute of build" is
+
+    superseded by the regulator-controlled scope, fitness-and-
+
+    propriety attestation, supervised-training completion, and
+
+    continuing-supervisor notification that distinguish licensed
+
+    mobilization from general build.
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-81
+    asserted_by: dea-team
+    asserted_at: '2026-09-16'
+process_group_kind: functional
+status: accepted
+lifecycle_status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: AgencyAndOrganization
+    stage: Activate
+    identifier: ecf:agencyOrganization.activate
+evidence:
+- source: CR-BP-80 escape-clause discovery
+  claim: 'This Process Group''s coordinate was evaluated by the CR-BP-80
+
+    escape-clause discovery record at
+
+    discovery/v1-alpha/agency-and-organization-activate-escape.yaml.
+
+    The cell''s deferral rationale ("workforce activation is often
+
+    an attribute of build") was found superseded by the 2024-2026
+
+    licensed-workforce regulation landscape: regulator-controlled
+
+    scope, fitness-and-propriety attestation, supervised-training
+
+    completion, and continuing-supervisor notification establish
+
+    that licensed-workforce mobilization is a distinct enterprise
+
+    concern, scoring 10/10 with an ADMIT-CANONICAL recommendation
+
+    on authoritative regulatory evidence across banking, healthcare,
+
+    insurance, professional services, telecoms, and aviation.
+
+    '
+  strength: E5
+  reference: discovery/v1-alpha/agency-and-organization-activate-escape.yaml
+- source: CR-BP-81 admission tranche
+  claim: 'CR-BP-81 lands this Process Group as the L1 home of the
+
+    discovery-admitted Business Process and flips the register cell
+
+    to ratified-accepted / landed.
+
+    '
+  strength: E4
+  reference: change-requests/CR-BP-81-ao-activate-admission.md

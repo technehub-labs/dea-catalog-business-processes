@@ -83,7 +83,7 @@ discovery:
         duplicated.
     disposition:
       type: ADMIT-CANONICAL
-      canonical_process_ref: dea:process-conclude-regulated-run-off
+      canonical_process_ref: processes:process-fa-retire-wkbrsa
       related_contexts: []
     scoring:
       process_reality: 2
@@ -97,7 +97,7 @@ discovery:
         cross-domain breadth limited to insurance-led regulated wind-down today, holding the total at 9.
     admission:
       status: admitted
-      admitted_as: dea:process-conclude-regulated-run-off
+      admitted_as: processes:process-fa-retire-wkbrsa
       admitted_at: '2026-09-15'
       admitted_by: CR-BP-75
   - name: Operate Financial Wind-Down

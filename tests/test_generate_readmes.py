@@ -27,13 +27,13 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 
 def test_resolve_level_by_type():
     from scripts.generate_readmes import resolve_level
-    assert resolve_level({"type": "ProcessContext", "id": "dea:pc-x-y"}) == "L0"
-    assert resolve_level({"type": "ProcessGroup", "id": "dea:group-x"}) == "L1"
-    assert resolve_level({"type": "Process", "id": "dea:process-x"}) == "L2"
-    assert resolve_level({"type": "Activity", "id": "dea:activity-x"}) == "L3"
-    assert resolve_level({"type": "Task", "id": "dea:task-x"}) == "L4"
+    assert resolve_level({"type": "ProcessContext", "id": "processes:pc-x-y"}) == "L0"
+    assert resolve_level({"type": "ProcessGroup", "id": "processes:group-x"}) == "L1"
+    assert resolve_level({"type": "Process", "id": "processes:process-x"}) == "L2"
+    assert resolve_level({"type": "Activity", "id": "processes:activity-x"}) == "L3"
+    assert resolve_level({"type": "Task", "id": "processes:task-x"}) == "L4"
     # PC fallback: id pattern when type is absent.
-    assert resolve_level({"id": "dea:pc-x-y"}) == "L0"
+    assert resolve_level({"id": "processes:pc-x-y"}) == "L0"
     # Unknown.
     assert resolve_level({"type": "Unknown", "id": "x"}) is None
     assert resolve_level({}) is None
@@ -42,19 +42,20 @@ def test_resolve_level_by_type():
 def test_resolve_record_paths_counts():
     from scripts.generate_readmes import resolve_record_paths
     paths = resolve_record_paths()
-    # Live catalog at v0.4.0+13: 749 entities + 49 PCs = 798.
-    assert len(paths) >= 798, f"Expected >= 798 paths, got {len(paths)}"
-    contexts_count = sum(1 for p in paths if "/contexts/" in str(p))
+    # CR-BP-mv1: all 3,598 records (PCs included) live in the containment
+    # tree under entities/v1-alpha/; the contexts/ root is retired.
+    assert len(paths) >= 3598, f"Expected >= 3598 paths, got {len(paths)}"
     entities_count = sum(1 for p in paths if "/entities/" in str(p))
-    assert contexts_count >= 49, f"Expected >= 49 PC paths, got {contexts_count}"
-    assert entities_count >= 749, f"Expected >= 749 entity paths, got {entities_count}"
+    pc_count = sum(1 for p in paths if p.name.startswith("processes-pc-"))
+    assert entities_count >= 3598, f"Expected >= 3598 entity paths, got {entities_count}"
+    assert pc_count >= 49, f"Expected >= 49 PC paths, got {pc_count}"
 
 
 def test_resolve_readme_path_directory_shape():
     from scripts.generate_readmes import resolve_readme_path
     # Directory-per-record shape (L1/L2/L3/L4).
     p = Path("/fake/entities/v1-alpha/dea:group-x/dea:group-x.yaml")
-    assert resolve_readme_path(p, "dea:group-x") == Path(
+    assert resolve_readme_path(p, "processes:group-x") == Path(
         "/fake/entities/v1-alpha/dea:group-x/README.md"
     )
 
@@ -63,7 +64,7 @@ def test_resolve_readme_path_flat_shape():
     from scripts.generate_readmes import resolve_readme_path
     # Flat-file shape (L0 ProcessContext).
     p = Path("/fake/contexts/v1-alpha/dea-pc-x-y.yaml")
-    assert resolve_readme_path(p, "dea:pc-x-y") == Path(
+    assert resolve_readme_path(p, "processes:pc-x-y") == Path(
         "/fake/contexts/v1-alpha/dea-pc-x-y/README.md"
     )
 
@@ -71,7 +72,7 @@ def test_resolve_readme_path_flat_shape():
 def test_generate_readme_required_sections_l0():
     from scripts.generate_readmes import generate_readme, SECTION_HEADINGS
     record = {
-        "id": "dea:pc-test",
+        "id": "processes:pc-test",
         "domain": "StrategyAndDirection",
         "lifecycle_stage": "Retire",
         "name": "Test PC",
@@ -90,7 +91,7 @@ def test_generate_readme_required_sections_l0():
 def test_generate_readme_required_sections_l2():
     from scripts.generate_readmes import generate_readme, SECTION_HEADINGS
     record = {
-        "id": "dea:process-test",
+        "id": "processes:process-test",
         "type": "Process",
         "name": "Test BP",
         "version": "1.0.0",
@@ -99,7 +100,7 @@ def test_generate_readme_required_sections_l2():
         "trigger": "Test trigger.",
         "outcome": "Test outcome.",
         "identity": {"verb": "Test", "object": "Process", "scope": "test"},
-        "part_of": ["dea:group-x"],
+        "part_of": ["processes:group-x"],
         "process_scope": {"includes": ["x"], "excludes": ["y"]},
         "ecfConformance": {
             "canonicalReferences": [
@@ -142,7 +143,7 @@ def test_cli_scope_filters_by_record_id(tmp_path):
     # Pick a real record id (the SD/Retire BP) that has a README so the
     # dry-run line is non-empty and we can verify the scope actually
     # narrows the scan to a single record.
-    real_scope = "dea:process-sunset-regulated-strategic-plan"
+    real_scope = "processes:process-sd-retire-umxf3c"  # CR-BP-mv1 id form
     result = subprocess.run(
         [
             sys.executable, "scripts/generate_readmes.py",
@@ -156,7 +157,7 @@ def test_cli_scope_filters_by_record_id(tmp_path):
     assert "total_scanned=1" in summary, f"scope did not filter: {summary}"
 
     # And a non-existent scope should yield zero scanned records.
-    fake_scope = "dea:process-does-not-exist-record-xyz"
+    fake_scope = "processes:process-does-not-exist-record-xyz"
     result2 = subprocess.run(
         [
             sys.executable, "scripts/generate_readmes.py",

@@ -163,14 +163,14 @@ def _check_one(ctx: dict, all_contexts: list[dict], errors: list[str],
                 f"identifier. Each entry must be a single dea:process-* id."
             )
             continue
-        if proc_id.count("dea:process-") > 1 or " - dea:process-" in proc_id:
+        if proc_id.count("processes:process-") > 1 or " - dea:process-" in proc_id:
             errors.append(
                 f"PC-008 ({label}): processes entry {proc_id!r} concatenates "
                 f"multiple process ids into one scalar (YAML indentation "
                 f"defect). Each process id must be its own list item."
             )
             continue
-        if proc_id.startswith("dea:process-"):
+        if proc_id.startswith("processes:process-"):
             # OK: lowercase-namespaced catalog entry id; CR-BP-68 also
             # requires it to resolve when an entities tree is present.
             if known_bp_ids is not None and proc_id not in known_bp_ids:
@@ -208,7 +208,7 @@ def _load_known_bp_ids(catalog_root: Path) -> set | None:
     if not ent_dir.exists():
         return None
     ids: set = set()
-    for yml in sorted(ent_dir.glob("dea:process-*/dea:process-*.yaml")):
+    for yml in sorted(ent_dir.rglob("processes-process-*.yaml")):
         rec = _load_yaml(yml)
         if isinstance(rec, dict) and isinstance(rec.get("id"), str):
             ids.add(rec["id"])
@@ -261,7 +261,7 @@ def self_test() -> int:
 
         # Write a deliberately broken Process Context (PC-001..006 violations).
         broken_ctx = {
-            "id": "dea:pc-bad-01",
+            "id": "processes:pc-bad-01",
             "domain": "NotARealDomain",  # PC-001 violation
             "lifecycle_stage": "NotARealStage",  # PC-002 violation
             "name": "Broken",
@@ -281,7 +281,7 @@ def self_test() -> int:
         # Add a second context with the SAME valid coordinate to trigger PC-003.
         # Two contexts both at PartyAndRelationship x Operate -> PC-003 collision.
         broken_ctx_2 = {
-            "id": "dea:pc-pr-op-dup-1",
+            "id": "processes:pc-pr-op-dup-1",
             "domain": "PartyAndRelationship",
             "lifecycle_stage": "Operate",
             "name": "Customer Demand x Operate (DUPLICATE-1)",
@@ -301,7 +301,7 @@ def self_test() -> int:
             "status": "candidate",
         }
         broken_ctx_2b = {
-            "id": "dea:pc-pr-op-dup-2",
+            "id": "processes:pc-pr-op-dup-2",
             "domain": "PartyAndRelationship",
             "lifecycle_stage": "Operate",
             "name": "Customer Demand x Operate (DUPLICATE-2)",
@@ -325,7 +325,7 @@ def self_test() -> int:
 
         # Promote process_intent to root-model entity (PC-008 / BP-SPEC-01-007).
         broken_ctx_3 = {
-            "id": "dea:pc-bad-03",
+            "id": "processes:pc-bad-03",
             "domain": "PartyAndRelationship",
             "lifecycle_stage": "Build",
             "name": "Promotes Intent",
@@ -350,10 +350,10 @@ def self_test() -> int:
         )
 
         # CR-BP-68: entities fixture so PC-008 resolution checking is active.
-        bp_dir = tmp_path / "entities" / "v1-alpha" / "dea:process-real-one"
+        bp_dir = tmp_path / "entities" / "v1-alpha" / "processes:process-real-one"
         bp_dir.mkdir(parents=True)
-        (bp_dir / "dea:process-real-one.yaml").write_text(
-            yaml.safe_dump({"id": "dea:process-real-one", "type": "Process",
+        (bp_dir / "processes:process-real-one.yaml").write_text(
+            yaml.safe_dump({"id": "processes:process-real-one", "type": "Process",
                             "name": "Real One", "status": "established"},
                            sort_keys=False)
         )
@@ -371,7 +371,7 @@ def self_test() -> int:
         # CR-BP-68 PC-008 violation: concatenated multi-id scalar (the YAML
         # continuation-indent defect found in 5 legacy PC records).
         broken_ctx_4 = {
-            "id": "dea:pc-bad-04",
+            "id": "processes:pc-bad-04",
             "domain": "FinanceAndAccounting",
             "lifecycle_stage": "Build",
             "name": "Concatenated",
@@ -380,7 +380,7 @@ def self_test() -> int:
             "outcomes": [],
             "adjacent_contexts": [],
             "cell_charter": dict(charter_ok),
-            "processes": ["dea:process-real-one - dea:process-other-one"],
+            "processes": ["processes:process-real-one - dea:process-other-one"],
             "status": "candidate",
         }
         (ctx_dir / "concat-violator.yaml").write_text(
@@ -389,7 +389,7 @@ def self_test() -> int:
 
         # CR-BP-68 PC-008 violation: dangling process reference.
         broken_ctx_5 = {
-            "id": "dea:pc-bad-05",
+            "id": "processes:pc-bad-05",
             "domain": "FinanceAndAccounting",
             "lifecycle_stage": "Design",
             "name": "Dangling",
@@ -398,7 +398,7 @@ def self_test() -> int:
             "outcomes": [],
             "adjacent_contexts": [],
             "cell_charter": dict(charter_ok),
-            "processes": ["dea:process-does-not-exist"],
+            "processes": ["processes:process-does-not-exist"],
             "status": "candidate",
         }
         (ctx_dir / "dangling-violator.yaml").write_text(
@@ -416,7 +416,7 @@ def self_test() -> int:
         for f in ctx_dir.iterdir():
             f.unlink()
         fixed_ctx = {
-            "id": "dea:pc-pr-op",
+            "id": "processes:pc-pr-op",
             "domain": "PartyAndRelationship",
             "lifecycle_stage": "Operate",
             "name": "Customer Demand x Operate",
@@ -438,8 +438,8 @@ def self_test() -> int:
                 "Customer demand satisfied within committed SLAs",
                 "Demand signals propagated upstream for planning",
             ],
-            "adjacent_contexts": ["dea:pc-pr-dsgn"],
-            "processes": ["dea:process-real-one"],
+            "adjacent_contexts": ["processes:pc-pr-dsgn"],
+            "processes": ["processes:process-real-one"],
             "cell_charter": {
                 "enterprise_concern": "Customer-facing value delivery.",
                 "lifecycle_concern": "Steady-state operation of customer demand.",
@@ -461,8 +461,8 @@ def self_test() -> int:
                     "Capacity planning (covered in: Design)",
                 ],
                 "adjacent_boundaries": [
-                    "dea:pc-pr-dsgn (Design context for capacity planning)",
-                    "dea:pc-pr-impr (Improve context for demand-signal feedback)",
+                    "processes:pc-pr-dsgn (Design context for capacity planning)",
+                    "processes:pc-pr-impr (Improve context for demand-signal feedback)",
                 ],
             },
             "status": "established",

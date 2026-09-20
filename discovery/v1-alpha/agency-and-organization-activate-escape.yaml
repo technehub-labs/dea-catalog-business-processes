@@ -72,10 +72,10 @@ discovery:
         Authoritative multi-source regulatory evidence; universal sector practice across banking, healthcare, insurance, professional services, telecoms, aviation; strong boundary against Operate and Retire; cross-domain breadth covers the majority of regulated sectors, with the strongest evidence in financial services. Recommend ADMIT-CANONICAL.
     disposition:
       type: ADMIT-CANONICAL
-      canonical_process_ref: dea:process-mobilize-licensed-workforce (proposed)
+      canonical_process_ref: processes:process-ao-activate-jqxtqn (proposed)
     admission:
       status: admitted
-      admitted_as: dea:process-mobilize-licensed-workforce
+      admitted_as: processes:process-ao-activate-jqxtqn
       admitted_by: CR-BP-81
       admitted_at: '2026-09-16'
   context_evaluation:
@@ -90,7 +90,7 @@ discovery:
     process_empty: false
   rationale:
     included: >
-      Targeted escape-clause evaluation of the AgencyAndOrganization x Activate register cell (register v12, backlog-deferred). The discovery finds that licensed-workforce mobilization is a legally-mandated, boundary-clear, evidence-authoritative transformation distinct from steady-state workforce performance management, scoring 10/10 and recommended ADMIT-CANONICAL as dea:process-mobilize-licensed-workforce. The candidate is the strongest in this exercise because of its cross-sector breadth (banking, healthcare, insurance, professional services, telecoms, aviation).
+      Targeted escape-clause evaluation of the AgencyAndOrganization x Activate register cell (register v12, backlog-deferred). The discovery finds that licensed-workforce mobilization is a legally-mandated, boundary-clear, evidence-authoritative transformation distinct from steady-state workforce performance management, scoring 10/10 and recommended ADMIT-CANONICAL as processes:process-ao-activate-jqxtqn. The candidate is the strongest in this exercise because of its cross-sector breadth (banking, healthcare, insurance, professional services, telecoms, aviation).
     excluded: >
       Non-regulated workforce mobilization remains RECORD-PATTERN or MERGE per the CR-BP-63 baseline; no non-regulated candidate is promoted by the escape evidence.
     unresolved: >

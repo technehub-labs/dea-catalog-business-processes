@@ -182,12 +182,12 @@ class ActivityContext:
 def discover_activities() -> list[ActivityContext]:
     """Find every Activity YAML and parse the minimum context for Task authoring."""
     activities: list[ActivityContext] = []
-    for path in sorted(ENTITY_ROOT.glob("dea:activity-*/*.yaml")):
+    for path in sorted(ENTITY_ROOT.rglob("processes-activity-*.yaml")):
         data = yaml.safe_load(path.read_text())
         if data.get("type") != "Activity":
             continue
         rid = data.get("id", "")
-        if not rid.startswith("dea:activity-"):
+        if not rid.startswith("processes:activity-"):
             continue
         ecf = data.get("ecfConformance", {})
         coord_list = ecf.get("canonicalReferences", [])
@@ -215,8 +215,8 @@ def _slugify_task_id(activity_id: str, phase_code: str) -> str:
     `dea:activity-receive-regulator-sunset-directive` + `intake` →
     `dea:task-receive-regulator-sunset-directive-intake`.
     """
-    suffix = activity_id[len("dea:activity-"):]
-    return f"dea:task-{suffix}-{phase_code}"
+    suffix = activity_id[len("processes:activity-"):]
+    return f"processes:task-{suffix}-{phase_code}"
 
 
 def _build_task_yaml(
@@ -448,7 +448,7 @@ def main(argv: list[str] | None = None) -> int:
         # Skip Activities that already have a composes[] with dea:task-* entries.
         existing_composes = ctx.activity_yaml.get("composes") or []
         has_tasks = any(
-            c.get("target_id", "").startswith("dea:task-")
+            c.get("target_id", "").startswith("processes:task-")
             for c in existing_composes
         )
         if has_tasks:

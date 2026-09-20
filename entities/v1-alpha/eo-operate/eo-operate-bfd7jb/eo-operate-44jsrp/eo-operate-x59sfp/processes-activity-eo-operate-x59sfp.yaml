@@ -1,0 +1,69 @@
+id: processes:activity-eo-operate-x59sfp
+type: Activity
+name: Report Quality Performance
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Operate Quality Control that aggregates per-batch inspection records into quality performance reporting (first-pass yield, defect rates) for the owning Process Group.
+belongs_to_business_process: processes:process-eo-operate-44jsrp
+cohesion_rationale: Constituent work shares a single aggregation-and-reporting concern, consumes one input class (per-batch quality records), and serves one audience (the Execution and Fulfillment Process Group). Cohesion score 7/9 assessed at deposition (CR-BP-32 §6; research/l3-candidate-universe.yaml); lowest of the pilot set because reporting cadence varies by stakeholder, retained as a distinct Activity because absorption into Record Inspection Results would mix capture and aggregation concerns.
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: EnablementAndOperations
+    stage: Operate
+    identifier: ecf:enablementAndOperations.operate
+metadata:
+  established_by: CR-BP-42
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-42
+    date: '2026-09-13'
+    change: 'Initial L3 Activity entry; first Activity deposition in the catalog
+
+      (pilot slice). Classified per CR-BP-32 §5 (fails standalone
+
+      executability and resource dedication); decomposition boundary marker
+
+      per CR-BP-32 §12 pending Task records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-report-quality-performance-intake, dea:task-report-quality-performance-verify, dea:task-report-quality-performance-transform, dea:task-report-quality-performance-confirm, dea:task-report-quality-performance-record).'
+composes:
+- source_id: processes:activity-eo-operate-x59sfp
+  target_id: processes:task-eo-operate-intake-fke3jj
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-operate-x59sfp
+  target_id: processes:task-eo-operate-verify-p4qajj
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-operate-x59sfp
+  target_id: processes:task-eo-operate-transform-dnp97s
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-operate-x59sfp
+  target_id: processes:task-eo-operate-confirm-xehr9g
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-operate-x59sfp
+  target_id: processes:task-eo-operate-record-2mskxx
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

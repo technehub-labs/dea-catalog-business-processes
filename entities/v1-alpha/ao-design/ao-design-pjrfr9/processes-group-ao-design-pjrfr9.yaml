@@ -1,0 +1,127 @@
+id: processes:group-ao-design-pjrfr9
+type: ProcessGroup
+version: 1.0.0
+name: Organization and Role Design
+definition: 'The bounded Process Group that organises the Business Process responsibilities of designing the organization, its roles, its competency framework, and its agent topology in the AgencyAndOrganization x Design context. Substrate-neutral per ADR-ECF-002 section 5: covers biological, artificial, and hybrid agents. v2.4.0 grounding (domain-grounding.md §3.3).
+
+  '
+process_context: processes:pc-ao-design-a4hq2r
+scope:
+  includes:
+  - Organization structure design
+  - Role catalogue design
+  - Competency framework design
+  - Agent topology design (human/artificial/hybrid)
+  excludes:
+  - Specific job description authoring (Build stage; adjacent context)
+  - Organization model framing (Conceive stage; adjacent context)
+  - Product or service design (product-value x design)
+outcomes:
+- Organization structure is designed with bounded spans.
+- Role catalogue and competency framework are designed.
+- Agent topology is designed with substrate placement decisions.
+composes:
+- source_id: processes:group-ao-design-pjrfr9
+  target_id: processes:process-ao-design-7dkbur
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (landed CR-BP-21b).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21b.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-ao-design-pjrfr9
+  target_id: processes:process-ao-design-34e95r
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21b.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21b.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-ao-design-pjrfr9
+  target_id: processes:process-ao-design-rve8j5
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21b.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21b.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-ao-design-pjrfr9
+  target_id: processes:process-ao-design-8fzp2b
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21b.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21b.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+process_group_kind: end-to-end
+status: accepted
+lifecycle_status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: AgencyAndOrganization
+    stage: Design
+    identifier: ecf:agencyOrganization.design
+evidence:
+- source: CR-BP-19 (register v2, ratified against ECF v2.4.0)
+  claim: 'This Process Group''s coordinate is ratified-accepted in register
+
+    v2. CR-BP-21b.1 lands the corresponding L1 group as part of the
+
+    AgencyAndOrganization completion tranche.
+
+    '
+  strength: E4
+  reference: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+metadata:
+  established_by: CR-BP-21b.1
+  established_at: '2026-09-08'
+  cross_context_overlap: []
+  change_history:
+  - cr: CR-BP-21b.1
+    date: '2026-09-08'
+    change: 'Initial Process Group record; promoted from the CR-BP-19 register
+
+      v2 (ratified against ECF v2.4.0) as part of the CR-BP-21b.1
+
+      AgencyAndOrganization completion tranche. Substrate-neutral per
+
+      ADR-ECF-002 section 5 / CR-ECF-007.
+
+      '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21b.1-agency-organization-completion.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

@@ -72,10 +72,10 @@ discovery:
         Authoritative multi-source regulatory evidence; universal sector practice across insurance (IFRS 17, Solvency II, NAIC), banking (PSD2, Reg E), and utilities (PUC rate cases); strong boundary against Operate and Retire; cross-domain breadth covers the major regulated sectors with billing or accounting-authorization regimes. Recommend ADMIT-CANONICAL.
     disposition:
       type: ADMIT-CANONICAL
-      canonical_process_ref: dea:process-activate-billing-capability (proposed)
+      canonical_process_ref: processes:process-fa-activate-bzfywk (proposed)
     admission:
       status: admitted
-      admitted_as: dea:process-activate-billing-capability
+      admitted_as: processes:process-fa-activate-bzfywk
       admitted_by: CR-BP-83
       admitted_at: '2026-09-16'
   context_evaluation:
@@ -90,7 +90,7 @@ discovery:
     process_empty: false
   rationale:
     included: >
-      Targeted escape-clause evaluation of the FinanceAndAccounting x Activate register cell (register v12, backlog-deferred). The discovery finds that regulator-acknowledged billing-capability activation (IFRS 17 transition, NAIC statutory-accounting activation, Solvency II billing activation, PUC rate-effective billing activation, PSD2 settlement-account activation) is a legally-mandated, boundary-clear, evidence-authoritative transformation distinct from steady-state billing and revenue recognition, scoring 10/10 and recommended ADMIT-CANONICAL as dea:process-activate-billing-capability.
+      Targeted escape-clause evaluation of the FinanceAndAccounting x Activate register cell (register v12, backlog-deferred). The discovery finds that regulator-acknowledged billing-capability activation (IFRS 17 transition, NAIC statutory-accounting activation, Solvency II billing activation, PUC rate-effective billing activation, PSD2 settlement-account activation) is a legally-mandated, boundary-clear, evidence-authoritative transformation distinct from steady-state billing and revenue recognition, scoring 10/10 and recommended ADMIT-CANONICAL as processes:process-fa-activate-bzfywk.
     excluded: >
       Non-regulated billing-capability activation (internal billing-system go-live without regulator's framework acknowledgement) remains RECORD-PATTERN or MERGE per the CR-BP-63 baseline; no non-regulated candidate is promoted by the escape evidence.
     unresolved: >

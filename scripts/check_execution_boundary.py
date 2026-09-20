@@ -230,10 +230,8 @@ def _load_records(catalog_root: Path) -> list[tuple[Path, dict]]:
     pairs: list[tuple[Path, dict]] = []
     if not base.exists():
         return pairs
-    for entry in sorted(base.iterdir()):
-        if not entry.is_dir():
-            continue
-        yaml_path = entry / f"{entry.name}.yaml"
+    # CR-BP-mv1: walk the containment tree for id-derived record files.
+    for yaml_path in sorted(base.rglob("processes-*.yaml")):
         if not yaml_path.exists():
             continue
         try:
@@ -628,7 +626,7 @@ def main(argv: list[str] | None = None) -> int:
 # -----------------------------------------------------------------------------
 
 
-def _record(id_: str = "dea:process-self-test",
+def _record(id_: str = "processes:process-self-test",
             name: str = "Self Test",
             type_: str = "Process",
             extra: dict | None = None) -> dict:
@@ -663,7 +661,7 @@ def _self_test() -> int:
 
     # --- EXE-001: composes[] with ordering annotation
     r = _record(extra={"composes": [
-        {"target_id": "dea:activity-x",
+        {"target_id": "processes:activity-x",
          "relationship_type": "dea:composes",
          "execution_order": 1}]})
     f = evaluate([(Path("/x"), r)])
@@ -671,24 +669,24 @@ def _self_test() -> int:
 
     # --- EXE-001: clean composes[]
     r = _record(extra={"composes": [
-        {"target_id": "dea:activity-x",
+        {"target_id": "processes:activity-x",
          "relationship_type": "dea:composes"}]})
     f = evaluate([(Path("/x"), r)])
     assert not any(x["rule"] == "EXE-001" for x in f), f
 
     # --- EXE-002: composes with relationship_type=dea:composes + ordering
     r = _record(extra={"composes": [
-        {"target_id": "dea:activity-x",
+        {"target_id": "processes:activity-x",
          "relationship_type": "dea:composes",
-         "precedes": "dea:activity-y"}]})
+         "precedes": "processes:activity-y"}]})
     f = evaluate([(Path("/x"), r)])
     assert any(x["rule"] == "EXE-002" for x in f), f
 
     # --- EXE-002: composes with non-composes relationship_type is OK
     r = _record(extra={"composes": [
-        {"target_id": "dea:activity-x",
+        {"target_id": "processes:activity-x",
          "relationship_type": "references",
-         "precedes": "dea:activity-y"}]})
+         "precedes": "processes:activity-y"}]})
     f = evaluate([(Path("/x"), r)])
     assert not any(x["rule"] == "EXE-002" for x in f), f
 
@@ -819,7 +817,7 @@ def _self_test() -> int:
     assert f == [], f
 
     # --- Universal check: an Activity record with no Workflow refs is clean
-    r = _record(type_=ACTIVITY_TYPE, id_="dea:activity-self-test")
+    r = _record(type_=ACTIVITY_TYPE, id_="processes:activity-self-test")
     f = evaluate([(Path("/x"), r)])
     assert f == [], f
 

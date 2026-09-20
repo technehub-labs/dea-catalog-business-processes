@@ -37,7 +37,7 @@ def load_contribution_schema():
 
 def base_entry() -> dict:
     return {
-        "id": "dea:process-example-process",
+        "id": "processes:process-example-process",
         "name": "Manage Example Process",
         "type": "Process",
         "version": "1.0.0",
@@ -48,7 +48,7 @@ def base_entry() -> dict:
 
 def relationship(target_id, rel_type="serves"):
     return {
-        "source_id": "dea:process-example-process",
+        "source_id": "processes:process-example-process",
         "target_id": target_id,
         "relationship_type": rel_type,
     }
@@ -65,7 +65,7 @@ def test_context_block_shape(loader):
     item = block["items"]
     assert item["required"] == ["ref"]
     assert item["additionalProperties"] is False
-    assert item["properties"]["ref"]["pattern"] == r"^dea:pc-[a-z0-9-]+$"
+    assert item["properties"]["ref"]["pattern"] == r"^processes:pc-[a-z0-9-]+$"
 
 
 @pytest.mark.parametrize("loader", [load_entity_schema, load_contribution_schema])
@@ -89,7 +89,7 @@ def test_ecf_target_identifiers_validate():
     entry["relationships"] = [
         relationship("ecf:customerAndDemand.operate", "serves"),
         relationship("ecf:governanceAndExistence", "contributes-to"),
-        relationship("dea:pc-pr-op", "serves"),
+        relationship("processes:pc-pr-op", "serves"),
     ]
     validate(entry, schema)  # must not raise
 
@@ -97,13 +97,13 @@ def test_ecf_target_identifiers_validate():
 def test_context_block_with_multiple_refs_validates():
     schema = load_entity_schema()
     entry = base_entry()
-    entry["context"] = [{"ref": "dea:pc-pr-op"}, {"ref": "dea:pc-pr-im"}]
+    entry["context"] = [{"ref": "processes:pc-pr-op"}, {"ref": "processes:pc-pr-im"}]
     validate(entry, schema)  # must not raise
 
 
 @pytest.mark.parametrize(
     "bad_ref",
-    ["dea_pc-pr-op", "dea:pc_cd_op", "party-relationship", "dea:group-x", ""],
+    ["dea_pc-pr-op", "dea:pc_cd_op", "party-relationship", "processes:group-x", ""],
 )
 def test_malformed_context_ref_rejected(bad_ref):
     schema = load_entity_schema()
@@ -132,7 +132,7 @@ def test_existing_canonical_entries_still_validate():
     migration; this test locks that no entry broke."""
     schema = load_entity_schema()
     entries = sorted(
-        (ROOT / "entities" / "v1-alpha").glob("*/dea:process-*.yaml")
+        (ROOT / "entities" / "v1-alpha").rglob("processes-process-*.yaml")
     )
     assert entries, "expected canonical process entries"
     for path in entries:

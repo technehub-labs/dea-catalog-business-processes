@@ -5,15 +5,15 @@ check_process_scope.py - Process Scope (L0) validator.
 Implements CR-BP-95 rules PSCOPE-001..PSCOPE-008.
 
 Rules:
-  PSCOPE-001 - ID pattern: id matches `^dea:scope-[a-z0-9-]+$`.
+  PSCOPE-001 - ID pattern: id matches `^processes:scope-[a-z0-9-]+$`.
   PSCOPE-002 - Required fields: id, name, definition, process_context, scope,
                outcomes, decomposition_basis, composes, scope_kind, status,
                lifecycle_status, version must be present and non-empty where
                applicable.
   PSCOPE-003 - Process Context resolution: `process_context` resolves to a
-               known `dea:pc-*` Process Context entity in contexts/v1-alpha/.
+               known `processes:pc-*` Process Context entity in the containment tree.
   PSCOPE-004 - Composes target_id pattern: every composes[].target_id
-               matches `^dea:group-[a-z0-9-]+$`.
+               matches `^processes:group-[a-z0-9-]+$`.
   PSCOPE-005 - Composes target resolution: every composes[].target_id
                resolves to a canonical L1 Process Group entity in
                entities/v1-alpha/. When the catalog has no Process Group
@@ -67,9 +67,9 @@ REQUIRED_FIELDS = (
 
 LIFECYCLE_VALUES = ("candidate", "active", "deprecated", "retired")
 STATUS_VALUES = ("candidate", "accepted", "deferred", "deprecated", "rejected")
-ID_PATTERN = re.compile(r"^dea:scope-[a-z0-9-]+$")
-GROUP_ID_PATTERN = re.compile(r"^dea:group-[a-z0-9-]+$")
-CONTEXT_ID_PATTERN = re.compile(r"^dea:pc-[a-z0-9-]+$")
+ID_PATTERN = re.compile(r"^processes:scope-[a-z0-9-]+$")
+GROUP_ID_PATTERN = re.compile(r"^processes:group-[a-z0-9-]+$")
+CONTEXT_ID_PATTERN = re.compile(r"^processes:pc-[a-z0-9-]+$")
 VERSION_PATTERN = re.compile(r"^\d+\.\d+\.\d+$")
 
 # Mirrors classifications/process-group-kinds.yaml vocabulary
@@ -84,11 +84,12 @@ SCOPE_KIND_VOCAB = (
 
 
 def _load_context_ids(catalog_root: Path) -> set[str]:
-    contexts_dir = catalog_root / "contexts" / "v1-alpha"
-    if not contexts_dir.exists():
+    # CR-BP-mv1: PCs live in the containment tree (contexts/ is retired).
+    entities_dir = catalog_root / "entities" / "v1-alpha"
+    if not entities_dir.exists():
         return set()
     ids: set[str] = set()
-    for path in contexts_dir.glob("*.yaml"):
+    for path in entities_dir.rglob("processes-pc-*.yaml"):
         try:
             with path.open() as f:
                 data = yaml.safe_load(f) or {}
@@ -131,7 +132,7 @@ def _check_one(
     # PSCOPE-001 - ID pattern.
     if not isinstance(eid, str) or not ID_PATTERN.match(eid or ""):
         errors.append(
-            f"PSCOPE-001 ({eid}): id must match `^dea:scope-[a-z0-9-]+$` "
+            f"PSCOPE-001 ({eid}): id must match `^processes:scope-[a-z0-9-]+$` "
             f"(CR-BP-04 §4 family; CR-BP-95 §1)."
         )
 
@@ -146,7 +147,7 @@ def _check_one(
     pc = entry.get("process_context", "")
     if not isinstance(pc, str) or not CONTEXT_ID_PATTERN.match(pc or ""):
         errors.append(
-            f"PSCOPE-003 ({eid}): process_context must match `^dea:pc-[a-z0-9-]+$`."
+            f"PSCOPE-003 ({eid}): process_context must match `^processes:pc-[a-z0-9-]+$`."
         )
     elif context_ids and pc not in context_ids:
         errors.append(
@@ -179,7 +180,7 @@ def _check_one(
         if not isinstance(target_id, str) or not GROUP_ID_PATTERN.match(target_id or ""):
             errors.append(
                 f"PSCOPE-004 ({eid}): composes[{idx}].target_id must match "
-                f"`^dea:group-[a-z0-9-]+$` (got {target_id!r})."
+                f"`^processes:group-[a-z0-9-]+$` (got {target_id!r})."
             )
         elif target_id not in group_ids:
             errors.append(
@@ -332,23 +333,25 @@ def self_test() -> int:
     """Exercise PSCOPE-001..008 on deliberately broken + fixed catalogs."""
     with tempfile.TemporaryDirectory(prefix="pscope_self_test_") as tmp:
         tmp_path = Path(tmp)
-        ctx_dir = tmp_path / "contexts" / "v1-alpha"
-        ent_dir = tmp_path / "entities" / "v1-alpha" / "dea:group-test"
-        ent_dir.mkdir(parents=True)
-        ctx_dir.mkdir(parents=True)
+        ent_root = tmp_path / "entities" / "v1-alpha"
+        cell_dir = ent_root / "pr-operate"
+        pc_dir = cell_dir / "pr-operate-pc0001"
+        grp_dir = cell_dir / "pr-operate-grp001"
+        pc_dir.mkdir(parents=True)
+        grp_dir.mkdir(parents=True)
 
-        # Minimal Process Context.
-        (ctx_dir / "dea:pc-test.yaml").write_text(
-            "id: dea:pc-test\ntype: ProcessContext\nname: Test\nversion: 1.0.0\n",
+        # Minimal Process Context (CR-BP-mv1 containment tree form).
+        (pc_dir / "processes-pc-pr-operate-test001.yaml").write_text(
+            "id: processes:pc-pr-operate-test001\ntype: ProcessContext\nname: Test\nversion: 1.0.0\n",
             encoding="utf-8",
         )
         # Minimal Process Group record (target for the scope's composes).
-        (ent_dir / "dea:group-test.yaml").write_text(
-            "id: dea:group-test\n"
+        (grp_dir / "processes-group-pr-operate-test001.yaml").write_text(
+            "id: processes:group-pr-operate-test001\n"
             "type: ProcessGroup\n"
             "name: Test Group\n"
             "version: 1.0.0\n"
-            "process_context: dea:pc-test\n"
+            "process_context: processes:pc-pr-operate-test001\n"
             "process_group_kind: functional\n"
             "status: active\n"
             "lifecycle_status: active\n"
@@ -361,16 +364,15 @@ def self_test() -> int:
 
         # BAD scope: missing required field, bad kind, bad lifecycle.
         bad_scope_path = (
-            tmp_path / "entities" / "v1-alpha"
-            / "dea:scope-bad" / "dea:scope-bad.yaml"
+            cell_dir / "pr-operate-scpbad" / "processes-scope-pr-operate-bad001.yaml"
         )
         bad_scope_path.parent.mkdir(parents=True)
         bad_scope_path.write_text(
-            "id: dea:scope-bad\n"
+            "id: processes:scope-pr-operate-bad001\n"
             "type: ProcessScope\n"
             "name: Bad Scope\n"
             "version: 1.0.0\n"
-            "process_context: dea:pc-test\n"
+            "process_context: processes:pc-pr-operate-test001\n"
             # missing: definition, scope, outcomes, decomposition_basis, composes,
             #          scope_kind, status, lifecycle_status
             "definition: \n"
@@ -386,16 +388,15 @@ def self_test() -> int:
 
         # GOOD scope: minimal conformant record.
         good_scope_path = (
-            tmp_path / "entities" / "v1-alpha"
-            / "dea:scope-good" / "dea:scope-good.yaml"
+            cell_dir / "pr-operate-scpgood" / "processes-scope-pr-operate-good001.yaml"
         )
         good_scope_path.parent.mkdir(parents=True)
         good_scope_path.write_text(
-            "id: dea:scope-good\n"
+            "id: processes:scope-pr-operate-good001\n"
             "type: ProcessScope\n"
             "name: Good Scope\n"
             "version: 1.0.0\n"
-            "process_context: dea:pc-test\n"
+            "process_context: processes:pc-pr-operate-test001\n"
             "process_group_kind: value-stream\n"
             "scope_kind: value-stream\n"
             "status: active\n"
@@ -407,8 +408,8 @@ def self_test() -> int:
             "  type: value-stream\n"
             "  statement: 'Decomposes the customer-facing value stream.'\n"
             "composes:\n"
-            "  - source_id: dea:scope-good\n"
-            "    target_id: dea:group-test\n"
+            "  - source_id: processes:scope-pr-operate-good001\n"
+            "    target_id: processes:group-pr-operate-test001\n"
             "    relationship_type: composes\n"
             "    status: active\n",
             encoding="utf-8",
@@ -442,7 +443,7 @@ def self_test() -> int:
 
         # --- 3. Empty catalog (no scopes, no groups): expect honest
         # no-records-found pass.
-        (ent_dir / "dea:group-test.yaml").unlink()
+        (grp_dir / "processes-group-pr-operate-test001.yaml").unlink()
         good_scope_path.unlink()
         errors, _ = run_checks(tmp_path)
         if errors:

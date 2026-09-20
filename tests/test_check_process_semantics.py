@@ -106,14 +106,14 @@ def test_strict_mode_fails_on_legacy_fixture(tmp_path):
     # Pick one migrated record and reintroduce the legacy scalar
     # `process_context` so --strict has something to flag.
     legacy_file = next(
-        (sandbox / "entities/v1-alpha").glob("dea:process-customer-channel-*/dea:process-*.yaml")
+        (sandbox / "entities/v1-alpha").rglob("processes-process-*.yaml")
     )
     data = yaml.safe_load(legacy_file.read_text())
     # Drop the canonical context: block and reinstate the legacy
     # scalar alongside a legacy process_audience to manufacture
     # findings.
     data.pop("context", None)
-    data["process_context"] = "dea:pc-pr-b"
+    data["process_context"] = "processes:pc-pr-b"
     data["process_audience"] = "party-relationship"
     legacy_file.write_text(yaml.safe_dump(data, sort_keys=False))
     result = subprocess.run(
@@ -126,27 +126,30 @@ def test_strict_mode_fails_on_legacy_fixture(tmp_path):
     )
 
 
+def _find_record(base, rid):
+    for f in base.rglob("processes-process-*.yaml"):
+        d = yaml.safe_load(f.read_text())
+        if isinstance(d, dict) and d.get("id") == rid:
+            return f
+    raise AssertionError(f"record {rid} not found in sandbox")
+
+
 def test_bp_sem_013_rejects_unresolved_specializes_target(tmp_path):
     """BP-SEM-013: a `specializes` relationship that targets an
     unknown Process must produce a BP-SEM-013 error."""
     import shutil
     sandbox = tmp_path / "sandbox"
     shutil.copytree(ROOT / "entities", sandbox / "entities")
-    shutil.copytree(ROOT / "contexts", sandbox / "contexts")
     # Pick a migrated record and add a specializes relationship
     # toward an unknown target, with no specialization_pattern /
     # specialization_basis.
-    target_file = next(
-        (sandbox / "entities/v1-alpha").glob(
-            "dea:process-customer-journey-design/dea:process-*.yaml"
-        )
-    )
+    target_file = _find_record(sandbox / "entities/v1-alpha", "processes:process-pr-design-j6fakx")
     data = yaml.safe_load(target_file.read_text())
     rels = data.get("relationships", []) or []
     rels.append({
         "source_id": data["id"],
         "relationship_type": "specializes",
-        "target_id": "dea:process-nonexistent-parent",
+        "target_id": "processes:process-nonexistent-parent",
     })
     data["relationships"] = rels
     target_file.write_text(yaml.safe_dump(data, sort_keys=False))
@@ -167,18 +170,9 @@ def test_bp_sem_014_detects_cycle(tmp_path):
     import shutil
     sandbox = tmp_path / "sandbox"
     shutil.copytree(ROOT / "entities", sandbox / "entities")
-    shutil.copytree(ROOT / "contexts", sandbox / "contexts")
     # Pick two unrelated records and create a cycle between them.
-    a_file = next(
-        (sandbox / "entities/v1-alpha").glob(
-            "dea:process-customer-journey-design/dea:process-*.yaml"
-        )
-    )
-    b_file = next(
-        (sandbox / "entities/v1-alpha").glob(
-            "dea:process-customer-experience-design/dea:process-*.yaml"
-        )
-    )
+    a_file = _find_record(sandbox / "entities/v1-alpha", "processes:process-pr-design-j6fakx")
+    b_file = _find_record(sandbox / "entities/v1-alpha", "processes:process-pr-design-pxydu3")
     a_data = yaml.safe_load(a_file.read_text())
     b_data = yaml.safe_load(b_file.read_text())
     a_data["relationships"] = [{
@@ -210,12 +204,7 @@ def test_bp_sem_014_rejects_self_specialization(tmp_path):
     """BP-SEM-014: a record that specializes itself must fail."""
     sandbox = tmp_path / "sandbox"
     shutil.copytree(ROOT / "entities", sandbox / "entities")
-    shutil.copytree(ROOT / "contexts", sandbox / "contexts")
-    target_file = next(
-        (sandbox / "entities/v1-alpha").glob(
-            "dea:process-customer-journey-design/dea:process-*.yaml"
-        )
-    )
+    target_file = _find_record(sandbox / "entities/v1-alpha", "processes:process-pr-design-j6fakx")
     data = yaml.safe_load(target_file.read_text())
     data["relationships"] = [{
         "source_id": data["id"],
@@ -241,17 +230,8 @@ def test_bp_sem_013_accepts_valid_specializes(tmp_path):
     import shutil
     sandbox = tmp_path / "sandbox"
     shutil.copytree(ROOT / "entities", sandbox / "entities")
-    shutil.copytree(ROOT / "contexts", sandbox / "contexts")
-    target_file = next(
-        (sandbox / "entities/v1-alpha").glob(
-            "dea:process-customer-journey-design/dea:process-*.yaml"
-        )
-    )
-    parent_file = next(
-        (sandbox / "entities/v1-alpha").glob(
-            "dea:process-customer-experience-design/dea:process-*.yaml"
-        )
-    )
+    target_file = _find_record(sandbox / "entities/v1-alpha", "processes:process-pr-design-j6fakx")
+    parent_file = _find_record(sandbox / "entities/v1-alpha", "processes:process-pr-design-pxydu3")
     data = yaml.safe_load(target_file.read_text())
     parent_data = yaml.safe_load(parent_file.read_text())
     data["relationships"] = [{

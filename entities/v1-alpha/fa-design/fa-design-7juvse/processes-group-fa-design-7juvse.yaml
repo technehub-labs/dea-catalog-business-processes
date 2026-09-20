@@ -1,0 +1,123 @@
+id: processes:group-fa-design-7juvse
+type: ProcessGroup
+version: 1.0.0
+name: Financial Design
+definition: 'The bounded Process Group that organises the Business Process responsibilities of designing the enterprise''s financial controls, tax position, and treasury model in the FinanceAndAccounting x Design context. v2.4.0 grounding (register v2 FA/design cell).
+
+  '
+process_context: processes:pc-fa-design-4j8evh
+scope:
+  includes:
+  - Financial controls and policy design
+  - Tax position and strategy design
+  - Treasury and funding model design
+  - Financial plan structure design (seeded by CR-BP-21e)
+  excludes:
+  - Financial strategy framing (Conceive stage; adjacent context)
+  - Financial system build (Build stage; adjacent context)
+outcomes:
+- Financial controls, tax position, and treasury model are designed to the approved architecture.
+- Designs are ready for financial system build.
+composes:
+- source_id: processes:group-fa-design-7juvse
+  target_id: processes:process-fa-design-vk422z
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (landed CR-BP-21e).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21e.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-fa-design-7juvse
+  target_id: processes:process-fa-design-uun4ja
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21e.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21e.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-fa-design-7juvse
+  target_id: processes:process-fa-design-ds4drw
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21e.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21e.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-fa-design-7juvse
+  target_id: processes:process-fa-design-k5sgfa
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21e.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21e.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+process_group_kind: end-to-end
+status: accepted
+lifecycle_status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: FinanceAndAccounting
+    stage: Design
+    identifier: ecf:financeAccounting.design
+evidence:
+- source: CR-BP-19 (register v2, ratified against ECF v2.4.0)
+  claim: 'This Process Group''s coordinate is ratified-accepted in register
+
+    v2. CR-BP-21e.1 lands the corresponding L1 group as part of the
+
+    FinanceAndAccounting completion tranche.
+
+    '
+  strength: E4
+  reference: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+metadata:
+  established_by: CR-BP-21e.1
+  established_at: '2026-09-08'
+  cross_context_overlap: []
+  change_history:
+  - cr: CR-BP-21e.1
+    date: '2026-09-08'
+    change: 'Initial Process Group record; promoted from the CR-BP-19 register
+
+      v2 (ratified against ECF v2.4.0) as part of the CR-BP-21e.1
+
+      FinanceAndAccounting completion tranche. Composes 4 L2 processes.
+
+      '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21e.1-finance-accounting-completion.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

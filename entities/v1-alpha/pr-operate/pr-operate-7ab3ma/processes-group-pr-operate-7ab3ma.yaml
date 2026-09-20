@@ -1,0 +1,136 @@
+id: processes:group-pr-operate-7ab3ma
+type: ProcessGroup
+version: 1.0.0
+name: Customer Lifecycle Management
+definition: 'The bounded Process Group that organizes the Business Process
+
+  responsibilities of operating the customer lifecycle within the
+
+  PartyAndRelationship x Operate context. This group captures the
+
+  end-to-end work of sustaining an active customer relationship:
+
+  ongoing management, escalation handling, renewal coordination,
+
+  win-back, and portfolio allocation. The group is the canonical
+
+  Process Group for the customer-lifecycle value stream; functional
+
+  refinements (e.g. enterprise-customer management, SMB-customer
+
+  management) specialize the L2 processes beneath it, not the
+
+  group itself.
+
+  '
+process_context: processes:pc-pr-operate-pwue5a
+scope:
+  includes:
+  - Account management for active customers
+  - Customer escalation handling
+  - Customer renewal coordination
+  - Customer win-back coordination
+  - Customer portfolio allocation
+  excludes:
+  - New customer acquisition (Conceive stage; adjacent context)
+  - Customer onboarding implementation (Build stage; adjacent context)
+  - Customer support ticket resolution (Support Staff BP, not L2)
+  - Customer churn prediction modelling (Analytics BP, not L2)
+outcomes:
+- Active customer relationships are sustained across their lifecycle.
+- Customer escalations are resolved within agreed service-level targets.
+- Customer renewals are coordinated with minimal revenue leakage.
+- Customer portfolio allocation is data-informed.
+composes:
+- source_id: processes:group-pr-operate-7ab3ma
+  target_id: processes:process-pr-operate-bbe384
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The Manage Customer Relationship L2 process is the principal
+
+    responsibility of the customer-lifecycle value stream within
+
+    PartyAndRelationship x Operate; this composition is the canonical
+
+    starting point.
+
+    '
+  evidence: docs/examples/manage-customer-relationship.md
+  provenance:
+    type: migration
+    reference: CR-BP-12 (promotion of metadata.group label)
+    asserted_by: dea-team
+    asserted_at: '2026-09-04'
+process_group_kind: end-to-end
+status: accepted
+lifecycle_status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: PartyAndRelationship
+    stage: Operate
+    identifier: ecf:partyRelationship.operate
+evidence:
+- source: APQC PCF 7.0
+  claim: 'The customer lifecycle (Acquire, Onboard, Retain, Win-back)
+
+    is a recognized cross-industry process frame; the L1 grouping
+
+    follows that frame.
+
+    '
+  strength: E3
+  url: https://www.apqc.org/resource-library/resource-listing/apqc-process-classification-framework-pcf-cross-industry-pdf-13
+- source: CR-BP-11 (49-coordinate discovery register)
+  claim: 'The party-relationship x operate coordinate carries 5 accepted L1
+
+    candidates; this record is the first to be promoted from the
+
+    register.
+
+    '
+  strength: E4
+  reference: entities/v1-alpha/dea:group-customer-lifecycle-management/research/L1-REGISTER-v0.1.md
+metadata:
+  established_by: CR-BP-12
+  established_at: '2026-09-04'
+  cross_context_overlap: []
+  change_history:
+  - cr: CR-BP-12
+    date: '2026-09-04'
+    change: 'Initial Process Group record; promoted from
+
+      metadata.group label on dea:process-manage-customer-relationship
+
+      (CR-BP-03C) into a governed first-class record.
+
+      '
+  - cr: CR-BP-13
+    date: '2026-09-05'
+    change: 'Research ratification. The CR-BP-11 49-coordinate register
+
+      that produced this Process Group was ratified on 2026-09-05:
+
+      38 coordinates ratified-accepted; 11 backlog-deferred
+
+      (Activate/Retire transition stages). The ratified register
+
+      lives at this entity''s research/l1-register.yaml and
+
+      research/l1-candidate-universe.yaml.
+
+      '
+links:
+- rel: documentation
+  href: docs/examples/manage-customer-relationship.md
+- rel: change-request
+  href: change-requests/CR-BP-12-process-group-profile.md
+- rel: research-register
+  href: docs/research/l1-register.yaml

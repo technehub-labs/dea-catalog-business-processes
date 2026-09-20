@@ -36,8 +36,8 @@ def test_self_test_passes() -> None:
 def test_cd_b_records_migrated() -> None:
     """cd-b records carry the canonical context: block and have no
     process_audience field."""
-    for pid in ("dea:process-customer-channel-and-acquisition-build",
-                "dea:process-demand-generation-build"):
+    for pid in ("processes:process-customer-channel-and-acquisition-build",
+                "processes:process-demand-generation-build"):
         path = list((REPO_ROOT / f"entities/v1-alpha/{pid}").glob(f"{pid}.yaml"))[0]
         data = yaml.safe_load(path.read_text())
         assert data.get("process_intent") == "operate", (
@@ -63,8 +63,8 @@ def test_cd_b_records_migrated() -> None:
 
 def test_cd_c_records_migrated() -> None:
     """cd-c records migrated to canonical 'develop' intent."""
-    for pid in ("dea:process-customer-strategy-conception",
-                "dea:process-market-and-demand-conception"):
+    for pid in ("processes:process-customer-strategy-conception",
+                "processes:process-market-and-demand-conception"):
         path = list((REPO_ROOT / f"entities/v1-alpha/{pid}").glob(f"{pid}.yaml"))[0]
         data = yaml.safe_load(path.read_text())
         assert data.get("process_intent") == "develop", (
@@ -73,7 +73,7 @@ def test_cd_c_records_migrated() -> None:
         assert "process_audience" not in data
         assert "process_context" not in data
         ctx = data.get("context")
-        assert isinstance(ctx, list) and ctx[0].get("ref") == "dea:pc-pr-c"
+        assert isinstance(ctx, list) and ctx[0].get("ref") == "processes:pc-pr-c"
         rels = data.get("relationships", [])
         assert any(r.get("relationship_type") == "serves"
                    and r.get("target_id") == "ecf:customerAndDemand.conceive"
@@ -82,10 +82,10 @@ def test_cd_c_records_migrated() -> None:
 
 def test_change_history_appended() -> None:
     """Every migrated record carries a CR-BP-15-IMP Phase 5 history entry."""
-    for pid in ("dea:process-customer-channel-and-acquisition-build",
-                "dea:process-demand-generation-build",
-                "dea:process-customer-strategy-conception",
-                "dea:process-market-and-demand-conception"):
+    for pid in ("processes:process-customer-channel-and-acquisition-build",
+                "processes:process-demand-generation-build",
+                "processes:process-customer-strategy-conception",
+                "processes:process-market-and-demand-conception"):
         path = list((REPO_ROOT / f"entities/v1-alpha/{pid}").glob(f"{pid}.yaml"))[0]
         data = yaml.safe_load(path.read_text())
         history = data.get("metadata", {}).get("change_history", [])
@@ -99,14 +99,14 @@ def test_migration_is_idempotent() -> None:
     """Re-applying the cd-b tranche produces no further changes."""
     import hashlib
     before = {}
-    for pid in ("dea:process-customer-channel-and-acquisition-build",
-                "dea:process-demand-generation-build"):
+    for pid in ("processes:process-customer-channel-and-acquisition-build",
+                "processes:process-demand-generation-build"):
         path = list((REPO_ROOT / f"entities/v1-alpha/{pid}").glob(f"{pid}.yaml"))[0]
         before[pid] = hashlib.sha256(path.read_bytes()).hexdigest()
     _run("--tranche", "cd-b")
     after = {}
-    for pid in ("dea:process-customer-channel-and-acquisition-build",
-                "dea:process-demand-generation-build"):
+    for pid in ("processes:process-customer-channel-and-acquisition-build",
+                "processes:process-demand-generation-build"):
         path = list((REPO_ROOT / f"entities/v1-alpha/{pid}").glob(f"{pid}.yaml"))[0]
         after[pid] = hashlib.sha256(path.read_bytes()).hexdigest()
     assert before == after, "migration is not idempotent"

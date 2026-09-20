@@ -1,0 +1,73 @@
+id: processes:activity-fa-conceive-p34u93
+type: Activity
+name: Frame Funding and Capital Approach
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Frame Finance Strategy that frames the funding and capital approach (sources, structure, posture) the strategy commits to.
+belongs_to_business_process: processes:process-fa-conceive-4uqqvg
+cohesion_rationale: Constituent work shares a single funding concern (how the enterprise is capitalized), one reference class (the bounded monetary model), and one recognizable portion of the parent outcome (funding and capital approach). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: FinanceAndAccounting
+    stage: Conceive
+    identifier: ecf:financeAccounting.conceive
+metadata:
+  established_by: CR-BP-52
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-52
+    date: '2026-09-13'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-52
+
+      FinanceAndAccounting Conceive + Design + Build tranche (pattern
+
+      proven by CR-BP-42 through CR-BP-51). Classified per CR-BP-32
+
+      section 5 (fails standalone executability and resource dedication);
+
+      decomposition boundary marker per CR-BP-32 section 12 pending Task
+
+      records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-frame-funding-and-capital-approach-intake, dea:task-frame-funding-and-capital-approach-verify, dea:task-frame-funding-and-capital-approach-transform, dea:task-frame-funding-and-capital-approach-confirm, dea:task-frame-funding-and-capital-approach-record).'
+composes:
+- source_id: processes:activity-fa-conceive-p34u93
+  target_id: processes:task-fa-conceive-intake-4kx4pq
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-fa-conceive-p34u93
+  target_id: processes:task-fa-conceive-verify-mrfsye
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-fa-conceive-p34u93
+  target_id: processes:task-fa-conceive-transform-rdcjpp
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-fa-conceive-p34u93
+  target_id: processes:task-fa-conceive-confirm-wcbapw
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-fa-conceive-p34u93
+  target_id: processes:task-fa-conceive-record-b8wpp7
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

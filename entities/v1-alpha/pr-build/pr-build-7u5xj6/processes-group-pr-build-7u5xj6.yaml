@@ -1,0 +1,105 @@
+id: processes:group-pr-build-7u5xj6
+type: ProcessGroup
+version: 1.0.0
+name: Customer Channel and Acquisition Build
+definition: 'The bounded Process Group that organizes the Business Process responsibilities of building customer channels, acquisition engines, and demand-generation infrastructure in the PartyAndRelationship x Build context. This group captures the work of standing up the operational assets that will acquire customers and generate demand: channel infrastructure, marketing automation, and demand-generation engines. The group is the canonical Process Group for the customer-acquisition value stream.
+
+  '
+process_context: processes:pc-pr-build-a46hp7
+scope:
+  includes:
+  - Channel infrastructure build
+  - Acquisition engine build
+  - Marketing automation build
+  - Demand-generation engine build
+  excludes:
+  - Customer strategy framing (Conceive stage)
+  - Customer experience design (Design stage)
+  - Live customer operation (Operate stage)
+outcomes:
+- Channel infrastructure is operational.
+- Acquisition engine produces qualified leads.
+- Demand-generation engine produces sustained demand.
+composes:
+- source_id: processes:group-pr-build-7u5xj6
+  target_id: processes:process-pr-build-nygvw7
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process is a principal responsibility of the
+
+    Customer Channel and Acquisition Build value stream within PartyAndRelationship.
+
+    This composition is canonical per CR-BP-13a.
+
+    '
+  evidence: docs/examples/dea-group-customer-channel-and-acquisition-build.md
+  provenance:
+    type: architecture-review
+    reference: CR-BP-13a
+    asserted_by: dea-team
+    asserted_at: '2026-09-05'
+- source_id: processes:group-pr-build-7u5xj6
+  target_id: processes:process-pr-build-4kb2pt
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process is a principal responsibility of the
+
+    Customer Channel and Acquisition Build value stream within PartyAndRelationship.
+
+    This composition is canonical per CR-BP-13a.
+
+    '
+  evidence: docs/examples/dea-group-customer-channel-and-acquisition-build.md
+  provenance:
+    type: architecture-review
+    reference: CR-BP-13a
+    asserted_by: dea-team
+    asserted_at: '2026-09-05'
+process_group_kind: end-to-end
+status: accepted
+lifecycle_status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: PartyAndRelationship
+    stage: Build
+    identifier: ecf:partyRelationship.build
+evidence:
+- source: CR-BP-13a (49-coordinate discovery register, ratified)
+  claim: 'This Process Group''s coordinate was ratified as accepted
+
+    in CR-BP-13; the register records the L1 candidates and
+
+    L2 process names that compose this group.
+
+    '
+  strength: E4
+  reference: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+metadata:
+  established_by: CR-BP-13a
+  established_at: '2026-09-05'
+  cross_context_overlap: []
+  change_history:
+  - cr: CR-BP-13a
+    date: '2026-09-05'
+    change: 'Initial Process Group record; promoted from the CR-BP-11
+
+      49-coordinate register (ratified by CR-BP-13) as part of
+
+      the CR-BP-13a admission tranche.
+
+      '
+links:
+- rel: change-request
+  href: change-requests/cr-bp-13a-customer-and-demand-admission.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

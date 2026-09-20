@@ -1,0 +1,71 @@
+id: processes:pc-pr-build-a46hp7
+domain: PartyAndRelationship
+lifecycle_stage: Build
+name: Customer Channel and Acquisition Build
+definition: 'The bounded enterprise context for **building** customer channels, acquisition engines, and demand-generation infrastructure in the **customer and demand** domain. This context addresses the work of standing up the operational assets that will acquire customers and generate demand: channel infrastructure, marketing automation, and demand-generation engines.
+
+  '
+scope:
+  includes:
+  - Channel infrastructure build
+  - Acquisition engine build
+  - Marketing automation build
+  - Demand-generation engine build
+  excludes:
+  - Customer strategy framing (Conceive stage)
+  - Customer experience design (Design stage)
+  - Live customer operation (Operate stage)
+outcomes:
+- Channel infrastructure is operational.
+- Acquisition engine produces qualified leads.
+- Demand-generation engine produces sustained demand.
+adjacent_contexts:
+- processes:pc-pr-conceive-6xztsq
+- processes:pc-pr-design-hrcdy4
+- processes:pc-pr-operate-pwue5a
+- processes:pc-pr-activate-mwq7bj
+processes:
+- processes:process-pr-build-nygvw7
+- processes:process-pr-build-4kb2pt
+cell_charter:
+  enterprise_concern: 'Customer and demand: the enterprise''s exchange with its customer base.'
+  lifecycle_concern: 'Build: standing up the operational assets that acquire customers and generate demand.'
+  combined_semantic_meaning: 'Standing up the channels, acquisition engines, and demand-generation infrastructure that will carry customer value into the Operate stage.
+
+    '
+  expected_outcomes:
+  - Channel infrastructure is operational.
+  - Acquisition engine produces qualified leads.
+  - Demand-generation engine produces sustained demand.
+  inclusions:
+  - Channel infrastructure build
+  - Acquisition engine build
+  - Marketing automation build
+  exclusions:
+  - Customer strategy framing (Conceive stage)
+  - Customer experience design (Design stage)
+  - Live customer operation (Operate stage)
+  adjacent_boundaries:
+  - 'processes:pc-pr-conceive-6xztsq (Conceive): strategy is the build''s input.'
+  - 'processes:pc-pr-design-hrcdy4 (Design): experience/journey/demand designs guide the build.'
+  - 'processes:pc-pr-operate-pwue5a (Operate): built channels and engines operate on active customers.'
+  - 'processes:pc-pr-activate-mwq7bj (Activate): built assets activate at first-customer onboarding.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-13a
+established_at: '2026-09-05'
+change_history:
+- cr: CR-BP-13a
+  date: '2026-09-05'
+  change: 'Initial Process Context record; promoted from the CR-BP-11
+
+    49-coordinate register (ratified by CR-BP-13) as part of the
+
+    CustomerAndDomain admission tranche (CR-BP-13a).
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-13a-customer-and-demand-admission.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

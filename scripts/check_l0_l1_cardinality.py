@@ -5,7 +5,7 @@ check_l0_l1_cardinality.py :  L0 (ProcessContext) <-> L1 (ProcessGroup) cardinal
 Implements CR-BP-100 rules L0L1-CARD-001..003.
 
 Doctrine (eaojnr 2026-09-19): the L0 layer is the Process Context matrix
-(contexts/v1-alpha/dea:pc-*) and is already canonical; the L1 layer is the
+(processes:pc-*) and is already canonical; the L1 layer is the
 Process Group records (entities/v1-alpha/dea:group-*). The canonical
 cardinality is exactly one L1 Process Group per L0 Process Context (1:1)
 and exactly one L0 Process Context per L1 Process Group (1:1). This
@@ -23,7 +23,7 @@ Rules:
                   Builds a (group_id -> process_context) map from
                   entities/v1-alpha/dea:group-*/*.yaml and asserts each
                   declared process_context resolves to a known PC in
-                  contexts/v1-alpha/. PG records whose process_context
+                  tree. PG records whose process_context
                   is missing, malformed, or unknown fail.
   L0L1-CARD-003 :  ProcessScope (dea:scope-*) is uninstantiated by design.
                   Asserts that the entities tree contains zero ProcessScope
@@ -50,17 +50,17 @@ from pathlib import Path
 
 import yaml
 
-ID_PC_PATTERN = re.compile(r"^dea:pc-[a-z0-9-]+$")
-ID_GROUP_PATTERN = re.compile(r"^dea:group-[a-z0-9-]+$")
+ID_PC_PATTERN = re.compile(r"^processes:pc-[a-z0-9-]+$")
+ID_GROUP_PATTERN = re.compile(r"^processes:group-[a-z0-9-]+$")
 ID_SCOPE_PATTERN = re.compile(r"^dea:scope-[a-z0-9-]+$")
 
 
-def _load_pc_ids(contexts_dir: Path) -> set[str]:
-    """Load all canonical Process Context ids from contexts/v1-alpha/."""
+def _load_pc_ids(entities_dir: Path) -> set[str]:
+    """Load all canonical Process Context ids (CR-BP-mv1 containment tree)."""
     ids: set[str] = set()
-    if not contexts_dir.exists():
+    if not entities_dir.exists():
         return ids
-    for path in sorted(contexts_dir.glob("*.yaml")):
+    for path in sorted(entities_dir.rglob("processes-pc-*.yaml")):
         if path.name == "README.md":
             continue
         try:
@@ -151,8 +151,8 @@ def _check_cardinality(
         if pc_ids and pc not in pc_ids:
             errors.append(
                 f"L0L1-CARD-002 ({gid}): process_context={pc!r} does not resolve "
-                f"to a canonical Process Context in contexts/v1-alpha/. Known "
-                f"contexts: {len(pc_ids)} entries."
+                f"to a canonical Process Context in the containment tree. "
+                f"Known contexts: {len(pc_ids)} entries."
             )
 
     # L0L1-CARD-003 :  ProcessScope is uninstantiated by design.
@@ -171,10 +171,10 @@ def run_checks(catalog_root: Path) -> tuple[list[str], list[dict]]:
     errors: list[str] = []
     suggestions: list[dict] = []
 
-    contexts_dir = catalog_root / "contexts" / "v1-alpha"
+    entities_dir = catalog_root / "entities" / "v1-alpha"
     entities_dir = catalog_root / "entities" / "v1-alpha"
 
-    pc_ids = _load_pc_ids(contexts_dir)
+    pc_ids = _load_pc_ids(entities_dir)
     group_records, scope_records = _load_pgs(entities_dir)
 
     if not entities_dir.exists():
@@ -198,23 +198,23 @@ def self_test() -> int:
     """Exercise L0L1-CARD-001..003 on deliberately broken + fixed catalogs."""
     with tempfile.TemporaryDirectory(prefix="l0l1_card_self_test_") as tmp:
         tmp_path = Path(tmp)
-        ctx_dir = tmp_path / "contexts" / "v1-alpha"
         ent_dir = tmp_path / "entities" / "v1-alpha"
-        ctx_dir.mkdir(parents=True)
         ent_dir.mkdir(parents=True)
 
         def _reset() -> None:
-            for p in ent_dir.glob("*.yaml"):
+            for p in ent_dir.rglob("*.yaml"):
                 p.unlink()
 
         def _write_pc(pc_id: str, name: str) -> None:
-            (ctx_dir / f"{pc_id}.yaml").write_text(
+            fname = pc_id.replace(":", "-") + ".yaml"
+            (ent_dir / fname).write_text(
                 f"id: {pc_id}\ntype: ProcessContext\nname: {name}\nversion: 1.0.0\n",
                 encoding="utf-8",
             )
 
         def _write_pg(gid: str, pc_id: str) -> None:
-            (ent_dir / f"{gid}.yaml").write_text(
+            fname = gid.replace(":", "-") + ".yaml"
+            (ent_dir / fname).write_text(
                 f"id: {gid}\ntype: ProcessGroup\nname: {gid}\nversion: 1.0.0\n"
                 f"process_context: {pc_id}\nprocess_group_kind: functional\n"
                 f"status: active\nlifecycle_status: active\n",
@@ -222,15 +222,16 @@ def self_test() -> int:
             )
 
         def _write_scope(sid: str) -> None:
-            (ent_dir / f"{sid}.yaml").write_text(
+            fname = sid.replace(":", "-") + ".yaml"
+            (ent_dir / fname).write_text(
                 f"id: {sid}\ntype: ProcessScope\nname: {sid}\nversion: 1.0.0\n",
                 encoding="utf-8",
             )
 
         # --- Scenario 1: clean (1 PC, 1 PG). expect PASS.
         _reset()
-        _write_pc("dea:pc-a", "A")
-        _write_pg("dea:group-a1", "dea:pc-a")
+        _write_pc("processes:pc-a", "A")
+        _write_pg("processes:group-a1", "processes:pc-a")
         errs, _ = run_checks(tmp_path)
         if errs:
             print("L0L1-CARD self-test: expected clean pass on 1:1 catalog; got:")
@@ -240,11 +241,11 @@ def self_test() -> int:
 
         # --- Scenario 2: 0 PG in dea:pc-b. expect CARD-001 failure.
         _reset()
-        _write_pc("dea:pc-a", "A")
-        _write_pc("dea:pc-b", "B")
-        _write_pg("dea:group-b1", "dea:pc-b")
+        _write_pc("processes:pc-a", "A")
+        _write_pc("processes:pc-b", "B")
+        _write_pg("processes:group-b1", "processes:pc-b")
         errs, _ = run_checks(tmp_path)
-        if not any("L0L1-CARD-001" in e and "dea:pc-a" in e for e in errs):
+        if not any("L0L1-CARD-001" in e and "processes:pc-a" in e for e in errs):
             print("L0L1-CARD self-test: expected CARD-001 (dea:pc-a orphan) but got:")
             for e in errs:
                 print(f"  {e}")
@@ -252,11 +253,11 @@ def self_test() -> int:
 
         # --- Scenario 3: 2 PG under dea:pc-a. expect CARD-001 failure (many).
         _reset()
-        _write_pc("dea:pc-a", "A")
-        _write_pg("dea:group-a1", "dea:pc-a")
-        _write_pg("dea:group-a2", "dea:pc-a")
+        _write_pc("processes:pc-a", "A")
+        _write_pg("processes:group-a1", "processes:pc-a")
+        _write_pg("processes:group-a2", "processes:pc-a")
         errs, _ = run_checks(tmp_path)
-        if not any("L0L1-CARD-001" in e and "2 Process Groups" in e and "dea:pc-a" in e for e in errs):
+        if not any("L0L1-CARD-001" in e and "2 Process Groups" in e and "processes:pc-a" in e for e in errs):
             print("L0L1-CARD self-test: expected CARD-001 (dea:pc-a multi-PG) but got:")
             for e in errs:
                 print(f"  {e}")
@@ -264,10 +265,10 @@ def self_test() -> int:
 
         # --- Scenario 4: PG with unknown PC. expect CARD-002 failure.
         _reset()
-        _write_pc("dea:pc-a", "A")
-        _write_pg("dea:group-bad", "dea:pc-unknown")
+        _write_pc("processes:pc-a", "A")
+        _write_pg("processes:group-bad", "processes:pc-unknown")
         errs, _ = run_checks(tmp_path)
-        if not any("L0L1-CARD-002" in e and "dea:group-bad" in e for e in errs):
+        if not any("L0L1-CARD-002" in e and "processes:group-bad" in e for e in errs):
             print("L0L1-CARD self-test: expected CARD-002 (dea:group-bad unknown PC) but got:")
             for e in errs:
                 print(f"  {e}")
@@ -275,19 +276,19 @@ def self_test() -> int:
 
         # --- Scenario 4b: PG with malformed process_context. expect CARD-002 failure.
         _reset()
-        _write_pc("dea:pc-a", "A")
-        _write_pg("dea:group-bad", "dea:pc-")
+        _write_pc("processes:pc-a", "A")
+        _write_pg("processes:group-bad", "processes:pc-")
         # The id pattern requires a-z0-9- chars after pc-, so write a real id but
         # with a process_context value that violates the pattern. Easier: write a
         # custom invalid value into process_context field via direct yaml.
-        (ent_dir / "dea:group-bad.yaml").write_text(
+        (ent_dir / "processes:group-bad.yaml").write_text(
             "id: dea:group-bad\ntype: ProcessGroup\nname: Bad\nversion: 1.0.0\n"
             "process_context: 'not-a-pc'\nprocess_group_kind: functional\n"
             "status: active\nlifecycle_status: active\n",
             encoding="utf-8",
         )
         errs, _ = run_checks(tmp_path)
-        if not any("L0L1-CARD-002" in e and "dea:group-bad" in e and "missing" in e for e in errs):
+        if not any("L0L1-CARD-002" in e and "processes:group-bad" in e and "missing" in e for e in errs):
             print("L0L1-CARD self-test: expected CARD-002 (malformed PC) but got:")
             for e in errs:
                 print(f"  {e}")
@@ -295,8 +296,8 @@ def self_test() -> int:
 
         # --- Scenario 5: ProcessScope record. expect CARD-003 failure.
         _reset()
-        _write_pc("dea:pc-a", "A")
-        _write_pg("dea:group-a1", "dea:pc-a")
+        _write_pc("processes:pc-a", "A")
+        _write_pg("processes:group-a1", "processes:pc-a")
         _write_scope("dea:scope-pilot")
         errs, _ = run_checks(tmp_path)
         if not any("L0L1-CARD-003" in e and "ProcessScope" in e for e in errs):

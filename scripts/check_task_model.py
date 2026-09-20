@@ -84,8 +84,8 @@ ENTITIES = ROOT / "entities" / "v1-alpha"
 # Constants
 # -----------------------------------------------------------------------------
 
-ID_PATTERN = r"^dea:task-[a-z0-9-]+$"
-ACTIVITY_ID_PATTERN = r"^dea:activity-[a-z0-9-]+$"
+ID_PATTERN = r"^processes:task-[a-z0-9-]+$"
+ACTIVITY_ID_PATTERN = r"^processes:activity-[a-z0-9-]+$"
 
 # Disallowed-at-L4 fields per CR-BP-93 §7 (Execution lives downstream).
 DISALLOWED_L4_FIELDS = frozenset({
@@ -130,21 +130,40 @@ def _iter_task_records(entities_dir: Path = ENTITIES):
             yield path, data
 
 
+_ACTIVITY_INDEX: dict[str, dict[str, Path]] = {}
+
+
+def _activity_index(entities_dir: Path = ENTITIES) -> dict[str, Path]:
+    """Build (and cache) the id -> path index for canonical Activity records.
+
+    CR-BP-mv1: records now live in the L0-rooted containment tree; resolution
+    is by id, not by flat path construction. Filenames are id-derived
+    (`processes-activity-*.yaml`) so the index is a single recursive walk.
+    The cache is keyed on entities_dir so fixture tests with tmp roots get
+    their own index.
+    """
+    key = str(entities_dir)
+    if key in _ACTIVITY_INDEX:
+        return _ACTIVITY_INDEX[key]
+    idx: dict[str, Path] = {}
+    if entities_dir.exists():
+        for p in entities_dir.rglob("processes-activity-*.yaml"):
+            try:
+                with p.open() as f:
+                    data = yaml.safe_load(f)
+            except Exception:
+                continue
+            if isinstance(data, dict) and data.get("type") == "Activity" and data.get("id"):
+                idx[str(data["id"])] = p
+    _ACTIVITY_INDEX[key] = idx
+    return idx
+
+
 def _activity_exists(activity_id: str, entities_dir: Path = ENTITIES) -> bool:
     """Resolve the activity id against the canonical catalog."""
     if not _ACTIVITY_ID_RE.match(activity_id):
         return False
-    # A canonical Activity record at entities/v1-alpha/<id>/<id>.yaml
-    expected_dir = entities_dir / activity_id
-    expected_file = expected_dir / f"{activity_id}.yaml"
-    if not expected_file.exists():
-        return False
-    try:
-        with open(expected_file) as f:
-            data = yaml.safe_load(f)
-    except Exception:
-        return False
-    return isinstance(data, dict) and data.get("type") == "Activity"
+    return activity_id in _activity_index(entities_dir=entities_dir)
 
 
 # -----------------------------------------------------------------------------
@@ -333,11 +352,11 @@ def verdict(findings: list[Finding]) -> str:
 def _self_test_record() -> dict:
     """A self-test Task that should pass TASK-001..005."""
     return {
-        "id": "dea:task-self-test",
+        "id": "processes:task-self-test",
         "type": "Task",
         "name": "Self Test Submission",
         "definition": "A bounded self-test fixture Task used by check_task_model.py.",
-        "belongs_to_activity": "dea:activity-self-test",
+        "belongs_to_activity": "processes:activity-self-test",
         "trigger": "Self-test invocation",
         "outcome": "Self-test exit code 0",
         "responsibility": "Self-test framework",
@@ -386,9 +405,11 @@ def _self_test() -> int:
 
     with tempfile.TemporaryDirectory() as tmp:
         tmp_path = Path(tmp)
-        activity_dir = tmp_path / activity_id
+        # CR-BP-mv1: containment-tree fixture form (id-derived filename).
+        slug = activity_id.split(":", 1)[1]
+        activity_dir = tmp_path / slug
         activity_dir.mkdir()
-        activity_yaml = activity_dir / f"{activity_id}.yaml"
+        activity_yaml = activity_dir / f"{activity_id.replace(':', '-')}.yaml"
         activity_yaml.write_text(yaml.safe_dump({
             "id": activity_id,
             "type": "Activity",

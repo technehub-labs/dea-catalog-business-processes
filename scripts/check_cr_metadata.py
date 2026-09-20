@@ -68,11 +68,14 @@ def _normalize_status(value: str) -> str:
 #   CR-BP-NN-EXT-NNa          (extension sub-letter: CR-BP-94-EXT-01a per CR-BP-94-EXT-01a)
 #   CR-BP-NN-EXT-NN-slug      (extension + slug: CR-BP-94-EXT-01-...)
 #   CR-BP-NN-EXT-NNa-slug     (extension sub-letter + slug: CR-BP-94-EXT-01a-...)
+#   CR-BP-mvN                 (structural migration carrier: CR-BP-mv1)
+#   CR-BP-mvN-slug            (migration carrier + slug)
 CR_NUMBER_PATTERN = re.compile(
     r"^CR-BP-(?:\d+(?:[a-zA-Z](?:\.\d+)*)?(?:-(?:EXT-\d+[a-zA-Z]?|[a-z0-9]+))*|"
-    r"L\d+-\d+[a-zA-Z]?(?:-(?:[a-z0-9]+))*)$"
+    r"L\d+-\d+[a-zA-Z]?(?:-(?:[a-z0-9]+))*|"
+    r"mv\d+(?:-[a-z0-9]+)*)$"
 )
-CR_REF_PATTERN = re.compile(r"CR-BP-(?:\d+[a-zA-Z]?(?:\.\d+)*|L\d+-\d+[a-zA-Z]?)")
+CR_REF_PATTERN = re.compile(r"CR-BP-(?:\d+[a-zA-Z]?(?:\.\d+)*|L\d+-\d+[a-zA-Z]?|mv\d+)")
 # Match the metadata line. Two conventions are admitted:
 #   1. "**Key**: value" (canonical; colon outside bold)
 #   2. "**Key:** value" (legacy / Github-issues style; colon inside)

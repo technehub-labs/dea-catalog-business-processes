@@ -19,7 +19,7 @@ The four patterns enforced here:
           prefixed with a "legacy" or "formerly" qualifier.
 
   DOC-002  Cross-doc consistency: every reference to a canonical
-          ID (dea:process-*, dea:pg-*, dea:pc-*, dea:ecf-*) MUST
+          ID (processes:process-*, processes:group-*, processes:pc-*) MUST
           resolve to an existing entity in the catalogue.
 
   DOC-003  "Process" alone (without "Group" or "Kernel" or
@@ -54,7 +54,7 @@ DOCS_GLOBS = ("docs/*.md", "docs/**/*.md", "README.md", "README*.md",
               "docs/architecture.md", "docs/identity.md",
               "docs/classification.md", "docs/conformance.md",
               "docs/context.md", "docs/specialization.md")
-ID_PATTERN = re.compile(r"\b(dea:(?:process|pg|pc|ecf)-[a-z0-9-]+)\b")
+ID_PATTERN = re.compile(r"\b(processes:(?:process|group|pc)-[a-z0-9-]+)\b")
 
 # Token-level patterns: (preferred_term, [legacy_synonyms])
 LEGACY_TERMS: list[tuple[str, list[str]]] = [
@@ -249,7 +249,7 @@ def check_doc(path: Path, catalog_ids: set[str]) -> list[tuple[str, str]]:
             rid = match.group(1)
             if rid not in catalog_ids:
                 # Allow some well-known examples (cr-bp-*, dea-process-group-*)
-                if rid.startswith("dea:process-group-") or rid.startswith("dea:process-"):
+                if rid.startswith("processes:process-group-") or rid.startswith("processes:process-"):
                     # Genuine unresolvable id
                     findings.append((
                         "DOC-002",
@@ -341,7 +341,7 @@ def _self_test() -> int:
         # Bad doc: legacy synonym, unresolvable id, standalone "Process".
         bad = (
             "This is about the Process Kernel of an enterprise.\n"
-            "Reference: dea:process-bogus-id.\n"
+            "Reference: processes:process-pr-operate-nope001.\n"
             "Each Process owns its own lifecycle.\n"
         )
         (docs / "bad.md").write_text(bad)
@@ -360,13 +360,13 @@ def _self_test() -> int:
 
         # Good doc: legacy prefix, resolvable id (we add a fake entity),
         # compound "Business Process".
-        (root / "entities" / "v1-alpha" / "dea:process-foo").mkdir(parents=True)
-        (root / "entities" / "v1-alpha" / "dea:process-foo" / "dea:process-foo.yaml").write_text(
-            "id: dea:process-foo\nname: Foo\ntype: Process\nversion: '1.0.0'\n"
+        (root / "entities" / "v1-alpha" / "pr-operate" / "foo").mkdir(parents=True)
+        (root / "entities" / "v1-alpha" / "pr-operate" / "foo" / "processes-process-pr-operate-foo0001.yaml").write_text(
+            "id: processes:process-pr-operate-foo0001\nname: Foo\ntype: Process\nversion: '1.0.0'\n"
         )
         good = (
             "This is about Business Process architecture.\n"
-            "Reference: dea:process-foo.\n"
+            "Reference: processes:process-pr-operate-foo0001.\n"
             "The legacy Process Kernel concept is now retired.\n"
         )
         (docs / "good.md").write_text(good)

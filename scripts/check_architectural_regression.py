@@ -169,7 +169,7 @@ def check_record(path: Path, root: Path) -> list[tuple[str, str]]:
 
 def _resolve_target(root: Path, target_ref: str) -> Path | None:
     """Resolve a `dea:process-<id>` target to its file under entities/v1-alpha."""
-    if not target_ref.startswith("dea:process-"):
+    if not target_ref.startswith("processes:process-"):
         return None
     local = target_ref.split(":", 1)[1]  # e.g. "process-foo"
     candidate = root / "entities" / "v1-alpha" / f"dea:{local}" / f"dea:{local}.yaml"
@@ -233,14 +233,14 @@ def _self_test() -> int:
         root = Path(td)
         # Build a canonical-bad record that triggers all 7 rules.
         bad_record = {
-            "id": "dea:process-bp-ar-bad",
+            "id": "processes:process-bp-ar-bad",
             "name": "Process Kernel Design",  # BP-AR-001
             "description": "An ECF Business Process that conflates everything.",  # BP-AR-002
             "type": "Process",
             "version": "1.0.0",
             "process_intent": "manage",
             "process_type": "core",
-            "context": [{"ref": "dea:pc-pr-op"}],
+            "context": [{"ref": "processes:pc-pr-op"}],
             "process_audience": "party-relationship",  # BP-AR-005
             "specialization_pattern": "intent-classification",  # BP-AR-006
         }
@@ -248,13 +248,13 @@ def _self_test() -> int:
         bad_record["description"] += " Decomposed specialization example."
         # Add a bad relationship that targets within same context for BP-AR-007.
         parent = {
-            "id": "dea:process-bp-ar-parent",
+            "id": "processes:process-bp-ar-parent",
             "name": "Parent",
             "type": "Process",
             "version": "1.0.0",
             "process_intent": "manage",
             "process_type": "core",
-            "context": [{"ref": "dea:pc-pr-op"}],
+            "context": [{"ref": "processes:pc-pr-op"}],
         }
         bad_record["relationships"] = [{
             "source_id": bad_record["id"],
@@ -262,12 +262,12 @@ def _self_test() -> int:
             "target_id": parent["id"],
             "specialization_pattern": "by-channel",
         }]
-        (root / "entities" / "v1-alpha" / "dea:process-bp-ar-bad").mkdir(parents=True)
-        (root / "entities" / "v1-alpha" / "dea:process-bp-ar-bad" / "dea:process-bp-ar-bad.yaml").write_text(
+        (root / "entities" / "v1-alpha" / "processes:process-bp-ar-bad").mkdir(parents=True)
+        (root / "entities" / "v1-alpha" / "processes:process-bp-ar-bad" / "processes:process-bp-ar-bad.yaml").write_text(
             yaml.safe_dump(bad_record, sort_keys=False)
         )
-        (root / "entities" / "v1-alpha" / "dea:process-bp-ar-parent").mkdir(parents=True)
-        (root / "entities" / "v1-alpha" / "dea:process-bp-ar-parent" / "dea:process-bp-ar-parent.yaml").write_text(
+        (root / "entities" / "v1-alpha" / "processes:process-bp-ar-parent").mkdir(parents=True)
+        (root / "entities" / "v1-alpha" / "processes:process-bp-ar-parent" / "processes:process-bp-ar-parent.yaml").write_text(
             yaml.safe_dump(parent, sort_keys=False)
         )
         findings = []
@@ -286,17 +286,17 @@ def _self_test() -> int:
 
         # Build a canonical-ok record that should NOT fire any rules.
         ok_record = {
-            "id": "dea:process-bp-ar-ok",
+            "id": "processes:process-bp-ar-ok",
             "name": "Manage Customer Relationship",
             "description": "Operate the customer relationship over its full lifecycle.",
             "type": "Process",
             "version": "1.0.0",
             "process_intent": "manage",
             "process_type": "core",
-            "context": [{"ref": "dea:pc-pr-op"}],
+            "context": [{"ref": "processes:pc-pr-op"}],
         }
-        (root / "entities" / "v1-alpha" / "dea:process-bp-ar-ok").mkdir(parents=True)
-        (root / "entities" / "v1-alpha" / "dea:process-bp-ar-ok" / "dea:process-bp-ar-ok.yaml").write_text(
+        (root / "entities" / "v1-alpha" / "processes:process-bp-ar-ok").mkdir(parents=True)
+        (root / "entities" / "v1-alpha" / "processes:process-bp-ar-ok" / "processes:process-bp-ar-ok.yaml").write_text(
             yaml.safe_dump(ok_record, sort_keys=False)
         )
         ok_findings = []

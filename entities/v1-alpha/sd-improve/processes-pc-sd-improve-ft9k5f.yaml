@@ -1,0 +1,78 @@
+id: processes:pc-sd-improve-ft9k5f
+domain: StrategyAndDirection
+lifecycle_stage: Improve
+name: Strategic Adaptation
+definition: 'The bounded enterprise context for **adapting** the strategic direction, objectives, and effectiveness of the enterprise in the **Strategy & Direction** domain. This context addresses the learning and adaptation work of refreshing objectives, adapting strategic direction, and reviewing strategy effectiveness. v2.4.0: adaptation and refresh as a stable subject; capability improvement remains in the owning domain.
+
+  '
+scope:
+  includes:
+  - Strategic direction adaptation
+  - Objectives and targets refresh
+  - Strategy effectiveness review
+  excludes:
+  - Strategic performance monitoring (Operate stage; adjacent context)
+  - Capability improvement (owning domains)
+outcomes:
+- Strategic direction is adapted to changing context.
+- Objectives and targets are refreshed as needed.
+- Strategy effectiveness is reviewed and learned from.
+adjacent_contexts:
+- processes:pc-sd-conceive-ucb3gx
+- processes:pc-sd-design-g3es76
+- processes:pc-sd-build-gmzrrm
+- processes:pc-sd-operate-5cs5ee
+processes:
+- processes:process-sd-improve-9wgvaf
+- processes:process-sd-improve-aqbrm7
+- processes:process-sd-improve-duwd64
+cell_charter:
+  enterprise_concern: 'Strategy & Direction: the adaptation and refresh of strategic direction.'
+  lifecycle_concern: 'Improve: adapting strategic direction and refreshing objectives and targets.'
+  combined_semantic_meaning: 'The learning and adaptation work of refreshing objectives, adapting strategic direction, and reviewing strategy effectiveness.
+
+    '
+  expected_outcomes:
+  - Strategic direction is adapted to changing context.
+  - Objectives and targets are refreshed as needed.
+  - Strategy effectiveness is reviewed and learned from.
+  inclusions:
+  - Strategic direction adaptation
+  - Objectives and targets refresh
+  - Strategy effectiveness review
+  exclusions:
+  - Strategic performance monitoring (Operate stage; adjacent context)
+  - Capability improvement (owning domains)
+  adjacent_boundaries:
+  - 'processes:pc-sd-conceive-ucb3gx (adjacent context): strategy flows between Improve and the adjacent cell.'
+  - 'processes:pc-sd-design-g3es76 (adjacent context): strategy flows between Improve and the adjacent cell.'
+  - 'processes:pc-sd-build-gmzrrm (adjacent context): strategy flows between Improve and the adjacent cell.'
+  - 'processes:pc-sd-operate-5cs5ee (adjacent context): strategy flows between Improve and the adjacent cell.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-21a
+established_at: '2026-09-07'
+change_history:
+- cr: CR-BP-21a.1
+  date: '2026-09-08'
+  change: 'Processes list extended with the remaining register v2 L2
+
+    candidates for this cell under CR-BP-21a.1.
+
+    '
+- cr: CR-BP-21a
+  date: '2026-09-07'
+  change: 'Initial Process Context record; promoted from the CR-BP-19
+
+    register v2 (ratified against ECF v2.4.0) as part of the
+
+    StrategyAndDirection landing tranche.
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21a-strategy-direction-landing.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

@@ -43,7 +43,7 @@
     },
     "process_context": {
       "type": "string",
-      "pattern": "^dea:pc-[a-z0-9-]+$",
+      "pattern": "^processes:pc-[a-z0-9-]+$",
       "description": "Reference to the canonical Process Context (dea:pc-*) within which this Process Scope bounds process responsibility. PSCOPE-003 enforces resolution to a known context."
     },
     "scope": {
@@ -106,7 +106,7 @@
           },
           "target_id": {
             "type": "string",
-            "pattern": "^dea:group-[a-z0-9-]+$",
+            "pattern": "^processes:group-[a-z0-9-]+$",
             "description": "Target L1 Process Group id (dea:group-*)."
           },
           "relationship_type": {

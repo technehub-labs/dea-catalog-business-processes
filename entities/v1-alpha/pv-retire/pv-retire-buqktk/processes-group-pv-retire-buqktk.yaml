@@ -1,0 +1,94 @@
+id: processes:group-pv-retire-buqktk
+type: ProcessGroup
+version: 1.0.0
+name: Service Transition Retirement
+definition: 'The bounded Process Group that organises the Business Process responsibilities of transitioning propositions, products and services out of operational service in the ProductAndValue x Retire context (withdrawal planning, stakeholder transition, removal from operational reliance).
+
+  '
+process_context: processes:pc-pv-retire-eeck6d
+scope:
+  includes:
+  - Retirement decision intake and withdrawal planning
+  - Service withdrawal and stakeholder transition
+  - Removal from operational reliance
+  excludes:
+  - Steady-state proposition operation (Operate)
+  - Physical asset decommissioning (enablement-operations)
+  - Post-exit obligation closure (Operate/Improve)
+outcomes:
+- Retired propositions are withdrawn from service in a controlled manner with reliance removed.
+composes:
+- source_id: processes:group-pv-retire-buqktk
+  target_id: processes:process-pv-retire-6us5am
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per the CR-BP-63 discovery
+
+    outcome (ADMIT-CANONICAL recommendation) landed by CR-BP-64.
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-64
+    asserted_by: dea-team
+    asserted_at: '2026-09-14'
+process_group_kind: cross-cutting
+status: accepted
+lifecycle_status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: ProductAndValue
+    stage: Retire
+    identifier: ecf:productValue.retire
+evidence:
+- source: CR-BP-63 lifecycle discovery exercise
+  claim: 'This Process Group''s coordinate was evaluated by the CR-BP-63
+
+    discovery record discovery/v1-alpha/product-and-value-retire.yaml: the cell''s canonical candidate
+
+    scored 10/10 with an ADMIT-CANONICAL recommendation,
+
+    overturning (with evidence) the register v2 uniform deferral.
+
+    '
+  strength: E4
+  reference: discovery/v1-alpha/product-and-value-retire.yaml
+- source: CR-BP-64 admission tranche
+  claim: 'CR-BP-64 lands this Process Group as the L1 home of the
+
+    discovery-admitted Business Process and flips the register cell
+
+    to ratified-accepted / landed.
+
+    '
+  strength: E4
+  reference: change-requests/CR-BP-64-pv-activate-retire-admission.md
+metadata:
+  established_by: CR-BP-64
+  established_at: '2026-09-14'
+  cross_context_overlap: []
+  change_history:
+  - cr: CR-BP-64
+    date: '2026-09-14'
+    change: 'Initial Process Group record; the first L1 group at an
+
+      Activate/Retire coordinate, landed from the CR-BP-63
+
+      evidence-backed discovery outcome under the CR-BP-62 method.
+
+      '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-64-pv-activate-retire-admission.md
+- rel: discovery-record
+  href: discovery/v1-alpha/product-and-value-retire.yaml
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

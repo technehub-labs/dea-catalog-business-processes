@@ -1,0 +1,77 @@
+schema: dea/v1
+schema_version: 1
+id: processes:pc-sd-activate-ghaub8
+domain: StrategyAndDirection
+lifecycle_stage: Activate
+name: Institutionalize Regulated Strategic Plan
+process_context:
+  id: processes:pc-sd-activate-ghaub8
+  domain: StrategyAndDirection
+  lifecycle_stage: Activate
+  scope_summary: Governed activation of a regulated entity's strategic plan whose live execution is gated by formal supervisor-acknowledged strategic-plan filing, distinct from strategy build and from steady-state strategy execution.
+  process_empty: false
+  lifecycle_status: candidate
+  status: candidate
+cell_charter:
+  enterprise_concern: 'Strategy & Direction: the controlled activation of a regulated entity''s strategic plan whose live execution is gated by supervisor-acknowledged strategic-plan filing (Basel ICAAP / SAA approval; BRRD recovery-plan activation; NHS trust 5-year strategy approval; PUC integrated resource plan and strategic-plan filing; bank recovery and resolution plan activation), with the supervisor''s acknowledgement on record, the filing receipt preserved, the operational monitoring framework live, and the plan''s obligations binding on the regulated entity under the regulator''s continuing supervision -- distinct from strategy build and from steady-state strategy execution.'
+  lifecycle_concern: 'Activate: the live-readiness activation of a regulated strategic plan, moving it from board-approved-but-not-live to supervisor-acknowledged-and-live under the regulator''s continuing oversight.'
+  combined_semantic_meaning: 'The regulated-strategic-plan activation work that moves a board-
+
+    approved strategic plan from board-approved-but-not-live to
+
+    supervisor-acknowledged-and-live under the enterprise''s
+
+    regulated-entity approval authority, with the supervisor''s
+
+    acknowledgement on record, the filing receipt preserved, the
+
+    operational monitoring framework live, and the plan''s
+
+    obligations binding on the regulated entity under the
+
+    regulator''s continuing supervision, so that the strategic
+
+    plan is formally live on the regulated strategic-plan record
+
+    under the supervisor''s continuing oversight.
+
+    '
+  expected_outcomes:
+  - Supervisor's acknowledgement on record for the regulated strategic plan (Basel ICAAP / SAA approval; BRRD recovery-plan activation; NHS trust 5-year strategy approval; PUC integrated resource plan and strategic-plan filing; bank recovery and resolution plan activation)
+  - Filing receipt preserved on the regulated strategic-plan record
+  - Operational monitoring framework live on the regulated strategic-plan record
+  - Communications plan activated under the regulator's continuing supervision
+  - KPIs and monitoring framework confirmed as live on the regulated strategic-plan record
+  - Regulated strategic-plan record entry preserved for the activated strategic plan
+  inclusions:
+  - Supervisor-acknowledged strategic-plan filing (Basel ICAAP / SAA approval by PRA / ECB; BRRD recovery-plan activation under SRB / national-resolution-authority supervision; NHS trust 5-year strategy approval; PUC integrated resource plan and strategic-plan filing; bank recovery and resolution plan activation)
+  - Supervisor's review completion and acknowledgement on record (Basel SREP review; NHS England / Department of Health strategy review; PUC rate-case strategic-plan review; SRB resolution-plan review)
+  - Filing receipt preservation and regulated-records entry (Basel SREP filing receipt; NHS England strategy-approval letter; PUC strategic-plan filing order; SRB resolution-plan acknowledgment)
+  - Operational monitoring framework launch (KPIs; risk-appetite statement; early-warning indicators; supervisor's continuing-oversight relationship)
+  - Communications plan activation under the regulator's continuing supervision (disclosure controls; investor-relations briefing; regulated-entity announcement)
+  - Regulated strategic-plan record entry preserved for the activated strategic plan
+  exclusions:
+  - Strategic-plan conception, design, and build (StrategyAndDirection x Conceive / Design / Build)
+  - Steady-state strategy execution and performance review (StrategyAndDirection x Operate / Improve)
+  - Strategic-plan sunset under regulatory mandate (StrategyAndDirection x Retire; CR-BP-80 escape record documented DEFER without admission)
+  - Non-regulated strategic-plan launch (single-business-unit rollout without supervisor's review) -- RECORD-PATTERN or MERGE per CR-BP-63 baseline
+  - Strategic plans absent a supervisor-acknowledged filing regime
+  adjacent_boundaries:
+  - 'processes:pc-sd-build-gmzrrm (adjacent context): the Build cell handles strategic-plan construction and approval; the Activate cell governs the supervisor-acknowledged activation step that moves the plan from board-approved-but-not-live to supervisor-acknowledged-and-live.'
+  - 'processes:pc-sd-operate-5cs5ee (adjacent context): the Operate cell handles steady-state strategy execution and performance management; the Activate cell only governs the supervisor-acknowledged activation step.'
+  - 'processes:pc-sd-retire-zxnc3c (adjacent context): the Retire cell at SD handles strategic-plan sunset under regulatory mandate (CR-BP-80 escape record documented DEFER without admission); the Activate cell handles the regulated live-readiness activation of a strategic plan.'
+  - 'processes:pc-ao-activate-kusw2u (sibling cell, CR-BP-81): the A&O Activate cell governs regulator-controlled individual-workforce mobilization; the SD Activate cell governs supervisor-acknowledged strategic-plan activation -- separate concerns (individual vs strategic plan).'
+  - 'processes:pc-eo-activate-xdfscw (sibling cell, CR-BP-82): the OE Activate cell governs regulator-authorized operations-capability activation; the SD Activate cell governs supervisor-acknowledged strategic-plan activation -- separate concerns (operations vs strategic plan).'
+  - 'processes:pc-fa-activate-yrhcfm (sibling cell, CR-BP-83): the FA Activate cell governs regulator-acknowledged billing-capability activation; the SD Activate cell governs supervisor-acknowledged strategic-plan activation -- separate concerns (billing vs strategic plan).'
+process_groups:
+- id: processes:group-sd-activate-mbw9cc
+  kind: functional
+  scope: 'Governs the controlled activation of a regulated entity''s strategic plan whose live execution is gated by formal supervisor-acknowledged strategic-plan filing: supervisor- acknowledged strategic-plan filing; supervisor''s review completion; filing receipt preservation; operational monitoring framework launch; communications plan activation; KPIs and monitoring framework live on the regulated strategic- plan record; regulated-records entry preserved.'
+  processes:
+  - processes:process-sd-activate-s9m34e
+admission:
+  recommended_by: dea:discovery-strategy-and-direction-activate-escape
+  recommended_at: '2026-09-16'
+  recommended_score: 9
+  carrier_cr: CR-BP-86
+  bp_id: processes:process-sd-activate-s9m34e

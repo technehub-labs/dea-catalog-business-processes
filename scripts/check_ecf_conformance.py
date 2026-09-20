@@ -46,6 +46,17 @@ KABAB_DOMAINS = {
 
 def check_entry(e: dict, fp: str, errors: list):
     cid = e.get('id') or fp
+    # CR-BP-mv1: L0 Process Context records are the coordinate anchors; they
+    # carry their ECF coordinate as top-level `domain` + `lifecycle_stage`
+    # fields rather than an ecfConformance block (they ARE the coordinate).
+    if isinstance(cid, str) and cid.startswith("processes:pc-"):
+        d = e.get('domain')
+        s = e.get('lifecycle_stage')
+        if d not in CANON_DOMAINS:
+            errors.append(f"{cid}: pc domain '{d}' not a canonical ECF domain")
+        if s not in CANON_STAGES:
+            errors.append(f"{cid}: pc lifecycle_stage '{s}' not a canonical ECF stage")
+        return
     blk = e.get('ecfConformance')
     if blk is None:
         errors.append(f"{cid}: missing ecfConformance block")

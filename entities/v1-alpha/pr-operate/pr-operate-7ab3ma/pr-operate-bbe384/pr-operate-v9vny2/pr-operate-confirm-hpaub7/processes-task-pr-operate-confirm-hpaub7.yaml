@@ -1,0 +1,63 @@
+id: processes:task-pr-operate-confirm-hpaub7
+type: Task
+name: Allocate Relationship Attention Confirmation
+definition: The bounded unit of work within `processes:activity-pr-operate-v9vny2` (Allocate Relationship Attention) that reconcile the operating-ready outcomes pack against the KAM-playbook contract and the renewal-execution contract, issue the operating-completion confirmation to the relationship custodian, and log the confirmation.
+belongs_to_activity: processes:activity-pr-operate-v9vny2
+trigger: Bounded-work artefact produced for Allocate Relationship Attention; confirm gate may reconcile against the governing contract and issue the completion confirmation to the relationship custodian.
+outcome: Completion confirmation issued for Allocate Relationship Attention and acknowledged by the relationship custodian and any governing-party notify-list; confirmation custodian passes custody to the records custodian.
+responsibility: confirmation custodian
+boundary:
+  inclusions:
+  - Reconciliation of the Allocate Relationship Attention artefact against the governing contract and any notify-list requirements.
+  - Issuance of the Allocate Relationship Attention completion confirmation and acknowledgement logging.
+  exclusions:
+  - Long-term retention of the closure case file (phase 5).
+  - Re-execution of prior phases on confirmation rejection.
+evidence:
+- source: SAMA Strategic Account Management playbook
+  claim: strategic-account management playbook grounding the operate-phase KAM-playbook contract and the transform-phase operating-rhythm execution. Bounded-work evidence for the confirm-phase custodian of `processes:activity-pr-operate-v9vny2` (CR-BP-L4-02 enrichment).
+  strength: E2
+- source: TSIA renewal execution benchmark
+  claim: renewal-execution benchmark grounding the operate-phase renewal-execution contract and the confirm-phase reconciliation. Bounded-work evidence for the confirm-phase custodian of `processes:activity-pr-operate-v9vny2` (CR-BP-L4-02 enrichment).
+  strength: E2
+- source: processes:activity-pr-operate-v9vny2
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-02 cell-specific bounded-work prose for this PartyAndRelationship L4 Task.
+  strength: E3
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: PartyAndRelationship
+    stage: Operate
+    identifier: ecf:partyRelationship.operate
+metadata:
+  established_by: CR-BP-102
+  established_at: '2026-09-19'
+  change_history:
+  - cr: CR-BP-44
+    date: '2026-09-13'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-44
+
+      PartyAndRelationship Operate + Improve tranche (thinnest L2
+
+      cells; pattern proven by CR-BP-42 pilot and CR-BP-43 EO/Operate
+
+      tranche). Classified per CR-BP-32 section 5 (fails standalone
+
+      executability and resource dedication); decomposition boundary
+
+      marker per CR-BP-32 section 12 pending Task records (dea:Task
+
+      lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

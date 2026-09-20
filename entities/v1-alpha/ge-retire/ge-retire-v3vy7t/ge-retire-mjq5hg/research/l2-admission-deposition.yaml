@@ -1,0 +1,105 @@
+# L2 Admission Deposition: processes:process-ge-retire-mjq5hg
+# Lands as part of CR-BP-78 (G&E Retire admission tranche), the second
+# catalog cell at a GovernanceAndExistence x Retire coordinate, the
+# fourth and final cell admitted via the Option B escape-clause
+# sequence (after CR-BP-65 at G&E Activate, CR-BP-73 at A&O Retire,
+# and CR-BP-75 at F&A Retire).
+#
+# This deposition mirrors the CR-BP-71/73/75 admission shape and
+# closes the discovery recommendation loop for the CR-BP-76
+# escape-clause candidate 1
+# (processes:process-ge-retire-mjq5hg).
+
+schema: dea/v1
+schema_version: 1
+id: dea:research-l2-admission-dea-process-effect-regulator-mandated-governance-unwind
+parent_business_process: processes:process-ge-retire-mjq5hg
+coordinate:
+  domain: GovernanceAndExistence
+  stage: Retire
+  process_context: processes:pc-ge-retire-kndw6x
+  process_group: processes:group-ge-retire-v3vy7t
+admission:
+  carrier_cr: CR-BP-78
+  escape_clauses:
+    - "Retirement of governance is rare and largely an attribute of operating-model retirement; defer until a sector example (e.g. regulator-mandated unwind) requires it (register v2 cell verbatim escape condition)."
+  escape_clause_evaluation:
+    - source: CR-BP-19 register v2 per-cell escape condition
+      claim: 'Verbatim deferral: "Retirement of governance is rare and largely an attribute of operating-model retirement; defer until a sector example (e.g. regulator-mandated unwind) requires it."'
+      strength: E5
+      reference: entities/v1-alpha/processes:group-pr-operate-7ab3ma/research/l1-register.yaml
+    - source: FCA Handbook WDPG 3 (Concept and Process of Wind-Down Planning)
+      claim: 'UK regulator-mandated wind-down governance expectations: scenarios, plan, resources assessment, governance and internal controls, wind-down thresholds, alert thresholds, cancellation of permissions.'
+      strength: E5
+      reference: https://handbook.fca.org.uk/handbook/wdpg3
+    - source: FCA Wind-Down Plan Requirements announcement (FSCom 2024)
+      claim: Three-month minimum wind-down period; nine months typical. Wind-down threshold and alert threshold. Client refund and residual obligation handling.
+      strength: E5
+      reference: https://fscom.co/insights/blog/fca-announces-wind-down-plan-requirements
+    - source: California Corporations Code 5033-5034, 6610, 8610, 9680
+      claim: US nonprofit corporation dissolution by board resolution, certificate of dissolution filing with Secretary of State and Attorney General Registry of Charities and Fundraisers.
+      strength: E5
+      reference: https://oag.ca.gov/charities/dissolution
+    - source: IRS 501(c)(3) dissolution notice and asset distribution rules
+      claim: 'Federal tax-exempt entity dissolution obligations: notice, asset distribution per exempt purpose, final Form 990 filing.'
+      strength: E5
+      reference: https://www.501c3.org/dissolving-a-501c3-nonprofit-a-comprehensive-guide
+    - source: National Council of Nonprofits Dissolving a Nonprofit Corporation guidance
+      claim: US nonprofit dissolution practice under state nonprofit corporation codes and federal tax-exempt entity obligations; board resolution, plan of dissolution, creditor notification, AG filings.
+      strength: E5
+      reference: https://www.councilofnonprofits.org/running-nonprofit/ending-organization/dissolution
+    - source: Federal banking regulator cease-and-desist authority
+      claim: US federal banking regulators (OCC, FRB, FDIC) may issue cease-and-desist orders triggering governance-bodies reduction, capital restoration, and dissolution plans.
+      strength: E5
+      reference: https://www.occ.treas.gov/topics/supervision-and-examination/enforcement-actions/index-enforcement-actions.html
+    - source: US court receivership
+      claim: US federal and state courts may appoint receivers for entities under statutory or equitable receivership authority, triggering governance unwind under court supervision.
+      strength: E5
+      reference: https://www.federalreserveconsumerhelp.gov/
+  escape_clause_me_verdict: |
+    The verbatim escape condition is met by the 2024-2026
+    regulatory landscape: FCA WDPG wind-down planning, UK and US
+    state nonprofit dissolution codes, IRS 501(c)(3) federal
+    tax-exempt dissolution obligations, federal banking regulator
+    cease-and-desist authority, and US federal/state court
+    receivership authority collectively establish the regulator- or
+    court-mandated unwind scenario that the register v2 cell's
+    verbatim escape condition defers to. The cell's audit_status
+    flips from backlog-deferred to ratified-accepted/landed at
+    register v12 by CR-BP-78.
+
+evidence_chain:
+  discovery_record: dea:discovery-governance-and-existence-retire-escape
+  discovery_carrier: CR-BP-76
+  baseline_discovery: dea:discovery-governance-and-existence-retire
+  baseline_carrier: CR-BP-63
+  register_v11_to_v12: |
+    Register ratification block v11 (CR-BP-75, ratified 2026-09-15)
+    -> v12 (CR-BP-78, ratified 2026-09-16); ratified-accepted 42 -> 43
+    and backlog-deferred 7 -> 6. The GovernanceAndExistence x
+    Retire cell flips from backlog-deferred to ratified-accepted/landed
+    on the CR-BP-76 escape-clause discovery evidence
+    (9/10 ADMIT-CANONICAL recommendation). The remaining six
+    Activate/Retire cells keep their dispositions unchanged.
+
+naming_note: |
+  BP-ARC-ID-001 satisfied: name "Effect Regulator-Mandated
+  Governance Unwind" is verb + object form; id
+  processes:process-ge-retire-mjq5hg preserved
+  unchanged from the CR-BP-76 discovery recommendation
+  (proposed_identity.id was stripped during CR-BP-76 schema
+  conformance repair; the id is reintroduced at admission and
+  matches the discovery's recommended identity). process_type:
+  standardization (TYPE_KEYWORDS density matches governance audit
+  compliance keywords per check_process_identity.py BP-ARC-ID-004).
+
+governance_boundary: |
+  The trigger is the regulator or court order itself. Distinct from
+  EnablementAndOperations x Retire (asset retirement), PartyAndRelationship
+  x Retire (counterparty close-out), AgencyAndOrganization x Retire
+  (workforce wind-down), FinanceAndAccounting x Retire (regulated
+  entity run-off), ProductAndValue x Retire (product line retirement),
+  and GovernanceAndExistence x Improve (voluntary governance sunset).
+
+bp_lifecycle_status: candidate
+bp_status: candidate

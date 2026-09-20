@@ -35,7 +35,7 @@
       "properties": {
         "id": {
           "type": "string",
-          "pattern": "^dea:process-[a-z0-9-]+$",
+          "pattern": "^processes:process-[a-z0-9-]+$",
           "description": "Proposed canonical id. Must follow the dea:process-... convention (per CR-BP-02 PC-008 + CR-BP-03C §2)."
         },
         "name": {
@@ -99,7 +99,7 @@
             "type": "object",
             "required": ["ref"],
             "properties": {
-              "ref": { "type": "string", "pattern": "^dea:pc-[a-z0-9-]+$" }
+              "ref": { "type": "string", "pattern": "^processes:pc-[a-z0-9-]+$" }
             },
             "additionalProperties": false
           },

@@ -119,7 +119,7 @@ discovery:
       type: MERGE
       related_contexts:
       - ProductAndValue/Activate
-      canonical_process_ref: dea:process-transition-to-service (proposed)
+      canonical_process_ref: processes:process-pv-activate-5686v7 (proposed)
   - name: Deploy / Cut Over
     proposed_identity:
       verb: Deploy
@@ -253,7 +253,7 @@ discovery:
       type: MERGE
       related_contexts:
       - ProductAndValue/Activate
-      canonical_process_ref: dea:process-transition-to-service (proposed)
+      canonical_process_ref: processes:process-pv-activate-5686v7 (proposed)
   - name: Transfer to Operational Ownership
     proposed_identity:
       verb: Transfer

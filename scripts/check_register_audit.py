@@ -32,8 +32,8 @@ import yaml
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 ENTITIES_DIR = REPO_ROOT / "entities/v1-alpha"
-REGISTER_PATH = ENTITIES_DIR / "dea:group-customer-lifecycle-management/research/l1-register.yaml"
-UNIVERSE_PATH = ENTITIES_DIR / "dea:group-customer-lifecycle-management/research/l1-candidate-universe.yaml"
+REGISTER_PATH = ENTITIES_DIR / "pr-operate/pr-operate-7ab3ma/research/l1-register.yaml"
+UNIVERSE_PATH = ENTITIES_DIR / "pr-operate/pr-operate-7ab3ma/research/l1-candidate-universe.yaml"
 
 DOMAIN_ABBR = {
     "ge": "GovernanceAndExistence",
@@ -68,7 +68,7 @@ def _collect_landed() -> dict[tuple[str, str], list[str]]:
     """Walk entities/v1-alpha/*/dea:group-*.yaml and group by (domain, stage)."""
     landed: dict[tuple[str, str], list[str]] = {}
     for entry in sorted(ENTITIES_DIR.iterdir()):
-        if not entry.name.startswith("dea:group-"):
+        if not entry.name.startswith("processes:group-"):
             continue
         fpath = entry / f"{entry.name}.yaml"
         if not fpath.exists():
@@ -76,7 +76,7 @@ def _collect_landed() -> dict[tuple[str, str], list[str]]:
         with fpath.open() as f:
             doc = yaml.safe_load(f)
         pc = doc.get("process_context", "")
-        m = re.match(r"dea:pc-([a-z]+)-(.+)", pc)
+        m = re.match(r"processes:pc-([a-z]+)-(.+)", pc)
         if not m:
             continue
         dom = DOMAIN_ABBR.get(m.group(1), "?")
@@ -162,9 +162,9 @@ def _self_test() -> int:
     with tempfile.TemporaryDirectory() as td:
         td = Path(td)
         ent = td / "entities"
-        ent_a = ent / "dea:group-foo"
+        ent_a = ent / "processes:group-foo"
         ent_a.mkdir(parents=True)
-        (ent_a / "dea:group-foo.yaml").write_text(textwrap.dedent("""
+        (ent_a / "processes:group-foo.yaml").write_text(textwrap.dedent("""
             id: dea:group-foo
             process_context: dea:pc-ge-build
         """))

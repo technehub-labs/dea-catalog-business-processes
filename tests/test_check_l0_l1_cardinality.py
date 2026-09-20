@@ -2,7 +2,7 @@
 """test_check_l0_l1_cardinality.py :  exhaustive L0<->L1 cardinality tests.
 
 CR-BP-100 / CR-BP-100a (eaojnr 2026-09-19 doctrine). L0 = ProcessContext
-(dea:pc-*); L1 = ProcessGroup (dea:group-*). Canonical cardinality is
+(dea:pc-*); L1 = ProcessGroup (processes-group-*). Canonical cardinality is
 exactly 1 L1 per L0 (and exactly 1 L0 per L1).
 
 These tests run exhaustively against the LIVE catalog to prove every
@@ -52,7 +52,7 @@ from check_l0_l1_cardinality import (  # noqa: E402
 # Live catalog exhaustive audit (the "exhaustively to be sure" requirement).
 # ---------------------------------------------------------------------------
 
-CONTEXTS_DIR = ROOT / "contexts" / "v1-alpha"
+CONTEXTS_DIR = ROOT / "entities" / "v1-alpha"  # CR-BP-mv1: PCs in the tree
 ENTITIES_DIR = ROOT / "entities" / "v1-alpha"
 
 
@@ -170,8 +170,8 @@ def test_live_per_pg_audit(live):
     for grp in groups:
         gid = grp.get("id")
         pc = grp.get("process_context")
-        assert isinstance(gid, str) and gid.startswith("dea:group-"), (
-            f"PG {gid!r} does not match dea:group-* pattern."
+        assert isinstance(gid, str) and gid.startswith("processes:group-"), (
+            f"PG {gid!r} does not match processes-group-* pattern."
         )
         assert isinstance(pc, str) and ID_PC_PATTERN.match(pc), (
             f"PG {gid}: process_context={pc!r} is malformed."
@@ -223,10 +223,10 @@ def _check(groups, scopes, pc_ids):
 
 def test_unit_one_to_one_clean():
     errs = _check(
-        [{"id": "dea:group-a1", "type": "ProcessGroup",
-          "process_context": "dea:pc-a"}],
+        [{"id": "processes:group-a1", "type": "ProcessGroup",
+          "process_context": "processes:pc-a"}],
         [],
-        {"dea:pc-a"},
+        {"processes:pc-a"},
     )
     assert errs == []
 
@@ -235,59 +235,59 @@ def test_unit_pc_with_zero_groups_fails_card_001():
     errs = _check(
         [],
         [],
-        {"dea:pc-orphan"},
+        {"processes:pc-orphan"},
     )
-    assert any("L0L1-CARD-001" in e and "dea:pc-orphan" in e for e in errs)
+    assert any("L0L1-CARD-001" in e and "processes:pc-orphan" in e for e in errs)
 
 
 def test_unit_pc_with_two_groups_fails_card_001():
     errs = _check(
         [
-            {"id": "dea:group-a1", "type": "ProcessGroup",
-             "process_context": "dea:pc-a"},
-            {"id": "dea:group-a2", "type": "ProcessGroup",
-             "process_context": "dea:pc-a"},
+            {"id": "processes:group-a1", "type": "ProcessGroup",
+             "process_context": "processes:pc-a"},
+            {"id": "processes:group-a2", "type": "ProcessGroup",
+             "process_context": "processes:pc-a"},
         ],
         [],
-        {"dea:pc-a"},
+        {"processes:pc-a"},
     )
     assert any(
-        "L0L1-CARD-001" in e and "2 Process Groups" in e and "dea:pc-a" in e
+        "L0L1-CARD-001" in e and "2 Process Groups" in e and "processes:pc-a" in e
         for e in errs
     )
 
 
 def test_unit_pg_with_unknown_pc_fails_card_002():
     errs = _check(
-        [{"id": "dea:group-x", "type": "ProcessGroup",
-          "process_context": "dea:pc-unknown"}],
+        [{"id": "processes:group-x", "type": "ProcessGroup",
+          "process_context": "processes:pc-unknown"}],
         [],
-        {"dea:pc-a"},
+        {"processes:pc-a"},
     )
     assert any(
-        "L0L1-CARD-002" in e and "dea:group-x" in e for e in errs
+        "L0L1-CARD-002" in e and "processes:group-x" in e for e in errs
     )
 
 
 def test_unit_pg_with_malformed_pc_fails_card_002():
     errs = _check(
-        [{"id": "dea:group-x", "type": "ProcessGroup",
+        [{"id": "processes:group-x", "type": "ProcessGroup",
           "process_context": "not-a-pc"}],
         [],
-        {"dea:pc-a"},
+        {"processes:pc-a"},
     )
     assert any(
-        "L0L1-CARD-002" in e and "dea:group-x" in e and "missing" in e
+        "L0L1-CARD-002" in e and "processes:group-x" in e and "missing" in e
         for e in errs
     )
 
 
 def test_unit_processscope_present_fails_card_003():
     errs = _check(
-        [{"id": "dea:group-a1", "type": "ProcessGroup",
-          "process_context": "dea:pc-a"}],
+        [{"id": "processes:group-a1", "type": "ProcessGroup",
+          "process_context": "processes:pc-a"}],
         [{"id": "dea:scope-pilot", "type": "ProcessScope"}],
-        {"dea:pc-a"},
+        {"processes:pc-a"},
     )
     assert any(
         "L0L1-CARD-003" in e and "ProcessScope" in e for e in errs
@@ -302,7 +302,7 @@ def test_unit_processscope_record_id_pattern_only():
     # CARD-003 message is specific.)
     errs = _check(
         [],
-        [{"id": "dea:scope-x", "type": "ProcessScope"}],
+        [{"id": "processes:scope-pr-operate-x001", "type": "ProcessScope"}],
         set(),
     )
     assert len(errs) == 1

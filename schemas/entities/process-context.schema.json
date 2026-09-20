@@ -19,7 +19,7 @@
   "properties": {
     "id": {
       "type": "string",
-      "pattern": "^dea:pc-[a-z0-9-]+$",
+      "pattern": "^processes:pc-[a-z0-9-]+$",
       "description": "Stable identity. Convention: dea:pc-<domain-abbrev>-<stage-abbrev> (e.g. dea:pc-pr-op = PartyAndRelationship x Operate). The id must be stable across renames of name/definition; renames go through the CR-programme."
     },
     "domain": {
@@ -85,7 +85,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "pattern": "^dea:pc-[a-z0-9-]+$"
+        "pattern": "^processes:pc-[a-z0-9-]+$"
       },
       "description": "References to other Process Context ids (dea:pc-...) that have legitimate relationships with this one. Relationships do NOT imply duplicated ownership (CR-BP-02 §11)."
     },
@@ -93,7 +93,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "pattern": "^dea:process-[a-z0-9-]+$"
+        "pattern": "^processes:process-[a-z0-9-]+$"
       },
       "description": "References to canonical Business Process specialization entries belonging to this context. Must resolve to dea:BusinessProcess specialization ids (PC-008 / BP-SPEC-01-002). CR-BP-02 explicitly does NOT populate this list — process discovery is gated on the context being established first."
     },

@@ -119,7 +119,7 @@ discovery:
       type: MERGE
       related_contexts:
       - ProductAndValue/Activate
-      canonical_process_ref: dea:process-transition-to-service (proposed)
+      canonical_process_ref: processes:process-pv-activate-5686v7 (proposed)
   - name: Deploy / Cut Over
     proposed_identity:
       verb: Deploy
@@ -253,7 +253,7 @@ discovery:
       type: MERGE
       related_contexts:
       - ProductAndValue/Activate
-      canonical_process_ref: dea:process-transition-to-service (proposed)
+      canonical_process_ref: processes:process-pv-activate-5686v7 (proposed)
   - name: Transfer to Operational Ownership
     proposed_identity:
       verb: Transfer
@@ -357,11 +357,11 @@ discovery:
     admission:
       status: admitted
       admitted_by: CR-BP-65
-      admitted_as: dea:process-bring-into-force
+      admitted_as: processes:process-ge-activate-wegs44
       admitted_at: '2026-09-14'
     disposition:
       type: ADMIT-CANONICAL
-      canonical_process_ref: dea:process-bring-into-force (proposed; governed admission pending per CR-BP-62
+      canonical_process_ref: processes:process-ge-activate-wegs44 (proposed; governed admission pending per CR-BP-62
         section 20)
       related_contexts: []
   context_evaluation:

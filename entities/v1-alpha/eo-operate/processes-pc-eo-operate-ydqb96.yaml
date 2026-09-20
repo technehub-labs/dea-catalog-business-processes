@@ -1,0 +1,106 @@
+id: processes:pc-eo-operate-ydqb96
+domain: EnablementAndOperations
+lifecycle_stage: Operate
+name: Execution, Technology, and Asset Operation
+definition: 'The bounded enterprise context for **operating** the production lines, service delivery, logistics, warehouse and inventory, quality control, technology platforms, facilities, asset maintenance, and procurement cycle of the enterprise in the **Enablement & Operations** domain. This context addresses the steady-state work of running the execution engine. v2.4.0: absorbs procurement execution, facility operation, and asset maintenance from the dissolved Supply & Resources domain; supplier performance relationships live in party-relationship (domain-grounding.md §3.6).
+
+  '
+scope:
+  includes:
+  - Production line operation
+  - Service delivery operation
+  - Logistics operation
+  - Warehouse and inventory operation
+  - Technology platform operation
+  - Facility and asset maintenance operation
+  - Procurement cycle execution
+  excludes:
+  - Operations build (Build stage; adjacent context)
+  - Supplier relationship management (party-relationship x operate; adjacent domain)
+  - Customer relationship operation (party-relationship x operate; adjacent domain)
+  - Product catalogue operation (product-value x operate; adjacent domain)
+  - Agent performance operation (agency-organization x operate; adjacent domain)
+outcomes:
+- Production lines are run to plan.
+- Service delivery is operated against committed levels.
+- Logistics, warehouse, and inventory are operated.
+- Technology platforms are operated and available.
+- Facilities and assets are maintained.
+- Procurement cycle is executed.
+adjacent_contexts:
+- processes:pc-eo-conceive-mxmtzq
+- processes:pc-eo-design-kxdfnz
+- processes:pc-eo-build-zwkhxc
+- processes:pc-eo-improve-pka6dk
+processes:
+- processes:process-eo-operate-2jnz85
+- processes:process-eo-operate-xud3hs
+- processes:process-eo-operate-zh9m57
+- processes:process-eo-operate-zwzmbd
+- processes:process-eo-operate-44jsrp
+- processes:process-eo-operate-4njp7b
+- processes:process-eo-operate-rqdte5
+- processes:process-eo-operate-j9cjzz
+- processes:process-eo-operate-vzcxx7
+cell_charter:
+  enterprise_concern: 'Enablement & Operations: the steady-state operation of the enterprise''s execution engine.'
+  lifecycle_concern: 'Operate: operating production, service delivery, logistics, technology platforms, facilities, assets, and the procurement cycle.'
+  combined_semantic_meaning: 'The steady-state work of operating production lines, service delivery, logistics, warehouse and inventory, quality control, technology platforms, facilities, asset maintenance, and the procurement cycle.
+
+    '
+  expected_outcomes:
+  - Production lines are run to plan.
+  - Service delivery is operated against committed levels.
+  - Logistics, warehouse, and inventory are operated.
+  - Technology platforms are operated and available.
+  - Facilities and assets are maintained.
+  - Procurement cycle is executed.
+  inclusions:
+  - Production line operation
+  - Service delivery operation
+  - Logistics operation
+  - Warehouse and inventory operation
+  - Technology platform operation
+  - Facility and asset maintenance operation
+  - Procurement cycle execution
+  exclusions:
+  - Operations build (Build stage; adjacent context)
+  - Supplier relationship management (party-relationship x operate; adjacent domain)
+  - Customer relationship operation (party-relationship x operate; adjacent domain)
+  - Product catalogue operation (product-value x operate; adjacent domain)
+  - Agent performance operation (agency-organization x operate; adjacent domain)
+  adjacent_boundaries:
+  - 'processes:pc-eo-conceive-mxmtzq (adjacent context): execution flow between Operate and the adjacent cell.'
+  - 'processes:pc-eo-design-kxdfnz (adjacent context): execution flow between Operate and the adjacent cell.'
+  - 'processes:pc-eo-build-zwkhxc (adjacent context): execution flow between Operate and the adjacent cell.'
+  - 'processes:pc-eo-improve-pka6dk (adjacent context): execution flow between Operate and the adjacent cell.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-21d
+established_at: '2026-09-08'
+change_history:
+- cr: CR-BP-21d.1
+  date: '2026-09-08'
+  change: 'Processes list extended with the remaining register v2 L2
+
+    candidates for this cell under CR-BP-21d.1.
+
+    '
+- cr: CR-BP-21d
+  date: '2026-09-08'
+  change: 'Initial Process Context record; promoted from the CR-BP-19
+
+    register v2 (ratified against ECF v2.4.0) as part of the
+
+    EnablementAndOperations landing tranche. Substrate-neutral
+
+    per ADR-ECF-002 §5 / CR-ECF-007.
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21d-enablement-operations-landing.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

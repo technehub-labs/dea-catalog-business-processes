@@ -1,0 +1,104 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-47
+status: candidate-not-canonical; subject to review
+parent_business_process: processes:process-eo-improve-babwdc
+coordinate:
+  domain: EnablementAndOperations
+  stage: Improve
+  process_context: processes:pc-eo-improve-pka6dk
+  process_group: processes:group-eo-improve-c8uff9
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42,
+  scaled by CR-BP-43 through CR-BP-46)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/processes:process-eo-improve-babwdc
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: processes:activity-eo-improve-uvzvt8
+  name: "Analyze Platform Gaps"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Reliability gap analysis; capacity gap analysis; capability gap framing"
+  out_of_scope:
+  - "Platform operation (processes:process-eo-operate-4njp7b)"
+  - "Operations performance review (processes:process-eo-improve-g3ngp3)"
+  evidence:
+  - "Parent BP trigger (platform evidence reveals reliability, capacity, or capability gaps)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-47
+- id: processes:activity-eo-improve-hsurx5
+  name: "Design Platform Upgrades"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Upgrade option design; architecture-fit review; upgrade sequencing design"
+  out_of_scope:
+  - "Gap analysis (processes:activity-eo-improve-uvzvt8)"
+  - "Platform architecture design (processes:process-eo-design-7gtead)"
+  evidence:
+  - "Parent BP outcome (reliability and capacity upgrades designed)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-47
+- id: processes:activity-eo-improve-7cek5c
+  name: "Commit Platform Upgrades"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Upgrade consolidation; investment case confirmation; commitment and implementation planning"
+  out_of_scope:
+  - "Upgrade design (processes:activity-eo-improve-hsurx5)"
+  - "Upgrade implementation (Build-stage concern of processes:pc-eo-build-zwkhxc)"
+  evidence:
+  - "Parent BP outcome (reliability and capacity upgrades committed)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-47
+- id: processes:activity-eo-improve-w3hsnq
+  name: "Measure Platform Improvement"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Post-upgrade performance measurement; reliability trend review; learning capture"
+  out_of_scope:
+  - "Upgrade commitment (processes:activity-eo-improve-7cek5c)"
+  - "Operations performance review (processes:process-eo-improve-g3ngp3)"
+  evidence:
+  - "Parent BP outcome (technology platforms improved)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-47
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."

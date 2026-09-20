@@ -202,11 +202,11 @@ discovery:
     admission:
       status: admitted
       admitted_by: CR-BP-67
-      admitted_as: dea:process-close-enterprise-relationship
+      admitted_as: processes:process-pr-retire-bd3asa
       admitted_at: '2026-09-14'
     disposition:
       type: ADMIT-CANONICAL
-      canonical_process_ref: dea:process-close-enterprise-relationship (proposed; governed admission pending
+      canonical_process_ref: processes:process-pr-retire-bd3asa (proposed; governed admission pending
         per CR-BP-62 section 20)
   - name: Recover / Reclaim
     proposed_identity:
@@ -252,7 +252,7 @@ discovery:
       related_contexts:
       - ProductAndValue/Retire
       - EnablementAndOperations/Retire
-      canonical_process_ref: dea:process-transition-out-of-service (proposed)
+      canonical_process_ref: processes:process-pv-retire-6us5am (proposed)
   - name: Resolve Residual Obligations
     proposed_identity:
       verb: Resolve

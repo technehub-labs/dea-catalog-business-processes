@@ -1,0 +1,125 @@
+id: processes:group-pv-build-g6sua5
+type: ProcessGroup
+version: 1.0.0
+name: Product Development
+definition: 'The bounded Process Group that organises the Business Process responsibilities of building product variants, service capabilities, innovation prototypes, and market readiness in the ProductAndValue x Build context. v2.4.0 grounding (domain-grounding.md §3.5).
+
+  '
+process_context: processes:pc-pv-build-ygbmxb
+scope:
+  includes:
+  - Product variant development
+  - Service capability build
+  - Innovation prototype build
+  - Market readiness preparation
+  excludes:
+  - Technology build (enablement-operations)
+  - Proposition design (Design stage; adjacent context)
+  - Catalogue operation (Operate stage; adjacent context)
+outcomes:
+- Product variants and service capabilities are built.
+- Innovation prototypes are built for hypothesis testing.
+- Market readiness is prepared with go-to-market assets.
+composes:
+- source_id: processes:group-pv-build-g6sua5
+  target_id: processes:process-pv-build-say8tb
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (landed CR-BP-21c).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21c.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-pv-build-g6sua5
+  target_id: processes:process-pv-build-p9a2s9
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21c.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21c.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-pv-build-g6sua5
+  target_id: processes:process-pv-build-8jc3y4
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21c.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21c.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-pv-build-g6sua5
+  target_id: processes:process-pv-build-6hjzmk
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21c.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21c.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+process_group_kind: end-to-end
+status: accepted
+lifecycle_status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: ProductAndValue
+    stage: Build
+    identifier: ecf:productValue.build
+evidence:
+- source: CR-BP-19 (register v2, ratified against ECF v2.4.0)
+  claim: 'This Process Group''s coordinate is ratified-accepted in register
+
+    v2. CR-BP-21c.1 lands the corresponding L1 group as part of the
+
+    ProductAndValue completion tranche.
+
+    '
+  strength: E4
+  reference: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+metadata:
+  established_by: CR-BP-21c.1
+  established_at: '2026-09-08'
+  cross_context_overlap: []
+  change_history:
+  - cr: CR-BP-21c.1
+    date: '2026-09-08'
+    change: 'Initial Process Group record; promoted from the CR-BP-19 register
+
+      v2 (ratified against ECF v2.4.0) as part of the CR-BP-21c.1
+
+      ProductAndValue completion tranche.
+
+      '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21c.1-product-value-completion.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

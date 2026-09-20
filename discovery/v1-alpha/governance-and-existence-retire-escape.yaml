@@ -38,7 +38,7 @@ discovery:
         claim: 'Verbatim deferral: "Retirement of governance is rare and largely an attribute of operating-model retirement;
           defer until a sector example (e.g. regulator-mandated unwind) requires it."'
         strength: E5
-        reference: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+        reference: entities/v1-alpha/processes:group-pr-operate-7ab3ma/research/l1-register.yaml
       - >-
         FCA Handbook WDPG 3 (Concept and Process of Wind-Down Planning) |  |  |
         claim: 'UK regulator-mandated wind-down governance expectations: scenarios, plan, resources assessment, governance
@@ -114,12 +114,12 @@ discovery:
         Improve coordinate; cross-domain breadth limited to regulator-mandated unwind today, holding the total at 9.
     disposition:
       type: ADMIT-CANONICAL
-      canonical_process_ref: dea:process-effect-regulator-mandated-governance-unwind
+      canonical_process_ref: processes:process-ge-retire-mjq5hg
       related_contexts: []
     admission:
       status: admitted
       admitted_by: CR-BP-78
-      admitted_as: dea:process-effect-regulator-mandated-governance-unwind
+      admitted_as: processes:process-ge-retire-mjq5hg
       admitted_at: '2026-09-16'
   - name: Operate Governance Sunset Procedures
     proposed_identity:

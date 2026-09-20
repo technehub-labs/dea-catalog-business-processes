@@ -1,0 +1,73 @@
+id: processes:activity-pv-operate-kwm3wt
+type: Activity
+name: Administer Catalogue Pricing
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Operate Product Catalogue that administers the pricing reflected in the catalogue within the set pricing rules.
+belongs_to_business_process: processes:process-pv-operate-zyguzp
+cohesion_rationale: Constituent work shares a single administration concern (price currency in catalogue), one reference class (launch pricing, pricing rules), and one output (administered catalogue pricing). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: ProductAndValue
+    stage: Operate
+    identifier: ecf:productValue.operate
+metadata:
+  established_by: CR-BP-51
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-51
+    date: '2026-09-13'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-51
+
+      ProductAndValue Improve + Operate tranche (completes the PV
+
+      domain''s L3 coverage; pattern proven by CR-BP-42 through CR-BP-50).
+
+      Classified per CR-BP-32 section 5 (fails standalone executability
+
+      and resource dedication); decomposition boundary marker per CR-BP-32
+
+      section 12 pending Task records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-administer-catalogue-pricing-intake, dea:task-administer-catalogue-pricing-verify, dea:task-administer-catalogue-pricing-transform, dea:task-administer-catalogue-pricing-confirm, dea:task-administer-catalogue-pricing-record).'
+composes:
+- source_id: processes:activity-pv-operate-kwm3wt
+  target_id: processes:task-pv-operate-intake-qmfamc
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-pv-operate-kwm3wt
+  target_id: processes:task-pv-operate-verify-su5ehj
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-pv-operate-kwm3wt
+  target_id: processes:task-pv-operate-transform-ehw8b9
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-pv-operate-kwm3wt
+  target_id: processes:task-pv-operate-confirm-mha68v
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-pv-operate-kwm3wt
+  target_id: processes:task-pv-operate-record-v9qpy9
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

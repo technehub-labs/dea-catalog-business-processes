@@ -1,0 +1,85 @@
+id: processes:pc-ao-build-pjk4rz
+domain: AgencyAndOrganization
+lifecycle_stage: Build
+name: Agent Acquisition and Onboarding
+definition: 'The bounded enterprise context for **acquiring and onboarding** the agents of the enterprise in the **Agency & Organization** domain. This context addresses the constructive work of sourcing and provisioning agents, onboarding and integrating them, and building the contractor and partner-agent pool. v2.4.0: substrate-neutral — acquisition covers recruitment (biological), model deployment and API integration (artificial), and hybrid provisioning.
+
+  '
+scope:
+  includes:
+  - Agent acquisition
+  - Agent onboarding and integration
+  - Contractor and partner-agent pool build
+  - Agent provisioning configuration
+  excludes:
+  - Organization structure design (Design stage; adjacent context)
+  - External party engagement (party-relationship x build; adjacent domain)
+  - Operational execution (enablement-operations x build; adjacent domain)
+outcomes:
+- Agents are acquired for the enterprise.
+- Agents are onboarded and integrated into the organization.
+- Contractor and partner-agent pool is built and ready.
+- Agent provisioning configurations are committed.
+adjacent_contexts:
+- processes:pc-ao-conceive-wtq4cr
+- processes:pc-ao-design-a4hq2r
+- processes:pc-ao-operate-zfevmp
+- processes:pc-ao-improve-qkmh6b
+processes:
+- processes:process-ao-build-w2qurd
+- processes:process-ao-build-b38bkg
+cell_charter:
+  enterprise_concern: 'Agency & Organization: the acquisition and provisioning of the enterprise''s agents.'
+  lifecycle_concern: 'Build: acquiring, provisioning, and integrating agents into the organization.'
+  combined_semantic_meaning: 'The constructive work of sourcing, provisioning, onboarding, and integrating agents (biological, artificial, and hybrid).
+
+    '
+  expected_outcomes:
+  - Agents are acquired for the enterprise.
+  - Agents are onboarded and integrated into the organization.
+  - Contractor and partner-agent pool is built and ready.
+  - Agent provisioning configurations are committed.
+  inclusions:
+  - Agent acquisition
+  - Agent onboarding and integration
+  - Contractor and partner-agent pool build
+  - Agent provisioning configuration
+  exclusions:
+  - Organization structure design (Design stage; adjacent context)
+  - External party engagement (party-relationship x build; adjacent domain)
+  - Operational execution (enablement-operations x build; adjacent domain)
+  adjacent_boundaries:
+  - 'processes:pc-ao-conceive-wtq4cr (adjacent context): agentive flow between Build and the adjacent cell.'
+  - 'processes:pc-ao-design-a4hq2r (adjacent context): agentive flow between Build and the adjacent cell.'
+  - 'processes:pc-ao-operate-zfevmp (adjacent context): agentive flow between Build and the adjacent cell.'
+  - 'processes:pc-ao-improve-qkmh6b (adjacent context): agentive flow between Build and the adjacent cell.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-21b
+established_at: '2026-09-07'
+change_history:
+- cr: CR-BP-21b.1
+  date: '2026-09-08'
+  change: 'Processes list extended with the remaining register v2 L2
+
+    candidates for this cell under CR-BP-21b.1.
+
+    '
+- cr: CR-BP-21b
+  date: '2026-09-07'
+  change: 'Initial Process Context record; promoted from the CR-BP-19
+
+    register v2 (ratified against ECF v2.4.0) as part of the
+
+    AgencyAndOrganization landing tranche. Substrate-neutral
+
+    per ADR-ECF-002 §5 / CR-ECF-007.
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21b-agency-organization-landing.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

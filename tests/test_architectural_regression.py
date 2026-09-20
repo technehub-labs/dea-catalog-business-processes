@@ -42,7 +42,9 @@ def test_bpar_rejects_canonical_bad(tmp_path):
     must produce non-zero exit under --strict."""
     sandbox = tmp_path / "sandbox"
     shutil.copytree(ROOT / "entities", sandbox / "entities")
-    bad_file = sandbox / "entities" / "v1-alpha" / "dea:process-customer-channel-and-acquisition-build" / "dea:process-customer-channel-and-acquisition-build.yaml"
+    bad_file = next(
+        sandbox.glob("entities/v1-alpha/**/processes-process-pr-build-nygvw7.yaml")
+    )
     data = yaml.safe_load(bad_file.read_text())
     # Introduce forbidden tokens in name + description.
     data["name"] = "Process Kernel Design"
@@ -74,8 +76,10 @@ def test_conformance_report_live_is_level_4():
     report = yaml.safe_load(
         (ROOT / "reconciliation" / "conformance_report.yaml").read_text()
     )
-    assert report["total_records"] == 788
-    assert report["conformance_levels"] == {0: 0, 1: 0, 2: 0, 3: 3, 4: 785}
+    # CR-BP-mv1: conformance report now spans the full containment tree
+    # (788 pre-migration flat-tree records -> 3,599 post-migration)
+    assert report["total_records"] == 3599
+    assert report["conformance_levels"] == {0: 0, 1: 0, 2: 0, 3: 3, 4: 3596}  # CR-BP-mv1 tree
 
 
 def test_conformance_report_check_passes():

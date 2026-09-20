@@ -1,0 +1,80 @@
+id: processes:pc-fa-design-4j8evh
+domain: FinanceAndAccounting
+lifecycle_stage: Design
+name: Financial Planning and Accounting Architecture Design
+definition: 'The bounded enterprise context for **designing** the chart of accounts, cost allocation model, financial plan structure, and financial controls of the enterprise in the **Finance & Accounting** domain. This context addresses the analytical work of producing finance architecture, planning structure, accounting architecture, and financial control designs. v2.4.0: value architecture design and value measurement frameworks were removed per the monetary scoping (domain-grounding.md §3.7).
+
+  '
+scope:
+  includes:
+  - Chart of accounts design
+  - Cost allocation model design
+  - Financial plan structure design
+  - Financial controls design
+  excludes:
+  - Finance strategy conception (Conceive stage; adjacent context)
+  - Finance capability build (Build stage; adjacent context)
+  - Investment design (strategy-direction x design; adjacent domain)
+outcomes:
+- Chart of accounts is designed.
+- Cost allocation model is designed.
+- Financial plan structure is designed.
+- Financial controls are designed.
+adjacent_contexts:
+- processes:pc-fa-conceive-phabh2
+- processes:pc-fa-build-pztsp9
+- processes:pc-fa-operate-afew7e
+- processes:pc-fa-improve-haqf4w
+processes:
+- processes:process-fa-design-vk422z
+- processes:process-fa-design-uun4ja
+- processes:process-fa-design-ds4drw
+- processes:process-fa-design-k5sgfa
+cell_charter:
+  enterprise_concern: 'Finance & Accounting: the design of the enterprise''s finance and accounting architecture.'
+  lifecycle_concern: 'Design: designing chart of accounts, cost allocation model, financial plan structure, and financial controls.'
+  combined_semantic_meaning: 'The analytical work of producing designs for the chart of accounts, cost allocation model, financial plan structure, and financial controls.
+
+    '
+  expected_outcomes:
+  - Chart of accounts is designed.
+  - Cost allocation model is designed.
+  - Financial plan structure is designed.
+  - Financial controls are designed.
+  inclusions:
+  - Chart of accounts design
+  - Cost allocation model design
+  - Financial plan structure design
+  - Financial controls design
+  exclusions:
+  - Finance strategy conception (Conceive stage; adjacent context)
+  - Finance capability build (Build stage; adjacent context)
+  - Investment design (strategy-direction x design; adjacent domain)
+  adjacent_boundaries:
+  - 'processes:pc-fa-conceive-phabh2 (adjacent context): monetary flow between Design and the adjacent cell.'
+  - 'processes:pc-fa-build-pztsp9 (adjacent context): monetary flow between Design and the adjacent cell.'
+  - 'processes:pc-fa-operate-afew7e (adjacent context): monetary flow between Design and the adjacent cell.'
+  - 'processes:pc-fa-improve-haqf4w (adjacent context): monetary flow between Design and the adjacent cell.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-21e
+established_at: '2026-09-08'
+change_history:
+- cr: CR-BP-21e
+  date: '2026-09-08'
+  change: 'Initial Process Context record; promoted from the CR-BP-19
+
+    register v2 (ratified against ECF v2.4.0) as part of the
+
+    FinanceAndAccounting landing tranche. Substrate-neutral
+
+    per ADR-ECF-002 §5 / CR-ECF-007.
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21e-finance-accounting-landing.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

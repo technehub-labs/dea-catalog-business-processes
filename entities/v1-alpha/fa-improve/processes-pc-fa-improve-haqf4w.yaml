@@ -1,0 +1,75 @@
+id: processes:pc-fa-improve-haqf4w
+domain: FinanceAndAccounting
+lifecycle_stage: Improve
+name: Finance and Financial Control Improvement
+definition: 'The bounded enterprise context for **improving** the cost position, reporting and disclosure, and financial controls of the enterprise in the **Finance & Accounting** domain. This context addresses the learning and adaptation work of conducting cost optimization reviews, improving reporting and disclosure, and strengthening financial controls. v2.4.0: margin and value analysis retained only in the monetary-consequence sense (domain-grounding.md §3.7).
+
+  '
+scope:
+  includes:
+  - Cost optimization review
+  - Reporting and disclosure improvement
+  - Financial control strengthening
+  excludes:
+  - Financial reporting operation (Operate stage; adjacent context)
+  - Capability improvement (owning domains; adjacent domains)
+  - Strategic adaptation (strategy-direction x improve; adjacent domain)
+outcomes:
+- Cost optimization review is conducted and findings committed.
+- Reporting and disclosure are improved.
+- Financial controls are strengthened.
+adjacent_contexts:
+- processes:pc-fa-conceive-phabh2
+- processes:pc-fa-design-4j8evh
+- processes:pc-fa-build-pztsp9
+- processes:pc-fa-operate-afew7e
+processes:
+- processes:process-fa-improve-emqpgr
+- processes:process-fa-improve-cdtsbq
+- processes:process-fa-improve-2kemkq
+cell_charter:
+  enterprise_concern: 'Finance & Accounting: the improvement of the enterprise''s monetary position and controls.'
+  lifecycle_concern: 'Improve: improving cost position, reporting and disclosure, and financial controls.'
+  combined_semantic_meaning: 'The learning and adaptation work of conducting cost optimization reviews, improving reporting and disclosure, and strengthening financial controls.
+
+    '
+  expected_outcomes:
+  - Cost optimization review is conducted and findings committed.
+  - Reporting and disclosure are improved.
+  - Financial controls are strengthened.
+  inclusions:
+  - Cost optimization review
+  - Reporting and disclosure improvement
+  - Financial control strengthening
+  exclusions:
+  - Financial reporting operation (Operate stage; adjacent context)
+  - Capability improvement (owning domains; adjacent domains)
+  - Strategic adaptation (strategy-direction x improve; adjacent domain)
+  adjacent_boundaries:
+  - 'processes:pc-fa-conceive-phabh2 (adjacent context): monetary flow between Improve and the adjacent cell.'
+  - 'processes:pc-fa-design-4j8evh (adjacent context): monetary flow between Improve and the adjacent cell.'
+  - 'processes:pc-fa-build-pztsp9 (adjacent context): monetary flow between Improve and the adjacent cell.'
+  - 'processes:pc-fa-operate-afew7e (adjacent context): monetary flow between Improve and the adjacent cell.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-21e
+established_at: '2026-09-08'
+change_history:
+- cr: CR-BP-21e
+  date: '2026-09-08'
+  change: 'Initial Process Context record; promoted from the CR-BP-19
+
+    register v2 (ratified against ECF v2.4.0) as part of the
+
+    FinanceAndAccounting landing tranche. Substrate-neutral
+
+    per ADR-ECF-002 §5 / CR-ECF-007.
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21e-finance-accounting-landing.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

@@ -1,0 +1,104 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-49
+status: candidate-not-canonical; subject to review
+parent_business_process: processes:process-ge-operate-tpenm6
+coordinate:
+  domain: GovernanceAndExistence
+  stage: Operate
+  process_context: processes:pc-ge-operate-hb2dac
+  process_group: processes:group-ge-operate-v2eu8x
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42,
+  scaled by CR-BP-43 through CR-BP-48)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/processes:process-ge-operate-tpenm6
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: processes:activity-ge-operate-wr4w6h
+  name: "Execute Risk Reviews"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Review execution per register; risk reassessment against scales; review record upkeep"
+  out_of_scope:
+  - "Risk register establishment (processes:process-ge-build-rx7kt5)"
+  - "Exposure surfacing (processes:activity-ge-operate-qtwuqf)"
+  evidence:
+  - "Parent BP trigger (risk review cycle boundary reached)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-49
+- id: processes:activity-ge-operate-qtwuqf
+  name: "Surface Risk Exposures"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Exposure identification; exposure assessment against tolerance bands; exposure escalation per thresholds"
+  out_of_scope:
+  - "Risk review execution (processes:activity-ge-operate-wr4w6h)"
+  - "Tolerance band definition (processes:process-ge-conceive-6qnkhh)"
+  evidence:
+  - "Parent BP outcome (exposures surfaced)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-49
+- id: processes:activity-ge-operate-d5tfkp
+  name: "Deliver Mitigations to Bodies"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Mitigation response formulation; mitigation delivery to bodies; delivery recording"
+  out_of_scope:
+  - "Exposure surfacing (processes:activity-ge-operate-qtwuqf)"
+  - "Governance body operation (processes:process-ge-operate-hs7wf3)"
+  evidence:
+  - "Parent BP outcome (mitigations delivered to governance bodies)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-49
+- id: processes:activity-ge-operate-rwpbpf
+  name: "Maintain Risk Registers"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Register update from reviews; register hygiene; register history upkeep"
+  out_of_scope:
+  - "Risk review execution (processes:activity-ge-operate-wr4w6h)"
+  - "Risk register establishment (processes:process-ge-build-rx7kt5)"
+  evidence:
+  - "Parent BP outcome (enterprise risk oversight operated)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-49
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."

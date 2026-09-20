@@ -1,0 +1,73 @@
+id: processes:activity-fa-design-r7eq66
+type: Activity
+name: Design Funding Structure
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Design Treasury and Funding Model that designs the funding structure (facilities, instruments, maturities) supporting the finance strategy.
+belongs_to_business_process: processes:process-fa-design-k5sgfa
+cohesion_rationale: Constituent work shares a single structure concern (funding composition), one reference class (the funding and capital approach), and one output (the funding structure design). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: FinanceAndAccounting
+    stage: Design
+    identifier: ecf:financeAccounting.design
+metadata:
+  established_by: CR-BP-52
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-52
+    date: '2026-09-13'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-52
+
+      FinanceAndAccounting Conceive + Design + Build tranche (pattern
+
+      proven by CR-BP-42 through CR-BP-51). Classified per CR-BP-32
+
+      section 5 (fails standalone executability and resource dedication);
+
+      decomposition boundary marker per CR-BP-32 section 12 pending Task
+
+      records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-design-funding-structure-intake, dea:task-design-funding-structure-verify, dea:task-design-funding-structure-transform, dea:task-design-funding-structure-confirm, dea:task-design-funding-structure-record).'
+composes:
+- source_id: processes:activity-fa-design-r7eq66
+  target_id: processes:task-fa-design-intake-hj2xte
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-fa-design-r7eq66
+  target_id: processes:task-fa-design-verify-kq8e6m
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-fa-design-r7eq66
+  target_id: processes:task-fa-design-transform-tna2ac
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-fa-design-r7eq66
+  target_id: processes:task-fa-design-confirm-nym5zb
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-fa-design-r7eq66
+  target_id: processes:task-fa-design-record-49ybkn
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

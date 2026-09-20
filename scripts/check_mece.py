@@ -104,13 +104,13 @@ from pathlib import Path
 import yaml
 
 # ID patterns (CR-BP-04 §4).
-PC_ID_PATTERN = re.compile(r"^dea:pc-[a-z0-9-]+$")
-GROUP_ID_PATTERN = re.compile(r"^dea:group-[a-z0-9-]+$")
-BP_ID_PATTERN = re.compile(r"^dea:process-[a-z0-9-]+$")
+PC_ID_PATTERN = re.compile(r"^processes:pc-[a-z0-9-]+$")
+GROUP_ID_PATTERN = re.compile(r"^processes:group-[a-z0-9-]+$")
+BP_ID_PATTERN = re.compile(r"^processes:process-[a-z0-9-]+$")
 
 # Register path (single canonical location per CR-BP-13 / CR-BP-22).
 REGISTER_PATH = (
-    "entities/v1-alpha/dea:group-customer-lifecycle-management"
+    "entities/v1-alpha/pr-operate/pr-operate-7ab3ma"
     "/research/l1-register.yaml"
 )
 
@@ -121,15 +121,12 @@ REGISTER_PATH = (
 
 
 def _load_bp_records(catalog_root: Path) -> list[tuple[Path, dict]]:
-    """Load every canonical Business Process record."""
+    """Load every canonical Business Process record (CR-BP-mv1 tree)."""
     base = catalog_root / "entities" / "v1-alpha"
     pairs = []
     if not base.exists():
         return pairs
-    for entry in sorted(base.iterdir()):
-        if not entry.is_dir() or not entry.name.startswith("dea:process-"):
-            continue
-        yaml_path = entry / f"{entry.name}.yaml"
+    for yaml_path in sorted(base.rglob("processes-process-*.yaml")):
         if not yaml_path.exists():
             continue
         try:
@@ -144,15 +141,12 @@ def _load_bp_records(catalog_root: Path) -> list[tuple[Path, dict]]:
 
 
 def _load_pg_records(catalog_root: Path) -> list[tuple[Path, dict]]:
-    """Load every canonical Process Group record."""
+    """Load every canonical Process Group record (CR-BP-mv1 tree)."""
     base = catalog_root / "entities" / "v1-alpha"
     pairs = []
     if not base.exists():
         return pairs
-    for entry in sorted(base.iterdir()):
-        if not entry.is_dir() or not entry.name.startswith("dea:group-"):
-            continue
-        yaml_path = entry / f"{entry.name}.yaml"
+    for yaml_path in sorted(base.rglob("processes-group-*.yaml")):
         if not yaml_path.exists():
             continue
         try:
@@ -167,12 +161,14 @@ def _load_pg_records(catalog_root: Path) -> list[tuple[Path, dict]]:
 
 
 def _load_pc_records(catalog_root: Path) -> list[tuple[Path, dict]]:
-    """Load every canonical Process Context record."""
-    ctx_dir = catalog_root / "contexts" / "v1-alpha"
+    """Load every canonical Process Context record.
+
+    CR-BP-mv1: PCs live in the containment tree (contexts/ is retired)."""
+    ctx_dir = catalog_root / "entities" / "v1-alpha"
     pairs = []
     if not ctx_dir.exists():
         return pairs
-    for yf in sorted(ctx_dir.glob("dea-pc-*.yaml")):
+    for yf in sorted(ctx_dir.rglob("processes-pc-*.yaml")):
         try:
             data = yaml.safe_load(yf.read_text())
         except yaml.YAMLError as exc:
@@ -579,16 +575,18 @@ def _self_test() -> int:
 
         # --- Helper to write a record
         def _write_bp(id_, verb="Manage", obj="X"):
-            d = root / "entities" / "v1-alpha" / id_
+            slug = id_.split(":", 1)[1].replace(":", "-")
+            d = root / "entities" / "v1-alpha" / "pr-operate" / slug
             d.mkdir(parents=True, exist_ok=True)
-            (d / f"{id_}.yaml").write_text(yaml.safe_dump({
+            (d / f"processes-{slug}.yaml").write_text(yaml.safe_dump({
                 "id": id_, "name": f"{verb} {obj}", "type": "Process",
                 "version": "1.0.0",
                 "identity": {"verb": verb, "object": obj},
             }))
 
         def _write_pg(id_, pc_ref, name, composes_targets=None):
-            d = root / "entities" / "v1-alpha" / id_
+            slug = id_.split(":", 1)[1].replace(":", "-")
+            d = root / "entities" / "v1-alpha" / "pr-operate" / slug
             d.mkdir(parents=True, exist_ok=True)
             composes = []
             if composes_targets:
@@ -598,7 +596,7 @@ def _self_test() -> int:
                         "target_id": t,
                         "relationship_type": "dea:composes",
                     })
-            (d / f"{id_}.yaml").write_text(yaml.safe_dump({
+            (d / f"processes-{slug}.yaml").write_text(yaml.safe_dump({
                 "id": id_, "name": name, "type": "ProcessGroup",
                 "version": "1.0.0",
                 "process_context": pc_ref,
@@ -606,7 +604,7 @@ def _self_test() -> int:
             }))
 
         def _write_pc(id_, domain, stage):
-            d = root / "contexts" / "v1-alpha"
+            d = root / "entities" / "v1-alpha" / "pr-operate"
             d.mkdir(parents=True, exist_ok=True)
             fname = id_.replace(":", "-") + ".yaml"
             (d / fname).write_text(yaml.safe_dump({
@@ -615,7 +613,7 @@ def _self_test() -> int:
             }))
 
         def _write_register(coords):
-            d = root / "entities" / "v1-alpha" / "dea:group-customer-lifecycle-management" / "research"
+            d = root / "entities" / "v1-alpha" / "pr-operate" / "pr-operate-7ab3ma" / "research"
             d.mkdir(parents=True, exist_ok=True)
             reg = {"register": {}}
             for (domain, stage), pc_ref in coords.items():
@@ -626,12 +624,12 @@ def _self_test() -> int:
             (d / "l1-register.yaml").write_text(yaml.safe_dump(reg))
 
         # === MECE-001: register coordinate without PC ===
-        _write_register({("D1", "S1"): "dea:pc-d1-s1"})
+        _write_register({("D1", "S1"): "processes:pc-d1-s1"})
         f = evaluate(root)
         assert any(x["rule"] == "MECE-001" for x in f), f
 
         # === MECE-001: register coordinate WITH PC passes ===
-        _write_pc("dea:pc-d1-s1", "D1", "S1")
+        _write_pc("processes:pc-d1-s1", "D1", "S1")
         f = evaluate(root)
         assert not any(x["rule"] == "MECE-001" for x in f), f
 
@@ -640,7 +638,7 @@ def _self_test() -> int:
         assert any(x["rule"] == "MECE-002" for x in f), f
 
         # === MECE-002: PC with PG passes ===
-        _write_pg("dea:group-g1", "dea:pc-d1-s1", "Group One")
+        _write_pg("processes:group-g1", "processes:pc-d1-s1", "Group One")
         f = evaluate(root)
         assert not any(x["rule"] == "MECE-002" for x in f), f
 
@@ -649,32 +647,32 @@ def _self_test() -> int:
         assert any(x["rule"] == "MECE-003" for x in f), f
 
         # === MECE-003: PG with BP passes ===
-        _write_bp("dea:process-b1", "Manage", "Thing")
+        _write_bp("processes:process-b1", "Manage", "Thing")
         # Re-write PG with composes
-        _write_pg("dea:group-g1", "dea:pc-d1-s1", "Group One",
-                  composes_targets=["dea:process-b1"])
+        _write_pg("processes:group-g1", "processes:pc-d1-s1", "Group One",
+                  composes_targets=["processes:process-b1"])
         f = evaluate(root)
         assert not any(x["rule"] == "MECE-003" for x in f), f
 
         # === MECE-004: duplicate (verb, object) ===
-        _write_bp("dea:process-b2", "Manage", "Thing")
+        _write_bp("processes:process-b2", "Manage", "Thing")
         f = evaluate(root)
         assert any(x["rule"] == "MECE-004" for x in f), f
 
         # === MECE-004: unique passes ===
-        _write_bp("dea:process-b2", "Manage", "Other Thing")
+        _write_bp("processes:process-b2", "Manage", "Other Thing")
         f = evaluate(root)
         assert not any(x["rule"] == "MECE-004" for x in f), f
 
         # === MECE-005: duplicate (pc, name) ===
-        _write_pg("dea:group-g2", "dea:pc-d1-s1", "Group One",
-                  composes_targets=["dea:process-b1"])
+        _write_pg("processes:group-g2", "processes:pc-d1-s1", "Group One",
+                  composes_targets=["processes:process-b1"])
         f = evaluate(root)
         assert any(x["rule"] == "MECE-005" for x in f), f
 
         # === MECE-005: different name passes ===
-        _write_pg("dea:group-g2", "dea:pc-d1-s1", "Group Two",
-                  composes_targets=["dea:process-b1"])
+        _write_pg("processes:group-g2", "processes:pc-d1-s1", "Group Two",
+                  composes_targets=["processes:process-b1"])
         f = evaluate(root)
         assert not any(x["rule"] == "MECE-005" for x in f), f
 
@@ -684,34 +682,34 @@ def _self_test() -> int:
         assert not any(x["rule"] == "MECE-006" for x in f), f
 
         # === MECE-007: PG references non-existent PC ===
-        _write_pg("dea:group-g3", "dea:pc-nonexistent", "Orphan Group",
-                  composes_targets=["dea:process-b1"])
+        _write_pg("processes:group-g3", "processes:pc-nonexistent", "Orphan Group",
+                  composes_targets=["processes:process-b1"])
         f = evaluate(root)
         assert any(x["rule"] == "MECE-007" for x in f), f
 
         # === MECE-007: clean after removing orphan ===
         import shutil
-        shutil.rmtree(root / "entities" / "v1-alpha" / "dea:group-g3")
+        shutil.rmtree(root / "entities" / "v1-alpha" / "pr-operate" / "group-g3")
         f = evaluate(root)
         assert not any(x["rule"] == "MECE-007" for x in f), f
 
         # === MECE-008: BP not composed by any PG ===
-        _write_bp("dea:process-orphan", "Orphan", "Process")
+        _write_bp("processes:process-orphan", "Orphan", "Process")
         f = evaluate(root)
         assert any(x["rule"] == "MECE-008" for x in f), f
 
         # === MECE-008: clean after composing orphan ===
-        _write_pg("dea:group-g1", "dea:pc-d1-s1", "Group One",
-                  composes_targets=["dea:process-b1", "dea:process-orphan",
-                                    "dea:process-b2"])
+        _write_pg("processes:group-g1", "processes:pc-d1-s1", "Group One",
+                  composes_targets=["processes:process-b1", "processes:process-orphan",
+                                    "processes:process-b2"])
         f = evaluate(root)
         assert not any(x["rule"] == "MECE-008" for x in f), f
 
         # === MECE-008: deprecated BP is exempt ===
-        _write_bp("dea:process-deprecated", "Old", "Process")
+        _write_bp("processes:process-deprecated", "Old", "Process")
         # Manually set deprecated lifecycle_status
-        dep_dir = root / "entities" / "v1-alpha" / "dea:process-deprecated"
-        dep_yaml = dep_dir / "dea:process-deprecated.yaml"
+        dep_dir = root / "entities" / "v1-alpha" / "pr-operate" / "process-deprecated"
+        dep_yaml = dep_dir / "processes-process-deprecated.yaml"
         dep_data = yaml.safe_load(dep_yaml.read_text())
         dep_data["lifecycle_status"] = "deprecated"
         dep_yaml.write_text(yaml.safe_dump(dep_data))

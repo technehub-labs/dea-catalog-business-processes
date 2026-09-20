@@ -1,0 +1,75 @@
+id: processes:activity-sd-activate-w83pp4
+type: Activity
+name: Complete Supervisor Review and Obtain Acknowledgement on Record
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Institutionalize Regulated Strategic Plan that completes the supervisor's review and obtains the acknowledgement on record before the strategic plan takes effect (Basel SREP review completion; SRB resolution-plan review completion; NHS England / Department of Health strategy review completion; PUC rate-case strategic-plan review completion).
+belongs_to_business_process: processes:process-sd-activate-s9m34e
+cohesion_rationale: Constituent work shares a single supervisor-review-completion concern, one input class (the filed strategic-plan submission and the supervisor's review criteria), and one output (the supervisor's acknowledgement on record preserved on the regulated strategic-plan record). Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: StrategyAndDirection
+    stage: Activate
+    identifier: ecf:strategyDirection.activate
+metadata:
+  established_by: CR-BP-87
+  established_at: '2026-09-17'
+  change_history:
+  - cr: CR-BP-87
+    date: '2026-09-17'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-87
+
+      L3 decomposition tranche for the four ADMIT-CANONICAL
+
+      Activate Business Processes (CR-BP-81 / CR-BP-82 / CR-BP-83 /
+
+      CR-BP-86). Classified per CR-BP-32 section 5 (fails standalone
+
+      executability and resource dedication); decomposition boundary
+
+      marker per CR-BP-32 section 12 pending Task records (dea:Task
+
+      lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-complete-supervisor-review-and-obtain-acknowledgement-on-record-intake, dea:task-complete-supervisor-review-and-obtain-acknowledgement-on-record-verify, dea:task-complete-supervisor-review-and-obtain-acknowledgement-on-record-transform, dea:task-complete-supervisor-review-and-obtain-acknowledgement-on-record-confirm, dea:task-complete-supervisor-review-and-obtain-acknowledgement-on-record-record).'
+composes:
+- source_id: processes:activity-sd-activate-w83pp4
+  target_id: processes:task-sd-activate-intake-g7cxyr
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-activate-w83pp4
+  target_id: processes:task-sd-activate-verify-c5vtcy
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-activate-w83pp4
+  target_id: processes:task-sd-activate-transform-yepwxy
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-activate-w83pp4
+  target_id: processes:task-sd-activate-confirm-eu6wma
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-activate-w83pp4
+  target_id: processes:task-sd-activate-record-r8p7py
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

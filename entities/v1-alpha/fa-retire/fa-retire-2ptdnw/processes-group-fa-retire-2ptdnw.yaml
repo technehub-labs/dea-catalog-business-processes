@@ -1,0 +1,125 @@
+id: processes:group-fa-retire-2ptdnw
+type: ProcessGroup
+version: 1.0.0
+name: Regulated Run-Off
+definition: 'The bounded Process Group that organises the Business Process
+
+  responsibilities of retiring a regulated financial entity
+
+  (insurer, mutual, or run-off portfolio) under statutory run-off
+
+  obligations in the FinanceAndAccounting x Retire context where
+
+  regulator-acknowledged run-off authorisation triggers distinct
+
+  group-level work (run-off plan submission, statutory accounting
+
+  basis transition, reserving, capital adequacy, asset-liability
+
+  matching, policyholder priority, communications, retained-records,
+
+  exit accounting, and solvent-exit or run-off completion
+
+  certification).
+
+  '
+process_context: processes:pc-fa-retire-64q5p9
+scope:
+  includes:
+  - Regulator-acknowledged run-off authorisation (PRA, FCA, NAIC, IAIS, EIOPA member authorities)
+  - Run-off plan submission within the controlling regulator's window (28-day window under PRA PS20/24)
+  - 'Statutory accounting basis transition: going-concern to liquidation-basis (ASC 205-30) or fulfillment-measurement (IFRS 17 run-off treatment)'
+  - Reserving, capital adequacy, and asset-liability matching throughout the run-off period
+  - Policyholder priority creditor treatment and policyholder claim adjudication and payment
+  - Communications to policyholders and stakeholders
+  - Retained-records and service-of-process obligations
+  - Tax-clearance and statutory liability settlement
+  - Solvent exit certification or run-off completion certification
+  excludes:
+  - Pre-run-off financial stewardship (Operate coordinate)
+  - Physical asset decommissioning (EnablementAndOperations x Retire; CR-BP-66)
+  - Counterparty and agent relationship closure (PartyAndRelationship x Retire; CR-BP-67)
+  - Product line retirement (ProductAndValue x Retire; CR-BP-67 adjacent)
+  - Non-insurance regulated wind-downs (banks under PRA BRRD / FDIC OLA, pension funds under PBGC termination) -- deferred to a future CR
+outcomes:
+- The regulated run-off is executed under the controlling regulator's supervision with statutory accounting basis (liquidation basis under ASC 205-30, IFRS 17 fulfillment measurement for insurance liabilities, IFRS 5 for held-for-sale groups), all policyholder claims adjudicated and paid under policyholder-priority creditor treatment, statutory liabilities settled, retained-records and service-of-process obligations satisfied, and the entity's authorisation surrendered or the run-off portfolio fully transferred with solvent-exit certification (PRA) or run-off completion certification (FSB) obtained.
+composes:
+- source_id: processes:group-fa-retire-2ptdnw
+  target_id: processes:process-fa-retire-wkbrsa
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per the CR-BP-74
+
+    escape-clause discovery outcome (ADMIT-CANONICAL recommendation)
+
+    landed by CR-BP-75. The discovery evidence (PRA PS20/24, FSB
+
+    2025, NAIC Model 901, IFRS 17, IFRS 5, ASC 205-30, ASC 944,
+
+    IRO 2024) activates the register v2 cell''s verbatim escape
+
+    condition.
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-75
+    asserted_by: dea-team
+    asserted_at: '2026-09-15'
+process_group_kind: cross-cutting
+status: accepted
+lifecycle_status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: FinanceAndAccounting
+    stage: Retire
+    identifier: ecf:financeAccounting.retire
+evidence:
+- source: CR-BP-74 escape-clause discovery
+  claim: 'This Process Group''s coordinate was evaluated by the CR-BP-74
+
+    escape-clause discovery record at
+
+    discovery/v1-alpha/finance-and-accounting-retire-escape.yaml.
+
+    The cell''s escape clause ("defer until a regulated unwind
+
+    (e.g. mutual insurer run-off) requires a standalone group")
+
+    was found met, scoring 9/10 with an ADMIT-CANONICAL
+
+    recommendation on authoritative statutory and
+
+    accounting-standards evidence (PRA PS20/24 UK in force 30
+
+    June 2026; FSB Final Guidance on Insurance Resolution
+
+    Strategies 2025; NAIC Model 901; IFRS 17 effective 2023;
+
+    IFRS 5; ASC 205-30 Liquidation Basis FASB ASU 2013-07; ASC
+
+    944; APQC PCF 8.8; TM Forum eTOM GB921; IRO Best Practice
+
+    Guidance 2024).
+
+    '
+  strength: E5
+  reference: discovery/v1-alpha/finance-and-accounting-retire-escape.yaml
+- source: CR-BP-75 admission tranche
+  claim: 'CR-BP-75 lands this Process Group as the L1 home of the
+
+    discovery-admitted Business Process and flips the register cell
+
+    to ratified-accepted / landed.
+
+    '
+  strength: E4
+  reference: change-requests/CR-BP-75-fa-retire-admission.md

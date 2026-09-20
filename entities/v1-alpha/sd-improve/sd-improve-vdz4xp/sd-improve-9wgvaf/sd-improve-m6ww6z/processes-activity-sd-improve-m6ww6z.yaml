@@ -1,0 +1,73 @@
+id: processes:activity-sd-improve-m6ww6z
+type: Activity
+name: Commit Direction Adjustment
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Adapt Strategic Direction that commits the selected direction adjustment and hands it off for objectives refresh and effectiveness review.
+belongs_to_business_process: processes:process-sd-improve-9wgvaf
+cohesion_rationale: Constituent work shares a single commitment concern (selection, ratification, and handoff of the direction adjustment), one input class (the assessed adjustment implications), and one output (the committed direction adjustment). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: StrategyAndDirection
+    stage: Improve
+    identifier: ecf:strategyDirection.improve
+metadata:
+  established_by: CR-BP-55
+  established_at: '2026-09-14'
+  change_history:
+  - cr: CR-BP-55
+    date: '2026-09-14'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-55
+
+      StrategyAndDirection Improve + Operate tranche (pattern proven by CR-BP-42 through CR-BP-54).
+
+      Classified per CR-BP-32 section 5 (fails standalone
+
+      executability and resource dedication); decomposition
+
+      boundary marker per CR-BP-32 section 12 pending Task
+
+      records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-commit-direction-adjustment-intake, dea:task-commit-direction-adjustment-verify, dea:task-commit-direction-adjustment-transform, dea:task-commit-direction-adjustment-confirm, dea:task-commit-direction-adjustment-record).'
+composes:
+- source_id: processes:activity-sd-improve-m6ww6z
+  target_id: processes:task-sd-improve-intake-9dr6bv
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-improve-m6ww6z
+  target_id: processes:task-sd-improve-verify-p39b57
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-improve-m6ww6z
+  target_id: processes:task-sd-improve-transform-e2ngzt
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-improve-m6ww6z
+  target_id: processes:task-sd-improve-confirm-trcxdz
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-improve-m6ww6z
+  target_id: processes:task-sd-improve-record-8cq2g9
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

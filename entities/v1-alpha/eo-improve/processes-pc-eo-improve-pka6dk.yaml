@@ -1,0 +1,94 @@
+id: processes:pc-eo-improve-pka6dk
+domain: EnablementAndOperations
+lifecycle_stage: Improve
+name: Operations and Enablement Improvement
+definition: 'The bounded enterprise context for **improving** the operations and enablement assets of the enterprise in the **Enablement & Operations** domain. This context addresses the learning and adaptation work of conducting operations performance reviews, logistics optimization, lean programmes, asset utilization optimization, and technology platform evolution. v2.4.0: absorbs asset utilization improvement from the dissolved Supply & Resources domain; supplier consolidation lives in party-relationship x improve (domain-grounding.md §3.6).
+
+  '
+scope:
+  includes:
+  - Operations performance review
+  - Logistics optimization
+  - Lean and continuous improvement programmes
+  - Asset utilization optimization
+  - Technology platform evolution
+  excludes:
+  - Operations performance operation (Operate stage; adjacent context)
+  - Capability improvement (owning domains; adjacent domains)
+  - Strategic adaptation (strategy-direction x improve; adjacent domain)
+  - Supplier consolidation (party-relationship x improve; adjacent domain)
+outcomes:
+- Operations performance review is conducted and findings committed.
+- Logistics optimization is delivered.
+- Lean programme results are realized.
+- Asset utilization is optimized.
+- Technology platforms are evolved.
+adjacent_contexts:
+- processes:pc-eo-conceive-mxmtzq
+- processes:pc-eo-design-kxdfnz
+- processes:pc-eo-build-zwkhxc
+- processes:pc-eo-operate-ydqb96
+processes:
+- processes:process-eo-improve-g3ngp3
+- processes:process-eo-improve-3fem63
+- processes:process-eo-improve-us272s
+- processes:process-eo-improve-q58ecg
+- processes:process-eo-improve-babwdc
+cell_charter:
+  enterprise_concern: 'Enablement & Operations: the improvement of the enterprise''s execution engine and enabling assets.'
+  lifecycle_concern: 'Improve: improving operations performance, logistics, asset utilization, and technology platforms.'
+  combined_semantic_meaning: 'The learning and adaptation work of conducting operations performance reviews, logistics optimization, lean programmes, asset utilization optimization, and technology platform evolution.
+
+    '
+  expected_outcomes:
+  - Operations performance review is conducted and findings committed.
+  - Logistics optimization is delivered.
+  - Lean programme results are realized.
+  - Asset utilization is optimized.
+  - Technology platforms are evolved.
+  inclusions:
+  - Operations performance review
+  - Logistics optimization
+  - Lean and continuous improvement programmes
+  - Asset utilization optimization
+  - Technology platform evolution
+  exclusions:
+  - Operations performance operation (Operate stage; adjacent context)
+  - Capability improvement (owning domains; adjacent domains)
+  - Strategic adaptation (strategy-direction x improve; adjacent domain)
+  - Supplier consolidation (party-relationship x improve; adjacent domain)
+  adjacent_boundaries:
+  - 'processes:pc-eo-conceive-mxmtzq (adjacent context): execution flow between Improve and the adjacent cell.'
+  - 'processes:pc-eo-design-kxdfnz (adjacent context): execution flow between Improve and the adjacent cell.'
+  - 'processes:pc-eo-build-zwkhxc (adjacent context): execution flow between Improve and the adjacent cell.'
+  - 'processes:pc-eo-operate-ydqb96 (adjacent context): execution flow between Improve and the adjacent cell.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-21d
+established_at: '2026-09-08'
+change_history:
+- cr: CR-BP-21d.1
+  date: '2026-09-08'
+  change: 'Processes list extended with the remaining register v2 L2
+
+    candidates for this cell under CR-BP-21d.1.
+
+    '
+- cr: CR-BP-21d
+  date: '2026-09-08'
+  change: 'Initial Process Context record; promoted from the CR-BP-19
+
+    register v2 (ratified against ECF v2.4.0) as part of the
+
+    EnablementAndOperations landing tranche. Substrate-neutral
+
+    per ADR-ECF-002 §5 / CR-ECF-007.
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21d-enablement-operations-landing.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

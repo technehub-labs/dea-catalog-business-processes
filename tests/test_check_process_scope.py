@@ -45,15 +45,15 @@ from check_process_scope import (  # noqa: E402
 
 
 def test_id_pattern_accepts_canonical_scope_id() -> None:
-    assert ID_PATTERN.match("dea:scope-customer-value-stream")
-    assert ID_PATTERN.match("dea:scope-foo-bar-123")
+    assert ID_PATTERN.match("processes:scope-pr-operate-vs0001")
+    assert ID_PATTERN.match("processes:scope-fa-build-foo123")
 
 
 def test_id_pattern_rejects_group_and_process_and_other_ids() -> None:
     for bad in (
-        "dea:group-foo",
-        "dea:process-foo",
-        "dea:pc-foo",
+        "processes:group-foo",
+        "processes:process-foo",
+        "processes:pc-foo",
         "dea:scopeFoo",  # camelCase
         "dea:scope_foo",  # underscore not allowed
         "scope-foo",  # missing namespace
@@ -70,7 +70,7 @@ def test_scope_kind_vocabulary_has_six_values() -> None:
 
 def test_check_one_flags_missing_required_fields(tmp_path: Path) -> None:
     """PSCOPE-002: required fields missing."""
-    entry = {"id": "dea:scope-x", "type": "ProcessScope"}  # most fields absent
+    entry = {"id": "processes:scope-pr-operate-x001", "type": "ProcessScope"}  # most fields absent
     errors: list[str] = []
     _check_one(
         entry,
@@ -85,12 +85,12 @@ def test_check_one_flags_missing_required_fields(tmp_path: Path) -> None:
 def test_check_one_flags_bad_scope_kind(tmp_path: Path) -> None:
     """PSCOPE-007: scope_kind not in controlled vocabulary."""
     entry = {
-        "id": "dea:scope-x",
+        "id": "processes:scope-pr-operate-x001",
         "type": "ProcessScope",
         "name": "X",
         "version": "1.0.0",
         "definition": "x",
-        "process_context": "dea:pc-test",
+        "process_context": "processes:pc-test",
         "scope": {"includes": ["a"], "excludes": ["b"]},
         "outcomes": ["x"],
         "decomposition_basis": {
@@ -105,7 +105,7 @@ def test_check_one_flags_bad_scope_kind(tmp_path: Path) -> None:
     errors: list[str] = []
     _check_one(
         entry,
-        context_ids={"dea:pc-test"},
+        context_ids={"processes:pc-test"},
         group_ids=set(),
         errors=errors,
         all_entries=[],
@@ -116,12 +116,12 @@ def test_check_one_flags_bad_scope_kind(tmp_path: Path) -> None:
 def test_check_one_passes_minimal_conformant_scope(tmp_path: Path) -> None:
     """PSCOPE happy path."""
     entry = {
-        "id": "dea:scope-x",
+        "id": "processes:scope-pr-operate-x001",
         "type": "ProcessScope",
         "name": "X",
         "version": "1.0.0",
         "definition": "x",
-        "process_context": "dea:pc-test",
+        "process_context": "processes:pc-test",
         "scope": {"includes": ["a"], "excludes": ["b"]},
         "outcomes": ["x"],
         "decomposition_basis": {
@@ -130,8 +130,8 @@ def test_check_one_passes_minimal_conformant_scope(tmp_path: Path) -> None:
         },
         "composes": [
             {
-                "source_id": "dea:scope-x",
-                "target_id": "dea:group-x",
+                "source_id": "processes:scope-pr-operate-x001",
+                "target_id": "processes:group-x",
                 "relationship_type": "composes",
                 "status": "active",
             },
@@ -143,8 +143,8 @@ def test_check_one_passes_minimal_conformant_scope(tmp_path: Path) -> None:
     errors: list[str] = []
     _check_one(
         entry,
-        context_ids={"dea:pc-test"},
-        group_ids={"dea:group-x"},
+        context_ids={"processes:pc-test"},
+        group_ids={"processes:group-x"},
         errors=errors,
         all_entries=[entry],
     )
@@ -164,9 +164,9 @@ def test_run_checks_empty_catalog_returns_clean(tmp_path: Path) -> None:
 def test_run_checks_pg_only_returns_clean_no_records_found(tmp_path: Path) -> None:
     """48 PG records, 0 PS records: PSCOPE returns honest pass without firing
     any MECE or resolution rules (no PS records to check)."""
-    entities = tmp_path / "entities" / "v1-alpha" / "dea:group-x"
+    entities = tmp_path / "entities" / "v1-alpha" / "processes:group-x"
     entities.mkdir(parents=True)
-    (entities / "dea:group-x.yaml").write_text(
+    (entities / "processes:group-x.yaml").write_text(
         "id: dea:group-x\n"
         "type: ProcessGroup\n"
         "name: X\n"
@@ -187,10 +187,10 @@ def test_run_checks_pg_only_returns_clean_no_records_found(tmp_path: Path) -> No
 
 def test_run_checks_ps_with_unresolved_target_id(tmp_path: Path) -> None:
     """PSCOPE-005: composes target_id does not resolve to a known group."""
-    entities = tmp_path / "entities" / "v1-alpha" / "dea:scope-x"
+    entities = tmp_path / "entities" / "v1-alpha" / "processes:scope-pr-operate-x001"
     entities.mkdir(parents=True)
-    (entities / "dea:scope-x.yaml").write_text(
-        "id: dea:scope-x\n"
+    (entities / "processes-scope-pr-operate-x001.yaml").write_text(
+        "id: processes:scope-pr-operate-x001\n"
         "type: ProcessScope\n"
         "name: X\n"
         "version: 1.0.0\n"
@@ -200,8 +200,8 @@ def test_run_checks_ps_with_unresolved_target_id(tmp_path: Path) -> None:
         "outcomes: [x]\n"
         "decomposition_basis:\n  type: value-stream\n  statement: Decomposes the value stream.\n"
         "composes:\n"
-        "  - source_id: dea:scope-x\n"
-        "    target_id: dea:group-does-not-exist\n"
+        "  - source_id: processes:scope-pr-operate-x001\n"
+        "    target_id: processes:group-pr-operate-nope01\n"
         "    relationship_type: composes\n"
         "    status: active\n"
         "scope_kind: value-stream\n"

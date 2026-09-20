@@ -1,0 +1,80 @@
+id: processes:process-fa-design-k5sgfa
+name: Design Treasury and Funding Model
+type: Process
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+process_intent: develop
+process_type: management
+context:
+- ref: processes:pc-fa-design-4j8evh
+description: 'Design Treasury and Funding Model (design stage, management process). Landed by CR-BP-21e.1
+
+  from the FinanceAndAccounting register v2.
+
+  '
+trigger: Treasury policy or funding posture is reviewed.
+outcome: Treasury and funding model is designed with cash, liquidity, and funding policy coordinated for treasury operations.
+triggers:
+- Treasury policy or funding posture is reviewed.
+outcomes:
+- Treasury and funding model is designed with cash, liquidity, and funding policy coordinated for treasury operations.
+identity:
+  verb: Design
+  object: Treasury and Funding Model
+  outcome_statement: Treasury and funding model is designed with cash, liquidity, and funding policy coordinated for treasury operations.
+  evidence_links:
+  - type: documentation
+    ref: change-requests/CR-BP-21e.1.md
+relationships:
+- source_id: processes:process-fa-design-k5sgfa
+  relationship_type: serves
+  target_id: ecf:financeAccounting.design
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: FinanceAndAccounting
+    stage: Design
+    identifier: ecf:financeAccounting.design
+  target_id: ecf:financeAccounting.design
+metadata:
+  established_by: CR-BP-21e.1
+  established_at: '2026-09-08'
+  activity_references:
+  - processes:activity-fa-design-tsdptr
+  - processes:activity-fa-design-r7eq66
+  - processes:activity-fa-design-d4rea9
+  - processes:activity-fa-design-r4hzb6
+change_history:
+- version: 1.0.0
+  date: '2026-09-08'
+  cr: CR-BP-21e.1
+  change: 'Initial landing under CR-BP-21e.1 (FinanceAndAccounting completion).
+
+    '
+- date: '2026-09-13'
+  cr: CR-BP-52
+  change: 'L3 decomposition of this Business Process: 4 Activities
+
+    landed under the structured deposition pattern (research
+
+    deposition at research/l3-candidate-universe.yaml, then
+
+    canonical Activity records) as part of the CR-BP-52
+
+    FinanceAndAccounting Conceive + Design + Build tranche.
+
+    Adds metadata.activity_references[] back-references per
+
+    ACT-010 bidirectional traceability. Additive metadata-only
+
+    change; BP identity and semantics unchanged, so version
+
+    remains unchanged per SIV-004 (CR-BP-34d).
+
+    '

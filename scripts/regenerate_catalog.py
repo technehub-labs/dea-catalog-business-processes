@@ -76,11 +76,11 @@ CROSS_CUTTING_PATHS: dict[str, str] = {
     "change_requests": "change-requests/",
 }
 
-# Entity id pattern: dea:<family>-<name>(:<sub>)*; accepts single-segment
-# (dea:process-foo) and multi-segment (dea:pc-pr-op) ids. Matches the
+# Entity id pattern: CR-BP-mv1 org-wide form
+# (e.g. processes:task-fa-activate-confirm-kuz7yt). Matches the
 # schema's entity_entry.id pattern.
 import re
-ENTITY_ID_PATTERN = re.compile(r"^dea:[a-z0-9-]+(:[a-z0-9-]+)*$")
+ENTITY_ID_PATTERN = re.compile(r"^processes:[a-z0-9-]+$")
 
 
 def load_schema(schema_path: Path) -> dict[str, Any]:
@@ -184,43 +184,34 @@ def build_catalog_metadata(
 
 
 def list_subtrees(catalog_root: Path) -> list[Path]:
-    """List every directory under `entities/v1-alpha/`; sorted lexicographically."""
+    """CR-BP-mv1: list canonical record files in the containment tree.
+
+    The iteration unit is the record file (`processes-*.yaml`), not the
+    old per-entity flat directory. Every record file is one entity.
+    """
     entities_root = catalog_root / "entities" / "v1-alpha"
     if not entities_root.exists():
         return []
-    return sorted([p for p in entities_root.iterdir() if p.is_dir()])
+    return sorted(entities_root.rglob("processes-*.yaml"))
 
 
 def entity_id_from_subtree(subtree: Path) -> str:
-    """Derive the entity id from the subtree directory name.
+    """CR-BP-mv1: derive the entity id from the record file's `id:` field.
 
-    The subtree directory preserves the canonical id verbatim (colons included),
-    so this is the canonical source.
+    `subtree` here is the record file path (the iteration unit changed in
+    CR-BP-mv1); the id lives inside the record, not in the directory name.
     """
-    return subtree.name
+    data = load_yaml(subtree) or {}
+    return str(data.get("id", subtree.stem))
 
 
 def read_canonical_yaml(subtree: Path, entity_id: str) -> dict[str, Any] | None:
-    """Load the canonical YAML at the subtree root; return None if absent.
+    """CR-BP-mv1: load the canonical record file directly.
 
-    If no root-level canonical exists, fall back to the most recent file
-    under `retired/` (entities that are fully retired may have moved their
-    canonical file out of the root).
+    `subtree` is the record file path in the containment tree; the record
+    IS the canonical file, so this is a direct load.
     """
-    canonical = subtree / f"{entity_id}.yaml"
-    if canonical.exists():
-        # Fallback: first .yaml at the subtree root.
-        candidates = sorted(subtree.glob("*.yaml"))
-        if not candidates:
-            return None
-        return load_yaml(candidates[0])
-    retired = subtree / "retired"
-    if retired.is_dir():
-        retired_files = sorted(retired.glob("*.yaml"))
-        if retired_files:
-            # Use the lexicographically last (most recent version) retired file.
-            return load_yaml(retired_files[-1])
-    return None
+    return load_yaml(subtree)
 
 
 def state_research_present(subtree: Path) -> bool:
@@ -242,59 +233,39 @@ def state_retired_present(subtree: Path) -> bool:
 
 
 def infer_state(subtree: Path, canonical: dict[str, Any] | None) -> tuple[str, str | None]:
-    """Infer the entity's state per CR-CATALOG-STRUCT-06a §4.1 precedence rule.
+    """CR-BP-mv1: infer the entity's state from the record file.
 
-    Returns `(state, canonical_path)` where canonical_path is the path
-    that should be recorded in the entities[] entry (None if no canonical file).
+    `subtree` is the record file path. Every record in the containment tree
+    is canonical unless its lifecycle_status is retired. The record's own
+    directory may carry research/ subdirectories (BP-era deposition state).
     """
-    entity_id = entity_id_from_subtree(subtree)
-    canonical_file = subtree / f"{entity_id}.yaml"
-    canonical_path = (
-        f"entities/v1-alpha/{entity_id}/{entity_id}.yaml"
-        if canonical_file.exists()
-        else None
-    )
+    record_dir = subtree.parent
+    canonical_path = None
+    if subtree.exists():
+        # Path relative to the catalog root (entities/v1-alpha/... form).
+        parts = subtree.parts
+        try:
+            idx = parts.index("v1-alpha")
+            canonical_path = str(Path("entities") / "v1-alpha" / Path(*parts[idx + 1:]))
+        except ValueError:
+            canonical_path = str(subtree)
 
-    has_research = state_research_present(subtree)
-    has_candidates = state_candidates_present(subtree)
-    has_retired = state_retired_present(subtree)
+    has_research = state_research_present(record_dir)
+    has_candidates = state_candidates_present(record_dir)
+    has_retired = state_retired_present(record_dir)
 
-    # Precedence 5: empty subtree -> placeholder (still emitted as candidate).
-    if not has_research and not has_candidates and not has_retired and not canonical_path:
-        return "candidate", canonical_path
-
-    # Precedence 4: canonical file present (root or retired fallback) and
-    # lifecycle_status not retired.
     if canonical is not None:
         lifecycle = canonical.get("lifecycle_status")
-        if canonical_path is not None and lifecycle not in RETIRED_LIFECYCLE_STATUSES:
-            return "canonical", canonical_path
         if lifecycle in RETIRED_LIFECYCLE_STATUSES:
-            # Retired: prefer the root canonical path if it exists, else the
-            # last retired/ file's path (preserved as historical record).
-            if canonical_path is not None:
-                return "retired", canonical_path
-            retired_files = sorted((subtree / "retired").glob("*.yaml")) if (subtree / "retired").is_dir() else []
-            if retired_files:
-                return "retired", f"entities/v1-alpha/{entity_id}/retired/{retired_files[-1].name}"
             return "retired", canonical_path
+        return "canonical", canonical_path
 
-    # Precedence 2: candidates/ has files but no canonical.
-    if has_candidates and not canonical_path:
-        first_candidate = next(
-            (subtree / "candidates" / n for n in sorted(os.listdir(subtree / "candidates"))
-             if (subtree / "candidates" / n).is_file()),
-            None,
-        )
-        if first_candidate is not None:
-            return "candidate", f"entities/v1-alpha/{entity_id}/candidates/{first_candidate.name}"
+    if has_candidates:
         return "candidate", canonical_path
-
-    # Precedence 1: research/ has files only.
     if has_research:
         return "research", canonical_path
-
-    # Defensive fallback: candidate placeholder.
+    if has_retired:
+        return "retired", canonical_path
     return "candidate", canonical_path
 
 
@@ -375,22 +346,17 @@ def git_last_commit_date(subtree: Path, repo_root: Path) -> str:
 
 
 def entity_path_for(subtree: Path, state: str) -> str | None:
-    """Build the repo-relative path field for the entity entry.
+    """CR-BP-mv1: build the repo-relative path field for the entity entry.
 
-    Returns None if the subtree has no candidate file at all (empty subtree).
+    `subtree` is the record file path; the path field is the record file's
+    repo-relative path (entities/v1-alpha/<cell>/.../processes-*.yaml).
     """
-    entity_id = entity_id_from_subtree(subtree)
-    canonical = subtree / f"{entity_id}.yaml"
-    if canonical.exists():
-        return f"entities/v1-alpha/{entity_id}/{entity_id}.yaml"
-    # First candidate file
-    candidates_dir = subtree / "candidates"
-    if candidates_dir.is_dir():
-        candidates = sorted(p for p in candidates_dir.iterdir() if p.is_file() and p.suffix in (".yaml", ".yml"))
-        if candidates:
-            return f"entities/v1-alpha/{entity_id}/candidates/{candidates[0].name}"
-    # Subtree root with trailing slash
-    return f"entities/v1-alpha/{entity_id}/"
+    parts = subtree.parts
+    try:
+        idx = parts.index("v1-alpha")
+        return str(Path("entities") / "v1-alpha" / Path(*parts[idx + 1:]))
+    except ValueError:
+        return str(subtree)
 
 
 def build_entity_entry(
@@ -407,11 +373,10 @@ def build_entity_entry(
     canonical = read_canonical_yaml(subtree, entity_id)
     state, _canonical_path_from_infer = infer_state(subtree, canonical)
     path = entity_path_for(subtree, state)
+    record_dir = subtree.parent
 
     if path is None:
-        # Empty subtree; use the subtree root path with trailing slash.
-        path = f"entities/v1-alpha/{entity_id}/"
-        warnings.append(f"entity {entity_id!r} has no files; emitting empty placeholder")
+        warnings.append(f"entity {entity_id!r} has no resolvable path; emitting raw path")
 
     if canonical is None:
         version = "0.0.0"
@@ -427,11 +392,11 @@ def build_entity_entry(
         "type": entity_type,
         "state": state,
         "path": path,
-        "research_count": count_regular_files(subtree / "research"),
-        "candidate_count": count_regular_files(subtree / "candidates"),
-        "canonical_count": 1 if (subtree / f"{entity_id}.yaml").exists() else 0,
-        "retired_count": count_regular_files(subtree / "retired"),
-        "last_modified": git_last_commit_date(subtree, catalog_root),
+        "research_count": count_regular_files(record_dir / "research"),
+        "candidate_count": count_regular_files(record_dir / "candidates"),
+        "canonical_count": 1 if subtree.exists() else 0,
+        "retired_count": count_regular_files(record_dir / "retired"),
+        "last_modified": git_last_commit_date(record_dir, catalog_root),
         "version": version,
         "lifecycle_status": lifecycle_status,
     }
@@ -448,16 +413,31 @@ def build_entity_entry(
 
 
 def build_research_registers(entities: list[dict[str, Any]], catalog_root: Path) -> list[dict[str, Any]]:
-    """Build research_registers[] from the entity entries."""
+    """Build research_registers[] from the entity entries.
+
+    CR-BP-mv1: research/ dirs live under the owning record's directory in the
+    containment tree (e.g. under a BP dir), not under flat per-entity dirs.
+    """
     registers: list[dict[str, Any]] = []
+    entities_root = catalog_root / "entities" / "v1-alpha"
+    if not entities_root.exists():
+        return registers
+    by_dir = {}
     for entity in entities:
-        entity_id = entity["id"]
-        subtree = catalog_root / "entities" / "v1-alpha" / entity_id
-        research_files = list_research_files(subtree)
+        p = entity.get("path")
+        if isinstance(p, str) and not p.endswith("/"):
+            by_dir[str(Path(p).parent)] = entity["id"]
+    for research_dir in sorted(entities_root.rglob("research")):
+        if not research_dir.is_dir():
+            continue
+        parent_rel = str(research_dir.parent.relative_to(entities_root))
+        owner_key = str(Path("entities/v1-alpha") / parent_rel)
+        owner_id = by_dir.get(owner_key)
+        research_files = list_research_files(research_dir)
         registers.append(
             {
-                "entity_id": entity_id,
-                "path": f"entities/v1-alpha/{entity_id}/research/",
+                "entity_id": owner_id or parent_rel,
+                "path": f"{owner_key}/research/",
                 "files": research_files,
             }
         )

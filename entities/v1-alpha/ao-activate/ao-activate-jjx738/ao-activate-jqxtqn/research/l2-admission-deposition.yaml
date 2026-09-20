@@ -1,0 +1,77 @@
+l2_admission_deposition_version: 0.1.0
+cr: CR-BP-81
+status: admitted
+parent_business_process: processes:process-ao-activate-jqxtqn
+coordinate:
+  domain: AgencyAndOrganization
+  stage: Activate
+  process_context: processes:pc-ao-activate-kusw2u
+  process_group: processes:group-ao-activate-jjx738
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-71 / CR-BP-73 / CR-BP-75 / CR-BP-78 admission pattern)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/processes:process-ao-activate-jqxtqn
+- dea-catalog-processes/discovery/v1-alpha/agency-and-organization-activate-escape.yaml
+- change-requests/CR-BP-62 (discovery method, BP-LIFE-001..015)
+- change-requests/CR-BP-63 (first Activate/Retire discovery exercise)
+- change-requests/CR-BP-80 (escape-clause discovery for the five backlog-deferred cells)
+- change-requests/CR-BP-71 / CR-BP-73 / CR-BP-75 / CR-BP-78 (admission tranche precedents)
+- APQC PCF 7.0
+admission_decision:
+  recommendation: ADMIT-CANONICAL
+  score: 10
+  evidence_base: |
+    Authoritative regulatory evidence for licensed-workforce mobilization
+    across banking, healthcare, insurance, professional services,
+    telecoms, and aviation:
+    - FCA SMCR (UK) Statements of Responsibilities: CF1..CF11
+      controlled functions require fitness-and-propriety attestation
+      and Statements of Responsibilities before live work
+    - US state healthcare licensure regimes: state licensure is a
+      precondition to live practice; the enterprise's credentialing
+      process is the controlled mobilization step
+    - NAIC Producer Licensing Model Act and state insurance-producer
+      licensing: insurance producers must hold state licences and the
+      enterprise's appointments before live producer work
+    - EASA and FAA crew licensing: airline crew must hold current
+      type-rated licences before flight operations; airline
+      mobilization is the controlled step
+    - UK SRA regulated-professionals regime and US state bar
+      admissions: licensed professionals must hold current practising
+      certificates or admissions before live client work
+  rationale: |
+    The 2024-2026 supervised-individual-licensing landscape establishes
+    that licence-controlled mobilization is a distinct enterprise
+    concern with regulator-controlled scope, fitness-and-propriety
+    attestation, supervised-training completion, and continuing-
+    supervisor notification -- distinct from general workforce build
+    (Build coordinate) and from steady-state workforce performance
+    management (Operate coordinate). The cell's deferral rationale
+    ("workforce activation is often an attribute of build") is
+    superseded by the regulated-sector evidence; the candidate is the
+    strongest in the CR-BP-80 escape exercise because of its
+    cross-sector breadth across six regulated industries.
+  bp_identity:
+    verb: Mobilize
+    object: Licensed Workforce
+    scope: enterprise
+    name: Mobilize Licensed Workforce
+    id: processes:process-ao-activate-jqxtqn
+    process_type: management
+    process_intent: manage
+  identity_alignment:
+    bp_arc_id_001: satisfied (name "Mobilize Licensed Workforce" is verb + object form; id preserved unchanged from the CR-BP-80 discovery recommendation)
+    bp_arc_id_004: management type chosen; outcome_statement includes management keywords (supervise, control, coordinate)
+    bp_arc_id_005: satisfied (5 evidence_links of type regulation / standard)
+  boundary_clarity:
+    upstream: Build (workforce recruitment, hiring, general onboarding) is excluded
+    downstream: Operate (steady-state workforce performance, development) is excluded
+    cross_cell: Retire (workforce offboarding, licence surrender) is excluded; CR-BP-73 admits the regulated workforce wind-down adjacent cell
+    excluded: Non-licensed workforce activation deferred to a future CR
+    controlled_function: signing authority (SMCR CF1..CF11), state licensure, NAIC producer appointment, FAA/EASA type-rating, SRA practising certificate, bar admission
+notes:
+- This is the first canonical admission at the AgencyAndOrganization x Activate coordinate.
+- The L3 decomposition tranche (CR-BP-87) follows this admission per the user's 6-PR program structure.
+- The candidate was authored at admission time per the deposition-first ordering rule; the BP record lands in the same slice as the PC + PG + register flip.
+- The admission tranche (CR-BP-81) is one of four admission tranches (AO.Activate, EO.Activate, FA.Activate, SD.Activate) that close the discovery-program loop at the five backlog-deferred cells identified in CR-BP-80.

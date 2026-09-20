@@ -140,7 +140,7 @@ def check_dispositions(
                         )
                 if axis == "process_context":
                     target = change.get("to")
-                    if not target or not target.startswith("dea:pc-"):
+                    if not target or not target.startswith("processes:pc-"):
                         errors.append(
                             f"record {rid}: RECLASSIFY context -> {target!r} "
                             f"must be a Process Context id (dea:pc-*)"
@@ -209,8 +209,8 @@ def _self_test(args) -> int:
     inventory = {
         "records": {
             "business_processes": [
-                {"id": "dea:process-a", "name": "Test A"},
-                {"id": "dea:process-b", "name": "Test B"},
+                {"id": "processes:process-a", "name": "Test A"},
+                {"id": "processes:process-b", "name": "Test B"},
             ],
             "process_groups": [],
             "process_contexts": [],
@@ -221,20 +221,20 @@ def _self_test(args) -> int:
     good = {
         "dispositions": [
             {
-                "record_id": "dea:process-a",
+                "record_id": "processes:process-a",
                 "disposition": "RECLASSIFY",
                 "changes": [
                     {"axis": "process_intent",
                      "from": "management", "to": "manage"},
                     {"axis": "process_context",
-                     "from": "dea:pc-pr-op", "to": "dea:pc-pr-op"},
+                     "from": "processes:pc-pr-op", "to": "processes:pc-pr-op"},
                     {"axis": "process_audience",
                      "from": "party-relationship", "to": "REMOVE"},
                 ],
                 "tranche": "cd-op",
             },
             {
-                "record_id": "dea:process-b",
+                "record_id": "processes:process-b",
                 "disposition": "RETAIN",
             },
         ]
@@ -247,7 +247,7 @@ def _self_test(args) -> int:
 
     # Bad: invalid disposition id
     bad_disp = {"dispositions": [
-        {"record_id": "dea:process-a", "disposition": "PURGE"}
+        {"record_id": "processes:process-a", "disposition": "PURGE"}
     ]}
     errs, _ = check_dispositions(inventory, schema, bad_disp)
     if not any("invalid disposition" in e for e in errs):
@@ -256,7 +256,7 @@ def _self_test(args) -> int:
 
     # Bad: RECLASSIFY without changes
     bad_recl = {"dispositions": [
-        {"record_id": "dea:process-a", "disposition": "RECLASSIFY"}
+        {"record_id": "processes:process-a", "disposition": "RECLASSIFY"}
     ]}
     errs, _ = check_dispositions(inventory, schema, bad_recl)
     if not any("requires 'changes'" in e for e in errs):
@@ -265,7 +265,7 @@ def _self_test(args) -> int:
 
     # Bad: RECLASSIFY intent -> non-canonical value
     bad_intent = {"dispositions": [
-        {"record_id": "dea:process-a", "disposition": "RECLASSIFY",
+        {"record_id": "processes:process-a", "disposition": "RECLASSIFY",
          "changes": [{"axis": "process_intent", "from": "management", "to": "oversee"}]}
     ]}
     errs, _ = check_dispositions(inventory, schema, bad_intent)
@@ -275,7 +275,7 @@ def _self_test(args) -> int:
 
     # Bad: RECLASSIFY context -> non-pc- ref
     bad_ctx = {"dispositions": [
-        {"record_id": "dea:process-a", "disposition": "RECLASSIFY",
+        {"record_id": "processes:process-a", "disposition": "RECLASSIFY",
          "changes": [{"axis": "process_context", "from": "x", "to": "dea:wrong"}]}
     ]}
     errs, _ = check_dispositions(inventory, schema, bad_ctx)
@@ -285,7 +285,7 @@ def _self_test(args) -> int:
 
     # Bad: missing disposition for an inventory record
     bad_missing = {"dispositions": [
-        {"record_id": "dea:process-a", "disposition": "RETAIN"}
+        {"record_id": "processes:process-a", "disposition": "RETAIN"}
     ]}
     errs, _ = check_dispositions(inventory, schema, bad_missing)
     if not any("missing disposition" in e for e in errs):

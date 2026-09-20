@@ -1,0 +1,104 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-50
+status: candidate-not-canonical; subject to review
+parent_business_process: processes:process-pv-build-8jc3y4
+coordinate:
+  domain: ProductAndValue
+  stage: Build
+  process_context: processes:pc-pv-build-ygbmxb
+  process_group: processes:group-pv-build-g6sua5
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42,
+  scaled by CR-BP-43 through CR-BP-49)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/processes:process-pv-build-8jc3y4
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: processes:activity-pv-build-r6b4x7
+  name: "Construct Prototype"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Prototype construction; scope discipline against the hypothesis; construction issue resolution"
+  out_of_scope:
+  - "Experiment design (processes:process-pv-design-9ckwf6)"
+  - "Prototype instrumentation (processes:activity-pv-build-zvvppc)"
+  evidence:
+  - "Parent BP trigger (designed experiment requires a working prototype)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-50
+- id: processes:activity-pv-build-zvvppc
+  name: "Instrument Prototype"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Measurement point setup; telemetry wiring; measurement capture verification"
+  out_of_scope:
+  - "Prototype construction (processes:activity-pv-build-r6b4x7)"
+  - "Success criteria definition (processes:process-pv-design-9ckwf6)"
+  evidence:
+  - "Parent BP outcome (prototype ready for testing)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-50
+- id: processes:activity-pv-build-gznqhc
+  name: "Verify Prototype Readiness"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Readiness checklist execution; hypothesis testability dry run; readiness sign-off preparation"
+  out_of_scope:
+  - "Prototype instrumentation (processes:activity-pv-build-zvvppc)"
+  - "Experiment execution (Operate-stage or follow-on concern)"
+  evidence:
+  - "Parent BP outcome (prototype built and ready for testing)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-50
+- id: processes:activity-pv-build-ef63d7
+  name: "Document Prototype Build"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Build state recording; known-limitation capture; documentation handoff to experimenters"
+  out_of_scope:
+  - "Prototype construction (processes:activity-pv-build-r6b4x7)"
+  - "Experiment design (processes:process-pv-design-9ckwf6)"
+  evidence:
+  - "Parent BP outcome (prototype built and documented)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-50
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."

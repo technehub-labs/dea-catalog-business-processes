@@ -32,11 +32,11 @@ def test_process_context_count_matches_domain() -> None:
     assert len(PROCESS_CONTEXTS) == 5
     ids = {c["id"] for c in PROCESS_CONTEXTS}
     assert ids == {
-        "dea:pc-ge-c",
-        "dea:pc-ge-d",
-        "dea:pc-ge-b",
-        "dea:pc-ge-op",
-        "dea:pc-ge-im",
+        "processes:pc-ge-c",
+        "processes:pc-ge-d",
+        "processes:pc-ge-b",
+        "processes:pc-ge-op",
+        "processes:pc-ge-im",
     }
 
 

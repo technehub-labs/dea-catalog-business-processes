@@ -1,0 +1,87 @@
+id: processes:pc-pr-operate-pwue5a
+domain: PartyAndRelationship
+lifecycle_stage: Operate
+name: Customer Relationship Operations
+definition: 'The bounded enterprise context for the **operation** of
+
+  customer relationships in the **customer and demand**
+
+  domain. This context addresses the day-to-day management
+
+  of active customer relationships — the work of
+
+  allocating attention, handling escalations, and
+
+  coordinating renewal or win-back activities.
+
+  '
+scope:
+  includes:
+  - Active customer relationship management
+  - Customer escalation handling
+  - Customer renewal coordination
+  - Customer win-back activities
+  - Customer portfolio allocation
+  excludes:
+  - New customer acquisition (Conceive stage)
+  - Customer onboarding implementation (Build stage)
+  - Customer support tickets (Support Staff BP, not L2)
+outcomes:
+- Active customer relationships are sustained across their lifecycle.
+- Customer escalations are resolved within agreed service-level targets.
+- Customer renewals are coordinated with minimal revenue leakage.
+- Customer portfolio allocation is data-informed.
+adjacent_contexts:
+- processes:pc-pr-conceive-6xztsq
+- processes:pc-pr-design-hrcdy4
+- processes:pc-pr-build-a46hp7
+- processes:pc-pr-activate-mwq7bj
+processes:
+- processes:process-pr-operate-bbe384
+cell_charter:
+  enterprise_concern: Customer and demand — the enterprise's exchange with its customer base.
+  lifecycle_concern: Operate — the ongoing operation of an active relationship.
+  combined_semantic_meaning: 'The day-to-day operation of an active customer
+
+    relationship: ongoing management, escalation handling,
+
+    renewal coordination, and portfolio allocation.
+
+    '
+  expected_outcomes:
+  - Active customer relationships are sustained.
+  - Customer escalations are resolved within service-level targets.
+  - Customer renewals are coordinated with minimal leakage.
+  - Portfolio allocation is data-informed.
+  inclusions:
+  - Account management
+  - Escalation handling
+  - Renewal coordination
+  - Win-back coordination
+  exclusions:
+  - New customer acquisition (Conceive)
+  - Onboarding implementation (Build)
+  - Customer support tickets (Support Staff BP)
+  adjacent_boundaries:
+  - 'processes:pc-pr-conceive-6xztsq (Conceive): the prior lifecycle stage; transition from new customer to active customer.'
+  - 'processes:pc-pr-design-hrcdy4 (Design): the design context; may inform renewal design.'
+  - 'processes:pc-pr-build-a46hp7 (Build): the build context; may inform onboarding handoff to Operate.'
+  - 'processes:pc-pr-activate-mwq7bj (Activate): the activate context; transition into active operation.'
+status: defined
+metadata:
+  established_by: CR-BP-03C
+  established_at: '2026-09-03'
+  change_history:
+  - cr: CR-BP-03C
+    date: '2026-09-03'
+    change: 'Initial cell charter as part of the CR-BP-03C
+
+      sample contribution. Exercises the CR-BP-02 Cell
+
+      Charter machinery and provides the bounded
+
+      enterprise context for
+
+      dea:process-manage-customer-relationship.
+
+      '

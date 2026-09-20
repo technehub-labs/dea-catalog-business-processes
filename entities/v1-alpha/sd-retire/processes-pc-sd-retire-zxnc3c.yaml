@@ -1,0 +1,142 @@
+schema: dea/v1
+schema_version: 1
+id: processes:pc-sd-retire-zxnc3c
+domain: StrategyAndDirection
+lifecycle_stage: Retire
+name: Sunset Regulated Strategic Plan
+process_context:
+  id: processes:pc-sd-retire-zxnc3c
+  domain: StrategyAndDirection
+  lifecycle_stage: Retire
+  scope_summary: Governed sunset of a regulated entity's strategic plan because a competent regulator has required its retirement, with the replacement plan's status preserved and the retired plan's records retained per the regulated-entity retention policy, distinct from strategy improvement and from strategy activation.
+  process_empty: false
+  lifecycle_status: candidate
+  status: candidate
+cell_charter:
+  enterprise_concern: 'Strategy & Direction: the controlled sunset of a regulated entity''s strategic plan because a competent regulator has required its retirement (failed stress test triggers plan replacement; bank recovery-plan rejection by the SRB; FDIC directive to retire an inadequate resolution plan; state PUC retraction of an approved strategic plan; NHS England directive to retire a non-viable 5-year strategy), with the regulator directive on record, the replacement plan''s status preserved, the retired plan''s records retained per the regulated-entity retention policy, and the supervisor''s acknowledgement of the sunset recorded, distinct from strategy improvement and from strategy activation.'
+  lifecycle_concern: 'Retire: the regulator-directed sunset of a regulated strategic plan, moving it from supervisor-acknowledged-and-live to regulator-acknowledged-and-sunset under the enterprise''s regulated-entity retention policy.'
+  combined_semantic_meaning: 'The regulated-strategic-plan sunset work that moves a
+
+    supervisor-acknowledged-and-live strategic plan to
+
+    regulator-acknowledged-and-sunset under the enterprise''s
+
+    regulated-entity retention policy, with the regulator directive
+
+    on record, the replacement plan''s status preserved, the retired
+
+    plan''s records retained per the regulated-entity retention
+
+    policy, and the supervisor''s acknowledgement of the sunset
+
+    recorded, so that the regulated strategic plan is formally
+
+    sunset on the regulated strategic-plan record under the
+
+    regulator''s acknowledgement and the enterprise''s retention
+
+    policy.
+
+    '
+  expected_outcomes:
+  - Regulator directive or rejection on record for the regulated strategic plan (failed stress test triggers plan replacement; bank recovery-plan rejection by the SRB; FDIC directive; PUC retraction; NHS England directive)
+  - Superseded or replaced plan identified on the regulated strategic-plan record
+  - Filings register updated for the regulated strategic plan
+  - Communications plan executed for the regulated strategic-plan sunset
+  - Regulator-acknowledged sunset record preserved for the regulated strategic plan
+  - Retained-records plan executed per the regulated-entity retention policy
+  - Affected business units notified under the regulator's continuing supervision
+  inclusions:
+  - Regulator directive or rejection notice (failed stress test triggers plan replacement; bank recovery-plan rejection by the SRB; FDIC directive to retire an inadequate resolution plan; state PUC retraction of an approved strategic plan; NHS England directive to retire a non-viable 5-year strategy)
+  - Superseded or replaced plan identification on the regulated strategic-plan record
+  - Filings register update for the regulated strategic plan
+  - Communications plan execution for the regulated strategic-plan sunset under the regulator's continuing supervision
+  - Regulator-acknowledged sunset record preservation on the regulated strategic-plan record
+  - Retained-records plan execution per the regulated-entity retention policy
+  - Affected business-unit notification under the regulator's continuing supervision
+  exclusions:
+  - Strategic-plan conception, design, build, activation, steady-state execution, and improvement (StrategyAndDirection x Conceive / Design / Build / Activate / Operate / Improve)
+  - 'Non-regulated strategic-plan sunset (single-business-unit rollout without regulator''s review): remains RECORD-PATTERN or MERGE per CR-BP-63 baseline'
+  - Strategic plans absent a regulator-directed sunset regime
+  - Strategic-plan disposition where no competent regulator has required retirement
+  - Replacement-plan activation (handled at StrategyAndDirection x Activate)
+  adjacent_boundaries:
+  - 'processes:pc-sd-improve-ft9k5f (adjacent context): the Improve cell at SD handles steady-state strategy improvement and performance review; regulator-directed sunset is distinct and downstream of any improvement disposition'
+  - 'processes:pc-sd-activate-ghaub8 (adjacent context): the Activate cell at SD handles the regulated live-readiness activation of a strategic plan; the replacement-plan activation is a separate process under Activate and is not in scope here'
+  - 'processes:pc-fa-retire-64q5p9 (adjacent context): the Retire cell at FinanceAndAccounting handles financial-account retirement; this cell handles strategy retirement under regulator directive, distinct from financial-account sunset'
+processes:
+- processes:process-sd-retire-umxf3c
+admission:
+  recommended_by: dea:discovery-strategy-and-direction-retire-escape
+  recommended_at: '2026-09-19'
+  recommended_score: 8
+  rationale: 'The CR-BP-80 escape-clause discovery found the candidate
+
+    "Sunset Regulated Strategic Plan" at score 8 (process_reality 2,
+
+    semantic_stability 2, cross_domain_applicability 1,
+
+    boundary_clarity 2, evidence_strength 1) with regulator-acknowledged
+
+    evidence across banking (FDICIA Section 131; SRB rejection;
+
+    Bank of England PRA SS9/17), utilities (state PUC retraction),
+
+    healthcare (NHS England directive), and adjacent regulated
+
+    sectors. The 2024-2026 supervisor-acknowledged strategic-plan
+
+    landscape establishes that regulator-directed sunset creates a
+
+    distinct enterprise concern with the regulator directive on
+
+    record, the replacement plan''s status preserved, the retired
+
+    plan''s records retained per the regulated-entity retention
+
+    policy, and the supervisor''s acknowledgement of the sunset
+
+    recorded, distinct from strategy improvement and from strategy
+
+    activation. The original CR-BP-63 baseline documented the cell
+
+    as process_empty with six RECORD-PATTERN candidates (Transition
+
+    Out of Service, Decommission, Migrate / Transfer, Close
+
+    Enterprise Relationship, Recover / Reclaim, Resolve Residual
+
+    Obligations); the escape yielded the substantive BP admission
+
+    candidate that this slice lands. The cell flips
+
+    ratified-accepted/landed at v17 of the l1-register.
+
+    '
+  cell_carries_forward: 'The v15 deferral (CR-BP-28) recorded the verbatim escape condition
+
+    "Activate and Retire are lifecycle transition stages, not stable
+
+    Process Group operating scopes"; CR-BP-80 evaluated the escape
+
+    condition against the 2024-2026 regulated-retire evidence and
+
+    found it superseded for the SD.Retire coordinate. The v16
+
+    admission tranche (CR-BP-86 at SD.Activate) preserved the
+
+    SD.Retire deferral pending this CR-BP-101 tranche.
+
+    '
+status: candidate
+lifecycle_status: candidate
+version: 1.0.0
+metadata:
+  established_by: CR-BP-101
+  established_at: '2026-09-19'
+  change_history:
+  - cr: CR-BP-101
+    date: '2026-09-19'
+    change: 'First canonical admission at the StrategyAndDirection x Retire
+
+      coordinate. Closes the 7x7 = 49-cell matrix.'

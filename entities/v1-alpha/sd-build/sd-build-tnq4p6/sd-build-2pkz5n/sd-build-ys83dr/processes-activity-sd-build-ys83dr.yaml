@@ -1,0 +1,73 @@
+id: processes:activity-sd-build-ys83dr
+type: Activity
+name: Prioritize Allocation Decisions
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Set Resource Allocation Priorities that prioritizes the allocation decisions against the bounded envelopes and strategic plan.
+belongs_to_business_process: processes:process-sd-build-2pkz5n
+cohesion_rationale: Constituent work shares a single prioritization concern (allocations to prioritized decisions), one reference class (the strategic plan), and one output (the prioritized decisions). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: StrategyAndDirection
+    stage: Build
+    identifier: ecf:strategyDirection.build
+metadata:
+  established_by: CR-BP-54
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-54
+    date: '2026-09-13'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-54
+
+      StrategyAndDirection Conceive + Design + Build tranche (pattern
+
+      proven by CR-BP-42 through CR-BP-53). Classified per CR-BP-32
+
+      section 5 (fails standalone executability and resource dedication);
+
+      decomposition boundary marker per CR-BP-32 section 12 pending Task
+
+      records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-prioritize-allocation-decisions-intake, dea:task-prioritize-allocation-decisions-verify, dea:task-prioritize-allocation-decisions-transform, dea:task-prioritize-allocation-decisions-confirm, dea:task-prioritize-allocation-decisions-record).'
+composes:
+- source_id: processes:activity-sd-build-ys83dr
+  target_id: processes:task-sd-build-intake-8wpg3w
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-build-ys83dr
+  target_id: processes:task-sd-build-verify-pzyn64
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-build-ys83dr
+  target_id: processes:task-sd-build-transform-39etkq
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-build-ys83dr
+  target_id: processes:task-sd-build-confirm-uyfktu
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-build-ys83dr
+  target_id: processes:task-sd-build-record-7jvnwx
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

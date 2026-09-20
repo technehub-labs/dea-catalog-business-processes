@@ -100,7 +100,7 @@ def cell_charter_to_canonical_id(entity: dict) -> str | None:
     Two pathways are accepted (in order of preference):
 
     1. The BP's description references its cell charter
-       (e.g. "dea:pc-pr-d Cell Charter"). Established convention
+       (e.g. "processes:pc-pr-d Cell Charter"). Established convention
        (CR-BP-21* landings).
     2. The BP carries an `ecfConformance.canonicalReferences[]` entry
        whose `identifier` is an `ecf:` URI. Used by earlier
@@ -109,7 +109,7 @@ def cell_charter_to_canonical_id(entity: dict) -> str | None:
     """
     import re
     description = entity.get("description", "") or ""
-    m = re.search(r"dea:pc-([a-z]{2,3})-([a-z])", description)
+    m = re.search(r"processes:pc-([a-z]{2,3})-([a-z])", description)
     if m:
         dom_letter = m.group(1).upper()
         stage_letter = m.group(2).upper()

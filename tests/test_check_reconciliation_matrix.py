@@ -389,15 +389,15 @@ def test_live_matrix_has_22_rows():
 def test_live_matrix_act011_backfills_target_correct_records():
     """The 9 backfill rows target the exact records identified by ACT-011."""
     expected = {
-        "dea:activity-calculate-compensation",
-        "dea:activity-commit-agent-topology",
-        "dea:activity-commit-role-catalogue",
-        "dea:activity-disburse-payroll",
-        "dea:activity-execute-payments-to-plan",
-        "dea:activity-fit-out-facilities",
-        "dea:activity-manage-collections",
-        "dea:activity-resolve-attendance-exceptions",
-        "dea:activity-score-finding-severity",
+        "processes:activity-fa-operate-zxtxzj",
+        "processes:activity-ao-design-pc9dh3",
+        "processes:activity-ao-design-tfhe6e",
+        "processes:activity-fa-operate-he4rxk",
+        "processes:activity-fa-operate-k9cf3b",
+        "processes:activity-eo-build-vggmrg",
+        "processes:activity-fa-operate-4yx8be",
+        "processes:activity-ao-operate-c7xad6",
+        "processes:activity-ge-improve-nz4rpa",
     }
     with open(MATRIX_PATH) as f:
         matrix = yaml.safe_load(f)

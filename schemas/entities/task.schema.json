@@ -26,7 +26,7 @@
     },
     "id": {
       "type": "string",
-      "pattern": "^dea:task-[a-z0-9-]+$",
+      "pattern": "^processes:task-[a-z0-9-]+$",
       "description": "Stable Task id. CR-BP-04 §4 family. Convention: `dea:task-<kebab-name>`. Must be stable across renames."
     },
     "name": {
@@ -43,7 +43,7 @@
     },
     "belongs_to_activity": {
       "type": "string",
-      "pattern": "^dea:activity-[a-z0-9-]+$",
+      "pattern": "^processes:activity-[a-z0-9-]+$",
       "description": "The single parent L3 Activity this Task belongs to. Per CR-BP-93 §7: `L4 is composed by exactly one parent L3 Activity`."
     },
     "trigger": {

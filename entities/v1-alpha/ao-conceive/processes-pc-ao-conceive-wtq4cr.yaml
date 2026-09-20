@@ -1,0 +1,90 @@
+id: processes:pc-ao-conceive-wtq4cr
+domain: AgencyAndOrganization
+lifecycle_stage: Conceive
+name: Agent Capacity and Organization Conception
+definition: 'The bounded enterprise context for **conceiving** the enterprise''s agentive and organizational fabric in the **Agency & Organization** domain. This context addresses the front-end work of framing agent capacity strategy, framing the organization model, and conceiving the workforce-and-agent mix. v2.4.0: substrate-independent — applies to biological, artificial, and hybrid agents without reclassification (ADR-ECF-002 §5, CR-ECF-007).
+
+  '
+scope:
+  includes:
+  - Agent capacity strategy framing
+  - Organization model framing
+  - Workforce and agent mix conception
+  - Agent capability requirement conception
+  excludes:
+  - Strategy and direction (strategy-direction x conceive; adjacent domain)
+  - Operational execution (enablement-operations x conceive; adjacent domain)
+  - Compensation decisions (finance-accounting x conceive; adjacent domain)
+  - Organizational architecture design (Design stage; adjacent context)
+  - Agent acquisition (Build stage; adjacent context)
+outcomes:
+- Agent capacity strategy is framed for the enterprise.
+- Organization model is framed as a stable subject.
+- Workforce and agent mix is conceived substrate-neutrally.
+- Agent capability requirements are documented.
+adjacent_contexts:
+- processes:pc-ao-design-a4hq2r
+- processes:pc-ao-build-pjk4rz
+- processes:pc-ao-operate-zfevmp
+- processes:pc-ao-improve-qkmh6b
+processes:
+- processes:process-ao-conceive-e3u8s2
+- processes:process-ao-conceive-ruxjvh
+- processes:process-ao-conceive-z6m6p5
+cell_charter:
+  enterprise_concern: 'Agency & Organization: the conception of the enterprise''s agentive and organizational fabric.'
+  lifecycle_concern: 'Conceive: framing agent capacity, organization model, and workforce/agent mix.'
+  combined_semantic_meaning: 'The front-end work of framing agent capacity strategy, the organization model, and the workforce-and-agent mix as a substrate-neutral subject.
+
+    '
+  expected_outcomes:
+  - Agent capacity strategy is framed for the enterprise.
+  - Organization model is framed as a stable subject.
+  - Workforce and agent mix is conceived substrate-neutrally.
+  - Agent capability requirements are documented.
+  inclusions:
+  - Agent capacity strategy framing
+  - Organization model framing
+  - Workforce and agent mix conception
+  - Agent capability requirement conception
+  exclusions:
+  - Strategy and direction (strategy-direction x conceive; adjacent domain)
+  - Operational execution (enablement-operations x conceive; adjacent domain)
+  - Compensation decisions (finance-accounting x conceive; adjacent domain)
+  - Organizational architecture design (Design stage; adjacent context)
+  - Agent acquisition (Build stage; adjacent context)
+  adjacent_boundaries:
+  - 'processes:pc-ao-design-a4hq2r (adjacent context): agentive flow between Conceive and the adjacent cell.'
+  - 'processes:pc-ao-build-pjk4rz (adjacent context): agentive flow between Conceive and the adjacent cell.'
+  - 'processes:pc-ao-operate-zfevmp (adjacent context): agentive flow between Conceive and the adjacent cell.'
+  - 'processes:pc-ao-improve-qkmh6b (adjacent context): agentive flow between Conceive and the adjacent cell.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-21b
+established_at: '2026-09-07'
+change_history:
+- cr: CR-BP-21b.1
+  date: '2026-09-08'
+  change: 'Processes list extended with the remaining register v2 L2
+
+    candidates for this cell under CR-BP-21b.1.
+
+    '
+- cr: CR-BP-21b
+  date: '2026-09-07'
+  change: 'Initial Process Context record; promoted from the CR-BP-19
+
+    register v2 (ratified against ECF v2.4.0) as part of the
+
+    AgencyAndOrganization landing tranche. Substrate-neutral
+
+    per ADR-ECF-002 §5 / CR-ECF-007.
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21b-agency-organization-landing.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

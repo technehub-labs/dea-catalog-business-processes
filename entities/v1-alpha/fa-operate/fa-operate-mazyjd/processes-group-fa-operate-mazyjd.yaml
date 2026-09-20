@@ -1,0 +1,182 @@
+id: processes:group-fa-operate-mazyjd
+type: ProcessGroup
+version: 1.0.0
+name: Financial Operate
+definition: 'The bounded Process Group that organises the Business Process responsibilities of day-to-day financial operations: payables, receivables, payroll, cash and liquidity, financial close, tax compliance, and financial reporting in the FinanceAndAccounting x Operate context. v2.4.0 grounding (register v2 FA/operate cell).
+
+  '
+process_context: processes:pc-fa-operate-afew7e
+scope:
+  includes:
+  - Accounts payable and receivable operation
+  - Payroll execution
+  - Cash and liquidity management
+  - Financial close and reporting operation
+  - Tax compliance and filings
+  - General ledger operation (seeded by CR-BP-21e)
+  excludes:
+  - Financial controls design (Design stage; adjacent context)
+  - Financial improvement (Improve stage; adjacent context)
+outcomes:
+- Payables, receivables, and payroll operate to plan.
+- Cash, close, tax, and reporting operate with records.
+- General ledger operates within policy.
+composes:
+- source_id: processes:group-fa-operate-mazyjd
+  target_id: processes:process-fa-operate-g9zpnq
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (landed CR-BP-21e).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21e.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-fa-operate-mazyjd
+  target_id: processes:process-fa-operate-wkqaqp
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21e.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21e.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-fa-operate-mazyjd
+  target_id: processes:process-fa-operate-sdppmp
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21e.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21e.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-fa-operate-mazyjd
+  target_id: processes:process-fa-operate-zpmxzp
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21e.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21e.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-fa-operate-mazyjd
+  target_id: processes:process-fa-operate-2pmqb2
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21e.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21e.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-fa-operate-mazyjd
+  target_id: processes:process-fa-operate-4xn4d6
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21e.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21e.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-fa-operate-mazyjd
+  target_id: processes:process-fa-operate-8vqvkk
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21e.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21e.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-fa-operate-mazyjd
+  target_id: processes:process-fa-operate-ycba3k
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21e.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21e.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+process_group_kind: end-to-end
+status: accepted
+lifecycle_status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: FinanceAndAccounting
+    stage: Operate
+    identifier: ecf:financeAccounting.operate
+evidence:
+- source: CR-BP-19 (register v2, ratified against ECF v2.4.0)
+  claim: 'This Process Group''s coordinate is ratified-accepted in register
+
+    v2. CR-BP-21e.1 lands the corresponding L1 group as part of the
+
+    FinanceAndAccounting completion tranche.
+
+    '
+  strength: E4
+  reference: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+metadata:
+  established_by: CR-BP-21e.1
+  established_at: '2026-09-08'
+  cross_context_overlap: []
+  change_history:
+  - cr: CR-BP-21e.1
+    date: '2026-09-08'
+    change: 'Initial Process Group record; promoted from the CR-BP-19 register
+
+      v2 (ratified against ECF v2.4.0) as part of the CR-BP-21e.1
+
+      FinanceAndAccounting completion tranche. Composes 8 L2 processes.
+
+      '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21e.1-finance-accounting-completion.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

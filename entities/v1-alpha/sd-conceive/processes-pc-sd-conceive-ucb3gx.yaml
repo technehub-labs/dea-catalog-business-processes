@@ -1,0 +1,113 @@
+id: processes:pc-sd-conceive-ucb3gx
+domain: StrategyAndDirection
+lifecycle_stage: Conceive
+name: Purpose and Ambition Conception
+definition: 'The bounded enterprise context for **conceiving** the enterprise''s
+
+  strategic direction in the **Strategy & Direction** domain. This context
+
+  addresses the front-end work of framing the enterprise''s purpose,
+
+  ambition, and strategic intent: deciding what the enterprise is
+
+  for, what it aims to become, what strategic horizons it commits to,
+
+  and what corporate strategy it pursues. v2.4.0: Governance & Existence
+
+  authorises the enterprise to exist (its mandate and authority); this
+
+  context directs the enterprise''s deliberate choice of trajectory within
+
+  that authorised frame.
+
+  '
+scope:
+  includes:
+  - Purpose and ambition conception
+  - Strategic intent conception
+  - Strategic horizons framing
+  - Corporate strategy development
+  excludes:
+  - Constitutional mandate and authority (governance-existence x conceive)
+  - Charter and policy conception (governance-existence x conceive)
+  - Risk framework direction (governance-existence x conceive)
+  - Strategic option design (Design stage; adjacent context)
+  - Strategic plan and roadmap build (Build stage; adjacent context)
+  - Initiative execution (enablement-operations)
+outcomes:
+- Enterprise purpose and ambition are framed and articulated.
+- Strategic intent is committed with a defined trajectory.
+- Strategic horizons are framed and bounded.
+- Corporate strategy is developed within the authorised frame.
+adjacent_contexts:
+- processes:pc-sd-design-g3es76
+- processes:pc-sd-build-gmzrrm
+- processes:pc-sd-operate-5cs5ee
+- processes:pc-sd-improve-ft9k5f
+- processes:pc-ge-conceive-b5xwpd
+processes:
+- processes:process-sd-conceive-ahwvp5
+- processes:process-sd-conceive-r93j3d
+- processes:process-sd-conceive-3uredz
+- processes:process-sd-conceive-xa4h2k
+cell_charter:
+  enterprise_concern: 'Strategy & Direction: the enterprise''s deliberate choice of trajectory.'
+  lifecycle_concern: 'Conceive: framing purpose, ambition, and strategic intent.'
+  combined_semantic_meaning: 'The front-end work of framing the enterprise''s reason for being
+
+    (purpose), what it aims to become (ambition), and the strategic
+
+    trajectory it commits to (intent, horizons, corporate strategy).
+
+    '
+  expected_outcomes:
+  - Enterprise purpose and ambition are framed and articulated.
+  - Strategic intent is committed with a defined trajectory.
+  - Strategic horizons are framed and bounded.
+  - Corporate strategy is developed within the authorised frame.
+  inclusions:
+  - Purpose and ambition conception
+  - Strategic intent conception
+  - Strategic horizons framing
+  - Corporate strategy development
+  exclusions:
+  - Constitutional mandate and authority (governance-existence x conceive)
+  - Strategic option design (Design stage)
+  - Strategic plan and roadmap build (Build stage)
+  - Initiative execution (enablement-operations)
+  adjacent_boundaries:
+  - 'processes:pc-ge-conceive-b5xwpd (Governance & Existence): authority vs chosen trajectory.'
+  - 'processes:pc-sd-design-g3es76 (Design): strategy flows into strategic option design.'
+  - 'processes:pc-sd-build-gmzrrm (Build): committed strategy flows into plan and roadmap build.'
+  - 'processes:pc-sd-operate-5cs5ee (Operate): strategy is steered in review cycles.'
+  - 'processes:pc-sd-improve-ft9k5f (Improve): strategy is adapted and refreshed.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-21a
+established_at: '2026-09-07'
+change_history:
+- cr: CR-BP-21a.1
+  date: '2026-09-08'
+  change: 'Processes list extended with the remaining register v2 L2
+
+    candidates for this cell under CR-BP-21a.1.
+
+    '
+- cr: CR-BP-21a
+  date: '2026-09-07'
+  change: 'Initial Process Context record; promoted from the CR-BP-19
+
+    register v2 (ratified against ECF v2.4.0) as part of the
+
+    StrategyAndDirection landing tranche. Receives the L2 migration
+
+    from governance-existence x conceive (Option A split, CR-BP-20).
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21a-strategy-direction-landing.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

@@ -1,0 +1,100 @@
+id: processes:pc-pv-retire-eeck6d
+domain: ProductAndValue
+lifecycle_stage: Retire
+name: Proposition Retirement and Service Withdrawal
+definition: 'The bounded enterprise context for **transitioning** propositions,
+
+  products and services out of operational service in the
+
+  **Product & Value** domain. This context addresses the
+
+  retirement-stage work of withdrawal planning, stakeholder
+
+  transition, and removal from operational reliance. v2.4.0 grounding
+
+  (domain-grounding.md §3.5): proposition retirement and service
+
+  withdrawal are the proposition-side retirement responsibilities;
+
+  physical asset retirement is Enablement & Operations.
+
+  '
+scope:
+  includes:
+  - Retirement decision intake and withdrawal planning
+  - Service withdrawal and stakeholder transition
+  - Removal from operational reliance
+  - Residual obligation identification and routing
+  excludes:
+  - Steady-state proposition operation (Operate stage; adjacent context)
+  - Proposition improvement (Improve stage; adjacent context)
+  - Physical asset decommissioning (enablement-operations x retire; adjacent domain)
+  - Post-exit obligation closure work (Operate/Improve; adjacent contexts)
+outcomes:
+- Retired propositions are withdrawn from service in a controlled manner.
+- Stakeholders are transitioned off the retired proposition.
+- Operational reliance is removed with residual obligations routed.
+adjacent_contexts:
+- processes:pc-pv-conceive-fe9awk
+- processes:pc-pv-design-8dhwpn
+- processes:pc-pv-build-ygbmxb
+- processes:pc-pv-operate-ewpwjc
+- processes:pc-pv-improve-wpyfx7
+- processes:pc-pv-activate-f7kne7
+processes:
+- processes:process-pv-retire-6us5am
+cell_charter:
+  enterprise_concern: 'Product & Value: the controlled withdrawal of propositions from operational service.'
+  lifecycle_concern: 'Retire: withdrawal planning, stakeholder transition, and removal from operational reliance.'
+  combined_semantic_meaning: 'The retirement-stage work of withdrawal planning, stakeholder
+
+    transition, and removal of propositions from operational reliance.
+
+    '
+  expected_outcomes:
+  - Retired propositions are withdrawn from service in a controlled manner.
+  - Stakeholders are transitioned off the retired proposition.
+  - Operational reliance is removed with residual obligations routed.
+  inclusions:
+  - Retirement decision intake and withdrawal planning
+  - Service withdrawal and stakeholder transition
+  - Removal from operational reliance
+  - Residual obligation identification and routing
+  exclusions:
+  - Steady-state proposition operation (Operate stage; adjacent context)
+  - Proposition improvement (Improve stage; adjacent context)
+  - Physical asset decommissioning (enablement-operations x retire; adjacent domain)
+  - Post-exit obligation closure work (Operate/Improve; adjacent contexts)
+  adjacent_boundaries:
+  - 'processes:pc-pv-operate-ewpwjc (adjacent context): the retirement decision ends steady-state operation.'
+  - 'processes:pc-pv-improve-wpyfx7 (adjacent context): post-exit obligation closure continues there.'
+  - 'processes:pc-pv-activate-f7kne7 (adjacent context): the entry-side transition counterpart of this cell.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-64
+established_at: '2026-09-14'
+change_history:
+- cr: CR-BP-64
+  date: '2026-09-14'
+  change: 'Initial Process Context record. The cell was backlog-deferred
+
+    under register v2 (CR-BP-19) by the uniform Activate/Retire
+
+    rationale; CR-BP-63''s discovery exercise established the
+
+    evidence-backed canonical candidate Transition Out of Service
+
+    (10/10, ADMIT-CANONICAL recommendation at
+
+    discovery/v1-alpha/product-and-value-retire.yaml) and this
+
+    tranche reverses the cell disposition to ratified-accepted.
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-64-pv-activate-retire-admission.md
+- rel: discovery-record
+  href: discovery/v1-alpha/product-and-value-retire.yaml
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

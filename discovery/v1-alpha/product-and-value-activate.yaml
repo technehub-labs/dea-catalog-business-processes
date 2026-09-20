@@ -69,11 +69,11 @@ discovery:
     admission:
       status: admitted
       admitted_by: CR-BP-64
-      admitted_as: dea:process-transition-to-service
+      admitted_as: processes:process-pv-activate-5686v7
       admitted_at: '2026-09-14'
     disposition:
       type: ADMIT-CANONICAL
-      canonical_process_ref: dea:process-transition-to-service (proposed; governed admission pending per
+      canonical_process_ref: processes:process-pv-activate-5686v7 (proposed; governed admission pending per
         CR-BP-62 section 20)
   - name: Accept into Operation
     proposed_identity:
@@ -123,7 +123,7 @@ discovery:
       type: MERGE
       related_contexts:
       - ProductAndValue/Activate
-      canonical_process_ref: dea:process-transition-to-service (proposed)
+      canonical_process_ref: processes:process-pv-activate-5686v7 (proposed)
   - name: Deploy / Cut Over
     proposed_identity:
       verb: Deploy
@@ -257,7 +257,7 @@ discovery:
       type: MERGE
       related_contexts:
       - ProductAndValue/Activate
-      canonical_process_ref: dea:process-transition-to-service (proposed)
+      canonical_process_ref: processes:process-pv-activate-5686v7 (proposed)
   - name: Transfer to Operational Ownership
     proposed_identity:
       verb: Transfer
