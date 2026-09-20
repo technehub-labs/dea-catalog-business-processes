@@ -1,37 +1,28 @@
 id: dea:task-integrate-demand-engine-with-channels-record
 type: Task
 name: Integrate Demand Engine with Channels Audit Record
-definition: 'The bounded unit of work within `dea:activity-integrate-demand-engine-with-channels`
-  (Integrate Demand Engine with Channels) that carries out the record phase of the
-  parent''s verb-object decomposition. Phase responsibility: records custodian. Phase
-  trigger: Confirmation issued (phase 4 complete); audit record retention may begin
-  per parent Activity''s evidence requirements. Phase outcome: Audit record preserved
-  at the specified retention tier; retrieval handles established per parent Activity''s
-  evidence discipline.'
+definition: The bounded unit of work within `dea:activity-integrate-demand-engine-with-channels` (Integrate Demand Engine with Channels) that retain the build package (intake manifest, verification report, build-ready asset inventory, build-completion confirmation, and any contract-violation remediations) under the acquisition-engine records retention schedule with cryptographic integrity protection.
 belongs_to_activity: dea:activity-integrate-demand-engine-with-channels
-trigger: Confirmation issued (phase 4 complete); audit record retention may begin
-  per parent Activity's evidence requirements.
-outcome: Audit record preserved at the specified retention tier; retrieval handles
-  established per parent Activity's evidence discipline.
+trigger: Completion confirmation issued for Integrate Demand Engine with Channels; record gate may retain the closure case file under the records retention schedule with cryptographic integrity protection.
+outcome: Closure case file retained for Integrate Demand Engine with Channels under the records retention schedule with cryptographic integrity protection; cryptographic destruction attestation recorded where storage-limitation horizons apply.
 responsibility: records custodian
 boundary:
   inclusions:
-  - Preservation of the audit record at the specified retention tier.
-  - Establishment of retrieval handles per evidence discipline.
+  - Retention of the Integrate Demand Engine with Channels closure case file under the records retention schedule with cryptographic integrity protection.
+  - Issuance of cryptographic destruction attestation for Integrate Demand Engine with Channels records past the storage-limitation horizon.
   exclusions:
-  - Re-execution of prior phases.
-  - Downstream consumption of the audit record (out of Activity scope).
+  - Re-execution of prior phases (no rollback semantics).
+  - Re-classification of records already past the storage-limitation horizon (cryptographic destruction is irreversible).
 evidence:
-- source: dea:activity-integrate-demand-engine-with-channels
-  claim: "Parent Activity cohesion rationale (CR-BP-32 \xA76): Constituent work shares\
-    \ a single integration concern (engine to channels), one reference class (channel\
-    \ infrastructure state), and one recognizable portion of the parent outcome (integration\
-    \ with the channels). Cohesion score 8/9 assessed at deposition (CR-BP-32 \xA7\
-    6)."
-  strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
+- source: DAMA DMBOK2 §10 (Data Quality)
+  claim: data-quality governance framework informing the build-phase verification step's PII handling and the transform-phase data-quality rules. Bounded-work evidence for the record-phase custodian of `dea:activity-integrate-demand-engine-with-channels` (CR-BP-L4-02 enrichment).
   strength: E2
+- source: MRC Attribution Standards 2023
+  claim: media-rating-council attribution standard informing the build-phase transform step's attribution-model calibration. Bounded-work evidence for the record-phase custodian of `dea:activity-integrate-demand-engine-with-channels` (CR-BP-L4-02 enrichment).
+  strength: E2
+- source: dea:activity-integrate-demand-engine-with-channels
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-02 cell-specific bounded-work prose for this PartyAndRelationship L4 Task.
+  strength: E3
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
@@ -69,5 +60,4 @@ metadata:
       '
   - cr: CR-BP-102
     date: '2026-09-19'
-    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline
-      (5-phase verb-object pattern).
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

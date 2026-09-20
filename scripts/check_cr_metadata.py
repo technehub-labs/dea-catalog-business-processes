@@ -35,7 +35,7 @@ APPROVED_STATUSES = {"Proposed", "Accepted", "Rejected", "Superseded", "Draft"}
 # (e.g. "L1 (Process Catalog)"). The compound form is normalized
 # against the unqualified value during comparison.
 APPROVED_LAYERS = {
-    "L0", "L1", "L2", "L3",
+    "L0", "L1", "L2", "L3", "L4",
     "Process Catalog", "Metamodel", "Cross-cutting",
 }
 
@@ -69,9 +69,10 @@ def _normalize_status(value: str) -> str:
 #   CR-BP-NN-EXT-NN-slug      (extension + slug: CR-BP-94-EXT-01-...)
 #   CR-BP-NN-EXT-NNa-slug     (extension sub-letter + slug: CR-BP-94-EXT-01a-...)
 CR_NUMBER_PATTERN = re.compile(
-    r"^CR-BP-(\d+)(?:[a-zA-Z](?:\.\d+)*)?(?:-(?:EXT-\d+[a-zA-Z]?|[a-z0-9]+))*$"
+    r"^CR-BP-(?:\d+(?:[a-zA-Z](?:\.\d+)*)?(?:-(?:EXT-\d+[a-zA-Z]?|[a-z0-9]+))*|"
+    r"L\d+-\d+[a-zA-Z]?(?:-(?:[a-z0-9]+))*)$"
 )
-CR_REF_PATTERN = re.compile(r"CR-BP-\d+[a-zA-Z]?(?:\.\d+)*")
+CR_REF_PATTERN = re.compile(r"CR-BP-(?:\d+[a-zA-Z]?(?:\.\d+)*|L\d+-\d+[a-zA-Z]?)")
 # Match the metadata line. Two conventions are admitted:
 #   1. "**Key**: value" (canonical; colon outside bold)
 #   2. "**Key:** value" (legacy / Github-issues style; colon inside)

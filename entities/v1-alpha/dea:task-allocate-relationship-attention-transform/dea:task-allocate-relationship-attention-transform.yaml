@@ -1,36 +1,28 @@
 id: dea:task-allocate-relationship-attention-transform
 type: Task
 name: Allocate Relationship Attention Processing
-definition: 'The bounded unit of work within `dea:activity-allocate-relationship-attention`
-  (Allocate Relationship Attention) that carries out the transform phase of the parent''s
-  verb-object decomposition. Phase responsibility: processing custodian. Phase trigger:
-  Verified input is ready (phase 2 complete); transformation to the specified output
-  form may begin. Phase outcome: Output produced in the specified form per parent
-  Activity''s definition; intermediate artifacts preserved for audit.'
+definition: 'The bounded unit of work within `dea:activity-allocate-relationship-attention` (Allocate Relationship Attention) that execute the operating rhythm: conduct the relationship reviews, allocate relationship attention across the portfolio, handle the relationship escalations, and coordinate the renewals, producing the operating-ready outcomes pack conforming to the KAM-operating schema.'
 belongs_to_activity: dea:activity-allocate-relationship-attention
-trigger: Verified input is ready (phase 2 complete); transformation to the specified
-  output form may begin.
-outcome: Output produced in the specified form per parent Activity's definition; intermediate
-  artifacts preserved for audit.
+trigger: Verification certificate issued for Allocate Relationship Attention; transform gate may execute the bounded work and emit the conformant artefact under the Operate schema.
+outcome: Bounded-work artefact produced for Allocate Relationship Attention conforming to the Operate schema; processing custodian passes custody to the confirmation custodian.
 responsibility: processing custodian
 boundary:
   inclusions:
-  - Transformation of verified input to the specified output form.
-  - Preservation of intermediate artifacts for audit.
+  - Execution of the Allocate Relationship Attention bounded work producing the conformant artefact.
+  - Application of the Allocate Relationship Attention schema and any derived classifications or computations.
   exclusions:
-  - Confirmation that the output meets downstream expectations (phase 4).
-  - Long-term record retention (phase 5).
+  - Long-term retention of the closure case file (phase 5).
+  - Notification of governing parties outside the notify-list (phase 4).
 evidence:
-- source: dea:activity-allocate-relationship-attention
-  claim: "Parent Activity cohesion rationale (CR-BP-32 \xA76): Constituent work shares\
-    \ a single allocation concern (finite relationship attention across the active\
-    \ base), one input class (relationship status and value signals), and one output\
-    \ (the attention allocation per customer). Cohesion score 8/9 assessed at deposition\
-    \ (CR-BP-32 \xA76)."
-  strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
+- source: SAMA Strategic Account Management playbook
+  claim: strategic-account management playbook grounding the operate-phase KAM-playbook contract and the transform-phase operating-rhythm execution. Bounded-work evidence for the transform-phase custodian of `dea:activity-allocate-relationship-attention` (CR-BP-L4-02 enrichment).
   strength: E2
+- source: TSIA renewal execution benchmark
+  claim: renewal-execution benchmark grounding the operate-phase renewal-execution contract and the confirm-phase reconciliation. Bounded-work evidence for the transform-phase custodian of `dea:activity-allocate-relationship-attention` (CR-BP-L4-02 enrichment).
+  strength: E2
+- source: dea:activity-allocate-relationship-attention
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-02 cell-specific bounded-work prose for this PartyAndRelationship L4 Task.
+  strength: E3
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
@@ -68,5 +60,4 @@ metadata:
       '
   - cr: CR-BP-102
     date: '2026-09-19'
-    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline
-      (5-phase verb-object pattern).
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

@@ -1,35 +1,28 @@
 id: dea:task-design-hypothesis-tests-verify
 type: Task
 name: Design Hypothesis Tests Verification
-definition: 'The bounded unit of work within `dea:activity-design-hypothesis-tests`
-  (Design Hypothesis Tests) that carries out the verify phase of the parent''s verb-object
-  decomposition. Phase responsibility: verification custodian. Phase trigger: Intake
-  registered (phase 1 complete); verification of input against parent Activity''s
-  specification can begin. Phase outcome: Verified that the input meets parent Activity''s
-  specification; nonconformities are recorded for rejection or remediation.'
+definition: The bounded unit of work within `dea:activity-design-hypothesis-tests` (Design Hypothesis Tests) that verify the input pack against the segment-thesis methodology and the JTBD-evidence quality criteria, and emit a verification report naming any methodology deviations and their remediation.
 belongs_to_activity: dea:activity-design-hypothesis-tests
-trigger: Intake registered (phase 1 complete); verification of input against parent
-  Activity's specification can begin.
-outcome: Verified that the input meets parent Activity's specification; nonconformities
-  are recorded for rejection or remediation.
+trigger: Intake manifest registered for Design Hypothesis Tests; verification gate may execute the contract and quality-criteria checks against the input pack.
+outcome: Verification certificate issued for Design Hypothesis Tests naming verification methods applied and any deviations remediated; verification custodian passes custody to the processing custodian.
 responsibility: verification custodian
 boundary:
   inclusions:
-  - Comparison of input against parent Activity's specification.
-  - Recording of verification results (conformance / nonconformance).
+  - Execution of the Design Hypothesis Tests contract checks and quality-criteria verification.
+  - Reconciliation of the input pack against the Design Hypothesis Tests verification certificate requirements.
   exclusions:
-  - Transformation of the input (phase 3).
-  - Issuance of downstream confirmation (phase 4).
+  - Long-term retention of the closure case file (phase 5).
+  - Re-execution of prior phases on rejected or withdrawn cases.
 evidence:
-- source: dea:activity-design-hypothesis-tests
-  claim: "Parent Activity cohesion rationale (CR-BP-32 \xA76): Constituent work shares\
-    \ a single test-design concern (hypothesis to executable test), one reference\
-    \ class (the hypothesis set), and one artifact (the test plan). Cohesion score\
-    \ 8/9 assessed at deposition (CR-BP-32 \xA76)."
+- source: Osterwalder Value Proposition Canvas
+  claim: value-exchange design framework grounding the conceive-phase transform step's articulation of the value exchange and the segment-thesis formulation. Bounded-work evidence for the verify-phase custodian of `dea:activity-design-hypothesis-tests` (CR-BP-L4-02 enrichment).
   strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
-  strength: E2
+- source: Christensen Jobs-to-be-Done
+  claim: JTBD methodology grounding the conceive-phase demand-thesis and demand-hypotheses formulation. Bounded-work evidence for the verify-phase custodian of `dea:activity-design-hypothesis-tests` (CR-BP-L4-02 enrichment).
+  strength: E3
+- source: dea:activity-design-hypothesis-tests
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-02 cell-specific bounded-work prose for this PartyAndRelationship L4 Task.
+  strength: E3
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
@@ -67,5 +60,4 @@ metadata:
       '
   - cr: CR-BP-102
     date: '2026-09-19'
-    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline
-      (5-phase verb-object pattern).
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

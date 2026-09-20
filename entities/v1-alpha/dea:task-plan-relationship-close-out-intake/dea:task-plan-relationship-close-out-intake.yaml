@@ -1,35 +1,28 @@
 id: dea:task-plan-relationship-close-out-intake
 type: Task
 name: Plan Relationship Close-Out Intake
-definition: 'The bounded unit of work within `dea:activity-plan-relationship-close-out`
-  (Plan Relationship Close-Out) that carries out the intake phase of the parent''s
-  verb-object decomposition. Phase responsibility: designated intake custodian. Phase
-  trigger: Parent Activity''s input class is presented for processing and the activity
-  owner is notified of intake. Phase outcome: Intake registered; input artifact preserved
-  with audit identifiers; downstream phases may proceed.'
+definition: The bounded unit of work within `dea:activity-plan-relationship-close-out` (Plan Relationship Close-Out) that accept custody of the relationship-closure input pack (close-out plan, outstanding-obligations inventory, records-and-rights register) and persist a registered intake manifest binding the inputs to the closure case file.
 belongs_to_activity: dea:activity-plan-relationship-close-out
-trigger: Parent Activity's input class is presented for processing and the activity
-  owner is notified of intake.
-outcome: Intake registered; input artifact preserved with audit identifiers; downstream
-  phases may proceed.
+trigger: Custody of the Retire-stage input pack for Plan Relationship Close-Out ready for intake; predecessor phase has produced the case file context and intake contract applies.
+outcome: Intake manifest registered and bound to the Plan Relationship Close-Out case file; registered intake custodian passes custody to the verification custodian.
 responsibility: designated intake custodian
 boundary:
   inclusions:
-  - Acceptance of the input artifact per parent Activity scope.
-  - Issuance of intake acknowledgment with audit identifiers.
+  - Receipt and registration of the Plan Relationship Close-Out input pack against the Retire-stage intake contract.
+  - Binding of the input pack to the Plan Relationship Close-Out case file with cryptographic chain-of-custody.
   exclusions:
-  - Validation of the input against specifications (phase 2).
-  - Transformation of the input to the specified form (phase 3).
+  - Re-execution of prior intake phases on rejected or withdrawn cases (no rollback semantics).
+  - Long-term retention of the closure case file (phase 5).
 evidence:
+- source: Sarbanes-Oxley §802 records retention
+  claim: US records-retention statute binding the retire-phase records custodian retention schedule to a regulator-recognised minimum. Bounded-work evidence for the intake-phase custodian of `dea:activity-plan-relationship-close-out` (CR-BP-L4-02 enrichment).
+  strength: E1
+- source: GDPR Art 5(1)(e) storage limitation
+  claim: data-protection storage-limitation principle binding the retire-phase storage-limitation rules and the record-phase cryptographic destruction attestation. Bounded-work evidence for the intake-phase custodian of `dea:activity-plan-relationship-close-out` (CR-BP-L4-02 enrichment).
+  strength: E1
 - source: dea:activity-plan-relationship-close-out
-  claim: "Parent Activity cohesion rationale (CR-BP-32 \xA76): Constituent work shares\
-    \ a single close-out planning concern, one input class (the agreed or mandated\
-    \ relationship end), and one output (the relationship close-out plan). Cohesion\
-    \ score 8/9 assessed at deposition (CR-BP-32 \xA76)."
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-02 cell-specific bounded-work prose for this PartyAndRelationship L4 Task.
   strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
-  strength: E2
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
@@ -65,5 +58,4 @@ metadata:
       '
   - cr: CR-BP-102
     date: '2026-09-19'
-    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline
-      (5-phase verb-object pattern).
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

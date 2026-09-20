@@ -1,35 +1,28 @@
 id: dea:task-assess-churn-risk-record
 type: Task
 name: Assess Churn Risk Audit Record
-definition: 'The bounded unit of work within `dea:activity-assess-churn-risk` (Assess
-  Churn Risk) that carries out the record phase of the parent''s verb-object decomposition.
-  Phase responsibility: records custodian. Phase trigger: Confirmation issued (phase
-  4 complete); audit record retention may begin per parent Activity''s evidence requirements.
-  Phase outcome: Audit record preserved at the specified retention tier; retrieval
-  handles established per parent Activity''s evidence discipline.'
+definition: The bounded unit of work within `dea:activity-assess-churn-risk` (Assess Churn Risk) that retain the improvement package (intake manifest, verification report, improvement-ready outcomes pack, improvement-completion confirmation, and any model-contract remediations) under the customer-improvement records retention schedule with cryptographic integrity protection.
 belongs_to_activity: dea:activity-assess-churn-risk
-trigger: Confirmation issued (phase 4 complete); audit record retention may begin
-  per parent Activity's evidence requirements.
-outcome: Audit record preserved at the specified retention tier; retrieval handles
-  established per parent Activity's evidence discipline.
+trigger: Completion confirmation issued for Assess Churn Risk; record gate may retain the closure case file under the records retention schedule with cryptographic integrity protection.
+outcome: Closure case file retained for Assess Churn Risk under the records retention schedule with cryptographic integrity protection; cryptographic destruction attestation recorded where storage-limitation horizons apply.
 responsibility: records custodian
 boundary:
   inclusions:
-  - Preservation of the audit record at the specified retention tier.
-  - Establishment of retrieval handles per evidence discipline.
+  - Retention of the Assess Churn Risk closure case file under the records retention schedule with cryptographic integrity protection.
+  - Issuance of cryptographic destruction attestation for Assess Churn Risk records past the storage-limitation horizon.
   exclusions:
-  - Re-execution of prior phases.
-  - Downstream consumption of the audit record (out of Activity scope).
+  - Re-execution of prior phases (no rollback semantics).
+  - Re-classification of records already past the storage-limitation horizon (cryptographic destruction is irreversible).
 evidence:
-- source: dea:activity-assess-churn-risk
-  claim: "Parent Activity cohesion rationale (CR-BP-32 \xA76): Constituent work shares\
-    \ a single assessment concern (signals to churn-risk score), one input class (feedback\
-    \ and behaviour signals), and one output (the churn-risk register). Cohesion score\
-    \ 9/9 assessed at deposition (CR-BP-32 \xA76)."
-  strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
+- source: Gartner Subscriber Retention Benchmark 2024
+  claim: industry benchmark grounding the improve-phase churn-risk-model contract and the transform-phase churn-risk assessment. Bounded-work evidence for the record-phase custodian of `dea:activity-assess-churn-risk` (CR-BP-L4-02 enrichment).
   strength: E2
+- source: Bain Loyalty Economics (Reichheld)
+  claim: loyalty-economics methodology grounding the improve-phase retention-actions execution and the retention-outcomes schema. Bounded-work evidence for the record-phase custodian of `dea:activity-assess-churn-risk` (CR-BP-L4-02 enrichment).
+  strength: E2
+- source: dea:activity-assess-churn-risk
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-02 cell-specific bounded-work prose for this PartyAndRelationship L4 Task.
+  strength: E3
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
@@ -67,5 +60,4 @@ metadata:
       '
   - cr: CR-BP-102
     date: '2026-09-19'
-    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline
-      (5-phase verb-object pattern).
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

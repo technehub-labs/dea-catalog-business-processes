@@ -1,37 +1,28 @@
 id: dea:task-allocate-relationship-attention-record
 type: Task
 name: Allocate Relationship Attention Audit Record
-definition: 'The bounded unit of work within `dea:activity-allocate-relationship-attention`
-  (Allocate Relationship Attention) that carries out the record phase of the parent''s
-  verb-object decomposition. Phase responsibility: records custodian. Phase trigger:
-  Confirmation issued (phase 4 complete); audit record retention may begin per parent
-  Activity''s evidence requirements. Phase outcome: Audit record preserved at the
-  specified retention tier; retrieval handles established per parent Activity''s evidence
-  discipline.'
+definition: The bounded unit of work within `dea:activity-allocate-relationship-attention` (Allocate Relationship Attention) that retain the operating package (intake manifest, verification report, operating-ready outcomes pack, operating-completion confirmation, and any playbook-contract remediations) under the relationship-operating records retention schedule with cryptographic integrity protection.
 belongs_to_activity: dea:activity-allocate-relationship-attention
-trigger: Confirmation issued (phase 4 complete); audit record retention may begin
-  per parent Activity's evidence requirements.
-outcome: Audit record preserved at the specified retention tier; retrieval handles
-  established per parent Activity's evidence discipline.
+trigger: Completion confirmation issued for Allocate Relationship Attention; record gate may retain the closure case file under the records retention schedule with cryptographic integrity protection.
+outcome: Closure case file retained for Allocate Relationship Attention under the records retention schedule with cryptographic integrity protection; cryptographic destruction attestation recorded where storage-limitation horizons apply.
 responsibility: records custodian
 boundary:
   inclusions:
-  - Preservation of the audit record at the specified retention tier.
-  - Establishment of retrieval handles per evidence discipline.
+  - Retention of the Allocate Relationship Attention closure case file under the records retention schedule with cryptographic integrity protection.
+  - Issuance of cryptographic destruction attestation for Allocate Relationship Attention records past the storage-limitation horizon.
   exclusions:
-  - Re-execution of prior phases.
-  - Downstream consumption of the audit record (out of Activity scope).
+  - Re-execution of prior phases (no rollback semantics).
+  - Re-classification of records already past the storage-limitation horizon (cryptographic destruction is irreversible).
 evidence:
-- source: dea:activity-allocate-relationship-attention
-  claim: "Parent Activity cohesion rationale (CR-BP-32 \xA76): Constituent work shares\
-    \ a single allocation concern (finite relationship attention across the active\
-    \ base), one input class (relationship status and value signals), and one output\
-    \ (the attention allocation per customer). Cohesion score 8/9 assessed at deposition\
-    \ (CR-BP-32 \xA76)."
-  strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
+- source: SAMA Strategic Account Management playbook
+  claim: strategic-account management playbook grounding the operate-phase KAM-playbook contract and the transform-phase operating-rhythm execution. Bounded-work evidence for the record-phase custodian of `dea:activity-allocate-relationship-attention` (CR-BP-L4-02 enrichment).
   strength: E2
+- source: TSIA renewal execution benchmark
+  claim: renewal-execution benchmark grounding the operate-phase renewal-execution contract and the confirm-phase reconciliation. Bounded-work evidence for the record-phase custodian of `dea:activity-allocate-relationship-attention` (CR-BP-L4-02 enrichment).
+  strength: E2
+- source: dea:activity-allocate-relationship-attention
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-02 cell-specific bounded-work prose for this PartyAndRelationship L4 Task.
+  strength: E3
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
@@ -69,5 +60,4 @@ metadata:
       '
   - cr: CR-BP-102
     date: '2026-09-19'
-    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline
-      (5-phase verb-object pattern).
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

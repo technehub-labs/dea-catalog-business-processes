@@ -1,35 +1,28 @@
 id: dea:task-execute-evidenced-closure-record
 type: Task
 name: Execute Evidenced Closure Audit Record
-definition: 'The bounded unit of work within `dea:activity-execute-evidenced-closure`
-  (Execute Evidenced Closure) that carries out the record phase of the parent''s verb-object
-  decomposition. Phase responsibility: records custodian. Phase trigger: Confirmation
-  issued (phase 4 complete); audit record retention may begin per parent Activity''s
-  evidence requirements. Phase outcome: Audit record preserved at the specified retention
-  tier; retrieval handles established per parent Activity''s evidence discipline.'
+definition: The bounded unit of work within `dea:activity-execute-evidenced-closure` (Execute Evidenced Closure) that retain the closure package (intake manifest, verification report, closure-ready record pack, closure-completion confirmation, and any retention-schedule remediations) under the relationship-closure records retention schedule with cryptographic integrity protection, with cryptographic destruction attestation for records past the storage-limitation horizon.
 belongs_to_activity: dea:activity-execute-evidenced-closure
-trigger: Confirmation issued (phase 4 complete); audit record retention may begin
-  per parent Activity's evidence requirements.
-outcome: Audit record preserved at the specified retention tier; retrieval handles
-  established per parent Activity's evidence discipline.
+trigger: Completion confirmation issued for Execute Evidenced Closure; record gate may retain the closure case file under the records retention schedule with cryptographic integrity protection.
+outcome: Closure case file retained for Execute Evidenced Closure under the records retention schedule with cryptographic integrity protection; cryptographic destruction attestation recorded where storage-limitation horizons apply.
 responsibility: records custodian
 boundary:
   inclusions:
-  - Preservation of the audit record at the specified retention tier.
-  - Establishment of retrieval handles per evidence discipline.
+  - Retention of the Execute Evidenced Closure closure case file under the records retention schedule with cryptographic integrity protection.
+  - Issuance of cryptographic destruction attestation for Execute Evidenced Closure records past the storage-limitation horizon.
   exclusions:
-  - Re-execution of prior phases.
-  - Downstream consumption of the audit record (out of Activity scope).
+  - Re-execution of prior phases (no rollback semantics).
+  - Re-classification of records already past the storage-limitation horizon (cryptographic destruction is irreversible).
 evidence:
+- source: Sarbanes-Oxley §802 records retention
+  claim: US records-retention statute binding the retire-phase records custodian retention schedule to a regulator-recognised minimum. Bounded-work evidence for the record-phase custodian of `dea:activity-execute-evidenced-closure` (CR-BP-L4-02 enrichment).
+  strength: E1
+- source: GDPR Art 5(1)(e) storage limitation
+  claim: data-protection storage-limitation principle binding the retire-phase storage-limitation rules and the record-phase cryptographic destruction attestation. Bounded-work evidence for the record-phase custodian of `dea:activity-execute-evidenced-closure` (CR-BP-L4-02 enrichment).
+  strength: E1
 - source: dea:activity-execute-evidenced-closure
-  claim: "Parent Activity cohesion rationale (CR-BP-32 \xA76): Constituent work shares\
-    \ a single evidenced closure concern, one input class (the settled obligations\
-    \ and resolved records and rights), and one output (the executed close with evidence).\
-    \ Cohesion score 8/9 assessed at deposition (CR-BP-32 \xA76)."
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-02 cell-specific bounded-work prose for this PartyAndRelationship L4 Task.
   strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
-  strength: E2
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
@@ -65,5 +58,4 @@ metadata:
       '
   - cr: CR-BP-102
     date: '2026-09-19'
-    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline
-      (5-phase verb-object pattern).
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

@@ -1,35 +1,28 @@
 id: dea:task-map-journey-stages-confirm
 type: Task
 name: Map Journey Stages Confirmation
-definition: 'The bounded unit of work within `dea:activity-map-journey-stages` (Map
-  Journey Stages) that carries out the confirm phase of the parent''s verb-object
-  decomposition. Phase responsibility: confirmation custodian. Phase trigger: Processing
-  complete (phase 3); output available for downstream consumers and confirmation can
-  be issued. Phase outcome: Confirmation issued; downstream consumers notified of
-  output availability; reconciliation against parent Activity outcome complete.'
+definition: The bounded unit of work within `dea:activity-map-journey-stages` (Map Journey Stages) that reconcile the design-ready journey artefact against the experience-quality criteria and the touchpoint-taxonomy contract, issue the design-completion confirmation to the experience custodian, and log the confirmation.
 belongs_to_activity: dea:activity-map-journey-stages
-trigger: Processing complete (phase 3); output available for downstream consumers
-  and confirmation can be issued.
-outcome: Confirmation issued; downstream consumers notified of output availability;
-  reconciliation against parent Activity outcome complete.
+trigger: Bounded-work artefact produced for Map Journey Stages; confirm gate may reconcile against the governing contract and issue the completion confirmation to the relationship custodian.
+outcome: Completion confirmation issued for Map Journey Stages and acknowledged by the relationship custodian and any governing-party notify-list; confirmation custodian passes custody to the records custodian.
 responsibility: confirmation custodian
 boundary:
   inclusions:
-  - Reconciliation of output against parent Activity outcome.
-  - Notification of downstream consumers of output availability.
+  - Reconciliation of the Map Journey Stages artefact against the governing contract and any notify-list requirements.
+  - Issuance of the Map Journey Stages completion confirmation and acknowledgement logging.
   exclusions:
-  - Long-term record retention (phase 5).
-  - Re-execution of prior phases (no rollback semantics).
+  - Long-term retention of the closure case file (phase 5).
+  - Re-execution of prior phases on confirmation rejection.
 evidence:
-- source: dea:activity-map-journey-stages
-  claim: "Parent Activity cohesion rationale (CR-BP-32 \xA76): Constituent work shares\
-    \ a single decomposition concern (end-to-end path into stages), one input class\
-    \ (experience and touchpoint designs), and one output (the stage map). Cohesion\
-    \ score 9/9 assessed at deposition (CR-BP-32 \xA76)."
-  strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
+- source: Bain Net Promoter System methodology
+  claim: experience-quality measurement methodology grounding the design-phase experience-quality criteria and the verify-phase quality-criteria checks. Bounded-work evidence for the confirm-phase custodian of `dea:activity-map-journey-stages` (CR-BP-L4-02 enrichment).
   strength: E2
+- source: Nielsen Norman Group interaction-design foundations
+  claim: interaction-design framework grounding the design-phase touchpoint and interaction-pattern design step. Bounded-work evidence for the confirm-phase custodian of `dea:activity-map-journey-stages` (CR-BP-L4-02 enrichment).
+  strength: E3
+- source: dea:activity-map-journey-stages
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-02 cell-specific bounded-work prose for this PartyAndRelationship L4 Task.
+  strength: E3
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
@@ -67,5 +60,4 @@ metadata:
       '
   - cr: CR-BP-102
     date: '2026-09-19'
-    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline
-      (5-phase verb-object pattern).
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

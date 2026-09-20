@@ -1,35 +1,28 @@
 id: dea:task-formulate-demand-thesis-confirm
 type: Task
 name: Formulate Demand Thesis Confirmation
-definition: 'The bounded unit of work within `dea:activity-formulate-demand-thesis`
-  (Formulate Demand Thesis) that carries out the confirm phase of the parent''s verb-object
-  decomposition. Phase responsibility: confirmation custodian. Phase trigger: Processing
-  complete (phase 3); output available for downstream consumers and confirmation can
-  be issued. Phase outcome: Confirmation issued; downstream consumers notified of
-  output availability; reconciliation against parent Activity outcome complete.'
+definition: The bounded unit of work within `dea:activity-formulate-demand-thesis` (Formulate Demand Thesis) that reconcile the conceive-ready thesis package against the segment-strategy artefact schema and the JTBD-evidence quality criteria, issue the conceive-completion confirmation to the strategy custodian, and log the confirmation.
 belongs_to_activity: dea:activity-formulate-demand-thesis
-trigger: Processing complete (phase 3); output available for downstream consumers
-  and confirmation can be issued.
-outcome: Confirmation issued; downstream consumers notified of output availability;
-  reconciliation against parent Activity outcome complete.
+trigger: Bounded-work artefact produced for Formulate Demand Thesis; confirm gate may reconcile against the governing contract and issue the completion confirmation to the relationship custodian.
+outcome: Completion confirmation issued for Formulate Demand Thesis and acknowledged by the relationship custodian and any governing-party notify-list; confirmation custodian passes custody to the records custodian.
 responsibility: confirmation custodian
 boundary:
   inclusions:
-  - Reconciliation of output against parent Activity outcome.
-  - Notification of downstream consumers of output availability.
+  - Reconciliation of the Formulate Demand Thesis artefact against the governing contract and any notify-list requirements.
+  - Issuance of the Formulate Demand Thesis completion confirmation and acknowledgement logging.
   exclusions:
-  - Long-term record retention (phase 5).
-  - Re-execution of prior phases (no rollback semantics).
+  - Long-term retention of the closure case file (phase 5).
+  - Re-execution of prior phases on confirmation rejection.
 evidence:
-- source: dea:activity-formulate-demand-thesis
-  claim: "Parent Activity cohesion rationale (CR-BP-32 \xA76): Constituent work shares\
-    \ a single expectation concern (how demand arises and sustains), one input class\
-    \ (segment thesis, value exchange, market intelligence), and one output (the demand\
-    \ thesis). Cohesion score 8/9 assessed at deposition (CR-BP-32 \xA76)."
+- source: Osterwalder Value Proposition Canvas
+  claim: value-exchange design framework grounding the conceive-phase transform step's articulation of the value exchange and the segment-thesis formulation. Bounded-work evidence for the confirm-phase custodian of `dea:activity-formulate-demand-thesis` (CR-BP-L4-02 enrichment).
   strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
-  strength: E2
+- source: Christensen Jobs-to-be-Done
+  claim: JTBD methodology grounding the conceive-phase demand-thesis and demand-hypotheses formulation. Bounded-work evidence for the confirm-phase custodian of `dea:activity-formulate-demand-thesis` (CR-BP-L4-02 enrichment).
+  strength: E3
+- source: dea:activity-formulate-demand-thesis
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-02 cell-specific bounded-work prose for this PartyAndRelationship L4 Task.
+  strength: E3
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
@@ -67,5 +60,4 @@ metadata:
       '
   - cr: CR-BP-102
     date: '2026-09-19'
-    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline
-      (5-phase verb-object pattern).
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

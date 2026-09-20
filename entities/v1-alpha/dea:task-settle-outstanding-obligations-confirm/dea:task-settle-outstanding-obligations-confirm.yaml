@@ -1,35 +1,28 @@
 id: dea:task-settle-outstanding-obligations-confirm
 type: Task
 name: Settle Outstanding Obligations Confirmation
-definition: 'The bounded unit of work within `dea:activity-settle-outstanding-obligations`
-  (Settle Outstanding Obligations) that carries out the confirm phase of the parent''s
-  verb-object decomposition. Phase responsibility: confirmation custodian. Phase trigger:
-  Processing complete (phase 3); output available for downstream consumers and confirmation
-  can be issued. Phase outcome: Confirmation issued; downstream consumers notified
-  of output availability; reconciliation against parent Activity outcome complete.'
+definition: The bounded unit of work within `dea:activity-settle-outstanding-obligations` (Settle Outstanding Obligations) that reconcile the closure-ready record pack against the records-retention schedule and the obligation-settlement contract, issue the closure-completion confirmation to the relationship custodian and the records custodian, and log the confirmation.
 belongs_to_activity: dea:activity-settle-outstanding-obligations
-trigger: Processing complete (phase 3); output available for downstream consumers
-  and confirmation can be issued.
-outcome: Confirmation issued; downstream consumers notified of output availability;
-  reconciliation against parent Activity outcome complete.
+trigger: Bounded-work artefact produced for Settle Outstanding Obligations; confirm gate may reconcile against the governing contract and issue the completion confirmation to the relationship custodian.
+outcome: Completion confirmation issued for Settle Outstanding Obligations and acknowledged by the relationship custodian and any governing-party notify-list; confirmation custodian passes custody to the records custodian.
 responsibility: confirmation custodian
 boundary:
   inclusions:
-  - Reconciliation of output against parent Activity outcome.
-  - Notification of downstream consumers of output availability.
+  - Reconciliation of the Settle Outstanding Obligations artefact against the governing contract and any notify-list requirements.
+  - Issuance of the Settle Outstanding Obligations completion confirmation and acknowledgement logging.
   exclusions:
-  - Long-term record retention (phase 5).
-  - Re-execution of prior phases (no rollback semantics).
+  - Long-term retention of the closure case file (phase 5).
+  - Re-execution of prior phases on confirmation rejection.
 evidence:
+- source: Sarbanes-Oxley §802 records retention
+  claim: US records-retention statute binding the retire-phase records custodian retention schedule to a regulator-recognised minimum. Bounded-work evidence for the confirm-phase custodian of `dea:activity-settle-outstanding-obligations` (CR-BP-L4-02 enrichment).
+  strength: E1
+- source: GDPR Art 5(1)(e) storage limitation
+  claim: data-protection storage-limitation principle binding the retire-phase storage-limitation rules and the record-phase cryptographic destruction attestation. Bounded-work evidence for the confirm-phase custodian of `dea:activity-settle-outstanding-obligations` (CR-BP-L4-02 enrichment).
+  strength: E1
 - source: dea:activity-settle-outstanding-obligations
-  claim: "Parent Activity cohesion rationale (CR-BP-32 \xA76): Constituent work shares\
-    \ a single obligation settlement concern, one input class (the close-out plan\
-    \ and obligation inventory), and one output (fulfilled or settled obligations).\
-    \ Cohesion score 9/9 assessed at deposition (CR-BP-32 \xA76)."
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-02 cell-specific bounded-work prose for this PartyAndRelationship L4 Task.
   strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
-  strength: E2
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
@@ -65,5 +58,4 @@ metadata:
       '
   - cr: CR-BP-102
     date: '2026-09-19'
-    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline
-      (5-phase verb-object pattern).
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).
