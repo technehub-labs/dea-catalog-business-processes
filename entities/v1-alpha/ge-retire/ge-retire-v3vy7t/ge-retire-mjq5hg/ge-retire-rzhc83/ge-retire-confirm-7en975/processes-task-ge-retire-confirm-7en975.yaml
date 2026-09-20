@@ -1,25 +1,28 @@
 id: processes:task-ge-retire-confirm-7en975
 type: Task
 name: Assign Retained-Records Custodianship Confirmation
-definition: 'The bounded unit of work within `dea:activity-assign-retained-records-custodianship` (Assign Retained-Records Custodianship) that carries out the confirm phase of the parent''s verb-object decomposition. Phase responsibility: confirmation custodian. Phase trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued. Phase outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
+definition: The bounded unit of work within `processes:activity-ge-retire-rzhc83` (Assign Retained-Records Custodianship) that reconcile the wind-down-ready record pack against the dissolution statute and the retained-records custodianship contract, issue the wind-down completion confirmation to the governance custodian and the registrar of companies, and log the confirmation.
 belongs_to_activity: processes:activity-ge-retire-rzhc83
-trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued.
-outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.
+trigger: Bounded-work artefact produced for Assign Retained-Records Custodianship; confirm gate may reconcile against the governing contract and issue the completion confirmation to the governance custodian.
+outcome: Completion confirmation issued for Assign Retained-Records Custodianship and acknowledged by the governance custodian and any governing-party notify-list; confirmation custodian passes custody to the records custodian.
 responsibility: confirmation custodian
 boundary:
   inclusions:
-  - Reconciliation of output against parent Activity outcome.
-  - Notification of downstream consumers of output availability.
+  - Reconciliation of the Assign Retained-Records Custodianship artefact against the governing contract and any notify-list requirements.
+  - Issuance of the Assign Retained-Records Custodianship completion confirmation and acknowledgement logging.
   exclusions:
-  - Long-term record retention (phase 5).
-  - Re-execution of prior phases (no rollback semantics).
+  - Long-term retention of the case file (phase 5).
+  - Re-execution of prior phases on confirmation rejection.
 evidence:
+- source: Delaware DGCL §§275-283 (Dissolution)
+  claim: statutory dissolution and winding-up provisions binding the retire-phase verification and the statutory dissolution filings. Bounded-work evidence for the confirm-phase custodian of `processes:activity-ge-retire-rzhc83` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: UK Insolvency Act 1986 Part IV
+  claim: UK winding-up statute grounding the retire-phase wind-down quorum requirements and registrar filings. Bounded-work evidence for the confirm-phase custodian of `processes:activity-ge-retire-rzhc83` (CR-BP-L4-03 enrichment).
+  strength: E1
 - source: processes:activity-ge-retire-rzhc83
-  claim: 'Parent Activity cohesion rationale (CR-BP-32 §6): Constituent work shares a single records-custodianship concern (the post-dissolution retention of entity records for the statutory period plus a service-of-process agent), one input class (order-scope register plus entity records plus statutory retention map), and one output (a documented custodian designation with regulator or court acknowledgement). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).'
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-03 cell-specific bounded-work prose for this GovernanceAndExistence L4 Task.
   strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
-  strength: E2
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate

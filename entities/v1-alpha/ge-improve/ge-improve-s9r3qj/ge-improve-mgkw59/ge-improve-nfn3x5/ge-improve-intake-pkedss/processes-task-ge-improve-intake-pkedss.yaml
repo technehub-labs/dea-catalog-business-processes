@@ -1,25 +1,28 @@
 id: processes:task-ge-improve-intake-pkedss
 type: Task
 name: Formulate Effectiveness Recommendations Intake
-definition: 'The bounded unit of work within `dea:activity-formulate-effectiveness-recommendations` (Formulate Effectiveness Recommendations) that carries out the intake phase of the parent''s verb-object decomposition. Phase responsibility: designated intake custodian. Phase trigger: Parent Activity''s input class is presented for processing and the activity owner is notified of intake. Phase outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
+definition: The bounded unit of work within `processes:activity-ge-improve-nfn3x5` (Formulate Effectiveness Recommendations) that accept custody of the improvement-case input pack (finding register, effectiveness-review scope, policy-gap inventory) and persist a registered intake manifest binding the inputs to the improvement case file.
 belongs_to_activity: processes:activity-ge-improve-nfn3x5
-trigger: Parent Activity's input class is presented for processing and the activity owner is notified of intake.
-outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.
+trigger: Custody of the Improve-stage input pack for Formulate Effectiveness Recommendations ready for intake; predecessor phase has produced the case file context and intake contract applies.
+outcome: Intake manifest registered and bound to the Formulate Effectiveness Recommendations case file; registered intake custodian passes custody to the verification custodian.
 responsibility: designated intake custodian
 boundary:
   inclusions:
-  - Acceptance of the input artifact per parent Activity scope.
-  - Issuance of intake acknowledgment with audit identifiers.
+  - Receipt and registration of the Formulate Effectiveness Recommendations input pack against the Improve-stage intake contract.
+  - Binding of the input pack to the Formulate Effectiveness Recommendations case file with cryptographic chain-of-custody.
   exclusions:
-  - Validation of the input against specifications (phase 2).
-  - Transformation of the input to the specified form (phase 3).
+  - Re-execution of prior intake phases on rejected or withdrawn cases (no rollback semantics).
+  - Long-term retention of the case file (phase 5).
 evidence:
-- source: processes:activity-ge-improve-nfn3x5
-  claim: 'Parent Activity cohesion rationale (CR-BP-32 §6): Constituent work shares a single formulation concern (lessons to actionable recommendations), one input class (lessons-learned record), and one output (the recommendation set). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).'
-  strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
+- source: IIA IPPF / Global Internal Audit Standards 2024
+  claim: internal-audit professional framework binding the improve-phase finding classification and effectiveness-review methodology. Bounded-work evidence for the intake-phase custodian of `processes:activity-ge-improve-nfn3x5` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: ISO 19011:2018 (Audit Programme Guidelines)
+  claim: audit-programme standard grounding the improve-phase measurement methodology and finding-severity scoring. Bounded-work evidence for the intake-phase custodian of `processes:activity-ge-improve-nfn3x5` (CR-BP-L4-03 enrichment).
   strength: E2
+- source: processes:activity-ge-improve-nfn3x5
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-03 cell-specific bounded-work prose for this GovernanceAndExistence L4 Task.
+  strength: E3
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate

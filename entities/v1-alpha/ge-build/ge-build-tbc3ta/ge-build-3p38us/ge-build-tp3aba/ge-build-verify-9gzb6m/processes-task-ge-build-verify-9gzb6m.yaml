@@ -1,25 +1,28 @@
 id: processes:task-ge-build-verify-9gzb6m
 type: Task
 name: Constitute Bodies Verification
-definition: 'The bounded unit of work within `dea:activity-constitute-bodies` (Constitute Bodies) that carries out the verify phase of the parent''s verb-object decomposition. Phase responsibility: verification custodian. Phase trigger: Intake registered (phase 1 complete); verification of input against parent Activity''s specification can begin. Phase outcome: Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
+definition: The bounded unit of work within `processes:activity-ge-build-tp3aba` (Constitute Bodies) that verify the build package against the governance-framework contract (OECD / King IV structural requirements), the committee-charter completeness rules, and the monitoring-tooling specification, and emit a verification report naming any structural deviations and their remediation.
 belongs_to_activity: processes:activity-ge-build-tp3aba
-trigger: Intake registered (phase 1 complete); verification of input against parent Activity's specification can begin.
-outcome: Verified that the input meets parent Activity's specification; nonconformities are recorded for rejection or remediation.
+trigger: Intake manifest registered for Constitute Bodies; verification gate may execute the contract and quality-criteria checks against the input pack.
+outcome: Verification certificate issued for Constitute Bodies naming verification methods applied and any deviations remediated; verification custodian passes custody to the processing custodian.
 responsibility: verification custodian
 boundary:
   inclusions:
-  - Comparison of input against parent Activity's specification.
-  - Recording of verification results (conformance / nonconformance).
+  - Execution of the Constitute Bodies contract checks and quality-criteria verification.
+  - Reconciliation of the input pack against the Constitute Bodies verification certificate requirements.
   exclusions:
-  - Transformation of the input (phase 3).
-  - Issuance of downstream confirmation (phase 4).
+  - Long-term retention of the case file (phase 5).
+  - Re-execution of prior phases on rejected or withdrawn cases.
 evidence:
-- source: processes:activity-ge-build-tp3aba
-  claim: 'Parent Activity cohesion rationale (CR-BP-32 §6): Constituent work shares a single constitution concern (design to constituted body), one reference class (the governance system design), and one output (constituted bodies). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).'
-  strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
+- source: OECD Principles of Corporate Governance (G20/OECD 2023)
+  claim: international governance benchmark binding the build-phase structural verification (charter completeness, body constitution) to a recognised framework. Bounded-work evidence for the verify-phase custodian of `processes:activity-ge-build-tp3aba` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: King IV Report (IoDSA 2016)
+  claim: outcomes-based governance report grounding the build-phase committee-charter completeness rules and operating-cycle design. Bounded-work evidence for the verify-phase custodian of `processes:activity-ge-build-tp3aba` (CR-BP-L4-03 enrichment).
   strength: E2
+- source: processes:activity-ge-build-tp3aba
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-03 cell-specific bounded-work prose for this GovernanceAndExistence L4 Task.
+  strength: E3
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate

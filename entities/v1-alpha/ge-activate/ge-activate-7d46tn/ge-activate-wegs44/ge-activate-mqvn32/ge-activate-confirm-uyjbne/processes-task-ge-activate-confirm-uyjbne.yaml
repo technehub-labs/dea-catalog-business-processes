@@ -1,25 +1,28 @@
 id: processes:task-ge-activate-confirm-uyjbne
 type: Task
 name: Effect Instrument Commencement Confirmation
-definition: 'The bounded unit of work within `dea:activity-effect-instrument-commencement` (Effect Instrument Commencement) that carries out the confirm phase of the parent''s verb-object decomposition. Phase responsibility: confirmation custodian. Phase trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued. Phase outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
+definition: The bounded unit of work within `processes:activity-ge-activate-mqvn32` (Effect Instrument Commencement) that reconcile the activated-instrument record against the constitutive instrument and the governing statute, issue the commencement confirmation to the governance custodian and the obligated parties, and log the confirmation against the case file.
 belongs_to_activity: processes:activity-ge-activate-mqvn32
-trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued.
-outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.
+trigger: Bounded-work artefact produced for Effect Instrument Commencement; confirm gate may reconcile against the governing contract and issue the completion confirmation to the governance custodian.
+outcome: Completion confirmation issued for Effect Instrument Commencement and acknowledged by the governance custodian and any governing-party notify-list; confirmation custodian passes custody to the records custodian.
 responsibility: confirmation custodian
 boundary:
   inclusions:
-  - Reconciliation of output against parent Activity outcome.
-  - Notification of downstream consumers of output availability.
+  - Reconciliation of the Effect Instrument Commencement artefact against the governing contract and any notify-list requirements.
+  - Issuance of the Effect Instrument Commencement completion confirmation and acknowledgement logging.
   exclusions:
-  - Long-term record retention (phase 5).
-  - Re-execution of prior phases (no rollback semantics).
+  - Long-term retention of the case file (phase 5).
+  - Re-execution of prior phases on confirmation rejection.
 evidence:
+- source: Delaware DGCL §§101-108 (Formation and Commencement)
+  claim: statutory formation and commencement provisions binding the activate-phase verification step to incorporation formalities. Bounded-work evidence for the confirm-phase custodian of `processes:activity-ge-activate-mqvn32` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: UK Companies Act 2006 Part 2
+  claim: UK formation statute grounding the activate-phase commencement-condition checks and the constitutive-instrument registration. Bounded-work evidence for the confirm-phase custodian of `processes:activity-ge-activate-mqvn32` (CR-BP-L4-03 enrichment).
+  strength: E1
 - source: processes:activity-ge-activate-mqvn32
-  claim: 'Parent Activity cohesion rationale (CR-BP-32 §6): Constituent work shares a single commencement execution concern, one input class (the verified commencement readiness), and one output (the instrument in force). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).'
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-03 cell-specific bounded-work prose for this GovernanceAndExistence L4 Task.
   strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
-  strength: E2
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate

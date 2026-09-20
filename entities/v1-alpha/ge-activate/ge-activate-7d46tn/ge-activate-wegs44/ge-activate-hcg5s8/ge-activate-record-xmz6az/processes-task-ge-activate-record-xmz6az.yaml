@@ -1,25 +1,28 @@
 id: processes:task-ge-activate-record-xmz6az
 type: Task
 name: Verify Commencement Conditions Audit Record
-definition: 'The bounded unit of work within `dea:activity-verify-commencement-conditions` (Verify Commencement Conditions) that carries out the record phase of the parent''s verb-object decomposition. Phase responsibility: records custodian. Phase trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity''s evidence requirements. Phase outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
+definition: The bounded unit of work within `processes:activity-ge-activate-hcg5s8` (Verify Commencement Conditions) that retain the commencement case file (intake manifest, verification certificate, activated-instrument record, confirmation acknowledgement, and any condition-remediation trail) under the statutory-records retention schedule with cryptographic integrity protection.
 belongs_to_activity: processes:activity-ge-activate-hcg5s8
-trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity's evidence requirements.
-outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity's evidence discipline.
+trigger: Completion confirmation issued for Verify Commencement Conditions; record gate may retain the case file under the records retention schedule with cryptographic integrity protection.
+outcome: Case file retained for Verify Commencement Conditions under the records retention schedule with cryptographic integrity protection; statutory retention horizon applied where the governing statute requires.
 responsibility: records custodian
 boundary:
   inclusions:
-  - Preservation of the audit record at the specified retention tier.
-  - Establishment of retrieval handles per evidence discipline.
+  - Retention of the Verify Commencement Conditions case file under the records retention schedule with cryptographic integrity protection.
+  - Application of the statutory retention horizon for Verify Commencement Conditions records where the governing statute requires.
   exclusions:
-  - Re-execution of prior phases.
-  - Downstream consumption of the audit record (out of Activity scope).
+  - Re-execution of prior phases (no rollback semantics).
+  - Re-classification of records already past the statutory retention horizon (cryptographic destruction is irreversible).
 evidence:
+- source: Delaware DGCL §§101-108 (Formation and Commencement)
+  claim: statutory formation and commencement provisions binding the activate-phase verification step to incorporation formalities. Bounded-work evidence for the record-phase custodian of `processes:activity-ge-activate-hcg5s8` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: UK Companies Act 2006 Part 2
+  claim: UK formation statute grounding the activate-phase commencement-condition checks and the constitutive-instrument registration. Bounded-work evidence for the record-phase custodian of `processes:activity-ge-activate-hcg5s8` (CR-BP-L4-03 enrichment).
+  strength: E1
 - source: processes:activity-ge-activate-hcg5s8
-  claim: 'Parent Activity cohesion rationale (CR-BP-32 §6): Constituent work shares a single commencement verification concern, one input class (the adopted instrument and its commencement provisions), and one output (the verified commencement readiness). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).'
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-03 cell-specific bounded-work prose for this GovernanceAndExistence L4 Task.
   strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
-  strength: E2
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate

@@ -1,25 +1,28 @@
 id: processes:task-ge-design-confirm-ptdrst
 type: Task
 name: Design Assessment Scales Confirmation
-definition: 'The bounded unit of work within `dea:activity-design-assessment-scales` (Design Assessment Scales) that carries out the confirm phase of the parent''s verb-object decomposition. Phase responsibility: confirmation custodian. Phase trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued. Phase outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
+definition: The bounded unit of work within `processes:activity-ge-design-fwc3b2` (Design Assessment Scales) that reconcile the design-ready governance artefact against the governance-architecture standards and the delegation-of-authority contract, issue the design-completion confirmation to the governance custodian, and log the confirmation.
 belongs_to_activity: processes:activity-ge-design-fwc3b2
-trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued.
-outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.
+trigger: Bounded-work artefact produced for Design Assessment Scales; confirm gate may reconcile against the governing contract and issue the completion confirmation to the governance custodian.
+outcome: Completion confirmation issued for Design Assessment Scales and acknowledged by the governance custodian and any governing-party notify-list; confirmation custodian passes custody to the records custodian.
 responsibility: confirmation custodian
 boundary:
   inclusions:
-  - Reconciliation of output against parent Activity outcome.
-  - Notification of downstream consumers of output availability.
+  - Reconciliation of the Design Assessment Scales artefact against the governing contract and any notify-list requirements.
+  - Issuance of the Design Assessment Scales completion confirmation and acknowledgement logging.
   exclusions:
-  - Long-term record retention (phase 5).
-  - Re-execution of prior phases (no rollback semantics).
+  - Long-term retention of the case file (phase 5).
+  - Re-execution of prior phases on confirmation rejection.
 evidence:
-- source: processes:activity-ge-design-fwc3b2
-  claim: 'Parent Activity cohesion rationale (CR-BP-32 §6): Constituent work shares a single scale concern (how risks are measured), one reference class (the risk taxonomy, tolerance bands), and one output (the assessment scale set). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).'
-  strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
+- source: OECD Principles G20/OECD 2023 Chapter VI
+  claim: board-responsibilities chapter binding the design-phase body articulation and delegation-of-authority design. Bounded-work evidence for the confirm-phase custodian of `processes:activity-ge-design-fwc3b2` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: COSO Internal Control 2013
+  claim: internal-control framework grounding the design-phase control-objective definition and compliance-regime design. Bounded-work evidence for the confirm-phase custodian of `processes:activity-ge-design-fwc3b2` (CR-BP-L4-03 enrichment).
   strength: E2
+- source: processes:activity-ge-design-fwc3b2
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-03 cell-specific bounded-work prose for this GovernanceAndExistence L4 Task.
+  strength: E3
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate

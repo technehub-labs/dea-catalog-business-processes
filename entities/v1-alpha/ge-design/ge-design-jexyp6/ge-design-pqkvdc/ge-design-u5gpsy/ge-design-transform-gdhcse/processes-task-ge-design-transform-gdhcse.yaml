@@ -1,25 +1,28 @@
 id: processes:task-ge-design-transform-gdhcse
 type: Task
 name: Design Governance Integration Processing
-definition: 'The bounded unit of work within `dea:activity-design-governance-integration` (Design Governance Integration) that carries out the transform phase of the parent''s verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
+definition: 'The bounded unit of work within `processes:activity-ge-design-u5gpsy` (Design Governance Integration) that execute the design: articulate the governance bodies, design the authority delegations and decision rights, design the policy artifacts and control objectives, design the risk taxonomy and assessment scales, design the compliance regime and governance integration, and produce the design-ready governance artefact conforming to the governance-design schema.'
 belongs_to_activity: processes:activity-ge-design-u5gpsy
-trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin.
-outcome: Output produced in the specified form per parent Activity's definition; intermediate artifacts preserved for audit.
+trigger: Verification certificate issued for Design Governance Integration; transform gate may execute the bounded work and emit the conformant artefact under the Design schema.
+outcome: Bounded-work artefact produced for Design Governance Integration conforming to the Design schema; processing custodian passes custody to the confirmation custodian.
 responsibility: processing custodian
 boundary:
   inclusions:
-  - Transformation of verified input to the specified output form.
-  - Preservation of intermediate artifacts for audit.
+  - Execution of the Design Governance Integration bounded work producing the conformant artefact.
+  - Application of the Design Governance Integration schema and any derived classifications or computations.
   exclusions:
-  - Confirmation that the output meets downstream expectations (phase 4).
-  - Long-term record retention (phase 5).
+  - Long-term retention of the case file (phase 5).
+  - Notification of governing parties outside the notify-list (phase 4).
 evidence:
-- source: processes:activity-ge-design-u5gpsy
-  claim: 'Parent Activity cohesion rationale (CR-BP-32 §6): Constituent work shares a single integration concern (risk framework into governance system), one input class (governance system design, taxonomy and scales), and one output (the integration design). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).'
-  strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
+- source: OECD Principles G20/OECD 2023 Chapter VI
+  claim: board-responsibilities chapter binding the design-phase body articulation and delegation-of-authority design. Bounded-work evidence for the transform-phase custodian of `processes:activity-ge-design-u5gpsy` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: COSO Internal Control 2013
+  claim: internal-control framework grounding the design-phase control-objective definition and compliance-regime design. Bounded-work evidence for the transform-phase custodian of `processes:activity-ge-design-u5gpsy` (CR-BP-L4-03 enrichment).
   strength: E2
+- source: processes:activity-ge-design-u5gpsy
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-03 cell-specific bounded-work prose for this GovernanceAndExistence L4 Task.
+  strength: E3
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate

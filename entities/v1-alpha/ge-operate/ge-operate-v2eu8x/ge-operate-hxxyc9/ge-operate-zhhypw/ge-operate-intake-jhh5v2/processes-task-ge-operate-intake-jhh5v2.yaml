@@ -1,25 +1,28 @@
 id: processes:task-ge-operate-intake-jhh5v2
 type: Task
 name: Track Follow-Up Actions Intake
-definition: 'The bounded unit of work within `dea:activity-track-follow-up-actions` (Track Follow-Up Actions) that carries out the intake phase of the parent''s verb-object decomposition. Phase responsibility: designated intake custodian. Phase trigger: Parent Activity''s input class is presented for processing and the activity owner is notified of intake. Phase outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
+definition: The bounded unit of work within `processes:activity-ge-operate-zhhypw` (Track Follow-Up Actions) that accept custody of the governance-operating input pack (board and committee cycle schedule, assurance-evidence queue, risk-review calendar, compliance-audit plan) and persist a registered intake manifest binding the inputs to the operating case file.
 belongs_to_activity: processes:activity-ge-operate-zhhypw
-trigger: Parent Activity's input class is presented for processing and the activity owner is notified of intake.
-outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.
+trigger: Custody of the Operate-stage input pack for Track Follow-Up Actions ready for intake; predecessor phase has produced the case file context and intake contract applies.
+outcome: Intake manifest registered and bound to the Track Follow-Up Actions case file; registered intake custodian passes custody to the verification custodian.
 responsibility: designated intake custodian
 boundary:
   inclusions:
-  - Acceptance of the input artifact per parent Activity scope.
-  - Issuance of intake acknowledgment with audit identifiers.
+  - Receipt and registration of the Track Follow-Up Actions input pack against the Operate-stage intake contract.
+  - Binding of the input pack to the Track Follow-Up Actions case file with cryptographic chain-of-custody.
   exclusions:
-  - Validation of the input against specifications (phase 2).
-  - Transformation of the input to the specified form (phase 3).
+  - Re-execution of prior intake phases on rejected or withdrawn cases (no rollback semantics).
+  - Long-term retention of the case file (phase 5).
 evidence:
+- source: UK Companies Act 2006 Part 10 + Part 15
+  claim: directors and accounts provisions binding the operate-phase board-cycle contract and statutory meeting-frequency requirements. Bounded-work evidence for the intake-phase custodian of `processes:activity-ge-operate-zhhypw` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: Sarbanes-Oxley §§301-302
+  claim: audit-committee and certification provisions binding the operate-phase compliance-audit execution and assurance-evidence standards. Bounded-work evidence for the intake-phase custodian of `processes:activity-ge-operate-zhhypw` (CR-BP-L4-03 enrichment).
+  strength: E1
 - source: processes:activity-ge-operate-zhhypw
-  claim: 'Parent Activity cohesion rationale (CR-BP-32 §6): Constituent work shares a single tracking concern (action to closure), one input class (reported follow-up actions), and one output (the action tracking record). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).'
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-03 cell-specific bounded-work prose for this GovernanceAndExistence L4 Task.
   strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
-  strength: E2
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate

@@ -1,25 +1,28 @@
 id: processes:task-ge-build-transform-7ufn3c
 type: Task
 name: Verify Apparatus Readiness Processing
-definition: 'The bounded unit of work within `dea:activity-verify-apparatus-readiness` (Verify Apparatus Readiness) that carries out the transform phase of the parent''s verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
+definition: 'The bounded unit of work within `processes:activity-ge-build-ptnpmg` (Verify Apparatus Readiness) that execute the build: codify the charters and policies, constitute the bodies, establish the operating cycles and reporting lines, establish the risk registers, deploy the monitoring tooling, and produce the build-ready apparatus inventory conforming to the governance-apparatus schema.'
 belongs_to_activity: processes:activity-ge-build-ptnpmg
-trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin.
-outcome: Output produced in the specified form per parent Activity's definition; intermediate artifacts preserved for audit.
+trigger: Verification certificate issued for Verify Apparatus Readiness; transform gate may execute the bounded work and emit the conformant artefact under the Build schema.
+outcome: Bounded-work artefact produced for Verify Apparatus Readiness conforming to the Build schema; processing custodian passes custody to the confirmation custodian.
 responsibility: processing custodian
 boundary:
   inclusions:
-  - Transformation of verified input to the specified output form.
-  - Preservation of intermediate artifacts for audit.
+  - Execution of the Verify Apparatus Readiness bounded work producing the conformant artefact.
+  - Application of the Verify Apparatus Readiness schema and any derived classifications or computations.
   exclusions:
-  - Confirmation that the output meets downstream expectations (phase 4).
-  - Long-term record retention (phase 5).
+  - Long-term retention of the case file (phase 5).
+  - Notification of governing parties outside the notify-list (phase 4).
 evidence:
-- source: processes:activity-ge-build-ptnpmg
-  claim: 'Parent Activity cohesion rationale (CR-BP-32 §6): Constituent work shares a single verification concern (established apparatus versus framework design), one reference class (the risk framework design), and one output (the readiness determination). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).'
-  strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
+- source: OECD Principles of Corporate Governance (G20/OECD 2023)
+  claim: international governance benchmark binding the build-phase structural verification (charter completeness, body constitution) to a recognised framework. Bounded-work evidence for the transform-phase custodian of `processes:activity-ge-build-ptnpmg` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: King IV Report (IoDSA 2016)
+  claim: outcomes-based governance report grounding the build-phase committee-charter completeness rules and operating-cycle design. Bounded-work evidence for the transform-phase custodian of `processes:activity-ge-build-ptnpmg` (CR-BP-L4-03 enrichment).
   strength: E2
+- source: processes:activity-ge-build-ptnpmg
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-03 cell-specific bounded-work prose for this GovernanceAndExistence L4 Task.
+  strength: E3
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate

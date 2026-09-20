@@ -1,25 +1,28 @@
 id: processes:task-ge-build-confirm-mdney5
 type: Task
 name: Codify Policies Confirmation
-definition: 'The bounded unit of work within `dea:activity-codify-policies` (Codify Policies) that carries out the confirm phase of the parent''s verb-object decomposition. Phase responsibility: confirmation custodian. Phase trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued. Phase outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
+definition: The bounded unit of work within `processes:activity-ge-build-f5yeny` (Codify Policies) that reconcile the build-ready apparatus inventory against the governance-framework contract and the committee-charter completeness rules, issue the apparatus-completion confirmation to the governance custodian, and log the confirmation.
 belongs_to_activity: processes:activity-ge-build-f5yeny
-trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued.
-outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.
+trigger: Bounded-work artefact produced for Codify Policies; confirm gate may reconcile against the governing contract and issue the completion confirmation to the governance custodian.
+outcome: Completion confirmation issued for Codify Policies and acknowledged by the governance custodian and any governing-party notify-list; confirmation custodian passes custody to the records custodian.
 responsibility: confirmation custodian
 boundary:
   inclusions:
-  - Reconciliation of output against parent Activity outcome.
-  - Notification of downstream consumers of output availability.
+  - Reconciliation of the Codify Policies artefact against the governing contract and any notify-list requirements.
+  - Issuance of the Codify Policies completion confirmation and acknowledgement logging.
   exclusions:
-  - Long-term record retention (phase 5).
-  - Re-execution of prior phases (no rollback semantics).
+  - Long-term retention of the case file (phase 5).
+  - Re-execution of prior phases on confirmation rejection.
 evidence:
-- source: processes:activity-ge-build-f5yeny
-  claim: 'Parent Activity cohesion rationale (CR-BP-32 §6): Constituent work shares a single codification concern (policy design to operative policy), one reference class (the policy and control design), and one output (codified policies). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).'
-  strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
+- source: OECD Principles of Corporate Governance (G20/OECD 2023)
+  claim: international governance benchmark binding the build-phase structural verification (charter completeness, body constitution) to a recognised framework. Bounded-work evidence for the confirm-phase custodian of `processes:activity-ge-build-f5yeny` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: King IV Report (IoDSA 2016)
+  claim: outcomes-based governance report grounding the build-phase committee-charter completeness rules and operating-cycle design. Bounded-work evidence for the confirm-phase custodian of `processes:activity-ge-build-f5yeny` (CR-BP-L4-03 enrichment).
   strength: E2
+- source: processes:activity-ge-build-f5yeny
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-03 cell-specific bounded-work prose for this GovernanceAndExistence L4 Task.
+  strength: E3
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate

@@ -1,25 +1,28 @@
 id: processes:task-ge-build-intake-f8qffn
 type: Task
 name: Establish Reporting Lines Intake
-definition: 'The bounded unit of work within `dea:activity-establish-reporting-lines` (Establish Reporting Lines) that carries out the intake phase of the parent''s verb-object decomposition. Phase responsibility: designated intake custodian. Phase trigger: Parent Activity''s input class is presented for processing and the activity owner is notified of intake. Phase outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
+definition: The bounded unit of work within `processes:activity-ge-build-tj3qj3` (Establish Reporting Lines) that accept custody of the governance-apparatus input pack (charter drafts, policy drafts, body-constitution proposals, monitoring-tooling specifications) and persist a registered intake manifest binding the build package to the apparatus case file.
 belongs_to_activity: processes:activity-ge-build-tj3qj3
-trigger: Parent Activity's input class is presented for processing and the activity owner is notified of intake.
-outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.
+trigger: Custody of the Build-stage input pack for Establish Reporting Lines ready for intake; predecessor phase has produced the case file context and intake contract applies.
+outcome: Intake manifest registered and bound to the Establish Reporting Lines case file; registered intake custodian passes custody to the verification custodian.
 responsibility: designated intake custodian
 boundary:
   inclusions:
-  - Acceptance of the input artifact per parent Activity scope.
-  - Issuance of intake acknowledgment with audit identifiers.
+  - Receipt and registration of the Establish Reporting Lines input pack against the Build-stage intake contract.
+  - Binding of the input pack to the Establish Reporting Lines case file with cryptographic chain-of-custody.
   exclusions:
-  - Validation of the input against specifications (phase 2).
-  - Transformation of the input to the specified form (phase 3).
+  - Re-execution of prior intake phases on rejected or withdrawn cases (no rollback semantics).
+  - Long-term retention of the case file (phase 5).
 evidence:
-- source: processes:activity-ge-build-tj3qj3
-  claim: 'Parent Activity cohesion rationale (CR-BP-32 §6): Constituent work shares a single reporting concern (apparatus to governance visibility), one reference class (governance integration design), and one output (established reporting lines). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).'
-  strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
+- source: OECD Principles of Corporate Governance (G20/OECD 2023)
+  claim: international governance benchmark binding the build-phase structural verification (charter completeness, body constitution) to a recognised framework. Bounded-work evidence for the intake-phase custodian of `processes:activity-ge-build-tj3qj3` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: King IV Report (IoDSA 2016)
+  claim: outcomes-based governance report grounding the build-phase committee-charter completeness rules and operating-cycle design. Bounded-work evidence for the intake-phase custodian of `processes:activity-ge-build-tj3qj3` (CR-BP-L4-03 enrichment).
   strength: E2
+- source: processes:activity-ge-build-tj3qj3
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-03 cell-specific bounded-work prose for this GovernanceAndExistence L4 Task.
+  strength: E3
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate

@@ -1,25 +1,28 @@
 id: processes:task-ge-operate-verify-jc7qwa
 type: Task
 name: Track Follow-Up Actions Verification
-definition: 'The bounded unit of work within `dea:activity-track-follow-up-actions` (Track Follow-Up Actions) that carries out the verify phase of the parent''s verb-object decomposition. Phase responsibility: verification custodian. Phase trigger: Intake registered (phase 1 complete); verification of input against parent Activity''s specification can begin. Phase outcome: Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
+definition: The bounded unit of work within `processes:activity-ge-operate-zhhypw` (Track Follow-Up Actions) that verify the input pack against the board-cycle contract (statutory meeting-frequency requirements), the assurance-evidence standards (IIA), and the risk-review methodology (ISO 31000), and emit a verification report naming any contract deviations and their remediation.
 belongs_to_activity: processes:activity-ge-operate-zhhypw
-trigger: Intake registered (phase 1 complete); verification of input against parent Activity's specification can begin.
-outcome: Verified that the input meets parent Activity's specification; nonconformities are recorded for rejection or remediation.
+trigger: Intake manifest registered for Track Follow-Up Actions; verification gate may execute the contract and quality-criteria checks against the input pack.
+outcome: Verification certificate issued for Track Follow-Up Actions naming verification methods applied and any deviations remediated; verification custodian passes custody to the processing custodian.
 responsibility: verification custodian
 boundary:
   inclusions:
-  - Comparison of input against parent Activity's specification.
-  - Recording of verification results (conformance / nonconformance).
+  - Execution of the Track Follow-Up Actions contract checks and quality-criteria verification.
+  - Reconciliation of the input pack against the Track Follow-Up Actions verification certificate requirements.
   exclusions:
-  - Transformation of the input (phase 3).
-  - Issuance of downstream confirmation (phase 4).
+  - Long-term retention of the case file (phase 5).
+  - Re-execution of prior phases on rejected or withdrawn cases.
 evidence:
+- source: UK Companies Act 2006 Part 10 + Part 15
+  claim: directors and accounts provisions binding the operate-phase board-cycle contract and statutory meeting-frequency requirements. Bounded-work evidence for the verify-phase custodian of `processes:activity-ge-operate-zhhypw` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: Sarbanes-Oxley §§301-302
+  claim: audit-committee and certification provisions binding the operate-phase compliance-audit execution and assurance-evidence standards. Bounded-work evidence for the verify-phase custodian of `processes:activity-ge-operate-zhhypw` (CR-BP-L4-03 enrichment).
+  strength: E1
 - source: processes:activity-ge-operate-zhhypw
-  claim: 'Parent Activity cohesion rationale (CR-BP-32 §6): Constituent work shares a single tracking concern (action to closure), one input class (reported follow-up actions), and one output (the action tracking record). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).'
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-03 cell-specific bounded-work prose for this GovernanceAndExistence L4 Task.
   strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
-  strength: E2
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
