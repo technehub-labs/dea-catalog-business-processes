@@ -1,35 +1,28 @@
 id: dea:task-deliver-effectiveness-reviews-confirm
 type: Task
 name: Deliver Effectiveness Reviews Confirmation
-definition: 'The bounded unit of work within `dea:activity-deliver-effectiveness-reviews`
-  (Deliver Effectiveness Reviews) that carries out the confirm phase of the parent''s
-  verb-object decomposition. Phase responsibility: confirmation custodian. Phase trigger:
-  Processing complete (phase 3); output available for downstream consumers and confirmation
-  can be issued. Phase outcome: Confirmation issued; downstream consumers notified
-  of output availability; reconciliation against parent Activity outcome complete.'
+definition: The bounded unit of work within `dea:activity-deliver-effectiveness-reviews` (Deliver Effectiveness Reviews) that reconcile the improvement-ready outcomes pack against the internal-audit methodology and the finding-classification contract, issue the improvement-completion confirmation to the governance custodian and the audit committee, and log the confirmation.
 belongs_to_activity: dea:activity-deliver-effectiveness-reviews
-trigger: Processing complete (phase 3); output available for downstream consumers
-  and confirmation can be issued.
-outcome: Confirmation issued; downstream consumers notified of output availability;
-  reconciliation against parent Activity outcome complete.
+trigger: Bounded-work artefact produced for Deliver Effectiveness Reviews; confirm gate may reconcile against the governing contract and issue the completion confirmation to the governance custodian.
+outcome: Completion confirmation issued for Deliver Effectiveness Reviews and acknowledged by the governance custodian and any governing-party notify-list; confirmation custodian passes custody to the records custodian.
 responsibility: confirmation custodian
 boundary:
   inclusions:
-  - Reconciliation of output against parent Activity outcome.
-  - Notification of downstream consumers of output availability.
+  - Reconciliation of the Deliver Effectiveness Reviews artefact against the governing contract and any notify-list requirements.
+  - Issuance of the Deliver Effectiveness Reviews completion confirmation and acknowledgement logging.
   exclusions:
-  - Long-term record retention (phase 5).
-  - Re-execution of prior phases (no rollback semantics).
+  - Long-term retention of the case file (phase 5).
+  - Re-execution of prior phases on confirmation rejection.
 evidence:
-- source: dea:activity-deliver-effectiveness-reviews
-  claim: "Parent Activity cohesion rationale (CR-BP-32 \xA76): Constituent work shares\
-    \ a single delivery concern (review to governance body), one artifact (the effectiveness\
-    \ review document), and a common terminus (delivery to bodies). Cohesion score\
-    \ 8/9 assessed at deposition (CR-BP-32 \xA76)."
-  strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
+- source: IIA IPPF / Global Internal Audit Standards 2024
+  claim: internal-audit professional framework binding the improve-phase finding classification and effectiveness-review methodology. Bounded-work evidence for the confirm-phase custodian of `dea:activity-deliver-effectiveness-reviews` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: ISO 19011:2018 (Audit Programme Guidelines)
+  claim: audit-programme standard grounding the improve-phase measurement methodology and finding-severity scoring. Bounded-work evidence for the confirm-phase custodian of `dea:activity-deliver-effectiveness-reviews` (CR-BP-L4-03 enrichment).
   strength: E2
+- source: dea:activity-deliver-effectiveness-reviews
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-03 cell-specific bounded-work prose for this GovernanceAndExistence L4 Task.
+  strength: E3
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
@@ -65,5 +58,4 @@ metadata:
       '
   - cr: CR-BP-102
     date: '2026-09-19'
-    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline
-      (5-phase verb-object pattern).
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).
