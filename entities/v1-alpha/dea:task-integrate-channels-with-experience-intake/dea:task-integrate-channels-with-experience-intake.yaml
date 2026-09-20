@@ -1,36 +1,28 @@
 id: dea:task-integrate-channels-with-experience-intake
 type: Task
 name: Integrate Channels with Experience Intake
-definition: 'The bounded unit of work within `dea:activity-integrate-channels-with-experience`
-  (Integrate Channels with Experience) that carries out the intake phase of the parent''s
-  verb-object decomposition. Phase responsibility: designated intake custodian. Phase
-  trigger: Parent Activity''s input class is presented for processing and the activity
-  owner is notified of intake. Phase outcome: Intake registered; input artifact preserved
-  with audit identifiers; downstream phases may proceed.'
+definition: The bounded unit of work within `dea:activity-integrate-channels-with-experience` (Integrate Channels with Experience) that accept custody of the acquisition-engine design brief (channel mix, demand-program specification, asset library manifest), confirm the build-package scope with the channel and demand-program owners, and persist a registered intake manifest.
 belongs_to_activity: dea:activity-integrate-channels-with-experience
-trigger: Parent Activity's input class is presented for processing and the activity
-  owner is notified of intake.
-outcome: Intake registered; input artifact preserved with audit identifiers; downstream
-  phases may proceed.
+trigger: Custody of the Build-stage input pack for Integrate Channels with Experience ready for intake; predecessor phase has produced the case file context and intake contract applies.
+outcome: Intake manifest registered and bound to the Integrate Channels with Experience case file; registered intake custodian passes custody to the verification custodian.
 responsibility: designated intake custodian
 boundary:
   inclusions:
-  - Acceptance of the input artifact per parent Activity scope.
-  - Issuance of intake acknowledgment with audit identifiers.
+  - Receipt and registration of the Integrate Channels with Experience input pack against the Build-stage intake contract.
+  - Binding of the input pack to the Integrate Channels with Experience case file with cryptographic chain-of-custody.
   exclusions:
-  - Validation of the input against specifications (phase 2).
-  - Transformation of the input to the specified form (phase 3).
+  - Re-execution of prior intake phases on rejected or withdrawn cases (no rollback semantics).
+  - Long-term retention of the closure case file (phase 5).
 evidence:
-- source: dea:activity-integrate-channels-with-experience
-  claim: "Parent Activity cohesion rationale (CR-BP-32 \xA76): Constituent work shares\
-    \ a single integration concern (infrastructure to designed experience), one reference\
-    \ class (experience and journey designs), and one recognizable portion of the\
-    \ parent outcome (integration with the designed experience). Cohesion score 8/9\
-    \ assessed at deposition (CR-BP-32 \xA76)."
-  strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
+- source: DAMA DMBOK2 §10 (Data Quality)
+  claim: data-quality governance framework informing the build-phase verification step's PII handling and the transform-phase data-quality rules. Bounded-work evidence for the intake-phase custodian of `dea:activity-integrate-channels-with-experience` (CR-BP-L4-02 enrichment).
   strength: E2
+- source: MRC Attribution Standards 2023
+  claim: media-rating-council attribution standard informing the build-phase transform step's attribution-model calibration. Bounded-work evidence for the intake-phase custodian of `dea:activity-integrate-channels-with-experience` (CR-BP-L4-02 enrichment).
+  strength: E2
+- source: dea:activity-integrate-channels-with-experience
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-02 cell-specific bounded-work prose for this PartyAndRelationship L4 Task.
+  strength: E3
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
@@ -68,5 +60,4 @@ metadata:
       '
   - cr: CR-BP-102
     date: '2026-09-19'
-    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline
-      (5-phase verb-object pattern).
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

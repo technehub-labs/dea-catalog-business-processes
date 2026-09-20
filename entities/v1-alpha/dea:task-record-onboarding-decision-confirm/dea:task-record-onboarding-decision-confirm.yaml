@@ -1,36 +1,28 @@
 id: dea:task-record-onboarding-decision-confirm
 type: Task
 name: Record Onboarding Decision Confirmation
-definition: 'The bounded unit of work within `dea:activity-record-onboarding-decision`
-  (Record Onboarding Decision) that carries out the confirm phase of the parent''s
-  verb-object decomposition. Phase responsibility: confirmation custodian. Phase trigger:
-  Processing complete (phase 3); output available for downstream consumers and confirmation
-  can be issued. Phase outcome: Confirmation issued; downstream consumers notified
-  of output availability; reconciliation against parent Activity outcome complete.'
+definition: The bounded unit of work within `dea:activity-record-onboarding-decision` (Record Onboarding Decision) that reconcile the activated-party record against the onboarding-decision criteria and the verification certificate, issue the onboarding confirmation to the relationship custodian and the activated party, and log the confirmation against the case file.
 belongs_to_activity: dea:activity-record-onboarding-decision
-trigger: Processing complete (phase 3); output available for downstream consumers
-  and confirmation can be issued.
-outcome: Confirmation issued; downstream consumers notified of output availability;
-  reconciliation against parent Activity outcome complete.
+trigger: Bounded-work artefact produced for Record Onboarding Decision; confirm gate may reconcile against the governing contract and issue the completion confirmation to the relationship custodian.
+outcome: Completion confirmation issued for Record Onboarding Decision and acknowledged by the relationship custodian and any governing-party notify-list; confirmation custodian passes custody to the records custodian.
 responsibility: confirmation custodian
 boundary:
   inclusions:
-  - Reconciliation of output against parent Activity outcome.
-  - Notification of downstream consumers of output availability.
+  - Reconciliation of the Record Onboarding Decision artefact against the governing contract and any notify-list requirements.
+  - Issuance of the Record Onboarding Decision completion confirmation and acknowledgement logging.
   exclusions:
-  - Long-term record retention (phase 5).
-  - Re-execution of prior phases (no rollback semantics).
+  - Long-term retention of the closure case file (phase 5).
+  - Re-execution of prior phases on confirmation rejection.
 evidence:
+- source: FATF Recommendation 10 (Customer Due Diligence)
+  claim: governing AML/CDD standard for party-activation verification; binds the identity, sanctions, and adverse-media verification step to a regulator-recognised control. Bounded-work evidence for the confirm-phase custodian of `dea:activity-record-onboarding-decision` (CR-BP-L4-02 enrichment).
+  strength: E1
+- source: FinCEN CDD Rule (31 CFR 1010.230)
+  claim: US-specific CDD rule establishing minimum identity-verification procedures that the activate-phase verification step operationalises. Bounded-work evidence for the confirm-phase custodian of `dea:activity-record-onboarding-decision` (CR-BP-L4-02 enrichment).
+  strength: E1
 - source: dea:activity-record-onboarding-decision
-  claim: "Parent Activity cohesion rationale (CR-BP-32 \xA76): Constituent work shares\
-    \ a single decision-recording concern, one input class (the completed identity,\
-    \ ownership, and risk artefacts plus the approver's adjudication), and one output\
-    \ (an evidenced decision record that triggers relationship activation or refusal).\
-    \ Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6)."
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-02 cell-specific bounded-work prose for this PartyAndRelationship L4 Task.
   strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
-  strength: E2
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
@@ -66,5 +58,4 @@ metadata:
       '
   - cr: CR-BP-102
     date: '2026-09-19'
-    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline
-      (5-phase verb-object pattern).
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

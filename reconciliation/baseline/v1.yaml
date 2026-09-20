@@ -202,6 +202,10 @@ records:
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-regulated-strategic-plan-activation/dea:group-regulated-strategic-plan-activation.yaml
     sha256: 460ddce3e9a34194d279709b0e506d87f6202985977146f96f6e5ab86b398dc7
+  - id: dea:group-regulated-strategic-plan-sunset
+    type: ProcessGroup
+    path: entities/v1-alpha/dea:group-regulated-strategic-plan-sunset/dea:group-regulated-strategic-plan-sunset.yaml
+    sha256: 30127692f93ea22c46e24c60f2d083b2d57a7447f85598eabdb281b0e14e546c
   - id: dea:group-regulated-workforce-wind-down
     type: ProcessGroup
     path: entities/v1-alpha/dea:group-regulated-workforce-wind-down/dea:group-regulated-workforce-wind-down.yaml
@@ -430,6 +434,10 @@ records:
     type: ProcessContext
     path: contexts/v1-alpha/dea-pc-sd-operate.yaml
     sha256: cb34149603b29f95b8b0f916eae2161fcaf596ce1f8c1ceba8732aa37373fdcf
+  - id: dea:pc-sd-retire
+    type: ProcessContext
+    path: contexts/v1-alpha/dea-pc-sd-retire.yaml
+    sha256: fa426b436ae8fbfede2185bb5bfb9fe2d5af9bbe1c2b0ee0301cf7a3a01bd0e8
   - id: dea:process-acquire-and-onboard-agents
     type: Process
     path: entities/v1-alpha/dea:process-acquire-and-onboard-agents/dea:process-acquire-and-onboard-agents.yaml
@@ -974,6 +982,10 @@ records:
     type: Process
     path: entities/v1-alpha/dea:process-steer-initiative-portfolio/dea:process-steer-initiative-portfolio.yaml
     sha256: f220fa49da1714260ffc3c8d615a0d6d4b4db995cdd2d3d660b75857cb8577c8
+  - id: dea:process-sunset-regulated-strategic-plan
+    type: Process
+    path: entities/v1-alpha/dea:process-sunset-regulated-strategic-plan/dea:process-sunset-regulated-strategic-plan.yaml
+    sha256: 527eb5f5f94b2f2b8d0ce7e7e45b6c76196433aa67f2f0d25bda9e14aa4acef0
   - id: dea:process-transition-out-of-service
     type: Process
     path: entities/v1-alpha/dea:process-transition-out-of-service/dea:process-transition-out-of-service.yaml

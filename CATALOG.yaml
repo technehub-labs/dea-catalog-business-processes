@@ -4,7 +4,7 @@ catalog:
     candidates: 0
     canonical: 3548
     entities: 3549
-    open_change_requests: 117
+    open_change_requests: 118
     research_files: 329
     retired: 1
   cross_cutting:
@@ -8921,7 +8921,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-allocate-relationship-attention-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-allocate-relationship-attention-confirm/dea:task-allocate-relationship-attention-confirm.yaml
     research_count: 0
@@ -8932,7 +8932,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-allocate-relationship-attention-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-allocate-relationship-attention-intake/dea:task-allocate-relationship-attention-intake.yaml
     research_count: 0
@@ -8943,7 +8943,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-allocate-relationship-attention-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-allocate-relationship-attention-record/dea:task-allocate-relationship-attention-record.yaml
     research_count: 0
@@ -8954,7 +8954,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-allocate-relationship-attention-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-allocate-relationship-attention-transform/dea:task-allocate-relationship-attention-transform.yaml
     research_count: 0
@@ -8965,7 +8965,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-allocate-relationship-attention-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-allocate-relationship-attention-verify/dea:task-allocate-relationship-attention-verify.yaml
     research_count: 0
@@ -9801,7 +9801,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-articulate-supply-paths-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-articulate-supply-paths-confirm/dea:task-articulate-supply-paths-confirm.yaml
     research_count: 0
@@ -9812,7 +9812,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-articulate-supply-paths-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-articulate-supply-paths-intake/dea:task-articulate-supply-paths-intake.yaml
     research_count: 0
@@ -9823,7 +9823,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-articulate-supply-paths-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-articulate-supply-paths-record/dea:task-articulate-supply-paths-record.yaml
     research_count: 0
@@ -9834,7 +9834,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-articulate-supply-paths-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-articulate-supply-paths-transform/dea:task-articulate-supply-paths-transform.yaml
     research_count: 0
@@ -9845,7 +9845,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-articulate-supply-paths-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-articulate-supply-paths-verify/dea:task-articulate-supply-paths-verify.yaml
     research_count: 0
@@ -9911,7 +9911,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-articulate-value-exchange-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-articulate-value-exchange-confirm/dea:task-articulate-value-exchange-confirm.yaml
     research_count: 0
@@ -9922,7 +9922,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-articulate-value-exchange-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-articulate-value-exchange-intake/dea:task-articulate-value-exchange-intake.yaml
     research_count: 0
@@ -9933,7 +9933,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-articulate-value-exchange-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-articulate-value-exchange-record/dea:task-articulate-value-exchange-record.yaml
     research_count: 0
@@ -9944,7 +9944,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-articulate-value-exchange-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-articulate-value-exchange-transform/dea:task-articulate-value-exchange-transform.yaml
     research_count: 0
@@ -9955,7 +9955,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-articulate-value-exchange-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-articulate-value-exchange-verify/dea:task-articulate-value-exchange-verify.yaml
     research_count: 0
@@ -10571,7 +10571,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-assess-churn-risk-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-assess-churn-risk-confirm/dea:task-assess-churn-risk-confirm.yaml
     research_count: 0
@@ -10582,7 +10582,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-assess-churn-risk-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-assess-churn-risk-intake/dea:task-assess-churn-risk-intake.yaml
     research_count: 0
@@ -10593,7 +10593,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-assess-churn-risk-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-assess-churn-risk-record/dea:task-assess-churn-risk-record.yaml
     research_count: 0
@@ -10604,7 +10604,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-assess-churn-risk-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-assess-churn-risk-transform/dea:task-assess-churn-risk-transform.yaml
     research_count: 0
@@ -10615,7 +10615,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-assess-churn-risk-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-assess-churn-risk-verify/dea:task-assess-churn-risk-verify.yaml
     research_count: 0
@@ -12881,7 +12881,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-build-acquisition-engines-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-build-acquisition-engines-confirm/dea:task-build-acquisition-engines-confirm.yaml
     research_count: 0
@@ -12892,7 +12892,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-build-acquisition-engines-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-build-acquisition-engines-intake/dea:task-build-acquisition-engines-intake.yaml
     research_count: 0
@@ -12903,7 +12903,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-build-acquisition-engines-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-build-acquisition-engines-record/dea:task-build-acquisition-engines-record.yaml
     research_count: 0
@@ -12914,7 +12914,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-build-acquisition-engines-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-build-acquisition-engines-transform/dea:task-build-acquisition-engines-transform.yaml
     research_count: 0
@@ -12925,7 +12925,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-build-acquisition-engines-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-build-acquisition-engines-verify/dea:task-build-acquisition-engines-verify.yaml
     research_count: 0
@@ -12991,7 +12991,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-build-demand-program-assets-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-build-demand-program-assets-confirm/dea:task-build-demand-program-assets-confirm.yaml
     research_count: 0
@@ -13002,7 +13002,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-build-demand-program-assets-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-build-demand-program-assets-intake/dea:task-build-demand-program-assets-intake.yaml
     research_count: 0
@@ -13013,7 +13013,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-build-demand-program-assets-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-build-demand-program-assets-record/dea:task-build-demand-program-assets-record.yaml
     research_count: 0
@@ -13024,7 +13024,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-build-demand-program-assets-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-build-demand-program-assets-transform/dea:task-build-demand-program-assets-transform.yaml
     research_count: 0
@@ -13035,7 +13035,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-build-demand-program-assets-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-build-demand-program-assets-verify/dea:task-build-demand-program-assets-verify.yaml
     research_count: 0
@@ -13101,7 +13101,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-calibrate-demand-programs-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-calibrate-demand-programs-confirm/dea:task-calibrate-demand-programs-confirm.yaml
     research_count: 0
@@ -13112,7 +13112,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-calibrate-demand-programs-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-calibrate-demand-programs-intake/dea:task-calibrate-demand-programs-intake.yaml
     research_count: 0
@@ -13123,7 +13123,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-calibrate-demand-programs-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-calibrate-demand-programs-record/dea:task-calibrate-demand-programs-record.yaml
     research_count: 0
@@ -13134,7 +13134,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-calibrate-demand-programs-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-calibrate-demand-programs-transform/dea:task-calibrate-demand-programs-transform.yaml
     research_count: 0
@@ -13145,7 +13145,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-calibrate-demand-programs-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-calibrate-demand-programs-verify/dea:task-calibrate-demand-programs-verify.yaml
     research_count: 0
@@ -13541,7 +13541,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-classify-party-risk-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-classify-party-risk-confirm/dea:task-classify-party-risk-confirm.yaml
     research_count: 0
@@ -13552,7 +13552,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-classify-party-risk-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-classify-party-risk-intake/dea:task-classify-party-risk-intake.yaml
     research_count: 0
@@ -13563,7 +13563,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-classify-party-risk-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-classify-party-risk-record/dea:task-classify-party-risk-record.yaml
     research_count: 0
@@ -13574,7 +13574,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-classify-party-risk-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-classify-party-risk-transform/dea:task-classify-party-risk-transform.yaml
     research_count: 0
@@ -13585,7 +13585,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-classify-party-risk-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-classify-party-risk-verify/dea:task-classify-party-risk-verify.yaml
     research_count: 0
@@ -13816,7 +13816,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-collect-customer-feedback-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-collect-customer-feedback-confirm/dea:task-collect-customer-feedback-confirm.yaml
     research_count: 0
@@ -13827,7 +13827,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-collect-customer-feedback-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-collect-customer-feedback-intake/dea:task-collect-customer-feedback-intake.yaml
     research_count: 0
@@ -13838,7 +13838,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-collect-customer-feedback-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-collect-customer-feedback-record/dea:task-collect-customer-feedback-record.yaml
     research_count: 0
@@ -13849,7 +13849,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-collect-customer-feedback-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-collect-customer-feedback-transform/dea:task-collect-customer-feedback-transform.yaml
     research_count: 0
@@ -13860,7 +13860,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-collect-customer-feedback-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-collect-customer-feedback-verify/dea:task-collect-customer-feedback-verify.yaml
     research_count: 0
@@ -14476,7 +14476,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-commit-customer-strategy-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-commit-customer-strategy-confirm/dea:task-commit-customer-strategy-confirm.yaml
     research_count: 0
@@ -14487,7 +14487,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-commit-customer-strategy-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-commit-customer-strategy-intake/dea:task-commit-customer-strategy-intake.yaml
     research_count: 0
@@ -14498,7 +14498,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-commit-customer-strategy-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-commit-customer-strategy-record/dea:task-commit-customer-strategy-record.yaml
     research_count: 0
@@ -14509,7 +14509,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-commit-customer-strategy-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-commit-customer-strategy-transform/dea:task-commit-customer-strategy-transform.yaml
     research_count: 0
@@ -14520,7 +14520,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-commit-customer-strategy-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-commit-customer-strategy-verify/dea:task-commit-customer-strategy-verify.yaml
     research_count: 0
@@ -14641,7 +14641,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-commit-demand-model-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-commit-demand-model-confirm/dea:task-commit-demand-model-confirm.yaml
     research_count: 0
@@ -14652,7 +14652,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-commit-demand-model-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-commit-demand-model-intake/dea:task-commit-demand-model-intake.yaml
     research_count: 0
@@ -14663,7 +14663,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-commit-demand-model-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-commit-demand-model-record/dea:task-commit-demand-model-record.yaml
     research_count: 0
@@ -14674,7 +14674,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-commit-demand-model-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-commit-demand-model-transform/dea:task-commit-demand-model-transform.yaml
     research_count: 0
@@ -14685,7 +14685,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-commit-demand-model-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-commit-demand-model-verify/dea:task-commit-demand-model-verify.yaml
     research_count: 0
@@ -15301,7 +15301,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-commit-journey-design-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-commit-journey-design-confirm/dea:task-commit-journey-design-confirm.yaml
     research_count: 0
@@ -15312,7 +15312,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-commit-journey-design-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-commit-journey-design-intake/dea:task-commit-journey-design-intake.yaml
     research_count: 0
@@ -15323,7 +15323,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-commit-journey-design-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-commit-journey-design-record/dea:task-commit-journey-design-record.yaml
     research_count: 0
@@ -15334,7 +15334,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-commit-journey-design-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-commit-journey-design-transform/dea:task-commit-journey-design-transform.yaml
     research_count: 0
@@ -15345,7 +15345,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-commit-journey-design-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-commit-journey-design-verify/dea:task-commit-journey-design-verify.yaml
     research_count: 0
@@ -15466,7 +15466,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-commit-market-demand-thesis-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-commit-market-demand-thesis-confirm/dea:task-commit-market-demand-thesis-confirm.yaml
     research_count: 0
@@ -15477,7 +15477,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-commit-market-demand-thesis-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-commit-market-demand-thesis-intake/dea:task-commit-market-demand-thesis-intake.yaml
     research_count: 0
@@ -15488,7 +15488,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-commit-market-demand-thesis-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-commit-market-demand-thesis-record/dea:task-commit-market-demand-thesis-record.yaml
     research_count: 0
@@ -15499,7 +15499,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-commit-market-demand-thesis-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-commit-market-demand-thesis-transform/dea:task-commit-market-demand-thesis-transform.yaml
     research_count: 0
@@ -15510,7 +15510,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-commit-market-demand-thesis-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-commit-market-demand-thesis-verify/dea:task-commit-market-demand-thesis-verify.yaml
     research_count: 0
@@ -18106,7 +18106,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-conduct-relationship-reviews-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-conduct-relationship-reviews-confirm/dea:task-conduct-relationship-reviews-confirm.yaml
     research_count: 0
@@ -18117,7 +18117,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-conduct-relationship-reviews-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-conduct-relationship-reviews-intake/dea:task-conduct-relationship-reviews-intake.yaml
     research_count: 0
@@ -18128,7 +18128,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-conduct-relationship-reviews-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-conduct-relationship-reviews-record/dea:task-conduct-relationship-reviews-record.yaml
     research_count: 0
@@ -18139,7 +18139,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-conduct-relationship-reviews-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-conduct-relationship-reviews-transform/dea:task-conduct-relationship-reviews-transform.yaml
     research_count: 0
@@ -18150,7 +18150,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-conduct-relationship-reviews-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-conduct-relationship-reviews-verify/dea:task-conduct-relationship-reviews-verify.yaml
     research_count: 0
@@ -18931,7 +18931,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-coordinate-renewals-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-coordinate-renewals-confirm/dea:task-coordinate-renewals-confirm.yaml
     research_count: 0
@@ -18942,7 +18942,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-coordinate-renewals-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-coordinate-renewals-intake/dea:task-coordinate-renewals-intake.yaml
     research_count: 0
@@ -18953,7 +18953,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-coordinate-renewals-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-coordinate-renewals-record/dea:task-coordinate-renewals-record.yaml
     research_count: 0
@@ -18964,7 +18964,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-coordinate-renewals-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-coordinate-renewals-transform/dea:task-coordinate-renewals-transform.yaml
     research_count: 0
@@ -18975,7 +18975,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-coordinate-renewals-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-coordinate-renewals-verify/dea:task-coordinate-renewals-verify.yaml
     research_count: 0
@@ -19261,7 +19261,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-define-demand-shaping-levers-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-define-demand-shaping-levers-confirm/dea:task-define-demand-shaping-levers-confirm.yaml
     research_count: 0
@@ -19272,7 +19272,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-define-demand-shaping-levers-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-define-demand-shaping-levers-intake/dea:task-define-demand-shaping-levers-intake.yaml
     research_count: 0
@@ -19283,7 +19283,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-define-demand-shaping-levers-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-define-demand-shaping-levers-record/dea:task-define-demand-shaping-levers-record.yaml
     research_count: 0
@@ -19294,7 +19294,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-define-demand-shaping-levers-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-define-demand-shaping-levers-transform/dea:task-define-demand-shaping-levers-transform.yaml
     research_count: 0
@@ -19305,7 +19305,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-define-demand-shaping-levers-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-define-demand-shaping-levers-verify/dea:task-define-demand-shaping-levers-verify.yaml
     research_count: 0
@@ -19371,7 +19371,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-define-experience-principles-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-define-experience-principles-confirm/dea:task-define-experience-principles-confirm.yaml
     research_count: 0
@@ -19382,7 +19382,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-define-experience-principles-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-define-experience-principles-intake/dea:task-define-experience-principles-intake.yaml
     research_count: 0
@@ -19393,7 +19393,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-define-experience-principles-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-define-experience-principles-record/dea:task-define-experience-principles-record.yaml
     research_count: 0
@@ -19404,7 +19404,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-define-experience-principles-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-define-experience-principles-transform/dea:task-define-experience-principles-transform.yaml
     research_count: 0
@@ -19415,7 +19415,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-define-experience-principles-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-define-experience-principles-verify/dea:task-define-experience-principles-verify.yaml
     research_count: 0
@@ -21186,7 +21186,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-design-hypothesis-tests-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-design-hypothesis-tests-confirm/dea:task-design-hypothesis-tests-confirm.yaml
     research_count: 0
@@ -21197,7 +21197,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-design-hypothesis-tests-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-design-hypothesis-tests-intake/dea:task-design-hypothesis-tests-intake.yaml
     research_count: 0
@@ -21208,7 +21208,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-design-hypothesis-tests-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-design-hypothesis-tests-record/dea:task-design-hypothesis-tests-record.yaml
     research_count: 0
@@ -21219,7 +21219,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-design-hypothesis-tests-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-design-hypothesis-tests-transform/dea:task-design-hypothesis-tests-transform.yaml
     research_count: 0
@@ -21230,7 +21230,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-design-hypothesis-tests-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-design-hypothesis-tests-verify/dea:task-design-hypothesis-tests-verify.yaml
     research_count: 0
@@ -21296,7 +21296,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-design-journey-handoffs-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-design-journey-handoffs-confirm/dea:task-design-journey-handoffs-confirm.yaml
     research_count: 0
@@ -21307,7 +21307,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-design-journey-handoffs-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-design-journey-handoffs-intake/dea:task-design-journey-handoffs-intake.yaml
     research_count: 0
@@ -21318,7 +21318,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-design-journey-handoffs-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-design-journey-handoffs-record/dea:task-design-journey-handoffs-record.yaml
     research_count: 0
@@ -21329,7 +21329,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-design-journey-handoffs-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-design-journey-handoffs-transform/dea:task-design-journey-handoffs-transform.yaml
     research_count: 0
@@ -21340,7 +21340,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-design-journey-handoffs-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-design-journey-handoffs-verify/dea:task-design-journey-handoffs-verify.yaml
     research_count: 0
@@ -22066,7 +22066,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-design-touchpoints-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-design-touchpoints-confirm/dea:task-design-touchpoints-confirm.yaml
     research_count: 0
@@ -22077,7 +22077,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-design-touchpoints-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-design-touchpoints-intake/dea:task-design-touchpoints-intake.yaml
     research_count: 0
@@ -22088,7 +22088,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-design-touchpoints-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-design-touchpoints-record/dea:task-design-touchpoints-record.yaml
     research_count: 0
@@ -22099,7 +22099,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-design-touchpoints-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-design-touchpoints-transform/dea:task-design-touchpoints-transform.yaml
     research_count: 0
@@ -22110,7 +22110,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-design-touchpoints-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-design-touchpoints-verify/dea:task-design-touchpoints-verify.yaml
     research_count: 0
@@ -23881,7 +23881,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-execute-evidenced-closure-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-execute-evidenced-closure-confirm/dea:task-execute-evidenced-closure-confirm.yaml
     research_count: 0
@@ -23892,7 +23892,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-execute-evidenced-closure-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-execute-evidenced-closure-intake/dea:task-execute-evidenced-closure-intake.yaml
     research_count: 0
@@ -23903,7 +23903,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-execute-evidenced-closure-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-execute-evidenced-closure-record/dea:task-execute-evidenced-closure-record.yaml
     research_count: 0
@@ -23914,7 +23914,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-execute-evidenced-closure-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-execute-evidenced-closure-transform/dea:task-execute-evidenced-closure-transform.yaml
     research_count: 0
@@ -23925,7 +23925,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-execute-evidenced-closure-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-execute-evidenced-closure-verify/dea:task-execute-evidenced-closure-verify.yaml
     research_count: 0
@@ -24651,7 +24651,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-execute-retention-actions-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-execute-retention-actions-confirm/dea:task-execute-retention-actions-confirm.yaml
     research_count: 0
@@ -24662,7 +24662,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-execute-retention-actions-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-execute-retention-actions-intake/dea:task-execute-retention-actions-intake.yaml
     research_count: 0
@@ -24673,7 +24673,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-execute-retention-actions-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-execute-retention-actions-record/dea:task-execute-retention-actions-record.yaml
     research_count: 0
@@ -24684,7 +24684,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-execute-retention-actions-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-execute-retention-actions-transform/dea:task-execute-retention-actions-transform.yaml
     research_count: 0
@@ -24695,7 +24695,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-execute-retention-actions-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-execute-retention-actions-verify/dea:task-execute-retention-actions-verify.yaml
     research_count: 0
@@ -25916,7 +25916,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-formulate-demand-hypotheses-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-formulate-demand-hypotheses-confirm/dea:task-formulate-demand-hypotheses-confirm.yaml
     research_count: 0
@@ -25927,7 +25927,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-formulate-demand-hypotheses-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-formulate-demand-hypotheses-intake/dea:task-formulate-demand-hypotheses-intake.yaml
     research_count: 0
@@ -25938,7 +25938,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-formulate-demand-hypotheses-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-formulate-demand-hypotheses-record/dea:task-formulate-demand-hypotheses-record.yaml
     research_count: 0
@@ -25949,7 +25949,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-formulate-demand-hypotheses-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-formulate-demand-hypotheses-transform/dea:task-formulate-demand-hypotheses-transform.yaml
     research_count: 0
@@ -25960,7 +25960,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-formulate-demand-hypotheses-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-formulate-demand-hypotheses-verify/dea:task-formulate-demand-hypotheses-verify.yaml
     research_count: 0
@@ -25971,7 +25971,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-formulate-demand-thesis-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-formulate-demand-thesis-confirm/dea:task-formulate-demand-thesis-confirm.yaml
     research_count: 0
@@ -25982,7 +25982,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-formulate-demand-thesis-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-formulate-demand-thesis-intake/dea:task-formulate-demand-thesis-intake.yaml
     research_count: 0
@@ -25993,7 +25993,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-formulate-demand-thesis-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-formulate-demand-thesis-record/dea:task-formulate-demand-thesis-record.yaml
     research_count: 0
@@ -26004,7 +26004,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-formulate-demand-thesis-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-formulate-demand-thesis-transform/dea:task-formulate-demand-thesis-transform.yaml
     research_count: 0
@@ -26015,7 +26015,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-formulate-demand-thesis-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-formulate-demand-thesis-verify/dea:task-formulate-demand-thesis-verify.yaml
     research_count: 0
@@ -26906,7 +26906,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-frame-segment-thesis-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-frame-segment-thesis-confirm/dea:task-frame-segment-thesis-confirm.yaml
     research_count: 0
@@ -26917,7 +26917,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-frame-segment-thesis-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-frame-segment-thesis-intake/dea:task-frame-segment-thesis-intake.yaml
     research_count: 0
@@ -26928,7 +26928,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-frame-segment-thesis-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-frame-segment-thesis-record/dea:task-frame-segment-thesis-record.yaml
     research_count: 0
@@ -26939,7 +26939,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-frame-segment-thesis-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-frame-segment-thesis-transform/dea:task-frame-segment-thesis-transform.yaml
     research_count: 0
@@ -26950,7 +26950,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-frame-segment-thesis-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-frame-segment-thesis-verify/dea:task-frame-segment-thesis-verify.yaml
     research_count: 0
@@ -27236,7 +27236,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-handle-relationship-escalations-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-handle-relationship-escalations-confirm/dea:task-handle-relationship-escalations-confirm.yaml
     research_count: 0
@@ -27247,7 +27247,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-handle-relationship-escalations-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-handle-relationship-escalations-intake/dea:task-handle-relationship-escalations-intake.yaml
     research_count: 0
@@ -27258,7 +27258,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-handle-relationship-escalations-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-handle-relationship-escalations-record/dea:task-handle-relationship-escalations-record.yaml
     research_count: 0
@@ -27269,7 +27269,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-handle-relationship-escalations-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-handle-relationship-escalations-transform/dea:task-handle-relationship-escalations-transform.yaml
     research_count: 0
@@ -27280,7 +27280,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-handle-relationship-escalations-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-handle-relationship-escalations-verify/dea:task-handle-relationship-escalations-verify.yaml
     research_count: 0
@@ -27566,7 +27566,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-identify-moments-of-truth-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-identify-moments-of-truth-confirm/dea:task-identify-moments-of-truth-confirm.yaml
     research_count: 0
@@ -27577,7 +27577,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-identify-moments-of-truth-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-identify-moments-of-truth-intake/dea:task-identify-moments-of-truth-intake.yaml
     research_count: 0
@@ -27588,7 +27588,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-identify-moments-of-truth-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-identify-moments-of-truth-record/dea:task-identify-moments-of-truth-record.yaml
     research_count: 0
@@ -27599,7 +27599,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-identify-moments-of-truth-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-identify-moments-of-truth-transform/dea:task-identify-moments-of-truth-transform.yaml
     research_count: 0
@@ -27610,7 +27610,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-identify-moments-of-truth-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-identify-moments-of-truth-verify/dea:task-identify-moments-of-truth-verify.yaml
     research_count: 0
@@ -28226,7 +28226,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-integrate-channels-with-experience-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-integrate-channels-with-experience-confirm/dea:task-integrate-channels-with-experience-confirm.yaml
     research_count: 0
@@ -28237,7 +28237,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-integrate-channels-with-experience-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-integrate-channels-with-experience-intake/dea:task-integrate-channels-with-experience-intake.yaml
     research_count: 0
@@ -28248,7 +28248,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-integrate-channels-with-experience-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-integrate-channels-with-experience-record/dea:task-integrate-channels-with-experience-record.yaml
     research_count: 0
@@ -28259,7 +28259,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-integrate-channels-with-experience-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-integrate-channels-with-experience-transform/dea:task-integrate-channels-with-experience-transform.yaml
     research_count: 0
@@ -28270,7 +28270,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-integrate-channels-with-experience-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-integrate-channels-with-experience-verify/dea:task-integrate-channels-with-experience-verify.yaml
     research_count: 0
@@ -28336,7 +28336,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-integrate-demand-engine-with-channels-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-integrate-demand-engine-with-channels-confirm/dea:task-integrate-demand-engine-with-channels-confirm.yaml
     research_count: 0
@@ -28347,7 +28347,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-integrate-demand-engine-with-channels-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-integrate-demand-engine-with-channels-intake/dea:task-integrate-demand-engine-with-channels-intake.yaml
     research_count: 0
@@ -28358,7 +28358,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-integrate-demand-engine-with-channels-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-integrate-demand-engine-with-channels-record/dea:task-integrate-demand-engine-with-channels-record.yaml
     research_count: 0
@@ -28369,7 +28369,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-integrate-demand-engine-with-channels-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-integrate-demand-engine-with-channels-transform/dea:task-integrate-demand-engine-with-channels-transform.yaml
     research_count: 0
@@ -28380,7 +28380,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-integrate-demand-engine-with-channels-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-integrate-demand-engine-with-channels-verify/dea:task-integrate-demand-engine-with-channels-verify.yaml
     research_count: 0
@@ -29546,7 +29546,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-maintain-win-back-pipeline-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-maintain-win-back-pipeline-confirm/dea:task-maintain-win-back-pipeline-confirm.yaml
     research_count: 0
@@ -29557,7 +29557,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-maintain-win-back-pipeline-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-maintain-win-back-pipeline-intake/dea:task-maintain-win-back-pipeline-intake.yaml
     research_count: 0
@@ -29568,7 +29568,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-maintain-win-back-pipeline-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-maintain-win-back-pipeline-record/dea:task-maintain-win-back-pipeline-record.yaml
     research_count: 0
@@ -29579,7 +29579,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-maintain-win-back-pipeline-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-maintain-win-back-pipeline-transform/dea:task-maintain-win-back-pipeline-transform.yaml
     research_count: 0
@@ -29590,7 +29590,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-maintain-win-back-pipeline-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-maintain-win-back-pipeline-verify/dea:task-maintain-win-back-pipeline-verify.yaml
     research_count: 0
@@ -29821,7 +29821,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-map-journey-stages-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-map-journey-stages-confirm/dea:task-map-journey-stages-confirm.yaml
     research_count: 0
@@ -29832,7 +29832,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-map-journey-stages-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-map-journey-stages-intake/dea:task-map-journey-stages-intake.yaml
     research_count: 0
@@ -29843,7 +29843,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-map-journey-stages-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-map-journey-stages-record/dea:task-map-journey-stages-record.yaml
     research_count: 0
@@ -29854,7 +29854,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-map-journey-stages-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-map-journey-stages-transform/dea:task-map-journey-stages-transform.yaml
     research_count: 0
@@ -29865,7 +29865,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-map-journey-stages-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-map-journey-stages-verify/dea:task-map-journey-stages-verify.yaml
     research_count: 0
@@ -30481,7 +30481,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-model-capacity-assumptions-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-model-capacity-assumptions-confirm/dea:task-model-capacity-assumptions-confirm.yaml
     research_count: 0
@@ -30492,7 +30492,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-model-capacity-assumptions-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-model-capacity-assumptions-intake/dea:task-model-capacity-assumptions-intake.yaml
     research_count: 0
@@ -30503,7 +30503,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-model-capacity-assumptions-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-model-capacity-assumptions-record/dea:task-model-capacity-assumptions-record.yaml
     research_count: 0
@@ -30514,7 +30514,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-model-capacity-assumptions-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-model-capacity-assumptions-transform/dea:task-model-capacity-assumptions-transform.yaml
     research_count: 0
@@ -30525,7 +30525,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-model-capacity-assumptions-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-model-capacity-assumptions-verify/dea:task-model-capacity-assumptions-verify.yaml
     research_count: 0
@@ -31636,7 +31636,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-plan-relationship-close-out-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-plan-relationship-close-out-confirm/dea:task-plan-relationship-close-out-confirm.yaml
     research_count: 0
@@ -31647,7 +31647,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-plan-relationship-close-out-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-plan-relationship-close-out-intake/dea:task-plan-relationship-close-out-intake.yaml
     research_count: 0
@@ -31658,7 +31658,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-plan-relationship-close-out-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-plan-relationship-close-out-record/dea:task-plan-relationship-close-out-record.yaml
     research_count: 0
@@ -31669,7 +31669,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-plan-relationship-close-out-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-plan-relationship-close-out-transform/dea:task-plan-relationship-close-out-transform.yaml
     research_count: 0
@@ -31680,7 +31680,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-plan-relationship-close-out-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-plan-relationship-close-out-verify/dea:task-plan-relationship-close-out-verify.yaml
     research_count: 0
@@ -32681,7 +32681,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-provision-channel-infrastructure-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-provision-channel-infrastructure-confirm/dea:task-provision-channel-infrastructure-confirm.yaml
     research_count: 0
@@ -32692,7 +32692,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-provision-channel-infrastructure-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-provision-channel-infrastructure-intake/dea:task-provision-channel-infrastructure-intake.yaml
     research_count: 0
@@ -32703,7 +32703,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-provision-channel-infrastructure-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-provision-channel-infrastructure-record/dea:task-provision-channel-infrastructure-record.yaml
     research_count: 0
@@ -32714,7 +32714,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-provision-channel-infrastructure-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-provision-channel-infrastructure-transform/dea:task-provision-channel-infrastructure-transform.yaml
     research_count: 0
@@ -32725,7 +32725,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-provision-channel-infrastructure-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-provision-channel-infrastructure-verify/dea:task-provision-channel-infrastructure-verify.yaml
     research_count: 0
@@ -33341,7 +33341,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-record-onboarding-decision-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-record-onboarding-decision-confirm/dea:task-record-onboarding-decision-confirm.yaml
     research_count: 0
@@ -33352,7 +33352,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-record-onboarding-decision-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-record-onboarding-decision-intake/dea:task-record-onboarding-decision-intake.yaml
     research_count: 0
@@ -33363,7 +33363,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-record-onboarding-decision-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-record-onboarding-decision-record/dea:task-record-onboarding-decision-record.yaml
     research_count: 0
@@ -33374,7 +33374,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-record-onboarding-decision-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-record-onboarding-decision-transform/dea:task-record-onboarding-decision-transform.yaml
     research_count: 0
@@ -33385,7 +33385,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-record-onboarding-decision-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-record-onboarding-decision-verify/dea:task-record-onboarding-decision-verify.yaml
     research_count: 0
@@ -34331,7 +34331,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-resolve-beneficial-ownership-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-resolve-beneficial-ownership-confirm/dea:task-resolve-beneficial-ownership-confirm.yaml
     research_count: 0
@@ -34342,7 +34342,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-resolve-beneficial-ownership-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-resolve-beneficial-ownership-intake/dea:task-resolve-beneficial-ownership-intake.yaml
     research_count: 0
@@ -34353,7 +34353,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-resolve-beneficial-ownership-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-resolve-beneficial-ownership-record/dea:task-resolve-beneficial-ownership-record.yaml
     research_count: 0
@@ -34364,7 +34364,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-resolve-beneficial-ownership-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-resolve-beneficial-ownership-transform/dea:task-resolve-beneficial-ownership-transform.yaml
     research_count: 0
@@ -34375,7 +34375,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-resolve-beneficial-ownership-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-resolve-beneficial-ownership-verify/dea:task-resolve-beneficial-ownership-verify.yaml
     research_count: 0
@@ -34496,7 +34496,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-resolve-records-and-rights-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-resolve-records-and-rights-confirm/dea:task-resolve-records-and-rights-confirm.yaml
     research_count: 0
@@ -34507,7 +34507,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-resolve-records-and-rights-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-resolve-records-and-rights-intake/dea:task-resolve-records-and-rights-intake.yaml
     research_count: 0
@@ -34518,7 +34518,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-resolve-records-and-rights-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-resolve-records-and-rights-record/dea:task-resolve-records-and-rights-record.yaml
     research_count: 0
@@ -34529,7 +34529,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-resolve-records-and-rights-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-resolve-records-and-rights-transform/dea:task-resolve-records-and-rights-transform.yaml
     research_count: 0
@@ -34540,7 +34540,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-resolve-records-and-rights-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-resolve-records-and-rights-verify/dea:task-resolve-records-and-rights-verify.yaml
     research_count: 0
@@ -35541,7 +35541,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-scan-market-and-segments-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-scan-market-and-segments-confirm/dea:task-scan-market-and-segments-confirm.yaml
     research_count: 0
@@ -35552,7 +35552,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-scan-market-and-segments-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-scan-market-and-segments-intake/dea:task-scan-market-and-segments-intake.yaml
     research_count: 0
@@ -35563,7 +35563,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-scan-market-and-segments-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-scan-market-and-segments-record/dea:task-scan-market-and-segments-record.yaml
     research_count: 0
@@ -35574,7 +35574,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-scan-market-and-segments-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-scan-market-and-segments-transform/dea:task-scan-market-and-segments-transform.yaml
     research_count: 0
@@ -35585,7 +35585,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-scan-market-and-segments-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-scan-market-and-segments-verify/dea:task-scan-market-and-segments-verify.yaml
     research_count: 0
@@ -36586,7 +36586,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-set-experience-quality-criteria-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-set-experience-quality-criteria-confirm/dea:task-set-experience-quality-criteria-confirm.yaml
     research_count: 0
@@ -36597,7 +36597,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-set-experience-quality-criteria-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-set-experience-quality-criteria-intake/dea:task-set-experience-quality-criteria-intake.yaml
     research_count: 0
@@ -36608,7 +36608,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-set-experience-quality-criteria-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-set-experience-quality-criteria-record/dea:task-set-experience-quality-criteria-record.yaml
     research_count: 0
@@ -36619,7 +36619,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-set-experience-quality-criteria-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-set-experience-quality-criteria-transform/dea:task-set-experience-quality-criteria-transform.yaml
     research_count: 0
@@ -36630,7 +36630,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-set-experience-quality-criteria-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-set-experience-quality-criteria-verify/dea:task-set-experience-quality-criteria-verify.yaml
     research_count: 0
@@ -36751,7 +36751,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-settle-outstanding-obligations-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-settle-outstanding-obligations-confirm/dea:task-settle-outstanding-obligations-confirm.yaml
     research_count: 0
@@ -36762,7 +36762,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-settle-outstanding-obligations-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-settle-outstanding-obligations-intake/dea:task-settle-outstanding-obligations-intake.yaml
     research_count: 0
@@ -36773,7 +36773,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-settle-outstanding-obligations-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-settle-outstanding-obligations-record/dea:task-settle-outstanding-obligations-record.yaml
     research_count: 0
@@ -36784,7 +36784,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-settle-outstanding-obligations-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-settle-outstanding-obligations-transform/dea:task-settle-outstanding-obligations-transform.yaml
     research_count: 0
@@ -36795,7 +36795,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-settle-outstanding-obligations-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-settle-outstanding-obligations-verify/dea:task-settle-outstanding-obligations-verify.yaml
     research_count: 0
@@ -36916,7 +36916,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-specify-interaction-patterns-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-specify-interaction-patterns-confirm/dea:task-specify-interaction-patterns-confirm.yaml
     research_count: 0
@@ -36927,7 +36927,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-specify-interaction-patterns-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-specify-interaction-patterns-intake/dea:task-specify-interaction-patterns-intake.yaml
     research_count: 0
@@ -36938,7 +36938,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-specify-interaction-patterns-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-specify-interaction-patterns-record/dea:task-specify-interaction-patterns-record.yaml
     research_count: 0
@@ -36949,7 +36949,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-specify-interaction-patterns-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-specify-interaction-patterns-transform/dea:task-specify-interaction-patterns-transform.yaml
     research_count: 0
@@ -36960,7 +36960,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-specify-interaction-patterns-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-specify-interaction-patterns-verify/dea:task-specify-interaction-patterns-verify.yaml
     research_count: 0
@@ -38126,7 +38126,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-verify-acquisition-readiness-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-verify-acquisition-readiness-confirm/dea:task-verify-acquisition-readiness-confirm.yaml
     research_count: 0
@@ -38137,7 +38137,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-verify-acquisition-readiness-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-verify-acquisition-readiness-intake/dea:task-verify-acquisition-readiness-intake.yaml
     research_count: 0
@@ -38148,7 +38148,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-verify-acquisition-readiness-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-verify-acquisition-readiness-record/dea:task-verify-acquisition-readiness-record.yaml
     research_count: 0
@@ -38159,7 +38159,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-verify-acquisition-readiness-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-verify-acquisition-readiness-transform/dea:task-verify-acquisition-readiness-transform.yaml
     research_count: 0
@@ -38170,7 +38170,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-verify-acquisition-readiness-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-verify-acquisition-readiness-verify/dea:task-verify-acquisition-readiness-verify.yaml
     research_count: 0
@@ -38401,7 +38401,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-verify-initial-demand-production-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-verify-initial-demand-production-confirm/dea:task-verify-initial-demand-production-confirm.yaml
     research_count: 0
@@ -38412,7 +38412,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-verify-initial-demand-production-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-verify-initial-demand-production-intake/dea:task-verify-initial-demand-production-intake.yaml
     research_count: 0
@@ -38423,7 +38423,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-verify-initial-demand-production-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-verify-initial-demand-production-record/dea:task-verify-initial-demand-production-record.yaml
     research_count: 0
@@ -38434,7 +38434,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-verify-initial-demand-production-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-verify-initial-demand-production-transform/dea:task-verify-initial-demand-production-transform.yaml
     research_count: 0
@@ -38445,7 +38445,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-verify-initial-demand-production-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-verify-initial-demand-production-verify/dea:task-verify-initial-demand-production-verify.yaml
     research_count: 0
@@ -38566,7 +38566,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-verify-party-identity-confirm
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-verify-party-identity-confirm/dea:task-verify-party-identity-confirm.yaml
     research_count: 0
@@ -38577,7 +38577,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-verify-party-identity-intake
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-verify-party-identity-intake/dea:task-verify-party-identity-intake.yaml
     research_count: 0
@@ -38588,7 +38588,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-verify-party-identity-record
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-verify-party-identity-record/dea:task-verify-party-identity-record.yaml
     research_count: 0
@@ -38599,7 +38599,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-verify-party-identity-transform
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-verify-party-identity-transform/dea:task-verify-party-identity-transform.yaml
     research_count: 0
@@ -38610,7 +38610,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:task-verify-party-identity-verify
-    last_modified: '2026-09-19'
+    last_modified: '2026-09-20'
     lifecycle_status: candidate
     path: entities/v1-alpha/dea:task-verify-party-identity-verify/dea:task-verify-party-identity-verify.yaml
     research_count: 0

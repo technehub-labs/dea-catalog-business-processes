@@ -1,36 +1,28 @@
 id: dea:task-conduct-relationship-reviews-confirm
 type: Task
 name: Conduct Relationship Reviews Confirmation
-definition: 'The bounded unit of work within `dea:activity-conduct-relationship-reviews`
-  (Conduct Relationship Reviews) that carries out the confirm phase of the parent''s
-  verb-object decomposition. Phase responsibility: confirmation custodian. Phase trigger:
-  Processing complete (phase 3); output available for downstream consumers and confirmation
-  can be issued. Phase outcome: Confirmation issued; downstream consumers notified
-  of output availability; reconciliation against parent Activity outcome complete.'
+definition: The bounded unit of work within `dea:activity-conduct-relationship-reviews` (Conduct Relationship Reviews) that reconcile the operating-ready outcomes pack against the KAM-playbook contract and the renewal-execution contract, issue the operating-completion confirmation to the relationship custodian, and log the confirmation.
 belongs_to_activity: dea:activity-conduct-relationship-reviews
-trigger: Processing complete (phase 3); output available for downstream consumers
-  and confirmation can be issued.
-outcome: Confirmation issued; downstream consumers notified of output availability;
-  reconciliation against parent Activity outcome complete.
+trigger: Bounded-work artefact produced for Conduct Relationship Reviews; confirm gate may reconcile against the governing contract and issue the completion confirmation to the relationship custodian.
+outcome: Completion confirmation issued for Conduct Relationship Reviews and acknowledged by the relationship custodian and any governing-party notify-list; confirmation custodian passes custody to the records custodian.
 responsibility: confirmation custodian
 boundary:
   inclusions:
-  - Reconciliation of output against parent Activity outcome.
-  - Notification of downstream consumers of output availability.
+  - Reconciliation of the Conduct Relationship Reviews artefact against the governing contract and any notify-list requirements.
+  - Issuance of the Conduct Relationship Reviews completion confirmation and acknowledgement logging.
   exclusions:
-  - Long-term record retention (phase 5).
-  - Re-execution of prior phases (no rollback semantics).
+  - Long-term retention of the closure case file (phase 5).
+  - Re-execution of prior phases on confirmation rejection.
 evidence:
-- source: dea:activity-conduct-relationship-reviews
-  claim: "Parent Activity cohesion rationale (CR-BP-32 \xA76): Constituent work shares\
-    \ a single review concern (relationship state versus commitments), a common cadence\
-    \ (the review calendar), and one recognizable portion of the parent outcome (relationship\
-    \ sustained across its lifecycle). Cohesion score 9/9 assessed at deposition (CR-BP-32\
-    \ \xA76)."
-  strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
+- source: SAMA Strategic Account Management playbook
+  claim: strategic-account management playbook grounding the operate-phase KAM-playbook contract and the transform-phase operating-rhythm execution. Bounded-work evidence for the confirm-phase custodian of `dea:activity-conduct-relationship-reviews` (CR-BP-L4-02 enrichment).
   strength: E2
+- source: TSIA renewal execution benchmark
+  claim: renewal-execution benchmark grounding the operate-phase renewal-execution contract and the confirm-phase reconciliation. Bounded-work evidence for the confirm-phase custodian of `dea:activity-conduct-relationship-reviews` (CR-BP-L4-02 enrichment).
+  strength: E2
+- source: dea:activity-conduct-relationship-reviews
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-02 cell-specific bounded-work prose for this PartyAndRelationship L4 Task.
+  strength: E3
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
@@ -68,5 +60,4 @@ metadata:
       '
   - cr: CR-BP-102
     date: '2026-09-19'
-    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline
-      (5-phase verb-object pattern).
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

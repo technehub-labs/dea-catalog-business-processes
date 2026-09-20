@@ -1,35 +1,28 @@
 id: dea:task-map-journey-stages-verify
 type: Task
 name: Map Journey Stages Verification
-definition: 'The bounded unit of work within `dea:activity-map-journey-stages` (Map
-  Journey Stages) that carries out the verify phase of the parent''s verb-object decomposition.
-  Phase responsibility: verification custodian. Phase trigger: Intake registered (phase
-  1 complete); verification of input against parent Activity''s specification can
-  begin. Phase outcome: Verified that the input meets parent Activity''s specification;
-  nonconformities are recorded for rejection or remediation.'
+definition: The bounded unit of work within `dea:activity-map-journey-stages` (Map Journey Stages) that verify the input pack against the experience-quality criteria and the touchpoint-taxonomy contract, and emit a verification report naming any quality-criteria deviations and their remediation.
 belongs_to_activity: dea:activity-map-journey-stages
-trigger: Intake registered (phase 1 complete); verification of input against parent
-  Activity's specification can begin.
-outcome: Verified that the input meets parent Activity's specification; nonconformities
-  are recorded for rejection or remediation.
+trigger: Intake manifest registered for Map Journey Stages; verification gate may execute the contract and quality-criteria checks against the input pack.
+outcome: Verification certificate issued for Map Journey Stages naming verification methods applied and any deviations remediated; verification custodian passes custody to the processing custodian.
 responsibility: verification custodian
 boundary:
   inclusions:
-  - Comparison of input against parent Activity's specification.
-  - Recording of verification results (conformance / nonconformance).
+  - Execution of the Map Journey Stages contract checks and quality-criteria verification.
+  - Reconciliation of the input pack against the Map Journey Stages verification certificate requirements.
   exclusions:
-  - Transformation of the input (phase 3).
-  - Issuance of downstream confirmation (phase 4).
+  - Long-term retention of the closure case file (phase 5).
+  - Re-execution of prior phases on rejected or withdrawn cases.
 evidence:
-- source: dea:activity-map-journey-stages
-  claim: "Parent Activity cohesion rationale (CR-BP-32 \xA76): Constituent work shares\
-    \ a single decomposition concern (end-to-end path into stages), one input class\
-    \ (experience and touchpoint designs), and one output (the stage map). Cohesion\
-    \ score 9/9 assessed at deposition (CR-BP-32 \xA76)."
-  strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
+- source: Bain Net Promoter System methodology
+  claim: experience-quality measurement methodology grounding the design-phase experience-quality criteria and the verify-phase quality-criteria checks. Bounded-work evidence for the verify-phase custodian of `dea:activity-map-journey-stages` (CR-BP-L4-02 enrichment).
   strength: E2
+- source: Nielsen Norman Group interaction-design foundations
+  claim: interaction-design framework grounding the design-phase touchpoint and interaction-pattern design step. Bounded-work evidence for the verify-phase custodian of `dea:activity-map-journey-stages` (CR-BP-L4-02 enrichment).
+  strength: E3
+- source: dea:activity-map-journey-stages
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-02 cell-specific bounded-work prose for this PartyAndRelationship L4 Task.
+  strength: E3
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
@@ -67,5 +60,4 @@ metadata:
       '
   - cr: CR-BP-102
     date: '2026-09-19'
-    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline
-      (5-phase verb-object pattern).
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).
