@@ -1,35 +1,28 @@
 id: dea:task-establish-risk-registers-intake
 type: Task
 name: Establish Risk Registers Intake
-definition: 'The bounded unit of work within `dea:activity-establish-risk-registers`
-  (Establish Risk Registers) that carries out the intake phase of the parent''s verb-object
-  decomposition. Phase responsibility: designated intake custodian. Phase trigger:
-  Parent Activity''s input class is presented for processing and the activity owner
-  is notified of intake. Phase outcome: Intake registered; input artifact preserved
-  with audit identifiers; downstream phases may proceed.'
+definition: The bounded unit of work within `dea:activity-establish-risk-registers` (Establish Risk Registers) that accept custody of the governance-apparatus input pack (charter drafts, policy drafts, body-constitution proposals, monitoring-tooling specifications) and persist a registered intake manifest binding the build package to the apparatus case file.
 belongs_to_activity: dea:activity-establish-risk-registers
-trigger: Parent Activity's input class is presented for processing and the activity
-  owner is notified of intake.
-outcome: Intake registered; input artifact preserved with audit identifiers; downstream
-  phases may proceed.
+trigger: Custody of the Build-stage input pack for Establish Risk Registers ready for intake; predecessor phase has produced the case file context and intake contract applies.
+outcome: Intake manifest registered and bound to the Establish Risk Registers case file; registered intake custodian passes custody to the verification custodian.
 responsibility: designated intake custodian
 boundary:
   inclusions:
-  - Acceptance of the input artifact per parent Activity scope.
-  - Issuance of intake acknowledgment with audit identifiers.
+  - Receipt and registration of the Establish Risk Registers input pack against the Build-stage intake contract.
+  - Binding of the input pack to the Establish Risk Registers case file with cryptographic chain-of-custody.
   exclusions:
-  - Validation of the input against specifications (phase 2).
-  - Transformation of the input to the specified form (phase 3).
+  - Re-execution of prior intake phases on rejected or withdrawn cases (no rollback semantics).
+  - Long-term retention of the case file (phase 5).
 evidence:
-- source: dea:activity-establish-risk-registers
-  claim: "Parent Activity cohesion rationale (CR-BP-32 \xA76): Constituent work shares\
-    \ a single establishment concern (framework design to working registers), one\
-    \ reference class (the risk framework design), and one output (operating risk\
-    \ registers). Cohesion score 9/9 assessed at deposition (CR-BP-32 \xA76)."
-  strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
+- source: OECD Principles of Corporate Governance (G20/OECD 2023)
+  claim: international governance benchmark binding the build-phase structural verification (charter completeness, body constitution) to a recognised framework. Bounded-work evidence for the intake-phase custodian of `dea:activity-establish-risk-registers` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: King IV Report (IoDSA 2016)
+  claim: outcomes-based governance report grounding the build-phase committee-charter completeness rules and operating-cycle design. Bounded-work evidence for the intake-phase custodian of `dea:activity-establish-risk-registers` (CR-BP-L4-03 enrichment).
   strength: E2
+- source: dea:activity-establish-risk-registers
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-03 cell-specific bounded-work prose for this GovernanceAndExistence L4 Task.
+  strength: E3
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
@@ -65,5 +58,4 @@ metadata:
       '
   - cr: CR-BP-102
     date: '2026-09-19'
-    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline
-      (5-phase verb-object pattern).
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

@@ -1,35 +1,28 @@
 id: dea:task-verify-body-readiness-record
 type: Task
 name: Verify Body Readiness Audit Record
-definition: 'The bounded unit of work within `dea:activity-verify-body-readiness`
-  (Verify Body Readiness) that carries out the record phase of the parent''s verb-object
-  decomposition. Phase responsibility: records custodian. Phase trigger: Confirmation
-  issued (phase 4 complete); audit record retention may begin per parent Activity''s
-  evidence requirements. Phase outcome: Audit record preserved at the specified retention
-  tier; retrieval handles established per parent Activity''s evidence discipline.'
+definition: The bounded unit of work within `dea:activity-verify-body-readiness` (Verify Body Readiness) that retain the apparatus build package (intake manifest, verification report, build-ready apparatus inventory, apparatus-completion confirmation, and any structural-deviation remediations) under the governance-records retention schedule with cryptographic integrity protection.
 belongs_to_activity: dea:activity-verify-body-readiness
-trigger: Confirmation issued (phase 4 complete); audit record retention may begin
-  per parent Activity's evidence requirements.
-outcome: Audit record preserved at the specified retention tier; retrieval handles
-  established per parent Activity's evidence discipline.
+trigger: Completion confirmation issued for Verify Body Readiness; record gate may retain the case file under the records retention schedule with cryptographic integrity protection.
+outcome: Case file retained for Verify Body Readiness under the records retention schedule with cryptographic integrity protection; statutory retention horizon applied where the governing statute requires.
 responsibility: records custodian
 boundary:
   inclusions:
-  - Preservation of the audit record at the specified retention tier.
-  - Establishment of retrieval handles per evidence discipline.
+  - Retention of the Verify Body Readiness case file under the records retention schedule with cryptographic integrity protection.
+  - Application of the statutory retention horizon for Verify Body Readiness records where the governing statute requires.
   exclusions:
-  - Re-execution of prior phases.
-  - Downstream consumption of the audit record (out of Activity scope).
+  - Re-execution of prior phases (no rollback semantics).
+  - Re-classification of records already past the statutory retention horizon (cryptographic destruction is irreversible).
 evidence:
-- source: dea:activity-verify-body-readiness
-  claim: "Parent Activity cohesion rationale (CR-BP-32 \xA76): Constituent work shares\
-    \ a single verification concern (established body versus design), one reference\
-    \ class (governance system design), and one output (the readiness determination).\
-    \ Cohesion score 8/9 assessed at deposition (CR-BP-32 \xA76)."
-  strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
+- source: OECD Principles of Corporate Governance (G20/OECD 2023)
+  claim: international governance benchmark binding the build-phase structural verification (charter completeness, body constitution) to a recognised framework. Bounded-work evidence for the record-phase custodian of `dea:activity-verify-body-readiness` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: King IV Report (IoDSA 2016)
+  claim: outcomes-based governance report grounding the build-phase committee-charter completeness rules and operating-cycle design. Bounded-work evidence for the record-phase custodian of `dea:activity-verify-body-readiness` (CR-BP-L4-03 enrichment).
   strength: E2
+- source: dea:activity-verify-body-readiness
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-03 cell-specific bounded-work prose for this GovernanceAndExistence L4 Task.
+  strength: E3
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
@@ -65,5 +58,4 @@ metadata:
       '
   - cr: CR-BP-102
     date: '2026-09-19'
-    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline
-      (5-phase verb-object pattern).
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

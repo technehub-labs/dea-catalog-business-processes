@@ -1,35 +1,28 @@
 id: dea:task-score-finding-severity-transform
 type: Task
 name: Score Finding Severity Processing
-definition: 'The bounded unit of work within `dea:activity-score-finding-severity`
-  (Score Finding Severity) that carries out the transform phase of the parent''s verb-object
-  decomposition. Phase responsibility: processing custodian. Phase trigger: Verified
-  input is ready (phase 2 complete); transformation to the specified output form may
-  begin. Phase outcome: Output produced in the specified form per parent Activity''s
-  definition; intermediate artifacts preserved for audit.'
+definition: 'The bounded unit of work within `dea:activity-score-finding-severity` (Score Finding Severity) that execute the improvement: measure governance performance, measure policy gaps, score finding severity, assess finding recurrence, capture lessons learned, formulate effectiveness recommendations, and produce the improvement-ready outcomes pack conforming to the assurance-improvement schema.'
 belongs_to_activity: dea:activity-score-finding-severity
-trigger: Verified input is ready (phase 2 complete); transformation to the specified
-  output form may begin.
-outcome: Output produced in the specified form per parent Activity's definition; intermediate
-  artifacts preserved for audit.
+trigger: Verification certificate issued for Score Finding Severity; transform gate may execute the bounded work and emit the conformant artefact under the Improve schema.
+outcome: Bounded-work artefact produced for Score Finding Severity conforming to the Improve schema; processing custodian passes custody to the confirmation custodian.
 responsibility: processing custodian
 boundary:
   inclusions:
-  - Transformation of verified input to the specified output form.
-  - Preservation of intermediate artifacts for audit.
+  - Execution of the Score Finding Severity bounded work producing the conformant artefact.
+  - Application of the Score Finding Severity schema and any derived classifications or computations.
   exclusions:
-  - Confirmation that the output meets downstream expectations (phase 4).
-  - Long-term record retention (phase 5).
+  - Long-term retention of the case file (phase 5).
+  - Notification of governing parties outside the notify-list (phase 4).
 evidence:
-- source: dea:activity-score-finding-severity
-  claim: "Parent Activity cohesion rationale (CR-BP-32 \xA76): Constituent work shares\
-    \ a single severity concern (finding to severity grade), one input class (the\
-    \ delivered audit report), and one output (severity-scored findings). Cohesion\
-    \ score 9/9 assessed at deposition (CR-BP-32 \xA76)."
-  strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
+- source: IIA IPPF / Global Internal Audit Standards 2024
+  claim: internal-audit professional framework binding the improve-phase finding classification and effectiveness-review methodology. Bounded-work evidence for the transform-phase custodian of `dea:activity-score-finding-severity` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: ISO 19011:2018 (Audit Programme Guidelines)
+  claim: audit-programme standard grounding the improve-phase measurement methodology and finding-severity scoring. Bounded-work evidence for the transform-phase custodian of `dea:activity-score-finding-severity` (CR-BP-L4-03 enrichment).
   strength: E2
+- source: dea:activity-score-finding-severity
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-03 cell-specific bounded-work prose for this GovernanceAndExistence L4 Task.
+  strength: E3
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
@@ -50,8 +43,7 @@ metadata:
   change_history:
   - cr: CR-BP-99
     date: '2026-09-18'
-    change: 'ACT-011 backfill: definition expanded to >= 120 chars (cohesive work
-      statement adequacy, CR-BP-97).'
+    change: 'ACT-011 backfill: definition expanded to >= 120 chars (cohesive work statement adequacy, CR-BP-97).'
   - cr: CR-BP-49
     date: '2026-09-13'
     change: 'Initial L3 Activity entry; lands as part of the CR-BP-49
@@ -69,5 +61,4 @@ metadata:
       '
   - cr: CR-BP-102
     date: '2026-09-19'
-    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline
-      (5-phase verb-object pattern).
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

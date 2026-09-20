@@ -1,35 +1,28 @@
 id: dea:task-facilitate-governance-decisions-intake
 type: Task
 name: Facilitate Governance Decisions Intake
-definition: 'The bounded unit of work within `dea:activity-facilitate-governance-decisions`
-  (Facilitate Governance Decisions) that carries out the intake phase of the parent''s
-  verb-object decomposition. Phase responsibility: designated intake custodian. Phase
-  trigger: Parent Activity''s input class is presented for processing and the activity
-  owner is notified of intake. Phase outcome: Intake registered; input artifact preserved
-  with audit identifiers; downstream phases may proceed.'
+definition: The bounded unit of work within `dea:activity-facilitate-governance-decisions` (Facilitate Governance Decisions) that accept custody of the governance-operating input pack (board and committee cycle schedule, assurance-evidence queue, risk-review calendar, compliance-audit plan) and persist a registered intake manifest binding the inputs to the operating case file.
 belongs_to_activity: dea:activity-facilitate-governance-decisions
-trigger: Parent Activity's input class is presented for processing and the activity
-  owner is notified of intake.
-outcome: Intake registered; input artifact preserved with audit identifiers; downstream
-  phases may proceed.
+trigger: Custody of the Operate-stage input pack for Facilitate Governance Decisions ready for intake; predecessor phase has produced the case file context and intake contract applies.
+outcome: Intake manifest registered and bound to the Facilitate Governance Decisions case file; registered intake custodian passes custody to the verification custodian.
 responsibility: designated intake custodian
 boundary:
   inclusions:
-  - Acceptance of the input artifact per parent Activity scope.
-  - Issuance of intake acknowledgment with audit identifiers.
+  - Receipt and registration of the Facilitate Governance Decisions input pack against the Operate-stage intake contract.
+  - Binding of the input pack to the Facilitate Governance Decisions case file with cryptographic chain-of-custody.
   exclusions:
-  - Validation of the input against specifications (phase 2).
-  - Transformation of the input to the specified form (phase 3).
+  - Re-execution of prior intake phases on rejected or withdrawn cases (no rollback semantics).
+  - Long-term retention of the case file (phase 5).
 evidence:
+- source: UK Companies Act 2006 Part 10 + Part 15
+  claim: directors and accounts provisions binding the operate-phase board-cycle contract and statutory meeting-frequency requirements. Bounded-work evidence for the intake-phase custodian of `dea:activity-facilitate-governance-decisions` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: Sarbanes-Oxley §§301-302
+  claim: audit-committee and certification provisions binding the operate-phase compliance-audit execution and assurance-evidence standards. Bounded-work evidence for the intake-phase custodian of `dea:activity-facilitate-governance-decisions` (CR-BP-L4-03 enrichment).
+  strength: E1
 - source: dea:activity-facilitate-governance-decisions
-  claim: "Parent Activity cohesion rationale (CR-BP-32 \xA76): Constituent work shares\
-    \ a single facilitation concern (agenda item to decision), one reference class\
-    \ (decision rights specification), and one output (decisions made). Cohesion score\
-    \ 9/9 assessed at deposition (CR-BP-32 \xA76)."
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-03 cell-specific bounded-work prose for this GovernanceAndExistence L4 Task.
   strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
-  strength: E2
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
@@ -65,5 +58,4 @@ metadata:
       '
   - cr: CR-BP-102
     date: '2026-09-19'
-    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline
-      (5-phase verb-object pattern).
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

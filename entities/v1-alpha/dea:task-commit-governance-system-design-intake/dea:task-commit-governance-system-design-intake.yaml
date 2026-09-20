@@ -1,35 +1,28 @@
 id: dea:task-commit-governance-system-design-intake
 type: Task
 name: Commit Governance System Design Intake
-definition: 'The bounded unit of work within `dea:activity-commit-governance-system-design`
-  (Commit Governance System Design) that carries out the intake phase of the parent''s
-  verb-object decomposition. Phase responsibility: designated intake custodian. Phase
-  trigger: Parent Activity''s input class is presented for processing and the activity
-  owner is notified of intake. Phase outcome: Intake registered; input artifact preserved
-  with audit identifiers; downstream phases may proceed.'
+definition: The bounded unit of work within `dea:activity-commit-governance-system-design` (Commit Governance System Design) that accept custody of the governance-design input pack (conception framework reference, body-architecture proposals, delegation models, compliance-regime requirements) and persist a registered intake manifest binding the inputs to the design case file.
 belongs_to_activity: dea:activity-commit-governance-system-design
-trigger: Parent Activity's input class is presented for processing and the activity
-  owner is notified of intake.
-outcome: Intake registered; input artifact preserved with audit identifiers; downstream
-  phases may proceed.
+trigger: Custody of the Design-stage input pack for Commit Governance System Design ready for intake; predecessor phase has produced the case file context and intake contract applies.
+outcome: Intake manifest registered and bound to the Commit Governance System Design case file; registered intake custodian passes custody to the verification custodian.
 responsibility: designated intake custodian
 boundary:
   inclusions:
-  - Acceptance of the input artifact per parent Activity scope.
-  - Issuance of intake acknowledgment with audit identifiers.
+  - Receipt and registration of the Commit Governance System Design input pack against the Design-stage intake contract.
+  - Binding of the input pack to the Commit Governance System Design case file with cryptographic chain-of-custody.
   exclusions:
-  - Validation of the input against specifications (phase 2).
-  - Transformation of the input to the specified form (phase 3).
+  - Re-execution of prior intake phases on rejected or withdrawn cases (no rollback semantics).
+  - Long-term retention of the case file (phase 5).
 evidence:
-- source: dea:activity-commit-governance-system-design
-  claim: "Parent Activity cohesion rationale (CR-BP-32 \xA76): Constituent work shares\
-    \ a single consolidation-and-commitment concern, one artifact (the governance\
-    \ system design document), and a common terminus (readiness for build). Cohesion\
-    \ score 8/9 assessed at deposition (CR-BP-32 \xA76)."
-  strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
+- source: OECD Principles G20/OECD 2023 Chapter VI
+  claim: board-responsibilities chapter binding the design-phase body articulation and delegation-of-authority design. Bounded-work evidence for the intake-phase custodian of `dea:activity-commit-governance-system-design` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: COSO Internal Control 2013
+  claim: internal-control framework grounding the design-phase control-objective definition and compliance-regime design. Bounded-work evidence for the intake-phase custodian of `dea:activity-commit-governance-system-design` (CR-BP-L4-03 enrichment).
   strength: E2
+- source: dea:activity-commit-governance-system-design
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-03 cell-specific bounded-work prose for this GovernanceAndExistence L4 Task.
+  strength: E3
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
@@ -65,5 +58,4 @@ metadata:
       '
   - cr: CR-BP-102
     date: '2026-09-19'
-    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline
-      (5-phase verb-object pattern).
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

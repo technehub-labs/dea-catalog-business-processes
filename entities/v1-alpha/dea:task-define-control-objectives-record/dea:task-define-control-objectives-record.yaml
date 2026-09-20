@@ -1,35 +1,28 @@
 id: dea:task-define-control-objectives-record
 type: Task
 name: Define Control Objectives Audit Record
-definition: 'The bounded unit of work within `dea:activity-define-control-objectives`
-  (Define Control Objectives) that carries out the record phase of the parent''s verb-object
-  decomposition. Phase responsibility: records custodian. Phase trigger: Confirmation
-  issued (phase 4 complete); audit record retention may begin per parent Activity''s
-  evidence requirements. Phase outcome: Audit record preserved at the specified retention
-  tier; retrieval handles established per parent Activity''s evidence discipline.'
+definition: The bounded unit of work within `dea:activity-define-control-objectives` (Define Control Objectives) that retain the design package (intake manifest, verification report, design-ready governance artefact, design-completion confirmation, and any architecture-deviation remediations) under the governance-design records retention schedule with cryptographic integrity protection.
 belongs_to_activity: dea:activity-define-control-objectives
-trigger: Confirmation issued (phase 4 complete); audit record retention may begin
-  per parent Activity's evidence requirements.
-outcome: Audit record preserved at the specified retention tier; retrieval handles
-  established per parent Activity's evidence discipline.
+trigger: Completion confirmation issued for Define Control Objectives; record gate may retain the case file under the records retention schedule with cryptographic integrity protection.
+outcome: Case file retained for Define Control Objectives under the records retention schedule with cryptographic integrity protection; statutory retention horizon applied where the governing statute requires.
 responsibility: records custodian
 boundary:
   inclusions:
-  - Preservation of the audit record at the specified retention tier.
-  - Establishment of retrieval handles per evidence discipline.
+  - Retention of the Define Control Objectives case file under the records retention schedule with cryptographic integrity protection.
+  - Application of the statutory retention horizon for Define Control Objectives records where the governing statute requires.
   exclusions:
-  - Re-execution of prior phases.
-  - Downstream consumption of the audit record (out of Activity scope).
+  - Re-execution of prior phases (no rollback semantics).
+  - Re-classification of records already past the statutory retention horizon (cryptographic destruction is irreversible).
 evidence:
-- source: dea:activity-define-control-objectives
-  claim: "Parent Activity cohesion rationale (CR-BP-32 \xA76): Constituent work shares\
-    \ a single objective concern (what each control achieves), one reference class\
-    \ (policy artefact designs, risk tolerance bands), and one output (the control\
-    \ objective set). Cohesion score 9/9 assessed at deposition (CR-BP-32 \xA76)."
-  strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
+- source: OECD Principles G20/OECD 2023 Chapter VI
+  claim: board-responsibilities chapter binding the design-phase body articulation and delegation-of-authority design. Bounded-work evidence for the record-phase custodian of `dea:activity-define-control-objectives` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: COSO Internal Control 2013
+  claim: internal-control framework grounding the design-phase control-objective definition and compliance-regime design. Bounded-work evidence for the record-phase custodian of `dea:activity-define-control-objectives` (CR-BP-L4-03 enrichment).
   strength: E2
+- source: dea:activity-define-control-objectives
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-03 cell-specific bounded-work prose for this GovernanceAndExistence L4 Task.
+  strength: E3
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
@@ -65,5 +58,4 @@ metadata:
       '
   - cr: CR-BP-102
     date: '2026-09-19'
-    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline
-      (5-phase verb-object pattern).
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

@@ -1,35 +1,28 @@
 id: dea:task-frame-governance-posture-for-risk-transform
 type: Task
 name: Frame Governance Posture for Risk Processing
-definition: 'The bounded unit of work within `dea:activity-frame-governance-posture-for-risk`
-  (Frame Governance Posture for Risk) that carries out the transform phase of the
-  parent''s verb-object decomposition. Phase responsibility: processing custodian.
-  Phase trigger: Verified input is ready (phase 2 complete); transformation to the
-  specified output form may begin. Phase outcome: Output produced in the specified
-  form per parent Activity''s definition; intermediate artifacts preserved for audit.'
+definition: 'The bounded unit of work within `dea:activity-frame-governance-posture-for-risk` (Frame Governance Posture for Risk) that execute the conception: articulate the risk appetite, bound the policy scope, frame the governance posture for risk, propose the authority and decision rights, define the tolerance bands, and produce the conception-ready framework package conforming to the risk-and-policy conception schema.'
 belongs_to_activity: dea:activity-frame-governance-posture-for-risk
-trigger: Verified input is ready (phase 2 complete); transformation to the specified
-  output form may begin.
-outcome: Output produced in the specified form per parent Activity's definition; intermediate
-  artifacts preserved for audit.
+trigger: Verification certificate issued for Frame Governance Posture for Risk; transform gate may execute the bounded work and emit the conformant artefact under the Conceive schema.
+outcome: Bounded-work artefact produced for Frame Governance Posture for Risk conforming to the Conceive schema; processing custodian passes custody to the confirmation custodian.
 responsibility: processing custodian
 boundary:
   inclusions:
-  - Transformation of verified input to the specified output form.
-  - Preservation of intermediate artifacts for audit.
+  - Execution of the Frame Governance Posture for Risk bounded work producing the conformant artefact.
+  - Application of the Frame Governance Posture for Risk schema and any derived classifications or computations.
   exclusions:
-  - Confirmation that the output meets downstream expectations (phase 4).
-  - Long-term record retention (phase 5).
+  - Long-term retention of the case file (phase 5).
+  - Notification of governing parties outside the notify-list (phase 4).
 evidence:
-- source: dea:activity-frame-governance-posture-for-risk
-  claim: "Parent Activity cohesion rationale (CR-BP-32 \xA76): Constituent work shares\
-    \ a single posture concern (how governance engages risk), one input class (risk\
-    \ appetite, tolerance bands), and one output (the framed governance posture).\
-    \ Cohesion score 8/9 assessed at deposition (CR-BP-32 \xA76)."
-  strength: E3
-- source: CR-BP-102
-  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
+- source: ISO 31000:2018 (Risk Management Guidelines)
+  claim: international risk-management standard binding the conceive-phase risk-framework methodology verification and the tolerance-band definition. Bounded-work evidence for the transform-phase custodian of `dea:activity-frame-governance-posture-for-risk` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: COSO ERM 2017
+  claim: enterprise risk-management framework grounding the conceive-phase risk-appetite articulation and governance-posture framing. Bounded-work evidence for the transform-phase custodian of `dea:activity-frame-governance-posture-for-risk` (CR-BP-L4-03 enrichment).
   strength: E2
+- source: dea:activity-frame-governance-posture-for-risk
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-03 cell-specific bounded-work prose for this GovernanceAndExistence L4 Task.
+  strength: E3
 version: 1.0.0
 lifecycle_status: candidate
 status: candidate
@@ -65,5 +58,4 @@ metadata:
       '
   - cr: CR-BP-102
     date: '2026-09-19'
-    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline
-      (5-phase verb-object pattern).
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).
