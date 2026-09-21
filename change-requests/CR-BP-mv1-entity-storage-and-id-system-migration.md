@@ -1,6 +1,6 @@
 # CR-BP-mv1: Entity Storage and ID System Migration (Org-Wide, This Repo First)
 
-**Status**: Proposed
+**Status**: Merged (PR #149)
 **Layer**: Process Catalog
 **Owner**: Coder (for eaojnr)
 **Date**: 2026-09-20
