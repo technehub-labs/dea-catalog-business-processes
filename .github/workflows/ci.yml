@@ -262,6 +262,14 @@ jobs:
         # CANONICAL.
         run: python scripts/check_admission_gate.py --strict-provenance
 
+      - name: Run register audit gate (CR-BP-22 / CR-BP-mv1)
+        if: steps.check.outputs.skip != 'true'
+        # Reconciles every register cell's audit_status against landed
+        # catalog reality. Wired into CI by CR-BP-mv1: the gate predates
+        # CI wiring and drifted silently (containment-tree walker repair
+        # landed with the migration).
+        run: python scripts/check_register_audit.py
+
       - name: Run Process Group gate (CR-BP-12)
         if: steps.check.outputs.skip != 'true'
         run: python scripts/check_process_group.py
