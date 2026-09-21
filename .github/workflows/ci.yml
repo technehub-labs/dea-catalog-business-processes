@@ -296,7 +296,14 @@ jobs:
       - name: Run cross-repo conformance suite (CR-CATALOG-STRUCT-01 §11)
         if: steps.check.outputs.skip != 'true'
         run: |
-          python .metaframework/tools/conformance_test_catalog_structure.py \
+          # CR-BP-mv1: prefer the vendored tree-aware copy (containment
+          # tree support); fall back to the dea-metaframework checkout.
+          # Upstream port tracked on dea-metaframework.
+          CST=.metaframework/tools/conformance_test_catalog_structure.py
+          if [ -f scripts/conformance_test_catalog_structure.py ]; then
+            CST=scripts/conformance_test_catalog_structure.py
+          fi
+          python "$CST" \
               --catalog-root . \
               --template-root .metaframework/tools/catalog-repo-template \
               --strict
