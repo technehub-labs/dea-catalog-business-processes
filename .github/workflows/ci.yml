@@ -130,6 +130,14 @@ jobs:
               f for f in files
               if not any(p in ("research", "candidates", "retired") for p in Path(f).parts)
           ]
+          # CR-BP-mv1: Process Context records carry no `type:` field by
+          # design and are owned by the dedicated check_process_context.py
+          # gate (this job, below). Pre-migration they lived under
+          # contexts/ and never entered this dispatch; keep them out.
+          files = [
+              f for f in files
+              if not Path(f).name.startswith("processes-pc-")
+          ]
           for path in files:
               with open(path) as f:
                   data = yaml.safe_load(f) or {}
