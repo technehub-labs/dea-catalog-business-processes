@@ -1,0 +1,73 @@
+id: processes:activity-fa-build-napuha
+type: Activity
+name: Deploy Chart of Accounts
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Implement Financial Systems and Ledger that deploys the designed chart of accounts into the financial systems.
+belongs_to_business_process: processes:process-fa-build-d5kb5m
+cohesion_rationale: Constituent work shares a single deployment concern (account design to live structure), one reference class (the committed plan structure), and one output (the deployed chart of accounts). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: FinanceAndAccounting
+    stage: Build
+    identifier: ecf:financeAccounting.build
+metadata:
+  established_by: CR-BP-52
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-52
+    date: '2026-09-13'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-52
+
+      FinanceAndAccounting Conceive + Design + Build tranche (pattern
+
+      proven by CR-BP-42 through CR-BP-51). Classified per CR-BP-32
+
+      section 5 (fails standalone executability and resource dedication);
+
+      decomposition boundary marker per CR-BP-32 section 12 pending Task
+
+      records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-deploy-chart-of-accounts-intake, dea:task-deploy-chart-of-accounts-verify, dea:task-deploy-chart-of-accounts-transform, dea:task-deploy-chart-of-accounts-confirm, dea:task-deploy-chart-of-accounts-record).'
+composes:
+- source_id: processes:activity-fa-build-napuha
+  target_id: processes:task-fa-build-intake-27peg5
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-fa-build-napuha
+  target_id: processes:task-fa-build-verify-fqjmy6
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-fa-build-napuha
+  target_id: processes:task-fa-build-transform-jf33mp
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-fa-build-napuha
+  target_id: processes:task-fa-build-confirm-8cwh9a
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-fa-build-napuha
+  target_id: processes:task-fa-build-record-bwk7zj
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

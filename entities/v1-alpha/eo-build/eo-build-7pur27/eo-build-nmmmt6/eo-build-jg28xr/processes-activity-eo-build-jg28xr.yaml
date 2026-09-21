@@ -1,0 +1,73 @@
+id: processes:activity-eo-build-jg28xr
+type: Activity
+name: Procure Hardware and Software
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Acquire Technology Assets that procures the hardware and software the platform architecture specifies.
+belongs_to_business_process: processes:process-eo-build-nmmmt6
+cohesion_rationale: Constituent work shares a single procurement concern (specification to delivered asset), one reference class (the platform architecture and sourcing principles), and one output (procured assets). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: EnablementAndOperations
+    stage: Build
+    identifier: ecf:enablementAndOperations.build
+metadata:
+  established_by: CR-BP-47
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-47
+    date: '2026-09-13'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-47
+
+      EnablementAndOperations Build + Improve tranche (completes the EO
+
+      domain''s L3 coverage; pattern proven by CR-BP-42 through CR-BP-46).
+
+      Classified per CR-BP-32 section 5 (fails standalone executability
+
+      and resource dedication); decomposition boundary marker per CR-BP-32
+
+      section 12 pending Task records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-procure-hardware-and-software-intake, dea:task-procure-hardware-and-software-verify, dea:task-procure-hardware-and-software-transform, dea:task-procure-hardware-and-software-confirm, dea:task-procure-hardware-and-software-record).'
+composes:
+- source_id: processes:activity-eo-build-jg28xr
+  target_id: processes:task-eo-build-intake-rrqjrt
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-build-jg28xr
+  target_id: processes:task-eo-build-verify-h5p7nk
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-build-jg28xr
+  target_id: processes:task-eo-build-transform-7ybs7h
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-build-jg28xr
+  target_id: processes:task-eo-build-confirm-hjnw24
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-build-jg28xr
+  target_id: processes:task-eo-build-record-a85q3w
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

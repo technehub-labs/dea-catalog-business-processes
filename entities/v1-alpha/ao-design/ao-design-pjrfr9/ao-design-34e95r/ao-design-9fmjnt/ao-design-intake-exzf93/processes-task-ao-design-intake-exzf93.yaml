@@ -1,0 +1,58 @@
+id: processes:task-ao-design-intake-exzf93
+type: Task
+name: Bound Role Accountabilities Intake
+definition: 'The bounded unit of work within `dea:activity-bound-role-accountabilities` (Bound Role Accountabilities) that carries out the intake phase of the parent''s verb-object decomposition. Phase responsibility: designated intake custodian. Phase trigger: Parent Activity''s input class is presented for processing and the activity owner is notified of intake. Phase outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
+belongs_to_activity: processes:activity-ao-design-9fmjnt
+trigger: Parent Activity's input class is presented for processing and the activity owner is notified of intake.
+outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.
+responsibility: designated intake custodian
+boundary:
+  inclusions:
+  - Acceptance of the input artifact per parent Activity scope.
+  - Issuance of intake acknowledgment with audit identifiers.
+  exclusions:
+  - Validation of the input against specifications (phase 2).
+  - Transformation of the input to the specified form (phase 3).
+evidence:
+- source: processes:activity-ao-design-9fmjnt
+  claim: 'Parent Activity cohesion rationale (CR-BP-32 §6): Constituent work shares a single bounding concern (accountability boundaries per catalogued role), one input class (the defined role levels), and one output (the bounded role accountabilities). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).'
+  strength: E3
+- source: CR-BP-102
+  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
+  strength: E2
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: AgencyAndOrganization
+    stage: Design
+    identifier: ecf:agencyOrganization.design
+metadata:
+  established_by: CR-BP-102
+  established_at: '2026-09-19'
+  change_history:
+  - cr: CR-BP-56
+    date: '2026-09-14'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-56
+
+      AgencyAndOrganization Conceive + Design + Build tranche (pattern proven by CR-BP-42 through CR-BP-55).
+
+      Classified per CR-BP-32 section 5 (fails standalone
+
+      executability and resource dedication); decomposition
+
+      boundary marker per CR-BP-32 section 12 pending Task
+
+      records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

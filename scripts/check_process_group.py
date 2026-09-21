@@ -6,14 +6,14 @@ Implements CR-BP-12 rules PG-001..PG-008 and CR-BP-95 extensions
 PG-009 (grouping_basis) and PG-010 (membership_criteria).
 
 Rules:
-  PG-001 — ID pattern: id matches `^dea:group-[a-z0-9-]+$`.
+  PG-001 — ID pattern: id matches `^processes:group-[a-z0-9-]+$`.
   PG-002 — Required fields: id, name, definition, process_context, scope,
            outcomes, composes, process_group_kind, status, lifecycle_status,
            version must be present and non-empty where applicable.
   PG-003 — Process Context resolution: `process_context` resolves to a
-           known `dea:pc-*` Process Context entity in contexts/v1-alpha/.
+           known `processes:pc-*` Process Context entity in the containment tree.
   PG-004 — Composes target_id pattern: every composes[].target_id
-           matches `^dea:process-[a-z0-9-]+$`.
+           matches `^processes:process-[a-z0-9-]+$`.
   PG-005 — Composes target resolution: every composes[].target_id
            resolves to a canonical L2 Business Process entity in
            entities/v1-alpha/.
@@ -66,9 +66,9 @@ REQUIRED_FIELDS = (
 
 LIFECYCLE_VALUES = ("candidate", "active", "deprecated", "retired")
 STATUS_VALUES = ("candidate", "accepted", "deferred", "deprecated", "rejected")
-ID_PATTERN = re.compile(r"^dea:group-[a-z0-9-]+$")
-PROCESS_ID_PATTERN = re.compile(r"^dea:process-[a-z0-9-]+$")
-CONTEXT_ID_PATTERN = re.compile(r"^dea:pc-[a-z0-9-]+$")
+ID_PATTERN = re.compile(r"^processes:group-[a-z0-9-]+$")
+PROCESS_ID_PATTERN = re.compile(r"^processes:process-[a-z0-9-]+$")
+CONTEXT_ID_PATTERN = re.compile(r"^processes:pc-[a-z0-9-]+$")
 VERSION_PATTERN = re.compile(r"^\d+\.\d+\.\d+$")
 
 
@@ -83,11 +83,12 @@ def _load_kinds(catalog_root: Path) -> set[str]:
 
 
 def _load_context_ids(catalog_root: Path) -> set[str]:
-    contexts_dir = catalog_root / "contexts" / "v1-alpha"
-    if not contexts_dir.exists():
+    # CR-BP-mv1: PCs live in the containment tree (contexts/ is retired).
+    entities_dir = catalog_root / "entities" / "v1-alpha"
+    if not entities_dir.exists():
         return set()
     ids: set[str] = set()
-    for path in contexts_dir.glob("*.yaml"):
+    for path in entities_dir.rglob("processes-pc-*.yaml"):
         try:
             with path.open() as f:
                 data = yaml.safe_load(f) or {}
@@ -124,7 +125,7 @@ def _check_one(entry: dict, *, kinds: set[str], context_ids: set[str], process_i
     # PG-001 — ID pattern.
     if not isinstance(eid, str) or not ID_PATTERN.match(eid or ""):
         errors.append(
-            f"PG-001 ({eid}): id must match `^dea:group-[a-z0-9-]+$` (CR-BP-04 §4 family; CR-BP-12 §5.1)."
+            f"PG-001 ({eid}): id must match `^processes:group-[a-z0-9-]+$` (CR-BP-04 §4 family; CR-BP-12 §5.1)."
         )
 
     # PG-002 — Required fields.
@@ -138,7 +139,7 @@ def _check_one(entry: dict, *, kinds: set[str], context_ids: set[str], process_i
     pc = entry.get("process_context", "")
     if not isinstance(pc, str) or not CONTEXT_ID_PATTERN.match(pc or ""):
         errors.append(
-            f"PG-003 ({eid}): process_context must match `^dea:pc-[a-z0-9-]+$`."
+            f"PG-003 ({eid}): process_context must match `^processes:pc-[a-z0-9-]+$`."
         )
     elif context_ids and pc not in context_ids:
         errors.append(
@@ -168,7 +169,7 @@ def _check_one(entry: dict, *, kinds: set[str], context_ids: set[str], process_i
             )
         if not isinstance(target_id, str) or not PROCESS_ID_PATTERN.match(target_id or ""):
             errors.append(
-                f"PG-004 ({eid}): composes[{idx}].target_id must match `^dea:process-[a-z0-9-]+$` (got {target_id!r})."
+                f"PG-004 ({eid}): composes[{idx}].target_id must match `^processes:process-[a-z0-9-]+$` (got {target_id!r})."
             )
         elif process_ids and target_id not in process_ids:
             errors.append(
@@ -356,15 +357,13 @@ def self_test() -> int:
     with tempfile.TemporaryDirectory(prefix="pg_self_test_") as tmp:
         tmp_path = Path(tmp)
         ent_dir = tmp_path / "entities" / "v1-alpha"
-        ctx_dir = tmp_path / "contexts" / "v1-alpha"
         kinds_dir = tmp_path / "classifications"
         ent_dir.mkdir(parents=True)
-        ctx_dir.mkdir(parents=True)
         kinds_dir.mkdir(parents=True)
 
-        # Fixed context
-        (ctx_dir / "dea_pc-test-op.yaml").write_text(
-            "id: dea:pc-test-op\n"
+        # Fixed context (CR-BP-mv1 containment tree form)
+        (ent_dir / "processes-pc-pr-operate-testop1.yaml").write_text(
+            "id: processes:pc-pr-operate-testop1\n"
             "domain: PartyAndRelationship\n"
             "lifecycle_stage: Operate\n"
             "name: Test Context\n"
@@ -383,8 +382,8 @@ def self_test() -> int:
             "status: defined\n"
         )
         # Fixed L2 process
-        (ent_dir / "dea_process-test.yaml").write_text(
-            "id: dea:process-test\n"
+        (ent_dir / "processes-process-pr-operate-test01.yaml").write_text(
+            "id: processes:process-pr-operate-test01\n"
             "type: Process\n"
             "name: Test Process\n"
             "version: 1.0.0\n"
@@ -431,21 +430,21 @@ def self_test() -> int:
         # process target with the good group), PG-007 (unknown kind),
         # PG-008 (active with no active composes, achieved by giving
         # composes a single entry with status="planned").
-        (ent_dir / "dea_group-bad.yaml").write_text(
+        (ent_dir / "processes-group-bad-no-dash.yaml").write_text(
             "id: dea_group-bad-no-dash\n"
             "type: ProcessGroup\n"
             "name: Bad Group\n"
             "definition: Bad.\n"
-            "process_context: dea:pc-unknown-context\n"
+            "process_context: processes:pc-pr-operate-nope001\n"
             "scope:\n  includes: []\n  excludes: []\n"
             "outcomes: []\n"
             "composes:\n"
             "  - source_id: dea_group-bad-no-dash\n"
-            "    target_id: dea:not-a-process\n"
+            "    target_id: processes:group-pr-operate-y00001\n"
             "    relationship_type: composes\n"
             "    status: planned\n"
             "  - source_id: dea_group-bad-no-dash\n"
-            "    target_id: dea:process-nonexistent\n"
+            "    target_id: processes:process-pr-operate-nope01\n"
             "    relationship_type: composes\n"
             "    status: planned\n"
             "process_group_kind: bogus\n"
@@ -453,17 +452,17 @@ def self_test() -> int:
             "lifecycle_status: active\n"
             "version: 1.0.0\n"
         )
-        (ent_dir / "dea_group-overlap.yaml").write_text(
-            "id: dea:group-overlap\n"
+        (ent_dir / "processes-group-pr-operate-overlap1.yaml").write_text(
+            "id: processes:group-pr-operate-overlap1\n"
             "type: ProcessGroup\n"
             "name: Overlap Group\n"
             "definition: Overlap.\n"
-            "process_context: dea:pc-test-op\n"
+            "process_context: processes:pc-pr-operate-testop1\n"
             "scope:\n  includes: []\n  excludes: []\n"
             "outcomes: []\n"
             "composes:\n"
-            "  - source_id: dea:group-overlap\n"
-            "    target_id: dea:process-test\n"
+            "  - source_id: processes:group-pr-operate-overlap1\n"
+            "    target_id: processes:process-pr-operate-test01\n"
             "    relationship_type: composes\n"
             "    status: active\n"
             "process_group_kind: functional\n"
@@ -471,19 +470,19 @@ def self_test() -> int:
             "lifecycle_status: active\n"
             "version: 1.0.0\n"
         )
-        (ent_dir / "dea_group-good.yaml").write_text(
-            "id: dea:group-good\n"
+        (ent_dir / "processes-group-pr-operate-good001.yaml").write_text(
+            "id: processes:group-pr-operate-good001\n"
             "type: ProcessGroup\n"
             "name: Good Group\n"
             "definition: Good.\n"
-            "process_context: dea:pc-test-op\n"
+            "process_context: processes:pc-pr-operate-testop1\n"
             "scope:\n"
             "  includes: [a]\n"
             "  excludes: [b]\n"
             "outcomes: [c]\n"
             "composes:\n"
-            "  - source_id: dea:group-good\n"
-            "    target_id: dea:process-test\n"
+            "  - source_id: processes:group-pr-operate-good001\n"
+            "    target_id: processes:process-pr-operate-test01\n"
             "    relationship_type: composes\n"
             "    status: active\n"
             "process_group_kind: end-to-end\n"
@@ -509,8 +508,8 @@ def self_test() -> int:
 
         # Replace bad + overlap with fixed (still in same context, no
         # overlap because only the good group remains).
-        (ent_dir / "dea_group-bad.yaml").unlink()
-        (ent_dir / "dea_group-overlap.yaml").unlink()
+        (ent_dir / "processes-group-bad-no-dash.yaml").unlink()
+        (ent_dir / "processes-group-pr-operate-overlap1.yaml").unlink()
         errors, suggestions = run_checks(tmp_path)
         if errors:
             print("PG self-test: expected clean pass on fixed catalog; got errors:")

@@ -1,0 +1,73 @@
+id: processes:activity-ao-design-cezz7p
+type: Activity
+name: Define Role Families
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Design Role Catalogue that defines the role families grouping the catalogue's roles.
+belongs_to_business_process: processes:process-ao-design-34e95r
+cohesion_rationale: Constituent work shares a single definition concern (role families grouping the catalogue), one input class (the committed organization model frame), and one output (the defined role families). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: AgencyAndOrganization
+    stage: Design
+    identifier: ecf:agencyOrganization.design
+metadata:
+  established_by: CR-BP-56
+  established_at: '2026-09-14'
+  change_history:
+  - cr: CR-BP-56
+    date: '2026-09-14'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-56
+
+      AgencyAndOrganization Conceive + Design + Build tranche (pattern proven by CR-BP-42 through CR-BP-55).
+
+      Classified per CR-BP-32 section 5 (fails standalone
+
+      executability and resource dedication); decomposition
+
+      boundary marker per CR-BP-32 section 12 pending Task
+
+      records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-define-role-families-intake, dea:task-define-role-families-verify, dea:task-define-role-families-transform, dea:task-define-role-families-confirm, dea:task-define-role-families-record).'
+composes:
+- source_id: processes:activity-ao-design-cezz7p
+  target_id: processes:task-ao-design-intake-zeuvvz
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-ao-design-cezz7p
+  target_id: processes:task-ao-design-verify-2gbk54
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-ao-design-cezz7p
+  target_id: processes:task-ao-design-transform-stp7p7
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-ao-design-cezz7p
+  target_id: processes:task-ao-design-confirm-q2ap3z
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-ao-design-cezz7p
+  target_id: processes:task-ao-design-record-n42uvs
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

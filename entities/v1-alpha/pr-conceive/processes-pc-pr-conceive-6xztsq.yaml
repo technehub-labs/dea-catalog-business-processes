@@ -1,0 +1,71 @@
+id: processes:pc-pr-conceive-6xztsq
+domain: PartyAndRelationship
+lifecycle_stage: Conceive
+name: Customer Strategy Conception
+definition: 'The bounded enterprise context for **conceiving** customer and demand strategy in the **customer and demand** domain. This context addresses the front-end work of framing customer strategy, market segmentation, and demand thesis: deciding which customer segments the enterprise will serve, what value exchange to offer, and which demand thesis to commit to.
+
+  '
+scope:
+  includes:
+  - Customer strategy framing
+  - Market segmentation
+  - Demand thesis development
+  - Customer portfolio thesis
+  excludes:
+  - Customer experience design (Design stage; adjacent context)
+  - Channel build (Build stage; adjacent context)
+  - Active relationship operation (Operate stage; adjacent context)
+outcomes:
+- Customer strategy is framed with a defensible segment thesis.
+- Market segmentation aligns with enterprise value proposition.
+- Demand thesis is testable and bounded.
+adjacent_contexts:
+- processes:pc-pr-design-hrcdy4
+- processes:pc-pr-build-a46hp7
+- processes:pc-pr-operate-pwue5a
+- processes:pc-pr-activate-mwq7bj
+processes:
+- processes:process-pr-conceive-emfgju
+- processes:process-pr-conceive-tvst8u
+cell_charter:
+  enterprise_concern: 'Customer and demand: the enterprise''s exchange with its customer base.'
+  lifecycle_concern: 'Conceive: framing the customer and demand thesis.'
+  combined_semantic_meaning: 'The front-end work of deciding which customer segments to serve, what value to offer, and which demand thesis to commit to.
+
+    '
+  expected_outcomes:
+  - Customer strategy is framed with a defensible segment thesis.
+  - Market segmentation aligns with enterprise value proposition.
+  - Demand thesis is testable and bounded.
+  inclusions:
+  - Customer strategy framing
+  - Market segmentation
+  - Demand thesis development
+  exclusions:
+  - Customer experience design (Design stage)
+  - Channel build (Build stage)
+  - Active relationship operation (Operate stage)
+  adjacent_boundaries:
+  - 'processes:pc-pr-design-hrcdy4 (Design): translates strategy into experience, journey, and demand designs.'
+  - 'processes:pc-pr-build-a46hp7 (Build): builds the channels and acquisition engines.'
+  - 'processes:pc-pr-operate-pwue5a (Operate): runs the active customer relationships framed here.'
+  - 'processes:pc-pr-activate-mwq7bj (Activate): transition from strategy to first active customer.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-13a
+established_at: '2026-09-05'
+change_history:
+- cr: CR-BP-13a
+  date: '2026-09-05'
+  change: 'Initial Process Context record; promoted from the CR-BP-11
+
+    49-coordinate register (ratified by CR-BP-13) as part of the
+
+    CustomerAndDomain admission tranche (CR-BP-13a).
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-13a-customer-and-demand-admission.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

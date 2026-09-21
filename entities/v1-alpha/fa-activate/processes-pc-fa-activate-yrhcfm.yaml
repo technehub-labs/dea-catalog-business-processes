@@ -1,0 +1,77 @@
+schema: dea/v1
+schema_version: 1
+id: processes:pc-fa-activate-yrhcfm
+domain: FinanceAndAccounting
+lifecycle_stage: Activate
+name: Activate Billing Capability
+process_context:
+  id: processes:pc-fa-activate-yrhcfm
+  domain: FinanceAndAccounting
+  lifecycle_stage: Activate
+  scope_summary: Governed activation of a billing or revenue-recognition capability whose live invoicing or revenue recognition is gated by formal regulator-acknowledged accounting or rate framework activation, distinct from capability build and from steady-state billing.
+  process_empty: false
+  lifecycle_status: candidate
+  status: candidate
+cell_charter:
+  enterprise_concern: 'Finance & Accounting: the controlled activation of a billing or revenue-recognition capability whose live invoicing or revenue recognition is gated by regulator-acknowledged accounting or rate framework (insurance statutory accounting; IFRS 17; bank treasury under capital rules; PUC rate-effective billing; PSD2 settlement-account), with the tariff or pricing approval preserved, operational controls (segregation of duties, audit trail, reconciliation) live, and continuing-supervisor notification activated -- distinct from capability build and from steady-state billing.'
+  lifecycle_concern: 'Activate: the live-readiness activation of a billing or revenue-recognition capability, moving it from regulator-acknowledged-but-not-live to regulator-acknowledged-and-live under the regulator''s continuing oversight.'
+  combined_semantic_meaning: 'The regulated-billing activation work that moves a billing or
+
+    revenue-recognition capability from regulator-acknowledged-but-
+
+    not-live to regulator-acknowledged-and-live under the
+
+    enterprise''s regulated-entity approval authority, with the
+
+    regulator''s acknowledgement on record, the tariff or pricing
+
+    approval preserved, operational controls (segregation of
+
+    duties, audit trail, reconciliation) live, and the supervisor''s
+
+    continuing-oversight relationship active, so that the billing
+
+    capability is formally live on the regulated billing record
+
+    under the regulator''s continuing supervision.
+
+    '
+  expected_outcomes:
+  - Regulator's acknowledgement on record for the billing or revenue-recognition capability (insurance statutory accounting; IFRS 17; bank treasury under capital rules; PUC rate-effective billing; PSD2 settlement-account)
+  - Tariff or pricing approval preserved on the regulated billing record
+  - Operational controls (segregation of duties, audit trail, reconciliation) live on the regulated billing record
+  - Continuing-supervisor notification issued and supervisor's continuing-oversight relationship active
+  - Readiness-assessment evidence (supervised-test records, operational-control framework, first-invoice or first-recognition runbook) recorded
+  - Regulated billing record entry preserved for the activated billing capability
+  inclusions:
+  - Regulator-acknowledged accounting or rate framework activation (state insurance department supervision; IFRS 17 transition; ECB / PRA capital-rules supervision; PUC rate-effective framework; PSD2 / Federal Reserve / ECB settlement-account framework)
+  - Tariff or pricing approval acquisition and recording (insurance statutory accounting rate filings; PUC rate-case approval; PSD2 interchange-fee framework; bank treasury capital-rule pricing; settlement-account fee schedule)
+  - Billing-capability description and readiness-assessment evidence (supervised-test records, operational-control framework, first-invoice or first-recognition runbook)
+  - Continuing-supervisor notification activation under the regulator's continuing oversight
+  - Operational controls (segregation of duties, audit trail, reconciliation) live on the regulated billing record
+  - Regulated billing record entry preserved for the activated billing capability
+  exclusions:
+  - Billing-capability conception and design (FinanceAndAccounting x Conceive / Design)
+  - Billing-capability build and configuration (FinanceAndAccounting x Build)
+  - Steady-state billing operations performance management (FinanceAndAccounting x Operate)
+  - Billing-capability decommission and deregistration (FinanceAndAccounting x Retire; CR-BP-75 admitted the regulated run-off adjacent cell)
+  - Non-regulated billing-capability activation (internal-finance cutover without regulator's acknowledgement) -- RECORD-PATTERN or MERGE per CR-BP-63 baseline
+  - Capabilities sourcing or licensing absent a regulator-acknowledged accounting or rate framework
+  adjacent_boundaries:
+  - 'processes:pc-fa-build-pztsp9 (adjacent context): the Build cell handles billing-capability construction and configuration; the Activate cell governs the regulator-acknowledged activation step that moves the capability from acknowledged-but-not-live to acknowledged-and-live.'
+  - 'processes:pc-fa-operate-afew7e (adjacent context): the Operate cell handles steady-state billing operations performance management; the Activate cell only governs the regulator-acknowledged activation step.'
+  - 'processes:pc-fa-retire-64q5p9 (adjacent context, CR-BP-75): the Retire cell at F&A handles regulated run-off; the Activate cell handles the regulated live-readiness activation of a billing capability.'
+  - 'processes:pc-ao-activate-kusw2u (sibling cell, CR-BP-81): the A&O Activate cell governs regulator-controlled individual-workforce mobilization; the FA Activate cell governs regulator-acknowledged billing-capability activation -- separate concerns (individual vs billing capability).'
+  - 'processes:pc-eo-activate-xdfscw (sibling cell, CR-BP-82): the OE Activate cell governs regulator-authorized operations-capability activation; the FA Activate cell governs regulator-acknowledged billing-capability activation -- separate concerns (operations vs billing).'
+process_groups:
+- id: processes:group-fa-activate-n9s2z3
+  kind: functional
+  scope: 'Governs the controlled activation of a billing or revenue- recognition capability whose live invoicing or revenue recognition is gated by regulator-acknowledged accounting or rate framework: regulator-acknowledged accounting or rate framework activation; tariff or pricing approval acquisition and recording; readiness-assessment evidence; supervised-test records; first-invoice or first-recognition runbook; operational controls (segregation of duties, audit trail, reconciliation) live on the regulated billing record; continuing-supervisor notification; regulated billing record entry preserved.'
+  processes:
+  - processes:process-fa-activate-bzfywk
+admission:
+  recommended_by: dea:discovery-finance-and-accounting-activate-escape
+  recommended_at: '2026-09-16'
+  recommended_score: 10
+  carrier_cr: CR-BP-83
+  bp_id: processes:process-fa-activate-bzfywk

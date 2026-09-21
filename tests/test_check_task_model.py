@@ -37,13 +37,13 @@ from check_task_model import (  # noqa: E402
 # -----------------------------------------------------------------------------
 
 
-def test_id_pattern_starts_with_dea_task() -> None:
-    assert ID_PATTERN.startswith("^dea:task-")
+def test_id_pattern_starts_with_processes_task() -> None:
+    assert ID_PATTERN.startswith("^processes:task-")
     assert ID_PATTERN.endswith("$")
 
 
-def test_activity_id_pattern_starts_with_dea_activity() -> None:
-    assert ACTIVITY_ID_PATTERN.startswith("^dea:activity-")
+def test_activity_id_pattern_starts_with_processes_activity() -> None:
+    assert ACTIVITY_ID_PATTERN.startswith("^processes:activity-")
 
 
 def test_disallowed_l4_fields_includes_orchestration_and_sequencing() -> None:
@@ -64,11 +64,11 @@ def test_rule_ids_match_five_checks() -> None:
 def _record(**overrides):
     """A valid Task record that should pass TASK-001..005."""
     base = {
-        "id": "dea:task-test",
+        "id": "processes:task-test",
         "type": "Task",
         "name": "Test Task",
         "definition": "Test task definition",
-        "belongs_to_activity": "dea:activity-test",
+        "belongs_to_activity": "processes:activity-test",
         "trigger": "Test trigger",
         "outcome": "Test outcome",
         "responsibility": "Test responsibility",
@@ -98,9 +98,12 @@ def _record(**overrides):
 
 
 def _make_activity(activity_id: str, entities_dir: Path):
-    activity_dir = entities_dir / activity_id
+    """CR-BP-mv1: fixture Activity records use the containment-tree filename
+    form (`processes-<...>.yaml` inside a record dir named after the slug)."""
+    slug = activity_id.split(":", 1)[1]
+    activity_dir = entities_dir / slug
     activity_dir.mkdir(parents=True, exist_ok=True)
-    activity_yaml = activity_dir / f"{activity_id}.yaml"
+    activity_yaml = activity_dir / f"{activity_id.replace(':', '-')}.yaml"
     activity_yaml.write_text(yaml.safe_dump({
         "id": activity_id,
         "type": "Activity",
@@ -118,12 +121,12 @@ def _make_activity(activity_id: str, entities_dir: Path):
 
 
 def test_task_001_id_format_pass():
-    findings = _check_id_format(_record(id="dea:task-test"), "<test>")
+    findings = _check_id_format(_record(id="processes:task-test"), "<test>")
     assert findings == []
 
 
 def test_task_001_id_format_fail_wrong_prefix():
-    findings = _check_id_format(_record(id="dea:activity-test"), "<test>")
+    findings = _check_id_format(_record(id="processes:activity-test"), "<test>")
     assert any(f.rule == "TASK-001" for f in findings), findings
 
 
@@ -201,19 +204,19 @@ def test_task_003_fail_missing_outcome():
 
 
 def test_task_004_pass(tmp_path):
-    _make_activity("dea:activity-test", tmp_path)
+    _make_activity("processes:activity-test", tmp_path)
     findings = _check_activity_resolution(_record(), "<test>", entities_dir=tmp_path)
     assert findings == []
 
 
 def test_task_004_fail_wrong_format(tmp_path):
-    record = _record(belongs_to_activity="dea:task-other")
+    record = _record(belongs_to_activity="processes:task-other")
     findings = _check_activity_resolution(record, "<test>", entities_dir=tmp_path)
     assert any(f.rule == "TASK-004" for f in findings), findings
 
 
 def test_task_004_fail_unresolved(tmp_path):
-    record = _record(belongs_to_activity="dea:activity-nonexistent")
+    record = _record(belongs_to_activity="processes:activity-nonexistent")
     findings = _check_activity_resolution(record, "<test>", entities_dir=tmp_path)
     assert any(f.rule == "TASK-004" for f in findings), findings
 
@@ -252,7 +255,7 @@ def test_task_005_fail_orchestration():
 
 
 def test_evaluate_all_pass_with_resolved_activity(tmp_path):
-    _make_activity("dea:activity-test", tmp_path)
+    _make_activity("processes:activity-test", tmp_path)
     findings = evaluate([(Path("<test>"), _record())], entities_dir=tmp_path)
     assert findings == []
     assert verdict(findings) == "CONFORMANT"
@@ -261,7 +264,7 @@ def test_evaluate_all_pass_with_resolved_activity(tmp_path):
 def test_evaluate_emits_multiple_findings(tmp_path):
     record = _record(
         id="dea:bad-id-format",
-        belongs_to_activity="dea:activity-bad",
+        belongs_to_activity="processes:activity-bad",
         sequencing=["forbidden"],
     )
     findings = evaluate([(Path("<test>"), record)], entities_dir=tmp_path)

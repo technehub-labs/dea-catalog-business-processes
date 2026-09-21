@@ -20,7 +20,7 @@
     },
     "id": {
       "type": "string",
-      "pattern": "^dea:activity-[a-z0-9-]+$",
+      "pattern": "^processes:activity-[a-z0-9-]+$",
       "description": "Stable Activity id. CR-BP-04 §4 family convention: dea:activity-<kebab-name>. The id must be stable across renames of name/cohesion_rationale; renames go through the CR-programme."
     },
     "name": {
@@ -37,7 +37,7 @@
     },
     "belongs_to_business_process": {
       "type": "string",
-      "pattern": "^dea:process-[a-z0-9-]+$",
+      "pattern": "^processes:process-[a-z0-9-]+$",
       "description": "Reference to the parent Business Process (dea:process-* id family). ACT-001 enforces presence + pattern. The parent BP must declare this Activity in `metadata.activity_references[]` or in a `composes[]` entry whose target_id matches this Activity id (ACT-010 bidirectional traceability)."
     },
     "cohesion_rationale": {
@@ -55,11 +55,11 @@
         "properties": {
           "source_id": {
             "type": "string",
-            "pattern": "^dea:activity-[a-z0-9-]+$"
+            "pattern": "^processes:activity-[a-z0-9-]+$"
           },
           "target_id": {
             "type": "string",
-            "pattern": "^dea:task-[a-z0-9-]+$",
+            "pattern": "^processes:task-[a-z0-9-]+$",
             "description": "Target Task id. CR-BP-32 §12 establishes L4 (Task) as the decomposition boundary. CR-BP-33 will introduce the Task record type; until then, target_id values referencing `dea:task-*` are validated by ACT-004 only when at least one such record exists in the catalog."
           },
           "relationship_type": {
@@ -145,7 +145,7 @@
       "properties": {
         "belongs_to_business_process": {
           "type": "string",
-          "pattern": "^dea:process-[a-z0-9-]+$"
+          "pattern": "^processes:process-[a-z0-9-]+$"
         },
         "cohesion_rationale": {
           "type": "string",

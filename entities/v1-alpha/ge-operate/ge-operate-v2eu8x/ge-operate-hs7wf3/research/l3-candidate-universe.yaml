@@ -1,0 +1,104 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-49
+status: candidate-not-canonical; subject to review
+parent_business_process: processes:process-ge-operate-hs7wf3
+coordinate:
+  domain: GovernanceAndExistence
+  stage: Operate
+  process_context: processes:pc-ge-operate-hb2dac
+  process_group: processes:group-ge-operate-v2eu8x
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42,
+  scaled by CR-BP-43 through CR-BP-48)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/processes:process-ge-operate-hs7wf3
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: processes:activity-ge-operate-bjfkws
+  name: "Run Board and Committee Cycles"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Cycle scheduling adherence; agenda execution; convening logistics"
+  out_of_scope:
+  - "Body establishment (processes:process-ge-build-3p38us)"
+  - "Governance decision facilitation (processes:activity-ge-operate-yt8562)"
+  evidence:
+  - "Parent BP outcome (board and committee cycles run on schedule)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-49
+- id: processes:activity-ge-operate-yt8562
+  name: "Facilitate Governance Decisions"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Decision preparation (papers, quorum); decision facilitation within cycles; decision-right adherence verification"
+  out_of_scope:
+  - "Cycle operation (processes:activity-ge-operate-bjfkws)"
+  - "Decision recording (processes:activity-ge-operate-fch6f5)"
+  evidence:
+  - "Parent BP outcome (governance decisions made)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-49
+- id: processes:activity-ge-operate-fch6f5
+  name: "Record Governance Decisions"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Minute and decision recording; decision register upkeep; decision distribution"
+  out_of_scope:
+  - "Decision facilitation (processes:activity-ge-operate-yt8562)"
+  - "Effectiveness review (processes:process-ge-improve-mgkw59)"
+  evidence:
+  - "Parent BP outcome (governance decisions made and recorded)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-49
+- id: processes:activity-ge-operate-pvyf2x
+  name: "Maintain Governance Machinery"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Calendar and secretariat maintenance; delegation register upkeep; membership change processing"
+  out_of_scope:
+  - "Body establishment (processes:process-ge-build-3p38us)"
+  - "Cycle operation (processes:activity-ge-operate-bjfkws)"
+  evidence:
+  - "Parent BP outcome (day-to-day governance machinery operated)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-49
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."

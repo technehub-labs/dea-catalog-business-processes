@@ -29,13 +29,13 @@ from check_process_group import run_checks  # noqa: E402
 
 def _write_minimal_pg(tmp_path: Path, *, grouping_basis=None, membership_criteria=None) -> Path:
     """Write a minimal conformant PG record; optionally with grouping_basis / membership_criteria."""
-    entities = tmp_path / "entities" / "v1-alpha" / "dea:group-x"
+    entities = tmp_path / "entities" / "v1-alpha" / "processes:group-x"
     entities.mkdir(parents=True)
     # Provide a target BP record so the composes resolves; otherwise PG-005 fires.
-    bp_dir = tmp_path / "entities" / "v1-alpha" / "dea:process-x"
+    bp_dir = tmp_path / "entities" / "v1-alpha" / "processes:process-x"
     bp_dir.mkdir(parents=True)
-    (bp_dir / "dea:process-x.yaml").write_text(
-        "id: dea:process-x\n"
+    (bp_dir / "processes:process-x.yaml").write_text(
+        "id: processes:process-pr-operate-x00001\n"
         "type: Process\n"
         "name: X\n"
         "version: 1.0.0\n"
@@ -50,7 +50,7 @@ def _write_minimal_pg(tmp_path: Path, *, grouping_basis=None, membership_criteri
         "  outcome_statement: outcome.\n"
         "  evidence_links: [{type: documentation, ref: docs/x.md}]\n"
         "relationships:\n"
-        "  - source_id: dea:process-x\n"
+        "  - source_id: processes:process-pr-operate-x00001\n"
         "    relationship_type: serves\n"
         "    target_id: ecf:governanceAndExistence.conceive\n"
         "ecfConformance:\n"
@@ -72,21 +72,21 @@ def _write_minimal_pg(tmp_path: Path, *, grouping_basis=None, membership_criteri
         "      date: '2026-09-18'\n"
         "      change: test\n"
         "context:\n"
-        "  - ref: dea:pc-test\n",
+        "  - ref: processes:pc-pr-operate-test001\n",
         encoding="utf-8",
     )
     body = (
-        "id: dea:group-x\n"
+        "id: processes:group-pr-operate-x00001\n"
         "type: ProcessGroup\n"
         "name: X\n"
         "version: 1.0.0\n"
-        "process_context: dea:pc-test\n"
+        "process_context: processes:pc-pr-operate-test001\n"
         "process_group_kind: functional\n"
         "scope:\n  includes: [a]\n  excludes: [b]\n"
         "outcomes: [x]\n"
         "composes:\n"
-        "  - source_id: dea:group-x\n"
-        "    target_id: dea:process-x\n"
+        "  - source_id: processes:group-pr-operate-x00001\n"
+        "    target_id: processes:process-pr-operate-x00001\n"
         "    relationship_type: composes\n"
         "    status: active\n"
         "status: active\n"
@@ -104,7 +104,7 @@ def _write_minimal_pg(tmp_path: Path, *, grouping_basis=None, membership_criteri
         mc_dump = yaml.safe_dump(membership_criteria, default_flow_style=False, sort_keys=False)
         mc_indented = "\n".join("  " + ln if ln.strip() else ln for ln in mc_dump.splitlines())
         body += "\nmembership_criteria:\n" + mc_indented
-    path = entities / "dea:group-x.yaml"
+    path = entities / "processes:group-x.yaml"
     path.write_text(body, encoding="utf-8")
     return path
 

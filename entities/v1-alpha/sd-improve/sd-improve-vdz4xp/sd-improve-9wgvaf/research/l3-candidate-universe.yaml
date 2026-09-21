@@ -1,0 +1,104 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-55
+status: candidate-not-canonical; subject to review
+parent_business_process: processes:process-sd-improve-9wgvaf
+coordinate:
+  domain: StrategyAndDirection
+  stage: Improve
+  process_context: processes:pc-sd-improve-ft9k5f
+  process_group: processes:group-sd-improve-vdz4xp
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42,
+  scaled by CR-BP-43 through CR-BP-54)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/processes:process-sd-improve-9wgvaf
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: processes:activity-sd-improve-dhkxf6
+  name: "Consolidate Adaptation Drivers"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Driver intake; driver cross-referencing; adaptation case assembly"
+  out_of_scope:
+  - "Signal sensing (processes:process-sd-operate-53y4j4)"
+  - "Adjustment formulation (processes:activity-sd-improve-qxsaqc)"
+  evidence:
+  - "Parent BP trigger (environmental signals, performance monitoring, or effectiveness review indicate the strategic direction needs to be adapted)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-55
+- id: processes:activity-sd-improve-qxsaqc
+  name: "Formulate Direction Adjustments"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Adjustment drafting; adjustment option framing; option-to-driver trace"
+  out_of_scope:
+  - "Adaptation driver consolidation (processes:activity-sd-improve-dhkxf6)"
+  - "Implication assessment (processes:activity-sd-improve-r5jbb6)"
+  evidence:
+  - "Parent BP outcome (strategic direction is adapted)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-55
+- id: processes:activity-sd-improve-r5jbb6
+  name: "Assess Adjustment Implications"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Implication analysis; objective impact review; portfolio impact review"
+  out_of_scope:
+  - "Adjustment formulation (processes:activity-sd-improve-qxsaqc)"
+  - "Portfolio steering (processes:process-sd-operate-u6xgu5)"
+  evidence:
+  - "Parent BP trigger (the strategic direction needs to be adapted)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-55
+- id: processes:activity-sd-improve-m6ww6z
+  name: "Commit Direction Adjustment"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Adjustment selection; governance ratification; handoff to objectives refresh"
+  out_of_scope:
+  - "Implication assessment (processes:activity-sd-improve-r5jbb6)"
+  - "Objectives refresh (processes:process-sd-improve-aqbrm7)"
+  evidence:
+  - "Parent BP outcome (strategic direction is adapted, objectives and targets are refreshed, and strategy effectiveness is reviewed)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-55
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."

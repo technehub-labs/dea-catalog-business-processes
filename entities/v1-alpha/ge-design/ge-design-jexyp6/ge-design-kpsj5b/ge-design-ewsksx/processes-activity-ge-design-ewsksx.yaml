@@ -1,0 +1,73 @@
+id: processes:activity-ge-design-ewsksx
+type: Activity
+name: Define Control Objectives
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Design Policies and Controls that defines the control objectives the designed policies must satisfy.
+belongs_to_business_process: processes:process-ge-design-kpsj5b
+cohesion_rationale: Constituent work shares a single objective concern (what each control achieves), one reference class (policy artefact designs, risk tolerance bands), and one output (the control objective set). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: GovernanceAndExistence
+    stage: Design
+    identifier: ecf:governanceExistence.design
+metadata:
+  established_by: CR-BP-48
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-48
+    date: '2026-09-13'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-48
+
+      GovernanceAndExistence Conceive + Design + Build tranche (pattern
+
+      proven by CR-BP-42 through CR-BP-47). Classified per CR-BP-32
+
+      section 5 (fails standalone executability and resource dedication);
+
+      decomposition boundary marker per CR-BP-32 section 12 pending Task
+
+      records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-define-control-objectives-intake, dea:task-define-control-objectives-verify, dea:task-define-control-objectives-transform, dea:task-define-control-objectives-confirm, dea:task-define-control-objectives-record).'
+composes:
+- source_id: processes:activity-ge-design-ewsksx
+  target_id: processes:task-ge-design-intake-dawtnv
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-ge-design-ewsksx
+  target_id: processes:task-ge-design-verify-qn6vgu
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-ge-design-ewsksx
+  target_id: processes:task-ge-design-transform-neef8k
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-ge-design-ewsksx
+  target_id: processes:task-ge-design-confirm-6q4rz3
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-ge-design-ewsksx
+  target_id: processes:task-ge-design-record-z4fnv6
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

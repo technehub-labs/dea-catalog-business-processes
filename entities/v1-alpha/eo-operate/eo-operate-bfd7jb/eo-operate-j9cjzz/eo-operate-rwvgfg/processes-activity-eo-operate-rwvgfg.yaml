@@ -1,0 +1,75 @@
+id: processes:activity-eo-operate-rwvgfg
+type: Activity
+name: Record Asset Availability
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Operate Asset Maintenance that maintains the per-asset availability record across scheduled and reactive work.
+belongs_to_business_process: processes:process-eo-operate-j9cjzz
+cohesion_rationale: Constituent work shares a single documentation concern (maintenance events into the availability record), one artifact (the asset availability record), and spans both scheduled and reactive work as its source. Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: EnablementAndOperations
+    stage: Operate
+    identifier: ecf:enablementAndOperations.operate
+metadata:
+  established_by: CR-BP-43
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-43
+    date: '2026-09-13'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-43
+
+      EnablementAndOperations / Operate tranche completing the L3
+
+      deposition of the pilot coordinate (pattern proven by CR-BP-42).
+
+      Classified per CR-BP-32 section 5 (fails standalone executability
+
+      and resource dedication); decomposition boundary marker per
+
+      CR-BP-32 section 12 pending Task records (dea:Task lifecycle:
+
+      proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-record-asset-availability-intake, dea:task-record-asset-availability-verify, dea:task-record-asset-availability-transform, dea:task-record-asset-availability-confirm, dea:task-record-asset-availability-record).'
+composes:
+- source_id: processes:activity-eo-operate-rwvgfg
+  target_id: processes:task-eo-operate-intake-ms6r2s
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-operate-rwvgfg
+  target_id: processes:task-eo-operate-verify-akzmvm
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-operate-rwvgfg
+  target_id: processes:task-eo-operate-transform-pkqr56
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-operate-rwvgfg
+  target_id: processes:task-eo-operate-confirm-gzt9f4
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-operate-rwvgfg
+  target_id: processes:task-eo-operate-record-55yn4u
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

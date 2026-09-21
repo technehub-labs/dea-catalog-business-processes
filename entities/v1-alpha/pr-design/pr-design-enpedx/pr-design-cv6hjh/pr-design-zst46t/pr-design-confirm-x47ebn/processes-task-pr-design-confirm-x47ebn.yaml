@@ -1,0 +1,63 @@
+id: processes:task-pr-design-confirm-x47ebn
+type: Task
+name: Articulate Supply Paths Confirmation
+definition: The bounded unit of work within `processes:activity-pr-design-zst46t` (Articulate Supply Paths) that reconcile the design-ready journey artefact against the experience-quality criteria and the touchpoint-taxonomy contract, issue the design-completion confirmation to the experience custodian, and log the confirmation.
+belongs_to_activity: processes:activity-pr-design-zst46t
+trigger: Bounded-work artefact produced for Articulate Supply Paths; confirm gate may reconcile against the governing contract and issue the completion confirmation to the relationship custodian.
+outcome: Completion confirmation issued for Articulate Supply Paths and acknowledged by the relationship custodian and any governing-party notify-list; confirmation custodian passes custody to the records custodian.
+responsibility: confirmation custodian
+boundary:
+  inclusions:
+  - Reconciliation of the Articulate Supply Paths artefact against the governing contract and any notify-list requirements.
+  - Issuance of the Articulate Supply Paths completion confirmation and acknowledgement logging.
+  exclusions:
+  - Long-term retention of the closure case file (phase 5).
+  - Re-execution of prior phases on confirmation rejection.
+evidence:
+- source: Bain Net Promoter System methodology
+  claim: experience-quality measurement methodology grounding the design-phase experience-quality criteria and the verify-phase quality-criteria checks. Bounded-work evidence for the confirm-phase custodian of `processes:activity-pr-design-zst46t` (CR-BP-L4-02 enrichment).
+  strength: E2
+- source: Nielsen Norman Group interaction-design foundations
+  claim: interaction-design framework grounding the design-phase touchpoint and interaction-pattern design step. Bounded-work evidence for the confirm-phase custodian of `processes:activity-pr-design-zst46t` (CR-BP-L4-02 enrichment).
+  strength: E3
+- source: processes:activity-pr-design-zst46t
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-02 cell-specific bounded-work prose for this PartyAndRelationship L4 Task.
+  strength: E3
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: PartyAndRelationship
+    stage: Design
+    identifier: ecf:partyRelationship.design
+metadata:
+  established_by: CR-BP-102
+  established_at: '2026-09-19'
+  change_history:
+  - cr: CR-BP-45
+    date: '2026-09-13'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-45
+
+      PartyAndRelationship Conceive + Design + Build tranche (completes
+
+      the PR domain''s L3 coverage; pattern proven by CR-BP-42, CR-BP-43,
+
+      CR-BP-44). Classified per CR-BP-32 section 5 (fails standalone
+
+      executability and resource dedication); decomposition boundary
+
+      marker per CR-BP-32 section 12 pending Task records (dea:Task
+
+      lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

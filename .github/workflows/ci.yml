@@ -130,6 +130,14 @@ jobs:
               f for f in files
               if not any(p in ("research", "candidates", "retired") for p in Path(f).parts)
           ]
+          # CR-BP-mv1: Process Context records carry no `type:` field by
+          # design and are owned by the dedicated check_process_context.py
+          # gate (this job, below). Pre-migration they lived under
+          # contexts/ and never entered this dispatch; keep them out.
+          files = [
+              f for f in files
+              if not Path(f).name.startswith("processes-pc-")
+          ]
           for path in files:
               with open(path) as f:
                   data = yaml.safe_load(f) or {}
@@ -258,6 +266,25 @@ jobs:
         if: steps.check.outputs.skip != 'true'
         run: python scripts/check_process_group.py
 
+      - name: Run ID System gate (CR-BP-mv1; IDM-001..007)
+        if: steps.check.outputs.skip != 'true'
+        run: python scripts/check_id_system.py --strict
+
+      - name: Run ID System coherence gate (CR-BP-mv1; IDM-008, PR-scoped)
+        if: steps.check.outputs.skip != 'true'
+        run: |
+          git fetch origin main --depth=1 || true
+          python scripts/check_id_system.py --base-ref origin/main \
+            --report-path id-system-coherence-report.md
+
+      - name: Upload ID System coherence report
+        if: steps.check.outputs.skip != 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: id-system-coherence-report
+          path: id-system-coherence-report.md
+          if-no-files-found: ignore
+
       - name: Run lifecycle discovery gate (CR-BP-62; DISC-001..008)
         if: steps.check.outputs.skip != 'true'
         # Advisory. Structural completeness of lifecycle-discovery
@@ -269,7 +296,14 @@ jobs:
       - name: Run cross-repo conformance suite (CR-CATALOG-STRUCT-01 §11)
         if: steps.check.outputs.skip != 'true'
         run: |
-          python .metaframework/tools/conformance_test_catalog_structure.py \
+          # CR-BP-mv1: prefer the vendored tree-aware copy (containment
+          # tree support); fall back to the dea-metaframework checkout.
+          # Upstream port tracked on dea-metaframework.
+          CST=.metaframework/tools/conformance_test_catalog_structure.py
+          if [ -f scripts/conformance_test_catalog_structure.py ]; then
+            CST=scripts/conformance_test_catalog_structure.py
+          fi
+          python "$CST" \
               --catalog-root . \
               --template-root .metaframework/tools/catalog-repo-template \
               --strict

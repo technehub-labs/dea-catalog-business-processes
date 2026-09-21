@@ -1,0 +1,72 @@
+id: processes:pc-ge-improve-c78ppp
+domain: GovernanceAndExistence
+lifecycle_stage: Improve
+name: Governance Review and Learning
+definition: 'The bounded enterprise context for **improving** the governance bodies, policy regimes, and oversight machinery in the **governance and existence** domain. This context addresses the work of reviewing governance effectiveness, scoring audit findings, and feeding the lessons back into Conceive/Design/Build/Operate cycles.
+
+  '
+scope:
+  includes:
+  - Governance effectiveness review
+  - Audit finding scoring
+  - Policy regime refinement
+  - Lessons-learned propagation
+  excludes:
+  - Governance operation (Operate stage)
+  - Strategy framing (Conceive stage)
+  - Governance system design (Design stage)
+outcomes:
+- Governance effectiveness is measured.
+- Audit findings drive improvement.
+- Lessons learned feed back into Conceive/Design cycles.
+adjacent_contexts:
+- processes:pc-ge-conceive-b5xwpd
+- processes:pc-ge-design-3f2gjr
+- processes:pc-ge-build-52hjrc
+- processes:pc-ge-operate-hb2dac
+processes:
+- processes:process-ge-improve-mgkw59
+- processes:process-ge-improve-axtq3b
+- processes:process-ge-improve-u3g5dh
+cell_charter:
+  enterprise_concern: 'Governance and existence: the enterprise''s mandate, policy posture, and charter direction.'
+  lifecycle_concern: 'Improve: closing the loop between governance insight and conceive/design/build/operate cycles.'
+  combined_semantic_meaning: 'Reviewing governance effectiveness, scoring audit findings, and feeding lessons back into Conceive/Design/Build/Operate cycles.
+
+    '
+  expected_outcomes:
+  - Governance effectiveness is measured.
+  - Audit findings drive improvement.
+  - Lessons learned feed back into Conceive/Design cycles.
+  inclusions:
+  - Governance effectiveness review
+  - Audit finding scoring
+  - Policy regime refinement
+  exclusions:
+  - Governance operation (Operate stage)
+  - Strategy framing (Conceive stage)
+  - Governance system design (Design stage)
+  adjacent_boundaries:
+  - 'processes:pc-ge-conceive-b5xwpd (Conceive): insights shape strategy framing.'
+  - 'processes:pc-ge-design-3f2gjr (Design): insights sharpen governance design.'
+  - 'processes:pc-ge-build-52hjrc (Build): insights reveal body and charter gaps.'
+  - 'processes:pc-ge-operate-hb2dac (Operate): insights refine day-to-day governance operation.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-13a
+established_at: '2026-09-05'
+change_history:
+- cr: CR-BP-13a
+  date: '2026-09-05'
+  change: 'Initial Process Context record; promoted from the CR-BP-11
+
+    49-coordinate register (ratified by CR-BP-13) as part of the
+
+    CustomerAndDomain admission tranche (CR-BP-13a).
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-13a-customer-and-demand-admission.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

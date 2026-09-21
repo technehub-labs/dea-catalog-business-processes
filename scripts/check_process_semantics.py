@@ -137,8 +137,8 @@ APPROVED_SPECIALIZATION_BASES = {
     "by-lifecycle-condition", "by-organizational-context",
 }
 
-PC_PATTERN = re.compile(r"^dea:pc-[a-z0-9-]+$")
-PROCESS_PATTERN = re.compile(r"^dea:process-[a-z0-9-]+$")
+PC_PATTERN = re.compile(r"^processes:pc-[a-z0-9-]+$")
+PROCESS_PATTERN = re.compile(r"^processes:process-[a-z0-9-]+$")
 
 
 def _make_emit(prefix: str):
@@ -158,11 +158,13 @@ def _load_yaml(path: Path) -> dict | None:
 
 
 def _catalog_pc_ids(catalog_root: Path) -> set[str]:
-    pc_dir = catalog_root / "contexts" / "v1-alpha"
+    """CR-BP-mv1: PCs now live in the L0-rooted containment tree at
+    entities/v1-alpha/<cell>/processes-pc-*.yaml (contexts/ is retired)."""
+    ent_dir = catalog_root / "entities" / "v1-alpha"
     ids: set[str] = set()
-    if not pc_dir.exists():
+    if not ent_dir.exists():
         return ids
-    for path in pc_dir.glob("dea-pc-*.yaml"):
+    for path in ent_dir.rglob("processes-pc-*.yaml"):
         data = _load_yaml(path) or {}
         cid = data.get("id")
         if cid:
@@ -175,7 +177,7 @@ def _catalog_process_ids(catalog_root: Path) -> set[str]:
     ids: set[str] = set()
     if not ent_dir.exists():
         return ids
-    for path in ent_dir.glob("dea:process-*/dea:process-*.yaml"):
+    for path in ent_dir.rglob("processes-process-*.yaml"):
         data = _load_yaml(path) or {}
         cid = data.get("id")
         if cid:
@@ -237,7 +239,7 @@ def run_checks(
     if not entries_dir.exists():
         return errors, warnings
 
-    for path in sorted(entries_dir.glob("dea:process-*/dea:process-*.yaml")):
+    for path in sorted(entries_dir.rglob("processes-process-*.yaml")):
         data = _load_yaml(path) or {}
         # L1 Process Groups are catalog-owned; the semantic rules
         # apply to L2 Business Processes only.
@@ -517,46 +519,46 @@ def _self_test(catalog_root: Path) -> tuple[bool, str]:
     """Run the self-test; return (passed, summary)."""
     broken_errors: list[str] = []
     fixed_errors: list[str] = []
-    pc_ids = {"dea:pc-pr-op", "dea:pc-pr-im"}
-    process_ids = {"dea:process-parent-process", "dea:process-cycle-parent"}
+    pc_ids = {"processes:pc-pr-op", "processes:pc-pr-im"}
+    process_ids = {"processes:process-parent-process", "processes:process-cycle-parent"}
 
     # Broken catalog fixture
     with tempfile.TemporaryDirectory() as tmp:
         tmp_path = Path(tmp)
-        (tmp_path / "entities" / "v1-alpha" / "dea:process-cycle-parent").mkdir(parents=True)
-        (tmp_path / "entities" / "v1-alpha" / "dea:process-bad").mkdir(parents=True)
+        (tmp_path / "entities" / "v1-alpha" / "pr-operate" / "cycle-parent").mkdir(parents=True)
+        (tmp_path / "entities" / "v1-alpha" / "pr-operate" / "bad").mkdir(parents=True)
         # BP-SEM-014 fixture: a parent that specializes back to its
         # child, forming a cycle. Created before `bad` so the bad
         # record's specializes edge points at a real id.
         cycle_parent = {
-            "id": "dea:process-cycle-parent",
+            "id": "processes:process-cycle-parent",
             "name": "Cycle Parent",
             "type": "Process",
             "version": "1.0.0",
             "process_intent": "manage",
             "process_type": "core",
-            "context": [{"ref": "dea:pc-pr-op"}],
+            "context": [{"ref": "processes:pc-pr-op"}],
             # Reverse-edge back to `dea:process-bad` forms a cycle.
             "relationships": [{
-                "source_id": "dea:process-cycle-parent",
+                "source_id": "processes:process-cycle-parent",
                 "relationship_type": "specializes",
-                "target_id": "dea:process-bad",
+                "target_id": "processes:process-bad",
                 "specialization_pattern": "by-customer-segment",
             }],
         }
-        (tmp_path / "entities" / "v1-alpha" / "dea:process-cycle-parent" / "dea:process-cycle-parent.yaml").write_text(
+        (tmp_path / "entities" / "v1-alpha" / "pr-operate" / "cycle-parent" / "processes-process-cycle-parent.yaml").write_text(
             yaml.safe_dump(cycle_parent, sort_keys=False)
         )
         broken = {
-            "id": "dea:process-bad",
+            "id": "processes:process-bad",
             "name": "Bad",
             "type": "Process",
             "version": "1.0.0",
             "process_intent": "harmonise",        # BP-SEM-001
             "process_type": "essential",          # BP-SEM-002
             "process_audience": "party-relationship",
-            "context": [{"ref": "dea:pc-unknown"}],  # BP-SEM-008
-            "process_specialization": ["dea:process-nope"],  # BP-SEM-005
+            "context": [{"ref": "processes:pc-unknown"}],  # BP-SEM-008
+            "process_specialization": ["processes:process-nope"],  # BP-SEM-005
             "specialization_pattern": "by-magic",  # no basis -> BP-SEM-006
             # BP-SEM-013: specializes to an unknown target with no
             # specialization_pattern / specialization_basis.
@@ -564,19 +566,19 @@ def _self_test(catalog_root: Path) -> tuple[bool, str]:
             # for BP-SEM-014.
             "relationships": [
                 {
-                    "source_id": "dea:process-bad",
+                    "source_id": "processes:process-bad",
                     "relationship_type": "specializes",
-                    "target_id": "dea:process-nonexistent",
+                    "target_id": "processes:process-nonexistent",
                 },
                 {
-                    "source_id": "dea:process-bad",
+                    "source_id": "processes:process-bad",
                     "relationship_type": "specializes",
-                    "target_id": "dea:process-cycle-parent",
+                    "target_id": "processes:process-cycle-parent",
                     "specialization_pattern": "by-customer-segment",
                 },
             ],
         }
-        (tmp_path / "entities" / "v1-alpha" / "dea:process-bad" / "dea:process-bad.yaml").write_text(
+        (tmp_path / "entities" / "v1-alpha" / "pr-operate" / "bad" / "processes-process-bad.yaml").write_text(
             yaml.safe_dump(broken, sort_keys=False)
         )
         broken_errors, broken_warnings = run_checks(tmp_path, pc_ids=pc_ids, process_ids=process_ids)
@@ -584,41 +586,41 @@ def _self_test(catalog_root: Path) -> tuple[bool, str]:
     # Fixed catalog fixture
     with tempfile.TemporaryDirectory() as tmp:
         tmp_path = Path(tmp)
-        (tmp_path / "entities" / "v1-alpha" / "dea:process-good").mkdir(parents=True)
-        (tmp_path / "entities" / "v1-alpha" / "dea:process-good-2").mkdir(parents=True)
+        (tmp_path / "entities" / "v1-alpha" / "pr-operate" / "good").mkdir(parents=True)
+        (tmp_path / "entities" / "v1-alpha" / "pr-operate" / "good-2").mkdir(parents=True)
         good = {
-            "id": "dea:process-good",
+            "id": "processes:process-good",
             "name": "Manage Example",
             "type": "Process",
             "version": "1.0.0",
             "process_intent": "support",   # collision with process_type
             "process_type": "support",     # for BP-SEM-011 advisory
             "process_audience": "party-relationship",  # legacy alias only
-            "context": [{"ref": "dea:pc-pr-op"}],
-            "process_specialization": ["dea:process-parent-process"],
+            "context": [{"ref": "processes:pc-pr-op"}],
+            "process_specialization": ["processes:process-parent-process"],
             "specialization_pattern": "by-customer-segment",
         }
         good_2 = {
-            "id": "dea:process-good-2",
+            "id": "processes:process-good-2",
             "name": "Manage Example 2",
             "type": "Process",
             "version": "1.0.0",
             "process_intent": "manage",
             "process_type": "core",
-            "context": [{"ref": "dea:pc-pr-op"}, {"ref": "dea:pc-pr-im"}],
-            "process_specialization": ["dea:process-not-yet-canonical"],
+            "context": [{"ref": "processes:pc-pr-op"}, {"ref": "processes:pc-pr-im"}],
+            "process_specialization": ["processes:process-not-yet-canonical"],
             "specialization_basis": "by-customer-segment",
             # BP-SEM-013 valid specializes: approved basis + valid target.
             "relationships": [{
-                "source_id": "dea:process-good-2",
+                "source_id": "processes:process-good-2",
                 "relationship_type": "specializes",
-                "target_id": "dea:process-parent-process",
+                "target_id": "processes:process-parent-process",
             }],
         }
-        (tmp_path / "entities" / "v1-alpha" / "dea:process-good" / "dea:process-good.yaml").write_text(
+        (tmp_path / "entities" / "v1-alpha" / "pr-operate" / "good" / "processes-process-good.yaml").write_text(
             yaml.safe_dump(good, sort_keys=False)
         )
-        (tmp_path / "entities" / "v1-alpha" / "dea:process-good-2" / "dea:process-good-2.yaml").write_text(
+        (tmp_path / "entities" / "v1-alpha" / "pr-operate" / "good-2" / "processes-process-good-2.yaml").write_text(
             yaml.safe_dump(good_2, sort_keys=False)
         )
         fixed_errors, fixed_warnings = run_checks(

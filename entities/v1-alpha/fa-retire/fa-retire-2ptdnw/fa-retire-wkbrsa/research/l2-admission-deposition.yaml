@@ -1,0 +1,51 @@
+admission:
+  recommended_by: dea:discovery-finance-and-accounting-retire-escape
+  recommended_at: '2026-09-15'
+  recommended_score: 9
+  carrier_cr: CR-BP-75
+  bp_id: processes:process-fa-retire-wkbrsa
+  bp_name: Conclude a Regulated Run-Off
+  coordinate:
+    domain: FinanceAndAccounting
+    stage: Retire
+    identifier: ecf:financeAccounting.retire
+    process_context: processes:pc-fa-retire-64q5p9
+    process_group: processes:group-fa-retire-2ptdnw
+  disposition: ratified-accepted
+  admission_basis: |
+    Targeted escape-clause evaluation of the FinanceAndAccounting x
+    Retire register cell against its verbatim deferral condition
+    ("defer until a regulated unwind (e.g. mutual insurer run-off)
+    requires a standalone group"). The discovery evidence finds
+    that condition met: regulated run-off under PRA PS20/24 (UK, in
+    force 30 June 2026), FSB Final Guidance on Insurance Resolution
+    Strategies (2025), NAIC Model Regulation Service of Legal
+    Process (Model 901), IFRS 17 Insurance Contracts (effective
+    2023), IFRS 5 Non-current Assets Held for Sale and Discontinued
+    Operations, ASC 205-30 Liquidation Basis of Accounting (FASB
+    ASU 2013-07), ASC 944 Financial Services - Insurance, IRO Best
+    Practice Guidance 2024 is a regulator-supervised, accounting-
+    standards-mandated, boundary-clear transformation distinct
+    from pre-run-off financial stewardship and from physical asset
+    decommissioning. The escape clause is activated by the
+    contemporary post-IFRS-17, post-PS20/24 regulatory landscape.
+  identity:
+    verb: Conclude
+    object: Regulated Run-Off
+    scope: enterprise
+    process_type: management
+    process_intent: manage
+  bp_arc_id_compliance:
+    name_satisfies_verb_object: true
+    outcome_statement_density: authoring pending BP record
+    evidence_links_min_items: authoring pending BP record
+  lifecycle_status: candidate
+  notes:
+    - "Disposition reversal from backlog-deferred to ratified-accepted/landed."
+    - "Register v2 escape clause activated verbatim; admission note cites it."
+    - "Boundary against processes:pc-fa-operate-afew7e is explicit: pre-run-off financial stewardship belongs to Operate."
+    - "Boundary against processes:pc-eo-retire-nw3ynf is explicit: physical asset decommissioning belongs to EnablementAndOperations x Retire (CR-BP-66)."
+    - "Boundary against processes:pc-pr-retire-2cusde is explicit: counterparty and agent relationship closure belongs to PartyAndRelationship x Retire (CR-BP-67)."
+    - "Boundary against processes:pc-pv-retire-eeck6d is explicit: product line retirement belongs to ProductAndValue x Retire."
+    - "Non-insurance regulated wind-downs (banks under PRA BRRD / FDIC OLA, pension funds under PBGC termination) are explicitly excluded and deferred to a future CR."
+    - "Investment disposal and impairment / exit-liability recognition remain execution-level Activities under this BP (CR-BP-74 candidates 3 and 4); future Activity decomposition at L3 is the next slice."

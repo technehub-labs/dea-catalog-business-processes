@@ -1,0 +1,73 @@
+id: processes:activity-pv-retire-vbn7s6
+type: Activity
+name: Plan Service Withdrawal
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: 'The cohesive grouping of work within Transition Proposition Out of Service that plans the withdrawal: notice, dependencies, timelines and user migration provisions.'
+belongs_to_business_process: processes:process-pv-retire-6us5am
+cohesion_rationale: Constituent work shares a single withdrawal planning concern, one input class (the approved retirement decision), and one output (the service withdrawal plan). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: ProductAndValue
+    stage: Retire
+    identifier: ecf:productValue.retire
+metadata:
+  established_by: CR-BP-69
+  established_at: '2026-09-15'
+  change_history:
+  - cr: CR-BP-69
+    date: '2026-09-15'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-69
+
+      admitted-BP L3 decomposition tranche (pattern proven by CR-BP-42 through CR-BP-57).
+
+      Classified per CR-BP-32 section 5 (fails standalone
+
+      executability and resource dedication); decomposition
+
+      boundary marker per CR-BP-32 section 12 pending Task
+
+      records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-plan-service-withdrawal-intake, dea:task-plan-service-withdrawal-verify, dea:task-plan-service-withdrawal-transform, dea:task-plan-service-withdrawal-confirm, dea:task-plan-service-withdrawal-record).'
+composes:
+- source_id: processes:activity-pv-retire-vbn7s6
+  target_id: processes:task-pv-retire-intake-ygn79u
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-pv-retire-vbn7s6
+  target_id: processes:task-pv-retire-verify-fx66gf
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-pv-retire-vbn7s6
+  target_id: processes:task-pv-retire-transform-d7ekwb
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-pv-retire-vbn7s6
+  target_id: processes:task-pv-retire-confirm-h2ahnu
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-pv-retire-vbn7s6
+  target_id: processes:task-pv-retire-record-ummykz
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

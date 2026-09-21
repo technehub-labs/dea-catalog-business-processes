@@ -244,7 +244,7 @@ discovery:
       related_contexts:
       - ProductAndValue/Retire
       - EnablementAndOperations/Retire
-      canonical_process_ref: dea:process-transition-out-of-service (proposed)
+      canonical_process_ref: processes:process-pv-retire-6us5am (proposed)
   - name: Resolve Residual Obligations
     proposed_identity:
       verb: Resolve

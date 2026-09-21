@@ -1,0 +1,103 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-69
+status: candidate-not-canonical; subject to review
+parent_business_process: processes:process-ge-activate-wegs44
+coordinate:
+  domain: GovernanceAndExistence
+  stage: Activate
+  process_context: processes:pc-ge-activate-hxtfcv
+  process_group: processes:group-ge-activate-7d46tn
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/processes:process-ge-activate-wegs44
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: processes:activity-ge-activate-hcg5s8
+  name: "Verify Commencement Conditions"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Commencement precondition verification, procedural requirement confirmation."
+  out_of_scope:
+  - "Commencement execution (processes:activity-ge-activate-mqvn32)"
+  - "Instrument adoption itself (governance Conceive/Design concern)"
+  evidence:
+  - "Parent BP trigger: a policy instrument, mandate or charter has been adopted and its commencement conditions are met."
+  disposition: landed
+  landed_at: '2026-09-15'
+  landed_by: CR-BP-69
+- id: processes:activity-ge-activate-mqvn32
+  name: "Effect Instrument Commencement"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Publication, proclamation, effective-date activation of the instrument."
+  out_of_scope:
+  - "Commencement verification (processes:activity-ge-activate-hcg5s8)"
+  - "Obligation communication (processes:activity-ge-activate-6uwq7f)"
+  evidence:
+  - "Parent BP outcome: the instrument is in force and binding."
+  disposition: landed
+  landed_at: '2026-09-15'
+  landed_by: CR-BP-69
+- id: processes:activity-ge-activate-6uwq7f
+  name: "Communicate Obligations and Rights"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Notification of bound parties, obligation and rights communication, acknowledgement tracking."
+  out_of_scope:
+  - "Commencement execution (processes:activity-ge-activate-mqvn32)"
+  - "Enforcement baseline establishment (processes:activity-ge-activate-pm38pv)"
+  evidence:
+  - "Parent BP outcome: obligations, rights and duties attach to the instrument and are executed across the enterprise."
+  disposition: landed
+  landed_at: '2026-09-15'
+  landed_by: CR-BP-69
+- id: processes:activity-ge-activate-pm38pv
+  name: "Establish Enforcement Baseline"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Compliance baseline capture, monitoring arming, enforcement mechanism activation."
+  out_of_scope:
+  - "Obligation communication (processes:activity-ge-activate-6uwq7f)"
+  - "Ongoing compliance operation (processes:pc-ge-operate-hb2dac concern)"
+  evidence:
+  - "Parent BP outcome: obligations are executed across the enterprise once the instrument is in force."
+  disposition: landed
+  landed_at: '2026-09-15'
+  landed_by: CR-BP-69
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."

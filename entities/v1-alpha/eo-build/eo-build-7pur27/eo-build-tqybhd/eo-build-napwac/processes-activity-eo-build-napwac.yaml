@@ -1,0 +1,73 @@
+id: processes:activity-eo-build-napwac
+type: Activity
+name: Commission Facility Services
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Provision Facilities that commissions the facility services (utilities, safety systems, environmental controls) to operational readiness.
+belongs_to_business_process: processes:process-eo-build-tqybhd
+cohesion_rationale: Constituent work shares a single commissioning concern (fitted facility to operational services), one reference class (blueprint service specifications), and one output (commissioned facility services). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: EnablementAndOperations
+    stage: Build
+    identifier: ecf:enablementAndOperations.build
+metadata:
+  established_by: CR-BP-47
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-47
+    date: '2026-09-13'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-47
+
+      EnablementAndOperations Build + Improve tranche (completes the EO
+
+      domain''s L3 coverage; pattern proven by CR-BP-42 through CR-BP-46).
+
+      Classified per CR-BP-32 section 5 (fails standalone executability
+
+      and resource dedication); decomposition boundary marker per CR-BP-32
+
+      section 12 pending Task records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-commission-facility-services-intake, dea:task-commission-facility-services-verify, dea:task-commission-facility-services-transform, dea:task-commission-facility-services-confirm, dea:task-commission-facility-services-record).'
+composes:
+- source_id: processes:activity-eo-build-napwac
+  target_id: processes:task-eo-build-intake-nqdqxw
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-build-napwac
+  target_id: processes:task-eo-build-verify-qevv4y
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-build-napwac
+  target_id: processes:task-eo-build-transform-tkpynu
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-build-napwac
+  target_id: processes:task-eo-build-confirm-tj2wsf
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-build-napwac
+  target_id: processes:task-eo-build-record-k6739q
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

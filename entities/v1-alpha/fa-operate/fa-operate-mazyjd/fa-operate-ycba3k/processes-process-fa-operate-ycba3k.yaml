@@ -1,0 +1,82 @@
+id: processes:process-fa-operate-ycba3k
+name: Operate Financial Reporting and Disclosure
+type: Process
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+process_intent: operate
+process_type: core
+context:
+- ref: processes:pc-fa-operate-afew7e
+description: 'Operate Financial Reporting and Disclosure (operate stage, core process). Landed by CR-BP-21e.1
+
+  from the FinanceAndAccounting register v2.
+
+  '
+trigger: A reporting or disclosure milestone arrives.
+outcome: Financial reporting and disclosure are produced with statements, footnotes, and disclosures delivered for internal and external stakeholders.
+triggers:
+- A reporting or disclosure milestone arrives.
+outcomes:
+- Financial reporting and disclosure are produced with statements, footnotes, and disclosures delivered for internal and external stakeholders.
+identity:
+  verb: Operate
+  object: Financial Reporting and Disclosure
+  outcome_statement: Financial reporting and disclosure are produced with statements, footnotes, and disclosures delivered for internal and external stakeholders.
+  evidence_links:
+  - type: documentation
+    ref: change-requests/CR-BP-21e.1.md
+relationships:
+- source_id: processes:process-fa-operate-ycba3k
+  relationship_type: serves
+  target_id: ecf:financeAccounting.operate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: FinanceAndAccounting
+    stage: Operate
+    identifier: ecf:financeAccounting.operate
+  target_id: ecf:financeAccounting.operate
+metadata:
+  established_by: CR-BP-21e.1
+  established_at: '2026-09-08'
+  activity_references:
+  - processes:activity-fa-operate-dmzn73
+  - processes:activity-fa-operate-dv3u8j
+  - processes:activity-fa-operate-mceyb8
+  - processes:activity-fa-operate-hxqddg
+change_history:
+- version: 1.0.0
+  date: '2026-09-08'
+  cr: CR-BP-21e.1
+  change: 'Initial landing under CR-BP-21e.1 (FinanceAndAccounting completion).
+
+    '
+- date: '2026-09-13'
+  cr: CR-BP-53
+  change: 'L3 decomposition of this Business Process: 4 Activities
+
+    landed under the structured deposition pattern (research
+
+    deposition at research/l3-candidate-universe.yaml, then
+
+    canonical Activity records) as part of the CR-BP-53
+
+    FinanceAndAccounting Improve + Operate tranche (completes
+
+    the FA domain''s L3 coverage). Adds metadata.activity_references[]
+
+    back-references per ACT-010 bidirectional traceability.
+
+    Additive metadata-only change; BP identity and semantics
+
+    unchanged, so version remains unchanged per SIV-004
+
+    (CR-BP-34d).
+
+    '

@@ -1,0 +1,130 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-79
+status: candidate-not-canonical; subject to review
+parent_business_process: processes:process-ge-retire-mjq5hg
+coordinate:
+  domain: GovernanceAndExistence
+  stage: Retire
+  process_context: processes:pc-ge-retire-kndw6x
+  process_group: processes:group-ge-retire-v3vy7t
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/processes:process-ge-retire-mjq5hg
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- change-requests/CR-BP-77 (prior admitted-BP L3 tranche)
+- change-requests/CR-BP-78 (G&E Retire admission tranche)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: processes:activity-ge-retire-k5amzf
+  name: "Assess Regulator Or Court Order Scope"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Interpret the binding order, identify binding obligations and deadlines, map obligations to governance regime and policy instruments, document the order-scope register, and notify the controlling authority of interpretation discrepancies."
+  out_of_scope:
+  - "Voluntary governance sunset absent regulator or court mandate (reserved for a future G&E x Improve coordinate charter extension)"
+  - "Counterparty closure (processes:process-pr-activate-6qzuve, processes:process-fa-retire-wkbrsa, processes:process-ao-retire-g3eyr8)"
+  - "Workforce wind-down (processes:process-ao-retire-g3eyr8, AgencyAndOrganization x Retire)"
+  - "Regulated run-off (processes:process-fa-retire-wkbrsa, FinanceAndAccounting x Retire)"
+  evidence:
+  - "Parent BP trigger: 'A competent regulator or court authority issues a determinative order (UK FCA variation/imposition of requirements on a regulated firm triggering Wind-Down Planning Group; California Corporations Code 5033-5034 AG determination; IRS 501(c)(3) federal tax-exempt revocation; federal banking regulator cease-and-desist; state AG charity oversight requiring remedial action; federal/state court receivership) that requires the entity to cease operating in some or all regulated activities, surrender authorisation, dissolve, or wind down governance.'"
+  - "UK FCA Wind-Down Planning Group supervisory framework: order interpretation expectations"
+  - "California Corporations Code section 5033: dissolution determination scope"
+  - "Federal banking regulator cease-and-desist orders: order interpretation expectations"
+  disposition: landed
+  landed_at: '2026-09-16'
+  landed_by: CR-BP-79
+- id: processes:activity-ge-retire-bp4237
+  name: "Reduce Governance To Wind-Down Quorum"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Reduce governance bodies to wind-down quorum per the controlling statute or regulator or court order, sunset or supersede policy instruments per the governance constitution, document the reduced governance regime, and confirm fitness to act under the binding order."
+  out_of_scope:
+  - "Interpreting the binding order (processes:activity-ge-retire-k5amzf)"
+  - "Voluntary governance sunset absent regulator or court mandate (reserved for a future G&E x Improve coordinate charter extension)"
+  - "Counterparty and agent relationship closure (processes:process-pr-activate-6qzuve)"
+  - "Workforce wind-down (processes:process-ao-retire-g3eyr8)"
+  - "Regulated run-off accounting (processes:activity-fa-retire-t3uyxp etc.)"
+  evidence:
+  - "Parent BP outcome: 'Governance bodies are reduced to a wind-down quorum as the regulator or court has required; Policy instruments (charters, mandates, delegations of authority) are sunset or superseded by wind-down procedures.'"
+  - "UK FCA Wind-Down Planning Group: governance body wind-down expectations"
+  - "California Corporations Code section 5033-5034: governance body wind-down obligations"
+  - "IRS 501(c)(3) dissolution: governance body wind-down expectations"
+  - "Federal/state court receivership: receiver-managed wind-down quorum expectations"
+  disposition: landed
+  landed_at: '2026-09-16'
+  landed_by: CR-BP-79
+- id: processes:activity-ge-retire-rck7n9
+  name: "Submit Statutory Dissolution Filings"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Prepare and submit the statutory dissolution filings (Form 990-N/990 for IRS 501(c)(3) status termination; California Secretary of State Form DISS for corporate dissolution; state Attorney General notifications for charity asset disposition; federal/state court reports for receivership termination; FCA S60.060 Form A notification for authorisation surrender) and preserve filing receipts."
+  out_of_scope:
+  - "Interpreting the binding order (processes:activity-ge-retire-k5amzf)"
+  - "Reducing governance to wind-down quorum (processes:activity-ge-retire-bp4237)"
+  - "Retained-records custodianship assignment (processes:activity-ge-retire-rzhc83)"
+  - "Workforce wind-down statutory notifications (processes:activity-ao-retire-uqgpmh)"
+  - "Run-off closure evidence filing (processes:activity-fa-retire-3g3m9u)"
+  evidence:
+  - "Parent BP outcome: 'Statutory dissolution filings (Form 990-N/990 for IRS 501(c)(3) status termination, California Secretary of State Form DISS for corporate dissolution, Attorney General notifications for charity asset disposition, court reports for receivership termination, FCA S60.060 Form A notification for authorisation surrender) are submitted to the relevant regulator or court.'"
+  - "California Corporations Code sections 6610, 8610, 9680: dissolution filing obligations"
+  - "California Attorney General Form CT-1 / Form RRF-1: charity dissolution notice obligations"
+  - "IRS Form 990-N / 990 termination filing expectations"
+  - "FCA S60.060 Form A notification for authorisation surrender"
+  disposition: landed
+  landed_at: '2026-09-16'
+  landed_by: CR-BP-79
+- id: processes:activity-ge-retire-rzhc83
+  name: "Assign Retained-Records Custodianship"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Assign retained-records custodianship to a designated custodian for the statutory retention period (California Corp Code 6323, FTC/DOJ obligations, IRS recordkeeping under Treas. Reg. 1.6001-1), retain the service-of-process agent, document the assignment, and obtain regulator or court acknowledgement."
+  out_of_scope:
+  - "Interpreting the binding order (processes:activity-ge-retire-k5amzf)"
+  - "Reducing governance to wind-down quorum (processes:activity-ge-retire-bp4237)"
+  - "Submitting statutory dissolution filings (processes:activity-ge-retire-rck7n9)"
+  - "Run-off accounting retained-records obligations (processes:activity-fa-retire-3g3m9u)"
+  evidence:
+  - "Parent BP outcome: 'Retained-records custodianship is assigned (state-required records retention under California Corp Code 6323, FTC/DOJ obligations, IRS recordkeeping under Treas. Reg. 1.6001-1) so that post-dissolution records are accessible for the statutorily required period.'"
+  - "California Corporations Code section 6323: post-dissolution records retention obligations"
+  - "Treas. Reg. 1.6001-1: federal recordkeeping retention obligations"
+  - "FTC/DOJ post-dissolution service-of-process retention expectations"
+  disposition: landed
+  landed_at: '2026-09-16'
+  landed_by: CR-BP-79
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."
+- "All four candidates score cohesion 9/9: each shares a single concern, one input class, and one output, derived from the parent BP's trigger and outcome text."

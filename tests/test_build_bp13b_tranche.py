@@ -31,6 +31,9 @@ def test_process_context_count_matches_domain() -> None:
     """5 lifecycle stages = 5 Process Context cells."""
     assert len(PROCESS_CONTEXTS) == 5
     ids = {c["id"] for c in PROCESS_CONTEXTS}
+    # CR-BP-mv1 historical freeze: this generator is a one-shot historical
+    # utility (CR-BP-13b, already landed); its frozen fixtures emit the
+    # legacy dea:* ids exactly as run. Live ids are owned by check_id_system.
     assert ids == {
         "dea:pc-ge-c",
         "dea:pc-ge-d",

@@ -1,0 +1,91 @@
+id: processes:process-pv-operate-zyguzp
+name: Operate Product Catalogue
+type: Process
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+process_intent: operate
+process_type: core
+process_specialization: []
+description: 'Operate the Operate Product Catalogue L2 process within the dea:pc-pv-operate Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces. '
+trigger: 'Product catalogue operation is needed because the developed products are now in active operation and require steady-state catalogue, portfolio performance, and proposition lifecycle management. '
+outcome: 'Product catalogue is operated with bounded portfolio performance and proposition lifecycle management. '
+identity:
+  verb: Operate
+  object: Product Catalogue
+  scope: (all enterprise segments)
+  outcome_statement: 'Product catalogue is operated with bounded portfolio performance and proposition lifecycle management, covering the full lifecycle from launch to retirement across the value-bearing proposition portfolio. '
+  evidence_links:
+  - type: standard
+    ref: https://www.apqc.org/resource-overview/resource-library/apqc-process-classification-framework-pcf
+relationships:
+- source_id: processes:process-pv-operate-zyguzp
+  relationship_type: serves
+  target_id: ecf:productValue.operate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: ProductAndValue
+    stage: Operate
+    identifier: ecf:productValue.operate
+metadata:
+  established_by: CR-BP-21c
+  established_at: '2026-09-08'
+  activity_references:
+  - processes:activity-pv-operate-5yty8e
+  - processes:activity-pv-operate-pv7jqd
+  - processes:activity-pv-operate-kwm3wt
+  - processes:activity-pv-operate-5gtsjg
+  change_history:
+  - cr: CR-BP-21c
+    date: '2026-09-08'
+    change: 'Initial L2 Process entry; lands as part of the CR-BP-21c
+
+      ProductAndValue landing tranche under ECF v2.4.0
+
+      register v2 (CR-BP-19). Substrate-neutral per ADR-ECF-002
+
+      §5 / CR-ECF-007: applies to biological, artificial, and
+
+      hybrid agents without reclassification. One of the 5 L2
+
+      landings targeting the 5 ratified cells of the
+
+      ProductAndValue domain.
+
+      '
+  - cr: CR-BP-51
+    date: '2026-09-13'
+    change: 'L3 decomposition of this Business Process: 4 Activities
+
+      landed under the structured deposition pattern (research
+
+      deposition at research/l3-candidate-universe.yaml, then
+
+      canonical Activity records) as part of the CR-BP-51
+
+      ProductAndValue Improve + Operate tranche (completes the
+
+      PV domain''s L3 coverage). Adds metadata.activity_references[]
+
+      back-references per ACT-010 bidirectional traceability.
+
+      Additive metadata-only change; BP identity and semantics
+
+      unchanged, so version remains unchanged per SIV-004
+
+      (CR-BP-34d).
+
+      '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21c-product-value-landing.md
+- rel: process-context
+  href: contexts/v1-alpha/pc-pv-operate.yaml
+context:
+- ref: processes:pc-pv-operate-ewpwjc

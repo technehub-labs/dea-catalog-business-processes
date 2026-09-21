@@ -1,0 +1,110 @@
+id: processes:group-pr-retire-c3u3wc
+type: ProcessGroup
+version: 1.0.0
+name: Relationship Termination
+definition: 'The bounded Process Group that organises the Business Process
+
+  responsibilities of closing out enterprise relationships in the
+
+  PartyAndRelationship x Retire context (contract close-out, party
+
+  offboarding, residual obligation and record resolution).
+
+  '
+process_context: processes:pc-pr-retire-2cusde
+scope:
+  includes:
+  - Contract close-out and termination settlement
+  - Party offboarding across roles (customer, supplier, partner)
+  - Residual obligation and record resolution
+  excludes:
+  - Steady-state relationship operation (Operate)
+  - Relationship improvement and development (Improve)
+  - Asset retirement and decommissioning (EnablementAndOperations x Retire)
+outcomes:
+- Relationships are closed out under approved termination plans with residual obligations settled and regulated offboarding evidenced.
+composes:
+- source_id: processes:group-pr-retire-c3u3wc
+  target_id: processes:process-pr-retire-bd3asa
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per the CR-BP-63 discovery
+
+    outcome (ADMIT-CANONICAL recommendation) landed by CR-BP-67.
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-67
+    asserted_by: dea-team
+    asserted_at: '2026-09-14'
+process_group_kind: cross-cutting
+status: accepted
+lifecycle_status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: PartyAndRelationship
+    stage: Retire
+    identifier: ecf:partyRelationship.retire
+evidence:
+- source: CR-BP-63 lifecycle discovery exercise
+  claim: 'This Process Group''s coordinate was evaluated by the CR-BP-63
+
+    discovery record
+
+    discovery/v1-alpha/party-and-relationship-retire.yaml: the
+
+    cell''s canonical candidate Close Enterprise Relationship scored
+
+    9/10 with an ADMIT-CANONICAL recommendation on contract
+
+    close-out and regulated offboarding evidence, overturning (with
+
+    evidence) the register v2 per-cell deferral note.
+
+    '
+  strength: E4
+  reference: discovery/v1-alpha/party-and-relationship-retire.yaml
+- source: CR-BP-67 admission tranche
+  claim: 'CR-BP-67 lands this Process Group as the L1 home of the
+
+    discovery-admitted Business Process and flips the register cell
+
+    to ratified-accepted / landed.
+
+    '
+  strength: E4
+  reference: change-requests/CR-BP-67-pr-retire-admission.md
+metadata:
+  established_by: CR-BP-67
+  established_at: '2026-09-14'
+  cross_context_overlap: []
+  change_history:
+  - cr: CR-BP-67
+    date: '2026-09-14'
+    change: 'Initial Process Group record; the fourth and final L1 group at
+
+      an Activate/Retire coordinate from the CR-BP-63 discovery
+
+      recommendations, landed under the CR-BP-62 method. The group
+
+      name adopts the register v2 l1 candidate (Relationship
+
+      Termination), which the discovery evaluation confirmed.
+
+      '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-67-pr-retire-admission.md
+- rel: discovery-record
+  href: discovery/v1-alpha/party-and-relationship-retire.yaml
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

@@ -1,0 +1,61 @@
+id: processes:task-ge-retire-intake-sqdsxj
+type: Task
+name: Reduce Governance To Wind-Down Quorum Intake
+definition: The bounded unit of work within `processes:activity-ge-retire-bp4237` (Reduce Governance To Wind-Down Quorum) that accept custody of the wind-down input pack (regulator or court order reference, retained-records inventory, dissolution-filing drafts) and persist a registered intake manifest binding the inputs to the wind-down case file.
+belongs_to_activity: processes:activity-ge-retire-bp4237
+trigger: Custody of the Retire-stage input pack for Reduce Governance To Wind-Down Quorum ready for intake; predecessor phase has produced the case file context and intake contract applies.
+outcome: Intake manifest registered and bound to the Reduce Governance To Wind-Down Quorum case file; registered intake custodian passes custody to the verification custodian.
+responsibility: designated intake custodian
+boundary:
+  inclusions:
+  - Receipt and registration of the Reduce Governance To Wind-Down Quorum input pack against the Retire-stage intake contract.
+  - Binding of the input pack to the Reduce Governance To Wind-Down Quorum case file with cryptographic chain-of-custody.
+  exclusions:
+  - Re-execution of prior intake phases on rejected or withdrawn cases (no rollback semantics).
+  - Long-term retention of the case file (phase 5).
+evidence:
+- source: Delaware DGCL §§275-283 (Dissolution)
+  claim: statutory dissolution and winding-up provisions binding the retire-phase verification and the statutory dissolution filings. Bounded-work evidence for the intake-phase custodian of `processes:activity-ge-retire-bp4237` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: UK Insolvency Act 1986 Part IV
+  claim: UK winding-up statute grounding the retire-phase wind-down quorum requirements and registrar filings. Bounded-work evidence for the intake-phase custodian of `processes:activity-ge-retire-bp4237` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: processes:activity-ge-retire-bp4237
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-03 cell-specific bounded-work prose for this GovernanceAndExistence L4 Task.
+  strength: E3
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: GovernanceAndExistence
+    stage: Retire
+    identifier: ecf:governanceExistence.retire
+metadata:
+  established_by: CR-BP-102
+  established_at: '2026-09-19'
+  change_history:
+  - cr: CR-BP-79
+    date: '2026-09-16'
+    change: 'Initial L3 Activity entry for dea:process-effect-regulator-mandated-governance-unwind; lands as part of the CR-BP-79
+
+      L3 GE Retire admission tranche (pattern proven by the pilot and prior
+
+      tranches, including CR-BP-77 admitted-regulated-tranche). Classified
+
+      per CR-BP-32 section 5 (fails standalone executability and resource
+
+      dedication); decomposition boundary marker per CR-BP-32 section 12
+
+      pending Task records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

@@ -398,10 +398,10 @@ def _self_test() -> int:
     with tempfile.TemporaryDirectory() as td:
         td_path = Path(td)
         # Fixture 1: well-formed L2 BP with README containing all required sections.
-        entity_dir = td_path / "entities" / "v1-alpha" / "dea:process-good"
+        entity_dir = td_path / "entities" / "v1-alpha" / "processes:process-good"
         entity_dir.mkdir(parents=True)
-        (entity_dir / "dea:process-good.yaml").write_text(yaml.safe_dump({
-            "id": "dea:process-good",
+        (entity_dir / "processes:process-good.yaml").write_text(yaml.safe_dump({
+            "id": "processes:process-good",
             "name": "Good Process",
             "type": "Process",
             "version": "1.0.0",
@@ -409,7 +409,7 @@ def _self_test() -> int:
             "metadata": {"established_by": "CR-BP-13a"},
         }))
         (entity_dir / "README.md").write_text(
-            "# Canonical Business Process: `dea:process-good`\n\n"
+            "# Canonical Business Process: `processes:process-good`\n\n"
             "## 1. Entity Identity and Classification\n\n"
             "## 2. Formal Definition and Scope\n\n"
             "## 3. Canonical Semantic Dimensions\n\n"
@@ -425,40 +425,41 @@ def _self_test() -> int:
             "## 12. Revision History\n\n"
         )
         # Fixture 2: missing README (DOC-001 violation).
-        bad_dir = td_path / "entities" / "v1-alpha" / "dea:process-bad"
+        bad_dir = td_path / "entities" / "v1-alpha" / "processes:process-bad"
         bad_dir.mkdir(parents=True)
-        (bad_dir / "dea:process-bad.yaml").write_text(yaml.safe_dump({
-            "id": "dea:process-bad",
+        (bad_dir / "processes:process-bad.yaml").write_text(yaml.safe_dump({
+            "id": "processes:process-bad",
             "name": "Bad Process",
             "type": "Process",
             "version": "1.0.0",
         }))
         # Fixture 3: README but missing required section.
-        incomplete_dir = td_path / "entities" / "v1-alpha" / "dea:process-incomplete"
+        incomplete_dir = td_path / "entities" / "v1-alpha" / "processes:process-incomplete"
         incomplete_dir.mkdir(parents=True)
-        (incomplete_dir / "dea:process-incomplete.yaml").write_text(yaml.safe_dump({
-            "id": "dea:process-incomplete",
+        (incomplete_dir / "processes:process-incomplete.yaml").write_text(yaml.safe_dump({
+            "id": "processes:process-incomplete",
             "name": "Incomplete Process",
             "type": "Process",
             "version": "1.0.0",
             "metadata": {"established_by": "CR-BP-13a"},
         }))
         (incomplete_dir / "README.md").write_text(
-            "# Canonical Business Process: `dea:process-incomplete`\n\n"
+            "# Canonical Business Process: `processes:process-incomplete`\n\n"
             "## 1. Entity Identity and Classification\n\n"
         )
 
         pairs = _load_records(td_path)
         findings = evaluate(pairs)
 
-        # Expect DOC-001 for `dea:process-bad`, DOC-002 for `dea:process-incomplete`.
+        # Expect DOC-001 for `processes:process-bad`, DOC-002 for
+        # `processes:process-incomplete`.
         rules_per_record = {}
         for f in findings:
             rules_per_record.setdefault(f["record_id"], []).append(f["rule"])
-        assert "DOC-001" in rules_per_record.get("dea:process-bad", []), rules_per_record
-        assert "DOC-002" in rules_per_record.get("dea:process-incomplete", []), rules_per_record
+        assert "DOC-001" in rules_per_record.get("processes:process-bad", []), rules_per_record
+        assert "DOC-002" in rules_per_record.get("processes:process-incomplete", []), rules_per_record
         # The good fixture should produce no findings.
-        assert "dea:process-good" not in rules_per_record, rules_per_record
+        assert "processes:process-good" not in rules_per_record, rules_per_record
 
     print("self-test PASS (DOC-001 README exists; DOC-002 required sections; "
           "DOC-003 id match; DOC-004 placeholder handling; DOC-005 CR reference)")

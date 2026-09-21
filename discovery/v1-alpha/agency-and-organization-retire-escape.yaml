@@ -11,7 +11,7 @@ discovery:
       scope: enterprise
     admission:
       status: admitted
-      admitted_as: dea:process-conduct-regulated-workforce-wind-down
+      admitted_as: processes:process-ao-retire-g3eyr8
       admitted_at: '2026-09-15'
       admitted_by: CR-BP-73
     trigger: >-
@@ -147,7 +147,7 @@ discovery:
         regulated jurisdictions, holding the total at 9.
     disposition:
       type: ADMIT-CANONICAL
-      canonical_process_ref: dea:process-conduct-regulated-workforce-wind-down
+      canonical_process_ref: processes:process-ao-retire-g3eyr8
       related_contexts: []
   - name: Decommission Agent or Workforce Cohort
     proposed_identity:
@@ -298,7 +298,7 @@ discovery:
       transformation distinct from steady-state agent operations and
       from asset decommissioning, scoring 9/10 and recommended
       ADMIT-CANONICAL as
-      dea:process-conduct-regulated-workforce-wind-down. This record
+      processes:process-ao-retire-g3eyr8. This record
       re-evaluates the cell; the CR-BP-63 baseline record
       (dea:discovery-agency-and-organization-retire) remains the
       baseline evidence for the cell's other candidates.

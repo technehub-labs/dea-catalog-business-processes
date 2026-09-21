@@ -1,0 +1,82 @@
+id: processes:process-fa-operate-wkqaqp
+name: Run Accounts Payable
+type: Process
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+process_intent: operate
+process_type: core
+context:
+- ref: processes:pc-fa-operate-afew7e
+description: 'Run Accounts Payable (operate stage, core process). Landed by CR-BP-21e.1
+
+  from the FinanceAndAccounting register v2.
+
+  '
+trigger: An invoice or payment due date arrives.
+outcome: Accounts payable is run with invoices matched, approvals recorded, and payments produced to plan.
+triggers:
+- An invoice or payment due date arrives.
+outcomes:
+- Accounts payable is run with invoices matched, approvals recorded, and payments produced to plan.
+identity:
+  verb: Run
+  object: Accounts Payable
+  outcome_statement: Accounts payable is run with invoices matched, approvals recorded, and payments produced to plan.
+  evidence_links:
+  - type: documentation
+    ref: change-requests/CR-BP-21e.1.md
+relationships:
+- source_id: processes:process-fa-operate-wkqaqp
+  relationship_type: serves
+  target_id: ecf:financeAccounting.operate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: FinanceAndAccounting
+    stage: Operate
+    identifier: ecf:financeAccounting.operate
+  target_id: ecf:financeAccounting.operate
+metadata:
+  established_by: CR-BP-21e.1
+  established_at: '2026-09-08'
+  activity_references:
+  - processes:activity-fa-operate-f3c2rt
+  - processes:activity-fa-operate-rsrcp2
+  - processes:activity-fa-operate-k9cf3b
+  - processes:activity-fa-operate-mwerdy
+change_history:
+- version: 1.0.0
+  date: '2026-09-08'
+  cr: CR-BP-21e.1
+  change: 'Initial landing under CR-BP-21e.1 (FinanceAndAccounting completion).
+
+    '
+- date: '2026-09-13'
+  cr: CR-BP-53
+  change: 'L3 decomposition of this Business Process: 4 Activities
+
+    landed under the structured deposition pattern (research
+
+    deposition at research/l3-candidate-universe.yaml, then
+
+    canonical Activity records) as part of the CR-BP-53
+
+    FinanceAndAccounting Improve + Operate tranche (completes
+
+    the FA domain''s L3 coverage). Adds metadata.activity_references[]
+
+    back-references per ACT-010 bidirectional traceability.
+
+    Additive metadata-only change; BP identity and semantics
+
+    unchanged, so version remains unchanged per SIV-004
+
+    (CR-BP-34d).
+
+    '

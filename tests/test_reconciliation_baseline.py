@@ -56,9 +56,9 @@ def test_build_inventory_records_match_canonical_population() -> None:
         (REPO_ROOT / "reconciliation/inventory.yaml").read_text()
     )
     recs = inv["records"]
-    assert len(recs["business_processes"]) == 139
-    assert len(recs["process_groups"]) == 48
-    assert len(recs["process_contexts"]) == 48
+    assert len(recs["business_processes"]) == 140  # CR-BP-mv1: 49-cell matrix complete
+    assert len(recs["process_groups"]) == 49  # CR-BP-mv1: 49-cell matrix complete
+    assert len(recs["process_contexts"]) == 49  # CR-BP-mv1: 49-cell matrix complete
 
 
 def test_build_inventory_legacy_findings_present() -> None:
@@ -187,7 +187,7 @@ def test_regenerate_catalog_uses_git_last_commit_date(tmp_path: Path) -> None:
 
     # Find a real entity subtree and read both dates.
     entity_dirs = sorted(
-        (REPO_ROOT / "entities" / "v1-alpha").glob("dea:group-*")
+        (REPO_ROOT / "entities" / "v1-alpha").rglob("processes-group-*.yaml")
     )
     assert entity_dirs, "no ProcessGroup entities found; fixture broken"
     subtree = entity_dirs[0]

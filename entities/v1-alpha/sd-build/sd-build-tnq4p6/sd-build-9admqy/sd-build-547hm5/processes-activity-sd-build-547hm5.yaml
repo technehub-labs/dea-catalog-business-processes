@@ -1,0 +1,73 @@
+id: processes:activity-sd-build-547hm5
+type: Activity
+name: Draft Strategic Initiatives
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Translate Strategic Choices into Initiatives that drafts the initiatives within the bounded scope.
+belongs_to_business_process: processes:process-sd-build-9admqy
+cohesion_rationale: Constituent work shares a single drafting concern (scope to initiative set), one reference class (the bounded scope), and one output (the drafted initiatives). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: StrategyAndDirection
+    stage: Build
+    identifier: ecf:strategyDirection.build
+metadata:
+  established_by: CR-BP-54
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-54
+    date: '2026-09-13'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-54
+
+      StrategyAndDirection Conceive + Design + Build tranche (pattern
+
+      proven by CR-BP-42 through CR-BP-53). Classified per CR-BP-32
+
+      section 5 (fails standalone executability and resource dedication);
+
+      decomposition boundary marker per CR-BP-32 section 12 pending Task
+
+      records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-draft-strategic-initiatives-intake, dea:task-draft-strategic-initiatives-verify, dea:task-draft-strategic-initiatives-transform, dea:task-draft-strategic-initiatives-confirm, dea:task-draft-strategic-initiatives-record).'
+composes:
+- source_id: processes:activity-sd-build-547hm5
+  target_id: processes:task-sd-build-intake-pmry22
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-build-547hm5
+  target_id: processes:task-sd-build-verify-42za5r
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-build-547hm5
+  target_id: processes:task-sd-build-transform-23bt2f
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-build-547hm5
+  target_id: processes:task-sd-build-confirm-wng5fj
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-build-547hm5
+  target_id: processes:task-sd-build-record-udv3xf
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

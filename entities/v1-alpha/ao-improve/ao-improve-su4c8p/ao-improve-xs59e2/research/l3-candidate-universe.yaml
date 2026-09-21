@@ -1,0 +1,104 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-57
+status: candidate-not-canonical; subject to review
+parent_business_process: processes:process-ao-improve-xs59e2
+coordinate:
+  domain: AgencyAndOrganization
+  stage: Improve
+  process_context: processes:pc-ao-improve-qkmh6b
+  process_group: processes:group-ao-improve-su4c8p
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42,
+  scaled by CR-BP-43 through CR-BP-56)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/processes:process-ao-improve-xs59e2
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: processes:activity-ao-improve-evxkz9
+  name: "Bound Reorganization Scope"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Scope bounding; impact surface record; scope-to-finding trace"
+  out_of_scope:
+  - "Engagement review (processes:process-ao-improve-edjyha)"
+  - "Transition sequencing (processes:activity-ao-improve-rnkywc)"
+  evidence:
+  - "Parent BP trigger (review findings or direction changes require bounded structural change with transition sequencing)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-57
+- id: processes:activity-ao-improve-rnkywc
+  name: "Sequence Structure Transition"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Transition sequencing; dependency ordering; sequence risk review"
+  out_of_scope:
+  - "Scope bounding (processes:activity-ao-improve-evxkz9)"
+  - "Transition execution (processes:activity-ao-improve-pp4uvg)"
+  evidence:
+  - "Parent BP outcome (structures are reorganized with transition sequencing ...)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-57
+- id: processes:activity-ao-improve-pp4uvg
+  name: "Execute Structure Transition"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Step execution; execution tracking; transition completion record"
+  out_of_scope:
+  - "Transition sequencing (processes:activity-ao-improve-rnkywc)"
+  - "Handover recording (processes:activity-ao-improve-gtc9k8)"
+  evidence:
+  - "Parent BP outcome (structures are reorganized with transition sequencing and accountability handovers recorded)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-57
+- id: processes:activity-ao-improve-gtc9k8
+  name: "Record Accountability Handovers"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Handover recording; handover acknowledgment; record-to-transition trace"
+  out_of_scope:
+  - "Transition execution (processes:activity-ao-improve-pp4uvg)"
+  - "Organization structure design (processes:process-ao-design-7dkbur)"
+  evidence:
+  - "Parent BP outcome (structures are reorganized with transition sequencing and accountability handovers recorded)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-57
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."

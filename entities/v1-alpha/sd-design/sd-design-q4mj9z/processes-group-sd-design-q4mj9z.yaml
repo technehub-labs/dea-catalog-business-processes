@@ -1,0 +1,125 @@
+id: processes:group-sd-design-q4mj9z
+type: ProcessGroup
+version: 1.0.0
+name: Strategic Choices Design
+definition: 'The bounded Process Group that organises the Business Process responsibilities of designing strategic choices in the StrategyAndDirection x Design context. This group covers the analytical work of designing strategic options, evaluating strategic alternatives, designing objectives and targets, and designing strategic scenarios. v2.4.0 grounding (domain-grounding.md §3.2): Strategy & Direction directs within the frame that Governance & Existence authorises.
+
+  '
+process_context: processes:pc-sd-design-g3es76
+scope:
+  includes:
+  - Strategic option design
+  - Strategic alternatives evaluation
+  - Objectives and targets design
+  - Strategic scenarios design
+  excludes:
+  - Operational planning (enablement-operations x design)
+  - Financial plan design (finance-accounting x design)
+  - Strategic intent conception (Conceive stage; adjacent context)
+outcomes:
+- Strategic options are designed and evaluated.
+- Objectives and targets are designed with bounded measures.
+- Strategic scenarios are designed with bounded assumptions.
+composes:
+- source_id: processes:group-sd-design-q4mj9z
+  target_id: processes:process-sd-design-ewvbsh
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (landed CR-BP-21a).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21a.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-sd-design-q4mj9z
+  target_id: processes:process-sd-design-ed7jd5
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21a.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21a.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-sd-design-q4mj9z
+  target_id: processes:process-sd-design-vdwkmh
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21a.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21a.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-sd-design-q4mj9z
+  target_id: processes:process-sd-design-uenzna
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21a.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21a.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+process_group_kind: end-to-end
+status: accepted
+lifecycle_status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: StrategyAndDirection
+    stage: Design
+    identifier: ecf:strategyDirection.design
+evidence:
+- source: CR-BP-19 (register v2, ratified against ECF v2.4.0)
+  claim: 'This Process Group''s coordinate is ratified-accepted in register
+
+    v2. CR-BP-21a.1 lands the corresponding L1 group as part of the
+
+    StrategyAndDirection completion tranche.
+
+    '
+  strength: E4
+  reference: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+metadata:
+  established_by: CR-BP-21a.1
+  established_at: '2026-09-08'
+  cross_context_overlap: []
+  change_history:
+  - cr: CR-BP-21a.1
+    date: '2026-09-08'
+    change: 'Initial Process Group record; promoted from the CR-BP-19 register
+
+      v2 (ratified against ECF v2.4.0) as part of the CR-BP-21a.1
+
+      StrategyAndDirection completion tranche.
+
+      '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21a.1-strategy-direction-completion.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

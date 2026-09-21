@@ -1,0 +1,104 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-56
+status: candidate-not-canonical; subject to review
+parent_business_process: processes:process-ao-conceive-ruxjvh
+coordinate:
+  domain: AgencyAndOrganization
+  stage: Conceive
+  process_context: processes:pc-ao-conceive-wtq4cr
+  process_group: processes:group-ao-conceive-bwjhgd
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42,
+  scaled by CR-BP-43 through CR-BP-55)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/processes:process-ao-conceive-ruxjvh
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: processes:activity-ao-conceive-5fytar
+  name: "Derive Structure Principles"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Principle derivation; principle-to-strategy trace; principle coherence review"
+  out_of_scope:
+  - "Strategy commitment (processes:activity-ao-conceive-476rpj)"
+  - "Span bounding (processes:activity-ao-conceive-m77sb9)"
+  evidence:
+  - "Parent BP trigger (the committed organization and agent strategy requires bounded structure principles)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-56
+- id: processes:activity-ao-conceive-m77sb9
+  name: "Bound Reporting Spans"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Span bounding; span rationale record; span-to-principle trace"
+  out_of_scope:
+  - "Principle derivation (processes:activity-ao-conceive-5fytar)"
+  - "Coordination bounding (processes:activity-ao-conceive-ycwkts)"
+  evidence:
+  - "Parent BP outcome (the organization model is framed with structure principles, reporting spans, and coordination boundaries)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-56
+- id: processes:activity-ao-conceive-ycwkts
+  name: "Bound Coordination Boundaries"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Boundary bounding; boundary interface record; boundary-to-span coherence review"
+  out_of_scope:
+  - "Span bounding (processes:activity-ao-conceive-m77sb9)"
+  - "Model commitment (processes:activity-ao-conceive-rcyn7u)"
+  evidence:
+  - "Parent BP trigger (the committed organization and agent strategy requires bounded ... coordination boundaries)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-56
+- id: processes:activity-ao-conceive-rcyn7u
+  name: "Commit Organization Model Frame"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Frame consolidation; governance ratification; handoff to structure design"
+  out_of_scope:
+  - "Coordination bounding (processes:activity-ao-conceive-ycwkts)"
+  - "Organization structure design (processes:process-ao-design-7dkbur)"
+  evidence:
+  - "Parent BP outcome (the organization model is framed with structure principles, reporting spans, and coordination boundaries)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-56
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."

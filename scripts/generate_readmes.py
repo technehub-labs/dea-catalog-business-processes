@@ -102,7 +102,7 @@ def resolve_level(record: dict) -> str | None:
 
     L0 ProcessContext is the only record type that doesn't carry an
     explicit `type` discriminator; it's identified by the id pattern
-    `dea:pc-*` (CR-BP-02 §3 convention).
+    `processes:pc-*` (CR-BP-02 §3 convention; CR-BP-mv1 id system).
     """
     rtype = record.get("type")
     if rtype == "ProcessContext":
@@ -117,42 +117,29 @@ def resolve_level(record: dict) -> str | None:
         return "L4"
     # L0 fallback: id-pattern discrimination.
     rid = record.get("id") or ""
-    if isinstance(rid, str) and rid.startswith("dea:pc-"):
+    if isinstance(rid, str) and rid.startswith("processes:pc-"):
         return "L0"
     return None
 
 
 def resolve_record_paths() -> list[Path]:
-    """Walk entities/v1-alpha/ and contexts/v1-alpha/ for canonical records.
+    """Walk the CR-BP-mv1 containment tree for canonical records.
 
-    Two storage shapes:
-      1. L2 BP / L1 PG / L3 Activity / L4 Task live in a directory
-         of the form `entities/v1-alpha/<record-id>/<record-id>.yaml`
-         with README.md as a sibling.
-      2. L0 ProcessContext lives as a flat YAML file at
-         `contexts/v1-alpha/<record-id>.yaml` (no surrounding
-         directory). README.md is placed in a sibling directory of
-         the same name to keep DOC-001 path conventions consistent.
+    Records live at `entities/v1-alpha/<cell>/.../processes-<...>.yaml`
+    with README.md as a sibling. L0 ProcessContext records live at cell
+    level in the same tree (the pre-migration `contexts/v1-alpha/` root
+    is retired).
 
     Skips documentation/, examples/, research/ subdirectories
     (those are not canonical records).
     """
     paths: list[Path] = []
-    # Entities: directory-per-record shape (L1/L2/L3/L4).
     if ENTITIES_ROOT.exists():
-        for child in sorted(ENTITIES_ROOT.iterdir()):
-            if not child.is_dir():
+        for f in sorted(ENTITIES_ROOT.rglob("processes-*.yaml")):
+            pos = f.as_posix()
+            if "/documentation/" in pos or "/examples/" in pos or "/research/" in pos:
                 continue
-            yamls = [
-                p for p in child.glob("*.yaml")
-                if not any(part in p.parts for part in ("documentation", "examples", "research"))
-            ]
-            if yamls:
-                paths.append(yamls[0])
-    # Contexts: flat-file shape (L0 ProcessContext only).
-    if CONTEXTS_ROOT.exists():
-        for yaml_file in sorted(CONTEXTS_ROOT.glob("dea-pc-*.yaml")):
-            paths.append(yaml_file)
+            paths.append(f)
     return paths
 
 
@@ -464,9 +451,11 @@ def main(argv: list[str] | None = None) -> int:
     paths = resolve_record_paths()
     if args.scope is not None:
         scope = str(args.scope)
+        # CR-BP-mv1: ids contain colons; paths use the hyphen-normalized form.
+        scope_path = scope.replace(":", "-")
         paths = [
             p for p in paths
-            if scope in str(p) or scope in str(p.parent)
+            if scope in str(p) or scope_path in str(p) or scope in str(p.parent)
         ]
 
     written = 0

@@ -1,0 +1,104 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-57
+status: candidate-not-canonical; subject to review
+parent_business_process: processes:process-ao-operate-38qyc6
+coordinate:
+  domain: AgencyAndOrganization
+  stage: Operate
+  process_context: processes:pc-ao-operate-zfevmp
+  process_group: processes:group-ao-operate-35gmps
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42,
+  scaled by CR-BP-43 through CR-BP-56)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/processes:process-ao-operate-38qyc6
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: processes:activity-ao-operate-gxarb3
+  name: "Compute Cycle Payroll"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Payroll computation; computation validation; computation-to-cycle trace"
+  out_of_scope:
+  - "Time and attendance operation (processes:process-ao-operate-dg9q4h)"
+  - "Disbursement execution (processes:activity-ao-operate-h6hmqm)"
+  evidence:
+  - "Parent BP trigger (agents in service require accurate, on-time disbursement and statutory filings each cycle)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-57
+- id: processes:activity-ao-operate-h6hmqm
+  name: "Execute Disbursements"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Disbursement execution; payment confirmation; exception escalation"
+  out_of_scope:
+  - "Payroll computation (processes:activity-ao-operate-gxarb3)"
+  - "Benefits administration (processes:activity-ao-operate-8sc5gr)"
+  evidence:
+  - "Parent BP outcome (payroll and benefits are operated with accurate, on-time disbursement)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-57
+- id: processes:activity-ao-operate-8sc5gr
+  name: "Administer Benefits"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Entitlement administration; enrollment change handling; benefits record keeping"
+  out_of_scope:
+  - "Disbursement execution (processes:activity-ao-operate-h6hmqm)"
+  - "Statutory filing (processes:activity-ao-operate-7k8xwy)"
+  evidence:
+  - "Parent BP outcome (payroll and benefits are operated with accurate, on-time disbursement)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-57
+- id: processes:activity-ao-operate-7k8xwy
+  name: "File Statutory Returns"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Return preparation; filing execution; filing acknowledgment record"
+  out_of_scope:
+  - "Benefits administration (processes:activity-ao-operate-8sc5gr)"
+  - "Tax compliance operation (processes:process-fa-operate-8vqvkk)"
+  evidence:
+  - "Parent BP trigger (agents in service require accurate, on-time disbursement and statutory filings each cycle)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-57
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."

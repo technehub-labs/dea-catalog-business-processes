@@ -1,0 +1,85 @@
+id: processes:pc-sd-operate-5cs5ee
+domain: StrategyAndDirection
+lifecycle_stage: Operate
+name: Strategic Steering Operation
+definition: 'The bounded enterprise context for **operating** the strategic steering, environmental sensing, and strategic review cycle of the enterprise in the **Strategy & Direction** domain. This context addresses the steady-state work of monitoring strategic performance, sensing environmental signals, steering the initiative portfolio, and operating the strategic review cycle. v2.4.0: monitoring and steering the strategy as a stable subject; operational performance management lives in Enablement & Operations.
+
+  '
+scope:
+  includes:
+  - Strategic performance monitoring
+  - Environmental sensing
+  - Initiative portfolio steering
+  - Strategic review cycle operation
+  excludes:
+  - Operational performance management (enablement-operations x operate)
+  - Initiative execution (enablement-operations x operate)
+  - Strategic adaptation (Improve stage; adjacent context)
+outcomes:
+- Strategic performance is monitored against the plan.
+- Environmental signals are sensed and contextualised.
+- Initiative portfolio is steered in line with strategic intent.
+- Strategic review cycle is operated on a defined cadence.
+adjacent_contexts:
+- processes:pc-sd-conceive-ucb3gx
+- processes:pc-sd-design-g3es76
+- processes:pc-sd-build-gmzrrm
+- processes:pc-sd-improve-ft9k5f
+processes:
+- processes:process-sd-operate-zdjchn
+- processes:process-sd-operate-53y4j4
+- processes:process-sd-operate-u6xgu5
+- processes:process-sd-operate-ucxpz4
+cell_charter:
+  enterprise_concern: 'Strategy & Direction: the steady-state steering of strategic performance.'
+  lifecycle_concern: 'Operate: monitoring strategic performance and operating the review cycle.'
+  combined_semantic_meaning: 'The steady-state work of monitoring strategic performance, sensing environmental signals, and steering the initiative portfolio in line with the plan.
+
+    '
+  expected_outcomes:
+  - Strategic performance is monitored against the plan.
+  - Environmental signals are sensed and contextualised.
+  - Initiative portfolio is steered in line with strategic intent.
+  - Strategic review cycle is operated on a defined cadence.
+  inclusions:
+  - Strategic performance monitoring
+  - Environmental sensing
+  - Initiative portfolio steering
+  - Strategic review cycle operation
+  exclusions:
+  - Operational performance management (enablement-operations x operate)
+  - Initiative execution (enablement-operations x operate)
+  - Strategic adaptation (Improve stage; adjacent context)
+  adjacent_boundaries:
+  - 'processes:pc-sd-conceive-ucb3gx (adjacent context): strategy flows between Operate and the adjacent cell.'
+  - 'processes:pc-sd-design-g3es76 (adjacent context): strategy flows between Operate and the adjacent cell.'
+  - 'processes:pc-sd-build-gmzrrm (adjacent context): strategy flows between Operate and the adjacent cell.'
+  - 'processes:pc-sd-improve-ft9k5f (adjacent context): strategy flows between Operate and the adjacent cell.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-21a
+established_at: '2026-09-07'
+change_history:
+- cr: CR-BP-21a.1
+  date: '2026-09-08'
+  change: 'Processes list extended with the remaining register v2 L2
+
+    candidates for this cell under CR-BP-21a.1.
+
+    '
+- cr: CR-BP-21a
+  date: '2026-09-07'
+  change: 'Initial Process Context record; promoted from the CR-BP-19
+
+    register v2 (ratified against ECF v2.4.0) as part of the
+
+    StrategyAndDirection landing tranche.
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21a-strategy-direction-landing.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

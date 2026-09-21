@@ -1,0 +1,126 @@
+id: processes:group-ge-build-tbc3ta
+type: ProcessGroup
+version: 1.0.0
+name: Governance Body Establishment
+definition: 'The bounded Process Group that organizes the Business Process responsibilities of building governance bodies, charters, and policy artefacts in the GovernanceAndExistence x Build context. This group captures the work of standing up the operational artefacts that constitute governance: boards, committees, charters, codified policies, and standards.
+
+  '
+process_context: processes:pc-ge-build-52hjrc
+scope:
+  includes:
+  - Board and committee establishment
+  - Charter codification
+  - Policy artefact construction
+  - Standard and procedure documentation
+  excludes:
+  - Strategy framing (Conceive stage)
+  - Governance system design (Design stage)
+  - Governance operation (Operate stage)
+outcomes:
+- Governance bodies are established and operational.
+- Charters are codified.
+- Policy artefacts are operational.
+composes:
+- source_id: processes:group-ge-build-tbc3ta
+  target_id: processes:process-ge-build-3p38us
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process is a principal responsibility of the
+
+    Governance Body Establishment value stream within PartyAndRelationship.
+
+    This composition is canonical per CR-BP-13a.
+
+    '
+  evidence: docs/examples/dea-group-governance-body-establishment.md
+  provenance:
+    type: architecture-review
+    reference: CR-BP-13a
+    asserted_by: dea-team
+    asserted_at: '2026-09-05'
+- source_id: processes:group-ge-build-tbc3ta
+  target_id: processes:process-ge-build-mctdgc
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process is a principal responsibility of the
+
+    Governance Body Establishment value stream within PartyAndRelationship.
+
+    This composition is canonical per CR-BP-13a.
+
+    '
+  evidence: docs/examples/dea-group-governance-body-establishment.md
+  provenance:
+    type: architecture-review
+    reference: CR-BP-13a
+    asserted_by: dea-team
+    asserted_at: '2026-09-05'
+- source_id: processes:group-ge-build-tbc3ta
+  target_id: processes:process-ge-build-rx7kt5
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2
+
+    (GovernanceAndExistence completion tranche CR-BP-21f.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21f.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+process_group_kind: end-to-end
+status: accepted
+lifecycle_status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: GovernanceAndExistence
+    stage: Build
+    identifier: ecf:governanceExistence.build
+evidence:
+- source: CR-BP-13a (49-coordinate discovery register, ratified)
+  claim: 'This Process Group''s coordinate was ratified as accepted
+
+    in CR-BP-13; the register records the L1 candidates and
+
+    L2 process names that compose this group.
+
+    '
+  strength: E4
+  reference: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+metadata:
+  established_by: CR-BP-13a
+  established_at: '2026-09-05'
+  cross_context_overlap: []
+  change_history:
+  - cr: CR-BP-13a
+    date: '2026-09-05'
+    change: 'Initial Process Group record; promoted from the CR-BP-11
+
+      49-coordinate register (ratified by CR-BP-13) as part of
+
+      the CR-BP-13a admission tranche.
+
+      '
+  - cr: CR-BP-21f.1
+    date: '2026-09-08'
+    change: 'Added dea:process-establish-risk-and-control-apparatus composes edge (CR-BP-21f.1 GE completion).
+
+      '
+links:
+- rel: change-request
+  href: change-requests/cr-bp-13a-customer-and-demand-admission.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

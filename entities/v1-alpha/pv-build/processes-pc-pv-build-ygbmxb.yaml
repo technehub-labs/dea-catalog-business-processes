@@ -1,0 +1,87 @@
+id: processes:pc-pv-build-ygbmxb
+domain: ProductAndValue
+lifecycle_stage: Build
+name: Product Development and Market Readiness Build
+definition: 'The bounded enterprise context for **building** the products, prototypes, and market readiness of the enterprise in the **Product & Value** domain. This context addresses the constructive work of developing product variants, building service capability, building innovation prototypes, and preparing market readiness. v2.4.0: technology build is Enablement & Operations; this cell covers the proposition-side construction (domain-grounding.md §3.5).
+
+  '
+scope:
+  includes:
+  - Product variant development
+  - Service capability build
+  - Innovation prototype build
+  - Market readiness preparation
+  excludes:
+  - Proposition design (Design stage; adjacent context)
+  - Technology platform build (enablement-operations x build; adjacent domain)
+  - Operational delivery build (enablement-operations x build; adjacent domain)
+outcomes:
+- Product variants are developed and ready for market.
+- Service capability is built and ready for operation.
+- Innovation prototypes are built and validated.
+- Market readiness is prepared for the Operate cell.
+adjacent_contexts:
+- processes:pc-pv-conceive-fe9awk
+- processes:pc-pv-design-8dhwpn
+- processes:pc-pv-operate-ewpwjc
+- processes:pc-pv-improve-wpyfx7
+processes:
+- processes:process-pv-build-say8tb
+- processes:process-pv-build-p9a2s9
+- processes:process-pv-build-8jc3y4
+- processes:process-pv-build-6hjzmk
+cell_charter:
+  enterprise_concern: 'Product & Value: the construction of the enterprise''s products and market readiness.'
+  lifecycle_concern: 'Build: developing product variants, building service capability, building prototypes, and preparing market readiness.'
+  combined_semantic_meaning: 'The constructive work of developing product variants, building service capability, building innovation prototypes, and preparing market readiness.
+
+    '
+  expected_outcomes:
+  - Product variants are developed and ready for market.
+  - Service capability is built and ready for operation.
+  - Innovation prototypes are built and validated.
+  - Market readiness is prepared for the Operate cell.
+  inclusions:
+  - Product variant development
+  - Service capability build
+  - Innovation prototype build
+  - Market readiness preparation
+  exclusions:
+  - Proposition design (Design stage; adjacent context)
+  - Technology platform build (enablement-operations x build; adjacent domain)
+  - Operational delivery build (enablement-operations x build; adjacent domain)
+  adjacent_boundaries:
+  - 'processes:pc-pv-conceive-fe9awk (adjacent context): proposition flow between Build and the adjacent cell.'
+  - 'processes:pc-pv-design-8dhwpn (adjacent context): proposition flow between Build and the adjacent cell.'
+  - 'processes:pc-pv-operate-ewpwjc (adjacent context): proposition flow between Build and the adjacent cell.'
+  - 'processes:pc-pv-improve-wpyfx7 (adjacent context): proposition flow between Build and the adjacent cell.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-21c
+established_at: '2026-09-08'
+change_history:
+- cr: CR-BP-21c.1
+  date: '2026-09-08'
+  change: 'Processes list extended with the remaining register v2 L2
+
+    candidates for this cell under CR-BP-21c.1.
+
+    '
+- cr: CR-BP-21c
+  date: '2026-09-08'
+  change: 'Initial Process Context record; promoted from the CR-BP-19
+
+    register v2 (ratified against ECF v2.4.0) as part of the
+
+    ProductAndValue landing tranche. Substrate-neutral
+
+    per ADR-ECF-002 §5 / CR-ECF-007.
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21c-product-value-landing.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

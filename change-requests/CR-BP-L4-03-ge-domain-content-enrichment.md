@@ -1,5 +1,15 @@
 # CR-BP-L4-03: GovernanceAndExistence L4 Task Content Enrichment
 
+> **Layout note (CR-BP-mv1, 2026-09-20):** This CR was authored against the
+> pre-migration entity layout (`entities/v1-alpha/dea:*`, `contexts/v1-alpha/`)
+> and the legacy `dea:*` id family, and may reference the pre-rename repo name
+> `dea-catalog-processes`. Paths, ids, and repo names cited below are historical;
+> see `reconciliation/migration-id-map.yaml` for the old-to-new id mapping and
+> the dea-metaframework `docs/entity-storage-layout.md` for the current
+> containment tree. Its 340 enriched Task records were absorbed into the
+> migration tree at merge time (enriched content spliced onto migrated
+> structure; legacy ids rewritten via the id map).
+
 **Status**: Proposed
 **Layer**: L4
 **Owner**: Coder (for eaojnr)

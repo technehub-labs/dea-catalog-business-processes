@@ -1,0 +1,104 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-57
+status: candidate-not-canonical; subject to review
+parent_business_process: processes:process-ao-improve-edjyha
+coordinate:
+  domain: AgencyAndOrganization
+  stage: Improve
+  process_context: processes:pc-ao-improve-qkmh6b
+  process_group: processes:group-ao-improve-su4c8p
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42,
+  scaled by CR-BP-43 through CR-BP-56)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/processes:process-ao-improve-edjyha
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: processes:activity-ao-improve-awnbw6
+  name: "Collect Engagement Signals"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Signal collection; collection coverage check; signal-to-cycle trace"
+  out_of_scope:
+  - "Collaboration coordination (processes:process-ao-operate-bd7mef)"
+  - "Alignment assessment (processes:activity-ao-improve-ceqsy3)"
+  evidence:
+  - "Parent BP trigger (the operating organization requires periodic evidence that agents remain engaged and aligned to direction)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-57
+- id: processes:activity-ao-improve-ceqsy3
+  name: "Assess Agent Alignment"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Alignment assessment; drift identification; alignment-to-direction trace"
+  out_of_scope:
+  - "Signal collection (processes:activity-ao-improve-awnbw6)"
+  - "Findings formulation (processes:activity-ao-improve-zzszrd)"
+  evidence:
+  - "Parent BP trigger (agents remain engaged and aligned to direction)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-57
+- id: processes:activity-ao-improve-zzszrd
+  name: "Formulate Engagement Findings"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Finding drafting; recommendation formulation; finding-to-evidence trace"
+  out_of_scope:
+  - "Alignment assessment (processes:activity-ao-improve-ceqsy3)"
+  - "Findings commitment (processes:activity-ao-improve-ab6gqb)"
+  evidence:
+  - "Parent BP outcome (engagement and alignment are reviewed with findings committed)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-57
+- id: processes:activity-ao-improve-ab6gqb
+  name: "Commit Engagement Review Findings"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Finding ratification; decision recording; routing into development"
+  out_of_scope:
+  - "Findings formulation (processes:activity-ao-improve-zzszrd)"
+  - "Agent and organization development (processes:process-ao-improve-xfh8na)"
+  evidence:
+  - "Parent BP outcome (engagement and alignment are reviewed with findings committed)"
+  disposition: landed
+  landed_at: '2026-09-14'
+  landed_by: CR-BP-57
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."

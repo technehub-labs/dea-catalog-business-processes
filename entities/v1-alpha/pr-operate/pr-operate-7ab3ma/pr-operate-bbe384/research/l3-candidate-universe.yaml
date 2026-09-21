@@ -1,0 +1,105 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-44
+status: candidate-not-canonical; subject to review
+parent_business_process: processes:process-pr-operate-bbe384
+coordinate:
+  domain: PartyAndRelationship
+  stage: Operate
+  process_context: processes:pc-pr-operate-pwue5a
+  process_group: processes:group-pr-operate-7ab3ma
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42,
+  scaled by CR-BP-43)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/processes:process-pr-operate-bbe384
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- change-requests/CR-BP-43 (L3 EO/Operate tranche)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: processes:activity-pr-operate-v9vny2
+  name: "Allocate Relationship Attention"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Account ownership assignment; contact cadence setting; service-effort allocation per customer segment"
+  out_of_scope:
+  - "Customer acquisition and onboarding (build-stage concern of processes:pc-pr-build-a46hp7)"
+  - "Relationship review events (processes:activity-pr-operate-2d88cr)"
+  evidence:
+  - "Parent BP outcome (sustained relationship through allocation of attention)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-44
+- id: processes:activity-pr-operate-2d88cr
+  name: "Conduct Relationship Reviews"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Periodic health reviews; commitment tracking; milestone and renewal-approaching detection"
+  out_of_scope:
+  - "Insight analytics and churn scoring (processes:process-pr-improve-t6uvan)"
+  - "Escalation handling (processes:activity-pr-operate-w753mv)"
+  evidence:
+  - "Parent BP trigger (existing active customer signals a change in relationship status)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-44
+- id: processes:activity-pr-operate-w753mv
+  name: "Handle Relationship Escalations"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Escalation intake and triage; resolution coordination; escalation record completion"
+  out_of_scope:
+  - "Root-cause service improvement (processes:process-pr-improve-t6uvan / processes:pc-eo-improve-pka6dk concerns)"
+  - "Routine contact execution (processes:activity-pr-operate-v9vny2)"
+  evidence:
+  - "Parent BP outcome (escalation handling)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-44
+- id: processes:activity-pr-operate-amg225
+  name: "Coordinate Renewals"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Renewal forecasting; renewal preparation and negotiation coordination; renewal outcome recording"
+  out_of_scope:
+  - "Contract authoring (design/build-stage concern)"
+  - "Win-back of lapsed customers (processes:activity-pr-improve-k6eb79 in processes:process-pr-improve-t6uvan)"
+  evidence:
+  - "Parent BP outcome (renewal coordination)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-44
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."

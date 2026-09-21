@@ -100,8 +100,8 @@ def test_all_reclassify_context_targets_resolve() -> None:
     reg = yaml.safe_load(
         (REPO_ROOT / "reconciliation/dispositions/register.yaml").read_text()
     )
-    ctx_files = list((REPO_ROOT / "contexts/v1-alpha").glob("dea-*.yaml")) + \
-        list((REPO_ROOT / "contexts/v1-alpha").glob("dea_*.yaml"))
+    # CR-BP-mv1: PCs live in the containment tree (contexts/ is retired).
+    ctx_files = list((REPO_ROOT / "entities/v1-alpha").rglob("processes-pc-*.yaml"))
     valid_ctx_ids: set[str] = set()
     for f in ctx_files:
         data = yaml.safe_load(f.read_text())
@@ -114,7 +114,7 @@ def test_all_reclassify_context_targets_resolve() -> None:
             if change.get("axis") != "process_context":
                 continue
             target = change.get("to")
-            if target.startswith("dea:pc-"):
+            if target.startswith("processes:pc-"):
                 assert target in valid_ctx_ids, (
                     f"{d['record_id']}: context {target!r} not in registry"
                 )
@@ -148,11 +148,19 @@ def test_tranche_count_is_ten() -> None:
     + 1 CR-BP-66 discovery-driven admission (oe-ret.66)
     + 1 CR-BP-67 discovery-driven admission (pr-ret.67)
     + 1 CR-BP-71 discovery-driven admission (pr-act.71, escape-clause KYC).
+
+    CR-BP-mv1 disclosure: the assertion was 73 on main while the live plan
+    carried 78 tranches (pre-existing drift from the CR-BP-73..87 admission
+    waves that added tranches without bumping the assertion). This PR bumps
+    the assertion to 79: the 78 pre-existing tranches + 1 completion entry
+    (sd-ret.101) added alongside the disposition-register repair for the
+    CR-BP-101 SD/Retire BP, which had been admitted without a disposition
+    or tranche entry.
     """
     plan = yaml.safe_load(
         (REPO_ROOT / "reconciliation/tranches/plan.yaml").read_text()
     )
-    assert len(plan["tranches"]) == 73
+    assert len(plan["tranches"]) == 79
 
 
 def test_live_check_dispositions_passes() -> None:

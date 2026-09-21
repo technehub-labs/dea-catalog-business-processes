@@ -1,0 +1,61 @@
+id: processes:task-ge-build-intake-r27upp
+type: Task
+name: Codify Policies Intake
+definition: The bounded unit of work within `processes:activity-ge-build-f5yeny` (Codify Policies) that accept custody of the governance-apparatus input pack (charter drafts, policy drafts, body-constitution proposals, monitoring-tooling specifications) and persist a registered intake manifest binding the build package to the apparatus case file.
+belongs_to_activity: processes:activity-ge-build-f5yeny
+trigger: Custody of the Build-stage input pack for Codify Policies ready for intake; predecessor phase has produced the case file context and intake contract applies.
+outcome: Intake manifest registered and bound to the Codify Policies case file; registered intake custodian passes custody to the verification custodian.
+responsibility: designated intake custodian
+boundary:
+  inclusions:
+  - Receipt and registration of the Codify Policies input pack against the Build-stage intake contract.
+  - Binding of the input pack to the Codify Policies case file with cryptographic chain-of-custody.
+  exclusions:
+  - Re-execution of prior intake phases on rejected or withdrawn cases (no rollback semantics).
+  - Long-term retention of the case file (phase 5).
+evidence:
+- source: OECD Principles of Corporate Governance (G20/OECD 2023)
+  claim: international governance benchmark binding the build-phase structural verification (charter completeness, body constitution) to a recognised framework. Bounded-work evidence for the intake-phase custodian of `processes:activity-ge-build-f5yeny` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: King IV Report (IoDSA 2016)
+  claim: outcomes-based governance report grounding the build-phase committee-charter completeness rules and operating-cycle design. Bounded-work evidence for the intake-phase custodian of `processes:activity-ge-build-f5yeny` (CR-BP-L4-03 enrichment).
+  strength: E2
+- source: processes:activity-ge-build-f5yeny
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-03 cell-specific bounded-work prose for this GovernanceAndExistence L4 Task.
+  strength: E3
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: GovernanceAndExistence
+    stage: Build
+    identifier: ecf:governanceExistence.build
+metadata:
+  established_by: CR-BP-102
+  established_at: '2026-09-19'
+  change_history:
+  - cr: CR-BP-48
+    date: '2026-09-13'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-48
+
+      GovernanceAndExistence Conceive + Design + Build tranche (pattern
+
+      proven by CR-BP-42 through CR-BP-47). Classified per CR-BP-32
+
+      section 5 (fails standalone executability and resource dedication);
+
+      decomposition boundary marker per CR-BP-32 section 12 pending Task
+
+      records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

@@ -21,1716 +21,1716 @@ snapshot_branch: main
 
 records:
   business_processes:
-    - id: dea:process-acquire-and-onboard-agents
-      name: "Acquire Agents"
-      type: Process
-      path: entities/v1-alpha/dea:process-acquire-and-onboard-agents/dea:process-acquire-and-onboard-agents.yaml
-      process_intent: develop
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-acquire-technology-assets
-      name: "Acquire Technology Assets"
-      type: Process
-      path: entities/v1-alpha/dea:process-acquire-technology-assets/dea:process-acquire-technology-assets.yaml
-      process_intent: develop
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-activate-billing-capability
-      name: "Activate Billing Capability"
-      type: Process
-      path: entities/v1-alpha/dea:process-activate-billing-capability/dea:process-activate-billing-capability.yaml
-      process_intent: manage
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-activate-operations-capability
-      name: "Activate Operations Capability"
-      type: Process
-      path: entities/v1-alpha/dea:process-activate-operations-capability/dea:process-activate-operations-capability.yaml
-      process_intent: manage
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-adapt-strategic-direction
-      name: "Adapt Strategic Direction"
-      type: Process
-      path: entities/v1-alpha/dea:process-adapt-strategic-direction/dea:process-adapt-strategic-direction.yaml
-      process_intent: develop
-      process_classification: strategic
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-audit-policy-compliance
-      name: "Audit Policy Compliance"
-      type: Process
-      path: entities/v1-alpha/dea:process-audit-policy-compliance/dea:process-audit-policy-compliance.yaml
-      process_intent: govern
-      process_classification: standardization
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-bring-into-force
-      name: "Bring Policy Instrument into Force"
-      type: Process
-      path: entities/v1-alpha/dea:process-bring-into-force/dea:process-bring-into-force.yaml
-      process_intent: transform
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-build-budgeting-and-forecasting-systems
-      name: "Build Budgeting and Forecasting Systems"
-      type: Process
-      path: entities/v1-alpha/dea:process-build-budgeting-and-forecasting-systems/dea:process-build-budgeting-and-forecasting-systems.yaml
-      process_intent: develop
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-build-contractor-and-partner-agent-pool
-      name: "Build Contractor and Partner-Agent Pool"
-      type: Process
-      path: entities/v1-alpha/dea:process-build-contractor-and-partner-agent-pool/dea:process-build-contractor-and-partner-agent-pool.yaml
-      process_intent: develop
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-build-delivery-capability
-      name: "Build Delivery Capability"
-      type: Process
-      path: entities/v1-alpha/dea:process-build-delivery-capability/dea:process-build-delivery-capability.yaml
-      process_intent: develop
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-build-innovation-prototype
-      name: "Build Innovation Prototype"
-      type: Process
-      path: entities/v1-alpha/dea:process-build-innovation-prototype/dea:process-build-innovation-prototype.yaml
-      process_intent: develop
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-build-logistics-network
-      name: "Build Logistics Network"
-      type: Process
-      path: entities/v1-alpha/dea:process-build-logistics-network/dea:process-build-logistics-network.yaml
-      process_intent: develop
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-build-service-capability
-      name: "Build Service Capability"
-      type: Process
-      path: entities/v1-alpha/dea:process-build-service-capability/dea:process-build-service-capability.yaml
-      process_intent: develop
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-build-strategic-plan
-      name: "Build Strategic Plan"
-      type: Process
-      path: entities/v1-alpha/dea:process-build-strategic-plan/dea:process-build-strategic-plan.yaml
-      process_intent: develop
-      process_classification: strategic
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-build-strategic-roadmap
-      name: "Build Strategic Roadmap"
-      type: Process
-      path: entities/v1-alpha/dea:process-build-strategic-roadmap/dea:process-build-strategic-roadmap.yaml
-      process_intent: develop
-      process_classification: strategic
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-close-enterprise-relationship
-      name: "Close Enterprise Relationship"
-      type: Process
-      path: entities/v1-alpha/dea:process-close-enterprise-relationship/dea:process-close-enterprise-relationship.yaml
-      process_intent: transform
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-codify-charters-and-policies
-      name: "Codify Charters and Policies"
-      type: Process
-      path: entities/v1-alpha/dea:process-codify-charters-and-policies/dea:process-codify-charters-and-policies.yaml
-      process_intent: operate
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-commission-production-line
-      name: "Commission Production Line"
-      type: Process
-      path: entities/v1-alpha/dea:process-commission-production-line/dea:process-commission-production-line.yaml
-      process_intent: develop
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-conceive-strategic-intent
-      name: "Conceive Strategic Intent"
-      type: Process
-      path: entities/v1-alpha/dea:process-conceive-strategic-intent/dea:process-conceive-strategic-intent.yaml
-      process_intent: develop
-      process_classification: strategic
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-conceive-workforce-and-agent-mix
-      name: "Conceive Workforce and Agent Mix"
-      type: Process
-      path: entities/v1-alpha/dea:process-conceive-workforce-and-agent-mix/dea:process-conceive-workforce-and-agent-mix.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-conclude-regulated-run-off
-      name: "Conclude Regulated Run-Off"
-      type: Process
-      path: entities/v1-alpha/dea:process-conclude-regulated-run-off/dea:process-conclude-regulated-run-off.yaml
-      process_intent: manage
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-conduct-assurance-review
-      name: "Conduct Assurance Review"
-      type: Process
-      path: entities/v1-alpha/dea:process-conduct-assurance-review/dea:process-conduct-assurance-review.yaml
-      process_intent: operate
-      process_classification: standardization
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-conduct-capability-gap-analysis
-      name: "Conduct Capability Gap Analysis"
-      type: Process
-      path: entities/v1-alpha/dea:process-conduct-capability-gap-analysis/dea:process-conduct-capability-gap-analysis.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-conduct-cost-optimization-review
-      name: "Conduct Cost Optimization Review"
-      type: Process
-      path: entities/v1-alpha/dea:process-conduct-cost-optimization-review/dea:process-conduct-cost-optimization-review.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-conduct-engagement-and-alignment-review
-      name: "Conduct Engagement and Alignment Review"
-      type: Process
-      path: entities/v1-alpha/dea:process-conduct-engagement-and-alignment-review/dea:process-conduct-engagement-and-alignment-review.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-conduct-lean-six-sigma-programme
-      name: "Conduct Lean Six Sigma Programme"
-      type: Process
-      path: entities/v1-alpha/dea:process-conduct-lean-six-sigma-programme/dea:process-conduct-lean-six-sigma-programme.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-conduct-logistics-optimization
-      name: "Conduct Logistics Optimization"
-      type: Process
-      path: entities/v1-alpha/dea:process-conduct-logistics-optimization/dea:process-conduct-logistics-optimization.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-conduct-operations-performance-review
-      name: "Conduct Operations Performance Review"
-      type: Process
-      path: entities/v1-alpha/dea:process-conduct-operations-performance-review/dea:process-conduct-operations-performance-review.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-conduct-proposition-performance-review
-      name: "Conduct Proposition Performance Review"
-      type: Process
-      path: entities/v1-alpha/dea:process-conduct-proposition-performance-review/dea:process-conduct-proposition-performance-review.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-conduct-regulated-workforce-wind-down
-      name: "Conduct Regulated Workforce Wind-Down"
-      type: Process
-      path: entities/v1-alpha/dea:process-conduct-regulated-workforce-wind-down/dea:process-conduct-regulated-workforce-wind-down.yaml
-      process_intent: manage
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-coordinate-collaboration
-      name: "Coordinate Collaboration"
-      type: Process
-      path: entities/v1-alpha/dea:process-coordinate-collaboration/dea:process-coordinate-collaboration.yaml
-      process_intent: operate
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-customer-channel-and-acquisition-build
-      name: "Build Customer Acquisition Channels"
-      type: Process
-      path: entities/v1-alpha/dea:process-customer-channel-and-acquisition-build/dea:process-customer-channel-and-acquisition-build.yaml
-      process_intent: operate
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-customer-experience-design
-      name: "Design Customer Experience"
-      type: Process
-      path: entities/v1-alpha/dea:process-customer-experience-design/dea:process-customer-experience-design.yaml
-      process_intent: develop
-      process_classification: standardization
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-customer-insight-and-retention
-      name: "Operate Customer Retention Programs"
-      type: Process
-      path: entities/v1-alpha/dea:process-customer-insight-and-retention/dea:process-customer-insight-and-retention.yaml
-      process_intent: operate
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-customer-journey-design
-      name: "Design Customer Journey"
-      type: Process
-      path: entities/v1-alpha/dea:process-customer-journey-design/dea:process-customer-journey-design.yaml
-      process_intent: develop
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-customer-strategy-conception
-      name: "Develop Customer Strategy"
-      type: Process
-      path: entities/v1-alpha/dea:process-customer-strategy-conception/dea:process-customer-strategy-conception.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-decommission
-      name: "Decommission Enterprise Asset"
-      type: Process
-      path: entities/v1-alpha/dea:process-decommission/dea:process-decommission.yaml
-      process_intent: transform
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-define-enterprise-purpose-and-ambition
-      name: "Define Enterprise Purpose and Ambition"
-      type: Process
-      path: entities/v1-alpha/dea:process-define-enterprise-purpose-and-ambition/dea:process-define-enterprise-purpose-and-ambition.yaml
-      process_intent: develop
-      process_classification: strategic
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-demand-design
-      name: "Design Demand Model"
-      type: Process
-      path: entities/v1-alpha/dea:process-demand-design/dea:process-demand-design.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-demand-generation-build
-      name: "Build Demand Generation Programs"
-      type: Process
-      path: entities/v1-alpha/dea:process-demand-generation-build/dea:process-demand-generation-build.yaml
-      process_intent: operate
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-design-agent-topology
-      name: "Design Agent Topology"
-      type: Process
-      path: entities/v1-alpha/dea:process-design-agent-topology/dea:process-design-agent-topology.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-design-competency-framework
-      name: "Design Competency Framework"
-      type: Process
-      path: entities/v1-alpha/dea:process-design-competency-framework/dea:process-design-competency-framework.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-design-delivery-model
-      name: "Design Delivery Model"
-      type: Process
-      path: entities/v1-alpha/dea:process-design-delivery-model/dea:process-design-delivery-model.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-design-facility-and-asset-blueprint
-      name: "Design Facility and Asset Blueprint"
-      type: Process
-      path: entities/v1-alpha/dea:process-design-facility-and-asset-blueprint/dea:process-design-facility-and-asset-blueprint.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-design-financial-controls-and-policies
-      name: "Design Financial Controls and Policies"
-      type: Process
-      path: entities/v1-alpha/dea:process-design-financial-controls-and-policies/dea:process-design-financial-controls-and-policies.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-design-financial-plan-structure
-      name: "Design Financial Plan Structure"
-      type: Process
-      path: entities/v1-alpha/dea:process-design-financial-plan-structure/dea:process-design-financial-plan-structure.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-design-governance-system
-      name: "Design Governance System"
-      type: Process
-      path: entities/v1-alpha/dea:process-design-governance-system/dea:process-design-governance-system.yaml
-      process_intent: develop
-      process_classification: strategic
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-design-innovation-experiment
-      name: "Design Innovation Experiment"
-      type: Process
-      path: entities/v1-alpha/dea:process-design-innovation-experiment/dea:process-design-innovation-experiment.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-design-logistics-and-routing
-      name: "Design Logistics and Routing"
-      type: Process
-      path: entities/v1-alpha/dea:process-design-logistics-and-routing/dea:process-design-logistics-and-routing.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-design-objectives-and-targets
-      name: "Design Objectives and Targets"
-      type: Process
-      path: entities/v1-alpha/dea:process-design-objectives-and-targets/dea:process-design-objectives-and-targets.yaml
-      process_intent: develop
-      process_classification: strategic
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-design-operations-model
-      name: "Design Operations Model"
-      type: Process
-      path: entities/v1-alpha/dea:process-design-operations-model/dea:process-design-operations-model.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-design-organization-structure
-      name: "Design Organization Structure"
-      type: Process
-      path: entities/v1-alpha/dea:process-design-organization-structure/dea:process-design-organization-structure.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-design-packaging-and-configuration
-      name: "Design Packaging and Configuration"
-      type: Process
-      path: entities/v1-alpha/dea:process-design-packaging-and-configuration/dea:process-design-packaging-and-configuration.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-design-policies-and-controls
-      name: "Design Policies and Controls"
-      type: Process
-      path: entities/v1-alpha/dea:process-design-policies-and-controls/dea:process-design-policies-and-controls.yaml
-      process_intent: develop
-      process_classification: standardization
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-design-product-and-service-propositions
-      name: "Design Product and Service Propositions"
-      type: Process
-      path: entities/v1-alpha/dea:process-design-product-and-service-propositions/dea:process-design-product-and-service-propositions.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-design-risk-framework
-      name: "Design Risk Framework"
-      type: Process
-      path: entities/v1-alpha/dea:process-design-risk-framework/dea:process-design-risk-framework.yaml
-      process_intent: develop
-      process_classification: strategic
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-design-role-catalogue
-      name: "Design Role Catalogue"
-      type: Process
-      path: entities/v1-alpha/dea:process-design-role-catalogue/dea:process-design-role-catalogue.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-design-strategic-options
-      name: "Design Strategic Options"
-      type: Process
-      path: entities/v1-alpha/dea:process-design-strategic-options/dea:process-design-strategic-options.yaml
-      process_intent: develop
-      process_classification: strategic
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-design-strategic-scenarios
-      name: "Design Strategic Scenarios"
-      type: Process
-      path: entities/v1-alpha/dea:process-design-strategic-scenarios/dea:process-design-strategic-scenarios.yaml
-      process_intent: develop
-      process_classification: strategic
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-design-tax-position-and-strategy
-      name: "Design Tax Position and Strategy"
-      type: Process
-      path: entities/v1-alpha/dea:process-design-tax-position-and-strategy/dea:process-design-tax-position-and-strategy.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-design-technology-platform-architecture
-      name: "Design Technology Platform Architecture"
-      type: Process
-      path: entities/v1-alpha/dea:process-design-technology-platform-architecture/dea:process-design-technology-platform-architecture.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-design-treasury-and-funding-model
-      name: "Design Treasury and Funding Model"
-      type: Process
-      path: entities/v1-alpha/dea:process-design-treasury-and-funding-model/dea:process-design-treasury-and-funding-model.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-develop-agents-and-organization
-      name: "Develop Agents and Organization"
-      type: Process
-      path: entities/v1-alpha/dea:process-develop-agents-and-organization/dea:process-develop-agents-and-organization.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-develop-corporate-strategy
-      name: "Develop Corporate Strategy"
-      type: Process
-      path: entities/v1-alpha/dea:process-develop-corporate-strategy/dea:process-develop-corporate-strategy.yaml
-      process_intent: develop
-      process_classification: strategic
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-develop-governance-strategy
-      name: "Develop Governance Strategy"
-      type: Process
-      path: entities/v1-alpha/dea:process-develop-governance-strategy/dea:process-develop-governance-strategy.yaml
-      process_intent: develop
-      process_classification: strategic
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-develop-product-variants
-      name: "Develop Product Variants"
-      type: Process
-      path: entities/v1-alpha/dea:process-develop-product-variants/dea:process-develop-product-variants.yaml
-      process_intent: develop
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-effect-regulator-mandated-governance-unwind
-      name: "Effect Regulator-Mandated Governance Unwind"
-      type: Process
-      path: entities/v1-alpha/dea:process-effect-regulator-mandated-governance-unwind/dea:process-effect-regulator-mandated-governance-unwind.yaml
-      process_intent: manage
-      process_classification: standardization
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-establish-governance-bodies
-      name: "Establish Governance Bodies"
-      type: Process
-      path: entities/v1-alpha/dea:process-establish-governance-bodies/dea:process-establish-governance-bodies.yaml
-      process_intent: operate
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-establish-risk-and-control-apparatus
-      name: "Establish Risk and Control Apparatus"
-      type: Process
-      path: entities/v1-alpha/dea:process-establish-risk-and-control-apparatus/dea:process-establish-risk-and-control-apparatus.yaml
-      process_intent: manage
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-evaluate-strategic-alternatives
-      name: "Evaluate Strategic Alternatives"
-      type: Process
-      path: entities/v1-alpha/dea:process-evaluate-strategic-alternatives/dea:process-evaluate-strategic-alternatives.yaml
-      process_intent: develop
-      process_classification: strategic
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-evolve-products-and-services
-      name: "Evolve Products and Services"
-      type: Process
-      path: entities/v1-alpha/dea:process-evolve-products-and-services/dea:process-evolve-products-and-services.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-evolve-treasury-and-funding-model
-      name: "Evolve Treasury and Funding Model"
-      type: Process
-      path: entities/v1-alpha/dea:process-evolve-treasury-and-funding-model/dea:process-evolve-treasury-and-funding-model.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-execute-payroll
-      name: "Execute Payroll"
-      type: Process
-      path: entities/v1-alpha/dea:process-execute-payroll/dea:process-execute-payroll.yaml
-      process_intent: operate
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-frame-delivery-model-conception
-      name: "Frame Delivery Model Conception"
-      type: Process
-      path: entities/v1-alpha/dea:process-frame-delivery-model-conception/dea:process-frame-delivery-model-conception.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-frame-finance-strategy
-      name: "Frame Finance Strategy"
-      type: Process
-      path: entities/v1-alpha/dea:process-frame-finance-strategy/dea:process-frame-finance-strategy.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-frame-innovation-thesis
-      name: "Frame Innovation Thesis"
-      type: Process
-      path: entities/v1-alpha/dea:process-frame-innovation-thesis/dea:process-frame-innovation-thesis.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-frame-operations-strategy
-      name: "Frame Operations Strategy"
-      type: Process
-      path: entities/v1-alpha/dea:process-frame-operations-strategy/dea:process-frame-operations-strategy.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-frame-organization-and-agent-strategy
-      name: "Frame Organization and Agent Strategy"
-      type: Process
-      path: entities/v1-alpha/dea:process-frame-organization-and-agent-strategy/dea:process-frame-organization-and-agent-strategy.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-frame-organization-model
-      name: "Frame Organization Model"
-      type: Process
-      path: entities/v1-alpha/dea:process-frame-organization-model/dea:process-frame-organization-model.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-frame-physical-asset-approach
-      name: "Frame Physical Asset Approach"
-      type: Process
-      path: entities/v1-alpha/dea:process-frame-physical-asset-approach/dea:process-frame-physical-asset-approach.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-frame-portfolio-direction
-      name: "Frame Portfolio Direction"
-      type: Process
-      path: entities/v1-alpha/dea:process-frame-portfolio-direction/dea:process-frame-portfolio-direction.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-frame-risk-framework-direction
-      name: "Frame Risk Framework Direction"
-      type: Process
-      path: entities/v1-alpha/dea:process-frame-risk-framework-direction/dea:process-frame-risk-framework-direction.yaml
-      process_intent: govern
-      process_classification: strategic
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-frame-strategic-horizons
-      name: "Frame Strategic Horizons"
-      type: Process
-      path: entities/v1-alpha/dea:process-frame-strategic-horizons/dea:process-frame-strategic-horizons.yaml
-      process_intent: develop
-      process_classification: strategic
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-frame-technology-enablement-approach
-      name: "Frame Technology Enablement Approach"
-      type: Process
-      path: entities/v1-alpha/dea:process-frame-technology-enablement-approach/dea:process-frame-technology-enablement-approach.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-frame-value-proposition-thesis
-      name: "Frame Value Proposition Thesis"
-      type: Process
-      path: entities/v1-alpha/dea:process-frame-value-proposition-thesis/dea:process-frame-value-proposition-thesis.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-implement-financial-systems-and-ledger
-      name: "Implement Financial Systems and Ledger"
-      type: Process
-      path: entities/v1-alpha/dea:process-implement-financial-systems-and-ledger/dea:process-implement-financial-systems-and-ledger.yaml
-      process_intent: develop
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-improve-policy-and-control-framework
-      name: "Improve Policy and Control Framework"
-      type: Process
-      path: entities/v1-alpha/dea:process-improve-policy-and-control-framework/dea:process-improve-policy-and-control-framework.yaml
-      process_intent: develop
-      process_classification: standardization
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-improve-technology-platforms
-      name: "Improve Technology Platforms"
-      type: Process
-      path: entities/v1-alpha/dea:process-improve-technology-platforms/dea:process-improve-technology-platforms.yaml
-      process_intent: develop
-      process_classification: standardization
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-initiate-policy-and-charter
-      name: "Initiate Policy and Charter"
-      type: Process
-      path: entities/v1-alpha/dea:process-initiate-policy-and-charter/dea:process-initiate-policy-and-charter.yaml
-      process_intent: manage
-      process_classification: strategic
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-institutionalize-regulated-strategic-plan
-      name: "Institutionalize Regulated Strategic Plan"
-      type: Process
-      path: entities/v1-alpha/dea:process-institutionalize-regulated-strategic-plan/dea:process-institutionalize-regulated-strategic-plan.yaml
-      process_intent: manage
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-manage-cash-and-liquidity
-      name: "Manage Cash and Liquidity"
-      type: Process
-      path: entities/v1-alpha/dea:process-manage-cash-and-liquidity/dea:process-manage-cash-and-liquidity.yaml
-      process_intent: operate
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-manage-customer-relationship
-      name: "Manage Customer Relationship"
-      type: Process
-      path: entities/v1-alpha/dea:process-manage-customer-relationship/dea:process-manage-customer-relationship.yaml
-      process_intent: manage
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-manage-portfolio-performance
-      name: "Manage Portfolio Performance"
-      type: Process
-      path: entities/v1-alpha/dea:process-manage-portfolio-performance/dea:process-manage-portfolio-performance.yaml
-      process_intent: operate
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-manage-proposition-lifecycle
-      name: "Manage Proposition Lifecycle"
-      type: Process
-      path: entities/v1-alpha/dea:process-manage-proposition-lifecycle/dea:process-manage-proposition-lifecycle.yaml
-      process_intent: operate
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-manage-tax-compliance-and-filings
-      name: "Manage Tax Compliance and Filings"
-      type: Process
-      path: entities/v1-alpha/dea:process-manage-tax-compliance-and-filings/dea:process-manage-tax-compliance-and-filings.yaml
-      process_intent: operate
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-market-and-demand-conception
-      name: "Develop Market Intelligence"
-      type: Process
-      path: entities/v1-alpha/dea:process-market-and-demand-conception/dea:process-market-and-demand-conception.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-mobilize-licensed-workforce
+    - id: processes:process-ao-activate-jqxtqn
       name: "Mobilize Licensed Workforce"
       type: Process
-      path: entities/v1-alpha/dea:process-mobilize-licensed-workforce/dea:process-mobilize-licensed-workforce.yaml
+      path: entities/v1-alpha/ao-activate/ao-activate-jjx738/ao-activate-jqxtqn/processes-process-ao-activate-jqxtqn.yaml
       process_intent: manage
       process_classification: management
       legacy_findings:
         - no-specialization
-    - id: dea:process-monitor-strategic-performance
-      name: "Monitor Strategic Performance"
+    - id: processes:process-ao-build-b38bkg
+      name: "Build Contractor and Partner-Agent Pool"
       type: Process
-      path: entities/v1-alpha/dea:process-monitor-strategic-performance/dea:process-monitor-strategic-performance.yaml
-      process_intent: operate
-      process_classification: strategic
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-onboard-regulated-party-relationship
-      name: "Onboard Regulated Party Relationship"
-      type: Process
-      path: entities/v1-alpha/dea:process-onboard-regulated-party-relationship/dea:process-onboard-regulated-party-relationship.yaml
-      process_intent: manage
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-onboard-tax-and-compliance-capability
-      name: "Onboard Tax and Compliance Capability"
-      type: Process
-      path: entities/v1-alpha/dea:process-onboard-tax-and-compliance-capability/dea:process-onboard-tax-and-compliance-capability.yaml
-      process_intent: manage
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-operate-agent-performance
-      name: "Operate Agent Performance"
-      type: Process
-      path: entities/v1-alpha/dea:process-operate-agent-performance/dea:process-operate-agent-performance.yaml
-      process_intent: operate
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-operate-asset-maintenance
-      name: "Operate Asset Maintenance"
-      type: Process
-      path: entities/v1-alpha/dea:process-operate-asset-maintenance/dea:process-operate-asset-maintenance.yaml
-      process_intent: operate
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-operate-enterprise-risk-oversight
-      name: "Operate Enterprise Risk Oversight"
-      type: Process
-      path: entities/v1-alpha/dea:process-operate-enterprise-risk-oversight/dea:process-operate-enterprise-risk-oversight.yaml
-      process_intent: operate
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-operate-facility-management
-      name: "Operate Facility Management"
-      type: Process
-      path: entities/v1-alpha/dea:process-operate-facility-management/dea:process-operate-facility-management.yaml
-      process_intent: operate
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-operate-financial-reporting-and-disclosure
-      name: "Operate Financial Reporting and Disclosure"
-      type: Process
-      path: entities/v1-alpha/dea:process-operate-financial-reporting-and-disclosure/dea:process-operate-financial-reporting-and-disclosure.yaml
-      process_intent: operate
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-operate-general-ledger
-      name: "Operate General Ledger"
-      type: Process
-      path: entities/v1-alpha/dea:process-operate-general-ledger/dea:process-operate-general-ledger.yaml
-      process_intent: operate
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-operate-governance-oversight
-      name: "Operate Governance Oversight"
-      type: Process
-      path: entities/v1-alpha/dea:process-operate-governance-oversight/dea:process-operate-governance-oversight.yaml
-      process_intent: operate
-      process_classification: strategic
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-operate-learning-and-development
-      name: "Operate Learning and Development"
-      type: Process
-      path: entities/v1-alpha/dea:process-operate-learning-and-development/dea:process-operate-learning-and-development.yaml
-      process_intent: operate
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-operate-logistics
-      name: "Operate Logistics"
-      type: Process
-      path: entities/v1-alpha/dea:process-operate-logistics/dea:process-operate-logistics.yaml
-      process_intent: operate
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-operate-payroll-and-benefits
-      name: "Operate Payroll and Benefits"
-      type: Process
-      path: entities/v1-alpha/dea:process-operate-payroll-and-benefits/dea:process-operate-payroll-and-benefits.yaml
-      process_intent: operate
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-operate-procurement-cycle
-      name: "Operate Procurement Cycle"
-      type: Process
-      path: entities/v1-alpha/dea:process-operate-procurement-cycle/dea:process-operate-procurement-cycle.yaml
-      process_intent: operate
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-operate-product-catalogue
-      name: "Operate Product Catalogue"
-      type: Process
-      path: entities/v1-alpha/dea:process-operate-product-catalogue/dea:process-operate-product-catalogue.yaml
-      process_intent: operate
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-operate-quality-control
-      name: "Operate Quality Control"
-      type: Process
-      path: entities/v1-alpha/dea:process-operate-quality-control/dea:process-operate-quality-control.yaml
-      process_intent: operate
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-operate-service-delivery
-      name: "Operate Service Delivery"
-      type: Process
-      path: entities/v1-alpha/dea:process-operate-service-delivery/dea:process-operate-service-delivery.yaml
-      process_intent: operate
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-operate-strategic-review-cycle
-      name: "Operate Strategic Review Cycle"
-      type: Process
-      path: entities/v1-alpha/dea:process-operate-strategic-review-cycle/dea:process-operate-strategic-review-cycle.yaml
-      process_intent: operate
-      process_classification: strategic
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-operate-technology-platforms
-      name: "Operate Technology Platforms"
-      type: Process
-      path: entities/v1-alpha/dea:process-operate-technology-platforms/dea:process-operate-technology-platforms.yaml
-      process_intent: operate
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-operate-time-and-attendance
-      name: "Operate Time and Attendance"
-      type: Process
-      path: entities/v1-alpha/dea:process-operate-time-and-attendance/dea:process-operate-time-and-attendance.yaml
-      process_intent: operate
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-operate-warehouse-and-inventory
-      name: "Operate Warehouse and Inventory"
-      type: Process
-      path: entities/v1-alpha/dea:process-operate-warehouse-and-inventory/dea:process-operate-warehouse-and-inventory.yaml
-      process_intent: operate
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-optimize-asset-utilization
-      name: "Optimize Asset Utilization"
-      type: Process
-      path: entities/v1-alpha/dea:process-optimize-asset-utilization/dea:process-optimize-asset-utilization.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-perform-financial-close
-      name: "Perform Financial Close"
-      type: Process
-      path: entities/v1-alpha/dea:process-perform-financial-close/dea:process-perform-financial-close.yaml
-      process_intent: operate
-      process_classification: core
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-prepare-market-readiness
-      name: "Prepare Market Readiness"
-      type: Process
-      path: entities/v1-alpha/dea:process-prepare-market-readiness/dea:process-prepare-market-readiness.yaml
-      process_intent: develop
-      process_classification: management
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-provision-facilities
-      name: "Provision Facilities"
-      type: Process
-      path: entities/v1-alpha/dea:process-provision-facilities/dea:process-provision-facilities.yaml
+      path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-b38bkg/processes-process-ao-build-b38bkg.yaml
       process_intent: develop
       process_classification: core
       legacy_findings:
         - no-specialization
-    - id: dea:process-rationalize-portfolio
-      name: "Rationalize Portfolio"
+    - id: processes:process-ao-build-w2qurd
+      name: "Acquire Agents"
       type: Process
-      path: entities/v1-alpha/dea:process-rationalize-portfolio/dea:process-rationalize-portfolio.yaml
+      path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-w2qurd/processes-process-ao-build-w2qurd.yaml
+      process_intent: develop
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-ao-conceive-e3u8s2
+      name: "Frame Organization and Agent Strategy"
+      type: Process
+      path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-e3u8s2/processes-process-ao-conceive-e3u8s2.yaml
       process_intent: develop
       process_classification: management
       legacy_findings:
         - no-specialization
-    - id: dea:process-refine-financial-controls-and-policies
-      name: "Refine Financial Controls and Policies"
+    - id: processes:process-ao-conceive-ruxjvh
+      name: "Frame Organization Model"
       type: Process
-      path: entities/v1-alpha/dea:process-refine-financial-controls-and-policies/dea:process-refine-financial-controls-and-policies.yaml
+      path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-ruxjvh/processes-process-ao-conceive-ruxjvh.yaml
       process_intent: develop
       process_classification: management
       legacy_findings:
         - no-specialization
-    - id: dea:process-refresh-objectives-and-targets
-      name: "Refresh Objectives and Targets"
+    - id: processes:process-ao-conceive-z6m6p5
+      name: "Conceive Workforce and Agent Mix"
       type: Process
-      path: entities/v1-alpha/dea:process-refresh-objectives-and-targets/dea:process-refresh-objectives-and-targets.yaml
+      path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-z6m6p5/processes-process-ao-conceive-z6m6p5.yaml
       process_intent: develop
-      process_classification: strategic
+      process_classification: management
       legacy_findings:
         - no-specialization
-    - id: dea:process-reorganize-structures
+    - id: processes:process-ao-design-34e95r
+      name: "Design Role Catalogue"
+      type: Process
+      path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-34e95r/processes-process-ao-design-34e95r.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-ao-design-7dkbur
+      name: "Design Organization Structure"
+      type: Process
+      path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-7dkbur/processes-process-ao-design-7dkbur.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-ao-design-8fzp2b
+      name: "Design Agent Topology"
+      type: Process
+      path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-8fzp2b/processes-process-ao-design-8fzp2b.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-ao-design-rve8j5
+      name: "Design Competency Framework"
+      type: Process
+      path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-rve8j5/processes-process-ao-design-rve8j5.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-ao-improve-edjyha
+      name: "Conduct Engagement and Alignment Review"
+      type: Process
+      path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-edjyha/processes-process-ao-improve-edjyha.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-ao-improve-h3vgyf
+      name: "Conduct Capability Gap Analysis"
+      type: Process
+      path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-h3vgyf/processes-process-ao-improve-h3vgyf.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-ao-improve-xfh8na
+      name: "Develop Agents and Organization"
+      type: Process
+      path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-xfh8na/processes-process-ao-improve-xfh8na.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-ao-improve-xs59e2
       name: "Reorganize Structures"
       type: Process
-      path: entities/v1-alpha/dea:process-reorganize-structures/dea:process-reorganize-structures.yaml
+      path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-xs59e2/processes-process-ao-improve-xs59e2.yaml
       process_intent: develop
       process_classification: management
       legacy_findings:
         - no-specialization
-    - id: dea:process-review-governance-effectiveness
-      name: "Review Governance Effectiveness"
+    - id: processes:process-ao-operate-38qyc6
+      name: "Operate Payroll and Benefits"
       type: Process
-      path: entities/v1-alpha/dea:process-review-governance-effectiveness/dea:process-review-governance-effectiveness.yaml
-      process_intent: govern
+      path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-38qyc6/processes-process-ao-operate-38qyc6.yaml
+      process_intent: operate
       process_classification: core
       legacy_findings:
         - no-specialization
-    - id: dea:process-review-strategy-effectiveness
-      name: "Review Strategy Effectiveness"
+    - id: processes:process-ao-operate-87q5mk
+      name: "Operate Learning and Development"
       type: Process
-      path: entities/v1-alpha/dea:process-review-strategy-effectiveness/dea:process-review-strategy-effectiveness.yaml
+      path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-87q5mk/processes-process-ao-operate-87q5mk.yaml
+      process_intent: operate
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-ao-operate-bd7mef
+      name: "Coordinate Collaboration"
+      type: Process
+      path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-bd7mef/processes-process-ao-operate-bd7mef.yaml
+      process_intent: operate
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-ao-operate-dg9q4h
+      name: "Operate Time and Attendance"
+      type: Process
+      path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-dg9q4h/processes-process-ao-operate-dg9q4h.yaml
+      process_intent: operate
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-ao-operate-g4wp63
+      name: "Operate Agent Performance"
+      type: Process
+      path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-g4wp63/processes-process-ao-operate-g4wp63.yaml
+      process_intent: operate
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-ao-retire-g3eyr8
+      name: "Conduct Regulated Workforce Wind-Down"
+      type: Process
+      path: entities/v1-alpha/ao-retire/ao-retire-jspuzz/ao-retire-g3eyr8/processes-process-ao-retire-g3eyr8.yaml
+      process_intent: manage
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-eo-activate-sy5qsa
+      name: "Activate Operations Capability"
+      type: Process
+      path: entities/v1-alpha/eo-activate/eo-activate-bnmwuu/eo-activate-sy5qsa/processes-process-eo-activate-sy5qsa.yaml
+      process_intent: manage
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-eo-build-awy8dz
+      name: "Commission Production Line"
+      type: Process
+      path: entities/v1-alpha/eo-build/eo-build-7pur27/eo-build-awy8dz/processes-process-eo-build-awy8dz.yaml
       process_intent: develop
-      process_classification: strategic
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-run-accounts-payable
-      name: "Run Accounts Payable"
-      type: Process
-      path: entities/v1-alpha/dea:process-run-accounts-payable/dea:process-run-accounts-payable.yaml
-      process_intent: operate
       process_classification: core
       legacy_findings:
         - no-specialization
-    - id: dea:process-run-accounts-receivable
-      name: "Run Accounts Receivable"
+    - id: processes:process-eo-build-ba6ykz
+      name: "Build Logistics Network"
       type: Process
-      path: entities/v1-alpha/dea:process-run-accounts-receivable/dea:process-run-accounts-receivable.yaml
-      process_intent: operate
+      path: entities/v1-alpha/eo-build/eo-build-7pur27/eo-build-ba6ykz/processes-process-eo-build-ba6ykz.yaml
+      process_intent: develop
       process_classification: core
       legacy_findings:
         - no-specialization
-    - id: dea:process-run-production-line
-      name: "Run Production Line"
+    - id: processes:process-eo-build-j9z3q4
+      name: "Build Delivery Capability"
       type: Process
-      path: entities/v1-alpha/dea:process-run-production-line/dea:process-run-production-line.yaml
-      process_intent: operate
+      path: entities/v1-alpha/eo-build/eo-build-7pur27/eo-build-j9z3q4/processes-process-eo-build-j9z3q4.yaml
+      process_intent: develop
       process_classification: core
       legacy_findings:
         - no-specialization
-    - id: dea:process-score-audit-findings
-      name: "Score Audit Findings"
+    - id: processes:process-eo-build-nmmmt6
+      name: "Acquire Technology Assets"
       type: Process
-      path: entities/v1-alpha/dea:process-score-audit-findings/dea:process-score-audit-findings.yaml
+      path: entities/v1-alpha/eo-build/eo-build-7pur27/eo-build-nmmmt6/processes-process-eo-build-nmmmt6.yaml
+      process_intent: develop
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-eo-build-tqybhd
+      name: "Provision Facilities"
+      type: Process
+      path: entities/v1-alpha/eo-build/eo-build-7pur27/eo-build-tqybhd/processes-process-eo-build-tqybhd.yaml
+      process_intent: develop
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-eo-conceive-68mp6v
+      name: "Frame Technology Enablement Approach"
+      type: Process
+      path: entities/v1-alpha/eo-conceive/eo-conceive-j6n4f7/eo-conceive-68mp6v/processes-process-eo-conceive-68mp6v.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-eo-conceive-87kx9n
+      name: "Frame Physical Asset Approach"
+      type: Process
+      path: entities/v1-alpha/eo-conceive/eo-conceive-j6n4f7/eo-conceive-87kx9n/processes-process-eo-conceive-87kx9n.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-eo-conceive-ky5wxp
+      name: "Frame Delivery Model Conception"
+      type: Process
+      path: entities/v1-alpha/eo-conceive/eo-conceive-j6n4f7/eo-conceive-ky5wxp/processes-process-eo-conceive-ky5wxp.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-eo-conceive-xhjdr2
+      name: "Frame Operations Strategy"
+      type: Process
+      path: entities/v1-alpha/eo-conceive/eo-conceive-j6n4f7/eo-conceive-xhjdr2/processes-process-eo-conceive-xhjdr2.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-eo-design-6j5mxp
+      name: "Design Delivery Model"
+      type: Process
+      path: entities/v1-alpha/eo-design/eo-design-g6dmdk/eo-design-6j5mxp/processes-process-eo-design-6j5mxp.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-eo-design-7gtead
+      name: "Design Technology Platform Architecture"
+      type: Process
+      path: entities/v1-alpha/eo-design/eo-design-g6dmdk/eo-design-7gtead/processes-process-eo-design-7gtead.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-eo-design-8s76nv
+      name: "Design Logistics and Routing"
+      type: Process
+      path: entities/v1-alpha/eo-design/eo-design-g6dmdk/eo-design-8s76nv/processes-process-eo-design-8s76nv.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-eo-design-q83tdv
+      name: "Design Facility and Asset Blueprint"
+      type: Process
+      path: entities/v1-alpha/eo-design/eo-design-g6dmdk/eo-design-q83tdv/processes-process-eo-design-q83tdv.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-eo-design-rvfpjb
+      name: "Design Operations Model"
+      type: Process
+      path: entities/v1-alpha/eo-design/eo-design-g6dmdk/eo-design-rvfpjb/processes-process-eo-design-rvfpjb.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-eo-improve-3fem63
+      name: "Conduct Logistics Optimization"
+      type: Process
+      path: entities/v1-alpha/eo-improve/eo-improve-c8uff9/eo-improve-3fem63/processes-process-eo-improve-3fem63.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-eo-improve-babwdc
+      name: "Improve Technology Platforms"
+      type: Process
+      path: entities/v1-alpha/eo-improve/eo-improve-c8uff9/eo-improve-babwdc/processes-process-eo-improve-babwdc.yaml
       process_intent: develop
       process_classification: standardization
       legacy_findings:
         - no-specialization
-    - id: dea:process-secure-funding-facilities
-      name: "Secure Funding Facilities"
+    - id: processes:process-eo-improve-g3ngp3
+      name: "Conduct Operations Performance Review"
       type: Process
-      path: entities/v1-alpha/dea:process-secure-funding-facilities/dea:process-secure-funding-facilities.yaml
+      path: entities/v1-alpha/eo-improve/eo-improve-c8uff9/eo-improve-g3ngp3/processes-process-eo-improve-g3ngp3.yaml
       process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-eo-improve-q58ecg
+      name: "Optimize Asset Utilization"
+      type: Process
+      path: entities/v1-alpha/eo-improve/eo-improve-c8uff9/eo-improve-q58ecg/processes-process-eo-improve-q58ecg.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-eo-improve-us272s
+      name: "Conduct Lean Six Sigma Programme"
+      type: Process
+      path: entities/v1-alpha/eo-improve/eo-improve-c8uff9/eo-improve-us272s/processes-process-eo-improve-us272s.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-eo-operate-2jnz85
+      name: "Operate Service Delivery"
+      type: Process
+      path: entities/v1-alpha/eo-operate/eo-operate-bfd7jb/eo-operate-2jnz85/processes-process-eo-operate-2jnz85.yaml
+      process_intent: operate
       process_classification: core
       legacy_findings:
         - no-specialization
-    - id: dea:process-sense-environmental-signals
-      name: "Sense Environmental Signals"
+    - id: processes:process-eo-operate-44jsrp
+      name: "Operate Quality Control"
       type: Process
-      path: entities/v1-alpha/dea:process-sense-environmental-signals/dea:process-sense-environmental-signals.yaml
+      path: entities/v1-alpha/eo-operate/eo-operate-bfd7jb/eo-operate-44jsrp/processes-process-eo-operate-44jsrp.yaml
       process_intent: operate
-      process_classification: strategic
+      process_classification: core
       legacy_findings:
         - no-specialization
-    - id: dea:process-set-resource-allocation-priorities
-      name: "Set Resource Allocation Priorities"
+    - id: processes:process-eo-operate-4njp7b
+      name: "Operate Technology Platforms"
       type: Process
-      path: entities/v1-alpha/dea:process-set-resource-allocation-priorities/dea:process-set-resource-allocation-priorities.yaml
-      process_intent: develop
-      process_classification: strategic
-      legacy_findings:
-        - no-specialization
-    - id: dea:process-steer-initiative-portfolio
-      name: "Steer Initiative Portfolio"
-      type: Process
-      path: entities/v1-alpha/dea:process-steer-initiative-portfolio/dea:process-steer-initiative-portfolio.yaml
+      path: entities/v1-alpha/eo-operate/eo-operate-bfd7jb/eo-operate-4njp7b/processes-process-eo-operate-4njp7b.yaml
       process_intent: operate
-      process_classification: strategic
+      process_classification: core
       legacy_findings:
         - no-specialization
-    - id: dea:process-sunset-regulated-strategic-plan
-      name: "Sunset Regulated Strategic Plan"
+    - id: processes:process-eo-operate-j9cjzz
+      name: "Operate Asset Maintenance"
       type: Process
-      path: entities/v1-alpha/dea:process-sunset-regulated-strategic-plan/dea:process-sunset-regulated-strategic-plan.yaml
+      path: entities/v1-alpha/eo-operate/eo-operate-bfd7jb/eo-operate-j9cjzz/processes-process-eo-operate-j9cjzz.yaml
+      process_intent: operate
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-eo-operate-rqdte5
+      name: "Operate Facility Management"
+      type: Process
+      path: entities/v1-alpha/eo-operate/eo-operate-bfd7jb/eo-operate-rqdte5/processes-process-eo-operate-rqdte5.yaml
+      process_intent: operate
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-eo-operate-vzcxx7
+      name: "Operate Procurement Cycle"
+      type: Process
+      path: entities/v1-alpha/eo-operate/eo-operate-bfd7jb/eo-operate-vzcxx7/processes-process-eo-operate-vzcxx7.yaml
+      process_intent: operate
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-eo-operate-xud3hs
+      name: "Run Production Line"
+      type: Process
+      path: entities/v1-alpha/eo-operate/eo-operate-bfd7jb/eo-operate-xud3hs/processes-process-eo-operate-xud3hs.yaml
+      process_intent: operate
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-eo-operate-zh9m57
+      name: "Operate Logistics"
+      type: Process
+      path: entities/v1-alpha/eo-operate/eo-operate-bfd7jb/eo-operate-zh9m57/processes-process-eo-operate-zh9m57.yaml
+      process_intent: operate
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-eo-operate-zwzmbd
+      name: "Operate Warehouse and Inventory"
+      type: Process
+      path: entities/v1-alpha/eo-operate/eo-operate-bfd7jb/eo-operate-zwzmbd/processes-process-eo-operate-zwzmbd.yaml
+      process_intent: operate
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-eo-retire-rpg6d4
+      name: "Decommission Enterprise Asset"
+      type: Process
+      path: entities/v1-alpha/eo-retire/eo-retire-n9ge5c/eo-retire-rpg6d4/processes-process-eo-retire-rpg6d4.yaml
+      process_intent: transform
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-fa-activate-bzfywk
+      name: "Activate Billing Capability"
+      type: Process
+      path: entities/v1-alpha/fa-activate/fa-activate-n9s2z3/fa-activate-bzfywk/processes-process-fa-activate-bzfywk.yaml
       process_intent: manage
       process_classification: management
       legacy_findings:
         - no-specialization
-    - id: dea:process-transition-out-of-service
-      name: "Transition Proposition Out of Service"
+    - id: processes:process-fa-build-92v24c
+      name: "Build Budgeting and Forecasting Systems"
       type: Process
-      path: entities/v1-alpha/dea:process-transition-out-of-service/dea:process-transition-out-of-service.yaml
+      path: entities/v1-alpha/fa-build/fa-build-d7ww77/fa-build-92v24c/processes-process-fa-build-92v24c.yaml
+      process_intent: develop
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-fa-build-d5kb5m
+      name: "Implement Financial Systems and Ledger"
+      type: Process
+      path: entities/v1-alpha/fa-build/fa-build-d7ww77/fa-build-d5kb5m/processes-process-fa-build-d5kb5m.yaml
+      process_intent: develop
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-fa-build-ucfjgt
+      name: "Onboard Tax and Compliance Capability"
+      type: Process
+      path: entities/v1-alpha/fa-build/fa-build-d7ww77/fa-build-ucfjgt/processes-process-fa-build-ucfjgt.yaml
+      process_intent: manage
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-fa-build-ydnzjc
+      name: "Secure Funding Facilities"
+      type: Process
+      path: entities/v1-alpha/fa-build/fa-build-d7ww77/fa-build-ydnzjc/processes-process-fa-build-ydnzjc.yaml
+      process_intent: develop
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-fa-conceive-4uqqvg
+      name: "Frame Finance Strategy"
+      type: Process
+      path: entities/v1-alpha/fa-conceive/fa-conceive-9xzf3b/fa-conceive-4uqqvg/processes-process-fa-conceive-4uqqvg.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-fa-design-ds4drw
+      name: "Design Tax Position and Strategy"
+      type: Process
+      path: entities/v1-alpha/fa-design/fa-design-7juvse/fa-design-ds4drw/processes-process-fa-design-ds4drw.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-fa-design-k5sgfa
+      name: "Design Treasury and Funding Model"
+      type: Process
+      path: entities/v1-alpha/fa-design/fa-design-7juvse/fa-design-k5sgfa/processes-process-fa-design-k5sgfa.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-fa-design-uun4ja
+      name: "Design Financial Controls and Policies"
+      type: Process
+      path: entities/v1-alpha/fa-design/fa-design-7juvse/fa-design-uun4ja/processes-process-fa-design-uun4ja.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-fa-design-vk422z
+      name: "Design Financial Plan Structure"
+      type: Process
+      path: entities/v1-alpha/fa-design/fa-design-7juvse/fa-design-vk422z/processes-process-fa-design-vk422z.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-fa-improve-2kemkq
+      name: "Evolve Treasury and Funding Model"
+      type: Process
+      path: entities/v1-alpha/fa-improve/fa-improve-hvq8u8/fa-improve-2kemkq/processes-process-fa-improve-2kemkq.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-fa-improve-cdtsbq
+      name: "Refine Financial Controls and Policies"
+      type: Process
+      path: entities/v1-alpha/fa-improve/fa-improve-hvq8u8/fa-improve-cdtsbq/processes-process-fa-improve-cdtsbq.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-fa-improve-emqpgr
+      name: "Conduct Cost Optimization Review"
+      type: Process
+      path: entities/v1-alpha/fa-improve/fa-improve-hvq8u8/fa-improve-emqpgr/processes-process-fa-improve-emqpgr.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-fa-operate-2pmqb2
+      name: "Manage Cash and Liquidity"
+      type: Process
+      path: entities/v1-alpha/fa-operate/fa-operate-mazyjd/fa-operate-2pmqb2/processes-process-fa-operate-2pmqb2.yaml
+      process_intent: operate
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-fa-operate-4xn4d6
+      name: "Perform Financial Close"
+      type: Process
+      path: entities/v1-alpha/fa-operate/fa-operate-mazyjd/fa-operate-4xn4d6/processes-process-fa-operate-4xn4d6.yaml
+      process_intent: operate
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-fa-operate-8vqvkk
+      name: "Manage Tax Compliance and Filings"
+      type: Process
+      path: entities/v1-alpha/fa-operate/fa-operate-mazyjd/fa-operate-8vqvkk/processes-process-fa-operate-8vqvkk.yaml
+      process_intent: operate
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-fa-operate-g9zpnq
+      name: "Operate General Ledger"
+      type: Process
+      path: entities/v1-alpha/fa-operate/fa-operate-mazyjd/fa-operate-g9zpnq/processes-process-fa-operate-g9zpnq.yaml
+      process_intent: operate
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-fa-operate-sdppmp
+      name: "Run Accounts Receivable"
+      type: Process
+      path: entities/v1-alpha/fa-operate/fa-operate-mazyjd/fa-operate-sdppmp/processes-process-fa-operate-sdppmp.yaml
+      process_intent: operate
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-fa-operate-wkqaqp
+      name: "Run Accounts Payable"
+      type: Process
+      path: entities/v1-alpha/fa-operate/fa-operate-mazyjd/fa-operate-wkqaqp/processes-process-fa-operate-wkqaqp.yaml
+      process_intent: operate
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-fa-operate-ycba3k
+      name: "Operate Financial Reporting and Disclosure"
+      type: Process
+      path: entities/v1-alpha/fa-operate/fa-operate-mazyjd/fa-operate-ycba3k/processes-process-fa-operate-ycba3k.yaml
+      process_intent: operate
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-fa-operate-zpmxzp
+      name: "Execute Payroll"
+      type: Process
+      path: entities/v1-alpha/fa-operate/fa-operate-mazyjd/fa-operate-zpmxzp/processes-process-fa-operate-zpmxzp.yaml
+      process_intent: operate
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-fa-retire-wkbrsa
+      name: "Conclude Regulated Run-Off"
+      type: Process
+      path: entities/v1-alpha/fa-retire/fa-retire-2ptdnw/fa-retire-wkbrsa/processes-process-fa-retire-wkbrsa.yaml
+      process_intent: manage
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-ge-activate-wegs44
+      name: "Bring Policy Instrument into Force"
+      type: Process
+      path: entities/v1-alpha/ge-activate/ge-activate-7d46tn/ge-activate-wegs44/processes-process-ge-activate-wegs44.yaml
       process_intent: transform
       process_classification: core
       legacy_findings:
         - no-specialization
-    - id: dea:process-transition-to-service
-      name: "Transition Proposition to Service"
+    - id: processes:process-ge-build-3p38us
+      name: "Establish Governance Bodies"
       type: Process
-      path: entities/v1-alpha/dea:process-transition-to-service/dea:process-transition-to-service.yaml
-      process_intent: transform
+      path: entities/v1-alpha/ge-build/ge-build-tbc3ta/ge-build-3p38us/processes-process-ge-build-3p38us.yaml
+      process_intent: operate
       process_classification: core
       legacy_findings:
         - no-specialization
-    - id: dea:process-translate-strategic-choices-into-initiatives
-      name: "Translate Strategic Choices into Initiatives"
+    - id: processes:process-ge-build-mctdgc
+      name: "Codify Charters and Policies"
       type: Process
-      path: entities/v1-alpha/dea:process-translate-strategic-choices-into-initiatives/dea:process-translate-strategic-choices-into-initiatives.yaml
+      path: entities/v1-alpha/ge-build/ge-build-tbc3ta/ge-build-mctdgc/processes-process-ge-build-mctdgc.yaml
+      process_intent: operate
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-ge-build-rx7kt5
+      name: "Establish Risk and Control Apparatus"
+      type: Process
+      path: entities/v1-alpha/ge-build/ge-build-tbc3ta/ge-build-rx7kt5/processes-process-ge-build-rx7kt5.yaml
+      process_intent: manage
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-ge-conceive-6qnkhh
+      name: "Frame Risk Framework Direction"
+      type: Process
+      path: entities/v1-alpha/ge-conceive/ge-conceive-y93bwr/ge-conceive-6qnkhh/processes-process-ge-conceive-6qnkhh.yaml
+      process_intent: govern
+      process_classification: strategic
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-ge-conceive-e6jx6s
+      name: "Develop Governance Strategy"
+      type: Process
+      path: entities/v1-alpha/ge-conceive/ge-conceive-y93bwr/ge-conceive-e6jx6s/processes-process-ge-conceive-e6jx6s.yaml
       process_intent: develop
       process_classification: strategic
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-ge-conceive-xp6fye
+      name: "Initiate Policy and Charter"
+      type: Process
+      path: entities/v1-alpha/ge-conceive/ge-conceive-y93bwr/ge-conceive-xp6fye/processes-process-ge-conceive-xp6fye.yaml
+      process_intent: manage
+      process_classification: strategic
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-ge-design-kpsj5b
+      name: "Design Policies and Controls"
+      type: Process
+      path: entities/v1-alpha/ge-design/ge-design-jexyp6/ge-design-kpsj5b/processes-process-ge-design-kpsj5b.yaml
+      process_intent: develop
+      process_classification: standardization
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-ge-design-pqkvdc
+      name: "Design Risk Framework"
+      type: Process
+      path: entities/v1-alpha/ge-design/ge-design-jexyp6/ge-design-pqkvdc/processes-process-ge-design-pqkvdc.yaml
+      process_intent: develop
+      process_classification: strategic
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-ge-design-zbrg8b
+      name: "Design Governance System"
+      type: Process
+      path: entities/v1-alpha/ge-design/ge-design-jexyp6/ge-design-zbrg8b/processes-process-ge-design-zbrg8b.yaml
+      process_intent: develop
+      process_classification: strategic
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-ge-improve-axtq3b
+      name: "Score Audit Findings"
+      type: Process
+      path: entities/v1-alpha/ge-improve/ge-improve-s9r3qj/ge-improve-axtq3b/processes-process-ge-improve-axtq3b.yaml
+      process_intent: develop
+      process_classification: standardization
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-ge-improve-mgkw59
+      name: "Review Governance Effectiveness"
+      type: Process
+      path: entities/v1-alpha/ge-improve/ge-improve-s9r3qj/ge-improve-mgkw59/processes-process-ge-improve-mgkw59.yaml
+      process_intent: govern
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-ge-improve-u3g5dh
+      name: "Improve Policy and Control Framework"
+      type: Process
+      path: entities/v1-alpha/ge-improve/ge-improve-s9r3qj/ge-improve-u3g5dh/processes-process-ge-improve-u3g5dh.yaml
+      process_intent: develop
+      process_classification: standardization
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-ge-operate-hs7wf3
+      name: "Operate Governance Oversight"
+      type: Process
+      path: entities/v1-alpha/ge-operate/ge-operate-v2eu8x/ge-operate-hs7wf3/processes-process-ge-operate-hs7wf3.yaml
+      process_intent: operate
+      process_classification: strategic
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-ge-operate-hxxyc9
+      name: "Audit Policy Compliance"
+      type: Process
+      path: entities/v1-alpha/ge-operate/ge-operate-v2eu8x/ge-operate-hxxyc9/processes-process-ge-operate-hxxyc9.yaml
+      process_intent: govern
+      process_classification: standardization
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-ge-operate-tpenm6
+      name: "Operate Enterprise Risk Oversight"
+      type: Process
+      path: entities/v1-alpha/ge-operate/ge-operate-v2eu8x/ge-operate-tpenm6/processes-process-ge-operate-tpenm6.yaml
+      process_intent: operate
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-ge-operate-zwaes5
+      name: "Conduct Assurance Review"
+      type: Process
+      path: entities/v1-alpha/ge-operate/ge-operate-v2eu8x/ge-operate-zwaes5/processes-process-ge-operate-zwaes5.yaml
+      process_intent: operate
+      process_classification: standardization
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-ge-retire-mjq5hg
+      name: "Effect Regulator-Mandated Governance Unwind"
+      type: Process
+      path: entities/v1-alpha/ge-retire/ge-retire-v3vy7t/ge-retire-mjq5hg/processes-process-ge-retire-mjq5hg.yaml
+      process_intent: manage
+      process_classification: standardization
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pr-activate-6qzuve
+      name: "Onboard Regulated Party Relationship"
+      type: Process
+      path: entities/v1-alpha/pr-activate/pr-activate-d7j4et/pr-activate-6qzuve/processes-process-pr-activate-6qzuve.yaml
+      process_intent: manage
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pr-build-4kb2pt
+      name: "Build Demand Generation Programs"
+      type: Process
+      path: entities/v1-alpha/pr-build/pr-build-7u5xj6/pr-build-4kb2pt/processes-process-pr-build-4kb2pt.yaml
+      process_intent: operate
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pr-build-nygvw7
+      name: "Build Customer Acquisition Channels"
+      type: Process
+      path: entities/v1-alpha/pr-build/pr-build-7u5xj6/pr-build-nygvw7/processes-process-pr-build-nygvw7.yaml
+      process_intent: operate
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pr-conceive-emfgju
+      name: "Develop Customer Strategy"
+      type: Process
+      path: entities/v1-alpha/pr-conceive/pr-conceive-rv32m4/pr-conceive-emfgju/processes-process-pr-conceive-emfgju.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pr-conceive-tvst8u
+      name: "Develop Market Intelligence"
+      type: Process
+      path: entities/v1-alpha/pr-conceive/pr-conceive-rv32m4/pr-conceive-tvst8u/processes-process-pr-conceive-tvst8u.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pr-design-cv6hjh
+      name: "Design Demand Model"
+      type: Process
+      path: entities/v1-alpha/pr-design/pr-design-enpedx/pr-design-cv6hjh/processes-process-pr-design-cv6hjh.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pr-design-j6fakx
+      name: "Design Customer Journey"
+      type: Process
+      path: entities/v1-alpha/pr-design/pr-design-enpedx/pr-design-j6fakx/processes-process-pr-design-j6fakx.yaml
+      process_intent: develop
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pr-design-pxydu3
+      name: "Design Customer Experience"
+      type: Process
+      path: entities/v1-alpha/pr-design/pr-design-enpedx/pr-design-pxydu3/processes-process-pr-design-pxydu3.yaml
+      process_intent: develop
+      process_classification: standardization
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pr-improve-t6uvan
+      name: "Operate Customer Retention Programs"
+      type: Process
+      path: entities/v1-alpha/pr-improve/pr-improve-zpb8e3/pr-improve-t6uvan/processes-process-pr-improve-t6uvan.yaml
+      process_intent: operate
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pr-operate-bbe384
+      name: "Manage Customer Relationship"
+      type: Process
+      path: entities/v1-alpha/pr-operate/pr-operate-7ab3ma/pr-operate-bbe384/processes-process-pr-operate-bbe384.yaml
+      process_intent: manage
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pr-retire-bd3asa
+      name: "Close Enterprise Relationship"
+      type: Process
+      path: entities/v1-alpha/pr-retire/pr-retire-c3u3wc/pr-retire-bd3asa/processes-process-pr-retire-bd3asa.yaml
+      process_intent: transform
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pv-activate-5686v7
+      name: "Transition Proposition to Service"
+      type: Process
+      path: entities/v1-alpha/pv-activate/pv-activate-e7fdrk/pv-activate-5686v7/processes-process-pv-activate-5686v7.yaml
+      process_intent: transform
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pv-build-6hjzmk
+      name: "Prepare Market Readiness"
+      type: Process
+      path: entities/v1-alpha/pv-build/pv-build-g6sua5/pv-build-6hjzmk/processes-process-pv-build-6hjzmk.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pv-build-8jc3y4
+      name: "Build Innovation Prototype"
+      type: Process
+      path: entities/v1-alpha/pv-build/pv-build-g6sua5/pv-build-8jc3y4/processes-process-pv-build-8jc3y4.yaml
+      process_intent: develop
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pv-build-p9a2s9
+      name: "Build Service Capability"
+      type: Process
+      path: entities/v1-alpha/pv-build/pv-build-g6sua5/pv-build-p9a2s9/processes-process-pv-build-p9a2s9.yaml
+      process_intent: develop
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pv-build-say8tb
+      name: "Develop Product Variants"
+      type: Process
+      path: entities/v1-alpha/pv-build/pv-build-g6sua5/pv-build-say8tb/processes-process-pv-build-say8tb.yaml
+      process_intent: develop
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pv-conceive-jb4xtg
+      name: "Frame Portfolio Direction"
+      type: Process
+      path: entities/v1-alpha/pv-conceive/pv-conceive-geej6b/pv-conceive-jb4xtg/processes-process-pv-conceive-jb4xtg.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pv-conceive-kps544
+      name: "Frame Innovation Thesis"
+      type: Process
+      path: entities/v1-alpha/pv-conceive/pv-conceive-geej6b/pv-conceive-kps544/processes-process-pv-conceive-kps544.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pv-conceive-xe9axm
+      name: "Frame Value Proposition Thesis"
+      type: Process
+      path: entities/v1-alpha/pv-conceive/pv-conceive-geej6b/pv-conceive-xe9axm/processes-process-pv-conceive-xe9axm.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pv-design-8v4k89
+      name: "Design Product and Service Propositions"
+      type: Process
+      path: entities/v1-alpha/pv-design/pv-design-msz6da/pv-design-8v4k89/processes-process-pv-design-8v4k89.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pv-design-9ckwf6
+      name: "Design Innovation Experiment"
+      type: Process
+      path: entities/v1-alpha/pv-design/pv-design-msz6da/pv-design-9ckwf6/processes-process-pv-design-9ckwf6.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pv-design-a4c76s
+      name: "Design Packaging and Configuration"
+      type: Process
+      path: entities/v1-alpha/pv-design/pv-design-msz6da/pv-design-a4c76s/processes-process-pv-design-a4c76s.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pv-improve-27r7r7
+      name: "Conduct Proposition Performance Review"
+      type: Process
+      path: entities/v1-alpha/pv-improve/pv-improve-rjab8b/pv-improve-27r7r7/processes-process-pv-improve-27r7r7.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pv-improve-6c2xvf
+      name: "Evolve Products and Services"
+      type: Process
+      path: entities/v1-alpha/pv-improve/pv-improve-rjab8b/pv-improve-6c2xvf/processes-process-pv-improve-6c2xvf.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pv-improve-9xvgat
+      name: "Rationalize Portfolio"
+      type: Process
+      path: entities/v1-alpha/pv-improve/pv-improve-rjab8b/pv-improve-9xvgat/processes-process-pv-improve-9xvgat.yaml
+      process_intent: develop
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pv-operate-cau4gv
+      name: "Manage Proposition Lifecycle"
+      type: Process
+      path: entities/v1-alpha/pv-operate/pv-operate-ah3322/pv-operate-cau4gv/processes-process-pv-operate-cau4gv.yaml
+      process_intent: operate
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pv-operate-en8rdz
+      name: "Manage Portfolio Performance"
+      type: Process
+      path: entities/v1-alpha/pv-operate/pv-operate-ah3322/pv-operate-en8rdz/processes-process-pv-operate-en8rdz.yaml
+      process_intent: operate
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pv-operate-zyguzp
+      name: "Operate Product Catalogue"
+      type: Process
+      path: entities/v1-alpha/pv-operate/pv-operate-ah3322/pv-operate-zyguzp/processes-process-pv-operate-zyguzp.yaml
+      process_intent: operate
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-pv-retire-6us5am
+      name: "Transition Proposition Out of Service"
+      type: Process
+      path: entities/v1-alpha/pv-retire/pv-retire-buqktk/pv-retire-6us5am/processes-process-pv-retire-6us5am.yaml
+      process_intent: transform
+      process_classification: core
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-sd-activate-s9m34e
+      name: "Institutionalize Regulated Strategic Plan"
+      type: Process
+      path: entities/v1-alpha/sd-activate/sd-activate-mbw9cc/sd-activate-s9m34e/processes-process-sd-activate-s9m34e.yaml
+      process_intent: manage
+      process_classification: management
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-sd-build-2pkz5n
+      name: "Set Resource Allocation Priorities"
+      type: Process
+      path: entities/v1-alpha/sd-build/sd-build-tnq4p6/sd-build-2pkz5n/processes-process-sd-build-2pkz5n.yaml
+      process_intent: develop
+      process_classification: strategic
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-sd-build-7n4prh
+      name: "Build Strategic Roadmap"
+      type: Process
+      path: entities/v1-alpha/sd-build/sd-build-tnq4p6/sd-build-7n4prh/processes-process-sd-build-7n4prh.yaml
+      process_intent: develop
+      process_classification: strategic
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-sd-build-9admqy
+      name: "Translate Strategic Choices into Initiatives"
+      type: Process
+      path: entities/v1-alpha/sd-build/sd-build-tnq4p6/sd-build-9admqy/processes-process-sd-build-9admqy.yaml
+      process_intent: develop
+      process_classification: strategic
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-sd-build-q4nf9g
+      name: "Build Strategic Plan"
+      type: Process
+      path: entities/v1-alpha/sd-build/sd-build-tnq4p6/sd-build-q4nf9g/processes-process-sd-build-q4nf9g.yaml
+      process_intent: develop
+      process_classification: strategic
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-sd-conceive-3uredz
+      name: "Conceive Strategic Intent"
+      type: Process
+      path: entities/v1-alpha/sd-conceive/sd-conceive-7qhvzn/sd-conceive-3uredz/processes-process-sd-conceive-3uredz.yaml
+      process_intent: develop
+      process_classification: strategic
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-sd-conceive-ahwvp5
+      name: "Develop Corporate Strategy"
+      type: Process
+      path: entities/v1-alpha/sd-conceive/sd-conceive-7qhvzn/sd-conceive-ahwvp5/processes-process-sd-conceive-ahwvp5.yaml
+      process_intent: develop
+      process_classification: strategic
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-sd-conceive-r93j3d
+      name: "Define Enterprise Purpose and Ambition"
+      type: Process
+      path: entities/v1-alpha/sd-conceive/sd-conceive-7qhvzn/sd-conceive-r93j3d/processes-process-sd-conceive-r93j3d.yaml
+      process_intent: develop
+      process_classification: strategic
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-sd-conceive-xa4h2k
+      name: "Frame Strategic Horizons"
+      type: Process
+      path: entities/v1-alpha/sd-conceive/sd-conceive-7qhvzn/sd-conceive-xa4h2k/processes-process-sd-conceive-xa4h2k.yaml
+      process_intent: develop
+      process_classification: strategic
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-sd-design-ed7jd5
+      name: "Evaluate Strategic Alternatives"
+      type: Process
+      path: entities/v1-alpha/sd-design/sd-design-q4mj9z/sd-design-ed7jd5/processes-process-sd-design-ed7jd5.yaml
+      process_intent: develop
+      process_classification: strategic
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-sd-design-ewvbsh
+      name: "Design Strategic Options"
+      type: Process
+      path: entities/v1-alpha/sd-design/sd-design-q4mj9z/sd-design-ewvbsh/processes-process-sd-design-ewvbsh.yaml
+      process_intent: develop
+      process_classification: strategic
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-sd-design-uenzna
+      name: "Design Strategic Scenarios"
+      type: Process
+      path: entities/v1-alpha/sd-design/sd-design-q4mj9z/sd-design-uenzna/processes-process-sd-design-uenzna.yaml
+      process_intent: develop
+      process_classification: strategic
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-sd-design-vdwkmh
+      name: "Design Objectives and Targets"
+      type: Process
+      path: entities/v1-alpha/sd-design/sd-design-q4mj9z/sd-design-vdwkmh/processes-process-sd-design-vdwkmh.yaml
+      process_intent: develop
+      process_classification: strategic
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-sd-improve-9wgvaf
+      name: "Adapt Strategic Direction"
+      type: Process
+      path: entities/v1-alpha/sd-improve/sd-improve-vdz4xp/sd-improve-9wgvaf/processes-process-sd-improve-9wgvaf.yaml
+      process_intent: develop
+      process_classification: strategic
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-sd-improve-aqbrm7
+      name: "Refresh Objectives and Targets"
+      type: Process
+      path: entities/v1-alpha/sd-improve/sd-improve-vdz4xp/sd-improve-aqbrm7/processes-process-sd-improve-aqbrm7.yaml
+      process_intent: develop
+      process_classification: strategic
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-sd-improve-duwd64
+      name: "Review Strategy Effectiveness"
+      type: Process
+      path: entities/v1-alpha/sd-improve/sd-improve-vdz4xp/sd-improve-duwd64/processes-process-sd-improve-duwd64.yaml
+      process_intent: develop
+      process_classification: strategic
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-sd-operate-53y4j4
+      name: "Sense Environmental Signals"
+      type: Process
+      path: entities/v1-alpha/sd-operate/sd-operate-22epxr/sd-operate-53y4j4/processes-process-sd-operate-53y4j4.yaml
+      process_intent: operate
+      process_classification: strategic
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-sd-operate-u6xgu5
+      name: "Steer Initiative Portfolio"
+      type: Process
+      path: entities/v1-alpha/sd-operate/sd-operate-22epxr/sd-operate-u6xgu5/processes-process-sd-operate-u6xgu5.yaml
+      process_intent: operate
+      process_classification: strategic
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-sd-operate-ucxpz4
+      name: "Operate Strategic Review Cycle"
+      type: Process
+      path: entities/v1-alpha/sd-operate/sd-operate-22epxr/sd-operate-ucxpz4/processes-process-sd-operate-ucxpz4.yaml
+      process_intent: operate
+      process_classification: strategic
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-sd-operate-zdjchn
+      name: "Monitor Strategic Performance"
+      type: Process
+      path: entities/v1-alpha/sd-operate/sd-operate-22epxr/sd-operate-zdjchn/processes-process-sd-operate-zdjchn.yaml
+      process_intent: operate
+      process_classification: strategic
+      legacy_findings:
+        - no-specialization
+    - id: processes:process-sd-retire-umxf3c
+      name: "Sunset Regulated Strategic Plan"
+      type: Process
+      path: entities/v1-alpha/sd-retire/sd-retire-7fksad/sd-retire-umxf3c/processes-process-sd-retire-umxf3c.yaml
+      process_intent: manage
+      process_classification: management
       legacy_findings:
         - no-specialization
 
   process_groups:
-    - id: dea:group-agent-acquisition-and-onboarding
-      name: "Agent Acquisition and Onboarding"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-agent-acquisition-and-onboarding/dea:group-agent-acquisition-and-onboarding.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-agent-and-organization-improvement
-      name: "Agent and Organization Improvement"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-agent-and-organization-improvement/dea:group-agent-and-organization-improvement.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-agent-operations
-      name: "Agent Operations"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-agent-operations/dea:group-agent-operations.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-customer-channel-and-acquisition-build
-      name: "Customer Channel and Acquisition Build"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-customer-channel-and-acquisition-build/dea:group-customer-channel-and-acquisition-build.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-customer-experience-design
-      name: "Customer Experience Design"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-customer-experience-design/dea:group-customer-experience-design.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-customer-insight-and-retention
-      name: "Customer Insight and Retention"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-customer-insight-and-retention/dea:group-customer-insight-and-retention.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-customer-lifecycle-management
-      name: "Customer Lifecycle Management"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-customer-lifecycle-management/dea:group-customer-lifecycle-management.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-customer-strategy-conception
-      name: "Customer Strategy Conception"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-customer-strategy-conception/dea:group-customer-strategy-conception.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-execution-and-fulfillment
-      name: "Execution and Fulfilment"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-execution-and-fulfillment/dea:group-execution-and-fulfillment.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-financial-build
-      name: "Financial Build"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-financial-build/dea:group-financial-build.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-financial-design
-      name: "Financial Design"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-financial-design/dea:group-financial-design.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-financial-improve
-      name: "Financial Improve"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-financial-improve/dea:group-financial-improve.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-financial-model-conception
-      name: "Financial Model Conception"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-financial-model-conception/dea:group-financial-model-conception.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-financial-operate
-      name: "Financial Operate"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-financial-operate/dea:group-financial-operate.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-governance-body-establishment
-      name: "Governance Body Establishment"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-governance-body-establishment/dea:group-governance-body-establishment.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-governance-conception
-      name: "Governance Conception"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-governance-conception/dea:group-governance-conception.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-governance-instrument-commencement
-      name: "Governance Instrument Commencement"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-governance-instrument-commencement/dea:group-governance-instrument-commencement.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-governance-oversight
-      name: "Governance Oversight"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-governance-oversight/dea:group-governance-oversight.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-governance-review-and-learning
-      name: "Governance Review and Learning"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-governance-review-and-learning/dea:group-governance-review-and-learning.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-governance-system-design
-      name: "Governance System Design"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-governance-system-design/dea:group-governance-system-design.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-licensed-workforce-mobilization
+    - id: processes:group-ao-activate-jjx738
       name: "Licensed Workforce Mobilization"
       type: ProcessGroup
-      path: entities/v1-alpha/dea:group-licensed-workforce-mobilization/dea:group-licensed-workforce-mobilization.yaml
+      path: entities/v1-alpha/ao-activate/ao-activate-jjx738/processes-group-ao-activate-jjx738.yaml
       legacy_findings:
         - ctx-scalar
         - no-context-block
-    - id: dea:group-operations-and-asset-decommissioning
-      name: "Operations and Asset Decommissioning"
+    - id: processes:group-ao-build-m6fmyx
+      name: "Agent Acquisition and Onboarding"
       type: ProcessGroup
-      path: entities/v1-alpha/dea:group-operations-and-asset-decommissioning/dea:group-operations-and-asset-decommissioning.yaml
+      path: entities/v1-alpha/ao-build/ao-build-m6fmyx/processes-group-ao-build-m6fmyx.yaml
       legacy_findings:
         - ctx-scalar
         - no-context-block
-    - id: dea:group-operations-and-enablement-build
-      name: "Operations and Enablement Build"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-operations-and-enablement-build/dea:group-operations-and-enablement-build.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-operations-and-enablement-improvement
-      name: "Operations and Enablement Improvement"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-operations-and-enablement-improvement/dea:group-operations-and-enablement-improvement.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-operations-model-conception
-      name: "Operations Model Conception"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-operations-model-conception/dea:group-operations-model-conception.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-organization-and-agent-conception
+    - id: processes:group-ao-conceive-bwjhgd
       name: "Organization and Agent Conception"
       type: ProcessGroup
-      path: entities/v1-alpha/dea:group-organization-and-agent-conception/dea:group-organization-and-agent-conception.yaml
+      path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/processes-group-ao-conceive-bwjhgd.yaml
       legacy_findings:
         - ctx-scalar
         - no-context-block
-    - id: dea:group-organization-and-role-design
+    - id: processes:group-ao-design-pjrfr9
       name: "Organization and Role Design"
       type: ProcessGroup
-      path: entities/v1-alpha/dea:group-organization-and-role-design/dea:group-organization-and-role-design.yaml
+      path: entities/v1-alpha/ao-design/ao-design-pjrfr9/processes-group-ao-design-pjrfr9.yaml
       legacy_findings:
         - ctx-scalar
         - no-context-block
-    - id: dea:group-portfolio-management-operation
-      name: "Portfolio Management Operation"
+    - id: processes:group-ao-improve-su4c8p
+      name: "Agent and Organization Improvement"
       type: ProcessGroup
-      path: entities/v1-alpha/dea:group-portfolio-management-operation/dea:group-portfolio-management-operation.yaml
+      path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/processes-group-ao-improve-su4c8p.yaml
       legacy_findings:
         - ctx-scalar
         - no-context-block
-    - id: dea:group-process-and-enablement-design
-      name: "Process and Enablement Design"
+    - id: processes:group-ao-operate-35gmps
+      name: "Agent Operations"
       type: ProcessGroup
-      path: entities/v1-alpha/dea:group-process-and-enablement-design/dea:group-process-and-enablement-design.yaml
+      path: entities/v1-alpha/ao-operate/ao-operate-35gmps/processes-group-ao-operate-35gmps.yaml
       legacy_findings:
         - ctx-scalar
         - no-context-block
-    - id: dea:group-product-development
-      name: "Product Development"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-product-development/dea:group-product-development.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-product-evolution
-      name: "Product Evolution"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-product-evolution/dea:group-product-evolution.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-proposition-conception
-      name: "Proposition Conception"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-proposition-conception/dea:group-proposition-conception.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-proposition-design
-      name: "Proposition Design"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-proposition-design/dea:group-proposition-design.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-regulated-billing-activation
-      name: "Regulated Billing Activation"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-regulated-billing-activation/dea:group-regulated-billing-activation.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-regulated-governance-unwind
-      name: "Regulated Governance Unwind"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-regulated-governance-unwind/dea:group-regulated-governance-unwind.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-regulated-onboarding
-      name: "Regulated Onboarding"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-regulated-onboarding/dea:group-regulated-onboarding.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-regulated-operations-activation
-      name: "Regulated Operations Activation"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-regulated-operations-activation/dea:group-regulated-operations-activation.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-regulated-run-off
-      name: "Regulated Run-Off"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-regulated-run-off/dea:group-regulated-run-off.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-regulated-strategic-plan-activation
-      name: "Regulated Strategic Plan Activation"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-regulated-strategic-plan-activation/dea:group-regulated-strategic-plan-activation.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-regulated-strategic-plan-sunset
-      name: "Regulated Strategic Plan Sunset"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-regulated-strategic-plan-sunset/dea:group-regulated-strategic-plan-sunset.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-regulated-workforce-wind-down
+    - id: processes:group-ao-retire-jspuzz
       name: "Regulated Workforce Wind-Down"
       type: ProcessGroup
-      path: entities/v1-alpha/dea:group-regulated-workforce-wind-down/dea:group-regulated-workforce-wind-down.yaml
+      path: entities/v1-alpha/ao-retire/ao-retire-jspuzz/processes-group-ao-retire-jspuzz.yaml
       legacy_findings:
         - ctx-scalar
         - no-context-block
-    - id: dea:group-relationship-termination
+    - id: processes:group-eo-activate-bnmwuu
+      name: "Regulated Operations Activation"
+      type: ProcessGroup
+      path: entities/v1-alpha/eo-activate/eo-activate-bnmwuu/processes-group-eo-activate-bnmwuu.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-eo-build-7pur27
+      name: "Operations and Enablement Build"
+      type: ProcessGroup
+      path: entities/v1-alpha/eo-build/eo-build-7pur27/processes-group-eo-build-7pur27.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-eo-conceive-j6n4f7
+      name: "Operations Model Conception"
+      type: ProcessGroup
+      path: entities/v1-alpha/eo-conceive/eo-conceive-j6n4f7/processes-group-eo-conceive-j6n4f7.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-eo-design-g6dmdk
+      name: "Process and Enablement Design"
+      type: ProcessGroup
+      path: entities/v1-alpha/eo-design/eo-design-g6dmdk/processes-group-eo-design-g6dmdk.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-eo-improve-c8uff9
+      name: "Operations and Enablement Improvement"
+      type: ProcessGroup
+      path: entities/v1-alpha/eo-improve/eo-improve-c8uff9/processes-group-eo-improve-c8uff9.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-eo-operate-bfd7jb
+      name: "Execution and Fulfilment"
+      type: ProcessGroup
+      path: entities/v1-alpha/eo-operate/eo-operate-bfd7jb/processes-group-eo-operate-bfd7jb.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-eo-retire-n9ge5c
+      name: "Operations and Asset Decommissioning"
+      type: ProcessGroup
+      path: entities/v1-alpha/eo-retire/eo-retire-n9ge5c/processes-group-eo-retire-n9ge5c.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-fa-activate-n9s2z3
+      name: "Regulated Billing Activation"
+      type: ProcessGroup
+      path: entities/v1-alpha/fa-activate/fa-activate-n9s2z3/processes-group-fa-activate-n9s2z3.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-fa-build-d7ww77
+      name: "Financial Build"
+      type: ProcessGroup
+      path: entities/v1-alpha/fa-build/fa-build-d7ww77/processes-group-fa-build-d7ww77.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-fa-conceive-9xzf3b
+      name: "Financial Model Conception"
+      type: ProcessGroup
+      path: entities/v1-alpha/fa-conceive/fa-conceive-9xzf3b/processes-group-fa-conceive-9xzf3b.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-fa-design-7juvse
+      name: "Financial Design"
+      type: ProcessGroup
+      path: entities/v1-alpha/fa-design/fa-design-7juvse/processes-group-fa-design-7juvse.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-fa-improve-hvq8u8
+      name: "Financial Improve"
+      type: ProcessGroup
+      path: entities/v1-alpha/fa-improve/fa-improve-hvq8u8/processes-group-fa-improve-hvq8u8.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-fa-operate-mazyjd
+      name: "Financial Operate"
+      type: ProcessGroup
+      path: entities/v1-alpha/fa-operate/fa-operate-mazyjd/processes-group-fa-operate-mazyjd.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-fa-retire-2ptdnw
+      name: "Regulated Run-Off"
+      type: ProcessGroup
+      path: entities/v1-alpha/fa-retire/fa-retire-2ptdnw/processes-group-fa-retire-2ptdnw.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-ge-activate-7d46tn
+      name: "Governance Instrument Commencement"
+      type: ProcessGroup
+      path: entities/v1-alpha/ge-activate/ge-activate-7d46tn/processes-group-ge-activate-7d46tn.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-ge-build-tbc3ta
+      name: "Governance Body Establishment"
+      type: ProcessGroup
+      path: entities/v1-alpha/ge-build/ge-build-tbc3ta/processes-group-ge-build-tbc3ta.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-ge-conceive-y93bwr
+      name: "Governance Conception"
+      type: ProcessGroup
+      path: entities/v1-alpha/ge-conceive/ge-conceive-y93bwr/processes-group-ge-conceive-y93bwr.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-ge-design-jexyp6
+      name: "Governance System Design"
+      type: ProcessGroup
+      path: entities/v1-alpha/ge-design/ge-design-jexyp6/processes-group-ge-design-jexyp6.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-ge-improve-s9r3qj
+      name: "Governance Review and Learning"
+      type: ProcessGroup
+      path: entities/v1-alpha/ge-improve/ge-improve-s9r3qj/processes-group-ge-improve-s9r3qj.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-ge-operate-v2eu8x
+      name: "Governance Oversight"
+      type: ProcessGroup
+      path: entities/v1-alpha/ge-operate/ge-operate-v2eu8x/processes-group-ge-operate-v2eu8x.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-ge-retire-v3vy7t
+      name: "Regulated Governance Unwind"
+      type: ProcessGroup
+      path: entities/v1-alpha/ge-retire/ge-retire-v3vy7t/processes-group-ge-retire-v3vy7t.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-pr-activate-d7j4et
+      name: "Regulated Onboarding"
+      type: ProcessGroup
+      path: entities/v1-alpha/pr-activate/pr-activate-d7j4et/processes-group-pr-activate-d7j4et.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-pr-build-7u5xj6
+      name: "Customer Channel and Acquisition Build"
+      type: ProcessGroup
+      path: entities/v1-alpha/pr-build/pr-build-7u5xj6/processes-group-pr-build-7u5xj6.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-pr-conceive-rv32m4
+      name: "Customer Strategy Conception"
+      type: ProcessGroup
+      path: entities/v1-alpha/pr-conceive/pr-conceive-rv32m4/processes-group-pr-conceive-rv32m4.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-pr-design-enpedx
+      name: "Customer Experience Design"
+      type: ProcessGroup
+      path: entities/v1-alpha/pr-design/pr-design-enpedx/processes-group-pr-design-enpedx.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-pr-improve-zpb8e3
+      name: "Customer Insight and Retention"
+      type: ProcessGroup
+      path: entities/v1-alpha/pr-improve/pr-improve-zpb8e3/processes-group-pr-improve-zpb8e3.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-pr-operate-7ab3ma
+      name: "Customer Lifecycle Management"
+      type: ProcessGroup
+      path: entities/v1-alpha/pr-operate/pr-operate-7ab3ma/processes-group-pr-operate-7ab3ma.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-pr-retire-c3u3wc
       name: "Relationship Termination"
       type: ProcessGroup
-      path: entities/v1-alpha/dea:group-relationship-termination/dea:group-relationship-termination.yaml
+      path: entities/v1-alpha/pr-retire/pr-retire-c3u3wc/processes-group-pr-retire-c3u3wc.yaml
       legacy_findings:
         - ctx-scalar
         - no-context-block
-    - id: dea:group-service-transition-activation
+    - id: processes:group-pv-activate-e7fdrk
       name: "Service Transition Activation"
       type: ProcessGroup
-      path: entities/v1-alpha/dea:group-service-transition-activation/dea:group-service-transition-activation.yaml
+      path: entities/v1-alpha/pv-activate/pv-activate-e7fdrk/processes-group-pv-activate-e7fdrk.yaml
       legacy_findings:
         - ctx-scalar
         - no-context-block
-    - id: dea:group-service-transition-retirement
+    - id: processes:group-pv-build-g6sua5
+      name: "Product Development"
+      type: ProcessGroup
+      path: entities/v1-alpha/pv-build/pv-build-g6sua5/processes-group-pv-build-g6sua5.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-pv-conceive-geej6b
+      name: "Proposition Conception"
+      type: ProcessGroup
+      path: entities/v1-alpha/pv-conceive/pv-conceive-geej6b/processes-group-pv-conceive-geej6b.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-pv-design-msz6da
+      name: "Proposition Design"
+      type: ProcessGroup
+      path: entities/v1-alpha/pv-design/pv-design-msz6da/processes-group-pv-design-msz6da.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-pv-improve-rjab8b
+      name: "Product Evolution"
+      type: ProcessGroup
+      path: entities/v1-alpha/pv-improve/pv-improve-rjab8b/processes-group-pv-improve-rjab8b.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-pv-operate-ah3322
+      name: "Portfolio Management Operation"
+      type: ProcessGroup
+      path: entities/v1-alpha/pv-operate/pv-operate-ah3322/processes-group-pv-operate-ah3322.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-pv-retire-buqktk
       name: "Service Transition Retirement"
       type: ProcessGroup
-      path: entities/v1-alpha/dea:group-service-transition-retirement/dea:group-service-transition-retirement.yaml
+      path: entities/v1-alpha/pv-retire/pv-retire-buqktk/processes-group-pv-retire-buqktk.yaml
       legacy_findings:
         - ctx-scalar
         - no-context-block
-    - id: dea:group-strategic-adaptation
-      name: "Strategic Adaptation"
+    - id: processes:group-sd-activate-mbw9cc
+      name: "Regulated Strategic Plan Activation"
       type: ProcessGroup
-      path: entities/v1-alpha/dea:group-strategic-adaptation/dea:group-strategic-adaptation.yaml
+      path: entities/v1-alpha/sd-activate/sd-activate-mbw9cc/processes-group-sd-activate-mbw9cc.yaml
       legacy_findings:
         - ctx-scalar
         - no-context-block
-    - id: dea:group-strategic-choices-design
-      name: "Strategic Choices Design"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-strategic-choices-design/dea:group-strategic-choices-design.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-strategic-plan-build
+    - id: processes:group-sd-build-tnq4p6
       name: "Strategic Plan Build"
       type: ProcessGroup
-      path: entities/v1-alpha/dea:group-strategic-plan-build/dea:group-strategic-plan-build.yaml
+      path: entities/v1-alpha/sd-build/sd-build-tnq4p6/processes-group-sd-build-tnq4p6.yaml
       legacy_findings:
         - ctx-scalar
         - no-context-block
-    - id: dea:group-strategic-steering-operation
-      name: "Strategic Steering Operation"
-      type: ProcessGroup
-      path: entities/v1-alpha/dea:group-strategic-steering-operation/dea:group-strategic-steering-operation.yaml
-      legacy_findings:
-        - ctx-scalar
-        - no-context-block
-    - id: dea:group-strategy-direction-conception
+    - id: processes:group-sd-conceive-7qhvzn
       name: "Strategy and Direction Conception"
       type: ProcessGroup
-      path: entities/v1-alpha/dea:group-strategy-direction-conception/dea:group-strategy-direction-conception.yaml
+      path: entities/v1-alpha/sd-conceive/sd-conceive-7qhvzn/processes-group-sd-conceive-7qhvzn.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-sd-design-q4mj9z
+      name: "Strategic Choices Design"
+      type: ProcessGroup
+      path: entities/v1-alpha/sd-design/sd-design-q4mj9z/processes-group-sd-design-q4mj9z.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-sd-improve-vdz4xp
+      name: "Strategic Adaptation"
+      type: ProcessGroup
+      path: entities/v1-alpha/sd-improve/sd-improve-vdz4xp/processes-group-sd-improve-vdz4xp.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-sd-operate-22epxr
+      name: "Strategic Steering Operation"
+      type: ProcessGroup
+      path: entities/v1-alpha/sd-operate/sd-operate-22epxr/processes-group-sd-operate-22epxr.yaml
+      legacy_findings:
+        - ctx-scalar
+        - no-context-block
+    - id: processes:group-sd-retire-7fksad
+      name: "Regulated Strategic Plan Sunset"
+      type: ProcessGroup
+      path: entities/v1-alpha/sd-retire/sd-retire-7fksad/processes-group-sd-retire-7fksad.yaml
       legacy_findings:
         - ctx-scalar
         - no-context-block
 
   process_contexts:
-    - id: dea:pc-ao-activate
+    - id: processes:pc-ao-activate-kusw2u
       name: "Licensed Workforce Mobilization"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-ao-activate.yaml
+      path: entities/v1-alpha/ao-activate/processes-pc-ao-activate-kusw2u.yaml
       legacy_findings: []
-    - id: dea:pc-ao-build
+    - id: processes:pc-ao-build-pjk4rz
       name: "Agent Acquisition and Onboarding"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-ao-build.yaml
+      path: entities/v1-alpha/ao-build/processes-pc-ao-build-pjk4rz.yaml
       legacy_findings: []
-    - id: dea:pc-ao-conceive
+    - id: processes:pc-ao-conceive-wtq4cr
       name: "Agent Capacity and Organization Conception"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-ao-conceive.yaml
+      path: entities/v1-alpha/ao-conceive/processes-pc-ao-conceive-wtq4cr.yaml
       legacy_findings: []
-    - id: dea:pc-ao-design
+    - id: processes:pc-ao-design-a4hq2r
       name: "Organization and Agent Topology Design"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-ao-design.yaml
+      path: entities/v1-alpha/ao-design/processes-pc-ao-design-a4hq2r.yaml
       legacy_findings: []
-    - id: dea:pc-ao-improve
+    - id: processes:pc-ao-improve-qkmh6b
       name: "Agent Development and Organization Improvement"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-ao-improve.yaml
+      path: entities/v1-alpha/ao-improve/processes-pc-ao-improve-qkmh6b.yaml
       legacy_findings: []
-    - id: dea:pc-ao-operate
+    - id: processes:pc-ao-operate-zfevmp
       name: "Agent Operations and Performance"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-ao-operate.yaml
+      path: entities/v1-alpha/ao-operate/processes-pc-ao-operate-zfevmp.yaml
       legacy_findings: []
-    - id: dea:pc-ao-retire
+    - id: processes:pc-ao-retire-3kqe9c
       name: "Workforce Retirement"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-ao-retire.yaml
+      path: entities/v1-alpha/ao-retire/processes-pc-ao-retire-3kqe9c.yaml
       legacy_findings: []
-    - id: dea:pc-fa-activate
-      name: "Activate Billing Capability"
-      type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-fa-activate.yaml
-      legacy_findings: []
-    - id: dea:pc-fa-build
-      name: "Finance Capability and System Build"
-      type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-fa-build.yaml
-      legacy_findings: []
-    - id: dea:pc-fa-conceive
-      name: "Financial Model and Funding Conception"
-      type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-fa-conceive.yaml
-      legacy_findings: []
-    - id: dea:pc-fa-design
-      name: "Financial Planning and Accounting Architecture Design"
-      type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-fa-design.yaml
-      legacy_findings: []
-    - id: dea:pc-fa-improve
-      name: "Finance and Financial Control Improvement"
-      type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-fa-improve.yaml
-      legacy_findings: []
-    - id: dea:pc-fa-operate
-      name: "Accounting, Reporting, and Treasury Operation"
-      type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-fa-operate.yaml
-      legacy_findings: []
-    - id: dea:pc-fa-retire
-      name: "Financial Run-Off"
-      type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-fa-retire.yaml
-      legacy_findings: []
-    - id: dea:pc-ge-activate
-      name: "Governance Instrument Commencement"
-      type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-ge-activate.yaml
-      legacy_findings: []
-    - id: dea:pc-ge-b
-      name: "Governance Body Establishment"
-      type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-ge-b.yaml
-      legacy_findings: []
-    - id: dea:pc-ge-c
-      name: "Strategy and Governance Conception"
-      type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-ge-c.yaml
-      legacy_findings: []
-    - id: dea:pc-ge-d
-      name: "Governance System Design"
-      type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-ge-d.yaml
-      legacy_findings: []
-    - id: dea:pc-ge-im
-      name: "Governance Review and Learning"
-      type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-ge-im.yaml
-      legacy_findings: []
-    - id: dea:pc-ge-op
-      name: "Governance Oversight"
-      type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-ge-op.yaml
-      legacy_findings: []
-    - id: dea:pc-ge-retire
-      name: "Governance Unwind"
-      type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-ge-retire.yaml
-      legacy_findings: []
-    - id: dea:pc-oe-activate
+    - id: processes:pc-eo-activate-xdfscw
       name: "Activate Operations Capability"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-oe-activate.yaml
+      path: entities/v1-alpha/eo-activate/processes-pc-eo-activate-xdfscw.yaml
       legacy_findings: []
-    - id: dea:pc-oe-build
+    - id: processes:pc-eo-build-zwkhxc
       name: "Operations and Enablement Build"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-oe-build.yaml
+      path: entities/v1-alpha/eo-build/processes-pc-eo-build-zwkhxc.yaml
       legacy_findings: []
-    - id: dea:pc-oe-conceive
+    - id: processes:pc-eo-conceive-mxmtzq
       name: "Operations Model and Enablement Conception"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-oe-conceive.yaml
+      path: entities/v1-alpha/eo-conceive/processes-pc-eo-conceive-mxmtzq.yaml
       legacy_findings: []
-    - id: dea:pc-oe-design
+    - id: processes:pc-eo-design-kxdfnz
       name: "Operations and Enablement Design"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-oe-design.yaml
+      path: entities/v1-alpha/eo-design/processes-pc-eo-design-kxdfnz.yaml
       legacy_findings: []
-    - id: dea:pc-oe-improve
+    - id: processes:pc-eo-improve-pka6dk
       name: "Operations and Enablement Improvement"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-oe-improve.yaml
+      path: entities/v1-alpha/eo-improve/processes-pc-eo-improve-pka6dk.yaml
       legacy_findings: []
-    - id: dea:pc-oe-operate
+    - id: processes:pc-eo-operate-ydqb96
       name: "Execution, Technology, and Asset Operation"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-oe-operate.yaml
+      path: entities/v1-alpha/eo-operate/processes-pc-eo-operate-ydqb96.yaml
       legacy_findings: []
-    - id: dea:pc-oe-retire
+    - id: processes:pc-eo-retire-nw3ynf
       name: "Operations and Asset Decommissioning"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-oe-retire.yaml
+      path: entities/v1-alpha/eo-retire/processes-pc-eo-retire-nw3ynf.yaml
       legacy_findings: []
-    - id: dea:pc-pr-act
+    - id: processes:pc-fa-activate-yrhcfm
+      name: "Activate Billing Capability"
+      type: ProcessContext
+      path: entities/v1-alpha/fa-activate/processes-pc-fa-activate-yrhcfm.yaml
+      legacy_findings: []
+    - id: processes:pc-fa-build-pztsp9
+      name: "Finance Capability and System Build"
+      type: ProcessContext
+      path: entities/v1-alpha/fa-build/processes-pc-fa-build-pztsp9.yaml
+      legacy_findings: []
+    - id: processes:pc-fa-conceive-phabh2
+      name: "Financial Model and Funding Conception"
+      type: ProcessContext
+      path: entities/v1-alpha/fa-conceive/processes-pc-fa-conceive-phabh2.yaml
+      legacy_findings: []
+    - id: processes:pc-fa-design-4j8evh
+      name: "Financial Planning and Accounting Architecture Design"
+      type: ProcessContext
+      path: entities/v1-alpha/fa-design/processes-pc-fa-design-4j8evh.yaml
+      legacy_findings: []
+    - id: processes:pc-fa-improve-haqf4w
+      name: "Finance and Financial Control Improvement"
+      type: ProcessContext
+      path: entities/v1-alpha/fa-improve/processes-pc-fa-improve-haqf4w.yaml
+      legacy_findings: []
+    - id: processes:pc-fa-operate-afew7e
+      name: "Accounting, Reporting, and Treasury Operation"
+      type: ProcessContext
+      path: entities/v1-alpha/fa-operate/processes-pc-fa-operate-afew7e.yaml
+      legacy_findings: []
+    - id: processes:pc-fa-retire-64q5p9
+      name: "Financial Run-Off"
+      type: ProcessContext
+      path: entities/v1-alpha/fa-retire/processes-pc-fa-retire-64q5p9.yaml
+      legacy_findings: []
+    - id: processes:pc-ge-activate-hxtfcv
+      name: "Governance Instrument Commencement"
+      type: ProcessContext
+      path: entities/v1-alpha/ge-activate/processes-pc-ge-activate-hxtfcv.yaml
+      legacy_findings: []
+    - id: processes:pc-ge-build-52hjrc
+      name: "Governance Body Establishment"
+      type: ProcessContext
+      path: entities/v1-alpha/ge-build/processes-pc-ge-build-52hjrc.yaml
+      legacy_findings: []
+    - id: processes:pc-ge-conceive-b5xwpd
+      name: "Strategy and Governance Conception"
+      type: ProcessContext
+      path: entities/v1-alpha/ge-conceive/processes-pc-ge-conceive-b5xwpd.yaml
+      legacy_findings: []
+    - id: processes:pc-ge-design-3f2gjr
+      name: "Governance System Design"
+      type: ProcessContext
+      path: entities/v1-alpha/ge-design/processes-pc-ge-design-3f2gjr.yaml
+      legacy_findings: []
+    - id: processes:pc-ge-improve-c78ppp
+      name: "Governance Review and Learning"
+      type: ProcessContext
+      path: entities/v1-alpha/ge-improve/processes-pc-ge-improve-c78ppp.yaml
+      legacy_findings: []
+    - id: processes:pc-ge-operate-hb2dac
+      name: "Governance Oversight"
+      type: ProcessContext
+      path: entities/v1-alpha/ge-operate/processes-pc-ge-operate-hb2dac.yaml
+      legacy_findings: []
+    - id: processes:pc-ge-retire-kndw6x
+      name: "Governance Unwind"
+      type: ProcessContext
+      path: entities/v1-alpha/ge-retire/processes-pc-ge-retire-kndw6x.yaml
+      legacy_findings: []
+    - id: processes:pc-pr-activate-mwq7bj
       name: "Enterprise Relationship Activation"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-pr-act.yaml
+      path: entities/v1-alpha/pr-activate/processes-pc-pr-activate-mwq7bj.yaml
       legacy_findings: []
-    - id: dea:pc-pr-b
+    - id: processes:pc-pr-build-a46hp7
       name: "Customer Channel and Acquisition Build"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-pr-b.yaml
+      path: entities/v1-alpha/pr-build/processes-pc-pr-build-a46hp7.yaml
       legacy_findings: []
-    - id: dea:pc-pr-c
+    - id: processes:pc-pr-conceive-6xztsq
       name: "Customer Strategy Conception"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-pr-c.yaml
+      path: entities/v1-alpha/pr-conceive/processes-pc-pr-conceive-6xztsq.yaml
       legacy_findings: []
-    - id: dea:pc-pr-d
+    - id: processes:pc-pr-design-hrcdy4
       name: "Customer Experience Design"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-pr-d.yaml
+      path: entities/v1-alpha/pr-design/processes-pc-pr-design-hrcdy4.yaml
       legacy_findings: []
-    - id: dea:pc-pr-im
+    - id: processes:pc-pr-improve-k8phkn
       name: "Customer Insight and Retention"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-pr-im.yaml
+      path: entities/v1-alpha/pr-improve/processes-pc-pr-improve-k8phkn.yaml
       legacy_findings: []
-    - id: dea:pc-pr-op
+    - id: processes:pc-pr-operate-pwue5a
       name: "Customer Relationship Operations"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-pr-op.yaml
+      path: entities/v1-alpha/pr-operate/processes-pc-pr-operate-pwue5a.yaml
       legacy_findings: []
-    - id: dea:pc-pr-retire
+    - id: processes:pc-pr-retire-2cusde
       name: "Enterprise Relationship Close-Out"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-pr-retire.yaml
+      path: entities/v1-alpha/pr-retire/processes-pc-pr-retire-2cusde.yaml
       legacy_findings: []
-    - id: dea:pc-pv-activate
+    - id: processes:pc-pv-activate-f7kne7
       name: "Proposition Launch and Service Transition"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-pv-activate.yaml
+      path: entities/v1-alpha/pv-activate/processes-pc-pv-activate-f7kne7.yaml
       legacy_findings: []
-    - id: dea:pc-pv-build
+    - id: processes:pc-pv-build-ygbmxb
       name: "Product Development and Market Readiness Build"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-pv-build.yaml
+      path: entities/v1-alpha/pv-build/processes-pc-pv-build-ygbmxb.yaml
       legacy_findings: []
-    - id: dea:pc-pv-conceive
+    - id: processes:pc-pv-conceive-fe9awk
       name: "Proposition and Portfolio Conception"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-pv-conceive.yaml
+      path: entities/v1-alpha/pv-conceive/processes-pc-pv-conceive-fe9awk.yaml
       legacy_findings: []
-    - id: dea:pc-pv-design
+    - id: processes:pc-pv-design-8dhwpn
       name: "Proposition and Packaging Design"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-pv-design.yaml
+      path: entities/v1-alpha/pv-design/processes-pc-pv-design-8dhwpn.yaml
       legacy_findings: []
-    - id: dea:pc-pv-improve
+    - id: processes:pc-pv-improve-wpyfx7
       name: "Product Evolution and Portfolio Rationalization"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-pv-improve.yaml
+      path: entities/v1-alpha/pv-improve/processes-pc-pv-improve-wpyfx7.yaml
       legacy_findings: []
-    - id: dea:pc-pv-operate
+    - id: processes:pc-pv-operate-ewpwjc
       name: "Portfolio Management and Proposition Lifecycle Operation"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-pv-operate.yaml
+      path: entities/v1-alpha/pv-operate/processes-pc-pv-operate-ewpwjc.yaml
       legacy_findings: []
-    - id: dea:pc-pv-retire
+    - id: processes:pc-pv-retire-eeck6d
       name: "Proposition Retirement and Service Withdrawal"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-pv-retire.yaml
+      path: entities/v1-alpha/pv-retire/processes-pc-pv-retire-eeck6d.yaml
       legacy_findings: []
-    - id: dea:pc-sd-activate
+    - id: processes:pc-sd-activate-ghaub8
       name: "Institutionalize Regulated Strategic Plan"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-sd-activate.yaml
+      path: entities/v1-alpha/sd-activate/processes-pc-sd-activate-ghaub8.yaml
       legacy_findings: []
-    - id: dea:pc-sd-build
+    - id: processes:pc-sd-build-gmzrrm
       name: "Strategic Plan Build"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-sd-build.yaml
+      path: entities/v1-alpha/sd-build/processes-pc-sd-build-gmzrrm.yaml
       legacy_findings: []
-    - id: dea:pc-sd-conceive
+    - id: processes:pc-sd-conceive-ucb3gx
       name: "Purpose and Ambition Conception"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-sd-conceive.yaml
+      path: entities/v1-alpha/sd-conceive/processes-pc-sd-conceive-ucb3gx.yaml
       legacy_findings: []
-    - id: dea:pc-sd-design
+    - id: processes:pc-sd-design-g3es76
       name: "Strategic Choices Design"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-sd-design.yaml
+      path: entities/v1-alpha/sd-design/processes-pc-sd-design-g3es76.yaml
       legacy_findings: []
-    - id: dea:pc-sd-improve
+    - id: processes:pc-sd-improve-ft9k5f
       name: "Strategic Adaptation"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-sd-improve.yaml
+      path: entities/v1-alpha/sd-improve/processes-pc-sd-improve-ft9k5f.yaml
       legacy_findings: []
-    - id: dea:pc-sd-operate
+    - id: processes:pc-sd-operate-5cs5ee
       name: "Strategic Steering Operation"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-sd-operate.yaml
+      path: entities/v1-alpha/sd-operate/processes-pc-sd-operate-5cs5ee.yaml
       legacy_findings: []
-    - id: dea:pc-sd-retire
+    - id: processes:pc-sd-retire-zxnc3c
       name: "Sunset Regulated Strategic Plan"
       type: ProcessContext
-      path: contexts/v1-alpha/dea-pc-sd-retire.yaml
+      path: entities/v1-alpha/sd-retire/processes-pc-sd-retire-zxnc3c.yaml
       legacy_findings: []
 

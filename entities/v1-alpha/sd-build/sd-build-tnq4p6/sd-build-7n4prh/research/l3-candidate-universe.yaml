@@ -1,0 +1,104 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-54
+status: candidate-not-canonical; subject to review
+parent_business_process: processes:process-sd-build-7n4prh
+coordinate:
+  domain: StrategyAndDirection
+  stage: Build
+  process_context: processes:pc-sd-build-gmzrrm
+  process_group: processes:group-sd-build-tnq4p6
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42,
+  scaled by CR-BP-43 through CR-BP-53)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/processes:process-sd-build-7n4prh
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: processes:activity-sd-build-3u6qkt
+  name: "Sequence Strategic Initiatives"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Initiative sequencing; dependency resolution; sequence hand-off to milestone anchoring"
+  out_of_scope:
+  - "Strategic choices translation (processes:process-sd-build-9admqy)"
+  - "Milestone anchoring (processes:activity-sd-build-yvecqq)"
+  evidence:
+  - "Parent BP trigger (strategic roadmap build needed)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-54
+- id: processes:activity-sd-build-yvecqq
+  name: "Anchor Roadmap Milestones"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Milestone drafting; milestone coherence review; milestone hand-off to roadmap assembly"
+  out_of_scope:
+  - "Initiative sequencing (processes:activity-sd-build-3u6qkt)"
+  - "Roadmap assembly (processes:activity-sd-build-htapw4)"
+  evidence:
+  - "Parent BP outcome (milestones anchored)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-54
+- id: processes:activity-sd-build-htapw4
+  name: "Assemble Strategic Roadmap"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Roadmap assembly; roadmap coherence review; roadmap hand-off to commitment"
+  out_of_scope:
+  - "Milestone anchoring (processes:activity-sd-build-yvecqq)"
+  - "Roadmap commitment (processes:activity-sd-build-jfcx27)"
+  evidence:
+  - "Parent BP outcome (roadmap assembled)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-54
+- id: processes:activity-sd-build-jfcx27
+  name: "Commit Strategic Roadmap"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Consolidation; governance review; commitment and handoff to strategic plan build"
+  out_of_scope:
+  - "Roadmap assembly (processes:activity-sd-build-htapw4)"
+  - "Strategic plan build (processes:process-sd-build-q4nf9g)"
+  evidence:
+  - "Parent BP outcome (roadmap committed)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-54
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."

@@ -68,11 +68,14 @@ def _normalize_status(value: str) -> str:
 #   CR-BP-NN-EXT-NNa          (extension sub-letter: CR-BP-94-EXT-01a per CR-BP-94-EXT-01a)
 #   CR-BP-NN-EXT-NN-slug      (extension + slug: CR-BP-94-EXT-01-...)
 #   CR-BP-NN-EXT-NNa-slug     (extension sub-letter + slug: CR-BP-94-EXT-01a-...)
+#   CR-BP-mvN                 (structural migration carrier: CR-BP-mv1)
+#   CR-BP-mvN-slug            (migration carrier + slug)
 CR_NUMBER_PATTERN = re.compile(
     r"^CR-BP-(?:\d+(?:[a-zA-Z](?:\.\d+)*)?(?:-(?:EXT-\d+[a-zA-Z]?|[a-z0-9]+))*|"
-    r"L\d+-\d+[a-zA-Z]?(?:-(?:[a-z0-9]+))*)$"
+    r"L\d+-\d+[a-zA-Z]?(?:-(?:[a-z0-9]+))*|"
+    r"mv\d+(?:-[a-z0-9]+)*)$"
 )
-CR_REF_PATTERN = re.compile(r"CR-BP-(?:\d+[a-zA-Z]?(?:\.\d+)*|L\d+-\d+[a-zA-Z]?)")
+CR_REF_PATTERN = re.compile(r"CR-BP-(?:\d+[a-zA-Z]?(?:\.\d+)*|L\d+-\d+[a-zA-Z]?|mv\d+)")
 # Match the metadata line. Two conventions are admitted:
 #   1. "**Key**: value" (canonical; colon outside bold)
 #   2. "**Key:** value" (legacy / Github-issues style; colon inside)
@@ -244,6 +247,12 @@ def main(argv: list[str] | None = None) -> int:
         last_modified = _git_last_commit_date(path)
         if last_modified is None:
             last_modified = path.stat().st_mtime
+        # CR-BP-mv1: a CR carrying the layout-note banner is a historical
+        # artifact whose only post-cutoff change is the banner itself
+        # (content verbatim by doctrine). Classify as LEGACY regardless
+        # of the banner commit date.
+        bannered = "Layout note (CR-BP-mv1" in path.read_text(
+            encoding="utf-8", errors="replace")
         for code, msg in check_cr(path):
             entry = {
                 "rule": code,
@@ -251,7 +260,7 @@ def main(argv: list[str] | None = None) -> int:
                 "message": msg,
             }
             findings.append(entry)
-            if last_modified >= cutoff:
+            if last_modified >= cutoff and not bannered:
                 new_findings.append(entry)
             else:
                 legacy_findings.append(entry)

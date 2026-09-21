@@ -196,17 +196,16 @@ def test_adm_strict_fails_on_bad_fixture(tmp_path):
     """A candidate with missing required fields MUST fail --strict."""
     sandbox = tmp_path / "sandbox"
     shutil.copytree(ROOT / "entities", sandbox / "entities")
-    shutil.copytree(ROOT / "contexts", sandbox / "contexts")
-    bad_dir = sandbox / "entities" / "v1-alpha" / "dea:process-bad-candidate"
-    bad_dir.mkdir()
-    (bad_dir / "dea:process-bad-candidate.yaml").write_text(
-        "id: dea:process-bad-candidate\n"
+    bad_dir = sandbox / "entities" / "v1-alpha" / "pr-operate" / "bad-candidate"
+    bad_dir.mkdir(parents=True)
+    (bad_dir / "processes-process-pr-operate-badcan1.yaml").write_text(
+        "id: processes:process-pr-operate-badcan1\n"
         "name: Bad\n"
         "type: Process\n"
         "version: '1.0.0'\n"
         "process_intent: harmonise\n"  # bad intent
         "process_type: core\n"
-        "context: [{ref: dea:pc-unknown}]\n"  # unresolved
+        "context: [{ref: processes:pc-pr-operate-nope001}]\n"  # unresolved
         "change_history: []\n"  # empty
     )
     r = _run([str(SCRIPT_ADM), "--strict", "--catalog-root", str(sandbox)])
@@ -221,7 +220,7 @@ def test_adm_json_shape():
     assert "verdict" in data
     assert "findings" in data
     assert "candidate_count" in data
-    assert data["candidate_count"] == 139  # 136 canonical BPs (119 + 7 CR-BP-21f.1 + 2 CR-BP-64 + 1 CR-BP-65 + 1 CR-BP-66 + 1 CR-BP-67 + 1 CR-BP-71 + 1 CR-BP-73 + 1 CR-BP-75 + 1 CR-BP-78 + 1 CR-BP-81 + 1 CR-BP-82 + 1 CR-BP-83 + 1 CR-BP-86 admissions)
+    assert data["candidate_count"] == 140  # 136 canonical BPs (119 + 7 CR-BP-21f.1 + 2 CR-BP-64 + 1 CR-BP-65 + 1 CR-BP-66 + 1 CR-BP-67 + 1 CR-BP-71 + 1 CR-BP-73 + 1 CR-BP-75 + 1 CR-BP-78 + 1 CR-BP-81 + 1 CR-BP-82 + 1 CR-BP-83 + 1 CR-BP-86 admissions)
 
 
 # CR-BP-16 §17 Step 8: provenance blocking policy
@@ -253,17 +252,16 @@ def test_adm_strict_provenance_blocks_missing_provenance(tmp_path):
     import json
     sandbox = tmp_path / "sandbox"
     shutil.copytree(ROOT / "entities", sandbox / "entities")
-    shutil.copytree(ROOT / "contexts", sandbox / "contexts")
-    bad_dir = sandbox / "entities" / "v1-alpha" / "dea:process-no-provenance"
-    bad_dir.mkdir()
-    (bad_dir / "dea:process-no-provenance.yaml").write_text(
-        "id: dea:process-no-provenance\n"
+    bad_dir = sandbox / "entities" / "v1-alpha" / "pr-operate" / "no-provenance"
+    bad_dir.mkdir(parents=True)
+    (bad_dir / "processes-process-pr-operate-noprov1.yaml").write_text(
+        "id: processes:process-pr-operate-noprov1\n"
         "name: No Provenance\n"
         "type: Process\n"
         "version: '1.0.0'\n"
         "process_intent: manage\n"
         "process_type: core\n"
-        "context: [{ref: dea:pc-pr-op}]\n"
+        "context: [{ref: processes:pc-pr-operate-yrhcfm}]\n"
         # NOTE: no change_history; no metadata.change_history.
         # This MUST trigger ADM-008 (provenance missing).
     )
@@ -272,7 +270,7 @@ def test_adm_strict_provenance_blocks_missing_provenance(tmp_path):
     assert r.returncode != 0, r.stdout + r.stderr
     data = json.loads(r.stdout)
     rules = [f["rule"] for f in data["findings"]
-             if "dea:process-no-provenance" in f["path"]]
+             if "processes-process-pr-operate-noprov1" in f["path"]]
     assert "ADM-008" in rules
     # Provenance rules are the BLOCKING ones; boundary findings remain advisory.
     blocking_rules = {f["rule"] for f in data["blocking_findings"]}
@@ -287,17 +285,16 @@ def test_adm_strict_provenance_blocks_no_admission_cr(tmp_path):
     import json
     sandbox = tmp_path / "sandbox"
     shutil.copytree(ROOT / "entities", sandbox / "entities")
-    shutil.copytree(ROOT / "contexts", sandbox / "contexts")
-    bad_dir = sandbox / "entities" / "v1-alpha" / "dea:process-no-admission-cr"
-    bad_dir.mkdir()
-    (bad_dir / "dea:process-no-admission-cr.yaml").write_text(
-        "id: dea:process-no-admission-cr\n"
+    bad_dir = sandbox / "entities" / "v1-alpha" / "pr-operate" / "no-admission-cr"
+    bad_dir.mkdir(parents=True)
+    (bad_dir / "processes-process-pr-operate-noadm01.yaml").write_text(
+        "id: processes:process-pr-operate-noadm01\n"
         "name: No Admission CR\n"
         "type: Process\n"
         "version: '1.0.0'\n"
         "process_intent: manage\n"
         "process_type: core\n"
-        "context: [{ref: dea:pc-pr-op}]\n"
+        "context: [{ref: processes:pc-pr-operate-yrhcfm}]\n"
         "metadata:\n"
         "  change_history:\n"
         "    - cr: CR-BP-15-IMP\n"
@@ -309,9 +306,9 @@ def test_adm_strict_provenance_blocks_no_admission_cr(tmp_path):
     assert r.returncode != 0, r.stdout + r.stderr
     data = json.loads(r.stdout)
     target_rules = [f["rule"] for f in data["findings"]
-                    if "dea:process-no-admission-cr" in f["path"]]
+                    if "processes-process-pr-operate-noadm01" in f["path"]]
     blocking_target_rules = [f["rule"] for f in data["blocking_findings"]
-                             if "dea:process-no-admission-cr" in f["path"]]
+                             if "processes-process-pr-operate-noadm01" in f["path"]]
     # ADM-001 fires (no admission CR); ADM-008 does NOT fire
     # (the entry is structurally valid).
     assert "ADM-001" in target_rules
@@ -329,17 +326,16 @@ def test_adm_strict_provenance_accepts_cr_bp_03c_as_admission(tmp_path):
     import json
     sandbox = tmp_path / "sandbox"
     shutil.copytree(ROOT / "entities", sandbox / "entities")
-    shutil.copytree(ROOT / "contexts", sandbox / "contexts")
-    ok_dir = sandbox / "entities" / "v1-alpha" / "dea:process-via-03c"
-    ok_dir.mkdir()
-    (ok_dir / "dea:process-via-03c.yaml").write_text(
-        "id: dea:process-via-03c\n"
+    ok_dir = sandbox / "entities" / "v1-alpha" / "pr-operate" / "via-03c"
+    ok_dir.mkdir(parents=True)
+    (ok_dir / "processes-process-pr-operate-via03c1.yaml").write_text(
+        "id: processes:process-pr-operate-via03c1\n"
         "name: Via 03C\n"
         "type: Process\n"
         "version: '1.0.0'\n"
         "process_intent: manage\n"
         "process_type: core\n"
-        "context: [{ref: dea:pc-pr-op}]\n"
+        "context: [{ref: processes:pc-pr-operate-yrhcfm}]\n"
         "metadata:\n"
         "  change_history:\n"
         "    - cr: CR-BP-03C\n"
@@ -350,7 +346,7 @@ def test_adm_strict_provenance_accepts_cr_bp_03c_as_admission(tmp_path):
               "--catalog-root", str(sandbox)])
     data = json.loads(r.stdout)
     target_rules = [f["rule"] for f in data["findings"]
-                    if "dea:process-via-03c" in f["path"]]
+                    if "processes-process-pr-operate-via03c1" in f["path"]]
     # CR-BP-03C is accepted: no ADM-001 finding; no ADM-008 finding.
     assert "ADM-001" not in target_rules, r.stdout
     assert "ADM-008" not in target_rules, r.stdout
@@ -364,7 +360,6 @@ def test_adm_reads_change_history_from_metadata_block(tmp_path):
     validator MUST read it."""
     sandbox = tmp_path / "sandbox"
     shutil.copytree(ROOT / "entities", sandbox / "entities")
-    shutil.copytree(ROOT / "contexts", sandbox / "contexts")
     r = _run([str(SCRIPT_ADM), "--strict-provenance",
               "--catalog-root", str(sandbox)])
     # No ADM-008 firing on any of the 18 LOCKED records:

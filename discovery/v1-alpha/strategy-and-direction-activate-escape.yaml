@@ -72,11 +72,11 @@ discovery:
         Authoritative multi-source regulatory evidence and universal sector practice in supervised industries; strong boundary against Operate and Retire; cross-domain breadth limited to regulated sectors, holding the total at 9.
     disposition:
       type: ADMIT-CANONICAL
-      canonical_process_ref: dea:process-institutionalize-regulated-strategic-plan (proposed)
+      canonical_process_ref: processes:process-sd-activate-s9m34e (proposed)
     admission:
       status: admitted
       admitted_by: CR-BP-86
-      admitted_as: dea:process-institutionalize-regulated-strategic-plan
+      admitted_as: processes:process-sd-activate-s9m34e
       admitted_at: '2026-09-16'
   context_evaluation:
     concerns_identified: true
@@ -90,7 +90,7 @@ discovery:
     process_empty: false
   rationale:
     included: >
-      Targeted escape-clause evaluation of the StrategyAndDirection x Activate register cell (register v12, backlog-deferred). The cell's escape condition reads "defer until a strategic plan rollout needs distinct group-level work beyond steering -- e.g. multi-business-unit reorg, divestiture, M&A integration". The discovery finds that condition met in the regulated-sector context: supervisor-acknowledged strategic-plan activation (BCBS ICAAP/SAA, BRRD recovery-plan, NHS trust 5-year strategy, PUC strategic-plan filing) is a legally-mandated, boundary-clear, evidence-authoritative transformation distinct from steady-state strategy execution, scoring 9/10 and recommended ADMIT-CANONICAL as dea:process-institutionalize-regulated-strategic-plan. This record re-evaluates the cell; the CR-BP-63 baseline record (dea:discovery-strategy-and-direction-activate) remains the evidence base for the cell's non-regulated candidates.
+      Targeted escape-clause evaluation of the StrategyAndDirection x Activate register cell (register v12, backlog-deferred). The cell's escape condition reads "defer until a strategic plan rollout needs distinct group-level work beyond steering -- e.g. multi-business-unit reorg, divestiture, M&A integration". The discovery finds that condition met in the regulated-sector context: supervisor-acknowledged strategic-plan activation (BCBS ICAAP/SAA, BRRD recovery-plan, NHS trust 5-year strategy, PUC strategic-plan filing) is a legally-mandated, boundary-clear, evidence-authoritative transformation distinct from steady-state strategy execution, scoring 9/10 and recommended ADMIT-CANONICAL as processes:process-sd-activate-s9m34e. This record re-evaluates the cell; the CR-BP-63 baseline record (dea:discovery-strategy-and-direction-activate) remains the evidence base for the cell's non-regulated candidates.
     excluded: >
       Non-regulated strategic-plan launch (single-business-unit rollout without supervisor's review) remains RECORD-PATTERN or MERGE per the CR-BP-63 baseline; no non-regulated candidate is promoted by the escape evidence, which is specific to the regulated context.
     unresolved: >

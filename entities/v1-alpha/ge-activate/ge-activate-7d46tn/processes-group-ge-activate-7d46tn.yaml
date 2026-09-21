@@ -1,0 +1,110 @@
+id: processes:group-ge-activate-7d46tn
+type: ProcessGroup
+version: 1.0.0
+name: Governance Instrument Commencement
+definition: 'The bounded Process Group that organises the Business Process
+
+  responsibilities of bringing adopted governance instruments into
+
+  force in the GovernanceAndExistence x Activate context
+
+  (commencement verification, promulgation, effectiveness
+
+  confirmation).
+
+  '
+process_context: processes:pc-ge-activate-hxtfcv
+scope:
+  includes:
+  - Commencement condition verification
+  - Promulgation of adopted instruments
+  - Effectiveness confirmation and recording
+  excludes:
+  - Instrument adoption and approval (Build)
+  - Enforcement and operation of in-force instruments (Operate)
+  - Instrument review and amendment (Improve)
+outcomes:
+- Adopted instruments are brought into force with commencement conditions verified and promulgation recorded.
+composes:
+- source_id: processes:group-ge-activate-7d46tn
+  target_id: processes:process-ge-activate-wegs44
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per the CR-BP-63 discovery
+
+    outcome (ADMIT-CANONICAL recommendation) landed by CR-BP-65.
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-65
+    asserted_by: dea-team
+    asserted_at: '2026-09-14'
+process_group_kind: governance
+status: accepted
+lifecycle_status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: GovernanceAndExistence
+    stage: Activate
+    identifier: ecf:governanceExistence.activate
+evidence:
+- source: CR-BP-63 lifecycle discovery exercise
+  claim: 'This Process Group''s coordinate was evaluated by the CR-BP-63
+
+    discovery record
+
+    discovery/v1-alpha/governance-and-existence-activate.yaml: the
+
+    cell''s canonical candidate Bring into Force scored 9/10 with an
+
+    ADMIT-CANONICAL recommendation on universal entry-into-force
+
+    evidence, overturning (with evidence) the register v2 per-cell
+
+    deferral note.
+
+    '
+  strength: E4
+  reference: discovery/v1-alpha/governance-and-existence-activate.yaml
+- source: CR-BP-65 admission tranche
+  claim: 'CR-BP-65 lands this Process Group as the L1 home of the
+
+    discovery-admitted Business Process and flips the register cell
+
+    to ratified-accepted / landed.
+
+    '
+  strength: E4
+  reference: change-requests/CR-BP-65-ge-activate-admission.md
+metadata:
+  established_by: CR-BP-65
+  established_at: '2026-09-14'
+  cross_context_overlap: []
+  change_history:
+  - cr: CR-BP-65
+    date: '2026-09-14'
+    change: 'Initial Process Group record; the second L1 group at an
+
+      Activate/Retire coordinate (the first in the
+
+      GovernanceAndExistence domain), landed from the CR-BP-63
+
+      evidence-backed discovery outcome under the CR-BP-62 method.
+
+      '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-65-ge-activate-admission.md
+- rel: discovery-record
+  href: discovery/v1-alpha/governance-and-existence-activate.yaml
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

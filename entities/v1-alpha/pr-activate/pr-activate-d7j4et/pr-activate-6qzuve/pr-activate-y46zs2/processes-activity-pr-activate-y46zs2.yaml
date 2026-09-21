@@ -1,0 +1,73 @@
+id: processes:activity-pr-activate-y46zs2
+type: Activity
+name: Verify Party Identity
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Onboard Regulated Party Relationship that establishes the applicant's identity to the standard required by the controlling KYC/AML regime, including the collection and verification of identity documents, electronic identity checks, and corroborating independent sources.
+belongs_to_business_process: processes:process-pr-activate-6qzuve
+cohesion_rationale: Constituent work shares a single identity verification concern, one input class (the applicant's claimed identity attributes and the documents and electronic traces supporting them), and one output (a verified identity record with verification method and confidence rating). Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: PartyAndRelationship
+    stage: Activate
+    identifier: ecf:partyRelationship.activate
+metadata:
+  established_by: CR-BP-77
+  established_at: '2026-09-16'
+  change_history:
+  - cr: CR-BP-77
+    date: '2026-09-16'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-77
+
+      admitted-regulated-BP L3 tranche (pattern proven by the pilot
+
+      and prior tranches). Classified per CR-BP-32 section 5 (fails
+
+      standalone executability and resource dedication); decomposition
+
+      boundary marker per CR-BP-32 section 12 pending Task records
+
+      (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-verify-party-identity-intake, dea:task-verify-party-identity-verify, dea:task-verify-party-identity-transform, dea:task-verify-party-identity-confirm, dea:task-verify-party-identity-record).'
+composes:
+- source_id: processes:activity-pr-activate-y46zs2
+  target_id: processes:task-pr-activate-intake-yz358p
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-pr-activate-y46zs2
+  target_id: processes:task-pr-activate-verify-w4m5qv
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-pr-activate-y46zs2
+  target_id: processes:task-pr-activate-transform-uvgjbd
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-pr-activate-y46zs2
+  target_id: processes:task-pr-activate-confirm-sdmssx
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-pr-activate-y46zs2
+  target_id: processes:task-pr-activate-record-pr8yj4
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

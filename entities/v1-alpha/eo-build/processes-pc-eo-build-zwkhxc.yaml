@@ -1,0 +1,94 @@
+id: processes:pc-eo-build-zwkhxc
+domain: EnablementAndOperations
+lifecycle_stage: Build
+name: Operations and Enablement Build
+definition: 'The bounded enterprise context for **building** the production lines, delivery capability, logistics network, technology assets, and facilities of the enterprise in the **Enablement & Operations** domain. This context addresses the constructive work of standing up the execution engine and provisioning its enabling assets. v2.4.0: absorbs asset acquisition and facility provisioning from the dissolved Supply & Resources domain; supplier onboarding lives in party-relationship x build (domain-grounding.md §3.6).
+
+  '
+scope:
+  includes:
+  - Production line stand-up
+  - Delivery capability build
+  - Logistics network build
+  - Technology asset acquisition and installation
+  - Facility acquisition and provisioning
+  excludes:
+  - Operations design (Design stage; adjacent context)
+  - Agent provisioning (agency-organization x build; adjacent domain)
+  - Supplier onboarding (party-relationship x build; adjacent domain)
+  - Product variant development (product-value x build; adjacent domain)
+outcomes:
+- Production lines are stood up and ready for operation.
+- Delivery capability is built and ready.
+- Logistics network is built and connected.
+- Technology assets are acquired and installed.
+- Facilities are acquired and provisioned.
+adjacent_contexts:
+- processes:pc-eo-conceive-mxmtzq
+- processes:pc-eo-design-kxdfnz
+- processes:pc-eo-operate-ydqb96
+- processes:pc-eo-improve-pka6dk
+processes:
+- processes:process-eo-build-j9z3q4
+- processes:process-eo-build-awy8dz
+- processes:process-eo-build-ba6ykz
+- processes:process-eo-build-nmmmt6
+- processes:process-eo-build-tqybhd
+cell_charter:
+  enterprise_concern: 'Enablement & Operations: the construction of the enterprise''s execution engine and enabling assets.'
+  lifecycle_concern: 'Build: standing up production lines, building delivery capability and logistics, and provisioning technology assets and facilities.'
+  combined_semantic_meaning: 'The constructive work of standing up production lines, building delivery capability and the logistics network, and acquiring and provisioning technology assets and facilities.
+
+    '
+  expected_outcomes:
+  - Production lines are stood up and ready for operation.
+  - Delivery capability is built and ready.
+  - Logistics network is built and connected.
+  - Technology assets are acquired and installed.
+  - Facilities are acquired and provisioned.
+  inclusions:
+  - Production line stand-up
+  - Delivery capability build
+  - Logistics network build
+  - Technology asset acquisition and installation
+  - Facility acquisition and provisioning
+  exclusions:
+  - Operations design (Design stage; adjacent context)
+  - Agent provisioning (agency-organization x build; adjacent domain)
+  - Supplier onboarding (party-relationship x build; adjacent domain)
+  - Product variant development (product-value x build; adjacent domain)
+  adjacent_boundaries:
+  - 'processes:pc-eo-conceive-mxmtzq (adjacent context): execution flow between Build and the adjacent cell.'
+  - 'processes:pc-eo-design-kxdfnz (adjacent context): execution flow between Build and the adjacent cell.'
+  - 'processes:pc-eo-operate-ydqb96 (adjacent context): execution flow between Build and the adjacent cell.'
+  - 'processes:pc-eo-improve-pka6dk (adjacent context): execution flow between Build and the adjacent cell.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-21d
+established_at: '2026-09-08'
+change_history:
+- cr: CR-BP-21d.1
+  date: '2026-09-08'
+  change: 'Processes list extended with the remaining register v2 L2
+
+    candidates for this cell under CR-BP-21d.1.
+
+    '
+- cr: CR-BP-21d
+  date: '2026-09-08'
+  change: 'Initial Process Context record; promoted from the CR-BP-19
+
+    register v2 (ratified against ECF v2.4.0) as part of the
+
+    EnablementAndOperations landing tranche. Substrate-neutral
+
+    per ADR-ECF-002 §5 / CR-ECF-007.
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21d-enablement-operations-landing.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

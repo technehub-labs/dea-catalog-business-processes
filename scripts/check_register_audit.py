@@ -32,8 +32,8 @@ import yaml
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 ENTITIES_DIR = REPO_ROOT / "entities/v1-alpha"
-REGISTER_PATH = ENTITIES_DIR / "dea:group-customer-lifecycle-management/research/l1-register.yaml"
-UNIVERSE_PATH = ENTITIES_DIR / "dea:group-customer-lifecycle-management/research/l1-candidate-universe.yaml"
+REGISTER_PATH = ENTITIES_DIR / "pr-operate/pr-operate-7ab3ma/research/l1-register.yaml"
+UNIVERSE_PATH = ENTITIES_DIR / "pr-operate/pr-operate-7ab3ma/research/l1-candidate-universe.yaml"
 
 DOMAIN_ABBR = {
     "ge": "GovernanceAndExistence",
@@ -41,7 +41,8 @@ DOMAIN_ABBR = {
     "ao": "AgencyAndOrganization",
     "pr": "PartyAndRelationship",
     "pv": "ProductAndValue",
-    "oe": "EnablementAndOperations",
+    "oe": "EnablementAndOperations",  # legacy pre-migration token
+    "eo": "EnablementAndOperations",  # CR-BP-mv1 canonical token
     "fa": "FinanceAndAccounting",
 }
 
@@ -65,23 +66,22 @@ def _parse_stage(s: str) -> str:
 
 
 def _collect_landed() -> dict[tuple[str, str], list[str]]:
-    """Walk entities/v1-alpha/*/dea:group-*.yaml and group by (domain, stage)."""
+    """Walk the containment tree for ProcessGroup records, grouped by (domain, stage).
+
+    CR-BP-mv1: group files are `processes-group-*.yaml` anywhere under
+    ENTITIES_DIR; the id carries the tokens (`processes:group-<dom>-<stage>-<hash>`).
+    """
     landed: dict[tuple[str, str], list[str]] = {}
-    for entry in sorted(ENTITIES_DIR.iterdir()):
-        if not entry.name.startswith("dea:group-"):
-            continue
-        fpath = entry / f"{entry.name}.yaml"
-        if not fpath.exists():
-            continue
+    for fpath in sorted(ENTITIES_DIR.rglob("processes-group-*.yaml")):
         with fpath.open() as f:
             doc = yaml.safe_load(f)
-        pc = doc.get("process_context", "")
-        m = re.match(r"dea:pc-([a-z]+)-(.+)", pc)
+        m = re.match(r"processes:group-([a-z]+)-([a-z]+)-[a-z0-9]{6}$",
+                     doc.get("id", ""))
         if not m:
             continue
         dom = DOMAIN_ABBR.get(m.group(1), "?")
         st = _parse_stage(m.group(2))
-        landed.setdefault((dom, st), []).append(entry.name)
+        landed.setdefault((dom, st), []).append(doc["id"])
     return landed
 
 
@@ -162,11 +162,11 @@ def _self_test() -> int:
     with tempfile.TemporaryDirectory() as td:
         td = Path(td)
         ent = td / "entities"
-        ent_a = ent / "dea:group-foo"
-        ent_a.mkdir(parents=True)
-        (ent_a / "dea:group-foo.yaml").write_text(textwrap.dedent("""
-            id: dea:group-foo
-            process_context: dea:pc-ge-build
+        grp = ent / "ge-build" / "ge-build-tbc3ta"
+        grp.mkdir(parents=True)
+        (grp / "processes-group-ge-build-tbc3ta.yaml").write_text(textwrap.dedent("""
+            id: processes:group-ge-build-tbc3ta
+            process_context: processes:pc-ge-build-tbc3ta
         """))
 
         # patch module globals for the test
@@ -177,15 +177,15 @@ def _self_test() -> int:
             register:
               GovernanceAndExistence:
                 Build:
-                  process_context: dea:pc-ge-build
+                  process_context: processes:pc-ge-build-tbc3ta
                   disposition: ratified-accepted
                   audit_status: landed
                 Conceive:
-                  process_context: dea:pc-ge-conceive
+                  process_context: processes:pc-ge-conceive-6qnkhh
                   disposition: ratified-accepted
                   audit_status: ratified-pending-landing
                 Activate:
-                  process_context: dea:pc-ge-activate
+                  process_context: processes:pc-ge-activate-7d46tn
                   disposition: backlog-deferred
                   audit_status: backlog-deferred
         """))

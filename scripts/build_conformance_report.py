@@ -59,10 +59,10 @@ def _run_validator(script: str, root: Path) -> dict[str, list[dict[str, str]]]:
 
 
 def _record_path(root: Path, record_id: str) -> str:
-    if record_id.startswith("dea:pc-"):
+    if record_id.startswith("processes:pc-"):
         local = record_id.split(":", 1)[1]
         return f"contexts/v1-alpha/{local}.yaml"
-    if record_id.startswith("dea:process-"):
+    if record_id.startswith("processes:process-"):
         local = record_id.split(":", 1)[1]
         return f"entities/v1-alpha/dea:{local}/dea:{local}.yaml"
     if record_id.startswith("dea:pg-"):

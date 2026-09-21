@@ -137,28 +137,41 @@ for the full classification narrative.
 The Business Process catalog decomposes the enterprise process
 landscape through an L0 / L1 / L2 / L3 hierarchy. **L0 is a
 catalog topology construct; L1 (Process Group), L2 (Business
-Process), and L3 (Activity) are canonical records** (`dea:group-*`,
-`dea:process-*`, `dea:activity-*` under `entities/v1-alpha/`).
+Process), and L3 (Activity) are canonical records**
+(`processes:group-*`, `processes:process-*`, `processes:activity-*`
+under `entities/v1-alpha/`).
+
+**Storage layout (CR-BP-mv1, 2026-09-20):** records live in the
+L0-rooted containment tree at
+`entities/v1-alpha/<pc-cell>/<group>/<process>/<activity>/<task>/`,
+with id-derived filenames (`processes-<...>.yaml`). Every record id
+carries the org-wide form
+`processes:<level>-<domain>-<stage>-<hash>`; PCs carry
+`processes:pc-<domain>-<stage>-<hash>` and live at cell level (the
+pre-migration `contexts/v1-alpha/` directory is retired). The
+canonical specs are dea-metaframework `docs/id-system.md` and
+`docs/entity-storage-layout.md`; the old-to-new id mapping is
+`reconciliation/migration-id-map.yaml`. The diagram below shows the
+logical hierarchy; on disk, containment mirrors it exactly.
 
 ```text
 ECF Domain × Lifecycle Stage
          │
          ▼
-   Process Context          (CR-BP-02; contexts/v1-alpha/)
+   Process Context          (CR-BP-02; entities/v1-alpha/<cell>/)
          │   conceptual L0 (Process Scope)
          ▼
    Process Group            (L1; CR-BP-12; entities/v1-alpha/;
-         │       dea:group-*; PG-001..008)
+         │       processes:group-*; PG-001..008)
          ▼
    Business Process         (L2; entities/v1-alpha/;
-         │       dea:process-*)
+         │       processes:process-*)
          ▼
    Activity                 (L3; CR-BP-32; entities/v1-alpha/;
-         │       dea:activity-*; ACT-001..010)
+         │       processes:activity-*; ACT-001..010)
          ▼
-   Workflow / Task          (L4; future; authoritative
-                             metamodel; dea:Task lifecycle:
-                             proposed)
+   Workflow / Task          (L4; entities/v1-alpha/;
+                             processes:task-*)
 ```
 
 **Process Group is NOT equivalent to Business Function.** A Business
@@ -374,8 +387,10 @@ Process Context
 └── Process Elements
 ```
 
-The catalog carries a **Process Context Register** at
-`contexts/v1-alpha/` (CR-BP-02). Each entry conforms to
+The catalog carries a **Process Context Register** inside the
+containment tree at `entities/v1-alpha/<cell>/` (CR-BP-02; PC records
+moved there by CR-BP-mv1; the pre-migration `contexts/v1-alpha/`
+location is retired). Each entry conforms to
 `schemas/entities/process-context.schema.json` and is validated by
 `scripts/check_process_context.py` (rules PC-001..PC-008).
 

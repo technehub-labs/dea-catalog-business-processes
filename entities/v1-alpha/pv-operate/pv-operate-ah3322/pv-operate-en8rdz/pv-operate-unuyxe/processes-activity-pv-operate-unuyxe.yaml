@@ -1,0 +1,73 @@
+id: processes:activity-pv-operate-unuyxe
+type: Activity
+name: Monitor Proposition Performance
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Manage Portfolio Performance that monitors proposition performance continuously against investment envelopes.
+belongs_to_business_process: processes:process-pv-operate-en8rdz
+cohesion_rationale: Constituent work shares a single monitoring concern (continuous performance visibility), one input class (proposition performance telemetry), and one output (the performance picture). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: ProductAndValue
+    stage: Operate
+    identifier: ecf:productValue.operate
+metadata:
+  established_by: CR-BP-51
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-51
+    date: '2026-09-13'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-51
+
+      ProductAndValue Improve + Operate tranche (completes the PV
+
+      domain''s L3 coverage; pattern proven by CR-BP-42 through CR-BP-50).
+
+      Classified per CR-BP-32 section 5 (fails standalone executability
+
+      and resource dedication); decomposition boundary marker per CR-BP-32
+
+      section 12 pending Task records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-monitor-proposition-performance-intake, dea:task-monitor-proposition-performance-verify, dea:task-monitor-proposition-performance-transform, dea:task-monitor-proposition-performance-confirm, dea:task-monitor-proposition-performance-record).'
+composes:
+- source_id: processes:activity-pv-operate-unuyxe
+  target_id: processes:task-pv-operate-intake-cmzsgc
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-pv-operate-unuyxe
+  target_id: processes:task-pv-operate-verify-xm4apt
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-pv-operate-unuyxe
+  target_id: processes:task-pv-operate-transform-asm9ss
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-pv-operate-unuyxe
+  target_id: processes:task-pv-operate-confirm-5qbjqv
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-pv-operate-unuyxe
+  target_id: processes:task-pv-operate-record-a8d3w3
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

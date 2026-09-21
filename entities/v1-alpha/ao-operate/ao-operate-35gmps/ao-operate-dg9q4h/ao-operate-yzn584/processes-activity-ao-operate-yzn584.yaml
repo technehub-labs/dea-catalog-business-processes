@@ -1,0 +1,73 @@
+id: processes:activity-ao-operate-yzn584
+type: Activity
+name: Validate Attendance Records
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Operate Time and Attendance that validates the captured records for accuracy before they feed payroll.
+belongs_to_business_process: processes:process-ao-operate-dg9q4h
+cohesion_rationale: Constituent work shares a single validation concern (captured records checked for accuracy), one input class (the captured time and attendance records), and one output (the validated attendance records). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: AgencyAndOrganization
+    stage: Operate
+    identifier: ecf:agencyOrganization.operate
+metadata:
+  established_by: CR-BP-57
+  established_at: '2026-09-14'
+  change_history:
+  - cr: CR-BP-57
+    date: '2026-09-14'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-57
+
+      AgencyAndOrganization Improve + Operate tranche (pattern proven by CR-BP-42 through CR-BP-56).
+
+      Classified per CR-BP-32 section 5 (fails standalone
+
+      executability and resource dedication); decomposition
+
+      boundary marker per CR-BP-32 section 12 pending Task
+
+      records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-validate-attendance-records-intake, dea:task-validate-attendance-records-verify, dea:task-validate-attendance-records-transform, dea:task-validate-attendance-records-confirm, dea:task-validate-attendance-records-record).'
+composes:
+- source_id: processes:activity-ao-operate-yzn584
+  target_id: processes:task-ao-operate-intake-2aexr6
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-ao-operate-yzn584
+  target_id: processes:task-ao-operate-verify-jvw62k
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-ao-operate-yzn584
+  target_id: processes:task-ao-operate-transform-cdmc58
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-ao-operate-yzn584
+  target_id: processes:task-ao-operate-confirm-r9r893
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-ao-operate-yzn584
+  target_id: processes:task-ao-operate-record-c7wyh4
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

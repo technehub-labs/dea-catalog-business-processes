@@ -1,0 +1,97 @@
+id: processes:group-ao-build-m6fmyx
+type: ProcessGroup
+version: 1.0.0
+name: Agent Acquisition and Onboarding
+definition: 'The bounded Process Group that organises the Business Process responsibilities of acquiring and onboarding agents of all substrates in the AgencyAndOrganization x Build context: sourcing and recruiting human talent, provisioning artificial agents (model deployment, API integration), onboarding and integrating agents, and building the contractor and partner-agent pool. v2.4.0 grounding (domain-grounding.md §3.3, Acquisition and Onboarding sub-concern).
+
+  '
+process_context: processes:pc-ao-build-pjk4rz
+scope:
+  includes:
+  - Agent sourcing, recruiting, provisioning (all substrates)
+  - Agent onboarding and integration
+  - Contractor and partner-agent pool build
+  excludes:
+  - Supplier relationship onboarding (party-relationship)
+  - Agent topology design (Design stage; adjacent context)
+  - Agent performance operation (Operate stage; adjacent context)
+outcomes:
+- Agents are acquired and onboarded per the designed topology.
+- Contractor and partner-agent pool is built with vetted sources.
+composes:
+- source_id: processes:group-ao-build-m6fmyx
+  target_id: processes:process-ao-build-w2qurd
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (landed CR-BP-21b).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21b.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-ao-build-m6fmyx
+  target_id: processes:process-ao-build-b38bkg
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21b.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21b.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+process_group_kind: end-to-end
+status: accepted
+lifecycle_status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: AgencyAndOrganization
+    stage: Build
+    identifier: ecf:agencyOrganization.build
+evidence:
+- source: CR-BP-19 (register v2, ratified against ECF v2.4.0)
+  claim: 'This Process Group''s coordinate is ratified-accepted in register
+
+    v2. CR-BP-21b.1 lands the corresponding L1 group as part of the
+
+    AgencyAndOrganization completion tranche.
+
+    '
+  strength: E4
+  reference: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+metadata:
+  established_by: CR-BP-21b.1
+  established_at: '2026-09-08'
+  cross_context_overlap: []
+  change_history:
+  - cr: CR-BP-21b.1
+    date: '2026-09-08'
+    change: 'Initial Process Group record; promoted from the CR-BP-19 register
+
+      v2 (ratified against ECF v2.4.0) as part of the CR-BP-21b.1
+
+      AgencyAndOrganization completion tranche. Substrate-neutral per
+
+      ADR-ECF-002 section 5 / CR-ECF-007.
+
+      '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21b.1-agency-organization-completion.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

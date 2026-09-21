@@ -1,0 +1,132 @@
+schema: dea/v1
+schema_version: 1
+id: processes:pc-ao-activate-kusw2u
+domain: AgencyAndOrganization
+lifecycle_stage: Activate
+name: Licensed Workforce Mobilization
+process_context:
+  id: processes:pc-ao-activate-kusw2u
+  domain: AgencyAndOrganization
+  lifecycle_stage: Activate
+  scope_summary: Governed mobilization of a workforce whose individuals must hold regulator-issued licences or registrations before performing live work, distinct from general workforce build and from steady-state performance management.
+  process_empty: false
+  lifecycle_status: candidate
+  status: candidate
+cell_charter:
+  enterprise_concern: 'Agency & Organization: the controlled mobilization of a licensed or regulated workforce, with regulator-controlled scope, fitness-and-propriety attestation, supervised-training completion, and continuing-supervisor notification -- distinct from general workforce build.'
+  lifecycle_concern: 'Activate: the live-readiness activation of a workforce role whose holders must hold a regulator-issued licence or registration before they may perform live work.'
+  combined_semantic_meaning: 'The licensed-workforce mobilization work that moves individuals
+
+    from credentialed-but-not-live to credential-and-inlive under the
+
+    enterprise''s regulated-entity approval authority, with the
+
+    supervisor-controlled scope preserved (signing authority or
+
+    controlled-function designation), fitness-and-propriety
+
+    attestation recorded, supervised-training completion preserved,
+
+    and continuing-supervisor notification activated, so that the
+
+    licensed individual is live on the regulated personnel record
+
+    under the regulator''s continuing supervision.
+
+    '
+  expected_outcomes:
+  - Regulator-controlled scope preserved on the regulated personnel record (signing authority under SMCR CF1..CF11; state healthcare licensure; NAIC producer appointment; FAA/EASA crew licence type-rating; SRA practising certificate; state bar admission)
+  - Fitness-and-propriety attestation recorded for the licensed individual under the regulator's continuing supervision
+  - Supervised-training completion preserved on the regulated personnel record
+  - Competency assessment completed and recorded for the licensed role
+  - Enterprise's regulated-entity approval authority activated for the licensed role
+  - Continuing-supervisor notification issued; supervisor's continuing-oversight relationship active
+  - Licensed workforce role formally live under the regulator's continuing supervision, ready to perform live work
+  inclusions:
+  - Regulator-issued licence or registration verification (FCA SMCR Statements of Responsibilities; state healthcare licensure; NAIC producer licence; FAA/EASA crew licence; SRA practising certificate; state bar admission)
+  - Fitness-and-propriety attestation (SMCR; state licensure; producer appointment; FAA/EASA; SRA; bar)
+  - Supervised-training completion record (SMCR; state healthcare; NAIC; FAA/EASA; SRA; bar)
+  - Competency assessment record for the licensed role
+  - Enterprise's regulated-entity approval authority framework (the entity-level framework that authorizes the licensed role)
+  - Signing authority or controlled-function designation (SMCR CF1..CF11; NAIC producer line of authority; FAA/EASA type-rating; SRA role; bar area of practice)
+  - Continuing-supervisor notification and continuing-oversight relationship activation
+  exclusions:
+  - Workforce recruitment, hiring, and general onboarding (AgencyAndOrganization x Build)
+  - Steady-state workforce performance and development (AgencyAndOrganization x Operate / Improve)
+  - Workforce offboarding and licence surrender (AgencyAndOrganization x Retire; CR-BP-73 adjacent cells)
+  - Non-licensed workforce activation (deferred to a future CR; the cell is reserved for licensed roles only)
+  - Internal non-regulated personnel activation (where the role has no regulator-issued licence prerequisite)
+  - Capabilities sourcing/licensing absent a regulator-controlled scope (AgencyAndOrganization x Build)
+  adjacent_boundaries:
+  - 'processes:pc-ao-build-pjk4rz (adjacent context): the Build cell handles recruitment, hiring, and general onboarding; the Activate cell governs the controlled mobilization step where the licensed individual moves from credentialed-but-not-live to credential-and-inlive under the enterprise''s regulated-entity approval authority.'
+  - 'processes:pc-ao-operate-zfevmp (adjacent context): the Operate cell handles steady-state workforce performance and development; the Activate cell only governs the live-readiness activation.'
+  - 'processes:pc-ao-retire-3kqe9c (adjacent context, CR-BP-73): the Retire cell at A&O handles offboarding and licence surrender; the Activate cell handles the regulated live-readiness activation.'
+  - 'processes:pc-eo-activate-xdfscw (sibling cell): the EO Activate cell governs regulator-authorized operations-capability activation (AOC, PSD2, GMP, MiCA); the A&O Activate cell governs regulator-controlled individual-workforce mobilization -- separate concerns (capability vs individual).'
+  - 'processes:pc-pv-activate-f7kne7 (sibling cell, CR-BP-71-era): the PV Activate cell governs product/service transition-to-service; the A&O Activate cell governs individual-workforce mobilization.'
+process_groups:
+- id: processes:group-ao-activate-jjx738
+  kind: functional
+  scope: 'Governs the controlled mobilization of a licensed or regulated workforce whose individuals must hold regulator-issued licences or registrations before performing live work: licence verification, fitness-and-propriety attestation, supervised-training completion, competency assessment, enterprise''s regulated-entity approval authority, signing authority or controlled-function designation, and continuing-supervisor notification.'
+  processes:
+  - processes:process-ao-activate-jqxtqn
+admission:
+  recommended_by: dea:discovery-agency-and-organization-activate-escape
+  recommended_at: '2026-09-16'
+  recommended_score: 10
+  carrier_cr: CR-BP-81
+  bp_id: processes:process-ao-activate-jqxtqn
+  pg_id: processes:group-ao-activate-jjx738
+  pc_id: processes:pc-ao-activate-kusw2u
+  evidence_summary: 'Authoritative regulatory evidence across banking, healthcare, insurance, professional services, telecoms, and aviation for licensed-workforce mobilization: FCA SMCR Statements of Responsibilities (CF1..CF11 controlled functions require fitness-and-propriety attestation and Statements of Responsibilities before live work); US state healthcare licensure regimes; NAIC Producer Licensing Model Act and state insurance-producer licensing; EASA and FAA crew licensing (type-rated licences for live flight operations); UK SRA regulated-professionals regime and US state bar admissions (practising certificates and admissions before live client work).'
+  register_flip:
+    from:
+      audit_status: backlog-deferred
+      ratified_at: '2026-09-07'
+      ratified_by: CR-BP-19
+    to:
+      audit_status: ratified-accepted
+      ratified_at: '2026-09-16'
+      ratified_by: CR-BP-81
+processes:
+- processes:process-ao-activate-jqxtqn
+intent:
+  decomposition: BP decomposition at L3 is the next slice (CR-BP-87)
+  lifecycle_stage: Activate
+  coordinate: AgencyAndOrganization x Activate
+change_history:
+- cr: CR-BP-81
+  date: '2026-09-16'
+  change: 'Initial Process Context record. The cell was backlog-deferred
+
+    under CR-BP-19 with the per-cell escape note "workforce
+
+    activation is often an attribute of build (hire-and-onboard)".
+
+    CR-BP-80 escape-clause discovery evaluated the cell against
+
+    2024-2026 licensed-workforce regulation across banking,
+
+    healthcare, insurance, professional services, telecoms, and
+
+    aviation and established the evidence-backed canonical candidate
+
+    Mobilize Licensed Workforce (10/10, ADMIT-CANONICAL) on FCA SMCR,
+
+    US state healthcare licensure, NAIC Producer Licensing Model
+
+    Act, EASA/FAA crew licensing, UK SRA / US state bar admissions.
+
+    CR-BP-81 reverses the cell disposition to ratified-accepted
+
+    and lands the Process Group and Business Process as the
+
+    canonical decomposition at this coordinate.
+
+    '
+audit:
+  authored: '2026-09-16'
+  author: Coder (for eaojnr)
+  reviewed_by: null
+  status: candidate
+  change_request: CR-BP-81
+  register_version_at_landing: v13

@@ -6,6 +6,10 @@ All notable changes to this repository are documented here. Format follows
 
 ## [Unreleased]
 
+### CR-BP-mv1: Entity storage + id system migration (org-wide Wave 1)
+
+Migrates the repo to the org-wide id system and the L0-rooted containment tree (metamodel canonical specs: dea-metaframework `docs/id-system.md` + `docs/entity-storage-layout.md`, PR #31). All 3,598 canonical records rewritten from the legacy `dea:*` id family to `processes:<level>-<domain>-<stage>-<hash>`; every structured cross-reference rewritten; the flat pre-migration entity layout replaced by the containment tree (`contexts/v1-alpha/` retired; PCs live at cell level). Migration id map at `reconciliation/migration-id-map.yaml` (3,623 entries + documented known residuals). New blocking gate `scripts/check_id_system.py` (IDM-001..007 catalog-wide; IDM-008 PR-scoped file coherence with per-PR CI report artifact). Cross-check stage (XC-01..11) via `scripts/cross_check_org_wide.py`: 145 CR/ADR artifacts audited org-wide; 77 historical CRs + 3 sibling-repo ADRs received layout-note banners (content verbatim). Disclosed repairs: disposition register completed for the CR-BP-101 SD/Retire BP; tranche plan completed (`sd-ret.101`); stale count assertions bumped (139 -> 140 BP counts; 73 -> 79 tranche count) with pre-existing drift documented in the PR body. Register audit gate repaired for the containment tree (walker + canonical `eo` domain token) and AO x Retire register cell `audit_status` corrected to `landed` (pre-existing drift on main). PR #148 (CR-BP-L4-03) merged ahead of this slice; its 340 enriched GovernanceAndExistence Task records were absorbed via three-way splice at merge time (migration structure kept, enriched content spliced in, legacy ids rewritten through the id map).
+
 ## [v0.4.0] - 2026-09-17
 
 

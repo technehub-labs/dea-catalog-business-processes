@@ -1,0 +1,61 @@
+id: processes:task-ge-retire-verify-tj9wv3
+type: Task
+name: Reduce Governance To Wind-Down Quorum Verification
+definition: The bounded unit of work within `processes:activity-ge-retire-bp4237` (Reduce Governance To Wind-Down Quorum) that verify the input pack against the dissolution statute (DGCL §§275-283 / UK Insolvency Act 1986 Part IV), the wind-down quorum requirements, and the retained-records custodianship contract, and emit a verification report naming any statutory deviations and their remediation.
+belongs_to_activity: processes:activity-ge-retire-bp4237
+trigger: Intake manifest registered for Reduce Governance To Wind-Down Quorum; verification gate may execute the contract and quality-criteria checks against the input pack.
+outcome: Verification certificate issued for Reduce Governance To Wind-Down Quorum naming verification methods applied and any deviations remediated; verification custodian passes custody to the processing custodian.
+responsibility: verification custodian
+boundary:
+  inclusions:
+  - Execution of the Reduce Governance To Wind-Down Quorum contract checks and quality-criteria verification.
+  - Reconciliation of the input pack against the Reduce Governance To Wind-Down Quorum verification certificate requirements.
+  exclusions:
+  - Long-term retention of the case file (phase 5).
+  - Re-execution of prior phases on rejected or withdrawn cases.
+evidence:
+- source: Delaware DGCL §§275-283 (Dissolution)
+  claim: statutory dissolution and winding-up provisions binding the retire-phase verification and the statutory dissolution filings. Bounded-work evidence for the verify-phase custodian of `processes:activity-ge-retire-bp4237` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: UK Insolvency Act 1986 Part IV
+  claim: UK winding-up statute grounding the retire-phase wind-down quorum requirements and registrar filings. Bounded-work evidence for the verify-phase custodian of `processes:activity-ge-retire-bp4237` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: processes:activity-ge-retire-bp4237
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-03 cell-specific bounded-work prose for this GovernanceAndExistence L4 Task.
+  strength: E3
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: GovernanceAndExistence
+    stage: Retire
+    identifier: ecf:governanceExistence.retire
+metadata:
+  established_by: CR-BP-102
+  established_at: '2026-09-19'
+  change_history:
+  - cr: CR-BP-79
+    date: '2026-09-16'
+    change: 'Initial L3 Activity entry for dea:process-effect-regulator-mandated-governance-unwind; lands as part of the CR-BP-79
+
+      L3 GE Retire admission tranche (pattern proven by the pilot and prior
+
+      tranches, including CR-BP-77 admitted-regulated-tranche). Classified
+
+      per CR-BP-32 section 5 (fails standalone executability and resource
+
+      dedication); decomposition boundary marker per CR-BP-32 section 12
+
+      pending Task records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

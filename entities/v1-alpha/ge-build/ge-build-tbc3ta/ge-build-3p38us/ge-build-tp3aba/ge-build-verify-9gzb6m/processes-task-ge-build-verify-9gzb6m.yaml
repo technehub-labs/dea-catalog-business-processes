@@ -1,0 +1,61 @@
+id: processes:task-ge-build-verify-9gzb6m
+type: Task
+name: Constitute Bodies Verification
+definition: The bounded unit of work within `processes:activity-ge-build-tp3aba` (Constitute Bodies) that verify the build package against the governance-framework contract (OECD / King IV structural requirements), the committee-charter completeness rules, and the monitoring-tooling specification, and emit a verification report naming any structural deviations and their remediation.
+belongs_to_activity: processes:activity-ge-build-tp3aba
+trigger: Intake manifest registered for Constitute Bodies; verification gate may execute the contract and quality-criteria checks against the input pack.
+outcome: Verification certificate issued for Constitute Bodies naming verification methods applied and any deviations remediated; verification custodian passes custody to the processing custodian.
+responsibility: verification custodian
+boundary:
+  inclusions:
+  - Execution of the Constitute Bodies contract checks and quality-criteria verification.
+  - Reconciliation of the input pack against the Constitute Bodies verification certificate requirements.
+  exclusions:
+  - Long-term retention of the case file (phase 5).
+  - Re-execution of prior phases on rejected or withdrawn cases.
+evidence:
+- source: OECD Principles of Corporate Governance (G20/OECD 2023)
+  claim: international governance benchmark binding the build-phase structural verification (charter completeness, body constitution) to a recognised framework. Bounded-work evidence for the verify-phase custodian of `processes:activity-ge-build-tp3aba` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: King IV Report (IoDSA 2016)
+  claim: outcomes-based governance report grounding the build-phase committee-charter completeness rules and operating-cycle design. Bounded-work evidence for the verify-phase custodian of `processes:activity-ge-build-tp3aba` (CR-BP-L4-03 enrichment).
+  strength: E2
+- source: processes:activity-ge-build-tp3aba
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-03 cell-specific bounded-work prose for this GovernanceAndExistence L4 Task.
+  strength: E3
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: GovernanceAndExistence
+    stage: Build
+    identifier: ecf:governanceExistence.build
+metadata:
+  established_by: CR-BP-102
+  established_at: '2026-09-19'
+  change_history:
+  - cr: CR-BP-48
+    date: '2026-09-13'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-48
+
+      GovernanceAndExistence Conceive + Design + Build tranche (pattern
+
+      proven by CR-BP-42 through CR-BP-47). Classified per CR-BP-32
+
+      section 5 (fails standalone executability and resource dedication);
+
+      decomposition boundary marker per CR-BP-32 section 12 pending Task
+
+      records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

@@ -1,0 +1,142 @@
+id: processes:group-ge-operate-v2eu8x
+type: ProcessGroup
+version: 1.0.0
+name: Governance Oversight
+definition: 'The bounded Process Group that organizes the Business Process responsibilities of operating governance oversight, board and committee cycles, risk oversight, and policy compliance execution in the GovernanceAndExistence x Operate context. This group captures the day-to-day work of running the governance machinery: convening boards, executing risk reviews, auditing policy compliance, and making governance decisions.
+
+  '
+process_context: processes:pc-ge-operate-hb2dac
+scope:
+  includes:
+  - Board and committee cycle operation
+  - Risk oversight
+  - Policy compliance execution
+  - Audit and assurance
+  excludes:
+  - Strategy framing (Conceive stage)
+  - Governance system design (Design stage)
+  - Body establishment (Build stage)
+outcomes:
+- Board and committee cycles run on schedule.
+- Risk is identified and mitigated.
+- Policy compliance is maintained.
+composes:
+- source_id: processes:group-ge-operate-v2eu8x
+  target_id: processes:process-ge-operate-hs7wf3
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process is a principal responsibility of the
+
+    Governance Oversight value stream within PartyAndRelationship.
+
+    This composition is canonical per CR-BP-13a.
+
+    '
+  evidence: docs/examples/dea-group-governance-oversight.md
+  provenance:
+    type: architecture-review
+    reference: CR-BP-13a
+    asserted_by: dea-team
+    asserted_at: '2026-09-05'
+- source_id: processes:group-ge-operate-v2eu8x
+  target_id: processes:process-ge-operate-hxxyc9
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process is a principal responsibility of the
+
+    Governance Oversight value stream within PartyAndRelationship.
+
+    This composition is canonical per CR-BP-13a.
+
+    '
+  evidence: docs/examples/dea-group-governance-oversight.md
+  provenance:
+    type: architecture-review
+    reference: CR-BP-13a
+    asserted_by: dea-team
+    asserted_at: '2026-09-05'
+- source_id: processes:group-ge-operate-v2eu8x
+  target_id: processes:process-ge-operate-tpenm6
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2
+
+    (GovernanceAndExistence completion tranche CR-BP-21f.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21f.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-ge-operate-v2eu8x
+  target_id: processes:process-ge-operate-zwaes5
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2
+
+    (GovernanceAndExistence completion tranche CR-BP-21f.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21f.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+process_group_kind: end-to-end
+status: accepted
+lifecycle_status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: GovernanceAndExistence
+    stage: Operate
+    identifier: ecf:governanceExistence.operate
+evidence:
+- source: CR-BP-13a (49-coordinate discovery register, ratified)
+  claim: 'This Process Group''s coordinate was ratified as accepted
+
+    in CR-BP-13; the register records the L1 candidates and
+
+    L2 process names that compose this group.
+
+    '
+  strength: E4
+  reference: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+metadata:
+  established_by: CR-BP-13a
+  established_at: '2026-09-05'
+  cross_context_overlap: []
+  change_history:
+  - cr: CR-BP-13a
+    date: '2026-09-05'
+    change: 'Initial Process Group record; promoted from the CR-BP-11
+
+      49-coordinate register (ratified by CR-BP-13) as part of
+
+      the CR-BP-13a admission tranche.
+
+      '
+  - cr: CR-BP-21f.1
+    date: '2026-09-08'
+    change: 'Added dea:process-operate-enterprise-risk-oversight and dea:process-conduct-assurance-review composes edges (CR-BP-21f.1 GE completion).
+
+      '
+links:
+- rel: change-request
+  href: change-requests/cr-bp-13a-customer-and-demand-admission.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

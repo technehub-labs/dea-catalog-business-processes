@@ -1,0 +1,86 @@
+id: processes:pc-pv-improve-wpyfx7
+domain: ProductAndValue
+lifecycle_stage: Improve
+name: Product Evolution and Portfolio Rationalization
+definition: 'The bounded enterprise context for **improving** the products and portfolio of the enterprise in the **Product & Value** domain. This context addresses the learning and adaptation work of conducting proposition performance reviews, evolving products and services, and rationalizing the portfolio. v2.4.0: capability improvement is the owning domain''s concern; this cell covers proposition-side evolution (domain-grounding.md §3.5).
+
+  '
+scope:
+  includes:
+  - Proposition performance review
+  - Product and service evolution
+  - Portfolio rationalization
+  - Proposition lifecycle optimization
+  excludes:
+  - Proposition performance operation (Operate stage; adjacent context)
+  - Capability improvement (owning domains; adjacent domains)
+  - Strategic adaptation (strategy-direction x improve; adjacent domain)
+outcomes:
+- Proposition performance review is conducted and findings are committed.
+- Products and services are evolved based on performance evidence.
+- Portfolio is rationalized against strategic fit and performance.
+- Proposition lifecycle is optimized for the next planning cycle.
+adjacent_contexts:
+- processes:pc-pv-conceive-fe9awk
+- processes:pc-pv-design-8dhwpn
+- processes:pc-pv-build-ygbmxb
+- processes:pc-pv-operate-ewpwjc
+processes:
+- processes:process-pv-improve-27r7r7
+- processes:process-pv-improve-6c2xvf
+- processes:process-pv-improve-9xvgat
+cell_charter:
+  enterprise_concern: 'Product & Value: the improvement of the enterprise''s products and portfolio.'
+  lifecycle_concern: 'Improve: improving proposition performance, evolving products and services, and rationalizing the portfolio.'
+  combined_semantic_meaning: 'The learning and adaptation work of conducting proposition performance reviews, evolving products and services, and rationalizing the portfolio.
+
+    '
+  expected_outcomes:
+  - Proposition performance review is conducted and findings are committed.
+  - Products and services are evolved based on performance evidence.
+  - Portfolio is rationalized against strategic fit and performance.
+  - Proposition lifecycle is optimized for the next planning cycle.
+  inclusions:
+  - Proposition performance review
+  - Product and service evolution
+  - Portfolio rationalization
+  - Proposition lifecycle optimization
+  exclusions:
+  - Proposition performance operation (Operate stage; adjacent context)
+  - Capability improvement (owning domains; adjacent domains)
+  - Strategic adaptation (strategy-direction x improve; adjacent domain)
+  adjacent_boundaries:
+  - 'processes:pc-pv-conceive-fe9awk (adjacent context): proposition flow between Improve and the adjacent cell.'
+  - 'processes:pc-pv-design-8dhwpn (adjacent context): proposition flow between Improve and the adjacent cell.'
+  - 'processes:pc-pv-build-ygbmxb (adjacent context): proposition flow between Improve and the adjacent cell.'
+  - 'processes:pc-pv-operate-ewpwjc (adjacent context): proposition flow between Improve and the adjacent cell.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-21c
+established_at: '2026-09-08'
+change_history:
+- cr: CR-BP-21c.1
+  date: '2026-09-08'
+  change: 'Processes list extended with the remaining register v2 L2
+
+    candidates for this cell under CR-BP-21c.1.
+
+    '
+- cr: CR-BP-21c
+  date: '2026-09-08'
+  change: 'Initial Process Context record; promoted from the CR-BP-19
+
+    register v2 (ratified against ECF v2.4.0) as part of the
+
+    ProductAndValue landing tranche. Substrate-neutral
+
+    per ADR-ECF-002 §5 / CR-ECF-007.
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21c-product-value-landing.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

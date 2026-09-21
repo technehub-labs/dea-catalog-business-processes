@@ -1,0 +1,104 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-50
+status: candidate-not-canonical; subject to review
+parent_business_process: processes:process-pv-build-say8tb
+coordinate:
+  domain: ProductAndValue
+  stage: Build
+  process_context: processes:pc-pv-build-ygbmxb
+  process_group: processes:group-pv-build-g6sua5
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42,
+  scaled by CR-BP-43 through CR-BP-49)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/processes:process-pv-build-say8tb
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: processes:activity-pv-build-sk4whv
+  name: "Construct Product Variants"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Variant construction per configuration; component assembly; construction verification"
+  out_of_scope:
+  - "Proposition design (processes:process-pv-design-8v4k89)"
+  - "Packaging design (processes:process-pv-design-a4c76s)"
+  evidence:
+  - "Parent BP trigger (designed propositions require bounded variant construction)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-50
+- id: processes:activity-pv-build-k47xjt
+  name: "Verify Variant Conformance"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Design conformance checking; configuration rule validation; nonconformance resolution"
+  out_of_scope:
+  - "Variant construction (processes:activity-pv-build-sk4whv)"
+  - "Quality control operation (processes:process-eo-operate-44jsrp)"
+  evidence:
+  - "Parent BP outcome (variants developed)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-50
+- id: processes:activity-pv-build-6z6rdn
+  name: "Stage Variants for Readiness"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Variant inventory staging; readiness package assembly; staging record upkeep"
+  out_of_scope:
+  - "Variant conformance verification (processes:activity-pv-build-k47xjt)"
+  - "Market readiness preparation (processes:process-pv-build-6hjzmk)"
+  evidence:
+  - "Parent BP outcome (variants ready for market readiness preparation)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-50
+- id: processes:activity-pv-build-d86xd9
+  name: "Document Variant Baseline"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Baseline composition recording; configuration state capture; baseline handoff to lifecycle management"
+  out_of_scope:
+  - "Variant construction (processes:activity-pv-build-sk4whv)"
+  - "Proposition lifecycle management (processes:process-pv-operate-cau4gv)"
+  evidence:
+  - "Parent BP outcome (variants developed and baselined)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-50
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."

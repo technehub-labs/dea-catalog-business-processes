@@ -1,0 +1,61 @@
+id: processes:task-ge-operate-record-e42zy3
+type: Task
+name: Maintain Audit Quality Audit Record
+definition: The bounded unit of work within `processes:activity-ge-operate-yczj9n` (Maintain Audit Quality) that retain the operating package (intake manifest, verification report, operating-ready outcomes pack, operating-completion confirmation, and any contract-deviation remediations) under the governance-operating records retention schedule with cryptographic integrity protection.
+belongs_to_activity: processes:activity-ge-operate-yczj9n
+trigger: Completion confirmation issued for Maintain Audit Quality; record gate may retain the case file under the records retention schedule with cryptographic integrity protection.
+outcome: Case file retained for Maintain Audit Quality under the records retention schedule with cryptographic integrity protection; statutory retention horizon applied where the governing statute requires.
+responsibility: records custodian
+boundary:
+  inclusions:
+  - Retention of the Maintain Audit Quality case file under the records retention schedule with cryptographic integrity protection.
+  - Application of the statutory retention horizon for Maintain Audit Quality records where the governing statute requires.
+  exclusions:
+  - Re-execution of prior phases (no rollback semantics).
+  - Re-classification of records already past the statutory retention horizon (cryptographic destruction is irreversible).
+evidence:
+- source: UK Companies Act 2006 Part 10 + Part 15
+  claim: directors and accounts provisions binding the operate-phase board-cycle contract and statutory meeting-frequency requirements. Bounded-work evidence for the record-phase custodian of `processes:activity-ge-operate-yczj9n` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: Sarbanes-Oxley §§301-302
+  claim: audit-committee and certification provisions binding the operate-phase compliance-audit execution and assurance-evidence standards. Bounded-work evidence for the record-phase custodian of `processes:activity-ge-operate-yczj9n` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: processes:activity-ge-operate-yczj9n
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-03 cell-specific bounded-work prose for this GovernanceAndExistence L4 Task.
+  strength: E3
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: GovernanceAndExistence
+    stage: Operate
+    identifier: ecf:governanceExistence.operate
+metadata:
+  established_by: CR-BP-102
+  established_at: '2026-09-19'
+  change_history:
+  - cr: CR-BP-49
+    date: '2026-09-13'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-49
+
+      GovernanceAndExistence Improve + Operate tranche (completes the GE
+
+      domain''s L3 coverage; pattern proven by CR-BP-42 through CR-BP-48).
+
+      Classified per CR-BP-32 section 5 (fails standalone executability
+
+      and resource dedication); decomposition boundary marker per CR-BP-32
+
+      section 12 pending Task records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

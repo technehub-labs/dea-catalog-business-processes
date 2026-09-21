@@ -133,12 +133,7 @@ def _load_bp_records(catalog_root: Path) -> list[tuple[Path, dict]]:
     pairs: list[tuple[Path, dict]] = []
     if not base.exists():
         return pairs
-    for entry in sorted(base.iterdir()):
-        if not entry.is_dir() or not entry.name.startswith("dea:process-"):
-            continue
-        yaml_path = entry / f"{entry.name}.yaml"
-        if not yaml_path.exists():
-            continue
+    for yaml_path in sorted(base.rglob("processes-process-*.yaml")):
         try:
             data = yaml.safe_load(yaml_path.read_text())
         except yaml.YAMLError as exc:
@@ -349,7 +344,7 @@ def _self_test() -> int:
     def _record(status_value: str = "candidate", ls_value: str = "candidate",
                 ch: list | None = None):
         d = {
-            "id": "dea:process-self-test",
+            "id": "processes:process-self-test",
             "name": "Self Test",
             "type": "Process",
             "version": "1.0.0",

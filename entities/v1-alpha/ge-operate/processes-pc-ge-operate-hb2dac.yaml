@@ -1,0 +1,73 @@
+id: processes:pc-ge-operate-hb2dac
+domain: GovernanceAndExistence
+lifecycle_stage: Operate
+name: Governance Oversight
+definition: 'The bounded enterprise context for **operating** the governance oversight, board and committee cycles, risk oversight, and policy compliance execution in the **governance and existence** domain. This context addresses the day-to-day work of running the governance machinery: convening boards, executing risk reviews, auditing policy compliance, and making governance decisions.
+
+  '
+scope:
+  includes:
+  - Board and committee cycle operation
+  - Risk oversight
+  - Policy compliance execution
+  - Audit and assurance
+  excludes:
+  - Strategy framing (Conceive stage)
+  - Governance system design (Design stage)
+  - Body establishment (Build stage)
+outcomes:
+- Board and committee cycles run on schedule.
+- Risk is identified and mitigated.
+- Policy compliance is maintained.
+adjacent_contexts:
+- processes:pc-ge-conceive-b5xwpd
+- processes:pc-ge-design-3f2gjr
+- processes:pc-ge-build-52hjrc
+- processes:pc-ge-improve-c78ppp
+processes:
+- processes:process-ge-operate-hs7wf3
+- processes:process-ge-operate-hxxyc9
+- processes:process-ge-operate-tpenm6
+- processes:process-ge-operate-zwaes5
+cell_charter:
+  enterprise_concern: 'Governance and existence: the enterprise''s mandate, policy posture, and charter direction.'
+  lifecycle_concern: 'Operate: running the governance machinery on a continuous cycle.'
+  combined_semantic_meaning: 'The day-to-day work of running the governance machinery: boards, committees, risk oversight, compliance execution.
+
+    '
+  expected_outcomes:
+  - Board and committee cycles run on schedule.
+  - Risk is identified and mitigated.
+  - Policy compliance is maintained.
+  inclusions:
+  - Board and committee cycle operation
+  - Risk oversight
+  - Policy compliance execution
+  exclusions:
+  - Strategy framing (Conceive stage)
+  - Governance system design (Design stage)
+  - Body establishment (Build stage)
+  adjacent_boundaries:
+  - 'processes:pc-ge-conceive-b5xwpd (Conceive): insights from operation shape strategy.'
+  - 'processes:pc-ge-design-3f2gjr (Design): operation reveals design gaps.'
+  - 'processes:pc-ge-build-52hjrc (Build): operation runs the built governance bodies.'
+  - 'processes:pc-ge-improve-c78ppp (Improve): operation is reviewed and improved.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-13a
+established_at: '2026-09-05'
+change_history:
+- cr: CR-BP-13a
+  date: '2026-09-05'
+  change: 'Initial Process Context record; promoted from the CR-BP-11
+
+    49-coordinate register (ratified by CR-BP-13) as part of the
+
+    CustomerAndDomain admission tranche (CR-BP-13a).
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-13a-customer-and-demand-admission.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

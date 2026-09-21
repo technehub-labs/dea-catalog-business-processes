@@ -1,0 +1,73 @@
+id: processes:activity-sd-conceive-zz7qrg
+type: Activity
+name: Commit Strategic Horizons
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Frame Strategic Horizons that commits the strategic horizons with bounded timeframes for downstream strategy work.
+belongs_to_business_process: processes:process-sd-conceive-xa4h2k
+cohesion_rationale: Constituent work shares a single commitment concern (horizons to committed horizons), one input class (bounded timeframes and anchored milestones), and one output (the committed horizons). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: StrategyAndDirection
+    stage: Conceive
+    identifier: ecf:strategyDirection.conceive
+metadata:
+  established_by: CR-BP-54
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-54
+    date: '2026-09-13'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-54
+
+      StrategyAndDirection Conceive + Design + Build tranche (pattern
+
+      proven by CR-BP-42 through CR-BP-53). Classified per CR-BP-32
+
+      section 5 (fails standalone executability and resource dedication);
+
+      decomposition boundary marker per CR-BP-32 section 12 pending Task
+
+      records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-commit-strategic-horizons-intake, dea:task-commit-strategic-horizons-verify, dea:task-commit-strategic-horizons-transform, dea:task-commit-strategic-horizons-confirm, dea:task-commit-strategic-horizons-record).'
+composes:
+- source_id: processes:activity-sd-conceive-zz7qrg
+  target_id: processes:task-sd-conceive-intake-atnjau
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-conceive-zz7qrg
+  target_id: processes:task-sd-conceive-verify-bta6jv
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-conceive-zz7qrg
+  target_id: processes:task-sd-conceive-transform-btzp95
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-conceive-zz7qrg
+  target_id: processes:task-sd-conceive-confirm-dzb536
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-conceive-zz7qrg
+  target_id: processes:task-sd-conceive-record-4c6vym
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

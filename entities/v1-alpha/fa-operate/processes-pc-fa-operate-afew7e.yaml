@@ -1,0 +1,94 @@
+id: processes:pc-fa-operate-afew7e
+domain: FinanceAndAccounting
+lifecycle_stage: Operate
+name: Accounting, Reporting, and Treasury Operation
+definition: 'The bounded enterprise context for **operating** the general ledger, accounts payable and receivable, treasury, tax compliance, financial close, financial planning and analysis, and financial reporting and disclosure of the enterprise in the **Finance & Accounting** domain. This context addresses the steady-state work of monetary recording and reporting. v2.4.0: procure-to-pay and order-to-cash operational execution moved to enablement-operations x operate; the monetary recording of those cycles remains here (domain-grounding.md §3.7).
+
+  '
+scope:
+  includes:
+  - General ledger operation
+  - Accounts payable and receivable operation
+  - Treasury operation
+  - Tax compliance operation
+  - Financial close operation
+  - Financial planning and analysis operation
+  - Financial reporting and disclosure operation
+  excludes:
+  - Finance capability build (Build stage; adjacent context)
+  - Procurement transaction execution (enablement-operations x operate; adjacent domain)
+  - Agent compensation operation (agency-organization x operate; adjacent domain)
+outcomes:
+- General ledger is operated to period close.
+- Accounts payable and receivable are operated.
+- Treasury is operated within policy.
+- Tax compliance is operated.
+- Financial close is operated on schedule.
+- Financial reporting and disclosure are produced.
+adjacent_contexts:
+- processes:pc-fa-conceive-phabh2
+- processes:pc-fa-design-4j8evh
+- processes:pc-fa-build-pztsp9
+- processes:pc-fa-improve-haqf4w
+processes:
+- processes:process-fa-operate-g9zpnq
+- processes:process-fa-operate-wkqaqp
+- processes:process-fa-operate-sdppmp
+- processes:process-fa-operate-zpmxzp
+- processes:process-fa-operate-2pmqb2
+- processes:process-fa-operate-4xn4d6
+- processes:process-fa-operate-8vqvkk
+- processes:process-fa-operate-ycba3k
+cell_charter:
+  enterprise_concern: 'Finance & Accounting: the steady-state monetary recording and reporting of the enterprise.'
+  lifecycle_concern: 'Operate: operating the general ledger, payables, receivables, treasury, tax compliance, financial close, and reporting.'
+  combined_semantic_meaning: 'The steady-state work of operating the general ledger, accounts payable and receivable, treasury, tax compliance, financial close, financial planning and analysis, and financial reporting and disclosure.
+
+    '
+  expected_outcomes:
+  - General ledger is operated to period close.
+  - Accounts payable and receivable are operated.
+  - Treasury is operated within policy.
+  - Tax compliance is operated.
+  - Financial close is operated on schedule.
+  - Financial reporting and disclosure are produced.
+  inclusions:
+  - General ledger operation
+  - Accounts payable and receivable operation
+  - Treasury operation
+  - Tax compliance operation
+  - Financial close operation
+  - Financial planning and analysis operation
+  - Financial reporting and disclosure operation
+  exclusions:
+  - Finance capability build (Build stage; adjacent context)
+  - Procurement transaction execution (enablement-operations x operate; adjacent domain)
+  - Agent compensation operation (agency-organization x operate; adjacent domain)
+  adjacent_boundaries:
+  - 'processes:pc-fa-conceive-phabh2 (adjacent context): monetary flow between Operate and the adjacent cell.'
+  - 'processes:pc-fa-design-4j8evh (adjacent context): monetary flow between Operate and the adjacent cell.'
+  - 'processes:pc-fa-build-pztsp9 (adjacent context): monetary flow between Operate and the adjacent cell.'
+  - 'processes:pc-fa-improve-haqf4w (adjacent context): monetary flow between Operate and the adjacent cell.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-21e
+established_at: '2026-09-08'
+change_history:
+- cr: CR-BP-21e
+  date: '2026-09-08'
+  change: 'Initial Process Context record; promoted from the CR-BP-19
+
+    register v2 (ratified against ECF v2.4.0) as part of the
+
+    FinanceAndAccounting landing tranche. Substrate-neutral
+
+    per ADR-ECF-002 §5 / CR-ECF-007.
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21e-finance-accounting-landing.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

@@ -1,0 +1,63 @@
+id: processes:task-pr-build-confirm-qrrn3w
+type: Task
+name: Build Demand Program Assets Confirmation
+definition: The bounded unit of work within `processes:activity-pr-build-da7r6t` (Build Demand Program Assets) that reconcile the build-ready asset inventory against the channel-integration contract and the consent-capture contract, issue the build-completion confirmation to the channel and demand-program custodians, and log the confirmation.
+belongs_to_activity: processes:activity-pr-build-da7r6t
+trigger: Bounded-work artefact produced for Build Demand Program Assets; confirm gate may reconcile against the governing contract and issue the completion confirmation to the relationship custodian.
+outcome: Completion confirmation issued for Build Demand Program Assets and acknowledged by the relationship custodian and any governing-party notify-list; confirmation custodian passes custody to the records custodian.
+responsibility: confirmation custodian
+boundary:
+  inclusions:
+  - Reconciliation of the Build Demand Program Assets artefact against the governing contract and any notify-list requirements.
+  - Issuance of the Build Demand Program Assets completion confirmation and acknowledgement logging.
+  exclusions:
+  - Long-term retention of the closure case file (phase 5).
+  - Re-execution of prior phases on confirmation rejection.
+evidence:
+- source: DAMA DMBOK2 §10 (Data Quality)
+  claim: data-quality governance framework informing the build-phase verification step's PII handling and the transform-phase data-quality rules. Bounded-work evidence for the confirm-phase custodian of `processes:activity-pr-build-da7r6t` (CR-BP-L4-02 enrichment).
+  strength: E2
+- source: MRC Attribution Standards 2023
+  claim: media-rating-council attribution standard informing the build-phase transform step's attribution-model calibration. Bounded-work evidence for the confirm-phase custodian of `processes:activity-pr-build-da7r6t` (CR-BP-L4-02 enrichment).
+  strength: E2
+- source: processes:activity-pr-build-da7r6t
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-02 cell-specific bounded-work prose for this PartyAndRelationship L4 Task.
+  strength: E3
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: PartyAndRelationship
+    stage: Build
+    identifier: ecf:partyRelationship.build
+metadata:
+  established_by: CR-BP-102
+  established_at: '2026-09-19'
+  change_history:
+  - cr: CR-BP-45
+    date: '2026-09-13'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-45
+
+      PartyAndRelationship Conceive + Design + Build tranche (completes
+
+      the PR domain''s L3 coverage; pattern proven by CR-BP-42, CR-BP-43,
+
+      CR-BP-44). Classified per CR-BP-32 section 5 (fails standalone
+
+      executability and resource dedication); decomposition boundary
+
+      marker per CR-BP-32 section 12 pending Task records (dea:Task
+
+      lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

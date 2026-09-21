@@ -1,0 +1,73 @@
+id: processes:activity-sd-improve-mu6upn
+type: Activity
+name: Commit Effectiveness Findings
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Review Strategy Effectiveness that commits the effectiveness findings and routes them into the adaptation cycle.
+belongs_to_business_process: processes:process-sd-improve-duwd64
+cohesion_rationale: Constituent work shares a single commitment concern (ratification and routing of the findings), one input class (the formulated effectiveness findings), and one output (the committed effectiveness findings). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: StrategyAndDirection
+    stage: Improve
+    identifier: ecf:strategyDirection.improve
+metadata:
+  established_by: CR-BP-55
+  established_at: '2026-09-14'
+  change_history:
+  - cr: CR-BP-55
+    date: '2026-09-14'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-55
+
+      StrategyAndDirection Improve + Operate tranche (pattern proven by CR-BP-42 through CR-BP-54).
+
+      Classified per CR-BP-32 section 5 (fails standalone
+
+      executability and resource dedication); decomposition
+
+      boundary marker per CR-BP-32 section 12 pending Task
+
+      records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-commit-effectiveness-findings-intake, dea:task-commit-effectiveness-findings-verify, dea:task-commit-effectiveness-findings-transform, dea:task-commit-effectiveness-findings-confirm, dea:task-commit-effectiveness-findings-record).'
+composes:
+- source_id: processes:activity-sd-improve-mu6upn
+  target_id: processes:task-sd-improve-intake-8zhazq
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-improve-mu6upn
+  target_id: processes:task-sd-improve-verify-rjdunp
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-improve-mu6upn
+  target_id: processes:task-sd-improve-transform-32zwr7
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-improve-mu6upn
+  target_id: processes:task-sd-improve-confirm-r2xus6
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-improve-mu6upn
+  target_id: processes:task-sd-improve-record-ejaamk
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

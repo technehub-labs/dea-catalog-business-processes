@@ -1,0 +1,73 @@
+id: processes:activity-sd-conceive-e7z2am
+type: Activity
+name: Articulate Strategic Trajectory
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Develop Corporate Strategy that articulates the strategic trajectory the synthesized direction demands.
+belongs_to_business_process: processes:process-sd-conceive-ahwvp5
+cohesion_rationale: Constituent work shares a single articulation concern (direction to bounded trajectory), one reference class (the synthesized direction), and one output (the trajectory articulation). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: StrategyAndDirection
+    stage: Conceive
+    identifier: ecf:strategyDirection.conceive
+metadata:
+  established_by: CR-BP-54
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-54
+    date: '2026-09-13'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-54
+
+      StrategyAndDirection Conceive + Design + Build tranche (pattern
+
+      proven by CR-BP-42 through CR-BP-53). Classified per CR-BP-32
+
+      section 5 (fails standalone executability and resource dedication);
+
+      decomposition boundary marker per CR-BP-32 section 12 pending Task
+
+      records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-articulate-strategic-trajectory-intake, dea:task-articulate-strategic-trajectory-verify, dea:task-articulate-strategic-trajectory-transform, dea:task-articulate-strategic-trajectory-confirm, dea:task-articulate-strategic-trajectory-record).'
+composes:
+- source_id: processes:activity-sd-conceive-e7z2am
+  target_id: processes:task-sd-conceive-intake-yjbs5w
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-conceive-e7z2am
+  target_id: processes:task-sd-conceive-verify-yuf98k
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-conceive-e7z2am
+  target_id: processes:task-sd-conceive-transform-pm9sh8
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-conceive-e7z2am
+  target_id: processes:task-sd-conceive-confirm-h2jct4
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-sd-conceive-e7z2am
+  target_id: processes:task-sd-conceive-record-nsc2d6
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

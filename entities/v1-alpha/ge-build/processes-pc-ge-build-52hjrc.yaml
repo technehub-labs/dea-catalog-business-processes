@@ -1,0 +1,72 @@
+id: processes:pc-ge-build-52hjrc
+domain: GovernanceAndExistence
+lifecycle_stage: Build
+name: Governance Body Establishment
+definition: 'The bounded enterprise context for **building** the governance bodies, charters, and policy artefacts in the **governance and existence** domain. This context addresses the work of standing up the operational artefacts that constitute governance: boards, committees, charters, codified policies, and standards.
+
+  '
+scope:
+  includes:
+  - Board and committee establishment
+  - Charter codification
+  - Policy artefact construction
+  - Standard and procedure documentation
+  excludes:
+  - Strategy framing (Conceive stage)
+  - Governance system design (Design stage)
+  - Governance operation (Operate stage)
+outcomes:
+- Governance bodies are established and operational.
+- Charters are codified.
+- Policy artefacts are operational.
+adjacent_contexts:
+- processes:pc-ge-conceive-b5xwpd
+- processes:pc-ge-design-3f2gjr
+- processes:pc-ge-operate-hb2dac
+- processes:pc-ge-improve-c78ppp
+processes:
+- processes:process-ge-build-3p38us
+- processes:process-ge-build-mctdgc
+- processes:process-ge-build-rx7kt5
+cell_charter:
+  enterprise_concern: 'Governance and existence: the enterprise''s mandate, policy posture, and charter direction.'
+  lifecycle_concern: 'Build: standing up the governance bodies, charters, and policy artefacts.'
+  combined_semantic_meaning: 'Standing up the operational artefacts that constitute governance: boards, committees, charters, codified policies, and standards.
+
+    '
+  expected_outcomes:
+  - Governance bodies are established and operational.
+  - Charters are codified.
+  - Policy artefacts are operational.
+  inclusions:
+  - Board and committee establishment
+  - Charter codification
+  - Policy artefact construction
+  exclusions:
+  - Strategy framing (Conceive stage)
+  - Governance system design (Design stage)
+  - Governance operation (Operate stage)
+  adjacent_boundaries:
+  - 'processes:pc-ge-conceive-b5xwpd (Conceive): strategy is the build''s input.'
+  - 'processes:pc-ge-design-3f2gjr (Design): governance system designs guide the build.'
+  - 'processes:pc-ge-operate-hb2dac (Operate): built bodies and charters operate.'
+  - 'processes:pc-ge-improve-c78ppp (Improve): built bodies and charters are reviewed.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-13a
+established_at: '2026-09-05'
+change_history:
+- cr: CR-BP-13a
+  date: '2026-09-05'
+  change: 'Initial Process Context record; promoted from the CR-BP-11
+
+    49-coordinate register (ratified by CR-BP-13) as part of the
+
+    CustomerAndDomain admission tranche (CR-BP-13a).
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-13a-customer-and-demand-admission.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

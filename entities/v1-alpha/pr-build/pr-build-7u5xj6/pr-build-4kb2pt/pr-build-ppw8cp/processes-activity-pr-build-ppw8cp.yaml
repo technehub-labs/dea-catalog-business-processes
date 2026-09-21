@@ -1,0 +1,75 @@
+id: processes:activity-pr-build-ppw8cp
+type: Activity
+name: Verify Initial Demand Production
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Build Demand Generation Programs that verifies the engine produces initial demand consistent with the committed demand model.
+belongs_to_business_process: processes:process-pr-build-4kb2pt
+cohesion_rationale: Constituent work shares a single verification concern (produced demand versus model expectation), one reference class (the demand model), and one output (the initial-demand determination). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: PartyAndRelationship
+    stage: Build
+    identifier: ecf:partyRelationship.build
+metadata:
+  established_by: CR-BP-45
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-45
+    date: '2026-09-13'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-45
+
+      PartyAndRelationship Conceive + Design + Build tranche (completes
+
+      the PR domain''s L3 coverage; pattern proven by CR-BP-42, CR-BP-43,
+
+      CR-BP-44). Classified per CR-BP-32 section 5 (fails standalone
+
+      executability and resource dedication); decomposition boundary
+
+      marker per CR-BP-32 section 12 pending Task records (dea:Task
+
+      lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-verify-initial-demand-production-intake, dea:task-verify-initial-demand-production-verify, dea:task-verify-initial-demand-production-transform, dea:task-verify-initial-demand-production-confirm, dea:task-verify-initial-demand-production-record).'
+composes:
+- source_id: processes:activity-pr-build-ppw8cp
+  target_id: processes:task-pr-build-intake-hgtu89
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-pr-build-ppw8cp
+  target_id: processes:task-pr-build-verify-4qcu4x
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-pr-build-ppw8cp
+  target_id: processes:task-pr-build-transform-vzxbj3
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-pr-build-ppw8cp
+  target_id: processes:task-pr-build-confirm-2g4qqf
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-pr-build-ppw8cp
+  target_id: processes:task-pr-build-record-y4jz6q
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

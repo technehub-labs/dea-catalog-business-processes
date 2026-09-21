@@ -1,0 +1,73 @@
+id: processes:activity-fa-improve-4mju3t
+type: Activity
+name: Commit Model Evolutions
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Evolve Treasury and Funding Model that commits the designed model evolutions and maintains monitoring for future posture shifts.
+belongs_to_business_process: processes:process-fa-improve-2kemkq
+cohesion_rationale: Constituent work shares a single commitment concern (designed evolution to committed change plus continued watch), one input class (evolution designs), and one output (committed evolutions with monitoring). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: FinanceAndAccounting
+    stage: Improve
+    identifier: ecf:financeAccounting.improve
+metadata:
+  established_by: CR-BP-53
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-53
+    date: '2026-09-13'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-53
+
+      FinanceAndAccounting Improve + Operate tranche (completes the FA
+
+      domain''s L3 coverage; pattern proven by CR-BP-42 through CR-BP-52).
+
+      Classified per CR-BP-32 section 5 (fails standalone executability
+
+      and resource dedication); decomposition boundary marker per CR-BP-32
+
+      section 12 pending Task records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-commit-model-evolutions-intake, dea:task-commit-model-evolutions-verify, dea:task-commit-model-evolutions-transform, dea:task-commit-model-evolutions-confirm, dea:task-commit-model-evolutions-record).'
+composes:
+- source_id: processes:activity-fa-improve-4mju3t
+  target_id: processes:task-fa-improve-intake-w9qeqq
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-fa-improve-4mju3t
+  target_id: processes:task-fa-improve-verify-t9hamz
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-fa-improve-4mju3t
+  target_id: processes:task-fa-improve-transform-b3y5pa
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-fa-improve-4mju3t
+  target_id: processes:task-fa-improve-confirm-w3e5n8
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-fa-improve-4mju3t
+  target_id: processes:task-fa-improve-record-e7gfuu
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

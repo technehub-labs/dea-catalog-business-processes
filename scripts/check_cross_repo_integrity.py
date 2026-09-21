@@ -113,6 +113,8 @@ COMPANION_CRS = {
     "CR-MM-PROC-01": {"repo": "dea-metamodel", "pr_ref": "PR #163 MERGED, commit 1665209"},
     "CR-AR-FMWK-01": {"repo": "dea-architecture-framework",
                      "pr_ref": "PR #10 MERGED, commit 76463b2; tag v0.6.0"},
+    "CR-BP-L4-01": {"repo": "this catalog",
+                    "pr_ref": "alias for the CR-BP-102 L4 decomposition pipeline (PR #146 MERGED)"},
 }
 
 

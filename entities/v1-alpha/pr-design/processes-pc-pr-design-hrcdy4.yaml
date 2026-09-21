@@ -1,0 +1,72 @@
+id: processes:pc-pr-design-hrcdy4
+domain: PartyAndRelationship
+lifecycle_stage: Design
+name: Customer Experience Design
+definition: 'The bounded enterprise context for **designing** customer experience, journey, and demand models in the **customer and demand** domain. This context addresses the work of translating customer strategy into a designed experience, an articulated customer journey, and a model of how demand is shaped by the enterprise''s offerings.
+
+  '
+scope:
+  includes:
+  - Customer experience design
+  - Customer journey design
+  - Demand model design
+  - CX pattern selection
+  excludes:
+  - Customer strategy framing (Conceive stage)
+  - Channel implementation (Build stage)
+  - Live customer operation (Operate stage)
+outcomes:
+- Customer experience is designed and testable.
+- Customer journey is articulated end-to-end.
+- Demand model grounds Build and Operate contexts.
+adjacent_contexts:
+- processes:pc-pr-conceive-6xztsq
+- processes:pc-pr-build-a46hp7
+- processes:pc-pr-operate-pwue5a
+- processes:pc-pr-activate-mwq7bj
+processes:
+- processes:process-pr-design-pxydu3
+- processes:process-pr-design-cv6hjh
+- processes:process-pr-design-j6fakx
+cell_charter:
+  enterprise_concern: 'Customer and demand: the enterprise''s exchange with its customer base.'
+  lifecycle_concern: 'Design: articulating how customer value will be realised.'
+  combined_semantic_meaning: 'Translating customer strategy into a designed experience, an articulated journey, and a demand model.
+
+    '
+  expected_outcomes:
+  - Customer experience is designed and testable.
+  - Customer journey is articulated end-to-end.
+  - Demand model grounds Build and Operate contexts.
+  inclusions:
+  - Customer experience design
+  - Customer journey design
+  - Demand model design
+  exclusions:
+  - Customer strategy framing (Conceive stage)
+  - Channel implementation (Build stage)
+  - Live customer operation (Operate stage)
+  adjacent_boundaries:
+  - 'processes:pc-pr-conceive-6xztsq (Conceive): the prior lifecycle stage; strategy flows into design.'
+  - 'processes:pc-pr-build-a46hp7 (Build): designs flow into channel and acquisition build.'
+  - 'processes:pc-pr-operate-pwue5a (Operate): designed experience is realised in operation.'
+  - 'processes:pc-pr-activate-mwq7bj (Activate): designs activate at first-customer onboarding.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-13a
+established_at: '2026-09-05'
+change_history:
+- cr: CR-BP-13a
+  date: '2026-09-05'
+  change: 'Initial Process Context record; promoted from the CR-BP-11
+
+    49-coordinate register (ratified by CR-BP-13) as part of the
+
+    CustomerAndDomain admission tranche (CR-BP-13a).
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-13a-customer-and-demand-admission.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

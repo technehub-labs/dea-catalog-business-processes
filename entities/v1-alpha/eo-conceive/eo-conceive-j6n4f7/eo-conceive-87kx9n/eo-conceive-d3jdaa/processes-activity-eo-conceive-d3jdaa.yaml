@@ -1,0 +1,73 @@
+id: processes:activity-eo-conceive-d3jdaa
+type: Activity
+name: Frame Footprint Principles
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Frame Physical Asset Approach that frames the principles governing facility and asset footprint decisions.
+belongs_to_business_process: processes:process-eo-conceive-87kx9n
+cohesion_rationale: Constituent work shares a single principle concern (what governs footprint choices), one input class (operations strategy, delivery model envelope), and one output (the footprint principle set). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: EnablementAndOperations
+    stage: Conceive
+    identifier: ecf:enablementAndOperations.conceive
+metadata:
+  established_by: CR-BP-46
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-46
+    date: '2026-09-13'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-46
+
+      EnablementAndOperations Conceive + Design tranche (pattern proven
+
+      by CR-BP-42, CR-BP-43, CR-BP-44, CR-BP-45). Classified per CR-BP-32
+
+      section 5 (fails standalone executability and resource dedication);
+
+      decomposition boundary marker per CR-BP-32 section 12 pending Task
+
+      records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-frame-footprint-principles-intake, dea:task-frame-footprint-principles-verify, dea:task-frame-footprint-principles-transform, dea:task-frame-footprint-principles-confirm, dea:task-frame-footprint-principles-record).'
+composes:
+- source_id: processes:activity-eo-conceive-d3jdaa
+  target_id: processes:task-eo-conceive-intake-nhgkbf
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-conceive-d3jdaa
+  target_id: processes:task-eo-conceive-verify-c88rgh
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-conceive-d3jdaa
+  target_id: processes:task-eo-conceive-transform-eh6k4u
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-conceive-d3jdaa
+  target_id: processes:task-eo-conceive-confirm-hnnhmj
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-conceive-d3jdaa
+  target_id: processes:task-eo-conceive-record-jt3c9x
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

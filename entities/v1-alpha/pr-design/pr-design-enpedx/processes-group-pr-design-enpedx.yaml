@@ -1,0 +1,124 @@
+id: processes:group-pr-design-enpedx
+type: ProcessGroup
+version: 1.0.0
+name: Customer Experience Design
+definition: 'The bounded Process Group that organizes the Business Process responsibilities of designing customer experience, journey, and demand models in the PartyAndRelationship x Design context. This group captures the work of translating customer strategy into a designed experience, an articulated customer journey, and a model of how demand is shaped by the enterprise''s offerings. The group is the canonical Process Group for the customer-experience value stream.
+
+  '
+process_context: processes:pc-pr-design-hrcdy4
+scope:
+  includes:
+  - Customer experience design
+  - Customer journey design
+  - Demand model design
+  - CX pattern selection
+  excludes:
+  - Customer strategy framing (Conceive stage)
+  - Channel implementation (Build stage)
+  - Live customer operation (Operate stage)
+outcomes:
+- Customer experience is designed and testable.
+- Customer journey is articulated end-to-end.
+- Demand model grounds Build and Operate contexts.
+composes:
+- source_id: processes:group-pr-design-enpedx
+  target_id: processes:process-pr-design-pxydu3
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process is a principal responsibility of the
+
+    Customer Experience Design value stream within PartyAndRelationship.
+
+    This composition is canonical per CR-BP-13a.
+
+    '
+  evidence: docs/examples/dea-group-customer-experience-design.md
+  provenance:
+    type: architecture-review
+    reference: CR-BP-13a
+    asserted_by: dea-team
+    asserted_at: '2026-09-05'
+- source_id: processes:group-pr-design-enpedx
+  target_id: processes:process-pr-design-cv6hjh
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process is a principal responsibility of the
+
+    Customer Experience Design value stream within PartyAndRelationship.
+
+    This composition is canonical per CR-BP-13a.
+
+    '
+  evidence: docs/examples/dea-group-customer-experience-design.md
+  provenance:
+    type: architecture-review
+    reference: CR-BP-13a
+    asserted_by: dea-team
+    asserted_at: '2026-09-05'
+- source_id: processes:group-pr-design-enpedx
+  target_id: processes:process-pr-design-j6fakx
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process is a principal responsibility of the
+
+    Customer Experience Design value stream within PartyAndRelationship.
+
+    This composition is canonical per CR-BP-13a.
+
+    '
+  evidence: docs/examples/dea-group-customer-experience-design.md
+  provenance:
+    type: architecture-review
+    reference: CR-BP-13a
+    asserted_by: dea-team
+    asserted_at: '2026-09-05'
+process_group_kind: end-to-end
+status: accepted
+lifecycle_status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: PartyAndRelationship
+    stage: Design
+    identifier: ecf:partyRelationship.design
+evidence:
+- source: CR-BP-13a (49-coordinate discovery register, ratified)
+  claim: 'This Process Group''s coordinate was ratified as accepted
+
+    in CR-BP-13; the register records the L1 candidates and
+
+    L2 process names that compose this group.
+
+    '
+  strength: E4
+  reference: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+metadata:
+  established_by: CR-BP-13a
+  established_at: '2026-09-05'
+  cross_context_overlap: []
+  change_history:
+  - cr: CR-BP-13a
+    date: '2026-09-05'
+    change: 'Initial Process Group record; promoted from the CR-BP-11
+
+      49-coordinate register (ratified by CR-BP-13) as part of
+
+      the CR-BP-13a admission tranche.
+
+      '
+links:
+- rel: change-request
+  href: change-requests/cr-bp-13a-customer-and-demand-admission.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

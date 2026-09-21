@@ -1,0 +1,104 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-45
+status: candidate-not-canonical; subject to review
+parent_business_process: processes:process-pr-conceive-emfgju
+coordinate:
+  domain: PartyAndRelationship
+  stage: Conceive
+  process_context: processes:pc-pr-conceive-6xztsq
+  process_group: processes:group-pr-conceive-rv32m4
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42,
+  scaled by CR-BP-43 and CR-BP-44)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/processes:process-pr-conceive-emfgju
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: processes:activity-pr-conceive-3tgws4
+  name: "Frame Segment Thesis"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Segment bounding; segment attractiveness rationale; segment thesis articulation"
+  out_of_scope:
+  - "Market scanning itself (processes:process-pr-conceive-tvst8u)"
+  - "Value exchange articulation (processes:activity-pr-conceive-6habrm)"
+  evidence:
+  - "Parent BP outcome (bounded segment thesis committed)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-45
+- id: processes:activity-pr-conceive-6habrm
+  name: "Articulate Value Exchange"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Value proposition framing for the segment; exchange economics articulation; relationship obligations"
+  out_of_scope:
+  - "Proposition design (ProductAndValue concern: processes:pc-pv-design-8dhwpn)"
+  - "Demand thesis formulation (processes:activity-pr-conceive-8frfby)"
+  evidence:
+  - "Parent BP outcome (value exchange committed)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-45
+- id: processes:activity-pr-conceive-8frfby
+  name: "Formulate Demand Thesis"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Demand formation logic; sustainment assumptions; thesis testability framing"
+  out_of_scope:
+  - "Hypothesis test design (processes:process-pr-conceive-tvst8u)"
+  - "Demand model articulation (processes:process-pr-design-cv6hjh)"
+  evidence:
+  - "Parent BP outcome (demand thesis committed)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-45
+- id: processes:activity-pr-conceive-kbwtdj
+  name: "Commit Customer Strategy"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Strategy document consolidation; internal consistency review; commitment and handoff to design"
+  out_of_scope:
+  - "Strategy governance approval itself (GovernanceAndExistence concern)"
+  - "Experience design work (processes:process-pr-design-pxydu3)"
+  evidence:
+  - "Parent BP outcome (customer strategy document committed)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-45
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."

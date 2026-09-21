@@ -111,7 +111,7 @@ def _load_bp_index(catalog_root: Path) -> tuple[set[str], set[str]]:
     """Canonical BP record names and ids (DISC-007 checks)."""
     names: set[str] = set()
     ids: set[str] = set()
-    for path in sorted(catalog_root.glob("entities/v1-alpha/*/dea:process-*.yaml")):
+    for path in sorted(catalog_root.glob("entities/v1-alpha/**/processes-process-*.yaml")):
         try:
             data = yaml.safe_load(path.read_text())
         except (OSError, yaml.YAMLError):
@@ -380,7 +380,7 @@ def _self_test() -> int:
         "required": ["discovery"],
         "properties": {"discovery": {"type": "object", "required": ["id"]}},
     }
-    bp_index = ({"operate quality control"}, {"dea:process-operate-quality-control"})
+    bp_index = ({"operate quality control"}, {"processes:process-operate-quality-control"})
     rules = dict((rid, fn) for rid, fn, _ in _rule_list(schema, bp_index))
 
     cases: list[tuple[str, str, bool]] = []  # (rule, case-label, expect_finding)
@@ -399,29 +399,29 @@ def _self_test() -> int:
     admit_no_ref = _fixture(disposition="ADMIT-CANONICAL")
     spec_no_ref = _fixture(disposition="ADMIT-SPECIALIZATION")
     admit_no_evidence = _fixture(disposition="ADMIT-CANONICAL")
-    admit_no_evidence["discovery"]["candidates"][0]["disposition"]["canonical_process_ref"] = "dea:process-x"
+    admit_no_evidence["discovery"]["candidates"][0]["disposition"]["canonical_process_ref"] = "processes:process-x"
     admit_no_evidence["discovery"]["candidates"][0]["evidence"]["sources"] = []
     admit_dup = _fixture(name="Operate Quality Control", disposition="ADMIT-CANONICAL")
-    admit_dup["discovery"]["candidates"][0]["disposition"]["canonical_process_ref"] = "dea:process-x"
+    admit_dup["discovery"]["candidates"][0]["disposition"]["canonical_process_ref"] = "processes:process-x"
     bad_total = _fixture()
     bad_total["discovery"]["candidates"][0]["scoring"]["total"] = 11
     missing_dim = _fixture()
     del missing_dim["discovery"]["candidates"][0]["scoring"]["boundary_clarity"]
     admitted_ok = _fixture(disposition="ADMIT-CANONICAL")
-    admitted_ok["discovery"]["candidates"][0]["disposition"]["canonical_process_ref"] = "dea:process-x"
+    admitted_ok["discovery"]["candidates"][0]["disposition"]["canonical_process_ref"] = "processes:process-x"
     admitted_ok["discovery"]["candidates"][0]["admission"] = {
         "status": "admitted",
         "admitted_by": "CR-BP-99",
-        "admitted_as": "dea:process-operate-quality-control",
+        "admitted_as": "processes:process-operate-quality-control",
         "admitted_at": "2026-09-14",
     }
     admitted_ok["discovery"]["candidates"][0]["name"] = "Operate Quality Control"
     admitted_dangling = _fixture(disposition="ADMIT-CANONICAL")
-    admitted_dangling["discovery"]["candidates"][0]["disposition"]["canonical_process_ref"] = "dea:process-x"
+    admitted_dangling["discovery"]["candidates"][0]["disposition"]["canonical_process_ref"] = "processes:process-x"
     admitted_dangling["discovery"]["candidates"][0]["admission"] = {
         "status": "admitted",
         "admitted_by": "CR-BP-99",
-        "admitted_as": "dea:process-does-not-exist",
+        "admitted_as": "processes:process-does-not-exist",
         "admitted_at": "2026-09-14",
     }
 

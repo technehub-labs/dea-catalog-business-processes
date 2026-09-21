@@ -1,0 +1,61 @@
+id: processes:task-ge-conceive-transform-rtrubb
+type: Task
+name: Commit Policy Initiation Processing
+definition: 'The bounded unit of work within `processes:activity-ge-conceive-5j83mc` (Commit Policy Initiation) that execute the conception: articulate the risk appetite, bound the policy scope, frame the governance posture for risk, propose the authority and decision rights, define the tolerance bands, and produce the conception-ready framework package conforming to the risk-and-policy conception schema.'
+belongs_to_activity: processes:activity-ge-conceive-5j83mc
+trigger: Verification certificate issued for Commit Policy Initiation; transform gate may execute the bounded work and emit the conformant artefact under the Conceive schema.
+outcome: Bounded-work artefact produced for Commit Policy Initiation conforming to the Conceive schema; processing custodian passes custody to the confirmation custodian.
+responsibility: processing custodian
+boundary:
+  inclusions:
+  - Execution of the Commit Policy Initiation bounded work producing the conformant artefact.
+  - Application of the Commit Policy Initiation schema and any derived classifications or computations.
+  exclusions:
+  - Long-term retention of the case file (phase 5).
+  - Notification of governing parties outside the notify-list (phase 4).
+evidence:
+- source: ISO 31000:2018 (Risk Management Guidelines)
+  claim: international risk-management standard binding the conceive-phase risk-framework methodology verification and the tolerance-band definition. Bounded-work evidence for the transform-phase custodian of `processes:activity-ge-conceive-5j83mc` (CR-BP-L4-03 enrichment).
+  strength: E1
+- source: COSO ERM 2017
+  claim: enterprise risk-management framework grounding the conceive-phase risk-appetite articulation and governance-posture framing. Bounded-work evidence for the transform-phase custodian of `processes:activity-ge-conceive-5j83mc` (CR-BP-L4-03 enrichment).
+  strength: E2
+- source: processes:activity-ge-conceive-5j83mc
+  claim: Parent Activity cohesion rationale (CR-BP-32 §6) and the CR-BP-L4-03 cell-specific bounded-work prose for this GovernanceAndExistence L4 Task.
+  strength: E3
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: GovernanceAndExistence
+    stage: Conceive
+    identifier: ecf:governanceExistence.conceive
+metadata:
+  established_by: CR-BP-102
+  established_at: '2026-09-19'
+  change_history:
+  - cr: CR-BP-48
+    date: '2026-09-13'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-48
+
+      GovernanceAndExistence Conceive + Design + Build tranche (pattern
+
+      proven by CR-BP-42 through CR-BP-47). Classified per CR-BP-32
+
+      section 5 (fails standalone executability and resource dedication);
+
+      decomposition boundary marker per CR-BP-32 section 12 pending Task
+
+      records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

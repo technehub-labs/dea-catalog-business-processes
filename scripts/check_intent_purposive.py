@@ -108,12 +108,7 @@ def _load_bp_records(catalog_root: Path) -> list[dict]:
     records: list[dict] = []
     if not base.exists():
         return records
-    for entry in sorted(base.iterdir()):
-        if not entry.is_dir() or not entry.name.startswith("dea:process-"):
-            continue
-        yaml_path = entry / f"{entry.name}.yaml"
-        if not yaml_path.exists():
-            continue
+    for yaml_path in sorted(base.rglob("processes-process-*.yaml")):
         try:
             data = yaml.safe_load(yaml_path.read_text())
         except yaml.YAMLError as exc:
@@ -268,7 +263,7 @@ def _self_test() -> int:
 
     def _record(intent=None):
         return {
-            "id": "dea:process-self-test",
+            "id": "processes:process-self-test",
             "name": "Self Test",
             "type": "Process",
             "version": "1.0.0",
@@ -319,7 +314,7 @@ def _self_test() -> int:
     # Multi-record aggregation.
     findings = evaluate([_record("operate"), _record(""), _record("operations")])
     rec_ids = {f["record_id"] for f in findings}
-    assert rec_ids == {"dea:process-self-test"}
+    assert rec_ids == {"processes:process-self-test"}
     rule_set = {f["rule"] for f in findings}
     assert rule_set == {"PSP-001", "PSP-002", "PSP-003"}
 

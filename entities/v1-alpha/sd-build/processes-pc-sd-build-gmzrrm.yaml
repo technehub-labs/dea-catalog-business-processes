@@ -1,0 +1,85 @@
+id: processes:pc-sd-build-gmzrrm
+domain: StrategyAndDirection
+lifecycle_stage: Build
+name: Strategic Plan Build
+definition: 'The bounded enterprise context for **building** the strategic plan, roadmap, and initiative portfolio of the enterprise in the **Strategy & Direction** domain. This context addresses the constructive work of translating designed strategic choices into a plan, building a roadmap, translating choices into initiatives, and setting resource allocation priorities. v2.4.0: the plan artefact construction; capability build remains in the receiving domain.
+
+  '
+scope:
+  includes:
+  - Strategic plan build
+  - Strategic roadmap build
+  - Strategic choice-to-initiative translation
+  - Resource allocation priority setting
+  excludes:
+  - Strategic option design (Design stage; adjacent context)
+  - Budget construction (finance-accounting x build)
+  - Capability build (owning domains)
+outcomes:
+- Strategic plan is built and versioned.
+- Strategic roadmap is built and committed.
+- Strategic choices are translated into an initiative portfolio.
+- Resource allocation priorities are set within the authorised frame.
+adjacent_contexts:
+- processes:pc-sd-design-g3es76
+- processes:pc-sd-operate-5cs5ee
+- processes:pc-sd-improve-ft9k5f
+- processes:pc-sd-conceive-ucb3gx
+processes:
+- processes:process-sd-build-q4nf9g
+- processes:process-sd-build-7n4prh
+- processes:process-sd-build-9admqy
+- processes:process-sd-build-2pkz5n
+cell_charter:
+  enterprise_concern: 'Strategy & Direction: the construction of the strategic plan and roadmap.'
+  lifecycle_concern: 'Build: translating strategic choices into a plan, roadmap, and initiative portfolio.'
+  combined_semantic_meaning: 'The constructive work of translating designed strategic choices into a versioned plan, roadmap, and initiative portfolio.
+
+    '
+  expected_outcomes:
+  - Strategic plan is built and versioned.
+  - Strategic roadmap is built and committed.
+  - Strategic choices are translated into an initiative portfolio.
+  - Resource allocation priorities are set within the authorised frame.
+  inclusions:
+  - Strategic plan build
+  - Strategic roadmap build
+  - Strategic choice-to-initiative translation
+  - Resource allocation priority setting
+  exclusions:
+  - Strategic option design (Design stage; adjacent context)
+  - Budget construction (finance-accounting x build)
+  - Capability build (owning domains)
+  adjacent_boundaries:
+  - 'processes:pc-sd-design-g3es76 (adjacent context): strategy flows between Build and the adjacent cell.'
+  - 'processes:pc-sd-operate-5cs5ee (adjacent context): strategy flows between Build and the adjacent cell.'
+  - 'processes:pc-sd-improve-ft9k5f (adjacent context): strategy flows between Build and the adjacent cell.'
+  - 'processes:pc-sd-conceive-ucb3gx (adjacent context): strategy flows between Build and the adjacent cell.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-21a
+established_at: '2026-09-07'
+change_history:
+- cr: CR-BP-21a.1
+  date: '2026-09-08'
+  change: 'Processes list extended with the remaining register v2 L2
+
+    candidates for this cell under CR-BP-21a.1.
+
+    '
+- cr: CR-BP-21a
+  date: '2026-09-07'
+  change: 'Initial Process Context record; promoted from the CR-BP-19
+
+    register v2 (ratified against ECF v2.4.0) as part of the
+
+    StrategyAndDirection landing tranche.
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21a-strategy-direction-landing.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

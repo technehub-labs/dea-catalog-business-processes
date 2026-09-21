@@ -112,33 +112,27 @@ def _record_from_context(yaml_path: Path) -> dict:
 
 
 def _iter_entity_records(root: Path) -> Iterable[dict]:
-    for sub in sorted(root.iterdir()):
-        if not sub.is_dir() or not sub.name.startswith("dea:"):
+    """CR-BP-mv1: walk the L0-rooted containment tree.
+
+    Canonical records live at entities/v1-alpha/<cell>/.../<record>.yaml with
+    id-derived filenames (`processes-<level>-*.yaml`). The old flat
+    `dea:<id>/<id>.yaml` layout is retired.
+    """
+    for yaml_path in sorted(root.rglob("processes-*.yaml")):
+        try:
+            yield _record_from_entry(yaml_path)
+        except (KeyError, yaml.YAMLError):
             continue
-        yaml_path = sub / f"{sub.name}.yaml"
-        if not yaml_path.exists():
-            yamls = sorted(sub.glob("*.yaml"))
-            if not yamls:
-                continue
-            yaml_path = yamls[0]
-        yield _record_from_entry(yaml_path)
 
 
 def _iter_context_records(root: Path) -> Iterable[dict]:
-    """Walk `contexts/v1-alpha/` and yield per-record metadata.
-
-    The context register stores YAML files flat under `contexts/v1-alpha/`
-    (one file per Process Context, no per-id subdirectory), unlike the
-    entities tree. We accept any *.yaml file directly under the root.
-    """
-    for sub in sorted(root.iterdir()):
-        if sub.is_dir():
+    """CR-BP-mv1: PCs live in the containment tree at
+    entities/v1-alpha/<cell>/processes-pc-*.yaml (contexts/ is retired)."""
+    for yaml_path in sorted(root.rglob("processes-pc-*.yaml")):
+        try:
+            yield _record_from_context(yaml_path)
+        except (KeyError, yaml.YAMLError):
             continue
-        if not sub.name.startswith("dea-") and not sub.name.startswith("dea_"):
-            continue
-        if sub.suffix not in (".yaml", ".yml"):
-            continue
-        yield _record_from_context(sub)
 
 
 def _iter_cr_records(root: Path) -> Iterable[dict]:
@@ -158,7 +152,7 @@ def build(repo_root: Path) -> tuple[str, str]:
     # Filter: groups have type=ProcessGroup, processes have type=Process
     processes = [r for r in processes if r["type"] == "Process"]
     groups = [r for r in groups if r["type"] == "ProcessGroup"]
-    contexts = list(_iter_context_records(repo_root / "contexts/v1-alpha"))
+    contexts = list(_iter_context_records(repo_root / "entities/v1-alpha"))
     crs = list(_iter_cr_records(repo_root / "change-requests"))
 
     total = len(processes) + len(groups) + len(contexts)

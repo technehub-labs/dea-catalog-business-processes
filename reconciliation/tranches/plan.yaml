@@ -1,10 +1,7 @@
 schema_version: 1
 plan_at: 2026-09-06
 plan_status: EXECUTED
-plan_closure_note: >-
-  All 65 tranches executed. Final 10 closed by CR-BP-21e.1
-  (PR 59, FinanceAndAccounting) and CR-BP-21f.1 (PR 60, GovernanceAndExistence);
-  closure reconciled by CR-BP-24.
+plan_closure_note: All 65 tranches executed. Final 10 closed by CR-BP-21e.1 (PR 59, FinanceAndAccounting) and CR-BP-21f.1 (PR 60, GovernanceAndExistence); closure reconciled by CR-BP-24.
 plan_lock_target: CR-BP-15-IMP Phase 5 (PR-6 onward)
 ordering_rationale: 'The 10 Process Contexts map to the ECF matrix
 
@@ -105,7 +102,7 @@ summary:
     sd-act.86: 1
 tranches:
 - tranche_id: cd-b
-  context_ref: dea:pc-pr-b
+  context_ref: processes:pc-pr-build-a46hp7
   context_name: party-relationship / build
   owner: TBD (CR-BP-15-IMP Phase 5 sign-off)
   risk: low
@@ -113,8 +110,8 @@ tranches:
   - RECLASSIFY
   pr_target: PR-6 (first CR-BP-15-IMP Phase 5 PR)
   records:
-  - dea:process-customer-channel-and-acquisition-build
-  - dea:process-demand-generation-build
+  - processes:process-pr-build-nygvw7
+  - processes:process-pr-build-4kb2pt
   rationale: 'The two records in this tranche share a clean RECLASSIFY
 
     pattern: legacy "operational" intent -> canonical "operate";
@@ -129,7 +126,7 @@ tranches:
 
     '
 - tranche_id: cd-c
-  context_ref: dea:pc-pr-c
+  context_ref: processes:pc-pr-conceive-6xztsq
   context_name: party-relationship / conceive
   owner: TBD
   risk: medium
@@ -137,8 +134,8 @@ tranches:
   - RECLASSIFY
   pr_target: PR-6
   records:
-  - dea:process-customer-strategy-conception
-  - dea:process-market-and-demand-conception
+  - processes:process-pr-conceive-emfgju
+  - processes:process-pr-conceive-tvst8u
   rationale: 'The two records'' display names already use "Develop" / market-
 
     intelligence verbs, so RECLASSIFY primarily changes the intent
@@ -151,7 +148,7 @@ tranches:
 
     '
 - tranche_id: cd-d
-  context_ref: dea:pc-pr-d
+  context_ref: processes:pc-pr-design-hrcdy4
   context_name: party-relationship / design
   owner: TBD
   risk: medium
@@ -159,22 +156,22 @@ tranches:
   - RECLASSIFY
   pr_target: PR-7
   records:
-  - dea:process-customer-experience-design
-  - dea:process-customer-journey-design
-  - dea:process-demand-design
+  - processes:process-pr-design-pxydu3
+  - processes:process-pr-design-j6fakx
+  - processes:process-pr-design-cv6hjh
   rationale: 'Three design records; all RECLASSIFY. One record
 
-    (dea:process-customer-experience-design) carries a typo in
+    (processes:process-pr-design-pxydu3) carries a typo in
 
     its `process_context` scalar ("dea:pc-d-cd-d" instead of
 
-    "dea:pc-pr-d"); the disposition register records the
+    "processes:pc-pr-design-hrcdy4"); the disposition register records the
 
     correction. The RECLASSIFY pattern is identical to cd-b.
 
     '
 - tranche_id: cd-im
-  context_ref: dea:pc-pr-im
+  context_ref: processes:pc-pr-improve-k8phkn
   context_name: party-relationship / improve
   owner: TBD
   risk: low
@@ -182,7 +179,7 @@ tranches:
   - RECLASSIFY
   pr_target: PR-7
   records:
-  - dea:process-customer-insight-and-retention
+  - processes:process-pr-improve-t6uvan
   rationale: 'Single record; clean RECLASSIFY. Legacy "management" intent
 
     -> canonical "operate" (the record''s display name is
@@ -191,7 +188,7 @@ tranches:
 
     '
 - tranche_id: cd-op
-  context_ref: dea:pc-pr-op
+  context_ref: processes:pc-pr-operate-pwue5a
   context_name: party-relationship / operate
   owner: TBD
   risk: low
@@ -199,7 +196,7 @@ tranches:
   - RECLASSIFY
   pr_target: PR-7
   records:
-  - dea:process-manage-customer-relationship
+  - processes:process-pr-operate-bbe384
   rationale: 'Single record; clean RECLASSIFY. The record''s identity
 
     ("Manage Customer Relationship") and intent ("manage") are
@@ -210,7 +207,7 @@ tranches:
 
     '
 - tranche_id: ge-b
-  context_ref: dea:pc-ge-b
+  context_ref: processes:pc-ge-build-52hjrc
   context_name: governance / build
   owner: TBD
   risk: high
@@ -218,13 +215,13 @@ tranches:
   - RECLASSIFY
   pr_target: PR-8
   records:
-  - dea:process-codify-charters-and-policies
-  - dea:process-establish-governance-bodies
+  - processes:process-ge-build-mctdgc
+  - processes:process-ge-build-3p38us
   rationale: 'The two records carry a 13b-generator artifact
 
     (`process_audience: party-relationship`) that contradicts their
 
-    canonical context (`dea:pc-ge-b` = governance / build). The
+    canonical context (`processes:pc-ge-build-52hjrc` = governance / build). The
 
     RECLASSIFY migrates the legacy audience to the canonical
 
@@ -240,7 +237,7 @@ tranches:
 
     '
 - tranche_id: ge-c
-  context_ref: dea:pc-ge-c
+  context_ref: processes:pc-ge-conceive-b5xwpd
   context_name: governance / conceive
   owner: TBD
   risk: medium
@@ -248,8 +245,8 @@ tranches:
   - RECLASSIFY
   pr_target: PR-8
   records:
-  - dea:process-develop-governance-strategy
-  - dea:process-initiate-policy-and-charter
+  - processes:process-ge-conceive-e6jx6s
+  - processes:process-ge-conceive-xp6fye
   rationale: 'Two records; both RECLASSIFY. Same audience-vs-context
 
     contradiction as ge-b; the canonical context block
@@ -258,7 +255,7 @@ tranches:
 
     '
 - tranche_id: ge-d
-  context_ref: dea:pc-ge-d
+  context_ref: processes:pc-ge-design-3f2gjr
   context_name: governance / design
   owner: TBD
   risk: medium
@@ -266,8 +263,8 @@ tranches:
   - RECLASSIFY
   pr_target: PR-8
   records:
-  - dea:process-design-governance-system
-  - dea:process-design-policies-and-controls
+  - processes:process-ge-design-zbrg8b
+  - processes:process-ge-design-kpsj5b
   rationale: 'Two records; both RECLASSIFY. Same audience-vs-context
 
     contradiction as ge-b; the canonical context block
@@ -276,7 +273,7 @@ tranches:
 
     '
 - tranche_id: ge-im
-  context_ref: dea:pc-ge-im
+  context_ref: processes:pc-ge-improve-c78ppp
   context_name: governance / improve
   owner: TBD
   risk: low
@@ -284,7 +281,7 @@ tranches:
   - RECLASSIFY
   pr_target: PR-8
   records:
-  - dea:process-review-governance-effectiveness
+  - processes:process-ge-improve-mgkw59
   rationale: 'Single record; clean RECLASSIFY. Legacy "management" intent
 
     -> canonical "govern" (the record''s name is "Review
@@ -295,7 +292,7 @@ tranches:
 
     '
 - tranche_id: ge-op
-  context_ref: dea:pc-ge-op
+  context_ref: processes:pc-ge-operate-hb2dac
   context_name: governance / operate
   owner: TBD
   risk: high
@@ -303,9 +300,9 @@ tranches:
   - RECLASSIFY
   pr_target: PR-9
   records:
-  - dea:process-audit-policy-compliance
-  - dea:process-operate-governance-oversight
-  rationale: 'Two records; both RECLASSIFY. dea:process-audit-policy-compliance
+  - processes:process-ge-operate-hxxyc9
+  - processes:process-ge-operate-hs7wf3
+  rationale: 'Two records; both RECLASSIFY. processes:process-ge-operate-hxxyc9
 
     carries legacy "support" intent that maps to canonical
 
@@ -325,7 +322,7 @@ tranches:
 
     '
 - tranche_id: sd-c
-  context_ref: dea:pc-sd-conceive
+  context_ref: processes:pc-sd-conceive-ucb3gx
   context_name: strategy-direction / conceive
   owner: CR-BP-21a (Coder for eaojnr)
   risk: low
@@ -333,14 +330,10 @@ tranches:
   - MOVE
   pr_target: PR-48 (CR-BP-21a landing)
   records:
-  - dea:process-develop-corporate-strategy
-  rationale: "The Conceive cell of StrategyAndDirection receives the MOVE migration\
-    \ of develop-governance-strategy (renamed develop-corporate-strategy) per the\
-    \ user-approved Option A split in CR-BP-20, grounded in domain-grounding.md \xA7\
-    3.1: GE authorises but does not direct; Strategy & Direction directs within the\
-    \ authorised frame."
+  - processes:process-sd-conceive-ahwvp5
+  rationale: 'The Conceive cell of StrategyAndDirection receives the MOVE migration of develop-governance-strategy (renamed develop-corporate-strategy) per the user-approved Option A split in CR-BP-20, grounded in domain-grounding.md §3.1: GE authorises but does not direct; Strategy & Direction directs within the authorised frame.'
 - tranche_id: sd-d
-  context_ref: dea:pc-sd-design
+  context_ref: processes:pc-sd-design-g3es76
   context_name: strategy-direction / design
   owner: CR-BP-21a (Coder for eaojnr)
   risk: low
@@ -348,11 +341,10 @@ tranches:
   - RETAIN
   pr_target: PR-48 (CR-BP-21a landing)
   records:
-  - dea:process-design-strategic-options
-  rationale: Fresh L2 landing for the Design cell. The other 3 register v2 L2 candidates
-    (alternatives, objectives, scenarios) land in CR-BP-21a.1 follow-up.
+  - processes:process-sd-design-ewvbsh
+  rationale: Fresh L2 landing for the Design cell. The other 3 register v2 L2 candidates (alternatives, objectives, scenarios) land in CR-BP-21a.1 follow-up.
 - tranche_id: sd-b
-  context_ref: dea:pc-sd-build
+  context_ref: processes:pc-sd-build-gmzrrm
   context_name: strategy-direction / build
   owner: CR-BP-21a (Coder for eaojnr)
   risk: low
@@ -360,11 +352,10 @@ tranches:
   - RETAIN
   pr_target: PR-48 (CR-BP-21a landing)
   records:
-  - dea:process-build-strategic-plan
-  rationale: Fresh L2 landing for the Build cell. Roadmap and initiative-translation
-    L2s land in CR-BP-21a.1.
+  - processes:process-sd-build-q4nf9g
+  rationale: Fresh L2 landing for the Build cell. Roadmap and initiative-translation L2s land in CR-BP-21a.1.
 - tranche_id: sd-op
-  context_ref: dea:pc-sd-operate
+  context_ref: processes:pc-sd-operate-5cs5ee
   context_name: strategy-direction / operate
   owner: CR-BP-21a (Coder for eaojnr)
   risk: low
@@ -372,11 +363,10 @@ tranches:
   - RETAIN
   pr_target: PR-48 (CR-BP-21a landing)
   records:
-  - dea:process-monitor-strategic-performance
-  rationale: Fresh L2 landing for the Operate cell. Environmental sensing and initiative-portfolio
-    steering L2s land in CR-BP-21a.1.
+  - processes:process-sd-operate-zdjchn
+  rationale: Fresh L2 landing for the Operate cell. Environmental sensing and initiative-portfolio steering L2s land in CR-BP-21a.1.
 - tranche_id: sd-im
-  context_ref: dea:pc-sd-improve
+  context_ref: processes:pc-sd-improve-ft9k5f
   context_name: strategy-direction / improve
   owner: CR-BP-21a (Coder for eaojnr)
   risk: low
@@ -384,11 +374,10 @@ tranches:
   - RETAIN
   pr_target: PR-48 (CR-BP-21a landing)
   records:
-  - dea:process-adapt-strategic-direction
-  rationale: Fresh L2 landing for the Improve cell. Objectives refresh and effectiveness
-    review L2s land in CR-BP-21a.1.
+  - processes:process-sd-improve-9wgvaf
+  rationale: Fresh L2 landing for the Improve cell. Objectives refresh and effectiveness review L2s land in CR-BP-21a.1.
 - tranche_id: ao-c
-  context_ref: dea:pc-ao-conceive
+  context_ref: processes:pc-ao-conceive-wtq4cr
   context_name: agency-organization / conceive
   owner: CR-BP-21b (Coder for eaojnr)
   risk: low
@@ -396,12 +385,10 @@ tranches:
   - RETAIN
   pr_target: PR-49 (CR-BP-21b landing)
   records:
-  - dea:process-frame-organization-and-agent-strategy
-  rationale: "Substrate-neutral framing of agent capacity strategy, organization model,\
-    \ and workforce/agent mix per ADR-ECF-002 \xA75 / CR-ECF-007. Other 2 register\
-    \ v2 L2 candidates for Conceive land in CR-BP-21b.1."
+  - processes:process-ao-conceive-e3u8s2
+  rationale: Substrate-neutral framing of agent capacity strategy, organization model, and workforce/agent mix per ADR-ECF-002 §5 / CR-ECF-007. Other 2 register v2 L2 candidates for Conceive land in CR-BP-21b.1.
 - tranche_id: ao-d
-  context_ref: dea:pc-ao-design
+  context_ref: processes:pc-ao-design-a4hq2r
   context_name: agency-organization / design
   owner: CR-BP-21b (Coder for eaojnr)
   risk: low
@@ -409,12 +396,10 @@ tranches:
   - RETAIN
   pr_target: PR-49 (CR-BP-21b landing)
   records:
-  - dea:process-design-organization-structure
-  rationale: Substrate-neutral design of organization structure. Other 3 register
-    v2 L2 candidates (role catalogue, competency framework, agent topology) land in
-    CR-BP-21b.1.
+  - processes:process-ao-design-7dkbur
+  rationale: Substrate-neutral design of organization structure. Other 3 register v2 L2 candidates (role catalogue, competency framework, agent topology) land in CR-BP-21b.1.
 - tranche_id: ao-b
-  context_ref: dea:pc-ao-build
+  context_ref: processes:pc-ao-build-pjk4rz
   context_name: agency-organization / build
   owner: CR-BP-21b (Coder for eaojnr)
   risk: low
@@ -422,13 +407,10 @@ tranches:
   - RETAIN
   pr_target: PR-49 (CR-BP-21b landing)
   records:
-  - dea:process-acquire-and-onboard-agents
-  rationale: Substrate-neutral acquisition and onboarding. The register v2 lists 4
-    L2 candidates; this landing consolidates them into one Acquire and Onboard Agents
-    process (biological recruitment + artificial model deployment + hybrid provisioning
-    as substrate-neutral expressions of the same identity).
+  - processes:process-ao-build-w2qurd
+  rationale: Substrate-neutral acquisition and onboarding. The register v2 lists 4 L2 candidates; this landing consolidates them into one Acquire and Onboard Agents process (biological recruitment + artificial model deployment + hybrid provisioning as substrate-neutral expressions of the same identity).
 - tranche_id: ao-op
-  context_ref: dea:pc-ao-operate
+  context_ref: processes:pc-ao-operate-zfevmp
   context_name: agency-organization / operate
   owner: CR-BP-21b (Coder for eaojnr)
   risk: low
@@ -436,12 +418,10 @@ tranches:
   - RETAIN
   pr_target: PR-49 (CR-BP-21b landing)
   records:
-  - dea:process-operate-agent-performance
-  rationale: Substrate-neutral performance operation. Other 4 register v2 L2 candidates
-    (time and attendance, learning and development, etc.) land in CR-BP-21b.1 or are
-    folded into this identity if MECE-equivalent.
+  - processes:process-ao-operate-g4wp63
+  rationale: Substrate-neutral performance operation. Other 4 register v2 L2 candidates (time and attendance, learning and development, etc.) land in CR-BP-21b.1 or are folded into this identity if MECE-equivalent.
 - tranche_id: ao-im
-  context_ref: dea:pc-ao-improve
+  context_ref: processes:pc-ao-improve-qkmh6b
   context_name: agency-organization / improve
   owner: CR-BP-21b (Coder for eaojnr)
   risk: low
@@ -449,11 +429,10 @@ tranches:
   - RETAIN
   pr_target: PR-49 (CR-BP-21b landing)
   records:
-  - dea:process-develop-agents-and-organization
-  rationale: Substrate-neutral development of agents and organization. Other 3 register
-    v2 L2 candidates land in CR-BP-21b.1.
+  - processes:process-ao-improve-xfh8na
+  rationale: Substrate-neutral development of agents and organization. Other 3 register v2 L2 candidates land in CR-BP-21b.1.
 - tranche_id: pv-c
-  context_ref: dea:pc-pv-conceive
+  context_ref: processes:pc-pv-conceive-fe9awk
   context_name: product-value / conceive
   owner: CR-BP-21c (Coder for eaojnr)
   risk: low
@@ -461,12 +440,10 @@ tranches:
   - RETAIN
   pr_target: PR-51 (CR-BP-21c landing)
   records:
-  - dea:process-frame-value-proposition-thesis
-  rationale: Fresh L2 landing for the Conceive cell. The other 2 register
-    v2 L2 candidates (portfolio direction, innovation thesis) land in
-    CR-BP-21c.1.
+  - processes:process-pv-conceive-xe9axm
+  rationale: Fresh L2 landing for the Conceive cell. The other 2 register v2 L2 candidates (portfolio direction, innovation thesis) land in CR-BP-21c.1.
 - tranche_id: pv-d
-  context_ref: dea:pc-pv-design
+  context_ref: processes:pc-pv-design-8dhwpn
   context_name: product-value / design
   owner: CR-BP-21c (Coder for eaojnr)
   risk: low
@@ -474,12 +451,10 @@ tranches:
   - RETAIN
   pr_target: PR-51 (CR-BP-21c landing)
   records:
-  - dea:process-design-product-and-service-propositions
-  rationale: Fresh L2 landing for the Design cell. The other 2 register
-    v2 L2 candidates (packaging and configuration, innovation experiment)
-    land in CR-BP-21c.1.
+  - processes:process-pv-design-8v4k89
+  rationale: Fresh L2 landing for the Design cell. The other 2 register v2 L2 candidates (packaging and configuration, innovation experiment) land in CR-BP-21c.1.
 - tranche_id: pv-b
-  context_ref: dea:pc-pv-build
+  context_ref: processes:pc-pv-build-ygbmxb
   context_name: product-value / build
   owner: CR-BP-21c (Coder for eaojnr)
   risk: low
@@ -487,12 +462,10 @@ tranches:
   - RETAIN
   pr_target: PR-51 (CR-BP-21c landing)
   records:
-  - dea:process-develop-product-variants
-  rationale: Fresh L2 landing for the Build cell. The other 3 register
-    v2 L2 candidates (service capability, innovation prototype, market
-    readiness) land in CR-BP-21c.1.
+  - processes:process-pv-build-say8tb
+  rationale: Fresh L2 landing for the Build cell. The other 3 register v2 L2 candidates (service capability, innovation prototype, market readiness) land in CR-BP-21c.1.
 - tranche_id: pv-op
-  context_ref: dea:pc-pv-operate
+  context_ref: processes:pc-pv-operate-ewpwjc
   context_name: product-value / operate
   owner: CR-BP-21c (Coder for eaojnr)
   risk: low
@@ -500,12 +473,10 @@ tranches:
   - RETAIN
   pr_target: PR-51 (CR-BP-21c landing)
   records:
-  - dea:process-operate-product-catalogue
-  rationale: Fresh L2 landing for the Operate cell. The other 2 register
-    v2 L2 candidates (portfolio performance, proposition lifecycle) land
-    in CR-BP-21c.1.
+  - processes:process-pv-operate-zyguzp
+  rationale: Fresh L2 landing for the Operate cell. The other 2 register v2 L2 candidates (portfolio performance, proposition lifecycle) land in CR-BP-21c.1.
 - tranche_id: pv-im
-  context_ref: dea:pc-pv-improve
+  context_ref: processes:pc-pv-improve-wpyfx7
   context_name: product-value / improve
   owner: CR-BP-21c (Coder for eaojnr)
   risk: low
@@ -513,12 +484,10 @@ tranches:
   - RETAIN
   pr_target: PR-51 (CR-BP-21c landing)
   records:
-  - dea:process-conduct-proposition-performance-review
-  rationale: Fresh L2 landing for the Improve cell. The other 2 register
-    v2 L2 candidates (product evolution, portfolio rationalization) land
-    in CR-BP-21c.1.
+  - processes:process-pv-improve-27r7r7
+  rationale: Fresh L2 landing for the Improve cell. The other 2 register v2 L2 candidates (product evolution, portfolio rationalization) land in CR-BP-21c.1.
 - tranche_id: oe-c
-  context_ref: dea:pc-oe-conceive
+  context_ref: processes:pc-eo-conceive-mxmtzq
   context_name: enablement-operations / conceive
   owner: CR-BP-21d (Coder for eaojnr)
   risk: low
@@ -526,12 +495,10 @@ tranches:
   - RETAIN
   pr_target: PR-52 (CR-BP-21d landing)
   records:
-  - dea:process-frame-operations-strategy
-  rationale: Fresh L2 landing for the Conceive cell. The other 3 register
-    v2 L2 candidates (delivery model conception, technology enablement
-    approach, physical asset approach) land in CR-BP-21d.1.
+  - processes:process-eo-conceive-xhjdr2
+  rationale: Fresh L2 landing for the Conceive cell. The other 3 register v2 L2 candidates (delivery model conception, technology enablement approach, physical asset approach) land in CR-BP-21d.1.
 - tranche_id: oe-d
-  context_ref: dea:pc-oe-design
+  context_ref: processes:pc-eo-design-kxdfnz
   context_name: enablement-operations / design
   owner: CR-BP-21d (Coder for eaojnr)
   risk: low
@@ -539,13 +506,10 @@ tranches:
   - RETAIN
   pr_target: PR-52 (CR-BP-21d landing)
   records:
-  - dea:process-design-operations-model
-  rationale: Fresh L2 landing for the Design cell. The other 4 register
-    v2 L2 candidates (delivery model, technology platform architecture,
-    facility and asset blueprint, logistics and routing) land in
-    CR-BP-21d.1.
+  - processes:process-eo-design-rvfpjb
+  rationale: Fresh L2 landing for the Design cell. The other 4 register v2 L2 candidates (delivery model, technology platform architecture, facility and asset blueprint, logistics and routing) land in CR-BP-21d.1.
 - tranche_id: oe-b
-  context_ref: dea:pc-oe-build
+  context_ref: processes:pc-eo-build-zwkhxc
   context_name: enablement-operations / build
   owner: CR-BP-21d (Coder for eaojnr)
   risk: low
@@ -553,13 +517,10 @@ tranches:
   - RETAIN
   pr_target: PR-52 (CR-BP-21d landing)
   records:
-  - dea:process-build-delivery-capability
-  rationale: Fresh L2 landing for the Build cell. The other 4 register
-    v2 L2 candidates (production line stand-up, logistics network,
-    technology asset acquisition, facility provisioning) land in
-    CR-BP-21d.1.
+  - processes:process-eo-build-j9z3q4
+  rationale: Fresh L2 landing for the Build cell. The other 4 register v2 L2 candidates (production line stand-up, logistics network, technology asset acquisition, facility provisioning) land in CR-BP-21d.1.
 - tranche_id: oe-op
-  context_ref: dea:pc-oe-operate
+  context_ref: processes:pc-eo-operate-ydqb96
   context_name: enablement-operations / operate
   owner: CR-BP-21d (Coder for eaojnr)
   risk: low
@@ -567,13 +528,10 @@ tranches:
   - RETAIN
   pr_target: PR-52 (CR-BP-21d landing)
   records:
-  - dea:process-operate-service-delivery
-  rationale: Fresh L2 landing for the Operate cell. The other 8 register
-    v2 L2 candidates (production line, logistics, warehouse, quality
-    control, technology platforms, facility management, asset
-    maintenance, procurement cycle) land in CR-BP-21d.1.
+  - processes:process-eo-operate-2jnz85
+  rationale: Fresh L2 landing for the Operate cell. The other 8 register v2 L2 candidates (production line, logistics, warehouse, quality control, technology platforms, facility management, asset maintenance, procurement cycle) land in CR-BP-21d.1.
 - tranche_id: oe-im
-  context_ref: dea:pc-oe-improve
+  context_ref: processes:pc-eo-improve-pka6dk
   context_name: enablement-operations / improve
   owner: CR-BP-21d (Coder for eaojnr)
   risk: low
@@ -581,12 +539,10 @@ tranches:
   - RETAIN
   pr_target: PR-52 (CR-BP-21d landing)
   records:
-  - dea:process-conduct-operations-performance-review
-  rationale: Fresh L2 landing for the Improve cell. The other 4 register
-    v2 L2 candidates (logistics optimization, lean programme, asset
-    utilization, technology platforms) land in CR-BP-21d.1.
+  - processes:process-eo-improve-g3ngp3
+  rationale: Fresh L2 landing for the Improve cell. The other 4 register v2 L2 candidates (logistics optimization, lean programme, asset utilization, technology platforms) land in CR-BP-21d.1.
 - tranche_id: fa-c
-  context_ref: dea:pc-fa-conceive
+  context_ref: processes:pc-fa-conceive-phabh2
   context_name: finance-accounting / conceive
   owner: CR-BP-21e (Coder for eaojnr)
   risk: low
@@ -594,12 +550,10 @@ tranches:
   - RETAIN
   pr_target: PR-53 (CR-BP-21e landing)
   records:
-  - dea:process-frame-finance-strategy
-  rationale: Fresh L2 landing for the Conceive cell. The other 2 register
-    v2 L2 candidates (monetary model, funding and capital approach) land
-    in CR-BP-21e.1.
+  - processes:process-fa-conceive-4uqqvg
+  rationale: Fresh L2 landing for the Conceive cell. The other 2 register v2 L2 candidates (monetary model, funding and capital approach) land in CR-BP-21e.1.
 - tranche_id: fa-d
-  context_ref: dea:pc-fa-design
+  context_ref: processes:pc-fa-design-4j8evh
   context_name: finance-accounting / design
   owner: CR-BP-21e (Coder for eaojnr)
   risk: low
@@ -607,12 +561,10 @@ tranches:
   - RETAIN
   pr_target: PR-53 (CR-BP-21e landing)
   records:
-  - dea:process-design-financial-plan-structure
-  rationale: Fresh L2 landing for the Design cell. The other 3 register
-    v2 L2 candidates (chart of accounts, cost allocation model, financial
-    controls) land in CR-BP-21e.1.
+  - processes:process-fa-design-vk422z
+  rationale: Fresh L2 landing for the Design cell. The other 3 register v2 L2 candidates (chart of accounts, cost allocation model, financial controls) land in CR-BP-21e.1.
 - tranche_id: fa-b
-  context_ref: dea:pc-fa-build
+  context_ref: processes:pc-fa-build-pztsp9
   context_name: finance-accounting / build
   owner: CR-BP-21e (Coder for eaojnr)
   risk: low
@@ -620,12 +572,10 @@ tranches:
   - RETAIN
   pr_target: PR-53 (CR-BP-21e landing)
   records:
-  - dea:process-secure-funding-facilities
-  rationale: Fresh L2 landing for the Build cell. The other 2 register
-    v2 L2 candidates (finance function stand-up, ERP finance module)
-    land in CR-BP-21e.1.
+  - processes:process-fa-build-ydnzjc
+  rationale: Fresh L2 landing for the Build cell. The other 2 register v2 L2 candidates (finance function stand-up, ERP finance module) land in CR-BP-21e.1.
 - tranche_id: fa-op
-  context_ref: dea:pc-fa-operate
+  context_ref: processes:pc-fa-operate-afew7e
   context_name: finance-accounting / operate
   owner: CR-BP-21e (Coder for eaojnr)
   risk: low
@@ -633,13 +583,10 @@ tranches:
   - RETAIN
   pr_target: PR-53 (CR-BP-21e landing)
   records:
-  - dea:process-operate-general-ledger
-  rationale: Fresh L2 landing for the Operate cell. The other 7 register
-    v2 L2 candidates (payables, receivables, treasury, tax compliance,
-    financial close, FP&A, reporting and disclosure) land in
-    CR-BP-21e.1.
+  - processes:process-fa-operate-g9zpnq
+  rationale: Fresh L2 landing for the Operate cell. The other 7 register v2 L2 candidates (payables, receivables, treasury, tax compliance, financial close, FP&A, reporting and disclosure) land in CR-BP-21e.1.
 - tranche_id: fa-im
-  context_ref: dea:pc-fa-improve
+  context_ref: processes:pc-fa-improve-haqf4w
   context_name: finance-accounting / improve
   owner: CR-BP-21e (Coder for eaojnr)
   risk: low
@@ -647,12 +594,10 @@ tranches:
   - RETAIN
   pr_target: PR-53 (CR-BP-21e landing)
   records:
-  - dea:process-conduct-cost-optimization-review
-  rationale: Fresh L2 landing for the Improve cell. The other 2 register
-    v2 L2 candidates (reporting improvement, control strengthening) land
-    in CR-BP-21e.1.
+  - processes:process-fa-improve-emqpgr
+  rationale: Fresh L2 landing for the Improve cell. The other 2 register v2 L2 candidates (reporting improvement, control strengthening) land in CR-BP-21e.1.
 - tranche_id: sd-c.1
-  context_ref: dea:pc-sd-conceive
+  context_ref: processes:pc-sd-conceive-ucb3gx
   context_name: strategy-direction / conceive
   owner: CR-BP-21a.1 (Coder for eaojnr)
   risk: low
@@ -660,14 +605,12 @@ tranches:
   - RETAIN
   pr_target: PR-54 (CR-BP-21a.1 completion)
   records:
-  - dea:process-define-enterprise-purpose-and-ambition
-  - dea:process-conceive-strategic-intent
-  - dea:process-frame-strategic-horizons
-  rationale: Register v2 L2 completion for the SD Conceive cell; the 3
-    remaining candidates join the landed dea:group-strategy-direction-conception
-    via new composes edges.
+  - processes:process-sd-conceive-r93j3d
+  - processes:process-sd-conceive-3uredz
+  - processes:process-sd-conceive-xa4h2k
+  rationale: Register v2 L2 completion for the SD Conceive cell; the 3 remaining candidates join the landed processes:group-sd-conceive-7qhvzn via new composes edges.
 - tranche_id: sd-d.1
-  context_ref: dea:pc-sd-design
+  context_ref: processes:pc-sd-design-g3es76
   context_name: strategy-direction / design
   owner: CR-BP-21a.1 (Coder for eaojnr)
   risk: low
@@ -675,13 +618,12 @@ tranches:
   - RETAIN
   pr_target: PR-54 (CR-BP-21a.1 completion)
   records:
-  - dea:process-evaluate-strategic-alternatives
-  - dea:process-design-objectives-and-targets
-  - dea:process-design-strategic-scenarios
-  rationale: Register v2 L2 completion for the SD Design cell; composed by
-    the new dea:group-strategic-choices-design.
+  - processes:process-sd-design-ed7jd5
+  - processes:process-sd-design-vdwkmh
+  - processes:process-sd-design-uenzna
+  rationale: Register v2 L2 completion for the SD Design cell; composed by the new processes:group-sd-design-q4mj9z.
 - tranche_id: sd-b.1
-  context_ref: dea:pc-sd-build
+  context_ref: processes:pc-sd-build-gmzrrm
   context_name: strategy-direction / build
   owner: CR-BP-21a.1 (Coder for eaojnr)
   risk: low
@@ -689,13 +631,12 @@ tranches:
   - RETAIN
   pr_target: PR-54 (CR-BP-21a.1 completion)
   records:
-  - dea:process-build-strategic-roadmap
-  - dea:process-translate-strategic-choices-into-initiatives
-  - dea:process-set-resource-allocation-priorities
-  rationale: Register v2 L2 completion for the SD Build cell; composed by
-    the new dea:group-strategic-plan-build.
+  - processes:process-sd-build-7n4prh
+  - processes:process-sd-build-9admqy
+  - processes:process-sd-build-2pkz5n
+  rationale: Register v2 L2 completion for the SD Build cell; composed by the new processes:group-sd-build-tnq4p6.
 - tranche_id: sd-op.1
-  context_ref: dea:pc-sd-operate
+  context_ref: processes:pc-sd-operate-5cs5ee
   context_name: strategy-direction / operate
   owner: CR-BP-21a.1 (Coder for eaojnr)
   risk: low
@@ -703,13 +644,12 @@ tranches:
   - RETAIN
   pr_target: PR-54 (CR-BP-21a.1 completion)
   records:
-  - dea:process-sense-environmental-signals
-  - dea:process-steer-initiative-portfolio
-  - dea:process-operate-strategic-review-cycle
-  rationale: Register v2 L2 completion for the SD Operate cell; composed by
-    the new dea:group-strategic-steering-operation.
+  - processes:process-sd-operate-53y4j4
+  - processes:process-sd-operate-u6xgu5
+  - processes:process-sd-operate-ucxpz4
+  rationale: Register v2 L2 completion for the SD Operate cell; composed by the new processes:group-sd-operate-22epxr.
 - tranche_id: sd-im.1
-  context_ref: dea:pc-sd-improve
+  context_ref: processes:pc-sd-improve-ft9k5f
   context_name: strategy-direction / improve
   owner: CR-BP-21a.1 (Coder for eaojnr)
   risk: low
@@ -717,12 +657,11 @@ tranches:
   - RETAIN
   pr_target: PR-54 (CR-BP-21a.1 completion)
   records:
-  - dea:process-refresh-objectives-and-targets
-  - dea:process-review-strategy-effectiveness
-  rationale: Register v2 L2 completion for the SD Improve cell; composed by
-    the new dea:group-strategic-adaptation.
+  - processes:process-sd-improve-aqbrm7
+  - processes:process-sd-improve-duwd64
+  rationale: Register v2 L2 completion for the SD Improve cell; composed by the new processes:group-sd-improve-vdz4xp.
 - tranche_id: ao-c.1
-  context_ref: dea:pc-ao-conceive
+  context_ref: processes:pc-ao-conceive-wtq4cr
   context_name: agency-organization / conceive
   owner: CR-BP-21b.1 (Coder for eaojnr)
   risk: low
@@ -730,13 +669,11 @@ tranches:
   - RETAIN
   pr_target: PR-55 (CR-BP-21b.1 completion)
   records:
-  - dea:process-frame-organization-model
-  - dea:process-conceive-workforce-and-agent-mix
-  rationale: Register v2 L2 completion for the AO Conceive cell; the 2
-    remaining candidates join the landed
-    dea:group-organization-and-agent-conception via new composes edges.
+  - processes:process-ao-conceive-ruxjvh
+  - processes:process-ao-conceive-z6m6p5
+  rationale: Register v2 L2 completion for the AO Conceive cell; the 2 remaining candidates join the landed processes:group-ao-conceive-bwjhgd via new composes edges.
 - tranche_id: ao-d.1
-  context_ref: dea:pc-ao-design
+  context_ref: processes:pc-ao-design-a4hq2r
   context_name: agency-organization / design
   owner: CR-BP-21b.1 (Coder for eaojnr)
   risk: low
@@ -744,13 +681,12 @@ tranches:
   - RETAIN
   pr_target: PR-55 (CR-BP-21b.1 completion)
   records:
-  - dea:process-design-role-catalogue
-  - dea:process-design-competency-framework
-  - dea:process-design-agent-topology
-  rationale: Register v2 L2 completion for the AO Design cell; composed by
-    the new dea:group-organization-and-role-design.
+  - processes:process-ao-design-34e95r
+  - processes:process-ao-design-rve8j5
+  - processes:process-ao-design-8fzp2b
+  rationale: Register v2 L2 completion for the AO Design cell; composed by the new processes:group-ao-design-pjrfr9.
 - tranche_id: ao-b.1
-  context_ref: dea:pc-ao-build
+  context_ref: processes:pc-ao-build-pjk4rz
   context_name: agency-organization / build
   owner: CR-BP-21b.1 (Coder for eaojnr)
   risk: low
@@ -758,14 +694,10 @@ tranches:
   - RETAIN
   pr_target: PR-55 (CR-BP-21b.1 completion)
   records:
-  - dea:process-build-contractor-and-partner-agent-pool
-  rationale: Register v2 L2 completion for the AO Build cell; the landed
-    acquire-and-onboard-agents subsumes the recruit/provision/onboard
-    candidates per CR-BP-21b section 5, leaving the contractor and
-    partner-agent pool as the remaining candidate. Composed by the new
-    dea:group-agent-acquisition-and-onboarding.
+  - processes:process-ao-build-b38bkg
+  rationale: Register v2 L2 completion for the AO Build cell; the landed acquire-and-onboard-agents subsumes the recruit/provision/onboard candidates per CR-BP-21b section 5, leaving the contractor and partner-agent pool as the remaining candidate. Composed by the new processes:group-ao-build-m6fmyx.
 - tranche_id: ao-op.1
-  context_ref: dea:pc-ao-operate
+  context_ref: processes:pc-ao-operate-zfevmp
   context_name: agency-organization / operate
   owner: CR-BP-21b.1 (Coder for eaojnr)
   risk: low
@@ -773,14 +705,13 @@ tranches:
   - RETAIN
   pr_target: PR-55 (CR-BP-21b.1 completion)
   records:
-  - dea:process-operate-payroll-and-benefits
-  - dea:process-operate-time-and-attendance
-  - dea:process-operate-learning-and-development
-  - dea:process-coordinate-collaboration
-  rationale: Register v2 L2 completion for the AO Operate cell; composed
-    by the new dea:group-agent-operations.
+  - processes:process-ao-operate-38qyc6
+  - processes:process-ao-operate-dg9q4h
+  - processes:process-ao-operate-87q5mk
+  - processes:process-ao-operate-bd7mef
+  rationale: Register v2 L2 completion for the AO Operate cell; composed by the new processes:group-ao-operate-35gmps.
 - tranche_id: ao-im.1
-  context_ref: dea:pc-ao-improve
+  context_ref: processes:pc-ao-improve-qkmh6b
   context_name: agency-organization / improve
   owner: CR-BP-21b.1 (Coder for eaojnr)
   risk: low
@@ -788,13 +719,12 @@ tranches:
   - RETAIN
   pr_target: PR-55 (CR-BP-21b.1 completion)
   records:
-  - dea:process-conduct-engagement-and-alignment-review
-  - dea:process-conduct-capability-gap-analysis
-  - dea:process-reorganize-structures
-  rationale: Register v2 L2 completion for the AO Improve cell; composed
-    by the new dea:group-agent-and-organization-improvement.
+  - processes:process-ao-improve-edjyha
+  - processes:process-ao-improve-h3vgyf
+  - processes:process-ao-improve-xs59e2
+  rationale: Register v2 L2 completion for the AO Improve cell; composed by the new processes:group-ao-improve-su4c8p.
 - tranche_id: pv-c.1
-  context_ref: dea:pc-pv-conceive
+  context_ref: processes:pc-pv-conceive-fe9awk
   context_name: product-value / conceive
   owner: CR-BP-21c.1 (Coder for eaojnr)
   risk: low
@@ -802,13 +732,11 @@ tranches:
   - RETAIN
   pr_target: PR-56 (CR-BP-21c.1 completion)
   records:
-  - dea:process-frame-portfolio-direction
-  - dea:process-frame-innovation-thesis
-  rationale: Register v2 L2 completion for the PV Conceive cell; the 2
-    remaining candidates join the landed
-    dea:group-proposition-conception via new composes edges.
+  - processes:process-pv-conceive-jb4xtg
+  - processes:process-pv-conceive-kps544
+  rationale: Register v2 L2 completion for the PV Conceive cell; the 2 remaining candidates join the landed processes:group-pv-conceive-geej6b via new composes edges.
 - tranche_id: pv-d.1
-  context_ref: dea:pc-pv-design
+  context_ref: processes:pc-pv-design-8dhwpn
   context_name: product-value / design
   owner: CR-BP-21c.1 (Coder for eaojnr)
   risk: low
@@ -816,12 +744,11 @@ tranches:
   - RETAIN
   pr_target: PR-56 (CR-BP-21c.1 completion)
   records:
-  - dea:process-design-packaging-and-configuration
-  - dea:process-design-innovation-experiment
-  rationale: Register v2 L2 completion for the PV Design cell; composed by
-    the new dea:group-proposition-design.
+  - processes:process-pv-design-a4c76s
+  - processes:process-pv-design-9ckwf6
+  rationale: Register v2 L2 completion for the PV Design cell; composed by the new processes:group-pv-design-msz6da.
 - tranche_id: pv-b.1
-  context_ref: dea:pc-pv-build
+  context_ref: processes:pc-pv-build-ygbmxb
   context_name: product-value / build
   owner: CR-BP-21c.1 (Coder for eaojnr)
   risk: low
@@ -829,13 +756,12 @@ tranches:
   - RETAIN
   pr_target: PR-56 (CR-BP-21c.1 completion)
   records:
-  - dea:process-build-service-capability
-  - dea:process-build-innovation-prototype
-  - dea:process-prepare-market-readiness
-  rationale: Register v2 L2 completion for the PV Build cell; composed by
-    the new dea:group-product-development.
+  - processes:process-pv-build-p9a2s9
+  - processes:process-pv-build-8jc3y4
+  - processes:process-pv-build-6hjzmk
+  rationale: Register v2 L2 completion for the PV Build cell; composed by the new processes:group-pv-build-g6sua5.
 - tranche_id: pv-op.1
-  context_ref: dea:pc-pv-operate
+  context_ref: processes:pc-pv-operate-ewpwjc
   context_name: product-value / operate
   owner: CR-BP-21c.1 (Coder for eaojnr)
   risk: low
@@ -843,12 +769,11 @@ tranches:
   - RETAIN
   pr_target: PR-56 (CR-BP-21c.1 completion)
   records:
-  - dea:process-manage-portfolio-performance
-  - dea:process-manage-proposition-lifecycle
-  rationale: Register v2 L2 completion for the PV Operate cell; composed
-    by the new dea:group-portfolio-management-operation.
+  - processes:process-pv-operate-en8rdz
+  - processes:process-pv-operate-cau4gv
+  rationale: Register v2 L2 completion for the PV Operate cell; composed by the new processes:group-pv-operate-ah3322.
 - tranche_id: pv-im.1
-  context_ref: dea:pc-pv-improve
+  context_ref: processes:pc-pv-improve-wpyfx7
   context_name: product-value / improve
   owner: CR-BP-21c.1 (Coder for eaojnr)
   risk: low
@@ -856,12 +781,11 @@ tranches:
   - RETAIN
   pr_target: PR-56 (CR-BP-21c.1 completion)
   records:
-  - dea:process-evolve-products-and-services
-  - dea:process-rationalize-portfolio
-  rationale: Register v2 L2 completion for the PV Improve cell; composed
-    by the new dea:group-product-evolution.
+  - processes:process-pv-improve-6c2xvf
+  - processes:process-pv-improve-9xvgat
+  rationale: Register v2 L2 completion for the PV Improve cell; composed by the new processes:group-pv-improve-rjab8b.
 - tranche_id: oe-c.1
-  context_ref: dea:pc-oe-conceive
+  context_ref: processes:pc-eo-conceive-mxmtzq
   context_name: enablement-operations / conceive
   owner: CR-BP-21d.1 (Coder for eaojnr)
   risk: low
@@ -869,14 +793,12 @@ tranches:
   - RETAIN
   pr_target: PR-57 (CR-BP-21d.1 completion)
   records:
-  - dea:process-frame-delivery-model-conception
-  - dea:process-frame-technology-enablement-approach
-  - dea:process-frame-physical-asset-approach
-  rationale: Register v2 L2 completion for the OE Conceive cell; the 3
-    remaining candidates join the landed
-    dea:group-operations-model-conception via new composes edges.
+  - processes:process-eo-conceive-ky5wxp
+  - processes:process-eo-conceive-68mp6v
+  - processes:process-eo-conceive-87kx9n
+  rationale: Register v2 L2 completion for the OE Conceive cell; the 3 remaining candidates join the landed processes:group-eo-conceive-j6n4f7 via new composes edges.
 - tranche_id: oe-d.1
-  context_ref: dea:pc-oe-design
+  context_ref: processes:pc-eo-design-kxdfnz
   context_name: enablement-operations / design
   owner: CR-BP-21d.1 (Coder for eaojnr)
   risk: low
@@ -884,14 +806,13 @@ tranches:
   - RETAIN
   pr_target: PR-57 (CR-BP-21d.1 completion)
   records:
-  - dea:process-design-delivery-model
-  - dea:process-design-technology-platform-architecture
-  - dea:process-design-facility-and-asset-blueprint
-  - dea:process-design-logistics-and-routing
-  rationale: Register v2 L2 completion for the OE Design cell; composed
-    by the new dea:group-process-and-enablement-design.
+  - processes:process-eo-design-6j5mxp
+  - processes:process-eo-design-7gtead
+  - processes:process-eo-design-q83tdv
+  - processes:process-eo-design-8s76nv
+  rationale: Register v2 L2 completion for the OE Design cell; composed by the new processes:group-eo-design-g6dmdk.
 - tranche_id: oe-b.1
-  context_ref: dea:pc-oe-build
+  context_ref: processes:pc-eo-build-zwkhxc
   context_name: enablement-operations / build
   owner: CR-BP-21d.1 (Coder for eaojnr)
   risk: low
@@ -899,14 +820,13 @@ tranches:
   - RETAIN
   pr_target: PR-57 (CR-BP-21d.1 completion)
   records:
-  - dea:process-commission-production-line
-  - dea:process-build-logistics-network
-  - dea:process-acquire-technology-assets
-  - dea:process-provision-facilities
-  rationale: Register v2 L2 completion for the OE Build cell; composed
-    by the new dea:group-operations-and-enablement-build.
+  - processes:process-eo-build-awy8dz
+  - processes:process-eo-build-ba6ykz
+  - processes:process-eo-build-nmmmt6
+  - processes:process-eo-build-tqybhd
+  rationale: Register v2 L2 completion for the OE Build cell; composed by the new processes:group-eo-build-7pur27.
 - tranche_id: oe-op.1
-  context_ref: dea:pc-oe-operate
+  context_ref: processes:pc-eo-operate-ydqb96
   context_name: enablement-operations / operate
   owner: CR-BP-21d.1 (Coder for eaojnr)
   risk: low
@@ -914,19 +834,17 @@ tranches:
   - RETAIN
   pr_target: PR-57 (CR-BP-21d.1 completion)
   records:
-  - dea:process-run-production-line
-  - dea:process-operate-logistics
-  - dea:process-operate-warehouse-and-inventory
-  - dea:process-operate-quality-control
-  - dea:process-operate-technology-platforms
-  - dea:process-operate-facility-management
-  - dea:process-operate-asset-maintenance
-  - dea:process-operate-procurement-cycle
-  rationale: Register v2 L2 completion for the OE Operate cell (largest
-    cell; 8 remaining candidates); composed by the new
-    dea:group-execution-and-fulfillment.
+  - processes:process-eo-operate-xud3hs
+  - processes:process-eo-operate-zh9m57
+  - processes:process-eo-operate-zwzmbd
+  - processes:process-eo-operate-44jsrp
+  - processes:process-eo-operate-4njp7b
+  - processes:process-eo-operate-rqdte5
+  - processes:process-eo-operate-j9cjzz
+  - processes:process-eo-operate-vzcxx7
+  rationale: Register v2 L2 completion for the OE Operate cell (largest cell; 8 remaining candidates); composed by the new processes:group-eo-operate-bfd7jb.
 - tranche_id: oe-im.1
-  context_ref: dea:pc-oe-improve
+  context_ref: processes:pc-eo-improve-pka6dk
   context_name: enablement-operations / improve
   owner: CR-BP-21d.1 (Coder for eaojnr)
   risk: low
@@ -934,462 +852,348 @@ tranches:
   - RETAIN
   pr_target: PR-57 (CR-BP-21d.1 completion)
   records:
-  - dea:process-conduct-logistics-optimization
-  - dea:process-conduct-lean-six-sigma-programme
-  - dea:process-optimize-asset-utilization
-  - dea:process-improve-technology-platforms
-  rationale: Register v2 L2 completion for the OE Improve cell; composed
-    by the new dea:group-operations-and-enablement-improvement.
+  - processes:process-eo-improve-3fem63
+  - processes:process-eo-improve-us272s
+  - processes:process-eo-improve-q58ecg
+  - processes:process-eo-improve-babwdc
+  rationale: Register v2 L2 completion for the OE Improve cell; composed by the new processes:group-eo-improve-c8uff9.
 - tranche_id: fa-c.1
-  context_ref: dea:pc-fa-conceive
+  context_ref: processes:pc-fa-conceive-phabh2
   context_name: financial-and-accounting / conceive
-  group_ref: dea:group-financial-model-conception
+  group_ref: processes:group-fa-conceive-9xzf3b
   cell: FinanceAndAccounting.Conceive
   l2_candidates: []
   records: []
   status: applied
   applied_by: CR-BP-21e.1
   applied_pr: 59
-  rationale: |
-    Conceive cell already landed by CR-BP-21e. No additional L2
+  rationale: 'Conceive cell already landed by CR-BP-21e. No additional L2
+
     candidates in the FA Conceive register v2 cell beyond the 3
-    already in dea:group-financial-model-conception.
+
+    already in processes:group-fa-conceive-9xzf3b.
+
+    '
 - tranche_id: fa-d.1
-  context_ref: dea:pc-fa-design
+  context_ref: processes:pc-fa-design-4j8evh
   context_name: financial-and-accounting / design
-  group_ref: dea:group-financial-design
+  group_ref: processes:group-fa-design-7juvse
   cell: FinanceAndAccounting.Design
   l2_candidates:
-    - id: dea:process-design-financial-controls-and-policies
-      name: Design Financial Controls and Policies
-      process_type: management
-    - id: dea:process-design-tax-position-and-strategy
-      name: Design Tax Position and Strategy
-      process_type: management
-    - id: dea:process-design-treasury-and-funding-model
-      name: Design Treasury and Funding Model
-      process_type: management
+  - id: processes:process-fa-design-uun4ja
+    name: Design Financial Controls and Policies
+    process_type: management
+  - id: processes:process-fa-design-ds4drw
+    name: Design Tax Position and Strategy
+    process_type: management
+  - id: processes:process-fa-design-k5sgfa
+    name: Design Treasury and Funding Model
+    process_type: management
   records:
-    - dea:process-design-financial-controls-and-policies
-    - dea:process-design-tax-position-and-strategy
-    - dea:process-design-treasury-and-funding-model
+  - processes:process-fa-design-uun4ja
+  - processes:process-fa-design-ds4drw
+  - processes:process-fa-design-k5sgfa
   status: applied
   applied_by: CR-BP-21e.1
   applied_pr: 59
-  rationale: Register v2 L2 completion for the FA Design cell; composed
-    by the new dea:group-financial-design.
+  rationale: Register v2 L2 completion for the FA Design cell; composed by the new processes:group-fa-design-7juvse.
 - tranche_id: fa-b.1
-  context_ref: dea:pc-fa-build
+  context_ref: processes:pc-fa-build-pztsp9
   context_name: financial-and-accounting / build
-  group_ref: dea:group-financial-build
+  group_ref: processes:group-fa-build-d7ww77
   cell: FinanceAndAccounting.Build
   l2_candidates:
-    - id: dea:process-implement-financial-systems-and-ledger
-      name: Implement Financial Systems and Ledger
-      process_type: core
-    - id: dea:process-build-budgeting-and-forecasting-systems
-      name: Build Budgeting and Forecasting Systems
-      process_type: core
-    - id: dea:process-onboard-tax-and-compliance-capability
-      name: Onboard Tax and Compliance Capability
-      process_type: management
+  - id: processes:process-fa-build-d5kb5m
+    name: Implement Financial Systems and Ledger
+    process_type: core
+  - id: processes:process-fa-build-92v24c
+    name: Build Budgeting and Forecasting Systems
+    process_type: core
+  - id: processes:process-fa-build-ucfjgt
+    name: Onboard Tax and Compliance Capability
+    process_type: management
   records:
-    - dea:process-implement-financial-systems-and-ledger
-    - dea:process-build-budgeting-and-forecasting-systems
-    - dea:process-onboard-tax-and-compliance-capability
+  - processes:process-fa-build-d5kb5m
+  - processes:process-fa-build-92v24c
+  - processes:process-fa-build-ucfjgt
   status: applied
   applied_by: CR-BP-21e.1
   applied_pr: 59
-  rationale: Register v2 L2 completion for the FA Build cell; composed
-    by the new dea:group-financial-build.
+  rationale: Register v2 L2 completion for the FA Build cell; composed by the new processes:group-fa-build-d7ww77.
 - tranche_id: fa-op.1
-  context_ref: dea:pc-fa-operate
+  context_ref: processes:pc-fa-operate-afew7e
   context_name: financial-and-accounting / operate
-  group_ref: dea:group-financial-operate
+  group_ref: processes:group-fa-operate-mazyjd
   cell: FinanceAndAccounting.Operate
   l2_candidates:
-    - id: dea:process-run-accounts-payable
-      name: Run Accounts Payable
-      process_type: core
-    - id: dea:process-run-accounts-receivable
-      name: Run Accounts Receivable
-      process_type: core
-    - id: dea:process-execute-payroll
-      name: Execute Payroll
-      process_type: core
-    - id: dea:process-manage-cash-and-liquidity
-      name: Manage Cash and Liquidity
-      process_type: management
-    - id: dea:process-perform-financial-close
-      name: Perform Financial Close
-      process_type: core
-    - id: dea:process-manage-tax-compliance-and-filings
-      name: Manage Tax Compliance and Filings
-      process_type: management
-    - id: dea:process-operate-financial-reporting-and-disclosure
-      name: Operate Financial Reporting and Disclosure
-      process_type: core
+  - id: processes:process-fa-operate-wkqaqp
+    name: Run Accounts Payable
+    process_type: core
+  - id: processes:process-fa-operate-sdppmp
+    name: Run Accounts Receivable
+    process_type: core
+  - id: processes:process-fa-operate-zpmxzp
+    name: Execute Payroll
+    process_type: core
+  - id: processes:process-fa-operate-2pmqb2
+    name: Manage Cash and Liquidity
+    process_type: management
+  - id: processes:process-fa-operate-4xn4d6
+    name: Perform Financial Close
+    process_type: core
+  - id: processes:process-fa-operate-8vqvkk
+    name: Manage Tax Compliance and Filings
+    process_type: management
+  - id: processes:process-fa-operate-ycba3k
+    name: Operate Financial Reporting and Disclosure
+    process_type: core
   records:
-    - dea:process-run-accounts-payable
-    - dea:process-run-accounts-receivable
-    - dea:process-execute-payroll
-    - dea:process-manage-cash-and-liquidity
-    - dea:process-perform-financial-close
-    - dea:process-manage-tax-compliance-and-filings
-    - dea:process-operate-financial-reporting-and-disclosure
+  - processes:process-fa-operate-wkqaqp
+  - processes:process-fa-operate-sdppmp
+  - processes:process-fa-operate-zpmxzp
+  - processes:process-fa-operate-2pmqb2
+  - processes:process-fa-operate-4xn4d6
+  - processes:process-fa-operate-8vqvkk
+  - processes:process-fa-operate-ycba3k
   status: applied
   applied_by: CR-BP-21e.1
   applied_pr: 59
-  rationale: Register v2 L2 completion for the FA Operate cell; composed
-    by the new dea:group-financial-operate.
+  rationale: Register v2 L2 completion for the FA Operate cell; composed by the new processes:group-fa-operate-mazyjd.
 - tranche_id: fa-im.1
-  context_ref: dea:pc-fa-improve
+  context_ref: processes:pc-fa-improve-haqf4w
   context_name: financial-and-accounting / improve
-  group_ref: dea:group-financial-improve
+  group_ref: processes:group-fa-improve-hvq8u8
   cell: FinanceAndAccounting.Improve
   l2_candidates:
-    - id: dea:process-refine-financial-controls-and-policies
-      name: Refine Financial Controls and Policies
-      process_type: management
-    - id: dea:process-evolve-treasury-and-funding-model
-      name: Evolve Treasury and Funding Model
-      process_type: management
+  - id: processes:process-fa-improve-cdtsbq
+    name: Refine Financial Controls and Policies
+    process_type: management
+  - id: processes:process-fa-improve-2kemkq
+    name: Evolve Treasury and Funding Model
+    process_type: management
   records:
-    - dea:process-refine-financial-controls-and-policies
-    - dea:process-evolve-treasury-and-funding-model
+  - processes:process-fa-improve-cdtsbq
+  - processes:process-fa-improve-2kemkq
   status: applied
   applied_by: CR-BP-21e.1
   applied_pr: 59
-  rationale: Register v2 L2 completion for the FA Improve cell; composed
-    by the new dea:group-financial-improve.
+  rationale: Register v2 L2 completion for the FA Improve cell; composed by the new processes:group-fa-improve-hvq8u8.
 - tranche_id: ge-c.1
-  context_ref: dea:pc-ge-c
+  context_ref: processes:pc-ge-conceive-b5xwpd
   context_name: governance-and-existence / conceive
-  group_ref: dea:group-governance-conception
+  group_ref: processes:group-ge-conceive-y93bwr
   cell: GovernanceAndExistence.Conceive
   records:
-  - dea:process-frame-risk-framework-direction
+  - processes:process-ge-conceive-6qnkhh
   status: applied
   applied_by: CR-BP-21f.1
   applied_pr: 60
-  rationale: Register v2 L2 completion for the GE Conceive cell; composed by the existing dea:group-governance-conception.
+  rationale: Register v2 L2 completion for the GE Conceive cell; composed by the existing processes:group-ge-conceive-y93bwr.
 - tranche_id: ge-d.1
-  context_ref: dea:pc-ge-d
+  context_ref: processes:pc-ge-design-3f2gjr
   context_name: governance-and-existence / design
-  group_ref: dea:group-governance-system-design
+  group_ref: processes:group-ge-design-jexyp6
   cell: GovernanceAndExistence.Design
   records:
-  - dea:process-design-risk-framework
+  - processes:process-ge-design-pqkvdc
   status: applied
   applied_by: CR-BP-21f.1
   applied_pr: 60
-  rationale: Register v2 L2 completion for the GE Design cell; composed by the existing dea:group-governance-system-design.
+  rationale: Register v2 L2 completion for the GE Design cell; composed by the existing processes:group-ge-design-jexyp6.
 - tranche_id: ge-b.1
-  context_ref: dea:pc-ge-b
+  context_ref: processes:pc-ge-build-52hjrc
   context_name: governance-and-existence / build
-  group_ref: dea:group-governance-body-establishment
+  group_ref: processes:group-ge-build-tbc3ta
   cell: GovernanceAndExistence.Build
   records:
-  - dea:process-establish-risk-and-control-apparatus
+  - processes:process-ge-build-rx7kt5
   status: applied
   applied_by: CR-BP-21f.1
   applied_pr: 60
-  rationale: Register v2 L2 completion for the GE Build cell; composed by the existing dea:group-governance-body-establishment.
+  rationale: Register v2 L2 completion for the GE Build cell; composed by the existing processes:group-ge-build-tbc3ta.
 - tranche_id: ge-op.1
-  context_ref: dea:pc-ge-op
+  context_ref: processes:pc-ge-operate-hb2dac
   context_name: governance-and-existence / operate
-  group_ref: dea:group-governance-oversight
+  group_ref: processes:group-ge-operate-v2eu8x
   cell: GovernanceAndExistence.Operate
   records:
-  - dea:process-operate-enterprise-risk-oversight
-  - dea:process-conduct-assurance-review
+  - processes:process-ge-operate-tpenm6
+  - processes:process-ge-operate-zwaes5
   status: applied
   applied_by: CR-BP-21f.1
   applied_pr: 60
-  rationale: Register v2 L2 completion for the GE Operate cell; composed by the existing dea:group-governance-oversight.
+  rationale: Register v2 L2 completion for the GE Operate cell; composed by the existing processes:group-ge-operate-v2eu8x.
 - tranche_id: ge-im.1
-  context_ref: dea:pc-ge-im
+  context_ref: processes:pc-ge-improve-c78ppp
   context_name: governance-and-existence / improve
-  group_ref: dea:group-governance-review-and-learning
+  group_ref: processes:group-ge-improve-s9r3qj
   cell: GovernanceAndExistence.Improve
   records:
-  - dea:process-score-audit-findings
-  - dea:process-improve-policy-and-control-framework
+  - processes:process-ge-improve-axtq3b
+  - processes:process-ge-improve-u3g5dh
   status: applied
   applied_by: CR-BP-21f.1
   applied_pr: 60
-  rationale: Register v2 L2 completion for the GE Improve cell; composed by the existing dea:group-governance-review-and-learning.
+  rationale: Register v2 L2 completion for the GE Improve cell; composed by the existing processes:group-ge-improve-s9r3qj.
 - tranche_id: pv-act.64
-  context_ref: dea:pc-pv-activate
+  context_ref: processes:pc-pv-activate-f7kne7
   context_name: product-and-value / activate
-  group_ref: dea:group-service-transition-activation
+  group_ref: processes:group-pv-activate-e7fdrk
   cell: ProductAndValue.Activate
   records:
-  - dea:process-transition-to-service
+  - processes:process-pv-activate-5686v7
   status: applied
   applied_by: CR-BP-64
   applied_pr: null
-  rationale: First discovery-driven admission (CR-BP-62 method; CR-BP-63
-    exercise; CR-BP-64 admission). Transition to Service scored 10/10 with an
-    ADMIT-CANONICAL recommendation; the cell reverses from backlog-deferred to
-    ratified-accepted/landed in register v5.
+  rationale: First discovery-driven admission (CR-BP-62 method; CR-BP-63 exercise; CR-BP-64 admission). Transition to Service scored 10/10 with an ADMIT-CANONICAL recommendation; the cell reverses from backlog-deferred to ratified-accepted/landed in register v5.
 - tranche_id: pv-ret.64
-  context_ref: dea:pc-pv-retire
+  context_ref: processes:pc-pv-retire-eeck6d
   context_name: product-and-value / retire
-  group_ref: dea:group-service-transition-retirement
+  group_ref: processes:group-pv-retire-buqktk
   cell: ProductAndValue.Retire
   records:
-  - dea:process-transition-out-of-service
+  - processes:process-pv-retire-6us5am
   status: applied
   applied_by: CR-BP-64
   applied_pr: null
-  rationale: First discovery-driven admission at a Retire coordinate.
-    Transition Out of Service scored 10/10 with an ADMIT-CANONICAL
-    recommendation; the cell reverses from backlog-deferred to
-    ratified-accepted/landed in register v5.
+  rationale: First discovery-driven admission at a Retire coordinate. Transition Out of Service scored 10/10 with an ADMIT-CANONICAL recommendation; the cell reverses from backlog-deferred to ratified-accepted/landed in register v5.
 - tranche_id: ge-act.65
-  context_ref: dea:pc-ge-activate
+  context_ref: processes:pc-ge-activate-hxtfcv
   context_name: governance-and-existence / activate
-  group_ref: dea:group-governance-instrument-commencement
+  group_ref: processes:group-ge-activate-7d46tn
   cell: GovernanceAndExistence.Activate
   records:
-  - dea:process-bring-into-force
+  - processes:process-ge-activate-wegs44
   status: applied
   applied_by: CR-BP-65
   applied_pr: null
-  rationale: Discovery-driven admission at the G&E Activate coordinate.
-    Bring into Force scored 9/10 with an ADMIT-CANONICAL recommendation on
-    universal entry-into-force semantics; the cell reverses from
-    backlog-deferred to ratified-accepted/landed in register v6.
+  rationale: Discovery-driven admission at the G&E Activate coordinate. Bring into Force scored 9/10 with an ADMIT-CANONICAL recommendation on universal entry-into-force semantics; the cell reverses from backlog-deferred to ratified-accepted/landed in register v6.
 - tranche_id: oe-ret.66
-  context_ref: dea:pc-oe-retire
+  context_ref: processes:pc-eo-retire-nw3ynf
   context_name: enablement-and-operations / retire
-  group_ref: dea:group-operations-and-asset-decommissioning
+  group_ref: processes:group-eo-retire-n9ge5c
   cell: EnablementAndOperations.Retire
   records:
-  - dea:process-decommission
+  - processes:process-eo-retire-rpg6d4
   status: applied
   applied_by: CR-BP-66
   applied_pr: null
-  rationale: Discovery-driven admission at the E&O Retire coordinate.
-    Decommission scored 9/10 with an ADMIT-CANONICAL recommendation on
-    ISO 55000 asset end-of-life evidence; the cell reverses from
-    backlog-deferred to ratified-accepted/landed in register v7.
+  rationale: Discovery-driven admission at the E&O Retire coordinate. Decommission scored 9/10 with an ADMIT-CANONICAL recommendation on ISO 55000 asset end-of-life evidence; the cell reverses from backlog-deferred to ratified-accepted/landed in register v7.
 - tranche_id: pr-ret.67
-  context_ref: dea:pc-pr-retire
+  context_ref: processes:pc-pr-retire-2cusde
   context_name: party-and-relationship / retire
-  group_ref: dea:group-relationship-termination
+  group_ref: processes:group-pr-retire-c3u3wc
   cell: PartyAndRelationship.Retire
   records:
-  - dea:process-close-enterprise-relationship
+  - processes:process-pr-retire-bd3asa
   status: applied
   applied_by: CR-BP-67
   applied_pr: null
-  rationale: Final discovery-driven admission (P&R Retire coordinate).
-    Close Enterprise Relationship scored 9/10 with an ADMIT-CANONICAL
-    recommendation on contract close-out and regulated offboarding
-    evidence; the cell reverses from backlog-deferred to
-    ratified-accepted/landed in register v8. This completes the
-    CR-BP-63 recommended admissions.
-
+  rationale: Final discovery-driven admission (P&R Retire coordinate). Close Enterprise Relationship scored 9/10 with an ADMIT-CANONICAL recommendation on contract close-out and regulated offboarding evidence; the cell reverses from backlog-deferred to ratified-accepted/landed in register v8. This completes the CR-BP-63 recommended admissions.
 - tranche_id: pr-act.71
-  context_ref: dea:pc-pr-act
+  context_ref: processes:pc-pr-activate-mwq7bj
   context_name: party-and-relationship / activate
-  group_ref: dea:group-regulated-onboarding
+  group_ref: processes:group-pr-activate-d7j4et
   cell: PartyAndRelationship.Activate
   records:
-  - dea:process-onboard-regulated-party-relationship
+  - processes:process-pr-activate-6qzuve
   status: applied
   applied_by: CR-BP-71
   applied_pr: '112'
-  rationale: >-
-    First discovery-driven admission under the CR-BP-62 escape-clause
-    method (CR-BP-70 discovery exercise; CR-BP-71 admission tranche).
-    Onboard Regulated Party Relationship scored 9/10 with an
-    ADMIT-CANONICAL recommendation at PartyAndRelationship x Activate
-    on the register v2 cell verbatim escape condition (defer until a
-    regulated onboarding, e.g. KYC for financial services, requires a
-    distinct group). Evidence base -- FATF R.10, FinCEN CDD 31 CFR
-    1010.230 + CIP, EU AMLD4/AMLD5/AMLD6, Basel BCBS ML/FT guidelines,
-    Wolfsberg Group guidance. The cell reverses from backlog-deferred
-    to ratified-accepted/landed in register v9.
-
+  rationale: First discovery-driven admission under the CR-BP-62 escape-clause method (CR-BP-70 discovery exercise; CR-BP-71 admission tranche). Onboard Regulated Party Relationship scored 9/10 with an ADMIT-CANONICAL recommendation at PartyAndRelationship x Activate on the register v2 cell verbatim escape condition (defer until a regulated onboarding, e.g. KYC for financial services, requires a distinct group). Evidence base -- FATF R.10, FinCEN CDD 31 CFR 1010.230 + CIP, EU AMLD4/AMLD5/AMLD6, Basel BCBS ML/FT guidelines, Wolfsberg Group guidance. The cell reverses from backlog-deferred to ratified-accepted/landed in register v9.
 - tranche_id: ao-ret.73
-  context_ref: dea:pc-ao-retire
+  context_ref: processes:pc-ao-retire-3kqe9c
   context_name: agency-and-organization / retire
-  group_ref: dea:group-regulated-workforce-wind-down
+  group_ref: processes:group-ao-retire-jspuzz
   cell: AgencyAndOrganization.Retire
   records:
-  - dea:process-conduct-regulated-workforce-wind-down
+  - processes:process-ao-retire-g3eyr8
   status: applied
   applied_by: CR-BP-73
   applied_pr: '114'
-  rationale: >-
-    Second discovery-driven admission under the CR-BP-62 escape-clause
-    method (CR-BP-72 discovery exercise; CR-BP-73 admission tranche).
-    Conduct Regulated Workforce Wind-Down scored 9/10 with an
-    ADMIT-CANONICAL recommendation at AgencyAndOrganization x Retire
-    on the register v2 cell verbatim escape condition (defer until a
-    regulated wind-down, e.g. mass layoff, requires a dedicated L1
-    group). Evidence base -- U.S. WARN Act (29 U.S.C. 2101 et seq.;
-    20 CFR Part 639), EU Council Directive 98/59/EC, ILO Conventions
-    158 (1982) and 135 (1971), OECD Employment Outlook, UK TULRCA
-    s.188, German BetrVG section 17. The cell reverses from
-    backlog-deferred to ratified-accepted/landed in register v10.
+  rationale: Second discovery-driven admission under the CR-BP-62 escape-clause method (CR-BP-72 discovery exercise; CR-BP-73 admission tranche). Conduct Regulated Workforce Wind-Down scored 9/10 with an ADMIT-CANONICAL recommendation at AgencyAndOrganization x Retire on the register v2 cell verbatim escape condition (defer until a regulated wind-down, e.g. mass layoff, requires a dedicated L1 group). Evidence base -- U.S. WARN Act (29 U.S.C. 2101 et seq.; 20 CFR Part 639), EU Council Directive 98/59/EC, ILO Conventions 158 (1982) and 135 (1971), OECD Employment Outlook, UK TULRCA s.188, German BetrVG section 17. The cell reverses from backlog-deferred to ratified-accepted/landed in register v10.
 - tranche_id: fa-ret.75
-  context_ref: dea:pc-fa-retire
+  context_ref: processes:pc-fa-retire-64q5p9
   context_name: finance-and-accounting / retire
-  group_ref: dea:group-regulated-run-off
+  group_ref: processes:group-fa-retire-2ptdnw
   cell: FinanceAndAccounting.Retire
   records:
-  - dea:process-conclude-regulated-run-off
+  - processes:process-fa-retire-wkbrsa
   status: applied
   applied_by: CR-BP-75
   applied_pr: '116'
-  rationale: 'Third discovery-driven admission under the CR-BP-62 escape-clause method (CR-BP-74 discovery exercise; CR-BP-75 admission tranche). Conclude a Regulated Run-Off scored 9/10 with an ADMIT-CANONICAL recommendation at FinanceAndAccounting x Retire on the register v2 cell verbatim escape condition (defer until a regulated unwind, e.g. mutual insurer run-off, requires a standalone group). Evidence base -- PRA PS20/24 (UK, in force 30 June 2026) + FSB Final Guidance on Insurance Resolution Strategies 2025 + NAIC Model Regulation Service of Legal Process (Model 901) + IFRS 17 Insurance Contracts (effective 2023) + IFRS 5 + ASC 205-30 Liquidation Basis (FASB ASU 2013-07) + ASC 944 + IRO Best Practice Guidance 2024. The cell reverses from backlog-deferred to ratified-accepted/landed in register v11.'
+  rationale: Third discovery-driven admission under the CR-BP-62 escape-clause method (CR-BP-74 discovery exercise; CR-BP-75 admission tranche). Conclude a Regulated Run-Off scored 9/10 with an ADMIT-CANONICAL recommendation at FinanceAndAccounting x Retire on the register v2 cell verbatim escape condition (defer until a regulated unwind, e.g. mutual insurer run-off, requires a standalone group). Evidence base -- PRA PS20/24 (UK, in force 30 June 2026) + FSB Final Guidance on Insurance Resolution Strategies 2025 + NAIC Model Regulation Service of Legal Process (Model 901) + IFRS 17 Insurance Contracts (effective 2023) + IFRS 5 + ASC 205-30 Liquidation Basis (FASB ASU 2013-07) + ASC 944 + IRO Best Practice Guidance 2024. The cell reverses from backlog-deferred to ratified-accepted/landed in register v11.
 - tranche_id: ge-ret.78
-  context_ref: dea:pc-ge-retire
+  context_ref: processes:pc-ge-retire-kndw6x
   context_name: governance-and-existence / retire
-  group_ref: dea:group-regulated-governance-unwind
+  group_ref: processes:group-ge-retire-v3vy7t
   cell: GovernanceAndExistence.Retire
   records:
-  - dea:process-effect-regulator-mandated-governance-unwind
+  - processes:process-ge-retire-mjq5hg
   status: applied
   applied_by: CR-BP-78
-  applied_pr: 'PENDING'
-  rationale: >-
-    Fourth discovery-driven admission under the CR-BP-62 escape-clause
-    method (CR-BP-76 discovery exercise; CR-BP-78 admission tranche).
-    Effect Regulator-Mandated Governance Unwind scored 9/10 with an
-    ADMIT-CANONICAL recommendation at GovernanceAndExistence x Retire
-    on the register v2 cell verbatim escape condition (defer until a
-    sector example, e.g. regulator-mandated unwind, requires a
-    standalone group). Evidence base -- UK FCA Wind-Down Planning
-    Group supervisory framework; California Corporations Code
-    sections 5033-5034 (US nonprofit dissolution); IRS 501(c)(3)
-    federal tax-exempt dissolution obligations; state attorney-general
-    charity oversight and asset-disposition review; federal banking
-    regulator cease-and-desist authority; US federal and state court
-    receivership authority. The cell reverses from backlog-deferred to
-    ratified-accepted/landed in register v12. Voluntary governance
-    sunset absent regulator or court mandate remains out of scope and
-    is reserved for a future G&E x Improve coordinate charter extension.
+  applied_pr: PENDING
+  rationale: Fourth discovery-driven admission under the CR-BP-62 escape-clause method (CR-BP-76 discovery exercise; CR-BP-78 admission tranche). Effect Regulator-Mandated Governance Unwind scored 9/10 with an ADMIT-CANONICAL recommendation at GovernanceAndExistence x Retire on the register v2 cell verbatim escape condition (defer until a sector example, e.g. regulator-mandated unwind, requires a standalone group). Evidence base -- UK FCA Wind-Down Planning Group supervisory framework; California Corporations Code sections 5033-5034 (US nonprofit dissolution); IRS 501(c)(3) federal tax-exempt dissolution obligations; state attorney-general charity oversight and asset-disposition review; federal banking regulator cease-and-desist authority; US federal and state court receivership authority. The cell reverses from backlog-deferred to ratified-accepted/landed in register v12. Voluntary governance sunset absent regulator or court mandate remains out of scope and is reserved for a future G&E
+    x Improve coordinate charter extension.
 - tranche_id: ao-act.81
-  context_ref: dea:pc-ao-activate
+  context_ref: processes:pc-ao-activate-kusw2u
   context_name: agency-and-organization / activate
-  group_ref: dea:group-licensed-workforce-mobilization
+  group_ref: processes:group-ao-activate-jjx738
   cell: AgencyAndOrganization.Activate
   records:
-  - dea:process-mobilize-licensed-workforce
+  - processes:process-ao-activate-jqxtqn
   status: applied
   applied_by: CR-BP-81
-  applied_pr: 'PENDING'
-  rationale: >-
-    Fifth discovery-driven admission under the CR-BP-62 escape-clause
-    method (CR-BP-80 discovery exercise; CR-BP-81 admission tranche).
-    Mobilize Licensed Workforce scored 10/10 with an ADMIT-CANONICAL
-    recommendation at AgencyAndOrganization x Activate on the register
-    v12 cell verbatim escape rationale (workforce activation is often
-    an attribute of build). The 2024-2026 supervised-individual-
-    licensing landscape -- FCA SMCR Statements of Responsibilities
-    (UK CF1..CF11 controlled functions), US state healthcare licensure
-    regimes, NAIC Producer Licensing Model Act, EASA / FAA crew
-    licensing, UK SRA regulated-professionals regime, US state bar
-    admissions -- establishes regulator-controlled scope, fitness-
-    and-propriety attestation, supervised-training completion, and
-    continuing-supervisor notification as distinct enterprise concerns
-    that supersede the deferral rationale. The cell reverses from
-    backlog-deferred to ratified-accepted/landed in register v13.
-    L3 decomposition follows as CR-BP-87 (next slice).
+  applied_pr: PENDING
+  rationale: Fifth discovery-driven admission under the CR-BP-62 escape-clause method (CR-BP-80 discovery exercise; CR-BP-81 admission tranche). Mobilize Licensed Workforce scored 10/10 with an ADMIT-CANONICAL recommendation at AgencyAndOrganization x Activate on the register v12 cell verbatim escape rationale (workforce activation is often an attribute of build). The 2024-2026 supervised-individual- licensing landscape -- FCA SMCR Statements of Responsibilities (UK CF1..CF11 controlled functions), US state healthcare licensure regimes, NAIC Producer Licensing Model Act, EASA / FAA crew licensing, UK SRA regulated-professionals regime, US state bar admissions -- establishes regulator-controlled scope, fitness- and-propriety attestation, supervised-training completion, and continuing-supervisor notification as distinct enterprise concerns that supersede the deferral rationale. The cell reverses from backlog-deferred to ratified-accepted/landed in register v13. L3 decomposition follows as
+    CR-BP-87 (next slice).
 - tranche_id: oe-act.82
-  context_ref: dea:pc-oe-activate
+  context_ref: processes:pc-eo-activate-xdfscw
   context_name: enablement-and-operations / activate
-  group_ref: dea:group-regulated-operations-activation
+  group_ref: processes:group-eo-activate-bnmwuu
   cell: EnablementAndOperations.Activate
   records:
-  - dea:process-activate-operations-capability
+  - processes:process-eo-activate-sy5qsa
   status: applied
   applied_by: CR-BP-82
-  applied_pr: 'PENDING'
-  rationale: >-
-    Sixth discovery-driven admission under the CR-BP-62 escape-clause
-    method (CR-BP-80 discovery exercise; CR-BP-82 admission tranche).
-    Activate Operations Capability scored 10/10 with an
-    ADMIT-CANONICAL recommendation at EnablementAndOperations x
-    Activate on the register v12 cell verbatim escape rationale
-    (operations-capability activation is often an attribute of
-    build or steady-state operation). The 2024-2026
-    regulator-issued authorization landscape -- EASA / FAA Air
-    Operator Certificate (Part-OR / Part 119); PSD2 Articles 11
-    and 28 payment-institution authorization; EMA / FDA / MHRA
-    GMP certification; MiCA Article 59 crypto-asset-service-
-    provider authorization; ORR / ERA rail safety-case; nuclear
-    operations authorization -- establishes regulator-issued
-    authorization or certification as a distinct activation step
-    with continuing-supervisor notification, operations manuals,
-    and operational controls live on the regulated operations
-    record, distinct from capability build and from steady-state
-    operation. The cell reverses from backlog-deferred to
-    ratified-accepted/landed in register v14. L3 decomposition
-    follows as CR-BP-87 (next slice).
+  applied_pr: PENDING
+  rationale: Sixth discovery-driven admission under the CR-BP-62 escape-clause method (CR-BP-80 discovery exercise; CR-BP-82 admission tranche). Activate Operations Capability scored 10/10 with an ADMIT-CANONICAL recommendation at EnablementAndOperations x Activate on the register v12 cell verbatim escape rationale (operations-capability activation is often an attribute of build or steady-state operation). The 2024-2026 regulator-issued authorization landscape -- EASA / FAA Air Operator Certificate (Part-OR / Part 119); PSD2 Articles 11 and 28 payment-institution authorization; EMA / FDA / MHRA GMP certification; MiCA Article 59 crypto-asset-service- provider authorization; ORR / ERA rail safety-case; nuclear operations authorization -- establishes regulator-issued authorization or certification as a distinct activation step with continuing-supervisor notification, operations manuals, and operational controls live on the regulated operations record, distinct from capability build and from
+    steady-state operation. The cell reverses from backlog-deferred to ratified-accepted/landed in register v14. L3 decomposition follows as CR-BP-87 (next slice).
 - tranche_id: fa-act.83
-  context_ref: dea:pc-fa-activate
+  context_ref: processes:pc-fa-activate-yrhcfm
   context_name: finance-and-accounting / activate
-  group_ref: dea:group-regulated-billing-activation
+  group_ref: processes:group-fa-activate-n9s2z3
   cell: FinanceAndAccounting.Activate
   records:
-  - dea:process-activate-billing-capability
+  - processes:process-fa-activate-bzfywk
   status: applied
   applied_by: CR-BP-83
-  applied_pr: 'PENDING'
-  rationale: >-
-    Seventh discovery-driven admission under the CR-BP-62 escape-clause
-    method (CR-BP-80 discovery exercise; CR-BP-83 admission tranche).
-    Activate Billing Capability scored 10/10 with an
-    ADMIT-CANONICAL recommendation at FinanceAndAccounting x Activate
-    on the register v2 cell verbatim escape rationale (Activate and
-    Retire are lifecycle transition stages, not stable Process Group
-    operating scopes). The 2024-2026 regulator-acknowledged
-    accounting or rate framework landscape -- IFRS 17 transition;
-    NAIC statutory accounting; Solvency II; PUC rate-effective
-    billing; PSD2 / Federal Reserve / ECB settlement-account
-    activation -- establishes regulator-acknowledged accounting or
-    rate framework as a distinct activation step with continuing-
-    supervisor notification, tariff or pricing approval, and
-    operational controls (segregation of duties, audit trail,
-    reconciliation) live on the regulated billing record, distinct
-    from capability build and from steady-state billing. The cell
-    reverses from backlog-deferred to ratified-accepted/landed in
-    register v15. L3 decomposition follows as CR-BP-87 (next slice).
+  applied_pr: PENDING
+  rationale: Seventh discovery-driven admission under the CR-BP-62 escape-clause method (CR-BP-80 discovery exercise; CR-BP-83 admission tranche). Activate Billing Capability scored 10/10 with an ADMIT-CANONICAL recommendation at FinanceAndAccounting x Activate on the register v2 cell verbatim escape rationale (Activate and Retire are lifecycle transition stages, not stable Process Group operating scopes). The 2024-2026 regulator-acknowledged accounting or rate framework landscape -- IFRS 17 transition; NAIC statutory accounting; Solvency II; PUC rate-effective billing; PSD2 / Federal Reserve / ECB settlement-account activation -- establishes regulator-acknowledged accounting or rate framework as a distinct activation step with continuing- supervisor notification, tariff or pricing approval, and operational controls (segregation of duties, audit trail, reconciliation) live on the regulated billing record, distinct from capability build and from steady-state billing. The cell reverses from
+    backlog-deferred to ratified-accepted/landed in register v15. L3 decomposition follows as CR-BP-87 (next slice).
 - tranche_id: sd-act.86
-  context_ref: dea:pc-sd-activate
+  context_ref: processes:pc-sd-activate-ghaub8
   context_name: strategy-and-direction / activate
-  group_ref: dea:group-regulated-strategic-plan-activation
+  group_ref: processes:group-sd-activate-mbw9cc
   cell: StrategyAndDirection.Activate
   records:
-  - dea:process-institutionalize-regulated-strategic-plan
+  - processes:process-sd-activate-s9m34e
   status: applied
   applied_by: CR-BP-86
-  applied_pr: 'PENDING'
-  rationale: >-
-    Eighth discovery-driven admission under the CR-BP-62 escape-clause
-    method (CR-BP-80 discovery exercise; CR-BP-86 admission tranche).
-    Institutionalize Regulated Strategic Plan scored 9/10 with an
-    ADMIT-CANONICAL recommendation at StrategyAndDirection x Activate
-    on the register v2 cell verbatim escape rationale (Activate and
-    Retire are lifecycle transition stages, not stable Process Group
-    operating scopes). The 2024-2026 supervisor-acknowledged strategic-
-    plan landscape -- Basel ICAAP / SAA approval; BRRD Article 5
-    recovery-plan activation; NHS trust 5-year strategy approval; PUC
-    integrated resource plan and strategic-plan filing; bank recovery
-    and resolution plan activation -- establishes supervisor-acknowledged
-    strategic-plan filing as a distinct activation step with
-    supervisor's review completion, filing receipt preservation, and
-    operational monitoring framework launch under the regulator's
-    continuing supervision, distinct from strategy build and from
-    steady-state strategy execution. The cell reverses from backlog-
-    deferred to ratified-accepted/landed in register v16. L3
-    decomposition follows as CR-BP-87 (next slice).
+  applied_pr: PENDING
+  rationale: Eighth discovery-driven admission under the CR-BP-62 escape-clause method (CR-BP-80 discovery exercise; CR-BP-86 admission tranche). Institutionalize Regulated Strategic Plan scored 9/10 with an ADMIT-CANONICAL recommendation at StrategyAndDirection x Activate on the register v2 cell verbatim escape rationale (Activate and Retire are lifecycle transition stages, not stable Process Group operating scopes). The 2024-2026 supervisor-acknowledged strategic- plan landscape -- Basel ICAAP / SAA approval; BRRD Article 5 recovery-plan activation; NHS trust 5-year strategy approval; PUC integrated resource plan and strategic-plan filing; bank recovery and resolution plan activation -- establishes supervisor-acknowledged strategic-plan filing as a distinct activation step with supervisor's review completion, filing receipt preservation, and operational monitoring framework launch under the regulator's continuing supervision, distinct from strategy build and from steady-state strategy
+    execution. The cell reverses from backlog- deferred to ratified-accepted/landed in register v16. L3 decomposition follows as CR-BP-87 (next slice).
+- tranche_id: sd-ret.101
+  context_ref: processes:pc-sd-retire-zxnc3c
+  context_name: strategy-and-direction / retire
+  group_ref: processes:group-sd-retire-7fksad
+  cell: StrategyAndDirection.Retire
+  records:
+  - processes:process-sd-retire-umxf3c
+  status: applied
+  applied_by: CR-BP-101
+  applied_pr: PENDING
+  rationale: Ninth discovery-driven admission under the CR-BP-62 escape-clause method (CR-BP-80 discovery exercise, DEFER disposition lifted by user directive 2026-09-19; CR-BP-101 admission closes the 49-cell matrix; CR-BP-101a lands the L3 Activity decomposition tranche).
 cross_tranche_dependencies: none
 review_checkpoints:
   cd-b: 1

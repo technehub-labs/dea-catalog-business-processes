@@ -68,7 +68,7 @@ def _run(args: list[str]) -> subprocess.CompletedProcess:
     )
 
 
-def _record(id_="dea:process-self-test",
+def _record(id_="processes:process-self-test",
             name="Self Test",
             type_="Process",
             extra=None):
@@ -114,7 +114,8 @@ def test_cli_live_run_returns_conformant():
     result = _run([])
     assert result.returncode == 0, result.stdout + result.stderr
     assert "Execution Boundary (CR-BP-33; EXE-001..010): CONFORMANT" in result.stdout
-    assert "Records checked:   740" in result.stdout
+    # CR-BP-mv1: containment-tree walk now covers PCs + Tasks too (740 -> 3598)
+    assert "Records checked:   3598" in result.stdout
     assert "Opted-in (with Workflow refs): 0" in result.stdout
     assert "Findings:          0" in result.stdout
 
@@ -124,7 +125,7 @@ def test_cli_json_shape():
     assert result.returncode == 0, result.stdout + result.stderr
     data = json.loads(result.stdout)
     assert data["verdict"] == "CONFORMANT"
-    assert data["record_count"] == 740
+    assert data["record_count"] == 3598  # CR-BP-mv1: full-tree coverage
     assert data["opted_in_record_count"] == 0
     assert data["finding_count"] == 0
     rule_ids = {r["id"] for r in data["rules"]}
@@ -137,11 +138,11 @@ def test_cli_strict_mode_fails_on_findings(tmp_path):
     """--strict exits 1 when a record carries an execution leak."""
     v1 = tmp_path / "entities" / "v1-alpha"
     v1.mkdir(parents=True)
-    bad_dir = v1 / "dea:process-bad"
-    bad_dir.mkdir()
-    bad_yaml = bad_dir / "dea:process-bad.yaml"
+    bad_dir = v1 / "pr-operate" / "bad"
+    bad_dir.mkdir(parents=True)
+    bad_yaml = bad_dir / "processes-process-bad.yaml"
     bad_yaml.write_text(yaml.safe_dump(_record(
-        id_="dea:process-bad",
+        id_="processes:process-bad",
         extra={"executed_by": "the Sales team"},  # EXE-006 violation
     )))
     result = subprocess.run(
@@ -162,7 +163,7 @@ def test_cli_strict_mode_fails_on_findings(tmp_path):
 def test_exe_001_forbids_ordering_annotations():
     for fld in FORBIDDEN_COMPOSITION_ORDERING_FIELDS:
         r = _record(extra={"composes": [
-            {"target_id": "dea:activity-x",
+            {"target_id": "processes:activity-x",
              "relationship_type": "dea:composes",
              fld: 1}]})
         assert _check_exe_001(r) is not None, fld
@@ -170,24 +171,24 @@ def test_exe_001_forbids_ordering_annotations():
 
 def test_exe_001_clean_composes():
     r = _record(extra={"composes": [
-        {"target_id": "dea:activity-x",
+        {"target_id": "processes:activity-x",
          "relationship_type": "dea:composes"}]})
     assert _check_exe_001(r) is None
 
 
 def test_exe_002_forbids_ordering_on_composes_relationship():
     r = _record(extra={"composes": [
-        {"target_id": "dea:activity-x",
+        {"target_id": "processes:activity-x",
          "relationship_type": "dea:composes",
-         "precedes": "dea:activity-y"}]})
+         "precedes": "processes:activity-y"}]})
     assert _check_exe_002(r) is not None
 
 
 def test_exe_002_non_composes_relationship_is_exempt():
     r = _record(extra={"composes": [
-        {"target_id": "dea:activity-x",
+        {"target_id": "processes:activity-x",
          "relationship_type": "references",
-         "precedes": "dea:activity-y"}]})
+         "precedes": "processes:activity-y"}]})
     assert _check_exe_002(r) is None
 
 
@@ -331,15 +332,15 @@ def test_bp_record_with_no_workflow_references_is_clean():
 
 
 def test_activity_record_with_no_workflow_references_is_clean():
-    r = _record(type_="Activity", id_="dea:activity-self-test")
+    r = _record(type_="Activity", id_="processes:activity-self-test")
     assert evaluate([(Path("/x"), r)]) == []
 
 
 def test_process_group_record_with_no_workflow_references_is_clean():
-    r = _record(type_="ProcessGroup", id_="dea:group-self-test")
+    r = _record(type_="ProcessGroup", id_="processes:group-self-test")
     assert evaluate([(Path("/x"), r)]) == []
 
 
 def test_process_context_record_with_no_workflow_references_is_clean():
-    r = _record(type_="ProcessContext", id_="dea:pc-self-test")
+    r = _record(type_="ProcessContext", id_="processes:pc-self-test")
     assert evaluate([(Path("/x"), r)]) == []

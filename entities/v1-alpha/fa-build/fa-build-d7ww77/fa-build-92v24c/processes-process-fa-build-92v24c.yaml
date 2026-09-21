@@ -1,0 +1,80 @@
+id: processes:process-fa-build-92v24c
+name: Build Budgeting and Forecasting Systems
+type: Process
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+process_intent: develop
+process_type: core
+context:
+- ref: processes:pc-fa-build-pztsp9
+description: 'Build Budgeting and Forecasting Systems (build stage, core process). Landed by CR-BP-21e.1
+
+  from the FinanceAndAccounting register v2.
+
+  '
+trigger: A planning cycle or budget tool rebuild is scoped.
+outcome: Budgeting and forecasting systems are built with models, integrations, and controls delivered for operate budgeting.
+triggers:
+- A planning cycle or budget tool rebuild is scoped.
+outcomes:
+- Budgeting and forecasting systems are built with models, integrations, and controls delivered for operate budgeting.
+identity:
+  verb: Build
+  object: Budgeting and Forecasting Systems
+  outcome_statement: Budgeting and forecasting systems are built with models, integrations, and controls delivered for operate budgeting.
+  evidence_links:
+  - type: documentation
+    ref: change-requests/CR-BP-21e.1.md
+relationships:
+- source_id: processes:process-fa-build-92v24c
+  relationship_type: serves
+  target_id: ecf:financeAccounting.build
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: FinanceAndAccounting
+    stage: Build
+    identifier: ecf:financeAccounting.build
+  target_id: ecf:financeAccounting.build
+metadata:
+  established_by: CR-BP-21e.1
+  established_at: '2026-09-08'
+  activity_references:
+  - processes:activity-fa-build-v4regt
+  - processes:activity-fa-build-nhup75
+  - processes:activity-fa-build-dsxzrc
+  - processes:activity-fa-build-jwt3uv
+change_history:
+- version: 1.0.0
+  date: '2026-09-08'
+  cr: CR-BP-21e.1
+  change: 'Initial landing under CR-BP-21e.1 (FinanceAndAccounting completion).
+
+    '
+- date: '2026-09-13'
+  cr: CR-BP-52
+  change: 'L3 decomposition of this Business Process: 4 Activities
+
+    landed under the structured deposition pattern (research
+
+    deposition at research/l3-candidate-universe.yaml, then
+
+    canonical Activity records) as part of the CR-BP-52
+
+    FinanceAndAccounting Conceive + Design + Build tranche.
+
+    Adds metadata.activity_references[] back-references per
+
+    ACT-010 bidirectional traceability. Additive metadata-only
+
+    change; BP identity and semantics unchanged, so version
+
+    remains unchanged per SIV-004 (CR-BP-34d).
+
+    '

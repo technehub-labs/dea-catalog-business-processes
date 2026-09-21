@@ -1,0 +1,103 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-69
+status: candidate-not-canonical; subject to review
+parent_business_process: processes:process-pv-retire-6us5am
+coordinate:
+  domain: ProductAndValue
+  stage: Retire
+  process_context: processes:pc-pv-retire-eeck6d
+  process_group: processes:group-pv-retire-buqktk
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/processes:process-pv-retire-6us5am
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: processes:activity-pv-retire-vbn7s6
+  name: "Plan Service Withdrawal"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Withdrawal planning, notice preparation, dependency and timeline assessment."
+  out_of_scope:
+  - "Withdrawal execution (processes:activity-pv-retire-6hqeys)"
+  - "Residual obligation routing (processes:activity-pv-retire-6b3zth)"
+  evidence:
+  - "Parent BP trigger: an approved retirement decision exists for the proposition, product or service."
+  disposition: landed
+  landed_at: '2026-09-15'
+  landed_by: CR-BP-69
+- id: processes:activity-pv-retire-6hqeys
+  name: "Execute Service Withdrawal"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Withdrawal execution, de-listing from active service, user migration execution."
+  out_of_scope:
+  - "Withdrawal planning (processes:activity-pv-retire-vbn7s6)"
+  - "Residual obligation resolution (processes:activity-pv-retire-6b3zth)"
+  evidence:
+  - "Parent BP outcome: the proposition is no longer operationally relied upon."
+  disposition: landed
+  landed_at: '2026-09-15'
+  landed_by: CR-BP-69
+- id: processes:activity-pv-retire-6b3zth
+  name: "Resolve Residual Obligations"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Residual obligation identification, routing to owning functions, disposition tracking."
+  out_of_scope:
+  - "Withdrawal execution (processes:activity-pv-retire-6hqeys)"
+  - "Retirement closure confirmation (processes:activity-pv-retire-mqkper)"
+  evidence:
+  - "Parent BP outcome: residual obligations are identified and routed."
+  disposition: landed
+  landed_at: '2026-09-15'
+  landed_by: CR-BP-69
+- id: processes:activity-pv-retire-mqkper
+  name: "Confirm Retirement Closure"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Closure evidence capture, archival, catalogue de-listing confirmation."
+  out_of_scope:
+  - "Residual obligation resolution (processes:activity-pv-retire-6b3zth)"
+  - "Asset disposal routing (processes:process-eo-retire-rpg6d4 concern where assets are involved)"
+  evidence:
+  - "Parent BP outcome: the proposition is no longer operationally relied upon; residuals routed."
+  disposition: landed
+  landed_at: '2026-09-15'
+  landed_by: CR-BP-69
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."

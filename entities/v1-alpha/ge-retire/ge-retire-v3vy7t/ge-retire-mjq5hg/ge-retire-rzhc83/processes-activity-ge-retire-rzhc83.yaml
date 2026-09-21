@@ -1,0 +1,75 @@
+id: processes:activity-ge-retire-rzhc83
+type: Activity
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+name: Assign Retained-Records Custodianship
+definition: 'The cohesive grouping of work within Effect Regulator-Mandated Governance Unwind that assigns retained-records custodianship to a designated custodian (with the service-of-process agent retained for the duration of the statutory retention period), confirms the custodian accepts the role, and confirms the regulator or court is satisfied with the assignment.
+
+  '
+belongs_to_business_process: processes:process-ge-retire-mjq5hg
+cohesion_rationale: Constituent work shares a single records-custodianship concern (the post-dissolution retention of entity records for the statutory period plus a service-of-process agent), one input class (order-scope register plus entity records plus statutory retention map), and one output (a documented custodian designation with regulator or court acknowledgement). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: GovernanceAndExistence
+    stage: Retire
+    identifier: ecf:governanceExistence.retire
+metadata:
+  established_by: CR-BP-79
+  established_at: '2026-09-16'
+  change_history:
+  - cr: CR-BP-79
+    date: '2026-09-16'
+    change: 'Initial L3 Activity entry for dea:process-effect-regulator-mandated-governance-unwind; lands as part of the CR-BP-79
+
+      L3 GE Retire admission tranche (pattern proven by the pilot and prior
+
+      tranches, including CR-BP-77 admitted-regulated-tranche). Classified
+
+      per CR-BP-32 section 5 (fails standalone executability and resource
+
+      dedication); decomposition boundary marker per CR-BP-32 section 12
+
+      pending Task records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-assign-retained-records-custodianship-intake, dea:task-assign-retained-records-custodianship-verify, dea:task-assign-retained-records-custodianship-transform, dea:task-assign-retained-records-custodianship-confirm, dea:task-assign-retained-records-custodianship-record).'
+composes:
+- source_id: processes:activity-ge-retire-rzhc83
+  target_id: processes:task-ge-retire-intake-aa2bv5
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-ge-retire-rzhc83
+  target_id: processes:task-ge-retire-verify-x2rtfs
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-ge-retire-rzhc83
+  target_id: processes:task-ge-retire-transform-jcgs9j
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-ge-retire-rzhc83
+  target_id: processes:task-ge-retire-confirm-7en975
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-ge-retire-rzhc83
+  target_id: processes:task-ge-retire-record-wbjrn5
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

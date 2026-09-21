@@ -1,0 +1,137 @@
+id: processes:group-fa-build-d7ww77
+type: ProcessGroup
+version: 1.0.0
+name: Financial Build
+definition: 'The bounded Process Group that organises the Business Process responsibilities of implementing financial systems, budgeting and forecasting tooling, and tax/compliance capability in the FinanceAndAccounting x Build context. v2.4.0 grounding (register v2 FA/build cell).
+
+  '
+process_context: processes:pc-fa-build-pztsp9
+scope:
+  includes:
+  - Financial systems and ledger implementation
+  - Budgeting and forecasting systems build
+  - Tax and compliance capability onboarding
+  excludes:
+  - Financial design (Design stage; adjacent context)
+  - Financial operations (Operate stage; adjacent context)
+outcomes:
+- Financial systems, budgeting tooling, and tax capability are operational.
+- Built capabilities hand over to financial operations.
+composes:
+- source_id: processes:group-fa-build-d7ww77
+  target_id: processes:process-fa-build-d5kb5m
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21e.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21e.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-fa-build-d7ww77
+  target_id: processes:process-fa-build-92v24c
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21e.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21e.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-fa-build-d7ww77
+  target_id: processes:process-fa-build-ucfjgt
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21e.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21e.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-fa-build-d7ww77
+  target_id: processes:process-fa-build-ydnzjc
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21e.1).
+
+    The PC record (dea:pc-fa-build) lists this process in its
+
+    `processes:` list but the PG composes[] was missing the entry.
+
+    Added per CR-BP-36 MECE-008 remediation.
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-36
+    asserted_by: dea-team
+    asserted_at: '2026-09-12'
+process_group_kind: end-to-end
+status: accepted
+lifecycle_status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: FinanceAndAccounting
+    stage: Build
+    identifier: ecf:financeAccounting.build
+evidence:
+- source: CR-BP-19 (register v2, ratified against ECF v2.4.0)
+  claim: 'This Process Group''s coordinate is ratified-accepted in register
+
+    v2. CR-BP-21e.1 lands the corresponding L1 group as part of the
+
+    FinanceAndAccounting completion tranche.
+
+    '
+  strength: E4
+  reference: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+metadata:
+  established_by: CR-BP-21e.1
+  established_at: '2026-09-08'
+  cross_context_overlap: []
+  change_history:
+  - cr: CR-BP-21e.1
+    date: '2026-09-08'
+    change: 'Initial Process Group record; promoted from the CR-BP-19 register
+
+      v2 (ratified against ECF v2.4.0) as part of the CR-BP-21e.1
+
+      FinanceAndAccounting completion tranche. Composes 3 L2 processes.
+
+      '
+  - cr: CR-BP-36
+    date: '2026-09-12'
+    change: 'MECE-008 remediation: added dea:process-secure-funding-facilities
+
+      to composes[] (was listed in dea:pc-fa-build processes: but missing
+
+      from this PG''s composes[]). Composes 4 L2 processes.
+
+      '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21e.1-finance-accounting-completion.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

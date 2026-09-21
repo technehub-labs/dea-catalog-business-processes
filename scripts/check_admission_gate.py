@@ -52,8 +52,8 @@ from typing import Iterable
 
 import yaml
 
-ID_PATTERN = re.compile(r"^dea:process-[a-z0-9-]+$")
-PC_PATTERN = re.compile(r"^dea:pc-[a-z0-9-]+$")
+ID_PATTERN = re.compile(r"^processes:process-[a-z0-9-]+$")
+PC_PATTERN = re.compile(r"^processes:pc-[a-z0-9-]+$")
 PG_PATTERN = re.compile(r"^dea:pg-[a-z0-9-]+$")
 APPROVED_INTENTS = {
     "govern", "manage", "operate", "deliver", "support", "develop",
@@ -62,8 +62,9 @@ APPROVED_INTENTS = {
 
 
 def _catalog_pc_ids(root: Path) -> set[str]:
+    """CR-BP-mv1: PCs live in the containment tree (contexts/ is retired)."""
     ids: set[str] = set()
-    for d in (root / "contexts" / "v1-alpha").rglob("*.yaml"):
+    for d in (root / "entities" / "v1-alpha").rglob("processes-pc-*.yaml"):
         data = _try_load(d)
         if isinstance(data, dict):
             rid = data.get("id")
@@ -73,17 +74,14 @@ def _catalog_pc_ids(root: Path) -> set[str]:
 
 
 def _catalog_pg_ids(root: Path) -> set[str]:
+    """CR-BP-mv1: PGs live in the containment tree (filename-derived)."""
     ids: set[str] = set()
-    for d in (root / "entities" / "v1-alpha").rglob("*.yaml"):
-        # Only ProcessGroup records (top-level file under dea:pg-*)
-        rel = d.relative_to(root)
-        parts = rel.parts
-        if len(parts) >= 3 and parts[1].startswith("dea:pg-"):
-            data = _try_load(d)
-            if isinstance(data, dict):
-                rid = data.get("id")
-                if isinstance(rid, str):
-                    ids.add(rid)
+    for d in (root / "entities" / "v1-alpha").rglob("processes-group-*.yaml"):
+        data = _try_load(d)
+        if isinstance(data, dict):
+            rid = data.get("id")
+            if isinstance(rid, str):
+                ids.add(rid)
     return ids
 
 
@@ -93,7 +91,7 @@ def _catalog_process_ids(root: Path) -> set[str]:
         data = _try_load(d)
         if isinstance(data, dict):
             rid = data.get("id")
-            if isinstance(rid, str) and rid.startswith("dea:process-"):
+            if isinstance(rid, str) and rid.startswith("processes:process-"):
                 ids.add(rid)
     return ids
 
@@ -338,13 +336,10 @@ def main(argv: list[str] | None = None) -> int:
     # against ADM-001..008. LOCKED records are also checked, with
     # findings reported but not gating.
     candidates: list[tuple[Path, bool]] = []
-    for d in sorted((root / "entities" / "v1-alpha").rglob("dea:process-*")):
-        if not d.is_dir():
+    for record_file in sorted((root / "entities" / "v1-alpha").rglob("processes-process-*.yaml")):
+        if not record_file.is_file():
             continue
-        files = list(d.glob("dea:process-*.yaml"))
-        if not files:
-            continue
-        candidates.append((files[0], False))
+        candidates.append((record_file, False))
 
     findings: list[dict[str, str]] = []
     for path, _ in candidates:
@@ -416,25 +411,24 @@ def _self_test() -> int:
     with tempfile.TemporaryDirectory() as td:
         root = Path(td)
         entities = root / "entities" / "v1-alpha"
-        contexts = root / "contexts" / "v1-alpha"
-        (entities / "dea:process-candidate-bad").mkdir(parents=True)
-        (entities / "dea:process-candidate-bad" / "dea:process-candidate-bad.yaml").write_text(yaml.safe_dump({
-            "id": "dea:process-candidate-bad",
+        (entities / "pr-operate" / "candidate-bad").mkdir(parents=True)
+        (entities / "pr-operate" / "candidate-bad" / "processes-process-pr-operate-candbad1.yaml").write_text(yaml.safe_dump({
+            "id": "processes:process-pr-operate-candbad1",
             "name": None,  # missing
             "type": "Process",
             "version": "1.0.0",
             "process_intent": "harmonise",  # ADM-006
             "process_type": "core",
-            "context": [{"ref": "dea:pc-unknown"}],  # ADM-003
+            "context": [{"ref": "processes:pc-pr-operate-nope001"}],  # ADM-003
             "process_group_id": "dea:pg-bogus",  # ADM-004
             "triggers": [],  # ADM-005
             "outcomes": [],  # ADM-005
-            "process_specialization": ["dea:process-bogus-parent"],  # ADM-007
+            "process_specialization": ["processes:process-bogus-parent"],  # ADM-007
             "change_history": [{"date": "2026-09-06", "cr": None, "change": None}],  # ADM-008
         }, sort_keys=False))
-        (contexts).mkdir(parents=True, exist_ok=True)
-        (contexts / "dea-pc-pr-op.yaml").write_text(yaml.safe_dump({
-            "id": "dea:pc-pr-op", "name": "Customer Demand Operate",
+        (entities / "pr-operate").mkdir(parents=True, exist_ok=True)
+        (entities / "pr-operate" / "processes-pc-pr-operate-yrhcfm.yaml").write_text(yaml.safe_dump({
+            "id": "processes:pc-pr-operate-yrhcfm", "name": "Customer Demand Operate",
             "type": "ProcessContext",
         }))
         # Disposition register must exist for the gate to read LOCKED
@@ -443,7 +437,7 @@ def _self_test() -> int:
         pc_ids = _catalog_pc_ids(root)
         pg_ids = _catalog_pg_ids(root)
         process_ids = _catalog_process_ids(root)
-        bad_file = next((entities / "dea:process-candidate-bad").glob("dea:process-*.yaml"))
+        bad_file = next((entities / "pr-operate" / "candidate-bad").rglob("processes-process-*.yaml"))
         for code, msg in check_admission(bad_file, root, pc_ids, pg_ids, process_ids):
             findings.append(code)
         seen = set(findings)
@@ -458,15 +452,15 @@ def _self_test() -> int:
                 failed.append(f"expected {code} to fire on bad fixture")
 
         # Good fixture: every field present and valid.
-        (entities / "dea:process-candidate-good").mkdir(parents=True)
-        (entities / "dea:process-candidate-good" / "dea:process-candidate-good.yaml").write_text(yaml.safe_dump({
-            "id": "dea:process-candidate-good",
+        (entities / "pr-operate" / "candidate-good").mkdir(parents=True)
+        (entities / "pr-operate" / "candidate-good" / "processes-process-pr-operate-candgood1.yaml").write_text(yaml.safe_dump({
+            "id": "processes:process-pr-operate-candgood1",
             "name": "Candidate Good",
             "type": "Process",
             "version": "1.0.0",
             "process_intent": "manage",
             "process_type": "core",
-            "context": [{"ref": "dea:pc-pr-op"}],
+            "context": [{"ref": "processes:pc-pr-operate-yrhcfm"}],
             "triggers": ["trigger"],
             "outcomes": ["outcome"],
             "change_history": [
@@ -474,7 +468,7 @@ def _self_test() -> int:
                  "change": "Initial admission under CR-BP-13a."},
             ],
         }, sort_keys=False))
-        good_file = next((entities / "dea:process-candidate-good").glob("dea:process-*.yaml"))
+        good_file = next((entities / "pr-operate" / "candidate-good").rglob("processes-process-*.yaml"))
         good_findings = []
         for code, msg in check_admission(good_file, root, pc_ids, pg_ids, process_ids):
             good_findings.append(code)
@@ -483,16 +477,16 @@ def _self_test() -> int:
 
         # CR-BP-16 §17 Step 8 path regression: provenance stored
         # under metadata.change_history MUST be read.
-        (entities / "dea:process-meta-path-good").mkdir(parents=True)
-        (entities / "dea:process-meta-path-good" /
-         "dea:process-meta-path-good.yaml").write_text(yaml.safe_dump({
-            "id": "dea:process-meta-path-good",
+        (entities / "processes:process-meta-path-good").mkdir(parents=True)
+        (entities / "processes:process-meta-path-good" /
+         "processes:process-meta-path-good.yaml").write_text(yaml.safe_dump({
+            "id": "processes:process-meta-path-good",
             "name": "Meta Path Good",
             "type": "Process",
             "version": "1.0.0",
             "process_intent": "manage",
             "process_type": "core",
-            "context": [{"ref": "dea:pc-pr-op"}],
+            "context": [{"ref": "processes:pc-pr-operate-yrhcfm"}],
             "metadata": {
                 "change_history": [
                     {"date": "2026-09-03", "cr": "CR-BP-03C",
@@ -500,8 +494,8 @@ def _self_test() -> int:
                 ],
             },
         }, sort_keys=False))
-        meta_file = next((entities / "dea:process-meta-path-good").glob(
-            "dea:process-*.yaml"))
+        meta_file = next((entities / "processes:process-meta-path-good").glob(
+            "processes:process-*.yaml"))
         meta_findings = []
         for code, msg in check_admission(meta_file, root, pc_ids,
                                         pg_ids, process_ids):
@@ -513,16 +507,16 @@ def _self_test() -> int:
             )
 
         # CR-BP-03C admission CR acceptance (legacy sample CR).
-        (entities / "dea:process-bp-15-only").mkdir(parents=True)
-        (entities / "dea:process-bp-15-only" /
-         "dea:process-bp-15-only.yaml").write_text(yaml.safe_dump({
-            "id": "dea:process-bp-15-only",
+        (entities / "processes:process-bp-15-only").mkdir(parents=True)
+        (entities / "processes:process-bp-15-only" /
+         "processes:process-bp-15-only.yaml").write_text(yaml.safe_dump({
+            "id": "processes:process-bp-15-only",
             "name": "Migration Only",
             "type": "Process",
             "version": "1.0.0",
             "process_intent": "manage",
             "process_type": "core",
-            "context": [{"ref": "dea:pc-pr-op"}],
+            "context": [{"ref": "processes:pc-pr-operate-yrhcfm"}],
             "metadata": {
                 "change_history": [
                     {"date": "2026-09-06", "cr": "CR-BP-15-IMP",
@@ -530,8 +524,8 @@ def _self_test() -> int:
                 ],
             },
         }, sort_keys=False))
-        mig_file = next((entities / "dea:process-bp-15-only").glob(
-            "dea:process-*.yaml"))
+        mig_file = next((entities / "processes:process-bp-15-only").glob(
+            "processes:process-*.yaml"))
         mig_findings = []
         for code, msg in check_admission(mig_file, root, pc_ids,
                                         pg_ids, process_ids):

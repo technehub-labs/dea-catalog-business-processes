@@ -1,0 +1,72 @@
+id: processes:pc-ge-conceive-b5xwpd
+domain: GovernanceAndExistence
+lifecycle_stage: Conceive
+name: Strategy and Governance Conception
+definition: 'The bounded enterprise context for **conceiving** the strategy, mandate, and policy direction of the organization in the **governance and existence** domain. This context addresses the front-end work of framing the enterprise''s governance strategy, policy posture, and charter direction: deciding what the organization exists to do, what policies govern its operation, and what charters define its authorities.
+
+  '
+scope:
+  includes:
+  - Governance strategy framing
+  - Policy and mandate initiation
+  - Charter direction
+  - Board mandate conception
+  excludes:
+  - Governance system design (Design stage; adjacent context)
+  - Governance body establishment (Build stage; adjacent context)
+  - Governance oversight (Operate stage; adjacent context)
+outcomes:
+- Governance strategy is framed with a defensible mandate.
+- Policy and charter direction is committed.
+- Board mandate is articulated.
+adjacent_contexts:
+- processes:pc-ge-design-3f2gjr
+- processes:pc-ge-build-52hjrc
+- processes:pc-ge-operate-hb2dac
+- processes:pc-ge-improve-c78ppp
+processes:
+- processes:process-ge-conceive-e6jx6s
+- processes:process-ge-conceive-xp6fye
+- processes:process-ge-conceive-6qnkhh
+cell_charter:
+  enterprise_concern: 'Governance and existence: the enterprise''s mandate, policy posture, and charter direction.'
+  lifecycle_concern: 'Conceive: framing governance strategy, mandate, and policy direction.'
+  combined_semantic_meaning: 'The front-end work of framing what the organization exists to do, what policies govern its operation, and what charters define its authorities.
+
+    '
+  expected_outcomes:
+  - Governance strategy is framed with a defensible mandate.
+  - Policy and charter direction is committed.
+  - Board mandate is articulated.
+  inclusions:
+  - Governance strategy framing
+  - Policy and mandate initiation
+  - Charter direction
+  exclusions:
+  - Governance system design (Design stage)
+  - Governance body establishment (Build stage)
+  - Governance oversight (Operate stage)
+  adjacent_boundaries:
+  - 'processes:pc-ge-design-3f2gjr (Design): strategy flows into governance system design.'
+  - 'processes:pc-ge-build-52hjrc (Build): designs flow into body and charter construction.'
+  - 'processes:pc-ge-operate-hb2dac (Operate): framed strategy is realised in board and committee operations.'
+  - 'processes:pc-ge-improve-c78ppp (Improve): framed strategy is reviewed and refreshed.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-13a
+established_at: '2026-09-05'
+change_history:
+- cr: CR-BP-13a
+  date: '2026-09-05'
+  change: 'Initial Process Context record; promoted from the CR-BP-11
+
+    49-coordinate register (ratified by CR-BP-13) as part of the
+
+    CustomerAndDomain admission tranche (CR-BP-13a).
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-13a-customer-and-demand-admission.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

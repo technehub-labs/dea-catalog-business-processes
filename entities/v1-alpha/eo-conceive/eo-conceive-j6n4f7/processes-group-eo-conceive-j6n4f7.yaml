@@ -1,0 +1,178 @@
+id: processes:group-eo-conceive-j6n4f7
+type: ProcessGroup
+version: 1.0.0
+name: Operations Model Conception
+definition: 'The bounded Process Group that organises the Business Process
+
+  responsibilities of conceiving the enterprise''s operations model and
+
+  enablement approach in the EnablementAndOperations x Conceive
+
+  context. This group covers the front-end work of framing the
+
+  operations strategy, the delivery model, the technology enablement
+
+  approach, and the physical asset approach. v2.4.0 grounding
+
+  (domain-grounding.md §3.6): the domain manages the enterprise''s
+
+  execution engine and the means that make execution possible,
+
+  including the physical, virtual, and procedural infrastructure
+
+  absorbed from the dissolved Supply & Resources domain.
+
+  '
+process_context: processes:pc-eo-conceive-mxmtzq
+scope:
+  includes:
+  - Operations strategy framing
+  - Delivery model conception
+  - Technology enablement approach framing
+  - Physical asset approach framing
+  excludes:
+  - Customer strategy (party-relationship x conceive)
+  - Strategic direction for operations (strategy-direction x conceive)
+  - Supplier relationship conception (party-relationship x conceive)
+  - Operations model design (Design stage; adjacent context)
+  - Operations build (Build stage; adjacent context)
+outcomes:
+- Operations strategy is framed for the enterprise.
+- Delivery model is conceived with bounded scope.
+- Technology enablement approach is framed.
+- Physical asset approach is framed.
+composes:
+- source_id: processes:group-eo-conceive-j6n4f7
+  target_id: processes:process-eo-conceive-xhjdr2
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process frames the enterprise''s operations strategy,
+
+    which is the v2.4.0 principal responsibility of the
+
+    EnablementAndOperations x Conceive cell. Lands under CR-BP-21d.
+
+    '
+  evidence: docs/examples/frame-operations-strategy.md
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21d
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-eo-conceive-j6n4f7
+  target_id: processes:process-eo-conceive-ky5wxp
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process frames the delivery model conception, a register
+
+    v2 candidate for the EnablementAndOperations x Conceive cell,
+
+    landed under CR-BP-21d.1.
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21d.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-eo-conceive-j6n4f7
+  target_id: processes:process-eo-conceive-68mp6v
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process frames the technology enablement approach, a
+
+    register v2 candidate for the EnablementAndOperations x Conceive
+
+    cell, landed under CR-BP-21d.1.
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21d.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-eo-conceive-j6n4f7
+  target_id: processes:process-eo-conceive-87kx9n
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process frames the physical asset approach, a register
+
+    v2 candidate for the EnablementAndOperations x Conceive cell,
+
+    landed under CR-BP-21d.1.
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21d.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+process_group_kind: end-to-end
+status: accepted
+lifecycle_status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: EnablementAndOperations
+    stage: Conceive
+    identifier: ecf:enablementAndOperations.conceive
+evidence:
+- source: CR-BP-19 (register v2, ratified against ECF v2.4.0)
+  claim: 'This Process Group''s coordinate is ratified-accepted in register
+
+    v2. CR-BP-21d lands the corresponding L1 group; remaining 3
+
+    register v2 L2 candidates for Conceive land in CR-BP-21d.1.
+
+    '
+  strength: E4
+  reference: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+metadata:
+  established_by: CR-BP-21d
+  established_at: '2026-09-08'
+  cross_context_overlap: []
+  change_history:
+  - cr: CR-BP-21d
+    date: '2026-09-08'
+    change: 'Initial Process Group record; promoted from the CR-BP-19 register
+
+      v2 (ratified against ECF v2.4.0) as part of the
+
+      EnablementAndOperations landing tranche. Composes the L2
+
+      dea:process-frame-operations-strategy.
+
+      '
+  - cr: CR-BP-21d.1
+    date: '2026-09-08'
+    change: 'Composes edges added for the 3 remaining register v2
+
+      Conceive-cell L2 candidates (frame-delivery-model-conception,
+
+      frame-technology-enablement-approach,
+
+      frame-physical-asset-approach), completing the cell''s L2
+
+      landing.
+
+      '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21d-enablement-operations-landing.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

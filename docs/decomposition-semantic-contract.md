@@ -59,7 +59,7 @@ Decomposition (L0-L4) and characterization (Intent / Classification / Specializa
 
 ### Where the contract lives today
 
-* Canonical records: `contexts/v1-alpha/dea:pc-*.yaml` (35 records at the time of writing).
+* Canonical records: `entities/v1-alpha/<cell>/processes-pc-*.yaml` (49 records at the time of writing; CR-BP-mv1 containment tree, pre-migration `contexts/v1-alpha/` retired).
 * Schema: `schemas/entities/process-context.schema.json`.
 * Gate: `scripts/check_process_context.py` (PC-001..PC-008).
 * Reader-facing: `docs/context.md`.
@@ -118,7 +118,7 @@ Decomposition (L0-L4) and characterization (Intent / Classification / Specializa
 
 ### Where the contract lives today
 
-* Canonical records: `entities/v1-alpha/dea:group-*/dea:group-*.yaml` (48 directories at the time of writing).
+* Canonical records: `entities/v1-alpha/<cell>/processes-group-*.yaml` (49 records at the time of writing; CR-BP-mv1 containment tree).
 * Schema: `schemas/entities/process-group.schema.json`.
 * Gates: `scripts/check_process_group.py` (PG-001..008) and `scripts/check_mece.py` (MECE-001..008).
 * Reader-facing: `docs/architecture.md` §"Decomposition".
@@ -156,7 +156,7 @@ The current `kind:` field on PG records (e.g. `kind: cross-cutting`) is the clos
 
 ### Where the contract lives today
 
-* Canonical records: `entities/v1-alpha/dea:process-*/dea:process-*.yaml` (139 records at the time of writing; 138 active + 1 deprecated under CR-BP-21a split decision).
+* Canonical records: `entities/v1-alpha/<cell>/<group>/processes-process-*.yaml` (140 records at the time of writing; 139 active + 1 deprecated under CR-BP-21a split decision; CR-BP-mv1 containment tree).
 * Schema: implicit (no `business-process.schema.json` file; the BP shape is the union of `process-context.schema.json`, the ACT/EXE gates, and the BP-C1..C4 / BP-SEM-001..014 / BP-AR-001..007 / LCM-001..005 / SIV-001..004 / PSP-001..003 gate families).
 * Gates: `scripts/check_l2_qualification.py` (BP-C1..C4), `scripts/check_process_semantics.py` (BP-SEM-001..014), `scripts/check_architectural_regression.py` (BP-AR-001..007), `scripts/check_lifecycle_state.py` (LCM-001..005), `scripts/check_semantic_identity_version.py` (SIV-001..004), `scripts/check_intent_purposive.py` (PSP-001..003).
 * Reader-facing: `docs/semantic-contract.md` §"The dimensions of a Business Process", `docs/identity.md`, `docs/classification.md`, `docs/architecture.md`.
@@ -188,7 +188,7 @@ The current `kind:` field on PG records (e.g. `kind: cross-cutting`) is the clos
 
 ### Where the contract lives today
 
-* Canonical records: `entities/v1-alpha/dea:activity-*/dea:activity-*.yaml` (553 records at the time of writing).
+* Canonical records: `entities/v1-alpha/<cell>/<group>/<process>/processes-activity-*.yaml` (560 records at the time of writing; CR-BP-mv1 containment tree).
 * Schema: `schemas/entities/activity.schema.json`.
 * Gates: `scripts/check_activity_model.py` (ACT-001..010), `scripts/check_execution_boundary.py` (EXE-001..010).
 * Reader-facing: `docs/architecture.md` §"Decomposition".

@@ -1,0 +1,94 @@
+id: processes:pc-ao-operate-zfevmp
+domain: AgencyAndOrganization
+lifecycle_stage: Operate
+name: Agent Operations and Performance
+definition: 'The bounded enterprise context for **operating** the agent performance, collaboration, and lifecycle operations of the enterprise in the **Agency & Organization** domain. This context addresses the steady-state work of operating agent performance, coordination and collaboration, time and attendance, and learning and development operations. v2.4.0: substrate-neutral — applies to biological, artificial, and hybrid agents without reclassification.
+
+  '
+scope:
+  includes:
+  - Agent performance operation
+  - Coordination and collaboration operation
+  - Time and attendance operation
+  - Compensation operation
+  - Learning and development operation
+  excludes:
+  - Agent acquisition (Build stage; adjacent context)
+  - Agent development (Improve stage; adjacent context)
+  - Operational execution (enablement-operations x operate; adjacent domain)
+  - Compensation accounting (finance-accounting x operate; adjacent domain)
+outcomes:
+- Agent performance is operated across the agentive mix.
+- Coordination and collaboration are operated substrate-neutrally.
+- Time and attendance are operated across the agentive mix.
+- Compensation is operated against the workforce policy.
+- Learning and development are operated across the agentive mix.
+adjacent_contexts:
+- processes:pc-ao-conceive-wtq4cr
+- processes:pc-ao-design-a4hq2r
+- processes:pc-ao-build-pjk4rz
+- processes:pc-ao-improve-qkmh6b
+processes:
+- processes:process-ao-operate-g4wp63
+- processes:process-ao-operate-38qyc6
+- processes:process-ao-operate-dg9q4h
+- processes:process-ao-operate-87q5mk
+- processes:process-ao-operate-bd7mef
+cell_charter:
+  enterprise_concern: 'Agency & Organization: the steady-state operation of the enterprise''s agent performance.'
+  lifecycle_concern: 'Operate: operating agent performance, collaboration, time and attendance, compensation, and learning.'
+  combined_semantic_meaning: 'The steady-state work of operating agent performance, coordination, and lifecycle across biological, artificial, and hybrid agents.
+
+    '
+  expected_outcomes:
+  - Agent performance is operated across the agentive mix.
+  - Coordination and collaboration are operated substrate-neutrally.
+  - Time and attendance are operated across the agentive mix.
+  - Compensation is operated against the workforce policy.
+  - Learning and development are operated across the agentive mix.
+  inclusions:
+  - Agent performance operation
+  - Coordination and collaboration operation
+  - Time and attendance operation
+  - Compensation operation
+  - Learning and development operation
+  exclusions:
+  - Agent acquisition (Build stage; adjacent context)
+  - Agent development (Improve stage; adjacent context)
+  - Operational execution (enablement-operations x operate; adjacent domain)
+  - Compensation accounting (finance-accounting x operate; adjacent domain)
+  adjacent_boundaries:
+  - 'processes:pc-ao-conceive-wtq4cr (adjacent context): agentive flow between Operate and the adjacent cell.'
+  - 'processes:pc-ao-design-a4hq2r (adjacent context): agentive flow between Operate and the adjacent cell.'
+  - 'processes:pc-ao-build-pjk4rz (adjacent context): agentive flow between Operate and the adjacent cell.'
+  - 'processes:pc-ao-improve-qkmh6b (adjacent context): agentive flow between Operate and the adjacent cell.'
+lifecycle_status: candidate
+status: candidate
+established_by: CR-BP-21b
+established_at: '2026-09-07'
+change_history:
+- cr: CR-BP-21b.1
+  date: '2026-09-08'
+  change: 'Processes list extended with the remaining register v2 L2
+
+    candidates for this cell under CR-BP-21b.1.
+
+    '
+- cr: CR-BP-21b
+  date: '2026-09-07'
+  change: 'Initial Process Context record; promoted from the CR-BP-19
+
+    register v2 (ratified against ECF v2.4.0) as part of the
+
+    AgencyAndOrganization landing tranche. Substrate-neutral
+
+    per ADR-ECF-002 §5 / CR-ECF-007.
+
+    '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21b-agency-organization-landing.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

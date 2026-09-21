@@ -1,0 +1,73 @@
+id: processes:activity-ao-retire-uqgpmh
+type: Activity
+name: Notify Statutory Workforce Reduction
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Conduct Regulated Workforce Wind-Down that issues the statutory advance-notice filings and individual notifications required when an employment reduction crosses the size and nature thresholds of the controlling labour statute.
+belongs_to_business_process: processes:process-ao-retire-g3eyr8
+cohesion_rationale: Constituent work shares a single statutory notification concern, one input class (the authorized wind-down event and the workforce roster scoped to the reduction), and one output (the served advance-notice and the regulator-filed notice record). Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: AgencyAndOrganization
+    stage: Retire
+    identifier: ecf:agencyOrganization.retire
+metadata:
+  established_by: CR-BP-77
+  established_at: '2026-09-16'
+  change_history:
+  - cr: CR-BP-77
+    date: '2026-09-16'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-77
+
+      admitted-regulated-BP L3 tranche (pattern proven by the pilot
+
+      and prior tranches). Classified per CR-BP-32 section 5 (fails
+
+      standalone executability and resource dedication); decomposition
+
+      boundary marker per CR-BP-32 section 12 pending Task records
+
+      (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-notify-statutory-workforce-reduction-intake, dea:task-notify-statutory-workforce-reduction-verify, dea:task-notify-statutory-workforce-reduction-transform, dea:task-notify-statutory-workforce-reduction-confirm, dea:task-notify-statutory-workforce-reduction-record).'
+composes:
+- source_id: processes:activity-ao-retire-uqgpmh
+  target_id: processes:task-ao-retire-intake-dehp2v
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-ao-retire-uqgpmh
+  target_id: processes:task-ao-retire-verify-bwcuuj
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-ao-retire-uqgpmh
+  target_id: processes:task-ao-retire-transform-k39qnx
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-ao-retire-uqgpmh
+  target_id: processes:task-ao-retire-confirm-sva7mh
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-ao-retire-uqgpmh
+  target_id: processes:task-ao-retire-record-q7k64n
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

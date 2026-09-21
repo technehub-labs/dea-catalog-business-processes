@@ -1,0 +1,75 @@
+id: processes:activity-eo-operate-q3sw3q
+type: Activity
+name: Execute Facility Work Orders
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Operate Facility Management that performs scheduled and reactive facility work orders to completion.
+belongs_to_business_process: processes:process-eo-operate-rqdte5
+cohesion_rationale: Constituent work shares a single execution concern (work order to completed work), the same resources (crews, contractors, parts), and a common trigger (an issued work order). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: EnablementAndOperations
+    stage: Operate
+    identifier: ecf:enablementAndOperations.operate
+metadata:
+  established_by: CR-BP-43
+  established_at: '2026-09-13'
+  change_history:
+  - cr: CR-BP-43
+    date: '2026-09-13'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-43
+
+      EnablementAndOperations / Operate tranche completing the L3
+
+      deposition of the pilot coordinate (pattern proven by CR-BP-42).
+
+      Classified per CR-BP-32 section 5 (fails standalone executability
+
+      and resource dedication); decomposition boundary marker per
+
+      CR-BP-32 section 12 pending Task records (dea:Task lifecycle:
+
+      proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-execute-facility-work-orders-intake, dea:task-execute-facility-work-orders-verify, dea:task-execute-facility-work-orders-transform, dea:task-execute-facility-work-orders-confirm, dea:task-execute-facility-work-orders-record).'
+composes:
+- source_id: processes:activity-eo-operate-q3sw3q
+  target_id: processes:task-eo-operate-intake-s4uedd
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-operate-q3sw3q
+  target_id: processes:task-eo-operate-verify-697v63
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-operate-q3sw3q
+  target_id: processes:task-eo-operate-transform-jv35h4
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-operate-q3sw3q
+  target_id: processes:task-eo-operate-confirm-etv9vv
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-eo-operate-q3sw3q
+  target_id: processes:task-eo-operate-record-3y9sfm
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

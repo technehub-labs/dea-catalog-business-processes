@@ -1,0 +1,103 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-43
+status: candidate-not-canonical; subject to review
+parent_business_process: processes:process-eo-operate-zwzmbd
+coordinate:
+  domain: EnablementAndOperations
+  stage: Operate
+  process_context: processes:pc-eo-operate-ydqb96
+  process_group: processes:group-eo-operate-bfd7jb
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/processes:process-eo-operate-zwzmbd
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: processes:activity-eo-operate-rrg5cv
+  name: "Maintain Stock Accuracy"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Stock-record upkeep; variance investigation; location accuracy"
+  out_of_scope:
+  - "Financial inventory valuation (FinanceAndAccounting concern)"
+  - "Cycle counting events (processes:activity-eo-operate-k73gbs)"
+  evidence:
+  - "Parent BP outcome (accurate stock records)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-43
+- id: processes:activity-eo-operate-tbh9q7
+  name: "Execute Picking and Dispatch"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Pick execution; packing and staging; dispatch handoff to logistics or production"
+  out_of_scope:
+  - "Transport execution (processes:process-eo-operate-zh9m57)"
+  - "Replenishment of pick faces (processes:activity-eo-operate-9sdchy)"
+  evidence:
+  - "Parent BP outcome statement (picking executed per demand)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-43
+- id: processes:activity-eo-operate-9sdchy
+  name: "Execute Replenishment"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Replenishment triggering; internal stock movements; pick-face refill"
+  out_of_scope:
+  - "Purchasing of new stock (processes:process-eo-operate-vzcxx7)"
+  - "Stock accuracy reconciliation (processes:activity-eo-operate-rrg5cv)"
+  evidence:
+  - "Parent BP outcome statement (replenishment executed per demand)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-43
+- id: processes:activity-eo-operate-k73gbs
+  name: "Conduct Cycle Counts"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Count scheduling; physical counting; variance feed to Maintain Stock Accuracy"
+  out_of_scope:
+  - "Variance correction decisions (processes:activity-eo-operate-rrg5cv)"
+  - "Financial audit support (FinanceAndAccounting concern)"
+  evidence:
+  - "Parent BP outcome (accurate stock records)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-43
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."

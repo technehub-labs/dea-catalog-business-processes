@@ -1,0 +1,58 @@
+id: processes:task-ao-retire-verify-6kzc36
+type: Task
+name: Compute Statutory Liabilities Verification
+definition: 'The bounded unit of work within `dea:activity-compute-statutory-liabilities` (Compute Statutory Liabilities) that carries out the verify phase of the parent''s verb-object decomposition. Phase responsibility: verification custodian. Phase trigger: Intake registered (phase 1 complete); verification of input against parent Activity''s specification can begin. Phase outcome: Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
+belongs_to_activity: processes:activity-ao-retire-sqdecn
+trigger: Intake registered (phase 1 complete); verification of input against parent Activity's specification can begin.
+outcome: Verified that the input meets parent Activity's specification; nonconformities are recorded for rejection or remediation.
+responsibility: verification custodian
+boundary:
+  inclusions:
+  - Comparison of input against parent Activity's specification.
+  - Recording of verification results (conformance / nonconformance).
+  exclusions:
+  - Transformation of the input (phase 3).
+  - Issuance of downstream confirmation (phase 4).
+evidence:
+- source: processes:activity-ao-retire-sqdecn
+  claim: 'Parent Activity cohesion rationale (CR-BP-32 §6): Constituent work shares a single statutory liability computation concern, one input class (each affected employee''s tenure, compensation, classification, and the controlling statute), and one output (the per-employee entitlement schedule and the funded liability amount). Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6).'
+  strength: E3
+- source: CR-BP-102
+  claim: Task decomposition pattern (5-phase verb-object completion) authored by `scripts/decompose_l4.py`.
+  strength: E2
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: AgencyAndOrganization
+    stage: Retire
+    identifier: ecf:agencyOrganization.retire
+metadata:
+  established_by: CR-BP-102
+  established_at: '2026-09-19'
+  change_history:
+  - cr: CR-BP-77
+    date: '2026-09-16'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-77
+
+      admitted-regulated-BP L3 tranche (pattern proven by the pilot
+
+      and prior tranches). Classified per CR-BP-32 section 5 (fails
+
+      standalone executability and resource dedication); decomposition
+
+      boundary marker per CR-BP-32 section 12 pending Task records
+
+      (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).

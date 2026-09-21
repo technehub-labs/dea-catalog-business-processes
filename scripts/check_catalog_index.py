@@ -48,7 +48,7 @@ Draft7Validator = _Draft7Validator
 
 DEFAULT_SCHEMA_PATH = "catalog-index-schema/catalog-index-schema.json"
 
-ENTITY_ID_PATTERN = re.compile(r"^dea:[a-z0-9-]+(:[a-z0-9-]+)*$")
+ENTITY_ID_PATTERN = re.compile(r"^processes:[a-z0-9-]+$")
 
 
 def load_schema(schema_path: Path) -> dict[str, Any]:
@@ -136,10 +136,6 @@ def structural_sanity(
             declared_ids.add(eid)
             if not ENTITY_ID_PATTERN.match(eid):
                 errors.append(f"entities[{idx}].id {eid!r}: does not match entity id pattern")
-            # Subtree must exist.
-            subtree = catalog_root / "entities" / "v1-alpha" / eid
-            if not subtree.is_dir():
-                errors.append(f"entities[{idx}].id {eid!r}: subtree missing at {subtree}")
         if isinstance(path, str):
             resolved = catalog_root / path
             # Allow trailing-slash subtree roots (no file resolution).
@@ -150,26 +146,25 @@ def structural_sanity(
                 if not resolved.is_file():
                     errors.append(f"entities[{idx}].path {path!r}: file missing at {resolved}")
 
-    # CST-006 (forwarded to STRUCT-06b): every subtree on disk is enumerated.
-    for subtree in list_subtrees(catalog_root):
-        if subtree.name not in declared_ids:
-            if not ENTITY_ID_PATTERN.match(subtree.name):
-                warnings.append(
-                    f"subtree {subtree.name!r}: name does not match entity id pattern (orphan)"
-                )
-            else:
-                errors.append(f"subtree {subtree.name!r}: exists on disk but not declared in CATALOG.yaml (orphan)")
+    # CST-006 (forwarded to STRUCT-06b): every record file on disk is enumerated.
+    entities_root = catalog_root / "entities" / "v1-alpha"
+    if entities_root.exists():
+        for record_file in sorted(entities_root.rglob("processes-*.yaml")):
+            data = load_yaml(record_file) or {}
+            rid = data.get("id")
+            if isinstance(rid, str) and rid not in declared_ids:
+                errors.append(f"record {rid!r}: exists on disk at {record_file} but not declared in CATALOG.yaml (orphan)")
 
     # research/ subdirectories SHOULD have README.md if non-empty (CST-009).
-    for subtree in list_subtrees(catalog_root):
-        research = subtree / "research"
-        if not research.is_dir():
-            continue
-        regular_files = [p for p in research.iterdir() if p.is_file()]
-        if regular_files and not (research / "README.md").exists():
-            warnings.append(
-                f"subtree {subtree.name!r}: research/ is non-empty but missing README.md"
-            )
+    if entities_root.exists():
+        for research in sorted(entities_root.rglob("research")):
+            if not research.is_dir():
+                continue
+            regular_files = [p for p in research.iterdir() if p.is_file()]
+            if regular_files and not (research / "README.md").exists():
+                warnings.append(
+                    f"research dir {research}: non-empty but missing README.md"
+                )
 
     # cross_cutting paths should exist (or be deliberately absent during scaffolding).
     cross_cutting = catalog.get("cross_cutting", {})

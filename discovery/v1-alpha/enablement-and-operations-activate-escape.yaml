@@ -72,10 +72,10 @@ discovery:
         Authoritative multi-source regulatory evidence; universal sector practice across aviation, banking payments, pharmaceuticals, telecoms, rail, and nuclear; strong boundary against Build/Operate/Retire; cross-domain breadth covers the majority of regulated-sectors with operations-authorization regimes. Recommend ADMIT-CANONICAL.
     disposition:
       type: ADMIT-CANONICAL
-      canonical_process_ref: dea:process-activate-operations-capability (proposed)
+      canonical_process_ref: processes:process-eo-activate-sy5qsa (proposed)
     admission:
       status: admitted
-      admitted_as: dea:process-activate-operations-capability
+      admitted_as: processes:process-eo-activate-sy5qsa
       admitted_by: CR-BP-82
       admitted_at: '2026-09-16'
   context_evaluation:
@@ -90,7 +90,7 @@ discovery:
     process_empty: false
   rationale:
     included: >
-      Targeted escape-clause evaluation of the EnablementAndOperations x Activate register cell (register v12, backlog-deferred). The discovery finds that regulator-authorized operations-capability activation (AOC, PSD2 authorization, GMP certification, MiCA authorization, FAA Part 119, EU PSD2 Articles 11 and 28) is a legally-mandated, boundary-clear, evidence-authoritative transformation distinct from steady-state operation, scoring 10/10 and recommended ADMIT-CANONICAL as dea:process-activate-operations-capability.
+      Targeted escape-clause evaluation of the EnablementAndOperations x Activate register cell (register v12, backlog-deferred). The discovery finds that regulator-authorized operations-capability activation (AOC, PSD2 authorization, GMP certification, MiCA authorization, FAA Part 119, EU PSD2 Articles 11 and 28) is a legally-mandated, boundary-clear, evidence-authoritative transformation distinct from steady-state operation, scoring 10/10 and recommended ADMIT-CANONICAL as processes:process-eo-activate-sy5qsa.
     excluded: >
       Non-regulated operations-capability activation (internal-product go-live without regulator's authorization) remains RECORD-PATTERN or MERGE per the CR-BP-63 baseline; no non-regulated candidate is promoted by the escape evidence.
     unresolved: >

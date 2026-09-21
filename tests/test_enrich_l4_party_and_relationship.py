@@ -37,14 +37,16 @@ DOMAIN = "PartyAndRelationship"
 
 
 def _pr_task_paths() -> list[Path]:
-    """All PartyAndRelationship L4 Task yaml paths."""
+    """All PartyAndRelationship L4 Task yaml paths (CR-BP-mv1 tree)."""
     out = []
-    for p in sorted(ENTITIES.glob("dea:task-*")):
-        with (p / f"{p.name}.yaml").open() as f:
+    for p in sorted(ENTITIES.rglob("processes-task-*.yaml")):
+        if not p.is_file():
+            continue
+        with p.open() as f:
             d = yaml.safe_load(f)
         coord = d.get("ecfConformance", {}).get("canonicalReferences", [{}])[0]
         if coord.get("domain") == DOMAIN:
-            out.append(p / f"{p.name}.yaml")
+            out.append(p)
     return out
 
 
@@ -246,12 +248,17 @@ def test_idempotence_running_twice_produces_identical_files(tmp_path):
 
 def test_scope_filter_restricts_writes(tmp_path):
     """--scope SUFFIX must restrict the generator to paths containing the
-    substring (dry-run only: no on-disk mutation)."""
+    substring (dry-run only: no on-disk mutation).
+
+    CR-BP-mv1: task paths no longer carry human-readable activity slugs;
+    the activity directory name (`<cell>-<hash>`) is the unique scope token
+    for one Activity's 5 Tasks.
+    """
     result = subprocess.run(
         [sys.executable, "scripts/enrich_l4_party_and_relationship.py",
-         "--dry-run", "--scope", "verify-party-identity"],
+         "--dry-run", "--scope", "pr-activate-y46zs2"],
         cwd=ROOT, capture_output=True, text=True, timeout=60,
     )
     out = result.stdout
-    # Only 5 Tasks should match the verify-party-identity scope (1 Activity x 5 phases)
+    # Only 5 Tasks should match the scope (1 Activity x 5 phases)
     assert "tasks_written: 5" in out, f"Scope filter wrong: {out}"

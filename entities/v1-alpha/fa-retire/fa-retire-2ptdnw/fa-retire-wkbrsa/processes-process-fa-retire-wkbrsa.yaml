@@ -1,0 +1,123 @@
+id: processes:process-fa-retire-wkbrsa
+name: Conclude Regulated Run-Off
+type: Process
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+process_intent: manage
+process_type: management
+process_specialization: []
+description: 'Conclude a regulated run-off of a financial entity (insurer, mutual, or run-off portfolio) under statutory run-off obligations within the dea:pc-fa-retire Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces.
+
+  '
+trigger: 'A regulator-acknowledged run-off authorisation is granted (PRA PS20/24 UK, FSB 2025, NAIC Model 901, or jurisdictional equivalent), triggering statutory accounting-basis transition and policyholder-priority creditor treatment.
+
+  '
+outcome: The regulated run-off of the financial entity (or run-off portfolio) is executed under the controlling regulator supervision with statutory accounting basis established and all policyholder claims adjudicated and paid. Reserving, capital adequacy, and asset-liability matching are maintained throughout the run-off period. Policyholder-priority credi
+identity:
+  verb: Conclude
+  object: Regulated Run-Off
+  scope: enterprise
+  outcome_statement: The regulated run-off of the financial entity (or run-off portfolio) is executed under the controlling regulator supervision with statutory accounting basis established and all policyholder claims adjudicated and paid. Reserving, capital adequacy, and asset-liability matching are maintained throughout the run-off period. Policyholder-priority creditor treatment is applied to all policyholder claims. The entity authorisation is surrendered or the run-off portfolio is fully transferred, with solvent-exit certification (PRA) or run-off completion certification (FSB) obtained. Retained-records and service-of-process obligations are satisfied throughout the run-off and post-run-off retention period. Pre-run-off stewardship is coordinated out to Operate; physical asset decommissioning to EnablementAndOperations x Retire; counterparty closure to PartyAndRelationship x Retire; non-insurance regulated wind-downs are deferred.
+  evidence_links:
+  - type: regulation
+    ref: https://www.bankofengland.co.uk/prudential-regulation/publication/2024/december/solvent-exit-planning-for-insurers-policy-statement
+  - type: regulation
+    ref: https://www.fsb.org/uploads/Final-guidance-on-insurance-resolution-strategies.pdf
+  - type: standard
+    ref: https://www.ifrs.org/issued-standards/list-of-standards/ifrs-17-insurance-contracts/
+  - type: standard
+    ref: https://www.cpajournal.com/2019/07/23/liquidation-basis-accounting-and-reporting
+  - type: regulation
+    ref: https://content.naic.org/sites/default/files/inline-files/mdl_901.pdf
+  - type: standard
+    ref: https://www.actuaries.org.uk/system/files/field/document/IRO%2520Best%2520Practice%2520Guidance%25202024.pdf
+relationships:
+- source_id: processes:process-fa-retire-wkbrsa
+  relationship_type: serves
+  target_id: ecf:financeAccounting.retire
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: FinanceAndAccounting
+    stage: Retire
+    identifier: ecf:financeAccounting.retire
+metadata:
+  established_by: CR-BP-75
+  established_at: '2026-09-15'
+  activity_references:
+  - processes:activity-fa-retire-t3uyxp
+  - processes:activity-fa-retire-vmpdww
+  - processes:activity-fa-retire-uuqbe9
+  - processes:activity-fa-retire-3g3m9u
+  change_history:
+  - cr: CR-BP-75
+    date: '2026-09-15'
+    change: 'Initial L2 Process entry; the first canonical Business Process
+
+      admitted at the FinanceAndAccounting x Retire coordinate, from
+
+      the CR-BP-74 escape-clause discovery outcome (9/10,
+
+      ADMIT-CANONICAL recommendation) under the CR-BP-62 method. The
+
+      admission activates the register v2 cell''s verbatim escape
+
+      condition ("defer until a regulated unwind (e.g. mutual
+
+      insurer run-off) requires a standalone group"). Evidence base:
+
+      PRA PS20/24 (UK, in force 30 June 2026), FSB Final Guidance
+
+      on Insurance Resolution Strategies (2025), NAIC Model
+
+      Regulation Service of Legal Process (Model 901), IFRS 17
+
+      Insurance Contracts (effective 2023), IFRS 5 Non-current
+
+      Assets Held for Sale and Discontinued Operations, ASC 205-30
+
+      Liquidation Basis of Accounting (FASB ASU 2013-07), ASC 944
+
+      Financial Services - Insurance, IRO Best Practice Guidance
+
+      2024. BP-ARC-ID-001 satisfied: name "Conclude a Regulated
+
+      Run-Off" is verb + object form; id preserved unchanged from
+
+      the CR-BP-74 discovery recommendation.
+
+      '
+  - cr: CR-BP-77
+    date: '2026-09-16'
+    change: 'Initial L3 decomposition; lands 4 Activity records
+
+      as part of the CR-BP-77 admitted-regulated-BP tranche
+
+      (pattern proven by CR-BP-42..69). Activity ids recorded
+
+      in metadata.activity_references; parent BP version
+
+      unchanged per SIV-004 (additive metadata-only).
+
+      '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-75-fa-retire-admission.md
+- rel: discovery-record-escape
+  href: discovery/v1-alpha/finance-and-accounting-retire-escape.yaml
+- rel: discovery-record-baseline
+  href: discovery/v1-alpha/finance-and-accounting-retire.yaml
+- rel: process-context
+  href: contexts/v1-alpha/dea-pc-fa-retire.yaml
+- rel: process-group
+  href: entities/v1-alpha/dea:group-regulated-run-off/dea:group-regulated-run-off.yaml
+- rel: l2-admission-deposition
+  href: entities/v1-alpha/dea:process-conclude-regulated-run-off/research/l2-admission-deposition.yaml
+context:
+- ref: processes:pc-fa-retire-64q5p9

@@ -1,0 +1,144 @@
+id: processes:process-sd-conceive-ahwvp5
+name: Develop Corporate Strategy
+type: Process
+version: 2.0.0
+lifecycle_status: candidate
+status: candidate
+process_intent: develop
+process_type: strategic
+process_specialization: []
+description: 'Operate the Develop Corporate Strategy L2 process within the dea:pc-sd-conceive Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces.
+
+  '
+trigger: 'A new corporate strategy is needed because the enterprise is establishing a new strategic trajectory, reframing an existing one, or responding to environmental signals that require board-level strategic realignment.
+
+  '
+outcome: 'A corporate strategy with bounded ambition, strategic intent, and choice of trajectory is committed.
+
+  '
+identity:
+  verb: Develop
+  object: Corporate Strategy
+  scope: (all enterprise segments)
+  outcome_statement: 'A corporate strategy with bounded ambition, strategic intent, and choice of trajectory is committed and ready to drive Design work.
+
+    '
+  evidence_links:
+  - type: standard
+    ref: https://www.iso.org/standard/27036.html
+  - type: documentation
+    ref: docs/examples/develop-corporate-strategy.md
+relationships:
+- source_id: processes:process-sd-conceive-ahwvp5
+  relationship_type: serves
+  target_id: ecf:strategyDirection.conceive
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: StrategyAndDirection
+    stage: Conceive
+    identifier: ecf:strategyDirection.conceive
+metadata:
+  established_by: CR-BP-21a
+  established_at: '2026-09-07'
+  supersedes: processes:process-ge-conceive-e6jx6s (v1.0.0; CR-BP-13a)
+  activity_references:
+  - processes:activity-sd-conceive-w28h46
+  - processes:activity-sd-conceive-e7z2am
+  - processes:activity-sd-conceive-uvhsrz
+  - processes:activity-sd-conceive-7tr4ax
+  change_history:
+  - cr: CR-BP-13a
+    date: '2026-09-05'
+    change: 'Original L2 entry (id: dea:process-develop-governance-strategy) lands
+
+      as part of the CR-BP-13a admission tranche. Affiliated with
+
+      governance-existence x conceive.
+
+      '
+  - cr: CR-BP-15-IMP
+    phase: phase-5
+    date: '2026-09-06'
+    change: 'Phase 5 tranche migration (under original id):
+
+      legacy intent migrated to canonical vocabulary;
+
+      legacy scalar `process_context` migrated to canonical
+
+      `context:` block; legacy `process_audience` removed;
+
+      canonical `serves` relationship toward the ECF coordinate added.
+
+      '
+  - cr: CR-BP-20
+    date: '2026-09-07'
+    change: 'CR-BP-20 Option A GE/SD split (user-approved 2026-09-07):
+
+      Develop corporate strategy is excluded from GovernanceAndExistence
+
+      per v2.4.0. Original L2 entry marked ''planned'' on its compose edge
+
+      with scheduled_to pointing at the new SD-Conceive group.
+
+      '
+  - cr: CR-BP-21a
+    date: '2026-09-07'
+    change: 'L2 migration executed under CR-BP-21a. New id
+
+      dea:process-develop-corporate-strategy; new context
+
+      dea:pc-sd-conceive; new serves relationship
+
+      ecf:strategyDirection.conceive; new Process Group
+
+      dea:group-strategy-direction-conception. Version bumped to 2.0.0.
+
+      The original L2 entry remains at
+
+      dea:process-develop-governance-strategy/ with
+
+      lifecycle_status=deprecated and a redirect README for any
+
+      external link.
+
+      '
+  - cr: CR-BP-54
+    date: '2026-09-13'
+    change: 'L3 decomposition of this Business Process: 4 Activities
+
+      landed under the structured deposition pattern (research
+
+      deposition at research/l3-candidate-universe.yaml, then
+
+      canonical Activity records) as part of the CR-BP-54
+
+      StrategyAndDirection Conceive + Design + Build tranche.
+
+      Adds metadata.activity_references[] back-references per
+
+      ACT-010 bidirectional traceability. Additive metadata-only
+
+      change; BP identity and semantics unchanged, so version
+
+      remains unchanged per SIV-004 (CR-BP-34d).
+
+      '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21a-strategy-direction-landing.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: predecessor
+  href: change-requests/CR-BP-20-l1-l2-alignment-ecf-v240.md
+- rel: process-context
+  href: contexts/v1-alpha/dea-pc-sd-conceive.yaml
+- rel: process-group
+  href: entities/v1-alpha/dea:group-strategy-direction-conception/dea:group-strategy-direction-conception.yaml
+context:
+- ref: processes:pc-sd-conceive-ucb3gx

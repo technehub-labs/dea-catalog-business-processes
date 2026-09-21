@@ -1,0 +1,75 @@
+id: processes:activity-fa-activate-63duu7
+type: Activity
+name: Acquire Regulator-Acknowledged Accounting or Rate Framework
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Activate Billing Capability that acquires and records the regulator-acknowledged accounting or rate framework required for live invoicing or revenue recognition (IFRS 17 transition to active; NAIC statutory accounting framework activation; Solvency II framework activation; PUC rate-effective framework activation; PSD2 / Federal Reserve / ECB settlement-account framework activation).
+belongs_to_business_process: processes:process-fa-activate-bzfywk
+cohesion_rationale: Constituent work shares a single accounting-or-rate-framework-acquisition concern, one input class (the billing-capability description and the regulator-mandated filing format), and one output (the regulator-acknowledged framework preserved on the regulated billing record). Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: FinanceAndAccounting
+    stage: Activate
+    identifier: ecf:financeAccounting.activate
+metadata:
+  established_by: CR-BP-87
+  established_at: '2026-09-17'
+  change_history:
+  - cr: CR-BP-87
+    date: '2026-09-17'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-87
+
+      L3 decomposition tranche for the four ADMIT-CANONICAL
+
+      Activate Business Processes (CR-BP-81 / CR-BP-82 / CR-BP-83 /
+
+      CR-BP-86). Classified per CR-BP-32 section 5 (fails standalone
+
+      executability and resource dedication); decomposition boundary
+
+      marker per CR-BP-32 section 12 pending Task records (dea:Task
+
+      lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-acquire-regulator-acknowledged-accounting-or-rate-framework-intake, dea:task-acquire-regulator-acknowledged-accounting-or-rate-framework-verify, dea:task-acquire-regulator-acknowledged-accounting-or-rate-framework-transform, dea:task-acquire-regulator-acknowledged-accounting-or-rate-framework-confirm, dea:task-acquire-regulator-acknowledged-accounting-or-rate-framework-record).'
+composes:
+- source_id: processes:activity-fa-activate-63duu7
+  target_id: processes:task-fa-activate-intake-nzhjyz
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-fa-activate-63duu7
+  target_id: processes:task-fa-activate-verify-y6snsj
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-fa-activate-63duu7
+  target_id: processes:task-fa-activate-transform-sek259
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-fa-activate-63duu7
+  target_id: processes:task-fa-activate-confirm-5btdey
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-fa-activate-63duu7
+  target_id: processes:task-fa-activate-record-cmebw8
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

@@ -1,0 +1,137 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-42
+status: candidate-not-canonical; subject to review
+parent_business_process: processes:process-eo-operate-44jsrp
+coordinate:
+  domain: EnablementAndOperations
+  stage: Operate
+  process_context: processes:pc-eo-operate-ydqb96
+  process_group: processes:group-eo-operate-bfd7jb
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern one layer down)
+selection_rationale: |
+  Pilot BP for the first L3 (Activity) deposition. Chosen because the BP is
+  well-bounded (trigger: production output must be inspected against
+  specifications before it can serve customers; outcome: inspections and
+  dispositions recorded per batch), carries process_type: core in the
+  thickest ECF coordinate (EnablementAndOperations / Operate, 9 BPs), and
+  has strong external-framework anchoring (APQC PCF quality management
+  activities, ISO 9001 clause 8.7 nonconformity control, ISO 2859/ISO 3951
+  sampling inspection). The five candidates below decompose the BP outcome
+  into cohesive logical work groupings per CR-BP-32 §4.
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/processes:process-eo-operate-44jsrp
+- change-requests/CR-BP-32 (Activity Model)
+- APQC PCF 7.0 (Manage quality; Inspect/test products and services)
+- ISO 9001:2015 clause 8.7 (Control of nonconforming outputs)
+- ISO 2859-1 / ISO 3951 (sampling procedures for inspection)
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 §5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 §5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 5
+l3_candidates:
+- id: processes:activity-eo-operate-ywjabj
+  name: Plan Quality Inspection
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Inspection planning for production batches; sampling scheme selection; specification and tolerance lookup; inspection scheduling"
+  out_of_scope:
+  - "Quality management system design (L2 peer family under processes:pc-eo-design-kxdfnz)"
+  - "Execution of the inspection itself (processes:activity-eo-operate-jdkay8)"
+  evidence:
+  - APQC PCF 7.0 2.3.5 (Develop and manage quality)
+  - ISO 2859-1 sampling plan selection
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-42
+- id: processes:activity-eo-operate-jdkay8
+  name: Execute Inspection and Testing
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Physical and instrumental inspection of production output against specification; test execution; measurement capture per batch"
+  out_of_scope:
+  - "Inspection planning (processes:activity-eo-operate-ywjabj)"
+  - "Disposition decisions on nonconforming output (processes:activity-eo-operate-gmj49n)"
+  evidence:
+  - APQC PCF 7.0 quality inspection activities
+  - Parent BP trigger (production output must be inspected against specifications)
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-42
+- id: processes:activity-eo-operate-uyzanp
+  name: Record Inspection Results
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Registration of inspection and test outcomes per batch; inspection lot records; measurement data capture into the quality record"
+  out_of_scope:
+  - "Disposition of nonconforming output (processes:activity-eo-operate-gmj49n)"
+  - "Performance reporting (processes:activity-eo-operate-x59sfp)"
+  evidence:
+  - Parent BP outcome (inspections and dispositions recorded per batch)
+  - ISO 9001:2015 documented-information expectations for inspection records
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-42
+- id: processes:activity-eo-operate-gmj49n
+  name: Disposition Nonconforming Output
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Evaluation of recorded nonconformities; disposition decisions (accept-with-concession, rework, scrap, return); containment of nonconforming batches"
+  out_of_scope:
+  - "Root-cause corrective action programme (improvement-stage concern of processes:pc-eo-improve-pka6dk)"
+  - "Inspection execution (processes:activity-eo-operate-jdkay8)"
+  evidence:
+  - ISO 9001:2015 clause 8.7 (Control of nonconforming outputs)
+  - Parent BP outcome (dispositions recorded per batch)
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-42
+- id: processes:activity-eo-operate-x59sfp
+  name: Report Quality Performance
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 7
+  in_scope: "Aggregation of per-batch inspection records into quality performance reporting; first-pass-yield and defect-rate summaries for the owning Process Group"
+  out_of_scope:
+  - "Enterprise quality strategy reporting (StrategyAndDirection concern)"
+  - "Per-batch record capture (processes:activity-eo-operate-uyzanp)"
+  evidence:
+  - APQC PCF 7.0 quality performance reporting
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-42
+notes:
+- "All five candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 §5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 §12 and ACT-004."
+- "cohesion_score uses the established 0-9 Cohesion Evaluation Score (CR-BP-32 §6) as a deposition-time assessment; the numerical threshold remains governed by the conformance specification."

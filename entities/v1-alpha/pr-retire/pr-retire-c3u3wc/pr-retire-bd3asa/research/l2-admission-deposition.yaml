@@ -1,0 +1,49 @@
+# L2 admission deposition: processes:process-pr-retire-bd3asa
+# CR-BP-67, 2026-09-14. Population-slice pattern: deposition first,
+# canonical record second. The substantive evaluation lives in the
+# CR-BP-63 discovery record; this deposition cites it and records
+# the admission decision.
+
+deposition:
+  subject: processes:process-pr-retire-bd3asa
+  cr: CR-BP-67
+  date: '2026-09-14'
+  discovery_record: discovery/v1-alpha/party-and-relationship-retire.yaml
+  discovery_outcome:
+    candidate: Close Enterprise Relationship
+    score: 9/10
+    disposition: ADMIT-CANONICAL (recommended; governed admission
+      pending per CR-BP-62 section 20)
+  evidence_base:
+    - "Contract close-out practice (World Commerce and Contracting):
+      termination settlement, obligation discharge and close-out
+      certification are a stable, industry-neutral discipline"
+    - "eTOM service retirement and party offboarding process identities"
+    - "Regulated offboarding obligations (e.g. GDPR-driven erasure)
+      make relationship close-out a governed, evidenced activity"
+  admission_decision:
+    decision: admit
+    admitted_as: processes:process-pr-retire-bd3asa
+    process_context: processes:pc-pr-retire-2cusde
+    process_group: processes:group-pr-retire-c3u3wc
+    rationale: |
+      The discovery record establishes process reality, transformation,
+      trigger, outcome, boundary, semantic identity, cross-context
+      stability and non-duplication (BP-LIFE-001..015) with
+      authoritative evidence. The register v2 per-cell note
+      (relationship termination handled within relationship
+      operations, deferred until a regulated offboarding requires a
+      distinct group) names the escape condition that the
+      contract-close-out and regulated-offboarding evidence now meets.
+      This tranche enacts the recommendation: the register cell flips
+      to ratified-accepted / landed and the canonical PC, PG and BP
+      records land together. The record name satisfies BP-ARC-ID-001
+      directly (Close + Enterprise Relationship); no admission-time
+      name refinement was required.
+  follow_ons:
+    - L3 decomposition of this Business Process under the CR-BP-32
+      pattern (4 Activities + deposition), to be scheduled as an L3
+      tranche slice with the other admitted BPs.
+    - The discovery programme's recommended admissions are complete
+      with this slice; remaining Activate/Retire cells hold documented
+      CR-BP-63 outcomes (RECORD-PATTERN / DEFER / process-empty).

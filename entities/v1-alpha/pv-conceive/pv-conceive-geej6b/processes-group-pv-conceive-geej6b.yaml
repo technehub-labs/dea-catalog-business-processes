@@ -1,0 +1,160 @@
+id: processes:group-pv-conceive-geej6b
+type: ProcessGroup
+version: 1.0.0
+name: Proposition Conception
+definition: 'The bounded Process Group that organises the Business Process
+
+  responsibilities of conceiving the enterprise''s value-bearing
+
+  propositions in the ProductAndValue x Conceive context.
+
+  This group covers the front-end work of framing value proposition
+
+  theses, framing portfolio direction, and framing innovation theses.
+
+  v2.4.0 grounding (domain-grounding.md §3.5): the domain manages the
+
+  complete lifecycle of whatever the enterprise creates, shapes,
+
+  packages, and makes available for exchange with external parties.
+
+  The Process Group manages the proposition as a stable subject: the
+
+  value-bearing entity (product, service, solution, experience,
+
+  platform, intellectual property) that the enterprise designs,
+
+  builds, evolves, and eventually retires.
+
+  '
+process_context: processes:pc-pv-conceive-fe9awk
+scope:
+  includes:
+  - Value proposition thesis framing
+  - Portfolio direction framing
+  - Innovation thesis framing
+  - Proposition concept validation
+  excludes:
+  - Strategic portfolio investment decisions (strategy-direction x conceive)
+  - Capability strategy (governance-existence x conceive)
+  - Proposition design (Design stage; adjacent context)
+  - Product development (Build stage; adjacent context)
+  - Alliance and partnership thesis (party-relationship x conceive)
+outcomes:
+- Value proposition thesis is framed for the enterprise.
+- Portfolio direction is framed with bounded scope.
+- Innovation thesis is framed and validated.
+- Proposition concepts are validated against market evidence.
+composes:
+- source_id: processes:group-pv-conceive-geej6b
+  target_id: processes:process-pv-conceive-xe9axm
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process frames the enterprise''s value proposition thesis,
+
+    which is the v2.4.0 principal responsibility of the
+
+    ProductAndValue x Conceive cell. Lands under CR-BP-21c.
+
+    '
+  evidence: docs/examples/frame-value-proposition-thesis.md
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21c
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-pv-conceive-geej6b
+  target_id: processes:process-pv-conceive-jb4xtg
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process frames the portfolio direction, a register v2
+
+    candidate for the ProductAndValue x Conceive cell, landed
+
+    under CR-BP-21c.1.
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21c.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-pv-conceive-geej6b
+  target_id: processes:process-pv-conceive-kps544
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process frames the innovation thesis, a register v2
+
+    candidate for the ProductAndValue x Conceive cell, landed
+
+    under CR-BP-21c.1.
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21c.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+process_group_kind: end-to-end
+status: accepted
+lifecycle_status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: ProductAndValue
+    stage: Conceive
+    identifier: ecf:productValue.conceive
+evidence:
+- source: CR-BP-19 (register v2, ratified against ECF v2.4.0)
+  claim: 'This Process Group''s coordinate is ratified-accepted in register
+
+    v2. CR-BP-21c lands the corresponding L1 group; remaining 2
+
+    register v2 L2 candidates for Conceive land in CR-BP-21c.1.
+
+    '
+  strength: E4
+  reference: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+metadata:
+  established_by: CR-BP-21c
+  established_at: '2026-09-08'
+  cross_context_overlap: []
+  change_history:
+  - cr: CR-BP-21c
+    date: '2026-09-08'
+    change: 'Initial Process Group record; promoted from the CR-BP-19 register
+
+      v2 (ratified against ECF v2.4.0) as part of the
+
+      ProductAndValue landing tranche. Composes the L2
+
+      dea:process-frame-value-proposition-thesis.
+
+      '
+  - cr: CR-BP-21c.1
+    date: '2026-09-08'
+    change: 'Composes edges added for the 2 remaining register v2 Conceive-cell
+
+      L2 candidates (frame-portfolio-direction, frame-innovation-thesis),
+
+      completing the cell''s L2 landing.
+
+      '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21c-product-value-landing.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

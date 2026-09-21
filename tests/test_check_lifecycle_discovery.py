@@ -116,7 +116,7 @@ def test_disc_005_admit_specialization_requires_parent():
 
 def test_disc_006_admit_canonical_requires_evidence_sources():
     rec = _fixture(disposition="ADMIT-CANONICAL")
-    rec["discovery"]["candidates"][0]["disposition"]["canonical_process_ref"] = "dea:process-x"
+    rec["discovery"]["candidates"][0]["disposition"]["canonical_process_ref"] = "processes:process-x"
     rec["discovery"]["candidates"][0]["evidence"]["sources"] = []
     assert _check_disc_006(rec) is not None
     rec["discovery"]["candidates"][0]["evidence"]["sources"] = ["ITIL service transition"]

@@ -42,15 +42,15 @@ summary:
     LOCKED: 18
     PRELIMINARY: 0
 dispositions:
-- record_id: dea:process-customer-channel-and-acquisition-build
+- record_id: processes:process-pr-build-nygvw7
   disposition: RECLASSIFY
   changes:
   - axis: process_intent
     from: operational
     to: operate
   - axis: process_context
-    from: dea:pc-pr-b
-    to: dea:pc-pr-b
+    from: processes:pc-pr-build-a46hp7
+    to: processes:pc-pr-build-a46hp7
   - axis: process_audience
     from: party-relationship
     to: REMOVE
@@ -80,20 +80,20 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-demand-generation-build
+- record_id: processes:process-pr-build-4kb2pt
   disposition: RECLASSIFY
   changes:
   - axis: process_intent
     from: operational
     to: operate
   - axis: process_context
-    from: dea:pc-pr-b
-    to: dea:pc-pr-b
+    from: processes:pc-pr-build-a46hp7
+    to: processes:pc-pr-build-a46hp7
   - axis: process_audience
     from: party-relationship
     to: REMOVE
   tranche: cd-b
-  rationale: 'Same disposition as dea:process-customer-channel-and-acquisition-build.
+  rationale: 'Same disposition as processes:process-pr-build-nygvw7.
 
     The record''s identity, name ("Build Demand Generation
 
@@ -110,15 +110,15 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-customer-strategy-conception
+- record_id: processes:process-pr-conceive-emfgju
   disposition: RECLASSIFY
   changes:
   - axis: process_intent
     from: management
     to: develop
   - axis: process_context
-    from: dea:pc-pr-c
-    to: dea:pc-pr-c
+    from: processes:pc-pr-conceive-6xztsq
+    to: processes:pc-pr-conceive-6xztsq
   - axis: process_audience
     from: party-relationship
     to: REMOVE
@@ -148,15 +148,15 @@ dispositions:
     legacy artifact and is NOT a RENAME target (Phase 4).
 
     '
-- record_id: dea:process-market-and-demand-conception
+- record_id: processes:process-pr-conceive-tvst8u
   disposition: RECLASSIFY
   changes:
   - axis: process_intent
     from: management
     to: develop
   - axis: process_context
-    from: dea:pc-pr-c
-    to: dea:pc-pr-c
+    from: processes:pc-pr-conceive-6xztsq
+    to: processes:pc-pr-conceive-6xztsq
   - axis: process_audience
     from: party-relationship
     to: REMOVE
@@ -176,7 +176,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-customer-experience-design
+- record_id: processes:process-pr-design-pxydu3
   disposition: RECLASSIFY
   changes:
   - axis: process_intent
@@ -184,7 +184,7 @@ dispositions:
     to: develop
   - axis: process_context
     from: dea:pc-d-cd-d
-    to: dea:pc-pr-d
+    to: processes:pc-pr-design-hrcdy4
   - axis: process_audience
     from: party-relationship
     to: REMOVE
@@ -204,15 +204,15 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-customer-journey-design
+- record_id: processes:process-pr-design-j6fakx
   disposition: RECLASSIFY
   changes:
   - axis: process_intent
     from: support
     to: develop
   - axis: process_context
-    from: dea:pc-pr-d
-    to: dea:pc-pr-d
+    from: processes:pc-pr-design-hrcdy4
+    to: processes:pc-pr-design-hrcdy4
   - axis: process_audience
     from: party-relationship
     to: REMOVE
@@ -238,15 +238,15 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-demand-design
+- record_id: processes:process-pr-design-cv6hjh
   disposition: RECLASSIFY
   changes:
   - axis: process_intent
     from: management
     to: develop
   - axis: process_context
-    from: dea:pc-pr-d
-    to: dea:pc-pr-d
+    from: processes:pc-pr-design-hrcdy4
+    to: processes:pc-pr-design-hrcdy4
   - axis: process_audience
     from: party-relationship
     to: REMOVE
@@ -262,15 +262,15 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-customer-insight-and-retention
+- record_id: processes:process-pr-improve-t6uvan
   disposition: RECLASSIFY
   changes:
   - axis: process_intent
     from: management
     to: operate
   - axis: process_context
-    from: dea:pc-pr-im
-    to: dea:pc-pr-im
+    from: processes:pc-pr-improve-k8phkn
+    to: processes:pc-pr-improve-k8phkn
   - axis: process_audience
     from: party-relationship
     to: REMOVE
@@ -288,15 +288,15 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-manage-customer-relationship
+- record_id: processes:process-pr-operate-bbe384
   disposition: RECLASSIFY
   changes:
   - axis: process_intent
     from: management
     to: manage
   - axis: process_context
-    from: dea:pc-pr-op
-    to: dea:pc-pr-op
+    from: processes:pc-pr-operate-pwue5a
+    to: processes:pc-pr-operate-pwue5a
   - axis: process_audience
     from: party-relationship
     to: REMOVE
@@ -316,15 +316,15 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-codify-charters-and-policies
+- record_id: processes:process-ge-build-mctdgc
   disposition: RECLASSIFY
   changes:
   - axis: process_intent
     from: operational
     to: operate
   - axis: process_context
-    from: dea:pc-ge-b
-    to: dea:pc-ge-b
+    from: processes:pc-ge-build-52hjrc
+    to: processes:pc-ge-build-52hjrc
   - axis: process_audience
     from: party-relationship
     to: REMOVE
@@ -341,7 +341,7 @@ dispositions:
 
     `party-relationship` (a 13b generator artifact); the
 
-    canonical `context:` block is `dea:pc-ge-b` (governance /
+    canonical `context:` block is `processes:pc-ge-build-52hjrc` (governance /
 
     build), so the legacy audience is replaced by the
 
@@ -360,15 +360,15 @@ dispositions:
     `context:` block (CR-BP-14 /13).
 
     '
-- record_id: dea:process-establish-governance-bodies
+- record_id: processes:process-ge-build-3p38us
   disposition: RECLASSIFY
   changes:
   - axis: process_intent
     from: operational
     to: operate
   - axis: process_context
-    from: dea:pc-ge-b
-    to: dea:pc-ge-b
+    from: processes:pc-ge-build-52hjrc
+    to: processes:pc-ge-build-52hjrc
   - axis: process_audience
     from: party-relationship
     to: REMOVE
@@ -381,22 +381,22 @@ dispositions:
 
     (operate). Legacy "operational" maps to `operate`. Same
 
-    audience-vs-context mismatch as dea:process-codify-charters-and-policies.
+    audience-vs-context mismatch as processes:process-ge-build-mctdgc.
 
     '
   evidence: 'CR-BP-14 /17; CR-BP-02 governance / build register.
 
     '
   note: null
-- record_id: dea:process-develop-governance-strategy
+- record_id: processes:process-ge-conceive-e6jx6s
   disposition: RECLASSIFY
   changes:
   - axis: process_intent
     from: management
     to: develop
   - axis: process_context
-    from: dea:pc-ge-c
-    to: dea:pc-ge-c
+    from: processes:pc-ge-conceive-b5xwpd
+    to: processes:pc-ge-conceive-b5xwpd
   - axis: process_audience
     from: party-relationship
     to: REMOVE
@@ -414,15 +414,15 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-initiate-policy-and-charter
+- record_id: processes:process-ge-conceive-xp6fye
   disposition: RECLASSIFY
   changes:
   - axis: process_intent
     from: management
     to: manage
   - axis: process_context
-    from: dea:pc-ge-c
-    to: dea:pc-ge-c
+    from: processes:pc-ge-conceive-b5xwpd
+    to: processes:pc-ge-conceive-b5xwpd
   - axis: process_audience
     from: party-relationship
     to: REMOVE
@@ -440,15 +440,15 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-design-governance-system
+- record_id: processes:process-ge-design-zbrg8b
   disposition: RECLASSIFY
   changes:
   - axis: process_intent
     from: management
     to: develop
   - axis: process_context
-    from: dea:pc-ge-d
-    to: dea:pc-ge-d
+    from: processes:pc-ge-design-3f2gjr
+    to: processes:pc-ge-design-3f2gjr
   - axis: process_audience
     from: party-relationship
     to: REMOVE
@@ -464,15 +464,15 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-design-policies-and-controls
+- record_id: processes:process-ge-design-kpsj5b
   disposition: RECLASSIFY
   changes:
   - axis: process_intent
     from: management
     to: develop
   - axis: process_context
-    from: dea:pc-ge-d
-    to: dea:pc-ge-d
+    from: processes:pc-ge-design-3f2gjr
+    to: processes:pc-ge-design-3f2gjr
   - axis: process_audience
     from: party-relationship
     to: REMOVE
@@ -490,15 +490,15 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-review-governance-effectiveness
+- record_id: processes:process-ge-improve-mgkw59
   disposition: RECLASSIFY
   changes:
   - axis: process_intent
     from: management
     to: govern
   - axis: process_context
-    from: dea:pc-ge-im
-    to: dea:pc-ge-im
+    from: processes:pc-ge-improve-c78ppp
+    to: processes:pc-ge-improve-c78ppp
   - axis: process_audience
     from: party-relationship
     to: REMOVE
@@ -522,15 +522,15 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-audit-policy-compliance
+- record_id: processes:process-ge-operate-hxxyc9
   disposition: RECLASSIFY
   changes:
   - axis: process_intent
     from: support
     to: govern
   - axis: process_context
-    from: dea:pc-ge-op
-    to: dea:pc-ge-op
+    from: processes:pc-ge-operate-hb2dac
+    to: processes:pc-ge-operate-hb2dac
   - axis: process_audience
     from: party-relationship
     to: REMOVE
@@ -554,15 +554,15 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-operate-governance-oversight
+- record_id: processes:process-ge-operate-hs7wf3
   disposition: RECLASSIFY
   changes:
   - axis: process_intent
     from: management
     to: operate
   - axis: process_context
-    from: dea:pc-ge-op
-    to: dea:pc-ge-op
+    from: processes:pc-ge-operate-hb2dac
+    to: processes:pc-ge-operate-hb2dac
   - axis: process_audience
     from: party-relationship
     to: REMOVE
@@ -580,7 +580,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-design-strategic-options
+- record_id: processes:process-sd-design-ewvbsh
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21a
@@ -597,7 +597,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-build-strategic-plan
+- record_id: processes:process-sd-build-q4nf9g
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21a
@@ -612,7 +612,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-monitor-strategic-performance
+- record_id: processes:process-sd-operate-zdjchn
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21a
@@ -627,7 +627,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-adapt-strategic-direction
+- record_id: processes:process-sd-improve-9wgvaf
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21a
@@ -642,12 +642,12 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-develop-corporate-strategy
+- record_id: processes:process-sd-conceive-ahwvp5
   disposition: MOVE
   changes:
   - axis: process_context
-    from: dea:pc-ge-conceive
-    to: dea:pc-sd-conceive
+    from: processes:pc-ge-conceive-b5xwpd
+    to: processes:pc-sd-conceive-ucb3gx
   - axis: process_audience
     from: governance-existence
     to: strategy-direction
@@ -662,7 +662,7 @@ dispositions:
 
     Strategy & Direction directs within the authorised frame).
 
-    The previous record dea:process-develop-governance-strategy
+    The previous record processes:process-ge-conceive-e6jx6s
 
     is deprecated and remains in the tree with lifecycle_status:
 
@@ -676,14 +676,14 @@ dispositions:
     CR-BP-21a-strategy-direction-landing.md.
 
     '
-  note: 'The previous record id (dea:process-develop-governance-strategy)
+  note: 'The previous record id (processes:process-ge-conceive-e6jx6s)
 
     is deprecated; new canonical id is
 
-    dea:process-develop-corporate-strategy.
+    processes:process-sd-conceive-ahwvp5.
 
     '
-- record_id: dea:process-frame-organization-and-agent-strategy
+- record_id: processes:process-ao-conceive-e3u8s2
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21b
@@ -700,7 +700,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-design-organization-structure
+- record_id: processes:process-ao-design-7dkbur
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21b
@@ -717,7 +717,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-acquire-and-onboard-agents
+- record_id: processes:process-ao-build-w2qurd
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21b
@@ -736,7 +736,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-operate-agent-performance
+- record_id: processes:process-ao-operate-g4wp63
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21b
@@ -753,7 +753,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-develop-agents-and-organization
+- record_id: processes:process-ao-improve-xfh8na
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21b
@@ -770,7 +770,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-frame-value-proposition-thesis
+- record_id: processes:process-pv-conceive-xe9axm
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21c
@@ -785,7 +785,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-design-product-and-service-propositions
+- record_id: processes:process-pv-design-8v4k89
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21c
@@ -800,7 +800,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-develop-product-variants
+- record_id: processes:process-pv-build-say8tb
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21c
@@ -815,7 +815,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-operate-product-catalogue
+- record_id: processes:process-pv-operate-zyguzp
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21c
@@ -830,7 +830,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-conduct-proposition-performance-review
+- record_id: processes:process-pv-improve-27r7r7
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21c
@@ -845,7 +845,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-frame-operations-strategy
+- record_id: processes:process-eo-conceive-xhjdr2
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21d
@@ -864,7 +864,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-design-operations-model
+- record_id: processes:process-eo-design-rvfpjb
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21d
@@ -883,7 +883,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-build-delivery-capability
+- record_id: processes:process-eo-build-j9z3q4
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21d
@@ -902,7 +902,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-operate-service-delivery
+- record_id: processes:process-eo-operate-2jnz85
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21d
@@ -921,7 +921,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-conduct-operations-performance-review
+- record_id: processes:process-eo-improve-g3ngp3
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21d
@@ -940,7 +940,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-frame-finance-strategy
+- record_id: processes:process-fa-conceive-4uqqvg
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21e
@@ -957,7 +957,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-design-financial-plan-structure
+- record_id: processes:process-fa-design-vk422z
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21e
@@ -974,7 +974,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-secure-funding-facilities
+- record_id: processes:process-fa-build-ydnzjc
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21e
@@ -989,7 +989,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-operate-general-ledger
+- record_id: processes:process-fa-operate-g9zpnq
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21e
@@ -1008,7 +1008,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-conduct-cost-optimization-review
+- record_id: processes:process-fa-improve-emqpgr
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21e
@@ -1027,7 +1027,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-define-enterprise-purpose-and-ambition
+- record_id: processes:process-sd-conceive-r93j3d
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21a.1
@@ -1042,7 +1042,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-conceive-strategic-intent
+- record_id: processes:process-sd-conceive-3uredz
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21a.1
@@ -1057,7 +1057,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-frame-strategic-horizons
+- record_id: processes:process-sd-conceive-xa4h2k
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21a.1
@@ -1072,7 +1072,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-evaluate-strategic-alternatives
+- record_id: processes:process-sd-design-ed7jd5
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21a.1
@@ -1087,7 +1087,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-design-objectives-and-targets
+- record_id: processes:process-sd-design-vdwkmh
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21a.1
@@ -1102,7 +1102,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-design-strategic-scenarios
+- record_id: processes:process-sd-design-uenzna
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21a.1
@@ -1117,7 +1117,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-build-strategic-roadmap
+- record_id: processes:process-sd-build-7n4prh
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21a.1
@@ -1132,7 +1132,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-translate-strategic-choices-into-initiatives
+- record_id: processes:process-sd-build-9admqy
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21a.1
@@ -1147,7 +1147,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-set-resource-allocation-priorities
+- record_id: processes:process-sd-build-2pkz5n
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21a.1
@@ -1162,7 +1162,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-sense-environmental-signals
+- record_id: processes:process-sd-operate-53y4j4
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21a.1
@@ -1177,7 +1177,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-steer-initiative-portfolio
+- record_id: processes:process-sd-operate-u6xgu5
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21a.1
@@ -1192,7 +1192,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-operate-strategic-review-cycle
+- record_id: processes:process-sd-operate-ucxpz4
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21a.1
@@ -1207,7 +1207,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-refresh-objectives-and-targets
+- record_id: processes:process-sd-improve-aqbrm7
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21a.1
@@ -1222,7 +1222,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-review-strategy-effectiveness
+- record_id: processes:process-sd-improve-duwd64
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21a.1
@@ -1237,7 +1237,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-frame-organization-model
+- record_id: processes:process-ao-conceive-ruxjvh
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21b.1
@@ -1254,7 +1254,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-conceive-workforce-and-agent-mix
+- record_id: processes:process-ao-conceive-z6m6p5
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21b.1
@@ -1271,7 +1271,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-design-role-catalogue
+- record_id: processes:process-ao-design-34e95r
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21b.1
@@ -1288,7 +1288,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-design-competency-framework
+- record_id: processes:process-ao-design-rve8j5
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21b.1
@@ -1305,7 +1305,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-design-agent-topology
+- record_id: processes:process-ao-design-8fzp2b
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21b.1
@@ -1322,7 +1322,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-build-contractor-and-partner-agent-pool
+- record_id: processes:process-ao-build-b38bkg
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21b.1
@@ -1339,7 +1339,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-operate-payroll-and-benefits
+- record_id: processes:process-ao-operate-38qyc6
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21b.1
@@ -1356,7 +1356,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-operate-time-and-attendance
+- record_id: processes:process-ao-operate-dg9q4h
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21b.1
@@ -1373,7 +1373,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-operate-learning-and-development
+- record_id: processes:process-ao-operate-87q5mk
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21b.1
@@ -1390,7 +1390,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-coordinate-collaboration
+- record_id: processes:process-ao-operate-bd7mef
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21b.1
@@ -1407,7 +1407,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-conduct-engagement-and-alignment-review
+- record_id: processes:process-ao-improve-edjyha
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21b.1
@@ -1424,7 +1424,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-conduct-capability-gap-analysis
+- record_id: processes:process-ao-improve-h3vgyf
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21b.1
@@ -1441,7 +1441,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-reorganize-structures
+- record_id: processes:process-ao-improve-xs59e2
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21b.1
@@ -1458,7 +1458,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-frame-portfolio-direction
+- record_id: processes:process-pv-conceive-jb4xtg
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21c.1
@@ -1473,7 +1473,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-frame-innovation-thesis
+- record_id: processes:process-pv-conceive-kps544
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21c.1
@@ -1488,7 +1488,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-design-packaging-and-configuration
+- record_id: processes:process-pv-design-a4c76s
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21c.1
@@ -1503,7 +1503,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-design-innovation-experiment
+- record_id: processes:process-pv-design-9ckwf6
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21c.1
@@ -1518,7 +1518,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-build-service-capability
+- record_id: processes:process-pv-build-p9a2s9
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21c.1
@@ -1533,7 +1533,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-build-innovation-prototype
+- record_id: processes:process-pv-build-8jc3y4
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21c.1
@@ -1548,7 +1548,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-prepare-market-readiness
+- record_id: processes:process-pv-build-6hjzmk
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21c.1
@@ -1563,7 +1563,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-manage-portfolio-performance
+- record_id: processes:process-pv-operate-en8rdz
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21c.1
@@ -1578,7 +1578,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-manage-proposition-lifecycle
+- record_id: processes:process-pv-operate-cau4gv
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21c.1
@@ -1593,7 +1593,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-evolve-products-and-services
+- record_id: processes:process-pv-improve-6c2xvf
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21c.1
@@ -1608,7 +1608,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-rationalize-portfolio
+- record_id: processes:process-pv-improve-9xvgat
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21c.1
@@ -1623,7 +1623,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-frame-delivery-model-conception
+- record_id: processes:process-eo-conceive-ky5wxp
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21d.1
@@ -1638,7 +1638,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-frame-technology-enablement-approach
+- record_id: processes:process-eo-conceive-68mp6v
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21d.1
@@ -1653,7 +1653,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-frame-physical-asset-approach
+- record_id: processes:process-eo-conceive-87kx9n
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21d.1
@@ -1668,7 +1668,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-design-delivery-model
+- record_id: processes:process-eo-design-6j5mxp
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21d.1
@@ -1683,7 +1683,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-design-technology-platform-architecture
+- record_id: processes:process-eo-design-7gtead
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21d.1
@@ -1698,7 +1698,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-design-facility-and-asset-blueprint
+- record_id: processes:process-eo-design-q83tdv
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21d.1
@@ -1713,7 +1713,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-design-logistics-and-routing
+- record_id: processes:process-eo-design-8s76nv
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21d.1
@@ -1728,7 +1728,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-commission-production-line
+- record_id: processes:process-eo-build-awy8dz
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21d.1
@@ -1743,7 +1743,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-build-logistics-network
+- record_id: processes:process-eo-build-ba6ykz
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21d.1
@@ -1758,7 +1758,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-acquire-technology-assets
+- record_id: processes:process-eo-build-nmmmt6
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21d.1
@@ -1773,7 +1773,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-provision-facilities
+- record_id: processes:process-eo-build-tqybhd
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21d.1
@@ -1788,7 +1788,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-run-production-line
+- record_id: processes:process-eo-operate-xud3hs
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21d.1
@@ -1803,7 +1803,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-operate-logistics
+- record_id: processes:process-eo-operate-zh9m57
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21d.1
@@ -1818,7 +1818,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-operate-warehouse-and-inventory
+- record_id: processes:process-eo-operate-zwzmbd
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21d.1
@@ -1833,7 +1833,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-operate-quality-control
+- record_id: processes:process-eo-operate-44jsrp
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21d.1
@@ -1848,7 +1848,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-operate-technology-platforms
+- record_id: processes:process-eo-operate-4njp7b
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21d.1
@@ -1863,7 +1863,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-operate-facility-management
+- record_id: processes:process-eo-operate-rqdte5
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21d.1
@@ -1878,7 +1878,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-operate-asset-maintenance
+- record_id: processes:process-eo-operate-j9cjzz
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21d.1
@@ -1893,7 +1893,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-operate-procurement-cycle
+- record_id: processes:process-eo-operate-vzcxx7
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21d.1
@@ -1908,7 +1908,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-conduct-logistics-optimization
+- record_id: processes:process-eo-improve-3fem63
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21d.1
@@ -1923,7 +1923,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-conduct-lean-six-sigma-programme
+- record_id: processes:process-eo-improve-us272s
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21d.1
@@ -1938,7 +1938,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-optimize-asset-utilization
+- record_id: processes:process-eo-improve-q58ecg
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21d.1
@@ -1953,7 +1953,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-improve-technology-platforms
+- record_id: processes:process-eo-improve-babwdc
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21d.1
@@ -1968,7 +1968,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-design-financial-controls-and-policies
+- record_id: processes:process-fa-design-uun4ja
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21e.1
@@ -1983,7 +1983,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-design-tax-position-and-strategy
+- record_id: processes:process-fa-design-ds4drw
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21e.1
@@ -1998,7 +1998,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-design-treasury-and-funding-model
+- record_id: processes:process-fa-design-k5sgfa
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21e.1
@@ -2013,7 +2013,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-implement-financial-systems-and-ledger
+- record_id: processes:process-fa-build-d5kb5m
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21e.1
@@ -2028,7 +2028,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-build-budgeting-and-forecasting-systems
+- record_id: processes:process-fa-build-92v24c
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21e.1
@@ -2043,7 +2043,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-onboard-tax-and-compliance-capability
+- record_id: processes:process-fa-build-ucfjgt
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21e.1
@@ -2058,7 +2058,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-run-accounts-payable
+- record_id: processes:process-fa-operate-wkqaqp
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21e.1
@@ -2073,7 +2073,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-run-accounts-receivable
+- record_id: processes:process-fa-operate-sdppmp
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21e.1
@@ -2088,7 +2088,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-execute-payroll
+- record_id: processes:process-fa-operate-zpmxzp
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21e.1
@@ -2103,7 +2103,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-manage-cash-and-liquidity
+- record_id: processes:process-fa-operate-2pmqb2
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21e.1
@@ -2118,7 +2118,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-perform-financial-close
+- record_id: processes:process-fa-operate-4xn4d6
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21e.1
@@ -2133,7 +2133,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-manage-tax-compliance-and-filings
+- record_id: processes:process-fa-operate-8vqvkk
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21e.1
@@ -2148,7 +2148,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-operate-financial-reporting-and-disclosure
+- record_id: processes:process-fa-operate-ycba3k
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21e.1
@@ -2163,7 +2163,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-refine-financial-controls-and-policies
+- record_id: processes:process-fa-improve-cdtsbq
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21e.1
@@ -2178,7 +2178,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-evolve-treasury-and-funding-model
+- record_id: processes:process-fa-improve-2kemkq
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21e.1
@@ -2193,7 +2193,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-frame-risk-framework-direction
+- record_id: processes:process-ge-conceive-6qnkhh
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21f.1
@@ -2208,7 +2208,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-design-risk-framework
+- record_id: processes:process-ge-design-pqkvdc
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21f.1
@@ -2223,7 +2223,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-establish-risk-and-control-apparatus
+- record_id: processes:process-ge-build-rx7kt5
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21f.1
@@ -2238,7 +2238,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-operate-enterprise-risk-oversight
+- record_id: processes:process-ge-operate-tpenm6
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21f.1
@@ -2253,7 +2253,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-conduct-assurance-review
+- record_id: processes:process-ge-operate-zwaes5
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21f.1
@@ -2268,7 +2268,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-score-audit-findings
+- record_id: processes:process-ge-improve-axtq3b
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21f.1
@@ -2283,7 +2283,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-improve-policy-and-control-framework
+- record_id: processes:process-ge-improve-u3g5dh
   disposition: RETAIN
   changes: []
   tranche: cr-bp-21f.1
@@ -2298,7 +2298,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-transition-to-service
+- record_id: processes:process-pv-activate-5686v7
   disposition: RETAIN
   changes: []
   tranche: cr-bp-64
@@ -2310,9 +2310,9 @@ dispositions:
 
     Activate; landed as the first canonical BP at an Activate
 
-    coordinate with its PC (dea:pc-pv-activate) and PG
+    coordinate with its PC (processes:pc-pv-activate-f7kne7) and PG
 
-    (dea:group-service-transition-activation).
+    (processes:group-pv-activate-e7fdrk).
 
     '
   evidence: 'discovery/v1-alpha/product-and-value-activate.yaml (CR-BP-63);
@@ -2321,7 +2321,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-transition-out-of-service
+- record_id: processes:process-pv-retire-6us5am
   disposition: RETAIN
   changes: []
   tranche: cr-bp-64
@@ -2333,9 +2333,9 @@ dispositions:
 
     Retire; landed as the first canonical BP at a Retire coordinate
 
-    with its PC (dea:pc-pv-retire) and PG
+    with its PC (processes:pc-pv-retire-eeck6d) and PG
 
-    (dea:group-service-transition-retirement).
+    (processes:group-pv-retire-buqktk).
 
     '
   evidence: 'discovery/v1-alpha/product-and-value-retire.yaml (CR-BP-63);
@@ -2344,7 +2344,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-bring-into-force
+- record_id: processes:process-ge-activate-wegs44
   disposition: RETAIN
   changes: []
   tranche: cr-bp-65
@@ -2356,9 +2356,9 @@ dispositions:
 
     Activate on universal entry-into-force evidence; landed with its
 
-    PC (dea:pc-ge-activate) and PG
+    PC (processes:pc-ge-activate-hxtfcv) and PG
 
-    (dea:group-governance-instrument-commencement).
+    (processes:group-ge-activate-7d46tn).
 
     '
   evidence: 'discovery/v1-alpha/governance-and-existence-activate.yaml (CR-BP-63);
@@ -2367,7 +2367,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-decommission
+- record_id: processes:process-eo-retire-rpg6d4
   disposition: RETAIN
   changes: []
   tranche: cr-bp-66
@@ -2379,9 +2379,9 @@ dispositions:
 
     Retire on ISO 55000 asset end-of-life evidence; landed with its
 
-    PC (dea:pc-oe-retire) and PG
+    PC (processes:pc-eo-retire-nw3ynf) and PG
 
-    (dea:group-operations-and-asset-decommissioning). The register
+    (processes:group-eo-retire-n9ge5c). The register
 
     v2 escape condition (regulated decommission as a standalone
 
@@ -2394,7 +2394,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-close-enterprise-relationship
+- record_id: processes:process-pr-retire-bd3asa
   disposition: RETAIN
   changes: []
   tranche: cr-bp-67
@@ -2406,9 +2406,9 @@ dispositions:
 
     Retire on contract close-out and regulated offboarding evidence;
 
-    landed with its PC (dea:pc-pr-retire) and PG
+    landed with its PC (processes:pc-pr-retire-2cusde) and PG
 
-    (dea:group-relationship-termination). The register v2 escape
+    (processes:group-pr-retire-c3u3wc). The register v2 escape
 
     condition (regulated offboarding as a distinct group) is met.
 
@@ -2419,7 +2419,7 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-onboard-regulated-party-relationship
+- record_id: processes:process-pr-activate-6qzuve
   cr: CR-BP-71
   applied_pr: '#112 (CR-BP-71 admission; merged 2026-09-15)'
   disposition: RETAIN
@@ -2441,7 +2441,7 @@ dispositions:
 
     BCBS ML/FT guidelines, Wolfsberg Group guidance. Landed with its
 
-    PC (dea:pc-pr-act) and PG (dea:group-regulated-onboarding). The
+    PC (processes:pc-pr-activate-mwq7bj) and PG (processes:group-pr-activate-d7j4et). The
 
     register v2 escape condition is met verbatim.
 
@@ -2452,12 +2452,12 @@ dispositions:
 
     '
   note: null
-- record_id: dea:process-conduct-regulated-workforce-wind-down
+- record_id: processes:process-ao-retire-g3eyr8
   ecf_context:
     domain: AgencyAndOrganization
     lifecycle_stage: Retire
-  process_context: dea:pc-ao-retire
-  process_group: dea:group-regulated-workforce-wind-down
+  process_context: processes:pc-ao-retire-3kqe9c
+  process_group: processes:group-ao-retire-jspuzz
   disposition: RETAIN
   cr: CR-BP-73
   applied_pr: '#114 (CR-BP-73 admission; merged 2026-09-15)'
@@ -2468,12 +2468,12 @@ dispositions:
   - CR-BP-72
   audit_status: ratified-accepted
   note: null
-- record_id: dea:process-conclude-regulated-run-off
+- record_id: processes:process-fa-retire-wkbrsa
   ecf_context:
     domain: FinanceAndAccounting
     lifecycle_stage: Retire
-  process_context: dea:pc-fa-retire
-  process_group: dea:group-regulated-run-off
+  process_context: processes:pc-fa-retire-64q5p9
+  process_group: processes:group-fa-retire-2ptdnw
   disposition: RETAIN
   cr: CR-BP-75
   applied_pr: '#116 (CR-BP-75 admission; merged 2026-09-15)'
@@ -2486,12 +2486,12 @@ dispositions:
   audit_status: ratified-accepted
   note: 'Verbatim escape clause (CR-BP-19, register v2) activated: ''defer until a regulated unwind (e.g. mutual insurer run-off)
     requires a standalone group''.'
-- record_id: dea:process-effect-regulator-mandated-governance-unwind
+- record_id: processes:process-ge-retire-mjq5hg
   ecf_context:
     domain: GovernanceAndExistence
     lifecycle_stage: Retire
-  process_context: dea:pc-ge-retire
-  process_group: dea:group-regulated-governance-unwind
+  process_context: processes:pc-ge-retire-kndw6x
+  process_group: processes:group-ge-retire-v3vy7t
   disposition: RETAIN
   cr: CR-BP-78
   evidence: 'discovery/v1-alpha/governance-and-existence-retire-escape.yaml: scored 9/10 ADMIT-CANONICAL on FCA WDPG 3 (UK firm wind-down planning) + California Corporations Code 5033-5034 (US nonprofit dissolution) + IRS 501(c)(3) (federal tax-exempt dissolution) + state attorney-general charity oversight + federal banking regulator cease-and-desist + federal/state court receivership evidence; CR-BP-76 escape-clause discovery; CR-BP-78 admission tranche.'
@@ -2499,12 +2499,12 @@ dispositions:
   - CR-BP-76
   audit_status: ratified-accepted
   note: 'Verbatim escape clause (CR-BP-19, register v2) activated: ''defer until a sector example (e.g. regulator-mandated unwind) requires it''.'
-- record_id: dea:process-mobilize-licensed-workforce
+- record_id: processes:process-ao-activate-jqxtqn
   ecf_context:
     domain: AgencyAndOrganization
     lifecycle_stage: Activate
-  process_context: dea:pc-ao-activate
-  process_group: dea:group-licensed-workforce-mobilization
+  process_context: processes:pc-ao-activate-kusw2u
+  process_group: processes:group-ao-activate-jjx738
   disposition: RETAIN
   cr: CR-BP-81
   evidence: 'discovery/v1-alpha/agency-and-organization-activate-escape.yaml: scored 10/10 ADMIT-CANONICAL on FCA SMCR Statements of Responsibilities (UK CF1..CF11 controlled functions) + US state healthcare licensure regimes + NAIC Producer Licensing Model Act + EASA / FAA crew licensing (type-rated licences) + UK SRA regulated-professionals regime + US state bar admissions; CR-BP-80 escape-clause discovery; CR-BP-81 admission tranche.'
@@ -2512,7 +2512,7 @@ dispositions:
   - CR-BP-80
   audit_status: ratified-accepted
   note: 'CR-BP-80 escape-clause discovery evaluated the cell against 2024-2026 licensed-workforce regulation; the cell verbatim escape rationale ("workforce activation is often an attribute of build") is superseded by regulator-controlled scope, fitness-and-propriety attestation, supervised-training completion, and continuing-supervisor notification.'
-- record_id: dea:process-activate-operations-capability
+- record_id: processes:process-eo-activate-sy5qsa
   ecf_context:
     domain: EnablementAndOperations
     stage: Activate
@@ -2531,7 +2531,7 @@ dispositions:
   related_records:
     - CR-BP-80
     - CR-BP-82
-- record_id: dea:process-activate-billing-capability
+- record_id: processes:process-fa-activate-bzfywk
   ecf_context:
     domain: FinanceAndAccounting
     stage: Activate
@@ -2550,7 +2550,7 @@ dispositions:
   related_records:
     - CR-BP-80
     - CR-BP-83
-- record_id: dea:process-institutionalize-regulated-strategic-plan
+- record_id: processes:process-sd-activate-s9m34e
   ecf_context:
     domain: StrategyAndDirection
     stage: Activate
@@ -2570,3 +2570,25 @@ dispositions:
   related_records:
     - CR-BP-80
     - CR-BP-86
+- record_id: processes:process-sd-retire-umxf3c
+  ecf_context:
+    domain: StrategyAndDirection
+    stage: Retire
+    ecf_identifier: ecf:strategyDirection.retire
+  disposition: RETAIN
+  rationale: |
+    The process is canonically admitted under the CR-BP-62 escape-clause
+    method on the basis of CR-BP-80 escape-clause discovery (8/10
+    ADMIT-CANONICAL recommendation, DEFER disposition lifted by user
+    directive 2026-09-19). The carrier CR-BP-101 lands the PC + PG + BP
+    stack (dea:pc-sd-retire, dea:group-regulated-strategic-plan-sunset,
+    dea:process-sunset-regulated-strategic-plan) and CR-BP-101a lands
+    the L3 Activity decomposition tranche. The escape evidence is
+    multi-source authoritative regulatory practice across banking
+    (FDICIA Section 131, SRB rejection, Bank of England PRA SS9/17),
+    utilities (state PUC retraction), and healthcare (NHS England
+    directive).
+  related_records:
+    - CR-BP-80
+    - CR-BP-101
+    - CR-BP-101a

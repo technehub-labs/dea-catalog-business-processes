@@ -1,0 +1,122 @@
+id: processes:group-fa-improve-hvq8u8
+type: ProcessGroup
+version: 1.0.0
+name: Financial Improve
+definition: 'The bounded Process Group that organises the Business Process responsibilities of refining financial controls, evolving the treasury model, auditing policy compliance, and reviewing cost optimisation in the FinanceAndAccounting x Improve context. v2.4.0 grounding (register v2 FA/improve cell).
+
+  '
+process_context: processes:pc-fa-improve-haqf4w
+scope:
+  includes:
+  - Financial controls and policy refinement
+  - Treasury and funding model evolution
+  - Policy compliance audit (seeded by CR-BP-21e)
+  - Cost optimisation review (seeded by CR-BP-21e)
+  excludes:
+  - Financial operations (Operate stage; adjacent context)
+outcomes:
+- Financial controls and treasury model evolve with the enterprise.
+- Compliance and cost reviews feed governance.
+composes:
+- source_id: processes:group-fa-improve-hvq8u8
+  target_id: processes:process-ge-operate-hxxyc9
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (landed CR-BP-21e).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21e.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-fa-improve-hvq8u8
+  target_id: processes:process-fa-improve-emqpgr
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (landed CR-BP-21e).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21e.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-fa-improve-hvq8u8
+  target_id: processes:process-fa-improve-cdtsbq
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21e.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21e.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+- source_id: processes:group-fa-improve-hvq8u8
+  target_id: processes:process-fa-improve-2kemkq
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21e.1).
+
+    '
+  provenance:
+    type: architecture-review
+    reference: CR-BP-21e.1
+    asserted_by: dea-team
+    asserted_at: '2026-09-08'
+process_group_kind: end-to-end
+status: accepted
+lifecycle_status: candidate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: FinanceAndAccounting
+    stage: Improve
+    identifier: ecf:financeAccounting.improve
+evidence:
+- source: CR-BP-19 (register v2, ratified against ECF v2.4.0)
+  claim: 'This Process Group''s coordinate is ratified-accepted in register
+
+    v2. CR-BP-21e.1 lands the corresponding L1 group as part of the
+
+    FinanceAndAccounting completion tranche.
+
+    '
+  strength: E4
+  reference: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+metadata:
+  established_by: CR-BP-21e.1
+  established_at: '2026-09-08'
+  cross_context_overlap: []
+  change_history:
+  - cr: CR-BP-21e.1
+    date: '2026-09-08'
+    change: 'Initial Process Group record; promoted from the CR-BP-19 register
+
+      v2 (ratified against ECF v2.4.0) as part of the CR-BP-21e.1
+
+      FinanceAndAccounting completion tranche. Composes 4 L2 processes.
+
+      '
+links:
+- rel: change-request
+  href: change-requests/CR-BP-21e.1-finance-accounting-completion.md
+- rel: predecessor
+  href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
+- rel: research-register
+  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

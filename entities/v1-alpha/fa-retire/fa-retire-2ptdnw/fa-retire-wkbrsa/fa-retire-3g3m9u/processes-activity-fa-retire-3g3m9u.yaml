@@ -1,0 +1,73 @@
+id: processes:activity-fa-retire-3g3m9u
+type: Activity
+name: File Run-Off Closure Evidence
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: The cohesive grouping of work within Conclude Regulated Run-Off that prepares and files the run-off closure evidence with the controlling regulator, including the final run-off accounts, the policyholder-claim clearance certificate, the residual-asset distribution plan, and the request for cancellation of the authorisation or surrender of the licence.
+belongs_to_business_process: processes:process-fa-retire-wkbrsa
+cohesion_rationale: Constituent work shares a single closure evidence filing concern, one input class (the final run-off financial position, the claim clearance certificate, and the residual asset distribution), and one output (the filed closure submission with regulator acknowledgement and the residual-asset distribution recorded). Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: FinanceAndAccounting
+    stage: Retire
+    identifier: ecf:financeAccounting.retire
+metadata:
+  established_by: CR-BP-77
+  established_at: '2026-09-16'
+  change_history:
+  - cr: CR-BP-77
+    date: '2026-09-16'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-77
+
+      admitted-regulated-BP L3 tranche (pattern proven by the pilot
+
+      and prior tranches). Classified per CR-BP-32 section 5 (fails
+
+      standalone executability and resource dedication); decomposition
+
+      boundary marker per CR-BP-32 section 12 pending Task records
+
+      (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-file-run-off-closure-evidence-intake, dea:task-file-run-off-closure-evidence-verify, dea:task-file-run-off-closure-evidence-transform, dea:task-file-run-off-closure-evidence-confirm, dea:task-file-run-off-closure-evidence-record).'
+composes:
+- source_id: processes:activity-fa-retire-3g3m9u
+  target_id: processes:task-fa-retire-intake-m229un
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-fa-retire-3g3m9u
+  target_id: processes:task-fa-retire-verify-8r64r7
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-fa-retire-3g3m9u
+  target_id: processes:task-fa-retire-transform-s4ra5b
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-fa-retire-3g3m9u
+  target_id: processes:task-fa-retire-confirm-q2xkf3
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+- source_id: processes:activity-fa-retire-3g3m9u
+  target_id: processes:task-fa-retire-record-9qjn6f
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

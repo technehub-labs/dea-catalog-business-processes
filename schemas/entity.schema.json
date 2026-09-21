@@ -61,7 +61,7 @@
         "properties": {
           "ref": {
             "type": "string",
-            "pattern": "^dea:pc-[a-z0-9-]+$",
+            "pattern": "^processes:pc-[a-z0-9-]+$",
             "description": "Process Context canonical id (CR-BP-02; contexts/v1-alpha/). Reference integrity is enforced by BP-SEM-008 (CR-BP-14 Phase 3)."
           }
         },

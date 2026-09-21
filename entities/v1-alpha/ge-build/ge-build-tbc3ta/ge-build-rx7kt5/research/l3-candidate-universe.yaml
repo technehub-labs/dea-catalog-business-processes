@@ -1,0 +1,104 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-48
+status: candidate-not-canonical; subject to review
+parent_business_process: processes:process-ge-build-rx7kt5
+coordinate:
+  domain: GovernanceAndExistence
+  stage: Build
+  process_context: processes:pc-ge-build-52hjrc
+  process_group: processes:group-ge-build-tbc3ta
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42,
+  scaled by CR-BP-43 through CR-BP-47)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/processes:process-ge-build-rx7kt5
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: processes:activity-ge-build-3nk745
+  name: "Establish Risk Registers"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Register structure setup; initial risk population; register ownership assignment"
+  out_of_scope:
+  - "Risk framework design (processes:process-ge-design-pqkvdc)"
+  - "Risk oversight operation (processes:process-ge-operate-tpenm6)"
+  evidence:
+  - "Parent BP outcome (registers delivered)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-48
+- id: processes:activity-ge-build-459rn2
+  name: "Deploy Monitoring Tooling"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Monitoring tool selection and deployment; control telemetry wiring; tooling verification"
+  out_of_scope:
+  - "Control objective definition (processes:process-ge-design-kpsj5b)"
+  - "Assurance review operation (processes:process-ge-operate-zwaes5)"
+  evidence:
+  - "Parent BP outcome (monitoring tooling delivered)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-48
+- id: processes:activity-ge-build-tj3qj3
+  name: "Establish Reporting Lines"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Reporting line activation; report format setup; escalation path activation"
+  out_of_scope:
+  - "Governance integration design (processes:process-ge-design-pqkvdc)"
+  - "Risk oversight operation (processes:process-ge-operate-tpenm6)"
+  evidence:
+  - "Parent BP outcome (reporting lines delivered)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-48
+- id: processes:activity-ge-build-ptnpmg
+  name: "Verify Apparatus Readiness"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Apparatus readiness review; end-to-end reporting walkthrough; readiness sign-off preparation"
+  out_of_scope:
+  - "Risk oversight operation (processes:process-ge-operate-tpenm6)"
+  - "Apparatus establishment (sibling Activities)"
+  evidence:
+  - "Parent BP outcome (apparatus ready to operate)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-48
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."

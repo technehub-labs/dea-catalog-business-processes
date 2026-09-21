@@ -106,6 +106,8 @@ GATES: list[tuple[str, bool, list[str]]] = [
      False, ["python", "scripts/check_reconciliation_matrix.py"]),  # CR-BP-99; advisory
     ("[24] L0<->L1 Cardinality (L0L1-CARD-001..003)",
      False, ["python", "scripts/check_l0_l1_cardinality.py"]),  # CR-BP-100; advisory
+    ("[25] ID System (IDM-001..007)",
+     True, ["python", "scripts/check_id_system.py"]),  # CR-BP-mv1; blocking
 ]
 
 

@@ -1,0 +1,104 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-47
+status: candidate-not-canonical; subject to review
+parent_business_process: processes:process-eo-improve-us272s
+coordinate:
+  domain: EnablementAndOperations
+  stage: Improve
+  process_context: processes:pc-eo-improve-pka6dk
+  process_group: processes:group-eo-improve-c8uff9
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42,
+  scaled by CR-BP-43 through CR-BP-46)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/processes:process-eo-improve-us272s
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: processes:activity-eo-improve-rdjvga
+  name: "Select Improvement Projects"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Project opportunity identification; project selection against programme criteria; portfolio balancing"
+  out_of_scope:
+  - "Operations performance review (processes:process-eo-improve-g3ngp3)"
+  - "Project delivery (processes:activity-eo-improve-gtarnw)"
+  evidence:
+  - "Parent BP trigger (sustained waste and variation reduction requires a structured programme)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-47
+- id: processes:activity-eo-improve-gtarnw
+  name: "Deliver Improvement Projects"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Project phase execution; measurement and analysis within projects; improvement implementation and control"
+  out_of_scope:
+  - "Project selection (processes:activity-eo-improve-rdjvga)"
+  - "Operational process changes (Operate-stage concern)"
+  evidence:
+  - "Parent BP outcome (improvement projects delivered)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-47
+- id: processes:activity-eo-improve-m7paec
+  name: "Sustain Improvement Gains"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Control mechanism establishment; gain monitoring; decay response"
+  out_of_scope:
+  - "Improvement project delivery (processes:activity-eo-improve-gtarnw)"
+  - "Operations performance review (processes:process-eo-improve-g3ngp3)"
+  evidence:
+  - "Parent BP outcome (programme conducted with projects delivered and held)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-47
+- id: processes:activity-eo-improve-334m2m
+  name: "Develop Improvement Capability"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Practitioner development; method standard maintenance; programme governance operation"
+  out_of_scope:
+  - "People capability development (PeopleAndCulture concern)"
+  - "Improvement project delivery (processes:activity-eo-improve-gtarnw)"
+  evidence:
+  - "Parent BP outcome (programme conducted)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-47
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."

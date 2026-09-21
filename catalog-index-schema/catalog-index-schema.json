@@ -140,8 +140,8 @@
       "properties": {
         "id": {
           "type": "string",
-          "pattern": "^dea:[a-z0-9-]+(:[a-z0-9-]+)*$",
-        "description": "Canonical entity id; colons preserved as part of the directory name. Accepts single-segment (dea:process-foo) and multi-segment (dea:pc-pr-op) ids."
+          "pattern": "^processes:[a-z0-9-]+$",
+        "description": "Canonical entity id in the CR-BP-mv1 org-wide form (e.g. processes:task-fa-activate-confirm-kuz7yt)."
         },
         "type": {
           "type": "string",
@@ -186,7 +186,7 @@
       "properties": {
         "entity_id": {
           "type": "string",
-          "pattern": "^dea:[a-z0-9-]+(:[a-z0-9-]+)*$"
+          "pattern": "^processes:[a-z0-9-]+$"
         },
         "path": {
           "type": "string",

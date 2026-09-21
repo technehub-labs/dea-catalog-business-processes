@@ -1,0 +1,80 @@
+id: processes:process-ge-build-rx7kt5
+name: Establish Risk and Control Apparatus
+type: Process
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+process_intent: manage
+process_type: core
+context:
+- ref: processes:pc-ge-build-52hjrc
+description: 'Establish Risk and Control Apparatus (build stage, core process). Landed by CR-BP-21f.1
+
+  from the GovernanceAndExistence register v2.
+
+  '
+trigger: The risk framework design is approved for build.
+outcome: Risk and control apparatus is established with registers, monitoring tooling, and reporting lines delivered, ready to operate in the Operate context.
+triggers:
+- The risk framework design is approved for build.
+outcomes:
+- Risk and control apparatus is established with registers, monitoring tooling, and reporting lines delivered, ready to operate in the Operate context.
+identity:
+  verb: Establish
+  object: Risk and Control Apparatus
+  outcome_statement: Risk and control apparatus is established with registers, monitoring tooling, and reporting lines delivered, ready to operate in the Operate context.
+  evidence_links:
+  - type: documentation
+    ref: change-requests/CR-BP-21f.1.md
+relationships:
+- source_id: processes:process-ge-build-rx7kt5
+  relationship_type: serves
+  target_id: ecf:governanceExistence.build
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: GovernanceAndExistence
+    stage: Build
+    identifier: ecf:governanceExistence.build
+  target_id: ecf:governanceExistence.build
+metadata:
+  established_by: CR-BP-21f.1
+  established_at: '2026-09-08'
+  activity_references:
+  - processes:activity-ge-build-3nk745
+  - processes:activity-ge-build-459rn2
+  - processes:activity-ge-build-tj3qj3
+  - processes:activity-ge-build-ptnpmg
+change_history:
+- version: 1.0.0
+  date: '2026-09-08'
+  cr: CR-BP-21f.1
+  change: 'Initial landing under CR-BP-21f.1 (GovernanceAndExistence completion).
+
+    '
+- date: '2026-09-13'
+  cr: CR-BP-48
+  change: 'L3 decomposition of this Business Process: 4 Activities
+
+    landed under the structured deposition pattern (research
+
+    deposition at research/l3-candidate-universe.yaml, then
+
+    canonical Activity records) as part of the CR-BP-48
+
+    GovernanceAndExistence Conceive + Design + Build tranche.
+
+    Adds metadata.activity_references[] back-references per
+
+    ACT-010 bidirectional traceability. Additive metadata-only
+
+    change; BP identity and semantics unchanged, so version
+
+    remains unchanged per SIV-004 (CR-BP-34d).
+
+    '

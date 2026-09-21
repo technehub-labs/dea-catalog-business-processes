@@ -118,11 +118,11 @@ discovery:
         to regulated sectors, holding the total at 9.
     disposition:
       type: ADMIT-CANONICAL
-      canonical_process_ref: dea:process-onboard-regulated-party-relationship
+      canonical_process_ref: processes:process-pr-activate-6qzuve
       related_contexts: []
     admission:
       status: admitted
-      admitted_as: dea:process-onboard-regulated-party-relationship
+      admitted_as: processes:process-pr-activate-6qzuve
       admitted_by: CR-BP-71
       admitted_at: '2026-09-15'
   - name: Commence Relationship
@@ -160,7 +160,7 @@ discovery:
         commencements.
       semantic_identity: >-
         Recognizable; close kin to Bring into Force with a contractual object
-        (dea:process-bring-into-force admitted at
+        (processes:process-ge-activate-wegs44 admitted at
         GovernanceAndExistence/Activate by CR-BP-65).
       cross_context_stability: >-
         Stable as a contract-effectiveness concept across domains.
@@ -263,7 +263,7 @@ discovery:
       condition met: regulated party onboarding (KYC/AML/CDD) is a legally
       mandated, boundary-clear, evidence-authoritative transformation distinct
       from steady-state relationship operation, scoring 9/10 and recommended
-      ADMIT-CANONICAL as dea:process-onboard-regulated-party-relationship.
+      ADMIT-CANONICAL as processes:process-pr-activate-6qzuve.
       This record re-evaluates the cell; the CR-BP-63 record
       (dea:discovery-party-and-relationship-activate) remains the baseline
       evidence for the cell's other candidates.

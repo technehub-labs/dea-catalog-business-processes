@@ -1,0 +1,104 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-51
+status: candidate-not-canonical; subject to review
+parent_business_process: processes:process-pv-operate-cau4gv
+coordinate:
+  domain: ProductAndValue
+  stage: Operate
+  process_context: processes:pc-pv-operate-ewpwjc
+  process_group: processes:group-pv-operate-ah3322
+deposition_approach: structured (research deposition before canonical landing;
+  mirrors the CR-BP-11 L1 candidate-universe pattern; piloted by CR-BP-42,
+  scaled by CR-BP-43 through CR-BP-50)
+sources:
+- dea-metaframework/framework/*
+- dea-catalog-processes/entities/v1-alpha/processes:process-pv-operate-cau4gv
+- change-requests/CR-BP-32 (Activity Model)
+- change-requests/CR-BP-42 (L3 pilot deposition)
+- APQC PCF 7.0
+l2_criteria_legend:
+  input_output_transformation: candidate transforms a definable input into a
+    definable output (CR-BP-32 section 5)
+  objective_contribution: candidate contributes to the parent BP outcome
+    (CR-BP-32 section 5)
+  standalone_executability: candidate is NOT independently executable as an
+    enterprise process (fail => Activity, not BP)
+  resource_dedication: candidate does NOT command dedicated enterprise
+    resources in its own right (fail => Activity, not BP)
+l3_candidate_count: 4
+l3_candidates:
+- id: processes:activity-pv-operate-zk8rc3
+  name: "Track Lifecycle Stages"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Stage signal monitoring; stage position assessment; stage record upkeep"
+  out_of_scope:
+  - "Catalogue operation (processes:process-pv-operate-zyguzp)"
+  - "Stage transition management (processes:activity-pv-operate-jpupsh)"
+  evidence:
+  - "Parent BP trigger (each proposition requires managed transitions across stages)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-51
+- id: processes:activity-pv-operate-jpupsh
+  name: "Manage Stage Transitions"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Transition readiness assessment; transition execution; transition recording"
+  out_of_scope:
+  - "Stage tracking (processes:activity-pv-operate-zk8rc3)"
+  - "Gate decision execution (processes:activity-pv-operate-xmvfj7)"
+  evidence:
+  - "Parent BP outcome (stage transitions managed)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-51
+- id: processes:activity-pv-operate-xmvfj7
+  name: "Execute Gate Decisions"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 9
+  in_scope: "Gate review preparation; gate decision execution; decision rationale recording"
+  out_of_scope:
+  - "Stage transition management (processes:activity-pv-operate-jpupsh)"
+  - "Portfolio rationalization (processes:process-pv-improve-9xvgat for retire gates)"
+  evidence:
+  - "Parent BP outcome (gate decisions executed)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-51
+- id: processes:activity-pv-operate-89v5ty
+  name: "Maintain Lifecycle Record"
+  l2_criteria_test:
+    input_output_transformation: pass
+    objective_contribution: pass
+    standalone_executability: fail
+    resource_dedication: fail
+  verdict: activity
+  cohesion_score: 8
+  in_scope: "Record update from transitions and gates; record hygiene; lifecycle history upkeep"
+  out_of_scope:
+  - "Stage transition management (processes:activity-pv-operate-jpupsh)"
+  - "Proposition performance review (processes:process-pv-improve-27r7r7)"
+  evidence:
+  - "Parent BP outcome (proposition lifecycle managed)"
+  disposition: landed
+  landed_at: '2026-09-13'
+  landed_by: CR-BP-51
+notes:
+- "All candidates FAIL standalone_executability and resource_dedication and therefore classify as L3 Activities, not L2 Business Processes (CR-BP-32 section 5)."
+- "Decomposition terminates at L4 (Task); no Task records exist yet (dea:Task is metamodel-owned, lifecycle: proposed). Each landed Activity therefore carries decomposition_boundary: l4-reached per CR-BP-32 section 12 and ACT-004."

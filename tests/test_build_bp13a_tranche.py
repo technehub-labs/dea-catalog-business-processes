@@ -69,6 +69,8 @@ def test_render_process_group_parses_yaml() -> None:
         # Each composes entry should resolve to a known L2.
         for c in doc.get("composes", []):
             assert c["relationship_type"] == "composes"
+            # CR-BP-mv1 historical freeze: one-shot generator (CR-BP-13a,
+            # already landed); frozen fixtures emit legacy dea:* ids as run.
             assert c["target_id"].startswith("dea:process-")
 
 
