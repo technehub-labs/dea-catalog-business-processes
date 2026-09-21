@@ -373,10 +373,19 @@ def _evidence_for(stage: str, parent_activity_id: str, task_phase: str) -> list[
 
 
 def _phase_from_task_id(task_id: str) -> str:
-    suffix = task_id.rsplit("-", 1)[-1]
-    if suffix not in PHASE_ROLE:
-        raise ValueError(f"Cannot parse phase from task id: {task_id}")
-    return suffix
+    """Extract the phase from the task id.
+
+    CR-BP-mv1 form: `processes:task-<domain>-<stage>-<phase>-<hash>`
+    (phase is the second-to-last token, before the hash suffix).
+    Legacy form: `dea:task-<slug>-<phase>` (phase is the last token).
+    """
+    tokens = task_id.split("-")
+    if len(tokens) >= 2 and tokens[-2] in PHASE_ROLE:
+        return tokens[-2]
+    suffix = tokens[-1]
+    if suffix in PHASE_ROLE:
+        return suffix
+    raise ValueError(f"Cannot parse phase from task id: {task_id}")
 
 
 def _human_name(task_name: str) -> str:
@@ -486,9 +495,14 @@ def _enrich_task(task: dict, stage: str, phase: str) -> dict:
 
 
 def _walk_tasks(domain: str, scope: str | None = None):
-    for task_dir in sorted(ENTITIES.glob(f"dea:task-*")):
-        yaml_path = task_dir / f"{task_dir.name}.yaml"
-        if not yaml_path.exists():
+    """Yield (path, task) tuples for every L4 Task in the given domain.
+
+    Optional --scope SUFFIX restricts to tasks whose file path contains SUFFIX
+    (substring match against the activity slug or stage).
+    """
+    for yaml_path in sorted(ENTITIES.rglob("processes-task-*.yaml")):
+        # CR-BP-mv1: rglob yields the record FILES directly (containment tree).
+        if not yaml_path.is_file():
             continue
         with yaml_path.open() as f:
             data = yaml.safe_load(f)

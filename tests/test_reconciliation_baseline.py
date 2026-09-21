@@ -57,8 +57,8 @@ def test_build_inventory_records_match_canonical_population() -> None:
     )
     recs = inv["records"]
     assert len(recs["business_processes"]) == 140  # CR-BP-mv1: 49-cell matrix complete
-    assert len(recs["process_groups"]) == 48
-    assert len(recs["process_contexts"]) == 48
+    assert len(recs["process_groups"]) == 49  # CR-BP-mv1: 49-cell matrix complete
+    assert len(recs["process_contexts"]) == 49  # CR-BP-mv1: 49-cell matrix complete
 
 
 def test_build_inventory_legacy_findings_present() -> None:

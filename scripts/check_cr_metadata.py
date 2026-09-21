@@ -247,6 +247,12 @@ def main(argv: list[str] | None = None) -> int:
         last_modified = _git_last_commit_date(path)
         if last_modified is None:
             last_modified = path.stat().st_mtime
+        # CR-BP-mv1: a CR carrying the layout-note banner is a historical
+        # artifact whose only post-cutoff change is the banner itself
+        # (content verbatim by doctrine). Classify as LEGACY regardless
+        # of the banner commit date.
+        bannered = "Layout note (CR-BP-mv1" in path.read_text(
+            encoding="utf-8", errors="replace")
         for code, msg in check_cr(path):
             entry = {
                 "rule": code,
@@ -254,7 +260,7 @@ def main(argv: list[str] | None = None) -> int:
                 "message": msg,
             }
             findings.append(entry)
-            if last_modified >= cutoff:
+            if last_modified >= cutoff and not bannered:
                 new_findings.append(entry)
             else:
                 legacy_findings.append(entry)

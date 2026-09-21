@@ -121,6 +121,7 @@ scope per the structural-change cross-check directive.
 | CR (dea-catalog-processes): CR-BP-98-task-boundary-and-workflow-realization.md | CLEAN | 0 |
 | CR (dea-catalog-processes): CR-BP-99-reconciliation-matrix.md | HISTORICAL-ONLY | 9 |
 | CR (dea-catalog-processes): CR-BP-L4-02-pr-domain-content-enrichment.md | HISTORICAL-ONLY | 2 |
+| CR (dea-catalog-processes): CR-BP-L4-03-ge-domain-content-enrichment.md | HISTORICAL-ONLY | 2 |
 | CR (dea-catalog-processes): CR-BP-SPEC-BP-01.md | HISTORICAL-ONLY | 11 |
 | CR (dea-catalog-processes): CR-BP-mv1-entity-storage-and-id-system-migration.md | CLEAN | 0 |
 | CR (dea-catalog-processes): CR-CATALOG-STRUCT-02.md | HISTORICAL-ONLY | 19 |
@@ -619,6 +620,10 @@ scope per the structural-change cross-check directive.
 ### CR (dea-catalog-processes): CR-BP-L4-02-pr-domain-content-enrichment.md
 - [XC-A] line 42: legacy path form 'entities/v1-alpha/dea:'
 - [XC-A] line 66: legacy path form 'entities/v1-alpha/dea:'
+
+### CR (dea-catalog-processes): CR-BP-L4-03-ge-domain-content-enrichment.md
+- [XC-A] line 44: legacy path form 'entities/v1-alpha/dea:'
+- [XC-A] line 68: legacy path form 'entities/v1-alpha/dea:'
 
 ### CR (dea-catalog-processes): CR-BP-SPEC-BP-01.md
 - [XC-B] line 17: legacy repo name 'dea-catalog-processes'

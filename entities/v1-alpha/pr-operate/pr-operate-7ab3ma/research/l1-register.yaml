@@ -674,7 +674,9 @@ register:
       ratified_at: '2026-09-15'
       ratified_by: CR-BP-73
       deferral_reason: null
-      audit_status: ratified-accepted
+      audit_status: landed  # CR-BP-mv1 repair: pre-existing drift on main
+        # (audit_status held the disposition value; the CR-BP-73 group
+        # processes:group-ao-retire-jspuzz is landed, so audit says landed)
       carrier_cr: CR-BP-73
       discovery_record: dea:discovery-agency-and-organization-retire-escape
       escape_clause_activated: |

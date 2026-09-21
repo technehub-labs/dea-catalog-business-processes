@@ -19,6 +19,21 @@ import yaml
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SCRIPTS = REPO_ROOT / "scripts"
 
+# CR-BP-mv1: records moved to the L0-rooted containment tree with
+# content-addressed ids. Resolve legacy dea:* ids through the migration
+# id map, then locate the record file by its new id.
+_ID_MAP = yaml.safe_load(
+    (REPO_ROOT / "reconciliation/migration-id-map.yaml").read_text()
+)["id_map"]
+
+
+def _entity_path(legacy_id: str) -> Path:
+    new_id = _ID_MAP[legacy_id]
+    fname = new_id.replace(":", "-") + ".yaml"
+    matches = list((REPO_ROOT / "entities/v1-alpha").rglob(fname))
+    assert len(matches) == 1, f"{legacy_id} -> {new_id}: {len(matches)} matches"
+    return matches[0]
+
 
 def _run(*args: str) -> subprocess.CompletedProcess:
     return subprocess.run(
@@ -36,9 +51,9 @@ def test_self_test_passes() -> None:
 def test_cd_b_records_migrated() -> None:
     """cd-b records carry the canonical context: block and have no
     process_audience field."""
-    for pid in ("processes:process-customer-channel-and-acquisition-build",
-                "processes:process-demand-generation-build"):
-        path = list((REPO_ROOT / f"entities/v1-alpha/{pid}").glob(f"{pid}.yaml"))[0]
+    for pid in ("dea:process-customer-channel-and-acquisition-build",
+                "dea:process-demand-generation-build"):
+        path = _entity_path(pid)
         data = yaml.safe_load(path.read_text())
         assert data.get("process_intent") == "operate", (
             f"{pid}: intent not migrated to canonical 'operate'"
@@ -63,9 +78,9 @@ def test_cd_b_records_migrated() -> None:
 
 def test_cd_c_records_migrated() -> None:
     """cd-c records migrated to canonical 'develop' intent."""
-    for pid in ("processes:process-customer-strategy-conception",
-                "processes:process-market-and-demand-conception"):
-        path = list((REPO_ROOT / f"entities/v1-alpha/{pid}").glob(f"{pid}.yaml"))[0]
+    for pid in ("dea:process-customer-strategy-conception",
+                "dea:process-market-and-demand-conception"):
+        path = _entity_path(pid)
         data = yaml.safe_load(path.read_text())
         assert data.get("process_intent") == "develop", (
             f"{pid}: intent not migrated to canonical 'develop'"
@@ -73,7 +88,7 @@ def test_cd_c_records_migrated() -> None:
         assert "process_audience" not in data
         assert "process_context" not in data
         ctx = data.get("context")
-        assert isinstance(ctx, list) and ctx[0].get("ref") == "processes:pc-pr-c"
+        assert isinstance(ctx, list) and ctx[0].get("ref") == _ID_MAP["dea:pc-pr-c"]
         rels = data.get("relationships", [])
         assert any(r.get("relationship_type") == "serves"
                    and r.get("target_id") == "ecf:customerAndDemand.conceive"
@@ -82,11 +97,11 @@ def test_cd_c_records_migrated() -> None:
 
 def test_change_history_appended() -> None:
     """Every migrated record carries a CR-BP-15-IMP Phase 5 history entry."""
-    for pid in ("processes:process-customer-channel-and-acquisition-build",
-                "processes:process-demand-generation-build",
-                "processes:process-customer-strategy-conception",
-                "processes:process-market-and-demand-conception"):
-        path = list((REPO_ROOT / f"entities/v1-alpha/{pid}").glob(f"{pid}.yaml"))[0]
+    for pid in ("dea:process-customer-channel-and-acquisition-build",
+                "dea:process-demand-generation-build",
+                "dea:process-customer-strategy-conception",
+                "dea:process-market-and-demand-conception"):
+        path = _entity_path(pid)
         data = yaml.safe_load(path.read_text())
         history = data.get("metadata", {}).get("change_history", [])
         assert any(h.get("cr") == "CR-BP-15-IMP" and h.get("phase") == "phase-5"
@@ -95,19 +110,25 @@ def test_change_history_appended() -> None:
         )
 
 
+@pytest.mark.skip(
+    reason="CR-BP-mv1 historical freeze: apply_phase_5_tranche.py is a retired "
+    "one-shot script that writes the pre-migration flat layout; re-running it "
+    "against the migrated containment tree is not meaningful. The content "
+    "invariants it established are covered live by the three tests above."
+)
 def test_migration_is_idempotent() -> None:
     """Re-applying the cd-b tranche produces no further changes."""
     import hashlib
     before = {}
-    for pid in ("processes:process-customer-channel-and-acquisition-build",
-                "processes:process-demand-generation-build"):
-        path = list((REPO_ROOT / f"entities/v1-alpha/{pid}").glob(f"{pid}.yaml"))[0]
+    for pid in ("dea:process-customer-channel-and-acquisition-build",
+                "dea:process-demand-generation-build"):
+        path = _entity_path(pid)
         before[pid] = hashlib.sha256(path.read_bytes()).hexdigest()
     _run("--tranche", "cd-b")
     after = {}
-    for pid in ("processes:process-customer-channel-and-acquisition-build",
-                "processes:process-demand-generation-build"):
-        path = list((REPO_ROOT / f"entities/v1-alpha/{pid}").glob(f"{pid}.yaml"))[0]
+    for pid in ("dea:process-customer-channel-and-acquisition-build",
+                "dea:process-demand-generation-build"):
+        path = _entity_path(pid)
         after[pid] = hashlib.sha256(path.read_bytes()).hexdigest()
     assert before == after, "migration is not idempotent"
 

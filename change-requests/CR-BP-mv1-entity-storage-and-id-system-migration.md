@@ -130,13 +130,13 @@ Historical-artifact treatment: no historical CR or ADR is rewritten. Each flagge
 | XC-01 | Admission CRs (CR-BP-64..89 wave + CR-BP-101) | 19 CRs bannered | HISTORICAL-ONLY after banner | banner + XC report |
 | XC-02 | Gate CRs (CR-BP-14, CR-BP-15, CR-BP-100) | 3 CRs bannered; CR-BP-16/40/95/100a CLEAN | HISTORICAL-ONLY after banner | banner + XC report |
 | XC-03 | Slice CRs (CR-BP-34a..d, CR-BP-102) | 5 CRs bannered; CR-BP-98 CLEAN | HISTORICAL-ONLY after banner | banner + XC report |
-| XC-04 | L4 pipeline CRs | CR-BP-L4-02 bannered; CR-BP-L4-03 (in PR #148) banner lands with the XC-10 stacked recovery | HISTORICAL-ONLY after banner | banner + XC report |
+| XC-04 | L4 pipeline CRs | CR-BP-L4-02 bannered; CR-BP-L4-03 bannered (PR #148 merged ahead of this slice; banner landed in this PR) | HISTORICAL-ONLY after banner | banner + XC report |
 | XC-05 | Foundation, L3-tranche, hygiene, release, and reconciliation CRs (all remaining bannered CRs in this repo) | 49 CRs bannered | HISTORICAL-ONLY after banner | banner + XC report |
 | XC-06 | Metaframework ADRs (`dea-metaframework/docs/adr/`) | ADR-ECF-003 flagged; banner rides PR #31 | HISTORICAL-ONLY | commit on `docs/id-system-and-entity-storage-layout` |
 | XC-07 | Metamodel ADRs (`dea-metamodel/docs/adr/`) | 0 flagged | CLEAN | XC report |
 | XC-08 | Architecture-framework ADRs (`dea-architecture-framework/docs/ADRs/`) | 0002 + 0006 flagged; banners in PR #14 | HISTORICAL-ONLY | PR #14 |
-| XC-09 | Id-map provenance + known residuals | `reconciliation/migration-id-map.yaml` (3,623 entries); 1 documented dangling `supersedes` lineage ref (pre-existing on main; repair CR queued) | COMPLETE + DOCUMENTED | IDM-004 well-formedness + uniqueness, 0 findings on 3,598 records; IDM-006 exempts only the documented residual value |
-| XC-10 | PR #148 stacked recovery | 97 record YAMLs on pre-migration paths | RECOVERY PLANNED: rebase onto post-migration main, re-run the G&E generator (path logic already updated), new PR | this section + IDM-008 gate |
+| XC-09 | Id-map provenance + known residuals | `reconciliation/migration-id-map.yaml` (3,623 entries); 1 documented dangling `supersedes` lineage ref (pre-existing on main; repair CR queued); register audit gate walker repaired for the containment tree (pre-existing flat-layout glob; gate not wired in CI, drift invisible) + AO x Retire cell `audit_status` corrected to `landed` (pre-existing drift on main) | COMPLETE + DOCUMENTED | IDM-004 well-formedness + uniqueness, 0 findings on 3,598 records; IDM-006 exempts only the documented residual value |
+| XC-10 | PR #148 absorption | 340 enriched G&E Task YAMLs landed on main pre-migration-merge | COMPLETE: #148 merged 2026-09-20; absorbed into this branch via three-way splice (migration id/structure kept, #148 enriched definition/trigger/outcome/boundary/evidence spliced in, legacy `dea:*` references in spliced content rewritten through the id map); the earlier stacked-recovery plan is retired | merge commit on this branch + IDM-008 gate |
 | XC-11 | Forward enforcement | every future CR/ADR/record PR | ENFORCED: IDM-008 blocking in CI; coherence report uploaded per PR | `ci.yml` IDM-008 step |
 
 ### XC-01: Admission CRs (19 bannered)
@@ -175,10 +175,10 @@ Historical-artifact treatment: no historical CR or ADR is rewritten. Each flagge
 - `CR-BP-34d-semantic-identity-vs-version.md`
 - `CR-BP-102-l4-decomposition-pipeline.md`
 
-### XC-04: L4 pipeline CRs (1 bannered here)
+### XC-04: L4 pipeline CRs (2 bannered)
 
 - `CR-BP-L4-02-pr-domain-content-enrichment.md`
-- `CR-BP-L4-03-ge-domain-content-enrichment.md` (in PR #148; banner lands with the XC-10 stacked recovery)
+- `CR-BP-L4-03-ge-domain-content-enrichment.md` (bannered in this PR after #148 merged ahead of the migration)
 
 ### XC-05: Foundation, L3-tranche, hygiene, release, and reconciliation CRs (49 bannered)
 
@@ -239,4 +239,4 @@ Historical-artifact treatment: no historical CR or ADR is rewritten. Each flagge
 - `dea-architecture-framework/docs/ADRs/0006-opendeam-v0.6.0-process-kernel-specialization.md` (PR #14)
 - `dea-metamodel/docs/adr/`: 0 flagged, CLEAN
 
-Final checker state at PR open: 144 artifacts scanned; 64 CLEAN; 80 HISTORICAL-ONLY; 0 NEEDS-FRAMING in this repo; 0 UNRESOLVED-REFS. (The three sibling-repo ADRs showed NEEDS-FRAMING until their banners landed; the report regenerates on the cross-check script's next run.)
+Final checker state at PR open: 145 artifacts scanned; 64 CLEAN; 81 HISTORICAL-ONLY (CR-BP-L4-03 included after PR #148 merged ahead of this slice); 0 NEEDS-FRAMING in this repo; 0 UNRESOLVED-REFS. (The three sibling-repo ADRs showed NEEDS-FRAMING until their banners landed; the report regenerates on the cross-check script's next run.)
