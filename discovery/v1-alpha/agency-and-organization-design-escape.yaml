@@ -1,0 +1,98 @@
+# Lifecycle process-discovery record (CR-BP-62 section 17).
+# Exercise: CR-BP-105 (A&O domain-deep sourcing tranche, Design stage).
+# Context: AgencyAndOrganization / Design. Dispositions are discovery outcomes;
+# canonical admission remains governed (CR-BP-62 section 20).
+discovery:
+  id: dea:discovery-agency-and-organization-design-escape
+  ecf_context:
+    domain: AgencyAndOrganization
+    lifecycle_stage: Design
+  candidates:
+  - name: Design Regulated Role Architecture
+    proposed_identity:
+      verb: Design
+      object: Regulated Role Architecture
+      scope: enterprise
+    trigger: >
+      The enterprise is designing a role catalogue and competency framework that includes roles whose holders must hold regulator-issued licences or admissions, and the design must align each role's authority, signing capacity, and scope to the regulator's continuing-supervision framework before the role enters Build or Activate.
+    inputs: >
+      Regulator licence catalogue or scope inventory (FCA SMCR CF1..CF11; state healthcare licensure scopes; state bar admissions; FAA/EASA type-rating catalogue; NAIC producer line-of-authority taxonomy; FCC commercial-operator classes); the regulated-scope declaration from Conceive; fitness-and-propriety criteria per role; supervisor-controlled-scope patterns; competency and competency-assessment requirements per role; continuing-supervisor notification obligations.
+    transformation: >
+      Design the role catalogue entries for regulator-licensed roles such that each entry carries: the regulator-issued licence or admission class, the supervisor-controlled scope (signing authority / controlled-function designation / area of practice), the fitness-and-propriety attestation regime, the supervised-training completion requirements, the competency-assessment regime, and the continuing-supervisor notification path. Move the role catalogue from a substrate-neutral design to one with regulator-tied role entries.
+    outcome: >
+      The role catalogue carries regulator-tied role entries; each licensed-role entry is aligned to its regulator's continuing-supervision framework, its competency and fitness-and-propriety attestation regime is documented, and the role is ready to enter Build and Activate stages without re-scoping.
+    boundary: >
+      Begins at the design step for licensed-role entries; ends at the commitment of the regulator-tied role catalogue for downstream Build and Activate. Excludes the upstream regulated-scope declaration (Conceive stage, CR-BP-105 Conceive escape recommendation), the downstream sourcing of licensed candidates (Build stage), and the downstream regulated mobilization (Activate stage).
+    actors: >
+      Chief people officer; chief compliance officer; competency framework lead; role-engineering function; general counsel; regulated-entity compliance function; relevant business-unit head.
+    controls: >
+      Regulator licence catalogue alignment; fitness-and-propriety criteria mapping per role; supervisor-controlled-scope declaration per role; supervised-training completion requirement documentation; competency-assessment regime documentation; continuing-supervisor notification path documentation.
+    evidence:
+      sources:
+      - "UK FCA SMCR and FCA Handbook SYSC 25 Annex 1: SMF holders must have Statements of Responsibilities aligned to their CF1..CF11 controlled-function designation before the individual is allocated to that role; the design step is a precondition to the activation step"
+      - "US state healthcare licensure taxonomies and Joint Commission credentialing-and-privileging standards (Comprehensive Accreditation Manual for Hospitals): licensed-practitioner role entries must carry scope-of-practice, privileging criteria, and competency-assessment regime documentation before the practitioner is mobilized"
+      - "US state bar admissions and UK SRA practising-certificate regime: regulated-professional role entries must carry area-of-practice, supervisor requirements, and continuing-competence regime documentation before the professional is mobilized"
+      - "US NAIC Producer Licensing Model Act: producer line-of-authority designations must be aligned to the role entry before the producer is appointed"
+      - "EU EASA Part-FCL and US FAA Part 61/63 crew licensing: type-rating and licence-class catalogues must be aligned to the role entry before crew mobilization"
+      - "EU AI Act (Regulation (EU) 2024/1689) Article 14 human-oversight requirements: high-risk AI-system operator role entries must carry human-oversight scope, qualification, and continuing-oversight regime documentation before deployment"
+      - "Federal Aviation Regulation 14 CFR Part 121 subpart Y (Air Carrier Crew Resource Management Training): crew role design must align to CRM training and qualification regime before crew are scheduled for live operations"
+      - "Healthcare HR practice (SHRM Body of Competency Knowledge): regulated-role catalogue design is a distinct, repeatable practice separate from general role engineering and from credentialing and privileging at Activate"
+      evidence_strength: authoritative
+    evaluation:
+      process_reality: >
+        Established and regulator-mandated across regulated sectors; performed jointly by HR role-engineering, compliance, and the regulator's continuing-supervisor designee before any licensed role enters Build.
+      transformation: >
+        Move the role catalogue from a substrate-neutral design to one with regulator-tied role entries; real and material to downstream regulated mobilization.
+      trigger: >
+        The role catalogue being designed includes regulator-licensed roles; observable and required.
+      outcome: >
+        Regulator-tied role catalogue committed and aligned to regulator's framework; distinguishable, auditable, and binding for downstream stages.
+      boundary: >
+        Strong: from licensed-role design to committed regulator-tied role catalogue; Conceive handles regulated-scope declaration; Build handles sourcing; Activate handles mobilization; clear handoffs.
+      semantic_identity: >
+        Verb (design) + object (regulator-tied role catalogue) + outcome (committed regulator-tied role catalogue) stand without the ECF label (BP-LIFE-009).
+      cross_context_stability: >
+        Stable across banking, healthcare, insurance, legal, accounting, telecoms, aviation, and AI-system providers/deployers where regulator-issued individual authorizations are required.
+      cross_domain_applicability: >
+        Concentrated in regulated sectors; not universal across all enterprises; strongest in financial services, healthcare, legal, aviation, and AI Act high-risk system contexts.
+      ecf_independence: >
+        "Design Regulated Role Architecture" names recognizable work without reference to the Design ECF label.
+      duplication: >
+        No existing canonical BP at Design covers regulator-tied role-catalogue design; nearest neighbors (general role catalogue and competency framework design at Design; licensed-workforce mobilization at Activate) cover adjacent but distinct work.
+      composition: >
+        Business Process level; per-licence-class role-entry design, fitness-and-propriety criteria mapping, supervisor-controlled-scope alignment, and continuing-supervisor notification path documentation decompose to Activities at L3.
+      capability_distinction: >
+        A transformation with trigger and outcome; not a capability restatement.
+      governance_distinction: >
+        Not a policy; a governed workflow whose controls are regulator-mandated role-entry commitments.
+      lifecycle_span: >
+        Begins and ends within Design; Conceive handles regulated-scope declaration; Build handles sourcing; Activate handles mobilization.
+    scoring:
+      process_reality: 2
+      semantic_stability: 2
+      cross_domain_applicability: 2
+      boundary_clarity: 2
+      evidence_strength: 2
+      total: 10
+      rationale: >
+        Authoritative multi-source regulatory evidence; universal sector practice in regulated industries; clean boundary separation from existing general-case Design BP and from downstream Conceive regulated-scope and Activate licensed-workforce BPs. Recommend ADMIT-CANONICAL.
+    disposition:
+      type: ADMIT-CANONICAL
+      canonical_process_ref: processes:process-ao-design-<hash> (proposed)
+  context_evaluation:
+    concerns_identified: true
+    candidates_considered: true
+    adjacent_contexts_reviewed: true
+    existing_processes_searched: true
+    lifecycle_spanning_considered: true
+    capability_distinctions_tested: true
+    pattern_candidates_considered: true
+    evidence_assessed: true
+    process_empty: false
+  rationale:
+    included: >
+      Targeted escape-clause evaluation of the AgencyAndOrganization x Design register cell. The discovery finds that regulator-tied role-catalogue design is a regulator-mandated, boundary-clear, evidence-authoritative transformation distinct from the substrate-neutral general-case Design work already admitted, scoring 10/10 and recommended ADMIT-CANONICAL. The candidate pairs naturally with the CR-BP-105 Conceive escape recommendation upstream and the existing AO.Activate licensed-workforce BP (PR #122) downstream.
+    excluded: >
+      Substrate-neutral role catalogue and competency framework design remains the general-case BP at this cell; the general case is not displaced. The escape record adds a regulator-tied specialization, not a replacement.
+    unresolved: >
+      Admission of the recommended candidate is a separate governed step (admission tranche with full PC + PG + BP stack and register flip); this discovery record recommends and does not admit.

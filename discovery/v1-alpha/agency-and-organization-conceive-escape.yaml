@@ -1,0 +1,97 @@
+# Lifecycle process-discovery record (CR-BP-62 section 17).
+# Exercise: CR-BP-105 (A&O domain-deep sourcing tranche, Conceive stage).
+# Context: AgencyAndOrganization / Conceive. Dispositions are discovery outcomes;
+# canonical admission remains governed (CR-BP-62 section 20).
+discovery:
+  id: dea:discovery-agency-and-organization-conceive-escape
+  ecf_context:
+    domain: AgencyAndOrganization
+    lifecycle_stage: Conceive
+  candidates:
+  - name: Conceive Licensed or Regulated Agent Capacity
+    proposed_identity:
+      verb: Conceive
+      object: Licensed or Regulated Agent Capacity
+      scope: enterprise
+    trigger: >
+      The enterprise is framing an agent-capacity strategy that includes roles whose holders must hold a regulator-issued licence, certification, registration, or admission before performing live regulated work, and the enterprise's regulated-entity approval authority must determine the regulated-scope of those roles before the roles enter Design, Build, or Activate stages.
+    inputs: >
+      Regulator-issued licence catalogue or scope inventory (FCA SMCR controlled-functions list; state healthcare licensure taxonomy; state bar admissions; FAA/EASA crew type-rating catalogue; NAIC producer line-of-authority taxonomy; FCC commercial-operator licence classes); regulator-defined fitness-and-propriety criteria; supervisor-controlled-scope patterns (signing authority, controlled-function designation, area of practice); enterprise's regulated-entity approval-authority framework; the regulated entity's risk taxonomy and authorized-activity scope.
+    transformation: >
+      Frame the regulated-scope composition of the agentive mix: which roles will require regulator-issued individual authorizations, what supervisor-controlled scope each role will carry, how fitness-and-propriety will be attested at design-build-activate time, and how the regulated personnel record will be governed downstream. Move the agent-capacity strategy from a substrate-neutral plan to one with explicit regulated-scope declarations tied to named regulators.
+    outcome: >
+      The enterprise's agent-capacity strategy carries an explicit regulated-scope declaration: the count and category of regulator-licensed roles, the supervisor-controlled scope of each (signing authority / controlled-function designation / area of practice), the fitness-and-propriety attestation regime, and the alignment between the regulated personnel record and the regulator's continuing-supervision framework.
+    boundary: >
+      Begins at the decision that the agent-capacity strategy will include regulator-licensed roles; ends when the regulated-scope declaration is committed and handed to Design stage for role-catalogue and competency-framework design. Excludes the actual design of role catalogue and competency framework (Design stage), the actual sourcing of licensed candidates (Build stage), and the actual regulated mobilization of the licensed individuals (Activate stage).
+    actors: >
+      Chief people officer; chief compliance officer; chief risk officer; general counsel; regulated-entity compliance function; relevant business-unit head; the regulator's continuing-supervisor designee (where required by the regulated regime, e.g. SMCR Compliance Oversight function).
+    controls: >
+      Regulator licence inventory; regulator fitness-and-propriety criteria; regulator-defined scope patterns; regulated-entity approval-authority framework; supervisor-controlled-scope declaration; alignment of agent-capacity strategy with the enterprise's risk taxonomy and authorized-activity scope.
+    evidence:
+      sources:
+      - "UK FCA Senior Managers and Certification Regime (SMCR): the FCA's Statements of Responsibilities and the CF1..CF11 controlled-functions list establish regulated-scope declarations as a precondition to designing a UK banking firm's SMF-holder roles (FCA Handbook SYSC 25 Annex 1)"
+      - "US state healthcare licensure taxonomies (medical, nursing, pharmacy, allied health): state licensure regimes establish the scope of regulated practice and the supervisor-controlled-scope patterns that must be declared when conceiving a healthcare organization's staffing plan"
+      - "US state bar admissions and UK SRA regulated-professionals regime: practising certificates and admissions establish the scope of regulated practice that must be declared when conceiving a law firm's practitioner staffing plan"
+      - "US NAIC Producer Licensing Model Act and state insurance-producer licensing regimes: producer line-of-authority designations establish the regulated-scope patterns that must be declared when conceiving an insurance producer staffing plan"
+      - "EU Aviation Safety Agency (EASA) Part-FCL and US Federal Aviation Administration (FAA) Part 61/63 crew licensing regimes: type-rating and licence-class catalogues establish the regulated-scope patterns that must be declared when conceiving an airline's crew staffing plan"
+      - "EU AI Act (Regulation (EU) 2024/1689) Article 9 risk classification and Article 14 human-oversight requirements: AI-system risk classification and human-oversight role declarations establish regulated-scope patterns for conceiving the AI-agent mix in AI-system providers and deployers"
+      - "Healthcare provider credentialing practice (The Joint Commission Comprehensive Accreditation Manual for Hospitals; NCQA Health Plan Accreditation): regulated-scope declarations are a precondition to credentialing and privileging of licensed practitioners"
+      evidence_strength: authoritative
+    evaluation:
+      process_reality: >
+        Established and regulator-mandated across regulated sectors; performed jointly by HR, compliance, legal, and the regulator's continuing-supervisor designee before any licensed role enters Design or Build.
+      transformation: >
+        Move the agent-capacity strategy from a substrate-neutral composition plan to one with explicit regulator-tied scope declarations; real and material to downstream regulated mobilization.
+      trigger: >
+        Enterprise decision to include regulator-licensed roles in the agent-capacity strategy; observable and required.
+      outcome: >
+        Regulated-scope declaration committed and aligned to regulator's framework; distinguishable, auditable, and binding for downstream stages.
+      boundary: >
+        Strong: from strategy framing to scope declaration; Design stage handles role and competency design; Build handles sourcing; Activate handles credentialed-but-not-live to credentialed-and-live; clear handoffs.
+      semantic_identity: >
+        Verb (conceive) + object (regulated-scope composition) + outcome (regulated-scope declaration) stand without the ECF label (BP-LIFE-009).
+      cross_context_stability: >
+        Stable across banking, healthcare, insurance, legal, accounting, telecoms, aviation, and AI-system providers/deployers where regulator-issued individual authorizations are required.
+      cross_domain_applicability: >
+        Concentrated in regulated sectors; not universal across all enterprises; strongest in financial services, healthcare, legal, aviation, and AI Act high-risk system contexts.
+      ecf_independence: >
+        "Conceive Licensed or Regulated Agent Capacity" names recognizable work without reference to the Conceive ECF label.
+      duplication: >
+        No existing canonical BP at Conceive covers regulated-scope declaration of agent capacity; nearest neighbors (general agent capacity strategy framing at Conceive; licensed-workforce mobilization at Activate) cover adjacent but distinct work.
+      composition: >
+        Business Process level; regulated-scope inventory, fitness-and-propriety criteria mapping, supervisor-controlled-scope declaration, and regulator-alignment work decompose to Activities at L3.
+      capability_distinction: >
+        A transformation with trigger and outcome; not a capability restatement.
+      governance_distinction: >
+        Not a policy; a governed workflow whose controls are regulator-mandated declarations.
+      lifecycle_span: >
+        Begins and ends within Conceive; Design stage handles role-catalogue and competency-framework design; downstream licensed-workforce mobilization lives at Activate (CR-BP-81 admission) and is not duplicated.
+    scoring:
+      process_reality: 2
+      semantic_stability: 2
+      cross_domain_applicability: 2
+      boundary_clarity: 2
+      evidence_strength: 2
+      total: 10
+      rationale: >
+        Authoritative multi-source regulatory evidence; universal sector practice in regulated industries; clean boundary separation from existing general-case Conceive BP and from downstream Activate licensed-workforce BP. Recommend ADMIT-CANONICAL.
+    disposition:
+      type: ADMIT-CANONICAL
+      canonical_process_ref: processes:process-ao-conceive-<hash> (proposed)
+  context_evaluation:
+    concerns_identified: true
+    candidates_considered: true
+    adjacent_contexts_reviewed: true
+    existing_processes_searched: true
+    lifecycle_spanning_considered: true
+    capability_distinctions_tested: true
+    pattern_candidates_considered: true
+    evidence_assessed: true
+    process_empty: false
+  rationale:
+    included: >
+      Targeted escape-clause evaluation of the AgencyAndOrganization x Conceive register cell. The discovery finds that regulated-scope declaration of agent capacity is a regulator-mandated, boundary-clear, evidence-authoritative transformation distinct from the substrate-neutral general-case Conceive work already admitted, scoring 10/10 and recommended ADMIT-CANONICAL. The candidate is the strongest in this slice because of its cross-sector breadth (banking, healthcare, insurance, professional services, telecoms, aviation, AI-system providers/deployers) and because the existing AO.Activate licensed-workforce BP (PR #122) requires this upstream regulated-scope commitment to make sense.
+    excluded: >
+      Substrate-neutral agent-capacity strategy framing remains the general-case BP at this cell; the general case is not displaced. The escape record adds a regulated-scope specialization, not a replacement.
+    unresolved: >
+      Admission of the recommended candidate is a separate governed step (admission tranche with full PC + PG + BP stack and register flip); this discovery record recommends and does not admit.

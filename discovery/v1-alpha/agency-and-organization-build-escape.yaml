@@ -1,0 +1,101 @@
+# Lifecycle process-discovery record (CR-BP-62 section 17).
+# Exercise: CR-BP-105 (A&O domain-deep sourcing tranche, Build stage).
+# Context: AgencyAndOrganization / Build. Dispositions are discovery outcomes;
+# canonical admission remains governed (CR-BP-62 section 20).
+discovery:
+  id: dea:discovery-agency-and-organization-build-escape
+  ecf_context:
+    domain: AgencyAndOrganization
+    lifecycle_stage: Build
+  candidates:
+  - name: Build Regulated Agent Pool
+    proposed_identity:
+      verb: Build
+      object: Regulated Agent Pool
+      scope: enterprise
+    trigger: >
+      The enterprise is sourcing candidates for regulator-licensed roles whose qualifications must be verified against the regulator's licence registry and whose fitness-and-propriety must be attested before they enter the regulated personnel record, and the enterprise must apply regulator-specific screening (KYC, AML, sanctions, fitness declarations) that differs from the substrate-neutral agent-acquisition flow.
+    inputs: >
+      Regulator-issued licence verification (FCA Financial Services Register; US state healthcare licensure registries; US state bar admissions registries; FAA / EASA crew licence registries; NAIC Producer Database (PDB); FCC Universal Licensing System; NMLS); fitness-and-propriety attestation; sanctions screening (OFAC SDN, UN, EU, UK HM Treasury); AML / KYC screening per FINRA Rule 3110(e) and 18 USC 1956(c)(7); pre-employment background screening under FCRA 15 USC 1681; ADA-compliant fitness assessment per 42 USC 12102; OFAC screening per 31 CFR 501; the regulator-tied role catalogue from Design.
+    transformation: >
+      Move the licensed-candidate pool from sourced-but-unverified to verified-and-cleared-and-on-the-regulated-personnel-record, with each candidate carrying the regulator-issued licence verification, the fitness-and-propriety attestation, the sanctions/AML/KYC clearance, and the regulator-aligned supervised-training enrolment. The pool is regulator-ready, not substrate-neutral.
+    outcome: >
+      The licensed-candidate pool is verified, cleared, and on the regulated personnel record; each candidate is fitness-and-propriety attested and ready for regulator-tied Activate without re-screening.
+    boundary: >
+      Begins at the decision to source regulator-licensed candidates; ends at the regulator-ready pool committed for Activate. Excludes the upstream regulator-tied role catalogue design (Design stage, CR-BP-105 Design escape recommendation) and the downstream regulated mobilization to live on the regulated personnel record (Activate stage, CR-BP-81 admission).
+    actors: >
+      Talent acquisition; chief compliance officer; sanctions compliance; AML / KYC analyst; regulated-entity compliance function; general counsel; HR operations; relevant business-unit head.
+    controls: >
+      Regulator-issued licence registry verification; fitness-and-propriety attestation collection; OFAC / UN / EU / HM Treasury sanctions screening; AML / KYC per FINRA Rule 3110(e); FCRA-compliant background screening per 15 USC 1681; ADA-compliant fitness assessment per 42 USC 12102; regulator-aligned supervised-training enrolment.
+    evidence:
+      sources:
+      - "UK FCA Financial Services Register verification: licensed-candidate screening must confirm current FCA-authorized status and Statements of Responsibilities alignment before the candidate is allocated to a CF1..CF11 controlled function"
+      - "US state healthcare licensure registry verification (FSMB, Nursys, NABP, ARRT, ARDMS, NBRC, etc.): licensed-practitioner screening must confirm current active licensure against the state-specific registry"
+      - "US state bar admissions registry verification: attorney candidate screening must confirm current active bar admission and good-standing status"
+      - "US NMLS (Nationwide Multistate Licensing System) for state insurance-producer licensing; NAIC Producer Database (PDB) for state insurance-producer licensing and appointments"
+      - "US FAA airmen certification database and EASA Part-FCL crew licence verification for aviation crew candidates"
+      - "EU AI Act (Regulation (EU) 2024/1689) Article 14 and Annex IV human-oversight role qualifications for high-risk AI-system providers and deployers"
+      - "US FINRA Rule 3110 (Supervision) and SEC Rule 17a-3 (Records) for broker-dealer supervisory qualification verification"
+      - "US OFAC Sanctions screening (31 CFR 501.603), UN Consolidated List, EU Consolidated List, UK HM Treasury Consolidated List for sanctions screening of all regulated-licensed candidates"
+      - "US Bank Secrecy Act (31 USC 5311 et seq.) and FinCEN AML/KYC guidance for AML/KYC screening of regulated-licensed financial-services candidates"
+      - "US FCRA (15 USC 1681) compliant background screening and EEOC / ADA (42 USC 12112) compliant fitness assessment for regulated-role candidate screening"
+      - "Healthcare HR practice (SHRM Body of Competency Knowledge) and Joint Commission credentialing-and-privileging standards: regulated-pool build is a distinct, repeatable practice separate from substrate-neutral agent acquisition and from regulator-tied mobilization at Activate"
+      evidence_strength: authoritative
+    evaluation:
+      process_reality: >
+        Established and regulator-mandated across regulated sectors; performed jointly by talent acquisition, compliance, sanctions/AML analysts, and HR operations before any licensed candidate enters Activate.
+      transformation: >
+        Move the licensed-candidate pool from sourced-but-unverified to verified-and-cleared-and-on-the-regulated-personnel-record; real and material to downstream regulated mobilization.
+      trigger: >
+        The enterprise sourcing for regulator-licensed roles; observable and required.
+      outcome: >
+        Regulator-ready licensed-candidate pool committed and aligned to regulator's framework; distinguishable, auditable, and binding for downstream Activate.
+      boundary: >
+        Strong: from sourced-but-unverified to regulator-ready pool; Design handles regulator-tied role catalogue; Activate handles mobilization; clear handoffs.
+      semantic_identity: >
+        Verb (build) + object (regulator-ready licensed-candidate pool) + outcome (verified, cleared, on the regulated personnel record) stand without the ECF label (BP-LIFE-009).
+      cross_context_stability: >
+        Stable across banking, healthcare, insurance, legal, accounting, telecoms, aviation, and AI-system providers/deployers where regulator-issued individual authorizations are required.
+      cross_domain_applicability: >
+        Concentrated in regulated sectors; not universal across all enterprises; strongest in financial services, healthcare, legal, aviation, and AI Act high-risk system contexts.
+      ecf_independence: >
+        "Build Regulated Agent Pool" names recognizable work without reference to the Build ECF label.
+      duplication: >
+        No existing canonical BP at Build covers regulator-ready licensed-candidate pool build; nearest neighbors (general agent acquisition at Build; licensed-workforce mobilization at Activate) cover adjacent but distinct work.
+      composition: >
+        Business Process level; per-licence-class registry verification, sanctions/AML/KYC clearance, fitness-and-propriety collection, and regulator-aligned supervised-training enrolment decompose to Activities at L3.
+      capability_distinction: >
+        A transformation with trigger and outcome; not a capability restatement.
+      governance_distinction: >
+        Not a policy; a governed workflow whose controls are regulator-mandated screening and attestation regimes.
+      lifecycle_span: >
+        Begins and ends within Build; Design handles regulator-tied role catalogue; Activate handles mobilization.
+    scoring:
+      process_reality: 2
+      semantic_stability: 2
+      cross_domain_applicability: 2
+      boundary_clarity: 2
+      evidence_strength: 2
+      total: 10
+      rationale: >
+        Authoritative multi-source regulatory and legal evidence; universal sector practice in regulated industries; clean boundary separation from existing general-case Build BP and from downstream Activate licensed-workforce BP. Recommend ADMIT-CANONICAL.
+    disposition:
+      type: ADMIT-CANONICAL
+      canonical_process_ref: processes:process-ao-build-<hash> (proposed)
+  context_evaluation:
+    concerns_identified: true
+    candidates_considered: true
+    adjacent_contexts_reviewed: true
+    existing_processes_searched: true
+    lifecycle_spanning_considered: true
+    capability_distinctions_tested: true
+    pattern_candidates_considered: true
+    evidence_assessed: true
+    process_empty: false
+  rationale:
+    included: >
+      Targeted escape-clause evaluation of the AgencyAndOrganization x Build register cell. The discovery finds that regulator-ready licensed-candidate pool build is a regulator-mandated, boundary-clear, evidence-authoritative transformation distinct from the substrate-neutral general-case Build work already admitted, scoring 10/10 and recommended ADMIT-CANONICAL. The candidate pairs naturally with the CR-BP-105 Design escape upstream and the existing AO.Activate licensed-workforce BP (PR #122) downstream.
+    excluded: >
+      Substrate-neutral agent acquisition remains the general-case BP at this cell; the general case is not displaced. The escape record adds a regulator-ready specialization, not a replacement.
+    unresolved: >
+      Admission of the recommended candidate is a separate governed step (admission tranche with full PC + PG + BP stack and register flip); this discovery record recommends and does not admit.
