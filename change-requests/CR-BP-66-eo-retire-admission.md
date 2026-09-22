@@ -22,7 +22,7 @@
 
 Admit the CR-BP-63 discovery outcome at EnablementAndOperations x Retire:
 
-**Decommission** (score 9/10): the withdrawal and retirement of operational assets. Evidence base: ISO 55000 asset management normative end-of-life activities; APQC asset disposition and eTOM resource retirement as stable industry-neutral identities; data center, facility and fleet decommissioning practice with safety and data-sanitization evidence.
+**Decommission** (score 9/10): the withdrawal and retirement of operational assets. Evidence base: ISO 55000 asset management normative end-of-life activities; APQC asset disposition as a stable industry-neutral identity; data center, facility and fleet decommissioning practice with safety and data-sanitization evidence.
 
 Notably, this admission meets the register v2 cell's own escape condition verbatim: the v2 deferral said "defer until a regulated decommission (e.g. nuclear-grade) requires a standalone group." The discovery evaluation established decommissioning as exactly that -- a governed end-of-life discipline with its own trigger, transformation and outcome (BP-LIFE-002/003/004/009), distinct from capability lifecycle management.
 

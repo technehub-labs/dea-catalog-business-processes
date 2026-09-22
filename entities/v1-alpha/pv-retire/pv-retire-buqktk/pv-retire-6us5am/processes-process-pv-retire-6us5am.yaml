@@ -18,8 +18,6 @@ identity:
   evidence_links:
   - type: standard
     ref: https://www.axelos.com/best-practice-solutions/itil
-  - type: standard
-    ref: https://www.tmforum.org/oda/open-apis/directory
 relationships:
 - source_id: processes:process-pv-retire-6us5am
   relationship_type: serves

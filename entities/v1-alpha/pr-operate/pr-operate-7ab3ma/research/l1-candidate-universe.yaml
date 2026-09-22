@@ -8,7 +8,6 @@ sources:
 - change-requests/CR-BP-03*
 - CR-BP-03C
 - APQC PCF 7.0
-- TM Forum eTOM
 - BIAN Service Landscape
 - ASCM SCOR Digital Standard
 - ITIL 4 Service Value System
@@ -649,7 +648,6 @@ l1_candidates:
   - Offering design (product-value)
   evidence: &id036
   - CR-DEA-BC-04 N-002 Marketing distinct
-  - TM Forum eTOM Customer Journey Management
   disposition: ratified-accepted
   ratified_at: '2026-09-05'
   ratified_by: CR-BP-13
@@ -713,7 +711,6 @@ l1_candidates:
   out_of_scope:
   - Customer relationship sustainment (Operate)
   evidence:
-  - TM Forum eTOM Customer Acquisition & Lifecycle Management
   disposition: backlog-deferred
   ratified_at: '2026-09-05'
   ratified_by: CR-BP-13
@@ -783,7 +780,6 @@ l1_candidates:
   out_of_scope:
   - Asset retirement (strategy-direction)
   evidence:
-  - TM Forum eTOM Service Retirement
   disposition: backlog-deferred
   ratified_at: '2026-09-05'
   ratified_by: CR-BP-13
@@ -892,7 +888,6 @@ l1_candidates:
   out_of_scope:
   - Customer onboarding (party-relationship)
   evidence:
-  - TM Forum eTOM Service Activation
   - APQC PCF Market and Sell Launch
   disposition: ratified-accepted
   ratified_at: '2026-09-05'
@@ -1006,7 +1001,6 @@ l1_candidates:
   - Capability design (their domain)
   evidence: &id054
   - SCOR Plan
-  - TM Forum eTOM Operations Support & Readiness
   disposition: ratified-accepted
   ratified_at: '2026-09-05'
   ratified_by: CR-BP-13
@@ -1100,7 +1094,6 @@ l1_candidates:
   evidence: &id060
   - SCOR Make/Deliver
   - ITIL 4 Service Operation
-  - TM Forum eTOM Operations
   - APQC PCF Deliver Products and Services
   disposition: ratified-accepted
   ratified_at: '2026-09-05'

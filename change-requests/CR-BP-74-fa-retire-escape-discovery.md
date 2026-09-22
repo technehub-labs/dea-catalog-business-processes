@@ -38,8 +38,6 @@ The 2024-2026 regulatory landscape satisfies the escape clause:
   liquidation basis. ASC 944 Financial Services - Insurance.
 - APQC PCF 8.8 Perform financial wind-down (entity-level solvent
   exit).
-- TM Forum eTOM GB921 Level 3: 1.1.3.4 Manage Financial Liquidity;
-  1.4.5 Perform Wind-down; 1.4.6 Perform Disposal of Investments.
 - Insurance Run-off Association (IRO) Best Practice Guidance (2024):
   governance, communications, claims handling, asset management
   during run-off, reserving adequacy, capital adequacy during

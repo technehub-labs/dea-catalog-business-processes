@@ -33,9 +33,9 @@ The five canonical-admission recommendations:
 | Candidate | Primary cell | Score | Evidence base |
 |---|---|---|---|
 | Transition to Service | ProductAndValue/Activate | 10 | ITIL 4 transition practices; COBIT 2019 BAI07; IT4IT Requirement to Deploy |
-| Transition Out of Service | ProductAndValue/Retire | 10 | ITIL service retirement; eTOM lifecycle management; industry EOL policy practice |
+| Transition Out of Service | ProductAndValue/Retire | 10 | ITIL service retirement; industry EOL policy practice |
 | Bring into Force | GovernanceAndExistence/Activate | 9 | Universal entry-into-force / commencement semantics in legal-regulatory systems; board-resolution effectiveness practice |
-| Decommission | EnablementAndOperations/Retire | 9 | ISO 55000 asset decommissioning/disposal; APQC PCF asset end-of-life; eTOM resource lifecycle |
+| Decommission | EnablementAndOperations/Retire | 9 | ISO 55000 asset decommissioning/disposal; APQC PCF asset end-of-life |
 | Close Enterprise Relationship | PartyAndRelationship/Retire | 9 | Contract close-out and termination practice; outsourcing exit management |
 
 Nine cells conclude `process_empty: true` with the section-15 checklist fully recorded: all Activate cells except ProductAndValue and GovernanceAndExistence; all Retire cells except ProductAndValue, EnablementAndOperations and PartyAndRelationship.

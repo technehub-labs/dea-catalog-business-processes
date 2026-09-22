@@ -147,7 +147,7 @@ Evidence: `CR-DEA-BC-04 N-001`; `dea-catalog-business-capabilities/capability-wo
 | Improve | `processes:pc-pr-improve-k8phkn` | Customer Insight and Retention | Conduct NPS and satisfaction review; Operate churn analysis; Operate win-back programme | accepted |
 | Retire | `processes:pc-pr-retire-2cusde` | Customer Exit | Manage customer offboarding; Manage contract termination | deferred |
 
-Evidence: `CR-DEA-BC-04 N-002`, `R-002`; `dea-catalog-business-capabilities/capability-marketing`, `capability-customer-management`; `APQC PCF Market and Sell`; `TM Forum eTOM Customer Journey Management`; `NICE Satmetrix NPS`; `Bain Net Promoter System`.
+Evidence: `CR-DEA-BC-04 N-002`, `R-002`; `dea-catalog-business-capabilities/capability-marketing`, `capability-customer-management`; `APQC PCF Market and Sell`; `NICE Satmetrix NPS`; `Bain Net Promoter System`.
 
 Canonical L2 present: `processes:process-pr-operate-bbe384` (CR-BP-03C).
 
@@ -177,7 +177,7 @@ Evidence: `CR-DEA-BC-04 R-007`; `dea-catalog-business-capabilities/capability-of
 | Improve | `dea:pc-od-improve` | Operations Improvement; Delivery Improvement | Conduct operations performance review; Conduct logistics optimization; Conduct lean six sigma programme | accepted |
 | Retire | `dea:pc-od-retire` | Operations Retirement; Delivery Retirement | Decommission production line; Decommission delivery route; Retire logistics node | deferred |
 
-Evidence: `CR-DEA-BC-04 R-008`; `dea-catalog-business-capabilities/capability-operations`; `SCOR Plan/Source/Make/Deliver/Return`; `ITIL 4 Service Transition/Operation`; `TM Forum eTOM Operations`; `APQC PCF Deliver Products and Services`; `APQC PCF Continuous Improvement`.
+Evidence: `CR-DEA-BC-04 R-008`; `dea-catalog-business-capabilities/capability-operations`; `SCOR Plan/Source/Make/Deliver/Return`; `ITIL 4 Service Transition/Operation`; `APQC PCF Deliver Products and Services`; `APQC PCF Continuous Improvement`.
 
 ### 4.7 FinanceAndAccounting
 
@@ -288,8 +288,7 @@ confirm the register did not drift.
 [13] `technehub-labs/dea-catalog-business-capabilities/docs/research/candidates.yaml`
 [14] `technehub-labs/dea-catalog-business-capabilities/entities/v1-alpha/capability-*.yaml`
 [15] APQC Process Classification Framework 7.0 (cross-industry)
-[16] TM Forum eTOM (Business Process Framework)
-[17] BIAN Service Landscape (banking reference)
+[16] BIAN Service Landscape (banking reference)
 [18] ASCM SCOR Digital Standard (supply chain)
 [19] ITIL 4 Service Value System
 [20] ISO 37000:2021 Governance of Organizations

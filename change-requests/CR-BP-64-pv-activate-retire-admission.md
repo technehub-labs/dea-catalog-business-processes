@@ -23,7 +23,7 @@
 Admit the two strongest CR-BP-63 discovery outcomes as canonical catalog records:
 
 1. **Transition to Service** at ProductAndValue x Activate (score 10/10; ITIL 4 transition practices, COBIT 2019 BAI07, IT4IT Requirement to Deploy).
-2. **Transition Out of Service** at ProductAndValue x Retire (score 10/10; ITIL service retirement, eTOM lifecycle management, industry EOL practice).
+2. **Transition Out of Service** at ProductAndValue x Retire (score 10/10; ITIL service retirement, industry EOL practice).
 
 Each admission lands the full stack: a new Process Context (the first PCs at Activate/Retire coordinates), a new L1 Process Group (the L1 home the admission requires), the L2 Business Process record with the full identity contract, and an admission deposition citing the discovery record. The L1 register flips the two cells to ratified-accepted/landed (register v5) with the CR-BP-63 evidence cited per cell.
 

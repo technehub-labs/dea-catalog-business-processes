@@ -873,7 +873,7 @@ L2_PROCESSES = [
         "evidence_links": [
             {
                 "type": "standard",
-                "ref": "https://www.tmforum.org/oda/tm-forum-frameworx/etom",
+                "ref": "https://www.apqc.org/resource-library/resource-collections/56391",
             },
             {
                 "type": "documentation",
@@ -943,7 +943,7 @@ L2_PROCESSES = [
         "evidence_links": [
             {
                 "type": "standard",
-                "ref": "https://www.tmforum.org/oda/tm-forum-frameworx/etom",
+                "ref": "https://www.apqc.org/resource-library/resource-collections/56391",
             },
             {
                 "type": "documentation",

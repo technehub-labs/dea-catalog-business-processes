@@ -17,7 +17,7 @@ deposition:
   evidence_base:
     - "ISO 55000 asset management: asset end-of-life, decommissioning and
       disposal are normative lifecycle activities"
-    - "APQC and eTOM: asset disposition and resource retirement are
+    - "APQC: asset disposition and resource retirement are
       stable, industry-neutral process identities"
     - "Industry practice: data center, facility and fleet decommissioning
       disciplines with safety and data-sanitization evidence"
@@ -32,7 +32,7 @@ deposition:
       stability and non-duplication (BP-LIFE-001..015) with
       authoritative evidence. The register v2 per-cell note
       (decommissioning as capability lifecycle management) does not
-      survive the ISO 55000 / eTOM evidence: decommissioning is a
+      survive the ISO 55000 evidence: decommissioning is a
       governed end-of-life discipline with its own trigger,
       transformation and outcome, distinct from capability lifecycle
       management. This tranche enacts the recommendation: the register
