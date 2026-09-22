@@ -24,7 +24,7 @@ entries.
 Two layers of names:
 
 1. **Process Group names** follow the ratified register's first `l1_candidates[]` entry per coordinate (CR-BP-11 §4 verbatim). E.g. the register's Conceive coordinate has `l1_candidates: ['Customer Strategy Conception', 'Market and Demand Conception']`; the catalog's Process Group is `dea:group-customer-strategy-conception` with that as its name.
-2. **L2 Process names** follow BP-ARC-ID-001: must start with a verb (e.g. `Develop Customer Strategy` not `Customer Strategy Conception`). The verb + object are real industry vocabulary drawn from APQC PCF 7.0, TM Forum eTOM, SCOR, ITIL 4; not made up.
+2. **L2 Process names** follow BP-ARC-ID-001: must start with a verb (e.g. `Develop Customer Strategy` not `Customer Strategy Conception`). The verb + object are real industry vocabulary drawn from APQC PCF 7.0, SCOR, ITIL 4; not made up.
 
 The two layers reference each other: the Process Group's `composes` array points at the L2 entries; the L2 entries carry the inverse in `metadata.change_history` (the `part-of` is generated at query time per CR-BP-12 §8).
 

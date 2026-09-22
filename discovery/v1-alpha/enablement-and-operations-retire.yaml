@@ -26,7 +26,6 @@ discovery:
     evidence:
       sources:
       - ITIL service portfolio management practice includes service retirement as governed lifecycle work
-      - eTOM (TM Forum GB921) lifecycle management covers service/resource withdrawal from operation
       - 'Industry end-of-life practice: product and service EOL policies standardize withdrawal-from-service
         work (notice, migration windows, final support)'
       evidence_strength: authoritative
@@ -82,7 +81,6 @@ discovery:
         physical assets'
       - 'APQC Process Classification Framework: asset end-of-life activities (decommission/dispose) appear
         in the Acquire, Construct, and Manage Assets category'
-      - eTOM resource lifecycle management covers resource decommissioning
       evidence_strength: authoritative
     evaluation:
       process_reality: Established and heavily governed in asset-intensive industries.
@@ -107,7 +105,7 @@ discovery:
       boundary_clarity: 2
       evidence_strength: 2
       total: 9
-      rationale: Authoritative asset-lifecycle evidence (ISO 55000, APQC, eTOM); canonical home at EnablementAndOperations/Retire.
+      rationale: Authoritative asset-lifecycle evidence (ISO 55000, APQC); canonical home at EnablementAndOperations/Retire.
     admission:
       status: admitted
       admitted_by: CR-BP-66

@@ -79,7 +79,7 @@ admission:
   bp_id: processes:process-fa-retire-wkbrsa
   pg_id: processes:group-fa-retire-2ptdnw
   pc_id: processes:pc-fa-retire-64q5p9
-  evidence_summary: 'Authoritative statutory and accounting-standards basis for regulated run-off: PRA PS20/24 (UK, in force 30 June 2026) + FSB Final Guidance on Insurance Resolution Strategies (2025) + NAIC Model Regulation Service of Legal Process (Model 901) + IFRS 17 Insurance Contracts (effective 2023) + IFRS 5 Non-current Assets Held for Sale and Discontinued Operations + ASC 205-30 Liquidation Basis of Accounting (FASB ASU 2013-07) + ASC 944 Financial Services - Insurance + APQC PCF 8.8 Perform financial wind-down + TM Forum eTOM GB921 Level 3 + IRO Best Practice Guidance 2024.'
+  evidence_summary: 'Authoritative statutory and accounting-standards basis for regulated run-off: PRA PS20/24 (UK, in force 30 June 2026) + FSB Final Guidance on Insurance Resolution Strategies (2025) + NAIC Model Regulation Service of Legal Process (Model 901) + IFRS 17 Insurance Contracts (effective 2023) + IFRS 5 Non-current Assets Held for Sale and Discontinued Operations + ASC 205-30 Liquidation Basis of Accounting (FASB ASU 2013-07) + ASC 944 Financial Services - Insurance + APQC PCF 8.8 Perform financial wind-down + IRO Best Practice Guidance 2024.'
   register_flip:
     from:
       audit_status: backlog-deferred

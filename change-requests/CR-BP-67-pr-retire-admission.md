@@ -22,7 +22,7 @@
 
 Admit the CR-BP-63 discovery outcome at PartyAndRelationship x Retire:
 
-**Close Enterprise Relationship** (score 9/10): the close-out of enterprise relationships across customer, supplier and partner roles. Evidence base: contract close-out practice (termination settlement, obligation discharge, close-out certification as a stable industry-neutral discipline); eTOM service retirement and party offboarding identities; regulated offboarding obligations (GDPR-driven erasure) that make close-out a governed, evidenced activity.
+**Close Enterprise Relationship** (score 9/10): the close-out of enterprise relationships across customer, supplier and partner roles. Evidence base: contract close-out practice (termination settlement, obligation discharge, close-out certification as a stable industry-neutral discipline); regulated offboarding obligations (GDPR-driven erasure) that make close-out a governed, evidenced activity.
 
 As with CR-BP-66, this admission meets the register v2 cell's own escape condition verbatim: the v2 deferral said "defer until a regulated offboarding (e.g. GDPR-driven erasure) requires a distinct group." The discovery evaluation established close-out as exactly that governed discipline (BP-LIFE-002/003/004/009).
 

@@ -741,7 +741,6 @@ register:
       evidence:
       - dea-metaframework/framework/domain-grounding.md §3.4
       - CR-DEA-BC-04 N-002 Marketing distinct
-      - TM Forum eTOM Customer Journey Management
       disposition: ratified-accepted
       ratified_at: '2026-09-07'
       ratified_by: CR-BP-19
@@ -790,7 +789,6 @@ register:
       - EU AMLD4/AMLD5/AMLD6 (CDD on establishing business relationship)
       - Basel BCBS guidelines on the sound management of ML/FT risks
       - Wolfsberg Group guidance on customer onboarding and due diligence
-      - TM Forum eTOM Customer Acquisition & Lifecycle Management
       - CR-BP-70 escape-clause discovery record
       disposition: ratified-accepted
       ratified_at: '2026-09-15'
@@ -876,7 +874,6 @@ register:
       - Asset retirement (enablement-operations)
       evidence:
       - dea-metaframework/framework/domain-grounding.md §3.4
-      - TM Forum eTOM Service Retirement
       disposition: ratified-accepted
       ratified_at: '2026-09-14'
       ratified_by: CR-BP-67
@@ -973,7 +970,6 @@ register:
       out_of_scope:
       - Customer onboarding (party-relationship)
       evidence:
-      - TM Forum eTOM Service Activation
       - APQC PCF Market and Sell Launch
       disposition: ratified-accepted
       ratified_at: '2026-09-14'
@@ -1052,7 +1048,7 @@ register:
         Reversed from backlog-deferred on CR-BP-63 discovery evidence
         (discovery/v1-alpha/product-and-value-retire.yaml): Transition Out of
         Service scored 10/10 with an ADMIT-CANONICAL recommendation (ITIL service
-        retirement; eTOM lifecycle management; industry EOL practice). CR-BP-64
+        retirement; industry EOL practice). CR-BP-64
         lands the PC (processes:pc-pv-retire-eeck6d), PG (processes:group-pv-retire-buqktk)
         and BP (processes:process-pv-retire-6us5am). Prior deferral (v2):
         retirement treated as overlapping relationship termination and asset
@@ -1104,7 +1100,6 @@ register:
       evidence:
       - dea-metaframework/framework/domain-grounding.md §3.6
       - SCOR Plan
-      - TM Forum eTOM Operations Support & Readiness
       disposition: ratified-accepted
       ratified_at: '2026-09-07'
       ratified_by: CR-BP-19
@@ -1209,7 +1204,6 @@ register:
       - dea-metaframework/framework/domain-grounding.md §3.6
       - SCOR Make/Deliver
       - ITIL 4 Service Operation
-      - TM Forum eTOM Operations
       - APQC PCF Deliver Products and Services
       disposition: ratified-accepted
       ratified_at: '2026-09-07'
@@ -1268,7 +1262,7 @@ register:
         Reversed from backlog-deferred on CR-BP-63 discovery evidence
         (discovery/v1-alpha/enablement-and-operations-retire.yaml): Decommission
         scored 9/10 with an ADMIT-CANONICAL recommendation on ISO 55000 asset
-        end-of-life, eTOM and industry retirement practice. CR-BP-66 lands the
+        end-of-life and industry retirement practice. CR-BP-66 lands the
         PC (processes:pc-eo-retire-nw3ynf), PG
         (processes:group-eo-retire-n9ge5c) and BP
         (processes:process-eo-retire-rpg6d4). Prior deferral (v2, per-cell note):

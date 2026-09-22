@@ -101,7 +101,7 @@ def test_render_l2_process_name_matches_verb_object() -> None:
 
 def test_render_l2_process_uses_real_industry_evidence() -> None:
     """Each L2 entry should reference real industry frameworks."""
-    ALLOWED_DOMAINS = {"apqc.org", "tmforum.org", "scor", "itil", "bian"}
+    ALLOWED_DOMAINS = {"apqc.org", "scor", "itil", "bian"}
     for p in L2_PROCESSES:
         text = render_l2_process(p)
         doc = yaml.safe_load(text)

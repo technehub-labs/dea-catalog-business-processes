@@ -19,8 +19,6 @@ identity:
   - type: standard
     ref: https://www.worldcc.com/
   - type: standard
-    ref: https://www.tmforum.org/
-  - type: standard
     ref: https://gdpr.eu/
 relationships:
 - source_id: processes:process-pr-retire-bd3asa

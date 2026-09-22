@@ -19,8 +19,6 @@ identity:
   - type: standard
     ref: https://www.iso.org/iso-55001-asset-management.html
   - type: standard
-    ref: https://www.tmforum.org/
-  - type: standard
     ref: https://www.apqc.org/
 relationships:
 - source_id: processes:process-eo-retire-rpg6d4

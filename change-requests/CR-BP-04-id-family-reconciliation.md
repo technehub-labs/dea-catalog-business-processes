@@ -71,7 +71,7 @@ The apparent `dea:bp-*` vs `dea:process-*` drift collapses on close reading. The
 
 ### 5.1 Role 1: Legacy migration reference (intentional)
 
-`schemas/entity.schema.json` line 35 (`legacy_ids`) and `schemas/contribution.schema.json` line 73 (`legacy_ids`) define a `dea:bp:*` pattern. This is the legacy-migration escape hatch introduced by CR-BP-03A and is preserved verbatim. A `legacy_ids` entry must reference a known prior external identifier (e.g. an APQC or eTOM process code). It is **not** a canonical catalog identifier.
+`schemas/entity.schema.json` line 35 (`legacy_ids`) and `schemas/contribution.schema.json` line 73 (`legacy_ids`) define a `dea:bp:*` pattern. This is the legacy-migration escape hatch introduced by CR-BP-03A and is preserved verbatim. A `legacy_ids` entry must reference a known prior external identifier (e.g. an APQC process code). It is **not** a canonical catalog identifier.
 
 ### 5.2 Role 2: Canonical Business Process (intentional)
 

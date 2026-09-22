@@ -31,7 +31,7 @@ The register therefore:
 
 - records every coordinate with its semantic interpretation, in-scope concerns, out-of-scope concerns, candidate L0/L1/L2 elements, evidence, and disposition;
 - preserves internal OpenDEA canon (ECF grounding, BC catalog overlay v0.2, CR-BP-03 hierarchy, the existing L2 sample) as the authority;
-- uses external process frameworks (APQC, eTOM, BIAN, SCOR, ITIL, ISO 37000, ISO 22301, ISO 56002) as candidate-process and boundary evidence, never as canonical authority;
+- uses external process frameworks (APQC, BIAN, SCOR, ITIL, ISO 37000, ISO 22301, ISO 56002) as candidate-process and boundary evidence, never as canonical authority;
 - does not in this CR create canonical L1 records or canonical L2 entries; both are deferred to CR-BP-12 and CR-BP-13 respectively.
 
 ---
@@ -139,7 +139,6 @@ The register is grounded in three evidence tiers.
 ### Tier 3: External frameworks (candidate sources only)
 
 - APQC Process Classification Framework (PCF) 7.0
-- TM Forum enhanced Telecom Operations Map (eTOM) and Customer Journey Management
 - BIAN Service Landscape
 - ASCM SCOR Digital Standard
 - ITIL 4 Service Value System
@@ -370,13 +369,12 @@ Rejected because:
 
 ### D : Top-down population from external frameworks only
 
-Use APQC, eTOM, BIAN, SCOR, or ITIL as the discovery authority for L1 groups.
+Use APQC, BIAN, SCOR, or ITIL as the discovery authority for L1 groups.
 
 Rejected because:
 
 - external frameworks each carry their industry's blind spots;
 - APQC describes its PCF as a customizable process taxonomy;
-- TM Forum describes eTOM as a service-oriented framework; it is not a universal process architecture;
 - BIAN describes its Service Landscape as a reference structure for banking service domains; it is not a universal process architecture;
 - OpenDEA ECF and existing OpenDEA catalogs retain semantic authority per the user's evidence-policy selection.
 

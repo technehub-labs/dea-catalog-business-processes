@@ -16,7 +16,6 @@ deposition:
       pending per CR-BP-62 section 20)
   evidence_base:
     - ITIL service portfolio management practice (service retirement)
-    - eTOM (TM Forum GB921) lifecycle management: service/resource withdrawal
     - Industry end-of-life practice: standardized EOL withdrawal work
   admission_decision:
     decision: admit
