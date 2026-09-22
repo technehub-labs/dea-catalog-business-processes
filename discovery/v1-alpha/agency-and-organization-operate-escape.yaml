@@ -1,0 +1,99 @@
+# Lifecycle process-discovery record (CR-BP-62 section 17).
+# Exercise: CR-BP-105 (A&O domain-deep sourcing tranche, Operate stage).
+# Context: AgencyAndOrganization / Operate. Dispositions are discovery outcomes;
+# canonical admission remains governed (CR-BP-62 section 20).
+discovery:
+  id: dea:discovery-agency-and-organization-operate-escape
+  ecf_context:
+    domain: AgencyAndOrganization
+    lifecycle_stage: Operate
+  candidates:
+  - name: Operate Regulated Performance Oversight
+    proposed_identity:
+      verb: Operate
+      object: Regulated Performance Oversight
+      scope: enterprise
+    trigger: >
+      The enterprise is operating regulator-licensed roles whose continuing-supervisor notification obligations, conduct-rule compliance, fitness-and-propriety annual attestations, hours-of-work and rest-rule compliance, and continuing-competence tracking must be maintained on the regulated personnel record throughout the role's live operation period, separate from substrate-neutral agent performance operations.
+    inputs: >
+      FCA SMCR Conduct Rules (FCA COCON); FINRA Rule 3110 supervision program; FAA Part 117 flight-time and rest limitations; FAA Part 121 subpart Y CRM training and qualification tracking; EU AI Act (Regulation (EU) 2024/1689) Article 14 continuing-oversight regime for high-risk AI-system operators; state bar continuing legal education (CLE) tracking; state healthcare continuing medical education (CME) tracking; NAIC continuing-education (CE) requirements for insurance producers; fitness-and-propriety annual attestation (SMCR; state healthcare; NAIC; FAA/EASA); continuing-supervisor notification obligations; the regulated personnel record from Activate.
+    transformation: >
+      Maintain the regulated-licensed roles' continuing-supervisor notification, conduct-rule compliance, fitness-and-propriety attestation, hours-of-work and rest-rule compliance, and continuing-competence tracking throughout the live operation period, preserving regulator-aligned compliance evidence on the regulated personnel record. Move the regulated-licensed roles from "live but unsupervised for regulator-compliance" to "live with continuous regulator-aligned oversight".
+    outcome: >
+      The regulated-licensed roles' regulator-aligned compliance evidence is current on the regulated personnel record; continuing-supervisor notification, conduct-rule compliance, fitness-and-propriety annual attestation, hours-of-work and rest-rule compliance, and continuing-competence tracking are current and auditable.
+    boundary: >
+      Begins at the regulator-licensed role becoming live on the regulated personnel record (post-Activate); ends at the role's regulated tenure ending (handoff to Retire). Excludes the substrate-neutral agent performance operations (Operate general case) and the upstream licensed-workforce mobilization (Activate).
+    actors: >
+      Continuing-supervisor designee (per regulator regime); chief compliance officer; chief people officer; competency tracking function; HR operations; regulated-entity compliance function; relevant business-unit head; the licensed individual themselves.
+    controls: >
+      Continuing-supervisor notification obligation maintenance; SMCR Conduct Rules tracking; FINRA Rule 3110 supervision program operation; FAA Part 117 / Part 121 subpart Y hours and training tracking; EU AI Act Article 14 continuing-oversight regime operation; state bar CLE tracking; state healthcare CME tracking; NAIC CE tracking; fitness-and-propriety annual attestation cycle; regulated personnel record integrity.
+    evidence:
+      sources:
+      - "UK FCA SMCR Conduct Rules (FCA COCON in the FCA Handbook): SMF holders are subject to continuing Conduct Rules compliance and fitness-and-propriety annual attestation; the operating enterprise must maintain the evidence on the regulated personnel record"
+      - "US FINRA Rule 3110 (Supervision) and SEC Rule 17a-3 (Records): broker-dealer firms must operate a supervision program and maintain records evidencing continuing supervisory qualification of registered representatives"
+      - "US state healthcare licensure annual renewal and continuing-medical-education (CME) regimes: state medical boards, nursing boards, pharmacy boards, and allied-health boards require annual CME and renewal; the operating enterprise must track and attest"
+      - "US state bar minimum continuing legal education (MCLE) regimes: state bars require annual CLE hours and reporting; the operating law firm must track and attest"
+      - "US NAIC Producer Licensing Model Act and state insurance continuing-education (CE) requirements: state insurance departments require producer CE for license renewal; the operating insurance entity must track and attest"
+      - "US FAA Part 117 flight-time and rest limitations and Part 121 subpart Y (CRM) training and qualification: Part 121 operators must maintain flight-time and rest records and CRM training currency for crew"
+      - "EU EASA Part-FCL and EASA Part-ORO continuing-airworthiness and crew-operating regulations: European air operators must maintain crew qualification and currency"
+      - "EU AI Act (Regulation (EU) 2024/1689) Article 14 (Human oversight) and Article 26 (Post-market monitoring): high-risk AI-system providers and deployers must operate the continuing-oversight regime throughout the AI-system's operational life"
+      - "Healthcare HR practice (SHRM Body of Competency Knowledge) and Joint Commission ongoing-professional-practice-evaluation (OPPE) and focused-professional-practice-evaluation (FPPE) standards: regulated-performance oversight is a distinct, repeatable practice separate from substrate-neutral agent performance operations"
+      evidence_strength: authoritative
+    evaluation:
+      process_reality: >
+        Established and regulator-mandated across regulated sectors; performed by continuing-supervisor designees, compliance, HR operations, and the regulated-entity compliance function throughout the live operation period.
+      transformation: >
+        Move regulated-licensed roles from "live but not actively maintained for regulator-compliance" to "live with continuous regulator-aligned oversight"; real and material to the regulated personnel record integrity.
+      trigger: >
+        The regulator-licensed role becoming live on the regulated personnel record; observable and required.
+      outcome: >
+        Regulator-aligned compliance evidence current and auditable on the regulated personnel record; distinguishable.
+      boundary: >
+        Strong: from role-live to regulated-tenure-end; Activate handles mobilization; Retire handles wind-down (existing AO.Retire regulated-workforce-wind-down BP, PR #114).
+      semantic_identity: >
+        Verb (operate) + object (regulated-licensed-role continuing-compliance regime) + outcome (current regulator-aligned compliance evidence on the regulated personnel record) stand without the ECF label (BP-LIFE-009).
+      cross_context_stability: >
+        Stable across banking, healthcare, insurance, legal, accounting, telecoms, aviation, and AI-system providers/deployers where regulator-issued individual authorizations are required.
+      cross_domain_applicability: >
+        Concentrated in regulated sectors; not universal across all enterprises; strongest in financial services, healthcare, legal, aviation, and AI Act high-risk system contexts.
+      ecf_independence: >
+        "Operate Regulated Performance Oversight" names recognizable work without reference to the Operate ECF label.
+      duplication: >
+        No existing canonical BP at Operate covers regulator-aligned continuing-compliance oversight of licensed roles; nearest neighbors (general agent performance operation at Operate; licensed-workforce mobilization at Activate; regulated-workforce wind-down at Retire) cover adjacent but distinct work.
+      composition: >
+        Business Process level; per-licence-class continuing-supervisor notification, conduct-rule tracking, fitness-and-propriety annual attestation cycle, hours-of-work tracking, and continuing-competence tracking decompose to Activities at L3.
+      capability_distinction: >
+        A transformation with trigger and outcome; not a capability restatement.
+      governance_distinction: >
+        Not a policy; a governed workflow whose controls are regulator-mandated continuing-compliance regimes.
+      lifecycle_span: >
+        Begins at post-Activate and ends at handoff to Retire; Activate handles mobilization; Retire handles wind-down.
+    scoring:
+      process_reality: 2
+      semantic_stability: 2
+      cross_domain_applicability: 2
+      boundary_clarity: 2
+      evidence_strength: 2
+      total: 10
+      rationale: >
+        Authoritative multi-source regulatory evidence; universal sector practice in regulated industries; clean boundary separation from existing general-case Operate BP and from upstream Activate licensed-workforce BP and downstream Retire regulated-workforce-wind-down BP. Recommend ADMIT-CANONICAL.
+    disposition:
+      type: ADMIT-CANONICAL
+      canonical_process_ref: processes:process-ao-operate-<hash> (proposed)
+  context_evaluation:
+    concerns_identified: true
+    candidates_considered: true
+    adjacent_contexts_reviewed: true
+    existing_processes_searched: true
+    lifecycle_spanning_considered: true
+    capability_distinctions_tested: true
+    pattern_candidates_considered: true
+    evidence_assessed: true
+    process_empty: false
+  rationale:
+    included: >
+      Targeted escape-clause evaluation of the AgencyAndOrganization x Operate register cell. The discovery finds that regulator-aligned continuing-compliance oversight of licensed roles is a regulator-mandated, boundary-clear, evidence-authoritative transformation distinct from the substrate-neutral general-case Operate work already admitted, scoring 10/10 and recommended ADMIT-CANONICAL. The candidate bridges the upstream Activate licensed-workforce BP (PR #122) and the downstream Retire regulated-workforce-wind-down BP (PR #114).
+    excluded: >
+      Substrate-neutral agent performance operation remains the general-case BP at this cell; the general case is not displaced. The escape record adds a regulator-aligned continuing-compliance specialization, not a replacement.
+    unresolved: >
+      Admission of the recommended candidate is a separate governed step (admission tranche with full PC + PG + BP stack and register flip); this discovery record recommends and does not admit.

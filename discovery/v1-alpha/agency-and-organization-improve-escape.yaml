@@ -1,0 +1,99 @@
+# Lifecycle process-discovery record (CR-BP-62 section 17).
+# Exercise: CR-BP-105 (A&O domain-deep sourcing tranche, Improve stage).
+# Context: AgencyAndOrganization / Improve. Dispositions are discovery outcomes;
+# canonical admission remains governed (CR-BP-62 section 20).
+discovery:
+  id: dea:discovery-agency-and-organization-improve-escape
+  ecf_context:
+    domain: AgencyAndOrganization
+    lifecycle_stage: Improve
+  candidates:
+  - name: Improve Regulated Workforce Capability
+    proposed_identity:
+      verb: Improve
+      object: Regulated Workforce Capability
+      scope: enterprise
+    trigger: >
+      The enterprise is improving regulator-licensed roles' capability through regulator-mandated continuing-competence programs, fit-and-proper annual assessments, recurrent training, and remediation programs that differ from substrate-neutral learning-and-development operations, and the improvement must align to the regulator's continuing-supervision framework before being recorded on the regulated personnel record.
+    inputs: >
+      Continuing-competence program requirements (SMCR fit-and-proper annual assessment; state bar MCLE; state healthcare CME/CDE; NAIC producer CE; FAA Part 121 recurrent training; EU AI Act Article 14 ongoing training); regulator-mandated remediation-program frameworks; fitness-and-propriety annual attestation cycle; continuing-supervisor notification of capability changes; the regulator-aligned compliance evidence from Operate.
+    transformation: >
+      Move the regulator-licensed roles' capability from current-state to improved-state under the regulator's continuing-competence framework, with each improvement cycle aligned to regulator-mandated training, fit-and-proper re-assessment, and remediation regime. The improvement is regulator-tied, not substrate-neutral.
+    outcome: >
+      The regulator-licensed roles' capability is improved per the regulator's continuing-competence framework; regulator-mandated training, fit-and-proper re-assessment, and remediation cycles are recorded on the regulated personnel record, and the continuing-supervisor has been notified.
+    boundary: >
+      Begins at the decision to improve regulator-licensed roles' capability; ends at the regulator-tied improvement cycle committed and recorded. Excludes the substrate-neutral agent development and organization improvement (Improve general case) and the upstream regulator-aligned continuing-compliance oversight (Operate, CR-BP-105 Operate escape recommendation).
+    actors: >
+      Learning and development function; chief compliance officer; chief people officer; continuing-supervisor designee; competency tracking function; regulated-entity compliance function; relevant business-unit head.
+    controls: >
+      Continuing-competence program alignment to regulator requirements; fit-and-proper annual re-assessment cycle; regulator-mandated remediation program operation; continuing-supervisor notification of capability changes; regulated personnel record integrity.
+    evidence:
+      sources:
+      - "UK FCA SMCR fit-and-proper annual assessment regime (FCA Handbook SYSC 25 / FIT): SMF holders must complete annual fit-and-proper re-attestation; the operating enterprise must run the assessment and record the result on the regulated personnel record"
+      - "US state bar minimum continuing legal education (MCLE) requirements per state: attorneys must complete annual MCLE hours; the law firm must operate the program and record completion"
+      - "US state healthcare continuing-medical-education (CME / CDE) requirements per state and per profession: practitioners must complete annual CME; the healthcare organization must operate the program and record completion"
+      - "US NAIC Producer Licensing Model Act continuing-education (CE) requirements: insurance producers must complete state-mandated CE for license renewal; the insurance entity must operate the program and record completion"
+      - "US FAA 14 CFR Part 121 subpart Y (Air Carrier Crew Resource Management Training) and Part 117 (Flight and Duty Limitations): Part 121 operators must operate recurrent CRM training and qualification cycles for crew"
+      - "EU EASA Part-FCL and EASA Part-ORO continuing-airworthiness regulations: European air operators must operate recurrent training and qualification cycles for crew"
+      - "EU AI Act (Regulation (EU) 2024/1689) Article 14 (Human oversight) and Article 26 (Post-market monitoring): high-risk AI-system providers and deployers must operate ongoing training and capability-improvement regimes for human-oversight operators throughout the AI-system's operational life"
+      - "FINRA Rule 3110 (Supervision) and Regulatory Element of Continuing Education: registered representatives must complete FINRA-mandated continuing education; the broker-dealer must operate the program and record completion"
+      - "Healthcare HR practice (SHRM Body of Competency Knowledge) and Joint Commission ongoing-professional-practice-evaluation (OPPE) standards: regulated-workforce capability improvement is a distinct, repeatable practice separate from substrate-neutral learning and development"
+      evidence_strength: authoritative
+    evaluation:
+      process_reality: >
+        Established and regulator-mandated across regulated sectors; performed by learning and development, compliance, continuing-supervisor designees, and HR operations throughout the live operation period.
+      transformation: >
+        Move the regulator-licensed roles' capability from current-state to improved-state under the regulator's continuing-competence framework; real and material to the regulated personnel record integrity.
+      trigger: >
+        The regulator-mandated continuing-competence program cycle or a remediation requirement; observable and required.
+      outcome: >
+        Regulator-tied improvement cycle committed and recorded on the regulated personnel record; continuing-supervisor notified; distinguishable, auditable.
+      boundary: >
+        Strong: from improvement decision to recorded regulator-tied improvement cycle; Operate handles continuing-compliance oversight; Retire handles wind-down.
+      semantic_identity: >
+        Verb (improve) + object (regulator-licensed-roles capability under continuing-competence framework) + outcome (regulator-tied improvement cycle recorded) stand without the ECF label (BP-LIFE-009).
+      cross_context_stability: >
+        Stable across banking, healthcare, insurance, legal, accounting, telecoms, aviation, and AI-system providers/deployers where regulator-issued individual authorizations are required.
+      cross_domain_applicability: >
+        Concentrated in regulated sectors; not universal across all enterprises; strongest in financial services, healthcare, legal, aviation, and AI Act high-risk system contexts.
+      ecf_independence: >
+        "Improve Regulated Workforce Capability" names recognizable work without reference to the Improve ECF label.
+      duplication: >
+        No existing canonical BP at Improve covers regulator-tied capability improvement of licensed roles; nearest neighbors (general agent development at Improve; regulated-performance oversight at Operate; regulated-workforce wind-down at Retire) cover adjacent but distinct work.
+      composition: >
+        Business Process level; per-licence-class continuing-competence program operation, fit-and-proper re-assessment cycle, regulator-mandated remediation program, and continuing-supervisor notification decompose to Activities at L3.
+      capability_distinction: >
+        A transformation with trigger and outcome; not a capability restatement.
+      governance_distinction: >
+        Not a policy; a governed workflow whose controls are regulator-mandated continuing-competence and remediation regimes.
+      lifecycle_span: >
+        Begins and ends within Improve; Operate handles continuing-compliance oversight; Retire handles wind-down.
+    scoring:
+      process_reality: 2
+      semantic_stability: 2
+      cross_domain_applicability: 2
+      boundary_clarity: 2
+      evidence_strength: 2
+      total: 10
+      rationale: >
+        Authoritative multi-source regulatory evidence; universal sector practice in regulated industries; clean boundary separation from existing general-case Improve BP and from upstream Operate regulated-performance-oversight BP. Recommend ADMIT-CANONICAL.
+    disposition:
+      type: ADMIT-CANONICAL
+      canonical_process_ref: processes:process-ao-improve-<hash> (proposed)
+  context_evaluation:
+    concerns_identified: true
+    candidates_considered: true
+    adjacent_contexts_reviewed: true
+    existing_processes_searched: true
+    lifecycle_spanning_considered: true
+    capability_distinctions_tested: true
+    pattern_candidates_considered: true
+    evidence_assessed: true
+    process_empty: false
+  rationale:
+    included: >
+      Targeted escape-clause evaluation of the AgencyAndOrganization x Improve register cell. The discovery finds that regulator-tied capability improvement of licensed roles is a regulator-mandated, boundary-clear, evidence-authoritative transformation distinct from the substrate-neutral general-case Improve work already admitted, scoring 10/10 and recommended ADMIT-CANONICAL. The candidate closes the loop with the CR-BP-105 Operate escape recommendation upstream, providing a clean handover of the licensed role's regulator-aligned capability state for handoff to the existing Retire regulated-workforce-wind-down BP (PR #114) when the licensed tenure ends.
+    excluded: >
+      Substrate-neutral agent development and organization improvement remains the general-case BP at this cell; the general case is not displaced. The escape record adds a regulator-tied specialization, not a replacement.
+    unresolved: >
+      Admission of the recommended candidate is a separate governed step (admission tranche with full PC + PG + BP stack and register flip); this discovery record recommends and does not admit.
