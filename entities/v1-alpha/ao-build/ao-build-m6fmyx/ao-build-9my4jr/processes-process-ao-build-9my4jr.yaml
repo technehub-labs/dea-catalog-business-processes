@@ -1,0 +1,83 @@
+id: processes:process-ao-build-9my4jr
+name: Build Regulated Agent Pool
+type: Process
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+process_intent: manage
+process_type: management
+process_specialization: []
+description: >-
+  Build the regulator-ready licensed-candidate pool under the enterprise regulated-entity approval authority. The trigger is the decision to source candidates for regulator-licensed roles. The outcome is a regulator-ready pool committed to the regulated personnel record, with each candidate verified against the regulator's licence registry, fitness-and-propriety attested, cleared against OFAC sanctions (31 CFR 501), Bank Secrecy Act AML/KYC (31 USC 5311), FCRA background (15 USC 1681), and ADA fitness (42 USC 12112), and ready for regulator-tied Activate without re-screening.
+trigger: >-
+  The enterprise is sourcing candidates for regulator-licensed roles whose qualifications must be verified against the regulator's licence registry and whose fitness-and-propriety must be attested before they enter the regulated personnel record, and the enterprise must apply regulator-specific screening (KYC, AML, sanctions, fitness declarations, FCRA-compliant background, ADA-compliant fitness) that differs from the substrate-neutral agent-acquisition flow.
+outcome: >-
+  The licensed-candidate pool is verified, cleared, and on the regulated personnel record; each candidate is fitness-and-propriety attested and ready for regulator-tied Activate without re-screening.
+identity:
+  verb: Build
+  object: Regulated Agent Pool
+  scope: enterprise
+  outcome_statement: >-
+    The regulator-tied Regulated Agent Pool build work has been carried out
+    at the AgencyAndOrganization x Build coordinate under the enterprise
+    regulated-entity approval authority. The outcome is recorded on the regulated
+    personnel record with the supervisor-controlled scope, the fitness-and-propriety
+    attestation regime, the supervised-training completion requirements, and the
+    continuing-supervisor notification path documented per the regulator's
+    continuing-supervision framework. Substrate-neutral build work is
+    excluded. Adjacent lifecycle stages (Conceive / Design / Build / Activate /
+    Operate / Improve / Retire) are excluded.
+  evidence_links:
+  - type: regulation
+    ref: https://www.register.fca.org.uk/
+  - type: regulation
+    ref: https://www.occ.treas.gov/topics/supervision-and-examination/aml/index.html
+  - type: regulation
+    ref: https://www.ecfr.gov/current/title-31/section-501.603
+  - type: regulation
+    ref: https://www.ecfr.gov/current/title-15/chapter-I/subchapter-C
+  - type: regulation
+    ref: https://www.ecfr.gov/current/title-29/subtitle-A/chapter-XIV
+  - type: regulation
+    ref: https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-61
+  - type: standard
+    ref: https://www.fincen.gov/resources/advisories-fact-sheets
+  - type: standard
+    ref: https://content.naic.org/cipr-topics/producer-licensing-model-act
+  - type: regulation
+    ref: https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+  - type: standard
+    ref: https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110
+context:
+- ref: processes:pc-ao-build-pjk4rz
+relationships:
+- source_id: processes:process-ao-build-9my4jr
+  relationship_type: serves
+  target_id: ecf:agencyOrganization.build
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: AgencyAndOrganization
+    stage: Build
+    identifier: ecf:agencyOrganization.build
+metadata:
+  established_by: CR-BP-106
+  established_at: '2026-09-22'
+  activity_references: []
+  change_history:
+  - cr: CR-BP-106
+    date: '2026-09-22'
+    change: >-
+      Initial L2 Process entry; the canonical Business Process admitted at the
+      AgencyAndOrganization x Build coordinate, from the CR-BP-105
+      escape-clause discovery outcome (10/10, ADMIT-CANONICAL recommendation)
+      under the CR-BP-62 method. The admission activates the
+      dea:discovery-agency-and-organization-build-escape escape rationale and supersedes the substrate-
+      neutral general-case BP at this cell. Evidence base per Cell-Cycle
+      escape-clause discovery record dea:discovery-agency-and-organization-build-escape (CR-BP-105, PR
+      #155). L3 Activity and L4 Task decomposition lands in CR-BP-111 (deferred).

@@ -2,7 +2,11 @@ id: processes:group-ao-improve-su4c8p
 type: ProcessGroup
 version: 1.0.0
 name: Agent and Organization Improvement
-definition: 'The bounded Process Group that organises the Business Process responsibilities of improving agents and the organization in the AgencyAndOrganization x Improve context: agent and organization development, engagement and alignment review, capability gap analysis, and structural reorganization. v2.4.0 grounding (domain-grounding.md §3.3).
+definition: 'The bounded Process Group that organises the Business Process responsibilities
+  of improving agents and the organization in the AgencyAndOrganization x Improve
+  context: agent and organization development, engagement and alignment review, capability
+  gap analysis, and structural reorganization. v2.4.0 grounding (domain-grounding.md
+  §3.3).
 
   '
 process_context: processes:pc-ao-improve-qkmh6b
@@ -76,6 +80,22 @@ composes:
     reference: CR-BP-21b.1
     asserted_by: dea-team
     asserted_at: '2026-09-08'
+- source_id: processes:group-ao-improve-su4c8p
+  target_id: processes:process-ao-improve-qqxe4d
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: The L2 process is the regulator-tied specialization admitted under 
+    the CR-BP-105 escape-clause discovery outcome (ADMIT-CANONICAL 
+    recommendation) per CR-BP-106. Coexists with the substrate-neutral 
+    general-case BPs at this cell.
+  evidence: docs/examples/improve-regulated-workforce-capability.md
+  provenance:
+    type: discovery
+    reference: CR-BP-106
+    asserted_by: dea-team
+    asserted_at: '2026-09-22'
 process_group_kind: end-to-end
 status: accepted
 lifecycle_status: candidate
@@ -100,7 +120,8 @@ evidence:
 
     '
   strength: E4
-  reference: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+  reference: 
+    entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
 metadata:
   established_by: CR-BP-21b.1
   established_at: '2026-09-08'
@@ -117,10 +138,19 @@ metadata:
       ADR-ECF-002 section 5 / CR-ECF-007.
 
       '
+  - cr: CR-BP-106
+    date: '2026-09-22'
+    change: Composes edge added for the regulator-tied Improve Regulated 
+      Workforce Capability BP (process-ao-improve-qqxe4d), admitted under 
+      CR-BP-105 escape-clause discovery outcome (ADMIT-CANONICAL). The PG 
+      retains its cell-level substrate-neutral name and definition; the 
+      regulator-tied BP is added to composes without displacing the 
+      substrate-neutral BPs.
 links:
 - rel: change-request
   href: change-requests/CR-BP-21b.1-agency-organization-completion.md
 - rel: predecessor
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
-  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+  href: 
+    entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
