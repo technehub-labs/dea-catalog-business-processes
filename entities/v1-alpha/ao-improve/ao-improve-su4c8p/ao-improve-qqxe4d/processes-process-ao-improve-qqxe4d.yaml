@@ -1,0 +1,81 @@
+id: processes:process-ao-improve-qqxe4d
+name: Improve Regulated Workforce Capability
+type: Process
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+process_intent: manage
+process_type: management
+process_specialization: []
+description: >-
+  Improve the regulator-tied capability of regulator-licensed roles under the enterprise regulated-entity approval authority. The trigger is the regulator-mandated continuing-competence program cycle or a remediation requirement. The outcome is regulator-tied capability improvement recorded on the regulated personnel record: regulator-mandated training cycles (FCA SMCR fit-and-proper annual assessment under SYSC 25 / FIT; state bar MCLE; state healthcare CME; NAIC CE; FAA Part 121 subpart Y recurrent training; EU AI Act Article 14 ongoing training), fit-and-proper re-assessment cycles, regulator-mandated remediation programs executed, and the continuing-supervisor notified.
+trigger: >-
+  The enterprise is improving regulator-licensed roles' capability through regulator-mandated continuing-competence programs, fit-and-proper annual assessments, recurrent training, and remediation programs that differ from substrate-neutral learning-and-development operations, and the improvement must align to the regulator's continuing-supervision framework before being recorded on the regulated personnel record.
+outcome: >-
+  The regulator-licensed roles' capability is improved per the regulator's continuing-competence framework; regulator-mandated training, fit-and-proper re-assessment, and remediation cycles are recorded on the regulated personnel record, and the continuing-supervisor has been notified.
+identity:
+  verb: Improve
+  object: Regulated Workforce Capability
+  scope: enterprise
+  outcome_statement: >-
+    The regulator-tied Regulated Workforce Capability improve work has been carried out
+    at the AgencyAndOrganization x Improve coordinate under the enterprise
+    regulated-entity approval authority. The outcome is recorded on the regulated
+    personnel record with the supervisor-controlled scope, the fitness-and-propriety
+    attestation regime, the supervised-training completion requirements, and the
+    continuing-supervisor notification path documented per the regulator's
+    continuing-supervision framework. Substrate-neutral improve work is
+    excluded. Adjacent lifecycle stages (Conceive / Design / Build / Activate /
+    Operate / Improve / Retire) are excluded.
+  evidence_links:
+  - type: regulation
+    ref: https://www.handbook.fca.org.uk/handbook/SYSC/25/
+  - type: regulation
+    ref: https://www.handbook.fca.org.uk/handbook/FIT/
+  - type: standard
+    ref: https://www.sra.org.uk/solicitors/standards-regulations/
+  - type: standard
+    ref: https://www.jointcommission.org/en-us/standards/
+  - type: standard
+    ref: https://content.naic.org/cipr-topics/producer-licensing-model-act
+  - type: regulation
+    ref: https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-121/subpart-Y
+  - type: regulation
+    ref: https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+  - type: regulation
+    ref: https://eur-lex.europa.eu/eli/reg/2018/1139/oj
+  - type: standard
+    ref: https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110
+context:
+- ref: processes:pc-ao-improve-qkmh6b
+relationships:
+- source_id: processes:process-ao-improve-qqxe4d
+  relationship_type: serves
+  target_id: ecf:agencyOrganization.improve
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: AgencyAndOrganization
+    stage: Improve
+    identifier: ecf:agencyOrganization.improve
+metadata:
+  established_by: CR-BP-106
+  established_at: '2026-09-22'
+  activity_references: []
+  change_history:
+  - cr: CR-BP-106
+    date: '2026-09-22'
+    change: >-
+      Initial L2 Process entry; the canonical Business Process admitted at the
+      AgencyAndOrganization x Improve coordinate, from the CR-BP-105
+      escape-clause discovery outcome (10/10, ADMIT-CANONICAL recommendation)
+      under the CR-BP-62 method. The admission activates the
+      dea:discovery-agency-and-organization-improve-escape escape rationale and supersedes the substrate-
+      neutral general-case BP at this cell. Evidence base per Cell-Cycle
+      escape-clause discovery record dea:discovery-agency-and-organization-improve-escape (CR-BP-105, PR
+      #155). L3 Activity and L4 Task decomposition lands in CR-BP-111 (deferred).
