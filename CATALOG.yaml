@@ -98,10 +98,10 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
-    id: processes:activity-ao-build-cxafrf
-    last_modified: '2026-09-21'
+    id: processes:activity-ao-build-bufzrw
+    last_modified: '2026-10-12'
     lifecycle_status: candidate
-    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-b38bkg/ao-build-cxafrf/processes-activity-ao-build-cxafrf.yaml
+    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-bufzrw/processes-activity-ao-build-bufzrw.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -109,10 +109,10 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
-    id: processes:activity-ao-build-f5k1m3
-    last_modified: '2026-10-12'
+    id: processes:activity-ao-build-cxafrf
+    last_modified: '2026-09-21'
     lifecycle_status: candidate
-    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-f5k1m3/processes-activity-ao-build-f5k1m3.yaml
+    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-b38bkg/ao-build-cxafrf/processes-activity-ao-build-cxafrf.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -329,10 +329,10 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
-    id: processes:activity-ao-conceive-pzmwkl
-    last_modified: '2026-10-12'
+    id: processes:activity-ao-conceive-rcyn7u
+    last_modified: '2026-09-21'
     lifecycle_status: candidate
-    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-pzmwkl/processes-activity-ao-conceive-pzmwkl.yaml
+    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-ruxjvh/ao-conceive-rcyn7u/processes-activity-ao-conceive-rcyn7u.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -340,10 +340,10 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
-    id: processes:activity-ao-conceive-rcyn7u
-    last_modified: '2026-09-21'
+    id: processes:activity-ao-conceive-v7g5se
+    last_modified: '2026-10-12'
     lifecycle_status: candidate
-    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-ruxjvh/ao-conceive-rcyn7u/processes-activity-ao-conceive-rcyn7u.yaml
+    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-v7g5se/processes-activity-ao-conceive-v7g5se.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -780,10 +780,10 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
-    id: processes:activity-ao-improve-v3h8k1
+    id: processes:activity-ao-improve-uudtp5
     last_modified: '2026-10-12'
     lifecycle_status: candidate
-    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-v3h8k1/processes-activity-ao-improve-v3h8k1.yaml
+    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-uudtp5/processes-activity-ao-improve-uudtp5.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -850,6 +850,17 @@ catalog:
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-87q5mk/ao-operate-8mxujq/processes-activity-ao-operate-8mxujq.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Activity
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:activity-ao-operate-8pqgha
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-8pqgha/processes-activity-ao-operate-8pqgha.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -982,17 +993,6 @@ catalog:
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-bd7mef/ao-operate-pxxmge/processes-activity-ao-operate-pxxmge.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Activity
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:activity-ao-operate-q3w6r1
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-q3w6r1/processes-activity-ao-operate-q3w6r1.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -9294,6 +9294,28 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-build-confirm-39n9ka
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-w2n8p4/ao-build-confirm-39n9ka/processes-task-ao-build-confirm-39n9ka.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-build-confirm-4fj8hx
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-bufzrw/ao-build-confirm-4fj8hx/processes-task-ao-build-confirm-4fj8hx.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-build-confirm-7mmnjv
     last_modified: '2026-09-21'
     lifecycle_status: candidate
@@ -9349,6 +9371,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-build-confirm-hdn7za
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-r6h2t8/ao-build-confirm-hdn7za/processes-task-ao-build-confirm-hdn7za.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-build-confirm-kawybm
     last_modified: '2026-09-21'
     lifecycle_status: candidate
@@ -9371,65 +9404,21 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-build-confirm-sua2mx
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-q7m3k9/ao-build-confirm-sua2mx/processes-task-ao-build-confirm-sua2mx.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-build-confirm-syxf6c
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-b38bkg/ao-build-jgtegj/ao-build-confirm-syxf6c/processes-task-ao-build-confirm-syxf6c.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-build-f5k1m3-confirm
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-f5k1m3/ao-build-f5k1m3-confirm/processes-task-ao-build-f5k1m3-confirm.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-build-f5k1m3-intake
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-f5k1m3/ao-build-f5k1m3-intake/processes-task-ao-build-f5k1m3-intake.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-build-f5k1m3-record
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-f5k1m3/ao-build-f5k1m3-record/processes-task-ao-build-f5k1m3-record.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-build-f5k1m3-transform
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-f5k1m3/ao-build-f5k1m3-transform/processes-task-ao-build-f5k1m3-transform.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-build-f5k1m3-verify
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-f5k1m3/ao-build-f5k1m3-verify/processes-task-ao-build-f5k1m3-verify.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -9459,10 +9448,54 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-build-intake-a8w9me
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-r6h2t8/ao-build-intake-a8w9me/processes-task-ao-build-intake-a8w9me.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-build-intake-aae2cz
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-b38bkg/ao-build-jgtegj/ao-build-intake-aae2cz/processes-task-ao-build-intake-aae2cz.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-build-intake-brt26j
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-w2n8p4/ao-build-intake-brt26j/processes-task-ao-build-intake-brt26j.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-build-intake-dzu26c
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-bufzrw/ao-build-intake-dzu26c/processes-task-ao-build-intake-dzu26c.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-build-intake-nkc3gd
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-q7m3k9/ao-build-intake-nkc3gd/processes-task-ao-build-intake-nkc3gd.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -9525,120 +9558,32 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
-    id: processes:task-ao-build-q7m3k9-confirm
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-q7m3k9/ao-build-q7m3k9-confirm/processes-task-ao-build-q7m3k9-confirm.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-build-q7m3k9-intake
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-q7m3k9/ao-build-q7m3k9-intake/processes-task-ao-build-q7m3k9-intake.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-build-q7m3k9-record
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-q7m3k9/ao-build-q7m3k9-record/processes-task-ao-build-q7m3k9-record.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-build-q7m3k9-transform
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-q7m3k9/ao-build-q7m3k9-transform/processes-task-ao-build-q7m3k9-transform.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-build-q7m3k9-verify
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-q7m3k9/ao-build-q7m3k9-verify/processes-task-ao-build-q7m3k9-verify.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-build-r6h2t8-confirm
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-r6h2t8/ao-build-r6h2t8-confirm/processes-task-ao-build-r6h2t8-confirm.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-build-r6h2t8-intake
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-r6h2t8/ao-build-r6h2t8-intake/processes-task-ao-build-r6h2t8-intake.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-build-r6h2t8-record
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-r6h2t8/ao-build-r6h2t8-record/processes-task-ao-build-r6h2t8-record.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-build-r6h2t8-transform
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-r6h2t8/ao-build-r6h2t8-transform/processes-task-ao-build-r6h2t8-transform.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-build-r6h2t8-verify
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-r6h2t8/ao-build-r6h2t8-verify/processes-task-ao-build-r6h2t8-verify.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
     id: processes:task-ao-build-record-2nmbeu
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-w2qurd/ao-build-4vccpu/ao-build-record-2nmbeu/processes-task-ao-build-record-2nmbeu.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-build-record-3pf4q3
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-r6h2t8/ao-build-record-3pf4q3/processes-task-ao-build-record-3pf4q3.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-build-record-4r92mc
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-q7m3k9/ao-build-record-4r92mc/processes-task-ao-build-record-4r92mc.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -9668,10 +9613,32 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-build-record-8dkcu7
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-bufzrw/ao-build-record-8dkcu7/processes-task-ao-build-record-8dkcu7.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-build-record-8jdc4m
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-b38bkg/ao-build-cxafrf/ao-build-record-8jdc4m/processes-task-ao-build-record-8jdc4m.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-build-record-ae9wh9
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-w2n8p4/ao-build-record-ae9wh9/processes-task-ao-build-record-ae9wh9.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -9734,10 +9701,32 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-build-transform-a7ebf9
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-w2n8p4/ao-build-transform-a7ebf9/processes-task-ao-build-transform-a7ebf9.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-build-transform-amwttu
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-b38bkg/ao-build-9bwc8j/ao-build-transform-amwttu/processes-task-ao-build-transform-amwttu.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-build-transform-bvpr2d
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-bufzrw/ao-build-transform-bvpr2d/processes-task-ao-build-transform-bvpr2d.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -9800,6 +9789,28 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-build-transform-u4fdxv
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-q7m3k9/ao-build-transform-u4fdxv/processes-task-ao-build-transform-u4fdxv.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-build-transform-xh5297
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-r6h2t8/ao-build-transform-xh5297/processes-task-ao-build-transform-xh5297.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-build-transform-xrmfg2
     last_modified: '2026-09-21'
     lifecycle_status: candidate
@@ -9844,10 +9855,32 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-build-verify-bdy3ah
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-bufzrw/ao-build-verify-bdy3ah/processes-task-ao-build-verify-bdy3ah.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-build-verify-kdycrh
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-b38bkg/ao-build-jgtegj/ao-build-verify-kdycrh/processes-task-ao-build-verify-kdycrh.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-build-verify-nszspe
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-r6h2t8/ao-build-verify-nszspe/processes-task-ao-build-verify-nszspe.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -9866,10 +9899,32 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-build-verify-scgrww
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-w2n8p4/ao-build-verify-scgrww/processes-task-ao-build-verify-scgrww.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-build-verify-tffhp9
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-b38bkg/ao-build-9bwc8j/ao-build-verify-tffhp9/processes-task-ao-build-verify-tffhp9.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-build-verify-ukp8a5
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-q7m3k9/ao-build-verify-ukp8a5/processes-task-ao-build-verify-ukp8a5.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -9899,54 +9954,10 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
-    id: processes:task-ao-build-w2n8p4-confirm
+    id: processes:task-ao-conceive-confirm-4qbj4s
     last_modified: '2026-10-12'
     lifecycle_status: candidate
-    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-w2n8p4/ao-build-w2n8p4-confirm/processes-task-ao-build-w2n8p4-confirm.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-build-w2n8p4-intake
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-w2n8p4/ao-build-w2n8p4-intake/processes-task-ao-build-w2n8p4-intake.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-build-w2n8p4-record
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-w2n8p4/ao-build-w2n8p4-record/processes-task-ao-build-w2n8p4-record.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-build-w2n8p4-transform
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-w2n8p4/ao-build-w2n8p4-transform/processes-task-ao-build-w2n8p4-transform.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-build-w2n8p4-verify
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-w2n8p4/ao-build-w2n8p4-verify/processes-task-ao-build-w2n8p4-verify.yaml
+    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-v7g5se/ao-conceive-confirm-4qbj4s/processes-task-ao-conceive-confirm-4qbj4s.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -9958,6 +9969,28 @@ catalog:
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-z6m6p5/ao-conceive-73s2vm/ao-conceive-confirm-d3yud2/processes-task-ao-conceive-confirm-d3yud2.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-conceive-confirm-fphn67
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-cqkwrm/ao-conceive-confirm-fphn67/processes-task-ao-conceive-confirm-fphn67.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-conceive-confirm-jcbwtd
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-fmxtqr/ao-conceive-confirm-jcbwtd/processes-task-ao-conceive-confirm-jcbwtd.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -10064,6 +10097,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-conceive-confirm-x6w5je
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-vnkqzf/ao-conceive-confirm-x6w5je/processes-task-ao-conceive-confirm-x6w5je.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-conceive-confirm-xbvh32
     last_modified: '2026-09-21'
     lifecycle_status: candidate
@@ -10079,116 +10123,6 @@ catalog:
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-e3u8s2/ao-conceive-36aux4/ao-conceive-confirm-zzeaqr/processes-task-ao-conceive-confirm-zzeaqr.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-conceive-cqkwrm-confirm
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-cqkwrm/ao-conceive-cqkwrm-confirm/processes-task-ao-conceive-cqkwrm-confirm.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-conceive-cqkwrm-intake
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-cqkwrm/ao-conceive-cqkwrm-intake/processes-task-ao-conceive-cqkwrm-intake.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-conceive-cqkwrm-record
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-cqkwrm/ao-conceive-cqkwrm-record/processes-task-ao-conceive-cqkwrm-record.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-conceive-cqkwrm-transform
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-cqkwrm/ao-conceive-cqkwrm-transform/processes-task-ao-conceive-cqkwrm-transform.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-conceive-cqkwrm-verify
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-cqkwrm/ao-conceive-cqkwrm-verify/processes-task-ao-conceive-cqkwrm-verify.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-conceive-fmxtqr-confirm
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-fmxtqr/ao-conceive-fmxtqr-confirm/processes-task-ao-conceive-fmxtqr-confirm.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-conceive-fmxtqr-intake
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-fmxtqr/ao-conceive-fmxtqr-intake/processes-task-ao-conceive-fmxtqr-intake.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-conceive-fmxtqr-record
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-fmxtqr/ao-conceive-fmxtqr-record/processes-task-ao-conceive-fmxtqr-record.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-conceive-fmxtqr-transform
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-fmxtqr/ao-conceive-fmxtqr-transform/processes-task-ao-conceive-fmxtqr-transform.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-conceive-fmxtqr-verify
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-fmxtqr/ao-conceive-fmxtqr-verify/processes-task-ao-conceive-fmxtqr-verify.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -10229,6 +10163,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-conceive-intake-7mwjy4
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-v7g5se/ao-conceive-intake-7mwjy4/processes-task-ao-conceive-intake-7mwjy4.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-conceive-intake-82prfy
     last_modified: '2026-09-21'
     lifecycle_status: candidate
@@ -10244,6 +10189,28 @@ catalog:
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-z6m6p5/ao-conceive-9mvxt3/ao-conceive-intake-cp6j8p/processes-task-ao-conceive-intake-cp6j8p.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-conceive-intake-fbn9db
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-vnkqzf/ao-conceive-intake-fbn9db/processes-task-ao-conceive-intake-fbn9db.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-conceive-intake-hb8x2r
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-cqkwrm/ao-conceive-intake-hb8x2r/processes-task-ao-conceive-intake-hb8x2r.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -10328,10 +10295,10 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
-    id: processes:task-ao-conceive-pzmwkl-confirm
+    id: processes:task-ao-conceive-intake-xcxfzr
     last_modified: '2026-10-12'
     lifecycle_status: candidate
-    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-pzmwkl/ao-conceive-pzmwkl-confirm/processes-task-ao-conceive-pzmwkl-confirm.yaml
+    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-fmxtqr/ao-conceive-intake-xcxfzr/processes-task-ao-conceive-intake-xcxfzr.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -10339,43 +10306,10 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
-    id: processes:task-ao-conceive-pzmwkl-intake
+    id: processes:task-ao-conceive-record-27fbra
     last_modified: '2026-10-12'
     lifecycle_status: candidate
-    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-pzmwkl/ao-conceive-pzmwkl-intake/processes-task-ao-conceive-pzmwkl-intake.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-conceive-pzmwkl-record
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-pzmwkl/ao-conceive-pzmwkl-record/processes-task-ao-conceive-pzmwkl-record.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-conceive-pzmwkl-transform
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-pzmwkl/ao-conceive-pzmwkl-transform/processes-task-ao-conceive-pzmwkl-transform.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-conceive-pzmwkl-verify
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-pzmwkl/ao-conceive-pzmwkl-verify/processes-task-ao-conceive-pzmwkl-verify.yaml
+    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-fmxtqr/ao-conceive-record-27fbra/processes-task-ao-conceive-record-27fbra.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -10427,6 +10361,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-conceive-record-6v6fz2
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-cqkwrm/ao-conceive-record-6v6fz2/processes-task-ao-conceive-record-6v6fz2.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-conceive-record-6wa6x6
     last_modified: '2026-09-21'
     lifecycle_status: candidate
@@ -10471,6 +10416,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-conceive-record-g2vktj
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-vnkqzf/ao-conceive-record-g2vktj/processes-task-ao-conceive-record-g2vktj.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-conceive-record-gx3wmy
     last_modified: '2026-09-21'
     lifecycle_status: candidate
@@ -10504,10 +10460,32 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-conceive-record-v8ba6s
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-v7g5se/ao-conceive-record-v8ba6s/processes-task-ao-conceive-record-v8ba6s.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-conceive-record-xemrvs
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-e3u8s2/ao-conceive-fyb9vc/ao-conceive-record-xemrvs/processes-task-ao-conceive-record-xemrvs.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-conceive-transform-6cbb24
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-fmxtqr/ao-conceive-transform-6cbb24/processes-task-ao-conceive-transform-6cbb24.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -10541,6 +10519,28 @@ catalog:
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-z6m6p5/ao-conceive-9mvxt3/ao-conceive-transform-awmvkw/processes-task-ao-conceive-transform-awmvkw.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-conceive-transform-cuzg3j
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-v7g5se/ao-conceive-transform-cuzg3j/processes-task-ao-conceive-transform-cuzg3j.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-conceive-transform-j6caqr
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-cqkwrm/ao-conceive-transform-j6caqr/processes-task-ao-conceive-transform-j6caqr.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -10596,6 +10596,17 @@ catalog:
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-e3u8s2/ao-conceive-36aux4/ao-conceive-transform-pvk8v9/processes-task-ao-conceive-transform-pvk8v9.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-conceive-transform-r7j36u
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-vnkqzf/ao-conceive-transform-r7j36u/processes-task-ao-conceive-transform-r7j36u.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -10746,10 +10757,43 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-conceive-verify-skgr5k
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-cqkwrm/ao-conceive-verify-skgr5k/processes-task-ao-conceive-verify-skgr5k.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-conceive-verify-ut8www
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-z6m6p5/ao-conceive-9mvxt3/ao-conceive-verify-ut8www/processes-task-ao-conceive-verify-ut8www.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-conceive-verify-uut74e
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-vnkqzf/ao-conceive-verify-uut74e/processes-task-ao-conceive-verify-uut74e.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-conceive-verify-w6zgtk
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-v7g5se/ao-conceive-verify-w6zgtk/processes-task-ao-conceive-verify-w6zgtk.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -10768,65 +10812,21 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-conceive-verify-y9xpgd
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-fmxtqr/ao-conceive-verify-y9xpgd/processes-task-ao-conceive-verify-y9xpgd.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-conceive-verify-ycxcap
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-z6m6p5/ao-conceive-njcgbs/ao-conceive-verify-ycxcap/processes-task-ao-conceive-verify-ycxcap.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-conceive-vnkqzf-confirm
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-vnkqzf/ao-conceive-vnkqzf-confirm/processes-task-ao-conceive-vnkqzf-confirm.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-conceive-vnkqzf-intake
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-vnkqzf/ao-conceive-vnkqzf-intake/processes-task-ao-conceive-vnkqzf-intake.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-conceive-vnkqzf-record
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-vnkqzf/ao-conceive-vnkqzf-record/processes-task-ao-conceive-vnkqzf-record.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-conceive-vnkqzf-transform
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-vnkqzf/ao-conceive-vnkqzf-transform/processes-task-ao-conceive-vnkqzf-transform.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-conceive-vnkqzf-verify
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-vnkqzf/ao-conceive-vnkqzf-verify/processes-task-ao-conceive-vnkqzf-verify.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -10849,6 +10849,17 @@ catalog:
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-34e95r/ao-design-txkve5/ao-design-confirm-3qbw2v/processes-task-ao-design-confirm-3qbw2v.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-design-confirm-45k77k
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-x9k4m7/ao-design-confirm-45k77k/processes-task-ao-design-confirm-45k77k.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -10922,10 +10933,32 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-design-confirm-kzcxkj
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-wnqz3k/ao-design-confirm-kzcxkj/processes-task-ao-design-confirm-kzcxkj.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-design-confirm-mdn6mm
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-rve8j5/ao-design-e63vge/ao-design-confirm-mdn6mm/processes-task-ao-design-confirm-mdn6mm.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-design-confirm-mhqjvd
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-v8r5n2/ao-design-confirm-mhqjvd/processes-task-ao-design-confirm-mhqjvd.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -10970,6 +11003,17 @@ catalog:
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-34e95r/ao-design-9fmjnt/ao-design-confirm-qzh2hv/processes-task-ao-design-confirm-qzh2hv.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-design-confirm-txfv3t
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-jbf2v9/ao-design-confirm-txfv3t/processes-task-ao-design-confirm-txfv3t.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -11076,6 +11120,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-design-intake-gbaudu
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-x9k4m7/ao-design-intake-gbaudu/processes-task-ao-design-intake-gbaudu.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-design-intake-k4xv7a
     last_modified: '2026-09-21'
     lifecycle_status: candidate
@@ -11102,6 +11157,17 @@ catalog:
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-8fzp2b/ao-design-j98gk4/ao-design-intake-mf3f4b/processes-task-ao-design-intake-mf3f4b.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-design-intake-n66qsv
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-jbf2v9/ao-design-intake-n66qsv/processes-task-ao-design-intake-n66qsv.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -11142,6 +11208,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-design-intake-v2uckf
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-v8r5n2/ao-design-intake-v2uckf/processes-task-ao-design-intake-v2uckf.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-design-intake-vagtwn
     last_modified: '2026-09-21'
     lifecycle_status: candidate
@@ -11175,65 +11252,21 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-design-intake-z2b5u6
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-wnqz3k/ao-design-intake-z2b5u6/processes-task-ao-design-intake-z2b5u6.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-design-intake-zeuvvz
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-34e95r/ao-design-cezz7p/ao-design-intake-zeuvvz/processes-task-ao-design-intake-zeuvvz.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-design-jbf2v9-confirm
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-jbf2v9/ao-design-jbf2v9-confirm/processes-task-ao-design-jbf2v9-confirm.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-design-jbf2v9-intake
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-jbf2v9/ao-design-jbf2v9-intake/processes-task-ao-design-jbf2v9-intake.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-design-jbf2v9-record
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-jbf2v9/ao-design-jbf2v9-record/processes-task-ao-design-jbf2v9-record.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-design-jbf2v9-transform
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-jbf2v9/ao-design-jbf2v9-transform/processes-task-ao-design-jbf2v9-transform.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-design-jbf2v9-verify
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-jbf2v9/ao-design-jbf2v9-verify/processes-task-ao-design-jbf2v9-verify.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -11384,6 +11417,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-design-record-sfgczh
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-x9k4m7/ao-design-record-sfgczh/processes-task-ao-design-record-sfgczh.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-design-record-thasb5
     last_modified: '2026-09-21'
     lifecycle_status: candidate
@@ -11395,10 +11439,43 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-design-record-tq7syq
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-v8r5n2/ao-design-record-tq7syq/processes-task-ao-design-record-tq7syq.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-design-record-ugpdhe
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-34e95r/ao-design-tfhe6e/ao-design-record-ugpdhe/processes-task-ao-design-record-ugpdhe.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-design-record-uj2gvu
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-wnqz3k/ao-design-record-uj2gvu/processes-task-ao-design-record-uj2gvu.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-design-record-yq9m6a
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-jbf2v9/ao-design-record-yq9m6a/processes-task-ao-design-record-yq9m6a.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -11450,10 +11527,43 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-design-transform-7ydjtm
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-wnqz3k/ao-design-transform-7ydjtm/processes-task-ao-design-transform-7ydjtm.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-design-transform-cwksqv
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-7dkbur/ao-design-bnvt6w/ao-design-transform-cwksqv/processes-task-ao-design-transform-cwksqv.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-design-transform-e8kqf9
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-x9k4m7/ao-design-transform-e8kqf9/processes-task-ao-design-transform-e8kqf9.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-design-transform-ftvjry
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-v8r5n2/ao-design-transform-ftvjry/processes-task-ao-design-transform-ftvjry.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -11476,6 +11586,17 @@ catalog:
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-rve8j5/ao-design-e63vge/ao-design-transform-jrvse3/processes-task-ao-design-transform-jrvse3.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-design-transform-jyfmbk
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-jbf2v9/ao-design-transform-jyfmbk/processes-task-ao-design-transform-jyfmbk.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -11593,65 +11714,21 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
-    id: processes:task-ao-design-v8r5n2-confirm
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-v8r5n2/ao-design-v8r5n2-confirm/processes-task-ao-design-v8r5n2-confirm.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-design-v8r5n2-intake
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-v8r5n2/ao-design-v8r5n2-intake/processes-task-ao-design-v8r5n2-intake.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-design-v8r5n2-record
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-v8r5n2/ao-design-v8r5n2-record/processes-task-ao-design-v8r5n2-record.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-design-v8r5n2-transform
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-v8r5n2/ao-design-v8r5n2-transform/processes-task-ao-design-v8r5n2-transform.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-design-v8r5n2-verify
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-v8r5n2/ao-design-v8r5n2-verify/processes-task-ao-design-v8r5n2-verify.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
     id: processes:task-ao-design-verify-2gbk54
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-34e95r/ao-design-cezz7p/ao-design-verify-2gbk54/processes-task-ao-design-verify-2gbk54.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-design-verify-bwnb99
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-v8r5n2/ao-design-verify-bwnb99/processes-task-ao-design-verify-bwnb99.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -11703,10 +11780,32 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-design-verify-hkjsx6
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-jbf2v9/ao-design-verify-hkjsx6/processes-task-ao-design-verify-hkjsx6.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-design-verify-jhynku
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-7dkbur/ao-design-bnvt6w/ao-design-verify-jhynku/processes-task-ao-design-verify-jhynku.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-design-verify-mg9myj
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-x9k4m7/ao-design-verify-mg9myj/processes-task-ao-design-verify-mg9myj.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -11729,6 +11828,17 @@ catalog:
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-8fzp2b/ao-design-j98gk4/ao-design-verify-qzmjhx/processes-task-ao-design-verify-qzmjhx.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-design-verify-rcwfmv
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-wnqz3k/ao-design-verify-rcwfmv/processes-task-ao-design-verify-rcwfmv.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -11824,116 +11934,6 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
-    id: processes:task-ao-design-wnqz3k-confirm
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-wnqz3k/ao-design-wnqz3k-confirm/processes-task-ao-design-wnqz3k-confirm.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-design-wnqz3k-intake
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-wnqz3k/ao-design-wnqz3k-intake/processes-task-ao-design-wnqz3k-intake.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-design-wnqz3k-record
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-wnqz3k/ao-design-wnqz3k-record/processes-task-ao-design-wnqz3k-record.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-design-wnqz3k-transform
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-wnqz3k/ao-design-wnqz3k-transform/processes-task-ao-design-wnqz3k-transform.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-design-wnqz3k-verify
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-wnqz3k/ao-design-wnqz3k-verify/processes-task-ao-design-wnqz3k-verify.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-design-x9k4m7-confirm
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-x9k4m7/ao-design-x9k4m7-confirm/processes-task-ao-design-x9k4m7-confirm.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-design-x9k4m7-intake
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-x9k4m7/ao-design-x9k4m7-intake/processes-task-ao-design-x9k4m7-intake.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-design-x9k4m7-record
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-x9k4m7/ao-design-x9k4m7-record/processes-task-ao-design-x9k4m7-record.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-design-x9k4m7-transform
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-x9k4m7/ao-design-x9k4m7-transform/processes-task-ao-design-x9k4m7-transform.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-design-x9k4m7-verify
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-x9k4m7/ao-design-x9k4m7-verify/processes-task-ao-design-x9k4m7-verify.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
     id: processes:task-ao-improve-confirm-2a44x9
     last_modified: '2026-09-21'
     lifecycle_status: candidate
@@ -11967,6 +11967,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-improve-confirm-9c7p8d
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-f2r6t4/ao-improve-confirm-9c7p8d/processes-task-ao-improve-confirm-9c7p8d.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-improve-confirm-d2vejv
     last_modified: '2026-09-21'
     lifecycle_status: candidate
@@ -11993,6 +12004,28 @@ catalog:
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-xs59e2/ao-improve-rnkywc/ao-improve-confirm-ga6jvv/processes-task-ao-improve-confirm-ga6jvv.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-improve-confirm-gs6k8z
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-x7m4n2/ao-improve-confirm-gs6k8z/processes-task-ao-improve-confirm-gs6k8z.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-improve-confirm-kjasgm
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-uudtp5/ao-improve-confirm-kjasgm/processes-task-ao-improve-confirm-kjasgm.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -12077,6 +12110,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-improve-confirm-wznc2k
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-k9w5p8/ao-improve-confirm-wznc2k/processes-task-ao-improve-confirm-wznc2k.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-improve-confirm-x5g53y
     last_modified: '2026-09-21'
     lifecycle_status: candidate
@@ -12110,10 +12154,10 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
-    id: processes:task-ao-improve-f2r6t4-confirm
+    id: processes:task-ao-improve-intake-2kywd9
     last_modified: '2026-10-12'
     lifecycle_status: candidate
-    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-f2r6t4/ao-improve-f2r6t4-confirm/processes-task-ao-improve-f2r6t4-confirm.yaml
+    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-k9w5p8/ao-improve-intake-2kywd9/processes-task-ao-improve-intake-2kywd9.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -12121,43 +12165,10 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
-    id: processes:task-ao-improve-f2r6t4-intake
+    id: processes:task-ao-improve-intake-2p6kkf
     last_modified: '2026-10-12'
     lifecycle_status: candidate
-    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-f2r6t4/ao-improve-f2r6t4-intake/processes-task-ao-improve-f2r6t4-intake.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-improve-f2r6t4-record
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-f2r6t4/ao-improve-f2r6t4-record/processes-task-ao-improve-f2r6t4-record.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-improve-f2r6t4-transform
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-f2r6t4/ao-improve-f2r6t4-transform/processes-task-ao-improve-f2r6t4-transform.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-improve-f2r6t4-verify
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-f2r6t4/ao-improve-f2r6t4-verify/processes-task-ao-improve-f2r6t4-verify.yaml
+    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-uudtp5/ao-improve-intake-2p6kkf/processes-task-ao-improve-intake-2p6kkf.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -12209,6 +12220,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-improve-intake-8z5x37
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-f2r6t4/ao-improve-intake-8z5x37/processes-task-ao-improve-intake-8z5x37.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-improve-intake-ctd3cf
     last_modified: '2026-09-21'
     lifecycle_status: candidate
@@ -12235,6 +12257,17 @@ catalog:
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-edjyha/ao-improve-awnbw6/ao-improve-intake-eb3dqm/processes-task-ao-improve-intake-eb3dqm.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-improve-intake-hhw7w9
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-x7m4n2/ao-improve-intake-hhw7w9/processes-task-ao-improve-intake-hhw7w9.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -12341,61 +12374,6 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
-    id: processes:task-ao-improve-k9w5p8-confirm
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-k9w5p8/ao-improve-k9w5p8-confirm/processes-task-ao-improve-k9w5p8-confirm.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-improve-k9w5p8-intake
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-k9w5p8/ao-improve-k9w5p8-intake/processes-task-ao-improve-k9w5p8-intake.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-improve-k9w5p8-record
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-k9w5p8/ao-improve-k9w5p8-record/processes-task-ao-improve-k9w5p8-record.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-improve-k9w5p8-transform
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-k9w5p8/ao-improve-k9w5p8-transform/processes-task-ao-improve-k9w5p8-transform.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-improve-k9w5p8-verify
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-k9w5p8/ao-improve-k9w5p8-verify/processes-task-ao-improve-k9w5p8-verify.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
     id: processes:task-ao-improve-record-3xkwc6
     last_modified: '2026-09-21'
     lifecycle_status: candidate
@@ -12473,10 +12451,32 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-improve-record-mxacts
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-f2r6t4/ao-improve-record-mxacts/processes-task-ao-improve-record-mxacts.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-improve-record-my33dc
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-h3vgyf/ao-improve-eyvh62/ao-improve-record-my33dc/processes-task-ao-improve-record-my33dc.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-improve-record-n8grq3
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-k9w5p8/ao-improve-record-n8grq3/processes-task-ao-improve-record-n8grq3.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -12528,6 +12528,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-improve-record-t8tmaf
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-uudtp5/ao-improve-record-t8tmaf/processes-task-ao-improve-record-t8tmaf.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-improve-record-ubcq4c
     last_modified: '2026-09-21'
     lifecycle_status: candidate
@@ -12543,6 +12554,17 @@ catalog:
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-xfh8na/ao-improve-r6h2g7/ao-improve-record-veznhx/processes-task-ao-improve-record-veznhx.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-improve-record-xq7t8z
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-x7m4n2/ao-improve-record-xq7t8z/processes-task-ao-improve-record-xq7t8z.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -12609,6 +12631,17 @@ catalog:
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-edjyha/ao-improve-awnbw6/ao-improve-transform-5cucm2/processes-task-ao-improve-transform-5cucm2.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-improve-transform-5ru9b8
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-f2r6t4/ao-improve-transform-5ru9b8/processes-task-ao-improve-transform-5ru9b8.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -12704,6 +12737,28 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-improve-transform-kqp5u8
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-uudtp5/ao-improve-transform-kqp5u8/processes-task-ao-improve-transform-kqp5u8.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-improve-transform-mrtzs6
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-k9w5p8/ao-improve-transform-mrtzs6/processes-task-ao-improve-transform-mrtzs6.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-improve-transform-nesd2t
     last_modified: '2026-09-21'
     lifecycle_status: candidate
@@ -12726,6 +12781,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-improve-transform-q4fw9x
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-x7m4n2/ao-improve-transform-q4fw9x/processes-task-ao-improve-transform-q4fw9x.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-improve-transform-tq5ye2
     last_modified: '2026-09-21'
     lifecycle_status: candidate
@@ -12741,61 +12807,6 @@ catalog:
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-h3vgyf/ao-improve-g5bube/ao-improve-transform-tzaxwm/processes-task-ao-improve-transform-tzaxwm.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-improve-v3h8k1-confirm
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-v3h8k1/ao-improve-v3h8k1-confirm/processes-task-ao-improve-v3h8k1-confirm.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-improve-v3h8k1-intake
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-v3h8k1/ao-improve-v3h8k1-intake/processes-task-ao-improve-v3h8k1-intake.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-improve-v3h8k1-record
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-v3h8k1/ao-improve-v3h8k1-record/processes-task-ao-improve-v3h8k1-record.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-improve-v3h8k1-transform
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-v3h8k1/ao-improve-v3h8k1-transform/processes-task-ao-improve-v3h8k1-transform.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-improve-v3h8k1-verify
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-v3h8k1/ao-improve-v3h8k1-verify/processes-task-ao-improve-v3h8k1-verify.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -12847,6 +12858,28 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-improve-verify-7jhktn
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-x7m4n2/ao-improve-verify-7jhktn/processes-task-ao-improve-verify-7jhktn.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-improve-verify-7v378y
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-f2r6t4/ao-improve-verify-7v378y/processes-task-ao-improve-verify-7v378y.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-improve-verify-8ja432
     last_modified: '2026-09-21'
     lifecycle_status: candidate
@@ -12862,6 +12895,17 @@ catalog:
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-xs59e2/ao-improve-gtc9k8/ao-improve-verify-9a8k9t/processes-task-ao-improve-verify-9a8k9t.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-improve-verify-gecaac
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-k9w5p8/ao-improve-verify-gecaac/processes-task-ao-improve-verify-gecaac.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -12935,6 +12979,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-improve-verify-w6tr5u
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-uudtp5/ao-improve-verify-w6tr5u/processes-task-ao-improve-verify-w6tr5u.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-improve-verify-x9wz2n
     last_modified: '2026-09-21'
     lifecycle_status: candidate
@@ -12979,109 +13034,10 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
-    id: processes:task-ao-improve-x7m4n2-confirm
+    id: processes:task-ao-operate-confirm-3hp8aa
     last_modified: '2026-10-12'
     lifecycle_status: candidate
-    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-x7m4n2/ao-improve-x7m4n2-confirm/processes-task-ao-improve-x7m4n2-confirm.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-improve-x7m4n2-intake
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-x7m4n2/ao-improve-x7m4n2-intake/processes-task-ao-improve-x7m4n2-intake.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-improve-x7m4n2-record
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-x7m4n2/ao-improve-x7m4n2-record/processes-task-ao-improve-x7m4n2-record.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-improve-x7m4n2-transform
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-x7m4n2/ao-improve-x7m4n2-transform/processes-task-ao-improve-x7m4n2-transform.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-improve-x7m4n2-verify
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-x7m4n2/ao-improve-x7m4n2-verify/processes-task-ao-improve-x7m4n2-verify.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-operate-b5v2k9-confirm
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-b5v2k9/ao-operate-b5v2k9-confirm/processes-task-ao-operate-b5v2k9-confirm.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-operate-b5v2k9-intake
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-b5v2k9/ao-operate-b5v2k9-intake/processes-task-ao-operate-b5v2k9-intake.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-operate-b5v2k9-record
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-b5v2k9/ao-operate-b5v2k9-record/processes-task-ao-operate-b5v2k9-record.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-operate-b5v2k9-transform
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-b5v2k9/ao-operate-b5v2k9-transform/processes-task-ao-operate-b5v2k9-transform.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-operate-b5v2k9-verify
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-b5v2k9/ao-operate-b5v2k9-verify/processes-task-ao-operate-b5v2k9-verify.yaml
+    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-b5v2k9/ao-operate-confirm-3hp8aa/processes-task-ao-operate-confirm-3hp8aa.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -13199,6 +13155,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-operate-confirm-htefwz
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-8pqgha/ao-operate-confirm-htefwz/processes-task-ao-operate-confirm-htefwz.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-operate-confirm-kbjya3
     last_modified: '2026-09-21'
     lifecycle_status: candidate
@@ -13236,6 +13203,17 @@ catalog:
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-38qyc6/ao-operate-7k8xwy/ao-operate-confirm-ntrsur/processes-task-ao-operate-confirm-ntrsur.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-operate-confirm-qe5ck5
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-z4n9m2/ao-operate-confirm-qe5ck5/processes-task-ao-operate-confirm-qe5ck5.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -13309,6 +13287,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-operate-confirm-w5e9nz
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-j8k5p7/ao-operate-confirm-w5e9nz/processes-task-ao-operate-confirm-w5e9nz.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-operate-intake-2aexr6
     last_modified: '2026-09-21'
     lifecycle_status: candidate
@@ -13364,6 +13353,28 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-operate-intake-dxpemv
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-8pqgha/ao-operate-intake-dxpemv/processes-task-ao-operate-intake-dxpemv.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-operate-intake-f7sgdj
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-z4n9m2/ao-operate-intake-f7sgdj/processes-task-ao-operate-intake-f7sgdj.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-operate-intake-fck5h3
     last_modified: '2026-09-21'
     lifecycle_status: candidate
@@ -13390,6 +13401,17 @@ catalog:
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-87q5mk/ao-operate-f669fn/ao-operate-intake-hsv8h8/processes-task-ao-operate-intake-hsv8h8.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-operate-intake-kkf6y8
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-j8k5p7/ao-operate-intake-kkf6y8/processes-task-ao-operate-intake-kkf6y8.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -13434,6 +13456,17 @@ catalog:
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-87q5mk/ao-operate-8mxujq/ao-operate-intake-pp2rcr/processes-task-ao-operate-intake-pp2rcr.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-operate-intake-prsqz4
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-b5v2k9/ao-operate-intake-prsqz4/processes-task-ao-operate-intake-prsqz4.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -13529,109 +13562,10 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
-    id: processes:task-ao-operate-j8k5p7-confirm
+    id: processes:task-ao-operate-record-2s4xe9
     last_modified: '2026-10-12'
     lifecycle_status: candidate
-    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-j8k5p7/ao-operate-j8k5p7-confirm/processes-task-ao-operate-j8k5p7-confirm.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-operate-j8k5p7-intake
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-j8k5p7/ao-operate-j8k5p7-intake/processes-task-ao-operate-j8k5p7-intake.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-operate-j8k5p7-record
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-j8k5p7/ao-operate-j8k5p7-record/processes-task-ao-operate-j8k5p7-record.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-operate-j8k5p7-transform
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-j8k5p7/ao-operate-j8k5p7-transform/processes-task-ao-operate-j8k5p7-transform.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-operate-j8k5p7-verify
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-j8k5p7/ao-operate-j8k5p7-verify/processes-task-ao-operate-j8k5p7-verify.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-operate-q3w6r1-confirm
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-q3w6r1/ao-operate-q3w6r1-confirm/processes-task-ao-operate-q3w6r1-confirm.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-operate-q3w6r1-intake
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-q3w6r1/ao-operate-q3w6r1-intake/processes-task-ao-operate-q3w6r1-intake.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-operate-q3w6r1-record
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-q3w6r1/ao-operate-q3w6r1-record/processes-task-ao-operate-q3w6r1-record.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-operate-q3w6r1-transform
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-q3w6r1/ao-operate-q3w6r1-transform/processes-task-ao-operate-q3w6r1-transform.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-operate-q3w6r1-verify
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-q3w6r1/ao-operate-q3w6r1-verify/processes-task-ao-operate-q3w6r1-verify.yaml
+    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-b5v2k9/ao-operate-record-2s4xe9/processes-task-ao-operate-record-2s4xe9.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -13665,6 +13599,28 @@ catalog:
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-dg9q4h/ao-operate-c7xad6/ao-operate-record-4x8k94/processes-task-ao-operate-record-4x8k94.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-operate-record-6gyw9t
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-8pqgha/ao-operate-record-6gyw9t/processes-task-ao-operate-record-6gyw9t.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-operate-record-6um63p
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-z4n9m2/ao-operate-record-6um63p/processes-task-ao-operate-record-6um63p.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -13709,6 +13665,17 @@ catalog:
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-87q5mk/ao-operate-8mxujq/ao-operate-record-d5xcgd/processes-task-ao-operate-record-d5xcgd.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-operate-record-dgbssv
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-j8k5p7/ao-operate-record-dgbssv/processes-task-ao-operate-record-dgbssv.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -13892,6 +13859,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-operate-transform-8yvfbt
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-z4n9m2/ao-operate-transform-8yvfbt/processes-task-ao-operate-transform-8yvfbt.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-operate-transform-ca9894
     last_modified: '2026-09-21'
     lifecycle_status: candidate
@@ -13918,6 +13896,17 @@ catalog:
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-38qyc6/ao-operate-h6hmqm/ao-operate-transform-devvng/processes-task-ao-operate-transform-devvng.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-operate-transform-ex9jwn
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-j8k5p7/ao-operate-transform-ex9jwn/processes-task-ao-operate-transform-ex9jwn.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -14002,6 +13991,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-operate-transform-q5dk3v
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-b5v2k9/ao-operate-transform-q5dk3v/processes-task-ao-operate-transform-q5dk3v.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-operate-transform-q9ajex
     last_modified: '2026-09-21'
     lifecycle_status: candidate
@@ -14017,6 +14017,17 @@ catalog:
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-g4wp63/ao-operate-vs4qaq/ao-operate-transform-r3apff/processes-task-ao-operate-transform-r3apff.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-operate-transform-rrhxq2
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-8pqgha/ao-operate-transform-rrhxq2/processes-task-ao-operate-transform-rrhxq2.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -14101,6 +14112,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-operate-verify-4uvtzn
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-j8k5p7/ao-operate-verify-4uvtzn/processes-task-ao-operate-verify-4uvtzn.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-operate-verify-69265b
     last_modified: '2026-09-21'
     lifecycle_status: candidate
@@ -14149,6 +14171,17 @@ catalog:
     last_modified: '2026-09-21'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-38qyc6/ao-operate-8sc5gr/ao-operate-verify-9e7ebu/processes-task-ao-operate-verify-9e7ebu.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: processes:task-ao-operate-verify-bpqpx5
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-8pqgha/ao-operate-verify-bpqpx5/processes-task-ao-operate-verify-bpqpx5.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -14277,6 +14310,17 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: processes:task-ao-operate-verify-uwg6mj
+    last_modified: '2026-10-12'
+    lifecycle_status: candidate
+    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-b5v2k9/ao-operate-verify-uwg6mj/processes-task-ao-operate-verify-uwg6mj.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: Task
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: processes:task-ao-operate-verify-whzdc9
     last_modified: '2026-09-21'
     lifecycle_status: candidate
@@ -14299,54 +14343,10 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
-    id: processes:task-ao-operate-z4n9m2-confirm
+    id: processes:task-ao-operate-verify-yx6kge
     last_modified: '2026-10-12'
     lifecycle_status: candidate
-    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-z4n9m2/ao-operate-z4n9m2-confirm/processes-task-ao-operate-z4n9m2-confirm.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-operate-z4n9m2-intake
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-z4n9m2/ao-operate-z4n9m2-intake/processes-task-ao-operate-z4n9m2-intake.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-operate-z4n9m2-record
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-z4n9m2/ao-operate-z4n9m2-record/processes-task-ao-operate-z4n9m2-record.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-operate-z4n9m2-transform
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-z4n9m2/ao-operate-z4n9m2-transform/processes-task-ao-operate-z4n9m2-transform.yaml
-    research_count: 0
-    retired_count: 0
-    state: canonical
-    type: Task
-    version: 1.0.0
-  - candidate_count: 0
-    canonical_count: 1
-    id: processes:task-ao-operate-z4n9m2-verify
-    last_modified: '2026-10-12'
-    lifecycle_status: candidate
-    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-z4n9m2/ao-operate-z4n9m2-verify/processes-task-ao-operate-z4n9m2-verify.yaml
+    path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-z4n9m2/ao-operate-verify-yx6kge/processes-task-ao-operate-verify-yx6kge.yaml
     research_count: 0
     retired_count: 0
     state: canonical

@@ -51,37 +51,70 @@ metadata:
       `composes[]` listing 5 Tasks (processes:task-ao-design-v8r5n2-intake, processes:task-ao-design-v8r5n2-verify,
       processes:task-ao-design-v8r5n2-transform, processes:task-ao-design-v8r5n2-confirm,
       processes:task-ao-design-v8r5n2-record).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-design-v8r5n2-intake-5pxkb3,
+      processes:task-ao-design-v8r5n2-verify-4dc3nj, processes:task-ao-design-v8r5n2-transform-6aqv7s,
+      processes:task-ao-design-v8r5n2-confirm-r7vkvh, processes:task-ao-design-v8r5n2-record-e9phtd).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-design-v8r5n2-fymgem, processes:task-ao-design-v8r5n2-yb45kv,
+      processes:task-ao-design-v8r5n2-gka9kt, processes:task-ao-design-v8r5n2-5f8xej,
+      processes:task-ao-design-v8r5n2-didhsc).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-design-4b2hrf, processes:task-ao-design-bb9iq9,
+      processes:task-ao-design-apwu5k, processes:task-ao-design-asjevt, processes:task-ao-design-sfq6k8).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-design-bd3mhj, processes:task-ao-design-g24kzc,
+      processes:task-ao-design-6a2f52, processes:task-ao-design-jaf95n, processes:task-ao-design-kdqm35).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-design-hdqzwp, processes:task-ao-design-qskbhz,
+      processes:task-ao-design-8nk5wg, processes:task-ao-design-z69awx, processes:task-ao-design-unf5v7).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-design-intake-v2uckf, processes:task-ao-design-verify-bwnb99,
+      processes:task-ao-design-transform-ftvjry, processes:task-ao-design-confirm-mhqjvd,
+      processes:task-ao-design-record-tq7syq).'
 composes:
 - source_id: processes:activity-ao-design-v8r5n2
-  target_id: processes:task-ao-design-v8r5n2-intake
+  target_id: processes:task-ao-design-intake-v2uckf
   relationship_type: dea:composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-design-v8r5n2
-  target_id: processes:task-ao-design-v8r5n2-verify
+  target_id: processes:task-ao-design-verify-bwnb99
   relationship_type: dea:composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-design-v8r5n2
-  target_id: processes:task-ao-design-v8r5n2-transform
+  target_id: processes:task-ao-design-transform-ftvjry
   relationship_type: dea:composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-design-v8r5n2
-  target_id: processes:task-ao-design-v8r5n2-confirm
+  target_id: processes:task-ao-design-confirm-mhqjvd
   relationship_type: dea:composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-design-v8r5n2
-  target_id: processes:task-ao-design-v8r5n2-record
+  target_id: processes:task-ao-design-record-tq7syq
   relationship_type: dea:composes
   direction: source-to-target
   status: active

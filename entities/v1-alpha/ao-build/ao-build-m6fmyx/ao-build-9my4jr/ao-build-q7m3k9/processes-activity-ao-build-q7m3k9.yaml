@@ -52,37 +52,70 @@ metadata:
       `composes[]` listing 5 Tasks (processes:task-ao-build-q7m3k9-intake, processes:task-ao-build-q7m3k9-verify,
       processes:task-ao-build-q7m3k9-transform, processes:task-ao-build-q7m3k9-confirm,
       processes:task-ao-build-q7m3k9-record).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-build-q7m3k9-intake-t3q7rn,
+      processes:task-ao-build-q7m3k9-verify-f7psn4, processes:task-ao-build-q7m3k9-transform-2rk4yu,
+      processes:task-ao-build-q7m3k9-confirm-tkmed4, processes:task-ao-build-q7m3k9-record-gy8azw).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-build-q7m3k9-bdnb3z, processes:task-ao-build-q7m3k9-qyhchw,
+      processes:task-ao-build-q7m3k9-hcubi5, processes:task-ao-build-q7m3k9-pydb25,
+      processes:task-ao-build-q7m3k9-ryfci7).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-build-gs5y7v, processes:task-ao-build-zfvzse,
+      processes:task-ao-build-2r64tr, processes:task-ao-build-8u7ikc, processes:task-ao-build-h5u9qa).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-build-udzkhi, processes:task-ao-build-55dzpa,
+      processes:task-ao-build-6gm624, processes:task-ao-build-z3vdqs, processes:task-ao-build-jj4q9j).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-build-kyrdde, processes:task-ao-build-a2fsda,
+      processes:task-ao-build-qr2e3x, processes:task-ao-build-4pu7sq, processes:task-ao-build-udnm9v).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-build-intake-nkc3gd, processes:task-ao-build-verify-ukp8a5,
+      processes:task-ao-build-transform-u4fdxv, processes:task-ao-build-confirm-sua2mx,
+      processes:task-ao-build-record-4r92mc).'
 composes:
 - source_id: processes:activity-ao-build-q7m3k9
-  target_id: processes:task-ao-build-q7m3k9-intake
+  target_id: processes:task-ao-build-intake-nkc3gd
   relationship_type: dea:composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-build-q7m3k9
-  target_id: processes:task-ao-build-q7m3k9-verify
+  target_id: processes:task-ao-build-verify-ukp8a5
   relationship_type: dea:composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-build-q7m3k9
-  target_id: processes:task-ao-build-q7m3k9-transform
+  target_id: processes:task-ao-build-transform-u4fdxv
   relationship_type: dea:composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-build-q7m3k9
-  target_id: processes:task-ao-build-q7m3k9-confirm
+  target_id: processes:task-ao-build-confirm-sua2mx
   relationship_type: dea:composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-build-q7m3k9
-  target_id: processes:task-ao-build-q7m3k9-record
+  target_id: processes:task-ao-build-record-4r92mc
   relationship_type: dea:composes
   direction: source-to-target
   status: active

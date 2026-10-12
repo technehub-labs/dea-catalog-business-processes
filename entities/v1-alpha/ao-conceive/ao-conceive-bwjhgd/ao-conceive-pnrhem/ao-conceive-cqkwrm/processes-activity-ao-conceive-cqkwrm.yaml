@@ -52,37 +52,70 @@ metadata:
       `composes[]` listing 5 Tasks (processes:task-ao-conceive-cqkwrm-intake, processes:task-ao-conceive-cqkwrm-verify,
       processes:task-ao-conceive-cqkwrm-transform, processes:task-ao-conceive-cqkwrm-confirm,
       processes:task-ao-conceive-cqkwrm-record).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-conceive-cqkwrm-intake-unt2ch,
+      processes:task-ao-conceive-cqkwrm-verify-gfuzjd, processes:task-ao-conceive-cqkwrm-transform-93cvje,
+      processes:task-ao-conceive-cqkwrm-confirm-q65njx, processes:task-ao-conceive-cqkwrm-record-wwzzxz).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-conceive-cqkwrm-i2knje, processes:task-ao-conceive-cqkwrm-isfa9m,
+      processes:task-ao-conceive-cqkwrm-qz75br, processes:task-ao-conceive-cqkwrm-9zvybt,
+      processes:task-ao-conceive-cqkwrm-e3y2xj).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-conceive-s3dbnb, processes:task-ao-conceive-tnci36,
+      processes:task-ao-conceive-36dbku, processes:task-ao-conceive-r6jgyg, processes:task-ao-conceive-et6e8x).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-conceive-xwqwsz, processes:task-ao-conceive-6czdha,
+      processes:task-ao-conceive-dpx4vg, processes:task-ao-conceive-etaa56, processes:task-ao-conceive-stbqay).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-conceive-kwbnxz, processes:task-ao-conceive-2yh862,
+      processes:task-ao-conceive-ms5bvc, processes:task-ao-conceive-g5e5zw, processes:task-ao-conceive-mvwesp).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-conceive-intake-hb8x2r, processes:task-ao-conceive-verify-skgr5k,
+      processes:task-ao-conceive-transform-j6caqr, processes:task-ao-conceive-confirm-fphn67,
+      processes:task-ao-conceive-record-6v6fz2).'
 composes:
 - source_id: processes:activity-ao-conceive-cqkwrm
-  target_id: processes:task-ao-conceive-cqkwrm-intake
+  target_id: processes:task-ao-conceive-intake-hb8x2r
   relationship_type: dea:composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-conceive-cqkwrm
-  target_id: processes:task-ao-conceive-cqkwrm-verify
+  target_id: processes:task-ao-conceive-verify-skgr5k
   relationship_type: dea:composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-conceive-cqkwrm
-  target_id: processes:task-ao-conceive-cqkwrm-transform
+  target_id: processes:task-ao-conceive-transform-j6caqr
   relationship_type: dea:composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-conceive-cqkwrm
-  target_id: processes:task-ao-conceive-cqkwrm-confirm
+  target_id: processes:task-ao-conceive-confirm-fphn67
   relationship_type: dea:composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-conceive-cqkwrm
-  target_id: processes:task-ao-conceive-cqkwrm-record
+  target_id: processes:task-ao-conceive-record-6v6fz2
   relationship_type: dea:composes
   direction: source-to-target
   status: active

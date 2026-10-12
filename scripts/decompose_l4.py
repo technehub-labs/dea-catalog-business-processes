@@ -210,13 +210,45 @@ def discover_activities() -> list[ActivityContext]:
 
 
 def _slugify_task_id(activity_id: str, phase_code: str) -> str:
-    """Build a deterministic Task id from Activity id + phase code.
+    """Build a deterministic Task id from Activity id + phase + entropy.
 
-    `dea:activity-receive-regulator-sunset-directive` + `intake` →
-    `dea:task-receive-regulator-sunset-directive-intake`.
+    `processes:activity-ao-activate-bsjbfc` + phase `intake` +
+    entropy `y95s7f` -> `processes:task-ao-activate-intake-y95s7f`.
+
+    The 5-segment shape (`<ns>:task-<2char>-<word>-<phase>-<6char>`) matches
+    the pre-mv1 L4 Task id convention (2800 Tasks in the catalog use this
+    shape; the directory and filename mirror it). The 6-char entropy uses
+    the IDM-004 alphabet (`abcdefghjkmnpqrstuvwxyz23456789`).
+
+    The activity's own 6-char entropy (the trailing segment of the
+    activity id, which may contain ambiguous chars like `1`) is dropped;
+    the task id is built from the activity's `<2char>-<word>(-<word>)*`
+    prefix plus the phase verb plus the task's own strict-alphabet entropy.
     """
     suffix = activity_id[len("processes:activity-"):]
-    return f"processes:task-{suffix}-{phase_code}"
+    # Activity id structure: `<2char>-<word>(-<word>)*-<6char>`. The trailing
+    # 6 chars are the activity's entropy (may contain ambiguous chars).
+    # Drop them and use `<2char>-<word>(-<word>)*` as the prefix.
+    parts = suffix.split("-")
+    if len(parts) >= 3 and len(parts[-1]) == 6:
+        prefix = "-".join(parts[:-1])
+    else:
+        prefix = suffix
+    entropy = _generate_entropy_suffix()
+    return f"processes:task-{prefix}-{phase_code}-{entropy}"
+
+
+def _generate_entropy_suffix() -> str:
+    """Return a 6-character entropy suffix matching the IDM-001 / IDM-004
+    BASE32 alphabet from `scripts/check_id_system.py`.
+
+    Alphabet: `abcdefghjkmnpqrstuvwxyz23456789`
+    (excludes `i`, `l`, `o` and digits `0`, `1`).
+    Matches the entropy shape used by the 2800 pre-mv1 L4 Tasks
+    (CR-BP-mv1, 2026-09-20)."""
+    import secrets
+    safe = "abcdefghjkmnpqrstuvwxyz23456789"
+    return "".join(secrets.choice(safe) for _ in range(6))
 
 
 def _build_task_yaml(

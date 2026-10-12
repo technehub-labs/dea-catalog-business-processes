@@ -51,37 +51,70 @@ metadata:
       `composes[]` listing 5 Tasks (processes:task-ao-operate-j8k5p7-intake, processes:task-ao-operate-j8k5p7-verify,
       processes:task-ao-operate-j8k5p7-transform, processes:task-ao-operate-j8k5p7-confirm,
       processes:task-ao-operate-j8k5p7-record).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-operate-j8k5p7-intake-6hb93x,
+      processes:task-ao-operate-j8k5p7-verify-65trtw, processes:task-ao-operate-j8k5p7-transform-pfs83d,
+      processes:task-ao-operate-j8k5p7-confirm-ea7srr, processes:task-ao-operate-j8k5p7-record-gvt8hq).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-operate-j8k5p7-bidk9t, processes:task-ao-operate-j8k5p7-463ss6,
+      processes:task-ao-operate-j8k5p7-b64r86, processes:task-ao-operate-j8k5p7-c2mybr,
+      processes:task-ao-operate-j8k5p7-83vumf).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-operate-pa97ih, processes:task-ao-operate-57a8ez,
+      processes:task-ao-operate-utzbi9, processes:task-ao-operate-2et8cv, processes:task-ao-operate-92dr55).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-operate-6gm6th, processes:task-ao-operate-4t97gb,
+      processes:task-ao-operate-2vukrx, processes:task-ao-operate-6kthzt, processes:task-ao-operate-tckq2b).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-operate-hkqt2z, processes:task-ao-operate-fspxcr,
+      processes:task-ao-operate-knjg75, processes:task-ao-operate-9vw9dq, processes:task-ao-operate-djdccs).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-operate-intake-kkf6y8, processes:task-ao-operate-verify-4uvtzn,
+      processes:task-ao-operate-transform-ex9jwn, processes:task-ao-operate-confirm-w5e9nz,
+      processes:task-ao-operate-record-dgbssv).'
 composes:
 - source_id: processes:activity-ao-operate-j8k5p7
-  target_id: processes:task-ao-operate-j8k5p7-intake
+  target_id: processes:task-ao-operate-intake-kkf6y8
   relationship_type: dea:composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-operate-j8k5p7
-  target_id: processes:task-ao-operate-j8k5p7-verify
+  target_id: processes:task-ao-operate-verify-4uvtzn
   relationship_type: dea:composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-operate-j8k5p7
-  target_id: processes:task-ao-operate-j8k5p7-transform
+  target_id: processes:task-ao-operate-transform-ex9jwn
   relationship_type: dea:composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-operate-j8k5p7
-  target_id: processes:task-ao-operate-j8k5p7-confirm
+  target_id: processes:task-ao-operate-confirm-w5e9nz
   relationship_type: dea:composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-operate-j8k5p7
-  target_id: processes:task-ao-operate-j8k5p7-record
+  target_id: processes:task-ao-operate-record-dgbssv
   relationship_type: dea:composes
   direction: source-to-target
   status: active

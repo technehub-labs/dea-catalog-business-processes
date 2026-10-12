@@ -50,37 +50,70 @@ metadata:
       `composes[]` listing 5 Tasks (processes:task-ao-operate-b5v2k9-intake, processes:task-ao-operate-b5v2k9-verify,
       processes:task-ao-operate-b5v2k9-transform, processes:task-ao-operate-b5v2k9-confirm,
       processes:task-ao-operate-b5v2k9-record).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-operate-b5v2k9-intake-idiqk6,
+      processes:task-ao-operate-b5v2k9-verify-26g6qh, processes:task-ao-operate-b5v2k9-transform-phiy4k,
+      processes:task-ao-operate-b5v2k9-confirm-2c7c7r, processes:task-ao-operate-b5v2k9-record-g7mbmn).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-operate-b5v2k9-rhpqvc, processes:task-ao-operate-b5v2k9-zup2sv,
+      processes:task-ao-operate-b5v2k9-yzkips, processes:task-ao-operate-b5v2k9-8ej5kg,
+      processes:task-ao-operate-b5v2k9-f7tmtu).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-operate-xfjcdv, processes:task-ao-operate-duwgrf,
+      processes:task-ao-operate-ueef5g, processes:task-ao-operate-tzm6rm, processes:task-ao-operate-buihdq).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-operate-xprji5, processes:task-ao-operate-wvkijn,
+      processes:task-ao-operate-yu22fi, processes:task-ao-operate-7migdn, processes:task-ao-operate-vdr7a2).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-operate-jywxqg, processes:task-ao-operate-jz9bbh,
+      processes:task-ao-operate-svwea4, processes:task-ao-operate-47ghk7, processes:task-ao-operate-hb4qc3).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-operate-intake-prsqz4, processes:task-ao-operate-verify-uwg6mj,
+      processes:task-ao-operate-transform-q5dk3v, processes:task-ao-operate-confirm-3hp8aa,
+      processes:task-ao-operate-record-2s4xe9).'
 composes:
 - source_id: processes:activity-ao-operate-b5v2k9
-  target_id: processes:task-ao-operate-b5v2k9-intake
+  target_id: processes:task-ao-operate-intake-prsqz4
   relationship_type: dea:composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-operate-b5v2k9
-  target_id: processes:task-ao-operate-b5v2k9-verify
+  target_id: processes:task-ao-operate-verify-uwg6mj
   relationship_type: dea:composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-operate-b5v2k9
-  target_id: processes:task-ao-operate-b5v2k9-transform
+  target_id: processes:task-ao-operate-transform-q5dk3v
   relationship_type: dea:composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-operate-b5v2k9
-  target_id: processes:task-ao-operate-b5v2k9-confirm
+  target_id: processes:task-ao-operate-confirm-3hp8aa
   relationship_type: dea:composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-operate-b5v2k9
-  target_id: processes:task-ao-operate-b5v2k9-record
+  target_id: processes:task-ao-operate-record-2s4xe9
   relationship_type: dea:composes
   direction: source-to-target
   status: active

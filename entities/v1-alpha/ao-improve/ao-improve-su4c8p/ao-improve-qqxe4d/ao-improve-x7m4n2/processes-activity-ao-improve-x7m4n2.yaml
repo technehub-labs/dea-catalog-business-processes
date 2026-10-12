@@ -51,37 +51,70 @@ metadata:
       `composes[]` listing 5 Tasks (processes:task-ao-improve-x7m4n2-intake, processes:task-ao-improve-x7m4n2-verify,
       processes:task-ao-improve-x7m4n2-transform, processes:task-ao-improve-x7m4n2-confirm,
       processes:task-ao-improve-x7m4n2-record).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-improve-x7m4n2-intake-g2mr5z,
+      processes:task-ao-improve-x7m4n2-verify-spvkii, processes:task-ao-improve-x7m4n2-transform-y4kdug,
+      processes:task-ao-improve-x7m4n2-confirm-emap54, processes:task-ao-improve-x7m4n2-record-twumwg).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-improve-x7m4n2-uhxee2, processes:task-ao-improve-x7m4n2-x5wjkr,
+      processes:task-ao-improve-x7m4n2-gd2i2x, processes:task-ao-improve-x7m4n2-p586f5,
+      processes:task-ao-improve-x7m4n2-px7b2x).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-improve-nsy5ub, processes:task-ao-improve-4aiyh5,
+      processes:task-ao-improve-64fshf, processes:task-ao-improve-euch3m, processes:task-ao-improve-pc443i).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-improve-z8cacp, processes:task-ao-improve-n57ase,
+      processes:task-ao-improve-afjnse, processes:task-ao-improve-w5ttwr, processes:task-ao-improve-c6xiwg).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-improve-84rmv4, processes:task-ao-improve-wzjpue,
+      processes:task-ao-improve-ufpv8q, processes:task-ao-improve-r4nses, processes:task-ao-improve-quk6vq).'
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-improve-intake-hhw7w9, processes:task-ao-improve-verify-7jhktn,
+      processes:task-ao-improve-transform-q4fw9x, processes:task-ao-improve-confirm-gs6k8z,
+      processes:task-ao-improve-record-xq7t8z).'
 composes:
 - source_id: processes:activity-ao-improve-x7m4n2
-  target_id: processes:task-ao-improve-x7m4n2-intake
+  target_id: processes:task-ao-improve-intake-hhw7w9
   relationship_type: dea:composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-improve-x7m4n2
-  target_id: processes:task-ao-improve-x7m4n2-verify
+  target_id: processes:task-ao-improve-verify-7jhktn
   relationship_type: dea:composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-improve-x7m4n2
-  target_id: processes:task-ao-improve-x7m4n2-transform
+  target_id: processes:task-ao-improve-transform-q4fw9x
   relationship_type: dea:composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-improve-x7m4n2
-  target_id: processes:task-ao-improve-x7m4n2-confirm
+  target_id: processes:task-ao-improve-confirm-gs6k8z
   relationship_type: dea:composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-improve-x7m4n2
-  target_id: processes:task-ao-improve-x7m4n2-record
+  target_id: processes:task-ao-improve-record-xq7t8z
   relationship_type: dea:composes
   direction: source-to-target
   status: active

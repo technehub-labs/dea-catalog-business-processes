@@ -7,31 +7,34 @@ status: candidate
 process_intent: manage
 process_type: management
 process_specialization: []
-description: >-
-  Conceive the regulated-scope composition of the enterprise's agentive mix under the enterprise regulated-entity approval authority. The trigger is the enterprise's decision that the agent-capacity strategy will include regulator-licensed roles. The outcome is a regulated-scope declaration committed to the regulated personnel record with the fitness-and-propriety attestation regime documented, the supervisor-controlled scope of each licensed role declared, and the alignment to the regulator's continuing-supervision framework committed.
-trigger: >-
-  The enterprise's agent-capacity strategy will include roles whose holders
-  must hold regulator-issued licences or registrations (FCA SMCR CF1..CF11;
-  state healthcare licensure; FAA / EASA type-rating; NAIC producer line of
-  authority; state bar admissions; EU AI Act high-risk human-oversight roles),
-  and the enterprise must determine the regulated-scope of those roles
-  before they enter Design or Build.
-outcome: >-
-  The enterprise's agent-capacity strategy carries an explicit regulated-scope declaration: the count and category of regulator-licensed roles, the supervisor-controlled scope of each, the fitness-and-propriety attestation regime, and the alignment between the regulated personnel record and the regulator's continuing-supervision framework.
+description: Conceive the regulated-scope composition of the enterprise's agentive
+  mix under the enterprise regulated-entity approval authority. The trigger is the
+  enterprise's decision that the agent-capacity strategy will include regulator-licensed
+  roles. The outcome is a regulated-scope declaration committed to the regulated personnel
+  record with the fitness-and-propriety attestation regime documented, the supervisor-controlled
+  scope of each licensed role declared, and the alignment to the regulator's continuing-supervision
+  framework committed.
+trigger: The enterprise's agent-capacity strategy will include roles whose holders
+  must hold regulator-issued licences or registrations (FCA SMCR CF1..CF11; state
+  healthcare licensure; FAA / EASA type-rating; NAIC producer line of authority; state
+  bar admissions; EU AI Act high-risk human-oversight roles), and the enterprise must
+  determine the regulated-scope of those roles before they enter Design or Build.
+outcome: 'The enterprise''s agent-capacity strategy carries an explicit regulated-scope
+  declaration: the count and category of regulator-licensed roles, the supervisor-controlled
+  scope of each, the fitness-and-propriety attestation regime, and the alignment between
+  the regulated personnel record and the regulator''s continuing-supervision framework.'
 identity:
   verb: Conceive
   object: Licensed or Regulated Agent Capacity
   scope: enterprise
-  outcome_statement: >-
-    The regulator-tied Licensed or Regulated Agent Capacity conceive work has been carried out
-    at the AgencyAndOrganization x Conceive coordinate under the enterprise
-    regulated-entity approval authority. The outcome is recorded on the regulated
-    personnel record with the supervisor-controlled scope, the fitness-and-propriety
-    attestation regime, the supervised-training completion requirements, and the
-    continuing-supervisor notification path documented per the regulator's
-    continuing-supervision framework. Substrate-neutral conceive work is
-    excluded. Adjacent lifecycle stages (Conceive / Design / Build / Activate /
-    Operate / Improve / Retire) are excluded.
+  outcome_statement: The regulator-tied Licensed or Regulated Agent Capacity conceive
+    work has been carried out at the AgencyAndOrganization x Conceive coordinate under
+    the enterprise regulated-entity approval authority. The outcome is recorded on
+    the regulated personnel record with the supervisor-controlled scope, the fitness-and-propriety
+    attestation regime, the supervised-training completion requirements, and the continuing-supervisor
+    notification path documented per the regulator's continuing-supervision framework.
+    Substrate-neutral conceive work is excluded. Adjacent lifecycle stages (Conceive
+    / Design / Build / Activate / Operate / Improve / Retire) are excluded.
   evidence_links:
   - type: regulation
     ref: https://www.handbook.fca.org.uk/handbook/SYSC/25/Annex1/
@@ -69,25 +72,23 @@ metadata:
   - processes:activity-ao-conceive-cqkwrm
   - processes:activity-ao-conceive-vnkqzf
   - processes:activity-ao-conceive-fmxtqr
-  - processes:activity-ao-conceive-pzmwkl
+  - processes:activity-ao-conceive-v7g5se
   change_history:
   - cr: CR-BP-106
     date: '2026-09-22'
-    change: >-
-      Initial L2 Process entry; the canonical Business Process admitted at the
-      AgencyAndOrganization x Conceive coordinate, from the CR-BP-105
-      escape-clause discovery outcome (10/10, ADMIT-CANONICAL recommendation)
-      under the CR-BP-62 method. The admission activates the
-      dea:discovery-agency-and-organization-conceive-escape escape rationale and supersedes the substrate-
-      neutral general-case BP at this cell. Evidence base per Cell-Cycle
-      escape-clause discovery record dea:discovery-agency-and-organization-conceive-escape (CR-BP-105, PR
-      #155). L3 Activity and L4 Task decomposition lands in CR-BP-111 (deferred).
+    change: 'Initial L2 Process entry; the canonical Business Process admitted at
+      the AgencyAndOrganization x Conceive coordinate, from the CR-BP-105 escape-clause
+      discovery outcome (10/10, ADMIT-CANONICAL recommendation) under the CR-BP-62
+      method. The admission activates the dea:discovery-agency-and-organization-conceive-escape
+      escape rationale and supersedes the substrate- neutral general-case BP at this
+      cell. Evidence base per Cell-Cycle escape-clause discovery record dea:discovery-agency-and-organization-conceive-escape
+      (CR-BP-105, PR #155). L3 Activity and L4 Task decomposition lands in CR-BP-111
+      (deferred).'
   - cr: CR-BP-111
     date: '2026-10-12'
     change: 'L3 decomposition tranche (CR-BP-111): added metadata.activity_references
-      back-references to the 4 Activity records decomposing this BP. Version
-      unchanged per SIV-004 (additive metadata-only). Activities classified
-      per CR-BP-32 section 5 (fails standalone executability and resource
-      dedication); decomposition boundary marker per CR-BP-32 section 12
-      cleared (each Activity is decomposed into 5 L4 Tasks per the
-      `scripts/decompose_l4.py` 5-phase verb-object completion pattern).'
+      back-references to the 4 Activity records decomposing this BP. Version unchanged
+      per SIV-004 (additive metadata-only). Activities classified per CR-BP-32 section
+      5 (fails standalone executability and resource dedication); decomposition boundary
+      marker per CR-BP-32 section 12 cleared (each Activity is decomposed into 5 L4
+      Tasks per the `scripts/decompose_l4.py` 5-phase verb-object completion pattern).'
