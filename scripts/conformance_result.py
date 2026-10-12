@@ -108,6 +108,8 @@ GATES: list[tuple[str, bool, list[str]]] = [
      False, ["python", "scripts/check_l0_l1_cardinality.py"]),  # CR-BP-100; advisory
     ("[25] ID System (IDM-001..007)",
      True, ["python", "scripts/check_id_system.py"]),  # CR-BP-mv1; blocking
+    ("[26] Reference Embargo (CR-BP-112; EMB-001..004)",
+     True, ["python", "scripts/check_reference_embargo.py"]),  # CR-BP-112; blocking
 ]
 
 

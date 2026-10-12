@@ -1,0 +1,123 @@
+# =============================================================================
+# reconciliation/reference-embargo-allowlist.yaml
+# CR-BP-112: Reference Embargo allowlist data (EMB-002, EMB-003, EMB-004)
+#
+# Two top-level blocks:
+#
+#   sealed_files
+#     Files that contain substantive embargoed-term mentions by design
+#     (the historical CR-BP-TMF-EMBARGO strip carrier is the canonical
+#     case). Each entry is hash-locked; any drift on disk fails EMB-003
+#     blocking. The carrier CR is the audit record; an audit record
+#     that cannot say what it removed protects nobody.
+#
+#   false_positives
+#     Path -> pattern entries that suppress EMB-001 hits that match
+#     a documented false positive (e.g. the Python variable name `sid`
+#     in section-id iterators, documented in CR-BP-TMF-EMBARGO section
+#     3). Each pattern must be a compiled regex; EMB-004 fires (advisory)
+#     if a registered pattern matches no current content.
+#
+# Allowlist changes require a CR (the gate enforces hash-locked integrity
+# under EMB-003; adding a new sealed file or false-positive is a
+# structural change that mutates the conformance surface).
+#
+# Authoritative reference: CR-BP-112 (2026-10-12).
+# =============================================================================
+
+version: 1
+
+# Files permitted to contain embargoed-term mentions by design.
+# Each is hash-locked under EMB-003; drift is blocking.
+sealed_files:
+  - path: change-requests/CR-BP-TMF-EMBARGO-tmforum-reference-strip.md
+    sha256: c21202a6ca1b86ff5dd72b2251d2fc3fe7756197ee04085056ac5cff59aa595c
+    rationale: >-
+      Sealed historical carrier (CR-BP-TMF-EMBARGO, 2026-09-22 strip).
+      The one file allowed to enumerate what was removed; an audit
+      record that cannot say what it removed protects nobody. Its
+      content is hash-locked; substantive edits invalidate EMB-003.
+      Renaming or deletion is forbidden (breaks CR-META-006 filename
+      to id matching; destroys the audit record of what was removed).
+  - path: scripts/check_reference_embargo.py
+    sha256: 045b9485a74887a3ae2689150db3dd9217fd8955cc217967ad91482179d8fa90
+    rationale: >-
+      The gate itself. The term list is part of the gate definition
+      (EMBARGOED_TERMS / TERM_PATTERNS); the gate also names the
+      token-class 2 mask (CR-BP-TMF-EMBARGO / TMF-EMBARGO) which
+      contains the literal `tmf` substring. These mentions are
+      definition sites; the gate cannot audit itself out of
+      existence. Sealing the file as an allowlist entry puts it
+      behind EMB-003 (drift is blocking) without exempting its
+      substantive content. Renaming the script breaks the CI
+      workflow wiring; deletion breaks the gate.
+  - path: change-requests/CR-BP-112-independent-authorship-determination.md
+    sha256: 57076841161b2658fb9610af08cbc4c1b74b1121594ca9c357374373939e8ae8
+    rationale: >-
+      The carrier CR. Section 3 enumerates the term list and the
+      sealed-file allowlist; section 4 names the post-strip leak
+      files. These mentions are documentation sites; the CR
+      cannot describe the embargo without naming what is
+      embargoed. Sealing the file as an allowlist entry puts
+      it behind EMB-003. Carrier-CR edits invalidate EMB-003
+      and require a new CR.
+  - path: tests/test_check_reference_embargo.py
+    sha256: 96facdb5965147fd1c3c4c27323ae0bdf654af020ad4c58bb9008354a788b44c
+    rationale: >-
+      The EMB-001..004 test fixture file. Test cases embed the
+      term names (e.g. `tmforum` in fixture strings) by design;
+      the gate cannot audit its own test fixtures. Sealing the
+      file as an allowlist entry puts it behind EMB-003. Test
+      additions invalidate EMB-003 and require a new allowlist
+      SHA bump (CR-level event caught by `git diff` review).
+  - path: reconciliation/reference-embargo-allowlist.yaml
+    sha256: SELF  # The allowlist's hash is content-dependent on the hashes it records; the gate exempts the self-reference (see scripts/check_reference_embargo.py EMB-003 logic). The token literal `SELF` is a sentinel that the gate treats as a wildcard match.
+
+# Path -> pattern false-positive registry. EMB-001 hits matching a
+# registered pattern on the line are suppressed; EMB-004 fires
+# (advisory) if a registered pattern matches no current content.
+#
+# Seeded with the 7 known Python variable-name `sid` (section id)
+# false positives documented in CR-BP-TMF-EMBARGO section 3.
+false_positives:
+  - path: scripts/generate_readmes.py
+    pattern: '\bsid\b'
+    rationale: >-
+      Python variable name (section-id iterator) in README generator;
+      `sid` is the local name for the section key, unrelated to the
+      embargoed framework's SID concept. (CR-BP-TMF-EMBARGO section 3.)
+  - path: scripts/check_l0_l1_cardinality.py
+    pattern: '\bsid\b'
+    rationale: >-
+      Python variable name (section-id local in scope-writer helper);
+      unrelated to the embargoed framework's SID concept. (CR-BP-TMF-EMBARGO
+      section 3.)
+  - path: tests/test_generate_readmes.py
+    pattern: '\bsid\b'
+    rationale: >-
+      Python variable name (test fixture section-id iterator); unrelated
+      to the embargoed framework's SID concept. (CR-BP-TMF-EMBARGO
+      section 3.)
+  - path: tests/test_check_reference_embargo.py
+    pattern: '\bsid\b'
+    rationale: >-
+      Python variable name in EMB-001 test fixtures (sid == sealed
+      file id label, etc.); unrelated to the embargoed framework's
+      SID concept. Added under CR-BP-112.
+  - path: tests/test_check_documentation_profile.py
+    pattern: '\bsid\b'
+    rationale: >-
+      Python variable name (test fixture section-id iterator); unrelated
+      to the embargoed framework's SID concept. (CR-BP-TMF-EMBARGO
+      section 3.)
+  - path: scripts/check_reference_embargo.py
+    pattern: '\bsid\b'
+    rationale: >-
+      Python variable name in the EMB-001 false-positive registry
+      (sid == sealed file id label, etc.); unrelated to the embargoed
+      framework's SID concept. Added under CR-BP-112.
+  - path: tests/test_check_reference_embargo.py
+    pattern: '\bsid\b'
+    rationale: >-
+      Python variable name in EMB-001 test fixtures; unrelated to the
+      embargoed framework's SID concept. Added under CR-BP-112.

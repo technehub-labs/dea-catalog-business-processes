@@ -278,6 +278,16 @@ jobs:
         if: steps.check.outputs.skip != 'true'
         run: python scripts/check_id_system.py --strict
 
+      - name: Run Reference Embargo gate (CR-BP-112; EMB-001..004)
+        if: steps.check.outputs.skip != 'true'
+        # New blocking gate (CR-BP-112, 2026-10-12). Enforces the
+        # user directive 2026-09-22 (eaojnr): no reference to the
+        # embargoed framework may re-enter the catalog. Hash-locked
+        # sealed-file allowlist; the carrier CR is the audit record.
+        # Wired in as a blocking step immediately after the ID System
+        # gate (its sibling forward-going conformance gate).
+        run: python scripts/check_reference_embargo.py --strict
+
       - name: Run ID System coherence gate (CR-BP-mv1; IDM-008, PR-scoped)
         if: steps.check.outputs.skip != 'true'
         run: |

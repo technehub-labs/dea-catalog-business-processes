@@ -16,7 +16,7 @@ This CR closes the retro-fit programme in two surgical moves:
 
 1. **Validator script patch** (1 file, additive): admit three pre-existing CR naming patterns that pre-date the CR-BP-16 S16 convention:
    - `CR-BP-SPEC-<UPPER>` (specialization carrier; CR-BP-SPEC-BP-01)
-   - `CR-BP-TMF-EMBARGO` (cross-cutting embargo compliance carrier; CR-BP-TMF-EMBARGO-tmforum-reference-strip)
+   - `CR-BP-TMF-EMBARGO` (cross-cutting embargo compliance carrier; id token stands; substantive term masked by `scripts/check_reference_embargo.py`; carrier filename is sealed and hash-locked under CR-BP-112)
    - `CR-<UPPER>(-<UPPER/digits>)*-<digits>` (cross-repo CRs co-located by convention; CR-CATALOG-STRUCT-NN, CR-ECF-CG-NNN)
 2. **CR-META retro-fit** (6 files): add missing Status / Layer / Owner to 5 historical CRs that pre-date the S21 metadata schema, and correct the Status value of CR-BP-mv1 (was `"Merged (PR #149)"`; not in approved set; changed to `"Accepted"`).
 3. **Companion-to rephrasing** (1 file): CR-BP-13 had `**Companion to**: CR-CATALOG-STRUCT-02 (...)` which the `CR_REF_PATTERN` did not match. Added an intra-repo `CR-BP-11` self-anchor plus prose explaining the cross-repo reference; cross-repo refs are documented in prose until CR-META-005 is extended to admit them structurally.

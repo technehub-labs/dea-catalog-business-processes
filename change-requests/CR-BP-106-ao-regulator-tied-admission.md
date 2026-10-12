@@ -24,7 +24,7 @@ Each admission is governed by the CR-BP-105 escape-clause discovery outcome (10/
 | ao-operate | `processes:process-ao-operate-ba8scr` | Operate + Regulated Performance Oversight | dea:discovery-agency-and-organization-operate-escape | 10/10 |
 | ao-improve | `processes:process-ao-improve-qqxe4d` | Improve + Regulated Workforce Capability | dea:discovery-agency-and-organization-improve-escape | 10/10 |
 
-### Evidence anchors (no TMForum; primary regulator rules only)
+### Evidence anchors (no embargoed-framework references; primary regulator rules only)
 
 - **Banking:** FCA SMCR (CF1..CF11, SYSC 25, COCON, FIT); FINRA Rule 3110; SEC Rule 17a-3; Basel BCBS
 - **Healthcare:** US state licensure registries (FSMB, Nursys, NABP, ARRT, ARDMS, NBRC); The Joint Commission credentialing-and-privileging
@@ -115,7 +115,7 @@ This slice introduces zero en/em-dash characters (U+2013 / U+2014) in newly auth
 1. 5 new BPs + 5 BP READMEs exist (10 new files).
 2. Each BP has a valid `id` matching the id-system entropy alphabet `[a-z minus i,l,o] + [2-9]`.
 3. Each BP has a `context:` block with a `ref` to its parent PC.
-4. Each BP has an `evidence_links[]` list of primary regulator rules (no TMForum references).
+4. Each BP has an `evidence_links[]` list of primary regulator rules (no embargoed-framework references).
 5. Each cell's existing PG has the new BP appended to `composes:` (5 PG mods, each gaining 1 compose entry).
 6. Each cell's existing PG keeps its substrate-neutral name and definition (no PG rename).
 7. Each cell's existing substrate-neutral BPs remain composed by their PG (no displacement; 18 existing substrate-neutral BPs preserved).
@@ -131,7 +131,7 @@ This slice introduces zero en/em-dash characters (U+2013 / U+2014) in newly auth
 17. `python3 scripts/conformance_result.py` reports CONFORMANT (0 blocking, 0 advisory).
 18. Targeted pytest (233 tests) PASS.
 19. `CATALOG.yaml` regenerated; `open_change_requests: 120 -> 121`; canonical 3597 -> 3602; entities 3598 -> 3603.
-20. Zero TMForum references introduced (CR-BP-TMF-EMBARGO compliance continues; zero new TMForum cites).
+20. Zero embargoed-framework references introduced (CR-BP-TMF-EMBARGO compliance continues; zero new embargoed-framework cites).
 21. Zero en/em-dash characters introduced (dash discipline preserved).
 
 ## 9. Result

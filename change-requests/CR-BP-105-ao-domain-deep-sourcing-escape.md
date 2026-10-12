@@ -90,7 +90,7 @@ After this slice lands:
 7. `CATALOG.yaml` regenerated; `open_change_requests` 119 -> 120.
 8. No entity record modified; no id changes.
 9. Each record's evidence.sources references primary regulator rules or guidance (not vendor SDO catalogues).
-10. Zero TMForum references introduced (CR-BP-TMF-EMBARGO compliance continues; no new TMForum cites).
+10. Zero embargoed-framework references introduced (CR-BP-TMF-EMBARGO compliance continues; no new embargoed-framework cites).
 
 ## 8. Result
 
