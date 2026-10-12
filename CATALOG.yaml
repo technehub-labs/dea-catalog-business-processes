@@ -5,7 +5,7 @@ catalog:
     canonical: 3722
     entities: 3723
     open_change_requests: 125
-    research_files: 334
+    research_files: 339
     retired: 1
   cross_cutting:
     change_requests: change-requests/
@@ -7494,7 +7494,7 @@ catalog:
     last_modified: '2026-10-12'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/processes-process-ao-build-9my4jr.yaml
-    research_count: 1
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -7538,7 +7538,7 @@ catalog:
     last_modified: '2026-10-12'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/processes-process-ao-conceive-pnrhem.yaml
-    research_count: 1
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -7571,7 +7571,7 @@ catalog:
     last_modified: '2026-10-12'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/processes-process-ao-design-2fkvhx.yaml
-    research_count: 1
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -7648,7 +7648,7 @@ catalog:
     last_modified: '2026-10-12'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/processes-process-ao-improve-qqxe4d.yaml
-    research_count: 1
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
@@ -7703,7 +7703,7 @@ catalog:
     last_modified: '2026-10-12'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/processes-process-ao-operate-ba8scr.yaml
-    research_count: 1
+    research_count: 2
     retired_count: 0
     state: canonical
     type: Process
