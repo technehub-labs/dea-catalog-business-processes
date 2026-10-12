@@ -40,7 +40,7 @@ sealed_files:
       Renaming or deletion is forbidden (breaks CR-META-006 filename
       to id matching; destroys the audit record of what was removed).
   - path: scripts/check_reference_embargo.py
-    sha256: 045b9485a74887a3ae2689150db3dd9217fd8955cc217967ad91482179d8fa90
+    sha256: ce45e381bcf0ab655d02e0707ac1d7e6982c5741a062581044337f561cf5bf82
     rationale: >-
       The gate itself. The term list is part of the gate definition
       (EMBARGOED_TERMS / TERM_PATTERNS); the gate also names the

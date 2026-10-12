@@ -107,10 +107,13 @@ SCAN_EXTENSIONS: tuple[str, ...] = (".md", ".yaml", ".yml", ".json", ".py", ".sh
 # Paths to skip entirely (the strip's sealed carrier is the one
 # exception; the rest of these carry pre-strip history that the
 # CR-BP-TMF-EMBARGO acceptance criteria explicitly excludes from the
-# forward-going gate).
+# forward-going gate). `.metaframework/` is the CI workflow's scratch
+# checkout of the dea-metaframework repo (ci.yml "Fetch catalog index
+# machinery" step); it is never catalog content and exists only in CI.
 SKIP_PATH_PREFIXES: tuple[str, ...] = (
     ".git/",
     ".venv/",
+    ".metaframework/",
     "__pycache__/",
     "node_modules/",
     "01_plan/",
