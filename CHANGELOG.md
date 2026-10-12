@@ -6,6 +6,10 @@ All notable changes to this repository are documented here. Format follows
 
 ## [Unreleased]
 
+### CR-BP-107: CR-META Legacy Retro-Fit (Validator + 9 Historical CRs)
+
+Single-PR retro-fit programme closing the long-running `validate` workflow CR-META failures (21 findings across 9 CR files since at least 2026-09-22). Two moves: (1) extend `scripts/check_cr_metadata.py` to admit three pre-existing CR naming patterns (CR-BP-SPEC-*, CR-BP-TMF-EMBARGO, and cross-repo CR-<UPPER>-<digits>); (2) add missing Status / Layer / Owner metadata to 5 historical CRs (CR-BP-02, -03A, -04, -SPEC-BP-01, -ECF-CG-004) and correct the Status value of CR-BP-mv1. CR-BP-13's `**Companion to**` is rephrased to include an intra-repo `CR-BP-11` anchor plus prose explaining the cross-repo reference. No entity-record changes. No `CATALOG.yaml` regeneration. Posture: `check_cr_metadata.py --strict` reports `CONFORMANT` (0 new, 0 legacy findings); `--self-test` PASS. Carrier: `change-requests/CR-BP-107-cr-meta-legacy-retrofit.md`.
+
 ### CR-BP-106: AgencyAndOrganization Regulator-Tied Admission Tranche (5 Cells, Combined)
 
 Combined single-PR admission of the 5 regulator-tied Business Processes at the AgencyAndOrganization x {Conceive, Design, Build, Operate, Improve} ECF coordinates, admitted under the CR-BP-105 escape-clause discovery outcome (10/10, ADMIT-CANONICAL recommendation) under the CR-BP-62 method. 5 PC replacements + 5 PG replacements + 5 new BPs + 5 BP READMEs = 20 new/modified files:

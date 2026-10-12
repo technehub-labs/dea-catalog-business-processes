@@ -1,8 +1,8 @@
 # CR-BP-mv1: Entity Storage and ID System Migration (Org-Wide, This Repo First)
 
-**Status**: Merged (PR #149)
+**Status**: Accepted
 **Layer**: Process Catalog
-**Owner**: Coder (for eaojnr)
+**Owner**: eaojnr
 **Date**: 2026-09-20
 **Carrier**: Reconnaissance / Architectural Reconciliation slice. Establishes the org-wide id system and entity storage layout as the canonical contract for all DEA catalog repos, and migrates this repo (dea-catalog-business-processes) to the new contract.
 **Depends on**: CR-BP-98 (Task schema + TASK-001..005 validator), CR-BP-102 (L4 Task decomposition pipeline; landed 2026-09-19, PR #146; produced 2,800 templated Tasks across 49 cells), CR-BP-L4-02 (P&R enrichment; landed 2026-09-20, PR #147), CR-BP-L4-03 (G&E enrichment; landed 2026-09-20, PR #148)

@@ -71,11 +71,19 @@ def _normalize_status(value: str) -> str:
 #   CR-BP-mvN                 (structural migration carrier: CR-BP-mv1)
 #   CR-BP-mvN-slug            (migration carrier + slug)
 CR_NUMBER_PATTERN = re.compile(
-    r"^CR-BP-(?:\d+(?:[a-zA-Z](?:\.\d+)*)?(?:-(?:EXT-\d+[a-zA-Z]?|[a-z0-9]+))*|"
-    r"L\d+-\d+[a-zA-Z]?(?:-(?:[a-z0-9]+))*|"
-    r"mv\d+(?:-[a-z0-9]+)*)$"
+    r"^CR-(?:BP-(?:\d+(?:[a-zA-Z](\.\d+)*)?(?:-(?:EXT-\d+[a-zA-Z]?|[a-z0-9]+))*|"
+    r"L\d+-\d+[a-zA-Z]?(?:-[a-z0-9]+)*|"
+    r"mv\d+(?:-[a-z0-9]+)*|"
+    r"SPEC-[A-Z0-9]+(?:-[a-z0-9]+)*|"
+    r"TMF-EMBARGO(?:-[a-z0-9]+)*)|"
+    r"[A-Z]+(?:-[A-Z0-9]+)*-\d+(?:-[a-z0-9]+)*)$"
 )
-CR_REF_PATTERN = re.compile(r"CR-BP-(?:\d+[a-zA-Z]?(?:\.\d+)*|L\d+-\d+[a-zA-Z]?|mv\d+)")
+# CR reference pattern admits intra-repo CR-BP-NN refs plus the structural
+# carriers (CR-BP-SPEC-*, CR-BP-TMF-EMBARGO) and a generic
+# CR-<UPPER>-<digits> pattern for cross-repo CR refs (CR-CATALOG-STRUCT-NN,
+# CR-ECF-CG-NNN, etc.). Per CR-BP-107 retro-fit; pre-dates the CR-BP-16 S16
+# convention.
+CR_REF_PATTERN = re.compile(r"CR-BP-(?:\d+[a-zA-Z]?(\.\d+)*|L\d+-\d+[a-zA-Z]?|mv\d+|SPEC-[A-Z0-9]+|TMF-EMBARGO)|CR-[A-Z]+-[A-Z0-9]+")
 # Match the metadata line. Two conventions are admitted:
 #   1. "**Key**: value" (canonical; colon outside bold)
 #   2. "**Key:** value" (legacy / Github-issues style; colon inside)

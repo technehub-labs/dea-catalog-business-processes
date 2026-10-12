@@ -1,3 +1,9 @@
+**Status**: Accepted
+**Layer**: Cross-cutting (catalog conformance)
+**Owner**: eaojnr
+**Date**: 2025-09 (historic; landed pre-2026)
+**Retro-fit note (CR-BP-107)**: Status / Layer / Owner added retroactively per CR-BP-107 retro-fit programme. The CR is a cross-repo CR (declarative from CR-ECF-CG-004) co-located in this repo's change-requests/ by convention; metadata is added for validator compliance without rewriting the original content.
+
 # CR-ECF-CG-004: Business Process Catalog Conformance
 
 > **Layout note (CR-BP-mv1, 2026-09-20):** This CR was authored against the

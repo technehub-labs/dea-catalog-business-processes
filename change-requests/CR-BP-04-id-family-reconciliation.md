@@ -1,3 +1,9 @@
+**Status**: Accepted
+**Layer**: L2 (id-family reconciliation)
+**Owner**: eaojnr
+**Date**: 2025-09 (historic; landed pre-2026)
+**Retro-fit note (CR-BP-107)**: Status / Layer / Owner added retroactively per CR-BP-107 retro-fit programme. The CR is a historical artefact authored before the S21 metadata schema; metadata is added for validator compliance without rewriting the original content.
+
 # CR-BP-04: Business Process Identity & ID-Family Reconciliation
 
 > **Layout note (CR-BP-mv1, 2026-09-20):** This CR was authored against the

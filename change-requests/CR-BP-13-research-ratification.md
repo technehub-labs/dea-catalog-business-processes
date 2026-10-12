@@ -5,8 +5,13 @@
 **Owner**: TechNeHub Labs
 **Depends on**: CR-BP-11 (49-coordinate L1 disposition register; merged),
 CR-BP-12 (L1 Process Group profile/schema; merged)
-**Companion to**: CR-CATALOG-STRUCT-02 (process catalog adoption; this CR
-flips that row from "Proposed" to "Merged" in `change-requests/README.md`)
+**Companion to**: CR-BP-11 (L1 disposition register; this CR ratifies the
+research artefacts against that register), CR-CATALOG-STRUCT-02 (cross-repo;
+process catalog adoption; this CR flips that row from "Proposed" to
+"Merged" in `change-requests/README.md`).
+Validator note: the CR-META-005 CR_REF_PATTERN matches `CR-BP-NN` intra-repo
+refs; the cross-repo `CR-CATALOG-STRUCT-NN` companion is documented in prose
+until CR-META-005 is extended to admit cross-repo CR patterns.
 
 ## What this CR is
 

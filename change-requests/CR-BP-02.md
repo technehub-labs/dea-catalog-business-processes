@@ -1,4 +1,10 @@
 
+**Status**: Accepted
+**Layer**: L0 (Process Context)
+**Owner**: eaojnr
+**Date**: 2025-09 (historic; landed pre-2026)
+**Retro-fit note (CR-BP-107)**: Status / Layer / Owner added retroactively per CR-BP-107 retro-fit programme. The CR is a historical artefact authored before the S21 metadata schema; metadata is added for validator compliance without rewriting the original content.
+
 > **Layout note (CR-BP-mv1, 2026-09-20):** This CR was authored against the
 > pre-migration entity layout (`entities/v1-alpha/dea:*`, `contexts/v1-alpha/`)
 > and the legacy `dea:*` id family, and may reference the pre-rename repo name
