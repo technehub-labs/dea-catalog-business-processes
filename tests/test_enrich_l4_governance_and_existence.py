@@ -10,8 +10,8 @@ Covers:
   - Definition / trigger / outcome / responsibility / boundary.{inclusions,
     exclusions} fields populated on every Task.
   - Live-run validator conformance (check_task_model.py stays CONFORMANT,
-    0 findings, 2800 records).
-  - Idempotence: running the generator twice produces byte-identical output.
+    0 findings, 2900 records).
+   - Idempotence: running the generator twice produces byte-identical output.
   - Scope filter: --scope SUFFIX restricts generation to a subset.
 """
 from __future__ import annotations
@@ -167,14 +167,15 @@ def test_live_catalog_count_per_stage():
 
 
 def test_live_run_check_task_model_conformant():
-    """The L4 Task validator must report CONFORMANT, 0 findings, 2800 records
-    after the enrichment lands."""
+    """The L4 Task validator must report CONFORMANT, 0 findings, 2900 records
+    after the enrichment lands (CR-BP-111 added 100 Tasks for the A&O
+    regulator-tied BPs that came in via CR-BP-106)."""
     result = subprocess.run(
         [sys.executable, "scripts/check_task_model.py"],
         cwd=ROOT, capture_output=True, text=True, timeout=180,
     )
     out = (result.stdout or "") + (result.stderr or "")
-    assert "Records checked:  2800" in out, f"Count drift: {out}"
+    assert "Records checked:  2900" in out, f"Count drift: {out}"
     assert "Findings:         0" in out, f"Findings not 0: {out}"
     assert "CONFORMANT" in out, f"Not conformant: {out}"
 

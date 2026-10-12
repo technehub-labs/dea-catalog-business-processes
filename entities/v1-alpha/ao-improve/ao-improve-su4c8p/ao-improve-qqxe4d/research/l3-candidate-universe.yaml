@@ -1,0 +1,61 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-111
+status: decomposed
+parent_business_process: processes:process-ao-improve-qqxe4d
+candidates:
+- id: processes:activity-ao-improve-f2r6t4
+  name: Execute Regulator-Mandated Remediation
+  classification: Activity
+  standalone_executability: FAIL
+  resource_dedication: FAIL
+  cohesion_score: 9
+  bounded_by: scope.includes of parent BP processes:process-ao-improve-qqxe4d
+  evidence:
+  - Parent BP trigger and outcome text (CR-BP-32 section 5; L2 criteria)
+  - CR-BP-111 L3 decomposition tranche carrier CR
+  rationale: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent
+    work shares a single execute regulator-mandated remediation concern, one input
+    class, and one output (the execute regulator-mandated remediation record on the
+    regulated personnel record).
+- id: processes:activity-ao-improve-k9w5p8
+  name: Run Fit-And-Proper Re-Assessment Cycle
+  classification: Activity
+  standalone_executability: FAIL
+  resource_dedication: FAIL
+  cohesion_score: 9
+  bounded_by: scope.includes of parent BP processes:process-ao-improve-qqxe4d
+  evidence:
+  - Parent BP trigger and outcome text (CR-BP-32 section 5; L2 criteria)
+  - CR-BP-111 L3 decomposition tranche carrier CR
+  rationale: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent
+    work shares a single run fit-and-proper re-assessment cycle concern, one input
+    class, and one output (the run fit-and-proper re-assessment cycle record on the
+    regulated personnel record).
+- id: processes:activity-ao-improve-v3h8k1
+  name: Notify Continuing Supervisor Of Improvement
+  classification: Activity
+  standalone_executability: FAIL
+  resource_dedication: FAIL
+  cohesion_score: 9
+  bounded_by: scope.includes of parent BP processes:process-ao-improve-qqxe4d
+  evidence:
+  - Parent BP trigger and outcome text (CR-BP-32 section 5; L2 criteria)
+  - CR-BP-111 L3 decomposition tranche carrier CR
+  rationale: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent
+    work shares a single notify continuing supervisor of improvement concern, one
+    input class, and one output (the notify continuing supervisor of improvement record
+    on the regulated personnel record).
+- id: processes:activity-ao-improve-x7m4n2
+  name: Run Regulator-Mandated Recurrent Training
+  classification: Activity
+  standalone_executability: FAIL
+  resource_dedication: FAIL
+  cohesion_score: 9
+  bounded_by: scope.includes of parent BP processes:process-ao-improve-qqxe4d
+  evidence:
+  - Parent BP trigger and outcome text (CR-BP-32 section 5; L2 criteria)
+  - CR-BP-111 L3 decomposition tranche carrier CR
+  rationale: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent
+    work shares a single run regulator-mandated recurrent training concern, one input
+    class, and one output (the run regulator-mandated recurrent training record on
+    the regulated personnel record).

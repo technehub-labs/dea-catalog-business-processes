@@ -115,7 +115,7 @@ def test_cli_live_run_returns_conformant():
     assert result.returncode == 0, result.stdout + result.stderr
     assert "Execution Boundary (CR-BP-33; EXE-001..010): CONFORMANT" in result.stdout
     # CR-BP-mv1: containment-tree walk now covers PCs + Tasks too (740 -> 3598)
-    assert "Records checked:   3598" in result.stdout
+    assert "Records checked:   3718" in result.stdout
     assert "Opted-in (with Workflow refs): 0" in result.stdout
     assert "Findings:          0" in result.stdout
 
@@ -125,7 +125,7 @@ def test_cli_json_shape():
     assert result.returncode == 0, result.stdout + result.stderr
     data = json.loads(result.stdout)
     assert data["verdict"] == "CONFORMANT"
-    assert data["record_count"] == 3598  # CR-BP-mv1: full-tree coverage
+    assert data["record_count"] == 3718  # CR-BP-mv1: full-tree coverage; CR-BP-111: +120 (20 Activities + 100 Tasks)
     assert data["opted_in_record_count"] == 0
     assert data["finding_count"] == 0
     rule_ids = {r["id"] for r in data["rules"]}

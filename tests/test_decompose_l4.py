@@ -198,15 +198,15 @@ def test_live_decomposition_pass_validators():
     # Count Tasks after a live run (assuming the working tree has been
     # decomposed; this test runs in the post-decomposition state).
     task_files = list(ENTITY_ROOT.rglob("processes-task-*.yaml"))
-    assert len(task_files) == 2800, (
-        f"Expected 2,800 Task files after live run, got {len(task_files)}"
+    assert len(task_files) == 2900, (
+        f"Expected 2,900 Task files after live run (CR-BP-111: +100), got {len(task_files)}"
     )
     # Run the Task validator.
     result = subprocess.run(
         [sys.executable, "scripts/check_task_model.py"],
         capture_output=True, text=True, cwd=str(REPO_ROOT),
     )
-    assert "Records checked:  2800" in result.stdout
+    assert "Records checked:  2900" in result.stdout
     assert "Findings:         0" in result.stdout
     # Run the architectural regression validator.
     ar = subprocess.run(

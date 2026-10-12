@@ -1,0 +1,61 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-111
+status: decomposed
+parent_business_process: processes:process-ao-design-2fkvhx
+candidates:
+- id: processes:activity-ao-design-jbf2v9
+  name: Catalogue Regulator-Tied Role Entries
+  classification: Activity
+  standalone_executability: FAIL
+  resource_dedication: FAIL
+  cohesion_score: 9
+  bounded_by: scope.includes of parent BP processes:process-ao-design-2fkvhx
+  evidence:
+  - Parent BP trigger and outcome text (CR-BP-32 section 5; L2 criteria)
+  - CR-BP-111 L3 decomposition tranche carrier CR
+  rationale: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent
+    work shares a single catalogue regulator-tied role entries concern, one input
+    class, and one output (the catalogue regulator-tied role entries record on the
+    regulated personnel record).
+- id: processes:activity-ao-design-v8r5n2
+  name: Define Continuing-Supervisor Notification Path
+  classification: Activity
+  standalone_executability: FAIL
+  resource_dedication: FAIL
+  cohesion_score: 9
+  bounded_by: scope.includes of parent BP processes:process-ao-design-2fkvhx
+  evidence:
+  - Parent BP trigger and outcome text (CR-BP-32 section 5; L2 criteria)
+  - CR-BP-111 L3 decomposition tranche carrier CR
+  rationale: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent
+    work shares a single define continuing-supervisor notification path concern, one
+    input class, and one output (the define continuing-supervisor notification path
+    record on the regulated personnel record).
+- id: processes:activity-ao-design-wnqz3k
+  name: Align Competency Framework To Continuing-Supervision
+  classification: Activity
+  standalone_executability: FAIL
+  resource_dedication: FAIL
+  cohesion_score: 9
+  bounded_by: scope.includes of parent BP processes:process-ao-design-2fkvhx
+  evidence:
+  - Parent BP trigger and outcome text (CR-BP-32 section 5; L2 criteria)
+  - CR-BP-111 L3 decomposition tranche carrier CR
+  rationale: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent
+    work shares a single align competency framework to continuing-supervision concern,
+    one input class, and one output (the align competency framework to continuing-supervision
+    record on the regulated personnel record).
+- id: processes:activity-ao-design-x9k4m7
+  name: Define Fitness-And-Propriety Assessment Regime
+  classification: Activity
+  standalone_executability: FAIL
+  resource_dedication: FAIL
+  cohesion_score: 9
+  bounded_by: scope.includes of parent BP processes:process-ao-design-2fkvhx
+  evidence:
+  - Parent BP trigger and outcome text (CR-BP-32 section 5; L2 criteria)
+  - CR-BP-111 L3 decomposition tranche carrier CR
+  rationale: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent
+    work shares a single define fitness-and-propriety assessment regime concern, one
+    input class, and one output (the define fitness-and-propriety assessment regime
+    record on the regulated personnel record).

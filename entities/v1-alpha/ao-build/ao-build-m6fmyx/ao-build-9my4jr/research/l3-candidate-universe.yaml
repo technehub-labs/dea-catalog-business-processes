@@ -1,0 +1,61 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-111
+status: decomposed
+parent_business_process: processes:process-ao-build-9my4jr
+candidates:
+- id: processes:activity-ao-build-f5k1m3
+  name: Screen Candidates Against Sanctions / AML / FCRA / ADA
+  classification: Activity
+  standalone_executability: FAIL
+  resource_dedication: FAIL
+  cohesion_score: 9
+  bounded_by: scope.includes of parent BP processes:process-ao-build-9my4jr
+  evidence:
+  - Parent BP trigger and outcome text (CR-BP-32 section 5; L2 criteria)
+  - CR-BP-111 L3 decomposition tranche carrier CR
+  rationale: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent
+    work shares a single screen candidates against sanctions / aml / fcra / ada concern,
+    one input class, and one output (the screen candidates against sanctions / aml
+    / fcra / ada record on the regulated personnel record).
+- id: processes:activity-ao-build-q7m3k9
+  name: Verify Candidates Against Regulator Licence Registry
+  classification: Activity
+  standalone_executability: FAIL
+  resource_dedication: FAIL
+  cohesion_score: 9
+  bounded_by: scope.includes of parent BP processes:process-ao-build-9my4jr
+  evidence:
+  - Parent BP trigger and outcome text (CR-BP-32 section 5; L2 criteria)
+  - CR-BP-111 L3 decomposition tranche carrier CR
+  rationale: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent
+    work shares a single verify candidates against regulator licence registry concern,
+    one input class, and one output (the verify candidates against regulator licence
+    registry record on the regulated personnel record).
+- id: processes:activity-ao-build-r6h2t8
+  name: Stage Regulated Personnel Record
+  classification: Activity
+  standalone_executability: FAIL
+  resource_dedication: FAIL
+  cohesion_score: 9
+  bounded_by: scope.includes of parent BP processes:process-ao-build-9my4jr
+  evidence:
+  - Parent BP trigger and outcome text (CR-BP-32 section 5; L2 criteria)
+  - CR-BP-111 L3 decomposition tranche carrier CR
+  rationale: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent
+    work shares a single stage regulated personnel record concern, one input class,
+    and one output (the stage regulated personnel record record on the regulated personnel
+    record).
+- id: processes:activity-ao-build-w2n8p4
+  name: Attest Fitness-And-Propriety For Pool
+  classification: Activity
+  standalone_executability: FAIL
+  resource_dedication: FAIL
+  cohesion_score: 9
+  bounded_by: scope.includes of parent BP processes:process-ao-build-9my4jr
+  evidence:
+  - Parent BP trigger and outcome text (CR-BP-32 section 5; L2 criteria)
+  - CR-BP-111 L3 decomposition tranche carrier CR
+  rationale: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent
+    work shares a single attest fitness-and-propriety for pool concern, one input
+    class, and one output (the attest fitness-and-propriety for pool record on the
+    regulated personnel record).

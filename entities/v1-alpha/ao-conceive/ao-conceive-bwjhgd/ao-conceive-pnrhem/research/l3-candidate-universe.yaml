@@ -1,0 +1,61 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-111
+status: decomposed
+parent_business_process: processes:process-ao-conceive-pnrhem
+candidates:
+- id: processes:activity-ao-conceive-cqkwrm
+  name: Declare Regulator-Licensed Role Mix
+  classification: Activity
+  standalone_executability: FAIL
+  resource_dedication: FAIL
+  cohesion_score: 9
+  bounded_by: scope.includes of parent BP processes:process-ao-conceive-pnrhem
+  evidence:
+  - Parent BP trigger and outcome text (CR-BP-32 section 5; L2 criteria)
+  - CR-BP-111 L3 decomposition tranche carrier CR
+  rationale: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent
+    work shares a single declare regulator-licensed role mix concern, one input class,
+    and one output (the declare regulator-licensed role mix record on the regulated
+    personnel record).
+- id: processes:activity-ao-conceive-fmxtqr
+  name: Map Supervised-Training Completion Requirements
+  classification: Activity
+  standalone_executability: FAIL
+  resource_dedication: FAIL
+  cohesion_score: 9
+  bounded_by: scope.includes of parent BP processes:process-ao-conceive-pnrhem
+  evidence:
+  - Parent BP trigger and outcome text (CR-BP-32 section 5; L2 criteria)
+  - CR-BP-111 L3 decomposition tranche carrier CR
+  rationale: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent
+    work shares a single map supervised-training completion requirements concern,
+    one input class, and one output (the map supervised-training completion requirements
+    record on the regulated personnel record).
+- id: processes:activity-ao-conceive-pzmwkl
+  name: Capture Continuing-Supervisor Notification Path
+  classification: Activity
+  standalone_executability: FAIL
+  resource_dedication: FAIL
+  cohesion_score: 9
+  bounded_by: scope.includes of parent BP processes:process-ao-conceive-pnrhem
+  evidence:
+  - Parent BP trigger and outcome text (CR-BP-32 section 5; L2 criteria)
+  - CR-BP-111 L3 decomposition tranche carrier CR
+  rationale: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent
+    work shares a single capture continuing-supervisor notification path concern,
+    one input class, and one output (the capture continuing-supervisor notification
+    path record on the regulated personnel record).
+- id: processes:activity-ao-conceive-vnkqzf
+  name: Document Fitness-And-Propriety Attestation Regime
+  classification: Activity
+  standalone_executability: FAIL
+  resource_dedication: FAIL
+  cohesion_score: 9
+  bounded_by: scope.includes of parent BP processes:process-ao-conceive-pnrhem
+  evidence:
+  - Parent BP trigger and outcome text (CR-BP-32 section 5; L2 criteria)
+  - CR-BP-111 L3 decomposition tranche carrier CR
+  rationale: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent
+    work shares a single document fitness-and-propriety attestation regime concern,
+    one input class, and one output (the document fitness-and-propriety attestation
+    regime record on the regulated personnel record).

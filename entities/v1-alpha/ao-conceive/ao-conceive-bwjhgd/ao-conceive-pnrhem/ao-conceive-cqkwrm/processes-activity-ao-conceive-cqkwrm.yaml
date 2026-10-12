@@ -1,0 +1,90 @@
+id: processes:activity-ao-conceive-cqkwrm
+type: Activity
+name: Declare Regulator-Licensed Role Mix
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: 'The cohesive grouping of work within Conceive Licensed or Regulated Agent
+  Capacity that Declare the regulator-licensed role mix on the regulated personnel
+  record: count and category of regulator-licensed roles, the regulator-tied scope
+  of each, and the alignment between the regulated personnel record and the regulator
+  continuing-supervision framework. Shared concern: regulated-scope declaration. Input:
+  the enterprise agent-capacity strategy; the regulator licensing taxonomy. Output:
+  the committed regulated-scope declaration.'
+belongs_to_business_process: processes:process-ao-conceive-pnrhem
+cohesion_rationale: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6).
+  Constituent work shares a single declare regulator-licensed role mix concern, one
+  input class, and one output (the declare regulator-licensed role mix record on the
+  regulated personnel record).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: AgencyAndOrganization
+    stage: Conceive
+    identifier: ecf:agencyOrganization.conceive
+metadata:
+  established_by: CR-BP-111
+  established_at: '2026-10-12'
+  change_history:
+  - cr: CR-BP-111
+    date: '2026-10-12'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-111 L3
+
+      decomposition tranche for the 5 ADMIT-CANONICAL A&O regulator-tied
+
+      Business Processes (CR-BP-106). Classified per CR-BP-32 section 5
+
+      (fails standalone executability and resource dedication);
+
+      decomposition boundary marker per CR-BP-32 section 12 pending
+
+      Task records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-conceive-cqkwrm-intake, processes:task-ao-conceive-cqkwrm-verify,
+      processes:task-ao-conceive-cqkwrm-transform, processes:task-ao-conceive-cqkwrm-confirm,
+      processes:task-ao-conceive-cqkwrm-record).'
+composes:
+- source_id: processes:activity-ao-conceive-cqkwrm
+  target_id: processes:task-ao-conceive-cqkwrm-intake
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: processes:activity-ao-conceive-cqkwrm
+  target_id: processes:task-ao-conceive-cqkwrm-verify
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: processes:activity-ao-conceive-cqkwrm
+  target_id: processes:task-ao-conceive-cqkwrm-transform
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: processes:activity-ao-conceive-cqkwrm
+  target_id: processes:task-ao-conceive-cqkwrm-confirm
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: processes:activity-ao-conceive-cqkwrm
+  target_id: processes:task-ao-conceive-cqkwrm-record
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.

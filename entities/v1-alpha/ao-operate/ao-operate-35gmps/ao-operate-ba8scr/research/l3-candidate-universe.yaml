@@ -1,0 +1,61 @@
+l3_candidate_universe_version: 0.1.0
+cr: CR-BP-111
+status: decomposed
+parent_business_process: processes:process-ao-operate-ba8scr
+candidates:
+- id: processes:activity-ao-operate-b5v2k9
+  name: Track Continuing-Competence Completion
+  classification: Activity
+  standalone_executability: FAIL
+  resource_dedication: FAIL
+  cohesion_score: 9
+  bounded_by: scope.includes of parent BP processes:process-ao-operate-ba8scr
+  evidence:
+  - Parent BP trigger and outcome text (CR-BP-32 section 5; L2 criteria)
+  - CR-BP-111 L3 decomposition tranche carrier CR
+  rationale: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent
+    work shares a single track continuing-competence completion concern, one input
+    class, and one output (the track continuing-competence completion record on the
+    regulated personnel record).
+- id: processes:activity-ao-operate-j8k5p7
+  name: Annual Fitness-And-Propriety Re-Attestation
+  classification: Activity
+  standalone_executability: FAIL
+  resource_dedication: FAIL
+  cohesion_score: 9
+  bounded_by: scope.includes of parent BP processes:process-ao-operate-ba8scr
+  evidence:
+  - Parent BP trigger and outcome text (CR-BP-32 section 5; L2 criteria)
+  - CR-BP-111 L3 decomposition tranche carrier CR
+  rationale: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent
+    work shares a single annual fitness-and-propriety re-attestation concern, one
+    input class, and one output (the annual fitness-and-propriety re-attestation record
+    on the regulated personnel record).
+- id: processes:activity-ao-operate-q3w6r1
+  name: Track Hours-Of-Work And Rest-Rule Compliance
+  classification: Activity
+  standalone_executability: FAIL
+  resource_dedication: FAIL
+  cohesion_score: 9
+  bounded_by: scope.includes of parent BP processes:process-ao-operate-ba8scr
+  evidence:
+  - Parent BP trigger and outcome text (CR-BP-32 section 5; L2 criteria)
+  - CR-BP-111 L3 decomposition tranche carrier CR
+  rationale: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent
+    work shares a single track hours-of-work and rest-rule compliance concern, one
+    input class, and one output (the track hours-of-work and rest-rule compliance
+    record on the regulated personnel record).
+- id: processes:activity-ao-operate-z4n9m2
+  name: Audit Conduct-Rule Compliance
+  classification: Activity
+  standalone_executability: FAIL
+  resource_dedication: FAIL
+  cohesion_score: 9
+  bounded_by: scope.includes of parent BP processes:process-ao-operate-ba8scr
+  evidence:
+  - Parent BP trigger and outcome text (CR-BP-32 section 5; L2 criteria)
+  - CR-BP-111 L3 decomposition tranche carrier CR
+  rationale: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent
+    work shares a single audit conduct-rule compliance concern, one input class, and
+    one output (the audit conduct-rule compliance record on the regulated personnel
+    record).

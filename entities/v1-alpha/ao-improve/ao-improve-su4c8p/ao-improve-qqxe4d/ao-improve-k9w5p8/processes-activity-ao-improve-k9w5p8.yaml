@@ -1,0 +1,89 @@
+id: processes:activity-ao-improve-k9w5p8
+type: Activity
+name: Run Fit-And-Proper Re-Assessment Cycle
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+definition: 'The cohesive grouping of work within Improve Regulated Workforce Capability
+  that Run the fit-and-proper re-assessment cycle for each regulator-licensed role:
+  SMCR FIT annual re-assessment; state healthcare re-licensure; bar MCLE re-admission;
+  NAIC license renewal; FAA airmen re-certification. Shared concern: fit-and-proper
+  re-assessment. Input: the live role list; the re-assessment calendar. Output: the
+  fit-and-proper re-assessment record.'
+belongs_to_business_process: processes:process-ao-improve-qqxe4d
+cohesion_rationale: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6).
+  Constituent work shares a single run fit-and-proper re-assessment cycle concern,
+  one input class, and one output (the run fit-and-proper re-assessment cycle record
+  on the regulated personnel record).
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: AgencyAndOrganization
+    stage: Improve
+    identifier: ecf:agencyOrganization.improve
+metadata:
+  established_by: CR-BP-111
+  established_at: '2026-10-12'
+  change_history:
+  - cr: CR-BP-111
+    date: '2026-10-12'
+    change: 'Initial L3 Activity entry; lands as part of the CR-BP-111 L3
+
+      decomposition tranche for the 5 ADMIT-CANONICAL A&O regulator-tied
+
+      Business Processes (CR-BP-106). Classified per CR-BP-32 section 5
+
+      (fails standalone executability and resource dedication);
+
+      decomposition boundary marker per CR-BP-32 section 12 pending
+
+      Task records (dea:Task lifecycle: proposed).
+
+      '
+  - cr: CR-BP-102
+    date: '2026-09-19'
+    change: 'L4 decomposition: `decomposition_boundary: l4-reached` replaced with
+      `composes[]` listing 5 Tasks (processes:task-ao-improve-k9w5p8-intake, processes:task-ao-improve-k9w5p8-verify,
+      processes:task-ao-improve-k9w5p8-transform, processes:task-ao-improve-k9w5p8-confirm,
+      processes:task-ao-improve-k9w5p8-record).'
+composes:
+- source_id: processes:activity-ao-improve-k9w5p8
+  target_id: processes:task-ao-improve-k9w5p8-intake
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: processes:activity-ao-improve-k9w5p8
+  target_id: processes:task-ao-improve-k9w5p8-verify
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: processes:activity-ao-improve-k9w5p8
+  target_id: processes:task-ao-improve-k9w5p8-transform
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: processes:activity-ao-improve-k9w5p8
+  target_id: processes:task-ao-improve-k9w5p8-confirm
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.
+- source_id: processes:activity-ao-improve-k9w5p8
+  target_id: processes:task-ao-improve-k9w5p8-record
+  relationship_type: dea:composes
+  direction: source-to-target
+  status: active
+  rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
+    verb-object completion pattern.

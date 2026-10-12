@@ -78,8 +78,9 @@ def test_conformance_report_live_is_level_4():
     )
     # CR-BP-mv1: conformance report now spans the full containment tree
     # (788 pre-migration flat-tree records -> 3,599 post-migration)
-    assert report["total_records"] == 3599
-    assert report["conformance_levels"] == {0: 0, 1: 0, 2: 0, 3: 3, 4: 3596}  # CR-BP-mv1 tree
+    # CR-BP-111: +120 records (20 Activities at L3, 100 Tasks at L4) -> 3,719
+    assert report["total_records"] == 3719
+    assert report["conformance_levels"] == {0: 0, 1: 0, 2: 0, 3: 23, 4: 3696}  # CR-BP-mv1 + CR-BP-111 tree
 
 
 def test_conformance_report_check_passes():

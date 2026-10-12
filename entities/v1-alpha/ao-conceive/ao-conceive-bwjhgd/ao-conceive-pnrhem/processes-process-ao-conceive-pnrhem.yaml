@@ -65,7 +65,11 @@ ecfConformance:
 metadata:
   established_by: CR-BP-106
   established_at: '2026-09-22'
-  activity_references: []
+  activity_references:
+  - processes:activity-ao-conceive-cqkwrm
+  - processes:activity-ao-conceive-vnkqzf
+  - processes:activity-ao-conceive-fmxtqr
+  - processes:activity-ao-conceive-pzmwkl
   change_history:
   - cr: CR-BP-106
     date: '2026-09-22'
@@ -78,3 +82,12 @@ metadata:
       neutral general-case BP at this cell. Evidence base per Cell-Cycle
       escape-clause discovery record dea:discovery-agency-and-organization-conceive-escape (CR-BP-105, PR
       #155). L3 Activity and L4 Task decomposition lands in CR-BP-111 (deferred).
+  - cr: CR-BP-111
+    date: '2026-10-12'
+    change: 'L3 decomposition tranche (CR-BP-111): added metadata.activity_references
+      back-references to the 4 Activity records decomposing this BP. Version
+      unchanged per SIV-004 (additive metadata-only). Activities classified
+      per CR-BP-32 section 5 (fails standalone executability and resource
+      dedication); decomposition boundary marker per CR-BP-32 section 12
+      cleared (each Activity is decomposed into 5 L4 Tasks per the
+      `scripts/decompose_l4.py` 5-phase verb-object completion pattern).'

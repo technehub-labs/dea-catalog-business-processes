@@ -296,8 +296,12 @@ def check_admission(path: Path, root: Path,
         # L3-deposition skill's "extend the allowlist in the same commit"
         # rule was first codified after CR-BP-101, and was missed on the
         # A&O tranche).
+        # CR-BP-111: A&O regulator-tied L3/L4 decomposition tranche (5 BPs x
+        # 4 Activities x 5 Tasks = 100 new records; the decomposition follow-on
+        # to CR-BP-106). Extended the allowlist in the same commit as the
+        # tranche, per the L3-deposition skill's rule.
         _ADMISSION_CR_RE = re.compile(
-            r"^(?:CR-BP-13[a-z]?|CR-BP-19|CR-BP-20|CR-BP-21[a-z]?|CR-BP-03C|CR-BP-64|CR-BP-65|CR-BP-66|CR-BP-67|CR-BP-71|CR-BP-73|CR-BP-75|CR-BP-78|CR-BP-81|CR-BP-82|CR-BP-83|CR-BP-86|CR-BP-101|CR-BP-101a|CR-BP-106)(?:\.\d+)*$"
+            r"^(?:CR-BP-13[a-z]?|CR-BP-19|CR-BP-20|CR-BP-21[a-z]?|CR-BP-03C|CR-BP-64|CR-BP-65|CR-BP-66|CR-BP-67|CR-BP-71|CR-BP-73|CR-BP-75|CR-BP-78|CR-BP-81|CR-BP-82|CR-BP-83|CR-BP-86|CR-BP-101|CR-BP-101a|CR-BP-106|CR-BP-111)(?:\.\d+)*$"
         )
         has_admission = any(
             isinstance(e, dict) and _ADMISSION_CR_RE.match(
