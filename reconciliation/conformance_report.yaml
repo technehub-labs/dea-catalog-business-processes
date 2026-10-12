@@ -2,13 +2,13 @@ schema_version: 1
 report_at_run: CR-BP-16 S23
 report_at_source: scripts/build_conformance_report.py
 catalog_root: /home/hermes/dea-catalog-processes
-total_records: 3599
+total_records: 3604
 conformance_levels:
   0: 0
   1: 0
   2: 0
   3: 3
-  4: 3596
+  4: 3601
 records:
 - id: processes:task-ao-activate-confirm-r33pq9
   kind: Task
@@ -273,6 +273,16 @@ records:
 - id: processes:pc-ao-activate-kusw2u
   kind: Unknown
   path: entities/v1-alpha/ao-activate/processes-pc-ao-activate-kusw2u.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:process-ao-build-9my4jr
+  kind: Entity
+  path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/processes-process-ao-build-9my4jr.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -1050,6 +1060,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: processes:process-ao-conceive-pnrhem
+  kind: Entity
+  path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/processes-process-ao-conceive-pnrhem.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: processes:task-ao-conceive-confirm-umqt6v
   kind: Task
   path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-ruxjvh/ao-conceive-5fytar/ao-conceive-confirm-umqt6v/processes-task-ao-conceive-confirm-umqt6v.yaml
@@ -1563,6 +1583,16 @@ records:
 - id: processes:pc-ao-conceive-wtq4cr
   kind: Unknown
   path: entities/v1-alpha/ao-conceive/processes-pc-ao-conceive-wtq4cr.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:process-ao-design-2fkvhx
+  kind: Entity
+  path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/processes-process-ao-design-2fkvhx.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -3090,6 +3120,16 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: processes:process-ao-improve-qqxe4d
+  kind: Entity
+  path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/processes-process-ao-improve-qqxe4d.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: processes:task-ao-improve-confirm-yr75z3
   kind: Task
   path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-xfh8na/ao-improve-5tzwvk/ao-improve-confirm-yr75z3/processes-task-ao-improve-confirm-yr75z3.yaml
@@ -4103,6 +4143,16 @@ records:
 - id: processes:process-ao-operate-87q5mk
   kind: Entity
   path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-87q5mk/processes-process-ao-operate-87q5mk.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:process-ao-operate-ba8scr
+  kind: Entity
+  path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/processes-process-ao-operate-ba8scr.yaml
   level: 4
   level_breakdown:
     L1_structural: true

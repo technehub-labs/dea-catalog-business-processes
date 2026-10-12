@@ -88,7 +88,9 @@ def test_cli_live_catalog_conformant():
     result = _run(["--strict"])
     assert result.returncode == 0, result.stdout + result.stderr
     assert "CONFORMANT" in result.stdout
-    assert "Records checked:  140" in result.stdout
+    # CR-BP-106 added five regulator-tied Business Processes (one per A&O
+    # x {Conceive, Design, Build, Operate, Improve} cell); prior count was 140.
+    assert "Records checked:  145" in result.stdout
     assert "Findings:         0" in result.stdout
 
 
@@ -97,7 +99,8 @@ def test_cli_json_emits_well_formed_payload():
     assert result.returncode == 0, result.stdout + result.stderr
     payload = json.loads(result.stdout)
     assert payload["verdict"] == "CONFORMANT"
-    assert payload["candidate_count"] == 140
+    # CR-BP-106 added five regulator-tied Business Processes.
+    assert payload["candidate_count"] == 145
     assert payload["finding_count"] == 0
     rule_ids = {r["id"] for r in payload["rules"]}
     assert rule_ids == {"LCM-001", "LCM-002", "LCM-003", "LCM-004", "LCM-005"}

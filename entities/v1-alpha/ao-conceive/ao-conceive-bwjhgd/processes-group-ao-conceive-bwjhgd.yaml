@@ -102,6 +102,23 @@ composes:
     reference: CR-BP-21b.1
     asserted_by: dea-team
     asserted_at: '2026-09-08'
+- source_id: processes:group-ao-conceive-bwjhgd
+  target_id: processes:process-ao-conceive-pnrhem
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: The L2 process is the regulator-tied specialization of the 
+    AgencyAndOrganization x Conceive cell, admitted under the CR-BP-105 
+    escape-clause discovery outcome (ADMIT-CANONICAL recommendation) per 
+    CR-BP-106. Coexists with the substrate-neutral general-case BPs at this 
+    cell.
+  evidence: docs/examples/conceive-licensed-or-regulated-agent-capacity.md
+  provenance:
+    type: discovery
+    reference: CR-BP-106
+    asserted_by: dea-team
+    asserted_at: '2026-09-22'
 process_group_kind: end-to-end
 status: accepted
 lifecycle_status: candidate
@@ -128,7 +145,8 @@ evidence:
 
     '
   strength: E4
-  reference: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+  reference: 
+    entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
 metadata:
   established_by: CR-BP-21b
   established_at: '2026-09-07'
@@ -158,10 +176,19 @@ metadata:
       landing.
 
       '
+  - cr: CR-BP-106
+    date: '2026-09-22'
+    change: Composes edge added for the regulator-tied Conceive Licensed or 
+      Regulated Agent Capacity BP (process-ao-conceive-pnrhem), admitted under 
+      CR-BP-105 escape-clause discovery outcome (ADMIT-CANONICAL). The PG 
+      retains its cell-level substrate-neutral name and definition; the 
+      regulator-tied BP is added to composes without displacing the 
+      substrate-neutral BPs.
 links:
 - rel: change-request
   href: change-requests/CR-BP-21b-agency-organization-landing.md
 - rel: predecessor
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
-  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+  href: 
+    entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml

@@ -1,0 +1,79 @@
+id: processes:process-ao-operate-ba8scr
+name: Operate Regulated Performance Oversight
+type: Process
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+process_intent: manage
+process_type: management
+process_specialization: []
+description: >-
+  Operate the regulator-aligned continuing-compliance oversight of regulator-licensed roles under the enterprise regulated-entity approval authority. The trigger is the regulator-licensed role becoming live on the regulated personnel record. The outcome is regulator-aligned compliance evidence current and auditable on the regulated personnel record: continuing-supervisor notification, conduct-rule compliance (FCA SMCR COCON, FINRA Rule 3110, FAA Part 117, EU AI Act Article 14), fitness-and-propriety annual attestations, hours-of-work and rest-rule compliance, and continuing-competence tracking (state bar MCLE, state healthcare CME, NAIC CE).
+trigger: >-
+  The enterprise is operating regulator-licensed roles whose continuing-supervisor notification obligations, conduct-rule compliance, fitness-and-propriety annual attestations, hours-of-work and rest-rule compliance, and continuing-competence tracking must be maintained on the regulated personnel record throughout the role's live operation period, separate from substrate-neutral agent performance operations.
+outcome: >-
+  The regulator-licensed roles' regulator-aligned compliance evidence is current on the regulated personnel record; continuing-supervisor notification, conduct-rule compliance, fitness-and-propriety annual attestation, hours-of-work and rest-rule compliance, and continuing-competence tracking are current and auditable.
+identity:
+  verb: Operate
+  object: Regulated Performance Oversight
+  scope: enterprise
+  outcome_statement: >-
+    The regulator-tied Regulated Performance Oversight operate work has been carried out
+    at the AgencyAndOrganization x Operate coordinate under the enterprise
+    regulated-entity approval authority. The outcome is recorded on the regulated
+    personnel record with the supervisor-controlled scope, the fitness-and-propriety
+    attestation regime, the supervised-training completion requirements, and the
+    continuing-supervisor notification path documented per the regulator's
+    continuing-supervision framework. Substrate-neutral operate work is
+    excluded. Adjacent lifecycle stages (Conceive / Design / Build / Activate /
+    Operate / Improve / Retire) are excluded.
+  evidence_links:
+  - type: regulation
+    ref: https://www.handbook.fca.org.uk/handbook/COCON/
+  - type: standard
+    ref: https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110
+  - type: regulation
+    ref: https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-117
+  - type: regulation
+    ref: https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-121/subpart-Y
+  - type: regulation
+    ref: https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+  - type: standard
+    ref: https://content.naic.org/cipr-topics/producer-licensing-model-act
+  - type: standard
+    ref: https://www.sra.org.uk/solicitors/standards-regulations/
+  - type: standard
+    ref: https://www.jointcommission.org/en-us/standards/
+context:
+- ref: processes:pc-ao-operate-zfevmp
+relationships:
+- source_id: processes:process-ao-operate-ba8scr
+  relationship_type: serves
+  target_id: ecf:agencyOrganization.operate
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: AgencyAndOrganization
+    stage: Operate
+    identifier: ecf:agencyOrganization.operate
+metadata:
+  established_by: CR-BP-106
+  established_at: '2026-09-22'
+  activity_references: []
+  change_history:
+  - cr: CR-BP-106
+    date: '2026-09-22'
+    change: >-
+      Initial L2 Process entry; the canonical Business Process admitted at the
+      AgencyAndOrganization x Operate coordinate, from the CR-BP-105
+      escape-clause discovery outcome (10/10, ADMIT-CANONICAL recommendation)
+      under the CR-BP-62 method. The admission activates the
+      dea:discovery-agency-and-organization-operate-escape escape rationale and supersedes the substrate-
+      neutral general-case BP at this cell. Evidence base per Cell-Cycle
+      escape-clause discovery record dea:discovery-agency-and-organization-operate-escape (CR-BP-105, PR
+      #155). L3 Activity and L4 Task decomposition lands in CR-BP-111 (deferred).

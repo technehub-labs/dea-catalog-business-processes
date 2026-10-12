@@ -79,6 +79,11 @@ discovery:
     disposition:
       type: ADMIT-CANONICAL
       canonical_process_ref: processes:process-ao-design-<hash> (proposed)
+    admission:
+      status: admitted
+      admitted_as: processes:process-ao-design-2fkvhx
+      admitted_by: CR-BP-106
+      admitted_at: '2026-09-22'
   context_evaluation:
     concerns_identified: true
     candidates_considered: true

@@ -1,0 +1,75 @@
+id: processes:process-ao-design-2fkvhx
+name: Design Regulated Role Architecture
+type: Process
+version: 1.0.0
+lifecycle_status: candidate
+status: candidate
+process_intent: manage
+process_type: management
+process_specialization: []
+description: >-
+  Design the regulator-tied role catalogue and competency framework entries under the enterprise regulated-entity approval authority. The trigger is the decision that the role catalogue will include regulator-licensed roles. The outcome is a regulator-tied role catalogue committed, with each licensed-role entry aligned to its regulator's continuing-supervision framework, its competency and fitness-and-propriety attestation regime documented, its supervised-training completion requirements documented, and its continuing-supervisor notification path documented.
+trigger: >-
+  The enterprise's role catalogue and competency framework include roles whose holders must hold regulator-issued licences or admissions, and the design must align each role's authority, signing capacity, and scope to the regulator's continuing-supervision framework before the role enters Build or Activate.
+outcome: >-
+  The role catalogue carries regulator-tied role entries; each licensed-role entry is aligned to its regulator's continuing-supervision framework, its competency and fitness-and-propriety attestation regime is documented, and the role is ready to enter Build and Activate stages without re-scoping.
+identity:
+  verb: Design
+  object: Regulated Role Architecture
+  scope: enterprise
+  outcome_statement: >-
+    The regulator-tied Regulated Role Architecture design work has been carried out
+    at the AgencyAndOrganization x Design coordinate under the enterprise
+    regulated-entity approval authority. The outcome is recorded on the regulated
+    personnel record with the supervisor-controlled scope, the fitness-and-propriety
+    attestation regime, the supervised-training completion requirements, and the
+    continuing-supervisor notification path documented per the regulator's
+    continuing-supervision framework. Substrate-neutral design work is
+    excluded. Adjacent lifecycle stages (Conceive / Design / Build / Activate /
+    Operate / Improve / Retire) are excluded.
+  evidence_links:
+  - type: regulation
+    ref: https://www.handbook.fca.org.uk/handbook/SYSC/25/Annex1/
+  - type: regulation
+    ref: https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-121/subpart-Y
+  - type: regulation
+    ref: https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+  - type: standard
+    ref: https://www.jointcommission.org/en-us/standards/
+  - type: standard
+    ref: https://content.naic.org/cipr-topics/producer-licensing-model-act
+  - type: standard
+    ref: https://www.sra.org.uk/solicitors/standards-regulations/
+context:
+- ref: processes:pc-ao-design-a4hq2r
+relationships:
+- source_id: processes:process-ao-design-2fkvhx
+  relationship_type: serves
+  target_id: ecf:agencyOrganization.design
+ecfConformance:
+  framework: EnterpriseConceptFramework
+  contractVersion: 1.0.0
+  profile: dea:ecf@1.0.0
+  status: conformant
+  affiliation: inherits-catalog
+  canonicalReferences:
+  - kind: coordinate
+    domain: AgencyAndOrganization
+    stage: Design
+    identifier: ecf:agencyOrganization.design
+metadata:
+  established_by: CR-BP-106
+  established_at: '2026-09-22'
+  activity_references: []
+  change_history:
+  - cr: CR-BP-106
+    date: '2026-09-22'
+    change: >-
+      Initial L2 Process entry; the canonical Business Process admitted at the
+      AgencyAndOrganization x Design coordinate, from the CR-BP-105
+      escape-clause discovery outcome (10/10, ADMIT-CANONICAL recommendation)
+      under the CR-BP-62 method. The admission activates the
+      dea:discovery-agency-and-organization-design-escape escape rationale and supersedes the substrate-
+      neutral general-case BP at this cell. Evidence base per Cell-Cycle
+      escape-clause discovery record dea:discovery-agency-and-organization-design-escape (CR-BP-105, PR
+      #155). L3 Activity and L4 Task decomposition lands in CR-BP-111 (deferred).

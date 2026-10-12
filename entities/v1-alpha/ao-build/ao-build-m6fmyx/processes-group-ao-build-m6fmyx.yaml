@@ -2,7 +2,12 @@ id: processes:group-ao-build-m6fmyx
 type: ProcessGroup
 version: 1.0.0
 name: Agent Acquisition and Onboarding
-definition: 'The bounded Process Group that organises the Business Process responsibilities of acquiring and onboarding agents of all substrates in the AgencyAndOrganization x Build context: sourcing and recruiting human talent, provisioning artificial agents (model deployment, API integration), onboarding and integrating agents, and building the contractor and partner-agent pool. v2.4.0 grounding (domain-grounding.md §3.3, Acquisition and Onboarding sub-concern).
+definition: 'The bounded Process Group that organises the Business Process responsibilities
+  of acquiring and onboarding agents of all substrates in the AgencyAndOrganization
+  x Build context: sourcing and recruiting human talent, provisioning artificial agents
+  (model deployment, API integration), onboarding and integrating agents, and building
+  the contractor and partner-agent pool. v2.4.0 grounding (domain-grounding.md §3.3,
+  Acquisition and Onboarding sub-concern).
 
   '
 process_context: processes:pc-ao-build-pjk4rz
@@ -47,6 +52,22 @@ composes:
     reference: CR-BP-21b.1
     asserted_by: dea-team
     asserted_at: '2026-09-08'
+- source_id: processes:group-ao-build-m6fmyx
+  target_id: processes:process-ao-build-9my4jr
+  relationship_type: composes
+  direction: source-to-target
+  status: active
+  asserted_by: dea-team
+  rationale: The L2 process is the regulator-tied specialization admitted under 
+    the CR-BP-105 escape-clause discovery outcome (ADMIT-CANONICAL 
+    recommendation) per CR-BP-106. Coexists with the substrate-neutral 
+    general-case BPs at this cell.
+  evidence: docs/examples/build-regulated-agent-pool.md
+  provenance:
+    type: discovery
+    reference: CR-BP-106
+    asserted_by: dea-team
+    asserted_at: '2026-09-22'
 process_group_kind: end-to-end
 status: accepted
 lifecycle_status: candidate
@@ -71,7 +92,8 @@ evidence:
 
     '
   strength: E4
-  reference: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+  reference: 
+    entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
 metadata:
   established_by: CR-BP-21b.1
   established_at: '2026-09-08'
@@ -88,10 +110,18 @@ metadata:
       ADR-ECF-002 section 5 / CR-ECF-007.
 
       '
+  - cr: CR-BP-106
+    date: '2026-09-22'
+    change: Composes edge added for the regulator-tied Build Regulated Agent 
+      Pool BP (process-ao-build-9my4jr), admitted under CR-BP-105 escape-clause 
+      discovery outcome (ADMIT-CANONICAL). The PG retains its cell-level 
+      substrate-neutral name and definition; the regulator-tied BP is added to 
+      composes without displacing the substrate-neutral BPs.
 links:
 - rel: change-request
   href: change-requests/CR-BP-21b.1-agency-organization-completion.md
 - rel: predecessor
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
-  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+  href: 
+    entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
