@@ -351,7 +351,7 @@ def _append_change_history(text: str, path: Path) -> str:
     entry_lines = [
         f"{' ' * first_entry_indent}- cr: CR-BP-113",
         f"{' ' * (first_entry_indent + 2)}date: '2026-10-13'",
-        f"{' ' * (first_entry_indent + 2)}summary: {marker}",
+        f"{' ' * (first_entry_indent + 2)}change: {marker}",
     ]
     out = lines[:block_end] + entry_lines + lines[block_end:]
     return "\n".join(out) + ("\n" if text.endswith("\n") else "")

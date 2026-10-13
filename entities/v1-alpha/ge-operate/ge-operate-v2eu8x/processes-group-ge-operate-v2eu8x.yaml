@@ -123,9 +123,6 @@ metadata:
   change_history:
   - cr: CR-BP-13a
     date: '2026-09-05'
-  - cr: CR-BP-113
-    date: '2026-10-13'
-    summary: href targets repaired to post-mv1 layout (CR-BP-113)
     change: 'Initial Process Group record; promoted from the CR-BP-11
 
       49-coordinate register (ratified by CR-BP-13) as part of
@@ -138,6 +135,9 @@ metadata:
     change: 'Added dea:process-operate-enterprise-risk-oversight and dea:process-conduct-assurance-review composes edges (CR-BP-21f.1 GE completion).
 
       '
+  - cr: CR-BP-113
+    date: '2026-10-13'
+    change: href targets repaired to post-mv1 layout (CR-BP-113)
 links:
 - rel: change-request
   href: change-requests/CR-BP-13a-party-and-relationship-admission.md

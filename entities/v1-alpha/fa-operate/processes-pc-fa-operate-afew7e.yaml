@@ -76,7 +76,7 @@ established_at: '2026-09-08'
 change_history:
 - cr: CR-BP-113
   date: '2026-10-13'
-  summary: href targets repaired to post-mv1 layout (CR-BP-113)
+  change: href targets repaired to post-mv1 layout (CR-BP-113)
 - cr: CR-BP-21e
   date: '2026-09-08'
   change: 'Initial Process Context record; promoted from the CR-BP-19

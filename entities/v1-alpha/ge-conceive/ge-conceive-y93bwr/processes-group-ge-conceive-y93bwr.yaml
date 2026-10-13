@@ -110,9 +110,6 @@ metadata:
   change_history:
   - cr: CR-BP-13a
     date: '2026-09-05'
-  - cr: CR-BP-113
-    date: '2026-10-13'
-    summary: href targets repaired to post-mv1 layout (CR-BP-113)
     change: 'Initial Process Group record (id: dea:group-strategy-and-governance-conception);
 
       promoted from the CR-BP-11 49-coordinate register (ratified by CR-BP-13) as
@@ -154,6 +151,9 @@ metadata:
     change: 'Added dea:process-frame-risk-framework-direction composes edge (CR-BP-21f.1 GE completion).
 
       '
+  - cr: CR-BP-113
+    date: '2026-10-13'
+    change: href targets repaired to post-mv1 layout (CR-BP-113)
 links:
 - rel: change-request
   href: change-requests/CR-BP-20-l1-l2-alignment-ecf-v240.md

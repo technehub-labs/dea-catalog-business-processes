@@ -105,9 +105,6 @@ metadata:
   change_history:
   - cr: CR-BP-12
     date: '2026-09-04'
-  - cr: CR-BP-113
-    date: '2026-10-13'
-    summary: href targets repaired to post-mv1 layout (CR-BP-113)
     change: 'Initial Process Group record; promoted from
 
       metadata.group label on dea:process-manage-customer-relationship
@@ -130,6 +127,9 @@ metadata:
       research/l1-candidate-universe.yaml.
 
       '
+  - cr: CR-BP-113
+    date: '2026-10-13'
+    change: href targets repaired to post-mv1 layout (CR-BP-113)
 links:
 - rel: documentation
   href: docs/examples/manage-customer-relationship.md

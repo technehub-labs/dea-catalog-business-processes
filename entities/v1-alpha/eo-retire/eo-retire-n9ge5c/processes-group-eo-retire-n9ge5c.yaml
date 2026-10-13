@@ -92,9 +92,6 @@ metadata:
   change_history:
   - cr: CR-BP-66
     date: '2026-09-14'
-  - cr: CR-BP-113
-    date: '2026-10-13'
-    summary: href targets repaired to post-mv1 layout (CR-BP-113)
     change: 'Initial Process Group record; the third L1 group at an
 
       Activate/Retire coordinate (the first at a Retire coordinate
@@ -104,6 +101,9 @@ metadata:
       evidence-backed discovery outcome under the CR-BP-62 method.
 
       '
+  - cr: CR-BP-113
+    date: '2026-10-13'
+    change: href targets repaired to post-mv1 layout (CR-BP-113)
 links:
 - rel: change-request
   href: change-requests/CR-BP-66-eo-retire-admission.md

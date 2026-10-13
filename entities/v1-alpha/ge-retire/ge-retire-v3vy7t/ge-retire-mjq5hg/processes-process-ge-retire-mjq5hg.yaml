@@ -52,9 +52,6 @@ metadata:
   change_history:
   - cr: CR-BP-78
     date: '2026-09-16'
-  - cr: CR-BP-113
-    date: '2026-10-13'
-    summary: href targets repaired to post-mv1 layout (CR-BP-113)
     change: 'Initial L2 Process entry; the first canonical Business
 
       Process admitted at the GovernanceAndExistence x
@@ -123,6 +120,9 @@ metadata:
       metadata-only).
 
       '
+  - cr: CR-BP-113
+    date: '2026-10-13'
+    change: href targets repaired to post-mv1 layout (CR-BP-113)
 links:
 - rel: change-request
   href: change-requests/CR-BP-78-ge-retire-admission.md

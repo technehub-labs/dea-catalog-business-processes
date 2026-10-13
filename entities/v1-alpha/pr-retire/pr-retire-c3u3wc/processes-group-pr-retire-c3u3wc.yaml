@@ -90,9 +90,6 @@ metadata:
   change_history:
   - cr: CR-BP-67
     date: '2026-09-14'
-  - cr: CR-BP-113
-    date: '2026-10-13'
-    summary: href targets repaired to post-mv1 layout (CR-BP-113)
     change: 'Initial Process Group record; the fourth and final L1 group at
 
       an Activate/Retire coordinate from the CR-BP-63 discovery
@@ -104,6 +101,9 @@ metadata:
       Termination), which the discovery evaluation confirmed.
 
       '
+  - cr: CR-BP-113
+    date: '2026-10-13'
+    change: href targets repaired to post-mv1 layout (CR-BP-113)
 links:
 - rel: change-request
   href: change-requests/CR-BP-67-pr-retire-admission.md

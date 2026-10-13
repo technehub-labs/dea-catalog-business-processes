@@ -60,9 +60,6 @@ metadata:
   change_history:
   - cr: CR-BP-13a
     date: '2026-09-05'
-  - cr: CR-BP-113
-    date: '2026-10-13'
-    summary: href targets repaired to post-mv1 layout (CR-BP-113)
     change: 'Initial L2 Process entry; lands as part of the CR-BP-13a
 
       PartyAndRelationship admission tranche.
@@ -95,6 +92,9 @@ metadata:
       (CR-BP-34d).
 
       '
+  - cr: CR-BP-113
+    date: '2026-10-13'
+    change: href targets repaired to post-mv1 layout (CR-BP-113)
 links:
 - rel: change-request
   href: change-requests/CR-BP-13a-party-and-relationship-admission.md

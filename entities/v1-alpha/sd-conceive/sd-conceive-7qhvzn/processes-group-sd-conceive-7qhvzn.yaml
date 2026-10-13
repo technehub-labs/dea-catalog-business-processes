@@ -147,9 +147,6 @@ metadata:
   change_history:
   - cr: CR-BP-21a
     date: '2026-09-07'
-  - cr: CR-BP-113
-    date: '2026-10-13'
-    summary: href targets repaired to post-mv1 layout (CR-BP-113)
     change: 'Initial Process Group record; promoted from the CR-BP-19 register
 
       v2 (ratified against ECF v2.4.0) as part of the StrategyAndDirection
@@ -172,6 +169,9 @@ metadata:
       the cell''s L2 landing.
 
       '
+  - cr: CR-BP-113
+    date: '2026-10-13'
+    change: href targets repaired to post-mv1 layout (CR-BP-113)
 links:
 - rel: change-request
   href: change-requests/CR-BP-21a-strategy-direction-landing.md
