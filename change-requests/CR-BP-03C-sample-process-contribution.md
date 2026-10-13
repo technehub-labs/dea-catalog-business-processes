@@ -1,4 +1,5 @@
 # CR-BP-03C — Sample Business Process Contribution (walk-the-flow)
+**Admission authority**: yes
 
 > **Layout note (CR-BP-mv1, 2026-09-20):** This CR was authored against the
 > pre-migration entity layout (`entities/v1-alpha/dea:*`, `contexts/v1-alpha/`)

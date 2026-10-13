@@ -1,6 +1,7 @@
 # CR-BP-13a: PartyAndRelationship Admission Tranche (Conceive / Design / Build / Improve)
 
 **Status**: Proposed
+**Admission authority**: yes
 **Layer**: L1 (Process Catalog)
 **Owner**: TechNeHub Labs
 **Depends on**: CR-BP-11 (49-coordinate research register; merged),

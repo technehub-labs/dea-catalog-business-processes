@@ -1,6 +1,7 @@
 # CR-BP-21f.1: GovernanceAndExistence Completion (ECF v2.4.0 — Retroactive Register Coverage)
 
 **Status**: Proposed
+**Admission authority**: yes
 **Layer**: Process Catalog
 **Owner**: Coder (for eaojnr)
 **Date**: 2026-09-08

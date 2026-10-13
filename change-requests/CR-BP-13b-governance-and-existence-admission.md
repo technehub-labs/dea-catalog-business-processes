@@ -1,6 +1,7 @@
 # CR-BP-13b: GovernanceAndExistence Admission Tranche
 
 **Status**: Proposed
+**Admission authority**: yes
 **Layer**: L1 (Process Catalog)
 **Owner**: TechNeHub Labs
 **Depends on**: CR-BP-11 (research register; merged), CR-BP-12 (L1

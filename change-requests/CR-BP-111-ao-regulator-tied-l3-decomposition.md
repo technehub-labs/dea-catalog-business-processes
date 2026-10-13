@@ -1,6 +1,7 @@
 # CR-BP-111: A&O Regulator-Tied L3/L4 Decomposition Tranche (5 BPs x 4 Activities x 5 Tasks = 100 new records)
 
 **Status**: Proposed (this PR)
+**Admission authority**: yes
 **Layer**: L3 (Activity decomposition)
 **Owner**: Coder (for eaojnr)
 **Date**: 2026-10-12

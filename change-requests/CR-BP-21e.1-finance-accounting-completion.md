@@ -1,6 +1,7 @@
 # CR-BP-21e.1: FinanceAndAccounting Completion (ECF v2.4.0 — Final Register Gap Closure)
 
 **Status**: Accepted
+**Admission authority**: yes
 **Layer**: Process Catalog
 **Owner**: Coder (for eaojnr)
 **Date**: 2026-09-08

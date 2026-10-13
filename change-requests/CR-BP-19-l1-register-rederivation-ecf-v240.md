@@ -9,6 +9,7 @@
 > containment tree.
 
 **Status**: Accepted
+**Admission authority**: yes
 **Layer**: Process Catalog
 **Owner**: Coder (for eaojnr)
 **Date**: 2026-09-07

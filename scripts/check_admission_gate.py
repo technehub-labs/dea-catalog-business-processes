@@ -60,6 +60,64 @@ APPROVED_INTENTS = {
     "transform",
 }
 
+# Bare CR id pattern: CR-BP-115, CR-BP-13a, CR-BP-21a.1, CR-BP-03C,
+# CR-BP-L4-02, CR-BP-mv1, CR-BP-SPEC-BP-01, CR-BP-TMF-EMBARGO,
+# CR-CATALOG-STRUCT-02, CR-ECF-CG-004.
+_BARE_CR_ID = re.compile(
+    r"^(CR-(?:"
+    r"BP-\d+[a-zA-Z]?(?:\.\d+)*"
+    r"|BP-L\d+-\d+[a-zA-Z]?"
+    r"|BP-mv\d+"
+    r"|BP-SPEC-BP-\d+"
+    r"|BP-TMF-EMBARGO"
+    r"|CATALOG-STRUCT-\d+"
+    r"|ECF-CG-\d+"
+    r"))"
+)
+
+_MARKER_RE = re.compile(
+    r"^\*\*Admission authority\*\*:?\s+(.+?)\s*$", re.IGNORECASE
+)
+
+_AUTHORITY_CACHE: dict[str, frozenset[str]] = {}
+
+
+def _load_admission_authorities(root: Path) -> frozenset[str]:
+    """Load admission-authority CR ids from change-requests/ files.
+
+    Authority = CR files carrying **Admission authority**: yes.
+    Marker introduced and 33-CR backfill performed by CR-BP-115.
+    Computed once per run, cached in a module-level dict keyed by root.
+    """
+    key = str(root)
+    if key in _AUTHORITY_CACHE:
+        return _AUTHORITY_CACHE[key]
+    authorities: set[str] = set()
+    cr_dir = root / "change-requests"
+    if not cr_dir.is_dir():
+        result = frozenset()
+        _AUTHORITY_CACHE[key] = result
+        return result
+    for p in sorted(cr_dir.glob("CR-*.md")):
+        m = _BARE_CR_ID.match(p.stem)
+        if not m:
+            continue
+        bare_id = m.group(1)
+        try:
+            head = "\n".join(p.read_text().splitlines()[:30])
+        except OSError:
+            continue
+        for line in head.splitlines():
+            marker = _MARKER_RE.match(line)
+            if marker:
+                value = marker.group(1).split("(")[0].strip().lower()
+                if value == "yes":
+                    authorities.add(bare_id)
+                break
+    result = frozenset(authorities)
+    _AUTHORITY_CACHE[key] = result
+    return result
+
 
 def _catalog_pc_ids(root: Path) -> set[str]:
     """CR-BP-mv1: PCs live in the containment tree (contexts/ is retired)."""
@@ -120,8 +178,12 @@ def _disposition_locked_ids(root: Path) -> set[str]:
 
 def check_admission(path: Path, root: Path,
                     pc_ids: set[str], pg_ids: set[str],
-                    process_ids: set[str]) -> list[tuple[str, str]]:
+                    process_ids: set[str],
+                    authorities: frozenset[str] | None = None,
+                    ) -> list[tuple[str, str]]:
     """Return [(rule_code, finding), ...] for a candidate Process."""
+    if authorities is None:
+        authorities = _load_admission_authorities(root)
     findings: list[tuple[str, str]] = []
     data = _try_load(path)
     if not isinstance(data, dict):
@@ -255,58 +317,11 @@ def check_admission(path: Path, root: Path,
                     f"{rec_id}: change_history[{j}] missing change",
                 ))
         # ADM-001: at least one entry must reference an admission CR.
-        # We treat CR-BP-13[a-z] (a/b/c/d admission tranches) and
-        # CR-BP-03C (sample-process-contribution walk-the-flow) as
-        # admission authorities. CR-BP-03C predates the formal
-        # CR-BP-13 admission programme but is functionally equivalent
-        # (it admitted the first canonical sample process, see
-        # change-requests/CR-BP-03C-sample-process-contribution.md).
-        # CR-BP-19/20/21a..e (StrategyAndDirection landing) are the
-        # rediscovery / alignment / landing tranches under the v2.4.0
-        # admission programme, and are accepted as admission
-        # authorities for new L1/L2 entries landed under them.
-        # CR-BP-64.. are the discovery-driven admission tranches under
-        # the CR-BP-62/63 lifecycle discovery programme: each admission
-        # tranche registers its own CR number here as it lands.
-        # CR-BP-70: escape-clause discovery for P&R x Activate (KYC);
-        # CR-BP-71: P&R Activate admission tranche landed under it.
-        # CR-BP-72: escape-clause discovery for A&O x Retire (mass-layoff
-        # regulated wind-down); CR-BP-73: A&O Retire admission tranche
-        # landed under it.
-        # CR-BP-74: escape-clause discovery for F&A x Retire (regulated
-        # run-off / mutual insurer); CR-BP-75: F&A Retire admission
-        # tranche landed under it.
-        # CR-BP-76: escape-clause discovery for G&E x Retire
-        # (regulator-mandated governance unwind); CR-BP-78: G&E
-        # Retire admission tranche landed under it.
-        # CR-BP-80: escape-clause discovery for the five backlog-deferred
-        # cells (SD.Activate, SD.Retire, AO.Activate, EO.Activate, FA.Activate);
-        # CR-BP-81: AO.Activate admission tranche landed under it.
-        # CR-BP-80: escape-clause discovery for the five backlog-deferred
-        # cells (SD.Activate, SD.Retire, AO.Activate, EO.Activate, FA.Activate);
-        # CR-BP-82: EO.Activate admission tranche landed under it.
-        # CR-BP-83: FA.Activate admission tranche landed under it.
-        # CR-BP-86: SD.Activate admission tranche landed under it.
-        # CR-BP-101: SD.Retire admission tranche (closes the 49-cell matrix).
-        # CR-BP-101a: SD.Retire L3 Activity decomposition tranche (7 activities).
-        # CR-BP-106: A&O regulator-tied admission tranche (5 L2 BPs at
-        # Conceive/Design/Build/Operate/Improve; merged 2026-10-12). Added
-        # retroactively in the CR-BP-107 retro-fit because the original
-        # CR-BP-106 admission commit did not update this allowlist (the
-        # L3-deposition skill's "extend the allowlist in the same commit"
-        # rule was first codified after CR-BP-101, and was missed on the
-        # A&O tranche).
-        # CR-BP-111: A&O regulator-tied L3/L4 decomposition tranche (5 BPs x
-        # 4 Activities x 5 Tasks = 100 new records; the decomposition follow-on
-        # to CR-BP-106). Extended the allowlist in the same commit as the
-        # tranche, per the L3-deposition skill's rule.
-        _ADMISSION_CR_RE = re.compile(
-            r"^(?:CR-BP-13[a-z]?|CR-BP-19|CR-BP-20|CR-BP-21[a-z]?|CR-BP-03C|CR-BP-64|CR-BP-65|CR-BP-66|CR-BP-67|CR-BP-71|CR-BP-73|CR-BP-75|CR-BP-78|CR-BP-81|CR-BP-82|CR-BP-83|CR-BP-86|CR-BP-101|CR-BP-101a|CR-BP-106|CR-BP-111)(?:\.\d+)*$"
-        )
+        # Authority = CR files carrying **Admission authority**: yes.
+        # Marker introduced and 33-CR backfill performed by CR-BP-115.
         has_admission = any(
-            isinstance(e, dict) and _ADMISSION_CR_RE.match(
-                (e.get("cr") or "")
-            )
+            isinstance(e, dict)
+            and (e.get("cr") or "") in authorities
             for e in change_history
         )
         if not has_admission:
@@ -341,6 +356,7 @@ def main(argv: list[str] | None = None) -> int:
     pc_ids = _catalog_pc_ids(root)
     pg_ids = _catalog_pg_ids(root)
     process_ids = _catalog_process_ids(root)
+    authorities = _load_admission_authorities(root)
     locked = _disposition_locked_ids(root)
 
     # Walk all Process records. Candidates (not in LOCKED) are checked
@@ -354,7 +370,7 @@ def main(argv: list[str] | None = None) -> int:
 
     findings: list[dict[str, str]] = []
     for path, _ in candidates:
-        for code, msg in check_admission(path, root, pc_ids, pg_ids, process_ids):
+        for code, msg in check_admission(path, root, pc_ids, pg_ids, process_ids, authorities):
             findings.append({
                 "rule": code,
                 "path": str(path.relative_to(root)),
@@ -388,6 +404,7 @@ def main(argv: list[str] | None = None) -> int:
             ),
             "candidate_count": len(candidates),
             "locked_count": len(locked),
+            "admission_authorities": sorted(authorities),
         }, indent=2))
     else:
         print(f"Admission Gate (CR-BP-16 S15; ADM-001..008): {verdict}")
@@ -421,6 +438,24 @@ def _self_test() -> int:
     failed: list[str] = []
     with tempfile.TemporaryDirectory() as td:
         root = Path(td)
+        # Synthetic change-requests/ with marked + unmarked CRs.
+        cr_dir = root / "change-requests"
+        cr_dir.mkdir(parents=True)
+        (cr_dir / "CR-BP-13a-test-admission.md").write_text(
+            "**Status**: Accepted\n"
+            "**Admission authority**: yes\n"
+        )
+        (cr_dir / "CR-BP-03C-sample-contribution.md").write_text(
+            "**Status**: Accepted\n"
+            "**Admission authority**: yes\n"
+        )
+        (cr_dir / "CR-BP-15-no-marker.md").write_text(
+            "**Status**: Accepted\n"
+        )
+        (cr_dir / "CR-BP-99-malformed-marker.md").write_text(
+            "**Status**: Accepted\n"
+            "**Admission authority**: yes-ish\n"
+        )
         entities = root / "entities" / "v1-alpha"
         (entities / "pr-operate" / "candidate-bad").mkdir(parents=True)
         (entities / "pr-operate" / "candidate-bad" / "processes-process-pr-operate-candbad1.yaml").write_text(yaml.safe_dump({
@@ -486,7 +521,7 @@ def _self_test() -> int:
         if good_findings:
             failed.append(f"good fixture fired: {good_findings}")
 
-        # CR-BP-16 §17 Step 8 path regression: provenance stored
+        # CR-BP-16 section 17 Step 8 path regression: provenance stored
         # under metadata.change_history MUST be read.
         (entities / "processes:process-meta-path-good").mkdir(parents=True)
         (entities / "processes:process-meta-path-good" /
@@ -517,7 +552,7 @@ def _self_test() -> int:
                 f"got findings {meta_findings}"
             )
 
-        # CR-BP-03C admission CR acceptance (legacy sample CR).
+        # Unmarked CR fails ADM-001 (CR-BP-15 has no marker).
         (entities / "processes:process-bp-15-only").mkdir(parents=True)
         (entities / "processes:process-bp-15-only" /
          "processes:process-bp-15-only.yaml").write_text(yaml.safe_dump({
@@ -530,7 +565,7 @@ def _self_test() -> int:
             "context": [{"ref": "processes:pc-pr-operate-yrhcfm"}],
             "metadata": {
                 "change_history": [
-                    {"date": "2026-09-06", "cr": "CR-BP-15-IMP",
+                    {"date": "2026-09-06", "cr": "CR-BP-15",
                      "change": "Phase 5 migration only."},
                 ],
             },
@@ -543,8 +578,38 @@ def _self_test() -> int:
             mig_findings.append(code)
         if "ADM-001" not in mig_findings:
             failed.append(
-                "expected ADM-001 (no admission CR) on CR-BP-15-IMP-only "
+                "expected ADM-001 (no admission CR) on CR-BP-15-only "
                 f"fixture; got {mig_findings}"
+            )
+
+        # Malformed marker (yes-ish) is ignored, not crashed on.
+        (entities / "processes:process-bp-99-malformed").mkdir(parents=True)
+        (entities / "processes:process-bp-99-malformed" /
+         "processes:process-bp-99-malformed.yaml").write_text(yaml.safe_dump({
+            "id": "processes:process-bp-99-malformed",
+            "name": "Malformed Marker",
+            "type": "Process",
+            "version": "1.0.0",
+            "process_intent": "manage",
+            "process_type": "core",
+            "context": [{"ref": "processes:pc-pr-operate-yrhcfm"}],
+            "metadata": {
+                "change_history": [
+                    {"date": "2026-09-06", "cr": "CR-BP-99",
+                     "change": "Malformed marker test."},
+                ],
+            },
+        }, sort_keys=False))
+        mal_file = next((entities / "processes:process-bp-99-malformed").glob(
+            "processes:process-*.yaml"))
+        mal_findings = []
+        for code, msg in check_admission(mal_file, root, pc_ids,
+                                        pg_ids, process_ids):
+            mal_findings.append(code)
+        if "ADM-001" not in mal_findings:
+            failed.append(
+                "expected ADM-001 (malformed marker) on CR-BP-99 "
+                f"fixture; got {mal_findings}"
             )
 
     if failed:

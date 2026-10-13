@@ -1,6 +1,7 @@
 # CR-BP-106 — AgencyAndOrganization Regulator-Tied Admission Tranche (5 cells, additive)
 
 **Status**: Proposed (this PR)
+**Admission authority**: yes
 **Layer**: L2 (Business Process admission)
 **Owner**: Coder (for eaojnr)
 **Date**: 2026-09-22

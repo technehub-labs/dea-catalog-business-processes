@@ -1,6 +1,7 @@
 # CR-BP-13: L1 Process Group Research Ratification
 
 **Status**: Proposed
+**Admission authority**: yes
 **Layer**: L1 (Process Catalog)
 **Owner**: TechNeHub Labs
 **Depends on**: CR-BP-11 (49-coordinate L1 disposition register; merged),

@@ -1,6 +1,7 @@
 # CR-BP-21a: StrategyAndDirection Landing (ECF v2.4.0 — First Unadmitted Domain)
 
 **Status**: Accepted
+**Admission authority**: yes
 **Layer**: Process Catalog
 **Owner**: Coder (for eaojnr)
 **Date**: 2026-09-07

@@ -444,12 +444,26 @@ def build_research_registers(entities: list[dict[str, Any]], catalog_root: Path)
     return registers
 
 
-def count_open_change_requests(catalog_root: Path) -> int:
-    """Count CR-*.md files in change-requests/ whose status is not 'Merged'.
+CLOSED_STATUSES = ("Merged", "Accepted", "Rejected", "Superseded")
+OPEN_STATUSES = ("Proposed", "Draft")
 
-    Heuristic: look for the word 'Merged' on the line immediately following
-    the '# CR-...' heading. Files without a status line are conservatively
-    counted as open.
+# Metadata line pattern mirrors check_cr_metadata.py's META_LINE:
+# matches only lines that START with **Key**: Value (not body text
+# that merely contains the substring).
+_STATUS_META_RE = re.compile(
+    r"^\*\*Status\*\*:?\s+(.+?)\s*$"
+)
+
+
+def count_open_change_requests(
+    catalog_root: Path, warnings: list[str] | None = None,
+) -> int:
+    """Count CR-*.md files in change-requests/ whose status is open.
+
+    Closed statuses (Merged, Accepted, Rejected, Superseded) are
+    excluded; open statuses (Proposed, Draft) are counted. Files
+    with an unrecognized or missing Status line are conservatively
+    counted as open, with a warning emitted.
     """
     cr_dir = catalog_root / "change-requests"
     if not cr_dir.is_dir():
@@ -457,23 +471,35 @@ def count_open_change_requests(catalog_root: Path) -> int:
     open_count = 0
     for path in sorted(cr_dir.glob("CR-*.md")):
         try:
-            text = path.read_text(encoding="utf-8")
+            lines = path.read_text(encoding="utf-8").splitlines()[:30]
         except OSError:
             open_count += 1
             continue
-        # Take the first 30 lines; look for a status line.
-        head = "\n".join(text.splitlines()[:30])
-        if "Status**: Merged" in head or "Status**: Merged" in head:
+        # Parse the Status metadata line (first 30 lines only).
+        status_value: str | None = None
+        for line in lines:
+            m = _STATUS_META_RE.match(line)
+            if m:
+                status_value = m.group(1).split("(")[0].strip()
+                break
+        if status_value is None:
+            open_count += 1
+            if warnings is not None:
+                warnings.append(
+                    f"{path.name}: no Status line in first 30 lines; counted as open"
+                )
             continue
-        if "Status**: Proposed" in head or "Status**: Draft" in head:
+        if status_value in CLOSED_STATUSES:
+            continue
+        if status_value in OPEN_STATUSES:
             open_count += 1
             continue
-        if "Status**:" in head:
-            # Some other status (Accepted, Superseded, etc.): conservative: open.
-            open_count += 1
-            continue
-        # No status line found: conservative open.
+        # Unrecognized status: conservative open.
         open_count += 1
+        if warnings is not None:
+            warnings.append(
+                f"{path.name}: unrecognized Status {status_value!r}; counted as open"
+            )
     return open_count
 
 
@@ -512,7 +538,7 @@ def build_payload(
         "candidates": sum(1 for e in entities if e["state"] == "candidate"),
         "canonical": sum(1 for e in entities if e["state"] == "canonical"),
         "retired": sum(1 for e in entities if e["state"] == "retired"),
-        "open_change_requests": count_open_change_requests(catalog_root),
+        "open_change_requests": count_open_change_requests(catalog_root, all_warnings),
     }
 
     payload = {

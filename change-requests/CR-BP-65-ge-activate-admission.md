@@ -9,6 +9,7 @@
 > containment tree.
 
 **Status**: Proposed
+**Admission authority**: yes
 **Layer**: L2 (Activate admission)
 **Owner**: Coder (for eaojnr)
 **Date**: 2026-09-14
