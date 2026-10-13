@@ -8,8 +8,8 @@ specialization** of the OpenDEA Process kernel. Star and follow the repo
 as it evolves to meet the needs of **AI-Native Enterprise Architecture
 Transformation** (AI-NEAT).
 
-The catalog supports the **Business Architecture** and **Business
-Operations** use cases (CR-MM-PROC-01; CR-AR-FMWK-01; CR-BP-SPEC-BP-01).
+The catalog supports diverse **Business Architectures** and **Business
+Operations** use cases.
 It is **one of potentially several** Process-specialization catalogs in
 the OpenDEA ecosystem. Other specializations (Operational, Engineering,
 etc.) will have their own catalogs when their use cases emerge.
@@ -29,7 +29,7 @@ The governing principle is:
 
 # Reading This Repository
 
-Two documents orient a new reader before the detailed architecture:
+Two documents to orient you (as a new reader) before the detailed architecture:
 
 * [`docs/semantic-contract.md`](docs/semantic-contract.md): what a
   Business Process record in this catalog means; the six
