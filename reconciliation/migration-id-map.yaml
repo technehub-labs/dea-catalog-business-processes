@@ -3632,3 +3632,9 @@ known_residuals:
   nature: pre-existing dangling lineage reference to a historical PG id that no longer exists as a canonical record
   provenance: present on main before CR-BP-mv1; surfaced by the migration verify and IDM-006
   repair: separate Process-Catalog-layer repair CR (supersedes lineage reconciliation)
+- record_id: processes:process-pr-operate-bbe384
+  field: metadata.scope.id
+  legacy_value: dea:scope-customer-facing-operations
+  nature: documentation-style L0 scope label carried in the BP's metadata.scope block; the id was authored under CR-BP-03 §5 (pre-CR-BP-95) when L0 was documented in metadata rather than as a separate ProcessScope record. CR-BP-mv1 (2026-09-20) did not migrate metadata.scope.id values because the L0 ProcessScope record type was instantiated separately under CR-BP-95.
+  provenance: present on main before CR-BP-mv1; surfaced by IDM-006 extension to scope (CR-BP-112 + CR-BP-113 IDM-006 scope-coverage follow-on, 2026-10-13).
+  repair: future slice may either (a) instantiate the L0 ProcessScope record `processes:scope-customer-facing-operations` and rewrite metadata.scope to reference it, or (b) drop the documentation field entirely as superseded by ECF conformance. Out of scope for CR-BP-113 (this CR's scope is the 5 mv1-completion moves; the scope-record question is its own governance slice).

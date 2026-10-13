@@ -60,6 +60,9 @@ metadata:
   change_history:
   - cr: CR-BP-71
     date: '2026-09-15'
+  - cr: CR-BP-113
+    date: '2026-10-13'
+    summary: href targets repaired to post-mv1 layout (CR-BP-113)
     change: 'Initial L2 Process entry; the first canonical Business Process
 
       admitted at the PartyAndRelationship x Activate coordinate,
@@ -106,6 +109,6 @@ links:
 - rel: discovery-record-baseline
   href: discovery/v1-alpha/party-and-relationship-activate.yaml
 - rel: process-context
-  href: contexts/v1-alpha/dea-pc-pr-act.yaml
+  href: entities/v1-alpha/pr-activate/processes-pc-pr-activate-mwq7bj.yaml
 context:
 - ref: processes:pc-pr-activate-mwq7bj

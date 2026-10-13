@@ -46,6 +46,9 @@ metadata:
   change_history:
   - cr: CR-BP-66
     date: '2026-09-14'
+  - cr: CR-BP-113
+    date: '2026-10-13'
+    summary: href targets repaired to post-mv1 layout (CR-BP-113)
     change: 'Initial L2 Process entry; the first canonical Business Process
 
       admitted at an EnablementAndOperations Retire coordinate, from
@@ -72,6 +75,6 @@ links:
 - rel: discovery-record
   href: discovery/v1-alpha/enablement-and-operations-retire.yaml
 - rel: process-context
-  href: contexts/v1-alpha/dea-pc-oe-retire.yaml
+  href: entities/v1-alpha/eo-retire/processes-pc-eo-retire-nw3ynf.yaml
 context:
 - ref: processes:pc-eo-retire-nw3ynf

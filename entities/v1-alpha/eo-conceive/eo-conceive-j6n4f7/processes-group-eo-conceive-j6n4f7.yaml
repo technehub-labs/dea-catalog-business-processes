@@ -147,6 +147,9 @@ metadata:
   change_history:
   - cr: CR-BP-21d
     date: '2026-09-08'
+  - cr: CR-BP-113
+    date: '2026-10-13'
+    summary: href targets repaired to post-mv1 layout (CR-BP-113)
     change: 'Initial Process Group record; promoted from the CR-BP-19 register
 
       v2 (ratified against ECF v2.4.0) as part of the
@@ -171,8 +174,8 @@ metadata:
       '
 links:
 - rel: change-request
-  href: change-requests/CR-BP-21d-enablement-operations-landing.md
+  href: change-requests/CR-BP-21d-operations-enablement-landing.md
 - rel: predecessor
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
-  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+  href: entities/v1-alpha/pr-operate/pr-operate-7ab3ma/processes-group-pr-operate-7ab3ma.yaml

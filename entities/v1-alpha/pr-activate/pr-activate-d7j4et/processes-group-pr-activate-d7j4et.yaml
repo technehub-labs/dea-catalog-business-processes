@@ -108,6 +108,9 @@ metadata:
   change_history:
   - cr: CR-BP-71
     date: '2026-09-15'
+  - cr: CR-BP-113
+    date: '2026-10-13'
+    summary: href targets repaired to post-mv1 layout (CR-BP-113)
     change: 'Initial Process Group record; the first L1 group at a
 
       PartyAndRelationship x Activate coordinate, admitted under
@@ -133,4 +136,4 @@ links:
 - rel: discovery-record-escape
   href: discovery/v1-alpha/party-and-relationship-activate-escape.yaml
 - rel: research-register
-  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+  href: entities/v1-alpha/pr-operate/pr-operate-7ab3ma/processes-group-pr-operate-7ab3ma.yaml

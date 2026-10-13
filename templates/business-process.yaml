@@ -28,7 +28,7 @@
 #   See CR-BP-93 §5.
 #
 # Authoring flow:
-#   1. Copy to entities/v1-alpha/dea:process-<kebab-name>/dea:process-<kebab-name>.yaml.
+#   1. Copy to entities/v1-alpha/<cell>/<record-dir>/processes-process-<cell>-<hash>.yaml.
 #   2. Replace every `<...>` placeholder.
 #   3. Run: python scripts/check_l2_qualification.py --strict
 #   4. Run: python scripts/check_process_semantics.py --strict
@@ -39,7 +39,7 @@
 # The verb-object identity contract (BP-C1..C4 / BP-SEM-001..014) is encoded
 # in the `identity:` block.
 
-id: dea:process-<kebab-name>        # BP-ARC-ID-001: must match `^dea:process-[a-z0-9-]+$`. CR-BP-04 §4 family.
+id: processes:process-<cell>-<hash>        # BP-ARC-ID-001: must match `^processes:process-[a-z0-9-]+$`. CR-BP-04 §4 family.
 type: Process                        # Discriminator; always `Process` for L2 BP entries.
 
 # -----------------------------------------------------------------------------
@@ -64,7 +64,7 @@ process_specialization: []           # BP-SPEC-01-001..007 (advisory gate under 
 
 description: |                       # 1-2000 chars; reader-facing summary.
   <What this Business Process does. Not a definition; a description.>
-  Cross-references: dea:process-<parent-bp-id> (if applicable); dea:activity-<id> (composed Activities).
+  Cross-references: processes:process-<parent-bp-id> (if applicable); processes:activity-<id> (composed Activities).
 
 trigger: |                           # BP-C1: trigger must be non-empty; describes when the process is invoked.
   <A new <BP purpose> is needed because <condition>.>
@@ -89,7 +89,7 @@ identity:
   outcome_statement: |               # BP-C2: must be non-empty; the testable outcome statement.
     <A <thing> is <produced state>, ready to drive <downstream use>.>
   evidence_links:                    # BP-C4: must be non-empty.
-    - type: standard                 # standard | documentation | evidence | reference.
+    - type: standard                 # documentation | governance | interview | artifact | standard | regulation.
       ref: https://www.<authority>.org/<path>
     - type: documentation
       ref: docs/examples/<example>.md
@@ -101,7 +101,7 @@ identity:
 # -----------------------------------------------------------------------------
 
 relationships:
-  - source_id: dea:process-<kebab-name>
+  - source_id: processes:process-<cell>-<hash>
     relationship_type: serves         # BP-SEM-008..011: `serves` to ECF coordinate is canonical.
     target_id: ecf:<domain>.<stage>   # One of the seven canonical ECF coordinates.
 
@@ -126,7 +126,7 @@ ecfConformance:
 # -----------------------------------------------------------------------------
 
 context:
-  - ref: dea:pc-<kebab>              # Must match the `process_context` PG field of the parent Process Group.
+  - ref: processes:pc-<cell>              # Must match the `process_context` PG field of the parent Process Group.
 
 # -----------------------------------------------------------------------------
 # Metadata + change_history (gate [10] ADM-001..008): change_history must be
@@ -189,7 +189,7 @@ links:
     href: change-requests/<CR-id>.md
 
 # activity_references:               # ACT-010: populated post-L3 decomposition.
-#   - dea:activity-<slug>
-#   - dea:activity-<slug>
-#   - dea:activity-<slug>
-#   - dea:activity-<slug>
+#   - processes:activity-<slug>
+#   - processes:activity-<slug>
+#   - processes:activity-<slug>
+#   - processes:activity-<slug>

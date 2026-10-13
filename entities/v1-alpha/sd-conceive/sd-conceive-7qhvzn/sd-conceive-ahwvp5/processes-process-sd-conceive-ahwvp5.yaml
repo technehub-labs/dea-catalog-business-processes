@@ -55,6 +55,9 @@ metadata:
   change_history:
   - cr: CR-BP-13a
     date: '2026-09-05'
+  - cr: CR-BP-113
+    date: '2026-10-13'
+    summary: href targets repaired to post-mv1 layout (CR-BP-113)
     change: 'Original L2 entry (id: dea:process-develop-governance-strategy) lands
 
       as part of the CR-BP-13a admission tranche. Affiliated with
@@ -137,8 +140,8 @@ links:
 - rel: predecessor
   href: change-requests/CR-BP-20-l1-l2-alignment-ecf-v240.md
 - rel: process-context
-  href: contexts/v1-alpha/dea-pc-sd-conceive.yaml
+  href: entities/v1-alpha/sd-conceive/processes-pc-sd-conceive-ucb3gx.yaml
 - rel: process-group
-  href: entities/v1-alpha/dea:group-strategy-direction-conception/dea:group-strategy-direction-conception.yaml
+  href: entities/v1-alpha/sd-conceive/sd-conceive-7qhvzn/processes-group-sd-conceive-7qhvzn.yaml
 context:
 - ref: processes:pc-sd-conceive-ucb3gx

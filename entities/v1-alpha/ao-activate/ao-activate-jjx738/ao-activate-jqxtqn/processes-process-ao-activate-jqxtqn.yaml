@@ -54,6 +54,9 @@ metadata:
   change_history:
   - cr: CR-BP-81
     date: '2026-09-16'
+  - cr: CR-BP-113
+    date: '2026-10-13'
+    summary: href targets repaired to post-mv1 layout (CR-BP-113)
     change: 'Initial L2 Process entry; the first canonical Business Process
 
       admitted at the AgencyAndOrganization x Activate coordinate,
@@ -114,10 +117,10 @@ links:
 - rel: discovery-record-baseline
   href: discovery/v1-alpha/agency-and-organization-activate.yaml
 - rel: process-context
-  href: contexts/v1-alpha/dea-pc-ao-activate.yaml
+  href: entities/v1-alpha/ao-activate/processes-pc-ao-activate-kusw2u.yaml
 - rel: process-group
-  href: entities/v1-alpha/dea:group-licensed-workforce-mobilization/dea:group-licensed-workforce-mobilization.yaml
+  href: entities/v1-alpha/ao-activate/ao-activate-jjx738/processes-group-ao-activate-jjx738.yaml
 - rel: l2-admission-deposition
-  href: entities/v1-alpha/dea:process-mobilize-licensed-workforce/research/l2-admission-deposition.yaml
+  href: entities/v1-alpha/ao-activate/ao-activate-jjx738/ao-activate-jqxtqn/processes-process-ao-activate-jqxtqn.yaml
 context:
 - ref: processes:pc-ao-activate-kusw2u

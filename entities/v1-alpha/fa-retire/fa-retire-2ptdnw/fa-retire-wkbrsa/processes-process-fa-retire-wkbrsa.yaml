@@ -58,6 +58,9 @@ metadata:
   change_history:
   - cr: CR-BP-75
     date: '2026-09-15'
+  - cr: CR-BP-113
+    date: '2026-10-13'
+    summary: href targets repaired to post-mv1 layout (CR-BP-113)
     change: 'Initial L2 Process entry; the first canonical Business Process
 
       admitted at the FinanceAndAccounting x Retire coordinate, from
@@ -114,10 +117,10 @@ links:
 - rel: discovery-record-baseline
   href: discovery/v1-alpha/finance-and-accounting-retire.yaml
 - rel: process-context
-  href: contexts/v1-alpha/dea-pc-fa-retire.yaml
+  href: entities/v1-alpha/fa-retire/processes-pc-fa-retire-64q5p9.yaml
 - rel: process-group
-  href: entities/v1-alpha/dea:group-regulated-run-off/dea:group-regulated-run-off.yaml
+  href: entities/v1-alpha/fa-retire/fa-retire-2ptdnw/processes-group-fa-retire-2ptdnw.yaml
 - rel: l2-admission-deposition
-  href: entities/v1-alpha/dea:process-conclude-regulated-run-off/research/l2-admission-deposition.yaml
+  href: entities/v1-alpha/fa-retire/fa-retire-2ptdnw/fa-retire-wkbrsa/processes-process-fa-retire-wkbrsa.yaml
 context:
 - ref: processes:pc-fa-retire-64q5p9

@@ -110,6 +110,9 @@ metadata:
   change_history:
   - cr: CR-BP-13a
     date: '2026-09-05'
+  - cr: CR-BP-113
+    date: '2026-10-13'
+    summary: href targets repaired to post-mv1 layout (CR-BP-113)
     change: 'Initial Process Group record; promoted from the CR-BP-11
 
       49-coordinate register (ratified by CR-BP-13) as part of
@@ -119,6 +122,6 @@ metadata:
       '
 links:
 - rel: change-request
-  href: change-requests/cr-bp-13a-customer-and-demand-admission.md
+  href: change-requests/CR-BP-13a-party-and-relationship-admission.md
 - rel: research-register
-  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+  href: entities/v1-alpha/pr-operate/pr-operate-7ab3ma/processes-group-pr-operate-7ab3ma.yaml

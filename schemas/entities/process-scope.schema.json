@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://technehub-labs.github.io/dea-catalog-processes/schemas/entities/process-scope.schema.json",
   "title": "ProcessScope",
-  "description": "Schema for L0 Process Scope entries in technehub-labs/dea-catalog-processes. Established by CR-BP-95 (L0/L1 Conformance Gate), recon-programme slice CR-BP-92 §10, decomposition contract CR-BP-93 §3. A Process Scope is a non-executable architectural boundary that defines a coherent and bounded area of process responsibility within a Process Context. The Process Scope is NOT a metamodel entity; it is catalog-owned and lives only in this catalog. The canonical containment direction is `L0 scope --bounds--> L1 group`; the inverse is a derived view. ID family: `dea:scope-*` (CR-BP-04 §4; docs/identity.md). L0 Process Scope is non-executable: it has no inputs, outputs, transformation, outcome, or trigger. An ECF coordinate does NOT automatically constitute a Process Scope (CR-BP-93 §3).",
+  "description": "Schema for L0 Process Scope entries in technehub-labs/dea-catalog-processes. Established by CR-BP-95 (L0/L1 Conformance Gate), recon-programme slice CR-BP-92 §10, decomposition contract CR-BP-93 §3. A Process Scope is a non-executable architectural boundary that defines a coherent and bounded area of process responsibility within a Process Context. The Process Scope is NOT a metamodel entity; it is catalog-owned and lives only in this catalog. The canonical containment direction is `L0 scope --bounds--> L1 group`; the inverse is a derived view. ID family: `processes:scope-*` (CR-BP-mv1 §4; docs/identity.md). L0 Process Scope is non-executable: it has no inputs, outputs, transformation, outcome, or trigger. An ECF coordinate does NOT automatically constitute a Process Scope (CR-BP-93 §3).",
   "type": "object",
   "required": [
     "id",
@@ -27,8 +27,8 @@
     },
     "id": {
       "type": "string",
-      "pattern": "^dea:scope-[a-z0-9-]+$",
-      "description": "Stable Process Scope id. CR-BP-04 §4 family. Convention: dea:scope-<kebab-name>. Stable across renames."
+      "pattern": "^processes:scope-[a-z0-9-]+$",
+      "description": "Stable Process Scope id. CR-BP-mv1 §4 family. Convention: processes:scope-<cell>-<hash>. Stable across renames."
     },
     "name": {
       "type": "string",
@@ -44,7 +44,7 @@
     "process_context": {
       "type": "string",
       "pattern": "^processes:pc-[a-z0-9-]+$",
-      "description": "Reference to the canonical Process Context (dea:pc-*) within which this Process Scope bounds process responsibility. PSCOPE-003 enforces resolution to a known context."
+      "description": "Reference to the canonical Process Context (processes:pc-*) within which this Process Scope bounds process responsibility. PSCOPE-003 enforces resolution to a known context."
     },
     "scope": {
       "type": "object",
@@ -102,12 +102,12 @@
         "properties": {
           "source_id": {
             "type": "string",
-            "pattern": "^dea:scope-[a-z0-9-]+$"
+            "pattern": "^processes:scope-[a-z0-9-]+$"
           },
           "target_id": {
             "type": "string",
             "pattern": "^processes:group-[a-z0-9-]+$",
-            "description": "Target L1 Process Group id (dea:group-*)."
+            "description": "Target L1 Process Group id (processes:group-*)."
           },
           "relationship_type": {
             "type": "string",

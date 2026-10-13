@@ -44,6 +44,9 @@ metadata:
   change_history:
   - cr: CR-BP-21a
     date: '2026-09-07'
+  - cr: CR-BP-113
+    date: '2026-10-13'
+    summary: href targets repaired to post-mv1 layout (CR-BP-113)
     change: 'Initial L2 Process entry; lands as part of the CR-BP-21a
 
       StrategyAndDirection landing tranche under ECF v2.4.0
@@ -80,6 +83,6 @@ links:
 - rel: change-request
   href: change-requests/CR-BP-21a-strategy-direction-landing.md
 - rel: process-context
-  href: contexts/v1-alpha/pc-sd-design.yaml
+  href: entities/v1-alpha/sd-design/processes-pc-sd-design-g3es76.yaml
 context:
 - ref: processes:pc-sd-design-g3es76

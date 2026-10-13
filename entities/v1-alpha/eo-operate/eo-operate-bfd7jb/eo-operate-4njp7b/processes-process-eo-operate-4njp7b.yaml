@@ -44,6 +44,9 @@ metadata:
   change_history:
   - cr: CR-BP-21d.1
     date: '2026-09-13'
+  - cr: CR-BP-113
+    date: '2026-10-13'
+    summary: href targets repaired to post-mv1 layout (CR-BP-113)
     change: 'L3 decomposition of this Business Process: 4 Activities
 
       landed under the structured deposition pattern (research
@@ -65,8 +68,8 @@ metadata:
       '
 links:
 - rel: change-request
-  href: change-requests/CR-BP-21d.1-enablement-operations-completion.md
+  href: change-requests/CR-BP-21d.1-operations-enablement-completion.md
 - rel: process-context
-  href: contexts/v1-alpha/pc-oe-operate.yaml
+  href: entities/v1-alpha/eo-operate/processes-pc-eo-operate-ydqb96.yaml
 context:
 - ref: processes:pc-eo-operate-ydqb96

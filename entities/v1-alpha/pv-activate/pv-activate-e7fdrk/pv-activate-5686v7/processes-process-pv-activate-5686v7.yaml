@@ -48,6 +48,9 @@ metadata:
   change_history:
   - cr: CR-BP-64
     date: '2026-09-14'
+  - cr: CR-BP-113
+    date: '2026-10-13'
+    summary: href targets repaired to post-mv1 layout (CR-BP-113)
     change: 'Initial L2 Process entry; the first canonical Business Process
 
       admitted at an Activate coordinate, from the CR-BP-63 discovery
@@ -74,6 +77,6 @@ links:
 - rel: discovery-record
   href: discovery/v1-alpha/product-and-value-activate.yaml
 - rel: process-context
-  href: contexts/v1-alpha/dea-pc-pv-activate.yaml
+  href: entities/v1-alpha/pv-activate/processes-pc-pv-activate-f7kne7.yaml
 context:
 - ref: processes:pc-pv-activate-f7kne7

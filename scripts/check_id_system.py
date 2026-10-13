@@ -209,7 +209,7 @@ def _check_idm006(record: dict, path: Path) -> list[str]:
         "source_id", "target_id", "ref", "process_context",
         "supersedes", "record", "source",
     )
-    legacy_re = re.compile(r"^dea:(pc|group|process|activity|task)-")
+    legacy_re = re.compile(r"^dea:(pc|group|process|activity|task|scope)-")
     residual_values = _residual_values()
 
     def walk(obj, field=""):

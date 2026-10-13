@@ -4,8 +4,13 @@
 
 A Process Context is the semantic boundary within which a Business
 Process is identified, evaluated and reused. The catalog treats a
-Process Context as a first-class record at `contexts/v1-alpha/`,
-identified by a canonical `dea:pc-*` id and backed by a Cell Charter.
+Process Context as a first-class record at
+`entities/v1-alpha/<cell>/processes-pc-<cell>-<hash>.yaml`,
+identified by a canonical `processes:pc-<cell>-<hash>` id and
+backed by a Cell Charter. Pre-mv1 the records lived at
+`contexts/v1-alpha/dea-pc-<cell>.yaml`; the CR-BP-mv1 migration
+(2026-09-20) retired that directory and rewrote every reference
+through `reconciliation/migration-id-map.yaml`.
 
 ## Definition
 
@@ -42,9 +47,14 @@ Business Process is the `context:` block:
 
 ```yaml
 context:
-  - ref: dea:pc-pr-op            # Process Context reference
-  - ref: dea:pc-pr-im            # multiplicity is permitted where evidence justifies
+  - ref: processes:pc-pr-operate-pwue5a   # Process Context reference
+  - ref: processes:pc-pr-improve-k8phkn   # multiplicity is permitted where evidence justifies
 ```
+
+Pre-mv1 the same block used the `dea:pc-*` id family (`dea:pc-pr-op`,
+`dea:pc-pr-im`); the CR-BP-mv1 migration (2026-09-20) replaced them
+with the canonical `processes:pc-<cell>-<hash>` form. The migration
+id map (`reconciliation/migration-id-map.yaml`) is the audit trail.
 
 CR-BP-14 §13 / BP-SEM-008 enforce that every declared reference
 resolves to a canonical Process Context entry. CR-BP-14 §13 / BP-SEM-007

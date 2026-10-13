@@ -20,7 +20,7 @@
 #   NOT a Capability). See CR-BP-93 §4 and CR-BP-12 §1.
 #
 # Authoring flow:
-#   1. Copy this file to entities/v1-alpha/dea:group-<kebab-name>/dea:group-<kebab-name>.yaml.
+#   1. Copy this file to entities/v1-alpha/<cell>/<record-dir>/processes-group-<cell>-<hash>.yaml.
 #   2. Replace every `<...>` placeholder.
 #   3. Run: python scripts/check_process_group.py --self-test   (sanity check)
 #   4. Run: python scripts/check_process_group.py              (live gate)
@@ -31,7 +31,7 @@
 # back-compat); backfill is the work of a future reconciliation slice
 # (CR-BP-99 or a dedicated L1 enrichment tranche).
 
-id: dea:group-<kebab-name>          # PG-001: id must match `^dea:group-[a-z0-9-]+$`. CR-BP-04 §4 family.
+id: processes:group-<cell>-<hash>          # PG-001: id must match `^processes:group-[a-z0-9-]+$`. CR-BP-04 §4 family.
 type: ProcessGroup                   # PG-extra: discriminator; always `ProcessGroup` for L1 entries.
 
 # -----------------------------------------------------------------------------
@@ -48,7 +48,7 @@ definition: |                        # 1-2000 chars; the normative semantic mean
   A good definition answers: 'How are related Business Processes grouped by
   this group?' See CR-BP-93 §4 and CR-BP-12 §3.>
 
-process_context: dea:pc-<kebab>     # PG-003: must match `^dea:pc-[a-z0-9-]+$` AND resolve to a known Process Context.
+process_context: processes:pc-<cell>     # PG-003: must match `^processes:pc-[a-z0-9-]+$` AND resolve to a known Process Context.
 
 scope:                               # PG-002: scope.includes + scope.excludes are required.
   includes:
@@ -60,8 +60,8 @@ outcomes:                            # Distinguishes this PG from peer PGs in th
   - <outcome-1>
 
 composes:                            # Canonical containment: L1 group --composes--> L2 BP.
-  - source_id: dea:group-<kebab-name>
-    target_id: dea:process-<kebab>   # PG-004: must match `^dea:process-[a-z0-9-]+$`.
+  - source_id: processes:group-<cell>-<hash>
+    target_id: processes:process-<kebab>   # PG-004: must match `^processes:process-[a-z0-9-]+$`.
     relationship_type: composes       # PG-004: must be exactly `composes`.
     status: active                   # PG-008: `active` lifecycle requires >=1 `status: active` composes.
     # Optional:

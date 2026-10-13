@@ -64,6 +64,9 @@ metadata:
   change_history:
   - cr: CR-BP-73
     date: '2026-09-15'
+  - cr: CR-BP-113
+    date: '2026-10-13'
+    summary: href targets repaired to post-mv1 layout (CR-BP-113)
     change: 'Initial L2 Process entry; the first canonical Business Process
 
       admitted at the AgencyAndOrganization x Retire coordinate, from
@@ -112,10 +115,10 @@ links:
 - rel: discovery-record-baseline
   href: discovery/v1-alpha/agency-and-organization-retire.yaml
 - rel: process-context
-  href: contexts/v1-alpha/dea-pc-ao-retire.yaml
+  href: entities/v1-alpha/ao-retire/processes-pc-ao-retire-3kqe9c.yaml
 - rel: process-group
-  href: entities/v1-alpha/dea:group-regulated-workforce-wind-down/dea:group-regulated-workforce-wind-down.yaml
+  href: entities/v1-alpha/ao-retire/ao-retire-jspuzz/processes-group-ao-retire-jspuzz.yaml
 - rel: l2-admission-deposition
-  href: entities/v1-alpha/dea:process-conduct-regulated-workforce-wind-down/research/l2-admission-deposition.yaml
+  href: entities/v1-alpha/ao-retire/ao-retire-jspuzz/ao-retire-g3eyr8/processes-process-ao-retire-g3eyr8.yaml
 context:
 - ref: processes:pc-ao-retire-3kqe9c

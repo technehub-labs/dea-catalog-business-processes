@@ -288,6 +288,29 @@ jobs:
         # gate (its sibling forward-going conformance gate).
         run: python scripts/check_reference_embargo.py --strict
 
+      - name: Run HREF Resolver gate (CR-BP-113; HREF-001..003)
+        if: steps.check.outputs.skip != 'true'
+        # New blocking gate (CR-BP-113, 2026-10-13). Closes the
+        # href-rotation enforcement gap: every relative href: in
+        # entities/ and discovery/ must resolve on disk. Repaired
+        # 272 broken hrefs across 189 files in the same CR.
+        run: python scripts/check_href_targets.py --strict
+
+      - name: Run Template Drift gate (CR-BP-113; TPL-001..005)
+        if: steps.check.outputs.skip != 'true'
+        # New blocking gate (CR-BP-113, 2026-10-13). Modernized 5
+        # entity templates to the processes:* id family; the gate
+        # makes template-vs-schema drift a CI failure instead of a
+        # recurring audit finding.
+        run: python scripts/check_templates.py --strict
+
+      - name: Run CR README Consistency gate (CR-BP-113; CRR-001..003)
+        if: steps.check.outputs.skip != 'true'
+        # New blocking gate (CR-BP-113, 2026-10-13). Repaired 148
+        # duplicate CR-BP-90 rows + added CR-BP-102/-113 rows. The
+        # gate keeps the hand-maintained table consistent.
+        run: python scripts/check_cr_readme.py --strict
+
       - name: Run ID System coherence gate (CR-BP-mv1; IDM-008, PR-scoped)
         if: steps.check.outputs.skip != 'true'
         run: |

@@ -36,19 +36,29 @@ ECF Domain × Lifecycle Stage
          │
          ▼
    L1 Process Group         (canonical; entities/v1-alpha/;
-         │       dea:group-*; PG-001..008)
+         │       processes:group-* id family;
+         │       PG-001..008)
          ▼
    L2 Business Process      (canonical; entities/v1-alpha/;
-         │       dea:process-*)
+         │       processes:process-* id family)
          ▼
    L3 Activity              (canonical; CR-BP-32;
-         │       entities/v1-alpha/; dea:activity-*;
+         │       entities/v1-alpha/;
+         │       processes:activity-* id family;
          │       ACT-001..010)
          ▼
-   Workflow / Task          (L4; future; authoritative
-                             metamodel; dea:Task lifecycle:
-                             proposed)
+   Workflow / Task          (L4; CR-BP-98;
+                             processes:task-* id family;
+                             task lifecycle: proposed)
 ```
+
+## Process Context (legacy note)
+
+Pre-mv1, the diagram used the dea:* id family (dea:group-*, dea:process-*,
+dea:activity-*, dea:Task); the mv1 migration (CR-BP-mv1, 2026-09-20)
+replaced these with processes:group-*, processes:process-*,
+processes:activity-*, processes:task-*. The migration id map
+(`reconciliation/migration-id-map.yaml`) is the audit trail.
 
 ## Process Context
 

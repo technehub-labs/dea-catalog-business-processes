@@ -9,7 +9,7 @@
 # pick this up on PR and generate a reclassification
 # recommendation.
 
-id: dea:contrib-bp-manage-customer-relationship
+id: dea:contrib-bp-manage-customer-relationship   # legacy contrib id (pre-mv1; the migration keeps the contribution id)
 schema: dea-catalog-processes/contribution/v1
 contribution_type: new-entry
 contribution_date: '2026-09-03'
@@ -17,8 +17,12 @@ contributor: dea-team
 status: pending
 
 # Reference to the canonical BP entry being contributed.
-target_entry: dea:process-manage-customer-relationship
-target_path: entities/v1-alpha/dea_bp_manage-customer-relationship.yaml
+# Pre-mv1 the id was dea:process-manage-customer-relationship; the
+# mv1 migration (CR-BP-mv1, 2026-09-20) rewrote it to
+# processes:process-pr-operate-bbe384 (the id map at
+# reconciliation/migration-id-map.yaml is the audit trail).
+target_entry: processes:process-pr-operate-bbe384
+target_path: entities/v1-alpha/pr-operate/pr-operate-7ab3ma/pr-operate-bbe384/processes-process-pr-operate-bbe384.yaml
 
 # Reference to the Process Context the entry belongs to.
 context_reference:

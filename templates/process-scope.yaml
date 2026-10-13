@@ -19,7 +19,7 @@
 #   it has no inputs, outputs, transformation, outcome, or trigger.
 #
 # Authoring flow:
-#   1. Copy this file to entities/v1-alpha/dea:scope-<kebab-name>/dea:scope-<kebab-name>.yaml.
+#   1. Copy this file to entities/v1-alpha/<cell>/<record-dir>/processes-scope-<cell>-<hash>.yaml.
 #   2. Replace every `<...>` placeholder with the actual value.
 #   3. Run: python scripts/check_process_scope.py --self-test  (sanity check)
 #   4. Run: python scripts/check_process_scope.py             (live gate)
@@ -32,7 +32,7 @@
 # `decomposition_basis.statement` field (1000 chars) force the author to
 # write substantive prose at the L0 layer.
 
-id: dea:scope-<kebab-name>          # PSCOPE-001: id must match `^dea:scope-[a-z0-9-]+$`. CR-BP-04 §4 family.
+id: processes:scope-<cell>-<hash>          # PSCOPE-001: id must match `^processes:scope-[a-z0-9-]+$`. CR-BP-04 §4 family.
 type: ProcessScope                  # PSCOPE-extra: discriminator; always `ProcessScope` for L0 entries.
 
 # -----------------------------------------------------------------------------
@@ -50,7 +50,7 @@ definition: |                        # 1-2000 chars; the normative semantic mean
   A good definition answers: 'What coherent process responsibility is bounded
   by this Scope?' See CR-BP-93 §3 for the normative definition pattern.>
 
-process_context: dea:pc-<kebab>     # PSCOPE-003: must match `^dea:pc-[a-z0-9-]+$` AND resolve to a known Process Context.
+process_context: processes:pc-<cell>     # PSCOPE-003: must match `^processes:pc-[a-z0-9-]+$` AND resolve to a known Process Context.
 
 scope:                               # PSCOPE-002: scope.includes + scope.excludes are required.
   includes:                          # Explicitly included enterprise responsibilities.
@@ -72,8 +72,8 @@ decomposition_basis:                 # Required (PSCOPE-002); PSCOPE-extra enfor
     <Example: 'Decomposes the customer-facing value stream at the L0 layer.'>
 
 composes:                            # Canonical containment: L0 scope --bounds--> L1 group.
-  - source_id: dea:scope-<kebab-name>
-    target_id: dea:group-<kebab>     # PSCOPE-004: must match `^dea:group-[a-z0-9-]+$`.
+  - source_id: processes:scope-<cell>-<hash>
+    target_id: processes:group-<kebab>     # PSCOPE-004: must match `^processes:group-[a-z0-9-]+$`.
     relationship_type: composes       # PSCOPE-004: must be exactly `composes` (not `part_of`, etc.).
     status: active                   # PSCOPE-008: `active` lifecycle_status requires at least one `status: active` composes.
     # Optional:

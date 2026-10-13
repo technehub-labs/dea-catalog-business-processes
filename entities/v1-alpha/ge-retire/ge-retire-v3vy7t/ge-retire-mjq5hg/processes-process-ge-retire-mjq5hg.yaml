@@ -52,6 +52,9 @@ metadata:
   change_history:
   - cr: CR-BP-78
     date: '2026-09-16'
+  - cr: CR-BP-113
+    date: '2026-10-13'
+    summary: href targets repaired to post-mv1 layout (CR-BP-113)
     change: 'Initial L2 Process entry; the first canonical Business
 
       Process admitted at the GovernanceAndExistence x
@@ -128,10 +131,10 @@ links:
 - rel: discovery-record-baseline
   href: discovery/v1-alpha/governance-and-existence-retire.yaml
 - rel: process-context
-  href: contexts/v1-alpha/dea-pc-ge-retire.yaml
+  href: entities/v1-alpha/ge-retire/processes-pc-ge-retire-kndw6x.yaml
 - rel: process-group
-  href: entities/v1-alpha/dea:group-regulated-governance-unwind/dea:group-regulated-governance-unwind.yaml
+  href: entities/v1-alpha/ge-retire/ge-retire-v3vy7t/processes-group-ge-retire-v3vy7t.yaml
 - rel: l1-register-cell
-  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+  href: entities/v1-alpha/pr-operate/pr-operate-7ab3ma/processes-group-pr-operate-7ab3ma.yaml
 context:
 - ref: processes:pc-ge-retire-kndw6x

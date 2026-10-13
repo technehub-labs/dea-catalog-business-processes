@@ -2,13 +2,13 @@ schema_version: 1
 report_at_run: CR-BP-16 S23
 report_at_source: scripts/build_conformance_report.py
 catalog_root: /home/hermes/dea-catalog-processes
-total_records: 3604
+total_records: 3724
 conformance_levels:
   0: 0
   1: 0
   2: 0
   3: 3
-  4: 3601
+  4: 3721
 records:
 - id: processes:task-ao-activate-confirm-r33pq9
   kind: Task
@@ -273,6 +273,246 @@ records:
 - id: processes:pc-ao-activate-kusw2u
   kind: Unknown
   path: entities/v1-alpha/ao-activate/processes-pc-ao-activate-kusw2u.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-build-confirm-4fj8hx
+  kind: Task
+  path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-bufzrw/ao-build-confirm-4fj8hx/processes-task-ao-build-confirm-4fj8hx.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-build-intake-dzu26c
+  kind: Task
+  path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-bufzrw/ao-build-intake-dzu26c/processes-task-ao-build-intake-dzu26c.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-build-record-8dkcu7
+  kind: Task
+  path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-bufzrw/ao-build-record-8dkcu7/processes-task-ao-build-record-8dkcu7.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-build-transform-bvpr2d
+  kind: Task
+  path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-bufzrw/ao-build-transform-bvpr2d/processes-task-ao-build-transform-bvpr2d.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-build-verify-bdy3ah
+  kind: Task
+  path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-bufzrw/ao-build-verify-bdy3ah/processes-task-ao-build-verify-bdy3ah.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:activity-ao-build-bufzrw
+  kind: Activity
+  path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-bufzrw/processes-activity-ao-build-bufzrw.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-build-confirm-sua2mx
+  kind: Task
+  path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-q7m3k9/ao-build-confirm-sua2mx/processes-task-ao-build-confirm-sua2mx.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-build-intake-nkc3gd
+  kind: Task
+  path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-q7m3k9/ao-build-intake-nkc3gd/processes-task-ao-build-intake-nkc3gd.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-build-record-4r92mc
+  kind: Task
+  path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-q7m3k9/ao-build-record-4r92mc/processes-task-ao-build-record-4r92mc.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-build-transform-u4fdxv
+  kind: Task
+  path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-q7m3k9/ao-build-transform-u4fdxv/processes-task-ao-build-transform-u4fdxv.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-build-verify-ukp8a5
+  kind: Task
+  path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-q7m3k9/ao-build-verify-ukp8a5/processes-task-ao-build-verify-ukp8a5.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:activity-ao-build-q7m3k9
+  kind: Activity
+  path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-q7m3k9/processes-activity-ao-build-q7m3k9.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-build-confirm-hdn7za
+  kind: Task
+  path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-r6h2t8/ao-build-confirm-hdn7za/processes-task-ao-build-confirm-hdn7za.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-build-intake-a8w9me
+  kind: Task
+  path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-r6h2t8/ao-build-intake-a8w9me/processes-task-ao-build-intake-a8w9me.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-build-record-3pf4q3
+  kind: Task
+  path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-r6h2t8/ao-build-record-3pf4q3/processes-task-ao-build-record-3pf4q3.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-build-transform-xh5297
+  kind: Task
+  path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-r6h2t8/ao-build-transform-xh5297/processes-task-ao-build-transform-xh5297.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-build-verify-nszspe
+  kind: Task
+  path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-r6h2t8/ao-build-verify-nszspe/processes-task-ao-build-verify-nszspe.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:activity-ao-build-r6h2t8
+  kind: Activity
+  path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-r6h2t8/processes-activity-ao-build-r6h2t8.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-build-confirm-39n9ka
+  kind: Task
+  path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-w2n8p4/ao-build-confirm-39n9ka/processes-task-ao-build-confirm-39n9ka.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-build-intake-brt26j
+  kind: Task
+  path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-w2n8p4/ao-build-intake-brt26j/processes-task-ao-build-intake-brt26j.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-build-record-ae9wh9
+  kind: Task
+  path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-w2n8p4/ao-build-record-ae9wh9/processes-task-ao-build-record-ae9wh9.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-build-transform-a7ebf9
+  kind: Task
+  path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-w2n8p4/ao-build-transform-a7ebf9/processes-task-ao-build-transform-a7ebf9.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-build-verify-scgrww
+  kind: Task
+  path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-w2n8p4/ao-build-verify-scgrww/processes-task-ao-build-verify-scgrww.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:activity-ao-build-w2n8p4
+  kind: Activity
+  path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-9my4jr/ao-build-w2n8p4/processes-activity-ao-build-w2n8p4.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -1060,6 +1300,246 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: processes:task-ao-conceive-confirm-fphn67
+  kind: Task
+  path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-cqkwrm/ao-conceive-confirm-fphn67/processes-task-ao-conceive-confirm-fphn67.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-conceive-intake-hb8x2r
+  kind: Task
+  path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-cqkwrm/ao-conceive-intake-hb8x2r/processes-task-ao-conceive-intake-hb8x2r.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-conceive-record-6v6fz2
+  kind: Task
+  path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-cqkwrm/ao-conceive-record-6v6fz2/processes-task-ao-conceive-record-6v6fz2.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-conceive-transform-j6caqr
+  kind: Task
+  path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-cqkwrm/ao-conceive-transform-j6caqr/processes-task-ao-conceive-transform-j6caqr.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-conceive-verify-skgr5k
+  kind: Task
+  path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-cqkwrm/ao-conceive-verify-skgr5k/processes-task-ao-conceive-verify-skgr5k.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:activity-ao-conceive-cqkwrm
+  kind: Activity
+  path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-cqkwrm/processes-activity-ao-conceive-cqkwrm.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-conceive-confirm-jcbwtd
+  kind: Task
+  path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-fmxtqr/ao-conceive-confirm-jcbwtd/processes-task-ao-conceive-confirm-jcbwtd.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-conceive-intake-xcxfzr
+  kind: Task
+  path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-fmxtqr/ao-conceive-intake-xcxfzr/processes-task-ao-conceive-intake-xcxfzr.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-conceive-record-27fbra
+  kind: Task
+  path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-fmxtqr/ao-conceive-record-27fbra/processes-task-ao-conceive-record-27fbra.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-conceive-transform-6cbb24
+  kind: Task
+  path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-fmxtqr/ao-conceive-transform-6cbb24/processes-task-ao-conceive-transform-6cbb24.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-conceive-verify-y9xpgd
+  kind: Task
+  path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-fmxtqr/ao-conceive-verify-y9xpgd/processes-task-ao-conceive-verify-y9xpgd.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:activity-ao-conceive-fmxtqr
+  kind: Activity
+  path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-fmxtqr/processes-activity-ao-conceive-fmxtqr.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-conceive-confirm-4qbj4s
+  kind: Task
+  path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-v7g5se/ao-conceive-confirm-4qbj4s/processes-task-ao-conceive-confirm-4qbj4s.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-conceive-intake-7mwjy4
+  kind: Task
+  path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-v7g5se/ao-conceive-intake-7mwjy4/processes-task-ao-conceive-intake-7mwjy4.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-conceive-record-v8ba6s
+  kind: Task
+  path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-v7g5se/ao-conceive-record-v8ba6s/processes-task-ao-conceive-record-v8ba6s.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-conceive-transform-cuzg3j
+  kind: Task
+  path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-v7g5se/ao-conceive-transform-cuzg3j/processes-task-ao-conceive-transform-cuzg3j.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-conceive-verify-w6zgtk
+  kind: Task
+  path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-v7g5se/ao-conceive-verify-w6zgtk/processes-task-ao-conceive-verify-w6zgtk.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:activity-ao-conceive-v7g5se
+  kind: Activity
+  path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-v7g5se/processes-activity-ao-conceive-v7g5se.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-conceive-confirm-x6w5je
+  kind: Task
+  path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-vnkqzf/ao-conceive-confirm-x6w5je/processes-task-ao-conceive-confirm-x6w5je.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-conceive-intake-fbn9db
+  kind: Task
+  path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-vnkqzf/ao-conceive-intake-fbn9db/processes-task-ao-conceive-intake-fbn9db.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-conceive-record-g2vktj
+  kind: Task
+  path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-vnkqzf/ao-conceive-record-g2vktj/processes-task-ao-conceive-record-g2vktj.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-conceive-transform-r7j36u
+  kind: Task
+  path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-vnkqzf/ao-conceive-transform-r7j36u/processes-task-ao-conceive-transform-r7j36u.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-conceive-verify-uut74e
+  kind: Task
+  path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-vnkqzf/ao-conceive-verify-uut74e/processes-task-ao-conceive-verify-uut74e.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:activity-ao-conceive-vnkqzf
+  kind: Activity
+  path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/ao-conceive-vnkqzf/processes-activity-ao-conceive-vnkqzf.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: processes:process-ao-conceive-pnrhem
   kind: Entity
   path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-pnrhem/processes-process-ao-conceive-pnrhem.yaml
@@ -1583,6 +2063,246 @@ records:
 - id: processes:pc-ao-conceive-wtq4cr
   kind: Unknown
   path: entities/v1-alpha/ao-conceive/processes-pc-ao-conceive-wtq4cr.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-design-confirm-txfv3t
+  kind: Task
+  path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-jbf2v9/ao-design-confirm-txfv3t/processes-task-ao-design-confirm-txfv3t.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-design-intake-n66qsv
+  kind: Task
+  path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-jbf2v9/ao-design-intake-n66qsv/processes-task-ao-design-intake-n66qsv.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-design-record-yq9m6a
+  kind: Task
+  path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-jbf2v9/ao-design-record-yq9m6a/processes-task-ao-design-record-yq9m6a.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-design-transform-jyfmbk
+  kind: Task
+  path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-jbf2v9/ao-design-transform-jyfmbk/processes-task-ao-design-transform-jyfmbk.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-design-verify-hkjsx6
+  kind: Task
+  path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-jbf2v9/ao-design-verify-hkjsx6/processes-task-ao-design-verify-hkjsx6.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:activity-ao-design-jbf2v9
+  kind: Activity
+  path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-jbf2v9/processes-activity-ao-design-jbf2v9.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-design-confirm-mhqjvd
+  kind: Task
+  path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-v8r5n2/ao-design-confirm-mhqjvd/processes-task-ao-design-confirm-mhqjvd.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-design-intake-v2uckf
+  kind: Task
+  path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-v8r5n2/ao-design-intake-v2uckf/processes-task-ao-design-intake-v2uckf.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-design-record-tq7syq
+  kind: Task
+  path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-v8r5n2/ao-design-record-tq7syq/processes-task-ao-design-record-tq7syq.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-design-transform-ftvjry
+  kind: Task
+  path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-v8r5n2/ao-design-transform-ftvjry/processes-task-ao-design-transform-ftvjry.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-design-verify-bwnb99
+  kind: Task
+  path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-v8r5n2/ao-design-verify-bwnb99/processes-task-ao-design-verify-bwnb99.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:activity-ao-design-v8r5n2
+  kind: Activity
+  path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-v8r5n2/processes-activity-ao-design-v8r5n2.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-design-confirm-kzcxkj
+  kind: Task
+  path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-wnqz3k/ao-design-confirm-kzcxkj/processes-task-ao-design-confirm-kzcxkj.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-design-intake-z2b5u6
+  kind: Task
+  path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-wnqz3k/ao-design-intake-z2b5u6/processes-task-ao-design-intake-z2b5u6.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-design-record-uj2gvu
+  kind: Task
+  path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-wnqz3k/ao-design-record-uj2gvu/processes-task-ao-design-record-uj2gvu.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-design-transform-7ydjtm
+  kind: Task
+  path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-wnqz3k/ao-design-transform-7ydjtm/processes-task-ao-design-transform-7ydjtm.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-design-verify-rcwfmv
+  kind: Task
+  path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-wnqz3k/ao-design-verify-rcwfmv/processes-task-ao-design-verify-rcwfmv.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:activity-ao-design-wnqz3k
+  kind: Activity
+  path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-wnqz3k/processes-activity-ao-design-wnqz3k.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-design-confirm-45k77k
+  kind: Task
+  path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-x9k4m7/ao-design-confirm-45k77k/processes-task-ao-design-confirm-45k77k.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-design-intake-gbaudu
+  kind: Task
+  path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-x9k4m7/ao-design-intake-gbaudu/processes-task-ao-design-intake-gbaudu.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-design-record-sfgczh
+  kind: Task
+  path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-x9k4m7/ao-design-record-sfgczh/processes-task-ao-design-record-sfgczh.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-design-transform-e8kqf9
+  kind: Task
+  path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-x9k4m7/ao-design-transform-e8kqf9/processes-task-ao-design-transform-e8kqf9.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-design-verify-mg9myj
+  kind: Task
+  path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-x9k4m7/ao-design-verify-mg9myj/processes-task-ao-design-verify-mg9myj.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:activity-ao-design-x9k4m7
+  kind: Activity
+  path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-2fkvhx/ao-design-x9k4m7/processes-activity-ao-design-x9k4m7.yaml
   level: 4
   level_breakdown:
     L1_structural: true
@@ -3120,6 +3840,246 @@ records:
     L3_architectural: true
     L4_canonical: true
   findings: []
+- id: processes:task-ao-improve-confirm-9c7p8d
+  kind: Task
+  path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-f2r6t4/ao-improve-confirm-9c7p8d/processes-task-ao-improve-confirm-9c7p8d.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-improve-intake-8z5x37
+  kind: Task
+  path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-f2r6t4/ao-improve-intake-8z5x37/processes-task-ao-improve-intake-8z5x37.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-improve-record-mxacts
+  kind: Task
+  path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-f2r6t4/ao-improve-record-mxacts/processes-task-ao-improve-record-mxacts.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-improve-transform-5ru9b8
+  kind: Task
+  path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-f2r6t4/ao-improve-transform-5ru9b8/processes-task-ao-improve-transform-5ru9b8.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-improve-verify-7v378y
+  kind: Task
+  path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-f2r6t4/ao-improve-verify-7v378y/processes-task-ao-improve-verify-7v378y.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:activity-ao-improve-f2r6t4
+  kind: Activity
+  path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-f2r6t4/processes-activity-ao-improve-f2r6t4.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-improve-confirm-wznc2k
+  kind: Task
+  path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-k9w5p8/ao-improve-confirm-wznc2k/processes-task-ao-improve-confirm-wznc2k.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-improve-intake-2kywd9
+  kind: Task
+  path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-k9w5p8/ao-improve-intake-2kywd9/processes-task-ao-improve-intake-2kywd9.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-improve-record-n8grq3
+  kind: Task
+  path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-k9w5p8/ao-improve-record-n8grq3/processes-task-ao-improve-record-n8grq3.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-improve-transform-mrtzs6
+  kind: Task
+  path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-k9w5p8/ao-improve-transform-mrtzs6/processes-task-ao-improve-transform-mrtzs6.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-improve-verify-gecaac
+  kind: Task
+  path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-k9w5p8/ao-improve-verify-gecaac/processes-task-ao-improve-verify-gecaac.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:activity-ao-improve-k9w5p8
+  kind: Activity
+  path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-k9w5p8/processes-activity-ao-improve-k9w5p8.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-improve-confirm-kjasgm
+  kind: Task
+  path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-uudtp5/ao-improve-confirm-kjasgm/processes-task-ao-improve-confirm-kjasgm.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-improve-intake-2p6kkf
+  kind: Task
+  path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-uudtp5/ao-improve-intake-2p6kkf/processes-task-ao-improve-intake-2p6kkf.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-improve-record-t8tmaf
+  kind: Task
+  path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-uudtp5/ao-improve-record-t8tmaf/processes-task-ao-improve-record-t8tmaf.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-improve-transform-kqp5u8
+  kind: Task
+  path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-uudtp5/ao-improve-transform-kqp5u8/processes-task-ao-improve-transform-kqp5u8.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-improve-verify-w6tr5u
+  kind: Task
+  path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-uudtp5/ao-improve-verify-w6tr5u/processes-task-ao-improve-verify-w6tr5u.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:activity-ao-improve-uudtp5
+  kind: Activity
+  path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-uudtp5/processes-activity-ao-improve-uudtp5.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-improve-confirm-gs6k8z
+  kind: Task
+  path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-x7m4n2/ao-improve-confirm-gs6k8z/processes-task-ao-improve-confirm-gs6k8z.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-improve-intake-hhw7w9
+  kind: Task
+  path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-x7m4n2/ao-improve-intake-hhw7w9/processes-task-ao-improve-intake-hhw7w9.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-improve-record-xq7t8z
+  kind: Task
+  path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-x7m4n2/ao-improve-record-xq7t8z/processes-task-ao-improve-record-xq7t8z.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-improve-transform-q4fw9x
+  kind: Task
+  path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-x7m4n2/ao-improve-transform-q4fw9x/processes-task-ao-improve-transform-q4fw9x.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-improve-verify-7jhktn
+  kind: Task
+  path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-x7m4n2/ao-improve-verify-7jhktn/processes-task-ao-improve-verify-7jhktn.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:activity-ao-improve-x7m4n2
+  kind: Activity
+  path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/ao-improve-x7m4n2/processes-activity-ao-improve-x7m4n2.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
 - id: processes:process-ao-improve-qqxe4d
   kind: Entity
   path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-qqxe4d/processes-process-ao-improve-qqxe4d.yaml
@@ -4143,6 +5103,246 @@ records:
 - id: processes:process-ao-operate-87q5mk
   kind: Entity
   path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-87q5mk/processes-process-ao-operate-87q5mk.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-operate-confirm-htefwz
+  kind: Task
+  path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-8pqgha/ao-operate-confirm-htefwz/processes-task-ao-operate-confirm-htefwz.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-operate-intake-dxpemv
+  kind: Task
+  path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-8pqgha/ao-operate-intake-dxpemv/processes-task-ao-operate-intake-dxpemv.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-operate-record-6gyw9t
+  kind: Task
+  path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-8pqgha/ao-operate-record-6gyw9t/processes-task-ao-operate-record-6gyw9t.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-operate-transform-rrhxq2
+  kind: Task
+  path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-8pqgha/ao-operate-transform-rrhxq2/processes-task-ao-operate-transform-rrhxq2.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-operate-verify-bpqpx5
+  kind: Task
+  path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-8pqgha/ao-operate-verify-bpqpx5/processes-task-ao-operate-verify-bpqpx5.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:activity-ao-operate-8pqgha
+  kind: Activity
+  path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-8pqgha/processes-activity-ao-operate-8pqgha.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-operate-confirm-3hp8aa
+  kind: Task
+  path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-b5v2k9/ao-operate-confirm-3hp8aa/processes-task-ao-operate-confirm-3hp8aa.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-operate-intake-prsqz4
+  kind: Task
+  path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-b5v2k9/ao-operate-intake-prsqz4/processes-task-ao-operate-intake-prsqz4.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-operate-record-2s4xe9
+  kind: Task
+  path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-b5v2k9/ao-operate-record-2s4xe9/processes-task-ao-operate-record-2s4xe9.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-operate-transform-q5dk3v
+  kind: Task
+  path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-b5v2k9/ao-operate-transform-q5dk3v/processes-task-ao-operate-transform-q5dk3v.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-operate-verify-uwg6mj
+  kind: Task
+  path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-b5v2k9/ao-operate-verify-uwg6mj/processes-task-ao-operate-verify-uwg6mj.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:activity-ao-operate-b5v2k9
+  kind: Activity
+  path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-b5v2k9/processes-activity-ao-operate-b5v2k9.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-operate-confirm-w5e9nz
+  kind: Task
+  path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-j8k5p7/ao-operate-confirm-w5e9nz/processes-task-ao-operate-confirm-w5e9nz.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-operate-intake-kkf6y8
+  kind: Task
+  path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-j8k5p7/ao-operate-intake-kkf6y8/processes-task-ao-operate-intake-kkf6y8.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-operate-record-dgbssv
+  kind: Task
+  path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-j8k5p7/ao-operate-record-dgbssv/processes-task-ao-operate-record-dgbssv.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-operate-transform-ex9jwn
+  kind: Task
+  path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-j8k5p7/ao-operate-transform-ex9jwn/processes-task-ao-operate-transform-ex9jwn.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-operate-verify-4uvtzn
+  kind: Task
+  path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-j8k5p7/ao-operate-verify-4uvtzn/processes-task-ao-operate-verify-4uvtzn.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:activity-ao-operate-j8k5p7
+  kind: Activity
+  path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-j8k5p7/processes-activity-ao-operate-j8k5p7.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-operate-confirm-qe5ck5
+  kind: Task
+  path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-z4n9m2/ao-operate-confirm-qe5ck5/processes-task-ao-operate-confirm-qe5ck5.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-operate-intake-f7sgdj
+  kind: Task
+  path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-z4n9m2/ao-operate-intake-f7sgdj/processes-task-ao-operate-intake-f7sgdj.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-operate-record-6um63p
+  kind: Task
+  path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-z4n9m2/ao-operate-record-6um63p/processes-task-ao-operate-record-6um63p.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-operate-transform-8yvfbt
+  kind: Task
+  path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-z4n9m2/ao-operate-transform-8yvfbt/processes-task-ao-operate-transform-8yvfbt.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:task-ao-operate-verify-yx6kge
+  kind: Task
+  path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-z4n9m2/ao-operate-verify-yx6kge/processes-task-ao-operate-verify-yx6kge.yaml
+  level: 4
+  level_breakdown:
+    L1_structural: true
+    L2_semantic: true
+    L3_architectural: true
+    L4_canonical: true
+  findings: []
+- id: processes:activity-ao-operate-z4n9m2
+  kind: Activity
+  path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-ba8scr/ao-operate-z4n9m2/processes-activity-ao-operate-z4n9m2.yaml
   level: 4
   level_breakdown:
     L1_structural: true

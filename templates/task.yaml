@@ -21,7 +21,7 @@
 #   in Workflow Definition, NOT in Task.
 #
 # Authoring flow:
-#   1. Copy to entities/v1-alpha/dea:task-<kebab-name>/dea:task-<kebab-name>.yaml.
+#   1. Copy to entities/v1-alpha/<cell>/<record-dir>/processes-task-<cell>-<hash>.yaml.
 #   2. Replace every `<...>` placeholder.
 #   3. The structural validator `scripts/check_task_model.py` (TASK-001..005)
 #      enforces the schema-derived invariants on every PR.
@@ -33,7 +33,7 @@
 # L4 tranche) have an authoritative authoring skeleton. CR-BP-98 lands the
 # formal schema and the TASK-001..005 gate that enforces it.
 
-id: dea:task-<kebab-name>           # CR-BP-04 §4 id family: dea:task-*.
+id: processes:task-<cell>-<hash>           # CR-BP-mv1 §4 id family: processes:task-*.
 type: Task                           # Discriminator; always `Task` for L4 entries.
 
 # -----------------------------------------------------------------------------
@@ -53,7 +53,7 @@ definition: |                        # 1-2000 chars; bounded, actionable, single
   A good definition answers: 'What is the single bounded unit of work?'
   A Task is independently verifiable for completion.>
 
-belongs_to_activity: dea:activity-<parent-activity-id>  # Must resolve to a canonical L3 Activity.
+belongs_to_activity: processes:activity-<parent-activity-id>  # Must resolve to a canonical L3 Activity.
 
 trigger: |                           # Required at L4 (per CR-BP-92 §5 matrix).
   <What initiates this Task. Single-responsibility, bounded.>

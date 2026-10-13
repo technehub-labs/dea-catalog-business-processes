@@ -81,6 +81,9 @@ status: candidate
 established_by: CR-BP-71
 established_at: '2026-09-15'
 change_history:
+- cr: CR-BP-113
+  date: '2026-10-13'
+  summary: href targets repaired to post-mv1 layout (CR-BP-113)
 - cr: CR-BP-71
   date: '2026-09-15'
   change: 'Initial Process Context record. The cell was backlog-deferred
@@ -114,4 +117,4 @@ links:
 - rel: discovery-record-baseline
   href: discovery/v1-alpha/party-and-relationship-activate.yaml
 - rel: research-register
-  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+  href: entities/v1-alpha/pr-operate/pr-operate-7ab3ma/processes-group-pr-operate-7ab3ma.yaml

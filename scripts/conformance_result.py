@@ -110,6 +110,12 @@ GATES: list[tuple[str, bool, list[str]]] = [
      True, ["python", "scripts/check_id_system.py"]),  # CR-BP-mv1; blocking
     ("[26] Reference Embargo (CR-BP-112; EMB-001..004)",
      True, ["python", "scripts/check_reference_embargo.py"]),  # CR-BP-112; blocking
+    ("[27] HREF Resolver (CR-BP-113; HREF-001..003)",
+     True, ["python", "scripts/check_href_targets.py"]),  # CR-BP-113; blocking
+    ("[28] Template Drift (CR-BP-113; TPL-001..005)",
+     True, ["python", "scripts/check_templates.py"]),  # CR-BP-113; blocking
+    ("[29] CR README Consistency (CR-BP-113; CRR-001..003)",
+     True, ["python", "scripts/check_cr_readme.py"]),  # CR-BP-113; blocking
 ]
 
 

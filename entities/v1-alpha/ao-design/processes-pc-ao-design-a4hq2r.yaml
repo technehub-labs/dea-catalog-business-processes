@@ -62,6 +62,9 @@ status: candidate
 established_by: CR-BP-21b
 established_at: '2026-09-07'
 change_history:
+- cr: CR-BP-113
+  date: '2026-10-13'
+  summary: href targets repaired to post-mv1 layout (CR-BP-113)
 - cr: CR-BP-21b.1
   date: '2026-09-08'
   change: 'Processes list extended with the remaining register v2 L2
@@ -86,4 +89,4 @@ links:
 - rel: predecessor
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
-  href: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+  href: entities/v1-alpha/pr-operate/pr-operate-7ab3ma/processes-group-pr-operate-7ab3ma.yaml

@@ -125,7 +125,7 @@ coincidence, not a semantic equivalence (BP-SEM-011).
 | **Intent** | `process_intent` (canonical CR-BP-14 vocabulary; legacy aliases readable) | govern / manage / operate / deliver / support / develop / transform | **Why does this work exist?** The purposeful nature of the work. |
 | **Classification** | `process_type` (canonical block form `process_classification`) | strategic / management / core / support / standardization | **Where is this process positioned in the process landscape?** The 5-component classification (Mintzberg). |
 | **Specialization** | `process_specialization` | list of parent process ids | **What is this process a specialization of?** Semantic refinement (CR-BP-14 §12). |
-| **Context** | `context` (canonical CR-BP-14 block; legacy `process_audience` is a migration alias) | array of `{ref: dea:pc-*}` + `serves` / `contributes-to` relationships toward ECF coordinates | **Where is the responsibility examined?** ECF Domain × Lifecycle Stage. |
+| **Context** | `context` (canonical CR-BP-14 block; legacy `process_audience` is a migration alias) | array of `{ref: processes:pc-<cell>-<hash>}` + `serves` / `contributes-to` relationships toward ECF coordinates | **Where is the responsibility examined?** ECF Domain × Lifecycle Stage. |
 
 The four axes are **additive** and **optional individually**; entries
 can declare any subset. `process_type` defaults to `core` when the
@@ -1231,17 +1231,21 @@ The Business Process Catalog is therefore intended to become a foundational comp
 
 # Sample entry
 
-The catalog's **first** Business Process entry —
-`dea:process-manage-customer-relationship` ("Manage Customer
-Relationship"): lands with this tranche (CR-BP-03C). It
-exercises every part of the machinery: 4-axis
+The catalog's **first** Business Process entry was admitted under
+CR-BP-03C as the legacy `dea:process-manage-customer-relationship`
+("Manage Customer Relationship"). Under the CR-BP-mv1 migration
+(2026-09-20) the record was rewritten to the canonical
+`processes:process-pr-operate-bbe384` form and now lives at
+`entities/v1-alpha/pr-operate/pr-operate-7ab3ma/pr-operate-bbe384/processes-process-pr-operate-bbe384.yaml`.
+It exercises every part of the machinery: 4-axis
 classification, identity contract, canonical relationships,
 L0/L1/L2 conceptual hierarchy, Process Context reference,
 and ECF Conformance Gate. Future contributors should
 **pattern-match against this entry**.
 
 See [`docs/examples/manage-customer-relationship.md`](docs/examples/manage-customer-relationship.md)
-for the full walk-through.
+for the full walk-through (legacy id form noted in a "Legacy
+attribution" section for audit).
 
 # Contributing a new Business Process entry
 

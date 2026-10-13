@@ -46,6 +46,9 @@ metadata:
   change_history:
   - cr: CR-BP-65
     date: '2026-09-14'
+  - cr: CR-BP-113
+    date: '2026-10-13'
+    summary: href targets repaired to post-mv1 layout (CR-BP-113)
     change: 'Initial L2 Process entry; the first canonical Business Process
 
       admitted at a GovernanceAndExistence Activate coordinate, from
@@ -72,6 +75,6 @@ links:
 - rel: discovery-record
   href: discovery/v1-alpha/governance-and-existence-activate.yaml
 - rel: process-context
-  href: contexts/v1-alpha/dea-pc-ge-activate.yaml
+  href: entities/v1-alpha/ge-activate/processes-pc-ge-activate-hxtfcv.yaml
 context:
 - ref: processes:pc-ge-activate-hxtfcv
