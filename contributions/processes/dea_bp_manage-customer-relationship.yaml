@@ -26,7 +26,7 @@ target_path: entities/v1-alpha/pr-operate/pr-operate-7ab3ma/pr-operate-bbe384/pr
 
 # Reference to the Process Context the entry belongs to.
 context_reference:
-  context_id: dea:pc-pr-op
+  context_id: processes:pc-pr-operate-pwue5a
   domain: PartyAndRelationship
   lifecycle_stage: Operate
 
@@ -34,7 +34,7 @@ context_reference:
 # The CI reclassification workflow will read this and emit
 # a recommendation.
 proposed_entry:
-  id: dea:process-manage-customer-relationship
+  id: processes:process-pr-operate-bbe384
   name: Manage Customer Relationship
   type: Process
   version: 1.0.0
@@ -72,7 +72,7 @@ proposed_entry:
     handling, and renewal coordination.
 
   # Process Context
-  process_context: dea:pc-pr-op
+  process_context: processes:pc-pr-operate-pwue5a
 
   # Identity contract
   identity:
@@ -92,7 +92,7 @@ proposed_entry:
 
   # Canonical relationships
   relationships:
-    - source_id: dea:process-manage-customer-relationship
+    - source_id: processes:process-pr-operate-bbe384
       target_id: dea:entity-capability:manage-customer-relationship
       relationship_type: realizes
       status: active
@@ -116,7 +116,7 @@ proposed_entry:
       id: dea:scope-customer-facing-operations
       name: Customer-facing operations
     group:
-      id: dea:group-customer-lifecycle-management
+      id: processes:group-pr-operate-7ab3ma
       name: Customer Lifecycle Management
 
   # ECF Conformance Gate
