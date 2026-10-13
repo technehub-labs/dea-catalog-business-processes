@@ -311,6 +311,14 @@ jobs:
         # gate keeps the hand-maintained table consistent.
         run: python scripts/check_cr_readme.py --strict
 
+      - name: Run README Consistency gate (CR-BP-114; RDM-001..002)
+        if: steps.check.outputs.skip != 'true'
+        # New blocking gate (CR-BP-114, 2026-10-13). Record READMEs
+        # are a generated artifact: the entity record is the source
+        # of truth, scripts/generate_readmes.py renders, this gate
+        # verifies byte-exact. 3,723 READMEs regenerated post-mv1.
+        run: python scripts/check_readme_consistency.py --strict
+
       - name: Run ID System coherence gate (CR-BP-mv1; IDM-008, PR-scoped)
         if: steps.check.outputs.skip != 'true'
         run: |

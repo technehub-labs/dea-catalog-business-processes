@@ -63,8 +63,21 @@ When the next release is due:
 1. Move the `[Unreleased]` section to a dated `[vN.M.P]` section in
    `CHANGELOG.md`.
 2. Update `CITATION.cff` (`version`, `date-released`, `url`).
-3. Merge the carrier PR to `main`.
-4. `git tag -s vN.M.P -m "vN.M.P" <merge-commit-sha>` on `main`.
-5. `git push --tags` to `origin`.
-6. `gh release create vN.M.P --repo technehub-labs/dea-catalog-processes
+3. Verify the generated artifacts are current (CR-BP-114): record
+   READMEs are a generated artifact of the entity records; the release
+   snapshot must carry READMEs consistent with the records they
+   document.
+   - `python scripts/generate_readmes.py --force` (regenerate; commit
+     as a separate `chore:` commit if anything moved, BEFORE the
+     carrier PR merges).
+   - `python scripts/check_readme_consistency.py --strict` must exit 0.
+   - `python scripts/regenerate_catalog.py --check --schema catalog-index-schema/catalog-index-schema.json`
+     must exit 0 (existing rule; README regeneration does not move
+     CATALOG counts but entity edits that prompted it do).
+   - `python scripts/conformance_result.py` must report the full gate
+     set CONFORMANT.
+4. Merge the carrier PR to `main`.
+5. `git tag -s vN.M.P -m "vN.M.P" <merge-commit-sha>` on `main`.
+6. `git push --tags` to `origin`.
+7. `gh release create vN.M.P --repo technehub-labs/dea-catalog-processes
    --title "vN.M.P" --notes-file <CHANGELOG-vN.M.P-section.md>`.

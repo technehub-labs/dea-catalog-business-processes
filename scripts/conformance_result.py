@@ -116,6 +116,8 @@ GATES: list[tuple[str, bool, list[str]]] = [
      True, ["python", "scripts/check_templates.py"]),  # CR-BP-113; blocking
     ("[29] CR README Consistency (CR-BP-113; CRR-001..003)",
      True, ["python", "scripts/check_cr_readme.py"]),  # CR-BP-113; blocking
+    ("[30] README Consistency (CR-BP-114; RDM-001..002)",
+     True, ["python", "scripts/check_readme_consistency.py"]),  # CR-BP-114; blocking
 ]
 
 

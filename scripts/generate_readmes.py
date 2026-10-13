@@ -184,10 +184,13 @@ def render_section(
     version = record.get("version", "1.0.0")
 
     if section_id == "entity-identity":
+        # L0 ProcessContext records lack an explicit `type` field
+        # (CR-BP-02 §3); report the canonical type label (CR-BP-114).
+        display_type = "ProcessContext" if (level == "L0" and rtype == "Record") else rtype
         lines = [
             f"- **Canonical id**: `{rid}`",
             f"- **Name**: {name}",
-            f"- **Type**: {rtype}",
+            f"- **Type**: {display_type}",
             f"- **Level**: {level}",
             f"- **Version**: {version}",
             f"- **Lifecycle status**: {record.get('lifecycle_status', 'candidate')}",
@@ -446,6 +449,21 @@ def main(argv: list[str] | None = None) -> int:
         default=None,
         help="Restrict generation to a single record directory.",
     )
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Overwrite existing READMEs (CR-BP-114: regeneration, not just fill-in).",
+    )
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help=(
+            "Drift check (CR-BP-114): recompute every README in memory and "
+            "compare against the on-disk content. Exits 3 and lists drifted "
+            "paths when any README is missing or stale; exits 0 when the "
+            "tree is current. Mirrors regenerate_catalog.py --check."
+        ),
+    )
     args = parser.parse_args(argv)
 
     paths = resolve_record_paths()
@@ -461,6 +479,7 @@ def main(argv: list[str] | None = None) -> int:
     written = 0
     skipped_existing = 0
     skipped_invalid = 0
+    drifted: list[tuple[Path, str]] = []
     for path in paths:
         record = load_record(path)
         if record is None:
@@ -471,12 +490,23 @@ def main(argv: list[str] | None = None) -> int:
             skipped_invalid += 1
             continue
         readme_path = resolve_readme_path(path, rid := record.get("id", ""))
-        if readme_path.exists():
-            skipped_existing += 1
-            continue
         content = generate_readme(record, level)
         if not content:
             skipped_invalid += 1
+            continue
+        if args.check:
+            if not readme_path.exists():
+                drifted.append((readme_path, "missing"))
+            else:
+                try:
+                    on_disk = readme_path.read_text()
+                except OSError:
+                    on_disk = None
+                if on_disk != content:
+                    drifted.append((readme_path, "stale"))
+            continue
+        if readme_path.exists() and not args.force:
+            skipped_existing += 1
             continue
         if args.dry_run:
             print(f"[dry-run] would write {readme_path} ({len(content)} bytes)")
@@ -484,6 +514,20 @@ def main(argv: list[str] | None = None) -> int:
             readme_path.parent.mkdir(parents=True, exist_ok=True)
             readme_path.write_text(content)
         written += 1
+
+    if args.check:
+        for p, why in drifted[:50]:
+            print(f"DRIFT ({why}): {p.relative_to(REPO_ROOT)}")
+        if len(drifted) > 50:
+            print(f"... and {len(drifted) - 50} more")
+        if drifted:
+            print(
+                f"ERROR: {len(drifted)} README(s) missing or stale; "
+                f"run `python scripts/generate_readmes.py --force` to refresh"
+            )
+            return 3
+        print(f"OK: {len(paths)} record README(s) current")
+        return 0
 
     print(
         f"generate_readmes: written={written} "
