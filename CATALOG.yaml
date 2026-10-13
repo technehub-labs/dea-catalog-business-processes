@@ -6402,7 +6402,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-ao-activate-jjx738
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-activate/ao-activate-jjx738/processes-group-ao-activate-jjx738.yaml
     research_count: 0
@@ -6413,7 +6413,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-ao-build-m6fmyx
-    last_modified: '2026-10-12'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-build/ao-build-m6fmyx/processes-group-ao-build-m6fmyx.yaml
     research_count: 0
@@ -6424,7 +6424,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-ao-conceive-bwjhgd
-    last_modified: '2026-10-12'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/processes-group-ao-conceive-bwjhgd.yaml
     research_count: 0
@@ -6435,7 +6435,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-ao-design-pjrfr9
-    last_modified: '2026-10-12'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-design/ao-design-pjrfr9/processes-group-ao-design-pjrfr9.yaml
     research_count: 0
@@ -6446,7 +6446,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-ao-improve-su4c8p
-    last_modified: '2026-10-12'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/processes-group-ao-improve-su4c8p.yaml
     research_count: 0
@@ -6457,7 +6457,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-ao-operate-35gmps
-    last_modified: '2026-10-12'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-operate/ao-operate-35gmps/processes-group-ao-operate-35gmps.yaml
     research_count: 0
@@ -6468,7 +6468,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-ao-retire-jspuzz
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-retire/ao-retire-jspuzz/processes-group-ao-retire-jspuzz.yaml
     research_count: 0
@@ -6490,7 +6490,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-eo-build-7pur27
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-build/eo-build-7pur27/processes-group-eo-build-7pur27.yaml
     research_count: 0
@@ -6501,7 +6501,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-eo-conceive-j6n4f7
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-conceive/eo-conceive-j6n4f7/processes-group-eo-conceive-j6n4f7.yaml
     research_count: 0
@@ -6512,7 +6512,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-eo-design-g6dmdk
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-design/eo-design-g6dmdk/processes-group-eo-design-g6dmdk.yaml
     research_count: 0
@@ -6523,7 +6523,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-eo-improve-c8uff9
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-improve/eo-improve-c8uff9/processes-group-eo-improve-c8uff9.yaml
     research_count: 0
@@ -6534,7 +6534,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-eo-operate-bfd7jb
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-operate/eo-operate-bfd7jb/processes-group-eo-operate-bfd7jb.yaml
     research_count: 0
@@ -6545,7 +6545,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-eo-retire-n9ge5c
-    last_modified: '2026-09-22'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-retire/eo-retire-n9ge5c/processes-group-eo-retire-n9ge5c.yaml
     research_count: 0
@@ -6567,7 +6567,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-fa-build-d7ww77
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/fa-build/fa-build-d7ww77/processes-group-fa-build-d7ww77.yaml
     research_count: 0
@@ -6578,7 +6578,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-fa-conceive-9xzf3b
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/fa-conceive/fa-conceive-9xzf3b/processes-group-fa-conceive-9xzf3b.yaml
     research_count: 0
@@ -6589,7 +6589,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-fa-design-7juvse
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/fa-design/fa-design-7juvse/processes-group-fa-design-7juvse.yaml
     research_count: 0
@@ -6600,7 +6600,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-fa-improve-hvq8u8
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/fa-improve/fa-improve-hvq8u8/processes-group-fa-improve-hvq8u8.yaml
     research_count: 0
@@ -6611,7 +6611,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-fa-operate-mazyjd
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/fa-operate/fa-operate-mazyjd/processes-group-fa-operate-mazyjd.yaml
     research_count: 0
@@ -6622,7 +6622,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-fa-retire-2ptdnw
-    last_modified: '2026-09-22'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/fa-retire/fa-retire-2ptdnw/processes-group-fa-retire-2ptdnw.yaml
     research_count: 0
@@ -6633,7 +6633,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-ge-activate-7d46tn
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ge-activate/ge-activate-7d46tn/processes-group-ge-activate-7d46tn.yaml
     research_count: 0
@@ -6644,7 +6644,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:group-ge-build-tbc3ta
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ge-build/ge-build-tbc3ta/processes-group-ge-build-tbc3ta.yaml
     research_count: 2
@@ -6655,7 +6655,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:group-ge-conceive-y93bwr
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ge-conceive/ge-conceive-y93bwr/processes-group-ge-conceive-y93bwr.yaml
     research_count: 2
@@ -6666,7 +6666,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:group-ge-design-jexyp6
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ge-design/ge-design-jexyp6/processes-group-ge-design-jexyp6.yaml
     research_count: 2
@@ -6677,7 +6677,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:group-ge-improve-s9r3qj
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ge-improve/ge-improve-s9r3qj/processes-group-ge-improve-s9r3qj.yaml
     research_count: 2
@@ -6688,7 +6688,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:group-ge-operate-v2eu8x
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ge-operate/ge-operate-v2eu8x/processes-group-ge-operate-v2eu8x.yaml
     research_count: 2
@@ -6699,7 +6699,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-ge-retire-v3vy7t
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ge-retire/ge-retire-v3vy7t/processes-group-ge-retire-v3vy7t.yaml
     research_count: 0
@@ -6710,7 +6710,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-pr-activate-d7j4et
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-activate/pr-activate-d7j4et/processes-group-pr-activate-d7j4et.yaml
     research_count: 0
@@ -6721,7 +6721,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:group-pr-build-7u5xj6
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-build/pr-build-7u5xj6/processes-group-pr-build-7u5xj6.yaml
     research_count: 2
@@ -6732,7 +6732,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:group-pr-conceive-rv32m4
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-conceive/pr-conceive-rv32m4/processes-group-pr-conceive-rv32m4.yaml
     research_count: 2
@@ -6743,7 +6743,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:group-pr-design-enpedx
-    last_modified: '2026-09-22'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-design/pr-design-enpedx/processes-group-pr-design-enpedx.yaml
     research_count: 2
@@ -6754,7 +6754,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:group-pr-improve-zpb8e3
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-improve/pr-improve-zpb8e3/processes-group-pr-improve-zpb8e3.yaml
     research_count: 2
@@ -6765,7 +6765,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:group-pr-operate-7ab3ma
-    last_modified: '2026-09-22'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-operate/pr-operate-7ab3ma/processes-group-pr-operate-7ab3ma.yaml
     research_count: 4
@@ -6776,7 +6776,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-pr-retire-c3u3wc
-    last_modified: '2026-09-22'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-retire/pr-retire-c3u3wc/processes-group-pr-retire-c3u3wc.yaml
     research_count: 0
@@ -6787,7 +6787,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-pv-activate-e7fdrk
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-activate/pv-activate-e7fdrk/processes-group-pv-activate-e7fdrk.yaml
     research_count: 0
@@ -6798,7 +6798,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-pv-build-g6sua5
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-build/pv-build-g6sua5/processes-group-pv-build-g6sua5.yaml
     research_count: 0
@@ -6809,7 +6809,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-pv-conceive-geej6b
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-conceive/pv-conceive-geej6b/processes-group-pv-conceive-geej6b.yaml
     research_count: 0
@@ -6820,7 +6820,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-pv-design-msz6da
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-design/pv-design-msz6da/processes-group-pv-design-msz6da.yaml
     research_count: 0
@@ -6831,7 +6831,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-pv-improve-rjab8b
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-improve/pv-improve-rjab8b/processes-group-pv-improve-rjab8b.yaml
     research_count: 0
@@ -6842,7 +6842,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-pv-operate-ah3322
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-operate/pv-operate-ah3322/processes-group-pv-operate-ah3322.yaml
     research_count: 0
@@ -6853,7 +6853,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-pv-retire-buqktk
-    last_modified: '2026-09-22'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-retire/pv-retire-buqktk/processes-group-pv-retire-buqktk.yaml
     research_count: 0
@@ -6875,7 +6875,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-sd-build-tnq4p6
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-build/sd-build-tnq4p6/processes-group-sd-build-tnq4p6.yaml
     research_count: 0
@@ -6886,7 +6886,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-sd-conceive-7qhvzn
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-conceive/sd-conceive-7qhvzn/processes-group-sd-conceive-7qhvzn.yaml
     research_count: 0
@@ -6897,7 +6897,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-sd-design-q4mj9z
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-design/sd-design-q4mj9z/processes-group-sd-design-q4mj9z.yaml
     research_count: 0
@@ -6908,7 +6908,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-sd-improve-vdz4xp
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-improve/sd-improve-vdz4xp/processes-group-sd-improve-vdz4xp.yaml
     research_count: 0
@@ -6919,7 +6919,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:group-sd-operate-22epxr
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-operate/sd-operate-22epxr/processes-group-sd-operate-22epxr.yaml
     research_count: 0
@@ -6941,7 +6941,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-ao-activate-kusw2u
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: unknown
     path: entities/v1-alpha/ao-activate/processes-pc-ao-activate-kusw2u.yaml
     research_count: 0
@@ -6952,7 +6952,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-ao-build-pjk4rz
-    last_modified: '2026-10-12'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-build/processes-pc-ao-build-pjk4rz.yaml
     research_count: 0
@@ -6963,7 +6963,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-ao-conceive-wtq4cr
-    last_modified: '2026-10-12'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-conceive/processes-pc-ao-conceive-wtq4cr.yaml
     research_count: 0
@@ -6974,7 +6974,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-ao-design-a4hq2r
-    last_modified: '2026-10-12'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-design/processes-pc-ao-design-a4hq2r.yaml
     research_count: 0
@@ -6985,7 +6985,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-ao-improve-qkmh6b
-    last_modified: '2026-10-12'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-improve/processes-pc-ao-improve-qkmh6b.yaml
     research_count: 0
@@ -6996,7 +6996,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-ao-operate-zfevmp
-    last_modified: '2026-10-12'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-operate/processes-pc-ao-operate-zfevmp.yaml
     research_count: 0
@@ -7007,7 +7007,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-ao-retire-3kqe9c
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: unknown
     path: entities/v1-alpha/ao-retire/processes-pc-ao-retire-3kqe9c.yaml
     research_count: 0
@@ -7029,7 +7029,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-eo-build-zwkhxc
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-build/processes-pc-eo-build-zwkhxc.yaml
     research_count: 0
@@ -7040,7 +7040,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-eo-conceive-mxmtzq
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-conceive/processes-pc-eo-conceive-mxmtzq.yaml
     research_count: 0
@@ -7051,7 +7051,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-eo-design-kxdfnz
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-design/processes-pc-eo-design-kxdfnz.yaml
     research_count: 0
@@ -7062,7 +7062,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-eo-improve-pka6dk
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-improve/processes-pc-eo-improve-pka6dk.yaml
     research_count: 0
@@ -7073,7 +7073,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-eo-operate-ydqb96
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-operate/processes-pc-eo-operate-ydqb96.yaml
     research_count: 0
@@ -7084,7 +7084,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-eo-retire-nw3ynf
-    last_modified: '2026-09-22'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-retire/processes-pc-eo-retire-nw3ynf.yaml
     research_count: 0
@@ -7106,7 +7106,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-fa-build-pztsp9
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/fa-build/processes-pc-fa-build-pztsp9.yaml
     research_count: 0
@@ -7117,7 +7117,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-fa-conceive-phabh2
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/fa-conceive/processes-pc-fa-conceive-phabh2.yaml
     research_count: 0
@@ -7128,7 +7128,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-fa-design-4j8evh
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/fa-design/processes-pc-fa-design-4j8evh.yaml
     research_count: 0
@@ -7139,7 +7139,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-fa-improve-haqf4w
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/fa-improve/processes-pc-fa-improve-haqf4w.yaml
     research_count: 0
@@ -7150,7 +7150,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-fa-operate-afew7e
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/fa-operate/processes-pc-fa-operate-afew7e.yaml
     research_count: 0
@@ -7161,7 +7161,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-fa-retire-64q5p9
-    last_modified: '2026-09-22'
+    last_modified: '2026-10-13'
     lifecycle_status: unknown
     path: entities/v1-alpha/fa-retire/processes-pc-fa-retire-64q5p9.yaml
     research_count: 0
@@ -7172,7 +7172,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-ge-activate-hxtfcv
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ge-activate/processes-pc-ge-activate-hxtfcv.yaml
     research_count: 0
@@ -7183,7 +7183,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-ge-build-52hjrc
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ge-build/processes-pc-ge-build-52hjrc.yaml
     research_count: 0
@@ -7194,7 +7194,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-ge-conceive-b5xwpd
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ge-conceive/processes-pc-ge-conceive-b5xwpd.yaml
     research_count: 0
@@ -7205,7 +7205,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-ge-design-3f2gjr
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ge-design/processes-pc-ge-design-3f2gjr.yaml
     research_count: 0
@@ -7216,7 +7216,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-ge-improve-c78ppp
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ge-improve/processes-pc-ge-improve-c78ppp.yaml
     research_count: 0
@@ -7227,7 +7227,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-ge-operate-hb2dac
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ge-operate/processes-pc-ge-operate-hb2dac.yaml
     research_count: 0
@@ -7238,7 +7238,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-ge-retire-kndw6x
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: unknown
     path: entities/v1-alpha/ge-retire/processes-pc-ge-retire-kndw6x.yaml
     research_count: 0
@@ -7249,7 +7249,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-pr-activate-mwq7bj
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-activate/processes-pc-pr-activate-mwq7bj.yaml
     research_count: 0
@@ -7260,7 +7260,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-pr-build-a46hp7
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-build/processes-pc-pr-build-a46hp7.yaml
     research_count: 0
@@ -7271,7 +7271,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-pr-conceive-6xztsq
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-conceive/processes-pc-pr-conceive-6xztsq.yaml
     research_count: 0
@@ -7282,7 +7282,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-pr-design-hrcdy4
-    last_modified: '2026-09-22'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-design/processes-pc-pr-design-hrcdy4.yaml
     research_count: 0
@@ -7293,7 +7293,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-pr-improve-k8phkn
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-improve/processes-pc-pr-improve-k8phkn.yaml
     research_count: 0
@@ -7304,7 +7304,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-pr-operate-pwue5a
-    last_modified: '2026-09-22'
+    last_modified: '2026-10-13'
     lifecycle_status: unknown
     path: entities/v1-alpha/pr-operate/processes-pc-pr-operate-pwue5a.yaml
     research_count: 0
@@ -7315,7 +7315,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-pr-retire-2cusde
-    last_modified: '2026-09-22'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-retire/processes-pc-pr-retire-2cusde.yaml
     research_count: 0
@@ -7326,7 +7326,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-pv-activate-f7kne7
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-activate/processes-pc-pv-activate-f7kne7.yaml
     research_count: 0
@@ -7337,7 +7337,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-pv-build-ygbmxb
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-build/processes-pc-pv-build-ygbmxb.yaml
     research_count: 0
@@ -7348,7 +7348,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-pv-conceive-fe9awk
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-conceive/processes-pc-pv-conceive-fe9awk.yaml
     research_count: 0
@@ -7359,7 +7359,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-pv-design-8dhwpn
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-design/processes-pc-pv-design-8dhwpn.yaml
     research_count: 0
@@ -7370,7 +7370,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-pv-improve-wpyfx7
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-improve/processes-pc-pv-improve-wpyfx7.yaml
     research_count: 0
@@ -7381,7 +7381,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-pv-operate-ewpwjc
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-operate/processes-pc-pv-operate-ewpwjc.yaml
     research_count: 0
@@ -7392,7 +7392,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-pv-retire-eeck6d
-    last_modified: '2026-09-22'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-retire/processes-pc-pv-retire-eeck6d.yaml
     research_count: 0
@@ -7414,7 +7414,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-sd-build-gmzrrm
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-build/processes-pc-sd-build-gmzrrm.yaml
     research_count: 0
@@ -7425,7 +7425,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-sd-conceive-ucb3gx
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-conceive/processes-pc-sd-conceive-ucb3gx.yaml
     research_count: 0
@@ -7436,7 +7436,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-sd-design-g3es76
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-design/processes-pc-sd-design-g3es76.yaml
     research_count: 0
@@ -7447,7 +7447,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-sd-improve-ft9k5f
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-improve/processes-pc-sd-improve-ft9k5f.yaml
     research_count: 0
@@ -7458,7 +7458,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-sd-operate-5cs5ee
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-operate/processes-pc-sd-operate-5cs5ee.yaml
     research_count: 0
@@ -7480,7 +7480,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-ao-activate-jqxtqn
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-activate/ao-activate-jjx738/ao-activate-jqxtqn/processes-process-ao-activate-jqxtqn.yaml
     research_count: 3
@@ -7502,7 +7502,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-ao-build-b38bkg
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-b38bkg/processes-process-ao-build-b38bkg.yaml
     research_count: 2
@@ -7513,7 +7513,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-ao-build-w2qurd
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-build/ao-build-m6fmyx/ao-build-w2qurd/processes-process-ao-build-w2qurd.yaml
     research_count: 2
@@ -7524,7 +7524,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-ao-conceive-e3u8s2
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-e3u8s2/processes-process-ao-conceive-e3u8s2.yaml
     research_count: 2
@@ -7546,7 +7546,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-ao-conceive-ruxjvh
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-ruxjvh/processes-process-ao-conceive-ruxjvh.yaml
     research_count: 2
@@ -7557,7 +7557,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-ao-conceive-z6m6p5
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-conceive/ao-conceive-bwjhgd/ao-conceive-z6m6p5/processes-process-ao-conceive-z6m6p5.yaml
     research_count: 2
@@ -7579,7 +7579,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-ao-design-34e95r
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-34e95r/processes-process-ao-design-34e95r.yaml
     research_count: 2
@@ -7590,7 +7590,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-ao-design-7dkbur
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-7dkbur/processes-process-ao-design-7dkbur.yaml
     research_count: 2
@@ -7601,7 +7601,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-ao-design-8fzp2b
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-8fzp2b/processes-process-ao-design-8fzp2b.yaml
     research_count: 2
@@ -7612,7 +7612,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-ao-design-rve8j5
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-design/ao-design-pjrfr9/ao-design-rve8j5/processes-process-ao-design-rve8j5.yaml
     research_count: 2
@@ -7623,7 +7623,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-ao-improve-edjyha
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-edjyha/processes-process-ao-improve-edjyha.yaml
     research_count: 2
@@ -7634,7 +7634,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-ao-improve-h3vgyf
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-h3vgyf/processes-process-ao-improve-h3vgyf.yaml
     research_count: 2
@@ -7656,7 +7656,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-ao-improve-xfh8na
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-xfh8na/processes-process-ao-improve-xfh8na.yaml
     research_count: 2
@@ -7667,7 +7667,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-ao-improve-xs59e2
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-improve/ao-improve-su4c8p/ao-improve-xs59e2/processes-process-ao-improve-xs59e2.yaml
     research_count: 2
@@ -7678,7 +7678,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-ao-operate-38qyc6
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-38qyc6/processes-process-ao-operate-38qyc6.yaml
     research_count: 2
@@ -7689,7 +7689,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-ao-operate-87q5mk
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-87q5mk/processes-process-ao-operate-87q5mk.yaml
     research_count: 2
@@ -7711,7 +7711,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-ao-operate-bd7mef
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-bd7mef/processes-process-ao-operate-bd7mef.yaml
     research_count: 2
@@ -7722,7 +7722,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-ao-operate-dg9q4h
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-dg9q4h/processes-process-ao-operate-dg9q4h.yaml
     research_count: 2
@@ -7733,7 +7733,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-ao-operate-g4wp63
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-operate/ao-operate-35gmps/ao-operate-g4wp63/processes-process-ao-operate-g4wp63.yaml
     research_count: 2
@@ -7744,7 +7744,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-ao-retire-g3eyr8
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-retire/ao-retire-jspuzz/ao-retire-g3eyr8/processes-process-ao-retire-g3eyr8.yaml
     research_count: 3
@@ -7766,7 +7766,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-build-awy8dz
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-build/eo-build-7pur27/eo-build-awy8dz/processes-process-eo-build-awy8dz.yaml
     research_count: 2
@@ -7777,7 +7777,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-build-ba6ykz
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-build/eo-build-7pur27/eo-build-ba6ykz/processes-process-eo-build-ba6ykz.yaml
     research_count: 2
@@ -7788,7 +7788,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-build-j9z3q4
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-build/eo-build-7pur27/eo-build-j9z3q4/processes-process-eo-build-j9z3q4.yaml
     research_count: 2
@@ -7799,7 +7799,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-build-nmmmt6
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-build/eo-build-7pur27/eo-build-nmmmt6/processes-process-eo-build-nmmmt6.yaml
     research_count: 2
@@ -7810,7 +7810,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-build-tqybhd
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-build/eo-build-7pur27/eo-build-tqybhd/processes-process-eo-build-tqybhd.yaml
     research_count: 2
@@ -7821,7 +7821,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-conceive-68mp6v
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-conceive/eo-conceive-j6n4f7/eo-conceive-68mp6v/processes-process-eo-conceive-68mp6v.yaml
     research_count: 2
@@ -7832,7 +7832,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-conceive-87kx9n
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-conceive/eo-conceive-j6n4f7/eo-conceive-87kx9n/processes-process-eo-conceive-87kx9n.yaml
     research_count: 2
@@ -7843,7 +7843,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-conceive-ky5wxp
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-conceive/eo-conceive-j6n4f7/eo-conceive-ky5wxp/processes-process-eo-conceive-ky5wxp.yaml
     research_count: 2
@@ -7854,7 +7854,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-conceive-xhjdr2
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-conceive/eo-conceive-j6n4f7/eo-conceive-xhjdr2/processes-process-eo-conceive-xhjdr2.yaml
     research_count: 2
@@ -7865,7 +7865,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-design-6j5mxp
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-design/eo-design-g6dmdk/eo-design-6j5mxp/processes-process-eo-design-6j5mxp.yaml
     research_count: 2
@@ -7876,7 +7876,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-design-7gtead
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-design/eo-design-g6dmdk/eo-design-7gtead/processes-process-eo-design-7gtead.yaml
     research_count: 2
@@ -7887,7 +7887,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-design-8s76nv
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-design/eo-design-g6dmdk/eo-design-8s76nv/processes-process-eo-design-8s76nv.yaml
     research_count: 2
@@ -7898,7 +7898,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-design-q83tdv
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-design/eo-design-g6dmdk/eo-design-q83tdv/processes-process-eo-design-q83tdv.yaml
     research_count: 2
@@ -7909,7 +7909,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-design-rvfpjb
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-design/eo-design-g6dmdk/eo-design-rvfpjb/processes-process-eo-design-rvfpjb.yaml
     research_count: 2
@@ -7920,7 +7920,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-improve-3fem63
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-improve/eo-improve-c8uff9/eo-improve-3fem63/processes-process-eo-improve-3fem63.yaml
     research_count: 2
@@ -7931,7 +7931,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-improve-babwdc
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-improve/eo-improve-c8uff9/eo-improve-babwdc/processes-process-eo-improve-babwdc.yaml
     research_count: 2
@@ -7942,7 +7942,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-improve-g3ngp3
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-improve/eo-improve-c8uff9/eo-improve-g3ngp3/processes-process-eo-improve-g3ngp3.yaml
     research_count: 2
@@ -7953,7 +7953,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-improve-q58ecg
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-improve/eo-improve-c8uff9/eo-improve-q58ecg/processes-process-eo-improve-q58ecg.yaml
     research_count: 2
@@ -7964,7 +7964,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-improve-us272s
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-improve/eo-improve-c8uff9/eo-improve-us272s/processes-process-eo-improve-us272s.yaml
     research_count: 2
@@ -7975,7 +7975,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-operate-2jnz85
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-operate/eo-operate-bfd7jb/eo-operate-2jnz85/processes-process-eo-operate-2jnz85.yaml
     research_count: 2
@@ -7986,7 +7986,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-operate-44jsrp
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-operate/eo-operate-bfd7jb/eo-operate-44jsrp/processes-process-eo-operate-44jsrp.yaml
     research_count: 2
@@ -7997,7 +7997,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-operate-4njp7b
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-operate/eo-operate-bfd7jb/eo-operate-4njp7b/processes-process-eo-operate-4njp7b.yaml
     research_count: 2
@@ -8008,7 +8008,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-operate-j9cjzz
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-operate/eo-operate-bfd7jb/eo-operate-j9cjzz/processes-process-eo-operate-j9cjzz.yaml
     research_count: 2
@@ -8019,7 +8019,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-operate-rqdte5
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-operate/eo-operate-bfd7jb/eo-operate-rqdte5/processes-process-eo-operate-rqdte5.yaml
     research_count: 2
@@ -8030,7 +8030,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-operate-vzcxx7
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-operate/eo-operate-bfd7jb/eo-operate-vzcxx7/processes-process-eo-operate-vzcxx7.yaml
     research_count: 2
@@ -8041,7 +8041,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-operate-xud3hs
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-operate/eo-operate-bfd7jb/eo-operate-xud3hs/processes-process-eo-operate-xud3hs.yaml
     research_count: 2
@@ -8052,7 +8052,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-operate-zh9m57
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-operate/eo-operate-bfd7jb/eo-operate-zh9m57/processes-process-eo-operate-zh9m57.yaml
     research_count: 2
@@ -8063,7 +8063,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-operate-zwzmbd
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-operate/eo-operate-bfd7jb/eo-operate-zwzmbd/processes-process-eo-operate-zwzmbd.yaml
     research_count: 2
@@ -8074,7 +8074,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-eo-retire-rpg6d4
-    last_modified: '2026-09-22'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-retire/eo-retire-n9ge5c/eo-retire-rpg6d4/processes-process-eo-retire-rpg6d4.yaml
     research_count: 3
@@ -8129,7 +8129,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-fa-build-ydnzjc
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/fa-build/fa-build-d7ww77/fa-build-ydnzjc/processes-process-fa-build-ydnzjc.yaml
     research_count: 2
@@ -8140,7 +8140,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-fa-conceive-4uqqvg
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/fa-conceive/fa-conceive-9xzf3b/fa-conceive-4uqqvg/processes-process-fa-conceive-4uqqvg.yaml
     research_count: 2
@@ -8184,7 +8184,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-fa-design-vk422z
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/fa-design/fa-design-7juvse/fa-design-vk422z/processes-process-fa-design-vk422z.yaml
     research_count: 2
@@ -8217,7 +8217,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-fa-improve-emqpgr
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/fa-improve/fa-improve-hvq8u8/fa-improve-emqpgr/processes-process-fa-improve-emqpgr.yaml
     research_count: 2
@@ -8261,7 +8261,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-fa-operate-g9zpnq
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/fa-operate/fa-operate-mazyjd/fa-operate-g9zpnq/processes-process-fa-operate-g9zpnq.yaml
     research_count: 2
@@ -8316,7 +8316,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-fa-retire-wkbrsa
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/fa-retire/fa-retire-2ptdnw/fa-retire-wkbrsa/processes-process-fa-retire-wkbrsa.yaml
     research_count: 3
@@ -8327,7 +8327,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-ge-activate-wegs44
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ge-activate/ge-activate-7d46tn/ge-activate-wegs44/processes-process-ge-activate-wegs44.yaml
     research_count: 3
@@ -8338,7 +8338,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:process-ge-build-3p38us
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ge-build/ge-build-tbc3ta/ge-build-3p38us/processes-process-ge-build-3p38us.yaml
     research_count: 3
@@ -8349,7 +8349,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:process-ge-build-mctdgc
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ge-build/ge-build-tbc3ta/ge-build-mctdgc/processes-process-ge-build-mctdgc.yaml
     research_count: 3
@@ -8382,7 +8382,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:process-ge-conceive-e6jx6s
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: deprecated
     path: entities/v1-alpha/ge-conceive/ge-conceive-y93bwr/ge-conceive-e6jx6s/processes-process-ge-conceive-e6jx6s.yaml
     research_count: 2
@@ -8393,7 +8393,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:process-ge-conceive-xp6fye
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ge-conceive/ge-conceive-y93bwr/ge-conceive-xp6fye/processes-process-ge-conceive-xp6fye.yaml
     research_count: 3
@@ -8404,7 +8404,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:process-ge-design-kpsj5b
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ge-design/ge-design-jexyp6/ge-design-kpsj5b/processes-process-ge-design-kpsj5b.yaml
     research_count: 3
@@ -8426,7 +8426,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:process-ge-design-zbrg8b
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ge-design/ge-design-jexyp6/ge-design-zbrg8b/processes-process-ge-design-zbrg8b.yaml
     research_count: 3
@@ -8448,7 +8448,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:process-ge-improve-mgkw59
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ge-improve/ge-improve-s9r3qj/ge-improve-mgkw59/processes-process-ge-improve-mgkw59.yaml
     research_count: 3
@@ -8470,7 +8470,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:process-ge-operate-hs7wf3
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ge-operate/ge-operate-v2eu8x/ge-operate-hs7wf3/processes-process-ge-operate-hs7wf3.yaml
     research_count: 3
@@ -8481,7 +8481,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:process-ge-operate-hxxyc9
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ge-operate/ge-operate-v2eu8x/ge-operate-hxxyc9/processes-process-ge-operate-hxxyc9.yaml
     research_count: 3
@@ -8514,7 +8514,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-ge-retire-mjq5hg
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/ge-retire/ge-retire-v3vy7t/ge-retire-mjq5hg/processes-process-ge-retire-mjq5hg.yaml
     research_count: 3
@@ -8525,7 +8525,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-pr-activate-6qzuve
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-activate/pr-activate-d7j4et/pr-activate-6qzuve/processes-process-pr-activate-6qzuve.yaml
     research_count: 3
@@ -8536,7 +8536,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:process-pr-build-4kb2pt
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-build/pr-build-7u5xj6/pr-build-4kb2pt/processes-process-pr-build-4kb2pt.yaml
     research_count: 3
@@ -8547,7 +8547,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:process-pr-build-nygvw7
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-build/pr-build-7u5xj6/pr-build-nygvw7/processes-process-pr-build-nygvw7.yaml
     research_count: 3
@@ -8558,7 +8558,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:process-pr-conceive-emfgju
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-conceive/pr-conceive-rv32m4/pr-conceive-emfgju/processes-process-pr-conceive-emfgju.yaml
     research_count: 3
@@ -8569,7 +8569,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:process-pr-conceive-tvst8u
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-conceive/pr-conceive-rv32m4/pr-conceive-tvst8u/processes-process-pr-conceive-tvst8u.yaml
     research_count: 3
@@ -8580,7 +8580,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:process-pr-design-cv6hjh
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-design/pr-design-enpedx/pr-design-cv6hjh/processes-process-pr-design-cv6hjh.yaml
     research_count: 3
@@ -8591,7 +8591,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:process-pr-design-j6fakx
-    last_modified: '2026-09-22'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-design/pr-design-enpedx/pr-design-j6fakx/processes-process-pr-design-j6fakx.yaml
     research_count: 3
@@ -8602,7 +8602,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:process-pr-design-pxydu3
-    last_modified: '2026-09-22'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-design/pr-design-enpedx/pr-design-pxydu3/processes-process-pr-design-pxydu3.yaml
     research_count: 3
@@ -8613,7 +8613,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:process-pr-improve-t6uvan
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-improve/pr-improve-zpb8e3/pr-improve-t6uvan/processes-process-pr-improve-t6uvan.yaml
     research_count: 3
@@ -8635,7 +8635,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-pr-retire-bd3asa
-    last_modified: '2026-09-22'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-retire/pr-retire-c3u3wc/pr-retire-bd3asa/processes-process-pr-retire-bd3asa.yaml
     research_count: 3
@@ -8646,7 +8646,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-pv-activate-5686v7
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-activate/pv-activate-e7fdrk/pv-activate-5686v7/processes-process-pv-activate-5686v7.yaml
     research_count: 3
@@ -8657,7 +8657,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-pv-build-6hjzmk
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-build/pv-build-g6sua5/pv-build-6hjzmk/processes-process-pv-build-6hjzmk.yaml
     research_count: 2
@@ -8668,7 +8668,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-pv-build-8jc3y4
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-build/pv-build-g6sua5/pv-build-8jc3y4/processes-process-pv-build-8jc3y4.yaml
     research_count: 2
@@ -8679,7 +8679,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-pv-build-p9a2s9
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-build/pv-build-g6sua5/pv-build-p9a2s9/processes-process-pv-build-p9a2s9.yaml
     research_count: 2
@@ -8690,7 +8690,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-pv-build-say8tb
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-build/pv-build-g6sua5/pv-build-say8tb/processes-process-pv-build-say8tb.yaml
     research_count: 2
@@ -8701,7 +8701,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-pv-conceive-jb4xtg
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-conceive/pv-conceive-geej6b/pv-conceive-jb4xtg/processes-process-pv-conceive-jb4xtg.yaml
     research_count: 2
@@ -8712,7 +8712,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-pv-conceive-kps544
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-conceive/pv-conceive-geej6b/pv-conceive-kps544/processes-process-pv-conceive-kps544.yaml
     research_count: 2
@@ -8723,7 +8723,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-pv-conceive-xe9axm
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-conceive/pv-conceive-geej6b/pv-conceive-xe9axm/processes-process-pv-conceive-xe9axm.yaml
     research_count: 2
@@ -8734,7 +8734,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-pv-design-8v4k89
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-design/pv-design-msz6da/pv-design-8v4k89/processes-process-pv-design-8v4k89.yaml
     research_count: 2
@@ -8745,7 +8745,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-pv-design-9ckwf6
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-design/pv-design-msz6da/pv-design-9ckwf6/processes-process-pv-design-9ckwf6.yaml
     research_count: 2
@@ -8756,7 +8756,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-pv-design-a4c76s
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-design/pv-design-msz6da/pv-design-a4c76s/processes-process-pv-design-a4c76s.yaml
     research_count: 2
@@ -8767,7 +8767,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-pv-improve-27r7r7
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-improve/pv-improve-rjab8b/pv-improve-27r7r7/processes-process-pv-improve-27r7r7.yaml
     research_count: 2
@@ -8778,7 +8778,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-pv-improve-6c2xvf
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-improve/pv-improve-rjab8b/pv-improve-6c2xvf/processes-process-pv-improve-6c2xvf.yaml
     research_count: 2
@@ -8789,7 +8789,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-pv-improve-9xvgat
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-improve/pv-improve-rjab8b/pv-improve-9xvgat/processes-process-pv-improve-9xvgat.yaml
     research_count: 2
@@ -8800,7 +8800,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-pv-operate-cau4gv
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-operate/pv-operate-ah3322/pv-operate-cau4gv/processes-process-pv-operate-cau4gv.yaml
     research_count: 2
@@ -8811,7 +8811,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-pv-operate-en8rdz
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-operate/pv-operate-ah3322/pv-operate-en8rdz/processes-process-pv-operate-en8rdz.yaml
     research_count: 2
@@ -8822,7 +8822,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-pv-operate-zyguzp
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-operate/pv-operate-ah3322/pv-operate-zyguzp/processes-process-pv-operate-zyguzp.yaml
     research_count: 2
@@ -8833,7 +8833,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-pv-retire-6us5am
-    last_modified: '2026-09-22'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-retire/pv-retire-buqktk/pv-retire-6us5am/processes-process-pv-retire-6us5am.yaml
     research_count: 3
@@ -8855,7 +8855,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-sd-build-2pkz5n
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-build/sd-build-tnq4p6/sd-build-2pkz5n/processes-process-sd-build-2pkz5n.yaml
     research_count: 2
@@ -8866,7 +8866,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-sd-build-7n4prh
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-build/sd-build-tnq4p6/sd-build-7n4prh/processes-process-sd-build-7n4prh.yaml
     research_count: 2
@@ -8877,7 +8877,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-sd-build-9admqy
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-build/sd-build-tnq4p6/sd-build-9admqy/processes-process-sd-build-9admqy.yaml
     research_count: 2
@@ -8888,7 +8888,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-sd-build-q4nf9g
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-build/sd-build-tnq4p6/sd-build-q4nf9g/processes-process-sd-build-q4nf9g.yaml
     research_count: 2
@@ -8899,7 +8899,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-sd-conceive-3uredz
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-conceive/sd-conceive-7qhvzn/sd-conceive-3uredz/processes-process-sd-conceive-3uredz.yaml
     research_count: 2
@@ -8910,7 +8910,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-sd-conceive-ahwvp5
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-conceive/sd-conceive-7qhvzn/sd-conceive-ahwvp5/processes-process-sd-conceive-ahwvp5.yaml
     research_count: 2
@@ -8921,7 +8921,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-sd-conceive-r93j3d
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-conceive/sd-conceive-7qhvzn/sd-conceive-r93j3d/processes-process-sd-conceive-r93j3d.yaml
     research_count: 2
@@ -8932,7 +8932,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-sd-conceive-xa4h2k
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-conceive/sd-conceive-7qhvzn/sd-conceive-xa4h2k/processes-process-sd-conceive-xa4h2k.yaml
     research_count: 2
@@ -8943,7 +8943,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-sd-design-ed7jd5
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-design/sd-design-q4mj9z/sd-design-ed7jd5/processes-process-sd-design-ed7jd5.yaml
     research_count: 2
@@ -8954,7 +8954,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-sd-design-ewvbsh
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-design/sd-design-q4mj9z/sd-design-ewvbsh/processes-process-sd-design-ewvbsh.yaml
     research_count: 2
@@ -8965,7 +8965,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-sd-design-uenzna
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-design/sd-design-q4mj9z/sd-design-uenzna/processes-process-sd-design-uenzna.yaml
     research_count: 2
@@ -8976,7 +8976,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-sd-design-vdwkmh
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-design/sd-design-q4mj9z/sd-design-vdwkmh/processes-process-sd-design-vdwkmh.yaml
     research_count: 2
@@ -8987,7 +8987,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-sd-improve-9wgvaf
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-improve/sd-improve-vdz4xp/sd-improve-9wgvaf/processes-process-sd-improve-9wgvaf.yaml
     research_count: 2
@@ -8998,7 +8998,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-sd-improve-aqbrm7
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-improve/sd-improve-vdz4xp/sd-improve-aqbrm7/processes-process-sd-improve-aqbrm7.yaml
     research_count: 2
@@ -9009,7 +9009,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-sd-improve-duwd64
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-improve/sd-improve-vdz4xp/sd-improve-duwd64/processes-process-sd-improve-duwd64.yaml
     research_count: 2
@@ -9020,7 +9020,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-sd-operate-53y4j4
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-operate/sd-operate-22epxr/sd-operate-53y4j4/processes-process-sd-operate-53y4j4.yaml
     research_count: 2
@@ -9031,7 +9031,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-sd-operate-u6xgu5
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-operate/sd-operate-22epxr/sd-operate-u6xgu5/processes-process-sd-operate-u6xgu5.yaml
     research_count: 2
@@ -9042,7 +9042,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-sd-operate-ucxpz4
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-operate/sd-operate-22epxr/sd-operate-ucxpz4/processes-process-sd-operate-ucxpz4.yaml
     research_count: 2
@@ -9053,7 +9053,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-sd-operate-zdjchn
-    last_modified: '2026-09-21'
+    last_modified: '2026-10-13'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-operate/sd-operate-22epxr/sd-operate-zdjchn/processes-process-sd-operate-zdjchn.yaml
     research_count: 2
