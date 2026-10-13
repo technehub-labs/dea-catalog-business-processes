@@ -1,6 +1,6 @@
 # v1-alpha Process Catalog Entries
 
-This directory contains the authoritative `v1-alpha` Business Process catalog entries for the TechNeHub Labs Digital Enterprise Architecture (DEA) ecosystem.
+This directory contains the authoritative `v1-alpha` Business Process catalog entries for the Open Digital Enterprise Architecture (DEA) Model.
 
 Rather than a flat file structure, this directory implements a **containment tree** mapped directly to the **Enterprise Concept Framework (ECF) 7×7 foundation matrix**. This topology ensures that every process is explicitly contextualized by its primary architectural domain (the scope of work) and its lifecycle stage (how the work evolves), preventing taxonomy drift and enabling rigorous, tree-aware conformance testing.
 
