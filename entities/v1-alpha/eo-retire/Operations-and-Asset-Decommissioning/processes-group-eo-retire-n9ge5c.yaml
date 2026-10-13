@@ -110,4 +110,4 @@ links:
 - rel: discovery-record
   href: discovery/v1-alpha/enablement-and-operations-retire.yaml
 - rel: research-register
-  href: entities/v1-alpha/pr-operate/pr-operate-7ab3ma/processes-group-pr-operate-7ab3ma.yaml
+  href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml

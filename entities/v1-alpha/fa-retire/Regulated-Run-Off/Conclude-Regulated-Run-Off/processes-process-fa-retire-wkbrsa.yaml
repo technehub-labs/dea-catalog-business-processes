@@ -119,8 +119,8 @@ links:
 - rel: process-context
   href: entities/v1-alpha/fa-retire/processes-pc-fa-retire-64q5p9.yaml
 - rel: process-group
-  href: entities/v1-alpha/fa-retire/fa-retire-2ptdnw/processes-group-fa-retire-2ptdnw.yaml
+  href: entities/v1-alpha/fa-retire/Regulated-Run-Off/processes-group-fa-retire-2ptdnw.yaml
 - rel: l2-admission-deposition
-  href: entities/v1-alpha/fa-retire/fa-retire-2ptdnw/fa-retire-wkbrsa/processes-process-fa-retire-wkbrsa.yaml
+  href: entities/v1-alpha/fa-retire/Regulated-Run-Off/Conclude-Regulated-Run-Off/processes-process-fa-retire-wkbrsa.yaml
 context:
 - ref: processes:pc-fa-retire-64q5p9

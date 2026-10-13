@@ -142,6 +142,6 @@ links:
 - rel: process-context
   href: entities/v1-alpha/sd-conceive/processes-pc-sd-conceive-ucb3gx.yaml
 - rel: process-group
-  href: entities/v1-alpha/sd-conceive/sd-conceive-7qhvzn/processes-group-sd-conceive-7qhvzn.yaml
+  href: entities/v1-alpha/sd-conceive/Strategy-and-Direction-Conception/processes-group-sd-conceive-7qhvzn.yaml
 context:
 - ref: processes:pc-sd-conceive-ucb3gx

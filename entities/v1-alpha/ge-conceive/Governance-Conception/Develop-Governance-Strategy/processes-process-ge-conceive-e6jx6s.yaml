@@ -124,9 +124,9 @@ links:
 - rel: change-request
   href: change-requests/CR-BP-13a-party-and-relationship-admission.md
 - rel: migration-target
-  href: entities/v1-alpha/sd-conceive/sd-conceive-7qhvzn/sd-conceive-ahwvp5/processes-process-sd-conceive-ahwvp5.yaml
+  href: entities/v1-alpha/sd-conceive/Strategy-and-Direction-Conception/Develop-Corporate-Strategy/processes-process-sd-conceive-ahwvp5.yaml
 - rel: migration-target
-  href: entities/v1-alpha/sd-conceive/sd-conceive-7qhvzn/sd-conceive-ahwvp5/processes-process-sd-conceive-ahwvp5.yaml
+  href: entities/v1-alpha/sd-conceive/Strategy-and-Direction-Conception/Develop-Corporate-Strategy/processes-process-sd-conceive-ahwvp5.yaml
 - rel: process-context
   href: entities/v1-alpha/ge-conceive/processes-pc-ge-conceive-b5xwpd.yaml
 context:

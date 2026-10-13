@@ -117,8 +117,8 @@ links:
 - rel: process-context
   href: entities/v1-alpha/ao-retire/processes-pc-ao-retire-3kqe9c.yaml
 - rel: process-group
-  href: entities/v1-alpha/ao-retire/ao-retire-jspuzz/processes-group-ao-retire-jspuzz.yaml
+  href: entities/v1-alpha/ao-retire/Regulated-Workforce-Wind-Down/processes-group-ao-retire-jspuzz.yaml
 - rel: l2-admission-deposition
-  href: entities/v1-alpha/ao-retire/ao-retire-jspuzz/ao-retire-g3eyr8/processes-process-ao-retire-g3eyr8.yaml
+  href: entities/v1-alpha/ao-retire/Regulated-Workforce-Wind-Down/Conduct-Regulated-Workforce-Wind-Down/processes-process-ao-retire-g3eyr8.yaml
 context:
 - ref: processes:pc-ao-retire-3kqe9c

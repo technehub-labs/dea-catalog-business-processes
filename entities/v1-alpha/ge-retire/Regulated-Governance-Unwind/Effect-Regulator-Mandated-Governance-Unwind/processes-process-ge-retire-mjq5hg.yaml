@@ -133,8 +133,8 @@ links:
 - rel: process-context
   href: entities/v1-alpha/ge-retire/processes-pc-ge-retire-kndw6x.yaml
 - rel: process-group
-  href: entities/v1-alpha/ge-retire/ge-retire-v3vy7t/processes-group-ge-retire-v3vy7t.yaml
+  href: entities/v1-alpha/ge-retire/Regulated-Governance-Unwind/processes-group-ge-retire-v3vy7t.yaml
 - rel: l1-register-cell
-  href: entities/v1-alpha/pr-operate/pr-operate-7ab3ma/processes-group-pr-operate-7ab3ma.yaml
+  href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
 context:
 - ref: processes:pc-ge-retire-kndw6x

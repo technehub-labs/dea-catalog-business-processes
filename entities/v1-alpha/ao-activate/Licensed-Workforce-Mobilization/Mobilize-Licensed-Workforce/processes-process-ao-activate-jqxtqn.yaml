@@ -119,8 +119,8 @@ links:
 - rel: process-context
   href: entities/v1-alpha/ao-activate/processes-pc-ao-activate-kusw2u.yaml
 - rel: process-group
-  href: entities/v1-alpha/ao-activate/ao-activate-jjx738/processes-group-ao-activate-jjx738.yaml
+  href: entities/v1-alpha/ao-activate/Licensed-Workforce-Mobilization/processes-group-ao-activate-jjx738.yaml
 - rel: l2-admission-deposition
-  href: entities/v1-alpha/ao-activate/ao-activate-jjx738/ao-activate-jqxtqn/processes-process-ao-activate-jqxtqn.yaml
+  href: entities/v1-alpha/ao-activate/Licensed-Workforce-Mobilization/Mobilize-Licensed-Workforce/processes-process-ao-activate-jqxtqn.yaml
 context:
 - ref: processes:pc-ao-activate-kusw2u
