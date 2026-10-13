@@ -71,14 +71,12 @@ This distinction is fundamental to the architecture of the catalog.
 
 ---
 
-# Process Architecture (CR-BP-03; reconciled by CR-BP-14)
+# Process Architecture
 
-CR-BP-03 establishes the **Business Process architecture** within the
-enterprise process landscape. The architecture rests on **three
-pillars**: a 4-axis classification, a process-identity contract, and
-a contribution-driven re-landscape mechanism. CR-BP-14 reconciles
-the architecture by separating Process Intent and Process
-Classification as formally distinct dimensions (CR-BP-14 §10, §11);
+The architecture rests on **three pillars**: a 4-axis classification, 
+a process-identity contract, and a contribution-driven re-landscape
+mechanism. A change process reconciles the architecture by separating 
+Process Intent and Process Classification as formally distinct dimensions;
 see `docs/semantic-contract.md` for the normative constitution and
 `docs/classification.md` for the current narrative.
 
@@ -106,15 +104,14 @@ competing foundational OpenDEA process entities.
 > `classifications/process-types.yaml`, not a new ontology.
 
 The vocabulary is enforced by
-`scripts/check_process_identity.py` (BP-ARC-ID-004) when a
-contribution is submitted.
+`scripts/check_process_identity.py` when a contribution is submitted.
 
 ## 2. Four Distinct Process Axes
 
-CR-BP-03 introduces a **4-axis classification** that separates four
-distinct concerns. Each axis answers a different question;
-conflating them is the historical source of much process-catalog
-confusion. CR-BP-14 §11 formalizes the Intent vs Classification
+There is a **4-axis classification** that separates four distinct concerns. 
+Each axis answers a different question; conflating them is the historical 
+source of many process-catalog confusion. 
+A systematic methodology (CR-BP-14 §11) formalizes the Intent vs Classification
 distinction: the two vocabularies are independent; neither dimension
 may be inferred from the other; identical tokens across the two
 (`support`; legacy `management` vs canonical `manage`) are a lexical
