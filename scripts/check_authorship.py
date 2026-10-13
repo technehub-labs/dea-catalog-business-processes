@@ -23,6 +23,7 @@ from __future__ import annotations
 
 import fnmatch
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -119,21 +120,43 @@ def _load_registry():
 
 
 def _iter_files(glob: str):
-    """Yield absolute paths matching a registered glob (path-relative form)."""
-    if glob.startswith("**/"):
-        # recursive under repo root
-        suffix = glob[3:]
-        for p in REPO_ROOT.rglob(suffix):
-            if p.is_file() and ".git" not in p.parts:
-                yield p
-    elif "*" in glob:
-        # filename-only glob
-        for p in REPO_ROOT.rglob(Path(glob).name):
-            if p.is_file() and ".git" not in p.parts:
-                yield p
+    """Yield absolute paths matching a registered glob.
+
+    The glob shape comes from the registry and is a relative path
+    under the repo (e.g. ``change-requests/CR-*.md`` or
+    ``entities/v1-alpha/**/processes-*.yaml``). The function
+    normalizes the glob into a search pattern and walks the tree,
+    bounding itself to the path prefix in the glob to prevent
+    escaping into vendored content (e.g. ``.metaframework/`` checked
+    out by the CI workflow at step 5 -- the dea-metaframework repo
+    contains its own ``change-requests/CR-*.md`` files with
+    `Coder` authorship, which would otherwise produce false positives
+    under the CR-BP-118 AUT-001 substring denylist).
+
+    The bound is the longest literal prefix in the glob. For
+    ``change-requests/CR-*.md`` the prefix is ``change-requests/``;
+    for ``entities/v1-alpha/**/processes-*.yaml`` the prefix is
+    ``entities/v1-alpha/``. The walk starts at that prefix and never
+    crosses it.
+    """
+    # Compute the literal prefix: everything before the first `*` or `?`.
+    wildcard = re.search(r"[?*]", glob)
+    if wildcard:
+        prefix = glob[: wildcard.start()]
     else:
-        p = REPO_ROOT / glob
-        if p.exists() and p.is_file():
+        prefix = glob
+    if not prefix.endswith("/") and prefix != "":
+        # If the prefix stops mid-component, drop the partial component.
+        prefix = prefix.rsplit("/", 1)[0] + "/"
+    base = REPO_ROOT / prefix.rstrip("/") if prefix.rstrip("/") else REPO_ROOT
+    if not base.exists():
+        return
+    # Strip the prefix from the glob to get a relative pattern for rglob.
+    rel_glob = glob[len(prefix):] if prefix and glob.startswith(prefix) else glob
+    if not rel_glob:
+        rel_glob = Path(glob).name
+    for p in base.rglob(rel_glob):
+        if p.is_file() and ".git" not in p.parts:
             yield p
 
 
