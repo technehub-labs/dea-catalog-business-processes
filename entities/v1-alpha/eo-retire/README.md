@@ -60,3 +60,37 @@ Sections authored by `scripts/generate_readmes.py` from the record's YAML fields
 ## 12. Revision History
 
 Revision history is governed by CR-BP-04 / SIV-001..004 (additive change_history entries; version unchanged for additive metadata-only changes).
+
+## 13. Path Scheme
+
+Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename):
+
+```
+eo-retire/
+  Operations-and-Asset-Decommissioning/  (L1 ProcessGroup)
+    Decommission-Enterprise-Asset/  (L2 Process)
+      Execute-Disposal-Routes/  (L3 Activity)
+        Execute-Disposal-Routes-Audit-Record/  (L4 Task)
+        Execute-Disposal-Routes-Confirmation/  (L4 Task)
+        Execute-Disposal-Routes-Intake/  (L4 Task)
+        Execute-Disposal-Routes-Processing/  (L4 Task)
+        Execute-Disposal-Routes-Verification/  (L4 Task)
+      Plan-Asset-Retirement/  (L3 Activity)
+        Plan-Asset-Retirement-Audit-Record/  (L4 Task)
+        Plan-Asset-Retirement-Confirmation/  (L4 Task)
+        Plan-Asset-Retirement-Intake/  (L4 Task)
+        Plan-Asset-Retirement-Processing/  (L4 Task)
+        Plan-Asset-Retirement-Verification/  (L4 Task)
+      Resolve-Residual-Value-and-Obligations/  (L3 Activity)
+        Resolve-Residual-Value-and-Obligations-Audit-Record/  (L4 Task)
+        Resolve-Residual-Value-and-Obligations-Confirmation/  (L4 Task)
+        Resolve-Residual-Value-and-Obligations-Intake/  (L4 Task)
+        Resolve-Residual-Value-and-Obligations-Processing/  (L4 Task)
+        Resolve-Residual-Value-and-Obligations-Verification/  (L4 Task)
+      Withdraw-Asset-from-Operation/  (L3 Activity)
+        Withdraw-Asset-from-Operation-Audit-Record/  (L4 Task)
+        Withdraw-Asset-from-Operation-Confirmation/  (L4 Task)
+        Withdraw-Asset-from-Operation-Intake/  (L4 Task)
+        Withdraw-Asset-from-Operation-Processing/  (L4 Task)
+        Withdraw-Asset-from-Operation-Verification/  (L4 Task)
+```

@@ -53,3 +53,37 @@ Sections authored by `scripts/generate_readmes.py` from the record's YAML fields
 ## 12. Revision History
 
 Revision history is governed by CR-BP-04 / SIV-001..004 (additive change_history entries; version unchanged for additive metadata-only changes).
+
+## 13. Path Scheme
+
+Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename):
+
+```
+fa-conceive/
+  Financial-Model-Conception/  (L1 ProcessGroup)
+    Frame-Finance-Strategy/  (L2 Process)
+      Assess-Finance-Strategy-Context/  (L3 Activity)
+        Assess-Finance-Strategy-Context-Audit-Record/  (L4 Task)
+        Assess-Finance-Strategy-Context-Confirmation/  (L4 Task)
+        Assess-Finance-Strategy-Context-Intake/  (L4 Task)
+        Assess-Finance-Strategy-Context-Processing/  (L4 Task)
+        Assess-Finance-Strategy-Context-Verification/  (L4 Task)
+      Commit-Finance-Strategy/  (L3 Activity)
+        Commit-Finance-Strategy-Audit-Record/  (L4 Task)
+        Commit-Finance-Strategy-Confirmation/  (L4 Task)
+        Commit-Finance-Strategy-Intake/  (L4 Task)
+        Commit-Finance-Strategy-Processing/  (L4 Task)
+        Commit-Finance-Strategy-Verification/  (L4 Task)
+      Frame-Funding-and-Capital-Approach/  (L3 Activity)
+        Frame-Funding-and-Capital-Approach-Audit-Record/  (L4 Task)
+        Frame-Funding-and-Capital-Approach-Confirmation/  (L4 Task)
+        Frame-Funding-and-Capital-Approach-Intake/  (L4 Task)
+        Frame-Funding-and-Capital-Approach-Processing/  (L4 Task)
+        Frame-Funding-and-Capital-Approach-Verification/  (L4 Task)
+      Frame-Monetary-Model/  (L3 Activity)
+        Frame-Monetary-Model-Audit-Record/  (L4 Task)
+        Frame-Monetary-Model-Confirmation/  (L4 Task)
+        Frame-Monetary-Model-Intake/  (L4 Task)
+        Frame-Monetary-Model-Processing/  (L4 Task)
+        Frame-Monetary-Model-Verification/  (L4 Task)
+```

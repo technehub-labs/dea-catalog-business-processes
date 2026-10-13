@@ -53,3 +53,62 @@ Sections authored by `scripts/generate_readmes.py` from the record's YAML fields
 ## 12. Revision History
 
 Revision history is governed by CR-BP-04 / SIV-001..004 (additive change_history entries; version unchanged for additive metadata-only changes).
+
+## 13. Path Scheme
+
+Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename):
+
+```
+pr-conceive/
+  Customer-Strategy-Conception/  (L1 ProcessGroup)
+    Develop-Customer-Strategy/  (L2 Process)
+      Articulate-Value-Exchange/  (L3 Activity)
+        Articulate-Value-Exchange-Audit-Record/  (L4 Task)
+        Articulate-Value-Exchange-Confirmation/  (L4 Task)
+        Articulate-Value-Exchange-Intake/  (L4 Task)
+        Articulate-Value-Exchange-Processing/  (L4 Task)
+        Articulate-Value-Exchange-Verification/  (L4 Task)
+      Commit-Customer-Strategy/  (L3 Activity)
+        Commit-Customer-Strategy-Audit-Record/  (L4 Task)
+        Commit-Customer-Strategy-Confirmation/  (L4 Task)
+        Commit-Customer-Strategy-Intake/  (L4 Task)
+        Commit-Customer-Strategy-Processing/  (L4 Task)
+        Commit-Customer-Strategy-Verification/  (L4 Task)
+      Formulate-Demand-Thesis/  (L3 Activity)
+        Formulate-Demand-Thesis-Audit-Record/  (L4 Task)
+        Formulate-Demand-Thesis-Confirmation/  (L4 Task)
+        Formulate-Demand-Thesis-Intake/  (L4 Task)
+        Formulate-Demand-Thesis-Processing/  (L4 Task)
+        Formulate-Demand-Thesis-Verification/  (L4 Task)
+      Frame-Segment-Thesis/  (L3 Activity)
+        Frame-Segment-Thesis-Audit-Record/  (L4 Task)
+        Frame-Segment-Thesis-Confirmation/  (L4 Task)
+        Frame-Segment-Thesis-Intake/  (L4 Task)
+        Frame-Segment-Thesis-Processing/  (L4 Task)
+        Frame-Segment-Thesis-Verification/  (L4 Task)
+    Develop-Market-Intelligence/  (L2 Process)
+      Commit-Market-and-Demand-Thesis/  (L3 Activity)
+        Commit-Market-and-Demand-Thesis-Audit-Record/  (L4 Task)
+        Commit-Market-and-Demand-Thesis-Confirmation/  (L4 Task)
+        Commit-Market-and-Demand-Thesis-Intake/  (L4 Task)
+        Commit-Market-and-Demand-Thesis-Processing/  (L4 Task)
+        Commit-Market-and-Demand-Thesis-Verification/  (L4 Task)
+      Design-Hypothesis-Tests/  (L3 Activity)
+        Design-Hypothesis-Tests-Audit-Record/  (L4 Task)
+        Design-Hypothesis-Tests-Confirmation/  (L4 Task)
+        Design-Hypothesis-Tests-Intake/  (L4 Task)
+        Design-Hypothesis-Tests-Processing/  (L4 Task)
+        Design-Hypothesis-Tests-Verification/  (L4 Task)
+      Formulate-Demand-Hypotheses/  (L3 Activity)
+        Formulate-Demand-Hypotheses-Audit-Record/  (L4 Task)
+        Formulate-Demand-Hypotheses-Confirmation/  (L4 Task)
+        Formulate-Demand-Hypotheses-Intake/  (L4 Task)
+        Formulate-Demand-Hypotheses-Processing/  (L4 Task)
+        Formulate-Demand-Hypotheses-Verification/  (L4 Task)
+      Scan-Market-and-Segments/  (L3 Activity)
+        Scan-Market-and-Segments-Audit-Record/  (L4 Task)
+        Scan-Market-and-Segments-Confirmation/  (L4 Task)
+        Scan-Market-and-Segments-Intake/  (L4 Task)
+        Scan-Market-and-Segments-Processing/  (L4 Task)
+        Scan-Market-and-Segments-Verification/  (L4 Task)
+```

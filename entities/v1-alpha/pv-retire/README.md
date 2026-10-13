@@ -60,3 +60,37 @@ Sections authored by `scripts/generate_readmes.py` from the record's YAML fields
 ## 12. Revision History
 
 Revision history is governed by CR-BP-04 / SIV-001..004 (additive change_history entries; version unchanged for additive metadata-only changes).
+
+## 13. Path Scheme
+
+Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename):
+
+```
+pv-retire/
+  Service-Transition-Retirement/  (L1 ProcessGroup)
+    Transition-Proposition-Out-of-Service/  (L2 Process)
+      Confirm-Retirement-Closure/  (L3 Activity)
+        Confirm-Retirement-Closure-Audit-Record/  (L4 Task)
+        Confirm-Retirement-Closure-Confirmation/  (L4 Task)
+        Confirm-Retirement-Closure-Intake/  (L4 Task)
+        Confirm-Retirement-Closure-Processing/  (L4 Task)
+        Confirm-Retirement-Closure-Verification/  (L4 Task)
+      Execute-Service-Withdrawal/  (L3 Activity)
+        Execute-Service-Withdrawal-Audit-Record/  (L4 Task)
+        Execute-Service-Withdrawal-Confirmation/  (L4 Task)
+        Execute-Service-Withdrawal-Intake/  (L4 Task)
+        Execute-Service-Withdrawal-Processing/  (L4 Task)
+        Execute-Service-Withdrawal-Verification/  (L4 Task)
+      Plan-Service-Withdrawal/  (L3 Activity)
+        Plan-Service-Withdrawal-Audit-Record/  (L4 Task)
+        Plan-Service-Withdrawal-Confirmation/  (L4 Task)
+        Plan-Service-Withdrawal-Intake/  (L4 Task)
+        Plan-Service-Withdrawal-Processing/  (L4 Task)
+        Plan-Service-Withdrawal-Verification/  (L4 Task)
+      Resolve-Residual-Obligations/  (L3 Activity)
+        Resolve-Residual-Obligations-Audit-Record/  (L4 Task)
+        Resolve-Residual-Obligations-Confirmation/  (L4 Task)
+        Resolve-Residual-Obligations-Intake/  (L4 Task)
+        Resolve-Residual-Obligations-Processing/  (L4 Task)
+        Resolve-Residual-Obligations-Verification/  (L4 Task)
+```

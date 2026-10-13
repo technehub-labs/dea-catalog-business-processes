@@ -53,3 +53,63 @@ Sections authored by `scripts/generate_readmes.py` from the record's YAML fields
 ## 12. Revision History
 
 Revision history is governed by CR-BP-04 / SIV-001..004 (additive change_history entries; version unchanged for additive metadata-only changes).
+
+## 13. Path Scheme
+
+Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename):
+
+```
+ge-conceive/
+  Governance-Conception/  (L1 ProcessGroup)
+    Develop-Governance-Strategy/  (L2 Process)
+    Frame-Risk-Framework-Direction/  (L2 Process)
+      Articulate-Risk-Appetite/  (L3 Activity)
+        Articulate-Risk-Appetite-Audit-Record/  (L4 Task)
+        Articulate-Risk-Appetite-Confirmation/  (L4 Task)
+        Articulate-Risk-Appetite-Intake/  (L4 Task)
+        Articulate-Risk-Appetite-Processing/  (L4 Task)
+        Articulate-Risk-Appetite-Verification/  (L4 Task)
+      Commit-Risk-Framework-Direction/  (L3 Activity)
+        Commit-Risk-Framework-Direction-Audit-Record/  (L4 Task)
+        Commit-Risk-Framework-Direction-Confirmation/  (L4 Task)
+        Commit-Risk-Framework-Direction-Intake/  (L4 Task)
+        Commit-Risk-Framework-Direction-Processing/  (L4 Task)
+        Commit-Risk-Framework-Direction-Verification/  (L4 Task)
+      Define-Tolerance-Bands/  (L3 Activity)
+        Define-Tolerance-Bands-Audit-Record/  (L4 Task)
+        Define-Tolerance-Bands-Confirmation/  (L4 Task)
+        Define-Tolerance-Bands-Intake/  (L4 Task)
+        Define-Tolerance-Bands-Processing/  (L4 Task)
+        Define-Tolerance-Bands-Verification/  (L4 Task)
+      Frame-Governance-Posture-for-Risk/  (L3 Activity)
+        Frame-Governance-Posture-for-Risk-Audit-Record/  (L4 Task)
+        Frame-Governance-Posture-for-Risk-Confirmation/  (L4 Task)
+        Frame-Governance-Posture-for-Risk-Intake/  (L4 Task)
+        Frame-Governance-Posture-for-Risk-Processing/  (L4 Task)
+        Frame-Governance-Posture-for-Risk-Verification/  (L4 Task)
+    Initiate-Policy-and-Charter/  (L2 Process)
+      Bound-Policy-Scope/  (L3 Activity)
+        Bound-Policy-Scope-Audit-Record/  (L4 Task)
+        Bound-Policy-Scope-Confirmation/  (L4 Task)
+        Bound-Policy-Scope-Intake/  (L4 Task)
+        Bound-Policy-Scope-Processing/  (L4 Task)
+        Bound-Policy-Scope-Verification/  (L4 Task)
+      Commit-Policy-Initiation/  (L3 Activity)
+        Commit-Policy-Initiation-Audit-Record/  (L4 Task)
+        Commit-Policy-Initiation-Confirmation/  (L4 Task)
+        Commit-Policy-Initiation-Intake/  (L4 Task)
+        Commit-Policy-Initiation-Processing/  (L4 Task)
+        Commit-Policy-Initiation-Verification/  (L4 Task)
+      Draft-Initial-Policy-Document/  (L3 Activity)
+        Draft-Initial-Policy-Document-Audit-Record/  (L4 Task)
+        Draft-Initial-Policy-Document-Confirmation/  (L4 Task)
+        Draft-Initial-Policy-Document-Intake/  (L4 Task)
+        Draft-Initial-Policy-Document-Processing/  (L4 Task)
+        Draft-Initial-Policy-Document-Verification/  (L4 Task)
+      Propose-Authority-and-Decision-Rights/  (L3 Activity)
+        Propose-Authority-and-Decision-Rights-Audit-Record/  (L4 Task)
+        Propose-Authority-and-Decision-Rights-Confirmation/  (L4 Task)
+        Propose-Authority-and-Decision-Rights-Intake/  (L4 Task)
+        Propose-Authority-and-Decision-Rights-Processing/  (L4 Task)
+        Propose-Authority-and-Decision-Rights-Verification/  (L4 Task)
+```

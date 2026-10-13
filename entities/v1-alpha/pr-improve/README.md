@@ -53,3 +53,37 @@ Sections authored by `scripts/generate_readmes.py` from the record's YAML fields
 ## 12. Revision History
 
 Revision history is governed by CR-BP-04 / SIV-001..004 (additive change_history entries; version unchanged for additive metadata-only changes).
+
+## 13. Path Scheme
+
+Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename):
+
+```
+pr-improve/
+  Customer-Insight-and-Retention/  (L1 ProcessGroup)
+    Operate-Customer-Retention-Programs/  (L2 Process)
+      Assess-Churn-Risk/  (L3 Activity)
+        Assess-Churn-Risk-Audit-Record/  (L4 Task)
+        Assess-Churn-Risk-Confirmation/  (L4 Task)
+        Assess-Churn-Risk-Intake/  (L4 Task)
+        Assess-Churn-Risk-Processing/  (L4 Task)
+        Assess-Churn-Risk-Verification/  (L4 Task)
+      Collect-Customer-Feedback/  (L3 Activity)
+        Collect-Customer-Feedback-Audit-Record/  (L4 Task)
+        Collect-Customer-Feedback-Confirmation/  (L4 Task)
+        Collect-Customer-Feedback-Intake/  (L4 Task)
+        Collect-Customer-Feedback-Processing/  (L4 Task)
+        Collect-Customer-Feedback-Verification/  (L4 Task)
+      Execute-Retention-Actions/  (L3 Activity)
+        Execute-Retention-Actions-Audit-Record/  (L4 Task)
+        Execute-Retention-Actions-Confirmation/  (L4 Task)
+        Execute-Retention-Actions-Intake/  (L4 Task)
+        Execute-Retention-Actions-Processing/  (L4 Task)
+        Execute-Retention-Actions-Verification/  (L4 Task)
+      Maintain-Win-Back-Pipeline/  (L3 Activity)
+        Maintain-Win-Back-Pipeline-Audit-Record/  (L4 Task)
+        Maintain-Win-Back-Pipeline-Confirmation/  (L4 Task)
+        Maintain-Win-Back-Pipeline-Intake/  (L4 Task)
+        Maintain-Win-Back-Pipeline-Processing/  (L4 Task)
+        Maintain-Win-Back-Pipeline-Verification/  (L4 Task)
+```

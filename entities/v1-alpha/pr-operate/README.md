@@ -62,3 +62,37 @@ Revision history is governed by CR-BP-04 / SIV-001..004 (additive change_history
 
 **Governing CRs**:
 - 2026-09-03: CR-BP-03C
+
+## 13. Path Scheme
+
+Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename):
+
+```
+pr-operate/
+  Customer-Lifecycle-Management/  (L1 ProcessGroup)
+    Manage-Customer-Relationship/  (L2 Process)
+      Allocate-Relationship-Attention/  (L3 Activity)
+        Allocate-Relationship-Attention-Audit-Record/  (L4 Task)
+        Allocate-Relationship-Attention-Confirmation/  (L4 Task)
+        Allocate-Relationship-Attention-Intake/  (L4 Task)
+        Allocate-Relationship-Attention-Processing/  (L4 Task)
+        Allocate-Relationship-Attention-Verification/  (L4 Task)
+      Conduct-Relationship-Reviews/  (L3 Activity)
+        Conduct-Relationship-Reviews-Audit-Record/  (L4 Task)
+        Conduct-Relationship-Reviews-Confirmation/  (L4 Task)
+        Conduct-Relationship-Reviews-Intake/  (L4 Task)
+        Conduct-Relationship-Reviews-Processing/  (L4 Task)
+        Conduct-Relationship-Reviews-Verification/  (L4 Task)
+      Coordinate-Renewals/  (L3 Activity)
+        Coordinate-Renewals-Audit-Record/  (L4 Task)
+        Coordinate-Renewals-Confirmation/  (L4 Task)
+        Coordinate-Renewals-Intake/  (L4 Task)
+        Coordinate-Renewals-Processing/  (L4 Task)
+        Coordinate-Renewals-Verification/  (L4 Task)
+      Handle-Relationship-Escalations/  (L3 Activity)
+        Handle-Relationship-Escalations-Audit-Record/  (L4 Task)
+        Handle-Relationship-Escalations-Confirmation/  (L4 Task)
+        Handle-Relationship-Escalations-Intake/  (L4 Task)
+        Handle-Relationship-Escalations-Processing/  (L4 Task)
+        Handle-Relationship-Escalations-Verification/  (L4 Task)
+```

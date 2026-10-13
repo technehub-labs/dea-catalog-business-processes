@@ -52,3 +52,37 @@ Sections authored by `scripts/generate_readmes.py` from the record's YAML fields
 ## 12. Revision History
 
 Revision history is governed by CR-BP-04 / SIV-001..004 (additive change_history entries; version unchanged for additive metadata-only changes).
+
+## 13. Path Scheme
+
+Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename):
+
+```
+fa-activate/
+  Regulated-Billing-Activation/  (L1 ProcessGroup)
+    Activate-Billing-Capability/  (L2 Process)
+      Acquire-Regulator-Acknowledged-Accounting-or-Rate-Framework/  (L3 Activity)
+        Acquire-Regulator-Acknowledged-Accounting-or-Rate-Framework-Audit-Record/  (L4 Task)
+        Acquire-Regulator-Acknowledged-Accounting-or-Rate-Framework-Confirmation/  (L4 Task)
+        Acquire-Regulator-Acknowledged-Accounting-or-Rate-Framework-Intake/  (L4 Task)
+        Acquire-Regulator-Acknowledged-Accounting-or-Rate-Framework-Processing/  (L4 Task)
+        Acquire-Regulator-Acknowledged-Accounting-or-Rate-Framework-Verification/  (L4 Task)
+      Acquire-Tariff-or-Pricing-Approval/  (L3 Activity)
+        Acquire-Tariff-or-Pricing-Approval-Audit-Record/  (L4 Task)
+        Acquire-Tariff-or-Pricing-Approval-Confirmation/  (L4 Task)
+        Acquire-Tariff-or-Pricing-Approval-Intake/  (L4 Task)
+        Acquire-Tariff-or-Pricing-Approval-Processing/  (L4 Task)
+        Acquire-Tariff-or-Pricing-Approval-Verification/  (L4 Task)
+      Activate-Continuing-Supervisor-Notification-Billing/  (L3 Activity)
+        Activate-Continuing-Supervisor-Notification-Billing-Audit-Record/  (L4 Task)
+        Activate-Continuing-Supervisor-Notification-Billing-Confirmation/  (L4 Task)
+        Activate-Continuing-Supervisor-Notification-Billing-Intake/  (L4 Task)
+        Activate-Continuing-Supervisor-Notification-Billing-Processing/  (L4 Task)
+        Activate-Continuing-Supervisor-Notification-Billing-Verification/  (L4 Task)
+      Bring-Operational-Controls-Live-on-the-Regulated-Billing-Record/  (L3 Activity)
+        Bring-Operational-Controls-Live-on-the-Regulated-Billing-Record-Audit-Record/  (L4 Task)
+        Bring-Operational-Controls-Live-on-the-Regulated-Billing-Record-Confirmation/  (L4 Task)
+        Bring-Operational-Controls-Live-on-the-Regulated-Billing-Record-Intake/  (L4 Task)
+        Bring-Operational-Controls-Live-on-the-Regulated-Billing-Record-Processing/  (L4 Task)
+        Bring-Operational-Controls-Live-on-the-Regulated-Billing-Record-Verification/  (L4 Task)
+```

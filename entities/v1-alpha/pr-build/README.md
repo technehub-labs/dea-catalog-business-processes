@@ -53,3 +53,62 @@ Sections authored by `scripts/generate_readmes.py` from the record's YAML fields
 ## 12. Revision History
 
 Revision history is governed by CR-BP-04 / SIV-001..004 (additive change_history entries; version unchanged for additive metadata-only changes).
+
+## 13. Path Scheme
+
+Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename):
+
+```
+pr-build/
+  Customer-Channel-and-Acquisition-Build/  (L1 ProcessGroup)
+    Build-Customer-Acquisition-Channels/  (L2 Process)
+      Build-Acquisition-Engines/  (L3 Activity)
+        Build-Acquisition-Engines-Audit-Record/  (L4 Task)
+        Build-Acquisition-Engines-Confirmation/  (L4 Task)
+        Build-Acquisition-Engines-Intake/  (L4 Task)
+        Build-Acquisition-Engines-Processing/  (L4 Task)
+        Build-Acquisition-Engines-Verification/  (L4 Task)
+      Integrate-Channels-with-Experience/  (L3 Activity)
+        Integrate-Channels-with-Experience-Audit-Record/  (L4 Task)
+        Integrate-Channels-with-Experience-Confirmation/  (L4 Task)
+        Integrate-Channels-with-Experience-Intake/  (L4 Task)
+        Integrate-Channels-with-Experience-Processing/  (L4 Task)
+        Integrate-Channels-with-Experience-Verification/  (L4 Task)
+      Provision-Channel-Infrastructure/  (L3 Activity)
+        Provision-Channel-Infrastructure-Audit-Record/  (L4 Task)
+        Provision-Channel-Infrastructure-Confirmation/  (L4 Task)
+        Provision-Channel-Infrastructure-Intake/  (L4 Task)
+        Provision-Channel-Infrastructure-Processing/  (L4 Task)
+        Provision-Channel-Infrastructure-Verification/  (L4 Task)
+      Verify-Acquisition-Readiness/  (L3 Activity)
+        Verify-Acquisition-Readiness-Audit-Record/  (L4 Task)
+        Verify-Acquisition-Readiness-Confirmation/  (L4 Task)
+        Verify-Acquisition-Readiness-Intake/  (L4 Task)
+        Verify-Acquisition-Readiness-Processing/  (L4 Task)
+        Verify-Acquisition-Readiness-Verification/  (L4 Task)
+    Build-Demand-Generation-Programs/  (L2 Process)
+      Build-Demand-Program-Assets/  (L3 Activity)
+        Build-Demand-Program-Assets-Audit-Record/  (L4 Task)
+        Build-Demand-Program-Assets-Confirmation/  (L4 Task)
+        Build-Demand-Program-Assets-Intake/  (L4 Task)
+        Build-Demand-Program-Assets-Processing/  (L4 Task)
+        Build-Demand-Program-Assets-Verification/  (L4 Task)
+      Calibrate-Demand-Programs/  (L3 Activity)
+        Calibrate-Demand-Programs-Audit-Record/  (L4 Task)
+        Calibrate-Demand-Programs-Confirmation/  (L4 Task)
+        Calibrate-Demand-Programs-Intake/  (L4 Task)
+        Calibrate-Demand-Programs-Processing/  (L4 Task)
+        Calibrate-Demand-Programs-Verification/  (L4 Task)
+      Integrate-Demand-Engine-with-Channels/  (L3 Activity)
+        Integrate-Demand-Engine-with-Channels-Audit-Record/  (L4 Task)
+        Integrate-Demand-Engine-with-Channels-Confirmation/  (L4 Task)
+        Integrate-Demand-Engine-with-Channels-Intake/  (L4 Task)
+        Integrate-Demand-Engine-with-Channels-Processing/  (L4 Task)
+        Integrate-Demand-Engine-with-Channels-Verification/  (L4 Task)
+      Verify-Initial-Demand-Production/  (L3 Activity)
+        Verify-Initial-Demand-Production-Audit-Record/  (L4 Task)
+        Verify-Initial-Demand-Production-Confirmation/  (L4 Task)
+        Verify-Initial-Demand-Production-Intake/  (L4 Task)
+        Verify-Initial-Demand-Production-Processing/  (L4 Task)
+        Verify-Initial-Demand-Production-Verification/  (L4 Task)
+```

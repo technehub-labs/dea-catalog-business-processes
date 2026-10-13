@@ -61,3 +61,37 @@ Sections authored by `scripts/generate_readmes.py` from the record's YAML fields
 ## 12. Revision History
 
 Revision history is governed by CR-BP-04 / SIV-001..004 (additive change_history entries; version unchanged for additive metadata-only changes).
+
+## 13. Path Scheme
+
+Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename):
+
+```
+ge-activate/
+  Governance-Instrument-Commencement/  (L1 ProcessGroup)
+    Bring-Policy-Instrument-into-Force/  (L2 Process)
+      Communicate-Obligations-and-Rights/  (L3 Activity)
+        Communicate-Obligations-and-Rights-Audit-Record/  (L4 Task)
+        Communicate-Obligations-and-Rights-Confirmation/  (L4 Task)
+        Communicate-Obligations-and-Rights-Intake/  (L4 Task)
+        Communicate-Obligations-and-Rights-Processing/  (L4 Task)
+        Communicate-Obligations-and-Rights-Verification/  (L4 Task)
+      Effect-Instrument-Commencement/  (L3 Activity)
+        Effect-Instrument-Commencement-Audit-Record/  (L4 Task)
+        Effect-Instrument-Commencement-Confirmation/  (L4 Task)
+        Effect-Instrument-Commencement-Intake/  (L4 Task)
+        Effect-Instrument-Commencement-Processing/  (L4 Task)
+        Effect-Instrument-Commencement-Verification/  (L4 Task)
+      Establish-Enforcement-Baseline/  (L3 Activity)
+        Establish-Enforcement-Baseline-Audit-Record/  (L4 Task)
+        Establish-Enforcement-Baseline-Confirmation/  (L4 Task)
+        Establish-Enforcement-Baseline-Intake/  (L4 Task)
+        Establish-Enforcement-Baseline-Processing/  (L4 Task)
+        Establish-Enforcement-Baseline-Verification/  (L4 Task)
+      Verify-Commencement-Conditions/  (L3 Activity)
+        Verify-Commencement-Conditions-Audit-Record/  (L4 Task)
+        Verify-Commencement-Conditions-Confirmation/  (L4 Task)
+        Verify-Commencement-Conditions-Intake/  (L4 Task)
+        Verify-Commencement-Conditions-Processing/  (L4 Task)
+        Verify-Commencement-Conditions-Verification/  (L4 Task)
+```

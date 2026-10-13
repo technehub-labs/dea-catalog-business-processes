@@ -52,3 +52,37 @@ Sections authored by `scripts/generate_readmes.py` from the record's YAML fields
 ## 12. Revision History
 
 Revision history is governed by CR-BP-04 / SIV-001..004 (additive change_history entries; version unchanged for additive metadata-only changes).
+
+## 13. Path Scheme
+
+Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename):
+
+```
+sd-activate/
+  Regulated-Strategic-Plan-Activation/  (L1 ProcessGroup)
+    Institutionalize-Regulated-Strategic-Plan/  (L2 Process)
+      Activate-Communications-Plan-Under-Regulator-Continuing-Supervision/  (L3 Activity)
+        Activate-Communications-Plan-Under-Regulator-Continuing-Supervision-Audit-Record/  (L4 Task)
+        Activate-Communications-Plan-Under-Regulator-Continuing-Supervision-Confirmation/  (L4 Task)
+        Activate-Communications-Plan-Under-Regulator-Continuing-Supervision-Intake/  (L4 Task)
+        Activate-Communications-Plan-Under-Regulator-Continuing-Supervision-Processing/  (L4 Task)
+        Activate-Communications-Plan-Under-Regulator-Continuing-Supervision-Verification/  (L4 Task)
+      Complete-Supervisor-Review-and-Obtain-Acknowledgement-on-Record/  (L3 Activity)
+        Complete-Supervisor-Review-and-Obtain-Acknowledgement-on-Record-Audit-Record/  (L4 Task)
+        Complete-Supervisor-Review-and-Obtain-Acknowledgement-on-Record-Confirmation/  (L4 Task)
+        Complete-Supervisor-Review-and-Obtain-Acknowledgement-on-Record-Intake/  (L4 Task)
+        Complete-Supervisor-Review-and-Obtain-Acknowledgement-on-Record-Processing/  (L4 Task)
+        Complete-Supervisor-Review-and-Obtain-Acknowledgement-on-Record-Verification/  (L4 Task)
+      File-Supervisor-Acknowledged-Strategic-Plan-Submission/  (L3 Activity)
+        File-Supervisor-Acknowledged-Strategic-Plan-Submission-Audit-Record/  (L4 Task)
+        File-Supervisor-Acknowledged-Strategic-Plan-Submission-Confirmation/  (L4 Task)
+        File-Supervisor-Acknowledged-Strategic-Plan-Submission-Intake/  (L4 Task)
+        File-Supervisor-Acknowledged-Strategic-Plan-Submission-Processing/  (L4 Task)
+        File-Supervisor-Acknowledged-Strategic-Plan-Submission-Verification/  (L4 Task)
+      Launch-Operational-Monitoring-Framework/  (L3 Activity)
+        Launch-Operational-Monitoring-Framework-Audit-Record/  (L4 Task)
+        Launch-Operational-Monitoring-Framework-Confirmation/  (L4 Task)
+        Launch-Operational-Monitoring-Framework-Intake/  (L4 Task)
+        Launch-Operational-Monitoring-Framework-Processing/  (L4 Task)
+        Launch-Operational-Monitoring-Framework-Verification/  (L4 Task)
+```

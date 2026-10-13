@@ -31,9 +31,38 @@ from typing import Iterable
 import yaml
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-ENTITIES_DIR = REPO_ROOT / "entities/v1-alpha"
-REGISTER_PATH = ENTITIES_DIR / "pr-operate/pr-operate-7ab3ma/research/l1-register.yaml"
-UNIVERSE_PATH = ENTITIES_DIR / "pr-operate/pr-operate-7ab3ma/research/l1-candidate-universe.yaml"
+ENTITIES_DIR = REPO_ROOT / "entities" / "v1-alpha"
+
+
+def _register_paths() -> tuple[Path, Path]:
+    """Derive the l1-register and l1-candidate-universe paths.
+
+    These files are owned by the pr-operate ProcessGroup (the only L1
+    register in the catalog; CR-BP-22 anchor). The path is derived
+    from the group record's own location so it survives directory
+    renames (CR-BP-117c). Returns (register, universe).
+    """
+    for fpath in ENTITIES_DIR.rglob("processes-group-pr-operate-*.yaml"):
+        if "research" in fpath.parts:
+            continue
+        # Expect one group per (domain, stage); first hit wins.
+        research = fpath.parent / "research"
+        return research / "l1-register.yaml", research / "l1-candidate-universe.yaml"
+    raise FileNotFoundError(
+        "no pr-operate ProcessGroup found under entities/v1-alpha; "
+        "the L1 register cannot be located"
+    )
+
+
+# Module-level constants for the call sites; computed lazily so
+# cold-import doesn't crash if the catalog is not yet populated.
+REGISTER_PATH: Path
+UNIVERSE_PATH: Path
+try:
+    REGISTER_PATH, UNIVERSE_PATH = _register_paths()
+except FileNotFoundError:
+    REGISTER_PATH = ENTITIES_DIR / "pr-operate" / "research" / "l1-register.yaml"
+    UNIVERSE_PATH = ENTITIES_DIR / "pr-operate" / "research" / "l1-candidate-universe.yaml"
 
 DOMAIN_ABBR = {
     "ge": "GovernanceAndExistence",

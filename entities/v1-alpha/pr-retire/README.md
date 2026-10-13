@@ -61,3 +61,37 @@ Sections authored by `scripts/generate_readmes.py` from the record's YAML fields
 ## 12. Revision History
 
 Revision history is governed by CR-BP-04 / SIV-001..004 (additive change_history entries; version unchanged for additive metadata-only changes).
+
+## 13. Path Scheme
+
+Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename):
+
+```
+pr-retire/
+  Relationship-Termination/  (L1 ProcessGroup)
+    Close-Enterprise-Relationship/  (L2 Process)
+      Execute-Evidenced-Closure/  (L3 Activity)
+        Execute-Evidenced-Closure-Audit-Record/  (L4 Task)
+        Execute-Evidenced-Closure-Confirmation/  (L4 Task)
+        Execute-Evidenced-Closure-Intake/  (L4 Task)
+        Execute-Evidenced-Closure-Processing/  (L4 Task)
+        Execute-Evidenced-Closure-Verification/  (L4 Task)
+      Plan-Relationship-Close-Out/  (L3 Activity)
+        Plan-Relationship-Close-Out-Audit-Record/  (L4 Task)
+        Plan-Relationship-Close-Out-Confirmation/  (L4 Task)
+        Plan-Relationship-Close-Out-Intake/  (L4 Task)
+        Plan-Relationship-Close-Out-Processing/  (L4 Task)
+        Plan-Relationship-Close-Out-Verification/  (L4 Task)
+      Resolve-Records-and-Rights/  (L3 Activity)
+        Resolve-Records-and-Rights-Audit-Record/  (L4 Task)
+        Resolve-Records-and-Rights-Confirmation/  (L4 Task)
+        Resolve-Records-and-Rights-Intake/  (L4 Task)
+        Resolve-Records-and-Rights-Processing/  (L4 Task)
+        Resolve-Records-and-Rights-Verification/  (L4 Task)
+      Settle-Outstanding-Obligations/  (L3 Activity)
+        Settle-Outstanding-Obligations-Audit-Record/  (L4 Task)
+        Settle-Outstanding-Obligations-Confirmation/  (L4 Task)
+        Settle-Outstanding-Obligations-Intake/  (L4 Task)
+        Settle-Outstanding-Obligations-Processing/  (L4 Task)
+        Settle-Outstanding-Obligations-Verification/  (L4 Task)
+```

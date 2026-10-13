@@ -53,6 +53,7 @@ PROFILE_SECTIONS: dict[tuple[str, str], list[str]] = {
         "entity-identity", "formal-definition", "semantic-dimensions",
         "decomposition", "behavior", "interfaces", "roles",
         "rules-controls", "evidence", "completeness", "revision-history",
+        "path-scheme",
     ],
     ("ProcessGroup", "L1"): [
         "entity-identity", "formal-definition", "semantic-dimensions",
@@ -94,7 +95,23 @@ SECTION_HEADINGS: dict[str, str] = {
     "evidence": "## 10. Evidence",
     "completeness": "## 11. Documentation Completeness",
     "revision-history": "## 12. Revision History",
+    "path-scheme": "## 13. Path Scheme",
 }
+
+
+def _cell_of_id(record_id: str) -> str | None:
+    """Extract the cell slug (`<domain>-<stage>`) from a canonical id.
+
+    `processes:pc-fa-retire-64q5p9` -> `fa-retire`. Returns None for
+    malformed ids.
+    """
+    body = record_id.split(":", 1)
+    if len(body) != 2:
+        return None
+    parts = body[1].split("-")
+    if len(parts) < 4:
+        return None
+    return f"{parts[1]}-{parts[2]}"
 
 
 def resolve_level(record: dict) -> str | None:
@@ -200,6 +217,53 @@ def render_section(
                 f"- **Belongs to Business Process**: "
                 f"`{record['belongs_to_business_process']}`"
             )
+        return "\n".join(lines)
+
+    if section_id == "path-scheme":
+        # CR-BP-117c C-3: human-friendly path cheatsheet for the cell.
+        # Renders the on-disk directory tree (post-C-1 the dir names are
+        # the kebab-cased record names) with level labels from the
+        # filename token. Deterministic: dirs sorted by name at each
+        # level of the walk.
+        cell = _cell_of_id(rid)
+        if cell is None:
+            return "(path scheme unavailable: id has no cell segment)"
+        cell_dir = ENTITIES_ROOT / cell
+        if not cell_dir.is_dir():
+            return f"(path scheme unavailable: {cell_dir} not found)"
+        level_label = {
+            "pc": "L0 ProcessContext",
+            "group": "L1 ProcessGroup",
+            "process": "L2 Process",
+            "activity": "L3 Activity",
+            "task": "L4 Task",
+            "scope": "L0 ProcessScope",
+        }
+        lines = [
+            "Directory layout of this cell (dir names are the "
+            "kebab-cased record names; the BASE32 hash lives in the "
+            "record filename):",
+            "",
+            "```",
+            f"{cell}/",
+        ]
+
+        def walk(d: Path, depth: int) -> None:
+            for child in sorted(d.iterdir(), key=lambda p: p.name):
+                if not child.is_dir() or child.name == "research":
+                    continue
+                yamls = sorted(child.glob("processes-*.yaml"))
+                if not yamls:
+                    continue
+                token = yamls[0].name.split("-")[1]
+                label = level_label.get(token, "L?")
+                lines.append(
+                    f"{'  ' * depth}{child.name}/  ({label})"
+                )
+                walk(child, depth + 1)
+
+        walk(cell_dir, 1)
+        lines.append("```")
         return "\n".join(lines)
 
     if section_id == "formal-definition":

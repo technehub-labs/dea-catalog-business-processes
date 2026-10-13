@@ -56,3 +56,55 @@ Revision history is governed by CR-BP-04 / SIV-001..004 (additive change_history
 
 **Governing CRs**:
 - 2026-09-19: CR-BP-101
+
+## 13. Path Scheme
+
+Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename):
+
+```
+sd-retire/
+  Regulated-Strategic-Plan-Sunset/  (L1 ProcessGroup)
+    Sunset-Regulated-Strategic-Plan/  (L2 Process)
+      Execute-Communications-Plan-for-Regulated-Strategic-Plan-Sunset/  (L3 Activity)
+        Execute-Communications-Plan-for-Regulated-Strategic-Plan-Sunset-Audit-Record/  (L4 Task)
+        Execute-Communications-Plan-for-Regulated-Strategic-Plan-Sunset-Confirmation/  (L4 Task)
+        Execute-Communications-Plan-for-Regulated-Strategic-Plan-Sunset-Intake/  (L4 Task)
+        Execute-Communications-Plan-for-Regulated-Strategic-Plan-Sunset-Processing/  (L4 Task)
+        Execute-Communications-Plan-for-Regulated-Strategic-Plan-Sunset-Verification/  (L4 Task)
+      Execute-Retained-Records-Plan-for-Regulated-Entity/  (L3 Activity)
+        Execute-Retained-Records-Plan-for-Regulated-Entity-Audit-Record/  (L4 Task)
+        Execute-Retained-Records-Plan-for-Regulated-Entity-Confirmation/  (L4 Task)
+        Execute-Retained-Records-Plan-for-Regulated-Entity-Intake/  (L4 Task)
+        Execute-Retained-Records-Plan-for-Regulated-Entity-Processing/  (L4 Task)
+        Execute-Retained-Records-Plan-for-Regulated-Entity-Verification/  (L4 Task)
+      Identify-Superseded-Regulated-Strategic-Plan/  (L3 Activity)
+        Identify-Superseded-Regulated-Strategic-Plan-Audit-Record/  (L4 Task)
+        Identify-Superseded-Regulated-Strategic-Plan-Confirmation/  (L4 Task)
+        Identify-Superseded-Regulated-Strategic-Plan-Intake/  (L4 Task)
+        Identify-Superseded-Regulated-Strategic-Plan-Processing/  (L4 Task)
+        Identify-Superseded-Regulated-Strategic-Plan-Verification/  (L4 Task)
+      Notify-Affected-Business-Units-Under-Regulator-Continuing-Supervision/  (L3 Activity)
+        Notify-Affected-Business-Units-Under-Regulator-Continuing-Supervision-Audit-Record/  (L4 Task)
+        Notify-Affected-Business-Units-Under-Regulator-Continuing-Supervision-Confirmation/  (L4 Task)
+        Notify-Affected-Business-Units-Under-Regulator-Continuing-Supervision-Intake/  (L4 Task)
+        Notify-Affected-Business-Units-Under-Regulator-Continuing-Supervision-Processing/  (L4 Task)
+        Notify-Affected-Business-Units-Under-Regulator-Continuing-Supervision-Verification/  (L4 Task)
+      Preserve-Regulator-Acknowledged-Sunset-Record/  (L3 Activity)
+        Preserve-Regulator-Acknowledged-Sunset-Record-Audit-Record/  (L4 Task)
+        Preserve-Regulator-Acknowledged-Sunset-Record-Confirmation/  (L4 Task)
+        Preserve-Regulator-Acknowledged-Sunset-Record-Intake/  (L4 Task)
+        Preserve-Regulator-Acknowledged-Sunset-Record-Processing/  (L4 Task)
+        Preserve-Regulator-Acknowledged-Sunset-Record-Verification/  (L4 Task)
+      Receive-Regulator-Sunset-Directive/  (L3 Activity)
+        Receive-Regulator-Sunset-Directive-Audit-Record/  (L4 Task)
+        Receive-Regulator-Sunset-Directive-Confirmation/  (L4 Task)
+        Receive-Regulator-Sunset-Directive-Intake/  (L4 Task)
+        Receive-Regulator-Sunset-Directive-Processing/  (L4 Task)
+        Receive-Regulator-Sunset-Directive-Verification/  (L4 Task)
+      Update-Filings-Register-for-Regulated-Strategic-Plan/  (L3 Activity)
+        Update-Filings-Register-for-Regulated-Strategic-Plan-Audit-Record/  (L4 Task)
+        Update-Filings-Register-for-Regulated-Strategic-Plan-Confirmation/  (L4 Task)
+        Update-Filings-Register-for-Regulated-Strategic-Plan-Intake/  (L4 Task)
+        Update-Filings-Register-for-Regulated-Strategic-Plan-Processing/  (L4 Task)
+        Update-Filings-Register-for-Regulated-Strategic-Plan-Verification/  (L4 Task)
+```

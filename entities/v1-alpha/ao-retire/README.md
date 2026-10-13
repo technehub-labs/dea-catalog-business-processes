@@ -52,3 +52,37 @@ Sections authored by `scripts/generate_readmes.py` from the record's YAML fields
 ## 12. Revision History
 
 Revision history is governed by CR-BP-04 / SIV-001..004 (additive change_history entries; version unchanged for additive metadata-only changes).
+
+## 13. Path Scheme
+
+Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename):
+
+```
+ao-retire/
+  Regulated-Workforce-Wind-Down/  (L1 ProcessGroup)
+    Conduct-Regulated-Workforce-Wind-Down/  (L2 Process)
+      Compute-Statutory-Liabilities/  (L3 Activity)
+        Compute-Statutory-Liabilities-Audit-Record/  (L4 Task)
+        Compute-Statutory-Liabilities-Confirmation/  (L4 Task)
+        Compute-Statutory-Liabilities-Intake/  (L4 Task)
+        Compute-Statutory-Liabilities-Processing/  (L4 Task)
+        Compute-Statutory-Liabilities-Verification/  (L4 Task)
+      Consult-Representative-Bodies/  (L3 Activity)
+        Consult-Representative-Bodies-Audit-Record/  (L4 Task)
+        Consult-Representative-Bodies-Confirmation/  (L4 Task)
+        Consult-Representative-Bodies-Intake/  (L4 Task)
+        Consult-Representative-Bodies-Processing/  (L4 Task)
+        Consult-Representative-Bodies-Verification/  (L4 Task)
+      Coordinate-Transition-Supports/  (L3 Activity)
+        Coordinate-Transition-Supports-Audit-Record/  (L4 Task)
+        Coordinate-Transition-Supports-Confirmation/  (L4 Task)
+        Coordinate-Transition-Supports-Intake/  (L4 Task)
+        Coordinate-Transition-Supports-Processing/  (L4 Task)
+        Coordinate-Transition-Supports-Verification/  (L4 Task)
+      Notify-Statutory-Workforce-Reduction/  (L3 Activity)
+        Notify-Statutory-Workforce-Reduction-Audit-Record/  (L4 Task)
+        Notify-Statutory-Workforce-Reduction-Confirmation/  (L4 Task)
+        Notify-Statutory-Workforce-Reduction-Intake/  (L4 Task)
+        Notify-Statutory-Workforce-Reduction-Processing/  (L4 Task)
+        Notify-Statutory-Workforce-Reduction-Verification/  (L4 Task)
+```

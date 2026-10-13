@@ -52,3 +52,37 @@ Sections authored by `scripts/generate_readmes.py` from the record's YAML fields
 ## 12. Revision History
 
 Revision history is governed by CR-BP-04 / SIV-001..004 (additive change_history entries; version unchanged for additive metadata-only changes).
+
+## 13. Path Scheme
+
+Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename):
+
+```
+ge-retire/
+  Regulated-Governance-Unwind/  (L1 ProcessGroup)
+    Effect-Regulator-Mandated-Governance-Unwind/  (L2 Process)
+      Assess-Regulator-Or-Court-Order-Scope/  (L3 Activity)
+        Assess-Regulator-Or-Court-Order-Scope-Audit-Record/  (L4 Task)
+        Assess-Regulator-Or-Court-Order-Scope-Confirmation/  (L4 Task)
+        Assess-Regulator-Or-Court-Order-Scope-Intake/  (L4 Task)
+        Assess-Regulator-Or-Court-Order-Scope-Processing/  (L4 Task)
+        Assess-Regulator-Or-Court-Order-Scope-Verification/  (L4 Task)
+      Assign-Retained-Records-Custodianship/  (L3 Activity)
+        Assign-Retained-Records-Custodianship-Audit-Record/  (L4 Task)
+        Assign-Retained-Records-Custodianship-Confirmation/  (L4 Task)
+        Assign-Retained-Records-Custodianship-Intake/  (L4 Task)
+        Assign-Retained-Records-Custodianship-Processing/  (L4 Task)
+        Assign-Retained-Records-Custodianship-Verification/  (L4 Task)
+      Reduce-Governance-To-Wind-Down-Quorum/  (L3 Activity)
+        Reduce-Governance-To-Wind-Down-Quorum-Audit-Record/  (L4 Task)
+        Reduce-Governance-To-Wind-Down-Quorum-Confirmation/  (L4 Task)
+        Reduce-Governance-To-Wind-Down-Quorum-Intake/  (L4 Task)
+        Reduce-Governance-To-Wind-Down-Quorum-Processing/  (L4 Task)
+        Reduce-Governance-To-Wind-Down-Quorum-Verification/  (L4 Task)
+      Submit-Statutory-Dissolution-Filings/  (L3 Activity)
+        Submit-Statutory-Dissolution-Filings-Audit-Record/  (L4 Task)
+        Submit-Statutory-Dissolution-Filings-Confirmation/  (L4 Task)
+        Submit-Statutory-Dissolution-Filings-Intake/  (L4 Task)
+        Submit-Statutory-Dissolution-Filings-Processing/  (L4 Task)
+        Submit-Statutory-Dissolution-Filings-Verification/  (L4 Task)
+```

@@ -84,7 +84,7 @@ This is the EID-002 + EID-003 path: every record's README includes the level tok
 
 The id-convention rename (Candidate 1 or 2) is a 6-8 week scope if it lands; the README-disambiguation (Candidate 3) is a 1-week scope and addresses the user-facing problem directly. Path B in the discussion thread (rename) and Path C (disambiguate at the surface) both have a place, but Path C first is the right sequencing.
 
-## 4. Folder/Path clarity (CR-BP-117c)
+## 4. Folder/Path clarity (CR-BP-117c, landed)
 
 The folder layout today is:
 
@@ -118,6 +118,14 @@ The hash stays in the filename. Directory names are kebab-cased record names. A 
 **C-2: Symbolic links from the canonical path to the human-friendly path** (if we keep the hash-dir layout as ground truth). Symlinks are an opt-in tooling convenience, not a required change. Useful for users who want the human path but live in tools that expect the canonical path.
 
 **C-3: A `tree --noreport` cheatsheet per cell in the cell-root README**. The cell-root README's "Path" section gains a "Path scheme" subsection that shows the human-friendly path for the L2/L3/L4 records in that cell, indexed by the L0 cell name. Users see the path before they navigate.
+
+### 4.1 CR-BP-117c execution record (2026-10-13)
+
+**C-1 landed**: `scripts/rename_dirs_human_names.py` renamed all 3,674 record directories (49 L1 groups, 145 L2 processes, 580 L3 activities, 2,900 L4 tasks) from `<cell>-<hash>` to the kebab-cased record name via `git mv`, bottom-up, zero collision fallbacks (the EID-001 same-level uniqueness invariant made collisions unreachable). The transform is `re.sub(r'[^A-Za-z0-9]+', '-', name).strip('-')`; 14 names with commas/parens/slashes collapsed cleanly (e.g. "Screen Candidates Against Sanctions / AML / FCRA / ADA" -> `Screen-Candidates-Against-Sanctions-AML-FCRA-ADA`). Gate safety verified before the rename: IDM-005 constrains filename + cell segment + depth only; READMEs embed no dir paths. Post-rename fixes: CATALOG.yaml regenerated (3,877 path entries), 2 doc references in `docs/examples/manage-customer-relationship.md` updated to the new paths. The cell dirs themselves (`fa-retire/` etc.) keep their `<domain>-<stage>` slugs by design.
+
+**C-2 not landed** (per CR opt-in language): symlinks are unnecessary once C-1 makes the canonical path itself human-readable.
+
+**C-3 landed**: `scripts/generate_readmes.py` gained a `path-scheme` section ("## 13. Path Scheme") for L0 ProcessContext READMEs, rendering the cell's directory tree with level labels derived from the record filename token. 49 cell-root READMEs regenerated; the other 3,674 record READMEs are byte-identical (RDM gate confirms). New helper `_cell_of_id` extracts the cell slug from a canonical id. New test module `tests/test_folder_path_clarity.py` (12 tests): kebab transform including the 14 special-char names, plan shape + collision fallback + deepest-first ordering on fixture trees, path-scheme tree render + malformed-id fallback, live invariant that no strict-BASE32 hash dirs remain below cell level.
 
 ## 5. Conformance + Test Posture
 
