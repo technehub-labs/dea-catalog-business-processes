@@ -61,3 +61,37 @@ Sections authored by `scripts/generate_readmes.py` from the record's YAML fields
 ## 12. Revision History
 
 Revision history is governed by CR-BP-04 / SIV-001..004 (additive change_history entries; version unchanged for additive metadata-only changes).
+
+## 13. Path Scheme
+
+Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename):
+
+```
+pv-activate/
+  Service-Transition-Activation/  (L1 ProcessGroup)
+    Transition-Proposition-to-Service/  (L2 Process)
+      Confirm-Operational-Acceptance/  (L3 Activity)
+        Confirm-Operational-Acceptance-Audit-Record/  (L4 Task)
+        Confirm-Operational-Acceptance-Confirmation/  (L4 Task)
+        Confirm-Operational-Acceptance-Intake/  (L4 Task)
+        Confirm-Operational-Acceptance-Processing/  (L4 Task)
+        Confirm-Operational-Acceptance-Verification/  (L4 Task)
+      Execute-Service-Cutover/  (L3 Activity)
+        Execute-Service-Cutover-Audit-Record/  (L4 Task)
+        Execute-Service-Cutover-Confirmation/  (L4 Task)
+        Execute-Service-Cutover-Intake/  (L4 Task)
+        Execute-Service-Cutover-Processing/  (L4 Task)
+        Execute-Service-Cutover-Verification/  (L4 Task)
+      Prepare-Transition-Readiness/  (L3 Activity)
+        Prepare-Transition-Readiness-Audit-Record/  (L4 Task)
+        Prepare-Transition-Readiness-Confirmation/  (L4 Task)
+        Prepare-Transition-Readiness-Intake/  (L4 Task)
+        Prepare-Transition-Readiness-Processing/  (L4 Task)
+        Prepare-Transition-Readiness-Verification/  (L4 Task)
+      Stabilize-Early-Operations/  (L3 Activity)
+        Stabilize-Early-Operations-Audit-Record/  (L4 Task)
+        Stabilize-Early-Operations-Confirmation/  (L4 Task)
+        Stabilize-Early-Operations-Intake/  (L4 Task)
+        Stabilize-Early-Operations-Processing/  (L4 Task)
+        Stabilize-Early-Operations-Verification/  (L4 Task)
+```

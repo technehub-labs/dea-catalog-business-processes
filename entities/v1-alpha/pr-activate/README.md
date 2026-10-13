@@ -61,3 +61,37 @@ Sections authored by `scripts/generate_readmes.py` from the record's YAML fields
 ## 12. Revision History
 
 Revision history is governed by CR-BP-04 / SIV-001..004 (additive change_history entries; version unchanged for additive metadata-only changes).
+
+## 13. Path Scheme
+
+Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename):
+
+```
+pr-activate/
+  Regulated-Onboarding/  (L1 ProcessGroup)
+    Onboard-Regulated-Party-Relationship/  (L2 Process)
+      Classify-Party-Risk/  (L3 Activity)
+        Classify-Party-Risk-Audit-Record/  (L4 Task)
+        Classify-Party-Risk-Confirmation/  (L4 Task)
+        Classify-Party-Risk-Intake/  (L4 Task)
+        Classify-Party-Risk-Processing/  (L4 Task)
+        Classify-Party-Risk-Verification/  (L4 Task)
+      Record-Onboarding-Decision/  (L3 Activity)
+        Record-Onboarding-Decision-Audit-Record/  (L4 Task)
+        Record-Onboarding-Decision-Confirmation/  (L4 Task)
+        Record-Onboarding-Decision-Intake/  (L4 Task)
+        Record-Onboarding-Decision-Processing/  (L4 Task)
+        Record-Onboarding-Decision-Verification/  (L4 Task)
+      Resolve-Beneficial-Ownership/  (L3 Activity)
+        Resolve-Beneficial-Ownership-Audit-Record/  (L4 Task)
+        Resolve-Beneficial-Ownership-Confirmation/  (L4 Task)
+        Resolve-Beneficial-Ownership-Intake/  (L4 Task)
+        Resolve-Beneficial-Ownership-Processing/  (L4 Task)
+        Resolve-Beneficial-Ownership-Verification/  (L4 Task)
+      Verify-Party-Identity/  (L3 Activity)
+        Verify-Party-Identity-Audit-Record/  (L4 Task)
+        Verify-Party-Identity-Confirmation/  (L4 Task)
+        Verify-Party-Identity-Intake/  (L4 Task)
+        Verify-Party-Identity-Processing/  (L4 Task)
+        Verify-Party-Identity-Verification/  (L4 Task)
+```

@@ -52,3 +52,37 @@ Sections authored by `scripts/generate_readmes.py` from the record's YAML fields
 ## 12. Revision History
 
 Revision history is governed by CR-BP-04 / SIV-001..004 (additive change_history entries; version unchanged for additive metadata-only changes).
+
+## 13. Path Scheme
+
+Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename):
+
+```
+fa-retire/
+  Regulated-Run-Off/  (L1 ProcessGroup)
+    Conclude-Regulated-Run-Off/  (L2 Process)
+      Adjudicate-Policyholder-Claims/  (L3 Activity)
+        Adjudicate-Policyholder-Claims-Audit-Record/  (L4 Task)
+        Adjudicate-Policyholder-Claims-Confirmation/  (L4 Task)
+        Adjudicate-Policyholder-Claims-Intake/  (L4 Task)
+        Adjudicate-Policyholder-Claims-Processing/  (L4 Task)
+        Adjudicate-Policyholder-Claims-Verification/  (L4 Task)
+      Establish-Run-Off-Accounting-Basis/  (L3 Activity)
+        Establish-Run-Off-Accounting-Basis-Audit-Record/  (L4 Task)
+        Establish-Run-Off-Accounting-Basis-Confirmation/  (L4 Task)
+        Establish-Run-Off-Accounting-Basis-Intake/  (L4 Task)
+        Establish-Run-Off-Accounting-Basis-Processing/  (L4 Task)
+        Establish-Run-Off-Accounting-Basis-Verification/  (L4 Task)
+      File-Run-Off-Closure-Evidence/  (L3 Activity)
+        File-Run-Off-Closure-Evidence-Audit-Record/  (L4 Task)
+        File-Run-Off-Closure-Evidence-Confirmation/  (L4 Task)
+        File-Run-Off-Closure-Evidence-Intake/  (L4 Task)
+        File-Run-Off-Closure-Evidence-Processing/  (L4 Task)
+        File-Run-Off-Closure-Evidence-Verification/  (L4 Task)
+      Maintain-Reserving-Discipline/  (L3 Activity)
+        Maintain-Reserving-Discipline-Audit-Record/  (L4 Task)
+        Maintain-Reserving-Discipline-Confirmation/  (L4 Task)
+        Maintain-Reserving-Discipline-Intake/  (L4 Task)
+        Maintain-Reserving-Discipline-Processing/  (L4 Task)
+        Maintain-Reserving-Discipline-Verification/  (L4 Task)
+```

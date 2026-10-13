@@ -52,3 +52,37 @@ Sections authored by `scripts/generate_readmes.py` from the record's YAML fields
 ## 12. Revision History
 
 Revision history is governed by CR-BP-04 / SIV-001..004 (additive change_history entries; version unchanged for additive metadata-only changes).
+
+## 13. Path Scheme
+
+Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename):
+
+```
+eo-activate/
+  Regulated-Operations-Activation/  (L1 ProcessGroup)
+    Activate-Operations-Capability/  (L2 Process)
+      Acquire-Regulator-Issued-Operations-Authorization/  (L3 Activity)
+        Acquire-Regulator-Issued-Operations-Authorization-Audit-Record/  (L4 Task)
+        Acquire-Regulator-Issued-Operations-Authorization-Confirmation/  (L4 Task)
+        Acquire-Regulator-Issued-Operations-Authorization-Intake/  (L4 Task)
+        Acquire-Regulator-Issued-Operations-Authorization-Processing/  (L4 Task)
+        Acquire-Regulator-Issued-Operations-Authorization-Verification/  (L4 Task)
+      Activate-Continuing-Supervisor-Notification/  (L3 Activity)
+        Activate-Continuing-Supervisor-Notification-Audit-Record/  (L4 Task)
+        Activate-Continuing-Supervisor-Notification-Confirmation/  (L4 Task)
+        Activate-Continuing-Supervisor-Notification-Intake/  (L4 Task)
+        Activate-Continuing-Supervisor-Notification-Processing/  (L4 Task)
+        Activate-Continuing-Supervisor-Notification-Verification/  (L4 Task)
+      Bring-Operational-Controls-Live-on-the-Regulated-Operations-Record/  (L3 Activity)
+        Bring-Operational-Controls-Live-on-the-Regulated-Operations-Record-Audit-Record/  (L4 Task)
+        Bring-Operational-Controls-Live-on-the-Regulated-Operations-Record-Confirmation/  (L4 Task)
+        Bring-Operational-Controls-Live-on-the-Regulated-Operations-Record-Intake/  (L4 Task)
+        Bring-Operational-Controls-Live-on-the-Regulated-Operations-Record-Processing/  (L4 Task)
+        Bring-Operational-Controls-Live-on-the-Regulated-Operations-Record-Verification/  (L4 Task)
+      Bring-Operations-Manuals-and-Runbooks-Live/  (L3 Activity)
+        Bring-Operations-Manuals-and-Runbooks-Live-Audit-Record/  (L4 Task)
+        Bring-Operations-Manuals-and-Runbooks-Live-Confirmation/  (L4 Task)
+        Bring-Operations-Manuals-and-Runbooks-Live-Intake/  (L4 Task)
+        Bring-Operations-Manuals-and-Runbooks-Live-Processing/  (L4 Task)
+        Bring-Operations-Manuals-and-Runbooks-Live-Verification/  (L4 Task)
+```

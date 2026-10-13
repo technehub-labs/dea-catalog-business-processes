@@ -52,3 +52,37 @@ Sections authored by `scripts/generate_readmes.py` from the record's YAML fields
 ## 12. Revision History
 
 Revision history is governed by CR-BP-04 / SIV-001..004 (additive change_history entries; version unchanged for additive metadata-only changes).
+
+## 13. Path Scheme
+
+Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename):
+
+```
+ao-activate/
+  Licensed-Workforce-Mobilization/  (L1 ProcessGroup)
+    Mobilize-Licensed-Workforce/  (L2 Process)
+      Activate-Signing-Authority-Or-Controlled-Function-Designation/  (L3 Activity)
+        Activate-Signing-Authority-Or-Controlled-Function-Designation-Audit-Record/  (L4 Task)
+        Activate-Signing-Authority-Or-Controlled-Function-Designation-Confirmation/  (L4 Task)
+        Activate-Signing-Authority-Or-Controlled-Function-Designation-Intake/  (L4 Task)
+        Activate-Signing-Authority-Or-Controlled-Function-Designation-Processing/  (L4 Task)
+        Activate-Signing-Authority-Or-Controlled-Function-Designation-Verification/  (L4 Task)
+      Attest-Fitness-And-Propriety/  (L3 Activity)
+        Attest-Fitness-And-Propriety-Audit-Record/  (L4 Task)
+        Attest-Fitness-And-Propriety-Confirmation/  (L4 Task)
+        Attest-Fitness-And-Propriety-Intake/  (L4 Task)
+        Attest-Fitness-And-Propriety-Processing/  (L4 Task)
+        Attest-Fitness-And-Propriety-Verification/  (L4 Task)
+      Record-Supervised-Training-Completion/  (L3 Activity)
+        Record-Supervised-Training-Completion-Audit-Record/  (L4 Task)
+        Record-Supervised-Training-Completion-Confirmation/  (L4 Task)
+        Record-Supervised-Training-Completion-Intake/  (L4 Task)
+        Record-Supervised-Training-Completion-Processing/  (L4 Task)
+        Record-Supervised-Training-Completion-Verification/  (L4 Task)
+      Verify-Regulator-Licence-Or-Registration/  (L3 Activity)
+        Verify-Regulator-Licence-Or-Registration-Audit-Record/  (L4 Task)
+        Verify-Regulator-Licence-Or-Registration-Confirmation/  (L4 Task)
+        Verify-Regulator-Licence-Or-Registration-Intake/  (L4 Task)
+        Verify-Regulator-Licence-Or-Registration-Processing/  (L4 Task)
+        Verify-Regulator-Licence-Or-Registration-Verification/  (L4 Task)
+```

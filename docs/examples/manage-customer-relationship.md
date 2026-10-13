@@ -5,7 +5,7 @@ Process entry in the catalog, post-mv1. Future contributors
 should treat this as the **reference example**.
 
 The record lives at
-`entities/v1-alpha/pr-operate/pr-operate-7ab3ma/pr-operate-bbe384/processes-process-pr-operate-bbe384.yaml`
+`entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/Manage-Customer-Relationship/processes-process-pr-operate-bbe384.yaml`
 and was admitted under the 2026-09-20 entity-storage + id-system
 migration (CR-BP-mv1) from the legacy
 `dea:process-manage-customer-relationship` form. The id map
@@ -145,7 +145,7 @@ resolve to the ECF Domain and Stage of the Process Context.
 
 | Path | Purpose |
 |---|---|
-| [`entities/v1-alpha/pr-operate/pr-operate-7ab3ma/pr-operate-bbe384/processes-process-pr-operate-bbe384.yaml`](../../entities/v1-alpha/pr-operate/pr-operate-7ab3ma/pr-operate-bbe384/processes-process-pr-operate-bbe384.yaml) | The canonical BP entry |
+| [`entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/Manage-Customer-Relationship/processes-process-pr-operate-bbe384.yaml`](../../entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/Manage-Customer-Relationship/processes-process-pr-operate-bbe384.yaml) | The canonical BP entry |
 | [`entities/v1-alpha/pr-operate/processes-pc-pr-operate-pwue5a.yaml`](../../entities/v1-alpha/pr-operate/processes-pc-pr-operate-pwue5a.yaml) | The Cell Charter (Process Context) |
 | [`contributions/processes/dea_bp_manage-customer-relationship.yaml`](../../contributions/processes/dea_bp_manage-customer-relationship.yaml) | The contribution record (retargeted under CR-BP-113 §8) |
 | [`change-requests/CR-BP-03C-sample-process-contribution.md`](../../change-requests/CR-BP-03C-sample-process-contribution.md) | The CR that originally landed the entry |
