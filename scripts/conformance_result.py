@@ -118,6 +118,8 @@ GATES: list[tuple[str, bool, list[str]]] = [
      True, ["python", "scripts/check_cr_readme.py"]),  # CR-BP-113; blocking
     ("[30] README Consistency (CR-BP-114; RDM-001..002)",
      True, ["python", "scripts/check_readme_consistency.py"]),  # CR-BP-114; blocking
+    ("[31] Entity Identity Clarity (CR-BP-117a; EID-001..004)",
+     True, ["python", "scripts/check_entity_identity.py"]),  # CR-BP-117a; blocking
 ]
 
 

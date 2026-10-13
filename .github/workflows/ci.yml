@@ -319,6 +319,19 @@ jobs:
         # verifies byte-exact. 3,723 READMEs regenerated post-mv1.
         run: python scripts/check_readme_consistency.py --strict
 
+      - name: Run Entity Identity Clarity gate (CR-BP-117a; EID-001..004)
+        if: steps.check.outputs.skip != 'true'
+        # New blocking gate (CR-BP-117a, 2026-10-13). Surfaces
+        # same-level identity collisions (EID-001, advisory),
+        # cross-record id presence (EID-002, advisory), level-token
+        # presence in README body (EID-003, advisory), and the
+        # 22 cross-level name-collision inventory (EID-004,
+        # advisory, informational). 0 same-level dups; 22 cross-
+        # level collisions (L0 cell / L1 group / L2 process sharing
+        # names per the containment tree) recorded for the 117c
+        # follow-on.
+        run: python scripts/check_entity_identity.py --strict
+
       - name: Run ID System coherence gate (CR-BP-mv1; IDM-008, PR-scoped)
         if: steps.check.outputs.skip != 'true'
         run: |
