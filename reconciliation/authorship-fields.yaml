@@ -1,0 +1,37 @@
+# Cardinal authorship-field registry (CR-BP-118).
+# Adding a new field here is a CR-level change; do not edit casually.
+fields:
+  - path: "**Owner**"                # CR doc metadata; first-30-lines
+    file_glob: "change-requests/CR-*.md"
+    kind: "metadata"
+  - path: "**Author**"               # CR doc metadata; first-30-lines
+    file_glob: "change-requests/CR-*.md"
+    kind: "metadata"
+  - path: "audit.author"             # entity YAML
+    file_glob: "entities/v1-alpha/**/processes-*.yaml"
+    kind: "metadata"
+  - path: "authors[].name"           # CITATION.cff
+    file_glob: "CITATION.cff"
+    kind: "citation"
+  - path: "authors[].given-names"    # CITATION.cff
+    file_glob: "CITATION.cff"
+    kind: "citation"
+  - path: "authors[].family-names"   # CITATION.cff
+    file_glob: "CITATION.cff"
+    kind: "citation"
+
+allowlist:
+  - "Emmanuel A. Otchere"
+  - "TechNeHub Labs"
+  - "TechNeHub Labs (canonical org)"
+
+denylist:
+  - "Coder"
+  - "Agent"
+  - "Hermes"
+  - "Claude"
+  - "GPT"
+  - "Cline"
+  - "OpenAI"
+  - "MiniMax"
+  - "MiniMax-M3"

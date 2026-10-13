@@ -11,7 +11,7 @@
 **Status**: Proposed
 **Admission authority**: yes
 **Layer**: L2
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-16
 **Carrier**: Fourth discovery-driven admission tranche under the CR-BP-62 escape-clause method; lands the canonical PC + PG + BP stack at the GovernanceAndExistence x Retire coordinate after the CR-BP-76 escape-clause exercise (candidate 1 ADMIT-CANONICAL recommendation at 9/10).
 **Depends on**: CR-BP-62 (lifecycle process discovery method + DISC-001..008 gate), CR-BP-63 (Activate/Retire discovery exercise), CR-BP-70/-72/-74/-76 (escape-clause discoveries at P&R Activate, A&O Retire, F&A Retire, G&E Retire), CR-BP-71/-73/-75 (admission tranches at the first three cells), CR-BP-19 (v2 escape-clause register), CR-BP-04 (Business Process Identity & ID-Family Reconciliation).

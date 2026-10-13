@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: L4
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-20
 **Carrier**: First L4 content-enrichment slice (CR-BP-L4-01 reserved the population surface; CR-BP-L4-02..14 reserved the per-domain enrichment slices). Replaces the templated definition / trigger / outcome / responsibility / boundary / evidence content of every PartyAndRelationship L4 Task with cell-specific, sector-grounded prose describing the bounded work performed by each phase custodian.
 **Depends on**: CR-BP-98 (Task schema + TASK-001..005 validator), CR-BP-102 (L4 Task decomposition pipeline; landed 2026-09-19, PR #146; produced 2,800 templated Tasks across 49 cells)

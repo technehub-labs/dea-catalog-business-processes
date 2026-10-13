@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: L3
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-14
 **Carrier**: Fourteenth L3 (Activity) contribution slice; second of two tranches for the StrategyAndDirection domain (this slice: Improve + Operate; completes the domain's L3 coverage, 5/5 stages).
 **Depends on**: CR-BP-32 (Activity Model; ACT-001..010), CR-BP-42 (pilot), CR-BP-43..54 (scaled tranches)

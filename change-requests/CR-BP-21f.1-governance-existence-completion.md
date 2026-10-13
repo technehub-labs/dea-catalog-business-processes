@@ -3,7 +3,7 @@
 **Status**: Proposed
 **Admission authority**: yes
 **Layer**: Process Catalog
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-08
 **Depends on**: CR-BP-19 (register v2), CR-BP-13a (GE seed landing), CR-BP-21e.1 (merged, PR #59)
 **Tranche**: `cr-bp-21f.1`

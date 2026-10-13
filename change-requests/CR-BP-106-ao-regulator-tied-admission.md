@@ -3,7 +3,7 @@
 **Status**: Proposed (this PR)
 **Admission authority**: yes
 **Layer**: L2 (Business Process admission)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-22
 **Lands against**: 5 L2 BP admissions; 30 conformance gates (all PASS, 0 blocking, 0 advisory); MECE-001..008 CONFORMANT (0 findings); IDM-001..007 CONFORMANT; LCM-001..005 CONFORMANT; ACT-001..010 CONFORMANT; BP-C1..C4 + BP-QUAL-001..012 CONFORMANT.
 

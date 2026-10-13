@@ -39,7 +39,7 @@ Usage:
   python3 scripts/check_intent_purposive.py --json
   python3 scripts/check_intent_purposive.py --self-test
 
-Author: Coder (for eaojnr). Established by CR-BP-34b (2026-09-10).
+Author: Emmanuel A. Otchere. Established by CR-BP-34b (2026-09-10).
 Derived from CR-BP-34 §7 (Intent Conformance) and CR-BP-14 §9.2
 (BP-SEM-001 Intent Vocabulary). Vocabulary sourced from
 `classifications/process-intents.yaml`.

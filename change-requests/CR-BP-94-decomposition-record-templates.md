@@ -2,7 +2,7 @@
 
 **Status**: Proposed
 **Layer**: Process Catalog
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-18
 **Carrier**: Recon-programme implementation slice that lands the canonical authoring templates for L0-L4 + the human-oriented decomposition-template guide. Six artifacts: `templates/process-scope.yaml`, `templates/process-group.yaml`, `templates/business-process.yaml`, `templates/activity.yaml`, `templates/task.yaml`, and `docs/decomposition-template-guide.md`. Each template encodes both machine-oriented schema structure AND human-oriented authoring guidance (CR-BP-92 §15).
 **Recon programme**: CR-BP-92 §9 + §15.

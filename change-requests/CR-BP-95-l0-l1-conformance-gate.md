@@ -2,7 +2,7 @@
 
 **Status**: Proposed
 **Layer**: Process Catalog
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-18
 **Carrier**: Recon-programme implementation slice that lands the L0 Process Scope and L1 Process Group conformance gate. Establishes the L0 schema + validator + gate (PSCOPE-001..008) and extends the existing L1 gate with PG-009 (grouping_basis) and PG-010 (membership_criteria). Back-compat with all 48 existing PG records (the new L1 fields are OPTIONAL).
 **Recon programme**: CR-BP-92 (Decomposition and Execution Boundary Hardening) §10; CR-BP-93 (Decomposition Semantic Contract) for normative-prose basis.

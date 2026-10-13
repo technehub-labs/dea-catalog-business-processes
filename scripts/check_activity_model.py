@@ -136,7 +136,7 @@ Usage:
   python3 scripts/check_activity_model.py --json
   python3 scripts/check_activity_model.py --self-test
 
-Author: Coder (for eaojnr). Established by CR-BP-32 (2026-09-12).
+Author: Emmanuel A. Otchere. Established by CR-BP-32 (2026-09-12).
 Derived from CR-BP-32 §15 (Activity Conformance Rules) and
 CR-BP-32 §7, §11, §12, §14 (composition / execution / boundary /
 repository changes). See change-requests/CR-BP-32-activity-model.md.

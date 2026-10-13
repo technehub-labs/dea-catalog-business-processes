@@ -11,7 +11,7 @@
 **Status**: Proposed
 **Admission authority**: yes
 **Layer**: Process Catalog
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-19
 **Carrier**: L3 Activity decomposition tranche for the SD/Retire Business Process (dea:process-sunset-regulated-strategic-plan) admitted under CR-BP-101 (PR #142).
 **Depends on**: CR-BP-32 (Activity model + ACT-001..015), CR-BP-86 / CR-BP-87 (SD/Activate BP-only admission + L3 decomposition precedent), CR-BP-101 (SD/Retire BP-only admission), CR-BP-97 (ACT-011..015 advisory).

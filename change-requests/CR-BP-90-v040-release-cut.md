@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: Process Catalog (release / governance)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-17
 **Depends on**: v0.3.0 baseline (CR-BP-41, PR #82 MERGED, tag `v0.3.0`); CR-BP-42..57 (L3 EO/PR/GE/PV/FA/S&D/A&O domain tranches); CR-BP-58..61 (gate / documentation repair); CR-BP-62..79 (lifecycle discovery + first + second admission tranche waves + admitted-BP L3 tranches); CR-BP-80 (five-cell escape-clause discovery exercise); CR-BP-81..86 (four-cell discovery programme admissions); CR-BP-87 (combined L3 decomposition tranche); CR-BP-88 (post-v0.3.0 reconciliation); CR-BP-89 (four-cell discovery programme retrospective)
 **Related**: `docs/versioning.md` (release-cut discipline); `dea-metaframework` ECF v2.5.0 vocabulary source of truth (unchanged since v0.1.0); the stranded `## [v0.2.0]` CHANGELOG block (per user directive 2026-09-12: "ignore the cut"; left in place as a historical artifact)

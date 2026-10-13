@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: L3
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-16
 **Carrier**: Third L3 (Activity) tranche landing after CR-BP-69; closes the final three L0-L3 gaps created by the CR-BP-71/-73/-75 admission tranches.
 **Depends on**: CR-BP-32 (Activity Model; ACT-001..010), CR-BP-42 (pilot), CR-BP-43..57 (per-stage L3 tranches), CR-BP-69 (first admitted-BP decomposition tranche), CR-BP-70/-72/-74 (escape-clause discoveries), CR-BP-71/-73/-75 (admission tranches).

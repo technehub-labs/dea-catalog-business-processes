@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: Process Catalog
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-15
 
 ## 1. Change Request

@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: L3
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-16
 **Carrier**: Fourth L3 (Activity) tranche landing after CR-BP-77; closes the final L3 gap created by the CR-BP-78 admission tranche at the GovernanceAndExistence x Retire coordinate.
 **Depends on**: CR-BP-32 (Activity Model; ACT-001..010), CR-BP-42 (pilot), CR-BP-43..57 (per-stage L3 tranches), CR-BP-69 (first admitted-BP decomposition tranche), CR-BP-77 (second admitted-BP decomposition tranche), CR-BP-70/-72/-74/-76 (escape-c discoveries at P&R Activate, A&O Retire, F&A Retire, G&E Retire), CR-BP-71/-73/-75/-78 (admission tranches at the four discovery-driven cells).

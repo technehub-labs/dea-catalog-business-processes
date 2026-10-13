@@ -11,7 +11,7 @@
 **Status**: Proposed
 **Admission authority**: yes
 **Layer**: L2
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-15
 
 ## 1. Change Request

@@ -6,7 +6,7 @@ CR-BP-05 — Execution Boundary
 
 **Status**: Proposed (carrier CR — knowledge harvest + positioning; awaiting user direction on execution order)
 **Layer**: L3 (Business Process) → L4 (Execution Boundary)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-10
 **Original author**: eaojnr
 **Source document**: `/home/hermes/.hermes/profiles/coder/cache/documents/doc_cf6fc6bb9e80_CR-BP-04_06.md` (lines 395-871)

@@ -1,7 +1,7 @@
 # Four-Cell Discovery Programme
 
 **Status**: Active (closed; documented 2026-09-17)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-17 (post-CR-BP-87)
 **Carrier CR**: CR-BP-89 (this file's authoring CR)
 

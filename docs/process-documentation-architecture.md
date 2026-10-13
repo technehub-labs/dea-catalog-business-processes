@@ -1,7 +1,7 @@
 # Process Documentation Architecture
 
 **Status**: Normative (proposed for adoption under CR-BP-94-EXT-01)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-18
 **Recon programme parent**: CR-BP-92 (Process Catalog layer)
 **Decomposition contract**: CR-BP-93 (`docs/decomposition-semantic-contract.md`)

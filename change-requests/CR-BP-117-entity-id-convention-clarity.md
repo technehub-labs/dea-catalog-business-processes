@@ -2,7 +2,7 @@
 
 **Status**: Proposed (this PR)
 **Layer**: Cross-cutting (catalog governance) + user-facing navigation
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-10-13
 **Trigger**: User directive 2026-10-13, eaojnr: "I'd like to address the id convention of the entities, there is a repeat of entities with different IDs, and level 2 and level 3 etc. that is confusing, this creates an issue for the user to understand which to navigate. We should consider a more appropriate approach that avoids the repeat, or ensures that the file and folder naming is more clearer and obvious."
 **Carrier**: Multi-PR. This document is the **plan**; the PRs follow. Numbered sub-slices:

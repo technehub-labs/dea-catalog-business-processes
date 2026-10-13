@@ -2,7 +2,7 @@
 
 **Status**: Proposed
 **Layer**: Cross-cutting
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-12
 **Carrier**: Eighth execution slice of the BP-32/33/34 tranche plan; second slice of Phase 5. See `01_plan/CR-BP-32-33-34-foundation/POSITIONING.md` §5/§7.
 **Depends on**: CR-BP-02, CR-BP-03, CR-BP-12, CR-BP-14, CR-BP-15, CR-BP-16, CR-BP-SPEC-BP-01

@@ -1,6 +1,6 @@
 **Status**: Accepted
 **Layer**: L2 (id-family reconciliation)
-**Owner**: eaojnr
+**Owner**: Emmanuel A. Otchere
 **Date**: 2025-09 (historic; landed pre-2026)
 **Retro-fit note (CR-BP-107)**: Status / Layer / Owner added retroactively per CR-BP-107 retro-fit programme. The CR is a historical artefact authored before the S21 metadata schema; metadata is added for validator compliance without rewriting the original content.
 
@@ -20,8 +20,7 @@ Parent: CR-BP-03-business-process-architecture
 Related: CR-BP-03A-legacy-migration, CR-BP-03C-sample-process-contribution,
          CR-BP-SPEC-BP-01, CR-BP-02, CR-BP-11-l1-process-group-discovery
 Date: 2026-09-04
-Author: Coder
-
+Author: Emmanuel A. Otchere
 ## 1. Summary
 
 Establishes the canonical ID-family contract for Business Process catalog identifiers, reconciles the apparent drift between the `dea:bp-*` and `dea:process-*` prefixes, and locks the L0/L1 ID conventions introduced in CR-BP-03C and CR-BP-11. No canonical entity is created or modified by this CR. No schema or validator is added. The CR is documentation-first; it makes the existing implicit rules explicit and forbids three patterns that contributors will otherwise reach for.

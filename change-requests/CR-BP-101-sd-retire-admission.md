@@ -11,7 +11,7 @@
 **Status**: Proposed
 **Admission authority**: yes
 **Layer**: Process Catalog
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-19
 **Carrier**: SD/Retire admission tranche that closes the 7x7 = 49-cell matrix. Acts on the CR-BP-80 escape-clause DEFER for SD/Retire (eaojnr 2026-09-19 directive: "let's act on that deferred CR now").
 **Doctrine** (eaojnr 2026-09-19): the L0 layer is the Process Context matrix; the matrix must be 7x7 = 49 cells. The SD/Retire cell was deferred at v2 and re-evaluated under CR-BP-80's escape-clause exercise; this slice lands the substantive BP candidate "Sunset Regulated Strategic Plan" (escape score 8) per CR-BP-80's evidence.

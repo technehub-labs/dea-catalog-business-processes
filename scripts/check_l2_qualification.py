@@ -70,7 +70,7 @@ Usage:
   python3 scripts/check_l2_qualification.py --json
   python3 scripts/check_l2_qualification.py --self-test
 
-Author: Coder (for eaojnr). Established by CR-BP-34a (2026-09-10),
+Author: Emmanuel A. Otchere. Established by CR-BP-34a (2026-09-10),
 extended by CR-BP-96 (2026-09-18). Derived from CR-BP-34 §11 (L2
 Business Process Conformance), CR-BP-03 §8 (identity contract), and
 the recon-programme decomposition contract (CR-BP-92 §11; CR-BP-93 §5).

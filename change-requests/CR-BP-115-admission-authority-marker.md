@@ -2,7 +2,7 @@
 
 **Status**: Proposed (this PR)
 **Layer**: Cross-cutting (catalog governance)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-10-13
 **Depends on**: CR-BP-107 (admission-allowlist retro-fit precedent; CR-META normalization that made Merged a dead status value)
 **Trigger**: User directive 2026-10-13, eaojnr: "Replace the admission allowlist regex with data; fix the duplicated condition in regenerate_catalog.py:466 while you're in there."

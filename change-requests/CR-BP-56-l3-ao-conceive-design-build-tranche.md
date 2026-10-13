@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: L3
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-14
 **Carrier**: Fifteenth L3 (Activity) contribution slice; first of two tranches for the AgencyAndOrganization domain (this slice: Conceive + Design + Build; Improve + Operate follow as CR-BP-57).
 **Depends on**: CR-BP-32 (Activity Model; ACT-001..010), CR-BP-42 (pilot), CR-BP-43..54 (scaled tranches)

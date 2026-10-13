@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: Cross-cutting
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-12
 **Carrier**: Seventh execution slice of the BP-32/33/34 tranche plan; first slice of Phase 5 (CR-BP-36 — MECE Validation). See `01_plan/CR-BP-32-33-34-foundation/POSITIONING.md` §5/§7.
 **Depends on**: CR-BP-12 (PG-006 intra-context MECE), CR-BP-16 (conformance gate), CR-BP-22 (audit_status axis)

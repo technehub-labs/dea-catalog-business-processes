@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: Process Catalog
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-19
 **Carrier**: Lifts the Documentation Architecture (CR-BP-94-EXT-01 / -01a) from schema-only to content-bearing. Introduces `scripts/generate_readmes.py`, a deterministic generator that produces README.md for every canonical record under `entities/v1-alpha/` and `contexts/v1-alpha/`. Closes DOC-001 from 598 to 0 against the live catalog.
 **Depends on**: CR-BP-94-EXT-01 (Documentation Architecture + DOC-001..005 gate), CR-BP-94-EXT-01a (L0/L1 cardinal-entity profiles).

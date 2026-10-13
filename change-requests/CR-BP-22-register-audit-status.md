@@ -10,7 +10,7 @@
 
 **Status**: Accepted
 **Layer**: Process Catalog (research register)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-08
 **Depends on**: CR-BP-19 (register v2; ratified 2026-09-07); CR-BP-21a (StrategyAndDirection landing); CR-BP-21b (AgencyAndOrganization landing); CR-BP-13a/b (PartyAndRelationship and GovernanceAndExistence prior landings)
 **Related**: CR-BP-11 (L1 Process Group discovery); CR-BP-13 (research ratification); CR-BP-21c..e (D5/D6/D7 landing tranches, planned)

@@ -3,7 +3,7 @@
 **Status**: Proposed (this PR)
 **Admission authority**: yes
 **Layer**: L3 (Activity decomposition)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-10-12
 **Carrier**: Single-PR L3/L4 decomposition tranche for the 5 ADMIT-CANONICAL A&O regulator-tied Business Processes admitted by CR-BP-106. Lands 20 new Activity records (4 per BP) and 100 new L4 Task records (5 per Activity) under the established 5-phase verb-object completion pattern. 5 generator scripts + 1 admission-gate allowlist extension + 6 test-file count-assertion updates + 1 CATALOG.yaml regen.
 

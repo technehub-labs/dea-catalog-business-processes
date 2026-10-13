@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: L2
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-12
 **Carrier**: Tenth and final execution slice of the BP-32/33/34 tranche plan; fourth and last slice of Phase 5. See `01_plan/CR-BP-32-33-34-foundation/POSITIONING.md` §5/§7.
 **Depends on**: CR-BP-11 (L1 Process Group Discovery); CR-BP-12 (Process Group Profile); CR-BP-13 (Research Ratification); CR-BP-14 (Semantic Reconciliation); CR-BP-17 (ECF v2.3.0 carrier); CR-BP-18 (ECF v2.4.0 carrier); CR-BP-19 (v2.4.0 re-derivation); CR-BP-21a-f (7 admission tranches); CR-BP-22 (audit_status axis); CR-BP-23 (ECF v2.5.0 carrier); CR-BP-28 (register v4 re-derivation); CR-BP-37 (cross-repo integrity); CR-MM-ECF-03 (metamodel ECF mirror; cross-repo); CR-ECF-CG-001..004 (ECF conformance gate; cross-repo); CR-ECF-006/007/008 (ECF version migrations; cross-repo)

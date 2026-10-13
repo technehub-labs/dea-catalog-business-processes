@@ -2,7 +2,7 @@
 
 **Status**: Proposed
 **Layer**: Process Catalog (validator precision)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-14
 **Carrier**: Hygiene slice; repairs systematic false positives in the advisory documentation conformance gate (CR-BP-16 S22) so its findings carry signal.
 **Depends on**: CR-BP-16 (conformance gate; DOC-001..004 rule contract)

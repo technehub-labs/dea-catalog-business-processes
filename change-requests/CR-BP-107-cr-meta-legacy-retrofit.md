@@ -2,7 +2,7 @@
 
 **Status**: Proposed (this PR)
 **Layer**: Cross-cutting (catalog governance)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-10-12
 **Carrier**: Single-PR retro-fit programme: (a) extends `scripts/check_cr_metadata.py` to admit three pre-existing CR naming patterns that pre-date the CR-BP-16 S16 convention, and (b) adds missing Status / Layer / Owner metadata to 5 historical CRs (CR-BP-02, -03A, -04, -SPEC-BP-01, -ECF-CG-004) and corrects the Status value of CR-BP-mv1.
 
@@ -39,7 +39,7 @@ This CR closes the retro-fit programme in two surgical moves:
 | CR-BP-04 | (no metadata) | Status=Accepted, Layer=L2 (id-family reconciliation), Owner=eaojnr, Date=2025-09, retro-fit note |
 | CR-BP-SPEC-BP-01 | (no metadata) | Status=Accepted, Layer=L2 (specialization profile), Owner=eaojnr, Date=2025-09, retro-fit note |
 | CR-ECF-CG-004 | (no metadata) | Status=Accepted, Layer=Cross-cutting (catalog conformance), Owner=eaojnr, Date=2025-09, retro-fit note |
-| CR-BP-mv1 | Status=Merged (PR #149), Owner=Coder (for eaojnr) | Status=Accepted, Owner=eaojnr |
+| CR-BP-mv1 | Status=Merged (PR #149), Owner=Emmanuel A. Otchere | Status=Accepted, Owner=eaojnr |
 
 Each retro-fit prepends a `**Retro-fit note (CR-BP-107)**: ...` line to the existing CR body so the audit trail of when / why / by-whom is in-CR.
 

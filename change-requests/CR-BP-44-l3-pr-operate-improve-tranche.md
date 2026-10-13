@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: L3
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-13
 **Carrier**: Third L3 (Activity) contribution slice; covers the two thinnest L2 cells in the ECF matrix (PartyAndRelationship / Operate and PartyAndRelationship / Improve, 1 BP each) using the structured deposition pattern proven by CR-BP-42 and scaled by CR-BP-43.
 **Depends on**: CR-BP-32 (Activity Model; ACT-001..010), CR-BP-42 (pilot), CR-BP-43 (EO/Operate tranche)

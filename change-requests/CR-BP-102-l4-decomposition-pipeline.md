@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: L3 (Business Process / Activity decomposition)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-19
 **Carrier**: One implementation pipeline, one overarching PR. Decomposes all 560 L3 Activity records into 5 L4 Tasks each (2,800 Tasks total) via a templated verb-object decomposition pattern. Replaces `decomposition_boundary: l4-reached` placeholders on every Activity with `composes[]` entries referencing the new Task ids. Establishes the L4 layer as the decomposition boundary per CR-BP-32 §12 / CR-BP-93 §7 / CR-BP-98 §13.
 **Depends on**: CR-BP-32 (Activity Model), CR-BP-93 (Decomposition Semantic Contract), CR-BP-98 (Task Boundary and Workflow Realization), CR-BP-04 (id family `dea:task-*`).

@@ -88,7 +88,7 @@ Usage:
   python3 scripts/check_mece.py --json
   python3 scripts/check_mece.py --self-test
 
-Author: Coder (for eaojnr). Established by CR-BP-36 (2026-09-12).
+Author: Emmanuel A. Otchere. Established by CR-BP-36 (2026-09-12).
 Derived from CR-BP-34 §4 (Conformance vs MECE) and the catalog's
 actual structure. See change-requests/CR-BP-36-mece-validation.md.
 """

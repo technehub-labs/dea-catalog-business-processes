@@ -6,7 +6,7 @@
 
 **Status**: Proposed (carrier CR — knowledge harvest + positioning; awaiting user direction on execution order)
 **Layer**: All (cross-cutting conformance profile)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-10
 **Original author**: eaojnr
 **Source document**: `/home/hermes/.hermes/profiles/coder/cache/documents/doc_cf6fc6bb9e80_CR-BP-04_06.md` (lines 873-1578)

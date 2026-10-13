@@ -11,7 +11,7 @@
 **Status**: Accepted
 **Admission authority**: yes
 **Layer**: Process Catalog
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-07
 **Depends on**: CR-BP-13 (register v1); CR-BP-17 (v2.3.0 migration carrier); CR-BP-18 (v2.4.0 migration carrier); dea-metaframework CR-ECF-006 + CR-ECF-007
 **Related**: dea-metaframework framework/domain-grounding.md; ADR-ECF-001; ADR-ECF-002; CR-BP-20 (alignment, planned)

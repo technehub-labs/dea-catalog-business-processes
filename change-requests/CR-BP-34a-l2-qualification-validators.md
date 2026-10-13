@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: L2 (Business Process) — conformance
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-10
 **Carrier**: First execution slice of CR-BP-34 (Process Conformance Profile; renumbered from CR-BP-06; PR #69 MERGED, commit `f40a45c`)
 **Depends on**: CR-BP-03 (Business Process Architecture), CR-BP-14 (Process Semantic Reconciliation), CR-BP-16 (Conformance Gate)

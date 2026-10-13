@@ -2,7 +2,7 @@
 
 **Status**: Proposed
 **Layer**: Process Catalog
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-18
 **Carrier**: Recon-programme implementation slice that extends the L3 Activity Model gate from ACT-001..010 (CR-BP-32) to ACT-011..015 (CR-BP-97). Five new advisory structure checks for OPTIONAL fields on the Activity record: ACT-011 (cohesive work statement adequacy, definition >= 120 chars), ACT-012 (inputs/outputs integrity), ACT-013 (outcome contribution), ACT-014 (boundary and exclusions), ACT-015 (sibling distinction). ACT-016..020 from the recon are covered by existing ACT-004 / ACT-010; CR-BP-97 reconciles the prose rather than introducing net-new rules.
 **Recon programme**: CR-BP-92 §12; CR-BP-93 (decomposition semantic contract) §6.

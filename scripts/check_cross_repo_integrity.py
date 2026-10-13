@@ -75,7 +75,7 @@ Usage:
   python3 scripts/check_cross_repo_integrity.py --json
   python3 scripts/check_cross_repo_integrity.py --self-test
 
-Author: Coder (for eaojnr). Established by CR-BP-37 (2026-09-12).
+Author: Emmanuel A. Otchere. Established by CR-BP-37 (2026-09-12).
 Derived from CR-BP-37 §3 (cross-repo surface) and the catalog's
 metamodel-pointer.yaml + change-requests/README.md layout. See
 change-requests/CR-BP-37-cross-repo-integrity.md.

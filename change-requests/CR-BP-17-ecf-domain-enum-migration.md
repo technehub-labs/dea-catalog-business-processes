@@ -10,7 +10,7 @@
 
 **Status**: Accepted
 **Layer**: Process Catalog
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Depends on**: CR-BP-16; CR-ECF-006; CR-MM-ECF-01
 **Companion to**: CR-BP-13a (the PartyAndRelationship admission tranche; same v2.3.0 scope)
 **Related**: CR-DEA-BC-04 (Business Capability Catalog ECF Overlay v0.2 - will need re-derivation); CR-ECF-001..006 (the ECF core wave, all merged); CR-MM-ECF-01 (metamodel v2.3.0 migration, merged); CR-BC-17 (the BC repo's parallel v2.3.0 carrier; will be filed alongside this one)

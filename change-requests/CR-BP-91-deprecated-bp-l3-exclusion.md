@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: Process Catalog
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-18
 **Carrier**: Documentation-only slice that records the deliberate exclusion of one deprecated Business Process from the L3 Activity decomposition programme.
 **Depends on**: CR-BP-21a (L2 split: corporate strategy to S&D x Conceive), CR-BP-36 (MECE-008 deactivation exemption), CR-BP-52 (L3 tranche landing the successor's Activities)

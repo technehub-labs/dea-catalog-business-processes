@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: Process Catalog
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-18
 **Carrier**: Reconnaissance / Architectural Reconciliation. Establishes the authoritative findings, target architecture, implementation pipeline, dependency order, and acceptance gates for a coordinated hardening of the L0-L4 decomposition contract and the L4→Workflow→Execution boundary. Does not itself mutate normative prose, schemas, validators, tests, or canonical records.
 **Depends on**: CR-BP-32 (Activity Model), CR-BP-33 (Execution Boundary), CR-BP-34a (BP-C1..C4 L2 Qualification), CR-BP-34c (LCM-001..005), CR-BP-34d (SIV-001..004), CR-BP-35 (Process Catalog Architecture Retrospective), CR-BP-36 (MECE-001..008), CR-BP-62 (Lifecycle Discovery Method)

@@ -127,7 +127,7 @@ Usage:
   python3 scripts/check_execution_boundary.py --json
   python3 scripts/check_execution_boundary.py --self-test
 
-Author: Coder (for eaojnr). Established by CR-BP-33 (2026-09-12).
+Author: Emmanuel A. Otchere. Established by CR-BP-33 (2026-09-12).
 Derived from CR-BP-33 §15 (Execution Conformance Rules) and
 CR-BP-33 §3, §5, §6, §8, §9, §11, §12, §13, §14. See
 change-requests/CR-BP-33-execution-boundary.md.

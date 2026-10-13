@@ -10,7 +10,7 @@
 
 **Status:** Proposed (refined 2026-09-03)
 **Layer**: Process Catalog
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Type:** Architecture / Semantic / Catalog
 **Priority:** High
 **Repository:** `technehub-labs/dea-catalog-processes`

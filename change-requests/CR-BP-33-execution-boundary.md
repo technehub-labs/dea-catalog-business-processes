@@ -2,7 +2,7 @@
 
 **Status**: Proposed
 **Layer**: L3
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-12
 **Carrier**: Sixth execution slice of the BP-32/33/34 tranche plan; first slice of Phase 4 (CR-BP-33 — Execution Boundary). See `01_plan/CR-BP-32-33-34-foundation/POSITIONING.md` §7.
 **Depends on**: CR-BP-03, CR-BP-14, CR-BP-16, CR-BP-32 (Activity Model; PR #74 MERGED)

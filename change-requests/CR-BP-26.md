@@ -10,7 +10,7 @@
 
 **Status**: Accepted
 **Layer**: Process Catalog (release / governance)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-09
 **Depends on**: CR-BP-25 (Phase 20 governance approval, closed 2026-09-09); `docs/versioning.md` (release-cut discipline); CR-BP-24 (programme closure reconciliation)
 **Related**: CR-BP-21a..21f.1 (landing series, PRs #48-#60); CR-BP-22 (register audit); CR-BP-23 (ECF v2.5.0); CR-BP-25 (Phase 20 closure); dea-metaframework tag `v2.5.0` (ECF vocabulary source of truth)

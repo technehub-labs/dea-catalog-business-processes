@@ -2,7 +2,7 @@
 
 **Status**: Proposed (this PR)
 **Layer**: Cross-cutting (catalog governance)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-10-12
 **Depends on**: CR-BP-TMF-EMBARGO (2026-09-22 strip; this CR records the determination that strip implied and makes it enforceable)
 **Trigger**: User directive 2026-10-12, eaojnr: the catalog content is independently authored; ensure no reference remains, and put the attribution posture on a recorded, auditable basis.

@@ -2,7 +2,7 @@
 
 **Status**: Proposed
 **Layer**: Cross-cutting
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-12
 **Carrier**: Ninth execution slice of the BP-32/33/34 tranche plan; third slice of Phase 5. See `01_plan/CR-BP-32-33-34-foundation/POSITIONING.md` §5/§7.
 **Depends on**: CR-BP-SPEC-BP-01 (metamodel-pointer authoring); CR-BP-16 (conformance gate); CR-BP-19 (register re-derivation); CR-BP-21 (domain admission tranches); CR-BP-23 (ECF v2.5.0 cascade); CR-MM-PROC-01 (metamodel Core authority; cross-repo); CR-AR-FMWK-01 (root model v0.6.0 authority; cross-repo); CR-ECF-CG-001..004 (ECF conformance; cross-repo); CR-CATALOG-STRUCT-01 (catalog repository standard; cross-repo)

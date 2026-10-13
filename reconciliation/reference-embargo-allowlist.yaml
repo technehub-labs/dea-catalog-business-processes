@@ -31,7 +31,7 @@ version: 1
 # Each is hash-locked under EMB-003; drift is blocking.
 sealed_files:
   - path: change-requests/CR-BP-TMF-EMBARGO-tmforum-reference-strip.md
-    sha256: c21202a6ca1b86ff5dd72b2251d2fc3fe7756197ee04085056ac5cff59aa595c
+    sha256: 3aa12897ac6c8b501f7419a3ebcb52b3f47681dabd3897d3a2471d8fbfc6aa43
     rationale: >-
       Sealed historical carrier (CR-BP-TMF-EMBARGO, 2026-09-22 strip).
       The one file allowed to enumerate what was removed; an audit
@@ -52,7 +52,7 @@ sealed_files:
       substantive content. Renaming the script breaks the CI
       workflow wiring; deletion breaks the gate.
   - path: change-requests/CR-BP-112-independent-authorship-determination.md
-    sha256: 57076841161b2658fb9610af08cbc4c1b74b1121594ca9c357374373939e8ae8
+    sha256: 295ef79c346f0767d0a790ed9a27cebd17a1a64584d1ca150686178182e2d72f
     rationale: >-
       The carrier CR. Section 3 enumerates the term list and the
       sealed-file allowlist; section 4 names the post-strip leak

@@ -2,7 +2,7 @@
 
 **Status**: Proposed
 **Layer**: Process Catalog
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-18
 **Carrier**: Recon-programme implementation slice that extends the L2 Business Process qualification contract from BP-C1..C4 (CR-BP-34a) to BP-QUAL-001..012 (CR-BP-96). Six of the twelve BP-QUAL rules are aliases of the existing BP-C family; the remaining five (BP-QUAL-003/004/005/008/009) are advisory structure checks for OPTIONAL fields (inputs, transformation, outputs, responsibility, boundary). BP-QUAL-011 (Specialization Integrity) is deferred under CR-BP-92 §21.
 **Recon programme**: CR-BP-92 §11; CR-BP-93 (decomposition semantic contract) §5.
