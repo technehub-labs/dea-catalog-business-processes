@@ -4,7 +4,7 @@ catalog:
     candidates: 0
     canonical: 3722
     entities: 3723
-    open_change_requests: 100
+    open_change_requests: 101
     research_files: 339
     retired: 1
   cross_cutting:
@@ -6941,7 +6941,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-ao-activate-kusw2u
-    last_modified: '2026-10-13'
+    last_modified: '2026-10-14'
     lifecycle_status: unknown
     path: entities/v1-alpha/ao-activate/processes-pc-ao-activate-kusw2u.yaml
     research_count: 0
@@ -7007,7 +7007,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-ao-retire-3kqe9c
-    last_modified: '2026-10-13'
+    last_modified: '2026-10-14'
     lifecycle_status: unknown
     path: entities/v1-alpha/ao-retire/processes-pc-ao-retire-3kqe9c.yaml
     research_count: 0
@@ -7161,7 +7161,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-fa-retire-64q5p9
-    last_modified: '2026-10-13'
+    last_modified: '2026-10-14'
     lifecycle_status: unknown
     path: entities/v1-alpha/fa-retire/processes-pc-fa-retire-64q5p9.yaml
     research_count: 0

@@ -343,6 +343,19 @@ jobs:
         # reconciliation/authorship-fields.yaml.
         run: python scripts/check_authorship.py --strict
 
+      - name: Run Prose Authorship gate (CR-BP-118c; PROSE-001..002)
+        if: steps.check.outputs.skip != 'true'
+        # Enforces the cardinal rule on PROSE content fields (name,
+        # definition, description, summary) on entity YAML records.
+        # The denylist is the same authoring-tool names as the
+        # metadata gate; "Agent" is allowlisted because the
+        # dea-catalog-processes domain vocabulary uses it as a
+        # workforce/role noun in 299+ content fields. Word-boundary
+        # matching ensures the allowlist is precise ("MultiAgent"
+        # is NOT allowlisted; "Agent Operations" is). 2 rules,
+        # data-driven from reconciliation/prose-fields.yaml.
+        run: python scripts/check_prose_authorship.py --strict
+
       - name: Run ID System coherence gate (CR-BP-mv1; IDM-008, PR-scoped)
         if: steps.check.outputs.skip != 'true'
         run: |

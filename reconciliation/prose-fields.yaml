@@ -1,0 +1,48 @@
+# Prose content-field registry (CR-BP-118c).
+# The 118c gate walks the registered content fields in the registered
+# globs, extracts each field's value (single-line, multi-line block scalar
+# `|`, multi-line folded scalar `>`, and quoted single-line forms), and
+# checks the value against the denylist. The "Agent" keyword is in the
+# allowlist because the dea-catalog-processes domain vocabulary uses
+# "Agent" extensively as a workforce/role noun (e.g. "Agent Operations",
+# "Agent Acquisition and Onboarding", "AgentProfile", "multi-agent")
+# that has nothing to do with the Coder/Agent authoring tools
+# the cardinal rule (CR-BP-118) was designed to keep out of authorship
+# fields. See CR-BP-118c for the doctrinal rationale.
+#
+# Adding a new field here is a CR-level change; do not edit casually.
+fields:
+  - path: "name"                     # entity YAML; record display name
+    file_glob: "entities/v1-alpha/**/*.yaml"
+    kind: "content"
+  - path: "definition"               # entity YAML; formal definition
+    file_glob: "entities/v1-alpha/**/*.yaml"
+    kind: "content"
+  - path: "description"              # entity YAML; narrative description
+    file_glob: "entities/v1-alpha/**/*.yaml"
+    kind: "content"
+  - path: "summary"                  # entity YAML; one-line summary
+    file_glob: "entities/v1-alpha/**/*.yaml"
+    kind: "content"
+
+# Allowlist for the prose gate: these strings are explicitly allowed in
+# any registered content field. The "Agent" entry is the cornerstone:
+# the dea-catalog-processes catalog has 299 occurrences of "Agent" in
+# its content fields, all of which are domain vocabulary (workforce
+# agents, contractor agents, agent profiles, multi-agent systems) that
+# predate the 118a/118b cardinal rule and are NOT a reference to the
+# Coder/Agent authoring tools.
+allowlist:
+  - "Agent"
+
+# Denylist: same authoring-tool names as the 118a/118b gate, applied
+# to content fields. "Agent" is intentionally absent (allowlist above).
+denylist:
+  - "Coder"
+  - "Hermes"
+  - "Claude"
+  - "GPT"
+  - "Cline"
+  - "OpenAI"
+  - "MiniMax"
+  - "MiniMax-M3"
