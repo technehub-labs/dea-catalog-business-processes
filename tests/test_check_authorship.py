@@ -54,10 +54,19 @@ def test_registry_exists():
 def test_registry_loads_expected_fields():
     fields, _, _ = MOD._load_registry()
     paths = {f["path"] for f in fields}
-    assert "**Owner**" in paths
-    assert "**Author**" in paths
-    assert "audit.author" in paths
-    assert "authors[].name" in paths
+    # Every repo's registry must have at least **Owner** and **Author**
+    # (the 118a baseline CR-doc metadata fields). Other fields are
+    # per-repo extensions: `audit.author` for repos that record an audit
+    # block in entity YAML, `authors[].name` for repos with a CITATION.cff,
+    # BC-specific fields like `actor` / `reviewer` for catalog-research
+    # repos, etc. The test stays minimal so it does not couple to a
+    # specific repo's field set.
+    assert "**Owner**" in paths, (
+        f"every repo's authorship registry must include **Owner**; got {paths}"
+    )
+    assert "**Author**" in paths, (
+        f"every repo's authorship registry must include **Author**; got {paths}"
+    )
 
 
 def test_allowlist_contains_canonical_name_and_org():
