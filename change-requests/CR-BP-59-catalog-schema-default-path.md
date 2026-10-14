@@ -2,7 +2,7 @@
 
 **Status**: Proposed
 **Layer**: Process Catalog (validator/regenerator defaults)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-14
 **Carrier**: Hygiene slice; repairs the stale `--schema` default in the catalog regenerator and index checker.
 **Depends on**: CR-BP-23 (v2.5.0 layout; `catalog-index-schema/` directory)

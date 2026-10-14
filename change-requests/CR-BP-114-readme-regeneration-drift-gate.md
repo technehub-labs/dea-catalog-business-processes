@@ -2,7 +2,7 @@
 
 **Status**: Proposed (this PR)
 **Layer**: Cross-cutting (catalog governance)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-10-13
 **Depends on**: CR-BP-113 (mv1 migration completion; this CR lands on the same hygiene surface)
 **Trigger**: User directive 2026-10-13, eaojnr: "In the report, the '/entities/v1-alpha/' still has many readme's embedded deep that are out of synch with the changes. Do a rigorous pass through to update and bring them up to speed, while entrusting that going forward there is a mechanism to keep them consistent with the entities changing. In addition to ensure new cuts or versions reflect this change management process."

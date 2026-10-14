@@ -11,7 +11,7 @@
 **Status**: Proposed
 **Admission authority**: yes
 **Layer**: L2 (Retire admission)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-14
 **Carrier**: Fourth and final governed admission from the CR-BP-63 discovery exercise: lands the Close Enterprise Relationship recommendation (9/10) at its primary cell (PartyAndRelationship x Retire) as a full PC + PG + BP stack, and reverses the register cell from backlog-deferred to ratified-accepted/landed (register v8). Completes the discovery programme's recommended admissions.
 **Depends on**: CR-BP-62 (discovery method); CR-BP-63 (discovery records); CR-BP-64 (first admission tranche; ADM-001 authority registration pattern); CR-BP-02 (PC profile); CR-BP-12 (PG profile)

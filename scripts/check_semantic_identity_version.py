@@ -60,7 +60,7 @@ Usage:
   python3 scripts/check_semantic_identity_version.py --json
   python3 scripts/check_semantic_identity_version.py --self-test
 
-Author: Coder (for eaojnr). Established by CR-BP-34d (2026-09-11).
+Author: Emmanuel A. Otchere. Established by CR-BP-34d (2026-09-11).
 Derived from CR-BP-34 §19 (Version Conformance) and CR-BP-16 (Conformance
 Gate). See change-requests/CR-BP-34d-semantic-identity-vs-version.md.
 """

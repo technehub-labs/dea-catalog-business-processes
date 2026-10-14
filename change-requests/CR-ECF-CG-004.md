@@ -1,6 +1,6 @@
 **Status**: Accepted
 **Layer**: Cross-cutting (catalog conformance)
-**Owner**: eaojnr
+**Owner**: Emmanuel A. Otchere
 **Date**: 2025-09 (historic; landed pre-2026)
 **Retro-fit note (CR-BP-107)**: Status / Layer / Owner added retroactively per CR-BP-107 retro-fit programme. The CR is a cross-repo CR (declarative from CR-ECF-CG-004) co-located in this repo's change-requests/ by convention; metadata is added for validator compliance without rewriting the original content.
 
@@ -23,7 +23,7 @@
 | **Repository** | technehub-labs/dea-catalog-processes |
 | **Implements** | CR-ECF-CG-001 |
 | **Depends On** | CR-ECF-005, CR-ECF-CG-002 |
-| **Author** | Coder (for eaojnr) |
+| **Author** | Emmanuel A. Otchere |
 | **Date** | 2026-09-01 |
 
 ## 1. Purpose

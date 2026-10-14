@@ -3,7 +3,7 @@
 **Status**: Accepted
 **Admission authority**: yes
 **Layer**: Process Catalog
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-07
 **Depends on**: CR-BP-19 (register v2); CR-BP-20 (alignment); CR-BP-21a (StrategyAndDirection landing, prior); CR-DEA-BC-07 (workforce capabilities re-stated substrate-neutral, BC PR #48)
 **Related**: dea-metaframework/framework/domain-grounding.md §3.3; ADR-ECF-002 §5 (Substrate Independence Stress Test); CR-ECF-007

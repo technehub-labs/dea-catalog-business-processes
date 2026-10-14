@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: Process Catalog (release / governance)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-12
 **Depends on**: v0.1.0 baseline (CR-BP-26, PR #64 MERGED, tag `v0.1.0`); CR-BP-28 (register v4 re-derivation); CR-BP-39 (CHANGELOG + README + docs Reconciliation); CR-BP-40 (XRI Gate Promotion); plus the entire BP-32/33/34 tranche plan (PRs #69–81)
 **Related**: `docs/versioning.md` (release-cut discipline); `dea-metaframework` ECF v2.5.0 vocabulary source of truth (unchanged since v0.1.0); the stranded `## [v0.2.0]` CHANGELOG block (per user directive 2026-09-12: "ignore the cut"; left in place as a historical artifact)

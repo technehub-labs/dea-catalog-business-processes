@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: L3
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-13
 **Carrier**: Eighth L3 (Activity) contribution slice; completes the GovernanceAndExistence domain's L3 coverage (Conceive + Design + Build: CR-BP-48; this slice: Improve + Operate).
 **Depends on**: CR-BP-32 (Activity Model; ACT-001..010), CR-BP-42 (pilot), CR-BP-48 (GE Conceive + Design + Build tranche)

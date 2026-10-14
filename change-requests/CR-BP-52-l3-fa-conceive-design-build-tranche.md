@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: L3
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-13
 **Carrier**: Eleventh L3 (Activity) contribution slice; first of two tranches completing the FinanceAndAccounting domain's L3 coverage (this slice: Conceive + Design + Build; Improve + Operate follow as CR-BP-53).
 **Depends on**: CR-BP-32 (Activity Model; ACT-001..010), CR-BP-42 (pilot), CR-BP-43..51 (scaled tranches)

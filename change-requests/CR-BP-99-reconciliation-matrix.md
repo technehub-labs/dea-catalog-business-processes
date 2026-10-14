@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: Process Catalog
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-18
 **Recon programme parents**: CR-BP-92 §16 (recon programme closure), CR-BP-91..98 + EXT-01..01a.
 **Sub-pipeline**: CR-BP-99 (this slice). EXT-02..06 are downstream.

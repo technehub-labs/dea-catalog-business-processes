@@ -1,7 +1,7 @@
 # CR-BP-32/33/34 Foundation — Positioning & Knowledge Harvest
 
 **Date**: 2026-09-10
-**Author**: Coder (for eaojnr)
+**Author**: Emmanuel A. Otchere
 **Source**: User-attached document `/home/hermes/.hermes/profiles/coder/cache/documents/doc_cf6fc6bb9e80_CR-BP-04_06.md` (1578 lines)
 **Companion files**: `CR-BP-32-activity-model.md`, `CR-BP-33-execution-boundary.md`, `CR-BP-34-process-conformance-profile.md`
 

@@ -17,7 +17,7 @@
          CR-BP-03C-sample-process-contribution, CR-BP-02, CR-BP-04,
          CR-BP-SPEC-BP-01
 **Date**: 2026-09-04
-**Author**: Coder
+**Author**: Emmanuel A. Otchere
 
 ## 1. Summary
 

@@ -11,7 +11,7 @@
 **Status**: Proposed
 **Admission authority**: yes
 **Layer**: L2
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-16
 **Carrier**: Seventh discovery-driven admission under the CR-BP-62 escape-clause method; first canonical admission at the FinanceAndAccounting x Activate coordinate. Lands the PC + PG + BP stack, the L2 admission deposition, the register cell flip, ADM-001 authority extension, and reconciliation artifacts. L3 decomposition follows as CR-BP-87.
 **Depends on**: CR-BP-19 (register v2 deferral); CR-BP-62 (discovery method, BP-LIFE-001..015); CR-BP-63 (first Activate/Retire exercise); CR-BP-80 (escape-clause exercise at five backlog-deferred cells); CR-BP-71/-73/-75/-78/-81/-82 (admission tranche precedents).

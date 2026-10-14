@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: Process Catalog
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-19
 **Carrier**: Recon-programme follow-up slice that codifies the L0↔L1 1:1 cardinality invariant as an automated gate and declares the ProcessScope layer (CR-BP-95) dormant by design.
 **Doctrine** (eaojnr 2026-09-19): L0 = ProcessContext (the canonical ECF cell matrix in `contexts/v1-alpha/`); L1 = ProcessGroup (the 49 canonical groups in `entities/v1-alpha/`, one per ECF cell); canonical cardinality is exactly 1 L1 per L0 (and 1 L0 per L1). The ProcessScope layer (`dea:scope-*`) introduced by CR-BP-95 is a schema-only artifact that has never been instantiated; CR-BP-100 declares it dormant because L0 IS the Process Context matrix.

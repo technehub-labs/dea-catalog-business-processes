@@ -2,7 +2,7 @@
 
 **Status**: Proposed
 **Layer**: Process Catalog
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-18
 **Recon programme parents**: CR-BP-92 (Process Catalog layer), CR-BP-93 (decomposition semantic contract §7), CR-BP-94 (Decomposition Record Templates; `templates/task.yaml` first normative L4 shape).
 **Sub-pipeline**: CR-BP-98 (this slice). EXT-02..06 (documentation sub-pipeline) and CR-BP-99 (Reconciliation Matrix) are downstream.

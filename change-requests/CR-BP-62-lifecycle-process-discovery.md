@@ -2,7 +2,7 @@
 
 **Status**: Proposed
 **Layer**: Process Catalog (lifecycle discovery)
-**Owner**: eaojnr (raised); Coder (landing)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-14
 **Carrier**: Normative discovery/governance CR. Establishes the lifecycle process-discovery method, the canonical-process evaluation test battery (BP-LIFE-001..015), the Process Pattern model, the disposition model, and the machine-readable discovery record; lands the structural validator (DISC-001..008) as advisory gate [19].
 **Depends on**: CR-BP-02; CR-BP-03; CR-BP-12; CR-BP-14; CR-BP-32

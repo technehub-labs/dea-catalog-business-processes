@@ -2,7 +2,7 @@
 
 **Status**: Proposed
 **Layer**: L3 (Business Process / Activity decomposition)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-12
 **Carrier**: Fifth execution slice of the BP-32/33/34 tranche plan; first slice of Phase 3 (CR-BP-32 — Activity Model). See `01_plan/CR-BP-32-33-34-foundation/POSITIONING.md` §7.
 **Depends on**: CR-BP-03, CR-BP-04 (id-family contract), CR-BP-14 (BP-SEM-001..014), CR-BP-16 (conformance gate), CR-BP-34a (BP-C4 Resource Dedication)

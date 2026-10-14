@@ -22,7 +22,7 @@ Usage:
   python3 scripts/check_canonical_serves.py
   python3 scripts/check_canonical_serves.py --strict   # treat as CI gate
 
-Author: Coder (for eaojnr). Established by CR-BP-31 (2026-09-10).
+Author: Emmanuel A. Otchere. Established by CR-BP-31 (2026-09-10).
 """
 
 from __future__ import annotations

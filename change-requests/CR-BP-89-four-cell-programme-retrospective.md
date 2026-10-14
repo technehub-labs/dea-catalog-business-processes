@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: L2
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-17
 **Carrier**: Documentation-only retrospective CR that closes the four-cell discovery programme opened by CR-BP-62 (lifecycle process discovery method + DISC-001..008 gate) and culminating in CR-BP-87 (combined L3 decomposition tranche). Mirrors the shape of CR-BP-38 (ECF matrix population retrospective) and CR-BP-35 (process catalog architecture retrospective). Anchors the long-form ADR at `docs/four-cell-discovery-programme.md`.
 **Depends on**: CR-BP-62 (lifecycle process discovery method + DISC-001..008); CR-BP-63 (Activate/Retire lifecycle discovery exercise); CR-BP-64..69 (first admission tranche wave); CR-BP-70..79 (second admission tranche wave + admitted-BP L3 tranches); CR-BP-80 (five-cell escape-clause discovery exercise); CR-BP-81 / -82 / -83 / -86 (four ADMIT-CANONICAL admission tranches); CR-BP-87 (combined L3 decomposition tranche for the four admitted BPs); CR-BP-88 (post-v0.3.0 reconciliation slice); CR-ECF-CG-001..004 (ECF conformance gate; cross-repo)

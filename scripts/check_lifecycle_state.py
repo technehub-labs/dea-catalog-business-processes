@@ -51,7 +51,7 @@ Usage:
   python3 scripts/check_lifecycle_state.py --json
   python3 scripts/check_lifecycle_state.py --self-test
 
-Author: Coder (for eaojnr). Established by CR-BP-34c (2026-09-10).
+Author: Emmanuel A. Otchere. Established by CR-BP-34c (2026-09-10).
 Derived from CR-BP-34 §10 (Lifecycle State Machine) and
 CR-BP-16 (Conformance Gate). Approved vocabulary documented in
 `change-requests/CR-BP-34c-lifecycle-state-machine.md` §6.2.

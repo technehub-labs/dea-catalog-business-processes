@@ -2,7 +2,7 @@
 
 **Status**: Proposed
 **Layer**: Process Catalog
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-18
 **Carrier**: Documentation-only slice that establishes the authoritative decomposition-half semantic contract for the Process Catalog. Consolidates the decomposition-relevant prose previously scattered across `docs/architecture.md`, `docs/semantic-contract.md`, `docs/identity.md`, and the schema descriptions in `schemas/entities/*.schema.json` into a single long-form ADR. Sets the normative prose layer against which CR-BP-94..99 reconcile schemas, validators, tests, and canonical records.
 **Depends on**: CR-BP-03 (Business Process Architecture), CR-BP-14 (Process Semantic Reconciliation), CR-BP-32 (Activity Model), CR-BP-33 (Execution Boundary), CR-BP-92 (Recon programme)

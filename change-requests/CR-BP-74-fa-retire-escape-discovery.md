@@ -2,7 +2,7 @@
 
 **Status**: Proposed
 **Layer**: L2 (discovery only; admission deferred to CR-BP-75)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-15
 
 ## 1. Change Request

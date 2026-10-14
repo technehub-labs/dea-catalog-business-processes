@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: L1 (Process Group record) + validator repair
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-14
 **Carrier**: Hygiene slice; remediates the dangling `dea:process-frame-financial-policy-thesis` composes edge disclosed in the NOT-lists of CR-BP-44 through CR-BP-57, and repairs the validator defect that let it survive.
 **Depends on**: CR-BP-04/PG-001..008 (Process Group model), CR-BP-19 (register v2), CR-BP-21e/21e.1 (FA landing), CR-BP-23 (v2.5.0 per-directory layout), CR-BP-34d (SIV-004)

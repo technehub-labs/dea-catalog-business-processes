@@ -2,7 +2,7 @@
 
 **Status**: Proposed (this PR)
 **Layer**: Cross-cutting (catalog governance) + release discipline
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-10-13
 **Trigger**: User directive 2026-10-13, eaojnr: "For now can we remove all what's in the release, to pave way for a clean release plan? I consider the previous releases immature to put out." Extension selected by user 2026-10-13: release-discipline hardening (A + B + D + F from the candidate list).
 **Carrier**: Single PR, executed on a feature branch `release-history-reset` and merged via PR review (not direct-push). Recovery appendix (§2) is captured into this CR file before any destructive operation runs.

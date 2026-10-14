@@ -10,7 +10,7 @@
 
 **Status**: Proposed (carrier CR — discussion + design-decision lock; **awaiting user input on §3 decisions**)
 **Layer**: Process Catalog (release / governance)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-10
 **Depends on**: `v0.2.0` snapshot on `main` (CR-BP-29, PR #66 MERGED, commit `903e3b3`); CR-BP-31 migration-pair closure (PR #67 MERGED, commit `991faa3`); `generate_capability_map.py` (proven pattern in `dea-catalog-business-capabilities`); the canonical YAML substrate in `entities/v1-alpha/`
 **Related**: CR-DEA-BC-05 (versioning discipline), CR-DEA-BC-11 (release-pipeline consolidation in the BC catalog); CR-BP-03C (contribution flow); CR-BP-15-IMP Phase 3 (disposition register); CR-BP-16 (conformance gate, 196/196 at L4); `docs/versioning.md`

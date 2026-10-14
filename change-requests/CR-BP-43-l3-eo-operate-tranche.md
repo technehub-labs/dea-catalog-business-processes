@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: L3
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-13
 **Carrier**: Second L3 (Activity) contribution slice; completes the L3 deposition of the EnablementAndOperations / Operate coordinate using the structured deposition pattern proven by the CR-BP-42 pilot.
 **Depends on**: CR-BP-32 (Activity Model; ACT-001..010), CR-BP-42 (L3 pilot deposition), CR-BP-21d.1 (parent BP landings)

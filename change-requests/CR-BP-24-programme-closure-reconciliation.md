@@ -2,7 +2,7 @@
 
 **Status**: Accepted
 **Layer**: Process Catalog (governance / tracking)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-08
 **Depends on**: CR-BP-15 (catalog reconciliation); CR-BP-16 (conformance gate, carrying CR-BP-15-IMP); CR-BP-21e.1 (FinanceAndAccounting completion, PR #59); CR-BP-21f.1 (GovernanceAndExistence completion, PR #60); CR-BP-23 (ECF v2.5.0 migration, PR #61)
 **Related**: CR-BP-22 (register audit-status reconciliation; same reconciliation pattern applied to the register axis)

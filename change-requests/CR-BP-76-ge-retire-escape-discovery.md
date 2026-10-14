@@ -2,7 +2,7 @@
 
 **Status**: Proposed
 **Layer**: L0 (Discovery escape-clause record)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-16
 **Carrier**: Discovery-only escape-clause slice landing at the previously unpopulated GovernanceAndExistence x Retire coordinate. ADMIT-CANONICAL recommendation only; admission will be a follow-on slice (CR-BP-7x).
 **Depends on**: CR-BP-62 (lifecycle discovery method; DISC-001..008), CR-BP-19 (register v2 per-cell escape condition).

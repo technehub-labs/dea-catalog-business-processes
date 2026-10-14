@@ -3,7 +3,7 @@
 **Status**: Accepted
 **Admission authority**: yes
 **Layer**: Process Catalog
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-08
 **Depends on**: CR-BP-21e (merged, PR #53), CR-BP-19 (register v2.4.0)
 **Closes**: Register v3 audit gap for the FinanceAndAccounting domain — **the last fully-ratified register gap**.

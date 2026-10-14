@@ -332,6 +332,17 @@ jobs:
         # follow-on.
         run: python scripts/check_entity_identity.py --strict
 
+      - name: Run Authorship Cardinal Rule gate (CR-BP-118; AUT-001..003)
+        if: steps.check.outputs.skip != 'true'
+        # Enforces R1: every authorship-bearing field must carry a value
+        # from the allowlist (Emmanuel A. Otchere, TechNeHub Labs); the
+        # substring denylist (Coder, Agent, Hermes, etc.) catches
+        # agent/tool names embedded in prose. AUT-003 (canonical-identity
+        # match) is advisory under non-strict mode; --strict flips it
+        # to blocking. 3 rules, data-driven from
+        # reconciliation/authorship-fields.yaml.
+        run: python scripts/check_authorship.py --strict
+
       - name: Run ID System coherence gate (CR-BP-mv1; IDM-008, PR-scoped)
         if: steps.check.outputs.skip != 'true'
         run: |

@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: Process Catalog (release / governance)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-09
 **Depends on**: CR-BP-28 (register v4 re-derivation, PR #65 MERGED); v0.1.0 baseline (CR-BP-26, PR #64 MERGED, tag `v0.1.0`)
 **Related**: `docs/versioning.md` (release-cut discipline); dea-metaframework tag `v2.5.0` (ECF vocabulary source of truth, unchanged since v0.1.0)

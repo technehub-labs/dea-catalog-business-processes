@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: Process Catalog
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-18
 **Parent**: CR-BP-94 (Decomposition Record Templates, PR #134)
 **Source**: `change-requests/inbox/CR-BP-94-EXT-01.md` (user-authored attachment)

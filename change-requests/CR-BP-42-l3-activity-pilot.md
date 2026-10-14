@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: L3
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-13
 **Carrier**: First L3 (Activity) contribution slice; applies the structured deposition pattern (research deposition -> canonical landing) one layer below L2, mirroring the CR-BP-11 L1 candidate-universe approach. Follows CR-BP-32 (Activity Model, gate [15]).
 **Depends on**: CR-BP-32 (Activity Model; ACT-001..010; `schemas/entities/activity.schema.json`), CR-BP-21d.1 (parent BP landing), CR-BP-16 (conformance gate)

@@ -2,7 +2,7 @@
 
 **Status**: Accepted (paperwork-only normalization)
 **Layer**: Process Catalog
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-10
 **Depends on**: CR-BP-15-IMP (Phase 5 trunk migration); CR-BP-18 (ECF v2.3.0); CR-BP-22 (register v3); CR-BP-23 (Domain 6 migration, v2.5.0)
 **Supersedes**: — (additive; does not change IDs, names, or L1 register)

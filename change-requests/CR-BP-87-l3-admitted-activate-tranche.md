@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: L3
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-17
 **Carrier**: Fourth L3 (Activity) tranche landing after CR-BP-69 / CR-BP-77 / CR-BP-79; closes the final four L0-L3 gaps created by the CR-BP-81 / CR-BP-82 / CR-BP-83 / CR-BP-86 admission tranches at the four ADMIT-CANONICAL Activate cells (AO.Activate, EO.Activate, FA.Activate, SD.Activate). Single combined PR (Option A): 4 BPs decomposed to 16 Activities in one commit.
 **Depends on**: CR-BP-32 (Activity Model; ACT-001..010), CR-BP-42 (pilot), CR-BP-43..57 (per-stage L3 tranches), CR-BP-69 (first admitted-BP decomposition tranche), CR-BP-77 (second admitted-BP tranche), CR-BP-79 (G&E Retire L3 tranche precedent), CR-BP-80 (escape-clause exercise at five backlog-deferred cells), CR-BP-81/-82/-83/-86 (admission tranches).

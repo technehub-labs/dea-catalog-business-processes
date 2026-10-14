@@ -3,7 +3,7 @@
 **Status**: Accepted
 **Admission authority**: yes
 **Layer**: Process Catalog
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-08
 **Depends on**: CR-BP-19 (register v2); CR-BP-20 (alignment); CR-BP-21a (StrategyAndDirection landing, prior); CR-BP-21b (AgencyAndOrganization landing, prior)
 **Related**: dea-metaframework/framework/domain-grounding.md §3.5; CR-BP-21d..e (remaining 2 unadmitted domains, planned)

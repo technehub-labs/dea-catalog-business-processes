@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: L3
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-13
 **Carrier**: Fourth L3 (Activity) contribution slice; completes the PartyAndRelationship domain's L3 coverage (all 5 stages) using the structured deposition pattern proven by CR-BP-42/43/44.
 **Depends on**: CR-BP-32 (Activity Model; ACT-001..010), CR-BP-42 (pilot), CR-BP-43 (EO/Operate tranche), CR-BP-44 (PR Operate + Improve tranche)

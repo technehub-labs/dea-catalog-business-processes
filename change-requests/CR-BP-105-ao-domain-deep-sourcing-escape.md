@@ -2,7 +2,7 @@
 
 **Status**: Proposed
 **Layer**: Process Catalog (lifecycle discovery + L1 sourcing)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-22
 **Parent doctrine**: CR-BP-62 (lifecycle process discovery method, BP-LIFE-001..015 test battery, DISC-001..008 advisory gate); CR-BP-80 (L0 escape-clause discovery for the five backlog-deferred cells); CR-BP-81 (AO.Activate escape admission, Mobilize Licensed Workforce); CR-BP-114 (AO.Retire escape admission, Conduct Regulated Workforce Wind-Down).
 **Carrier**: Discovery-only slice. Produces 5 escape-clause discovery records (one per ECF cell) evaluating a regulator-tied agent-capacity candidate under the CR-BP-62 method. Lands zero new entity records, zero id changes, zero register mutations, zero count assertion moves. Five recommended ADMIT-CANONICAL dispositions; admission lands through separate per-cell tranches gated on this slice.

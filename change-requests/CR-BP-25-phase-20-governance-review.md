@@ -10,7 +10,7 @@
 
 **Status**: Accepted
 **Layer**: Process Catalog (governance)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-09
 **Depends on**: CR-BP-15 (Process Catalog Reconciliation); CR-BP-16 (Conformance Gate, Phase 20 §22); CR-BP-15-IMP (20-phase implementation, PRs #31-#38); CR-BP-22 (register audit); CR-BP-23 (ECF v2.5.0); CR-BP-24 (programme closure reconciliation)
 **Related**: CR-BP-21a..21f.1 (landing series, PRs #48-#60); `docs/governance/reconciliation-programme.md`; `docs/versioning.md` (first release cut gate)

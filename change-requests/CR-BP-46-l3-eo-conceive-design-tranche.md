@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: L3
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-13
 **Carrier**: Fifth L3 (Activity) contribution slice; first of two tranches completing the EnablementAndOperations domain's L3 coverage (Operate covered by CR-BP-42/43; this slice covers Conceive + Design; Build + Improve follow as CR-BP-47).
 **Depends on**: CR-BP-32 (Activity Model; ACT-001..010), CR-BP-42 (pilot), CR-BP-43 (EO/Operate tranche), CR-BP-44, CR-BP-45

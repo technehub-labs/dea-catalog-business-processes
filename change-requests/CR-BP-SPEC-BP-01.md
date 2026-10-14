@@ -1,6 +1,6 @@
 **Status**: Accepted
 **Layer**: L2 (specialization profile)
-**Owner**: eaojnr
+**Owner**: Emmanuel A. Otchere
 **Date**: 2025-09 (historic; landed pre-2026)
 **Retro-fit note (CR-BP-107)**: Status / Layer / Owner added retroactively per CR-BP-107 retro-fit programme. The CR is a historical artefact authored before the S21 metadata schema; metadata is added for validator compliance without rewriting the original content.
 
@@ -23,7 +23,7 @@
 | **Scope** | `technehub-labs/dea-catalog-processes` |
 | **Predecessor** | CR-MM-PROC-01 (kernel + specialization; **must land first**); CR-BP-01 (catalog-side, superseded premise; this CR re-anchors its governance work on the correct premise) |
 | **Authority** | WSF (`wsf:Process`; Tier-3 derived construct); `dea:Process` (Core kernel); `dea:BusinessProcess` (Core specialization) |
-| **Author** | Coder (for eaojnr) |
+| **Author** | Emmanuel A. Otchere |
 | **Date** | 2026-09-03 |
 
 ## 1. Change Request

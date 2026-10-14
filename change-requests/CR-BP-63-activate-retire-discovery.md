@@ -2,7 +2,7 @@
 
 **Status**: Proposed
 **Layer**: Process Catalog (lifecycle discovery)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-14
 **Carrier**: First application of the CR-BP-62 discovery method: the 14 backlog-deferred Activate/Retire ECF contexts are evaluated cell-by-cell with evidence-backed dispositions, replacing the register's uniform deferral rationale with documented per-cell outcomes (CR-BP-62 section 15).
 **Depends on**: CR-BP-62 (discovery method, record schema, DISC-001..008 gate); CR-BP-19 (register v2 deferral normalization); CR-BP-28 (register v4 ratification)

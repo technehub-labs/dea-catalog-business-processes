@@ -2,7 +2,7 @@
 
 **Status**: Proposed
 **Layer**: Process Catalog
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-18
 **Parent**: CR-BP-94-EXT-01 (Process Documentation Architecture, PR #137, merged at `35a0a838`)
 **Sub-pipeline**: EXT-01a (this slice) + EXT-02..06.

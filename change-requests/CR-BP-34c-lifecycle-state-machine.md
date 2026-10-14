@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: L2 (Business Process) — lifecycle governance
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-10
 **Carrier**: Third execution slice of CR-BP-34 (Process Conformance Profile; PR #69 MERGED, commit `f40a45c`)
 **Depends on**: CR-BP-03, CR-BP-14 (BP-SEM-001..014), CR-BP-16, CR-BP-34a (BP-C4 Resource Dedication; PR #70 MERGED)

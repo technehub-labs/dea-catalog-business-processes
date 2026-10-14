@@ -2,7 +2,7 @@
 
 **Status**: Proposed
 **Layer**: L0
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-16
 **Carrier**: Fifth discovery-driven escape-clause exercise under the CR-BP-62 method; targets the five ECF cells still backlog-deferred after CR-BP-63 (Activate/Retire first-pass exercise) and the four subsequent cell flips (CR-BP-71/-73/-75/-78).
 **Depends on**: CR-BP-19 (register v2 deferral normalization); CR-BP-62 (discovery method, BP-LIFE-001..015 test battery); CR-BP-63 (first Activate/Retire discovery exercise); CR-ECF-001..008 (framework axiom-derivation, domain grounding, lifecycle grounding, orthogonality).

@@ -10,7 +10,7 @@
 
 **Status**: Proposed
 **Layer**: Process Catalog (documentation)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-14
 **Carrier**: Documentation slice; brings the narrative docs into agreement with the landed L3 (Activity) layer and the canonical L1 Process Group records.
 **Depends on**: CR-BP-12 (PG model), CR-BP-19 (register v2), CR-BP-32 (Activity Model), CR-BP-42..57 (L3 landings)

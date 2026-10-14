@@ -10,7 +10,7 @@
 
 **Status**: Accepted
 **Layer**: Process Catalog (research register)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-09
 **Depends on**: CR-BP-22 (register v3, audit_status axis); CR-BP-23 (ECF v2.5.0 migration, PR #61); CR-BP-25 (Phase 20 governance closure, 2026-09-09); CR-BP-26 (first release cut v0.1.0)
 **Related**: `dea-metaframework` v2.5.0 (CR-ECF-008 + ADR-ECF-003); `entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml` (the register)

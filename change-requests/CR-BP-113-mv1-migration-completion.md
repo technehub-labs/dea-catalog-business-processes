@@ -2,7 +2,7 @@
 
 **Status**: Proposed (this PR)
 **Layer**: Cross-cutting (catalog governance)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-10-13
 **Depends on**: CR-BP-mv1 (2026-09-20 org-wide id/path migration; this CR finishes what it left behind)
 **Trigger**: User directive 2026-10-13, eaojnr: "Finish the mv1 migration in docs, templates, and hrefs - fix the 278 broken links, regenerate change-requests/README.md, update templates to the processes:* id family (or generate templates from the schemas so they can't drift)."

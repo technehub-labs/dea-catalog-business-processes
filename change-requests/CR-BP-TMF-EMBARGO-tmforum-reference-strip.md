@@ -2,7 +2,7 @@
 
 **Status**: Proposed
 **Layer**: Cross-cutting (catalog governance)
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-22
 **Trigger**: User directive 2026-09-22, eaojnr: "never, for any of this work in this repo or any other in the org must we refer to TMForum. This is an explicit embargo, and rule that should never be crossed."
 **Carrier**: Single-PR compliance remediation across 34 files (24 distinct paths) of the merged catalog history. Removes every TMForum reference (TM Forum, TMF, eTOM, Frameworx, GB921, GB925, SID, TAM, ODF, OSS/BSS, tm-forum-frameworx, tmforum.org) without substituting any replacement. Maintains all other authoritative evidence chains (ISO 55000, APQC PCF 7.0/8.8, ITIL 4, COBIT 2019, IT4IT, PRA PS20/24, FSB Insurance Resolution 2025, NAIC Model 901, IFRS 17, IFRS 5, ASC 205-30, ASC 944, IRO Best Practice, World Commerce and Contracting, GDPR, Basel BCBS, Wolfsberg Group, EU AMLD 4/5/6).

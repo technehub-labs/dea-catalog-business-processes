@@ -324,7 +324,7 @@ tranches:
 - tranche_id: sd-c
   context_ref: processes:pc-sd-conceive-ucb3gx
   context_name: strategy-direction / conceive
-  owner: CR-BP-21a (Coder for eaojnr)
+  owner: CR-BP-21a (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - MOVE
@@ -335,7 +335,7 @@ tranches:
 - tranche_id: sd-d
   context_ref: processes:pc-sd-design-g3es76
   context_name: strategy-direction / design
-  owner: CR-BP-21a (Coder for eaojnr)
+  owner: CR-BP-21a (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -346,7 +346,7 @@ tranches:
 - tranche_id: sd-b
   context_ref: processes:pc-sd-build-gmzrrm
   context_name: strategy-direction / build
-  owner: CR-BP-21a (Coder for eaojnr)
+  owner: CR-BP-21a (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -357,7 +357,7 @@ tranches:
 - tranche_id: sd-op
   context_ref: processes:pc-sd-operate-5cs5ee
   context_name: strategy-direction / operate
-  owner: CR-BP-21a (Coder for eaojnr)
+  owner: CR-BP-21a (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -368,7 +368,7 @@ tranches:
 - tranche_id: sd-im
   context_ref: processes:pc-sd-improve-ft9k5f
   context_name: strategy-direction / improve
-  owner: CR-BP-21a (Coder for eaojnr)
+  owner: CR-BP-21a (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -379,7 +379,7 @@ tranches:
 - tranche_id: ao-c
   context_ref: processes:pc-ao-conceive-wtq4cr
   context_name: agency-organization / conceive
-  owner: CR-BP-21b (Coder for eaojnr)
+  owner: CR-BP-21b (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -390,7 +390,7 @@ tranches:
 - tranche_id: ao-d
   context_ref: processes:pc-ao-design-a4hq2r
   context_name: agency-organization / design
-  owner: CR-BP-21b (Coder for eaojnr)
+  owner: CR-BP-21b (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -401,7 +401,7 @@ tranches:
 - tranche_id: ao-b
   context_ref: processes:pc-ao-build-pjk4rz
   context_name: agency-organization / build
-  owner: CR-BP-21b (Coder for eaojnr)
+  owner: CR-BP-21b (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -412,7 +412,7 @@ tranches:
 - tranche_id: ao-op
   context_ref: processes:pc-ao-operate-zfevmp
   context_name: agency-organization / operate
-  owner: CR-BP-21b (Coder for eaojnr)
+  owner: CR-BP-21b (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -423,7 +423,7 @@ tranches:
 - tranche_id: ao-im
   context_ref: processes:pc-ao-improve-qkmh6b
   context_name: agency-organization / improve
-  owner: CR-BP-21b (Coder for eaojnr)
+  owner: CR-BP-21b (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -434,7 +434,7 @@ tranches:
 - tranche_id: pv-c
   context_ref: processes:pc-pv-conceive-fe9awk
   context_name: product-value / conceive
-  owner: CR-BP-21c (Coder for eaojnr)
+  owner: CR-BP-21c (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -445,7 +445,7 @@ tranches:
 - tranche_id: pv-d
   context_ref: processes:pc-pv-design-8dhwpn
   context_name: product-value / design
-  owner: CR-BP-21c (Coder for eaojnr)
+  owner: CR-BP-21c (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -456,7 +456,7 @@ tranches:
 - tranche_id: pv-b
   context_ref: processes:pc-pv-build-ygbmxb
   context_name: product-value / build
-  owner: CR-BP-21c (Coder for eaojnr)
+  owner: CR-BP-21c (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -467,7 +467,7 @@ tranches:
 - tranche_id: pv-op
   context_ref: processes:pc-pv-operate-ewpwjc
   context_name: product-value / operate
-  owner: CR-BP-21c (Coder for eaojnr)
+  owner: CR-BP-21c (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -478,7 +478,7 @@ tranches:
 - tranche_id: pv-im
   context_ref: processes:pc-pv-improve-wpyfx7
   context_name: product-value / improve
-  owner: CR-BP-21c (Coder for eaojnr)
+  owner: CR-BP-21c (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -489,7 +489,7 @@ tranches:
 - tranche_id: oe-c
   context_ref: processes:pc-eo-conceive-mxmtzq
   context_name: enablement-operations / conceive
-  owner: CR-BP-21d (Coder for eaojnr)
+  owner: CR-BP-21d (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -500,7 +500,7 @@ tranches:
 - tranche_id: oe-d
   context_ref: processes:pc-eo-design-kxdfnz
   context_name: enablement-operations / design
-  owner: CR-BP-21d (Coder for eaojnr)
+  owner: CR-BP-21d (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -511,7 +511,7 @@ tranches:
 - tranche_id: oe-b
   context_ref: processes:pc-eo-build-zwkhxc
   context_name: enablement-operations / build
-  owner: CR-BP-21d (Coder for eaojnr)
+  owner: CR-BP-21d (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -522,7 +522,7 @@ tranches:
 - tranche_id: oe-op
   context_ref: processes:pc-eo-operate-ydqb96
   context_name: enablement-operations / operate
-  owner: CR-BP-21d (Coder for eaojnr)
+  owner: CR-BP-21d (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -533,7 +533,7 @@ tranches:
 - tranche_id: oe-im
   context_ref: processes:pc-eo-improve-pka6dk
   context_name: enablement-operations / improve
-  owner: CR-BP-21d (Coder for eaojnr)
+  owner: CR-BP-21d (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -544,7 +544,7 @@ tranches:
 - tranche_id: fa-c
   context_ref: processes:pc-fa-conceive-phabh2
   context_name: finance-accounting / conceive
-  owner: CR-BP-21e (Coder for eaojnr)
+  owner: CR-BP-21e (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -555,7 +555,7 @@ tranches:
 - tranche_id: fa-d
   context_ref: processes:pc-fa-design-4j8evh
   context_name: finance-accounting / design
-  owner: CR-BP-21e (Coder for eaojnr)
+  owner: CR-BP-21e (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -566,7 +566,7 @@ tranches:
 - tranche_id: fa-b
   context_ref: processes:pc-fa-build-pztsp9
   context_name: finance-accounting / build
-  owner: CR-BP-21e (Coder for eaojnr)
+  owner: CR-BP-21e (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -577,7 +577,7 @@ tranches:
 - tranche_id: fa-op
   context_ref: processes:pc-fa-operate-afew7e
   context_name: finance-accounting / operate
-  owner: CR-BP-21e (Coder for eaojnr)
+  owner: CR-BP-21e (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -588,7 +588,7 @@ tranches:
 - tranche_id: fa-im
   context_ref: processes:pc-fa-improve-haqf4w
   context_name: finance-accounting / improve
-  owner: CR-BP-21e (Coder for eaojnr)
+  owner: CR-BP-21e (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -599,7 +599,7 @@ tranches:
 - tranche_id: sd-c.1
   context_ref: processes:pc-sd-conceive-ucb3gx
   context_name: strategy-direction / conceive
-  owner: CR-BP-21a.1 (Coder for eaojnr)
+  owner: CR-BP-21a.1 (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -612,7 +612,7 @@ tranches:
 - tranche_id: sd-d.1
   context_ref: processes:pc-sd-design-g3es76
   context_name: strategy-direction / design
-  owner: CR-BP-21a.1 (Coder for eaojnr)
+  owner: CR-BP-21a.1 (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -625,7 +625,7 @@ tranches:
 - tranche_id: sd-b.1
   context_ref: processes:pc-sd-build-gmzrrm
   context_name: strategy-direction / build
-  owner: CR-BP-21a.1 (Coder for eaojnr)
+  owner: CR-BP-21a.1 (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -638,7 +638,7 @@ tranches:
 - tranche_id: sd-op.1
   context_ref: processes:pc-sd-operate-5cs5ee
   context_name: strategy-direction / operate
-  owner: CR-BP-21a.1 (Coder for eaojnr)
+  owner: CR-BP-21a.1 (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -651,7 +651,7 @@ tranches:
 - tranche_id: sd-im.1
   context_ref: processes:pc-sd-improve-ft9k5f
   context_name: strategy-direction / improve
-  owner: CR-BP-21a.1 (Coder for eaojnr)
+  owner: CR-BP-21a.1 (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -663,7 +663,7 @@ tranches:
 - tranche_id: ao-c.1
   context_ref: processes:pc-ao-conceive-wtq4cr
   context_name: agency-organization / conceive
-  owner: CR-BP-21b.1 (Coder for eaojnr)
+  owner: CR-BP-21b.1 (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -675,7 +675,7 @@ tranches:
 - tranche_id: ao-d.1
   context_ref: processes:pc-ao-design-a4hq2r
   context_name: agency-organization / design
-  owner: CR-BP-21b.1 (Coder for eaojnr)
+  owner: CR-BP-21b.1 (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -688,7 +688,7 @@ tranches:
 - tranche_id: ao-b.1
   context_ref: processes:pc-ao-build-pjk4rz
   context_name: agency-organization / build
-  owner: CR-BP-21b.1 (Coder for eaojnr)
+  owner: CR-BP-21b.1 (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -699,7 +699,7 @@ tranches:
 - tranche_id: ao-op.1
   context_ref: processes:pc-ao-operate-zfevmp
   context_name: agency-organization / operate
-  owner: CR-BP-21b.1 (Coder for eaojnr)
+  owner: CR-BP-21b.1 (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -713,7 +713,7 @@ tranches:
 - tranche_id: ao-im.1
   context_ref: processes:pc-ao-improve-qkmh6b
   context_name: agency-organization / improve
-  owner: CR-BP-21b.1 (Coder for eaojnr)
+  owner: CR-BP-21b.1 (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -726,7 +726,7 @@ tranches:
 - tranche_id: pv-c.1
   context_ref: processes:pc-pv-conceive-fe9awk
   context_name: product-value / conceive
-  owner: CR-BP-21c.1 (Coder for eaojnr)
+  owner: CR-BP-21c.1 (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -738,7 +738,7 @@ tranches:
 - tranche_id: pv-d.1
   context_ref: processes:pc-pv-design-8dhwpn
   context_name: product-value / design
-  owner: CR-BP-21c.1 (Coder for eaojnr)
+  owner: CR-BP-21c.1 (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -750,7 +750,7 @@ tranches:
 - tranche_id: pv-b.1
   context_ref: processes:pc-pv-build-ygbmxb
   context_name: product-value / build
-  owner: CR-BP-21c.1 (Coder for eaojnr)
+  owner: CR-BP-21c.1 (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -763,7 +763,7 @@ tranches:
 - tranche_id: pv-op.1
   context_ref: processes:pc-pv-operate-ewpwjc
   context_name: product-value / operate
-  owner: CR-BP-21c.1 (Coder for eaojnr)
+  owner: CR-BP-21c.1 (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -775,7 +775,7 @@ tranches:
 - tranche_id: pv-im.1
   context_ref: processes:pc-pv-improve-wpyfx7
   context_name: product-value / improve
-  owner: CR-BP-21c.1 (Coder for eaojnr)
+  owner: CR-BP-21c.1 (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -787,7 +787,7 @@ tranches:
 - tranche_id: oe-c.1
   context_ref: processes:pc-eo-conceive-mxmtzq
   context_name: enablement-operations / conceive
-  owner: CR-BP-21d.1 (Coder for eaojnr)
+  owner: CR-BP-21d.1 (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -800,7 +800,7 @@ tranches:
 - tranche_id: oe-d.1
   context_ref: processes:pc-eo-design-kxdfnz
   context_name: enablement-operations / design
-  owner: CR-BP-21d.1 (Coder for eaojnr)
+  owner: CR-BP-21d.1 (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -814,7 +814,7 @@ tranches:
 - tranche_id: oe-b.1
   context_ref: processes:pc-eo-build-zwkhxc
   context_name: enablement-operations / build
-  owner: CR-BP-21d.1 (Coder for eaojnr)
+  owner: CR-BP-21d.1 (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -828,7 +828,7 @@ tranches:
 - tranche_id: oe-op.1
   context_ref: processes:pc-eo-operate-ydqb96
   context_name: enablement-operations / operate
-  owner: CR-BP-21d.1 (Coder for eaojnr)
+  owner: CR-BP-21d.1 (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN
@@ -846,7 +846,7 @@ tranches:
 - tranche_id: oe-im.1
   context_ref: processes:pc-eo-improve-pka6dk
   context_name: enablement-operations / improve
-  owner: CR-BP-21d.1 (Coder for eaojnr)
+  owner: CR-BP-21d.1 (Emmanuel A. Otchere)
   risk: low
   expected_dispositions:
   - RETAIN

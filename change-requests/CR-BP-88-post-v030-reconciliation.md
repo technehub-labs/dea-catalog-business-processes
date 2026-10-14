@@ -2,7 +2,7 @@
 
 **Status**: Proposed
 **Layer**: Cross-cutting
-**Owner**: Coder (for eaojnr)
+**Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-17
 **Carrier**: Second execution slice after the CR-BP-32/33/34 tranche plan closure + the four-cell discovery programme (CR-BP-62..87). Reconciles tracking artifacts with `main` at `55a658e` (post-PR #126). Closes the documentation gap for **54 PRs** that accumulated under `[Unreleased]` since v0.3.0 was tagged on 2026-09-12. No entity, schema, validator, or gate change.
 **Depends on**: CR-BP-32 / CR-BP-33 / CR-BP-34a..d / CR-BP-35 / CR-BP-36 / CR-BP-37 / CR-BP-38 / CR-BP-39 / CR-BP-40 / CR-BP-41 (v0.3.0 release cut); CR-BP-42..57 (L3 EO/PR/GE/PV/FA/S&D/A&O domain completion tranches); CR-BP-58..61 (gate / documentation repair slices); CR-BP-62 / CR-BP-63 (lifecycle discovery method + initial Activate/Retire discovery exercise); CR-BP-64..69 (first admission tranche wave + first admitted-BP L3 tranche); CR-BP-70..75 (escape-clause discovery + admission tranches at P&R.Activate, A&O.Retire, F&A.Retire); CR-BP-76..79 (G&E.Retire discovery + admission + L3); CR-BP-80 (five-cell escape-clause discovery exercise); CR-BP-81 / -82 / -83 / -86 (four admission tranches at the four ADMIT-CANONICAL Activate cells); CR-BP-87 (combined L3 decomposition tranche for the four admitted BPs).
