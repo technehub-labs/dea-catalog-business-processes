@@ -192,8 +192,16 @@ The post-sweep `scripts/check_authorship.py --strict` exits 0 with 0 blocking fi
 1. The initial denylist in the carrier doc contained `Emmanuel A. Otchere` (a name-mangled agent reference), which contradicted the allowlist's `Emmanuel A. Otchere`. Fixed in the registry.
 2. The initial registry parser did not strip `# comment` after value lines, leaving trailing quote characters on the field paths. Fixed by adding `_strip_comment()` helper in `check_authorship.py`.
 
-Both lessons pinned in the `dea-catalog-conformance-validator-slice` skill.
+|Both lessons pinned in the `dea-catalog-conformance-validator-slice` skill.
+
+**Third blast-radius miss, caught and corrected during 118a merge:**
+
+3. The CI-only false positive: the gate's `_iter_files` walker used `REPO_ROOT.rglob(glob.name)` for filename-only globs, walking vendored content that the CI workflow checks out at step 5 (dea-metaframework into `.metaframework/`). The dea-metaframework repo's own `change-requests/CR-ECF-008.md` and `CR-ECF-CG-001.md` carry `**Owner**: Coder (for eaojnr)` lines; the gate flagged them as findings on the dea-catalog-processes branch. Local checkout has no vendored content, so local is green and CI is red. Fixed in `956fe8f9`: the walker now computes the longest literal prefix in the registered glob and walks from `REPO_ROOT / prefix`. Vendored content is invisible. Regression test added (`test_iter_files_does_not_escape_into_metaframework`) that locks the bounded-walker behavior.
+
+Lesson pinned in the `dea-catalog-conformance-validator-slice` skill.
 
 ## 12. Result
 
 The authorship-metadata surface is brought into compliance with the cardinal rule (R1) and the named-role-file rule (R2) by a one-shot retroactive sweep. The new AUT-001..003 gate prevents regression: any future authoring that lands `Coder`, `Agent`, or any other agent/tool name in an authorship-bearing field fails CI. The cardinal rules are pinned in a CR (immutable by a gate change) and in a `cardinal-rules.md` governance doc (immutable by code change). The 247 prose-content hits are inventoried for the 118c follow-on but are not rewritten in this CR.
+
+**Merge status:** PR #160 squash-merged to main @ `dc81b429` on 2026-10-13T18:13:xxZ. CI: 3/3 checks PASS on the fix commit (`956fe8f9`); the prior commit's failure was the third blast-radius miss above. Card 339 (CR-BP-118) moved to Done. Next slice: **CR-BP-118b** (org-wide propagation, see new card 344).
