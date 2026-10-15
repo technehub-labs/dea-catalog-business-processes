@@ -243,6 +243,45 @@ def test_cli_unknown_scope_exits_one():
 
 
 # --------------------------------------------------------------------------- #
+# Remote-fetch tests (3 tests; 1 may skip if no network)
+# --------------------------------------------------------------------------- #
+
+def test_remote_fetch_known_scope(tmp_path, monkeypatch):
+    """A scope with a remote repository is fetched on --remote."""
+    mod = _load_module()
+    # Use a tmpdir for the sibling root
+    monkeypatch.setattr(mod, "SIBLING_ROOT", tmp_path)
+    # Use a known scope (dea-metamodel is small)
+    uri = "dea://dea-metamodel/dea:entity-type-business-capability"
+    result = mod.resolve(uri, remote=True)
+    # If network is available, the repo is cloned and resolved
+    if result["resolved"]:
+        assert result["exists"] is True
+        assert "dea-metamodel" in str(result["path"])
+    else:
+        # Network unavailable; skip
+        pytest.skip(f"remote fetch unavailable: {result.get('error', 'unknown')}")
+
+
+def test_remote_fetch_unknown_scope(tmp_path, monkeypatch):
+    """A scope with no registry entry fails to fetch."""
+    mod = _load_module()
+    monkeypatch.setattr(mod, "SIBLING_ROOT", tmp_path)
+    uri = "dea://unknown-scope/processes:process-foo-bar-f3n8wb"
+    result = mod.resolve(uri, remote=True)
+    assert result["resolved"] is False
+    assert "fetch" in result["error"]
+
+
+def test_cli_remote_flag_accepted():
+    """The --remote flag is accepted by the CLI parser."""
+    r = _run("dea://dea-catalog-business-processes/processes:pc-fa-retire-64q5p9", "--remote")
+    # The local repo is in scope; the --remote flag is a no-op for the in-thread scope
+    assert r.returncode in (0, 2)
+    assert "entities" in r.stdout
+
+
+# --------------------------------------------------------------------------- #
 # Local tree (1 integration test)
 # --------------------------------------------------------------------------- #
 

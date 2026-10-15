@@ -6,6 +6,10 @@ All notable changes to this repository are documented here. Format follows
 
 ## [Unreleased]
 
+### CR-BP-129: dea:// URI Remote Resolver (T9.5)
+
+T9.5 follow-on to the Entity System institutionalisation. Extends `scripts/dea_uri_resolver.py` (from CR-BP-128) with a new `_fetch_remote_repo` function and `--remote` CLI flag. When the local clone is absent, the resolver clones the catalog repository from GitHub (shallow clone, --depth 1) and resolves the URI against the freshly-cloned repo. The cloned repo lands at `$SIBLING_ROOT/{repo}` (default: `/home/hermes/Projects/dea-sibling-check/{repo}`). New 3 tests (total 23) cover: known scope remote fetch; unknown scope remote failure; CLI flag acceptance. The remote-fetch is a one-shot clone; ongoing sync is a T9.7 follow-on. D-004 clean. 118a/118b/118c/123/124/125/126/127/128 gates remain CONFORMANT. Out-of-scope follow-ons: T9.2 IANA submission; T9.4 Permanent status; T9.6 web resolver (HTTP API); T9.7 sync tool.
+
 ### CR-BP-128: dea:// URI Resolver CLI Tool (T9.3)
 
 T9.3 follow-on to the Entity System institutionalisation. New `scripts/dea_uri_resolver.py` (~250 lines) - the reference implementation of the resolution algorithm from CR-BP-127 §8. The CLI resolves a `dea://` URI to a file path on disk, supports legacy `dea:` ids via the migration id map (CR-BP-mv1; 3640 lines), and works across the in-thread repo + the 11 sibling repos. CLI modes: default (print path), `--exists` (exit code), `--fetch` (print contents), `--list` (all scopes), `--resolve` (path + canonical URI). The slug computation matches the live tree's directory naming convention (descriptor only, no hash). New `tests/test_dea_uri_resolver.py` with 20 tests (5 URI parsing, 4 id rest splitting, 3 registry + migration map, 5 resolution, 3 CLI; all pass). D-004 clean. 118a/118b/118c/123/124/125/126/127 gates remain CONFORMANT. Out-of-scope follow-ons: T9.2 IANA submission; T9.4 Permanent status; T9.5 remote-fetcher (git clone); T9.6 web resolver (HTTP API).
