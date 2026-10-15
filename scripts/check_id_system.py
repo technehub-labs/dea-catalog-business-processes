@@ -80,8 +80,19 @@ def _content_hash(text: str) -> str:
 
 
 # IDM-001: id regex matches org-wide form
+# Corrected pattern (per CR-BP-123 + CR-BP-126): the original
+# `[a-z]{2,3}` requirement for the domain code was too strict and
+# excluded BP records with long descriptors (e.g.
+# `process-manage-customer-relationship` is 6 chars). The corrected
+# form `(-[a-z]+){1,4}` matches all 5 type families:
+#   - process- (1 segment)        e.g. `processes:process-foo-bar-baz`
+#   - pc-     (1 segment)        e.g. `processes:pc-fa-retire`
+#   - group-  (1 segment)        e.g. `processes:group-sd-improve`
+#   - activity- (1 segment)      e.g. `processes:activity-sd-improve`
+#   - task-   (1 segment)        e.g. `processes:task-sd-improve`
+#   - long-descriptor BP         e.g. `processes:process-manage-customer-relationship`
 ID_PATTERN = re.compile(
-    r"^[a-z]+:[a-z]+-[a-z]{2,3}-[a-z]+(-[a-z]+)*-[a-z2-9]{6}$"
+    r"^[a-z]+:[a-z]+(-[a-z]+){1,4}-[a-z2-9]{6}$"
 )
 
 
@@ -104,7 +115,7 @@ def _check_idm003(record: dict, id_map: dict[str, str], path: Path) -> list[str]
     def check_refs(obj, path_str=""):
         if isinstance(obj, str):
             if obj.startswith("processes:"):
-                # Embedded form: "<id> (prose...)" — resolve the leading id token
+                # Embedded form: "<id> (prose...)" - resolve the leading id token
                 token = obj.split(" ", 1)[0].rstrip(":")
                 if token not in id_map:
                     errors.append(f"IDM-003: unresolved reference in {record.get('id', '?')} at {path_str}: {token}")
