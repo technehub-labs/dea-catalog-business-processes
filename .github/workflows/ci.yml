@@ -356,6 +356,17 @@ jobs:
         # data-driven from reconciliation/prose-fields.yaml.
         run: python scripts/check_prose_authorship.py --strict
 
+      - name: Run Entity System gate (CR-BP-123; ES-001..ES-005)
+        if: steps.check.outputs.skip != 'true'
+        # The 5-rule umbrella gate per the Conformance Standard
+        # (CR-BP-122 §5): ES-001 Identity, ES-002 Entity Contract,
+        # ES-003 Relationship, ES-004 Lifecycle, ES-005 Conformance
+        # Umbrella. Data-driven from
+        # reconciliation/entity-system-registry.yaml. Advisory in
+        # Stage 3-4 (this PR); promoted to blocking in Stage 6
+        # (CR-BP-125).
+        run: python scripts/check_entity_system.py --strict
+
       - name: Run ID System coherence gate (CR-BP-mv1; IDM-008, PR-scoped)
         if: steps.check.outputs.skip != 'true'
         run: |
