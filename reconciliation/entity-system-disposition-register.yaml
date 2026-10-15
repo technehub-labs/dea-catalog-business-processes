@@ -1,0 +1,116 @@
+# Entity System Disposition Register (CR-BP-124; per the Implementation Plan §1)
+# Per-record disposition for the entity-system gate's advisory findings
+# (per CR-BP-123 §3.1 ES-001..ES-005). The gate is advisory in Stage 3-4
+# (CR-BP-123) and Stage 5 (CR-BP-124); the disposition register documents
+# the per-finding disposition so the gate can be promoted to blocking
+# in Stage 6 (CR-BP-125) without false-positive churn.
+#
+# Per EGV-012 (Legacy Reconciliation): no bulk renames; every disposition
+# is per-record. The disposition is one of:
+#   grandfathered        - the record predates the entity-system standard;
+#                          the rule does not apply to historical records
+#   admit-with-override   - the record is admitted with an exception;
+#                          the carrier CR is the audit anchor
+#   require-migration    - the record needs a follow-on migration CR
+#   retire               - the record is removed from active use; the
+#                          record remains for historical traceability
+#   accept-residual      - the record is admitted; the missing field or
+#                          non-canonical shape is a documented backward-
+#                          incompatibility; new records MUST conform
+#
+# The disposition is keyed by (rule, record_id_pattern). Class-level
+# dispositions apply to all records matching the pattern; record-level
+# dispositions override the class-level disposition for the specific
+# record.
+
+# ---------------------------------------------------------------------------- #
+# Class-level dispositions (the bulk of the ~8700 advisory findings)
+# ---------------------------------------------------------------------------- #
+
+class_dispositions:
+  # ES-002: missing required envelope field on Process records
+  # The ~8700 findings are mostly Process records missing `definition`,
+  # `lifecycle`, or `provenance`. These are admitted records that predate
+  # the entity-system standard; the missing fields are documented
+  # backward-incompatibilities. Future records MUST conform (the gate is
+  # promoted to blocking in Stage 6).
+  - rule: ES-002
+    pattern: "processes:process-**"
+    field: "*"
+    disposition: accept-residual
+    rationale: |
+      Admitted BP / ProcessGroup / Activity / Task records that predate
+      the entity-system standard. The missing envelope fields (definition,
+      lifecycle, provenance) are documented backward-incompatibilities.
+      Future records (post-CR-BP-125) MUST satisfy the envelope; the
+      disposition is per-record-by-omission (a record's absence from this
+      register is the audit signal that it is conformant).
+    carrier: CR-BP-124
+    reviewed_by: eaojnr
+    expiry: "2027-12-31"  # annual review; the disposition may be tightened
+
+  # ES-002: missing required envelope field on ProcessContext records
+  # PC records use the slim profile (id + name). Most PC records are
+  # CONFORMANT under the slim profile; the few findings are for PC
+  # records missing one of id or name. These are pre-admission records
+  # (lifecycle_status: candidate) that have not yet been finalized.
+  - rule: ES-002
+    pattern: "processes:pc-**"
+    field: "*"
+    disposition: grandfathered
+    rationale: |
+      ProcessContext records use the slim profile (id + name only).
+      Pre-admission PC records (lifecycle_status: candidate) may not
+      have both id and name yet; the disposition is grandfathered
+      until the cell is admitted (after which the slim profile
+      applies uniformly).
+    carrier: CR-BP-124
+    reviewed_by: eaojnr
+    expiry: "2027-12-31"
+
+  # ES-003: non-canonical relationship types
+  # Records with `relationship_type: serves` (and other pre-entity-
+  # system relationship types) are valid per the existing BP-SEM-
+  # 001..014 rules. The disposition is accept-residual: the
+  # relationship vocabulary predates the entity-system standard;
+  # future records MUST use the canonical types.
+  - rule: ES-003
+    pattern: "**"
+    field: "*"
+    disposition: accept-residual
+    rationale: |
+      Records with non-canonical relationship types (e.g. `serves`,
+      `governs`, `depends-on`) are valid per the existing BP-SEM-001..014
+      and related pre-entity-system rules. The relationship vocabulary
+      predates CR-BP-122; the disposition is accept-residual until
+      the vocabulary is migrated in a follow-on CR (T8 of the umbrella
+      programme: cross-catalog reference resolution).
+    carrier: CR-BP-124
+    reviewed_by: eaojnr
+    expiry: "2027-12-31"
+
+  # ES-004: ProcessContext records with `lifecycle_status: candidate`
+  # PC records don't have a lifecycle state machine; the slim profile
+  # exempts them from ES-004. The `lifecycle_status: candidate` value
+  # is the admission status, not a state-machine value.
+  - rule: ES-004
+    pattern: "processes:pc-**"
+    field: "*"
+    disposition: grandfathered
+    rationale: |
+      ProcessContext records don't have a lifecycle state machine
+      (lifecycle_status is the admission status, not a state-machine
+      value). The slim profile exempts them from ES-004.
+    carrier: CR-BP-124
+    reviewed_by: eaojnr
+    expiry: "permanent"
+
+# ---------------------------------------------------------------------------- #
+# Per-record dispositions (specific records that need individual treatment)
+# ---------------------------------------------------------------------------- #
+
+# None at this time. The class-level dispositions cover the ~8700
+# advisory findings. Per-record dispositions are added as specific
+# records are migrated (Stage 5 follow-ons; T8 cross-catalog
+# reconciliation).
+record_dispositions: []
