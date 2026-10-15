@@ -1,0 +1,93 @@
+# Cross-Catalog Resolution Registry (CR-BP-124; per IS-006 + RS-004)
+# Maps every cross-catalog relationship's identity_scope to a
+# declaration. The resolution mechanism: given a (scope, target_id)
+# pair, the target catalog owns the canonical record; the reference
+# is RESOLVED iff the target_id exists in the declared scope.
+#
+# Per CR-012 EGV-006 (Relationship and Reference Integrity): references
+# SHALL resolve to valid entities within the declared identity scope.
+# A reference whose target id does not exist in the declared scope
+# is a NON-CONFORMANT finding.
+
+# ---------------------------------------------------------------------------- #
+# Per-catalog identity-scope declarations
+# ---------------------------------------------------------------------------- #
+
+catalogs:
+  - scope: dea-catalog-business-capabilities
+    repository: technehub-labs/dea-catalog-business-capabilities
+    id_format: "capabilities:<token>-<base32hash>"  # post-CR-BC-04
+    legacy_id_format: "dea:capability-*"  # CR-BC-04 migration
+    relationship_types:  # what THIS catalog accepts as targets from THIS catalog
+      composes: []      # BC records are not composed
+      realizes: []      # BP records (in this catalog) realize BC records
+      specializes: []   # BC records don't specialize in this catalog
+    inverse_relationship_types:  # what THIS catalog emits as targets to other catalogs
+      composes: []
+      realizes: true    # BC records are realized by BP records (in other catalogs)
+      specializes: []
+
+  - scope: dea-catalog-business-objects
+    repository: technehub-labs/dea-catalog-business-objects
+    id_format: "dea:object-*"  # legacy; not yet migrated
+    legacy_id_format: "dea:object-*"
+    relationship_types:
+      composes: []
+      realizes: []
+      specializes: []
+
+  - scope: dea-catalog-organizational-units
+    repository: technehub-labs/dea-catalog-organizational-units
+    id_format: "dea:ou-*"  # legacy; not yet migrated
+    legacy_id_format: "dea:ou-*"
+    relationship_types:
+      composes: []
+      realizes: []
+      specializes: []
+
+  - scope: dea-catalog-actors
+    repository: technehub-labs/dea-catalog-actors
+    id_format: "dea:actor-*"  # legacy; not yet migrated
+    legacy_id_format: "dea:actor-*"
+    relationship_types:
+      composes: []
+      realizes: []
+      specializes: []
+
+  - scope: dea-catalog-stakeholders
+    repository: technehub-labs/dea-catalog-stakeholders
+    id_format: "dea:stakeholder-*"  # legacy; not yet migrated
+    legacy_id_format: "dea:stakeholder-*"
+    relationship_types:
+      composes: []
+      realizes: []
+      specializes: []
+
+  - scope: dea-metamodel
+    repository: technehub-labs/dea-metamodel
+    id_format: "dea:*"  # canonical; the metamodel's identifier space
+    legacy_id_format: "dea:*"
+    relationship_types:
+      composes: []
+      realizes: []
+      specializes: []
+
+  - scope: dea-architecture-framework
+    repository: technehub-labs/dea-architecture-framework
+    id_format: "dea:*"  # the architecture framework's identifier space
+    legacy_id_format: "dea:*"
+    relationship_types:
+      composes: []
+      realizes: []
+      specializes: []
+
+# ---------------------------------------------------------------------------- #
+# Resolution rules
+# ---------------------------------------------------------------------------- #
+
+rules:
+  - "A cross-catalog relationship entry SHALL carry an `identity_scope` declaration (per IS-006 + RS-004)."
+  - "The target id is RESOLVED iff a record with that id exists in the declared scope's repository (per EGV-006)."
+  - "A reference whose target id does not resolve in the declared scope is a NON-CONFORMANT finding (per the entity-system gate ES-003)."
+  - "The cross-catalog URI form (U-01 in the Gap Register) is deferred to T8 of the umbrella programme; today's references use target id + scope."
+  - "The scope declaration is the SAME string used in the metamodel-pointer.yaml; the two registries cross-reference each other."
