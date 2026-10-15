@@ -6,6 +6,10 @@ All notable changes to this repository are documented here. Format follows
 
 ## [Unreleased]
 
+### CR-BP-131: dea:// URI Sync Tool (T9.7)
+
+T9.7 follow-on. New `scripts/dea_uri_sync.py` (~220 lines) - the operational sync tool that clones + pulls catalog repositories across all known scopes. `clone_scope(scope, registries, depth=1)` clones a scope's repo from GitHub if absent (shallow by default). `pull_scope(scope, registries, ref=None)` fetches + pulls (and optionally checks out a ref). `sync_scope(scope, registries, depth, ref)` is the dispatcher (clone if absent, else pull). CLI modes: `<scope>` (sync a specific scope), `--all` (sync all known scopes), `--ref <ref>` (checkout a ref), `--depth <n>` (clone depth), `--list` (scopes with local/remote-only status). The in-thread scope (`dea-catalog-business-processes`) is skipped. New `tests/test_dea_uri_sync.py` with 14 tests (2 registry, 4 git operations, 2 pull_scope, 2 sync integration, 4 CLI; all pass). D-004 clean. 118a/118b/118c/123/124/125/126/127/128/129/130 gates remain CONFORMANT. Out-of-scope follow-ons: T9.2 IANA submission; T9.4 Permanent status; T9.8 production WSGI/ASGI server; T9.9 sync daemon.
+
 ### CR-BP-130: dea:// URI Web Resolver HTTP API (T9.6)
 
 T9.6 follow-on. New `scripts/dea_uri_web.py` (~180 lines) - HTTP server exposing the dea:// URI resolver over HTTP. Uses stdlib `http.server` (no Flask/Quart dependency). 5 endpoints: `GET /health` (status + version), `GET /list` (all scopes), `GET /resolve?uri=...` (resolution JSON), `GET /fetch?uri=...` (file contents), `GET /exists?uri=...` (200/404). CORS enabled (`Access-Control-Allow-Origin: *`) for browser-based usage. Threading server (handles concurrent requests). Defaults: `127.0.0.1:8080`. New `tests/test_dea_uri_web.py` with 12 tests (3 health/list/CORS, 4 resolve, 2 fetch, 2 exists, 1 default 404; all pass). D-004 clean. 118a/118b/118c/123/124/125/126/127/128/129 gates remain CONFORMANT. Out-of-scope follow-ons: T9.2 IANA submission; T9.4 Permanent status; T9.7 sync tool; T9.8 production WSGI/ASGI server.
