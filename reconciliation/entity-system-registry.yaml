@@ -1,0 +1,154 @@
+# Entity System Registry (CR-BP-123; per the Conformance Standard CS-011)
+# Data-driven configuration for the entity-system gate. Changing the
+# gate's behavior is a YAML edit, not a code change.
+
+# ES-002: Entity Contract (the common envelope + type-specific profiles)
+envelope:
+  file_globs:
+    - "entities/v1-alpha/**/*.yaml"
+    - "contexts/v1-alpha/**/*.yaml"
+  type_field: type
+  # Per-type profiles. The common envelope is the union of all
+  # required fields across the active types; type-specific profiles
+  # add / substitute fields appropriate to the type's purpose.
+  profiles:
+    Process:
+      required_fields: [id, type, name, definition, lifecycle, provenance]
+      lifecycle_state_field: lifecycle.status
+      provenance_change_history_field: provenance.change_history
+    ProcessGroup:
+      required_fields: [id, type, name, definition, lifecycle, provenance]
+      lifecycle_state_field: lifecycle.status
+      provenance_change_history_field: provenance.change_history
+    Activity:
+      required_fields: [id, type, name, definition, lifecycle, provenance]
+      lifecycle_state_field: lifecycle.status
+      provenance_change_history_field: provenance.change_history
+    Task:
+      required_fields: [id, type, name, definition, lifecycle, provenance]
+      lifecycle_state_field: lifecycle.status
+      provenance_change_history_field: provenance.change_history
+    ProcessScope:
+      required_fields: [id, type, name, definition, lifecycle, provenance]
+      lifecycle_state_field: lifecycle.status
+      provenance_change_history_field: provenance.change_history
+    # ProcessContext is a CELL REGISTER (per CR-BP-02), not a process
+    # entity. It uses a slim profile: no `type` field (the cell is
+    # identified by domain + lifecycle_stage), no definition (the
+    # cell charter is the canonical meaning), no lifecycle state
+    # machine (lifecycle_status is the admission status, not a
+    # state-machine value), no provenance.change_history (PC records
+    # don't carry a CR-based change history in the same form). Two
+    # PC record shapes coexist in the live tree: the new shape
+    # (process_context + cell_charter blocks) and the legacy shape
+    # (top-level domain + lifecycle_stage + scope + outcomes). The
+    # slim profile accepts both.
+    ProcessContext:
+      required_fields: [id, name]
+
+# ES-001: Identity
+identity:
+  id_field: id
+  canonical_prefix: "processes:"
+  # Canonical pattern (corrected IDM-001; matches all 5 type
+  # families: process-/pc-/group-/activity-/task- with 1-4 segments
+  # before the hash). The original IDM-001 pattern required the
+  # domain code to be 2-3 chars, which excludes BP records with
+  # long descriptors (e.g. "process-manage-customer-relationship").
+  # This corrected form is documented in CR-BP-123; the IDM-001
+  # pattern fix is a follow-on in T7 / T8 of the umbrella programme.
+  canonical_pattern: "^[a-z]+:[a-z]+(-[a-z]+){1,4}-[a-z2-9]{6}$"
+  legacy_prefix: "dea:"
+  legacy_pattern: "^dea:[a-z]+-[a-z0-9-]+$"
+  legacy_migration_map: "reconciliation/migration-id-map.yaml"
+
+# ES-003: Relationship
+relationships:
+  field: relationships
+  canonical_types:
+    - composes
+    - realizes
+    - specializes
+  forbidden_types:
+    - part-of
+  cross_catalog_field: identity_scope
+  type_constraints:
+    composes:
+      source_types:
+        - ProcessGroup
+        - ProcessContext
+      target_types:
+        - Process
+        - ProcessGroup
+    realizes:
+      source_types:
+        - Process
+      target_identity_scopes:
+        - dea-catalog-business-capabilities
+    specializes:
+      source_types:
+        - Process
+      target_types:
+        - Process
+
+# ES-004: Lifecycle (applies to types with a lifecycle_state_field)
+lifecycle:
+  field: lifecycle
+  status_field: status
+  valid_states:
+    - proposed
+    - admitted
+    - deprecated
+    - retired
+    - superseded
+  terminal_states:
+    - superseded
+    - retired
+  transition_table:
+    proposed:
+      - admitted
+    admitted:
+      - deprecated
+      - retired
+      - superseded
+    deprecated:
+      - retired
+    superseded: []
+    retired: []
+  provenance_field: provenance.change_history
+  provenance_required_keys:
+    - cr
+    - date
+    - change
+
+# ES-005: Per-type gate delegation (advisory in Stage 3-4; per-type
+# gate verdicts are delegated to the per-type gates in the rollup).
+per_type_gates:
+  - type: Process
+    gate: scripts/check_process_semantics.py
+    args: "--strict"
+  - type: ProcessContext
+    gate: scripts/check_process_context.py
+    args: "--strict"
+  - type: ProcessGroup
+    gate: scripts/check_process_group.py
+    args: "--strict"
+  - type: Activity
+    gate: scripts/check_activity_model.py
+    args: "--strict"
+  - type: Task
+    gate: scripts/check_task_model.py
+    args: ""
+  - type: ProcessScope
+    gate: scripts/check_process_scope.py
+    args: ""
+
+# CS-008 / CS-009: Exception mechanism (the EGV-011 escape hatch)
+exceptions:
+  registry_path: reconciliation/normalization.yaml
+  verdict_key: verdict
+  verdict_value: review-retained
+  cr_key: cr
+  expiry_key: expiry
+  reviewer_key: reviewed_by
+  excepted_rules_key: excepted_rules
