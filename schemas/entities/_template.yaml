@@ -1,0 +1,75 @@
+# Common Entity Envelope Template (CR-BP-125 Stage 6 deliverable)
+#
+# This is the worked example of the common entity envelope per the
+# Entity Contract Standard (EC-001..EC-004). Every entity in
+# dea-catalog-processes MUST conform to this envelope (with
+# type-specific extensions for each of the 5 entity types).
+#
+# Schema dispatch:
+#   Process          -> schemas/entities/process.schema.json
+#   ProcessGroup     -> schemas/entities/process-group.schema.json
+#   ProcessContext   -> schemas/entities/process-context.schema.json
+#   Activity         -> schemas/entities/activity.schema.json
+#   Task             -> schemas/entities/task.schema.json
+#   ProcessScope     -> schemas/entities/process-scope.schema.json (dormant-by-design)
+#
+# Identity:
+#   Canonical: processes:<token>-<descriptor>-<base32hash>  (per IDM-001)
+#   Corrected pattern: ^[a-z]+:[a-z]+(-[a-z]+){1,4}-[a-z2-9]{6}$
+#   Legacy: dea:<token>-<descriptor>  (grandfathered per EGV-012)
+#
+# Cross-references: CR-012 EGV-005, CR-BP-122 §2, docs/governance/entity-system.md
+
+id: processes:process-<token>-<descriptor>-<base32hash>
+type: Process  # one of: Process, ProcessGroup, ProcessContext, Activity, Task, ProcessScope
+name: <preferred-human-readable-name>
+definition: |
+  <normative-meaning>  (required for all 5 types except ProcessContext)
+description: |
+  <optional-explanatory-text>
+
+# Type-specific required fields (per the type's profile):
+#   Process: process_intent, process_type, process_specialization, ecf_conformance
+#   ProcessGroup: group_kind, composes[] (cardinality >= 1)
+#   ProcessContext: process_context block, cell_charter block
+#   Activity: activity_kind, execution_model
+#   Task: task_kind, inputs[], outputs[]
+
+# Relationships (3 stored types; 1 forbidden)
+relationships:
+  - relationship_type: composes  # or: realizes, specializes (NEVER: part-of)
+    target: <id>
+    # identity_scope: <catalog-namespace>  # required for cross-catalog references
+  # - relationship_type: realizes
+  #   target: capabilities:capability-foo-bar-m6fmyx
+  #   identity_scope: dea-catalog-business-capabilities
+
+# Classifications (ECF coordinate + process axes)
+classifications:
+  - process_type: operational  # Mintzberg 5-value
+  - process_intent: deliver     # purpose-oriented 7-value
+  - ecf_coordinate:
+      domain: customer-relationship
+      stage: operate
+      identifier: ecf:customer-relationship.operate
+
+# Provenance (per EGV-008 + CR-118)
+provenance:
+  admitted_by_cr: <CR-BP-NNN>
+  change_history:
+    - cr: <CR-BP-NNN>
+      date: '2026-08-15'
+      change: initial admission
+    # - cr: <CR-BP-NNN>
+    #   date: '2026-09-15'
+    #   change: folder rename (CR-BP-117c C-1)
+  # The authorship-bearing fields (per CR-118) are in the metadata
+  # header (audit.author) and CONTRIBUTING.md (commissioning authority).
+
+# Lifecycle (per LS-001..LS-007)
+lifecycle:
+  status: admitted  # one of: proposed, admitted, deprecated, retired, superseded
+  admitted_at: '2026-08-15'
+  admitted_by: <CR-BP-NNN>
+  # deprecated_at: '2026-09-15'  # optional
+  # superseded_at: '2026-10-01'  # optional; the record is terminal

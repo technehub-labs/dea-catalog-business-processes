@@ -1,9 +1,11 @@
 # Contributing to `dea-catalog-processes`
 
-Minimal. The cardinal rules govern the only contribution shape matters
-for this repository.
+Minimal. The cardinal rules (in `docs/governance/cardinal-rules.md`)
+govern the contribution shape for this repository.
 
-## Authorship
+## Cardinal rules (R1 / R2 / R3)
+
+### R1. Authorship (per CR-BP-118 / EGV-008)
 
 Every authorship-bearing field in this repository must carry
 `Emmanuel A. Otchere` (or, for org-level CFF entries, `TechNeHub Labs`).
