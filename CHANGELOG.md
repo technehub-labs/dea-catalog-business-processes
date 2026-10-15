@@ -6,6 +6,10 @@ All notable changes to this repository are documented here. Format follows
 
 ## [Unreleased]
 
+### CR-BP-130: dea:// URI Web Resolver HTTP API (T9.6)
+
+T9.6 follow-on. New `scripts/dea_uri_web.py` (~180 lines) - HTTP server exposing the dea:// URI resolver over HTTP. Uses stdlib `http.server` (no Flask/Quart dependency). 5 endpoints: `GET /health` (status + version), `GET /list` (all scopes), `GET /resolve?uri=...` (resolution JSON), `GET /fetch?uri=...` (file contents), `GET /exists?uri=...` (200/404). CORS enabled (`Access-Control-Allow-Origin: *`) for browser-based usage. Threading server (handles concurrent requests). Defaults: `127.0.0.1:8080`. New `tests/test_dea_uri_web.py` with 12 tests (3 health/list/CORS, 4 resolve, 2 fetch, 2 exists, 1 default 404; all pass). D-004 clean. 118a/118b/118c/123/124/125/126/127/128/129 gates remain CONFORMANT. Out-of-scope follow-ons: T9.2 IANA submission; T9.4 Permanent status; T9.7 sync tool; T9.8 production WSGI/ASGI server.
+
 ### CR-BP-129: dea:// URI Remote Resolver (T9.5)
 
 T9.5 follow-on to the Entity System institutionalisation. Extends `scripts/dea_uri_resolver.py` (from CR-BP-128) with a new `_fetch_remote_repo` function and `--remote` CLI flag. When the local clone is absent, the resolver clones the catalog repository from GitHub (shallow clone, --depth 1) and resolves the URI against the freshly-cloned repo. The cloned repo lands at `$SIBLING_ROOT/{repo}` (default: `/home/hermes/Projects/dea-sibling-check/{repo}`). New 3 tests (total 23) cover: known scope remote fetch; unknown scope remote failure; CLI flag acceptance. The remote-fetch is a one-shot clone; ongoing sync is a T9.7 follow-on. D-004 clean. 118a/118b/118c/123/124/125/126/127/128 gates remain CONFORMANT. Out-of-scope follow-ons: T9.2 IANA submission; T9.4 Permanent status; T9.6 web resolver (HTTP API); T9.7 sync tool.
