@@ -24,11 +24,29 @@ This appendix is the audit trail for what is being withdrawn. Captured into this
 
 ### 2.1 v0.1.0 (cut 2026-09-09, tag SHA + GitHub Release notes)
 
-To be filled in by the first execution step from the live `gh release view v0.1.0 --repo technehub-labs/dea-catalog-business-processes --json ...` and `git ls-remote origin --tags` outputs.
+- **Tag**: `v0.1.0` (annotated)
+- **Tag SHA**: `3abe3bb13e1d895d028b23d68efaee37dc30a573` (dereferences to `f284242ff447fa2d3acbfd858c8270df383e0b45`)
+- **GitHub Release**: `https://github.com/technehub-labs/dea-catalog-business-processes/releases/tag/v0.1.0`
+- **Published**: 2026-09-09T12:38:35Z
+- **Body (excerpt)**: "First tagged release. Closes the CR-BP-15 Phase 20 governance gate (CR-BP-25, 2026-09-09) and freezes the post-landing-programme snapshot. The catalogue at this tag is the artefact downstream may pin to: 196/196 records at CR-BP-16 conformance level L4; 0 findings (blocking and advisory); register audit 35 landed / 0 ratified-pending-landing / 14 backlog-deferred; dispositions 107 RETAIN / 18 RECLASSIFY / 1 MOVE. Carrier: CR-BP-26."
+- **Carrier CR**: `change-requests/CR-BP-26-v010-release-cut.md`
+- **Recovery**: The tag + GitHub Release will be deleted by this CR. The full release body is preserved in the deletion log at `docs/release-history-archive.md` §v0.1.0.
 
 ### 2.2 v0.3.0 (cut 2026-09-12, tag SHA + GitHub Release notes)
 
-Same capture procedure as 2.1.
+- **Tag**: `v0.3.0` (annotated)
+- **Tag SHA**: `7e68e42d25daca2ff78d9a2666a6f22ac7cb6230` (dereferences to `3280e1320f43639e41b6056050bf053d038a3161`)
+- **GitHub Release**: `https://github.com/technehub-labs/dea-catalog-business-processes/releases/tag/v0.3.0`
+- **Published**: 2026-09-13T07:54:32Z
+- **Body (excerpt)**: "Third tagged release. Captures the entire post-v0.1.0 work as a single versioned snapshot: the ECF v2.3.0/v2.4.0/v2.5.0 cascade (CR-BP-17, -18, -23), the BP-32/33/34 tranche plan (CR-BP-32, -33, -34a-d, -35, -36, -37, -38), the XRI asset + gate promotion (CR-BP-37 + CR-BP-40), the CHANGELOG + README reconciliation (CR-BP-39), and the carrier CRs (CR-BP-30, -31). The catalogue at v0.3.0 is materially different from v0.1.0 in every dimension that downstream consumers care about."
+- **Carrier CR**: `change-requests/CR-BP-30-release-package.md`
+- **Recovery**: The tag + GitHub Release will be deleted by this CR. The full release body is preserved in the deletion log at `docs/release-history-archive.md` §v0.3.0.
+
+### 2.3 Cross-repo dependency sweep (executed 2026-10-15)
+
+- `gh search code "dea-catalog-business-processes@v0.1.0" --owner technehub-labs`: **0 hits**
+- `gh search code "dea-catalog-business-processes@v0.3.0" --owner technehub-labs`: **0 hits**
+- No sibling repo pins either cut. The reset is safe to execute.
 
 ### 2.3 v0.2.0 (abandoned cut, 2026-09-09)
 
