@@ -31,8 +31,6 @@ from __future__ import annotations
 
 import argparse
 import re
-import shutil
-import subprocess
 import sys
 from pathlib import Path
 from typing import Optional
@@ -149,32 +147,6 @@ def _local_repo_path(scope: str, registries: dict) -> Optional[Path]:
     return None
 
 
-def _fetch_remote_repo(scope: str, registries: dict, depth: int = 1) -> Optional[Path]:
-    """Clone the catalog repository for a scope from GitHub.
-
-    Returns the local path on success, None on failure. The clone
-    is shallow (--depth 1) by default for speed; pass a higher
-    depth for full history.
-    """
-    entry = registries.get(scope, {})
-    repo = entry.get("repository", "")
-    if not repo:
-        return None
-    target = SIBLING_ROOT / repo
-    if target.exists():
-        return target
-    SIBLING_ROOT.mkdir(parents=True, exist_ok=True)
-    url = f"https://github.com/{repo}.git"
-    cmd = ["git", "clone", "--depth", str(depth), url, str(target)]
-    try:
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
-        if result.returncode == 0:
-            return target
-    except (subprocess.TimeoutExpired, FileNotFoundError):
-        pass
-    return None
-
-
 def _resolve_path(entity_id: str, repo_path: Path) -> Optional[Path]:
     """Compute the file path for a canonical entity id."""
     m = CANONICAL_ID_PATTERN.match(entity_id)
@@ -206,12 +178,8 @@ def _resolve_legacy_path(legacy_id: str, repo_path: Path, migration_map: dict) -
     return _resolve_path(canonical_id, repo_path)
 
 
-def resolve(uri: str, remote: bool = False) -> dict:
-    """Resolve a dea:// URI to a file path. Returns a result dict.
-
-    If remote=True, fetches the remote repository if the local
-    clone is absent.
-    """
+def resolve(uri: str) -> dict:
+    """Resolve a dea:// URI to a file path. Returns a result dict."""
     parsed = parse_uri(uri)
     if not parsed:
         return {"resolved": False, "error": f"malformed URI: {uri}"}
@@ -222,15 +190,8 @@ def resolve(uri: str, remote: bool = False) -> dict:
     repo_path = _local_repo_path(scope, registries)
 
     if repo_path is None:
-        if remote:
-            # Try to fetch the remote repository
-            repo_path = _fetch_remote_repo(scope, registries)
-            if repo_path is None:
-                return {"resolved": False, "error": f"failed to fetch remote: {scope}",
-                        "known_scopes": sorted(list(registries.keys()) + list(DEFAULT_SCOPE_PATHS.keys()))}
-        else:
-            return {"resolved": False, "error": f"unknown scope (not in local clone): {scope}",
-                    "known_scopes": sorted(list(registries.keys()) + list(DEFAULT_SCOPE_PATHS.keys()))}
+        return {"resolved": False, "error": f"unknown scope: {scope}",
+                "known_scopes": sorted(list(registries.keys()) + list(DEFAULT_SCOPE_PATHS.keys()))}
 
     if parsed["is_legacy"]:
         migration_map = _load_migration_map()
@@ -269,8 +230,6 @@ def main(argv: list) -> int:
                         help="List all known scopes and exit")
     parser.add_argument("--resolve", action="store_true",
                         help="Print the resolved path AND the canonical URI form")
-    parser.add_argument("--remote", action="store_true",
-                        help="Fetch the remote repository if the local clone is absent")
     args = parser.parse_args(argv)
 
     if args.list:
@@ -286,7 +245,7 @@ def main(argv: list) -> int:
     if not args.uri:
         parser.error("uri is required (or use --list)")
 
-    result = resolve(args.uri, remote=args.remote)
+    result = resolve(args.uri)
     if not result["resolved"]:
         print(f"unresolvable: {result['error']}", file=sys.stderr)
         if "known_scopes" in result:
