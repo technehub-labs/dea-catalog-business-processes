@@ -4,10 +4,9 @@
 
 This document captures the **contribution-driven re-landscape
 mechanism**. A new process is not added directly to
-`entities/v_n_/`; instead, the contributor submits a **Process
-Contribution** to `contributions/processes/`, and the
-**CI contribution report workflow** generates a
-reclassification recommendation.
+`entities/vn/` (where n is a realease number); instead, the contributor
+submits a **Process Contribution** to `contributions/processes/`, and the
+**CI contribution report workflow** generates a reclassification recommendation.
 
 ## Why contribution-driven?
 
