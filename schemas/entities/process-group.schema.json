@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://technehub-labs.github.io/dea-catalog-processes/schemas/entities/process-group.schema.json",
   "title": "ProcessGroup",
-  "description": "Schema for Process Group (L1) entries in technehub-labs/dea-catalog-processes. CR-BP-12; downstream of CR-BP-11 (L1 Process Group discovery register) and CR-BP-04 (ID-family contract). A Process Group is a catalog-owned record type that organizes Business Process specializations within a Process Context (Domain x Lifecycle Stage cell). The Process Group is NOT a metamodel entity; it is catalog-owned and lives only in this catalog. The canonical containment direction is `L1 group --composes--> L2 process`; the inverse `part_of` is a derived view recorded on the L2 side for navigation. ID family: `dea:group-*` (CR-BP-04 §4).",
+  "description": "Schema for Process Group (L1) entries in technehub-labs/dea-catalog-processes. CR-BP-12; downstream of CR-BP-11 (L1 Process Group discovery register) and CR-BP-04 (ID-family contract). A Process Group is a catalog-owned record type that organizes Business Process specializations within a Process Context (Domain x Lifecycle Stage cell). The Process Group is NOT a metamodel entity; it is catalog-owned and lives only in this catalog. The canonical containment direction is `L1 group --composes--> L2 process`; the inverse `part_of` is a derived view recorded on the L2 side for navigation. ID family: `dea:group-*` (CR-BP-04 \u00a74).",
   "type": "object",
   "required": [
     "id",
@@ -27,7 +27,7 @@
     "id": {
       "type": "string",
       "pattern": "^processes:group-[a-z0-9-]+$",
-      "description": "Stable Process Group id. CR-BP-04 §4 family. Convention: dea:group-<kebab-name>. The id must be stable across renames of name/definition; renames go through the CR-programme."
+      "description": "Stable Process Group id. CR-BP-04 \u00a74 family. Convention: dea:group-<kebab-name>. The id must be stable across renames of name/definition; renames go through the CR-programme."
     },
     "name": {
       "type": "string",
@@ -47,16 +47,23 @@
     },
     "scope": {
       "type": "object",
-      "required": ["includes", "excludes"],
+      "required": [
+        "includes",
+        "excludes"
+      ],
       "properties": {
         "includes": {
           "type": "array",
-          "items": {"type": "string"},
+          "items": {
+            "type": "string"
+          },
           "description": "Explicitly included enterprise responsibilities."
         },
         "excludes": {
           "type": "array",
-          "items": {"type": "string"},
+          "items": {
+            "type": "string"
+          },
           "description": "Explicitly excluded responsibilities (belong in adjacent contexts or peer Process Groups)."
         }
       },
@@ -64,7 +71,9 @@
     },
     "outcomes": {
       "type": "array",
-      "items": {"type": "string"},
+      "items": {
+        "type": "string"
+      },
       "description": "Intended enterprise outcomes for this Process Group. The outcomes distinguish this Process Group from peer Process Groups in the same Process Context."
     },
     "composes": {
@@ -72,7 +81,11 @@
       "description": "Canonical containment relationships: every entry declares that this Process Group composes a Business Process specialization. Each entry conforms to the metamodel relationship-instance.json (source_id, target_id, relationship_type, plus optional direction, status, effective_from/to, asserted_by, rationale, evidence, provenance). PG-004 (target_id pattern) and PG-005 (target resolution) enforce.",
       "items": {
         "type": "object",
-        "required": ["source_id", "target_id", "relationship_type"],
+        "required": [
+          "source_id",
+          "target_id",
+          "relationship_type"
+        ],
         "properties": {
           "source_id": {
             "type": "string",
@@ -90,26 +103,65 @@
           },
           "direction": {
             "type": "string",
-            "enum": ["source-to-target"],
+            "enum": [
+              "source-to-target"
+            ],
             "default": "source-to-target"
           },
           "status": {
             "type": "string",
-            "enum": ["proposed", "planned", "active", "deprecated", "retired"],
+            "enum": [
+              "proposed",
+              "planned",
+              "active",
+              "deprecated",
+              "retired"
+            ],
             "default": "active"
           },
-          "effective_from": {"type": "string", "format": "date"},
-          "effective_to": {"type": "string", "format": "date"},
-          "asserted_by": {"type": "string"},
-          "rationale": {"type": "string", "maxLength": 1000},
-          "evidence": {"type": "string", "maxLength": 1000},
+          "effective_from": {
+            "type": "string",
+            "format": "date"
+          },
+          "effective_to": {
+            "type": "string",
+            "format": "date"
+          },
+          "asserted_by": {
+            "type": "string"
+          },
+          "rationale": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "evidence": {
+            "type": "string",
+            "maxLength": 1000
+          },
           "provenance": {
             "type": "object",
             "properties": {
-              "type": {"type": "string", "enum": ["architecture-review", "discovery", "assessment", "inference", "migration", "manual"]},
-              "reference": {"type": "string"},
-              "asserted_by": {"type": "string"},
-              "asserted_at": {"type": "string", "format": "date"}
+              "type": {
+                "type": "string",
+                "enum": [
+                  "architecture-review",
+                  "discovery",
+                  "assessment",
+                  "inference",
+                  "migration",
+                  "manual"
+                ]
+              },
+              "reference": {
+                "type": "string"
+              },
+              "asserted_by": {
+                "type": "string"
+              },
+              "asserted_at": {
+                "type": "string",
+                "format": "date"
+              }
             }
           }
         }
@@ -129,12 +181,23 @@
     },
     "status": {
       "type": "string",
-      "enum": ["candidate", "accepted", "deferred", "deprecated", "rejected"],
+      "enum": [
+        "candidate",
+        "accepted",
+        "deferred",
+        "deprecated",
+        "rejected"
+      ],
       "description": "Discovery / governance status (mirrors CR-BP-11 register disposition values)."
     },
     "lifecycle_status": {
       "type": "string",
-      "enum": ["candidate", "active", "deprecated", "retired"],
+      "enum": [
+        "candidate",
+        "active",
+        "deprecated",
+        "retired"
+      ],
       "description": "Catalog entry lifecycle. `active` requires at least one composes entry with status: active (PG-008)."
     },
     "version": {
@@ -146,19 +209,43 @@
       "description": "Optional: structured evidence supporting the Process Group definition.",
       "items": {
         "type": "object",
-        "required": ["source", "claim", "strength"],
+        "required": [
+          "source",
+          "claim",
+          "strength"
+        ],
         "properties": {
-          "source": {"type": "string"},
-          "claim": {"type": "string"},
-          "strength": {"type": "string", "enum": ["E0", "E1", "E2", "E3", "E4", "E5"]},
-          "url": {"type": "string", "format": "uri"}
+          "source": {
+            "type": "string"
+          },
+          "claim": {
+            "type": "string"
+          },
+          "strength": {
+            "type": "string",
+            "enum": [
+              "E0",
+              "E1",
+              "E2",
+              "E3",
+              "E4",
+              "E5"
+            ]
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          }
         }
       }
     },
     "grouping_basis": {
       "type": "object",
       "description": "Optional: explicit grouping basis declared by CR-BP-95. When present, PG-009 enforces structural integrity. Back-compat with pre-CR-BP-95 PG records: the field is OPTIONAL and existing records remain conformant.",
-      "required": ["type", "statement"],
+      "required": [
+        "type",
+        "statement"
+      ],
       "properties": {
         "type": {
           "type": "string",
@@ -183,7 +270,10 @@
     "membership_criteria": {
       "type": "object",
       "description": "Optional: explicit membership criteria declared by CR-BP-95. When present, PG-010 enforces structural integrity. Back-compat: OPTIONAL.",
-      "required": ["inclusion_test", "exclusion_test"],
+      "required": [
+        "inclusion_test",
+        "exclusion_test"
+      ],
       "properties": {
         "inclusion_test": {
           "type": "string",
@@ -204,14 +294,24 @@
       "properties": {
         "cross_context_overlap": {
           "type": "array",
-          "items": {"type": "string", "pattern": "^processes:pc-[a-z0-9-]+$"},
+          "items": {
+            "type": "string",
+            "pattern": "^processes:pc-[a-z0-9-]+$"
+          },
           "description": "Optional: explicit declaration of other Process Contexts this Process Group participates in via cross-context membership. PG-006 enforces intent vs. accident."
         },
-        "established_by": {"type": "string"},
-        "established_at": {"type": "string", "format": "date"},
+        "established_by": {
+          "type": "string"
+        },
+        "established_at": {
+          "type": "string",
+          "format": "date"
+        },
         "change_history": {
           "type": "array",
-          "items": {"type": "object"}
+          "items": {
+            "type": "object"
+          }
         }
       }
     },
@@ -220,27 +320,54 @@
       "description": "Optional: navigation links to related artifacts (documentation, change requests, research register). Same shape as in L2 entity entries.",
       "items": {
         "type": "object",
-        "required": ["rel", "href"],
+        "required": [
+          "rel",
+          "href"
+        ],
         "properties": {
-          "rel": {"type": "string"},
-          "href": {"type": "string"}
+          "rel": {
+            "type": "string"
+          },
+          "href": {
+            "type": "string"
+          }
         }
       }
     },
     "ecfConformance": {
       "type": "object",
-      "description": "Optional: ECF conformance posture. Process Groups inherit the catalog posture by default; only declare this block if the Process Group has ECF conformance specifics distinct from the catalog. CR-ECF-CG-004 §10.",
+      "description": "Optional: ECF conformance posture. Process Groups inherit the catalog posture by default; only declare this block if the Process Group has ECF conformance specifics distinct from the catalog. CR-ECF-CG-004 \u00a710.",
       "properties": {
-        "framework": {"type": "string"},
-        "contractVersion": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$"},
-        "profile": {"type": "string"},
-        "status": {"type": "string"},
-        "affiliation": {"type": "string"},
+        "framework": {
+          "type": "string"
+        },
+        "contractVersion": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "profile": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "affiliation": {
+          "type": "string"
+        },
         "canonicalReferences": {
           "type": "array",
-          "items": {"type": "object"}
+          "items": {
+            "type": "object"
+          }
         }
       }
+    },
+    "profile": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "L1 pilot profile slug (CR-BP-94-EXT-07 unblock for L1 pilot admission)."
     }
   },
   "additionalProperties": false

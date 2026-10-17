@@ -1,0 +1,41 @@
+manifest_schema_version: 1
+generated_at: '2026-10-18'
+generator: scripts/validate_readme_structure.py
+parent_cr: CR-BP-94-EXT-04
+catalog_root: /home/hermes/dea-catalog-processes
+summary:
+  total_records: 3733
+  by_level:
+    L0: 49
+    L1: 50
+    L2: 148
+    L3: 581
+    L4: 2901
+    '?': 4
+  by_rule:
+    DOC-016: 3
+    DOC-017: 0
+    DOC-018: 0
+    DOC-019: 0
+    DOC-020: 0
+  total_findings: 3
+  advisory_findings: 3
+findings:
+- rule: DOC-016
+  record_id: dea:contrib-bp-manage-customer-relationship
+  level: '?'
+  profile: null
+  diagnostic: no profile resolved for (type, level); EXT-07 template not applicable
+  advisory: true
+- rule: DOC-016
+  record_id: dea:research-l2-admission-dea-process-effect-regulator-mandated-governance-unwind
+  level: '?'
+  profile: null
+  diagnostic: no profile resolved for (type, level); EXT-07 template not applicable
+  advisory: true
+- rule: DOC-016
+  record_id: dea:catalog-processes
+  level: '?'
+  profile: null
+  diagnostic: no profile resolved for (type, level); EXT-07 template not applicable
+  advisory: true

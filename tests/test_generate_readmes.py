@@ -79,11 +79,11 @@ def test_generate_readme_required_sections_l0():
         "definition": "Test definition.",
     }
     out = generate_readme(record, "L0")
-    # L0 requires 11 sections (no outcomes).
+    # L0 requires 8 sections (consolidated design; CR-BP-94-EXT-07).
     for sid in [
-        "entity-identity", "formal-definition", "semantic-dimensions",
-        "decomposition", "behavior", "interfaces", "roles",
-        "rules-controls", "evidence", "completeness", "revision-history",
+        "header-identity-table", "executive-summary", "governance-provenance",
+        "behavioral-boundaries", "hierarchical-decomposition",
+        "properties-relationships", "operational-metrics", "technical-metadata",
     ]:
         assert SECTION_HEADINGS[sid] in out, f"L0 README missing section {sid}"
 
@@ -109,12 +109,11 @@ def test_generate_readme_required_sections_l2():
         },
     }
     out = generate_readme(record, "L2")
-    # L2 requires 12 sections (includes outcomes).
+    # L2 requires 7 sections (consolidated design; CR-BP-94-EXT-07).
     for sid in [
-        "entity-identity", "formal-definition", "semantic-dimensions",
-        "decomposition", "behavior", "interfaces", "roles",
-        "rules-controls", "outcomes", "evidence", "completeness",
-        "revision-history",
+        "header-identity-table", "intent-definition", "governance-provenance",
+        "properties-relationships", "hierarchical-decomposition",
+        "operational-details", "technical-metadata",
     ]:
         assert SECTION_HEADINGS[sid] in out, f"L2 README missing section {sid}"
 
@@ -208,3 +207,180 @@ def test_live_run_closes_doc_001():
     # Generator wrote >= 1 (assuming at least one record was missing).
     summary = [l for l in gen.stdout.splitlines() if "generate_readmes:" in l][0]
     assert "written=" in summary
+
+
+def test_header_identity_table_renders_table():
+    """CR-BP-94-EXT-07: Header and Identity Table is a Markdown table with 6 rows."""
+    from scripts.generate_readmes import generate_readme
+    record = {
+        "id": "processes:pc-ao-activate-test",
+        "name": "Test PC",
+        "version": "1.0.0",
+        "lifecycle_status": "candidate",
+    }
+    out = generate_readme(record, "L0")
+    # The header section is rendered.
+    assert "## Header and Identity Table" in out
+    # The table has 6 attribute rows.
+    assert "| **Domain** |" in out
+    assert "| **Lifecycle Stage** |" in out
+    assert "| **Level** |" in out
+    assert "| **Status** |" in out
+    assert "| **Version** |" in out
+    assert "| **Name** |" in out
+    assert "| **Canonical ID** |" in out
+
+
+def test_governance_provenance_renders_change_history():
+    """CR-BP-94-EXT-07: Governance and Provenance renders change history table."""
+    from scripts.generate_readmes import generate_readme
+    record = {
+        "id": "processes:pc-ao-activate-test",
+        "name": "Test PC",
+        "version": "1.0.0",
+        "lifecycle_status": "candidate",
+        "admission": {"score": 10, "max": 10, "decision": "ADMIT-CANONICAL",
+                      "recommended_by": "dea:discovery-ao-activate-test",
+                      "date": "2026-09-16"},
+        "metadata": {
+            "change_history": [
+                {"cr": "CR-BP-81", "date": "2026-09-16", "change": "Ratified-Accepted", "author": "Emmanuel A. Otchere"},
+            ],
+        },
+    }
+    out = generate_readme(record, "L0")
+    # The governance section is rendered.
+    assert "## 2. Governance and Provenance" in out
+    # Admission score is shown.
+    assert "Admission Score" in out
+    # Change history table is shown.
+    assert "Change and Audit History" in out
+    assert "CR-BP-81" in out
+
+
+def test_behavioral_boundaries_renders_three_row_table():
+    """CR-BP-94-EXT-07: Behavioral Boundaries is a 3-row In/Out/Adjacent table."""
+    from scripts.generate_readmes import generate_readme
+    record = {
+        "id": "processes:pc-ao-activate-test",
+        "name": "Test PC",
+        "version": "1.0.0",
+        "lifecycle_status": "candidate",
+        "cell_charter": {
+            "inclusions": ["Item A", "Item B"],
+            "exclusions": ["Item C"],
+            "adjacent_boundaries": ["processes:pc-ao-build-test: predecessor"],
+        },
+    }
+    out = generate_readme(record, "L0")
+    # Section header is present.
+    assert "## 3. Behavioral Boundaries" in out
+    # Three scope-type rows.
+    assert "In Scope" in out
+    assert "Out of Scope" in out
+    assert "Adjacent" in out
+    # Items are present.
+    assert "Item A" in out
+    assert "Item B" in out
+    assert "Item C" in out
+    assert "processes:pc-ao-build-test" in out
+
+
+def test_hierarchical_decomposition_uses_details_block():
+    """CR-BP-94-EXT-07: Hierarchical Decomposition uses <details> HTML block."""
+    from scripts.generate_readmes import generate_readme
+    record = {
+        "id": "processes:pc-ao-activate-test",
+        "name": "Test PC",
+        "version": "1.0.0",
+        "lifecycle_status": "candidate",
+    }
+    out = generate_readme(record, "L0")
+    # Section header is present.
+    assert "## 4. Hierarchical Decomposition" in out
+    # <details> HTML block is used.
+    assert "<details>" in out
+    assert "<summary>" in out
+    assert "</details>" in out
+
+
+def test_properties_relationships_renders_both_tables():
+    """CR-BP-94-EXT-07: Properties and Relationships renders both tables."""
+    from scripts.generate_readmes import generate_readme
+    record = {
+        "id": "processes:process-test",
+        "type": "Process",
+        "name": "Test BP",
+        "version": "1.0.0",
+        "lifecycle_status": "candidate",
+        "definition": "Test.",
+        "description": "Test description.",
+        "trigger": "Test trigger.",
+        "outcome": "Test outcome.",
+        "process_scope": {"includes": ["x"], "excludes": ["y"]},
+        "part_of": ["processes:group-test"],
+    }
+    out = generate_readme(record, "L2")
+    # Section header is present.
+    assert "## 5. Properties and Relationships" in out
+    # Properties table is rendered.
+    assert "**Properties**" in out
+    assert "| Name | Type | Required | Description |" in out
+    # Relationships table is rendered.
+    assert "**Relationships**" in out
+    assert "processes:group-test" in out
+
+
+def test_metrics_block_renders_or_placeholder():
+    """CR-BP-94-EXT-07: Target Metrics renders as table or (Pending EXT-04)."""
+    from scripts.generate_readmes import generate_readme
+    # With metrics block.
+    record_with = {
+        "id": "processes:pc-test",
+        "name": "Test PC",
+        "version": "1.0.0",
+        "lifecycle_status": "candidate",
+        "metrics": {
+            "performance": [
+                {"name": "MTTA", "target": "< 48h", "frequency": "Weekly"}
+            ],
+            "risk": [
+                {"name": "Bypass Rate", "target": "0%", "frequency": "Continuous"}
+            ],
+        },
+    }
+    out_with = generate_readme(record_with, "L0")
+    assert "Target Metrics and Indicators" in out_with
+    assert "MTTA" in out_with
+    assert "Bypass Rate" in out_with
+    # Without metrics block.
+    record_without = {
+        "id": "processes:pc-test2",
+        "name": "Test PC 2",
+        "version": "1.0.0",
+        "lifecycle_status": "candidate",
+    }
+    out_without = generate_readme(record_without, "L0")
+    assert "Target Metrics and Indicators" in out_without
+    assert "(Pending EXT-04)" in out_without
+
+
+def test_section_numbering_continuous():
+    """CR-BP-94-EXT-07: L0 sections are numbered 1-8 with no skip; L1-L4 use descriptive headings."""
+    from scripts.generate_readmes import generate_readme, SECTION_HEADINGS
+    # L0: verify all sections are present.
+    for sid in [
+        "header-identity-table", "executive-summary", "governance-provenance",
+        "behavioral-boundaries", "hierarchical-decomposition",
+        "properties-relationships", "operational-metrics", "technical-metadata",
+    ]:
+        heading = SECTION_HEADINGS[sid]
+        assert heading.startswith("##"), f"Section {sid} heading malformed: {heading}"
+    # L1-L4: verify all sections are present.
+    for sid in [
+        "header-identity-table", "intent-definition", "governance-provenance",
+        "properties-relationships", "hierarchical-decomposition",
+        "operational-details", "technical-metadata",
+    ]:
+        heading = SECTION_HEADINGS[sid]
+        assert heading.startswith("##"), f"L1-L4 section {sid} heading malformed: {heading}"

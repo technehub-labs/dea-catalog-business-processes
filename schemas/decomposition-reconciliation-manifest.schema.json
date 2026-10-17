@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/technehub-labs/dea-catalog-business-processes/schemas/decomposition-reconciliation-manifest.schema.json",
+  "title": "Decomposition Reconciliation Manifest (CR-BP-94-EXT-05)",
+  "description": "The decomposition reconciliation manifest is the machine-readable record of the per-record decomposition traceability findings produced by scripts/check_decomposition_reconciliation.py. The manifest is the input for CR-BP-94-EXT-06 (pilot + rollout) and any downstream tooling that needs per-record parent-child decomposition state. Schema version 1. Bump on structural change.",
+  "type": "object",
+  "required": [
+    "manifest_schema_version",
+    "generated_at",
+    "generator",
+    "parent_cr",
+    "catalog_root",
+    "summary",
+    "findings"
+  ],
+  "properties": {
+    "manifest_schema_version": {
+      "type": "integer",
+      "const": 1,
+      "description": "Bump on structural change to the manifest format."
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO 8601 date of manifest generation."
+    },
+    "generator": {
+      "type": "string",
+      "const": "scripts/check_decomposition_reconciliation.py"
+    },
+    "parent_cr": {
+      "type": "string",
+      "const": "CR-BP-94-EXT-05"
+    },
+    "catalog_root": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "object",
+      "required": ["total_records", "by_rule", "total_findings", "advisory_findings"],
+      "properties": {
+        "total_records": {"type": "integer"},
+        "by_rule": {
+          "type": "object",
+          "properties": {
+            "DOC-021": {"type": "integer"},
+            "DOC-022": {"type": "integer"},
+            "DOC-023": {"type": "integer"},
+            "DOC-024": {"type": "integer"},
+            "DOC-025": {"type": "integer"}
+          },
+          "additionalProperties": false
+        },
+        "total_findings": {"type": "integer"},
+        "advisory_findings": {"type": "integer", "description": "All findings are advisory in this slice; CR-BP-94-EXT-06 flips to blocking."}
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["rule", "record_id", "diagnostic", "advisory", "level"],
+        "properties": {
+          "rule": {
+            "type": "string",
+            "enum": ["DOC-021", "DOC-022", "DOC-023", "DOC-024", "DOC-025"]
+          },
+          "record_id": {"type": "string"},
+          "level": {
+            "type": "string",
+            "enum": ["L0", "L1", "L2", "L3", "L4", "?"]
+          },
+          "diagnostic": {"type": "string"},
+          "parent_ref": {
+            "type": "string",
+            "description": "DOC-021..024 only: the parent id that did not resolve."
+          },
+          "child_ref": {
+            "type": "string",
+            "description": "DOC-025 only: the child id that did not resolve."
+          },
+          "advisory": {
+            "type": "boolean",
+            "const": true
+          }
+        }
+      }
+    }
+  }
+}
