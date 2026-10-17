@@ -59,7 +59,7 @@ performance management.
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
+| `composes` | `processes:process-ao-activate-jqxtqn` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

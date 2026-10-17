@@ -73,7 +73,7 @@ retention policy.
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
+| `composes` | `processes:process-sd-retire-umxf3c` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

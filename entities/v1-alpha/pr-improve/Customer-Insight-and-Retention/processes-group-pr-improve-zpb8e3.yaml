@@ -41,6 +41,7 @@ composes:
     asserted_by: dea-team
     asserted_at: '2026-09-05'
 process_group_kind: end-to-end
+profile: l1-pilot-customer-insight-and-retention
 status: accepted
 lifecycle_status: candidate
 ecfConformance:

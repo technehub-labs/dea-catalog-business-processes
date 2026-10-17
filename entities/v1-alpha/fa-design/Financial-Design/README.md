@@ -50,10 +50,10 @@ This directory hosts the canonical ProcessGroup record for `processes:group-fa-d
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
+| `composes` | `processes:process-fa-design-vk422z` | 1 |
+| `composes` | `processes:process-fa-design-uun4ja` | 1 |
+| `composes` | `processes:process-fa-design-ds4drw` | 1 |
+| `composes` | `processes:process-fa-design-k5sgfa` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

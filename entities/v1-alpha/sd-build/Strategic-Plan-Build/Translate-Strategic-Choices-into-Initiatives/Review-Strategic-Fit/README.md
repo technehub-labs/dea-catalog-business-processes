@@ -46,11 +46,11 @@ This directory hosts the canonical Activity record for `processes:activity-sd-bu
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
+| `composes` | `processes:task-sd-build-intake-jzy42p` | 1 |
+| `composes` | `processes:task-sd-build-verify-hvu8gc` | 1 |
+| `composes` | `processes:task-sd-build-transform-ffxbsp` | 1 |
+| `composes` | `processes:task-sd-build-confirm-xmmyzb` | 1 |
+| `composes` | `processes:task-sd-build-record-rfpska` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

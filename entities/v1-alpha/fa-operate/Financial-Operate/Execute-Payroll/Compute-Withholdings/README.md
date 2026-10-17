@@ -46,11 +46,11 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
+| `composes` | `processes:task-fa-operate-intake-xqjd8t` | 1 |
+| `composes` | `processes:task-fa-operate-verify-8u4hey` | 1 |
+| `composes` | `processes:task-fa-operate-transform-tud8nb` | 1 |
+| `composes` | `processes:task-fa-operate-confirm-9t4dhs` | 1 |
+| `composes` | `processes:task-fa-operate-record-5qp3wn` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

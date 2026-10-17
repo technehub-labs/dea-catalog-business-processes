@@ -51,11 +51,11 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-d
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
+| `composes` | `processes:process-ao-design-7dkbur` | 1 |
+| `composes` | `processes:process-ao-design-34e95r` | 1 |
+| `composes` | `processes:process-ao-design-rve8j5` | 1 |
+| `composes` | `processes:process-ao-design-8fzp2b` | 1 |
+| `composes` | `processes:process-ao-design-2fkvhx` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

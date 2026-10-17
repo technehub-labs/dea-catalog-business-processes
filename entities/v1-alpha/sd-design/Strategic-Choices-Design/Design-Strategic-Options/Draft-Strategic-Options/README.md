@@ -46,11 +46,11 @@ This directory hosts the canonical Activity record for `processes:activity-sd-de
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
+| `composes` | `processes:task-sd-design-intake-vx38fh` | 1 |
+| `composes` | `processes:task-sd-design-verify-de8c2u` | 1 |
+| `composes` | `processes:task-sd-design-transform-k3zuz5` | 1 |
+| `composes` | `processes:task-sd-design-confirm-wcqtgg` | 1 |
+| `composes` | `processes:task-sd-design-record-zcy32e` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

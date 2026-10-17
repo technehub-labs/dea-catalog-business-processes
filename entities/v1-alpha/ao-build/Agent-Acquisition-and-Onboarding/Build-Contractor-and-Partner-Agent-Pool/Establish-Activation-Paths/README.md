@@ -46,11 +46,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
+| `composes` | `processes:task-ao-build-intake-aae2cz` | 1 |
+| `composes` | `processes:task-ao-build-verify-kdycrh` | 1 |
+| `composes` | `processes:task-ao-build-transform-frhu2h` | 1 |
+| `composes` | `processes:task-ao-build-confirm-syxf6c` | 1 |
+| `composes` | `processes:task-ao-build-record-6jmk5q` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

@@ -92,6 +92,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `change_history` | array[2] | no | array of 2 item(s) |
 | `links` | array[4] | no | array of 4 item(s) |
 
+**Relationships**
+
+| Kind | Target ID | Cardinality |
+| :--- | :--- | :--- |
+| `processes` | `processes:process-pr-activate-6qzuve` | 1 |
 
 ## 6. Operational, Control and Metrics Details
 

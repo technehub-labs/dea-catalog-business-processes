@@ -72,10 +72,10 @@ directed.
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
+| `composes` | `processes:process-ao-conceive-e3u8s2` | 1 |
+| `composes` | `processes:process-ao-conceive-ruxjvh` | 1 |
+| `composes` | `processes:process-ao-conceive-z6m6p5` | 1 |
+| `composes` | `processes:process-ao-conceive-pnrhem` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

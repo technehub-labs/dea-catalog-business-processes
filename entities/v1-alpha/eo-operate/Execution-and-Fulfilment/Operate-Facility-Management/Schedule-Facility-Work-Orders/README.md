@@ -46,11 +46,11 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
+| `composes` | `processes:task-eo-operate-intake-en7y2d` | 1 |
+| `composes` | `processes:task-eo-operate-verify-hdea6e` | 1 |
+| `composes` | `processes:task-eo-operate-transform-yn3qrc` | 1 |
+| `composes` | `processes:task-eo-operate-confirm-4ywxza` | 1 |
+| `composes` | `processes:task-eo-operate-record-6w6fwq` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

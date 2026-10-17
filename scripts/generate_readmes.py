@@ -678,21 +678,39 @@ def _properties_relationships(record: dict, level: str) -> str:
         out.append("")
 
     # Relationships table
+    # CR-BP-94-EXT-06 v2.1: the relation-key list now includes
+    # the L0 cell-root child fields (process_groups / processes)
+    # AND the L1+ fields (composes / part_of). Each relation key
+    # is rendered as one row per child.
     rel_rows: list[tuple[str, str, str]] = []
-    for rel_key in ("composes", "realizes", "specializes", "part_of", "depends_on", "enables", "is_part_of"):
+    rel_keys = (
+        # L0 cell-root child fields (L1 process groups + L2 processes).
+        "process_groups", "processes",
+        # L1+ relation fields.
+        "composes", "realizes", "specializes",
+        "part_of", "depends_on", "enables", "is_part_of",
+    )
+    for rel_key in rel_keys:
         v = record.get(rel_key)
         if v is None:
             continue
         if isinstance(v, list):
             for item in v:
                 if isinstance(item, dict):
-                    target = item.get("target") or item.get("id") or "?"
+                    # L1 composes: dict with target_id; L0
+                    # process_groups: dict with id. Both should
+                    # resolve. CR-BP-94-EXT-06 v2.1 fix: try
+                    # target_id first, then id.
+                    target = (item.get("target_id")
+                              or item.get("target")
+                              or item.get("id") or "?")
                     card = item.get("cardinality", "1")
                     rel_rows.append((rel_key, target, card))
                 else:
+                    # L0 processes: list of strings.
                     rel_rows.append((rel_key, str(item), "1"))
         elif isinstance(v, dict):
-            target = v.get("target") or v.get("id") or "?"
+            target = v.get("target_id") or v.get("target") or v.get("id") or "?"
             card = v.get("cardinality", "1")
             rel_rows.append((rel_key, target, card))
         else:

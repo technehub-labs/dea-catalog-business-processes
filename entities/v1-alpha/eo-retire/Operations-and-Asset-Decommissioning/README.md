@@ -58,7 +58,7 @@ resolution).
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
+| `composes` | `processes:process-eo-retire-rpg6d4` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

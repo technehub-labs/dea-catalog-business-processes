@@ -104,6 +104,12 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `change_history` | array[1] | no | array of 1 item(s) |
 | `audit` | object | no | object: authored, author, reviewed_by, status, change_request, register_version_at_landing |
 
+**Relationships**
+
+| Kind | Target ID | Cardinality |
+| :--- | :--- | :--- |
+| `process_groups` | `processes:group-ao-activate-jjx738` | 1 |
+| `processes` | `processes:process-ao-activate-jqxtqn` | 1 |
 
 ## 6. Operational, Control and Metrics Details
 

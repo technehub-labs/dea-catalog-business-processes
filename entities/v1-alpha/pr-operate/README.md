@@ -92,6 +92,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
 | `status` | string | no | defined |
 
+**Relationships**
+
+| Kind | Target ID | Cardinality |
+| :--- | :--- | :--- |
+| `processes` | `processes:process-pr-operate-bbe384` | 1 |
 
 ## 6. Operational, Control and Metrics Details
 

@@ -125,6 +125,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `admission` | object | no | object: recommended_by, recommended_at, recommended_score, rationale, cell_carries_forward |
 | `status` | string | no | candidate |
 
+**Relationships**
+
+| Kind | Target ID | Cardinality |
+| :--- | :--- | :--- |
+| `processes` | `processes:process-sd-retire-umxf3c` | 1 |
 
 ## 6. Operational, Control and Metrics Details
 

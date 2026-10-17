@@ -168,6 +168,14 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `change_history` | array[2] | no | array of 2 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
 
+**Relationships**
+
+| Kind | Target ID | Cardinality |
+| :--- | :--- | :--- |
+| `processes` | `processes:process-fa-build-ydnzjc` | 1 |
+| `processes` | `processes:process-fa-build-d5kb5m` | 1 |
+| `processes` | `processes:process-fa-build-92v24c` | 1 |
+| `processes` | `processes:process-fa-build-ucfjgt` | 1 |
 
 ## 6. Operational, Control and Metrics Details
 

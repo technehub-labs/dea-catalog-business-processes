@@ -143,6 +143,13 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `change_history` | array[3] | no | array of 3 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
 
+**Relationships**
+
+| Kind | Target ID | Cardinality |
+| :--- | :--- | :--- |
+| `processes` | `processes:process-sd-improve-9wgvaf` | 1 |
+| `processes` | `processes:process-sd-improve-aqbrm7` | 1 |
+| `processes` | `processes:process-sd-improve-duwd64` | 1 |
 
 ## 6. Operational, Control and Metrics Details
 

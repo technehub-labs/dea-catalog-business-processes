@@ -220,6 +220,15 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `change_history` | array[3] | no | array of 3 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
 
+**Relationships**
+
+| Kind | Target ID | Cardinality |
+| :--- | :--- | :--- |
+| `processes` | `processes:process-ao-operate-g4wp63` | 1 |
+| `processes` | `processes:process-ao-operate-38qyc6` | 1 |
+| `processes` | `processes:process-ao-operate-dg9q4h` | 1 |
+| `processes` | `processes:process-ao-operate-87q5mk` | 1 |
+| `processes` | `processes:process-ao-operate-bd7mef` | 1 |
 
 ## 6. Operational, Control and Metrics Details
 

@@ -59,7 +59,7 @@ separate from capability build and from steady-state billing.
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
+| `composes` | `processes:process-fa-activate-bzfywk` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

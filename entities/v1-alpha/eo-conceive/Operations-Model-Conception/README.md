@@ -69,10 +69,10 @@ absorbed from the dissolved Supply & Resources domain.
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
+| `composes` | `processes:process-eo-conceive-xhjdr2` | 1 |
+| `composes` | `processes:process-eo-conceive-ky5wxp` | 1 |
+| `composes` | `processes:process-eo-conceive-68mp6v` | 1 |
+| `composes` | `processes:process-eo-conceive-87kx9n` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

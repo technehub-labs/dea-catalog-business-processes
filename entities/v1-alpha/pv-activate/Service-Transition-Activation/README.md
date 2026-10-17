@@ -50,7 +50,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pv-a
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
+| `composes` | `processes:process-pv-activate-5686v7` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

@@ -51,9 +51,9 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-b
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
+| `composes` | `processes:process-ao-build-w2qurd` | 1 |
+| `composes` | `processes:process-ao-build-b38bkg` | 1 |
+| `composes` | `processes:process-ao-build-9my4jr` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

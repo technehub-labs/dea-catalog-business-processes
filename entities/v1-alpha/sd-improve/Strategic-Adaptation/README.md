@@ -50,9 +50,9 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-i
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
+| `composes` | `processes:process-sd-improve-9wgvaf` | 1 |
+| `composes` | `processes:process-sd-improve-aqbrm7` | 1 |
+| `composes` | `processes:process-sd-improve-duwd64` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

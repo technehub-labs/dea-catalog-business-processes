@@ -46,11 +46,11 @@ This directory hosts the canonical Activity record for `processes:activity-pv-im
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
+| `composes` | `processes:task-pv-improve-intake-jf48qy` | 1 |
+| `composes` | `processes:task-pv-improve-verify-2ecqqs` | 1 |
+| `composes` | `processes:task-pv-improve-transform-zmxrbr` | 1 |
+| `composes` | `processes:task-pv-improve-confirm-ybjfqb` | 1 |
+| `composes` | `processes:task-pv-improve-record-mjtd2a` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

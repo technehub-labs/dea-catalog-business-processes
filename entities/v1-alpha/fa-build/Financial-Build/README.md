@@ -51,10 +51,10 @@ This directory hosts the canonical ProcessGroup record for `processes:group-fa-b
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
+| `composes` | `processes:process-fa-build-d5kb5m` | 1 |
+| `composes` | `processes:process-fa-build-92v24c` | 1 |
+| `composes` | `processes:process-fa-build-ucfjgt` | 1 |
+| `composes` | `processes:process-fa-build-ydnzjc` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

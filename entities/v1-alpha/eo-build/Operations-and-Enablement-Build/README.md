@@ -50,11 +50,11 @@ This directory hosts the canonical ProcessGroup record for `processes:group-eo-b
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
+| `composes` | `processes:process-eo-build-j9z3q4` | 1 |
+| `composes` | `processes:process-eo-build-awy8dz` | 1 |
+| `composes` | `processes:process-eo-build-ba6ykz` | 1 |
+| `composes` | `processes:process-eo-build-nmmmt6` | 1 |
+| `composes` | `processes:process-eo-build-tqybhd` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

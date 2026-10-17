@@ -51,10 +51,10 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-o
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
+| `composes` | `processes:process-ge-operate-hs7wf3` | 1 |
+| `composes` | `processes:process-ge-operate-hxxyc9` | 1 |
+| `composes` | `processes:process-ge-operate-tpenm6` | 1 |
+| `composes` | `processes:process-ge-operate-zwaes5` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

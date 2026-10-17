@@ -114,6 +114,12 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `change_history` | array[2] | no | array of 2 item(s) |
 | `links` | array[2] | no | array of 2 item(s) |
 
+**Relationships**
+
+| Kind | Target ID | Cardinality |
+| :--- | :--- | :--- |
+| `processes` | `processes:process-pr-build-nygvw7` | 1 |
+| `processes` | `processes:process-pr-build-4kb2pt` | 1 |
 
 ## 6. Operational, Control and Metrics Details
 

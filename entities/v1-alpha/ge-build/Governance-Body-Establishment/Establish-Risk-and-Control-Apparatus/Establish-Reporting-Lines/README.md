@@ -46,11 +46,11 @@ This directory hosts the canonical Activity record for `processes:activity-ge-bu
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
+| `composes` | `processes:task-ge-build-intake-f8qffn` | 1 |
+| `composes` | `processes:task-ge-build-verify-rpz2g7` | 1 |
+| `composes` | `processes:task-ge-build-transform-uh4wuk` | 1 |
+| `composes` | `processes:task-ge-build-confirm-8pkexe` | 1 |
+| `composes` | `processes:task-ge-build-record-dmpg98` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

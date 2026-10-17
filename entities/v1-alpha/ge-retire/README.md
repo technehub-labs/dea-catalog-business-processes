@@ -92,6 +92,12 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `processes` | array[1] | no | array of 1 item(s) |
 | `change_history` | array[1] | no | array of 1 item(s) |
 
+**Relationships**
+
+| Kind | Target ID | Cardinality |
+| :--- | :--- | :--- |
+| `process_groups` | `processes:group-ge-retire-v3vy7t` | 1 |
+| `processes` | `processes:process-ge-retire-mjq5hg` | 1 |
 
 ## 6. Operational, Control and Metrics Details
 

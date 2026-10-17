@@ -60,7 +60,7 @@ classification; onboarding approval).
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
+| `composes` | `processes:process-pr-activate-6qzuve` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

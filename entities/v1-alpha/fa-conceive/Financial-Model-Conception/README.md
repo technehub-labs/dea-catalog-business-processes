@@ -70,12 +70,12 @@ scope.
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
+| `composes` | `processes:process-fa-conceive-4uqqvg` | 1 |
+| `composes` | `processes:process-eo-conceive-87kx9n` | 1 |
+| `composes` | `processes:process-fa-design-vk422z` | 1 |
+| `composes` | `processes:process-ge-operate-hxxyc9` | 1 |
+| `composes` | `processes:process-fa-operate-g9zpnq` | 1 |
+| `composes` | `processes:process-fa-improve-emqpgr` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

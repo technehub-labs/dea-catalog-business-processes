@@ -56,7 +56,7 @@ offboarding, residual obligation and record resolution).
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
+| `composes` | `processes:process-pr-retire-bd3asa` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

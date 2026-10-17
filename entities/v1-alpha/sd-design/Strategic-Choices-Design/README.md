@@ -50,10 +50,10 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-d
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
+| `composes` | `processes:process-sd-design-ewvbsh` | 1 |
+| `composes` | `processes:process-sd-design-ed7jd5` | 1 |
+| `composes` | `processes:process-sd-design-vdwkmh` | 1 |
+| `composes` | `processes:process-sd-design-uenzna` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

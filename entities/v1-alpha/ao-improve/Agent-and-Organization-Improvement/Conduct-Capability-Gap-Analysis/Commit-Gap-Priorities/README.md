@@ -46,11 +46,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
+| `composes` | `processes:task-ao-improve-intake-j5c2nw` | 1 |
+| `composes` | `processes:task-ao-improve-verify-v4yus7` | 1 |
+| `composes` | `processes:task-ao-improve-transform-tzaxwm` | 1 |
+| `composes` | `processes:task-ao-improve-confirm-n625pw` | 1 |
+| `composes` | `processes:task-ao-improve-record-ctdhgp` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

@@ -67,7 +67,7 @@ supervision.
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
+| `composes` | `processes:process-ge-retire-mjq5hg` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

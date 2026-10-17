@@ -68,8 +68,8 @@ Strategy & Direction directs within the authorized frame").
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
+| `composes` | `processes:process-ge-conceive-xp6fye` | 1 |
+| `composes` | `processes:process-ge-conceive-6qnkhh` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

@@ -51,9 +51,9 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-b
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
+| `composes` | `processes:process-ge-build-3p38us` | 1 |
+| `composes` | `processes:process-ge-build-mctdgc` | 1 |
+| `composes` | `processes:process-ge-build-rx7kt5` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

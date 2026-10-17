@@ -99,6 +99,11 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `process_groups` | array[1] | no | array of 1 item(s) |
 | `admission` | object | no | object: recommended_by, recommended_at, recommended_score, carrier_cr, bp_id |
 
+**Relationships**
+
+| Kind | Target ID | Cardinality |
+| :--- | :--- | :--- |
+| `process_groups` | `processes:group-eo-activate-bnmwuu` | 1 |
 
 ## 6. Operational, Control and Metrics Details
 

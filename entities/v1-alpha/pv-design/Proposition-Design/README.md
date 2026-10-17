@@ -50,9 +50,9 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pv-d
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
+| `composes` | `processes:process-pv-design-8v4k89` | 1 |
+| `composes` | `processes:process-pv-design-a4c76s` | 1 |
+| `composes` | `processes:process-pv-design-9ckwf6` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

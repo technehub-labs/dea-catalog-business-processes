@@ -164,6 +164,14 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `change_history` | array[2] | no | array of 2 item(s) |
 | `links` | array[2] | no | array of 2 item(s) |
 
+**Relationships**
+
+| Kind | Target ID | Cardinality |
+| :--- | :--- | :--- |
+| `processes` | `processes:process-ge-operate-hs7wf3` | 1 |
+| `processes` | `processes:process-ge-operate-hxxyc9` | 1 |
+| `processes` | `processes:process-ge-operate-tpenm6` | 1 |
+| `processes` | `processes:process-ge-operate-zwaes5` | 1 |
 
 ## 6. Operational, Control and Metrics Details
 

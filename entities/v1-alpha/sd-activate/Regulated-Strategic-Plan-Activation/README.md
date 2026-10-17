@@ -61,7 +61,7 @@ from steady-state strategy execution.
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
+| `composes` | `processes:process-sd-activate-s9m34e` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

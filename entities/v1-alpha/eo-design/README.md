@@ -194,6 +194,15 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `change_history` | array[3] | no | array of 3 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
 
+**Relationships**
+
+| Kind | Target ID | Cardinality |
+| :--- | :--- | :--- |
+| `processes` | `processes:process-eo-design-rvfpjb` | 1 |
+| `processes` | `processes:process-eo-design-6j5mxp` | 1 |
+| `processes` | `processes:process-eo-design-7gtead` | 1 |
+| `processes` | `processes:process-eo-design-q83tdv` | 1 |
+| `processes` | `processes:process-eo-design-8s76nv` | 1 |
 
 ## 6. Operational, Control and Metrics Details
 

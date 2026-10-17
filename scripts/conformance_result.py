@@ -125,15 +125,24 @@ GATES: list[tuple[str, bool, list[str]]] = [
     ("[33] Entity System (CR-BP-123 / CR-BP-125; ES-001..ES-005)",
      True, ["python", "scripts/check_entity_system.py", "--strict"]),  # CR-BP-123/125; blocking (Stage 6+)
     ("[34] Documentation Profile - Generator and Validator (CR-BP-94-EXT-04; DOC-016..020)",
-     False, ["python", "scripts/validate_readme_structure.py", "--catalog-root", "."]),  # CR-BP-94-EXT-04; advisory (EXT-06 flips to blocking)
+     True, ["python", "scripts/validate_readme_structure.py", "--catalog-root", "."]),  # CR-BP-94-EXT-04; BLOCKING (CR-BP-94-EXT-06; was advisory before)
     ("[35] Decomposition Reconciliation (CR-BP-94-EXT-05; DOC-021..025)",
-     False, ["python", "scripts/check_decomposition_reconciliation.py", "--catalog-root", "."]),  # CR-BP-94-EXT-05; advisory (EXT-06 flips to blocking)
+     True, ["python", "scripts/check_decomposition_reconciliation.py", "--catalog-root", "."]),  # CR-BP-94-EXT-05; BLOCKING (CR-BP-94-EXT-06; was advisory before)
 ]
 
 
 def _run_gate(name: str, blocking: bool, argv: list[str],
               catalog_root: Path) -> GateResult:
-    """Run a single gate and return the structured result."""
+    """Run a single gate and return the structured result.
+
+    CR-BP-94-EXT-06: gates [34] (EXT-04) + [35] (EXT-05) are now
+    blocking. The validators themselves still return rc=0 (findings
+    are reported in the manifest), so we post-process: if the
+    validator's manifest shows any findings AND the gate is now
+    blocking, we set returncode=1 to make the gate fail. This is
+    the wire into the development model the user directed on
+    2026-10-17.
+    """
     proc = subprocess.run(
         argv, capture_output=True, text=True, cwd=str(catalog_root),
     )
@@ -142,10 +151,32 @@ def _run_gate(name: str, blocking: bool, argv: list[str],
         (l.strip() for l in proc.stdout.splitlines() if l.strip()),
         "(no output)",
     )
+    rc = proc.returncode
+
+    # Blocking posture check: read the manifest if this is gate [34] / [35].
+    if blocking and rc == 0 and ("validate_readme_structure.py" in argv[1]
+                                 or "check_decomposition_reconciliation.py" in argv[1]):
+        manifest_name = (
+            "validation-manifest.json"
+            if "validate_readme_structure.py" in argv[1]
+            else "decomposition-reconciliation-manifest.json"
+        )
+        manifest_path = catalog_root / "reconciliation" / manifest_name
+        try:
+            import json as _json
+            m = _json.loads(manifest_path.read_text(encoding="utf-8"))
+            findings = m.get("summary", {}).get("total_findings", 0)
+            if findings > 0:
+                rc = 1
+                verdict_line = (f"{verdict_line} [BLOCKED: {findings} "
+                                f"findings must be reconciled]")
+        except Exception:
+            pass
+
     return GateResult(
         name=name,
         blocking=blocking,
-        returncode=proc.returncode,
+        returncode=rc,
         verdict_line=verdict_line,
         raw_stdout=proc.stdout,
     )

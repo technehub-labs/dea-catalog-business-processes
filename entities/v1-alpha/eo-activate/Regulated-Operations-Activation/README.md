@@ -61,7 +61,7 @@ steady-state operation.
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
+| `composes` | `processes:process-eo-activate-sy5qsa` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

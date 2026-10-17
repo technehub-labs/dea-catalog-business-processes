@@ -65,10 +65,10 @@ authorises; strategy-direction x conceive directs).
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
-| `composes` | `?` | 1 |
+| `composes` | `processes:process-sd-conceive-ahwvp5` | 1 |
+| `composes` | `processes:process-sd-conceive-r93j3d` | 1 |
+| `composes` | `processes:process-sd-conceive-3uredz` | 1 |
+| `composes` | `processes:process-sd-conceive-xa4h2k` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 

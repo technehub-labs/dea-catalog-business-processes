@@ -139,6 +139,13 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `change_history` | array[3] | no | array of 3 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
 
+**Relationships**
+
+| Kind | Target ID | Cardinality |
+| :--- | :--- | :--- |
+| `processes` | `processes:process-pv-design-8v4k89` | 1 |
+| `processes` | `processes:process-pv-design-a4c76s` | 1 |
+| `processes` | `processes:process-pv-design-9ckwf6` | 1 |
 
 ## 6. Operational, Control and Metrics Details
 

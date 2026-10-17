@@ -50,7 +50,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pr-i
 
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
-| `composes` | `?` | 1 |
+| `composes` | `processes:process-pr-improve-t6uvan` | 1 |
 
 ## 4. Hierarchical Decomposition (Path Scheme)
 
