@@ -62,91 +62,68 @@ except ImportError:
 # -----------------------------------------------------------------------------
 
 PROFILE_REGISTRY: dict[tuple[str, str], dict] = {
-    # Cardinal entities (CR-BP-92 §7, CR-BP-93 §3).
-    # CR-BP-94-EXT-01a adds L0/L1 profiles; CR-BP-94-EXT-01 (PR #137) covered L2/L3/L4.
+    # Cardinal entities (CR-BP-92 section 7, CR-BP-93 section 3).
+    # CR-BP-94-EXT-07 (T9.13 + EXT-02 + CR-BP-120 consolidated design):
+    # 8 sections for L0, 7 sections for L1-L4.
     ("ProcessContext", "L0"): {
-        "profile_id": "dea:profile-readme-l0-process-context-v1",
+        "profile_id": "dea:profile-readme-l0-process-context-v2",
         "required_section_ids": [
-            "entity-identity",
-            "formal-definition",
-            "semantic-dimensions",
-            "decomposition",
-            "behavior",
-            "interfaces",
-            "roles",
-            "rules-controls",
-            # outcomes is conditional at L0 (inherited from ECF framework)
-            "evidence",
-            "completeness",
-            "revision-history",
+            "header-identity-table",
+            "executive-summary",
+            "governance-provenance",
+            "behavioral-boundaries",
+            "hierarchical-decomposition",
+            "properties-relationships",
+            "operational-metrics",
+            "technical-metadata",
         ],
     },
     ("ProcessGroup", "L1"): {
-        "profile_id": "dea:profile-readme-l1-process-group-v1",
+        "profile_id": "dea:profile-readme-l1-process-group-v2",
         "required_section_ids": [
-            "entity-identity",
-            "formal-definition",
-            "semantic-dimensions",
-            "decomposition",
-            "behavior",
-            "interfaces",
-            "roles",
-            "rules-controls",
-            # outcomes is conditional at L1
-            "evidence",
-            "completeness",
-            "revision-history",
+            "header-identity-table",
+            "intent-definition",
+            "governance-provenance",
+            "properties-relationships",
+            "hierarchical-decomposition",
+            "operational-details",
+            "technical-metadata",
         ],
     },
     ("Process", "L2"): {
-        "profile_id": "dea:profile-readme-l2-process-v1",
+        "profile_id": "dea:profile-readme-l2-process-v2",
         "required_section_ids": [
-            "entity-identity",
-            "formal-definition",
-            "semantic-dimensions",
-            "decomposition",
-            "behavior",
-            "interfaces",
-            "roles",
-            "rules-controls",
-            "outcomes",
-            "evidence",
-            "completeness",
-            "revision-history",
+            "header-identity-table",
+            "intent-definition",
+            "governance-provenance",
+            "properties-relationships",
+            "hierarchical-decomposition",
+            "operational-details",
+            "technical-metadata",
         ],
     },
     ("Activity", "L3"): {
-        "profile_id": "dea:profile-readme-l3-activity-v1",
+        "profile_id": "dea:profile-readme-l3-activity-v2",
         "required_section_ids": [
-            "entity-identity",
-            "formal-definition",
-            "semantic-dimensions",
-            "decomposition",
-            "behavior",
-            "interfaces",
-            "roles",
-            "rules-controls",
-            # outcomes is conditional at L3
-            "evidence",
-            "completeness",
-            "revision-history",
+            "header-identity-table",
+            "intent-definition",
+            "governance-provenance",
+            "properties-relationships",
+            "hierarchical-decomposition",
+            "operational-details",
+            "technical-metadata",
         ],
     },
     ("Task", "L4"): {
-        "profile_id": "dea:profile-readme-l4-task-v1",
+        "profile_id": "dea:profile-readme-l4-task-v2",
         "required_section_ids": [
-            "entity-identity",
-            "formal-definition",
-            "semantic-dimensions",
-            "decomposition",
-            "behavior",
-            "interfaces",
-            "roles",
-            "rules-controls",
-            # outcomes is not_applicable at L4
-            "evidence",
-            "completeness",
-            "revision-history",
+            "header-identity-table",
+            "intent-definition",
+            "governance-provenance",
+            "properties-relationships",
+            "hierarchical-decomposition",
+            "operational-details",
+            "technical-metadata",
         ],
     },
 }
@@ -155,18 +132,16 @@ PROFILE_REGISTRY: dict[tuple[str, str], dict] = {
 # is present in the README). The validator searches for the heading
 # pattern; case-insensitive, whitespace-tolerant.
 EXPECTED_HEADINGS: dict[str, str] = {
-    "entity-identity": r"^##\s*1\.\s*Entity Identity",
-    "formal-definition": r"^##\s*2\.\s*Formal Definition",
-    "semantic-dimensions": r"^##\s*3\.\s*Canonical Semantic",
-    "decomposition": r"^##\s*4\.\s*Decomposition",
-    "behavior": r"^##\s*5\.\s*Behavior",
-    "interfaces": r"##\s*6\.\s*Inputs, Outputs",
-    "roles": r"##\s*7\.\s*Roles, Responsibilities",
-    "rules-controls": r"##\s*8\.\s*Business Rules",
-    "outcomes": r"##\s*9\.\s*Outcomes",
-    "evidence": r"##\s*10\.\s*Evidence",
-    "completeness": r"##\s*11\.\s*Documentation Completeness",
-    "revision-history": r"##\s*12\.\s*Revision History",
+    "header-identity-table": r"^##\s*Header and Identity Table",
+    "executive-summary": r"^##\s*1\.\s*Executive Summary",
+    "intent-definition": r"^##\s*Intent and Definition",
+    "governance-provenance": r"^##\s*2\.\s*Governance and Provenance",
+    "behavioral-boundaries": r"^##\s*3\.\s*Behavioral Boundaries",
+    "hierarchical-decomposition": r"^##\s*4\.\s*Hierarchical Decomposition",
+    "properties-relationships": r"^##\s*5\.\s*Properties and Relationships",
+    "operational-metrics": r"^##\s*6\.\s*Operational, Control and Metrics Details",
+    "operational-details": r"^##\s*Operational Details",
+    "technical-metadata": r"^##\s*7\.\s*Technical Metadata",
 }
 
 # Placeholder token pattern (DOC-004). Generated sections are allowed to
@@ -410,19 +385,21 @@ def _self_test() -> int:
         }))
         (entity_dir / "README.md").write_text(
             "# Canonical Business Process: `processes:process-good`\n\n"
-            "## 1. Entity Identity and Classification\n\n"
-            "## 2. Formal Definition and Scope\n\n"
-            "## 3. Canonical Semantic Dimensions\n\n"
-            "## 4. Decomposition and Composition\n\n"
-            "## 5. Behavior and Workflow\n\n"
-            "## 6. Inputs, Outputs, and Interfaces\n\n"
-            "## 7. Roles, Responsibilities, and Accountability\n\n"
-            "## 8. Business Rules and Controls\n\n"
-            "## 9. Outcomes and Performance\n\n"
-            "## 10. Evidence and Traceability\n\n"
+            "**Name**: Good Process\n\n"
+            "## Header and Identity Table\n\n"
+            "(table)\n\n"
+            "## Intent and Definition\n\n"
+            "(text)\n\n"
+            "## 2. Governance and Provenance\n\n"
+            "(text)\n\n"
+            "## 5. Properties and Relationships\n\n"
+            "(text)\n\n"
+            "## 4. Hierarchical Decomposition (Path Scheme)\n\n"
+            "(text)\n\n"
+            "## Operational Details\n\n"
+            "(text)\n\n"
+            "## 7. Technical Metadata\n\n"
             "Governed by CR-BP-13a.\n\n"
-            "## 11. Documentation Completeness\n\n"
-            "## 12. Revision History\n\n"
         )
         # Fixture 2: missing README (DOC-001 violation).
         bad_dir = td_path / "entities" / "v1-alpha" / "processes:process-bad"
@@ -445,7 +422,7 @@ def _self_test() -> int:
         }))
         (incomplete_dir / "README.md").write_text(
             "# Canonical Business Process: `processes:process-incomplete`\n\n"
-            "## 1. Entity Identity and Classification\n\n"
+            "## Header and Identity Table\n\n"
         )
 
         pairs = _load_records(td_path)
