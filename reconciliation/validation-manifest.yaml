@@ -1,0 +1,335 @@
+manifest_schema_version: 1
+generated_at: '2026-10-18'
+generator: scripts/validate_readme_structure.py
+parent_cr: CR-BP-94-EXT-04
+catalog_root: /home/hermes/dea-catalog-processes
+summary:
+  total_records: 3733
+  by_level:
+    L0: 49
+    L1: 50
+    L2: 148
+    L3: 581
+    L4: 2901
+    '?': 4
+  by_rule:
+    DOC-016: 3
+    DOC-017: 0
+    DOC-018: 49
+    DOC-019: 0
+    DOC-020: 0
+  total_findings: 52
+  advisory_findings: 52
+findings:
+- rule: DOC-016
+  record_id: dea:contrib-bp-manage-customer-relationship
+  level: '?'
+  profile: null
+  diagnostic: no profile resolved for (type, level); EXT-07 template not applicable
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-ao-activate-kusw2u
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-ao-build-pjk4rz
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-ao-conceive-wtq4cr
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-ao-design-a4hq2r
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-ao-improve-qkmh6b
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-ao-operate-zfevmp
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-ao-retire-3kqe9c
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-eo-activate-xdfscw
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-eo-build-zwkhxc
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-eo-conceive-mxmtzq
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-eo-design-kxdfnz
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-eo-improve-pka6dk
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-eo-operate-ydqb96
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-eo-retire-nw3ynf
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-fa-activate-yrhcfm
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-fa-build-pztsp9
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-fa-conceive-phabh2
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-fa-design-4j8evh
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-fa-improve-haqf4w
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-fa-operate-afew7e
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-fa-retire-64q5p9
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-ge-activate-hxtfcv
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-ge-build-52hjrc
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-ge-conceive-b5xwpd
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-ge-design-3f2gjr
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-ge-improve-c78ppp
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-ge-operate-hb2dac
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-016
+  record_id: dea:research-l2-admission-dea-process-effect-regulator-mandated-governance-unwind
+  level: '?'
+  profile: null
+  diagnostic: no profile resolved for (type, level); EXT-07 template not applicable
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-ge-retire-kndw6x
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-pr-activate-mwq7bj
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-pr-build-a46hp7
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-pr-conceive-6xztsq
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-pr-design-hrcdy4
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-pr-improve-k8phkn
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-pr-operate-pwue5a
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-pr-retire-2cusde
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-pv-activate-f7kne7
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-pv-build-ygbmxb
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-pv-conceive-fe9awk
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-pv-design-8dhwpn
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-pv-improve-wpyfx7
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-pv-operate-ewpwjc
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-pv-retire-eeck6d
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-sd-activate-ghaub8
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-sd-build-gmzrrm
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-sd-conceive-ucb3gx
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-sd-design-g3es76
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-sd-improve-ft9k5f
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-sd-operate-5cs5ee
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-018
+  record_id: processes:pc-sd-retire-zxnc3c
+  level: L0
+  profile: dea:profile-readme-l0-process-context-v2
+  diagnostic: Relationships table is missing
+  advisory: true
+- rule: DOC-016
+  record_id: dea:catalog-processes
+  level: '?'
+  profile: null
+  diagnostic: no profile resolved for (type, level); EXT-07 template not applicable
+  advisory: true

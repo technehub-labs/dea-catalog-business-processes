@@ -124,6 +124,8 @@ GATES: list[tuple[str, bool, list[str]]] = [
      True, ["python", "scripts/check_authorship.py", "--strict"]),  # CR-BP-118; blocking
     ("[33] Entity System (CR-BP-123 / CR-BP-125; ES-001..ES-005)",
      True, ["python", "scripts/check_entity_system.py", "--strict"]),  # CR-BP-123/125; blocking (Stage 6+)
+    ("[34] Documentation Profile - Generator and Validator (CR-BP-94-EXT-04; DOC-016..020)",
+     False, ["python", "scripts/validate_readme_structure.py", "--catalog-root", "."]),  # CR-BP-94-EXT-04; advisory (EXT-06 flips to blocking)
 ]
 
 
