@@ -126,6 +126,8 @@ GATES: list[tuple[str, bool, list[str]]] = [
      True, ["python", "scripts/check_entity_system.py", "--strict"]),  # CR-BP-123/125; blocking (Stage 6+)
     ("[34] Documentation Profile - Generator and Validator (CR-BP-94-EXT-04; DOC-016..020)",
      False, ["python", "scripts/validate_readme_structure.py", "--catalog-root", "."]),  # CR-BP-94-EXT-04; advisory (EXT-06 flips to blocking)
+    ("[35] Decomposition Reconciliation (CR-BP-94-EXT-05; DOC-021..025)",
+     False, ["python", "scripts/check_decomposition_reconciliation.py", "--catalog-root", "."]),  # CR-BP-94-EXT-05; advisory (EXT-06 flips to blocking)
 ]
 
 
