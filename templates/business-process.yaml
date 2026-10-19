@@ -148,26 +148,57 @@ metadata:
 # structure is enforced by scripts/check_l2_qualification.py.
 # Back-compat: existing pre-CR-BP-96 BP records remain conformant without
 # these fields (advisory passes vacuously when the field is absent).
-# Backfill across the existing 139 BP records is the work of CR-BP-99 or a
+# Backfill across the existing 145 BP records is the work of CR-BP-99 or a
 # dedicated L2 enrichment tranche, NOT of CR-BP-96.
+# CR-BP-94-EXT-12 EXTENDS the inputs/transformation/outputs structures with
+# the optional attributes (type, required, acceptance_criteria, validation,
+# provenance, quality_attributes) and ADDS the new optional top-level
+# fields `interfaces:` and `dependencies:`. The extensions are additive;
+# existing records that use only the CR-BP-96 attributes continue to
+# validate. See the EXT-12 doc at docs/inputs-outputs-interface-semantics.md
+# (landed under PR #181).
 # -----------------------------------------------------------------------------
 
-# inputs:                              # BP-QUAL-003: each entry must have id/name/description/source.
+# inputs:                              # BP-QUAL-003: each entry has id/name/description/source (CR-BP-96 baseline).
+#                                     # EXT-12 EXTENDS each entry with the OPTIONAL attributes:
+#                                     #   type, required, acceptance_criteria, validation, provenance
+#                                     #   (per EXT-12 §6.2). The CR-BP-96 attributes are preserved.
 #   - id: <input-id>
 #     name: <input name>
 #     description: |
 #       <What this input represents.>
 #     source: <source entity id or free-text origin>
+#     type: information | business_object | request | decision | transaction | material | document | external_data | prior_process_output
+#     required: true | false
+#     acceptance_criteria: |
+#       <Conditions for acceptable use.>
+#     validation: |
+#       <Applicable validation requirements.>
+#     provenance:
+#       source: standard | governance | interview | artifact | regulation
+#       ref: <uri>
 
 # transformation: |                   # BP-QUAL-004: non-empty string OR non-empty list of step objects.
+#                                     # EXT-12 §7 may extend with structured steps; CR-BP-96 baseline preserved.
 #   <One-sentence description of how inputs become outputs.>
 
-# outputs:                             # BP-QUAL-005: each entry must have id/name/description/consumer.
+# outputs:                             # BP-QUAL-005: each entry has id/name/description/consumer (CR-BP-96 baseline).
+#                                     # EXT-12 EXTENDS each entry with the OPTIONAL attributes:
+#                                     #   type, acceptance_criteria, quality_attributes, provenance
+#                                     #   (per EXT-12 §8.2). The CR-BP-96 attributes are preserved.
 #   - id: <output-id>
 #     name: <output name>
 #     description: |
 #       <What this output represents.>
 #     consumer: <consumer entity id or free-text destination>
+#     type: information | business_object | decision | service_result | changed_object | document | report
+#     acceptance_criteria: |
+#       <Conditions defining acceptable output.>
+#     quality_attributes:
+#       - <quality-1>
+#     provenance:
+#       source: standard | governance | interview | artifact | regulation
+#       ref: <uri>
 
 # responsibility: |                   # BP-QUAL-008: non-empty string OR non-empty object.
 #   <The role or capability responsible for executing this process.>
@@ -178,6 +209,70 @@ metadata:
 #     - <inclusion-1>
 #   exclusions:
 #     - <exclusion-1>
+
+# -----------------------------------------------------------------------------
+# OPTIONAL: interfaces and dependencies (CR-BP-94-EXT-12; new top-level fields).
+# These are the EXT-12 routed-gap closures. They are NEW L2 top-level
+# optional fields introduced under PR #181. Existing records remain
+# conformant without them. The EXT-10 regression test is updated to
+# acknowledge the closure of the interface + dependency gaps.
+# -----------------------------------------------------------------------------
+
+# interfaces:                          # EXT-12 §10: business + system + information interfaces.
+#   - id: <interface-id>
+#     name: <interface name>
+#     description: |
+#       <What this interface represents.>
+#     type: human | organizational | information | system | physical | contractual | regulatory
+#     participants:
+#       - <participant-1>
+#       - <participant-2>
+#     exchange_purpose: |
+#       <What is exchanged and why.>
+#     format_or_standard: <where established>
+#     source:
+#       ref: <uri>
+#   - id: <interface-id-2>
+#     ...
+
+# dependencies:                        # EXT-12 §11: material dependencies.
+#   - id: <dependency-id>
+#     target: <dependent entity, resource, service, or condition>
+#     type: <dependency type from the controlled vocabulary>
+#     business_consequence: |
+#       <What happens if the dependency is unavailable.>
+#     criticality: high | medium | low
+#     source:
+#       ref: <uri>
+
+# -----------------------------------------------------------------------------
+# OPTIONAL: trigger categories (CR-BP-94-EXT-12; type sub-field on the
+# existing trigger field). The CR-BP-94 trigger remains the prose
+# description (required, BP-C1); the EXT-12 type sub-field is optional
+# and classifies the trigger per the controlled vocabulary.
+# -----------------------------------------------------------------------------
+
+# trigger: |                           # BP-C1: trigger must be non-empty; describes when the process is invoked.
+#   <A new <BP purpose> is needed because <condition>.>
+# trigger_type: event_driven | time_driven | request_driven | condition_driven | decision_driven | external_obligation_driven
+
+# -----------------------------------------------------------------------------
+# OPTIONAL: preconditions (CR-BP-94-EXT-12; routed-gap closure).
+# Each entry has id, name, description, scope, established_by, verification,
+# consequence_if_not_met. The validator (IT-010 + EXT-12 §5.2) confirms the
+# distinction from input validation rules.
+# -----------------------------------------------------------------------------
+
+# preconditions:                      # EXT-12 §5.2
+#   - id: <precondition-id>
+#     name: <precondition name>
+#     description: |
+#       <The condition that must hold.>
+#     scope: process | activity | task | external
+#     established_by: <entity or source>
+#     verification: <how the precondition is verified>
+#     consequence_if_not_met: |
+#       <What happens if the condition is not satisfied.>
 
 # -----------------------------------------------------------------------------
 # Optional: links + activity_references (back-references to L3 Activities).
