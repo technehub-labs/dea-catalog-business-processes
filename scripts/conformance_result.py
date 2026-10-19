@@ -138,6 +138,8 @@ GATES: list[tuple[str, bool, list[str]]] = [
      False, ["python", "scripts/check_business_rules_controls_exceptions_ext14.py", "--catalog-root", "."]),  # CR-BP-94-EXT-14; ADVISORY (PR-183 lands; flipped to blocking under CR-BP-94-EXT-23; final tranche gate of the 5-gate semantic-model tranche)
     ("[40] Evidence, Provenance, Confidence (CR-BP-94-EXT-15; EV-001..EV-010)",
      False, ["python", "scripts/check_evidence_provenance_ext15.py", "--catalog-root", "."]),  # CR-BP-94-EXT-15; ADVISORY (PR-184 lands; flipped to blocking under CR-BP-94-EXT-23; first slice of the engineering and governance readiness tranche)
+    ("[41] Authoring Methodology (CR-BP-94-EXT-16; AM-001..AM-010)",
+     False, ["python", "scripts/check_authoring_methodology_ext16.py", "--catalog-root", "."]),  # CR-BP-94-EXT-16; ADVISORY (PR-185 lands; flipped to blocking under CR-BP-94-EXT-23; second slice of the engineering and governance readiness tranche)
 ]
 
 

@@ -143,6 +143,53 @@ metadata:
         <Concise description.>
 
 # -----------------------------------------------------------------------------
+# OPTIONAL: authoring state (CR-BP-94-EXT-16; the methodology metadata).
+# This block records the 14-step authoring lifecycle (REQ-16-01) for the
+# entity: who authored it, who reviewed it, what state it is in, what
+# research was performed, whether AI assistance was used, and the 8
+# quality review dimensions (REQ-16-11). It is the bridge between the
+# EXT-15 evidence/provenance framework and the EXT-17 tooling (which
+# will consume this state to drive batch orchestration and reporting).
+# -----------------------------------------------------------------------------
+
+# metadata.authoring:                    # EXT-16 REQ-16-01; the 14-step lifecycle state
+#   methodology_version: 1.0.0            # References the EXT-16 methodology version
+#   state: not_started | planning | researching | drafted | under_review | approved | published | rejected | withdrawn
+#   research_plan:
+#     scope: <what was researched>
+#     sources_consulted:
+#       - <source-1>
+#       - <source-2>
+#     gaps_identified:
+#       - <gap-1>
+#     blockers:
+#       - <blocker-1>
+#   author: <author role or person>
+#   author_date: <YYYY-MM-DD>
+#   reviewer: <reviewer role or person>
+#   review_date: <YYYY-MM-DD>
+#   review_outcome: approved | rejected | revisions_required
+#   ai_assistance:                       # EXT-16 REQ-16-09
+#     used: true | false
+#     tool: <tool name>
+#     role: source_discovery | summarisation | extraction | harmonisation | gap_analysis | drafting | structural_validation
+#     validation: independently_validated | pending_validation
+#   evidence_inheritance:
+#     from_parent: <parent entity id or null>
+#     inherited_fields:
+#       - <field name>
+#   source_priority_used: organisational_policy | owner_confirmation | operational_documentation | system_architecture | direct_observation | sme_confirmation | external_authority | secondary_research | analyst_inference
+#   quality_dimensions:                  # EXT-16 REQ-16-11; the 8 review dimensions
+#     semantic_correctness: pass | fail | n_a
+#     decomposition_appropriateness: pass | fail | n_a
+#     evidence_quality: pass | fail | n_a
+#     parent_child_consistency: pass | fail | n_a
+#     cross_catalogue_validity: pass | fail | n_a
+#     profile_completeness: pass | fail | n_a
+#     publication_safety: pass | fail | n_a
+#     readme_consistency: pass | fail | n_a
+
+# -----------------------------------------------------------------------------
 # OPTIONAL: inputs / transformation / outputs / responsibility / boundary.
 # CR-BP-96 BP-QUAL-003/004/005/008/009 (advisory). When present, the
 # structure is enforced by scripts/check_l2_qualification.py.

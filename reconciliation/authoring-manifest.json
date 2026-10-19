@@ -1,0 +1,61 @@
+{
+  "manifest_schema_version": "1",
+  "generated_at": "2026-10-19",
+  "generator": "scripts/check_authoring_methodology_ext16.py",
+  "parent_cr": "CR-BP-94-EXT-16",
+  "catalog_root": "/home/hermes/dea-catalog-processes",
+  "summary": {
+    "total_records": 3882,
+    "total_findings": 0,
+    "by_rule": {}
+  },
+  "findings": [],
+  "controlled_vocabularies": {
+    "authoring_states": [
+      "approved",
+      "drafted",
+      "not_started",
+      "planning",
+      "published",
+      "rejected",
+      "researching",
+      "under_review",
+      "withdrawn"
+    ],
+    "ai_validation_states": [
+      "independently_validated",
+      "pending_validation"
+    ],
+    "source_priority_values": [
+      "analyst_inference",
+      "direct_observation",
+      "external_authority",
+      "operational_documentation",
+      "organisational_policy",
+      "owner_confirmation",
+      "secondary_research",
+      "sme_confirmation",
+      "system_architecture"
+    ],
+    "quality_dimensions": [
+      "cross_catalogue_validity",
+      "decomposition_appropriateness",
+      "evidence_quality",
+      "parent_child_consistency",
+      "profile_completeness",
+      "publication_safety",
+      "readme_consistency",
+      "semantic_correctness"
+    ],
+    "quality_values": [
+      "fail",
+      "n_a",
+      "pass"
+    ],
+    "review_outcomes": [
+      "approved",
+      "rejected",
+      "revisions_required"
+    ]
+  }
+}
