@@ -1,0 +1,57 @@
+{
+  "manifest_schema_version": "1",
+  "generated_at": "2026-10-19",
+  "generator": "scripts/check_evidence_provenance_ext15.py",
+  "parent_cr": "CR-BP-94-EXT-15",
+  "catalog_root": "/home/hermes/dea-catalog-processes",
+  "summary": {
+    "total_records": 3882,
+    "total_findings": 0,
+    "by_rule": {}
+  },
+  "findings": [],
+  "controlled_vocabularies": {
+    "source_classes": [
+      "ai_assisted_research",
+      "analyst_inference",
+      "authoritative_document",
+      "direct_observation",
+      "external_authority",
+      "operational_record",
+      "owner_confirmation",
+      "secondary_reference",
+      "subject_matter_expert",
+      "system_documentation"
+    ],
+    "confidentiality_classes": [
+      "confidential",
+      "internal",
+      "public",
+      "restricted"
+    ],
+    "confidence_levels": [
+      "conflicting",
+      "high",
+      "low",
+      "medium",
+      "unverified"
+    ],
+    "verification_statuses": [
+      "disputed",
+      "not_reviewed",
+      "rejected",
+      "superseded",
+      "under_review",
+      "verified"
+    ],
+    "uncertainty_states": [
+      "confirmed_absence",
+      "conflicting",
+      "deferred_with_reason",
+      "inherited",
+      "not_applicable",
+      "not_yet_assessed",
+      "unknown"
+    ]
+  }
+}

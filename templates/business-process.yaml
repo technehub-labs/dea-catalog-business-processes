@@ -332,6 +332,71 @@ metadata:
 #   - id: <deviation-id-2>
 #     ...
 
+# -----------------------------------------------------------------------------
+# OPTIONAL: evidence + provenance (CR-BP-94-EXT-15).
+# Every material operational assertion (inputs, outputs, transformation,
+# interfaces, dependencies, responsibility, accountability, roles, raci,
+# business_rules, controls, exceptions, deviations) is associated with
+# one or more provenance records that establish the evidential basis,
+# the confidence in the assertion and the verification status. The
+# top-level provenance[] block is the canonical evidence record for
+# the BP. The per-assertion provenance sub-structures (introduced in
+# EXT-12 and extended here) carry the local confidence and
+# verification_status fields.
+# -----------------------------------------------------------------------------
+
+# provenance:                            # EXT-15 §REQ-15-03; the canonical evidence record.
+#   - id: <provenance-id>
+#     source:
+#       title: <source title or description>
+#       source_class: authoritative_document | system_documentation | owner_confirmation | subject_matter_expert | direct_observation | operational_record | external_authority | secondary_reference | analyst_inference | ai_assisted_research
+#       owner: <source owner or issuing authority>
+#       location: <uri or location>
+#       section: <section, page, or fragment reference>
+#       publication_date: <YYYY-MM-DD>
+#       accessed_date: <YYYY-MM-DD>
+#       source_version: <version>
+#       confidentiality: public | internal | confidential | restricted
+#     assertions_supported:
+#       - <assertion text or id>
+#     evidence_limitations: |
+#       <Limitations on the source's evidence.>
+#     reviewer: <role or person>
+#     review_status: not_reviewed | under_review | verified | rejected | superseded | disputed
+#     review_date: <YYYY-MM-DD>
+#   - id: <provenance-id-2>
+#     ...
+
+# -----------------------------------------------------------------------------
+# Per-assertion confidence + verification_status extension.
+# Each EXT-12 sub-structure (inputs[].provenance, outputs[].provenance,
+# interfaces[].source, etc.) MAY carry two additional fields: confidence
+# (5-value vocabulary) and verification_status (6-value vocabulary).
+# These are EXT-15 additions to the EXT-12 baseline.
+# -----------------------------------------------------------------------------
+
+# inputs[].provenance.confidence: high | medium | low | unverified | conflicting
+# inputs[].provenance.verification_status: not_reviewed | under_review | verified | rejected | superseded | disputed
+# inputs[].provenance.uncertainty_state: unknown | not_applicable | not_yet_assessed | inherited | deferred_with_reason | conflicting | confirmed_absence
+
+# inputs[].provenance:
+#   source: <provenance-id referencing provenance[] above OR a free-text source description>
+#   confidence: high
+#   verification_status: verified
+#   verification_date: <YYYY-MM-DD>
+#   verification_reviewer: <role or person>
+#   uncertainty_state: not_applicable
+
+# Uncertainty state (EXT-15 §REQ-15-06): explicit acknowledgement of
+# what is known, what is not, and why. The 7 values:
+#   unknown                  - information has not been obtained
+#   not_applicable           - the assertion is not applicable to this entity
+#   not_yet_assessed         - the assertion has not yet been researched
+#   inherited                - the assertion is inherited from a parent entity
+#   deferred_with_reason     - the assertion is deferred (the reason is recorded)
+#   conflicting              - the evidence contains unresolved material contradictions
+#   confirmed_absence        - the characteristic has been confirmed as absent
+
 # boundary:                            # BP-QUAL-009: non-empty string OR non-empty object.
 #   scope: <boundary scope statement>
 #   inclusions:
