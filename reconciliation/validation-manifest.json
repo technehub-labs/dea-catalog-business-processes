@@ -1,6 +1,6 @@
 {
   "manifest_schema_version": 1,
-  "generated_at": "2026-10-18",
+  "generated_at": "2026-10-20",
   "generator": "scripts/validate_readme_structure.py",
   "parent_cr": "CR-BP-94-EXT-04",
   "catalog_root": "/home/hermes/dea-catalog-processes",

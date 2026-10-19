@@ -1,0 +1,13 @@
+{
+  "register_schema_version": "1",
+  "generated_at": "2026-10-19",
+  "parent_cr": "CR-BP-94-EXT-22",
+  "orphaned_l2_without_l1": [
+    "processes:process-ge-conceive-e6jx6s"
+  ],
+  "l2_without_l3_decomposition": [
+    "processes:process-ge-conceive-e6jx6s"
+  ],
+  "l3_without_l4_decomposition": [],
+  "l1_without_l2_members": []
+}

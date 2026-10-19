@@ -1,0 +1,56 @@
+{
+  "manifest_schema_version": "1",
+  "generated_at": "2026-10-19",
+  "generator": "scripts/check_conformance_posture_ext23.py",
+  "parent_cr": "CR-BP-EXT-23",
+  "summary": {
+    "total_findings": 4,
+    "by_rule": {
+      "C23-03": 4
+    }
+  },
+  "findings": [
+    {
+      "rule": "C23-03",
+      "where": "[44] L2 Business Process Backfill (CR-BP-94-EXT-19; L2-001..L2-012)",
+      "diagnostic": "gate '[44] L2 Business Process Backfill (CR-BP-94-EXT-19; L2-001..L2-012)' is deterministically enforceable but its population carries 733 open findings; the gate is deferred, not promoted, until the population is reconciled",
+      "severity": "info"
+    },
+    {
+      "rule": "C23-03",
+      "where": "[45] L3 Activity Backfill (CR-BP-94-EXT-20; L3-001..L3-014)",
+      "diagnostic": "gate '[45] L3 Activity Backfill (CR-BP-94-EXT-20; L3-001..L3-014)' is deterministically enforceable but its population carries 4061 open findings; the gate is deferred, not promoted, until the population is reconciled",
+      "severity": "info"
+    },
+    {
+      "rule": "C23-03",
+      "where": "[46] L4 Task Backfill (CR-BP-94-EXT-21; L4-001..L4-014)",
+      "diagnostic": "gate '[46] L4 Task Backfill (CR-BP-94-EXT-21; L4-001..L4-014)' is deterministically enforceable but its population carries 5800 open findings; the gate is deferred, not promoted, until the population is reconciled",
+      "severity": "info"
+    },
+    {
+      "rule": "C23-03",
+      "where": "[47] Decomposition Reconciliation (CR-BP-94-EXT-22; R22-01..R22-12)",
+      "diagnostic": "gate '[47] Decomposition Reconciliation (CR-BP-94-EXT-22; R22-01..R22-12)' is deterministically enforceable but its population carries 8 open findings; the gate is deferred, not promoted, until the population is reconciled",
+      "severity": "info"
+    }
+  ],
+  "posture_summary": {
+    "total_registered_gates": 52,
+    "by_enforcement_class": {
+      "content": 25,
+      "semantic": 6,
+      "structural": 21
+    },
+    "by_enforcement_tier": {
+      "T1": 21,
+      "T2": 25,
+      "T3": 6
+    },
+    "by_status_change": {
+      "unchanged": 52
+    },
+    "current_blocking_count": 29,
+    "target_blocking_count": 29
+  }
+}

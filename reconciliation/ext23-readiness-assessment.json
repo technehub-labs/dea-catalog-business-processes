@@ -1,0 +1,51 @@
+{
+  "assessment_schema_version": "1",
+  "generated_at": "2026-10-19",
+  "parent_cr": "CR-BP-94-EXT-22",
+  "enables": "CR-BP-94-EXT-23 (Operational Documentation Conformance Gates)",
+  "automatically_enforceable": [
+    "R22-01 inventory completeness",
+    "R22-02 structural hierarchy validation",
+    "R22-03 duplicate canonical identifier detection",
+    "R22-04 L2-to-L3 decomposition coverage",
+    "R22-05 L3-to-L4 decomposition coverage",
+    "R22-06 L1-to-L2 membership",
+    "R22-07 L0-L1 contextual consistency",
+    "R22-08 L0 materialisation",
+    "R22-12 L0-L1 landscape coverage"
+  ],
+  "requires_human_review": [
+    "R22-09 granularity assessment",
+    "R22-10 duplicate and overlap resolution",
+    "R22-11 functional decomposition adequacy",
+    "parent-child contribution adequacy (REQ-22-05)",
+    "parent-to-child coverage adequacy (REQ-22-06)",
+    "boundary and operational semantic alignment (REQ-22-08..11)"
+  ],
+  "evidence_assessment_only": [
+    "semantic contribution status per matrix record",
+    "operational alignment status per matrix record"
+  ],
+  "deferred": [
+    "the EXT-15 canonical provenance[] migration on the L4 population",
+    "the EXT-16 metadata.authoring migration on the L4 population"
+  ],
+  "known_limitations": [
+    "semantic status and operational alignment remain unresolved in the initial matrix baseline; they are evidence-led and require human review",
+    "boundary alignment is not machine-comparable between L2, L3 and L4 in the current canonical representation"
+  ],
+  "approved_exceptions": [],
+  "residual_risks": [
+    "1 L2 Business Process has no L3 decomposition and requires structural remediation",
+    "1 L2 Business Process is not composed by any L1 Process Group",
+    "6 L1-to-L2 compositions carry an L0 context mismatch",
+    "49 L0 Process Contexts are referenced but not materialised"
+  ],
+  "findings_by_rule": {
+    "R22-04": 1,
+    "R22-06": 1,
+    "R22-07": 6
+  },
+  "total_findings": 8,
+  "readiness_statement": "EXT-23 may enforce the deterministic structural rules automatically; the semantic rules must remain evidence-led and subject to human review."
+}
