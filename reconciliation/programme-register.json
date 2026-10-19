@@ -349,11 +349,11 @@
     },
     {
       "id": "CR-BP-94-EXT-23",
-      "title": "Operational Documentation Conformance Gates",
+      "title": "Operational Documentation Conformance Framework and Automated Quality Gates",
       "initiative": "E: Validation and conformance",
       "status": "implemented",
-      "implementation_status": "foundation landed (PR #191): the gate inventory + the 4-class enforcement taxonomy + the conformance posture report; 7 gates promoted to blocking (T1/T2, 0 open findings); 4 gates deferred with rationale; the EXT-24 governance requirements identified",
-      "scope_kind": "gate-posture + enforcement-classification (catalogue-wide)",
+      "implementation_status": "foundation landed (PR #192; supersedes the interim gate-posture CR from PR #191): the version-controlled conformance rule catalogue (52 rules, each carrying all 16 REQ-23-01 attributes) + the requirement-to-rule traceability matrix (246 requirements traced from EXT-08..EXT-23: 155 REQ + 91 AC across 15 CRs; 212 automated, 33 human_review, 1 evidence_assessment) + the controlled vocabularies (9 dimensions, 8 layers, 5 C1-C5 classifications, 4 severities, 6 outcomes, 5 exception categories) + the exception lifecycle + the deferral model + the progressive enforcement policy (5 stages; current stage blocking_for_new_defects) + the validation report + the catalogue-level dashboard with no aggregate score (REQ-23-26, section 11.2) + gate [48] ADVISORY (the framework's own self-check); 22/22 tests pass; 0 framework findings; D-004 clean",
+      "scope_kind": "conformance-framework + rule-catalogue + traceability-matrix + report + dashboard (catalogue-wide)",
       "touches_schemas": false,
       "touches_templates": false,
       "touches_scripts": true,
@@ -366,7 +366,7 @@
       "successors": [
         "CR-BP-94-EXT-24"
       ],
-      "path": "change-requests/CR-BP-EXT-23-operational-documentation-conformance-gates.md"
+      "path": "change-requests/CR-BP-EXT-23-operational-documentation-conformance-framework-and-automated-quality-gates.md"
     },
     {
       "id": "CR-BP-94-EXT-24",

@@ -1,0 +1,16 @@
+{
+  "manifest_schema_version": "1",
+  "generated_at": "2026-10-20",
+  "generator": "scripts/check_conformance_framework_ext23.py",
+  "parent_cr": "CR-BP-EXT-23",
+  "catalog_root": "/home/hermes/dea-catalog-processes",
+  "summary": {
+    "total_findings": 0,
+    "by_severity": {},
+    "by_framework_rule": {},
+    "conformance_rules": 52,
+    "requirements_traced": 246,
+    "overall_outcome": "passed"
+  },
+  "findings": []
+}
