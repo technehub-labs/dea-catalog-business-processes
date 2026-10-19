@@ -1,0 +1,22 @@
+{
+  "report_schema_version": "1",
+  "generated_at": "2026-10-19",
+  "generator": "scripts/orchestrate_backfill.py",
+  "parent_cr": "CR-BP-94-EXT-17",
+  "catalog_root": "/home/hermes/dea-catalog-processes",
+  "selection": {
+    "state_filter": null,
+    "total_selected_records": 3882
+  },
+  "mode": "dry-run",
+  "per_validator_summary": {
+    "check_profile_registry_ext11.py": 0,
+    "check_inputs_outputs_interfaces_ext12.py": 0,
+    "check_responsibility_accountability_ext13.py": 0,
+    "check_business_rules_controls_exceptions_ext14.py": 0,
+    "check_evidence_provenance_ext15.py": 0,
+    "check_authoring_methodology_ext16.py": 0
+  },
+  "total_findings": 0,
+  "no_automatic_invention": true
+}

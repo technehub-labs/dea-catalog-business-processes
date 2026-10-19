@@ -1,0 +1,98 @@
+{
+  "report_schema_version": "1",
+  "generated_at": "2026-10-19",
+  "generator": "scripts/report_catalogue_status.py",
+  "parent_cr": "CR-BP-94-EXT-17",
+  "catalog_root": "/home/hermes/dea-catalog-processes",
+  "rp_001_per_level_counts": {
+    "L0": 0,
+    "L1": 49,
+    "L2": 146,
+    "L3": 580,
+    "L4": 2900,
+    "other": 207
+  },
+  "rp_002_profile_completeness": {
+    "records_with_ext11_v3_profile": 0,
+    "records_with_ext15_evidence": 0,
+    "records_with_ext16_authoring_present": false
+  },
+  "rp_003_evidence_coverage": {
+    "records_with_provenance": 0,
+    "records_with_provenance_per_assertion": 0,
+    "records_with_confidence": 0,
+    "records_with_verification_status": 0,
+    "records_with_uncertainty_state": 0,
+    "records_with_ai_assisted_source": 0
+  },
+  "rp_004_verification_status_distribution": {
+    "verified": 0,
+    "under_review": 0,
+    "not_reviewed": 0,
+    "rejected": 0,
+    "superseded": 0,
+    "disputed": 0,
+    "absent": 3675
+  },
+  "rp_005_outstanding_warnings_errors": {
+    "per_validator": {
+      "profile": {
+        "total_findings": 0,
+        "by_rule": {},
+        "manifest_exists": true
+      },
+      "inputs_outputs": {
+        "total_findings": 0,
+        "by_rule": {},
+        "manifest_exists": true
+      },
+      "responsibility_accountability": {
+        "total_findings": 0,
+        "by_rule": {},
+        "manifest_exists": true
+      },
+      "governance": {
+        "total_findings": 0,
+        "by_rule": {},
+        "manifest_exists": true
+      },
+      "evidence": {
+        "total_findings": 0,
+        "by_rule": {},
+        "manifest_exists": true
+      },
+      "authoring": {
+        "total_findings": 0,
+        "by_rule": {},
+        "manifest_exists": true
+      },
+      "tooling": {
+        "total_findings": 0,
+        "by_rule": {},
+        "manifest_exists": true
+      }
+    }
+  },
+  "rp_006_broken_references": {
+    "manifest_exists": true
+  },
+  "rp_007_parent_child_reconciliation": {
+    "manifest_exists": true
+  },
+  "rp_008_entities_awaiting_owner_review": 0,
+  "rp_009_backfill_completion_status": {
+    "published": 0,
+    "distribution": {
+      "not_started": 0,
+      "planning": 0,
+      "researching": 0,
+      "drafted": 0,
+      "under_review": 0,
+      "approved": 0,
+      "published": 0,
+      "rejected": 0,
+      "withdrawn": 0,
+      "absent": 3882
+    }
+  }
+}
