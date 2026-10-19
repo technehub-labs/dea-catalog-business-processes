@@ -1,0 +1,21 @@
+{
+  "matrix_schema_version": "1",
+  "generated_at": "2026-10-19",
+  "generator": "scripts/check_l2_backfill_ext19.py",
+  "parent_cr": "CR-BP-94-EXT-19 (EXT-20 extension in EXT-21)",
+  "purpose": "the L2-to-L3 reconciliation matrix (mandatory EXT-19 deliverable per the user recommendation; extended to L2-to-L3-to-L4 during EXT-20 and EXT-21)",
+  "total_l2_entities": 146,
+  "buckets": {
+    "0": 1,
+    "1_to_3": 0,
+    "4_to_7": 145,
+    "8_or_more": 0
+  },
+  "l2_processes_with_no_l3_children": [
+    "processes:process-ge-conceive-e6jx6s"
+  ],
+  "structural_quality_observations": {
+    "decomposition_gaps_count": 1,
+    "fully_decomposed_l2_count": 145
+  }
+}

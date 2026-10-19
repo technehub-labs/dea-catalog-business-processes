@@ -1,0 +1,4242 @@
+{
+  "inventory_schema_version": "1",
+  "generated_at": "2026-10-19",
+  "generator": "scripts/check_l2_backfill_ext19.py",
+  "parent_cr": "CR-BP-94-EXT-19",
+  "total_l2_entities": 146,
+  "inventory": [
+    {
+      "id": "processes:process-sd-improve-9wgvaf",
+      "name": "Adapt Strategic Direction",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-sd-improve-ft9k5f",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-sd-improve-qxsaqc",
+        "processes:activity-sd-improve-dhkxf6",
+        "processes:activity-sd-improve-m6ww6z",
+        "processes:activity-sd-improve-r5jbb6"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-sd-improve-aqbrm7",
+      "name": "Refresh Objectives and Targets",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-sd-improve-ft9k5f",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-sd-improve-dqccp5",
+        "processes:activity-sd-improve-ygmzmg",
+        "processes:activity-sd-improve-e2c2ue",
+        "processes:activity-sd-improve-6tdndg"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-sd-improve-duwd64",
+      "name": "Review Strategy Effectiveness",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-sd-improve-ft9k5f",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-sd-improve-mu6upn",
+        "processes:activity-sd-improve-pke2va",
+        "processes:activity-sd-improve-3pccaq",
+        "processes:activity-sd-improve-mfk5ab"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-build-tqybhd",
+      "name": "Provision Facilities",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-build-zwkhxc",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-build-napwac",
+        "processes:activity-eo-build-ds867n",
+        "processes:activity-eo-build-neek9x",
+        "processes:activity-eo-build-vggmrg"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-build-awy8dz",
+      "name": "Commission Production Line",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-build-zwkhxc",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-build-mymu7v",
+        "processes:activity-eo-build-7bmbzy",
+        "processes:activity-eo-build-tqqyb8",
+        "processes:activity-eo-build-jpj6tj"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-build-nmmmt6",
+      "name": "Acquire Technology Assets",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-build-zwkhxc",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-build-6335m6",
+        "processes:activity-eo-build-a5trnu",
+        "processes:activity-eo-build-xy53fb",
+        "processes:activity-eo-build-jg28xr"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-build-ba6ykz",
+      "name": "Build Logistics Network",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-build-zwkhxc",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-build-8x4ajc",
+        "processes:activity-eo-build-by2f8g",
+        "processes:activity-eo-build-6rz88v",
+        "processes:activity-eo-build-egr964"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-build-j9z3q4",
+      "name": "Build Delivery Capability",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-build-zwkhxc",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-build-5acbks",
+        "processes:activity-eo-build-fnyeud",
+        "processes:activity-eo-build-8ahmd5",
+        "processes:activity-eo-build-tq634n"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ge-build-mctdgc",
+      "name": "Codify Charters and Policies",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ge-build-52hjrc",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ge-build-fzx549",
+        "processes:activity-ge-build-cdd75w",
+        "processes:activity-ge-build-2je2u9",
+        "processes:activity-ge-build-f5yeny"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ge-build-rx7kt5",
+      "name": "Establish Risk and Control Apparatus",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ge-build-52hjrc",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ge-build-3nk745",
+        "processes:activity-ge-build-459rn2",
+        "processes:activity-ge-build-tj3qj3",
+        "processes:activity-ge-build-ptnpmg"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ge-build-3p38us",
+      "name": "Establish Governance Bodies",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ge-build-52hjrc",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ge-build-epqkej",
+        "processes:activity-ge-build-tp3aba",
+        "processes:activity-ge-build-p29x52",
+        "processes:activity-ge-build-5cjpnx"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ao-conceive-z6m6p5",
+      "name": "Conceive Workforce and Agent Mix",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ao-conceive-wtq4cr",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ao-conceive-njcgbs",
+        "processes:activity-ao-conceive-4tgrxr",
+        "processes:activity-ao-conceive-9mvxt3",
+        "processes:activity-ao-conceive-73s2vm"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ao-conceive-pnrhem",
+      "name": "Conceive Licensed or Regulated Agent Capacity",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ao-conceive-wtq4cr",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ao-conceive-v7g5se",
+        "processes:activity-ao-conceive-fmxtqr",
+        "processes:activity-ao-conceive-vnkqzf",
+        "processes:activity-ao-conceive-cqkwrm"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ao-conceive-ruxjvh",
+      "name": "Frame Organization Model",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ao-conceive-wtq4cr",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ao-conceive-rcyn7u",
+        "processes:activity-ao-conceive-m77sb9",
+        "processes:activity-ao-conceive-ycwkts",
+        "processes:activity-ao-conceive-5fytar"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ao-conceive-e3u8s2",
+      "name": "Frame Organization and Agent Strategy",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ao-conceive-wtq4cr",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ao-conceive-476rpj",
+        "processes:activity-ao-conceive-36aux4",
+        "processes:activity-ao-conceive-fyb9vc",
+        "processes:activity-ao-conceive-9p2cup"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-sd-conceive-3uredz",
+      "name": "Conceive Strategic Intent",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-sd-conceive-ucb3gx",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-sd-conceive-qu8vjv",
+        "processes:activity-sd-conceive-gdjvff",
+        "processes:activity-sd-conceive-e6epkt",
+        "processes:activity-sd-conceive-nb772h"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-sd-conceive-ahwvp5",
+      "name": "Develop Corporate Strategy",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-sd-conceive-ucb3gx",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-sd-conceive-uvhsrz",
+        "processes:activity-sd-conceive-w28h46",
+        "processes:activity-sd-conceive-e7z2am",
+        "processes:activity-sd-conceive-7tr4ax"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-sd-conceive-xa4h2k",
+      "name": "Frame Strategic Horizons",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-sd-conceive-ucb3gx",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-sd-conceive-h9ued3",
+        "processes:activity-sd-conceive-zz7qrg",
+        "processes:activity-sd-conceive-6dbxtu",
+        "processes:activity-sd-conceive-qayekb"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-sd-conceive-r93j3d",
+      "name": "Define Enterprise Purpose and Ambition",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-sd-conceive-ucb3gx",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-sd-conceive-28242h",
+        "processes:activity-sd-conceive-na8erc",
+        "processes:activity-sd-conceive-jmupn8",
+        "processes:activity-sd-conceive-9672ug"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-fa-build-ucfjgt",
+      "name": "Onboard Tax and Compliance Capability",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-fa-build-pztsp9",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-fa-build-5h2xk4",
+        "processes:activity-fa-build-b3qxke",
+        "processes:activity-fa-build-ek3cs4",
+        "processes:activity-fa-build-daw35b"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-fa-build-92v24c",
+      "name": "Build Budgeting and Forecasting Systems",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-fa-build-pztsp9",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-fa-build-jwt3uv",
+        "processes:activity-fa-build-nhup75",
+        "processes:activity-fa-build-dsxzrc",
+        "processes:activity-fa-build-v4regt"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-fa-build-d5kb5m",
+      "name": "Implement Financial Systems and Ledger",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-fa-build-pztsp9",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-fa-build-napuha",
+        "processes:activity-fa-build-ee89qu",
+        "processes:activity-fa-build-rbv7fk",
+        "processes:activity-fa-build-g2g6yw"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-fa-build-ydnzjc",
+      "name": "Secure Funding Facilities",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-fa-build-pztsp9",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-fa-build-2ccp49",
+        "processes:activity-fa-build-va7nxd",
+        "processes:activity-fa-build-hkt2qs",
+        "processes:activity-fa-build-xf2kdw"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pr-activate-6qzuve",
+      "name": "Onboard Regulated Party Relationship",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pr-activate-mwq7bj",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pr-activate-ncn924",
+        "processes:activity-pr-activate-q9pr4m",
+        "processes:activity-pr-activate-p53h54",
+        "processes:activity-pr-activate-y46zs2"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ao-retire-g3eyr8",
+      "name": "Conduct Regulated Workforce Wind-Down",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ao-retire-3kqe9c",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ao-retire-herzuz",
+        "processes:activity-ao-retire-uqgpmh",
+        "processes:activity-ao-retire-zmc7yk",
+        "processes:activity-ao-retire-sqdecn"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pv-design-8v4k89",
+      "name": "Design Product and Service Propositions",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pv-design-8dhwpn",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pv-design-vrmwad",
+        "processes:activity-pv-design-xgzh85",
+        "processes:activity-pv-design-45x29p",
+        "processes:activity-pv-design-z35bxd"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pv-design-a4c76s",
+      "name": "Design Packaging and Configuration",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pv-design-8dhwpn",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pv-design-shqa4v",
+        "processes:activity-pv-design-raq3ha",
+        "processes:activity-pv-design-yyrnq4",
+        "processes:activity-pv-design-su2rbe"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pv-design-9ckwf6",
+      "name": "Design Innovation Experiment",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pv-design-8dhwpn",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pv-design-hfczjv",
+        "processes:activity-pv-design-79sehr",
+        "processes:activity-pv-design-fms697",
+        "processes:activity-pv-design-mhyxnp"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ao-operate-ba8scr",
+      "name": "Operate Regulated Performance Oversight",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ao-operate-zfevmp",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ao-operate-8pqgha",
+        "processes:activity-ao-operate-j8k5p7",
+        "processes:activity-ao-operate-z4n9m2",
+        "processes:activity-ao-operate-b5v2k9"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ao-operate-87q5mk",
+      "name": "Operate Learning and Development",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ao-operate-zfevmp",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ao-operate-b6fecc",
+        "processes:activity-ao-operate-8mxujq",
+        "processes:activity-ao-operate-skjmyf",
+        "processes:activity-ao-operate-f669fn"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ao-operate-g4wp63",
+      "name": "Operate Agent Performance",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ao-operate-zfevmp",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ao-operate-yyqtzw",
+        "processes:activity-ao-operate-k5uvhg",
+        "processes:activity-ao-operate-duu9yw",
+        "processes:activity-ao-operate-vs4qaq"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ao-operate-38qyc6",
+      "name": "Operate Payroll and Benefits",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ao-operate-zfevmp",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ao-operate-h6hmqm",
+        "processes:activity-ao-operate-7k8xwy",
+        "processes:activity-ao-operate-gxarb3",
+        "processes:activity-ao-operate-8sc5gr"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ao-operate-dg9q4h",
+      "name": "Operate Time and Attendance",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ao-operate-zfevmp",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ao-operate-5myx8s",
+        "processes:activity-ao-operate-kyup4x",
+        "processes:activity-ao-operate-yzn584",
+        "processes:activity-ao-operate-c7xad6"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ao-operate-bd7mef",
+      "name": "Coordinate Collaboration",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ao-operate-zfevmp",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ao-operate-pxxmge",
+        "processes:activity-ao-operate-v356a4",
+        "processes:activity-ao-operate-xnd6yx",
+        "processes:activity-ao-operate-6r6m2g"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-fa-improve-2kemkq",
+      "name": "Evolve Treasury and Funding Model",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-fa-improve-haqf4w",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-fa-improve-capmsa",
+        "processes:activity-fa-improve-4mju3t",
+        "processes:activity-fa-improve-xjewfb",
+        "processes:activity-fa-improve-grdfaj"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-fa-improve-emqpgr",
+      "name": "Conduct Cost Optimization Review",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-fa-improve-haqf4w",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-fa-improve-qa3vqq",
+        "processes:activity-fa-improve-s2fjfj",
+        "processes:activity-fa-improve-rqws4s",
+        "processes:activity-fa-improve-bxqsee"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-fa-improve-cdtsbq",
+      "name": "Refine Financial Controls and Policies",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-fa-improve-haqf4w",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-fa-improve-6j2xpt",
+        "processes:activity-fa-improve-ssfp68",
+        "processes:activity-fa-improve-nsgnav",
+        "processes:activity-fa-improve-g6x3fj"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-sd-build-q4nf9g",
+      "name": "Build Strategic Plan",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-sd-build-gmzrrm",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-sd-build-7z99jy",
+        "processes:activity-sd-build-y8cfhp",
+        "processes:activity-sd-build-mttqvf",
+        "processes:activity-sd-build-c2ky47"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-sd-build-2pkz5n",
+      "name": "Set Resource Allocation Priorities",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-sd-build-gmzrrm",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-sd-build-ys83dr",
+        "processes:activity-sd-build-vgavkq",
+        "processes:activity-sd-build-25j2m7",
+        "processes:activity-sd-build-sn9sky"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-sd-build-9admqy",
+      "name": "Translate Strategic Choices into Initiatives",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-sd-build-gmzrrm",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-sd-build-u85tt9",
+        "processes:activity-sd-build-547hm5",
+        "processes:activity-sd-build-tp9jtk",
+        "processes:activity-sd-build-tjdzmd"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-sd-build-7n4prh",
+      "name": "Build Strategic Roadmap",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-sd-build-gmzrrm",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-sd-build-jfcx27",
+        "processes:activity-sd-build-3u6qkt",
+        "processes:activity-sd-build-htapw4",
+        "processes:activity-sd-build-yvecqq"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-retire-rpg6d4",
+      "name": "Decommission Enterprise Asset",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-retire-nw3ynf",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-retire-2xjudv",
+        "processes:activity-eo-retire-6gntey",
+        "processes:activity-eo-retire-h2dzg3",
+        "processes:activity-eo-retire-zkt7eq"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-sd-retire-umxf3c",
+      "name": "Sunset Regulated Strategic Plan",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-sd-retire-zxnc3c",
+      "parent_l1_resolves": false,
+      "l3_children_count": 7,
+      "l3_children_ids": [
+        "processes:activity-sd-retire-6m38cq",
+        "processes:activity-sd-retire-z2y3pr",
+        "processes:activity-sd-retire-a364uh",
+        "processes:activity-sd-retire-r5tcp2",
+        "processes:activity-sd-retire-6azc3g",
+        "processes:activity-sd-retire-8yt6ar",
+        "processes:activity-sd-retire-48khkt"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ge-improve-u3g5dh",
+      "name": "Improve Policy and Control Framework",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ge-improve-c78ppp",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ge-improve-a7mqxm",
+        "processes:activity-ge-improve-n9jd2z",
+        "processes:activity-ge-improve-68awnk",
+        "processes:activity-ge-improve-5hkh35"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ge-improve-mgkw59",
+      "name": "Review Governance Effectiveness",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ge-improve-c78ppp",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ge-improve-rbvv52",
+        "processes:activity-ge-improve-f4qwmk",
+        "processes:activity-ge-improve-nfn3x5",
+        "processes:activity-ge-improve-adkxr6"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ge-improve-axtq3b",
+      "name": "Score Audit Findings",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ge-improve-c78ppp",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ge-improve-9te97d",
+        "processes:activity-ge-improve-kngey3",
+        "processes:activity-ge-improve-nz4rpa",
+        "processes:activity-ge-improve-er48vd"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pv-retire-6us5am",
+      "name": "Transition Proposition Out of Service",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pv-retire-eeck6d",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pv-retire-mqkper",
+        "processes:activity-pv-retire-vbn7s6",
+        "processes:activity-pv-retire-6b3zth",
+        "processes:activity-pv-retire-6hqeys"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pv-improve-27r7r7",
+      "name": "Conduct Proposition Performance Review",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pv-improve-wpyfx7",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pv-improve-6hzpux",
+        "processes:activity-pv-improve-6rycwm",
+        "processes:activity-pv-improve-eyn4d4",
+        "processes:activity-pv-improve-sac4pb"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pv-improve-6c2xvf",
+      "name": "Evolve Products and Services",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pv-improve-wpyfx7",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pv-improve-s34pap",
+        "processes:activity-pv-improve-b3x5kk",
+        "processes:activity-pv-improve-mdkm5n",
+        "processes:activity-pv-improve-t7vbjt"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pv-improve-9xvgat",
+      "name": "Rationalize Portfolio",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pv-improve-wpyfx7",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pv-improve-k3hy7t",
+        "processes:activity-pv-improve-qvw5ea",
+        "processes:activity-pv-improve-vaxgzn",
+        "processes:activity-pv-improve-439c76"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pr-operate-bbe384",
+      "name": "Manage Customer Relationship",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pr-operate-pwue5a",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pr-operate-w753mv",
+        "processes:activity-pr-operate-v9vny2",
+        "processes:activity-pr-operate-2d88cr",
+        "processes:activity-pr-operate-amg225"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ge-retire-mjq5hg",
+      "name": "Effect Regulator-Mandated Governance Unwind",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ge-retire-kndw6x",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ge-retire-k5amzf",
+        "processes:activity-ge-retire-bp4237",
+        "processes:activity-ge-retire-rzhc83",
+        "processes:activity-ge-retire-rck7n9"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-sd-activate-s9m34e",
+      "name": "Institutionalize Regulated Strategic Plan",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-sd-activate-ghaub8",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-sd-activate-jz6u3q",
+        "processes:activity-sd-activate-w83pp4",
+        "processes:activity-sd-activate-4gefj3",
+        "processes:activity-sd-activate-92pg6h"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-improve-babwdc",
+      "name": "Improve Technology Platforms",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-improve-pka6dk",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-improve-uvzvt8",
+        "processes:activity-eo-improve-7cek5c",
+        "processes:activity-eo-improve-w3hsnq",
+        "processes:activity-eo-improve-hsurx5"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-improve-3fem63",
+      "name": "Conduct Logistics Optimization",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-improve-pka6dk",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-improve-r9dbs8",
+        "processes:activity-eo-improve-nrsv8w",
+        "processes:activity-eo-improve-ck6ghm",
+        "processes:activity-eo-improve-d9p8hv"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-improve-q58ecg",
+      "name": "Optimize Asset Utilization",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-improve-pka6dk",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-improve-acbypp",
+        "processes:activity-eo-improve-s9zhpt",
+        "processes:activity-eo-improve-bwndzz",
+        "processes:activity-eo-improve-zxt423"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-improve-us272s",
+      "name": "Conduct Lean Six Sigma Programme",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-improve-pka6dk",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-improve-gtarnw",
+        "processes:activity-eo-improve-rdjvga",
+        "processes:activity-eo-improve-334m2m",
+        "processes:activity-eo-improve-m7paec"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-improve-g3ngp3",
+      "name": "Conduct Operations Performance Review",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-improve-pka6dk",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-improve-xunaq5",
+        "processes:activity-eo-improve-rf46hj",
+        "processes:activity-eo-improve-53zgb8",
+        "processes:activity-eo-improve-zgjqsd"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pr-conceive-emfgju",
+      "name": "Develop Customer Strategy",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pr-conceive-6xztsq",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pr-conceive-3tgws4",
+        "processes:activity-pr-conceive-6habrm",
+        "processes:activity-pr-conceive-8frfby",
+        "processes:activity-pr-conceive-kbwtdj"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pr-conceive-tvst8u",
+      "name": "Develop Market Intelligence",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pr-conceive-6xztsq",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pr-conceive-h7aqez",
+        "processes:activity-pr-conceive-wcedtt",
+        "processes:activity-pr-conceive-hx3r6g",
+        "processes:activity-pr-conceive-mnhm2f"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-fa-conceive-4uqqvg",
+      "name": "Frame Finance Strategy",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-fa-conceive-phabh2",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-fa-conceive-n35a6c",
+        "processes:activity-fa-conceive-wt82fh",
+        "processes:activity-fa-conceive-p34u93",
+        "processes:activity-fa-conceive-hebg2g"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-activate-sy5qsa",
+      "name": "Activate Operations Capability",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-activate-xdfscw",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-activate-wfw66c",
+        "processes:activity-eo-activate-h2dqvk",
+        "processes:activity-eo-activate-qmpq2e",
+        "processes:activity-eo-activate-w8tgv6"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ao-activate-jqxtqn",
+      "name": "Mobilize Licensed Workforce",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ao-activate-kusw2u",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ao-activate-bsjbfc",
+        "processes:activity-ao-activate-sq2zfw",
+        "processes:activity-ao-activate-z4yhzy",
+        "processes:activity-ao-activate-x9hy5e"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pv-operate-zyguzp",
+      "name": "Operate Product Catalogue",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pv-operate-ewpwjc",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pv-operate-kwm3wt",
+        "processes:activity-pv-operate-5yty8e",
+        "processes:activity-pv-operate-5gtsjg",
+        "processes:activity-pv-operate-pv7jqd"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pv-operate-cau4gv",
+      "name": "Manage Proposition Lifecycle",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pv-operate-ewpwjc",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pv-operate-89v5ty",
+        "processes:activity-pv-operate-jpupsh",
+        "processes:activity-pv-operate-xmvfj7",
+        "processes:activity-pv-operate-zk8rc3"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pv-operate-en8rdz",
+      "name": "Manage Portfolio Performance",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pv-operate-ewpwjc",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pv-operate-unuyxe",
+        "processes:activity-pv-operate-nzj8xu",
+        "processes:activity-pv-operate-38waaf",
+        "processes:activity-pv-operate-bzud7v"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pr-design-j6fakx",
+      "name": "Design Customer Journey",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pr-design-hrcdy4",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pr-design-bp2kwt",
+        "processes:activity-pr-design-k9ehsu",
+        "processes:activity-pr-design-kbkw3v",
+        "processes:activity-pr-design-vbvz6f"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pr-design-pxydu3",
+      "name": "Design Customer Experience",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pr-design-hrcdy4",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pr-design-4as452",
+        "processes:activity-pr-design-j9s8mg",
+        "processes:activity-pr-design-9kscys",
+        "processes:activity-pr-design-5vsfm6"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pr-design-cv6hjh",
+      "name": "Design Demand Model",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pr-design-hrcdy4",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pr-design-zst46t",
+        "processes:activity-pr-design-ftrzgz",
+        "processes:activity-pr-design-nw69bm",
+        "processes:activity-pr-design-dakgz2"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-conceive-ky5wxp",
+      "name": "Frame Delivery Model Conception",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-conceive-mxmtzq",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-conceive-uprp7u",
+        "processes:activity-eo-conceive-ycqjxs",
+        "processes:activity-eo-conceive-8mh3xj",
+        "processes:activity-eo-conceive-wprvuf"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-conceive-87kx9n",
+      "name": "Frame Physical Asset Approach",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-conceive-mxmtzq",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-conceive-9vsfbw",
+        "processes:activity-eo-conceive-jgb89z",
+        "processes:activity-eo-conceive-sbeur9",
+        "processes:activity-eo-conceive-d3jdaa"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-conceive-xhjdr2",
+      "name": "Frame Operations Strategy",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-conceive-mxmtzq",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-conceive-6bvv34",
+        "processes:activity-eo-conceive-57g5bv",
+        "processes:activity-eo-conceive-r26ukv",
+        "processes:activity-eo-conceive-ettdc2"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-conceive-68mp6v",
+      "name": "Frame Technology Enablement Approach",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-conceive-mxmtzq",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-conceive-fjcmnb",
+        "processes:activity-eo-conceive-c3quwt",
+        "processes:activity-eo-conceive-b7qwwb",
+        "processes:activity-eo-conceive-99pug6"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pv-activate-5686v7",
+      "name": "Transition Proposition to Service",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pv-activate-f7kne7",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pv-activate-922fde",
+        "processes:activity-pv-activate-hxb9wf",
+        "processes:activity-pv-activate-f29a5n",
+        "processes:activity-pv-activate-fd922j"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-design-7gtead",
+      "name": "Design Technology Platform Architecture",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-design-kxdfnz",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-design-6vqzyk",
+        "processes:activity-eo-design-53q5rz",
+        "processes:activity-eo-design-8uvwq5",
+        "processes:activity-eo-design-m29ghr"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-design-rvfpjb",
+      "name": "Design Operations Model",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-design-kxdfnz",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-design-fxpw5z",
+        "processes:activity-eo-design-cc2c7f",
+        "processes:activity-eo-design-9msrc4",
+        "processes:activity-eo-design-pze82f"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-design-6j5mxp",
+      "name": "Design Delivery Model",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-design-kxdfnz",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-design-c573pg",
+        "processes:activity-eo-design-4wmwgy",
+        "processes:activity-eo-design-tsyfd5",
+        "processes:activity-eo-design-r8q6n4"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-design-8s76nv",
+      "name": "Design Logistics and Routing",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-design-kxdfnz",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-design-65b4xh",
+        "processes:activity-eo-design-m66m45",
+        "processes:activity-eo-design-fcqpn4",
+        "processes:activity-eo-design-vk83pr"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-design-q83tdv",
+      "name": "Design Facility and Asset Blueprint",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-design-kxdfnz",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-design-qqytaa",
+        "processes:activity-eo-design-u3j6eu",
+        "processes:activity-eo-design-8pd74t",
+        "processes:activity-eo-design-zj5c3v"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pr-retire-bd3asa",
+      "name": "Close Enterprise Relationship",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pr-retire-2cusde",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pr-retire-smrebq",
+        "processes:activity-pr-retire-zb4htq",
+        "processes:activity-pr-retire-5k7ngj",
+        "processes:activity-pr-retire-k646h9"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ao-build-9my4jr",
+      "name": "Build Regulated Agent Pool",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ao-build-pjk4rz",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ao-build-q7m3k9",
+        "processes:activity-ao-build-r6h2t8",
+        "processes:activity-ao-build-w2n8p4",
+        "processes:activity-ao-build-bufzrw"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ao-build-w2qurd",
+      "name": "Acquire Agents",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ao-build-pjk4rz",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ao-build-7xrz4d",
+        "processes:activity-ao-build-khtsgv",
+        "processes:activity-ao-build-4vccpu",
+        "processes:activity-ao-build-gceqs6"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ao-build-b38bkg",
+      "name": "Build Contractor and Partner-Agent Pool",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ao-build-pjk4rz",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ao-build-yjbucg",
+        "processes:activity-ao-build-cxafrf",
+        "processes:activity-ao-build-jgtegj",
+        "processes:activity-ao-build-9bwc8j"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ge-activate-wegs44",
+      "name": "Bring Policy Instrument into Force",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ge-activate-hxtfcv",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ge-activate-mqvn32",
+        "processes:activity-ge-activate-pm38pv",
+        "processes:activity-ge-activate-hcg5s8",
+        "processes:activity-ge-activate-6uwq7f"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ge-design-pqkvdc",
+      "name": "Design Risk Framework",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ge-design-3f2gjr",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ge-design-fwc3b2",
+        "processes:activity-ge-design-q5tqn5",
+        "processes:activity-ge-design-u5gpsy",
+        "processes:activity-ge-design-feyvse"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ge-design-zbrg8b",
+      "name": "Design Governance System",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ge-design-3f2gjr",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ge-design-sy338w",
+        "processes:activity-ge-design-r9wz2r",
+        "processes:activity-ge-design-ry86fn",
+        "processes:activity-ge-design-6xmeft"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ge-design-kpsj5b",
+      "name": "Design Policies and Controls",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ge-design-3f2gjr",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ge-design-t3muvd",
+        "processes:activity-ge-design-ewsksx",
+        "processes:activity-ge-design-jrb5hw",
+        "processes:activity-ge-design-ka3nqz"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-operate-xud3hs",
+      "name": "Run Production Line",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-operate-ydqb96",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-operate-gmkpny",
+        "processes:activity-eo-operate-94uqh7",
+        "processes:activity-eo-operate-snhadj",
+        "processes:activity-eo-operate-vs8xnq"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-operate-44jsrp",
+      "name": "Operate Quality Control",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-operate-ydqb96",
+      "parent_l1_resolves": false,
+      "l3_children_count": 5,
+      "l3_children_ids": [
+        "processes:activity-eo-operate-gmj49n",
+        "processes:activity-eo-operate-ywjabj",
+        "processes:activity-eo-operate-x59sfp",
+        "processes:activity-eo-operate-uyzanp",
+        "processes:activity-eo-operate-jdkay8"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-operate-zh9m57",
+      "name": "Operate Logistics",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-operate-ydqb96",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-operate-fvtgcr",
+        "processes:activity-eo-operate-cc82cs",
+        "processes:activity-eo-operate-zdw2by",
+        "processes:activity-eo-operate-98gzk2"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-operate-j9cjzz",
+      "name": "Operate Asset Maintenance",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-operate-ydqb96",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-operate-eadndb",
+        "processes:activity-eo-operate-rwvgfg",
+        "processes:activity-eo-operate-b7x5en",
+        "processes:activity-eo-operate-x3jh4n"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-operate-2jnz85",
+      "name": "Operate Service Delivery",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-operate-ydqb96",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-operate-xj922z",
+        "processes:activity-eo-operate-n7pddh",
+        "processes:activity-eo-operate-hpdc56",
+        "processes:activity-eo-operate-x8u9ez"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-operate-rqdte5",
+      "name": "Operate Facility Management",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-operate-ydqb96",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-operate-q3sw3q",
+        "processes:activity-eo-operate-qx7epe",
+        "processes:activity-eo-operate-xzs7d8",
+        "processes:activity-eo-operate-gtt587"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-operate-4njp7b",
+      "name": "Operate Technology Platforms",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-operate-ydqb96",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-operate-9nhpgy",
+        "processes:activity-eo-operate-7xkcre",
+        "processes:activity-eo-operate-ua7tgk",
+        "processes:activity-eo-operate-vhjw3y"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-operate-zwzmbd",
+      "name": "Operate Warehouse and Inventory",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-operate-ydqb96",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-operate-tbh9q7",
+        "processes:activity-eo-operate-9sdchy",
+        "processes:activity-eo-operate-k73gbs",
+        "processes:activity-eo-operate-rrg5cv"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-eo-operate-vzcxx7",
+      "name": "Operate Procurement Cycle",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-eo-operate-ydqb96",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-eo-operate-9q2e4c",
+        "processes:activity-eo-operate-n5fq6h",
+        "processes:activity-eo-operate-xn7mw4",
+        "processes:activity-eo-operate-37uk3c"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pv-conceive-jb4xtg",
+      "name": "Frame Portfolio Direction",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pv-conceive-fe9awk",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pv-conceive-7fg7ft",
+        "processes:activity-pv-conceive-v37tza",
+        "processes:activity-pv-conceive-vez3t5",
+        "processes:activity-pv-conceive-nwd9pr"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pv-conceive-xe9axm",
+      "name": "Frame Value Proposition Thesis",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pv-conceive-fe9awk",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pv-conceive-xdfjat",
+        "processes:activity-pv-conceive-zgnzny",
+        "processes:activity-pv-conceive-8sq29j",
+        "processes:activity-pv-conceive-wtenjt"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pv-conceive-kps544",
+      "name": "Frame Innovation Thesis",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pv-conceive-fe9awk",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pv-conceive-k87pzt",
+        "processes:activity-pv-conceive-m8x6e4",
+        "processes:activity-pv-conceive-f7anqj",
+        "processes:activity-pv-conceive-3ufbnz"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pv-build-p9a2s9",
+      "name": "Build Service Capability",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pv-build-ygbmxb",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pv-build-qf7sxu",
+        "processes:activity-pv-build-nhhc9u",
+        "processes:activity-pv-build-zta8ej",
+        "processes:activity-pv-build-p2ny2w"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pv-build-say8tb",
+      "name": "Develop Product Variants",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pv-build-ygbmxb",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pv-build-6z6rdn",
+        "processes:activity-pv-build-k47xjt",
+        "processes:activity-pv-build-sk4whv",
+        "processes:activity-pv-build-d86xd9"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pv-build-6hjzmk",
+      "name": "Prepare Market Readiness",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pv-build-ygbmxb",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pv-build-ak4gpq",
+        "processes:activity-pv-build-n32s5c",
+        "processes:activity-pv-build-d5873p",
+        "processes:activity-pv-build-bhepnm"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pv-build-8jc3y4",
+      "name": "Build Innovation Prototype",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pv-build-ygbmxb",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pv-build-ef63d7",
+        "processes:activity-pv-build-gznqhc",
+        "processes:activity-pv-build-r6b4x7",
+        "processes:activity-pv-build-zvvppc"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ge-operate-hs7wf3",
+      "name": "Operate Governance Oversight",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ge-operate-hb2dac",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ge-operate-yt8562",
+        "processes:activity-ge-operate-pvyf2x",
+        "processes:activity-ge-operate-bjfkws",
+        "processes:activity-ge-operate-fch6f5"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ge-operate-hxxyc9",
+      "name": "Audit Policy Compliance",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ge-operate-hb2dac",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ge-operate-zhhypw",
+        "processes:activity-ge-operate-cpcway",
+        "processes:activity-ge-operate-r4ka8z",
+        "processes:activity-ge-operate-batrgt"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ge-operate-tpenm6",
+      "name": "Operate Enterprise Risk Oversight",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ge-operate-hb2dac",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ge-operate-qtwuqf",
+        "processes:activity-ge-operate-rwpbpf",
+        "processes:activity-ge-operate-d5tfkp",
+        "processes:activity-ge-operate-wr4w6h"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ge-operate-zwaes5",
+      "name": "Conduct Assurance Review",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ge-operate-hb2dac",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ge-operate-q4qn2x",
+        "processes:activity-ge-operate-x79d9p",
+        "processes:activity-ge-operate-yczj9n",
+        "processes:activity-ge-operate-gjnh3s"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pr-build-4kb2pt",
+      "name": "Build Demand Generation Programs",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pr-build-a46hp7",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pr-build-ppw8cp",
+        "processes:activity-pr-build-da7r6t",
+        "processes:activity-pr-build-ywaa6n",
+        "processes:activity-pr-build-pd7paf"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pr-build-nygvw7",
+      "name": "Build Customer Acquisition Channels",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pr-build-a46hp7",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pr-build-qutweg",
+        "processes:activity-pr-build-p42qh7",
+        "processes:activity-pr-build-ncrg72",
+        "processes:activity-pr-build-d3pku9"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-fa-operate-4xn4d6",
+      "name": "Perform Financial Close",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-fa-operate-afew7e",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-fa-operate-5dp28t",
+        "processes:activity-fa-operate-bsq94u",
+        "processes:activity-fa-operate-ayt4aq",
+        "processes:activity-fa-operate-5dufzc"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-fa-operate-sdppmp",
+      "name": "Run Accounts Receivable",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-fa-operate-afew7e",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-fa-operate-hvp7jn",
+        "processes:activity-fa-operate-ze2sed",
+        "processes:activity-fa-operate-4yx8be",
+        "processes:activity-fa-operate-rnszvv"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-fa-operate-g9zpnq",
+      "name": "Operate General Ledger",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-fa-operate-afew7e",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-fa-operate-kzqaqw",
+        "processes:activity-fa-operate-6pk6zf",
+        "processes:activity-fa-operate-ksg7yj",
+        "processes:activity-fa-operate-v4j4en"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-fa-operate-8vqvkk",
+      "name": "Manage Tax Compliance and Filings",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-fa-operate-afew7e",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-fa-operate-h7wym7",
+        "processes:activity-fa-operate-9g2b8x",
+        "processes:activity-fa-operate-avuag6",
+        "processes:activity-fa-operate-48s3kx"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-fa-operate-wkqaqp",
+      "name": "Run Accounts Payable",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-fa-operate-afew7e",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-fa-operate-rsrcp2",
+        "processes:activity-fa-operate-mwerdy",
+        "processes:activity-fa-operate-f3c2rt",
+        "processes:activity-fa-operate-k9cf3b"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-fa-operate-ycba3k",
+      "name": "Operate Financial Reporting and Disclosure",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-fa-operate-afew7e",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-fa-operate-dmzn73",
+        "processes:activity-fa-operate-dv3u8j",
+        "processes:activity-fa-operate-hxqddg",
+        "processes:activity-fa-operate-mceyb8"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-fa-operate-2pmqb2",
+      "name": "Manage Cash and Liquidity",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-fa-operate-afew7e",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-fa-operate-pg9eys",
+        "processes:activity-fa-operate-mumzq7",
+        "processes:activity-fa-operate-5zesye",
+        "processes:activity-fa-operate-aab8cw"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-fa-operate-zpmxzp",
+      "name": "Execute Payroll",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-fa-operate-afew7e",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-fa-operate-zxtxzj",
+        "processes:activity-fa-operate-he4rxk",
+        "processes:activity-fa-operate-eq5bc9",
+        "processes:activity-fa-operate-854gza"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ao-design-8fzp2b",
+      "name": "Design Agent Topology",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ao-design-a4hq2r",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ao-design-vtuma6",
+        "processes:activity-ao-design-h3q5rc",
+        "processes:activity-ao-design-j98gk4",
+        "processes:activity-ao-design-pc9dh3"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ao-design-34e95r",
+      "name": "Design Role Catalogue",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ao-design-a4hq2r",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ao-design-txkve5",
+        "processes:activity-ao-design-tfhe6e",
+        "processes:activity-ao-design-cezz7p",
+        "processes:activity-ao-design-9fmjnt"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ao-design-7dkbur",
+      "name": "Design Organization Structure",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ao-design-a4hq2r",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ao-design-bnvt6w",
+        "processes:activity-ao-design-p6pheg",
+        "processes:activity-ao-design-qp6pxn",
+        "processes:activity-ao-design-3dpt54"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ao-design-rve8j5",
+      "name": "Design Competency Framework",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ao-design-a4hq2r",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ao-design-amjqu5",
+        "processes:activity-ao-design-749rxd",
+        "processes:activity-ao-design-e63vge",
+        "processes:activity-ao-design-3ebtma"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ao-design-2fkvhx",
+      "name": "Design Regulated Role Architecture",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ao-design-a4hq2r",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ao-design-x9k4m7",
+        "processes:activity-ao-design-v8r5n2",
+        "processes:activity-ao-design-wnqz3k",
+        "processes:activity-ao-design-jbf2v9"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pr-improve-t6uvan",
+      "name": "Operate Customer Retention Programs",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-pr-improve-k8phkn",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pr-improve-6atff5",
+        "processes:activity-pr-improve-p988q3",
+        "processes:activity-pr-improve-k6eb79",
+        "processes:activity-pr-improve-jg6bv4"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-pr-improve-t6uvan",
+      "name": "Operate Customer Retention Programs (documentation manifest)",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": null,
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-pr-improve-6atff5",
+        "processes:activity-pr-improve-p988q3",
+        "processes:activity-pr-improve-k6eb79",
+        "processes:activity-pr-improve-jg6bv4"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-fa-activate-bzfywk",
+      "name": "Activate Billing Capability",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-fa-activate-yrhcfm",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-fa-activate-6j9me8",
+        "processes:activity-fa-activate-u8sq5k",
+        "processes:activity-fa-activate-utzqpn",
+        "processes:activity-fa-activate-63duu7"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-sd-operate-u6xgu5",
+      "name": "Steer Initiative Portfolio",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-sd-operate-5cs5ee",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-sd-operate-6en9zk",
+        "processes:activity-sd-operate-sxnm8p",
+        "processes:activity-sd-operate-cjjgw3",
+        "processes:activity-sd-operate-th587n"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-sd-operate-ucxpz4",
+      "name": "Operate Strategic Review Cycle",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-sd-operate-5cs5ee",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-sd-operate-9evxdj",
+        "processes:activity-sd-operate-4yw98f",
+        "processes:activity-sd-operate-4je2y3",
+        "processes:activity-sd-operate-m4s5cn"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-sd-operate-zdjchn",
+      "name": "Monitor Strategic Performance",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-sd-operate-5cs5ee",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-sd-operate-fjj2yt",
+        "processes:activity-sd-operate-xtgshk",
+        "processes:activity-sd-operate-k48yk5",
+        "processes:activity-sd-operate-v8wq5y"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-sd-operate-53y4j4",
+      "name": "Sense Environmental Signals",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-sd-operate-5cs5ee",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-sd-operate-c4n3fr",
+        "processes:activity-sd-operate-zsruv4",
+        "processes:activity-sd-operate-acwkkr",
+        "processes:activity-sd-operate-ebntgy"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-sd-design-ewvbsh",
+      "name": "Design Strategic Options",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-sd-design-g3es76",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-sd-design-y5bn4m",
+        "processes:activity-sd-design-47gv45",
+        "processes:activity-sd-design-eseuhe",
+        "processes:activity-sd-design-eyax2d"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-sd-design-ed7jd5",
+      "name": "Evaluate Strategic Alternatives",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-sd-design-g3es76",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-sd-design-dgkmm5",
+        "processes:activity-sd-design-r7hq2f",
+        "processes:activity-sd-design-nmbkfx",
+        "processes:activity-sd-design-h56x3t"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-sd-design-vdwkmh",
+      "name": "Design Objectives and Targets",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-sd-design-g3es76",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-sd-design-ec5thr",
+        "processes:activity-sd-design-uwqj5w",
+        "processes:activity-sd-design-xgzkpn",
+        "processes:activity-sd-design-ck5dud"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-sd-design-uenzna",
+      "name": "Design Strategic Scenarios",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-sd-design-g3es76",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-sd-design-xz6zgn",
+        "processes:activity-sd-design-jgwe2n",
+        "processes:activity-sd-design-vhcbj5",
+        "processes:activity-sd-design-pw7auq"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ge-conceive-6qnkhh",
+      "name": "Frame Risk Framework Direction",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ge-conceive-b5xwpd",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ge-conceive-b82hdf",
+        "processes:activity-ge-conceive-8nxptt",
+        "processes:activity-ge-conceive-yucnbe",
+        "processes:activity-ge-conceive-j72hwy"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ge-conceive-xp6fye",
+      "name": "Initiate Policy and Charter",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ge-conceive-b5xwpd",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ge-conceive-hsg4tn",
+        "processes:activity-ge-conceive-g7nxw2",
+        "processes:activity-ge-conceive-5j83mc",
+        "processes:activity-ge-conceive-tkk9rz"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ge-conceive-e6jx6s",
+      "name": "Develop Governance Strategy",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ge-conceive-b5xwpd",
+      "parent_l1_resolves": false,
+      "l3_children_count": 0,
+      "l3_children_ids": [],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-fa-design-uun4ja",
+      "name": "Design Financial Controls and Policies",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-fa-design-4j8evh",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-fa-design-xycsv4",
+        "processes:activity-fa-design-2qrkhv",
+        "processes:activity-fa-design-k8ucbk",
+        "processes:activity-fa-design-ppadqj"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-fa-design-vk422z",
+      "name": "Design Financial Plan Structure",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-fa-design-4j8evh",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-fa-design-aye4mb",
+        "processes:activity-fa-design-drznes",
+        "processes:activity-fa-design-bn5x7x",
+        "processes:activity-fa-design-xzbfxx"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-fa-design-k5sgfa",
+      "name": "Design Treasury and Funding Model",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-fa-design-4j8evh",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-fa-design-tsdptr",
+        "processes:activity-fa-design-d4rea9",
+        "processes:activity-fa-design-r4hzb6",
+        "processes:activity-fa-design-r7eq66"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-fa-design-ds4drw",
+      "name": "Design Tax Position and Strategy",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-fa-design-4j8evh",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-fa-design-mzkd3q",
+        "processes:activity-fa-design-x66t4r",
+        "processes:activity-fa-design-6qvdsk",
+        "processes:activity-fa-design-rh9ft4"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ao-improve-qqxe4d",
+      "name": "Improve Regulated Workforce Capability",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ao-improve-qkmh6b",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ao-improve-f2r6t4",
+        "processes:activity-ao-improve-uudtp5",
+        "processes:activity-ao-improve-x7m4n2",
+        "processes:activity-ao-improve-k9w5p8"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ao-improve-edjyha",
+      "name": "Conduct Engagement and Alignment Review",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ao-improve-qkmh6b",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ao-improve-awnbw6",
+        "processes:activity-ao-improve-ab6gqb",
+        "processes:activity-ao-improve-zzszrd",
+        "processes:activity-ao-improve-ceqsy3"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ao-improve-xfh8na",
+      "name": "Develop Agents and Organization",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ao-improve-qkmh6b",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ao-improve-6fusds",
+        "processes:activity-ao-improve-r6h2g7",
+        "processes:activity-ao-improve-5tzwvk",
+        "processes:activity-ao-improve-eq6pbr"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ao-improve-xs59e2",
+      "name": "Reorganize Structures",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ao-improve-qkmh6b",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ao-improve-gtc9k8",
+        "processes:activity-ao-improve-evxkz9",
+        "processes:activity-ao-improve-rnkywc",
+        "processes:activity-ao-improve-pp4uvg"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-ao-improve-h3vgyf",
+      "name": "Conduct Capability Gap Analysis",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-ao-improve-qkmh6b",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-ao-improve-eyvh62",
+        "processes:activity-ao-improve-rk3g4q",
+        "processes:activity-ao-improve-2bds64",
+        "processes:activity-ao-improve-g5bube"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    },
+    {
+      "id": "processes:process-fa-retire-wkbrsa",
+      "name": "Conclude Regulated Run-Off",
+      "type": "Process",
+      "level": "L2",
+      "parent_l1": "processes:pc-fa-retire-64q5p9",
+      "parent_l1_resolves": false,
+      "l3_children_count": 4,
+      "l3_children_ids": [
+        "processes:activity-fa-retire-uuqbe9",
+        "processes:activity-fa-retire-3g3m9u",
+        "processes:activity-fa-retire-vmpdww",
+        "processes:activity-fa-retire-t3uyxp"
+      ],
+      "has_description": true,
+      "fields_present": {
+        "inputs": false,
+        "outputs": false,
+        "accountability": false,
+        "responsibility_struct": false,
+        "business_rules": false,
+        "controls": false,
+        "exceptions": false,
+        "provenance": false
+      },
+      "authoring_state": null,
+      "disposition": null,
+      "profile_completeness": "incomplete"
+    }
+  ]
+}
