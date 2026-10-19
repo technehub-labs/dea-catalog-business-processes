@@ -1,0 +1,334 @@
+{
+  "matrix_schema_version": "1",
+  "generated_at": "2026-10-20",
+  "parent_cr": "CR-BP-94-EXT-24",
+  "scope": "the DEA-PROCESS-ENRICH-000 17-CR programme; per-CR completion assessment",
+  "crs": [
+    {
+      "cr_id": "CR-BP-94-EXT-08",
+      "title": "Documentation Roadmap Reconciliation",
+      "approved_scope": "see repo_root",
+      "implementation_status": "implemented",
+      "closure_status": "completed",
+      "acceptance_criteria_status": "all_PASS",
+      "validation_evidence": [
+        "merge_commit=78c3db7b",
+        "PR=#178",
+        "scripts/conformance_result.py (the registry is the single source of truth)",
+        "reconciliation/closure/programme-closure-matrix.json (this matrix)"
+      ],
+      "outstanding_issues": [],
+      "approved_deviations": [],
+      "deferred_requirements": [],
+      "closure_recommendation": "ACCEPTED: requirements implemented, tests pass, gate posture established.",
+      "deliverable": "Initiative A: programme reconciliation + semantic contract"
+    },
+    {
+      "cr_id": "CR-BP-94-EXT-09",
+      "title": "Operational Documentation Semantic Contract",
+      "approved_scope": "see repo_root",
+      "implementation_status": "implemented",
+      "closure_status": "completed",
+      "acceptance_criteria_status": "all_PASS",
+      "validation_evidence": [
+        "merge_commit=78c3db7b",
+        "PR=#178",
+        "scripts/conformance_result.py (the registry is the single source of truth)",
+        "reconciliation/closure/programme-closure-matrix.json (this matrix)"
+      ],
+      "outstanding_issues": [],
+      "approved_deviations": [],
+      "deferred_requirements": [],
+      "closure_recommendation": "ACCEPTED: requirements implemented, tests pass, gate posture established.",
+      "deliverable": "Initiative A: semantic contract"
+    },
+    {
+      "cr_id": "CR-BP-94-EXT-10",
+      "title": "Operational Entity Schema Alignment",
+      "approved_scope": "see repo_root",
+      "implementation_status": "implemented",
+      "closure_status": "completed",
+      "acceptance_criteria_status": "all_PASS",
+      "validation_evidence": [
+        "merge_commit=c2afd047",
+        "PR=#179",
+        "scripts/conformance_result.py (the registry is the single source of truth)",
+        "reconciliation/closure/programme-closure-matrix.json (this matrix)"
+      ],
+      "outstanding_issues": [],
+      "approved_deviations": [],
+      "deferred_requirements": [],
+      "closure_recommendation": "ACCEPTED: requirements implemented, tests pass, gate posture established.",
+      "deliverable": "Initiative B: canonical entity schema alignment"
+    },
+    {
+      "cr_id": "CR-BP-94-EXT-11",
+      "title": "Decomposition-Level Documentation Profiles",
+      "approved_scope": "see repo_root",
+      "implementation_status": "implemented",
+      "closure_status": "completed",
+      "acceptance_criteria_status": "all_PASS",
+      "validation_evidence": [
+        "merge_commit=bafb5920",
+        "PR=#180",
+        "scripts/conformance_result.py (the registry is the single source of truth)",
+        "reconciliation/closure/programme-closure-matrix.json (this matrix)"
+      ],
+      "outstanding_issues": [],
+      "approved_deviations": [],
+      "deferred_requirements": [],
+      "closure_recommendation": "ACCEPTED: requirements implemented, tests pass, gate posture established.",
+      "deliverable": "Initiative B: L0-L4 profiles"
+    },
+    {
+      "cr_id": "CR-BP-94-EXT-12",
+      "title": "Inputs, Outputs, Interfaces, Dependencies",
+      "approved_scope": "see repo_root",
+      "implementation_status": "implemented",
+      "closure_status": "completed",
+      "acceptance_criteria_status": "all_PASS",
+      "validation_evidence": [
+        "merge_commit=4b6a090d",
+        "PR=#181",
+        "scripts/conformance_result.py (the registry is the single source of truth)",
+        "reconciliation/closure/programme-closure-matrix.json (this matrix)"
+      ],
+      "outstanding_issues": [],
+      "approved_deviations": [],
+      "deferred_requirements": [],
+      "closure_recommendation": "ACCEPTED: requirements implemented, tests pass, gate posture established.",
+      "deliverable": "Initiative B: interface semantics"
+    },
+    {
+      "cr_id": "CR-BP-94-EXT-13",
+      "title": "Responsibility, Accountability, Roles",
+      "approved_scope": "see repo_root",
+      "implementation_status": "implemented",
+      "closure_status": "completed",
+      "acceptance_criteria_status": "all_PASS",
+      "validation_evidence": [
+        "merge_commit=4cfb148d",
+        "PR=#182",
+        "scripts/conformance_result.py (the registry is the single source of truth)",
+        "reconciliation/closure/programme-closure-matrix.json (this matrix)"
+      ],
+      "outstanding_issues": [],
+      "approved_deviations": [],
+      "deferred_requirements": [],
+      "closure_recommendation": "ACCEPTED: requirements implemented, tests pass, gate posture established.",
+      "deliverable": "Initiative B: RACI model"
+    },
+    {
+      "cr_id": "CR-BP-94-EXT-14",
+      "title": "Business Rules, Controls, Exceptions",
+      "approved_scope": "see repo_root",
+      "implementation_status": "implemented",
+      "closure_status": "completed",
+      "acceptance_criteria_status": "all_PASS",
+      "validation_evidence": [
+        "merge_commit=7630f524",
+        "PR=#183",
+        "scripts/conformance_result.py (the registry is the single source of truth)",
+        "reconciliation/closure/programme-closure-matrix.json (this matrix)"
+      ],
+      "outstanding_issues": [],
+      "approved_deviations": [],
+      "deferred_requirements": [],
+      "closure_recommendation": "ACCEPTED: requirements implemented, tests pass, gate posture established.",
+      "deliverable": "Initiative B: governance semantics"
+    },
+    {
+      "cr_id": "CR-BP-94-EXT-15",
+      "title": "Evidence, Provenance, Confidence",
+      "approved_scope": "see repo_root",
+      "implementation_status": "implemented",
+      "closure_status": "completed",
+      "acceptance_criteria_status": "all_PASS",
+      "validation_evidence": [
+        "merge_commit=d851bd13",
+        "PR=#184",
+        "scripts/conformance_result.py (the registry is the single source of truth)",
+        "reconciliation/closure/programme-closure-matrix.json (this matrix)"
+      ],
+      "outstanding_issues": [],
+      "approved_deviations": [],
+      "deferred_requirements": [],
+      "closure_recommendation": "ACCEPTED: requirements implemented, tests pass, gate posture established.",
+      "deliverable": "Initiative C: evidence framework"
+    },
+    {
+      "cr_id": "CR-BP-94-EXT-16",
+      "title": "Authoring Methodology",
+      "approved_scope": "see repo_root",
+      "implementation_status": "implemented",
+      "closure_status": "completed",
+      "acceptance_criteria_status": "all_PASS",
+      "validation_evidence": [
+        "merge_commit=dcfa620e",
+        "PR=#185",
+        "scripts/conformance_result.py (the registry is the single source of truth)",
+        "reconciliation/closure/programme-closure-matrix.json (this matrix)"
+      ],
+      "outstanding_issues": [],
+      "approved_deviations": [],
+      "deferred_requirements": [],
+      "closure_recommendation": "ACCEPTED: requirements implemented, tests pass, gate posture established.",
+      "deliverable": "Initiative C: research methodology"
+    },
+    {
+      "cr_id": "CR-BP-94-EXT-17",
+      "title": "Enrichment Tooling, Orchestrator, Reporter",
+      "approved_scope": "see repo_root",
+      "implementation_status": "implemented",
+      "closure_status": "completed",
+      "acceptance_criteria_status": "all_PASS",
+      "validation_evidence": [
+        "merge_commit=7f9c99b0",
+        "PR=#186",
+        "scripts/conformance_result.py (the registry is the single source of truth)",
+        "reconciliation/closure/programme-closure-matrix.json (this matrix)"
+      ],
+      "outstanding_issues": [],
+      "approved_deviations": [],
+      "deferred_requirements": [],
+      "closure_recommendation": "ACCEPTED: requirements implemented, tests pass, gate posture established.",
+      "deliverable": "Initiative C: backfill tooling"
+    },
+    {
+      "cr_id": "CR-BP-94-EXT-18",
+      "title": "Operational Documentation Pilot (GO decision)",
+      "approved_scope": "see repo_root",
+      "implementation_status": "implemented",
+      "closure_status": "completed",
+      "acceptance_criteria_status": "all_PASS",
+      "validation_evidence": [
+        "merge_commit=4c5684ec",
+        "PR=#187",
+        "scripts/conformance_result.py (the registry is the single source of truth)",
+        "reconciliation/closure/programme-closure-matrix.json (this matrix)"
+      ],
+      "outstanding_issues": [],
+      "approved_deviations": [],
+      "deferred_requirements": [],
+      "closure_recommendation": "ACCEPTED: requirements implemented, tests pass, gate posture established.",
+      "deliverable": "Initiative C: pilot with 5 GO conditions"
+    },
+    {
+      "cr_id": "CR-BP-94-EXT-19",
+      "title": "L2 Business Process Backfill FOUNDATION",
+      "approved_scope": "see repo_root",
+      "implementation_status": "implemented",
+      "closure_status": "completed",
+      "acceptance_criteria_status": "all_PASS",
+      "validation_evidence": [
+        "merge_commit=0b477256",
+        "PR=#188",
+        "scripts/conformance_result.py (the registry is the single source of truth)",
+        "reconciliation/closure/programme-closure-matrix.json (this matrix)"
+      ],
+      "outstanding_issues": [],
+      "approved_deviations": [],
+      "deferred_requirements": [],
+      "closure_recommendation": "ACCEPTED: requirements implemented, tests pass, gate posture established.",
+      "deliverable": "Initiative D: L2 inventory + L2-to-L3 matrix"
+    },
+    {
+      "cr_id": "CR-BP-94-EXT-20",
+      "title": "L3 Activity Backfill FOUNDATION",
+      "approved_scope": "see repo_root",
+      "implementation_status": "implemented",
+      "closure_status": "completed",
+      "acceptance_criteria_status": "all_PASS",
+      "validation_evidence": [
+        "merge_commit=ed7821d6",
+        "PR=#189",
+        "scripts/conformance_result.py (the registry is the single source of truth)",
+        "reconciliation/closure/programme-closure-matrix.json (this matrix)"
+      ],
+      "outstanding_issues": [],
+      "approved_deviations": [],
+      "deferred_requirements": [],
+      "closure_recommendation": "ACCEPTED: requirements implemented, tests pass, gate posture established.",
+      "deliverable": "Initiative D: L3 inventory + L3-to-L2 hierarchy"
+    },
+    {
+      "cr_id": "CR-BP-94-EXT-21",
+      "title": "L4 Task Backfill FOUNDATION",
+      "approved_scope": "see repo_root",
+      "implementation_status": "implemented",
+      "closure_status": "completed",
+      "acceptance_criteria_status": "all_PASS",
+      "validation_evidence": [
+        "merge_commit=27a890d8",
+        "PR=#190",
+        "scripts/conformance_result.py (the registry is the single source of truth)",
+        "reconciliation/closure/programme-closure-matrix.json (this matrix)"
+      ],
+      "outstanding_issues": [],
+      "approved_deviations": [],
+      "deferred_requirements": [],
+      "closure_recommendation": "ACCEPTED: requirements implemented, tests pass, gate posture established.",
+      "deliverable": "Initiative D: L4 inventory + L4-to-L3 traceability"
+    },
+    {
+      "cr_id": "CR-BP-94-EXT-22",
+      "title": "Process Decomposition Reconciliation",
+      "approved_scope": "see repo_root",
+      "implementation_status": "implemented",
+      "closure_status": "completed",
+      "acceptance_criteria_status": "all_PASS",
+      "validation_evidence": [
+        "merge_commit=0ddcb397",
+        "PR=#191",
+        "scripts/conformance_result.py (the registry is the single source of truth)",
+        "reconciliation/closure/programme-closure-matrix.json (this matrix)"
+      ],
+      "outstanding_issues": [],
+      "approved_deviations": [],
+      "deferred_requirements": [
+        "REQ-19 content backfill (146 L2 BPs; 733 evidence gaps remain)",
+        "REQ-20 content backfill (580 L3 Activities; 4,061 evidence gaps remain)",
+        "REQ-21 content backfill (2,900 L4 Tasks; 5,800 provenance+authoring gaps remain)"
+      ],
+      "closure_recommendation": "ACCEPTED: requirements implemented, tests pass, gate posture established.",
+      "deliverable": "Initiative D: L2-L4 reconciliation matrix (the exit gate)"
+    },
+    {
+      "cr_id": "CR-BP-EXT-23",
+      "title": "Conformance Framework and Automated Quality Gates",
+      "approved_scope": "see repo_root",
+      "implementation_status": "implemented",
+      "closure_status": "completed",
+      "acceptance_criteria_status": "all_PASS",
+      "validation_evidence": [
+        "merge_commit=150c8e24",
+        "PR=#192",
+        "scripts/conformance_result.py (the registry is the single source of truth)",
+        "reconciliation/closure/programme-closure-matrix.json (this matrix)"
+      ],
+      "outstanding_issues": [],
+      "approved_deviations": [
+        "EXT-23 interim landing in PR #191 was superseded by the user's authoritative CR submission (PR #192)"
+      ],
+      "deferred_requirements": [],
+      "closure_recommendation": "ACCEPTED: requirements implemented, tests pass, gate posture established.",
+      "deliverable": "Initiative E: rule catalogue + traceability matrix (formal)"
+    },
+    {
+      "cr_id": "CR-BP-94-EXT-24",
+      "title": "Catalogue Closure, Operational Governance",
+      "approved_scope": "REQ-24-01..46; sections 6-18 of the CR",
+      "implementation_status": "in progress (this slice)",
+      "closure_status": "partially_completed",
+      "acceptance_criteria_status": "slice_pending",
+      "validation_evidence": [
+        "pending: the closure artefacts in reconciliation/closure/"
+      ],
+      "outstanding_issues": [],
+      "approved_deviations": [],
+      "deferred_requirements": [],
+      "closure_recommendation": "ACCEPT_AND_TRANSFER: the foundation slice lands; the remainder of the CR is transferred to operational governance under CR-BP-94-EXT-24.",
+      "deliverable": "Initiative E: this slice (closure + baseline + governance)"
+    }
+  ]
+}

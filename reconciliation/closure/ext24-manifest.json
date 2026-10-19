@@ -1,0 +1,23 @@
+{
+  "manifest_schema_version": "1",
+  "generated_at": "2026-10-20",
+  "generator": "scripts/check_programme_closure_ext24.py",
+  "parent_cr": "CR-BP-94-EXT-24",
+  "repository_revision": "150c8e2455ac69902ebce839fb99fcef86afed3c",
+  "summary": {
+    "total_findings": 0,
+    "by_severity": {},
+    "by_framework_rule": {},
+    "closure_cr_count": 17,
+    "baseline_present": true,
+    "residual_gap_count": 12,
+    "governance_role_count": 9,
+    "ownership_disposition_count": 146,
+    "lifecycle_record_count": 3725,
+    "exception_count": 0,
+    "deferral_count": 7,
+    "improvement_item_count": 10,
+    "overall_outcome": "passed"
+  },
+  "findings": []
+}

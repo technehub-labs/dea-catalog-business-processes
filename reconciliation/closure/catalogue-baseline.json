@@ -1,0 +1,78 @@
+{
+  "baseline_schema_version": "1",
+  "parent_cr": "CR-BP-94-EXT-24",
+  "baseline_revision": "150c8e24",
+  "baseline_date": "2026-10-20",
+  "baseline_kind": "programme-closure",
+  "scope": "the Business Process catalogue",
+  "entity_population": {
+    "L0_ProcessContext": 49,
+    "L1_ProcessGroup": 49,
+    "L2_BusinessProcess": 146,
+    "L3_Activity": 580,
+    "L4_Task": 2900,
+    "total": 3724
+  },
+  "schema_versions": {
+    "process-context.schema.json": "1.0.0",
+    "process-group.schema.json": "1.0.0",
+    "process-scope.schema.json": "1.0.0",
+    "activity.schema.json": "1.0.0",
+    "task.schema.json": "1.0.0"
+  },
+  "profile_versions": {
+    "EXT-11 (decomposition-level profiles)": "1.0.0"
+  },
+  "vocabulary_versions": {
+    "process-group-kinds.yaml": "1.0.0",
+    "process-intents.yaml": "1.0.0",
+    "process-specializations.yaml": "1.0.0",
+    "process-types.yaml": "1.0.0"
+  },
+  "validation_rule_versions": {
+    "EXT-23 rule catalogue": "1.0.0",
+    "EXT-23 traceability matrix": "1.0.0"
+  },
+  "documentation_generation_versions": {
+    "EXT-04 generator + validator": "v2.1"
+  },
+  "reconciliation_status": {
+    "EXT-22 L2-L4 Reconciliation Matrix": "2,901 records; 8 structural findings; 16 granularity review prompts",
+    "EXT-19 L2-to-L3 matrix": "146 L2 BPs; 1 L2 with 0 L3 children (deprecated)",
+    "EXT-20 L3-to-L2 hierarchy matrix": "580 L3 reference 144 unique L2 parents; 0 orphans",
+    "EXT-21 L4-to-L3 traceability matrix": "2,900 L4 Tasks; every L3 has exactly 5 (5-phase pattern)"
+  },
+  "evidence_status": {
+    "EXT-15 canonical provenance populated": "0 records (5,800 L4 open findings remain)",
+    "EXT-19 L2 evidence coverage": "146 L2 BPs inventoried; 733 evidence gaps remain",
+    "EXT-20 L3 evidence coverage": "580 L3 Activities inventoried; 4,061 evidence gaps remain"
+  },
+  "exception_status": {
+    "approved_exceptions": 0,
+    "deferred_work_items": "see deferred-work-register.json",
+    "EXT-23 deferred gates (advisory, not approved exceptions)": 4
+  },
+  "deferred_work": [
+    "L2 content backfill (REQ-19): 733 evidence gaps",
+    "L3 content backfill (REQ-20): 4,061 evidence gaps",
+    "L4 content backfill (REQ-21): 5,800 evidence + authoring gaps",
+    "EXT-22 structural findings: 8 (1 deprecated process + 6 L0 context mismatches + 1 same deprecated process without L1)",
+    "EXT-22 granularity review prompts: 16",
+    "Pre-existing blocking gate failures: 4 ([1] [26] [30] [33])"
+  ],
+  "conformance_posture_summary": {
+    "total_gates": 52,
+    "blocking_gates": 29,
+    "promoted_blocking_ext_gates": 9,
+    "pre_existing_blocking_failures": 4,
+    "deferred_advisory_gates": 4
+  },
+  "known_limitations": [
+    "L0 Process Context records use the cell-charter schema (no type field); they are counted by id prefix, not by the file scan's type field.",
+    "The L4 content backfill (2,900 open findings) is the largest deferred population.",
+    "The semantic and evidence-substantiation dimensions are not machine-verified; the catalogue cannot certify that documented practice matches actual organisational practice.",
+    "The 4 pre-existing blocking gate failures predate the EXT-08..EXT-24 programme and are owned by their originating CRs.",
+    "The 8 EXT-22 structural findings are dispositioned under the governance model."
+  ],
+  "integrity_notes": "An entity is NOT considered fully verified merely because it is present in the baseline. The baseline distinguishes verified, accepted with known gaps, unverified, deferred, and exception-governed content. The conformance framework (EXT-23) is the single source of truth for rule-based assessment; this baseline records the state AT 2026-10-20, NOT a permanent claim of completeness."
+}

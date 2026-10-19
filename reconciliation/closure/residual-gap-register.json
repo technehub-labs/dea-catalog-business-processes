@@ -1,0 +1,151 @@
+{
+  "register_schema_version": "1",
+  "parent_cr": "CR-BP-94-EXT-24",
+  "generated_at": "2026-10-20",
+  "gaps": [
+    {
+      "gap_id": "GAP-001",
+      "description": "[1] validate-process-entries rc=3 (schema-level)",
+      "affected_requirement": "EXT-26 (legacy)",
+      "affected_entity": "the process-entry schema",
+      "impact": "blocks CI on every push until resolved",
+      "severity": "high",
+      "owner": "GOV-007 (Conformance Maintainer)",
+      "proposed_action": "diagnose the rc=3 (argparse error or schema mismatch) and remediate",
+      "target_date": "2026-11-30",
+      "disposition": "requires_structural_remediation"
+    },
+    {
+      "gap_id": "GAP-002",
+      "description": "[26] Reference Embargo (23 findings in scripts/check_profile_registry_ext11.py + validate_readme_structure.py)",
+      "affected_requirement": "EXT-26 (legacy)",
+      "affected_entity": "scripts/check_profile_registry_ext11.py + validate_readme_structure.py",
+      "impact": "blocking on 23 embargoed references",
+      "severity": "high",
+      "owner": "GOV-007 (Conformance Maintainer)",
+      "proposed_action": "review and approve the references under CR-BP-112, or remove them",
+      "target_date": "2026-11-30",
+      "disposition": "requires_structural_remediation"
+    },
+    {
+      "gap_id": "GAP-003",
+      "description": "[30] README Consistency (1 stale README at entities/v1-alpha/pr-improve/Customer-Insight-and-Retention/README.md)",
+      "affected_requirement": "EXT-06 (legacy)",
+      "affected_entity": "Customer-Insight-and-Retention/README.md",
+      "impact": "blocking on a single stale README",
+      "severity": "medium",
+      "owner": "GOV-004 (Entity Maintainer)",
+      "proposed_action": "regenerate the README from the canonical entity yaml",
+      "target_date": "2026-11-15",
+      "disposition": "requires_structural_remediation"
+    },
+    {
+      "gap_id": "GAP-004",
+      "description": "[33] Entity System (ES-002 envelope field gaps)",
+      "affected_requirement": "EXT-29/EXT-33 (legacy)",
+      "affected_entity": "entity envelopes (the metadata block)",
+      "impact": "blocking on the envelope-field validator",
+      "severity": "high",
+      "owner": "GOV-007 (Conformance Maintainer)",
+      "proposed_action": "extend the validator to recognise the canonical envelope shape, or migrate the records",
+      "target_date": "2026-11-30",
+      "disposition": "requires_structural_remediation"
+    },
+    {
+      "gap_id": "GAP-005",
+      "description": "[44] L2 Business Process Backfill (EXT-19): 733 open findings",
+      "affected_requirement": "REQ-19-01..25",
+      "affected_entity": "the 146 L2 Business Processes (L2 content backfill)",
+      "impact": "extensive population evidence gaps; the gate is deferred under EXT-23 until the population is reconciled",
+      "severity": "medium",
+      "owner": "GOV-006 (Data and Evidence Reviewer)",
+      "proposed_action": "carry out the L2 content backfill under the deferred-work register; promote gate to blocking when reconciled",
+      "target_date": "2027-03-31",
+      "disposition": "deferred_with_approval"
+    },
+    {
+      "gap_id": "GAP-006",
+      "description": "[45] L3 Activity Backfill (EXT-20): 4,061 open findings",
+      "affected_requirement": "REQ-20-01..21",
+      "affected_entity": "the 580 L3 Activities",
+      "impact": "extensive population evidence gaps",
+      "severity": "medium",
+      "owner": "GOV-006 (Data and Evidence Reviewer)",
+      "proposed_action": "carry out the L3 content backfill",
+      "target_date": "2027-06-30",
+      "disposition": "deferred_with_approval"
+    },
+    {
+      "gap_id": "GAP-007",
+      "description": "[46] L4 Task Backfill (EXT-21): 5,800 open findings",
+      "affected_requirement": "REQ-21-01..16",
+      "affected_entity": "the 2,900 L4 Tasks",
+      "impact": "the largest deferred population; canonical provenance and authoring migrations",
+      "severity": "medium",
+      "owner": "GOV-006 (Data and Evidence Reviewer)",
+      "proposed_action": "carry out the L4 content backfill",
+      "target_date": "2027-09-30",
+      "disposition": "deferred_with_approval"
+    },
+    {
+      "gap_id": "GAP-008",
+      "description": "processes:process-ge-conceive-e6jx6s has no L3 Activity decomposition (R22-04)",
+      "affected_requirement": "REQ-22-04",
+      "affected_entity": "processes:process-ge-conceive-e6jx6s",
+      "impact": "the L2 BP lacks Activity decomposition",
+      "severity": "medium",
+      "owner": "GOV-002 (Business Process Owner)",
+      "proposed_action": "either decompose (the process is deprecated), or formally retire it under the lifecycle",
+      "target_date": "2026-12-31",
+      "disposition": "requires_structural_remediation"
+    },
+    {
+      "gap_id": "GAP-009",
+      "description": "processes:process-ge-conceive-e6jx6s is not composed by any L1 Process Group (R22-06)",
+      "affected_requirement": "REQ-22-06",
+      "affected_entity": "processes:process-ge-conceive-e6jx6s",
+      "impact": "the deprecated BP has no L1 composition",
+      "severity": "low",
+      "owner": "GOV-002 (Business Process Owner)",
+      "proposed_action": "formal retirement; the deprecation decision resolves both findings",
+      "target_date": "2026-12-31",
+      "disposition": "requires_structural_remediation"
+    },
+    {
+      "gap_id": "GAP-010",
+      "description": "6 L1-to-L2 compositions carry an L0 context mismatch (R22-07): processes:group-fa-conceive-9xzf3b composes 5 L2 processes from other cells; processes:group-fa-improve-hvq8u8 composes processes:process-ge-operate-hxxyc9",
+      "affected_requirement": "REQ-22-07",
+      "affected_entity": "processes:group-fa-conceive-9xzf3b + processes:group-fa-improve-hvq8u8",
+      "impact": "L1 composition crosses cell boundaries",
+      "severity": "medium",
+      "owner": "GOV-005 (Metamodel Steward)",
+      "proposed_action": "review whether the cross-cell composition is semantically justified or whether the L2 records belong to a different L0 cell",
+      "target_date": "2026-12-31",
+      "disposition": "requires_structural_remediation"
+    },
+    {
+      "gap_id": "GAP-011",
+      "description": "16 L1 Process Groups with exactly 1 L2 member (R22-09 review prompts, not defects per principle 5.4)",
+      "affected_requirement": "REQ-22-09",
+      "affected_entity": "16 L1 Process Groups across cells",
+      "impact": "review prompts; no fixed entity-count requirement is imposed",
+      "severity": "low",
+      "owner": "GOV-003 (Process Domain Reviewer)",
+      "proposed_action": "review whether each L1 is a valid grouping or an under-developed decomposition; record the disposition",
+      "target_date": "2027-03-31",
+      "disposition": "awaiting_owner_review"
+    },
+    {
+      "gap_id": "GAP-012",
+      "description": "AI-assisted catalogue maintenance policy not yet established",
+      "affected_requirement": "REQ-24-43..46",
+      "affected_entity": "the AI-assisted maintenance policy",
+      "impact": "future AI-assisted authoring must respect the EXT-15 evidence + EXT-16 authoring rules; the policy establishes the human-verification boundary",
+      "severity": "medium",
+      "owner": "GOV-009 (Governance Authority)",
+      "proposed_action": "publish the AI-assisted maintenance policy under governance/",
+      "target_date": "2026-12-31",
+      "disposition": "awaiting_owner_review"
+    }
+  ]
+}

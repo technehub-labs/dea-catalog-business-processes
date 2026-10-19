@@ -1,0 +1,166 @@
+{
+  "register_schema_version": "1",
+  "parent_cr": "CR-BP-94-EXT-24",
+  "generated_at": "2026-10-20",
+  "categories_in_use": [
+    "defect_correction",
+    "completeness_improvement",
+    "semantic_improvement",
+    "structural_improvement",
+    "governance_improvement",
+    "integration_improvement"
+  ],
+  "items": [
+    {
+      "item_id": "IMP-001",
+      "description": "Remediate the 4 pre-existing blocking gate failures",
+      "origin": "EXT-19..EXT-23 conformance posture",
+      "impact": "resolves the NON-CONFORMANT CI verdict",
+      "priority": "P1",
+      "dependencies": [
+        "none"
+      ],
+      "owner": "GOV-007 (Conformance Maintainer)",
+      "proposed_action": "address the schema (rc=3), reference embargo (23 findings), stale README, and entity envelope",
+      "status": "open",
+      "target_review_date": "2026-11-30",
+      "category": "defect_correction"
+    },
+    {
+      "item_id": "IMP-002",
+      "description": "Carry out the L2 content backfill (REQ-19)",
+      "origin": "EXT-19 foundation",
+      "impact": "promotes gate [44] from advisory to blocking when reconciled",
+      "priority": "P2",
+      "dependencies": [
+        "IMP-001"
+      ],
+      "owner": "GOV-006 (Data and Evidence Reviewer)",
+      "proposed_action": "research, populate, and verify the 733 evidence gaps on the 146 L2 BPs",
+      "status": "open",
+      "target_review_date": "2027-03-31",
+      "category": "completeness_improvement"
+    },
+    {
+      "item_id": "IMP-003",
+      "description": "Carry out the L3 content backfill (REQ-20)",
+      "origin": "EXT-20 foundation",
+      "impact": "promotes gate [45] from advisory to blocking when reconciled",
+      "priority": "P2",
+      "dependencies": [
+        "IMP-002"
+      ],
+      "owner": "GOV-006",
+      "proposed_action": "populate the 4,061 evidence gaps on the 580 L3 Activities",
+      "status": "open",
+      "target_review_date": "2027-06-30",
+      "category": "completeness_improvement"
+    },
+    {
+      "item_id": "IMP-004",
+      "description": "Carry out the L4 content backfill (REQ-21)",
+      "origin": "EXT-21 foundation",
+      "impact": "promotes gate [46] from advisory to blocking when reconciled",
+      "priority": "P3",
+      "dependencies": [
+        "IMP-003"
+      ],
+      "owner": "GOV-006",
+      "proposed_action": "carry out the EXT-15 provenance migration and the EXT-16 authoring migration on 2,900 L4 Tasks",
+      "status": "open",
+      "target_review_date": "2027-09-30",
+      "category": "completeness_improvement"
+    },
+    {
+      "item_id": "IMP-005",
+      "description": "Resolve the 8 EXT-22 structural findings (deprecation + L1/L2 compositions)",
+      "origin": "EXT-22 reconciliation matrix",
+      "impact": "promotes gate [47] from advisory to blocking when reconciled",
+      "priority": "P2",
+      "dependencies": [
+        "none"
+      ],
+      "owner": "GOV-002 (Business Process Owner) + GOV-005 (Metamodel Steward)",
+      "proposed_action": "deprecate process-ge-conceive-e6jx6s formally; review the 6 L1-to-L2 cross-cell compositions",
+      "status": "open",
+      "target_review_date": "2026-12-31",
+      "category": "structural_improvement"
+    },
+    {
+      "item_id": "IMP-006",
+      "description": "Review the 16 granularity prompts (L1 with exactly 1 L2)",
+      "origin": "EXT-22 R22-09",
+      "impact": "no gate failure; recorded for review",
+      "priority": "P3",
+      "dependencies": [
+        "none"
+      ],
+      "owner": "GOV-003 (Process Domain Reviewer)",
+      "proposed_action": "record the disposition for each L1 (valid grouping or under-developed decomposition)",
+      "status": "open",
+      "target_review_date": "2027-03-31",
+      "category": "semantic_improvement"
+    },
+    {
+      "item_id": "IMP-007",
+      "description": "Establish the AI-assisted catalogue maintenance policy (REQ-24-43..46)",
+      "origin": "EXT-24 governance",
+      "impact": "establishes the AI-assisted authoring boundary",
+      "priority": "P2",
+      "dependencies": [
+        "IMP-001"
+      ],
+      "owner": "GOV-009 (Governance Authority)",
+      "proposed_action": "publish the policy under governance/ with the EXT-15 evidence + EXT-16 authoring requirements",
+      "status": "open",
+      "target_review_date": "2026-12-31",
+      "category": "governance_improvement"
+    },
+    {
+      "item_id": "IMP-008",
+      "description": "Name owners for the 146 L2 Business Processes (REQ-24-10)",
+      "origin": "EXT-24 ownership register",
+      "impact": "transitions the dispositions from awaiting_owner_confirmation to named",
+      "priority": "P2",
+      "dependencies": [
+        "none"
+      ],
+      "owner": "GOV-003 (Process Domain Reviewer)",
+      "proposed_action": "domain reviewers assign named Business Process Owners",
+      "status": "open",
+      "target_review_date": "2026-12-31",
+      "category": "governance_improvement"
+    },
+    {
+      "item_id": "IMP-009",
+      "description": "Cross-catalogue dependency governance with dea-metaframework + sibling dea-catalog-* repos",
+      "origin": "EXT-24 \u00a712",
+      "impact": "operationalises the cross-repo event-trigger model",
+      "priority": "P3",
+      "dependencies": [
+        "none"
+      ],
+      "owner": "GOV-005 (Metamodel Steward)",
+      "proposed_action": "publish the dependency governance document; identify the cross-repo notification mechanism",
+      "status": "open",
+      "target_review_date": "2027-03-31",
+      "category": "integration_improvement"
+    },
+    {
+      "item_id": "IMP-010",
+      "description": "Consolidate EXT-08..EXT-24 into a Business Process Operational Documentation and Governance Specification v1.0 (CR \u00a727)",
+      "origin": "EXT-24 \u00a727 user recommendation",
+      "impact": "single coherent architectural and operational reference for the 17 CRs",
+      "priority": "P3",
+      "dependencies": [
+        "IMP-001",
+        "IMP-007"
+      ],
+      "owner": "GOV-007 (Conformance Maintainer)",
+      "proposed_action": "author the v1.0 specification (normative model + operational data model + engineering specification + governance specification + implementation baseline)",
+      "status": "open",
+      "target_review_date": "2027-03-31",
+      "category": "governance_improvement"
+    }
+  ]
+}

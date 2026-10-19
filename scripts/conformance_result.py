@@ -154,6 +154,8 @@ GATES: list[tuple[str, bool, list[str]]] = [
      False, ["python", "scripts/check_reconciliation_ext22.py", "--catalog-root", "."]),  # CR-BP-94-EXT-22; ADVISORY (PR-191 lands; deferred by CR-BP-EXT-23 until the 8 structural findings are reconciled; the fourth slice of the catalogue enrichment tranche)
     ("[48] Conformance Framework (CR-BP-EXT-23; CF-001..CF-051)",
      False, ["python3", "scripts/check_conformance_framework_ext23.py"]),  # CR-BP-EXT-23; ADVISORY (the conformance framework's own self-check: the rule catalogue + the traceability matrix + the report + the dashboard must all validate; the validator returns rc=1 if any CF-NNN framework-finding is emitted; the framework is a meta-artefact and its failure is an exception in the meta-framework, not a catalogue defect)
+    ("[49] Programme Closure (CR-BP-94-EXT-24; CG-001..CG-080)",
+     False, ["python3", "scripts/check_programme_closure_ext24.py"]),  # CR-BP-94-EXT-24; ADVISORY (the programme-closure self-check: the closure matrix + the catalogue baseline + the governance artefacts (roles, ownership, lifecycle, exceptions, deferrals, improvement backlog) must all validate; the validator returns rc=1 if any CG-NNN closure-finding is emitted; closure is a meta-artefact and its failure is an exception in the meta-closure, not a catalogue defect)
 ]
 
 

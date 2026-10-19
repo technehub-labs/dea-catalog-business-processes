@@ -1,0 +1,1322 @@
+{
+  "register_schema_version": "1",
+  "parent_cr": "CR-BP-94-EXT-24",
+  "generated_at": "2026-10-20",
+  "note": "Every L2 Business Process has an explicit ownership disposition. Where the actual owner is not yet known, the disposition is 'awaiting_owner_confirmation' and a Process Domain Reviewer (GOV-003) is responsible for assigning it. REQ-24-10.",
+  "dispositions": [
+    {
+      "bp_id": "processes:process-ao-activate-jqxtqn",
+      "bp_name": "Mobilize Licensed Workforce",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ao-build-9my4jr",
+      "bp_name": "Build Regulated Agent Pool",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ao-build-b38bkg",
+      "bp_name": "Build Contractor and Partner-Agent Pool",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ao-build-w2qurd",
+      "bp_name": "Acquire Agents",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ao-conceive-e3u8s2",
+      "bp_name": "Frame Organization and Agent Strategy",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ao-conceive-pnrhem",
+      "bp_name": "Conceive Licensed or Regulated Agent Capacity",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ao-conceive-ruxjvh",
+      "bp_name": "Frame Organization Model",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ao-conceive-z6m6p5",
+      "bp_name": "Conceive Workforce and Agent Mix",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ao-design-2fkvhx",
+      "bp_name": "Design Regulated Role Architecture",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ao-design-34e95r",
+      "bp_name": "Design Role Catalogue",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ao-design-7dkbur",
+      "bp_name": "Design Organization Structure",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ao-design-8fzp2b",
+      "bp_name": "Design Agent Topology",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ao-design-rve8j5",
+      "bp_name": "Design Competency Framework",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ao-improve-edjyha",
+      "bp_name": "Conduct Engagement and Alignment Review",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ao-improve-h3vgyf",
+      "bp_name": "Conduct Capability Gap Analysis",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ao-improve-qqxe4d",
+      "bp_name": "Improve Regulated Workforce Capability",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ao-improve-xfh8na",
+      "bp_name": "Develop Agents and Organization",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ao-improve-xs59e2",
+      "bp_name": "Reorganize Structures",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ao-operate-38qyc6",
+      "bp_name": "Operate Payroll and Benefits",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ao-operate-87q5mk",
+      "bp_name": "Operate Learning and Development",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ao-operate-ba8scr",
+      "bp_name": "Operate Regulated Performance Oversight",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ao-operate-bd7mef",
+      "bp_name": "Coordinate Collaboration",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ao-operate-dg9q4h",
+      "bp_name": "Operate Time and Attendance",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ao-operate-g4wp63",
+      "bp_name": "Operate Agent Performance",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ao-retire-g3eyr8",
+      "bp_name": "Conduct Regulated Workforce Wind-Down",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-activate-sy5qsa",
+      "bp_name": "Activate Operations Capability",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-build-awy8dz",
+      "bp_name": "Commission Production Line",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-build-ba6ykz",
+      "bp_name": "Build Logistics Network",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-build-j9z3q4",
+      "bp_name": "Build Delivery Capability",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-build-nmmmt6",
+      "bp_name": "Acquire Technology Assets",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-build-tqybhd",
+      "bp_name": "Provision Facilities",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-conceive-68mp6v",
+      "bp_name": "Frame Technology Enablement Approach",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-conceive-87kx9n",
+      "bp_name": "Frame Physical Asset Approach",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-conceive-ky5wxp",
+      "bp_name": "Frame Delivery Model Conception",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-conceive-xhjdr2",
+      "bp_name": "Frame Operations Strategy",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-design-6j5mxp",
+      "bp_name": "Design Delivery Model",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-design-7gtead",
+      "bp_name": "Design Technology Platform Architecture",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-design-8s76nv",
+      "bp_name": "Design Logistics and Routing",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-design-q83tdv",
+      "bp_name": "Design Facility and Asset Blueprint",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-design-rvfpjb",
+      "bp_name": "Design Operations Model",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-improve-3fem63",
+      "bp_name": "Conduct Logistics Optimization",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-improve-babwdc",
+      "bp_name": "Improve Technology Platforms",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-improve-g3ngp3",
+      "bp_name": "Conduct Operations Performance Review",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-improve-q58ecg",
+      "bp_name": "Optimize Asset Utilization",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-improve-us272s",
+      "bp_name": "Conduct Lean Six Sigma Programme",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-operate-2jnz85",
+      "bp_name": "Operate Service Delivery",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-operate-44jsrp",
+      "bp_name": "Operate Quality Control",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-operate-4njp7b",
+      "bp_name": "Operate Technology Platforms",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-operate-j9cjzz",
+      "bp_name": "Operate Asset Maintenance",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-operate-rqdte5",
+      "bp_name": "Operate Facility Management",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-operate-vzcxx7",
+      "bp_name": "Operate Procurement Cycle",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-operate-xud3hs",
+      "bp_name": "Run Production Line",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-operate-zh9m57",
+      "bp_name": "Operate Logistics",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-operate-zwzmbd",
+      "bp_name": "Operate Warehouse and Inventory",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-eo-retire-rpg6d4",
+      "bp_name": "Decommission Enterprise Asset",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-fa-activate-bzfywk",
+      "bp_name": "Activate Billing Capability",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-fa-build-92v24c",
+      "bp_name": "Build Budgeting and Forecasting Systems",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-fa-build-d5kb5m",
+      "bp_name": "Implement Financial Systems and Ledger",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-fa-build-ucfjgt",
+      "bp_name": "Onboard Tax and Compliance Capability",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-fa-build-ydnzjc",
+      "bp_name": "Secure Funding Facilities",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-fa-conceive-4uqqvg",
+      "bp_name": "Frame Finance Strategy",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-fa-design-ds4drw",
+      "bp_name": "Design Tax Position and Strategy",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-fa-design-k5sgfa",
+      "bp_name": "Design Treasury and Funding Model",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-fa-design-uun4ja",
+      "bp_name": "Design Financial Controls and Policies",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-fa-design-vk422z",
+      "bp_name": "Design Financial Plan Structure",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-fa-improve-2kemkq",
+      "bp_name": "Evolve Treasury and Funding Model",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-fa-improve-cdtsbq",
+      "bp_name": "Refine Financial Controls and Policies",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-fa-improve-emqpgr",
+      "bp_name": "Conduct Cost Optimization Review",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-fa-operate-2pmqb2",
+      "bp_name": "Manage Cash and Liquidity",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-fa-operate-4xn4d6",
+      "bp_name": "Perform Financial Close",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-fa-operate-8vqvkk",
+      "bp_name": "Manage Tax Compliance and Filings",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-fa-operate-g9zpnq",
+      "bp_name": "Operate General Ledger",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-fa-operate-sdppmp",
+      "bp_name": "Run Accounts Receivable",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-fa-operate-wkqaqp",
+      "bp_name": "Run Accounts Payable",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-fa-operate-ycba3k",
+      "bp_name": "Operate Financial Reporting and Disclosure",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-fa-operate-zpmxzp",
+      "bp_name": "Execute Payroll",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-fa-retire-wkbrsa",
+      "bp_name": "Conclude Regulated Run-Off",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ge-activate-wegs44",
+      "bp_name": "Bring Policy Instrument into Force",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ge-build-3p38us",
+      "bp_name": "Establish Governance Bodies",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ge-build-mctdgc",
+      "bp_name": "Codify Charters and Policies",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ge-build-rx7kt5",
+      "bp_name": "Establish Risk and Control Apparatus",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ge-conceive-6qnkhh",
+      "bp_name": "Frame Risk Framework Direction",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ge-conceive-e6jx6s",
+      "bp_name": "Develop Governance Strategy",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ge-conceive-xp6fye",
+      "bp_name": "Initiate Policy and Charter",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ge-design-kpsj5b",
+      "bp_name": "Design Policies and Controls",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ge-design-pqkvdc",
+      "bp_name": "Design Risk Framework",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ge-design-zbrg8b",
+      "bp_name": "Design Governance System",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ge-improve-axtq3b",
+      "bp_name": "Score Audit Findings",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ge-improve-mgkw59",
+      "bp_name": "Review Governance Effectiveness",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ge-improve-u3g5dh",
+      "bp_name": "Improve Policy and Control Framework",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ge-operate-hs7wf3",
+      "bp_name": "Operate Governance Oversight",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ge-operate-hxxyc9",
+      "bp_name": "Audit Policy Compliance",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ge-operate-tpenm6",
+      "bp_name": "Operate Enterprise Risk Oversight",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ge-operate-zwaes5",
+      "bp_name": "Conduct Assurance Review",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-ge-retire-mjq5hg",
+      "bp_name": "Effect Regulator-Mandated Governance Unwind",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pr-activate-6qzuve",
+      "bp_name": "Onboard Regulated Party Relationship",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pr-build-4kb2pt",
+      "bp_name": "Build Demand Generation Programs",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pr-build-nygvw7",
+      "bp_name": "Build Customer Acquisition Channels",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pr-conceive-emfgju",
+      "bp_name": "Develop Customer Strategy",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pr-conceive-tvst8u",
+      "bp_name": "Develop Market Intelligence",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pr-design-cv6hjh",
+      "bp_name": "Design Demand Model",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pr-design-j6fakx",
+      "bp_name": "Design Customer Journey",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pr-design-pxydu3",
+      "bp_name": "Design Customer Experience",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pr-improve-t6uvan",
+      "bp_name": "Operate Customer Retention Programs",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pr-improve-t6uvan",
+      "bp_name": "Operate Customer Retention Programs (documentation manifest)",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pr-operate-bbe384",
+      "bp_name": "Manage Customer Relationship",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pr-retire-bd3asa",
+      "bp_name": "Close Enterprise Relationship",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pv-activate-5686v7",
+      "bp_name": "Transition Proposition to Service",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pv-build-6hjzmk",
+      "bp_name": "Prepare Market Readiness",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pv-build-8jc3y4",
+      "bp_name": "Build Innovation Prototype",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pv-build-p9a2s9",
+      "bp_name": "Build Service Capability",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pv-build-say8tb",
+      "bp_name": "Develop Product Variants",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pv-conceive-jb4xtg",
+      "bp_name": "Frame Portfolio Direction",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pv-conceive-kps544",
+      "bp_name": "Frame Innovation Thesis",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pv-conceive-xe9axm",
+      "bp_name": "Frame Value Proposition Thesis",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pv-design-8v4k89",
+      "bp_name": "Design Product and Service Propositions",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pv-design-9ckwf6",
+      "bp_name": "Design Innovation Experiment",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pv-design-a4c76s",
+      "bp_name": "Design Packaging and Configuration",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pv-improve-27r7r7",
+      "bp_name": "Conduct Proposition Performance Review",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pv-improve-6c2xvf",
+      "bp_name": "Evolve Products and Services",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pv-improve-9xvgat",
+      "bp_name": "Rationalize Portfolio",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pv-operate-cau4gv",
+      "bp_name": "Manage Proposition Lifecycle",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pv-operate-en8rdz",
+      "bp_name": "Manage Portfolio Performance",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pv-operate-zyguzp",
+      "bp_name": "Operate Product Catalogue",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-pv-retire-6us5am",
+      "bp_name": "Transition Proposition Out of Service",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-sd-activate-s9m34e",
+      "bp_name": "Institutionalize Regulated Strategic Plan",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-sd-build-2pkz5n",
+      "bp_name": "Set Resource Allocation Priorities",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-sd-build-7n4prh",
+      "bp_name": "Build Strategic Roadmap",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-sd-build-9admqy",
+      "bp_name": "Translate Strategic Choices into Initiatives",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-sd-build-q4nf9g",
+      "bp_name": "Build Strategic Plan",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-sd-conceive-3uredz",
+      "bp_name": "Conceive Strategic Intent",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-sd-conceive-ahwvp5",
+      "bp_name": "Develop Corporate Strategy",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-sd-conceive-r93j3d",
+      "bp_name": "Define Enterprise Purpose and Ambition",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-sd-conceive-xa4h2k",
+      "bp_name": "Frame Strategic Horizons",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-sd-design-ed7jd5",
+      "bp_name": "Evaluate Strategic Alternatives",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-sd-design-ewvbsh",
+      "bp_name": "Design Strategic Options",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-sd-design-uenzna",
+      "bp_name": "Design Strategic Scenarios",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-sd-design-vdwkmh",
+      "bp_name": "Design Objectives and Targets",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-sd-improve-9wgvaf",
+      "bp_name": "Adapt Strategic Direction",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-sd-improve-aqbrm7",
+      "bp_name": "Refresh Objectives and Targets",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-sd-improve-duwd64",
+      "bp_name": "Review Strategy Effectiveness",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-sd-operate-53y4j4",
+      "bp_name": "Sense Environmental Signals",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-sd-operate-u6xgu5",
+      "bp_name": "Steer Initiative Portfolio",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-sd-operate-ucxpz4",
+      "bp_name": "Operate Strategic Review Cycle",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-sd-operate-zdjchn",
+      "bp_name": "Monitor Strategic Performance",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    },
+    {
+      "bp_id": "processes:process-sd-retire-umxf3c",
+      "bp_name": "Sunset Regulated Strategic Plan",
+      "cell_id": "(unassigned cell)",
+      "owner": "awaiting_owner_confirmation",
+      "owner_status": "pending_naming",
+      "review_due": "2026-12-31",
+      "decision_right": "Business Process Owner (GOV-002) confirms"
+    }
+  ]
+}
