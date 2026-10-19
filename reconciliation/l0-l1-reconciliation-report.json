@@ -1,0 +1,51 @@
+{
+  "report_schema_version": "1",
+  "generated_at": "2026-10-19",
+  "parent_cr": "CR-BP-94-EXT-22",
+  "l1_process_groups": 49,
+  "l2_business_processes": 145,
+  "l0_referenced": 49,
+  "l0_materialised": 49,
+  "l0_context_mismatches": [
+    {
+      "l1": "processes:group-fa-conceive-9xzf3b",
+      "l2": "processes:process-eo-conceive-87kx9n",
+      "l1_process_context": "processes:pc-fa-conceive-phabh2",
+      "l2_context": "processes:pc-eo-conceive-mxmtzq"
+    },
+    {
+      "l1": "processes:group-fa-conceive-9xzf3b",
+      "l2": "processes:process-fa-design-vk422z",
+      "l1_process_context": "processes:pc-fa-conceive-phabh2",
+      "l2_context": "processes:pc-fa-design-4j8evh"
+    },
+    {
+      "l1": "processes:group-fa-conceive-9xzf3b",
+      "l2": "processes:process-ge-operate-hxxyc9",
+      "l1_process_context": "processes:pc-fa-conceive-phabh2",
+      "l2_context": "processes:pc-ge-operate-hb2dac"
+    },
+    {
+      "l1": "processes:group-fa-conceive-9xzf3b",
+      "l2": "processes:process-fa-operate-g9zpnq",
+      "l1_process_context": "processes:pc-fa-conceive-phabh2",
+      "l2_context": "processes:pc-fa-operate-afew7e"
+    },
+    {
+      "l1": "processes:group-fa-conceive-9xzf3b",
+      "l2": "processes:process-fa-improve-emqpgr",
+      "l1_process_context": "processes:pc-fa-conceive-phabh2",
+      "l2_context": "processes:pc-fa-improve-haqf4w"
+    },
+    {
+      "l1": "processes:group-fa-improve-hvq8u8",
+      "l2": "processes:process-ge-operate-hxxyc9",
+      "l1_process_context": "processes:pc-fa-improve-haqf4w",
+      "l2_context": "processes:pc-ge-operate-hb2dac"
+    }
+  ],
+  "l2_without_l1_membership": [
+    "processes:process-ge-conceive-e6jx6s"
+  ],
+  "l1_without_l2_members": []
+}

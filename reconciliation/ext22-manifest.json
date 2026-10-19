@@ -1,0 +1,79 @@
+{
+  "manifest_schema_version": "1",
+  "generated_at": "2026-10-19",
+  "generator": "scripts/check_reconciliation_ext22.py",
+  "parent_cr": "CR-BP-94-EXT-22",
+  "catalog_root": "/home/hermes/dea-catalog-processes",
+  "summary": {
+    "total_findings": 8,
+    "by_rule": {
+      "R22-04": 1,
+      "R22-06": 1,
+      "R22-07": 6
+    },
+    "by_severity": {
+      "error": 8
+    }
+  },
+  "findings": [
+    {
+      "rule": "R22-04",
+      "where": "processes:process-ge-conceive-e6jx6s",
+      "diagnostic": "L2 Business Process 'processes:process-ge-conceive-e6jx6s' has no L3 Activity decomposition",
+      "severity": "error"
+    },
+    {
+      "rule": "R22-06",
+      "where": "processes:process-ge-conceive-e6jx6s",
+      "diagnostic": "L2 Business Process 'processes:process-ge-conceive-e6jx6s' is not composed by any L1 Process Group",
+      "severity": "error"
+    },
+    {
+      "rule": "R22-07",
+      "where": "processes:process-eo-conceive-87kx9n",
+      "diagnostic": "L1 'processes:group-fa-conceive-9xzf3b' (process_context 'processes:pc-fa-conceive-phabh2') composes L2 'processes:process-eo-conceive-87kx9n' whose context[] points to 'processes:pc-eo-conceive-mxmtzq'",
+      "severity": "error"
+    },
+    {
+      "rule": "R22-07",
+      "where": "processes:process-fa-design-vk422z",
+      "diagnostic": "L1 'processes:group-fa-conceive-9xzf3b' (process_context 'processes:pc-fa-conceive-phabh2') composes L2 'processes:process-fa-design-vk422z' whose context[] points to 'processes:pc-fa-design-4j8evh'",
+      "severity": "error"
+    },
+    {
+      "rule": "R22-07",
+      "where": "processes:process-ge-operate-hxxyc9",
+      "diagnostic": "L1 'processes:group-fa-conceive-9xzf3b' (process_context 'processes:pc-fa-conceive-phabh2') composes L2 'processes:process-ge-operate-hxxyc9' whose context[] points to 'processes:pc-ge-operate-hb2dac'",
+      "severity": "error"
+    },
+    {
+      "rule": "R22-07",
+      "where": "processes:process-fa-operate-g9zpnq",
+      "diagnostic": "L1 'processes:group-fa-conceive-9xzf3b' (process_context 'processes:pc-fa-conceive-phabh2') composes L2 'processes:process-fa-operate-g9zpnq' whose context[] points to 'processes:pc-fa-operate-afew7e'",
+      "severity": "error"
+    },
+    {
+      "rule": "R22-07",
+      "where": "processes:process-fa-improve-emqpgr",
+      "diagnostic": "L1 'processes:group-fa-conceive-9xzf3b' (process_context 'processes:pc-fa-conceive-phabh2') composes L2 'processes:process-fa-improve-emqpgr' whose context[] points to 'processes:pc-fa-improve-haqf4w'",
+      "severity": "error"
+    },
+    {
+      "rule": "R22-07",
+      "where": "processes:process-ge-operate-hxxyc9",
+      "diagnostic": "L1 'processes:group-fa-improve-hvq8u8' (process_context 'processes:pc-fa-improve-haqf4w') composes L2 'processes:process-ge-operate-hxxyc9' whose context[] points to 'processes:pc-ge-operate-hb2dac'",
+      "severity": "error"
+    }
+  ],
+  "catalogue_state": {
+    "by_level": {
+      "L4": 2900,
+      "L3": 580,
+      "L2": 145,
+      "L1": 49,
+      "L0": 49
+    },
+    "total_records": 3726,
+    "matrix_records": 2901
+  }
+}

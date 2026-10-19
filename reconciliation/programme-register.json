@@ -258,12 +258,12 @@
       "id": "CR-BP-94-EXT-19",
       "title": "L2 Business Process Catalogue Backfill",
       "initiative": "D: Pilot and backfill execution",
-      "status": "reserved",
-      "implementation_status": "not started",
-      "scope_kind": "data-only (L2 YAML enrichment across 7 ECF domains)",
+      "status": "implemented",
+      "implementation_status": "foundation landed (PR #188, 0b477256): L2 inventory + L2-to-L3 reconciliation matrix; 12 rules L2-001..L2-012; gate [44] ADVISORY; the L2 content backfill remains",
+      "scope_kind": "catalogue-inventory + reconciliation-matrix (L2)",
       "touches_schemas": false,
       "touches_templates": false,
-      "touches_scripts": false,
+      "touches_scripts": true,
       "dependencies": [
         "CR-BP-94-EXT-12",
         "CR-BP-94-EXT-13",
@@ -276,18 +276,18 @@
         "CR-BP-94-EXT-20",
         "CR-BP-94-EXT-21"
       ],
-      "path": null
+      "path": "change-requests/CR-BP-94-EXT-19-l2-business-process-operational-documentation-backfill.md"
     },
     {
       "id": "CR-BP-94-EXT-20",
       "title": "L3 Activity Catalogue Backfill",
       "initiative": "D: Pilot and backfill execution",
-      "status": "reserved",
-      "implementation_status": "not started",
-      "scope_kind": "data-only (L3 Activity YAML enrichment)",
+      "status": "implemented",
+      "implementation_status": "foundation landed (PR #189, ed7821d6): L3 inventory + L3-to-L2 hierarchy matrix + L3-to-L4 reconciliation slice; 14 rules L3-001..L3-014; gate [45] ADVISORY; the L3 content backfill remains",
+      "scope_kind": "catalogue-inventory + reconciliation-matrix (L3)",
       "touches_schemas": false,
       "touches_templates": false,
-      "touches_scripts": false,
+      "touches_scripts": true,
       "dependencies": [
         "CR-BP-94-EXT-12",
         "CR-BP-94-EXT-13",
@@ -300,18 +300,18 @@
       "successors": [
         "CR-BP-94-EXT-21"
       ],
-      "path": null
+      "path": "change-requests/CR-BP-94-EXT-20-l3-activity-operational-documentation-backfill.md"
     },
     {
       "id": "CR-BP-94-EXT-21",
       "title": "L4 Task Catalogue Backfill",
       "initiative": "D: Pilot and backfill execution",
-      "status": "reserved",
-      "implementation_status": "not started",
-      "scope_kind": "data-only (L4 Task YAML enrichment, when canonical L4 records exist)",
+      "status": "implemented",
+      "implementation_status": "foundation landed (PR #190, 27a890d8): L4 inventory + L4-to-L3 traceability matrix (completes the L2-to-L3-to-L4 traceability matrix); 14 rules L4-001..L4-014; gate [46] ADVISORY; the L4 content backfill remains",
+      "scope_kind": "catalogue-inventory + reconciliation-matrix (L4)",
       "touches_schemas": false,
       "touches_templates": false,
-      "touches_scripts": false,
+      "touches_scripts": true,
       "dependencies": [
         "CR-BP-94-EXT-12",
         "CR-BP-94-EXT-13",
@@ -325,18 +325,18 @@
       "successors": [
         "CR-BP-94-EXT-22"
       ],
-      "path": null
+      "path": "change-requests/CR-BP-94-EXT-21-l4-task-operational-documentation-backfill.md"
     },
     {
       "id": "CR-BP-94-EXT-22",
-      "title": "L0/L1 Context and Process Group Backfill",
+      "title": "Process Decomposition Reconciliation and Structural Integrity",
       "initiative": "D: Pilot and backfill execution",
-      "status": "reserved",
-      "implementation_status": "not started",
-      "scope_kind": "data-only (L0 ProcessContext + L1 ProcessGroup enrichment, sequenced after L2-L4)",
+      "status": "implemented",
+      "implementation_status": "foundation landed (PR #191): the L2-L4 Reconciliation Matrix (2,901 records, all 26 required fields) + 12 structural integrity rules R22-01..R22-12 + 4 registers + the EXT-23 readiness assessment; gate [47] ADVISORY; 8 structural findings recorded for remediation",
+      "scope_kind": "reconciliation-matrix + structural-integrity (L0-L4)",
       "touches_schemas": false,
       "touches_templates": false,
-      "touches_scripts": false,
+      "touches_scripts": true,
       "dependencies": [
         "CR-BP-94-EXT-19",
         "CR-BP-94-EXT-20",
@@ -345,15 +345,15 @@
       "successors": [
         "CR-BP-94-EXT-23"
       ],
-      "path": null
+      "path": "change-requests/CR-BP-94-EXT-22-process-decomposition-reconciliation-and-structural-integrity.md"
     },
     {
       "id": "CR-BP-94-EXT-23",
       "title": "Operational Documentation Conformance Gates",
       "initiative": "E: Validation and conformance",
-      "status": "reserved",
-      "implementation_status": "not started",
-      "scope_kind": "script-extension (OPR-001..020 gates; 3-stage enforcement: advisory -> transitional -> mandatory)",
+      "status": "implemented",
+      "implementation_status": "foundation landed (PR #191): the gate inventory + the 4-class enforcement taxonomy + the conformance posture report; 7 gates promoted to blocking (T1/T2, 0 open findings); 4 gates deferred with rationale; the EXT-24 governance requirements identified",
+      "scope_kind": "gate-posture + enforcement-classification (catalogue-wide)",
       "touches_schemas": false,
       "touches_templates": false,
       "touches_scripts": true,
@@ -366,7 +366,7 @@
       "successors": [
         "CR-BP-94-EXT-24"
       ],
-      "path": null
+      "path": "change-requests/CR-BP-EXT-23-operational-documentation-conformance-gates.md"
     },
     {
       "id": "CR-BP-94-EXT-24",

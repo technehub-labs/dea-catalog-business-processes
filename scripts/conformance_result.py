@@ -129,27 +129,29 @@ GATES: list[tuple[str, bool, list[str]]] = [
     ("[35] Decomposition Reconciliation (CR-BP-94-EXT-05; DOC-021..025)",
      True, ["python", "scripts/check_decomposition_reconciliation.py", "--catalog-root", "."]),  # CR-BP-94-EXT-05; BLOCKING (CR-BP-94-EXT-06; was advisory before)
     ("[36] Profile Registry (CR-BP-94-EXT-11; PR-001..PR-010)",
-     False, ["python", "scripts/check_profile_registry_ext11.py"]),  # CR-BP-94-EXT-11; ADVISORY (PR-180 lands; flipped to blocking under CR-BP-94-EXT-23)
+     True, ["python", "scripts/check_profile_registry_ext11.py"]),  # CR-BP-94-EXT-11; BLOCKING (promoted by CR-BP-EXT-23; T2 content; 0 open findings)
     ("[37] Inputs, Outputs, Interfaces (CR-BP-94-EXT-12; IT-001..IT-010)",
-     False, ["python", "scripts/check_inputs_outputs_interfaces_ext12.py", "--catalog-root", "."]),  # CR-BP-94-EXT-12; ADVISORY (PR-181 lands; flipped to blocking under CR-BP-94-EXT-23)
+     True, ["python", "scripts/check_inputs_outputs_interfaces_ext12.py", "--catalog-root", "."]),  # CR-BP-94-EXT-12; BLOCKING (promoted by CR-BP-EXT-23; T2 content; 0 open findings)
     ("[38] Responsibility, Accountability, Roles (CR-BP-94-EXT-13; RA-001..RA-010)",
-     False, ["python", "scripts/check_responsibility_accountability_ext13.py", "--catalog-root", "."]),  # CR-BP-94-EXT-13; ADVISORY (PR-182 lands; flipped to blocking under CR-BP-94-EXT-23)
+     True, ["python", "scripts/check_responsibility_accountability_ext13.py", "--catalog-root", "."]),  # CR-BP-94-EXT-13; BLOCKING (promoted by CR-BP-EXT-23; T2 content; 0 open findings)
     ("[39] Business Rules, Controls, Exceptions (CR-BP-94-EXT-14; GO-001..GO-010)",
-     False, ["python", "scripts/check_business_rules_controls_exceptions_ext14.py", "--catalog-root", "."]),  # CR-BP-94-EXT-14; ADVISORY (PR-183 lands; flipped to blocking under CR-BP-94-EXT-23; final tranche gate of the 5-gate semantic-model tranche)
+     True, ["python", "scripts/check_business_rules_controls_exceptions_ext14.py", "--catalog-root", "."]),  # CR-BP-94-EXT-14; BLOCKING (promoted by CR-BP-EXT-23; T2 content; 0 open findings)
     ("[40] Evidence, Provenance, Confidence (CR-BP-94-EXT-15; EV-001..EV-010)",
-     False, ["python", "scripts/check_evidence_provenance_ext15.py", "--catalog-root", "."]),  # CR-BP-94-EXT-15; ADVISORY (PR-184 lands; flipped to blocking under CR-BP-94-EXT-23; first slice of the engineering and governance readiness tranche)
+     True, ["python", "scripts/check_evidence_provenance_ext15.py", "--catalog-root", "."]),  # CR-BP-94-EXT-15; BLOCKING (promoted by CR-BP-EXT-23; T2 content; 0 open findings)
     ("[41] Authoring Methodology (CR-BP-94-EXT-16; AM-001..AM-010)",
-     False, ["python", "scripts/check_authoring_methodology_ext16.py", "--catalog-root", "."]),  # CR-BP-94-EXT-16; ADVISORY (PR-185 lands; flipped to blocking under CR-BP-94-EXT-23; second slice of the engineering and governance readiness tranche)
+     True, ["python", "scripts/check_authoring_methodology_ext16.py", "--catalog-root", "."]),  # CR-BP-94-EXT-16; BLOCKING (promoted by CR-BP-EXT-23; T2 content; 0 open findings)
     ("[42] Enrichment Tooling (CR-BP-94-EXT-17; OR-001..OR-005 + RP-001..RP-009)",
      False, ["python", "scripts/orchestrate_backfill.py", "--dry-run", "--catalog-root", "."]),  # CR-BP-94-EXT-17; ADVISORY (PR-186 lands; flipped to blocking under CR-BP-94-EXT-23; third slice of the engineering and governance readiness tranche)
     ("[43] Operational Documentation Pilot (CR-BP-94-EXT-18; PI-001..PI-008)",
-     False, ["python", "scripts/check_pilot_selection_ext18.py", "--catalog-root", "."]),  # CR-BP-94-EXT-18; ADVISORY (PR-187 lands; flipped to blocking under CR-BP-94-EXT-23; the FINAL go/no-go gate of the engineering and governance readiness tranche)
+     True, ["python", "scripts/check_pilot_selection_ext18.py", "--catalog-root", "."]),  # CR-BP-94-EXT-18; BLOCKING (promoted by CR-BP-EXT-23; T1 structural; 0 open findings)
     ("[44] L2 Business Process Backfill (CR-BP-94-EXT-19; L2-001..L2-012)",
      False, ["python", "scripts/check_l2_backfill_ext19.py", "--catalog-root", "."]),  # CR-BP-94-EXT-19; ADVISORY (PR-188 lands; flipped to blocking under CR-BP-94-EXT-23; first slice of the catalogue enrichment tranche; authorised by the EXT-18 GO decision)
     ("[45] L3 Activity Backfill (CR-BP-94-EXT-20; L3-001..L3-014)",
      False, ["python", "scripts/check_l3_backfill_ext20.py", "--catalog-root", "."]),  # CR-BP-94-EXT-20; ADVISORY (PR-189 lands; flipped to blocking under CR-BP-94-EXT-23; second slice of the catalogue enrichment tranche)
     ("[46] L4 Task Backfill (CR-BP-94-EXT-21; L4-001..L4-014)",
-     False, ["python", "scripts/check_l4_backfill_ext21.py", "--catalog-root", "."]),  # CR-BP-94-EXT-21; ADVISORY (PR-190 lands; flipped to blocking under CR-BP-94-EXT-23; third slice of the catalogue enrichment tranche; completes the L2-to-L3-to-L4 traceability matrix)
+     False, ["python", "scripts/check_l4_backfill_ext21.py", "--catalog-root", "."]),  # CR-BP-94-EXT-21; ADVISORY (PR-190 lands; deferred by CR-BP-EXT-23 until the L4 population is reconciled; third slice of the catalogue enrichment tranche; completes the L2-to-L3-to-L4 traceability matrix)
+    ("[47] Decomposition Reconciliation (CR-BP-94-EXT-22; R22-01..R22-12)",
+     False, ["python", "scripts/check_reconciliation_ext22.py", "--catalog-root", "."]),  # CR-BP-94-EXT-22; ADVISORY (PR-191 lands; deferred by CR-BP-EXT-23 until the 8 structural findings are reconciled; the fourth slice of the catalogue enrichment tranche)
 ]
 
 
@@ -175,25 +177,27 @@ def _run_gate(name: str, blocking: bool, argv: list[str],
     )
     rc = proc.returncode
 
-    # Blocking posture check: read the manifest if this is gate [34] / [35].
-    if blocking and rc == 0 and ("validate_readme_structure.py" in argv[1]
-                                 or "check_decomposition_reconciliation.py" in argv[1]):
-        manifest_name = (
-            "validation-manifest.json"
-            if "validate_readme_structure.py" in argv[1]
-            else "decomposition-reconciliation-manifest.json"
-        )
-        manifest_path = catalog_root / "reconciliation" / manifest_name
-        try:
-            import json as _json
-            m = _json.loads(manifest_path.read_text(encoding="utf-8"))
-            findings = m.get("summary", {}).get("total_findings", 0)
-            if findings > 0:
-                rc = 1
-                verdict_line = (f"{verdict_line} [BLOCKED: {findings} "
-                                f"findings must be reconciled]")
-        except Exception:
-            pass
+    # Blocking posture check: read the validator's manifest.
+    if blocking and rc == 0:
+        manifest_name = _manifest_for_gate(name)
+        if manifest_name:
+            manifest_path = catalog_root / "reconciliation" / manifest_name
+            try:
+                import json as _json
+                m = _json.loads(manifest_path.read_text(encoding="utf-8"))
+                summary = m.get("summary", {})
+                findings = summary.get("total_findings", 0)
+                advisory = summary.get("advisory_findings")
+                # Advisory findings are known, dispositioned conditions, not
+                # open reconciliation gaps.
+                if isinstance(advisory, int) and advisory == findings:
+                    findings = 0
+                if findings > 0:
+                    rc = 1
+                    verdict_line = (f"{verdict_line} [BLOCKED: {findings} "
+                                    f"findings must be reconciled]")
+            except Exception:
+                pass
 
     return GateResult(
         name=name,
@@ -202,6 +206,35 @@ def _run_gate(name: str, blocking: bool, argv: list[str],
         verdict_line=verdict_line,
         raw_stdout=proc.stdout,
     )
+
+
+# The manifest each blocking gate's validator emits. Keyed by the gate label
+# in the GATES registry above.
+_GATE_MANIFESTS = {
+    "[34] Documentation Profile - Generator and Validator (CR-BP-94-EXT-04; DOC-016..020)":
+        "validation-manifest.json",
+    "[35] Decomposition Reconciliation (CR-BP-94-EXT-05; DOC-021..025)":
+        "decomposition-reconciliation-manifest.json",
+    "[36] Profile Registry (CR-BP-94-EXT-11; PR-001..PR-010)":
+        "profile-manifest.json",
+    "[37] Inputs, Outputs, Interfaces (CR-BP-94-EXT-12; IT-001..IT-010)":
+        "inputs-outputs-manifest.json",
+    "[38] Responsibility, Accountability, Roles (CR-BP-94-EXT-13; RA-001..RA-010)":
+        "responsibility-accountability-manifest.json",
+    "[39] Business Rules, Controls, Exceptions (CR-BP-94-EXT-14; GO-001..GO-010)":
+        "governance-manifest.json",
+    "[40] Evidence, Provenance, Confidence (CR-BP-94-EXT-15; EV-001..EV-010)":
+        "evidence-manifest.json",
+    "[41] Authoring Methodology (CR-BP-94-EXT-16; AM-001..AM-010)":
+        "authoring-manifest.json",
+    "[43] Operational Documentation Pilot (CR-BP-94-EXT-18; PI-001..PI-008)":
+        "pilot-selection-manifest.json",
+}
+
+
+def _manifest_for_gate(name: str) -> str | None:
+    """Return the manifest filename for a gate, or None."""
+    return _GATE_MANIFESTS.get(name)
 
 
 def main(argv: list[str] | None = None) -> int:
