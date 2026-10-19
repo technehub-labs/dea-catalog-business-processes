@@ -148,6 +148,8 @@ GATES: list[tuple[str, bool, list[str]]] = [
      False, ["python", "scripts/check_l2_backfill_ext19.py", "--catalog-root", "."]),  # CR-BP-94-EXT-19; ADVISORY (PR-188 lands; flipped to blocking under CR-BP-94-EXT-23; first slice of the catalogue enrichment tranche; authorised by the EXT-18 GO decision)
     ("[45] L3 Activity Backfill (CR-BP-94-EXT-20; L3-001..L3-014)",
      False, ["python", "scripts/check_l3_backfill_ext20.py", "--catalog-root", "."]),  # CR-BP-94-EXT-20; ADVISORY (PR-189 lands; flipped to blocking under CR-BP-94-EXT-23; second slice of the catalogue enrichment tranche)
+    ("[46] L4 Task Backfill (CR-BP-94-EXT-21; L4-001..L4-014)",
+     False, ["python", "scripts/check_l4_backfill_ext21.py", "--catalog-root", "."]),  # CR-BP-94-EXT-21; ADVISORY (PR-190 lands; flipped to blocking under CR-BP-94-EXT-23; third slice of the catalogue enrichment tranche; completes the L2-to-L3-to-L4 traceability matrix)
 ]
 
 
