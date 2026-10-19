@@ -132,6 +132,8 @@ GATES: list[tuple[str, bool, list[str]]] = [
      False, ["python", "scripts/check_profile_registry_ext11.py"]),  # CR-BP-94-EXT-11; ADVISORY (PR-180 lands; flipped to blocking under CR-BP-94-EXT-23)
     ("[37] Inputs, Outputs, Interfaces (CR-BP-94-EXT-12; IT-001..IT-010)",
      False, ["python", "scripts/check_inputs_outputs_interfaces_ext12.py", "--catalog-root", "."]),  # CR-BP-94-EXT-12; ADVISORY (PR-181 lands; flipped to blocking under CR-BP-94-EXT-23)
+    ("[38] Responsibility, Accountability, Roles (CR-BP-94-EXT-13; RA-001..RA-010)",
+     False, ["python", "scripts/check_responsibility_accountability_ext13.py", "--catalog-root", "."]),  # CR-BP-94-EXT-13; ADVISORY (PR-182 lands; flipped to blocking under CR-BP-94-EXT-23)
 ]
 
 
