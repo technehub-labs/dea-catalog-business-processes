@@ -1,0 +1,71 @@
+{
+  "register_schema_version": "1",
+  "parent_cr": "CR-BP-94-EXT-24",
+  "generated_at": "2026-10-20",
+  "note": "The 9 roles proposed in CR \u00a78.1. Each is mapped to the actual governance convention rather than treated as a new organisational position. A single individual may fulfil multiple roles.",
+  "roles": [
+    {
+      "role_id": "GOV-001",
+      "role_name": "Catalogue Steward",
+      "primary_responsibility": "maintains catalogue integrity, consistency and governance practices",
+      "mapped_to": "the programme owner (Emmanuel A. Otchere) for the DEA-PROCESS-ENRICH-000 programme; transitions to a designated catalogue steward on handover",
+      "scope": "the L0-L4 Business Process catalogue"
+    },
+    {
+      "role_id": "GOV-002",
+      "role_name": "Business Process Owner",
+      "primary_responsibility": "confirms the meaning, scope and operational accuracy of relevant Business Processes",
+      "mapped_to": "the originating process owner or accountable business authority; not yet assigned for the 146 L2 BPs (see ownership-register.json)",
+      "scope": "every L2 Business Process"
+    },
+    {
+      "role_id": "GOV-003",
+      "role_name": "Process Domain Reviewer",
+      "primary_responsibility": "reviews process models within an assigned domain",
+      "mapped_to": "domain-specific reviewers (F&A, P&R, P&V, S&D, R&C); not yet named for each L0 cell",
+      "scope": "the L0 cell-scoped domains"
+    },
+    {
+      "role_id": "GOV-004",
+      "role_name": "Entity Maintainer",
+      "primary_responsibility": "updates canonical entity information and documentation",
+      "mapped_to": "the cell-charter maintainers; canonical entity yaml is co-maintained with the EXT-08 documentation architecture",
+      "scope": "individual L1-L4 entities"
+    },
+    {
+      "role_id": "GOV-005",
+      "role_name": "Metamodel Steward",
+      "primary_responsibility": "ensures alignment with OpenDEA metamodel semantics and evolution",
+      "mapped_to": "the dea-metaframework steward; cross-repo coordination is via the dea-metaframework change control",
+      "scope": "the OpenDEA metamodel"
+    },
+    {
+      "role_id": "GOV-006",
+      "role_name": "Data and Evidence Reviewer",
+      "primary_responsibility": "assesses evidence quality, provenance and verification",
+      "mapped_to": "the EXT-15 evidence framework owner; supports the deferred evidence backfills (REQ-19, REQ-20, REQ-21)",
+      "scope": "the canonical evidence chain"
+    },
+    {
+      "role_id": "GOV-007",
+      "role_name": "Conformance Maintainer",
+      "primary_responsibility": "maintains schemas, profiles, rules and validation tooling",
+      "mapped_to": "the EXT-23 conformance framework owner (the validator and the rule catalogue are the authoritative artefacts)",
+      "scope": "the conformance framework and the 52 registered gates"
+    },
+    {
+      "role_id": "GOV-008",
+      "role_name": "Repository Maintainer",
+      "primary_responsibility": "maintains repository integrity, CI and contribution controls",
+      "mapped_to": "the repo maintainer; CI is governed by .github/workflows/ci.yml",
+      "scope": "the technehub-labs/dea-catalog-business-processes repository"
+    },
+    {
+      "role_id": "GOV-009",
+      "role_name": "Governance Authority",
+      "primary_responsibility": "approves significant changes, exceptions and policy decisions",
+      "mapped_to": "the governance authority (Emmanuel A. Otchere); the EXT-23 exception lifecycle is the authoritative mechanism",
+      "scope": "the catalogue-wide governance decisions"
+    }
+  ]
+}

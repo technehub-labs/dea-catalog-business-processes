@@ -1,0 +1,84 @@
+{
+  "register_schema_version": "1",
+  "parent_cr": "CR-BP-94-EXT-24",
+  "generated_at": "2026-10-20",
+  "deferrals": [
+    {
+      "deferral_id": "DFR-001",
+      "requirement_id": "REQ-19 (L2 content backfill)",
+      "scope": "the 146 L2 Business Processes (733 evidence gaps)",
+      "reason": "the EXT-19 foundation landed (inventory + reconciliation matrix); the content backfill is a separate workstream",
+      "impact": "L2 entities carry limited operational documentation; the EXT-23 gate [44] remains advisory",
+      "owner": "GOV-006 (Data and Evidence Reviewer)",
+      "approved_by": "GOV-009 (Governance Authority)",
+      "review_date": "2027-03-31",
+      "status": "deferred_with_approval"
+    },
+    {
+      "deferral_id": "DFR-002",
+      "requirement_id": "REQ-20 (L3 content backfill)",
+      "scope": "the 580 L3 Activities (4,061 evidence gaps)",
+      "reason": "the EXT-20 foundation landed",
+      "impact": "L3 entities carry limited operational documentation; gate [45] remains advisory",
+      "owner": "GOV-006 (Data and Evidence Reviewer)",
+      "approved_by": "GOV-009 (Governance Authority)",
+      "review_date": "2027-06-30",
+      "status": "deferred_with_approval"
+    },
+    {
+      "deferral_id": "DFR-003",
+      "requirement_id": "REQ-21 (L4 content backfill)",
+      "scope": "the 2,900 L4 Tasks (5,800 evidence + authoring gaps)",
+      "reason": "the EXT-21 foundation landed",
+      "impact": "L4 entities carry limited operational documentation; gate [46] remains advisory",
+      "owner": "GOV-006 (Data and Evidence Reviewer)",
+      "approved_by": "GOV-009 (Governance Authority)",
+      "review_date": "2027-09-30",
+      "status": "deferred_with_approval"
+    },
+    {
+      "deferral_id": "DFR-004",
+      "requirement_id": "REQ-22-04, 22-06, 22-07 (8 structural findings)",
+      "scope": "the deprecated process-ge-conceive-e6jx6s + 6 L1-to-L2 compositions",
+      "reason": "the EXT-22 reconciliation matrix recorded the findings; remediation requires the Business Process Owner",
+      "impact": "gate [47] remains advisory",
+      "owner": "GOV-002 (Business Process Owner) + GOV-005 (Metamodel Steward)",
+      "approved_by": "GOV-009 (Governance Authority)",
+      "review_date": "2026-12-31",
+      "status": "deferred_with_approval"
+    },
+    {
+      "deferral_id": "DFR-005",
+      "requirement_id": "REQ-22-09 (16 granularity review prompts)",
+      "scope": "16 L1 Process Groups with exactly 1 L2 member",
+      "reason": "review prompts, not defects per principle 5.4",
+      "impact": "no gate failure; recorded for review",
+      "owner": "GOV-003 (Process Domain Reviewer)",
+      "approved_by": "GOV-009 (Governance Authority)",
+      "review_date": "2027-03-31",
+      "status": "deferred_with_approval"
+    },
+    {
+      "deferral_id": "DFR-006",
+      "requirement_id": "REQ-19/20/21 (legacy blocking gate failures)",
+      "scope": "the 4 pre-existing blocking failures ([1], [26], [30], [33])",
+      "reason": "predate the EXT-08..EXT-24 programme; owned by their originating CRs",
+      "impact": "CI verdict is NON-CONFORMANT on these 4; new programmes do not contribute findings",
+      "owner": "GOV-007 (Conformance Maintainer)",
+      "approved_by": "GOV-009 (Governance Authority)",
+      "review_date": "2026-11-30",
+      "status": "deferred_with_approval"
+    },
+    {
+      "deferral_id": "DFR-007",
+      "requirement_id": "REQ-24-43..46 (AI-assisted maintenance policy)",
+      "scope": "the AI-assisted catalogue maintenance policy",
+      "reason": "governance framework in flight; the EXT-23 conformance framework establishes the human-verification boundary",
+      "impact": "future AI-assisted authoring must respect the EXT-15 + EXT-16 rules; the policy establishes the operational mechanism",
+      "owner": "GOV-009 (Governance Authority)",
+      "approved_by": "GOV-009 (Governance Authority)",
+      "review_date": "2026-12-31",
+      "status": "deferred_with_approval"
+    }
+  ]
+}

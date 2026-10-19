@@ -370,19 +370,19 @@
     },
     {
       "id": "CR-BP-94-EXT-24",
-      "title": "Catalogue Closure and Continuous Governance",
+      "title": "Business Process Catalogue Closure, Operational Governance and Continuous Improvement",
       "initiative": "E: Validation and conformance",
-      "status": "reserved",
-      "implementation_status": "not started",
-      "scope_kind": "documentation-only (closure report + governance policy + change-trigger rules)",
+      "status": "implemented",
+      "implementation_status": "foundation landed (PR #193; the FINAL slice of the 17-CR programme): the programme closure matrix (17 CRs assessed) + the catalogue baseline (revision 150c8e24; 49 L0 + 49 L1 + 146 L2 + 580 L3 + 2,900 L4 = 3,724 canonical records) + the residual gap register (12 gaps with owner + severity + target_date + disposition) + the 9 governance roles (mapped to actual repo governance conventions) + the L2 BP ownership register (146 explicit dispositions, awaiting owner confirmation) + the entity lifecycle register (3,725 records) + the exception register (0 approved exceptions; EXT-23 deferred gates are ADVISORY) + the deferred-work register (7 items, each with owner + scope + reason + approved_by + review_date) + the improvement backlog (10 items classified into the 9-category taxonomy; P1-P3 prioritisation) + governance/closure-report.md (the human-readable programme closure report) + gate [49] ADVISORY (the closure self-check); 22/22 tests pass; 0 closure findings; D-004 clean. The fundamental transition is recorded: from periodic catalogue enrichment as a project to continuous catalogue stewardship as an organisational capability. Per CR \u00a727 the next natural slice is the Business Process Operational Documentation and Governance Specification v1.0 consolidating the 17 CRs into one coherent reference.",
+      "scope_kind": "programme-closure + catalogue-baseline + governance-artefacts (catalogue-wide)",
       "touches_schemas": false,
       "touches_templates": false,
-      "touches_scripts": false,
+      "touches_scripts": true,
       "dependencies": [
         "CR-BP-94-EXT-23"
       ],
       "successors": [],
-      "path": null
+      "path": "change-requests/CR-BP-94-EXT-24-business-process-catalogue-closure-operational-governance-and-continuous-improvement.md"
     }
   ],
   "existing_crs_disposition": {

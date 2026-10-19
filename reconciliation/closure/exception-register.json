@@ -1,0 +1,7 @@
+{
+  "register_schema_version": "1",
+  "parent_cr": "CR-BP-94-EXT-24",
+  "generated_at": "2026-10-20",
+  "note": "No approved exceptions exist at programme closure. The 4 EXT-23 deferred gates are recorded as ADVISORY not as approved exceptions, per REQ-23-21 (an approved exception must have owner + scope + approval + review date; the deferred gates lack a specific entity scope and an approving authority for each finding).",
+  "exceptions": []
+}
