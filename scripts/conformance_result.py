@@ -128,6 +128,8 @@ GATES: list[tuple[str, bool, list[str]]] = [
      True, ["python", "scripts/validate_readme_structure.py", "--catalog-root", "."]),  # CR-BP-94-EXT-04; BLOCKING (CR-BP-94-EXT-06; was advisory before)
     ("[35] Decomposition Reconciliation (CR-BP-94-EXT-05; DOC-021..025)",
      True, ["python", "scripts/check_decomposition_reconciliation.py", "--catalog-root", "."]),  # CR-BP-94-EXT-05; BLOCKING (CR-BP-94-EXT-06; was advisory before)
+    ("[36] Profile Registry (CR-BP-94-EXT-11; PR-001..PR-010)",
+     False, ["python", "scripts/check_profile_registry_ext11.py"]),  # CR-BP-94-EXT-11; ADVISORY (PR-180 lands; flipped to blocking under CR-BP-94-EXT-23)
 ]
 
 

@@ -1,0 +1,196 @@
+{
+  "manifest_schema_version": "1",
+  "generated_at": "2026-10-19",
+  "generator": "scripts/check_profile_registry_ext11.py",
+  "parent_cr": "CR-BP-94-EXT-11",
+  "catalog_root": "/home/hermes/dea-catalog-processes",
+  "profile_path": "/home/hermes/dea-catalog-processes/templates/documentation-profile-ext11-v3.yaml",
+  "summary": {
+    "total_findings": 0,
+    "by_rule": {}
+  },
+  "findings": [],
+  "profiles": {
+    "l0_process_context": {
+      "profile_id": "dea:profile-readme-l0-process-context-v3",
+      "applies_to": {
+        "entity_type": "ProcessContext",
+        "level": "L0"
+      },
+      "non_executable": true,
+      "non_orchestrating": false,
+      "required_sections": [
+        "header-identity-table",
+        "executive-summary",
+        "governance-provenance",
+        "behavioral-boundaries",
+        "hierarchical-decomposition",
+        "properties-relationships",
+        "technical-metadata"
+      ],
+      "conditional_sections": [
+        "operational-metrics"
+      ],
+      "not_applicable_sections": [
+        "trigger",
+        "precondition",
+        "input",
+        "transformation",
+        "output",
+        "outcome",
+        "performer",
+        "accountability",
+        "business_rule",
+        "control",
+        "exception",
+        "workflow-orchestration"
+      ],
+      "inherited_sections": [
+        "regulatory-evidence"
+      ]
+    },
+    "l1_process_group": {
+      "profile_id": "dea:profile-readme-l1-process-group-v3",
+      "applies_to": {
+        "entity_type": "ProcessGroup",
+        "level": "L1"
+      },
+      "non_executable": true,
+      "non_orchestrating": false,
+      "required_sections": [
+        "header-identity-table",
+        "intent-definition",
+        "governance-provenance",
+        "properties-relationships",
+        "hierarchical-decomposition",
+        "technical-metadata"
+      ],
+      "conditional_sections": [
+        "shared-rules-controls"
+      ],
+      "not_applicable_sections": [
+        "trigger",
+        "precondition",
+        "input",
+        "transformation",
+        "output",
+        "outcome",
+        "performer",
+        "accountability",
+        "business_rule",
+        "control",
+        "exception",
+        "workflow-orchestration"
+      ],
+      "inherited_sections": [
+        "group-outcomes",
+        "scope-boundary"
+      ]
+    },
+    "l2_business_process": {
+      "profile_id": "dea:profile-readme-l2-process-v3",
+      "applies_to": {
+        "entity_type": "Process",
+        "level": "L2"
+      },
+      "non_executable": false,
+      "non_orchestrating": false,
+      "required_sections": [
+        "header-identity-table",
+        "intent-definition",
+        "governance-provenance",
+        "properties-relationships",
+        "hierarchical-decomposition",
+        "technical-metadata"
+      ],
+      "conditional_sections": [
+        "trigger",
+        "precondition",
+        "inputs-outputs",
+        "interfaces",
+        "dependencies",
+        "roles-responsibilities",
+        "rules-controls",
+        "exceptions",
+        "metrics"
+      ],
+      "not_applicable_sections": [
+        "workflow-orchestration"
+      ],
+      "inherited_sections": [
+        "cell-charter-context",
+        "group-membership"
+      ]
+    },
+    "l3_activity": {
+      "profile_id": "dea:profile-readme-l3-activity-v3",
+      "applies_to": {
+        "entity_type": "Activity",
+        "level": "L3"
+      },
+      "non_executable": false,
+      "non_orchestrating": false,
+      "required_sections": [
+        "header-identity-table",
+        "intent-definition",
+        "governance-provenance",
+        "properties-relationships",
+        "hierarchical-decomposition",
+        "technical-metadata"
+      ],
+      "conditional_sections": [
+        "trigger",
+        "precondition",
+        "inputs-outputs",
+        "roles-responsibilities",
+        "rules-controls",
+        "exceptions",
+        "completion-criteria"
+      ],
+      "not_applicable_sections": [
+        "workflow-orchestration"
+      ],
+      "inherited_sections": [
+        "parent-bp-context"
+      ]
+    },
+    "l4_task": {
+      "profile_id": "dea:profile-readme-l4-task-v3",
+      "applies_to": {
+        "entity_type": "Task",
+        "level": "L4"
+      },
+      "non_executable": false,
+      "non_orchestrating": true,
+      "required_sections": [
+        "header-identity-table",
+        "intent-definition",
+        "governance-provenance",
+        "properties-relationships",
+        "hierarchical-decomposition",
+        "technical-metadata",
+        "trigger",
+        "outcome"
+      ],
+      "conditional_sections": [
+        "precondition",
+        "rules-controls",
+        "exceptions",
+        "dependencies",
+        "authorization",
+        "evidence"
+      ],
+      "not_applicable_sections": [
+        "workflow-orchestration",
+        "sequence",
+        "branching",
+        "retry",
+        "state-machine",
+        "workflow-engine"
+      ],
+      "inherited_sections": [
+        "parent-activity-context"
+      ]
+    }
+  }
+}

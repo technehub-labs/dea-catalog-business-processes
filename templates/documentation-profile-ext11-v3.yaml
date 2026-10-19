@@ -1,0 +1,352 @@
+# =============================================================================
+# templates/documentation-profile-ext11-v3.yaml
+# CR-BP-94-EXT-11 (Decomposition-Level Operational Documentation Profiles).
+# Profile version: v3. Supersedes the v1 profile family (L0/L1 v1, L2/L3/L4 v1)
+# that landed under CR-BP-94-EXT-01a. The v1 profiles remain in
+# templates/documentation-profile-*.yaml for backward compatibility with
+# records validated under v1. The v3 profile is the EXT-11 reference
+# implementation.
+#
+# Design: one file for the v3 profile family (L0 + L1 + L2 + L3 + L4),
+# with the 5-classification model (required / conditional / optional /
+# not_applicable / inherited) per EXT-11 §5.
+# =============================================================================
+
+profile_family_id: dea:profile-readme-ext11-v3
+profile_family_version: 3.0.0
+profile_family_status: candidate       # candidate | active | deprecated
+provenance:
+  established_by: CR-BP-94-EXT-11
+  established_at: 2026-10-19
+  supersedes:
+    - dea:profile-readme-l0-process-context-v1
+    - dea:profile-readme-l1-process-group-v1
+    - dea:profile-readme-l2-process-v1
+    - dea:profile-readme-l3-activity-v1
+    - dea:profile-readme-l4-task-v1
+  transition_policy: |
+    The v1 profiles remain in templates/ and are referenced by the
+    EXT-04/05/06/07 gates (the 7-section EXT-07 v2 profile). The
+    v3 profile is the EXT-11 reference. The conformance gate
+    [36] EXT-11 Profile Conformance (wire in scripts/conformance_result.py
+    under CR-BP-94-EXT-23 closure) validates the v3 profile; the
+    v1 profiles are grandfathered per EGV-012 until each is migrated
+    to v3 in a follow-up slice.
+
+# EXT-11 §5: requirement classification. All 5 are required structural
+# metadata for each profile record.
+classification_model:
+  required:
+    meaning: "Must be present for a conformant entity"
+  conditional:
+    meaning: "Required when a documented applicability condition holds"
+  optional:
+    meaning: "May be supplied when useful and supported"
+  not_applicable:
+    meaning: "Not applicable to this entity level or context"
+  inherited:
+    meaning: |
+      May be supplied from an authoritative parent or referenced source,
+      subject to applicability validation
+
+# Cross-cutting structural rules (apply to ALL profiles in this family).
+cross_cutting_rules:
+  no_executable_at_l0_l1: |
+    L0/L1 profiles MUST NOT include executable operational sections
+    (inputs, outputs, transformation, trigger, precondition, performer,
+    accountability, business rule, control, exception). This is a
+    structural constraint enforced by the profile validator.
+  no_workflow_orchestration_at_l4: |
+    L4 profile MUST NOT include workflow orchestration sections
+    (sequence, branching, retry, state-machine, orchestration,
+    workflow-engine implementation). This is a structural constraint
+    enforced by the profile validator (per CR-BP-98).
+  no_copy_of_parent_content: |
+    A child profile MUST NOT automatically inherit all parent inputs,
+    outputs, rules, controls, roles, or dependencies. Inheritance
+    requires: identifiable authoritative source; semantic reason;
+    applicability to the child; explicit inheritance disposition;
+    traceable reference. (EXT-11 §11.3.)
+  placeholder_convention: |
+    The '(pending; backfill at EXT-04)' placeholder (retired under
+    CR-BP-94-EXT-08) is re-issued under EXT-11 with explicit EXT-09
+    §10 completeness states: not_started / in_progress / approved /
+    not_applicable / unknown / inherited / deferred / pending_evidence
+    / pending_review / rejected / superseded. The placeholder text in
+    generated READMEs is updated to surface the applicable state.
+
+# =============================================================================
+# L0 PROCESS CONTEXT PROFILE (EXT-11 §6)
+# =============================================================================
+l0_process_context:
+  profile_id: dea:profile-readme-l0-process-context-v3
+  applies_to:
+    entity_type: ProcessContext
+    level: L0
+  non_executable: true
+  required_sections:
+    - id: header-identity-table
+      heading: "## Header and Identity Table"
+    - id: executive-summary
+      heading: "## 1. Executive Summary / Intent"
+    - id: governance-provenance
+      heading: "## 2. Governance and Provenance"
+    - id: behavioral-boundaries
+      heading: "## 3. Behavioral Boundaries (Cell Charter)"
+    - id: hierarchical-decomposition
+      heading: "## 4. Hierarchical Decomposition"
+    - id: properties-relationships
+      heading: "## 5. Properties and Relationships"
+    - id: technical-metadata
+      heading: "## 7. Technical Metadata"
+  conditional_sections:
+    - id: operational-metrics
+      heading: "## 6. Operational, Control and Metrics Details"
+      applies_when: "L0 metrics are governed (separate CR; not in EXT-11 scope)"
+  not_applicable_sections:
+    - {id: trigger, rationale: "L0 is non-executable (EXT-09 §11.1)"}
+    - {id: precondition, rationale: "L0 is non-executable"}
+    - {id: input, rationale: "L0 is non-executable"}
+    - {id: transformation, rationale: "L0 is non-executable"}
+    - {id: output, rationale: "L0 is non-executable"}
+    - {id: outcome, rationale: "L0 is non-executable"}
+    - {id: performer, rationale: "L0 is non-executable"}
+    - {id: accountability, rationale: "L0 is non-executable"}
+    - {id: business_rule, rationale: "L0 is non-executable"}
+    - {id: control, rationale: "L0 is non-executable"}
+    - {id: exception, rationale: "L0 is non-executable"}
+    - {id: workflow-orchestration, rationale: "L0 is non-executable + L4 prohibition"}
+  inherited_sections:
+    - {id: regulatory-evidence, inherits_from: external-authority}
+
+# =============================================================================
+# L1 PROCESS GROUP PROFILE (EXT-11 §7)
+# =============================================================================
+l1_process_group:
+  profile_id: dea:profile-readme-l1-process-group-v3
+  applies_to:
+    entity_type: ProcessGroup
+    level: L1
+  non_executable: true
+  required_sections:
+    - id: header-identity-table
+      heading: "## Header and Identity Table"
+    - id: intent-definition
+      heading: "## Intent and Definition"
+    - id: governance-provenance
+      heading: "## 2. Governance and Provenance"
+    - id: properties-relationships
+      heading: "## 5. Properties and Relationships"
+    - id: hierarchical-decomposition
+      heading: "## 4. Hierarchical Decomposition"
+    - id: technical-metadata
+      heading: "## 7. Technical Metadata"
+  conditional_sections:
+    - id: shared-rules-controls
+      heading: "## Shared Business Rules and Controls"
+      applies_when: "L1 group declares shared governance across its member L2 BPs"
+  not_applicable_sections:
+    - {id: trigger, rationale: "L1 is non-executable (EXT-09 §11.2)"}
+    - {id: precondition, rationale: "L1 is non-executable"}
+    - {id: input, rationale: "L1 is non-executable"}
+    - {id: transformation, rationale: "L1 is non-executable"}
+    - {id: output, rationale: "L1 is non-executable"}
+    - {id: outcome, rationale: "L1 is non-executable (L1 may declare group-level outcomes; this is the inherited outcome pattern)"}
+    - {id: performer, rationale: "L1 is non-executable"}
+    - {id: accountability, rationale: "L1 is non-executable (Process Owner is rendered at L2; L1 may declare group-level ownership)"}
+    - {id: business_rule, rationale: "L1 is non-executable; rule ownership is at L2/L3/L4 unless inherited from L0"}
+    - {id: control, rationale: "L1 is non-executable; control ownership is at L2/L3/L4 unless inherited"}
+    - {id: exception, rationale: "L1 is non-executable"}
+    - {id: workflow-orchestration, rationale: "L1 is non-executable + L4 prohibition"}
+  inherited_sections:
+    - {id: group-outcomes, inherits_from: l0-process-context}
+    - {id: scope-boundary, inherits_from: l0-process-context}
+
+# =============================================================================
+# L2 BUSINESS PROCESS PROFILE (EXT-11 §8)
+# =============================================================================
+l2_business_process:
+  profile_id: dea:profile-readme-l2-process-v3
+  applies_to:
+    entity_type: Process
+    level: L2
+  non_executable: false
+  required_sections:
+    - id: header-identity-table
+      heading: "## Header and Identity Table"
+    - id: intent-definition
+      heading: "## Intent and Definition"
+    - id: governance-provenance
+      heading: "## 2. Governance and Provenance"
+    - id: properties-relationships
+      heading: "## 5. Properties and Relationships"
+    - id: hierarchical-decomposition
+      heading: "## 4. Hierarchical Decomposition"
+    - id: technical-metadata
+      heading: "## 7. Technical Metadata"
+  conditional_sections:
+    - id: trigger
+      heading: "## Trigger / Invocation"
+      applies_when: "L2 BP has a known invocation condition"
+    - id: precondition
+      heading: "## Preconditions"
+      applies_when: "L2 BP has documented preconditions (governed by EXT-12)"
+    - id: inputs-outputs
+      heading: "## Inputs, Outputs and Interfaces"
+      applies_when: "L2 BP has structured inputs/outputs (governed by EXT-12; CR-BP-96 optional fields)"
+    - id: interfaces
+      heading: "## Interfaces"
+      applies_when: "L2 BP has documented business or system interfaces (governed by EXT-12)"
+    - id: dependencies
+      heading: "## Dependencies"
+      applies_when: "L2 BP has material dependencies (governed by EXT-12)"
+    - id: roles-responsibilities
+      heading: "## Roles, Responsibilities and Accountability"
+      applies_when: "L2 BP has structured role assignments (governed by EXT-13)"
+    - id: rules-controls
+      heading: "## Business Rules and Controls"
+      applies_when: "L2 BP has documented rules or controls (governed by EXT-14)"
+    - id: exceptions
+      heading: "## Exceptions and Deviations"
+      applies_when: "L2 BP has documented exception handling (governed by EXT-14)"
+    - id: metrics
+      heading: "## Operational Metrics"
+      applies_when: "L2 BP has governed metrics (governed by EXT-15)"
+  not_applicable_sections:
+    - {id: workflow-orchestration, rationale: "L4 prohibition (CR-BP-98); L2 is not orchestrating"}
+  inherited_sections:
+    - {id: cell-charter-context, inherits_from: l0_process_context}
+    - {id: group-membership, inherits_from: l1_process_group}
+
+# =============================================================================
+# L3 ACTIVITY PROFILE (EXT-11 §9)
+# =============================================================================
+l3_activity:
+  profile_id: dea:profile-readme-l3-activity-v3
+  applies_to:
+    entity_type: Activity
+    level: L3
+  non_executable: false
+  required_sections:
+    - id: header-identity-table
+      heading: "## Header and Identity Table"
+    - id: intent-definition
+      heading: "## Intent and Definition"
+    - id: governance-provenance
+      heading: "## 2. Governance and Provenance"
+    - id: properties-relationships
+      heading: "## 5. Properties and Relationships"
+    - id: hierarchical-decomposition
+      heading: "## 4. Hierarchical Decomposition"
+    - id: technical-metadata
+      heading: "## 7. Technical Metadata"
+  conditional_sections:
+    - id: trigger
+      heading: "## Activity Activation"
+      applies_when: "Activity has a documented activation condition"
+    - id: precondition
+      heading: "## Preconditions"
+      applies_when: "Activity has documented preconditions (governed by EXT-12)"
+    - id: inputs-outputs
+      heading: "## Activity Inputs and Outputs"
+      applies_when: "Activity has distinct inputs/outputs from parent BP (governed by EXT-12)"
+    - id: roles-responsibilities
+      heading: "## Roles and Responsibilities"
+      applies_when: "Activity has structured role assignments (governed by EXT-13)"
+    - id: rules-controls
+      heading: "## Business Rules and Controls"
+      applies_when: "Activity has documented rules or controls (governed by EXT-14)"
+    - id: exceptions
+      heading: "## Exceptions and Deviations"
+      applies_when: "Activity has documented exception handling (governed by EXT-14)"
+    - id: completion-criteria
+      heading: "## Completion or Acceptance Criteria"
+      applies_when: "Activity has documented completion criteria"
+  not_applicable_sections:
+    - {id: workflow-orchestration, rationale: "L4 prohibition (CR-BP-98)"}
+  inherited_sections:
+    - {id: parent-bp-context, inherits_from: l2_business_process}
+
+# =============================================================================
+# L4 TASK PROFILE (EXT-11 §10)
+# =============================================================================
+l4_task:
+  profile_id: dea:profile-readme-l4-task-v3
+  applies_to:
+    entity_type: Task
+    level: L4
+  non_executable: false
+  non_orchestrating: true   # CR-BP-98; L4 is bounded + verifiable, not orchestrating
+  required_sections:
+    - id: header-identity-table
+      heading: "## Header and Identity Table"
+    - id: intent-definition
+      heading: "## Intent and Definition"
+    - id: governance-provenance
+      heading: "## 2. Governance and Provenance"
+    - id: properties-relationships
+      heading: "## 5. Properties and Relationships"
+    - id: hierarchical-decomposition
+      heading: "## 4. Hierarchical Decomposition"
+    - id: technical-metadata
+      heading: "## 7. Technical Metadata"
+    - id: trigger
+      heading: "## Trigger / Initiation"
+    - id: outcome
+      heading: "## Outcome / Completion"
+  conditional_sections:
+    - id: precondition
+      heading: "## Preconditions"
+      applies_when: "Task has documented preconditions (governed by EXT-12)"
+    - id: rules-controls
+      heading: "## Task-Level Rules and Controls"
+      applies_when: "Task has documented rules or controls (governed by EXT-14)"
+    - id: exceptions
+      heading: "## Task Exceptions"
+      applies_when: "Task has documented exception handling (governed by EXT-14)"
+    - id: dependencies
+      heading: "## Task Dependencies"
+      applies_when: "Task has material dependencies (governed by EXT-12)"
+    - id: authorization
+      heading: "## Required Authorization"
+      applies_when: "Task requires authorization"
+    - id: evidence
+      heading: "## Evidence and Verification"
+      applies_when: "Task has documented verification evidence"
+  not_applicable_sections:
+    - {id: workflow-orchestration, rationale: "CR-BP-98 L4 prohibition; L4 is bounded + verifiable, not orchestrating"}
+    - {id: sequence, rationale: "CR-BP-98"}
+    - {id: branching, rationale: "CR-BP-98"}
+    - {id: retry, rationale: "CR-BP-98"}
+    - {id: state-machine, rationale: "CR-BP-98"}
+    - {id: workflow-engine, rationale: "CR-BP-98"}
+  inherited_sections:
+    - {id: parent-activity-context, inherits_from: l3_activity}
+
+# =============================================================================
+# Placeholder convention re-issuance (EXT-11)
+# =============================================================================
+# Per CR-BP-94-EXT-08 §5.4: the '(pending; backfill at EXT-04)' phrase is
+# retired. Per EXT-09 §10, the 11 completeness states are normative. The
+# v3 generator emits the applicable state per the profile's classification
+# of the section.
+placeholder_states:
+  reissued_phrases:
+    not_started: "(operational content not yet researched; status: not_started per EXT-09 §10)"
+    in_progress: "(operational content in progress; status: in_progress per EXT-09 §10)"
+    pending_evidence: "(operational content pending evidence; status: pending_evidence per EXT-09 §10)"
+    pending_review: "(operational content pending accountable review; status: pending_review per EXT-09 §10)"
+    approved: "(operational content approved per EXT-09 §10)"
+    not_applicable: "(not applicable to this entity level per EXT-09 §11)"
+    unknown: "(operational content unknown; status: unknown per EXT-09 §10)"
+    inherited: "(inherited from authoritative source; marker: > Inherited from: <source>)"
+    rejected: "(proposed assertion reviewed and rejected per EXT-09 §10)"
+    superseded: "(superseded by newer approved assertion per EXT-09 §10)"
+    deferred: "(deferred with approved reason; status: deferred per EXT-09 §10)"
+  retired_phrase: "(pending; backfill at EXT-04)"
+  retired_phrase_disposition: |
+    The retired phrase MUST NOT be used to direct operational-content
+    authoring. Per EXT-08 §5.4, the EXT-11 v3 profile replaces it with
+    the EXT-09 §10 completeness states. The retired phrase is preserved
+    as a recognition-only string (the validator recognises it on legacy
+    READMEs and reports the re-issuance in EXT-19 backfill tranches).
