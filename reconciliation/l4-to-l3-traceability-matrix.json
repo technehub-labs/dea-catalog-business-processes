@@ -1,0 +1,30 @@
+{
+  "matrix_schema_version": "1",
+  "generated_at": "2026-10-19",
+  "generator": "scripts/check_l4_backfill_ext21.py",
+  "parent_cr": "CR-BP-94-EXT-21 (the third and final slice of the L2-to-L3-to-L4 traceability matrix)",
+  "purpose": "the L4-to-L3 traceability matrix (EXT-21 slice; completes the L2-to-L3-to-L4 traceability matrix mandated by the user recommendation; reveals which Tasks do not clearly contribute to their assigned Activity)",
+  "total_l4_entities": 2900,
+  "total_l3_parents_referenced": 580,
+  "tasks_per_parent_distribution": {
+    "5": 580
+  },
+  "phase_distribution": {
+    "Confirmation": 580,
+    "Intake": 580,
+    "Processing": 580,
+    "Verification": 580,
+    "Record": 580
+  },
+  "structural_quality_observations": {
+    "canonical_phase_pattern": [
+      "Confirmation",
+      "Intake",
+      "Processing",
+      "Record",
+      "Verification"
+    ],
+    "incoherent_phase_parents_count": 0,
+    "fully_decomposed_activities": 580
+  }
+}
