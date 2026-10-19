@@ -144,6 +144,8 @@ GATES: list[tuple[str, bool, list[str]]] = [
      False, ["python", "scripts/orchestrate_backfill.py", "--dry-run", "--catalog-root", "."]),  # CR-BP-94-EXT-17; ADVISORY (PR-186 lands; flipped to blocking under CR-BP-94-EXT-23; third slice of the engineering and governance readiness tranche)
     ("[43] Operational Documentation Pilot (CR-BP-94-EXT-18; PI-001..PI-008)",
      False, ["python", "scripts/check_pilot_selection_ext18.py", "--catalog-root", "."]),  # CR-BP-94-EXT-18; ADVISORY (PR-187 lands; flipped to blocking under CR-BP-94-EXT-23; the FINAL go/no-go gate of the engineering and governance readiness tranche)
+    ("[44] L2 Business Process Backfill (CR-BP-94-EXT-19; L2-001..L2-012)",
+     False, ["python", "scripts/check_l2_backfill_ext19.py", "--catalog-root", "."]),  # CR-BP-94-EXT-19; ADVISORY (PR-188 lands; flipped to blocking under CR-BP-94-EXT-23; first slice of the catalogue enrichment tranche; authorised by the EXT-18 GO decision)
 ]
 
 
