@@ -1,0 +1,25 @@
+{
+  "matrix_schema_version": "1",
+  "generated_at": "2026-10-19",
+  "generator": "scripts/check_l3_backfill_ext20.py",
+  "parent_cr": "CR-BP-94-EXT-20 (EXT-21 extension in EXT-21)",
+  "purpose": "the L3-to-L2 hierarchy matrix (EXT-20 slice of the L2-to-L3-to-L4 traceability matrix; mandatory EXT-20 deliverable; extended to L3-to-L4 traceability during EXT-21)",
+  "total_l3_entities": 580,
+  "total_l2_parents_referenced": 144,
+  "l3_per_l2_distribution": {
+    "4": 142,
+    "5": 1,
+    "7": 1
+  },
+  "l4_per_l3_distribution": {
+    "0": 0,
+    "1_to_3": 0,
+    "4_to_7": 580,
+    "8_or_more": 0
+  },
+  "structural_quality_observations": {
+    "sibling_duplication_groups": 0,
+    "l3_activities_with_no_l4_children": 0,
+    "l3_activities_with_8_or_more_l4_children": 0
+  }
+}
