@@ -263,6 +263,75 @@ metadata:
 #   - id: <raci-id-2>
 #     ...
 
+# -----------------------------------------------------------------------------
+# OPTIONAL: business rules, controls, exceptions, deviations (CR-BP-94-EXT-14).
+# These are the EXT-14 routed-gap closures. They are NEW L2 top-level
+# optional fields introduced under PR #183. Existing records remain
+# conformant without them. The EXT-10 regression test is updated to
+# acknowledge the closure of the business_rule + control + exception gaps
+# (L2 only; L0/L1 remain non-executable per EXT-11 + EXT-14 GO-010).
+# -----------------------------------------------------------------------------
+
+# business_rules:                       # EXT-14 §4; the assertions of how the work is governed.
+#   - id: <rule-id>
+#     name: <rule name>
+#     description: |
+#       <The rule statement.>
+#     source: regulatory | contractual | governance | operational | sector
+#     source_ref: <uri to the rule's authoritative source>
+#     maturity: proposed | documented | approved | in_force | monitored | retired
+#     rationale: |
+#       <Why this rule exists.>
+#     owner: <role or organisational unit>
+#   - id: <rule-id-2>
+#     ...
+
+# controls:                             # EXT-14 §5; the mechanisms that enforce rules.
+#   - id: <control-id>
+#     name: <control name>
+#     description: |
+#       <What this control does.>
+#     type: preventive | detective | corrective | directive
+#     enforces: <rule-id or rule statement>     # The rule this control enforces
+#     automation: manual | semi_automated | automated
+#     frequency: continuous | daily | weekly | monthly | quarterly | annual | on_event
+#     evidence:
+#       - <evidence artifact 1>
+#     owner: <role or organisational unit>
+#   - id: <control-id-2>
+#     ...
+
+# exceptions:                            # EXT-14 §6; the detection + classification + response + escalation + resolution.
+#   - id: <exception-id>
+#     name: <exception name>
+#     description: |
+#       <What the exception covers.>
+#     classification: recoverable | non_recoverable | business | technical
+#     detection: continuous | daily | weekly | monthly | quarterly | annual | on_event | on_request
+#     response: |
+#       <The response procedure.>
+#     escalation: |
+#       <The escalation path.>
+#     resolution: |
+#       <The resolution procedure.>
+#     owner: <role or organisational unit>
+#   - id: <exception-id-2>
+#     ...
+
+# deviations:                            # EXT-14 §7; the tracked instance(s) of a rule being broken.
+#   - id: <deviation-id>
+#     rule_ref: <rule-id>
+#     description: |
+#       <The deviation.>
+#     status: detected | authorised | unauthorised | remediated | escalated | closed
+#     severity: high | medium | low
+#     detected_at: <YYYY-MM-DD or ISO-8601>
+#     remediated_at: <YYYY-MM-DD or ISO-8601>
+#     remediation: |
+#       <The remediation.>
+#   - id: <deviation-id-2>
+#     ...
+
 # boundary:                            # BP-QUAL-009: non-empty string OR non-empty object.
 #   scope: <boundary scope statement>
 #   inclusions:
