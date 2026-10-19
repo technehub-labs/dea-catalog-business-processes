@@ -1,0 +1,59 @@
+{
+  "manifest_schema_version": "1",
+  "generated_at": "2026-10-19",
+  "generator": "scripts/check_responsibility_accountability_ext13.py",
+  "parent_cr": "CR-BP-94-EXT-13",
+  "catalog_root": "/home/hermes/dea-catalog-processes",
+  "summary": {
+    "total_records": 3882,
+    "total_findings": 0,
+    "by_rule": {}
+  },
+  "findings": [],
+  "controlled_vocabularies": {
+    "performer_types": [
+      "external_party",
+      "human",
+      "organization",
+      "system",
+      "team"
+    ],
+    "accountable_types": [
+      "board",
+      "committee",
+      "human",
+      "individual"
+    ],
+    "role_types": [
+      "cross_cutting",
+      "external",
+      "organisational",
+      "system"
+    ],
+    "raci_schemes": [
+      "daciar",
+      "paci",
+      "raci",
+      "rapid",
+      "rasci"
+    ],
+    "raci_assignments": [
+      "accept",
+      "accountable",
+      "agree",
+      "approve",
+      "consulted",
+      "contribute",
+      "decide",
+      "drive",
+      "inform",
+      "informed",
+      "input",
+      "perform",
+      "recommend",
+      "reject",
+      "responsible",
+      "supports"
+    ]
+  }
+}

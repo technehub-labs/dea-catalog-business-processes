@@ -200,8 +200,68 @@ metadata:
 #       source: standard | governance | interview | artifact | regulation
 #       ref: <uri>
 
-# responsibility: |                   # BP-QUAL-008: non-empty string OR non-empty object.
+# responsibility: |                   # BP-QUAL-008: non-empty string OR non-empty list of role
+#                                     # objects (CR-BP-96 baseline + EXT-13 structured form).
+#                                     # Each structured entry has: role, performer, type, scope,
+#                                     # accountabilities. The plain string form is preserved
+#                                     # for backward compatibility with existing records.
+#   - role: <organisational role name> # The capability responsible for the work
+#     performer: <who/what actually does the work>
+#     type: human | system | team | organization | external_party
+#     scope: process | activity | task | sub-process
+#     accountabilities:                  # What this role is accountable for within the process
+#       - <accountability-1>
+#       - <accountability-2>
+#   - role: <role-2>
+#     ...
+# OR (CR-BP-96 plain string form, preserved for backward compatibility):
+# responsibility: |
 #   <The role or capability responsible for executing this process.>
+
+# -----------------------------------------------------------------------------
+# OPTIONAL: accountability (CR-BP-94-EXT-13; new top-level L2 field).
+# Accountability is the answerability for the outcome; it is distinct from
+# responsibility (execution of the work). Per EXT-13 §4, there MUST be at
+# most one accountable per outcome; accountability cannot be delegated.
+# -----------------------------------------------------------------------------
+
+# accountability:                      # EXT-13 §4; the role answerable for the outcome
+#   - role: <accountable role name>
+#     type: human | committee | board | individual
+#     scope: process | activity | task | sub-process
+#     outcomes:                          # What this role is accountable for
+#       - <outcome-1>
+#       - <outcome-2>
+#     rationale: |
+#       <Why this role holds accountability (regulatory, contractual, governance).>
+
+# -----------------------------------------------------------------------------
+# OPTIONAL: roles catalog (CR-BP-94-EXT-13; new top-level L2 field).
+# The roles referenced in the responsibility / accountability / RACI
+# entries. Captures organisational roles + cross-cutting roles + the
+# RACI (or alternative) assignment per activity/task scope.
+# -----------------------------------------------------------------------------
+
+# roles:                                # EXT-13 §6; the role catalog
+#   - id: <role-id>
+#     name: <role name>
+#     type: organisational | cross_cutting | external | system
+#     description: |
+#       <What this role represents.>
+#     reporting_line: <where the role reports>
+#     capability_owner: <who owns the capability definition>
+#   - id: <role-id-2>
+#     ...
+
+# raci:                                 # EXT-13 §7; the RACI-style assignment
+#   - id: <raci-id>
+#     scheme: raci | rasci | rapid | daciar | paci
+#     assignments:
+#       - role: <role-id>
+#         activity: <activity or sub-process id>
+#         assignment: responsible | accountable | consulted | informed | supports | recommend | agree | perform | input | decide | drive | approve | contribute
+#   - id: <raci-id-2>
+#     ...
 
 # boundary:                            # BP-QUAL-009: non-empty string OR non-empty object.
 #   scope: <boundary scope statement>
