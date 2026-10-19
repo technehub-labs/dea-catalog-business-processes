@@ -1,0 +1,85 @@
+{
+  "dashboard_schema_version": "1",
+  "generated_at": "2026-10-20",
+  "parent_cr": "CR-BP-EXT-23",
+  "framework_version": "1.0.0",
+  "rule_catalogue_version": "1.0.0",
+  "totals": {
+    "conformance_rules": 52,
+    "requirements_traced": 246,
+    "approved_exceptions": 0,
+    "deferred_requirements": 0,
+    "open_errors": 0,
+    "warnings": 0,
+    "overdue_review_actions": 0
+  },
+  "measures_by_dimension": {
+    "cross-catalogue": {
+      "requirements": 0,
+      "automated": 0,
+      "automated_ratio": null,
+      "conformance_rules": 1
+    },
+    "documentation": {
+      "requirements": 0,
+      "automated": 0,
+      "automated_ratio": null,
+      "conformance_rules": 6
+    },
+    "evidence": {
+      "requirements": 24,
+      "automated": 12,
+      "automated_ratio": 0.5,
+      "conformance_rules": 3
+    },
+    "governance": {
+      "requirements": 45,
+      "automated": 38,
+      "automated_ratio": 0.8444,
+      "conformance_rules": 5
+    },
+    "profile": {
+      "requirements": 127,
+      "automated": 127,
+      "automated_ratio": 1.0,
+      "conformance_rules": 8
+    },
+    "reconciliation": {
+      "requirements": 23,
+      "automated": 23,
+      "automated_ratio": 1.0,
+      "conformance_rules": 3
+    },
+    "schema": {
+      "requirements": 12,
+      "automated": 12,
+      "automated_ratio": 1.0,
+      "conformance_rules": 4
+    },
+    "semantic": {
+      "requirements": 15,
+      "automated": 0,
+      "automated_ratio": 0.0,
+      "conformance_rules": 7
+    },
+    "structural": {
+      "requirements": 0,
+      "automated": 0,
+      "automated_ratio": null,
+      "conformance_rules": 15
+    }
+  },
+  "rules_by_classification": {
+    "C1": 45,
+    "C2": 7
+  },
+  "rules_by_severity": {
+    "error": 52
+  },
+  "aggregate_score": null,
+  "aggregate_score_note": "No aggregate conformance score is produced. The dimension measures are distinct and must not be averaged into a single number (section 11.2).",
+  "known_limitations": [
+    "The structural, schema, documentation, evidence-metadata and governance dimensions are machine-verified. The semantic and evidence-substantiation dimensions are not.",
+    "The catalogue-wide entity percentages are not yet populated; the dashboard reports the framework's own coverage, not a per-entity score, until the per-entity measure sweep lands."
+  ]
+}

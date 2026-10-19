@@ -1,0 +1,2099 @@
+{
+  "catalogue_schema_version": "1",
+  "catalogue_version": "1.0.0",
+  "framework_version": "1.0.0",
+  "schema_version": "1.0.0",
+  "profile_version": "1.0.0",
+  "generated_at": "2026-10-20",
+  "parent_cr": "CR-BP-EXT-23",
+  "note": "The conformance rule catalogue. Each rule is a version-controlled, documented conformance check bound to a registered gate in scripts/conformance_result.py. Rules must not exist solely as undocumented conditions inside scripts (REQ-23-01).",
+  "controlled_vocabularies": {
+    "severity": {
+      "error": "A mandatory conformance requirement has failed.",
+      "warning": "A quality concern or potential inconsistency requires review.",
+      "info": "Advisory observation or improvement opportunity.",
+      "deferred": "A requirement or assessment is formally deferred."
+    },
+    "severity_default_handling": {
+      "error": "Blocks acceptance unless an explicitly permitted exception applies.",
+      "warning": "Requires disposition according to the applicable policy.",
+      "info": "Recorded; does not block acceptance.",
+      "deferred": "Requires approved disposition and accountable ownership."
+    },
+    "outcome": [
+      "passed",
+      "passed_with_warnings",
+      "failed",
+      "blocked",
+      "not_assessed",
+      "passed_with_approved_exceptions"
+    ],
+    "requirement_status": [
+      "automated",
+      "human_review",
+      "evidence_assessment",
+      "deferred",
+      "not_enforceable",
+      "not_applicable"
+    ],
+    "validation_dimension": [
+      "structural",
+      "schema",
+      "profile",
+      "semantic",
+      "evidence",
+      "documentation",
+      "cross-catalogue",
+      "reconciliation",
+      "governance"
+    ],
+    "validation_layer": {
+      "L1": "Repository integrity",
+      "L2": "Syntax and schema",
+      "L3": "Entity and profile conformance",
+      "L4": "Relationship and hierarchy integrity",
+      "L5": "Semantic conformance",
+      "L6": "Evidence and provenance",
+      "L7": "Documentation conformance",
+      "L8": "Governance and approval"
+    },
+    "classification": {
+      "C1": "Deterministic",
+      "C2": "Rule-assisted",
+      "C3": "Evidence-dependent",
+      "C4": "Human-judgement",
+      "C5": "Governance-controlled"
+    },
+    "exception_category": [
+      "technical",
+      "semantic",
+      "evidence",
+      "governance",
+      "migration"
+    ],
+    "exception_lifecycle": {
+      "proposed": [
+        "under_review"
+      ],
+      "under_review": [
+        "approved",
+        "rejected"
+      ],
+      "approved": [
+        "active"
+      ],
+      "rejected": [],
+      "active": [
+        "expired",
+        "revoked",
+        "closed"
+      ],
+      "expired": [],
+      "revoked": [],
+      "closed": []
+    },
+    "rule_lifecycle_status": [
+      "active",
+      "deprecated",
+      "superseded",
+      "draft",
+      "retired"
+    ],
+    "disclosure_class": [
+      "public",
+      "internal",
+      "restricted"
+    ]
+  },
+  "progressive_enforcement": {
+    "stages": [
+      "discovery_and_reporting",
+      "warning_only",
+      "blocking_for_new_defects",
+      "historical_remediation",
+      "full_enforcement"
+    ],
+    "current_stage": "blocking_for_new_defects",
+    "baseline_defect_policy": "A historical baseline defect does not block acceptance. A newly introduced defect blocks acceptance immediately. A baseline defect carries an accountable remediation owner and a review date; it is never silently grandfathered.",
+    "exception_policy": "An exception is scoped, owned, approved, reviewable, revocable and time-bound. It does not alter the underlying rule and does not propagate to child entities.",
+    "new_defect_policy": "A defect introduced by the change under assessment blocks acceptance. The baseline is the recorded finding count of the pre-change tree."
+  },
+  "rules": [
+    {
+      "rule_id": "CONF-001",
+      "rule_name": "Schema (validate-process-entries)",
+      "description": "Conformance rule CONF-001 enforces Schema (validate-process-entries) across the L0-L4 catalogue via the registered gate '[1] Schema (validate-process-entries)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "schema",
+      "validation_layer": "L2",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/regenerate_catalog.py --check --schema catalog-index-schema/catalog-index-schema.json.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_regenerate_catalog.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[1] Schema (validate-process-entries)",
+      "registered_command": "python scripts/regenerate_catalog.py --check --schema catalog-index-schema/catalog-index-schema.json"
+    },
+    {
+      "rule_id": "CONF-002",
+      "rule_name": "Schema (catalog-index)",
+      "description": "Conformance rule CONF-002 enforces Schema (catalog-index) across the L0-L4 catalogue via the registered gate '[1] Schema (catalog-index)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "schema",
+      "validation_layer": "L2",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_catalog_index.py --strict --schema catalog-index-schema/catalog-index-schema.json.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_catalog_index.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[1] Schema (catalog-index)",
+      "registered_command": "python scripts/check_catalog_index.py --strict --schema catalog-index-schema/catalog-index-schema.json"
+    },
+    {
+      "rule_id": "CONF-003",
+      "rule_name": "Structure",
+      "description": "Conformance rule CONF-003 enforces Structure across the L0-L4 catalogue via the registered gate '[2] Structure'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "structural",
+      "validation_layer": "L1",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_struct.py.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_struct.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_advisory",
+      "registered_gate": "[2] Structure",
+      "registered_command": "python scripts/check_struct.py"
+    },
+    {
+      "rule_id": "CONF-004",
+      "rule_name": "References (BP-SEM + legacy)",
+      "description": "Conformance rule CONF-004 enforces References (BP-SEM + legacy) across the L0-L4 catalogue via the registered gate '[3] References (BP-SEM + legacy)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "structural",
+      "validation_layer": "L4",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_legacy_migration.py.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_legacy_migration.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[3] References (BP-SEM + legacy)",
+      "registered_command": "python scripts/check_legacy_migration.py"
+    },
+    {
+      "rule_id": "CONF-005",
+      "rule_name": "References (context-resolution)",
+      "description": "Conformance rule CONF-005 enforces References (context-resolution) across the L0-L4 catalogue via the registered gate '[3] References (context-resolution)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "structural",
+      "validation_layer": "L4",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_process_context.py.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_process_context.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[3] References (context-resolution)",
+      "registered_command": "python scripts/check_process_context.py"
+    },
+    {
+      "rule_id": "CONF-006",
+      "rule_name": "Semantics (BP-SEM-001..014)",
+      "description": "Conformance rule CONF-006 enforces Semantics (BP-SEM-001..014) across the L0-L4 catalogue via the registered gate '[4] Semantics (BP-SEM-001..014)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "semantic",
+      "validation_layer": "L5",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_process_semantics.py --strict.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_process_semantics.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[4] Semantics (BP-SEM-001..014)",
+      "registered_command": "python scripts/check_process_semantics.py --strict"
+    },
+    {
+      "rule_id": "CONF-007",
+      "rule_name": "Semantics (BP-SPEC-01-001..007)",
+      "description": "Conformance rule CONF-007 enforces Semantics (BP-SPEC-01-001..007) across the L0-L4 catalogue via the registered gate '[4] Semantics (BP-SPEC-01-001..007)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "structural",
+      "validation_layer": "L4",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_process_specialization.py.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_process_specialization.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[4] Semantics (BP-SPEC-01-001..007)",
+      "registered_command": "python scripts/check_process_specialization.py"
+    },
+    {
+      "rule_id": "CONF-008",
+      "rule_name": "Hierarchy (BP-AR-001..007)",
+      "description": "Conformance rule CONF-008 enforces Hierarchy (BP-AR-001..007) across the L0-L4 catalogue via the registered gate '[5] Hierarchy (BP-AR-001..007)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "structural",
+      "validation_layer": "L4",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_architectural_regression.py --strict.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_architectural_regression.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[5] Hierarchy (BP-AR-001..007)",
+      "registered_command": "python scripts/check_architectural_regression.py --strict"
+    },
+    {
+      "rule_id": "CONF-009",
+      "rule_name": "Specialization Graph (cycle + edge)",
+      "description": "Conformance rule CONF-009 enforces Specialization Graph (cycle + edge) across the L0-L4 catalogue via the registered gate '[6] Specialization Graph (cycle + edge)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "structural",
+      "validation_layer": "L4",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_process_specialization.py.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_process_specialization.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[6] Specialization Graph (cycle + edge)",
+      "registered_command": "python scripts/check_process_specialization.py"
+    },
+    {
+      "rule_id": "CONF-010",
+      "rule_name": "MECE (Process Group)",
+      "description": "Conformance rule CONF-010 enforces MECE (Process Group) across the L0-L4 catalogue via the registered gate '[7] MECE (Process Group)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "structural",
+      "validation_layer": "L4",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_process_group.py.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_process_group.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[7] MECE (Process Group)",
+      "registered_command": "python scripts/check_process_group.py"
+    },
+    {
+      "rule_id": "CONF-011",
+      "rule_name": "Provenance (ECF conformance)",
+      "description": "Conformance rule CONF-011 enforces Provenance (ECF conformance) across the L0-L4 catalogue via the registered gate '[8] Provenance (ECF conformance)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "evidence",
+      "validation_layer": "L6",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_ecf_conformance.py.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_ecf_conformance.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[8] Provenance (ECF conformance)",
+      "registered_command": "python scripts/check_ecf_conformance.py"
+    },
+    {
+      "rule_id": "CONF-012",
+      "rule_name": "CR Validation (CR-META-001..006)",
+      "description": "Conformance rule CONF-012 enforces CR Validation (CR-META-001..006) across the L0-L4 catalogue via the registered gate '[9] CR Validation (CR-META-001..006)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "governance",
+      "validation_layer": "L8",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_cr_metadata.py.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_cr_metadata.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_advisory",
+      "registered_gate": "[9] CR Validation (CR-META-001..006)",
+      "registered_command": "python scripts/check_cr_metadata.py"
+    },
+    {
+      "rule_id": "CONF-013",
+      "rule_name": "Conformance Result (Levels 1-4)",
+      "description": "Conformance rule CONF-013 enforces Conformance Result (Levels 1-4) across the L0-L4 catalogue via the registered gate '[10] Conformance Result (Levels 1-4)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "documentation",
+      "validation_layer": "L7",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/build_conformance_report.py.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "reconciliation/conformance_report.yaml"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_advisory",
+      "registered_gate": "[10] Conformance Result (Levels 1-4)",
+      "registered_command": "python scripts/build_conformance_report.py"
+    },
+    {
+      "rule_id": "CONF-014",
+      "rule_name": "Conformance Result (Admission gate ADM-001..008)",
+      "description": "Conformance rule CONF-014 enforces Conformance Result (Admission gate ADM-001..008) across the L0-L4 catalogue via the registered gate '[10] Conformance Result (Admission gate ADM-001..008)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "governance",
+      "validation_layer": "L8",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_admission_gate.py.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_admission_gate.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_advisory",
+      "registered_gate": "[10] Conformance Result (Admission gate ADM-001..008)",
+      "registered_command": "python scripts/check_admission_gate.py"
+    },
+    {
+      "rule_id": "CONF-015",
+      "rule_name": "Conformance Result (Documentation DOC-001..003)",
+      "description": "Conformance rule CONF-015 enforces Conformance Result (Documentation DOC-001..003) across the L0-L4 catalogue via the registered gate '[10] Conformance Result (Documentation DOC-001..003)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "documentation",
+      "validation_layer": "L7",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_documentation_conformance.py.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_documentation_conformance.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_advisory",
+      "registered_gate": "[10] Conformance Result (Documentation DOC-001..003)",
+      "registered_command": "python scripts/check_documentation_conformance.py"
+    },
+    {
+      "rule_id": "CONF-016",
+      "rule_name": "L2 Qualification (BP-C1..C4)",
+      "description": "Conformance rule CONF-016 enforces L2 Qualification (BP-C1..C4) across the L0-L4 catalogue via the registered gate '[11] L2 Qualification (BP-C1..C4)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "semantic",
+      "validation_layer": "L5",
+      "validation_method": "automated",
+      "classification": "C2",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_l2_qualification.py --strict.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_l2_qualification.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_advisory",
+      "registered_gate": "[11] L2 Qualification (BP-C1..C4)",
+      "registered_command": "python scripts/check_l2_qualification.py --strict"
+    },
+    {
+      "rule_id": "CONF-017",
+      "rule_name": "Intent Purposive (PSP-001..003)",
+      "description": "Conformance rule CONF-017 enforces Intent Purposive (PSP-001..003) across the L0-L4 catalogue via the registered gate '[12] Intent Purposive (PSP-001..003)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "semantic",
+      "validation_layer": "L5",
+      "validation_method": "automated",
+      "classification": "C2",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_intent_purposive.py --strict.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_intent_purposive.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_advisory",
+      "registered_gate": "[12] Intent Purposive (PSP-001..003)",
+      "registered_command": "python scripts/check_intent_purposive.py --strict"
+    },
+    {
+      "rule_id": "CONF-018",
+      "rule_name": "Lifecycle State-Machine (LCM-001..005)",
+      "description": "Conformance rule CONF-018 enforces Lifecycle State-Machine (LCM-001..005) across the L0-L4 catalogue via the registered gate '[13] Lifecycle State-Machine (LCM-001..005)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "structural",
+      "validation_layer": "L4",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_lifecycle_state.py --strict.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_lifecycle_state.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_advisory",
+      "registered_gate": "[13] Lifecycle State-Machine (LCM-001..005)",
+      "registered_command": "python scripts/check_lifecycle_state.py --strict"
+    },
+    {
+      "rule_id": "CONF-019",
+      "rule_name": "Semantic Identity vs Version (SIV-001..004)",
+      "description": "Conformance rule CONF-019 enforces Semantic Identity vs Version (SIV-001..004) across the L0-L4 catalogue via the registered gate '[14] Semantic Identity vs Version (SIV-001..004)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "semantic",
+      "validation_layer": "L5",
+      "validation_method": "automated",
+      "classification": "C2",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_semantic_identity_version.py --strict.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_semantic_identity_version.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_advisory",
+      "registered_gate": "[14] Semantic Identity vs Version (SIV-001..004)",
+      "registered_command": "python scripts/check_semantic_identity_version.py --strict"
+    },
+    {
+      "rule_id": "CONF-020",
+      "rule_name": "Activity Model (ACT-001..010)",
+      "description": "Conformance rule CONF-020 enforces Activity Model (ACT-001..010) across the L0-L4 catalogue via the registered gate '[15] Activity Model (ACT-001..010)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "semantic",
+      "validation_layer": "L5",
+      "validation_method": "automated",
+      "classification": "C2",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_activity_model.py --strict.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_activity_model.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_advisory",
+      "registered_gate": "[15] Activity Model (ACT-001..010)",
+      "registered_command": "python scripts/check_activity_model.py --strict"
+    },
+    {
+      "rule_id": "CONF-021",
+      "rule_name": "Execution Boundary (EXE-001..010)",
+      "description": "Conformance rule CONF-021 enforces Execution Boundary (EXE-001..010) across the L0-L4 catalogue via the registered gate '[16] Execution Boundary (EXE-001..010)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "semantic",
+      "validation_layer": "L5",
+      "validation_method": "automated",
+      "classification": "C2",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_execution_boundary.py --strict.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_execution_boundary.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_advisory",
+      "registered_gate": "[16] Execution Boundary (EXE-001..010)",
+      "registered_command": "python scripts/check_execution_boundary.py --strict"
+    },
+    {
+      "rule_id": "CONF-022",
+      "rule_name": "MECE Validation (MECE-001..008)",
+      "description": "Conformance rule CONF-022 enforces MECE Validation (MECE-001..008) across the L0-L4 catalogue via the registered gate '[17] MECE Validation (MECE-001..008)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "semantic",
+      "validation_layer": "L5",
+      "validation_method": "automated",
+      "classification": "C2",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_mece.py --strict.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_mece.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_advisory",
+      "registered_gate": "[17] MECE Validation (MECE-001..008)",
+      "registered_command": "python scripts/check_mece.py --strict"
+    },
+    {
+      "rule_id": "CONF-023",
+      "rule_name": "Cross-Repository Integrity (XRI-001..005)",
+      "description": "Conformance rule CONF-023 enforces Cross-Repository Integrity (XRI-001..005) across the L0-L4 catalogue via the registered gate '[18] Cross-Repository Integrity (XRI-001..005)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "cross-catalogue",
+      "validation_layer": "L4",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_cross_repo_integrity.py --strict.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_cross_repo_integrity.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_advisory",
+      "registered_gate": "[18] Cross-Repository Integrity (XRI-001..005)",
+      "registered_command": "python scripts/check_cross_repo_integrity.py --strict"
+    },
+    {
+      "rule_id": "CONF-024",
+      "rule_name": "Lifecycle Discovery (DISC-001..008)",
+      "description": "Conformance rule CONF-024 enforces Lifecycle Discovery (DISC-001..008) across the L0-L4 catalogue via the registered gate '[19] Lifecycle Discovery (DISC-001..008)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "governance",
+      "validation_layer": "L8",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_lifecycle_discovery.py --strict.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_lifecycle_discovery.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_advisory",
+      "registered_gate": "[19] Lifecycle Discovery (DISC-001..008)",
+      "registered_command": "python scripts/check_lifecycle_discovery.py --strict"
+    },
+    {
+      "rule_id": "CONF-025",
+      "rule_name": "Process Scope (PSCOPE-001..008)",
+      "description": "Conformance rule CONF-025 enforces Process Scope (PSCOPE-001..008) across the L0-L4 catalogue via the registered gate '[20] Process Scope (PSCOPE-001..008)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "structural",
+      "validation_layer": "L4",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_process_scope.py.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_process_scope.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_advisory",
+      "registered_gate": "[20] Process Scope (PSCOPE-001..008)",
+      "registered_command": "python scripts/check_process_scope.py"
+    },
+    {
+      "rule_id": "CONF-026",
+      "rule_name": "Documentation Profile (DOC-001..005)",
+      "description": "Conformance rule CONF-026 enforces Documentation Profile (DOC-001..005) across the L0-L4 catalogue via the registered gate '[21] Documentation Profile (DOC-001..005)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "documentation",
+      "validation_layer": "L7",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_documentation_profile.py.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_documentation_profile.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_advisory",
+      "registered_gate": "[21] Documentation Profile (DOC-001..005)",
+      "registered_command": "python scripts/check_documentation_profile.py"
+    },
+    {
+      "rule_id": "CONF-027",
+      "rule_name": "Task Model (TASK-001..005)",
+      "description": "Conformance rule CONF-027 enforces Task Model (TASK-001..005) across the L0-L4 catalogue via the registered gate '[22] Task Model (TASK-001..005)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "structural",
+      "validation_layer": "L4",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_task_model.py.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_task_model.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[22] Task Model (TASK-001..005)",
+      "registered_command": "python scripts/check_task_model.py"
+    },
+    {
+      "rule_id": "CONF-028",
+      "rule_name": "Reconciliation Matrix (RCM-001..010)",
+      "description": "Conformance rule CONF-028 enforces Reconciliation Matrix (RCM-001..010) across the L0-L4 catalogue via the registered gate '[23] Reconciliation Matrix (RCM-001..010)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "reconciliation",
+      "validation_layer": "L8",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_reconciliation_matrix.py.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_reconciliation_matrix.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_advisory",
+      "registered_gate": "[23] Reconciliation Matrix (RCM-001..010)",
+      "registered_command": "python scripts/check_reconciliation_matrix.py"
+    },
+    {
+      "rule_id": "CONF-029",
+      "rule_name": "L0<->L1 Cardinality (L0L1-CARD-001..003)",
+      "description": "Conformance rule CONF-029 enforces L0<->L1 Cardinality (L0L1-CARD-001..003) across the L0-L4 catalogue via the registered gate '[24] L0<->L1 Cardinality (L0L1-CARD-001..003)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "structural",
+      "validation_layer": "L4",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_l0_l1_cardinality.py.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_l0_l1_cardinality.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_advisory",
+      "registered_gate": "[24] L0<->L1 Cardinality (L0L1-CARD-001..003)",
+      "registered_command": "python scripts/check_l0_l1_cardinality.py"
+    },
+    {
+      "rule_id": "CONF-030",
+      "rule_name": "ID System (IDM-001..007)",
+      "description": "Conformance rule CONF-030 enforces ID System (IDM-001..007) across the L0-L4 catalogue via the registered gate '[25] ID System (IDM-001..007)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "structural",
+      "validation_layer": "L1",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_id_system.py.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_id_system.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[25] ID System (IDM-001..007)",
+      "registered_command": "python scripts/check_id_system.py"
+    },
+    {
+      "rule_id": "CONF-031",
+      "rule_name": "Reference Embargo (CR-BP-112; EMB-001..004)",
+      "description": "Conformance rule CONF-031 enforces Reference Embargo (CR-BP-112; EMB-001..004) across the L0-L4 catalogue via the registered gate '[26] Reference Embargo (CR-BP-112; EMB-001..004)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "governance",
+      "validation_layer": "L8",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_reference_embargo.py.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_reference_embargo.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[26] Reference Embargo (CR-BP-112; EMB-001..004)",
+      "registered_command": "python scripts/check_reference_embargo.py"
+    },
+    {
+      "rule_id": "CONF-032",
+      "rule_name": "HREF Resolver (CR-BP-113; HREF-001..003)",
+      "description": "Conformance rule CONF-032 enforces HREF Resolver (CR-BP-113; HREF-001..003) across the L0-L4 catalogue via the registered gate '[27] HREF Resolver (CR-BP-113; HREF-001..003)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "structural",
+      "validation_layer": "L4",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_href_targets.py.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_href_targets.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[27] HREF Resolver (CR-BP-113; HREF-001..003)",
+      "registered_command": "python scripts/check_href_targets.py"
+    },
+    {
+      "rule_id": "CONF-033",
+      "rule_name": "Template Drift (CR-BP-113; TPL-001..005)",
+      "description": "Conformance rule CONF-033 enforces Template Drift (CR-BP-113; TPL-001..005) across the L0-L4 catalogue via the registered gate '[28] Template Drift (CR-BP-113; TPL-001..005)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "schema",
+      "validation_layer": "L2",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_templates.py.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_templates.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[28] Template Drift (CR-BP-113; TPL-001..005)",
+      "registered_command": "python scripts/check_templates.py"
+    },
+    {
+      "rule_id": "CONF-034",
+      "rule_name": "CR README Consistency (CR-BP-113; CRR-001..003)",
+      "description": "Conformance rule CONF-034 enforces CR README Consistency (CR-BP-113; CRR-001..003) across the L0-L4 catalogue via the registered gate '[29] CR README Consistency (CR-BP-113; CRR-001..003)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "documentation",
+      "validation_layer": "L7",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_cr_readme.py.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_readme_consistency.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[29] CR README Consistency (CR-BP-113; CRR-001..003)",
+      "registered_command": "python scripts/check_cr_readme.py"
+    },
+    {
+      "rule_id": "CONF-035",
+      "rule_name": "README Consistency (CR-BP-114; RDM-001..002)",
+      "description": "Conformance rule CONF-035 enforces README Consistency (CR-BP-114; RDM-001..002) across the L0-L4 catalogue via the registered gate '[30] README Consistency (CR-BP-114; RDM-001..002)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "documentation",
+      "validation_layer": "L7",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_readme_consistency.py.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_readme_consistency.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[30] README Consistency (CR-BP-114; RDM-001..002)",
+      "registered_command": "python scripts/check_readme_consistency.py"
+    },
+    {
+      "rule_id": "CONF-036",
+      "rule_name": "Entity Identity Clarity (CR-BP-117a; EID-001..004)",
+      "description": "Conformance rule CONF-036 enforces Entity Identity Clarity (CR-BP-117a; EID-001..004) across the L0-L4 catalogue via the registered gate '[31] Entity Identity Clarity (CR-BP-117a; EID-001..004)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "structural",
+      "validation_layer": "L1",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_entity_identity.py.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_entity_identity.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[31] Entity Identity Clarity (CR-BP-117a; EID-001..004)",
+      "registered_command": "python scripts/check_entity_identity.py"
+    },
+    {
+      "rule_id": "CONF-037",
+      "rule_name": "Authorship Cardinal Rule (CR-BP-118; AUT-001..003)",
+      "description": "Conformance rule CONF-037 enforces Authorship Cardinal Rule (CR-BP-118; AUT-001..003) across the L0-L4 catalogue via the registered gate '[32] Authorship Cardinal Rule (CR-BP-118; AUT-001..003)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "governance",
+      "validation_layer": "L8",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_authorship.py --strict.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_authorship.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[32] Authorship Cardinal Rule (CR-BP-118; AUT-001..003)",
+      "registered_command": "python scripts/check_authorship.py --strict"
+    },
+    {
+      "rule_id": "CONF-038",
+      "rule_name": "Entity System (CR-BP-123 / CR-BP-125; ES-001..ES-005)",
+      "description": "Conformance rule CONF-038 enforces Entity System (CR-BP-123 / CR-BP-125; ES-001..ES-005) across the L0-L4 catalogue via the registered gate '[33] Entity System (CR-BP-123 / CR-BP-125; ES-001..ES-005)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "schema",
+      "validation_layer": "L3",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_entity_system.py --strict.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_check_entity_system.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[33] Entity System (CR-BP-123 / CR-BP-125; ES-001..ES-005)",
+      "registered_command": "python scripts/check_entity_system.py --strict"
+    },
+    {
+      "rule_id": "CONF-039",
+      "rule_name": "Documentation Profile - Generator and Validator (CR-BP-94-EXT-04; DOC-016..020)",
+      "description": "Conformance rule CONF-039 enforces Documentation Profile - Generator and Validator (CR-BP-94-EXT-04; DOC-016..020) across the L0-L4 catalogue via the registered gate '[34] Documentation Profile - Generator and Validator (CR-BP-94-EXT-04; DOC-016..020)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "documentation",
+      "validation_layer": "L7",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/validate_readme_structure.py --catalog-root ..",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_documentation_profile_ext04.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[34] Documentation Profile - Generator and Validator (CR-BP-94-EXT-04; DOC-016..020)",
+      "registered_command": "python scripts/validate_readme_structure.py --catalog-root ."
+    },
+    {
+      "rule_id": "CONF-040",
+      "rule_name": "Decomposition Reconciliation (CR-BP-94-EXT-05; DOC-021..025)",
+      "description": "Conformance rule CONF-040 enforces Decomposition Reconciliation (CR-BP-94-EXT-05; DOC-021..025) across the L0-L4 catalogue via the registered gate '[35] Decomposition Reconciliation (CR-BP-94-EXT-05; DOC-021..025)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "structural",
+      "validation_layer": "L4",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_decomposition_reconciliation.py --catalog-root ..",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_decomposition_reconciliation_ext05.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[35] Decomposition Reconciliation (CR-BP-94-EXT-05; DOC-021..025)",
+      "registered_command": "python scripts/check_decomposition_reconciliation.py --catalog-root ."
+    },
+    {
+      "rule_id": "CONF-041",
+      "rule_name": "Profile Registry (CR-BP-94-EXT-11; PR-001..PR-010)",
+      "description": "Conformance rule CONF-041 enforces Profile Registry (CR-BP-94-EXT-11; PR-001..PR-010) across the L0-L4 catalogue via the registered gate '[36] Profile Registry (CR-BP-94-EXT-11; PR-001..PR-010)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "profile",
+      "validation_layer": "L3",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_profile_registry_ext11.py.",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_profile_registry_ext11.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[36] Profile Registry (CR-BP-94-EXT-11; PR-001..PR-010)",
+      "registered_command": "python scripts/check_profile_registry_ext11.py"
+    },
+    {
+      "rule_id": "CONF-042",
+      "rule_name": "Inputs, Outputs, Interfaces (CR-BP-94-EXT-12; IT-001..IT-010)",
+      "description": "Conformance rule CONF-042 enforces Inputs, Outputs, Interfaces (CR-BP-94-EXT-12; IT-001..IT-010) across the L0-L4 catalogue via the registered gate '[37] Inputs, Outputs, Interfaces (CR-BP-94-EXT-12; IT-001..IT-010)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "profile",
+      "validation_layer": "L3",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_inputs_outputs_interfaces_ext12.py --catalog-root ..",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_inputs_outputs_interfaces_ext12.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[37] Inputs, Outputs, Interfaces (CR-BP-94-EXT-12; IT-001..IT-010)",
+      "registered_command": "python scripts/check_inputs_outputs_interfaces_ext12.py --catalog-root ."
+    },
+    {
+      "rule_id": "CONF-043",
+      "rule_name": "Responsibility, Accountability, Roles (CR-BP-94-EXT-13; RA-001..RA-010)",
+      "description": "Conformance rule CONF-043 enforces Responsibility, Accountability, Roles (CR-BP-94-EXT-13; RA-001..RA-010) across the L0-L4 catalogue via the registered gate '[38] Responsibility, Accountability, Roles (CR-BP-94-EXT-13; RA-001..RA-010)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "profile",
+      "validation_layer": "L3",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_responsibility_accountability_ext13.py --catalog-root ..",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_responsibility_accountability_ext13.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[38] Responsibility, Accountability, Roles (CR-BP-94-EXT-13; RA-001..RA-010)",
+      "registered_command": "python scripts/check_responsibility_accountability_ext13.py --catalog-root ."
+    },
+    {
+      "rule_id": "CONF-044",
+      "rule_name": "Business Rules, Controls, Exceptions (CR-BP-94-EXT-14; GO-001..GO-010)",
+      "description": "Conformance rule CONF-044 enforces Business Rules, Controls, Exceptions (CR-BP-94-EXT-14; GO-001..GO-010) across the L0-L4 catalogue via the registered gate '[39] Business Rules, Controls, Exceptions (CR-BP-94-EXT-14; GO-001..GO-010)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "profile",
+      "validation_layer": "L3",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_business_rules_controls_exceptions_ext14.py --catalog-root ..",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_business_rules_controls_exceptions_ext14.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[39] Business Rules, Controls, Exceptions (CR-BP-94-EXT-14; GO-001..GO-010)",
+      "registered_command": "python scripts/check_business_rules_controls_exceptions_ext14.py --catalog-root ."
+    },
+    {
+      "rule_id": "CONF-045",
+      "rule_name": "Evidence, Provenance, Confidence (CR-BP-94-EXT-15; EV-001..EV-010)",
+      "description": "Conformance rule CONF-045 enforces Evidence, Provenance, Confidence (CR-BP-94-EXT-15; EV-001..EV-010) across the L0-L4 catalogue via the registered gate '[40] Evidence, Provenance, Confidence (CR-BP-94-EXT-15; EV-001..EV-010)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "evidence",
+      "validation_layer": "L6",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_evidence_provenance_ext15.py --catalog-root ..",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_evidence_provenance_ext15.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[40] Evidence, Provenance, Confidence (CR-BP-94-EXT-15; EV-001..EV-010)",
+      "registered_command": "python scripts/check_evidence_provenance_ext15.py --catalog-root ."
+    },
+    {
+      "rule_id": "CONF-046",
+      "rule_name": "Authoring Methodology (CR-BP-94-EXT-16; AM-001..AM-010)",
+      "description": "Conformance rule CONF-046 enforces Authoring Methodology (CR-BP-94-EXT-16; AM-001..AM-010) across the L0-L4 catalogue via the registered gate '[41] Authoring Methodology (CR-BP-94-EXT-16; AM-001..AM-010)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "evidence",
+      "validation_layer": "L6",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_authoring_methodology_ext16.py --catalog-root ..",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_authoring_methodology_ext16.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[41] Authoring Methodology (CR-BP-94-EXT-16; AM-001..AM-010)",
+      "registered_command": "python scripts/check_authoring_methodology_ext16.py --catalog-root ."
+    },
+    {
+      "rule_id": "CONF-047",
+      "rule_name": "Enrichment Tooling (CR-BP-94-EXT-17; OR-001..OR-005 + RP-001..RP-009)",
+      "description": "Conformance rule CONF-047 enforces Enrichment Tooling (CR-BP-94-EXT-17; OR-001..OR-005 + RP-001..RP-009) across the L0-L4 catalogue via the registered gate '[42] Enrichment Tooling (CR-BP-94-EXT-17; OR-001..OR-005 + RP-001..RP-009)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "profile",
+      "validation_layer": "L3",
+      "validation_method": "automated",
+      "classification": "C2",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/orchestrate_backfill.py --dry-run --catalog-root ..",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_enrichment_tooling_ext17.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_advisory",
+      "registered_gate": "[42] Enrichment Tooling (CR-BP-94-EXT-17; OR-001..OR-005 + RP-001..RP-009)",
+      "registered_command": "python scripts/orchestrate_backfill.py --dry-run --catalog-root ."
+    },
+    {
+      "rule_id": "CONF-048",
+      "rule_name": "Operational Documentation Pilot (CR-BP-94-EXT-18; PI-001..PI-008)",
+      "description": "Conformance rule CONF-048 enforces Operational Documentation Pilot (CR-BP-94-EXT-18; PI-001..PI-008) across the L0-L4 catalogue via the registered gate '[43] Operational Documentation Pilot (CR-BP-94-EXT-18; PI-001..PI-008)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "reconciliation",
+      "validation_layer": "L8",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_pilot_selection_ext18.py --catalog-root ..",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_pilot_selection_ext18.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_blocking",
+      "registered_gate": "[43] Operational Documentation Pilot (CR-BP-94-EXT-18; PI-001..PI-008)",
+      "registered_command": "python scripts/check_pilot_selection_ext18.py --catalog-root ."
+    },
+    {
+      "rule_id": "CONF-049",
+      "rule_name": "L2 Business Process Backfill (CR-BP-94-EXT-19; L2-001..L2-012)",
+      "description": "Conformance rule CONF-049 enforces L2 Business Process Backfill (CR-BP-94-EXT-19; L2-001..L2-012) across the L0-L4 catalogue via the registered gate '[44] L2 Business Process Backfill (CR-BP-94-EXT-19; L2-001..L2-012)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "profile",
+      "validation_layer": "L3",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_l2_backfill_ext19.py --catalog-root ..",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_l2_backfill_ext19.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_advisory",
+      "registered_gate": "[44] L2 Business Process Backfill (CR-BP-94-EXT-19; L2-001..L2-012)",
+      "registered_command": "python scripts/check_l2_backfill_ext19.py --catalog-root ."
+    },
+    {
+      "rule_id": "CONF-050",
+      "rule_name": "L3 Activity Backfill (CR-BP-94-EXT-20; L3-001..L3-014)",
+      "description": "Conformance rule CONF-050 enforces L3 Activity Backfill (CR-BP-94-EXT-20; L3-001..L3-014) across the L0-L4 catalogue via the registered gate '[45] L3 Activity Backfill (CR-BP-94-EXT-20; L3-001..L3-014)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "profile",
+      "validation_layer": "L3",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_l3_backfill_ext20.py --catalog-root ..",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_l3_backfill_ext20.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_advisory",
+      "registered_gate": "[45] L3 Activity Backfill (CR-BP-94-EXT-20; L3-001..L3-014)",
+      "registered_command": "python scripts/check_l3_backfill_ext20.py --catalog-root ."
+    },
+    {
+      "rule_id": "CONF-051",
+      "rule_name": "L4 Task Backfill (CR-BP-94-EXT-21; L4-001..L4-014)",
+      "description": "Conformance rule CONF-051 enforces L4 Task Backfill (CR-BP-94-EXT-21; L4-001..L4-014) across the L0-L4 catalogue via the registered gate '[46] L4 Task Backfill (CR-BP-94-EXT-21; L4-001..L4-014)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "profile",
+      "validation_layer": "L3",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_l4_backfill_ext21.py --catalog-root ..",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_l4_backfill_ext21.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_advisory",
+      "registered_gate": "[46] L4 Task Backfill (CR-BP-94-EXT-21; L4-001..L4-014)",
+      "registered_command": "python scripts/check_l4_backfill_ext21.py --catalog-root ."
+    },
+    {
+      "rule_id": "CONF-052",
+      "rule_name": "Decomposition Reconciliation (CR-BP-94-EXT-22; R22-01..R22-12)",
+      "description": "Conformance rule CONF-052 enforces Decomposition Reconciliation (CR-BP-94-EXT-22; R22-01..R22-12) across the L0-L4 catalogue via the registered gate '[47] Decomposition Reconciliation (CR-BP-94-EXT-22; R22-01..R22-12)'.",
+      "requirement_traceability": [],
+      "adr_traceability": [],
+      "applicable_entity_types": [
+        "ProcessContext",
+        "ProcessGroup",
+        "Process",
+        "Activity",
+        "Task"
+      ],
+      "applicable_levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "validation_dimension": "reconciliation",
+      "validation_layer": "L4",
+      "validation_method": "automated",
+      "classification": "C1",
+      "severity": "error",
+      "rule_version": "1.0.0",
+      "expected_result": "The registered gate returns rc=0 and the gate manifest reports 0 open findings.",
+      "remediation_guidance": "Run the registered gate command and remediate the reported findings: python scripts/check_reconciliation_ext22.py --catalog-root ..",
+      "exception_eligible": true,
+      "test_coverage": [
+        "tests/test_reconciliation_ext22.py"
+      ],
+      "rule_lifecycle_status": "active",
+      "disclosure_class": "public",
+      "enforcement_mechanism": "automated_advisory",
+      "registered_gate": "[47] Decomposition Reconciliation (CR-BP-94-EXT-22; R22-01..R22-12)",
+      "registered_command": "python scripts/check_reconciliation_ext22.py --catalog-root ."
+    }
+  ]
+}
