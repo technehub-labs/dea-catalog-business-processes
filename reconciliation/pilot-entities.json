@@ -1,0 +1,94 @@
+{
+  "pilot_manifest_schema_version": "1",
+  "generated_at": "2026-10-19",
+  "generator": "PR #187 (CR-BP-94-EXT-18) author work",
+  "parent_cr": "CR-BP-94-EXT-18",
+  "pilot_selection_rationale": "Per CR-BP-94-EXT-18 §3, the pilot must select representative entities from the actual repository after inventory. The 11 selected entities (1 L1 + 1 L2 + 4 L3 + 5 L4) form a coherent L1 -> L2 -> L3 -> L4 decomposition chain. The selection covers all 7 CR criteria: (a) at least one L2 BP; (b) relevant L3 Activities; (c) at least one L4 Task under a selected Activity; (d) relevant L1 ProcessGroup context; (e) at least one entity with strong existing documentation (the L2 BP has 18 fields and 3 identity.evidence_links); (f) at least one entity with incomplete or uncertain operational information (0 of 11 have metadata.authoring populated); (g) at least one entity with meaningful cross-catalogue references (the L2 BP has 1 relationships entry + 1 context[] entry + 3 evidence_links).",
+  "pilot_entities": [
+    {
+      "id": "processes:group-sd-improve-vdz4xp",
+      "level": "L1",
+      "type": "ProcessGroup",
+      "role": "L1 parent (cell-charter context); the natural parent of the selected L2 BP",
+      "domain": "StrategyAndDirection",
+      "stage": "Improve"
+    },
+    {
+      "id": "processes:process-sd-improve-duwd64",
+      "level": "L2",
+      "type": "Process",
+      "role": "L2 Business Process; the principal pilot entity; 18 fields; 3 identity.evidence_links; 1 relationships entry; 1 context[] entry",
+      "domain": "StrategyAndDirection",
+      "stage": "Improve",
+      "parent_l1": "processes:group-sd-improve-vdz4xp"
+    },
+    {
+      "id": "processes:activity-sd-improve-mu6upn",
+      "level": "L3",
+      "type": "Activity",
+      "role": "L3 Activity (1 of 4 in the L2 decomposition); 12 fields",
+      "parent_l2": "processes:process-sd-improve-duwd64"
+    },
+    {
+      "id": "processes:activity-sd-improve-pke2va",
+      "level": "L3",
+      "type": "Activity",
+      "role": "L3 Activity (2 of 4 in the L2 decomposition); 12 fields",
+      "parent_l2": "processes:process-sd-improve-duwd64"
+    },
+    {
+      "id": "processes:activity-sd-improve-3pccaq",
+      "level": "L3",
+      "type": "Activity",
+      "role": "L3 Activity (3 of 4 in the L2 decomposition); 12 fields",
+      "parent_l2": "processes:process-sd-improve-duwd64"
+    },
+    {
+      "id": "processes:activity-sd-improve-mfk5ab",
+      "level": "L3",
+      "type": "Activity",
+      "role": "L3 Activity (4 of 4 in the L2 decomposition); 12 fields",
+      "parent_l2": "processes:process-sd-improve-duwd64"
+    },
+    {
+      "id": "processes:task-sd-improve-intake-8zhazq",
+      "level": "L4",
+      "type": "Task",
+      "role": "L4 Task (1 of 5 under the selected L3); 15 fields",
+      "parent_l3": "processes:activity-sd-improve-mu6upn"
+    },
+    {
+      "id": "processes:task-sd-improve-verify-rjdunp",
+      "level": "L4",
+      "type": "Task",
+      "role": "L4 Task (2 of 5 under the selected L3); 15 fields",
+      "parent_l3": "processes:activity-sd-improve-mu6upn"
+    },
+    {
+      "id": "processes:task-sd-improve-record-ejaamk",
+      "level": "L4",
+      "type": "Task",
+      "role": "L4 Task (3 of 5 under the selected L3); 15 fields",
+      "parent_l3": "processes:activity-sd-improve-mu6upn"
+    },
+    {
+      "id": "processes:task-sd-improve-confirm-449act",
+      "level": "L4",
+      "type": "Task",
+      "role": "L4 Task (4 of 5; under a different L3)",
+      "parent_l3": "processes:activity-sd-improve-pke2va"
+    },
+    {
+      "id": "processes:task-sd-improve-transform-8wrq9j",
+      "level": "L4",
+      "type": "Task",
+      "role": "L4 Task (5 of 5; under a different L3)",
+      "parent_l3": "processes:activity-sd-improve-pke2va"
+    }
+  ],
+  "summary": {
+    "total": 11,
+    "by_level": {"L0": 0, "L1": 1, "L2": 1, "L3": 4, "L4": 5},
+    "decomposition_chain": "1 L1 -> 1 L2 -> 4 L3 -> 5 L4 (intact)"
+  }
+}

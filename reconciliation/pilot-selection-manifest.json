@@ -1,0 +1,16 @@
+{
+  "manifest_schema_version": "1",
+  "generated_at": "2026-10-19",
+  "generator": "scripts/check_pilot_selection_ext18.py",
+  "parent_cr": "CR-BP-94-EXT-18",
+  "catalog_root": "/home/hermes/dea-catalog-processes",
+  "selection": {
+    "total_pilot_entities": 11,
+    "total_resolved_records": 11
+  },
+  "summary": {
+    "total_findings": 0,
+    "by_rule": {}
+  },
+  "findings": []
+}

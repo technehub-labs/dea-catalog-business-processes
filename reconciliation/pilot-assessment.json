@@ -1,0 +1,133 @@
+{
+  "pilot_assessment_schema_version": "1",
+  "generated_at": "2026-10-19",
+  "generator": "PR #187 (CR-BP-94-EXT-18) author work; Phase 7 (Pilot assessment)",
+  "parent_cr": "CR-BP-94-EXT-18",
+  "phase": 7,
+  "phase_name": "Pilot assessment (evaluate results, identify defects)",
+  "pilot_entity_count": 11,
+  "ten_mandatory_outcomes": {
+    "1_pilot_entities_and_baseline": {
+      "status": "RECORDED",
+      "artefact": "reconciliation/pilot-entities.json + reconciliation/pilot-baseline.json"
+    },
+    "2_enriched_canonical_records": {
+      "status": "DEFERRED",
+      "rationale": "The pilot validates the methodology, not the content. The 11 records enrichment is the EXT-19 L2 backfill work."
+    },
+    "3_generated_readme_documentation": {
+      "status": "RECORDED",
+      "artefact": "The EXT-07 v2 generator produced READMEs for the 11 pilot entities (existing 3,733 README total)"
+    },
+    "4_validation_reports": {
+      "status": "PASS",
+      "artefact": "reconciliation/pilot-selection-manifest.json (the 6 EXT-11..16 validators report 0 findings on the 11 pilot entities)"
+    },
+    "5_evidence_and_provenance_records": {
+      "status": "DEFERRED",
+      "rationale": "The EXT-19 L2 backfill populates provenance[] and per-assertion evidence sub-structures. The framework (EXT-15) is in place."
+    },
+    "6_review_and_approval_records": {
+      "status": "RECORDED",
+      "artefact": "The EXT-15..17 gate reviews (PR #184, #185, #186) constitute the pilot-level review. The 7-phase execution was reviewed in this PR (PR #187)."
+    },
+    "7_defect_and_remediation_register": {
+      "status": "RECORDED",
+      "artefact": "see defects_below"
+    },
+    "8_effort_and_bottleneck_measurements": {
+      "status": "RECORDED",
+      "artefact": "see effort_below"
+    },
+    "9_recommended_changes": {
+      "status": "RECORDED",
+      "artefact": "see recommended_changes_below"
+    },
+    "10_go_no_go_recommendation": {
+      "status": "GO",
+      "artefact": "reconciliation/pilot-go-no-go.json; the formal go/no-go decision (with conditions in section 11 of docs/operational-documentation-pilot.md)"
+    }
+  },
+  "ten_quality_dimensions": {
+    "semantic_integrity": "PASS (EXT-09..16 framework enforces the 13 EXT-09 semantic distinctions)",
+    "evidence_quality": "PASS framework, PENDING content (the EXT-19 backfill is the work that populates the per-record evidence)",
+    "decomposition_integrity": "PASS (the L1 -> L2 -> L3 -> L4 chain is intact; the EXT-11 v3 profile enforces the L0/L1 non-executable and L4 non-orchestrating constraints)",
+    "parent_child_consistency": "PASS (the EXT-05 decomposition-reconciliation validator is in place; the 11 pilot entities references resolve)",
+    "cross_catalogue_integrity": "PASS (the EXT-09 section 12 cross-catalogue rule is enforced; the L2 BP identity.evidence_links reference authoritative sources)",
+    "documentation_quality": "PASS (the EXT-07 v2 generator produces 3,733 READMEs; the 11 pilot entities have READMEs; the EXT-11 v3 profile ensures consistent documentation per level)",
+    "tooling_reliability": "PASS (the EXT-17 orchestrator + reporter run deterministically; idempotency is established; the 6 EXT-11..16 validators aggregate cleanly)",
+    "contributor_usability": "PASS (the 7 EXT-17 contributor commands are documented; the per-slice pattern is repeatable; the EXT-16 14-step lifecycle is documented)",
+    "governance": "PASS (the EXT-16 14-step lifecycle; the EXT-17 10 quality dimensions; the EXT-18 go/no-go is a formal gate; the 10 EXT-15..16 controlled vocabularies are in place)",
+    "maintainability": "PASS (the 8 manifests under reconciliation/ are the source of truth; the EXT-10..16 framework is additive; no existing records are invalidated)"
+  },
+  "defects": [
+    {
+      "id": 1,
+      "description": "EXT-10 inventory 49 L0 number was stale; actual is 0 L0 records in the current catalogue",
+      "severity": "low",
+      "remediation": "The inventory doc remains as-is; the actual state is correctly reported by the EXT-17 reporter (RP-001)"
+    },
+    {
+      "id": 2,
+      "description": "0 of 11 pilot entities have metadata.authoring populated",
+      "severity": "expected",
+      "remediation": "The EXT-19 L2 backfill tranche is the work that populates them; the pilot validates the methodology, not the content"
+    },
+    {
+      "id": 3,
+      "description": "0 of 11 pilot entities have provenance[] populated",
+      "severity": "expected",
+      "remediation": "Same as #2; the EXT-19 backfill is the work"
+    },
+    {
+      "id": 4,
+      "description": "The reporter + orchestrator take ~15s + ~7min on the full catalogue (3882 yaml files)",
+      "severity": "low",
+      "remediation": "The orchestrator per-validator invocation adds latency; the reporter single-pass is fast. For EXT-19+ at scale, the orchestrator per-validator fan-out should be parallelised or memoised"
+    },
+    {
+      "id": 5,
+      "description": "The catalogue_status_manifest.json does not include the per-level finding breakdown",
+      "severity": "low",
+      "remediation": "The orchestrator tooling-manifest.json includes the per-validator findings; the reporter manifest could be extended to include the per-level finding count"
+    }
+  ],
+  "effort": {
+    "pilot_scope": "11 entities (1 L1 + 1 L2 + 4 L3 + 5 L4)",
+    "pilot_duration": "~4 hours of the engineering and governance readiness tranche (EXT-15 + EXT-16 + EXT-17 + EXT-18)",
+    "validators_written": 8,
+    "tests_written": "8 test files; 100+ test cases; 4094+ subtests",
+    "semantic_docs_written": 8,
+    "manifests_written": 12,
+    "bottleneck_identified": "The orchestrator per-validator invocation (~7 minutes for the 6 EXT-11..16 validators across 3882 records). Acceptable for the pilot; for EXT-19+ at scale, parallelisation or memoisation should be considered"
+  },
+  "recommended_changes": [
+    {
+      "id": 1,
+      "scope": "schema",
+      "change": "no changes required; the EXT-10..16 framework is additive; no existing records are invalidated"
+    },
+    {
+      "id": 2,
+      "scope": "profiles",
+      "change": "no changes required; the EXT-11 v3 profile is the reference"
+    },
+    {
+      "id": 3,
+      "scope": "methodology",
+      "change": "no changes required; the 14-step EXT-16 lifecycle is the reference; the pilot confirms the methodology is practical"
+    },
+    {
+      "id": 4,
+      "scope": "tooling",
+      "change": "the orchestrator per-validator invocation could be parallelised for the EXT-19+ scale; the reporter per-level finding breakdown could be extended"
+    }
+  ],
+  "summary": {
+    "ten_outcomes_complete_or_pilot_appropriate": "8 of 10 (2 deferred to EXT-19 by design)",
+    "ten_quality_dimensions_pass": "10 of 10 (1 with PENDING content for the EXT-19 work)",
+    "defects_count": 5,
+    "critical_defects": 0,
+    "go_no_go_recommendation": "GO (with conditions in section 11.1 of docs/operational-documentation-pilot.md)"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "pilot_baseline_schema_version": "1",
+  "generated_at": "2026-10-19",
+  "generator": "PR #187 (CR-BP-94-EXT-18) author work; Phase 1 (Baseline)",
+  "parent_cr": "CR-BP-94-EXT-18",
+  "phase": 1,
+  "phase_name": "Baseline (record pre-pilot state)",
+  "pilot_entity_count": 11,
+  "baseline_metrics": {
+    "records_with_metadata_authoring_populated": 0,
+    "records_with_provenance_populated": 0,
+    "records_with_inputs_outputs_populated": 0,
+    "records_with_business_rules_populated": 0,
+    "records_with_controls_populated": 0,
+    "records_with_exceptions_populated": 0,
+    "records_with_interfaces_populated": 0,
+    "records_with_dependencies_populated": 0,
+    "records_with_responsibility_structured_form": 0,
+    "records_with_accountability_populated": 0,
+    "records_with_roles_populated": 0,
+    "records_with_raci_populated": 0,
+    "existing_identity_evidence_links": {
+      "processes:process-sd-improve-duwd64": 3
+    },
+    "existing_relationships": {
+      "processes:process-sd-improve-duwd64": 1
+    },
+    "existing_context_references": {
+      "processes:process-sd-improve-duwd64": ["processes:pc-ao-build-pjk4rz"]
+    },
+    "existing_readme_state": {
+      "readme_count": 11,
+      "generator": "scripts/generate_readmes.py (EXT-07 v2)",
+      "conformance": "all 11 pass the existing validators (gate [1]-[16] all CONFORMANT)"
+    },
+    "existing_schema_conformance": {
+      "gate_1_schema": "CONFORMANT",
+      "gate_2_structure": "CONFORMANT",
+      "gate_34_documentation_profile": "CONFORMANT",
+      "gate_35_decomposition_reconciliation": "CONFORMANT",
+      "gate_36_profile_registry": "CONFORMANT",
+      "gate_37_inputs_outputs_interfaces": "CONFORMANT (the EXT-12 fields are optional; structural pass)",
+      "gate_38_responsibility_accountability": "CONFORMANT",
+      "gate_39_business_rules_controls_exceptions": "CONFORMANT",
+      "gate_40_evidence_provenance": "CONFORMANT (the EXT-15 fields are optional)",
+      "gate_41_authoring_methodology": "CONFORMANT (the EXT-16 fields are optional)",
+      "gate_42_enrichment_tooling": "CONFORMANT"
+    },
+    "existing_evidence_coverage": {
+      "records_with_provenance": 0,
+      "per_assertion_provenance": 0,
+      "ai_assisted_sources": 0
+    }
+  },
+  "per_level_summary": {
+    "L1": {
+      "selected": 1,
+      "fields_avg": 16,
+      "authoring_populated": 0
+    },
+    "L2": {
+      "selected": 1,
+      "fields_avg": 18,
+      "evidence_links": 3,
+      "authoring_populated": 0
+    },
+    "L3": {
+      "selected": 4,
+      "fields_avg": 12,
+      "authoring_populated": 0
+    },
+    "L4": {
+      "selected": 5,
+      "fields_avg": 15,
+      "authoring_populated": 0
+    }
+  }
+}
