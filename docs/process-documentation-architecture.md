@@ -298,11 +298,15 @@ The pilot is **not** the full pilot implementation (that is EXT-06); it is a str
 |---|---|---|
 | CR-BP-94-EXT-01 (PR #137) | Merged | Architecture + profile registry (L2/L3/L4) + DOC-001..005 + pilot scaffold |
 | CR-BP-94-EXT-01a (this slice) | Proposed (PR pending) | L0 ProcessContext + L1 ProcessGroup profile additions; validator profile registry extension; LEVEL_BY_TYPE extension |
-| CR-BP-94-EXT-02 | Reserved | README Markdown template with section identifiers + profile-specific extensions + versioning |
-| CR-BP-94-EXT-03 | Reserved | Documentation manifest schema + coverage dimension scoring + lifecycle rules |
-| CR-BP-94-EXT-04 | Reserved | Profile-aware generator + structural validator + CI integration + evidence-state machine |
-| CR-BP-94-EXT-05 | Reserved | Decomposition reconciliation + parent-child traceability + catalog-wide coverage report |
-| CR-BP-94-EXT-06 | Reserved | Pilot completion + catalog-wide rollout |
+| CR-BP-94-EXT-02 | Reserved (historical) | README Markdown template with section identifiers + profile-specific extensions + versioning. Treated as historical generator design; superseded by CR-BP-94-EXT-07. |
+| CR-BP-94-EXT-03 | Reserved (implementation status to be reconciled) | Documentation manifest schema + coverage dimension scoring + lifecycle rules. Reserved scope preserved; actual implementation status is recorded by CR-BP-94-EXT-08 §2.1. |
+| CR-BP-94-EXT-04 (PR #177, commit 3) | Merged | Profile-aware generator + structural validator + CI integration + evidence-state machine. The generation and validation pipeline; NOT the content-backfill workstream (see CR-BP-94-EXT-08 §5.3). |
+| CR-BP-94-EXT-05 (PR #177, commit 4) | Merged | Decomposition reconciliation + parent-child traceability + catalog-wide coverage report |
+| CR-BP-94-EXT-06 (PR #177, commit 5) | Merged | Pilot completion + catalog-wide rollout + operational-content backfill. EXT-06's scope is now confirmed (per CR-BP-94-EXT-08 §5.2) as the pilot + content backfill + catalogue rollout workstream, not just rollout. |
+| CR-BP-94-EXT-07 (PR #177, commit 1) | Merged | Consolidated README template and Generator V2 + L0 Relationships table emission (v2.1; landed under CR-BP-94-EXT-06). |
+| CR-BP-94-EXT-08 (PR #178) | Proposed | Documentation Extension Roadmap Reconciliation and Deferred-Work Disposition (Initiative A of DEA-PROCESS-ENRICH-000) |
+| CR-BP-94-EXT-09 (PR #178) | Proposed | Operational Documentation Semantic Contract (Initiative A of DEA-PROCESS-ENRICH-000; see `docs/operational-documentation-semantic-contract.md`) |
+| CR-BP-94-EXT-10..24 | Reserved | Initiative B (semantic model; 5 CRs), C (documentation engineering; 3 CRs), D (pilot and backfill; 5 CRs), E (validation and closure; 2 CRs). See `reconciliation/programme-register.json` for the 17-CR register and 7 dependency gates G1..G7. |
 
 ## 13. Cardinal entities: L0 (ProcessContext) and L1 (ProcessGroup)
 
@@ -349,3 +353,41 @@ The L1 pilot record on `dea:group-customer-insight-and-retention` is deferred to
 - **NOT a catalog-wide rollout.** The pilot is a structural validation only; catalog-wide coverage is EXT-06.
 - **NOT a re-opening of CR-BP-93.** The decomposition semantic contract is the source of truth for level mapping; this architecture references it without modifying it.
 - **NOT a count-assertion change.** No canonical records are added or modified.
+
+---
+
+## 15. Operational Documentation Programme (DEA-PROCESS-ENRICH-000; CR-BP-94-EXT-08..24)
+
+The Business Process catalog has 3,723 records, of which only a small fraction carry curated operational documentation (inputs, outputs, roles, business rules, controls, exceptions, metrics). The remaining records carry stable placeholder text in the generated README:
+
+> **Inputs / Outputs**: *(pending; backfill at EXT-04)*
+> **Roles and Responsibilities**: *(pending; backfill at EXT-04)*
+> **Business Rules and Controls**: *(pending; backfill at EXT-04)*
+
+The placeholder text was a design assumption from CR-BP-94-EXT-07: it implied that EXT-04 (the validation pipeline) would also perform the content backfill. In practice, the validation pipeline and the content backfill are **distinct workstreams**:
+
+- **EXT-04** (the generation and validation pipeline) detects empty sections and reports them as DOC-016..020 findings. It is a structural check, not a content authoring workstream.
+- **EXT-06** (the pilot + content backfill + catalogue rollout) is the workstream that resolves findings requiring substantive business or operational knowledge.
+
+The `OpenDEA Business Process Operational Documentation and Catalogue Enrichment programme` (charter `docs/operational-documentation-programme/DEA-PROCESS-ENRICH-000-programme-charter.md`) is the formal roadmap for closing the documentation gap. It is broken into **17 CRs across 5 initiatives**:
+
+| Initiative | CRs | Slice |
+|---|---|---|
+| A: Governance and architectural reconciliation | EXT-08, EXT-09 | Documentation + semantic contract (no schema changes) |
+| B: Operational semantic model | EXT-10, EXT-11, EXT-12, EXT-13, EXT-14 | Schema alignment + L0-L4 profiles + interface/role/rules models |
+| C: Documentation engineering | EXT-15, EXT-16, EXT-17 | Evidence + authoring + tooling |
+| D: Pilot and backfill | EXT-18, EXT-19, EXT-20, EXT-21, EXT-22 | Pilot then L2/L3/L4/L0-L1 enrichment |
+| E: Validation and closure | EXT-23, EXT-24 | OPR-001..020 gates + continuous governance |
+
+The 17-CR register, the existing-CRs disposition table, and the 7 dependency gates (G1..G7) live at `reconciliation/programme-register.json`. The normative semantic contract (trigger, precondition, input, output, outcome, interface, dependency, role, responsibility, accountability, business rule, control, exception, evidence, metric, etc.) lives at `docs/operational-documentation-semantic-contract.md`.
+
+**This slice is NOT** the operational content backfill. The README placeholder text will be re-issued under CR-BP-94-EXT-11 (operational documentation profiles) with explicit `not_started` / `in_progress` / `approved` / `not_applicable` / `unknown` / `inherited` / `deferred` states per the semantic contract. Until then, the placeholder text remains the controlled, validator-recognised convention.
+
+See also:
+
+- `docs/operational-documentation-programme/DEA-PROCESS-ENRICH-000-programme-charter.md` (the 17-CR programme charter)
+- `docs/operational-documentation-programme/CR-BP-94-EXT-08-09-detailed-design.md` (the detailed design for EXT-08 and EXT-09)
+- `docs/operational-documentation-semantic-contract.md` (the normative semantic contract)
+- `reconciliation/programme-register.json` (the 17-CR register + 7 dependency gates)
+- `change-requests/CR-BP-94-EXT-08-documentation-roadmap-reconciliation.md` (the EXT-08 CR)
+- `change-requests/CR-BP-94-EXT-09-operational-documentation-semantic-contract.md` (the EXT-09 CR)
