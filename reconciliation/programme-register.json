@@ -59,15 +59,14 @@
       "title": "Operational Entity Schema Extension",
       "initiative": "B: Operational semantic model",
       "status": "reserved",
-      "implementation_status": "not started",
-      "scope_kind": "schema-extension (touches schemas/entities/)",
+      "implementation_status": "drafted in this PR (PR #179); inventory + test only; no schema changes",
+      "scope_kind": "schema-inventory (no schema change; documentation + regression test)",
       "touches_schemas": true,
       "touches_templates": true,
       "touches_scripts": false,
       "dependencies": [
-        "CR-BP-94-EXT-09",
-        "CR-BP-96",
-        "CR-BP-97"
+        "CR-BP-94-EXT-08",
+        "CR-BP-94-EXT-09"
       ],
       "successors": [
         "CR-BP-94-EXT-11",
@@ -76,83 +75,93 @@
         "CR-BP-94-EXT-14",
         "CR-BP-94-EXT-15"
       ],
-      "path": null
+      "path": "change-requests/CR-BP-94-EXT-10-operational-entity-schema-alignment.md"
     },
     {
       "id": "CR-BP-94-EXT-11",
       "title": "Operational Documentation Profiles",
       "initiative": "B: Operational semantic model",
       "status": "reserved",
-      "implementation_status": "not started",
+      "implementation_status": "drafted (CR doc only); awaiting Proceed",
       "scope_kind": "profile-registry (touches scripts/check_documentation_profile.py)",
       "touches_schemas": false,
       "touches_templates": true,
       "touches_scripts": true,
       "dependencies": [
+        "CR-BP-94-EXT-08",
         "CR-BP-94-EXT-09",
         "CR-BP-94-EXT-10"
       ],
       "successors": [
-        "CR-BP-94-EXT-18"
+        "CR-BP-94-EXT-12",
+        "CR-BP-94-EXT-13",
+        "CR-BP-94-EXT-14"
       ],
-      "path": null
+      "path": "change-requests/cr-bp-94-ext-11-decomposition-level-documentation-profiles.md"
     },
     {
       "id": "CR-BP-94-EXT-12",
       "title": "Process Inputs, Outputs and Interface Semantics",
       "initiative": "B: Operational semantic model",
       "status": "reserved",
-      "implementation_status": "not started",
+      "implementation_status": "drafted (CR doc only); awaiting Proceed",
       "scope_kind": "schema-extension (touches templates/business-process.yaml)",
       "touches_schemas": true,
       "touches_templates": true,
       "touches_scripts": false,
       "dependencies": [
-        "CR-BP-94-EXT-10"
+        "CR-BP-94-EXT-08",
+        "CR-BP-94-EXT-09",
+        "CR-BP-94-EXT-10",
+        "CR-BP-94-EXT-11"
       ],
       "successors": [
-        "CR-BP-94-EXT-19"
+        "CR-BP-94-EXT-15"
       ],
-      "path": null
+      "path": "change-requests/cr-bp-94-ext-12-process-inputs-outputs-and-interface-semantics.md"
     },
     {
       "id": "CR-BP-94-EXT-13",
       "title": "Process Responsibility and Accountability Model",
       "initiative": "B: Operational semantic model",
       "status": "reserved",
-      "implementation_status": "not started",
+      "implementation_status": "drafted (CR doc only); awaiting Proceed",
       "scope_kind": "schema-extension (touches templates/business-process.yaml + activity.yaml)",
       "touches_schemas": true,
       "touches_templates": true,
       "touches_scripts": false,
       "dependencies": [
-        "CR-BP-94-EXT-10"
+        "CR-BP-94-EXT-08",
+        "CR-BP-94-EXT-09",
+        "CR-BP-94-EXT-10",
+        "CR-BP-94-EXT-11"
       ],
       "successors": [
-        "CR-BP-94-EXT-19",
-        "CR-BP-94-EXT-20"
+        "CR-BP-94-EXT-14",
+        "CR-BP-94-EXT-15"
       ],
-      "path": null
+      "path": "change-requests/cr-bp-94-ext-13-process-responsibility-and-accountability-model.md"
     },
     {
       "id": "CR-BP-94-EXT-14",
       "title": "Business Rules, Controls and Exception Semantics",
       "initiative": "B: Operational semantic model",
       "status": "reserved",
-      "implementation_status": "not started",
+      "implementation_status": "drafted (CR doc only); awaiting Proceed",
       "scope_kind": "schema-extension (touches templates/business-process.yaml)",
       "touches_schemas": true,
       "touches_templates": true,
       "touches_scripts": false,
       "dependencies": [
-        "CR-BP-94-EXT-10"
+        "CR-BP-94-EXT-08",
+        "CR-BP-94-EXT-09",
+        "CR-BP-94-EXT-10",
+        "CR-BP-94-EXT-11"
       ],
       "successors": [
-        "CR-BP-94-EXT-19",
-        "CR-BP-94-EXT-20",
-        "CR-BP-94-EXT-21"
+        "CR-BP-94-EXT-15"
       ],
-      "path": null
+      "path": "change-requests/cr-bp-94-ext-14-business-rules-controls-and-exception-semantics.md"
     },
     {
       "id": "CR-BP-94-EXT-15",
@@ -425,6 +434,50 @@
     "ai_assistance": "AI-generated content must be explicitly identified and human-reviewed; CR-BP-94-EXT-16 will govern the methodology."
   },
   "gates": {
+    "G1_schema_aligned": {
+      "requires": [
+        "CR-BP-94-EXT-10"
+      ],
+      "status": "in_progress (PR #179 lands the inventory + test; closes G1)",
+      "description": "Existing fields reconciled; no duplicate operational structures; L0/L1 not executable; L4 not orchestrating"
+    },
+    "G2_profiles_defined": {
+      "requires": [
+        "CR-BP-94-EXT-11"
+      ],
+      "status": "not_started",
+      "description": "Five level-specific profiles validated; per-level required/conditional/optional/not_applicable classifications"
+    },
+    "G3_interfaces_traceable": {
+      "requires": [
+        "CR-BP-94-EXT-12"
+      ],
+      "status": "not_started",
+      "description": "Inputs, outputs, transformations, dependencies traceable; L2-L4 applicability; trigger vs precondition vs input distinct"
+    },
+    "G4_accountability_unambiguous": {
+      "requires": [
+        "CR-BP-94-EXT-13"
+      ],
+      "status": "not_started",
+      "description": "Roles and assignments unambiguous within their scopes; AI-agent performer supported; not auto-accountable"
+    },
+    "G5_governance_traceable": {
+      "requires": [
+        "CR-BP-94-EXT-14"
+      ],
+      "status": "not_started",
+      "description": "Rules, controls, exceptions traceable to authoritative sources; rule vs control vs evidence distinct"
+    }
+  },
+  "cross_references": {
+    "dea_metamodel": "CR-BP-93 (decomposition-semantic-contract.md) + ADR-015 (classification reconciliation)",
+    "business_capabilities_repo": "CR-DEA-BC-01..05 (process-capability alignment to be done under CR-BP-94-EXT-12 + EXT-13 cross-references)",
+    "business_objects_repo": "Information objects to be cross-referenced under CR-BP-94-EXT-12 interface semantics",
+    "organisational_units_repo": "Business Functions / Roles to be cross-referenced under CR-BP-94-EXT-13",
+    "information_systems_repo": "System interactions governed separately under CR-IS-CAT-01 series; cross-reference when CR-BP-94-EXT-12 lands"
+  },
+  "programme_gates": {
     "G1_architecture_reconciled": {
       "requires": [
         "CR-BP-94-EXT-08",
@@ -482,11 +535,41 @@
       "status": "not_started"
     }
   },
-  "cross_references": {
-    "dea_metamodel": "CR-BP-93 (decomposition-semantic-contract.md) + ADR-015 (classification reconciliation)",
-    "business_capabilities_repo": "CR-DEA-BC-01..05 (process-capability alignment to be done under CR-BP-94-EXT-12 + EXT-13 cross-references)",
-    "business_objects_repo": "Information objects to be cross-referenced under CR-BP-94-EXT-12 interface semantics",
-    "organisational_units_repo": "Business Functions / Roles to be cross-referenced under CR-BP-94-EXT-13",
-    "information_systems_repo": "System interactions governed separately under CR-IS-CAT-01 series; cross-reference when CR-BP-94-EXT-12 lands"
+  "tranche_gates": {
+    "G1_schema": {
+      "requires": [
+        "CR-BP-94-EXT-10"
+      ],
+      "status": "in_progress (PR #179 lands the inventory + test; closes G1)",
+      "description": "Existing fields reconciled; no duplicate operational structures; L0/L1 not executable; L4 not orchestrating"
+    },
+    "G2_profiles": {
+      "requires": [
+        "CR-BP-94-EXT-11"
+      ],
+      "status": "not_started",
+      "description": "Five level-specific profiles validated; per-level required/conditional/optional/not_applicable classifications"
+    },
+    "G3_interfaces": {
+      "requires": [
+        "CR-BP-94-EXT-12"
+      ],
+      "status": "not_started",
+      "description": "Inputs, outputs, transformations, dependencies traceable; L2-L4 applicability; trigger vs precondition vs input distinct"
+    },
+    "G4_accountability": {
+      "requires": [
+        "CR-BP-94-EXT-13"
+      ],
+      "status": "not_started",
+      "description": "Roles and assignments unambiguous within their scopes; AI-agent performer supported; not auto-accountable"
+    },
+    "G5_governance": {
+      "requires": [
+        "CR-BP-94-EXT-14"
+      ],
+      "status": "not_started",
+      "description": "Rules, controls, exceptions traceable to authoritative sources; rule vs control vs evidence distinct"
+    }
   }
 }
