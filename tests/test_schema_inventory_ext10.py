@@ -171,8 +171,6 @@ GAP_CONCEPTS_NOT_YET_IN_SCHEMA: list[tuple[str, str, str]] = [
     ("L1", "control", "schemas/entities/process-group.schema.json"),
     ("L1", "metric", "schemas/entities/process-group.schema.json"),
     ("L2", "precondition", "templates/business-process.yaml"),
-    ("L2", "interface", "templates/business-process.yaml"),
-    ("L2", "dependency", "templates/business-process.yaml"),
     ("L2", "accountability", "templates/business-process.yaml"),
     ("L2", "business_rule", "templates/business-process.yaml"),
     ("L2", "control", "templates/business-process.yaml"),
@@ -265,6 +263,10 @@ class TestSchemaInventoryEXT10(unittest.TestCase):
                               f"RETAINED field {field!r} (level {level}) is missing from {rel_path}")
 
     # Additive-first: gap concepts are NOT prematurely in the schema.
+    # EXT-12 (PR #181) closes the `interface` and `dependency` routed gaps
+    # (these are now legitimately in the L2 template). EXT-12 also adds
+    # `preconditions` and `trigger_type`. The list below mirrors the
+    # EXT-10 inventory's Routed-gap table minus the EXT-12 closures.
     def test_gap_ext09_concepts_are_not_in_schema(self):
         for level, field, rel_path in GAP_CONCEPTS_NOT_YET_IN_SCHEMA:
             with self.subTest(level=level, field=field, path=rel_path):

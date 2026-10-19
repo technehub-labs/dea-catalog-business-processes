@@ -1,0 +1,57 @@
+{
+  "manifest_schema_version": "1",
+  "generated_at": "2026-10-19",
+  "generator": "scripts/check_inputs_outputs_interfaces_ext12.py",
+  "parent_cr": "CR-BP-94-EXT-12",
+  "catalog_root": "/home/hermes/dea-catalog-processes",
+  "summary": {
+    "total_records": 3882,
+    "total_findings": 0,
+    "by_rule": {}
+  },
+  "findings": [],
+  "controlled_vocabularies": {
+    "input_types": [
+      "business_object",
+      "decision",
+      "document",
+      "external_data",
+      "information",
+      "material",
+      "prior_process_output",
+      "request",
+      "transaction"
+    ],
+    "output_types": [
+      "business_object",
+      "changed_object",
+      "decision",
+      "document",
+      "information",
+      "report",
+      "service_result"
+    ],
+    "interface_types": [
+      "contractual",
+      "human",
+      "information",
+      "organizational",
+      "physical",
+      "regulatory",
+      "system"
+    ],
+    "dependency_criticality": [
+      "high",
+      "low",
+      "medium"
+    ],
+    "trigger_types": [
+      "condition_driven",
+      "decision_driven",
+      "event_driven",
+      "external_obligation_driven",
+      "request_driven",
+      "time_driven"
+    ]
+  }
+}

@@ -130,6 +130,8 @@ GATES: list[tuple[str, bool, list[str]]] = [
      True, ["python", "scripts/check_decomposition_reconciliation.py", "--catalog-root", "."]),  # CR-BP-94-EXT-05; BLOCKING (CR-BP-94-EXT-06; was advisory before)
     ("[36] Profile Registry (CR-BP-94-EXT-11; PR-001..PR-010)",
      False, ["python", "scripts/check_profile_registry_ext11.py"]),  # CR-BP-94-EXT-11; ADVISORY (PR-180 lands; flipped to blocking under CR-BP-94-EXT-23)
+    ("[37] Inputs, Outputs, Interfaces (CR-BP-94-EXT-12; IT-001..IT-010)",
+     False, ["python", "scripts/check_inputs_outputs_interfaces_ext12.py", "--catalog-root", "."]),  # CR-BP-94-EXT-12; ADVISORY (PR-181 lands; flipped to blocking under CR-BP-94-EXT-23)
 ]
 
 
