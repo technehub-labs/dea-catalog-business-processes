@@ -1,0 +1,70 @@
+{
+  "manifest_schema_version": "1",
+  "generated_at": "2026-10-19",
+  "generator": "scripts/check_business_rules_controls_exceptions_ext14.py",
+  "parent_cr": "CR-BP-94-EXT-14",
+  "catalog_root": "/home/hermes/dea-catalog-processes",
+  "summary": {
+    "total_records": 3882,
+    "total_findings": 0,
+    "by_rule": {}
+  },
+  "findings": [],
+  "controlled_vocabularies": {
+    "rule_sources": [
+      "contractual",
+      "governance",
+      "operational",
+      "regulatory",
+      "sector"
+    ],
+    "rule_maturities": [
+      "approved",
+      "documented",
+      "in_force",
+      "monitored",
+      "proposed",
+      "retired"
+    ],
+    "control_types": [
+      "corrective",
+      "detective",
+      "directive",
+      "preventive"
+    ],
+    "control_automation": [
+      "automated",
+      "manual",
+      "semi_automated"
+    ],
+    "control_frequency": [
+      "annual",
+      "continuous",
+      "daily",
+      "monthly",
+      "on_event",
+      "on_request",
+      "quarterly",
+      "weekly"
+    ],
+    "exception_classifications": [
+      "business",
+      "non_recoverable",
+      "recoverable",
+      "technical"
+    ],
+    "deviation_statuses": [
+      "authorised",
+      "closed",
+      "detected",
+      "escalated",
+      "remediated",
+      "unauthorised"
+    ],
+    "deviation_severities": [
+      "high",
+      "low",
+      "medium"
+    ]
+  }
+}

@@ -134,6 +134,8 @@ GATES: list[tuple[str, bool, list[str]]] = [
      False, ["python", "scripts/check_inputs_outputs_interfaces_ext12.py", "--catalog-root", "."]),  # CR-BP-94-EXT-12; ADVISORY (PR-181 lands; flipped to blocking under CR-BP-94-EXT-23)
     ("[38] Responsibility, Accountability, Roles (CR-BP-94-EXT-13; RA-001..RA-010)",
      False, ["python", "scripts/check_responsibility_accountability_ext13.py", "--catalog-root", "."]),  # CR-BP-94-EXT-13; ADVISORY (PR-182 lands; flipped to blocking under CR-BP-94-EXT-23)
+    ("[39] Business Rules, Controls, Exceptions (CR-BP-94-EXT-14; GO-001..GO-010)",
+     False, ["python", "scripts/check_business_rules_controls_exceptions_ext14.py", "--catalog-root", "."]),  # CR-BP-94-EXT-14; ADVISORY (PR-183 lands; flipped to blocking under CR-BP-94-EXT-23; final tranche gate of the 5-gate semantic-model tranche)
 ]
 
 
