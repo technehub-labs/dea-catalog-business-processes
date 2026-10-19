@@ -1,0 +1,492 @@
+{
+  "$schema": "./schemas/programme-register.schema.json",
+  "register_version": "1",
+  "generated_at": "2026-10-19",
+  "programme_id": "DEA-PROCESS-ENRICH-000",
+  "programme_title": "OpenDEA Business Process Operational Documentation and Catalogue Enrichment",
+  "parent_cr": "CR-BP-94",
+  "target_repository": "technehub-labs/dea-catalog-business-processes",
+  "crs": [
+    {
+      "id": "CR-BP-94-EXT-08",
+      "title": "Documentation Extension Roadmap Reconciliation and Deferred-Work Disposition",
+      "initiative": "A: Governance and architectural reconciliation",
+      "status": "proposed",
+      "implementation_status": "drafted in this PR",
+      "scope_kind": "documentation-only",
+      "touches_schemas": false,
+      "touches_templates": false,
+      "touches_scripts": false,
+      "dependencies": [
+        "CR-BP-94-EXT-01",
+        "CR-BP-94-EXT-04",
+        "CR-BP-94-EXT-05",
+        "CR-BP-94-EXT-06",
+        "CR-BP-94-EXT-07"
+      ],
+      "successors": [
+        "CR-BP-94-EXT-09"
+      ],
+      "path": "change-requests/CR-BP-94-EXT-08-documentation-roadmap-reconciliation.md"
+    },
+    {
+      "id": "CR-BP-94-EXT-09",
+      "title": "Operational Documentation Semantic Contract",
+      "initiative": "A: Governance and architectural reconciliation",
+      "status": "proposed",
+      "implementation_status": "drafted in this PR",
+      "scope_kind": "documentation-only (normative contract)",
+      "touches_schemas": false,
+      "touches_templates": false,
+      "touches_scripts": false,
+      "dependencies": [
+        "CR-BP-94-EXT-08",
+        "CR-BP-93"
+      ],
+      "successors": [
+        "CR-BP-94-EXT-10",
+        "CR-BP-94-EXT-11",
+        "CR-BP-94-EXT-12",
+        "CR-BP-94-EXT-13",
+        "CR-BP-94-EXT-14",
+        "CR-BP-94-EXT-15"
+      ],
+      "path": "change-requests/CR-BP-94-EXT-09-operational-documentation-semantic-contract.md",
+      "associated_document": "docs/operational-documentation-semantic-contract.md"
+    },
+    {
+      "id": "CR-BP-94-EXT-10",
+      "title": "Operational Entity Schema Extension",
+      "initiative": "B: Operational semantic model",
+      "status": "reserved",
+      "implementation_status": "not started",
+      "scope_kind": "schema-extension (touches schemas/entities/)",
+      "touches_schemas": true,
+      "touches_templates": true,
+      "touches_scripts": false,
+      "dependencies": [
+        "CR-BP-94-EXT-09",
+        "CR-BP-96",
+        "CR-BP-97"
+      ],
+      "successors": [
+        "CR-BP-94-EXT-11",
+        "CR-BP-94-EXT-12",
+        "CR-BP-94-EXT-13",
+        "CR-BP-94-EXT-14",
+        "CR-BP-94-EXT-15"
+      ],
+      "path": null
+    },
+    {
+      "id": "CR-BP-94-EXT-11",
+      "title": "Operational Documentation Profiles",
+      "initiative": "B: Operational semantic model",
+      "status": "reserved",
+      "implementation_status": "not started",
+      "scope_kind": "profile-registry (touches scripts/check_documentation_profile.py)",
+      "touches_schemas": false,
+      "touches_templates": true,
+      "touches_scripts": true,
+      "dependencies": [
+        "CR-BP-94-EXT-09",
+        "CR-BP-94-EXT-10"
+      ],
+      "successors": [
+        "CR-BP-94-EXT-18"
+      ],
+      "path": null
+    },
+    {
+      "id": "CR-BP-94-EXT-12",
+      "title": "Process Inputs, Outputs and Interface Semantics",
+      "initiative": "B: Operational semantic model",
+      "status": "reserved",
+      "implementation_status": "not started",
+      "scope_kind": "schema-extension (touches templates/business-process.yaml)",
+      "touches_schemas": true,
+      "touches_templates": true,
+      "touches_scripts": false,
+      "dependencies": [
+        "CR-BP-94-EXT-10"
+      ],
+      "successors": [
+        "CR-BP-94-EXT-19"
+      ],
+      "path": null
+    },
+    {
+      "id": "CR-BP-94-EXT-13",
+      "title": "Process Responsibility and Accountability Model",
+      "initiative": "B: Operational semantic model",
+      "status": "reserved",
+      "implementation_status": "not started",
+      "scope_kind": "schema-extension (touches templates/business-process.yaml + activity.yaml)",
+      "touches_schemas": true,
+      "touches_templates": true,
+      "touches_scripts": false,
+      "dependencies": [
+        "CR-BP-94-EXT-10"
+      ],
+      "successors": [
+        "CR-BP-94-EXT-19",
+        "CR-BP-94-EXT-20"
+      ],
+      "path": null
+    },
+    {
+      "id": "CR-BP-94-EXT-14",
+      "title": "Business Rules, Controls and Exception Semantics",
+      "initiative": "B: Operational semantic model",
+      "status": "reserved",
+      "implementation_status": "not started",
+      "scope_kind": "schema-extension (touches templates/business-process.yaml)",
+      "touches_schemas": true,
+      "touches_templates": true,
+      "touches_scripts": false,
+      "dependencies": [
+        "CR-BP-94-EXT-10"
+      ],
+      "successors": [
+        "CR-BP-94-EXT-19",
+        "CR-BP-94-EXT-20",
+        "CR-BP-94-EXT-21"
+      ],
+      "path": null
+    },
+    {
+      "id": "CR-BP-94-EXT-15",
+      "title": "Evidence, Provenance and Confidence Framework",
+      "initiative": "C: Documentation engineering",
+      "status": "reserved",
+      "implementation_status": "not started",
+      "scope_kind": "schema-extension + evidence-validation script",
+      "touches_schemas": true,
+      "touches_templates": true,
+      "touches_scripts": true,
+      "dependencies": [
+        "CR-BP-94-EXT-09"
+      ],
+      "successors": [
+        "CR-BP-94-EXT-16",
+        "CR-BP-94-EXT-23"
+      ],
+      "path": null
+    },
+    {
+      "id": "CR-BP-94-EXT-16",
+      "title": "Operational Authoring and Research Methodology",
+      "initiative": "C: Documentation engineering",
+      "status": "reserved",
+      "implementation_status": "not started",
+      "scope_kind": "documentation-only (authoring guide)",
+      "touches_schemas": false,
+      "touches_templates": false,
+      "touches_scripts": false,
+      "dependencies": [
+        "CR-BP-94-EXT-09",
+        "CR-BP-94-EXT-12",
+        "CR-BP-94-EXT-13",
+        "CR-BP-94-EXT-14",
+        "CR-BP-94-EXT-15"
+      ],
+      "successors": [
+        "CR-BP-94-EXT-18",
+        "CR-BP-94-EXT-19"
+      ],
+      "path": null
+    },
+    {
+      "id": "CR-BP-94-EXT-17",
+      "title": "Enrichment Tooling and Backfill Orchestration",
+      "initiative": "C: Documentation engineering",
+      "status": "reserved",
+      "implementation_status": "not started",
+      "scope_kind": "script-extension (new tools under scripts/enrichment/)",
+      "touches_schemas": false,
+      "touches_templates": false,
+      "touches_scripts": true,
+      "dependencies": [
+        "CR-BP-94-EXT-12",
+        "CR-BP-94-EXT-13",
+        "CR-BP-94-EXT-14",
+        "CR-BP-94-EXT-15",
+        "CR-BP-94-EXT-16"
+      ],
+      "successors": [
+        "CR-BP-94-EXT-18",
+        "CR-BP-94-EXT-19",
+        "CR-BP-94-EXT-20",
+        "CR-BP-94-EXT-21",
+        "CR-BP-94-EXT-22"
+      ],
+      "path": null
+    },
+    {
+      "id": "CR-BP-94-EXT-18",
+      "title": "Operational Documentation Pilot",
+      "initiative": "D: Pilot and backfill execution",
+      "status": "reserved",
+      "implementation_status": "not started",
+      "scope_kind": "data-only (pilot record enrichment; Customer Insight and Retention L2)",
+      "touches_schemas": false,
+      "touches_templates": false,
+      "touches_scripts": false,
+      "dependencies": [
+        "CR-BP-94-EXT-11",
+        "CR-BP-94-EXT-16",
+        "CR-BP-94-EXT-17"
+      ],
+      "successors": [
+        "CR-BP-94-EXT-19",
+        "CR-BP-94-EXT-20",
+        "CR-BP-94-EXT-21",
+        "CR-BP-94-EXT-22"
+      ],
+      "path": null
+    },
+    {
+      "id": "CR-BP-94-EXT-19",
+      "title": "L2 Business Process Catalogue Backfill",
+      "initiative": "D: Pilot and backfill execution",
+      "status": "reserved",
+      "implementation_status": "not started",
+      "scope_kind": "data-only (L2 YAML enrichment across 7 ECF domains)",
+      "touches_schemas": false,
+      "touches_templates": false,
+      "touches_scripts": false,
+      "dependencies": [
+        "CR-BP-94-EXT-12",
+        "CR-BP-94-EXT-13",
+        "CR-BP-94-EXT-14",
+        "CR-BP-94-EXT-16",
+        "CR-BP-94-EXT-17",
+        "CR-BP-94-EXT-18"
+      ],
+      "successors": [
+        "CR-BP-94-EXT-20",
+        "CR-BP-94-EXT-21"
+      ],
+      "path": null
+    },
+    {
+      "id": "CR-BP-94-EXT-20",
+      "title": "L3 Activity Catalogue Backfill",
+      "initiative": "D: Pilot and backfill execution",
+      "status": "reserved",
+      "implementation_status": "not started",
+      "scope_kind": "data-only (L3 Activity YAML enrichment)",
+      "touches_schemas": false,
+      "touches_templates": false,
+      "touches_scripts": false,
+      "dependencies": [
+        "CR-BP-94-EXT-12",
+        "CR-BP-94-EXT-13",
+        "CR-BP-94-EXT-14",
+        "CR-BP-94-EXT-16",
+        "CR-BP-94-EXT-17",
+        "CR-BP-94-EXT-18",
+        "CR-BP-94-EXT-19"
+      ],
+      "successors": [
+        "CR-BP-94-EXT-21"
+      ],
+      "path": null
+    },
+    {
+      "id": "CR-BP-94-EXT-21",
+      "title": "L4 Task Catalogue Backfill",
+      "initiative": "D: Pilot and backfill execution",
+      "status": "reserved",
+      "implementation_status": "not started",
+      "scope_kind": "data-only (L4 Task YAML enrichment, when canonical L4 records exist)",
+      "touches_schemas": false,
+      "touches_templates": false,
+      "touches_scripts": false,
+      "dependencies": [
+        "CR-BP-94-EXT-12",
+        "CR-BP-94-EXT-13",
+        "CR-BP-94-EXT-14",
+        "CR-BP-94-EXT-16",
+        "CR-BP-94-EXT-17",
+        "CR-BP-94-EXT-18",
+        "CR-BP-94-EXT-19",
+        "CR-BP-94-EXT-20"
+      ],
+      "successors": [
+        "CR-BP-94-EXT-22"
+      ],
+      "path": null
+    },
+    {
+      "id": "CR-BP-94-EXT-22",
+      "title": "L0/L1 Context and Process Group Backfill",
+      "initiative": "D: Pilot and backfill execution",
+      "status": "reserved",
+      "implementation_status": "not started",
+      "scope_kind": "data-only (L0 ProcessContext + L1 ProcessGroup enrichment, sequenced after L2-L4)",
+      "touches_schemas": false,
+      "touches_templates": false,
+      "touches_scripts": false,
+      "dependencies": [
+        "CR-BP-94-EXT-19",
+        "CR-BP-94-EXT-20",
+        "CR-BP-94-EXT-21"
+      ],
+      "successors": [
+        "CR-BP-94-EXT-23"
+      ],
+      "path": null
+    },
+    {
+      "id": "CR-BP-94-EXT-23",
+      "title": "Operational Documentation Conformance Gates",
+      "initiative": "E: Validation and conformance",
+      "status": "reserved",
+      "implementation_status": "not started",
+      "scope_kind": "script-extension (OPR-001..020 gates; 3-stage enforcement: advisory -> transitional -> mandatory)",
+      "touches_schemas": false,
+      "touches_templates": false,
+      "touches_scripts": true,
+      "dependencies": [
+        "CR-BP-94-EXT-19",
+        "CR-BP-94-EXT-20",
+        "CR-BP-94-EXT-21",
+        "CR-BP-94-EXT-22"
+      ],
+      "successors": [
+        "CR-BP-94-EXT-24"
+      ],
+      "path": null
+    },
+    {
+      "id": "CR-BP-94-EXT-24",
+      "title": "Catalogue Closure and Continuous Governance",
+      "initiative": "E: Validation and conformance",
+      "status": "reserved",
+      "implementation_status": "not started",
+      "scope_kind": "documentation-only (closure report + governance policy + change-trigger rules)",
+      "touches_schemas": false,
+      "touches_templates": false,
+      "touches_scripts": false,
+      "dependencies": [
+        "CR-BP-94-EXT-23"
+      ],
+      "successors": [],
+      "path": null
+    }
+  ],
+  "existing_crs_disposition": {
+    "CR-BP-94-EXT-01": {
+      "title": "Documentation Architecture (L2/L3/L4)",
+      "status": "merged (PR #137)",
+      "disposition": "retain as foundational architecture; superseded by EXT-07 for the consolidated template"
+    },
+    "CR-BP-94-EXT-01a": {
+      "title": "L0/L1 Documentation Profile Additions",
+      "status": "merged",
+      "disposition": "retain as cardinal-entity profile extension; covers L0 ProcessContext + L1 ProcessGroup"
+    },
+    "CR-BP-94-EXT-02": {
+      "title": "README Profile and Template Standard",
+      "status": "historical",
+      "disposition": "treat as historical generator design superseded by CR-BP-94-EXT-07"
+    },
+    "CR-BP-94-EXT-03": {
+      "title": "Documentation Manifest and Coverage Model",
+      "status": "reserved; implementation status to be reconciled by CR-BP-94-EXT-08",
+      "disposition": "preserve reserved scope; actual implementation status recorded before EXT-04 dependencies are declared complete"
+    },
+    "CR-BP-94-EXT-04": {
+      "title": "Generation and Validation Pipeline",
+      "status": "merged (PR #177, commit 3)",
+      "disposition": "retain as validation and pipeline work (DOC-016..020, gate [34] BLOCKING); NOT a content-backfill workstream"
+    },
+    "CR-BP-94-EXT-05": {
+      "title": "Decomposition Reconciliation",
+      "status": "merged (PR #177, commit 4)",
+      "disposition": "retain as parent-child documentation reconciliation (DOC-021..025, gate [35] BLOCKING)"
+    },
+    "CR-BP-94-EXT-06": {
+      "title": "Pilot and Catalogue Rollout",
+      "status": "merged (PR #177, commit 5)",
+      "disposition": "retain as the pilot + operational-content backfill + catalogue rollout workstream (NOT just rollout; backfill responsibilities confirmed)"
+    },
+    "CR-BP-94-EXT-07": {
+      "title": "README Template Consolidation and Generator V2",
+      "status": "merged (PR #177, commit 1)",
+      "disposition": "retain as the current consolidated README structure and generation baseline (v2.1 with L0 Relationships table emission)"
+    }
+  },
+  "disposition_rules": {
+    "no_id_reuse": "No existing CR identifier may be reused for a different scope.",
+    "placeholder_text": "The phrase 'pending; backfill at EXT-04' MUST NOT be used to direct operational-content authoring. The placeholder disposition is governed by CR-BP-94-EXT-08 \u00a75.4 and will be re-issued under CR-BP-94-EXT-11.",
+    "level_separation": "L0 metrics and cell-charter fields are separate from L2-L4 operational content; they remain governed by CR-BP-94-EXT-07 + EXT-04 and are not conflated with EXT-12..14 input/output/role/rule models.",
+    "ai_assistance": "AI-generated content must be explicitly identified and human-reviewed; CR-BP-94-EXT-16 will govern the methodology."
+  },
+  "gates": {
+    "G1_architecture_reconciled": {
+      "requires": [
+        "CR-BP-94-EXT-08",
+        "CR-BP-94-EXT-09"
+      ],
+      "status": "in_progress (both CRs drafted; PR #178 pending)"
+    },
+    "G2_model_approved": {
+      "requires": [
+        "CR-BP-94-EXT-10",
+        "CR-BP-94-EXT-11",
+        "CR-BP-94-EXT-12",
+        "CR-BP-94-EXT-13",
+        "CR-BP-94-EXT-14",
+        "CR-BP-94-EXT-15"
+      ],
+      "status": "not_started"
+    },
+    "G3_authoring_evidence_ready": {
+      "requires": [
+        "CR-BP-94-EXT-12",
+        "CR-BP-94-EXT-13",
+        "CR-BP-94-EXT-14",
+        "CR-BP-94-EXT-15",
+        "CR-BP-94-EXT-16"
+      ],
+      "status": "not_started"
+    },
+    "G4_tooling_ready": {
+      "requires": [
+        "CR-BP-94-EXT-17"
+      ],
+      "status": "not_started"
+    },
+    "G5_pilot_approved": {
+      "requires": [
+        "CR-BP-94-EXT-18"
+      ],
+      "status": "not_started"
+    },
+    "G6_catalogue_backfill_complete": {
+      "requires": [
+        "CR-BP-94-EXT-19",
+        "CR-BP-94-EXT-20",
+        "CR-BP-94-EXT-21",
+        "CR-BP-94-EXT-22"
+      ],
+      "status": "not_started"
+    },
+    "G7_governance_closure": {
+      "requires": [
+        "CR-BP-94-EXT-23",
+        "CR-BP-94-EXT-24"
+      ],
+      "status": "not_started"
+    }
+  },
+  "cross_references": {
+    "dea_metamodel": "CR-BP-93 (decomposition-semantic-contract.md) + ADR-015 (classification reconciliation)",
+    "business_capabilities_repo": "CR-DEA-BC-01..05 (process-capability alignment to be done under CR-BP-94-EXT-12 + EXT-13 cross-references)",
+    "business_objects_repo": "Information objects to be cross-referenced under CR-BP-94-EXT-12 interface semantics",
+    "organisational_units_repo": "Business Functions / Roles to be cross-referenced under CR-BP-94-EXT-13",
+    "information_systems_repo": "System interactions governed separately under CR-IS-CAT-01 series; cross-reference when CR-BP-94-EXT-12 lands"
+  }
+}

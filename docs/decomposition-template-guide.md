@@ -125,6 +125,18 @@ A Reconnaissance slice (e.g. CR-BP-92) is a Process Catalog-layer CR with prose-
 
 When a downstream slice (e.g. CR-BP-95 for PG-009/010) adds a new OPTIONAL field to a schema, the existing canonical records remain conformant without that field. Backfill of OPTIONAL fields across the existing record population is the work of a separate reconciliation slice (CR-BP-99 or a dedicated enrichment tranche), NOT of the schema-extension slice.
 
+### Operational content backfill is NOT governed by EXT-04
+
+The README template (per CR-BP-94-EXT-07) emits the placeholder text `(pending; backfill at EXT-04)` in the `Inputs / Outputs`, `Roles and Responsibilities`, and `Business Rules and Controls` sections when the source YAML record has no curated operational content. This placeholder text is a **stable generator convention** that the EXT-04 structural validator recognises as a backfill slot, not as a missing section.
+
+**The placeholder does NOT mean that EXT-04 will perform the content backfill.** EXT-04 is the generation and validation pipeline; it detects empty sections and reports them as DOC-016..020 findings. The content backfill is a separate workstream:
+
+- **EXT-06** (pilot + content backfill + catalogue rollout) is the workstream that resolves findings requiring substantive business or operational knowledge. EXT-06's scope was confirmed by CR-BP-94-EXT-08 §5.2 to include the operational content backfill (not just rollout).
+- The **OpenDEA Business Process Operational Documentation and Catalogue Enrichment programme** (charter `docs/operational-documentation-programme/DEA-PROCESS-ENRICH-000-programme-charter.md`; 17 CRs across 5 initiatives) is the formal roadmap. The 17-CR register and 7 dependency gates live at `reconciliation/programme-register.json`.
+- The **Operational Documentation Semantic Contract** (`docs/operational-documentation-semantic-contract.md`; CR-BP-94-EXT-09) defines the normative meaning of inputs, outputs, roles, responsibilities, business rules, controls, exceptions, and the related L0-L4 documentation states.
+
+**Until the operational documentation programme lands (post-EXT-09), the placeholder text remains the controlled convention.** Re-issuance with explicit `not_started` / `in_progress` / `approved` / `not_applicable` / `unknown` / `inherited` / `deferred` states (per the semantic contract §10) is governed by **CR-BP-94-EXT-11** (operational documentation profiles).
+
 ## Validation flow
 
 After authoring a record:
