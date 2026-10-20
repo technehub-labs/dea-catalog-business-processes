@@ -247,6 +247,20 @@ def _check_es_003_relationship(record: dict, registry: dict, record_id: str, exc
                     findings.append({"rule": "ES-003", "record_id": record_id,
                                      "diagnostic": f"relationships[{i}]: identity_scope {target_scope!r} not in {constraints['target_identity_scopes']}"})
 
+        # RECONCILED (IMP-001): target_id_prefixes constrains the target's
+        # canonical id namespace. Used by relationship types whose target
+        # lives in an external catalogue (`serves` -> `ecf:`), where the
+        # population carries the namespace in the id itself and does not
+        # declare a separate identity_scope field. A type may declare both
+        # mechanisms; each is checked independently when present.
+        if "target_id_prefixes" in constraints:
+            target_id = str(rel.get("target_id", ""))
+            allowed_prefixes = constraints["target_id_prefixes"]
+            if not any(target_id.startswith(p) for p in allowed_prefixes):
+                if not _is_excepted(record_id, "ES-003", exceptions):
+                    findings.append({"rule": "ES-003", "record_id": record_id,
+                                     "diagnostic": f"relationships[{i}]: target_id {target_id!r} does not match any canonical prefix in {allowed_prefixes}"})
+
     return findings
 
 
@@ -370,6 +384,24 @@ def _walk_records(repo_root: Path, registry: dict) -> list:
     if EXCEPTIONS_PATH is not None:
         skip_basenames.add(EXCEPTIONS_PATH.name)
     skip_dirs = {".git", "node_modules", "__pycache__", ".github", "scripts", "tests"}
+    # RECONCILED (IMP-001): research deposits are NOT canonical entities.
+    # `entities/v1-alpha/<cell>/<group>/<bp>/research/*.yaml` holds candidate
+    # universes and admission depositions: research artefacts that live inside
+    # the entities glob but carry no canonical id, no envelope and no lifecycle.
+    # Before this exclusion ES-001 reported "missing id" on all 158 research
+    # deposits: a wrong-population scan, not 158 malformed entities. The
+    # deposits stay on disk untouched; they are simply not subject to the
+    # entity-envelope contract.
+    #
+    # `documentation/` is excluded for the same reason: its one member,
+    # `.../Operate-Customer-Retention-Programs/documentation/manifest.yaml`, is
+    # the CR-BP-94-EXT-01 documentation-status index. Its header states it
+    # deliberately mirrors the parent BP's top-level identity ("The top-level
+    # identity fields mirror the parent BP so the catalog schema validator
+    # accepts the file"), so ES-001 flagged it as a duplicate id against
+    # processes:process-pr-improve-t6uvan. A documentation index that
+    # intentionally mirrors its parent is not a second entity.
+    skip_dirs |= {"research", "discovery", "reports", "templates", "documentation"}
 
     for path_glob in file_globs:
         literal_prefix = path_glob.split("*", 1)[0]

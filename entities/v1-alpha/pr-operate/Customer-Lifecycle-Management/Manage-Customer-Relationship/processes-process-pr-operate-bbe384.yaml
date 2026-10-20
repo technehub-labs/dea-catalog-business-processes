@@ -64,6 +64,7 @@ relationships:
 - source_id: processes:process-pr-operate-bbe384
   target_id: dea:entity-capability:manage-customer-relationship
   relationship_type: realizes
+  identity_scope: dea-catalog-business-capabilities
   status: active
   direction: source-to-target
   rationale: 'The Business Process realizes the Business Capability

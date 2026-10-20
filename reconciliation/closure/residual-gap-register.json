@@ -8,48 +8,60 @@
       "description": "[1] validate-process-entries rc=3 (schema-level)",
       "affected_requirement": "EXT-26 (legacy)",
       "affected_entity": "the process-entry schema",
-      "impact": "blocks CI on every push until resolved",
+      "impact": "RESOLVED: the gate is CONFORMANT; the blocking failure no longer contributes to the conformance verdict.",
       "severity": "high",
       "owner": "GOV-007 (Conformance Maintainer)",
       "proposed_action": "diagnose the rc=3 (argparse error or schema mismatch) and remediate",
-      "target_date": "2026-11-30",
-      "disposition": "requires_structural_remediation"
+      "target_date": "closed 2026-10-21",
+      "disposition": "fixed",
+      "remediation_note": "REMEDIATED (IMP-001, this slice). Two defects: (a) CATALOG.yaml was stale against the 17-CR tree; regenerated with scripts/regenerate_catalog.py (3,723 entries, same count, last_modified + open_change_requests 115->135 updated). (b) The staleness error message named tools/regenerate_catalog.py; the script is at scripts/regenerate_catalog.py. Both occurrences corrected, so the remediation hint now resolves. The 14 CR Status WARNs are advisory (informational CR-metadata parsing) and were NOT remediated; they are recorded as IMP-011.",
+      "remediated_in": "IMP-001 (PR #195)",
+      "remediated_on": "2026-10-21"
     },
     {
       "gap_id": "GAP-002",
       "description": "[26] Reference Embargo (23 findings in scripts/check_profile_registry_ext11.py + validate_readme_structure.py)",
       "affected_requirement": "EXT-26 (legacy)",
       "affected_entity": "scripts/check_profile_registry_ext11.py + validate_readme_structure.py",
-      "impact": "blocking on 23 embargoed references",
+      "impact": "RESOLVED: the gate is CONFORMANT; the blocking failure no longer contributes to the conformance verdict.",
       "severity": "high",
       "owner": "GOV-007 (Conformance Maintainer)",
       "proposed_action": "review and approve the references under CR-BP-112, or remove them",
-      "target_date": "2026-11-30",
-      "disposition": "requires_structural_remediation"
+      "target_date": "closed 2026-10-21",
+      "disposition": "fixed",
+      "remediation_note": "REMEDIATED (IMP-001, this slice). All 23 findings were false positives: the embargo term list contains the token 'sid', and the \\bsid\\b word-boundary regex matched the local variable `sid` (meaning section-id) in 3 EXT-11 files. Fixed at the SOURCE by renaming the variable to `section_id` (23 occurrences: 11 in scripts/check_profile_registry_ext11.py, 4 in scripts/validate_readme_structure.py, 8 in tests/test_profile_registry_ext11.py) rather than weakening the rule. The embargo pattern is UNCHANGED and still fires on genuine references; probe-verified: a document containing 'SID' uppercase, 'eTOM' and 'Frameworx' each still produces an EMB-001 finding.",
+      "remediated_in": "IMP-001 (PR #195)",
+      "remediated_on": "2026-10-21"
     },
     {
       "gap_id": "GAP-003",
       "description": "[30] README Consistency (1 stale README at entities/v1-alpha/pr-improve/Customer-Insight-and-Retention/README.md)",
       "affected_requirement": "EXT-06 (legacy)",
       "affected_entity": "Customer-Insight-and-Retention/README.md",
-      "impact": "blocking on a single stale README",
+      "impact": "RESOLVED: the gate is CONFORMANT; the blocking failure no longer contributes to the conformance verdict.",
       "severity": "medium",
       "owner": "GOV-004 (Entity Maintainer)",
       "proposed_action": "regenerate the README from the canonical entity yaml",
-      "target_date": "2026-11-15",
-      "disposition": "requires_structural_remediation"
+      "target_date": "closed 2026-10-21",
+      "disposition": "fixed",
+      "remediation_note": "REMEDIATED (IMP-001, this slice). The single RDM-001 finding (entities/v1-alpha/pr-improve/Customer-Insight-and-Retention/README.md stale) was remediated by running the generator (scripts/generate_readmes.py --scope ... --force), not by hand-editing: 1 file changed, 1 line inserted, the other 25 READMEs in scope were already generator-current.",
+      "remediated_in": "IMP-001 (PR #195)",
+      "remediated_on": "2026-10-21"
     },
     {
       "gap_id": "GAP-004",
       "description": "[33] Entity System (ES-002 envelope field gaps)",
       "affected_requirement": "EXT-29/EXT-33 (legacy)",
       "affected_entity": "entity envelopes (the metadata block)",
-      "impact": "blocking on the envelope-field validator",
+      "impact": "RESOLVED: the gate is CONFORMANT; the blocking failure no longer contributes to the conformance verdict.",
       "severity": "high",
       "owner": "GOV-007 (Conformance Maintainer)",
       "proposed_action": "extend the validator to recognise the canonical envelope shape, or migrate the records",
-      "target_date": "2026-11-30",
-      "disposition": "requires_structural_remediation"
+      "target_date": "closed 2026-10-21",
+      "disposition": "fixed",
+      "remediation_note": "REMEDIATED (IMP-001, this slice). 8,740 findings -> 0, in three parts, each a class-correct fix rather than a weakened check. (a) STALE REQUIREMENT (8,431 ES-002): the registry demanded a nested `lifecycle:` block and a `provenance:` block; NEITHER EXISTS in any canonical schema (verified absent from all 5 schemas' properties and required lists), and all 3,724 canonical records carry the flat `lifecycle_status`. The registry predated EXT-10's canonicalisation. Reconciled each profile to its canonical schema's own required fields plus the siblings the live population carries on 100% of records; lifecycle_state_field moved from lifecycle.status to lifecycle_status. provenance is NOT demanded (EXT-15/16 provenance is a tracked backfill under DFR-001/002/003; demanding it here would manufacture a second gate for the same work). (b) WRONG-POPULATION SCAN (158 ES-001): all 158 were research/l3-candidate-universe.yaml deposits and 1 was documentation/manifest.yaml (a CR-BP-94-EXT-01 documentation index whose header states it deliberately mirrors its parent BP's identity). research/, documentation/, discovery/, reports/ and templates/ added to the walk's skip set; the artefacts stay on disk untouched. (c) STALE VOCABULARY (151 ES-003): `serves` was missing from the canonical_types whitelist although 150 live relationship entries across 141 records use it to target the `ecf:` namespace. Added `serves` with a NEW target_id_prefixes constraint mechanism (the population carries the namespace in the target id and declares no identity_scope field). PLUS 1 REAL DATA DEFECT FIXED: processes:process-pr-operate-bbe384's `realizes` relationship targeted a business capability without the mandated identity_scope declaration (required by schemas/entities/_template.yaml and reconciliation/cross-catalog-resolution.yaml rule IS-006/RS-004). Added identity_scope: dea-catalog-business-capabilities. OVER-NARROWING VERIFIED: 8 probe cases confirm ES-002 still fires on a Task missing canonical required fields (11 findings) and on an empty envelope (13), and accepts a fully conformant Task (0); ES-003 still fires on the forbidden type 'part-of', on a non-canonical type, on a serves target outside the ecf: namespace, and on a serves emitted by the wrong source type; and accepts a correct serves (Process -> ecf:).",
+      "remediated_in": "IMP-001 (PR #195)",
+      "remediated_on": "2026-10-21"
     },
     {
       "gap_id": "GAP-005",
@@ -145,7 +157,8 @@
       "owner": "GOV-009 (Governance Authority)",
       "proposed_action": "publish the AI-assisted maintenance policy under governance/",
       "target_date": "2026-12-31",
-      "disposition": "awaiting_owner_review"
+      "disposition": "awaiting_owner_review",
+      "remediation_note": "OPEN. Not in scope for IMP-001 (this slice fixed the 4 pre-existing BLOCKING gate failures). The AI-assisted maintenance policy remains to be published."
     }
   ]
 }

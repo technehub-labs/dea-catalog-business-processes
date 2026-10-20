@@ -141,10 +141,10 @@ class TestProfileRegistryEXT11(unittest.TestCase):
                 if not isinstance(sections, list):
                     continue
                 for section in sections:
-                    sid = section.get("id") if isinstance(section, dict) else section
-                    with self.subTest(level=level_key, section_key=section_key, sid=sid):
-                        self.assertNotIn(sid, EXECUTABLE_SECTION_IDS,
-                                         f"PR-006: {level_key}.{section_key} has executable section {sid!r}")
+                    section_id = section.get("id") if isinstance(section, dict) else section
+                    with self.subTest(level=level_key, section_key=section_key, section_id=section_id):
+                        self.assertNotIn(section_id, EXECUTABLE_SECTION_IDS,
+                                         f"PR-006: {level_key}.{section_key} has executable section {section_id!r}")
 
     # PR-007
     def test_l4_no_workflow_orchestration_sections(self):
@@ -156,10 +156,10 @@ class TestProfileRegistryEXT11(unittest.TestCase):
             if not isinstance(sections, list):
                 continue
             for section in sections:
-                sid = section.get("id") if isinstance(section, dict) else section
-                with self.subTest(section_key=section_key, sid=sid):
-                    self.assertNotIn(sid, WORKFLOW_ORCHESTRATION_SECTION_IDS,
-                                     f"PR-007: l4_task.{section_key} has workflow section {sid!r}")
+                section_id = section.get("id") if isinstance(section, dict) else section
+                with self.subTest(section_key=section_key, section_id=section_id):
+                    self.assertNotIn(section_id, WORKFLOW_ORCHESTRATION_SECTION_IDS,
+                                     f"PR-007: l4_task.{section_key} has workflow section {section_id!r}")
 
     # PR-008
     def test_retired_placeholder_reissued_with_ext09_states(self):

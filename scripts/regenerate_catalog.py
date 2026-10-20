@@ -15,7 +15,7 @@ Exit codes (stable contract):
   3  --check mode: committed CATALOG.yaml is stale
 
 Usage:
-  python tools/regenerate_catalog.py [--catalog-root PATH] [--output PATH] \\
+  python scripts/regenerate_catalog.py [--catalog-root PATH] [--output PATH] \\
       [--check] [--dry-run] [--verbose] [--schema PATH]
 """
 
@@ -722,7 +722,7 @@ def run(argv: list[str] | None = None) -> int:
             print(f"OK: {output_path} is current")
             return 0
         print(
-            f"ERROR: {output_path} is stale; run `python tools/regenerate_catalog.py` to refresh",
+            f"ERROR: {output_path} is stale; run `python scripts/regenerate_catalog.py` to refresh",
             file=sys.stderr,
         )
         return 3

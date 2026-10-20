@@ -197,8 +197,18 @@ def test_registry_relationships_canonical_types():
     mod = _load_module()
     reg = mod._load_registry(REGISTRY)
     types = reg["relationships"]["canonical_types"]
-    assert set(types) == {"composes", "realizes", "specializes"}
+    # `serves` was added by the IMP-001 reconciliation: 150 live relationship
+    # entries across 141 canonical records use it to target the `ecf:`
+    # namespace, and the pre-reconciliation whitelist of three decomposition
+    # types made ES-003 fire on every one of them.
+    assert set(types) == {"composes", "realizes", "specializes", "serves"}
     assert "part-of" in reg["relationships"]["forbidden_types"]
+    # The ecf-targeting type is constrained by canonical id prefix (the
+    # mechanism the live population actually carries), not by a declared
+    # identity_scope field.
+    serves_constraints = reg["relationships"]["type_constraints"]["serves"]
+    assert serves_constraints["target_id_prefixes"] == ["ecf:"]
+    assert serves_constraints["source_types"] == ["Process"]
 
 
 # --------------------------------------------------------------------------- #

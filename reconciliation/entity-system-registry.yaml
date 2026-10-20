@@ -8,30 +8,64 @@ envelope:
     - "entities/v1-alpha/**/*.yaml"
     - "contexts/v1-alpha/**/*.yaml"
   type_field: type
-  # Per-type profiles. The common envelope is the union of all
-  # required fields across the active types; type-specific profiles
-  # add / substitute fields appropriate to the type's purpose.
+  # Per-type profiles. RECONCILED (IMP-001) against the authoritative
+  # canonical schemas in schemas/entities/*.schema.json, which are the
+  # arbiter per CR-BP-EXT-23 REQ-23-04 ("Schema validation must use the
+  # authoritative schemas approved under EXT-10").
+  #
+  # Before this reconciliation every profile demanded a nested
+  # `lifecycle:` block and a `provenance:` block. NEITHER FIELD EXISTS
+  # IN ANY CANONICAL SCHEMA (verified: `lifecycle` and `provenance` are
+  # absent from all 5 schemas' `properties` and from every `required`
+  # list). All 3,724 canonical records carry the flat `lifecycle_status`
+  # field instead. The registry was authored against the pre-EXT-10
+  # envelope and never reconciled when EXT-10 made the JSON Schema
+  # canonical, so ES-002 fired on 100% of the population: a stale
+  # requirement, not a data defect.
+  #
+  # Each profile below now names the fields the canonical schema
+  # actually requires for that type, plus the sibling fields the live
+  # population carries on 100% of records. `provenance` is NOT demanded
+  # here: EXT-15 provenance/EXT-16 authoring is a tracked backfill
+  # (reconciliation/closure/deferred-work-register.json DFR-001/002/003),
+  # not an entity-envelope requirement, and demanding it here would
+  # manufacture a second gate for the same work.
   profiles:
+    # L2 Business Process. There is no dedicated process.schema.json;
+    # the L2 population is governed by its own canonical field set,
+    # which carries `description` (not `definition`) and no `scope`.
     Process:
-      required_fields: [id, type, name, definition, lifecycle, provenance]
-      lifecycle_state_field: lifecycle.status
-      provenance_change_history_field: provenance.change_history
+      required_fields: [id, type, name, description, version, lifecycle_status,
+                        status, process_intent, process_type, trigger, outcome,
+                        ecfConformance, metadata]
+      lifecycle_state_field: lifecycle_status
+    # L1 Process Group. Mirrors schemas/entities/process-group.schema.json.
     ProcessGroup:
-      required_fields: [id, type, name, definition, lifecycle, provenance]
-      lifecycle_state_field: lifecycle.status
-      provenance_change_history_field: provenance.change_history
+      required_fields: [id, type, name, definition, process_context, scope,
+                        outcomes, composes, process_group_kind, status,
+                        lifecycle_status, version]
+      lifecycle_state_field: lifecycle_status
+    # L3 Activity. Mirrors schemas/entities/activity.schema.json, plus the
+    # composes/ecfConformance/metadata siblings the live population carries.
     Activity:
-      required_fields: [id, type, name, definition, lifecycle, provenance]
-      lifecycle_state_field: lifecycle.status
-      provenance_change_history_field: provenance.change_history
+      required_fields: [id, type, name, definition, version,
+                        belongs_to_business_process, cohesion_rationale,
+                        composes, status, lifecycle_status, ecfConformance,
+                        metadata]
+      lifecycle_state_field: lifecycle_status
+    # L4 Task. Mirrors schemas/entities/task.schema.json, plus the
+    # boundary/evidence/responsibility siblings the live population carries.
     Task:
-      required_fields: [id, type, name, definition, lifecycle, provenance]
-      lifecycle_state_field: lifecycle.status
-      provenance_change_history_field: provenance.change_history
+      required_fields: [id, type, name, definition, version, belongs_to_activity,
+                        trigger, outcome, boundary, responsibility, evidence,
+                        status, lifecycle_status, ecfConformance, metadata]
+      lifecycle_state_field: lifecycle_status
+    # L1 Process Scope. Mirrors schemas/entities/process-scope.schema.json.
     ProcessScope:
-      required_fields: [id, type, name, definition, lifecycle, provenance]
-      lifecycle_state_field: lifecycle.status
-      provenance_change_history_field: provenance.change_history
+      required_fields: [id, type, name, definition, process_context, scope,
+                        outcomes, decomposition_basis, composes, scope_kind,
+                        status, lifecycle_status, version]
+      lifecycle_state_field: lifecycle_status
     # ProcessContext is a CELL REGISTER (per CR-BP-02), not a process
     # entity. It uses a slim profile: no `type` field (the cell is
     # identified by domain + lifecycle_stage), no definition (the
@@ -42,9 +76,15 @@ envelope:
     # PC record shapes coexist in the live tree: the new shape
     # (process_context + cell_charter blocks) and the legacy shape
     # (top-level domain + lifecycle_stage + scope + outcomes). The
-    # slim profile accepts both.
+    # slim profile accepts both. RECONCILED (IMP-001): the live L0
+    # population carries cell_charter + domain + id + lifecycle_stage
+    # + name on all 49 records; scope/outcomes/adjacent_contexts/status
+    # are schema-required but NOT present on every live record, so they
+    # are not demanded by the envelope (the canonical schema validation
+    # is a separate gate and remains authoritative for them).
     ProcessContext:
-      required_fields: [id, name]
+      required_fields: [id, name, domain, lifecycle_stage, cell_charter]
+      lifecycle_state_field: lifecycle_stage
 
 # ES-001: Identity
 identity:
@@ -65,10 +105,19 @@ identity:
 # ES-003: Relationship
 relationships:
   field: relationships
+  # RECONCILED (IMP-001): `serves` was added because 150 live
+  # relationship entries across 141 canonical records use it to point at
+  # `ecf:*` targets (e.g. `ecf:strategyDirection.improve`). The
+  # pre-reconciliation whitelist listed only the three intra-catalogue
+  # decomposition types, so ES-003 fired on every ecf-crossing
+  # relationship: a stale vocabulary, not 150 bad records. The ecf
+  # namespace is the Enterprise Conceptual Framework and is a legitimate
+  # cross-catalogue target.
   canonical_types:
     - composes
     - realizes
     - specializes
+    - serves
   forbidden_types:
     - part-of
   cross_catalog_field: identity_scope
@@ -85,6 +134,22 @@ relationships:
         - Process
       target_identity_scopes:
         - dea-catalog-business-capabilities
+    # RECONCILED (IMP-001): `serves` constrains its TARGET by namespace, not
+    # by a declared identity_scope field. Every one of the 150 live `serves`
+    # relationships targets the `ecf:` namespace (the Enterprise Conceptual
+    # Framework), e.g. `ecf:financeAccounting.retire` and
+    # `ecf:strategyDirection.improve`. NO record in the live population
+    # declares an `identity_scope` field on any relationship, so demanding
+    # one would be demanding a field the schema never introduced.
+    # `target_id_prefixes` therefore constrains the target's canonical id
+    # prefix, which is the field the population actually carries.
+    # Source is constrained to Process: all 150 `serves` relationships are
+    # emitted by L2 Business Process records.
+    serves:
+      source_types:
+        - Process
+      target_id_prefixes:
+        - "ecf:"
     specializes:
       source_types:
         - Process
