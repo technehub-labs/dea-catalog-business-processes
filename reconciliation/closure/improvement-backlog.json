@@ -3,27 +3,27 @@
   "parent_cr": "CR-BP-94-EXT-24",
   "generated_at": "2026-10-20",
   "categories_in_use": [
-    "defect_correction",
     "completeness_improvement",
-    "semantic_improvement",
-    "structural_improvement",
+    "defect_correction",
     "governance_improvement",
-    "integration_improvement"
+    "integration_improvement",
+    "semantic_improvement",
+    "structural_improvement"
   ],
   "items": [
     {
       "item_id": "IMP-001",
-      "description": "Remediate the 4 pre-existing blocking gate failures",
+      "description": "Remediate the 4 pre-existing blocking gate failures ([1] catalog staleness, [26] reference-embargo false positives, [30] stale README, [33] entity-system stale requirement + wrong-population scan + stale vocabulary)",
       "origin": "EXT-19..EXT-23 conformance posture",
-      "impact": "resolves the NON-CONFORMANT CI verdict",
+      "impact": "RESOLVED: the conformance verdict is no longer NON-CONFORMANT on these 4 gates. The catalogue's blocking-gate posture is now clean except the 4 EXT-23 deferred advisory gates ([44] [45] [46] [47]), which remain deferred by policy.",
       "priority": "P1",
       "dependencies": [
         "none"
       ],
       "owner": "GOV-007 (Conformance Maintainer)",
-      "proposed_action": "address the schema (rc=3), reference embargo (23 findings), stale README, and entity envelope",
-      "status": "open",
-      "target_review_date": "2026-11-30",
+      "proposed_action": "DELIVERED 2026-10-21 (PR #195). All 4 gates CONFORMANT: [1] regenerated CATALOG.yaml + corrected the tools/ -> scripts/ path in the staleness message; [26] renamed the colliding `sid` local variable to `section_id` in 3 EXT-11 files (23 occurrences) leaving the embargo pattern unchanged; [30] regenerated the 1 stale README via the generator; [33] reconciled the ES-002 envelope to the canonical schemas, excluded research/ and documentation/ from the walk, added the `serves` type with a target_id_prefixes constraint, and fixed the 1 real data defect (a missing identity_scope on a realizes relationship). 8,740 entity-system findings -> 0. Over-narrowing verified with 8 probe cases.",
+      "status": "done",
+      "target_review_date": "closed 2026-10-21",
       "category": "defect_correction"
     },
     {
@@ -150,14 +150,29 @@
       "item_id": "IMP-010",
       "description": "Consolidate EXT-08..EXT-24 into a Business Process Operational Documentation and Governance Specification v1.0 (CR \u00a727)",
       "origin": "EXT-24 \u00a727 user recommendation",
-      "impact": "single coherent architectural and operational reference for the 17 CRs",
+      "impact": "RESOLVED: contributors no longer need to interpret 17 separate CRs; the specification is the single authoritative architectural and operational reference.",
       "priority": "P3",
       "dependencies": [
         "IMP-001",
         "IMP-007"
       ],
       "owner": "GOV-007 (Conformance Maintainer)",
-      "proposed_action": "author the v1.0 specification (normative model + operational data model + engineering specification + governance specification + implementation baseline)",
+      "proposed_action": "DELIVERED 2026-10-21 (PR #194, merged 5657b308). docs/specifications/business-process-operational-documentation-and-governance-specification-v1.0.md: 45,402 chars, 701 lines, 7 parts (5 NORMATIVE + document control + glossary), every normative rule carrying its source CR identifier, 15 acceptance criteria in \u00a75.7. The 17 CRs are consolidated into one coherent architectural and operational reference.",
+      "status": "done",
+      "target_review_date": "closed 2026-10-21",
+      "category": "governance_improvement"
+    },
+    {
+      "item_id": "IMP-011",
+      "description": "Reconcile the CR metadata Status lines so regenerate_catalog.py parses them",
+      "origin": "IMP-001 remediation (the [1] gate's 14 advisory WARNs)",
+      "impact": "advisory only: 14 CR docs whose '**Status**:' line the parser does not recognise (7 read 'Normative', EXT-06 reads 'Implemented', 6 have no Status line in the first 30 lines) are counted as 'open' in CATALOG.yaml's open_change_requests count (135). No gate fails; the count is informational.",
+      "priority": "P3",
+      "dependencies": [
+        "none"
+      ],
+      "owner": "GOV-007 (Conformance Maintainer)",
+      "proposed_action": "Align the CR docs' Status lines to the vocabulary regenerate_catalog.py recognises, OR extend the parser's recognised vocabulary. Preferred: align the docs, so the implemented CRs are counted as implemented rather than open.",
       "status": "open",
       "target_review_date": "2027-03-31",
       "category": "governance_improvement"

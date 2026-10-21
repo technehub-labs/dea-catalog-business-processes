@@ -41,6 +41,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pr-i
 | `outcomes` | array[3] | no | array of 3 item(s) |
 | `composes` | array[1] | no | array of 1 item(s) |
 | `process_group_kind` | string | no | end-to-end |
+| `profile` | string | no | l1-pilot-customer-insight-and-retention |
 | `status` | string | no | accepted |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[1] | no | array of 1 item(s) |

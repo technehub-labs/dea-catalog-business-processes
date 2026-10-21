@@ -8,7 +8,7 @@
     "state_filter": null,
     "total_selected_records": 3882
   },
-  "mode": "dry-run",
+  "mode": "live",
   "per_validator_summary": {
     "check_profile_registry_ext11.py": 0,
     "check_inputs_outputs_interfaces_ext12.py": 0,
@@ -18,5 +18,6 @@
     "check_authoring_methodology_ext16.py": 0
   },
   "total_findings": 0,
+  "note": "Live mode is reserved for the EXT-19 backfill tranche. The orchestrator only reports; it does not write content (REQ-17-14; no automatic semantic invention).",
   "no_automatic_invention": true
 }

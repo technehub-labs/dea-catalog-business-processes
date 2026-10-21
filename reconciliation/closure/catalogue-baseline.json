@@ -1,7 +1,7 @@
 {
   "baseline_schema_version": "1",
   "parent_cr": "CR-BP-94-EXT-24",
-  "baseline_revision": "150c8e24",
+  "baseline_revision": "IMP-001 remediation (PR #195, pending merge)",
   "baseline_date": "2026-10-20",
   "baseline_kind": "programme-closure",
   "scope": "the Business Process catalogue",
@@ -64,15 +64,17 @@
     "total_gates": 52,
     "blocking_gates": 29,
     "promoted_blocking_ext_gates": 9,
-    "pre_existing_blocking_failures": 4,
-    "deferred_advisory_gates": 4
+    "pre_existing_blocking_failures": 0,
+    "deferred_advisory_gates": 4,
+    "pre_existing_blocking_failures_note": "REMEDIATED 2026-10-21 (IMP-001, PR #195). Gates [1], [26], [30] and [33] are CONFORMANT. The remaining blocking-gate risk is the 4 EXT-23 deferred advisory gates, which are deferred by policy pending the L2/L3/L4 content backfills."
   },
   "known_limitations": [
     "L0 Process Context records use the cell-charter schema (no type field); they are counted by id prefix, not by the file scan's type field.",
     "The L4 content backfill (2,900 open findings) is the largest deferred population.",
     "The semantic and evidence-substantiation dimensions are not machine-verified; the catalogue cannot certify that documented practice matches actual organisational practice.",
-    "The 4 pre-existing blocking gate failures predate the EXT-08..EXT-24 programme and are owned by their originating CRs.",
-    "The 8 EXT-22 structural findings are dispositioned under the governance model."
+    "The 8 EXT-22 structural findings are dispositioned under the governance model.",
+    "The 4 EXT-23 deferred gates ([44] L2, [45] L3, [46] L4, [47] decomposition) remain ADVISORY by policy, not by defect.",
+    "REGISTERED 2026-10-21 (IMP-001): the 4 pre-existing blocking gate failures ([1], [26], [30], [33]) are REMEDIATED and CONFORMANT. They were tooling defects (a stale generated artefact plus a misleading remediation path; an embargo false-positive on a local variable; a stale generated README; and a stale registry requirement scanning the wrong population), not catalogue-data defects."
   ],
   "integrity_notes": "An entity is NOT considered fully verified merely because it is present in the baseline. The baseline distinguishes verified, accepted with known gaps, unverified, deferred, and exception-governed content. The conformance framework (EXT-23) is the single source of truth for rule-based assessment; this baseline records the state AT 2026-10-20, NOT a permanent claim of completeness."
 }

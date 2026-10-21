@@ -464,8 +464,8 @@ def evaluate(records: Iterable[tuple[Path, dict]]) -> list[dict]:
 
         # DOC-016: every required section-id is present in the README.
         missing = [
-            sid for sid in profile["required_section_ids"]
-            if not _section_present(readme_text, sid)
+            section_id for section_id in profile["required_section_ids"]
+            if not _section_present(readme_text, section_id)
         ]
         if missing:
             findings.append({
@@ -601,8 +601,8 @@ def _build_manifest(catalog_root: Path) -> dict:
             record_state["rules"]["DOC-016"] = {
                 "pass": _section_present(readme_text, "header-identity-table")
                         and all(
-                            _section_present(readme_text, sid)
-                            for sid in (profile["required_section_ids"]
+                            _section_present(readme_text, section_id)
+                            for section_id in (profile["required_section_ids"]
                                         if profile else [])
                         ),
             }

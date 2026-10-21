@@ -169,11 +169,11 @@ def evaluate(profile_data: dict) -> list[dict]:
                                 f"L0/L1 are non-executable per EXT-09 §11.1/§11.2",
                             ))
                         continue
-                    sid = section.get("id")
-                    if sid in EXECUTABLE_SECTION_IDS:
+                    section_id = section.get("id")
+                    if section_id in EXECUTABLE_SECTION_IDS:
                         findings.append(_make_finding(
                             "PR-006", level_key,
-                            f"executable operational section id={sid!r} in {section_key}; "
+                            f"executable operational section id={section_id!r} in {section_key}; "
                             f"L0/L1 are non-executable per EXT-09 §11.1/§11.2",
                         ))
 
@@ -192,11 +192,11 @@ def evaluate(profile_data: dict) -> list[dict]:
                                 f"L4 is bounded + verifiable, not orchestrating (CR-BP-98)",
                             ))
                         continue
-                    sid = section.get("id")
-                    if sid in WORKFLOW_ORCHESTRATION_SECTION_IDS:
+                    section_id = section.get("id")
+                    if section_id in WORKFLOW_ORCHESTRATION_SECTION_IDS:
                         findings.append(_make_finding(
                             "PR-007", level_key,
-                            f"workflow orchestration section id={sid!r} in {section_key}; "
+                            f"workflow orchestration section id={section_id!r} in {section_key}; "
                             f"L4 is bounded + verifiable, not orchestrating (CR-BP-98)",
                         ))
 
@@ -277,19 +277,19 @@ def evaluate(profile_data: dict) -> list[dict]:
                 continue
             for section in sections:
                 if not isinstance(section, dict):
-                    sid = section if isinstance(section, str) else None
+                    section_id = section if isinstance(section, str) else None
                 else:
-                    sid = section.get("id")
-                if sid and sid not in KNOWN_SCHEMA_FIELDS:
+                    section_id = section.get("id")
+                if section_id and section_id not in KNOWN_SCHEMA_FIELDS:
                     # Allow not_applicable and inherited marker ids
-                    if sid not in ("not_applicable", "inherited", "executable-transformation",
+                    if section_id not in ("not_applicable", "inherited", "executable-transformation",
                                    "trigger", "precondition", "input", "transformation",
                                    "output", "outcome", "performer", "accountability",
                                    "business_rule", "control", "exception",
                                    "workflow-orchestration"):
                         findings.append(_make_finding(
                             "PR-010", level_key,
-                            f"section id={sid!r} is not in the EXT-10 RETAIN schema fields; "
+                            f"section id={section_id!r} is not in the EXT-10 RETAIN schema fields; "
                             f"if this is a new schema field, route to EXT-10 first",
                         ))
 
