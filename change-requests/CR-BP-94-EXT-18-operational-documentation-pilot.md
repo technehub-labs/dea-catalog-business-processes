@@ -1,6 +1,8 @@
 # CR-BP-94-EXT-18: Operational Documentation Pilot
 
 **Status**: Proposed (awaiting Proceed)
+**Layer**: Process Catalog (Cross-Cutting Documentation)
+**Owner**: Emmanuel A. Otchere
 **Programme**: CR-BP-94 Documentation Extension
 **Parent**: CR-BP-94
 **Predecessors**: CR-BP-94-EXT-10 through CR-BP-94-EXT-17

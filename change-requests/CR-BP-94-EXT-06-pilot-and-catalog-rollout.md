@@ -1,6 +1,6 @@
 # CR-BP-94-EXT-06: Pilot and Catalog Rollout
 
-**Status**: Implemented
+**Status**: Accepted
 **Layer**: Process Catalog (Cross-Cutting Documentation)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-10-17

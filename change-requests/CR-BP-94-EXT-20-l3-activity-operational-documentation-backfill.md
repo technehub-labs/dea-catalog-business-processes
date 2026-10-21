@@ -1,6 +1,7 @@
 # CR-BP-94-EXT-20: L3 Activity Operational Documentation Backfill
 
-**Status**: Normative (proposed for adoption under CR-BP-94-EXT-20)
+**Status**: Proposed
+**Layer**: Process Catalog (Cross-Cutting Documentation)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-10-19
 **Source CR**: CR-BP-94-EXT-20 (L3 Activity Operational Documentation Backfill)
@@ -9,7 +10,7 @@
 **Change type**: Catalogue enrichment, decomposition integrity and documentation
 **Target decomposition level**: L3: Activity
 **Priority**: High
-**Depends on**: EXT-15, EXT-16, EXT-17, EXT-18, EXT-19
+**Depends on**: CR-BP-94-EXT-15, CR-BP-94-EXT-16, CR-BP-94-EXT-17, CR-BP-94-EXT-18, CR-BP-94-EXT-19
 **Enables**: EXT-21 (L4 Task Backfill)
 **Implementation approach**: Parent readiness, reconciliation, enrichment, validation and review
 

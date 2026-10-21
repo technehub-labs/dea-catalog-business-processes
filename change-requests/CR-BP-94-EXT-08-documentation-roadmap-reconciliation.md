@@ -1,8 +1,8 @@
 # CR-BP-94-EXT-08: Documentation Extension Roadmap Reconciliation and Deferred-Work Disposition
 
-Status: Proposed
-Layer: Process Catalog
-Owner: Emmanuel A. Otchere
+**Status**: Proposed
+**Layer**: Process Catalog
+**Owner**: Emmanuel A. Otchere
 Date: 2026-10-19
 Parent: CR-BP-94 (Decomposition Record Templates)
 Related CRs: CR-BP-94-EXT-01, CR-BP-94-EXT-01a, CR-BP-94-EXT-02, CR-BP-94-EXT-04, CR-BP-94-EXT-05, CR-BP-94-EXT-06, CR-BP-94-EXT-07

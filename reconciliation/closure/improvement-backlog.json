@@ -134,7 +134,7 @@
     {
       "item_id": "IMP-009",
       "description": "Cross-catalogue dependency governance with dea-metaframework + sibling dea-catalog-* repos",
-      "origin": "EXT-24 \u00a712",
+      "origin": "EXT-24 §12",
       "impact": "operationalises the cross-repo event-trigger model",
       "priority": "P3",
       "dependencies": [
@@ -148,8 +148,8 @@
     },
     {
       "item_id": "IMP-010",
-      "description": "Consolidate EXT-08..EXT-24 into a Business Process Operational Documentation and Governance Specification v1.0 (CR \u00a727)",
-      "origin": "EXT-24 \u00a727 user recommendation",
+      "description": "Consolidate EXT-08..EXT-24 into a Business Process Operational Documentation and Governance Specification v1.0 (CR §27)",
+      "origin": "EXT-24 §27 user recommendation",
       "impact": "RESOLVED: contributors no longer need to interpret 17 separate CRs; the specification is the single authoritative architectural and operational reference.",
       "priority": "P3",
       "dependencies": [
@@ -157,7 +157,7 @@
         "IMP-007"
       ],
       "owner": "GOV-007 (Conformance Maintainer)",
-      "proposed_action": "DELIVERED 2026-10-21 (PR #194, merged 5657b308). docs/specifications/business-process-operational-documentation-and-governance-specification-v1.0.md: 45,402 chars, 701 lines, 7 parts (5 NORMATIVE + document control + glossary), every normative rule carrying its source CR identifier, 15 acceptance criteria in \u00a75.7. The 17 CRs are consolidated into one coherent architectural and operational reference.",
+      "proposed_action": "DELIVERED 2026-10-21 (PR #194, merged 5657b308). docs/specifications/business-process-operational-documentation-and-governance-specification-v1.0.md: 45,402 chars, 701 lines, 7 parts (5 NORMATIVE + document control + glossary), every normative rule carrying its source CR identifier, 15 acceptance criteria in §5.7. The 17 CRs are consolidated into one coherent architectural and operational reference.",
       "status": "done",
       "target_review_date": "closed 2026-10-21",
       "category": "governance_improvement"
@@ -172,9 +172,25 @@
         "none"
       ],
       "owner": "GOV-007 (Conformance Maintainer)",
-      "proposed_action": "Align the CR docs' Status lines to the vocabulary regenerate_catalog.py recognises, OR extend the parser's recognised vocabulary. Preferred: align the docs, so the implemented CRs are counted as implemented rather than open.",
-      "status": "open",
+      "proposed_action": "DELIVERED 2026-10-21 (branch fix/cr-metadata-s21-conformance). Root cause was three distinct defects, not one: (1) MARKER STYLE: EXT-08..EXT-14 declared metadata as bare 'Status:' rather than the S21 '**Status**:' form; the gate reads only the bold form, so it reported present fields as missing. Repaired to the canonical convention shared by the other 152 CRs. (2) STATUS VOCABULARY: 10 CRs carried values outside {Proposed, Accepted, Rejected, Superseded, Draft} ('Implemented', 'Normative (...)', compound 'X; release withdrawn ...'). Normalised to the nearest approved token; the dropped annotation is already duplicated verbatim in each CR body, so no information was lost. (3) DEPENDENCY REFS: EXT-19..22 cited dependencies in the shorthand 'EXT-15' form, which no reference pattern resolves; expanded to the canonical 'CR-BP-94-EXT-15' form. Result: CR metadata gate CONFORMANT, rc=0, and CATALOG.yaml open_change_requests 135 -> 129. DELIBERATELY NOT DONE: CR-BP-03 and CR-BP-03C were left untouched. CR-BP-03's line is an unfilled template placeholder ('status: pending  # pending | accepted | rejected | re-landscaped') and CR-BP-03C declares no status at all. Assigning either an approved value would fabricate a governance decision nobody made; both are correctly counted as open, which is the honest reading of 'pending'.",
+      "status": "done",
       "target_review_date": "2027-03-31",
+      "category": "governance_improvement",
+      "resolution": "fixed"
+    },
+    {
+      "item_id": "IMP-013",
+      "description": "Reconcile gate [9] CR Validation's registry classification with how CI invokes it",
+      "origin": "IMP-011 remediation triage",
+      "impact": "scripts/conformance_result.py registers '[9] CR Validation (CR-META-001..006)' with the blocking flag False (advisory), while .github/workflows/ci.yml invokes the same gate with --strict, which promotes post-cutoff CRs to blocking. The registry's aggregate verdict has therefore never reflected this gate while CI has blocked on it for every PR since PR-13. Two independent surfaces disagree about the same gate's class.",
+      "priority": "P2",
+      "dependencies": [
+        "IMP-011"
+      ],
+      "owner": "GOV-007 (Conformance Maintainer)",
+      "proposed_action": "Decide which surface is authoritative and make the other match. Either promote the registry entry to blocking (the gate is a real S21 enforcement gate and CI is right), or drop --strict from the CI step. IMP-011 made the gate satisfiable, so the first option is now viable; the second disables an enforcement gate and is not recommended.",
+      "status": "open",
+      "target_review_date": "2026-11-21",
       "category": "governance_improvement"
     }
   ]

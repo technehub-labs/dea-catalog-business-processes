@@ -1,6 +1,7 @@
 # CR-BP-94-EXT-19: L2 Business Process Operational Documentation Backfill
 
-**Status**: Normative (proposed for adoption under CR-BP-94-EXT-19)
+**Status**: Proposed
+**Layer**: Process Catalog (Cross-Cutting Documentation)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-10-19
 **Source CR**: CR-BP-94-EXT-19 (L2 Business Process Operational Documentation Backfill)
@@ -9,7 +10,7 @@
 **Change type**: Catalogue enrichment, documentation and data quality
 **Target decomposition level**: L2: Business Process
 **Priority**: Critical
-**Depends on**: EXT-15, EXT-16, EXT-17, EXT-18
+**Depends on**: CR-BP-94-EXT-15, CR-BP-94-EXT-16, CR-BP-94-EXT-17, CR-BP-94-EXT-18
 **Enables**: EXT-20 (L3 Activity Backfill)
 **Implementation approach**: Inventory, assess, enrich, validate, review and report
 

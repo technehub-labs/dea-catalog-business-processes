@@ -8,7 +8,7 @@
 > the dea-metaframework `docs/entity-storage-layout.md` for the current
 > containment tree.
 
-**Status**: Proposed; release withdrawn 2026-10-13, see CR-BP-116
+**Status**: Superseded
 **Layer**: Process Catalog (release / governance)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-09

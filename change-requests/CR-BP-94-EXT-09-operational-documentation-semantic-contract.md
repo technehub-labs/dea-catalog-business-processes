@@ -1,8 +1,8 @@
 # CR-BP-94-EXT-09: Operational Documentation Semantic Contract
 
-Status: Proposed
-Layer: Process Catalog
-Owner: Emmanuel A. Otchere
+**Status**: Proposed
+**Layer**: Process Catalog
+**Owner**: Emmanuel A. Otchere
 Date: 2026-10-19
 Parent: CR-BP-94 (Decomposition Record Templates)
 Programme predecessor: CR-BP-94-EXT-08 (Documentation Roadmap Reconciliation and Deferred-Work Disposition)

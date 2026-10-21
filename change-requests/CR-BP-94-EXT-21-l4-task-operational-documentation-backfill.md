@@ -1,6 +1,7 @@
 # CR-BP-94-EXT-21: L4 Task Operational Documentation Backfill
 
-**Status**: Normative (proposed for adoption under CR-BP-94-EXT-21)
+**Status**: Proposed
+**Layer**: Process Catalog (Cross-Cutting Documentation)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-10-19
 **Source CR**: CR-BP-94-EXT-21 (L4 Task Operational Documentation Backfill)
@@ -9,7 +10,7 @@
 **Change type**: Catalogue enrichment, decomposition integrity and documentation
 **Target decomposition level**: L4: Task
 **Priority**: High
-**Depends on**: EXT-15, EXT-16, EXT-17, EXT-18, EXT-19, EXT-20
+**Depends on**: CR-BP-94-EXT-15, CR-BP-94-EXT-16, CR-BP-94-EXT-17, CR-BP-94-EXT-18, CR-BP-94-EXT-19, CR-BP-94-EXT-20
 **Enables**: EXT-22 (L0/L1 Context Reconciliation)
 **Implementation approach**: Parent readiness, decomposition validation, enrichment, validation and review
 
