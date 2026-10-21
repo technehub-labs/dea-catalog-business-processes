@@ -258,6 +258,32 @@ def esc(s: Any) -> str:
     return html.escape(str(s), quote=True)
 
 
+# The map TYPE and the level span are part of the artefact's identity and must
+# appear in every title: the H1, the <title> element, the PDF document title,
+# and the file name. A poster that renders L0-L2 must never be captioned as an
+# L0-L1 overview, or a reader cannot tell two different artefacts apart.
+MAP_TYPE = "OpenDEA Business Process Entity Map"
+
+SUPPORTED_DEPTHS = ("L1", "L2")
+
+
+def map_title(depth: str) -> str:
+    """The canonical title for a map at the given depth.
+
+    L1 -> "OpenDEA Business Process Entity Map - L0 - L1 overview"
+    L2 -> "OpenDEA Business Process Entity Map - L0 - L2 overview"
+    """
+    if depth not in SUPPORTED_DEPTHS:
+        raise ValueError(f"unsupported depth {depth!r}; expected one of {SUPPORTED_DEPTHS}")
+    return f"{MAP_TYPE} - L0 - {depth} overview"
+
+
+def map_slug(depth: str) -> str:
+    """File-name stem matching the title: entity-map-l0-l2-overview."""
+    depth_num = depth.lower()
+    return f"entity-map-l0-{depth_num}-overview"
+
+
 DOMAIN_SEPARATORS = ("And", "and")
 
 
@@ -274,15 +300,28 @@ def row_label(domain: str) -> str:
     return domain
 
 
-def cell_html(domain: str, stage: str, cell: dict | None) -> str:
+def cell_html(domain: str, stage: str, cell: dict | None, depth: str = "L1",
+              tree: dict | None = None) -> str:
+    """Render one L0 cell.
+
+    At depth L1 the cell shows the Process Group name and the L2/L3/L4 counts.
+    At depth L2 it additionally names every Business Process in the cell, so
+    the poster carries the L0 -> L1 -> L2 chain on one sheet.
+    """
     if not cell:
         return (f'<div class="cell empty"><div class="cell-head">'
                 f'{esc(domain)} &times; {esc(stage)}</div>'
                 f'<div class="cell-body"><span class="none">no cell</span></div></div>')
 
-    counts = cell["counts"]
-    total = counts["L2"] + counts["L3"] + counts["L4"]
-    density = " dense" if total >= 20 else (" mid" if total >= 5 else "")
+    counts = dict(cell["counts"])
+    l2_ids = tree["l2_by_cell"].get((domain, stage), []) if (tree and depth == "L2") else []
+    n2 = len(l2_ids) if depth == "L2" else counts["L2"]
+
+    # Density is judged on what the poster actually shows, not on the
+    # invisible L3/L4 tail: at L1 that is the member count, at L2 the number
+    # of named Business Processes.
+    shown = n2 if depth == "L2" else counts["L2"] + counts["L3"] + counts["L4"]
+    density = " dense" if shown >= 8 else (" mid" if shown >= 4 else "")
 
     group_rows = []
     for g in cell["groups"]:
@@ -294,9 +333,21 @@ def cell_html(domain: str, stage: str, cell: dict | None) -> str:
         group_rows.append('<div class="l1-row none"><span class="l1-tag">L1</span>'
                           '<span class="none">no group</span></div>')
 
+    bp_rows = []
+    if depth == "L2":
+        for rid in l2_ids:
+            rec = tree["records"].get(rid, {})
+            bp_rows.append(
+                f'<div class="l2-row"><span class="l2-tag">L2</span>'
+                f'<span class="l2-name">{esc(rec.get("name", rid))}</span></div>'
+            )
+        if not bp_rows:
+            bp_rows.append('<div class="l2-row none"><span class="l2-tag">L2</span>'
+                           '<span class="none">no business process</span></div>')
+
     counts_html = (
         f'<div class="counts">'
-        f'<span class="c c2" title="L2 Business Processes">{counts["L2"]}</span>'
+        f'<span class="c c2" title="L2 Business Processes">{n2}</span>'
         f'<span class="c c3" title="L3 Activities">{counts["L3"]}</span>'
         f'<span class="c c4" title="L4 Tasks">{counts["L4"]}</span>'
         f'</div>'
@@ -306,7 +357,7 @@ def cell_html(domain: str, stage: str, cell: dict | None) -> str:
         f'<div class="cell{density}">'
         f'<div class="cell-head">{esc(cell["name"])}</div>'
         f'<div class="cell-axis">{esc(domain)} &times; {esc(stage)}</div>'
-        f'<div class="cell-body">{"".join(group_rows)}{counts_html}</div>'
+        f'<div class="cell-body">{"".join(group_rows)}{"".join(bp_rows)}{counts_html}</div>'
         f'</div>'
     )
 
@@ -371,12 +422,17 @@ def css(n_domains: int, n_stages: int) -> str:
   .c2 {{ background: #eef4fa; }}
   .c3 {{ background: #f2f0fa; }}
   .c4 {{ background: #faf4ee; }}
+  .l2-row {{ display: flex; gap: 3px; align-items: baseline; margin-bottom: 1px; }}
+  .l2-tag {{ font-size: 7px; font-weight: 700; color: var(--accent); border: 1px solid var(--accent);
+             border-radius: 2px; padding: 0 2px; flex: none; }}
+  .l2-name {{ font-size: 8px; line-height: 1.25; }}
   footer {{ margin-top: 6px; padding-top: 4px; border-top: 1px solid var(--line);
             color: var(--mid); font-size: 8px; }}
 """
 
 
-def render(cells: dict, domains: list[str], stages: list[str], meta: dict) -> str:
+def render(cells: dict, domains: list[str], stages: list[str], meta: dict,
+          depth: str = "L1", tree: dict | None = None) -> str:
     # Build the grid row-major so the DOM order reads correctly.
     grid = ['<div class="corner"></div>']
     for s in stages:
@@ -384,7 +440,7 @@ def render(cells: dict, domains: list[str], stages: list[str], meta: dict) -> st
     for d in domains:
         grid.append(f'<div class="rowhead">{esc(row_label(d))}</div>')
         for s in stages:
-            grid.append(cell_html(d, s, cells.get((d, s))))
+            grid.append(cell_html(d, s, cells.get((d, s)), depth=depth, tree=tree))
 
     audit = meta.get("audit", {})
     unplaced = {k: v for k, v in audit.items() if v}
@@ -405,7 +461,7 @@ def render(cells: dict, domains: list[str], stages: list[str], meta: dict) -> st
 
     return f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
-<title>OpenDEA Entity Map - L0 x L1 overview</title>
+<title>{esc(meta["title"])}</title>
 <style>{css(len(domains), len(stages))}</style>
 <style>
   h2 {{ font-size: 11px; margin: 7px 0 3px; color: var(--accent); }}
@@ -416,11 +472,11 @@ def render(cells: dict, domains: list[str], stages: list[str], meta: dict) -> st
 </head><body>
 <div class="sheet">
   <header>
-    <h1>OpenDEA Entity Map &mdash; L0 &times; L1 overview</h1>
+    <h1>{esc(meta["title"])}</h1>
     <div class="sub">{esc(meta['repo'])} &middot; {esc(meta['revision'])} &middot; generated {esc(meta['generated_at'])}</div>
     <div class="legend">
-      <span class="key"><span class="swatch sw-dense"></span><b>&ge;20</b> members</span>
-      <span class="key"><span class="swatch sw-mid"></span><b>5-19</b> members</span>
+      <span class="key"><span class="swatch sw-dense"></span><b>&ge;8</b> {esc(meta["density_unit"])}</span>
+      <span class="key"><span class="swatch sw-mid"></span><b>4-7</b> {esc(meta["density_unit"])}</span>
       <span class="key"><span class="swatch sw-empty"></span>no cell</span>
       <span class="key"><span class="c c2">{meta['totals']['L2']}</span>L2 Processes</span>
       <span class="key"><span class="c c3">{meta['totals']['L3']}</span>L3 Activities</span>
@@ -439,6 +495,9 @@ def render(cells: dict, domains: list[str], stages: list[str], meta: dict) -> st
     the same evidence the decomposition reconciliation gate ([47]) uses, so the
     map and the gate agree by construction. Research, documentation, discovery,
     report and template artefacts are excluded: they are not canonical records.
+    This map renders the <b>L0 - {esc(meta['depth'])}</b> chain; L3 and L4 counts are shown
+    per cell for reference and their members are carried by the per-cell drill-down pages.
+    Printed at {esc(paper_for(meta["depth"]))}, one poster per sheet.<br>
     Renderer ported from the capability-map generator (CR-DEA-BC-06).
   </footer>
 </div>
@@ -464,7 +523,7 @@ def drilldown_html(cell_key: tuple[str, str], cell: dict, tree: dict, meta: dict
     domain, stage = cell_key
     out = [f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
-<title>OpenDEA Entity Map - {esc(cell['name'])}</title>
+<title>{esc(meta["title"])} - {esc(cell["name"])}</title>
 <style>{css(7, 7)}
 .cellbody {{ padding: 8px 10px; }}
 .bp {{ border: 1px solid var(--line); border-left: 3px solid var(--accent);
@@ -480,7 +539,8 @@ a {{ color: var(--accent); }}
 </style></head><body>
 <div class="sheet">
 <header>
-  <h1>{esc(cell['name'])}</h1>
+  <h1>{esc(cell["name"])}</h1>
+  <div class="sub-title">{esc(meta["title"])}</div>
   <div class="sub">{esc(domain)} &times; {esc(stage)} &middot; {esc(cell['cell_id'])} &middot; {esc(meta['repo'])} @ {esc(meta['revision'])}</div>
 </header>
 <div class="cellbody">"""]
@@ -552,17 +612,33 @@ def build_tree(records: list[tuple[Path, dict[str, Any]]]) -> dict:
             "l3_by_l2": dict(l3_by_l2), "l4_by_l3": dict(l4_by_l3)}
 
 
-# One poster per sheet: A3 landscape with a narrow margin.
-PAPER_CSS = """@page { size: A3 landscape; margin: 8mm; }"""
+# ONE poster per sheet, always, at a legible scale.
+#
+# The depth decides the paper. An L0-L1 poster fits A3 landscape. An L0-L2
+# poster additionally names 145 Business Processes (median 3 per cell, max 9)
+# and its grid is ~1137px against ~1062px of A3 content height. Compressing
+# that into A3 means ~6px body type, which is not legible. So L2 prints at A2
+# landscape (594 x 420 mm, the standard ISO poster size) rather than
+# pretending to be an A3 sheet.
+#
+# This is stated in the artefact and reported by --dry-run so the paper size
+# is never a silent surprise.
+PAPER_FOR_DEPTH = {"L1": "A3 landscape", "L2": "A2 landscape"}
 
 
-def _sp_paper_css() -> "io.BytesIO | None":
+def paper_for(depth: str) -> str:
+    return PAPER_FOR_DEPTH.get(depth, "A3 landscape")
+
+
+def _sp_paper_css(depth: str = "L1") -> "io.BytesIO | None":
     """Return the @page override as a file-like object weasyprint accepts."""
     import io as _io
-    return _io.BytesIO(PAPER_CSS.encode("utf-8"))
+    css = f"@page {{ size: {paper_for(depth)}; margin: 8mm; }}\n"
+    return _io.BytesIO(css.encode("utf-8"))
 
 
-def rasterise(html_path: Path, png_out: Path | None, pdf_out: Path | None) -> None:
+def rasterise(html_path: Path, png_out: Path | None, pdf_out: Path | None,
+              depth: str = "L1") -> None:
     try:
         from weasyprint import HTML as WP_HTML
     except ImportError:
@@ -574,7 +650,7 @@ def rasterise(html_path: Path, png_out: Path | None, pdf_out: Path | None) -> No
         # One poster per A3 landscape sheet. The 7x7 grid at ~1100px of
         # content height paginates across two default sheets otherwise, and a
         # two-sheet "single page map" is not a map anyone can read.
-        page_css = _sp_paper_css()
+        page_css = _sp_paper_css(depth)
         WP_HTML(filename=str(html_path)).write_pdf(str(pdf_out),
                                                   stylesheets=[page_css] if page_css else None)
         print(f"  wrote {pdf_out}")
@@ -585,7 +661,7 @@ def rasterise(html_path: Path, png_out: Path | None, pdf_out: Path | None) -> No
         # The temp PDF MUST carry the same @page override as the real one,
         # otherwise the raster path paginates differently from the PDF path
         # and the two deliverables disagree about how many sheets the poster is.
-        page_css = _sp_paper_css()
+        page_css = _sp_paper_css(depth)
         WP_HTML(filename=str(html_path)).write_pdf(str(tmp),
                                                   stylesheets=[page_css] if page_css else None)
         # pdftoppm names multi-page output <base>-1.png, <base>-2.png ... A
@@ -627,9 +703,14 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=doc.split("\n")[1] if "\n" in doc else "entity map generator")
     ap.add_argument("--entities", default=str(DEFAULT_ENTITIES),
                     help="path to the entities root (default: entities/v1-alpha)")
-    ap.add_argument("-o", "--out", default=str(REPO_ROOT / "out" / "entity-map-l0-l1.html"))
+    ap.add_argument("-o", "--out", default=None,
+                    help="output HTML path (default: out/<title slug>.html, so the "
+                         "file name always matches the map's title and depth)")
     ap.add_argument("--png", default=None, help="also write a rasterised PNG")
     ap.add_argument("--pdf", default=None, help="also write a PDF")
+    ap.add_argument("--depth", default="L2", choices=list(SUPPORTED_DEPTHS),
+                    help="deepest level the poster renders: L1 shows the Process Group "
+                         "name and counts; L2 also names every Business Process")
     ap.add_argument("--drilldown-dir", default=None,
                     help="also write one drill-down page per L0 cell into this directory")
     ap.add_argument("--dry-run", action="store_true",
@@ -679,7 +760,14 @@ def main(argv: list[str] | None = None) -> int:
     except Exception:
         revision = "unknown"
 
+    title = map_title(args.depth)
+    tree = build_tree(records)
+
     meta = {
+        "title": title,
+        "depth": args.depth,
+        "density_unit": "processes" if args.depth == "L2" else "members",
+        "paper": paper_for(args.depth),
         "repo": "technehub-labs/dea-catalog-business-processes",
         "revision": revision,
         "generated_at": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
@@ -687,10 +775,13 @@ def main(argv: list[str] | None = None) -> int:
         "audit": audit,
     }
 
-    out = Path(args.out)
+    out = Path(args.out) if args.out else (REPO_ROOT / "out" / f"{map_slug(args.depth)}.html")
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(render(cells, domains, stages, meta), encoding="utf-8")
-    print(f"\n  wrote {out} ({out.stat().st_size:,} bytes)")
+    out.write_text(render(cells, domains, stages, meta, depth=args.depth, tree=tree),
+                   encoding="utf-8")
+    print(f"\n  title: {title}")
+    print(f"  paper: {paper_for(args.depth)}")
+    print(f"  wrote {out} ({out.stat().st_size:,} bytes)")
 
     if args.drilldown_dir:
         dd_dir = Path(args.drilldown_dir)
@@ -705,7 +796,8 @@ def main(argv: list[str] | None = None) -> int:
         print(f"  wrote {n} drill-down pages to {dd_dir}")
 
     if args.png or args.pdf:
-        rasterise(out, Path(args.png) if args.png else None, Path(args.pdf) if args.pdf else None)
+        rasterise(out, Path(args.png) if args.png else None,
+                   Path(args.pdf) if args.pdf else None, depth=args.depth)
 
     return 0
 

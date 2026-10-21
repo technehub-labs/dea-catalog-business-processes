@@ -159,10 +159,20 @@ class TestRendering(unittest.TestCase):
         records = mod.iter_records(REPO / "entities" / "v1-alpha")
         cells, audit = mod.build_cells(records)
         domains, stages = mod.axis_order(cells)
-        cls.html = mod.render(cells, domains, stages, {
+        cls.tree = mod.build_tree(records)
+        cls.meta = {
+            "title": mod.map_title("L1"),
+            "depth": "L1",
+            "density_unit": "members",
             "repo": "test", "revision": "test", "generated_at": "test",
             "totals": {"L0": 49, "L1": 49, "L2": 145, "L3": 580, "L4": 2900},
-            "audit": audit})
+            "audit": audit}
+        cls.html = mod.render(cells, domains, stages, cls.meta,
+                              depth="L1", tree=cls.tree)
+        cls.html_l2 = mod.render(cells, domains, stages,
+                                 {**cls.meta, "title": mod.map_title("L2"),
+                                  "depth": "L2", "density_unit": "processes"},
+                                 depth="L2", tree=cls.tree)
 
     def test_row_labels_are_escaped_exactly_once(self):
         # A double-escaped ampersand is the regression this test guards:
@@ -177,10 +187,115 @@ class TestRendering(unittest.TestCase):
                 self.assertEqual(self.html.count(ch), 0)
         self.assertEqual(self.html.count(";;;"), 0)
 
+    def test_rendered_document_carries_the_title(self):
+        self.assertIn(mod.map_title("L1"), self.html)
+        self.assertIn(f"<title>{mod.map_title('L1')}</title>", self.html)
+
+    def test_l2_render_carries_the_l2_title_not_the_l1_one(self):
+        self.assertIn(mod.map_title("L2"), self.html_l2)
+        self.assertNotIn(mod.map_title("L1"), self.html_l2,
+                         "an L0-L2 poster must never be captioned as L0-L1")
+        self.assertEqual(self.html_l2.count('class="l2-name"'), 145)
+
+    def test_render_states_the_paper_size_derived_from_depth(self):
+        # The footer must derive the paper from the depth, never from a
+        # caller-supplied key, or the caption can disagree with the @page rule.
+        self.assertIn("A3 landscape", self.html)
+        self.assertIn("A2 landscape", self.html_l2)
+        # A depth mismatch is caught even if meta is hand-built.
+        spoofed = {**self.meta, "depth": "L2", "paper": "A3 landscape"}
+        html = mod.render(cells_dummy := {}, [], [], spoofed, depth="L2")
+        self.assertIn("A2 landscape", html)
+        self.assertNotIn("Printed at A3", html)
+
     def test_renders_every_cell(self):
         self.assertEqual(self.html.count('class="colhead"'), 7)
         self.assertEqual(self.html.count('class="rowhead"'), 7)
         self.assertEqual(self.html.count('class="cell-head"'), 49)
+
+
+class TestTitleIdentity(unittest.TestCase):
+    """The map type and the level span are part of the artefact's identity.
+
+    A poster that renders L0-L2 must never be captioned as an L0-L1 overview,
+    or a reader cannot tell two different artefacts apart.
+    """
+
+    def test_title_states_the_type_and_the_full_level_span(self):
+        self.assertEqual(mod.map_title("L1"),
+                         "OpenDEA Business Process Entity Map - L0 - L1 overview")
+        self.assertEqual(mod.map_title("L2"),
+                         "OpenDEA Business Process Entity Map - L0 - L2 overview")
+
+    def test_title_always_names_the_map_type(self):
+        for depth in mod.SUPPORTED_DEPTHS:
+            with self.subTest(depth=depth):
+                self.assertIn("Entity Map", mod.map_title(depth))
+
+    def test_title_carries_both_endpoints_of_the_span(self):
+        t = mod.map_title("L2")
+        self.assertIn("L0", t)
+        self.assertIn("L2", t)
+
+    def test_slug_follows_the_depth(self):
+        self.assertEqual(mod.map_slug("L1"), "entity-map-l0-l1-overview")
+        self.assertEqual(mod.map_slug("L2"), "entity-map-l0-l2-overview")
+
+    def test_unsupported_depth_is_refused_not_guessed(self):
+        with self.assertRaises(ValueError):
+            mod.map_title("L9")
+
+
+class TestPaperSelection(unittest.TestCase):
+    """One poster per sheet, at a legible scale."""
+
+    def test_l1_fits_a3_and_l2_needs_a2(self):
+        self.assertIn("A3", mod.paper_for("L1"))
+        self.assertIn("A2", mod.paper_for("L2"))
+
+    def test_unknown_depth_falls_back_to_a3(self):
+        self.assertIn("A3", mod.paper_for("L9"))
+
+
+class TestDepthRendering(unittest.TestCase):
+    """At L2 the poster names every Business Process; the badge must agree."""
+
+    @classmethod
+    def setUpClass(cls):
+        records = mod.iter_records(REPO / "entities" / "v1-alpha")
+        cls.cells, _ = mod.build_cells(records)
+        cls.tree = mod.build_tree(records)
+
+    def test_l2_cell_names_every_process_and_badge_agrees(self):
+        import re
+        for (d, s), cell in self.cells.items():
+            with self.subTest(cell=f"{d}x{s}"):
+                chunk = mod.cell_html(d, s, cell, depth="L2", tree=self.tree)
+                badge = int(re.search(r'class="c c2"[^>]*>(\d+)<', chunk).group(1))
+                names = chunk.count('class="l2-name"')
+                self.assertEqual(badge, names,
+                                 "the L2 badge must equal the names rendered")
+
+    def test_l2_renders_all_145_processes(self):
+        total = sum(len(v) for v in self.tree["l2_by_cell"].values())
+        self.assertEqual(total, 145)
+
+    def test_l1_cell_does_not_render_process_names(self):
+        d, s = next(iter(self.cells))
+        chunk = mod.cell_html(d, s, self.cells[(d, s)], depth="L1", tree=self.tree)
+        self.assertEqual(chunk.count('class="l2-name"'), 0)
+
+    def test_densities_are_judged_on_what_is_shown(self):
+        # At L2 the densest cell carries 9 named processes, so >=8 is dense.
+        d, s = ("EnablementAndOperations", "Operate")
+        chunk = mod.cell_html(d, s, self.cells[(d, s)], depth="L2", tree=self.tree)
+        self.assertIn("cell dense", chunk)
+
+    def test_empty_cell_renders_at_either_depth(self):
+        for depth in ("L1", "L2"):
+            with self.subTest(depth=depth):
+                self.assertIn("cell empty",
+                              mod.cell_html("NoSuchDomain", "NoSuchStage", None, depth=depth))
 
 
 if __name__ == "__main__":
