@@ -7,3 +7,10 @@ __pycache__/
 # New `pr-*.md` files at `01_plan/` are local-only design notes.
 /01_plan/*.md
 !/01_plan/archive/
+
+# Generated map artefacts (scripts/generate_entity_map.py). Regenerate with:
+#   python3 scripts/generate_entity_map.py -o out/entity-map-l0-l1.html \
+#       --drilldown-dir out/drilldown
+# The generator and its tests are tracked; the rendered output is derived
+# state and is reproducible from the live catalogue at any revision.
+/out/
