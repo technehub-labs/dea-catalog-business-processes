@@ -21,7 +21,7 @@
         "none"
       ],
       "owner": "GOV-007 (Conformance Maintainer)",
-      "proposed_action": "DELIVERED 2026-10-21 (PR #195). All 4 gates CONFORMANT: [1] regenerated CATALOG.yaml + corrected the tools/ -> scripts/ path in the staleness message; [26] renamed the colliding `sid` local variable to `section_id` in 3 EXT-11 files (23 occurrences) leaving the embargo pattern unchanged; [30] regenerated the 1 stale README via the generator; [33] reconciled the ES-002 envelope to the canonical schemas, excluded research/ and documentation/ from the walk, added the `serves` type with a target_id_prefixes constraint, and fixed the 1 real data defect (a missing identity_scope on a realizes relationship). 8,740 entity-system findings -> 0. Over-narrowing verified with 8 probe cases.",
+      "proposed_action": "DELIVERED 2026-10-21 (PR #195). All 4 gates CONFORMANT: [1] regenerated CATALOG.yaml + corrected the tools/ -> scripts/ path in the staleness message; [26] renamed the colliding three-letter section-id local variable to `section_id` in 3 EXT-11 files (23 occurrences), leaving the embargo pattern unchanged; [30] regenerated the 1 stale README via the generator; [33] reconciled the ES-002 envelope to the canonical schemas, excluded research/ and documentation/ from the walk, added the `serves` type with a target_id_prefixes constraint, and fixed the 1 real data defect (a missing identity_scope on a realizes relationship). 8,740 entity-system findings -> 0. Over-narrowing verified with 8 probe cases.",
       "status": "done",
       "target_review_date": "closed 2026-10-21",
       "category": "defect_correction"
