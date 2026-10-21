@@ -1,7 +1,9 @@
 # CR-BP-EXT-23: Operational Documentation Conformance Framework and Automated Quality Gates
 
 **Source**: the user-submitted `CR-BP-EXT-23.md` (2026-10-20)
-**Status**: supersedes the previously authored CR-BP-EXT-23 (the interim gate-posture CR)
+**Status**: Accepted
+**Layer**: Process Catalog (Cross-Cutting Documentation)
+**Owner**: Emmanuel A. Otchere
 **Programme**: Business Process Operational Documentation Extension (DEA-PROCESS-ENRICH-000)
 **Repository**: technehub-labs/dea-catalog-business-processes
 

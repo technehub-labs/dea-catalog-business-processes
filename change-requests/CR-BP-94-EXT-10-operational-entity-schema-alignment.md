@@ -1,6 +1,8 @@
 # CR-BP-94-EXT-10: Operational Entity Schema Alignment
 
-Status: Proposed
+**Status**: Proposed
+**Layer**: Process Catalog (Cross-Cutting Documentation)
+**Owner**: Emmanuel A. Otchere
 Programme: CR-BP-94 Documentation Extension
 Parent: CR-BP-94
 Predecessors: CR-BP-94-EXT-08, CR-BP-94-EXT-09

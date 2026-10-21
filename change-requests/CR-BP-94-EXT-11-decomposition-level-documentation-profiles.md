@@ -1,6 +1,8 @@
 # CR-BP-94-EXT-11: Decomposition-Level Operational Documentation Profiles
 
-Status: Proposed
+**Status**: Proposed
+**Layer**: Process Catalog (Cross-Cutting Documentation)
+**Owner**: Emmanuel A. Otchere
 Programme: CR-BP-94 Documentation Extension
 Parent: CR-BP-94
 Predecessors: EXT-08, EXT-09, EXT-10

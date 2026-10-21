@@ -82,8 +82,19 @@ CR_NUMBER_PATTERN = re.compile(
 # carriers (CR-BP-SPEC-*, CR-BP-TMF-EMBARGO) and a generic
 # CR-<UPPER>-<digits> pattern for cross-repo CR refs (CR-CATALOG-STRUCT-NN,
 # CR-ECF-CG-NNN, etc.). Per CR-BP-107 retro-fit; pre-dates the CR-BP-16 S16
+#
+# IMP-011: the cross-repo alternative required a namespace segment
+# (CR-<UPPER>-<digits>), but dea-governance numbers its CRs without one
+# (CR-012, CR-002, CR-001). Those are real dependencies, not typos:
+# 25 CR-012 refs and 36 plain CR-<digits> refs across change-requests/.
+# CR-BP-121's Depends on cites exactly those, so the rule reported a
+# genuine dependency as a malformed one. Admit the unnamespaced form.
 # convention.
-CR_REF_PATTERN = re.compile(r"CR-BP-(?:\d+[a-zA-Z]?(\.\d+)*|L\d+-\d+[a-zA-Z]?|mv\d+|SPEC-[A-Z0-9]+|TMF-EMBARGO)|CR-[A-Z]+-[A-Z0-9]+")
+CR_REF_PATTERN = re.compile(
+    r"CR-BP-(?:\d+[a-zA-Z]?(\.\d+)*|L\d+-\d+[a-zA-Z]?|mv\d+|SPEC-[A-Z0-9]+|TMF-EMBARGO)"
+    r"|CR-[A-Z]+-[A-Z0-9]+"          # cross-repo CR with a namespace segment
+    r"|CR-\d+"                      # cross-repo CR numbered without one
+)
 # Match the metadata line. Two conventions are admitted:
 #   1. "**Key**: value" (canonical; colon outside bold)
 #   2. "**Key:** value" (legacy / Github-issues style; colon inside)

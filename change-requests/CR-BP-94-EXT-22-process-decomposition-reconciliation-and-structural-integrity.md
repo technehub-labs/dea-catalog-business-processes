@@ -1,6 +1,7 @@
 # CR-BP-94-EXT-22: Process Decomposition Reconciliation and Structural Integrity
 
-**Status**: Normative (proposed for adoption under CR-BP-94-EXT-22)
+**Status**: Proposed
+**Layer**: Process Catalog (Cross-Cutting Documentation)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-10-19
 **Source CR**: CR-BP-EXT-22 (Process Decomposition Reconciliation and Structural Integrity)
@@ -8,7 +9,7 @@
 **Repository**: technehub-labs/dea-catalog-business-processes
 **Change type**: Catalogue governance, structural integrity, semantic reconciliation
 **Priority**: Critical
-**Depends on**: EXT-08 through EXT-21, particularly EXT-10, EXT-11, EXT-15, EXT-17, EXT-18, EXT-19, EXT-20, EXT-21
+**Depends on**: CR-BP-94-EXT-08 through CR-BP-94-EXT-21, particularly CR-BP-94-EXT-10, CR-BP-94-EXT-11, CR-BP-94-EXT-15, CR-BP-94-EXT-17, CR-BP-94-EXT-18, CR-BP-94-EXT-19, CR-BP-94-EXT-20, CR-BP-94-EXT-21
 **Enables**: EXT-23 (Operational Documentation Conformance Gates)
 **Target scope**: L0 Process Scope, L1 Process Group, L2 Business Process, L3 Activity, L4 Task
 **Implementation approach**: Inventory before modification, dataset extraction, structural checks, matrix generation, closure report

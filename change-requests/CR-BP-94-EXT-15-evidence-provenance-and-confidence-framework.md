@@ -1,6 +1,8 @@
 # CR-BP-94-EXT-15: Evidence, Provenance and Confidence Framework
 
 **Status**: Proposed
+**Layer**: Process Catalog (Cross-Cutting Documentation)
+**Owner**: Emmanuel A. Otchere
 **Programme**: CR-BP-94 Documentation Extension
 **Parent**: CR-BP-94
 **Predecessors**: CR-BP-94-EXT-09, CR-BP-94-EXT-10, CR-BP-94-EXT-11, CR-BP-94-EXT-12, CR-BP-94-EXT-13, CR-BP-94-EXT-14

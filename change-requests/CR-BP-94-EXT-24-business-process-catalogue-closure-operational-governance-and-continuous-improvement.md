@@ -2,6 +2,8 @@
 
 **Source**: the user-submitted `CR-BP-EXT-24.md` (2026-10-20)
 **Status**: Proposed (the FINAL slice of the 17-CR programme)
+**Layer**: Process Catalog (Cross-Cutting Documentation)
+**Owner**: Emmanuel A. Otchere
 **Programme**: Business Process Operational Documentation Extension (DEA-PROCESS-ENRICH-000)
 **Repository**: technehub-labs/dea-catalog-business-processes
 **Outcome**: Transition from project-based enrichment to sustained catalogue governance
