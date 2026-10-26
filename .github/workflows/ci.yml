@@ -55,6 +55,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: technehub-labs/dea-metaframework
+          ref: v2.6.0
           path: .metaframework
 
       - name: Install regenerator + gate + schema (prefer vendored copies)
