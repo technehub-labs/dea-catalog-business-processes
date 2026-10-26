@@ -3,7 +3,7 @@
   "generated_at": "2026-10-20",
   "generator": "scripts/check_programme_closure_ext24.py",
   "parent_cr": "CR-BP-94-EXT-24",
-  "repository_revision": "9106c4fed267259c2684cd56d857b753bd784c63",
+  "repository_revision": "2eaa2ff9e1ff7e99454120e2a91e1da00e0517c8",
   "summary": {
     "total_findings": 0,
     "by_severity": {},
@@ -16,7 +16,7 @@
     "lifecycle_record_count": 3725,
     "exception_count": 0,
     "deferral_count": 7,
-    "improvement_item_count": 11,
+    "improvement_item_count": 12,
     "overall_outcome": "passed"
   },
   "findings": []
