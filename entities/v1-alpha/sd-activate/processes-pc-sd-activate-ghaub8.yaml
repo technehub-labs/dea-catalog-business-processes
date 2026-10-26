@@ -4,6 +4,35 @@ id: processes:pc-sd-activate-ghaub8
 domain: StrategyAndDirection
 lifecycle_stage: Activate
 name: Institutionalize Regulated Strategic Plan
+definition: The bounded enterprise context for **governing the activation of a regulated entity's strategic plan whose live execution is gated by formal supervisor-acknowledged strategic-plan filing** in the **Strategy & Direction** domain, distinct from strategy build and from steady-state strategy execution.
+scope:
+  includes:
+  - Supervisor-acknowledged strategic-plan filing
+  - Supervisor's review completion and acknowledgement on record
+  - Filing receipt preservation and regulated-records entry
+  - Operational monitoring framework launch (KPIs; early-warning indicators)
+  - Communications plan activation under the regulator's continuing supervision
+  excludes:
+  - Strategic-plan conception, design, and build (StrategyAndDirection x Conceive / Design / Build)
+  - Steady-state strategy execution and performance review (StrategyAndDirection x Operate / Improve)
+  - Strategic-plan sunset under regulatory mandate (StrategyAndDirection x Retire)
+  - Non-regulated strategic-plan launch absent a supervisor-acknowledged filing regime
+outcomes:
+- Supervisor's acknowledgement on record for the regulated strategic plan.
+- Filing receipt preserved on the regulated strategic-plan record.
+- Operational monitoring framework live on the regulated strategic-plan record.
+- Communications plan activated under the regulator's continuing supervision.
+- Regulated strategic-plan record entry preserved for the activated strategic plan.
+adjacent_contexts:
+- processes:pc-sd-build-gmzrrm
+- processes:pc-sd-operate-5cs5ee
+- processes:pc-sd-retire-zxnc3c
+- processes:pc-ao-activate-kusw2u
+- processes:pc-eo-activate-xdfscw
+- processes:pc-fa-activate-yrhcfm
+processes:
+- processes:process-sd-activate-s9m34e
+status: candidate
 process_context:
   id: processes:pc-sd-activate-ghaub8
   domain: StrategyAndDirection

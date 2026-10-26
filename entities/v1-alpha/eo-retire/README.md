@@ -87,7 +87,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `definition` | string | no | The bounded enterprise context for **withdrawing and retiring |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[3] | no | array of 3 item(s) |
-| `adjacent_contexts` | array[5] | no | array of 5 item(s) |
+| `adjacent_contexts` | array[9] | no | array of 9 item(s) |
 | `processes` | array[1] | no | array of 1 item(s) |
 | `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
 | `status` | string | no | candidate |

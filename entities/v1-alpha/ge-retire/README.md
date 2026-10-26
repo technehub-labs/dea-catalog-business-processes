@@ -86,10 +86,15 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `schema_version` | integer | no | 1 |
 | `domain` | string | no | GovernanceAndExistence |
 | `lifecycle_stage` | string | no | Retire |
+| `definition` | string | no | The bounded enterprise context for **governing the wind-down of governance bodies, policy regimes, mandates, and constit |
+| `scope` | object | no | object: includes, excludes |
+| `outcomes` | array[5] | no | array of 5 item(s) |
+| `adjacent_contexts` | array[5] | no | array of 5 item(s) |
+| `processes` | array[1] | no | array of 1 item(s) |
+| `status` | string | no | candidate |
 | `process_context` | object | no | object: id, domain, lifecycle_stage, scope_summary, process_empty, lifecycle_status, status |
 | `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
 | `process_groups` | array[1] | no | array of 1 item(s) |
-| `processes` | array[1] | no | array of 1 item(s) |
 | `change_history` | array[1] | no | array of 1 item(s) |
 
 **Relationships**

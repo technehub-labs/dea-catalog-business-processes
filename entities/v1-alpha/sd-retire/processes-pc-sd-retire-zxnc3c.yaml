@@ -4,6 +4,30 @@ id: processes:pc-sd-retire-zxnc3c
 domain: StrategyAndDirection
 lifecycle_stage: Retire
 name: Sunset Regulated Strategic Plan
+definition: 'The bounded enterprise context for **governing the sunset of a regulated strategic plan under regulatory mandate** in the **Strategy & Direction** domain: supervisor-acknowledged sunset filings, plan cessation, monitoring framework decommission, and records preservation, distinct from strategy improvement and from adjacent regulated retirements.'
+scope:
+  includes:
+  - Supervisor-acknowledged strategic-plan sunset filings
+  - Strategic-plan cessation and monitoring framework decommission
+  - Regulated strategic-plan records preservation
+  - Stakeholder communications for the mandated sunset
+  excludes:
+  - Strategic adaptation and improvement cycles (StrategyAndDirection x Improve)
+  - Strategic-plan activation (StrategyAndDirection x Activate)
+  - Regulated entity run-off (FinanceAndAccounting x Retire; CR-BP-75)
+  - Voluntary strategy retirement absent a regulatory mandate
+outcomes:
+- Supervisor-acknowledged sunset filings documented for the regulated strategic plan.
+- The strategic plan ceases execution under the regulatory mandate.
+- The operational monitoring framework is decommissioned.
+- Regulated strategic-plan records are preserved per the records-retention regime.
+adjacent_contexts:
+- processes:pc-sd-improve-ft9k5f
+- processes:pc-sd-activate-ghaub8
+- processes:pc-fa-retire-64q5p9
+processes:
+- processes:process-sd-retire-umxf3c
+status: candidate
 process_context:
   id: processes:pc-sd-retire-zxnc3c
   domain: StrategyAndDirection
@@ -64,8 +88,6 @@ cell_charter:
   - 'processes:pc-sd-improve-ft9k5f (adjacent context): the Improve cell at SD handles steady-state strategy improvement and performance review; regulator-directed sunset is distinct and downstream of any improvement disposition'
   - 'processes:pc-sd-activate-ghaub8 (adjacent context): the Activate cell at SD handles the regulated live-readiness activation of a strategic plan; the replacement-plan activation is a separate process under Activate and is not in scope here'
   - 'processes:pc-fa-retire-64q5p9 (adjacent context): the Retire cell at FinanceAndAccounting handles financial-account retirement; this cell handles strategy retirement under regulator directive, distinct from financial-account sunset'
-processes:
-- processes:process-sd-retire-umxf3c
 admission:
   recommended_by: dea:discovery-strategy-and-direction-retire-escape
   recommended_at: '2026-09-19'
@@ -128,9 +150,7 @@ admission:
     SD.Retire deferral pending this CR-BP-101 tranche.
 
     '
-status: candidate
 lifecycle_status: candidate
-version: 1.0.0
 metadata:
   established_by: CR-BP-101
   established_at: '2026-09-19'

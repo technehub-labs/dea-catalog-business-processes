@@ -4,6 +4,36 @@ id: processes:pc-ge-retire-kndw6x
 domain: GovernanceAndExistence
 lifecycle_stage: Retire
 name: Governance Unwind
+definition: 'The bounded enterprise context for **governing the wind-down of governance bodies, policy regimes, mandates, and constitutional instruments under regulator or court mandate** in the **Governance & Existence** domain: statutory dissolution filings, retained-records custodianship, policy sunset, governance-body quorum reduction, and surrender of authorisation, distinct from voluntary governance sunset and from adjacent Retire cells.'
+scope:
+  includes:
+  - Regulator- or court-issued mandatory dissolution, revocation, or wind-down order execution
+  - Governance-bodies reduction to wind-down quorum under the controlling statute
+  - Policy instrument sunset per the governance constitution
+  - Statutory dissolution filings to the controlling authority
+  - Retained-records custodianship assignment per the service-of-process regime
+  - Surrender of authorisation or cancellation of permission
+  excludes:
+  - Voluntary governance sunset absent regulator or court mandate (GovernanceAndExistence x Improve; CR-BP-63)
+  - Asset retirement and decommissioning (EnablementAndOperations x Retire; CR-BP-66)
+  - Counterparty and agent relationship closure (PartyAndRelationship x Retire; CR-BP-67)
+  - Workforce wind-down under statutory mass-layoff thresholds (AgencyAndOrganization x Retire; CR-BP-73)
+  - Regulated entity run-off (FinanceAndAccounting x Retire; CR-BP-75)
+outcomes:
+- The governance regime is wound down under the controlling regulator or court authority.
+- Policy instruments are sunset per the governance constitution.
+- Statutory dissolution filings are submitted to the controlling authority.
+- Retained-records custodianship is assigned per the service-of-process regime.
+- The entity is dissolved or the authorisation is cancelled per the regulator or court determination.
+adjacent_contexts:
+- processes:pc-ge-operate-hb2dac
+- processes:pc-ge-improve-c78ppp
+- processes:pc-eo-retire-nw3ynf
+- processes:pc-ao-retire-3kqe9c
+- processes:pc-fa-retire-64q5p9
+processes:
+- processes:process-ge-retire-mjq5hg
+status: candidate
 process_context:
   id: processes:pc-ge-retire-kndw6x
   domain: GovernanceAndExistence
@@ -64,8 +94,6 @@ process_groups:
   processes:
   - processes:process-ge-retire-mjq5hg
   relationship: composes
-processes:
-- processes:process-ge-retire-mjq5hg
 change_history:
 - cr: CR-BP-78
   date: '2026-09-16'

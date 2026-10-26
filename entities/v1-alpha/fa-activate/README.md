@@ -94,6 +94,12 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `schema_version` | integer | no | 1 |
 | `domain` | string | no | FinanceAndAccounting |
 | `lifecycle_stage` | string | no | Activate |
+| `definition` | string | no | The bounded enterprise context for **governing the activation of a billing or revenue-recognition capability whose live  |
+| `scope` | object | no | object: includes, excludes |
+| `outcomes` | array[5] | no | array of 5 item(s) |
+| `adjacent_contexts` | array[6] | no | array of 6 item(s) |
+| `processes` | array[1] | no | array of 1 item(s) |
+| `status` | string | no | candidate |
 | `process_context` | object | no | object: id, domain, lifecycle_stage, scope_summary, process_empty, lifecycle_status, status |
 | `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
 | `process_groups` | array[1] | no | array of 1 item(s) |
@@ -104,6 +110,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | Kind | Target ID | Cardinality |
 | :--- | :--- | :--- |
 | `process_groups` | `processes:group-fa-activate-n9s2z3` | 1 |
+| `processes` | `processes:process-fa-activate-bzfywk` | 1 |
 
 ## 6. Operational, Control and Metrics Details
 
