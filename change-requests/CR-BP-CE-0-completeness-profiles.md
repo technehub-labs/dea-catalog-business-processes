@@ -1,5 +1,9 @@
 # CR-BP-CE-0: Catalog Completeness Programme -- Profiles, Gate, and Tranche Sequence
 
+**Status**: Proposed
+**Layer**: Process Catalog (Cross-Cutting Documentation)
+**Owner**: Emmanuel A. Otchere
+
 > **Reconciliation (recon 2026-10-22, against the live canonical schemas and the
 > 3,723-record population).** This CR is the user-submitted draft, reconciled to
 > the canonical schemas under `schemas/entities/*.schema.json` and
