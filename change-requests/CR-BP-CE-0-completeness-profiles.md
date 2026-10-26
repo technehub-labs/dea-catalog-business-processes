@@ -45,6 +45,10 @@ draft text.
   only 2 are exercised (`serves` 150, `realizes` 1), so **15 of 17** are dormant.
   Separately, `composes` is a top-level field on 629 records, distinct from the
   `relationships[]` array.
+- **R6 -- Workflow name.** The draft's §4 names a `catalog-conformance.yml`
+  workflow that does not exist. The gate actually runs through the aggregate
+  `conformance_result.py` step in `.github/workflows/ci.yml`, where it is
+  registered as advisory gate [50].
 
 Two draft claims were verified CORRECT and are adopted as the programme's core
 thesis: the seven operational fields (`owner`, `stakeholders`, `actors`,
@@ -149,7 +153,10 @@ that level. Field names below are the CANONICAL schema names (see §R3/R4).
 
 ## §4 New gate: `scripts/check_completeness.py`
 
-Runs in CI, PR-scoped, against the RECONCILED profiles (§R).
+Runs in CI, PR-scoped, against the RECONCILED profiles (§R). The draft named a
+`catalog-conformance.yml` workflow; the actual mechanism is the aggregate
+`conformance_result.py` step in `.github/workflows/ci.yml` (the gate is
+registered there as advisory gate [50]). (§R6)
 
 | Rule | Check |
 |---|---|
