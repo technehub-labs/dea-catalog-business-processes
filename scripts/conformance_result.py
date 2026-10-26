@@ -156,6 +156,8 @@ GATES: list[tuple[str, bool, list[str]]] = [
      False, ["python3", "scripts/check_conformance_framework_ext23.py"]),  # CR-BP-EXT-23; ADVISORY (the conformance framework's own self-check: the rule catalogue + the traceability matrix + the report + the dashboard must all validate; the validator returns rc=1 if any CF-NNN framework-finding is emitted; the framework is a meta-artefact and its failure is an exception in the meta-framework, not a catalogue defect)
     ("[49] Programme Closure (CR-BP-94-EXT-24; CG-001..CG-080)",
      False, ["python3", "scripts/check_programme_closure_ext24.py"]),  # CR-BP-94-EXT-24; ADVISORY (the programme-closure self-check: the closure matrix + the catalogue baseline + the governance artefacts (roles, ownership, lifecycle, exceptions, deferrals, improvement backlog) must all validate; the validator returns rc=1 if any CG-NNN closure-finding is emitted; closure is a meta-artefact and its failure is an exception in the meta-closure, not a catalogue defect)
+    ("[50] Completeness Profiles (CR-BP-CE-0; CE-000..CE-900)",
+     False, ["python3", "scripts/check_completeness.py", "--advisory"]),  # CR-BP-CE-0; ADVISORY (per-level completeness profiles reconciled to the canonical schemas; the validator runs advisory and returns rc=0 while the profiles are ratified and the CE-L0..L4 tranches land; it WRITES reconciliation/completeness-report.yaml (CE-900); flip to blocking under CR-BP-CE-RL once the profiles are ratified)
 ]
 
 

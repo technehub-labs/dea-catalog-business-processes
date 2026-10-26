@@ -1,0 +1,56 @@
+cr: CR-BP-CE-0
+mode: advisory
+record_count: 3723
+by_level:
+  Task:
+    records: 2900
+    findings: 0
+  Activity:
+    records: 580
+    findings: 0
+  Process:
+    records: 145
+    findings: 0
+  ProcessGroup:
+    records: 49
+    findings: 0
+  ProcessContext:
+    records: 49
+    findings: 0
+by_domain_findings:
+  '?': 1209
+  AgencyAndOrganization: 10
+  EnablementAndOperations: 6
+  FinanceAndAccounting: 11
+  GovernanceAndExistence: 5
+  StrategyAndDirection: 12
+adoption:
+  operational_fields:
+    owner:
+      populated: 0
+      of: 3723
+    stakeholders:
+      populated: 0
+      of: 3723
+    actors:
+      populated: 0
+      of: 3723
+    kpis:
+      populated: 0
+      of: 3723
+    services_provided:
+      populated: 0
+      of: 3723
+    components_involved:
+      populated: 0
+      of: 3723
+    specialization_pattern:
+      populated: 0
+      of: 3723
+  process_classification:
+    populated: 0
+    of: 3723
+summary:
+  total_findings: 1253
+  blocking: 43
+  advisory: 1210
