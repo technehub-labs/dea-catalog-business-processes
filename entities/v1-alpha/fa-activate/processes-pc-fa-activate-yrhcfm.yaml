@@ -4,6 +4,36 @@ id: processes:pc-fa-activate-yrhcfm
 domain: FinanceAndAccounting
 lifecycle_stage: Activate
 name: Activate Billing Capability
+definition: The bounded enterprise context for **governing the activation of a billing or revenue-recognition capability whose live invoicing is gated by formal regulator-acknowledged accounting or rate framework activation** in the **Finance & Accounting** domain, distinct from capability build and from steady-state billing.
+scope:
+  includes:
+  - Regulator-acknowledged accounting or rate framework activation
+  - Tariff or pricing approval acquisition and recording
+  - Billing-capability readiness-assessment evidence recording
+  - Operational controls activation on the regulated billing record
+  - Continuing-supervisor notification and regulated billing record entry
+  excludes:
+  - Billing-capability conception and design (FinanceAndAccounting x Conceive / Design)
+  - Billing-capability build and configuration (FinanceAndAccounting x Build)
+  - Steady-state billing operations performance management (FinanceAndAccounting x Operate)
+  - Billing-capability decommission and deregistration (FinanceAndAccounting x Retire; CR-BP-75 adjacent)
+  - Non-regulated billing-capability activation absent a regulator-acknowledged framework
+outcomes:
+- Regulator's acknowledgement on record for the billing or revenue-recognition capability.
+- Tariff or pricing approval preserved on the regulated billing record.
+- Operational controls live on the regulated billing record.
+- Continuing-supervisor notification issued and the continuing-oversight relationship active.
+- Regulated billing record entry preserved for the activated billing capability.
+adjacent_contexts:
+- processes:pc-fa-build-pztsp9
+- processes:pc-fa-operate-afew7e
+- processes:pc-fa-retire-64q5p9
+- processes:pc-ao-activate-kusw2u
+- processes:pc-eo-activate-xdfscw
+- processes:pc-sd-activate-ghaub8
+processes:
+- processes:process-fa-activate-bzfywk
+status: candidate
 process_context:
   id: processes:pc-fa-activate-yrhcfm
   domain: FinanceAndAccounting

@@ -4,6 +4,37 @@ id: processes:pc-fa-retire-64q5p9
 domain: FinanceAndAccounting
 lifecycle_stage: Retire
 name: Financial Run-Off
+definition: 'The bounded enterprise context for **governing the retirement of a regulated financial entity under statutory run-off obligations** in the **Finance & Accounting** domain: regulator-acknowledged run-off authorisation, run-off plan submission, statutory accounting basis transition, reserving and capital adequacy, policyholder-priority claims adjudication, and stakeholder communications, distinct from pre-run-off stewardship and from physical asset decommissioning.'
+scope:
+  includes:
+  - Regulator-acknowledged run-off authorisation
+  - Run-off plan submission within the controlling regulator's window
+  - Statutory accounting basis transition to liquidation-basis or fulfillment-measurement
+  - Reserving, capital adequacy, and asset-liability matching throughout the run-off period
+  - Policyholder priority creditor treatment and claim adjudication
+  - Communications to policyholders and stakeholders
+  excludes:
+  - Pre-run-off financial stewardship (FinanceAndAccounting x Operate)
+  - Physical asset decommissioning (EnablementAndOperations x Retire; CR-BP-66)
+  - Counterparty and agent relationship closure (PartyAndRelationship x Retire; CR-BP-67)
+  - Product line retirement (ProductAndValue x Retire; CR-BP-67 adjacent)
+  - Non-insurance regulated wind-downs (deferred to a future CR)
+outcomes:
+- Regulator-acknowledged run-off authorisation documented per the controlling regulator's requirements.
+- Run-off plan submitted within the controlling regulator's window.
+- Statutory accounting basis established for insurance liabilities and held assets.
+- Reserving and capital adequacy maintained throughout the run-off period.
+- Policyholder claims adjudicated and paid under policyholder-priority creditor treatment.
+adjacent_contexts:
+- processes:pc-fa-operate-afew7e
+- processes:pc-fa-activate-yrhcfm
+- processes:pc-eo-retire-nw3ynf
+- processes:pc-pr-retire-2cusde
+- processes:pc-ge-retire-kndw6x
+- processes:pc-sd-retire-zxnc3c
+processes:
+- processes:process-fa-retire-wkbrsa
+status: candidate
 process_context:
   id: processes:pc-fa-retire-64q5p9
   domain: FinanceAndAccounting
@@ -89,8 +120,6 @@ admission:
       audit_status: ratified-accepted
       ratified_at: '2026-09-15'
       ratified_by: CR-BP-75
-processes:
-- processes:process-fa-retire-wkbrsa
 intent:
   decomposition: BP decomposition at L3 is the next slice (CR-BP-7x+)
   lifecycle_stage: Retire
@@ -128,7 +157,7 @@ change_history:
 audit:
   authored: '2026-09-15'
   author: Emmanuel A. Otchere
-  reviewed_by: null
+  reviewed_by:
   status: candidate
   change_request: CR-BP-75
   register_version_at_landing: v11

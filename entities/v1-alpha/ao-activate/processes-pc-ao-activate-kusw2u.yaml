@@ -4,6 +4,37 @@ id: processes:pc-ao-activate-kusw2u
 domain: AgencyAndOrganization
 lifecycle_stage: Activate
 name: Licensed Workforce Mobilization
+definition: 'The bounded enterprise context for **governing the live-readiness activation of a licensed or regulated workforce** in the **Agency & Organization** domain: the controlled mobilization of individuals who must hold regulator-issued licences or registrations before performing live work, with regulator-controlled scope preserved, fitness-and-propriety attestation recorded, supervised-training completion preserved, and continuing-supervisor notification activated.'
+scope:
+  includes:
+  - Regulator-issued licence or registration verification
+  - Fitness-and-propriety attestation under the regulator's continuing supervision
+  - Supervised-training completion and competency assessment recording
+  - Signing authority or controlled-function designation
+  - Continuing-supervisor notification and continuing-oversight relationship activation
+  excludes:
+  - Workforce recruitment, hiring, and general onboarding (AgencyAndOrganization x Build)
+  - Steady-state workforce performance and development (AgencyAndOrganization x Operate / Improve)
+  - Workforce offboarding and licence surrender (AgencyAndOrganization x Retire; CR-BP-73 adjacent)
+  - Non-licensed workforce activation (reserved; the cell is scoped to licensed roles only)
+  - Capabilities sourcing absent a regulator-controlled scope (AgencyAndOrganization x Build)
+outcomes:
+- Regulator-controlled scope preserved on the regulated personnel record.
+- Fitness-and-propriety attestation recorded for the licensed individual.
+- Supervised-training completion preserved on the regulated personnel record.
+- Continuing-supervisor notification issued and the continuing-oversight relationship activated.
+- Licensed workforce role formally live and ready to perform live work.
+adjacent_contexts:
+- processes:pc-ao-build-pjk4rz
+- processes:pc-ao-operate-zfevmp
+- processes:pc-ao-retire-3kqe9c
+- processes:pc-eo-activate-xdfscw
+- processes:pc-pv-activate-f7kne7
+- processes:pc-fa-activate-yrhcfm
+- processes:pc-sd-activate-ghaub8
+processes:
+- processes:process-ao-activate-jqxtqn
+status: candidate
 process_context:
   id: processes:pc-ao-activate-kusw2u
   domain: AgencyAndOrganization
@@ -87,8 +118,6 @@ admission:
       audit_status: ratified-accepted
       ratified_at: '2026-09-16'
       ratified_by: CR-BP-81
-processes:
-- processes:process-ao-activate-jqxtqn
 intent:
   decomposition: BP decomposition at L3 is the next slice (CR-BP-87)
   lifecycle_stage: Activate
@@ -126,7 +155,7 @@ change_history:
 audit:
   authored: '2026-09-16'
   author: Emmanuel A. Otchere
-  reviewed_by: null
+  reviewed_by:
   status: candidate
   change_request: CR-BP-81
   register_version_at_landing: v13

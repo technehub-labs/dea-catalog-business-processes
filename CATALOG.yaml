@@ -7476,7 +7476,7 @@ catalog:
     retired_count: 0
     state: canonical
     type: unknown
-    version: 1.0.0
+    version: 0.0.0
   - candidate_count: 0
     canonical_count: 1
     id: processes:process-ao-activate-jqxtqn

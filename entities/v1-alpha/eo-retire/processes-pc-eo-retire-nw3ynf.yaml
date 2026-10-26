@@ -14,8 +14,7 @@ definition: 'The bounded enterprise context for **withdrawing and retiring
 
   obligations. Decommissioning is a mature, universally governed
 
-  discipline (ISO 55000 asset end-of-life; APQC asset disposition;
-  data center decommissioning practice)
+  discipline (ISO 55000 asset end-of-life; APQC asset disposition; data center decommissioning practice)
 
   with a stable identity wholly independent of the ECF stage label.
 
@@ -41,6 +40,10 @@ adjacent_contexts:
 - processes:pc-eo-build-zwkhxc
 - processes:pc-eo-operate-ydqb96
 - processes:pc-eo-improve-pka6dk
+- processes:pc-ao-retire-3kqe9c
+- processes:pc-eo-activate-xdfscw
+- processes:pc-fa-retire-64q5p9
+- processes:pc-ge-retire-kndw6x
 processes:
 - processes:process-eo-retire-rpg6d4
 cell_charter:
