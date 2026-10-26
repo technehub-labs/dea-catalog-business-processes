@@ -344,7 +344,7 @@ EXT-22 is complete when the catalogue has been assessed as a connected process d
 ## 17. References
 
 - `docs/operational-documentation-programme/CR-BP-94-EXT-22-to-23-detailed-design.md` (the user-submitted specification)
-- `change-requests/CR-BP-EXT-23-operational-documentation-conformance-gates.md` (EXT-23)
+- `change-requests/CR-BP-EXT-23-operational-documentation-conformance-framework-and-automated-quality-gates.md` (EXT-23)
 - `change-requests/CR-BP-94-EXT-19-l2-business-process-operational-documentation-backfill.md` (EXT-19)
 - `change-requests/CR-BP-94-EXT-20-l3-activity-operational-documentation-backfill.md` (EXT-20)
 - `change-requests/CR-BP-94-EXT-21-l4-task-operational-documentation-backfill.md` (EXT-21)
