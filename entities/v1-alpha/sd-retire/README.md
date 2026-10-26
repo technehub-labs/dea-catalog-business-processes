@@ -119,11 +119,15 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `schema_version` | integer | no | 1 |
 | `domain` | string | no | StrategyAndDirection |
 | `lifecycle_stage` | string | no | Retire |
+| `definition` | string | no | The bounded enterprise context for **governing the sunset of a regulated strategic plan under regulatory mandate** in th |
+| `scope` | object | no | object: includes, excludes |
+| `outcomes` | array[4] | no | array of 4 item(s) |
+| `adjacent_contexts` | array[3] | no | array of 3 item(s) |
+| `processes` | array[1] | no | array of 1 item(s) |
+| `status` | string | no | candidate |
 | `process_context` | object | no | object: id, domain, lifecycle_stage, scope_summary, process_empty, lifecycle_status, status |
 | `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
-| `processes` | array[1] | no | array of 1 item(s) |
 | `admission` | object | no | object: recommended_by, recommended_at, recommended_score, rationale, cell_carries_forward |
-| `status` | string | no | candidate |
 
 **Relationships**
 

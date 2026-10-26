@@ -41,6 +41,8 @@ adjacent_contexts:
 - processes:pc-pr-build-a46hp7
 - processes:pc-pr-operate-pwue5a
 - processes:pc-pr-improve-k8phkn
+- processes:pc-ao-retire-3kqe9c
+- processes:pc-fa-retire-64q5p9
 processes:
 - processes:process-pr-retire-bd3asa
 cell_charter:

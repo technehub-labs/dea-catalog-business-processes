@@ -70,8 +70,13 @@ def _normalize_status(value: str) -> str:
 #   CR-BP-NN-EXT-NNa-slug     (extension sub-letter + slug: CR-BP-94-EXT-01a-...)
 #   CR-BP-mvN                 (structural migration carrier: CR-BP-mv1)
 #   CR-BP-mvN-slug            (migration carrier + slug)
+#   CR-BP-CE-N                (completeness-programme umbrella: CR-BP-CE-0)
+#   CR-BP-CE-LN              (completeness-programme tranche: CR-BP-CE-L0..L4, CR-BP-CE-RL)
+#   CR-BP-CE-LN-slug          (completeness tranche + slug)
 CR_NUMBER_PATTERN = re.compile(
     r"^CR-(?:BP-(?:\d+(?:[a-zA-Z](\.\d+)*)?(?:-(?:EXT-\d+[a-zA-Z]?|[a-z0-9]+))*|"
+    r"CE-\d+(?:-[a-z0-9]+)*|"
+    r"CE-L\d+(?:-[a-z0-9]+)*|"
     r"L\d+-\d+[a-zA-Z]?(?:-[a-z0-9]+)*|"
     r"mv\d+(?:-[a-z0-9]+)*|"
     r"SPEC-[A-Z0-9]+(?:-[a-z0-9]+)*|"

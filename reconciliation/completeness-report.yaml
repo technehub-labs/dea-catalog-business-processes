@@ -1,5 +1,5 @@
 cr: CR-BP-CE-0
-mode: advisory
+mode: strict
 record_count: 3723
 by_level:
   Task:
@@ -19,11 +19,7 @@ by_level:
     findings: 0
 by_domain_findings:
   '?': 1209
-  AgencyAndOrganization: 10
-  EnablementAndOperations: 6
-  FinanceAndAccounting: 11
-  GovernanceAndExistence: 5
-  StrategyAndDirection: 12
+  StrategyAndDirection: 1
 adoption:
   operational_fields:
     owner:
@@ -51,6 +47,6 @@ adoption:
     populated: 0
     of: 3723
 summary:
-  total_findings: 1253
-  blocking: 43
+  total_findings: 1210
+  blocking: 0
   advisory: 1210

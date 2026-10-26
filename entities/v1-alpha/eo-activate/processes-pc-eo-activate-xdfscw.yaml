@@ -4,6 +4,37 @@ id: processes:pc-eo-activate-xdfscw
 domain: EnablementAndOperations
 lifecycle_stage: Activate
 name: Activate Operations Capability
+definition: The bounded enterprise context for **governing the activation of an operations capability whose live service is gated by formal regulator-issued authorization or certification** in the **Enablement & Operations** domain, distinct from capability build and from steady-state operation.
+scope:
+  includes:
+  - Regulator-issued authorization or certification acquisition and recording
+  - Operations capability readiness-assessment evidence recording
+  - Operations manuals and runbooks activation under continuing oversight
+  - Operational controls activation on the regulated operations record
+  - Continuing-supervisor notification and regulated operations record entry
+  excludes:
+  - Operations capability conception and design (EnablementAndOperations x Conceive / Design)
+  - Operations capability build and configuration (EnablementAndOperations x Build)
+  - Steady-state operations performance management (EnablementAndOperations x Operate)
+  - Operations capability decommission and deregistration (EnablementAndOperations x Retire)
+  - Non-regulated operations-capability activation absent a regulator-issued authorization regime
+outcomes:
+- Regulator's authorization on record for the operations capability.
+- Operations manuals and runbooks live under the regulator's continuing oversight.
+- Operational controls live on the regulated operations record.
+- Continuing-supervisor notification issued and the continuing-oversight relationship active.
+- Regulated operations record entry preserved for the activated operations capability.
+adjacent_contexts:
+- processes:pc-eo-build-zwkhxc
+- processes:pc-eo-operate-ydqb96
+- processes:pc-eo-retire-nw3ynf
+- processes:pc-ao-activate-kusw2u
+- processes:pc-pv-activate-f7kne7
+- processes:pc-fa-activate-yrhcfm
+- processes:pc-sd-activate-ghaub8
+processes:
+- processes:process-eo-activate-sy5qsa
+status: candidate
 process_context:
   id: processes:pc-eo-activate-xdfscw
   domain: EnablementAndOperations

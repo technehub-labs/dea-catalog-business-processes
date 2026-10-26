@@ -136,7 +136,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `definition` | string | no | The bounded enterprise context for **acquiring and onboarding** the agents of the enterprise in the **Agency & Organizat |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[4] | no | array of 4 item(s) |
-| `adjacent_contexts` | array[4] | no | array of 4 item(s) |
+| `adjacent_contexts` | array[6] | no | array of 6 item(s) |
 | `processes` | array[2] | no | array of 2 item(s) |
 | `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
 | `status` | string | no | candidate |

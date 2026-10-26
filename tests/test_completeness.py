@@ -113,9 +113,10 @@ class TestCli(unittest.TestCase):
         for k, v in d["adoption"]["operational_fields"].items():
             self.assertEqual(v["populated"], 0, k)
 
-    def test_strict_blocks_on_real_gaps(self):
+    def test_strict_passes_post_ce_l0(self):
         r = self._run("--strict")
-        self.assertEqual(r.returncode, 1, "strict must fail while the 8 escape-clause PCs are gappy")
+        self.assertEqual(r.returncode, 0, "strict must pass once the CE-L0 tranche has remediated the 8 escape-clause PCs")
+        self.assertIn("0 blocking", r.stdout)
 
 
 if __name__ == "__main__":

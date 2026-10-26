@@ -4,6 +4,36 @@ id: processes:pc-ao-retire-3kqe9c
 domain: AgencyAndOrganization
 lifecycle_stage: Retire
 name: Workforce Retirement
+definition: "The bounded enterprise context for **governing the regulated wind-down of workforce populations** in the **Agency & Organization** domain: statutory advance notice, information and consultation with workers' representatives, fair-selection criteria, severance and benefits funding, and transition supports under regulated wind-down obligations, distinct from steady-state agent operations and from asset decommissioning."
+scope:
+  includes:
+  - Statutory advance notice to affected employees and statutory recipients
+  - Information and consultation with workers' representatives
+  - Fair-selection criteria application and recording
+  - Severance, benefits continuation, and statutory liability funding
+  - Transition supports routed to the affected population
+  excludes:
+  - Steady-state offboarding of individual agents (AgencyAndOrganization x Operate)
+  - Non-regulated cohort decommission (AgencyAndOrganization x Operate)
+  - Asset retirement and decommissioning (EnablementAndOperations x Retire; CR-BP-66)
+  - Counterparty and agent relationship closure (PartyAndRelationship x Retire; CR-BP-67)
+  - Knowledge archival absent regulated wind-down triggers (AgencyAndOrganization x Operate)
+outcomes:
+- Statutory advance notice served to affected employees and statutory recipients.
+- Information and consultation with workers' representatives documented per the controlling statute.
+- Fair-selection criteria applied and recorded for the affected population.
+- Severance, benefits continuation, and statutory liability recorded and funded.
+- Transition supports routed to the affected population.
+adjacent_contexts:
+- processes:pc-ao-build-pjk4rz
+- processes:pc-ao-operate-zfevmp
+- processes:pc-ao-activate-kusw2u
+- processes:pc-eo-retire-nw3ynf
+- processes:pc-pr-retire-2cusde
+- processes:pc-ge-retire-kndw6x
+processes:
+- processes:process-ao-retire-g3eyr8
+status: candidate
 process_context:
   id: processes:pc-ao-retire-3kqe9c
   domain: AgencyAndOrganization
@@ -74,8 +104,6 @@ admission:
       audit_status: ratified-accepted
       ratified_at: '2026-09-15'
       ratified_by: CR-BP-73
-processes:
-- processes:process-ao-retire-g3eyr8
 intent:
   decomposition: BP decomposition at L3 is the next slice (CR-BP-74+)
   lifecycle_stage: Retire
@@ -113,7 +141,7 @@ change_history:
 audit:
   authored: '2026-09-15'
   author: Emmanuel A. Otchere
-  reviewed_by: null
+  reviewed_by:
   status: candidate
   change_request: CR-BP-73
   register_version_at_landing: v10
