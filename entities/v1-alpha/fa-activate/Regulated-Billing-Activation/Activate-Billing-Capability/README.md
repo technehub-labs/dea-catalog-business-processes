@@ -28,6 +28,7 @@ This directory hosts the canonical Process record for `processes:process-fa-acti
 | :--- | :--- | :--- | :--- |
 | 2026-09-16 | `CR-BP-83` | Initial canonical admission at the FinanceAndAccounting x | System |
 | 2026-09-17 | `CR-BP-87` | L3 decomposition tranche (CR-BP-87): added metadata.activity_references | System |
+| 2026-10-27 | `CR-BP-GS-1` | Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under  | System |
 
 ## 5. Properties and Relationships
 
@@ -50,6 +51,8 @@ This directory hosts the canonical Process record for `processes:process-fa-acti
 | `identity` | object | no | object: verb, object, scope, outcome_statement, evidence_links |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[6] | no | array of 6 item(s) |
+| `actors` | array[5] | no | array of 5 item(s) |
+| `stakeholders` | array[5] | no | array of 5 item(s) |
 
 
 ## 4. Hierarchical Decomposition (Path Scheme)

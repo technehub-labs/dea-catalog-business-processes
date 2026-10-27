@@ -29,6 +29,7 @@ This directory hosts the canonical Process record for `processes:process-ge-reti
 | 2026-09-16 | `CR-BP-78` | Initial L2 Process entry; the first canonical Business | System |
 | 2026-09-16 | `CR-BP-79` | L3 Activity decomposition (4 Activity records): | System |
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
+| 2026-10-27 | `CR-BP-GS-1` | Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Governance & Existence Process Owner); actors/stakeholders derived from the parent cell charter vocabulary unde | System |
 
 ## 5. Properties and Relationships
 
@@ -50,6 +51,8 @@ This directory hosts the canonical Process record for `processes:process-ge-reti
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `links` | array[6] | no | array of 6 item(s) |
 | `context` | array[1] | no | array of 1 item(s) |
+| `actors` | array[4] | no | array of 4 item(s) |
+| `stakeholders` | array[4] | no | array of 4 item(s) |
 
 
 ## 4. Hierarchical Decomposition (Path Scheme)

@@ -15,13 +15,13 @@ process_classification:
     reference: change-requests/CR-BP-CE-L2-process-adopted-fields.md
   status: active
 owner:
-  value: awaiting_owner_confirmation
-  status: proposed
+  value: Strategy & Direction Process Owner
+  status: confirmed
   provenance:
-    type: inference
-    asserted_by: dea-completeness-programme
+    type: manual
+    asserted_by: GOV-002 (Business Process Owner decision, ratified 2026-10-27)
     asserted_at: '2026-10-27'
-    reference: change-requests/CR-BP-CE-L2-process-adopted-fields.md
+    reference: change-requests/CR-BP-GS-1-governance-sweep.md
   review_due: '2026-12-31'
   decision_right: Business Process Owner (GOV-002) confirms
 trigger: A regulated entity's supervisor-acknowledged-and-live strategic plan must be sunset because a competent regulator has required its retirement (failed stress test triggers plan replacement; bank recovery-plan rejection by the SRB; FDIC directive to retire an inadequate resolution plan; state PUC retraction of an approved strategic plan; NHS England directive to retire a non-viable 5-year strategy).
@@ -167,3 +167,14 @@ metadata:
       l4-reached per CR-BP-32 section 12 pending Task records
 
       (dea:Task lifecycle: proposed).'
+  - cr: CR-BP-GS-1
+    date: '2026-10-27'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Strategy & Direction Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+actors:
+- industry regulator
+- finance function
+- strategy function
+stakeholders:
+- industry regulator
+- finance function
+- strategy function

@@ -29,6 +29,7 @@ This directory hosts the canonical Process record for `processes:process-fa-desi
 | 2026-09-08 | `CR-BP-21e` | Initial L2 Process entry; lands as part of the CR-BP-21e | System |
 | 2026-09-13 | `CR-BP-52` | L3 decomposition of this Business Process: 4 Activities | System |
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
+| 2026-10-27 | `CR-BP-GS-1` | Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under  | System |
 
 ## 5. Properties and Relationships
 
@@ -50,6 +51,8 @@ This directory hosts the canonical Process record for `processes:process-fa-desi
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `links` | array[2] | no | array of 2 item(s) |
 | `context` | array[1] | no | array of 1 item(s) |
+| `actors` | array[1] | no | array of 1 item(s) |
+| `stakeholders` | array[1] | no | array of 1 item(s) |
 
 
 ## 4. Hierarchical Decomposition (Path Scheme)

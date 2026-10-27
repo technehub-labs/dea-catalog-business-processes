@@ -15,13 +15,13 @@ process_classification:
     reference: change-requests/CR-BP-CE-L2-process-adopted-fields.md
   status: active
 owner:
-  value: awaiting_owner_confirmation
-  status: proposed
+  value: Strategy & Direction Process Owner
+  status: confirmed
   provenance:
-    type: inference
-    asserted_by: dea-completeness-programme
+    type: manual
+    asserted_by: GOV-002 (Business Process Owner decision, ratified 2026-10-27)
     asserted_at: '2026-10-27'
-    reference: change-requests/CR-BP-CE-L2-process-adopted-fields.md
+    reference: change-requests/CR-BP-GS-1-governance-sweep.md
   review_due: '2026-12-31'
   decision_right: Business Process Owner (GOV-002) confirms
 trigger: A regulated entity's board-approved strategic plan must be filed with or activated under the supervision of a competent regulator before the plan takes effect (Basel ICAAP / SAA approval; BRRD recovery-plan activation under SRB; NHS trust 5-year strategy approval; PUC integrated resource plan filing; bank recovery and resolution plan activation under FDIC).
@@ -148,3 +148,22 @@ metadata:
       proposed). See research/l3-candidate-universe.yaml.
 
       '
+  - cr: CR-BP-GS-1
+    date: '2026-10-27'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Strategy & Direction Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+actors:
+- industry regulator
+- supervising authority
+- governing board
+- risk function
+- workforce management
+- operations function
+- strategy function
+stakeholders:
+- industry regulator
+- supervising authority
+- governing board
+- risk function
+- workforce management
+- operations function
+- strategy function

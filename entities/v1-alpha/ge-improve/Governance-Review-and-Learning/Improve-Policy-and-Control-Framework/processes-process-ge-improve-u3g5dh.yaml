@@ -15,13 +15,13 @@ process_classification:
     reference: change-requests/CR-BP-CE-L2-process-adopted-fields.md
   status: active
 owner:
-  value: awaiting_owner_confirmation
-  status: proposed
+  value: Governance & Existence Process Owner
+  status: confirmed
   provenance:
-    type: inference
-    asserted_by: dea-completeness-programme
+    type: manual
+    asserted_by: GOV-002 (Business Process Owner decision, ratified 2026-10-27)
     asserted_at: '2026-10-27'
-    reference: change-requests/CR-BP-CE-L2-process-adopted-fields.md
+    reference: change-requests/CR-BP-GS-1-governance-sweep.md
   review_due: '2026-12-31'
   decision_right: Business Process Owner (GOV-002) confirms
 context:
@@ -68,6 +68,10 @@ metadata:
   - processes:activity-ge-improve-a7mqxm
   - processes:activity-ge-improve-n9jd2z
   - processes:activity-ge-improve-68awnk
+  change_history:
+  - cr: CR-BP-GS-1
+    date: '2026-10-27'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Governance & Existence Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 change_history:
 - version: 1.0.0
   date: '2026-09-08'
@@ -98,3 +102,9 @@ change_history:
     (CR-BP-34d).
 
     '
+actors:
+- audit function
+- strategy function
+stakeholders:
+- audit function
+- strategy function

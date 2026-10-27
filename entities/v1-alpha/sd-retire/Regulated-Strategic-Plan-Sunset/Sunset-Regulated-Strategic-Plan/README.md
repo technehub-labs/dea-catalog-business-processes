@@ -28,6 +28,7 @@ This directory hosts the canonical Process record for `processes:process-sd-reti
 | :--- | :--- | :--- | :--- |
 | 2026-09-19 | `CR-BP-101` | First canonical admission at the StrategyAndDirection x | System |
 | 2026-09-19 | `CR-BP-101a` | L3 decomposition tranche (CR-BP-101a): added | System |
+| 2026-10-27 | `CR-BP-GS-1` | Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Strategy & Direction Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under  | System |
 
 ## 5. Properties and Relationships
 
@@ -52,6 +53,8 @@ This directory hosts the canonical Process record for `processes:process-sd-reti
 | `discovery` | object | no | object: record, candidate, score, axes, disposition |
 | `governance` | object | no | object: regulators, statutory_retention |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
+| `actors` | array[3] | no | array of 3 item(s) |
+| `stakeholders` | array[3] | no | array of 3 item(s) |
 
 **Relationships**
 

@@ -21,7 +21,12 @@ This directory hosts the canonical Process record for `processes:process-fa-buil
 
 ## 2. Governance and Provenance
 
-(governance and provenance to be backfilled at EXT-04)
+
+**Change and Audit History**
+
+| Date | Change Request | Action / Disposition | Author |
+| :--- | :--- | :--- | :--- |
+| 2026-10-27 | `CR-BP-GS-1` | Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under  | System |
 
 ## 5. Properties and Relationships
 
@@ -44,6 +49,8 @@ This directory hosts the canonical Process record for `processes:process-fa-buil
 | `relationships` | array[1] | no | array of 1 item(s) |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences, target_id |
 | `change_history` | array[2] | no | array of 2 item(s) |
+| `actors` | array[1] | no | array of 1 item(s) |
+| `stakeholders` | array[1] | no | array of 1 item(s) |
 
 
 ## 4. Hierarchical Decomposition (Path Scheme)

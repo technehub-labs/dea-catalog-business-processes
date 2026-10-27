@@ -127,7 +127,14 @@ class TestReportAttribution(unittest.TestCase):
 
     def test_by_level_findings_are_not_structurally_zero(self):
         # At least one level must carry findings; a zero column everywhere
-        # is the signature of the rule-code/level-name key mismatch.
+        # is the signature of the rule-code/level-name key mismatch. Post
+        # CR-BP-GS-1 the live catalogue is genuinely clean (0 findings), so
+        # the structural guard only applies when findings exist; the
+        # attribution machinery itself is covered by the fixture tests.
+        if self.rep["summary"]["total_findings"] == 0:
+            self.assertTrue(all(d["findings"] == 0 for d in self.rep["by_level"].values()),
+                            self.rep["by_level"])
+            return
         self.assertTrue(any(d["findings"] > 0 for d in self.rep["by_level"].values()),
                         self.rep["by_level"])
 
@@ -218,27 +225,34 @@ class TestCli(unittest.TestCase):
         d = _y.safe_load(rep.read_text())
         self.assertEqual(d["record_count"], 3723)
         self.assertIn("by_level", d)
-        # The seven operational fields were populated in 0 records at the CE-0
-        # baseline (the programme's core thesis). The tranches populate them
-        # progressively with provenance-marked values: CE-L1 lands the L1
-        # `owner` candidates (49 PGs); CE-L2 lands the L2 `owner` candidates
-        # (145 BPs) and the derived `process_classification` blocks (145).
-        # `owner` is therefore 49 + 145 = 194 with both tranches merged (145
-        # from CE-L2 alone while CE-L1 is pending), and the rest remain 0
-        # pending their tranches or the human governance sweep.
+        # The seven operational fields were populated in 0 records at the
+        # CE-0 baseline. The tranches + the CR-BP-GS-1 governance sweep
+        # populate them progressively: owner (194: 49 PGs + 145 BPs,
+        # GOV-002 confirmed), actors/stakeholders (145 BPs each, GOV-003
+        # charter-derived). The expectations are computed from the live
+        # tree so the test holds at every programme stage.
         import glob as _glob
         import yaml as _yaml
-        l1_owner = sum(
-            1 for p in _glob.glob(str(ROOT / "entities" / "**" / "processes-group-*.yaml"), recursive=True)
-            if _yaml.safe_load(open(p, encoding="utf-8")).get("owner")
-        )
-        l2_owner = sum(
-            1 for p in _glob.glob(str(ROOT / "entities" / "**" / "processes-process-*.yaml"), recursive=True)
-            if _yaml.safe_load(open(p, encoding="utf-8")).get("owner")
-        )
+
+        def _count(field, pattern):
+            return sum(
+                1 for p in _glob.glob(str(ROOT / "entities" / "**" / pattern), recursive=True)
+                if _yaml.safe_load(open(p, encoding="utf-8")).get(field)
+            )
+
+        l2_actors = _count("actors", "processes-process-*.yaml")
+        l2_stakeholders = _count("stakeholders", "processes-process-*.yaml")
+        expected_by_field = {
+            "owner": _count("owner", "processes-group-*.yaml") + _count("owner", "processes-process-*.yaml"),
+            "actors": l2_actors,
+            "stakeholders": l2_stakeholders,
+            "kpis": 0,
+            "services_provided": 0,
+            "components_involved": 0,
+            "specialization_pattern": 0,
+        }
         for k, v in d["adoption"]["operational_fields"].items():
-            expected = (l1_owner + l2_owner) if k == "owner" else 0
-            self.assertEqual(v["populated"], expected, k)
+            self.assertEqual(v["populated"], expected_by_field[k], k)
         pc_pop = d["adoption"]["process_classification"]["populated"]
         self.assertEqual(
             pc_pop,

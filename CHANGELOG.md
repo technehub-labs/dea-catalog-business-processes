@@ -6,6 +6,10 @@ All notable changes to this repository are documented here. Format follows
 
 ## [Unreleased]
 
+### CR-BP-GS-1: Governance Sweep (GOV-002 Owner Ratification + GOV-003 Role-Based Derivation)
+
+The GOV-002/GOV-003 governance sweep closing the completeness programme's final open items (the CE-RL carve-out population). GOV-002: one Process Owner role per domain (7 roles) covers all 194 L1 PGs + L2 BPs -- every owner block flips status proposed -> confirmed with provenance.type manual. GOV-003: the 145 BPs' actors/stakeholders are derived from each record's own parent cell charter vocabulary (charter-named roles only; the domain design authority fallback for architectural-vocabulary cells), with per-record refinement the standing review item. Post-sweep: gate [50] reports 0 blocking, 0 advisory across all 3,723 records -- the catalogue is 100% complete on its ratified profiles, ahead of the 2026-12-31 EXT-24 review window. Follow-up: reconcile the EXT-24 ownership register's awaiting_owner_confirmation dispositions to the confirmed roles. D-004 clean.
+
 ### CR-BP-CE-RL: Completeness Gate Posture Flip and Programme Closure
 
 The final slice of the completeness programme. Gate [50] Completeness Profiles flips advisory -> BLOCKING in the conformance_result.py registry (--advisory -> --strict): the blocking profile is 0 across all 3,723 records, so CI now fails on newly introduced schema-profile defects (required fields emptied, prohibited fields added, non-vocabulary Task responsibilities) — the 43-blocking-defect class cannot re-enter silently. The 290 knowledge-dependent CE-L2-006 actors/stakeholders candidates remain advisory via the explicit time-bound carve-out pending the GOV-002/GOV-003 sweep (EXT-24 register review due 2026-12-31; the EXT-23 exception lifecycle applies if the window lapses). The S16 CR-number pattern is extended additively to admit the CE-RL / CE-REC-N tranche names. The MECE cross-level relationship validator remains a separate follow-on CR per the umbrella §4. D-004 clean.
