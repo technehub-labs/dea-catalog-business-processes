@@ -32,6 +32,115 @@ class TestLevelInference(unittest.TestCase):
         self.assertIsNone(cc.level_of({"id": "processes:weird"}))
 
 
+class TestDomainResolution(unittest.TestCase):
+    """R7: the finding counter and the denominator must resolve the domain the
+    same way, or the per-domain completeness figures count one population and
+    divide by another."""
+
+    def test_top_level_domain_wins(self):
+        r = {"domain": "FinanceAndAccounting",
+             "ecfConformance": {"canonicalReferences": [{"domain": "Other"}]}}
+        self.assertEqual(cc.domain_of(r), "FinanceAndAccounting")
+
+    def test_ecf_conformance_fallback(self):
+        # Only ProcessContext carries a top-level `domain`; every other level
+        # resolves through ecfConformance.canonicalReferences[0].domain.
+        r = {"id": "processes:task-x", "type": "Task",
+             "ecfConformance": {"canonicalReferences": [{"domain": "ProductAndValue"}]}}
+        self.assertEqual(cc.domain_of(r), "ProductAndValue")
+
+    def test_first_matching_reference_wins(self):
+        r = {"ecfConformance": {"canonicalReferences": [
+            {"domain": "First"}, {"domain": "Second"}]}}
+        self.assertEqual(cc.domain_of(r), "First")
+
+    def test_unresolvable_is_question_mark(self):
+        self.assertEqual(cc.domain_of({"id": "x"}), "?")
+        self.assertEqual(cc.domain_of({"ecfConformance": {}}), "?")
+        self.assertEqual(cc.domain_of({"ecfConformance": {"canonicalReferences": []}}), "?")
+
+    def test_non_dict_references_are_safe(self):
+        r = {"ecfConformance": {"canonicalReferences": ["not-a-dict", {"domain": "Ok"}]}}
+        self.assertEqual(cc.domain_of(r), "Ok")
+
+
+class TestRuleLevelMapping(unittest.TestCase):
+    """The rule code carries the level (CR-BP-CE-0 R1 mapping). Attributing the
+    level from the rule code is what makes by_level.findings real; keying the
+    counter on the level NAME while findings are keyed on the rule code yields
+    a structurally-zero column."""
+
+    def test_each_level_segment_maps_to_its_canonical_level(self):
+        self.assertEqual(cc.level_of_rule("CE-L0-003"), "ProcessContext")
+        self.assertEqual(cc.level_of_rule("CE-L1-005"), "ProcessGroup")
+        self.assertEqual(cc.level_of_rule("CE-L2-006"), "Process")
+        self.assertEqual(cc.level_of_rule("CE-L3-001"), "Activity")
+        self.assertEqual(cc.level_of_rule("CE-L4-002"), "Task")
+
+    def test_cross_level_rule_has_no_level(self):
+        self.assertIsNone(cc.level_of_rule("CE-000"))
+
+    def test_unknown_segment_has_no_level(self):
+        self.assertIsNone(cc.level_of_rule("CE-L9-001"))
+
+
+class TestReportAttribution(unittest.TestCase):
+    """The CE-900 artifact must carry the per-domain completeness that the CR
+    specifies, with one consistent domain resolution."""
+
+    @classmethod
+    def setUpClass(cls):
+        subprocess.run([sys.executable, str(ROOT / "scripts" / "check_completeness.py"),
+                        "--advisory"], capture_output=True, text=True, cwd=str(ROOT))
+        import yaml as _y
+        cls.rep = _y.safe_load(
+            (ROOT / "reconciliation" / "completeness-report.yaml").read_text(encoding="utf-8"))
+
+    def test_by_domain_is_emitted_with_totals_and_pct(self):
+        self.assertIn("by_domain", self.rep)
+        self.assertTrue(self.rep["by_domain"])
+        for dom, d in self.rep["by_domain"].items():
+            self.assertIn("records", d, dom)
+            self.assertIn("findings", d, dom)
+            self.assertIn("completeness_pct", d, dom)
+            self.assertGreater(d["records"], 0, dom)
+            self.assertTrue(0.0 <= d["completeness_pct"] <= 100.0, dom)
+
+    def test_no_unresolved_pseudo_domain(self):
+        # The pseudo-domain '?' meant the per-domain signal was unusable.
+        self.assertNotIn("?", self.rep["by_domain"])
+        self.assertNotIn("?", self.rep["by_domain_findings"])
+
+    def test_domain_totals_cover_every_record(self):
+        self.assertEqual(sum(d["records"] for d in self.rep["by_domain"].values()),
+                         self.rep["record_count"])
+
+    def test_by_level_findings_sum_to_total_findings(self):
+        # Guards the structurally-zero column: the per-level finding counts
+        # must add up to the findings actually raised.
+        self.assertEqual(sum(d["findings"] for d in self.rep["by_level"].values()),
+                         self.rep["summary"]["total_findings"])
+
+    def test_by_domain_findings_sum_to_total_findings(self):
+        self.assertEqual(sum(self.rep["by_domain_findings"].values()),
+                         self.rep["summary"]["total_findings"])
+
+    def test_by_level_findings_are_not_structurally_zero(self):
+        # At least one level must carry findings; a zero column everywhere
+        # is the signature of the rule-code/level-name key mismatch.
+        self.assertTrue(any(d["findings"] > 0 for d in self.rep["by_level"].values()),
+                        self.rep["by_level"])
+
+    def test_records_with_findings_never_exceeds_records(self):
+        for section in ("by_level", "by_domain"):
+            for k, d in self.rep[section].items():
+                self.assertLessEqual(d["records_with_findings"], d["records"], f"{section}.{k}")
+
+    def test_by_rule_is_emitted(self):
+        self.assertIn("by_rule", self.rep)
+        self.assertEqual(sum(self.rep["by_rule"].values()), self.rep["summary"]["total_findings"])
+
+
 class TestProfiles(unittest.TestCase):
     def test_complete_pc_no_blocking(self):
         f = cc.check_record(P("p.yaml"), PC_FULL, {})

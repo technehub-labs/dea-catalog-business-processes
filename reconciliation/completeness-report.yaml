@@ -2,24 +2,79 @@ cr: CR-BP-CE-0
 mode: advisory
 record_count: 3723
 by_level:
-  Task:
-    records: 2900
-    findings: 0
   Activity:
     records: 580
+    records_with_findings: 0
     findings: 0
+    completeness_pct: 100.0
   Process:
     records: 145
-    findings: 0
-  ProcessGroup:
-    records: 49
-    findings: 0
+    records_with_findings: 145
+    findings: 290
+    completeness_pct: 0.0
   ProcessContext:
     records: 49
+    records_with_findings: 1
+    findings: 1
+    completeness_pct: 97.96
+  ProcessGroup:
+    records: 49
+    records_with_findings: 0
     findings: 0
+    completeness_pct: 100.0
+  Task:
+    records: 2900
+    records_with_findings: 580
+    findings: 580
+    completeness_pct: 80.0
+by_domain:
+  AgencyAndOrganization:
+    records: 639
+    records_with_findings: 125
+    findings: 150
+    completeness_pct: 80.44
+  EnablementAndOperations:
+    records: 770
+    records_with_findings: 151
+    findings: 181
+    completeness_pct: 80.39
+  FinanceAndAccounting:
+    records: 564
+    records_with_findings: 110
+    findings: 132
+    completeness_pct: 80.5
+  GovernanceAndExistence:
+    records: 440
+    records_with_findings: 86
+    findings: 104
+    completeness_pct: 80.45
+  PartyAndRelationship:
+    records: 289
+    records_with_findings: 55
+    findings: 66
+    completeness_pct: 80.97
+  ProductAndValue:
+    records: 464
+    records_with_findings: 90
+    findings: 108
+    completeness_pct: 80.6
+  StrategyAndDirection:
+    records: 557
+    records_with_findings: 109
+    findings: 130
+    completeness_pct: 80.43
 by_domain_findings:
-  '?': 870
-  StrategyAndDirection: 1
+  AgencyAndOrganization: 150
+  EnablementAndOperations: 181
+  FinanceAndAccounting: 132
+  GovernanceAndExistence: 104
+  PartyAndRelationship: 66
+  ProductAndValue: 108
+  StrategyAndDirection: 130
+by_rule:
+  CE-L0-003: 1
+  CE-L2-006: 290
+  CE-L4-002: 580
 adoption:
   operational_fields:
     owner:
