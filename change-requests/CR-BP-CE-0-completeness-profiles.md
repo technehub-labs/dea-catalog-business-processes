@@ -9,11 +9,20 @@
 
 | Field | Value |
 |---|---|
-| CR id | CR-BP-CE-0 (umbrella for CR-BP-CE-L1..L4, CR-BP-CE-RL) |
+| CR id | CR-BP-CE-0 (umbrella for CR-BP-CE-L0..L4, CR-BP-CE-RL; numbering reconciled by CR-BP-CE-REC-1) |
 | Status | draft (awaiting maintainer ratification) |
 | Type | additive + governance (no semantic rewrites of existing entries) |
 | Scope | whole `entities/v1-alpha/` tree + `contributions/processes/` |
 | Related | CR-BP-03 (architecture), CR-BP-14 (semantics), CR-BP-44 (L3 decomposition), CR-BP-94-EXT-* (methodology) |
+
+
+> **Numbering reconciliation (CR-BP-CE-REC-1).** This CR was originally
+> drafted with the levels numbered L1..L4. The canonical model is L0..L4
+> (Process Context = L0), which the gate rule ids and the landed tranche
+> CRs (CR-BP-CE-L0/L1/L2/L4) follow. The labels, rule references, and
+> population counts in this document are reconciled to the canonical
+> model; no normative profile content changes.
+
 
 ## §2 Motivation
 
@@ -21,34 +30,34 @@ The catalog schema (`schemas/entity.schema.json`, 25 properties) is materially a
 
 ## §3 Completeness profiles (normative)
 
-"Complete" means: **every field in the level's profile is present, non-empty, and evidence-consistent**. Fields not in a level's profile are *prohibited* at that level (existing deliberate omissions — e.g. `type`/`version` on L1 PCs — are reaffirmed, not fixed).
+"Complete" means: **every field in the level's profile is present, non-empty, and evidence-consistent**. Fields not in a level's profile are *prohibited* at that level (existing deliberate omissions — e.g. `type`/`version` on L0 PCs — are reaffirmed, not fixed).
 
-### L1 — Process Context (49 records)
+### L0 — Process Context (49 records)
 
 | Field | Status | Rule |
 |---|---|---|
 | `id`, `domain`, `lifecycle_stage`, `name` | required | already canonical (id system gate) |
 | `definition` | required | non-empty; references absorbed domains where applicable |
-| `scope.includes` / `scope.excludes` | required | >=3 each; boundary statements must name the *neighbor cell* absorbing each exclusion (CE-L1-003) |
+| `scope.includes` / `scope.excludes` | required | >=3 each; boundary statements must name the *neighbor cell* absorbing each exclusion (CE-L0-003) |
 | `outcomes` | required | >=3; each begins with a state-change verb phrase |
-| `adjacent_contexts` | required | exactly the 4 same-domain adjacent-stage PC ids — **bidirectional**: each adjacent PC must reciprocally list this cell (CE-L1-004) |
-| `processes[]` | required | must equal the set of L3 records physically located under this cell (cross-checked with the allocation matrix job) |
-| `cell_charter` | required | all 7 sub-fields present and consistent with `scope` + `outcomes` (duplicated content must not drift — CE-L1-005) |
+| `adjacent_contexts` | required | exactly the 4 same-domain adjacent-stage PC ids — **bidirectional**: each adjacent PC must reciprocally list this cell (CE-L0-004) |
+| `processes[]` | required | must equal the set of L2 records physically located under this cell (cross-checked with the allocation matrix job) |
+| `cell_charter` | required | all 7 sub-fields present and consistent with `scope` + `outcomes` (duplicated content must not drift — CE-L0-005) |
 | `lifecycle_status`, `status`, `established_by/at`, `change_history[]`, `links[]` | required | every record carries >=1 CR `links` entry |
 | `type`, `version`, `process_intent`, `process_audience` | prohibited | reaffirms the mv1 PC profile |
 
-### L2 — Process Group (49 records)
+### L1 — Process Group (49 records)
 
 | Field | Status | Rule |
 |---|---|---|
 | `id`, `name`, `type`, `version` | required | |
-| `description` | required | states the grouping *basis* (what makes these L3s a group — not a restatement of the cell) |
+| `description` | required | states the grouping *basis* (what makes these L2 children a group — not a restatement of the cell) |
 | `context` | required | >=1 `ref:` to the parent PC |
-| `relationships` | required | >=N `composes` instances, one per child L3, with provenance (CE-L2-002) |
+| `relationships` | required | >=N `composes` instances, one per child L2 process, with provenance (CE-L1 required-fields family) |
 | `owner` | required | knowledge-dependent -> admitted as `status: proposed` candidate during tranche (see §5) |
 | `metadata.scope` | required | L0 scope reference consistent with the parent PC's `scope.includes` |
 
-### L3 — Business Process (140 records)
+### L2 — Business Process (145 records)
 
 | Field | Status | Rule |
 |---|---|---|
@@ -58,32 +67,32 @@ The catalog schema (`schemas/entity.schema.json`, 25 properties) is materially a
 | `trigger`, `outcome`, `identity.*` | required | BP-ARC-ID-001..005 already enforced |
 | `relationships` | required | >=1 `realizes` + >=1 `serves`; `composes` toward parent group |
 | `owner`, `actors`, `stakeholders` | required | org-awareness fields; candidates admitted per §5 |
-| `kpis` | recommended | >=2; flagged, not blocked, when empty (CE-L3-006) |
+| `kpis` | recommended | >=2; flagged, not blocked, when empty (CE-L2-006) |
 | `services_provided`, `components_involved` | recommended | >=1 each where the process is externally observable |
 | `specialization_pattern` | recommended | when `process_specialization` non-empty |
 | `capabilities_delivered` | prohibited | soft-deprecated (BP-MIG-002) |
 
-### L4 — Activity (560) / Task (2,800)
+### L3 — Activity (580) / L4 — Task (2,900)
 
 | Field | Status | Rule |
 |---|---|---|
 | `id`, `name`, `type`, `version` | required | |
-| `trigger`, `outcome` | required | template-derived from parent L3 identity; must not merely restate the parent (CE-L4-002: leaf-specificity check) |
+| `trigger`, `outcome` | required | template-derived from parent L3 activity identity; must not merely restate the parent (CE-L4-002: leaf-specificity check) |
 | `relationships` | required | >=1 `composes` to parent; task->activity `flows-to` chain where sequential semantics are established |
 | Task verb | fixed | the 5 standard verbs only (intake/record/transform/confirm/verify) — no enrichment may alter |
 | `actors` | recommended | |
-| L2/L3-only fields (`kpis`, `process_classification`, ...) | prohibited at L4 | |
+| L2-only fields (`kpis`, `process_classification`, ...) | prohibited at L4 | |
 
 ## §4 New gate: `scripts/check_completeness.py`
 
-Runs in CI (`.github/workflows/catalog-conformance.yml`), PR-scoped:
+Runs in CI via the `conformance_result.py` gate registry (gate [50], advisory; `.github/workflows/ci.yml`), PR-scoped:
 
 | Rule | Check |
 |---|---|
 | CE-000 | record's level is inferable (id family + placement); profile applied accordingly |
-| CE-1xx/2xx/3xx/4xx | per-level profile rules above |
+| CE-0xx/1xx/2xx/3xx/4xx | per-level profile rules above (L0..L4) |
 | CE-900 | summary artifact `reconciliation/completeness-report.yaml`: per-level, per-domain completeness % — baseline for the tranche sequence |
-| Mode | `--advisory` for the first N PRs (report-only), `--strict` after CR-BP-CE-L1 lands |
+| Mode | `--advisory` for the first N PRs (report-only), `--strict` after the level tranches land (CR-BP-CE-RL) |
 
 New MECE validator (separate, CR-BP-CE-RL): `scripts/check_relationship_consistency.py` — rejects overlapping `composes`/`flows-to`/`produces` assertions between the same pair and dangling relationship targets.
 
@@ -105,10 +114,10 @@ provenance:
 
 ## §6 Tranche sequencing (dependency-ordered)
 
-1. **CR-BP-CE-L1** — land this CR + gate in advisory mode; 49 L1 batches.
-2. **CR-BP-CE-L2** — 49 group records; uses L1 charters for grouping-basis derivation.
-3. **CR-BP-CE-L3** — 140 processes; 7 per-domain sub-tranches (pilot: `pr-`); gate -> strict for L1/L2.
-4. **CR-BP-CE-L4** — 3,360 activity/task records; templated from landed L3 identities.
+1. **CR-BP-CE-L0** — 8 escape-clause ProcessContext repairs (MERGED, PR #202).
+2. **CR-BP-CE-L1** — 49 ProcessGroup owner candidates (MERGED, PR #204).
+3. **CR-BP-CE-L2** — 145 Processes; classification + owner candidates (MERGED, PR #206).
+4. **CR-BP-CE-L4** — custodian vocabulary normalization, 580 Tasks (MERGED, PR #208).
 5. **CR-BP-CE-RL** — cross-level relationship graph (`flows-to`, `produces`/`consumes`), MECE validator, closure audit.
 
 ## §7 Landing conventions
