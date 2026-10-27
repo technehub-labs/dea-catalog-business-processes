@@ -1,0 +1,63 @@
+# Completeness contribution batch (CR-BP-CE-0 §6, Tranche L1).
+# Diff-style: only fields that change are asserted. Source record is not
+# rewritten wholesale; the CI report merges and the maintainer reviews.
+# Pilot batch for the eo-operate cell, verified against the actual record
+# processes-pc-eo-operate-ydqb96.yaml.
+id: dea:contrib-ce-l1-eo-operate
+schema: dea-catalog-processes/contribution/v1
+contribution_type: completeness-batch
+cr: change-requests/CR-BP-CE-0-completeness-profiles.md
+contributor: dea-completeness-programme
+contribution_date: '2026-10-26'
+status: pending
+reviewer: DEA-curator
+
+target_entry: processes:pc-eo-operate-ydqb96
+target_path: entities/v1-alpha/eo-operate/processes-pc-eo-operate-ydqb96.yaml
+
+proposed_changes:
+  # CE-L1-004 repair: adjacent_contexts is complete (4/4), but
+  # cell_charter.adjacent_boundaries must mirror it 1:1.
+  - field: cell_charter.adjacent_boundaries
+    action: verify-reciprocal
+    against:
+      - processes:pc-eo-conceive-mxmtzq
+      - processes:pc-eo-design-kxdfnz
+      - processes:pc-eo-build-zwkhxc
+      - processes:pc-eo-improve-pka6dk
+    rationale: >
+      CE-L1-004 bidirectionality: each adjacent PC must list this cell
+      in its own adjacent_contexts. Programme asserts the check; any
+      asymmetry is surfaced in the report, not auto-fixed.
+
+  # Repair candidate: the record's research-register link points into a
+  # sibling cell's group file (pr-operate). Flagged for maintainer
+  # decision - likely should target this cell's group subtree or the
+  # L1 register.
+  - field: links
+    action: flag-anomaly
+    finding: >
+      links[rel=research-register] targets
+      entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/
+      processes-group-pr-operate-7ab3ma.yaml - cross-cell target.
+    recommendation: >
+      re-point to the eo-operate group subtree or the L1 register per
+      CR-BP-113 href-repair conventions.
+
+  # Change-history entry for this enrichment itself (CR Metadata Gate).
+  - field: change_history
+    action: append
+    value:
+      cr: CR-BP-CE-L1
+      date: '2026-10-26'
+      change: >
+        Completeness tranche L1: bidirectionality audit of
+        adjacent_contexts/adjacent_boundaries; href anomaly flagged
+        for maintainer decision. No semantic change to the context
+        definition, scope, or outcomes (additive, metadata-only).
+
+evidence:
+  - type: artifact
+    ref: reconciliation/completeness-report.yaml
+  - type: governance
+    ref: change-requests/CR-BP-CE-0-completeness-profiles.md
