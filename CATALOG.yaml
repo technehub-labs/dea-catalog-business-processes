@@ -4,7 +4,7 @@ catalog:
     candidates: 0
     canonical: 3722
     entities: 3723
-    open_change_requests: 130
+    open_change_requests: 131
     research_files: 339
     retired: 1
   cross_cutting:
@@ -6941,7 +6941,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-ao-activate-kusw2u
-    last_modified: '2026-10-17'
+    last_modified: '2026-10-26'
     lifecycle_status: unknown
     path: entities/v1-alpha/ao-activate/processes-pc-ao-activate-kusw2u.yaml
     research_count: 0
@@ -6952,7 +6952,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-ao-build-pjk4rz
-    last_modified: '2026-10-17'
+    last_modified: '2026-10-26'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-build/processes-pc-ao-build-pjk4rz.yaml
     research_count: 0
@@ -6996,7 +6996,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-ao-operate-zfevmp
-    last_modified: '2026-10-17'
+    last_modified: '2026-10-26'
     lifecycle_status: candidate
     path: entities/v1-alpha/ao-operate/processes-pc-ao-operate-zfevmp.yaml
     research_count: 0
@@ -7007,7 +7007,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-ao-retire-3kqe9c
-    last_modified: '2026-10-17'
+    last_modified: '2026-10-26'
     lifecycle_status: unknown
     path: entities/v1-alpha/ao-retire/processes-pc-ao-retire-3kqe9c.yaml
     research_count: 0
@@ -7018,7 +7018,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-eo-activate-xdfscw
-    last_modified: '2026-10-17'
+    last_modified: '2026-10-26'
     lifecycle_status: unknown
     path: entities/v1-alpha/eo-activate/processes-pc-eo-activate-xdfscw.yaml
     research_count: 0
@@ -7029,7 +7029,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-eo-build-zwkhxc
-    last_modified: '2026-10-17'
+    last_modified: '2026-10-26'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-build/processes-pc-eo-build-zwkhxc.yaml
     research_count: 0
@@ -7073,7 +7073,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-eo-operate-ydqb96
-    last_modified: '2026-10-17'
+    last_modified: '2026-10-26'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-operate/processes-pc-eo-operate-ydqb96.yaml
     research_count: 0
@@ -7084,7 +7084,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-eo-retire-nw3ynf
-    last_modified: '2026-10-17'
+    last_modified: '2026-10-26'
     lifecycle_status: candidate
     path: entities/v1-alpha/eo-retire/processes-pc-eo-retire-nw3ynf.yaml
     research_count: 0
@@ -7095,7 +7095,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-fa-activate-yrhcfm
-    last_modified: '2026-10-17'
+    last_modified: '2026-10-26'
     lifecycle_status: unknown
     path: entities/v1-alpha/fa-activate/processes-pc-fa-activate-yrhcfm.yaml
     research_count: 0
@@ -7106,7 +7106,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-fa-build-pztsp9
-    last_modified: '2026-10-17'
+    last_modified: '2026-10-26'
     lifecycle_status: candidate
     path: entities/v1-alpha/fa-build/processes-pc-fa-build-pztsp9.yaml
     research_count: 0
@@ -7150,7 +7150,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-fa-operate-afew7e
-    last_modified: '2026-10-17'
+    last_modified: '2026-10-26'
     lifecycle_status: candidate
     path: entities/v1-alpha/fa-operate/processes-pc-fa-operate-afew7e.yaml
     research_count: 0
@@ -7161,7 +7161,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-fa-retire-64q5p9
-    last_modified: '2026-10-17'
+    last_modified: '2026-10-26'
     lifecycle_status: unknown
     path: entities/v1-alpha/fa-retire/processes-pc-fa-retire-64q5p9.yaml
     research_count: 0
@@ -7216,7 +7216,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-ge-improve-c78ppp
-    last_modified: '2026-10-17'
+    last_modified: '2026-10-26'
     lifecycle_status: candidate
     path: entities/v1-alpha/ge-improve/processes-pc-ge-improve-c78ppp.yaml
     research_count: 0
@@ -7227,7 +7227,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-ge-operate-hb2dac
-    last_modified: '2026-10-17'
+    last_modified: '2026-10-26'
     lifecycle_status: candidate
     path: entities/v1-alpha/ge-operate/processes-pc-ge-operate-hb2dac.yaml
     research_count: 0
@@ -7238,7 +7238,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-ge-retire-kndw6x
-    last_modified: '2026-10-17'
+    last_modified: '2026-10-26'
     lifecycle_status: unknown
     path: entities/v1-alpha/ge-retire/processes-pc-ge-retire-kndw6x.yaml
     research_count: 0
@@ -7315,7 +7315,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-pr-retire-2cusde
-    last_modified: '2026-10-17'
+    last_modified: '2026-10-26'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-retire/processes-pc-pr-retire-2cusde.yaml
     research_count: 0
@@ -7326,7 +7326,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-pv-activate-f7kne7
-    last_modified: '2026-10-17'
+    last_modified: '2026-10-26'
     lifecycle_status: candidate
     path: entities/v1-alpha/pv-activate/processes-pc-pv-activate-f7kne7.yaml
     research_count: 0
@@ -7403,7 +7403,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-sd-activate-ghaub8
-    last_modified: '2026-10-17'
+    last_modified: '2026-10-26'
     lifecycle_status: unknown
     path: entities/v1-alpha/sd-activate/processes-pc-sd-activate-ghaub8.yaml
     research_count: 0
@@ -7414,7 +7414,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-sd-build-gmzrrm
-    last_modified: '2026-10-17'
+    last_modified: '2026-10-26'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-build/processes-pc-sd-build-gmzrrm.yaml
     research_count: 0
@@ -7447,7 +7447,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-sd-improve-ft9k5f
-    last_modified: '2026-10-17'
+    last_modified: '2026-10-26'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-improve/processes-pc-sd-improve-ft9k5f.yaml
     research_count: 0
@@ -7458,7 +7458,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-sd-operate-5cs5ee
-    last_modified: '2026-10-17'
+    last_modified: '2026-10-26'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-operate/processes-pc-sd-operate-5cs5ee.yaml
     research_count: 0
@@ -7469,7 +7469,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-sd-retire-zxnc3c
-    last_modified: '2026-10-17'
+    last_modified: '2026-10-26'
     lifecycle_status: candidate
     path: entities/v1-alpha/sd-retire/processes-pc-sd-retire-zxnc3c.yaml
     research_count: 0
