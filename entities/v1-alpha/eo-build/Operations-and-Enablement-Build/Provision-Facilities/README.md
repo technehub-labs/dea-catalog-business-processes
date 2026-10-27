@@ -39,6 +39,8 @@ This directory hosts the canonical Process record for `processes:process-eo-buil
 | `status` | string | no | candidate |
 | `process_intent` | string | no | develop |
 | `process_type` | string | no | core |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Operate the Provision Facilities L2 process within the dea:pc-oe-build Cell Charter. See trigger and outcome for the bou |
 | `trigger` | string | no | Facility acquisition and provisioning is needed because the designed blueprint requires physical facilities to be secure |

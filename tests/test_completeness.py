@@ -109,13 +109,34 @@ class TestCli(unittest.TestCase):
         d = _y.safe_load(rep.read_text())
         self.assertEqual(d["record_count"], 3723)
         self.assertIn("by_level", d)
-        # the seven operational fields were populated in 0 records at the CE-0
-        # baseline; the CE-L1 tranche landed the L1 `owner` candidates (49
-        # ProcessGroups, status: proposed awaiting GOV-003 confirmation), so
-        # `owner` is now 49 and the rest remain 0 pending their tranches.
+        # The seven operational fields were populated in 0 records at the CE-0
+        # baseline (the programme's core thesis). The tranches populate them
+        # progressively with provenance-marked values: CE-L1 lands the L1
+        # `owner` candidates (49 PGs); CE-L2 lands the L2 `owner` candidates
+        # (145 BPs) and the derived `process_classification` blocks (145).
+        # `owner` is therefore 49 + 145 = 194 with both tranches merged (145
+        # from CE-L2 alone while CE-L1 is pending), and the rest remain 0
+        # pending their tranches or the human governance sweep.
+        import glob as _glob
+        import yaml as _yaml
+        l1_owner = sum(
+            1 for p in _glob.glob(str(ROOT / "entities" / "**" / "processes-group-*.yaml"), recursive=True)
+            if _yaml.safe_load(open(p, encoding="utf-8")).get("owner")
+        )
+        l2_owner = sum(
+            1 for p in _glob.glob(str(ROOT / "entities" / "**" / "processes-process-*.yaml"), recursive=True)
+            if _yaml.safe_load(open(p, encoding="utf-8")).get("owner")
+        )
         for k, v in d["adoption"]["operational_fields"].items():
-            expected = 49 if k == "owner" else 0
+            expected = (l1_owner + l2_owner) if k == "owner" else 0
             self.assertEqual(v["populated"], expected, k)
+        pc_pop = d["adoption"]["process_classification"]["populated"]
+        self.assertEqual(
+            pc_pop,
+            sum(1 for p in _glob.glob(str(ROOT / "entities" / "**" / "processes-process-*.yaml"), recursive=True)
+                if _yaml.safe_load(open(p, encoding="utf-8")).get("process_classification")),
+            "process_classification counter must match the L2 records carrying the block",
+        )
 
     def test_strict_passes_post_ce_l0(self):
         r = self._run("--strict")

@@ -39,6 +39,8 @@ This directory hosts the canonical Process record for `processes:process-ao-impr
 | `status` | string | no | candidate |
 | `process_intent` | string | no | develop |
 | `process_type` | string | no | management |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Operate the Conduct Capability Gap Analysis L2 process within the dea:pc-ao-improve Cell Charter. See trigger and outcom |
 | `trigger` | string | no | A capability gap analysis is needed because the designed competency framework must be compared against the current agent |

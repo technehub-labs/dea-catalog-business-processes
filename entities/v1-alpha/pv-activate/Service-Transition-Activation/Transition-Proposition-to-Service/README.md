@@ -39,6 +39,8 @@ This directory hosts the canonical Process record for `processes:process-pv-acti
 | `status` | string | no | candidate |
 | `process_intent` | string | no | transform |
 | `process_type` | string | no | core |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Transition a validated proposition, product or service from a prepared state into operational service, with ownership, c |
 | `trigger` | string | no | A validated proposition, product or service has met its readiness threshold and is authorized for operational transition |

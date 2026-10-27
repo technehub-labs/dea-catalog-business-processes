@@ -6,6 +6,24 @@ lifecycle_status: candidate
 status: candidate
 process_intent: transform
 process_type: core
+process_classification:
+  type: core
+  provenance:
+    type: migration
+    asserted_by: dea-completeness-programme
+    asserted_at: '2026-10-27'
+    reference: change-requests/CR-BP-CE-L2-process-adopted-fields.md
+  status: active
+owner:
+  value: awaiting_owner_confirmation
+  status: proposed
+  provenance:
+    type: inference
+    asserted_by: dea-completeness-programme
+    asserted_at: '2026-10-27'
+    reference: change-requests/CR-BP-CE-L2-process-adopted-fields.md
+  review_due: '2026-12-31'
+  decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
 description: 'Withdraw and retire an operational asset (technology or physical): plan and approve the retirement, isolate and withdraw the asset from service, decommission and dispose of it, and resolve its residual value, data and obligations, within the dea:pc-oe-retire Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces. '
 trigger: 'An operational asset reaches end of life, is superseded, or is approved for retirement. '

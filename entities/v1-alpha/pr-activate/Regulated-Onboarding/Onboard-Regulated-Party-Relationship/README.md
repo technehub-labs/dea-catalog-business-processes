@@ -39,6 +39,8 @@ This directory hosts the canonical Process record for `processes:process-pr-acti
 | `status` | string | no | candidate |
 | `process_intent` | string | no | manage |
 | `process_type` | string | no | management |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Onboard a new party relationship in a regulated context (KYC/AML/CDD): verify identity, resolve beneficial ownership, cl |
 | `trigger` | string | no | A new party applies to establish a relationship with the enterprise in a jurisdiction or sector where identity verificat |

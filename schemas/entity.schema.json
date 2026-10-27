@@ -4,48 +4,141 @@
   "title": "Business Process",
   "description": "Schema for Business Process entries in technehub-labs/dea-catalog-processes. Mirrors technehub-labs/dea-metamodel/schemas/entities/process.json (v3.0.0-alpha). The Business Process is the specialization of the OpenDEAM Process kernel (dea:Process in dea-metamodel Core; dea:entity-process in the OpenDEAM root model) for the Business Architecture and Business Operations use cases (CR-MM-PROC-01; CR-AR-FMWK-01; CR-BP-SPEC-BP-01). Sub-classifications (operational / support / management; carried by process_intent) are catalog-internal and do not promote to root-model entities. CR-BP-03 ADDS the process_type (5-value Mintzberg), process_specialization (inheritance), relationships (canonical OpenDEA dea:composes + dea:realizes), and identity sub-block fields ADDITIVELY; existing fields are preserved and existing entries continue to validate.",
   "type": "object",
-  "required": ["id", "name", "type", "version", "process_intent"],
+  "required": [
+    "id",
+    "name",
+    "type",
+    "version",
+    "process_intent"
+  ],
   "properties": {
-    "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]*(:[a-z0-9-]+)+$" },
-    "type": { "type": "string", "const": "Process" },
-    "name": { "type": "string", "minLength": 1, "maxLength": 200 },
-    "description": { "type": "string", "maxLength": 2000 },
-    "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*(:[a-z0-9-]+)+$"
+    },
+    "type": {
+      "type": "string",
+      "const": "Process"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 2000
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
     "process_intent": {
       "type": "string",
-      "enum": ["govern", "manage", "operate", "deliver", "support", "develop", "transform", "operational", "management"],
-      "description": "Process Intent: the purposeful nature of the work performed (CR-BP-14 §9). Canonical controlled vocabulary at classifications/process-intents.yaml: govern / manage / operate / deliver / support / develop / transform. The legacy CR-BP-01 values `operational` and `management` remain readable as deprecated migration aliases during the CR-BP-14 migration period (§17, §20); `support` is both a legacy and a canonical value. Intent is purpose-oriented (not organizational position) and is formally distinct from Process Classification (§11); neither dimension may be inferred from the other (§18; BP-SEM-003/004)."
+      "enum": [
+        "govern",
+        "manage",
+        "operate",
+        "deliver",
+        "support",
+        "develop",
+        "transform",
+        "operational",
+        "management"
+      ],
+      "description": "Process Intent: the purposeful nature of the work performed (CR-BP-14 \u00a79). Canonical controlled vocabulary at classifications/process-intents.yaml: govern / manage / operate / deliver / support / develop / transform. The legacy CR-BP-01 values `operational` and `management` remain readable as deprecated migration aliases during the CR-BP-14 migration period (\u00a717, \u00a720); `support` is both a legacy and a canonical value. Intent is purpose-oriented (not organizational position) and is formally distinct from Process Classification (\u00a711); neither dimension may be inferred from the other (\u00a718; BP-SEM-003/004)."
     },
     "process_audience": {
       "type": "string",
       "enum": [
-        "governance-existence", "strategy-direction", "agency-organization",
-        "party-relationship", "product-value", "enablement-operations", "finance-accounting"
+        "governance-existence",
+        "strategy-direction",
+        "agency-organization",
+        "party-relationship",
+        "product-value",
+        "enablement-operations",
+        "finance-accounting"
       ],
-      "description": "Legacy catalog classification pending migration (CR-BP-14 §13, §19). Single-axis audience value (CG-004 §10); it is NOT a Process Context (Domain x Lifecycle Stage; CR-BP-02) and SHALL NOT be used as a substitute for one. For new canonical entries, contextual relationships are preferred (CR-BP-14 §13); this field remains readable as a migration alias and is removed only after all canonical entries have migrated (§19)."
+      "description": "Legacy catalog classification pending migration (CR-BP-14 \u00a713, \u00a719). Single-axis audience value (CG-004 \u00a710); it is NOT a Process Context (Domain x Lifecycle Stage; CR-BP-02) and SHALL NOT be used as a substitute for one. For new canonical entries, contextual relationships are preferred (CR-BP-14 \u00a713); this field remains readable as a migration alias and is removed only after all canonical entries have migrated (\u00a719)."
     },
     "process_type": {
       "type": "string",
-      "enum": ["strategic", "management", "core", "support", "standardization"],
+      "enum": [
+        "strategic",
+        "management",
+        "core",
+        "support",
+        "standardization"
+      ],
       "default": "core",
-      "description": "Process Classification: where the process sits in the enterprise process landscape. 5-component classification (Mintzberg). NEW in CR-BP-03; retained unchanged by CR-BP-14 §10.2, §18. NOT a synonym for Process Intent (CR-BP-14 §11, §18): neither dimension may be inferred from the other. Default: 'core' (review scheduled under CR-BP-15 per CR-BP-14 §18). This is a CATALOG CLASSIFICATION (per CR-BP-03 §3), not a new ontology; the semantic entity remains dea:BusinessProcess regardless of process_type. See classifications/process-types.yaml for the controlled vocabulary. Canonical block form: `process_classification` (CR-BP-14 §20); this field is retained as a backward-compatible alias until a separately governed schema migration."
+      "description": "Process Classification: where the process sits in the enterprise process landscape. 5-component classification (Mintzberg). NEW in CR-BP-03; retained unchanged by CR-BP-14 \u00a710.2, \u00a718. NOT a synonym for Process Intent (CR-BP-14 \u00a711, \u00a718): neither dimension may be inferred from the other. Default: 'core' (review scheduled under CR-BP-15 per CR-BP-14 \u00a718). This is a CATALOG CLASSIFICATION (per CR-BP-03 \u00a73), not a new ontology; the semantic entity remains dea:BusinessProcess regardless of process_type. See classifications/process-types.yaml for the controlled vocabulary. Canonical block form: `process_classification` (CR-BP-14 \u00a720); this field is retained as a backward-compatible alias until a separately governed schema migration."
     },
     "process_classification": {
       "type": "object",
       "properties": {
         "type": {
           "type": "string",
-          "enum": ["strategic", "management", "core", "support", "standardization"],
+          "enum": [
+            "strategic",
+            "management",
+            "core",
+            "support",
+            "standardization"
+          ],
           "description": "Landscape classification value; same controlled vocabulary as process_type (classifications/process-types.yaml)."
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "active",
+            "proposed"
+          ],
+          "description": "CR-BP-CE-0 \u00a75 provenance policy: derivable/generated values land as 'active' (migration/discovery); knowledge-dependent candidates land as 'proposed' pending governance confirmation."
+        },
+        "provenance": {
+          "type": "object",
+          "required": [
+            "type",
+            "asserted_by",
+            "asserted_at",
+            "reference"
+          ],
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "inference",
+                "discovery",
+                "migration",
+                "manual"
+              ]
+            },
+            "asserted_by": {
+              "type": "string"
+            },
+            "asserted_at": {
+              "type": "string"
+            },
+            "reference": {
+              "type": "string"
+            }
+          },
+          "description": "The \u00a75 provenance block for programme-generated values."
         }
       },
-      "required": ["type"],
+      "required": [
+        "type",
+        "provenance"
+      ],
       "additionalProperties": false,
-      "description": "Canonical Process Classification block (CR-BP-14 §10, §20): the position of the Business Process in the enterprise process landscape. Classification describes architectural position, never the work's intrinsic purpose (§10.1). Optional during the migration period; `process_type` remains the backward-compatible alias."
+      "description": "Canonical Process Classification block (CR-BP-14 \u00a710, \u00a720): the position of the Business Process in the enterprise process landscape. Classification describes architectural position, never the work's intrinsic purpose (\u00a710.1). Optional during the migration period; `process_type` remains the backward-compatible alias. CR-BP-CE-L2: programme-generated blocks carry the \u00a75 provenance."
     },
     "process_specialization": {
       "type": "array",
-      "items": { "type": "string", "pattern": "^dea:bp:[a-z0-9-]+$" },
+      "items": {
+        "type": "string",
+        "pattern": "^dea:bp:[a-z0-9-]+$"
+      },
       "description": "Optional: list of parent process ids this entry specializes (inheritance / pattern-based refinement). NEW in CR-BP-03. Multi-inheritance is permitted. The authoritative dea:specializes relationship in the metamodel continues to govern the kernel + specialization discipline (CR-MM-PROC-01); this field is a catalog-level annotation for navigation and governance. See classifications/process-specializations.yaml for the controlled vocabulary of patterns."
     },
     "specialization_pattern": {
@@ -57,7 +150,9 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["ref"],
+        "required": [
+          "ref"
+        ],
         "properties": {
           "ref": {
             "type": "string",
@@ -67,14 +162,18 @@
         },
         "additionalProperties": false
       },
-      "description": "Process Context placement (CR-BP-14 §13, §20): the Domain x Lifecycle Stage contexts within which this process is defined or used. Multiple contexts are permitted where evidence establishes legitimate cross-context responsibility (BP-SEM-012). This is the canonical replacement for the legacy process_audience single-axis classification; it is never generated mechanically from the ECF matrix."
+      "description": "Process Context placement (CR-BP-14 \u00a713, \u00a720): the Domain x Lifecycle Stage contexts within which this process is defined or used. Multiple contexts are permitted where evidence establishes legitimate cross-context responsibility (BP-SEM-012). This is the canonical replacement for the legacy process_audience single-axis classification; it is never generated mechanically from the ECF matrix."
     },
     "relationships": {
       "type": "array",
-      "description": "Canonical OpenDEA relationships (CR-BP-03 §6; CR-BP-03A §3.1). The relationship shape is an array of relationship instances (NOT a structured object), conforming to the metamodel's relationship-instance.json (technehub-labs/dea-metamodel/schemas/relationships/relationship-instance.json). Each entry is a typed relationship with CR-002 provenance, CR-6 lifecycle, and effective_from/to temporal validity. The catalog primarily uses 'composes' (structural composition) and 'realizes' (capability realization). The legacy parent_process / child_processes fields (CR-BP-01 inventions; NOT metamodel fields) have been REMOVED; the legacy capabilities_delivered is retained as a soft-deprecated backward-compat shim (CR-BP-03A §3.3).",
+      "description": "Canonical OpenDEA relationships (CR-BP-03 \u00a76; CR-BP-03A \u00a73.1). The relationship shape is an array of relationship instances (NOT a structured object), conforming to the metamodel's relationship-instance.json (technehub-labs/dea-metamodel/schemas/relationships/relationship-instance.json). Each entry is a typed relationship with CR-002 provenance, CR-6 lifecycle, and effective_from/to temporal validity. The catalog primarily uses 'composes' (structural composition) and 'realizes' (capability realization). The legacy parent_process / child_processes fields (CR-BP-01 inventions; NOT metamodel fields) have been REMOVED; the legacy capabilities_delivered is retained as a soft-deprecated backward-compat shim (CR-BP-03A \u00a73.3).",
       "items": {
         "type": "object",
-        "required": ["source_id", "target_id", "relationship_type"],
+        "required": [
+          "source_id",
+          "target_id",
+          "relationship_type"
+        ],
         "properties": {
           "source_id": {
             "type": "string",
@@ -83,45 +182,104 @@
           },
           "target_id": {
             "anyOf": [
-              { "type": "string", "pattern": "^(?!ecf:)[a-z][a-z0-9-]*(:[a-z0-9-]+)+$" },
-              { "type": "string", "pattern": "^ecf:[a-z][a-zA-Z0-9]*(\\.[a-z][a-zA-Z0-9]*)?$" }
+              {
+                "type": "string",
+                "pattern": "^(?!ecf:)[a-z][a-z0-9-]*(:[a-z0-9-]+)+$"
+              },
+              {
+                "type": "string",
+                "pattern": "^ecf:[a-z][a-zA-Z0-9]*(\\.[a-z][a-zA-Z0-9]*)?$"
+              }
             ],
-            "description": "Target identifier. Entity ids use the colon-separated canonical form (for composes, the composed process; for realizes, the realized capability). ECF identifiers use the canonical CG-003 form (ecf:<lowerCamelDomain> or ecf:<lowerCamelDomain>.<lowerCamelStage>) for contextual relationships such as serves / contributes-to (CR-BP-14 §13)."
+            "description": "Target identifier. Entity ids use the colon-separated canonical form (for composes, the composed process; for realizes, the realized capability). ECF identifiers use the canonical CG-003 form (ecf:<lowerCamelDomain> or ecf:<lowerCamelDomain>.<lowerCamelStage>) for contextual relationships such as serves / contributes-to (CR-BP-14 \u00a713)."
           },
           "relationship_type": {
             "type": "string",
             "enum": [
-              "composes", "realizes", "specializes", "aggregates",
-              "depends-on", "produces", "consumes", "flows-to",
-              "governs", "owns", "responsible-for", "supports",
-              "triggers", "executes", "orchestrates",
-              "serves", "contributes-to"
+              "composes",
+              "realizes",
+              "specializes",
+              "aggregates",
+              "depends-on",
+              "produces",
+              "consumes",
+              "flows-to",
+              "governs",
+              "owns",
+              "responsible-for",
+              "supports",
+              "triggers",
+              "executes",
+              "orchestrates",
+              "serves",
+              "contributes-to"
             ],
-            "description": "Canonical relationship type (registry id without dea: prefix; per metamodel relationship-instance.json). The catalog primarily uses 'composes' and 'realizes'; 'serves' and 'contributes-to' express contextual participation toward ECF coordinates (CR-BP-14 §13). Other types are admitted when the contributor can defend the choice."
+            "description": "Canonical relationship type (registry id without dea: prefix; per metamodel relationship-instance.json). The catalog primarily uses 'composes' and 'realizes'; 'serves' and 'contributes-to' express contextual participation toward ECF coordinates (CR-BP-14 \u00a713). Other types are admitted when the contributor can defend the choice."
           },
           "direction": {
             "type": "string",
-            "enum": ["source-to-target"],
+            "enum": [
+              "source-to-target"
+            ],
             "default": "source-to-target"
           },
           "status": {
             "type": "string",
-            "enum": ["proposed", "planned", "active", "deprecated", "retired"],
+            "enum": [
+              "proposed",
+              "planned",
+              "active",
+              "deprecated",
+              "retired"
+            ],
             "default": "active"
           },
-          "effective_from": { "type": "string", "format": "date" },
-          "effective_to": { "type": "string", "format": "date" },
-          "asserted_by": { "type": "string", "description": "Person, team, or agent asserting this relationship (CR-002 §21/§22)." },
-          "rationale": { "type": "string", "maxLength": 1000 },
-          "evidence": { "type": "string", "maxLength": 1000, "description": "Reference to supporting evidence." },
+          "effective_from": {
+            "type": "string",
+            "format": "date"
+          },
+          "effective_to": {
+            "type": "string",
+            "format": "date"
+          },
+          "asserted_by": {
+            "type": "string",
+            "description": "Person, team, or agent asserting this relationship (CR-002 \u00a721/\u00a722)."
+          },
+          "rationale": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "evidence": {
+            "type": "string",
+            "maxLength": 1000,
+            "description": "Reference to supporting evidence."
+          },
           "provenance": {
             "type": "object",
-            "description": "Structured provenance (CR-002 §21).",
+            "description": "Structured provenance (CR-002 \u00a721).",
             "properties": {
-              "type": { "type": "string", "enum": ["architecture-review", "discovery", "assessment", "inference", "migration", "manual"] },
-              "reference": { "type": "string" },
-              "asserted_by": { "type": "string" },
-              "asserted_at": { "type": "string", "format": "date" }
+              "type": {
+                "type": "string",
+                "enum": [
+                  "architecture-review",
+                  "discovery",
+                  "assessment",
+                  "inference",
+                  "migration",
+                  "manual"
+                ]
+              },
+              "reference": {
+                "type": "string"
+              },
+              "asserted_by": {
+                "type": "string"
+              },
+              "asserted_at": {
+                "type": "string",
+                "format": "date"
+              }
             }
           }
         }
@@ -130,7 +288,11 @@
     "identity": {
       "type": "object",
       "description": "Process identity sub-block (NEW in CR-BP-03; mirrors schemas/identity.schema.json inline to avoid a remote $ref). Tests a process by name + description + trigger + outcome + evidence, not by name alone. Optional at the schema level (entries without identity are admitted but flagged for review in the contribution report).",
-      "required": ["verb", "object", "outcome_statement"],
+      "required": [
+        "verb",
+        "object",
+        "outcome_statement"
+      ],
       "properties": {
         "verb": {
           "type": "string",
@@ -155,51 +317,196 @@
           "type": "string",
           "minLength": 20,
           "maxLength": 2000,
-          "description": "Outcome statement (the description-of-record). Describes what the process achieves — not what it does."
+          "description": "Outcome statement (the description-of-record). Describes what the process achieves \u2014 not what it does."
         },
         "evidence_links": {
           "type": "array",
           "minItems": 1,
           "items": {
             "type": "object",
-            "required": ["type", "ref"],
+            "required": [
+              "type",
+              "ref"
+            ],
             "properties": {
               "type": {
                 "type": "string",
-                "enum": ["documentation", "governance", "interview", "artifact", "standard", "regulation"]
+                "enum": [
+                  "documentation",
+                  "governance",
+                  "interview",
+                  "artifact",
+                  "standard",
+                  "regulation"
+                ]
               },
-              "ref": { "type": "string", "minLength": 5 }
+              "ref": {
+                "type": "string",
+                "minLength": 5
+              }
             }
           }
         }
       }
     },
-    "owner": { "type": "string" },
-    "trigger": { "type": "string", "maxLength": 500, "description": "What initiates the process. Used by the contribution report to cross-check the identity (BP-ARC-ID-002)." },
-    "outcome": { "type": "string", "maxLength": 500, "description": "What the process produces. Used by the contribution report to cross-check the identity (BP-ARC-ID-003)." },
+    "owner": {
+      "oneOf": [
+        {
+          "type": "string",
+          "description": "Legacy form: the accountable owner role name. Retained for backward compatibility."
+        },
+        {
+          "type": "object",
+          "description": "Adopted field (CR-BP-CE-0 \u00a73 L2 profile; CR-BP-CE-L2 tranche). Knowledge-dependent owner candidate per the \u00a75 provenance policy; the actual owner is confirmed by the Business Process Owner (GOV-002).",
+          "required": [
+            "value",
+            "status",
+            "provenance"
+          ],
+          "properties": {
+            "value": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "proposed",
+                "confirmed"
+              ]
+            },
+            "provenance": {
+              "type": "object",
+              "required": [
+                "type",
+                "asserted_by",
+                "asserted_at",
+                "reference"
+              ],
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "inference",
+                    "discovery",
+                    "migration",
+                    "manual"
+                  ]
+                },
+                "asserted_by": {
+                  "type": "string"
+                },
+                "asserted_at": {
+                  "type": "string"
+                },
+                "reference": {
+                  "type": "string"
+                }
+              }
+            },
+            "review_due": {
+              "type": "string"
+            },
+            "decision_right": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "trigger": {
+      "type": "string",
+      "maxLength": 500,
+      "description": "What initiates the process. Used by the contribution report to cross-check the identity (BP-ARC-ID-002)."
+    },
+    "outcome": {
+      "type": "string",
+      "maxLength": 500,
+      "description": "What the process produces. Used by the contribution report to cross-check the identity (BP-ARC-ID-003)."
+    },
     "capabilities_delivered": {
       "type": "array",
-      "items": { "type": "string" },
-      "description": "Soft-deprecated (CR-BP-03A §3.3). Retained for backward-compat with the metamodel's process.json (which declares this as a simple array of strings). The canonical form is relationships[relationship_type=realizes] with full provenance. The migration validator BP-MIG-002 surfaces entries that declare this field."
+      "items": {
+        "type": "string"
+      },
+      "description": "Soft-deprecated (CR-BP-03A \u00a73.3). Retained for backward-compat with the metamodel's process.json (which declares this as a simple array of strings). The canonical form is relationships[relationship_type=realizes] with full provenance. The migration validator BP-MIG-002 surfaces entries that declare this field."
     },
-    "services_provided": { "type": "array", "items": { "type": "string" } },
-    "components_involved": { "type": "array", "items": { "type": "string" } },
-    "kpis": { "type": "array", "items": { "type": "string" } },
-    "stakeholders": { "type": "array", "items": { "type": "string" } },
-    "actors": { "type": "array", "items": { "type": "string" } },
-    "metadata": { "type": "object" },
+    "services_provided": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "components_involved": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "kpis": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "stakeholders": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "actors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "metadata": {
+      "type": "object"
+    },
     "ecfConformance": {
       "type": "object",
-      "description": "ECF Conformance Gate manifest (CR-ECF-CG-001..004). Declares the catalog's CONFORMANT-WITH-EXTENSION status and the canonical ECF references that resolve. Optional at schema level; scripts/check_ecf_conformance.py enforces presence on every canonical process entry. Note: process_audience is NOT an ECF Coordinate; it is a single-axis audience classification (CG-004 §10). The canonical ECF reference (when present) lives in this ecfConformance block.",
+      "description": "ECF Conformance Gate manifest (CR-ECF-CG-001..004). Declares the catalog's CONFORMANT-WITH-EXTENSION status and the canonical ECF references that resolve. Optional at schema level; scripts/check_ecf_conformance.py enforces presence on every canonical process entry. Note: process_audience is NOT an ECF Coordinate; it is a single-axis audience classification (CG-004 \u00a710). The canonical ECF reference (when present) lives in this ecfConformance block.",
       "properties": {
-        "framework": { "type": "string", "const": "EnterpriseConceptFramework" },
-        "contractVersion": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
-        "profile": { "type": "string", "pattern": "^dea:ecf@\\d+\\.\\d+\\.\\d+$" },
-        "status": { "type": "string", "enum": ["conformant", "conformant-with-extension", "non-conformant", "not-yet-assessed"] },
-        "affiliation": { "type": "string", "enum": ["mapped", "held-unmapped", "inherits-catalog"] },
-        "rationaleRef": { "type": "string" },
-        "canonicalReferences": { "type": "array" },
-        "extensions": { "type": "array" }
+        "framework": {
+          "type": "string",
+          "const": "EnterpriseConceptFramework"
+        },
+        "contractVersion": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "profile": {
+          "type": "string",
+          "pattern": "^dea:ecf@\\d+\\.\\d+\\.\\d+$"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "conformant",
+            "conformant-with-extension",
+            "non-conformant",
+            "not-yet-assessed"
+          ]
+        },
+        "affiliation": {
+          "type": "string",
+          "enum": [
+            "mapped",
+            "held-unmapped",
+            "inherits-catalog"
+          ]
+        },
+        "rationaleRef": {
+          "type": "string"
+        },
+        "canonicalReferences": {
+          "type": "array"
+        },
+        "extensions": {
+          "type": "array"
+        }
       }
     }
   }

@@ -39,6 +39,8 @@ This directory hosts the canonical Process record for `processes:process-pv-oper
 | `status` | string | no | candidate |
 | `process_intent` | string | no | operate |
 | `process_type` | string | no | management |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Operate the Manage Proposition Lifecycle L2 process within the dea:pc-pv-operate Cell Charter. See trigger and outcome f |
 | `trigger` | string | no | Proposition lifecycle management is needed because each proposition requires managed transitions across introduction, gr |

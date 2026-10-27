@@ -39,6 +39,8 @@ This directory hosts the canonical Process record for `processes:process-fa-desi
 | `status` | string | no | candidate |
 | `process_intent` | string | no | develop |
 | `process_type` | string | no | management |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Operate the Design Financial Plan Structure L2 process within the dea:pc-fa-design Cell Charter. See trigger and outcome |
 | `trigger` | string | no | A financial plan structure design is needed because the framed finance strategy requires bounded chart of accounts, cost |

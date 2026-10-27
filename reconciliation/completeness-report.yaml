@@ -18,12 +18,12 @@ by_level:
     records: 49
     findings: 0
 by_domain_findings:
-  '?': 1160
+  '?': 870
   StrategyAndDirection: 1
 adoption:
   operational_fields:
     owner:
-      populated: 49
+      populated: 194
       of: 3723
     stakeholders:
       populated: 0
@@ -44,9 +44,9 @@ adoption:
       populated: 0
       of: 3723
   process_classification:
-    populated: 0
+    populated: 145
     of: 3723
 summary:
-  total_findings: 1161
+  total_findings: 871
   blocking: 0
-  advisory: 1161
+  advisory: 871

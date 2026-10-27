@@ -6,38 +6,33 @@ lifecycle_status: candidate
 status: candidate
 process_intent: manage
 process_type: management
+process_classification:
+  type: management
+  provenance:
+    type: migration
+    asserted_by: dea-completeness-programme
+    asserted_at: '2026-10-27'
+    reference: change-requests/CR-BP-CE-L2-process-adopted-fields.md
+  status: active
+owner:
+  value: awaiting_owner_confirmation
+  status: proposed
+  provenance:
+    type: inference
+    asserted_by: dea-completeness-programme
+    asserted_at: '2026-10-27'
+    reference: change-requests/CR-BP-CE-L2-process-adopted-fields.md
+  review_due: '2026-12-31'
+  decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
-description: 'Improve the regulator-tied capability of regulator-licensed roles under
-  the enterprise regulated-entity approval authority. The trigger is the regulator-mandated
-  continuing-competence program cycle or a remediation requirement. The outcome is
-  regulator-tied capability improvement recorded on the regulated personnel record:
-  regulator-mandated training cycles (FCA SMCR fit-and-proper annual assessment under
-  SYSC 25 / FIT; state bar MCLE; state healthcare CME; NAIC CE; FAA Part 121 subpart
-  Y recurrent training; EU AI Act Article 14 ongoing training), fit-and-proper re-assessment
-  cycles, regulator-mandated remediation programs executed, and the continuing-supervisor
-  notified.'
-trigger: The enterprise is improving regulator-licensed roles' capability through
-  regulator-mandated continuing-competence programs, fit-and-proper annual assessments,
-  recurrent training, and remediation programs that differ from substrate-neutral
-  learning-and-development operations, and the improvement must align to the regulator's
-  continuing-supervision framework before being recorded on the regulated personnel
-  record.
-outcome: The regulator-licensed roles' capability is improved per the regulator's
-  continuing-competence framework; regulator-mandated training, fit-and-proper re-assessment,
-  and remediation cycles are recorded on the regulated personnel record, and the continuing-supervisor
-  has been notified.
+description: 'Improve the regulator-tied capability of regulator-licensed roles under the enterprise regulated-entity approval authority. The trigger is the regulator-mandated continuing-competence program cycle or a remediation requirement. The outcome is regulator-tied capability improvement recorded on the regulated personnel record: regulator-mandated training cycles (FCA SMCR fit-and-proper annual assessment under SYSC 25 / FIT; state bar MCLE; state healthcare CME; NAIC CE; FAA Part 121 subpart Y recurrent training; EU AI Act Article 14 ongoing training), fit-and-proper re-assessment cycles, regulator-mandated remediation programs executed, and the continuing-supervisor notified.'
+trigger: The enterprise is improving regulator-licensed roles' capability through regulator-mandated continuing-competence programs, fit-and-proper annual assessments, recurrent training, and remediation programs that differ from substrate-neutral learning-and-development operations, and the improvement must align to the regulator's continuing-supervision framework before being recorded on the regulated personnel record.
+outcome: The regulator-licensed roles' capability is improved per the regulator's continuing-competence framework; regulator-mandated training, fit-and-proper re-assessment, and remediation cycles are recorded on the regulated personnel record, and the continuing-supervisor has been notified.
 identity:
   verb: Improve
   object: Regulated Workforce Capability
   scope: enterprise
-  outcome_statement: The regulator-tied Regulated Workforce Capability improve work
-    has been carried out at the AgencyAndOrganization x Improve coordinate under the
-    enterprise regulated-entity approval authority. The outcome is recorded on the
-    regulated personnel record with the supervisor-controlled scope, the fitness-and-propriety
-    attestation regime, the supervised-training completion requirements, and the continuing-supervisor
-    notification path documented per the regulator's continuing-supervision framework.
-    Substrate-neutral improve work is excluded. Adjacent lifecycle stages (Conceive
-    / Design / Build / Activate / Operate / Improve / Retire) are excluded.
+  outcome_statement: The regulator-tied Regulated Workforce Capability improve work has been carried out at the AgencyAndOrganization x Improve coordinate under the enterprise regulated-entity approval authority. The outcome is recorded on the regulated personnel record with the supervisor-controlled scope, the fitness-and-propriety attestation regime, the supervised-training completion requirements, and the continuing-supervisor notification path documented per the regulator's continuing-supervision framework. Substrate-neutral improve work is excluded. Adjacent lifecycle stages (Conceive / Design / Build / Activate / Operate / Improve / Retire) are excluded.
   evidence_links:
   - type: regulation
     ref: https://www.handbook.fca.org.uk/handbook/SYSC/25/
@@ -85,19 +80,7 @@ metadata:
   change_history:
   - cr: CR-BP-106
     date: '2026-09-22'
-    change: 'Initial L2 Process entry; the canonical Business Process admitted at
-      the AgencyAndOrganization x Improve coordinate, from the CR-BP-105 escape-clause
-      discovery outcome (10/10, ADMIT-CANONICAL recommendation) under the CR-BP-62
-      method. The admission activates the dea:discovery-agency-and-organization-improve-escape
-      escape rationale and supersedes the substrate- neutral general-case BP at this
-      cell. Evidence base per Cell-Cycle escape-clause discovery record dea:discovery-agency-and-organization-improve-escape
-      (CR-BP-105, PR #155). L3 Activity and L4 Task decomposition lands in CR-BP-111
-      (deferred).'
+    change: 'Initial L2 Process entry; the canonical Business Process admitted at the AgencyAndOrganization x Improve coordinate, from the CR-BP-105 escape-clause discovery outcome (10/10, ADMIT-CANONICAL recommendation) under the CR-BP-62 method. The admission activates the dea:discovery-agency-and-organization-improve-escape escape rationale and supersedes the substrate- neutral general-case BP at this cell. Evidence base per Cell-Cycle escape-clause discovery record dea:discovery-agency-and-organization-improve-escape (CR-BP-105, PR #155). L3 Activity and L4 Task decomposition lands in CR-BP-111 (deferred).'
   - cr: CR-BP-111
     date: '2026-10-12'
-    change: 'L3 decomposition tranche (CR-BP-111): added metadata.activity_references
-      back-references to the 4 Activity records decomposing this BP. Version unchanged
-      per SIV-004 (additive metadata-only). Activities classified per CR-BP-32 section
-      5 (fails standalone executability and resource dedication); decomposition boundary
-      marker per CR-BP-32 section 12 cleared (each Activity is decomposed into 5 L4
-      Tasks per the `scripts/decompose_l4.py` 5-phase verb-object completion pattern).'
+    change: 'L3 decomposition tranche (CR-BP-111): added metadata.activity_references back-references to the 4 Activity records decomposing this BP. Version unchanged per SIV-004 (additive metadata-only). Activities classified per CR-BP-32 section 5 (fails standalone executability and resource dedication); decomposition boundary marker per CR-BP-32 section 12 cleared (each Activity is decomposed into 5 L4 Tasks per the `scripts/decompose_l4.py` 5-phase verb-object completion pattern).'

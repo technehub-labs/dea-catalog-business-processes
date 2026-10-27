@@ -39,6 +39,8 @@ This directory hosts the canonical Process record for `processes:process-sd-buil
 | `status` | string | no | candidate |
 | `process_intent` | string | no | develop |
 | `process_type` | string | no | strategic |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Operate the Build Strategic Roadmap L2 process within the dea:pc-sd-build Cell Charter. See trigger and outcome for the  |
 | `trigger` | string | no | A strategic roadmap build is needed because the designed strategic choices require sequenced initiatives and milestone a |

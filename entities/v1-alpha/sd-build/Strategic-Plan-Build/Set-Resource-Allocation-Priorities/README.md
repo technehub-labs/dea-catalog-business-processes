@@ -39,6 +39,8 @@ This directory hosts the canonical Process record for `processes:process-sd-buil
 | `status` | string | no | candidate |
 | `process_intent` | string | no | develop |
 | `process_type` | string | no | strategic |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Operate the Set Resource Allocation Priorities L2 process within the dea:pc-sd-build Cell Charter. See trigger and outco |
 | `trigger` | string | no | Resource allocation priorities are needed because the translated initiatives require bounded resourcing envelopes to be  |

@@ -6,6 +6,24 @@ lifecycle_status: candidate
 status: candidate
 process_intent: transform
 process_type: core
+process_classification:
+  type: core
+  provenance:
+    type: migration
+    asserted_by: dea-completeness-programme
+    asserted_at: '2026-10-27'
+    reference: change-requests/CR-BP-CE-L2-process-adopted-fields.md
+  status: active
+owner:
+  value: awaiting_owner_confirmation
+  status: proposed
+  provenance:
+    type: inference
+    asserted_by: dea-completeness-programme
+    asserted_at: '2026-10-27'
+    reference: change-requests/CR-BP-CE-L2-process-adopted-fields.md
+  review_due: '2026-12-31'
+  decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
 description: 'Transition a proposition, product or service out of operational service in a controlled manner: withdrawal planning, stakeholder transition, and removal from operational reliance, within the dea:pc-pv-retire Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces. '
 trigger: 'An approved retirement decision exists for the proposition, product or service. '

@@ -38,6 +38,8 @@ This directory hosts the canonical Process record for `processes:process-sd-acti
 | `status` | string | no | candidate |
 | `process_intent` | string | no | manage |
 | `process_type` | string | no | management |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `trigger` | string | no | A regulated entity's board-approved strategic plan must be filed with or activated under the supervision of a competent  |
 | `outcome` | string | no | The regulated strategic plan is formally activated with the supervisor's acknowledgement on record, the filing receipt p |
 | `description` | string | no | Institutionalize a regulated entity's strategic plan under the enterprise's regulated-entity approval authority within t |

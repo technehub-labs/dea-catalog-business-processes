@@ -41,6 +41,8 @@ This directory hosts the canonical Process record for `processes:process-pr-impr
 | `status` | string | no | candidate |
 | `process_intent` | string | no | operate |
 | `process_type` | string | no | core |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Operate the Operate Customer Retention Programs L2 process within the |
 | `trigger` | string | no | Active customer relationships are in operation; customer insight (satisfaction, churn risk, win-back opportunities) must |

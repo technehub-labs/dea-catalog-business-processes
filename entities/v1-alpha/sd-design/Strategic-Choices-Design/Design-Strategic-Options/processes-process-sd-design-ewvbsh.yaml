@@ -6,6 +6,24 @@ lifecycle_status: candidate
 status: candidate
 process_intent: develop
 process_type: strategic
+process_classification:
+  type: strategic
+  provenance:
+    type: migration
+    asserted_by: dea-completeness-programme
+    asserted_at: '2026-10-27'
+    reference: change-requests/CR-BP-CE-L2-process-adopted-fields.md
+  status: active
+owner:
+  value: awaiting_owner_confirmation
+  status: proposed
+  provenance:
+    type: inference
+    asserted_by: dea-completeness-programme
+    asserted_at: '2026-10-27'
+    reference: change-requests/CR-BP-CE-L2-process-adopted-fields.md
+  review_due: '2026-12-31'
+  decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
 description: 'Operate the Design Strategic Options L2 process within the dea:pc-sd-design Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces. '
 trigger: 'A new set of strategic options is needed because the conceived strategic intent requires bounded trade-off designs to evaluate. '

@@ -32,6 +32,8 @@ This directory hosts the canonical Process record for `processes:process-fa-impr
 | `status` | string | no | candidate |
 | `process_intent` | string | no | develop |
 | `process_type` | string | no | management |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `context` | array[1] | no | array of 1 item(s) |
 | `description` | string | no | Refine Financial Controls and Policies (improve stage, management process). Landed by CR-BP-21e.1 |
 | `trigger` | string | no | An audit finding or control incident surfaces. |

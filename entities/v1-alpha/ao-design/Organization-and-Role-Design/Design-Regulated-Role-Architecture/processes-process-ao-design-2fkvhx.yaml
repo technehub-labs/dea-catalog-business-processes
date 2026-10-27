@@ -6,6 +6,24 @@ lifecycle_status: candidate
 status: candidate
 process_intent: manage
 process_type: management
+process_classification:
+  type: management
+  provenance:
+    type: migration
+    asserted_by: dea-completeness-programme
+    asserted_at: '2026-10-27'
+    reference: change-requests/CR-BP-CE-L2-process-adopted-fields.md
+  status: active
+owner:
+  value: awaiting_owner_confirmation
+  status: proposed
+  provenance:
+    type: inference
+    asserted_by: dea-completeness-programme
+    asserted_at: '2026-10-27'
+    reference: change-requests/CR-BP-CE-L2-process-adopted-fields.md
+  review_due: '2026-12-31'
+  decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
 description: >-
   Design the regulator-tied role catalogue and competency framework entries under the enterprise regulated-entity approval authority. The trigger is the decision that the role catalogue will include regulator-licensed roles. The outcome is a regulator-tied role catalogue committed, with each licensed-role entry aligned to its regulator's continuing-supervision framework, its competency and fitness-and-propriety attestation regime documented, its supervised-training completion requirements documented, and its continuing-supervisor notification path documented.
@@ -79,10 +97,4 @@ metadata:
       #155). L3 Activity and L4 Task decomposition lands in CR-BP-111 (deferred).
   - cr: CR-BP-111
     date: '2026-10-12'
-    change: 'L3 decomposition tranche (CR-BP-111): added metadata.activity_references
-      back-references to the 4 Activity records decomposing this BP. Version
-      unchanged per SIV-004 (additive metadata-only). Activities classified
-      per CR-BP-32 section 5 (fails standalone executability and resource
-      dedication); decomposition boundary marker per CR-BP-32 section 12
-      cleared (each Activity is decomposed into 5 L4 Tasks per the
-      `scripts/decompose_l4.py` 5-phase verb-object completion pattern).'
+    change: 'L3 decomposition tranche (CR-BP-111): added metadata.activity_references back-references to the 4 Activity records decomposing this BP. Version unchanged per SIV-004 (additive metadata-only). Activities classified per CR-BP-32 section 5 (fails standalone executability and resource dedication); decomposition boundary marker per CR-BP-32 section 12 cleared (each Activity is decomposed into 5 L4 Tasks per the `scripts/decompose_l4.py` 5-phase verb-object completion pattern).'

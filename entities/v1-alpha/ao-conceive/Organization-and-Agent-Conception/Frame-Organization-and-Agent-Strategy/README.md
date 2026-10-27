@@ -39,6 +39,8 @@ This directory hosts the canonical Process record for `processes:process-ao-conc
 | `status` | string | no | candidate |
 | `process_intent` | string | no | develop |
 | `process_type` | string | no | management |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Operate the Frame Organization and Agent Strategy L2 process within the dea:pc-ao-conceive Cell Charter. See trigger and |
 | `trigger` | string | no | A new organization and agent strategy is needed because the enterprise is establishing a new agentive fabric, reframing  |

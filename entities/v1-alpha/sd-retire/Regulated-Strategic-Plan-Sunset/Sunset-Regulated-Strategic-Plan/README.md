@@ -38,6 +38,8 @@ This directory hosts the canonical Process record for `processes:process-sd-reti
 | `status` | string | no | candidate |
 | `process_intent` | string | no | manage |
 | `process_type` | string | no | management |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `trigger` | string | no | A regulated entity's supervisor-acknowledged-and-live strategic plan must be sunset because a competent regulator has re |
 | `outcome` | string | no | The regulated strategic plan is formally sunset with the regulator directive on record, the replacement plan's status pr |
 | `description` | string | no | Sunset a regulated entity's supervisor-acknowledged-and-live strategic plan under the enterprise's regulated-entity rete |

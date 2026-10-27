@@ -40,6 +40,8 @@ This directory hosts the canonical Process record for `processes:process-ge-oper
 | `status` | string | no | candidate |
 | `process_intent` | string | no | govern |
 | `process_type` | string | no | standardization |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Operate the Audit Policy Compliance L2 process within the |
 | `trigger` | string | no | Policies are codified and bodies are operating; periodic audits must verify compliance with the policies and report find |

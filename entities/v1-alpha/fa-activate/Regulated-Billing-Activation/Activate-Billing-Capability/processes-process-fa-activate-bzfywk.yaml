@@ -6,6 +6,24 @@ lifecycle_status: candidate
 status: candidate
 process_intent: manage
 process_type: management
+process_classification:
+  type: management
+  provenance:
+    type: migration
+    asserted_by: dea-completeness-programme
+    asserted_at: '2026-10-27'
+    reference: change-requests/CR-BP-CE-L2-process-adopted-fields.md
+  status: active
+owner:
+  value: awaiting_owner_confirmation
+  status: proposed
+  provenance:
+    type: inference
+    asserted_by: dea-completeness-programme
+    asserted_at: '2026-10-27'
+    reference: change-requests/CR-BP-CE-L2-process-adopted-fields.md
+  review_due: '2026-12-31'
+  decision_right: Business Process Owner (GOV-002) confirms
 trigger: A billing or revenue-recognition capability requires formal regulator-acknowledged activation before live invoicing or revenue recognition may commence (insurance statutory accounting; IFRS 17 transition; bank treasury under capital-rules supervision; PUC rate-effective billing; PSD2 / Federal Reserve / ECB settlement-account).
 outcome: The billing or revenue-recognition capability is formally activated with the regulator's acknowledgement on record, the tariff or pricing approval preserved, operational controls (segregation of duties, audit trail, reconciliation) live, and the supervisor's continuing-oversight relationship active.
 description: Activate a billing or revenue-recognition capability under the enterprise's regulated-entity approval authority within the dea:pc-fa-activate Cell Charter. The trigger is a regulator-acknowledged accounting or rate framework gating live invoicing or revenue recognition; the outcome is the capability live on the regulated billing record with the supervisor's continuing-oversight relationship active and operational controls running, so that the billing or revenue-recognition capability moves from regulator-acknowledged-but-not-live to regulator-acknowledged-and-live. Distinct from general capability build (Build coordinate) and from steady-state billing (Operate coordinate).

@@ -40,6 +40,8 @@ This directory hosts the canonical Process record for `processes:process-ge-conc
 | `status` | string | no | candidate |
 | `process_intent` | string | no | manage |
 | `process_type` | string | no | strategic |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Operate the Initiate Policy and Charter L2 process within the |
 | `trigger` | string | no | A new policy regime, charter, or board mandate must be initiated because of a new governance strategy, a new regulatory  |

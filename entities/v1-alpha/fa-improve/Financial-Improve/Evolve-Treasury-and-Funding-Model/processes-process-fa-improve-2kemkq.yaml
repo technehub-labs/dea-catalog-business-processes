@@ -6,6 +6,24 @@ lifecycle_status: candidate
 status: candidate
 process_intent: develop
 process_type: management
+process_classification:
+  type: management
+  provenance:
+    type: migration
+    asserted_by: dea-completeness-programme
+    asserted_at: '2026-10-27'
+    reference: change-requests/CR-BP-CE-L2-process-adopted-fields.md
+  status: active
+owner:
+  value: awaiting_owner_confirmation
+  status: proposed
+  provenance:
+    type: inference
+    asserted_by: dea-completeness-programme
+    asserted_at: '2026-10-27'
+    reference: change-requests/CR-BP-CE-L2-process-adopted-fields.md
+  review_due: '2026-12-31'
+  decision_right: Business Process Owner (GOV-002) confirms
 context:
 - ref: processes:pc-fa-improve-haqf4w
 description: 'Evolve Treasury and Funding Model (improve stage, management process). Landed by CR-BP-21e.1

@@ -38,6 +38,8 @@ This directory hosts the canonical Process record for `processes:process-eo-oper
 | `status` | string | no | candidate |
 | `process_intent` | string | no | operate |
 | `process_type` | string | no | core |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Operate the Operate Logistics L2 process within the dea:pc-oe-operate Cell Charter. See trigger and outcome for the boun |
 | `trigger` | string | no | Logistics operation is needed because the built network must execute transport and delivery flows to serve customers and |

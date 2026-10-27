@@ -39,6 +39,8 @@ This directory hosts the canonical Process record for `processes:process-sd-desi
 | `status` | string | no | candidate |
 | `process_intent` | string | no | develop |
 | `process_type` | string | no | strategic |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Operate the Design Strategic Options L2 process within the dea:pc-sd-design Cell Charter. See trigger and outcome for th |
 | `trigger` | string | no | A new set of strategic options is needed because the conceived strategic intent requires bounded trade-off designs to ev |

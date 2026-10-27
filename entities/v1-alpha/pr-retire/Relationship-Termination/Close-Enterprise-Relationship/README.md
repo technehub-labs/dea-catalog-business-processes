@@ -39,6 +39,8 @@ This directory hosts the canonical Process record for `processes:process-pr-reti
 | `status` | string | no | candidate |
 | `process_intent` | string | no | transform |
 | `process_type` | string | no | core |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Close out an enterprise relationship with a customer, supplier or partner: settle the contract, offboard the party, and  |
 | `trigger` | string | no | A customer, supplier or partner relationship reaches its agreed or mandated end (contract expiry, termination, or regula |

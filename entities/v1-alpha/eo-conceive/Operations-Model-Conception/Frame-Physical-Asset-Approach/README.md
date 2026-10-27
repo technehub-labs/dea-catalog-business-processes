@@ -39,6 +39,8 @@ This directory hosts the canonical Process record for `processes:process-eo-conc
 | `status` | string | no | candidate |
 | `process_intent` | string | no | develop |
 | `process_type` | string | no | management |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Operate the Frame Physical Asset Approach L2 process within the dea:pc-oe-conceive Cell Charter. See trigger and outcome |
 | `trigger` | string | no | A physical asset approach framing is needed because the operations strategy requires bounded decisions on facility and a |

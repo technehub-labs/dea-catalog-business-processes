@@ -6,6 +6,24 @@ lifecycle_status: candidate
 status: candidate
 process_intent: manage
 process_type: standardization
+process_classification:
+  type: standardization
+  provenance:
+    type: migration
+    asserted_by: dea-completeness-programme
+    asserted_at: '2026-10-27'
+    reference: change-requests/CR-BP-CE-L2-process-adopted-fields.md
+  status: active
+owner:
+  value: awaiting_owner_confirmation
+  status: proposed
+  provenance:
+    type: inference
+    asserted_by: dea-completeness-programme
+    asserted_at: '2026-10-27'
+    reference: change-requests/CR-BP-CE-L2-process-adopted-fields.md
+  review_due: '2026-12-31'
+  decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
 description: Effect the regulator- or court-mandated governance unwind within the dea:pc-ge-retire Cell Charter. The trigger is a binding regulator or court order; the outcome is the documented, regulator- or court-supervised wind-down of governance bodies, policy instruments, mandates, and constitutional instruments, culminating in statutory dissolution filings, retained-records custodianship assignment, and surrender of authorisation or cancellation of permission or court decree entry.
 trigger: A regulator or court issues a mandatory dissolution, revocation, wind-down, cease-and-desist, or equivalent order (FCA WDPG UK firm wind-down planning, California Corporations Code 5033-5034 dissolution, IRS 501(c)(3) federal tax-exempt dissolution obligations, state attorney-general charity oversight, federal banking regulator cease-and-desist, court receivership), triggering a formally governed unwind of governance bodies, policies, and mandates.

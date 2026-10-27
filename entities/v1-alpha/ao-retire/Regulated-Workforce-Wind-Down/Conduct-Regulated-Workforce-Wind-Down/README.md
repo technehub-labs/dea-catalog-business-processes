@@ -39,6 +39,8 @@ This directory hosts the canonical Process record for `processes:process-ao-reti
 | `status` | string | no | candidate |
 | `process_intent` | string | no | manage |
 | `process_type` | string | no | management |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Conduct a regulated workforce wind-down under statutory mass-layoff, consultation, notice, severance, and transition-sup |
 | `trigger` | string | no | A regulated wind-down event is authorized (mass layoff, agent unit decommission, or organizational unit wind-down) where |

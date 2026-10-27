@@ -38,6 +38,8 @@ This directory hosts the canonical Process record for `processes:process-ao-conc
 | `status` | string | no | candidate |
 | `process_intent` | string | no | manage |
 | `process_type` | string | no | management |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Conceive the regulated-scope composition of the enterprise's agentive mix under the enterprise regulated-entity approval |
 | `trigger` | string | no | The enterprise's agent-capacity strategy will include roles whose holders must hold regulator-issued licences or registr |
