@@ -78,11 +78,20 @@ legacy `process_type` is populated in 145).
 
 | Field | Value |
 |---|---|
-| CR id | CR-BP-CE-0 (umbrella for CR-BP-CE-L0..L4, CR-BP-CE-RL) |
-| Status | Proposed |
+| CR id | CR-BP-CE-0 (umbrella for CR-BP-CE-L0..L4, CR-BP-CE-RL; numbering reconciled by CR-BP-CE-REC-1) |
+| Status | draft (awaiting maintainer ratification) |
 | Type | additive + governance (no semantic rewrites of existing entries) |
 | Scope | whole `entities/v1-alpha/` tree + `contributions/processes/` |
 | Related | CR-BP-03 (architecture), CR-BP-14 (semantics), CR-BP-44 (L3 decomposition), CR-BP-94-EXT-* (methodology) |
+
+
+> **Numbering reconciliation (CR-BP-CE-REC-1).** This CR was originally
+> drafted with the levels numbered L1..L4. The canonical model is L0..L4
+> (Process Context = L0), which the gate rule ids and the landed tranche
+> CRs (CR-BP-CE-L0/L1/L2/L4) follow. The labels, rule references, and
+> population counts in this document are reconciled to the canonical
+> model; no normative profile content changes.
+
 
 ## §2 Motivation
 
@@ -105,36 +114,34 @@ but nothing populates.
 
 ## §3 Completeness profiles (normative)
 
-"Complete" means: **every field in the level's profile is present, non-empty,
-and evidence-consistent**. Fields not in a level's profile are *prohibited* at
-that level. Field names below are the CANONICAL schema names (see §R3/R4).
+"Complete" means: **every field in the level's profile is present, non-empty, and evidence-consistent**. Fields not in a level's profile are *prohibited* at that level (existing deliberate omissions — e.g. `type`/`version` on L0 PCs — are reaffirmed, not fixed).
 
-### ProcessContext (canonical L0; 49 records)
+### L0 — Process Context (49 records)
 
 | Field | Status | Rule |
 |---|---|---|
 | `id`, `domain`, `lifecycle_stage`, `name` | required | already canonical (id system gate) |
 | `definition` | required | non-empty; references absorbed domains where applicable |
-| `scope.includes` / `scope.excludes` | required | >=3 each; boundary statements should name the neighbor cell absorbing each exclusion (CE-L0-003) |
+| `scope.includes` / `scope.excludes` | required | >=3 each; boundary statements must name the *neighbor cell* absorbing each exclusion (CE-L0-003) |
 | `outcomes` | required | >=3; each begins with a state-change verb phrase |
-| `adjacent_contexts` | required | the same-domain adjacent-stage PC ids -- **bidirectional**: each adjacent PC must reciprocally list this cell (CE-L0-004) |
-| `processes[]` | required | must equal the set of records physically located under this cell's directory |
-| `cell_charter` | required | all 7 sub-fields present (`enterprise_concern`, `lifecycle_concern`, `combined_semantic_meaning`, `expected_outcomes`, `inclusions`, `exclusions`, `adjacent_boundaries`) and consistent with `scope` + `outcomes` (CE-L0-005) |
-| `status`, `metadata.established_by/at`, `metadata.change_history[]` | required | every record carries >=1 CR reference |
-| `type`, `version`, `process_intent`, `process_audience` | prohibited | reaffirms the PC profile |
+| `adjacent_contexts` | required | exactly the 4 same-domain adjacent-stage PC ids — **bidirectional**: each adjacent PC must reciprocally list this cell (CE-L0-004) |
+| `processes[]` | required | must equal the set of L2 records physically located under this cell (cross-checked with the allocation matrix job) |
+| `cell_charter` | required | all 7 sub-fields present and consistent with `scope` + `outcomes` (duplicated content must not drift — CE-L0-005) |
+| `lifecycle_status`, `status`, `established_by/at`, `change_history[]`, `links[]` | required | every record carries >=1 CR `links` entry |
+| `type`, `version`, `process_intent`, `process_audience` | prohibited | reaffirms the mv1 PC profile |
 
-### ProcessGroup (canonical L1; 49 records)
+### L1 — Process Group (49 records)
 
 | Field | Status | Rule |
 |---|---|---|
 | `id`, `name`, `type`, `version` | required | |
-| `definition` | required | states the grouping *basis* (what makes these children a group) |
-| `process_context` | required | reference to the parent PC (canonical name; the draft wrote `context`) |
-| `composes` | required | one entry per child, top-level (canonical name; the draft wrote `relationships`) |
-| `scope`, `outcomes`, `process_group_kind`, `status`, `lifecycle_status` | required | per the canonical schema |
-| `owner` | adopted | knowledge-dependent -> admitted as `status: proposed` candidate during tranche (see §5) |
+| `description` | required | states the grouping *basis* (what makes these L2 children a group — not a restatement of the cell) |
+| `context` | required | >=1 `ref:` to the parent PC |
+| `relationships` | required | >=N `composes` instances, one per child L2 process, with provenance (CE-L1 required-fields family) |
+| `owner` | required | knowledge-dependent -> admitted as `status: proposed` candidate during tranche (see §5) |
+| `metadata.scope` | required | L0 scope reference consistent with the parent PC's `scope.includes` |
 
-### Process (canonical L2; 145 records)
+### L2 — Business Process (145 records)
 
 | Field | Status | Rule |
 |---|---|---|
@@ -143,42 +150,33 @@ that level. Field names below are the CANONICAL schema names (see §R3/R4).
 | `context` | required | >=1 PC ref; multi-context only where evidence exists |
 | `trigger`, `outcome`, `identity.*` | required | identity block per `entity.schema.json` (`verb`, `object`, `outcome_statement`) |
 | `relationships` | required | >=1 `realizes` + >=1 `serves`; `composes` toward parent group |
-| `owner`, `actors`, `stakeholders` | adopted | org-awareness fields; candidates admitted per §5 |
+| `owner`, `actors`, `stakeholders` | required | org-awareness fields; candidates admitted per §5 |
 | `kpis` | recommended | >=2; flagged, not blocked, when empty (CE-L2-006) |
 | `services_provided`, `components_involved` | recommended | >=1 each where the process is externally observable |
 | `specialization_pattern` | recommended | when `process_specialization` non-empty |
 | `capabilities_delivered` | prohibited | soft-deprecated (BP-MIG-002) |
 
-### Activity (canonical L3; 580 records)
+### L3 — Activity (580) / L4 — Task (2,900)
 
 | Field | Status | Rule |
 |---|---|---|
 | `id`, `name`, `type`, `version` | required | |
-| `belongs_to_business_process`, `cohesion_rationale` | required | canonical schema |
-| `trigger`, `outcome` | **not applicable** | the canonical Activity schema does not declare these (see §R4); the draft's requirement is moved to Task |
-
-### Task (canonical L4; 2,900 records)
-
-| Field | Status | Rule |
-|---|---|---|
-| `id`, `name`, `type`, `version`, `definition`, `status`, `lifecycle_status`, `ecfConformance` | required | canonical schema |
-| `belongs_to_activity`, `trigger`, `outcome` | required | template-derived from parent Activity identity; must not merely restate the parent (CE-L4-002: leaf-specificity check) |
-| `responsibility` | fixed | the 5-phase custodian vocabulary only (intake / record / processing / confirmation / verification) -- no enrichment may alter |
-| L2-only fields (`kpis`, `process_classification`, ...) | prohibited at Task | |
+| `trigger`, `outcome` | required | template-derived from parent L3 activity identity; must not merely restate the parent (CE-L4-002: leaf-specificity check) |
+| `relationships` | required | >=1 `composes` to parent; task->activity `flows-to` chain where sequential semantics are established |
+| Task verb | fixed | the 5 standard verbs only (intake/record/transform/confirm/verify) — no enrichment may alter |
+| `actors` | recommended | |
+| L2-only fields (`kpis`, `process_classification`, ...) | prohibited at L4 | |
 
 ## §4 New gate: `scripts/check_completeness.py`
 
-Runs in CI, PR-scoped, against the RECONCILED profiles (§R). The draft named a
-`catalog-conformance.yml` workflow; the actual mechanism is the aggregate
-`conformance_result.py` step in `.github/workflows/ci.yml` (the gate is
-registered there as advisory gate [50]). (§R6)
+Runs in CI via the `conformance_result.py` gate registry (gate [50], advisory; `.github/workflows/ci.yml`), PR-scoped:
 
 | Rule | Check |
 |---|---|
-| CE-000 | record's level is inferable (type field or `processes:pc-` id prefix); profile applied accordingly |
-| CE-L0..L4 | per-level profile rules above (§3) |
-| CE-900 | summary artifact `reconciliation/completeness-report.yaml`: per-level, per-domain completeness %, plus the seven-adopted-field and `process_classification` adoption counters |
-| Mode | `--advisory` (report-only) until the profiles are ratified and the tranche lands; `--strict` after CR-BP-CE-L0 lands |
+| CE-000 | record's level is inferable (id family + placement); profile applied accordingly |
+| CE-0xx/1xx/2xx/3xx/4xx | per-level profile rules above (L0..L4) |
+| CE-900 | summary artifact `reconciliation/completeness-report.yaml`: per-level, per-domain completeness % — baseline for the tranche sequence |
+| Mode | `--advisory` for the first N PRs (report-only), `--strict` after the level tranches land (CR-BP-CE-RL) |
 
 New MECE validator (separate, CR-BP-CE-RL):
 `scripts/check_relationship_consistency.py` -- rejects overlapping
@@ -207,79 +205,11 @@ provenance:
 
 ## §6 Tranche sequencing (dependency-ordered)
 
-Status as at 2026-10-27. The tranche CR numbers follow the CANONICAL level
-mapping fixed by R1 (CE-L0 = ProcessContext, CE-L1 = ProcessGroup,
-CE-L2 = Process, CE-L3 = Activity, CE-L4 = Task), which is the numbering the
-landed tranche CRs already use.
-
-| # | Tranche CR | Scope | State |
-|---|---|---|---|
-| 1 | CR-BP-CE-0 | profiles + gate (advisory) + baseline report | LANDED (#201) |
-| 2 | CR-BP-CE-L0 | the 8 gappy ProcessContext records (escape-clause Activate/Retire cells) + 49-cell bidirectionality audit | LANDED (#202) |
-| 3 | CR-BP-CE-L1 | 49 ProcessGroup records; grouping-basis derivation from L0 charters; `owner` candidates | LANDED (#204) |
-| 4 | CR-BP-CE-L2 | 145 Process records; `process_classification` + the org-awareness fields | LANDED (#206) |
-| 5 | CR-BP-CE-L3 | 580 Activity records; leaf-specificity audit | NOT STARTED |
-| 6 | CR-BP-CE-L4 | 2,900 Task records; the 5-phase custodian vocabulary audit | NOT STARTED |
-| 7 | CR-BP-CE-RL | cross-level relationship graph (`flows-to`, `produces`/`consumes`), MECE relationship validator, closure audit | NOT STARTED |
-
-Current gate state: **0 blocking, 871 advisory** findings across 3,723
-records (down from 43 blocking + 1,210 advisory at CE-0). The 871 remaining
-advisory findings are the unpopulated adopted fields; they are distributed
-across the seven canonical domains, and the tranche sequence is prioritised
-from that distribution (see R7 on why the earlier per-domain attribution was
-unusable).
-
----
-
-## Pilot contribution batch format
-
-Completeness contributions follow the contribution workflow: one batch file per
-cell, landed under the level's tranche CR, reviewed by the maintainer. The batch
-format conforms to `schemas/contribution.schema.json` (which requires `schema`,
-`contributor`, `contribution_date`, `proposed_entry`, `evidence`, `status`).
-The draft's `target_entry`/`target_path`/`proposed_changes` fields are folded
-into the canonical `proposed_entry` block (§R reconciliation; the contribution
-schema does not declare the draft's field names).
-
-Pilot shown for `eo-operate` (`processes:pc-eo-operate-ydqb96`), in
-`contributions/processes/ce-l1-eo-operate.yaml`:
-
-```yaml
-schema: dea-catalog-processes/contribution/v1
-contributor: dea-completeness-programme
-contribution_date: '2026-10-22'
-status: pending
-reviewer: DEA-curator
-cr: change-requests/CR-BP-CE-L0-process-context-completeness.md
-proposed_entry:
-  target_id: processes:pc-eo-operate-ydqb96
-  target_path: entities/v1-alpha/eo-operate/processes-pc-eo-operate-ydqb96.yaml
-  changes:
-    - field: cell_charter.adjacent_boundaries
-      action: verify-reciprocal
-      against:
-        - processes:pc-eo-conceive-mxmtzq
-        - processes:pc-eo-design-kxdfnz
-        - processes:pc-eo-build-zwkhxc
-        - processes:pc-eo-improve-pka6dk
-      rationale: >
-        CE-L0-004 bidirectionality: each adjacent PC must list this cell in its
-        own adjacent_contexts. The programme asserts the check; any asymmetry is
-        surfaced in the report, not auto-fixed.
-    - field: metadata.change_history
-      action: append
-      value:
-        cr: CR-BP-CE-L0
-        date: '2026-10-22'
-        change: >
-          Completeness tranche L0: bidirectionality audit of adjacent_contexts
-          and cell_charter.adjacent_boundaries. Additive, metadata-only.
-evidence:
-  - type: artifact
-    ref: reconciliation/completeness-report.yaml
-  - type: governance
-    ref: change-requests/CR-BP-CE-0-completeness-profiles.md
-```
+1. **CR-BP-CE-L0** — 8 escape-clause ProcessContext repairs (MERGED, PR #202).
+2. **CR-BP-CE-L1** — 49 ProcessGroup owner candidates (MERGED, PR #204).
+3. **CR-BP-CE-L2** — 145 Processes; classification + owner candidates (MERGED, PR #206).
+4. **CR-BP-CE-L4** — custodian vocabulary normalization, 580 Tasks (MERGED, PR #208).
+5. **CR-BP-CE-RL** — cross-level relationship graph (`flows-to`, `produces`/`consumes`), MECE validator, closure audit.
 
 ## Next steps
 

@@ -6,6 +6,10 @@ All notable changes to this repository are documented here. Format follows
 
 ## [Unreleased]
 
+### CR-BP-CE-REC-1: Umbrella CR Level-Numbering Reconciliation
+
+Reconciles the umbrella CR-BP-CE-0 (re-landed in draft form by PR #205) to the canonical L0..L4 level model the gate and the landed tranches follow: draft L1 Process Context -> L0, L2 Process Group -> L1, L3 Business Process -> L2, L4 Activity/Task -> L3/L4; stale population counts (140/560/2,800) -> live (145/580/2,900); the stale catalog-conformance.yml workflow reference -> the actual conformance_result.py gate registry (gate [50]). No normative profile content changes; labels, internal rule references, and counts only. The §6 tranche sequence restated as the landed CRs with their PR numbers. D-004 clean.
+
 ### CR-BP-CE-L4: Custodian Vocabulary Normalization + the CE-L0-003 Repair
 
 The Activity/Task-level tranche of the completeness programme (CR-BP-CE-0 §6). Normalizes the 580 intake-phase Task records' `responsibility` from `designated intake custodian` to the controlled-vocabulary `intake custodian` (580 CE-L4-002 resolved; the stray modifier traced to three generator sources, all corrected: decompose_l4.py, enrich_l4_governance_and_existence.py, enrich_l4_party_and_relationship.py). Repairs the one CE-L0-003 finding (pc-sd-improve-ft9k5f gains a third charter-derived scope.excludes entry). Post-tranche: gate [50] advisory 871 -> 290; the remaining findings are the deliberately-deferred CE-L2-006 actors/stakeholders candidates (the CR-BP-CE-RL input per §5/D-004). D-004 clean.
