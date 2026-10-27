@@ -46,6 +46,50 @@ def level_of(r):
     return None
 
 
+# Canonical level for a rule code. The rule codes carry the level in their
+# second segment (CE-L0-001 -> ProcessContext, CE-L1-* -> ProcessGroup,
+# CE-L2-* -> Process, CE-L3-* -> Activity, CE-L4-* -> Task), per the
+# CR-BP-CE-0 R1 level mapping. CE-000 is cross-level (level not inferable).
+RULE_LEVEL = {
+    "L0": "ProcessContext",
+    "L1": "ProcessGroup",
+    "L2": "Process",
+    "L3": "Activity",
+    "L4": "Task",
+}
+
+
+def level_of_rule(code):
+    """Canonical level for a finding rule code, or None for cross-level rules."""
+    parts = str(code).split("-")
+    if len(parts) >= 3 and parts[1] in RULE_LEVEL:
+        return RULE_LEVEL[parts[1]]
+    return None
+
+
+def domain_of(r):
+    """Resolve a record's canonical domain.
+
+    Only ProcessContext carries a top-level `domain`. Every ProcessGroup,
+    Process, Activity, and Task resolves its domain through
+    `ecfConformance.canonicalReferences[0].domain`. The finding counter and
+    the denominator MUST use the same resolution, otherwise the per-domain
+    completeness figures divide by a different population than they count
+    (CR-BP-CE-0 R7).
+    """
+    d = r.get("domain")
+    if d:
+        return d
+    ecf = r.get("ecfConformance")
+    if isinstance(ecf, dict):
+        refs = ecf.get("canonicalReferences")
+        if isinstance(refs, list):
+            for ref in refs:
+                if isinstance(ref, dict) and ref.get("domain"):
+                    return ref["domain"]
+    return "?"
+
+
 def load_records():
     out = []
     for f in sorted(ENT.rglob("*.yaml")):
@@ -173,23 +217,39 @@ def main():
     # CE-900: per-level, per-domain completeness + adoption counters
     import collections
     tot = collections.Counter()
-    bad = collections.Counter()
     domain_tot = collections.Counter()
-    domain_bad = collections.Counter()
+    rule_bad = collections.Counter()
+    level_findings = collections.Counter()
+    domain_findings = collections.Counter()
     for f, r in recs:
-        lv = level_of(r) or "?"
-        tot[lv] += 1
-        dom = r.get("domain") or r.get("ecfConformance", {}).get("canonicalReferences", [{}])[0].get("domain", "?") if isinstance(r.get("ecfConformance"), dict) else (r.get("domain") or "?")
-        domain_tot[dom] += 1
+        tot[level_of(r) or "?"] += 1
+        domain_tot[domain_of(r)] += 1
+    # Findings are keyed by rule code; the rule code carries the level
+    # (CR-BP-CE-0 R1 mapping). Attributing the level from the rule code is
+    # what makes the per-level finding counts real: keying the counter on the
+    # level NAME while the findings are keyed on the rule code yields a
+    # structurally-zero column.
+    #
+    # A record may raise SEVERAL findings, so the completeness percentage is
+    # computed over the RECORDS carrying at least one finding, not over the
+    # finding count. The finding count is reported alongside it.
+    id_to_domain = {r["id"]: domain_of(r) for _, r in recs}
+    id_to_level = {r["id"]: (level_of(r) or "?") for _, r in recs}
+    bad_level_recs = collections.defaultdict(set)
+    bad_domain_recs = collections.defaultdict(set)
     for x in blocking + advisory:
-        lv = x["rule"]
-        bad[lv] += 1
-    # per-domain blocking count needs the domain per finding; recompute
-    fdom = {}
-    for f, r in recs:
-        fdom[r["id"]] = r.get("domain") or "?"
-    for x in blocking + advisory:
-        domain_bad[fdom.get(x["id"], "?")] += 1
+        rule_bad[x["rule"]] += 1
+        rid = x["id"]
+        lv = level_of_rule(x["rule"]) or id_to_level.get(rid, "?")
+        level_findings[lv] += 1
+        domain_findings[id_to_domain.get(rid, "?")] += 1
+        bad_level_recs[lv].add(rid)
+        bad_domain_recs[id_to_domain.get(rid, "?")].add(rid)
+
+    def pct(incomplete, n):
+        if not n:
+            return 100.0
+        return round(100.0 * (n - incomplete) / n, 2)
 
     seven_pop = {k: 0 for k in SEVEN}
     pclass = 0
@@ -204,8 +264,26 @@ def main():
         "cr": "CR-BP-CE-0",
         "mode": "strict" if a.strict else "advisory",
         "record_count": len(recs),
-        "by_level": {k: {"records": tot[k], "findings": bad.get(k, 0)} for k in tot},
-        "by_domain_findings": dict(sorted(domain_bad.items())),
+        "by_level": {
+            k: {
+                "records": tot[k],
+                "records_with_findings": len(bad_level_recs.get(k, ())),
+                "findings": level_findings.get(k, 0),
+                "completeness_pct": pct(len(bad_level_recs.get(k, ())), tot[k]),
+            }
+            for k in sorted(tot)
+        },
+        "by_domain": {
+            k: {
+                "records": domain_tot[k],
+                "records_with_findings": len(bad_domain_recs.get(k, ())),
+                "findings": domain_findings.get(k, 0),
+                "completeness_pct": pct(len(bad_domain_recs.get(k, ())), domain_tot[k]),
+            }
+            for k in sorted(domain_tot)
+        },
+        "by_domain_findings": dict(sorted(domain_findings.items())),
+        "by_rule": dict(sorted(rule_bad.items())),
         "adoption": {
             "operational_fields": {k: {"populated": seven_pop[k], "of": len(recs)} for k in SEVEN},
             "process_classification": {"populated": pclass, "of": len(recs)},
