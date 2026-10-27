@@ -39,6 +39,8 @@ This directory hosts the canonical Process record for `processes:process-eo-reti
 | `status` | string | no | candidate |
 | `process_intent` | string | no | transform |
 | `process_type` | string | no | core |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Withdraw and retire an operational asset (technology or physical): plan and approve the retirement, isolate and withdraw |
 | `trigger` | string | no | An operational asset reaches end of life, is superseded, or is approved for retirement. |

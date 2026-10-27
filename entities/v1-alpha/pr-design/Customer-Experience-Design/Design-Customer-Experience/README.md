@@ -41,6 +41,8 @@ This directory hosts the canonical Process record for `processes:process-pr-desi
 | `status` | string | no | candidate |
 | `process_intent` | string | no | develop |
 | `process_type` | string | no | standardization |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Operate the Design Customer Experience L2 process within the |
 | `trigger` | string | no | Customer strategy has committed a segment thesis and value exchange; the experience must now be designed to realise that |

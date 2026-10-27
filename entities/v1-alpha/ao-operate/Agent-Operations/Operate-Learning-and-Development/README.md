@@ -39,6 +39,8 @@ This directory hosts the canonical Process record for `processes:process-ao-oper
 | `status` | string | no | candidate |
 | `process_intent` | string | no | operate |
 | `process_type` | string | no | core |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Operate the Operate Learning and Development L2 process within the dea:pc-ao-operate Cell Charter. See trigger and outco |
 | `trigger` | string | no | Learning and development operation is needed because agents in service require scheduled delivery of development program |

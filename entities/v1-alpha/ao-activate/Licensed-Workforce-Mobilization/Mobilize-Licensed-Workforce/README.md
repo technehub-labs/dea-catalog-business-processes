@@ -39,6 +39,8 @@ This directory hosts the canonical Process record for `processes:process-ao-acti
 | `status` | string | no | candidate |
 | `process_intent` | string | no | manage |
 | `process_type` | string | no | management |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Mobilize a licensed or regulated workforce under the enterprise regulated-entity approval authority within the dea:pc-ao |
 | `trigger` | string | no | A workforce role whose holders must hold a regulator-issued licence is approved by the enterprise regulated-entity appro |

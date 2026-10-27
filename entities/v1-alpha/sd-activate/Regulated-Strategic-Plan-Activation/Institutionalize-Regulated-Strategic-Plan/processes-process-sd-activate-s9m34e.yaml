@@ -6,6 +6,24 @@ lifecycle_status: candidate
 status: candidate
 process_intent: manage
 process_type: management
+process_classification:
+  type: management
+  provenance:
+    type: migration
+    asserted_by: dea-completeness-programme
+    asserted_at: '2026-10-27'
+    reference: change-requests/CR-BP-CE-L2-process-adopted-fields.md
+  status: active
+owner:
+  value: awaiting_owner_confirmation
+  status: proposed
+  provenance:
+    type: inference
+    asserted_by: dea-completeness-programme
+    asserted_at: '2026-10-27'
+    reference: change-requests/CR-BP-CE-L2-process-adopted-fields.md
+  review_due: '2026-12-31'
+  decision_right: Business Process Owner (GOV-002) confirms
 trigger: A regulated entity's board-approved strategic plan must be filed with or activated under the supervision of a competent regulator before the plan takes effect (Basel ICAAP / SAA approval; BRRD recovery-plan activation under SRB; NHS trust 5-year strategy approval; PUC integrated resource plan filing; bank recovery and resolution plan activation under FDIC).
 outcome: The regulated strategic plan is formally activated with the supervisor's acknowledgement on record, the filing receipt preserved, the operational monitoring framework live, and the plan's obligations binding on the regulated entity under the regulator's continuing supervision.
 description: Institutionalize a regulated entity's strategic plan under the enterprise's regulated-entity approval authority within the dea:pc-sd-activate Cell Charter. The trigger is a board-approved strategic plan that must be filed with or activated under the supervision of a competent regulator; the outcome is the plan formally activated with the supervisor's acknowledgement on record, the filing receipt preserved, the operational monitoring framework live, and the plan's obligations binding on the regulated entity under the regulator's continuing supervision. Distinct from strategy build (Build coordinate) and from steady-state strategy execution (Operate coordinate).

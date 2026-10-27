@@ -38,6 +38,8 @@ This directory hosts the canonical Process record for `processes:process-eo-oper
 | `status` | string | no | candidate |
 | `process_intent` | string | no | operate |
 | `process_type` | string | no | core |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Operate the Operate Asset Maintenance L2 process within the dea:pc-oe-operate Cell Charter. See trigger and outcome for  |
 | `trigger` | string | no | Asset maintenance operation is needed because installed assets degrade and require scheduled and reactive maintenance to |

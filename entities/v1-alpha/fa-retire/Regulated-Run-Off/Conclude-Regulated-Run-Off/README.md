@@ -39,6 +39,8 @@ This directory hosts the canonical Process record for `processes:process-fa-reti
 | `status` | string | no | candidate |
 | `process_intent` | string | no | manage |
 | `process_type` | string | no | management |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Conclude a regulated run-off of a financial entity (insurer, mutual, or run-off portfolio) under statutory run-off oblig |
 | `trigger` | string | no | A regulator-acknowledged run-off authorisation is granted (PRA PS20/24 UK, FSB 2025, NAIC Model 901, or jurisdictional e |

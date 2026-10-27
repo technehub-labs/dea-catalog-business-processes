@@ -39,6 +39,8 @@ This directory hosts the canonical Process record for `processes:process-ge-acti
 | `status` | string | no | candidate |
 | `process_intent` | string | no | transform |
 | `process_type` | string | no | core |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Bring an adopted policy instrument, mandate or charter from adopted-but-dormant to in-force: verify commencement conditi |
 | `trigger` | string | no | A policy instrument, mandate or charter has been adopted and its commencement conditions are met. |

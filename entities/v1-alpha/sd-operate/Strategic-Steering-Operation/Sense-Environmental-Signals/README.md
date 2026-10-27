@@ -39,6 +39,8 @@ This directory hosts the canonical Process record for `processes:process-sd-oper
 | `status` | string | no | candidate |
 | `process_intent` | string | no | operate |
 | `process_type` | string | no | strategic |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Operate the Sense Environmental Signals L2 process within the dea:pc-sd-operate Cell Charter. See trigger and outcome fo |
 | `trigger` | string | no | Environmental sensing is needed because the operating strategy requires continuous signals to detect drift, disruption,  |

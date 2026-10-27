@@ -39,6 +39,8 @@ This directory hosts the canonical Process record for `processes:process-eo-desi
 | `status` | string | no | candidate |
 | `process_intent` | string | no | develop |
 | `process_type` | string | no | management |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Operate the Design Facility and Asset Blueprint L2 process within the dea:pc-oe-design Cell Charter. See trigger and out |
 | `trigger` | string | no | A facility and asset blueprint design is needed because the framed physical asset approach requires bounded layouts, equ |

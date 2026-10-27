@@ -39,6 +39,8 @@ This directory hosts the canonical Process record for `processes:process-sd-conc
 | `status` | string | no | candidate |
 | `process_intent` | string | no | develop |
 | `process_type` | string | no | strategic |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Operate the Define Enterprise Purpose and Ambition L2 process within the dea:pc-sd-conceive Cell Charter. See trigger an |
 | `trigger` | string | no | An enterprise purpose definition is needed because the enterprise is being established, reframed, or responding to manda |

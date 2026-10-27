@@ -39,6 +39,8 @@ This directory hosts the canonical Process record for `processes:process-pv-buil
 | `status` | string | no | candidate |
 | `process_intent` | string | no | develop |
 | `process_type` | string | no | management |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Operate the Prepare Market Readiness L2 process within the dea:pc-pv-build Cell Charter. See trigger and outcome for the |
 | `trigger` | string | no | Market readiness preparation is needed because the built product or service requires go-to-market assets, pricing, and c |

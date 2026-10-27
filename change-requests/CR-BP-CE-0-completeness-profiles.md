@@ -1,5 +1,10 @@
 # CR-BP-CE-0: Catalog Completeness Programme — Profiles, Gate, and Tranche Sequence
 
+**Status**: Proposed
+**Layer**: Process Catalog (Cross-Cutting Documentation)
+**Owner**: Emmanuel A. Otchere
+**Depends on**: CR-BP-106
+
 ## Status
 
 | Field | Value |

@@ -39,6 +39,8 @@ This directory hosts the canonical Process record for `processes:process-sd-oper
 | `status` | string | no | candidate |
 | `process_intent` | string | no | operate |
 | `process_type` | string | no | strategic |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Operate the Steer Initiative Portfolio L2 process within the dea:pc-sd-operate Cell Charter. See trigger and outcome for |
 | `trigger` | string | no | Initiative portfolio steering is needed because in-flight initiatives drift against strategic performance and require re |

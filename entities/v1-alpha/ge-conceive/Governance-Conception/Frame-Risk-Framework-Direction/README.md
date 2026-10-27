@@ -32,6 +32,8 @@ This directory hosts the canonical Process record for `processes:process-ge-conc
 | `status` | string | no | candidate |
 | `process_intent` | string | no | govern |
 | `process_type` | string | no | strategic |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `context` | array[1] | no | array of 1 item(s) |
 | `description` | string | no | Frame Risk Framework Direction (conceive stage, strategic process). Landed by CR-BP-21f.1 |
 | `trigger` | string | no | A governance mandate requires an enterprise risk posture. |

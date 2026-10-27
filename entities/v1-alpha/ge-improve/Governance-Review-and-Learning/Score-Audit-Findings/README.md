@@ -32,6 +32,8 @@ This directory hosts the canonical Process record for `processes:process-ge-impr
 | `status` | string | no | candidate |
 | `process_intent` | string | no | develop |
 | `process_type` | string | no | standardization |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `context` | array[1] | no | array of 1 item(s) |
 | `description` | string | no | Score Audit Findings (improve stage, standardization process). Landed by CR-BP-21f.1 |
 | `trigger` | string | no | An audit report is delivered with findings. |

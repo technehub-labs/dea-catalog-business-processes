@@ -38,6 +38,8 @@ This directory hosts the canonical Process record for `processes:process-eo-acti
 | `status` | string | no | candidate |
 | `process_intent` | string | no | manage |
 | `process_type` | string | no | management |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `trigger` | string | no | An operations capability requires formal regulator-issued authorization or certification before it may enter live servic |
 | `outcome` | string | no | The operations capability is formally activated with the regulator's authorization on record, operations manuals and run |
 | `description` | string | no | Activate an operations capability under the enterprise's regulated-entity approval authority within the dea:pc-oe-activa |

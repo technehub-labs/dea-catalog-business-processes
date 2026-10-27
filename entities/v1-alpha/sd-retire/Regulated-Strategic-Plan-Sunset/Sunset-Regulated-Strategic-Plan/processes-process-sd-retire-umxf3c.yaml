@@ -6,6 +6,24 @@ lifecycle_status: candidate
 status: candidate
 process_intent: manage
 process_type: management
+process_classification:
+  type: management
+  provenance:
+    type: migration
+    asserted_by: dea-completeness-programme
+    asserted_at: '2026-10-27'
+    reference: change-requests/CR-BP-CE-L2-process-adopted-fields.md
+  status: active
+owner:
+  value: awaiting_owner_confirmation
+  status: proposed
+  provenance:
+    type: inference
+    asserted_by: dea-completeness-programme
+    asserted_at: '2026-10-27'
+    reference: change-requests/CR-BP-CE-L2-process-adopted-fields.md
+  review_due: '2026-12-31'
+  decision_right: Business Process Owner (GOV-002) confirms
 trigger: A regulated entity's supervisor-acknowledged-and-live strategic plan must be sunset because a competent regulator has required its retirement (failed stress test triggers plan replacement; bank recovery-plan rejection by the SRB; FDIC directive to retire an inadequate resolution plan; state PUC retraction of an approved strategic plan; NHS England directive to retire a non-viable 5-year strategy).
 outcome: The regulated strategic plan is formally sunset with the regulator directive on record, the replacement plan's status preserved, the retired plan's records retained per the regulated-entity retention policy, and the supervisor's acknowledgement of the sunset recorded.
 description: Sunset a regulated entity's supervisor-acknowledged-and-live strategic plan under the enterprise's regulated-entity retention policy within the dea:pc-sd-retire Cell Charter. The trigger is a competent regulator's directive or rejection that requires the plan's retirement; the outcome is the plan formally sunset with the regulator directive on record, the replacement plan's status preserved, the retired plan's records retained per the regulated-entity retention policy, and the supervisor's acknowledgement of the sunset recorded. Distinct from strategy improvement (Improve coordinate) and from strategy activation (Activate coordinate, which handles replacement-plan activation).

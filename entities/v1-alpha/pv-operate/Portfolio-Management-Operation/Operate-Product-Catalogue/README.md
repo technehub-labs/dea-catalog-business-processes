@@ -39,6 +39,8 @@ This directory hosts the canonical Process record for `processes:process-pv-oper
 | `status` | string | no | candidate |
 | `process_intent` | string | no | operate |
 | `process_type` | string | no | core |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Operate the Operate Product Catalogue L2 process within the dea:pc-pv-operate Cell Charter. See trigger and outcome for  |
 | `trigger` | string | no | Product catalogue operation is needed because the developed products are now in active operation and require steady-stat |

@@ -38,6 +38,8 @@ This directory hosts the canonical Process record for `processes:process-ao-desi
 | `status` | string | no | candidate |
 | `process_intent` | string | no | manage |
 | `process_type` | string | no | management |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Design the regulator-tied role catalogue and competency framework entries under the enterprise regulated-entity approval |
 | `trigger` | string | no | The enterprise's role catalogue and competency framework include roles whose holders must hold regulator-issued licences |

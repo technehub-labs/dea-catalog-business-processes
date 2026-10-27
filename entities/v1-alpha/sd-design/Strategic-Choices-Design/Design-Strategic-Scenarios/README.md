@@ -39,6 +39,8 @@ This directory hosts the canonical Process record for `processes:process-sd-desi
 | `status` | string | no | candidate |
 | `process_intent` | string | no | develop |
 | `process_type` | string | no | strategic |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Operate the Design Strategic Scenarios L2 process within the dea:pc-sd-design Cell Charter. See trigger and outcome for  |
 | `trigger` | string | no | A strategic scenarios design is needed because the strategic options require bounded assumptions and signposts to stress |

@@ -38,6 +38,8 @@ This directory hosts the canonical Process record for `processes:process-fa-acti
 | `status` | string | no | candidate |
 | `process_intent` | string | no | manage |
 | `process_type` | string | no | management |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `trigger` | string | no | A billing or revenue-recognition capability requires formal regulator-acknowledged activation before live invoicing or r |
 | `outcome` | string | no | The billing or revenue-recognition capability is formally activated with the regulator's acknowledgement on record, the  |
 | `description` | string | no | Activate a billing or revenue-recognition capability under the enterprise's regulated-entity approval authority within t |

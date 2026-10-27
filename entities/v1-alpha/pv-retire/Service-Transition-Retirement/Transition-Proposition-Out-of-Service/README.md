@@ -39,6 +39,8 @@ This directory hosts the canonical Process record for `processes:process-pv-reti
 | `status` | string | no | candidate |
 | `process_intent` | string | no | transform |
 | `process_type` | string | no | core |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Transition a proposition, product or service out of operational service in a controlled manner: withdrawal planning, sta |
 | `trigger` | string | no | An approved retirement decision exists for the proposition, product or service. |

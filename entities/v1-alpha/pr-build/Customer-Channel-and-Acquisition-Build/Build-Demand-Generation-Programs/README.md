@@ -40,6 +40,8 @@ This directory hosts the canonical Process record for `processes:process-pr-buil
 | `status` | string | no | candidate |
 | `process_intent` | string | no | operate |
 | `process_type` | string | no | core |
+| `process_classification` | object | no | object: type, provenance, status |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Operate the Build Demand Generation Programs L2 process within the |
 | `trigger` | string | no | Customer demand model is committed; the demand-generation engine (the asset that produces sustained demand) must be buil |
