@@ -77,6 +77,8 @@ CR_NUMBER_PATTERN = re.compile(
     r"^CR-(?:BP-(?:\d+(?:[a-zA-Z](\.\d+)*)?(?:-(?:EXT-\d+[a-zA-Z]?|[a-z0-9]+))*|"
     r"CE-\d+(?:-[a-z0-9]+)*|"
     r"CE-L\d+(?:-[a-z0-9]+)*|"
+    r"CE-RL(?:-[a-z0-9]+)*|"
+    r"CE-REC-\d+(?:-[a-z0-9]+)*|"
     r"L\d+-\d+[a-zA-Z]?(?:-[a-z0-9]+)*|"
     r"mv\d+(?:-[a-z0-9]+)*|"
     r"SPEC-[A-Z0-9]+(?:-[a-z0-9]+)*|"

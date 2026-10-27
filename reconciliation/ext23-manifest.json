@@ -4,9 +4,11 @@
   "generator": "scripts/check_conformance_posture_ext23.py",
   "parent_cr": "CR-BP-EXT-23",
   "summary": {
-    "total_findings": 4,
+    "total_findings": 8,
     "by_rule": {
-      "C23-03": 4
+      "C23-02": 3,
+      "C23-03": 4,
+      "C23-10": 1
     }
   },
   "findings": [
@@ -33,10 +35,34 @@
       "where": "[47] Decomposition Reconciliation (CR-BP-94-EXT-22; R22-01..R22-12)",
       "diagnostic": "gate '[47] Decomposition Reconciliation (CR-BP-94-EXT-22; R22-01..R22-12)' is deterministically enforceable but its population carries 8 open findings; the gate is deferred, not promoted, until the population is reconciled",
       "severity": "info"
+    },
+    {
+      "rule": "C23-02",
+      "where": "[48] Conformance Framework (CR-BP-EXT-23; CF-001..CF-051)",
+      "diagnostic": "gate '[48] Conformance Framework (CR-BP-EXT-23; CF-001..CF-051)' has no enforcement class; REQ-23-02 requires exactly one class per gate",
+      "severity": "error"
+    },
+    {
+      "rule": "C23-02",
+      "where": "[49] Programme Closure (CR-BP-94-EXT-24; CG-001..CG-080)",
+      "diagnostic": "gate '[49] Programme Closure (CR-BP-94-EXT-24; CG-001..CG-080)' has no enforcement class; REQ-23-02 requires exactly one class per gate",
+      "severity": "error"
+    },
+    {
+      "rule": "C23-02",
+      "where": "[50] Completeness Profiles (CR-BP-CE-0; CE-000..CE-900)",
+      "diagnostic": "gate '[50] Completeness Profiles (CR-BP-CE-0; CE-000..CE-900)' has no enforcement class; REQ-23-02 requires exactly one class per gate",
+      "severity": "error"
+    },
+    {
+      "rule": "C23-10",
+      "where": "registry",
+      "diagnostic": "inventory has 52 entries for 55 registered gates",
+      "severity": "error"
     }
   ],
   "posture_summary": {
-    "total_registered_gates": 52,
+    "total_registered_gates": 55,
     "by_enforcement_class": {
       "content": 25,
       "semantic": 6,

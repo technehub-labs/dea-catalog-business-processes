@@ -6,6 +6,10 @@ All notable changes to this repository are documented here. Format follows
 
 ## [Unreleased]
 
+### CR-BP-CE-RL: Completeness Gate Posture Flip and Programme Closure
+
+The final slice of the completeness programme. Gate [50] Completeness Profiles flips advisory -> BLOCKING in the conformance_result.py registry (--advisory -> --strict): the blocking profile is 0 across all 3,723 records, so CI now fails on newly introduced schema-profile defects (required fields emptied, prohibited fields added, non-vocabulary Task responsibilities) — the 43-blocking-defect class cannot re-enter silently. The 290 knowledge-dependent CE-L2-006 actors/stakeholders candidates remain advisory via the explicit time-bound carve-out pending the GOV-002/GOV-003 sweep (EXT-24 register review due 2026-12-31; the EXT-23 exception lifecycle applies if the window lapses). The S16 CR-number pattern is extended additively to admit the CE-RL / CE-REC-N tranche names. The MECE cross-level relationship validator remains a separate follow-on CR per the umbrella §4. D-004 clean.
+
 ### CR-BP-CE-REC-1: Umbrella CR Level-Numbering Reconciliation
 
 Reconciles the umbrella CR-BP-CE-0 (re-landed in draft form by PR #205) to the canonical L0..L4 level model the gate and the landed tranches follow: draft L1 Process Context -> L0, L2 Process Group -> L1, L3 Business Process -> L2, L4 Activity/Task -> L3/L4; stale population counts (140/560/2,800) -> live (145/580/2,900); the stale catalog-conformance.yml workflow reference -> the actual conformance_result.py gate registry (gate [50]). No normative profile content changes; labels, internal rule references, and counts only. The §6 tranche sequence restated as the landed CRs with their PR numbers. D-004 clean.
