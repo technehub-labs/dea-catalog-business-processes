@@ -1,11 +1,11 @@
 id: processes:task-sd-improve-intake-k7ukdu
 type: Task
 name: Consolidate Adaptation Drivers Intake
-definition: 'The bounded unit of work within `dea:activity-consolidate-adaptation-drivers` (Consolidate Adaptation Drivers) that carries out the intake phase of the parent''s verb-object decomposition. Phase responsibility: designated intake custodian. Phase trigger: Parent Activity''s input class is presented for processing and the activity owner is notified of intake. Phase outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
+definition: 'The bounded unit of work within `dea:activity-consolidate-adaptation-drivers` (Consolidate Adaptation Drivers) that carries out the intake phase of the parent''s verb-object decomposition. Phase responsibility: intake custodian. Phase trigger: Parent Activity''s input class is presented for processing and the activity owner is notified of intake. Phase outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
 belongs_to_activity: processes:activity-sd-improve-dhkxf6
 trigger: Parent Activity's input class is presented for processing and the activity owner is notified of intake.
 outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Acceptance of the input artifact per parent Activity scope.

@@ -39,7 +39,7 @@ This directory hosts the canonical Task record for `processes:task-ge-activate-i
 | `belongs_to_activity` | string | no | processes:activity-ge-activate-6uwq7f |
 | `trigger` | string | no | Custody of the Activate-stage input pack for Communicate Obligations and Rights ready for intake; predecessor phase has  |
 | `outcome` | string | no | Intake manifest registered and bound to the Communicate Obligations and Rights case file; registered intake custodian pa |
-| `responsibility` | string | no | designated intake custodian |
+| `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
 | `status` | string | no | candidate |

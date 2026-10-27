@@ -5,7 +5,7 @@ definition: The bounded unit of work within `processes:activity-pr-retire-k646h9
 belongs_to_activity: processes:activity-pr-retire-k646h9
 trigger: Custody of the Retire-stage input pack for Plan Relationship Close-Out ready for intake; predecessor phase has produced the case file context and intake contract applies.
 outcome: Intake manifest registered and bound to the Plan Relationship Close-Out case file; registered intake custodian passes custody to the verification custodian.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Receipt and registration of the Plan Relationship Close-Out input pack against the Retire-stage intake contract.

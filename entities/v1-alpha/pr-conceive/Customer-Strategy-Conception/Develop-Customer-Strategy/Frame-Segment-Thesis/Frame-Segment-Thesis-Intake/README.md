@@ -39,7 +39,7 @@ This directory hosts the canonical Task record for `processes:task-pr-conceive-i
 | `belongs_to_activity` | string | no | processes:activity-pr-conceive-3tgws4 |
 | `trigger` | string | no | Custody of the Conceive-stage input pack for Frame Segment Thesis ready for intake; predecessor phase has produced the c |
 | `outcome` | string | no | Intake manifest registered and bound to the Frame Segment Thesis case file; registered intake custodian passes custody t |
-| `responsibility` | string | no | designated intake custodian |
+| `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
 | `status` | string | no | candidate |

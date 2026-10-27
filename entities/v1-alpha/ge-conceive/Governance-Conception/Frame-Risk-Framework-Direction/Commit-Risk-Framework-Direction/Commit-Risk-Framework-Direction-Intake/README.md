@@ -39,7 +39,7 @@ This directory hosts the canonical Task record for `processes:task-ge-conceive-i
 | `belongs_to_activity` | string | no | processes:activity-ge-conceive-j72hwy |
 | `trigger` | string | no | Custody of the Conceive-stage input pack for Commit Risk Framework Direction ready for intake; predecessor phase has pro |
 | `outcome` | string | no | Intake manifest registered and bound to the Commit Risk Framework Direction case file; registered intake custodian passe |
-| `responsibility` | string | no | designated intake custodian |
+| `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
 | `status` | string | no | candidate |

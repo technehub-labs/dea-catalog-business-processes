@@ -39,7 +39,7 @@ This directory hosts the canonical Task record for `processes:task-ge-build-inta
 | `belongs_to_activity` | string | no | processes:activity-ge-build-f5yeny |
 | `trigger` | string | no | Custody of the Build-stage input pack for Codify Policies ready for intake; predecessor phase has produced the case file |
 | `outcome` | string | no | Intake manifest registered and bound to the Codify Policies case file; registered intake custodian passes custody to the |
-| `responsibility` | string | no | designated intake custodian |
+| `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
 | `status` | string | no | candidate |

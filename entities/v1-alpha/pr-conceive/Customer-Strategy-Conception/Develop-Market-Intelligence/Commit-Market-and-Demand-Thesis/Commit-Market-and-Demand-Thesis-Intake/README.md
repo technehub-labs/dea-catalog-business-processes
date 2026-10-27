@@ -39,7 +39,7 @@ This directory hosts the canonical Task record for `processes:task-pr-conceive-i
 | `belongs_to_activity` | string | no | processes:activity-pr-conceive-hx3r6g |
 | `trigger` | string | no | Custody of the Conceive-stage input pack for Commit Market and Demand Thesis ready for intake; predecessor phase has pro |
 | `outcome` | string | no | Intake manifest registered and bound to the Commit Market and Demand Thesis case file; registered intake custodian passe |
-| `responsibility` | string | no | designated intake custodian |
+| `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
 | `status` | string | no | candidate |

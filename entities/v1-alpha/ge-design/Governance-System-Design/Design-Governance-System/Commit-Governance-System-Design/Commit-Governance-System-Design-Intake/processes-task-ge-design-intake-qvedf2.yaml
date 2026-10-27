@@ -5,7 +5,7 @@ definition: The bounded unit of work within `processes:activity-ge-design-6xmeft
 belongs_to_activity: processes:activity-ge-design-6xmeft
 trigger: Custody of the Design-stage input pack for Commit Governance System Design ready for intake; predecessor phase has produced the case file context and intake contract applies.
 outcome: Intake manifest registered and bound to the Commit Governance System Design case file; registered intake custodian passes custody to the verification custodian.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Receipt and registration of the Commit Governance System Design input pack against the Design-stage intake contract.

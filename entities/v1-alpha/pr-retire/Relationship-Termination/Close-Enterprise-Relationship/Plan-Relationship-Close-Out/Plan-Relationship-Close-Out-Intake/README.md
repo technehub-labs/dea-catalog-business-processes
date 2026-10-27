@@ -39,7 +39,7 @@ This directory hosts the canonical Task record for `processes:task-pr-retire-int
 | `belongs_to_activity` | string | no | processes:activity-pr-retire-k646h9 |
 | `trigger` | string | no | Custody of the Retire-stage input pack for Plan Relationship Close-Out ready for intake; predecessor phase has produced  |
 | `outcome` | string | no | Intake manifest registered and bound to the Plan Relationship Close-Out case file; registered intake custodian passes cu |
-| `responsibility` | string | no | designated intake custodian |
+| `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
 | `status` | string | no | candidate |

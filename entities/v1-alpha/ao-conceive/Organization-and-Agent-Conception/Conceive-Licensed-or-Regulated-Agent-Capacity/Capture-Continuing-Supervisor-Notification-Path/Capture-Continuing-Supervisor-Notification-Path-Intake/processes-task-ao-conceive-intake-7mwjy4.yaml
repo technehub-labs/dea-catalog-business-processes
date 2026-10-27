@@ -12,7 +12,7 @@ trigger: Parent Activity's input class is presented for processing and the activ
   owner is notified of intake.
 outcome: Intake registered; input artifact preserved with audit identifiers; downstream
   phases may proceed.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Acceptance of the input artifact per parent Activity scope.

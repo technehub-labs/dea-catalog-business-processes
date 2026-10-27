@@ -15,9 +15,9 @@ This directory hosts the canonical Task record for `processes:task-sd-conceive-i
 
 ## Intent and Definition
 
-**Intent**: The bounded unit of work within `dea:activity-anchor-horizon-milestones` (Anchor Horizon Milestones) that carries out the intake phase of the parent's verb-object decomposition. Phase responsibility: designated intake custodian. Phase trigger: Parent Activity's input class is presented for processing and the activity owner is notified of intake. Phase outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.
+**Intent**: The bounded unit of work within `dea:activity-anchor-horizon-milestones` (Anchor Horizon Milestones) that carries out the intake phase of the parent's verb-object decomposition. Phase responsibility: intake custodian. Phase trigger: Parent Activity's input class is presented for processing and the activity owner is notified of intake. Phase outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.
 
-**Definition**: The bounded unit of work within `dea:activity-anchor-horizon-milestones` (Anchor Horizon Milestones) that carries out the intake phase of the parent's verb-object decomposition. Phase responsibility: designated intake custodian. Phase trigger: Parent Activity's input class is presented for processing and the activity owner is notified of intake. Phase outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.
+**Definition**: The bounded unit of work within `dea:activity-anchor-horizon-milestones` (Anchor Horizon Milestones) that carries out the intake phase of the parent's verb-object decomposition. Phase responsibility: intake custodian. Phase trigger: Parent Activity's input class is presented for processing and the activity owner is notified of intake. Phase outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.
 
 ## 2. Governance and Provenance
 
@@ -39,7 +39,7 @@ This directory hosts the canonical Task record for `processes:task-sd-conceive-i
 | `belongs_to_activity` | string | no | processes:activity-sd-conceive-h9ued3 |
 | `trigger` | string | no | Parent Activity's input class is presented for processing and the activity owner is notified of intake. |
 | `outcome` | string | no | Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed. |
-| `responsibility` | string | no | designated intake custodian |
+| `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[2] | no | array of 2 item(s) |
 | `status` | string | no | candidate |

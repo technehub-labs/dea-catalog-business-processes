@@ -39,7 +39,7 @@ This directory hosts the canonical Task record for `processes:task-pr-build-inta
 | `belongs_to_activity` | string | no | processes:activity-pr-build-pd7paf |
 | `trigger` | string | no | Custody of the Build-stage input pack for Integrate Demand Engine with Channels ready for intake; predecessor phase has  |
 | `outcome` | string | no | Intake manifest registered and bound to the Integrate Demand Engine with Channels case file; registered intake custodian |
-| `responsibility` | string | no | designated intake custodian |
+| `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
 | `status` | string | no | candidate |

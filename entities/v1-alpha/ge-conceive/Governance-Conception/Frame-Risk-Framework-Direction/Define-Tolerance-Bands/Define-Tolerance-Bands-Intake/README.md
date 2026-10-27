@@ -39,7 +39,7 @@ This directory hosts the canonical Task record for `processes:task-ge-conceive-i
 | `belongs_to_activity` | string | no | processes:activity-ge-conceive-yucnbe |
 | `trigger` | string | no | Custody of the Conceive-stage input pack for Define Tolerance Bands ready for intake; predecessor phase has produced the |
 | `outcome` | string | no | Intake manifest registered and bound to the Define Tolerance Bands case file; registered intake custodian passes custody |
-| `responsibility` | string | no | designated intake custodian |
+| `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
 | `status` | string | no | candidate |

@@ -39,7 +39,7 @@ This directory hosts the canonical Task record for `processes:task-ge-retire-int
 | `belongs_to_activity` | string | no | processes:activity-ge-retire-rzhc83 |
 | `trigger` | string | no | Custody of the Retire-stage input pack for Assign Retained-Records Custodianship ready for intake; predecessor phase has |
 | `outcome` | string | no | Intake manifest registered and bound to the Assign Retained-Records Custodianship case file; registered intake custodian |
-| `responsibility` | string | no | designated intake custodian |
+| `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
 | `status` | string | no | candidate |

@@ -39,7 +39,7 @@ This directory hosts the canonical Task record for `processes:task-pr-activate-i
 | `belongs_to_activity` | string | no | processes:activity-pr-activate-p53h54 |
 | `trigger` | string | no | Custody of the Activate-stage input pack for Classify Party Risk ready for intake; predecessor phase has produced the ca |
 | `outcome` | string | no | Intake manifest registered and bound to the Classify Party Risk case file; registered intake custodian passes custody to |
-| `responsibility` | string | no | designated intake custodian |
+| `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
 | `status` | string | no | candidate |

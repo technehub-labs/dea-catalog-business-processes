@@ -39,7 +39,7 @@ This directory hosts the canonical Task record for `processes:task-pr-design-int
 | `belongs_to_activity` | string | no | processes:activity-pr-design-9kscys |
 | `trigger` | string | no | Custody of the Design-stage input pack for Set Experience Quality Criteria ready for intake; predecessor phase has produ |
 | `outcome` | string | no | Intake manifest registered and bound to the Set Experience Quality Criteria case file; registered intake custodian passe |
-| `responsibility` | string | no | designated intake custodian |
+| `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
 | `status` | string | no | candidate |

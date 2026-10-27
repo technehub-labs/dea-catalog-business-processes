@@ -39,7 +39,7 @@ This directory hosts the canonical Task record for `processes:task-ge-conceive-i
 | `belongs_to_activity` | string | no | processes:activity-ge-conceive-hsg4tn |
 | `trigger` | string | no | Custody of the Conceive-stage input pack for Propose Authority and Decision Rights ready for intake; predecessor phase h |
 | `outcome` | string | no | Intake manifest registered and bound to the Propose Authority and Decision Rights case file; registered intake custodian |
-| `responsibility` | string | no | designated intake custodian |
+| `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
 | `status` | string | no | candidate |

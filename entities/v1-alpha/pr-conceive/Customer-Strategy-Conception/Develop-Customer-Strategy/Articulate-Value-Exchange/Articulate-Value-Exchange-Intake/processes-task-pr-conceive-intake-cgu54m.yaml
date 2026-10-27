@@ -5,7 +5,7 @@ definition: The bounded unit of work within `processes:activity-pr-conceive-6hab
 belongs_to_activity: processes:activity-pr-conceive-6habrm
 trigger: Custody of the Conceive-stage input pack for Articulate Value Exchange ready for intake; predecessor phase has produced the case file context and intake contract applies.
 outcome: Intake manifest registered and bound to the Articulate Value Exchange case file; registered intake custodian passes custody to the verification custodian.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Receipt and registration of the Articulate Value Exchange input pack against the Conceive-stage intake contract.

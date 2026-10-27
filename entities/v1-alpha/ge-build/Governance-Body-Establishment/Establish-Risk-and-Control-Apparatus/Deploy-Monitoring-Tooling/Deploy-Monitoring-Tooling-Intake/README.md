@@ -39,7 +39,7 @@ This directory hosts the canonical Task record for `processes:task-ge-build-inta
 | `belongs_to_activity` | string | no | processes:activity-ge-build-459rn2 |
 | `trigger` | string | no | Custody of the Build-stage input pack for Deploy Monitoring Tooling ready for intake; predecessor phase has produced the |
 | `outcome` | string | no | Intake manifest registered and bound to the Deploy Monitoring Tooling case file; registered intake custodian passes cust |
-| `responsibility` | string | no | designated intake custodian |
+| `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
 | `status` | string | no | candidate |

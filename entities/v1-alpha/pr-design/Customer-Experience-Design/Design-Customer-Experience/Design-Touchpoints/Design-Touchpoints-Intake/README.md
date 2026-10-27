@@ -39,7 +39,7 @@ This directory hosts the canonical Task record for `processes:task-pr-design-int
 | `belongs_to_activity` | string | no | processes:activity-pr-design-5vsfm6 |
 | `trigger` | string | no | Custody of the Design-stage input pack for Design Touchpoints ready for intake; predecessor phase has produced the case  |
 | `outcome` | string | no | Intake manifest registered and bound to the Design Touchpoints case file; registered intake custodian passes custody to  |
-| `responsibility` | string | no | designated intake custodian |
+| `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
 | `status` | string | no | candidate |

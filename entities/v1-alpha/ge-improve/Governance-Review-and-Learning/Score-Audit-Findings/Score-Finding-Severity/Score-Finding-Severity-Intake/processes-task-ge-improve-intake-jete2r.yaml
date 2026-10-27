@@ -5,7 +5,7 @@ definition: The bounded unit of work within `processes:activity-ge-improve-nz4rp
 belongs_to_activity: processes:activity-ge-improve-nz4rpa
 trigger: Custody of the Improve-stage input pack for Score Finding Severity ready for intake; predecessor phase has produced the case file context and intake contract applies.
 outcome: Intake manifest registered and bound to the Score Finding Severity case file; registered intake custodian passes custody to the verification custodian.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Receipt and registration of the Score Finding Severity input pack against the Improve-stage intake contract.

@@ -5,7 +5,7 @@ definition: The bounded unit of work within `processes:activity-pr-design-bp2kwt
 belongs_to_activity: processes:activity-pr-design-bp2kwt
 trigger: Custody of the Design-stage input pack for Map Journey Stages ready for intake; predecessor phase has produced the case file context and intake contract applies.
 outcome: Intake manifest registered and bound to the Map Journey Stages case file; registered intake custodian passes custody to the verification custodian.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Receipt and registration of the Map Journey Stages input pack against the Design-stage intake contract.

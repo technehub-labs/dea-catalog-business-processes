@@ -45,7 +45,7 @@ This directory hosts the canonical Task record for `processes:task-ao-design-int
 | `belongs_to_activity` | string | no | processes:activity-ao-design-x9k4m7 |
 | `trigger` | string | no | Parent Activity's input class is presented for processing and the activity owner is notified of intake. |
 | `outcome` | string | no | Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed. |
-| `responsibility` | string | no | designated intake custodian |
+| `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[2] | no | array of 2 item(s) |
 | `status` | string | no | candidate |

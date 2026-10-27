@@ -5,7 +5,7 @@ definition: The bounded unit of work within `processes:activity-ge-build-5cjpnx`
 belongs_to_activity: processes:activity-ge-build-5cjpnx
 trigger: Custody of the Build-stage input pack for Establish Operating Cycles ready for intake; predecessor phase has produced the case file context and intake contract applies.
 outcome: Intake manifest registered and bound to the Establish Operating Cycles case file; registered intake custodian passes custody to the verification custodian.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Receipt and registration of the Establish Operating Cycles input pack against the Build-stage intake contract.

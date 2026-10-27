@@ -39,7 +39,7 @@ This directory hosts the canonical Task record for `processes:task-ge-improve-in
 | `belongs_to_activity` | string | no | processes:activity-ge-improve-er48vd |
 | `trigger` | string | no | Custody of the Improve-stage input pack for Assess Finding Recurrence ready for intake; predecessor phase has produced t |
 | `outcome` | string | no | Intake manifest registered and bound to the Assess Finding Recurrence case file; registered intake custodian passes cust |
-| `responsibility` | string | no | designated intake custodian |
+| `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
 | `status` | string | no | candidate |

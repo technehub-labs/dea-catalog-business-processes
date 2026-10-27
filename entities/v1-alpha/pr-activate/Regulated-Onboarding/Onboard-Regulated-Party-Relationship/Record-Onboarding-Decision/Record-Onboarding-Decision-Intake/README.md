@@ -39,7 +39,7 @@ This directory hosts the canonical Task record for `processes:task-pr-activate-i
 | `belongs_to_activity` | string | no | processes:activity-pr-activate-q9pr4m |
 | `trigger` | string | no | Custody of the Activate-stage input pack for Record Onboarding Decision ready for intake; predecessor phase has produced |
 | `outcome` | string | no | Intake manifest registered and bound to the Record Onboarding Decision case file; registered intake custodian passes cus |
-| `responsibility` | string | no | designated intake custodian |
+| `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
 | `status` | string | no | candidate |

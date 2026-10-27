@@ -6,6 +6,10 @@ All notable changes to this repository are documented here. Format follows
 
 ## [Unreleased]
 
+### CR-BP-CE-L4: Custodian Vocabulary Normalization + the CE-L0-003 Repair
+
+The Activity/Task-level tranche of the completeness programme (CR-BP-CE-0 §6). Normalizes the 580 intake-phase Task records' `responsibility` from `designated intake custodian` to the controlled-vocabulary `intake custodian` (580 CE-L4-002 resolved; the stray modifier traced to three generator sources, all corrected: decompose_l4.py, enrich_l4_governance_and_existence.py, enrich_l4_party_and_relationship.py). Repairs the one CE-L0-003 finding (pc-sd-improve-ft9k5f gains a third charter-derived scope.excludes entry). Post-tranche: gate [50] advisory 871 -> 290; the remaining findings are the deliberately-deferred CE-L2-006 actors/stakeholders candidates (the CR-BP-CE-RL input per §5/D-004). D-004 clean.
+
 ### CR-BP-CE-L1: Process Group Owner Candidates Tranche (the 49 L1 records)
 
 The second level tranche of the completeness programme ratified under CR-BP-CE-0 §6. Lands the L1 adopted field `owner` on all 49 ProcessGroup records as status: proposed candidates per the §5 provenance policy: value `awaiting_owner_confirmation` mirroring the EXT-24 ownership register disposition (Process Domain Reviewer GOV-003 confirms; review due 2026-12-31); no owner name is invented. Additive schema extension: `process-group.schema.json` gains an OPTIONAL `owner` property (value/status/provenance/review_due/decision_right; status admits proposed -> confirmed, the transition being GOV-003's decision right). One-shot migration `scripts/remediate_ce_l1.py` retained as the governance record. Post-tranche: gate [50] CE-L1 profile at 0 findings (49 CE-L1-005 resolved); programme total 1,210 -> 1,161 advisory. No other field touched; the catalogue remains 3,723 records. D-004 clean.
