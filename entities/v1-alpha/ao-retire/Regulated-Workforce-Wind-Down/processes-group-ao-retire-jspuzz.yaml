@@ -63,6 +63,16 @@ composes:
     asserted_at: '2026-09-15'
 process_group_kind: cross-cutting
 status: accepted
+owner:
+  value: awaiting_owner_confirmation
+  status: proposed
+  provenance:
+    type: inference
+    asserted_by: dea-completeness-programme
+    asserted_at: '2026-10-27'
+    reference: change-requests/CR-BP-CE-L1-process-group-owner-candidates.md
+  review_due: '2026-12-31'
+  decision_right: Process Domain Reviewer (GOV-003) confirms; Business Process Owner (GOV-002) holds the accountability once confirmed
 lifecycle_status: candidate
 ecfConformance:
   framework: EnterpriseConceptFramework

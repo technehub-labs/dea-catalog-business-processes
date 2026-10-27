@@ -2,12 +2,7 @@ id: processes:group-ao-build-m6fmyx
 type: ProcessGroup
 version: 1.0.0
 name: Agent Acquisition and Onboarding
-definition: 'The bounded Process Group that organises the Business Process responsibilities
-  of acquiring and onboarding agents of all substrates in the AgencyAndOrganization
-  x Build context: sourcing and recruiting human talent, provisioning artificial agents
-  (model deployment, API integration), onboarding and integrating agents, and building
-  the contractor and partner-agent pool. v2.4.0 grounding (domain-grounding.md §3.3,
-  Acquisition and Onboarding sub-concern).
+definition: 'The bounded Process Group that organises the Business Process responsibilities of acquiring and onboarding agents of all substrates in the AgencyAndOrganization x Build context: sourcing and recruiting human talent, provisioning artificial agents (model deployment, API integration), onboarding and integrating agents, and building the contractor and partner-agent pool. v2.4.0 grounding (domain-grounding.md §3.3, Acquisition and Onboarding sub-concern).
 
   '
 process_context: processes:pc-ao-build-pjk4rz
@@ -58,10 +53,7 @@ composes:
   direction: source-to-target
   status: active
   asserted_by: dea-team
-  rationale: The L2 process is the regulator-tied specialization admitted under 
-    the CR-BP-105 escape-clause discovery outcome (ADMIT-CANONICAL 
-    recommendation) per CR-BP-106. Coexists with the substrate-neutral 
-    general-case BPs at this cell.
+  rationale: The L2 process is the regulator-tied specialization admitted under the CR-BP-105 escape-clause discovery outcome (ADMIT-CANONICAL recommendation) per CR-BP-106. Coexists with the substrate-neutral general-case BPs at this cell.
   evidence: docs/examples/build-regulated-agent-pool.md
   provenance:
     type: discovery
@@ -70,6 +62,16 @@ composes:
     asserted_at: '2026-09-22'
 process_group_kind: end-to-end
 status: accepted
+owner:
+  value: awaiting_owner_confirmation
+  status: proposed
+  provenance:
+    type: inference
+    asserted_by: dea-completeness-programme
+    asserted_at: '2026-10-27'
+    reference: change-requests/CR-BP-CE-L1-process-group-owner-candidates.md
+  review_due: '2026-12-31'
+  decision_right: Process Domain Reviewer (GOV-003) confirms; Business Process Owner (GOV-002) holds the accountability once confirmed
 lifecycle_status: candidate
 ecfConformance:
   framework: EnterpriseConceptFramework
@@ -92,8 +94,7 @@ evidence:
 
     '
   strength: E4
-  reference: 
-    entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+  reference: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
 metadata:
   established_by: CR-BP-21b.1
   established_at: '2026-09-08'
@@ -112,11 +113,7 @@ metadata:
       '
   - cr: CR-BP-106
     date: '2026-09-22'
-    change: Composes edge added for the regulator-tied Build Regulated Agent 
-      Pool BP (process-ao-build-9my4jr), admitted under CR-BP-105 escape-clause 
-      discovery outcome (ADMIT-CANONICAL). The PG retains its cell-level 
-      substrate-neutral name and definition; the regulator-tied BP is added to 
-      composes without displacing the substrate-neutral BPs.
+    change: Composes edge added for the regulator-tied Build Regulated Agent Pool BP (process-ao-build-9my4jr), admitted under CR-BP-105 escape-clause discovery outcome (ADMIT-CANONICAL). The PG retains its cell-level substrate-neutral name and definition; the regulator-tied BP is added to composes without displacing the substrate-neutral BPs.
   - cr: CR-BP-113
     date: '2026-10-13'
     change: href targets repaired to post-mv1 layout (CR-BP-113)

@@ -368,6 +368,68 @@
         "null"
       ],
       "description": "L1 pilot profile slug (CR-BP-94-EXT-07 unblock for L1 pilot admission)."
+    },
+    "owner": {
+      "type": "object",
+      "description": "Adopted field (CR-BP-CE-0 \u00a73 L1 profile; CR-BP-CE-L1 tranche). Knowledge-dependent: the accountable owner role for this Process Group. Lands as status: proposed candidate referencing the EXT-24 ownership register disposition; the actual owner is confirmed by the Process Domain Reviewer (GOV-003).",
+      "required": [
+        "value",
+        "status",
+        "provenance"
+      ],
+      "properties": {
+        "value": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The owner disposition value; the tranche-landing value is the ownership-register disposition 'awaiting_owner_confirmation' pending GOV-003 confirmation."
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "proposed",
+            "confirmed"
+          ],
+          "description": "Candidate lifecycle per CR-BP-CE-0 \u00a75: knowledge-dependent generated values land as 'proposed' and are 'confirmed' only by the accountable governance role."
+        },
+        "provenance": {
+          "type": "object",
+          "required": [
+            "type",
+            "asserted_by",
+            "asserted_at",
+            "reference"
+          ],
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "inference",
+                "discovery",
+                "migration",
+                "manual"
+              ]
+            },
+            "asserted_by": {
+              "type": "string"
+            },
+            "asserted_at": {
+              "type": "string"
+            },
+            "reference": {
+              "type": "string"
+            }
+          }
+        },
+        "review_due": {
+          "type": "string",
+          "description": "The confirmation review due date (from the EXT-24 ownership register)."
+        },
+        "decision_right": {
+          "type": "string",
+          "description": "The governance role holding the confirmation decision right (GOV-002/GOV-003 per the closure report)."
+        }
+      },
+      "additionalProperties": false
     }
   },
   "additionalProperties": false

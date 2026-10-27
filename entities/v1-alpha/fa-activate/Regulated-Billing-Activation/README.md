@@ -52,6 +52,7 @@ separate from capability build and from steady-state billing.
 | `composes` | array[1] | no | array of 1 item(s) |
 | `process_group_kind` | string | no | functional |
 | `status` | string | no | accepted |
+| `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[2] | no | array of 2 item(s) |
 
