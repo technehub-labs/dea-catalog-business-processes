@@ -109,9 +109,13 @@ class TestCli(unittest.TestCase):
         d = _y.safe_load(rep.read_text())
         self.assertEqual(d["record_count"], 3723)
         self.assertIn("by_level", d)
-        # the seven operational fields are populated in 0 records (the programme's core thesis)
+        # the seven operational fields were populated in 0 records at the CE-0
+        # baseline; the CE-L1 tranche landed the L1 `owner` candidates (49
+        # ProcessGroups, status: proposed awaiting GOV-003 confirmation), so
+        # `owner` is now 49 and the rest remain 0 pending their tranches.
         for k, v in d["adoption"]["operational_fields"].items():
-            self.assertEqual(v["populated"], 0, k)
+            expected = 49 if k == "owner" else 0
+            self.assertEqual(v["populated"], expected, k)
 
     def test_strict_passes_post_ce_l0(self):
         r = self._run("--strict")

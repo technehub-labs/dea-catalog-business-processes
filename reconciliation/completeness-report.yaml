@@ -1,5 +1,5 @@
 cr: CR-BP-CE-0
-mode: strict
+mode: advisory
 record_count: 3723
 by_level:
   Task:
@@ -18,12 +18,12 @@ by_level:
     records: 49
     findings: 0
 by_domain_findings:
-  '?': 1209
+  '?': 1160
   StrategyAndDirection: 1
 adoption:
   operational_fields:
     owner:
-      populated: 0
+      populated: 49
       of: 3723
     stakeholders:
       populated: 0
@@ -47,6 +47,6 @@ adoption:
     populated: 0
     of: 3723
 summary:
-  total_findings: 1210
+  total_findings: 1161
   blocking: 0
-  advisory: 1210
+  advisory: 1161
