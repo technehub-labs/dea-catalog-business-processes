@@ -1,11 +1,80 @@
-# CR-BP-CE-0: Catalog Completeness Programme — Profiles, Gate, and Tranche Sequence
+# CR-BP-CE-0: Catalog Completeness Programme -- Profiles, Gate, and Tranche Sequence
 
 **Status**: Proposed
 **Layer**: Process Catalog (Cross-Cutting Documentation)
 **Owner**: Emmanuel A. Otchere
-**Depends on**: CR-BP-106
 
-## Status
+> **Reconciliation (recon 2026-10-22, against the live canonical schemas and the
+> 3,723-record population).** This CR is the user-submitted draft, reconciled to
+> the canonical schemas under `schemas/entities/*.schema.json` and
+> `schemas/entity.schema.json` (the authoritative surfaces). The draft's intent
+> is preserved; its schema-level errors are corrected, and every correction is
+> recorded in `§R Reconciliation` so the divergence is auditable, not silent.
+> The seven corrections that change normative content are flagged there.
+
+---
+
+## §R Reconciliation (normative -- read before §3)
+
+The draft was authored against a partially assumed schema. Measured against the
+canonical schemas and the live population on 2026-10-22, seven corrections are
+required. The gate in §4 is built against the RECONCILED profiles, not the
+draft text.
+
+- **R1 -- Level model.** The draft numbers the levels L1-L4. The canonical model
+  is L0-L4, and existing gates (id system, EXT-05 decomposition, EXT-19/20/21
+  inventories) already enforce it. The mapping is: draft L1 -> canonical
+  **ProcessContext (L0)**; draft L2 -> **ProcessGroup (L1)**; draft L3 ->
+  **Process (L2)**; draft L4 conflates two canonical levels, **Activity (L3)**
+  and **Task (L4)**. The gate is level-aware by record TYPE, not by the L-number,
+  so the numbering difference is a display concern only.
+- **R2 -- Stale counts.** The draft cites 140 Process / 560 Activity / 2,800 Task.
+  The live population is 145 / 580 / 2,900. The difference is exactly the
+  CR-BP-106 regulator-tied tranche (5 BPs + 20 Activities + 100 Tasks), which
+  post-dates the draft.
+- **R3 -- ProcessGroup field names.** The draft profiles ProcessGroup with
+  `context`, `description`, `relationships[]`, and `metadata.scope`. The
+  canonical schema declares `process_context`, `definition`, top-level
+  `composes`, and top-level `scope`. The gate uses the canonical names.
+- **R4 -- Activity trigger/outcome.** The draft's L4 profile requires
+  `trigger`/`outcome` on Activity. The canonical `activity.schema.json` does NOT
+  declare these; only `task.schema.json` does. The requirement is removed from
+  the Activity profile and retained on Task.
+- **R5 -- Relationship vocabulary.** The draft says "14 of 17 relationship types
+  are never exercised." The canonical `entity.schema.json` enumerates 17 types;
+  only 2 are exercised (`serves` 150, `realizes` 1), so **15 of 17** are dormant.
+  Separately, `composes` is a top-level field on 629 records, distinct from the
+  `relationships[]` array.
+- **R6 -- Workflow name.** The draft's §4 names a `catalog-conformance.yml`
+  workflow that does not exist. The gate actually runs through the aggregate
+  `conformance_result.py` step in `.github/workflows/ci.yml`, where it is
+  registered as advisory gate [50].
+- **R7 -- CE-900 was not delivered as specified.** §4 requires the summary
+  artifact to carry "per-level, per-domain completeness %". The landed gate
+  emitted per-level counts and a per-domain *finding count* only, and that
+  finding count was attributed with a narrower domain resolution than the
+  denominator it was meant to divide. **3,674 of 3,723 records carry no
+  top-level `domain`** (every ProcessGroup, Process, Activity, and Task);
+  their domain is only reachable through
+  `ecfConformance.canonicalReferences[0].domain`, which resolves all 3,674.
+  The finding counter did not use that fallback, so **870 of 871 findings were
+  attributed to the pseudo-domain `?`** and the per-domain signal that the
+  tranche sequence uses to prioritise was unusable. The per-domain denominator
+  was computed and then dropped from the report. This slice fixes the
+  resolution (one `domain_of()` helper, used by both counters) and emits the
+  per-domain totals and completeness percentages that CE-900 actually
+  specifies.
+
+Two draft claims were verified CORRECT and are adopted as the programme's core
+thesis: the seven operational fields (`owner`, `stakeholders`, `actors`,
+`kpis`, `services_provided`, `components_involved`, `specialization_pattern`)
+are declared in `entity.schema.json` but populated in **0 of 3,723** records;
+and `process_classification` is declared but populated in **0** records (the
+legacy `process_type` is populated in 145).
+
+---
+
+## §1 Status
 
 | Field | Value |
 |---|---|
@@ -26,7 +95,22 @@
 
 ## §2 Motivation
 
-The catalog schema (`schemas/entity.schema.json`, 25 properties) is materially ahead of the data: 7 operational fields (`owner`, `stakeholders`, `actors`, `kpis`, `services_provided`, `components_involved`, `specialization_pattern`) are unpopulated in every record; 14 of 17 relationship types are never exercised; and one canonical form (`process_classification`) is unadopted. "Completeness" is currently undefined per level — this CR ratifies it.
+The catalog schema (`schemas/entity.schema.json`, 25 properties) is materially
+ahead of the data: of the schema's properties, 7 operational fields (`owner`,
+`stakeholders`, `actors`, `kpis`, `services_provided`, `components_involved`,
+`specialization_pattern`) are unpopulated in every record; 15 of 17 relationship
+types are never exercised in the `relationships[]` array; and one canonical form
+(`process_classification`) is unadopted. "Completeness" is currently undefined
+per level -- this CR ratifies it.
+
+Measured baseline (recon 2026-10-22): against the canonical per-level schemas'
+own `required` lists, the catalogue is 100% complete at ProcessGroup, Process,
+Activity, and Task. The only schema-required gaps are **8 ProcessContext
+records** -- all escape-clause Activate/Retire cells -- missing
+`adjacent_contexts`, `definition`, `outcomes`, `scope` (and 7 of the 8 missing
+`status`). The completeness deficit is therefore concentrated in (a) those 8
+ProcessContext records and (b) the optional/adopted fields the schemas declare
+but nothing populates.
 
 ## §3 Completeness profiles (normative)
 
@@ -61,10 +145,10 @@ The catalog schema (`schemas/entity.schema.json`, 25 properties) is materially a
 
 | Field | Status | Rule |
 |---|---|---|
-| Schema-required 5 (`id`, `name`, `type`, `version`, `process_intent`) | required | canonical intent vocabulary only (no `operational`/`management` aliases) |
-| `process_classification` | required (NEW adoption) | canonical block; legacy `process_type` retained until CR-BP-CE-RL closure |
-| `context` | required | >=1 PC ref; multi-context only where BP-SEM-012 evidence exists |
-| `trigger`, `outcome`, `identity.*` | required | BP-ARC-ID-001..005 already enforced |
+| Schema-required 5 (`id`, `name`, `type`, `version`, `process_intent`) | required | canonical intent vocabulary only |
+| `process_classification` | adopted (NEW) | canonical block; legacy `process_type` retained until CR-BP-CE-RL closure |
+| `context` | required | >=1 PC ref; multi-context only where evidence exists |
+| `trigger`, `outcome`, `identity.*` | required | identity block per `entity.schema.json` (`verb`, `object`, `outcome_statement`) |
 | `relationships` | required | >=1 `realizes` + >=1 `serves`; `composes` toward parent group |
 | `owner`, `actors`, `stakeholders` | required | org-awareness fields; candidates admitted per §5 |
 | `kpis` | recommended | >=2; flagged, not blocked, when empty (CE-L2-006) |
@@ -94,7 +178,10 @@ Runs in CI via the `conformance_result.py` gate registry (gate [50], advisory; `
 | CE-900 | summary artifact `reconciliation/completeness-report.yaml`: per-level, per-domain completeness % — baseline for the tranche sequence |
 | Mode | `--advisory` for the first N PRs (report-only), `--strict` after the level tranches land (CR-BP-CE-RL) |
 
-New MECE validator (separate, CR-BP-CE-RL): `scripts/check_relationship_consistency.py` — rejects overlapping `composes`/`flows-to`/`produces` assertions between the same pair and dangling relationship targets.
+New MECE validator (separate, CR-BP-CE-RL):
+`scripts/check_relationship_consistency.py` -- rejects overlapping
+`composes`/`flows-to`/`produces` assertions between the same pair and dangling
+relationship targets.
 
 ## §5 Provenance policy for generated values (critical)
 
@@ -104,13 +191,17 @@ All programme-generated field values land with explicit provenance:
 provenance:
   type: inference          # or discovery | migration | manual
   asserted_by: dea-completeness-programme
-  asserted_at: '2026-10-26'
+  asserted_at: '2026-10-22'
   reference: change-requests/CR-BP-CE-0-completeness-profiles.md
 ```
 
-- Knowledge-dependent fields (`owner`, `actors`, `stakeholders`, `kpis`) land with `status: proposed`; the completeness report marks them **candidate — awaiting ratification**.
-- Derivable fields (classification blocks, `context` refs, structural `composes`) land with `status: active`, `type: migration`.
-- No generated value may satisfy `identity.evidence_links` (BP-ARC-ID-005 remains human/evidence-bound).
+- Knowledge-dependent fields (`owner`, `actors`, `stakeholders`, `kpis`) land
+  with `status: proposed`; the completeness report marks them
+  **candidate -- awaiting ratification**.
+- Derivable fields (classification blocks, `context` refs, structural
+  `composes`) land with `status: active`, `type: migration`.
+- No generated value may satisfy `identity.evidence_links`; evidence stays
+  human/evidence-bound.
 
 ## §6 Tranche sequencing (dependency-ordered)
 
@@ -120,8 +211,14 @@ provenance:
 4. **CR-BP-CE-L4** — custodian vocabulary normalization, 580 Tasks (MERGED, PR #208).
 5. **CR-BP-CE-RL** — cross-level relationship graph (`flows-to`, `produces`/`consumes`), MECE validator, closure audit.
 
-## §7 Landing conventions
+## Next steps
 
-- Completeness contributions are batch files under `contributions/processes/ce-l1-<cell>.yaml` (one per ECF cell), diff-style: only fields that change are asserted.
-- PR slicing: one PR per ECF domain (7 PRs per tranche) to keep review burden manageable.
-- Every batch carries a `cr:` reference to its tranche CR (CR Metadata Gate).
+1. Land this reconciliation of CR-BP-CE-0 (R1-R7) with the per-domain
+   reporting fix in `scripts/check_completeness.py`.
+2. Open CR-BP-CE-L3 (580 Activity records; leaf-specificity audit).
+3. Open CR-BP-CE-L4 (2,900 Task records; the 5-phase custodian vocabulary
+   audit).
+4. Open CR-BP-CE-RL (cross-level relationship graph + the MECE relationship
+   validator `scripts/check_relationship_consistency.py`).
+5. Flip the gate to `--strict` once the adopted-field tranches have landed and
+   the remaining advisory findings are dispositioned.
