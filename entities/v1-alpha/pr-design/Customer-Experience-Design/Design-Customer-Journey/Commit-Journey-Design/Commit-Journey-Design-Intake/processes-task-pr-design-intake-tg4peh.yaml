@@ -5,7 +5,7 @@ definition: The bounded unit of work within `processes:activity-pr-design-vbvz6f
 belongs_to_activity: processes:activity-pr-design-vbvz6f
 trigger: Custody of the Design-stage input pack for Commit Journey Design ready for intake; predecessor phase has produced the case file context and intake contract applies.
 outcome: Intake manifest registered and bound to the Commit Journey Design case file; registered intake custodian passes custody to the verification custodian.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Receipt and registration of the Commit Journey Design input pack against the Design-stage intake contract.

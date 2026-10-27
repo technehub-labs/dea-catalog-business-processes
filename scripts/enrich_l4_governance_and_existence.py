@@ -32,7 +32,7 @@ ENTITIES = ROOT / "entities" / "v1-alpha"
 DOMAIN = "GovernanceAndExistence"
 
 PHASE_ROLE = {
-    "intake": "designated intake custodian",
+    "intake": "intake custodian",
     "verify": "verification custodian",
     "transform": "processing custodian",
     "confirm": "confirmation custodian",

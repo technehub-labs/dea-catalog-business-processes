@@ -39,7 +39,7 @@ This directory hosts the canonical Task record for `processes:task-pr-conceive-i
 | `belongs_to_activity` | string | no | processes:activity-pr-conceive-8frfby |
 | `trigger` | string | no | Custody of the Conceive-stage input pack for Formulate Demand Thesis ready for intake; predecessor phase has produced th |
 | `outcome` | string | no | Intake manifest registered and bound to the Formulate Demand Thesis case file; registered intake custodian passes custod |
-| `responsibility` | string | no | designated intake custodian |
+| `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
 | `status` | string | no | candidate |

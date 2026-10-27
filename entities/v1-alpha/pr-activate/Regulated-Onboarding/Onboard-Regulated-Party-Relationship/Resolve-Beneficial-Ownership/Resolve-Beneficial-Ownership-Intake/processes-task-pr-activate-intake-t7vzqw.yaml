@@ -5,7 +5,7 @@ definition: The bounded unit of work within `processes:activity-pr-activate-ncn9
 belongs_to_activity: processes:activity-pr-activate-ncn924
 trigger: Custody of the Activate-stage input pack for Resolve Beneficial Ownership ready for intake; predecessor phase has produced the case file context and intake contract applies.
 outcome: Intake manifest registered and bound to the Resolve Beneficial Ownership case file; registered intake custodian passes custody to the verification custodian.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Receipt and registration of the Resolve Beneficial Ownership input pack against the Activate-stage intake contract.

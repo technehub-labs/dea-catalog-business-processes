@@ -1,11 +1,11 @@
 id: processes:task-ao-improve-intake-dezn3h
 type: Task
 name: Record Accountability Handovers Intake
-definition: 'The bounded unit of work within `dea:activity-record-accountability-handovers` (Record Accountability Handovers) that carries out the intake phase of the parent''s verb-object decomposition. Phase responsibility: designated intake custodian. Phase trigger: Parent Activity''s input class is presented for processing and the activity owner is notified of intake. Phase outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
+definition: 'The bounded unit of work within `dea:activity-record-accountability-handovers` (Record Accountability Handovers) that carries out the intake phase of the parent''s verb-object decomposition. Phase responsibility: intake custodian. Phase trigger: Parent Activity''s input class is presented for processing and the activity owner is notified of intake. Phase outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
 belongs_to_activity: processes:activity-ao-improve-gtc9k8
 trigger: Parent Activity's input class is presented for processing and the activity owner is notified of intake.
 outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Acceptance of the input artifact per parent Activity scope.

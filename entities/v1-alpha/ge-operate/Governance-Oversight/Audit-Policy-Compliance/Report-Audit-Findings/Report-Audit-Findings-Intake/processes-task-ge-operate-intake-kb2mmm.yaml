@@ -5,7 +5,7 @@ definition: The bounded unit of work within `processes:activity-ge-operate-r4ka8
 belongs_to_activity: processes:activity-ge-operate-r4ka8z
 trigger: Custody of the Operate-stage input pack for Report Audit Findings ready for intake; predecessor phase has produced the case file context and intake contract applies.
 outcome: Intake manifest registered and bound to the Report Audit Findings case file; registered intake custodian passes custody to the verification custodian.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Receipt and registration of the Report Audit Findings input pack against the Operate-stage intake contract.

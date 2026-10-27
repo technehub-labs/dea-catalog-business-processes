@@ -37,7 +37,7 @@ DOMAIN = "PartyAndRelationship"
 
 # Per-phase custodian label.
 PHASE_ROLE = {
-    "intake": "designated intake custodian",
+    "intake": "intake custodian",
     "verify": "verification custodian",
     "transform": "processing custodian",
     "confirm": "confirmation custodian",

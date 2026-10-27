@@ -39,7 +39,7 @@ This directory hosts the canonical Task record for `processes:task-ge-design-int
 | `belongs_to_activity` | string | no | processes:activity-ge-design-t3muvd |
 | `trigger` | string | no | Custody of the Design-stage input pack for Commit Policy and Control Design ready for intake; predecessor phase has prod |
 | `outcome` | string | no | Intake manifest registered and bound to the Commit Policy and Control Design case file; registered intake custodian pass |
-| `responsibility` | string | no | designated intake custodian |
+| `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
 | `status` | string | no | candidate |

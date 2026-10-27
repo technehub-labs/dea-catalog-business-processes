@@ -54,7 +54,7 @@ PHASES: list[dict[str, object]] = [
         "code": "intake",
         "verb": "Intake",
         "name_suffix": "Intake",
-        "responsibility_role": "designated intake custodian",
+        "responsibility_role": "intake custodian",
         "trigger": (
             "Parent Activity's input class is presented for processing "
             "and the activity owner is notified of intake."

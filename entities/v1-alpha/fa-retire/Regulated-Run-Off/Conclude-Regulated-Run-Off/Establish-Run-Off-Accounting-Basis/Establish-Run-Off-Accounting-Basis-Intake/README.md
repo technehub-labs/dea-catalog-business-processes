@@ -15,9 +15,9 @@ This directory hosts the canonical Task record for `processes:task-fa-retire-int
 
 ## Intent and Definition
 
-**Intent**: The bounded unit of work within `dea:activity-establish-run-off-accounting-basis` (Establish Run-Off Accounting Basis) that carries out the intake phase of the parent's verb-object decomposition. Phase responsibility: designated intake custodian. Phase trigger: Parent Activity's input class is presented for processing and the activity owner is notified of intake. Phase outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.
+**Intent**: The bounded unit of work within `dea:activity-establish-run-off-accounting-basis` (Establish Run-Off Accounting Basis) that carries out the intake phase of the parent's verb-object decomposition. Phase responsibility: intake custodian. Phase trigger: Parent Activity's input class is presented for processing and the activity owner is notified of intake. Phase outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.
 
-**Definition**: The bounded unit of work within `dea:activity-establish-run-off-accounting-basis` (Establish Run-Off Accounting Basis) that carries out the intake phase of the parent's verb-object decomposition. Phase responsibility: designated intake custodian. Phase trigger: Parent Activity's input class is presented for processing and the activity owner is notified of intake. Phase outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.
+**Definition**: The bounded unit of work within `dea:activity-establish-run-off-accounting-basis` (Establish Run-Off Accounting Basis) that carries out the intake phase of the parent's verb-object decomposition. Phase responsibility: intake custodian. Phase trigger: Parent Activity's input class is presented for processing and the activity owner is notified of intake. Phase outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.
 
 ## 2. Governance and Provenance
 
@@ -39,7 +39,7 @@ This directory hosts the canonical Task record for `processes:task-fa-retire-int
 | `belongs_to_activity` | string | no | processes:activity-fa-retire-t3uyxp |
 | `trigger` | string | no | Parent Activity's input class is presented for processing and the activity owner is notified of intake. |
 | `outcome` | string | no | Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed. |
-| `responsibility` | string | no | designated intake custodian |
+| `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[2] | no | array of 2 item(s) |
 | `status` | string | no | candidate |

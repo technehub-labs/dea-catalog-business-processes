@@ -5,7 +5,7 @@ definition: The bounded unit of work within `processes:activity-ge-improve-a7mqx
 belongs_to_activity: processes:activity-ge-improve-a7mqxm
 trigger: Custody of the Improve-stage input pack for Update Policy Standards ready for intake; predecessor phase has produced the case file context and intake contract applies.
 outcome: Intake manifest registered and bound to the Update Policy Standards case file; registered intake custodian passes custody to the verification custodian.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Receipt and registration of the Update Policy Standards input pack against the Improve-stage intake contract.

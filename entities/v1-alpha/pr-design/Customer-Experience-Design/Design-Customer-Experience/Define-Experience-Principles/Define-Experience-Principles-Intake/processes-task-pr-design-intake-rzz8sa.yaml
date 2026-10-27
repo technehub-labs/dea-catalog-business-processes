@@ -5,7 +5,7 @@ definition: The bounded unit of work within `processes:activity-pr-design-j9s8mg
 belongs_to_activity: processes:activity-pr-design-j9s8mg
 trigger: Custody of the Design-stage input pack for Define Experience Principles ready for intake; predecessor phase has produced the case file context and intake contract applies.
 outcome: Intake manifest registered and bound to the Define Experience Principles case file; registered intake custodian passes custody to the verification custodian.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Receipt and registration of the Define Experience Principles input pack against the Design-stage intake contract.

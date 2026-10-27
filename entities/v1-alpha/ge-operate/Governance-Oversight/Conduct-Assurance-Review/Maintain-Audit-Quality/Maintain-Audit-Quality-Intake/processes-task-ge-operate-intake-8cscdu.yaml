@@ -5,7 +5,7 @@ definition: The bounded unit of work within `processes:activity-ge-operate-yczj9
 belongs_to_activity: processes:activity-ge-operate-yczj9n
 trigger: Custody of the Operate-stage input pack for Maintain Audit Quality ready for intake; predecessor phase has produced the case file context and intake contract applies.
 outcome: Intake manifest registered and bound to the Maintain Audit Quality case file; registered intake custodian passes custody to the verification custodian.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Receipt and registration of the Maintain Audit Quality input pack against the Operate-stage intake contract.

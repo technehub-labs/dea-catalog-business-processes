@@ -5,7 +5,7 @@ definition: The bounded unit of work within `processes:activity-pr-design-kbkw3v
 belongs_to_activity: processes:activity-pr-design-kbkw3v
 trigger: Custody of the Design-stage input pack for Identify Moments of Truth ready for intake; predecessor phase has produced the case file context and intake contract applies.
 outcome: Intake manifest registered and bound to the Identify Moments of Truth case file; registered intake custodian passes custody to the verification custodian.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Receipt and registration of the Identify Moments of Truth input pack against the Design-stage intake contract.

@@ -5,7 +5,7 @@ definition: The bounded unit of work within `processes:activity-pr-build-ncrg72`
 belongs_to_activity: processes:activity-pr-build-ncrg72
 trigger: Custody of the Build-stage input pack for Provision Channel Infrastructure ready for intake; predecessor phase has produced the case file context and intake contract applies.
 outcome: Intake manifest registered and bound to the Provision Channel Infrastructure case file; registered intake custodian passes custody to the verification custodian.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Receipt and registration of the Provision Channel Infrastructure input pack against the Build-stage intake contract.

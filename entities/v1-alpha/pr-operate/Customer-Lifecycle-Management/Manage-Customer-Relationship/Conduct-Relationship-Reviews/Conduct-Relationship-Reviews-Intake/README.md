@@ -39,7 +39,7 @@ This directory hosts the canonical Task record for `processes:task-pr-operate-in
 | `belongs_to_activity` | string | no | processes:activity-pr-operate-2d88cr |
 | `trigger` | string | no | Custody of the Operate-stage input pack for Conduct Relationship Reviews ready for intake; predecessor phase has produce |
 | `outcome` | string | no | Intake manifest registered and bound to the Conduct Relationship Reviews case file; registered intake custodian passes c |
-| `responsibility` | string | no | designated intake custodian |
+| `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
 | `status` | string | no | candidate |

@@ -5,7 +5,7 @@ definition: The bounded unit of work within `processes:activity-ge-improve-nfn3x
 belongs_to_activity: processes:activity-ge-improve-nfn3x5
 trigger: Custody of the Improve-stage input pack for Formulate Effectiveness Recommendations ready for intake; predecessor phase has produced the case file context and intake contract applies.
 outcome: Intake manifest registered and bound to the Formulate Effectiveness Recommendations case file; registered intake custodian passes custody to the verification custodian.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Receipt and registration of the Formulate Effectiveness Recommendations input pack against the Improve-stage intake contract.

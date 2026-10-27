@@ -5,7 +5,7 @@ definition: The bounded unit of work within `processes:activity-ge-operate-rwpbp
 belongs_to_activity: processes:activity-ge-operate-rwpbpf
 trigger: Custody of the Operate-stage input pack for Maintain Risk Registers ready for intake; predecessor phase has produced the case file context and intake contract applies.
 outcome: Intake manifest registered and bound to the Maintain Risk Registers case file; registered intake custodian passes custody to the verification custodian.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Receipt and registration of the Maintain Risk Registers input pack against the Operate-stage intake contract.
