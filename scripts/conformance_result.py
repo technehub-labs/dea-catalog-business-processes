@@ -157,7 +157,7 @@ GATES: list[tuple[str, bool, list[str]]] = [
     ("[49] Programme Closure (CR-BP-94-EXT-24; CG-001..CG-080)",
      False, ["python3", "scripts/check_programme_closure_ext24.py"]),  # CR-BP-94-EXT-24; ADVISORY (the programme-closure self-check: the closure matrix + the catalogue baseline + the governance artefacts (roles, ownership, lifecycle, exceptions, deferrals, improvement backlog) must all validate; the validator returns rc=1 if any CG-NNN closure-finding is emitted; closure is a meta-artefact and its failure is an exception in the meta-closure, not a catalogue defect)
     ("[50] Completeness Profiles (CR-BP-CE-0; CE-000..CE-900)",
-     False, ["python3", "scripts/check_completeness.py", "--advisory"]),  # CR-BP-CE-0; ADVISORY (per-level completeness profiles reconciled to the canonical schemas; the validator runs advisory and returns rc=0 while the profiles are ratified and the CE-L0..L4 tranches land; it WRITES reconciliation/completeness-report.yaml (CE-900); flip to blocking under CR-BP-CE-RL once the profiles are ratified)
+     True, ["python3", "scripts/check_completeness.py", "--strict"]),  # CR-BP-CE-0; BLOCKING since CR-BP-CE-RL (all five level tranches landed; the blocking profile is 0 across 3,723 records, so strict fails only on NEWLY introduced profile defects; the 290 knowledge-dependent CE-L2-006 actors/stakeholders candidates remain advisory pending the GOV-002/GOV-003 sweep per the EXT-24 ownership register; the gate WRITES reconciliation/completeness-report.yaml (CE-900))
 ]
 
 

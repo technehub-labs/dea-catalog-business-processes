@@ -3,7 +3,7 @@
   "generated_at": "2026-10-19",
   "generator": "scripts/check_conformance_posture_ext23.py",
   "parent_cr": "CR-BP-EXT-23",
-  "total_registered_gates": 52,
+  "total_registered_gates": 55,
   "gates": [
     {
       "gate": "[1] Schema (validate-process-entries)",

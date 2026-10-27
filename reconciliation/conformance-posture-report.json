@@ -4,7 +4,7 @@
   "generator": "scripts/check_conformance_posture_ext23.py",
   "parent_cr": "CR-BP-EXT-23",
   "source_of_truth": "scripts/conformance_result.py (the GATES registry); this report is generated from it (REQ-23-11)",
-  "total_registered_gates": 52,
+  "total_registered_gates": 55,
   "total_inventoried_gates": 52,
   "by_enforcement_class": {
     "content": 25,
