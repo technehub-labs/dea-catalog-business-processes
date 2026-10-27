@@ -5,7 +5,7 @@ definition: The bounded unit of work within `processes:activity-ge-improve-er48v
 belongs_to_activity: processes:activity-ge-improve-er48vd
 trigger: Custody of the Improve-stage input pack for Assess Finding Recurrence ready for intake; predecessor phase has produced the case file context and intake contract applies.
 outcome: Intake manifest registered and bound to the Assess Finding Recurrence case file; registered intake custodian passes custody to the verification custodian.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Receipt and registration of the Assess Finding Recurrence input pack against the Improve-stage intake contract.

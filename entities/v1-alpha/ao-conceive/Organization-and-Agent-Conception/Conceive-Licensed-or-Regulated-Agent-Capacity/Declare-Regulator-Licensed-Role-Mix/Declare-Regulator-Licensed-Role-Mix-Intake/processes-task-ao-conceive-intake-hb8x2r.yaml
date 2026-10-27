@@ -3,7 +3,7 @@ type: Task
 name: Declare Regulator-Licensed Role Mix Intake
 definition: 'The bounded unit of work within `processes:activity-ao-conceive-cqkwrm`
   (Declare Regulator-Licensed Role Mix) that carries out the intake phase of the parent''s
-  verb-object decomposition. Phase responsibility: designated intake custodian. Phase
+  verb-object decomposition. Phase responsibility: intake custodian. Phase
   trigger: Parent Activity''s input class is presented for processing and the activity
   owner is notified of intake. Phase outcome: Intake registered; input artifact preserved
   with audit identifiers; downstream phases may proceed.'
@@ -12,7 +12,7 @@ trigger: Parent Activity's input class is presented for processing and the activ
   owner is notified of intake.
 outcome: Intake registered; input artifact preserved with audit identifiers; downstream
   phases may proceed.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Acceptance of the input artifact per parent Activity scope.

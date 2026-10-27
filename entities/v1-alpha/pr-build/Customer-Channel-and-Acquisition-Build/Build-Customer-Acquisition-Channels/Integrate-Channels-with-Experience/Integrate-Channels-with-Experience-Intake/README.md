@@ -39,7 +39,7 @@ This directory hosts the canonical Task record for `processes:task-pr-build-inta
 | `belongs_to_activity` | string | no | processes:activity-pr-build-d3pku9 |
 | `trigger` | string | no | Custody of the Build-stage input pack for Integrate Channels with Experience ready for intake; predecessor phase has pro |
 | `outcome` | string | no | Intake manifest registered and bound to the Integrate Channels with Experience case file; registered intake custodian pa |
-| `responsibility` | string | no | designated intake custodian |
+| `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
 | `status` | string | no | candidate |

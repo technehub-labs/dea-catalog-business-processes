@@ -39,7 +39,7 @@ This directory hosts the canonical Task record for `processes:task-ge-build-inta
 | `belongs_to_activity` | string | no | processes:activity-ge-build-5cjpnx |
 | `trigger` | string | no | Custody of the Build-stage input pack for Establish Operating Cycles ready for intake; predecessor phase has produced th |
 | `outcome` | string | no | Intake manifest registered and bound to the Establish Operating Cycles case file; registered intake custodian passes cus |
-| `responsibility` | string | no | designated intake custodian |
+| `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
 | `status` | string | no | candidate |

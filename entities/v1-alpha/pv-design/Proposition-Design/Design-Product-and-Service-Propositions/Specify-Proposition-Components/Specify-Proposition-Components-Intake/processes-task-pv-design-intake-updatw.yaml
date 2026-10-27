@@ -1,11 +1,11 @@
 id: processes:task-pv-design-intake-updatw
 type: Task
 name: Specify Proposition Components Intake
-definition: 'The bounded unit of work within `dea:activity-specify-proposition-components` (Specify Proposition Components) that carries out the intake phase of the parent''s verb-object decomposition. Phase responsibility: designated intake custodian. Phase trigger: Parent Activity''s input class is presented for processing and the activity owner is notified of intake. Phase outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
+definition: 'The bounded unit of work within `dea:activity-specify-proposition-components` (Specify Proposition Components) that carries out the intake phase of the parent''s verb-object decomposition. Phase responsibility: intake custodian. Phase trigger: Parent Activity''s input class is presented for processing and the activity owner is notified of intake. Phase outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
 belongs_to_activity: processes:activity-pv-design-vrmwad
 trigger: Parent Activity's input class is presented for processing and the activity owner is notified of intake.
 outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Acceptance of the input artifact per parent Activity scope.

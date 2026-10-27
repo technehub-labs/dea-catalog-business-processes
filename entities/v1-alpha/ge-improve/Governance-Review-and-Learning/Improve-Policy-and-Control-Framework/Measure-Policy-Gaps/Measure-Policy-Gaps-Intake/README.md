@@ -39,7 +39,7 @@ This directory hosts the canonical Task record for `processes:task-ge-improve-in
 | `belongs_to_activity` | string | no | processes:activity-ge-improve-5hkh35 |
 | `trigger` | string | no | Custody of the Improve-stage input pack for Measure Policy Gaps ready for intake; predecessor phase has produced the cas |
 | `outcome` | string | no | Intake manifest registered and bound to the Measure Policy Gaps case file; registered intake custodian passes custody to |
-| `responsibility` | string | no | designated intake custodian |
+| `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
 | `status` | string | no | candidate |

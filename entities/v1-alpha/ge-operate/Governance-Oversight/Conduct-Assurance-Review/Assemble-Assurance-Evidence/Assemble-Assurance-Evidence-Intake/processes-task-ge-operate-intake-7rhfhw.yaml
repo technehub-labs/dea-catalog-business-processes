@@ -5,7 +5,7 @@ definition: The bounded unit of work within `processes:activity-ge-operate-x79d9
 belongs_to_activity: processes:activity-ge-operate-x79d9p
 trigger: Custody of the Operate-stage input pack for Assemble Assurance Evidence ready for intake; predecessor phase has produced the case file context and intake contract applies.
 outcome: Intake manifest registered and bound to the Assemble Assurance Evidence case file; registered intake custodian passes custody to the verification custodian.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Receipt and registration of the Assemble Assurance Evidence input pack against the Operate-stage intake contract.

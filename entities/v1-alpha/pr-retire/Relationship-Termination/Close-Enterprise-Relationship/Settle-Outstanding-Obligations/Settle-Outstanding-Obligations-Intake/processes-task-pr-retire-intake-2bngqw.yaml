@@ -5,7 +5,7 @@ definition: The bounded unit of work within `processes:activity-pr-retire-zb4htq
 belongs_to_activity: processes:activity-pr-retire-zb4htq
 trigger: Custody of the Retire-stage input pack for Settle Outstanding Obligations ready for intake; predecessor phase has produced the case file context and intake contract applies.
 outcome: Intake manifest registered and bound to the Settle Outstanding Obligations case file; registered intake custodian passes custody to the verification custodian.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Receipt and registration of the Settle Outstanding Obligations input pack against the Retire-stage intake contract.

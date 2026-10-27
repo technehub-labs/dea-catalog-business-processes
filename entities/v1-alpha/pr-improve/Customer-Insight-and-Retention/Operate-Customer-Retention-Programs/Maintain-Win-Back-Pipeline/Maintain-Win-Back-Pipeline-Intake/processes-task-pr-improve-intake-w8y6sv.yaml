@@ -5,7 +5,7 @@ definition: The bounded unit of work within `processes:activity-pr-improve-k6eb7
 belongs_to_activity: processes:activity-pr-improve-k6eb79
 trigger: Custody of the Improve-stage input pack for Maintain Win-Back Pipeline ready for intake; predecessor phase has produced the case file context and intake contract applies.
 outcome: Intake manifest registered and bound to the Maintain Win-Back Pipeline case file; registered intake custodian passes custody to the verification custodian.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Receipt and registration of the Maintain Win-Back Pipeline input pack against the Improve-stage intake contract.

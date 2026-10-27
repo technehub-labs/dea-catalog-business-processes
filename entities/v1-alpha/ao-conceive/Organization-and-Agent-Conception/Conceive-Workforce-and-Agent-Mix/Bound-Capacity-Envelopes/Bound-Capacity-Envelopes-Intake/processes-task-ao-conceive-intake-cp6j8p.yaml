@@ -1,11 +1,11 @@
 id: processes:task-ao-conceive-intake-cp6j8p
 type: Task
 name: Bound Capacity Envelopes Intake
-definition: 'The bounded unit of work within `dea:activity-bound-capacity-envelopes` (Bound Capacity Envelopes) that carries out the intake phase of the parent''s verb-object decomposition. Phase responsibility: designated intake custodian. Phase trigger: Parent Activity''s input class is presented for processing and the activity owner is notified of intake. Phase outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
+definition: 'The bounded unit of work within `dea:activity-bound-capacity-envelopes` (Bound Capacity Envelopes) that carries out the intake phase of the parent''s verb-object decomposition. Phase responsibility: intake custodian. Phase trigger: Parent Activity''s input class is presented for processing and the activity owner is notified of intake. Phase outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
 belongs_to_activity: processes:activity-ao-conceive-9mvxt3
 trigger: Parent Activity's input class is presented for processing and the activity owner is notified of intake.
 outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Acceptance of the input artifact per parent Activity scope.

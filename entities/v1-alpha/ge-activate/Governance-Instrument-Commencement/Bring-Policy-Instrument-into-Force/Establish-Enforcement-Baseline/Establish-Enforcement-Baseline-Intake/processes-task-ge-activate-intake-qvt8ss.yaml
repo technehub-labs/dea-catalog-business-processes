@@ -5,7 +5,7 @@ definition: The bounded unit of work within `processes:activity-ge-activate-pm38
 belongs_to_activity: processes:activity-ge-activate-pm38pv
 trigger: Custody of the Activate-stage input pack for Establish Enforcement Baseline ready for intake; predecessor phase has produced the case file context and intake contract applies.
 outcome: Intake manifest registered and bound to the Establish Enforcement Baseline case file; registered intake custodian passes custody to the verification custodian.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Receipt and registration of the Establish Enforcement Baseline input pack against the Activate-stage intake contract.

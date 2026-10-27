@@ -5,7 +5,7 @@ definition: The bounded unit of work within `processes:activity-pr-build-pd7paf`
 belongs_to_activity: processes:activity-pr-build-pd7paf
 trigger: Custody of the Build-stage input pack for Integrate Demand Engine with Channels ready for intake; predecessor phase has produced the case file context and intake contract applies.
 outcome: Intake manifest registered and bound to the Integrate Demand Engine with Channels case file; registered intake custodian passes custody to the verification custodian.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Receipt and registration of the Integrate Demand Engine with Channels input pack against the Build-stage intake contract.

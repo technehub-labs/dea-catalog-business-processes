@@ -5,7 +5,7 @@ definition: The bounded unit of work within `processes:activity-ge-conceive-b82h
 belongs_to_activity: processes:activity-ge-conceive-b82hdf
 trigger: Custody of the Conceive-stage input pack for Articulate Risk Appetite ready for intake; predecessor phase has produced the case file context and intake contract applies.
 outcome: Intake manifest registered and bound to the Articulate Risk Appetite case file; registered intake custodian passes custody to the verification custodian.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Receipt and registration of the Articulate Risk Appetite input pack against the Conceive-stage intake contract.

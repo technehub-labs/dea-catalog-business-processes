@@ -1,11 +1,11 @@
 id: processes:task-pv-design-intake-4krvx6
 type: Task
 name: Commit Proposition Design Intake
-definition: 'The bounded unit of work within `dea:activity-commit-proposition-design` (Commit Proposition Design) that carries out the intake phase of the parent''s verb-object decomposition. Phase responsibility: designated intake custodian. Phase trigger: Parent Activity''s input class is presented for processing and the activity owner is notified of intake. Phase outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
+definition: 'The bounded unit of work within `dea:activity-commit-proposition-design` (Commit Proposition Design) that carries out the intake phase of the parent''s verb-object decomposition. Phase responsibility: intake custodian. Phase trigger: Parent Activity''s input class is presented for processing and the activity owner is notified of intake. Phase outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
 belongs_to_activity: processes:activity-pv-design-45x29p
 trigger: Parent Activity's input class is presented for processing and the activity owner is notified of intake.
 outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Acceptance of the input artifact per parent Activity scope.

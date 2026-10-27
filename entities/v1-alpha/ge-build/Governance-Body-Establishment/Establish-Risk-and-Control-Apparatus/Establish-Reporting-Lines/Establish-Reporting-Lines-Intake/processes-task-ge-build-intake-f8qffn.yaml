@@ -5,7 +5,7 @@ definition: The bounded unit of work within `processes:activity-ge-build-tj3qj3`
 belongs_to_activity: processes:activity-ge-build-tj3qj3
 trigger: Custody of the Build-stage input pack for Establish Reporting Lines ready for intake; predecessor phase has produced the case file context and intake contract applies.
 outcome: Intake manifest registered and bound to the Establish Reporting Lines case file; registered intake custodian passes custody to the verification custodian.
-responsibility: designated intake custodian
+responsibility: intake custodian
 boundary:
   inclusions:
   - Receipt and registration of the Establish Reporting Lines input pack against the Build-stage intake contract.
