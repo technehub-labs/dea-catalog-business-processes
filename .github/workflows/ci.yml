@@ -31,6 +31,14 @@ jobs:
           # fetch-depth: 1 is a shallow clone, which makes every
           # CR appear 'new' (mtime == now) and blocks merges.
           fetch-depth: 0
+          # CR-BP-133 class fix (capabilities precedent CR-DEA-BC-08):
+          # check out the PR branch tip, not GitHub's synthetic merge
+          # commit. The synthetic merge touches every entity file in
+          # git-log terms, collapsing the regenerator's last_modified
+          # to the merge date and failing CATALOG freshness on every
+          # PR whose merge date differs from the last entity commit
+          # (observed: #212 merged red on exactly this class).
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
 
       - name: Check for catalog entries
         id: check
