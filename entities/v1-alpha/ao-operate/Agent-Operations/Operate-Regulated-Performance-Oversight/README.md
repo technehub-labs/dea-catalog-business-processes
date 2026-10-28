@@ -28,6 +28,7 @@ This directory hosts the canonical Process record for `processes:process-ao-oper
 | :--- | :--- | :--- | :--- |
 | 2026-09-22 | `CR-BP-106` | Initial L2 Process entry; the canonical Business Process admitted at the AgencyAndOrganization x Operate coordinate, from the CR-BP-105 escape-clause discovery outcome (10/10, ADMIT-CANONICAL recommen | System |
 | 2026-10-12 | `CR-BP-111` | L3 decomposition tranche (CR-BP-111): added metadata.activity_references back-references to the 4 Activity records decomposing this BP. Version unchanged per SIV-004 (additive metadata-only). Activiti | System |
+| 2026-10-27 | `CR-BP-GS-1` | Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Agency & Organization Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under | System |
 
 ## 5. Properties and Relationships
 
@@ -48,6 +49,8 @@ This directory hosts the canonical Process record for `processes:process-ao-oper
 | `context` | array[1] | no | array of 1 item(s) |
 | `relationships` | array[1] | no | array of 1 item(s) |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
+| `actors` | array[1] | no | array of 1 item(s) |
+| `stakeholders` | array[1] | no | array of 1 item(s) |
 
 
 ## 4. Hierarchical Decomposition (Path Scheme)

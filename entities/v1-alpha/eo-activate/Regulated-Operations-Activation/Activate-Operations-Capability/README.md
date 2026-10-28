@@ -28,6 +28,7 @@ This directory hosts the canonical Process record for `processes:process-eo-acti
 | :--- | :--- | :--- | :--- |
 | 2026-09-16 | `CR-BP-82` | Initial canonical admission at the EnablementAndOperations x | System |
 | 2026-09-17 | `CR-BP-87` | L3 decomposition tranche (CR-BP-87): added metadata.activity_references | System |
+| 2026-10-27 | `CR-BP-GS-1` | Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Enablement & Operations Process Owner); actors/stakeholders derived from the parent cell charter vocabulary und | System |
 
 ## 5. Properties and Relationships
 
@@ -51,6 +52,8 @@ This directory hosts the canonical Process record for `processes:process-eo-acti
 | `outcomes` | array[1] | no | array of 1 item(s) |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `evidence` | array[6] | no | array of 6 item(s) |
+| `actors` | array[6] | no | array of 6 item(s) |
+| `stakeholders` | array[6] | no | array of 6 item(s) |
 
 
 ## 4. Hierarchical Decomposition (Path Scheme)

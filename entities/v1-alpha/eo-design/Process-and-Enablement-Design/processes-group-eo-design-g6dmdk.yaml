@@ -95,13 +95,13 @@ composes:
 process_group_kind: end-to-end
 status: accepted
 owner:
-  value: awaiting_owner_confirmation
-  status: proposed
+  value: Enablement & Operations Process Owner
+  status: confirmed
   provenance:
-    type: inference
-    asserted_by: dea-completeness-programme
+    type: manual
+    asserted_by: GOV-002 (Business Process Owner decision, ratified 2026-10-27)
     asserted_at: '2026-10-27'
-    reference: change-requests/CR-BP-CE-L1-process-group-owner-candidates.md
+    reference: change-requests/CR-BP-GS-1-governance-sweep.md
   review_due: '2026-12-31'
   decision_right: Process Domain Reviewer (GOV-003) confirms; Business Process Owner (GOV-002) holds the accountability once confirmed
 lifecycle_status: candidate

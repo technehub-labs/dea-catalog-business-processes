@@ -9,9 +9,9 @@ by_level:
     completeness_pct: 100.0
   Process:
     records: 145
-    records_with_findings: 145
-    findings: 290
-    completeness_pct: 0.0
+    records_with_findings: 0
+    findings: 0
+    completeness_pct: 100.0
   ProcessContext:
     records: 49
     records_with_findings: 0
@@ -30,59 +30,51 @@ by_level:
 by_domain:
   AgencyAndOrganization:
     records: 639
-    records_with_findings: 25
-    findings: 50
-    completeness_pct: 96.09
+    records_with_findings: 0
+    findings: 0
+    completeness_pct: 100.0
   EnablementAndOperations:
     records: 770
-    records_with_findings: 30
-    findings: 60
-    completeness_pct: 96.1
+    records_with_findings: 0
+    findings: 0
+    completeness_pct: 100.0
   FinanceAndAccounting:
     records: 564
-    records_with_findings: 22
-    findings: 44
-    completeness_pct: 96.1
+    records_with_findings: 0
+    findings: 0
+    completeness_pct: 100.0
   GovernanceAndExistence:
     records: 440
-    records_with_findings: 18
-    findings: 36
-    completeness_pct: 95.91
+    records_with_findings: 0
+    findings: 0
+    completeness_pct: 100.0
   PartyAndRelationship:
     records: 289
-    records_with_findings: 11
-    findings: 22
-    completeness_pct: 96.19
+    records_with_findings: 0
+    findings: 0
+    completeness_pct: 100.0
   ProductAndValue:
     records: 464
-    records_with_findings: 18
-    findings: 36
-    completeness_pct: 96.12
+    records_with_findings: 0
+    findings: 0
+    completeness_pct: 100.0
   StrategyAndDirection:
     records: 557
-    records_with_findings: 21
-    findings: 42
-    completeness_pct: 96.23
-by_domain_findings:
-  AgencyAndOrganization: 50
-  EnablementAndOperations: 60
-  FinanceAndAccounting: 44
-  GovernanceAndExistence: 36
-  PartyAndRelationship: 22
-  ProductAndValue: 36
-  StrategyAndDirection: 42
-by_rule:
-  CE-L2-006: 290
+    records_with_findings: 0
+    findings: 0
+    completeness_pct: 100.0
+by_domain_findings: {}
+by_rule: {}
 adoption:
   operational_fields:
     owner:
       populated: 194
       of: 3723
     stakeholders:
-      populated: 0
+      populated: 145
       of: 3723
     actors:
-      populated: 0
+      populated: 145
       of: 3723
     kpis:
       populated: 0
@@ -100,6 +92,6 @@ adoption:
     populated: 145
     of: 3723
 summary:
-  total_findings: 290
+  total_findings: 0
   blocking: 0
-  advisory: 290
+  advisory: 0
