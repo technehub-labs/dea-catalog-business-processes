@@ -9,7 +9,7 @@
 > the dea-metaframework `docs/entity-storage-layout.md` for the current
 > containment tree.
 
-**Status:** Proposed (2026-09-03)
+**Status**: Proposed (2026-09-03)
 **Layer:** L1
 **Owner:** TechNeHub Labs
 **Type:** Sample Entry / Worked Example / End-to-End Validation
