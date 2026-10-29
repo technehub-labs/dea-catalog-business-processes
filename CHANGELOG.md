@@ -6,6 +6,10 @@ All notable changes to this repository are documented here. Format follows
 
 ## [Unreleased]
 
+### CR-BP-134: Realizes Exemplar Retarget (Cross-Catalog Id Currency)
+
+Single-record fix: the one live `realizes` cross-catalog relationship's target_id retargeted from the pre-mv1 form `dea:entity-capability:manage-customer-relationship` to the canonical `capabilities:capability-customer-management-f3n8wb` (unique name-to-id resolution via the capabilities catalog's alias list; the `identity_scope` was already correct). The rationale prose echo updated to the canonical capability name. This makes the assertion resolvable by the capabilities catalog's BC-57 realization mining — the processes-side coordination item the BC-60 closure report recorded as RES-2. No other record, schema, gate, or CI changes; the coverage-at-scale question remains the upstream programme, not a fix.
+
 ### CR-BP-133: Change-Request Register Truth Pass
 
 Mechanical register-integrity pass (the CR-BP-113 §e repair class): 3 surviving CR-BP-90 duplicate rows removed + 1 CR-BP-102 duplicate; BP-90 status corrected to Superseded (matching the file and the CR-BP-116 withdrawal); CR-BP-EXT-23 status corrected to Accepted (matching the file); 26 post-merge "(this PR)" markers flipped to Accepted; CR-BP-03/03C Status-line format normalized (colon variant was invisible to the open-change-requests counter, which conservatively counted both open — the count drops by 2 on regeneration). The un-landed 112/113/114 drafts from the October 13 handoff are confirmed never-in-repo (untracked-clone artifacts; removed locally). No entity, schema, gate, or CI changes.

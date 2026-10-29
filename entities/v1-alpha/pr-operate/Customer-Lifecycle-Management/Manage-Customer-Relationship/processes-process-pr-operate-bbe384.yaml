@@ -80,14 +80,14 @@ identity:
     ref: docs/examples/manage-customer-relationship.md
 relationships:
 - source_id: processes:process-pr-operate-bbe384
-  target_id: dea:entity-capability:manage-customer-relationship
+  target_id: capabilities:capability-customer-management-f3n8wb
   relationship_type: realizes
   identity_scope: dea-catalog-business-capabilities
   status: active
   direction: source-to-target
   rationale: 'The Business Process realizes the Business Capability
 
-    `Manage Customer Relationship`. The capability is the
+    `Customer Management` (`capabilities:capability-customer-management-f3n8wb`). The capability is the
 
     abstract "what the enterprise can do"; the process is
 

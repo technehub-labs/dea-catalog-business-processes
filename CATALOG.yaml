@@ -6765,7 +6765,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:group-pr-operate-7ab3ma
-    last_modified: '2026-10-28'
+    last_modified: '2026-10-29'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
     research_count: 4
@@ -7304,7 +7304,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-pr-operate-pwue5a
-    last_modified: '2026-10-28'
+    last_modified: '2026-10-29'
     lifecycle_status: unknown
     path: entities/v1-alpha/pr-operate/processes-pc-pr-operate-pwue5a.yaml
     research_count: 0
@@ -8624,7 +8624,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:process-pr-operate-bbe384
-    last_modified: '2026-10-28'
+    last_modified: '2026-10-29'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/Manage-Customer-Relationship/processes-process-pr-operate-bbe384.yaml
     research_count: 2
