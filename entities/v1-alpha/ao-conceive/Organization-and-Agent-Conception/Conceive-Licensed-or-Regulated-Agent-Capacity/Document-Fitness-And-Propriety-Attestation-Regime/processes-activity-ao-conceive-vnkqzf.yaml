@@ -89,35 +89,35 @@ metadata:
 composes:
 - source_id: processes:activity-ao-conceive-vnkqzf
   target_id: processes:task-ao-conceive-intake-fbn9db
-  relationship_type: dea:composes
+  relationship_type: composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-conceive-vnkqzf
   target_id: processes:task-ao-conceive-verify-uut74e
-  relationship_type: dea:composes
+  relationship_type: composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-conceive-vnkqzf
   target_id: processes:task-ao-conceive-transform-r7j36u
-  relationship_type: dea:composes
+  relationship_type: composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-conceive-vnkqzf
   target_id: processes:task-ao-conceive-confirm-x6w5je
-  relationship_type: dea:composes
+  relationship_type: composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-conceive-vnkqzf
   target_id: processes:task-ao-conceive-record-g2vktj
-  relationship_type: dea:composes
+  relationship_type: composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase

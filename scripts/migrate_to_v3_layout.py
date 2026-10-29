@@ -396,10 +396,10 @@ def _verify(records: dict[str, tuple[Path, dict, str]], id_map: dict[str, str]) 
     for old_id, (path, record, content) in records.items():
         def check_refs(obj, path_str=""):
             if isinstance(obj, str):
-                if obj.startswith("dea:") and "@" not in obj and obj != "dea:composes":
+                if obj.startswith("dea:") and "@" not in obj and obj != "composes":
                     # Skip non-canonical reference prefixes
                     skip_prefixes = (
-                        "dea:composes",
+                        "composes",
                         "dea:discovery-",
                         "dea:entity-capability:",
                         "dea:scope-",

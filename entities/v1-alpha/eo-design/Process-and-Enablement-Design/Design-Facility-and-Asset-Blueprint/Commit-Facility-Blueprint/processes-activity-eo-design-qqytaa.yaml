@@ -43,31 +43,31 @@ metadata:
 composes:
 - source_id: processes:activity-eo-design-qqytaa
   target_id: processes:task-eo-design-intake-m9429c
-  relationship_type: dea:composes
+  relationship_type: composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
 - source_id: processes:activity-eo-design-qqytaa
   target_id: processes:task-eo-design-verify-95tn7j
-  relationship_type: dea:composes
+  relationship_type: composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
 - source_id: processes:activity-eo-design-qqytaa
   target_id: processes:task-eo-design-transform-tfduzv
-  relationship_type: dea:composes
+  relationship_type: composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
 - source_id: processes:activity-eo-design-qqytaa
   target_id: processes:task-eo-design-confirm-heacn4
-  relationship_type: dea:composes
+  relationship_type: composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
 - source_id: processes:activity-eo-design-qqytaa
   target_id: processes:task-eo-design-record-64yg2c
-  relationship_type: dea:composes
+  relationship_type: composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

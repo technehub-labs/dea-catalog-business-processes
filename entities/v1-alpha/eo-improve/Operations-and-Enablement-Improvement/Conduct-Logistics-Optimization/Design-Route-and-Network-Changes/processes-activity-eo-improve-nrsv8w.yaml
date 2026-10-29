@@ -43,31 +43,31 @@ metadata:
 composes:
 - source_id: processes:activity-eo-improve-nrsv8w
   target_id: processes:task-eo-improve-intake-cvysjv
-  relationship_type: dea:composes
+  relationship_type: composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
 - source_id: processes:activity-eo-improve-nrsv8w
   target_id: processes:task-eo-improve-verify-257bsq
-  relationship_type: dea:composes
+  relationship_type: composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
 - source_id: processes:activity-eo-improve-nrsv8w
   target_id: processes:task-eo-improve-transform-9d6kpy
-  relationship_type: dea:composes
+  relationship_type: composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
 - source_id: processes:activity-eo-improve-nrsv8w
   target_id: processes:task-eo-improve-confirm-v3n2qu
-  relationship_type: dea:composes
+  relationship_type: composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
 - source_id: processes:activity-eo-improve-nrsv8w
   target_id: processes:task-eo-improve-record-uptrqf
-  relationship_type: dea:composes
+  relationship_type: composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.

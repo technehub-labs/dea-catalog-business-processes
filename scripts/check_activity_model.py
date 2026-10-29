@@ -169,7 +169,7 @@ FORBIDDEN_COMPOSITION_TYPES = frozenset({
     "decomposes",
     "contains_activity",
 })
-CANONICAL_COMPOSITION_TYPE = "dea:composes"
+CANONICAL_COMPOSITION_TYPE = "composes"
 
 # CR-BP-32 §6 / §15 field naming for cohesion rationale.
 MIN_COHESION_RATIONALE_LEN = 20  # chars; rejects labels, accepts rationales

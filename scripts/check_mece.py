@@ -594,7 +594,7 @@ def _self_test() -> int:
                     composes.append({
                         "source_id": id_,
                         "target_id": t,
-                        "relationship_type": "dea:composes",
+                        "relationship_type": "composes",
                     })
             (d / f"processes-{slug}.yaml").write_text(yaml.safe_dump({
                 "id": id_, "name": name, "type": "ProcessGroup",
