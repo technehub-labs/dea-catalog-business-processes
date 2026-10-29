@@ -6,6 +6,11 @@ All notable changes to this repository are documented here. Format follows
 
 ## [Unreleased]
 
+### CR-BP-133: Change-Request Register Truth Pass
+
+Mechanical register-integrity pass (the CR-BP-113 §e repair class): 3 surviving CR-BP-90 duplicate rows removed + 1 CR-BP-102 duplicate; BP-90 status corrected to Superseded (matching the file and the CR-BP-116 withdrawal); CR-BP-EXT-23 status corrected to Accepted (matching the file); 26 post-merge "(this PR)" markers flipped to Accepted; CR-BP-03/03C Status-line format normalized (colon variant was invisible to the open-change-requests counter, which conservatively counted both open — the count drops by 2 on regeneration). The un-landed 112/113/114 drafts from the October 13 handoff are confirmed never-in-repo (untracked-clone artifacts; removed locally). No entity, schema, gate, or CI changes.
+
+
 ### CR-BP-GS-1: Governance Sweep (GOV-002 Owner Ratification + GOV-003 Role-Based Derivation)
 
 The GOV-002/GOV-003 governance sweep closing the completeness programme's final open items (the CE-RL carve-out population). GOV-002: one Process Owner role per domain (7 roles) covers all 194 L1 PGs + L2 BPs -- every owner block flips status proposed -> confirmed with provenance.type manual. GOV-003: the 145 BPs' actors/stakeholders are derived from each record's own parent cell charter vocabulary (charter-named roles only; the domain design authority fallback for architectural-vocabulary cells), with per-record refinement the standing review item. Post-sweep: gate [50] reports 0 blocking, 0 advisory across all 3,723 records -- the catalogue is 100% complete on its ratified profiles, ahead of the 2026-12-31 EXT-24 review window. Follow-up: reconcile the EXT-24 ownership register's awaiting_owner_confirmation dispositions to the confirmed roles. D-004 clean.
