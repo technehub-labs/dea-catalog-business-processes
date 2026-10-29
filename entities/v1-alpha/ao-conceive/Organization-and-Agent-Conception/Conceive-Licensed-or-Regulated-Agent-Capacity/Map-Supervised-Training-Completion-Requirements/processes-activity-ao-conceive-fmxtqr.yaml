@@ -88,35 +88,35 @@ metadata:
 composes:
 - source_id: processes:activity-ao-conceive-fmxtqr
   target_id: processes:task-ao-conceive-intake-xcxfzr
-  relationship_type: dea:composes
+  relationship_type: composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-conceive-fmxtqr
   target_id: processes:task-ao-conceive-verify-y9xpgd
-  relationship_type: dea:composes
+  relationship_type: composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-conceive-fmxtqr
   target_id: processes:task-ao-conceive-transform-6cbb24
-  relationship_type: dea:composes
+  relationship_type: composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-conceive-fmxtqr
   target_id: processes:task-ao-conceive-confirm-jcbwtd
-  relationship_type: dea:composes
+  relationship_type: composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase
     verb-object completion pattern.
 - source_id: processes:activity-ao-conceive-fmxtqr
   target_id: processes:task-ao-conceive-record-27fbra
-  relationship_type: dea:composes
+  relationship_type: composes
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase

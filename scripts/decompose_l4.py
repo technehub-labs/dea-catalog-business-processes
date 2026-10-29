@@ -376,7 +376,7 @@ def _build_composes_block(task_ids: list[str], activity_id: str) -> list[dict]:
         {
             "source_id": activity_id,
             "target_id": tid,
-            "relationship_type": "dea:composes",
+            "relationship_type": "composes",
             "direction": "source-to-target",
             "status": "active",
             "rationale": (

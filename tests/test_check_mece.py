@@ -127,7 +127,7 @@ def _make_pg(id_, pc_ref, name, composes_targets=None):
             composes.append({
                 "source_id": id_,
                 "target_id": t,
-                "relationship_type": "dea:composes",
+                "relationship_type": "composes",
             })
     return {"id": id_, "name": name, "type": "ProcessGroup",
             "version": "1.0.0", "process_context": pc_ref,

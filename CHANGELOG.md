@@ -6,6 +6,10 @@ All notable changes to this repository are documented here. Format follows
 
 ## [Unreleased]
 
+### CR-BP-135: Composes Relationship-Type Token Migration (dea:composes → composes)
+
+Mechanical token migration completing the CR-BP-mv1 id system's last live-content artifact: 2,900 `relationship_type: dea:composes` tokens across 580 live records' `composes[]` decomposition blocks migrated to `composes`. The target_ids were already in the `processes:task-*` form (the id part of mv1); only the type-token prefix remained. Schema `const`, activity-model gate constant, L4 decomposer generator, mece fixture writer, and two test files updated in lockstep; the execution-boundary gate already accepted both forms (transition-safe). Zero semantic changes — `composes` and `dea:composes` name the same CR-BP-32 §7 structural composition relationship. Entity-system ES-003 is unaffected (it reads the `relationships` key, not the `composes` block). All affected gates re-verified post-migration: activity-model, execution-boundary, mece, id-system, entity-system — all green.
+
 ### CR-BP-134: Realizes Exemplar Retarget (Cross-Catalog Id Currency)
 
 Single-record fix: the one live `realizes` cross-catalog relationship's target_id retargeted from the pre-mv1 form `dea:entity-capability:manage-customer-relationship` to the canonical `capabilities:capability-customer-management-f3n8wb` (unique name-to-id resolution via the capabilities catalog's alias list; the `identity_scope` was already correct). The rationale prose echo updated to the canonical capability name. This makes the assertion resolvable by the capabilities catalog's BC-57 realization mining — the processes-side coordination item the BC-60 closure report recorded as RES-2. No other record, schema, gate, or CI changes; the coverage-at-scale question remains the upstream programme, not a fix.

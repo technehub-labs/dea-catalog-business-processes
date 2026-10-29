@@ -164,7 +164,7 @@ def test_exe_001_forbids_ordering_annotations():
     for fld in FORBIDDEN_COMPOSITION_ORDERING_FIELDS:
         r = _record(extra={"composes": [
             {"target_id": "processes:activity-x",
-             "relationship_type": "dea:composes",
+             "relationship_type": "composes",
              fld: 1}]})
         assert _check_exe_001(r) is not None, fld
 
@@ -172,14 +172,14 @@ def test_exe_001_forbids_ordering_annotations():
 def test_exe_001_clean_composes():
     r = _record(extra={"composes": [
         {"target_id": "processes:activity-x",
-         "relationship_type": "dea:composes"}]})
+         "relationship_type": "composes"}]})
     assert _check_exe_001(r) is None
 
 
 def test_exe_002_forbids_ordering_on_composes_relationship():
     r = _record(extra={"composes": [
         {"target_id": "processes:activity-x",
-         "relationship_type": "dea:composes",
+         "relationship_type": "composes",
          "precedes": "processes:activity-y"}]})
     assert _check_exe_002(r) is not None
 

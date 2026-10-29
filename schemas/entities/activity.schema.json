@@ -64,8 +64,8 @@
           },
           "relationship_type": {
             "type": "string",
-            "const": "dea:composes",
-            "description": "CR-BP-32 §7 mandates `dea:composes`."
+            "const": "composes",
+            "description": "CR-BP-32 §7 structural composition (token migrated from dea:composes by CR-BP-135)."
           },
           "direction": {"type": "string"},
           "status": {"type": "string"},
