@@ -55,7 +55,7 @@ identity:
 relationships:
 - source_id: processes:process-ge-build-3p38us
   relationship_type: serves
-  target_id: ecf:governanceAndExistence.build
+  target_id: ecf:governanceExistence.build
 ecfConformance:
   framework: EnterpriseConceptFramework
   contractVersion: 1.0.0

@@ -68,7 +68,9 @@ def test_cli_live_catalog_conformant():
     result = _run(["--strict"])
     assert result.returncode == 0, result.stdout + result.stderr
     assert "CONFORMANT" in result.stdout
-    assert "Records checked:  140" in result.stdout
+    # Corpus count pinned to the live intent-bearing record count;
+    # update when admissions change it (was 140, grew to 145 by CR-BP-136).
+    assert "Records checked:  145" in result.stdout
     assert "Findings:         0" in result.stdout
 
 
@@ -77,7 +79,8 @@ def test_cli_json_emits_well_formed_payload():
     assert result.returncode == 0, result.stdout + result.stderr
     payload = json.loads(result.stdout)
     assert payload["verdict"] == "CONFORMANT"
-    assert payload["candidate_count"] == 140
+    # Same pin as above (was 140; grew to 145 by CR-BP-136).
+    assert payload["candidate_count"] == 145
     assert payload["finding_count"] == 0
     rule_ids = {r["id"] for r in payload["rules"]}
     assert rule_ids == {"PSP-001", "PSP-002", "PSP-003"}
@@ -158,11 +161,19 @@ def test_evaluate_psp_003_whitespace_stripped():
 def test_evaluate_psp_003_ecf_domain_name_in_intent_fires():
     """ECF domain names belong in process_context, not intent."""
     for ecf_name in (
+        # canonical And-stripped identifier forms (CR-ECF-012)
+        "strategyDirection",
+        "agencyOrganization",
+        "partyRelationship",
+        "productValue",
+        "enablementAndOperations",
+        "financeAccounting",
+        "governanceExistence",
+        # deprecated And-kept forms remain flagged (denylist aliases)
         "strategyAndDirection",
         "agencyAndOrganization",
         "partyAndRelationship",
         "productAndValue",
-        "enablementAndOperations",
         "financeAndAccounting",
         "governanceAndExistence",
     ):

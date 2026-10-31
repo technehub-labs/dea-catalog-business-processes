@@ -80,7 +80,13 @@ ORG_COMPONENT_DENYLIST: set[str] = {
     # Org-structure terms
     "department", "division", "team", "unit", "office",
     "branch", "subsidiary", "section", "group",
-    # ECF domain names (v2.5.0; CR-BP-23)
+    # ECF domain names (v2.5.0; CR-BP-23), both identifier conventions:
+    # the canonical And-stripped forms (CR-ECF-012) and the deprecated
+    # And-kept forms (kept as denylist aliases; intent text predating the
+    # convention repair must still be flagged).
+    "strategydirection", "agencyorganization",
+    "partyrelationship", "productvalue",
+    "financeaccounting", "governanceexistence",
     "strategyanddirection", "agencyandorganization",
     "partyandrelationship", "productandvalue",
     "enablementandoperations", "financeandaccounting",

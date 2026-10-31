@@ -423,7 +423,7 @@ ecfConformance:
     - kind: coordinate
       domain: StrategyAndDirection
       stage: Conceive
-      identifier: ecf:strategyAndDirection.conceive
+      identifier: ecf:strategyDirection.conceive
 
 # Evidence (CR-BP-11 register strength scale E0..E5).
 evidence:
@@ -725,7 +725,7 @@ identity:
 relationships:
 - source_id: dea:process-develop-corporate-strategy
   relationship_type: serves
-  target_id: ecf:strategyAndDirection.conceive
+  target_id: ecf:strategyDirection.conceive
 ecfConformance:
   framework: EnterpriseConceptFramework
   contractVersion: 1.0.0
@@ -736,7 +736,7 @@ ecfConformance:
   - kind: coordinate
     domain: StrategyAndDirection
     stage: Conceive
-    identifier: ecf:strategyAndDirection.conceive
+    identifier: ecf:strategyDirection.conceive
 metadata:
   established_by: CR-BP-21a
   established_at: '{CHANGE_DATE}'
@@ -770,7 +770,7 @@ metadata:
       L2 migration executed under CR-BP-21a. New id
       dea:process-develop-corporate-strategy; new context
       dea:pc-sd-conceive; new serves relationship
-      ecf:strategyAndDirection.conceive; new Process Group
+      ecf:strategyDirection.conceive; new Process Group
       dea:group-strategy-direction-conception. Version bumped to 2.0.0.
       The original L2 entry remains at
       dea:process-develop-governance-strategy/ with

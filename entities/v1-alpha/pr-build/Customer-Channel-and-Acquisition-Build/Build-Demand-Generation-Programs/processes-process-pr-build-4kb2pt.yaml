@@ -58,7 +58,7 @@ relationships:
   target_id: ecf:customerAndDemand.build
 - source_id: processes:process-pr-build-4kb2pt
   relationship_type: serves
-  target_id: ecf:partyAndRelationship.build
+  target_id: ecf:partyRelationship.build
 ecfConformance:
   framework: EnterpriseConceptFramework
   contractVersion: 1.0.0
