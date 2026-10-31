@@ -55,7 +55,7 @@ identity:
 relationships:
 - source_id: processes:process-ge-operate-hxxyc9
   relationship_type: serves
-  target_id: ecf:governanceAndExistence.operate
+  target_id: ecf:governanceExistence.operate
 ecfConformance:
   framework: EnterpriseConceptFramework
   contractVersion: 1.0.0

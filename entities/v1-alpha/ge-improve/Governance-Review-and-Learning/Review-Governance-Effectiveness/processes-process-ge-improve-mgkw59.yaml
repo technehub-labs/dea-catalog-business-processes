@@ -55,7 +55,7 @@ identity:
 relationships:
 - source_id: processes:process-ge-improve-mgkw59
   relationship_type: serves
-  target_id: ecf:governanceAndExistence.improve
+  target_id: ecf:governanceExistence.improve
 ecfConformance:
   framework: EnterpriseConceptFramework
   contractVersion: 1.0.0

@@ -55,7 +55,7 @@ identity:
 relationships:
 - source_id: processes:process-ge-conceive-e6jx6s
   relationship_type: serves
-  target_id: ecf:governanceAndExistence.conceive
+  target_id: ecf:governanceExistence.conceive
 ecfConformance:
   framework: EnterpriseConceptFramework
   contractVersion: 1.0.0

@@ -2535,7 +2535,7 @@ dispositions:
   ecf_context:
     domain: FinanceAndAccounting
     stage: Activate
-    ecf_identifier: ecf:financeAndAccounting.activate
+    ecf_identifier: ecf:financeAccounting.activate
   disposition: RETAIN
   rationale: |
     The process is canonically admitted under the CR-BP-62 escape-clause

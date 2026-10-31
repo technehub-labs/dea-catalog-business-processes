@@ -680,7 +680,7 @@ def render_evidence(links):
 
 
 ECF_DOMAIN_MAP = {
-    "EnablementAndOperations": "operationsEnablement",
+    "EnablementAndOperations": "enablementAndOperations",
 }
 
 
