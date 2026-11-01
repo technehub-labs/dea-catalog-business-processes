@@ -185,6 +185,11 @@ jobs:
         if: steps.check.outputs.skip != 'true'
         run: python scripts/check_process_identity.py
 
+      - name: Run Inputs/Outputs & Interfaces gate (CR-BP-94-EXT-12)
+        if: steps.check.outputs.skip != 'true'
+        run: |
+          python scripts/check_inputs_outputs_interfaces_ext12.py
+
       - name: Run Legacy Migration gate (CR-BP-03A)
         if: steps.check.outputs.skip != 'true'
         run: python scripts/check_legacy_migration.py
