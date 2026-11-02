@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-r
 
 **Name**: Regulated Governance Unwind
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,9 +13,9 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-r
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Regulated Governance Unwind | **Canonical ID** | `processes:group-ge-retire-v3vy7t` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organises the Business Process
+**Intent and Definition**: The bounded Process Group that organises the Business Process
 responsibilities of winding down a regulated entity's governance
 regime following a regulator or court authority determination
 (UK FCA Wind-Down Planning Group supervisory framework;
@@ -29,25 +29,11 @@ body, policy instruments, and statutory obligations must be
 wound down under the controlling regulator or court
 supervision.
 
-**Definition**: The bounded Process Group that organises the Business Process
-responsibilities of winding down a regulated entity's governance
-regime following a regulator or court authority determination
-(UK FCA Wind-Down Planning Group supervisory framework;
-California Corporations Code sections 5033-5034 US nonprofit
-dissolution; IRS 501(c)(3) federal tax-exempt dissolution
-obligations; state attorney-general charity oversight; federal
-banking regulator cease-and-desist authority; US federal and
-state court receivership authority) in the
-GovernanceAndExistence x Retire context where the governing
-body, policy instruments, and statutory obligations must be
-wound down under the controlling regulator or court
-supervision.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 (governance and provenance to be backfilled at EXT-04)
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -70,11 +56,11 @@ supervision.
 | :--- | :--- | :--- |
 | `composes` | `processes:process-ge-retire-mjq5hg` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

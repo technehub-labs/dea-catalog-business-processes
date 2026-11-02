@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 
 **Name**: Stage Regulated Personnel Record
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Stage Regulated Personnel Record | **Canonical ID** | `processes:activity-ao-build-r6h2t8` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Build Regulated Agent Pool that Stage the regulated personnel record for each cleared candidate: the supervisor-controlled scope, the fitness-and-propriety attestation, the supervised-training completion plan, the continuing-supervisor notification path, and the regulator-tied readiness for Activate. Shared concern: regulated personnel record staging. Input: the screened candidate list; the regulated personnel record schema. Output: the staged regulated personnel record ready for Activate.
+**Intent and Definition**: The cohesive grouping of work within Build Regulated Agent Pool that Stage the regulated personnel record for each cleared candidate: the supervisor-controlled scope, the fitness-and-propriety attestation, the supervised-training completion plan, the continuing-supervisor notification path, and the regulator-tied readiness for Activate. Shared concern: regulated personnel record staging. Input: the screened candidate list; the regulated personnel record schema. Output: the staged regulated personnel record ready for Activate.
 
-**Definition**: The cohesive grouping of work within Build Regulated Agent Pool that Stage the regulated personnel record for each cleared candidate: the supervisor-controlled scope, the fitness-and-propriety attestation, the supervised-training completion plan, the continuing-supervisor notification path, and the regulator-tied readiness for Activate. Shared concern: regulated personnel record staging. Input: the screened candidate list; the regulated personnel record schema. Output: the staged regulated personnel record ready for Activate.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -35,16 +33,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-build-bdn93m, processes:task-ao-build-w7e658, processes:task-ao-build-stygtb, proce | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-build-intake-a8w9me, processes:task-ao-build-verify-nszspe, processes:task-ao-build | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Build Regulated Agent Pool that Stage the regulated personnel record for each clear |
+| `definition` | string | no | The cohesive grouping of work within Build Regulated Agent Pool that Stage the regulated personnel record for each … |
 | `belongs_to_business_process` | string | no | processes:process-ao-build-9my4jr |
-| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single stage regulated personn |
+| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single stage regulated … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -58,7 +56,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 | `composes` | `processes:task-ao-build-confirm-hdn7za` | 1 |
 | `composes` | `processes:task-ao-build-record-3pf4q3` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -66,7 +64,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 - **Cohesion rationale**: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single stage regulated personnel record concern, one input class, and one output (the stage regulated personnel record record on the regulated personnel record).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

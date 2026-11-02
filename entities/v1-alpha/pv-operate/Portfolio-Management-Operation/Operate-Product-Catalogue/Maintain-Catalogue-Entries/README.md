@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-op
 
 **Name**: Maintain Catalogue Entries
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-pv-op
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Maintain Catalogue Entries | **Canonical ID** | `processes:activity-pv-operate-5yty8e` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Operate Product Catalogue that maintains the catalogue entries for products in active operation.
+**Intent and Definition**: The cohesive grouping of work within Operate Product Catalogue that maintains the catalogue entries for products in active operation.
 
-**Definition**: The cohesive grouping of work within Operate Product Catalogue that maintains the catalogue entries for products in active operation.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-pv-op
 | 2026-09-13 | `CR-BP-51` | Initial L3 Activity entry; lands as part of the CR-BP-51 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-maintain-catalogue-entries-intake, dea:task-maintain-catalogue-entries-verify, dea:task-main | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Operate Product Catalogue that maintains the catalogue entries for products in acti |
+| `definition` | string | no | The cohesive grouping of work within Operate Product Catalogue that maintains the catalogue entries for products in … |
 | `belongs_to_business_process` | string | no | processes:process-pv-operate-zyguzp |
-| `cohesion_rationale` | string | no | Constituent work shares a single maintenance concern (entry currency for active products), one input class (variant base |
+| `cohesion_rationale` | string | no | Constituent work shares a single maintenance concern (entry currency for active products), one input class (variant … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-op
 | `composes` | `processes:task-pv-operate-confirm-xfpdy3` | 1 |
 | `composes` | `processes:task-pv-operate-record-aj6tf3` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-op
 - **Cohesion rationale**: Constituent work shares a single maintenance concern (entry currency for active products), one input class (variant baselines, lifecycle states), and one output (current catalogue entries). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

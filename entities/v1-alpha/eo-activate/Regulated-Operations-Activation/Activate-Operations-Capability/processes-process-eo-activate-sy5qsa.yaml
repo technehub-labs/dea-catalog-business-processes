@@ -32,7 +32,7 @@ outcome: The operations capability is formally activated with the regulator's au
   operations manuals and runbooks live, operational controls (incident management, capacity, security,
   compliance) live, and the supervisor's continuing-oversight relationship active.
 description: Activate an operations capability under the enterprise's regulated-entity approval authority
-  within the dea:pc-oe-activate Cell Charter. The trigger is a regulator-issued authorization or certification
+  within the processes:pc-eo-activate-xdfscw Cell Charter. The trigger is a regulator-issued authorization or certification
   gating live service; the outcome is the capability live on the regulated operations record with the
   supervisor's continuing-oversight relationship active and operational controls running, so that the
   operations capability moves from regulator-authorized-but-not-live to regulator-authorized-and-live.
@@ -79,7 +79,7 @@ identity:
   - type: governance
     ref: change-requests/CR-BP-82-eo-activate-admission.md
   - type: documentation
-    ref: entities/v1-alpha/dea:process-activate-operations-capability/research/l2-admission-deposition.yaml
+    ref: entities/v1-alpha/processes:process-eo-activate-sy5qsa/research/l2-admission-deposition.yaml
 outcomes:
 - The operations capability is formally activated under the enterprise's regulated-entity approval authority
   with the regulator's authorization on record, operations manuals and runbooks live, operational controls
@@ -197,7 +197,7 @@ inputs:
   type: information
   name: 'Activate Operations Capability: working inputs (information)'
   description: 'Derived from the record''s documented description and trigger: the process Activate an
-    operations capability under the enterprise''s regulated-entity approval authority within the dea:pc-oe-activate
+    operations capability under the enterprise''s regulated-entity approval authority within the processes:pc-eo-activate-xdfscw
     Cell Charter. The trigger i'
   source: Record documented content (description + trigger fields)
   mandatory: true

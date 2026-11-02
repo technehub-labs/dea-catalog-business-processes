@@ -1,7 +1,7 @@
 id: processes:task-sd-activate-record-r8p7py
 type: Task
 name: Complete Supervisor Review and Obtain Acknowledgement on Record Audit Record
-definition: 'The bounded unit of work within `dea:activity-complete-supervisor-review-and-obtain-acknowledgement-on-record` (Complete Supervisor Review and Obtain Acknowledgement on Record) that carries out the record phase of the parent''s verb-object decomposition. Phase responsibility: records custodian. Phase trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity''s evidence requirements. Phase outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
+definition: 'The bounded unit of work within `processes:activity-sd-activate-w83pp4` (Complete Supervisor Review and Obtain Acknowledgement on Record) that carries out the record phase of the parent''s verb-object decomposition. Phase responsibility: records custodian. Phase trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity''s evidence requirements. Phase outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
 belongs_to_activity: processes:activity-sd-activate-w83pp4
 trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity's evidence requirements.
 outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity's evidence discipline.

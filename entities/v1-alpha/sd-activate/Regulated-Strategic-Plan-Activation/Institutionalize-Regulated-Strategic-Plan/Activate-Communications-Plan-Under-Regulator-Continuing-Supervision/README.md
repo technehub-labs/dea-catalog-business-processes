@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-ac
 
 **Name**: Activate Communications Plan Under Regulator Continuing Supervision
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-sd-ac
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Activate Communications Plan Under Regulator Continuing Supervision | **Canonical ID** | `processes:activity-sd-activate-jz6u3q` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Institutionalize Regulated Strategic Plan that activates the communications plan under the regulator's continuing supervision (disclosure controls; investor-relations briefing; regulated-entity announcement; Basel disclosure-control framework; NHS England communications protocol; PUC public-notice framework).
+**Intent and Definition**: The cohesive grouping of work within Institutionalize Regulated Strategic Plan that activates the communications plan under the regulator's continuing supervision (disclosure controls; investor-relations briefing; regulated-entity announcement; Basel disclosure-control framework; NHS England communications protocol; PUC public-notice framework).
 
-**Definition**: The cohesive grouping of work within Institutionalize Regulated Strategic Plan that activates the communications plan under the regulator's continuing supervision (disclosure controls; investor-relations briefing; regulated-entity announcement; Basel disclosure-control framework; NHS England communications protocol; PUC public-notice framework).
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-sd-ac
 | 2026-09-17 | `CR-BP-87` | Initial L3 Activity entry; lands as part of the CR-BP-87 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-activate-communications-plan-under-regulator-continuing-supervision-intake, dea:task-activat | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Institutionalize Regulated Strategic Plan that activates the communications plan un |
+| `definition` | string | no | The cohesive grouping of work within Institutionalize Regulated Strategic Plan that activates the communications plan … |
 | `belongs_to_business_process` | string | no | processes:process-sd-activate-s9m34e |
-| `cohesion_rationale` | string | no | Constituent work shares a single communications-plan-activation concern, one input class (the supervisor-acknowledged st |
+| `cohesion_rationale` | string | no | Constituent work shares a single communications-plan-activation concern, one input class (the supervisor-acknowledged … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-ac
 | `composes` | `processes:task-sd-activate-confirm-t3gzny` | 1 |
 | `composes` | `processes:task-sd-activate-record-hqkf24` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-ac
 - **Cohesion rationale**: Constituent work shares a single communications-plan-activation concern, one input class (the supervisor-acknowledged strategic plan and the regulator-mandated disclosure framework), and one output (the activated communications plan preserved on the regulated strategic-plan record). Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

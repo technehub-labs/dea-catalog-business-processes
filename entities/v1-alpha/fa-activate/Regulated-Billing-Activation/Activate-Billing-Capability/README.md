@@ -4,7 +4,7 @@ This directory hosts the canonical Process record for `processes:process-fa-acti
 
 **Name**: Activate Billing Capability
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,13 @@ This directory hosts the canonical Process record for `processes:process-fa-acti
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Activate Billing Capability | **Canonical ID** | `processes:process-fa-activate-bzfywk` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
 **Intent**: manage
 
 **Definition**: (definition pending; backfill at EXT-04)
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -30,7 +30,7 @@ This directory hosts the canonical Process record for `processes:process-fa-acti
 | 2026-09-17 | `CR-BP-87` | L3 decomposition tranche (CR-BP-87): added metadata.activity_references | System |
 | 2026-10-27 | `CR-BP-GS-1` | Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under  | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -41,9 +41,9 @@ This directory hosts the canonical Process record for `processes:process-fa-acti
 | `process_type` | string | no | management |
 | `process_classification` | object | no | object: type, provenance, status |
 | `owner` | object | no | object: value, status, provenance, review_due, decision_right |
-| `trigger` | string | no | A billing or revenue-recognition capability requires formal regulator-acknowledged activation before live invoicing or r |
-| `outcome` | string | no | The billing or revenue-recognition capability is formally activated with the regulator's acknowledgement on record, the  |
-| `description` | string | no | Activate a billing or revenue-recognition capability under the enterprise's regulated-entity approval authority within t |
+| `trigger` | string | no | A billing or revenue-recognition capability requires formal regulator-acknowledged activation before live invoicing or … |
+| `outcome` | string | no | The billing or revenue-recognition capability is formally activated with the regulator's acknowledgement on record, the … |
+| `description` | string | no | Activate a billing or revenue-recognition capability under the enterprise's regulated-entity approval authority within … |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `process_identity` | object | no | object: boundary_face, identity_kind, is_process, is_project |
 | `process_scope` | object | no | object: includes, excludes |
@@ -57,7 +57,7 @@ This directory hosts the canonical Process record for `processes:process-fa-acti
 | `outputs` | array[1] | no | array of 1 item(s) |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -69,7 +69,7 @@ This directory hosts the canonical Process record for `processes:process-fa-acti
   - `processes:activity-fa-activate-utzqpn`
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Includes**:
 - Regulator-acknowledged accounting or rate framework activation (state insurance department supervision; IFRS 17 transition; ECB / PRA capital-rules supervision; PUC rate-effective framework; PSD2 / Federal Reserve / ECB settlement-account framework)

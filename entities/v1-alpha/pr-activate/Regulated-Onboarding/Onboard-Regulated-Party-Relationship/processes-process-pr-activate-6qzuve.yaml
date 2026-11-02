@@ -27,7 +27,7 @@ owner:
 process_specialization: []
 description: 'Onboard a new party relationship in a regulated context (KYC/AML/CDD): verify identity,
   resolve beneficial ownership, classify risk, and either authorize commencement with documented approval
-  or record a refusal, within the dea:pc-pr-act Cell Charter. See trigger and outcome for the bounded
+  or record a refusal, within the processes:pc-pr-activate-mwq7bj Cell Charter. See trigger and outcome for the bounded
   work this process owns; see identity.outcome_statement for the testable outcome the process produces.
 
   '

@@ -25,7 +25,7 @@ owner:
   review_due: '2026-12-31'
   decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
-description: 'Operate the Operate Quality Control L2 process within the dea:pc-oe-operate Cell Charter.
+description: 'Operate the Operate Quality Control L2 process within the processes:pc-eo-operate-ydqb96 Cell Charter.
   See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the
   testable outcome the process produces. '
 trigger: 'Quality control operation is needed because production output must be inspected against specifications
@@ -116,7 +116,7 @@ inputs:
   type: information
   name: 'Operate Quality Control: working inputs (information)'
   description: 'Derived from the record''s documented description and trigger: the process Operate the
-    Operate Quality Control L2 process within the dea:pc-oe-operate Cell Charter. See trigger and outcome
+    Operate Quality Control L2 process within the processes:pc-eo-operate-ydqb96 Cell Charter. See trigger and outcome
     for the bounded work this process ow'
   source: Record documented content (description + trigger fields)
   mandatory: true

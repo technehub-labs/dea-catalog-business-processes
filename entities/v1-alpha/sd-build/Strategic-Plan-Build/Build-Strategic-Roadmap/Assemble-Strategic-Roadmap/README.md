@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-bu
 
 **Name**: Assemble Strategic Roadmap
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-sd-bu
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Assemble Strategic Roadmap | **Canonical ID** | `processes:activity-sd-build-htapw4` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Build Strategic Roadmap that assembles the roadmap from the initiative sequence and anchored milestones.
+**Intent and Definition**: The cohesive grouping of work within Build Strategic Roadmap that assembles the roadmap from the initiative sequence and anchored milestones.
 
-**Definition**: The cohesive grouping of work within Build Strategic Roadmap that assembles the roadmap from the initiative sequence and anchored milestones.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-sd-bu
 | 2026-09-13 | `CR-BP-54` | Initial L3 Activity entry; lands as part of the CR-BP-54 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-assemble-strategic-roadmap-intake, dea:task-assemble-strategic-roadmap-verify, dea:task-asse | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Build Strategic Roadmap that assembles the roadmap from the initiative sequence and |
+| `definition` | string | no | The cohesive grouping of work within Build Strategic Roadmap that assembles the roadmap from the initiative sequence … |
 | `belongs_to_business_process` | string | no | processes:process-sd-build-7n4prh |
-| `cohesion_rationale` | string | no | Constituent work shares a single assembly concern (sequence and milestones to roadmap), one reference class (the strateg |
+| `cohesion_rationale` | string | no | Constituent work shares a single assembly concern (sequence and milestones to roadmap), one reference class (the … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-bu
 | `composes` | `processes:task-sd-build-confirm-c4erxa` | 1 |
 | `composes` | `processes:task-sd-build-record-fg85f2` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-bu
 - **Cohesion rationale**: Constituent work shares a single assembly concern (sequence and milestones to roadmap), one reference class (the strategic horizons), and one output (the assembled roadmap). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

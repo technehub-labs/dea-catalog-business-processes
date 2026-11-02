@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-ge-ac
 
 **Name**: Governance Instrument Commencement
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,16 +13,16 @@ This directory hosts the canonical ProcessContext record for `processes:pc-ge-ac
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Governance Instrument Commencement | **Canonical ID** | `processes:pc-ge-activate-hxtfcv` |
 
-## 1. Executive Summary / Intent
+## 2. Executive Summary / Intent
 
 The commencement-stage work of moving adopted policy instruments,
 mandates and charters from adopted-but-dormant to in-force.
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 (governance and provenance to be backfilled at EXT-04)
 
-## 3. Behavioral Boundaries (Cell Charter)
+## 4. Behavioral Boundaries (Cell Charter)
 
 | Scope Type | Description |
 | :--- | :--- |
@@ -30,7 +30,7 @@ mandates and charters from adopted-but-dormant to in-force.
 | Out of Scope (exclusions) | - Instrument conception and drafting (Conceive/Design stages; adjacent contexts)<br>- Instrument adoption and approval (Build stage; adjacent context)<br>- Enforcement and operation of in-force instruments (Operate stage; adjacent context)<br>- Instrument review and amendment (Improve stage; adjacent context) |
 | Adjacent Cells | - processes:pc-ge-build-52hjrc (adjacent context): adopted instruments hand over at commencement-condition verification.<br>- processes:pc-ge-operate-hb2dac (adjacent context): in-force instruments hand over at effectiveness confirmation.<br>- processes:pc-ge-improve-c78ppp (adjacent context): amendment of in-force instruments begins there. |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename).
 
@@ -70,7 +70,7 @@ ge-activate/
 _(Full L4 task lists for each L3 activity are available in their respective subdirectories.)_
 </details>
 
-## 5. Properties and Relationships
+## 6. Properties and Relationships
 
 **Properties**
 
@@ -83,7 +83,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `outcomes` | array[3] | no | array of 3 item(s) |
 | `adjacent_contexts` | array[5] | no | array of 5 item(s) |
 | `processes` | array[1] | no | array of 1 item(s) |
-| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
+| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions … |
 | `status` | string | no | candidate |
 | `established_by` | string | no | CR-BP-65 |
 | `established_at` | string | no | 2026-09-14 |
@@ -96,7 +96,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | :--- | :--- | :--- |
 | `processes` | `processes:process-ge-activate-wegs44` | 1 |
 
-## 6. Operational, Control and Metrics Details
+## 7. Operational, Control and Metrics Details
 
 **Inputs, Outputs and Interfaces**: _(pending; backfill at EXT-04)_
 
@@ -108,7 +108,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 
 _(Pending EXT-04)_
 
-## 7. Technical Metadata
+## 8. Technical Metadata
 
 - **Source YAML**: record YAML in the same directory as this README
 - **Record version**: 1.0.0

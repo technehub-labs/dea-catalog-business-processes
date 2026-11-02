@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-ge-design-ver
 
 **Name**: Design Policy Artifacts Verification
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-ge-design-ver
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Design Policy Artifacts Verification | **Canonical ID** | `processes:task-ge-design-verify-qqzusy` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-ge-design-ka3nqz` (Design Policy Artifacts) that verify the input pack against the governance-architecture standards (OECD Principles, King IV outcomes) and the delegation-of-authority contract, and emit a verification report naming any architecture deviations and their remediation.
+**Intent and Definition**: The bounded unit of work within `processes:activity-ge-design-ka3nqz` (Design Policy Artifacts) that verify the input pack against the governance-architecture standards (OECD Principles, King IV outcomes) and the delegation-of-authority contract, and emit a verification report naming any architecture deviations and their remediation.
 
-**Definition**: The bounded unit of work within `processes:activity-ge-design-ka3nqz` (Design Policy Artifacts) that verify the input pack against the governance-architecture standards (OECD Principles, King IV outcomes) and the delegation-of-authority contract, and emit a verification report naming any architecture deviations and their remediation.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Task record for `processes:task-ge-design-ver
 | 2026-09-13 | `CR-BP-48` | Initial L3 Activity entry; lands as part of the CR-BP-48 | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-ge-design-ka3nqz` (Design Policy Artifacts) that verify the input pa |
+| `definition` | string | no | The bounded unit of work within `processes:activity-ge-design-ka3nqz` (Design Policy Artifacts) that verify the input … |
 | `belongs_to_activity` | string | no | processes:activity-ge-design-ka3nqz |
-| `trigger` | string | no | Intake manifest registered for Design Policy Artifacts; verification gate may execute the contract and quality-criteria  |
-| `outcome` | string | no | Verification certificate issued for Design Policy Artifacts naming verification methods applied and any deviations remed |
+| `trigger` | string | no | Intake manifest registered for Design Policy Artifacts; verification gate may execute the contract and quality-criteria … |
+| `outcome` | string | no | Verification certificate issued for Design Policy Artifacts naming verification methods applied and any deviations … |
 | `responsibility` | string | no | verification custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-ge-design-ver
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

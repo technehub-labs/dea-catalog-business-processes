@@ -118,7 +118,7 @@ def run_self_test() -> int:
 _L0_README_FULL = """\
 # Canonical ProcessContext: `dea:pc-test-1-abcdef`
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -129,7 +129,7 @@ _L0_README_FULL = """\
 
 The bounded context for the test fixture.
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 | Attribute | Value |
 | :--- | :--- |
@@ -144,7 +144,7 @@ The bounded context for the test fixture.
 | Out of Scope (exclusions) | - b |
 | Adjacent (adjacent_boundaries) | - c |
 
-## 4. Hierarchical Decomposition
+## 5. Hierarchical Decomposition
 
 <details><summary>L1-L4 tree</summary>
 
@@ -158,7 +158,7 @@ L0: pc-test-1
 
 </details>
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 | Property | Value | Property | Value |
 | :--- | :--- | :--- | :--- |
@@ -193,7 +193,7 @@ L0: pc-test-1
 _L0_README_PLACEHOLDER = """\
 # Canonical ProcessContext: `dea:pc-test-2-abcdef`
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -204,7 +204,7 @@ _L0_README_PLACEHOLDER = """\
 
 The bounded context for the placeholder fixture.
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 | Attribute | Value |
 | :--- | :--- |
@@ -219,7 +219,7 @@ The bounded context for the placeholder fixture.
 | Out of Scope (exclusions) | - b |
 | Adjacent (adjacent_boundaries) | - c |
 
-## 4. Hierarchical Decomposition
+## 5. Hierarchical Decomposition
 
 <details><summary>L1-L4 tree</summary>
 
@@ -229,7 +229,7 @@ L0: pc-test-2
 
 </details>
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 | Property | Value | Property | Value |
 | :--- | :--- | :--- | :--- |
@@ -254,7 +254,7 @@ _(Pending EXT-04)_
 _L0_README_MISSING_SECTION = """\
 # Canonical ProcessContext: `dea:pc-test-3-abcdef`
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -265,7 +265,7 @@ _L0_README_MISSING_SECTION = """\
 
 The bounded context for the missing-section fixture.
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 | Attribute | Value |
 | :--- | :--- |
@@ -285,25 +285,25 @@ The bounded context for the missing-section fixture.
 _L1_README_FULL = """\
 # Canonical ProcessGroup: `dea:group-test-1-abcdef`
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- |
 | **Domain** | AO | **Lifecycle Stage** | Activate |
 | **Level** | L1 (ProcessGroup) | **Status** | `candidate (yellow)` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
 The bounded grouping for the test fixture.
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 | Attribute | Value |
 | :--- | :--- |
 | **Admission score** | 1.0 |
 | **Regulatory evidence** | EXT-04 |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 | Property | Value | Property | Value |
 | :--- | :--- | :--- | :--- |
@@ -313,7 +313,7 @@ The bounded grouping for the test fixture.
 | :--- | :--- | :--- | :--- |
 | decomposes | dea:process-test-1-abcdef | 1:N | standard |
 
-## 4. Hierarchical Decomposition
+## 5. Hierarchical Decomposition
 
 <details><summary>L1-L4 tree</summary>
 
@@ -324,7 +324,7 @@ L1: group-test-1
 
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 _(Pending EXT-04)_
 

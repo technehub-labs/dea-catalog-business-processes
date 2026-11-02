@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 
 **Name**: Sense Organization Imperatives
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Sense Organization Imperatives | **Canonical ID** | `processes:activity-ao-conceive-fyb9vc` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Frame Organization and Agent Strategy that senses the imperatives driving a new or reframed agentive fabric, including substrate shifts.
+**Intent and Definition**: The cohesive grouping of work within Frame Organization and Agent Strategy that senses the imperatives driving a new or reframed agentive fabric, including substrate shifts.
 
-**Definition**: The cohesive grouping of work within Frame Organization and Agent Strategy that senses the imperatives driving a new or reframed agentive fabric, including substrate shifts.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 | 2026-09-14 | `CR-BP-56` | Initial L3 Activity entry; lands as part of the CR-BP-56 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-sense-organization-imperatives-intake, dea:task-sense-organization-imperatives-verify, dea:t | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Frame Organization and Agent Strategy that senses the imperatives driving a new or  |
+| `definition` | string | no | The cohesive grouping of work within Frame Organization and Agent Strategy that senses the imperatives driving a new or … |
 | `belongs_to_business_process` | string | no | processes:process-ao-conceive-e3u8s2 |
-| `cohesion_rationale` | string | no | Constituent work shares a single sensing concern (imperatives behind a new or reframed agentive fabric), one input class |
+| `cohesion_rationale` | string | no | Constituent work shares a single sensing concern (imperatives behind a new or reframed agentive fabric), one input … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 | `composes` | `processes:task-ao-conceive-confirm-n3yt6g` | 1 |
 | `composes` | `processes:task-ao-conceive-record-xemrvs` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 - **Cohesion rationale**: Constituent work shares a single sensing concern (imperatives behind a new or reframed agentive fabric), one input class (the enterprise strategy and substrate signals), and one output (the sensed organization imperatives). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

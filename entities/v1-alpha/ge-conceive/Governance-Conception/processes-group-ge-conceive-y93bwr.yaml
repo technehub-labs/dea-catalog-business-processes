@@ -14,7 +14,7 @@ definition: 'The bounded Process Group that organises the Business Process respo
 
   Strategic direction choices — including corporate strategy — belong in
 
-  StrategyAndDirection × Conceive (dea:pc-sd-conceive, planned CR-BP-21a) per
+  StrategyAndDirection × Conceive (processes:pc-sd-conceive-ucb3gx, planned CR-BP-21a) per
 
   domain-grounding.md §3.1 ("Governance authorizes but does not direct;
 
@@ -109,7 +109,7 @@ evidence:
 
     '
   strength: E4
-  reference: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+  reference: entities/v1-alpha/processes:group-pr-operate-7ab3ma/research/l1-register.yaml
 metadata:
   established_by: CR-BP-13a
   established_at: '2026-09-05'

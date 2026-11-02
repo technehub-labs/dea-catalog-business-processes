@@ -107,7 +107,7 @@ evidence:
 
     '
   strength: E4
-  reference: entities/v1-alpha/dea:group-customer-lifecycle-management/research/L1-REGISTER-v0.1.md
+  reference: entities/v1-alpha/processes:group-pr-operate-7ab3ma/research/L1-REGISTER-v0.1.md
 metadata:
   established_by: CR-BP-12
   established_at: '2026-09-04'

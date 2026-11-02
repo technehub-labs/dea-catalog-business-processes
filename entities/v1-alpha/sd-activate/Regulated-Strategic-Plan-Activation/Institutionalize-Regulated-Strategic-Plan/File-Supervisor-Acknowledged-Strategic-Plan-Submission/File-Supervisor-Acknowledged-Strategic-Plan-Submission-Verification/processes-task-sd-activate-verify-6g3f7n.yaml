@@ -1,7 +1,7 @@
 id: processes:task-sd-activate-verify-6g3f7n
 type: Task
 name: File Supervisor-Acknowledged Strategic-Plan Submission Verification
-definition: 'The bounded unit of work within `dea:activity-file-supervisor-acknowledged-strategic-plan-submission` (File Supervisor-Acknowledged Strategic-Plan Submission) that carries out the verify phase of the parent''s verb-object decomposition. Phase responsibility: verification custodian. Phase trigger: Intake registered (phase 1 complete); verification of input against parent Activity''s specification can begin. Phase outcome: Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
+definition: 'The bounded unit of work within `processes:activity-sd-activate-4gefj3` (File Supervisor-Acknowledged Strategic-Plan Submission) that carries out the verify phase of the parent''s verb-object decomposition. Phase responsibility: verification custodian. Phase trigger: Intake registered (phase 1 complete); verification of input against parent Activity''s specification can begin. Phase outcome: Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
 belongs_to_activity: processes:activity-sd-activate-4gefj3
 trigger: Intake registered (phase 1 complete); verification of input against parent Activity's specification can begin.
 outcome: Verified that the input meets parent Activity's specification; nonconformities are recorded for rejection or remediation.

@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 
 **Name**: Construct Prototype
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Construct Prototype | **Canonical ID** | `processes:activity-pv-build-r6b4x7` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Build Innovation Prototype that constructs the working prototype the designed experiment requires.
+**Intent and Definition**: The cohesive grouping of work within Build Innovation Prototype that constructs the working prototype the designed experiment requires.
 
-**Definition**: The cohesive grouping of work within Build Innovation Prototype that constructs the working prototype the designed experiment requires.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 | 2026-09-13 | `CR-BP-50` | Initial L3 Activity entry; lands as part of the CR-BP-50 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-construct-prototype-intake, dea:task-construct-prototype-verify, dea:task-construct-prototyp | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Build Innovation Prototype that constructs the working prototype the designed exper |
+| `definition` | string | no | The cohesive grouping of work within Build Innovation Prototype that constructs the working prototype the designed … |
 | `belongs_to_business_process` | string | no | processes:process-pv-build-8jc3y4 |
-| `cohesion_rationale` | string | no | Constituent work shares a single construction concern (experiment design to working prototype), one reference class (the |
+| `cohesion_rationale` | string | no | Constituent work shares a single construction concern (experiment design to working prototype), one reference class … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 | `composes` | `processes:task-pv-build-confirm-3j6u83` | 1 |
 | `composes` | `processes:task-pv-build-record-e9kveb` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 - **Cohesion rationale**: Constituent work shares a single construction concern (experiment design to working prototype), one reference class (the experiment design), and one output (the constructed prototype). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

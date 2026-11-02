@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 
 **Name**: Assess Initiative Alignment
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Assess Initiative Alignment | **Canonical ID** | `processes:activity-sd-operate-cjjgw3` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Steer Initiative Portfolio that assesses the alignment of in-flight initiatives with strategic performance and intent.
+**Intent and Definition**: The cohesive grouping of work within Steer Initiative Portfolio that assesses the alignment of in-flight initiatives with strategic performance and intent.
 
-**Definition**: The cohesive grouping of work within Steer Initiative Portfolio that assesses the alignment of in-flight initiatives with strategic performance and intent.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 | 2026-09-14 | `CR-BP-55` | Initial L3 Activity entry; lands as part of the CR-BP-55 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-assess-initiative-alignment-intake, dea:task-assess-initiative-alignment-verify, dea:task-as | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Steer Initiative Portfolio that assesses the alignment of in-flight initiatives wit |
+| `definition` | string | no | The cohesive grouping of work within Steer Initiative Portfolio that assesses the alignment of in-flight initiatives … |
 | `belongs_to_business_process` | string | no | processes:process-sd-operate-u6xgu5 |
-| `cohesion_rationale` | string | no | Constituent work shares a single assessment concern (in-flight initiatives weighed against strategic performance and int |
+| `cohesion_rationale` | string | no | Constituent work shares a single assessment concern (in-flight initiatives weighed against strategic performance and … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 | `composes` | `processes:task-sd-operate-confirm-as6xse` | 1 |
 | `composes` | `processes:task-sd-operate-record-xxxpyp` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 - **Cohesion rationale**: Constituent work shares a single assessment concern (in-flight initiatives weighed against strategic performance and intent), one input class (the monitored strategic performance), and one output (the initiative alignment assessment). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

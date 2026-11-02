@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-pr-retire-tra
 
 **Name**: Plan Relationship Close-Out Processing
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-pr-retire-tra
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Plan Relationship Close-Out Processing | **Canonical ID** | `processes:task-pr-retire-transform-tfzf6c` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-pr-retire-k646h9` (Plan Relationship Close-Out) that execute the closure: settle the outstanding obligations, execute the evidenced closure, resolve the records and rights under the storage-limitation rules, and produce the closure-ready record pack conforming to the relationship-closure schema.
+**Intent and Definition**: The bounded unit of work within `processes:activity-pr-retire-k646h9` (Plan Relationship Close-Out) that execute the closure: settle the outstanding obligations, execute the evidenced closure, resolve the records and rights under the storage-limitation rules, and produce the closure-ready record pack conforming to the relationship-closure schema.
 
-**Definition**: The bounded unit of work within `processes:activity-pr-retire-k646h9` (Plan Relationship Close-Out) that execute the closure: settle the outstanding obligations, execute the evidenced closure, resolve the records and rights under the storage-limitation rules, and produce the closure-ready record pack conforming to the relationship-closure schema.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Task record for `processes:task-pr-retire-tra
 | 2026-09-15 | `CR-BP-69` | Initial L3 Activity entry; lands as part of the CR-BP-69 | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-pr-retire-k646h9` (Plan Relationship Close-Out) that execute the clo |
+| `definition` | string | no | The bounded unit of work within `processes:activity-pr-retire-k646h9` (Plan Relationship Close-Out) that execute the … |
 | `belongs_to_activity` | string | no | processes:activity-pr-retire-k646h9 |
-| `trigger` | string | no | Verification certificate issued for Plan Relationship Close-Out; transform gate may execute the bounded work and emit th |
-| `outcome` | string | no | Bounded-work artefact produced for Plan Relationship Close-Out conforming to the Retire schema; processing custodian pas |
+| `trigger` | string | no | Verification certificate issued for Plan Relationship Close-Out; transform gate may execute the bounded work and emit … |
+| `outcome` | string | no | Bounded-work artefact produced for Plan Relationship Close-Out conforming to the Retire schema; processing custodian … |
 | `responsibility` | string | no | processing custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-pr-retire-tra
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

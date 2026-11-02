@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-re
 
 **Name**: Resolve Residual Obligations
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-pv-re
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Resolve Residual Obligations | **Canonical ID** | `processes:activity-pv-retire-6b3zth` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Transition Proposition Out of Service that identifies and routes residual obligations: warranties, support commitments and data retention duties.
+**Intent and Definition**: The cohesive grouping of work within Transition Proposition Out of Service that identifies and routes residual obligations: warranties, support commitments and data retention duties.
 
-**Definition**: The cohesive grouping of work within Transition Proposition Out of Service that identifies and routes residual obligations: warranties, support commitments and data retention duties.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-pv-re
 | 2026-09-15 | `CR-BP-69` | Initial L3 Activity entry; lands as part of the CR-BP-69 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-resolve-residual-obligations-intake, dea:task-resolve-residual-obligations-verify, dea:task- | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Transition Proposition Out of Service that identifies and routes residual obligatio |
+| `definition` | string | no | The cohesive grouping of work within Transition Proposition Out of Service that identifies and routes residual … |
 | `belongs_to_business_process` | string | no | processes:process-pv-retire-6us5am |
-| `cohesion_rationale` | string | no | Constituent work shares a single residual obligation handling concern, one input class (the withdrawn service and its ou |
+| `cohesion_rationale` | string | no | Constituent work shares a single residual obligation handling concern, one input class (the withdrawn service and its … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-re
 | `composes` | `processes:task-pv-retire-confirm-emnknh` | 1 |
 | `composes` | `processes:task-pv-retire-record-b7bzyg` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-re
 - **Cohesion rationale**: Constituent work shares a single residual obligation handling concern, one input class (the withdrawn service and its outstanding commitments), and one output (identified and routed residual obligations). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

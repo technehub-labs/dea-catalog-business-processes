@@ -25,7 +25,7 @@ owner:
   review_due: '2026-12-31'
   decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
-description: 'Operate the Design Financial Plan Structure L2 process within the dea:pc-fa-design Cell
+description: 'Operate the Design Financial Plan Structure L2 process within the processes:pc-fa-design-4j8evh Cell
   Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement
   for the testable outcome the process produces. '
 trigger: 'A financial plan structure design is needed because the framed finance strategy requires bounded
@@ -127,7 +127,7 @@ inputs:
   type: information
   name: 'Design Financial Plan Structure: working inputs (information)'
   description: 'Derived from the record''s documented description and trigger: the process Operate the
-    Design Financial Plan Structure L2 process within the dea:pc-fa-design Cell Charter. See trigger and
+    Design Financial Plan Structure L2 process within the processes:pc-fa-design-4j8evh Cell Charter. See trigger and
     outcome for the bounded work this pro'
   source: Record documented content (description + trigger fields)
   mandatory: true

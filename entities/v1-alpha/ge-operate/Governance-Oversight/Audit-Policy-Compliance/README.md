@@ -4,7 +4,7 @@ This directory hosts the canonical Process record for `processes:process-ge-oper
 
 **Name**: Audit Policy Compliance
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,13 @@ This directory hosts the canonical Process record for `processes:process-ge-oper
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Audit Policy Compliance | **Canonical ID** | `processes:process-ge-operate-hxxyc9` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
 **Intent**: govern
 
 **Definition**: (definition pending; backfill at EXT-04)
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -32,7 +32,7 @@ This directory hosts the canonical Process record for `processes:process-ge-oper
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 | 2026-10-27 | `CR-BP-GS-1` | Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Governance & Existence Process Owner); actors/stakeholders derived from the parent cell charter vocabulary unde | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -45,7 +45,7 @@ This directory hosts the canonical Process record for `processes:process-ge-oper
 | `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Operate the Audit Policy Compliance L2 process within the |
-| `trigger` | string | no | Policies are codified and bodies are operating; periodic audits must verify compliance with the policies and report find |
+| `trigger` | string | no | Policies are codified and bodies are operating; periodic audits must verify compliance with the policies and report … |
 | `outcome` | string | no | Audit reports with findings, recommendations, and follow-up actions are delivered to the appropriate governance body. |
 | `identity` | object | no | object: verb, object, scope, outcome_statement, evidence_links |
 | `relationships` | array[1] | no | array of 1 item(s) |
@@ -58,7 +58,7 @@ This directory hosts the canonical Process record for `processes:process-ge-oper
 | `outputs` | array[2] | no | array of 2 item(s) |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -70,7 +70,7 @@ This directory hosts the canonical Process record for `processes:process-ge-oper
   - `processes:activity-ge-operate-zhhypw`
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

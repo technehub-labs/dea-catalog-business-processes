@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ge-bu
 
 **Name**: Constitute Bodies
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ge-bu
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Constitute Bodies | **Canonical ID** | `processes:activity-ge-build-tp3aba` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Establish Governance Bodies that constitutes the boards and committees from the committed governance system design.
+**Intent and Definition**: The cohesive grouping of work within Establish Governance Bodies that constitutes the boards and committees from the committed governance system design.
 
-**Definition**: The cohesive grouping of work within Establish Governance Bodies that constitutes the boards and committees from the committed governance system design.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-ge-bu
 | 2026-09-13 | `CR-BP-48` | Initial L3 Activity entry; lands as part of the CR-BP-48 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-constitute-bodies-intake, dea:task-constitute-bodies-verify, dea:task-constitute-bodies-tran | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Establish Governance Bodies that constitutes the boards and committees from the com |
+| `definition` | string | no | The cohesive grouping of work within Establish Governance Bodies that constitutes the boards and committees from the … |
 | `belongs_to_business_process` | string | no | processes:process-ge-build-3p38us |
-| `cohesion_rationale` | string | no | Constituent work shares a single constitution concern (design to constituted body), one reference class (the governance  |
+| `cohesion_rationale` | string | no | Constituent work shares a single constitution concern (design to constituted body), one reference class (the governance … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-ge-bu
 | `composes` | `processes:task-ge-build-confirm-8qmtyb` | 1 |
 | `composes` | `processes:task-ge-build-record-vjam3g` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-ge-bu
 - **Cohesion rationale**: Constituent work shares a single constitution concern (design to constituted body), one reference class (the governance system design), and one output (constituted bodies). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

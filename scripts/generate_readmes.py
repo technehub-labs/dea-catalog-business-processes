@@ -9,7 +9,8 @@ README follows the documentation profile required by the record's
 (type, level) combination as registered in scripts/check_documentation_profile.py
 PROFILE_REGISTRY.
 
-Sections (per the consolidated design; see change-requests/CR-BP-94-EXT-07):
+Sections (per the consolidated design; see change-requests/CR-BP-94-EXT-07;
+numbering per CR-BP-221 — each profile numbers its sections 1..N by position):
 
   L0 ProcessContext (8 sections):
     1. Header and Identity Table
@@ -49,6 +50,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import re
 import sys
 from pathlib import Path
 from typing import Any, Iterable
@@ -114,22 +116,67 @@ PROFILE_SECTIONS: dict[tuple[str, str], list[str]] = {
 }
 
 
-# Section id -> markdown heading.
-# L0 sections use numeric prefix 1-8 for scanability; L1-L4 use descriptive
-# headings without numeric prefix. The validator's EXPECTED_HEADINGS regex
-# matches these exact strings (case-insensitive on the heading text).
-SECTION_HEADINGS: dict[str, str] = {
-    "header-identity-table": "## Header and Identity Table",
-    "executive-summary": "## 1. Executive Summary / Intent",
-    "intent-definition": "## Intent and Definition",
-    "governance-provenance": "## 2. Governance and Provenance",
-    "behavioral-boundaries": "## 3. Behavioral Boundaries (Cell Charter)",
-    "hierarchical-decomposition": "## 4. Hierarchical Decomposition (Path Scheme)",
-    "properties-relationships": "## 5. Properties and Relationships",
-    "operational-metrics": "## 6. Operational, Control and Metrics Details",
-    "operational-details": "## Operational Details",
-    "technical-metadata": "## 7. Technical Metadata",
+# Section id -> heading text (CR-BP-221). Numbers are NOT stored here:
+# each profile numbers its sections 1..N by position in PROFILE_SECTIONS,
+# so every README's H2 sequence is strictly coherent. (The pre-CR-BP-221
+# map hardcoded the L0 numbers on section keys shared with the L1-L4
+# profiles and left L1-L4-only keys unnumbered, which rendered
+# "2. Governance ... 5. Properties ... 4. Hierarchical ..." on every
+# L1-L4 README — the defect CR-BP-221 removes.) The validators'
+# EXPECTED_HEADINGS regexes match these titles with an optional numeric
+# prefix (case-insensitive on the heading text).
+SECTION_TITLES: dict[str, str] = {
+    "header-identity-table": "Header and Identity Table",
+    "executive-summary": "Executive Summary / Intent",
+    "intent-definition": "Intent and Definition",
+    "governance-provenance": "Governance and Provenance",
+    "behavioral-boundaries": "Behavioral Boundaries (Cell Charter)",
+    "hierarchical-decomposition": "Hierarchical Decomposition (Path Scheme)",
+    "properties-relationships": "Properties and Relationships",
+    "operational-metrics": "Operational, Control and Metrics Details",
+    "operational-details": "Operational Details",
+    "technical-metadata": "Technical Metadata",
 }
+
+
+def profile_headings(sections: list[str]) -> dict[str, str]:
+    """Number a profile's sections 1..N by position (CR-BP-221)."""
+    return {
+        sid: f"## {i}. {SECTION_TITLES[sid]}"
+        for i, sid in enumerate(sections, start=1)
+    }
+
+
+def check_numbering(readme_text: str) -> str | None:
+    """RDM-003: every H2 heading numbered, strictly sequential 1..N.
+
+    Returns a diagnostic string when the H2 sequence is incoherent
+    (an unnumbered heading, or numbers that are not exactly 1..N in
+    order); None when clean. Applied to generator output by
+    check_readme_consistency.py so a generator regression cannot
+    reintroduce the pre-CR-BP-221 numbering defect class.
+    """
+    seen: list[int] = []
+    for line in readme_text.splitlines():
+        if not line.startswith("## "):
+            continue
+        m = re.match(r"^##\s*(\d+)\.\s+\S", line)
+        if m is None:
+            return f"unnumbered H2 heading: {line.strip()!r}"
+        seen.append(int(m.group(1)))
+    if seen != list(range(1, len(seen) + 1)):
+        return f"H2 numbering is not a strict 1..N sequence: {seen}"
+    return None
+
+
+def _truncate_cell(value: str, limit: int = 120) -> str:
+    """Truncate a Properties-table cell at a word boundary with an
+    ellipsis (CR-BP-221). The previous hard `[:120]` slice cut values
+    mid-word ("…regulated-entity appro"), misquoting the record."""
+    if len(value) <= limit:
+        return value
+    cut = value[:limit].rsplit(" ", 1)[0].rstrip(" ,;:.")
+    return cut + " …"
 
 
 # Status emoji map (CR-BP-120 example; for the Header and Identity Table).
@@ -384,6 +431,13 @@ def _intent_definition(record: dict, level: str) -> str:
         or "(intent pending; backfill at EXT-04)"
     )
     definition = record.get("definition") or "(definition pending; backfill at EXT-04)"
+
+    # CR-BP-221: when no distinct intent field exists (L4 tasks carry
+    # only the phase definition), the fallback resolves both lines to
+    # the same text. Rendering it twice is duplication, not richness —
+    # emit a single combined line instead.
+    if intent.strip() == definition.strip():
+        return "**Intent and Definition**: " + definition.strip()
 
     out = [
         "**Intent**: " + intent.strip(),
@@ -656,15 +710,17 @@ def _properties_relationships(record: dict, level: str) -> str:
             type_str = type(v).__name__
 
         # Build a short description from the field value (truncated).
+        # CR-BP-221: truncate at a word boundary with an ellipsis so the
+        # cell never misquotes the record mid-word.
         if isinstance(v, str):
-            desc = v.strip().split("\n")[0][:120]
+            desc = _truncate_cell(v.strip().split("\n")[0])
         elif isinstance(v, dict):
             keys = ", ".join(v.keys())
-            desc = f"object: {keys}"[:120]
+            desc = _truncate_cell(f"object: {keys}")
         elif isinstance(v, list):
             desc = f"array of {len(v)} item(s)"
         else:
-            desc = str(v)[:120]
+            desc = _truncate_cell(str(v))
 
         property_rows.append((k, type_str, "no", desc))
 
@@ -987,8 +1043,9 @@ def generate_readme(record: dict, level: str) -> str:
     out.append("")
     out.append(f"**Name**: {name}")
     out.append("")
+    headings = profile_headings(sections)
     for sid in sections:
-        out.append(SECTION_HEADINGS[sid])
+        out.append(headings[sid])
         out.append("")
         out.append(render_section(sid, record, level))
         out.append("")

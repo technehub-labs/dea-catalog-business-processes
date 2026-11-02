@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 **Name**: Monitor Ledger Health
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Monitor Ledger Health | **Canonical ID** | `processes:activity-fa-operate-ksg7yj` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Operate General Ledger that monitors the health of ledger operation (posting latency, error rates, balance anomalies) as the financial system of record.
+**Intent and Definition**: The cohesive grouping of work within Operate General Ledger that monitors the health of ledger operation (posting latency, error rates, balance anomalies) as the financial system of record.
 
-**Definition**: The cohesive grouping of work within Operate General Ledger that monitors the health of ledger operation (posting latency, error rates, balance anomalies) as the financial system of record.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 | 2026-09-13 | `CR-BP-53` | Initial L3 Activity entry; lands as part of the CR-BP-53 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-monitor-ledger-health-intake, dea:task-monitor-ledger-health-verify, dea:task-monitor-ledger | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Operate General Ledger that monitors the health of ledger operation (posting latenc |
+| `definition` | string | no | The cohesive grouping of work within Operate General Ledger that monitors the health of ledger operation (posting … |
 | `belongs_to_business_process` | string | no | processes:process-fa-operate-g9zpnq |
-| `cohesion_rationale` | string | no | Constituent work shares a single health concern (ledger operational correctness), one input class (ledger telemetry), an |
+| `cohesion_rationale` | string | no | Constituent work shares a single health concern (ledger operational correctness), one input class (ledger telemetry) … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 | `composes` | `processes:task-fa-operate-confirm-hnukwh` | 1 |
 | `composes` | `processes:task-fa-operate-record-wz8n86` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 - **Cohesion rationale**: Constituent work shares a single health concern (ledger operational correctness), one input class (ledger telemetry), and one output (the health posture). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

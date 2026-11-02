@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-sd-de
 
 **Name**: Strategic Choices Design
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,11 +13,11 @@ This directory hosts the canonical ProcessContext record for `processes:pc-sd-de
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Strategic Choices Design | **Canonical ID** | `processes:pc-sd-design-g3es76` |
 
-## 1. Executive Summary / Intent
+## 2. Executive Summary / Intent
 
 The analytical work of producing designs for strategic options, alternatives, objectives, and scenarios from the conceived intent.
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 - **Regulatory Evidence Base**:
@@ -25,7 +25,7 @@ The analytical work of producing designs for strategic options, alternatives, ob
   - Privacy: GDPR (EU) / CCPA (California) / PIPEDA (Canada)
   - Healthcare: HIPAA (US) / NHS Data Security and Protection Toolkit
 
-## 3. Behavioral Boundaries (Cell Charter)
+## 4. Behavioral Boundaries (Cell Charter)
 
 | Scope Type | Description |
 | :--- | :--- |
@@ -33,7 +33,7 @@ The analytical work of producing designs for strategic options, alternatives, ob
 | Out of Scope (exclusions) | - Strategic intent conception (Conceive stage; adjacent context)<br>- Strategic plan and roadmap build (Build stage; adjacent context)<br>- Operational planning (enablement-operations x design)<br>- Financial plan design (finance-accounting x design) |
 | Adjacent Cells | - processes:pc-sd-conceive-ucb3gx (adjacent context): strategy flows between Design and the adjacent cell.<br>- processes:pc-sd-build-gmzrrm (adjacent context): strategy flows between Design and the adjacent cell.<br>- processes:pc-sd-operate-5cs5ee (adjacent context): strategy flows between Design and the adjacent cell.<br>- processes:pc-sd-improve-ft9k5f (adjacent context): strategy flows between Design and the adjacent cell. |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename).
 
@@ -148,7 +148,7 @@ sd-design/
 _(Full L4 task lists for each L3 activity are available in their respective subdirectories.)_
 </details>
 
-## 5. Properties and Relationships
+## 6. Properties and Relationships
 
 **Properties**
 
@@ -156,12 +156,12 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | :--- | :--- | :--- | :--- |
 | `domain` | string | no | StrategyAndDirection |
 | `lifecycle_stage` | string | no | Design |
-| `definition` | string | no | The bounded enterprise context for **designing** the strategic choices, alternatives, objectives, and scenarios of the e |
+| `definition` | string | no | The bounded enterprise context for **designing** the strategic choices, alternatives, objectives, and scenarios of the … |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[4] | no | array of 4 item(s) |
 | `adjacent_contexts` | array[4] | no | array of 4 item(s) |
 | `processes` | array[4] | no | array of 4 item(s) |
-| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
+| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions … |
 | `status` | string | no | candidate |
 | `established_by` | string | no | CR-BP-21a |
 | `established_at` | string | no | 2026-09-07 |
@@ -177,7 +177,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `processes` | `processes:process-sd-design-vdwkmh` | 1 |
 | `processes` | `processes:process-sd-design-uenzna` | 1 |
 
-## 6. Operational, Control and Metrics Details
+## 7. Operational, Control and Metrics Details
 
 **Inputs, Outputs and Interfaces**: _(pending; backfill at EXT-04)_
 
@@ -189,7 +189,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 
 _(Pending EXT-04)_
 
-## 7. Technical Metadata
+## 8. Technical Metadata
 
 - **Source YAML**: record YAML in the same directory as this README
 - **Record version**: 1.0.0

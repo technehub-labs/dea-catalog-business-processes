@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-ge-im
 
 **Name**: Governance Review and Learning
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,15 +13,15 @@ This directory hosts the canonical ProcessContext record for `processes:pc-ge-im
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Governance Review and Learning | **Canonical ID** | `processes:pc-ge-improve-c78ppp` |
 
-## 1. Executive Summary / Intent
+## 2. Executive Summary / Intent
 
 Reviewing governance effectiveness, scoring audit findings, and feeding lessons back into Conceive/Design/Build/Operate cycles.
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 (governance and provenance to be backfilled at EXT-04)
 
-## 3. Behavioral Boundaries (Cell Charter)
+## 4. Behavioral Boundaries (Cell Charter)
 
 | Scope Type | Description |
 | :--- | :--- |
@@ -29,7 +29,7 @@ Reviewing governance effectiveness, scoring audit findings, and feeding lessons 
 | Out of Scope (exclusions) | - Governance operation (Operate stage)<br>- Strategy framing (Conceive stage)<br>- Governance system design (Design stage) |
 | Adjacent Cells | - processes:pc-ge-conceive-b5xwpd (Conceive): insights shape strategy framing.<br>- processes:pc-ge-design-3f2gjr (Design): insights sharpen governance design.<br>- processes:pc-ge-build-52hjrc (Build): insights reveal body and charter gaps.<br>- processes:pc-ge-operate-hb2dac (Operate): insights refine day-to-day governance operation. |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename).
 
@@ -119,7 +119,7 @@ ge-improve/
 _(Full L4 task lists for each L3 activity are available in their respective subdirectories.)_
 </details>
 
-## 5. Properties and Relationships
+## 6. Properties and Relationships
 
 **Properties**
 
@@ -127,12 +127,12 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | :--- | :--- | :--- | :--- |
 | `domain` | string | no | GovernanceAndExistence |
 | `lifecycle_stage` | string | no | Improve |
-| `definition` | string | no | The bounded enterprise context for **improving** the governance bodies, policy regimes, and oversight machinery in the * |
+| `definition` | string | no | The bounded enterprise context for **improving** the governance bodies, policy regimes, and oversight machinery in the … |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[3] | no | array of 3 item(s) |
 | `adjacent_contexts` | array[5] | no | array of 5 item(s) |
 | `processes` | array[3] | no | array of 3 item(s) |
-| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
+| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions … |
 | `status` | string | no | candidate |
 | `established_by` | string | no | CR-BP-13a |
 | `established_at` | string | no | 2026-09-05 |
@@ -147,7 +147,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `processes` | `processes:process-ge-improve-axtq3b` | 1 |
 | `processes` | `processes:process-ge-improve-u3g5dh` | 1 |
 
-## 6. Operational, Control and Metrics Details
+## 7. Operational, Control and Metrics Details
 
 **Inputs, Outputs and Interfaces**: _(pending; backfill at EXT-04)_
 
@@ -159,7 +159,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 
 _(Pending EXT-04)_
 
-## 7. Technical Metadata
+## 8. Technical Metadata
 
 - **Source YAML**: record YAML in the same directory as this README
 - **Record version**: 1.0.0

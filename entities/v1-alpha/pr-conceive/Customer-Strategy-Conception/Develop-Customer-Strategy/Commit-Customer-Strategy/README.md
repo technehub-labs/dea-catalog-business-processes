@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-pr-co
 
 **Name**: Commit Customer Strategy
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-pr-co
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Commit Customer Strategy | **Canonical ID** | `processes:activity-pr-conceive-kbwtdj` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Develop Customer Strategy that consolidates the segment thesis, value exchange, and demand thesis into the committed customer strategy document.
+**Intent and Definition**: The cohesive grouping of work within Develop Customer Strategy that consolidates the segment thesis, value exchange, and demand thesis into the committed customer strategy document.
 
-**Definition**: The cohesive grouping of work within Develop Customer Strategy that consolidates the segment thesis, value exchange, and demand thesis into the committed customer strategy document.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-pr-co
 | 2026-09-13 | `CR-BP-45` | Initial L3 Activity entry; lands as part of the CR-BP-45 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-commit-customer-strategy-intake, dea:task-commit-customer-strategy-verify, dea:task-commit-c | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Develop Customer Strategy that consolidates the segment thesis, value exchange, and |
+| `definition` | string | no | The cohesive grouping of work within Develop Customer Strategy that consolidates the segment thesis, value exchange … |
 | `belongs_to_business_process` | string | no | processes:process-pr-conceive-emfgju |
-| `cohesion_rationale` | string | no | Constituent work shares a single consolidation-and-commitment concern, one artifact (the customer strategy document), an |
+| `cohesion_rationale` | string | no | Constituent work shares a single consolidation-and-commitment concern, one artifact (the customer strategy document) … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-pr-co
 | `composes` | `processes:task-pr-conceive-confirm-43fbku` | 1 |
 | `composes` | `processes:task-pr-conceive-record-y2vche` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-pr-co
 - **Cohesion rationale**: Constituent work shares a single consolidation-and-commitment concern, one artifact (the customer strategy document), and a common terminus (governance commitment). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

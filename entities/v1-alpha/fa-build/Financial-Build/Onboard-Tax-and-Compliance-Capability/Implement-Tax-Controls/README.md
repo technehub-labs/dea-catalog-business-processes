@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 
 **Name**: Implement Tax Controls
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Implement Tax Controls | **Canonical ID** | `processes:activity-fa-build-5h2xk4` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Onboard Tax and Compliance Capability that implements the tax controls the documented positions and strategy require.
+**Intent and Definition**: The cohesive grouping of work within Onboard Tax and Compliance Capability that implements the tax controls the documented positions and strategy require.
 
-**Definition**: The cohesive grouping of work within Onboard Tax and Compliance Capability that implements the tax controls the documented positions and strategy require.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 | 2026-09-13 | `CR-BP-52` | Initial L3 Activity entry; lands as part of the CR-BP-52 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-implement-tax-controls-intake, dea:task-implement-tax-controls-verify, dea:task-implement-ta | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Onboard Tax and Compliance Capability that implements the tax controls the document |
+| `definition` | string | no | The cohesive grouping of work within Onboard Tax and Compliance Capability that implements the tax controls the … |
 | `belongs_to_business_process` | string | no | processes:process-fa-build-ucfjgt |
-| `cohesion_rationale` | string | no | Constituent work shares a single control concern (position to operating control), one reference class (the documented ta |
+| `cohesion_rationale` | string | no | Constituent work shares a single control concern (position to operating control), one reference class (the documented … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 | `composes` | `processes:task-fa-build-confirm-83x34x` | 1 |
 | `composes` | `processes:task-fa-build-record-g32c2w` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 - **Cohesion rationale**: Constituent work shares a single control concern (position to operating control), one reference class (the documented tax positions), and one output (implemented tax controls). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

@@ -1,7 +1,7 @@
 id: processes:task-pv-build-transform-7zs6q7
 type: Task
 name: Stand Up Service Delivery Mechanism Processing
-definition: 'The bounded unit of work within `dea:activity-stand-up-service-delivery-mechanism` (Stand Up Service Delivery Mechanism) that carries out the transform phase of the parent''s verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
+definition: 'The bounded unit of work within `processes:activity-pv-build-qf7sxu` (Stand Up Service Delivery Mechanism) that carries out the transform phase of the parent''s verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
 belongs_to_activity: processes:activity-pv-build-qf7sxu
 trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin.
 outcome: Output produced in the specified form per parent Activity's definition; intermediate artifacts preserved for audit.

@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 
 **Name**: Align Competency Framework To Continuing-Supervision
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Align Competency Framework To Continuing-Supervision | **Canonical ID** | `processes:activity-ao-design-wnqz3k` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Design Regulated Role Architecture that Align the competency framework entries for each regulator-licensed role to the regulator continuing-supervision framework: the competency statements, the assessment cadence, the assessor (employer / regulator), and the alignment to the regulator continuing-competence program. Shared concern: competency-framework alignment. Input: the regulator-tied role catalogue; the competency framework skeleton. Output: the aligned competency framework entries.
+**Intent and Definition**: The cohesive grouping of work within Design Regulated Role Architecture that Align the competency framework entries for each regulator-licensed role to the regulator continuing-supervision framework: the competency statements, the assessment cadence, the assessor (employer / regulator), and the alignment to the regulator continuing-competence program. Shared concern: competency-framework alignment. Input: the regulator-tied role catalogue; the competency framework skeleton. Output: the aligned competency framework entries.
 
-**Definition**: The cohesive grouping of work within Design Regulated Role Architecture that Align the competency framework entries for each regulator-licensed role to the regulator continuing-supervision framework: the competency statements, the assessment cadence, the assessor (employer / regulator), and the alignment to the regulator continuing-competence program. Shared concern: competency-framework alignment. Input: the regulator-tied role catalogue; the competency framework skeleton. Output: the aligned competency framework entries.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -35,16 +33,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-design-63kg3s, processes:task-ao-design-wwgwx5, processes:task-ao-design-6vpsn7, pr | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-design-intake-z2b5u6, processes:task-ao-design-verify-rcwfmv, processes:task-ao-des | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Design Regulated Role Architecture that Align the competency framework entries for  |
+| `definition` | string | no | The cohesive grouping of work within Design Regulated Role Architecture that Align the competency framework entries for … |
 | `belongs_to_business_process` | string | no | processes:process-ao-design-2fkvhx |
-| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single align competency framew |
+| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single align competency … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -58,7 +56,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 | `composes` | `processes:task-ao-design-confirm-kzcxkj` | 1 |
 | `composes` | `processes:task-ao-design-record-uj2gvu` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -66,7 +64,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 - **Cohesion rationale**: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single align competency framework to continuing-supervision concern, one input class, and one output (the align competency framework to continuing-supervision record on the regulated personnel record).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

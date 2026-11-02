@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 
 **Name**: Prioritize Capability Gaps
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Prioritize Capability Gaps | **Canonical ID** | `processes:activity-ao-improve-rk3g4q` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Conduct Capability Gap Analysis that prioritizes the identified gaps by impact on the organization structure and direction.
+**Intent and Definition**: The cohesive grouping of work within Conduct Capability Gap Analysis that prioritizes the identified gaps by impact on the organization structure and direction.
 
-**Definition**: The cohesive grouping of work within Conduct Capability Gap Analysis that prioritizes the identified gaps by impact on the organization structure and direction.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 | 2026-09-14 | `CR-BP-57` | Initial L3 Activity entry; lands as part of the CR-BP-57 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-prioritize-capability-gaps-intake, dea:task-prioritize-capability-gaps-verify, dea:task-prio | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Conduct Capability Gap Analysis that prioritizes the identified gaps by impact on t |
+| `definition` | string | no | The cohesive grouping of work within Conduct Capability Gap Analysis that prioritizes the identified gaps by impact on … |
 | `belongs_to_business_process` | string | no | processes:process-ao-improve-h3vgyf |
-| `cohesion_rationale` | string | no | Constituent work shares a single prioritization concern (identified gaps ranked by structural and directional impact), o |
+| `cohesion_rationale` | string | no | Constituent work shares a single prioritization concern (identified gaps ranked by structural and directional impact) … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 | `composes` | `processes:task-ao-improve-confirm-ptdn5s` | 1 |
 | `composes` | `processes:task-ao-improve-record-qznyq8` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 - **Cohesion rationale**: Constituent work shares a single prioritization concern (identified gaps ranked by structural and directional impact), one input class (the identified capability gaps), and one output (the prioritized capability gaps). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

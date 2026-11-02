@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-ge-build-conf
 
 **Name**: Establish Operating Cycles Confirmation
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-ge-build-conf
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Establish Operating Cycles Confirmation | **Canonical ID** | `processes:task-ge-build-confirm-52he6v` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-ge-build-5cjpnx` (Establish Operating Cycles) that reconcile the build-ready apparatus inventory against the governance-framework contract and the committee-charter completeness rules, issue the apparatus-completion confirmation to the governance custodian, and log the confirmation.
+**Intent and Definition**: The bounded unit of work within `processes:activity-ge-build-5cjpnx` (Establish Operating Cycles) that reconcile the build-ready apparatus inventory against the governance-framework contract and the committee-charter completeness rules, issue the apparatus-completion confirmation to the governance custodian, and log the confirmation.
 
-**Definition**: The bounded unit of work within `processes:activity-ge-build-5cjpnx` (Establish Operating Cycles) that reconcile the build-ready apparatus inventory against the governance-framework contract and the committee-charter completeness rules, issue the apparatus-completion confirmation to the governance custodian, and log the confirmation.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Task record for `processes:task-ge-build-conf
 | 2026-09-13 | `CR-BP-48` | Initial L3 Activity entry; lands as part of the CR-BP-48 | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-ge-build-5cjpnx` (Establish Operating Cycles) that reconcile the bui |
+| `definition` | string | no | The bounded unit of work within `processes:activity-ge-build-5cjpnx` (Establish Operating Cycles) that reconcile the … |
 | `belongs_to_activity` | string | no | processes:activity-ge-build-5cjpnx |
-| `trigger` | string | no | Bounded-work artefact produced for Establish Operating Cycles; confirm gate may reconcile against the governing contract |
-| `outcome` | string | no | Completion confirmation issued for Establish Operating Cycles and acknowledged by the governance custodian and any gover |
+| `trigger` | string | no | Bounded-work artefact produced for Establish Operating Cycles; confirm gate may reconcile against the governing … |
+| `outcome` | string | no | Completion confirmation issued for Establish Operating Cycles and acknowledged by the governance custodian and any … |
 | `responsibility` | string | no | confirmation custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-ge-build-conf
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-im
 
 **Name**: Route Findings to Evolution Tracks
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-pv-im
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Route Findings to Evolution Tracks | **Canonical ID** | `processes:activity-pv-improve-eyn4d4` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Conduct Proposition Performance Review that routes formed findings to the evolution and rationalization tracks that will act on them.
+**Intent and Definition**: The cohesive grouping of work within Conduct Proposition Performance Review that routes formed findings to the evolution and rationalization tracks that will act on them.
 
-**Definition**: The cohesive grouping of work within Conduct Proposition Performance Review that routes formed findings to the evolution and rationalization tracks that will act on them.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-pv-im
 | 2026-09-13 | `CR-BP-51` | Initial L3 Activity entry; lands as part of the CR-BP-51 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-route-findings-to-evolution-tracks-intake, dea:task-route-findings-to-evolution-tracks-verif | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Conduct Proposition Performance Review that routes formed findings to the evolution |
+| `definition` | string | no | The cohesive grouping of work within Conduct Proposition Performance Review that routes formed findings to the … |
 | `belongs_to_business_process` | string | no | processes:process-pv-improve-27r7r7 |
-| `cohesion_rationale` | string | no | Constituent work shares a single routing concern (finding to acting track), one reference class (the finding set), and o |
+| `cohesion_rationale` | string | no | Constituent work shares a single routing concern (finding to acting track), one reference class (the finding set), and … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-im
 | `composes` | `processes:task-pv-improve-confirm-jwrctt` | 1 |
 | `composes` | `processes:task-pv-improve-record-pa46hc` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-im
 - **Cohesion rationale**: Constituent work shares a single routing concern (finding to acting track), one reference class (the finding set), and one output (routed findings with owners). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

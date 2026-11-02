@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pv-bu
 
 **Name**: Product Development and Market Readiness Build
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,15 +13,15 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pv-bu
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Product Development and Market Readiness Build | **Canonical ID** | `processes:pc-pv-build-ygbmxb` |
 
-## 1. Executive Summary / Intent
+## 2. Executive Summary / Intent
 
 The constructive work of developing product variants, building service capability, building innovation prototypes, and preparing market readiness.
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 (governance and provenance to be backfilled at EXT-04)
 
-## 3. Behavioral Boundaries (Cell Charter)
+## 4. Behavioral Boundaries (Cell Charter)
 
 | Scope Type | Description |
 | :--- | :--- |
@@ -29,7 +29,7 @@ The constructive work of developing product variants, building service capabilit
 | Out of Scope (exclusions) | - Proposition design (Design stage; adjacent context)<br>- Technology platform build (enablement-operations x build; adjacent domain)<br>- Operational delivery build (enablement-operations x build; adjacent domain) |
 | Adjacent Cells | - processes:pc-pv-conceive-fe9awk (adjacent context): proposition flow between Build and the adjacent cell.<br>- processes:pc-pv-design-8dhwpn (adjacent context): proposition flow between Build and the adjacent cell.<br>- processes:pc-pv-operate-ewpwjc (adjacent context): proposition flow between Build and the adjacent cell.<br>- processes:pc-pv-improve-wpyfx7 (adjacent context): proposition flow between Build and the adjacent cell. |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename).
 
@@ -144,7 +144,7 @@ pv-build/
 _(Full L4 task lists for each L3 activity are available in their respective subdirectories.)_
 </details>
 
-## 5. Properties and Relationships
+## 6. Properties and Relationships
 
 **Properties**
 
@@ -152,12 +152,12 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | :--- | :--- | :--- | :--- |
 | `domain` | string | no | ProductAndValue |
 | `lifecycle_stage` | string | no | Build |
-| `definition` | string | no | The bounded enterprise context for **building** the products, prototypes, and market readiness of the enterprise in the  |
+| `definition` | string | no | The bounded enterprise context for **building** the products, prototypes, and market readiness of the enterprise in the … |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[4] | no | array of 4 item(s) |
 | `adjacent_contexts` | array[4] | no | array of 4 item(s) |
 | `processes` | array[4] | no | array of 4 item(s) |
-| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
+| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions … |
 | `status` | string | no | candidate |
 | `established_by` | string | no | CR-BP-21c |
 | `established_at` | string | no | 2026-09-08 |
@@ -173,7 +173,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `processes` | `processes:process-pv-build-8jc3y4` | 1 |
 | `processes` | `processes:process-pv-build-6hjzmk` | 1 |
 
-## 6. Operational, Control and Metrics Details
+## 7. Operational, Control and Metrics Details
 
 **Inputs, Outputs and Interfaces**: _(pending; backfill at EXT-04)_
 
@@ -185,7 +185,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 
 _(Pending EXT-04)_
 
-## 7. Technical Metadata
+## 8. Technical Metadata
 
 - **Source YAML**: record YAML in the same directory as this README
 - **Record version**: 1.0.0

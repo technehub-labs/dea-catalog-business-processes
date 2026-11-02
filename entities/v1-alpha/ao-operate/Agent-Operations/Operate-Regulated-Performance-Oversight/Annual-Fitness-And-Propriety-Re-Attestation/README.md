@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 **Name**: Annual Fitness-And-Propriety Re-Attestation
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Annual Fitness-And-Propriety Re-Attestation | **Canonical ID** | `processes:activity-ao-operate-j8k5p7` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Operate Regulated Performance Oversight that Run the annual fitness-and-propriety re-attestation for each regulator-licensed role: SMCR FIT annual assessment under SYSC 25; state healthcare annual fitness; bar MCLE annual fitness; NAIC annual CE; FAA recurrent. Shared concern: annual fitness re-attestation. Input: the live role list; the annual attestation calendar. Output: the annual fitness re-attestation record.
+**Intent and Definition**: The cohesive grouping of work within Operate Regulated Performance Oversight that Run the annual fitness-and-propriety re-attestation for each regulator-licensed role: SMCR FIT annual assessment under SYSC 25; state healthcare annual fitness; bar MCLE annual fitness; NAIC annual CE; FAA recurrent. Shared concern: annual fitness re-attestation. Input: the live role list; the annual attestation calendar. Output: the annual fitness re-attestation record.
 
-**Definition**: The cohesive grouping of work within Operate Regulated Performance Oversight that Run the annual fitness-and-propriety re-attestation for each regulator-licensed role: SMCR FIT annual assessment under SYSC 25; state healthcare annual fitness; bar MCLE annual fitness; NAIC annual CE; FAA recurrent. Shared concern: annual fitness re-attestation. Input: the live role list; the annual attestation calendar. Output: the annual fitness re-attestation record.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -35,16 +33,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-operate-hkqt2z, processes:task-ao-operate-fspxcr, processes:task-ao-operate-knjg75, | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-operate-intake-kkf6y8, processes:task-ao-operate-verify-4uvtzn, processes:task-ao-o | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Operate Regulated Performance Oversight that Run the annual fitness-and-propriety r |
+| `definition` | string | no | The cohesive grouping of work within Operate Regulated Performance Oversight that Run the annual fitness-and-propriety … |
 | `belongs_to_business_process` | string | no | processes:process-ao-operate-ba8scr |
-| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single annual fitness-and-prop |
+| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single annual … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -58,7 +56,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 | `composes` | `processes:task-ao-operate-confirm-w5e9nz` | 1 |
 | `composes` | `processes:task-ao-operate-record-dgbssv` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -66,7 +64,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 - **Cohesion rationale**: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single annual fitness-and-propriety re-attestation concern, one input class, and one output (the annual fitness-and-propriety re-attestation record on the regulated personnel record).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

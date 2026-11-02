@@ -4,7 +4,7 @@ This directory hosts the canonical Process record for `processes:process-ao-desi
 
 **Name**: Design Regulated Role Architecture
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,13 @@ This directory hosts the canonical Process record for `processes:process-ao-desi
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Design Regulated Role Architecture | **Canonical ID** | `processes:process-ao-design-2fkvhx` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
 **Intent**: manage
 
 **Definition**: (definition pending; backfill at EXT-04)
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -30,7 +30,7 @@ This directory hosts the canonical Process record for `processes:process-ao-desi
 | 2026-10-12 | `CR-BP-111` | L3 decomposition tranche (CR-BP-111): added metadata.activity_references back-references to the 4 Activity records decomposing this BP. Version unchanged per SIV-004 (additive metadata-only). Activiti | System |
 | 2026-10-27 | `CR-BP-GS-1` | Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Agency & Organization Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -42,9 +42,9 @@ This directory hosts the canonical Process record for `processes:process-ao-desi
 | `process_classification` | object | no | object: type, provenance, status |
 | `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
-| `description` | string | no | Design the regulator-tied role catalogue and competency framework entries under the enterprise regulated-entity approval |
-| `trigger` | string | no | The enterprise's role catalogue and competency framework include roles whose holders must hold regulator-issued licences |
-| `outcome` | string | no | The role catalogue carries regulator-tied role entries; each licensed-role entry is aligned to its regulator's continuin |
+| `description` | string | no | Design the regulator-tied role catalogue and competency framework entries under the enterprise regulated-entity … |
+| `trigger` | string | no | The enterprise's role catalogue and competency framework include roles whose holders must hold regulator-issued … |
+| `outcome` | string | no | The role catalogue carries regulator-tied role entries; each licensed-role entry is aligned to its regulator's … |
 | `identity` | object | no | object: verb, object, scope, outcome_statement, evidence_links |
 | `context` | array[1] | no | array of 1 item(s) |
 | `relationships` | array[1] | no | array of 1 item(s) |
@@ -55,7 +55,7 @@ This directory hosts the canonical Process record for `processes:process-ao-desi
 | `outputs` | array[2] | no | array of 2 item(s) |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -67,7 +67,7 @@ This directory hosts the canonical Process record for `processes:process-ao-desi
   - `processes:activity-ao-design-v8r5n2`
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

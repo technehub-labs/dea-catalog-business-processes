@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-in
 
 **Name**: Run Regulator-Mandated Recurrent Training Intake
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-in
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Run Regulator-Mandated Recurrent Training Intake | **Canonical ID** | `processes:task-ao-improve-intake-hhw7w9` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-ao-improve-x7m4n2` (Run Regulator-Mandated Recurrent Training) that carries out the intake phase of the parent's verb-object decomposition. Phase responsibility: designated intake custodian. Phase trigger: Parent Activity's input class is presented for processing and the activity owner is notified of intake. Phase outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.
+**Intent and Definition**: The bounded unit of work within `processes:activity-ao-improve-x7m4n2` (Run Regulator-Mandated Recurrent Training) that carries out the intake phase of the parent's verb-object decomposition. Phase responsibility: designated intake custodian. Phase trigger: Parent Activity's input class is presented for processing and the activity owner is notified of intake. Phase outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.
 
-**Definition**: The bounded unit of work within `processes:activity-ao-improve-x7m4n2` (Run Regulator-Mandated Recurrent Training) that carries out the intake phase of the parent's verb-object decomposition. Phase responsibility: designated intake custodian. Phase trigger: Parent Activity's input class is presented for processing and the activity owner is notified of intake. Phase outcome: Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -35,13 +33,13 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-in
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-improve-84rmv4, processes:task-ao-improve-wzjpue, processes:task-ao-improve-ufpv8q, | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-ao-improve-x7m4n2` (Run Regulator-Mandated Recurrent Training) that  |
+| `definition` | string | no | The bounded unit of work within `processes:activity-ao-improve-x7m4n2` (Run Regulator-Mandated Recurrent Training) that … |
 | `belongs_to_activity` | string | no | processes:activity-ao-improve-x7m4n2 |
 | `trigger` | string | no | Parent Activity's input class is presented for processing and the activity owner is notified of intake. |
 | `outcome` | string | no | Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed. |
@@ -52,11 +50,11 @@ This directory hosts the canonical Task record for `processes:task-ao-improve-in
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

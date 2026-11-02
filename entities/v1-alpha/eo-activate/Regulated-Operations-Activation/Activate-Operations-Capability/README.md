@@ -4,7 +4,7 @@ This directory hosts the canonical Process record for `processes:process-eo-acti
 
 **Name**: Activate Operations Capability
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,13 @@ This directory hosts the canonical Process record for `processes:process-eo-acti
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Activate Operations Capability | **Canonical ID** | `processes:process-eo-activate-sy5qsa` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
 **Intent**: manage
 
 **Definition**: (definition pending; backfill at EXT-04)
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -30,7 +30,7 @@ This directory hosts the canonical Process record for `processes:process-eo-acti
 | 2026-09-17 | `CR-BP-87` | L3 decomposition tranche (CR-BP-87): added metadata.activity_references | System |
 | 2026-10-27 | `CR-BP-GS-1` | Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Enablement & Operations Process Owner); actors/stakeholders derived from the parent cell charter vocabulary und | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -41,9 +41,9 @@ This directory hosts the canonical Process record for `processes:process-eo-acti
 | `process_type` | string | no | management |
 | `process_classification` | object | no | object: type, provenance, status |
 | `owner` | object | no | object: value, status, provenance, review_due, decision_right |
-| `trigger` | string | no | An operations capability requires formal regulator-issued authorization or certification before it may enter live servic |
-| `outcome` | string | no | The operations capability is formally activated with the regulator's authorization on record, operations manuals and run |
-| `description` | string | no | Activate an operations capability under the enterprise's regulated-entity approval authority within the dea:pc-oe-activa |
+| `trigger` | string | no | An operations capability requires formal regulator-issued authorization or certification before it may enter live … |
+| `outcome` | string | no | The operations capability is formally activated with the regulator's authorization on record, operations manuals and … |
+| `description` | string | no | Activate an operations capability under the enterprise's regulated-entity approval authority within the … |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `process_identity` | object | no | object: boundary_face, identity_kind, is_process, is_project |
 | `process_scope` | object | no | object: includes, excludes |
@@ -58,7 +58,7 @@ This directory hosts the canonical Process record for `processes:process-eo-acti
 | `outputs` | array[1] | no | array of 1 item(s) |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -70,7 +70,7 @@ This directory hosts the canonical Process record for `processes:process-eo-acti
   - `processes:activity-eo-activate-h2dqvk`
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Includes**:
 - Regulator-issued authorization or certification acquisition and recording (EASA / FAA AOC; PSD2 / ECB / PRA payment-institution authorization; EMA / FDA / MHRA GMP; FAA Part 119; MiCA Article 59; ORR / ERA rail safety case; nuclear operations authorization; payments-issuer authorization under PSD2 Article 11)

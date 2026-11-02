@@ -4,7 +4,7 @@ This directory hosts the canonical Process record for `processes:process-ao-conc
 
 **Name**: Conceive Workforce and Agent Mix
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,13 @@ This directory hosts the canonical Process record for `processes:process-ao-conc
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Conceive Workforce and Agent Mix | **Canonical ID** | `processes:process-ao-conceive-z6m6p5` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
 **Intent**: develop
 
 **Definition**: (definition pending; backfill at EXT-04)
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -31,7 +31,7 @@ This directory hosts the canonical Process record for `processes:process-ao-conc
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 | 2026-10-27 | `CR-BP-GS-1` | Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Agency & Organization Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -43,8 +43,8 @@ This directory hosts the canonical Process record for `processes:process-ao-conc
 | `process_classification` | object | no | object: type, provenance, status |
 | `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
-| `description` | string | no | Operate the Conceive Workforce and Agent Mix L2 process within the dea:pc-ao-conceive Cell Charter. See trigger and outc |
-| `trigger` | string | no | A workforce and agent mix conception is needed because the committed organization and agent strategy requires bounded su |
+| `description` | string | no | Operate the Conceive Workforce and Agent Mix L2 process within the processes:pc-ao-conceive-wtq4cr Cell Charter. See … |
+| `trigger` | string | no | A workforce and agent mix conception is needed because the committed organization and agent strategy requires bounded … |
 | `outcome` | string | no | The workforce and agent mix is conceived with substrate proportions and capacity envelopes. |
 | `identity` | object | no | object: verb, object, scope, outcome_statement, evidence_links |
 | `relationships` | array[1] | no | array of 1 item(s) |
@@ -57,7 +57,7 @@ This directory hosts the canonical Process record for `processes:process-ao-conc
 | `outputs` | array[1] | no | array of 1 item(s) |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -69,7 +69,7 @@ This directory hosts the canonical Process record for `processes:process-ao-conc
   - `processes:activity-ao-conceive-njcgbs`
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-re
 
 **Name**: Compute Statutory Liabilities
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-re
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Compute Statutory Liabilities | **Canonical ID** | `processes:activity-ao-retire-sqdecn` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Conduct Regulated Workforce Wind-Down that calculates the statutory notice pay, severance, and benefits continuation entitlements of each affected employee and reserves or funds the total liability for settlement on the severance date.
+**Intent and Definition**: The cohesive grouping of work within Conduct Regulated Workforce Wind-Down that calculates the statutory notice pay, severance, and benefits continuation entitlements of each affected employee and reserves or funds the total liability for settlement on the severance date.
 
-**Definition**: The cohesive grouping of work within Conduct Regulated Workforce Wind-Down that calculates the statutory notice pay, severance, and benefits continuation entitlements of each affected employee and reserves or funds the total liability for settlement on the severance date.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-re
 | 2026-09-16 | `CR-BP-77` | Initial L3 Activity entry; lands as part of the CR-BP-77 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-compute-statutory-liabilities-intake, dea:task-compute-statutory-liabilities-verify, dea:tas | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Conduct Regulated Workforce Wind-Down that calculates the statutory notice pay, sev |
+| `definition` | string | no | The cohesive grouping of work within Conduct Regulated Workforce Wind-Down that calculates the statutory notice pay … |
 | `belongs_to_business_process` | string | no | processes:process-ao-retire-g3eyr8 |
-| `cohesion_rationale` | string | no | Constituent work shares a single statutory liability computation concern, one input class (each affected employee's tenu |
+| `cohesion_rationale` | string | no | Constituent work shares a single statutory liability computation concern, one input class (each affected employee's … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-re
 | `composes` | `processes:task-ao-retire-confirm-jh4ycx` | 1 |
 | `composes` | `processes:task-ao-retire-record-tr3ssq` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-re
 - **Cohesion rationale**: Constituent work shares a single statutory liability computation concern, one input class (each affected employee's tenure, compensation, classification, and the controlling statute), and one output (the per-employee entitlement schedule and the funded liability amount). Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

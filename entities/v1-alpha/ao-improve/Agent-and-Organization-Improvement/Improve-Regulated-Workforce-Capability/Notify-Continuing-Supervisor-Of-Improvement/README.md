@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 
 **Name**: Notify Continuing Supervisor Of Improvement
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Notify Continuing Supervisor Of Improvement | **Canonical ID** | `processes:activity-ao-improve-uudtp5` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Improve Regulated Workforce Capability that Notify the continuing supervisor of each regulator-licensed role of the recorded improvement: the recurrent training completion, the fit-and-proper re-assessment, the remediation completion, and the regulator continuing-supervision framework status. Shared concern: supervisor notification of improvement. Input: the improvement record; the supervisor notification path. Output: the supervisor notification record.
+**Intent and Definition**: The cohesive grouping of work within Improve Regulated Workforce Capability that Notify the continuing supervisor of each regulator-licensed role of the recorded improvement: the recurrent training completion, the fit-and-proper re-assessment, the remediation completion, and the regulator continuing-supervision framework status. Shared concern: supervisor notification of improvement. Input: the improvement record; the supervisor notification path. Output: the supervisor notification record.
 
-**Definition**: The cohesive grouping of work within Improve Regulated Workforce Capability that Notify the continuing supervisor of each regulator-licensed role of the recorded improvement: the recurrent training completion, the fit-and-proper re-assessment, the remediation completion, and the regulator continuing-supervision framework status. Shared concern: supervisor notification of improvement. Input: the improvement record; the supervisor notification path. Output: the supervisor notification record.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -35,16 +33,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-improve-nzq5gy, processes:task-ao-improve-z6dgb2, processes:task-ao-improve-wwtvdx, | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-improve-intake-2p6kkf, processes:task-ao-improve-verify-w6tr5u, processes:task-ao-i | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Improve Regulated Workforce Capability that Notify the continuing supervisor of eac |
+| `definition` | string | no | The cohesive grouping of work within Improve Regulated Workforce Capability that Notify the continuing supervisor of … |
 | `belongs_to_business_process` | string | no | processes:process-ao-improve-qqxe4d |
-| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single notify continuing super |
+| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single notify continuing … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -58,7 +56,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 | `composes` | `processes:task-ao-improve-confirm-kjasgm` | 1 |
 | `composes` | `processes:task-ao-improve-record-t8tmaf` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -66,7 +64,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 - **Cohesion rationale**: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single notify continuing supervisor of improvement concern, one input class, and one output (the notify continuing supervisor of improvement record on the regulated personnel record).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

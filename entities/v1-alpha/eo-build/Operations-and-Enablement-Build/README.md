@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-eo-b
 
 **Name**: Operations and Enablement Build
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical ProcessGroup record for `processes:group-eo-b
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Operations and Enablement Build | **Canonical ID** | `processes:group-eo-build-7pur27` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organises the Business Process responsibilities of building production lines, delivery capability, logistics networks, technology assets, and facilities in the EnablementAndOperations x Build context. v2.4.0 grounding (domain-grounding.md §3.6).
+**Intent and Definition**: The bounded Process Group that organises the Business Process responsibilities of building production lines, delivery capability, logistics networks, technology assets, and facilities in the EnablementAndOperations x Build context. v2.4.0 grounding (domain-grounding.md §3.6).
 
-**Definition**: The bounded Process Group that organises the Business Process responsibilities of building production lines, delivery capability, logistics networks, technology assets, and facilities in the EnablementAndOperations x Build context. v2.4.0 grounding (domain-grounding.md §3.6).
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,13 +27,13 @@ This directory hosts the canonical ProcessGroup record for `processes:group-eo-b
 | 2026-09-08 | `CR-BP-21d.1` | Initial Process Group record; promoted from the CR-BP-19 register | System |
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded Process Group that organises the Business Process responsibilities of building production lines, delivery ca |
+| `definition` | string | no | The bounded Process Group that organises the Business Process responsibilities of building production lines, delivery … |
 | `process_context` | string | no | processes:pc-eo-build-zwkhxc |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[3] | no | array of 3 item(s) |
@@ -57,11 +55,11 @@ This directory hosts the canonical ProcessGroup record for `processes:group-eo-b
 | `composes` | `processes:process-eo-build-nmmmt6` | 1 |
 | `composes` | `processes:process-eo-build-tqybhd` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

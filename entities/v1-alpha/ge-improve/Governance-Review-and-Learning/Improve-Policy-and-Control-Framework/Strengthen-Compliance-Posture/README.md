@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ge-im
 
 **Name**: Strengthen Compliance Posture
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ge-im
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Strengthen Compliance Posture | **Canonical ID** | `processes:activity-ge-improve-n9jd2z` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Improve Policy and Control Framework that strengthens the compliance posture in light of updated standards and measured gaps.
+**Intent and Definition**: The cohesive grouping of work within Improve Policy and Control Framework that strengthens the compliance posture in light of updated standards and measured gaps.
 
-**Definition**: The cohesive grouping of work within Improve Policy and Control Framework that strengthens the compliance posture in light of updated standards and measured gaps.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-ge-im
 | 2026-09-13 | `CR-BP-49` | Initial L3 Activity entry; lands as part of the CR-BP-49 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-strengthen-compliance-posture-intake, dea:task-strengthen-compliance-posture-verify, dea:tas | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Improve Policy and Control Framework that strengthens the compliance posture in lig |
+| `definition` | string | no | The cohesive grouping of work within Improve Policy and Control Framework that strengthens the compliance posture in … |
 | `belongs_to_business_process` | string | no | processes:process-ge-improve-u3g5dh |
-| `cohesion_rationale` | string | no | Constituent work shares a single posture concern (updated standards to stronger compliance), one input class (updated st |
+| `cohesion_rationale` | string | no | Constituent work shares a single posture concern (updated standards to stronger compliance), one input class (updated … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-ge-im
 | `composes` | `processes:task-ge-improve-confirm-wpsu74` | 1 |
 | `composes` | `processes:task-ge-improve-record-9q4p6u` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-ge-im
 - **Cohesion rationale**: Constituent work shares a single posture concern (updated standards to stronger compliance), one input class (updated standards, compliance regime design), and one output (the strengthened posture). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

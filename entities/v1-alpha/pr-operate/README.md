@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pr-op
 
 **Name**: Customer Relationship Operations
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,13 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pr-op
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Customer Relationship Operations | **Canonical ID** | `processes:pc-pr-operate-pwue5a` |
 
-## 1. Executive Summary / Intent
+## 2. Executive Summary / Intent
 
 The day-to-day operation of an active customer
 relationship: ongoing management, escalation handling,
 renewal coordination, and portfolio allocation.
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -28,7 +28,7 @@ renewal coordination, and portfolio allocation.
 | :--- | :--- | :--- | :--- |
 | 2026-09-03 | `CR-BP-03C` | Initial cell charter as part of the CR-BP-03C | System |
 
-## 3. Behavioral Boundaries (Cell Charter)
+## 4. Behavioral Boundaries (Cell Charter)
 
 | Scope Type | Description |
 | :--- | :--- |
@@ -36,7 +36,7 @@ renewal coordination, and portfolio allocation.
 | Out of Scope (exclusions) | - New customer acquisition (Conceive)<br>- Onboarding implementation (Build)<br>- Customer support tickets (Support Staff BP) |
 | Adjacent Cells | - processes:pc-pr-conceive-6xztsq (Conceive): the prior lifecycle stage; transition from new customer to active customer.<br>- processes:pc-pr-design-hrcdy4 (Design): the design context; may inform renewal design.<br>- processes:pc-pr-build-a46hp7 (Build): the build context; may inform onboarding handoff to Operate.<br>- processes:pc-pr-activate-mwq7bj (Activate): the activate context; transition into active operation. |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename).
 
@@ -76,7 +76,7 @@ pr-operate/
 _(Full L4 task lists for each L3 activity are available in their respective subdirectories.)_
 </details>
 
-## 5. Properties and Relationships
+## 6. Properties and Relationships
 
 **Properties**
 
@@ -89,7 +89,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `outcomes` | array[4] | no | array of 4 item(s) |
 | `adjacent_contexts` | array[4] | no | array of 4 item(s) |
 | `processes` | array[1] | no | array of 1 item(s) |
-| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
+| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions … |
 | `status` | string | no | defined |
 
 **Relationships**
@@ -98,7 +98,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | :--- | :--- | :--- |
 | `processes` | `processes:process-pr-operate-bbe384` | 1 |
 
-## 6. Operational, Control and Metrics Details
+## 7. Operational, Control and Metrics Details
 
 **Inputs, Outputs and Interfaces**: _(pending; backfill at EXT-04)_
 
@@ -110,7 +110,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 
 _(Pending EXT-04)_
 
-## 7. Technical Metadata
+## 8. Technical Metadata
 
 - **Source YAML**: record YAML in the same directory as this README
 - **Record version**: 1.0.0

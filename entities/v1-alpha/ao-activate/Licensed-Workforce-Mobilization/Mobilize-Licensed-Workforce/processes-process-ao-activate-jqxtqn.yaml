@@ -26,7 +26,7 @@ owner:
   decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
 description: Mobilize a licensed or regulated workforce under the enterprise regulated-entity approval
-  authority within the dea:pc-ao-activate Cell Charter. The trigger is the enterprise regulated-entity
+  authority within the processes:pc-ao-activate-kusw2u Cell Charter. The trigger is the enterprise regulated-entity
   approval for a licensed role; the outcome is the live-readiness activation of the licensed role with
   the supervisor-controlled scope preserved (signing authority or controlled-function designation), fitness-and-propriety
   attestation recorded, supervised-training completion preserved, and continuing-supervisor notification
@@ -188,7 +188,7 @@ inputs:
   name: 'Mobilize Licensed Workforce: working inputs (information)'
   description: 'Derived from the record''s documented description and trigger: the process Mobilize a
     licensed or regulated workforce under the enterprise regulated-entity approval authority within the
-    dea:pc-ao-activate Cell Charter. The tr'
+    processes:pc-ao-activate-kusw2u Cell Charter. The tr'
   source: Record documented content (description + trigger fields)
   mandatory: true
 outputs:

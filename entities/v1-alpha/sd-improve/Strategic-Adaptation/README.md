@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-i
 
 **Name**: Strategic Adaptation
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-i
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Strategic Adaptation | **Canonical ID** | `processes:group-sd-improve-vdz4xp` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organises the Business Process responsibilities of adapting the strategic direction in the StrategyAndDirection x Improve context. This group covers the learning and adaptation work of adapting strategic direction, refreshing objectives and targets, and reviewing strategy effectiveness. v2.4.0 grounding (domain-grounding.md §3.2).
+**Intent and Definition**: The bounded Process Group that organises the Business Process responsibilities of adapting the strategic direction in the StrategyAndDirection x Improve context. This group covers the learning and adaptation work of adapting strategic direction, refreshing objectives and targets, and reviewing strategy effectiveness. v2.4.0 grounding (domain-grounding.md §3.2).
 
-**Definition**: The bounded Process Group that organises the Business Process responsibilities of adapting the strategic direction in the StrategyAndDirection x Improve context. This group covers the learning and adaptation work of adapting strategic direction, refreshing objectives and targets, and reviewing strategy effectiveness. v2.4.0 grounding (domain-grounding.md §3.2).
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,13 +27,13 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-i
 | 2026-09-08 | `CR-BP-21a.1` | Initial Process Group record; promoted from the CR-BP-19 register | System |
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded Process Group that organises the Business Process responsibilities of adapting the strategic direction in th |
+| `definition` | string | no | The bounded Process Group that organises the Business Process responsibilities of adapting the strategic direction in … |
 | `process_context` | string | no | processes:pc-sd-improve-ft9k5f |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[3] | no | array of 3 item(s) |
@@ -55,11 +53,11 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-i
 | `composes` | `processes:process-sd-improve-aqbrm7` | 1 |
 | `composes` | `processes:process-sd-improve-duwd64` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

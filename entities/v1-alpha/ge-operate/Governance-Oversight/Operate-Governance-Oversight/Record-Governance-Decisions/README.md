@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ge-op
 
 **Name**: Record Governance Decisions
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ge-op
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Record Governance Decisions | **Canonical ID** | `processes:activity-ge-operate-fch6f5` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Operate Governance Oversight that records the governance decisions made, maintaining the decision record of record.
+**Intent and Definition**: The cohesive grouping of work within Operate Governance Oversight that records the governance decisions made, maintaining the decision record of record.
 
-**Definition**: The cohesive grouping of work within Operate Governance Oversight that records the governance decisions made, maintaining the decision record of record.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-ge-op
 | 2026-09-13 | `CR-BP-49` | Initial L3 Activity entry; lands as part of the CR-BP-49 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-record-governance-decisions-intake, dea:task-record-governance-decisions-verify, dea:task-re | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Operate Governance Oversight that records the governance decisions made, maintainin |
+| `definition` | string | no | The cohesive grouping of work within Operate Governance Oversight that records the governance decisions made … |
 | `belongs_to_business_process` | string | no | processes:process-ge-operate-hs7wf3 |
-| `cohesion_rationale` | string | no | Constituent work shares a single recording concern (decision to durable record), one input class (made decisions), and o |
+| `cohesion_rationale` | string | no | Constituent work shares a single recording concern (decision to durable record), one input class (made decisions), and … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-ge-op
 | `composes` | `processes:task-ge-operate-confirm-w4n6nf` | 1 |
 | `composes` | `processes:task-ge-operate-record-bvdhyt` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-ge-op
 - **Cohesion rationale**: Constituent work shares a single recording concern (decision to durable record), one input class (made decisions), and one output (the decision record). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-pr-im
 
 **Name**: Assess Churn Risk
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-pr-im
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Assess Churn Risk | **Canonical ID** | `processes:activity-pr-improve-6atff5` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Operate Customer Retention Programs that evaluates feedback and behaviour signals to score churn risk across the active customer base.
+**Intent and Definition**: The cohesive grouping of work within Operate Customer Retention Programs that evaluates feedback and behaviour signals to score churn risk across the active customer base.
 
-**Definition**: The cohesive grouping of work within Operate Customer Retention Programs that evaluates feedback and behaviour signals to score churn risk across the active customer base.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-pr-im
 | 2026-09-13 | `CR-BP-44` | Initial L3 Activity entry; lands as part of the CR-BP-44 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-assess-churn-risk-intake, dea:task-assess-churn-risk-verify, dea:task-assess-churn-risk-tran | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Operate Customer Retention Programs that evaluates feedback and behaviour signals t |
+| `definition` | string | no | The cohesive grouping of work within Operate Customer Retention Programs that evaluates feedback and behaviour signals … |
 | `belongs_to_business_process` | string | no | processes:process-pr-improve-t6uvan |
-| `cohesion_rationale` | string | no | Constituent work shares a single assessment concern (signals to churn-risk score), one input class (feedback and behavio |
+| `cohesion_rationale` | string | no | Constituent work shares a single assessment concern (signals to churn-risk score), one input class (feedback and … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-pr-im
 | `composes` | `processes:task-pr-improve-confirm-82gaet` | 1 |
 | `composes` | `processes:task-pr-improve-record-btgbbm` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-pr-im
 - **Cohesion rationale**: Constituent work shares a single assessment concern (signals to churn-risk score), one input class (feedback and behaviour signals), and one output (the churn-risk register). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

@@ -70,7 +70,8 @@ def test_resolve_readme_path_flat_shape():
 
 
 def test_generate_readme_required_sections_l0():
-    from scripts.generate_readmes import generate_readme, SECTION_HEADINGS
+    import re as _re
+    from scripts.generate_readmes import generate_readme, SECTION_TITLES
     record = {
         "id": "processes:pc-test",
         "domain": "StrategyAndDirection",
@@ -85,11 +86,12 @@ def test_generate_readme_required_sections_l0():
         "behavioral-boundaries", "hierarchical-decomposition",
         "properties-relationships", "operational-metrics", "technical-metadata",
     ]:
-        assert SECTION_HEADINGS[sid] in out, f"L0 README missing section {sid}"
+        assert _re.search(rf"^## \d+\. {_re.escape(SECTION_TITLES[sid])}$", out, _re.M), f"L0 README missing section {sid}"
 
 
 def test_generate_readme_required_sections_l2():
-    from scripts.generate_readmes import generate_readme, SECTION_HEADINGS
+    import re as _re
+    from scripts.generate_readmes import generate_readme, SECTION_TITLES
     record = {
         "id": "processes:process-test",
         "type": "Process",
@@ -115,7 +117,7 @@ def test_generate_readme_required_sections_l2():
         "properties-relationships", "hierarchical-decomposition",
         "operational-details", "technical-metadata",
     ]:
-        assert SECTION_HEADINGS[sid] in out, f"L2 README missing section {sid}"
+        assert _re.search(rf"^## \d+\. {_re.escape(SECTION_TITLES[sid])}$", out, _re.M), f"L2 README missing section {sid}"
 
 
 def test_cli_dry_run_does_not_write():
@@ -220,7 +222,7 @@ def test_header_identity_table_renders_table():
     }
     out = generate_readme(record, "L0")
     # The header section is rendered.
-    assert "## Header and Identity Table" in out
+    assert "## 1. Header and Identity Table" in out
     # The table has 6 attribute rows.
     assert "| **Domain** |" in out
     assert "| **Lifecycle Stage** |" in out
@@ -250,7 +252,7 @@ def test_governance_provenance_renders_change_history():
     }
     out = generate_readme(record, "L0")
     # The governance section is rendered.
-    assert "## 2. Governance and Provenance" in out
+    assert "## 3. Governance and Provenance" in out
     # Admission score is shown.
     assert "Admission Score" in out
     # Change history table is shown.
@@ -274,7 +276,7 @@ def test_behavioral_boundaries_renders_three_row_table():
     }
     out = generate_readme(record, "L0")
     # Section header is present.
-    assert "## 3. Behavioral Boundaries" in out
+    assert "## 4. Behavioral Boundaries" in out
     # Three scope-type rows.
     assert "In Scope" in out
     assert "Out of Scope" in out
@@ -297,7 +299,7 @@ def test_hierarchical_decomposition_uses_details_block():
     }
     out = generate_readme(record, "L0")
     # Section header is present.
-    assert "## 4. Hierarchical Decomposition" in out
+    assert "## 5. Hierarchical Decomposition" in out
     # <details> HTML block is used.
     assert "<details>" in out
     assert "<summary>" in out
@@ -322,7 +324,7 @@ def test_properties_relationships_renders_both_tables():
     }
     out = generate_readme(record, "L2")
     # Section header is present.
-    assert "## 5. Properties and Relationships" in out
+    assert "## 4. Properties and Relationships" in out
     # Properties table is rendered.
     assert "**Properties**" in out
     assert "| Name | Type | Required | Description |" in out
@@ -366,21 +368,74 @@ def test_metrics_block_renders_or_placeholder():
 
 
 def test_section_numbering_continuous():
-    """CR-BP-94-EXT-07: L0 sections are numbered 1-8 with no skip; L1-L4 use descriptive headings."""
-    from scripts.generate_readmes import generate_readme, SECTION_HEADINGS
-    # L0: verify all sections are present.
-    for sid in [
-        "header-identity-table", "executive-summary", "governance-provenance",
-        "behavioral-boundaries", "hierarchical-decomposition",
-        "properties-relationships", "operational-metrics", "technical-metadata",
-    ]:
-        heading = SECTION_HEADINGS[sid]
-        assert heading.startswith("##"), f"Section {sid} heading malformed: {heading}"
-    # L1-L4: verify all sections are present.
-    for sid in [
-        "header-identity-table", "intent-definition", "governance-provenance",
-        "properties-relationships", "hierarchical-decomposition",
-        "operational-details", "technical-metadata",
-    ]:
-        heading = SECTION_HEADINGS[sid]
-        assert heading.startswith("##"), f"L1-L4 section {sid} heading malformed: {heading}"
+    """CR-BP-221: every profile numbers its sections 1..N strictly —
+    L0 1-8 and L1-L4 1-7, no unnumbered headings, no inversions."""
+    from scripts.generate_readmes import check_numbering, generate_readme
+
+    l0_record = {
+        "id": "processes:pc-test", "name": "Test PC",
+        "domain": "StrategyAndDirection", "lifecycle_stage": "Retire",
+        "definition": "Test definition.",
+    }
+    l2_record = {
+        "id": "processes:process-test", "type": "Process", "name": "Test BP",
+        "version": "1.0.0", "lifecycle_status": "candidate",
+        "definition": "Test definition.", "trigger": "Test trigger.",
+        "outcome": "Test outcome.",
+        "identity": {"verb": "Test", "object": "Process", "scope": "test"},
+        "part_of": ["processes:group-x"],
+        "process_scope": {"includes": ["x"], "excludes": ["y"]},
+        "ecfConformance": {"canonicalReferences": [
+            {"domain": "StrategyAndDirection", "stage": "Retire"}]},
+    }
+    for record, level in ((l0_record, "L0"), (l2_record, "L2")):
+        out = generate_readme(record, level)
+        assert check_numbering(out) is None, f"{level} numbering incoherent: {check_numbering(out)}"
+
+    # The pre-CR-BP-221 defect (5. Properties before 4. Hierarchical) is gone.
+    l2_out = generate_readme(l2_record, "L2")
+    props = l2_out.index("Properties and Relationships")
+    decomp = l2_out.index("Hierarchical Decomposition")
+    assert props < decomp, "L2: Properties must precede Hierarchical Decomposition"
+
+
+def test_check_numbering_fires_on_inversion():
+    """RDM-003 checker: catches the exact pre-CR-BP-221 defect shape."""
+    from scripts.generate_readmes import check_numbering
+    bad = (
+        "## 1. Header and Identity Table\n\n"
+        "## 2. Intent and Definition\n\n"
+        "## 3. Governance and Provenance\n\n"
+        "## 5. Properties and Relationships\n\n"
+        "## 4. Hierarchical Decomposition (Path Scheme)\n\n"
+        "## 6. Operational Details\n\n"
+        "## 7. Technical Metadata\n"
+    )
+    issue = check_numbering(bad)
+    assert issue is not None and "1..N" in issue
+
+
+def test_l4_intent_definition_not_duplicated():
+    """CR-BP-221: a task with only a definition renders one combined line."""
+    from scripts.generate_readmes import generate_readme
+    record = {
+        "id": "processes:task-test", "type": "Task", "name": "Test Task",
+        "version": "1.0.0", "lifecycle_status": "candidate",
+        "definition": "The bounded unit of work for the intake phase.",
+    }
+    out = generate_readme(record, "L4")
+    assert "**Intent and Definition**: The bounded unit of work" in out
+    # The separate markers are gone everywhere (the Properties table may
+    # still echo the definition text — that is data, not duplication).
+    assert "**Intent**:" not in out
+    assert "**Definition**:" not in out
+
+
+def test_properties_cell_truncation_word_boundary():
+    """CR-BP-221: truncated cells end at a word boundary with an ellipsis."""
+    from scripts.generate_readmes import _truncate_cell
+    long_value = "word " * 60  # 300 chars
+    cut = _truncate_cell(long_value)
+    assert cut.endswith("…") and len(cut) <= 122
+    assert not cut[:-1].endswith("wor")  # no mid-word cut
+    assert _truncate_cell("short") == "short"

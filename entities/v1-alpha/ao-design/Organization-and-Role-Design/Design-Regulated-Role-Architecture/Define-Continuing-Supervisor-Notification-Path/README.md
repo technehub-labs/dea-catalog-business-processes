@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 
 **Name**: Define Continuing-Supervisor Notification Path
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Define Continuing-Supervisor Notification Path | **Canonical ID** | `processes:activity-ao-design-v8r5n2` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Design Regulated Role Architecture that Define the continuing-supervisor notification path for each regulator-licensed role: the supervisor identity, the notification cadence, the notification content, and the escalation matrix. Shared concern: continuing-supervisor notification path. Input: the regulator-tied role catalogue; the supervision matrix. Output: the defined continuing-supervisor notification path.
+**Intent and Definition**: The cohesive grouping of work within Design Regulated Role Architecture that Define the continuing-supervisor notification path for each regulator-licensed role: the supervisor identity, the notification cadence, the notification content, and the escalation matrix. Shared concern: continuing-supervisor notification path. Input: the regulator-tied role catalogue; the supervision matrix. Output: the defined continuing-supervisor notification path.
 
-**Definition**: The cohesive grouping of work within Design Regulated Role Architecture that Define the continuing-supervisor notification path for each regulator-licensed role: the supervisor identity, the notification cadence, the notification content, and the escalation matrix. Shared concern: continuing-supervisor notification path. Input: the regulator-tied role catalogue; the supervision matrix. Output: the defined continuing-supervisor notification path.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -35,16 +33,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-design-hdqzwp, processes:task-ao-design-qskbhz, processes:task-ao-design-8nk5wg, pr | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-design-intake-v2uckf, processes:task-ao-design-verify-bwnb99, processes:task-ao-des | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Design Regulated Role Architecture that Define the continuing-supervisor notificati |
+| `definition` | string | no | The cohesive grouping of work within Design Regulated Role Architecture that Define the continuing-supervisor … |
 | `belongs_to_business_process` | string | no | processes:process-ao-design-2fkvhx |
-| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single define continuing-super |
+| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single define … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -58,7 +56,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 | `composes` | `processes:task-ao-design-confirm-mhqjvd` | 1 |
 | `composes` | `processes:task-ao-design-record-tq7syq` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -66,7 +64,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 - **Cohesion rationale**: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single define continuing-supervisor notification path concern, one input class, and one output (the define continuing-supervisor notification path record on the regulated personnel record).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

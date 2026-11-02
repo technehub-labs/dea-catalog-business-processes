@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""check_readme_consistency.py - README Drift Gate (CR-BP-114; RDM-001..002).
+"""check_readme_consistency.py - README Drift Gate (CR-BP-114; RDM-001..003; RDM-003 per CR-BP-221).
 
 Rules
 -----
@@ -11,6 +11,12 @@ RDM-001 (blocking). Every canonical record under entities/v1-alpha/
 RDM-002 (advisory). A README.md under entities/ that belongs to no
     canonical record and is not a research/ artifact or the
     v1-alpha structural template is an orphan (hygiene signal).
+
+RDM-003 (blocking; CR-BP-221). The generator's output must carry a
+    strictly coherent H2 numbering: every section heading numbered,
+    1..N sequential per profile. Evaluated on the generator's expected
+    content (RDM-001 pins disk == generator), so a numbering
+    regression in generate_readmes.py itself fails CI.
 
 The gate makes record READMEs a generated artifact under CI
 enforcement, the same contract as CATALOG.yaml --check
@@ -66,6 +72,16 @@ def evaluate(root: Path | None = None) -> tuple[list[tuple[str, str]], list[tupl
             expected = gr.generate_readme(record, level)
             if not expected:
                 continue
+            # RDM-003 (CR-BP-221): the generator's own output must carry a
+            # strictly coherent H2 numbering (1..N, no unnumbered
+            # headings). RDM-001 pins disk == generator output, so
+            # together they make the pre-CR-BP-221 defect class (L0
+            # numbers hardcoded onto L1-L4 sections) a CI failure at
+            # both authorship time and regression time.
+            numbering_issue = gr.check_numbering(expected)
+            if numbering_issue:
+                rel_early = readme_path.relative_to(gr.REPO_ROOT)
+                blocking.append(("RDM-003", f"{rel_early}: generator output numbering incoherent ({numbering_issue})"))
             record_readmes.add(readme_path.resolve())
             rel = readme_path.relative_to(gr.REPO_ROOT)
             if not readme_path.exists():
@@ -123,13 +139,13 @@ def main(argv: list[str] | None = None) -> int:
 
     if args.json:
         print(json.dumps({
-            "gate": "RDM-001..002",
+            "gate": "RDM-001..003",
             "verdict": verdict,
             "blocking": [{"rule": r, "message": m} for r, m in blocking],
             "advisory": [{"rule": r, "message": m} for r, m in advisory],
         }, indent=2))
     else:
-        print(f"README Consistency (CR-BP-114; RDM-001..002): {verdict}")
+        print(f"README Consistency (CR-BP-114; RDM-001..003): {verdict}")
         print(f"  {len(blocking)} blocking finding(s); {len(advisory)} advisory.")
         for r, m in blocking[:25]:
             print(f"    [BLOCKING] [{r}] {m}")
@@ -201,12 +217,29 @@ def _self_test() -> int:
         finally:
             gr.REPO_ROOT = orig_repo
 
+    # Case 5 (CR-BP-221): RDM-003 coherence checker.
+    coherent = (
+        "# Canonical Process: `processes:process-x`\n\n"
+        "## 1. Header and Identity Table\n\n"
+        "## 2. Intent and Definition\n\n"
+        "## 3. Governance and Provenance\n\n"
+    )
+    if gr.check_numbering(coherent) is not None:
+        failures.append("case5: coherent numbering flagged")
+    inverted = coherent.replace(
+        "## 3. Governance and Provenance", "## Governance and Provenance")
+    if gr.check_numbering(inverted) is None:
+        failures.append("case5a: unnumbered heading not flagged")
+    gapped = coherent.replace("## 2. Intent", "## 4. Intent")
+    if gr.check_numbering(gapped) is None:
+        failures.append("case5b: out-of-sequence numbering not flagged")
+
     if failures:
         print("self-test FAIL:")
         for f in failures:
             print(f"  - {f}")
         return 1
-    print("self-test PASS: 4 cases (RDM-001 missing/exact/stale, RDM-002 orphan)")
+    print("self-test PASS: 5 cases (RDM-001 missing/exact/stale, RDM-002 orphan, RDM-003 numbering)")
     return 0
 
 

@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-b
 
 **Name**: Strategic Plan Build
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-b
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Strategic Plan Build | **Canonical ID** | `processes:group-sd-build-tnq4p6` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organises the Business Process responsibilities of building the strategic plan in the StrategyAndDirection x Build context. This group covers the constructive work of building the strategic plan, building the strategic roadmap, translating strategic choices into initiatives, and setting resource allocation priorities. v2.4.0 grounding (domain-grounding.md §3.2).
+**Intent and Definition**: The bounded Process Group that organises the Business Process responsibilities of building the strategic plan in the StrategyAndDirection x Build context. This group covers the constructive work of building the strategic plan, building the strategic roadmap, translating strategic choices into initiatives, and setting resource allocation priorities. v2.4.0 grounding (domain-grounding.md §3.2).
 
-**Definition**: The bounded Process Group that organises the Business Process responsibilities of building the strategic plan in the StrategyAndDirection x Build context. This group covers the constructive work of building the strategic plan, building the strategic roadmap, translating strategic choices into initiatives, and setting resource allocation priorities. v2.4.0 grounding (domain-grounding.md §3.2).
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,13 +27,13 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-b
 | 2026-09-08 | `CR-BP-21a.1` | Initial Process Group record; promoted from the CR-BP-19 register | System |
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded Process Group that organises the Business Process responsibilities of building the strategic plan in the Str |
+| `definition` | string | no | The bounded Process Group that organises the Business Process responsibilities of building the strategic plan in the … |
 | `process_context` | string | no | processes:pc-sd-build-gmzrrm |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[3] | no | array of 3 item(s) |
@@ -56,11 +54,11 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-b
 | `composes` | `processes:process-sd-build-9admqy` | 1 |
 | `composes` | `processes:process-sd-build-2pkz5n` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

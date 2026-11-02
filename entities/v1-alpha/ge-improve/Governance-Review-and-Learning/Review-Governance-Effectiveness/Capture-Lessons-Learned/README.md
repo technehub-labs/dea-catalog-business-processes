@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ge-im
 
 **Name**: Capture Lessons Learned
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ge-im
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Capture Lessons Learned | **Canonical ID** | `processes:activity-ge-improve-f4qwmk` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Review Governance Effectiveness that captures the lessons learned from measured governance performance.
+**Intent and Definition**: The cohesive grouping of work within Review Governance Effectiveness that captures the lessons learned from measured governance performance.
 
-**Definition**: The cohesive grouping of work within Review Governance Effectiveness that captures the lessons learned from measured governance performance.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-ge-im
 | 2026-09-13 | `CR-BP-49` | Initial L3 Activity entry; lands as part of the CR-BP-49 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-capture-lessons-learned-intake, dea:task-capture-lessons-learned-verify, dea:task-capture-le | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Review Governance Effectiveness that captures the lessons learned from measured gov |
+| `definition` | string | no | The cohesive grouping of work within Review Governance Effectiveness that captures the lessons learned from measured … |
 | `belongs_to_business_process` | string | no | processes:process-ge-improve-mgkw59 |
-| `cohesion_rationale` | string | no | Constituent work shares a single capture concern (performance evidence to articulated lessons), one reference class (the |
+| `cohesion_rationale` | string | no | Constituent work shares a single capture concern (performance evidence to articulated lessons), one reference class … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-ge-im
 | `composes` | `processes:task-ge-improve-confirm-7hkzh2` | 1 |
 | `composes` | `processes:task-ge-improve-record-wm3aet` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-ge-im
 - **Cohesion rationale**: Constituent work shares a single capture concern (performance evidence to articulated lessons), one reference class (the performance measurement), and one output (the lessons-learned record). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

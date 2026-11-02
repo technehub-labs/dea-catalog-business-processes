@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 
 **Name**: Attest Fitness-And-Propriety For Pool
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Attest Fitness-And-Propriety For Pool | **Canonical ID** | `processes:activity-ao-build-w2n8p4` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Build Regulated Agent Pool that Attest fitness-and-propriety for each candidate in the regulator-ready pool: the initial attestation, the attestor (employer / regulator), the criteria, and the regulator framing (SMCR FIT; state healthcare initial fitness; bar admissions fitness; NAIC producer fitness; FAA airmen fitness; EU AI Act Article 14). Shared concern: fitness-and-propriety attestation. Input: the verified-candidate list; the attestation regime. Output: the fitness-and-propriety attested candidate list.
+**Intent and Definition**: The cohesive grouping of work within Build Regulated Agent Pool that Attest fitness-and-propriety for each candidate in the regulator-ready pool: the initial attestation, the attestor (employer / regulator), the criteria, and the regulator framing (SMCR FIT; state healthcare initial fitness; bar admissions fitness; NAIC producer fitness; FAA airmen fitness; EU AI Act Article 14). Shared concern: fitness-and-propriety attestation. Input: the verified-candidate list; the attestation regime. Output: the fitness-and-propriety attested candidate list.
 
-**Definition**: The cohesive grouping of work within Build Regulated Agent Pool that Attest fitness-and-propriety for each candidate in the regulator-ready pool: the initial attestation, the attestor (employer / regulator), the criteria, and the regulator framing (SMCR FIT; state healthcare initial fitness; bar admissions fitness; NAIC producer fitness; FAA airmen fitness; EU AI Act Article 14). Shared concern: fitness-and-propriety attestation. Input: the verified-candidate list; the attestation regime. Output: the fitness-and-propriety attested candidate list.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -35,16 +33,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-build-2g85tb, processes:task-ao-build-7nugq7, processes:task-ao-build-85e8bx, proce | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-build-intake-brt26j, processes:task-ao-build-verify-scgrww, processes:task-ao-build | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Build Regulated Agent Pool that Attest fitness-and-propriety for each candidate in  |
+| `definition` | string | no | The cohesive grouping of work within Build Regulated Agent Pool that Attest fitness-and-propriety for each candidate in … |
 | `belongs_to_business_process` | string | no | processes:process-ao-build-9my4jr |
-| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single attest fitness-and-prop |
+| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single attest … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -58,7 +56,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 | `composes` | `processes:task-ao-build-confirm-39n9ka` | 1 |
 | `composes` | `processes:task-ao-build-record-ae9wh9` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -66,7 +64,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 - **Cohesion rationale**: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single attest fitness-and-propriety for pool concern, one input class, and one output (the attest fitness-and-propriety for pool record on the regulated personnel record).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

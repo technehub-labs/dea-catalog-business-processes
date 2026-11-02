@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-re
 
 **Name**: Coordinate Transition Supports
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-re
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Coordinate Transition Supports | **Canonical ID** | `processes:activity-ao-retire-herzuz` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Conduct Regulated Workforce Wind-Down that arranges the state dislocated-worker referral, retraining support, health-care continuation, and re-employment services that supplement the statutory entitlements of affected employees.
+**Intent and Definition**: The cohesive grouping of work within Conduct Regulated Workforce Wind-Down that arranges the state dislocated-worker referral, retraining support, health-care continuation, and re-employment services that supplement the statutory entitlements of affected employees.
 
-**Definition**: The cohesive grouping of work within Conduct Regulated Workforce Wind-Down that arranges the state dislocated-worker referral, retraining support, health-care continuation, and re-employment services that supplement the statutory entitlements of affected employees.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-re
 | 2026-09-16 | `CR-BP-77` | Initial L3 Activity entry; lands as part of the CR-BP-77 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-coordinate-transition-supports-intake, dea:task-coordinate-transition-supports-verify, dea:t | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Conduct Regulated Workforce Wind-Down that arranges the state dislocated-worker ref |
+| `definition` | string | no | The cohesive grouping of work within Conduct Regulated Workforce Wind-Down that arranges the state dislocated-worker … |
 | `belongs_to_business_process` | string | no | processes:process-ao-retire-g3eyr8 |
-| `cohesion_rationale` | string | no | Constituent work shares a single transition-support coordination concern, one input class (the affected-employee roster  |
+| `cohesion_rationale` | string | no | Constituent work shares a single transition-support coordination concern, one input class (the affected-employee roster … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-re
 | `composes` | `processes:task-ao-retire-confirm-r2y6tf` | 1 |
 | `composes` | `processes:task-ao-retire-record-wzx6cj` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-re
 - **Cohesion rationale**: Constituent work shares a single transition-support coordination concern, one input class (the affected-employee roster and the available public and private support programmes), and one output (the package of supports offered to each affected employee with delivery and uptake evidence). Cohesion score 8/9 assessed at deposition (CR-BP-32 section 6): coordination spans multiple delivery partners and uptake is contingent on employee choice.
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

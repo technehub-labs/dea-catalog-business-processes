@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-eo-re
 
 **Name**: Plan Asset Retirement
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-eo-re
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Plan Asset Retirement | **Canonical ID** | `processes:activity-eo-retire-6gntey` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Decommission Enterprise Asset that plans the retirement per approval: schedule, dependencies, safety and regulatory constraints.
+**Intent and Definition**: The cohesive grouping of work within Decommission Enterprise Asset that plans the retirement per approval: schedule, dependencies, safety and regulatory constraints.
 
-**Definition**: The cohesive grouping of work within Decommission Enterprise Asset that plans the retirement per approval: schedule, dependencies, safety and regulatory constraints.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-eo-re
 | 2026-09-15 | `CR-BP-69` | Initial L3 Activity entry; lands as part of the CR-BP-69 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-plan-asset-retirement-intake, dea:task-plan-asset-retirement-verify, dea:task-plan-asset-ret | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Decommission Enterprise Asset that plans the retirement per approval: schedule, dep |
+| `definition` | string | no | The cohesive grouping of work within Decommission Enterprise Asset that plans the retirement per approval: schedule … |
 | `belongs_to_business_process` | string | no | processes:process-eo-retire-rpg6d4 |
-| `cohesion_rationale` | string | no | Constituent work shares a single retirement planning concern, one input class (the approved asset retirement decision),  |
+| `cohesion_rationale` | string | no | Constituent work shares a single retirement planning concern, one input class (the approved asset retirement decision) … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-eo-re
 | `composes` | `processes:task-eo-retire-confirm-5ntpwk` | 1 |
 | `composes` | `processes:task-eo-retire-record-a4n73w` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-eo-re
 - **Cohesion rationale**: Constituent work shares a single retirement planning concern, one input class (the approved asset retirement decision), and one output (the asset retirement plan). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

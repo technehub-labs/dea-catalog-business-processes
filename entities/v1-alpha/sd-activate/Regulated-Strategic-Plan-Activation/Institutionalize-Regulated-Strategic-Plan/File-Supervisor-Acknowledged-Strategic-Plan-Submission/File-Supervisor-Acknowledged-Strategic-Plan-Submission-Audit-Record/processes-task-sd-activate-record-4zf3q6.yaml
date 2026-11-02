@@ -1,7 +1,7 @@
 id: processes:task-sd-activate-record-4zf3q6
 type: Task
 name: File Supervisor-Acknowledged Strategic-Plan Submission Audit Record
-definition: 'The bounded unit of work within `dea:activity-file-supervisor-acknowledged-strategic-plan-submission` (File Supervisor-Acknowledged Strategic-Plan Submission) that carries out the record phase of the parent''s verb-object decomposition. Phase responsibility: records custodian. Phase trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity''s evidence requirements. Phase outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
+definition: 'The bounded unit of work within `processes:activity-sd-activate-4gefj3` (File Supervisor-Acknowledged Strategic-Plan Submission) that carries out the record phase of the parent''s verb-object decomposition. Phase responsibility: records custodian. Phase trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity''s evidence requirements. Phase outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
 belongs_to_activity: processes:activity-sd-activate-4gefj3
 trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity's evidence requirements.
 outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity's evidence discipline.

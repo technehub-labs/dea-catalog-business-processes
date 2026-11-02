@@ -1,7 +1,7 @@
 id: processes:task-sd-retire-verify-9mmpk3
 type: Task
 name: Execute Communications Plan for Regulated Strategic Plan Sunset Verification
-definition: 'The bounded unit of work within `dea:activity-execute-communications-plan-regulated-strategic-plan-sunset` (Execute Communications Plan for Regulated Strategic Plan Sunset) that carries out the verify phase of the parent''s verb-object decomposition. Phase responsibility: verification custodian. Phase trigger: Intake registered (phase 1 complete); verification of input against parent Activity''s specification can begin. Phase outcome: Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
+definition: 'The bounded unit of work within `processes:activity-sd-retire-r5tcp2` (Execute Communications Plan for Regulated Strategic Plan Sunset) that carries out the verify phase of the parent''s verb-object decomposition. Phase responsibility: verification custodian. Phase trigger: Intake registered (phase 1 complete); verification of input against parent Activity''s specification can begin. Phase outcome: Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
 belongs_to_activity: processes:activity-sd-retire-r5tcp2
 trigger: Intake registered (phase 1 complete); verification of input against parent Activity's specification can begin.
 outcome: Verified that the input meets parent Activity's specification; nonconformities are recorded for rejection or remediation.

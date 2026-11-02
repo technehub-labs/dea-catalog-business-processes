@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-pr-activate-t
 
 **Name**: Record Onboarding Decision Processing
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-pr-activate-t
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Record Onboarding Decision Processing | **Canonical ID** | `processes:task-pr-activate-transform-4xbcbz` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-pr-activate-q9pr4m` (Record Onboarding Decision) that execute the verified-record transformation: resolve the canonical party identifier, compute the risk classification, derive the due-diligence tier, and produce the activated-party record conforming to the master-data model.
+**Intent and Definition**: The bounded unit of work within `processes:activity-pr-activate-q9pr4m` (Record Onboarding Decision) that execute the verified-record transformation: resolve the canonical party identifier, compute the risk classification, derive the due-diligence tier, and produce the activated-party record conforming to the master-data model.
 
-**Definition**: The bounded unit of work within `processes:activity-pr-activate-q9pr4m` (Record Onboarding Decision) that execute the verified-record transformation: resolve the canonical party identifier, compute the risk classification, derive the due-diligence tier, and produce the activated-party record conforming to the master-data model.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Task record for `processes:task-pr-activate-t
 | 2026-09-16 | `CR-BP-77` | Initial L3 Activity entry; lands as part of the CR-BP-77 | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-pr-activate-q9pr4m` (Record Onboarding Decision) that execute the ve |
+| `definition` | string | no | The bounded unit of work within `processes:activity-pr-activate-q9pr4m` (Record Onboarding Decision) that execute the … |
 | `belongs_to_activity` | string | no | processes:activity-pr-activate-q9pr4m |
-| `trigger` | string | no | Verification certificate issued for Record Onboarding Decision; transform gate may execute the bounded work and emit the |
-| `outcome` | string | no | Bounded-work artefact produced for Record Onboarding Decision conforming to the Activate schema; processing custodian pa |
+| `trigger` | string | no | Verification certificate issued for Record Onboarding Decision; transform gate may execute the bounded work and emit … |
+| `outcome` | string | no | Bounded-work artefact produced for Record Onboarding Decision conforming to the Activate schema; processing custodian … |
 | `responsibility` | string | no | processing custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-pr-activate-t
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

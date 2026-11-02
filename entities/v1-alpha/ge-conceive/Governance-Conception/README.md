@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-c
 
 **Name**: Governance Conception
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,29 +13,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-c
 | **Version** | 1.1.0 | **Schema** | `dea/v1` |
 | **Name** | Governance Conception | **Canonical ID** | `processes:group-ge-conceive-y93bwr` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organises the Business Process responsibilities
+**Intent and Definition**: The bounded Process Group that organises the Business Process responsibilities
 of conceiving the governance mandate, policy direction, and charter of the
 enterprise in the GovernanceAndExistence × Conceive context. This group
 captures the front-end work of framing what the enterprise is authorised to
 exist as: its mandate, its policy posture, and its charter direction.
 Strategic direction choices — including corporate strategy — belong in
-StrategyAndDirection × Conceive (dea:pc-sd-conceive, planned CR-BP-21a) per
+StrategyAndDirection × Conceive (processes:pc-sd-conceive-ucb3gx, planned CR-BP-21a) per
 domain-grounding.md §3.1 ("Governance authorizes but does not direct;
 Strategy & Direction directs within the authorized frame").
 
-**Definition**: The bounded Process Group that organises the Business Process responsibilities
-of conceiving the governance mandate, policy direction, and charter of the
-enterprise in the GovernanceAndExistence × Conceive context. This group
-captures the front-end work of framing what the enterprise is authorised to
-exist as: its mandate, its policy posture, and its charter direction.
-Strategic direction choices — including corporate strategy — belong in
-StrategyAndDirection × Conceive (dea:pc-sd-conceive, planned CR-BP-21a) per
-domain-grounding.md §3.1 ("Governance authorizes but does not direct;
-Strategy & Direction directs within the authorized frame").
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -47,7 +37,7 @@ Strategy & Direction directs within the authorized frame").
 | 2026-09-08 | `CR-BP-21f.1` | Added dea:process-frame-risk-framework-direction composes edge (CR-BP-21f.1 GE completion). | System |
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -72,11 +62,11 @@ Strategy & Direction directs within the authorized frame").
 | `composes` | `processes:process-ge-conceive-xp6fye` | 1 |
 | `composes` | `processes:process-ge-conceive-6qnkhh` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

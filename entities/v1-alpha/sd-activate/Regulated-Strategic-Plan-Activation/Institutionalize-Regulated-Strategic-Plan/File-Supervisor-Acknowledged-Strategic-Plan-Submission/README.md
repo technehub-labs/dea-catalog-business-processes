@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-ac
 
 **Name**: File Supervisor-Acknowledged Strategic-Plan Submission
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-sd-ac
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | File Supervisor-Acknowledged Strategic-Plan Submission | **Canonical ID** | `processes:activity-sd-activate-4gefj3` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Institutionalize Regulated Strategic Plan that files the supervisor-acknowledged strategic-plan submission with the competent regulator before the plan takes effect (Basel ICAAP / SAA submission; BRRD recovery-plan submission; NHS trust 5-year strategy submission; PUC integrated resource plan submission; bank recovery and resolution plan submission).
+**Intent and Definition**: The cohesive grouping of work within Institutionalize Regulated Strategic Plan that files the supervisor-acknowledged strategic-plan submission with the competent regulator before the plan takes effect (Basel ICAAP / SAA submission; BRRD recovery-plan submission; NHS trust 5-year strategy submission; PUC integrated resource plan submission; bank recovery and resolution plan submission).
 
-**Definition**: The cohesive grouping of work within Institutionalize Regulated Strategic Plan that files the supervisor-acknowledged strategic-plan submission with the competent regulator before the plan takes effect (Basel ICAAP / SAA submission; BRRD recovery-plan submission; NHS trust 5-year strategy submission; PUC integrated resource plan submission; bank recovery and resolution plan submission).
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-sd-ac
 | 2026-09-17 | `CR-BP-87` | Initial L3 Activity entry; lands as part of the CR-BP-87 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-file-supervisor-acknowledged-strategic-plan-submission-intake, dea:task-file-supervisor-ackn | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Institutionalize Regulated Strategic Plan that files the supervisor-acknowledged st |
+| `definition` | string | no | The cohesive grouping of work within Institutionalize Regulated Strategic Plan that files the supervisor-acknowledged … |
 | `belongs_to_business_process` | string | no | processes:process-sd-activate-s9m34e |
-| `cohesion_rationale` | string | no | Constituent work shares a single strategic-plan-filing concern, one input class (the board-approved strategic plan and t |
+| `cohesion_rationale` | string | no | Constituent work shares a single strategic-plan-filing concern, one input class (the board-approved strategic plan and … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-ac
 | `composes` | `processes:task-sd-activate-confirm-4ne65w` | 1 |
 | `composes` | `processes:task-sd-activate-record-4zf3q6` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-ac
 - **Cohesion rationale**: Constituent work shares a single strategic-plan-filing concern, one input class (the board-approved strategic plan and the regulator-mandated filing format), and one output (the filed strategic-plan submission preserved on the regulated strategic-plan record). Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

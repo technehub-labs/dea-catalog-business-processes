@@ -25,7 +25,7 @@ owner:
   review_due: '2026-12-31'
   decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
-description: 'Operate the Commission Production Line L2 process within the dea:pc-oe-build Cell Charter.
+description: 'Operate the Commission Production Line L2 process within the processes:pc-eo-build-zwkhxc Cell Charter.
   See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the
   testable outcome the process produces. '
 trigger: 'A production line stand-up is needed because the designed operations model requires a working
@@ -122,7 +122,7 @@ inputs:
   type: information
   name: 'Commission Production Line: working inputs (information)'
   description: 'Derived from the record''s documented description and trigger: the process Operate the
-    Commission Production Line L2 process within the dea:pc-oe-build Cell Charter. See trigger and outcome
+    Commission Production Line L2 process within the processes:pc-eo-build-zwkhxc Cell Charter. See trigger and outcome
     for the bounded work this process o'
   source: Record documented content (description + trigger fields)
   mandatory: true

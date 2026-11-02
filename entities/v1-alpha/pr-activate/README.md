@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pr-ac
 
 **Name**: Enterprise Relationship Activation
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,26 +13,26 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pr-ac
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Enterprise Relationship Activation | **Canonical ID** | `processes:pc-pr-activate-mwq7bj` |
 
-## 1. Executive Summary / Intent
+## 2. Executive Summary / Intent
 
 The regulated-onboarding activation work that brings an enterprise
 relationship from unverified applicant to verified, risk-rated,
 approved (or declined) party under KYC/AML/CDD controls, before
 commencement of the relationship itself.
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 (governance and provenance to be backfilled at EXT-04)
 
-## 3. Behavioral Boundaries (Cell Charter)
+## 4. Behavioral Boundaries (Cell Charter)
 
 | Scope Type | Description |
 | :--- | :--- |
 | In Scope (inclusions) | - Customer Identification Program (CIP) and Customer Due Diligence (CDD/EDD)<br>- Beneficial-ownership resolution at account opening (FinCEN CDD Rule, 31 CFR 1010.230)<br>- Sanctions and PEP screening; onboarding approval authority<br>- Onboarding refusal with recorded rationale |
-| Out of Scope (exclusions) | - Non-regulated first-time activation (handled inside dea:pc-pr-operate)<br>- Steady-state relationship operation (Operate context)<br>- Relationship close-out and regulated offboarding (Retire context, CR-BP-67)<br>- Asset retirement and decommissioning (EnablementAndOperations x Retire; sibling cell) |
+| Out of Scope (exclusions) | - Non-regulated first-time activation (handled inside processes:pc-pr-operate-pwue5a)<br>- Steady-state relationship operation (Operate context)<br>- Relationship close-out and regulated offboarding (Retire context, CR-BP-67)<br>- Asset retirement and decommissioning (EnablementAndOperations x Retire; sibling cell) |
 | Adjacent Cells | - processes:pc-pr-operate-pwue5a (adjacent context): the Operate cell continues onboarding decisions not gated by regulated onboarding and conducts ongoing monitoring.<br>- processes:pc-pr-retire-2cusde (sibling cell, CR-BP-67): the Retire cell handles close-out and regulated offboarding (including GDPR-driven erasure); the Activate cell handles regulated onboarding at the relationship's start.<br>- processes:pc-ge-activate-hxtfcv (sibling cell, CR-BP-65): Bring Policy Instrument into Force handles regulatory instrument commencement, distinct from party-relationship activation. |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename).
 
@@ -72,7 +72,7 @@ pr-activate/
 _(Full L4 task lists for each L3 activity are available in their respective subdirectories.)_
 </details>
 
-## 5. Properties and Relationships
+## 6. Properties and Relationships
 
 **Properties**
 
@@ -85,7 +85,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `outcomes` | array[3] | no | array of 3 item(s) |
 | `adjacent_contexts` | array[6] | no | array of 6 item(s) |
 | `processes` | array[1] | no | array of 1 item(s) |
-| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
+| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions … |
 | `status` | string | no | candidate |
 | `established_by` | string | no | CR-BP-71 |
 | `established_at` | string | no | 2026-09-15 |
@@ -98,7 +98,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | :--- | :--- | :--- |
 | `processes` | `processes:process-pr-activate-6qzuve` | 1 |
 
-## 6. Operational, Control and Metrics Details
+## 7. Operational, Control and Metrics Details
 
 **Inputs, Outputs and Interfaces**: _(pending; backfill at EXT-04)_
 
@@ -110,7 +110,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 
 _(Pending EXT-04)_
 
-## 7. Technical Metadata
+## 8. Technical Metadata
 
 - **Source YAML**: record YAML in the same directory as this README
 - **Record version**: 1.0.0

@@ -4,7 +4,7 @@ This directory hosts the canonical Process record for `processes:process-ge-buil
 
 **Name**: Establish Governance Bodies
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,13 @@ This directory hosts the canonical Process record for `processes:process-ge-buil
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Establish Governance Bodies | **Canonical ID** | `processes:process-ge-build-3p38us` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
 **Intent**: operate
 
 **Definition**: (definition pending; backfill at EXT-04)
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -32,7 +32,7 @@ This directory hosts the canonical Process record for `processes:process-ge-buil
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 | 2026-10-27 | `CR-BP-GS-1` | Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Governance & Existence Process Owner); actors/stakeholders derived from the parent cell charter vocabulary unde | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -45,7 +45,7 @@ This directory hosts the canonical Process record for `processes:process-ge-buil
 | `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Operate the Establish Governance Bodies L2 process within the |
-| `trigger` | string | no | A governance system design has been committed; the boards, committees, and other governance bodies must now be establish |
+| `trigger` | string | no | A governance system design has been committed; the boards, committees, and other governance bodies must now be … |
 | `outcome` | string | no | Governance bodies are established, chartered, and ready to convene on a regular cycle. |
 | `identity` | object | no | object: verb, object, scope, outcome_statement, evidence_links |
 | `relationships` | array[1] | no | array of 1 item(s) |
@@ -58,7 +58,7 @@ This directory hosts the canonical Process record for `processes:process-ge-buil
 | `outputs` | array[1] | no | array of 1 item(s) |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -70,7 +70,7 @@ This directory hosts the canonical Process record for `processes:process-ge-buil
   - `processes:activity-ge-build-epqkej`
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

@@ -131,17 +131,21 @@ PROFILE_REGISTRY: dict[tuple[str, str], dict] = {
 # Section-id -> expected heading (used by DOC-002 to verify the section
 # is present in the README). The validator searches for the heading
 # pattern; case-insensitive, whitespace-tolerant.
+# CR-BP-221: section numbers are per-profile (1..N by position), so the
+# same section id carries different numbers at L0 vs L1-L4. The patterns
+# match the title with an OPTIONAL numeric prefix; numbering coherence
+# itself is enforced by RDM-003 in check_readme_consistency.py.
 EXPECTED_HEADINGS: dict[str, str] = {
-    "header-identity-table": r"^##\s*Header and Identity Table",
-    "executive-summary": r"^##\s*1\.\s*Executive Summary",
-    "intent-definition": r"^##\s*Intent and Definition",
-    "governance-provenance": r"^##\s*2\.\s*Governance and Provenance",
-    "behavioral-boundaries": r"^##\s*3\.\s*Behavioral Boundaries",
-    "hierarchical-decomposition": r"^##\s*4\.\s*Hierarchical Decomposition",
-    "properties-relationships": r"^##\s*5\.\s*Properties and Relationships",
-    "operational-metrics": r"^##\s*6\.\s*Operational, Control and Metrics Details",
-    "operational-details": r"^##\s*Operational Details",
-    "technical-metadata": r"^##\s*7\.\s*Technical Metadata",
+    "header-identity-table": r"^##\s*(?:\d+\.\s*)?Header and Identity Table",
+    "executive-summary": r"^##\s*(?:\d+\.\s*)?Executive Summary",
+    "intent-definition": r"^##\s*(?:\d+\.\s*)?Intent and Definition",
+    "governance-provenance": r"^##\s*(?:\d+\.\s*)?Governance and Provenance",
+    "behavioral-boundaries": r"^##\s*(?:\d+\.\s*)?Behavioral Boundaries",
+    "hierarchical-decomposition": r"^##\s*(?:\d+\.\s*)?Hierarchical Decomposition",
+    "properties-relationships": r"^##\s*(?:\d+\.\s*)?Properties and Relationships",
+    "operational-metrics": r"^##\s*(?:\d+\.\s*)?Operational, Control and Metrics Details",
+    "operational-details": r"^##\s*(?:\d+\.\s*)?Operational Details",
+    "technical-metadata": r"^##\s*(?:\d+\.\s*)?Technical Metadata",
 }
 
 # Placeholder token pattern (DOC-004). Generated sections are allowed to
@@ -386,17 +390,17 @@ def _self_test() -> int:
         (entity_dir / "README.md").write_text(
             "# Canonical Business Process: `processes:process-good`\n\n"
             "**Name**: Good Process\n\n"
-            "## Header and Identity Table\n\n"
+            "## 1. Header and Identity Table\n\n"
             "(table)\n\n"
-            "## Intent and Definition\n\n"
+            "## 2. Intent and Definition\n\n"
             "(text)\n\n"
-            "## 2. Governance and Provenance\n\n"
+            "## 3. Governance and Provenance\n\n"
             "(text)\n\n"
-            "## 5. Properties and Relationships\n\n"
+            "## 4. Properties and Relationships\n\n"
             "(text)\n\n"
-            "## 4. Hierarchical Decomposition (Path Scheme)\n\n"
+            "## 5. Hierarchical Decomposition (Path Scheme)\n\n"
             "(text)\n\n"
-            "## Operational Details\n\n"
+            "## 6. Operational Details\n\n"
             "(text)\n\n"
             "## 7. Technical Metadata\n\n"
             "Governed by CR-BP-13a.\n\n"

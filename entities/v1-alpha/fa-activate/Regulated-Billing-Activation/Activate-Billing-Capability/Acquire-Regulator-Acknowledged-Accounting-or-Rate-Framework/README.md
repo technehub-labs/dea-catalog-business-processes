@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-ac
 
 **Name**: Acquire Regulator-Acknowledged Accounting or Rate Framework
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-fa-ac
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Acquire Regulator-Acknowledged Accounting or Rate Framework | **Canonical ID** | `processes:activity-fa-activate-63duu7` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Activate Billing Capability that acquires and records the regulator-acknowledged accounting or rate framework required for live invoicing or revenue recognition (IFRS 17 transition to active; NAIC statutory accounting framework activation; Solvency II framework activation; PUC rate-effective framework activation; PSD2 / Federal Reserve / ECB settlement-account framework activation).
+**Intent and Definition**: The cohesive grouping of work within Activate Billing Capability that acquires and records the regulator-acknowledged accounting or rate framework required for live invoicing or revenue recognition (IFRS 17 transition to active; NAIC statutory accounting framework activation; Solvency II framework activation; PUC rate-effective framework activation; PSD2 / Federal Reserve / ECB settlement-account framework activation).
 
-**Definition**: The cohesive grouping of work within Activate Billing Capability that acquires and records the regulator-acknowledged accounting or rate framework required for live invoicing or revenue recognition (IFRS 17 transition to active; NAIC statutory accounting framework activation; Solvency II framework activation; PUC rate-effective framework activation; PSD2 / Federal Reserve / ECB settlement-account framework activation).
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-fa-ac
 | 2026-09-17 | `CR-BP-87` | Initial L3 Activity entry; lands as part of the CR-BP-87 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-acquire-regulator-acknowledged-accounting-or-rate-framework-intake, dea:task-acquire-regulat | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Activate Billing Capability that acquires and records the regulator-acknowledged ac |
+| `definition` | string | no | The cohesive grouping of work within Activate Billing Capability that acquires and records the regulator-acknowledged … |
 | `belongs_to_business_process` | string | no | processes:process-fa-activate-bzfywk |
-| `cohesion_rationale` | string | no | Constituent work shares a single accounting-or-rate-framework-acquisition concern, one input class (the billing-capabili |
+| `cohesion_rationale` | string | no | Constituent work shares a single accounting-or-rate-framework-acquisition concern, one input class (the … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-ac
 | `composes` | `processes:task-fa-activate-confirm-5btdey` | 1 |
 | `composes` | `processes:task-fa-activate-record-cmebw8` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-ac
 - **Cohesion rationale**: Constituent work shares a single accounting-or-rate-framework-acquisition concern, one input class (the billing-capability description and the regulator-mandated filing format), and one output (the regulator-acknowledged framework preserved on the regulated billing record). Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-eo-re
 
 **Name**: Resolve Residual Value and Obligations
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-eo-re
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Resolve Residual Value and Obligations | **Canonical ID** | `processes:activity-eo-retire-zkt7eq` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Decommission Enterprise Asset that recovers residual value, sanitizes data and records the resolution of residual obligations.
+**Intent and Definition**: The cohesive grouping of work within Decommission Enterprise Asset that recovers residual value, sanitizes data and records the resolution of residual obligations.
 
-**Definition**: The cohesive grouping of work within Decommission Enterprise Asset that recovers residual value, sanitizes data and records the resolution of residual obligations.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-eo-re
 | 2026-09-15 | `CR-BP-69` | Initial L3 Activity entry; lands as part of the CR-BP-69 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-resolve-residual-value-and-obligations-intake, dea:task-resolve-residual-value-and-obligatio | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Decommission Enterprise Asset that recovers residual value, sanitizes data and reco |
+| `definition` | string | no | The cohesive grouping of work within Decommission Enterprise Asset that recovers residual value, sanitizes data and … |
 | `belongs_to_business_process` | string | no | processes:process-eo-retire-rpg6d4 |
-| `cohesion_rationale` | string | no | Constituent work shares a single residual resolution concern, one input class (the disposed asset and its residual accou |
+| `cohesion_rationale` | string | no | Constituent work shares a single residual resolution concern, one input class (the disposed asset and its residual … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-eo-re
 | `composes` | `processes:task-eo-retire-confirm-mf485d` | 1 |
 | `composes` | `processes:task-eo-retire-record-dmegua` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-eo-re
 - **Cohesion rationale**: Constituent work shares a single residual resolution concern, one input class (the disposed asset and its residual accounts), and one output (recorded residual value, sanitized data and resolved obligations). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

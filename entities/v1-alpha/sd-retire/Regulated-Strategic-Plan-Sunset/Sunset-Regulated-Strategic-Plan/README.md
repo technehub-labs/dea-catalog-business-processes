@@ -4,7 +4,7 @@ This directory hosts the canonical Process record for `processes:process-sd-reti
 
 **Name**: Sunset Regulated Strategic Plan
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,13 @@ This directory hosts the canonical Process record for `processes:process-sd-reti
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Sunset Regulated Strategic Plan | **Canonical ID** | `processes:process-sd-retire-umxf3c` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
 **Intent**: manage
 
 **Definition**: (definition pending; backfill at EXT-04)
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -30,7 +30,7 @@ This directory hosts the canonical Process record for `processes:process-sd-reti
 | 2026-09-19 | `CR-BP-101a` | L3 decomposition tranche (CR-BP-101a): added | System |
 | 2026-10-27 | `CR-BP-GS-1` | Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Strategy & Direction Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under  | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -41,9 +41,9 @@ This directory hosts the canonical Process record for `processes:process-sd-reti
 | `process_type` | string | no | management |
 | `process_classification` | object | no | object: type, provenance, status |
 | `owner` | object | no | object: value, status, provenance, review_due, decision_right |
-| `trigger` | string | no | A regulated entity's supervisor-acknowledged-and-live strategic plan must be sunset because a competent regulator has re |
-| `outcome` | string | no | The regulated strategic plan is formally sunset with the regulator directive on record, the replacement plan's status pr |
-| `description` | string | no | Sunset a regulated entity's supervisor-acknowledged-and-live strategic plan under the enterprise's regulated-entity rete |
+| `trigger` | string | no | A regulated entity's supervisor-acknowledged-and-live strategic plan must be sunset because a competent regulator has … |
+| `outcome` | string | no | The regulated strategic plan is formally sunset with the regulator directive on record, the replacement plan's status … |
+| `description` | string | no | Sunset a regulated entity's supervisor-acknowledged-and-live strategic plan under the enterprise's regulated-entity … |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `process_identity` | object | no | object: boundary_face, identity_kind, is_process, is_project |
 | `process_scope` | object | no | object: includes, excludes |
@@ -64,7 +64,7 @@ This directory hosts the canonical Process record for `processes:process-sd-reti
 | :--- | :--- | :--- |
 | `part_of` | `processes:group-sd-retire-7fksad` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -80,7 +80,7 @@ This directory hosts the canonical Process record for `processes:process-sd-reti
   - `processes:activity-sd-retire-8yt6ar`
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Includes**:
 - Regulator directive or rejection notice (failed stress test triggers plan replacement; bank recovery-plan rejection by the SRB; FDIC directive to retire an inadequate resolution plan; state PUC retraction of an approved strategic plan; NHS England directive to retire a non-viable 5-year strategy)

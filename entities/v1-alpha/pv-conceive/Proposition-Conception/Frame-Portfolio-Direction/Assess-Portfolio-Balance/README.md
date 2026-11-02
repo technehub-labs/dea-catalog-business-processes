@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-co
 
 **Name**: Assess Portfolio Balance
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-pv-co
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Assess Portfolio Balance | **Canonical ID** | `processes:activity-pv-conceive-v37tza` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Frame Portfolio Direction that assesses the balance of the directed portfolio across risk, horizon, and value dimensions.
+**Intent and Definition**: The cohesive grouping of work within Frame Portfolio Direction that assesses the balance of the directed portfolio across risk, horizon, and value dimensions.
 
-**Definition**: The cohesive grouping of work within Frame Portfolio Direction that assesses the balance of the directed portfolio across risk, horizon, and value dimensions.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-pv-co
 | 2026-09-13 | `CR-BP-50` | Initial L3 Activity entry; lands as part of the CR-BP-50 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-assess-portfolio-balance-intake, dea:task-assess-portfolio-balance-verify, dea:task-assess-p | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Frame Portfolio Direction that assesses the balance of the directed portfolio acros |
+| `definition` | string | no | The cohesive grouping of work within Frame Portfolio Direction that assesses the balance of the directed portfolio … |
 | `belongs_to_business_process` | string | no | processes:process-pv-conceive-jb4xtg |
-| `cohesion_rationale` | string | no | Constituent work shares a single balance concern (portfolio composition quality), one input class (priority ordering, pr |
+| `cohesion_rationale` | string | no | Constituent work shares a single balance concern (portfolio composition quality), one input class (priority ordering … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-co
 | `composes` | `processes:task-pv-conceive-confirm-rkpp4h` | 1 |
 | `composes` | `processes:task-pv-conceive-record-vab978` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-co
 - **Cohesion rationale**: Constituent work shares a single balance concern (portfolio composition quality), one input class (priority ordering, proposition theses), and one output (the balance assessment). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

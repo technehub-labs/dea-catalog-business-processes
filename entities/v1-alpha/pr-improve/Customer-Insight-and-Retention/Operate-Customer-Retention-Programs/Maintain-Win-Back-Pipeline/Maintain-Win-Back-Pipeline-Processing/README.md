@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-pr-improve-tr
 
 **Name**: Maintain Win-Back Pipeline Processing
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-pr-improve-tr
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Maintain Win-Back Pipeline Processing | **Canonical ID** | `processes:task-pr-improve-transform-uhh9q7` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-pr-improve-k6eb79` (Maintain Win-Back Pipeline) that execute the improvement: assess the churn risk per affected party, collect and aggregate the customer feedback, execute the retention actions, and produce the improvement-ready outcomes pack conforming to the retention outcomes schema.
+**Intent and Definition**: The bounded unit of work within `processes:activity-pr-improve-k6eb79` (Maintain Win-Back Pipeline) that execute the improvement: assess the churn risk per affected party, collect and aggregate the customer feedback, execute the retention actions, and produce the improvement-ready outcomes pack conforming to the retention outcomes schema.
 
-**Definition**: The bounded unit of work within `processes:activity-pr-improve-k6eb79` (Maintain Win-Back Pipeline) that execute the improvement: assess the churn risk per affected party, collect and aggregate the customer feedback, execute the retention actions, and produce the improvement-ready outcomes pack conforming to the retention outcomes schema.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Task record for `processes:task-pr-improve-tr
 | 2026-09-13 | `CR-BP-44` | Initial L3 Activity entry; lands as part of the CR-BP-44 | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-pr-improve-k6eb79` (Maintain Win-Back Pipeline) that execute the imp |
+| `definition` | string | no | The bounded unit of work within `processes:activity-pr-improve-k6eb79` (Maintain Win-Back Pipeline) that execute the … |
 | `belongs_to_activity` | string | no | processes:activity-pr-improve-k6eb79 |
-| `trigger` | string | no | Verification certificate issued for Maintain Win-Back Pipeline; transform gate may execute the bounded work and emit the |
-| `outcome` | string | no | Bounded-work artefact produced for Maintain Win-Back Pipeline conforming to the Improve schema; processing custodian pas |
+| `trigger` | string | no | Verification certificate issued for Maintain Win-Back Pipeline; transform gate may execute the bounded work and emit … |
+| `outcome` | string | no | Bounded-work artefact produced for Maintain Win-Back Pipeline conforming to the Improve schema; processing custodian … |
 | `responsibility` | string | no | processing custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-pr-improve-tr
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

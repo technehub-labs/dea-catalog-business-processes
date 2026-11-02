@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-d
 
 **Name**: Organization and Role Design
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-d
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Organization and Role Design | **Canonical ID** | `processes:group-ao-design-pjrfr9` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organises the Business Process responsibilities of designing the organization, its roles, its competency framework, and its agent topology in the AgencyAndOrganization x Design context. Substrate-neutral per ADR-ECF-002 section 5: covers biological, artificial, and hybrid agents. v2.4.0 grounding (domain-grounding.md §3.3).
+**Intent and Definition**: The bounded Process Group that organises the Business Process responsibilities of designing the organization, its roles, its competency framework, and its agent topology in the AgencyAndOrganization x Design context. Substrate-neutral per ADR-ECF-002 section 5: covers biological, artificial, and hybrid agents. v2.4.0 grounding (domain-grounding.md §3.3).
 
-**Definition**: The bounded Process Group that organises the Business Process responsibilities of designing the organization, its roles, its competency framework, and its agent topology in the AgencyAndOrganization x Design context. Substrate-neutral per ADR-ECF-002 section 5: covers biological, artificial, and hybrid agents. v2.4.0 grounding (domain-grounding.md §3.3).
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -30,13 +28,13 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-d
 | 2026-09-22 | `CR-BP-106` | Composes edge added for the regulator-tied Design Regulated Role Architecture BP (process-ao-design-2fkvhx), admitted under CR-BP-105 escape-clause discovery outcome (ADMIT-CANONICAL). The PG retains  | System |
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded Process Group that organises the Business Process responsibilities of designing the organization, its roles, |
+| `definition` | string | no | The bounded Process Group that organises the Business Process responsibilities of designing the organization, its … |
 | `process_context` | string | no | processes:pc-ao-design-a4hq2r |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[3] | no | array of 3 item(s) |
@@ -58,11 +56,11 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-d
 | `composes` | `processes:process-ao-design-8fzp2b` | 1 |
 | `composes` | `processes:process-ao-design-2fkvhx` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

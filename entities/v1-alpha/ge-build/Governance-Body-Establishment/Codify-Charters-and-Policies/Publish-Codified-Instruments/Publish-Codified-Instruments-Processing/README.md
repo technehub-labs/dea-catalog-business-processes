@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-ge-build-tran
 
 **Name**: Publish Codified Instruments Processing
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-ge-build-tran
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Publish Codified Instruments Processing | **Canonical ID** | `processes:task-ge-build-transform-cw44rw` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-ge-build-fzx549` (Publish Codified Instruments) that execute the build: codify the charters and policies, constitute the bodies, establish the operating cycles and reporting lines, establish the risk registers, deploy the monitoring tooling, and produce the build-ready apparatus inventory conforming to the governance-apparatus schema.
+**Intent and Definition**: The bounded unit of work within `processes:activity-ge-build-fzx549` (Publish Codified Instruments) that execute the build: codify the charters and policies, constitute the bodies, establish the operating cycles and reporting lines, establish the risk registers, deploy the monitoring tooling, and produce the build-ready apparatus inventory conforming to the governance-apparatus schema.
 
-**Definition**: The bounded unit of work within `processes:activity-ge-build-fzx549` (Publish Codified Instruments) that execute the build: codify the charters and policies, constitute the bodies, establish the operating cycles and reporting lines, establish the risk registers, deploy the monitoring tooling, and produce the build-ready apparatus inventory conforming to the governance-apparatus schema.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Task record for `processes:task-ge-build-tran
 | 2026-09-13 | `CR-BP-48` | Initial L3 Activity entry; lands as part of the CR-BP-48 | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-ge-build-fzx549` (Publish Codified Instruments) that execute the bui |
+| `definition` | string | no | The bounded unit of work within `processes:activity-ge-build-fzx549` (Publish Codified Instruments) that execute the … |
 | `belongs_to_activity` | string | no | processes:activity-ge-build-fzx549 |
-| `trigger` | string | no | Verification certificate issued for Publish Codified Instruments; transform gate may execute the bounded work and emit t |
-| `outcome` | string | no | Bounded-work artefact produced for Publish Codified Instruments conforming to the Build schema; processing custodian pas |
+| `trigger` | string | no | Verification certificate issued for Publish Codified Instruments; transform gate may execute the bounded work and emit … |
+| `outcome` | string | no | Bounded-work artefact produced for Publish Codified Instruments conforming to the Build schema; processing custodian … |
 | `responsibility` | string | no | processing custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-ge-build-tran
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

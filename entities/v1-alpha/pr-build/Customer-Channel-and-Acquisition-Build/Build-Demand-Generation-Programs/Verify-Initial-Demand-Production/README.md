@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-pr-bu
 
 **Name**: Verify Initial Demand Production
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-pr-bu
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Verify Initial Demand Production | **Canonical ID** | `processes:activity-pr-build-ppw8cp` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Build Demand Generation Programs that verifies the engine produces initial demand consistent with the committed demand model.
+**Intent and Definition**: The cohesive grouping of work within Build Demand Generation Programs that verifies the engine produces initial demand consistent with the committed demand model.
 
-**Definition**: The cohesive grouping of work within Build Demand Generation Programs that verifies the engine produces initial demand consistent with the committed demand model.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-pr-bu
 | 2026-09-13 | `CR-BP-45` | Initial L3 Activity entry; lands as part of the CR-BP-45 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-verify-initial-demand-production-intake, dea:task-verify-initial-demand-production-verify, d | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Build Demand Generation Programs that verifies the engine produces initial demand c |
+| `definition` | string | no | The cohesive grouping of work within Build Demand Generation Programs that verifies the engine produces initial demand … |
 | `belongs_to_business_process` | string | no | processes:process-pr-build-4kb2pt |
-| `cohesion_rationale` | string | no | Constituent work shares a single verification concern (produced demand versus model expectation), one reference class (t |
+| `cohesion_rationale` | string | no | Constituent work shares a single verification concern (produced demand versus model expectation), one reference class … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-pr-bu
 | `composes` | `processes:task-pr-build-confirm-2g4qqf` | 1 |
 | `composes` | `processes:task-pr-build-record-y4jz6q` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-pr-bu
 - **Cohesion rationale**: Constituent work shares a single verification concern (produced demand versus model expectation), one reference class (the demand model), and one output (the initial-demand determination). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

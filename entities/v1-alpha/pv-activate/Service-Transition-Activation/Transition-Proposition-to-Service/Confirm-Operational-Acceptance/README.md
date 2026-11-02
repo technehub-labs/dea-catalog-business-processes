@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-ac
 
 **Name**: Confirm Operational Acceptance
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-pv-ac
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Confirm Operational Acceptance | **Canonical ID** | `processes:activity-pv-activate-hxb9wf` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Transition Proposition to Service that obtains formal operational acceptance with ownership sign-off and acceptance evidence.
+**Intent and Definition**: The cohesive grouping of work within Transition Proposition to Service that obtains formal operational acceptance with ownership sign-off and acceptance evidence.
 
-**Definition**: The cohesive grouping of work within Transition Proposition to Service that obtains formal operational acceptance with ownership sign-off and acceptance evidence.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-pv-ac
 | 2026-09-15 | `CR-BP-69` | Initial L3 Activity entry; lands as part of the CR-BP-69 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-confirm-operational-acceptance-intake, dea:task-confirm-operational-acceptance-verify, dea:t | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Transition Proposition to Service that obtains formal operational acceptance with o |
+| `definition` | string | no | The cohesive grouping of work within Transition Proposition to Service that obtains formal operational acceptance with … |
 | `belongs_to_business_process` | string | no | processes:process-pv-activate-5686v7 |
-| `cohesion_rationale` | string | no | Constituent work shares a single acceptance confirmation concern, one input class (the transitioned service instance), a |
+| `cohesion_rationale` | string | no | Constituent work shares a single acceptance confirmation concern, one input class (the transitioned service instance) … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-ac
 | `composes` | `processes:task-pv-activate-confirm-c7r2ns` | 1 |
 | `composes` | `processes:task-pv-activate-record-jevchn` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-ac
 - **Cohesion rationale**: Constituent work shares a single acceptance confirmation concern, one input class (the transitioned service instance), and one output (the operational acceptance record). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

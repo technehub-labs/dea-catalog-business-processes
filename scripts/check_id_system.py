@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 check_id_system.py
-CR-BP-mv1: ID System gate (IDM-001..007).
+CR-BP-mv1: ID System gate (IDM-001..007); CR-BP-222: narrative id currency (IDM-009).
 
 Enforces the org-wide id system spec (dea-metaframework/docs/id-system.md):
 every canonical record's id matches the org-wide form, every cross-reference
@@ -24,6 +24,9 @@ Blocking rules:
   IDM-005  filesystem path derivable from id
   IDM-006  no legacy dea:* ids in structured reference fields
   IDM-007  every entity dir has README.md
+  IDM-009  no legacy dea:* ids in current-state narrative fields
+           (CR-BP-222; change_history subtrees and registered
+           known_residuals are exempt)
   IDM-008  org-wide file coherence for files changed in a PR (--base-ref mode):
            every changed record YAML keeps path-id consistency, id form, and
            ref resolution; changed CR/ADR markdown carries no legacy path
@@ -244,6 +247,58 @@ def _check_idm007(path: Path) -> str | None:
     return None
 
 
+# ----------------------------------------------------------------------------
+# IDM-009: narrative id currency (CR-BP-222)
+# ----------------------------------------------------------------------------
+
+# The `*` (not `+`) quantifier also catches source-string truncations
+# such as `dea:pc-fa-re` / `dea:process-conduct-`.
+_LEGACY_NARRATIVE_RE = re.compile(
+    r"dea:(?:pc|group|process|activity|task|scope)-[a-z0-9-]*"
+)
+
+
+def _residual_tokens() -> set[str]:
+    """Legacy tokens registered in known_residuals (CR-BP-222 exemption)."""
+    tokens: set[str] = set()
+    for v in _residual_values():
+        tokens.update(_LEGACY_NARRATIVE_RE.findall(v))
+    return tokens
+
+
+def _check_idm009(record: dict, path: Path) -> list[str]:
+    """IDM-009: no legacy dea:* ids in current-state narrative fields.
+
+    Companion to IDM-006, which covers structured reference fields only.
+    Only `change_history` subtrees are exempt (historical attestation
+    prose describing actions taken when the legacy ids were current;
+    landed history is immutable), as are values registered in
+    reconciliation/migration-id-map.yaml known_residuals.
+    """
+    errors: list[str] = []
+    residual_tokens = _residual_tokens()
+
+    def walk(obj, field=""):
+        if isinstance(obj, str):
+            for token in _LEGACY_NARRATIVE_RE.findall(obj):
+                if token in residual_tokens:
+                    continue
+                errors.append(
+                    f"IDM-009: legacy id in narrative field {field!r} of {path.name}: {token}"
+                )
+        elif isinstance(obj, dict):
+            for k, v in obj.items():
+                if k == "change_history":
+                    continue  # exempt: historical audit trail
+                walk(v, k)
+        elif isinstance(obj, list):
+            for v in obj:
+                walk(v, field)
+
+    walk(record)
+    return errors
+
+
 def _load_all_records() -> dict[str, tuple[Path, dict, str]]:
     """Load canonical records only (id-derived filenames in the containment tree)."""
     records = {}
@@ -314,6 +369,9 @@ def _check_idm008_records(changed: list[str], id_map: dict[str, str]) -> list[di
                              "path": rel, "message": e})
         for e in _check_idm006(record, p):
             findings.append({"rule": "IDM-008/IDM-006", "record": rid,
+                             "path": rel, "message": e})
+        for e in _check_idm009(record, p):
+            findings.append({"rule": "IDM-008/IDM-009", "record": rid,
                              "path": rel, "message": e})
     return findings
 
@@ -435,6 +493,9 @@ def main() -> int:
         e = _check_idm007(path)
         if e:
             findings.append({"rule": "IDM-007", "record": record_id, "path": str(path), "message": e})
+        # IDM-009 (CR-BP-222)
+        for e in _check_idm009(record, path):
+            findings.append({"rule": "IDM-009", "record": record_id, "path": str(path), "message": e})
 
     blocking = [f for f in findings if not f.get("advisory", False)]
     verdict = "NON-CONFORMANT" if blocking else "CONFORMANT"
@@ -447,7 +508,7 @@ def main() -> int:
             "blocking": len(blocking),
         }, indent=2))
     else:
-        print(f"ID System (CR-BP-mv1 IDM-001..007): {verdict}")
+        print(f"ID System (CR-BP-mv1 IDM-001..007; CR-BP-222 IDM-009): {verdict}")
         print(f"  Records checked: {len(records)}")
         print(f"  Findings: {len(findings)}")
         for f in findings[:20]:

@@ -26,7 +26,7 @@ owner:
   decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
 description: 'Bring an adopted policy instrument, mandate or charter from adopted-but-dormant to in-force:
-  verify commencement conditions, promulgate the instrument, and confirm effectiveness, within the dea:pc-ge-activate
+  verify commencement conditions, promulgate the instrument, and confirm effectiveness, within the processes:pc-ge-activate-hxtfcv
   Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement
   for the testable outcome the process produces. '
 trigger: 'A policy instrument, mandate or charter has been adopted and its commencement conditions are

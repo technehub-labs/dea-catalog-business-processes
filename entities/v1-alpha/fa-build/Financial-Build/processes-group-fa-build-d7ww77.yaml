@@ -68,7 +68,7 @@ composes:
   asserted_by: dea-team
   rationale: 'The L2 process belongs to this cell per register v2 (CR-BP-21e.1).
 
-    The PC record (dea:pc-fa-build) lists this process in its
+    The PC record (processes:pc-fa-build-pztsp9) lists this process in its
 
     `processes:` list but the PG composes[] was missing the entry.
 
@@ -114,7 +114,7 @@ evidence:
 
     '
   strength: E4
-  reference: entities/v1-alpha/dea:group-customer-lifecycle-management/research/l1-register.yaml
+  reference: entities/v1-alpha/processes:group-pr-operate-7ab3ma/research/l1-register.yaml
 metadata:
   established_by: CR-BP-21e.1
   established_at: '2026-09-08'

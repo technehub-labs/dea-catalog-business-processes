@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-i
 
 **Name**: Governance Review and Learning
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-i
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Governance Review and Learning | **Canonical ID** | `processes:group-ge-improve-s9r3qj` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organizes the Business Process responsibilities of improving governance effectiveness in the GovernanceAndExistence x Improve context. This group captures the work of reviewing governance effectiveness, scoring audit findings, and feeding lessons back into Conceive/Design/Build/Operate cycles.
+**Intent and Definition**: The bounded Process Group that organizes the Business Process responsibilities of improving governance effectiveness in the GovernanceAndExistence x Improve context. This group captures the work of reviewing governance effectiveness, scoring audit findings, and feeding lessons back into Conceive/Design/Build/Operate cycles.
 
-**Definition**: The bounded Process Group that organizes the Business Process responsibilities of improving governance effectiveness in the GovernanceAndExistence x Improve context. This group captures the work of reviewing governance effectiveness, scoring audit findings, and feeding lessons back into Conceive/Design/Build/Operate cycles.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -30,13 +28,13 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-i
 | 2026-09-08 | `CR-BP-21f.1` | Added dea:process-score-audit-findings and dea:process-improve-policy-and-control-framework composes edges (CR-BP-21f.1 GE completion). | System |
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded Process Group that organizes the Business Process responsibilities of improving governance effectiveness in  |
+| `definition` | string | no | The bounded Process Group that organizes the Business Process responsibilities of improving governance effectiveness in … |
 | `process_context` | string | no | processes:pc-ge-improve-c78ppp |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[3] | no | array of 3 item(s) |
@@ -56,11 +54,11 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-i
 | `composes` | `processes:process-ge-improve-axtq3b` | 1 |
 | `composes` | `processes:process-ge-improve-u3g5dh` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

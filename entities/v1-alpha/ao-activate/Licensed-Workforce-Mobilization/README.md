@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-a
 
 **Name**: Licensed Workforce Mobilization
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,9 +13,9 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-a
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Licensed Workforce Mobilization | **Canonical ID** | `processes:group-ao-activate-jjx738` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organises the Business Process
+**Intent and Definition**: The bounded Process Group that organises the Business Process
 responsibilities of activating a workforce whose individuals must
 hold regulator-issued licences or registrations before performing
 live work, in the AgencyAndOrganization x Activate context where
@@ -25,21 +25,11 @@ notification create a distinct group-level mobilization concern
 separate from general workforce build and from steady-state
 performance management.
 
-**Definition**: The bounded Process Group that organises the Business Process
-responsibilities of activating a workforce whose individuals must
-hold regulator-issued licences or registrations before performing
-live work, in the AgencyAndOrganization x Activate context where
-regulator-controlled scope, fitness-and-propriety attestation,
-supervised-training completion, and continuing-supervisor
-notification create a distinct group-level mobilization concern
-separate from general workforce build and from steady-state
-performance management.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 (governance and provenance to be backfilled at EXT-04)
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -62,11 +52,11 @@ performance management.
 | :--- | :--- | :--- |
 | `composes` | `processes:process-ao-activate-jqxtqn` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

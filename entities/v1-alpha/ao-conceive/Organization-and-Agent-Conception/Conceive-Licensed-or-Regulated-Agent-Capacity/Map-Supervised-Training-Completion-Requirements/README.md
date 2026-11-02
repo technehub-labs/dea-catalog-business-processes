@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 
 **Name**: Map Supervised-Training Completion Requirements
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Map Supervised-Training Completion Requirements | **Canonical ID** | `processes:activity-ao-conceive-fmxtqr` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Conceive Licensed or Regulated Agent Capacity that Map the supervised-training completion requirements for each regulator-licensed role: the training plan, the supervised-completion evidence class, and the regulator recording path (SMCR Statement of Responsibilities; state healthcare CE; NAIC CE; FAA / EASA type-rating; SRA Continuing Competence; bar MCLE). Shared concern: supervised-training mapping. Input: the regulator licensing taxonomy; the supervised-training matrix. Output: the mapped supervised-training completion requirements.
+**Intent and Definition**: The cohesive grouping of work within Conceive Licensed or Regulated Agent Capacity that Map the supervised-training completion requirements for each regulator-licensed role: the training plan, the supervised-completion evidence class, and the regulator recording path (SMCR Statement of Responsibilities; state healthcare CE; NAIC CE; FAA / EASA type-rating; SRA Continuing Competence; bar MCLE). Shared concern: supervised-training mapping. Input: the regulator licensing taxonomy; the supervised-training matrix. Output: the mapped supervised-training completion requirements.
 
-**Definition**: The cohesive grouping of work within Conceive Licensed or Regulated Agent Capacity that Map the supervised-training completion requirements for each regulator-licensed role: the training plan, the supervised-completion evidence class, and the regulator recording path (SMCR Statement of Responsibilities; state healthcare CE; NAIC CE; FAA / EASA type-rating; SRA Continuing Competence; bar MCLE). Shared concern: supervised-training mapping. Input: the regulator licensing taxonomy; the supervised-training matrix. Output: the mapped supervised-training completion requirements.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -35,16 +33,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-conceive-vawc77, processes:task-ao-conceive-rsbgmt, processes:task-ao-conceive-fdkr | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-conceive-intake-xcxfzr, processes:task-ao-conceive-verify-y9xpgd, processes:task-ao | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Conceive Licensed or Regulated Agent Capacity that Map the supervised-training comp |
+| `definition` | string | no | The cohesive grouping of work within Conceive Licensed or Regulated Agent Capacity that Map the supervised-training … |
 | `belongs_to_business_process` | string | no | processes:process-ao-conceive-pnrhem |
-| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single map supervised-training |
+| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single map … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -58,7 +56,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 | `composes` | `processes:task-ao-conceive-confirm-jcbwtd` | 1 |
 | `composes` | `processes:task-ao-conceive-record-27fbra` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -66,7 +64,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 - **Cohesion rationale**: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single map supervised-training completion requirements concern, one input class, and one output (the map supervised-training completion requirements record on the regulated personnel record).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

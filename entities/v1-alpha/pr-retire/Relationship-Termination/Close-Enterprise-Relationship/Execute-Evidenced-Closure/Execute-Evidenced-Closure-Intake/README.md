@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-pr-retire-int
 
 **Name**: Execute Evidenced Closure Intake
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-pr-retire-int
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Execute Evidenced Closure Intake | **Canonical ID** | `processes:task-pr-retire-intake-94pyf5` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-pr-retire-smrebq` (Execute Evidenced Closure) that accept custody of the relationship-closure input pack (close-out plan, outstanding-obligations inventory, records-and-rights register) and persist a registered intake manifest binding the inputs to the closure case file.
+**Intent and Definition**: The bounded unit of work within `processes:activity-pr-retire-smrebq` (Execute Evidenced Closure) that accept custody of the relationship-closure input pack (close-out plan, outstanding-obligations inventory, records-and-rights register) and persist a registered intake manifest binding the inputs to the closure case file.
 
-**Definition**: The bounded unit of work within `processes:activity-pr-retire-smrebq` (Execute Evidenced Closure) that accept custody of the relationship-closure input pack (close-out plan, outstanding-obligations inventory, records-and-rights register) and persist a registered intake manifest binding the inputs to the closure case file.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Task record for `processes:task-pr-retire-int
 | 2026-09-15 | `CR-BP-69` | Initial L3 Activity entry; lands as part of the CR-BP-69 | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-pr-retire-smrebq` (Execute Evidenced Closure) that accept custody of |
+| `definition` | string | no | The bounded unit of work within `processes:activity-pr-retire-smrebq` (Execute Evidenced Closure) that accept custody … |
 | `belongs_to_activity` | string | no | processes:activity-pr-retire-smrebq |
-| `trigger` | string | no | Custody of the Retire-stage input pack for Execute Evidenced Closure ready for intake; predecessor phase has produced th |
-| `outcome` | string | no | Intake manifest registered and bound to the Execute Evidenced Closure case file; registered intake custodian passes cust |
+| `trigger` | string | no | Custody of the Retire-stage input pack for Execute Evidenced Closure ready for intake; predecessor phase has produced … |
+| `outcome` | string | no | Intake manifest registered and bound to the Execute Evidenced Closure case file; registered intake custodian passes … |
 | `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-pr-retire-int
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

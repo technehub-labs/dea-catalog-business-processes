@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-pr-activate-v
 
 **Name**: Resolve Beneficial Ownership Verification
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-pr-activate-v
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Resolve Beneficial Ownership Verification | **Canonical ID** | `processes:task-pr-activate-verify-w58mmf` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-pr-activate-ncn924` (Resolve Beneficial Ownership) that execute the multi-factor identity, sanctions/PEP, and adverse-media verification checks against the registered intake manifest, reconcile the verification results, and emit a verification certificate naming the verification methods applied.
+**Intent and Definition**: The bounded unit of work within `processes:activity-pr-activate-ncn924` (Resolve Beneficial Ownership) that execute the multi-factor identity, sanctions/PEP, and adverse-media verification checks against the registered intake manifest, reconcile the verification results, and emit a verification certificate naming the verification methods applied.
 
-**Definition**: The bounded unit of work within `processes:activity-pr-activate-ncn924` (Resolve Beneficial Ownership) that execute the multi-factor identity, sanctions/PEP, and adverse-media verification checks against the registered intake manifest, reconcile the verification results, and emit a verification certificate naming the verification methods applied.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Task record for `processes:task-pr-activate-v
 | 2026-09-16 | `CR-BP-77` | Initial L3 Activity entry; lands as part of the CR-BP-77 | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-pr-activate-ncn924` (Resolve Beneficial Ownership) that execute the  |
+| `definition` | string | no | The bounded unit of work within `processes:activity-pr-activate-ncn924` (Resolve Beneficial Ownership) that execute the … |
 | `belongs_to_activity` | string | no | processes:activity-pr-activate-ncn924 |
-| `trigger` | string | no | Intake manifest registered for Resolve Beneficial Ownership; verification gate may execute the contract and quality-crit |
-| `outcome` | string | no | Verification certificate issued for Resolve Beneficial Ownership naming verification methods applied and any deviations  |
+| `trigger` | string | no | Intake manifest registered for Resolve Beneficial Ownership; verification gate may execute the contract and … |
+| `outcome` | string | no | Verification certificate issued for Resolve Beneficial Ownership naming verification methods applied and any deviations … |
 | `responsibility` | string | no | verification custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-pr-activate-v
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

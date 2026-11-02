@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-ao-de
 
 **Name**: Organization and Agent Topology Design
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,11 +13,11 @@ This directory hosts the canonical ProcessContext record for `processes:pc-ao-de
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Organization and Agent Topology Design | **Canonical ID** | `processes:pc-ao-design-a4hq2r` |
 
-## 1. Executive Summary / Intent
+## 2. Executive Summary / Intent
 
 The analytical work of producing designs for organizational architecture, agent topology, role definitions, and authority chains.
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 - **Regulatory Evidence Base**:
@@ -27,7 +27,7 @@ The analytical work of producing designs for organizational architecture, agent 
   - Aviation: EASA / FAA crew licensing (type-rated licences)
   - Professional Services: UK SRA / US State Bar admissions
 
-## 3. Behavioral Boundaries (Cell Charter)
+## 4. Behavioral Boundaries (Cell Charter)
 
 | Scope Type | Description |
 | :--- | :--- |
@@ -35,7 +35,7 @@ The analytical work of producing designs for organizational architecture, agent 
 | Out of Scope (exclusions) | - Agent capacity strategy framing (Conceive stage; adjacent context)<br>- Agent acquisition (Build stage; adjacent context)<br>- Strategic direction design (strategy-direction x design; adjacent domain)<br>- Product design (product-value x design; adjacent domain) |
 | Adjacent Cells | - processes:pc-ao-conceive-wtq4cr (adjacent context): agentive flow between Design and the adjacent cell.<br>- processes:pc-ao-build-pjk4rz (adjacent context): agentive flow between Design and the adjacent cell.<br>- processes:pc-ao-operate-zfevmp (adjacent context): agentive flow between Design and the adjacent cell.<br>- processes:pc-ao-improve-qkmh6b (adjacent context): agentive flow between Design and the adjacent cell. |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename).
 
@@ -175,7 +175,7 @@ ao-design/
 _(Full L4 task lists for each L3 activity are available in their respective subdirectories.)_
 </details>
 
-## 5. Properties and Relationships
+## 6. Properties and Relationships
 
 **Properties**
 
@@ -183,12 +183,12 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | :--- | :--- | :--- | :--- |
 | `domain` | string | no | AgencyAndOrganization |
 | `lifecycle_stage` | string | no | Design |
-| `definition` | string | no | The bounded enterprise context for **designing** the organization structure, role catalogue, competency framework, and a |
+| `definition` | string | no | The bounded enterprise context for **designing** the organization structure, role catalogue, competency framework, and … |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[4] | no | array of 4 item(s) |
 | `adjacent_contexts` | array[4] | no | array of 4 item(s) |
 | `processes` | array[4] | no | array of 4 item(s) |
-| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
+| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions … |
 | `status` | string | no | candidate |
 | `established_by` | string | no | CR-BP-21b |
 | `established_at` | string | no | 2026-09-07 |
@@ -204,7 +204,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `processes` | `processes:process-ao-design-rve8j5` | 1 |
 | `processes` | `processes:process-ao-design-8fzp2b` | 1 |
 
-## 6. Operational, Control and Metrics Details
+## 7. Operational, Control and Metrics Details
 
 **Inputs, Outputs and Interfaces**: _(pending; backfill at EXT-04)_
 
@@ -216,7 +216,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 
 _(Pending EXT-04)_
 
-## 7. Technical Metadata
+## 8. Technical Metadata
 
 - **Source YAML**: record YAML in the same directory as this README
 - **Record version**: 1.0.0

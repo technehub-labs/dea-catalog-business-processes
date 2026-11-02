@@ -27,7 +27,7 @@ owner:
 process_specialization: []
 description: 'Operate the Develop Governance Strategy L2 process within the
 
-  dea:pc-ge-c Cell Charter. See trigger and outcome for
+  processes:pc-ge-conceive-b5xwpd Cell Charter. See trigger and outcome for
 
   the bounded work this process owns; see identity.outcome_statement
 
@@ -178,7 +178,7 @@ inputs:
   type: information
   name: 'Develop Governance Strategy: working inputs (information)'
   description: 'Derived from the record''s documented description and trigger: the process Operate the
-    Develop Governance Strategy L2 process within the dea:pc-ge-c Cell Charter. See trigger and outcome
+    Develop Governance Strategy L2 process within the processes:pc-ge-conceive-b5xwpd Cell Charter. See trigger and outcome
     for the bounded work this process owns'
   source: Record documented content (description + trigger fields)
   mandatory: true

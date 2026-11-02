@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ge-co
 
 **Name**: Commit Risk Framework Direction
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ge-co
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Commit Risk Framework Direction | **Canonical ID** | `processes:activity-ge-conceive-j72hwy` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Frame Risk Framework Direction that consolidates appetite, tolerance bands, and posture into the committed risk framework direction.
+**Intent and Definition**: The cohesive grouping of work within Frame Risk Framework Direction that consolidates appetite, tolerance bands, and posture into the committed risk framework direction.
 
-**Definition**: The cohesive grouping of work within Frame Risk Framework Direction that consolidates appetite, tolerance bands, and posture into the committed risk framework direction.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-ge-co
 | 2026-09-13 | `CR-BP-48` | Initial L3 Activity entry; lands as part of the CR-BP-48 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-commit-risk-framework-direction-intake, dea:task-commit-risk-framework-direction-verify, dea | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Frame Risk Framework Direction that consolidates appetite, tolerance bands, and pos |
+| `definition` | string | no | The cohesive grouping of work within Frame Risk Framework Direction that consolidates appetite, tolerance bands, and … |
 | `belongs_to_business_process` | string | no | processes:process-ge-conceive-6qnkhh |
-| `cohesion_rationale` | string | no | Constituent work shares a single consolidation-and-commitment concern, one artifact (the risk framework direction docume |
+| `cohesion_rationale` | string | no | Constituent work shares a single consolidation-and-commitment concern, one artifact (the risk framework direction … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-ge-co
 | `composes` | `processes:task-ge-conceive-confirm-2eb4rp` | 1 |
 | `composes` | `processes:task-ge-conceive-record-ak9ee9` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-ge-co
 - **Cohesion rationale**: Constituent work shares a single consolidation-and-commitment concern, one artifact (the risk framework direction document), and a common terminus (readiness for framework design). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

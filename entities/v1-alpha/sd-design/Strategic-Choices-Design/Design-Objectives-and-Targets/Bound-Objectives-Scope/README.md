@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-de
 
 **Name**: Bound Objectives Scope
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-sd-de
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Bound Objectives Scope | **Canonical ID** | `processes:activity-sd-design-ck5dud` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Design Objectives and Targets that bounds the scope of objectives and targets the chosen strategic option requires.
+**Intent and Definition**: The cohesive grouping of work within Design Objectives and Targets that bounds the scope of objectives and targets the chosen strategic option requires.
 
-**Definition**: The cohesive grouping of work within Design Objectives and Targets that bounds the scope of objectives and targets the chosen strategic option requires.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-sd-de
 | 2026-09-13 | `CR-BP-54` | Initial L3 Activity entry; lands as part of the CR-BP-54 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-bound-objectives-scope-intake, dea:task-bound-objectives-scope-verify, dea:task-bound-object | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Design Objectives and Targets that bounds the scope of objectives and targets the c |
+| `definition` | string | no | The cohesive grouping of work within Design Objectives and Targets that bounds the scope of objectives and targets the … |
 | `belongs_to_business_process` | string | no | processes:process-sd-design-vdwkmh |
-| `cohesion_rationale` | string | no | Constituent work shares a single scope concern (option to bounded objectives scope), one input class (the chosen strateg |
+| `cohesion_rationale` | string | no | Constituent work shares a single scope concern (option to bounded objectives scope), one input class (the chosen … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-de
 | `composes` | `processes:task-sd-design-confirm-zhjd4u` | 1 |
 | `composes` | `processes:task-sd-design-record-2khy6j` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-de
 - **Cohesion rationale**: Constituent work shares a single scope concern (option to bounded objectives scope), one input class (the chosen strategic option, evaluation criteria), and one output (the bounded scope). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

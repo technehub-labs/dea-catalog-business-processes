@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ge-im
 
 **Name**: Score Finding Severity
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ge-im
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Score Finding Severity | **Canonical ID** | `processes:activity-ge-improve-nz4rpa` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Score Audit Findings that scores each delivered audit finding for severity, applying the audit framework rubric and assurance thresholds.
+**Intent and Definition**: The cohesive grouping of work within Score Audit Findings that scores each delivered audit finding for severity, applying the audit framework rubric and assurance thresholds.
 
-**Definition**: The cohesive grouping of work within Score Audit Findings that scores each delivered audit finding for severity, applying the audit framework rubric and assurance thresholds.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -30,16 +28,16 @@ This directory hosts the canonical Activity record for `processes:activity-ge-im
 | 2026-09-13 | `CR-BP-49` | Initial L3 Activity entry; lands as part of the CR-BP-49 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-score-finding-severity-intake, dea:task-score-finding-severity-verify, dea:task-score-findin | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Score Audit Findings that scores each delivered audit finding for severity, applyin |
+| `definition` | string | no | The cohesive grouping of work within Score Audit Findings that scores each delivered audit finding for severity … |
 | `belongs_to_business_process` | string | no | processes:process-ge-improve-axtq3b |
-| `cohesion_rationale` | string | no | Constituent work shares a single severity concern (finding to severity grade), one input class (the delivered audit repo |
+| `cohesion_rationale` | string | no | Constituent work shares a single severity concern (finding to severity grade), one input class (the delivered audit … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -53,7 +51,7 @@ This directory hosts the canonical Activity record for `processes:activity-ge-im
 | `composes` | `processes:task-ge-improve-confirm-fmd8uz` | 1 |
 | `composes` | `processes:task-ge-improve-record-x2jbvc` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -61,7 +59,7 @@ This directory hosts the canonical Activity record for `processes:activity-ge-im
 - **Cohesion rationale**: Constituent work shares a single severity concern (finding to severity grade), one input class (the delivered audit report), and one output (severity-scored findings). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

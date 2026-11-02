@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-im
 
 **Name**: Design Control Refinements
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-fa-im
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Design Control Refinements | **Canonical ID** | `processes:activity-fa-improve-g6x3fj` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Refine Financial Controls and Policies that designs the refinements closing the analyzed control findings.
+**Intent and Definition**: The cohesive grouping of work within Refine Financial Controls and Policies that designs the refinements closing the analyzed control findings.
 
-**Definition**: The cohesive grouping of work within Refine Financial Controls and Policies that designs the refinements closing the analyzed control findings.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-fa-im
 | 2026-09-13 | `CR-BP-53` | Initial L3 Activity entry; lands as part of the CR-BP-53 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-design-control-refinements-intake, dea:task-design-control-refinements-verify, dea:task-desi | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Refine Financial Controls and Policies that designs the refinements closing the ana |
+| `definition` | string | no | The cohesive grouping of work within Refine Financial Controls and Policies that designs the refinements closing the … |
 | `belongs_to_business_process` | string | no | processes:process-fa-improve-cdtsbq |
-| `cohesion_rationale` | string | no | Constituent work shares a single design concern (finding to refined control), one reference class (the existing controls |
+| `cohesion_rationale` | string | no | Constituent work shares a single design concern (finding to refined control), one reference class (the existing … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-im
 | `composes` | `processes:task-fa-improve-confirm-4nwy7j` | 1 |
 | `composes` | `processes:task-fa-improve-record-gz5ga4` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-im
 - **Cohesion rationale**: Constituent work shares a single design concern (finding to refined control), one reference class (the existing controls and policies design), and one output (the refinement designs). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

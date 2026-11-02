@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-re
 
 **Name**: Maintain Reserving Discipline
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-fa-re
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Maintain Reserving Discipline | **Canonical ID** | `processes:activity-fa-retire-uuqbe9` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Conclude Regulated Run-Off that maintains the actuarial reserve, capital adequacy, and asset-liability matching discipline throughout the run-off period, with periodic reviews and regulator reporting per the controlling regime's reserving expectations.
+**Intent and Definition**: The cohesive grouping of work within Conclude Regulated Run-Off that maintains the actuarial reserve, capital adequacy, and asset-liability matching discipline throughout the run-off period, with periodic reviews and regulator reporting per the controlling regime's reserving expectations.
 
-**Definition**: The cohesive grouping of work within Conclude Regulated Run-Off that maintains the actuarial reserve, capital adequacy, and asset-liability matching discipline throughout the run-off period, with periodic reviews and regulator reporting per the controlling regime's reserving expectations.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-fa-re
 | 2026-09-16 | `CR-BP-77` | Initial L3 Activity entry; lands as part of the CR-BP-77 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-maintain-reserving-discipline-intake, dea:task-maintain-reserving-discipline-verify, dea:tas | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Conclude Regulated Run-Off that maintains the actuarial reserve, capital adequacy,  |
+| `definition` | string | no | The cohesive grouping of work within Conclude Regulated Run-Off that maintains the actuarial reserve, capital adequacy … |
 | `belongs_to_business_process` | string | no | processes:process-fa-retire-wkbrsa |
-| `cohesion_rationale` | string | no | Constituent work shares a single reserving discipline concern, one input class (claim runoff experience, asset valuation |
+| `cohesion_rationale` | string | no | Constituent work shares a single reserving discipline concern, one input class (claim runoff experience, asset … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-re
 | `composes` | `processes:task-fa-retire-confirm-9z6n8d` | 1 |
 | `composes` | `processes:task-fa-retire-record-66qqzn` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-re
 - **Cohesion rationale**: Constituent work shares a single reserving discipline concern, one input class (claim runoff experience, asset valuations, liability cashflow projections, and the controlling regime's reserving standard), and one output (the maintained reserve with periodic actuarial certification and any capital or asset-liability corrective action). Cohesion score 8/9 assessed at deposition (CR-BP-32 section 6): cadence is regime-driven and the discipline integrates multiple actuarial reviews.
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

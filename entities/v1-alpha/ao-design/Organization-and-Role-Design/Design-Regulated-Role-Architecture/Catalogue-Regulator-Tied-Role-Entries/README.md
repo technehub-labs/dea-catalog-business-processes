@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 
 **Name**: Catalogue Regulator-Tied Role Entries
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Catalogue Regulator-Tied Role Entries | **Canonical ID** | `processes:activity-ao-design-jbf2v9` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Design Regulated Role Architecture that Catalogue the regulator-tied role entries in the role catalogue: each role authority, signing capacity, controlled-function designation (FCA SMCR CF1..CF11), the regulator licensing basis, and the regulator-tied scope of each. Shared concern: regulator-tied role catalogue. Input: the regulated-scope declaration; the role catalogue skeleton. Output: the regulator-tied role catalogue entries.
+**Intent and Definition**: The cohesive grouping of work within Design Regulated Role Architecture that Catalogue the regulator-tied role entries in the role catalogue: each role authority, signing capacity, controlled-function designation (FCA SMCR CF1..CF11), the regulator licensing basis, and the regulator-tied scope of each. Shared concern: regulator-tied role catalogue. Input: the regulated-scope declaration; the role catalogue skeleton. Output: the regulator-tied role catalogue entries.
 
-**Definition**: The cohesive grouping of work within Design Regulated Role Architecture that Catalogue the regulator-tied role entries in the role catalogue: each role authority, signing capacity, controlled-function designation (FCA SMCR CF1..CF11), the regulator licensing basis, and the regulator-tied scope of each. Shared concern: regulator-tied role catalogue. Input: the regulated-scope declaration; the role catalogue skeleton. Output: the regulator-tied role catalogue entries.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -35,16 +33,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-design-ehddzg, processes:task-ao-design-evrx2j, processes:task-ao-design-95va8q, pr | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-design-intake-n66qsv, processes:task-ao-design-verify-hkjsx6, processes:task-ao-des | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Design Regulated Role Architecture that Catalogue the regulator-tied role entries i |
+| `definition` | string | no | The cohesive grouping of work within Design Regulated Role Architecture that Catalogue the regulator-tied role entries … |
 | `belongs_to_business_process` | string | no | processes:process-ao-design-2fkvhx |
-| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single catalogue regulator-tie |
+| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single catalogue … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -58,7 +56,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 | `composes` | `processes:task-ao-design-confirm-txfv3t` | 1 |
 | `composes` | `processes:task-ao-design-record-yq9m6a` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -66,7 +64,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 - **Cohesion rationale**: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single catalogue regulator-tied role entries concern, one input class, and one output (the catalogue regulator-tied role entries record on the regulated personnel record).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

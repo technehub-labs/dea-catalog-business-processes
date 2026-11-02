@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 
 **Name**: Route Environmental Signals
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Route Environmental Signals | **Canonical ID** | `processes:activity-sd-operate-ebntgy` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Sense Environmental Signals that routes the classified signals to performance monitoring, portfolio steering, and the adaptation cycle.
+**Intent and Definition**: The cohesive grouping of work within Sense Environmental Signals that routes the classified signals to performance monitoring, portfolio steering, and the adaptation cycle.
 
-**Definition**: The cohesive grouping of work within Sense Environmental Signals that routes the classified signals to performance monitoring, portfolio steering, and the adaptation cycle.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 | 2026-09-14 | `CR-BP-55` | Initial L3 Activity entry; lands as part of the CR-BP-55 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-route-environmental-signals-intake, dea:task-route-environmental-signals-verify, dea:task-ro | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Sense Environmental Signals that routes the classified signals to performance monit |
+| `definition` | string | no | The cohesive grouping of work within Sense Environmental Signals that routes the classified signals to performance … |
 | `belongs_to_business_process` | string | no | processes:process-sd-operate-53y4j4 |
-| `cohesion_rationale` | string | no | Constituent work shares a single routing concern (classified signals delivered to the consuming processes), one input cl |
+| `cohesion_rationale` | string | no | Constituent work shares a single routing concern (classified signals delivered to the consuming processes), one input … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 | `composes` | `processes:task-sd-operate-confirm-2akekq` | 1 |
 | `composes` | `processes:task-sd-operate-record-q5szty` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 - **Cohesion rationale**: Constituent work shares a single routing concern (classified signals delivered to the consuming processes), one input class (the classified environmental signals), and one output (the routed environmental signals). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

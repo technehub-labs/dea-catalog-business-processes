@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 
 **Name**: Construct Product Variants
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Construct Product Variants | **Canonical ID** | `processes:activity-pv-build-sk4whv` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Develop Product Variants that constructs the bounded product variants the designed propositions require.
+**Intent and Definition**: The cohesive grouping of work within Develop Product Variants that constructs the bounded product variants the designed propositions require.
 
-**Definition**: The cohesive grouping of work within Develop Product Variants that constructs the bounded product variants the designed propositions require.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 | 2026-09-13 | `CR-BP-50` | Initial L3 Activity entry; lands as part of the CR-BP-50 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-construct-product-variants-intake, dea:task-construct-product-variants-verify, dea:task-cons | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Develop Product Variants that constructs the bounded product variants the designed  |
+| `definition` | string | no | The cohesive grouping of work within Develop Product Variants that constructs the bounded product variants the designed … |
 | `belongs_to_business_process` | string | no | processes:process-pv-build-say8tb |
-| `cohesion_rationale` | string | no | Constituent work shares a single construction concern (proposition design to built variants), one reference class (the p |
+| `cohesion_rationale` | string | no | Constituent work shares a single construction concern (proposition design to built variants), one reference class (the … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 | `composes` | `processes:task-pv-build-confirm-qr5yj2` | 1 |
 | `composes` | `processes:task-pv-build-record-9h2ekw` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 - **Cohesion rationale**: Constituent work shares a single construction concern (proposition design to built variants), one reference class (the proposition and packaging designs), and one output (constructed variants). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

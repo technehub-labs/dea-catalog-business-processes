@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-r
 
 **Name**: Regulated Strategic Plan Sunset
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,9 +13,9 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-r
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Regulated Strategic Plan Sunset | **Canonical ID** | `processes:group-sd-retire-7fksad` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organises the Business Process
+**Intent and Definition**: The bounded Process Group that organises the Business Process
 responsibilities of moving a regulated entity's strategic plan
 from supervisor-acknowledged-and-live to regulator-acknowledged-
 and-sunset in the StrategyAndDirection x Retire context where a
@@ -30,22 +30,7 @@ supervision, with the replacement plan's status preserved and
 the retired plan's records retained per the regulated-entity
 retention policy.
 
-**Definition**: The bounded Process Group that organises the Business Process
-responsibilities of moving a regulated entity's strategic plan
-from supervisor-acknowledged-and-live to regulator-acknowledged-
-and-sunset in the StrategyAndDirection x Retire context where a
-competent regulator has required the plan's retirement (failed
-stress test triggers plan replacement; bank recovery-plan
-rejection by the SRB; FDIC directive to retire an inadequate
-resolution plan; state PUC retraction of an approved strategic
-plan; NHS England directive to retire a non-viable 5-year
-strategy). The group captures the work of winding down a
-regulated strategic plan under the regulator's continuing
-supervision, with the replacement plan's status preserved and
-the retired plan's records retained per the regulated-entity
-retention policy.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -54,7 +39,7 @@ retention policy.
 | :--- | :--- | :--- | :--- |
 | 2026-09-19 | `CR-BP-101` | First canonical admission at the StrategyAndDirection x | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -76,11 +61,11 @@ retention policy.
 | :--- | :--- | :--- |
 | `composes` | `processes:process-sd-retire-umxf3c` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

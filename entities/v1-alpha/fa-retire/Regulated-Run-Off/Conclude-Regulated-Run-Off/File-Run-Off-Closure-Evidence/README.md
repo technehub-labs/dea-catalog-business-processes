@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-re
 
 **Name**: File Run-Off Closure Evidence
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-fa-re
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | File Run-Off Closure Evidence | **Canonical ID** | `processes:activity-fa-retire-3g3m9u` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Conclude Regulated Run-Off that prepares and files the run-off closure evidence with the controlling regulator, including the final run-off accounts, the policyholder-claim clearance certificate, the residual-asset distribution plan, and the request for cancellation of the authorisation or surrender of the licence.
+**Intent and Definition**: The cohesive grouping of work within Conclude Regulated Run-Off that prepares and files the run-off closure evidence with the controlling regulator, including the final run-off accounts, the policyholder-claim clearance certificate, the residual-asset distribution plan, and the request for cancellation of the authorisation or surrender of the licence.
 
-**Definition**: The cohesive grouping of work within Conclude Regulated Run-Off that prepares and files the run-off closure evidence with the controlling regulator, including the final run-off accounts, the policyholder-claim clearance certificate, the residual-asset distribution plan, and the request for cancellation of the authorisation or surrender of the licence.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-fa-re
 | 2026-09-16 | `CR-BP-77` | Initial L3 Activity entry; lands as part of the CR-BP-77 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-file-run-off-closure-evidence-intake, dea:task-file-run-off-closure-evidence-verify, dea:tas | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Conclude Regulated Run-Off that prepares and files the run-off closure evidence wit |
+| `definition` | string | no | The cohesive grouping of work within Conclude Regulated Run-Off that prepares and files the run-off closure evidence … |
 | `belongs_to_business_process` | string | no | processes:process-fa-retire-wkbrsa |
-| `cohesion_rationale` | string | no | Constituent work shares a single closure evidence filing concern, one input class (the final run-off financial position, |
+| `cohesion_rationale` | string | no | Constituent work shares a single closure evidence filing concern, one input class (the final run-off financial … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-re
 | `composes` | `processes:task-fa-retire-confirm-q2xkf3` | 1 |
 | `composes` | `processes:task-fa-retire-record-9qjn6f` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-re
 - **Cohesion rationale**: Constituent work shares a single closure evidence filing concern, one input class (the final run-off financial position, the claim clearance certificate, and the residual asset distribution), and one output (the filed closure submission with regulator acknowledgement and the residual-asset distribution recorded). Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

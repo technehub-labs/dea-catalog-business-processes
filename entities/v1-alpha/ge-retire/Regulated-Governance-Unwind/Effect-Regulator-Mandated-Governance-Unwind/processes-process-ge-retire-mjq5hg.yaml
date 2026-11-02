@@ -25,7 +25,7 @@ owner:
   review_due: '2026-12-31'
   decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
-description: Effect the regulator- or court-mandated governance unwind within the dea:pc-ge-retire Cell
+description: Effect the regulator- or court-mandated governance unwind within the processes:pc-ge-retire-kndw6x Cell
   Charter. The trigger is a binding regulator or court order; the outcome is the documented, regulator-
   or court-supervised wind-down of governance bodies, policy instruments, mandates, and constitutional
   instruments, culminating in statutory dissolution filings, retained-records custodianship assignment,
@@ -196,7 +196,7 @@ inputs:
   type: information
   name: 'Effect Regulator-Mandated Governance Unwind: working inputs (information)'
   description: 'Derived from the record''s documented description and trigger: the process Effect the
-    regulator- or court-mandated governance unwind within the dea:pc-ge-retire Cell Charter. The trigger
+    regulator- or court-mandated governance unwind within the processes:pc-ge-retire-kndw6x Cell Charter. The trigger
     is a binding regulator or court order;'
   source: Record documented content (description + trigger fields)
   mandatory: true

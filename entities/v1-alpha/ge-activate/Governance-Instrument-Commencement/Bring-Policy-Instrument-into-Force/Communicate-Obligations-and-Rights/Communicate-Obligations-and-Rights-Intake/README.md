@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-ge-activate-i
 
 **Name**: Communicate Obligations and Rights Intake
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-ge-activate-i
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Communicate Obligations and Rights Intake | **Canonical ID** | `processes:task-ge-activate-intake-6t8h34` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-ge-activate-6uwq7f` (Communicate Obligations and Rights) that accept custody of the legal-commencement input pack (constitutive instrument, commencement-order reference, obligations-and-rights schedule) and persist a registered intake manifest binding the commencement event to the activation case file.
+**Intent and Definition**: The bounded unit of work within `processes:activity-ge-activate-6uwq7f` (Communicate Obligations and Rights) that accept custody of the legal-commencement input pack (constitutive instrument, commencement-order reference, obligations-and-rights schedule) and persist a registered intake manifest binding the commencement event to the activation case file.
 
-**Definition**: The bounded unit of work within `processes:activity-ge-activate-6uwq7f` (Communicate Obligations and Rights) that accept custody of the legal-commencement input pack (constitutive instrument, commencement-order reference, obligations-and-rights schedule) and persist a registered intake manifest binding the commencement event to the activation case file.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Task record for `processes:task-ge-activate-i
 | 2026-09-15 | `CR-BP-69` | Initial L3 Activity entry; lands as part of the CR-BP-69 | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-ge-activate-6uwq7f` (Communicate Obligations and Rights) that accept |
+| `definition` | string | no | The bounded unit of work within `processes:activity-ge-activate-6uwq7f` (Communicate Obligations and Rights) that … |
 | `belongs_to_activity` | string | no | processes:activity-ge-activate-6uwq7f |
-| `trigger` | string | no | Custody of the Activate-stage input pack for Communicate Obligations and Rights ready for intake; predecessor phase has  |
-| `outcome` | string | no | Intake manifest registered and bound to the Communicate Obligations and Rights case file; registered intake custodian pa |
+| `trigger` | string | no | Custody of the Activate-stage input pack for Communicate Obligations and Rights ready for intake; predecessor phase has … |
+| `outcome` | string | no | Intake manifest registered and bound to the Communicate Obligations and Rights case file; registered intake custodian … |
 | `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-ge-activate-i
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

@@ -25,7 +25,7 @@ owner:
   review_due: '2026-12-31'
   decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
-description: 'Operate the Design Logistics and Routing L2 process within the dea:pc-oe-design Cell Charter.
+description: 'Operate the Design Logistics and Routing L2 process within the processes:pc-eo-design-kxdfnz Cell Charter.
   See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the
   testable outcome the process produces. '
 trigger: 'A logistics and routing design is needed because the delivery model requires bounded transport
@@ -120,7 +120,7 @@ inputs:
   type: information
   name: 'Design Logistics and Routing: working inputs (information)'
   description: 'Derived from the record''s documented description and trigger: the process Operate the
-    Design Logistics and Routing L2 process within the dea:pc-oe-design Cell Charter. See trigger and
+    Design Logistics and Routing L2 process within the processes:pc-eo-design-kxdfnz Cell Charter. See trigger and
     outcome for the bounded work this proces'
   source: Record documented content (description + trigger fields)
   mandatory: true

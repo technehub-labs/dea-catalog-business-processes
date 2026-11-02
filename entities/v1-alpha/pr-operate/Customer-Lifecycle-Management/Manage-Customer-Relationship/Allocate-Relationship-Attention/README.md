@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-pr-op
 
 **Name**: Allocate Relationship Attention
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-pr-op
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Allocate Relationship Attention | **Canonical ID** | `processes:activity-pr-operate-v9vny2` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Manage Customer Relationship that decides how relationship attention (account ownership, contact cadence, service effort) is distributed across the active customer base.
+**Intent and Definition**: The cohesive grouping of work within Manage Customer Relationship that decides how relationship attention (account ownership, contact cadence, service effort) is distributed across the active customer base.
 
-**Definition**: The cohesive grouping of work within Manage Customer Relationship that decides how relationship attention (account ownership, contact cadence, service effort) is distributed across the active customer base.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-pr-op
 | 2026-09-13 | `CR-BP-44` | Initial L3 Activity entry; lands as part of the CR-BP-44 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-allocate-relationship-attention-intake, dea:task-allocate-relationship-attention-verify, dea | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Manage Customer Relationship that decides how relationship attention (account owner |
+| `definition` | string | no | The cohesive grouping of work within Manage Customer Relationship that decides how relationship attention (account … |
 | `belongs_to_business_process` | string | no | processes:process-pr-operate-bbe384 |
-| `cohesion_rationale` | string | no | Constituent work shares a single allocation concern (finite relationship attention across the active base), one input cl |
+| `cohesion_rationale` | string | no | Constituent work shares a single allocation concern (finite relationship attention across the active base), one input … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-pr-op
 | `composes` | `processes:task-pr-operate-confirm-hpaub7` | 1 |
 | `composes` | `processes:task-pr-operate-record-u9gwf7` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-pr-op
 - **Cohesion rationale**: Constituent work shares a single allocation concern (finite relationship attention across the active base), one input class (relationship status and value signals), and one output (the attention allocation per customer). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

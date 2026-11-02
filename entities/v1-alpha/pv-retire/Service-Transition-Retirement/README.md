@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pv-r
 
 **Name**: Service Transition Retirement
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pv-r
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Service Transition Retirement | **Canonical ID** | `processes:group-pv-retire-buqktk` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organises the Business Process responsibilities of transitioning propositions, products and services out of operational service in the ProductAndValue x Retire context (withdrawal planning, stakeholder transition, removal from operational reliance).
+**Intent and Definition**: The bounded Process Group that organises the Business Process responsibilities of transitioning propositions, products and services out of operational service in the ProductAndValue x Retire context (withdrawal planning, stakeholder transition, removal from operational reliance).
 
-**Definition**: The bounded Process Group that organises the Business Process responsibilities of transitioning propositions, products and services out of operational service in the ProductAndValue x Retire context (withdrawal planning, stakeholder transition, removal from operational reliance).
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,13 +27,13 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pv-r
 | 2026-09-14 | `CR-BP-64` | Initial Process Group record; the first L1 group at an | System |
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded Process Group that organises the Business Process responsibilities of transitioning propositions, products a |
+| `definition` | string | no | The bounded Process Group that organises the Business Process responsibilities of transitioning propositions, products … |
 | `process_context` | string | no | processes:pc-pv-retire-eeck6d |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[1] | no | array of 1 item(s) |
@@ -53,11 +51,11 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pv-r
 | :--- | :--- | :--- |
 | `composes` | `processes:process-pv-retire-6us5am` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-pr-design-rec
 
 **Name**: Commit Journey Design Audit Record
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-pr-design-rec
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Commit Journey Design Audit Record | **Canonical ID** | `processes:task-pr-design-record-7ha34w` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-pr-design-vbvz6f` (Commit Journey Design) that retain the design package (intake manifest, verification report, design-ready journey artefact, design-completion confirmation, and any quality-criteria remediations) under the journey-design records retention schedule with cryptographic integrity protection.
+**Intent and Definition**: The bounded unit of work within `processes:activity-pr-design-vbvz6f` (Commit Journey Design) that retain the design package (intake manifest, verification report, design-ready journey artefact, design-completion confirmation, and any quality-criteria remediations) under the journey-design records retention schedule with cryptographic integrity protection.
 
-**Definition**: The bounded unit of work within `processes:activity-pr-design-vbvz6f` (Commit Journey Design) that retain the design package (intake manifest, verification report, design-ready journey artefact, design-completion confirmation, and any quality-criteria remediations) under the journey-design records retention schedule with cryptographic integrity protection.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Task record for `processes:task-pr-design-rec
 | 2026-09-13 | `CR-BP-45` | Initial L3 Activity entry; lands as part of the CR-BP-45 | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-pr-design-vbvz6f` (Commit Journey Design) that retain the design pac |
+| `definition` | string | no | The bounded unit of work within `processes:activity-pr-design-vbvz6f` (Commit Journey Design) that retain the design … |
 | `belongs_to_activity` | string | no | processes:activity-pr-design-vbvz6f |
-| `trigger` | string | no | Completion confirmation issued for Commit Journey Design; record gate may retain the closure case file under the records |
-| `outcome` | string | no | Closure case file retained for Commit Journey Design under the records retention schedule with cryptographic integrity p |
+| `trigger` | string | no | Completion confirmation issued for Commit Journey Design; record gate may retain the closure case file under the … |
+| `outcome` | string | no | Closure case file retained for Commit Journey Design under the records retention schedule with cryptographic integrity … |
 | `responsibility` | string | no | records custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-pr-design-rec
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

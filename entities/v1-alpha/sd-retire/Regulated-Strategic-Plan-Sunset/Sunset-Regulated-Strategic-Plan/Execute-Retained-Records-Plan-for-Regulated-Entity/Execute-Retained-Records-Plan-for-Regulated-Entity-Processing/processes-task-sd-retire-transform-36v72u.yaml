@@ -1,7 +1,7 @@
 id: processes:task-sd-retire-transform-36v72u
 type: Task
 name: Execute Retained-Records Plan for Regulated Entity Processing
-definition: 'The bounded unit of work within `dea:activity-execute-retained-records-plan-regulated-entity` (Execute Retained-Records Plan for Regulated Entity) that carries out the transform phase of the parent''s verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
+definition: 'The bounded unit of work within `processes:activity-sd-retire-48khkt` (Execute Retained-Records Plan for Regulated Entity) that carries out the transform phase of the parent''s verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
 belongs_to_activity: processes:activity-sd-retire-48khkt
 trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin.
 outcome: Output produced in the specified form per parent Activity's definition; intermediate artifacts preserved for audit.

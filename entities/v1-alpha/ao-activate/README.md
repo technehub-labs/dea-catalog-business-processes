@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-ao-ac
 
 **Name**: Licensed Workforce Mobilization
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,7 +13,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-ao-ac
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Licensed Workforce Mobilization | **Canonical ID** | `processes:pc-ao-activate-kusw2u` |
 
-## 1. Executive Summary / Intent
+## 2. Executive Summary / Intent
 
 The licensed-workforce mobilization work that moves individuals
 from credentialed-but-not-live to credential-and-inlive under the
@@ -25,7 +25,7 @@ and continuing-supervisor notification activated, so that the
 licensed individual is live on the regulated personnel record
 under the regulator's continuing supervision.
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 - **Admission Score**: `?/10`
 - **Recommended By**: `dea:discovery-agency-and-organization-activate-escape`
@@ -37,7 +37,7 @@ under the regulator's continuing supervision.
   - Aviation: EASA / FAA crew licensing (type-rated licences)
   - Professional Services: UK SRA / US State Bar admissions
 
-## 3. Behavioral Boundaries (Cell Charter)
+## 4. Behavioral Boundaries (Cell Charter)
 
 | Scope Type | Description |
 | :--- | :--- |
@@ -45,7 +45,7 @@ under the regulator's continuing supervision.
 | Out of Scope (exclusions) | - Workforce recruitment, hiring, and general onboarding (AgencyAndOrganization x Build)<br>- Steady-state workforce performance and development (AgencyAndOrganization x Operate / Improve)<br>- Workforce offboarding and licence surrender (AgencyAndOrganization x Retire; CR-BP-73 adjacent cells)<br>- Non-licensed workforce activation (deferred to a future CR; the cell is reserved for licensed roles only)<br>- Internal non-regulated personnel activation (where the role has no regulator-issued licence prerequisite)<br>- Capabilities sourcing/licensing absent a regulator-controlled scope (AgencyAndOrganization x Build) |
 | Adjacent Cells | - processes:pc-ao-build-pjk4rz (adjacent context): the Build cell handles recruitment, hiring, and general onboarding; the Activate cell governs the controlled mobilization step where the licensed individual moves from credentialed-but-not-live to credential-and-inlive under the enterprise's regulated-entity approval authority.<br>- processes:pc-ao-operate-zfevmp (adjacent context): the Operate cell handles steady-state workforce performance and development; the Activate cell only governs the live-readiness activation.<br>- processes:pc-ao-retire-3kqe9c (adjacent context, CR-BP-73): the Retire cell at A&O handles offboarding and licence surrender; the Activate cell handles the regulated live-readiness activation.<br>- processes:pc-eo-activate-xdfscw (sibling cell): the EO Activate cell governs regulator-authorized operations-capability activation (AOC, PSD2, GMP, MiCA); the A&O Activate cell governs regulator-controlled individual-workforce mobilization -- separate concerns (capability vs individual).<br>- processes:pc-pv-activate-f7kne7 (sibling cell, CR-BP-71-era): the PV Activate cell governs product/service transition-to-service; the A&O Activate cell governs individual-workforce mobilization. |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename).
 
@@ -85,7 +85,7 @@ ao-activate/
 _(Full L4 task lists for each L3 activity are available in their respective subdirectories.)_
 </details>
 
-## 5. Properties and Relationships
+## 6. Properties and Relationships
 
 **Properties**
 
@@ -95,16 +95,16 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `schema_version` | integer | no | 1 |
 | `domain` | string | no | AgencyAndOrganization |
 | `lifecycle_stage` | string | no | Activate |
-| `definition` | string | no | The bounded enterprise context for **governing the live-readiness activation of a licensed or regulated workforce** in t |
+| `definition` | string | no | The bounded enterprise context for **governing the live-readiness activation of a licensed or regulated workforce** in … |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[5] | no | array of 5 item(s) |
 | `adjacent_contexts` | array[7] | no | array of 7 item(s) |
 | `processes` | array[1] | no | array of 1 item(s) |
 | `status` | string | no | candidate |
 | `process_context` | object | no | object: id, domain, lifecycle_stage, scope_summary, process_empty, lifecycle_status, status |
-| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
+| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions … |
 | `process_groups` | array[1] | no | array of 1 item(s) |
-| `admission` | object | no | object: recommended_by, recommended_at, recommended_score, carrier_cr, bp_id, pg_id, pc_id, evidence_summary, register_f |
+| `admission` | object | no | object: recommended_by, recommended_at, recommended_score, carrier_cr, bp_id, pg_id, pc_id, evidence_summary … |
 | `intent` | object | no | object: decomposition, lifecycle_stage, coordinate |
 | `change_history` | array[1] | no | array of 1 item(s) |
 | `audit` | object | no | object: authored, author, reviewed_by, status, change_request, register_version_at_landing |
@@ -116,7 +116,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `process_groups` | `processes:group-ao-activate-jjx738` | 1 |
 | `processes` | `processes:process-ao-activate-jqxtqn` | 1 |
 
-## 6. Operational, Control and Metrics Details
+## 7. Operational, Control and Metrics Details
 
 **Inputs, Outputs and Interfaces**: _(pending; backfill at EXT-04)_
 
@@ -128,7 +128,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 
 _(Pending EXT-04)_
 
-## 7. Technical Metadata
+## 8. Technical Metadata
 
 - **Source YAML**: record YAML in the same directory as this README
 - **Record version**: 1.0.0

@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-re
 
 **Name**: Notify Statutory Workforce Reduction
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-re
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Notify Statutory Workforce Reduction | **Canonical ID** | `processes:activity-ao-retire-uqgpmh` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Conduct Regulated Workforce Wind-Down that issues the statutory advance-notice filings and individual notifications required when an employment reduction crosses the size and nature thresholds of the controlling labour statute.
+**Intent and Definition**: The cohesive grouping of work within Conduct Regulated Workforce Wind-Down that issues the statutory advance-notice filings and individual notifications required when an employment reduction crosses the size and nature thresholds of the controlling labour statute.
 
-**Definition**: The cohesive grouping of work within Conduct Regulated Workforce Wind-Down that issues the statutory advance-notice filings and individual notifications required when an employment reduction crosses the size and nature thresholds of the controlling labour statute.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-re
 | 2026-09-16 | `CR-BP-77` | Initial L3 Activity entry; lands as part of the CR-BP-77 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-notify-statutory-workforce-reduction-intake, dea:task-notify-statutory-workforce-reduction-v | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Conduct Regulated Workforce Wind-Down that issues the statutory advance-notice fili |
+| `definition` | string | no | The cohesive grouping of work within Conduct Regulated Workforce Wind-Down that issues the statutory advance-notice … |
 | `belongs_to_business_process` | string | no | processes:process-ao-retire-g3eyr8 |
-| `cohesion_rationale` | string | no | Constituent work shares a single statutory notification concern, one input class (the authorized wind-down event and the |
+| `cohesion_rationale` | string | no | Constituent work shares a single statutory notification concern, one input class (the authorized wind-down event and … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-re
 | `composes` | `processes:task-ao-retire-confirm-sva7mh` | 1 |
 | `composes` | `processes:task-ao-retire-record-q7k64n` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-re
 - **Cohesion rationale**: Constituent work shares a single statutory notification concern, one input class (the authorized wind-down event and the workforce roster scoped to the reduction), and one output (the served advance-notice and the regulator-filed notice record). Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

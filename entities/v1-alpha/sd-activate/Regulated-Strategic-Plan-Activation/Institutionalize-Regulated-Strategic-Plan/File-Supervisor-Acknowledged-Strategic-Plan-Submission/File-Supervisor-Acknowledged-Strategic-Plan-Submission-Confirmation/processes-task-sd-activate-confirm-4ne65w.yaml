@@ -1,7 +1,7 @@
 id: processes:task-sd-activate-confirm-4ne65w
 type: Task
 name: File Supervisor-Acknowledged Strategic-Plan Submission Confirmation
-definition: 'The bounded unit of work within `dea:activity-file-supervisor-acknowledged-strategic-plan-submission` (File Supervisor-Acknowledged Strategic-Plan Submission) that carries out the confirm phase of the parent''s verb-object decomposition. Phase responsibility: confirmation custodian. Phase trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued. Phase outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
+definition: 'The bounded unit of work within `processes:activity-sd-activate-4gefj3` (File Supervisor-Acknowledged Strategic-Plan Submission) that carries out the confirm phase of the parent''s verb-object decomposition. Phase responsibility: confirmation custodian. Phase trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued. Phase outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
 belongs_to_activity: processes:activity-sd-activate-4gefj3
 trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued.
 outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.

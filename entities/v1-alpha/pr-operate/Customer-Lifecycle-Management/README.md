@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pr-o
 
 **Name**: Customer Lifecycle Management
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,9 +13,9 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pr-o
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Customer Lifecycle Management | **Canonical ID** | `processes:group-pr-operate-7ab3ma` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organizes the Business Process
+**Intent and Definition**: The bounded Process Group that organizes the Business Process
 responsibilities of operating the customer lifecycle within the
 PartyAndRelationship x Operate context. This group captures the
 end-to-end work of sustaining an active customer relationship:
@@ -26,18 +26,7 @@ refinements (e.g. enterprise-customer management, SMB-customer
 management) specialize the L2 processes beneath it, not the
 group itself.
 
-**Definition**: The bounded Process Group that organizes the Business Process
-responsibilities of operating the customer lifecycle within the
-PartyAndRelationship x Operate context. This group captures the
-end-to-end work of sustaining an active customer relationship:
-ongoing management, escalation handling, renewal coordination,
-win-back, and portfolio allocation. The group is the canonical
-Process Group for the customer-lifecycle value stream; functional
-refinements (e.g. enterprise-customer management, SMB-customer
-management) specialize the L2 processes beneath it, not the
-group itself.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -48,7 +37,7 @@ group itself.
 | 2026-09-05 | `CR-BP-13` | Research ratification. The CR-BP-11 49-coordinate register | System |
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -72,11 +61,11 @@ group itself.
 | :--- | :--- | :--- |
 | `composes` | `processes:process-pr-operate-bbe384` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

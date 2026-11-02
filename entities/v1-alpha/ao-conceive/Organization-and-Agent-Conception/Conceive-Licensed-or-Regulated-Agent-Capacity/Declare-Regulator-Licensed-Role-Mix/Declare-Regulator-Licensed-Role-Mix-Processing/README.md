@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-t
 
 **Name**: Declare Regulator-Licensed Role Mix Processing
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-t
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Declare Regulator-Licensed Role Mix Processing | **Canonical ID** | `processes:task-ao-conceive-transform-j6caqr` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-ao-conceive-cqkwrm` (Declare Regulator-Licensed Role Mix) that carries out the transform phase of the parent's verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity's definition; intermediate artifacts preserved for audit.
+**Intent and Definition**: The bounded unit of work within `processes:activity-ao-conceive-cqkwrm` (Declare Regulator-Licensed Role Mix) that carries out the transform phase of the parent's verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity's definition; intermediate artifacts preserved for audit.
 
-**Definition**: The bounded unit of work within `processes:activity-ao-conceive-cqkwrm` (Declare Regulator-Licensed Role Mix) that carries out the transform phase of the parent's verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity's definition; intermediate artifacts preserved for audit.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -35,13 +33,13 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-t
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-conceive-kwbnxz, processes:task-ao-conceive-2yh862, processes:task-ao-conceive-ms5b | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-ao-conceive-cqkwrm` (Declare Regulator-Licensed Role Mix) that carri |
+| `definition` | string | no | The bounded unit of work within `processes:activity-ao-conceive-cqkwrm` (Declare Regulator-Licensed Role Mix) that … |
 | `belongs_to_activity` | string | no | processes:activity-ao-conceive-cqkwrm |
 | `trigger` | string | no | Verified input is ready (phase 2 complete); transformation to the specified output form may begin. |
 | `outcome` | string | no | Output produced in the specified form per parent Activity's definition; intermediate artifacts preserved for audit. |
@@ -52,11 +50,11 @@ This directory hosts the canonical Task record for `processes:task-ao-conceive-t
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

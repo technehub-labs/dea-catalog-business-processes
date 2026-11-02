@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-ao-build-reco
 
 **Name**: Screen Candidates Against Sanctions / AML / FCRA / ADA Audit Record
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-ao-build-reco
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Screen Candidates Against Sanctions / AML / FCRA / ADA Audit Record | **Canonical ID** | `processes:task-ao-build-record-8dkcu7` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-ao-build-bufzrw` (Screen Candidates Against Sanctions / AML / FCRA / ADA) that carries out the record phase of the parent's verb-object decomposition. Phase responsibility: records custodian. Phase trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity's evidence requirements. Phase outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity's evidence discipline.
+**Intent and Definition**: The bounded unit of work within `processes:activity-ao-build-bufzrw` (Screen Candidates Against Sanctions / AML / FCRA / ADA) that carries out the record phase of the parent's verb-object decomposition. Phase responsibility: records custodian. Phase trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity's evidence requirements. Phase outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity's evidence discipline.
 
-**Definition**: The bounded unit of work within `processes:activity-ao-build-bufzrw` (Screen Candidates Against Sanctions / AML / FCRA / ADA) that carries out the record phase of the parent's verb-object decomposition. Phase responsibility: records custodian. Phase trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity's evidence requirements. Phase outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity's evidence discipline.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -35,16 +33,16 @@ This directory hosts the canonical Task record for `processes:task-ao-build-reco
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-build-b42bas, processes:task-ao-build-sbzyxw, processes:task-ao-build-anru56, proce | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-ao-build-bufzrw` (Screen Candidates Against Sanctions / AML / FCRA / |
+| `definition` | string | no | The bounded unit of work within `processes:activity-ao-build-bufzrw` (Screen Candidates Against Sanctions / AML / FCRA … |
 | `belongs_to_activity` | string | no | processes:activity-ao-build-bufzrw |
 | `trigger` | string | no | Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity's evidence requirements. |
-| `outcome` | string | no | Audit record preserved at the specified retention tier; retrieval handles established per parent Activity's evidence dis |
+| `outcome` | string | no | Audit record preserved at the specified retention tier; retrieval handles established per parent Activity's evidence … |
 | `responsibility` | string | no | records custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[2] | no | array of 2 item(s) |
@@ -52,11 +50,11 @@ This directory hosts the canonical Task record for `processes:task-ao-build-reco
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

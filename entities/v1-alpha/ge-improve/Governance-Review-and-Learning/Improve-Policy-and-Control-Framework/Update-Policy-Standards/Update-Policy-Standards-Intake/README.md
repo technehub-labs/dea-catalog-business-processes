@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-ge-improve-in
 
 **Name**: Update Policy Standards Intake
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-ge-improve-in
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Update Policy Standards Intake | **Canonical ID** | `processes:task-ge-improve-intake-ncpt4n` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-ge-improve-a7mqxm` (Update Policy Standards) that accept custody of the improvement-case input pack (finding register, effectiveness-review scope, policy-gap inventory) and persist a registered intake manifest binding the inputs to the improvement case file.
+**Intent and Definition**: The bounded unit of work within `processes:activity-ge-improve-a7mqxm` (Update Policy Standards) that accept custody of the improvement-case input pack (finding register, effectiveness-review scope, policy-gap inventory) and persist a registered intake manifest binding the inputs to the improvement case file.
 
-**Definition**: The bounded unit of work within `processes:activity-ge-improve-a7mqxm` (Update Policy Standards) that accept custody of the improvement-case input pack (finding register, effectiveness-review scope, policy-gap inventory) and persist a registered intake manifest binding the inputs to the improvement case file.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Task record for `processes:task-ge-improve-in
 | 2026-09-13 | `CR-BP-49` | Initial L3 Activity entry; lands as part of the CR-BP-49 | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-ge-improve-a7mqxm` (Update Policy Standards) that accept custody of  |
+| `definition` | string | no | The bounded unit of work within `processes:activity-ge-improve-a7mqxm` (Update Policy Standards) that accept custody of … |
 | `belongs_to_activity` | string | no | processes:activity-ge-improve-a7mqxm |
-| `trigger` | string | no | Custody of the Improve-stage input pack for Update Policy Standards ready for intake; predecessor phase has produced the |
-| `outcome` | string | no | Intake manifest registered and bound to the Update Policy Standards case file; registered intake custodian passes custod |
+| `trigger` | string | no | Custody of the Improve-stage input pack for Update Policy Standards ready for intake; predecessor phase has produced … |
+| `outcome` | string | no | Intake manifest registered and bound to the Update Policy Standards case file; registered intake custodian passes … |
 | `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-ge-improve-in
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

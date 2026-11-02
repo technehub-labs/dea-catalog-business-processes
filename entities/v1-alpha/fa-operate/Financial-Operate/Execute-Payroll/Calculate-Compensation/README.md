@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 **Name**: Calculate Compensation
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Calculate Compensation | **Canonical ID** | `processes:activity-fa-operate-zxtxzj` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Execute Payroll that calculates the compensation due for each payroll cycle, applying the agreed schedule, deductions, and statutory adjustments.
+**Intent and Definition**: The cohesive grouping of work within Execute Payroll that calculates the compensation due for each payroll cycle, applying the agreed schedule, deductions, and statutory adjustments.
 
-**Definition**: The cohesive grouping of work within Execute Payroll that calculates the compensation due for each payroll cycle, applying the agreed schedule, deductions, and statutory adjustments.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -30,16 +28,16 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 | 2026-09-13 | `CR-BP-53` | Initial L3 Activity entry; lands as part of the CR-BP-53 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-calculate-compensation-intake, dea:task-calculate-compensation-verify, dea:task-calculate-co | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Execute Payroll that calculates the compensation due for each payroll cycle, applyi |
+| `definition` | string | no | The cohesive grouping of work within Execute Payroll that calculates the compensation due for each payroll cycle … |
 | `belongs_to_business_process` | string | no | processes:process-fa-operate-zpmxzp |
-| `cohesion_rationale` | string | no | Constituent work shares a single calculation concern (cycle inputs to compensation due), one input class (time, attendan |
+| `cohesion_rationale` | string | no | Constituent work shares a single calculation concern (cycle inputs to compensation due), one input class (time … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -53,7 +51,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 | `composes` | `processes:task-fa-operate-confirm-vcc26r` | 1 |
 | `composes` | `processes:task-fa-operate-record-zhrkhr` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -61,7 +59,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 - **Cohesion rationale**: Constituent work shares a single calculation concern (cycle inputs to compensation due), one input class (time, attendance, compensation terms), and one output (calculated compensation). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

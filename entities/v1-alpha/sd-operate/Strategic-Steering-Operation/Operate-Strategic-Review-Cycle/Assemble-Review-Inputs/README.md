@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 
 **Name**: Assemble Review Inputs
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Assemble Review Inputs | **Canonical ID** | `processes:activity-sd-operate-9evxdj` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Operate Strategic Review Cycle that assembles the performance reports, signal briefs, and agenda each scheduled review requires.
+**Intent and Definition**: The cohesive grouping of work within Operate Strategic Review Cycle that assembles the performance reports, signal briefs, and agenda each scheduled review requires.
 
-**Definition**: The cohesive grouping of work within Operate Strategic Review Cycle that assembles the performance reports, signal briefs, and agenda each scheduled review requires.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 | 2026-09-14 | `CR-BP-55` | Initial L3 Activity entry; lands as part of the CR-BP-55 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-assemble-review-inputs-intake, dea:task-assemble-review-inputs-verify, dea:task-assemble-rev | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Operate Strategic Review Cycle that assembles the performance reports, signal brief |
+| `definition` | string | no | The cohesive grouping of work within Operate Strategic Review Cycle that assembles the performance reports, signal … |
 | `belongs_to_business_process` | string | no | processes:process-sd-operate-ucxpz4 |
-| `cohesion_rationale` | string | no | Constituent work shares a single assembly concern (performance reports, signal briefs, and agenda per review), one input |
+| `cohesion_rationale` | string | no | Constituent work shares a single assembly concern (performance reports, signal briefs, and agenda per review), one … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 | `composes` | `processes:task-sd-operate-confirm-vycq5x` | 1 |
 | `composes` | `processes:task-sd-operate-record-3gefwg` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 - **Cohesion rationale**: Constituent work shares a single assembly concern (performance reports, signal briefs, and agenda per review), one input class (the scheduled review cadence), and one output (the assembled review inputs). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

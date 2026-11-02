@@ -26,7 +26,7 @@ owner:
   decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
 description: 'Transition a validated proposition, product or service from a prepared state into operational
-  service, with ownership, controls and operational readiness confirmed, within the dea:pc-pv-activate
+  service, with ownership, controls and operational readiness confirmed, within the processes:pc-pv-activate-f7kne7
   Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement
   for the testable outcome the process produces. '
 trigger: 'A validated proposition, product or service has met its readiness threshold and is authorized

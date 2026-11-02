@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-de
 
 **Name**: Specify Proposition Components
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-pv-de
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Specify Proposition Components | **Canonical ID** | `processes:activity-pv-design-vrmwad` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Design Product and Service Propositions that specifies the components (features, service elements) populating the proposition architecture.
+**Intent and Definition**: The cohesive grouping of work within Design Product and Service Propositions that specifies the components (features, service elements) populating the proposition architecture.
 
-**Definition**: The cohesive grouping of work within Design Product and Service Propositions that specifies the components (features, service elements) populating the proposition architecture.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-pv-de
 | 2026-09-13 | `CR-BP-50` | Initial L3 Activity entry; lands as part of the CR-BP-50 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-specify-proposition-components-intake, dea:task-specify-proposition-components-verify, dea:t | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Design Product and Service Propositions that specifies the components (features, se |
+| `definition` | string | no | The cohesive grouping of work within Design Product and Service Propositions that specifies the components (features … |
 | `belongs_to_business_process` | string | no | processes:process-pv-design-8v4k89 |
-| `cohesion_rationale` | string | no | Constituent work shares a single specification concern (architecture to components), one reference class (the propositio |
+| `cohesion_rationale` | string | no | Constituent work shares a single specification concern (architecture to components), one reference class (the … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-de
 | `composes` | `processes:task-pv-design-confirm-x4hj65` | 1 |
 | `composes` | `processes:task-pv-design-record-zhgqqw` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-de
 - **Cohesion rationale**: Constituent work shares a single specification concern (architecture to components), one reference class (the proposition architecture), and one output (the component specification). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 
 **Name**: Verify Candidates Against Regulator Licence Registry
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Verify Candidates Against Regulator Licence Registry | **Canonical ID** | `processes:activity-ao-build-q7m3k9` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Build Regulated Agent Pool that Verify each candidate against the regulator licence registry: FCA Financial Services Register; NMLS / NAIC Producer Database; FAA airmen certification database; US state bar admissions registries; state healthcare licensure registries (FSMB, Nursys, NABP, ARRT, ARDMS, NBRC). Shared concern: licence-registry verification. Input: the candidate list; the regulator registry access. Output: the verified-candidate list with the regulator licence record.
+**Intent and Definition**: The cohesive grouping of work within Build Regulated Agent Pool that Verify each candidate against the regulator licence registry: FCA Financial Services Register; NMLS / NAIC Producer Database; FAA airmen certification database; US state bar admissions registries; state healthcare licensure registries (FSMB, Nursys, NABP, ARRT, ARDMS, NBRC). Shared concern: licence-registry verification. Input: the candidate list; the regulator registry access. Output: the verified-candidate list with the regulator licence record.
 
-**Definition**: The cohesive grouping of work within Build Regulated Agent Pool that Verify each candidate against the regulator licence registry: FCA Financial Services Register; NMLS / NAIC Producer Database; FAA airmen certification database; US state bar admissions registries; state healthcare licensure registries (FSMB, Nursys, NABP, ARRT, ARDMS, NBRC). Shared concern: licence-registry verification. Input: the candidate list; the regulator registry access. Output: the verified-candidate list with the regulator licence record.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -35,16 +33,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-build-kyrdde, processes:task-ao-build-a2fsda, processes:task-ao-build-qr2e3x, proce | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-build-intake-nkc3gd, processes:task-ao-build-verify-ukp8a5, processes:task-ao-build | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Build Regulated Agent Pool that Verify each candidate against the regulator licence |
+| `definition` | string | no | The cohesive grouping of work within Build Regulated Agent Pool that Verify each candidate against the regulator … |
 | `belongs_to_business_process` | string | no | processes:process-ao-build-9my4jr |
-| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single verify candidates again |
+| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single verify candidates … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -58,7 +56,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 | `composes` | `processes:task-ao-build-confirm-sua2mx` | 1 |
 | `composes` | `processes:task-ao-build-record-4r92mc` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -66,7 +64,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 - **Cohesion rationale**: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single verify candidates against regulator licence registry concern, one input class, and one output (the verify candidates against regulator licence registry record on the regulated personnel record).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-fa-co
 
 **Name**: Financial Model and Funding Conception
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,11 +13,11 @@ This directory hosts the canonical ProcessContext record for `processes:pc-fa-co
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Financial Model and Funding Conception | **Canonical ID** | `processes:pc-fa-conceive-phabh2` |
 
-## 1. Executive Summary / Intent
+## 2. Executive Summary / Intent
 
 The front-end work of framing the finance strategy, the monetary model, and the funding and capital approach as monetary-consequence subjects.
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 - **Regulatory Evidence Base**:
@@ -25,7 +25,7 @@ The front-end work of framing the finance strategy, the monetary model, and the 
   - Insurance: NAIC / Solvency II / IFRS 17 statutory accounting
   - Securities: SEC / FCA reporting (10-K, FINREP, COREP)
 
-## 3. Behavioral Boundaries (Cell Charter)
+## 4. Behavioral Boundaries (Cell Charter)
 
 | Scope Type | Description |
 | :--- | :--- |
@@ -33,7 +33,7 @@ The front-end work of framing the finance strategy, the monetary model, and the 
 | Out of Scope (exclusions) | - Strategic investment choices (strategy-direction x conceive; adjacent domain)<br>- Investment strategy governance (governance-existence x conceive; adjacent domain)<br>- Financial planning design (Design stage; adjacent context)<br>- Finance capability build (Build stage; adjacent context) |
 | Adjacent Cells | - processes:pc-fa-design-4j8evh (adjacent context): monetary flow between Conceive and the adjacent cell.<br>- processes:pc-fa-build-pztsp9 (adjacent context): monetary flow between Conceive and the adjacent cell.<br>- processes:pc-fa-operate-afew7e (adjacent context): monetary flow between Conceive and the adjacent cell.<br>- processes:pc-fa-improve-haqf4w (adjacent context): monetary flow between Conceive and the adjacent cell. |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename).
 
@@ -73,7 +73,7 @@ fa-conceive/
 _(Full L4 task lists for each L3 activity are available in their respective subdirectories.)_
 </details>
 
-## 5. Properties and Relationships
+## 6. Properties and Relationships
 
 **Properties**
 
@@ -81,12 +81,12 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | :--- | :--- | :--- | :--- |
 | `domain` | string | no | FinanceAndAccounting |
 | `lifecycle_stage` | string | no | Conceive |
-| `definition` | string | no | The bounded enterprise context for **conceiving** the enterprise's monetary model, finance strategy, and funding and cap |
+| `definition` | string | no | The bounded enterprise context for **conceiving** the enterprise's monetary model, finance strategy, and funding and … |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[3] | no | array of 3 item(s) |
 | `adjacent_contexts` | array[4] | no | array of 4 item(s) |
 | `processes` | array[1] | no | array of 1 item(s) |
-| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
+| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions … |
 | `status` | string | no | candidate |
 | `established_by` | string | no | CR-BP-21e |
 | `established_at` | string | no | 2026-09-08 |
@@ -99,7 +99,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | :--- | :--- | :--- |
 | `processes` | `processes:process-fa-conceive-4uqqvg` | 1 |
 
-## 6. Operational, Control and Metrics Details
+## 7. Operational, Control and Metrics Details
 
 **Inputs, Outputs and Interfaces**: _(pending; backfill at EXT-04)_
 
@@ -111,7 +111,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 
 _(Pending EXT-04)_
 
-## 7. Technical Metadata
+## 8. Technical Metadata
 
 - **Source YAML**: record YAML in the same directory as this README
 - **Record version**: 1.0.0

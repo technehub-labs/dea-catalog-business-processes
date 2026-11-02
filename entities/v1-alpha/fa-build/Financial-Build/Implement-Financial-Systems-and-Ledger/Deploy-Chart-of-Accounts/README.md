@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 
 **Name**: Deploy Chart of Accounts
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Deploy Chart of Accounts | **Canonical ID** | `processes:activity-fa-build-napuha` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Implement Financial Systems and Ledger that deploys the designed chart of accounts into the financial systems.
+**Intent and Definition**: The cohesive grouping of work within Implement Financial Systems and Ledger that deploys the designed chart of accounts into the financial systems.
 
-**Definition**: The cohesive grouping of work within Implement Financial Systems and Ledger that deploys the designed chart of accounts into the financial systems.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 | 2026-09-13 | `CR-BP-52` | Initial L3 Activity entry; lands as part of the CR-BP-52 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-deploy-chart-of-accounts-intake, dea:task-deploy-chart-of-accounts-verify, dea:task-deploy-c | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Implement Financial Systems and Ledger that deploys the designed chart of accounts  |
+| `definition` | string | no | The cohesive grouping of work within Implement Financial Systems and Ledger that deploys the designed chart of accounts … |
 | `belongs_to_business_process` | string | no | processes:process-fa-build-d5kb5m |
-| `cohesion_rationale` | string | no | Constituent work shares a single deployment concern (account design to live structure), one reference class (the committ |
+| `cohesion_rationale` | string | no | Constituent work shares a single deployment concern (account design to live structure), one reference class (the … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 | `composes` | `processes:task-fa-build-confirm-8cwh9a` | 1 |
 | `composes` | `processes:task-fa-build-record-bwk7zj` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 - **Cohesion rationale**: Constituent work shares a single deployment concern (account design to live structure), one reference class (the committed plan structure), and one output (the deployed chart of accounts). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

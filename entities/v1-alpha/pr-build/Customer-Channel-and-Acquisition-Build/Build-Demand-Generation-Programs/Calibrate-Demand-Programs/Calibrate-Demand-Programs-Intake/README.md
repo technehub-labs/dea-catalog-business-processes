@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-pr-build-inta
 
 **Name**: Calibrate Demand Programs Intake
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-pr-build-inta
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Calibrate Demand Programs Intake | **Canonical ID** | `processes:task-pr-build-intake-28bw98` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-pr-build-ywaa6n` (Calibrate Demand Programs) that accept custody of the acquisition-engine design brief (channel mix, demand-program specification, asset library manifest), confirm the build-package scope with the channel and demand-program owners, and persist a registered intake manifest.
+**Intent and Definition**: The bounded unit of work within `processes:activity-pr-build-ywaa6n` (Calibrate Demand Programs) that accept custody of the acquisition-engine design brief (channel mix, demand-program specification, asset library manifest), confirm the build-package scope with the channel and demand-program owners, and persist a registered intake manifest.
 
-**Definition**: The bounded unit of work within `processes:activity-pr-build-ywaa6n` (Calibrate Demand Programs) that accept custody of the acquisition-engine design brief (channel mix, demand-program specification, asset library manifest), confirm the build-package scope with the channel and demand-program owners, and persist a registered intake manifest.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Task record for `processes:task-pr-build-inta
 | 2026-09-13 | `CR-BP-45` | Initial L3 Activity entry; lands as part of the CR-BP-45 | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-pr-build-ywaa6n` (Calibrate Demand Programs) that accept custody of  |
+| `definition` | string | no | The bounded unit of work within `processes:activity-pr-build-ywaa6n` (Calibrate Demand Programs) that accept custody of … |
 | `belongs_to_activity` | string | no | processes:activity-pr-build-ywaa6n |
-| `trigger` | string | no | Custody of the Build-stage input pack for Calibrate Demand Programs ready for intake; predecessor phase has produced the |
-| `outcome` | string | no | Intake manifest registered and bound to the Calibrate Demand Programs case file; registered intake custodian passes cust |
+| `trigger` | string | no | Custody of the Build-stage input pack for Calibrate Demand Programs ready for intake; predecessor phase has produced … |
+| `outcome` | string | no | Intake manifest registered and bound to the Calibrate Demand Programs case file; registered intake custodian passes … |
 | `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-pr-build-inta
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

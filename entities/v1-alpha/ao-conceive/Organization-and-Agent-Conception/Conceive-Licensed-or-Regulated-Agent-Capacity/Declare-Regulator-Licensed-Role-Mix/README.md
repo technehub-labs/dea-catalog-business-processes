@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 
 **Name**: Declare Regulator-Licensed Role Mix
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Declare Regulator-Licensed Role Mix | **Canonical ID** | `processes:activity-ao-conceive-cqkwrm` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Conceive Licensed or Regulated Agent Capacity that Declare the regulator-licensed role mix on the regulated personnel record: count and category of regulator-licensed roles, the regulator-tied scope of each, and the alignment between the regulated personnel record and the regulator continuing-supervision framework. Shared concern: regulated-scope declaration. Input: the enterprise agent-capacity strategy; the regulator licensing taxonomy. Output: the committed regulated-scope declaration.
+**Intent and Definition**: The cohesive grouping of work within Conceive Licensed or Regulated Agent Capacity that Declare the regulator-licensed role mix on the regulated personnel record: count and category of regulator-licensed roles, the regulator-tied scope of each, and the alignment between the regulated personnel record and the regulator continuing-supervision framework. Shared concern: regulated-scope declaration. Input: the enterprise agent-capacity strategy; the regulator licensing taxonomy. Output: the committed regulated-scope declaration.
 
-**Definition**: The cohesive grouping of work within Conceive Licensed or Regulated Agent Capacity that Declare the regulator-licensed role mix on the regulated personnel record: count and category of regulator-licensed roles, the regulator-tied scope of each, and the alignment between the regulated personnel record and the regulator continuing-supervision framework. Shared concern: regulated-scope declaration. Input: the enterprise agent-capacity strategy; the regulator licensing taxonomy. Output: the committed regulated-scope declaration.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -35,16 +33,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-conceive-kwbnxz, processes:task-ao-conceive-2yh862, processes:task-ao-conceive-ms5b | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-conceive-intake-hb8x2r, processes:task-ao-conceive-verify-skgr5k, processes:task-ao | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Conceive Licensed or Regulated Agent Capacity that Declare the regulator-licensed r |
+| `definition` | string | no | The cohesive grouping of work within Conceive Licensed or Regulated Agent Capacity that Declare the regulator-licensed … |
 | `belongs_to_business_process` | string | no | processes:process-ao-conceive-pnrhem |
-| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single declare regulator-licen |
+| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single declare … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -58,7 +56,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 | `composes` | `processes:task-ao-conceive-confirm-fphn67` | 1 |
 | `composes` | `processes:task-ao-conceive-record-6v6fz2` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -66,7 +64,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 - **Cohesion rationale**: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single declare regulator-licensed role mix concern, one input class, and one output (the declare regulator-licensed role mix record on the regulated personnel record).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-fa-d
 
 **Name**: Financial Design
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical ProcessGroup record for `processes:group-fa-d
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Financial Design | **Canonical ID** | `processes:group-fa-design-7juvse` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organises the Business Process responsibilities of designing the enterprise's financial controls, tax position, and treasury model in the FinanceAndAccounting x Design context. v2.4.0 grounding (register v2 FA/design cell).
+**Intent and Definition**: The bounded Process Group that organises the Business Process responsibilities of designing the enterprise's financial controls, tax position, and treasury model in the FinanceAndAccounting x Design context. v2.4.0 grounding (register v2 FA/design cell).
 
-**Definition**: The bounded Process Group that organises the Business Process responsibilities of designing the enterprise's financial controls, tax position, and treasury model in the FinanceAndAccounting x Design context. v2.4.0 grounding (register v2 FA/design cell).
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,13 +27,13 @@ This directory hosts the canonical ProcessGroup record for `processes:group-fa-d
 | 2026-09-08 | `CR-BP-21e.1` | Initial Process Group record; promoted from the CR-BP-19 register | System |
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded Process Group that organises the Business Process responsibilities of designing the enterprise's financial c |
+| `definition` | string | no | The bounded Process Group that organises the Business Process responsibilities of designing the enterprise's financial … |
 | `process_context` | string | no | processes:pc-fa-design-4j8evh |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[2] | no | array of 2 item(s) |
@@ -56,11 +54,11 @@ This directory hosts the canonical ProcessGroup record for `processes:group-fa-d
 | `composes` | `processes:process-fa-design-ds4drw` | 1 |
 | `composes` | `processes:process-fa-design-k5sgfa` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

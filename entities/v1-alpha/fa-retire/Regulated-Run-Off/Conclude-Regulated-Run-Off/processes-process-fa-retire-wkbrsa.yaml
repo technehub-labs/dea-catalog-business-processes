@@ -26,7 +26,7 @@ owner:
   decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
 description: 'Conclude a regulated run-off of a financial entity (insurer, mutual, or run-off portfolio)
-  under statutory run-off obligations within the dea:pc-fa-retire Cell Charter. See trigger and outcome
+  under statutory run-off obligations within the processes:pc-fa-retire-64q5p9 Cell Charter. See trigger and outcome
   for the bounded work this process owns; see identity.outcome_statement for the testable outcome the
   process produces.
 
@@ -180,7 +180,7 @@ inputs:
   name: 'Conclude Regulated Run-Off: working inputs (business_object)'
   description: 'Derived from the record''s documented description and trigger: the process Conclude a
     regulated run-off of a financial entity (insurer, mutual, or run-off portfolio) under statutory run-off
-    obligations within the dea:pc-fa-re'
+    obligations within the processes:pc-fa-retire-64q5p9'
   source: Record documented content (description + trigger fields)
   mandatory: true
 outputs:

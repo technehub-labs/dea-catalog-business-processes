@@ -25,7 +25,7 @@ owner:
   review_due: '2026-12-31'
   decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
-description: 'Operate the Operate General Ledger L2 process within the dea:pc-fa-operate Cell Charter.
+description: 'Operate the Operate General Ledger L2 process within the processes:pc-fa-operate-afew7e Cell Charter.
   See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the
   testable outcome the process produces. '
 trigger: 'General ledger operation is needed because the built finance capability is now in active operation
@@ -129,7 +129,7 @@ inputs:
   type: information
   name: 'Operate General Ledger: working inputs (information)'
   description: 'Derived from the record''s documented description and trigger: the process Operate the
-    Operate General Ledger L2 process within the dea:pc-fa-operate Cell Charter. See trigger and outcome
+    Operate General Ledger L2 process within the processes:pc-fa-operate-afew7e Cell Charter. See trigger and outcome
     for the bounded work this process own'
   source: Record documented content (description + trigger fields)
   mandatory: true

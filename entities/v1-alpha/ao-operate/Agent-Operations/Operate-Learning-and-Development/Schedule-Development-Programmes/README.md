@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 **Name**: Schedule Development Programmes
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Schedule Development Programmes | **Canonical ID** | `processes:activity-ao-operate-skjmyf` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Operate Learning and Development that schedules the development programmes committed for agents in service.
+**Intent and Definition**: The cohesive grouping of work within Operate Learning and Development that schedules the development programmes committed for agents in service.
 
-**Definition**: The cohesive grouping of work within Operate Learning and Development that schedules the development programmes committed for agents in service.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 | 2026-09-14 | `CR-BP-57` | Initial L3 Activity entry; lands as part of the CR-BP-57 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-schedule-development-programmes-intake, dea:task-schedule-development-programmes-verify, dea | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Operate Learning and Development that schedules the development programmes committe |
+| `definition` | string | no | The cohesive grouping of work within Operate Learning and Development that schedules the development programmes … |
 | `belongs_to_business_process` | string | no | processes:process-ao-operate-87q5mk |
-| `cohesion_rationale` | string | no | Constituent work shares a single scheduling concern (development programmes scheduled for agents in service), one input  |
+| `cohesion_rationale` | string | no | Constituent work shares a single scheduling concern (development programmes scheduled for agents in service), one input … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 | `composes` | `processes:task-ao-operate-confirm-quh3w4` | 1 |
 | `composes` | `processes:task-ao-operate-record-qx6usf` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 - **Cohesion rationale**: Constituent work shares a single scheduling concern (development programmes scheduled for agents in service), one input class (the committed gap priorities and development plan), and one output (the scheduled development programmes). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

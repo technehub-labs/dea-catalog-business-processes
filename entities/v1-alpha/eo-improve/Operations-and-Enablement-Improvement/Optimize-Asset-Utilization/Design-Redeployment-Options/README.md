@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-eo-im
 
 **Name**: Design Redeployment Options
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-eo-im
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Design Redeployment Options | **Canonical ID** | `processes:activity-eo-improve-s9zhpt` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Optimize Asset Utilization that designs the redeployment options that resolve the bounded utilization issues.
+**Intent and Definition**: The cohesive grouping of work within Optimize Asset Utilization that designs the redeployment options that resolve the bounded utilization issues.
 
-**Definition**: The cohesive grouping of work within Optimize Asset Utilization that designs the redeployment options that resolve the bounded utilization issues.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-eo-im
 | 2026-09-13 | `CR-BP-47` | Initial L3 Activity entry; lands as part of the CR-BP-47 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-design-redeployment-options-intake, dea:task-design-redeployment-options-verify, dea:task-de | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Optimize Asset Utilization that designs the redeployment options that resolve the b |
+| `definition` | string | no | The cohesive grouping of work within Optimize Asset Utilization that designs the redeployment options that resolve the … |
 | `belongs_to_business_process` | string | no | processes:process-eo-improve-q58ecg |
-| `cohesion_rationale` | string | no | Constituent work shares a single option-design concern (utilization picture to redeployment options), one reference clas |
+| `cohesion_rationale` | string | no | Constituent work shares a single option-design concern (utilization picture to redeployment options), one reference … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-eo-im
 | `composes` | `processes:task-eo-improve-confirm-8haz37` | 1 |
 | `composes` | `processes:task-eo-improve-record-xg4j96` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-eo-im
 - **Cohesion rationale**: Constituent work shares a single option-design concern (utilization picture to redeployment options), one reference class (capacity envelopes, demand model), and one output (the option set). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

@@ -1,7 +1,7 @@
 id: processes:task-sd-activate-verify-f85f9w
 type: Task
 name: Activate Communications Plan Under Regulator Continuing Supervision Verification
-definition: 'The bounded unit of work within `dea:activity-activate-communications-plan-under-regulator-continuing-supervision` (Activate Communications Plan Under Regulator Continuing Supervision) that carries out the verify phase of the parent''s verb-object decomposition. Phase responsibility: verification custodian. Phase trigger: Intake registered (phase 1 complete); verification of input against parent Activity''s specification can begin. Phase outcome: Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
+definition: 'The bounded unit of work within `processes:activity-sd-activate-jz6u3q` (Activate Communications Plan Under Regulator Continuing Supervision) that carries out the verify phase of the parent''s verb-object decomposition. Phase responsibility: verification custodian. Phase trigger: Intake registered (phase 1 complete); verification of input against parent Activity''s specification can begin. Phase outcome: Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
 belongs_to_activity: processes:activity-sd-activate-jz6u3q
 trigger: Intake registered (phase 1 complete); verification of input against parent Activity's specification can begin.
 outcome: Verified that the input meets parent Activity's specification; nonconformities are recorded for rejection or remediation.

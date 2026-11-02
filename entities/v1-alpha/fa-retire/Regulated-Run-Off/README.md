@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-fa-r
 
 **Name**: Regulated Run-Off
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,9 +13,9 @@ This directory hosts the canonical ProcessGroup record for `processes:group-fa-r
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Regulated Run-Off | **Canonical ID** | `processes:group-fa-retire-2ptdnw` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organises the Business Process
+**Intent and Definition**: The bounded Process Group that organises the Business Process
 responsibilities of retiring a regulated financial entity
 (insurer, mutual, or run-off portfolio) under statutory run-off
 obligations in the FinanceAndAccounting x Retire context where
@@ -26,22 +26,11 @@ matching, policyholder priority, communications, retained-records,
 exit accounting, and solvent-exit or run-off completion
 certification).
 
-**Definition**: The bounded Process Group that organises the Business Process
-responsibilities of retiring a regulated financial entity
-(insurer, mutual, or run-off portfolio) under statutory run-off
-obligations in the FinanceAndAccounting x Retire context where
-regulator-acknowledged run-off authorisation triggers distinct
-group-level work (run-off plan submission, statutory accounting
-basis transition, reserving, capital adequacy, asset-liability
-matching, policyholder priority, communications, retained-records,
-exit accounting, and solvent-exit or run-off completion
-certification).
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 (governance and provenance to be backfilled at EXT-04)
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -64,11 +53,11 @@ certification).
 | :--- | :--- | :--- |
 | `composes` | `processes:process-fa-retire-wkbrsa` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

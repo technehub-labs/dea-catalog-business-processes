@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-eo-a
 
 **Name**: Regulated Operations Activation
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,9 +13,9 @@ This directory hosts the canonical ProcessGroup record for `processes:group-eo-a
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Regulated Operations Activation | **Canonical ID** | `processes:group-eo-activate-bnmwuu` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organises the Business Process
+**Intent and Definition**: The bounded Process Group that organises the Business Process
 responsibilities of moving an operations capability from
 regulator-authorized-but-not-live to regulator-authorized-and-live
 in the EnablementAndOperations x Activate context where
@@ -26,22 +26,11 @@ rail safety-case authorization, nuclear operations authorization)
 creates a distinct group-level activation concern separate from
 steady-state operation.
 
-**Definition**: The bounded Process Group that organises the Business Process
-responsibilities of moving an operations capability from
-regulator-authorized-but-not-live to regulator-authorized-and-live
-in the EnablementAndOperations x Activate context where
-regulator-issued authorization or certification (Air Operator
-Certificate, PSD2 / MiCA payment-institution authorization, GMP
-certification, FAA Part 119 air carrier authorization, ORR/ERA
-rail safety-case authorization, nuclear operations authorization)
-creates a distinct group-level activation concern separate from
-steady-state operation.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 (governance and provenance to be backfilled at EXT-04)
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -64,11 +53,11 @@ steady-state operation.
 | :--- | :--- | :--- |
 | `composes` | `processes:process-eo-activate-sy5qsa` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-co
 
 **Name**: Commit Purpose and Ambition
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-sd-co
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Commit Purpose and Ambition | **Canonical ID** | `processes:activity-sd-conceive-jmupn8` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Define Enterprise Purpose and Ambition that commits the purpose and ambition for downstream strategic intent conception.
+**Intent and Definition**: The cohesive grouping of work within Define Enterprise Purpose and Ambition that commits the purpose and ambition for downstream strategic intent conception.
 
-**Definition**: The cohesive grouping of work within Define Enterprise Purpose and Ambition that commits the purpose and ambition for downstream strategic intent conception.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-sd-co
 | 2026-09-13 | `CR-BP-54` | Initial L3 Activity entry; lands as part of the CR-BP-54 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-commit-purpose-and-ambition-intake, dea:task-commit-purpose-and-ambition-verify, dea:task-co | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Define Enterprise Purpose and Ambition that commits the purpose and ambition for do |
+| `definition` | string | no | The cohesive grouping of work within Define Enterprise Purpose and Ambition that commits the purpose and ambition for … |
 | `belongs_to_business_process` | string | no | processes:process-sd-conceive-r93j3d |
-| `cohesion_rationale` | string | no | Constituent work shares a single commitment concern (purpose and ambition to committed artifact), one reference class (p |
+| `cohesion_rationale` | string | no | Constituent work shares a single commitment concern (purpose and ambition to committed artifact), one reference class … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-co
 | `composes` | `processes:task-sd-conceive-confirm-3spta3` | 1 |
 | `composes` | `processes:task-sd-conceive-record-k8q7t5` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-co
 - **Cohesion rationale**: Constituent work shares a single commitment concern (purpose and ambition to committed artifact), one reference class (purpose and ambition artifacts), and one output (the committed purpose and ambition). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

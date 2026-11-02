@@ -135,17 +135,19 @@ except Exception:  # pragma: no cover - defensive
             ],
         },
     }
+    # CR-BP-221: number-agnostic (numbers are per-profile; coherence is
+    # RDM-003's job). Mirrors check_documentation_profile.EXPECTED_HEADINGS.
     EXPECTED_HEADINGS: dict[str, str] = {
-        "header-identity-table": r"^##\s*Header and Identity Table",
-        "executive-summary": r"^##\s*1\.\s*Executive Summary",
-        "intent-definition": r"^##\s*Intent and Definition",
-        "governance-provenance": r"^##\s*2\.\s*Governance and Provenance",
-        "behavioral-boundaries": r"^##\s*3\.\s*Behavioral Boundaries",
-        "hierarchical-decomposition": r"^##\s*4\.\s*Hierarchical Decomposition",
-        "properties-relationships": r"^##\s*5\.\s*Properties and Relationships",
-        "operational-metrics": r"^##\s*6\.\s*Operational, Control and Metrics Details",
-        "operational-details": r"^##\s*Operational Details",
-        "technical-metadata": r"^##\s*7\.\s*Technical Metadata",
+        "header-identity-table": r"^##\s*(?:\d+\.\s*)?Header and Identity Table",
+        "executive-summary": r"^##\s*(?:\d+\.\s*)?Executive Summary",
+        "intent-definition": r"^##\s*(?:\d+\.\s*)?Intent and Definition",
+        "governance-provenance": r"^##\s*(?:\d+\.\s*)?Governance and Provenance",
+        "behavioral-boundaries": r"^##\s*(?:\d+\.\s*)?Behavioral Boundaries",
+        "hierarchical-decomposition": r"^##\s*(?:\d+\.\s*)?Hierarchical Decomposition",
+        "properties-relationships": r"^##\s*(?:\d+\.\s*)?Properties and Relationships",
+        "operational-metrics": r"^##\s*(?:\d+\.\s*)?Operational, Control and Metrics Details",
+        "operational-details": r"^##\s*(?:\d+\.\s*)?Operational Details",
+        "technical-metadata": r"^##\s*(?:\d+\.\s*)?Technical Metadata",
     }
 
     def _resolve_profile(record: dict) -> dict | None:  # noqa: F811

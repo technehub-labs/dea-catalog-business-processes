@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-co
 
 **Name**: Assess Finance Strategy Context
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-fa-co
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Assess Finance Strategy Context | **Canonical ID** | `processes:activity-fa-conceive-hebg2g` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Frame Finance Strategy that assesses the context (new model, reframe, or external response) driving the finance strategy need.
+**Intent and Definition**: The cohesive grouping of work within Frame Finance Strategy that assesses the context (new model, reframe, or external response) driving the finance strategy need.
 
-**Definition**: The cohesive grouping of work within Frame Finance Strategy that assesses the context (new model, reframe, or external response) driving the finance strategy need.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-fa-co
 | 2026-09-13 | `CR-BP-52` | Initial L3 Activity entry; lands as part of the CR-BP-52 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-assess-finance-strategy-context-intake, dea:task-assess-finance-strategy-context-verify, dea | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Frame Finance Strategy that assesses the context (new model, reframe, or external r |
+| `definition` | string | no | The cohesive grouping of work within Frame Finance Strategy that assesses the context (new model, reframe, or external … |
 | `belongs_to_business_process` | string | no | processes:process-fa-conceive-4uqqvg |
-| `cohesion_rationale` | string | no | Constituent work shares a single context concern (why this strategy, now), one input class (enterprise state, regulatory |
+| `cohesion_rationale` | string | no | Constituent work shares a single context concern (why this strategy, now), one input class (enterprise state … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-co
 | `composes` | `processes:task-fa-conceive-confirm-zse2f2` | 1 |
 | `composes` | `processes:task-fa-conceive-record-amzehj` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-co
 - **Cohesion rationale**: Constituent work shares a single context concern (why this strategy, now), one input class (enterprise state, regulatory and market signals), and one output (the assessed strategy context). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

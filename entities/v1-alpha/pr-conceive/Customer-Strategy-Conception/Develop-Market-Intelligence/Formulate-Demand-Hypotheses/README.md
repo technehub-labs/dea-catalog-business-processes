@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-pr-co
 
 **Name**: Formulate Demand Hypotheses
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-pr-co
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Formulate Demand Hypotheses | **Canonical ID** | `processes:activity-pr-conceive-mnhm2f` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Develop Market Intelligence that converts scanned signals into testable demand hypotheses.
+**Intent and Definition**: The cohesive grouping of work within Develop Market Intelligence that converts scanned signals into testable demand hypotheses.
 
-**Definition**: The cohesive grouping of work within Develop Market Intelligence that converts scanned signals into testable demand hypotheses.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-pr-co
 | 2026-09-13 | `CR-BP-45` | Initial L3 Activity entry; lands as part of the CR-BP-45 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-formulate-demand-hypotheses-intake, dea:task-formulate-demand-hypotheses-verify, dea:task-fo | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Develop Market Intelligence that converts scanned signals into testable demand hypo |
+| `definition` | string | no | The cohesive grouping of work within Develop Market Intelligence that converts scanned signals into testable demand … |
 | `belongs_to_business_process` | string | no | processes:process-pr-conceive-tvst8u |
-| `cohesion_rationale` | string | no | Constituent work shares a single formulation concern (signals to testable statements), one input class (the scan record) |
+| `cohesion_rationale` | string | no | Constituent work shares a single formulation concern (signals to testable statements), one input class (the scan … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-pr-co
 | `composes` | `processes:task-pr-conceive-confirm-e4pw6f` | 1 |
 | `composes` | `processes:task-pr-conceive-record-rqj8qv` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-pr-co
 - **Cohesion rationale**: Constituent work shares a single formulation concern (signals to testable statements), one input class (the scan record), and one output (the hypothesis set). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

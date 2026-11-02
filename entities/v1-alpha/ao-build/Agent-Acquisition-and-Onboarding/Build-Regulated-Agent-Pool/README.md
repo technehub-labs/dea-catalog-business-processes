@@ -4,7 +4,7 @@ This directory hosts the canonical Process record for `processes:process-ao-buil
 
 **Name**: Build Regulated Agent Pool
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,13 @@ This directory hosts the canonical Process record for `processes:process-ao-buil
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Build Regulated Agent Pool | **Canonical ID** | `processes:process-ao-build-9my4jr` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
 **Intent**: manage
 
 **Definition**: (definition pending; backfill at EXT-04)
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -30,7 +30,7 @@ This directory hosts the canonical Process record for `processes:process-ao-buil
 | 2026-10-12 | `CR-BP-111` | L3 decomposition tranche (CR-BP-111): added metadata.activity_references back-references to the 4 Activity records decomposing this BP. Version unchanged per SIV-004 (additive metadata-only). Activiti | System |
 | 2026-10-27 | `CR-BP-GS-1` | Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Agency & Organization Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -42,9 +42,9 @@ This directory hosts the canonical Process record for `processes:process-ao-buil
 | `process_classification` | object | no | object: type, provenance, status |
 | `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
-| `description` | string | no | Build the regulator-ready licensed-candidate pool under the enterprise regulated-entity approval authority. The trigger  |
-| `trigger` | string | no | The enterprise is sourcing candidates for regulator-licensed roles whose qualifications must be verified against the reg |
-| `outcome` | string | no | The licensed-candidate pool is verified, cleared, and on the regulated personnel record; each candidate is fitness-and-p |
+| `description` | string | no | Build the regulator-ready licensed-candidate pool under the enterprise regulated-entity approval authority. The trigger … |
+| `trigger` | string | no | The enterprise is sourcing candidates for regulator-licensed roles whose qualifications must be verified against the … |
+| `outcome` | string | no | The licensed-candidate pool is verified, cleared, and on the regulated personnel record; each candidate is … |
 | `identity` | object | no | object: verb, object, scope, outcome_statement, evidence_links |
 | `context` | array[1] | no | array of 1 item(s) |
 | `relationships` | array[1] | no | array of 1 item(s) |
@@ -55,7 +55,7 @@ This directory hosts the canonical Process record for `processes:process-ao-buil
 | `outputs` | array[1] | no | array of 1 item(s) |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -67,7 +67,7 @@ This directory hosts the canonical Process record for `processes:process-ao-buil
   - `processes:activity-ao-build-r6h2t8`
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

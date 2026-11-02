@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-co
 
 **Name**: Track Continuing-Competence Completion Confirmation
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-co
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Track Continuing-Competence Completion Confirmation | **Canonical ID** | `processes:task-ao-operate-confirm-3hp8aa` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-ao-operate-b5v2k9` (Track Continuing-Competence Completion) that carries out the confirm phase of the parent's verb-object decomposition. Phase responsibility: confirmation custodian. Phase trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued. Phase outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.
+**Intent and Definition**: The bounded unit of work within `processes:activity-ao-operate-b5v2k9` (Track Continuing-Competence Completion) that carries out the confirm phase of the parent's verb-object decomposition. Phase responsibility: confirmation custodian. Phase trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued. Phase outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.
 
-**Definition**: The bounded unit of work within `processes:activity-ao-operate-b5v2k9` (Track Continuing-Competence Completion) that carries out the confirm phase of the parent's verb-object decomposition. Phase responsibility: confirmation custodian. Phase trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued. Phase outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -35,16 +33,16 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-co
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-operate-jywxqg, processes:task-ao-operate-jz9bbh, processes:task-ao-operate-svwea4, | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-ao-operate-b5v2k9` (Track Continuing-Competence Completion) that car |
+| `definition` | string | no | The bounded unit of work within `processes:activity-ao-operate-b5v2k9` (Track Continuing-Competence Completion) that … |
 | `belongs_to_activity` | string | no | processes:activity-ao-operate-b5v2k9 |
 | `trigger` | string | no | Processing complete (phase 3); output available for downstream consumers and confirmation can be issued. |
-| `outcome` | string | no | Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcom |
+| `outcome` | string | no | Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity … |
 | `responsibility` | string | no | confirmation custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[2] | no | array of 2 item(s) |
@@ -52,11 +50,11 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-co
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

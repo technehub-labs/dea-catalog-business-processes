@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 
 **Name**: Stand Up Finance Function
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Stand Up Finance Function | **Canonical ID** | `processes:activity-fa-build-xf2kdw` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Secure Funding Facilities that stands up the finance function operating the secured facilities and financial systems.
+**Intent and Definition**: The cohesive grouping of work within Secure Funding Facilities that stands up the finance function operating the secured facilities and financial systems.
 
-**Definition**: The cohesive grouping of work within Secure Funding Facilities that stands up the finance function operating the secured facilities and financial systems.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 | 2026-09-13 | `CR-BP-52` | Initial L3 Activity entry; lands as part of the CR-BP-52 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-stand-up-finance-function-intake, dea:task-stand-up-finance-function-verify, dea:task-stand- | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Secure Funding Facilities that stands up the finance function operating the secured |
+| `definition` | string | no | The cohesive grouping of work within Secure Funding Facilities that stands up the finance function operating the … |
 | `belongs_to_business_process` | string | no | processes:process-fa-build-ydnzjc |
-| `cohesion_rationale` | string | no | Constituent work shares a single stand-up concern (designs to operating function), one reference class (treasury operati |
+| `cohesion_rationale` | string | no | Constituent work shares a single stand-up concern (designs to operating function), one reference class (treasury … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 | `composes` | `processes:task-fa-build-confirm-6tbz5j` | 1 |
 | `composes` | `processes:task-fa-build-record-b2fbmq` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 - **Cohesion rationale**: Constituent work shares a single stand-up concern (designs to operating function), one reference class (treasury operating model, plan structure), and one output (the stood-up finance function). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

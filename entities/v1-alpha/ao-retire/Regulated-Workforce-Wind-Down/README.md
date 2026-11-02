@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-r
 
 **Name**: Regulated Workforce Wind-Down
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,9 +13,9 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-r
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Regulated Workforce Wind-Down | **Canonical ID** | `processes:group-ao-retire-jspuzz` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organises the Business Process
+**Intent and Definition**: The bounded Process Group that organises the Business Process
 responsibilities of retiring an enterprise workforce under
 regulated mass-layoff or regulated wind-down obligations in the
 AgencyAndOrganization x Retire context where statutory triggers
@@ -24,20 +24,11 @@ statutes) require distinct group-level work (statutory notice,
 worker-representative consultation, fair selection, severance,
 benefits continuation, transition supports).
 
-**Definition**: The bounded Process Group that organises the Business Process
-responsibilities of retiring an enterprise workforce under
-regulated mass-layoff or regulated wind-down obligations in the
-AgencyAndOrganization x Retire context where statutory triggers
-(WARN, EU Directive 98/59/EC, ILO C158, jurisdictional mass-layoff
-statutes) require distinct group-level work (statutory notice,
-worker-representative consultation, fair selection, severance,
-benefits continuation, transition supports).
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 (governance and provenance to be backfilled at EXT-04)
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -60,11 +51,11 @@ benefits continuation, transition supports).
 | :--- | :--- | :--- |
 | `composes` | `processes:process-ao-retire-g3eyr8` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

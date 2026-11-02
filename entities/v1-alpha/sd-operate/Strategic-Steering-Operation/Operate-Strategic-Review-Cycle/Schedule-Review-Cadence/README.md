@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 
 **Name**: Schedule Review Cadence
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Schedule Review Cadence | **Canonical ID** | `processes:activity-sd-operate-4yw98f` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Operate Strategic Review Cycle that schedules and maintains the standing cadence of strategic reviews.
+**Intent and Definition**: The cohesive grouping of work within Operate Strategic Review Cycle that schedules and maintains the standing cadence of strategic reviews.
 
-**Definition**: The cohesive grouping of work within Operate Strategic Review Cycle that schedules and maintains the standing cadence of strategic reviews.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 | 2026-09-14 | `CR-BP-55` | Initial L3 Activity entry; lands as part of the CR-BP-55 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-schedule-review-cadence-intake, dea:task-schedule-review-cadence-verify, dea:task-schedule-r | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Operate Strategic Review Cycle that schedules and maintains the standing cadence of |
+| `definition` | string | no | The cohesive grouping of work within Operate Strategic Review Cycle that schedules and maintains the standing cadence … |
 | `belongs_to_business_process` | string | no | processes:process-sd-operate-ucxpz4 |
-| `cohesion_rationale` | string | no | Constituent work shares a single scheduling concern (the standing cadence of reviews set and maintained), one input clas |
+| `cohesion_rationale` | string | no | Constituent work shares a single scheduling concern (the standing cadence of reviews set and maintained), one input … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 | `composes` | `processes:task-sd-operate-confirm-fwjk4g` | 1 |
 | `composes` | `processes:task-sd-operate-record-834suj` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 - **Cohesion rationale**: Constituent work shares a single scheduling concern (the standing cadence of reviews set and maintained), one input class (the strategic review cycle mandate), and one output (the scheduled review cadence). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

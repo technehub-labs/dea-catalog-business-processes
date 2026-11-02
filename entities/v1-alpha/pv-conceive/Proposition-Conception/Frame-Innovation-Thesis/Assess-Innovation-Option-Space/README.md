@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-co
 
 **Name**: Assess Innovation Option Space
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-pv-co
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Assess Innovation Option Space | **Canonical ID** | `processes:activity-pv-conceive-3ufbnz` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Frame Innovation Thesis that assesses the option space within the selected focus areas before thesis commitment.
+**Intent and Definition**: The cohesive grouping of work within Frame Innovation Thesis that assesses the option space within the selected focus areas before thesis commitment.
 
-**Definition**: The cohesive grouping of work within Frame Innovation Thesis that assesses the option space within the selected focus areas before thesis commitment.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-pv-co
 | 2026-09-13 | `CR-BP-50` | Initial L3 Activity entry; lands as part of the CR-BP-50 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-assess-innovation-option-space-intake, dea:task-assess-innovation-option-space-verify, dea:t | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Frame Innovation Thesis that assesses the option space within the selected focus ar |
+| `definition` | string | no | The cohesive grouping of work within Frame Innovation Thesis that assesses the option space within the selected focus … |
 | `belongs_to_business_process` | string | no | processes:process-pv-conceive-kps544 |
-| `cohesion_rationale` | string | no | Constituent work shares a single assessment concern (focus areas to option map), one input class (focus areas, market si |
+| `cohesion_rationale` | string | no | Constituent work shares a single assessment concern (focus areas to option map), one input class (focus areas, market … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-co
 | `composes` | `processes:task-pv-conceive-confirm-xuew5p` | 1 |
 | `composes` | `processes:task-pv-conceive-record-3s424k` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-co
 - **Cohesion rationale**: Constituent work shares a single assessment concern (focus areas to option map), one input class (focus areas, market signals), and one output (the assessed option space). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

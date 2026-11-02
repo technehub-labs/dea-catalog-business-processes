@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-pr-activate-c
 
 **Name**: Record Onboarding Decision Confirmation
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-pr-activate-c
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Record Onboarding Decision Confirmation | **Canonical ID** | `processes:task-pr-activate-confirm-6ntqyv` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-pr-activate-q9pr4m` (Record Onboarding Decision) that reconcile the activated-party record against the onboarding-decision criteria and the verification certificate, issue the onboarding confirmation to the relationship custodian and the activated party, and log the confirmation against the case file.
+**Intent and Definition**: The bounded unit of work within `processes:activity-pr-activate-q9pr4m` (Record Onboarding Decision) that reconcile the activated-party record against the onboarding-decision criteria and the verification certificate, issue the onboarding confirmation to the relationship custodian and the activated party, and log the confirmation against the case file.
 
-**Definition**: The bounded unit of work within `processes:activity-pr-activate-q9pr4m` (Record Onboarding Decision) that reconcile the activated-party record against the onboarding-decision criteria and the verification certificate, issue the onboarding confirmation to the relationship custodian and the activated party, and log the confirmation against the case file.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Task record for `processes:task-pr-activate-c
 | 2026-09-16 | `CR-BP-77` | Initial L3 Activity entry; lands as part of the CR-BP-77 | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-pr-activate-q9pr4m` (Record Onboarding Decision) that reconcile the  |
+| `definition` | string | no | The bounded unit of work within `processes:activity-pr-activate-q9pr4m` (Record Onboarding Decision) that reconcile the … |
 | `belongs_to_activity` | string | no | processes:activity-pr-activate-q9pr4m |
-| `trigger` | string | no | Bounded-work artefact produced for Record Onboarding Decision; confirm gate may reconcile against the governing contract |
-| `outcome` | string | no | Completion confirmation issued for Record Onboarding Decision and acknowledged by the relationship custodian and any gov |
+| `trigger` | string | no | Bounded-work artefact produced for Record Onboarding Decision; confirm gate may reconcile against the governing … |
+| `outcome` | string | no | Completion confirmation issued for Record Onboarding Decision and acknowledged by the relationship custodian and any … |
 | `responsibility` | string | no | confirmation custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-pr-activate-c
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

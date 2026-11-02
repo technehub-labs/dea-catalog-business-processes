@@ -32,7 +32,7 @@ scope:
   - Steady-state relationship operation (Operate stage; adjacent context)
   - Relationship improvement and development (Improve stage; adjacent context)
   - Relationship close-out and regulated offboarding (Retire stage; sibling coordinate, CR-BP-67)
-  - Non-regulated first-time activation (handled inside dea:pc-pr-operate per register v2 doctrine)
+  - Non-regulated first-time activation (handled inside processes:pc-pr-operate-pwue5a per register v2 doctrine)
 outcomes:
 - Relationships are activated under verified identity, resolved beneficial ownership, and an assigned risk classification.
 - Onboarding decisions (approve / decline) are recorded with their evidence.
@@ -68,7 +68,7 @@ cell_charter:
   - Sanctions and PEP screening; onboarding approval authority
   - Onboarding refusal with recorded rationale
   exclusions:
-  - Non-regulated first-time activation (handled inside dea:pc-pr-operate)
+  - Non-regulated first-time activation (handled inside processes:pc-pr-operate-pwue5a)
   - Steady-state relationship operation (Operate context)
   - Relationship close-out and regulated offboarding (Retire context, CR-BP-67)
   - Asset retirement and decommissioning (EnablementAndOperations x Retire; sibling cell)
