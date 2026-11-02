@@ -4,7 +4,7 @@ This directory hosts the canonical Process record for `processes:process-sd-desi
 
 **Name**: Design Strategic Scenarios
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,13 @@ This directory hosts the canonical Process record for `processes:process-sd-desi
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Design Strategic Scenarios | **Canonical ID** | `processes:process-sd-design-uenzna` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
 **Intent**: develop
 
 **Definition**: (definition pending; backfill at EXT-04)
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -31,7 +31,7 @@ This directory hosts the canonical Process record for `processes:process-sd-desi
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 | 2026-10-27 | `CR-BP-GS-1` | Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Strategy & Direction Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under  | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -43,8 +43,8 @@ This directory hosts the canonical Process record for `processes:process-sd-desi
 | `process_classification` | object | no | object: type, provenance, status |
 | `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
-| `description` | string | no | Operate the Design Strategic Scenarios L2 process within the dea:pc-sd-design Cell Charter. See trigger and outcome for  |
-| `trigger` | string | no | A strategic scenarios design is needed because the strategic options require bounded assumptions and signposts to stress |
+| `description` | string | no | Operate the Design Strategic Scenarios L2 process within the processes:pc-sd-design-g3es76 Cell Charter. See trigger … |
+| `trigger` | string | no | A strategic scenarios design is needed because the strategic options require bounded assumptions and signposts to … |
 | `outcome` | string | no | Strategic scenarios are designed with bounded assumptions and signposts. |
 | `identity` | object | no | object: verb, object, scope, outcome_statement, evidence_links |
 | `relationships` | array[1] | no | array of 1 item(s) |
@@ -57,7 +57,7 @@ This directory hosts the canonical Process record for `processes:process-sd-desi
 | `outputs` | array[2] | no | array of 2 item(s) |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -69,7 +69,7 @@ This directory hosts the canonical Process record for `processes:process-sd-desi
   - `processes:activity-sd-design-jgwe2n`
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

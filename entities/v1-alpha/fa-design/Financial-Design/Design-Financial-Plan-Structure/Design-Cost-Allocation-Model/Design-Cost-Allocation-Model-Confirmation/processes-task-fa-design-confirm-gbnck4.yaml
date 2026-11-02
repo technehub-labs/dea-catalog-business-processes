@@ -1,7 +1,7 @@
 id: processes:task-fa-design-confirm-gbnck4
 type: Task
 name: Design Cost Allocation Model Confirmation
-definition: 'The bounded unit of work within `dea:activity-design-cost-allocation-model` (Design Cost Allocation Model) that carries out the confirm phase of the parent''s verb-object decomposition. Phase responsibility: confirmation custodian. Phase trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued. Phase outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
+definition: 'The bounded unit of work within `processes:activity-fa-design-xzbfxx` (Design Cost Allocation Model) that carries out the confirm phase of the parent''s verb-object decomposition. Phase responsibility: confirmation custodian. Phase trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued. Phase outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
 belongs_to_activity: processes:activity-fa-design-xzbfxx
 trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued.
 outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.

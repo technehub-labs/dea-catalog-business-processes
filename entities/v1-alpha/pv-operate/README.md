@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pv-op
 
 **Name**: Portfolio Management and Proposition Lifecycle Operation
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,15 +13,15 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pv-op
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Portfolio Management and Proposition Lifecycle Operation | **Canonical ID** | `processes:pc-pv-operate-ewpwjc` |
 
-## 1. Executive Summary / Intent
+## 2. Executive Summary / Intent
 
 The steady-state work of operating the product catalogue, managing portfolio performance, and managing the proposition lifecycle.
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 (governance and provenance to be backfilled at EXT-04)
 
-## 3. Behavioral Boundaries (Cell Charter)
+## 4. Behavioral Boundaries (Cell Charter)
 
 | Scope Type | Description |
 | :--- | :--- |
@@ -29,7 +29,7 @@ The steady-state work of operating the product catalogue, managing portfolio per
 | Out of Scope (exclusions) | - Product development (Build stage; adjacent context)<br>- Operational delivery of the product (enablement-operations x operate; adjacent domain)<br>- Partner alliance programme (party-relationship x operate; adjacent domain)<br>- Workforce operation (agency-organization x operate; adjacent domain) |
 | Adjacent Cells | - processes:pc-pv-conceive-fe9awk (adjacent context): proposition flow between Operate and the adjacent cell.<br>- processes:pc-pv-design-8dhwpn (adjacent context): proposition flow between Operate and the adjacent cell.<br>- processes:pc-pv-build-ygbmxb (adjacent context): proposition flow between Operate and the adjacent cell.<br>- processes:pc-pv-improve-wpyfx7 (adjacent context): proposition flow between Operate and the adjacent cell. |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename).
 
@@ -119,7 +119,7 @@ pv-operate/
 _(Full L4 task lists for each L3 activity are available in their respective subdirectories.)_
 </details>
 
-## 5. Properties and Relationships
+## 6. Properties and Relationships
 
 **Properties**
 
@@ -127,12 +127,12 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | :--- | :--- | :--- | :--- |
 | `domain` | string | no | ProductAndValue |
 | `lifecycle_stage` | string | no | Operate |
-| `definition` | string | no | The bounded enterprise context for **operating** the product catalogue, portfolio performance, and proposition lifecycle |
+| `definition` | string | no | The bounded enterprise context for **operating** the product catalogue, portfolio performance, and proposition … |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[4] | no | array of 4 item(s) |
 | `adjacent_contexts` | array[4] | no | array of 4 item(s) |
 | `processes` | array[3] | no | array of 3 item(s) |
-| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
+| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions … |
 | `status` | string | no | candidate |
 | `established_by` | string | no | CR-BP-21c |
 | `established_at` | string | no | 2026-09-08 |
@@ -147,7 +147,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `processes` | `processes:process-pv-operate-en8rdz` | 1 |
 | `processes` | `processes:process-pv-operate-cau4gv` | 1 |
 
-## 6. Operational, Control and Metrics Details
+## 7. Operational, Control and Metrics Details
 
 **Inputs, Outputs and Interfaces**: _(pending; backfill at EXT-04)_
 
@@ -159,7 +159,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 
 _(Pending EXT-04)_
 
-## 7. Technical Metadata
+## 8. Technical Metadata
 
 - **Source YAML**: record YAML in the same directory as this README
 - **Record version**: 1.0.0

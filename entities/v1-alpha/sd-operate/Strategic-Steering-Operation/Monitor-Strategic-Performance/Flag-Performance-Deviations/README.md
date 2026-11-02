@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 
 **Name**: Flag Performance Deviations
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Flag Performance Deviations | **Canonical ID** | `processes:activity-sd-operate-xtgshk` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Monitor Strategic Performance that flags and triages deviations of tracked performance from the plan.
+**Intent and Definition**: The cohesive grouping of work within Monitor Strategic Performance that flags and triages deviations of tracked performance from the plan.
 
-**Definition**: The cohesive grouping of work within Monitor Strategic Performance that flags and triages deviations of tracked performance from the plan.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 | 2026-09-14 | `CR-BP-55` | Initial L3 Activity entry; lands as part of the CR-BP-55 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-flag-performance-deviations-intake, dea:task-flag-performance-deviations-verify, dea:task-fl | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Monitor Strategic Performance that flags and triages deviations of tracked performa |
+| `definition` | string | no | The cohesive grouping of work within Monitor Strategic Performance that flags and triages deviations of tracked … |
 | `belongs_to_business_process` | string | no | processes:process-sd-operate-zdjchn |
-| `cohesion_rationale` | string | no | Constituent work shares a single flagging concern (deviations detected and triaged from the tracked position), one input |
+| `cohesion_rationale` | string | no | Constituent work shares a single flagging concern (deviations detected and triaged from the tracked position), one … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 | `composes` | `processes:task-sd-operate-confirm-pwa2wj` | 1 |
 | `composes` | `processes:task-sd-operate-record-93ystw` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 - **Cohesion rationale**: Constituent work shares a single flagging concern (deviations detected and triaged from the tracked position), one input class (the performance-against-plan position), and one output (the flagged performance deviations). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

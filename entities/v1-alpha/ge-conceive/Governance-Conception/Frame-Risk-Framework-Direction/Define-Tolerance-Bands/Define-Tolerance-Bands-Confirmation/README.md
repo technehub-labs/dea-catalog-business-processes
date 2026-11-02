@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-ge-conceive-c
 
 **Name**: Define Tolerance Bands Confirmation
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-ge-conceive-c
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Define Tolerance Bands Confirmation | **Canonical ID** | `processes:task-ge-conceive-confirm-hrksz3` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-ge-conceive-yucnbe` (Define Tolerance Bands) that reconcile the conception-ready framework package against the risk-framework methodology and the policy-scope bounding rules, issue the conception-completion confirmation to the governance custodian, and log the confirmation.
+**Intent and Definition**: The bounded unit of work within `processes:activity-ge-conceive-yucnbe` (Define Tolerance Bands) that reconcile the conception-ready framework package against the risk-framework methodology and the policy-scope bounding rules, issue the conception-completion confirmation to the governance custodian, and log the confirmation.
 
-**Definition**: The bounded unit of work within `processes:activity-ge-conceive-yucnbe` (Define Tolerance Bands) that reconcile the conception-ready framework package against the risk-framework methodology and the policy-scope bounding rules, issue the conception-completion confirmation to the governance custodian, and log the confirmation.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Task record for `processes:task-ge-conceive-c
 | 2026-09-13 | `CR-BP-48` | Initial L3 Activity entry; lands as part of the CR-BP-48 | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-ge-conceive-yucnbe` (Define Tolerance Bands) that reconcile the conc |
+| `definition` | string | no | The bounded unit of work within `processes:activity-ge-conceive-yucnbe` (Define Tolerance Bands) that reconcile the … |
 | `belongs_to_activity` | string | no | processes:activity-ge-conceive-yucnbe |
-| `trigger` | string | no | Bounded-work artefact produced for Define Tolerance Bands; confirm gate may reconcile against the governing contract and |
-| `outcome` | string | no | Completion confirmation issued for Define Tolerance Bands and acknowledged by the governance custodian and any governing |
+| `trigger` | string | no | Bounded-work artefact produced for Define Tolerance Bands; confirm gate may reconcile against the governing contract … |
+| `outcome` | string | no | Completion confirmation issued for Define Tolerance Bands and acknowledged by the governance custodian and any … |
 | `responsibility` | string | no | confirmation custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-ge-conceive-c
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

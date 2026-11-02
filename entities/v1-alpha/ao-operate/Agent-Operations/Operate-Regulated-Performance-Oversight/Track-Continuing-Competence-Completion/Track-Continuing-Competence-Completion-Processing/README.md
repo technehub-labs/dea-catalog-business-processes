@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-tr
 
 **Name**: Track Continuing-Competence Completion Processing
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-tr
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Track Continuing-Competence Completion Processing | **Canonical ID** | `processes:task-ao-operate-transform-q5dk3v` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-ao-operate-b5v2k9` (Track Continuing-Competence Completion) that carries out the transform phase of the parent's verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity's definition; intermediate artifacts preserved for audit.
+**Intent and Definition**: The bounded unit of work within `processes:activity-ao-operate-b5v2k9` (Track Continuing-Competence Completion) that carries out the transform phase of the parent's verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity's definition; intermediate artifacts preserved for audit.
 
-**Definition**: The bounded unit of work within `processes:activity-ao-operate-b5v2k9` (Track Continuing-Competence Completion) that carries out the transform phase of the parent's verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity's definition; intermediate artifacts preserved for audit.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -35,13 +33,13 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-tr
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-operate-jywxqg, processes:task-ao-operate-jz9bbh, processes:task-ao-operate-svwea4, | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-ao-operate-b5v2k9` (Track Continuing-Competence Completion) that car |
+| `definition` | string | no | The bounded unit of work within `processes:activity-ao-operate-b5v2k9` (Track Continuing-Competence Completion) that … |
 | `belongs_to_activity` | string | no | processes:activity-ao-operate-b5v2k9 |
 | `trigger` | string | no | Verified input is ready (phase 2 complete); transformation to the specified output form may begin. |
 | `outcome` | string | no | Output produced in the specified form per parent Activity's definition; intermediate artifacts preserved for audit. |
@@ -52,11 +50,11 @@ This directory hosts the canonical Task record for `processes:task-ao-operate-tr
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

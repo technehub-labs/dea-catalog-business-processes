@@ -1,7 +1,7 @@
 id: processes:task-eo-activate-transform-9fhapw
 type: Task
 name: Activate Continuing-Supervisor Notification Processing
-definition: 'The bounded unit of work within `dea:activity-activate-continuing-supervisor-notification` (Activate Continuing-Supervisor Notification) that carries out the transform phase of the parent''s verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
+definition: 'The bounded unit of work within `processes:activity-eo-activate-wfw66c` (Activate Continuing-Supervisor Notification) that carries out the transform phase of the parent''s verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
 belongs_to_activity: processes:activity-eo-activate-wfw66c
 trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin.
 outcome: Output produced in the specified form per parent Activity's definition; intermediate artifacts preserved for audit.

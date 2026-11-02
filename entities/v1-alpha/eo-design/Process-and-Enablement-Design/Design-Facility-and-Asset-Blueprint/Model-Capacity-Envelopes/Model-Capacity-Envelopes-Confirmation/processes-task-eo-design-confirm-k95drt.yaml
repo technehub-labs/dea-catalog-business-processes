@@ -1,7 +1,7 @@
 id: processes:task-eo-design-confirm-k95drt
 type: Task
 name: Model Capacity Envelopes Confirmation
-definition: 'The bounded unit of work within `dea:activity-model-capacity-envelopes` (Model Capacity Envelopes) that carries out the confirm phase of the parent''s verb-object decomposition. Phase responsibility: confirmation custodian. Phase trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued. Phase outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
+definition: 'The bounded unit of work within `processes:activity-eo-design-8pd74t` (Model Capacity Envelopes) that carries out the confirm phase of the parent''s verb-object decomposition. Phase responsibility: confirmation custodian. Phase trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued. Phase outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
 belongs_to_activity: processes:activity-eo-design-8pd74t
 trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued.
 outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.

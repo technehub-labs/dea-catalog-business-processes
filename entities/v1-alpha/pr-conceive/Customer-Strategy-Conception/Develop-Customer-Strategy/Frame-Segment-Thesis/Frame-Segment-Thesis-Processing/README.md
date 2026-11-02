@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-pr-conceive-t
 
 **Name**: Frame Segment Thesis Processing
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-pr-conceive-t
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Frame Segment Thesis Processing | **Canonical ID** | `processes:task-pr-conceive-transform-hcwr2e` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-pr-conceive-3tgws4` (Frame Segment Thesis) that execute the conception: frame the segment thesis, articulate the value exchange, formulate the demand thesis and demand hypotheses, and produce the conceive-ready thesis package conforming to the segment-strategy artefact schema.
+**Intent and Definition**: The bounded unit of work within `processes:activity-pr-conceive-3tgws4` (Frame Segment Thesis) that execute the conception: frame the segment thesis, articulate the value exchange, formulate the demand thesis and demand hypotheses, and produce the conceive-ready thesis package conforming to the segment-strategy artefact schema.
 
-**Definition**: The bounded unit of work within `processes:activity-pr-conceive-3tgws4` (Frame Segment Thesis) that execute the conception: frame the segment thesis, articulate the value exchange, formulate the demand thesis and demand hypotheses, and produce the conceive-ready thesis package conforming to the segment-strategy artefact schema.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Task record for `processes:task-pr-conceive-t
 | 2026-09-13 | `CR-BP-45` | Initial L3 Activity entry; lands as part of the CR-BP-45 | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-pr-conceive-3tgws4` (Frame Segment Thesis) that execute the concepti |
+| `definition` | string | no | The bounded unit of work within `processes:activity-pr-conceive-3tgws4` (Frame Segment Thesis) that execute the … |
 | `belongs_to_activity` | string | no | processes:activity-pr-conceive-3tgws4 |
-| `trigger` | string | no | Verification certificate issued for Frame Segment Thesis; transform gate may execute the bounded work and emit the confo |
-| `outcome` | string | no | Bounded-work artefact produced for Frame Segment Thesis conforming to the Conceive schema; processing custodian passes c |
+| `trigger` | string | no | Verification certificate issued for Frame Segment Thesis; transform gate may execute the bounded work and emit the … |
+| `outcome` | string | no | Bounded-work artefact produced for Frame Segment Thesis conforming to the Conceive schema; processing custodian passes … |
 | `responsibility` | string | no | processing custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-pr-conceive-t
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

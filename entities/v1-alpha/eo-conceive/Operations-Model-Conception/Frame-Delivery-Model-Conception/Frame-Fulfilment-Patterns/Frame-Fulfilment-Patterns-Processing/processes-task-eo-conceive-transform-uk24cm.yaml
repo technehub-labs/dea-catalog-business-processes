@@ -1,7 +1,7 @@
 id: processes:task-eo-conceive-transform-uk24cm
 type: Task
 name: Frame Fulfilment Patterns Processing
-definition: 'The bounded unit of work within `dea:activity-frame-fulfilment-patterns` (Frame Fulfilment Patterns) that carries out the transform phase of the parent''s verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
+definition: 'The bounded unit of work within `processes:activity-eo-conceive-uprp7u` (Frame Fulfilment Patterns) that carries out the transform phase of the parent''s verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
 belongs_to_activity: processes:activity-eo-conceive-uprp7u
 trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin.
 outcome: Output produced in the specified form per parent Activity's definition; intermediate artifacts preserved for audit.

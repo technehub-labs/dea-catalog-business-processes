@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-re
 
 **Name**: Notify Affected Business Units Under Regulator Continuing Supervision
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-sd-re
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Notify Affected Business Units Under Regulator Continuing Supervision | **Canonical ID** | `processes:activity-sd-retire-8yt6ar` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Sunset Regulated Strategic Plan that notifies the regulated entity's affected business units of the regulated strategic-plan sunset under the regulator's continuing supervision (the regulator-prescribed business-unit notification list; the affected business units' plan-record update transmitted; the regulator-prescribed notification content honoured; the regulator-prescribed notification cadence observed; the regulator-prescribed acknowledgement recorded against the regulated strategic-plan record; the regulator-acknowledged sunset communicated to the affected business units).
+**Intent and Definition**: The cohesive grouping of work within Sunset Regulated Strategic Plan that notifies the regulated entity's affected business units of the regulated strategic-plan sunset under the regulator's continuing supervision (the regulator-prescribed business-unit notification list; the affected business units' plan-record update transmitted; the regulator-prescribed notification content honoured; the regulator-prescribed notification cadence observed; the regulator-prescribed acknowledgement recorded against the regulated strategic-plan record; the regulator-acknowledged sunset communicated to the affected business units).
 
-**Definition**: The cohesive grouping of work within Sunset Regulated Strategic Plan that notifies the regulated entity's affected business units of the regulated strategic-plan sunset under the regulator's continuing supervision (the regulator-prescribed business-unit notification list; the affected business units' plan-record update transmitted; the regulator-prescribed notification content honoured; the regulator-prescribed notification cadence observed; the regulator-prescribed acknowledgement recorded against the regulated strategic-plan record; the regulator-acknowledged sunset communicated to the affected business units).
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-sd-re
 | 2026-09-19 | `CR-BP-101a` | Initial L3 Activity entry; lands as part of the CR-BP-101a | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-notify-affected-business-units-regulator-continuing-supervision-intake, dea:task-notify-affe | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Sunset Regulated Strategic Plan that notifies the regulated entity's affected busin |
+| `definition` | string | no | The cohesive grouping of work within Sunset Regulated Strategic Plan that notifies the regulated entity's affected … |
 | `belongs_to_business_process` | string | no | processes:process-sd-retire-umxf3c |
-| `cohesion_rationale` | string | no | Constituent work shares a single affected-business-unit-notification concern, one input class (the regulated strategic-p |
+| `cohesion_rationale` | string | no | Constituent work shares a single affected-business-unit-notification concern, one input class (the regulated … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-re
 | `composes` | `processes:task-sd-retire-confirm-89c28y` | 1 |
 | `composes` | `processes:task-sd-retire-record-u4wxg9` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-re
 - **Cohesion rationale**: Constituent work shares a single affected-business-unit-notification concern, one input class (the regulated strategic-plan record plus the regulator directive or rejection notice plus the superseded-plan identification plus the filings register update plus the executed communications plan plus the preserved regulator-acknowledged sunset record plus the executed retained-records plan), and one output (the affected business units notified under the regulator's continuing supervision with the regulator-prescribed acknowledgement recorded). Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

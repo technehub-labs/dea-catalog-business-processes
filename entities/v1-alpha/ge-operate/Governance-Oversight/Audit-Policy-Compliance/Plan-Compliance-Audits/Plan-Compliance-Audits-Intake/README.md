@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-ge-operate-in
 
 **Name**: Plan Compliance Audits Intake
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-ge-operate-in
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Plan Compliance Audits Intake | **Canonical ID** | `processes:task-ge-operate-intake-7p9y7z` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-ge-operate-cpcway` (Plan Compliance Audits) that accept custody of the governance-operating input pack (board and committee cycle schedule, assurance-evidence queue, risk-review calendar, compliance-audit plan) and persist a registered intake manifest binding the inputs to the operating case file.
+**Intent and Definition**: The bounded unit of work within `processes:activity-ge-operate-cpcway` (Plan Compliance Audits) that accept custody of the governance-operating input pack (board and committee cycle schedule, assurance-evidence queue, risk-review calendar, compliance-audit plan) and persist a registered intake manifest binding the inputs to the operating case file.
 
-**Definition**: The bounded unit of work within `processes:activity-ge-operate-cpcway` (Plan Compliance Audits) that accept custody of the governance-operating input pack (board and committee cycle schedule, assurance-evidence queue, risk-review calendar, compliance-audit plan) and persist a registered intake manifest binding the inputs to the operating case file.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Task record for `processes:task-ge-operate-in
 | 2026-09-13 | `CR-BP-49` | Initial L3 Activity entry; lands as part of the CR-BP-49 | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-ge-operate-cpcway` (Plan Compliance Audits) that accept custody of t |
+| `definition` | string | no | The bounded unit of work within `processes:activity-ge-operate-cpcway` (Plan Compliance Audits) that accept custody of … |
 | `belongs_to_activity` | string | no | processes:activity-ge-operate-cpcway |
-| `trigger` | string | no | Custody of the Operate-stage input pack for Plan Compliance Audits ready for intake; predecessor phase has produced the  |
-| `outcome` | string | no | Intake manifest registered and bound to the Plan Compliance Audits case file; registered intake custodian passes custody |
+| `trigger` | string | no | Custody of the Operate-stage input pack for Plan Compliance Audits ready for intake; predecessor phase has produced the … |
+| `outcome` | string | no | Intake manifest registered and bound to the Plan Compliance Audits case file; registered intake custodian passes … |
 | `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-ge-operate-in
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

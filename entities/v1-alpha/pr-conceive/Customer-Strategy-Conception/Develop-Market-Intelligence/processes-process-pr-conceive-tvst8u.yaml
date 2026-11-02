@@ -27,7 +27,7 @@ owner:
 process_specialization: []
 description: 'Operate the Develop Market Intelligence L2 process within the
 
-  dea:pc-pr-c Cell Charter. See trigger and outcome for
+  processes:pc-pr-conceive-6xztsq Cell Charter. See trigger and outcome for
 
   the bounded work this process owns; see identity.outcome_statement
 
@@ -151,7 +151,7 @@ inputs:
   type: business_object
   name: 'Develop Market Intelligence: working inputs (business_object)'
   description: 'Derived from the record''s documented description and trigger: the process Operate the
-    Develop Market Intelligence L2 process within the dea:pc-pr-c Cell Charter. See trigger and outcome
+    Develop Market Intelligence L2 process within the processes:pc-pr-conceive-6xztsq Cell Charter. See trigger and outcome
     for the bounded work this process owns'
   source: Record documented content (description + trigger fields)
   mandatory: true

@@ -4,7 +4,7 @@ This directory hosts the canonical Process record for `processes:process-pr-desi
 
 **Name**: Design Customer Experience
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,13 @@ This directory hosts the canonical Process record for `processes:process-pr-desi
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Design Customer Experience | **Canonical ID** | `processes:process-pr-design-pxydu3` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
 **Intent**: develop
 
 **Definition**: (definition pending; backfill at EXT-04)
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -33,7 +33,7 @@ This directory hosts the canonical Process record for `processes:process-pr-desi
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 | 2026-10-27 | `CR-BP-GS-1` | Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Party & Relationship Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under  | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -46,8 +46,8 @@ This directory hosts the canonical Process record for `processes:process-pr-desi
 | `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
 | `description` | string | no | Operate the Design Customer Experience L2 process within the |
-| `trigger` | string | no | Customer strategy has committed a segment thesis and value exchange; the experience must now be designed to realise that |
-| `outcome` | string | no | A customer experience design with articulated touchpoints, interaction patterns, and quality criteria is committed and r |
+| `trigger` | string | no | Customer strategy has committed a segment thesis and value exchange; the experience must now be designed to realise … |
+| `outcome` | string | no | A customer experience design with articulated touchpoints, interaction patterns, and quality criteria is committed and … |
 | `identity` | object | no | object: verb, object, scope, outcome_statement, evidence_links |
 | `relationships` | array[2] | no | array of 2 item(s) |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
@@ -59,7 +59,7 @@ This directory hosts the canonical Process record for `processes:process-pr-desi
 | `outputs` | array[2] | no | array of 2 item(s) |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -71,7 +71,7 @@ This directory hosts the canonical Process record for `processes:process-pr-desi
   - `processes:activity-pr-design-9kscys`
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-fa-ac
 
 **Name**: Activate Billing Capability
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,7 +13,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-fa-ac
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Activate Billing Capability | **Canonical ID** | `processes:pc-fa-activate-yrhcfm` |
 
-## 1. Executive Summary / Intent
+## 2. Executive Summary / Intent
 
 The regulated-billing activation work that moves a billing or
 revenue-recognition capability from regulator-acknowledged-but-
@@ -26,7 +26,7 @@ continuing-oversight relationship active, so that the billing
 capability is formally live on the regulated billing record
 under the regulator's continuing supervision.
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 - **Admission Score**: `?/10`
 - **Recommended By**: `dea:discovery-finance-and-accounting-activate-escape`
@@ -36,7 +36,7 @@ under the regulator's continuing supervision.
   - Insurance: NAIC / Solvency II / IFRS 17 statutory accounting
   - Securities: SEC / FCA reporting (10-K, FINREP, COREP)
 
-## 3. Behavioral Boundaries (Cell Charter)
+## 4. Behavioral Boundaries (Cell Charter)
 
 | Scope Type | Description |
 | :--- | :--- |
@@ -44,7 +44,7 @@ under the regulator's continuing supervision.
 | Out of Scope (exclusions) | - Billing-capability conception and design (FinanceAndAccounting x Conceive / Design)<br>- Billing-capability build and configuration (FinanceAndAccounting x Build)<br>- Steady-state billing operations performance management (FinanceAndAccounting x Operate)<br>- Billing-capability decommission and deregistration (FinanceAndAccounting x Retire; CR-BP-75 admitted the regulated run-off adjacent cell)<br>- Non-regulated billing-capability activation (internal-finance cutover without regulator's acknowledgement) -- RECORD-PATTERN or MERGE per CR-BP-63 baseline<br>- Capabilities sourcing or licensing absent a regulator-acknowledged accounting or rate framework |
 | Adjacent Cells | - processes:pc-fa-build-pztsp9 (adjacent context): the Build cell handles billing-capability construction and configuration; the Activate cell governs the regulator-acknowledged activation step that moves the capability from acknowledged-but-not-live to acknowledged-and-live.<br>- processes:pc-fa-operate-afew7e (adjacent context): the Operate cell handles steady-state billing operations performance management; the Activate cell only governs the regulator-acknowledged activation step.<br>- processes:pc-fa-retire-64q5p9 (adjacent context, CR-BP-75): the Retire cell at F&A handles regulated run-off; the Activate cell handles the regulated live-readiness activation of a billing capability.<br>- processes:pc-ao-activate-kusw2u (sibling cell, CR-BP-81): the A&O Activate cell governs regulator-controlled individual-workforce mobilization; the FA Activate cell governs regulator-acknowledged billing-capability activation -- separate concerns (individual vs billing capability).<br>- processes:pc-eo-activate-xdfscw (sibling cell, CR-BP-82): the OE Activate cell governs regulator-authorized operations-capability activation; the FA Activate cell governs regulator-acknowledged billing-capability activation -- separate concerns (operations vs billing). |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename).
 
@@ -84,7 +84,7 @@ fa-activate/
 _(Full L4 task lists for each L3 activity are available in their respective subdirectories.)_
 </details>
 
-## 5. Properties and Relationships
+## 6. Properties and Relationships
 
 **Properties**
 
@@ -94,14 +94,14 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `schema_version` | integer | no | 1 |
 | `domain` | string | no | FinanceAndAccounting |
 | `lifecycle_stage` | string | no | Activate |
-| `definition` | string | no | The bounded enterprise context for **governing the activation of a billing or revenue-recognition capability whose live  |
+| `definition` | string | no | The bounded enterprise context for **governing the activation of a billing or revenue-recognition capability whose live … |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[5] | no | array of 5 item(s) |
 | `adjacent_contexts` | array[6] | no | array of 6 item(s) |
 | `processes` | array[1] | no | array of 1 item(s) |
 | `status` | string | no | candidate |
 | `process_context` | object | no | object: id, domain, lifecycle_stage, scope_summary, process_empty, lifecycle_status, status |
-| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
+| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions … |
 | `process_groups` | array[1] | no | array of 1 item(s) |
 | `admission` | object | no | object: recommended_by, recommended_at, recommended_score, carrier_cr, bp_id |
 
@@ -112,7 +112,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `process_groups` | `processes:group-fa-activate-n9s2z3` | 1 |
 | `processes` | `processes:process-fa-activate-bzfywk` | 1 |
 
-## 6. Operational, Control and Metrics Details
+## 7. Operational, Control and Metrics Details
 
 **Inputs, Outputs and Interfaces**: _(pending; backfill at EXT-04)_
 
@@ -124,7 +124,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 
 _(Pending EXT-04)_
 
-## 7. Technical Metadata
+## 8. Technical Metadata
 
 - **Source YAML**: record YAML in the same directory as this README
 - **Record version**: 1.0.0

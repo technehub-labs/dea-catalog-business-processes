@@ -1,7 +1,7 @@
 id: processes:task-eo-activate-record-qgmj5u
 type: Task
 name: Activate Continuing-Supervisor Notification Audit Record
-definition: 'The bounded unit of work within `dea:activity-activate-continuing-supervisor-notification` (Activate Continuing-Supervisor Notification) that carries out the record phase of the parent''s verb-object decomposition. Phase responsibility: records custodian. Phase trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity''s evidence requirements. Phase outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
+definition: 'The bounded unit of work within `processes:activity-eo-activate-wfw66c` (Activate Continuing-Supervisor Notification) that carries out the record phase of the parent''s verb-object decomposition. Phase responsibility: records custodian. Phase trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity''s evidence requirements. Phase outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
 belongs_to_activity: processes:activity-eo-activate-wfw66c
 trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity's evidence requirements.
 outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity's evidence discipline.

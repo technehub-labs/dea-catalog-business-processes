@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-eo-c
 
 **Name**: Operations Model Conception
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,9 +13,9 @@ This directory hosts the canonical ProcessGroup record for `processes:group-eo-c
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Operations Model Conception | **Canonical ID** | `processes:group-eo-conceive-j6n4f7` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organises the Business Process
+**Intent and Definition**: The bounded Process Group that organises the Business Process
 responsibilities of conceiving the enterprise's operations model and
 enablement approach in the EnablementAndOperations x Conceive
 context. This group covers the front-end work of framing the
@@ -26,18 +26,7 @@ execution engine and the means that make execution possible,
 including the physical, virtual, and procedural infrastructure
 absorbed from the dissolved Supply & Resources domain.
 
-**Definition**: The bounded Process Group that organises the Business Process
-responsibilities of conceiving the enterprise's operations model and
-enablement approach in the EnablementAndOperations x Conceive
-context. This group covers the front-end work of framing the
-operations strategy, the delivery model, the technology enablement
-approach, and the physical asset approach. v2.4.0 grounding
-(domain-grounding.md §3.6): the domain manages the enterprise's
-execution engine and the means that make execution possible,
-including the physical, virtual, and procedural infrastructure
-absorbed from the dissolved Supply & Resources domain.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -48,7 +37,7 @@ absorbed from the dissolved Supply & Resources domain.
 | 2026-09-08 | `CR-BP-21d.1` | Composes edges added for the 3 remaining register v2 | System |
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -75,11 +64,11 @@ absorbed from the dissolved Supply & Resources domain.
 | `composes` | `processes:process-eo-conceive-68mp6v` | 1 |
 | `composes` | `processes:process-eo-conceive-87kx9n` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

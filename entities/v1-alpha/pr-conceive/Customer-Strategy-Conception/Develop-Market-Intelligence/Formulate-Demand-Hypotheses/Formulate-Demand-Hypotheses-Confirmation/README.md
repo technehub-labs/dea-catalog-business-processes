@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-pr-conceive-c
 
 **Name**: Formulate Demand Hypotheses Confirmation
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-pr-conceive-c
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Formulate Demand Hypotheses Confirmation | **Canonical ID** | `processes:task-pr-conceive-confirm-e4pw6f` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-pr-conceive-mnhm2f` (Formulate Demand Hypotheses) that reconcile the conceive-ready thesis package against the segment-strategy artefact schema and the JTBD-evidence quality criteria, issue the conceive-completion confirmation to the strategy custodian, and log the confirmation.
+**Intent and Definition**: The bounded unit of work within `processes:activity-pr-conceive-mnhm2f` (Formulate Demand Hypotheses) that reconcile the conceive-ready thesis package against the segment-strategy artefact schema and the JTBD-evidence quality criteria, issue the conceive-completion confirmation to the strategy custodian, and log the confirmation.
 
-**Definition**: The bounded unit of work within `processes:activity-pr-conceive-mnhm2f` (Formulate Demand Hypotheses) that reconcile the conceive-ready thesis package against the segment-strategy artefact schema and the JTBD-evidence quality criteria, issue the conceive-completion confirmation to the strategy custodian, and log the confirmation.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Task record for `processes:task-pr-conceive-c
 | 2026-09-13 | `CR-BP-45` | Initial L3 Activity entry; lands as part of the CR-BP-45 | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-pr-conceive-mnhm2f` (Formulate Demand Hypotheses) that reconcile the |
+| `definition` | string | no | The bounded unit of work within `processes:activity-pr-conceive-mnhm2f` (Formulate Demand Hypotheses) that reconcile … |
 | `belongs_to_activity` | string | no | processes:activity-pr-conceive-mnhm2f |
-| `trigger` | string | no | Bounded-work artefact produced for Formulate Demand Hypotheses; confirm gate may reconcile against the governing contrac |
-| `outcome` | string | no | Completion confirmation issued for Formulate Demand Hypotheses and acknowledged by the relationship custodian and any go |
+| `trigger` | string | no | Bounded-work artefact produced for Formulate Demand Hypotheses; confirm gate may reconcile against the governing … |
+| `outcome` | string | no | Completion confirmation issued for Formulate Demand Hypotheses and acknowledged by the relationship custodian and any … |
 | `responsibility` | string | no | confirmation custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-pr-conceive-c
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

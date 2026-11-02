@@ -1,7 +1,7 @@
 id: processes:task-pv-improve-transform-kmzpdx
 type: Task
 name: Assemble Proposition Performance Evidence Processing
-definition: 'The bounded unit of work within `dea:activity-assemble-proposition-performance-evidence` (Assemble Proposition Performance Evidence) that carries out the transform phase of the parent''s verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
+definition: 'The bounded unit of work within `processes:activity-pv-improve-6rycwm` (Assemble Proposition Performance Evidence) that carries out the transform phase of the parent''s verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
 belongs_to_activity: processes:activity-pv-improve-6rycwm
 trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin.
 outcome: Output produced in the specified form per parent Activity's definition; intermediate artifacts preserved for audit.

@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-eo-op
 
 **Name**: Execution, Technology, and Asset Operation
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,11 +13,11 @@ This directory hosts the canonical ProcessContext record for `processes:pc-eo-op
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Execution, Technology, and Asset Operation | **Canonical ID** | `processes:pc-eo-operate-ydqb96` |
 
-## 1. Executive Summary / Intent
+## 2. Executive Summary / Intent
 
 The steady-state work of operating production lines, service delivery, logistics, warehouse and inventory, quality control, technology platforms, facilities, asset maintenance, and the procurement cycle.
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 - **Regulatory Evidence Base**:
@@ -26,7 +26,7 @@ The steady-state work of operating production lines, service delivery, logistics
   - Energy: FERC / Ofgem operations licensing
   - Telecommunications: FCC / Ofcom spectrum authorisation
 
-## 3. Behavioral Boundaries (Cell Charter)
+## 4. Behavioral Boundaries (Cell Charter)
 
 | Scope Type | Description |
 | :--- | :--- |
@@ -34,7 +34,7 @@ The steady-state work of operating production lines, service delivery, logistics
 | Out of Scope (exclusions) | - Operations build (Build stage; adjacent context)<br>- Supplier relationship management (party-relationship x operate; adjacent domain)<br>- Customer relationship operation (party-relationship x operate; adjacent domain)<br>- Product catalogue operation (product-value x operate; adjacent domain)<br>- Agent performance operation (agency-organization x operate; adjacent domain) |
 | Adjacent Cells | - processes:pc-eo-conceive-mxmtzq (adjacent context): execution flow between Operate and the adjacent cell.<br>- processes:pc-eo-design-kxdfnz (adjacent context): execution flow between Operate and the adjacent cell.<br>- processes:pc-eo-build-zwkhxc (adjacent context): execution flow between Operate and the adjacent cell.<br>- processes:pc-eo-improve-pka6dk (adjacent context): execution flow between Operate and the adjacent cell. |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename).
 
@@ -280,7 +280,7 @@ eo-operate/
 _(Full L4 task lists for each L3 activity are available in their respective subdirectories.)_
 </details>
 
-## 5. Properties and Relationships
+## 6. Properties and Relationships
 
 **Properties**
 
@@ -288,12 +288,12 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | :--- | :--- | :--- | :--- |
 | `domain` | string | no | EnablementAndOperations |
 | `lifecycle_stage` | string | no | Operate |
-| `definition` | string | no | The bounded enterprise context for **operating** the production lines, service delivery, logistics, warehouse and invent |
+| `definition` | string | no | The bounded enterprise context for **operating** the production lines, service delivery, logistics, warehouse and … |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[6] | no | array of 6 item(s) |
 | `adjacent_contexts` | array[5] | no | array of 5 item(s) |
 | `processes` | array[9] | no | array of 9 item(s) |
-| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
+| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions … |
 | `status` | string | no | candidate |
 | `established_by` | string | no | CR-BP-21d |
 | `established_at` | string | no | 2026-09-08 |
@@ -314,7 +314,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `processes` | `processes:process-eo-operate-j9cjzz` | 1 |
 | `processes` | `processes:process-eo-operate-vzcxx7` | 1 |
 
-## 6. Operational, Control and Metrics Details
+## 7. Operational, Control and Metrics Details
 
 **Inputs, Outputs and Interfaces**: _(pending; backfill at EXT-04)_
 
@@ -326,7 +326,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 
 _(Pending EXT-04)_
 
-## 7. Technical Metadata
+## 8. Technical Metadata
 
 - **Source YAML**: record YAML in the same directory as this README
 - **Record version**: 1.0.0

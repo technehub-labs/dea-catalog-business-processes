@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-ge-design-tra
 
 **Name**: Commit Policy and Control Design Processing
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-ge-design-tra
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Commit Policy and Control Design Processing | **Canonical ID** | `processes:task-ge-design-transform-yx7yqp` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-ge-design-t3muvd` (Commit Policy and Control Design) that execute the design: articulate the governance bodies, design the authority delegations and decision rights, design the policy artifacts and control objectives, design the risk taxonomy and assessment scales, design the compliance regime and governance integration, and produce the design-ready governance artefact conforming to the governance-design schema.
+**Intent and Definition**: The bounded unit of work within `processes:activity-ge-design-t3muvd` (Commit Policy and Control Design) that execute the design: articulate the governance bodies, design the authority delegations and decision rights, design the policy artifacts and control objectives, design the risk taxonomy and assessment scales, design the compliance regime and governance integration, and produce the design-ready governance artefact conforming to the governance-design schema.
 
-**Definition**: The bounded unit of work within `processes:activity-ge-design-t3muvd` (Commit Policy and Control Design) that execute the design: articulate the governance bodies, design the authority delegations and decision rights, design the policy artifacts and control objectives, design the risk taxonomy and assessment scales, design the compliance regime and governance integration, and produce the design-ready governance artefact conforming to the governance-design schema.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Task record for `processes:task-ge-design-tra
 | 2026-09-13 | `CR-BP-48` | Initial L3 Activity entry; lands as part of the CR-BP-48 | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-ge-design-t3muvd` (Commit Policy and Control Design) that execute th |
+| `definition` | string | no | The bounded unit of work within `processes:activity-ge-design-t3muvd` (Commit Policy and Control Design) that execute … |
 | `belongs_to_activity` | string | no | processes:activity-ge-design-t3muvd |
-| `trigger` | string | no | Verification certificate issued for Commit Policy and Control Design; transform gate may execute the bounded work and em |
-| `outcome` | string | no | Bounded-work artefact produced for Commit Policy and Control Design conforming to the Design schema; processing custodia |
+| `trigger` | string | no | Verification certificate issued for Commit Policy and Control Design; transform gate may execute the bounded work and … |
+| `outcome` | string | no | Bounded-work artefact produced for Commit Policy and Control Design conforming to the Design schema; processing … |
 | `responsibility` | string | no | processing custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-ge-design-tra
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

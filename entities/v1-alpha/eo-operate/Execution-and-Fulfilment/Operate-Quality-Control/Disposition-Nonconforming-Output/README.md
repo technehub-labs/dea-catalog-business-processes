@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 **Name**: Disposition Nonconforming Output
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Disposition Nonconforming Output | **Canonical ID** | `processes:activity-eo-operate-gmj49n` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Operate Quality Control that evaluates recorded nonconformities and decides the fate of nonconforming output (accept-with-concession, rework, scrap, or return), including containment of affected batches.
+**Intent and Definition**: The cohesive grouping of work within Operate Quality Control that evaluates recorded nonconformities and decides the fate of nonconforming output (accept-with-concession, rework, scrap, or return), including containment of affected batches.
 
-**Definition**: The cohesive grouping of work within Operate Quality Control that evaluates recorded nonconformities and decides the fate of nonconforming output (accept-with-concession, rework, scrap, or return), including containment of affected batches.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 | 2026-09-13 | `CR-BP-42` | Initial L3 Activity entry; first Activity deposition in the catalog | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-disposition-nonconforming-output-intake, dea:task-disposition-nonconforming-output-verify, d | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Operate Quality Control that evaluates recorded nonconformities and decides the fat |
+| `definition` | string | no | The cohesive grouping of work within Operate Quality Control that evaluates recorded nonconformities and decides the … |
 | `belongs_to_business_process` | string | no | processes:process-eo-operate-44jsrp |
-| `cohesion_rationale` | string | no | Constituent work shares a single decision concern (disposition of nonconforming output per ISO 9001:2015 clause 8.7), a  |
+| `cohesion_rationale` | string | no | Constituent work shares a single decision concern (disposition of nonconforming output per ISO 9001:2015 clause 8.7), a … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 | `composes` | `processes:task-eo-operate-confirm-myjdfs` | 1 |
 | `composes` | `processes:task-eo-operate-record-d934av` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 - **Cohesion rationale**: Constituent work shares a single decision concern (disposition of nonconforming output per ISO 9001:2015 clause 8.7), a common input (recorded nonconformities), and one recognizable portion of the parent outcome (the disposition record). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6; research/l3-candidate-universe.yaml).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

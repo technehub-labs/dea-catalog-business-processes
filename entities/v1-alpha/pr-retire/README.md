@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pr-re
 
 **Name**: Enterprise Relationship Close-Out
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,17 +13,17 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pr-re
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Enterprise Relationship Close-Out | **Canonical ID** | `processes:pc-pr-retire-2cusde` |
 
-## 1. Executive Summary / Intent
+## 2. Executive Summary / Intent
 
 The termination-stage work of closing enterprise relationships
 and resolving what they leave behind, across customer, supplier
 and partner roles.
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 (governance and provenance to be backfilled at EXT-04)
 
-## 3. Behavioral Boundaries (Cell Charter)
+## 4. Behavioral Boundaries (Cell Charter)
 
 | Scope Type | Description |
 | :--- | :--- |
@@ -31,7 +31,7 @@ and partner roles.
 | Out of Scope (exclusions) | - Relationship establishment and activation (Activate stage; sibling coordinate)<br>- Steady-state relationship operation (Operate stage; adjacent context)<br>- Relationship improvement and development (Improve stage; adjacent context)<br>- Asset retirement and decommissioning (EnablementAndOperations x Retire; sibling cell) |
 | Adjacent Cells | - processes:pc-pr-operate-pwue5a (adjacent context): operating relationships hand over at termination planning and approval.<br>- processes:pc-eo-retire-nw3ynf (sibling cell): asset decommissioning is distinct from relationship close-out. |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename).
 
@@ -71,7 +71,7 @@ pr-retire/
 _(Full L4 task lists for each L3 activity are available in their respective subdirectories.)_
 </details>
 
-## 5. Properties and Relationships
+## 6. Properties and Relationships
 
 **Properties**
 
@@ -84,7 +84,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `outcomes` | array[3] | no | array of 3 item(s) |
 | `adjacent_contexts` | array[7] | no | array of 7 item(s) |
 | `processes` | array[1] | no | array of 1 item(s) |
-| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
+| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions … |
 | `status` | string | no | candidate |
 | `established_by` | string | no | CR-BP-67 |
 | `established_at` | string | no | 2026-09-14 |
@@ -97,7 +97,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | :--- | :--- | :--- |
 | `processes` | `processes:process-pr-retire-bd3asa` | 1 |
 
-## 6. Operational, Control and Metrics Details
+## 7. Operational, Control and Metrics Details
 
 **Inputs, Outputs and Interfaces**: _(pending; backfill at EXT-04)_
 
@@ -109,7 +109,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 
 _(Pending EXT-04)_
 
-## 7. Technical Metadata
+## 8. Technical Metadata
 
 - **Source YAML**: record YAML in the same directory as this README
 - **Record version**: 1.0.0

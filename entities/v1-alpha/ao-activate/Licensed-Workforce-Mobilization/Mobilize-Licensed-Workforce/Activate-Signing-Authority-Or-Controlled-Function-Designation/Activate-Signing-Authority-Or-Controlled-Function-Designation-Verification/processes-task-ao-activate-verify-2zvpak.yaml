@@ -1,7 +1,7 @@
 id: processes:task-ao-activate-verify-2zvpak
 type: Task
 name: Activate Signing Authority Or Controlled-Function Designation Verification
-definition: 'The bounded unit of work within `dea:activity-activate-signing-authority-or-controlled-function-designation` (Activate Signing Authority Or Controlled-Function Designation) that carries out the verify phase of the parent''s verb-object decomposition. Phase responsibility: verification custodian. Phase trigger: Intake registered (phase 1 complete); verification of input against parent Activity''s specification can begin. Phase outcome: Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
+definition: 'The bounded unit of work within `processes:activity-ao-activate-sq2zfw` (Activate Signing Authority Or Controlled-Function Designation) that carries out the verify phase of the parent''s verb-object decomposition. Phase responsibility: verification custodian. Phase trigger: Intake registered (phase 1 complete); verification of input against parent Activity''s specification can begin. Phase outcome: Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
 belongs_to_activity: processes:activity-ao-activate-sq2zfw
 trigger: Intake registered (phase 1 complete); verification of input against parent Activity's specification can begin.
 outcome: Verified that the input meets parent Activity's specification; nonconformities are recorded for rejection or remediation.

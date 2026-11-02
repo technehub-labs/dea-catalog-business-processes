@@ -1,7 +1,7 @@
 id: processes:task-ao-activate-verify-uuszhj
 type: Task
 name: Attest Fitness And Propriety Verification
-definition: 'The bounded unit of work within `dea:activity-attest-fitness-and-propriety` (Attest Fitness And Propriety) that carries out the verify phase of the parent''s verb-object decomposition. Phase responsibility: verification custodian. Phase trigger: Intake registered (phase 1 complete); verification of input against parent Activity''s specification can begin. Phase outcome: Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
+definition: 'The bounded unit of work within `processes:activity-ao-activate-x9hy5e` (Attest Fitness And Propriety) that carries out the verify phase of the parent''s verb-object decomposition. Phase responsibility: verification custodian. Phase trigger: Intake registered (phase 1 complete); verification of input against parent Activity''s specification can begin. Phase outcome: Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
 belongs_to_activity: processes:activity-ao-activate-x9hy5e
 trigger: Intake registered (phase 1 complete); verification of input against parent Activity's specification can begin.
 outcome: Verified that the input meets parent Activity's specification; nonconformities are recorded for rejection or remediation.

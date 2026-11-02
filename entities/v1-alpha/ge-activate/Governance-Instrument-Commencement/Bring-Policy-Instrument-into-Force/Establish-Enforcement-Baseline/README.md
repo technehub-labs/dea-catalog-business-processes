@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ge-ac
 
 **Name**: Establish Enforcement Baseline
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ge-ac
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Establish Enforcement Baseline | **Canonical ID** | `processes:activity-ge-activate-pm38pv` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Bring Policy Instrument into Force that establishes the compliance state baseline at commencement and arms monitoring and enforcement mechanisms.
+**Intent and Definition**: The cohesive grouping of work within Bring Policy Instrument into Force that establishes the compliance state baseline at commencement and arms monitoring and enforcement mechanisms.
 
-**Definition**: The cohesive grouping of work within Bring Policy Instrument into Force that establishes the compliance state baseline at commencement and arms monitoring and enforcement mechanisms.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-ge-ac
 | 2026-09-15 | `CR-BP-69` | Initial L3 Activity entry; lands as part of the CR-BP-69 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-establish-enforcement-baseline-intake, dea:task-establish-enforcement-baseline-verify, dea:t | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Bring Policy Instrument into Force that establishes the compliance state baseline a |
+| `definition` | string | no | The cohesive grouping of work within Bring Policy Instrument into Force that establishes the compliance state baseline … |
 | `belongs_to_business_process` | string | no | processes:process-ge-activate-wegs44 |
-| `cohesion_rationale` | string | no | Constituent work shares a single enforcement baseline concern, one input class (the instrument in force with notified pa |
+| `cohesion_rationale` | string | no | Constituent work shares a single enforcement baseline concern, one input class (the instrument in force with notified … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-ge-ac
 | `composes` | `processes:task-ge-activate-confirm-e8wmgf` | 1 |
 | `composes` | `processes:task-ge-activate-record-bwyw4e` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-ge-ac
 - **Cohesion rationale**: Constituent work shares a single enforcement baseline concern, one input class (the instrument in force with notified parties), and one output (the armed enforcement and compliance baseline). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

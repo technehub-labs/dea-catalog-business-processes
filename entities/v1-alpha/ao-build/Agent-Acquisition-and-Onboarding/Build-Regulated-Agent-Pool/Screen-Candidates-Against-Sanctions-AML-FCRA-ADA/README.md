@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 
 **Name**: Screen Candidates Against Sanctions / AML / FCRA / ADA
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Screen Candidates Against Sanctions / AML / FCRA / ADA | **Canonical ID** | `processes:activity-ao-build-bufzrw` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Build Regulated Agent Pool that Screen each candidate against OFAC sanctions (31 CFR 501), Bank Secrecy Act AML / KYC (31 USC 5311), FCRA background (15 USC 1681), and ADA fitness (42 USC 12112). Shared concern: regulator-specific screening. Input: the fitness-attested candidate list; the screening matrix. Output: the screened candidate list with the sanctions / AML / FCRA / ADA clearances.
+**Intent and Definition**: The cohesive grouping of work within Build Regulated Agent Pool that Screen each candidate against OFAC sanctions (31 CFR 501), Bank Secrecy Act AML / KYC (31 USC 5311), FCRA background (15 USC 1681), and ADA fitness (42 USC 12112). Shared concern: regulator-specific screening. Input: the fitness-attested candidate list; the screening matrix. Output: the screened candidate list with the sanctions / AML / FCRA / ADA clearances.
 
-**Definition**: The cohesive grouping of work within Build Regulated Agent Pool that Screen each candidate against OFAC sanctions (31 CFR 501), Bank Secrecy Act AML / KYC (31 USC 5311), FCRA background (15 USC 1681), and ADA fitness (42 USC 12112). Shared concern: regulator-specific screening. Input: the fitness-attested candidate list; the screening matrix. Output: the screened candidate list with the sanctions / AML / FCRA / ADA clearances.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -35,16 +33,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-build-b42bas, processes:task-ao-build-sbzyxw, processes:task-ao-build-anru56, proce | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-build-intake-dzu26c, processes:task-ao-build-verify-bdy3ah, processes:task-ao-build | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Build Regulated Agent Pool that Screen each candidate against OFAC sanctions (31 CF |
+| `definition` | string | no | The cohesive grouping of work within Build Regulated Agent Pool that Screen each candidate against OFAC sanctions (31 … |
 | `belongs_to_business_process` | string | no | processes:process-ao-build-9my4jr |
-| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single screen candidates again |
+| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single screen candidates … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -58,7 +56,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 | `composes` | `processes:task-ao-build-confirm-4fj8hx` | 1 |
 | `composes` | `processes:task-ao-build-record-8dkcu7` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -66,7 +64,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 - **Cohesion rationale**: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single screen candidates against sanctions / aml / fcra / ada concern, one input class, and one output (the screen candidates against sanctions / aml / fcra / ada record on the regulated personnel record).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

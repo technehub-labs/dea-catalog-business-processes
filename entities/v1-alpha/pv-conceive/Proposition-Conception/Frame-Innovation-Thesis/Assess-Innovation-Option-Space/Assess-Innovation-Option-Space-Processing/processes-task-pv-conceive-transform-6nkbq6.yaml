@@ -1,7 +1,7 @@
 id: processes:task-pv-conceive-transform-6nkbq6
 type: Task
 name: Assess Innovation Option Space Processing
-definition: 'The bounded unit of work within `dea:activity-assess-innovation-option-space` (Assess Innovation Option Space) that carries out the transform phase of the parent''s verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
+definition: 'The bounded unit of work within `processes:activity-pv-conceive-3ufbnz` (Assess Innovation Option Space) that carries out the transform phase of the parent''s verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
 belongs_to_activity: processes:activity-pv-conceive-3ufbnz
 trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin.
 outcome: Output produced in the specified form per parent Activity's definition; intermediate artifacts preserved for audit.

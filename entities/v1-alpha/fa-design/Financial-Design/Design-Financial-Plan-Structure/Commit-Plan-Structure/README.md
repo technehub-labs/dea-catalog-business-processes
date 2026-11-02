@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-de
 
 **Name**: Commit Plan Structure
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-fa-de
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Commit Plan Structure | **Canonical ID** | `processes:activity-fa-design-aye4mb` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Design Financial Plan Structure that consolidates chart of accounts, allocation model, and controls into the committed financial plan structure.
+**Intent and Definition**: The cohesive grouping of work within Design Financial Plan Structure that consolidates chart of accounts, allocation model, and controls into the committed financial plan structure.
 
-**Definition**: The cohesive grouping of work within Design Financial Plan Structure that consolidates chart of accounts, allocation model, and controls into the committed financial plan structure.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-fa-de
 | 2026-09-13 | `CR-BP-52` | Initial L3 Activity entry; lands as part of the CR-BP-52 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-commit-plan-structure-intake, dea:task-commit-plan-structure-verify, dea:task-commit-plan-st | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Design Financial Plan Structure that consolidates chart of accounts, allocation mod |
+| `definition` | string | no | The cohesive grouping of work within Design Financial Plan Structure that consolidates chart of accounts, allocation … |
 | `belongs_to_business_process` | string | no | processes:process-fa-design-vk422z |
-| `cohesion_rationale` | string | no | Constituent work shares a single consolidation-and-commitment concern, one artifact (the plan structure document), and a |
+| `cohesion_rationale` | string | no | Constituent work shares a single consolidation-and-commitment concern, one artifact (the plan structure document), and … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-de
 | `composes` | `processes:task-fa-design-confirm-5ac796` | 1 |
 | `composes` | `processes:task-fa-design-record-cxmyj9` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-de
 - **Cohesion rationale**: Constituent work shares a single consolidation-and-commitment concern, one artifact (the plan structure document), and a common terminus (readiness for build). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

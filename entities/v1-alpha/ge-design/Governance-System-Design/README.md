@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-d
 
 **Name**: Governance System Design
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-d
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Governance System Design | **Canonical ID** | `processes:group-ge-design-jexyp6` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organizes the Business Process responsibilities of designing the governance system, control objectives, and policy architecture in the GovernanceAndExistence x Design context. This group captures the work of translating strategy and mandate into a designed governance architecture, control objectives, and policy architecture. The group is the canonical Process Group for the governance-design value stream.
+**Intent and Definition**: The bounded Process Group that organizes the Business Process responsibilities of designing the governance system, control objectives, and policy architecture in the GovernanceAndExistence x Design context. This group captures the work of translating strategy and mandate into a designed governance architecture, control objectives, and policy architecture. The group is the canonical Process Group for the governance-design value stream.
 
-**Definition**: The bounded Process Group that organizes the Business Process responsibilities of designing the governance system, control objectives, and policy architecture in the GovernanceAndExistence x Design context. This group captures the work of translating strategy and mandate into a designed governance architecture, control objectives, and policy architecture. The group is the canonical Process Group for the governance-design value stream.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -30,13 +28,13 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-d
 | 2026-09-08 | `CR-BP-21f.1` | Added dea:process-design-risk-framework composes edge (CR-BP-21f.1 GE completion). | System |
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded Process Group that organizes the Business Process responsibilities of designing the governance system, contr |
+| `definition` | string | no | The bounded Process Group that organizes the Business Process responsibilities of designing the governance system … |
 | `process_context` | string | no | processes:pc-ge-design-3f2gjr |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[3] | no | array of 3 item(s) |
@@ -56,11 +54,11 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-d
 | `composes` | `processes:process-ge-design-kpsj5b` | 1 |
 | `composes` | `processes:process-ge-design-pqkvdc` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

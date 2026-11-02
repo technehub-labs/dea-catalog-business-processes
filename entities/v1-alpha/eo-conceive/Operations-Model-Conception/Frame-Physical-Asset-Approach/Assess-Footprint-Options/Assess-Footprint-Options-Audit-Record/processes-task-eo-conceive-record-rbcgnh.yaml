@@ -1,7 +1,7 @@
 id: processes:task-eo-conceive-record-rbcgnh
 type: Task
 name: Assess Footprint Options Audit Record
-definition: 'The bounded unit of work within `dea:activity-assess-footprint-options` (Assess Footprint Options) that carries out the record phase of the parent''s verb-object decomposition. Phase responsibility: records custodian. Phase trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity''s evidence requirements. Phase outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
+definition: 'The bounded unit of work within `processes:activity-eo-conceive-9vsfbw` (Assess Footprint Options) that carries out the record phase of the parent''s verb-object decomposition. Phase responsibility: records custodian. Phase trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity''s evidence requirements. Phase outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
 belongs_to_activity: processes:activity-eo-conceive-9vsfbw
 trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity's evidence requirements.
 outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity's evidence discipline.

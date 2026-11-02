@@ -1,7 +1,7 @@
 id: processes:task-eo-build-verify-cc9dm3
 type: Task
 name: Hand Over Facilities to Operations Verification
-definition: 'The bounded unit of work within `dea:activity-handover-facilities-to-operations` (Hand Over Facilities to Operations) that carries out the verify phase of the parent''s verb-object decomposition. Phase responsibility: verification custodian. Phase trigger: Intake registered (phase 1 complete); verification of input against parent Activity''s specification can begin. Phase outcome: Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
+definition: 'The bounded unit of work within `processes:activity-eo-build-ds867n` (Hand Over Facilities to Operations) that carries out the verify phase of the parent''s verb-object decomposition. Phase responsibility: verification custodian. Phase trigger: Intake registered (phase 1 complete); verification of input against parent Activity''s specification can begin. Phase outcome: Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
 belongs_to_activity: processes:activity-eo-build-ds867n
 trigger: Intake registered (phase 1 complete); verification of input against parent Activity's specification can begin.
 outcome: Verified that the input meets parent Activity's specification; nonconformities are recorded for rejection or remediation.

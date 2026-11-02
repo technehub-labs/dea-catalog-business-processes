@@ -1,7 +1,7 @@
 id: processes:task-eo-design-confirm-6c8xz9
 type: Task
 name: Commit Logistics Design Confirmation
-definition: 'The bounded unit of work within `dea:activity-commit-logistics-design` (Commit Logistics Design) that carries out the confirm phase of the parent''s verb-object decomposition. Phase responsibility: confirmation custodian. Phase trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued. Phase outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
+definition: 'The bounded unit of work within `processes:activity-eo-design-65b4xh` (Commit Logistics Design) that carries out the confirm phase of the parent''s verb-object decomposition. Phase responsibility: confirmation custodian. Phase trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued. Phase outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
 belongs_to_activity: processes:activity-eo-design-65b4xh
 trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued.
 outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.

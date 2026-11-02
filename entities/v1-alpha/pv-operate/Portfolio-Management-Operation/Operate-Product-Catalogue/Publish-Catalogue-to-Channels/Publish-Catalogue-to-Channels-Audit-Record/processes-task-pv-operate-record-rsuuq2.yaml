@@ -1,7 +1,7 @@
 id: processes:task-pv-operate-record-rsuuq2
 type: Task
 name: Publish Catalogue to Channels Audit Record
-definition: 'The bounded unit of work within `dea:activity-publish-catalogue-to-channels` (Publish Catalogue to Channels) that carries out the record phase of the parent''s verb-object decomposition. Phase responsibility: records custodian. Phase trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity''s evidence requirements. Phase outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
+definition: 'The bounded unit of work within `processes:activity-pv-operate-pv7jqd` (Publish Catalogue to Channels) that carries out the record phase of the parent''s verb-object decomposition. Phase responsibility: records custodian. Phase trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity''s evidence requirements. Phase outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
 belongs_to_activity: processes:activity-pv-operate-pv7jqd
 trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity's evidence requirements.
 outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity's evidence discipline.

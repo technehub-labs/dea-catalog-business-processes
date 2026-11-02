@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-eo-co
 
 **Name**: Identify Platform Families
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-eo-co
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Identify Platform Families | **Canonical ID** | `processes:activity-eo-conceive-c3quwt` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Frame Technology Enablement Approach that identifies the technology platform families that will enable the operating model.
+**Intent and Definition**: The cohesive grouping of work within Frame Technology Enablement Approach that identifies the technology platform families that will enable the operating model.
 
-**Definition**: The cohesive grouping of work within Frame Technology Enablement Approach that identifies the technology platform families that will enable the operating model.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-eo-co
 | 2026-09-13 | `CR-BP-46` | Initial L3 Activity entry; lands as part of the CR-BP-46 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-identify-platform-families-intake, dea:task-identify-platform-families-verify, dea:task-iden | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Frame Technology Enablement Approach that identifies the technology platform famili |
+| `definition` | string | no | The cohesive grouping of work within Frame Technology Enablement Approach that identifies the technology platform … |
 | `belongs_to_business_process` | string | no | processes:process-eo-conceive-68mp6v |
-| `cohesion_rationale` | string | no | Constituent work shares a single identification concern (which platform families), one input class (operations strategy, |
+| `cohesion_rationale` | string | no | Constituent work shares a single identification concern (which platform families), one input class (operations … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-eo-co
 | `composes` | `processes:task-eo-conceive-confirm-8ek2hs` | 1 |
 | `composes` | `processes:task-eo-conceive-record-k5h45f` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-eo-co
 - **Cohesion rationale**: Constituent work shares a single identification concern (which platform families), one input class (operations strategy, delivery model envelope), and one output (the platform family register). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pr-im
 
 **Name**: Customer Insight and Retention
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,15 +13,15 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pr-im
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Customer Insight and Retention | **Canonical ID** | `processes:pc-pr-improve-k8phkn` |
 
-## 1. Executive Summary / Intent
+## 2. Executive Summary / Intent
 
 Monitoring customer insight (satisfaction, churn, win-back) and operating retention programs that translate insight into action across the customer value stream.
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 (governance and provenance to be backfilled at EXT-04)
 
-## 3. Behavioral Boundaries (Cell Charter)
+## 4. Behavioral Boundaries (Cell Charter)
 
 | Scope Type | Description |
 | :--- | :--- |
@@ -29,7 +29,7 @@ Monitoring customer insight (satisfaction, churn, win-back) and operating retent
 | Out of Scope (exclusions) | - Active customer relationship operation (Operate stage)<br>- Customer strategy framing (Conceive stage)<br>- Customer experience design (Design stage) |
 | Adjacent Cells | - processes:pc-pr-conceive-6xztsq (Conceive): insights shape strategy framing.<br>- processes:pc-pr-design-hrcdy4 (Design): insights sharpen experience design.<br>- processes:pc-pr-build-a46hp7 (Build): insights reveal channel gaps.<br>- processes:pc-pr-operate-pwue5a (Operate): insights refine day-to-day relationship operation. |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename).
 
@@ -69,7 +69,7 @@ pr-improve/
 _(Full L4 task lists for each L3 activity are available in their respective subdirectories.)_
 </details>
 
-## 5. Properties and Relationships
+## 6. Properties and Relationships
 
 **Properties**
 
@@ -77,12 +77,12 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | :--- | :--- | :--- | :--- |
 | `domain` | string | no | PartyAndRelationship |
 | `lifecycle_stage` | string | no | Improve |
-| `definition` | string | no | The bounded enterprise context for **improving** customer experience, retention, and lifetime value in the **customer an |
+| `definition` | string | no | The bounded enterprise context for **improving** customer experience, retention, and lifetime value in the **customer … |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[3] | no | array of 3 item(s) |
 | `adjacent_contexts` | array[4] | no | array of 4 item(s) |
 | `processes` | array[1] | no | array of 1 item(s) |
-| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
+| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions … |
 | `status` | string | no | candidate |
 | `established_by` | string | no | CR-BP-13a |
 | `established_at` | string | no | 2026-09-05 |
@@ -95,7 +95,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | :--- | :--- | :--- |
 | `processes` | `processes:process-pr-improve-t6uvan` | 1 |
 
-## 6. Operational, Control and Metrics Details
+## 7. Operational, Control and Metrics Details
 
 **Inputs, Outputs and Interfaces**: _(pending; backfill at EXT-04)_
 
@@ -107,7 +107,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 
 _(Pending EXT-04)_
 
-## 7. Technical Metadata
+## 8. Technical Metadata
 
 - **Source YAML**: record YAML in the same directory as this README
 - **Record version**: 1.0.0

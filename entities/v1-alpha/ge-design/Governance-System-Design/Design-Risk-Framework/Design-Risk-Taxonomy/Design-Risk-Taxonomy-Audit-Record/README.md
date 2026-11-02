@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-ge-design-rec
 
 **Name**: Design Risk Taxonomy Audit Record
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-ge-design-rec
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Design Risk Taxonomy Audit Record | **Canonical ID** | `processes:task-ge-design-record-t3zad2` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-ge-design-q5tqn5` (Design Risk Taxonomy) that retain the design package (intake manifest, verification report, design-ready governance artefact, design-completion confirmation, and any architecture-deviation remediations) under the governance-design records retention schedule with cryptographic integrity protection.
+**Intent and Definition**: The bounded unit of work within `processes:activity-ge-design-q5tqn5` (Design Risk Taxonomy) that retain the design package (intake manifest, verification report, design-ready governance artefact, design-completion confirmation, and any architecture-deviation remediations) under the governance-design records retention schedule with cryptographic integrity protection.
 
-**Definition**: The bounded unit of work within `processes:activity-ge-design-q5tqn5` (Design Risk Taxonomy) that retain the design package (intake manifest, verification report, design-ready governance artefact, design-completion confirmation, and any architecture-deviation remediations) under the governance-design records retention schedule with cryptographic integrity protection.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Task record for `processes:task-ge-design-rec
 | 2026-09-13 | `CR-BP-48` | Initial L3 Activity entry; lands as part of the CR-BP-48 | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-ge-design-q5tqn5` (Design Risk Taxonomy) that retain the design pack |
+| `definition` | string | no | The bounded unit of work within `processes:activity-ge-design-q5tqn5` (Design Risk Taxonomy) that retain the design … |
 | `belongs_to_activity` | string | no | processes:activity-ge-design-q5tqn5 |
-| `trigger` | string | no | Completion confirmation issued for Design Risk Taxonomy; record gate may retain the case file under the records retentio |
-| `outcome` | string | no | Case file retained for Design Risk Taxonomy under the records retention schedule with cryptographic integrity protection |
+| `trigger` | string | no | Completion confirmation issued for Design Risk Taxonomy; record gate may retain the case file under the records … |
+| `outcome` | string | no | Case file retained for Design Risk Taxonomy under the records retention schedule with cryptographic integrity … |
 | `responsibility` | string | no | records custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-ge-design-rec
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

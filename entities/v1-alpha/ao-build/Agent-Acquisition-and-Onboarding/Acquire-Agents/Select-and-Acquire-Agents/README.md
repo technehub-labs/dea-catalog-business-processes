@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 
 **Name**: Select and Acquire Agents
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Select and Acquire Agents | **Canonical ID** | `processes:activity-ao-build-4vccpu` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Acquire and Onboard Agents that selects and acquires agents against the provisioned capacity, substrate-neutrally.
+**Intent and Definition**: The cohesive grouping of work within Acquire and Onboard Agents that selects and acquires agents against the provisioned capacity, substrate-neutrally.
 
-**Definition**: The cohesive grouping of work within Acquire and Onboard Agents that selects and acquires agents against the provisioned capacity, substrate-neutrally.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 | 2026-09-14 | `CR-BP-56` | Initial L3 Activity entry; lands as part of the CR-BP-56 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-select-and-acquire-agents-intake, dea:task-select-and-acquire-agents-verify, dea:task-select | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Acquire and Onboard Agents that selects and acquires agents against the provisioned |
+| `definition` | string | no | The cohesive grouping of work within Acquire and Onboard Agents that selects and acquires agents against the … |
 | `belongs_to_business_process` | string | no | processes:process-ao-build-w2qurd |
-| `cohesion_rationale` | string | no | Constituent work shares a single selection concern (agents selected and acquired substrate-neutrally), one input class ( |
+| `cohesion_rationale` | string | no | Constituent work shares a single selection concern (agents selected and acquired substrate-neutrally), one input class … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 | `composes` | `processes:task-ao-build-confirm-7mmnjv` | 1 |
 | `composes` | `processes:task-ao-build-record-2nmbeu` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 - **Cohesion rationale**: Constituent work shares a single selection concern (agents selected and acquired substrate-neutrally), one input class (the provisioned agent capacity), and one output (the acquired agents). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

@@ -1,7 +1,7 @@
 id: processes:task-eo-conceive-verify-c8dche
 type: Task
 name: Frame Service-Level Envelopes Verification
-definition: 'The bounded unit of work within `dea:activity-frame-service-level-envelopes` (Frame Service-Level Envelopes) that carries out the verify phase of the parent''s verb-object decomposition. Phase responsibility: verification custodian. Phase trigger: Intake registered (phase 1 complete); verification of input against parent Activity''s specification can begin. Phase outcome: Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
+definition: 'The bounded unit of work within `processes:activity-eo-conceive-wprvuf` (Frame Service-Level Envelopes) that carries out the verify phase of the parent''s verb-object decomposition. Phase responsibility: verification custodian. Phase trigger: Intake registered (phase 1 complete); verification of input against parent Activity''s specification can begin. Phase outcome: Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
 belongs_to_activity: processes:activity-eo-conceive-wprvuf
 trigger: Intake registered (phase 1 complete); verification of input against parent Activity's specification can begin.
 outcome: Verified that the input meets parent Activity's specification; nonconformities are recorded for rejection or remediation.

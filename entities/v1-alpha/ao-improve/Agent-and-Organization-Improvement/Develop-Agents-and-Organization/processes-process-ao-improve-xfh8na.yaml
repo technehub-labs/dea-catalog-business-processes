@@ -25,7 +25,7 @@ owner:
   review_due: '2026-12-31'
   decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
-description: 'Operate the Develop Agents and Organization L2 process within the dea:pc-ao-improve Cell
+description: 'Operate the Develop Agents and Organization L2 process within the processes:pc-ao-improve-qkmh6b Cell
   Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement
   for the testable outcome the process produces. '
 trigger: 'Agent and organization development is needed because engagement signals, capability gaps, or
@@ -129,7 +129,7 @@ inputs:
   type: information
   name: 'Develop Agents and Organization: working inputs (information)'
   description: 'Derived from the record''s documented description and trigger: the process Operate the
-    Develop Agents and Organization L2 process within the dea:pc-ao-improve Cell Charter. See trigger
+    Develop Agents and Organization L2 process within the processes:pc-ao-improve-qkmh6b Cell Charter. See trigger
     and outcome for the bounded work this pr'
   source: Record documented content (description + trigger fields)
   mandatory: true

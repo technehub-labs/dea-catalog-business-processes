@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-o
 
 **Name**: Governance Oversight
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-o
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Governance Oversight | **Canonical ID** | `processes:group-ge-operate-v2eu8x` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organizes the Business Process responsibilities of operating governance oversight, board and committee cycles, risk oversight, and policy compliance execution in the GovernanceAndExistence x Operate context. This group captures the day-to-day work of running the governance machinery: convening boards, executing risk reviews, auditing policy compliance, and making governance decisions.
+**Intent and Definition**: The bounded Process Group that organizes the Business Process responsibilities of operating governance oversight, board and committee cycles, risk oversight, and policy compliance execution in the GovernanceAndExistence x Operate context. This group captures the day-to-day work of running the governance machinery: convening boards, executing risk reviews, auditing policy compliance, and making governance decisions.
 
-**Definition**: The bounded Process Group that organizes the Business Process responsibilities of operating governance oversight, board and committee cycles, risk oversight, and policy compliance execution in the GovernanceAndExistence x Operate context. This group captures the day-to-day work of running the governance machinery: convening boards, executing risk reviews, auditing policy compliance, and making governance decisions.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -30,13 +28,13 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-o
 | 2026-09-08 | `CR-BP-21f.1` | Added dea:process-operate-enterprise-risk-oversight and dea:process-conduct-assurance-review composes edges (CR-BP-21f.1 GE completion). | System |
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded Process Group that organizes the Business Process responsibilities of operating governance oversight, board  |
+| `definition` | string | no | The bounded Process Group that organizes the Business Process responsibilities of operating governance oversight, board … |
 | `process_context` | string | no | processes:pc-ge-operate-hb2dac |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[3] | no | array of 3 item(s) |
@@ -57,11 +55,11 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-o
 | `composes` | `processes:process-ge-operate-tpenm6` | 1 |
 | `composes` | `processes:process-ge-operate-zwaes5` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

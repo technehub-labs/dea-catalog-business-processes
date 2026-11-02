@@ -1,7 +1,7 @@
 id: processes:task-pv-conceive-transform-3vwa8k
 type: Task
 name: Bound Experimentation Boundaries Processing
-definition: 'The bounded unit of work within `dea:activity-bound-experimentation-boundaries` (Bound Experimentation Boundaries) that carries out the transform phase of the parent''s verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
+definition: 'The bounded unit of work within `processes:activity-pv-conceive-m8x6e4` (Bound Experimentation Boundaries) that carries out the transform phase of the parent''s verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
 belongs_to_activity: processes:activity-pv-conceive-m8x6e4
 trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin.
 outcome: Output produced in the specified form per parent Activity's definition; intermediate artifacts preserved for audit.

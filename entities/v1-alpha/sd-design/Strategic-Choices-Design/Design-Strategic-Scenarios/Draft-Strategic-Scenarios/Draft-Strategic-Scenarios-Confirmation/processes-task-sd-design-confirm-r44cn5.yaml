@@ -1,7 +1,7 @@
 id: processes:task-sd-design-confirm-r44cn5
 type: Task
 name: Draft Strategic Scenarios Confirmation
-definition: 'The bounded unit of work within `dea:activity-draft-strategic-scenarios` (Draft Strategic Scenarios) that carries out the confirm phase of the parent''s verb-object decomposition. Phase responsibility: confirmation custodian. Phase trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued. Phase outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
+definition: 'The bounded unit of work within `processes:activity-sd-design-xz6zgn` (Draft Strategic Scenarios) that carries out the confirm phase of the parent''s verb-object decomposition. Phase responsibility: confirmation custodian. Phase trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued. Phase outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
 belongs_to_activity: processes:activity-sd-design-xz6zgn
 trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued.
 outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.

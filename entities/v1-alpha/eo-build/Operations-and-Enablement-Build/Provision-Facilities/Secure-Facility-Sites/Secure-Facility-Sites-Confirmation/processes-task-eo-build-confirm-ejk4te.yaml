@@ -1,7 +1,7 @@
 id: processes:task-eo-build-confirm-ejk4te
 type: Task
 name: Secure Facility Sites Confirmation
-definition: 'The bounded unit of work within `dea:activity-secure-facility-sites` (Secure Facility Sites) that carries out the confirm phase of the parent''s verb-object decomposition. Phase responsibility: confirmation custodian. Phase trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued. Phase outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
+definition: 'The bounded unit of work within `processes:activity-eo-build-neek9x` (Secure Facility Sites) that carries out the confirm phase of the parent''s verb-object decomposition. Phase responsibility: confirmation custodian. Phase trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued. Phase outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
 belongs_to_activity: processes:activity-eo-build-neek9x
 trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued.
 outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.

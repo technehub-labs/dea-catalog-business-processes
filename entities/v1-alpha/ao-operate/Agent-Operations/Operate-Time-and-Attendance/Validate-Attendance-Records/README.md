@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 **Name**: Validate Attendance Records
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Validate Attendance Records | **Canonical ID** | `processes:activity-ao-operate-yzn584` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Operate Time and Attendance that validates the captured records for accuracy before they feed payroll.
+**Intent and Definition**: The cohesive grouping of work within Operate Time and Attendance that validates the captured records for accuracy before they feed payroll.
 
-**Definition**: The cohesive grouping of work within Operate Time and Attendance that validates the captured records for accuracy before they feed payroll.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 | 2026-09-14 | `CR-BP-57` | Initial L3 Activity entry; lands as part of the CR-BP-57 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-validate-attendance-records-intake, dea:task-validate-attendance-records-verify, dea:task-va | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Operate Time and Attendance that validates the captured records for accuracy before |
+| `definition` | string | no | The cohesive grouping of work within Operate Time and Attendance that validates the captured records for accuracy … |
 | `belongs_to_business_process` | string | no | processes:process-ao-operate-dg9q4h |
-| `cohesion_rationale` | string | no | Constituent work shares a single validation concern (captured records checked for accuracy), one input class (the captur |
+| `cohesion_rationale` | string | no | Constituent work shares a single validation concern (captured records checked for accuracy), one input class (the … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 | `composes` | `processes:task-ao-operate-confirm-r9r893` | 1 |
 | `composes` | `processes:task-ao-operate-record-c7wyh4` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 - **Cohesion rationale**: Constituent work shares a single validation concern (captured records checked for accuracy), one input class (the captured time and attendance records), and one output (the validated attendance records). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ge-re
 
 **Name**: Reduce Governance To Wind-Down Quorum
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ge-re
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Reduce Governance To Wind-Down Quorum | **Canonical ID** | `processes:activity-ge-retire-bp4237` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Effect Regulator-Mandated Governance Unwind that reduces governance bodies to the wind-down quorum required by the controlling statute or regulator or court order, sunsets or supersedes the affected policy instruments, and confirms the reduced governance regime is fit to act under the binding order.
+**Intent and Definition**: The cohesive grouping of work within Effect Regulator-Mandated Governance Unwind that reduces governance bodies to the wind-down quorum required by the controlling statute or regulator or court order, sunsets or supersedes the affected policy instruments, and confirms the reduced governance regime is fit to act under the binding order.
 
-**Definition**: The cohesive grouping of work within Effect Regulator-Mandated Governance Unwind that reduces governance bodies to the wind-down quorum required by the controlling statute or regulator or court order, sunsets or supersedes the affected policy instruments, and confirms the reduced governance regime is fit to act under the binding order.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-ge-re
 | 2026-09-16 | `CR-BP-79` | Initial L3 Activity entry for dea:process-effect-regulator-mandated-governance-unwind; lands as part of the CR-BP-79 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-reduce-governance-to-wind-down-quorum-intake, dea:task-reduce-governance-to-wind-down-quorum | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Effect Regulator-Mandated Governance Unwind that reduces governance bodies to the w |
+| `definition` | string | no | The cohesive grouping of work within Effect Regulator-Mandated Governance Unwind that reduces governance bodies to the … |
 | `belongs_to_business_process` | string | no | processes:process-ge-retire-mjq5hg |
-| `cohesion_rationale` | string | no | Constituent work shares a single governance-reduction concern (reducing the governance regime to the wind-down minimum r |
+| `cohesion_rationale` | string | no | Constituent work shares a single governance-reduction concern (reducing the governance regime to the wind-down minimum … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-ge-re
 | `composes` | `processes:task-ge-retire-confirm-jd9jz5` | 1 |
 | `composes` | `processes:task-ge-retire-record-7qykr3` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-ge-re
 - **Cohesion rationale**: Constituent work shares a single governance-reduction concern (reducing the governance regime to the wind-down minimum required by the binding order), one input class (order-scope register plus governance constitution and policy register), and one output (a reduced governance regime documented as fit to act under the binding order). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

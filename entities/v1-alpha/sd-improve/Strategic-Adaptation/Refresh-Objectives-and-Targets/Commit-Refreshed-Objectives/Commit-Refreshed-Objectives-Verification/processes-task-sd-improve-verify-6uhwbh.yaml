@@ -1,7 +1,7 @@
 id: processes:task-sd-improve-verify-6uhwbh
 type: Task
 name: Commit Refreshed Objectives Verification
-definition: 'The bounded unit of work within `dea:activity-commit-refreshed-objectives` (Commit Refreshed Objectives) that carries out the verify phase of the parent''s verb-object decomposition. Phase responsibility: verification custodian. Phase trigger: Intake registered (phase 1 complete); verification of input against parent Activity''s specification can begin. Phase outcome: Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
+definition: 'The bounded unit of work within `processes:activity-sd-improve-dqccp5` (Commit Refreshed Objectives) that carries out the verify phase of the parent''s verb-object decomposition. Phase responsibility: verification custodian. Phase trigger: Intake registered (phase 1 complete); verification of input against parent Activity''s specification can begin. Phase outcome: Verified that the input meets parent Activity''s specification; nonconformities are recorded for rejection or remediation.'
 belongs_to_activity: processes:activity-sd-improve-dqccp5
 trigger: Intake registered (phase 1 complete); verification of input against parent Activity's specification can begin.
 outcome: Verified that the input meets parent Activity's specification; nonconformities are recorded for rejection or remediation.

@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 
 **Name**: Run Regulator-Mandated Recurrent Training
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Run Regulator-Mandated Recurrent Training | **Canonical ID** | `processes:activity-ao-improve-x7m4n2` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Improve Regulated Workforce Capability that Run regulator-mandated recurrent training cycles: FCA SMCR fit-and-proper annual assessment (SYSC 25 / FIT); state bar MCLE; state healthcare CME; NAIC CE; FAA Part 121 subpart Y recurrent training; EU AI Act Article 14 ongoing training. Shared concern: recurrent training cycle. Input: the live role list; the regulator training matrix. Output: the recurrent training completion record.
+**Intent and Definition**: The cohesive grouping of work within Improve Regulated Workforce Capability that Run regulator-mandated recurrent training cycles: FCA SMCR fit-and-proper annual assessment (SYSC 25 / FIT); state bar MCLE; state healthcare CME; NAIC CE; FAA Part 121 subpart Y recurrent training; EU AI Act Article 14 ongoing training. Shared concern: recurrent training cycle. Input: the live role list; the regulator training matrix. Output: the recurrent training completion record.
 
-**Definition**: The cohesive grouping of work within Improve Regulated Workforce Capability that Run regulator-mandated recurrent training cycles: FCA SMCR fit-and-proper annual assessment (SYSC 25 / FIT); state bar MCLE; state healthcare CME; NAIC CE; FAA Part 121 subpart Y recurrent training; EU AI Act Article 14 ongoing training. Shared concern: recurrent training cycle. Input: the live role list; the regulator training matrix. Output: the recurrent training completion record.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -35,16 +33,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-improve-84rmv4, processes:task-ao-improve-wzjpue, processes:task-ao-improve-ufpv8q, | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-improve-intake-hhw7w9, processes:task-ao-improve-verify-7jhktn, processes:task-ao-i | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Improve Regulated Workforce Capability that Run regulator-mandated recurrent traini |
+| `definition` | string | no | The cohesive grouping of work within Improve Regulated Workforce Capability that Run regulator-mandated recurrent … |
 | `belongs_to_business_process` | string | no | processes:process-ao-improve-qqxe4d |
-| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single run regulator-mandated  |
+| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single run regulator-mandated … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -58,7 +56,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 | `composes` | `processes:task-ao-improve-confirm-gs6k8z` | 1 |
 | `composes` | `processes:task-ao-improve-record-xq7t8z` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -66,7 +64,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 - **Cohesion rationale**: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single run regulator-mandated recurrent training concern, one input class, and one output (the run regulator-mandated recurrent training record on the regulated personnel record).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

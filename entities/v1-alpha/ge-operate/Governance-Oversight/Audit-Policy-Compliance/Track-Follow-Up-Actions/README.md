@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ge-op
 
 **Name**: Track Follow-Up Actions
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ge-op
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Track Follow-Up Actions | **Canonical ID** | `processes:activity-ge-operate-zhhypw` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Audit Policy Compliance that tracks the follow-up actions arising from reported audit findings to closure.
+**Intent and Definition**: The cohesive grouping of work within Audit Policy Compliance that tracks the follow-up actions arising from reported audit findings to closure.
 
-**Definition**: The cohesive grouping of work within Audit Policy Compliance that tracks the follow-up actions arising from reported audit findings to closure.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-ge-op
 | 2026-09-13 | `CR-BP-49` | Initial L3 Activity entry; lands as part of the CR-BP-49 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-track-follow-up-actions-intake, dea:task-track-follow-up-actions-verify, dea:task-track-foll | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Audit Policy Compliance that tracks the follow-up actions arising from reported aud |
+| `definition` | string | no | The cohesive grouping of work within Audit Policy Compliance that tracks the follow-up actions arising from reported … |
 | `belongs_to_business_process` | string | no | processes:process-ge-operate-hxxyc9 |
-| `cohesion_rationale` | string | no | Constituent work shares a single tracking concern (action to closure), one input class (reported follow-up actions), and |
+| `cohesion_rationale` | string | no | Constituent work shares a single tracking concern (action to closure), one input class (reported follow-up actions) … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-ge-op
 | `composes` | `processes:task-ge-operate-confirm-nbc6nv` | 1 |
 | `composes` | `processes:task-ge-operate-record-m96hw4` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-ge-op
 - **Cohesion rationale**: Constituent work shares a single tracking concern (action to closure), one input class (reported follow-up actions), and one output (the action tracking record). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

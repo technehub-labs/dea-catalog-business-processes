@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-ge-activate-v
 
 **Name**: Communicate Obligations and Rights Verification
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-ge-activate-v
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Communicate Obligations and Rights Verification | **Canonical ID** | `processes:task-ge-activate-verify-fj65v3` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-ge-activate-6uwq7f` (Communicate Obligations and Rights) that verify the commencement conditions against the constitutive instrument and the governing statute (incorporation formalities, regulatory authorization prerequisites), and emit a verification certificate naming the conditions verified and any unmet prerequisites flagged for remediation.
+**Intent and Definition**: The bounded unit of work within `processes:activity-ge-activate-6uwq7f` (Communicate Obligations and Rights) that verify the commencement conditions against the constitutive instrument and the governing statute (incorporation formalities, regulatory authorization prerequisites), and emit a verification certificate naming the conditions verified and any unmet prerequisites flagged for remediation.
 
-**Definition**: The bounded unit of work within `processes:activity-ge-activate-6uwq7f` (Communicate Obligations and Rights) that verify the commencement conditions against the constitutive instrument and the governing statute (incorporation formalities, regulatory authorization prerequisites), and emit a verification certificate naming the conditions verified and any unmet prerequisites flagged for remediation.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Task record for `processes:task-ge-activate-v
 | 2026-09-15 | `CR-BP-69` | Initial L3 Activity entry; lands as part of the CR-BP-69 | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-ge-activate-6uwq7f` (Communicate Obligations and Rights) that verify |
+| `definition` | string | no | The bounded unit of work within `processes:activity-ge-activate-6uwq7f` (Communicate Obligations and Rights) that … |
 | `belongs_to_activity` | string | no | processes:activity-ge-activate-6uwq7f |
-| `trigger` | string | no | Intake manifest registered for Communicate Obligations and Rights; verification gate may execute the contract and qualit |
-| `outcome` | string | no | Verification certificate issued for Communicate Obligations and Rights naming verification methods applied and any devia |
+| `trigger` | string | no | Intake manifest registered for Communicate Obligations and Rights; verification gate may execute the contract and … |
+| `outcome` | string | no | Verification certificate issued for Communicate Obligations and Rights naming verification methods applied and any … |
 | `responsibility` | string | no | verification custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-ge-activate-v
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

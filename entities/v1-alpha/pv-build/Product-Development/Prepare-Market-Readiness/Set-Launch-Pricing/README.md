@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 
 **Name**: Set Launch Pricing
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Set Launch Pricing | **Canonical ID** | `processes:activity-pv-build-n32s5c` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Prepare Market Readiness that sets the launch pricing for the offering within financial policy and the demand model.
+**Intent and Definition**: The cohesive grouping of work within Prepare Market Readiness that sets the launch pricing for the offering within financial policy and the demand model.
 
-**Definition**: The cohesive grouping of work within Prepare Market Readiness that sets the launch pricing for the offering within financial policy and the demand model.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 | 2026-09-13 | `CR-BP-50` | Initial L3 Activity entry; lands as part of the CR-BP-50 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-set-launch-pricing-intake, dea:task-set-launch-pricing-verify, dea:task-set-launch-pricing-t | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Prepare Market Readiness that sets the launch pricing for the offering within finan |
+| `definition` | string | no | The cohesive grouping of work within Prepare Market Readiness that sets the launch pricing for the offering within … |
 | `belongs_to_business_process` | string | no | processes:process-pv-build-6hjzmk |
-| `cohesion_rationale` | string | no | Constituent work shares a single pricing concern (offering to price), one reference class (financial policy, demand-shap |
+| `cohesion_rationale` | string | no | Constituent work shares a single pricing concern (offering to price), one reference class (financial policy … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 | `composes` | `processes:task-pv-build-confirm-vg3k4m` | 1 |
 | `composes` | `processes:task-pv-build-record-36vyes` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 - **Cohesion rationale**: Constituent work shares a single pricing concern (offering to price), one reference class (financial policy, demand-shaping levers), and one recognizable portion of the parent outcome (pricing). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

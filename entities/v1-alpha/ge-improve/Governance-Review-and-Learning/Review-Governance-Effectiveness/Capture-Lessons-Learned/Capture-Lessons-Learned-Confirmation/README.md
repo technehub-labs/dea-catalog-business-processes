@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-ge-improve-co
 
 **Name**: Capture Lessons Learned Confirmation
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-ge-improve-co
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Capture Lessons Learned Confirmation | **Canonical ID** | `processes:task-ge-improve-confirm-7hkzh2` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-ge-improve-f4qwmk` (Capture Lessons Learned) that reconcile the improvement-ready outcomes pack against the internal-audit methodology and the finding-classification contract, issue the improvement-completion confirmation to the governance custodian and the audit committee, and log the confirmation.
+**Intent and Definition**: The bounded unit of work within `processes:activity-ge-improve-f4qwmk` (Capture Lessons Learned) that reconcile the improvement-ready outcomes pack against the internal-audit methodology and the finding-classification contract, issue the improvement-completion confirmation to the governance custodian and the audit committee, and log the confirmation.
 
-**Definition**: The bounded unit of work within `processes:activity-ge-improve-f4qwmk` (Capture Lessons Learned) that reconcile the improvement-ready outcomes pack against the internal-audit methodology and the finding-classification contract, issue the improvement-completion confirmation to the governance custodian and the audit committee, and log the confirmation.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Task record for `processes:task-ge-improve-co
 | 2026-09-13 | `CR-BP-49` | Initial L3 Activity entry; lands as part of the CR-BP-49 | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-ge-improve-f4qwmk` (Capture Lessons Learned) that reconcile the impr |
+| `definition` | string | no | The bounded unit of work within `processes:activity-ge-improve-f4qwmk` (Capture Lessons Learned) that reconcile the … |
 | `belongs_to_activity` | string | no | processes:activity-ge-improve-f4qwmk |
-| `trigger` | string | no | Bounded-work artefact produced for Capture Lessons Learned; confirm gate may reconcile against the governing contract an |
-| `outcome` | string | no | Completion confirmation issued for Capture Lessons Learned and acknowledged by the governance custodian and any governin |
+| `trigger` | string | no | Bounded-work artefact produced for Capture Lessons Learned; confirm gate may reconcile against the governing contract … |
+| `outcome` | string | no | Completion confirmation issued for Capture Lessons Learned and acknowledged by the governance custodian and any … |
 | `responsibility` | string | no | confirmation custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-ge-improve-co
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

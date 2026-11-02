@@ -27,7 +27,7 @@ owner:
 process_specialization: []
 description: 'Withdraw and retire an operational asset (technology or physical): plan and approve the
   retirement, isolate and withdraw the asset from service, decommission and dispose of it, and resolve
-  its residual value, data and obligations, within the dea:pc-oe-retire Cell Charter. See trigger and
+  its residual value, data and obligations, within the processes:pc-eo-retire-nw3ynf Cell Charter. See trigger and
   outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome
   the process produces. '
 trigger: 'An operational asset reaches end of life, is superseded, or is approved for retirement. '

@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-eo-re
 
 **Name**: Operations and Asset Decommissioning
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,13 @@ This directory hosts the canonical ProcessContext record for `processes:pc-eo-re
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Operations and Asset Decommissioning | **Canonical ID** | `processes:pc-eo-retire-nw3ynf` |
 
-## 1. Executive Summary / Intent
+## 2. Executive Summary / Intent
 
 The retirement-stage work of taking operational and physical or
 technology assets out of service and resolving what they leave
 behind.
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 - **Regulatory Evidence Base**:
@@ -28,7 +28,7 @@ behind.
   - Energy: FERC / Ofgem operations licensing
   - Telecommunications: FCC / Ofcom spectrum authorisation
 
-## 3. Behavioral Boundaries (Cell Charter)
+## 4. Behavioral Boundaries (Cell Charter)
 
 | Scope Type | Description |
 | :--- | :--- |
@@ -36,7 +36,7 @@ behind.
 | Out of Scope (exclusions) | - Asset acquisition and build (Build stage; adjacent context)<br>- Steady-state operation and maintenance (Operate stage; adjacent context)<br>- Asset improvement and upgrade (Improve stage; adjacent context)<br>- Product and service withdrawal (ProductAndValue x Retire; sibling cell) |
 | Adjacent Cells | - processes:pc-eo-operate-ydqb96 (adjacent context): operating assets hand over at retirement planning and approval.<br>- processes:pc-pv-retire-eeck6d (sibling cell): product and service withdrawal is distinct from asset decommissioning. |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename).
 
@@ -76,7 +76,7 @@ eo-retire/
 _(Full L4 task lists for each L3 activity are available in their respective subdirectories.)_
 </details>
 
-## 5. Properties and Relationships
+## 6. Properties and Relationships
 
 **Properties**
 
@@ -89,7 +89,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `outcomes` | array[3] | no | array of 3 item(s) |
 | `adjacent_contexts` | array[9] | no | array of 9 item(s) |
 | `processes` | array[1] | no | array of 1 item(s) |
-| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
+| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions … |
 | `status` | string | no | candidate |
 | `established_by` | string | no | CR-BP-66 |
 | `established_at` | string | no | 2026-09-14 |
@@ -102,7 +102,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | :--- | :--- | :--- |
 | `processes` | `processes:process-eo-retire-rpg6d4` | 1 |
 
-## 6. Operational, Control and Metrics Details
+## 7. Operational, Control and Metrics Details
 
 **Inputs, Outputs and Interfaces**: _(pending; backfill at EXT-04)_
 
@@ -114,7 +114,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 
 _(Pending EXT-04)_
 
-## 7. Technical Metadata
+## 8. Technical Metadata
 
 - **Source YAML**: record YAML in the same directory as this README
 - **Record version**: 1.0.0

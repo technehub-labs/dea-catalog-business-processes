@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-c
 
 **Name**: Strategy and Direction Conception
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,9 +13,9 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-c
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Strategy and Direction Conception | **Canonical ID** | `processes:group-sd-conceive-7qhvzn` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organises the Business Process
+**Intent and Definition**: The bounded Process Group that organises the Business Process
 responsibilities of conceiving the enterprise's strategic direction
 in the StrategyAndDirection × Conceive context. This group covers the
 front-end work of framing the enterprise's purpose, ambition, strategic
@@ -24,16 +24,7 @@ Strategy & Direction directs the enterprise's deliberate choice of
 trajectory within the authorised frame (governance-existence x conceive
 authorises; strategy-direction x conceive directs).
 
-**Definition**: The bounded Process Group that organises the Business Process
-responsibilities of conceiving the enterprise's strategic direction
-in the StrategyAndDirection × Conceive context. This group covers the
-front-end work of framing the enterprise's purpose, ambition, strategic
-intent, strategic horizons, and corporate strategy. v2.4.0 grounding:
-Strategy & Direction directs the enterprise's deliberate choice of
-trajectory within the authorised frame (governance-existence x conceive
-authorises; strategy-direction x conceive directs).
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -44,7 +35,7 @@ authorises; strategy-direction x conceive directs).
 | 2026-09-08 | `CR-BP-21a.1` | Composes edges added for the 3 remaining register v2 Conceive-cell | System |
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -71,11 +62,11 @@ authorises; strategy-direction x conceive directs).
 | `composes` | `processes:process-sd-conceive-3uredz` | 1 |
 | `composes` | `processes:process-sd-conceive-xa4h2k` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-ao-design-tra
 
 **Name**: Commit Organization Structure Design Processing
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-ao-design-tra
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Commit Organization Structure Design Processing | **Canonical ID** | `processes:task-ao-design-transform-nz53k3` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `dea:activity-commit-organization-structure-design` (Commit Organization Structure Design) that carries out the transform phase of the parent's verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity's definition; intermediate artifacts preserved for audit.
+**Intent and Definition**: The bounded unit of work within `processes:activity-ao-design-qp6pxn` (Commit Organization Structure Design) that carries out the transform phase of the parent's verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity's definition; intermediate artifacts preserved for audit.
 
-**Definition**: The bounded unit of work within `dea:activity-commit-organization-structure-design` (Commit Organization Structure Design) that carries out the transform phase of the parent's verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity's definition; intermediate artifacts preserved for audit.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,13 +27,13 @@ This directory hosts the canonical Task record for `processes:task-ao-design-tra
 | 2026-09-14 | `CR-BP-56` | Initial L3 Activity entry; lands as part of the CR-BP-56 | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `dea:activity-commit-organization-structure-design` (Commit Organization Structure Desig |
+| `definition` | string | no | The bounded unit of work within `processes:activity-ao-design-qp6pxn` (Commit Organization Structure Design) that … |
 | `belongs_to_activity` | string | no | processes:activity-ao-design-qp6pxn |
 | `trigger` | string | no | Verified input is ready (phase 2 complete); transformation to the specified output form may begin. |
 | `outcome` | string | no | Output produced in the specified form per parent Activity's definition; intermediate artifacts preserved for audit. |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-ao-design-tra
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

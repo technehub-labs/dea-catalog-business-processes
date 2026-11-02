@@ -1,7 +1,7 @@
 id: processes:task-ao-improve-record-qgqttw
 type: Task
 name: Baseline Population Competencies Audit Record
-definition: 'The bounded unit of work within `dea:activity-baseline-population-competencies` (Baseline Population Competencies) that carries out the record phase of the parent''s verb-object decomposition. Phase responsibility: records custodian. Phase trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity''s evidence requirements. Phase outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
+definition: 'The bounded unit of work within `processes:activity-ao-improve-2bds64` (Baseline Population Competencies) that carries out the record phase of the parent''s verb-object decomposition. Phase responsibility: records custodian. Phase trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity''s evidence requirements. Phase outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
 belongs_to_activity: processes:activity-ao-improve-2bds64
 trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity's evidence requirements.
 outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity's evidence discipline.

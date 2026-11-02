@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-fa-a
 
 **Name**: Regulated Billing Activation
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,9 +13,9 @@ This directory hosts the canonical ProcessGroup record for `processes:group-fa-a
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Regulated Billing Activation | **Canonical ID** | `processes:group-fa-activate-n9s2z3` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organises the Business Process
+**Intent and Definition**: The bounded Process Group that organises the Business Process
 responsibilities of moving a billing or revenue-recognition
 capability from regulator-acknowledged-but-not-live to
 regulator-acknowledged-and-live in the FinanceAndAccounting x
@@ -25,21 +25,11 @@ under capital rules; PUC rate-effective billing; PSD2 settlement-
 account) creates a distinct group-level activation concern
 separate from capability build and from steady-state billing.
 
-**Definition**: The bounded Process Group that organises the Business Process
-responsibilities of moving a billing or revenue-recognition
-capability from regulator-acknowledged-but-not-live to
-regulator-acknowledged-and-live in the FinanceAndAccounting x
-Activate context where regulator-acknowledged accounting or rate
-framework (insurance statutory accounting; IFRS 17; bank treasury
-under capital rules; PUC rate-effective billing; PSD2 settlement-
-account) creates a distinct group-level activation concern
-separate from capability build and from steady-state billing.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 (governance and provenance to be backfilled at EXT-04)
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -62,11 +52,11 @@ separate from capability build and from steady-state billing.
 | :--- | :--- | :--- |
 | `composes` | `processes:process-fa-activate-bzfywk` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

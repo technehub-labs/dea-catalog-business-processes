@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-ge-retire-tra
 
 **Name**: Submit Statutory Dissolution Filings Processing
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-ge-retire-tra
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Submit Statutory Dissolution Filings Processing | **Canonical ID** | `processes:task-ge-retire-transform-ahrttj` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-ge-retire-rck7n9` (Submit Statutory Dissolution Filings) that execute the wind-down: assess the regulator or court order scope, assign the retained-records custodianship, reduce the governance apparatus to the wind-down quorum, submit the statutory dissolution filings, and produce the wind-down-ready record pack conforming to the dissolution schema.
+**Intent and Definition**: The bounded unit of work within `processes:activity-ge-retire-rck7n9` (Submit Statutory Dissolution Filings) that execute the wind-down: assess the regulator or court order scope, assign the retained-records custodianship, reduce the governance apparatus to the wind-down quorum, submit the statutory dissolution filings, and produce the wind-down-ready record pack conforming to the dissolution schema.
 
-**Definition**: The bounded unit of work within `processes:activity-ge-retire-rck7n9` (Submit Statutory Dissolution Filings) that execute the wind-down: assess the regulator or court order scope, assign the retained-records custodianship, reduce the governance apparatus to the wind-down quorum, submit the statutory dissolution filings, and produce the wind-down-ready record pack conforming to the dissolution schema.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Task record for `processes:task-ge-retire-tra
 | 2026-09-16 | `CR-BP-79` | Initial L3 Activity entry for dea:process-effect-regulator-mandated-governance-unwind; lands as part of the CR-BP-79 | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-ge-retire-rck7n9` (Submit Statutory Dissolution Filings) that execut |
+| `definition` | string | no | The bounded unit of work within `processes:activity-ge-retire-rck7n9` (Submit Statutory Dissolution Filings) that … |
 | `belongs_to_activity` | string | no | processes:activity-ge-retire-rck7n9 |
-| `trigger` | string | no | Verification certificate issued for Submit Statutory Dissolution Filings; transform gate may execute the bounded work an |
-| `outcome` | string | no | Bounded-work artefact produced for Submit Statutory Dissolution Filings conforming to the Retire schema; processing cust |
+| `trigger` | string | no | Verification certificate issued for Submit Statutory Dissolution Filings; transform gate may execute the bounded work … |
+| `outcome` | string | no | Bounded-work artefact produced for Submit Statutory Dissolution Filings conforming to the Retire schema; processing … |
 | `responsibility` | string | no | processing custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-ge-retire-tra
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

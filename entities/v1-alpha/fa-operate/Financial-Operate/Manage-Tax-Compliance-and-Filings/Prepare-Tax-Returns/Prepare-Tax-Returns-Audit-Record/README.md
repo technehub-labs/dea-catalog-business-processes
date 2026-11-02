@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-re
 
 **Name**: Prepare Tax Returns Audit Record
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-re
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Prepare Tax Returns Audit Record | **Canonical ID** | `processes:task-fa-operate-record-cg9eb2` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `dea:activity-prepare-tax-returns` (Prepare Tax Returns) that carries out the record phase of the parent's verb-object decomposition. Phase responsibility: records custodian. Phase trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity's evidence requirements. Phase outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity's evidence discipline.
+**Intent and Definition**: The bounded unit of work within `processes:activity-fa-operate-9g2b8x` (Prepare Tax Returns) that carries out the record phase of the parent's verb-object decomposition. Phase responsibility: records custodian. Phase trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity's evidence requirements. Phase outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity's evidence discipline.
 
-**Definition**: The bounded unit of work within `dea:activity-prepare-tax-returns` (Prepare Tax Returns) that carries out the record phase of the parent's verb-object decomposition. Phase responsibility: records custodian. Phase trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity's evidence requirements. Phase outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity's evidence discipline.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-re
 | 2026-09-13 | `CR-BP-53` | Initial L3 Activity entry; lands as part of the CR-BP-53 | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `dea:activity-prepare-tax-returns` (Prepare Tax Returns) that carries out the record pha |
+| `definition` | string | no | The bounded unit of work within `processes:activity-fa-operate-9g2b8x` (Prepare Tax Returns) that carries out the … |
 | `belongs_to_activity` | string | no | processes:activity-fa-operate-9g2b8x |
 | `trigger` | string | no | Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity's evidence requirements. |
-| `outcome` | string | no | Audit record preserved at the specified retention tier; retrieval handles established per parent Activity's evidence dis |
+| `outcome` | string | no | Audit record preserved at the specified retention tier; retrieval handles established per parent Activity's evidence … |
 | `responsibility` | string | no | records custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[2] | no | array of 2 item(s) |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-fa-operate-re
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

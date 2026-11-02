@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-im
 
 **Name**: Gather Objective Performance Evidence
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-sd-im
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Gather Objective Performance Evidence | **Canonical ID** | `processes:activity-sd-improve-6tdndg` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Refresh Objectives and Targets that gathers the strategic performance evidence against which the current objectives and targets are judged.
+**Intent and Definition**: The cohesive grouping of work within Refresh Objectives and Targets that gathers the strategic performance evidence against which the current objectives and targets are judged.
 
-**Definition**: The cohesive grouping of work within Refresh Objectives and Targets that gathers the strategic performance evidence against which the current objectives and targets are judged.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-sd-im
 | 2026-09-14 | `CR-BP-55` | Initial L3 Activity entry; lands as part of the CR-BP-55 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-gather-objective-performance-evidence-intake, dea:task-gather-objective-performance-evidence | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Refresh Objectives and Targets that gathers the strategic performance evidence agai |
+| `definition` | string | no | The cohesive grouping of work within Refresh Objectives and Targets that gathers the strategic performance evidence … |
 | `belongs_to_business_process` | string | no | processes:process-sd-improve-aqbrm7 |
-| `cohesion_rationale` | string | no | Constituent work shares a single gathering concern (performance evidence relevant to current objectives and targets), on |
+| `cohesion_rationale` | string | no | Constituent work shares a single gathering concern (performance evidence relevant to current objectives and targets) … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-im
 | `composes` | `processes:task-sd-improve-confirm-b9rgk4` | 1 |
 | `composes` | `processes:task-sd-improve-record-x6w3d7` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-im
 - **Cohesion rationale**: Constituent work shares a single gathering concern (performance evidence relevant to current objectives and targets), one input class (the monitored strategic performance), and one output (the gathered objective performance evidence). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

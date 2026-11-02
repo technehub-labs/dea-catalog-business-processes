@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-eo-r
 
 **Name**: Operations and Asset Decommissioning
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,21 +13,15 @@ This directory hosts the canonical ProcessGroup record for `processes:group-eo-r
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Operations and Asset Decommissioning | **Canonical ID** | `processes:group-eo-retire-n9ge5c` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organises the Business Process
+**Intent and Definition**: The bounded Process Group that organises the Business Process
 responsibilities of withdrawing and retiring operational assets in
 the EnablementAndOperations x Retire context (retirement planning,
 isolation and withdrawal, decommissioning and disposal, residual
 resolution).
 
-**Definition**: The bounded Process Group that organises the Business Process
-responsibilities of withdrawing and retiring operational assets in
-the EnablementAndOperations x Retire context (retirement planning,
-isolation and withdrawal, decommissioning and disposal, residual
-resolution).
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -37,7 +31,7 @@ resolution).
 | 2026-09-14 | `CR-BP-66` | Initial Process Group record; the third L1 group at an | System |
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -61,11 +55,11 @@ resolution).
 | :--- | :--- | :--- |
 | `composes` | `processes:process-eo-retire-rpg6d4` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

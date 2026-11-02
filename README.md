@@ -8,6 +8,8 @@ specialization** of the OpenDEA Process kernel. Star and follow the repo
 as it evolves to meet the needs of **AI-Native Enterprise Architecture
 Transformation** (AI-NEAT).
 
+Process inputs/outputs are declared per CR-BP-94-EXT-12 (146/146 L2 records; information-typed items bridge to the information-assets catalog).
+
 The catalog supports diverse **Business Architectures** and **Business
 Operations** use cases.
 It is **one of potentially several** Process-specialization catalogs in

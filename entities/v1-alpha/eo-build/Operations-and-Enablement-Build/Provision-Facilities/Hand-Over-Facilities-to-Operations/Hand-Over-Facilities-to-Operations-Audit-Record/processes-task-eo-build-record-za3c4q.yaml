@@ -1,7 +1,7 @@
 id: processes:task-eo-build-record-za3c4q
 type: Task
 name: Hand Over Facilities to Operations Audit Record
-definition: 'The bounded unit of work within `dea:activity-handover-facilities-to-operations` (Hand Over Facilities to Operations) that carries out the record phase of the parent''s verb-object decomposition. Phase responsibility: records custodian. Phase trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity''s evidence requirements. Phase outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
+definition: 'The bounded unit of work within `processes:activity-eo-build-ds867n` (Hand Over Facilities to Operations) that carries out the record phase of the parent''s verb-object decomposition. Phase responsibility: records custodian. Phase trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity''s evidence requirements. Phase outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
 belongs_to_activity: processes:activity-eo-build-ds867n
 trigger: Confirmation issued (phase 4 complete); audit record retention may begin per parent Activity's evidence requirements.
 outcome: Audit record preserved at the specified retention tier; retrieval handles established per parent Activity's evidence discipline.

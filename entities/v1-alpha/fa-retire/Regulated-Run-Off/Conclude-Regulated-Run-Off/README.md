@@ -4,7 +4,7 @@ This directory hosts the canonical Process record for `processes:process-fa-reti
 
 **Name**: Conclude Regulated Run-Off
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,13 @@ This directory hosts the canonical Process record for `processes:process-fa-reti
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Conclude Regulated Run-Off | **Canonical ID** | `processes:process-fa-retire-wkbrsa` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
 **Intent**: manage
 
 **Definition**: (definition pending; backfill at EXT-04)
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -31,7 +31,7 @@ This directory hosts the canonical Process record for `processes:process-fa-reti
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 | 2026-10-27 | `CR-BP-GS-1` | Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under  | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -43,9 +43,9 @@ This directory hosts the canonical Process record for `processes:process-fa-reti
 | `process_classification` | object | no | object: type, provenance, status |
 | `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
-| `description` | string | no | Conclude a regulated run-off of a financial entity (insurer, mutual, or run-off portfolio) under statutory run-off oblig |
-| `trigger` | string | no | A regulator-acknowledged run-off authorisation is granted (PRA PS20/24 UK, FSB 2025, NAIC Model 901, or jurisdictional e |
-| `outcome` | string | no | The regulated run-off of the financial entity (or run-off portfolio) is executed under the controlling regulator supervi |
+| `description` | string | no | Conclude a regulated run-off of a financial entity (insurer, mutual, or run-off portfolio) under statutory run-off … |
+| `trigger` | string | no | A regulator-acknowledged run-off authorisation is granted (PRA PS20/24 UK, FSB 2025, NAIC Model 901, or jurisdictional … |
+| `outcome` | string | no | The regulated run-off of the financial entity (or run-off portfolio) is executed under the controlling regulator … |
 | `identity` | object | no | object: verb, object, scope, outcome_statement, evidence_links |
 | `relationships` | array[1] | no | array of 1 item(s) |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
@@ -57,7 +57,7 @@ This directory hosts the canonical Process record for `processes:process-fa-reti
 | `outputs` | array[1] | no | array of 1 item(s) |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -69,7 +69,7 @@ This directory hosts the canonical Process record for `processes:process-fa-reti
   - `processes:activity-fa-retire-3g3m9u`
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

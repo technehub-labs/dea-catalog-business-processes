@@ -1,7 +1,7 @@
 id: processes:task-sd-activate-confirm-t3gzny
 type: Task
 name: Activate Communications Plan Under Regulator Continuing Supervision Confirmation
-definition: 'The bounded unit of work within `dea:activity-activate-communications-plan-under-regulator-continuing-supervision` (Activate Communications Plan Under Regulator Continuing Supervision) that carries out the confirm phase of the parent''s verb-object decomposition. Phase responsibility: confirmation custodian. Phase trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued. Phase outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
+definition: 'The bounded unit of work within `processes:activity-sd-activate-jz6u3q` (Activate Communications Plan Under Regulator Continuing Supervision) that carries out the confirm phase of the parent''s verb-object decomposition. Phase responsibility: confirmation custodian. Phase trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued. Phase outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.'
 belongs_to_activity: processes:activity-sd-activate-jz6u3q
 trigger: Processing complete (phase 3); output available for downstream consumers and confirmation can be issued.
 outcome: Confirmation issued; downstream consumers notified of output availability; reconciliation against parent Activity outcome complete.

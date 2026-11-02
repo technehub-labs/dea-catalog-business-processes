@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-ac
 
 **Name**: Bring Operational Controls Live on the Regulated Billing Record
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-fa-ac
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Bring Operational Controls Live on the Regulated Billing Record | **Canonical ID** | `processes:activity-fa-activate-utzqpn` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Activate Billing Capability that brings the operational controls (segregation of duties, audit trail, reconciliation) live on the regulated billing record (insurance statutory accounting operational controls; IFRS 17 operational controls; PUC rate-effective operational controls; PSD2 settlement-account operational controls).
+**Intent and Definition**: The cohesive grouping of work within Activate Billing Capability that brings the operational controls (segregation of duties, audit trail, reconciliation) live on the regulated billing record (insurance statutory accounting operational controls; IFRS 17 operational controls; PUC rate-effective operational controls; PSD2 settlement-account operational controls).
 
-**Definition**: The cohesive grouping of work within Activate Billing Capability that brings the operational controls (segregation of duties, audit trail, reconciliation) live on the regulated billing record (insurance statutory accounting operational controls; IFRS 17 operational controls; PUC rate-effective operational controls; PSD2 settlement-account operational controls).
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-fa-ac
 | 2026-09-17 | `CR-BP-87` | Initial L3 Activity entry; lands as part of the CR-BP-87 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-bring-operational-controls-live-on-the-regulated-billing-record-intake, dea:task-bring-opera | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Activate Billing Capability that brings the operational controls (segregation of du |
+| `definition` | string | no | The cohesive grouping of work within Activate Billing Capability that brings the operational controls (segregation of … |
 | `belongs_to_business_process` | string | no | processes:process-fa-activate-bzfywk |
-| `cohesion_rationale` | string | no | Constituent work shares a single operational-controls-live-launch concern, one input class (the regulator-mandated contr |
+| `cohesion_rationale` | string | no | Constituent work shares a single operational-controls-live-launch concern, one input class (the regulator-mandated … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-ac
 | `composes` | `processes:task-fa-activate-confirm-53yqz4` | 1 |
 | `composes` | `processes:task-fa-activate-record-5nd8py` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-ac
 - **Cohesion rationale**: Constituent work shares a single operational-controls-live-launch concern, one input class (the regulator-mandated control framework and the billing-capability authorization), and one output (the operational controls live on the regulated billing record). Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

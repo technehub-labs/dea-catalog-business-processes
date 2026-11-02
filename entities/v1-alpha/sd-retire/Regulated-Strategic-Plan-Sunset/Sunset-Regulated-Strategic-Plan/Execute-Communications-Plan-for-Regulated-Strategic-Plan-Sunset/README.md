@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-re
 
 **Name**: Execute Communications Plan for Regulated Strategic Plan Sunset
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-sd-re
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Execute Communications Plan for Regulated Strategic Plan Sunset | **Canonical ID** | `processes:activity-sd-retire-r5tcp2` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Sunset Regulated Strategic Plan that executes the regulated-entity communications plan for the regulated strategic-plan sunset under the regulator's continuing supervision (the supervisor-filed communications plan; the affected business-unit notification; the regulated-entity external communications; the regulator-prescribed sunset communications; the replacement-plan status communicated to the supervisor; the regulator-acknowledged sunset on record with the supervisor).
+**Intent and Definition**: The cohesive grouping of work within Sunset Regulated Strategic Plan that executes the regulated-entity communications plan for the regulated strategic-plan sunset under the regulator's continuing supervision (the supervisor-filed communications plan; the affected business-unit notification; the regulated-entity external communications; the regulator-prescribed sunset communications; the replacement-plan status communicated to the supervisor; the regulator-acknowledged sunset on record with the supervisor).
 
-**Definition**: The cohesive grouping of work within Sunset Regulated Strategic Plan that executes the regulated-entity communications plan for the regulated strategic-plan sunset under the regulator's continuing supervision (the supervisor-filed communications plan; the affected business-unit notification; the regulated-entity external communications; the regulator-prescribed sunset communications; the replacement-plan status communicated to the supervisor; the regulator-acknowledged sunset on record with the supervisor).
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-sd-re
 | 2026-09-19 | `CR-BP-101a` | Initial L3 Activity entry; lands as part of the CR-BP-101a | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-execute-communications-plan-regulated-strategic-plan-sunset-intake, dea:task-execute-communi | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Sunset Regulated Strategic Plan that executes the regulated-entity communications p |
+| `definition` | string | no | The cohesive grouping of work within Sunset Regulated Strategic Plan that executes the regulated-entity communications … |
 | `belongs_to_business_process` | string | no | processes:process-sd-retire-umxf3c |
-| `cohesion_rationale` | string | no | Constituent work shares a single communications-plan-execution concern, one input class (the regulated strategic-plan re |
+| `cohesion_rationale` | string | no | Constituent work shares a single communications-plan-execution concern, one input class (the regulated strategic-plan … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-re
 | `composes` | `processes:task-sd-retire-confirm-d5ezgv` | 1 |
 | `composes` | `processes:task-sd-retire-record-ebsxst` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-re
 - **Cohesion rationale**: Constituent work shares a single communications-plan-execution concern, one input class (the regulated strategic-plan record plus the regulator directive or rejection notice plus the superseded-plan identification plus the filings register update), and one output (the communications plan executed under the regulator's continuing supervision with the supervisor-acknowledged sunset recorded). Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

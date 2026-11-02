@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 **Name**: Track Continuing-Competence Completion
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Track Continuing-Competence Completion | **Canonical ID** | `processes:activity-ao-operate-b5v2k9` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Operate Regulated Performance Oversight that Track continuing-competence completion for each regulator-licensed role: state bar MCLE; state healthcare CME; NAIC CE; FAA recurrent; EU AI Act Article 14 ongoing training. Shared concern: continuing-competence tracking. Input: the live role list; the continuing-competence plan. Output: the continuing-competence completion record.
+**Intent and Definition**: The cohesive grouping of work within Operate Regulated Performance Oversight that Track continuing-competence completion for each regulator-licensed role: state bar MCLE; state healthcare CME; NAIC CE; FAA recurrent; EU AI Act Article 14 ongoing training. Shared concern: continuing-competence tracking. Input: the live role list; the continuing-competence plan. Output: the continuing-competence completion record.
 
-**Definition**: The cohesive grouping of work within Operate Regulated Performance Oversight that Track continuing-competence completion for each regulator-licensed role: state bar MCLE; state healthcare CME; NAIC CE; FAA recurrent; EU AI Act Article 14 ongoing training. Shared concern: continuing-competence tracking. Input: the live role list; the continuing-competence plan. Output: the continuing-competence completion record.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -35,16 +33,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-operate-jywxqg, processes:task-ao-operate-jz9bbh, processes:task-ao-operate-svwea4, | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-operate-intake-prsqz4, processes:task-ao-operate-verify-uwg6mj, processes:task-ao-o | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Operate Regulated Performance Oversight that Track continuing-competence completion |
+| `definition` | string | no | The cohesive grouping of work within Operate Regulated Performance Oversight that Track continuing-competence … |
 | `belongs_to_business_process` | string | no | processes:process-ao-operate-ba8scr |
-| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single track continuing-compet |
+| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single track … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -58,7 +56,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 | `composes` | `processes:task-ao-operate-confirm-3hp8aa` | 1 |
 | `composes` | `processes:task-ao-operate-record-2s4xe9` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -66,7 +64,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 - **Cohesion rationale**: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single track continuing-competence completion concern, one input class, and one output (the track continuing-competence completion record on the regulated personnel record).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

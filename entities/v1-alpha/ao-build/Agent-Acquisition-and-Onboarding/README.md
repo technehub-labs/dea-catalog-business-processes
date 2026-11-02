@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-b
 
 **Name**: Agent Acquisition and Onboarding
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-b
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Agent Acquisition and Onboarding | **Canonical ID** | `processes:group-ao-build-m6fmyx` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organises the Business Process responsibilities of acquiring and onboarding agents of all substrates in the AgencyAndOrganization x Build context: sourcing and recruiting human talent, provisioning artificial agents (model deployment, API integration), onboarding and integrating agents, and building the contractor and partner-agent pool. v2.4.0 grounding (domain-grounding.md §3.3, Acquisition and Onboarding sub-concern).
+**Intent and Definition**: The bounded Process Group that organises the Business Process responsibilities of acquiring and onboarding agents of all substrates in the AgencyAndOrganization x Build context: sourcing and recruiting human talent, provisioning artificial agents (model deployment, API integration), onboarding and integrating agents, and building the contractor and partner-agent pool. v2.4.0 grounding (domain-grounding.md §3.3, Acquisition and Onboarding sub-concern).
 
-**Definition**: The bounded Process Group that organises the Business Process responsibilities of acquiring and onboarding agents of all substrates in the AgencyAndOrganization x Build context: sourcing and recruiting human talent, provisioning artificial agents (model deployment, API integration), onboarding and integrating agents, and building the contractor and partner-agent pool. v2.4.0 grounding (domain-grounding.md §3.3, Acquisition and Onboarding sub-concern).
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -30,13 +28,13 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-b
 | 2026-09-22 | `CR-BP-106` | Composes edge added for the regulator-tied Build Regulated Agent Pool BP (process-ao-build-9my4jr), admitted under CR-BP-105 escape-clause discovery outcome (ADMIT-CANONICAL). The PG retains its cell- | System |
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded Process Group that organises the Business Process responsibilities of acquiring and onboarding agents of all |
+| `definition` | string | no | The bounded Process Group that organises the Business Process responsibilities of acquiring and onboarding agents of … |
 | `process_context` | string | no | processes:pc-ao-build-pjk4rz |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[2] | no | array of 2 item(s) |
@@ -56,11 +54,11 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-b
 | `composes` | `processes:process-ao-build-b38bkg` | 1 |
 | `composes` | `processes:process-ao-build-9my4jr` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

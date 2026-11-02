@@ -1,7 +1,7 @@
 id: processes:task-sd-retire-transform-uayn6f
 type: Task
 name: Notify Affected Business Units Under Regulator Continuing Supervision Processing
-definition: 'The bounded unit of work within `dea:activity-notify-affected-business-units-regulator-continuing-supervision` (Notify Affected Business Units Under Regulator Continuing Supervision) that carries out the transform phase of the parent''s verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
+definition: 'The bounded unit of work within `processes:activity-sd-retire-8yt6ar` (Notify Affected Business Units Under Regulator Continuing Supervision) that carries out the transform phase of the parent''s verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
 belongs_to_activity: processes:activity-sd-retire-8yt6ar
 trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin.
 outcome: Output produced in the specified form per parent Activity's definition; intermediate artifacts preserved for audit.

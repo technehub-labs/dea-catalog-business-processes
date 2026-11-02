@@ -4,7 +4,7 @@ This directory hosts the canonical Process record for `processes:process-fa-desi
 
 **Name**: Design Tax Position and Strategy
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,13 @@ This directory hosts the canonical Process record for `processes:process-fa-desi
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Design Tax Position and Strategy | **Canonical ID** | `processes:process-fa-design-ds4drw` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
 **Intent**: develop
 
 **Definition**: (definition pending; backfill at EXT-04)
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -28,7 +28,7 @@ This directory hosts the canonical Process record for `processes:process-fa-desi
 | :--- | :--- | :--- | :--- |
 | 2026-10-27 | `CR-BP-GS-1` | Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under  | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -55,7 +55,7 @@ This directory hosts the canonical Process record for `processes:process-fa-desi
 | `outputs` | array[2] | no | array of 2 item(s) |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -67,7 +67,7 @@ This directory hosts the canonical Process record for `processes:process-fa-desi
   - `processes:activity-fa-design-6qvdsk`
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

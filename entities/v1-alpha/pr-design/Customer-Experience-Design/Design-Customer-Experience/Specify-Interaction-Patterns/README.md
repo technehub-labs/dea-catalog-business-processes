@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-pr-de
 
 **Name**: Specify Interaction Patterns
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-pr-de
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Specify Interaction Patterns | **Canonical ID** | `processes:activity-pr-design-4as452` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Design Customer Experience that specifies the repeatable patterns governing how interactions behave across touchpoints.
+**Intent and Definition**: The cohesive grouping of work within Design Customer Experience that specifies the repeatable patterns governing how interactions behave across touchpoints.
 
-**Definition**: The cohesive grouping of work within Design Customer Experience that specifies the repeatable patterns governing how interactions behave across touchpoints.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-pr-de
 | 2026-09-13 | `CR-BP-45` | Initial L3 Activity entry; lands as part of the CR-BP-45 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-specify-interaction-patterns-intake, dea:task-specify-interaction-patterns-verify, dea:task- | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Design Customer Experience that specifies the repeatable patterns governing how int |
+| `definition` | string | no | The cohesive grouping of work within Design Customer Experience that specifies the repeatable patterns governing how … |
 | `belongs_to_business_process` | string | no | processes:process-pr-design-pxydu3 |
-| `cohesion_rationale` | string | no | Constituent work shares a single pattern concern (recurring interaction behaviour), one reference class (touchpoint desi |
+| `cohesion_rationale` | string | no | Constituent work shares a single pattern concern (recurring interaction behaviour), one reference class (touchpoint … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-pr-de
 | `composes` | `processes:task-pr-design-confirm-tcqveq` | 1 |
 | `composes` | `processes:task-pr-design-record-rqgj7g` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-pr-de
 - **Cohesion rationale**: Constituent work shares a single pattern concern (recurring interaction behaviour), one reference class (touchpoint designs), and one artifact (the interaction pattern catalogue). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

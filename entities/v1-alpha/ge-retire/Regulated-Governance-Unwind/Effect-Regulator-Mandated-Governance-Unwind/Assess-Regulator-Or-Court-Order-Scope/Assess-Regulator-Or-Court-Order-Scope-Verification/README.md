@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-ge-retire-ver
 
 **Name**: Assess Regulator Or Court Order Scope Verification
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-ge-retire-ver
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Assess Regulator Or Court Order Scope Verification | **Canonical ID** | `processes:task-ge-retire-verify-kr8vfg` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-ge-retire-k5amzf` (Assess Regulator Or Court Order Scope) that verify the input pack against the dissolution statute (DGCL §§275-283 / UK Insolvency Act 1986 Part IV), the wind-down quorum requirements, and the retained-records custodianship contract, and emit a verification report naming any statutory deviations and their remediation.
+**Intent and Definition**: The bounded unit of work within `processes:activity-ge-retire-k5amzf` (Assess Regulator Or Court Order Scope) that verify the input pack against the dissolution statute (DGCL §§275-283 / UK Insolvency Act 1986 Part IV), the wind-down quorum requirements, and the retained-records custodianship contract, and emit a verification report naming any statutory deviations and their remediation.
 
-**Definition**: The bounded unit of work within `processes:activity-ge-retire-k5amzf` (Assess Regulator Or Court Order Scope) that verify the input pack against the dissolution statute (DGCL §§275-283 / UK Insolvency Act 1986 Part IV), the wind-down quorum requirements, and the retained-records custodianship contract, and emit a verification report naming any statutory deviations and their remediation.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Task record for `processes:task-ge-retire-ver
 | 2026-09-16 | `CR-BP-79` | Initial L3 Activity entry for dea:process-effect-regulator-mandated-governance-unwind; lands as part of the CR-BP-79 | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-ge-retire-k5amzf` (Assess Regulator Or Court Order Scope) that verif |
+| `definition` | string | no | The bounded unit of work within `processes:activity-ge-retire-k5amzf` (Assess Regulator Or Court Order Scope) that … |
 | `belongs_to_activity` | string | no | processes:activity-ge-retire-k5amzf |
-| `trigger` | string | no | Intake manifest registered for Assess Regulator Or Court Order Scope; verification gate may execute the contract and qua |
-| `outcome` | string | no | Verification certificate issued for Assess Regulator Or Court Order Scope naming verification methods applied and any de |
+| `trigger` | string | no | Intake manifest registered for Assess Regulator Or Court Order Scope; verification gate may execute the contract and … |
+| `outcome` | string | no | Verification certificate issued for Assess Regulator Or Court Order Scope naming verification methods applied and any … |
 | `responsibility` | string | no | verification custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-ge-retire-ver
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-eo-ac
 
 **Name**: Activate Operations Capability
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,7 +13,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-eo-ac
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Activate Operations Capability | **Canonical ID** | `processes:pc-eo-activate-xdfscw` |
 
-## 1. Executive Summary / Intent
+## 2. Executive Summary / Intent
 
 The regulated-operations activation work that moves an operations
 capability from regulator-authorized-but-not-live to regulator-
@@ -25,7 +25,7 @@ the supervisor's continuing-oversight relationship active, so
 that the operations capability is formally live on the regulated
 operations record under the regulator's continuing supervision.
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 - **Admission Score**: `?/10`
 - **Recommended By**: `dea:discovery-enablement-and-operations-activate-escape`
@@ -36,7 +36,7 @@ operations record under the regulator's continuing supervision.
   - Energy: FERC / Ofgem operations licensing
   - Telecommunications: FCC / Ofcom spectrum authorisation
 
-## 3. Behavioral Boundaries (Cell Charter)
+## 4. Behavioral Boundaries (Cell Charter)
 
 | Scope Type | Description |
 | :--- | :--- |
@@ -44,7 +44,7 @@ operations record under the regulator's continuing supervision.
 | Out of Scope (exclusions) | - Operations capability conception and design (EnablementAndOperations x Conceive / Design)<br>- Operations capability build and configuration (EnablementAndOperations x Build)<br>- Steady-state operations performance management (EnablementAndOperations x Operate)<br>- Operations capability decommission and deregistration (EnablementAndOperations x Retire)<br>- Non-regulated operations-capability activation (internal-product go-live without regulator's authorization) -- RECORD-PATTERN or MERGE per CR-BP-63 baseline<br>- Capabilities sourcing or licensing absent a regulator-issued authorization regime |
 | Adjacent Cells | - processes:pc-eo-build-zwkhxc (adjacent context): the Build cell handles operations-capability construction and configuration; the Activate cell governs the regulator-issued authorization step that moves the capability from authorized-but-not-live to authorized-and-live.<br>- processes:pc-eo-operate-ydqb96 (adjacent context): the Operate cell handles steady-state operations performance management; the Activate cell only governs the regulator-issued activation step.<br>- processes:pc-eo-retire-nw3ynf (adjacent context): the Retire cell handles operations-capability decommission and deregistration; the Activate cell handles the regulated live-readiness activation.<br>- processes:pc-ao-activate-kusw2u (sibling cell, CR-BP-81): the A&O Activate cell governs regulator-controlled individual-workforce mobilization; the EO Activate cell governs regulator-authorized operations-capability activation -- separate concerns (individual vs capability).<br>- processes:pc-pv-activate-f7kne7 (sibling cell, CR-BP-71-era): the PV Activate cell governs product/service transition-to-service; the EO Activate cell governs operations-capability activation under regulator-issued authorization. |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename).
 
@@ -84,7 +84,7 @@ eo-activate/
 _(Full L4 task lists for each L3 activity are available in their respective subdirectories.)_
 </details>
 
-## 5. Properties and Relationships
+## 6. Properties and Relationships
 
 **Properties**
 
@@ -94,14 +94,14 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `schema_version` | integer | no | 1 |
 | `domain` | string | no | EnablementAndOperations |
 | `lifecycle_stage` | string | no | Activate |
-| `definition` | string | no | The bounded enterprise context for **governing the activation of an operations capability whose live service is gated by |
+| `definition` | string | no | The bounded enterprise context for **governing the activation of an operations capability whose live service is gated … |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[5] | no | array of 5 item(s) |
 | `adjacent_contexts` | array[7] | no | array of 7 item(s) |
 | `processes` | array[1] | no | array of 1 item(s) |
 | `status` | string | no | candidate |
 | `process_context` | object | no | object: id, domain, lifecycle_stage, scope_summary, process_empty, lifecycle_status, status |
-| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
+| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions … |
 | `process_groups` | array[1] | no | array of 1 item(s) |
 | `admission` | object | no | object: recommended_by, recommended_at, recommended_score, carrier_cr, bp_id |
 
@@ -112,7 +112,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `process_groups` | `processes:group-eo-activate-bnmwuu` | 1 |
 | `processes` | `processes:process-eo-activate-sy5qsa` | 1 |
 
-## 6. Operational, Control and Metrics Details
+## 7. Operational, Control and Metrics Details
 
 **Inputs, Outputs and Interfaces**: _(pending; backfill at EXT-04)_
 
@@ -124,7 +124,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 
 _(Pending EXT-04)_
 
-## 7. Technical Metadata
+## 8. Technical Metadata
 
 - **Source YAML**: record YAML in the same directory as this README
 - **Record version**: 1.0.0

@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-sd-retire-ver
 
 **Name**: Receive Regulator Sunset Directive Verification
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-sd-retire-ver
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Receive Regulator Sunset Directive Verification | **Canonical ID** | `processes:task-sd-retire-verify-zte35x` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `dea:activity-receive-regulator-sunset-directive` (Receive Regulator Sunset Directive) that carries out the verify phase of the parent's verb-object decomposition. Phase responsibility: verification custodian. Phase trigger: Intake registered (phase 1 complete); verification of input against parent Activity's specification can begin. Phase outcome: Verified that the input meets parent Activity's specification; nonconformities are recorded for rejection or remediation.
+**Intent and Definition**: The bounded unit of work within `processes:activity-sd-retire-z2y3pr` (Receive Regulator Sunset Directive) that carries out the verify phase of the parent's verb-object decomposition. Phase responsibility: verification custodian. Phase trigger: Intake registered (phase 1 complete); verification of input against parent Activity's specification can begin. Phase outcome: Verified that the input meets parent Activity's specification; nonconformities are recorded for rejection or remediation.
 
-**Definition**: The bounded unit of work within `dea:activity-receive-regulator-sunset-directive` (Receive Regulator Sunset Directive) that carries out the verify phase of the parent's verb-object decomposition. Phase responsibility: verification custodian. Phase trigger: Intake registered (phase 1 complete); verification of input against parent Activity's specification can begin. Phase outcome: Verified that the input meets parent Activity's specification; nonconformities are recorded for rejection or remediation.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Task record for `processes:task-sd-retire-ver
 | 2026-09-19 | `CR-BP-101a` | Initial L3 Activity entry; lands as part of the CR-BP-101a | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `dea:activity-receive-regulator-sunset-directive` (Receive Regulator Sunset Directive) t |
+| `definition` | string | no | The bounded unit of work within `processes:activity-sd-retire-z2y3pr` (Receive Regulator Sunset Directive) that carries … |
 | `belongs_to_activity` | string | no | processes:activity-sd-retire-z2y3pr |
 | `trigger` | string | no | Intake registered (phase 1 complete); verification of input against parent Activity's specification can begin. |
-| `outcome` | string | no | Verified that the input meets parent Activity's specification; nonconformities are recorded for rejection or remediation |
+| `outcome` | string | no | Verified that the input meets parent Activity's specification; nonconformities are recorded for rejection or … |
 | `responsibility` | string | no | verification custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[2] | no | array of 2 item(s) |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-sd-retire-ver
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

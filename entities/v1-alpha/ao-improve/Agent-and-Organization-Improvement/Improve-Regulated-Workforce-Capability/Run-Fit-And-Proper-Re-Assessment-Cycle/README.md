@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 
 **Name**: Run Fit-And-Proper Re-Assessment Cycle
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Run Fit-And-Proper Re-Assessment Cycle | **Canonical ID** | `processes:activity-ao-improve-k9w5p8` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Improve Regulated Workforce Capability that Run the fit-and-proper re-assessment cycle for each regulator-licensed role: SMCR FIT annual re-assessment; state healthcare re-licensure; bar MCLE re-admission; NAIC license renewal; FAA airmen re-certification. Shared concern: fit-and-proper re-assessment. Input: the live role list; the re-assessment calendar. Output: the fit-and-proper re-assessment record.
+**Intent and Definition**: The cohesive grouping of work within Improve Regulated Workforce Capability that Run the fit-and-proper re-assessment cycle for each regulator-licensed role: SMCR FIT annual re-assessment; state healthcare re-licensure; bar MCLE re-admission; NAIC license renewal; FAA airmen re-certification. Shared concern: fit-and-proper re-assessment. Input: the live role list; the re-assessment calendar. Output: the fit-and-proper re-assessment record.
 
-**Definition**: The cohesive grouping of work within Improve Regulated Workforce Capability that Run the fit-and-proper re-assessment cycle for each regulator-licensed role: SMCR FIT annual re-assessment; state healthcare re-licensure; bar MCLE re-admission; NAIC license renewal; FAA airmen re-certification. Shared concern: fit-and-proper re-assessment. Input: the live role list; the re-assessment calendar. Output: the fit-and-proper re-assessment record.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -35,16 +33,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-improve-junqjc, processes:task-ao-improve-p7fc4g, processes:task-ao-improve-nvra9x, | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-improve-intake-2kywd9, processes:task-ao-improve-verify-gecaac, processes:task-ao-i | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Improve Regulated Workforce Capability that Run the fit-and-proper re-assessment cy |
+| `definition` | string | no | The cohesive grouping of work within Improve Regulated Workforce Capability that Run the fit-and-proper re-assessment … |
 | `belongs_to_business_process` | string | no | processes:process-ao-improve-qqxe4d |
-| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single run fit-and-proper re-a |
+| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single run fit-and-proper … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -58,7 +56,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 | `composes` | `processes:task-ao-improve-confirm-wznc2k` | 1 |
 | `composes` | `processes:task-ao-improve-record-n8grq3` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -66,7 +64,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 - **Cohesion rationale**: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single run fit-and-proper re-assessment cycle concern, one input class, and one output (the run fit-and-proper re-assessment cycle record on the regulated personnel record).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-fa-c
 
 **Name**: Financial Model Conception
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,9 +13,9 @@ This directory hosts the canonical ProcessGroup record for `processes:group-fa-c
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Financial Model Conception | **Canonical ID** | `processes:group-fa-conceive-9xzf3b` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organises the Business Process
+**Intent and Definition**: The bounded Process Group that organises the Business Process
 responsibilities of conceiving the enterprise's monetary model,
 finance strategy, and funding and capital approach in the
 FinanceAndAccounting x Conceive context. This group covers the
@@ -26,18 +26,7 @@ consequence; planning (Finance) and recording (Accounting) are
 inseparable complements, and abstract 'value' is explicitly out of
 scope.
 
-**Definition**: The bounded Process Group that organises the Business Process
-responsibilities of conceiving the enterprise's monetary model,
-finance strategy, and funding and capital approach in the
-FinanceAndAccounting x Conceive context. This group covers the
-front-end work of framing the finance strategy, the monetary model,
-and the funding and capital approach. v2.4.0 grounding
-(domain-grounding.md §3.7): the domain is scoped to monetary
-consequence; planning (Finance) and recording (Accounting) are
-inseparable complements, and abstract 'value' is explicitly out of
-scope.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -49,7 +38,7 @@ scope.
 | 2026-09-14 | `CR-BP-58` | Removed the dangling composes edge to | System |
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -78,11 +67,11 @@ scope.
 | `composes` | `processes:process-fa-operate-g9zpnq` | 1 |
 | `composes` | `processes:process-fa-improve-emqpgr` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

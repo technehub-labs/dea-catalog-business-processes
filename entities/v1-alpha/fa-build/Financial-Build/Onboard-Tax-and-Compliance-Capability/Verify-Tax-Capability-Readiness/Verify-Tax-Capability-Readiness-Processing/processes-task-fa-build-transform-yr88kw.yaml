@@ -1,7 +1,7 @@
 id: processes:task-fa-build-transform-yr88kw
 type: Task
 name: Verify Tax Capability Readiness Processing
-definition: 'The bounded unit of work within `dea:activity-verify-tax-capability-readiness` (Verify Tax Capability Readiness) that carries out the transform phase of the parent''s verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
+definition: 'The bounded unit of work within `processes:activity-fa-build-ek3cs4` (Verify Tax Capability Readiness) that carries out the transform phase of the parent''s verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
 belongs_to_activity: processes:activity-fa-build-ek3cs4
 trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin.
 outcome: Output produced in the specified form per parent Activity's definition; intermediate artifacts preserved for audit.

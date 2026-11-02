@@ -25,7 +25,7 @@ owner:
   review_due: '2026-12-31'
   decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
-description: 'Operate the Design Product and Service Propositions L2 process within the dea:pc-pv-design
+description: 'Operate the Design Product and Service Propositions L2 process within the processes:pc-pv-design-8dhwpn
   Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement
   for the testable outcome the process produces. '
 trigger: 'A product or service proposition design is needed because the framed value proposition thesis
@@ -127,7 +127,7 @@ inputs:
   type: information
   name: 'Design Product and Service Propositions: working inputs (information)'
   description: 'Derived from the record''s documented description and trigger: the process Operate the
-    Design Product and Service Propositions L2 process within the dea:pc-pv-design Cell Charter. See trigger
+    Design Product and Service Propositions L2 process within the processes:pc-pv-design-8dhwpn Cell Charter. See trigger
     and outcome for the bounded work '
   source: Record documented content (description + trigger fields)
   mandatory: true

@@ -1,7 +1,7 @@
 id: processes:task-fa-activate-transform-sek259
 type: Task
 name: Acquire Regulator-Acknowledged Accounting or Rate Framework Processing
-definition: 'The bounded unit of work within `dea:activity-acquire-regulator-acknowledged-accounting-or-rate-framework` (Acquire Regulator-Acknowledged Accounting or Rate Framework) that carries out the transform phase of the parent''s verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
+definition: 'The bounded unit of work within `processes:activity-fa-activate-63duu7` (Acquire Regulator-Acknowledged Accounting or Rate Framework) that carries out the transform phase of the parent''s verb-object decomposition. Phase responsibility: processing custodian. Phase trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin. Phase outcome: Output produced in the specified form per parent Activity''s definition; intermediate artifacts preserved for audit.'
 belongs_to_activity: processes:activity-fa-activate-63duu7
 trigger: Verified input is ready (phase 2 complete); transformation to the specified output form may begin.
 outcome: Output produced in the specified form per parent Activity's definition; intermediate artifacts preserved for audit.

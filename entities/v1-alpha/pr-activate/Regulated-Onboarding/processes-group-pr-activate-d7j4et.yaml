@@ -23,7 +23,7 @@ scope:
   - Sanctions and PEP screening; risk classification and onboarding approval
   - Onboarding refusal with recorded rationale
   excludes:
-  - Non-regulated first-time activation (handled inside dea:pc-pr-operate per register v2 doctrine)
+  - Non-regulated first-time activation (handled inside processes:pc-pr-operate-pwue5a per register v2 doctrine)
   - Steady-state relationship operation (Operate)
   - Relationship improvement and development (Improve)
   - Relationship close-out and regulated offboarding (Retire, CR-BP-67)

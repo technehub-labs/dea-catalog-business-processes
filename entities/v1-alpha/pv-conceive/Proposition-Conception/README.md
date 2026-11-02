@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pv-c
 
 **Name**: Proposition Conception
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,9 +13,9 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pv-c
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Proposition Conception | **Canonical ID** | `processes:group-pv-conceive-geej6b` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organises the Business Process
+**Intent and Definition**: The bounded Process Group that organises the Business Process
 responsibilities of conceiving the enterprise's value-bearing
 propositions in the ProductAndValue x Conceive context.
 This group covers the front-end work of framing value proposition
@@ -28,20 +28,7 @@ value-bearing entity (product, service, solution, experience,
 platform, intellectual property) that the enterprise designs,
 builds, evolves, and eventually retires.
 
-**Definition**: The bounded Process Group that organises the Business Process
-responsibilities of conceiving the enterprise's value-bearing
-propositions in the ProductAndValue x Conceive context.
-This group covers the front-end work of framing value proposition
-theses, framing portfolio direction, and framing innovation theses.
-v2.4.0 grounding (domain-grounding.md §3.5): the domain manages the
-complete lifecycle of whatever the enterprise creates, shapes,
-packages, and makes available for exchange with external parties.
-The Process Group manages the proposition as a stable subject: the
-value-bearing entity (product, service, solution, experience,
-platform, intellectual property) that the enterprise designs,
-builds, evolves, and eventually retires.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -52,7 +39,7 @@ builds, evolves, and eventually retires.
 | 2026-09-08 | `CR-BP-21c.1` | Composes edges added for the 2 remaining register v2 Conceive-cell | System |
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -78,11 +65,11 @@ builds, evolves, and eventually retires.
 | `composes` | `processes:process-pv-conceive-jb4xtg` | 1 |
 | `composes` | `processes:process-pv-conceive-kps544` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-pr-ac
 
 **Name**: Verify Party Identity
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-pr-ac
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Verify Party Identity | **Canonical ID** | `processes:activity-pr-activate-y46zs2` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Onboard Regulated Party Relationship that establishes the applicant's identity to the standard required by the controlling KYC/AML regime, including the collection and verification of identity documents, electronic identity checks, and corroborating independent sources.
+**Intent and Definition**: The cohesive grouping of work within Onboard Regulated Party Relationship that establishes the applicant's identity to the standard required by the controlling KYC/AML regime, including the collection and verification of identity documents, electronic identity checks, and corroborating independent sources.
 
-**Definition**: The cohesive grouping of work within Onboard Regulated Party Relationship that establishes the applicant's identity to the standard required by the controlling KYC/AML regime, including the collection and verification of identity documents, electronic identity checks, and corroborating independent sources.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-pr-ac
 | 2026-09-16 | `CR-BP-77` | Initial L3 Activity entry; lands as part of the CR-BP-77 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-verify-party-identity-intake, dea:task-verify-party-identity-verify, dea:task-verify-party-i | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Onboard Regulated Party Relationship that establishes the applicant's identity to t |
+| `definition` | string | no | The cohesive grouping of work within Onboard Regulated Party Relationship that establishes the applicant's identity to … |
 | `belongs_to_business_process` | string | no | processes:process-pr-activate-6qzuve |
-| `cohesion_rationale` | string | no | Constituent work shares a single identity verification concern, one input class (the applicant's claimed identity attrib |
+| `cohesion_rationale` | string | no | Constituent work shares a single identity verification concern, one input class (the applicant's claimed identity … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-pr-ac
 | `composes` | `processes:task-pr-activate-confirm-sdmssx` | 1 |
 | `composes` | `processes:task-pr-activate-record-pr8yj4` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-pr-ac
 - **Cohesion rationale**: Constituent work shares a single identity verification concern, one input class (the applicant's claimed identity attributes and the documents and electronic traces supporting them), and one output (a verified identity record with verification method and confidence rating). Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

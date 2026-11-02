@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-pr-co
 
 **Name**: Commit Market and Demand Thesis
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-pr-co
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Commit Market and Demand Thesis | **Canonical ID** | `processes:activity-pr-conceive-hx3r6g` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Develop Market Intelligence that consolidates scans, hypotheses, and test plans into the committed market and demand thesis.
+**Intent and Definition**: The cohesive grouping of work within Develop Market Intelligence that consolidates scans, hypotheses, and test plans into the committed market and demand thesis.
 
-**Definition**: The cohesive grouping of work within Develop Market Intelligence that consolidates scans, hypotheses, and test plans into the committed market and demand thesis.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-pr-co
 | 2026-09-13 | `CR-BP-45` | Initial L3 Activity entry; lands as part of the CR-BP-45 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-commit-market-demand-thesis-intake, dea:task-commit-market-demand-thesis-verify, dea:task-co | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Develop Market Intelligence that consolidates scans, hypotheses, and test plans int |
+| `definition` | string | no | The cohesive grouping of work within Develop Market Intelligence that consolidates scans, hypotheses, and test plans … |
 | `belongs_to_business_process` | string | no | processes:process-pr-conceive-tvst8u |
-| `cohesion_rationale` | string | no | Constituent work shares a single consolidation-and-commitment concern, one artifact (the thesis document), and a common  |
+| `cohesion_rationale` | string | no | Constituent work shares a single consolidation-and-commitment concern, one artifact (the thesis document), and a common … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-pr-co
 | `composes` | `processes:task-pr-conceive-confirm-gahdj2` | 1 |
 | `composes` | `processes:task-pr-conceive-record-fxqb34` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-pr-co
 - **Cohesion rationale**: Constituent work shares a single consolidation-and-commitment concern, one artifact (the thesis document), and a common terminus (readiness for design). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

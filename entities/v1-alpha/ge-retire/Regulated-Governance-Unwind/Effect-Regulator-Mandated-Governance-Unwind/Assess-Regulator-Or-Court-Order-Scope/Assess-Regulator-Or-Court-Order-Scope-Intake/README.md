@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-ge-retire-int
 
 **Name**: Assess Regulator Or Court Order Scope Intake
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-ge-retire-int
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Assess Regulator Or Court Order Scope Intake | **Canonical ID** | `processes:task-ge-retire-intake-ztxh6t` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-ge-retire-k5amzf` (Assess Regulator Or Court Order Scope) that accept custody of the wind-down input pack (regulator or court order reference, retained-records inventory, dissolution-filing drafts) and persist a registered intake manifest binding the inputs to the wind-down case file.
+**Intent and Definition**: The bounded unit of work within `processes:activity-ge-retire-k5amzf` (Assess Regulator Or Court Order Scope) that accept custody of the wind-down input pack (regulator or court order reference, retained-records inventory, dissolution-filing drafts) and persist a registered intake manifest binding the inputs to the wind-down case file.
 
-**Definition**: The bounded unit of work within `processes:activity-ge-retire-k5amzf` (Assess Regulator Or Court Order Scope) that accept custody of the wind-down input pack (regulator or court order reference, retained-records inventory, dissolution-filing drafts) and persist a registered intake manifest binding the inputs to the wind-down case file.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Task record for `processes:task-ge-retire-int
 | 2026-09-16 | `CR-BP-79` | Initial L3 Activity entry for dea:process-effect-regulator-mandated-governance-unwind; lands as part of the CR-BP-79 | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-ge-retire-k5amzf` (Assess Regulator Or Court Order Scope) that accep |
+| `definition` | string | no | The bounded unit of work within `processes:activity-ge-retire-k5amzf` (Assess Regulator Or Court Order Scope) that … |
 | `belongs_to_activity` | string | no | processes:activity-ge-retire-k5amzf |
-| `trigger` | string | no | Custody of the Retire-stage input pack for Assess Regulator Or Court Order Scope ready for intake; predecessor phase has |
-| `outcome` | string | no | Intake manifest registered and bound to the Assess Regulator Or Court Order Scope case file; registered intake custodian |
+| `trigger` | string | no | Custody of the Retire-stage input pack for Assess Regulator Or Court Order Scope ready for intake; predecessor phase … |
+| `outcome` | string | no | Intake manifest registered and bound to the Assess Regulator Or Court Order Scope case file; registered intake … |
 | `responsibility` | string | no | intake custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-ge-retire-int
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

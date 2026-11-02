@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-a
 
 **Name**: Regulated Strategic Plan Activation
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,9 +13,9 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-a
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Regulated Strategic Plan Activation | **Canonical ID** | `processes:group-sd-activate-mbw9cc` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organises the Business Process
+**Intent and Definition**: The bounded Process Group that organises the Business Process
 responsibilities of moving a regulated entity's strategic plan from
 board-approved-but-not-live to supervisor-acknowledged-and-live in
 the StrategyAndDirection x Activate context where supervisor-
@@ -26,22 +26,11 @@ bank recovery and resolution plan activation) creates a distinct
 group-level activation concern separate from strategy build and
 from steady-state strategy execution.
 
-**Definition**: The bounded Process Group that organises the Business Process
-responsibilities of moving a regulated entity's strategic plan from
-board-approved-but-not-live to supervisor-acknowledged-and-live in
-the StrategyAndDirection x Activate context where supervisor-
-acknowledged strategic-plan filing (Basel ICAAP / SAA approval;
-BRRD recovery-plan activation; NHS trust 5-year strategy
-approval; PUC integrated resource plan and strategic-plan filing;
-bank recovery and resolution plan activation) creates a distinct
-group-level activation concern separate from strategy build and
-from steady-state strategy execution.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 (governance and provenance to be backfilled at EXT-04)
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -64,11 +53,11 @@ from steady-state strategy execution.
 | :--- | :--- | :--- |
 | `composes` | `processes:process-sd-activate-s9m34e` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

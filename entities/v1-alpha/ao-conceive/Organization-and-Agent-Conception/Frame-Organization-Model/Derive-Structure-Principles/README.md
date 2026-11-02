@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 
 **Name**: Derive Structure Principles
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Derive Structure Principles | **Canonical ID** | `processes:activity-ao-conceive-5fytar` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Frame Organization Model that derives the structure principles the framed model will enforce from the committed organization and agent strategy.
+**Intent and Definition**: The cohesive grouping of work within Frame Organization Model that derives the structure principles the framed model will enforce from the committed organization and agent strategy.
 
-**Definition**: The cohesive grouping of work within Frame Organization Model that derives the structure principles the framed model will enforce from the committed organization and agent strategy.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 | 2026-09-14 | `CR-BP-56` | Initial L3 Activity entry; lands as part of the CR-BP-56 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-derive-structure-principles-intake, dea:task-derive-structure-principles-verify, dea:task-de | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Frame Organization Model that derives the structure principles the framed model wil |
+| `definition` | string | no | The cohesive grouping of work within Frame Organization Model that derives the structure principles the framed model … |
 | `belongs_to_business_process` | string | no | processes:process-ao-conceive-ruxjvh |
-| `cohesion_rationale` | string | no | Constituent work shares a single derivation concern (structure principles drawn from the committed strategy), one input  |
+| `cohesion_rationale` | string | no | Constituent work shares a single derivation concern (structure principles drawn from the committed strategy), one input … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 | `composes` | `processes:task-ao-conceive-confirm-umqt6v` | 1 |
 | `composes` | `processes:task-ao-conceive-record-5v86ga` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 - **Cohesion rationale**: Constituent work shares a single derivation concern (structure principles drawn from the committed strategy), one input class (the committed organization and agent strategy), and one output (the derived structure principles). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

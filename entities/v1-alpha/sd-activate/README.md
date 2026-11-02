@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-sd-ac
 
 **Name**: Institutionalize Regulated Strategic Plan
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,7 +13,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-sd-ac
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Institutionalize Regulated Strategic Plan | **Canonical ID** | `processes:pc-sd-activate-ghaub8` |
 
-## 1. Executive Summary / Intent
+## 2. Executive Summary / Intent
 
 The regulated-strategic-plan activation work that moves a board-
 approved strategic plan from board-approved-but-not-live to
@@ -26,7 +26,7 @@ regulator's continuing supervision, so that the strategic
 plan is formally live on the regulated strategic-plan record
 under the supervisor's continuing oversight.
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 - **Admission Score**: `?/10`
 - **Recommended By**: `dea:discovery-strategy-and-direction-activate-escape`
@@ -36,7 +36,7 @@ under the supervisor's continuing oversight.
   - Privacy: GDPR (EU) / CCPA (California) / PIPEDA (Canada)
   - Healthcare: HIPAA (US) / NHS Data Security and Protection Toolkit
 
-## 3. Behavioral Boundaries (Cell Charter)
+## 4. Behavioral Boundaries (Cell Charter)
 
 | Scope Type | Description |
 | :--- | :--- |
@@ -44,7 +44,7 @@ under the supervisor's continuing oversight.
 | Out of Scope (exclusions) | - Strategic-plan conception, design, and build (StrategyAndDirection x Conceive / Design / Build)<br>- Steady-state strategy execution and performance review (StrategyAndDirection x Operate / Improve)<br>- Strategic-plan sunset under regulatory mandate (StrategyAndDirection x Retire; CR-BP-80 escape record documented DEFER without admission)<br>- Non-regulated strategic-plan launch (single-business-unit rollout without supervisor's review) -- RECORD-PATTERN or MERGE per CR-BP-63 baseline<br>- Strategic plans absent a supervisor-acknowledged filing regime |
 | Adjacent Cells | - processes:pc-sd-build-gmzrrm (adjacent context): the Build cell handles strategic-plan construction and approval; the Activate cell governs the supervisor-acknowledged activation step that moves the plan from board-approved-but-not-live to supervisor-acknowledged-and-live.<br>- processes:pc-sd-operate-5cs5ee (adjacent context): the Operate cell handles steady-state strategy execution and performance management; the Activate cell only governs the supervisor-acknowledged activation step.<br>- processes:pc-sd-retire-zxnc3c (adjacent context): the Retire cell at SD handles strategic-plan sunset under regulatory mandate (CR-BP-80 escape record documented DEFER without admission); the Activate cell handles the regulated live-readiness activation of a strategic plan.<br>- processes:pc-ao-activate-kusw2u (sibling cell, CR-BP-81): the A&O Activate cell governs regulator-controlled individual-workforce mobilization; the SD Activate cell governs supervisor-acknowledged strategic-plan activation -- separate concerns (individual vs strategic plan).<br>- processes:pc-eo-activate-xdfscw (sibling cell, CR-BP-82): the OE Activate cell governs regulator-authorized operations-capability activation; the SD Activate cell governs supervisor-acknowledged strategic-plan activation -- separate concerns (operations vs strategic plan).<br>- processes:pc-fa-activate-yrhcfm (sibling cell, CR-BP-83): the FA Activate cell governs regulator-acknowledged billing-capability activation; the SD Activate cell governs supervisor-acknowledged strategic-plan activation -- separate concerns (billing vs strategic plan). |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename).
 
@@ -84,7 +84,7 @@ sd-activate/
 _(Full L4 task lists for each L3 activity are available in their respective subdirectories.)_
 </details>
 
-## 5. Properties and Relationships
+## 6. Properties and Relationships
 
 **Properties**
 
@@ -94,14 +94,14 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `schema_version` | integer | no | 1 |
 | `domain` | string | no | StrategyAndDirection |
 | `lifecycle_stage` | string | no | Activate |
-| `definition` | string | no | The bounded enterprise context for **governing the activation of a regulated entity's strategic plan whose live executio |
+| `definition` | string | no | The bounded enterprise context for **governing the activation of a regulated entity's strategic plan whose live … |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[5] | no | array of 5 item(s) |
 | `adjacent_contexts` | array[6] | no | array of 6 item(s) |
 | `processes` | array[1] | no | array of 1 item(s) |
 | `status` | string | no | candidate |
 | `process_context` | object | no | object: id, domain, lifecycle_stage, scope_summary, process_empty, lifecycle_status, status |
-| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
+| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions … |
 | `process_groups` | array[1] | no | array of 1 item(s) |
 | `admission` | object | no | object: recommended_by, recommended_at, recommended_score, carrier_cr, bp_id |
 
@@ -112,7 +112,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `process_groups` | `processes:group-sd-activate-mbw9cc` | 1 |
 | `processes` | `processes:process-sd-activate-s9m34e` | 1 |
 
-## 6. Operational, Control and Metrics Details
+## 7. Operational, Control and Metrics Details
 
 **Inputs, Outputs and Interfaces**: _(pending; backfill at EXT-04)_
 
@@ -124,7 +124,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 
 _(Pending EXT-04)_
 
-## 7. Technical Metadata
+## 8. Technical Metadata
 
 - **Source YAML**: record YAML in the same directory as this README
 - **Record version**: 1.0.0

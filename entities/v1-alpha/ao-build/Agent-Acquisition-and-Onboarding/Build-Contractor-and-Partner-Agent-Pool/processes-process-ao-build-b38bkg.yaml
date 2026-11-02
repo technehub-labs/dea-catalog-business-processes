@@ -25,7 +25,7 @@ owner:
   review_due: '2026-12-31'
   decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
-description: 'Operate the Build Contractor and Partner-Agent Pool L2 process within the dea:pc-ao-build
+description: 'Operate the Build Contractor and Partner-Agent Pool L2 process within the processes:pc-ao-build-pjk4rz
   Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement
   for the testable outcome the process produces. '
 trigger: 'A contractor and partner-agent pool build is needed because direct acquisition cannot serve
@@ -124,7 +124,7 @@ inputs:
   type: business_object
   name: 'Build Contractor and Partner-Agent Pool: working inputs (business_object)'
   description: 'Derived from the record''s documented description and trigger: the process Operate the
-    Build Contractor and Partner-Agent Pool L2 process within the dea:pc-ao-build Cell Charter. See trigger
+    Build Contractor and Partner-Agent Pool L2 process within the processes:pc-ao-build-pjk4rz Cell Charter. See trigger
     and outcome for the bounded work t'
   source: Record documented content (description + trigger fields)
   mandatory: true

@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 
 **Name**: Integrate Agents into Organization
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Integrate Agents into Organization | **Canonical ID** | `processes:activity-ao-build-khtsgv` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Acquire and Onboard Agents that integrates the onboarded agents into the organization's teams and coordination patterns.
+**Intent and Definition**: The cohesive grouping of work within Acquire and Onboard Agents that integrates the onboarded agents into the organization's teams and coordination patterns.
 
-**Definition**: The cohesive grouping of work within Acquire and Onboard Agents that integrates the onboarded agents into the organization's teams and coordination patterns.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 | 2026-09-14 | `CR-BP-56` | Initial L3 Activity entry; lands as part of the CR-BP-56 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-integrate-agents-into-organization-intake, dea:task-integrate-agents-into-organization-verif | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Acquire and Onboard Agents that integrates the onboarded agents into the organizati |
+| `definition` | string | no | The cohesive grouping of work within Acquire and Onboard Agents that integrates the onboarded agents into the … |
 | `belongs_to_business_process` | string | no | processes:process-ao-build-w2qurd |
-| `cohesion_rationale` | string | no | Constituent work shares a single integration concern (onboarded agents placed into teams and coordination patterns), one |
+| `cohesion_rationale` | string | no | Constituent work shares a single integration concern (onboarded agents placed into teams and coordination patterns) … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 | `composes` | `processes:task-ao-build-confirm-atwary` | 1 |
 | `composes` | `processes:task-ao-build-record-72ph2w` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 - **Cohesion rationale**: Constituent work shares a single integration concern (onboarded agents placed into teams and coordination patterns), one input class (the onboarded agents), and one output (the integrated agents). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

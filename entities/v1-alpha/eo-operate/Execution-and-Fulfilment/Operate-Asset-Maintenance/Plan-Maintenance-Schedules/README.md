@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 **Name**: Plan Maintenance Schedules
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Plan Maintenance Schedules | **Canonical ID** | `processes:activity-eo-operate-eadndb` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Operate Asset Maintenance that converts asset condition, usage, and manufacturer guidance into the scheduled maintenance plan.
+**Intent and Definition**: The cohesive grouping of work within Operate Asset Maintenance that converts asset condition, usage, and manufacturer guidance into the scheduled maintenance plan.
 
-**Definition**: The cohesive grouping of work within Operate Asset Maintenance that converts asset condition, usage, and manufacturer guidance into the scheduled maintenance plan.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 | 2026-09-13 | `CR-BP-43` | Initial L3 Activity entry; lands as part of the CR-BP-43 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-plan-maintenance-schedules-intake, dea:task-plan-maintenance-schedules-verify, dea:task-plan | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Operate Asset Maintenance that converts asset condition, usage, and manufacturer gu |
+| `definition` | string | no | The cohesive grouping of work within Operate Asset Maintenance that converts asset condition, usage, and manufacturer … |
 | `belongs_to_business_process` | string | no | processes:process-eo-operate-j9cjzz |
-| `cohesion_rationale` | string | no | Constituent work shares a single planning concern (asset demand to maintenance schedule), one input class (asset registe |
+| `cohesion_rationale` | string | no | Constituent work shares a single planning concern (asset demand to maintenance schedule), one input class (asset … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 | `composes` | `processes:task-eo-operate-confirm-rpmwk2` | 1 |
 | `composes` | `processes:task-eo-operate-record-y3eqh5` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 - **Cohesion rationale**: Constituent work shares a single planning concern (asset demand to maintenance schedule), one input class (asset register, condition and usage data), and one output (the maintenance schedule). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

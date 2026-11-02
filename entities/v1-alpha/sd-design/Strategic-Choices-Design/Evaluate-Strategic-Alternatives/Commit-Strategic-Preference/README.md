@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-de
 
 **Name**: Commit Strategic Preference
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-sd-de
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Commit Strategic Preference | **Canonical ID** | `processes:activity-sd-design-r7hq2f` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Evaluate Strategic Alternatives that commits the preferred strategic option as the strategic choice for downstream plan build.
+**Intent and Definition**: The cohesive grouping of work within Evaluate Strategic Alternatives that commits the preferred strategic option as the strategic choice for downstream plan build.
 
-**Definition**: The cohesive grouping of work within Evaluate Strategic Alternatives that commits the preferred strategic option as the strategic choice for downstream plan build.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-sd-de
 | 2026-09-13 | `CR-BP-54` | Initial L3 Activity entry; lands as part of the CR-BP-54 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-commit-strategic-preference-intake, dea:task-commit-strategic-preference-verify, dea:task-co | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Evaluate Strategic Alternatives that commits the preferred strategic option as the  |
+| `definition` | string | no | The cohesive grouping of work within Evaluate Strategic Alternatives that commits the preferred strategic option as the … |
 | `belongs_to_business_process` | string | no | processes:process-sd-design-ed7jd5 |
-| `cohesion_rationale` | string | no | Constituent work shares a single commitment concern (preferred option to committed choice), one reference class (the art |
+| `cohesion_rationale` | string | no | Constituent work shares a single commitment concern (preferred option to committed choice), one reference class (the … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-de
 | `composes` | `processes:task-sd-design-confirm-th8wjc` | 1 |
 | `composes` | `processes:task-sd-design-record-g5pnx2` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-de
 - **Cohesion rationale**: Constituent work shares a single commitment concern (preferred option to committed choice), one reference class (the articulated preference), and one output (the committed strategic choice). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

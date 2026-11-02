@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 **Name**: Plan Quality Inspection
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Plan Quality Inspection | **Canonical ID** | `processes:activity-eo-operate-ywjabj` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Operate Quality Control that establishes what, how, and when production output will be inspected: selecting the sampling scheme, resolving the applicable specification and tolerances, and scheduling the inspection for each batch.
+**Intent and Definition**: The cohesive grouping of work within Operate Quality Control that establishes what, how, and when production output will be inspected: selecting the sampling scheme, resolving the applicable specification and tolerances, and scheduling the inspection for each batch.
 
-**Definition**: The cohesive grouping of work within Operate Quality Control that establishes what, how, and when production output will be inspected: selecting the sampling scheme, resolving the applicable specification and tolerances, and scheduling the inspection for each batch.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 | 2026-09-13 | `CR-BP-42` | Initial L3 Activity entry; first Activity deposition in the catalog | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-plan-quality-inspection-intake, dea:task-plan-quality-inspection-verify, dea:task-plan-quali | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Operate Quality Control that establishes what, how, and when production output will |
+| `definition` | string | no | The cohesive grouping of work within Operate Quality Control that establishes what, how, and when production output … |
 | `belongs_to_business_process` | string | no | processes:process-eo-operate-44jsrp |
-| `cohesion_rationale` | string | no | Constituent work shares a single planning concern (preparing inspection of a batch before any measurement exists), draws |
+| `cohesion_rationale` | string | no | Constituent work shares a single planning concern (preparing inspection of a batch before any measurement exists) … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 | `composes` | `processes:task-eo-operate-confirm-s9ghmg` | 1 |
 | `composes` | `processes:task-eo-operate-record-3z5qwn` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 - **Cohesion rationale**: Constituent work shares a single planning concern (preparing inspection of a batch before any measurement exists), draws on the same inputs (specifications, sampling standards, production schedule), and produces one recognizable portion of the parent outcome (an executable inspection plan). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6; research/l3-candidate-universe.yaml).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

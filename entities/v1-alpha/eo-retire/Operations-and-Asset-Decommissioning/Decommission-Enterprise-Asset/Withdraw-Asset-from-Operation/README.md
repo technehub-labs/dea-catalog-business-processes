@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-eo-re
 
 **Name**: Withdraw Asset from Operation
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-eo-re
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Withdraw Asset from Operation | **Canonical ID** | `processes:activity-eo-retire-h2dzg3` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Decommission Enterprise Asset that shuts down, disconnects and isolates the asset from operational service.
+**Intent and Definition**: The cohesive grouping of work within Decommission Enterprise Asset that shuts down, disconnects and isolates the asset from operational service.
 
-**Definition**: The cohesive grouping of work within Decommission Enterprise Asset that shuts down, disconnects and isolates the asset from operational service.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-eo-re
 | 2026-09-15 | `CR-BP-69` | Initial L3 Activity entry; lands as part of the CR-BP-69 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-withdraw-asset-from-operation-intake, dea:task-withdraw-asset-from-operation-verify, dea:tas | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Decommission Enterprise Asset that shuts down, disconnects and isolates the asset f |
+| `definition` | string | no | The cohesive grouping of work within Decommission Enterprise Asset that shuts down, disconnects and isolates the asset … |
 | `belongs_to_business_process` | string | no | processes:process-eo-retire-rpg6d4 |
-| `cohesion_rationale` | string | no | Constituent work shares a single operational withdrawal concern, one input class (the asset retirement plan), and one ou |
+| `cohesion_rationale` | string | no | Constituent work shares a single operational withdrawal concern, one input class (the asset retirement plan), and one … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-eo-re
 | `composes` | `processes:task-eo-retire-confirm-xgywnk` | 1 |
 | `composes` | `processes:task-eo-retire-record-f6ppym` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-eo-re
 - **Cohesion rationale**: Constituent work shares a single operational withdrawal concern, one input class (the asset retirement plan), and one output (the asset withdrawn from operation). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

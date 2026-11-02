@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 
 **Name**: Bound Capacity Envelopes
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Bound Capacity Envelopes | **Canonical ID** | `processes:activity-ao-conceive-9mvxt3` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Conceive Workforce and Agent Mix that bounds the capacity envelopes each substrate proportion must operate within.
+**Intent and Definition**: The cohesive grouping of work within Conceive Workforce and Agent Mix that bounds the capacity envelopes each substrate proportion must operate within.
 
-**Definition**: The cohesive grouping of work within Conceive Workforce and Agent Mix that bounds the capacity envelopes each substrate proportion must operate within.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 | 2026-09-14 | `CR-BP-56` | Initial L3 Activity entry; lands as part of the CR-BP-56 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-bound-capacity-envelopes-intake, dea:task-bound-capacity-envelopes-verify, dea:task-bound-ca | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Conceive Workforce and Agent Mix that bounds the capacity envelopes each substrate  |
+| `definition` | string | no | The cohesive grouping of work within Conceive Workforce and Agent Mix that bounds the capacity envelopes each substrate … |
 | `belongs_to_business_process` | string | no | processes:process-ao-conceive-z6m6p5 |
-| `cohesion_rationale` | string | no | Constituent work shares a single bounding concern (capacity envelopes per substrate proportion), one input class (the bo |
+| `cohesion_rationale` | string | no | Constituent work shares a single bounding concern (capacity envelopes per substrate proportion), one input class (the … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 | `composes` | `processes:task-ao-conceive-confirm-mqn6wa` | 1 |
 | `composes` | `processes:task-ao-conceive-record-4npvpq` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 - **Cohesion rationale**: Constituent work shares a single bounding concern (capacity envelopes per substrate proportion), one input class (the bounded substrate proportions), and one output (the bounded capacity envelopes). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

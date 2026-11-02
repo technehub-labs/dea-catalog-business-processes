@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pv-re
 
 **Name**: Proposition Retirement and Service Withdrawal
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,16 +13,16 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pv-re
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Proposition Retirement and Service Withdrawal | **Canonical ID** | `processes:pc-pv-retire-eeck6d` |
 
-## 1. Executive Summary / Intent
+## 2. Executive Summary / Intent
 
 The retirement-stage work of withdrawal planning, stakeholder
 transition, and removal of propositions from operational reliance.
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 (governance and provenance to be backfilled at EXT-04)
 
-## 3. Behavioral Boundaries (Cell Charter)
+## 4. Behavioral Boundaries (Cell Charter)
 
 | Scope Type | Description |
 | :--- | :--- |
@@ -30,7 +30,7 @@ transition, and removal of propositions from operational reliance.
 | Out of Scope (exclusions) | - Steady-state proposition operation (Operate stage; adjacent context)<br>- Proposition improvement (Improve stage; adjacent context)<br>- Physical asset decommissioning (enablement-operations x retire; adjacent domain)<br>- Post-exit obligation closure work (Operate/Improve; adjacent contexts) |
 | Adjacent Cells | - processes:pc-pv-operate-ewpwjc (adjacent context): the retirement decision ends steady-state operation.<br>- processes:pc-pv-improve-wpyfx7 (adjacent context): post-exit obligation closure continues there.<br>- processes:pc-pv-activate-f7kne7 (adjacent context): the entry-side transition counterpart of this cell. |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename).
 
@@ -70,7 +70,7 @@ pv-retire/
 _(Full L4 task lists for each L3 activity are available in their respective subdirectories.)_
 </details>
 
-## 5. Properties and Relationships
+## 6. Properties and Relationships
 
 **Properties**
 
@@ -83,7 +83,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `outcomes` | array[3] | no | array of 3 item(s) |
 | `adjacent_contexts` | array[6] | no | array of 6 item(s) |
 | `processes` | array[1] | no | array of 1 item(s) |
-| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
+| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions … |
 | `status` | string | no | candidate |
 | `established_by` | string | no | CR-BP-64 |
 | `established_at` | string | no | 2026-09-14 |
@@ -96,7 +96,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | :--- | :--- | :--- |
 | `processes` | `processes:process-pv-retire-6us5am` | 1 |
 
-## 6. Operational, Control and Metrics Details
+## 7. Operational, Control and Metrics Details
 
 **Inputs, Outputs and Interfaces**: _(pending; backfill at EXT-04)_
 
@@ -108,7 +108,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 
 _(Pending EXT-04)_
 
-## 7. Technical Metadata
+## 8. Technical Metadata
 
 - **Source YAML**: record YAML in the same directory as this README
 - **Record version**: 1.0.0

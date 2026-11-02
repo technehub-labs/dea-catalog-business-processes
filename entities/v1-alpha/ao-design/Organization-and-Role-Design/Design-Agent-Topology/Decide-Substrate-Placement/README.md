@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 
 **Name**: Decide Substrate Placement
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Decide Substrate Placement | **Canonical ID** | `processes:activity-ao-design-h3q5rc` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Design Agent Topology that decides the human, artificial, or hybrid placement of each classified candidate.
+**Intent and Definition**: The cohesive grouping of work within Design Agent Topology that decides the human, artificial, or hybrid placement of each classified candidate.
 
-**Definition**: The cohesive grouping of work within Design Agent Topology that decides the human, artificial, or hybrid placement of each classified candidate.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 | 2026-09-14 | `CR-BP-56` | Initial L3 Activity entry; lands as part of the CR-BP-56 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-decide-substrate-placement-intake, dea:task-decide-substrate-placement-verify, dea:task-deci | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Design Agent Topology that decides the human, artificial, or hybrid placement of ea |
+| `definition` | string | no | The cohesive grouping of work within Design Agent Topology that decides the human, artificial, or hybrid placement of … |
 | `belongs_to_business_process` | string | no | processes:process-ao-design-8fzp2b |
-| `cohesion_rationale` | string | no | Constituent work shares a single decision concern (substrate placement per classified candidate), one input class (the c |
+| `cohesion_rationale` | string | no | Constituent work shares a single decision concern (substrate placement per classified candidate), one input class (the … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 | `composes` | `processes:task-ao-design-confirm-ekthzw` | 1 |
 | `composes` | `processes:task-ao-design-record-asz7z4` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 - **Cohesion rationale**: Constituent work shares a single decision concern (substrate placement per classified candidate), one input class (the classified placement candidates), and one output (the decided substrate placements). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-ge-re
 
 **Name**: Governance Unwind
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,7 +13,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-ge-re
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Governance Unwind | **Canonical ID** | `processes:pc-ge-retire-kndw6x` |
 
-## 1. Executive Summary / Intent
+## 2. Executive Summary / Intent
 
 The regulator- or court-mandated governance unwind work that
 moves an enterprise governance regime from active operation to a
@@ -24,11 +24,11 @@ of authorisation or cancellation of permission, with retained-
 records custodianship assigned per the service-of-process
 regime.
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 (governance and provenance to be backfilled at EXT-04)
 
-## 3. Behavioral Boundaries (Cell Charter)
+## 4. Behavioral Boundaries (Cell Charter)
 
 | Scope Type | Description |
 | :--- | :--- |
@@ -36,7 +36,7 @@ regime.
 | Out of Scope (exclusions) | - Voluntary governance sunset absent regulator or court mandate (GovernanceAndExistence x Improve per CR-BP-63)<br>- Asset retirement and decommissioning (EnablementAndOperations x Retire; CR-BP-66)<br>- Counterparty and agent relationship closure (PartyAndRelationship x Retire; CR-BP-67)<br>- Product line retirement (ProductAndValue x Retire; CR-BP-67 adjacent)<br>- Workforce wind-down under statutory mass-layoff thresholds (AgencyAndOrganization x Retire; CR-BP-73)<br>- Regulated entity run-off (FinanceAndAccounting x Retire; CR-BP-75) |
 | Adjacent Cells | - Voluntary governance sunset (GovernanceAndExistence x Improve; CR-BP-63) is out of scope: the trigger is regulator or court mandate, not an enterprise-internal governance decision.<br>- Asset retirement and decommissioning (EnablementAndOperations x Retire; CR-BP-66) is out of scope: this PC governs the governance regime, not the asset base.<br>- Counterparty and agent relationship closure (PartyAndRelationship x Retire; CR-BP-67) is out of scope: this PC governs the governance regime, not the counterparty base.<br>- Workforce wind-down under statutory mass-layoff thresholds (AgencyAndOrganization x Retire; CR-BP-73) is out of scope: this PC governs the governance regime, not the workforce.<br>- Regulated entity run-off (FinanceAndAccounting x Retire; CR-BP-75) is out of scope: this PC governs the governance regime, not the financial run-off accounting basis. |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename).
 
@@ -76,7 +76,7 @@ ge-retire/
 _(Full L4 task lists for each L3 activity are available in their respective subdirectories.)_
 </details>
 
-## 5. Properties and Relationships
+## 6. Properties and Relationships
 
 **Properties**
 
@@ -86,14 +86,14 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `schema_version` | integer | no | 1 |
 | `domain` | string | no | GovernanceAndExistence |
 | `lifecycle_stage` | string | no | Retire |
-| `definition` | string | no | The bounded enterprise context for **governing the wind-down of governance bodies, policy regimes, mandates, and constit |
+| `definition` | string | no | The bounded enterprise context for **governing the wind-down of governance bodies, policy regimes, mandates, and … |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[5] | no | array of 5 item(s) |
 | `adjacent_contexts` | array[5] | no | array of 5 item(s) |
 | `processes` | array[1] | no | array of 1 item(s) |
 | `status` | string | no | candidate |
 | `process_context` | object | no | object: id, domain, lifecycle_stage, scope_summary, process_empty, lifecycle_status, status |
-| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
+| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions … |
 | `process_groups` | array[1] | no | array of 1 item(s) |
 | `change_history` | array[1] | no | array of 1 item(s) |
 
@@ -104,7 +104,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `process_groups` | `processes:group-ge-retire-v3vy7t` | 1 |
 | `processes` | `processes:process-ge-retire-mjq5hg` | 1 |
 
-## 6. Operational, Control and Metrics Details
+## 7. Operational, Control and Metrics Details
 
 **Inputs, Outputs and Interfaces**: _(pending; backfill at EXT-04)_
 
@@ -116,7 +116,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 
 _(Pending EXT-04)_
 
-## 7. Technical Metadata
+## 8. Technical Metadata
 
 - **Source YAML**: record YAML in the same directory as this README
 - **Record version**: 1.0.0

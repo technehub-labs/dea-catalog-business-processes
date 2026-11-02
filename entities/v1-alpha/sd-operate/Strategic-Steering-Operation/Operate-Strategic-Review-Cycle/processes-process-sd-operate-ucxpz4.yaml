@@ -25,7 +25,7 @@ owner:
   review_due: '2026-12-31'
   decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
-description: 'Operate the Operate Strategic Review Cycle L2 process within the dea:pc-sd-operate Cell
+description: 'Operate the Operate Strategic Review Cycle L2 process within the processes:pc-sd-operate-5cs5ee Cell
   Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement
   for the testable outcome the process produces. '
 trigger: 'The strategic review cycle operation is needed because strategic performance monitoring and
@@ -120,7 +120,7 @@ inputs:
   type: information
   name: 'Operate Strategic Review Cycle: working inputs (information)'
   description: 'Derived from the record''s documented description and trigger: the process Operate the
-    Operate Strategic Review Cycle L2 process within the dea:pc-sd-operate Cell Charter. See trigger and
+    Operate Strategic Review Cycle L2 process within the processes:pc-sd-operate-5cs5ee Cell Charter. See trigger and
     outcome for the bounded work this pro'
   source: Record documented content (description + trigger fields)
   mandatory: true

@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 **Name**: Track Hours-Of-Work And Rest-Rule Compliance
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Track Hours-Of-Work And Rest-Rule Compliance | **Canonical ID** | `processes:activity-ao-operate-8pqgha` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Operate Regulated Performance Oversight that Track hours-of-work and rest-rule compliance for each regulator-licensed role: FAA Part 117 flight / duty / rest; state healthcare work-hour limits; SMCR fitness-and-propriety indicators; EU AI Act Article 14 oversight-hours. Shared concern: hours-of-work compliance. Input: the live role list; the hours-of-work recording. Output: the hours-of-work and rest-rule compliance record.
+**Intent and Definition**: The cohesive grouping of work within Operate Regulated Performance Oversight that Track hours-of-work and rest-rule compliance for each regulator-licensed role: FAA Part 117 flight / duty / rest; state healthcare work-hour limits; SMCR fitness-and-propriety indicators; EU AI Act Article 14 oversight-hours. Shared concern: hours-of-work compliance. Input: the live role list; the hours-of-work recording. Output: the hours-of-work and rest-rule compliance record.
 
-**Definition**: The cohesive grouping of work within Operate Regulated Performance Oversight that Track hours-of-work and rest-rule compliance for each regulator-licensed role: FAA Part 117 flight / duty / rest; state healthcare work-hour limits; SMCR fitness-and-propriety indicators; EU AI Act Article 14 oversight-hours. Shared concern: hours-of-work compliance. Input: the live role list; the hours-of-work recording. Output: the hours-of-work and rest-rule compliance record.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -35,16 +33,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-operate-6v824w, processes:task-ao-operate-bg34ya, processes:task-ao-operate-x3922c, | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-operate-intake-dxpemv, processes:task-ao-operate-verify-bpqpx5, processes:task-ao-o | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Operate Regulated Performance Oversight that Track hours-of-work and rest-rule comp |
+| `definition` | string | no | The cohesive grouping of work within Operate Regulated Performance Oversight that Track hours-of-work and rest-rule … |
 | `belongs_to_business_process` | string | no | processes:process-ao-operate-ba8scr |
-| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single track hours-of-work and |
+| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single track hours-of-work … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -58,7 +56,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 | `composes` | `processes:task-ao-operate-confirm-htefwz` | 1 |
 | `composes` | `processes:task-ao-operate-record-6gyw9t` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -66,7 +64,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 - **Cohesion rationale**: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single track hours-of-work and rest-rule compliance concern, one input class, and one output (the track hours-of-work and rest-rule compliance record on the regulated personnel record).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

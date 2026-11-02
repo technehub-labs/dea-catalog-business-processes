@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-sd-co
 
 **Name**: Purpose and Ambition Conception
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,13 @@ This directory hosts the canonical ProcessContext record for `processes:pc-sd-co
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Purpose and Ambition Conception | **Canonical ID** | `processes:pc-sd-conceive-ucb3gx` |
 
-## 1. Executive Summary / Intent
+## 2. Executive Summary / Intent
 
 The front-end work of framing the enterprise's reason for being
 (purpose), what it aims to become (ambition), and the strategic
 trajectory it commits to (intent, horizons, corporate strategy).
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 - **Regulatory Evidence Base**:
@@ -27,7 +27,7 @@ trajectory it commits to (intent, horizons, corporate strategy).
   - Privacy: GDPR (EU) / CCPA (California) / PIPEDA (Canada)
   - Healthcare: HIPAA (US) / NHS Data Security and Protection Toolkit
 
-## 3. Behavioral Boundaries (Cell Charter)
+## 4. Behavioral Boundaries (Cell Charter)
 
 | Scope Type | Description |
 | :--- | :--- |
@@ -35,7 +35,7 @@ trajectory it commits to (intent, horizons, corporate strategy).
 | Out of Scope (exclusions) | - Constitutional mandate and authority (governance-existence x conceive)<br>- Strategic option design (Design stage)<br>- Strategic plan and roadmap build (Build stage)<br>- Initiative execution (enablement-operations) |
 | Adjacent Cells | - processes:pc-ge-conceive-b5xwpd (Governance & Existence): authority vs chosen trajectory.<br>- processes:pc-sd-design-g3es76 (Design): strategy flows into strategic option design.<br>- processes:pc-sd-build-gmzrrm (Build): committed strategy flows into plan and roadmap build.<br>- processes:pc-sd-operate-5cs5ee (Operate): strategy is steered in review cycles.<br>- processes:pc-sd-improve-ft9k5f (Improve): strategy is adapted and refreshed. |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename).
 
@@ -150,7 +150,7 @@ sd-conceive/
 _(Full L4 task lists for each L3 activity are available in their respective subdirectories.)_
 </details>
 
-## 5. Properties and Relationships
+## 6. Properties and Relationships
 
 **Properties**
 
@@ -163,7 +163,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `outcomes` | array[4] | no | array of 4 item(s) |
 | `adjacent_contexts` | array[5] | no | array of 5 item(s) |
 | `processes` | array[4] | no | array of 4 item(s) |
-| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
+| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions … |
 | `status` | string | no | candidate |
 | `established_by` | string | no | CR-BP-21a |
 | `established_at` | string | no | 2026-09-07 |
@@ -179,7 +179,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `processes` | `processes:process-sd-conceive-3uredz` | 1 |
 | `processes` | `processes:process-sd-conceive-xa4h2k` | 1 |
 
-## 6. Operational, Control and Metrics Details
+## 7. Operational, Control and Metrics Details
 
 **Inputs, Outputs and Interfaces**: _(pending; backfill at EXT-04)_
 
@@ -191,7 +191,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 
 _(Pending EXT-04)_
 
-## 7. Technical Metadata
+## 8. Technical Metadata
 
 - **Source YAML**: record YAML in the same directory as this README
 - **Record version**: 1.0.0

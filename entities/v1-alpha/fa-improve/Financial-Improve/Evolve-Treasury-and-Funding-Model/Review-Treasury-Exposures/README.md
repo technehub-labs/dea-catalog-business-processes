@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-im
 
 **Name**: Review Treasury Exposures
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-fa-im
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Review Treasury Exposures | **Canonical ID** | `processes:activity-fa-improve-grdfaj` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Evolve Treasury and Funding Model that reviews the treasury exposures the monitored shifts create against the current model.
+**Intent and Definition**: The cohesive grouping of work within Evolve Treasury and Funding Model that reviews the treasury exposures the monitored shifts create against the current model.
 
-**Definition**: The cohesive grouping of work within Evolve Treasury and Funding Model that reviews the treasury exposures the monitored shifts create against the current model.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-fa-im
 | 2026-09-13 | `CR-BP-53` | Initial L3 Activity entry; lands as part of the CR-BP-53 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-review-treasury-exposures-intake, dea:task-review-treasury-exposures-verify, dea:task-review | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Evolve Treasury and Funding Model that reviews the treasury exposures the monitored |
+| `definition` | string | no | The cohesive grouping of work within Evolve Treasury and Funding Model that reviews the treasury exposures the … |
 | `belongs_to_business_process` | string | no | processes:process-fa-improve-2kemkq |
-| `cohesion_rationale` | string | no | Constituent work shares a single exposure concern (shift to exposure picture), one reference class (the treasury and fun |
+| `cohesion_rationale` | string | no | Constituent work shares a single exposure concern (shift to exposure picture), one reference class (the treasury and … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-im
 | `composes` | `processes:task-fa-improve-confirm-7tmn72` | 1 |
 | `composes` | `processes:task-fa-improve-record-dwrznw` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-fa-im
 - **Cohesion rationale**: Constituent work shares a single exposure concern (shift to exposure picture), one reference class (the treasury and funding model), and one output (the exposure review). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

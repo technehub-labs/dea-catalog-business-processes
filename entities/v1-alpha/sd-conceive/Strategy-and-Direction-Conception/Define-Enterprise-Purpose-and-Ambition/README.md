@@ -4,7 +4,7 @@ This directory hosts the canonical Process record for `processes:process-sd-conc
 
 **Name**: Define Enterprise Purpose and Ambition
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,13 @@ This directory hosts the canonical Process record for `processes:process-sd-conc
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Define Enterprise Purpose and Ambition | **Canonical ID** | `processes:process-sd-conceive-r93j3d` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
 **Intent**: develop
 
 **Definition**: (definition pending; backfill at EXT-04)
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -31,7 +31,7 @@ This directory hosts the canonical Process record for `processes:process-sd-conc
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 | 2026-10-27 | `CR-BP-GS-1` | Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Strategy & Direction Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under  | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -43,8 +43,8 @@ This directory hosts the canonical Process record for `processes:process-sd-conc
 | `process_classification` | object | no | object: type, provenance, status |
 | `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
-| `description` | string | no | Operate the Define Enterprise Purpose and Ambition L2 process within the dea:pc-sd-conceive Cell Charter. See trigger an |
-| `trigger` | string | no | An enterprise purpose definition is needed because the enterprise is being established, reframed, or responding to manda |
+| `description` | string | no | Operate the Define Enterprise Purpose and Ambition L2 process within the processes:pc-sd-conceive-ucb3gx Cell Charter … |
+| `trigger` | string | no | An enterprise purpose definition is needed because the enterprise is being established, reframed, or responding to … |
 | `outcome` | string | no | Enterprise purpose and ambition are defined and committed. |
 | `identity` | object | no | object: verb, object, scope, outcome_statement, evidence_links |
 | `relationships` | array[1] | no | array of 1 item(s) |
@@ -57,7 +57,7 @@ This directory hosts the canonical Process record for `processes:process-sd-conc
 | `outputs` | array[2] | no | array of 2 item(s) |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -69,7 +69,7 @@ This directory hosts the canonical Process record for `processes:process-sd-conc
   - `processes:activity-sd-conceive-jmupn8`
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

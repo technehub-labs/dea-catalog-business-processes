@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pr-r
 
 **Name**: Relationship Termination
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,19 +13,14 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pr-r
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Relationship Termination | **Canonical ID** | `processes:group-pr-retire-c3u3wc` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organises the Business Process
+**Intent and Definition**: The bounded Process Group that organises the Business Process
 responsibilities of closing out enterprise relationships in the
 PartyAndRelationship x Retire context (contract close-out, party
 offboarding, residual obligation and record resolution).
 
-**Definition**: The bounded Process Group that organises the Business Process
-responsibilities of closing out enterprise relationships in the
-PartyAndRelationship x Retire context (contract close-out, party
-offboarding, residual obligation and record resolution).
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -35,7 +30,7 @@ offboarding, residual obligation and record resolution).
 | 2026-09-14 | `CR-BP-67` | Initial Process Group record; the fourth and final L1 group at | System |
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -59,11 +54,11 @@ offboarding, residual obligation and record resolution).
 | :--- | :--- | :--- |
 | `composes` | `processes:process-pr-retire-bd3asa` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

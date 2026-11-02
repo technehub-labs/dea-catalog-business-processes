@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pr-co
 
 **Name**: Customer Strategy Conception
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,15 +13,15 @@ This directory hosts the canonical ProcessContext record for `processes:pc-pr-co
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Customer Strategy Conception | **Canonical ID** | `processes:pc-pr-conceive-6xztsq` |
 
-## 1. Executive Summary / Intent
+## 2. Executive Summary / Intent
 
 The front-end work of deciding which customer segments to serve, what value to offer, and which demand thesis to commit to.
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 (governance and provenance to be backfilled at EXT-04)
 
-## 3. Behavioral Boundaries (Cell Charter)
+## 4. Behavioral Boundaries (Cell Charter)
 
 | Scope Type | Description |
 | :--- | :--- |
@@ -29,7 +29,7 @@ The front-end work of deciding which customer segments to serve, what value to o
 | Out of Scope (exclusions) | - Customer experience design (Design stage)<br>- Channel build (Build stage)<br>- Active relationship operation (Operate stage) |
 | Adjacent Cells | - processes:pc-pr-design-hrcdy4 (Design): translates strategy into experience, journey, and demand designs.<br>- processes:pc-pr-build-a46hp7 (Build): builds the channels and acquisition engines.<br>- processes:pc-pr-operate-pwue5a (Operate): runs the active customer relationships framed here.<br>- processes:pc-pr-activate-mwq7bj (Activate): transition from strategy to first active customer. |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename).
 
@@ -94,7 +94,7 @@ pr-conceive/
 _(Full L4 task lists for each L3 activity are available in their respective subdirectories.)_
 </details>
 
-## 5. Properties and Relationships
+## 6. Properties and Relationships
 
 **Properties**
 
@@ -102,12 +102,12 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | :--- | :--- | :--- | :--- |
 | `domain` | string | no | PartyAndRelationship |
 | `lifecycle_stage` | string | no | Conceive |
-| `definition` | string | no | The bounded enterprise context for **conceiving** customer and demand strategy in the **customer and demand** domain. Th |
+| `definition` | string | no | The bounded enterprise context for **conceiving** customer and demand strategy in the **customer and demand** domain … |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[3] | no | array of 3 item(s) |
 | `adjacent_contexts` | array[4] | no | array of 4 item(s) |
 | `processes` | array[2] | no | array of 2 item(s) |
-| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
+| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions … |
 | `status` | string | no | candidate |
 | `established_by` | string | no | CR-BP-13a |
 | `established_at` | string | no | 2026-09-05 |
@@ -121,7 +121,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `processes` | `processes:process-pr-conceive-emfgju` | 1 |
 | `processes` | `processes:process-pr-conceive-tvst8u` | 1 |
 
-## 6. Operational, Control and Metrics Details
+## 7. Operational, Control and Metrics Details
 
 **Inputs, Outputs and Interfaces**: _(pending; backfill at EXT-04)_
 
@@ -133,7 +133,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 
 _(Pending EXT-04)_
 
-## 7. Technical Metadata
+## 8. Technical Metadata
 
 - **Source YAML**: record YAML in the same directory as this README
 - **Record version**: 1.0.0

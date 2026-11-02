@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-ge-conceive-t
 
 **Name**: Define Tolerance Bands Processing
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-ge-conceive-t
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Define Tolerance Bands Processing | **Canonical ID** | `processes:task-ge-conceive-transform-39bz6f` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-ge-conceive-yucnbe` (Define Tolerance Bands) that execute the conception: articulate the risk appetite, bound the policy scope, frame the governance posture for risk, propose the authority and decision rights, define the tolerance bands, and produce the conception-ready framework package conforming to the risk-and-policy conception schema.
+**Intent and Definition**: The bounded unit of work within `processes:activity-ge-conceive-yucnbe` (Define Tolerance Bands) that execute the conception: articulate the risk appetite, bound the policy scope, frame the governance posture for risk, propose the authority and decision rights, define the tolerance bands, and produce the conception-ready framework package conforming to the risk-and-policy conception schema.
 
-**Definition**: The bounded unit of work within `processes:activity-ge-conceive-yucnbe` (Define Tolerance Bands) that execute the conception: articulate the risk appetite, bound the policy scope, frame the governance posture for risk, propose the authority and decision rights, define the tolerance bands, and produce the conception-ready framework package conforming to the risk-and-policy conception schema.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Task record for `processes:task-ge-conceive-t
 | 2026-09-13 | `CR-BP-48` | Initial L3 Activity entry; lands as part of the CR-BP-48 | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-ge-conceive-yucnbe` (Define Tolerance Bands) that execute the concep |
+| `definition` | string | no | The bounded unit of work within `processes:activity-ge-conceive-yucnbe` (Define Tolerance Bands) that execute the … |
 | `belongs_to_activity` | string | no | processes:activity-ge-conceive-yucnbe |
-| `trigger` | string | no | Verification certificate issued for Define Tolerance Bands; transform gate may execute the bounded work and emit the con |
-| `outcome` | string | no | Bounded-work artefact produced for Define Tolerance Bands conforming to the Conceive schema; processing custodian passes |
+| `trigger` | string | no | Verification certificate issued for Define Tolerance Bands; transform gate may execute the bounded work and emit the … |
+| `outcome` | string | no | Bounded-work artefact produced for Define Tolerance Bands conforming to the Conceive schema; processing custodian … |
 | `responsibility` | string | no | processing custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-ge-conceive-t
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

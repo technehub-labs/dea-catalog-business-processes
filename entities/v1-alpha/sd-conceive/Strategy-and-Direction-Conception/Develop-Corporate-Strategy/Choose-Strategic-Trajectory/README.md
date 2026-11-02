@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-co
 
 **Name**: Choose Strategic Trajectory
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-sd-co
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Choose Strategic Trajectory | **Canonical ID** | `processes:activity-sd-conceive-uvhsrz` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Develop Corporate Strategy that chooses the strategic trajectory the synthesized direction commits to.
+**Intent and Definition**: The cohesive grouping of work within Develop Corporate Strategy that chooses the strategic trajectory the synthesized direction commits to.
 
-**Definition**: The cohesive grouping of work within Develop Corporate Strategy that chooses the strategic trajectory the synthesized direction commits to.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-sd-co
 | 2026-09-13 | `CR-BP-54` | Initial L3 Activity entry; lands as part of the CR-BP-54 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-choose-strategic-trajectory-intake, dea:task-choose-strategic-trajectory-verify, dea:task-ch | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Develop Corporate Strategy that chooses the strategic trajectory the synthesized di |
+| `definition` | string | no | The cohesive grouping of work within Develop Corporate Strategy that chooses the strategic trajectory the synthesized … |
 | `belongs_to_business_process` | string | no | processes:process-sd-conceive-ahwvp5 |
-| `cohesion_rationale` | string | no | Constituent work shares a single choice concern (trajectories to chosen trajectory), one input class (articulated trajec |
+| `cohesion_rationale` | string | no | Constituent work shares a single choice concern (trajectories to chosen trajectory), one input class (articulated … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-co
 | `composes` | `processes:task-sd-conceive-confirm-bymu5e` | 1 |
 | `composes` | `processes:task-sd-conceive-record-y2bnz5` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-sd-co
 - **Cohesion rationale**: Constituent work shares a single choice concern (trajectories to chosen trajectory), one input class (articulated trajectories), and one output (the chosen trajectory). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-sd-re
 
 **Name**: Sunset Regulated Strategic Plan
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,7 +13,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-sd-re
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Sunset Regulated Strategic Plan | **Canonical ID** | `processes:pc-sd-retire-zxnc3c` |
 
-## 1. Executive Summary / Intent
+## 2. Executive Summary / Intent
 
 The regulated-strategic-plan sunset work that moves a
 supervisor-acknowledged-and-live strategic plan to
@@ -27,7 +27,7 @@ sunset on the regulated strategic-plan record under the
 regulator's acknowledgement and the enterprise's retention
 policy.
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 - **Admission Score**: `?/10`
 - **Recommended By**: `dea:discovery-strategy-and-direction-retire-escape`
@@ -43,7 +43,7 @@ policy.
 | :--- | :--- | :--- | :--- |
 | 2026-09-19 | `CR-BP-101` | First canonical admission at the StrategyAndDirection x Retire | System |
 
-## 3. Behavioral Boundaries (Cell Charter)
+## 4. Behavioral Boundaries (Cell Charter)
 
 | Scope Type | Description |
 | :--- | :--- |
@@ -51,7 +51,7 @@ policy.
 | Out of Scope (exclusions) | - Strategic-plan conception, design, build, activation, steady-state execution, and improvement (StrategyAndDirection x Conceive / Design / Build / Activate / Operate / Improve)<br>- Non-regulated strategic-plan sunset (single-business-unit rollout without regulator's review): remains RECORD-PATTERN or MERGE per CR-BP-63 baseline<br>- Strategic plans absent a regulator-directed sunset regime<br>- Strategic-plan disposition where no competent regulator has required retirement<br>- Replacement-plan activation (handled at StrategyAndDirection x Activate) |
 | Adjacent Cells | - processes:pc-sd-improve-ft9k5f (adjacent context): the Improve cell at SD handles steady-state strategy improvement and performance review; regulator-directed sunset is distinct and downstream of any improvement disposition<br>- processes:pc-sd-activate-ghaub8 (adjacent context): the Activate cell at SD handles the regulated live-readiness activation of a strategic plan; the replacement-plan activation is a separate process under Activate and is not in scope here<br>- processes:pc-fa-retire-64q5p9 (adjacent context): the Retire cell at FinanceAndAccounting handles financial-account retirement; this cell handles strategy retirement under regulator directive, distinct from financial-account sunset |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename).
 
@@ -109,7 +109,7 @@ sd-retire/
 _(Full L4 task lists for each L3 activity are available in their respective subdirectories.)_
 </details>
 
-## 5. Properties and Relationships
+## 6. Properties and Relationships
 
 **Properties**
 
@@ -119,14 +119,14 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `schema_version` | integer | no | 1 |
 | `domain` | string | no | StrategyAndDirection |
 | `lifecycle_stage` | string | no | Retire |
-| `definition` | string | no | The bounded enterprise context for **governing the sunset of a regulated strategic plan under regulatory mandate** in th |
+| `definition` | string | no | The bounded enterprise context for **governing the sunset of a regulated strategic plan under regulatory mandate** in … |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[4] | no | array of 4 item(s) |
 | `adjacent_contexts` | array[3] | no | array of 3 item(s) |
 | `processes` | array[1] | no | array of 1 item(s) |
 | `status` | string | no | candidate |
 | `process_context` | object | no | object: id, domain, lifecycle_stage, scope_summary, process_empty, lifecycle_status, status |
-| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
+| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions … |
 | `admission` | object | no | object: recommended_by, recommended_at, recommended_score, rationale, cell_carries_forward |
 
 **Relationships**
@@ -135,7 +135,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | :--- | :--- | :--- |
 | `processes` | `processes:process-sd-retire-umxf3c` | 1 |
 
-## 6. Operational, Control and Metrics Details
+## 7. Operational, Control and Metrics Details
 
 **Inputs, Outputs and Interfaces**: _(pending; backfill at EXT-04)_
 
@@ -147,7 +147,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 
 _(Pending EXT-04)_
 
-## 7. Technical Metadata
+## 8. Technical Metadata
 
 - **Source YAML**: record YAML in the same directory as this README
 - **Record version**: 1.0.0

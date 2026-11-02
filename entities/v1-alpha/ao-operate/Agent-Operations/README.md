@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-o
 
 **Name**: Agent Operations
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-o
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Agent Operations | **Canonical ID** | `processes:group-ao-operate-35gmps` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organises the Business Process responsibilities of operating agents in service in the AgencyAndOrganization x Operate context: agent performance operation, payroll and benefits, time and attendance, learning and development delivery (training for humans, fine-tuning for artificial agents), and collaboration coordination. Substrate-neutral per ADR-ECF-002 section 5. v2.4.0 grounding (domain-grounding.md §3.3).
+**Intent and Definition**: The bounded Process Group that organises the Business Process responsibilities of operating agents in service in the AgencyAndOrganization x Operate context: agent performance operation, payroll and benefits, time and attendance, learning and development delivery (training for humans, fine-tuning for artificial agents), and collaboration coordination. Substrate-neutral per ADR-ECF-002 section 5. v2.4.0 grounding (domain-grounding.md §3.3).
 
-**Definition**: The bounded Process Group that organises the Business Process responsibilities of operating agents in service in the AgencyAndOrganization x Operate context: agent performance operation, payroll and benefits, time and attendance, learning and development delivery (training for humans, fine-tuning for artificial agents), and collaboration coordination. Substrate-neutral per ADR-ECF-002 section 5. v2.4.0 grounding (domain-grounding.md §3.3).
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -30,13 +28,13 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-o
 | 2026-09-22 | `CR-BP-106` | Composes edge added for the regulator-tied Operate Regulated Performance Oversight BP (process-ao-operate-ba8scr), admitted under CR-BP-105 escape-clause discovery outcome (ADMIT-CANONICAL). The PG re | System |
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded Process Group that organises the Business Process responsibilities of operating agents in service in the Age |
+| `definition` | string | no | The bounded Process Group that organises the Business Process responsibilities of operating agents in service in the … |
 | `process_context` | string | no | processes:pc-ao-operate-zfevmp |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[4] | no | array of 4 item(s) |
@@ -59,11 +57,11 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-o
 | `composes` | `processes:process-ao-operate-bd7mef` | 1 |
 | `composes` | `processes:process-ao-operate-ba8scr` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

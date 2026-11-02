@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pr-a
 
 **Name**: Regulated Onboarding
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,23 +13,16 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pr-a
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Regulated Onboarding | **Canonical ID** | `processes:group-pr-activate-d7j4et` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organises the Business Process
+**Intent and Definition**: The bounded Process Group that organises the Business Process
 responsibilities of activating enterprise relationships in the
 PartyAndRelationship x Activate context where regulatory
 obligations trigger distinct group-level work (KYC/AML/CDD;
 identity verification; beneficial-ownership resolution; risk
 classification; onboarding approval).
 
-**Definition**: The bounded Process Group that organises the Business Process
-responsibilities of activating enterprise relationships in the
-PartyAndRelationship x Activate context where regulatory
-obligations trigger distinct group-level work (KYC/AML/CDD;
-identity verification; beneficial-ownership resolution; risk
-classification; onboarding approval).
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -39,7 +32,7 @@ classification; onboarding approval).
 | 2026-09-15 | `CR-BP-71` | Initial Process Group record; the first L1 group at a | System |
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -63,11 +56,11 @@ classification; onboarding approval).
 | :--- | :--- | :--- |
 | `composes` | `processes:process-pr-activate-6qzuve` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

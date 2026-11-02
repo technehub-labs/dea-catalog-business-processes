@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-op
 
 **Name**: Report Portfolio Performance
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-pv-op
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Report Portfolio Performance | **Canonical ID** | `processes:activity-pv-operate-nzj8xu` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Manage Portfolio Performance that reports portfolio performance to the governance and strategy consumers who act on it.
+**Intent and Definition**: The cohesive grouping of work within Manage Portfolio Performance that reports portfolio performance to the governance and strategy consumers who act on it.
 
-**Definition**: The cohesive grouping of work within Manage Portfolio Performance that reports portfolio performance to the governance and strategy consumers who act on it.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Activity record for `processes:activity-pv-op
 | 2026-09-13 | `CR-BP-51` | Initial L3 Activity entry; lands as part of the CR-BP-51 | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (dea:task-report-portfolio-performance-intake, dea:task-report-portfolio-performance-verify, dea:task- | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Manage Portfolio Performance that reports portfolio performance to the governance a |
+| `definition` | string | no | The cohesive grouping of work within Manage Portfolio Performance that reports portfolio performance to the governance … |
 | `belongs_to_business_process` | string | no | processes:process-pv-operate-en8rdz |
-| `cohesion_rationale` | string | no | Constituent work shares a single reporting concern (performance picture to consumers), one artifact (the portfolio perfo |
+| `cohesion_rationale` | string | no | Constituent work shares a single reporting concern (performance picture to consumers), one artifact (the portfolio … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -52,7 +50,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-op
 | `composes` | `processes:task-pv-operate-confirm-s2vfmm` | 1 |
 | `composes` | `processes:task-pv-operate-record-296jjr` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -60,7 +58,7 @@ This directory hosts the canonical Activity record for `processes:activity-pv-op
 - **Cohesion rationale**: Constituent work shares a single reporting concern (performance picture to consumers), one artifact (the portfolio performance report), and a common cadence (per reporting cycle). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

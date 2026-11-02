@@ -4,7 +4,7 @@ This directory hosts the canonical Process record for `processes:process-ge-acti
 
 **Name**: Bring Policy Instrument into Force
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,13 @@ This directory hosts the canonical Process record for `processes:process-ge-acti
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Bring Policy Instrument into Force | **Canonical ID** | `processes:process-ge-activate-wegs44` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
 **Intent**: transform
 
 **Definition**: (definition pending; backfill at EXT-04)
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -31,7 +31,7 @@ This directory hosts the canonical Process record for `processes:process-ge-acti
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 | 2026-10-27 | `CR-BP-GS-1` | Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Governance & Existence Process Owner); actors/stakeholders derived from the parent cell charter vocabulary unde | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -43,9 +43,9 @@ This directory hosts the canonical Process record for `processes:process-ge-acti
 | `process_classification` | object | no | object: type, provenance, status |
 | `owner` | object | no | object: value, status, provenance, review_due, decision_right |
 | `process_specialization` | array[0] | no | array of 0 item(s) |
-| `description` | string | no | Bring an adopted policy instrument, mandate or charter from adopted-but-dormant to in-force: verify commencement conditi |
+| `description` | string | no | Bring an adopted policy instrument, mandate or charter from adopted-but-dormant to in-force: verify commencement … |
 | `trigger` | string | no | A policy instrument, mandate or charter has been adopted and its commencement conditions are met. |
-| `outcome` | string | no | The instrument is in force and binding: obligations, rights and duties attach to it and are executed across the enterpri |
+| `outcome` | string | no | The instrument is in force and binding: obligations, rights and duties attach to it and are executed across the … |
 | `identity` | object | no | object: verb, object, scope, outcome_statement, evidence_links |
 | `relationships` | array[1] | no | array of 1 item(s) |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
@@ -57,7 +57,7 @@ This directory hosts the canonical Process record for `processes:process-ge-acti
 | `outputs` | array[1] | no | array of 1 item(s) |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -69,7 +69,7 @@ This directory hosts the canonical Process record for `processes:process-ge-acti
   - `processes:activity-ge-activate-pm38pv`
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

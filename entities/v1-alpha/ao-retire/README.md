@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-ao-re
 
 **Name**: Workforce Retirement
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,7 +13,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-ao-re
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Workforce Retirement | **Canonical ID** | `processes:pc-ao-retire-3kqe9c` |
 
-## 1. Executive Summary / Intent
+## 2. Executive Summary / Intent
 
 The regulated-workforce-retirement work that moves an enterprise
 workforce from active employment to documented, statutory-compliant
@@ -22,7 +22,7 @@ jurisdictional mass-layoff statutes, with notice served,
 worker-representative consultation satisfied, severance and
 benefits continuation recorded, and transition supports routed.
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 - **Admission Score**: `?/10`
 - **Recommended By**: `dea:discovery-agency-and-organization-retire-escape`
@@ -34,7 +34,7 @@ benefits continuation recorded, and transition supports routed.
   - Aviation: EASA / FAA crew licensing (type-rated licences)
   - Professional Services: UK SRA / US State Bar admissions
 
-## 3. Behavioral Boundaries (Cell Charter)
+## 4. Behavioral Boundaries (Cell Charter)
 
 | Scope Type | Description |
 | :--- | :--- |
@@ -42,7 +42,7 @@ benefits continuation recorded, and transition supports routed.
 | Out of Scope (exclusions) | - Steady-state offboarding of individual agents (AgencyAndOrganization x Operate)<br>- Non-regulated cohort decommission (Operate coordinate or Activity under agent operations)<br>- Asset retirement, decommissioning, and shutdown (EnablementAndOperations x Retire; CR-BP-66)<br>- Relationship close-out and regulated offboarding (PartyAndRelationship x Retire; CR-BP-67)<br>- Knowledge archival absent regulated wind-down triggers (Operate coordinate or Activity under knowledge management) |
 | Adjacent Cells | - processes:pc-ao-operate-zfevmp (adjacent context): the Operate cell continues ongoing agent management, steady-state offboarding, and non-regulated cohort decommission; the Retire cell only governs regulated mass-layoff or regulated wind-down workflows.<br>- processes:pc-eo-retire-nw3ynf (sibling cell, CR-BP-66): the Retire cell at EnablementAndOperations handles asset retirement, decommissioning, and shutdown of physical / IT / data assets; the A&O Retire cell handles workforce retirement under regulated mass-layoff or wind-down obligations.<br>- processes:pc-pr-retire-2cusde (sibling cell, CR-BP-67): the Retire cell at PartyAndRelationship handles party-relationship close-out and regulated offboarding (e.g. GDPR-driven erasure); the A&O Retire cell handles workforce retirement at the agent-population level. |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename).
 
@@ -82,7 +82,7 @@ ao-retire/
 _(Full L4 task lists for each L3 activity are available in their respective subdirectories.)_
 </details>
 
-## 5. Properties and Relationships
+## 6. Properties and Relationships
 
 **Properties**
 
@@ -92,16 +92,16 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `schema_version` | integer | no | 1 |
 | `domain` | string | no | AgencyAndOrganization |
 | `lifecycle_stage` | string | no | Retire |
-| `definition` | string | no | The bounded enterprise context for **governing the regulated wind-down of workforce populations** in the **Agency & Orga |
+| `definition` | string | no | The bounded enterprise context for **governing the regulated wind-down of workforce populations** in the **Agency & … |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[5] | no | array of 5 item(s) |
 | `adjacent_contexts` | array[6] | no | array of 6 item(s) |
 | `processes` | array[1] | no | array of 1 item(s) |
 | `status` | string | no | candidate |
 | `process_context` | object | no | object: id, domain, lifecycle_stage, scope_summary, process_empty, lifecycle_status, status |
-| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
+| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions … |
 | `process_groups` | array[1] | no | array of 1 item(s) |
-| `admission` | object | no | object: recommended_by, recommended_at, recommended_score, carrier_cr, bp_id, pg_id, pc_id, evidence_summary, register_f |
+| `admission` | object | no | object: recommended_by, recommended_at, recommended_score, carrier_cr, bp_id, pg_id, pc_id, evidence_summary … |
 | `intent` | object | no | object: decomposition, lifecycle_stage, coordinate |
 | `change_history` | array[1] | no | array of 1 item(s) |
 | `audit` | object | no | object: authored, author, reviewed_by, status, change_request, register_version_at_landing |
@@ -113,7 +113,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `process_groups` | `processes:group-ao-retire-jspuzz` | 1 |
 | `processes` | `processes:process-ao-retire-g3eyr8` | 1 |
 
-## 6. Operational, Control and Metrics Details
+## 7. Operational, Control and Metrics Details
 
 **Inputs, Outputs and Interfaces**: _(pending; backfill at EXT-04)_
 
@@ -125,7 +125,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 
 _(Pending EXT-04)_
 
-## 7. Technical Metadata
+## 8. Technical Metadata
 
 - **Source YAML**: record YAML in the same directory as this README
 - **Record version**: 1.0.0

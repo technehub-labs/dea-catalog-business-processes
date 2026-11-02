@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-c
 
 **Name**: Organization and Agent Conception
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,9 +13,9 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-c
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Organization and Agent Conception | **Canonical ID** | `processes:group-ao-conceive-bwjhgd` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organises the Business Process
+**Intent and Definition**: The bounded Process Group that organises the Business Process
 responsibilities of conceiving the enterprise's agentive and
 organizational fabric in the AgencyAndOrganization × Conceive context.
 This group covers the front-end work of framing agent capacity
@@ -27,19 +27,7 @@ organization as a stable subject — the durable pattern of roles,
 authority, collaboration, and coordination through which agency is
 directed.
 
-**Definition**: The bounded Process Group that organises the Business Process
-responsibilities of conceiving the enterprise's agentive and
-organizational fabric in the AgencyAndOrganization × Conceive context.
-This group covers the front-end work of framing agent capacity
-strategy, framing the organization model, and conceiving the
-workforce-and-agent mix. v2.4.0 grounding (domain-grounding.md
-§3.3): the domain is substrate-independent; the constituent agents
-may be biological, artificial, or hybrid. The Process Group manages
-organization as a stable subject — the durable pattern of roles,
-authority, collaboration, and coordination through which agency is
-directed.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -51,7 +39,7 @@ directed.
 | 2026-09-22 | `CR-BP-106` | Composes edge added for the regulator-tied Conceive Licensed or Regulated Agent Capacity BP (process-ao-conceive-pnrhem), admitted under CR-BP-105 escape-clause discovery outcome (ADMIT-CANONICAL). Th | System |
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
@@ -78,11 +66,11 @@ directed.
 | `composes` | `processes:process-ao-conceive-z6m6p5` | 1 |
 | `composes` | `processes:process-ao-conceive-pnrhem` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

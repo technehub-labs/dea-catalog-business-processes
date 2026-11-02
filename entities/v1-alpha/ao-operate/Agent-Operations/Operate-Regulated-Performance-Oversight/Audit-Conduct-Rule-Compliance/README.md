@@ -4,7 +4,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 **Name**: Audit Conduct-Rule Compliance
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Audit Conduct-Rule Compliance | **Canonical ID** | `processes:activity-ao-operate-z4n9m2` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The cohesive grouping of work within Operate Regulated Performance Oversight that Audit regulator-licensed role conduct-rule compliance: FCA SMCR COCON (Conduct Rules); FINRA Rule 3110; FAA Part 117 (flight / duty time); EU AI Act Article 14 (human-oversight conduct); state bar professional conduct; state healthcare professional conduct. Shared concern: conduct-rule compliance audit. Input: the live regulator-licensed role list; the conduct-rule matrix. Output: the conduct-rule compliance audit record.
+**Intent and Definition**: The cohesive grouping of work within Operate Regulated Performance Oversight that Audit regulator-licensed role conduct-rule compliance: FCA SMCR COCON (Conduct Rules); FINRA Rule 3110; FAA Part 117 (flight / duty time); EU AI Act Article 14 (human-oversight conduct); state bar professional conduct; state healthcare professional conduct. Shared concern: conduct-rule compliance audit. Input: the live regulator-licensed role list; the conduct-rule matrix. Output: the conduct-rule compliance audit record.
 
-**Definition**: The cohesive grouping of work within Operate Regulated Performance Oversight that Audit regulator-licensed role conduct-rule compliance: FCA SMCR COCON (Conduct Rules); FINRA Rule 3110; FAA Part 117 (flight / duty time); EU AI Act Article 14 (human-oversight conduct); state bar professional conduct; state healthcare professional conduct. Shared concern: conduct-rule compliance audit. Input: the live regulator-licensed role list; the conduct-rule matrix. Output: the conduct-rule compliance audit record.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -35,16 +33,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-operate-wynhbe, processes:task-ao-operate-5ebkpj, processes:task-ao-operate-cfs42q, | System |
 | 2026-09-19 | `CR-BP-102` | L4 decomposition: `decomposition_boundary: l4-reached` replaced with `composes[]` listing 5 Tasks (processes:task-ao-operate-intake-f7sgdj, processes:task-ao-operate-verify-yx6kge, processes:task-ao-o | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `status` | string | no | candidate |
-| `definition` | string | no | The cohesive grouping of work within Operate Regulated Performance Oversight that Audit regulator-licensed role conduct- |
+| `definition` | string | no | The cohesive grouping of work within Operate Regulated Performance Oversight that Audit regulator-licensed role … |
 | `belongs_to_business_process` | string | no | processes:process-ao-operate-ba8scr |
-| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single audit conduct-rule comp |
+| `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single audit conduct-rule … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
 
@@ -58,7 +56,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 | `composes` | `processes:task-ao-operate-confirm-qe5ck5` | 1 |
 | `composes` | `processes:task-ao-operate-record-6um63p` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 <details>
 <summary>Expand to view decomposition details</summary>
@@ -66,7 +64,7 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 - **Cohesion rationale**: Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single audit conduct-rule compliance concern, one input class, and one output (the audit conduct-rule compliance record on the regulated personnel record).
 </details>
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

@@ -4,7 +4,7 @@ This directory hosts the canonical Task record for `processes:task-pr-design-ver
 
 **Name**: Map Journey Stages Verification
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical Task record for `processes:task-pr-design-ver
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Map Journey Stages Verification | **Canonical ID** | `processes:task-pr-design-verify-gdn83u` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded unit of work within `processes:activity-pr-design-bp2kwt` (Map Journey Stages) that verify the input pack against the experience-quality criteria and the touchpoint-taxonomy contract, and emit a verification report naming any quality-criteria deviations and their remediation.
+**Intent and Definition**: The bounded unit of work within `processes:activity-pr-design-bp2kwt` (Map Journey Stages) that verify the input pack against the experience-quality criteria and the touchpoint-taxonomy contract, and emit a verification report naming any quality-criteria deviations and their remediation.
 
-**Definition**: The bounded unit of work within `processes:activity-pr-design-bp2kwt` (Map Journey Stages) that verify the input pack against the experience-quality criteria and the touchpoint-taxonomy contract, and emit a verification report naming any quality-criteria deviations and their remediation.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,16 +27,16 @@ This directory hosts the canonical Task record for `processes:task-pr-design-ver
 | 2026-09-13 | `CR-BP-45` | Initial L3 Activity entry; lands as part of the CR-BP-45 | System |
 | 2026-09-19 | `CR-BP-102` | Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern). | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded unit of work within `processes:activity-pr-design-bp2kwt` (Map Journey Stages) that verify the input pack ag |
+| `definition` | string | no | The bounded unit of work within `processes:activity-pr-design-bp2kwt` (Map Journey Stages) that verify the input pack … |
 | `belongs_to_activity` | string | no | processes:activity-pr-design-bp2kwt |
-| `trigger` | string | no | Intake manifest registered for Map Journey Stages; verification gate may execute the contract and quality-criteria check |
-| `outcome` | string | no | Verification certificate issued for Map Journey Stages naming verification methods applied and any deviations remediated |
+| `trigger` | string | no | Intake manifest registered for Map Journey Stages; verification gate may execute the contract and quality-criteria … |
+| `outcome` | string | no | Verification certificate issued for Map Journey Stages naming verification methods applied and any deviations … |
 | `responsibility` | string | no | verification custodian |
 | `boundary` | object | no | object: inclusions, exclusions |
 | `evidence` | array[3] | no | array of 3 item(s) |
@@ -46,11 +44,11 @@ This directory hosts the canonical Task record for `processes:task-pr-design-ver
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

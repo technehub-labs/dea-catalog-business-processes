@@ -77,11 +77,14 @@ def test_generated_readme_uses_post_mv1_ids() -> None:
     """Generated READMEs carry the record's processes:* id, not dea:*."""
     blocking, _ = evaluate()
     assert not blocking
-    # Spot-check one known record README.
-    p = ROOT / "entities/v1-alpha/ao-build/ao-build-m6fmyx/README.md"
+    # Spot-check one known record README (the record whose README review
+    # triggered CR-BP-221; ao-build/ao-build-m6fmyx no longer exists in
+    # the post-mv1 tree, so the old spot-check target was retired).
+    p = ROOT / ("entities/v1-alpha/ao-activate/Licensed-Workforce-Mobilization/"
+                "Mobilize-Licensed-Workforce/README.md")
     text = p.read_text()
-    assert "processes:group-ao-build-m6fmyx" in text
-    assert "dea:group-" not in text.split("## 10.")[0]  # pre-evidence sections
+    assert "processes:process-ao-activate-jqxtqn" in text
+    assert "dea:group-" not in text and "dea:process-" not in text
 
 
 # ---------------------------------------------------------------------------

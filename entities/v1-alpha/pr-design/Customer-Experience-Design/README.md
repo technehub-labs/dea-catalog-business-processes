@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pr-d
 
 **Name**: Customer Experience Design
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pr-d
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Customer Experience Design | **Canonical ID** | `processes:group-pr-design-enpedx` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organizes the Business Process responsibilities of designing customer experience, journey, and demand models in the PartyAndRelationship x Design context. This group captures the work of translating customer strategy into a designed experience, an articulated customer journey, and a model of how demand is shaped by the enterprise's offerings. The group is the canonical Process Group for the customer-experience value stream.
+**Intent and Definition**: The bounded Process Group that organizes the Business Process responsibilities of designing customer experience, journey, and demand models in the PartyAndRelationship x Design context. This group captures the work of translating customer strategy into a designed experience, an articulated customer journey, and a model of how demand is shaped by the enterprise's offerings. The group is the canonical Process Group for the customer-experience value stream.
 
-**Definition**: The bounded Process Group that organizes the Business Process responsibilities of designing customer experience, journey, and demand models in the PartyAndRelationship x Design context. This group captures the work of translating customer strategy into a designed experience, an articulated customer journey, and a model of how demand is shaped by the enterprise's offerings. The group is the canonical Process Group for the customer-experience value stream.
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,13 +27,13 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pr-d
 | 2026-09-05 | `CR-BP-13a` | Initial Process Group record; promoted from the CR-BP-11 | System |
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded Process Group that organizes the Business Process responsibilities of designing customer experience, journey |
+| `definition` | string | no | The bounded Process Group that organizes the Business Process responsibilities of designing customer experience … |
 | `process_context` | string | no | processes:pc-pr-design-hrcdy4 |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[3] | no | array of 3 item(s) |
@@ -55,11 +53,11 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pr-d
 | `composes` | `processes:process-pr-design-cv6hjh` | 1 |
 | `composes` | `processes:process-pr-design-j6fakx` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 

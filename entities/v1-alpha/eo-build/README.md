@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessContext record for `processes:pc-eo-bu
 
 **Name**: Operations and Enablement Build
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,11 +13,11 @@ This directory hosts the canonical ProcessContext record for `processes:pc-eo-bu
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Operations and Enablement Build | **Canonical ID** | `processes:pc-eo-build-zwkhxc` |
 
-## 1. Executive Summary / Intent
+## 2. Executive Summary / Intent
 
 The constructive work of standing up production lines, building delivery capability and the logistics network, and acquiring and provisioning technology assets and facilities.
 
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 - **Regulatory Evidence Base**:
@@ -26,7 +26,7 @@ The constructive work of standing up production lines, building delivery capabil
   - Energy: FERC / Ofgem operations licensing
   - Telecommunications: FCC / Ofcom spectrum authorisation
 
-## 3. Behavioral Boundaries (Cell Charter)
+## 4. Behavioral Boundaries (Cell Charter)
 
 | Scope Type | Description |
 | :--- | :--- |
@@ -34,7 +34,7 @@ The constructive work of standing up production lines, building delivery capabil
 | Out of Scope (exclusions) | - Operations design (Design stage; adjacent context)<br>- Agent provisioning (agency-organization x build; adjacent domain)<br>- Supplier onboarding (party-relationship x build; adjacent domain)<br>- Product variant development (product-value x build; adjacent domain) |
 | Adjacent Cells | - processes:pc-eo-conceive-mxmtzq (adjacent context): execution flow between Build and the adjacent cell.<br>- processes:pc-eo-design-kxdfnz (adjacent context): execution flow between Build and the adjacent cell.<br>- processes:pc-eo-operate-ydqb96 (adjacent context): execution flow between Build and the adjacent cell.<br>- processes:pc-eo-improve-pka6dk (adjacent context): execution flow between Build and the adjacent cell. |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 Directory layout of this cell (dir names are the kebab-cased record names; the BASE32 hash lives in the record filename).
 
@@ -174,7 +174,7 @@ eo-build/
 _(Full L4 task lists for each L3 activity are available in their respective subdirectories.)_
 </details>
 
-## 5. Properties and Relationships
+## 6. Properties and Relationships
 
 **Properties**
 
@@ -182,12 +182,12 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | :--- | :--- | :--- | :--- |
 | `domain` | string | no | EnablementAndOperations |
 | `lifecycle_stage` | string | no | Build |
-| `definition` | string | no | The bounded enterprise context for **building** the production lines, delivery capability, logistics network, technology |
+| `definition` | string | no | The bounded enterprise context for **building** the production lines, delivery capability, logistics network … |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[5] | no | array of 5 item(s) |
 | `adjacent_contexts` | array[5] | no | array of 5 item(s) |
 | `processes` | array[5] | no | array of 5 item(s) |
-| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions, adj |
+| `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions … |
 | `status` | string | no | candidate |
 | `established_by` | string | no | CR-BP-21d |
 | `established_at` | string | no | 2026-09-08 |
@@ -204,7 +204,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `processes` | `processes:process-eo-build-nmmmt6` | 1 |
 | `processes` | `processes:process-eo-build-tqybhd` | 1 |
 
-## 6. Operational, Control and Metrics Details
+## 7. Operational, Control and Metrics Details
 
 **Inputs, Outputs and Interfaces**: _(pending; backfill at EXT-04)_
 
@@ -216,7 +216,7 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 
 _(Pending EXT-04)_
 
-## 7. Technical Metadata
+## 8. Technical Metadata
 
 - **Source YAML**: record YAML in the same directory as this README
 - **Record version**: 1.0.0

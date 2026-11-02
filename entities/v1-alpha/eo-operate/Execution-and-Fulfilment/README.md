@@ -4,7 +4,7 @@ This directory hosts the canonical ProcessGroup record for `processes:group-eo-o
 
 **Name**: Execution and Fulfilment
 
-## Header and Identity Table
+## 1. Header and Identity Table
 
 | Attribute | Value | Attribute | Value |
 | :--- | :--- | :--- | :--- |
@@ -13,13 +13,11 @@ This directory hosts the canonical ProcessGroup record for `processes:group-eo-o
 | **Version** | 1.0.0 | **Schema** | `dea/v1` |
 | **Name** | Execution and Fulfilment | **Canonical ID** | `processes:group-eo-operate-bfd7jb` |
 
-## Intent and Definition
+## 2. Intent and Definition
 
-**Intent**: The bounded Process Group that organises the Business Process responsibilities of day-to-day operations execution: production, service delivery, logistics, warehousing, quality control, technology platform operation, facility management, asset maintenance, and procurement execution in the EnablementAndOperations x Operate context. v2.4.0 grounding (domain-grounding.md §3.6).
+**Intent and Definition**: The bounded Process Group that organises the Business Process responsibilities of day-to-day operations execution: production, service delivery, logistics, warehousing, quality control, technology platform operation, facility management, asset maintenance, and procurement execution in the EnablementAndOperations x Operate context. v2.4.0 grounding (domain-grounding.md §3.6).
 
-**Definition**: The bounded Process Group that organises the Business Process responsibilities of day-to-day operations execution: production, service delivery, logistics, warehousing, quality control, technology platform operation, facility management, asset maintenance, and procurement execution in the EnablementAndOperations x Operate context. v2.4.0 grounding (domain-grounding.md §3.6).
-
-## 2. Governance and Provenance
+## 3. Governance and Provenance
 
 
 **Change and Audit History**
@@ -29,13 +27,13 @@ This directory hosts the canonical ProcessGroup record for `processes:group-eo-o
 | 2026-09-08 | `CR-BP-21d.1` | Initial Process Group record; promoted from the CR-BP-19 register | System |
 | 2026-10-13 | `CR-BP-113` | href targets repaired to post-mv1 layout (CR-BP-113) | System |
 
-## 5. Properties and Relationships
+## 4. Properties and Relationships
 
 **Properties**
 
 | Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| `definition` | string | no | The bounded Process Group that organises the Business Process responsibilities of day-to-day operations execution: produ |
+| `definition` | string | no | The bounded Process Group that organises the Business Process responsibilities of day-to-day operations execution … |
 | `process_context` | string | no | processes:pc-eo-operate-ydqb96 |
 | `scope` | object | no | object: includes, excludes |
 | `outcomes` | array[4] | no | array of 4 item(s) |
@@ -61,11 +59,11 @@ This directory hosts the canonical ProcessGroup record for `processes:group-eo-o
 | `composes` | `processes:process-eo-operate-j9cjzz` | 1 |
 | `composes` | `processes:process-eo-operate-vzcxx7` | 1 |
 
-## 4. Hierarchical Decomposition (Path Scheme)
+## 5. Hierarchical Decomposition (Path Scheme)
 
 (decomposition relationships pending)
 
-## Operational Details
+## 6. Operational Details
 
 **Inputs / Outputs**: _(pending; backfill at EXT-04)_
 
