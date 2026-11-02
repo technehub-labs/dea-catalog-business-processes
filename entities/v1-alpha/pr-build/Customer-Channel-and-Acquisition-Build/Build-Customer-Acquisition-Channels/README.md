@@ -72,7 +72,12 @@ This directory hosts the canonical Process record for `processes:process-pr-buil
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Acquisition requirements and channel performance baselines (information, mandatory)
+
+**Outputs**:
+- Built and validated customer acquisition channel design (information)
+- Provisioned acquisition channel configuration (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

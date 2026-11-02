@@ -71,7 +71,12 @@ This directory hosts the canonical Process record for `processes:process-pv-desi
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Design Innovation Experiment: working inputs (information) (information, mandatory)
+
+**Outputs**:
+- Design Innovation Experiment: document result (document)
+- Design Innovation Experiment: changed state (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

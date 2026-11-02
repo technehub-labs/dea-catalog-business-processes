@@ -72,7 +72,12 @@ This directory hosts the canonical Process record for `processes:process-ge-desi
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Design Policies and Controls: working inputs (business_object) (business_object, mandatory)
+
+**Outputs**:
+- Design Policies and Controls: document result (document)
+- Design Policies and Controls: changed state (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

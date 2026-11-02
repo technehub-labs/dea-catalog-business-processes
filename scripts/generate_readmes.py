@@ -922,8 +922,22 @@ def _operational_details(record: dict, level: str) -> str:
                 out.append(f"- {exc}")
             out.append("")
     else:
-        out.append("**Inputs / Outputs**: _(pending; backfill at EXT-04)_")
-        out.append("")
+        # CR-BP-220: render from the now-present inputs[]/outputs[] fields
+        inputs = record.get("inputs") or []
+        outputs = record.get("outputs") or []
+        if inputs or outputs:
+            out.append("**Inputs**:")
+            for i in inputs:
+                out.append(f"- {i.get('name', i.get('id', '?'))} ({i.get('type', '?')}"
+                           f"{', mandatory' if i.get('mandatory') else ''})")
+            out.append("")
+            out.append("**Outputs**:")
+            for o in outputs:
+                out.append(f"- {o.get('name', o.get('id', '?'))} ({o.get('type', '?')})")
+            out.append("")
+        else:
+            out.append("**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_")
+            out.append("")
 
     # Roles
     gov = record.get("governance") or {}

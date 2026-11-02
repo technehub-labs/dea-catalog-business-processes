@@ -66,7 +66,11 @@ This directory hosts the canonical Process record for `processes:process-ge-conc
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Develop Governance Strategy: working inputs (information) (information, mandatory)
+
+**Outputs**:
+- Develop Governance Strategy: changed object result (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

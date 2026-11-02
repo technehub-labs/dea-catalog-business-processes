@@ -69,7 +69,12 @@ This directory hosts the canonical Process record for `processes:process-ao-desi
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Design Regulated Role Architecture: working inputs (information) (information, mandatory)
+
+**Outputs**:
+- Design Regulated Role Architecture: document result (document)
+- Design Regulated Role Architecture: changed state (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

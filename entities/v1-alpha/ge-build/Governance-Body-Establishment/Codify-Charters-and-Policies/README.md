@@ -72,7 +72,11 @@ This directory hosts the canonical Process record for `processes:process-ge-buil
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Codify Charters and Policies: working inputs (business_object) (business_object, mandatory)
+
+**Outputs**:
+- Codify Charters and Policies: changed object result (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

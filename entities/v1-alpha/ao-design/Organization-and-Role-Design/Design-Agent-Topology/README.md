@@ -71,7 +71,12 @@ This directory hosts the canonical Process record for `processes:process-ao-desi
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Design Agent Topology: working inputs (information) (information, mandatory)
+
+**Outputs**:
+- Design Agent Topology: document result (document)
+- Design Agent Topology: changed state (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

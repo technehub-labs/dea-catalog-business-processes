@@ -71,7 +71,12 @@ This directory hosts the canonical Process record for `processes:process-eo-desi
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Design Technology Platform Architecture: working inputs (information) (information, mandatory)
+
+**Outputs**:
+- Design Technology Platform Architecture: document result (document)
+- Design Technology Platform Architecture: changed state (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

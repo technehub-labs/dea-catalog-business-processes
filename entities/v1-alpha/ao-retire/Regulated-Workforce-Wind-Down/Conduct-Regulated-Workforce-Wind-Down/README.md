@@ -71,7 +71,11 @@ This directory hosts the canonical Process record for `processes:process-ao-reti
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Conduct Regulated Workforce Wind-Down: working inputs (business_object) (business_object, mandatory)
+
+**Outputs**:
+- Conduct Regulated Workforce Wind-Down: changed object result (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

@@ -71,7 +71,12 @@ This directory hosts the canonical Process record for `processes:process-sd-impr
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Adapt Strategic Direction: working inputs (business_object) (business_object, mandatory)
+
+**Outputs**:
+- Adapt Strategic Direction: information result (information)
+- Adapt Strategic Direction: changed state (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

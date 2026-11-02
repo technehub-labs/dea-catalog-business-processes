@@ -69,7 +69,12 @@ This directory hosts the canonical Process record for `processes:process-fa-impr
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Evolve Treasury and Funding Model: working inputs (business_object) (business_object, mandatory)
+
+**Outputs**:
+- Evolve Treasury and Funding Model: information result (information)
+- Evolve Treasury and Funding Model: changed state (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

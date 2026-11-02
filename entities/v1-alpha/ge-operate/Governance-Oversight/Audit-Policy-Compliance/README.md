@@ -72,7 +72,12 @@ This directory hosts the canonical Process record for `processes:process-ge-oper
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Audit Policy Compliance: working inputs (business_object) (business_object, mandatory)
+
+**Outputs**:
+- Audit Policy Compliance: information result (information)
+- Audit Policy Compliance: changed state (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

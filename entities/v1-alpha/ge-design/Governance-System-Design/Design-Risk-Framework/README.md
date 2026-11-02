@@ -69,7 +69,12 @@ This directory hosts the canonical Process record for `processes:process-ge-desi
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Design Risk Framework: working inputs (business_object) (business_object, mandatory)
+
+**Outputs**:
+- Design Risk Framework: document result (document)
+- Design Risk Framework: changed state (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

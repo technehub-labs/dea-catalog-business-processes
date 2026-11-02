@@ -71,7 +71,12 @@ This directory hosts the canonical Process record for `processes:process-sd-conc
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Define Enterprise Purpose and Ambition: working inputs (business_object) (business_object, mandatory)
+
+**Outputs**:
+- Define Enterprise Purpose and Ambition: document result (document)
+- Define Enterprise Purpose and Ambition: changed state (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 
