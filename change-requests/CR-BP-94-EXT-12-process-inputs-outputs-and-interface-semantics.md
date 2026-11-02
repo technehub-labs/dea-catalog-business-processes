@@ -1,6 +1,6 @@
 # CR-BP-94-EXT-12: Process Inputs, Outputs and Interface Semantics
 
-**Status**: Proposed
+**Status**: Accepted (owner Proceed 2026-11-01; adoption pilot landed in this PR - three L2 records declare inputs/outputs per sections 6-7; checker wired into CI. Predecessor note: EXT-10 remains PR #179 pending; its schema-inventory content is informational for this CR - the IO vocabulary is self-contained in sections 6-7 and enforced by the checker.)
 **Layer**: Process Catalog (Cross-Cutting Documentation)
 **Owner**: Emmanuel A. Otchere
 Programme: CR-BP-94 Documentation Extension

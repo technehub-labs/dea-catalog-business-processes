@@ -4,7 +4,7 @@ catalog:
     candidates: 0
     canonical: 3722
     entities: 3723
-    open_change_requests: 137
+    open_change_requests: 136
     research_files: 339
     retired: 1
   cross_cutting:
@@ -6721,7 +6721,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:group-pr-build-7u5xj6
-    last_modified: '2026-10-31'
+    last_modified: '2026-11-02'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-build/Customer-Channel-and-Acquisition-Build/processes-group-pr-build-7u5xj6.yaml
     research_count: 2
@@ -6765,7 +6765,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:group-pr-operate-7ab3ma
-    last_modified: '2026-10-29'
+    last_modified: '2026-11-02'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
     research_count: 4
@@ -7260,7 +7260,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-pr-build-a46hp7
-    last_modified: '2026-10-31'
+    last_modified: '2026-11-02'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-build/processes-pc-pr-build-a46hp7.yaml
     research_count: 0
@@ -7304,7 +7304,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: processes:pc-pr-operate-pwue5a
-    last_modified: '2026-10-29'
+    last_modified: '2026-11-02'
     lifecycle_status: unknown
     path: entities/v1-alpha/pr-operate/processes-pc-pr-operate-pwue5a.yaml
     research_count: 0
@@ -8547,7 +8547,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:process-pr-build-nygvw7
-    last_modified: '2026-10-31'
+    last_modified: '2026-11-02'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-build/Customer-Channel-and-Acquisition-Build/Build-Customer-Acquisition-Channels/processes-process-pr-build-nygvw7.yaml
     research_count: 3
@@ -8624,7 +8624,7 @@ catalog:
   - candidate_count: 1
     canonical_count: 1
     id: processes:process-pr-operate-bbe384
-    last_modified: '2026-10-29'
+    last_modified: '2026-11-02'
     lifecycle_status: candidate
     path: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/Manage-Customer-Relationship/processes-process-pr-operate-bbe384.yaml
     research_count: 2
