@@ -72,7 +72,13 @@ This directory hosts the canonical Process record for `processes:process-pr-oper
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Customer profile and relationship history (information, mandatory)
+- Onboarding handoff package (prior_process_output)
+
+**Outputs**:
+- Relationship review and renewal recommendation (information)
+- Updated customer relationship state (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

@@ -72,7 +72,11 @@ This directory hosts the canonical Process record for `processes:process-ge-conc
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Initiate Policy and Charter: working inputs (business_object) (business_object, mandatory)
+
+**Outputs**:
+- Initiate Policy and Charter: decision result (decision)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

@@ -71,7 +71,12 @@ This directory hosts the canonical Process record for `processes:process-ao-desi
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Design Competency Framework: working inputs (information) (information, mandatory)
+
+**Outputs**:
+- Design Competency Framework: document result (document)
+- Design Competency Framework: changed state (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

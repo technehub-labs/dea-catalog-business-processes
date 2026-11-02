@@ -71,7 +71,11 @@ This directory hosts the canonical Process record for `processes:process-eo-buil
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Provision Facilities: working inputs (information) (information, mandatory)
+
+**Outputs**:
+- Provision Facilities: changed object result (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

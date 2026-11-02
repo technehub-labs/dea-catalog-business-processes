@@ -69,7 +69,11 @@ This directory hosts the canonical Process record for `processes:process-fa-oper
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Execute Payroll: working inputs (business_object) (business_object, mandatory)
+
+**Outputs**:
+- Execute Payroll: changed object result (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

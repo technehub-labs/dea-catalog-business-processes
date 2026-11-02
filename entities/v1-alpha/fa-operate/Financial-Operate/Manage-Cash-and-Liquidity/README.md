@@ -69,7 +69,11 @@ This directory hosts the canonical Process record for `processes:process-fa-oper
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Manage Cash and Liquidity: working inputs (business_object) (business_object, mandatory)
+
+**Outputs**:
+- Manage Cash and Liquidity: service result result (service_result)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

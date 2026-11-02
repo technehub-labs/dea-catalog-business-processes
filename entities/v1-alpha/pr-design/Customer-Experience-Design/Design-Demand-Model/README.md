@@ -73,7 +73,12 @@ This directory hosts the canonical Process record for `processes:process-pr-desi
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Design Demand Model: working inputs (business_object) (business_object, mandatory)
+
+**Outputs**:
+- Design Demand Model: document result (document)
+- Design Demand Model: changed state (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

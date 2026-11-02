@@ -69,7 +69,12 @@ This directory hosts the canonical Process record for `processes:process-fa-buil
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Implement Financial Systems and Ledger: working inputs (business_object) (business_object, mandatory)
+
+**Outputs**:
+- Implement Financial Systems and Ledger: information result (information)
+- Implement Financial Systems and Ledger: changed state (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

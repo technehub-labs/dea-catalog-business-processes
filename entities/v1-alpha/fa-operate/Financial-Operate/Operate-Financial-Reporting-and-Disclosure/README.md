@@ -69,7 +69,12 @@ This directory hosts the canonical Process record for `processes:process-fa-oper
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Operate Financial Reporting and Disclosure: working inputs (business_object) (business_object, mandatory)
+
+**Outputs**:
+- Operate Financial Reporting and Disclosure: information result (information)
+- Operate Financial Reporting and Disclosure: changed state (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

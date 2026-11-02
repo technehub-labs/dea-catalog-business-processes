@@ -71,7 +71,11 @@ This directory hosts the canonical Process record for `processes:process-ge-reti
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Effect Regulator-Mandated Governance Unwind: working inputs (information) (information, mandatory)
+
+**Outputs**:
+- Effect Regulator-Mandated Governance Unwind: decision result (decision)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

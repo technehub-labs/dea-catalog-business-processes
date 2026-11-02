@@ -70,7 +70,11 @@ This directory hosts the canonical Process record for `processes:process-eo-oper
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Operate Service Delivery: working inputs (information) (information, mandatory)
+
+**Outputs**:
+- Operate Service Delivery: service result result (service_result)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

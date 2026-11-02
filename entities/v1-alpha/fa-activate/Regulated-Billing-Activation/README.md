@@ -58,7 +58,7 @@ separate from capability build and from steady-state billing.
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

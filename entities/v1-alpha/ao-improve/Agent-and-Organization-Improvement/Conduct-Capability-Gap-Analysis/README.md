@@ -71,7 +71,12 @@ This directory hosts the canonical Process record for `processes:process-ao-impr
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Conduct Capability Gap Analysis: working inputs (business_object) (business_object, mandatory)
+
+**Outputs**:
+- Conduct Capability Gap Analysis: information result (information)
+- Conduct Capability Gap Analysis: changed state (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

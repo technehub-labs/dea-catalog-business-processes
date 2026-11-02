@@ -71,7 +71,11 @@ This directory hosts the canonical Process record for `processes:process-sd-buil
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Set Resource Allocation Priorities: working inputs (business_object) (business_object, mandatory)
+
+**Outputs**:
+- Set Resource Allocation Priorities: changed object result (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

@@ -71,7 +71,12 @@ This directory hosts the canonical Process record for `processes:process-ao-desi
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Design Organization Structure: working inputs (information) (information, mandatory)
+
+**Outputs**:
+- Design Organization Structure: document result (document)
+- Design Organization Structure: changed state (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

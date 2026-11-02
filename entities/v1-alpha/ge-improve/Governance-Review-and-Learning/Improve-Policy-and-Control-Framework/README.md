@@ -69,7 +69,12 @@ This directory hosts the canonical Process record for `processes:process-ge-impr
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Improve Policy and Control Framework: working inputs (business_object) (business_object, mandatory)
+
+**Outputs**:
+- Improve Policy and Control Framework: information result (information)
+- Improve Policy and Control Framework: changed state (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

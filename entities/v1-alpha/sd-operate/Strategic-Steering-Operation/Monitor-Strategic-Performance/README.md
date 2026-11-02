@@ -71,7 +71,11 @@ This directory hosts the canonical Process record for `processes:process-sd-oper
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Monitor Strategic Performance: working inputs (information) (information, mandatory)
+
+**Outputs**:
+- Monitor Strategic Performance: service result result (service_result)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

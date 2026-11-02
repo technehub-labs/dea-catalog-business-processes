@@ -71,7 +71,12 @@ This directory hosts the canonical Process record for `processes:process-ao-conc
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Frame Organization Model: working inputs (information) (information, mandatory)
+
+**Outputs**:
+- Frame Organization Model: information result (information)
+- Frame Organization Model: changed state (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

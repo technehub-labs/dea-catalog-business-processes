@@ -71,7 +71,11 @@ This directory hosts the canonical Process record for `processes:process-fa-buil
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Secure Funding Facilities: working inputs (information) (information, mandatory)
+
+**Outputs**:
+- Secure Funding Facilities: changed object result (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

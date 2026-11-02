@@ -69,7 +69,12 @@ This directory hosts the canonical Process record for `processes:process-ge-impr
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Score Audit Findings: working inputs (business_object) (business_object, mandatory)
+
+**Outputs**:
+- Score Audit Findings: information result (information)
+- Score Audit Findings: changed state (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

@@ -71,7 +71,11 @@ This directory hosts the canonical Process record for `processes:process-pv-impr
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Rationalize Portfolio: working inputs (business_object) (business_object, mandatory)
+
+**Outputs**:
+- Rationalize Portfolio: decision result (decision)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

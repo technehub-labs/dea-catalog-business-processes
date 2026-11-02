@@ -71,7 +71,11 @@ This directory hosts the canonical Process record for `processes:process-pv-conc
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Frame Value Proposition Thesis: working inputs (business_object) (business_object, mandatory)
+
+**Outputs**:
+- Frame Value Proposition Thesis: changed object result (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

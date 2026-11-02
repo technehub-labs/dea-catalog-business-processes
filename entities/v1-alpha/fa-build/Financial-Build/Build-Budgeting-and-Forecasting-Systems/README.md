@@ -69,7 +69,11 @@ This directory hosts the canonical Process record for `processes:process-fa-buil
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Build Budgeting and Forecasting Systems: working inputs (business_object) (business_object, mandatory)
+
+**Outputs**:
+- Build Budgeting and Forecasting Systems: changed object result (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

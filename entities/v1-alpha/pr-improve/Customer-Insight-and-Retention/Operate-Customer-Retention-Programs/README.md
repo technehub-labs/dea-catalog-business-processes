@@ -73,7 +73,12 @@ This directory hosts the canonical Process record for `processes:process-pr-impr
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Operate Customer Retention Programs: working inputs (business_object) (business_object, mandatory)
+
+**Outputs**:
+- Operate Customer Retention Programs: document result (document)
+- Operate Customer Retention Programs: changed state (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 

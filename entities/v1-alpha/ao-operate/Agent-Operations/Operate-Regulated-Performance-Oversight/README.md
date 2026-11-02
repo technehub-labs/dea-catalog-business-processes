@@ -69,7 +69,11 @@ This directory hosts the canonical Process record for `processes:process-ao-oper
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(pending; backfill at EXT-04)_
+**Inputs**:
+- Operate Regulated Performance Oversight: working inputs (information) (information, mandatory)
+
+**Outputs**:
+- Operate Regulated Performance Oversight: changed object result (changed_object)
 
 **Roles and Responsibilities**: _(pending; backfill at EXT-04)_
 
