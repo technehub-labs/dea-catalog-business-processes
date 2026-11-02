@@ -25,14 +25,20 @@ owner:
   review_due: '2026-12-31'
   decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
-description: 'Operate the Frame Value Proposition Thesis L2 process within the dea:pc-pv-conceive Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces. '
-trigger: 'A value proposition thesis is needed because the enterprise is establishing a new value-bearing proposition, reframing an existing one, or responding to market shifts that require a re-conception of the value-bearing proposition. '
+description: 'Operate the Frame Value Proposition Thesis L2 process within the dea:pc-pv-conceive Cell
+  Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement
+  for the testable outcome the process produces. '
+trigger: 'A value proposition thesis is needed because the enterprise is establishing a new value-bearing
+  proposition, reframing an existing one, or responding to market shifts that require a re-conception
+  of the value-bearing proposition. '
 outcome: 'A value proposition thesis with bounded scope, target parties, and value claim is committed. '
 identity:
   verb: Frame
   object: Value Proposition Thesis
   scope: (all enterprise segments)
-  outcome_statement: 'A value proposition thesis with bounded scope, target parties, and value claim is committed and ready to drive Design work, covering the value-bearing proposition (product, service, solution, experience, platform, or intellectual property). '
+  outcome_statement: 'A value proposition thesis with bounded scope, target parties, and value claim is
+    committed and ready to drive Design work, covering the value-bearing proposition (product, service,
+    solution, experience, platform, or intellectual property). '
   evidence_links:
   - type: standard
     ref: https://www.apqc.org/resource-overview/resource-library/apqc-process-classification-framework-pcf
@@ -103,7 +109,9 @@ metadata:
     change: href targets repaired to post-mv1 layout (CR-BP-113)
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Product & Value Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Product
+      & Value Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under
+      the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 links:
 - rel: change-request
   href: change-requests/CR-BP-21c-product-value-landing.md
@@ -115,3 +123,19 @@ actors:
 - proposition design authority
 stakeholders:
 - proposition design authority
+inputs:
+- id: in-pv-conceive-
+  type: business_object
+  name: 'Frame Value Proposition Thesis: working inputs (business_object)'
+  description: 'Derived from the record''s documented description and trigger: the process Operate the
+    Frame Value Proposition Thesis L2 process within the dea:pc-pv-conceive Cell Charter. See trigger
+    and outcome for the bounded work this pr'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-pv-conceive-
+  type: changed_object
+  name: 'Frame Value Proposition Thesis: changed object result'
+  description: 'Derived from the record''s documented outcome: A value proposition thesis with bounded
+    scope, target parties, and value claim is committed.'
+  consumer: Downstream consumers per the documented outcome

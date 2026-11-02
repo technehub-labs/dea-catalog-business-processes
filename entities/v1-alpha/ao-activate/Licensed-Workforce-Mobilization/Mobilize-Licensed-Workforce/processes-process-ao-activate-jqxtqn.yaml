@@ -25,14 +25,35 @@ owner:
   review_due: '2026-12-31'
   decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
-description: Mobilize a licensed or regulated workforce under the enterprise regulated-entity approval authority within the dea:pc-ao-activate Cell Charter. The trigger is the enterprise regulated-entity approval for a licensed role; the outcome is the live-readiness activation of the licensed role with the supervisor-controlled scope preserved (signing authority or controlled-function designation), fitness-and-propriety attestation recorded, supervised-training completion preserved, and continuing-supervisor notification activated, so that the licensed individual is live on the regulated personnel record under the regulator continuing supervision.
-trigger: A workforce role whose holders must hold a regulator-issued licence is approved by the enterprise regulated-entity approval authority for live work (banking controlled functions under FCA SMCR; healthcare practitioners under US state licensure; licensed professional services under UK SRA / US bar admissions; aviation crew under FAA / EASA type-rating; insurance producers under NAIC Producer Licensing), and the licensed individual is readied for live work on the regulated personnel record.
-outcome: The licensed or regulated workforce role is formally mobilized under the enterprise regulated-entity approval authority with the regulator-controlled scope preserved, the fitness-and-propriety attestation recorded, supervised-training completion preserved, and the continuing-supervisor notification activated; the licensed individual is live on the regulated personnel record under the regulator continuing supervision and may perform live work in the licensed role.
+description: Mobilize a licensed or regulated workforce under the enterprise regulated-entity approval
+  authority within the dea:pc-ao-activate Cell Charter. The trigger is the enterprise regulated-entity
+  approval for a licensed role; the outcome is the live-readiness activation of the licensed role with
+  the supervisor-controlled scope preserved (signing authority or controlled-function designation), fitness-and-propriety
+  attestation recorded, supervised-training completion preserved, and continuing-supervisor notification
+  activated, so that the licensed individual is live on the regulated personnel record under the regulator
+  continuing supervision.
+trigger: A workforce role whose holders must hold a regulator-issued licence is approved by the enterprise
+  regulated-entity approval authority for live work (banking controlled functions under FCA SMCR; healthcare
+  practitioners under US state licensure; licensed professional services under UK SRA / US bar admissions;
+  aviation crew under FAA / EASA type-rating; insurance producers under NAIC Producer Licensing), and
+  the licensed individual is readied for live work on the regulated personnel record.
+outcome: The licensed or regulated workforce role is formally mobilized under the enterprise regulated-entity
+  approval authority with the regulator-controlled scope preserved, the fitness-and-propriety attestation
+  recorded, supervised-training completion preserved, and the continuing-supervisor notification activated;
+  the licensed individual is live on the regulated personnel record under the regulator continuing supervision
+  and may perform live work in the licensed role.
 identity:
   verb: Mobilize
   object: Licensed Workforce
   scope: enterprise
-  outcome_statement: The licensed or regulated workforce role is formally mobilized under the enterprise regulated-entity approval authority. The regulator-controlled scope is preserved (signing authority or controlled-function designation). The fitness-and-propriety attestation is recorded. The supervised-training completion is preserved. The continuing-supervisor notification is activated. The licensed individual is live on the regulated personnel record under the regulator continuing supervision. Workforce recruitment and general onboarding remain coordinated to Build. Steady-state workforce performance and supervision remain coordinated to Operate. Workforce offboarding and licence surrender remain coordinated to Retire. Non-licensed workforce activation is excluded.
+  outcome_statement: The licensed or regulated workforce role is formally mobilized under the enterprise
+    regulated-entity approval authority. The regulator-controlled scope is preserved (signing authority
+    or controlled-function designation). The fitness-and-propriety attestation is recorded. The supervised-training
+    completion is preserved. The continuing-supervisor notification is activated. The licensed individual
+    is live on the regulated personnel record under the regulator continuing supervision. Workforce recruitment
+    and general onboarding remain coordinated to Build. Steady-state workforce performance and supervision
+    remain coordinated to Operate. Workforce offboarding and licence surrender remain coordinated to Retire.
+    Non-licensed workforce activation is excluded.
   evidence_links:
   - type: regulation
     ref: https://www.handbook.fca.org.uk/handbook/SYSC/25/Annex1/
@@ -129,7 +150,9 @@ metadata:
     change: href targets repaired to post-mv1 layout (CR-BP-113)
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Agency & Organization Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Agency
+      & Organization Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 links:
 - rel: change-request
   href: change-requests/CR-BP-81-ao-activate-admission.md
@@ -159,3 +182,20 @@ stakeholders:
 - workforce management
 - operations function
 - product management
+inputs:
+- id: in-ao-activate-
+  type: information
+  name: 'Mobilize Licensed Workforce: working inputs (information)'
+  description: 'Derived from the record''s documented description and trigger: the process Mobilize a
+    licensed or regulated workforce under the enterprise regulated-entity approval authority within the
+    dea:pc-ao-activate Cell Charter. The tr'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-ao-activate-
+  type: changed_object
+  name: 'Mobilize Licensed Workforce: changed object result'
+  description: 'Derived from the record''s documented outcome: The licensed or regulated workforce role
+    is formally mobilized under the enterprise regulated-entity approval authority with the regulator-controlled
+    scope preserved, the fitness-a'
+  consumer: Downstream consumers per the documented outcome

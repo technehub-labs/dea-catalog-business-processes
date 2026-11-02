@@ -32,15 +32,18 @@ description: 'Design Financial Controls and Policies (design stage, management p
 
   '
 trigger: A control or policy gap is identified.
-outcome: Financial controls and policies are designed to the approved financial architecture, with the policy framework ready for control implementation.
+outcome: Financial controls and policies are designed to the approved financial architecture, with the
+  policy framework ready for control implementation.
 triggers:
 - A control or policy gap is identified.
 outcomes:
-- Financial controls and policies are designed to the approved financial architecture, with the policy framework ready for control implementation.
+- Financial controls and policies are designed to the approved financial architecture, with the policy
+  framework ready for control implementation.
 identity:
   verb: Design
   object: Financial Controls and Policies
-  outcome_statement: Financial controls and policies are designed to the approved financial architecture, with the policy framework ready for control implementation.
+  outcome_statement: Financial controls and policies are designed to the approved financial architecture,
+    with the policy framework ready for control implementation.
   evidence_links:
   - type: documentation
     ref: change-requests/CR-BP-21e.1.md
@@ -71,7 +74,9 @@ metadata:
   change_history:
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance
+      & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 change_history:
 - version: 1.0.0
   date: '2026-09-08'
@@ -104,3 +109,25 @@ actors:
 - finance design authority
 stakeholders:
 - finance design authority
+inputs:
+- id: in-fa-design-uu
+  type: business_object
+  name: 'Design Financial Controls and Policies: working inputs (business_object)'
+  description: 'Derived from the record''s documented description and trigger: the process Design Financial
+    Controls and Policies (design stage, management process). Landed by CR-BP-21e.1 from the FinanceAndAccounting
+    register v2.'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-fa-design-uu
+  type: document
+  name: 'Design Financial Controls and Policies: document result'
+  description: 'Derived from the record''s documented outcome: Financial controls and policies are designed
+    to the approved financial architecture, with the policy framework ready for control implementation.'
+  consumer: Downstream consumers per the documented outcome
+- id: out-fa-design-uu-state
+  type: changed_object
+  name: 'Design Financial Controls and Policies: changed state'
+  description: 'The state change documented in the outcome: Financial controls and policies are designed
+    to the approved financial architecture, with the policy framework ready for control implementation.'
+  consumer: The enterprise state the process changes

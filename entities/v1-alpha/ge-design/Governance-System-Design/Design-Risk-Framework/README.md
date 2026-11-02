@@ -51,6 +51,8 @@ This directory hosts the canonical Process record for `processes:process-ge-desi
 | `change_history` | array[2] | no | array of 2 item(s) |
 | `actors` | array[3] | no | array of 3 item(s) |
 | `stakeholders` | array[3] | no | array of 3 item(s) |
+| `inputs` | array[1] | no | array of 1 item(s) |
+| `outputs` | array[2] | no | array of 2 item(s) |
 
 
 ## 4. Hierarchical Decomposition (Path Scheme)

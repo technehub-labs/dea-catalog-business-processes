@@ -25,8 +25,11 @@ owner:
   review_due: '2026-12-31'
   decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
-description: 'Operate the Run Production Line L2 process within the dea:pc-oe-operate Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces. '
-trigger: 'Production line operation is needed because the stood-up line must produce output to plan on each cycle. '
+description: 'Operate the Run Production Line L2 process within the dea:pc-oe-operate Cell Charter. See
+  trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable
+  outcome the process produces. '
+trigger: 'Production line operation is needed because the stood-up line must produce output to plan on
+  each cycle. '
 outcome: 'The production line is run to plan with output and quality recorded. '
 identity:
   verb: Run
@@ -86,7 +89,9 @@ metadata:
     change: href targets repaired to post-mv1 layout (CR-BP-113)
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Enablement & Operations Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Enablement
+      & Operations Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 links:
 - rel: change-request
   href: change-requests/CR-BP-21d.1-operations-enablement-completion.md
@@ -98,3 +103,19 @@ actors:
 - product management
 stakeholders:
 - product management
+inputs:
+- id: in-eo-operate-x
+  type: business_object
+  name: 'Run Production Line: working inputs (business_object)'
+  description: 'Derived from the record''s documented description and trigger: the process Operate the
+    Run Production Line L2 process within the dea:pc-oe-operate Cell Charter. See trigger and outcome
+    for the bounded work this process owns; '
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-eo-operate-x
+  type: changed_object
+  name: 'Run Production Line: changed object result'
+  description: 'Derived from the record''s documented outcome: The production line is run to plan with
+    output and quality recorded.'
+  consumer: Downstream consumers per the documented outcome

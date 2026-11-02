@@ -25,14 +25,19 @@ owner:
   review_due: '2026-12-31'
   decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
-description: 'Transition a proposition, product or service out of operational service in a controlled manner: withdrawal planning, stakeholder transition, and removal from operational reliance, within the dea:pc-pv-retire Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces. '
+description: 'Transition a proposition, product or service out of operational service in a controlled
+  manner: withdrawal planning, stakeholder transition, and removal from operational reliance, within the
+  dea:pc-pv-retire Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement
+  for the testable outcome the process produces. '
 trigger: 'An approved retirement decision exists for the proposition, product or service. '
-outcome: 'The proposition, product or service is no longer operationally relied upon; residual obligations are identified and routed. '
+outcome: 'The proposition, product or service is no longer operationally relied upon; residual obligations
+  are identified and routed. '
 identity:
   verb: Transition
   object: Proposition Out of Service
   scope: (all enterprise segments)
-  outcome_statement: 'The proposition, product or service is withdrawn from operational reliance with stakeholders transitioned and residual obligations routed. '
+  outcome_statement: 'The proposition, product or service is withdrawn from operational reliance with
+    stakeholders transitioned and residual obligations routed. '
   evidence_links:
   - type: standard
     ref: https://www.axelos.com/best-practice-solutions/itil
@@ -87,7 +92,9 @@ metadata:
     change: href targets repaired to post-mv1 layout (CR-BP-113)
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Product & Value Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Product
+      & Value Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under
+      the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 links:
 - rel: change-request
   href: change-requests/CR-BP-64-pv-activate-retire-admission.md
@@ -101,3 +108,19 @@ actors:
 - proposition design authority
 stakeholders:
 - proposition design authority
+inputs:
+- id: in-pv-retire-6u
+  type: business_object
+  name: 'Transition Proposition Out of Service: working inputs (business_object)'
+  description: 'Derived from the record''s documented description and trigger: the process Transition
+    a proposition, product or service out of operational service in a controlled manner: withdrawal planning,
+    stakeholder transition, and remov'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-pv-retire-6u
+  type: changed_object
+  name: 'Transition Proposition Out of Service: changed object result'
+  description: 'Derived from the record''s documented outcome: The proposition, product or service is
+    no longer operationally relied upon; residual obligations are identified and routed.'
+  consumer: Downstream consumers per the documented outcome

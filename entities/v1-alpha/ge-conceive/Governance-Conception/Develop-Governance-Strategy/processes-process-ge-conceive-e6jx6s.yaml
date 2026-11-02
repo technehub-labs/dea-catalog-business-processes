@@ -34,17 +34,21 @@ description: 'Operate the Develop Governance Strategy L2 process within the
   for the testable outcome the process produces.
 
   '
-trigger: 'A new governance strategy framing is needed because the enterprise is establishing a new mandate, reframing an existing one, or responding to a regulatory or strategic shift that requires board-level realignment.
+trigger: 'A new governance strategy framing is needed because the enterprise is establishing a new mandate,
+  reframing an existing one, or responding to a regulatory or strategic shift that requires board-level
+  realignment.
 
   '
-outcome: 'A governance strategy document with bounded mandate, strategic posture, and policy direction is committed.
+outcome: 'A governance strategy document with bounded mandate, strategic posture, and policy direction
+  is committed.
 
   '
 identity:
   verb: Develop
   object: Governance Strategy
   scope: (all customer segments)
-  outcome_statement: 'A governance strategy document with bounded mandate, strategic posture, and policy direction is committed and ready to drive Design work.
+  outcome_statement: 'A governance strategy document with bounded mandate, strategic posture, and policy
+    direction is committed and ready to drive Design work.
 
     '
   evidence_links:
@@ -81,10 +85,17 @@ metadata:
   - cr: CR-BP-15-IMP
     phase: phase-5
     date: '2026-09-06'
-    change: 'Phase 5 tranche migration: legacy intent migrated to canonical vocabulary; legacy scalar `process_context` migrated to canonical `context:` block; legacy `process_audience` removed (CR-BP-14 /13); canonical `serves` relationship toward the ECF coordinate added.'
+    change: 'Phase 5 tranche migration: legacy intent migrated to canonical vocabulary; legacy scalar
+      `process_context` migrated to canonical `context:` block; legacy `process_audience` removed (CR-BP-14
+      /13); canonical `serves` relationship toward the ECF coordinate added.'
   - cr: CR-BP-20
     date: '2026-09-07'
-    change: 'CR-BP-20 Option A GE/SD split (user-approved 2026-09-07, grounded in domain-grounding.md §3.1 and §3.2): Develop corporate strategy is excluded from GovernanceAndExistence per v2.4.0 (GE authorises but does not direct). This process is scheduled for migration to StrategyAndDirection × Conceive (dea:pc-sd-conceive) in CR-BP-21a (planned landing tranche). Until that cell lands, this process remains affiliated with GE × Conceive and composed by dea:group-governance-conception (formerly dea:group-strategy-and-governance-conception).'
+    change: 'CR-BP-20 Option A GE/SD split (user-approved 2026-09-07, grounded in domain-grounding.md
+      §3.1 and §3.2): Develop corporate strategy is excluded from GovernanceAndExistence per v2.4.0 (GE
+      authorises but does not direct). This process is scheduled for migration to StrategyAndDirection
+      × Conceive (dea:pc-sd-conceive) in CR-BP-21a (planned landing tranche). Until that cell lands, this
+      process remains affiliated with GE × Conceive and composed by dea:group-governance-conception (formerly
+      dea:group-strategy-and-governance-conception).'
   - cr: CR-BP-21a
     date: '2026-09-07'
     change: 'L2 migration executed. This entry is now DEPRECATED; the active
@@ -140,7 +151,9 @@ metadata:
     change: href targets repaired to post-mv1 layout (CR-BP-113)
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Governance & Existence Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Governance
+      & Existence Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 links:
 - rel: change-request
   href: change-requests/CR-BP-13a-party-and-relationship-admission.md
@@ -160,3 +173,19 @@ stakeholders:
 - governing board
 - operations function
 - strategy function
+inputs:
+- id: in-ge-conceive-
+  type: information
+  name: 'Develop Governance Strategy: working inputs (information)'
+  description: 'Derived from the record''s documented description and trigger: the process Operate the
+    Develop Governance Strategy L2 process within the dea:pc-ge-c Cell Charter. See trigger and outcome
+    for the bounded work this process owns'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-ge-conceive-
+  type: changed_object
+  name: 'Develop Governance Strategy: changed object result'
+  description: 'Derived from the record''s documented outcome: A governance strategy document with bounded
+    mandate, strategic posture, and policy direction is committed.'
+  consumer: Downstream consumers per the documented outcome

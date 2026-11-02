@@ -32,15 +32,18 @@ description: 'Perform Financial Close (operate stage, core process). Landed by C
 
   '
 trigger: A period close boundary is reached.
-outcome: Financial close is performed with period-end entries, reconciliations, and management reports produced for reporting.
+outcome: Financial close is performed with period-end entries, reconciliations, and management reports
+  produced for reporting.
 triggers:
 - A period close boundary is reached.
 outcomes:
-- Financial close is performed with period-end entries, reconciliations, and management reports produced for reporting.
+- Financial close is performed with period-end entries, reconciliations, and management reports produced
+  for reporting.
 identity:
   verb: Perform
   object: Financial Close
-  outcome_statement: Financial close is performed with period-end entries, reconciliations, and management reports produced for reporting.
+  outcome_statement: Financial close is performed with period-end entries, reconciliations, and management
+    reports produced for reporting.
   evidence_links:
   - type: documentation
     ref: change-requests/CR-BP-21e.1.md
@@ -71,7 +74,9 @@ metadata:
   change_history:
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance
+      & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 change_history:
 - version: 1.0.0
   date: '2026-09-08'
@@ -106,3 +111,25 @@ actors:
 - compliance function
 stakeholders:
 - compliance function
+inputs:
+- id: in-fa-operate-4
+  type: business_object
+  name: 'Perform Financial Close: working inputs (business_object)'
+  description: 'Derived from the record''s documented description and trigger: the process Perform Financial
+    Close (operate stage, core process). Landed by CR-BP-21e.1 from the FinanceAndAccounting register
+    v2.'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-fa-operate-4
+  type: information
+  name: 'Perform Financial Close: information result'
+  description: 'Derived from the record''s documented outcome: Financial close is performed with period-end
+    entries, reconciliations, and management reports produced for reporting.'
+  consumer: Downstream consumers per the documented outcome
+- id: out-fa-operate-4-state
+  type: changed_object
+  name: 'Perform Financial Close: changed state'
+  description: 'The state change documented in the outcome: Financial close is performed with period-end
+    entries, reconciliations, and management reports produced for reporting.'
+  consumer: The enterprise state the process changes

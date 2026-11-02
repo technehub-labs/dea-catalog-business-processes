@@ -32,15 +32,18 @@ description: 'Design Treasury and Funding Model (design stage, management proces
 
   '
 trigger: Treasury policy or funding posture is reviewed.
-outcome: Treasury and funding model is designed with cash, liquidity, and funding policy coordinated for treasury operations.
+outcome: Treasury and funding model is designed with cash, liquidity, and funding policy coordinated for
+  treasury operations.
 triggers:
 - Treasury policy or funding posture is reviewed.
 outcomes:
-- Treasury and funding model is designed with cash, liquidity, and funding policy coordinated for treasury operations.
+- Treasury and funding model is designed with cash, liquidity, and funding policy coordinated for treasury
+  operations.
 identity:
   verb: Design
   object: Treasury and Funding Model
-  outcome_statement: Treasury and funding model is designed with cash, liquidity, and funding policy coordinated for treasury operations.
+  outcome_statement: Treasury and funding model is designed with cash, liquidity, and funding policy coordinated
+    for treasury operations.
   evidence_links:
   - type: documentation
     ref: change-requests/CR-BP-21e.1.md
@@ -71,7 +74,9 @@ metadata:
   change_history:
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance
+      & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 change_history:
 - version: 1.0.0
   date: '2026-09-08'
@@ -104,3 +109,25 @@ actors:
 - finance design authority
 stakeholders:
 - finance design authority
+inputs:
+- id: in-fa-design-k5
+  type: business_object
+  name: 'Design Treasury and Funding Model: working inputs (business_object)'
+  description: 'Derived from the record''s documented description and trigger: the process Design Treasury
+    and Funding Model (design stage, management process). Landed by CR-BP-21e.1 from the FinanceAndAccounting
+    register v2.'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-fa-design-k5
+  type: document
+  name: 'Design Treasury and Funding Model: document result'
+  description: 'Derived from the record''s documented outcome: Treasury and funding model is designed
+    with cash, liquidity, and funding policy coordinated for treasury operations.'
+  consumer: Downstream consumers per the documented outcome
+- id: out-fa-design-k5-state
+  type: changed_object
+  name: 'Design Treasury and Funding Model: changed state'
+  description: 'The state change documented in the outcome: Treasury and funding model is designed with
+    cash, liquidity, and funding policy coordinated for treasury operations.'
+  consumer: The enterprise state the process changes

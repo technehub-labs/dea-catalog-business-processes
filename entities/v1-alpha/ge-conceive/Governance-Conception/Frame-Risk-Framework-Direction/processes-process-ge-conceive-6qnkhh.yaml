@@ -32,15 +32,18 @@ description: 'Frame Risk Framework Direction (conceive stage, strategic process)
 
   '
 trigger: A governance mandate requires an enterprise risk posture.
-outcome: Risk framework direction is framed with risk appetite, tolerance bands, and governance posture defined, setting the strategic direction for risk framework design.
+outcome: Risk framework direction is framed with risk appetite, tolerance bands, and governance posture
+  defined, setting the strategic direction for risk framework design.
 triggers:
 - A governance mandate requires an enterprise risk posture.
 outcomes:
-- Risk framework direction is framed with risk appetite, tolerance bands, and governance posture defined, setting the strategic direction for risk framework design.
+- Risk framework direction is framed with risk appetite, tolerance bands, and governance posture defined,
+  setting the strategic direction for risk framework design.
 identity:
   verb: Frame
   object: Risk Framework Direction
-  outcome_statement: Risk framework direction is framed with risk appetite, tolerance bands, and governance posture defined, setting the strategic direction for risk framework design.
+  outcome_statement: Risk framework direction is framed with risk appetite, tolerance bands, and governance
+    posture defined, setting the strategic direction for risk framework design.
   evidence_links:
   - type: documentation
     ref: change-requests/CR-BP-21f.1.md
@@ -71,7 +74,9 @@ metadata:
   change_history:
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Governance & Existence Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Governance
+      & Existence Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 change_history:
 - version: 1.0.0
   date: '2026-09-08'
@@ -108,3 +113,27 @@ stakeholders:
 - governing board
 - operations function
 - strategy function
+inputs:
+- id: in-ge-conceive-
+  type: information
+  name: 'Frame Risk Framework Direction: working inputs (information)'
+  description: 'Derived from the record''s documented description and trigger: the process Frame Risk
+    Framework Direction (conceive stage, strategic process). Landed by CR-BP-21f.1 from the GovernanceAndExistence
+    register v2.'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-ge-conceive-
+  type: document
+  name: 'Frame Risk Framework Direction: document result'
+  description: 'Derived from the record''s documented outcome: Risk framework direction is framed with
+    risk appetite, tolerance bands, and governance posture defined, setting the strategic direction for
+    risk framework design.'
+  consumer: Downstream consumers per the documented outcome
+- id: out-ge-conceive--state
+  type: changed_object
+  name: 'Frame Risk Framework Direction: changed state'
+  description: 'The state change documented in the outcome: Risk framework direction is framed with risk
+    appetite, tolerance bands, and governance posture defined, setting the strategic direction for risk
+    frame'
+  consumer: The enterprise state the process changes

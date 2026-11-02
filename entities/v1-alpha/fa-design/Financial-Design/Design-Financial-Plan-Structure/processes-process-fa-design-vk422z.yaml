@@ -25,14 +25,19 @@ owner:
   review_due: '2026-12-31'
   decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
-description: 'Operate the Design Financial Plan Structure L2 process within the dea:pc-fa-design Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces. '
-trigger: 'A financial plan structure design is needed because the framed finance strategy requires bounded chart of accounts, cost allocation model, and financial controls designs. '
-outcome: 'A financial plan structure with chart of accounts, cost allocation model, and financial controls design is committed. '
+description: 'Operate the Design Financial Plan Structure L2 process within the dea:pc-fa-design Cell
+  Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement
+  for the testable outcome the process produces. '
+trigger: 'A financial plan structure design is needed because the framed finance strategy requires bounded
+  chart of accounts, cost allocation model, and financial controls designs. '
+outcome: 'A financial plan structure with chart of accounts, cost allocation model, and financial controls
+  design is committed. '
 identity:
   verb: Design
   object: Financial Plan Structure
   scope: (all enterprise segments)
-  outcome_statement: 'A financial plan structure with chart of accounts, cost allocation model, and financial controls design is committed and ready for Build-stage planning. '
+  outcome_statement: 'A financial plan structure with chart of accounts, cost allocation model, and financial
+    controls design is committed and ready for Build-stage planning. '
   evidence_links:
   - type: standard
     ref: https://www.apqc.org/resource-overview/resource-library/apqc-process-classification-framework-pcf
@@ -103,7 +108,9 @@ metadata:
     change: href targets repaired to post-mv1 layout (CR-BP-113)
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance
+      & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 links:
 - rel: change-request
   href: change-requests/CR-BP-21e-finance-accounting-landing.md
@@ -115,3 +122,25 @@ actors:
 - finance design authority
 stakeholders:
 - finance design authority
+inputs:
+- id: in-fa-design-vk
+  type: information
+  name: 'Design Financial Plan Structure: working inputs (information)'
+  description: 'Derived from the record''s documented description and trigger: the process Operate the
+    Design Financial Plan Structure L2 process within the dea:pc-fa-design Cell Charter. See trigger and
+    outcome for the bounded work this pro'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-fa-design-vk
+  type: document
+  name: 'Design Financial Plan Structure: document result'
+  description: 'Derived from the record''s documented outcome: A financial plan structure with chart of
+    accounts, cost allocation model, and financial controls design is committed.'
+  consumer: Downstream consumers per the documented outcome
+- id: out-fa-design-vk-state
+  type: changed_object
+  name: 'Design Financial Plan Structure: changed state'
+  description: 'The state change documented in the outcome: A financial plan structure with chart of accounts,
+    cost allocation model, and financial controls design is committed.'
+  consumer: The enterprise state the process changes

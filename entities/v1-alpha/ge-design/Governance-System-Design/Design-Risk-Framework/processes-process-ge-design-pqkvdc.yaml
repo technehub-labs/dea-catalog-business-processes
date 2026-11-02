@@ -32,15 +32,18 @@ description: 'Design Risk Framework (design stage, strategic process). Landed by
 
   '
 trigger: The risk framework direction is committed.
-outcome: The risk framework is designed with taxonomy, assessment scales, and governance integration committed, providing the risk direction for the build stage.
+outcome: The risk framework is designed with taxonomy, assessment scales, and governance integration committed,
+  providing the risk direction for the build stage.
 triggers:
 - The risk framework direction is committed.
 outcomes:
-- The risk framework is designed with taxonomy, assessment scales, and governance integration committed, providing the risk direction for the build stage.
+- The risk framework is designed with taxonomy, assessment scales, and governance integration committed,
+  providing the risk direction for the build stage.
 identity:
   verb: Design
   object: Risk Framework
-  outcome_statement: The risk framework is designed with taxonomy, assessment scales, and governance integration committed, providing the risk direction for the build stage.
+  outcome_statement: The risk framework is designed with taxonomy, assessment scales, and governance integration
+    committed, providing the risk direction for the build stage.
   evidence_links:
   - type: documentation
     ref: change-requests/CR-BP-21f.1.md
@@ -71,7 +74,9 @@ metadata:
   change_history:
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Governance & Existence Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Governance
+      & Existence Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 change_history:
 - version: 1.0.0
   date: '2026-09-08'
@@ -108,3 +113,27 @@ stakeholders:
 - governing board
 - operations function
 - strategy function
+inputs:
+- id: in-ge-design-pq
+  type: business_object
+  name: 'Design Risk Framework: working inputs (business_object)'
+  description: 'Derived from the record''s documented description and trigger: the process Design Risk
+    Framework (design stage, strategic process). Landed by CR-BP-21f.1 from the GovernanceAndExistence
+    register v2.'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-ge-design-pq
+  type: document
+  name: 'Design Risk Framework: document result'
+  description: 'Derived from the record''s documented outcome: The risk framework is designed with taxonomy,
+    assessment scales, and governance integration committed, providing the risk direction for the build
+    stage.'
+  consumer: Downstream consumers per the documented outcome
+- id: out-ge-design-pq-state
+  type: changed_object
+  name: 'Design Risk Framework: changed state'
+  description: 'The state change documented in the outcome: The risk framework is designed with taxonomy,
+    assessment scales, and governance integration committed, providing the risk direction for the build
+    stag'
+  consumer: The enterprise state the process changes

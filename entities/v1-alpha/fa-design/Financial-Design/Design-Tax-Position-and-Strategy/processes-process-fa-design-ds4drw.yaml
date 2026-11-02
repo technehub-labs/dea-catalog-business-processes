@@ -32,7 +32,8 @@ description: 'Design Tax Position and Strategy (design stage, management process
 
   '
 trigger: A new tax exposure or jurisdictional change emerges.
-outcome: Tax position and strategy are designed with positions documented and the strategy ready for tax planning.
+outcome: Tax position and strategy are designed with positions documented and the strategy ready for tax
+  planning.
 triggers:
 - A new tax exposure or jurisdictional change emerges.
 outcomes:
@@ -40,7 +41,8 @@ outcomes:
 identity:
   verb: Design
   object: Tax Position and Strategy
-  outcome_statement: Tax position and strategy are designed with positions documented and the strategy ready for tax planning.
+  outcome_statement: Tax position and strategy are designed with positions documented and the strategy
+    ready for tax planning.
   evidence_links:
   - type: documentation
     ref: change-requests/CR-BP-21e.1.md
@@ -71,7 +73,9 @@ metadata:
   change_history:
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance
+      & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 change_history:
 - version: 1.0.0
   date: '2026-09-08'
@@ -104,3 +108,25 @@ actors:
 - finance design authority
 stakeholders:
 - finance design authority
+inputs:
+- id: in-fa-design-ds
+  type: business_object
+  name: 'Design Tax Position and Strategy: working inputs (business_object)'
+  description: 'Derived from the record''s documented description and trigger: the process Design Tax
+    Position and Strategy (design stage, management process). Landed by CR-BP-21e.1 from the FinanceAndAccounting
+    register v2.'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-fa-design-ds
+  type: document
+  name: 'Design Tax Position and Strategy: document result'
+  description: 'Derived from the record''s documented outcome: Tax position and strategy are designed
+    with positions documented and the strategy ready for tax planning.'
+  consumer: Downstream consumers per the documented outcome
+- id: out-fa-design-ds-state
+  type: changed_object
+  name: 'Design Tax Position and Strategy: changed state'
+  description: 'The state change documented in the outcome: Tax position and strategy are designed with
+    positions documented and the strategy ready for tax planning.'
+  consumer: The enterprise state the process changes

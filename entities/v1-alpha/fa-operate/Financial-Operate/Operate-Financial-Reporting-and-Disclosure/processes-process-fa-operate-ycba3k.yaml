@@ -32,15 +32,18 @@ description: 'Operate Financial Reporting and Disclosure (operate stage, core pr
 
   '
 trigger: A reporting or disclosure milestone arrives.
-outcome: Financial reporting and disclosure are produced with statements, footnotes, and disclosures delivered for internal and external stakeholders.
+outcome: Financial reporting and disclosure are produced with statements, footnotes, and disclosures delivered
+  for internal and external stakeholders.
 triggers:
 - A reporting or disclosure milestone arrives.
 outcomes:
-- Financial reporting and disclosure are produced with statements, footnotes, and disclosures delivered for internal and external stakeholders.
+- Financial reporting and disclosure are produced with statements, footnotes, and disclosures delivered
+  for internal and external stakeholders.
 identity:
   verb: Operate
   object: Financial Reporting and Disclosure
-  outcome_statement: Financial reporting and disclosure are produced with statements, footnotes, and disclosures delivered for internal and external stakeholders.
+  outcome_statement: Financial reporting and disclosure are produced with statements, footnotes, and disclosures
+    delivered for internal and external stakeholders.
   evidence_links:
   - type: documentation
     ref: change-requests/CR-BP-21e.1.md
@@ -71,7 +74,9 @@ metadata:
   change_history:
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance
+      & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 change_history:
 - version: 1.0.0
   date: '2026-09-08'
@@ -106,3 +111,25 @@ actors:
 - compliance function
 stakeholders:
 - compliance function
+inputs:
+- id: in-fa-operate-y
+  type: business_object
+  name: 'Operate Financial Reporting and Disclosure: working inputs (business_object)'
+  description: 'Derived from the record''s documented description and trigger: the process Operate Financial
+    Reporting and Disclosure (operate stage, core process). Landed by CR-BP-21e.1 from the FinanceAndAccounting
+    register v2.'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-fa-operate-y
+  type: information
+  name: 'Operate Financial Reporting and Disclosure: information result'
+  description: 'Derived from the record''s documented outcome: Financial reporting and disclosure are
+    produced with statements, footnotes, and disclosures delivered for internal and external stakeholders.'
+  consumer: Downstream consumers per the documented outcome
+- id: out-fa-operate-y-state
+  type: changed_object
+  name: 'Operate Financial Reporting and Disclosure: changed state'
+  description: 'The state change documented in the outcome: Financial reporting and disclosure are produced
+    with statements, footnotes, and disclosures delivered for internal and external stakeholders.'
+  consumer: The enterprise state the process changes

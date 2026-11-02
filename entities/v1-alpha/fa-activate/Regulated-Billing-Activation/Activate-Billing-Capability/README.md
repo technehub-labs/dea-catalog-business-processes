@@ -53,6 +53,8 @@ This directory hosts the canonical Process record for `processes:process-fa-acti
 | `evidence` | array[6] | no | array of 6 item(s) |
 | `actors` | array[5] | no | array of 5 item(s) |
 | `stakeholders` | array[5] | no | array of 5 item(s) |
+| `inputs` | array[1] | no | array of 1 item(s) |
+| `outputs` | array[1] | no | array of 1 item(s) |
 
 
 ## 4. Hierarchical Decomposition (Path Scheme)

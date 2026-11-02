@@ -25,20 +25,34 @@ owner:
   review_due: '2026-12-31'
   decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
-description: 'Conduct a regulated workforce wind-down under statutory mass-layoff, consultation, notice, severance, and transition-support obligations within the dea:pc-ao-retire Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces.
+description: 'Conduct a regulated workforce wind-down under statutory mass-layoff, consultation, notice,
+  severance, and transition-support obligations within the dea:pc-ao-retire Cell Charter. See trigger
+  and outcome for the bounded work this process owns; see identity.outcome_statement for the testable
+  outcome the process produces.
 
   '
-trigger: 'A regulated wind-down event is authorized (mass layoff, agent unit decommission, or organizational unit wind-down) where statutory advance-notice and consultation obligations are triggered by the size and nature of the employment reduction.
+trigger: 'A regulated wind-down event is authorized (mass layoff, agent unit decommission, or organizational
+  unit wind-down) where statutory advance-notice and consultation obligations are triggered by the size
+  and nature of the employment reduction.
 
   '
-outcome: 'The wind-down is executed under statutory notice, consultation obligations are satisfied with documentation, statutory liabilities (notice pay, severance, benefits continuation) are recorded and funded, and transition supports (state dislocated-worker referral, training, health-care continuation) are routed to the affected population.
+outcome: 'The wind-down is executed under statutory notice, consultation obligations are satisfied with
+  documentation, statutory liabilities (notice pay, severance, benefits continuation) are recorded and
+  funded, and transition supports (state dislocated-worker referral, training, health-care continuation)
+  are routed to the affected population.
 
   '
 identity:
   verb: Conduct
   object: Regulated Workforce Wind-Down
   scope: enterprise
-  outcome_statement: 'The workforce is wound down under controlled regulated obligations: statutory notice is served, worker-representative consultation is documented, fair-selection criteria are applied and recorded, severance and benefits continuation are funded and recorded, and transition supports are routed to the affected population. Affected workers and their representatives, the state dislocated-worker unit, and the local chief elected official all receive the notice the controlling statute or regulation requires. Steady-state offboarding of individual agents and asset retirement are explicitly coordinated out to the Operate and EnablementAndOperations x Retire coordinates respectively.
+  outcome_statement: 'The workforce is wound down under controlled regulated obligations: statutory notice
+    is served, worker-representative consultation is documented, fair-selection criteria are applied and
+    recorded, severance and benefits continuation are funded and recorded, and transition supports are
+    routed to the affected population. Affected workers and their representatives, the state dislocated-worker
+    unit, and the local chief elected official all receive the notice the controlling statute or regulation
+    requires. Steady-state offboarding of individual agents and asset retirement are explicitly coordinated
+    out to the Operate and EnablementAndOperations x Retire coordinates respectively.
 
     '
   evidence_links:
@@ -127,7 +141,9 @@ metadata:
     change: href targets repaired to post-mv1 layout (CR-BP-113)
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Agency & Organization Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Agency
+      & Organization Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 links:
 - rel: change-request
   href: change-requests/CR-BP-73-ao-retire-admission.md
@@ -151,3 +167,20 @@ stakeholders:
 - governing board
 - workforce management
 - operations function
+inputs:
+- id: in-ao-retire-g3
+  type: business_object
+  name: 'Conduct Regulated Workforce Wind-Down: working inputs (business_object)'
+  description: 'Derived from the record''s documented description and trigger: the process Conduct a regulated
+    workforce wind-down under statutory mass-layoff, consultation, notice, severance, and transition-support
+    obligations within the de'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-ao-retire-g3
+  type: changed_object
+  name: 'Conduct Regulated Workforce Wind-Down: changed object result'
+  description: 'Derived from the record''s documented outcome: The wind-down is executed under statutory
+    notice, consultation obligations are satisfied with documentation, statutory liabilities (notice pay,
+    severance, benefits continuation) ar'
+  consumer: Downstream consumers per the documented outcome

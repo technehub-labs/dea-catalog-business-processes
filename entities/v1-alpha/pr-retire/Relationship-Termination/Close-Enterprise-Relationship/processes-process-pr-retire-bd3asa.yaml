@@ -25,14 +25,20 @@ owner:
   review_due: '2026-12-31'
   decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
-description: 'Close out an enterprise relationship with a customer, supplier or partner: settle the contract, offboard the party, and resolve residual obligations, records and rights, within the dea:pc-pr-retire Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces. '
-trigger: 'A customer, supplier or partner relationship reaches its agreed or mandated end (contract expiry, termination, or regulated offboarding requirement). '
-outcome: 'The relationship is closed out: obligations are fulfilled or settled, records and rights are resolved, and the close is executed with evidence. '
+description: 'Close out an enterprise relationship with a customer, supplier or partner: settle the contract,
+  offboard the party, and resolve residual obligations, records and rights, within the dea:pc-pr-retire
+  Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement
+  for the testable outcome the process produces. '
+trigger: 'A customer, supplier or partner relationship reaches its agreed or mandated end (contract expiry,
+  termination, or regulated offboarding requirement). '
+outcome: 'The relationship is closed out: obligations are fulfilled or settled, records and rights are
+  resolved, and the close is executed with evidence. '
 identity:
   verb: Close
   object: Enterprise Relationship
   scope: (all enterprise segments)
-  outcome_statement: 'The relationship is closed out: obligations are fulfilled or settled, records and rights are resolved, and the close is executed with evidence. '
+  outcome_statement: 'The relationship is closed out: obligations are fulfilled or settled, records and
+    rights are resolved, and the close is executed with evidence. '
   evidence_links:
   - type: standard
     ref: https://www.worldcc.com/
@@ -95,7 +101,9 @@ metadata:
     change: href targets repaired to post-mv1 layout (CR-BP-113)
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Party & Relationship Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Party
+      & Relationship Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 links:
 - rel: change-request
   href: change-requests/CR-BP-67-pr-retire-admission.md
@@ -113,3 +121,19 @@ stakeholders:
 - governing board
 - customer relationship management
 - supplier and partner management
+inputs:
+- id: in-pr-retire-bd
+  type: information
+  name: 'Close Enterprise Relationship: working inputs (information)'
+  description: 'Derived from the record''s documented description and trigger: the process Close out an
+    enterprise relationship with a customer, supplier or partner: settle the contract, offboard the party,
+    and resolve residual obligations, '
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-pr-retire-bd
+  type: changed_object
+  name: 'Close Enterprise Relationship: changed object result'
+  description: 'Derived from the record''s documented outcome: The relationship is closed out: obligations
+    are fulfilled or settled, records and rights are resolved, and the close is executed with evidence.'
+  consumer: Downstream consumers per the documented outcome

@@ -53,6 +53,8 @@ This directory hosts the canonical Process record for `processes:process-fa-reti
 | `context` | array[1] | no | array of 1 item(s) |
 | `actors` | array[4] | no | array of 4 item(s) |
 | `stakeholders` | array[4] | no | array of 4 item(s) |
+| `inputs` | array[1] | no | array of 1 item(s) |
+| `outputs` | array[1] | no | array of 1 item(s) |
 
 
 ## 4. Hierarchical Decomposition (Path Scheme)

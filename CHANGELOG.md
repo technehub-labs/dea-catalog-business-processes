@@ -6,6 +6,11 @@ All notable changes to this repository are documented here. Format follows
 
 ## [Unreleased]
 
+### CR-BP-220: L2 IO Backfill (complete declaration)
+
+All 144 previously-undeclared L2 Process records now declare inputs/outputs per EXT-12 sections 6-7, derived mechanically from each record's documented description/trigger/outcome (no invention - every item cites its source field). IO coverage 146/146 L2 records. EXT-12 gate 37 OK (0 findings); READMEs regenerated; CATALOG.yaml current. Companion: information-assets CR-IA-CAT-06 mints the information-typed outputs as assets.
+
+
 ### CR-BP-135: Composes Relationship-Type Token Migration (dea:composes → composes)
 
 Mechanical token migration completing the CR-BP-mv1 id system's last live-content artifact: 2,900 `relationship_type: dea:composes` tokens across 580 live records' `composes[]` decomposition blocks migrated to `composes`. The target_ids were already in the `processes:task-*` form (the id part of mv1); only the type-token prefix remained. Schema `const`, activity-model gate constant, L4 decomposer generator, mece fixture writer, and two test files updated in lockstep; the execution-boundary gate already accepted both forms (transition-safe). Zero semantic changes — `composes` and `dea:composes` name the same CR-BP-32 §7 structural composition relationship. Entity-system ES-003 is unaffected (it reads the `relationships` key, not the `composes` block). All affected gates re-verified post-migration: activity-model, execution-boundary, mece, id-system, entity-system — all green.

@@ -25,14 +25,19 @@ owner:
   review_due: '2026-12-31'
   decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
-description: 'Operate the Conduct Proposition Performance Review L2 process within the dea:pc-pv-improve Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces. '
-trigger: 'A proposition performance review is needed because performance signals, portfolio gaps, or rationalization requirements indicate that the propositions or the portfolio itself need to be evolved. '
-outcome: 'Proposition performance review is conducted with findings committed for product evolution and portfolio rationalization. '
+description: 'Operate the Conduct Proposition Performance Review L2 process within the dea:pc-pv-improve
+  Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement
+  for the testable outcome the process produces. '
+trigger: 'A proposition performance review is needed because performance signals, portfolio gaps, or rationalization
+  requirements indicate that the propositions or the portfolio itself need to be evolved. '
+outcome: 'Proposition performance review is conducted with findings committed for product evolution and
+  portfolio rationalization. '
 identity:
   verb: Conduct
   object: Proposition Performance Review
   scope: (all enterprise segments)
-  outcome_statement: 'Proposition performance review is conducted with findings committed for product evolution and portfolio rationalization, ready to drive the next planning cycle. '
+  outcome_statement: 'Proposition performance review is conducted with findings committed for product
+    evolution and portfolio rationalization, ready to drive the next planning cycle. '
   evidence_links:
   - type: standard
     ref: https://www.apqc.org/resource-overview/resource-library/apqc-process-classification-framework-pcf
@@ -105,7 +110,9 @@ metadata:
     change: href targets repaired to post-mv1 layout (CR-BP-113)
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Product & Value Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Product
+      & Value Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under
+      the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 links:
 - rel: change-request
   href: change-requests/CR-BP-21c-product-value-landing.md
@@ -117,3 +124,25 @@ actors:
 - product management
 stakeholders:
 - product management
+inputs:
+- id: in-pv-improve-2
+  type: information
+  name: 'Conduct Proposition Performance Review: working inputs (information)'
+  description: 'Derived from the record''s documented description and trigger: the process Operate the
+    Conduct Proposition Performance Review L2 process within the dea:pc-pv-improve Cell Charter. See trigger
+    and outcome for the bounded work '
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-pv-improve-2
+  type: information
+  name: 'Conduct Proposition Performance Review: information result'
+  description: 'Derived from the record''s documented outcome: Proposition performance review is conducted
+    with findings committed for product evolution and portfolio rationalization.'
+  consumer: Downstream consumers per the documented outcome
+- id: out-pv-improve-2-state
+  type: changed_object
+  name: 'Conduct Proposition Performance Review: changed state'
+  description: 'The state change documented in the outcome: Proposition performance review is conducted
+    with findings committed for product evolution and portfolio rationalization.'
+  consumer: The enterprise state the process changes

@@ -26,21 +26,25 @@ owner:
   decision_right: Business Process Owner (GOV-002) confirms
 context:
 - ref: processes:pc-ge-improve-c78ppp
-description: 'Improve Policy and Control Framework (improve stage, standardization process). Landed by CR-BP-21f.1
+description: 'Improve Policy and Control Framework (improve stage, standardization process). Landed by
+  CR-BP-21f.1
 
   from the GovernanceAndExistence register v2.
 
   '
 trigger: Audit findings or policy gaps surface.
-outcome: The policy and control framework is improved with gaps measured, standards updated, and compliance posture strengthened.
+outcome: The policy and control framework is improved with gaps measured, standards updated, and compliance
+  posture strengthened.
 triggers:
 - Audit findings or policy gaps surface.
 outcomes:
-- The policy and control framework is improved with gaps measured, standards updated, and compliance posture strengthened.
+- The policy and control framework is improved with gaps measured, standards updated, and compliance posture
+  strengthened.
 identity:
   verb: Improve
   object: Policy and Control Framework
-  outcome_statement: The policy and control framework is improved with gaps measured, standards updated, and compliance posture strengthened.
+  outcome_statement: The policy and control framework is improved with gaps measured, standards updated,
+    and compliance posture strengthened.
   evidence_links:
   - type: documentation
     ref: change-requests/CR-BP-21f.1.md
@@ -71,7 +75,9 @@ metadata:
   change_history:
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Governance & Existence Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Governance
+      & Existence Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 change_history:
 - version: 1.0.0
   date: '2026-09-08'
@@ -108,3 +114,25 @@ actors:
 stakeholders:
 - audit function
 - strategy function
+inputs:
+- id: in-ge-improve-u
+  type: business_object
+  name: 'Improve Policy and Control Framework: working inputs (business_object)'
+  description: 'Derived from the record''s documented description and trigger: the process Improve Policy
+    and Control Framework (improve stage, standardization process). Landed by CR-BP-21f.1 from the GovernanceAndExistence
+    register v2.'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-ge-improve-u
+  type: information
+  name: 'Improve Policy and Control Framework: information result'
+  description: 'Derived from the record''s documented outcome: The policy and control framework is improved
+    with gaps measured, standards updated, and compliance posture strengthened.'
+  consumer: Downstream consumers per the documented outcome
+- id: out-ge-improve-u-state
+  type: changed_object
+  name: 'Improve Policy and Control Framework: changed state'
+  description: 'The state change documented in the outcome: The policy and control framework is improved
+    with gaps measured, standards updated, and compliance posture strengthened.'
+  consumer: The enterprise state the process changes
