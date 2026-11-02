@@ -25,18 +25,35 @@ owner:
   review_due: '2026-12-31'
   decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
-description: 'Conclude a regulated run-off of a financial entity (insurer, mutual, or run-off portfolio) under statutory run-off obligations within the dea:pc-fa-retire Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces.
+description: 'Conclude a regulated run-off of a financial entity (insurer, mutual, or run-off portfolio)
+  under statutory run-off obligations within the dea:pc-fa-retire Cell Charter. See trigger and outcome
+  for the bounded work this process owns; see identity.outcome_statement for the testable outcome the
+  process produces.
 
   '
-trigger: 'A regulator-acknowledged run-off authorisation is granted (PRA PS20/24 UK, FSB 2025, NAIC Model 901, or jurisdictional equivalent), triggering statutory accounting-basis transition and policyholder-priority creditor treatment.
+trigger: 'A regulator-acknowledged run-off authorisation is granted (PRA PS20/24 UK, FSB 2025, NAIC Model
+  901, or jurisdictional equivalent), triggering statutory accounting-basis transition and policyholder-priority
+  creditor treatment.
 
   '
-outcome: The regulated run-off of the financial entity (or run-off portfolio) is executed under the controlling regulator supervision with statutory accounting basis established and all policyholder claims adjudicated and paid. Reserving, capital adequacy, and asset-liability matching are maintained throughout the run-off period. Policyholder-priority credi
+outcome: The regulated run-off of the financial entity (or run-off portfolio) is executed under the controlling
+  regulator supervision with statutory accounting basis established and all policyholder claims adjudicated
+  and paid. Reserving, capital adequacy, and asset-liability matching are maintained throughout the run-off
+  period. Policyholder-priority credi
 identity:
   verb: Conclude
   object: Regulated Run-Off
   scope: enterprise
-  outcome_statement: The regulated run-off of the financial entity (or run-off portfolio) is executed under the controlling regulator supervision with statutory accounting basis established and all policyholder claims adjudicated and paid. Reserving, capital adequacy, and asset-liability matching are maintained throughout the run-off period. Policyholder-priority creditor treatment is applied to all policyholder claims. The entity authorisation is surrendered or the run-off portfolio is fully transferred, with solvent-exit certification (PRA) or run-off completion certification (FSB) obtained. Retained-records and service-of-process obligations are satisfied throughout the run-off and post-run-off retention period. Pre-run-off stewardship is coordinated out to Operate; physical asset decommissioning to EnablementAndOperations x Retire; counterparty closure to PartyAndRelationship x Retire; non-insurance regulated wind-downs are deferred.
+  outcome_statement: The regulated run-off of the financial entity (or run-off portfolio) is executed
+    under the controlling regulator supervision with statutory accounting basis established and all policyholder
+    claims adjudicated and paid. Reserving, capital adequacy, and asset-liability matching are maintained
+    throughout the run-off period. Policyholder-priority creditor treatment is applied to all policyholder
+    claims. The entity authorisation is surrendered or the run-off portfolio is fully transferred, with
+    solvent-exit certification (PRA) or run-off completion certification (FSB) obtained. Retained-records
+    and service-of-process obligations are satisfied throughout the run-off and post-run-off retention
+    period. Pre-run-off stewardship is coordinated out to Operate; physical asset decommissioning to EnablementAndOperations
+    x Retire; counterparty closure to PartyAndRelationship x Retire; non-insurance regulated wind-downs
+    are deferred.
   evidence_links:
   - type: regulation
     ref: https://www.bankofengland.co.uk/prudential-regulation/publication/2024/december/solvent-exit-planning-for-insurers-policy-statement
@@ -129,7 +146,9 @@ metadata:
     change: href targets repaired to post-mv1 layout (CR-BP-113)
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance
+      & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 links:
 - rel: change-request
   href: change-requests/CR-BP-75-fa-retire-admission.md
@@ -155,3 +174,20 @@ stakeholders:
 - governing board
 - operations function
 - product management
+inputs:
+- id: in-fa-retire-wk
+  type: business_object
+  name: 'Conclude Regulated Run-Off: working inputs (business_object)'
+  description: 'Derived from the record''s documented description and trigger: the process Conclude a
+    regulated run-off of a financial entity (insurer, mutual, or run-off portfolio) under statutory run-off
+    obligations within the dea:pc-fa-re'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-fa-retire-wk
+  type: service_result
+  name: 'Conclude Regulated Run-Off: service result result'
+  description: 'Derived from the record''s documented outcome: The regulated run-off of the financial
+    entity (or run-off portfolio) is executed under the controlling regulator supervision with statutory
+    accounting basis established and all pol'
+  consumer: Downstream consumers per the documented outcome

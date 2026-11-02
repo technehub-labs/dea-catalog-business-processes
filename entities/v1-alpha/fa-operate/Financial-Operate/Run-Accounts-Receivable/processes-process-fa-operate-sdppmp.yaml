@@ -32,7 +32,8 @@ description: 'Run Accounts Receivable (operate stage, core process). Landed by C
 
   '
 trigger: A customer invoice or collection event is due.
-outcome: Accounts receivable is run with invoices issued, collections managed, and cash applied to the ledger.
+outcome: Accounts receivable is run with invoices issued, collections managed, and cash applied to the
+  ledger.
 triggers:
 - A customer invoice or collection event is due.
 outcomes:
@@ -40,7 +41,8 @@ outcomes:
 identity:
   verb: Run
   object: Accounts Receivable
-  outcome_statement: Accounts receivable is run with invoices issued, collections managed, and cash applied to the ledger.
+  outcome_statement: Accounts receivable is run with invoices issued, collections managed, and cash applied
+    to the ledger.
   evidence_links:
   - type: documentation
     ref: change-requests/CR-BP-21e.1.md
@@ -71,7 +73,9 @@ metadata:
   change_history:
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance
+      & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 change_history:
 - version: 1.0.0
   date: '2026-09-08'
@@ -106,3 +110,19 @@ actors:
 - compliance function
 stakeholders:
 - compliance function
+inputs:
+- id: in-fa-operate-s
+  type: business_object
+  name: 'Run Accounts Receivable: working inputs (business_object)'
+  description: 'Derived from the record''s documented description and trigger: the process Run Accounts
+    Receivable (operate stage, core process). Landed by CR-BP-21e.1 from the FinanceAndAccounting register
+    v2.'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-fa-operate-s
+  type: service_result
+  name: 'Run Accounts Receivable: service result result'
+  description: 'Derived from the record''s documented outcome: Accounts receivable is run with invoices
+    issued, collections managed, and cash applied to the ledger.'
+  consumer: Downstream consumers per the documented outcome

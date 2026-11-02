@@ -25,14 +25,19 @@ owner:
   review_due: '2026-12-31'
   decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
-description: 'Operate the Adapt Strategic Direction L2 process within the dea:pc-sd-improve Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces. '
-trigger: 'Strategic adaptation is required because environmental signals, performance monitoring, or effectiveness review indicate that the strategic direction needs to be refreshed or adapted. '
-outcome: 'Strategic direction is adapted, objectives and targets are refreshed, and strategy effectiveness is reviewed. '
+description: 'Operate the Adapt Strategic Direction L2 process within the dea:pc-sd-improve Cell Charter.
+  See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the
+  testable outcome the process produces. '
+trigger: 'Strategic adaptation is required because environmental signals, performance monitoring, or effectiveness
+  review indicate that the strategic direction needs to be refreshed or adapted. '
+outcome: 'Strategic direction is adapted, objectives and targets are refreshed, and strategy effectiveness
+  is reviewed. '
 identity:
   verb: Adapt
   object: Strategic Direction
   scope: (all enterprise segments)
-  outcome_statement: 'Strategic direction is adapted, objectives and targets are refreshed, and strategy effectiveness is reviewed and learned from, ready to drive the next planning cycle. '
+  outcome_statement: 'Strategic direction is adapted, objectives and targets are refreshed, and strategy
+    effectiveness is reviewed and learned from, ready to drive the next planning cycle. '
   evidence_links:
   - type: standard
     ref: https://www.apqc.org/resource-overview/resource-library/apqc-process-classification-framework-pcf
@@ -99,7 +104,9 @@ metadata:
     change: href targets repaired to post-mv1 layout (CR-BP-113)
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Strategy & Direction Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Strategy
+      & Direction Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 links:
 - rel: change-request
   href: change-requests/CR-BP-21a-strategy-direction-landing.md
@@ -111,3 +118,25 @@ actors:
 - strategy function
 stakeholders:
 - strategy function
+inputs:
+- id: in-sd-improve-9
+  type: business_object
+  name: 'Adapt Strategic Direction: working inputs (business_object)'
+  description: 'Derived from the record''s documented description and trigger: the process Operate the
+    Adapt Strategic Direction L2 process within the dea:pc-sd-improve Cell Charter. See trigger and outcome
+    for the bounded work this process '
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-sd-improve-9
+  type: information
+  name: 'Adapt Strategic Direction: information result'
+  description: 'Derived from the record''s documented outcome: Strategic direction is adapted, objectives
+    and targets are refreshed, and strategy effectiveness is reviewed.'
+  consumer: Downstream consumers per the documented outcome
+- id: out-sd-improve-9-state
+  type: changed_object
+  name: 'Adapt Strategic Direction: changed state'
+  description: 'The state change documented in the outcome: Strategic direction is adapted, objectives
+    and targets are refreshed, and strategy effectiveness is reviewed.'
+  consumer: The enterprise state the process changes

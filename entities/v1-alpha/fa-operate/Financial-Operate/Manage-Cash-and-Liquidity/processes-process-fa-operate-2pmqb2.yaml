@@ -32,15 +32,18 @@ description: 'Manage Cash and Liquidity (operate stage, management process). Lan
 
   '
 trigger: A cash position or liquidity event occurs.
-outcome: Cash and liquidity are managed with positions, forecasts, and investment decisions monitored against the treasury policy.
+outcome: Cash and liquidity are managed with positions, forecasts, and investment decisions monitored
+  against the treasury policy.
 triggers:
 - A cash position or liquidity event occurs.
 outcomes:
-- Cash and liquidity are managed with positions, forecasts, and investment decisions monitored against the treasury policy.
+- Cash and liquidity are managed with positions, forecasts, and investment decisions monitored against
+  the treasury policy.
 identity:
   verb: Manage
   object: Cash and Liquidity
-  outcome_statement: Cash and liquidity are managed with positions, forecasts, and investment decisions monitored against the treasury policy.
+  outcome_statement: Cash and liquidity are managed with positions, forecasts, and investment decisions
+    monitored against the treasury policy.
   evidence_links:
   - type: documentation
     ref: change-requests/CR-BP-21e.1.md
@@ -71,7 +74,9 @@ metadata:
   change_history:
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance
+      & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 change_history:
 - version: 1.0.0
   date: '2026-09-08'
@@ -106,3 +111,19 @@ actors:
 - compliance function
 stakeholders:
 - compliance function
+inputs:
+- id: in-fa-operate-2
+  type: business_object
+  name: 'Manage Cash and Liquidity: working inputs (business_object)'
+  description: 'Derived from the record''s documented description and trigger: the process Manage Cash
+    and Liquidity (operate stage, management process). Landed by CR-BP-21e.1 from the FinanceAndAccounting
+    register v2.'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-fa-operate-2
+  type: service_result
+  name: 'Manage Cash and Liquidity: service result result'
+  description: 'Derived from the record''s documented outcome: Cash and liquidity are managed with positions,
+    forecasts, and investment decisions monitored against the treasury policy.'
+  consumer: Downstream consumers per the documented outcome

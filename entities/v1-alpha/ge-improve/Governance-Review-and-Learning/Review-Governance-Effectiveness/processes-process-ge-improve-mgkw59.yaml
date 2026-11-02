@@ -34,17 +34,21 @@ description: 'Operate the Review Governance Effectiveness L2 process within the
   for the testable outcome the process produces.
 
   '
-trigger: 'Governance bodies have been operating; periodic effectiveness reviews must measure governance performance against the strategy and feed lessons back into Conceive/Design/Build/Operate cycles.
+trigger: 'Governance bodies have been operating; periodic effectiveness reviews must measure governance
+  performance against the strategy and feed lessons back into Conceive/Design/Build/Operate cycles.
 
   '
-outcome: 'Effectiveness reviews with measured outcomes, lessons learned, and recommendations are delivered to the governance bodies.
+outcome: 'Effectiveness reviews with measured outcomes, lessons learned, and recommendations are delivered
+  to the governance bodies.
 
   '
 identity:
   verb: Review
   object: Governance Effectiveness
   scope: (all customer segments)
-  outcome_statement: 'Effectiveness reviews with measured outcomes, lessons learned, and recommendations are delivered to the governance bodies; the lessons feed back into the Conceive/Design/Build/Operate cycles.
+  outcome_statement: 'Effectiveness reviews with measured outcomes, lessons learned, and recommendations
+    are delivered to the governance bodies; the lessons feed back into the Conceive/Design/Build/Operate
+    cycles.
 
     '
   evidence_links:
@@ -86,7 +90,9 @@ metadata:
   - cr: CR-BP-15-IMP
     phase: phase-5
     date: '2026-09-06'
-    change: 'Phase 5 tranche migration: legacy intent migrated to canonical vocabulary; legacy scalar `process_context` migrated to canonical `context:` block; legacy `process_audience` removed (CR-BP-14 /13); canonical `serves` relationship toward the ECF coordinate added.'
+    change: 'Phase 5 tranche migration: legacy intent migrated to canonical vocabulary; legacy scalar
+      `process_context` migrated to canonical `context:` block; legacy `process_audience` removed (CR-BP-14
+      /13); canonical `serves` relationship toward the ECF coordinate added.'
   - cr: CR-BP-49
     date: '2026-09-13'
     change: 'L3 decomposition of this Business Process: 4 Activities
@@ -115,7 +121,9 @@ metadata:
     change: href targets repaired to post-mv1 layout (CR-BP-113)
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Governance & Existence Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Governance
+      & Existence Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 links:
 - rel: change-request
   href: change-requests/CR-BP-13a-party-and-relationship-admission.md
@@ -129,3 +137,25 @@ actors:
 stakeholders:
 - audit function
 - strategy function
+inputs:
+- id: in-ge-improve-m
+  type: information
+  name: 'Review Governance Effectiveness: working inputs (information)'
+  description: 'Derived from the record''s documented description and trigger: the process Operate the
+    Review Governance Effectiveness L2 process within the dea:pc-ge-im Cell Charter. See trigger and outcome
+    for the bounded work this process'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-ge-improve-m
+  type: information
+  name: 'Review Governance Effectiveness: information result'
+  description: 'Derived from the record''s documented outcome: Effectiveness reviews with measured outcomes,
+    lessons learned, and recommendations are delivered to the governance bodies.'
+  consumer: Downstream consumers per the documented outcome
+- id: out-ge-improve-m-state
+  type: changed_object
+  name: 'Review Governance Effectiveness: changed state'
+  description: 'The state change documented in the outcome: Effectiveness reviews with measured outcomes,
+    lessons learned, and recommendations are delivered to the governance bodies.'
+  consumer: The enterprise state the process changes

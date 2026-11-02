@@ -25,20 +25,29 @@ owner:
   review_due: '2026-12-31'
   decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
-description: 'Onboard a new party relationship in a regulated context (KYC/AML/CDD): verify identity, resolve beneficial ownership, classify risk, and either authorize commencement with documented approval or record a refusal, within the dea:pc-pr-act Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces.
+description: 'Onboard a new party relationship in a regulated context (KYC/AML/CDD): verify identity,
+  resolve beneficial ownership, classify risk, and either authorize commencement with documented approval
+  or record a refusal, within the dea:pc-pr-act Cell Charter. See trigger and outcome for the bounded
+  work this process owns; see identity.outcome_statement for the testable outcome the process produces.
 
   '
-trigger: 'A new party applies to establish a relationship with the enterprise in a jurisdiction or sector where identity verification and due diligence are mandated before the relationship may commence (e.g. KYC/AML obligations in financial services).
+trigger: 'A new party applies to establish a relationship with the enterprise in a jurisdiction or sector
+  where identity verification and due diligence are mandated before the relationship may commence (e.g.
+  KYC/AML obligations in financial services).
 
   '
-outcome: 'The party relationship is activated with verified identity, resolved beneficial ownership, an assigned risk classification, and a documented approval; declined applicants receive a recorded refusal.
+outcome: 'The party relationship is activated with verified identity, resolved beneficial ownership, an
+  assigned risk classification, and a documented approval; declined applicants receive a recorded refusal.
 
   '
 identity:
   verb: Onboard
   object: Regulated Party Relationship
   scope: enterprise
-  outcome_statement: 'The party relationship is activated under controlled onboarding: identity is verified, beneficial ownership is resolved, the relationship is allocated a risk classification, and an approval is recorded or a refusal is issued with a documented rationale. Ongoing monitoring and periodic due-diligence refresh are coordinated out to the Operate context.
+  outcome_statement: 'The party relationship is activated under controlled onboarding: identity is verified,
+    beneficial ownership is resolved, the relationship is allocated a risk classification, and an approval
+    is recorded or a refusal is issued with a documented rationale. Ongoing monitoring and periodic due-diligence
+    refresh are coordinated out to the Operate context.
 
     '
   evidence_links:
@@ -121,7 +130,9 @@ metadata:
     change: href targets repaired to post-mv1 layout (CR-BP-113)
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Party & Relationship Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Party
+      & Relationship Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 links:
 - rel: change-request
   href: change-requests/CR-BP-71-pr-activate-admission.md
@@ -143,3 +154,26 @@ stakeholders:
 - governing board
 - risk function
 - customer relationship management
+inputs:
+- id: in-pr-activate-
+  type: information
+  name: 'Onboard Regulated Party Relationship: working inputs (information)'
+  description: 'Derived from the record''s documented description and trigger: the process Onboard a new
+    party relationship in a regulated context (KYC/AML/CDD): verify identity, resolve beneficial ownership,
+    classify risk, and either author'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-pr-activate-
+  type: document
+  name: 'Onboard Regulated Party Relationship: document result'
+  description: 'Derived from the record''s documented outcome: The party relationship is activated with
+    verified identity, resolved beneficial ownership, an assigned risk classification, and a documented
+    approval; declined applicants receive a'
+  consumer: Downstream consumers per the documented outcome
+- id: out-pr-activate--state
+  type: changed_object
+  name: 'Onboard Regulated Party Relationship: changed state'
+  description: 'The state change documented in the outcome: The party relationship is activated with verified
+    identity, resolved beneficial ownership, an assigned risk classification, and a documented approval;'
+  consumer: The enterprise state the process changes

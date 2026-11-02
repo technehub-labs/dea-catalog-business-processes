@@ -25,14 +25,19 @@ owner:
   review_due: '2026-12-31'
   decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
-description: 'Operate the Operate Product Catalogue L2 process within the dea:pc-pv-operate Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces. '
-trigger: 'Product catalogue operation is needed because the developed products are now in active operation and require steady-state catalogue, portfolio performance, and proposition lifecycle management. '
+description: 'Operate the Operate Product Catalogue L2 process within the dea:pc-pv-operate Cell Charter.
+  See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the
+  testable outcome the process produces. '
+trigger: 'Product catalogue operation is needed because the developed products are now in active operation
+  and require steady-state catalogue, portfolio performance, and proposition lifecycle management. '
 outcome: 'Product catalogue is operated with bounded portfolio performance and proposition lifecycle management. '
 identity:
   verb: Operate
   object: Product Catalogue
   scope: (all enterprise segments)
-  outcome_statement: 'Product catalogue is operated with bounded portfolio performance and proposition lifecycle management, covering the full lifecycle from launch to retirement across the value-bearing proposition portfolio. '
+  outcome_statement: 'Product catalogue is operated with bounded portfolio performance and proposition
+    lifecycle management, covering the full lifecycle from launch to retirement across the value-bearing
+    proposition portfolio. '
   evidence_links:
   - type: standard
     ref: https://www.apqc.org/resource-overview/resource-library/apqc-process-classification-framework-pcf
@@ -105,7 +110,9 @@ metadata:
     change: href targets repaired to post-mv1 layout (CR-BP-113)
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Product & Value Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Product
+      & Value Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under
+      the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 links:
 - rel: change-request
   href: change-requests/CR-BP-21c-product-value-landing.md
@@ -117,3 +124,19 @@ actors:
 - product management
 stakeholders:
 - product management
+inputs:
+- id: in-pv-operate-z
+  type: business_object
+  name: 'Operate Product Catalogue: working inputs (business_object)'
+  description: 'Derived from the record''s documented description and trigger: the process Operate the
+    Operate Product Catalogue L2 process within the dea:pc-pv-operate Cell Charter. See trigger and outcome
+    for the bounded work this process '
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-pv-operate-z
+  type: service_result
+  name: 'Operate Product Catalogue: service result result'
+  description: 'Derived from the record''s documented outcome: Product catalogue is operated with bounded
+    portfolio performance and proposition lifecycle management.'
+  consumer: Downstream consumers per the documented outcome

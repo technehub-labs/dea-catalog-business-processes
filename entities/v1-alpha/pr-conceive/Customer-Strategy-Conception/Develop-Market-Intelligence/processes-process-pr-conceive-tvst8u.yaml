@@ -34,17 +34,20 @@ description: 'Operate the Develop Market Intelligence L2 process within the
   for the testable outcome the process produces.
 
   '
-trigger: 'A new market entry, an existing segment''s drift, or a demand-side hypothesis needs to be tested before strategy commitment.
+trigger: 'A new market entry, an existing segment''s drift, or a demand-side hypothesis needs to be tested
+  before strategy commitment.
 
   '
-outcome: 'A market and demand thesis with testable hypotheses, initial segment targets, and a test plan is committed and ready to be designed.
+outcome: 'A market and demand thesis with testable hypotheses, initial segment targets, and a test plan
+  is committed and ready to be designed.
 
   '
 identity:
   verb: Develop
   object: Market Intelligence
   scope: (all customer segments)
-  outcome_statement: 'A market and demand thesis with testable hypotheses, initial segment targets, and a test plan is committed and ready to be incorporated into customer strategy.
+  outcome_statement: 'A market and demand thesis with testable hypotheses, initial segment targets, and
+    a test plan is committed and ready to be incorporated into customer strategy.
 
     '
   evidence_links:
@@ -61,7 +64,8 @@ relationships:
   target_id: ecf:partyRelationship.conceive
   added_by: CR-BP-31
   added_at: '2026-09-10'
-  rationale: 'Canonical v2.5.0 serves relationship added alongside v2.3.0 historical entry per CR-BP-31 (migration-pair completion). The v2.3.0 `customerAndDemand` entry is preserved as provenance. '
+  rationale: 'Canonical v2.5.0 serves relationship added alongside v2.3.0 historical entry per CR-BP-31
+    (migration-pair completion). The v2.3.0 `customerAndDemand` entry is preserved as provenance. '
 ecfConformance:
   framework: EnterpriseConceptFramework
   contractVersion: 1.0.0
@@ -92,10 +96,14 @@ metadata:
   - cr: CR-BP-15-IMP
     phase: phase-5
     date: '2026-09-06'
-    change: 'Phase 5 tranche migration: legacy intent migrated to canonical vocabulary; legacy scalar `process_context` migrated to canonical `context:` block; legacy `process_audience` removed (CR-BP-14 /13); canonical `serves` relationship toward the ECF coordinate added.'
+    change: 'Phase 5 tranche migration: legacy intent migrated to canonical vocabulary; legacy scalar
+      `process_context` migrated to canonical `context:` block; legacy `process_audience` removed (CR-BP-14
+      /13); canonical `serves` relationship toward the ECF coordinate added.'
   - cr: CR-BP-31
     date: '2026-09-10'
-    change: 'Added canonical v2.5.0 `serves` relationship alongside v2.3.0 historical entry (migration-pair completion per CR-BP-31). The legacy `customerAndDemand` entry is preserved as provenance; canonical `ecf:partyRelationship.<stage>` is now the conformance-resolving reference. '
+    change: 'Added canonical v2.5.0 `serves` relationship alongside v2.3.0 historical entry (migration-pair
+      completion per CR-BP-31). The legacy `customerAndDemand` entry is preserved as provenance; canonical
+      `ecf:partyRelationship.<stage>` is now the conformance-resolving reference. '
   - cr: CR-BP-45
     date: '2026-09-13'
     change: 'L3 decomposition of this Business Process: 4 Activities
@@ -122,7 +130,9 @@ metadata:
     change: href targets repaired to post-mv1 layout (CR-BP-113)
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Party & Relationship Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Party
+      & Relationship Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 links:
 - rel: change-request
   href: change-requests/CR-BP-13a-party-and-relationship-admission.md
@@ -136,3 +146,25 @@ actors:
 stakeholders:
 - customer relationship management
 - strategy function
+inputs:
+- id: in-pr-conceive-
+  type: business_object
+  name: 'Develop Market Intelligence: working inputs (business_object)'
+  description: 'Derived from the record''s documented description and trigger: the process Operate the
+    Develop Market Intelligence L2 process within the dea:pc-pr-c Cell Charter. See trigger and outcome
+    for the bounded work this process owns'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-pr-conceive-
+  type: document
+  name: 'Develop Market Intelligence: document result'
+  description: 'Derived from the record''s documented outcome: A market and demand thesis with testable
+    hypotheses, initial segment targets, and a test plan is committed and ready to be designed.'
+  consumer: Downstream consumers per the documented outcome
+- id: out-pr-conceive--state
+  type: changed_object
+  name: 'Develop Market Intelligence: changed state'
+  description: 'The state change documented in the outcome: A market and demand thesis with testable hypotheses,
+    initial segment targets, and a test plan is committed and ready to be designed.'
+  consumer: The enterprise state the process changes

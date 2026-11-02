@@ -34,7 +34,8 @@ description: 'Operate the Establish Governance Bodies L2 process within the
   for the testable outcome the process produces.
 
   '
-trigger: 'A governance system design has been committed; the boards, committees, and other governance bodies must now be established with charters, members, and operating rhythms.
+trigger: 'A governance system design has been committed; the boards, committees, and other governance
+  bodies must now be established with charters, members, and operating rhythms.
 
   '
 outcome: 'Governance bodies are established, chartered, and ready to convene on a regular cycle.
@@ -44,7 +45,8 @@ identity:
   verb: Establish
   object: Governance Bodies
   scope: (all customer segments)
-  outcome_statement: 'Governance bodies are established, chartered, and ready to convene on a regular cycle in the Operate context.
+  outcome_statement: 'Governance bodies are established, chartered, and ready to convene on a regular
+    cycle in the Operate context.
 
     '
   evidence_links:
@@ -86,7 +88,9 @@ metadata:
   - cr: CR-BP-15-IMP
     phase: phase-5
     date: '2026-09-06'
-    change: 'Phase 5 tranche migration: legacy intent migrated to canonical vocabulary; legacy scalar `process_context` migrated to canonical `context:` block; legacy `process_audience` removed (CR-BP-14 /13); canonical `serves` relationship toward the ECF coordinate added.'
+    change: 'Phase 5 tranche migration: legacy intent migrated to canonical vocabulary; legacy scalar
+      `process_context` migrated to canonical `context:` block; legacy `process_audience` removed (CR-BP-14
+      /13); canonical `serves` relationship toward the ECF coordinate added.'
   - cr: CR-BP-48
     date: '2026-09-13'
     change: 'L3 decomposition of this Business Process: 4 Activities
@@ -113,7 +117,9 @@ metadata:
     change: href targets repaired to post-mv1 layout (CR-BP-113)
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Governance & Existence Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Governance
+      & Existence Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 links:
 - rel: change-request
   href: change-requests/CR-BP-13a-party-and-relationship-admission.md
@@ -127,3 +133,19 @@ actors:
 stakeholders:
 - governing board
 - strategy function
+inputs:
+- id: in-ge-build-3p3
+  type: business_object
+  name: 'Establish Governance Bodies: working inputs (business_object)'
+  description: 'Derived from the record''s documented description and trigger: the process Operate the
+    Establish Governance Bodies L2 process within the dea:pc-ge-b Cell Charter. See trigger and outcome
+    for the bounded work this process owns'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-ge-build-3p3
+  type: changed_object
+  name: 'Establish Governance Bodies: changed object result'
+  description: 'Derived from the record''s documented outcome: Governance bodies are established, chartered,
+    and ready to convene on a regular cycle.'
+  consumer: Downstream consumers per the documented outcome

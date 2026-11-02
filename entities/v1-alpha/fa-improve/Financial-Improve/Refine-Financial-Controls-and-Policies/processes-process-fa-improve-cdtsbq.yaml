@@ -32,15 +32,18 @@ description: 'Refine Financial Controls and Policies (improve stage, management 
 
   '
 trigger: An audit finding or control incident surfaces.
-outcome: Financial controls and policies are refined based on audit findings and incidents, governed by the policy review cycle.
+outcome: Financial controls and policies are refined based on audit findings and incidents, governed by
+  the policy review cycle.
 triggers:
 - An audit finding or control incident surfaces.
 outcomes:
-- Financial controls and policies are refined based on audit findings and incidents, governed by the policy review cycle.
+- Financial controls and policies are refined based on audit findings and incidents, governed by the policy
+  review cycle.
 identity:
   verb: Refine
   object: Financial Controls and Policies
-  outcome_statement: Financial controls and policies are refined based on audit findings and incidents, governed by the policy review cycle.
+  outcome_statement: Financial controls and policies are refined based on audit findings and incidents,
+    governed by the policy review cycle.
   evidence_links:
   - type: documentation
     ref: change-requests/CR-BP-21e.1.md
@@ -71,7 +74,9 @@ metadata:
   change_history:
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance
+      & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 change_history:
 - version: 1.0.0
   date: '2026-09-08'
@@ -106,3 +111,25 @@ actors:
 - finance design authority
 stakeholders:
 - finance design authority
+inputs:
+- id: in-fa-improve-c
+  type: business_object
+  name: 'Refine Financial Controls and Policies: working inputs (business_object)'
+  description: 'Derived from the record''s documented description and trigger: the process Refine Financial
+    Controls and Policies (improve stage, management process). Landed by CR-BP-21e.1 from the FinanceAndAccounting
+    register v2.'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-fa-improve-c
+  type: information
+  name: 'Refine Financial Controls and Policies: information result'
+  description: 'Derived from the record''s documented outcome: Financial controls and policies are refined
+    based on audit findings and incidents, governed by the policy review cycle.'
+  consumer: Downstream consumers per the documented outcome
+- id: out-fa-improve-c-state
+  type: changed_object
+  name: 'Refine Financial Controls and Policies: changed state'
+  description: 'The state change documented in the outcome: Financial controls and policies are refined
+    based on audit findings and incidents, governed by the policy review cycle.'
+  consumer: The enterprise state the process changes

@@ -25,14 +25,19 @@ owner:
   review_due: '2026-12-31'
   decision_right: Business Process Owner (GOV-002) confirms
 process_specialization: []
-description: 'Transition a validated proposition, product or service from a prepared state into operational service, with ownership, controls and operational readiness confirmed, within the dea:pc-pv-activate Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces. '
-trigger: 'A validated proposition, product or service has met its readiness threshold and is authorized for operational transition. '
+description: 'Transition a validated proposition, product or service from a prepared state into operational
+  service, with ownership, controls and operational readiness confirmed, within the dea:pc-pv-activate
+  Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement
+  for the testable outcome the process produces. '
+trigger: 'A validated proposition, product or service has met its readiness threshold and is authorized
+  for operational transition. '
 outcome: 'The proposition, product or service is accepted into operational service and relied upon operationally. '
 identity:
   verb: Transition
   object: Proposition to Service
   scope: (all enterprise segments)
-  outcome_statement: 'The proposition, product or service is accepted into operational service and ready to serve its intended users, with ownership and readiness evidence in place. '
+  outcome_statement: 'The proposition, product or service is accepted into operational service and ready
+    to serve its intended users, with ownership and readiness evidence in place. '
   evidence_links:
   - type: standard
     ref: https://www.axelos.com/best-practice-solutions/itil
@@ -91,7 +96,9 @@ metadata:
     change: href targets repaired to post-mv1 layout (CR-BP-113)
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Product & Value Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Product
+      & Value Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under
+      the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 links:
 - rel: change-request
   href: change-requests/CR-BP-64-pv-activate-retire-admission.md
@@ -105,3 +112,19 @@ actors:
 - proposition design authority
 stakeholders:
 - proposition design authority
+inputs:
+- id: in-pv-activate-
+  type: business_object
+  name: 'Transition Proposition to Service: working inputs (business_object)'
+  description: 'Derived from the record''s documented description and trigger: the process Transition
+    a validated proposition, product or service from a prepared state into operational service, with ownership,
+    controls and operational readin'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-pv-activate-
+  type: changed_object
+  name: 'Transition Proposition to Service: changed object result'
+  description: 'Derived from the record''s documented outcome: The proposition, product or service is
+    accepted into operational service and relied upon operationally.'
+  consumer: Downstream consumers per the documented outcome

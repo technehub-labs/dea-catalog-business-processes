@@ -24,9 +24,20 @@ owner:
     reference: change-requests/CR-BP-GS-1-governance-sweep.md
   review_due: '2026-12-31'
   decision_right: Business Process Owner (GOV-002) confirms
-trigger: A regulated entity's board-approved strategic plan must be filed with or activated under the supervision of a competent regulator before the plan takes effect (Basel ICAAP / SAA approval; BRRD recovery-plan activation under SRB; NHS trust 5-year strategy approval; PUC integrated resource plan filing; bank recovery and resolution plan activation under FDIC).
-outcome: The regulated strategic plan is formally activated with the supervisor's acknowledgement on record, the filing receipt preserved, the operational monitoring framework live, and the plan's obligations binding on the regulated entity under the regulator's continuing supervision.
-description: Institutionalize a regulated entity's strategic plan under the enterprise's regulated-entity approval authority within the dea:pc-sd-activate Cell Charter. The trigger is a board-approved strategic plan that must be filed with or activated under the supervision of a competent regulator; the outcome is the plan formally activated with the supervisor's acknowledgement on record, the filing receipt preserved, the operational monitoring framework live, and the plan's obligations binding on the regulated entity under the regulator's continuing supervision. Distinct from strategy build (Build coordinate) and from steady-state strategy execution (Operate coordinate).
+trigger: A regulated entity's board-approved strategic plan must be filed with or activated under the
+  supervision of a competent regulator before the plan takes effect (Basel ICAAP / SAA approval; BRRD
+  recovery-plan activation under SRB; NHS trust 5-year strategy approval; PUC integrated resource plan
+  filing; bank recovery and resolution plan activation under FDIC).
+outcome: The regulated strategic plan is formally activated with the supervisor's acknowledgement on record,
+  the filing receipt preserved, the operational monitoring framework live, and the plan's obligations
+  binding on the regulated entity under the regulator's continuing supervision.
+description: Institutionalize a regulated entity's strategic plan under the enterprise's regulated-entity
+  approval authority within the dea:pc-sd-activate Cell Charter. The trigger is a board-approved strategic
+  plan that must be filed with or activated under the supervision of a competent regulator; the outcome
+  is the plan formally activated with the supervisor's acknowledgement on record, the filing receipt preserved,
+  the operational monitoring framework live, and the plan's obligations binding on the regulated entity
+  under the regulator's continuing supervision. Distinct from strategy build (Build coordinate) and from
+  steady-state strategy execution (Operate coordinate).
 process_specialization: []
 process_identity:
   boundary_face: regulated-entity approval authority
@@ -35,16 +46,24 @@ process_identity:
   is_project: false
 process_scope:
   includes:
-  - Supervisor-acknowledged strategic-plan filing (Basel ICAAP / SAA approval by PRA / ECB; BRRD recovery-plan activation under SRB / national-resolution-authority supervision; NHS trust 5-year strategy approval; PUC integrated resource plan and strategic-plan filing; bank recovery and resolution plan activation under FDIC or SRB)
-  - Supervisor's review completion and acknowledgement on record (Basel SREP review; NHS England / Department of Health strategy review; PUC rate-case strategic-plan review; SRB resolution-plan review)
-  - Filing receipt preservation and regulated-records entry (Basel SREP filing receipt; NHS England strategy-approval letter; PUC strategic-plan filing order; SRB resolution-plan acknowledgment)
-  - Operational monitoring framework launch (KPIs; risk-appetite statement; early-warning indicators; supervisor's continuing-oversight relationship)
-  - Communications plan activation under the regulator's continuing supervision (disclosure controls; investor-relations briefing; regulated-entity announcement)
+  - Supervisor-acknowledged strategic-plan filing (Basel ICAAP / SAA approval by PRA / ECB; BRRD recovery-plan
+    activation under SRB / national-resolution-authority supervision; NHS trust 5-year strategy approval;
+    PUC integrated resource plan and strategic-plan filing; bank recovery and resolution plan activation
+    under FDIC or SRB)
+  - Supervisor's review completion and acknowledgement on record (Basel SREP review; NHS England / Department
+    of Health strategy review; PUC rate-case strategic-plan review; SRB resolution-plan review)
+  - Filing receipt preservation and regulated-records entry (Basel SREP filing receipt; NHS England strategy-approval
+    letter; PUC strategic-plan filing order; SRB resolution-plan acknowledgment)
+  - Operational monitoring framework launch (KPIs; risk-appetite statement; early-warning indicators;
+    supervisor's continuing-oversight relationship)
+  - Communications plan activation under the regulator's continuing supervision (disclosure controls;
+    investor-relations briefing; regulated-entity announcement)
   - Regulated strategic-plan record entry preserved for the activated strategic plan
   excludes:
   - Strategic-plan conception, design, and build (StrategyAndDirection x Conceive / Design / Build)
   - Steady-state strategy execution and performance review (StrategyAndDirection x Operate / Improve)
-  - Strategic-plan sunset under regulatory mandate (StrategyAndDirection x Retire; CR-BP-80 escape record documented DEFER without admission)
+  - Strategic-plan sunset under regulatory mandate (StrategyAndDirection x Retire; CR-BP-80 escape record
+    documented DEFER without admission)
   - Non-regulated strategic-plan launch (single-business-unit rollout without supervisor's review)
 context:
 - ref: processes:pc-sd-activate-ghaub8
@@ -52,7 +71,9 @@ identity:
   verb: Institutionalize
   object: Regulated Strategic Plan
   scope: enterprise
-  outcome_statement: The regulated strategic plan is formally activated with the supervisor's acknowledgement on record, the filing receipt preserved, the operational monitoring framework live, and the plan's obligations binding on the regulated entity under the regulator's continuing supervision.
+  outcome_statement: The regulated strategic plan is formally activated with the supervisor's acknowledgement
+    on record, the filing receipt preserved, the operational monitoring framework live, and the plan's
+    obligations binding on the regulated entity under the regulator's continuing supervision.
   evidence_links:
   - type: documentation
     ref: discovery/v1-alpha/strategy-and-direction-activate-escape.yaml
@@ -95,19 +116,25 @@ evidence:
   strength: E5
   reference: discovery/v1-alpha/strategy-and-direction-activate-escape.yaml
 - source: Basel Committee BCBS 425 / BCBS 425a (ICAAP and SREP)
-  claim: 'Basel BCBS 425 / BCBS 425a: Internal Capital Adequacy Assessment Process (ICAAP) and Supervisory Review and Evaluation Process (SRA / SREP); strategic-plan approval and activation is a supervisor-acknowledged transformation in regulated banking.'
+  claim: 'Basel BCBS 425 / BCBS 425a: Internal Capital Adequacy Assessment Process (ICAAP) and Supervisory
+    Review and Evaluation Process (SRA / SREP); strategic-plan approval and activation is a supervisor-acknowledged
+    transformation in regulated banking.'
   strength: E4
 - source: Bank Recovery and Resolution Directive (BRRD, 2014/59/EU) Article 5
-  claim: 'BRRD Article 5: recovery-plan activation under SRB / national-resolution-authority supervision; plan activation is a regulator-controlled transformation.'
+  claim: 'BRRD Article 5: recovery-plan activation under SRB / national-resolution-authority supervision;
+    plan activation is a regulator-controlled transformation.'
   strength: E4
 - source: UK NHS England / Department of Health and Social Care trust 5-year strategy approval
-  claim: NHS trust 5-year strategy approval process; strategic plans must be approved before the trust may operate against them.
+  claim: NHS trust 5-year strategy approval process; strategic plans must be approved before the trust
+    may operate against them.
   strength: E4
 - source: US state Public Utility Commissions (PUC) integrated resource plan and strategic-plan filings
-  claim: PUC integrated resource plan and strategic-plan filings required before utilities may activate capital and operational plans; PUC approval is a precondition to plan activation.
+  claim: PUC integrated resource plan and strategic-plan filings required before utilities may activate
+    capital and operational plans; PUC approval is a precondition to plan activation.
   strength: E4
 - source: TOGAF ADM Phase G (Implementation Governance) regulated-entity overlay
-  claim: TOGAF ADM Phase G establishes architecture-contract approval; for regulated entities the architecture contract is the strategic plan activated under supervisor acknowledgement.
+  claim: TOGAF ADM Phase G establishes architecture-contract approval; for regulated entities the architecture
+    contract is the strategic plan activated under supervisor acknowledgement.
   strength: E4
 metadata:
   established_by: CR-BP-87
@@ -150,7 +177,9 @@ metadata:
       '
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Strategy & Direction Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Strategy
+      & Direction Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 actors:
 - industry regulator
 - supervising authority
@@ -167,3 +196,20 @@ stakeholders:
 - workforce management
 - operations function
 - strategy function
+inputs:
+- id: in-sd-activate-
+  type: information
+  name: 'Institutionalize Regulated Strategic Plan: working inputs (information)'
+  description: 'Derived from the record''s documented description and trigger: the process Institutionalize
+    a regulated entity''s strategic plan under the enterprise''s regulated-entity approval authority within
+    the dea:pc-sd-activate Cell Cha'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-sd-activate-
+  type: changed_object
+  name: 'Institutionalize Regulated Strategic Plan: changed object result'
+  description: 'Derived from the record''s documented outcome: The regulated strategic plan is formally
+    activated with the supervisor''s acknowledgement on record, the filing receipt preserved, the operational
+    monitoring framework live, and the'
+  consumer: Downstream consumers per the documented outcome

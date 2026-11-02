@@ -34,17 +34,20 @@ description: 'Operate the Design Governance System L2 process within the
   for the testable outcome the process produces.
 
   '
-trigger: 'A governance strategy has been committed; the governance system (boards, committees, authority delegations, decision rights) must now be designed to realise that strategy.
+trigger: 'A governance strategy has been committed; the governance system (boards, committees, authority
+  delegations, decision rights) must now be designed to realise that strategy.
 
   '
-outcome: 'A governance system design with articulated bodies, authority delegations, and decision rights is committed.
+outcome: 'A governance system design with articulated bodies, authority delegations, and decision rights
+  is committed.
 
   '
 identity:
   verb: Design
   object: Governance System
   scope: (all customer segments)
-  outcome_statement: 'A governance system design with articulated bodies, authority delegations, and decision rights is committed and ready to drive Body Establishment in the Build context.
+  outcome_statement: 'A governance system design with articulated bodies, authority delegations, and decision
+    rights is committed and ready to drive Body Establishment in the Build context.
 
     '
   evidence_links:
@@ -86,7 +89,9 @@ metadata:
   - cr: CR-BP-15-IMP
     phase: phase-5
     date: '2026-09-06'
-    change: 'Phase 5 tranche migration: legacy intent migrated to canonical vocabulary; legacy scalar `process_context` migrated to canonical `context:` block; legacy `process_audience` removed (CR-BP-14 /13); canonical `serves` relationship toward the ECF coordinate added.'
+    change: 'Phase 5 tranche migration: legacy intent migrated to canonical vocabulary; legacy scalar
+      `process_context` migrated to canonical `context:` block; legacy `process_audience` removed (CR-BP-14
+      /13); canonical `serves` relationship toward the ECF coordinate added.'
   - cr: CR-BP-48
     date: '2026-09-13'
     change: 'L3 decomposition of this Business Process: 4 Activities
@@ -113,7 +118,9 @@ metadata:
     change: href targets repaired to post-mv1 layout (CR-BP-113)
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Governance & Existence Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Governance
+      & Existence Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 links:
 - rel: change-request
   href: change-requests/CR-BP-13a-party-and-relationship-admission.md
@@ -129,3 +136,25 @@ stakeholders:
 - governing board
 - operations function
 - strategy function
+inputs:
+- id: in-ge-design-zb
+  type: business_object
+  name: 'Design Governance System: working inputs (business_object)'
+  description: 'Derived from the record''s documented description and trigger: the process Operate the
+    Design Governance System L2 process within the dea:pc-ge-d Cell Charter. See trigger and outcome for
+    the bounded work this process owns; s'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-ge-design-zb
+  type: document
+  name: 'Design Governance System: document result'
+  description: 'Derived from the record''s documented outcome: A governance system design with articulated
+    bodies, authority delegations, and decision rights is committed.'
+  consumer: Downstream consumers per the documented outcome
+- id: out-ge-design-zb-state
+  type: changed_object
+  name: 'Design Governance System: changed state'
+  description: 'The state change documented in the outcome: A governance system design with articulated
+    bodies, authority delegations, and decision rights is committed.'
+  consumer: The enterprise state the process changes

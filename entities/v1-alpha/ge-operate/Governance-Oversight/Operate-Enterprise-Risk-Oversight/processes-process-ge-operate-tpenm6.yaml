@@ -32,15 +32,18 @@ description: 'Operate Enterprise Risk Oversight (operate stage, core process). L
 
   '
 trigger: A risk review cycle boundary is reached.
-outcome: Enterprise risk oversight is operated with risk reviews executed, exposures surfaced, and mitigations delivered to the governance bodies.
+outcome: Enterprise risk oversight is operated with risk reviews executed, exposures surfaced, and mitigations
+  delivered to the governance bodies.
 triggers:
 - A risk review cycle boundary is reached.
 outcomes:
-- Enterprise risk oversight is operated with risk reviews executed, exposures surfaced, and mitigations delivered to the governance bodies.
+- Enterprise risk oversight is operated with risk reviews executed, exposures surfaced, and mitigations
+  delivered to the governance bodies.
 identity:
   verb: Operate
   object: Enterprise Risk Oversight
-  outcome_statement: Enterprise risk oversight is operated with risk reviews executed, exposures surfaced, and mitigations delivered to the governance bodies.
+  outcome_statement: Enterprise risk oversight is operated with risk reviews executed, exposures surfaced,
+    and mitigations delivered to the governance bodies.
   evidence_links:
   - type: documentation
     ref: change-requests/CR-BP-21f.1.md
@@ -71,7 +74,9 @@ metadata:
   change_history:
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Governance & Existence Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Governance
+      & Existence Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 change_history:
 - version: 1.0.0
   date: '2026-09-08'
@@ -112,3 +117,25 @@ stakeholders:
 - risk function
 - compliance function
 - strategy function
+inputs:
+- id: in-ge-operate-t
+  type: business_object
+  name: 'Operate Enterprise Risk Oversight: working inputs (business_object)'
+  description: 'Derived from the record''s documented description and trigger: the process Operate Enterprise
+    Risk Oversight (operate stage, core process). Landed by CR-BP-21f.1 from the GovernanceAndExistence
+    register v2.'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-ge-operate-t
+  type: information
+  name: 'Operate Enterprise Risk Oversight: information result'
+  description: 'Derived from the record''s documented outcome: Enterprise risk oversight is operated with
+    risk reviews executed, exposures surfaced, and mitigations delivered to the governance bodies.'
+  consumer: Downstream consumers per the documented outcome
+- id: out-ge-operate-t-state
+  type: changed_object
+  name: 'Operate Enterprise Risk Oversight: changed state'
+  description: 'The state change documented in the outcome: Enterprise risk oversight is operated with
+    risk reviews executed, exposures surfaced, and mitigations delivered to the governance bodies.'
+  consumer: The enterprise state the process changes

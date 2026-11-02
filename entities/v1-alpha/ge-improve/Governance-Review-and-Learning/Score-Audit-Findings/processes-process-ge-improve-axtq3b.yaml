@@ -32,15 +32,18 @@ description: 'Score Audit Findings (improve stage, standardization process). Lan
 
   '
 trigger: An audit report is delivered with findings.
-outcome: Audit findings are scored for severity and recurrence, measured against standards, and quality trends reported to the governance bodies.
+outcome: Audit findings are scored for severity and recurrence, measured against standards, and quality
+  trends reported to the governance bodies.
 triggers:
 - An audit report is delivered with findings.
 outcomes:
-- Audit findings are scored for severity and recurrence, measured against standards, and quality trends reported to the governance bodies.
+- Audit findings are scored for severity and recurrence, measured against standards, and quality trends
+  reported to the governance bodies.
 identity:
   verb: Score
   object: Audit Findings
-  outcome_statement: Audit findings are scored for severity and recurrence, measured against standards, and quality trends reported to the governance bodies.
+  outcome_statement: Audit findings are scored for severity and recurrence, measured against standards,
+    and quality trends reported to the governance bodies.
   evidence_links:
   - type: documentation
     ref: change-requests/CR-BP-21f.1.md
@@ -71,7 +74,9 @@ metadata:
   change_history:
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Governance & Existence Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Governance
+      & Existence Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 change_history:
 - version: 1.0.0
   date: '2026-09-08'
@@ -108,3 +113,25 @@ actors:
 stakeholders:
 - audit function
 - strategy function
+inputs:
+- id: in-ge-improve-a
+  type: business_object
+  name: 'Score Audit Findings: working inputs (business_object)'
+  description: 'Derived from the record''s documented description and trigger: the process Score Audit
+    Findings (improve stage, standardization process). Landed by CR-BP-21f.1 from the GovernanceAndExistence
+    register v2.'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-ge-improve-a
+  type: information
+  name: 'Score Audit Findings: information result'
+  description: 'Derived from the record''s documented outcome: Audit findings are scored for severity
+    and recurrence, measured against standards, and quality trends reported to the governance bodies.'
+  consumer: Downstream consumers per the documented outcome
+- id: out-ge-improve-a-state
+  type: changed_object
+  name: 'Score Audit Findings: changed state'
+  description: 'The state change documented in the outcome: Audit findings are scored for severity and
+    recurrence, measured against standards, and quality trends reported to the governance bodies.'
+  consumer: The enterprise state the process changes

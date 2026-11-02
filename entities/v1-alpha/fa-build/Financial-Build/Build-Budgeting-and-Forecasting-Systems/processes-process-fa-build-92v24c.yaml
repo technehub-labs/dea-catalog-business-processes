@@ -32,15 +32,18 @@ description: 'Build Budgeting and Forecasting Systems (build stage, core process
 
   '
 trigger: A planning cycle or budget tool rebuild is scoped.
-outcome: Budgeting and forecasting systems are built with models, integrations, and controls delivered for operate budgeting.
+outcome: Budgeting and forecasting systems are built with models, integrations, and controls delivered
+  for operate budgeting.
 triggers:
 - A planning cycle or budget tool rebuild is scoped.
 outcomes:
-- Budgeting and forecasting systems are built with models, integrations, and controls delivered for operate budgeting.
+- Budgeting and forecasting systems are built with models, integrations, and controls delivered for operate
+  budgeting.
 identity:
   verb: Build
   object: Budgeting and Forecasting Systems
-  outcome_statement: Budgeting and forecasting systems are built with models, integrations, and controls delivered for operate budgeting.
+  outcome_statement: Budgeting and forecasting systems are built with models, integrations, and controls
+    delivered for operate budgeting.
   evidence_links:
   - type: documentation
     ref: change-requests/CR-BP-21e.1.md
@@ -71,7 +74,9 @@ metadata:
   change_history:
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance
+      & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 change_history:
 - version: 1.0.0
   date: '2026-09-08'
@@ -104,3 +109,19 @@ actors:
 - finance function
 stakeholders:
 - finance function
+inputs:
+- id: in-fa-build-92v
+  type: business_object
+  name: 'Build Budgeting and Forecasting Systems: working inputs (business_object)'
+  description: 'Derived from the record''s documented description and trigger: the process Build Budgeting
+    and Forecasting Systems (build stage, core process). Landed by CR-BP-21e.1 from the FinanceAndAccounting
+    register v2.'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-fa-build-92v
+  type: changed_object
+  name: 'Build Budgeting and Forecasting Systems: changed object result'
+  description: 'Derived from the record''s documented outcome: Budgeting and forecasting systems are built
+    with models, integrations, and controls delivered for operate budgeting.'
+  consumer: Downstream consumers per the documented outcome

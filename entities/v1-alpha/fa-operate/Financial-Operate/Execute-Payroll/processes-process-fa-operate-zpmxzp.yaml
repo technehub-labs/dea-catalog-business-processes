@@ -32,7 +32,8 @@ description: 'Execute Payroll (operate stage, core process). Landed by CR-BP-21e
 
   '
 trigger: A payroll cycle boundary is reached.
-outcome: Payroll is executed with compensation, withholdings, and statutory filings produced for each cycle.
+outcome: Payroll is executed with compensation, withholdings, and statutory filings produced for each
+  cycle.
 triggers:
 - A payroll cycle boundary is reached.
 outcomes:
@@ -40,7 +41,8 @@ outcomes:
 identity:
   verb: Execute
   object: Payroll
-  outcome_statement: Payroll is executed with compensation, withholdings, and statutory filings produced for each cycle.
+  outcome_statement: Payroll is executed with compensation, withholdings, and statutory filings produced
+    for each cycle.
   evidence_links:
   - type: documentation
     ref: change-requests/CR-BP-21e.1.md
@@ -71,7 +73,9 @@ metadata:
   change_history:
   - cr: CR-BP-GS-1
     date: '2026-10-27'
-    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
+    change: 'Governance sweep (CR-BP-GS-1): owner confirmed by the GOV-002 domain-level ratification (Finance
+      & Accounting Process Owner); actors/stakeholders derived from the parent cell charter vocabulary
+      under the GOV-003 role-based derivation policy (status: proposed, awaiting per-record review).'
 change_history:
 - version: 1.0.0
   date: '2026-09-08'
@@ -106,3 +110,18 @@ actors:
 - compliance function
 stakeholders:
 - compliance function
+inputs:
+- id: in-fa-operate-z
+  type: business_object
+  name: 'Execute Payroll: working inputs (business_object)'
+  description: 'Derived from the record''s documented description and trigger: the process Execute Payroll
+    (operate stage, core process). Landed by CR-BP-21e.1 from the FinanceAndAccounting register v2.'
+  source: Record documented content (description + trigger fields)
+  mandatory: true
+outputs:
+- id: out-fa-operate-z
+  type: changed_object
+  name: 'Execute Payroll: changed object result'
+  description: 'Derived from the record''s documented outcome: Payroll is executed with compensation,
+    withholdings, and statutory filings produced for each cycle.'
+  consumer: Downstream consumers per the documented outcome
