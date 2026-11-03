@@ -55,6 +55,13 @@ This directory hosts the canonical Activity record for `processes:activity-ge-de
 <details>
 <summary>Expand to view decomposition details</summary>
 
+- Composes (children):
+  - `processes:task-ge-design-intake-juuxbs` (composes)
+  - `processes:task-ge-design-verify-jnaabw` (composes)
+  - `processes:task-ge-design-transform-4xtk9k` (composes)
+  - `processes:task-ge-design-confirm-ptdrst` (composes)
+  - `processes:task-ge-design-record-kbuvzf` (composes)
+- Part of (parent): `processes:process-ge-design-pqkvdc`
 - **Cohesion rationale**: Constituent work shares a single scale concern (how risks are measured), one reference class (the risk taxonomy, tolerance bands), and one output (the assessment scale set). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
@@ -62,9 +69,16 @@ This directory hosts the canonical Activity record for `processes:activity-ge-de
 
 **Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
 
-**Roles and Responsibilities**: _(pending; backfill at EXT-04)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(pending; backfill at EXT-04)_
+- Owner: inherited from parent BP `processes:process-ge-design-pqkvdc` (GOV-002 role-based; EXT-13 accountability model)
+- Cohesion accountability: Constituent work shares a single scale concern (how risks are measured), one reference class (the risk taxonomy … (assessed at deposition; CR-BP-32 §6)
+
+**Business Rules and Controls**
+
+- Controls inherited from parent BP `processes:process-ge-design-pqkvdc` (scope and boundary are governed at BP level; CR-BP-32 activity-cohesion model)
+- Cohesion control rationale: Constituent work shares a single scale concern (how risks are measured), one reference class (the risk taxonomy …
+
 
 ## 7. Technical Metadata
 
@@ -73,4 +87,4 @@ This directory hosts the canonical Activity record for `processes:activity-ge-de
 - **Governing CR**: `CR-BP-48`
 - **Generator**: `scripts/generate_readmes.py` (CR-BP-94-EXT-07)
 - **Schema**: `dea/v1`
-- **Documentation Completeness**: sections marked `_(pending; backfill at EXT-04)_` indicate fields not yet present in the source YAML record. The structural validator (CR-BP-94-EXT-04) surfaces these as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.
+- **Documentation Completeness**: sections render from the record's own fields (CR-BP-224 derivations); the only standing deferrals are the L0 metrics register and L0 role assignment (tracked under CR-BP-94-EXT-24, due 2026-12-31). The structural validator (CR-BP-94-EXT-04) surfaces unfilled sections as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.

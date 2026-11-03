@@ -55,6 +55,13 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 <details>
 <summary>Expand to view decomposition details</summary>
 
+- Composes (children):
+  - `processes:task-eo-operate-intake-unmadm` (composes)
+  - `processes:task-eo-operate-verify-ffetd9` (composes)
+  - `processes:task-eo-operate-transform-5dyeqk` (composes)
+  - `processes:task-eo-operate-confirm-jcspyu` (composes)
+  - `processes:task-eo-operate-record-afg86u` (composes)
+- Part of (parent): `processes:process-eo-operate-2jnz85`
 - **Cohesion rationale**: Constituent work shares a single recovery concern (exception to restored operation), a common input (flagged deviations), and one recognizable portion of the parent outcome (exceptions handled). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
@@ -62,9 +69,16 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 **Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
 
-**Roles and Responsibilities**: _(pending; backfill at EXT-04)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(pending; backfill at EXT-04)_
+- Owner: inherited from parent BP `processes:process-eo-operate-2jnz85` (GOV-002 role-based; EXT-13 accountability model)
+- Cohesion accountability: Constituent work shares a single recovery concern (exception to restored operation), a common input (flagged … (assessed at deposition; CR-BP-32 §6)
+
+**Business Rules and Controls**
+
+- Controls inherited from parent BP `processes:process-eo-operate-2jnz85` (scope and boundary are governed at BP level; CR-BP-32 activity-cohesion model)
+- Cohesion control rationale: Constituent work shares a single recovery concern (exception to restored operation), a common input (flagged …
+
 
 ## 7. Technical Metadata
 
@@ -73,4 +87,4 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 - **Governing CR**: `CR-BP-43`
 - **Generator**: `scripts/generate_readmes.py` (CR-BP-94-EXT-07)
 - **Schema**: `dea/v1`
-- **Documentation Completeness**: sections marked `_(pending; backfill at EXT-04)_` indicate fields not yet present in the source YAML record. The structural validator (CR-BP-94-EXT-04) surfaces these as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.
+- **Documentation Completeness**: sections render from the record's own fields (CR-BP-224 derivations); the only standing deferrals are the L0 metrics register and L0 role assignment (tracked under CR-BP-94-EXT-24, due 2026-12-31). The structural validator (CR-BP-94-EXT-04) surfaces unfilled sections as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.

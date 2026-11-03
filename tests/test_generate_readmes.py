@@ -334,7 +334,7 @@ def test_properties_relationships_renders_both_tables():
 
 
 def test_metrics_block_renders_or_placeholder():
-    """CR-BP-94-EXT-07: Target Metrics renders as table or (Pending EXT-04)."""
+    """CR-BP-94-EXT-07/224: Target Metrics renders as table or standing pointer."""
     from scripts.generate_readmes import generate_readme
     # With metrics block.
     record_with = {
@@ -364,7 +364,10 @@ def test_metrics_block_renders_or_placeholder():
     }
     out_without = generate_readme(record_without, "L0")
     assert "Target Metrics and Indicators" in out_without
-    assert "(Pending EXT-04)" in out_without
+    # CR-BP-224: the placeholder is the standing pointer, not the closed
+    # EXT-04 promise.
+    assert "(Pending EXT-04)" not in out_without
+    assert "CR-BP-94-EXT-24" in out_without
 
 
 def test_section_numbering_continuous():
@@ -439,3 +442,86 @@ def test_properties_cell_truncation_word_boundary():
     assert cut.endswith("…") and len(cut) <= 122
     assert not cut[:-1].endswith("wor")  # no mid-word cut
     assert _truncate_cell("short") == "short"
+
+
+# ---------------------------------------------------------------------------
+# CR-BP-224: EXT-04 placeholder disposition (derivations from record fields)
+# ---------------------------------------------------------------------------
+
+def test_l1_decomposition_renders_composes_children():
+    """CR-BP-224: L1 groups' composes edges render (was 'pending' x49)."""
+    from scripts.generate_readmes import generate_readme
+    record = {
+        "id": "processes:group-fa-operate-mazyjd", "type": "ProcessGroup",
+        "name": "Financial Operate", "version": "1.0.0",
+        "lifecycle_status": "candidate", "definition": "Test.",
+        "owner": {"value": "Finance & Accounting Process Owner", "status": "confirmed"},
+        "scope": {"includes": ["Payroll execution"], "excludes": ["Tax design"]},
+        "composes": [{"source_id": "processes:group-fa-operate-mazyjd",
+                      "target_id": "processes:process-fa-operate-g9zpnq",
+                      "relationship_type": "composes"}],
+    }
+    out = generate_readme(record, "L1")
+    assert "processes:process-fa-operate-g9zpnq" in out
+    assert "(decomposition relationships pending)" not in out
+    assert "Process Owner: Finance & Accounting Process Owner" in out
+    assert "Governing scope (includes" in out
+
+
+def test_l4_task_renders_leaf_and_responsibility():
+    """CR-BP-224: L4 tasks render the leaf statement + their own fields."""
+    from scripts.generate_readmes import generate_readme
+    record = {
+        "id": "processes:task-ao-activate-intake-v3pg86", "type": "Task",
+        "name": "Attest Intake", "version": "1.0.0",
+        "lifecycle_status": "candidate", "definition": "Intake phase work.",
+        "responsibility": "intake custodian",
+        "belongs_to_activity": "processes:activity-ao-activate-x9hy5e",
+        "boundary": {"inclusions": ["Register the intake"],
+                     "exclusions": ["Downstream attestation"]},
+    }
+    out = generate_readme(record, "L4")
+    assert "leaf record: tasks are the L4 floor" in out
+    assert "Phase responsibility: intake custodian" in out
+    assert "boundary.inclusions" in out
+    assert "pending" not in out.lower()
+
+
+def test_deprecated_l2_renders_mece_exemption():
+    """CR-BP-224: deprecated records state the deliberate exclusion."""
+    from scripts.generate_readmes import generate_readme
+    record = {
+        "id": "processes:process-ge-conceive-e6jx6s", "type": "Process",
+        "name": "Develop Governance Strategy", "version": "1.0.0",
+        "lifecycle_status": "deprecated", "definition": "Deprecated.",
+    }
+    out = generate_readme(record, "L2")
+    assert "deliberately excluded: deprecated record" in out
+    assert "MECE-008" in out
+
+
+def test_l2_definition_falls_back_to_description():
+    """CR-BP-224: mv1-era L2 records document the definition in `description`."""
+    from scripts.generate_readmes import generate_readme
+    record = {
+        "id": "processes:process-ao-activate-jqxtqn", "type": "Process",
+        "name": "Mobilize Licensed Workforce", "version": "1.0.0",
+        "lifecycle_status": "candidate",
+        "process_intent": "manage",
+        "description": "Mobilize a licensed or regulated workforce under the "
+                       "enterprise regulated-entity approval authority.",
+    }
+    out = generate_readme(record, "L2")
+    assert "**Definition**: Mobilize a licensed or regulated workforce" in out
+    assert "definition pending" not in out
+
+
+def test_no_ext04_promise_anywhere():
+    """CR-BP-224: the closed EXT-04 slice is no longer promised by any
+    generated README; deferrals carry the EXT-24 standing pointer."""
+    from scripts.generate_readmes import generate_readme
+    bare_pc = {"id": "processes:pc-x-y", "name": "Bare PC",
+               "domain": "StrategyAndDirection", "lifecycle_stage": "Retire"}
+    out = generate_readme(bare_pc, "L0")
+    assert "backfill at EXT-04" not in out
+    assert "CR-BP-94-EXT-24" in out  # standing pointer

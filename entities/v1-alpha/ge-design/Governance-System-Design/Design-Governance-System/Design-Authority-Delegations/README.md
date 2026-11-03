@@ -55,6 +55,13 @@ This directory hosts the canonical Activity record for `processes:activity-ge-de
 <details>
 <summary>Expand to view decomposition details</summary>
 
+- Composes (children):
+  - `processes:task-ge-design-intake-v7py95` (composes)
+  - `processes:task-ge-design-verify-f3ehuy` (composes)
+  - `processes:task-ge-design-transform-vvbn7g` (composes)
+  - `processes:task-ge-design-confirm-bpj2mx` (composes)
+  - `processes:task-ge-design-record-3v5zkr` (composes)
+- Part of (parent): `processes:process-ge-design-zbrg8b`
 - **Cohesion rationale**: Constituent work shares a single delegation concern (authority from mandate to body to role), one reference class (the articulated bodies), and one output (the delegation design). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
@@ -62,9 +69,16 @@ This directory hosts the canonical Activity record for `processes:activity-ge-de
 
 **Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
 
-**Roles and Responsibilities**: _(pending; backfill at EXT-04)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(pending; backfill at EXT-04)_
+- Owner: inherited from parent BP `processes:process-ge-design-zbrg8b` (GOV-002 role-based; EXT-13 accountability model)
+- Cohesion accountability: Constituent work shares a single delegation concern (authority from mandate to body to role), one reference class (the … (assessed at deposition; CR-BP-32 §6)
+
+**Business Rules and Controls**
+
+- Controls inherited from parent BP `processes:process-ge-design-zbrg8b` (scope and boundary are governed at BP level; CR-BP-32 activity-cohesion model)
+- Cohesion control rationale: Constituent work shares a single delegation concern (authority from mandate to body to role), one reference class (the …
+
 
 ## 7. Technical Metadata
 
@@ -73,4 +87,4 @@ This directory hosts the canonical Activity record for `processes:activity-ge-de
 - **Governing CR**: `CR-BP-48`
 - **Generator**: `scripts/generate_readmes.py` (CR-BP-94-EXT-07)
 - **Schema**: `dea/v1`
-- **Documentation Completeness**: sections marked `_(pending; backfill at EXT-04)_` indicate fields not yet present in the source YAML record. The structural validator (CR-BP-94-EXT-04) surfaces these as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.
+- **Documentation Completeness**: sections render from the record's own fields (CR-BP-224 derivations); the only standing deferrals are the L0 metrics register and L0 role assignment (tracked under CR-BP-94-EXT-24, due 2026-12-31). The structural validator (CR-BP-94-EXT-04) surfaces unfilled sections as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.

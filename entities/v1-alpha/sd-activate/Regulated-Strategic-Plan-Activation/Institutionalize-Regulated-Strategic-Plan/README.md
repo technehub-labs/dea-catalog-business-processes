@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-sd-acti
 
 **Intent**: manage
 
-**Definition**: (definition pending; backfill at EXT-04)
+**Definition**: Institutionalize a regulated entity's strategic plan under the enterprise's regulated-entity approval authority within the processes:pc-sd-activate-ghaub8 Cell Charter. The trigger is a board-approved strategic plan that must be filed with or activated under the supervision of a competent regulator; the outcome is the plan formally activated with the supervisor's acknowledgement on record, the filing receipt preserved, the operational monitoring framework live, and the plan's obligations binding on the regulated entity under the regulator's continuing supervision. Distinct from strategy build (Build coordinate) and from steady-state strategy execution (Operate coordinate).
 
 ## 3. Governance and Provenance
 
@@ -85,9 +85,29 @@ This directory hosts the canonical Process record for `processes:process-sd-acti
 - Strategic-plan sunset under regulatory mandate (StrategyAndDirection x Retire; CR-BP-80 escape record documented DEFER without admission)
 - Non-regulated strategic-plan launch (single-business-unit rollout without supervisor's review)
 
-**Roles and Responsibilities**: _(pending; backfill at EXT-04)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(pending; backfill at EXT-04)_
+- Process Owner: Strategy & Direction Process Owner (confirmed; GOV-002 role-based)
+- Actor: industry regulator
+- Actor: supervising authority
+- Actor: governing board
+- Actor: risk function
+- Actor: workforce management
+- Actor: operations function
+- Actor: strategy function
+- Stakeholder: industry regulator
+- Stakeholder: supervising authority
+- Stakeholder: governing board
+- Stakeholder: risk function
+- Stakeholder: workforce management
+- Stakeholder: operations function
+- Stakeholder: strategy function
+
+**Business Rules and Controls**
+
+- Governing scope (includes; `process_scope.includes`): Supervisor-acknowledged strategic-plan filing (Basel ICAAP / SAA approval by PRA / ECB; BRRD recovery-plan activation …
+- Adjacency exclusions (`process_scope.excludes`): Strategic-plan conception, design, and build (StrategyAndDirection x Conceive / Design / Build); Steady-state strategy …
+
 
 ## 7. Technical Metadata
 
@@ -96,4 +116,4 @@ This directory hosts the canonical Process record for `processes:process-sd-acti
 - **Governing CR**: `CR-BP-87`
 - **Generator**: `scripts/generate_readmes.py` (CR-BP-94-EXT-07)
 - **Schema**: `dea/v1`
-- **Documentation Completeness**: sections marked `_(pending; backfill at EXT-04)_` indicate fields not yet present in the source YAML record. The structural validator (CR-BP-94-EXT-04) surfaces these as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.
+- **Documentation Completeness**: sections render from the record's own fields (CR-BP-224 derivations); the only standing deferrals are the L0 metrics register and L0 role assignment (tracked under CR-BP-94-EXT-24, due 2026-12-31). The structural validator (CR-BP-94-EXT-04) surfaces unfilled sections as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.

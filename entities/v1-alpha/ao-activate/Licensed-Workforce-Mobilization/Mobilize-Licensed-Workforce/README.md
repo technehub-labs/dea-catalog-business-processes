@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-ao-acti
 
 **Intent**: manage
 
-**Definition**: (definition pending; backfill at EXT-04)
+**Definition**: Mobilize a licensed or regulated workforce under the enterprise regulated-entity approval authority within the processes:pc-ao-activate-kusw2u Cell Charter. The trigger is the enterprise regulated-entity approval for a licensed role; the outcome is the live-readiness activation of the licensed role with the supervisor-controlled scope preserved (signing authority or controlled-function designation), fitness-and-propriety attestation recorded, supervised-training completion preserved, and continuing-supervisor notification activated, so that the licensed individual is live on the regulated personnel record under the regulator continuing supervision.
 
 ## 3. Governance and Provenance
 
@@ -77,9 +77,23 @@ This directory hosts the canonical Process record for `processes:process-ao-acti
 **Outputs**:
 - Mobilize Licensed Workforce: changed object result (changed_object)
 
-**Roles and Responsibilities**: _(pending; backfill at EXT-04)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(pending; backfill at EXT-04)_
+- Process Owner: Agency & Organization Process Owner (confirmed; GOV-002 role-based)
+- Actor: industry regulator
+- Actor: supervising authority
+- Actor: governing board
+- Actor: workforce management
+- Actor: operations function
+- Actor: product management
+- Stakeholder: industry regulator
+- Stakeholder: supervising authority
+- Stakeholder: governing board
+- Stakeholder: workforce management
+- Stakeholder: operations function
+- Stakeholder: product management
+
+**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
 
 ## 7. Technical Metadata
 
@@ -88,4 +102,4 @@ This directory hosts the canonical Process record for `processes:process-ao-acti
 - **Governing CR**: `CR-BP-81`
 - **Generator**: `scripts/generate_readmes.py` (CR-BP-94-EXT-07)
 - **Schema**: `dea/v1`
-- **Documentation Completeness**: sections marked `_(pending; backfill at EXT-04)_` indicate fields not yet present in the source YAML record. The structural validator (CR-BP-94-EXT-04) surfaces these as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.
+- **Documentation Completeness**: sections render from the record's own fields (CR-BP-224 derivations); the only standing deferrals are the L0 metrics register and L0 role assignment (tracked under CR-BP-94-EXT-24, due 2026-12-31). The structural validator (CR-BP-94-EXT-04) surfaces unfilled sections as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.

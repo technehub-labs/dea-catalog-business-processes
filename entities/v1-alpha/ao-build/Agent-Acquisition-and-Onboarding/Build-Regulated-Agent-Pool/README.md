@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-ao-buil
 
 **Intent**: manage
 
-**Definition**: (definition pending; backfill at EXT-04)
+**Definition**: Build the regulator-ready licensed-candidate pool under the enterprise regulated-entity approval authority. The trigger is the decision to source candidates for regulator-licensed roles. The outcome is a regulator-ready pool committed to the regulated personnel record, with each candidate verified against the regulator's licence registry, fitness-and-propriety attested, cleared against OFAC sanctions (31 CFR 501), Bank Secrecy Act AML/KYC (31 USC 5311), FCRA background (15 USC 1681), and ADA fitness (42 USC 12112), and ready for regulator-tied Activate without re-screening.
 
 ## 3. Governance and Provenance
 
@@ -75,9 +75,13 @@ This directory hosts the canonical Process record for `processes:process-ao-buil
 **Outputs**:
 - Build Regulated Agent Pool: changed object result (changed_object)
 
-**Roles and Responsibilities**: _(pending; backfill at EXT-04)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(pending; backfill at EXT-04)_
+- Process Owner: Agency & Organization Process Owner (confirmed; GOV-002 role-based)
+- Actor: governing board
+- Stakeholder: governing board
+
+**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
 
 ## 7. Technical Metadata
 
@@ -86,4 +90,4 @@ This directory hosts the canonical Process record for `processes:process-ao-buil
 - **Governing CR**: `CR-BP-106`
 - **Generator**: `scripts/generate_readmes.py` (CR-BP-94-EXT-07)
 - **Schema**: `dea/v1`
-- **Documentation Completeness**: sections marked `_(pending; backfill at EXT-04)_` indicate fields not yet present in the source YAML record. The structural validator (CR-BP-94-EXT-04) surfaces these as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.
+- **Documentation Completeness**: sections render from the record's own fields (CR-BP-224 derivations); the only standing deferrals are the L0 metrics register and L0 role assignment (tracked under CR-BP-94-EXT-24, due 2026-12-31). The structural validator (CR-BP-94-EXT-04) surfaces unfilled sections as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.

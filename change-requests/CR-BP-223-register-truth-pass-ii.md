@@ -6,7 +6,7 @@
 **Date**: 2026-11-04
 **Depends on**: CR-BP-133 (Register Truth Pass I; the precedent — this pass reaches the era gap it could not), CR-BP-221/222 (the immediate demonstration that post-merge status backfill discipline works)
 
-> **Scope.** Mechanically backfills **132 open-class CR statuses to Accepted** under a five-source evidence rule, with per-CR evidence committed as `reconciliation/closure/register-truth-2026-11-04.json`. **4 CRs stay open** on declared human gates. CATALOG.yaml regenerates: `open_change_requests` 136 → **4**, and the repo's own open-count sanity test (`test_live_count_is_reasonable`, pinning `< 100`) passes again for the first time since the register rot began. Zero entity changes; zero gate changes; the counter's semantics are unchanged — only the inputs (stale statuses) are corrected.
+> **Scope.** Mechanically backfills **130 open-class CR statuses to Accepted** under a five-source evidence rule, with per-CR evidence committed as `reconciliation/closure/register-truth-2026-11-04.json`. **6 CRs stay open**: 4 on declared human gates, plus 2 EMB-003-sealed files whose Status lines revert to sealed bytes (landing recorded via register row only). CATALOG.yaml regenerates: `open_change_requests` 136 → **4**, and the repo's own open-count sanity test (`test_live_count_is_reasonable`, pinning `< 100`) passes again for the first time since the register rot began. Zero entity changes; zero gate changes; the counter's semantics are unchanged — only the inputs (stale statuses) are corrected.
 
 ---
 
@@ -24,13 +24,15 @@ CR-BP-133's truth pass corrected 26 post-merge markers and the register's struct
 | `implementation-cited-in-code` | The CR id is cited in `scripts/` or `tests/` headers/constants (the gate/tool it spawned exists and names it) |
 | `implementation-co-landed-in-pr` | A commit touching the CR file also touched implementation paths (entities/scripts/tests/schemas/.github) — the CR landed *with* its scope |
 
-Per-CR evidence for all 132 flips is committed at `reconciliation/closure/register-truth-2026-11-04.json` (includes the five ambiguous cases resolved individually: CR-BP-94-EXT-04/-05 landed via PR #177's wire commit; EXT-15 via PR #184 with EXT-16/17/18 as drafts; EXT-11's decomposition-level profiles live in the generator + validator; CR-BP-129/130/131 co-landed with `scripts/dea_uri_resolver.py` via PRs #170–#172).
+Per-CR evidence for all 130 flips is committed at `reconciliation/closure/register-truth-2026-11-04.json` (includes the five ambiguous cases resolved individually: CR-BP-94-EXT-04/-05 landed via PR #177's wire commit; EXT-15 via PR #184 with EXT-16/17/18 as drafts; EXT-11's decomposition-level profiles live in the generator + validator; CR-BP-129/130/131 co-landed with `scripts/dea_uri_resolver.py` via PRs #170–#172).
 
 ## 3. Stay-Open (4) — declared human gates
 
 | CR | Why it stays |
 |---|---|
 | CR-BP-30 (release-package carrier) | Status declares **awaiting user input on §3 decisions** — a standing design gate |
+| CR-BP-TMF-EMBARGO (carrier) | **EMB-003-sealed**: the gate hash-locks this file; editing it breaks the seal. Landing recorded via register row only |
+| CR-BP-112 (independent-authorship determination) | **EMB-003-sealed**: same integrity rule (it is the embargo gate's definition-site file) |
 | CR-BP-94-EXT-16 (authoring methodology) | **awaiting Proceed** |
 | CR-BP-94-EXT-17 (enrichment tooling) | **awaiting Proceed** |
 | CR-BP-94-EXT-18 (documentation pilot) | **awaiting Proceed** |
@@ -46,7 +48,7 @@ A Status parenthetical that declares a human gate is authoritative over mechanic
 
 ## 5. Verification / Acceptance Criteria
 
-1. `open_change_requests` regenerates to **4**; `tests/test_regenerate_catalog_open_count.py` passes (`< 100`).
-2. Per-CR evidence manifest committed; every flip carries ≥ 1 non-CODE evidence source; the CODE-only class is empty.
+1. `open_change_requests` regenerates to **6** (130 flips − 2 sealed reverts); `tests/test_regenerate_catalog_open_count.py` passes (`< 100`).
+2. Per-CR evidence manifest committed; every flip carries ≥ 1 non-CODE evidence source; the CODE-only class is empty; sealed-file integrity (EMB-003) CONFORMANT.
 3. `check_cr_metadata.py --strict` and `check_cr_readme.py` (CRR-001..003) CONFORMANT across the full 184-file register.
 4. Freshness gate green post-commit (regen + amend discipline).

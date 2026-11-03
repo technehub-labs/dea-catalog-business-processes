@@ -1,7 +1,7 @@
 {
   "generated": "2026-11-04",
   "carrier": "CR-BP-223",
-  "rule": "flip open-class CR status to Accepted when ANY of: CHANGELOG landed entry / register row closed / >=3 entity change_history citations / implementation cited in scripts+tests / implementation co-landed in the CR-file's own PR history; stay open when the Status declares a human gate (awaiting Proceed / awaiting user input)",
+  "rule": "flip open-class CR status to Accepted when ANY of: CHANGELOG landed entry / register row closed / >=3 entity change_history citations / implementation cited in scripts+tests / implementation co-landed in the CR-file's own PR history; stay open when the Status declares a human gate (awaiting Proceed / awaiting user input); EXCEPTION: EMB-003-sealed files are never edited \u2014 their landing is recorded in the register row only (2 files)",
   "stayed_open": [
     "CR-BP-30-release-package.md",
     "CR-BP-94-EXT-16-operational-authoring-and-research-methodology.md",
@@ -98,16 +98,6 @@
         "changelog-landed-entry",
         "register-row-closed",
         "entity-change-history-citations:125",
-        "implementation-cited-in-code",
-        "implementation-co-landed-in-pr"
-      ]
-    },
-    "CR-BP-112-independent-authorship-determination.md": {
-      "from": "Proposed (this PR)",
-      "to": "Accepted",
-      "evidence": [
-        "changelog-landed-entry",
-        "register-row-closed",
         "implementation-cited-in-code",
         "implementation-co-landed-in-pr"
       ]
@@ -1088,14 +1078,6 @@
         "implementation-co-landed-in-pr"
       ]
     },
-    "CR-BP-TMF-EMBARGO-tmforum-reference-strip.md": {
-      "from": "Proposed",
-      "to": "Accepted",
-      "evidence": [
-        "implementation-cited-in-code",
-        "implementation-co-landed-in-pr"
-      ]
-    },
     "CR-CATALOG-STRUCT-02.md": {
       "from": "Proposed",
       "to": "Accepted",
@@ -1104,5 +1086,25 @@
         "implementation-co-landed-in-pr"
       ]
     }
-  }
+  },
+  "sealed_exceptions": [
+    {
+      "file": "CR-BP-TMF-EMBARGO-tmforum-reference-strip.md",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ],
+      "disposition": "landing recorded via register row only; file Status line reverted to sealed bytes (EMB-003 integrity)"
+    },
+    {
+      "file": "CR-BP-112-independent-authorship-determination.md",
+      "evidence": [
+        "changelog-landed-entry",
+        "register-row-closed",
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ],
+      "disposition": "landing recorded via register row only; file Status line reverted to sealed bytes (EMB-003 integrity)"
+    }
+  ]
 }

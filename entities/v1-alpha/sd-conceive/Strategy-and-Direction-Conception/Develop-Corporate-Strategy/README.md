@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-sd-conc
 
 **Intent**: develop
 
-**Definition**: (definition pending; backfill at EXT-04)
+**Definition**: Operate the Develop Corporate Strategy L2 process within the processes:pc-sd-conceive-ucb3gx Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces.
 
 ## 3. Governance and Provenance
 
@@ -80,9 +80,13 @@ This directory hosts the canonical Process record for `processes:process-sd-conc
 **Outputs**:
 - Develop Corporate Strategy: changed object result (changed_object)
 
-**Roles and Responsibilities**: _(pending; backfill at EXT-04)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(pending; backfill at EXT-04)_
+- Process Owner: Strategy & Direction Process Owner (confirmed; GOV-002 role-based)
+- Actor: strategy function
+- Stakeholder: strategy function
+
+**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
 
 ## 7. Technical Metadata
 
@@ -91,4 +95,4 @@ This directory hosts the canonical Process record for `processes:process-sd-conc
 - **Governing CR**: `CR-BP-21a`
 - **Generator**: `scripts/generate_readmes.py` (CR-BP-94-EXT-07)
 - **Schema**: `dea/v1`
-- **Documentation Completeness**: sections marked `_(pending; backfill at EXT-04)_` indicate fields not yet present in the source YAML record. The structural validator (CR-BP-94-EXT-04) surfaces these as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.
+- **Documentation Completeness**: sections render from the record's own fields (CR-BP-224 derivations); the only standing deferrals are the L0 metrics register and L0 role assignment (tracked under CR-BP-94-EXT-24, due 2026-12-31). The structural validator (CR-BP-94-EXT-04) surfaces unfilled sections as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.

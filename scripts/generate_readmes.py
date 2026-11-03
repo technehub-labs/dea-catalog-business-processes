@@ -34,7 +34,7 @@ numbering per CR-BP-221 — each profile numbers its sections 1..N by position):
 Content is drawn from each record's YAML fields. Sections that have no
 data in the source record are populated with a deterministic placeholder
 that the validator accepts. The new `metrics` block (L0-only; optional
-KPI/KRI/KCI) renders as a 3-column table or `(Pending EXT-04)` placeholder
+KPI/KRI/KCI) renders as a 3-column table or the CR-BP-224 standing pointer
 when absent.
 
 Backward compatibility: existing YAML records without a `metrics` block
@@ -177,6 +177,120 @@ def _truncate_cell(value: str, limit: int = 120) -> str:
         return value
     cut = value[:limit].rsplit(" ", 1)[0].rstrip(" ,;:.")
     return cut + " …"
+
+
+# CR-BP-224: the standing-pointer text that replaced every
+# "(pending; backfill at EXT-04)" placeholder. EXT-04 landed via PR #177
+# with a different scope (the generation/validation pipeline), so the old
+# promise pointed at a closed slice; the only genuinely-deferred content
+# (the L0 metrics register; L0 role assignment) is tracked under the
+# CR-BP-94-EXT-24 closure window instead.
+STANDING_ITEM = ("_(standing item: tracked in the documentation improvement "
+                 "backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_")
+
+
+def _owner_line(owner) -> str | None:
+    """Render the GOV-002-confirmed owner object as one line (CR-BP-224)."""
+    if isinstance(owner, dict) and owner.get("value"):
+        status = owner.get("status", "?")
+        return f"- Process Owner: {owner['value']} ({status}; GOV-002 role-based)"
+    return None
+
+
+def _roles_lines(record: dict, level: str) -> list[str]:
+    """Roles and Responsibilities lines, derived from the record's own
+    fields (CR-BP-224). Every item cites its source field; nothing is
+    invented. Returns [] when the level has no derivable role data —
+    the caller then renders the standing pointer instead of a pending
+    promise.
+    """
+    lines: list[str] = []
+    owner_line = _owner_line(record.get("owner"))
+    if level == "L1":
+        if owner_line:
+            lines.append(owner_line)
+        children = record.get("composes") or []
+        if children:
+            lines.append(f"- Decomposes into {len(children)} L2 Process(es) "
+                         "(per the record's `composes` block)")
+    elif level == "L2":
+        if owner_line:
+            lines.append(owner_line)
+        for a in record.get("actors") or []:
+            lines.append(f"- Actor: {a}")
+        for s in record.get("stakeholders") or []:
+            lines.append(f"- Stakeholder: {s}")
+    elif level == "L3":
+        parent = record.get("belongs_to_business_process")
+        if parent:
+            lines.append(f"- Owner: inherited from parent BP `{parent}` "
+                         "(GOV-002 role-based; EXT-13 accountability model)")
+        cohesion = record.get("cohesion_rationale")
+        if cohesion:
+            lines.append(f"- Cohesion accountability: {_truncate_cell(cohesion)} "
+                         "(assessed at deposition; CR-BP-32 §6)")
+    elif level == "L4":
+        resp = record.get("responsibility")
+        if resp:
+            lines.append(f"- Phase responsibility: {resp} "
+                         "(the task's `responsibility` field; CR-BP-102 "
+                         "5-phase decomposition)")
+        parent = record.get("belongs_to_activity")
+        if parent:
+            lines.append(f"- Parent activity: `{parent}` "
+                         "(owner inheritance per GOV-002 / EXT-13)")
+    return lines
+
+
+def _rules_lines(record: dict, level: str) -> list[str]:
+    """Business Rules and Controls lines, derived from the record's own
+    boundary/scope/cohesion fields (CR-BP-224). Returns [] when nothing
+    is derivable.
+    """
+    lines: list[str] = []
+    if level == "L4":
+        boundary = record.get("boundary") or {}
+        if isinstance(boundary, dict):
+            inc = boundary.get("inclusions") or []
+            exc = boundary.get("exclusions") or []
+            if inc:
+                lines.append("- Bounded work (inclusions; `boundary.inclusions`): "
+                             + _truncate_cell("; ".join(map(str, inc))))
+            if exc:
+                lines.append("- Exclusions (`boundary.exclusions`): "
+                             + _truncate_cell("; ".join(map(str, exc))))
+    elif level == "L1":
+        scope = record.get("scope") or {}
+        if isinstance(scope, dict):
+            inc = scope.get("includes") or []
+            exc = scope.get("excludes") or []
+            if inc:
+                lines.append("- Governing scope (includes; `scope.includes`): "
+                             + _truncate_cell("; ".join(map(str, inc))))
+            if exc:
+                lines.append("- Adjacency exclusions (`scope.excludes`): "
+                             + _truncate_cell("; ".join(map(str, exc))))
+    elif level == "L2":
+        scope = record.get("process_scope") or record.get("scope") or {}
+        if isinstance(scope, dict):
+            inc = scope.get("includes") or []
+            exc = scope.get("excludes") or []
+            if inc:
+                lines.append("- Governing scope (includes; `process_scope.includes`): "
+                             + _truncate_cell("; ".join(map(str, inc))))
+            if exc:
+                lines.append("- Adjacency exclusions (`process_scope.excludes`): "
+                             + _truncate_cell("; ".join(map(str, exc))))
+    elif level == "L3":
+        parent = record.get("belongs_to_business_process")
+        cohesion = record.get("cohesion_rationale")
+        if parent:
+            lines.append(f"- Controls inherited from parent BP `{parent}` "
+                         "(scope and boundary are governed at BP level; "
+                         "CR-BP-32 activity-cohesion model)")
+        if cohesion:
+            lines.append(f"- Cohesion control rationale: {_truncate_cell(cohesion)}")
+    return lines
 
 
 # Status emoji map (CR-BP-120 example; for the Header and Identity Table).
@@ -415,7 +529,7 @@ def _executive_summary(record: dict, level: str) -> str:
         concern = charter.get("enterprise_concern")
         if concern:
             return concern.strip()
-    return "(executive summary pending; backfill at EXT-04)"
+    return f"(executive summary: {STANDING_ITEM})"
 
 
 def _intent_definition(record: dict, level: str) -> str:
@@ -428,9 +542,11 @@ def _intent_definition(record: dict, level: str) -> str:
         record.get("process_intent")
         or record.get("description")
         or record.get("definition")
-        or "(intent pending; backfill at EXT-04)"
+        or "(intent not separately documented; see definition)"
     )
-    definition = record.get("definition") or "(definition pending; backfill at EXT-04)"
+    definition = (record.get("definition")
+                  or record.get("description")
+                  or "(definition not separately documented; see description)")
 
     # CR-BP-221: when no distinct intent field exists (L4 tasks carry
     # only the phase definition), the fallback resolves both lines to
@@ -521,7 +637,7 @@ def _behavioral_boundaries(record: dict, level: str) -> str:
     """
     charter = record.get("cell_charter") or {}
     if not isinstance(charter, dict) or not charter:
-        return "(Cell charter pending; backfill at EXT-04)"
+        return f"(Cell charter: {STANDING_ITEM})"
 
     inclusions = charter.get("inclusions") or []
     exclusions = charter.get("exclusions") or []
@@ -655,9 +771,40 @@ def _hierarchical_decomposition(record: dict, level: str) -> str:
         for a in act_refs:
             children_lines.append(f"  - `{a}`")
 
+    # CR-BP-224: render the record's own `composes` block (the L1 groups'
+    # child L2 processes and the L3 activities' child L4 tasks), and the
+    # belongs-to parent link — both previously invisible to this
+    # renderer, which is why L1 (49) and L4 (2,900) rendered "pending"
+    # despite carrying the edges.
+    composes = record.get("composes") or []
+    if composes:
+        children_lines.append("- Composes (children):")
+        for e in composes:
+            if isinstance(e, dict):
+                children_lines.append(f"  - `{e.get('target_id', '?')}` "
+                                      f"({e.get('relationship_type', 'composes')})")
+
+    parent_link = (record.get("belongs_to_activity")
+                   or record.get("belongs_to_business_process"))
+    if parent_link:
+        children_lines.append(f"- Part of (parent): `{parent_link}`")
+
     cohesion = record.get("cohesion_rationale")
     if cohesion:
         children_lines.append(f"- **Cohesion rationale**: {cohesion}")
+
+    # CR-BP-224: leaf/deprecated dispositions render as lines alongside
+    # the parent link — a task with a parent is still a leaf, and a
+    # deprecated record's exclusion is itself documentation.
+    has_children = bool(act_refs or composes)
+    if not has_children:
+        if record.get("lifecycle_status") == "deprecated":
+            children_lines.insert(0, "(decomposition deliberately excluded: "
+                                     "deprecated record; MECE-008 exemption, "
+                                     "CR-BP-36)")
+        elif level == "L4":
+            children_lines.insert(0, "(leaf record: tasks are the L4 floor of "
+                                     "the decomposition and have no children)")
 
     if not children_lines:
         return "(decomposition relationships pending)"
@@ -795,12 +942,14 @@ def _operational_metrics(record: dict, level: str) -> str:
       4. Target Metrics (from the new `metrics` block: KPI / KRI / KCI)
 
     If the record has no `metrics` block, the Target Metrics sub-block
-    renders `(Pending EXT-04)` placeholder.
+    renders the CR-BP-224 standing-pointer placeholder.
     """
     out: list[str] = []
 
     # Inputs / Outputs / Interfaces
-    scope = record.get("process_scope") or {}
+    # CR-BP-224: ProcessContext records carry `scope` (the L2 field name
+    # `process_scope` made every L0 cell render the pending placeholder).
+    scope = record.get("scope") or record.get("process_scope") or {}
     includes = scope.get("includes") if isinstance(scope, dict) else None
     excludes = scope.get("excludes") if isinstance(scope, dict) else None
     interfaces_lines: list[str] = []
@@ -818,7 +967,7 @@ def _operational_metrics(record: dict, level: str) -> str:
         out.append("")
         out.extend(interfaces_lines)
     else:
-        out.append("**Inputs, Outputs and Interfaces**: _(pending; backfill at EXT-04)_")
+        out.append(f"**Inputs, Outputs and Interfaces**: {STANDING_ITEM}")
 
     out.append("")
 
@@ -843,8 +992,15 @@ def _operational_metrics(record: dict, level: str) -> str:
                 out.append(f"- {o}")
             out.append("")
         else:
-            out.append("**Roles and Responsibilities**: _(pending; backfill at EXT-04)_")
-            out.append("")
+            role_lines = _roles_lines(record, level)
+            if role_lines:
+                out.append("**Roles and Responsibilities**")
+                out.append("")
+                out.extend(role_lines)
+                out.append("")
+            else:
+                out.append(f"**Roles and Responsibilities**: {STANDING_ITEM}")
+                out.append("")
 
     # Business Rules and Controls
     rules = gov.get("rules") if isinstance(gov, dict) else None
@@ -865,8 +1021,15 @@ def _operational_metrics(record: dict, level: str) -> str:
         out.extend(rules_lines)
         out.append("")
     else:
-        out.append("**Business Rules and Controls**: _(pending; backfill at EXT-04)_")
-        out.append("")
+        rule_lines = _rules_lines(record, level)
+        if rule_lines:
+            out.append("**Business Rules and Controls**")
+            out.append("")
+            out.extend(rule_lines)
+            out.append("")
+        else:
+            out.append(f"**Business Rules and Controls**: {STANDING_ITEM}")
+            out.append("")
 
     # Target Metrics (the new `metrics` block)
     metrics = record.get("metrics")
@@ -893,7 +1056,7 @@ def _operational_metrics(record: dict, level: str) -> str:
                     freq = m.get("frequency", "?")
                     out.append(f"| **{label}** | {name} | {target} | {freq} |")
     else:
-        out.append("_(Pending EXT-04)_")
+        out.append(STANDING_ITEM)
 
     return "\n".join(out)
 
@@ -943,6 +1106,7 @@ def _operational_details(record: dict, level: str) -> str:
     gov = record.get("governance") or {}
     roles = gov.get("roles") if isinstance(gov, dict) else None
     owners = (record.get("metadata") or {}).get("owners")
+    role_lines = _roles_lines(record, level)
     if roles or owners:
         out.append("**Roles and Responsibilities**")
         out.append("")
@@ -956,20 +1120,31 @@ def _operational_details(record: dict, level: str) -> str:
             for o in owners:
                 out.append(f"- (owner) {o}")
         out.append("")
+    elif role_lines:
+        out.append("**Roles and Responsibilities**")
+        out.append("")
+        out.extend(role_lines)
+        out.append("")
     else:
-        out.append("**Roles and Responsibilities**: _(pending; backfill at EXT-04)_")
+        out.append(f"**Roles and Responsibilities**: {STANDING_ITEM}")
         out.append("")
 
     # Rules
     rules = gov.get("rules") if isinstance(gov, dict) else None
+    rule_lines = _rules_lines(record, level)
     if rules:
         out.append("**Business Rules and Controls**")
         out.append("")
         for r in rules:
             out.append(f"- {r}")
         out.append("")
+    elif rule_lines:
+        out.append("**Business Rules and Controls**")
+        out.append("")
+        out.extend(rule_lines)
+        out.append("")
     else:
-        out.append("**Business Rules and Controls**: _(pending; backfill at EXT-04)_")
+        out.append(f"**Business Rules and Controls**: {STANDING_ITEM}")
 
     return "\n".join(out)
 
@@ -990,10 +1165,12 @@ def _technical_metadata(record: dict, level: str) -> str:
     parts.append("- **Generator**: `scripts/generate_readmes.py` (CR-BP-94-EXT-07)")
     parts.append("- **Schema**: `dea/v1`")
     parts.append(
-        "- **Documentation Completeness**: sections marked `_(pending; backfill at EXT-04)_` "
-        "indicate fields not yet present in the source YAML record. The structural "
-        "validator (CR-BP-94-EXT-04) surfaces these as DOC-004 advisory findings; "
-        "completeness is validated under CR-BP-94-EXT-06."
+        "- **Documentation Completeness**: sections render from the record's own "
+        "fields (CR-BP-224 derivations); the only standing deferrals are the L0 "
+        "metrics register and L0 role assignment (tracked under CR-BP-94-EXT-24, "
+        "due 2026-12-31). The structural validator (CR-BP-94-EXT-04) surfaces "
+        "unfilled sections as DOC-004 advisory findings; completeness is "
+        "validated under CR-BP-94-EXT-06."
     )
     return "\n".join(parts)
 

@@ -3,7 +3,7 @@
   "generated_at": "2026-10-20",
   "generator": "scripts/check_conformance_framework_ext23.py",
   "parent_cr": "CR-BP-EXT-23",
-  "catalog_root": "/home/hermes/dea-catalog-processes",
+  "catalog_root": "/Volumes/512GBORICO/Developer/OpenDEA/dea-catalog-business-processes",
   "summary": {
     "total_findings": 0,
     "by_severity": {},

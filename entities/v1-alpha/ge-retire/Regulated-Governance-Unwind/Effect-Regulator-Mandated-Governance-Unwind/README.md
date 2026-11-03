@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-ge-reti
 
 **Intent**: manage
 
-**Definition**: (definition pending; backfill at EXT-04)
+**Definition**: Effect the regulator- or court-mandated governance unwind within the processes:pc-ge-retire-kndw6x Cell Charter. The trigger is a binding regulator or court order; the outcome is the documented, regulator- or court-supervised wind-down of governance bodies, policy instruments, mandates, and constitutional instruments, culminating in statutory dissolution filings, retained-records custodianship assignment, and surrender of authorisation or cancellation of permission or court decree entry.
 
 ## 3. Governance and Provenance
 
@@ -77,9 +77,19 @@ This directory hosts the canonical Process record for `processes:process-ge-reti
 **Outputs**:
 - Effect Regulator-Mandated Governance Unwind: decision result (decision)
 
-**Roles and Responsibilities**: _(pending; backfill at EXT-04)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(pending; backfill at EXT-04)_
+- Process Owner: Governance & Existence Process Owner (confirmed; GOV-002 role-based)
+- Actor: industry regulator
+- Actor: finance function
+- Actor: workforce management
+- Actor: operations function
+- Stakeholder: industry regulator
+- Stakeholder: finance function
+- Stakeholder: workforce management
+- Stakeholder: operations function
+
+**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
 
 ## 7. Technical Metadata
 
@@ -88,4 +98,4 @@ This directory hosts the canonical Process record for `processes:process-ge-reti
 - **Governing CR**: `CR-BP-78`
 - **Generator**: `scripts/generate_readmes.py` (CR-BP-94-EXT-07)
 - **Schema**: `dea/v1`
-- **Documentation Completeness**: sections marked `_(pending; backfill at EXT-04)_` indicate fields not yet present in the source YAML record. The structural validator (CR-BP-94-EXT-04) surfaces these as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.
+- **Documentation Completeness**: sections render from the record's own fields (CR-BP-224 derivations); the only standing deferrals are the L0 metrics register and L0 role assignment (tracked under CR-BP-94-EXT-24, due 2026-12-31). The structural validator (CR-BP-94-EXT-04) surfaces unfilled sections as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.

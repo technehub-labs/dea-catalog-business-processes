@@ -57,15 +57,31 @@ This directory hosts the canonical ProcessGroup record for `processes:group-eo-b
 
 ## 5. Hierarchical Decomposition (Path Scheme)
 
-(decomposition relationships pending)
+<details>
+<summary>Expand to view decomposition details</summary>
+
+- Composes (children):
+  - `processes:process-eo-build-j9z3q4` (composes)
+  - `processes:process-eo-build-awy8dz` (composes)
+  - `processes:process-eo-build-ba6ykz` (composes)
+  - `processes:process-eo-build-nmmmt6` (composes)
+  - `processes:process-eo-build-tqybhd` (composes)
+</details>
 
 ## 6. Operational Details
 
 **Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
 
-**Roles and Responsibilities**: _(pending; backfill at EXT-04)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(pending; backfill at EXT-04)_
+- Process Owner: Enablement & Operations Process Owner (confirmed; GOV-002 role-based)
+- Decomposes into 5 L2 Process(es) (per the record's `composes` block)
+
+**Business Rules and Controls**
+
+- Governing scope (includes; `scope.includes`): Production line stand-up; Delivery capability build; Logistics network build; Technology asset acquisition and …
+- Adjacency exclusions (`scope.excludes`): Agent provisioning (agency-organization); Platform architecture design (Design stage; adjacent context); Day-to-day …
+
 
 ## 7. Technical Metadata
 
@@ -74,4 +90,4 @@ This directory hosts the canonical ProcessGroup record for `processes:group-eo-b
 - **Governing CR**: `CR-BP-21d.1`
 - **Generator**: `scripts/generate_readmes.py` (CR-BP-94-EXT-07)
 - **Schema**: `dea/v1`
-- **Documentation Completeness**: sections marked `_(pending; backfill at EXT-04)_` indicate fields not yet present in the source YAML record. The structural validator (CR-BP-94-EXT-04) surfaces these as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.
+- **Documentation Completeness**: sections render from the record's own fields (CR-BP-224 derivations); the only standing deferrals are the L0 metrics register and L0 role assignment (tracked under CR-BP-94-EXT-24, due 2026-12-31). The structural validator (CR-BP-94-EXT-04) surfaces unfilled sections as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.

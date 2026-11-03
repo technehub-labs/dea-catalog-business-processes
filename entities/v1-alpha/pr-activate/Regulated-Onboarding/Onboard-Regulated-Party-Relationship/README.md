@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-pr-acti
 
 **Intent**: manage
 
-**Definition**: (definition pending; backfill at EXT-04)
+**Definition**: Onboard a new party relationship in a regulated context (KYC/AML/CDD): verify identity, resolve beneficial ownership, classify risk, and either authorize commencement with documented approval or record a refusal, within the processes:pc-pr-activate-mwq7bj Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces.
 
 ## 3. Governance and Provenance
 
@@ -78,9 +78,19 @@ This directory hosts the canonical Process record for `processes:process-pr-acti
 - Onboard Regulated Party Relationship: document result (document)
 - Onboard Regulated Party Relationship: changed state (changed_object)
 
-**Roles and Responsibilities**: _(pending; backfill at EXT-04)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(pending; backfill at EXT-04)_
+- Process Owner: Party & Relationship Process Owner (confirmed; GOV-002 role-based)
+- Actor: industry regulator
+- Actor: governing board
+- Actor: risk function
+- Actor: customer relationship management
+- Stakeholder: industry regulator
+- Stakeholder: governing board
+- Stakeholder: risk function
+- Stakeholder: customer relationship management
+
+**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
 
 ## 7. Technical Metadata
 
@@ -89,4 +99,4 @@ This directory hosts the canonical Process record for `processes:process-pr-acti
 - **Governing CR**: `CR-BP-71`
 - **Generator**: `scripts/generate_readmes.py` (CR-BP-94-EXT-07)
 - **Schema**: `dea/v1`
-- **Documentation Completeness**: sections marked `_(pending; backfill at EXT-04)_` indicate fields not yet present in the source YAML record. The structural validator (CR-BP-94-EXT-04) surfaces these as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.
+- **Documentation Completeness**: sections render from the record's own fields (CR-BP-224 derivations); the only standing deferrals are the L0 metrics register and L0 role assignment (tracked under CR-BP-94-EXT-24, due 2026-12-31). The structural validator (CR-BP-94-EXT-04) surfaces unfilled sections as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.

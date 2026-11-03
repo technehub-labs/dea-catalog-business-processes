@@ -69,15 +69,32 @@ scope.
 
 ## 5. Hierarchical Decomposition (Path Scheme)
 
-(decomposition relationships pending)
+<details>
+<summary>Expand to view decomposition details</summary>
+
+- Composes (children):
+  - `processes:process-fa-conceive-4uqqvg` (composes)
+  - `processes:process-eo-conceive-87kx9n` (composes)
+  - `processes:process-fa-design-vk422z` (composes)
+  - `processes:process-ge-operate-hxxyc9` (composes)
+  - `processes:process-fa-operate-g9zpnq` (composes)
+  - `processes:process-fa-improve-emqpgr` (composes)
+</details>
 
 ## 6. Operational Details
 
 **Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
 
-**Roles and Responsibilities**: _(pending; backfill at EXT-04)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(pending; backfill at EXT-04)_
+- Process Owner: Finance & Accounting Process Owner (confirmed; GOV-002 role-based)
+- Decomposes into 6 L2 Process(es) (per the record's `composes` block)
+
+**Business Rules and Controls**
+
+- Governing scope (includes; `scope.includes`): Finance strategy framing; Monetary model framing; Funding and capital approach framing
+- Adjacency exclusions (`scope.excludes`): Strategic investment choices (strategy-direction x conceive); Investment strategy governance (governance-existence x …
+
 
 ## 7. Technical Metadata
 
@@ -86,4 +103,4 @@ scope.
 - **Governing CR**: `CR-BP-21e`
 - **Generator**: `scripts/generate_readmes.py` (CR-BP-94-EXT-07)
 - **Schema**: `dea/v1`
-- **Documentation Completeness**: sections marked `_(pending; backfill at EXT-04)_` indicate fields not yet present in the source YAML record. The structural validator (CR-BP-94-EXT-04) surfaces these as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.
+- **Documentation Completeness**: sections render from the record's own fields (CR-BP-224 derivations); the only standing deferrals are the L0 metrics register and L0 role assignment (tracked under CR-BP-94-EXT-24, due 2026-12-31). The structural validator (CR-BP-94-EXT-04) surfaces unfilled sections as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.

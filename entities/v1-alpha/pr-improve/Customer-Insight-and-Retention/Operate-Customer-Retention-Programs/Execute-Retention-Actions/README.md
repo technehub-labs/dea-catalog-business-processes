@@ -55,6 +55,13 @@ This directory hosts the canonical Activity record for `processes:activity-pr-im
 <details>
 <summary>Expand to view decomposition details</summary>
 
+- Composes (children):
+  - `processes:task-pr-improve-intake-r4eht8` (composes)
+  - `processes:task-pr-improve-verify-4yua6g` (composes)
+  - `processes:task-pr-improve-transform-u2f7rw` (composes)
+  - `processes:task-pr-improve-confirm-dv2jkc` (composes)
+  - `processes:task-pr-improve-record-fas3fm` (composes)
+- Part of (parent): `processes:process-pr-improve-t6uvan`
 - **Cohesion rationale**: Constituent work shares a single intervention concern (risk finding to executed retention action), a common input (the churn-risk register), and one recognizable portion of the parent outcome (insight acted on). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
@@ -62,9 +69,16 @@ This directory hosts the canonical Activity record for `processes:activity-pr-im
 
 **Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
 
-**Roles and Responsibilities**: _(pending; backfill at EXT-04)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(pending; backfill at EXT-04)_
+- Owner: inherited from parent BP `processes:process-pr-improve-t6uvan` (GOV-002 role-based; EXT-13 accountability model)
+- Cohesion accountability: Constituent work shares a single intervention concern (risk finding to executed retention action), a common input (the … (assessed at deposition; CR-BP-32 §6)
+
+**Business Rules and Controls**
+
+- Controls inherited from parent BP `processes:process-pr-improve-t6uvan` (scope and boundary are governed at BP level; CR-BP-32 activity-cohesion model)
+- Cohesion control rationale: Constituent work shares a single intervention concern (risk finding to executed retention action), a common input (the …
+
 
 ## 7. Technical Metadata
 
@@ -73,4 +87,4 @@ This directory hosts the canonical Activity record for `processes:activity-pr-im
 - **Governing CR**: `CR-BP-44`
 - **Generator**: `scripts/generate_readmes.py` (CR-BP-94-EXT-07)
 - **Schema**: `dea/v1`
-- **Documentation Completeness**: sections marked `_(pending; backfill at EXT-04)_` indicate fields not yet present in the source YAML record. The structural validator (CR-BP-94-EXT-04) surfaces these as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.
+- **Documentation Completeness**: sections render from the record's own fields (CR-BP-224 derivations); the only standing deferrals are the L0 metrics register and L0 role assignment (tracked under CR-BP-94-EXT-24, due 2026-12-31). The structural validator (CR-BP-94-EXT-04) surfaces unfilled sections as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.

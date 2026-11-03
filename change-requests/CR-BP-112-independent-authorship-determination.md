@@ -1,6 +1,6 @@
 # CR-BP-112: Independent-Authorship Determination, NOTICE/LICENSE Correction, and Reference Embargo Gate
 
-**Status**: Accepted (landed; status backfilled by CR-BP-223)
+**Status**: Proposed (this PR)
 **Layer**: Cross-cutting (catalog governance)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-10-12

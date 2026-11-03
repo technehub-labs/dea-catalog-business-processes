@@ -3,8 +3,8 @@
   "generated_at": "2026-10-19",
   "generator": "scripts/check_profile_registry_ext11.py",
   "parent_cr": "CR-BP-94-EXT-11",
-  "catalog_root": "/home/hermes/dea-catalog-processes",
-  "profile_path": "/home/hermes/dea-catalog-processes/templates/documentation-profile-ext11-v3.yaml",
+  "catalog_root": "/Volumes/512GBORICO/Developer/OpenDEA/dea-catalog-business-processes",
+  "profile_path": "/Volumes/512GBORICO/Developer/OpenDEA/dea-catalog-business-processes/templates/documentation-profile-ext11-v3.yaml",
   "summary": {
     "total_findings": 0,
     "by_rule": {}

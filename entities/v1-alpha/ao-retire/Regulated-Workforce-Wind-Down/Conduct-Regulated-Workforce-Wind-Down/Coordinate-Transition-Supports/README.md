@@ -55,6 +55,13 @@ This directory hosts the canonical Activity record for `processes:activity-ao-re
 <details>
 <summary>Expand to view decomposition details</summary>
 
+- Composes (children):
+  - `processes:task-ao-retire-intake-rh2s54` (composes)
+  - `processes:task-ao-retire-verify-xtm6yb` (composes)
+  - `processes:task-ao-retire-transform-hr9295` (composes)
+  - `processes:task-ao-retire-confirm-r2y6tf` (composes)
+  - `processes:task-ao-retire-record-wzx6cj` (composes)
+- Part of (parent): `processes:process-ao-retire-g3eyr8`
 - **Cohesion rationale**: Constituent work shares a single transition-support coordination concern, one input class (the affected-employee roster and the available public and private support programmes), and one output (the package of supports offered to each affected employee with delivery and uptake evidence). Cohesion score 8/9 assessed at deposition (CR-BP-32 section 6): coordination spans multiple delivery partners and uptake is contingent on employee choice.
 </details>
 
@@ -62,9 +69,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-re
 
 **Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
 
-**Roles and Responsibilities**: _(pending; backfill at EXT-04)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(pending; backfill at EXT-04)_
+- Owner: inherited from parent BP `processes:process-ao-retire-g3eyr8` (GOV-002 role-based; EXT-13 accountability model)
+- Cohesion accountability: Constituent work shares a single transition-support coordination concern, one input class (the affected-employee roster … (assessed at deposition; CR-BP-32 §6)
+
+**Business Rules and Controls**
+
+- Controls inherited from parent BP `processes:process-ao-retire-g3eyr8` (scope and boundary are governed at BP level; CR-BP-32 activity-cohesion model)
+- Cohesion control rationale: Constituent work shares a single transition-support coordination concern, one input class (the affected-employee roster …
+
 
 ## 7. Technical Metadata
 
@@ -73,4 +87,4 @@ This directory hosts the canonical Activity record for `processes:activity-ao-re
 - **Governing CR**: `CR-BP-77`
 - **Generator**: `scripts/generate_readmes.py` (CR-BP-94-EXT-07)
 - **Schema**: `dea/v1`
-- **Documentation Completeness**: sections marked `_(pending; backfill at EXT-04)_` indicate fields not yet present in the source YAML record. The structural validator (CR-BP-94-EXT-04) surfaces these as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.
+- **Documentation Completeness**: sections render from the record's own fields (CR-BP-224 derivations); the only standing deferrals are the L0 metrics register and L0 role assignment (tracked under CR-BP-94-EXT-24, due 2026-12-31). The structural validator (CR-BP-94-EXT-04) surfaces unfilled sections as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.
