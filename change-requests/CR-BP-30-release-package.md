@@ -8,7 +8,7 @@
 > the dea-metaframework `docs/entity-storage-layout.md` for the current
 > containment tree.
 
-**Status**: Proposed (carrier CR — discussion + design-decision lock; **awaiting user input on §3 decisions**)
+**Status**: Accepted (design decisions D1–D6 locked at the recommended defaults; user directive 2026-11-04)
 **Layer**: Process Catalog (release / governance)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-10
@@ -35,6 +35,28 @@ This CR documents the full artifact family + CI shape (§1–§7). Before approv
 - `Approve all defaults except D3 = B` (etc.) → overrides one or more.
 
 Full discussion follows in §1–§7.
+
+---
+
+## 0.1 Decision record (2026-11-04)
+
+User directive 2026-11-04 (eaojnr): proceed. Per the §0 decision syntax, this locks
+**D1–D6 at the recommended defaults**:
+
+| # | Decision | Locked |
+|---|---|---|
+| D1 | §3.1 Map shape | **A** — ECF 7×7 grid overlay |
+| D2 | §3.2 XLSX sheet count | **6 sheets** (records / lineage / dispositions / register_audit / change_requests / contributions) |
+| D3 | §3.3 BPMN shape | **A** — seed library (`bpmn-library.bpmn`) |
+| D4 | §3.4 Decisions log | **A** — curated `decisions.md` + verbatim `dispositions/` |
+| D5 | §3.5 `dependencies.yaml` | **Adopt now** |
+| D6 | §3.6 Version independence | **A** — lockstep (every tag = full zip) |
+
+Implementation note: the record counts and layout citations in §1–§3 reflect the
+CR's 2026-09-10 authoring vantage (196 records; pre-mv1 layout — see the layout
+note above). Implementation slices (CR-BP-30a..30h) build against the current
+substrate (3,723 records; `entities/v1-alpha/` containment tree) and the
+CR-BP-116 release discipline (`docs/versioning.md`).
 
 ---
 
