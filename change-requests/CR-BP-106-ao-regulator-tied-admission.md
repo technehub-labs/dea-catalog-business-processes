@@ -1,6 +1,6 @@
 # CR-BP-106 — AgencyAndOrganization Regulator-Tied Admission Tranche (5 cells, additive)
 
-**Status**: Proposed (this PR)
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Admission authority**: yes
 **Layer**: L2 (Business Process admission)
 **Owner**: Emmanuel A. Otchere

@@ -1,6 +1,6 @@
 # CR-BP-96: L2 Qualification Gate (BP-QUAL-001..012)
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Process Catalog
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-18

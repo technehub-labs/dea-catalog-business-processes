@@ -1,6 +1,6 @@
 # CR-BP-74 - F&A Retire escape-clause discovery (Regulated Run-Off)
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: L2 (discovery only; admission deferred to CR-BP-75)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-15

@@ -1,6 +1,6 @@
 # CR-BP-CE-L2: Business Process Adopted-Fields Tranche (the 145 L2 records)
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Process Catalog (Adopted-Field Population)
 **Owner**: Emmanuel A. Otchere
 **Depends on**: CR-BP-CE-0, CR-BP-CE-L0, CR-BP-CE-L1

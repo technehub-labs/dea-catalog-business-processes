@@ -1,6 +1,6 @@
 # CR-BP-63: Activate/Retire Lifecycle Discovery Exercise
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Process Catalog (lifecycle discovery)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-14

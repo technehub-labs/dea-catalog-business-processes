@@ -1,6 +1,6 @@
 # CR-BP-GS-1: Governance Sweep (GOV-002 Owner Ratification + GOV-003 Role-Based Derivation)
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Process Catalog (Governance)
 **Owner**: Emmanuel A. Otchere
 **Depends on**: CR-BP-CE-0, CR-BP-CE-L1, CR-BP-CE-L2, CR-BP-CE-RL

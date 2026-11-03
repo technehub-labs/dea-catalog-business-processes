@@ -8,7 +8,7 @@
 > the dea-metaframework `docs/entity-storage-layout.md` for the current
 > containment tree.
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Admission authority**: yes
 **Layer**: L2 (first Activate/Retire canonical admissions)
 **Owner**: Emmanuel A. Otchere

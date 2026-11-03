@@ -1,6 +1,6 @@
 # CR-BP-100a: L0↔L1 Cardinality Gate :  49-Cell Assertion Update
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Process Catalog
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-19

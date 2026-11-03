@@ -1,6 +1,6 @@
 # CR-BP-76 - G&E Retire Escape-Clause Discovery (Regulator-Mandated Governance Unwind)
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: L0 (Discovery escape-clause record)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-16

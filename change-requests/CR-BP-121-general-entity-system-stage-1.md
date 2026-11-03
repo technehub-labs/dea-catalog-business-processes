@@ -1,6 +1,6 @@
 # CR-BP-121: General Entity System Stage 1 (Reconnaissance + Charter)
 
-**Status**: Proposed (this PR)
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Cross-cutting (catalog governance) - pinned rule
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-10-13

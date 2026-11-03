@@ -1,6 +1,6 @@
 # CR-BP-88 - Post-v0.3.0 Reconciliation (Four-Cell Discovery Programme Closure)
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Cross-cutting
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-17

@@ -1,6 +1,6 @@
 # CR-BP-TMF-EMBARGO: TMForum Reference Embargo Compliance Strip
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Cross-cutting (catalog governance)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-22

@@ -1,6 +1,6 @@
 # CR-BP-117: Entity Id-Convention Clarity + Folder/Path Readability
 
-**Status**: Proposed (this PR)
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Cross-cutting (catalog governance) + user-facing navigation
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-10-13

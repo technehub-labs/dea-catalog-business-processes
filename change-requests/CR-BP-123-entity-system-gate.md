@@ -1,6 +1,6 @@
 # CR-BP-123: Entity System Stage 3-4 (Reference Implementation + Umbrella Gate)
 
-**Status**: Proposed (this PR)
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Cross-cutting (catalog governance) - pinned rule
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-10-13

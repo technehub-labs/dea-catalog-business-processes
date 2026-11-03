@@ -8,7 +8,7 @@
 > the dea-metaframework `docs/entity-storage-layout.md` for the current
 > containment tree.
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: L2 (Business Process) — semantic conformance
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-10

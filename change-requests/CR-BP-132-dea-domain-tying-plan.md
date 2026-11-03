@@ -1,6 +1,6 @@
 # CR-BP-132: dea:// Domain Tying Plan (T9.10; precursor to T9.2, T9.4, T9.8, T9.9)
 
-**Status**: Proposed (this PR; user-approved 2026-10-15)
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Cross-cutting (catalog governance) - pinned rule
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-10-15

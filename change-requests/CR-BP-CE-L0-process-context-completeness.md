@@ -1,6 +1,6 @@
 # CR-BP-CE-L0: Process Context Completeness Tranche (the 8 escape-clause cells)
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Process Catalog (Canonical Record Remediation)
 **Owner**: Emmanuel A. Otchere
 **Depends on**: CR-BP-CE-0

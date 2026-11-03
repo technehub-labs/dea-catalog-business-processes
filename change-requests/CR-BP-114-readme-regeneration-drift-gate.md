@@ -1,6 +1,6 @@
 # CR-BP-114: Record README Regeneration, Drift Gate, and Release-Cut Integration
 
-**Status**: Proposed (this PR)
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Cross-cutting (catalog governance)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-10-13

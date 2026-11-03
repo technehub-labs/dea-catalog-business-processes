@@ -1,6 +1,6 @@
 # CR-BP-94-EXT-07: README Template Consolidation + Generator V2
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Process Catalog (Cross-Cutting Documentation)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-10-17

@@ -1,6 +1,6 @@
 # CR-BP-CE-L4: Custodian Vocabulary Normalization + the CE-L0-003 Repair
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Process Catalog (Adopted-Field Population)
 **Owner**: Emmanuel A. Otchere
 **Depends on**: CR-BP-CE-0, CR-BP-CE-L0, CR-BP-CE-L1, CR-BP-CE-L2

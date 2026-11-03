@@ -1,6 +1,6 @@
 # CR-BP-CE-0: Catalog Completeness Programme -- Profiles, Gate, and Tranche Sequence
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Process Catalog (Cross-Cutting Documentation)
 **Owner**: Emmanuel A. Otchere
 

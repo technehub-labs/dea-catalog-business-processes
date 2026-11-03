@@ -1,6 +1,6 @@
 # CR-BP-94-EXT-13: Process Responsibility and Accountability Model
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Process Catalog (Cross-Cutting Documentation)
 **Owner**: Emmanuel A. Otchere
 Programme: CR-BP-94 Documentation Extension
