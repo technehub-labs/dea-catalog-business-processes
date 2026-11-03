@@ -1,6 +1,6 @@
 # CR-BP-221: README Generator Profile Integrity (Per-Profile Section Numbering, Cell Fidelity, RDM-003)
 
-**Status**: Proposed (this PR)
+**Status**: Accepted (landed via PR #221; status backfilled post-merge per the immutability rule)
 **Layer**: Cross-cutting (catalog documentation layer)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-11-02

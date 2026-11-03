@@ -1,6 +1,6 @@
 # CR-BP-222: Narrative Legacy-Id Sweep (mv1 Completion, Prose Layer)
 
-**Status**: Proposed (this PR)
+**Status**: Accepted (landed via PR #221; status backfilled post-merge per the immutability rule)
 **Layer**: Process Catalog (Cross-cutting id-system hygiene)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-11-02
