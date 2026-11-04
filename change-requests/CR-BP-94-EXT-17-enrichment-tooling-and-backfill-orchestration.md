@@ -1,6 +1,6 @@
 # CR-BP-94-EXT-17: Enrichment Tooling and Backfill Orchestration
 
-**Status**: Proposed (awaiting Proceed)
+**Status**: Accepted (landed via PR #186; user Proceed recorded 2026-11-04)
 **Layer**: Process Catalog (Cross-Cutting Documentation)
 **Owner**: Emmanuel A. Otchere
 **Programme**: CR-BP-94 Documentation Extension

@@ -1,6 +1,6 @@
 # CR-BP-94-EXT-16: Operational Authoring and Research Methodology
 
-**Status**: Proposed (awaiting Proceed)
+**Status**: Accepted (landed via PR #185; user Proceed recorded 2026-11-04)
 **Layer**: Process Catalog (Cross-Cutting Documentation)
 **Owner**: Emmanuel A. Otchere
 **Programme**: CR-BP-94 Documentation Extension
