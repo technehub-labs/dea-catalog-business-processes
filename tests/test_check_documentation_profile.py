@@ -51,37 +51,42 @@ def test_l0_profile_resolves_for_processcontext_record() -> None:
     record = {"type": "ProcessContext"}
     profile = _resolve_profile(record)
     assert profile is not None
-    assert profile["profile_id"] == "dea:profile-readme-l0-process-context-v1"
+    assert profile["profile_id"] == "dea:profile-readme-l0-process-context-v3"
 
 
 def test_l1_profile_resolves_for_processgroup_record() -> None:
     record = {"type": "ProcessGroup"}
     profile = _resolve_profile(record)
     assert profile is not None
-    assert profile["profile_id"] == "dea:profile-readme-l1-process-group-v1"
+    assert profile["profile_id"] == "dea:profile-readme-l1-process-group-v3"
 
 
 def test_l0_profile_required_sections() -> None:
-    """L0 ProcessContext profile: 11 required sections; outcomes is conditional."""
+    """L0 ProcessContext profile (CR-BP-231 v3): 12 required sections."""
     profile = PROFILE_REGISTRY[("ProcessContext", "L0")]
     required = profile["required_section_ids"]
-    assert len(required) == 11
-    assert "outcomes" not in required
-    for sec in ("entity-identity", "formal-definition", "semantic-dimensions",
-                "decomposition", "behavior", "interfaces", "roles",
-                "rules-controls", "evidence", "completeness", "revision-history"):
+    assert len(required) == 12
+    for sec in ("provided-nutshell", "provided-why-it-matters",
+                "provided-practical-context", "provided-worked-example",
+                "header-identity-table", "executive-summary",
+                "governance-provenance", "behavioral-boundaries",
+                "hierarchical-decomposition", "properties-relationships",
+                "operational-metrics", "technical-metadata"):
         assert sec in required, sec
 
 
 def test_l1_profile_required_sections() -> None:
-    """L1 ProcessGroup profile: 11 required sections; outcomes is conditional."""
+    """L1 ProcessGroup profile (CR-BP-231 v3): 11 required sections."""
     profile = PROFILE_REGISTRY[("ProcessGroup", "L1")]
     required = profile["required_section_ids"]
     assert len(required) == 11
     assert "outcomes" not in required
-    for sec in ("entity-identity", "formal-definition", "semantic-dimensions",
-                "decomposition", "behavior", "interfaces", "roles",
-                "rules-controls", "evidence", "completeness", "revision-history"):
+    for sec in ("provided-nutshell", "provided-why-it-matters",
+                "provided-practical-context", "provided-worked-example",
+                "header-identity-table", "intent-definition",
+                "governance-provenance", "properties-relationships",
+                "hierarchical-decomposition", "operational-details",
+                "technical-metadata"):
         assert sec in required, sec
 
 
@@ -89,14 +94,14 @@ def test_profile_resolves_for_process_record() -> None:
     record = {"type": "Process"}
     profile = _resolve_profile(record)
     assert profile is not None
-    assert profile["profile_id"] == "dea:profile-readme-l2-process-v1"
+    assert profile["profile_id"] == "dea:profile-readme-l2-process-v3"
 
 
 def test_profile_resolves_for_activity_record() -> None:
     record = {"type": "Activity"}
     profile = _resolve_profile(record)
     assert profile is not None
-    assert profile["profile_id"] == "dea:profile-readme-l3-activity-v1"
+    assert profile["profile_id"] == "dea:profile-readme-l3-activity-v3"
 
 
 def test_profile_unresolved_for_unknown_type() -> None:
@@ -116,22 +121,17 @@ def test_resolve_level_by_type() -> None:
 
 
 def test_l2_profile_required_sections_complete() -> None:
-    """L2 profile lists all 12 standard sections per the architecture doc."""
+    """L2 profile (CR-BP-231 v3): 11 required sections (4 provided + 7 generated)."""
     profile = PROFILE_REGISTRY[("Process", "L2")]
     required = profile["required_section_ids"]
-    assert len(required) == 12
-    assert "entity-identity" in required
-    assert "formal-definition" in required
-    assert "semantic-dimensions" in required
-    assert "decomposition" in required
-    assert "behavior" in required
-    assert "interfaces" in required
-    assert "roles" in required
-    assert "rules-controls" in required
-    assert "outcomes" in required
-    assert "evidence" in required
-    assert "completeness" in required
-    assert "revision-history" in required
+    assert len(required) == 11
+    for sec in ("provided-nutshell", "provided-why-it-matters",
+                "provided-practical-context", "provided-worked-example",
+                "header-identity-table", "intent-definition",
+                "governance-provenance", "properties-relationships",
+                "hierarchical-decomposition", "operational-details",
+                "technical-metadata"):
+        assert sec in required, sec
 
 
 def test_l3_profile_treats_outcomes_as_conditional() -> None:
@@ -148,11 +148,14 @@ def test_l3_profile_treats_outcomes_as_conditional() -> None:
     required = profile["required_section_ids"]
     # L3 profile does NOT require outcomes (it's conditional at L3).
     assert "outcomes" not in required
-    # L3 still requires all 11 other sections.
+    # L3 still requires all 11 v3 sections (4 provided + 7 generated).
     assert len(required) == 11
-    for sec in ("entity-identity", "formal-definition", "semantic-dimensions",
-                "decomposition", "behavior", "interfaces", "roles",
-                "rules-controls", "evidence", "completeness", "revision-history"):
+    for sec in ("provided-nutshell", "provided-why-it-matters",
+                "provided-practical-context", "provided-worked-example",
+                "header-identity-table", "intent-definition",
+                "governance-provenance", "properties-relationships",
+                "hierarchical-decomposition", "operational-details",
+                "technical-metadata"):
         assert sec in required, sec
 
 
@@ -188,19 +191,19 @@ def _readme(entity_id="processes:process-self-test", cr="CR-BP-13a",
     body.append(f"Governed by {cr}.")
     body.append("")
     if include_all_sections:
+        # CR-BP-231 v3 layout: 4 provided (Part I) + 7 generated (Part II).
         for i, sid in enumerate([
-            "Entity Identity and Classification",
-            "Formal Definition and Scope",
-            "Canonical Semantic Dimensions",
-            "Decomposition and Composition",
-            "Behavior and Workflow",
-            "Inputs, Outputs, and Interfaces",
-            "Roles, Responsibilities, and Accountability",
-            "Business Rules and Controls",
-            "Outcomes and Performance",
-            "Evidence and Traceability",
-            "Documentation Completeness",
-            "Revision History",
+            "In a Nutshell (provided)",
+            "Why It Matters (provided)",
+            "Where You'd Encounter It (provided)",
+            "Worked Example (provided)",
+            "Header and Identity Table (generated)",
+            "Intent and Definition (generated)",
+            "Governance and Provenance (generated)",
+            "Properties and Relationships (generated)",
+            "Hierarchical Decomposition (Path Scheme) (generated)",
+            "Operational Details (generated)",
+            "Technical Metadata (generated)",
         ], start=1):
             body.append(f"## {i}. {sid}")
             body.append("")

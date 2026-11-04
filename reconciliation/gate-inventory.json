@@ -3,7 +3,7 @@
   "generated_at": "2026-10-19",
   "generator": "scripts/check_conformance_posture_ext23.py",
   "parent_cr": "CR-BP-EXT-23",
-  "total_registered_gates": 55,
+  "total_registered_gates": 56,
   "gates": [
     {
       "gate": "[1] Schema (validate-process-entries)",
@@ -733,7 +733,7 @@
       "introduced_by": "CR-BP-94-EXT-19",
       "population": "the L2 Business Process layer",
       "population_reconciled": false,
-      "open_findings": 733,
+      "open_findings": 586,
       "reason": "The EXT-19 L2 backfill contract is deterministic; the population is reconciled under EXT-22 and the gate is blocking.",
       "current_blocking": false,
       "target_blocking": false,
@@ -748,7 +748,7 @@
       "introduced_by": "CR-BP-94-EXT-20",
       "population": "the L3 Activity layer",
       "population_reconciled": false,
-      "open_findings": 4061,
+      "open_findings": 2901,
       "reason": "The EXT-20 L3 backfill contract is deterministic; the population is reconciled under EXT-22 and the gate is blocking.",
       "current_blocking": false,
       "target_blocking": false,
@@ -784,6 +784,66 @@
       "target_blocking": false,
       "status_change": "unchanged",
       "command": "python scripts/check_reconciliation_ext22.py --catalog-root ."
+    },
+    {
+      "gate": "[48] Conformance Framework (CR-BP-EXT-23; CF-001..CF-051)",
+      "gate_number": "48",
+      "enforcement_class": "structural",
+      "enforcement_tier": "T1",
+      "introduced_by": "CR-BP-EXT-23",
+      "population": "the conformance framework meta-artefact (rule catalogue, traceability matrix, report, dashboard)",
+      "population_reconciled": false,
+      "open_findings": null,
+      "reason": "The framework's own self-check is deterministic over its version-controlled artefacts; a meta-artefact failure is an exception in the meta-framework, not a catalogue defect.",
+      "current_blocking": false,
+      "target_blocking": false,
+      "status_change": "unchanged",
+      "command": "python3 scripts/check_conformance_framework_ext23.py"
+    },
+    {
+      "gate": "[49] Programme Closure (CR-BP-94-EXT-24; CG-001..CG-080)",
+      "gate_number": "49",
+      "enforcement_class": "structural",
+      "enforcement_tier": "T1",
+      "introduced_by": "CR-BP-94-EXT-24",
+      "population": "the programme-closure meta-artefact (closure matrix, catalogue baseline, governance registers)",
+      "population_reconciled": false,
+      "open_findings": null,
+      "reason": "The closure self-check is deterministic over its version-controlled artefacts; a meta-artefact failure is an exception in the meta-closure, not a catalogue defect.",
+      "current_blocking": false,
+      "target_blocking": false,
+      "status_change": "unchanged",
+      "command": "python3 scripts/check_programme_closure_ext24.py"
+    },
+    {
+      "gate": "[50] Completeness Profiles (CR-BP-CE-0; CE-000..CE-900)",
+      "gate_number": "50",
+      "enforcement_class": "content",
+      "enforcement_tier": "T2",
+      "introduced_by": "CR-BP-CE-0",
+      "population": "the full 3,723-record catalogue (per-level profiles)",
+      "population_reconciled": false,
+      "open_findings": null,
+      "reason": "The CE profiles are deterministic over record content and the blocking profile is 0 across all five level tranches (CR-BP-CE-RL flip); strict mode fails only on NEWLY introduced defects.",
+      "current_blocking": true,
+      "target_blocking": true,
+      "status_change": "unchanged",
+      "command": "python3 scripts/check_completeness.py --strict"
+    },
+    {
+      "gate": "[51] Human Readability (CR-BP-232; HUM-001..007)",
+      "gate_number": "51",
+      "enforcement_class": "content",
+      "enforcement_tier": "T2",
+      "introduced_by": "CR-BP-232",
+      "population": "the provided plain-language layer of all 3,723 records (CR-BP-230 fields)",
+      "population_reconciled": true,
+      "open_findings": 0,
+      "reason": "The HUM rules are deterministic over record content; the population is unbackfilled until the CR-BP-233..236 waves (all findings advisory), and the gate flips blocking at wave closure CR-BP-236 per the CR-BP-CE-RL posture precedent. Semantic quality stays owned by the BP-SEM/ECF gates.",
+      "current_blocking": false,
+      "target_blocking": true,
+      "status_change": "promoted to blocking",
+      "command": "python3 scripts/check_human_readability.py"
     }
   ]
 }

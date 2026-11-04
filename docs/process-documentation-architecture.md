@@ -199,6 +199,37 @@ Every section MUST have:
 
 The ordering is stable across revisions and across L2 / L3 / L4 profiles; profile-specific extensions append after §12 in the EXT-02 slice.
 
+### 6.2a The two-layer layout (profile v3, CR-BP-230/CR-BP-231)
+
+CR-BP-230 establishes the two-layer documentation principle — every entity must be *semantically precise enough for architectural and computational use, and sufficiently intelligible for a human being to recognise, understand and relate to it in the context of everyday business operations* — and CR-BP-231 implements it as the **profile v3** generator layout. One README, two tagged parts:
+
+```text
+# Canonical <Type>: `<entity.id>`                      <- H1 (unchanged; DOC-003 anchor)
+   boilerplate (two-layer contract) + **Name** line
+
+## 1. In a Nutshell (provided)                         <- Part I: identity card +
+## 2. Why It Matters (provided)                           provided plain-language fields
+## 3. Where You'd Encounter It (provided)                 (plain_language_description,
+## 4. Worked Example (provided)                           business_purpose,
+                                                          practical_context,
+                                                          worked_example{agent_type,narrative};
+                                                          CR-BP-230 S2)
+## 5..N <consolidated EXT-07 sections> (generated)     <- Part II: unchanged v2
+                                                          generated set, renumbered
+```
+
+Normative properties:
+
+1. **Provided content lives in the YAML records** (the CR-BP-94-EXT-18..21 backfill precedent) and flows through `scripts/generate_readmes.py`; it is never hand-authored into READMEs. RDM-001 byte-identity therefore holds across both layers.
+2. **Records not yet backfilled** render the tracked standing pointer _(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_ — the CR-BP-224 standing-item pattern, never `{{placeholder}}` tokens.
+3. **MECE**: Part I prose MUST NOT restate the Part II formal definition verbatim; the Part I identity card is a narrative statement (name, canonical ID, type/level, domain, status, parent chain with the parent's business name resolved from the record tree), not a duplicate of the Part II identity table.
+4. **Semantic containment**: Part I must not introduce meanings that contradict or extend the canonical record (validated by the CR-BP-232 HUM gates; semantic quality remains owned by the BP-SEM/ECF gates).
+5. Profile ids bump `dea:profile-readme-l{0..4}-*-v2` -> `-v3`; `PROFILE_REGISTRY` (and the `validate_readme_structure` fallback copy) list the four provided section ids ahead of the generated set; `EXPECTED_HEADINGS` gains the four provided-section patterns; the DOC-017/DOC-018 Properties anchor tolerates the ` (generated)` heading suffix.
+
+### 6.2b Naming principles for the provided layer (CR-BP-232)
+
+`plain_language_name` authoring (CR-BP-233..236 waves) follows the seven naming principles normative in CR-BP-230 §3 — familiar business vocabulary; natural English over mechanical concatenation; consistent verb-object for executable elements; no unnecessary hyphenation; no unestablished abbreviations; the name communicates the action or subject without inspecting the identifier; formal meaning preserved. Two hard edges: a plain-language name MUST stay semantically equivalent to the canonical name (it is a rendering, never an informal synonym that introduces ambiguity), and canonical names + canonical IDs never change in this programme.
+
 ### 6.3 Generated vs curated markers
 
 - Sections that are **generated from the YAML** carry a marker: `<!-- generated: do-not-edit -->`.

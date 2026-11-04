@@ -92,6 +92,10 @@ except Exception:  # pragma: no cover - defensive
         ("ProcessContext", "L0"): {
             "profile_id": "dea:profile-readme-l0-process-context-v2",
             "required_section_ids": [
+                "provided-nutshell",
+                "provided-why-it-matters",
+                "provided-practical-context",
+                "provided-worked-example",
                 "header-identity-table", "executive-summary",
                 "governance-provenance", "behavioral-boundaries",
                 "hierarchical-decomposition", "properties-relationships",
@@ -101,6 +105,10 @@ except Exception:  # pragma: no cover - defensive
         ("ProcessGroup", "L1"): {
             "profile_id": "dea:profile-readme-l1-process-group-v2",
             "required_section_ids": [
+                "provided-nutshell",
+                "provided-why-it-matters",
+                "provided-practical-context",
+                "provided-worked-example",
                 "header-identity-table", "intent-definition",
                 "governance-provenance", "properties-relationships",
                 "hierarchical-decomposition", "operational-details",
@@ -110,6 +118,10 @@ except Exception:  # pragma: no cover - defensive
         ("Process", "L2"): {
             "profile_id": "dea:profile-readme-l2-process-v2",
             "required_section_ids": [
+                "provided-nutshell",
+                "provided-why-it-matters",
+                "provided-practical-context",
+                "provided-worked-example",
                 "header-identity-table", "intent-definition",
                 "governance-provenance", "properties-relationships",
                 "hierarchical-decomposition", "operational-details",
@@ -119,6 +131,10 @@ except Exception:  # pragma: no cover - defensive
         ("Activity", "L3"): {
             "profile_id": "dea:profile-readme-l3-activity-v2",
             "required_section_ids": [
+                "provided-nutshell",
+                "provided-why-it-matters",
+                "provided-practical-context",
+                "provided-worked-example",
                 "header-identity-table", "intent-definition",
                 "governance-provenance", "properties-relationships",
                 "hierarchical-decomposition", "operational-details",
@@ -128,6 +144,10 @@ except Exception:  # pragma: no cover - defensive
         ("Task", "L4"): {
             "profile_id": "dea:profile-readme-l4-task-v2",
             "required_section_ids": [
+                "provided-nutshell",
+                "provided-why-it-matters",
+                "provided-practical-context",
+                "provided-worked-example",
                 "header-identity-table", "intent-definition",
                 "governance-provenance", "properties-relationships",
                 "hierarchical-decomposition", "operational-details",
@@ -274,7 +294,7 @@ def _properties_table_populated(readme_text: str) -> bool:
     """
     # Find the Properties section anchor
     m = re.search(
-        r"^##\s*(?:\d+\.\s*)?Properties and Relationships\s*$",
+        r"^##\s*(?:\d+\.\s*)?Properties and Relationships(?: \(generated\))?\s*$",
         readme_text, flags=re.MULTILINE,
     )
     if m is None:
@@ -317,7 +337,7 @@ def _relationships_table_present(readme_text: str) -> bool:
     a separate rule.
     """
     m = re.search(
-        r"^##\s*(?:\d+\.\s*)?Properties and Relationships\s*$",
+        r"^##\s*(?:\d+\.\s*)?Properties and Relationships(?: \(generated\))?\s*$",
         readme_text, flags=re.MULTILINE,
     )
     if m is None:

@@ -34,6 +34,56 @@
       "minLength": 1,
       "maxLength": 200
     },
+    "plain_language_name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "Human-readable, business-familiar name for this entity (CR-BP-230 S2). Must remain semantically equivalent to the canonical `name` - a familiar rendering, not an informal synonym that introduces ambiguity. Naming principles: CR-BP-230 S3. Authored in CR-BP-233..236."
+    },
+    "plain_language_description": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000,
+      "description": "Everyday explanation of what this entity represents and what happens in practical terms (CR-BP-230 S2). Rendered in README Part I (In a nutshell / What this means in everyday work). Must not restate the formal `definition` verbatim (MECE, CR-BP-230 S1); metamodel jargon denied by CR-BP-232 HUM gates."
+    },
+    "business_purpose": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1000,
+      "description": "Why this entity exists and the business significance it carries (CR-BP-230 S2). Rendered in README Part I (Why it matters)."
+    },
+    "practical_context": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1000,
+      "description": "When and where this work is encountered in everyday operations (CR-BP-230 S2). Rendered in README Part I (When you'd encounter it)."
+    },
+    "worked_example": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "agent_type",
+        "narrative"
+      ],
+      "properties": {
+        "agent_type": {
+          "type": "string",
+          "enum": [
+            "human",
+            "non-human",
+            "mixed"
+          ],
+          "description": "The kind of agent illustrated by the example: human (a person performs it), non-human (automation/system performs it), mixed (human-with-system). At L4, defaults from the record's `responsibility` field; author-refinable (CR-BP-230 S2)."
+        },
+        "narrative": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000,
+          "description": "Office-relatable worked example of the entity being carried out by the stated agent type (CR-BP-230 S2). Rendered in README Part I (Worked example)."
+        }
+      },
+      "description": "Worked example of this entity being performed by an agent of type human or non-human (CR-BP-230 S2, owner directive 2026-11-05)."
+    },
     "definition": {
       "type": "string",
       "minLength": 1,

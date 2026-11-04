@@ -192,8 +192,16 @@ def _self_test() -> int:
                 failures.append("case1: missing README did not fire RDM-001")
 
             # Case 2: write exact generator output -> no finding.
+            # CR-BP-231: generate_readme resolves the Part I identity
+            # card's cell name via the record tree, so expected must be
+            # computed under the same ENTITIES_ROOT patch evaluate() uses.
             record = gr.load_record(rec_yaml)
-            expected = gr.generate_readme(record, "L1")
+            orig_entities_root = gr.ENTITIES_ROOT
+            gr.ENTITIES_ROOT = fixture_entities
+            try:
+                expected = gr.generate_readme(record, "L1")
+            finally:
+                gr.ENTITIES_ROOT = orig_entities_root
             (rec_dir / "README.md").write_text(expected)
             blocking, _ = evaluate(fixture_entities)
             if any(r == "RDM-001" for r, _ in blocking):

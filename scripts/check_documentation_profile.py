@@ -63,11 +63,17 @@ except ImportError:
 
 PROFILE_REGISTRY: dict[tuple[str, str], dict] = {
     # Cardinal entities (CR-BP-92 section 7, CR-BP-93 section 3).
-    # CR-BP-94-EXT-07 (T9.13 + EXT-02 + CR-BP-120 consolidated design):
-    # 8 sections for L0, 7 sections for L1-L4.
+    # CR-BP-94-EXT-07 (T9.13 + EXT-02 + CR-BP-120 consolidated design),
+    # extended by CR-BP-231: the four Part I provided sections
+    # precede the Part II generated set (12 sections for L0,
+    # 11 for L1-L4); profile ids bumped v2 -> v3.
     ("ProcessContext", "L0"): {
-        "profile_id": "dea:profile-readme-l0-process-context-v2",
+        "profile_id": "dea:profile-readme-l0-process-context-v3",
         "required_section_ids": [
+            "provided-nutshell",
+            "provided-why-it-matters",
+            "provided-practical-context",
+            "provided-worked-example",
             "header-identity-table",
             "executive-summary",
             "governance-provenance",
@@ -79,8 +85,12 @@ PROFILE_REGISTRY: dict[tuple[str, str], dict] = {
         ],
     },
     ("ProcessGroup", "L1"): {
-        "profile_id": "dea:profile-readme-l1-process-group-v2",
+        "profile_id": "dea:profile-readme-l1-process-group-v3",
         "required_section_ids": [
+            "provided-nutshell",
+            "provided-why-it-matters",
+            "provided-practical-context",
+            "provided-worked-example",
             "header-identity-table",
             "intent-definition",
             "governance-provenance",
@@ -91,8 +101,12 @@ PROFILE_REGISTRY: dict[tuple[str, str], dict] = {
         ],
     },
     ("Process", "L2"): {
-        "profile_id": "dea:profile-readme-l2-process-v2",
+        "profile_id": "dea:profile-readme-l2-process-v3",
         "required_section_ids": [
+            "provided-nutshell",
+            "provided-why-it-matters",
+            "provided-practical-context",
+            "provided-worked-example",
             "header-identity-table",
             "intent-definition",
             "governance-provenance",
@@ -103,8 +117,12 @@ PROFILE_REGISTRY: dict[tuple[str, str], dict] = {
         ],
     },
     ("Activity", "L3"): {
-        "profile_id": "dea:profile-readme-l3-activity-v2",
+        "profile_id": "dea:profile-readme-l3-activity-v3",
         "required_section_ids": [
+            "provided-nutshell",
+            "provided-why-it-matters",
+            "provided-practical-context",
+            "provided-worked-example",
             "header-identity-table",
             "intent-definition",
             "governance-provenance",
@@ -115,8 +133,12 @@ PROFILE_REGISTRY: dict[tuple[str, str], dict] = {
         ],
     },
     ("Task", "L4"): {
-        "profile_id": "dea:profile-readme-l4-task-v2",
+        "profile_id": "dea:profile-readme-l4-task-v3",
         "required_section_ids": [
+            "provided-nutshell",
+            "provided-why-it-matters",
+            "provided-practical-context",
+            "provided-worked-example",
             "header-identity-table",
             "intent-definition",
             "governance-provenance",
@@ -136,6 +158,10 @@ PROFILE_REGISTRY: dict[tuple[str, str], dict] = {
 # match the title with an OPTIONAL numeric prefix; numbering coherence
 # itself is enforced by RDM-003 in check_readme_consistency.py.
 EXPECTED_HEADINGS: dict[str, str] = {
+    "provided-nutshell": r"^##\s*(?:\d+\.\s*)?In a Nutshell \(provided\)",
+    "provided-why-it-matters": r"^##\s*(?:\d+\.\s*)?Why It Matters \(provided\)",
+    "provided-practical-context": r"^##\s*(?:\d+\.\s*)?Where You'd Encounter It \(provided\)",
+    "provided-worked-example": r"^##\s*(?:\d+\.\s*)?Worked Example \(provided\)",
     "header-identity-table": r"^##\s*(?:\d+\.\s*)?Header and Identity Table",
     "executive-summary": r"^##\s*(?:\d+\.\s*)?Executive Summary",
     "intent-definition": r"^##\s*(?:\d+\.\s*)?Intent and Definition",
@@ -390,19 +416,27 @@ def _self_test() -> int:
         (entity_dir / "README.md").write_text(
             "# Canonical Business Process: `processes:process-good`\n\n"
             "**Name**: Good Process\n\n"
-            "## 1. Header and Identity Table\n\n"
+            "## 1. In a Nutshell (provided)\n\n"
+            "(text)\n\n"
+            "## 2. Why It Matters (provided)\n\n"
+            "(text)\n\n"
+            "## 3. Where You'd Encounter It (provided)\n\n"
+            "(text)\n\n"
+            "## 4. Worked Example (provided)\n\n"
+            "(text)\n\n"
+            "## 5. Header and Identity Table (generated)\n\n"
             "(table)\n\n"
-            "## 2. Intent and Definition\n\n"
+            "## 6. Intent and Definition (generated)\n\n"
             "(text)\n\n"
-            "## 3. Governance and Provenance\n\n"
+            "## 7. Governance and Provenance (generated)\n\n"
             "(text)\n\n"
-            "## 4. Properties and Relationships\n\n"
+            "## 8. Properties and Relationships (generated)\n\n"
             "(text)\n\n"
-            "## 5. Hierarchical Decomposition (Path Scheme)\n\n"
+            "## 9. Hierarchical Decomposition (Path Scheme) (generated)\n\n"
             "(text)\n\n"
-            "## 6. Operational Details\n\n"
+            "## 10. Operational Details (generated)\n\n"
             "(text)\n\n"
-            "## 7. Technical Metadata\n\n"
+            "## 11. Technical Metadata (generated)\n\n"
             "Governed by CR-BP-13a.\n\n"
         )
         # Fixture 2: missing README (DOC-001 violation).

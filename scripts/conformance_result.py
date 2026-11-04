@@ -158,6 +158,8 @@ GATES: list[tuple[str, bool, list[str]]] = [
      False, ["python3", "scripts/check_programme_closure_ext24.py"]),  # CR-BP-94-EXT-24; ADVISORY (the programme-closure self-check: the closure matrix + the catalogue baseline + the governance artefacts (roles, ownership, lifecycle, exceptions, deferrals, improvement backlog) must all validate; the validator returns rc=1 if any CG-NNN closure-finding is emitted; closure is a meta-artefact and its failure is an exception in the meta-closure, not a catalogue defect)
     ("[50] Completeness Profiles (CR-BP-CE-0; CE-000..CE-900)",
      True, ["python3", "scripts/check_completeness.py", "--strict"]),  # CR-BP-CE-0; BLOCKING since CR-BP-CE-RL (all five level tranches landed; the blocking profile is 0 across 3,723 records, so strict fails only on NEWLY introduced profile defects; the 290 knowledge-dependent CE-L2-006 actors/stakeholders candidates remain advisory pending the GOV-002/GOV-003 sweep per the EXT-24 ownership register; the gate WRITES reconciliation/completeness-report.yaml (CE-900))
+    ("[51] Human Readability (CR-BP-232; HUM-001..007)",
+     False, ["python3", "scripts/check_human_readability.py"]),  # CR-BP-230/231/232 two-layer documentation programme; ADVISORY (the provided layer is unbackfilled until the CR-BP-233..236 waves; flips blocking at wave closure CR-BP-236, CR-BP-CE-RL posture precedent; semantic quality stays owned by the BP-SEM/ECF gates — the three documentation quality dimensions are independently assessable)
 ]
 
 

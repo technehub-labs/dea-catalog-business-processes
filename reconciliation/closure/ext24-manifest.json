@@ -3,7 +3,7 @@
   "generated_at": "2026-10-20",
   "generator": "scripts/check_programme_closure_ext24.py",
   "parent_cr": "CR-BP-94-EXT-24",
-  "repository_revision": "e1e328634f92b94479f808e695e663ab55a5d793",
+  "repository_revision": "998776bba3299404ae6b7cd75d49252d86ec253a",
   "summary": {
     "total_findings": 0,
     "by_severity": {},
