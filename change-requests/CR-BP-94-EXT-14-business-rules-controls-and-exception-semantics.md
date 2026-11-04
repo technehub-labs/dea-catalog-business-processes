@@ -1,6 +1,6 @@
 # CR-BP-94-EXT-14: Business Rules, Controls and Exception Semantics
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Process Catalog (Cross-Cutting Documentation)
 **Owner**: Emmanuel A. Otchere
 Programme: CR-BP-94 Documentation Extension

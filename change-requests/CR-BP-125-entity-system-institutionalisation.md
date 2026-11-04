@@ -1,6 +1,6 @@
 # CR-BP-125: Entity System Stage 6 (Institutionalisation)
 
-**Status**: Proposed (this PR)
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Cross-cutting (catalog governance) - pinned rule
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-10-13

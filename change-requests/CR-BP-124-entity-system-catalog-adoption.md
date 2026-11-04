@@ -1,6 +1,6 @@
 # CR-BP-124: Entity System Stage 5 (Catalog Adoption + Disposition Register)
 
-**Status**: Proposed (this PR)
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Cross-cutting (catalog governance) - pinned rule
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-10-13

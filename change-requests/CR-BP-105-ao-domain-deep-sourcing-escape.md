@@ -1,6 +1,6 @@
 # CR-BP-105: AgencyAndOrganization Domain-Deep Sourcing Tranche — Escape-Clause Discovery for Conceive/Design/Build/Operate/Improve
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Process Catalog (lifecycle discovery + L1 sourcing)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-22

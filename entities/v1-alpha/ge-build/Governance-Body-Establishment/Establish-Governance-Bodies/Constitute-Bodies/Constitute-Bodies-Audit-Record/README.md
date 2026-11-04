@@ -46,15 +46,27 @@ This directory hosts the canonical Task record for `processes:task-ge-build-reco
 
 ## 5. Hierarchical Decomposition (Path Scheme)
 
-(decomposition relationships pending)
+<details>
+<summary>Expand to view decomposition details</summary>
+
+(leaf record: tasks are the L4 floor of the decomposition and have no children)
+- Part of (parent): `processes:activity-ge-build-tp3aba`
+</details>
 
 ## 6. Operational Details
 
 **Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
 
-**Roles and Responsibilities**: _(pending; backfill at EXT-04)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(pending; backfill at EXT-04)_
+- Phase responsibility: records custodian (the task's `responsibility` field; CR-BP-102 5-phase decomposition)
+- Parent activity: `processes:activity-ge-build-tp3aba` (owner inheritance per GOV-002 / EXT-13)
+
+**Business Rules and Controls**
+
+- Bounded work (inclusions; `boundary.inclusions`): Retention of the Constitute Bodies case file under the records retention schedule with cryptographic integrity …
+- Exclusions (`boundary.exclusions`): Re-execution of prior phases (no rollback semantics).; Re-classification of records already past the statutory …
+
 
 ## 7. Technical Metadata
 
@@ -63,4 +75,4 @@ This directory hosts the canonical Task record for `processes:task-ge-build-reco
 - **Governing CR**: `CR-BP-102`
 - **Generator**: `scripts/generate_readmes.py` (CR-BP-94-EXT-07)
 - **Schema**: `dea/v1`
-- **Documentation Completeness**: sections marked `_(pending; backfill at EXT-04)_` indicate fields not yet present in the source YAML record. The structural validator (CR-BP-94-EXT-04) surfaces these as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.
+- **Documentation Completeness**: sections render from the record's own fields (CR-BP-224 derivations); the only standing deferrals are the L0 metrics register and L0 role assignment (tracked under CR-BP-94-EXT-24, due 2026-12-31). The structural validator (CR-BP-94-EXT-04) surfaces unfilled sections as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.

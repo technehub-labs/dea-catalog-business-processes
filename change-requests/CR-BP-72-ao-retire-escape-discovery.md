@@ -1,6 +1,6 @@
 # CR-BP-72 - A&O Retire escape-clause discovery (mass-layoff regulated wind-down)
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Process Catalog (lifecycle discovery)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-15

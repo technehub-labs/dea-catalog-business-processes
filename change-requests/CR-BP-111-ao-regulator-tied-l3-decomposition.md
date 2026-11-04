@@ -1,6 +1,6 @@
 # CR-BP-111: A&O Regulator-Tied L3/L4 Decomposition Tranche (5 BPs x 4 Activities x 5 Tasks = 100 new records)
 
-**Status**: Proposed (this PR)
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Admission authority**: yes
 **Layer**: L3 (Activity decomposition)
 **Owner**: Emmanuel A. Otchere

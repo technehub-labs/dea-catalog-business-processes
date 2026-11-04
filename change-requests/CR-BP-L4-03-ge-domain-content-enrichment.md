@@ -10,7 +10,7 @@
 > migration tree at merge time (enriched content spliced onto migrated
 > structure; legacy ids rewritten via the id map).
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: L4
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-20

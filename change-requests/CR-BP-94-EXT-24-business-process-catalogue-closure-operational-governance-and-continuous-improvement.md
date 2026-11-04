@@ -1,7 +1,7 @@
 # CR-BP-94-EXT-24: Business Process Catalogue Closure, Operational Governance and Continuous Improvement
 
 **Source**: the user-submitted `CR-BP-EXT-24.md` (2026-10-20)
-**Status**: Proposed (the FINAL slice of the 17-CR programme)
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Process Catalog (Cross-Cutting Documentation)
 **Owner**: Emmanuel A. Otchere
 **Programme**: Business Process Operational Documentation Extension (DEA-PROCESS-ENRICH-000)

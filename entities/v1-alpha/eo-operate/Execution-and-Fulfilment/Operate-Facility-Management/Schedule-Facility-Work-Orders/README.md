@@ -55,6 +55,13 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 <details>
 <summary>Expand to view decomposition details</summary>
 
+- Composes (children):
+  - `processes:task-eo-operate-intake-en7y2d` (composes)
+  - `processes:task-eo-operate-verify-hdea6e` (composes)
+  - `processes:task-eo-operate-transform-yn3qrc` (composes)
+  - `processes:task-eo-operate-confirm-4ywxza` (composes)
+  - `processes:task-eo-operate-record-6w6fwq` (composes)
+- Part of (parent): `processes:process-eo-operate-rqdte5`
 - **Cohesion rationale**: Constituent work shares a single scheduling concern (demand and preventive plans to a work-order schedule), one input class (facility demand, preventive calendar, crew availability), and one output (the scheduled work-order book). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
@@ -62,9 +69,16 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 **Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
 
-**Roles and Responsibilities**: _(pending; backfill at EXT-04)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(pending; backfill at EXT-04)_
+- Owner: inherited from parent BP `processes:process-eo-operate-rqdte5` (GOV-002 role-based; EXT-13 accountability model)
+- Cohesion accountability: Constituent work shares a single scheduling concern (demand and preventive plans to a work-order schedule), one input … (assessed at deposition; CR-BP-32 §6)
+
+**Business Rules and Controls**
+
+- Controls inherited from parent BP `processes:process-eo-operate-rqdte5` (scope and boundary are governed at BP level; CR-BP-32 activity-cohesion model)
+- Cohesion control rationale: Constituent work shares a single scheduling concern (demand and preventive plans to a work-order schedule), one input …
+
 
 ## 7. Technical Metadata
 
@@ -73,4 +87,4 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 - **Governing CR**: `CR-BP-43`
 - **Generator**: `scripts/generate_readmes.py` (CR-BP-94-EXT-07)
 - **Schema**: `dea/v1`
-- **Documentation Completeness**: sections marked `_(pending; backfill at EXT-04)_` indicate fields not yet present in the source YAML record. The structural validator (CR-BP-94-EXT-04) surfaces these as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.
+- **Documentation Completeness**: sections render from the record's own fields (CR-BP-224 derivations); the only standing deferrals are the L0 metrics register and L0 role assignment (tracked under CR-BP-94-EXT-24, due 2026-12-31). The structural validator (CR-BP-94-EXT-04) surfaces unfilled sections as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.

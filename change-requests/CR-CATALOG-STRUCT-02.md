@@ -8,7 +8,7 @@
 > the dea-metaframework `docs/entity-storage-layout.md` for the current
 > containment tree.
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: L1 (Process Catalog)
 **Owner**: TechNeHub Labs
 **Depends on**: CR-CATALOG-STRUCT-01 (merged; PR #10), CR-CATALOG-STRUCT-06a (merged; PR #11), CR-CATALOG-STRUCT-06b (merged; PR #12)

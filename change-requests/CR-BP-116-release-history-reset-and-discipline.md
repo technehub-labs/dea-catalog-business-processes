@@ -1,6 +1,6 @@
 # CR-BP-116: Release-History Reset (Path B) + Release-Discipline Extensions
 
-**Status**: Proposed (this PR)
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Cross-cutting (catalog governance) + release discipline
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-10-13

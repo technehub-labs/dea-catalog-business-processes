@@ -1,6 +1,6 @@
 # CR-BP-98: Task Boundary and Workflow Realization
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Process Catalog
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-18

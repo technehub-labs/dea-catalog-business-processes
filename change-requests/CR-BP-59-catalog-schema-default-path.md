@@ -1,6 +1,6 @@
 # CR-BP-59: Catalog Schema Default Path Repair
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Process Catalog (validator/regenerator defaults)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-14

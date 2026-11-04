@@ -3,7 +3,7 @@
   "generated_at": "2026-10-19",
   "generator": "scripts/check_reconciliation_ext22.py",
   "parent_cr": "CR-BP-94-EXT-22",
-  "catalog_root": "/home/hermes/dea-catalog-processes",
+  "catalog_root": "/Volumes/512GBORICO/Developer/OpenDEA/dea-catalog-business-processes",
   "summary": {
     "total_findings": 8,
     "by_rule": {
@@ -73,7 +73,7 @@
       "L1": 49,
       "L0": 49
     },
-    "total_records": 3726,
+    "total_records": 3727,
     "matrix_records": 2901
   }
 }

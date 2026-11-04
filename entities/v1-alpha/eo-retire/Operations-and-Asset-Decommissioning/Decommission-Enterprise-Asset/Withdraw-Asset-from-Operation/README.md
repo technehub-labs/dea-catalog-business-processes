@@ -55,6 +55,13 @@ This directory hosts the canonical Activity record for `processes:activity-eo-re
 <details>
 <summary>Expand to view decomposition details</summary>
 
+- Composes (children):
+  - `processes:task-eo-retire-intake-gkx5n8` (composes)
+  - `processes:task-eo-retire-verify-636h9f` (composes)
+  - `processes:task-eo-retire-transform-qe7y2h` (composes)
+  - `processes:task-eo-retire-confirm-xgywnk` (composes)
+  - `processes:task-eo-retire-record-f6ppym` (composes)
+- Part of (parent): `processes:process-eo-retire-rpg6d4`
 - **Cohesion rationale**: Constituent work shares a single operational withdrawal concern, one input class (the asset retirement plan), and one output (the asset withdrawn from operation). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
@@ -62,9 +69,16 @@ This directory hosts the canonical Activity record for `processes:activity-eo-re
 
 **Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
 
-**Roles and Responsibilities**: _(pending; backfill at EXT-04)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(pending; backfill at EXT-04)_
+- Owner: inherited from parent BP `processes:process-eo-retire-rpg6d4` (GOV-002 role-based; EXT-13 accountability model)
+- Cohesion accountability: Constituent work shares a single operational withdrawal concern, one input class (the asset retirement plan), and one … (assessed at deposition; CR-BP-32 §6)
+
+**Business Rules and Controls**
+
+- Controls inherited from parent BP `processes:process-eo-retire-rpg6d4` (scope and boundary are governed at BP level; CR-BP-32 activity-cohesion model)
+- Cohesion control rationale: Constituent work shares a single operational withdrawal concern, one input class (the asset retirement plan), and one …
+
 
 ## 7. Technical Metadata
 
@@ -73,4 +87,4 @@ This directory hosts the canonical Activity record for `processes:activity-eo-re
 - **Governing CR**: `CR-BP-69`
 - **Generator**: `scripts/generate_readmes.py` (CR-BP-94-EXT-07)
 - **Schema**: `dea/v1`
-- **Documentation Completeness**: sections marked `_(pending; backfill at EXT-04)_` indicate fields not yet present in the source YAML record. The structural validator (CR-BP-94-EXT-04) surfaces these as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.
+- **Documentation Completeness**: sections render from the record's own fields (CR-BP-224 derivations); the only standing deferrals are the L0 metrics register and L0 role assignment (tracked under CR-BP-94-EXT-24, due 2026-12-31). The structural validator (CR-BP-94-EXT-04) surfaces unfilled sections as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.

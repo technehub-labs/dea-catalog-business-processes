@@ -1,6 +1,6 @@
 # CR-BP-13: L1 Process Group Research Ratification
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Admission authority**: yes
 **Layer**: L1 (Process Catalog)
 **Owner**: TechNeHub Labs

@@ -1,6 +1,6 @@
 # CR-BP-113: mv1 Migration Completion - Docs, Templates, Schemas, and HREF Repair
 
-**Status**: Proposed (this PR)
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Cross-cutting (catalog governance)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-10-13

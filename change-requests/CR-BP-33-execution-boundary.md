@@ -1,6 +1,6 @@
 # CR-BP-33: Execution Boundary Validators (EXE-001..010)
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: L3
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-12

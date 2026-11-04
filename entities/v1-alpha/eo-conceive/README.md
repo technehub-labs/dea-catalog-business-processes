@@ -180,15 +180,28 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 
 ## 7. Operational, Control and Metrics Details
 
-**Inputs, Outputs and Interfaces**: _(pending; backfill at EXT-04)_
+**Inputs, Outputs and Interfaces**
 
-**Roles and Responsibilities**: _(pending; backfill at EXT-04)_
+**Includes**:
+- Operations strategy framing
+- Delivery model conception
+- Technology enablement approach framing
+- Physical asset approach framing
 
-**Business Rules and Controls**: _(pending; backfill at EXT-04)_
+**Excludes**:
+- Customer strategy (party-relationship x conceive; adjacent domain)
+- Strategic direction for operations (strategy-direction x conceive; adjacent domain)
+- Supplier relationship conception (party-relationship x conceive; adjacent domain)
+- Operations model design (Design stage; adjacent context)
+- Operations build (Build stage; adjacent context)
+
+**Roles and Responsibilities**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+
+**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
 
 **Target Metrics and Indicators**
 
-_(Pending EXT-04)_
+_(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
 
 ## 8. Technical Metadata
 
@@ -197,4 +210,4 @@ _(Pending EXT-04)_
 - **Governing CR**: `?`
 - **Generator**: `scripts/generate_readmes.py` (CR-BP-94-EXT-07)
 - **Schema**: `dea/v1`
-- **Documentation Completeness**: sections marked `_(pending; backfill at EXT-04)_` indicate fields not yet present in the source YAML record. The structural validator (CR-BP-94-EXT-04) surfaces these as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.
+- **Documentation Completeness**: sections render from the record's own fields (CR-BP-224 derivations); the only standing deferrals are the L0 metrics register and L0 role assignment (tracked under CR-BP-94-EXT-24, due 2026-12-31). The structural validator (CR-BP-94-EXT-04) surfaces unfilled sections as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.

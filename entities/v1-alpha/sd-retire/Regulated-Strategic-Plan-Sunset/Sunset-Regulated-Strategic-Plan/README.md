@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-sd-reti
 
 **Intent**: manage
 
-**Definition**: (definition pending; backfill at EXT-04)
+**Definition**: Sunset a regulated entity's supervisor-acknowledged-and-live strategic plan under the enterprise's regulated-entity retention policy within the processes:pc-sd-retire-zxnc3c Cell Charter. The trigger is a competent regulator's directive or rejection that requires the plan's retirement; the outcome is the plan formally sunset with the regulator directive on record, the replacement plan's status preserved, the retired plan's records retained per the regulated-entity retention policy, and the supervisor's acknowledgement of the sunset recorded. Distinct from strategy improvement (Improve coordinate) and from strategy activation (Activate coordinate, which handles replacement-plan activation).
 
 ## 3. Governance and Provenance
 
@@ -98,9 +98,21 @@ This directory hosts the canonical Process record for `processes:process-sd-reti
 - Strategic-plan disposition where no competent regulator has required retirement
 - Replacement-plan activation (handled at StrategyAndDirection x Activate)
 
-**Roles and Responsibilities**: _(pending; backfill at EXT-04)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(pending; backfill at EXT-04)_
+- Process Owner: Strategy & Direction Process Owner (confirmed; GOV-002 role-based)
+- Actor: industry regulator
+- Actor: finance function
+- Actor: strategy function
+- Stakeholder: industry regulator
+- Stakeholder: finance function
+- Stakeholder: strategy function
+
+**Business Rules and Controls**
+
+- Governing scope (includes; `process_scope.includes`): Regulator directive or rejection notice (failed stress test triggers plan replacement; bank recovery-plan rejection by …
+- Adjacency exclusions (`process_scope.excludes`): Strategic-plan conception, design, build, activation, steady-state execution, and improvement (StrategyAndDirection x …
+
 
 ## 7. Technical Metadata
 
@@ -109,4 +121,4 @@ This directory hosts the canonical Process record for `processes:process-sd-reti
 - **Governing CR**: `CR-BP-101`
 - **Generator**: `scripts/generate_readmes.py` (CR-BP-94-EXT-07)
 - **Schema**: `dea/v1`
-- **Documentation Completeness**: sections marked `_(pending; backfill at EXT-04)_` indicate fields not yet present in the source YAML record. The structural validator (CR-BP-94-EXT-04) surfaces these as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.
+- **Documentation Completeness**: sections render from the record's own fields (CR-BP-224 derivations); the only standing deferrals are the L0 metrics register and L0 role assignment (tracked under CR-BP-94-EXT-24, due 2026-12-31). The structural validator (CR-BP-94-EXT-04) surfaces unfilled sections as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.

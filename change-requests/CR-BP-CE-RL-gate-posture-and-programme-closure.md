@@ -1,6 +1,6 @@
 # CR-BP-CE-RL: Completeness Gate Posture Flip and Programme Closure
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Process Catalog (Governance)
 **Owner**: Emmanuel A. Otchere
 **Depends on**: CR-BP-CE-0, CR-BP-CE-L0, CR-BP-CE-L1, CR-BP-CE-L2, CR-BP-CE-L4, CR-BP-CE-REC-1

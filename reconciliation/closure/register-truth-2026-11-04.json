@@ -1,0 +1,1110 @@
+{
+  "generated": "2026-11-04",
+  "carrier": "CR-BP-223",
+  "rule": "flip open-class CR status to Accepted when ANY of: CHANGELOG landed entry / register row closed / >=3 entity change_history citations / implementation cited in scripts+tests / implementation co-landed in the CR-file's own PR history; stay open when the Status declares a human gate (awaiting Proceed / awaiting user input); EXCEPTION: EMB-003-sealed files are never edited \u2014 their landing is recorded in the register row only (2 files)",
+  "stayed_open": [
+    "CR-BP-30-release-package.md",
+    "CR-BP-94-EXT-16-operational-authoring-and-research-methodology.md",
+    "CR-BP-94-EXT-17-enrichment-tooling-and-backfill-orchestration.md",
+    "CR-BP-94-EXT-18-operational-documentation-pilot.md"
+  ],
+  "flips": {
+    "CR-BP-03-business-process-architecture.md": {
+      "from": "Proposed (refined 2026-09-03)",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-03C-sample-process-contribution.md": {
+      "from": "Proposed (2026-09-03)",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-100-l0-l1-cardinality-gate.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-100a-cardinality-49-update.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-101-sd-retire-admission.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-101a-sd-retire-activity-decomposition.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-102-l4-decomposition-pipeline.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "register-row-closed",
+        "entity-change-history-citations:3480",
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-105-ao-domain-deep-sourcing-escape.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-106-ao-regulator-tied-admission.md": {
+      "from": "Proposed (this PR)",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-107-cr-meta-legacy-retrofit.md": {
+      "from": "Proposed (this PR)",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-111-ao-regulator-tied-l3-decomposition.md": {
+      "from": "Proposed (this PR)",
+      "to": "Accepted",
+      "evidence": [
+        "changelog-landed-entry",
+        "register-row-closed",
+        "entity-change-history-citations:125",
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-113-mv1-migration-completion.md": {
+      "from": "Proposed (this PR)",
+      "to": "Accepted",
+      "evidence": [
+        "changelog-landed-entry",
+        "register-row-closed",
+        "entity-change-history-citations:194",
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-114-readme-regeneration-drift-gate.md": {
+      "from": "Proposed (this PR)",
+      "to": "Accepted",
+      "evidence": [
+        "changelog-landed-entry",
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-115-admission-authority-marker.md": {
+      "from": "Proposed (this PR)",
+      "to": "Accepted",
+      "evidence": [
+        "changelog-landed-entry",
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-116-release-history-reset-and-discipline.md": {
+      "from": "Proposed (this PR)",
+      "to": "Accepted",
+      "evidence": [
+        "changelog-landed-entry",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-117-entity-id-convention-clarity.md": {
+      "from": "Proposed (this PR)",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-118-authorship-cardinal-rule.md": {
+      "from": "Proposed (this PR)",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-118c-prose-authorship-gate.md": {
+      "from": "Proposed (this PR)",
+      "to": "Accepted",
+      "evidence": [
+        "changelog-landed-entry",
+        "register-row-closed",
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-121-general-entity-system-stage-1.md": {
+      "from": "Proposed (this PR)",
+      "to": "Accepted",
+      "evidence": [
+        "changelog-landed-entry",
+        "register-row-closed",
+        "implementation-cited-in-code"
+      ]
+    },
+    "CR-BP-122-entity-system-specifications.md": {
+      "from": "Proposed (this PR)",
+      "to": "Accepted",
+      "evidence": [
+        "changelog-landed-entry",
+        "register-row-closed",
+        "implementation-cited-in-code"
+      ]
+    },
+    "CR-BP-123-entity-system-gate.md": {
+      "from": "Proposed (this PR)",
+      "to": "Accepted",
+      "evidence": [
+        "changelog-landed-entry",
+        "register-row-closed",
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-124-entity-system-catalog-adoption.md": {
+      "from": "Proposed (this PR)",
+      "to": "Accepted",
+      "evidence": [
+        "changelog-landed-entry",
+        "register-row-closed",
+        "implementation-cited-in-code"
+      ]
+    },
+    "CR-BP-125-entity-system-institutionalisation.md": {
+      "from": "Proposed (this PR)",
+      "to": "Accepted",
+      "evidence": [
+        "changelog-landed-entry",
+        "register-row-closed",
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-126-legacy-id-reconciliation.md": {
+      "from": "Proposed (this PR)",
+      "to": "Accepted",
+      "evidence": [
+        "changelog-landed-entry",
+        "register-row-closed",
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-127-dea-uri-scheme-registration.md": {
+      "from": "Proposed (this PR)",
+      "to": "Accepted",
+      "evidence": [
+        "changelog-landed-entry",
+        "register-row-closed",
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-128-dea-uri-resolver.md": {
+      "from": "Proposed (this PR)",
+      "to": "Accepted",
+      "evidence": [
+        "changelog-landed-entry",
+        "register-row-closed",
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-129-dea-uri-remote-resolver.md": {
+      "from": "Proposed (this PR)",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-13-research-ratification.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-130-dea-uri-web-resolver.md": {
+      "from": "Proposed (this PR)",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-131-dea-uri-sync.md": {
+      "from": "Proposed (this PR)",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-132-dea-domain-tying-plan.md": {
+      "from": "Proposed (this PR; user-approved 2026-10-15)",
+      "to": "Accepted",
+      "evidence": [
+        "changelog-landed-entry"
+      ]
+    },
+    "CR-BP-13a-party-and-relationship-admission.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-13b-governance-and-existence-admission.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-21f.1-governance-existence-completion.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-32-activity-model.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-33-execution-boundary.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-34a-l2-qualification-validators.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-34b-intent-purposive-validators.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-34c-lifecycle-state-machine.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-34d-semantic-identity-vs-version.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-35-process-catalog-architecture.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-36-mece-validation.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-37-cross-repo-integrity.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-38-ecf-matrix-population-retrospective.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-39-changelog-readme-reconciliation.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-40-xri-gate-promotion.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-42-l3-activity-pilot.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-43-l3-eo-operate-tranche.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-44-l3-pr-operate-improve-tranche.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-45-l3-pr-conceive-design-build-tranche.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-46-l3-eo-conceive-design-tranche.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-47-l3-eo-build-improve-tranche.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-48-l3-ge-conceive-design-build-tranche.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-49-l3-ge-improve-operate-tranche.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-50-l3-pv-conceive-design-build-tranche.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-51-l3-pv-improve-operate-tranche.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-52-l3-fa-conceive-design-build-tranche.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-53-l3-fa-improve-operate-tranche.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-54-l3-sd-conceive-design-build-tranche.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-55-l3-sd-improve-operate-tranche.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-56-l3-ao-conceive-design-build-tranche.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-57-l3-ao-improve-operate-tranche.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-58-pg-gate-repair-dangle-removal.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-59-catalog-schema-default-path.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-60-l3-docs-currency.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-61-doc-gate-precision.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-62-lifecycle-process-discovery.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-63-activate-retire-discovery.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-64-pv-activate-retire-admission.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-65-ge-activate-admission.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-66-eo-retire-admission.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-67-pr-retire-admission.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-68-pc-processes-hygiene.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-69-admitted-bp-l3-decomposition.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-70-pr-activate-escape-discovery.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-71-pr-activate-admission.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-72-ao-retire-escape-discovery.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-73-ao-retire-admission.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-74-fa-retire-escape-discovery.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-75-fa-retire-admission.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-76-ge-retire-escape-discovery.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-77-l3-admitted-regulated-tranche.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-78-ge-retire-admission.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-79-l3-ge-retire-admission.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-80-l0-discovery-five-backlog-cells.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-81-ao-activate-admission.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-82-eo-activate-admission.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-83-fa-activate-admission.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-86-sd-activate-admission.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-87-l3-admitted-activate-tranche.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-88-post-v030-reconciliation.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "register-row-closed",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-89-four-cell-programme-retrospective.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "register-row-closed",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-91-deprecated-bp-l3-exclusion.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "register-row-closed",
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-92-recon-decomposition-and-execution-boundary-hardening.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-93-decomposition-semantic-contract.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-94-EXT-01-documentation-architecture.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-94-EXT-01a-l0-l1-profiles.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-94-EXT-02-readme-generation.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "register-row-closed",
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-94-EXT-04-generation-and-validation-pipeline.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-94-EXT-05-decomposition-reconciliation.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-94-EXT-07-readme-template-consolidation.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "changelog-landed-entry",
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-94-EXT-08-documentation-roadmap-reconciliation.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-94-EXT-09-operational-documentation-semantic-contract.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "register-row-closed",
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-94-EXT-10-operational-entity-schema-alignment.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-94-EXT-11-decomposition-level-documentation-profiles.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-94-EXT-13-process-responsibility-and-accountability-model.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-94-EXT-14-business-rules-controls-and-exception-semantics.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-94-EXT-15-evidence-provenance-and-confidence-framework.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-94-EXT-19-l2-business-process-operational-documentation-backfill.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "register-row-closed",
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-94-EXT-20-l3-activity-operational-documentation-backfill.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "register-row-closed",
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-94-EXT-21-l4-task-operational-documentation-backfill.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "register-row-closed",
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-94-EXT-22-process-decomposition-reconciliation-and-structural-integrity.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-94-EXT-24-business-process-catalogue-closure-operational-governance-and-continuous-improvement.md": {
+      "from": "Proposed (the FINAL slice of the 17-CR programme)",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-94-decomposition-record-templates.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-95-l0-l1-conformance-gate.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-96-l2-qualification-gate.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-97-l3-activity-cohesion-gate.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-98-task-boundary-and-workflow-realization.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-99-reconciliation-matrix.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-CE-0-completeness-profiles.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-CE-L0-process-context-completeness.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "changelog-landed-entry",
+        "register-row-closed",
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-CE-L1-process-group-owner-candidates.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "changelog-landed-entry",
+        "register-row-closed",
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-CE-L2-process-adopted-fields.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "changelog-landed-entry",
+        "register-row-closed",
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-CE-L4-custodian-vocabulary-normalization.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "changelog-landed-entry",
+        "register-row-closed",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-CE-REC-1-level-numbering-reconciliation.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "changelog-landed-entry",
+        "register-row-closed"
+      ]
+    },
+    "CR-BP-CE-RL-gate-posture-and-programme-closure.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "changelog-landed-entry",
+        "register-row-closed",
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-GS-1-governance-sweep.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "changelog-landed-entry",
+        "register-row-closed",
+        "entity-change-history-citations:145",
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-L4-02-pr-domain-content-enrichment.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "register-row-closed",
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-BP-L4-03-ge-domain-content-enrichment.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    },
+    "CR-CATALOG-STRUCT-02.md": {
+      "from": "Proposed",
+      "to": "Accepted",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ]
+    }
+  },
+  "sealed_exceptions": [
+    {
+      "file": "CR-BP-TMF-EMBARGO-tmforum-reference-strip.md",
+      "evidence": [
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ],
+      "disposition": "landing recorded via register row only; file Status line reverted to sealed bytes (EMB-003 integrity)"
+    },
+    {
+      "file": "CR-BP-112-independent-authorship-determination.md",
+      "evidence": [
+        "changelog-landed-entry",
+        "register-row-closed",
+        "implementation-cited-in-code",
+        "implementation-co-landed-in-pr"
+      ],
+      "disposition": "landing recorded via register row only; file Status line reverted to sealed bytes (EMB-003 integrity)"
+    }
+  ]
+}

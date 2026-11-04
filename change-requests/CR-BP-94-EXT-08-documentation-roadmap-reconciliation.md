@@ -1,6 +1,6 @@
 # CR-BP-94-EXT-08: Documentation Extension Roadmap Reconciliation and Deferred-Work Disposition
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Process Catalog
 **Owner**: Emmanuel A. Otchere
 Date: 2026-10-19

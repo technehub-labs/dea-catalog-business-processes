@@ -59,15 +59,32 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-o
 
 ## 5. Hierarchical Decomposition (Path Scheme)
 
-(decomposition relationships pending)
+<details>
+<summary>Expand to view decomposition details</summary>
+
+- Composes (children):
+  - `processes:process-ao-operate-g4wp63` (composes)
+  - `processes:process-ao-operate-38qyc6` (composes)
+  - `processes:process-ao-operate-dg9q4h` (composes)
+  - `processes:process-ao-operate-87q5mk` (composes)
+  - `processes:process-ao-operate-bd7mef` (composes)
+  - `processes:process-ao-operate-ba8scr` (composes)
+</details>
 
 ## 6. Operational Details
 
 **Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
 
-**Roles and Responsibilities**: _(pending; backfill at EXT-04)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(pending; backfill at EXT-04)_
+- Process Owner: Agency & Organization Process Owner (confirmed; GOV-002 role-based)
+- Decomposes into 6 L2 Process(es) (per the record's `composes` block)
+
+**Business Rules and Controls**
+
+- Governing scope (includes; `scope.includes`): Agent performance operation; Payroll and benefits operation; Time and attendance operation; Learning and development …
+- Adjacency exclusions (`scope.excludes`): Agent capacity planning (Conceive/Design; adjacent contexts); Service delivery to customers (product-value x operate) …
+
 
 ## 7. Technical Metadata
 
@@ -76,4 +93,4 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-o
 - **Governing CR**: `CR-BP-21b.1`
 - **Generator**: `scripts/generate_readmes.py` (CR-BP-94-EXT-07)
 - **Schema**: `dea/v1`
-- **Documentation Completeness**: sections marked `_(pending; backfill at EXT-04)_` indicate fields not yet present in the source YAML record. The structural validator (CR-BP-94-EXT-04) surfaces these as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.
+- **Documentation Completeness**: sections render from the record's own fields (CR-BP-224 derivations); the only standing deferrals are the L0 metrics register and L0 role assignment (tracked under CR-BP-94-EXT-24, due 2026-12-31). The structural validator (CR-BP-94-EXT-04) surfaces unfilled sections as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.

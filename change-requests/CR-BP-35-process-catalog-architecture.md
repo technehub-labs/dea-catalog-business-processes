@@ -1,6 +1,6 @@
 # CR-BP-35: Process Catalog Architecture Retrospective
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Cross-cutting
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-12

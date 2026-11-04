@@ -1,6 +1,6 @@
 # CR-BP-115: Admission-Authority Marker (Data over Regex) and open_change_requests Count Fix
 
-**Status**: Proposed (this PR)
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Cross-cutting (catalog governance)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-10-13

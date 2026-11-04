@@ -1,6 +1,6 @@
 # CR-BP-80 - L0 Escape-Clause Discovery Exercise for the Five Backlog-Deferred Cells
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: L0
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-16

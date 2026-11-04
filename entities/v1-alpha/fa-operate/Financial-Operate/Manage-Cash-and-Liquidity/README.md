@@ -17,7 +17,8 @@ This directory hosts the canonical Process record for `processes:process-fa-oper
 
 **Intent**: operate
 
-**Definition**: (definition pending; backfill at EXT-04)
+**Definition**: Manage Cash and Liquidity (operate stage, management process). Landed by CR-BP-21e.1
+from the FinanceAndAccounting register v2.
 
 ## 3. Governance and Provenance
 
@@ -75,9 +76,13 @@ This directory hosts the canonical Process record for `processes:process-fa-oper
 **Outputs**:
 - Manage Cash and Liquidity: service result result (service_result)
 
-**Roles and Responsibilities**: _(pending; backfill at EXT-04)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(pending; backfill at EXT-04)_
+- Process Owner: Finance & Accounting Process Owner (confirmed; GOV-002 role-based)
+- Actor: compliance function
+- Stakeholder: compliance function
+
+**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
 
 ## 7. Technical Metadata
 
@@ -86,4 +91,4 @@ This directory hosts the canonical Process record for `processes:process-fa-oper
 - **Governing CR**: `CR-BP-21e.1`
 - **Generator**: `scripts/generate_readmes.py` (CR-BP-94-EXT-07)
 - **Schema**: `dea/v1`
-- **Documentation Completeness**: sections marked `_(pending; backfill at EXT-04)_` indicate fields not yet present in the source YAML record. The structural validator (CR-BP-94-EXT-04) surfaces these as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.
+- **Documentation Completeness**: sections render from the record's own fields (CR-BP-224 derivations); the only standing deferrals are the L0 metrics register and L0 role assignment (tracked under CR-BP-94-EXT-24, due 2026-12-31). The structural validator (CR-BP-94-EXT-04) surfaces unfilled sections as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.

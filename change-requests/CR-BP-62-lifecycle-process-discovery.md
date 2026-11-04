@@ -1,6 +1,6 @@
 # CR-BP-62: Lifecycle Process Discovery & Canonical Process Evaluation
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Process Catalog (lifecycle discovery)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-14

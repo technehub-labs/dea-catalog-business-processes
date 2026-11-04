@@ -55,6 +55,13 @@ This directory hosts the canonical Activity record for `processes:activity-ge-re
 <details>
 <summary>Expand to view decomposition details</summary>
 
+- Composes (children):
+  - `processes:task-ge-retire-intake-g4unb8` (composes)
+  - `processes:task-ge-retire-verify-gypyqm` (composes)
+  - `processes:task-ge-retire-transform-ahrttj` (composes)
+  - `processes:task-ge-retire-confirm-gmmp22` (composes)
+  - `processes:task-ge-retire-record-jkgdu7` (composes)
+- Part of (parent): `processes:process-ge-retire-mjq5hg`
 - **Cohesion rationale**: Constituent work shares a single statutory-filing concern (the regulated filings required to dissolve the entity or surrender authorisation under the controlling authority), one input class (order-scope register plus reduced governance regime plus entity records), and one output (filed and recorded statutory dissolution submissions with filing receipts preserved). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
@@ -62,9 +69,16 @@ This directory hosts the canonical Activity record for `processes:activity-ge-re
 
 **Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
 
-**Roles and Responsibilities**: _(pending; backfill at EXT-04)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(pending; backfill at EXT-04)_
+- Owner: inherited from parent BP `processes:process-ge-retire-mjq5hg` (GOV-002 role-based; EXT-13 accountability model)
+- Cohesion accountability: Constituent work shares a single statutory-filing concern (the regulated filings required to dissolve the entity or … (assessed at deposition; CR-BP-32 §6)
+
+**Business Rules and Controls**
+
+- Controls inherited from parent BP `processes:process-ge-retire-mjq5hg` (scope and boundary are governed at BP level; CR-BP-32 activity-cohesion model)
+- Cohesion control rationale: Constituent work shares a single statutory-filing concern (the regulated filings required to dissolve the entity or …
+
 
 ## 7. Technical Metadata
 
@@ -73,4 +87,4 @@ This directory hosts the canonical Activity record for `processes:activity-ge-re
 - **Governing CR**: `CR-BP-79`
 - **Generator**: `scripts/generate_readmes.py` (CR-BP-94-EXT-07)
 - **Schema**: `dea/v1`
-- **Documentation Completeness**: sections marked `_(pending; backfill at EXT-04)_` indicate fields not yet present in the source YAML record. The structural validator (CR-BP-94-EXT-04) surfaces these as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.
+- **Documentation Completeness**: sections render from the record's own fields (CR-BP-224 derivations); the only standing deferrals are the L0 metrics register and L0 role assignment (tracked under CR-BP-94-EXT-24, due 2026-12-31). The structural validator (CR-BP-94-EXT-04) surfaces unfilled sections as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.

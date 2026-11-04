@@ -1,6 +1,6 @@
 # CR-BP-CE-L1: Process Group Owner Candidates Tranche (the 49 L1 records)
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Process Catalog (Adopted-Field Population)
 **Owner**: Emmanuel A. Otchere
 **Depends on**: CR-BP-CE-0, CR-BP-CE-L0

@@ -1,6 +1,6 @@
 # CR-BP-129: dea:// URI Remote Resolver (T9.5)
 
-**Status**: Proposed (this PR)
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Cross-cutting (catalog governance) - implementation
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-10-15

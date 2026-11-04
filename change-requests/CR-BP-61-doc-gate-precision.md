@@ -1,6 +1,6 @@
 # CR-BP-61: Documentation Gate Precision Repair (DOC-001/DOC-003)
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Process Catalog (validator precision)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-09-14

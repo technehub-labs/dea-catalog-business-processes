@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-ao-oper
 
 **Intent**: manage
 
-**Definition**: (definition pending; backfill at EXT-04)
+**Definition**: Operate the regulator-aligned continuing-compliance oversight of regulator-licensed roles under the enterprise regulated-entity approval authority. The trigger is the regulator-licensed role becoming live on the regulated personnel record. The outcome is regulator-aligned compliance evidence current and auditable on the regulated personnel record: continuing-supervisor notification, conduct-rule compliance (FCA SMCR COCON, FINRA Rule 3110, FAA Part 117, EU AI Act Article 14), fitness-and-propriety annual attestations, hours-of-work and rest-rule compliance, and continuing-competence tracking (state bar MCLE, state healthcare CME, NAIC CE).
 
 ## 3. Governance and Provenance
 
@@ -75,9 +75,13 @@ This directory hosts the canonical Process record for `processes:process-ao-oper
 **Outputs**:
 - Operate Regulated Performance Oversight: changed object result (changed_object)
 
-**Roles and Responsibilities**: _(pending; backfill at EXT-04)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(pending; backfill at EXT-04)_
+- Process Owner: Agency & Organization Process Owner (confirmed; GOV-002 role-based)
+- Actor: workforce management
+- Stakeholder: workforce management
+
+**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
 
 ## 7. Technical Metadata
 
@@ -86,4 +90,4 @@ This directory hosts the canonical Process record for `processes:process-ao-oper
 - **Governing CR**: `CR-BP-106`
 - **Generator**: `scripts/generate_readmes.py` (CR-BP-94-EXT-07)
 - **Schema**: `dea/v1`
-- **Documentation Completeness**: sections marked `_(pending; backfill at EXT-04)_` indicate fields not yet present in the source YAML record. The structural validator (CR-BP-94-EXT-04) surfaces these as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.
+- **Documentation Completeness**: sections render from the record's own fields (CR-BP-224 derivations); the only standing deferrals are the L0 metrics register and L0 role assignment (tracked under CR-BP-94-EXT-24, due 2026-12-31). The structural validator (CR-BP-94-EXT-04) surfaces unfilled sections as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.

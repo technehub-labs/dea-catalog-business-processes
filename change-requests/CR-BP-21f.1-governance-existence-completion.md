@@ -1,6 +1,6 @@
 # CR-BP-21f.1: GovernanceAndExistence Completion (ECF v2.4.0 — Retroactive Register Coverage)
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Admission authority**: yes
 **Layer**: Process Catalog
 **Owner**: Emmanuel A. Otchere

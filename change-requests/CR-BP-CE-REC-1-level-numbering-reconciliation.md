@@ -1,6 +1,6 @@
 # CR-BP-CE-REC-1: Umbrella CR Level-Numbering Reconciliation
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Process Catalog (Cross-Cutting Documentation)
 **Owner**: Emmanuel A. Otchere
 **Depends on**: CR-BP-CE-0

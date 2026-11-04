@@ -1,6 +1,6 @@
 # CR-BP-94-EXT-21: L4 Task Operational Documentation Backfill
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Layer**: Process Catalog (Cross-Cutting Documentation)
 **Owner**: Emmanuel A. Otchere
 **Date**: 2026-10-19

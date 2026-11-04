@@ -55,6 +55,13 @@ This directory hosts the canonical Activity record for `processes:activity-sd-im
 <details>
 <summary>Expand to view decomposition details</summary>
 
+- Composes (children):
+  - `processes:task-sd-improve-intake-k7ukdu` (composes)
+  - `processes:task-sd-improve-verify-5n2vea` (composes)
+  - `processes:task-sd-improve-transform-bfb4hs` (composes)
+  - `processes:task-sd-improve-confirm-xn96bq` (composes)
+  - `processes:task-sd-improve-record-qrsswk` (composes)
+- Part of (parent): `processes:process-sd-improve-9wgvaf`
 - **Cohesion rationale**: Constituent work shares a single consolidation concern (signals, performance evidence, and effectiveness findings into one adaptation case), one input class (the sensed signals, monitored performance, and effectiveness findings), and one output (the consolidated adaptation case). Cohesion score 9/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
@@ -62,9 +69,16 @@ This directory hosts the canonical Activity record for `processes:activity-sd-im
 
 **Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
 
-**Roles and Responsibilities**: _(pending; backfill at EXT-04)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(pending; backfill at EXT-04)_
+- Owner: inherited from parent BP `processes:process-sd-improve-9wgvaf` (GOV-002 role-based; EXT-13 accountability model)
+- Cohesion accountability: Constituent work shares a single consolidation concern (signals, performance evidence, and effectiveness findings into … (assessed at deposition; CR-BP-32 §6)
+
+**Business Rules and Controls**
+
+- Controls inherited from parent BP `processes:process-sd-improve-9wgvaf` (scope and boundary are governed at BP level; CR-BP-32 activity-cohesion model)
+- Cohesion control rationale: Constituent work shares a single consolidation concern (signals, performance evidence, and effectiveness findings into …
+
 
 ## 7. Technical Metadata
 
@@ -73,4 +87,4 @@ This directory hosts the canonical Activity record for `processes:activity-sd-im
 - **Governing CR**: `CR-BP-55`
 - **Generator**: `scripts/generate_readmes.py` (CR-BP-94-EXT-07)
 - **Schema**: `dea/v1`
-- **Documentation Completeness**: sections marked `_(pending; backfill at EXT-04)_` indicate fields not yet present in the source YAML record. The structural validator (CR-BP-94-EXT-04) surfaces these as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.
+- **Documentation Completeness**: sections render from the record's own fields (CR-BP-224 derivations); the only standing deferrals are the L0 metrics register and L0 role assignment (tracked under CR-BP-94-EXT-24, due 2026-12-31). The structural validator (CR-BP-94-EXT-04) surfaces unfilled sections as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.

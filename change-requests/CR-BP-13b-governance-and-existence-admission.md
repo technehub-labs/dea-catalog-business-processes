@@ -1,6 +1,6 @@
 # CR-BP-13b: GovernanceAndExistence Admission Tranche
 
-**Status**: Proposed
+**Status**: Accepted (landed; status backfilled by CR-BP-223)
 **Admission authority**: yes
 **Layer**: L1 (Process Catalog)
 **Owner**: TechNeHub Labs

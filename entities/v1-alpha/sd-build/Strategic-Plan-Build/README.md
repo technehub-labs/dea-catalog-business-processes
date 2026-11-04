@@ -56,15 +56,30 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-b
 
 ## 5. Hierarchical Decomposition (Path Scheme)
 
-(decomposition relationships pending)
+<details>
+<summary>Expand to view decomposition details</summary>
+
+- Composes (children):
+  - `processes:process-sd-build-q4nf9g` (composes)
+  - `processes:process-sd-build-7n4prh` (composes)
+  - `processes:process-sd-build-9admqy` (composes)
+  - `processes:process-sd-build-2pkz5n` (composes)
+</details>
 
 ## 6. Operational Details
 
 **Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
 
-**Roles and Responsibilities**: _(pending; backfill at EXT-04)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(pending; backfill at EXT-04)_
+- Process Owner: Strategy & Direction Process Owner (confirmed; GOV-002 role-based)
+- Decomposes into 4 L2 Process(es) (per the record's `composes` block)
+
+**Business Rules and Controls**
+
+- Governing scope (includes; `scope.includes`): Strategic plan build; Strategic roadmap build; Strategic choices translation into initiatives; Resource allocation …
+- Adjacency exclusions (`scope.excludes`): Budget construction (finance-accounting x build); Capability build (owning domains); Strategic choices design (Design …
+
 
 ## 7. Technical Metadata
 
@@ -73,4 +88,4 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-b
 - **Governing CR**: `CR-BP-21a.1`
 - **Generator**: `scripts/generate_readmes.py` (CR-BP-94-EXT-07)
 - **Schema**: `dea/v1`
-- **Documentation Completeness**: sections marked `_(pending; backfill at EXT-04)_` indicate fields not yet present in the source YAML record. The structural validator (CR-BP-94-EXT-04) surfaces these as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.
+- **Documentation Completeness**: sections render from the record's own fields (CR-BP-224 derivations); the only standing deferrals are the L0 metrics register and L0 role assignment (tracked under CR-BP-94-EXT-24, due 2026-12-31). The structural validator (CR-BP-94-EXT-04) surfaces unfilled sections as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.

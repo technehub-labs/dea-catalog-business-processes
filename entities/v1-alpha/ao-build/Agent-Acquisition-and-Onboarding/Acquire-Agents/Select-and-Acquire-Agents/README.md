@@ -55,6 +55,13 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 <details>
 <summary>Expand to view decomposition details</summary>
 
+- Composes (children):
+  - `processes:task-ao-build-intake-2rzeqj` (composes)
+  - `processes:task-ao-build-verify-8dyuy4` (composes)
+  - `processes:task-ao-build-transform-g4vkyd` (composes)
+  - `processes:task-ao-build-confirm-7mmnjv` (composes)
+  - `processes:task-ao-build-record-2nmbeu` (composes)
+- Part of (parent): `processes:process-ao-build-w2qurd`
 - **Cohesion rationale**: Constituent work shares a single selection concern (agents selected and acquired substrate-neutrally), one input class (the provisioned agent capacity), and one output (the acquired agents). Cohesion score 8/9 assessed at deposition (CR-BP-32 §6).
 </details>
 
@@ -62,9 +69,16 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 
 **Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
 
-**Roles and Responsibilities**: _(pending; backfill at EXT-04)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(pending; backfill at EXT-04)_
+- Owner: inherited from parent BP `processes:process-ao-build-w2qurd` (GOV-002 role-based; EXT-13 accountability model)
+- Cohesion accountability: Constituent work shares a single selection concern (agents selected and acquired substrate-neutrally), one input class … (assessed at deposition; CR-BP-32 §6)
+
+**Business Rules and Controls**
+
+- Controls inherited from parent BP `processes:process-ao-build-w2qurd` (scope and boundary are governed at BP level; CR-BP-32 activity-cohesion model)
+- Cohesion control rationale: Constituent work shares a single selection concern (agents selected and acquired substrate-neutrally), one input class …
+
 
 ## 7. Technical Metadata
 
@@ -73,4 +87,4 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 - **Governing CR**: `CR-BP-56`
 - **Generator**: `scripts/generate_readmes.py` (CR-BP-94-EXT-07)
 - **Schema**: `dea/v1`
-- **Documentation Completeness**: sections marked `_(pending; backfill at EXT-04)_` indicate fields not yet present in the source YAML record. The structural validator (CR-BP-94-EXT-04) surfaces these as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.
+- **Documentation Completeness**: sections render from the record's own fields (CR-BP-224 derivations); the only standing deferrals are the L0 metrics register and L0 role assignment (tracked under CR-BP-94-EXT-24, due 2026-12-31). The structural validator (CR-BP-94-EXT-04) surfaces unfilled sections as DOC-004 advisory findings; completeness is validated under CR-BP-94-EXT-06.
