@@ -417,6 +417,43 @@ CLASSIFICATION: dict[str, dict[str, Any]] = {
         "reason": "The EXT-22 structural reconciliation rules are deterministic and "
                   "the population is the reconciled catalogue; the gate is blocking.",
     },
+    # CR-BP-232: gates [48]-[50] landed after the table was last refreshed
+    # (CR-BP-EXT-23 / CR-BP-94-EXT-24 / CR-BP-CE-0) without classification
+    # rows — the pre-existing C23-02 rot this CR repairs — and gate [51]
+    # is the two-layer documentation programme's new advisory gate.
+    "[48] Conformance Framework (CR-BP-EXT-23; CF-001..CF-051)": {
+        "class": "structural", "cr": "CR-BP-EXT-23",
+        "population": "the conformance framework meta-artefact (rule catalogue, "
+                      "traceability matrix, report, dashboard)",
+        "reason": "The framework's own self-check is deterministic over its "
+                  "version-controlled artefacts; a meta-artefact failure is an "
+                  "exception in the meta-framework, not a catalogue defect.",
+    },
+    "[49] Programme Closure (CR-BP-94-EXT-24; CG-001..CG-080)": {
+        "class": "structural", "cr": "CR-BP-94-EXT-24",
+        "population": "the programme-closure meta-artefact (closure matrix, "
+                      "catalogue baseline, governance registers)",
+        "reason": "The closure self-check is deterministic over its "
+                  "version-controlled artefacts; a meta-artefact failure is an "
+                  "exception in the meta-closure, not a catalogue defect.",
+    },
+    "[50] Completeness Profiles (CR-BP-CE-0; CE-000..CE-900)": {
+        "class": "content", "cr": "CR-BP-CE-0",
+        "population": "the full 3,723-record catalogue (per-level profiles)",
+        "reason": "The CE profiles are deterministic over record content and the "
+                  "blocking profile is 0 across all five level tranches (CR-BP-CE-RL "
+                  "flip); strict mode fails only on NEWLY introduced defects.",
+    },
+    "[51] Human Readability (CR-BP-232; HUM-001..007)": {
+        "class": "content", "cr": "CR-BP-232",
+        "population": "the provided plain-language layer of all 3,723 records "
+                      "(CR-BP-230 fields)",
+        "reason": "The HUM rules are deterministic over record content; the "
+                  "population is unbackfilled until the CR-BP-233..236 waves "
+                  "(all findings advisory), and the gate flips blocking at wave "
+                  "closure CR-BP-236 per the CR-BP-CE-RL posture precedent. "
+                  "Semantic quality stays owned by the BP-SEM/ECF gates.",
+    },
 }
 
 
@@ -438,6 +475,7 @@ GATE_MANIFEST = {
     "[45] L3 Activity Backfill (CR-BP-94-EXT-20; L3-001..L3-014)": "l3-backfill-manifest.json",
     "[46] L4 Task Backfill (CR-BP-94-EXT-21; L4-001..L4-014)": "l4-backfill-manifest.json",
     "[47] Decomposition Reconciliation (CR-BP-94-EXT-22; R22-01..R22-12)": "ext22-manifest.json",
+    "[51] Human Readability (CR-BP-232; HUM-001..007)": "human-readability-report.json",  # CR-BP-232
 }
 
 

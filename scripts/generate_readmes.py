@@ -10,26 +10,39 @@ README follows the documentation profile required by the record's
 PROFILE_REGISTRY.
 
 Sections (per the consolidated design; see change-requests/CR-BP-94-EXT-07;
-numbering per CR-BP-221 — each profile numbers its sections 1..N by position):
+numbering per CR-BP-221 — each profile numbers its sections 1..N by position).
+CR-BP-231 adds the two-layer layout: the four Part I "Human-Readable
+Interpretation (provided)" sections (rendered from the CR-BP-230
+plain-language record fields; standing pointer when unbackfilled) precede
+the Part II "Canonical Record (CI generated)" sections, which are the
+unchanged CR-BP-94-EXT-07 consolidated set:
 
-  L0 ProcessContext (8 sections):
-    1. Header and Identity Table
-    2. Executive Summary / Intent
-    3. Governance and Provenance
-    4. Behavioral Boundaries (Cell Charter)
-    5. Hierarchical Decomposition (Path Scheme; collapsible)
-    6. Properties and Relationships
-    7. Operational, Control and Metrics Details (L0-only metrics table)
-    8. Technical Metadata
+  L0 ProcessContext (12 sections):
+    1. In a Nutshell (provided)
+    2. Why It Matters (provided)
+    3. Where You'd Encounter It (provided)
+    4. Worked Example (provided)
+    5. Header and Identity Table
+    6. Executive Summary / Intent
+    7. Governance and Provenance
+    8. Behavioral Boundaries (Cell Charter)
+    9. Hierarchical Decomposition (Path Scheme; collapsible)
+    10. Properties and Relationships
+    11. Operational, Control and Metrics Details (L0-only metrics table)
+    12. Technical Metadata
 
-  L1-L4 record (7 sections):
-    1. Header and Identity Table
-    2. Intent and Definition
-    3. Governance and Provenance (lighter)
-    4. Properties and Relationships
-    5. Hierarchical Decomposition
-    6. Operational Details (no metrics at L1-L4)
-    7. Technical Metadata
+  L1-L4 record (11 sections):
+    1. In a Nutshell (provided)
+    2. Why It Matters (provided)
+    3. Where You'd Encounter It (provided)
+    4. Worked Example (provided)
+    5. Header and Identity Table
+    6. Intent and Definition
+    7. Governance and Provenance (lighter)
+    8. Properties and Relationships
+    9. Hierarchical Decomposition
+    10. Operational Details (no metrics at L1-L4)
+    11. Technical Metadata
 
 Content is drawn from each record's YAML fields. Sections that have no
 data in the source record are populated with a deterministic placeholder
@@ -64,10 +77,15 @@ CONTEXTS_ROOT = REPO_ROOT / "contexts" / "v1-alpha"
 
 
 # Required section ids per (type, level) profile. CR-BP-94-EXT-07
-# consolidated design. Mirrors PROFILE_REGISTRY in
-# scripts/check_documentation_profile.py.
+# consolidated design; CR-BP-231 two-layer layout (the four Part I
+# "provided" sections precede the Part II "generated" set). Mirrors
+# PROFILE_REGISTRY in scripts/check_documentation_profile.py.
 PROFILE_SECTIONS: dict[tuple[str, str], list[str]] = {
     ("ProcessContext", "L0"): [
+        "provided-nutshell",
+        "provided-why-it-matters",
+        "provided-practical-context",
+        "provided-worked-example",
         "header-identity-table",
         "executive-summary",
         "governance-provenance",
@@ -78,6 +96,10 @@ PROFILE_SECTIONS: dict[tuple[str, str], list[str]] = {
         "technical-metadata",
     ],
     ("ProcessGroup", "L1"): [
+        "provided-nutshell",
+        "provided-why-it-matters",
+        "provided-practical-context",
+        "provided-worked-example",
         "header-identity-table",
         "intent-definition",
         "governance-provenance",
@@ -87,6 +109,10 @@ PROFILE_SECTIONS: dict[tuple[str, str], list[str]] = {
         "technical-metadata",
     ],
     ("Process", "L2"): [
+        "provided-nutshell",
+        "provided-why-it-matters",
+        "provided-practical-context",
+        "provided-worked-example",
         "header-identity-table",
         "intent-definition",
         "governance-provenance",
@@ -96,6 +122,10 @@ PROFILE_SECTIONS: dict[tuple[str, str], list[str]] = {
         "technical-metadata",
     ],
     ("Activity", "L3"): [
+        "provided-nutshell",
+        "provided-why-it-matters",
+        "provided-practical-context",
+        "provided-worked-example",
         "header-identity-table",
         "intent-definition",
         "governance-provenance",
@@ -105,6 +135,10 @@ PROFILE_SECTIONS: dict[tuple[str, str], list[str]] = {
         "technical-metadata",
     ],
     ("Task", "L4"): [
+        "provided-nutshell",
+        "provided-why-it-matters",
+        "provided-practical-context",
+        "provided-worked-example",
         "header-identity-table",
         "intent-definition",
         "governance-provenance",
@@ -126,16 +160,20 @@ PROFILE_SECTIONS: dict[tuple[str, str], list[str]] = {
 # EXPECTED_HEADINGS regexes match these titles with an optional numeric
 # prefix (case-insensitive on the heading text).
 SECTION_TITLES: dict[str, str] = {
-    "header-identity-table": "Header and Identity Table",
-    "executive-summary": "Executive Summary / Intent",
-    "intent-definition": "Intent and Definition",
-    "governance-provenance": "Governance and Provenance",
-    "behavioral-boundaries": "Behavioral Boundaries (Cell Charter)",
-    "hierarchical-decomposition": "Hierarchical Decomposition (Path Scheme)",
-    "properties-relationships": "Properties and Relationships",
-    "operational-metrics": "Operational, Control and Metrics Details",
-    "operational-details": "Operational Details",
-    "technical-metadata": "Technical Metadata",
+    "provided-nutshell": "In a Nutshell (provided)",
+    "provided-why-it-matters": "Why It Matters (provided)",
+    "provided-practical-context": "Where You'd Encounter It (provided)",
+    "provided-worked-example": "Worked Example (provided)",
+    "header-identity-table": "Header and Identity Table (generated)",
+    "executive-summary": "Executive Summary / Intent (generated)",
+    "intent-definition": "Intent and Definition (generated)",
+    "governance-provenance": "Governance and Provenance (generated)",
+    "behavioral-boundaries": "Behavioral Boundaries (Cell Charter) (generated)",
+    "hierarchical-decomposition": "Hierarchical Decomposition (Path Scheme) (generated)",
+    "properties-relationships": "Properties and Relationships (generated)",
+    "operational-metrics": "Operational, Control and Metrics Details (generated)",
+    "operational-details": "Operational Details (generated)",
+    "technical-metadata": "Technical Metadata (generated)",
 }
 
 
@@ -187,6 +225,133 @@ def _truncate_cell(value: str, limit: int = 120) -> str:
 # CR-BP-94-EXT-24 closure window instead.
 STANDING_ITEM = ("_(standing item: tracked in the documentation improvement "
                  "backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_")
+
+# CR-BP-231: the Part I (provided) sections render from the CR-BP-230
+# plain-language record fields. Until a record is backfilled by the
+# two-layer remediation waves (CR-BP-233..236), each Part I section
+# renders this standing pointer — the CR-BP-224 pattern (a named,
+# tracked deferral; never a `{{placeholder}}` token).
+PLAIN_LANGUAGE_STANDING_ITEM = (
+    "_(plain-language narrative to be authored in the two-layer "
+    "documentation waves, CR-BP-233..236)_"
+)
+
+
+# Human-readable level labels (CR-BP-231 identity card).
+LEVEL_LABELS: dict[str, str] = {
+    "L0": "Process Context",
+    "L1": "Process Group",
+    "L2": "Business Process",
+    "L3": "Activity",
+    "L4": "Task",
+}
+
+
+# -----------------------------------------------------------------------------
+# Name index (CR-BP-231). The Part I identity card renders the parent
+# entity's business name, not just its canonical id, so a human reader
+# can recognise the chain without decoding ids. Built lazily from the
+# canonical record tree; cached per entities root (check_readme_consistency
+# patches ENTITIES_ROOT for fixture trees, so the cache keys on it).
+# -----------------------------------------------------------------------------
+
+_NAME_INDEX_CACHE: dict[str, dict[str, str]] = {}
+
+
+def build_name_index() -> dict[str, str]:
+    """Map canonical id -> record name, plus cell slug -> L0 context name
+    (stored under the pseudo-key `cell:<slug>`). No invention: every
+    name comes verbatim from a record's own `name` field.
+    """
+    cache_key = str(ENTITIES_ROOT)
+    cached = _NAME_INDEX_CACHE.get(cache_key)
+    if cached is not None:
+        return cached
+    index: dict[str, str] = {}
+    for path in resolve_record_paths():
+        record = load_record(path)
+        if record is None:
+            continue
+        rid = record.get("id")
+        name = record.get("name")
+        if isinstance(rid, str) and isinstance(name, str):
+            index[rid] = name
+        if isinstance(rid, str) and rid.startswith("processes:pc-"):
+            cell = _cell_of_id(rid)
+            if cell and isinstance(name, str):
+                index[f"cell:{cell}"] = name
+    _NAME_INDEX_CACHE[cache_key] = index
+    return index
+
+
+def _parent_link(record: dict, level: str) -> tuple[str, str] | None:
+    """Return (parent_id, parent_name_or_empty) for the record's
+    single structural parent, per level:
+      L4 -> belongs_to_activity; L3 -> belongs_to_business_process;
+      L2/L1 -> part_of (first) or the process_context cell.
+    """
+    parent_id = None
+    if level == "L4":
+        parent_id = record.get("belongs_to_activity")
+    elif level == "L3":
+        parent_id = record.get("belongs_to_business_process")
+    else:
+        part_of = record.get("part_of")
+        if isinstance(part_of, list) and part_of:
+            parent_id = part_of[0]
+        elif isinstance(part_of, str):
+            parent_id = part_of
+        if not parent_id:
+            parent_id = record.get("process_context")
+    if not isinstance(parent_id, str) or not parent_id:
+        return None
+    index = build_name_index()
+    parent_name = index.get(parent_id, "")
+    return parent_id, parent_name
+
+
+def _identity_card(record: dict, level: str) -> str:
+    """Part I section 1 opening: the plain-sentence identity card
+    (CR-BP-230 S1 / owner directive 2026-11-05). Name, canonical ID,
+    element type/level, domain, status and the parent chain — all in
+    human-readable form, derived mechanically from the record's own
+    fields and the record tree (no invention).
+    """
+    rid = record.get("id", "unknown")
+    cell = _cell_of_id(rid)
+    domain = _domain_of_cell(cell) or "?"
+    stage = _stage_of_cell(cell) or "?"
+    label = LEVEL_LABELS.get(level, level)
+    status = record.get("lifecycle_status", "candidate")
+    status_text = STATUS_EMOJI.get(status, status)
+    name = record.get("name", "(unnamed)")
+
+    index = build_name_index()
+    cell_name = index.get(f"cell:{cell}", "") if cell else ""
+
+    sentence = (
+        f"This is a **{label}** (level {level}), named **{name}**, "
+        f"currently **{status_text}**."
+    )
+    context_bits: list[str] = []
+    if cell_name and cell_name != name and level != "L0":
+        context_bits.append(f"part of the **{cell_name}** process context")
+    context_bits.append(f"domain `{domain}`, lifecycle stage {stage.title()}")
+    sentence += " It is " + ", ".join(context_bits) + "."
+    if level == "L0":
+        sentence += f" Its canonical ID is `{rid}`."
+    else:
+        parent = _parent_link(record, level)
+        if parent:
+            parent_id, parent_name = parent
+            if parent_name and parent_name != name:
+                sentence += (
+                    f" It belongs to **{parent_name}** (`{parent_id}`)."
+                )
+            else:
+                sentence += f" It belongs to `{parent_id}`."
+        sentence += f" Its canonical ID is `{rid}`."
+    return sentence
 
 
 def _owner_line(owner) -> str | None:
@@ -507,6 +672,82 @@ def resolve_readme_path(record_yaml_path: Path, record_id: str) -> Path:
 # -----------------------------------------------------------------------------
 # Section renderers (CR-BP-94-EXT-07 consolidated design)
 # -----------------------------------------------------------------------------
+
+
+def _provided_nutshell(record: dict, level: str) -> str:
+    """Part I section 1: In a Nutshell (provided).
+
+    Opens with the derived identity card (plain-sentence name / canonical
+    ID / type-level / domain / status / parent chain), then renders the
+    record's `plain_language_description` — the everyday explanation.
+    Standing pointer when the record is not yet backfilled (CR-BP-231).
+    """
+    parts = [_identity_card(record, level)]
+    desc = record.get("plain_language_description")
+    parts.append("")
+    if isinstance(desc, str) and desc.strip():
+        parts.append(desc.strip())
+    else:
+        parts.append(PLAIN_LANGUAGE_STANDING_ITEM)
+    return "\n".join(parts)
+
+
+def _provided_why_it_matters(record: dict, level: str) -> str:
+    """Part I section 2: Why It Matters (provided).
+
+    Renders `business_purpose` — why the entity exists and the business
+    significance it carries. Standing pointer when unbackfilled.
+    """
+    purpose = record.get("business_purpose")
+    if isinstance(purpose, str) and purpose.strip():
+        return purpose.strip()
+    return PLAIN_LANGUAGE_STANDING_ITEM
+
+
+def _provided_practical_context(record: dict, level: str) -> str:
+    """Part I section 3: Where You'd Encounter It (provided).
+
+    Renders `practical_context` — when and where the work is encountered
+    in everyday operations. Standing pointer when unbackfilled.
+    """
+    context = record.get("practical_context")
+    if isinstance(context, str) and context.strip():
+        return context.strip()
+    return PLAIN_LANGUAGE_STANDING_ITEM
+
+
+# CR-BP-231: the human-readable agent-type label for the worked example.
+AGENT_TYPE_LABELS: dict[str, str] = {
+    "human": "carried out by a person",
+    "non-human": "carried out by an automated agent (system)",
+    "mixed": "carried out by a person working with a system",
+}
+
+
+def _provided_worked_example(record: dict, level: str) -> str:
+    """Part I section 4: Worked Example (provided).
+
+    Renders `worked_example` ({agent_type, narrative}) — an
+    office-relatable worked example of the entity being done by an
+    agent of type human or non-human (CR-BP-230 S2). At L4 with no
+    authored example, the agent type defaults from the record's
+    `responsibility` field so the standing pointer states the default
+    honestly; all other cases render the plain standing pointer.
+    """
+    we = record.get("worked_example")
+    if isinstance(we, dict):
+        agent_type = we.get("agent_type")
+        narrative = we.get("narrative")
+        if agent_type in AGENT_TYPE_LABELS and isinstance(narrative, str) and narrative.strip():
+            return (f"*Example ({AGENT_TYPE_LABELS[agent_type]}):* "
+                    + narrative.strip())
+    if level == "L4":
+        resp = record.get("responsibility")
+        if isinstance(resp, str) and resp.strip():
+            return (f"_(worked example to be authored in the two-layer "
+                    f"documentation waves, CR-BP-233..236; the task's "
+                    f"`responsibility` field reads: {resp.strip()})_")
+    return PLAIN_LANGUAGE_STANDING_ITEM
 
 
 def _header_identity_table(record: dict, level: str) -> str:
@@ -1199,8 +1440,16 @@ def _technical_metadata(record: dict, level: str) -> str:
     parts.append(f"- **Source YAML**: record YAML in the same directory as this README")
     parts.append(f"- **Record version**: {version}")
     parts.append(f"- **Governing CR**: `{established}`")
-    parts.append("- **Generator**: `scripts/generate_readmes.py` (CR-BP-94-EXT-07)")
+    parts.append("- **Generator**: `scripts/generate_readmes.py` "
+                 "(CR-BP-94-EXT-07; profile v3 two-layer layout, CR-BP-231)")
     parts.append("- **Schema**: `dea/v1`")
+    parts.append(
+        "- **Documentation layers**: sections 1–4 are the Part I "
+        "Human-Readable Interpretation (provided; CR-BP-230 fields, "
+        "backfilled in the CR-BP-233..236 waves); the remaining sections "
+        "are the Part II Canonical Record (CI generated; RDM-001 "
+        "byte-identity with the generator)."
+    )
     parts.append(
         "- **Documentation Completeness**: sections render from the record's own "
         "fields (CR-BP-224 derivations); the only standing deferrals are the L0 "
@@ -1221,6 +1470,14 @@ def render_section(
 
     CR-BP-94-EXT-07: routes to the consolidated-design renderers.
     """
+    if section_id == "provided-nutshell":
+        return _provided_nutshell(record, level)
+    if section_id == "provided-why-it-matters":
+        return _provided_why_it_matters(record, level)
+    if section_id == "provided-practical-context":
+        return _provided_practical_context(record, level)
+    if section_id == "provided-worked-example":
+        return _provided_worked_example(record, level)
     if section_id == "header-identity-table":
         return _header_identity_table(record, level)
     if section_id == "executive-summary":
@@ -1262,11 +1519,17 @@ def generate_readme(record: dict, level: str) -> str:
     out.append("")
     out.append(
         f"This directory hosts the canonical {rtype} record for `{rid}`. "
-        f"This README is generated by `scripts/generate_readmes.py` "
-        f"(CR-BP-94-EXT-07) from the record's YAML fields per the "
-        f"documentation profile required at the {level} level. The "
-        f"profile is one of the consolidated designs from CR-BP-94-EXT-07 "
-        f"(supersedes CR-BP-94-EXT-02's 13-section template)."
+        f"This README follows the two-layer documentation layout "
+        f"(CR-BP-230/CR-BP-231): the first sections are the Part I "
+        f"Human-Readable Interpretation, rendered from the record's "
+        f"provided plain-language fields (or a tracked standing pointer "
+        f"until the CR-BP-233..236 waves backfill them); the remaining "
+        f"sections are the Part II Canonical Record, generated by "
+        f"`scripts/generate_readmes.py` (CR-BP-94-EXT-07 profile v3) "
+        f"from the record's YAML fields per the documentation profile "
+        f"required at the {level} level. The generated set is one of "
+        f"the consolidated designs from CR-BP-94-EXT-07 (supersedes "
+        f"CR-BP-94-EXT-02's 13-section template)."
     )
     out.append("")
     out.append(f"**Name**: {name}")

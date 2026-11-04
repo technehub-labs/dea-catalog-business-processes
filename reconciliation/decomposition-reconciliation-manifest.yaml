@@ -1,5 +1,5 @@
 manifest_schema_version: 1
-generated_at: '2026-11-04'
+generated_at: '2026-11-05'
 generator: scripts/check_decomposition_reconciliation.py
 parent_cr: CR-BP-94-EXT-05
 catalog_root: /Volumes/512GBORICO/Developer/OpenDEA/dea-catalog-business-processes

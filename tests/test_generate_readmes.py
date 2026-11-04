@@ -222,7 +222,7 @@ def test_header_identity_table_renders_table():
     }
     out = generate_readme(record, "L0")
     # The header section is rendered.
-    assert "## 1. Header and Identity Table" in out
+    assert "## 5. Header and Identity Table (generated)" in out
     # The table has 6 attribute rows.
     assert "| **Domain** |" in out
     assert "| **Lifecycle Stage** |" in out
@@ -252,7 +252,7 @@ def test_governance_provenance_renders_change_history():
     }
     out = generate_readme(record, "L0")
     # The governance section is rendered.
-    assert "## 3. Governance and Provenance" in out
+    assert "## 7. Governance and Provenance (generated)" in out
     # Admission score is shown.
     assert "Admission Score" in out
     # Change history table is shown.
@@ -276,7 +276,7 @@ def test_behavioral_boundaries_renders_three_row_table():
     }
     out = generate_readme(record, "L0")
     # Section header is present.
-    assert "## 4. Behavioral Boundaries" in out
+    assert "## 8. Behavioral Boundaries (Cell Charter) (generated)" in out
     # Three scope-type rows.
     assert "In Scope" in out
     assert "Out of Scope" in out
@@ -299,7 +299,7 @@ def test_hierarchical_decomposition_uses_details_block():
     }
     out = generate_readme(record, "L0")
     # Section header is present.
-    assert "## 5. Hierarchical Decomposition" in out
+    assert "## 9. Hierarchical Decomposition (Path Scheme) (generated)" in out
     # <details> HTML block is used.
     assert "<details>" in out
     assert "<summary>" in out
@@ -324,7 +324,7 @@ def test_properties_relationships_renders_both_tables():
     }
     out = generate_readme(record, "L2")
     # Section header is present.
-    assert "## 4. Properties and Relationships" in out
+    assert "## 8. Properties and Relationships (generated)" in out
     # Properties table is rendered.
     assert "**Properties**" in out
     assert "| Name | Type | Required | Description |" in out
