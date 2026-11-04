@@ -78,3 +78,28 @@ links:
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-94-EXT-24 L0 register execution (2026-11-04): L0 governance + metrics register (derived; see
+# scripts/author_ext24_l0_register.py and
+# reconciliation/closure/ext24-l0-register-execution.json).
+governance:
+  roles:
+  - 'Finance & Accounting Process Owner (GOV-002 role-based; domain-level owner for the Finance & Accounting contexts)'
+  provenance:
+    source: change-requests/CR-BP-GS-1-governance-sweep.md
+    execution: CR-BP-94-EXT-24 (2026-11-04; ahead of the 2026-12-31 window)
+    review_due: '2026-12-31'
+metrics:
+  performance:
+  - name: 'Build effectiveness — Finance function is stood up and staffed.'
+    target: 'Capability operational at the Activate gate'
+    frequency: 'per build cycle'
+  risk:
+  - name: 'Adjacent-context leakage — fa-Build exclusions: Financial planning design (Design stage; adjacent context)'
+    target: 'none observed at governance review'
+    frequency: 'quarterly'
+  compliance:
+  - name: 'Charter and regulatory evidence currency — Finance & Accounting x Build'
+    target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
+    frequency: 'semi-annual'

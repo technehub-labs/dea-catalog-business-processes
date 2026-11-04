@@ -167,6 +167,8 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `established_at` | string | no | 2026-09-07 |
 | `change_history` | array[3] | no | array of 3 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `governance` | object | no | object: roles, provenance |
+| `metrics` | object | no | object: performance, risk, compliance |
 
 **Relationships**
 
@@ -192,13 +194,25 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 - Budget construction (finance-accounting x build)
 - Capability build (owning domains)
 
-**Roles and Responsibilities**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+- Strategy & Direction Process Owner (GOV-002 role-based; domain-level owner for the Strategy & Direction contexts)
+
+**Business Rules and Controls**
+
+- Governing charter concern (enterprise): Strategy & Direction: the construction of the strategic plan and roadmap.
+- Lifecycle control scope (charter): Build: translating strategic choices into a plan, roadmap, and initiative portfolio.
+- Governing outcomes (4; the compliance baseline for this context): Strategic plan is built and versioned.; Strategic roadmap is built and committed.; Strategic choices are translated …
 
 **Target Metrics and Indicators**
 
-_(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+Standardised metrics required to measure the health, efficiency, and compliance of this ProcessContext. Authored under the EXT-04 workstream; completeness validated under EXT-06.
+
+| Category | Metric / Indicator Name | Target / Threshold | Measurement Frequency |
+| :--- | :--- | :--- | :--- |
+| **KPI (Performance)** | Build effectiveness — Strategic plan is built and versioned. | Capability operational at the Activate gate | per build cycle |
+| **KRI (Risk)** | Adjacent-context leakage — sd-Build exclusions: Strategic option design (Design stage; adjacent context) | none observed at governance review | quarterly |
+| **KCI (Compliance)** | Charter and regulatory evidence currency — Strategy & Direction x Build | evidence refreshed per governance cadence; owner confirmation due 2026-12-31 | semi-annual |
 
 ## 8. Technical Metadata
 

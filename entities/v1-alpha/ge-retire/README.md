@@ -96,6 +96,8 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions … |
 | `process_groups` | array[1] | no | array of 1 item(s) |
 | `change_history` | array[1] | no | array of 1 item(s) |
+| `governance` | object | no | object: roles, provenance |
+| `metrics` | object | no | object: performance, risk, compliance |
 
 **Relationships**
 
@@ -123,13 +125,25 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 - Workforce wind-down under statutory mass-layoff thresholds (AgencyAndOrganization x Retire; CR-BP-73)
 - Regulated entity run-off (FinanceAndAccounting x Retire; CR-BP-75)
 
-**Roles and Responsibilities**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+- Governance & Existence Process Owner (GOV-002 role-based; domain-level owner for the Governance & Existence contexts)
+
+**Business Rules and Controls**
+
+- Governing charter concern (enterprise): Governance & Existence: the wind-down of governance bodies, policy regimes, mandates, and constitutional instruments …
+- Lifecycle control scope (charter): Retire: governance unwind of an entity triggered by a regulator or court order.
+- Governing outcomes (5; the compliance baseline for this context): The governance regime is wound down under the controlling regulator or court authority.; Policy instruments are sunset …
 
 **Target Metrics and Indicators**
 
-_(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+Standardised metrics required to measure the health, efficiency, and compliance of this ProcessContext. Authored under the EXT-04 workstream; completeness validated under EXT-06.
+
+| Category | Metric / Indicator Name | Target / Threshold | Measurement Frequency |
+| :--- | :--- | :--- | :--- |
+| **KPI (Performance)** | Retire effectiveness — The governance regime is wound down under the controlling regulator or court authority. | Orderly wind-down; records preserved per retention policy | per retirement |
+| **KRI (Risk)** | Adjacent-context leakage — ge-Retire exclusions: Voluntary governance sunset absent regulator or court mandate (GovernanceAndExistence x … | none observed at governance review | quarterly |
+| **KCI (Compliance)** | Charter and regulatory evidence currency — Governance & Existence x Retire | evidence refreshed per governance cadence; owner confirmation due 2026-12-31 | semi-annual |
 
 ## 8. Technical Metadata
 

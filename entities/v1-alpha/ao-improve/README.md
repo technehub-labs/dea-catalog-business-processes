@@ -194,6 +194,8 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `established_at` | string | no | 2026-09-07 |
 | `change_history` | array[3] | no | array of 3 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `governance` | object | no | object: roles, provenance |
+| `metrics` | object | no | object: performance, risk, compliance |
 
 **Relationships**
 
@@ -219,13 +221,25 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 - Strategic adaptation (strategy-direction x improve; adjacent domain)
 - Capability improvement of receiving domains (owning domains)
 
-**Roles and Responsibilities**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+- Agency & Organization Process Owner (GOV-002 role-based; domain-level owner for the Agency & Organization contexts)
+
+**Business Rules and Controls**
+
+- Governing charter concern (enterprise): Agency & Organization: the improvement of the enterprise's agents and organization.
+- Lifecycle control scope (charter): Improve: improving engagement, capability, structure, and agent performance.
+- Governing outcomes (4; the compliance baseline for this context): Engagement and alignment review is conducted substrate-neutrally.; Capability gap analysis is conducted.; Structure …
 
 **Target Metrics and Indicators**
 
-_(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+Standardised metrics required to measure the health, efficiency, and compliance of this ProcessContext. Authored under the EXT-04 workstream; completeness validated under EXT-06.
+
+| Category | Metric / Indicator Name | Target / Threshold | Measurement Frequency |
+| :--- | :--- | :--- | :--- |
+| **KPI (Performance)** | Improve effectiveness — Engagement and alignment review is conducted substrate-neutrally. | Improvement cycle executed; findings dispositioned | per improvement cycle |
+| **KRI (Risk)** | Adjacent-context leakage — ao-Improve exclusions: Agent performance operation (Operate stage; adjacent context) | none observed at governance review | quarterly |
+| **KCI (Compliance)** | Charter and regulatory evidence currency — Agency & Organization x Improve | evidence refreshed per governance cadence; owner confirmation due 2026-12-31 | semi-annual |
 
 ## 8. Technical Metadata
 

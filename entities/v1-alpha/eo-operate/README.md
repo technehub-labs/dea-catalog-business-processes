@@ -299,6 +299,8 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `established_at` | string | no | 2026-09-08 |
 | `change_history` | array[3] | no | array of 3 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `governance` | object | no | object: roles, provenance |
+| `metrics` | object | no | object: performance, risk, compliance |
 
 **Relationships**
 
@@ -334,13 +336,25 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 - Product catalogue operation (product-value x operate; adjacent domain)
 - Agent performance operation (agency-organization x operate; adjacent domain)
 
-**Roles and Responsibilities**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+- Enablement & Operations Process Owner (GOV-002 role-based; domain-level owner for the Enablement & Operations contexts)
+
+**Business Rules and Controls**
+
+- Governing charter concern (enterprise): Enablement & Operations: the steady-state operation of the enterprise's execution engine.
+- Lifecycle control scope (charter): Operate: operating production, service delivery, logistics, technology platforms, facilities, assets, and the …
+- Governing outcomes (6; the compliance baseline for this context): Production lines are run to plan.; Service delivery is operated against committed levels.; Logistics, warehouse, and …
 
 **Target Metrics and Indicators**
 
-_(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+Standardised metrics required to measure the health, efficiency, and compliance of this ProcessContext. Authored under the EXT-04 workstream; completeness validated under EXT-06.
+
+| Category | Metric / Indicator Name | Target / Threshold | Measurement Frequency |
+| :--- | :--- | :--- | :--- |
+| **KPI (Performance)** | Operate effectiveness — Production lines are run to plan. | Continuous operation within charter scope | continuous; quarterly review |
+| **KRI (Risk)** | Adjacent-context leakage — eo-Operate exclusions: Operations build (Build stage; adjacent context) | none observed at governance review | quarterly |
+| **KCI (Compliance)** | Charter and regulatory evidence currency — Enablement & Operations x Operate | evidence refreshed per governance cadence; owner confirmation due 2026-12-31 | semi-annual |
 
 ## 8. Technical Metadata
 

@@ -1,0 +1,41 @@
+{
+  "execution_schema_version": "1",
+  "executed_at": "2026-11-04",
+  "parent_cr": "CR-BP-94-EXT-24",
+  "trigger": "user directive 2026-11-04: act on EXT-24 and deliver it ahead of schedule",
+  "window_due": "2026-12-31",
+  "delivered": {
+    "l0_role_assignment": {
+      "records": 49,
+      "derivation": "domain Process Owner role extracted from the domain's own L1 ProcessGroup owner.value blocks (GOV-002-confirmed, CR-BP-GS-1 manual provenance); appended as governance.roles + governance.provenance with review_due 2026-12-31",
+      "authoring_script": "scripts/author_ext24_l0_register.py"
+    },
+    "l0_metrics_register": {
+      "records": 49,
+      "entries": 147,
+      "shape": "KPI (performance) / KRI (risk) / KCI (compliance) per CR-BP-120 metrics shape",
+      "derivation": {
+        "kpi": "lifecycle-stage effectiveness standard grounded in the cell's own outcomes[0] (cited in the metric name); directional stage target, stage-standard frequency — no invented numbers",
+        "kri": "adjacent-context leakage risk grounded in the cell's own scope.excludes[0] (cited in the metric name)",
+        "kci": "charter/regulatory evidence currency for the domain x stage coordinate"
+      }
+    },
+    "schema_extension": "schemas/entities/process-context.schema.json gained governance + metrics properties (additionalProperties: false required the extension; EXT-10 schema-alignment precedent)",
+    "generator_extension": "generate_readmes.py gained L0 charter-derived rules and L2 parent-scope/decomposition-boundary rules derivations (CR-BP-224 method), extinguishing the last standing-pointer classes",
+    "readme_regenerated": 3723,
+    "standing_pointers_remaining": 0,
+    "doc019_advisories_before": 49,
+    "doc019_advisories_after": 0
+  },
+  "governed_residuals_unchanged": {
+    "note": "EXT-24 governs residuals; it does not zero them. The closure machinery's registers are untouched and remain authoritative.",
+    "residual_gap_register": "reconciliation/closure/residual-gap-register.json (12 governed gaps)",
+    "improvement_backlog": "reconciliation/closure/improvement-backlog.json (12 items)",
+    "deferred_work_register": "reconciliation/closure/deferred-work-register.json",
+    "exception_register": "reconciliation/closure/exception-register.json"
+  },
+  "next_governance_acts": {
+    "owner_confirmation": "each PC's governance.provenance carries review_due 2026-12-31; the EXT-24 review confirms (or corrects) the derived roles and directional targets",
+    "cadence": "docs/catalogue-governance.md (this PR) defines the recurring review/refresh cycles"
+  }
+}

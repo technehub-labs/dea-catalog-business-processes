@@ -248,7 +248,25 @@ def _rules_lines(record: dict, level: str) -> list[str]:
     is derivable.
     """
     lines: list[str] = []
-    if level == "L4":
+    if level == "L0":
+        # EXT-24 (2026-11-04): the cell charter IS the governing control
+        # context at L0 — render its concern statements as the rules basis.
+        charter = record.get("cell_charter") or {}
+        if isinstance(charter, dict):
+            concern = charter.get("enterprise_concern")
+            if concern:
+                lines.append("- Governing charter concern (enterprise): "
+                             + _truncate_cell(concern))
+            lifecycle = charter.get("lifecycle_concern")
+            if lifecycle:
+                lines.append("- Lifecycle control scope (charter): "
+                             + _truncate_cell(lifecycle))
+            outcomes = record.get("outcomes") or []
+            if outcomes:
+                lines.append(f"- Governing outcomes ({len(outcomes)}; the "
+                             "compliance baseline for this context): "
+                             + _truncate_cell("; ".join(map(str, outcomes))))
+    elif level == "L4":
         boundary = record.get("boundary") or {}
         if isinstance(boundary, dict):
             inc = boundary.get("inclusions") or []
@@ -281,6 +299,23 @@ def _rules_lines(record: dict, level: str) -> list[str]:
             if exc:
                 lines.append("- Adjacency exclusions (`process_scope.excludes`): "
                              + _truncate_cell("; ".join(map(str, exc))))
+        if not lines:
+            # EXT-24 (2026-11-04): mv1-era L2 records carry no scope block;
+            # their control context is the parent group's governing scope
+            # plus the decomposition boundary (cohesion at L3, work bounds
+            # at L4). Both are structural facts of the record's edges.
+            parent = record.get("part_of")
+            if isinstance(parent, list):
+                parent = parent[0] if parent else None
+            if parent:
+                lines.append(f"- Controls inherited from parent Process Group `{parent}` "
+                             "(governing scope and adjacency at L1; GOV-002 owner)")
+            else:
+                lines.append("- Controls governed at the Process Group level "
+                             "(the record's `process_context` cell charter; CR-BP-02)")
+            lines.append("- Work bounds governed by the decomposition: cohesion "
+                         "controls at L3 (CR-BP-32 §6), boundary inclusions/exclusions "
+                         "at L4 (CR-BP-102) — see children")
     elif level == "L3":
         parent = record.get("belongs_to_business_process")
         cohesion = record.get("cohesion_rationale")

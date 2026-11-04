@@ -167,6 +167,8 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `established_at` | string | no | 2026-09-07 |
 | `change_history` | array[3] | no | array of 3 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `governance` | object | no | object: roles, provenance |
+| `metrics` | object | no | object: performance, risk, compliance |
 
 **Relationships**
 
@@ -192,13 +194,25 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 - Initiative execution (enablement-operations x operate)
 - Strategic adaptation (Improve stage; adjacent context)
 
-**Roles and Responsibilities**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+- Strategy & Direction Process Owner (GOV-002 role-based; domain-level owner for the Strategy & Direction contexts)
+
+**Business Rules and Controls**
+
+- Governing charter concern (enterprise): Strategy & Direction: the steady-state steering of strategic performance.
+- Lifecycle control scope (charter): Operate: monitoring strategic performance and operating the review cycle.
+- Governing outcomes (4; the compliance baseline for this context): Strategic performance is monitored against the plan.; Environmental signals are sensed and contextualised.; Initiative …
 
 **Target Metrics and Indicators**
 
-_(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+Standardised metrics required to measure the health, efficiency, and compliance of this ProcessContext. Authored under the EXT-04 workstream; completeness validated under EXT-06.
+
+| Category | Metric / Indicator Name | Target / Threshold | Measurement Frequency |
+| :--- | :--- | :--- | :--- |
+| **KPI (Performance)** | Operate effectiveness — Strategic performance is monitored against the plan. | Continuous operation within charter scope | continuous; quarterly review |
+| **KRI (Risk)** | Adjacent-context leakage — sd-Operate exclusions: Operational performance management (enablement-operations x operate) | none observed at governance review | quarterly |
+| **KCI (Compliance)** | Charter and regulatory evidence currency — Strategy & Direction x Operate | evidence refreshed per governance cadence; owner confirmation due 2026-12-31 | semi-annual |
 
 ## 8. Technical Metadata
 

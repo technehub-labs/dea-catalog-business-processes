@@ -128,3 +128,28 @@ change_history:
     federal banking regulator cease-and-desist orders, court
 
     receivership decrees. PC-001..008 satisfied.'
+
+
+# CR-BP-94-EXT-24 L0 register execution (2026-11-04): L0 governance + metrics register (derived; see
+# scripts/author_ext24_l0_register.py and
+# reconciliation/closure/ext24-l0-register-execution.json).
+governance:
+  roles:
+  - 'Governance & Existence Process Owner (GOV-002 role-based; domain-level owner for the Governance & Existence contexts)'
+  provenance:
+    source: change-requests/CR-BP-GS-1-governance-sweep.md
+    execution: CR-BP-94-EXT-24 (2026-11-04; ahead of the 2026-12-31 window)
+    review_due: '2026-12-31'
+metrics:
+  performance:
+  - name: 'Retire effectiveness — The governance regime is wound down under the controlling regulator or court authority.'
+    target: 'Orderly wind-down; records preserved per retention policy'
+    frequency: 'per retirement'
+  risk:
+  - name: 'Adjacent-context leakage — ge-Retire exclusions: Voluntary governance sunset absent regulator or court mandate (GovernanceAndExistence x …'
+    target: 'none observed at governance review'
+    frequency: 'quarterly'
+  compliance:
+  - name: 'Charter and regulatory evidence currency — Governance & Existence x Retire'
+    target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
+    frequency: 'semi-annual'

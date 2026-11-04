@@ -91,6 +91,8 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `processes` | array[1] | no | array of 1 item(s) |
 | `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions … |
 | `status` | string | no | defined |
+| `governance` | object | no | object: roles, provenance |
+| `metrics` | object | no | object: performance, risk, compliance |
 
 **Relationships**
 
@@ -114,13 +116,25 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 - Customer onboarding implementation (Build stage)
 - Customer support tickets (Support Staff BP, not L2)
 
-**Roles and Responsibilities**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+- Party & Relationship Process Owner (GOV-002 role-based; domain-level owner for the Party & Relationship contexts)
+
+**Business Rules and Controls**
+
+- Governing charter concern (enterprise): Customer and demand — the enterprise's exchange with its customer base.
+- Lifecycle control scope (charter): Operate — the ongoing operation of an active relationship.
+- Governing outcomes (4; the compliance baseline for this context): Active customer relationships are sustained across their lifecycle.; Customer escalations are resolved within agreed …
 
 **Target Metrics and Indicators**
 
-_(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+Standardised metrics required to measure the health, efficiency, and compliance of this ProcessContext. Authored under the EXT-04 workstream; completeness validated under EXT-06.
+
+| Category | Metric / Indicator Name | Target / Threshold | Measurement Frequency |
+| :--- | :--- | :--- | :--- |
+| **KPI (Performance)** | Operate effectiveness — Active customer relationships are sustained across their lifecycle. | Continuous operation within charter scope | continuous; quarterly review |
+| **KRI (Risk)** | Adjacent-context leakage — pr-Operate exclusions: New customer acquisition (Conceive stage) | none observed at governance review | quarterly |
+| **KCI (Compliance)** | Charter and regulatory evidence currency — Party & Relationship x Operate | evidence refreshed per governance cadence; owner confirmation due 2026-12-31 | semi-annual |
 
 ## 8. Technical Metadata
 

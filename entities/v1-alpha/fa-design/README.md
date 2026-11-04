@@ -167,6 +167,8 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `established_at` | string | no | 2026-09-08 |
 | `change_history` | array[2] | no | array of 2 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `governance` | object | no | object: roles, provenance |
+| `metrics` | object | no | object: performance, risk, compliance |
 
 **Relationships**
 
@@ -192,13 +194,25 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 - Finance capability build (Build stage; adjacent context)
 - Investment design (strategy-direction x design; adjacent domain)
 
-**Roles and Responsibilities**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+- Finance & Accounting Process Owner (GOV-002 role-based; domain-level owner for the Finance & Accounting contexts)
+
+**Business Rules and Controls**
+
+- Governing charter concern (enterprise): Finance & Accounting: the design of the enterprise's finance and accounting architecture.
+- Lifecycle control scope (charter): Design: designing chart of accounts, cost allocation model, financial plan structure, and financial controls.
+- Governing outcomes (4; the compliance baseline for this context): Chart of accounts is designed.; Cost allocation model is designed.; Financial plan structure is designed.; Financial …
 
 **Target Metrics and Indicators**
 
-_(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+Standardised metrics required to measure the health, efficiency, and compliance of this ProcessContext. Authored under the EXT-04 workstream; completeness validated under EXT-06.
+
+| Category | Metric / Indicator Name | Target / Threshold | Measurement Frequency |
+| :--- | :--- | :--- | :--- |
+| **KPI (Performance)** | Design effectiveness — Chart of accounts is designed. | Design ratified; boundaries testable before the Build gate | per design cycle |
+| **KRI (Risk)** | Adjacent-context leakage — fa-Design exclusions: Finance strategy conception (Conceive stage; adjacent context) | none observed at governance review | quarterly |
+| **KCI (Compliance)** | Charter and regulatory evidence currency — Finance & Accounting x Design | evidence refreshed per governance cadence; owner confirmation due 2026-12-31 | semi-annual |
 
 ## 8. Technical Metadata
 
