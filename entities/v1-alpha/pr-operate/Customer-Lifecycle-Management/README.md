@@ -72,7 +72,18 @@ group itself.
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Account management for active customers
+- Customer escalation handling
+- Customer renewal coordination
+- Customer win-back coordination
+- Customer portfolio allocation
+
+**Excludes**:
+- New customer acquisition (Conceive stage; adjacent context)
+- Customer onboarding implementation (Build stage; adjacent context)
+- Customer support ticket resolution (Support Staff BP, not L2)
+- Customer churn prediction modelling (Analytics BP, not L2)
 
 **Roles and Responsibilities**
 

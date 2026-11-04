@@ -128,6 +128,8 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `process_context` | object | no | object: id, domain, lifecycle_stage, scope_summary, process_empty, lifecycle_status, status |
 | `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions … |
 | `admission` | object | no | object: recommended_by, recommended_at, recommended_score, rationale, cell_carries_forward |
+| `governance` | object | no | object: roles, provenance |
+| `metrics` | object | no | object: performance, risk, compliance |
 
 **Relationships**
 
@@ -151,13 +153,25 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 - Regulated entity run-off (FinanceAndAccounting x Retire; CR-BP-75)
 - Voluntary strategy retirement absent a regulatory mandate
 
-**Roles and Responsibilities**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+- Strategy & Direction Process Owner (GOV-002 role-based; domain-level owner for the Strategy & Direction contexts)
+
+**Business Rules and Controls**
+
+- Governing charter concern (enterprise): Strategy & Direction: the controlled sunset of a regulated entity's strategic plan because a competent regulator has …
+- Lifecycle control scope (charter): Retire: the regulator-directed sunset of a regulated strategic plan, moving it from supervisor-acknowledged-and-live to …
+- Governing outcomes (4; the compliance baseline for this context): Supervisor-acknowledged sunset filings documented for the regulated strategic plan.; The strategic plan ceases …
 
 **Target Metrics and Indicators**
 
-_(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+Standardised metrics required to measure the health, efficiency, and compliance of this ProcessContext. Authored under the EXT-04 workstream; completeness validated under EXT-06.
+
+| Category | Metric / Indicator Name | Target / Threshold | Measurement Frequency |
+| :--- | :--- | :--- | :--- |
+| **KPI (Performance)** | Retire effectiveness — Supervisor-acknowledged sunset filings documented for the regulated strategic plan. | Orderly wind-down; records preserved per retention policy | per retirement |
+| **KRI (Risk)** | Adjacent-context leakage — sd-Retire exclusions: Strategic adaptation and improvement cycles (StrategyAndDirection x Improve) | none observed at governance review | quarterly |
+| **KCI (Compliance)** | Charter and regulatory evidence currency — Strategy & Direction x Retire | evidence refreshed per governance cadence; owner confirmation due 2026-12-31 | semi-annual |
 
 ## 8. Technical Metadata
 

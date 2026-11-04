@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://technehub-labs.github.io/dea-catalog-processes/schemas/entities/activity.schema.json",
   "title": "Activity",
-  "description": "Schema for Activity (L3) entries in technehub-labs/dea-catalog-processes. CR-BP-32. An Activity is a cohesive grouping of work within a Business Process that provides a meaningful logical unit of process structure without constituting an independently defined Business Process. Activity is the intermediate logical decomposition between the canonical L2 Business Process and the atomic L4 Task. Activity is a CATALOG-OWNED record type; it is NOT a metamodel entity. The canonical structural relationship is `L2 BusinessProcess --[dea:composes]--> L3 Activity --[dea:composes]--> L4 Task` (CR-BP-32 §7). Composition is structural only; it does NOT imply execution order, temporal sequence, organizational ownership, automation, or system implementation (CR-BP-32 §7, §11). L4 is the decomposition boundary; anything below belongs to implementation detail outside the catalog (CR-BP-32 §12).",
+  "description": "Schema for Activity (L3) entries in technehub-labs/dea-catalog-processes. CR-BP-32. An Activity is a cohesive grouping of work within a Business Process that provides a meaningful logical unit of process structure without constituting an independently defined Business Process. Activity is the intermediate logical decomposition between the canonical L2 Business Process and the atomic L4 Task. Activity is a CATALOG-OWNED record type; it is NOT a metamodel entity. The canonical structural relationship is `L2 BusinessProcess --[dea:composes]--> L3 Activity --[dea:composes]--> L4 Task` (CR-BP-32 \u00a77). Composition is structural only; it does NOT imply execution order, temporal sequence, organizational ownership, automation, or system implementation (CR-BP-32 \u00a77, \u00a711). L4 is the decomposition boundary; anything below belongs to implementation detail outside the catalog (CR-BP-32 \u00a712).",
   "type": "object",
   "required": [
     "id",
@@ -21,13 +21,13 @@
     "id": {
       "type": "string",
       "pattern": "^processes:activity-[a-z0-9-]+$",
-      "description": "Stable Activity id. CR-BP-04 §4 family convention: dea:activity-<kebab-name>. The id must be stable across renames of name/cohesion_rationale; renames go through the CR-programme."
+      "description": "Stable Activity id. CR-BP-04 \u00a74 family convention: dea:activity-<kebab-name>. The id must be stable across renames of name/cohesion_rationale; renames go through the CR-programme."
     },
     "name": {
       "type": "string",
       "minLength": 1,
       "maxLength": 200,
-      "description": "Activity name. Per CR-BP-32 §9 the catalog prefers a consistent gerund or equivalent activity-oriented form (e.g. 'Validate Order', 'Assess Customer Eligibility', 'Prepare Fulfilment', 'Confirm Delivery'). Naming conventions do NOT determine semantic classification."
+      "description": "Activity name. Per CR-BP-32 \u00a79 the catalog prefers a consistent gerund or equivalent activity-oriented form (e.g. 'Validate Order', 'Assess Customer Eligibility', 'Prepare Fulfilment', 'Confirm Delivery'). Naming conventions do NOT determine semantic classification."
     },
     "definition": {
       "type": "string",
@@ -44,14 +44,18 @@
       "type": "string",
       "minLength": 20,
       "maxLength": 4000,
-      "description": "Normative rationale for why the constituent work belongs together as a meaningful logical unit (CR-BP-32 §6). ACT-003 enforces minimum length (≥ 20 chars; rationale, not label)."
+      "description": "Normative rationale for why the constituent work belongs together as a meaningful logical unit (CR-BP-32 \u00a76). ACT-003 enforces minimum length (\u2265 20 chars; rationale, not label)."
     },
     "composes": {
       "type": "array",
-      "description": "Canonical structural composition (CR-BP-32 §7). Every entry declares that this Activity composes a Task. Each entry conforms to the metamodel relationship-instance shape (source_id, target_id, relationship_type, plus optional direction, status, effective_from/to, asserted_by, rationale, evidence, provenance). ACT-005 enforces `relationship_type: dea:composes`. The forbidden alternatives `parent_activity`, `child_activities`, `decomposes`, `contains_activity` are rejected.",
+      "description": "Canonical structural composition (CR-BP-32 \u00a77). Every entry declares that this Activity composes a Task. Each entry conforms to the metamodel relationship-instance shape (source_id, target_id, relationship_type, plus optional direction, status, effective_from/to, asserted_by, rationale, evidence, provenance). ACT-005 enforces `relationship_type: dea:composes`. The forbidden alternatives `parent_activity`, `child_activities`, `decomposes`, `contains_activity` are rejected.",
       "items": {
         "type": "object",
-        "required": ["source_id", "target_id", "relationship_type"],
+        "required": [
+          "source_id",
+          "target_id",
+          "relationship_type"
+        ],
         "properties": {
           "source_id": {
             "type": "string",
@@ -60,26 +64,43 @@
           "target_id": {
             "type": "string",
             "pattern": "^processes:task-[a-z0-9-]+$",
-            "description": "Target Task id. CR-BP-32 §12 establishes L4 (Task) as the decomposition boundary. CR-BP-33 will introduce the Task record type; until then, target_id values referencing `dea:task-*` are validated by ACT-004 only when at least one such record exists in the catalog."
+            "description": "Target Task id. CR-BP-32 \u00a712 establishes L4 (Task) as the decomposition boundary. CR-BP-33 will introduce the Task record type; until then, target_id values referencing `dea:task-*` are validated by ACT-004 only when at least one such record exists in the catalog."
           },
           "relationship_type": {
             "type": "string",
             "const": "composes",
-            "description": "CR-BP-32 §7 structural composition (token migrated from dea:composes by CR-BP-135)."
+            "description": "CR-BP-32 \u00a77 structural composition (token migrated from dea:composes by CR-BP-135)."
           },
-          "direction": {"type": "string"},
-          "status": {"type": "string"},
-          "asserted_by": {"type": "string"},
-          "rationale": {"type": "string"},
-          "evidence": {"type": "string"},
-          "provenance": {"type": "object"}
+          "direction": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "asserted_by": {
+            "type": "string"
+          },
+          "rationale": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "string"
+          },
+          "provenance": {
+            "type": "object"
+          }
         }
       }
     },
     "decomposition_boundary": {
       "type": "string",
-      "enum": ["l4-reached", "l4", "atomic", "no-further-decomposition"],
-      "description": "Optional marker asserted when an Activity has no composed Tasks and decomposition terminates at the Activity itself (CR-BP-32 §12). ACT-004 accepts this marker as an alternative to a non-empty `composes[]`."
+      "enum": [
+        "l4-reached",
+        "l4",
+        "atomic",
+        "no-further-decomposition"
+      ],
+      "description": "Optional marker asserted when an Activity has no composed Tasks and decomposition terminates at the Activity itself (CR-BP-32 \u00a712). ACT-004 accepts this marker as an alternative to a non-empty `composes[]`."
     },
     "version": {
       "type": "string",
@@ -88,7 +109,15 @@
     },
     "lifecycle_status": {
       "type": "string",
-      "enum": ["draft", "proposed", "validated", "published", "deprecated", "retired", "candidate"],
+      "enum": [
+        "draft",
+        "proposed",
+        "validated",
+        "published",
+        "deprecated",
+        "retired",
+        "candidate"
+      ],
       "description": "Lifecycle state. LCM-001 vocabulary. Activities inherit the same lifecycle as BPs/PGs/PCs."
     },
     "status": {
@@ -153,19 +182,94 @@
         },
         "decomposition_boundary": {
           "type": "string",
-          "enum": ["l4-reached", "l4", "atomic", "no-further-decomposition"]
+          "enum": [
+            "l4-reached",
+            "l4",
+            "atomic",
+            "no-further-decomposition"
+          ]
         },
         "activity_references": {
           "type": "array",
           "description": "Mirror of the parent BP's reverse-reference list. Not used on Activity records themselves; documented here for completeness because ACT-010 reads this field on the parent BP.",
-          "items": {"type": "string"}
+          "items": {
+            "type": "string"
+          }
         },
         "change_history": {
           "type": "array",
           "description": "Audit trail for lifecycle transitions. Same convention as BP / PG records (LCM-003 / LCM-004).",
-          "items": {"type": "object"}
+          "items": {
+            "type": "object"
+          }
         }
       }
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "description": "CR-BP-96/EXT-12 IO entry (CR-BP-225: id/name/description baseline + source/mandatory).",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "mandatory": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "description"
+        ]
+      },
+      "description": "EXT-12 \u00a79 working inputs (CR-BP-225: task working objects / activity working inputs, derived from the record's own fields and child tasks)."
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "description": "CR-BP-96/EXT-12 IO entry (CR-BP-225: id/name/description baseline + source/mandatory).",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "mandatory": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "description"
+        ]
+      },
+      "description": "EXT-12 \u00a79 outputs (CR-BP-225: contribution to the parent result, from the record's own outcome/concluding task)."
     }
   },
   "additionalProperties": false,

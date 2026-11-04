@@ -39,6 +39,8 @@ This directory hosts the canonical Activity record for `processes:activity-fa-de
 | `cohesion_rationale` | string | no | Constituent work shares a single position concern (exposure to documented position), one reference class (tax law and … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
+| `inputs` | array[1] | no | array of 1 item(s) |
+| `outputs` | array[1] | no | array of 1 item(s) |
 
 **Relationships**
 
@@ -67,7 +69,11 @@ This directory hosts the canonical Activity record for `processes:activity-fa-de
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Inputs**:
+- Working inputs of the composing tasks (intake task: Document Tax Positions Intake) (?, mandatory)
+
+**Outputs**:
+- Contribution to parent outcome (concluding task: Document Tax Positions Audit Record) (?)
 
 **Roles and Responsibilities**
 

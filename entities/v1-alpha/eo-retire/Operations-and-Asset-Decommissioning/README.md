@@ -66,7 +66,16 @@ resolution).
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Retirement planning and approval
+- Isolation and withdrawal from service
+- Decommissioning and disposal (including data sanitization)
+- Residual value and obligation resolution
+
+**Excludes**:
+- Steady-state operation and maintenance (Operate)
+- Asset improvement and upgrade (Improve)
+- Product and service withdrawal (ProductAndValue x Retire)
 
 **Roles and Responsibilities**
 

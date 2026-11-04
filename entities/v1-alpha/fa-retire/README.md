@@ -105,6 +105,8 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `intent` | object | no | object: decomposition, lifecycle_stage, coordinate |
 | `change_history` | array[1] | no | array of 1 item(s) |
 | `audit` | object | no | object: authored, author, reviewed_by, status, change_request, register_version_at_landing |
+| `governance` | object | no | object: roles, provenance |
+| `metrics` | object | no | object: performance, risk, compliance |
 
 **Relationships**
 
@@ -132,13 +134,25 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 - Product line retirement (ProductAndValue x Retire; CR-BP-67 adjacent)
 - Non-insurance regulated wind-downs (deferred to a future CR)
 
-**Roles and Responsibilities**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+- Finance & Accounting Process Owner (GOV-002 role-based; domain-level owner for the Finance & Accounting contexts)
+
+**Business Rules and Controls**
+
+- Governing charter concern (enterprise): Finance & Accounting: the regulated run-off of a financial entity under statutory accounting basis transition …
+- Lifecycle control scope (charter): Retire: regulated run-off of an entity (or run-off portfolio) triggered by a regulator-acknowledged run-off …
+- Governing outcomes (5; the compliance baseline for this context): Regulator-acknowledged run-off authorisation documented per the controlling regulator's requirements.; Run-off plan …
 
 **Target Metrics and Indicators**
 
-_(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+Standardised metrics required to measure the health, efficiency, and compliance of this ProcessContext. Authored under the EXT-04 workstream; completeness validated under EXT-06.
+
+| Category | Metric / Indicator Name | Target / Threshold | Measurement Frequency |
+| :--- | :--- | :--- | :--- |
+| **KPI (Performance)** | Retire effectiveness — Regulator-acknowledged run-off authorisation documented per the controlling regulator's … | Orderly wind-down; records preserved per retention policy | per retirement |
+| **KRI (Risk)** | Adjacent-context leakage — fa-Retire exclusions: Pre-run-off financial stewardship (FinanceAndAccounting x Operate) | none observed at governance review | quarterly |
+| **KCI (Compliance)** | Charter and regulatory evidence currency — Finance & Accounting x Retire | evidence refreshed per governance cadence; owner confirmation due 2026-12-31 | semi-annual |
 
 ## 8. Technical Metadata
 

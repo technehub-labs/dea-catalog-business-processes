@@ -177,3 +177,7 @@ outputs:
   description: 'The state change documented in the outcome: The party relationship is activated with verified
     identity, resolved beneficial ownership, an assigned risk classification, and a documented approval;'
   consumer: The enterprise state the process changes
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Onboard a new party relationship in a regulated context (KYC/AML/CDD): verify identity, resolve beneficial ownership, classify risk, and either authorize …'

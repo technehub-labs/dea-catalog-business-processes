@@ -137,3 +137,7 @@ outputs:
   description: 'The state change documented in the outcome: The delivery model is designed with channel
     configurations and service levels.'
   consumer: The enterprise state the process changes
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Operate the Design Delivery Model L2 process within the processes:pc-eo-design-kxdfnz Cell Charter. See trigger and outcome for the bounded work this process …'

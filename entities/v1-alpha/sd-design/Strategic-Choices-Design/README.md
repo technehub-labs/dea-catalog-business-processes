@@ -68,7 +68,16 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-d
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Strategic option design
+- Strategic alternatives evaluation
+- Objectives and targets design
+- Strategic scenarios design
+
+**Excludes**:
+- Operational planning (enablement-operations x design)
+- Financial plan design (finance-accounting x design)
+- Strategic intent conception (Conceive stage; adjacent context)
 
 **Roles and Responsibilities**
 

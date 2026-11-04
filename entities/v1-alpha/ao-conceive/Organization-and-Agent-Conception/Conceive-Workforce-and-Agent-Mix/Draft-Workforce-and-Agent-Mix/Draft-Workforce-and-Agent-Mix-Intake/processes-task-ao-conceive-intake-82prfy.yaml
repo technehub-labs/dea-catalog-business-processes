@@ -56,3 +56,19 @@ metadata:
   - cr: CR-BP-102
     date: '2026-09-19'
     change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).
+
+# CR-BP-225 completions (2026-11-04): EXT-12 §9 task working
+# objects, from the task's own required trigger/outcome fields
+# (its documented actual use).
+inputs:
+- id: in-task-ao-conceive-intake-82prfy
+  name: 'Phase working object (presented per the task trigger)'
+  description: 'Parent Activity''s input class is presented for processing and the activity owner is notified of intake.'
+  source: The task's own trigger field (EXT-12 §9 task working objects)
+  mandatory: true
+outputs:
+- id: out-task-ao-conceive-intake-82prfy
+  name: 'Phase result (recorded per the task outcome)'
+  description: 'Intake registered; input artifact preserved with audit identifiers; downstream phases may proceed.'
+  source: The task's own outcome field (EXT-12 §9)
+  mandatory: true

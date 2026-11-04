@@ -68,7 +68,16 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pv-b
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Product variant development
+- Service capability build
+- Innovation prototype build
+- Market readiness preparation
+
+**Excludes**:
+- Technology build (enablement-operations)
+- Proposition design (Design stage; adjacent context)
+- Catalogue operation (Operate stage; adjacent context)
 
 **Roles and Responsibilities**
 

@@ -148,3 +148,7 @@ outputs:
     payable, accounts receivable, treasury, tax compliance, financial close, and reporting executed to
     period'
   consumer: The enterprise state the process changes
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Operate the Operate General Ledger L2 process within the processes:pc-fa-operate-afew7e Cell Charter. See trigger and outcome for the bounded work this process …'

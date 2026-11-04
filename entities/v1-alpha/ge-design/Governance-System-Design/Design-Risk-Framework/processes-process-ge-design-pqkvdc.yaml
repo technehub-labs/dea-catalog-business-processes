@@ -137,3 +137,7 @@ outputs:
     assessment scales, and governance integration committed, providing the risk direction for the build
     stag'
   consumer: The enterprise state the process changes
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Design Risk Framework (design stage, strategic process). Landed by CR-BP-21f.1 from the GovernanceAndExistence register v2.'

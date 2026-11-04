@@ -67,7 +67,16 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-d
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Governance system architecture
+- Control objectives
+- Policy architecture
+- Authority delegation design
+
+**Excludes**:
+- Strategy framing (Conceive stage)
+- Body and charter construction (Build stage)
+- Governance operation (Operate stage)
 
 **Roles and Responsibilities**
 

@@ -68,7 +68,15 @@ This directory hosts the canonical ProcessGroup record for `processes:group-fa-d
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Financial controls and policy design
+- Tax position and strategy design
+- Treasury and funding model design
+- Financial plan structure design (seeded by CR-BP-21e)
+
+**Excludes**:
+- Financial strategy framing (Conceive stage; adjacent context)
+- Financial system build (Build stage; adjacent context)
 
 **Roles and Responsibilities**
 

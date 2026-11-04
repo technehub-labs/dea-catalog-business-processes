@@ -128,3 +128,7 @@ outputs:
     decommissioned and disposed of through executed retirement and disposal routes, with residual value,
     data and obligations resolved and record'
   consumer: Downstream consumers per the documented outcome
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Withdraw and retire an operational asset (technology or physical): plan and approve the retirement, isolate and withdraw the asset from service, decommission …'

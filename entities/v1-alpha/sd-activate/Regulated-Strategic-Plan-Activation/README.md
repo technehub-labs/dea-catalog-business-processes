@@ -64,7 +64,20 @@ from steady-state strategy execution.
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Supervisor-acknowledged strategic-plan filing (Basel ICAAP / SAA approval by PRA / ECB; BRRD recovery-plan activation under SRB / national-resolution-authority supervision; NHS trust 5-year strategy approval; PUC integrated resource plan and strategic-plan filing; bank recovery and resolution plan activation under FDIC or SRB)
+- Supervisor's review completion and acknowledgement on record (Basel SREP review; NHS England / Department of Health strategy review; PUC rate-case strategic-plan review; SRB resolution-plan review)
+- Filing receipt preservation and regulated-records entry (Basel SREP filing receipt; NHS England strategy-approval letter; PUC strategic-plan filing order; SRB resolution-plan acknowledgment)
+- Operational monitoring framework launch (KPIs; risk-appetite statement; early-warning indicators; supervisor's continuing-oversight relationship)
+- Communications plan activation under the regulator's continuing supervision (disclosure controls; investor-relations briefing; regulated-entity announcement)
+- Regulated strategic-plan record entry preserved for the activated strategic plan
+
+**Excludes**:
+- Strategic-plan conception, design, and build (StrategyAndDirection x Conceive / Design / Build)
+- Steady-state strategy execution and performance review (StrategyAndDirection x Operate / Improve)
+- Strategic-plan sunset under regulatory mandate (StrategyAndDirection x Retire; CR-BP-80 escape record documented DEFER without admission)
+- Non-regulated strategic-plan launch (single-business-unit rollout without supervisor's review): remains RECORD-PATTERN or MERGE per CR-BP-63 baseline
+- Strategic plans absent a supervisor-acknowledged filing regime
 
 **Roles and Responsibilities**
 

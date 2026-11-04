@@ -71,3 +71,19 @@ composes:
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+
+# CR-BP-225 completions (2026-11-04): EXT-12 §9 activity IO derived
+# from the activity's own child tasks — no parent copying; the cited
+# child ids document the actual use (EXT-12 §9 rule).
+inputs:
+- id: in-activity-sd-improve-qxsaqc
+  name: 'Working inputs of the composing tasks (intake task: Formulate Direction Adjustments Intake)'
+  description: 'Declared per EXT-12 §9 (activity working inputs): intake task processes:task-sd-improve-intake-xpj72c documents the input class in its own trigger — Parent Activity''s input class is presented for processing and the activity owner is notified of intake.'
+  source: The activity's own composing tasks (EXT-12 §9; no parent copying)
+  mandatory: true
+outputs:
+- id: out-activity-sd-improve-qxsaqc
+  name: 'Contribution to parent outcome (concluding task: Formulate Direction Adjustments Audit Record)'
+  description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-improve-9wgvaf through concluding task processes:task-sd-improve-record-wvjf2e, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
+  source: The activity's own concluding task (EXT-12 §9)
+  mandatory: true

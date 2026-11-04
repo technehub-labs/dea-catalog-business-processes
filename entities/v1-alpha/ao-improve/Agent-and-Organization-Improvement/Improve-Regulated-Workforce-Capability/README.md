@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-ao-impr
 
 **Intent**: manage
 
-**Definition**: Improve the regulator-tied capability of regulator-licensed roles under the enterprise regulated-entity approval authority. The trigger is the regulator-mandated continuing-competence program cycle or a remediation requirement. The outcome is regulator-tied capability improvement recorded on the regulated personnel record: regulator-mandated training cycles (FCA SMCR fit-and-proper annual assessment under SYSC 25 / FIT; state bar MCLE; state healthcare CME; NAIC CE; FAA Part 121 subpart Y recurrent training; EU AI Act Article 14 ongoing training), fit-and-proper re-assessment cycles, regulator-mandated remediation programs executed, and the continuing-supervisor notified.
+**Definition**: Improve the regulator-tied capability of regulator-licensed roles under the enterprise regulated-entity approval authority. The trigger is the …
 
 ## 3. Governance and Provenance
 
@@ -53,6 +53,7 @@ This directory hosts the canonical Process record for `processes:process-ao-impr
 | `stakeholders` | array[1] | no | array of 1 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
+| `definition` | string | no | Improve the regulator-tied capability of regulator-licensed roles under the enterprise regulated-entity approval … |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)
@@ -82,7 +83,11 @@ This directory hosts the canonical Process record for `processes:process-ao-impr
 - Actor: organization design authority
 - Stakeholder: organization design authority
 
-**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+**Business Rules and Controls**
+
+- Controls governed at the Process Group level (the record's `process_context` cell charter; CR-BP-02)
+- Work bounds governed by the decomposition: cohesion controls at L3 (CR-BP-32 §6), boundary inclusions/exclusions at L4 (CR-BP-102) — see children
+
 
 ## 7. Technical Metadata
 

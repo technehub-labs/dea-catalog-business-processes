@@ -144,3 +144,7 @@ outputs:
   description: 'The state change documented in the outcome: A financial plan structure with chart of accounts,
     cost allocation model, and financial controls design is committed.'
   consumer: The enterprise state the process changes
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Operate the Design Financial Plan Structure L2 process within the processes:pc-fa-design-4j8evh Cell Charter. See trigger and outcome for the bounded work this …'

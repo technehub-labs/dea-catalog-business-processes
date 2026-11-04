@@ -71,7 +71,16 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-d
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Organization structure design
+- Role catalogue design
+- Competency framework design
+- Agent topology design (human/artificial/hybrid)
+
+**Excludes**:
+- Specific job description authoring (Build stage; adjacent context)
+- Organization model framing (Conceive stage; adjacent context)
+- Product or service design (product-value x design)
 
 **Roles and Responsibilities**
 

@@ -68,7 +68,16 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-o
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Strategic performance monitoring
+- Environmental sensing
+- Initiative portfolio steering
+- Strategic review cycle operation
+
+**Excludes**:
+- Operational performance management (enablement-operations x operate)
+- Initiative execution (enablement-operations x operate)
+- Strategic plan build (Build stage; adjacent context)
 
 **Roles and Responsibilities**
 

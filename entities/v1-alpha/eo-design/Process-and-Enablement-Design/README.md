@@ -70,7 +70,17 @@ This directory hosts the canonical ProcessGroup record for `processes:group-eo-d
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Operations model design
+- Delivery model design
+- Technology platform architecture design
+- Facility and asset blueprint design
+- Logistics and routing design
+
+**Excludes**:
+- Capability design (owning domains)
+- Operations strategy framing (Conceive stage; adjacent context)
+- Physical build (Build stage; adjacent context)
 
 **Roles and Responsibilities**
 

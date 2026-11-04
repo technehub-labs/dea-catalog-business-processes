@@ -1,0 +1,121 @@
+name: Publish versioned release package
+
+# CR-BP-30f: on every v* tag push, produce the full release package zip
+# (CR-BP-30 §2 artifact family, decisions D1-D6 locked 2026-11-04):
+#   process-map.html + process-map-a3.png (30a, D1=A)
+#   catalog.xlsx — 6 sheets (30b, D2)
+#   bpmn-library.bpmn (30c, D3=A)
+#   RELEASE-NOTES.md + decisions.md + dispositions/ (30d, D4=A)
+#   verbatim substrate: entities/**/*.yaml + contributions/
+#   MANIFEST.md with per-file sha256 (provenance principle)
+# No release on a non-conformant snapshot: the substrate validation
+# step aborts if the 50-gate rollup is not green on the tagged commit.
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+concurrency:
+  group: publish-versioned
+  cancel-in-progress: false
+
+jobs:
+  publish-versioned:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          set -euo pipefail
+          python3 -m pip install --upgrade pip
+          python3 -m pip install pyyaml jsonschema pytest openpyxl weasyprint
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends poppler-utils
+
+      - name: Validate the substrate (no release on a non-conformant snapshot)
+        run: |
+          set -euo pipefail
+          python3 scripts/conformance_result.py --strict
+          python3 scripts/check_id_system.py --strict
+          python3 scripts/check_readme_consistency.py --strict
+
+      - name: Generate artifacts
+        env:
+          VERSION_LABEL: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          OUT_DIR="out/${VERSION_LABEL}"
+          mkdir -p "${OUT_DIR}/decisions" "${OUT_DIR}/contributions"
+          python3 scripts/generate_process_map.py --label "${VERSION_LABEL}" \
+            --out "${OUT_DIR}/process-map.html" \
+            --png "${OUT_DIR}/process-map-a3.png" --dpi 300
+          python3 scripts/build_catalog_xlsx.py --out "${OUT_DIR}/catalog.xlsx"
+          python3 scripts/build_bpmn_artifact.py --label "${VERSION_LABEL}" \
+            --out "${OUT_DIR}/bpmn-library.bpmn"
+          python3 scripts/build_release_notes.py --version "${VERSION_LABEL}" \
+            --date "$(date +%F)" --out "${OUT_DIR}/RELEASE-NOTES.md" \
+            --decisions "${OUT_DIR}/decisions.md"
+          cp reconciliation/dispositions/register.yaml "${OUT_DIR}/decisions/dispositions-register.yaml"
+
+      - name: Copy the substrate (self-contained zip principle)
+        env:
+          VERSION_LABEL: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          OUT_DIR="out/${VERSION_LABEL}"
+          mkdir -p "${OUT_DIR}/entities"
+          cp -R entities/v1-alpha "${OUT_DIR}/entities/"
+          mkdir -p "${OUT_DIR}/contributions/processes"
+          if [ -d contributions/processes ]; then
+            cp -R contributions/processes/. "${OUT_DIR}/contributions/processes/"
+          fi
+          cp dependencies.yaml "${OUT_DIR}/dependencies.yaml"
+
+      - name: Build MANIFEST.md (provenance principle)
+        env:
+          VERSION_LABEL: ${{ github.ref_name }}
+        run: python3 scripts/build_manifest.py --dir "out/${VERSION_LABEL}" --version "${VERSION_LABEL}"
+
+      - name: Rezip
+        env:
+          VERSION_LABEL: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          cd "out/${VERSION_LABEL}"
+          zip -qr "../${VERSION_LABEL}.zip" .
+
+      - name: Upload workflow artifact (debug, 30 days)
+        uses: actions/upload-artifact@v4
+        with:
+          name: process-versioned-artifacts
+          path: |
+            out/${{ github.ref_name }}/
+            out/${{ github.ref_name }}.zip
+          retention-days: 30
+
+      - name: Create or update the GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VERSION_LABEL: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          ZIP="out/${VERSION_LABEL}.zip"
+          if gh release view "${VERSION_LABEL}" >/dev/null 2>&1; then
+            gh release upload "${VERSION_LABEL}" "${ZIP}" --clobber
+          else
+            gh release create "${VERSION_LABEL}" "${ZIP}" \
+              --title "${VERSION_LABEL}" --generate-notes
+          fi

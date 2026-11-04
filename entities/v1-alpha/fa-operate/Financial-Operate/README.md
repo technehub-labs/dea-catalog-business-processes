@@ -76,7 +76,17 @@ This directory hosts the canonical ProcessGroup record for `processes:group-fa-o
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Accounts payable and receivable operation
+- Payroll execution
+- Cash and liquidity management
+- Financial close and reporting operation
+- Tax compliance and filings
+- General ledger operation (seeded by CR-BP-21e)
+
+**Excludes**:
+- Financial controls design (Design stage; adjacent context)
+- Financial improvement (Improve stage; adjacent context)
 
 **Roles and Responsibilities**
 

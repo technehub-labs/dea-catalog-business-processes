@@ -125,3 +125,7 @@ outputs:
   description: 'Derived from the record''s documented outcome: Accounts payable is run with invoices matched,
     approvals recorded, and payments produced to plan.'
   consumer: Downstream consumers per the documented outcome
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Run Accounts Payable (operate stage, core process). Landed by CR-BP-21e.1 from the FinanceAndAccounting register v2.'

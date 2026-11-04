@@ -17,8 +17,7 @@ This directory hosts the canonical Process record for `processes:process-ge-oper
 
 **Intent**: operate
 
-**Definition**: Operate Enterprise Risk Oversight (operate stage, core process). Landed by CR-BP-21f.1
-from the GovernanceAndExistence register v2.
+**Definition**: Operate Enterprise Risk Oversight (operate stage, core process). Landed by CR-BP-21f.1 from the GovernanceAndExistence register v2.
 
 ## 3. Governance and Provenance
 
@@ -54,6 +53,7 @@ from the GovernanceAndExistence register v2.
 | `stakeholders` | array[4] | no | array of 4 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
+| `definition` | string | no | Operate Enterprise Risk Oversight (operate stage, core process). Landed by CR-BP-21f.1 from the GovernanceAndExistence … |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)
@@ -89,7 +89,11 @@ from the GovernanceAndExistence register v2.
 - Stakeholder: compliance function
 - Stakeholder: strategy function
 
-**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+**Business Rules and Controls**
+
+- Controls governed at the Process Group level (the record's `process_context` cell charter; CR-BP-02)
+- Work bounds governed by the decomposition: cohesion controls at L3 (CR-BP-32 §6), boundary inclusions/exclusions at L4 (CR-BP-102) — see children
+
 
 ## 7. Technical Metadata
 

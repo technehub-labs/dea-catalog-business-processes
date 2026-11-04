@@ -70,7 +70,17 @@ This directory hosts the canonical ProcessGroup record for `processes:group-eo-b
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Production line stand-up
+- Delivery capability build
+- Logistics network build
+- Technology asset acquisition and installation
+- Facility acquisition and provisioning
+
+**Excludes**:
+- Agent provisioning (agency-organization)
+- Platform architecture design (Design stage; adjacent context)
+- Day-to-day operation (Operate stage; adjacent context)
 
 **Roles and Responsibilities**
 

@@ -139,3 +139,7 @@ outputs:
   description: 'The state change documented in the outcome: A set of strategic option designs with bounded
     trade-offs and evaluation criteria is committed.'
   consumer: The enterprise state the process changes
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Operate the Design Strategic Options L2 process within the processes:pc-sd-design-g3es76 Cell Charter. See trigger and outcome for the bounded work this …'

@@ -67,7 +67,15 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-b
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Agent sourcing, recruiting, provisioning (all substrates)
+- Agent onboarding and integration
+- Contractor and partner-agent pool build
+
+**Excludes**:
+- Supplier relationship onboarding (party-relationship)
+- Agent topology design (Design stage; adjacent context)
+- Agent performance operation (Operate stage; adjacent context)
 
 **Roles and Responsibilities**
 

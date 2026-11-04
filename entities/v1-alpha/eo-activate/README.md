@@ -104,6 +104,8 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `cell_charter` | object | no | object: enterprise_concern, lifecycle_concern, combined_semantic_meaning, expected_outcomes, inclusions, exclusions … |
 | `process_groups` | array[1] | no | array of 1 item(s) |
 | `admission` | object | no | object: recommended_by, recommended_at, recommended_score, carrier_cr, bp_id |
+| `governance` | object | no | object: roles, provenance |
+| `metrics` | object | no | object: performance, risk, compliance |
 
 **Relationships**
 
@@ -130,13 +132,25 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 - Operations capability decommission and deregistration (EnablementAndOperations x Retire)
 - Non-regulated operations-capability activation absent a regulator-issued authorization regime
 
-**Roles and Responsibilities**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+- Enablement & Operations Process Owner (GOV-002 role-based; domain-level owner for the Enablement & Operations contexts)
+
+**Business Rules and Controls**
+
+- Governing charter concern (enterprise): Enablement & Operations: the controlled activation of an operations capability whose live service is gated by …
+- Lifecycle control scope (charter): Activate: the live-readiness activation of an operations capability, moving it from regulator-authorized-but-not-live …
+- Governing outcomes (5; the compliance baseline for this context): Regulator's authorization on record for the operations capability.; Operations manuals and runbooks live under the …
 
 **Target Metrics and Indicators**
 
-_(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+Standardised metrics required to measure the health, efficiency, and compliance of this ProcessContext. Authored under the EXT-04 workstream; completeness validated under EXT-06.
+
+| Category | Metric / Indicator Name | Target / Threshold | Measurement Frequency |
+| :--- | :--- | :--- | :--- |
+| **KPI (Performance)** | Activate effectiveness — Regulator's authorization on record for the operations capability. | Authorization evidence complete; live state recorded | per activation |
+| **KRI (Risk)** | Adjacent-context leakage — eo-Activate exclusions: Operations capability conception and design (EnablementAndOperations x Conceive / Design) | none observed at governance review | quarterly |
+| **KCI (Compliance)** | Charter and regulatory evidence currency — Enablement & Operations x Activate | evidence refreshed per governance cadence; owner confirmation due 2026-12-31 | semi-annual |
 
 ## 8. Technical Metadata
 

@@ -142,3 +142,7 @@ outputs:
   description: 'The state change documented in the outcome: The regulator-licensed roles'' capability
     is improved per the regulator''s continuing-competence framework; regulator-mandated training, fit-and-proper '
   consumer: The enterprise state the process changes
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Improve the regulator-tied capability of regulator-licensed roles under the enterprise regulated-entity approval authority. The trigger is the …'

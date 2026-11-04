@@ -137,3 +137,7 @@ outputs:
     cleared, and on the regulated personnel record; each candidate is fitness-and-propriety attested and
     ready for regulator-tied Activate with'
   consumer: Downstream consumers per the documented outcome
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Build the regulator-ready licensed-candidate pool under the enterprise regulated-entity approval authority. The trigger is the decision to source candidates …'

@@ -138,6 +138,8 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `established_at` | string | no | 2026-09-08 |
 | `change_history` | array[3] | no | array of 3 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `governance` | object | no | object: roles, provenance |
+| `metrics` | object | no | object: performance, risk, compliance |
 
 **Relationships**
 
@@ -164,13 +166,25 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 - Product development (Build stage; adjacent context)
 - Alliance and partnership thesis (party-relationship x conceive; adjacent domain)
 
-**Roles and Responsibilities**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+- Product & Value Process Owner (GOV-002 role-based; domain-level owner for the Product & Value contexts)
+
+**Business Rules and Controls**
+
+- Governing charter concern (enterprise): Product & Value: the conception of the enterprise's value-bearing propositions.
+- Lifecycle control scope (charter): Conceive: framing value proposition theses, portfolio direction, and innovation theses.
+- Governing outcomes (4; the compliance baseline for this context): Value proposition thesis is framed for the enterprise.; Portfolio direction is framed with bounded scope.; Innovation …
 
 **Target Metrics and Indicators**
 
-_(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+Standardised metrics required to measure the health, efficiency, and compliance of this ProcessContext. Authored under the EXT-04 workstream; completeness validated under EXT-06.
+
+| Category | Metric / Indicator Name | Target / Threshold | Measurement Frequency |
+| :--- | :--- | :--- | :--- |
+| **KPI (Performance)** | Conceive effectiveness — Value proposition thesis is framed for the enterprise. | Mandate and framing ratified before the Build gate | per conception cycle |
+| **KRI (Risk)** | Adjacent-context leakage — pv-Conceive exclusions: Strategic portfolio investment decisions (strategy-direction x conceive; adjacent domain) | none observed at governance review | quarterly |
+| **KCI (Compliance)** | Charter and regulatory evidence currency — Product & Value x Conceive | evidence refreshed per governance cadence; owner confirmation due 2026-12-31 | semi-annual |
 
 ## 8. Technical Metadata
 

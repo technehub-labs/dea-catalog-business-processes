@@ -39,6 +39,8 @@ This directory hosts the canonical Activity record for `processes:activity-eo-im
 | `cohesion_rationale` | string | no | Constituent work shares a single selection concern (waste and variation evidence to project portfolio), one input class … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
+| `inputs` | array[1] | no | array of 1 item(s) |
+| `outputs` | array[1] | no | array of 1 item(s) |
 
 **Relationships**
 
@@ -67,7 +69,11 @@ This directory hosts the canonical Activity record for `processes:activity-eo-im
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Inputs**:
+- Working inputs of the composing tasks (intake task: Select Improvement Projects Intake) (?, mandatory)
+
+**Outputs**:
+- Contribution to parent outcome (concluding task: Select Improvement Projects Audit Record) (?)
 
 **Roles and Responsibilities**
 

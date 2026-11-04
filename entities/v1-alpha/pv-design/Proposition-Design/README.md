@@ -66,7 +66,15 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pv-d
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Product and service proposition design
+- Packaging and configuration design
+- Innovation experiment design
+
+**Excludes**:
+- Technology platform architecture (enablement-operations)
+- Value proposition thesis conception (Conceive stage; adjacent context)
+- Product variant development (Build stage; adjacent context)
 
 **Roles and Responsibilities**
 

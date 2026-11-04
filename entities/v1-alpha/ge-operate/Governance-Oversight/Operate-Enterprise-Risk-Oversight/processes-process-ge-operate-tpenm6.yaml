@@ -139,3 +139,7 @@ outputs:
   description: 'The state change documented in the outcome: Enterprise risk oversight is operated with
     risk reviews executed, exposures surfaced, and mitigations delivered to the governance bodies.'
   consumer: The enterprise state the process changes
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Operate Enterprise Risk Oversight (operate stage, core process). Landed by CR-BP-21f.1 from the GovernanceAndExistence register v2.'

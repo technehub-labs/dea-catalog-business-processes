@@ -64,7 +64,16 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pr-b
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Channel infrastructure build
+- Acquisition engine build
+- Marketing automation build
+- Demand-generation engine build
+
+**Excludes**:
+- Customer strategy framing (Conceive stage)
+- Customer experience design (Design stage)
+- Live customer operation (Operate stage)
 
 **Roles and Responsibilities**
 

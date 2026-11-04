@@ -87,3 +87,29 @@ links:
   href: change-requests/CR-BP-19-l1-register-rederivation-ecf-v240.md
 - rel: research-register
   href: entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/processes-group-pr-operate-7ab3ma.yaml
+
+
+# CR-BP-94-EXT-24 L0 register execution (2026-11-04): L0 governance + metrics register (derived; see
+# scripts/author_ext24_l0_register.py and
+# reconciliation/closure/ext24-l0-register-execution.json).
+governance:
+  roles:
+  - 'Strategy & Direction Process Owner (GOV-002 role-based; domain-level owner for the Strategy & Direction contexts)'
+  provenance:
+    source: change-requests/CR-BP-GS-1-governance-sweep.md
+    execution: CR-BP-94-EXT-24 (2026-11-04; ahead of the 2026-12-31 window)
+    review_due: '2026-12-31'
+    status: confirmed (user directive 2026-11-04; the derived register is confirmed ahead of the 2026-12-31 window)
+metrics:
+  performance:
+  - name: 'Operate effectiveness — Strategic performance is monitored against the plan.'
+    target: 'Continuous operation within charter scope'
+    frequency: 'continuous; quarterly review'
+  risk:
+  - name: 'Adjacent-context leakage — sd-Operate exclusions: Operational performance management (enablement-operations x operate)'
+    target: 'none observed at governance review'
+    frequency: 'quarterly'
+  compliance:
+  - name: 'Charter and regulatory evidence currency — Strategy & Direction x Operate'
+    target: 'evidence refreshed per governance cadence; owner confirmation due 2026-12-31'
+    frequency: 'semi-annual'

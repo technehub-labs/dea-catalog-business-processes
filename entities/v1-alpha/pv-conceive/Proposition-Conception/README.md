@@ -78,7 +78,18 @@ builds, evolves, and eventually retires.
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Value proposition thesis framing
+- Portfolio direction framing
+- Innovation thesis framing
+- Proposition concept validation
+
+**Excludes**:
+- Strategic portfolio investment decisions (strategy-direction x conceive)
+- Capability strategy (governance-existence x conceive)
+- Proposition design (Design stage; adjacent context)
+- Product development (Build stage; adjacent context)
+- Alliance and partnership thesis (party-relationship x conceive)
 
 **Roles and Responsibilities**
 

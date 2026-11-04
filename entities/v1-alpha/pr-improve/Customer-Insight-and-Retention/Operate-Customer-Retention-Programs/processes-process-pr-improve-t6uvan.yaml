@@ -168,3 +168,7 @@ outputs:
   description: 'The state change documented in the outcome: Customer insight (NPS, churn risk, win-back
     lists) is produced continuously and feeds Conceive/Design/Build/Operate cycles.'
   consumer: The enterprise state the process changes
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Operate the Operate Customer Retention Programs L2 process within the processes:pc-pr-improve-k8phkn Cell Charter. See trigger and outcome for the bounded work …'

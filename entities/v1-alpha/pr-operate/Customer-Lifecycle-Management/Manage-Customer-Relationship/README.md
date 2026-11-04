@@ -17,14 +17,7 @@ This directory hosts the canonical Process record for `processes:process-pr-oper
 
 **Intent**: manage
 
-**Definition**: Manage the day-to-day operation of an active customer
-relationship across its lifecycle (acquisition → onboarding
-→ active use → renewal or win-back). The principal
-organizational locus is the Middle Line (sales / account
-management leadership); the work coordinates customer-
-facing resources, monitors the customer's value exchange
-with the enterprise, and allocates attention and effort
-across the customer portfolio.
+**Definition**: Manage the day-to-day operation of an active customer relationship across its lifecycle (acquisition → onboarding → active use → renewal or win-back). The …
 
 ## 3. Governance and Provenance
 
@@ -63,6 +56,7 @@ across the customer portfolio.
 | `stakeholders` | array[2] | no | array of 2 item(s) |
 | `inputs` | array[2] | no | array of 2 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
+| `definition` | string | no | Manage the day-to-day operation of an active customer relationship across its lifecycle (acquisition → onboarding → … |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)
@@ -95,7 +89,11 @@ across the customer portfolio.
 - Stakeholder: governing board
 - Stakeholder: customer relationship management
 
-**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+**Business Rules and Controls**
+
+- Controls governed at the Process Group level (the record's `process_context` cell charter; CR-BP-02)
+- Work bounds governed by the decomposition: cohesion controls at L3 (CR-BP-32 §6), boundary inclusions/exclusions at L4 (CR-BP-102) — see children
+
 
 ## 7. Technical Metadata
 

@@ -124,3 +124,7 @@ outputs:
   description: 'Derived from the record''s documented outcome: The proposition, product or service is
     no longer operationally relied upon; residual obligations are identified and routed.'
   consumer: Downstream consumers per the documented outcome
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Transition a proposition, product or service out of operational service in a controlled manner: withdrawal planning, stakeholder transition, and removal from …'

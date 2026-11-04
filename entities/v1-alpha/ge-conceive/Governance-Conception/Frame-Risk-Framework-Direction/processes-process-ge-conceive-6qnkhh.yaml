@@ -137,3 +137,7 @@ outputs:
     appetite, tolerance bands, and governance posture defined, setting the strategic direction for risk
     frame'
   consumer: The enterprise state the process changes
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Frame Risk Framework Direction (conceive stage, strategic process). Landed by CR-BP-21f.1 from the GovernanceAndExistence register v2.'

@@ -39,6 +39,8 @@ This directory hosts the canonical Activity record for `processes:activity-pr-bu
 | `cohesion_rationale` | string | no | Constituent work shares a single tuning concern (initial response to calibrated program), one input class (initial … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
+| `inputs` | array[1] | no | array of 1 item(s) |
+| `outputs` | array[1] | no | array of 1 item(s) |
 
 **Relationships**
 
@@ -67,7 +69,11 @@ This directory hosts the canonical Activity record for `processes:activity-pr-bu
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Inputs**:
+- Working inputs of the composing tasks (intake task: Calibrate Demand Programs Intake) (?, mandatory)
+
+**Outputs**:
+- Contribution to parent outcome (concluding task: Calibrate Demand Programs Audit Record) (?)
 
 **Roles and Responsibilities**
 

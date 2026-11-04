@@ -136,3 +136,7 @@ outputs:
   description: 'The state change documented in the outcome: The policy and control framework is improved
     with gaps measured, standards updated, and compliance posture strengthened.'
   consumer: The enterprise state the process changes
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Improve Policy and Control Framework (improve stage, standardization process). Landed by CR-BP-21f.1 from the GovernanceAndExistence register v2.'

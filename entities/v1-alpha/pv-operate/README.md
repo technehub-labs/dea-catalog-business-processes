@@ -138,6 +138,8 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `established_at` | string | no | 2026-09-08 |
 | `change_history` | array[3] | no | array of 3 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `governance` | object | no | object: roles, provenance |
+| `metrics` | object | no | object: performance, risk, compliance |
 
 **Relationships**
 
@@ -163,13 +165,25 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 - Partner alliance programme (party-relationship x operate; adjacent domain)
 - Workforce operation (agency-organization x operate; adjacent domain)
 
-**Roles and Responsibilities**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+- Product & Value Process Owner (GOV-002 role-based; domain-level owner for the Product & Value contexts)
+
+**Business Rules and Controls**
+
+- Governing charter concern (enterprise): Product & Value: the steady-state operation of the enterprise's product portfolio.
+- Lifecycle control scope (charter): Operate: operating product catalogue, portfolio performance, and proposition lifecycle.
+- Governing outcomes (4; the compliance baseline for this context): Product catalogue is operated across the portfolio.; Portfolio performance is managed against targets.; Proposition …
 
 **Target Metrics and Indicators**
 
-_(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+Standardised metrics required to measure the health, efficiency, and compliance of this ProcessContext. Authored under the EXT-04 workstream; completeness validated under EXT-06.
+
+| Category | Metric / Indicator Name | Target / Threshold | Measurement Frequency |
+| :--- | :--- | :--- | :--- |
+| **KPI (Performance)** | Operate effectiveness — Product catalogue is operated across the portfolio. | Continuous operation within charter scope | continuous; quarterly review |
+| **KRI (Risk)** | Adjacent-context leakage — pv-Operate exclusions: Product development (Build stage; adjacent context) | none observed at governance review | quarterly |
+| **KCI (Compliance)** | Charter and regulatory evidence currency — Product & Value x Operate | evidence refreshed per governance cadence; owner confirmation due 2026-12-31 | semi-annual |
 
 ## 8. Technical Metadata
 

@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://technehub-labs.github.io/dea-catalog-processes/schemas/entities/task.schema.json",
   "title": "Task",
-  "description": "Schema for Task (L4) entries in technehub-labs/dea-catalog-processes. CR-BP-98; supersedes the `# TODO(CR-BP-98):` placeholders in `templates/task.yaml` (CR-BP-94). A Task is the lowest semantic level of process decomposition (CR-BP-93 §7). Tasks are bounded, actionable, single-responsibility, and independently verifiable for completion. ID family: `dea:task-*` (CR-BP-04 §4).",
+  "description": "Schema for Task (L4) entries in technehub-labs/dea-catalog-processes. CR-BP-98; supersedes the `# TODO(CR-BP-98):` placeholders in `templates/task.yaml` (CR-BP-94). A Task is the lowest semantic level of process decomposition (CR-BP-93 \u00a77). Tasks are bounded, actionable, single-responsibility, and independently verifiable for completion. ID family: `dea:task-*` (CR-BP-04 \u00a74).",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -27,7 +27,7 @@
     "id": {
       "type": "string",
       "pattern": "^processes:task-[a-z0-9-]+$",
-      "description": "Stable Task id. CR-BP-04 §4 family. Convention: `dea:task-<kebab-name>`. Must be stable across renames."
+      "description": "Stable Task id. CR-BP-04 \u00a74 family. Convention: `dea:task-<kebab-name>`. Must be stable across renames."
     },
     "name": {
       "type": "string",
@@ -44,7 +44,7 @@
     "belongs_to_activity": {
       "type": "string",
       "pattern": "^processes:activity-[a-z0-9-]+$",
-      "description": "The single parent L3 Activity this Task belongs to. Per CR-BP-93 §7: `L4 is composed by exactly one parent L3 Activity`."
+      "description": "The single parent L3 Activity this Task belongs to. Per CR-BP-93 \u00a77: `L4 is composed by exactly one parent L3 Activity`."
     },
     "trigger": {
       "type": "string",
@@ -56,12 +56,12 @@
       "type": "string",
       "minLength": 1,
       "maxLength": 1000,
-      "description": "The completion state. Verifiable for completion. Per CR-BP-93 §9: at L4, `Outcomes` is `Completion state`."
+      "description": "The completion state. Verifiable for completion. Per CR-BP-93 \u00a79: at L4, `Outcomes` is `Completion state`."
     },
     "responsibility": {
       "type": "string",
       "maxLength": 1000,
-      "description": "Bounded responsibility: one role or capability. Per CR-BP-93 §9: `Responsibility` is `Required` at L4."
+      "description": "Bounded responsibility: one role or capability. Per CR-BP-93 \u00a79: `Responsibility` is `Required` at L4."
     },
     "boundary": {
       "type": "object",
@@ -69,32 +69,61 @@
       "properties": {
         "inclusions": {
           "type": "array",
-          "items": { "type": "string", "minLength": 1, "maxLength": 500 }
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          }
         },
         "exclusions": {
           "type": "array",
-          "items": { "type": "string", "minLength": 1, "maxLength": 500 }
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          }
         }
       },
-      "description": "Inclusions / exclusions. Per CR-BP-93 §9: `Boundary` is `Required` at L4."
+      "description": "Inclusions / exclusions. Per CR-BP-93 \u00a79: `Boundary` is `Required` at L4."
     },
     "evidence": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["source", "claim"],
+        "required": [
+          "source",
+          "claim"
+        ],
         "properties": {
-          "source": { "type": "string", "minLength": 1, "maxLength": 500 },
-          "claim": { "type": "string", "minLength": 1, "maxLength": 1000 },
+          "source": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          },
+          "claim": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
           "strength": {
             "type": "string",
-            "enum": ["E0", "E1", "E2", "E3", "E4", "E5"]
+            "enum": [
+              "E0",
+              "E1",
+              "E2",
+              "E3",
+              "E4",
+              "E5"
+            ]
           },
-          "url": { "type": "string", "format": "uri" }
+          "url": {
+            "type": "string",
+            "format": "uri"
+          }
         },
         "additionalProperties": false
       },
-      "description": "Structured evidence per CR-BP-92 §13 evidence-strength scale (E0..E5)."
+      "description": "Structured evidence per CR-BP-92 \u00a713 evidence-strength scale (E0..E5)."
     },
     "version": {
       "type": "string",
@@ -103,12 +132,24 @@
     },
     "lifecycle_status": {
       "type": "string",
-      "enum": ["candidate", "active", "deprecated", "retired"],
+      "enum": [
+        "candidate",
+        "active",
+        "deprecated",
+        "retired"
+      ],
       "description": "Entity lifecycle. Distinct from documentation lifecycle."
     },
     "status": {
       "type": "string",
-      "enum": ["candidate", "proposed", "accepted", "active", "deprecated", "retired"],
+      "enum": [
+        "candidate",
+        "proposed",
+        "accepted",
+        "active",
+        "deprecated",
+        "retired"
+      ],
       "description": "Discovery status (CR-BP-11 dispositions)."
     },
     "ecfConformance": {
@@ -122,28 +163,60 @@
         "canonicalReferences"
       ],
       "properties": {
-        "framework": { "type": "string", "const": "EnterpriseConceptFramework" },
-        "contractVersion": { "type": "string" },
-        "profile": { "type": "string", "const": "dea:ecf@1.0.0" },
+        "framework": {
+          "type": "string",
+          "const": "EnterpriseConceptFramework"
+        },
+        "contractVersion": {
+          "type": "string"
+        },
+        "profile": {
+          "type": "string",
+          "const": "dea:ecf@1.0.0"
+        },
         "status": {
           "type": "string",
-          "enum": ["conformant", "non-conformant", "held-unmapped"]
+          "enum": [
+            "conformant",
+            "non-conformant",
+            "held-unmapped"
+          ]
         },
         "affiliation": {
           "type": "string",
-          "enum": ["mapped", "held-unmapped", "inherits-catalog"]
+          "enum": [
+            "mapped",
+            "held-unmapped",
+            "inherits-catalog"
+          ]
         },
-        "rationaleRef": { "type": "string" },
+        "rationaleRef": {
+          "type": "string"
+        },
         "canonicalReferences": {
           "type": "array",
           "items": {
             "type": "object",
-            "required": ["kind", "domain", "stage", "identifier"],
+            "required": [
+              "kind",
+              "domain",
+              "stage",
+              "identifier"
+            ],
             "properties": {
-              "kind": { "type": "string", "const": "coordinate" },
-              "domain": { "type": "string" },
-              "stage": { "type": "string" },
-              "identifier": { "type": "string" }
+              "kind": {
+                "type": "string",
+                "const": "coordinate"
+              },
+              "domain": {
+                "type": "string"
+              },
+              "stage": {
+                "type": "string"
+              },
+              "identifier": {
+                "type": "string"
+              }
             },
             "additionalProperties": false
           }
@@ -155,17 +228,33 @@
     "metadata": {
       "type": "object",
       "properties": {
-        "established_by": { "type": "string" },
-        "established_at": { "type": "string", "format": "date" },
+        "established_by": {
+          "type": "string"
+        },
+        "established_at": {
+          "type": "string",
+          "format": "date"
+        },
         "change_history": {
           "type": "array",
           "items": {
             "type": "object",
-            "required": ["cr", "date", "change"],
+            "required": [
+              "cr",
+              "date",
+              "change"
+            ],
             "properties": {
-              "cr": { "type": "string" },
-              "date": { "type": "string", "format": "date" },
-              "change": { "type": "string" }
+              "cr": {
+                "type": "string"
+              },
+              "date": {
+                "type": "string",
+                "format": "date"
+              },
+              "change": {
+                "type": "string"
+              }
             },
             "additionalProperties": false
           }
@@ -178,13 +267,86 @@
       "description": "Navigation links to related artifacts.",
       "items": {
         "type": "object",
-        "required": ["rel", "href"],
+        "required": [
+          "rel",
+          "href"
+        ],
         "properties": {
-          "rel": { "type": "string" },
-          "href": { "type": "string" }
+          "rel": {
+            "type": "string"
+          },
+          "href": {
+            "type": "string"
+          }
         },
         "additionalProperties": false
       }
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "description": "CR-BP-96/EXT-12 IO entry (CR-BP-225: id/name/description baseline + source/mandatory).",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "mandatory": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "description"
+        ]
+      },
+      "description": "EXT-12 \u00a79 working inputs (CR-BP-225: task working objects / activity working inputs, derived from the record's own fields and child tasks)."
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "description": "CR-BP-96/EXT-12 IO entry (CR-BP-225: id/name/description baseline + source/mandatory).",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "mandatory": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "description"
+        ]
+      },
+      "description": "EXT-12 \u00a79 outputs (CR-BP-225: contribution to the parent result, from the record's own outcome/concluding task)."
     }
   }
 }

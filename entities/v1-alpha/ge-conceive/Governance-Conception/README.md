@@ -74,7 +74,18 @@ Strategy & Direction directs within the authorized frame").
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Charter and mandate conception
+- Policy and standards conception
+- Board mandate conception
+- Risk and control framework direction
+
+**Excludes**:
+- Strategic direction choices (strategy-direction x conceive)
+- Corporate strategy development (strategy-direction x conceive; CR-BP-21a)
+- Governance system design (Design stage; adjacent context)
+- Governance body establishment (Build stage; adjacent context)
+- Governance oversight (Operate stage)
 
 **Roles and Responsibilities**
 

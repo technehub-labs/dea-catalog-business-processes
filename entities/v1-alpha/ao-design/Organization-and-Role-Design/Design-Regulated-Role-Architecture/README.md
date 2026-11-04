@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-ao-desi
 
 **Intent**: manage
 
-**Definition**: Design the regulator-tied role catalogue and competency framework entries under the enterprise regulated-entity approval authority. The trigger is the decision that the role catalogue will include regulator-licensed roles. The outcome is a regulator-tied role catalogue committed, with each licensed-role entry aligned to its regulator's continuing-supervision framework, its competency and fitness-and-propriety attestation regime documented, its supervised-training completion requirements documented, and its continuing-supervisor notification path documented.
+**Definition**: Design the regulator-tied role catalogue and competency framework entries under the enterprise regulated-entity approval authority. The trigger is the decision …
 
 ## 3. Governance and Provenance
 
@@ -53,6 +53,7 @@ This directory hosts the canonical Process record for `processes:process-ao-desi
 | `stakeholders` | array[1] | no | array of 1 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
+| `definition` | string | no | Design the regulator-tied role catalogue and competency framework entries under the enterprise regulated-entity … |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)
@@ -82,7 +83,11 @@ This directory hosts the canonical Process record for `processes:process-ao-desi
 - Actor: organization design authority
 - Stakeholder: organization design authority
 
-**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+**Business Rules and Controls**
+
+- Controls governed at the Process Group level (the record's `process_context` cell charter; CR-BP-02)
+- Work bounds governed by the decomposition: cohesion controls at L3 (CR-BP-32 §6), boundary inclusions/exclusions at L4 (CR-BP-102) — see children
+
 
 ## 7. Technical Metadata
 

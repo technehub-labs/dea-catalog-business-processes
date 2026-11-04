@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-fa-acti
 
 **Intent**: manage
 
-**Definition**: Activate a billing or revenue-recognition capability under the enterprise's regulated-entity approval authority within the processes:pc-fa-activate-yrhcfm Cell Charter. The trigger is a regulator-acknowledged accounting or rate framework gating live invoicing or revenue recognition; the outcome is the capability live on the regulated billing record with the supervisor's continuing-oversight relationship active and operational controls running, so that the billing or revenue-recognition capability moves from regulator-acknowledged-but-not-live to regulator-acknowledged-and-live. Distinct from general capability build (Build coordinate) and from steady-state billing (Operate coordinate).
+**Definition**: Activate a billing or revenue-recognition capability under the enterprise's regulated-entity approval authority within the processes:pc-fa-activate-yrhcfm Cell …
 
 ## 3. Governance and Provenance
 
@@ -55,6 +55,7 @@ This directory hosts the canonical Process record for `processes:process-fa-acti
 | `stakeholders` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `definition` | string | no | Activate a billing or revenue-recognition capability under the enterprise's regulated-entity approval authority within … |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)

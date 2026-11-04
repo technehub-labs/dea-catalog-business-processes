@@ -157,3 +157,7 @@ outputs:
   name: Provisioned acquisition channel configuration
   consumer: Channel platforms
   description: Provisioned acquisition channel configuration
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Operate the Build Customer Acquisition Channels L2 process within the processes:pc-pr-build-a46hp7 Cell Charter. See trigger and outcome for the bounded work …'

@@ -137,3 +137,7 @@ outputs:
   description: 'The state change documented in the outcome: The innovation experiment is designed with
     hypothesis, success criteria, and timebox.'
   consumer: The enterprise state the process changes
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Operate the Design Innovation Experiment L2 process within the processes:pc-pv-design-8dhwpn Cell Charter. See trigger and outcome for the bounded work this …'

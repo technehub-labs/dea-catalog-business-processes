@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-ao-oper
 
 **Intent**: manage
 
-**Definition**: Operate the regulator-aligned continuing-compliance oversight of regulator-licensed roles under the enterprise regulated-entity approval authority. The trigger is the regulator-licensed role becoming live on the regulated personnel record. The outcome is regulator-aligned compliance evidence current and auditable on the regulated personnel record: continuing-supervisor notification, conduct-rule compliance (FCA SMCR COCON, FINRA Rule 3110, FAA Part 117, EU AI Act Article 14), fitness-and-propriety annual attestations, hours-of-work and rest-rule compliance, and continuing-competence tracking (state bar MCLE, state healthcare CME, NAIC CE).
+**Definition**: Operate the regulator-aligned continuing-compliance oversight of regulator-licensed roles under the enterprise regulated-entity approval authority. The trigger …
 
 ## 3. Governance and Provenance
 
@@ -53,6 +53,7 @@ This directory hosts the canonical Process record for `processes:process-ao-oper
 | `stakeholders` | array[1] | no | array of 1 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `definition` | string | no | Operate the regulator-aligned continuing-compliance oversight of regulator-licensed roles under the enterprise … |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)
@@ -81,7 +82,11 @@ This directory hosts the canonical Process record for `processes:process-ao-oper
 - Actor: workforce management
 - Stakeholder: workforce management
 
-**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+**Business Rules and Controls**
+
+- Controls governed at the Process Group level (the record's `process_context` cell charter; CR-BP-02)
+- Work bounds governed by the decomposition: cohesion controls at L3 (CR-BP-32 §6), boundary inclusions/exclusions at L4 (CR-BP-102) — see children
+
 
 ## 7. Technical Metadata
 

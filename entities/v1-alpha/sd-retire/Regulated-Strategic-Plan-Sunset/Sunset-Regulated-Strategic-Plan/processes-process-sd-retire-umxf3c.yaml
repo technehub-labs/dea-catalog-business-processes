@@ -216,3 +216,7 @@ outputs:
     sunset with the regulator directive on record, the replacement plan''s status preserved, the retired
     plan''s records retained per the regulat'
   consumer: Downstream consumers per the documented outcome
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Sunset a regulated entity''s supervisor-acknowledged-and-live strategic plan under the enterprise''s regulated-entity retention policy within the …'

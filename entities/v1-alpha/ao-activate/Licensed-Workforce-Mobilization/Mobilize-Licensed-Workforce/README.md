@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-ao-acti
 
 **Intent**: manage
 
-**Definition**: Mobilize a licensed or regulated workforce under the enterprise regulated-entity approval authority within the processes:pc-ao-activate-kusw2u Cell Charter. The trigger is the enterprise regulated-entity approval for a licensed role; the outcome is the live-readiness activation of the licensed role with the supervisor-controlled scope preserved (signing authority or controlled-function designation), fitness-and-propriety attestation recorded, supervised-training completion preserved, and continuing-supervisor notification activated, so that the licensed individual is live on the regulated personnel record under the regulator continuing supervision.
+**Definition**: Mobilize a licensed or regulated workforce under the enterprise regulated-entity approval authority within the processes:pc-ao-activate-kusw2u Cell Charter …
 
 ## 3. Governance and Provenance
 
@@ -55,6 +55,7 @@ This directory hosts the canonical Process record for `processes:process-ao-acti
 | `stakeholders` | array[6] | no | array of 6 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `definition` | string | no | Mobilize a licensed or regulated workforce under the enterprise regulated-entity approval authority within the … |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)
@@ -93,7 +94,11 @@ This directory hosts the canonical Process record for `processes:process-ao-acti
 - Stakeholder: operations function
 - Stakeholder: product management
 
-**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+**Business Rules and Controls**
+
+- Controls governed at the Process Group level (the record's `process_context` cell charter; CR-BP-02)
+- Work bounds governed by the decomposition: cohesion controls at L3 (CR-BP-32 §6), boundary inclusions/exclusions at L4 (CR-BP-102) — see children
+
 
 ## 7. Technical Metadata
 

@@ -66,7 +66,14 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-i
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Strategic direction adaptation
+- Objectives and targets refresh
+- Strategy effectiveness review
+
+**Excludes**:
+- Capability improvement (owning domains)
+- Strategic steering operation (Operate stage; adjacent context)
 
 **Roles and Responsibilities**
 

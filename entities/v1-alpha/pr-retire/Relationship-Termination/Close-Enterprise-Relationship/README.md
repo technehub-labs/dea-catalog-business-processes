@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-pr-reti
 
 **Intent**: transform
 
-**Definition**: Close out an enterprise relationship with a customer, supplier or partner: settle the contract, offboard the party, and resolve residual obligations, records and rights, within the processes:pc-pr-retire-2cusde Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces.
+**Definition**: Close out an enterprise relationship with a customer, supplier or partner: settle the contract, offboard the party, and resolve residual obligations, records …
 
 ## 3. Governance and Provenance
 
@@ -55,6 +55,7 @@ This directory hosts the canonical Process record for `processes:process-pr-reti
 | `stakeholders` | array[3] | no | array of 3 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `definition` | string | no | Close out an enterprise relationship with a customer, supplier or partner: settle the contract, offboard the party, and … |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)
@@ -87,7 +88,11 @@ This directory hosts the canonical Process record for `processes:process-pr-reti
 - Stakeholder: customer relationship management
 - Stakeholder: supplier and partner management
 
-**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+**Business Rules and Controls**
+
+- Controls governed at the Process Group level (the record's `process_context` cell charter; CR-BP-02)
+- Work bounds governed by the decomposition: cohesion controls at L3 (CR-BP-32 §6), boundary inclusions/exclusions at L4 (CR-BP-102) — see children
+
 
 ## 7. Technical Metadata
 

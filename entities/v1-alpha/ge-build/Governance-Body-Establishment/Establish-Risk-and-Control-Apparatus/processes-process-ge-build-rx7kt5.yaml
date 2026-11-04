@@ -135,3 +135,7 @@ outputs:
     with registers, monitoring tooling, and reporting lines delivered, ready to operate in the Operate
     context.'
   consumer: The enterprise state the process changes
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Establish Risk and Control Apparatus (build stage, core process). Landed by CR-BP-21f.1 from the GovernanceAndExistence register v2.'

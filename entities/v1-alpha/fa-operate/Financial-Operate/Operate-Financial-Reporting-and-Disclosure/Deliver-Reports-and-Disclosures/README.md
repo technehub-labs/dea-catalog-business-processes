@@ -39,6 +39,8 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 | `cohesion_rationale` | string | no | Constituent work shares a single delivery concern (reviewed package to consumer), one artifact (the reporting package) … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
+| `inputs` | array[1] | no | array of 1 item(s) |
+| `outputs` | array[1] | no | array of 1 item(s) |
 
 **Relationships**
 
@@ -67,7 +69,11 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Inputs**:
+- Working inputs of the composing tasks (intake task: Deliver Reports and Disclosures Intake) (?, mandatory)
+
+**Outputs**:
+- Contribution to parent outcome (concluding task: Deliver Reports and Disclosures Audit Record) (?)
 
 **Roles and Responsibilities**
 

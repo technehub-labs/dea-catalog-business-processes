@@ -83,7 +83,16 @@ scope.
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Finance strategy framing
+- Monetary model framing
+- Funding and capital approach framing
+
+**Excludes**:
+- Strategic investment choices (strategy-direction x conceive)
+- Investment strategy governance (governance-existence x conceive)
+- Financial planning design (Design stage; adjacent context)
+- Finance capability build (Build stage; adjacent context)
 
 **Roles and Responsibilities**
 

@@ -64,7 +64,23 @@ certification).
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Regulator-acknowledged run-off authorisation (PRA, FCA, NAIC, IAIS, EIOPA member authorities)
+- Run-off plan submission within the controlling regulator's window (28-day window under PRA PS20/24)
+- Statutory accounting basis transition: going-concern to liquidation-basis (ASC 205-30) or fulfillment-measurement (IFRS 17 run-off treatment)
+- Reserving, capital adequacy, and asset-liability matching throughout the run-off period
+- Policyholder priority creditor treatment and policyholder claim adjudication and payment
+- Communications to policyholders and stakeholders
+- Retained-records and service-of-process obligations
+- Tax-clearance and statutory liability settlement
+- Solvent exit certification or run-off completion certification
+
+**Excludes**:
+- Pre-run-off financial stewardship (Operate coordinate)
+- Physical asset decommissioning (EnablementAndOperations x Retire; CR-BP-66)
+- Counterparty and agent relationship closure (PartyAndRelationship x Retire; CR-BP-67)
+- Product line retirement (ProductAndValue x Retire; CR-BP-67 adjacent)
+- Non-insurance regulated wind-downs (banks under PRA BRRD / FDIC OLA, pension funds under PBGC termination) -- deferred to a future CR
 
 **Roles and Responsibilities**
 

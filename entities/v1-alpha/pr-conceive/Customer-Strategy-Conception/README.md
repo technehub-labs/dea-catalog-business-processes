@@ -64,7 +64,16 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pr-c
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Customer strategy framing
+- Market segmentation
+- Demand thesis development
+- Customer portfolio thesis
+
+**Excludes**:
+- Customer experience design (Design stage; adjacent context)
+- Channel build (Build stage; adjacent context)
+- Active customer relationship operation (Operate stage)
 
 **Roles and Responsibilities**
 

@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-eo-oper
 
 **Intent**: operate
 
-**Definition**: Operate the Operate Quality Control L2 process within the processes:pc-eo-operate-ydqb96 Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces.
+**Definition**: Operate the Operate Quality Control L2 process within the processes:pc-eo-operate-ydqb96 Cell Charter. See trigger and outcome for the bounded work this …
 
 ## 3. Governance and Provenance
 
@@ -55,6 +55,7 @@ This directory hosts the canonical Process record for `processes:process-eo-oper
 | `stakeholders` | array[1] | no | array of 1 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `definition` | string | no | Operate the Operate Quality Control L2 process within the processes:pc-eo-operate-ydqb96 Cell Charter. See trigger and … |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)
@@ -84,7 +85,11 @@ This directory hosts the canonical Process record for `processes:process-eo-oper
 - Actor: product management
 - Stakeholder: product management
 
-**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+**Business Rules and Controls**
+
+- Controls governed at the Process Group level (the record's `process_context` cell charter; CR-BP-02)
+- Work bounds governed by the decomposition: cohesion controls at L3 (CR-BP-32 §6), boundary inclusions/exclusions at L4 (CR-BP-102) — see children
+
 
 ## 7. Technical Metadata
 

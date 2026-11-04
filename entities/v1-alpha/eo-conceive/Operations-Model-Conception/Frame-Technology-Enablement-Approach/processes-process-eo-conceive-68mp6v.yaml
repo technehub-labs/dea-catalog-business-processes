@@ -133,3 +133,7 @@ outputs:
   description: 'Derived from the record''s documented outcome: The technology enablement approach is framed
     with platform families and sourcing principles.'
   consumer: Downstream consumers per the documented outcome
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Operate the Frame Technology Enablement Approach L2 process within the processes:pc-eo-conceive-mxmtzq Cell Charter. See trigger and outcome for the bounded …'

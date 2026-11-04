@@ -76,7 +76,18 @@ authorises; strategy-direction x conceive directs).
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Purpose and ambition conception
+- Strategic intent conception
+- Strategic horizons framing
+- Corporate strategy development
+
+**Excludes**:
+- Constitutional mandate and authority (governance-existence x conceive)
+- Charter and policy conception (governance-existence x conceive)
+- Strategic option design (Design stage; adjacent context)
+- Strategic plan and roadmap build (Build stage; adjacent context)
+- Initiative execution (enablement-operations)
 
 **Roles and Responsibilities**
 

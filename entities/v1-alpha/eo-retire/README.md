@@ -95,6 +95,8 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 | `established_at` | string | no | 2026-09-14 |
 | `change_history` | array[2] | no | array of 2 item(s) |
 | `links` | array[3] | no | array of 3 item(s) |
+| `governance` | object | no | object: roles, provenance |
+| `metrics` | object | no | object: performance, risk, compliance |
 
 **Relationships**
 
@@ -118,13 +120,25 @@ _(Full L4 task lists for each L3 activity are available in their respective subd
 - Asset improvement and upgrade (Improve stage; adjacent context)
 - Product and service withdrawal (ProductAndValue x Retire; sibling cell)
 
-**Roles and Responsibilities**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+**Roles and Responsibilities**
 
-**Business Rules and Controls**: _(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+- Enablement & Operations Process Owner (GOV-002 role-based; domain-level owner for the Enablement & Operations contexts)
+
+**Business Rules and Controls**
+
+- Governing charter concern (enterprise): Enablement & Operations: the withdrawal and retirement of operational assets.
+- Lifecycle control scope (charter): Retire: retirement planning, isolation and withdrawal, decommissioning and disposal, residual resolution.
+- Governing outcomes (3; the compliance baseline for this context): Assets are withdrawn from operation under approved retirement plans.; Decommissioning and disposal are executed with …
 
 **Target Metrics and Indicators**
 
-_(standing item: tracked in the documentation improvement backlog; closure under CR-BP-94-EXT-24, due 2026-12-31)_
+Standardised metrics required to measure the health, efficiency, and compliance of this ProcessContext. Authored under the EXT-04 workstream; completeness validated under EXT-06.
+
+| Category | Metric / Indicator Name | Target / Threshold | Measurement Frequency |
+| :--- | :--- | :--- | :--- |
+| **KPI (Performance)** | Retire effectiveness — Assets are withdrawn from operation under approved retirement plans. | Orderly wind-down; records preserved per retention policy | per retirement |
+| **KRI (Risk)** | Adjacent-context leakage — eo-Retire exclusions: Asset acquisition and build (Build stage; adjacent context) | none observed at governance review | quarterly |
+| **KCI (Compliance)** | Charter and regulatory evidence currency — Enablement & Operations x Retire | evidence refreshed per governance cadence; owner confirmation due 2026-12-31 | semi-annual |
 
 ## 8. Technical Metadata
 

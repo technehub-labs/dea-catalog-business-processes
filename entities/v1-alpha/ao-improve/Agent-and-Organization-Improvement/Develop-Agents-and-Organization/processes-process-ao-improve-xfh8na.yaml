@@ -146,3 +146,7 @@ outputs:
   description: 'The state change documented in the outcome: Agents and organization are developed through
     engagement review, capability gap analysis, reorganization, and agent performance improvement.'
   consumer: The enterprise state the process changes
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Operate the Develop Agents and Organization L2 process within the processes:pc-ao-improve-qkmh6b Cell Charter. See trigger and outcome for the bounded work …'

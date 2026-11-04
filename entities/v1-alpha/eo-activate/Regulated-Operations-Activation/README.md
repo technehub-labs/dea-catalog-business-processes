@@ -64,7 +64,21 @@ steady-state operation.
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Regulator-issued authorization or certification gating (EASA / FAA Air Operator Certificate; PSD2 / ECB / PRA payment-institution authorization; EMA / FDA / MHRA GMP certification; FAA Part 119 air carrier authorization; MiCA crypto-asset-service-provider authorization; ORR / ERA rail safety-case authorization; nuclear operations authorization; payments-issuer authorization under PSD2 Article 11)
+- Operations capability description and readiness-assessment evidence (supervised-test records, operational-control framework, service-level commitments to customers or counterparties)
+- Continuing-supervisor notification activation under the regulator's continuing oversight regime
+- Operations manuals and runbooks live under the regulator's continuing oversight
+- Operational controls (incident management, capacity, security, compliance) live on the regulated operations record
+- Regulated operations record entry preserved for the activated operations capability
+
+**Excludes**:
+- Operations capability conception and design (EnablementAndOperations x Conceive / Design)
+- Operations capability build and configuration (EnablementAndOperations x Build)
+- Steady-state operations performance management (EnablementAndOperations x Operate)
+- Operations capability decommission and deregistration (EnablementAndOperations x Retire; CR-BP-78 adjacent cells)
+- Non-regulated operations-capability activation (internal-product go-live without regulator's authorization): remains RECORD-PATTERN or MERGE per CR-BP-63 baseline
+- Capabilities sourcing or licensing absent a regulator-issued authorization regime
 
 **Roles and Responsibilities**
 

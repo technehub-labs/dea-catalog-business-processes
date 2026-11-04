@@ -61,16 +61,23 @@
     },
     "scope": {
       "type": "object",
-      "required": ["includes", "excludes"],
+      "required": [
+        "includes",
+        "excludes"
+      ],
       "properties": {
         "includes": {
           "type": "array",
-          "items": {"type": "string"},
+          "items": {
+            "type": "string"
+          },
           "description": "Explicitly included enterprise responsibilities."
         },
         "excludes": {
           "type": "array",
-          "items": {"type": "string"},
+          "items": {
+            "type": "string"
+          },
           "description": "Explicitly excluded responsibilities (belong in adjacent contexts)."
         }
       },
@@ -78,7 +85,9 @@
     },
     "outcomes": {
       "type": "array",
-      "items": {"type": "string"},
+      "items": {
+        "type": "string"
+      },
       "description": "Intended enterprise outcomes for this context."
     },
     "adjacent_contexts": {
@@ -87,7 +96,7 @@
         "type": "string",
         "pattern": "^processes:pc-[a-z0-9-]+$"
       },
-      "description": "References to other Process Context ids (dea:pc-...) that have legitimate relationships with this one. Relationships do NOT imply duplicated ownership (CR-BP-02 §11)."
+      "description": "References to other Process Context ids (dea:pc-...) that have legitimate relationships with this one. Relationships do NOT imply duplicated ownership (CR-BP-02 \u00a711)."
     },
     "processes": {
       "type": "array",
@@ -95,7 +104,7 @@
         "type": "string",
         "pattern": "^processes:process-[a-z0-9-]+$"
       },
-      "description": "References to canonical Business Process specialization entries belonging to this context. Must resolve to dea:BusinessProcess specialization ids (PC-008 / BP-SPEC-01-002). CR-BP-02 explicitly does NOT populate this list — process discovery is gated on the context being established first."
+      "description": "References to canonical Business Process specialization entries belonging to this context. Must resolve to dea:BusinessProcess specialization ids (PC-008 / BP-SPEC-01-002). CR-BP-02 explicitly does NOT populate this list \u2014 process discovery is gated on the context being established first."
     },
     "cell_charter": {
       "type": "object",
@@ -109,8 +118,12 @@
         "adjacent_boundaries"
       ],
       "properties": {
-        "enterprise_concern": {"type": "string"},
-        "lifecycle_concern": {"type": "string"},
+        "enterprise_concern": {
+          "type": "string"
+        },
+        "lifecycle_concern": {
+          "type": "string"
+        },
         "combined_semantic_meaning": {
           "type": "string",
           "minLength": 1,
@@ -118,22 +131,30 @@
         },
         "expected_outcomes": {
           "type": "array",
-          "items": {"type": "string"}
+          "items": {
+            "type": "string"
+          }
         },
         "inclusions": {
           "type": "array",
-          "items": {"type": "string"}
+          "items": {
+            "type": "string"
+          }
         },
         "exclusions": {
           "type": "array",
-          "items": {"type": "string"}
+          "items": {
+            "type": "string"
+          }
         },
         "adjacent_boundaries": {
           "type": "array",
-          "items": {"type": "string"}
+          "items": {
+            "type": "string"
+          }
         }
       },
-      "description": "Cell Charter (CR-BP-02 §7): the discovery and validation instrument for this context. PC-006 / AC-04 / AC-05 enforce."
+      "description": "Cell Charter (CR-BP-02 \u00a77): the discovery and validation instrument for this context. PC-006 / AC-04 / AC-05 enforce."
     },
     "status": {
       "type": "string",
@@ -146,11 +167,81 @@
         "revised",
         "deprecated"
       ],
-      "description": "Process Context lifecycle status (CR-BP-02 §17). Defaults: 'defined' once the cell charter is complete; 'established' once the validation gate has confirmed it."
+      "description": "Process Context lifecycle status (CR-BP-02 \u00a717). Defaults: 'defined' once the cell charter is complete; 'established' once the validation gate has confirmed it."
     },
     "metadata": {
       "type": "object"
+    },
+    "governance": {
+      "type": "object",
+      "description": "Operational governance block (EXT-24 L0 register): role assignment + provenance.",
+      "properties": {
+        "roles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Governance roles assigned to this context (GOV-002 role-based)."
+        },
+        "provenance": {
+          "type": "object",
+          "description": "Assignment provenance: source CR, assertion date, review_due."
+        }
+      },
+      "required": [
+        "roles"
+      ]
+    },
+    "metrics": {
+      "type": "object",
+      "description": "Target metrics register (EXT-24 L0 register; CR-BP-120 metrics shape): KPI/KRI/KCI entries.",
+      "properties": {
+        "performance": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/metricEntry"
+          },
+          "description": "KPI entries."
+        },
+        "risk": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/metricEntry"
+          },
+          "description": "KRI entries."
+        },
+        "compliance": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/metricEntry"
+          },
+          "description": "KCI entries."
+        }
+      }
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "definitions": {
+    "metricEntry": {
+      "type": "object",
+      "description": "One metric/indicator entry (name, directional target, measurement frequency).",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "target": {
+          "type": "string"
+        },
+        "frequency": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "target",
+        "frequency"
+      ],
+      "additionalProperties": false
+    }
+  }
 }
