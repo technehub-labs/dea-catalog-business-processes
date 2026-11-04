@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-ge-acti
 
 **Intent**: transform
 
-**Definition**: Bring an adopted policy instrument, mandate or charter from adopted-but-dormant to in-force: verify commencement conditions, promulgate the instrument, and confirm effectiveness, within the processes:pc-ge-activate-hxtfcv Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces.
+**Definition**: Bring an adopted policy instrument, mandate or charter from adopted-but-dormant to in-force: verify commencement conditions, promulgate the instrument, and …
 
 ## 3. Governance and Provenance
 
@@ -55,6 +55,7 @@ This directory hosts the canonical Process record for `processes:process-ge-acti
 | `stakeholders` | array[1] | no | array of 1 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `definition` | string | no | Bring an adopted policy instrument, mandate or charter from adopted-but-dormant to in-force: verify commencement … |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)

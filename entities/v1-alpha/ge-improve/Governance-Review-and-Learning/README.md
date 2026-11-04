@@ -67,7 +67,16 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-i
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Governance effectiveness review
+- Audit finding scoring
+- Policy regime refinement
+- Lessons-learned propagation
+
+**Excludes**:
+- Governance operation (Operate stage)
+- Strategy framing (Conceive stage)
+- Governance system design (Design stage)
 
 **Roles and Responsibilities**
 

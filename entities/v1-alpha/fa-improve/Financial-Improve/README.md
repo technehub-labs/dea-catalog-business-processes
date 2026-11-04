@@ -68,7 +68,14 @@ This directory hosts the canonical ProcessGroup record for `processes:group-fa-i
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Financial controls and policy refinement
+- Treasury and funding model evolution
+- Policy compliance audit (seeded by CR-BP-21e)
+- Cost optimisation review (seeded by CR-BP-21e)
+
+**Excludes**:
+- Financial operations (Operate stage; adjacent context)
 
 **Roles and Responsibilities**
 

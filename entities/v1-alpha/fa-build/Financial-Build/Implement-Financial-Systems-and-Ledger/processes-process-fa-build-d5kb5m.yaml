@@ -131,3 +131,7 @@ outputs:
   description: 'The state change documented in the outcome: Financial systems and ledger are implemented
     with chart of accounts, posting rules, and reports deployed to operate general ledger.'
   consumer: The enterprise state the process changes
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Implement Financial Systems and Ledger (build stage, core process). Landed by CR-BP-21e.1 from the FinanceAndAccounting register v2.'

@@ -133,3 +133,7 @@ outputs:
   description: 'The state change documented in the outcome: Financial controls and policies are refined
     based on audit findings and incidents, governed by the policy review cycle.'
   consumer: The enterprise state the process changes
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Refine Financial Controls and Policies (improve stage, management process). Landed by CR-BP-21e.1 from the FinanceAndAccounting register v2.'

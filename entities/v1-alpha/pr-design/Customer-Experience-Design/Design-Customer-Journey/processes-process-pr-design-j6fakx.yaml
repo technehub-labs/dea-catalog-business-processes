@@ -169,3 +169,7 @@ outputs:
   description: 'The state change documented in the outcome: A customer journey design with articulated
     stages, moments-of-truth, and handoff points is committed.'
   consumer: The enterprise state the process changes
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Operate the Design Customer Journey L2 process within the processes:pc-pr-design-hrcdy4 Cell Charter. See trigger and outcome for the bounded work this process …'

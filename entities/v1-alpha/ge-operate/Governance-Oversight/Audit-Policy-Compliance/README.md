@@ -17,10 +17,7 @@ This directory hosts the canonical Process record for `processes:process-ge-oper
 
 **Intent**: govern
 
-**Definition**: Operate the Audit Policy Compliance L2 process within the
-processes:pc-ge-operate-hb2dac Cell Charter. See trigger and outcome for
-the bounded work this process owns; see identity.outcome_statement
-for the testable outcome the process produces.
+**Definition**: Operate the Audit Policy Compliance L2 process within the processes:pc-ge-operate-hb2dac Cell Charter. See trigger and outcome for the bounded work this …
 
 ## 3. Governance and Provenance
 
@@ -59,6 +56,7 @@ for the testable outcome the process produces.
 | `stakeholders` | array[4] | no | array of 4 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
+| `definition` | string | no | Operate the Audit Policy Compliance L2 process within the processes:pc-ge-operate-hb2dac Cell Charter. See trigger and … |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)

@@ -170,3 +170,7 @@ outputs:
   description: 'The state change documented in the outcome: A demand model with articulated supply paths,
     capacity assumptions, and demand-shaping levers is committed.'
   consumer: The enterprise state the process changes
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Operate the Design Demand Model L2 process within the processes:pc-pr-design-hrcdy4 Cell Charter. See trigger and outcome for the bounded work this process …'

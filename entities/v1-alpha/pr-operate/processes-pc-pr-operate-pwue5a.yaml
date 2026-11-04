@@ -97,6 +97,7 @@ governance:
     source: change-requests/CR-BP-GS-1-governance-sweep.md
     execution: CR-BP-94-EXT-24 (2026-11-04; ahead of the 2026-12-31 window)
     review_due: '2026-12-31'
+    status: confirmed (user directive 2026-11-04; the derived register is confirmed ahead of the 2026-12-31 window)
 metrics:
   performance:
   - name: 'Operate effectiveness — Active customer relationships are sustained across their lifecycle.'

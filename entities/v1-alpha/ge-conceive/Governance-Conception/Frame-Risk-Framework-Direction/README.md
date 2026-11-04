@@ -17,8 +17,7 @@ This directory hosts the canonical Process record for `processes:process-ge-conc
 
 **Intent**: govern
 
-**Definition**: Frame Risk Framework Direction (conceive stage, strategic process). Landed by CR-BP-21f.1
-from the GovernanceAndExistence register v2.
+**Definition**: Frame Risk Framework Direction (conceive stage, strategic process). Landed by CR-BP-21f.1 from the GovernanceAndExistence register v2.
 
 ## 3. Governance and Provenance
 
@@ -54,6 +53,7 @@ from the GovernanceAndExistence register v2.
 | `stakeholders` | array[3] | no | array of 3 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
+| `definition` | string | no | Frame Risk Framework Direction (conceive stage, strategic process). Landed by CR-BP-21f.1 from the … |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)

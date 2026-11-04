@@ -147,3 +147,7 @@ outputs:
   description: 'The state change documented in the outcome: Operations performance review is conducted
     with findings committed for logistics optimization, asset utilization, and technology platform evolution.'
   consumer: The enterprise state the process changes
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Operate the Conduct Operations Performance Review L2 process within the processes:pc-eo-improve-pka6dk Cell Charter. See trigger and outcome for the bounded …'

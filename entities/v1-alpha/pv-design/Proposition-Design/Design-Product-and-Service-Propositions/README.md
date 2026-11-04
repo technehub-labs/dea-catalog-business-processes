@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-pv-desi
 
 **Intent**: develop
 
-**Definition**: Operate the Design Product and Service Propositions L2 process within the processes:pc-pv-design-8dhwpn Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces.
+**Definition**: Operate the Design Product and Service Propositions L2 process within the processes:pc-pv-design-8dhwpn Cell Charter. See trigger and outcome for the bounded …
 
 ## 3. Governance and Provenance
 
@@ -55,6 +55,7 @@ This directory hosts the canonical Process record for `processes:process-pv-desi
 | `stakeholders` | array[1] | no | array of 1 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
+| `definition` | string | no | Operate the Design Product and Service Propositions L2 process within the processes:pc-pv-design-8dhwpn Cell Charter … |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)

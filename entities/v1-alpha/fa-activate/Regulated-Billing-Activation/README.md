@@ -63,7 +63,21 @@ separate from capability build and from steady-state billing.
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Regulator-acknowledged accounting or rate framework activation (state insurance department supervision; IFRS 17 transition; ECB / PRA capital-rules supervision; PUC rate-effective framework; PSD2 / Federal Reserve / ECB settlement-account framework)
+- Tariff or pricing approval acquisition and recording (insurance statutory accounting rate filings; PUC rate-case approval; PSD2 interchange-fee framework; bank treasury capital-rule pricing; settlement-account fee schedule)
+- Billing-capability description and readiness-assessment evidence (supervised-test records, operational-control framework, first-invoice or first-recognition runbook)
+- Continuing-supervisor notification activation under the regulator's continuing oversight
+- Operational controls (segregation of duties, audit trail, reconciliation) live on the regulated billing record
+- Regulated billing record entry preserved for the activated billing capability
+
+**Excludes**:
+- Billing-capability conception and design (FinanceAndAccounting x Conceive / Design)
+- Billing-capability build and configuration (FinanceAndAccounting x Build)
+- Steady-state billing operations performance management (FinanceAndAccounting x Operate)
+- Billing-capability decommission and deregistration (FinanceAndAccounting x Retire; CR-BP-75 adjacent cell)
+- Non-regulated billing-capability activation (internal-finance cutover without regulator's acknowledgement): remains RECORD-PATTERN or MERGE per CR-BP-63 baseline
+- Capabilities sourcing or licensing absent a regulator-acknowledged accounting or rate framework
 
 **Roles and Responsibilities**
 

@@ -63,7 +63,16 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pr-i
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Customer satisfaction monitoring
+- Churn analysis and prediction
+- Win-back program operation
+- Customer feedback loops
+
+**Excludes**:
+- Active customer relationship operation (Operate stage)
+- Customer strategy framing (Conceive stage)
+- Customer experience design (Design stage)
 
 **Roles and Responsibilities**
 

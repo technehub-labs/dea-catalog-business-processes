@@ -70,7 +70,16 @@ This directory hosts the canonical ProcessGroup record for `processes:group-eo-i
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Operations performance review
+- Logistics optimization
+- Lean six sigma programme
+- Asset utilization optimization
+- Technology platform improvement
+
+**Excludes**:
+- Capability improvement (owning domains)
+- Operations execution (Operate stage; adjacent context)
 
 **Roles and Responsibilities**
 

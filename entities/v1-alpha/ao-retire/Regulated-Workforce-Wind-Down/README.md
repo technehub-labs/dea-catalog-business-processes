@@ -62,7 +62,18 @@ benefits continuation, transition supports).
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Statutory advance notice to affected employees (WARN 60-day rule)
+- Information and consultation with workers' representatives (EU Directive 98/59/EC)
+- Fair-selection criteria (anti-discrimination, statutory exclusions)
+- Severance, benefits continuation, and recorded statutory liability
+- Transition supports: state dislocated-worker referral, training, health-care continuation, outplacement
+
+**Excludes**:
+- Steady-state offboarding of individual agents (Operate coordinate)
+- Non-regulated cohort decommission (Operate coordinate or Activity under agent operations)
+- Asset retirement and decommissioning (EnablementAndOperations x Retire; CR-BP-66)
+- Relationship close-out and regulated offboarding (PartyAndRelationship x Retire; CR-BP-67)
 
 **Roles and Responsibilities**
 

@@ -1,0 +1,42 @@
+{
+  "execution_schema_version": "1",
+  "executed_at": "2026-11-04",
+  "parent_cr": "CR-BP-225",
+  "trigger": "user directive 2026-11-04: complete the pending L2 and L0 actions including the Operational sub-blocks, with correctly applied inputs",
+  "delivered": {
+    "l2_definition_promotion": {
+      "records": 145,
+      "action": "definition field appended verbatim from each record's own documented description (CR-BP-220 derivation method; no invention). The README description-fallback remains as a safety net but is now unused.",
+      "authoring": "scripts/author_cr225_completions.py (raw-text append; idempotent)"
+    },
+    "l3_activity_io_declarations": {
+      "records": 580,
+      "contract": "EXT-12 §9: activity working inputs / contribution to parent outcome; child input MUST NOT be copied from the parent — the actual use must be described",
+      "derivation": "from the activity's OWN child tasks: the intake-phase task's trigger is the working input; the concluding task's outcome is the contribution. Deterministic selection (responsibility contains 'intake' -> else first sorted id; outcome/record/notification -> else last sorted id); each entry cites the child task ids",
+      "entry_shape": "CR-BP-96 baseline: id (in-/out- + record slug), name, description, source, mandatory"
+    },
+    "l4_task_io_declarations": {
+      "records": 2900,
+      "contract": "EXT-12 §9: task working objects",
+      "derivation": "inputs[] from the task's own required trigger field; outputs[] from its own required outcome field — the task's documented actual use, no invention",
+      "entry_shape": "CR-BP-96 baseline: id, name, description, source, mandatory"
+    },
+    "l0_register_confirmation": {
+      "records": 49,
+      "action": "governance.provenance.status = confirmed (user directive 2026-11-04) on every PC; review_due 2026-12-31 remains as the annual-cycle anchor",
+      "effect": "the EXT-24 window's remaining act (owner confirmation of the derived L0 register) is recorded as complete ahead of schedule"
+    },
+    "generator_extension": "generate_readmes.py L1-L4 Operational Details gained the scope field-name fallback (process_scope or scope) — the same mismatch class CR-BP-224 fixed at L0; all 49 L1 groups now render their governing scope"
+  },
+  "verified": {
+    "ext12_gate": "0 findings (IT-001..IT-010 conformant, incl. CR-BP-96 id/name/description baseline and local id uniqueness)",
+    "readme_io_not_declared_renders_before": 3729,
+    "readme_io_not_declared_renders_after": 0,
+    "parse_clean": "3,723 canonical files",
+    "gates_green": ["activity-model", "mece", "execution-boundary", "entity-system", "id-system", "process-semantics", "readme-consistency", "DOC-016..020 (4 pre-existing DOC-016 advisories unchanged)"]
+  },
+  "unchanged": {
+    "definition_fallback": "the README renderer's description-fallback for L2 definitions remains as a safety net (now unused on live records)",
+    "l0_metrics_targets": "directional stage standards, now owner-confirmed; numeric target-setting remains the annual review's discretion"
+  }
+}

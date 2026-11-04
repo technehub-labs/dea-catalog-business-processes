@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-pr-reti
 
 **Intent**: transform
 
-**Definition**: Close out an enterprise relationship with a customer, supplier or partner: settle the contract, offboard the party, and resolve residual obligations, records and rights, within the processes:pc-pr-retire-2cusde Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces.
+**Definition**: Close out an enterprise relationship with a customer, supplier or partner: settle the contract, offboard the party, and resolve residual obligations, records …
 
 ## 3. Governance and Provenance
 
@@ -55,6 +55,7 @@ This directory hosts the canonical Process record for `processes:process-pr-reti
 | `stakeholders` | array[3] | no | array of 3 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `definition` | string | no | Close out an enterprise relationship with a customer, supplier or partner: settle the contract, offboard the party, and … |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)

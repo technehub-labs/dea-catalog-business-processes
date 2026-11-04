@@ -72,7 +72,21 @@ retention policy.
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Regulator directive or rejection notice (failed stress test triggers plan replacement; bank recovery-plan rejection by the SRB; FDIC directive to retire an inadequate resolution plan; state PUC retraction of an approved strategic plan; NHS England directive to retire a non-viable 5-year strategy)
+- Superseded or replaced plan identification on the regulated strategic-plan record
+- Filings register update for the regulated strategic plan
+- Communications plan execution for the regulated strategic-plan sunset under the regulator's continuing supervision
+- Regulator-acknowledged sunset record preservation on the regulated strategic-plan record
+- Retained-records plan execution per the regulated-entity retention policy
+- Affected business-unit notification under the regulator's continuing supervision
+
+**Excludes**:
+- Strategic-plan conception, design, build, activation, steady-state execution, and improvement (StrategyAndDirection x Conceive / Design / Build / Activate / Operate / Improve)
+- Non-regulated strategic-plan sunset (single-business-unit rollout without regulator's review): remains RECORD-PATTERN or MERGE per CR-BP-63 baseline
+- Strategic plans absent a regulator-directed sunset regime
+- Strategic-plan disposition where no competent regulator has required retirement
+- Replacement-plan activation (handled at StrategyAndDirection x Activate)
 
 **Roles and Responsibilities**
 

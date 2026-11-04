@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-sd-acti
 
 **Intent**: manage
 
-**Definition**: Institutionalize a regulated entity's strategic plan under the enterprise's regulated-entity approval authority within the processes:pc-sd-activate-ghaub8 Cell Charter. The trigger is a board-approved strategic plan that must be filed with or activated under the supervision of a competent regulator; the outcome is the plan formally activated with the supervisor's acknowledgement on record, the filing receipt preserved, the operational monitoring framework live, and the plan's obligations binding on the regulated entity under the regulator's continuing supervision. Distinct from strategy build (Build coordinate) and from steady-state strategy execution (Operate coordinate).
+**Definition**: Institutionalize a regulated entity's strategic plan under the enterprise's regulated-entity approval authority within the processes:pc-sd-activate-ghaub8 Cell …
 
 ## 3. Governance and Provenance
 
@@ -55,6 +55,7 @@ This directory hosts the canonical Process record for `processes:process-sd-acti
 | `stakeholders` | array[7] | no | array of 7 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `definition` | string | no | Institutionalize a regulated entity's strategic plan under the enterprise's regulated-entity approval authority within … |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)

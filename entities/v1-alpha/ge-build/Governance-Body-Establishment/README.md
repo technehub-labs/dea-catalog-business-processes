@@ -67,7 +67,16 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-b
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Board and committee establishment
+- Charter codification
+- Policy artefact construction
+- Standard and procedure documentation
+
+**Excludes**:
+- Strategy framing (Conceive stage)
+- Governance system design (Design stage)
+- Governance operation (Operate stage)
 
 **Roles and Responsibilities**
 

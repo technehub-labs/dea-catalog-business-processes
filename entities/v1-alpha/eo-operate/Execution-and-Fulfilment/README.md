@@ -78,7 +78,19 @@ This directory hosts the canonical ProcessGroup record for `processes:group-eo-o
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Production line operation
+- Service delivery operation
+- Logistics, warehouse, and inventory operation
+- Quality control operation
+- Technology platform operation
+- Facility management and asset maintenance operation
+- Procurement cycle execution
+
+**Excludes**:
+- Supplier relationship management (party-relationship)
+- Customer relationship (party-relationship)
+- Operations improvement (Improve stage; adjacent context)
 
 **Roles and Responsibilities**
 

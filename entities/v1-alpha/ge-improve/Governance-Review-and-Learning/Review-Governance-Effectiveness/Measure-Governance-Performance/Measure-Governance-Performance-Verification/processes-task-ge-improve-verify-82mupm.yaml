@@ -59,3 +59,19 @@ metadata:
   - cr: CR-BP-102
     date: '2026-09-19'
     change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).
+
+# CR-BP-225 completions (2026-11-04): EXT-12 §9 task working
+# objects, from the task's own required trigger/outcome fields
+# (its documented actual use).
+inputs:
+- id: in-task-ge-improve-verify-82mupm
+  name: 'Phase working object (presented per the task trigger)'
+  description: 'Intake manifest registered for Measure Governance Performance; verification gate may execute the contract and quality-criteria checks against the input pack.'
+  source: The task's own trigger field (EXT-12 §9 task working objects)
+  mandatory: true
+outputs:
+- id: out-task-ge-improve-verify-82mupm
+  name: 'Phase result (recorded per the task outcome)'
+  description: 'Verification certificate issued for Measure Governance Performance naming verification methods applied and any deviations remediated; verification custodian …'
+  source: The task's own outcome field (EXT-12 §9)
+  mandatory: true

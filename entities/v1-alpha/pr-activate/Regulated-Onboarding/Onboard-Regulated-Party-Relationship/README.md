@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-pr-acti
 
 **Intent**: manage
 
-**Definition**: Onboard a new party relationship in a regulated context (KYC/AML/CDD): verify identity, resolve beneficial ownership, classify risk, and either authorize commencement with documented approval or record a refusal, within the processes:pc-pr-activate-mwq7bj Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces.
+**Definition**: Onboard a new party relationship in a regulated context (KYC/AML/CDD): verify identity, resolve beneficial ownership, classify risk, and either authorize …
 
 ## 3. Governance and Provenance
 
@@ -55,6 +55,7 @@ This directory hosts the canonical Process record for `processes:process-pr-acti
 | `stakeholders` | array[4] | no | array of 4 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
+| `definition` | string | no | Onboard a new party relationship in a regulated context (KYC/AML/CDD): verify identity, resolve beneficial ownership … |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)

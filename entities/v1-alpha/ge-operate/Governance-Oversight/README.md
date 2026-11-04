@@ -69,7 +69,16 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ge-o
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Board and committee cycle operation
+- Risk oversight
+- Policy compliance execution
+- Audit and assurance
+
+**Excludes**:
+- Strategy framing (Conceive stage)
+- Governance system design (Design stage)
+- Body establishment (Build stage)
 
 **Roles and Responsibilities**
 

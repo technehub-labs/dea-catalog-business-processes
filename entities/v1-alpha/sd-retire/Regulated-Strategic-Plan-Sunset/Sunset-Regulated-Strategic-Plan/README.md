@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-sd-reti
 
 **Intent**: manage
 
-**Definition**: Sunset a regulated entity's supervisor-acknowledged-and-live strategic plan under the enterprise's regulated-entity retention policy within the processes:pc-sd-retire-zxnc3c Cell Charter. The trigger is a competent regulator's directive or rejection that requires the plan's retirement; the outcome is the plan formally sunset with the regulator directive on record, the replacement plan's status preserved, the retired plan's records retained per the regulated-entity retention policy, and the supervisor's acknowledgement of the sunset recorded. Distinct from strategy improvement (Improve coordinate) and from strategy activation (Activate coordinate, which handles replacement-plan activation).
+**Definition**: Sunset a regulated entity's supervisor-acknowledged-and-live strategic plan under the enterprise's regulated-entity retention policy within the …
 
 ## 3. Governance and Provenance
 
@@ -57,6 +57,7 @@ This directory hosts the canonical Process record for `processes:process-sd-reti
 | `stakeholders` | array[3] | no | array of 3 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `definition` | string | no | Sunset a regulated entity's supervisor-acknowledged-and-live strategic plan under the enterprise's regulated-entity … |
 
 **Relationships**
 

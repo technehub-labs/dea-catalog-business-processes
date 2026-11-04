@@ -71,7 +71,15 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-i
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Agent and organization development
+- Engagement and alignment review
+- Capability gap analysis
+- Structural reorganization
+
+**Excludes**:
+- Continuous improvement of business capabilities (owning domains)
+- Learning delivery operation (Operate stage; adjacent context)
 
 **Roles and Responsibilities**
 

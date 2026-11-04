@@ -71,3 +71,19 @@ composes:
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+
+# CR-BP-225 completions (2026-11-04): EXT-12 §9 activity IO derived
+# from the activity's own child tasks — no parent copying; the cited
+# child ids document the actual use (EXT-12 §9 rule).
+inputs:
+- id: in-activity-ge-design-ry86fn
+  name: 'Working inputs of the composing tasks (intake task: Design Authority Delegations Intake)'
+  description: 'Declared per EXT-12 §9 (activity working inputs): intake task processes:task-ge-design-intake-v7py95 documents the input class in its own trigger — Custody of the Design-stage input pack for Design Authority Delegations ready for intake; predecessor phase has produced the case file context and intake …'
+  source: The activity's own composing tasks (EXT-12 §9; no parent copying)
+  mandatory: true
+outputs:
+- id: out-activity-ge-design-ry86fn
+  name: 'Contribution to parent outcome (concluding task: Design Authority Delegations Audit Record)'
+  description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-design-zbrg8b through concluding task processes:task-ge-design-record-3v5zkr, whose outcome — Case file retained for Design Authority Delegations under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
+  source: The activity's own concluding task (EXT-12 §9)
+  mandatory: true

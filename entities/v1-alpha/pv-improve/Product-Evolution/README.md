@@ -66,7 +66,14 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pv-i
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Proposition performance review
+- Product and service evolution
+- Portfolio rationalization
+
+**Excludes**:
+- Capability improvement (owning domains)
+- Portfolio performance operation (Operate stage; adjacent context)
 
 **Roles and Responsibilities**
 

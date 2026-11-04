@@ -73,7 +73,17 @@ This directory hosts the canonical ProcessGroup record for `processes:group-ao-o
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Agent performance operation
+- Payroll and benefits operation
+- Time and attendance operation
+- Learning and development delivery (all substrates)
+- Collaboration coordination
+
+**Excludes**:
+- Agent capacity planning (Conceive/Design; adjacent contexts)
+- Service delivery to customers (product-value x operate)
+- Agent development improvement (Improve stage; adjacent context)
 
 **Roles and Responsibilities**
 

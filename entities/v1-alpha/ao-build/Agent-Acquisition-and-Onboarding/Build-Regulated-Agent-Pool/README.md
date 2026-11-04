@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-ao-buil
 
 **Intent**: manage
 
-**Definition**: Build the regulator-ready licensed-candidate pool under the enterprise regulated-entity approval authority. The trigger is the decision to source candidates for regulator-licensed roles. The outcome is a regulator-ready pool committed to the regulated personnel record, with each candidate verified against the regulator's licence registry, fitness-and-propriety attested, cleared against OFAC sanctions (31 CFR 501), Bank Secrecy Act AML/KYC (31 USC 5311), FCRA background (15 USC 1681), and ADA fitness (42 USC 12112), and ready for regulator-tied Activate without re-screening.
+**Definition**: Build the regulator-ready licensed-candidate pool under the enterprise regulated-entity approval authority. The trigger is the decision to source candidates …
 
 ## 3. Governance and Provenance
 
@@ -53,6 +53,7 @@ This directory hosts the canonical Process record for `processes:process-ao-buil
 | `stakeholders` | array[1] | no | array of 1 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `definition` | string | no | Build the regulator-ready licensed-candidate pool under the enterprise regulated-entity approval authority. The trigger … |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)

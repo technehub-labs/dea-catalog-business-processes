@@ -73,3 +73,19 @@ composes:
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+
+# CR-BP-225 completions (2026-11-04): EXT-12 §9 activity IO derived
+# from the activity's own child tasks — no parent copying; the cited
+# child ids document the actual use (EXT-12 §9 rule).
+inputs:
+- id: in-activity-pr-operate-w753mv
+  name: 'Working inputs of the composing tasks (intake task: Handle Relationship Escalations Intake)'
+  description: 'Declared per EXT-12 §9 (activity working inputs): intake task processes:task-pr-operate-intake-9k27h2 documents the input class in its own trigger — Custody of the Operate-stage input pack for Handle Relationship Escalations ready for intake; predecessor phase has produced the case file context and intake …'
+  source: The activity's own composing tasks (EXT-12 §9; no parent copying)
+  mandatory: true
+outputs:
+- id: out-activity-pr-operate-w753mv
+  name: 'Contribution to parent outcome (concluding task: Handle Relationship Escalations Audit Record)'
+  description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-operate-bbe384 through concluding task processes:task-pr-operate-record-k3mhvn, whose outcome — Closure case file retained for Handle Relationship Escalations under the records retention schedule with cryptographic integrity protection; cryptographic …'
+  source: The activity's own concluding task (EXT-12 §9)
+  mandatory: true

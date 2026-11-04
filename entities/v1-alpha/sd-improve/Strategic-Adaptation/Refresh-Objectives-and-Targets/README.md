@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-sd-impr
 
 **Intent**: develop
 
-**Definition**: Operate the Refresh Objectives and Targets L2 process within the processes:pc-sd-improve-ft9k5f Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces.
+**Definition**: Operate the Refresh Objectives and Targets L2 process within the processes:pc-sd-improve-ft9k5f Cell Charter. See trigger and outcome for the bounded work this …
 
 ## 3. Governance and Provenance
 
@@ -55,6 +55,7 @@ This directory hosts the canonical Process record for `processes:process-sd-impr
 | `stakeholders` | array[1] | no | array of 1 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `definition` | string | no | Operate the Refresh Objectives and Targets L2 process within the processes:pc-sd-improve-ft9k5f Cell Charter. See … |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)

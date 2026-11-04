@@ -45,6 +45,8 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 | `cohesion_rationale` | string | no | Cohesion score 9/9 assessed at deposition (CR-BP-32 section 6). Constituent work shares a single run fit-and-proper … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
+| `inputs` | array[1] | no | array of 1 item(s) |
+| `outputs` | array[1] | no | array of 1 item(s) |
 
 **Relationships**
 
@@ -73,7 +75,11 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Inputs**:
+- Working inputs of the composing tasks (intake task: Run Fit-And-Proper Re-Assessment Cycle Intake) (?, mandatory)
+
+**Outputs**:
+- Contribution to parent outcome (concluding task: Run Fit-And-Proper Re-Assessment Cycle Audit Record) (?)
 
 **Roles and Responsibilities**
 

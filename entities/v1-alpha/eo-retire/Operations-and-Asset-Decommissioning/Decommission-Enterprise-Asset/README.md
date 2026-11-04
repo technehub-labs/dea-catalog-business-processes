@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-eo-reti
 
 **Intent**: transform
 
-**Definition**: Withdraw and retire an operational asset (technology or physical): plan and approve the retirement, isolate and withdraw the asset from service, decommission and dispose of it, and resolve its residual value, data and obligations, within the processes:pc-eo-retire-nw3ynf Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces.
+**Definition**: Withdraw and retire an operational asset (technology or physical): plan and approve the retirement, isolate and withdraw the asset from service, decommission …
 
 ## 3. Governance and Provenance
 
@@ -55,6 +55,7 @@ This directory hosts the canonical Process record for `processes:process-eo-reti
 | `stakeholders` | array[1] | no | array of 1 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `definition` | string | no | Withdraw and retire an operational asset (technology or physical): plan and approve the retirement, isolate and … |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)

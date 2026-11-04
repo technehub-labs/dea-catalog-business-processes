@@ -71,3 +71,19 @@ composes:
   direction: source-to-target
   status: active
   rationale: L4 Task decomposition authored by `scripts/decompose_l4.py` via the 5-phase verb-object completion pattern.
+
+# CR-BP-225 completions (2026-11-04): EXT-12 §9 activity IO derived
+# from the activity's own child tasks — no parent copying; the cited
+# child ids document the actual use (EXT-12 §9 rule).
+inputs:
+- id: in-activity-ge-build-epqkej
+  name: 'Working inputs of the composing tasks (intake task: Verify Body Readiness Intake)'
+  description: 'Declared per EXT-12 §9 (activity working inputs): intake task processes:task-ge-build-intake-evpwg3 documents the input class in its own trigger — Custody of the Build-stage input pack for Verify Body Readiness ready for intake; predecessor phase has produced the case file context and intake contract …'
+  source: The activity's own composing tasks (EXT-12 §9; no parent copying)
+  mandatory: true
+outputs:
+- id: out-activity-ge-build-epqkej
+  name: 'Contribution to parent outcome (concluding task: Verify Body Readiness Audit Record)'
+  description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-build-3p38us through concluding task processes:task-ge-build-record-qckf8u, whose outcome — Case file retained for Verify Body Readiness under the records retention schedule with cryptographic integrity protection; statutory retention horizon applied …'
+  source: The activity's own concluding task (EXT-12 §9)
+  mandatory: true

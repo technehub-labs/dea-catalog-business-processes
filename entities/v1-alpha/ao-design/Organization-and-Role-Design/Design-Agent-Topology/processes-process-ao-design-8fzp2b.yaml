@@ -142,3 +142,7 @@ outputs:
   description: 'The state change documented in the outcome: The agent topology is designed with human,
     artificial, and hybrid placement and coordination patterns.'
   consumer: The enterprise state the process changes
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Operate the Design Agent Topology L2 process within the processes:pc-ao-design-a4hq2r Cell Charter. See trigger and outcome for the bounded work this process …'

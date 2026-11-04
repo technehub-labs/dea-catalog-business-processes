@@ -63,7 +63,23 @@ performance management.
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Regulator-issued licence or registration verification (FCA SMCR Statements of Responsibilities; US state healthcare licensure; NAIC producer licence; FAA/EASA crew licence; UK SRA practising certificate; US state bar admission)
+- Fitness-and-propriety attestation (SMCR; state healthcare; NAIC producer; FAA/EASA; SRA; bar)
+- Supervised-training completion record (SMCR; state healthcare; NAIC; FAA/EASA; SRA; bar)
+- Competency assessment for the licensed role
+- Enterprise's regulated-entity approval authority framework
+- Signing authority or controlled-function designation (SMCR CF1..CF11; NAIC producer line of authority; FAA/EASA type-rating; SRA role; bar area of practice)
+- Continuing-supervisor notification and continuing-oversight relationship activation
+- Regulated personnel record entry preserved for the licensed individual
+
+**Excludes**:
+- Workforce recruitment, hiring, and general onboarding (AgencyAndOrganization x Build)
+- Steady-state workforce performance and development (AgencyAndOrganization x Operate / Improve)
+- Workforce offboarding and licence surrender (AgencyAndOrganization x Retire; CR-BP-73 adjacent cells)
+- Non-licensed workforce activation (deferred to a future CR)
+- Internal non-regulated personnel activation without regulator-issued licence prerequisite
+- Capabilities sourcing/licensing absent a regulator-controlled scope
 
 **Roles and Responsibilities**
 

@@ -39,6 +39,8 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 | `cohesion_rationale` | string | no | Constituent work shares a single processing concern (transaction to posted entry), one reference class (posting rules … |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
 | `composes` | array[5] | no | array of 5 item(s) |
+| `inputs` | array[1] | no | array of 1 item(s) |
+| `outputs` | array[1] | no | array of 1 item(s) |
 
 **Relationships**
 
@@ -67,7 +69,11 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Inputs**:
+- Working inputs of the composing tasks (intake task: Process Journal Entries Intake) (?, mandatory)
+
+**Outputs**:
+- Contribution to parent outcome (concluding task: Process Journal Entries Audit Record) (?)
 
 **Roles and Responsibilities**
 

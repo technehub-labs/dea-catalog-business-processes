@@ -62,7 +62,15 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pv-a
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Transition readiness validation
+- Service transition into operation
+- Operational acceptance
+
+**Excludes**:
+- Proposition development (Build)
+- Steady-state proposition operation (Operate)
+- Operational delivery of the product (enablement-operations)
 
 **Roles and Responsibilities**
 

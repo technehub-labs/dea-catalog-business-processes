@@ -78,7 +78,18 @@ absorbed from the dissolved Supply & Resources domain.
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Operations strategy framing
+- Delivery model conception
+- Technology enablement approach framing
+- Physical asset approach framing
+
+**Excludes**:
+- Customer strategy (party-relationship x conceive)
+- Strategic direction for operations (strategy-direction x conceive)
+- Supplier relationship conception (party-relationship x conceive)
+- Operations model design (Design stage; adjacent context)
+- Operations build (Build stage; adjacent context)
 
 **Roles and Responsibilities**
 

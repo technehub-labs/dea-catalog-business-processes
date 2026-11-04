@@ -141,3 +141,7 @@ outputs:
   description: 'The state change documented in the outcome: Engagement and alignment are reviewed with
     findings committed.'
   consumer: The enterprise state the process changes
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Operate the Conduct Engagement and Alignment Review L2 process within the processes:pc-ao-improve-qkmh6b Cell Charter. See trigger and outcome for the bounded …'

@@ -68,7 +68,16 @@ This directory hosts the canonical ProcessGroup record for `processes:group-sd-b
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Strategic plan build
+- Strategic roadmap build
+- Strategic choices translation into initiatives
+- Resource allocation priorities
+
+**Excludes**:
+- Budget construction (finance-accounting x build)
+- Capability build (owning domains)
+- Strategic choices design (Design stage; adjacent context)
 
 **Roles and Responsibilities**
 

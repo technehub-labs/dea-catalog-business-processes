@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-sd-conc
 
 **Intent**: develop
 
-**Definition**: Operate the Conceive Strategic Intent L2 process within the processes:pc-sd-conceive-ucb3gx Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces.
+**Definition**: Operate the Conceive Strategic Intent L2 process within the processes:pc-sd-conceive-ucb3gx Cell Charter. See trigger and outcome for the bounded work this …
 
 ## 3. Governance and Provenance
 
@@ -55,6 +55,7 @@ This directory hosts the canonical Process record for `processes:process-sd-conc
 | `stakeholders` | array[1] | no | array of 1 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `definition` | string | no | Operate the Conceive Strategic Intent L2 process within the processes:pc-sd-conceive-ucb3gx Cell Charter. See trigger … |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)

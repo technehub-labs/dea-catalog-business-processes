@@ -119,3 +119,7 @@ outputs:
   description: 'Derived from the record''s documented outcome: The production line is run to plan with
     output and quality recorded.'
   consumer: Downstream consumers per the documented outcome
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Operate the Run Production Line L2 process within the processes:pc-eo-operate-ydqb96 Cell Charter. See trigger and outcome for the bounded work this process …'

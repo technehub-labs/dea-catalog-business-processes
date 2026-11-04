@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-ge-reti
 
 **Intent**: manage
 
-**Definition**: Effect the regulator- or court-mandated governance unwind within the processes:pc-ge-retire-kndw6x Cell Charter. The trigger is a binding regulator or court order; the outcome is the documented, regulator- or court-supervised wind-down of governance bodies, policy instruments, mandates, and constitutional instruments, culminating in statutory dissolution filings, retained-records custodianship assignment, and surrender of authorisation or cancellation of permission or court decree entry.
+**Definition**: Effect the regulator- or court-mandated governance unwind within the processes:pc-ge-retire-kndw6x Cell Charter. The trigger is a binding regulator or court …
 
 ## 3. Governance and Provenance
 
@@ -55,6 +55,7 @@ This directory hosts the canonical Process record for `processes:process-ge-reti
 | `stakeholders` | array[4] | no | array of 4 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `definition` | string | no | Effect the regulator- or court-mandated governance unwind within the processes:pc-ge-retire-kndw6x Cell Charter. The … |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)

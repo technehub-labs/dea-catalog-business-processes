@@ -17,10 +17,7 @@ This directory hosts the canonical Process record for `processes:process-pr-desi
 
 **Intent**: develop
 
-**Definition**: Operate the Design Customer Journey L2 process within the
-processes:pc-pr-design-hrcdy4 Cell Charter. See trigger and outcome for
-the bounded work this process owns; see identity.outcome_statement
-for the testable outcome the process produces.
+**Definition**: Operate the Design Customer Journey L2 process within the processes:pc-pr-design-hrcdy4 Cell Charter. See trigger and outcome for the bounded work this process …
 
 ## 3. Governance and Provenance
 
@@ -60,6 +57,7 @@ for the testable outcome the process produces.
 | `stakeholders` | array[3] | no | array of 3 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
+| `definition` | string | no | Operate the Design Customer Journey L2 process within the processes:pc-pr-design-hrcdy4 Cell Charter. See trigger and … |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)

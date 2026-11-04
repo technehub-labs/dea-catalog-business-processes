@@ -65,7 +65,15 @@ offboarding, residual obligation and record resolution).
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Contract close-out and termination settlement
+- Party offboarding across roles (customer, supplier, partner)
+- Residual obligation and record resolution
+
+**Excludes**:
+- Steady-state relationship operation (Operate)
+- Relationship improvement and development (Improve)
+- Asset retirement and decommissioning (EnablementAndOperations x Retire)
 
 **Roles and Responsibilities**
 

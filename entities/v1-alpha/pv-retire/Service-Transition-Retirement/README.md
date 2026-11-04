@@ -62,7 +62,15 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pv-r
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Retirement decision intake and withdrawal planning
+- Service withdrawal and stakeholder transition
+- Removal from operational reliance
+
+**Excludes**:
+- Steady-state proposition operation (Operate)
+- Physical asset decommissioning (enablement-operations)
+- Post-exit obligation closure (Operate/Improve)
 
 **Roles and Responsibilities**
 

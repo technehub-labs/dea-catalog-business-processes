@@ -162,3 +162,7 @@ outputs:
   description: 'The state change documented in the outcome: Audit reports with findings, recommendations,
     and follow-up actions are delivered to the appropriate governance body.'
   consumer: The enterprise state the process changes
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Operate the Audit Policy Compliance L2 process within the processes:pc-ge-operate-hb2dac Cell Charter. See trigger and outcome for the bounded work this …'

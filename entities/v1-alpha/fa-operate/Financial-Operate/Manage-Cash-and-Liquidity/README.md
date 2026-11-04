@@ -17,8 +17,7 @@ This directory hosts the canonical Process record for `processes:process-fa-oper
 
 **Intent**: operate
 
-**Definition**: Manage Cash and Liquidity (operate stage, management process). Landed by CR-BP-21e.1
-from the FinanceAndAccounting register v2.
+**Definition**: Manage Cash and Liquidity (operate stage, management process). Landed by CR-BP-21e.1 from the FinanceAndAccounting register v2.
 
 ## 3. Governance and Provenance
 
@@ -54,6 +53,7 @@ from the FinanceAndAccounting register v2.
 | `stakeholders` | array[1] | no | array of 1 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `definition` | string | no | Manage Cash and Liquidity (operate stage, management process). Landed by CR-BP-21e.1 from the FinanceAndAccounting … |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)

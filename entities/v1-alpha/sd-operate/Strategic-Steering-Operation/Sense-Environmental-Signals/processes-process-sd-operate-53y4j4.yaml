@@ -130,3 +130,7 @@ outputs:
   description: 'Derived from the record''s documented outcome: Environmental signals are sensed, filtered,
     and routed.'
   consumer: Downstream consumers per the documented outcome
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Operate the Sense Environmental Signals L2 process within the processes:pc-sd-operate-5cs5ee Cell Charter. See trigger and outcome for the bounded work this …'

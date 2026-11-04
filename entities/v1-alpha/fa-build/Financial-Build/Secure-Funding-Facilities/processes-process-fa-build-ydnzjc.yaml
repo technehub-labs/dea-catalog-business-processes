@@ -137,3 +137,7 @@ outputs:
   description: 'Derived from the record''s documented outcome: Funding lines are secured, the finance
     function is stood up, and the ERP finance module is deployed.'
   consumer: Downstream consumers per the documented outcome
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Operate the Secure Funding Facilities L2 process within the processes:pc-fa-build-pztsp9 Cell Charter. See trigger and outcome for the bounded work this …'

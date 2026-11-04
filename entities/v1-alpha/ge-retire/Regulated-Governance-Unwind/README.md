@@ -67,7 +67,20 @@ supervision.
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Regulator- or court-issued mandatory dissolution, revocation, wind-down, cease-and-desist, or equivalent order
+- Governance body reduction to a wind-down quorum under the controlling statute or regulator or court order
+- Policy instrument sunset or supersession by wind-down procedures (charters, mandates, delegations of authority)
+- Statutory dissolution filings (Form 990-N/990 for IRS 501(c)(3) status termination; California Secretary of State Form DISS for corporate dissolution; state attorney-general notifications for charity asset disposition; federal/state court reports for receivership termination; FCA S60.060 Form A notification for authorisation surrender)
+- Retained-records custodianship assignment for the statutorily required period (California Corp Code 6323; FTC/DOJ obligations; IRS recordkeeping under Treas. Reg. 1.6001-1)
+- Surrender of authorisation or cancellation of permission per the regulator or court determination
+
+**Excludes**:
+- Asset and capability retirement (EnablementAndOperations x Retire; CR-BP-66)
+- Voluntary governance sunset absent regulator or court mandate (reserved for a future GovernanceAndExistence x Improve coordinate charter extension)
+- Counterparty and agent relationship closure (PartyAndRelationship x Retire; CR-BP-67)
+- Workforce wind-down (AgencyAndOrganization x Retire; CR-BP-73)
+- Regulated entity run-off (FinanceAndAccounting x Retire; CR-BP-75)
 
 **Roles and Responsibilities**
 

@@ -66,7 +66,15 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pv-o
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Product catalogue operation
+- Portfolio performance management
+- Proposition lifecycle management
+
+**Excludes**:
+- Operational delivery of the product (enablement-operations)
+- Partner alliance programme (party-relationship)
+- Workforce operation (agency-organization)
 
 **Roles and Responsibilities**
 

@@ -126,3 +126,7 @@ outputs:
   description: 'Derived from the record''s documented outcome: Tax compliance and filings are managed
     with returns prepared, payments scheduled, and exposures monitored.'
   consumer: Downstream consumers per the documented outcome
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Manage Tax Compliance and Filings (operate stage, management process). Landed by CR-BP-21e.1 from the FinanceAndAccounting register v2.'

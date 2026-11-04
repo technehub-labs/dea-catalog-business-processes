@@ -1105,7 +1105,9 @@ def _operational_details(record: dict, level: str) -> str:
     out: list[str] = []
 
     # Inputs / Outputs
-    scope = record.get("process_scope") or {}
+    # CR-BP-225: L1 groups carry `scope` (the process_scope name made all
+    # 49 L1 groups render the not-declared placeholder).
+    scope = record.get("process_scope") or record.get("scope") or {}
     includes = scope.get("includes") if isinstance(scope, dict) else None
     excludes = scope.get("excludes") if isinstance(scope, dict) else None
     if includes or excludes:

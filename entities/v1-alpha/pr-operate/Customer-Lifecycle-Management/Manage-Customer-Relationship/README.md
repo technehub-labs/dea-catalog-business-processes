@@ -17,14 +17,7 @@ This directory hosts the canonical Process record for `processes:process-pr-oper
 
 **Intent**: manage
 
-**Definition**: Manage the day-to-day operation of an active customer
-relationship across its lifecycle (acquisition → onboarding
-→ active use → renewal or win-back). The principal
-organizational locus is the Middle Line (sales / account
-management leadership); the work coordinates customer-
-facing resources, monitors the customer's value exchange
-with the enterprise, and allocates attention and effort
-across the customer portfolio.
+**Definition**: Manage the day-to-day operation of an active customer relationship across its lifecycle (acquisition → onboarding → active use → renewal or win-back). The …
 
 ## 3. Governance and Provenance
 
@@ -63,6 +56,7 @@ across the customer portfolio.
 | `stakeholders` | array[2] | no | array of 2 item(s) |
 | `inputs` | array[2] | no | array of 2 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
+| `definition` | string | no | Manage the day-to-day operation of an active customer relationship across its lifecycle (acquisition → onboarding → … |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)

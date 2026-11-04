@@ -125,3 +125,7 @@ outputs:
   description: 'Derived from the record''s documented outcome: Budgeting and forecasting systems are built
     with models, integrations, and controls delivered for operate budgeting.'
   consumer: Downstream consumers per the documented outcome
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Build Budgeting and Forecasting Systems (build stage, core process). Landed by CR-BP-21e.1 from the FinanceAndAccounting register v2.'

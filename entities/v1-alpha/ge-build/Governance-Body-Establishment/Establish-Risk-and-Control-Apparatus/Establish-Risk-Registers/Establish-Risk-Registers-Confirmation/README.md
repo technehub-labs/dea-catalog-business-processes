@@ -42,6 +42,8 @@ This directory hosts the canonical Task record for `processes:task-ge-build-conf
 | `evidence` | array[3] | no | array of 3 item(s) |
 | `status` | string | no | candidate |
 | `ecfConformance` | object | no | object: framework, contractVersion, profile, status, affiliation, canonicalReferences |
+| `inputs` | array[1] | no | array of 1 item(s) |
+| `outputs` | array[1] | no | array of 1 item(s) |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)
@@ -55,7 +57,11 @@ This directory hosts the canonical Task record for `processes:task-ge-build-conf
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Inputs**:
+- Phase working object (presented per the task trigger) (?, mandatory)
+
+**Outputs**:
+- Phase result (recorded per the task outcome) (?)
 
 **Roles and Responsibilities**
 

@@ -236,3 +236,7 @@ outputs:
   name: Updated customer relationship state
   consumer: CRM system of record
   description: Updated customer relationship state
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Manage the day-to-day operation of an active customer relationship across its lifecycle (acquisition → onboarding → active use → renewal or win-back). The …'

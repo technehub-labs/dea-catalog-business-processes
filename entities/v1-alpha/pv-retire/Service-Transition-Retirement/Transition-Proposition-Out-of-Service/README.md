@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-pv-reti
 
 **Intent**: transform
 
-**Definition**: Transition a proposition, product or service out of operational service in a controlled manner: withdrawal planning, stakeholder transition, and removal from operational reliance, within the processes:pc-pv-retire-eeck6d Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces.
+**Definition**: Transition a proposition, product or service out of operational service in a controlled manner: withdrawal planning, stakeholder transition, and removal from …
 
 ## 3. Governance and Provenance
 
@@ -55,6 +55,7 @@ This directory hosts the canonical Process record for `processes:process-pv-reti
 | `stakeholders` | array[1] | no | array of 1 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `definition` | string | no | Transition a proposition, product or service out of operational service in a controlled manner: withdrawal planning … |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)

@@ -146,3 +146,7 @@ outputs:
   description: 'The state change documented in the outcome: Cost optimization review is conducted with
     findings committed for reporting, disclosure, and financial control strengthening.'
   consumer: The enterprise state the process changes
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Operate the Conduct Cost Optimization Review L2 process within the processes:pc-fa-improve-haqf4w Cell Charter. See trigger and outcome for the bounded work …'

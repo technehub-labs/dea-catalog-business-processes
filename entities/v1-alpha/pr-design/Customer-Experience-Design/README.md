@@ -66,7 +66,16 @@ This directory hosts the canonical ProcessGroup record for `processes:group-pr-d
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Customer experience design
+- Customer journey design
+- Demand model design
+- CX pattern selection
+
+**Excludes**:
+- Customer strategy framing (Conceive stage)
+- Channel implementation (Build stage)
+- Live customer operation (Operate stage)
 
 **Roles and Responsibilities**
 

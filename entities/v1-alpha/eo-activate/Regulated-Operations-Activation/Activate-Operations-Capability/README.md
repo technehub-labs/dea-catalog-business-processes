@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-eo-acti
 
 **Intent**: manage
 
-**Definition**: Activate an operations capability under the enterprise's regulated-entity approval authority within the processes:pc-eo-activate-xdfscw Cell Charter. The trigger is a regulator-issued authorization or certification gating live service; the outcome is the capability live on the regulated operations record with the supervisor's continuing-oversight relationship active and operational controls running, so that the operations capability moves from regulator-authorized-but-not-live to regulator-authorized-and-live. Distinct from general capability build (Build coordinate) and from steady-state operation (Operate coordinate).
+**Definition**: Activate an operations capability under the enterprise's regulated-entity approval authority within the processes:pc-eo-activate-xdfscw Cell Charter. The …
 
 ## 3. Governance and Provenance
 
@@ -56,6 +56,7 @@ This directory hosts the canonical Process record for `processes:process-eo-acti
 | `stakeholders` | array[6] | no | array of 6 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `definition` | string | no | Activate an operations capability under the enterprise's regulated-entity approval authority within the … |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)

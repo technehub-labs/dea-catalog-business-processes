@@ -66,7 +66,15 @@ confirmation).
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Commencement condition verification
+- Promulgation of adopted instruments
+- Effectiveness confirmation and recording
+
+**Excludes**:
+- Instrument adoption and approval (Build)
+- Enforcement and operation of in-force instruments (Operate)
+- Instrument review and amendment (Improve)
 
 **Roles and Responsibilities**
 

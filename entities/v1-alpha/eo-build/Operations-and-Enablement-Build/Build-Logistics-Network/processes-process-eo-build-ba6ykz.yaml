@@ -133,3 +133,7 @@ outputs:
   description: 'Derived from the record''s documented outcome: The logistics network is built with nodes
     and carriers contracted.'
   consumer: Downstream consumers per the documented outcome
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Operate the Build Logistics Network L2 process within the processes:pc-eo-build-zwkhxc Cell Charter. See trigger and outcome for the bounded work this process …'

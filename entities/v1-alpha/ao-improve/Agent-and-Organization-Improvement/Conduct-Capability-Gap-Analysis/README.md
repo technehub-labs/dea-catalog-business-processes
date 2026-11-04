@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-ao-impr
 
 **Intent**: develop
 
-**Definition**: Operate the Conduct Capability Gap Analysis L2 process within the processes:pc-ao-improve-qkmh6b Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces.
+**Definition**: Operate the Conduct Capability Gap Analysis L2 process within the processes:pc-ao-improve-qkmh6b Cell Charter. See trigger and outcome for the bounded work …
 
 ## 3. Governance and Provenance
 
@@ -55,6 +55,7 @@ This directory hosts the canonical Process record for `processes:process-ao-impr
 | `stakeholders` | array[1] | no | array of 1 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
+| `definition` | string | no | Operate the Conduct Capability Gap Analysis L2 process within the processes:pc-ao-improve-qkmh6b Cell Charter. See … |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)

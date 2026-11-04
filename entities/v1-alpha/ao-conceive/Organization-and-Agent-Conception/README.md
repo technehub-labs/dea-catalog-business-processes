@@ -80,7 +80,19 @@ directed.
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Agent capacity strategy framing
+- Organization model framing
+- Workforce and agent mix conception
+- Agent capability requirement conception
+
+**Excludes**:
+- Constitutional mandate and authority (governance-existence x conceive)
+- Strategic direction conception (strategy-direction x conceive)
+- Operational execution (enablement-operations)
+- Compensation decisions (finance-accounting x conceive)
+- Organizational architecture design (Design stage; adjacent context)
+- Agent acquisition (Build stage; adjacent context)
 
 **Roles and Responsibilities**
 

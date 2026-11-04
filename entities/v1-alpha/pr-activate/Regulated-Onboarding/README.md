@@ -67,7 +67,17 @@ classification; onboarding approval).
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Customer Identification Program (CIP) and Customer Due Diligence (CDD/EDD)
+- Beneficial-ownership identification, verification, and resolution at account opening
+- Sanctions and PEP screening; risk classification and onboarding approval
+- Onboarding refusal with recorded rationale
+
+**Excludes**:
+- Non-regulated first-time activation (handled inside processes:pc-pr-operate-pwue5a per register v2 doctrine)
+- Steady-state relationship operation (Operate)
+- Relationship improvement and development (Improve)
+- Relationship close-out and regulated offboarding (Retire, CR-BP-67)
 
 **Roles and Responsibilities**
 

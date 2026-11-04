@@ -69,7 +69,14 @@ This directory hosts the canonical ProcessGroup record for `processes:group-fa-b
 
 ## 6. Operational Details
 
-**Inputs / Outputs**: _(not declared; see CR-BP-94-EXT-12)_
+**Includes**:
+- Financial systems and ledger implementation
+- Budgeting and forecasting systems build
+- Tax and compliance capability onboarding
+
+**Excludes**:
+- Financial design (Design stage; adjacent context)
+- Financial operations (Operate stage; adjacent context)
 
 **Roles and Responsibilities**
 

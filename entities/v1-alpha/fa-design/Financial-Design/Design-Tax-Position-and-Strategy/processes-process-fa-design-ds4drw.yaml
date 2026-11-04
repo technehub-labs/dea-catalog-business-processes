@@ -130,3 +130,7 @@ outputs:
   description: 'The state change documented in the outcome: Tax position and strategy are designed with
     positions documented and the strategy ready for tax planning.'
   consumer: The enterprise state the process changes
+
+# CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
+# documented description (CR-BP-220 derivation method; no invention).
+definition: 'Design Tax Position and Strategy (design stage, management process). Landed by CR-BP-21e.1 from the FinanceAndAccounting register v2.'

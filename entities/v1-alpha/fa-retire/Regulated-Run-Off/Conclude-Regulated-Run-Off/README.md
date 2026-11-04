@@ -17,7 +17,7 @@ This directory hosts the canonical Process record for `processes:process-fa-reti
 
 **Intent**: manage
 
-**Definition**: Conclude a regulated run-off of a financial entity (insurer, mutual, or run-off portfolio) under statutory run-off obligations within the processes:pc-fa-retire-64q5p9 Cell Charter. See trigger and outcome for the bounded work this process owns; see identity.outcome_statement for the testable outcome the process produces.
+**Definition**: Conclude a regulated run-off of a financial entity (insurer, mutual, or run-off portfolio) under statutory run-off obligations within the …
 
 ## 3. Governance and Provenance
 
@@ -55,6 +55,7 @@ This directory hosts the canonical Process record for `processes:process-fa-reti
 | `stakeholders` | array[4] | no | array of 4 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `definition` | string | no | Conclude a regulated run-off of a financial entity (insurer, mutual, or run-off portfolio) under statutory run-off … |
 
 
 ## 5. Hierarchical Decomposition (Path Scheme)
