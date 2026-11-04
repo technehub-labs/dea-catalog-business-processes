@@ -1,0 +1,78 @@
+name: Validate release package
+
+# CR-BP-30g: the PR-time gate for the artifact family. Runs every
+# generator twice into a temp directory and byte-compares the two runs
+# — the determinism contract (CR-BP-30 §4.3: identical substrate must
+# produce identical artifacts). Catches schema/enum drift that would
+# silently change the map, workbook, or BPMN output before it reaches a
+# tag. PNG bytes are rasterizer-dependent and are excluded from the
+# byte-compare (existence is checked instead).
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'entities/**'
+      - 'schemas/**'
+      - 'scripts/generate_process_map.py'
+      - 'scripts/build_catalog_xlsx.py'
+      - 'scripts/build_bpmn_artifact.py'
+      - 'scripts/build_release_notes.py'
+      - 'scripts/build_manifest.py'
+      - '.github/workflows/validate-release-package.yml'
+
+jobs:
+  validate-release-package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version-file: .python-version
+      - name: Install dependencies
+        run: |
+          set -euo pipefail
+          python3 -m pip install pyyaml jsonschema pytest openpyxl weasyprint
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends poppler-utils
+      - name: Generate the artifact family twice
+        run: |
+          set -euo pipefail
+          for RUN in run1 run2; do
+            OUT="out/pr-preview/${RUN}"
+            mkdir -p "${OUT}"
+            python3 scripts/generate_process_map.py --label pr-preview \
+              --out "${OUT}/process-map.html" --png "${OUT}/process-map-a3.png" --dpi 96
+            python3 scripts/build_catalog_xlsx.py --out "${OUT}/catalog.xlsx"
+            python3 scripts/build_bpmn_artifact.py --label pr-preview \
+              --out "${OUT}/bpmn-library.bpmn"
+            python3 scripts/build_release_notes.py --version pr-preview \
+              --date 2026-01-01 --out "${OUT}/RELEASE-NOTES.md" \
+              --decisions "${OUT}/decisions.md"
+            python3 scripts/build_manifest.py --dir "${OUT}" --version pr-preview
+          done
+      - name: Byte-compare the two runs (determinism contract)
+        run: |
+          set -euo pipefail
+          FAIL=0
+          for F in process-map.html catalog.xlsx bpmn-library.bpmn \
+                   RELEASE-NOTES.md decisions.md MANIFEST.md; do
+            if ! cmp -s "out/pr-preview/run1/${F}" "out/pr-preview/run2/${F}"; then
+              echo "NON-DETERMINISTIC: ${F}"
+              FAIL=1
+            fi
+          done
+          for F in process-map.html process-map-a3.png catalog.xlsx \
+                   bpmn-library.bpmn RELEASE-NOTES.md decisions.md MANIFEST.md; do
+            [ -f "out/pr-preview/run1/${F}" ] || { echo "MISSING: ${F}"; FAIL=1; }
+          done
+          exit ${FAIL}
+      - name: Upload the preview package (debug)
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-package-preview
+          path: out/pr-preview/run1/
+          retention-days: 7

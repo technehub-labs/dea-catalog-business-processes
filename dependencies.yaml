@@ -1,0 +1,24 @@
+# Catalog dependency manifest (CR-BP-30e; decision D5 = adopt now).
+#
+# Mirrors the dea-catalog-business-capabilities pattern (CR-DEA-BC-05):
+# declares this catalog's pins to upstream contracts. Federation
+# consumers pin back to this catalog as
+# dea:catalog/business-processes@<version>.
+#
+# Schema (informative):
+#   ecf_contract:  string, e.g. dea:ecf@2.5.0      (required, hard pin)
+#   metamodel_pin: string, e.g. 1.0.0              (required, hard pin)
+#   catalogs:      list of catalog pin entries     (zero or more)
+
+ecf_contract: dea:ecf@2.5.0
+metamodel_pin: "1.0.0"
+
+catalogs:
+- id: dea:catalog/business-processes
+  version: v0.5.0
+  # v0.5.0 is the first post-reset release cut (CR-BP-116 Path B;
+  # docs/versioning.md §1: 0.1.0-0.4.0 withdrawn/abandoned). The git-ref
+  # pin returns at the cut (CR-BP-30h); the Tier-2 version pin above is
+  # authoritative. Cross-catalogue references held by this catalog:
+  # capabilities (realizes exemplar, capabilities:capability-*), the
+  # metamodel specialization chain, and the CR-013 portfolio register.
