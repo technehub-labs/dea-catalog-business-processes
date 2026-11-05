@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-oper
 
 This is a **Business Process** (level L2), named **Operate Logistics**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. Its canonical ID is `processes:process-eo-operate-zh9m57`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process is the running of the delivery network once it exists. Shipments move along the transport and delivery flows that were built into the network, serving customers and production along the way. Each shipment's outcome is recorded, with exceptions caught and handled as they happen.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the built logistics network actually delivers, on time where possible, with every exception recorded and dealt with rather than discovered by the customer.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Lives in the daily operation, where every shipment handed to the network is a fresh instance of the process. Product management oversees delivery performance under the Enablement & Operations Process Owner.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product manager scans the morning's shipment board, sees one delivery flagged as running behind, and follows the exception handling through until the customer has a revised time and the delay is recorded against the shipment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -73,6 +73,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Operate Logistics L2 process within the processes:pc-eo-operate-ydqb96 Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Operate Logistics |
+| `plain_language_description` | string | no | This process is the running of the delivery network once it exists. Shipments move along the transport and delivery … |
+| `business_purpose` | string | no | It exists so the built logistics network actually delivers, on time where possible, with every exception recorded and … |
+| `practical_context` | string | no | Lives in the daily operation, where every shipment handed to the network is a fresh instance of the process. Product … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

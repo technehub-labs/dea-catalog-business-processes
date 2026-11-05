@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-sd-conc
 
 This is a **Business Process** (level L2), named **Develop Corporate Strategy**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. Its canonical ID is `processes:process-sd-conceive-ahwvp5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This is the work that produces the organisation's corporate strategy itself. The strategy function brings together a bounded ambition, the strategic intent, and a chosen trajectory, and commits them as a strategy ready for detailed design work. It runs whenever the enterprise is setting a new strategic course, reframing an existing one, or realigning at board level in response to signals from outside.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives the whole enterprise one committed strategic course: ambition, intent, and trajectory decided together, so every downstream plan and initiative pulls in the same direction.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered when a new strategic trajectory is needed, at major planning points or when environmental signals force board-level realignment; the strategy function develops and commits the strategy.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function drafts the corporate strategy, setting the bounded ambition, the intent, and the chosen trajectory, and takes it through review with the leadership. Once committed, it is handed to the design work that turns it into objectives and options.
 
 ## 5. Header and Identity Table (generated)
 
@@ -77,6 +77,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Develop Corporate Strategy L2 process within the processes:pc-sd-conceive-ucb3gx Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Develop Corporate Strategy |
+| `plain_language_description` | string | no | This is the work that produces the organisation's corporate strategy itself. The strategy function brings together a … |
+| `business_purpose` | string | no | It gives the whole enterprise one committed strategic course: ambition, intent, and trajectory decided together, so … |
+| `practical_context` | string | no | Encountered when a new strategic trajectory is needed, at major planning points or when environmental signals force … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

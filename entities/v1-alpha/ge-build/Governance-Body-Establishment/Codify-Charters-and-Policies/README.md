@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ge-buil
 
 This is a **Business Process** (level L2), named **Codify Charters and Policies**, currently **candidate (yellow)**. It is part of the **Governance Body Establishment** process context, domain `ge`, lifecycle stage Build. Its canonical ID is `processes:process-ge-build-mctdgc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+As new boards and committees stand up, the rules they will run by need to be written down in one consistent set. The team drafts and organises the charters, policies, and standard documents each body needs, then publishes them where members can find them. By the end, every governance body has its own rulebook ready to hand.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Written, well-organised rules give governance bodies a common reference, so decisions and duties rest on documents everyone can consult rather than on memory or habit.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered whenever governance bodies are being established: the governing board and strategy function commission and shape the drafting so each body can start operating with its charter and policies in place.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* While a new committee is being formed, a strategy function lead drafts its charter and standing policies, the governing board reviews the wording, and the finished documents are filed in a shared library the members can open at their first meeting.
 
 ## 5. Header and Identity Table (generated)
 
@@ -75,6 +75,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Codify Charters and Policies L2 process within the processes:pc-ge-build-52hjrc Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Codify Charters and Policies |
+| `plain_language_description` | string | no | As new boards and committees stand up, the rules they will run by need to be written down in one consistent set. The … |
+| `business_purpose` | string | no | Written, well-organised rules give governance bodies a common reference, so decisions and duties rest on documents … |
+| `practical_context` | string | no | Encountered whenever governance bodies are being established: the governing board and strategy function commission and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

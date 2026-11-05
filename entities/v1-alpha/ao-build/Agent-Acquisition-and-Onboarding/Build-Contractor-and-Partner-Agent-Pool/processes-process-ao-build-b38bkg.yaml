@@ -139,3 +139,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Build Contractor and Partner-Agent Pool L2 process within the processes:pc-ao-build-pjk4rz Cell Charter. See trigger and outcome for the bounded …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Build the Contractor and Partner Agent Pool'
+plain_language_description: 'When the enterprise cannot meet surge or specialist demand by direct acquisition within the required timeframes, this process stands up a pool of contractors and partner agents instead. Potential sources are vetted before they join the pool, and agreed activation paths are set out so the pool can be brought online quickly. The result is a ready reserve that can be drawn on when demand spikes or niche skills are needed.'
+business_purpose: 'It gives the enterprise flexible extra capacity that direct acquisition alone cannot provide, shortening the time it takes to respond to surges and specialist needs.'
+practical_context: 'Comes into play when direct acquisition cannot serve surge or specialist demand within the required timeframes; the governing board is the named actor and stakeholder, with the Agency & Organization Process Owner accountable.'
+worked_example:
+  agent_type: human
+  narrative: 'Facing a seasonal workload spike that permanent hiring cannot cover in time, a workforce lead draws on the pre-vetted contractor pool and activates partner agents through the agreed paths, bringing the extra capacity online within days rather than months.'

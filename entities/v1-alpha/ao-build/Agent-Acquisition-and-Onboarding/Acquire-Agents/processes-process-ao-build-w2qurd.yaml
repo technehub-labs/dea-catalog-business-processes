@@ -142,3 +142,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Acquire and Onboard Agents L2 process within the processes:pc-ao-build-pjk4rz Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Acquire Agents'
+plain_language_description: 'This process brings new agents into the organization once the designed structure says how many and what kind are needed. People are recruited and hired through ordinary recruitment, while artificial agents are stood up through model deployment or integration. Everyone acquired is then onboarded and connected into the organization so they are ready to start work.'
+business_purpose: 'It exists to turn the approved organization design into actual working capacity, so the enterprise has the mix of people and artificial agents it needs in place and ready to operate.'
+practical_context: 'Runs whenever the designed organization structure calls for additional capacity that must be provisioned, onboarded, and integrated; the governing board is the named actor and stakeholder, with the Agency & Organization Process Owner accountable for the process.'
+worked_example:
+  agent_type: human
+  narrative: 'A hiring manager works through an approved staffing request for a new team, runs recruitment for the people roles, and arranges deployment and integration of the artificial agents the design calls for, so that both arrive onboarded and ready before the go-live date.'

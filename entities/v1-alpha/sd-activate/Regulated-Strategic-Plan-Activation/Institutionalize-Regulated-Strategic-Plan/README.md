@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-sd-acti
 
 This is a **Business Process** (level L2), named **Institutionalize Regulated Strategic Plan**, currently **candidate (yellow)**. It is domain `sd`, lifecycle stage Activate. Its canonical ID is `processes:process-sd-activate-s9m34e`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+In regulated sectors, a board-approved strategy is not live until the supervisor says so. This work takes the approved plan through the filing and activation steps with the competent regulator, keeps the supervisor's acknowledgement and the filing receipt on record, and switches on the monitoring framework that tracks the plan's obligations. From then on, the plan binds the organisation under the regulator's continuing supervision.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because regulated plans carry real weight: activation under supervisor acknowledgement makes the plan's obligations binding and puts the receipts and monitoring in place that the regulator expects to see.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered whenever a board-approved strategic plan in a regulated sector must be filed, with the strategy function preparing the filing and the supervising authority, risk function, and governing board involved until the acknowledgement lands.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function submits the board-approved plan to the supervising authority, answers the review questions, and files the acknowledgement with the regulated records. The risk function then stands up the monitoring framework, and the governing board is briefed that the plan's obligations are now binding under continuing supervision.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Institutionalize a regulated entity's strategic plan under the enterprise's regulated-entity approval authority within … |
+| `plain_language_name` | string | no | Institutionalize Regulated Strategic Plan |
+| `plain_language_description` | string | no | In regulated sectors, a board-approved strategy is not live until the supervisor says so. This work takes the approved … |
+| `business_purpose` | string | no | It exists because regulated plans carry real weight: activation under supervisor acknowledgement makes the plan's … |
+| `practical_context` | string | no | Encountered whenever a board-approved strategic plan in a regulated sector must be filed, with the strategy function … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

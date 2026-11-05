@@ -141,3 +141,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Define Enterprise Purpose and Ambition L2 process within the processes:pc-sd-conceive-ucb3gx Cell Charter. See trigger and outcome for the bounded …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Define Enterprise Purpose and Ambition'
+plain_language_description: 'This work settles the most basic questions an organisation can ask: why it exists and how far it intends to go. The strategy function anchors the enterprise purpose and the ambition that follows from it, committing both as the foundation everything else in strategy stands on. Whenever the enterprise is founded, reframed, or its mandate shifts, this is where the re-anchoring happens.'
+business_purpose: 'It provides the anchor for all strategic work: purpose and ambition defined up front keep later intent, choices, and plans pointing at the same destination.'
+practical_context: 'Triggered when the enterprise is being established, reframed, or responding to mandate shifts; the strategy function defines and commits the purpose and ambition before any intent work begins.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function drafts the purpose statement and the ambition that follows from it, tests the wording with the leadership, and commits the pair as the enterprise anchor. Later planning then starts from that settled foundation.'

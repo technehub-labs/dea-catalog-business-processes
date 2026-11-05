@@ -197,3 +197,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Develop Corporate Strategy L2 process within the processes:pc-sd-conceive-ucb3gx Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Develop Corporate Strategy'
+plain_language_description: 'This is the work that produces the organisation''s corporate strategy itself. The strategy function brings together a bounded ambition, the strategic intent, and a chosen trajectory, and commits them as a strategy ready for detailed design work. It runs whenever the enterprise is setting a new strategic course, reframing an existing one, or realigning at board level in response to signals from outside.'
+business_purpose: 'It gives the whole enterprise one committed strategic course: ambition, intent, and trajectory decided together, so every downstream plan and initiative pulls in the same direction.'
+practical_context: 'Encountered when a new strategic trajectory is needed, at major planning points or when environmental signals force board-level realignment; the strategy function develops and commits the strategy.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function drafts the corporate strategy, setting the bounded ambition, the intent, and the chosen trajectory, and takes it through review with the leadership. Once committed, it is handed to the design work that turns it into objectives and options.'

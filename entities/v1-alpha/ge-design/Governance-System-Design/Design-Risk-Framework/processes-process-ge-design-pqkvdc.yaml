@@ -141,3 +141,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Design Risk Framework (design stage, strategic process). Landed by CR-BP-21f.1 from the GovernanceAndExistence register v2.'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Design Risk Framework'
+plain_language_description: 'The agreed risk direction now has to become a working framework. This means settling the taxonomy, the shared vocabulary for the kinds of risk the enterprise faces, plus the scales used to rate them, and how the framework plugs into everyday governance. What emerges is the detailed blueprint the build stage will follow.'
+business_purpose: 'It turns appetite and posture into a usable framework, so risks across the enterprise get described, rated, and governed the same way.'
+practical_context: 'Begins when the risk framework direction is committed: the strategy function and governing board, with the operations function, work the taxonomy, assessment scales, and governance integration into a design that hands over to the build stage.'
+worked_example:
+  agent_type: human
+  narrative: 'Working from the board''s chosen risk appetite, a strategy function analyst lays out the risk categories, the rating scales each will use, and where risk reporting slots into existing governance routines.'

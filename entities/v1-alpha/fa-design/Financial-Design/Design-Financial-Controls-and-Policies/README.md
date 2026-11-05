@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-fa-desi
 
 This is a **Business Process** (level L2), named **Design Financial Controls and Policies**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. Its canonical ID is `processes:process-fa-design-uun4ja`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When a gap in financial controls or policies is identified, this process fills the gap on paper before anything is implemented. The finance design authority works out what the control or policy should say and how it fits the approved financial architecture. What comes out is a policy framework that is ready to be put into practice.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so financial safeguards are designed deliberately against the approved financial architecture, giving implementation teams a sound policy framework instead of leaving controls to be patched later.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It starts whenever a control or policy gap is identified, and the finance design authority does the design work within the approved financial architecture.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* After a review highlights a missing control around expense approvals, the finance design authority drafts the policy, aligns it with the approved financial architecture, and hands the finished framework over for implementation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Design Financial Controls and Policies (design stage, management process). Landed by CR-BP-21e.1 from the … |
+| `plain_language_name` | string | no | Design Financial Controls and Policies |
+| `plain_language_description` | string | no | When a gap in financial controls or policies is identified, this process fills the gap on paper before anything is … |
+| `business_purpose` | string | no | It exists so financial safeguards are designed deliberately against the approved financial architecture, giving … |
+| `practical_context` | string | no | It starts whenever a control or policy gap is identified, and the finance design authority does the design work within … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

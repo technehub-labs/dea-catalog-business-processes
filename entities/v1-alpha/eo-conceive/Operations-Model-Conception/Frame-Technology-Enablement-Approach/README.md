@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-conc
 
 This is a **Business Process** (level L2), named **Frame Technology Enablement Approach**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. Its canonical ID is `processes:process-eo-conceive-68mp6v`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process decides in broad strokes which kinds of technology will carry the operating model. Working from the operations strategy, the strategy and operations leads pick the platform families the business will rely on and set the sourcing principles for how those platforms will be obtained. The framed approach is aligned to the operations planning cycle and gives later platform architecture work its starting point.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so choices about enabling technology are made deliberately at strategy level, as platform families and sourcing principles, rather than emerging piecemeal later.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered during operations strategy work, when bounded decisions are needed on which technology platforms will enable the operating model. Strategy function and operations function do the framing, with the Enablement & Operations Process Owner accountable.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* As part of a strategy refresh, a strategy lead and an operations manager agree which platform families the operating model will depend on and record the sourcing principles that will guide how those platforms are obtained, ready for the architecture work that follows.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Frame Technology Enablement Approach L2 process within the processes:pc-eo-conceive-mxmtzq Cell Charter … |
+| `plain_language_name` | string | no | Frame the Technology Enablement Approach |
+| `plain_language_description` | string | no | This process decides in broad strokes which kinds of technology will carry the operating model. Working from the … |
+| `business_purpose` | string | no | It exists so choices about enabling technology are made deliberately at strategy level, as platform families and … |
+| `practical_context` | string | no | Encountered during operations strategy work, when bounded decisions are needed on which technology platforms will … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

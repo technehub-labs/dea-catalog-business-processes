@@ -135,3 +135,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Design Financial Controls and Policies (design stage, management process). Landed by CR-BP-21e.1 from the FinanceAndAccounting register v2.'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Design Financial Controls and Policies'
+plain_language_description: 'When a gap in financial controls or policies is identified, this process fills the gap on paper before anything is implemented. The finance design authority works out what the control or policy should say and how it fits the approved financial architecture. What comes out is a policy framework that is ready to be put into practice.'
+business_purpose: 'It exists so financial safeguards are designed deliberately against the approved financial architecture, giving implementation teams a sound policy framework instead of leaving controls to be patched later.'
+practical_context: 'It starts whenever a control or policy gap is identified, and the finance design authority does the design work within the approved financial architecture.'
+worked_example:
+  agent_type: human
+  narrative: 'After a review highlights a missing control around expense approvals, the finance design authority drafts the policy, aligns it with the approved financial architecture, and hands the finished framework over for implementation.'

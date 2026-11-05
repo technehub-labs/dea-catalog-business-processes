@@ -11,10 +11,10 @@
   },
   "phase_distribution": {
     "Verification": 580,
-    "Processing": 580,
-    "Intake": 580,
     "Confirmation": 580,
-    "Record": 580
+    "Processing": 580,
+    "Record": 580,
+    "Intake": 580
   },
   "structural_quality_observations": {
     "canonical_phase_pattern": [

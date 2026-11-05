@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pv-reti
 
 This is a **Business Process** (level L2), named **Transition Proposition Out of Service**, currently **candidate (yellow)**. It is part of the **Proposition Retirement and Service Withdrawal** process context, domain `pv`, lifecycle stage Retire. Its canonical ID is `processes:process-pv-retire-6us5am`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When a proposition has an approved retirement decision, this work withdraws it from service in a controlled way. The proposition design authority plans the withdrawal, moves the affected stakeholders onto whatever replaces the offering, and steps the service out of operational reliance. Anything still owed after the withdrawal is identified and routed onward.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It makes retirement orderly rather than abrupt: stakeholders are transitioned, reliance is wound down deliberately, and lingering obligations are caught instead of forgotten when the offering switches off.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered once a retirement decision has been approved, with the proposition design authority running the withdrawal plan while affected teams move off the offering; the work continues until residual obligations are routed.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* With retirement approved, the proposition design authority publishes the withdrawal plan, briefs the affected teams on the replacement, and schedules the final switch-off. The obligations that outlive the service are then listed and routed to their owners.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Transition a proposition, product or service out of operational service in a controlled manner: withdrawal planning … |
+| `plain_language_name` | string | no | Transition Proposition Out of Service |
+| `plain_language_description` | string | no | When a proposition has an approved retirement decision, this work withdraws it from service in a controlled way. The … |
+| `business_purpose` | string | no | It makes retirement orderly rather than abrupt: stakeholders are transitioned, reliance is wound down deliberately, and … |
+| `practical_context` | string | no | Encountered once a retirement decision has been approved, with the proposition design authority running the withdrawal … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

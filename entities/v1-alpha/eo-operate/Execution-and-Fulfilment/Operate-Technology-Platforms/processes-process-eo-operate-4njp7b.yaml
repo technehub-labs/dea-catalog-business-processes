@@ -124,3 +124,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Operate Technology Platforms L2 process within the processes:pc-eo-operate-ydqb96 Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Operate Technology Platforms'
+plain_language_description: 'This process keeps the installed technology platforms up and serving the workloads that depend on them. Availability is managed against agreed targets, and when something goes wrong in a service window the incident is recorded and worked. It is the difference between platforms that merely exist and platforms the operation can rely on.'
+business_purpose: 'It exists so operational workloads get the agreed availability from the installed platforms, with every incident recorded rather than quietly absorbed.'
+practical_context: 'Encountered around the clock across the platforms'' service windows, whenever operational workloads need the platforms up. Product management oversees platform operation under the Enablement & Operations Process Owner.'
+worked_example:
+  agent_type: human
+  narrative: 'During an overnight service window a platform incident is recorded and worked, and the next morning a product manager reviews the incident log and confirms availability was back at target.'

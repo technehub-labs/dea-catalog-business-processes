@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-acti
 
 This is a **Business Process** (level L2), named **Activate Operations Capability**, currently **candidate (yellow)**. It is domain `eo`, lifecycle stage Activate. Its canonical ID is `processes:process-eo-activate-sy5qsa`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The capability is ready for live service, but the regulator must formally authorize it first. This process takes it that last mile: the authorization is put on record, the operations manuals and runbooks are brought into active use, and the everyday controls for incidents, capacity, security and compliance are switched on. It ends with the capability formally live and the supervising authority's continuing-oversight relationship in place.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so that a regulated service only goes live once the regulator's authorization is on record and the controls protecting the operation are actually running.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered whenever a capability needs a regulator-issued authorization or certification before entering live service, such as an air operator certificate, payment-institution authorization, GMP certification or a rail safety case. The compliance function, operations function and product management carry the work under the Enablement & Operations Process Owner.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A compliance lead confirms the aviation authority has issued the air operator certificate, then sits with the operations function to bring the runbooks and the incident, capacity, security and compliance controls live before the first commercial flight, and closes out the notification to the supervising authority.
 
 ## 5. Header and Identity Table (generated)
 
@@ -75,6 +75,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Activate an operations capability under the enterprise's regulated-entity approval authority within the … |
+| `plain_language_name` | string | no | Activate Operations Capability |
+| `plain_language_description` | string | no | The capability is ready for live service, but the regulator must formally authorize it first. This process takes it … |
+| `business_purpose` | string | no | It exists so that a regulated service only goes live once the regulator's authorization is on record and the controls … |
+| `practical_context` | string | no | Encountered whenever a capability needs a regulator-issued authorization or certification before entering live service … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

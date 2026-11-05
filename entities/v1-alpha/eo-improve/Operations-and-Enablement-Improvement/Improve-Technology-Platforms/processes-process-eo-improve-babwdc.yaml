@@ -137,3 +137,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Improve Technology Platforms L2 process within the processes:pc-eo-improve-pka6dk Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Improve Technology Platforms'
+plain_language_description: 'This process acts on what incidents and performance data say about the technology platforms the operation depends on. Where the evidence shows reliability, capacity or capability gaps, upgrades are worked up to close them. The improvements are committed to the platform improvement backlog so the fixes get scheduled rather than lost.'
+business_purpose: 'It exists so that platform problems surface as committed upgrades on a backlog, not as recurring incidents the operation simply tolerates.'
+practical_context: 'Encountered whenever platform performance or incident evidence reveals a reliability, capacity or capability gap. The operations function raises and shapes the improvements, with the Enablement & Operations Process Owner accountable.'
+worked_example:
+  agent_type: human
+  narrative: 'After a rough month of platform incidents, an operations specialist pulls the evidence together, pinpoints the reliability gap behind the repeat failures, and commits an upgrade to the platform improvement backlog.'

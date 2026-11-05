@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ge-reti
 
 This is a **Business Process** (level L2), named **Effect Regulator-Mandated Governance Unwind**, currently **candidate (yellow)**. It is part of the **Governance Unwind** process context, domain `ge`, lifecycle stage Retire. Its canonical ID is `processes:process-ge-retire-mjq5hg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When a regulator or court orders the enterprise to dissolve or give up its authorisation, governance cannot simply stop; it has to be unwound in an orderly, supervised way. The remaining bodies shrink to the quorum the order allows, the policy instruments are retired one by one, and the required statutory dissolution filings go in. Custodians are named for the records that must be retained, and the process ends with dissolution, surrender of the authorisation, or the court's decree entered.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It ensures the enterprise exits lawfully and traceably, satisfying the regulator or court that every governance duty was closed out under supervision rather than abandoned.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Rare and exceptional, triggered only by a binding regulator or court order such as a mandatory wind-down, revocation, or receivership; the operations function and finance function execute the steps under the industry regulator's supervision.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* After a cease-and-desist order arrives, the operations function cuts the governing bodies back to the permitted wind-down quorum, the finance function submits the statutory dissolution filings, and the industry regulator watches each step through to decree entry.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Effect the regulator- or court-mandated governance unwind within the processes:pc-ge-retire-kndw6x Cell Charter. The … |
+| `plain_language_name` | string | no | Wind Down Governance on a Regulator or Court Order |
+| `plain_language_description` | string | no | When a regulator or court orders the enterprise to dissolve or give up its authorisation, governance cannot simply … |
+| `business_purpose` | string | no | It ensures the enterprise exits lawfully and traceably, satisfying the regulator or court that every governance duty … |
+| `practical_context` | string | no | Rare and exceptional, triggered only by a binding regulator or court order such as a mandatory wind-down, revocation … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

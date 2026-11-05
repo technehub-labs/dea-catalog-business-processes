@@ -1,0 +1,212 @@
+{
+  "processes:process-sd-activate-s9m34e": {
+    "plain_language_name": "Institutionalize Regulated Strategic Plan",
+    "plain_language_description": "In regulated sectors, a board-approved strategy is not live until the supervisor says so. This work takes the approved plan through the filing and activation steps with the competent regulator, keeps the supervisor's acknowledgement and the filing receipt on record, and switches on the monitoring framework that tracks the plan's obligations. From then on, the plan binds the organisation under the regulator's continuing supervision.",
+    "business_purpose": "It exists because regulated plans carry real weight: activation under supervisor acknowledgement makes the plan's obligations binding and puts the receipts and monitoring in place that the regulator expects to see.",
+    "practical_context": "Encountered whenever a board-approved strategic plan in a regulated sector must be filed, with the strategy function preparing the filing and the supervising authority, risk function, and governing board involved until the acknowledgement lands.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The strategy function submits the board-approved plan to the supervising authority, answers the review questions, and files the acknowledgement with the regulated records. The risk function then stands up the monitoring framework, and the governing board is briefed that the plan's obligations are now binding under continuing supervision."
+    }
+  },
+  "processes:process-sd-build-q4nf9g": {
+    "plain_language_name": "Build Strategic Plan",
+    "plain_language_description": "After the strategic choices have been evaluated and a path chosen, this work writes that choice down as a formal, versioned plan. The strategy function assembles the plan with its roadmap and the portfolio of initiatives that will carry it, and sets the resource allocation priorities within the authorised frame. The committed plan then becomes the reference the organisation executes against.",
+    "business_purpose": "It turns an agreed direction into a durable, versioned document: without a committed plan, roadmap, and initiative portfolio, the chosen strategy stays an intention rather than something the enterprise can steer by.",
+    "practical_context": "Runs at the point in the strategy cycle where evaluated choices are ready to be written up; the strategy function drafts and commits the plan, roadmap, and initiative portfolio ahead of execution.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The strategy function drafts the plan document, pins the roadmap milestones into sequence, and lists the initiatives that will deliver each step. Resource envelopes are set within the authorised frame, and the versioned plan is committed for the organisation to work to."
+    }
+  },
+  "processes:process-sd-build-7n4prh": {
+    "plain_language_name": "Build Strategic Roadmap",
+    "plain_language_description": "This work lays out the chosen strategy as a sequence the organisation can actually follow. The strategy function orders the initiatives into a sensible flow and anchors the roadmap with milestones so progress can be tracked. The finished roadmap is then ready for the work of translating the choices into owned initiatives.",
+    "business_purpose": "It makes strategy executable: sequencing initiatives and fixing milestone anchors turns a set of choices into a timed path that delivery teams can plan and report against.",
+    "practical_context": "Encountered while the strategic plan is being assembled, once the choices are designed and need sequencing; the strategy function builds the roadmap before initiative translation begins.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The strategy function lines up the strategic initiatives in delivery order, sets the milestone anchors for each stretch of the roadmap, and checks the sequence hangs together. The roadmap then goes to the teams translating the choices into owned work."
+    }
+  },
+  "processes:process-sd-build-2pkz5n": {
+    "plain_language_name": "Set Resource Allocation Priorities",
+    "plain_language_description": "Strategic initiatives are only actionable once they have resources, and this work decides who gets what. The strategy function sets the allocation priorities and gives each initiative a bounded envelope so the plan can be executed without open-ended commitments. The envelopes are aligned to the strategic plan, so money and effort follow the chosen direction.",
+    "business_purpose": "It connects strategy to capacity: ranking initiatives and bounding each one's resources ensures the plan is resourced in priority order rather than by whoever asks loudest.",
+    "practical_context": "Runs during plan build, once initiatives exist and need resourcing; the strategy function sets the envelope for each initiative as part of completing the plan.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The strategy function ranks the new initiatives, assigns each a bounded resource envelope, and checks the totals line up with the plan's priorities. Initiative owners then know exactly what they can draw on before work starts."
+    }
+  },
+  "processes:process-sd-build-9admqy": {
+    "plain_language_name": "Translate Strategic Choices into Initiatives",
+    "plain_language_description": "This work converts the agreed strategic direction into named pieces of work. The strategy function takes the choices captured in the plan and roadmap and defines the bounded initiatives that will deliver them, giving each an owner and a place in the sequence. With ownership, sequencing, and resourcing envelopes attached, the choices become work people can actually start.",
+    "business_purpose": "It bridges deciding and doing: strategy only changes anything once it is broken into owned, sequenced initiatives, and this work makes that translation deliberate rather than accidental.",
+    "practical_context": "Encountered straight after the plan and roadmap are built, when the strategy function turns each strategic choice into a bounded initiative with an owner and a sequence.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The strategy function works through the plan's choices one by one, drafting each as a bounded initiative with a named owner and its slot in the sequence. The initiative list is then handed over for resourcing."
+    }
+  },
+  "processes:process-sd-conceive-3uredz": {
+    "plain_language_name": "Conceive Strategic Intent",
+    "plain_language_description": "With the enterprise's purpose and ambition settled, this work decides what direction the organisation will actually steer. The strategy function frames a bounded strategic intent that sits inside that purpose and ambition, giving the planning work that follows a clear heading. The intent then serves as the reference point for horizons, options, and objectives.",
+    "business_purpose": "It gives the enterprise a steerable sense of direction: strategic intent translates broad purpose and ambition into a framing that later planning can design against.",
+    "practical_context": "Encountered early in the strategy cycle, once purpose and ambition are defined; the strategy function conceives and frames the intent before any horizons or options are drawn.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The strategy function holds a framing session once the purpose and ambition are signed off, drafting the strategic intent in a few bounded statements. The intent is agreed and becomes the heading under which horizons and options are developed."
+    }
+  },
+  "processes:process-sd-conceive-r93j3d": {
+    "plain_language_name": "Define Enterprise Purpose and Ambition",
+    "plain_language_description": "This work settles the most basic questions an organisation can ask: why it exists and how far it intends to go. The strategy function anchors the enterprise purpose and the ambition that follows from it, committing both as the foundation everything else in strategy stands on. Whenever the enterprise is founded, reframed, or its mandate shifts, this is where the re-anchoring happens.",
+    "business_purpose": "It provides the anchor for all strategic work: purpose and ambition defined up front keep later intent, choices, and plans pointing at the same destination.",
+    "practical_context": "Triggered when the enterprise is being established, reframed, or responding to mandate shifts; the strategy function defines and commits the purpose and ambition before any intent work begins.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The strategy function drafts the purpose statement and the ambition that follows from it, tests the wording with the leadership, and commits the pair as the enterprise anchor. Later planning then starts from that settled foundation."
+    }
+  },
+  "processes:process-sd-conceive-ahwvp5": {
+    "plain_language_name": "Develop Corporate Strategy",
+    "plain_language_description": "This is the work that produces the organisation's corporate strategy itself. The strategy function brings together a bounded ambition, the strategic intent, and a chosen trajectory, and commits them as a strategy ready for detailed design work. It runs whenever the enterprise is setting a new strategic course, reframing an existing one, or realigning at board level in response to signals from outside.",
+    "business_purpose": "It gives the whole enterprise one committed strategic course: ambition, intent, and trajectory decided together, so every downstream plan and initiative pulls in the same direction.",
+    "practical_context": "Encountered when a new strategic trajectory is needed, at major planning points or when environmental signals force board-level realignment; the strategy function develops and commits the strategy.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The strategy function drafts the corporate strategy, setting the bounded ambition, the intent, and the chosen trajectory, and takes it through review with the leadership. Once committed, it is handed to the design work that turns it into objectives and options."
+    }
+  },
+  "processes:process-sd-conceive-xa4h2k": {
+    "plain_language_name": "Frame Strategic Horizons",
+    "plain_language_description": "Strategy needs a sense of time, and this work supplies it. The strategy function divides the planning cycle into bounded horizons and fixes the milestone anchors that mark each one, giving the conceived intent a structure to live in. Planning, options, and targets can then be placed against a shared timetable.",
+    "business_purpose": "It gives strategic planning its calendar: bounded horizons and milestone anchors mean intent, choices, and objectives can all be timed and tracked on one shared frame.",
+    "practical_context": "Runs when strategic intent has been conceived and the planning cycle needs structuring; the strategy function frames the horizons ahead of option design and plan construction.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The strategy function sketches the planning horizons, agrees the milestone anchors that close each one, and publishes the frame to the planning teams. Option designers then know exactly what window each choice has to fit."
+    }
+  },
+  "processes:process-sd-design-vdwkmh": {
+    "plain_language_name": "Design Objectives and Targets",
+    "plain_language_description": "A chosen strategic option only becomes manageable once it has measures and owners. This work designs the objectives and targets for the committed option, giving each bounded measures and a named owner so progress can be steered. The result is a set of objectives aligned to the strategic intent and ready to be monitored.",
+    "business_purpose": "It makes strategy steerable: objectives and targets with measures and owners turn a chosen direction into something whose progress can be watched and corrected.",
+    "practical_context": "Encountered once a strategic option has been committed, when the strategy function designs the measures and ownership that make it steerable ahead of plan construction.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The strategy function translates the committed option into a handful of objectives, attaches concrete targets and measures to each, and names the owner accountable for every one. The objectives pack then feeds the plan build."
+    }
+  },
+  "processes:process-sd-design-ewvbsh": {
+    "plain_language_name": "Design Strategic Options",
+    "plain_language_description": "This work turns strategic intent into a menu of genuinely different ways forward. The strategy function designs each option as a set of bounded trade-offs, what it would cost and what it would deliver, and sets the criteria against which the options will be judged. The committed option designs then go forward for evaluation and translation.",
+    "business_purpose": "It creates real choice: designing distinct options with explicit trade-offs and evaluation criteria up front lets the enterprise compare paths honestly instead of defaulting to the first idea.",
+    "practical_context": "Runs when the conceived strategic intent needs candidate paths; the strategy function designs the options and their trade-offs before any evaluation takes place.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The strategy function sketches the candidate options for the intent, writes each one's trade-offs in plain terms, and agrees the criteria the leadership will judge them on. The option designs are committed and sent for evaluation."
+    }
+  },
+  "processes:process-sd-design-uenzna": {
+    "plain_language_name": "Design Strategic Scenarios",
+    "plain_language_description": "Because the future is uncertain, this work builds the scenarios the strategy will be stress-tested against. The strategy function designs each scenario as a set of bounded assumptions about how the world could move, together with the signposts that would show an assumption coming true. The scenarios are then ready to support strategic plan construction.",
+    "business_purpose": "It prepares the strategy for an uncertain world: scenarios with explicit assumptions and signposts let the enterprise test its direction against different futures before committing to one.",
+    "practical_context": "Encountered during strategy design, when the options need stress-testing under uncertainty; the strategy function designs the scenarios ahead of plan construction.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The strategy function drafts a set of future scenarios, listing the assumptions each rests on and the signposts that would confirm or break them. The scenario pack then travels with the options into plan construction."
+    }
+  },
+  "processes:process-sd-design-ed7jd5": {
+    "plain_language_name": "Evaluate Strategic Alternatives",
+    "plain_language_description": "With several designed options on the table, this work works out which one the enterprise should back. The strategy function compares the alternatives against the objectives and targets, and checks how each fits the designed scenarios. The evaluation ends with the preferred option committed.",
+    "business_purpose": "It forces an explicit choice: comparing alternatives against objectives, targets, and scenario fit means the enterprise commits to a preferred path for stated reasons rather than by momentum.",
+    "practical_context": "Runs after option and scenario design, when the strategy function must compare and choose ahead of plan construction; the preferred option feeds directly into the plan build.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The strategy function scores each designed option against the objectives and targets, walks the scenarios to see how each holds up, and recommends the strongest. The preferred option is committed and becomes the basis of the plan."
+    }
+  },
+  "processes:process-sd-improve-9wgvaf": {
+    "plain_language_name": "Adapt Strategic Direction",
+    "plain_language_description": "When the evidence says the current course no longer fits, this work changes it deliberately. The strategy function adapts the strategic direction, has the objectives and targets refreshed to match, and carries the lessons of the effectiveness review into the result. The adapted direction is then ready to drive the next planning cycle.",
+    "business_purpose": "It keeps strategy honest in the face of change: signals and review findings are turned into a revised direction rather than ignored, so the enterprise corrects course while the correction is still affordable.",
+    "practical_context": "Encountered when environmental signals, performance monitoring, or an effectiveness review show the direction needs adjusting; the strategy function leads the adaptation ahead of the next planning cycle.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Acting on the effectiveness review findings, the strategy function revises the strategic direction, and the objectives and targets are refreshed to match the new course. The adapted direction is tabled as the starting point of the next planning cycle."
+    }
+  },
+  "processes:process-sd-improve-aqbrm7": {
+    "plain_language_name": "Refresh Objectives and Targets",
+    "plain_language_description": "Objectives age, and this work brings them up to date. The strategy function takes the performance evidence and the environmental signals showing that current objectives and targets have drifted out of fit, and reworks them against what the evidence says. The refreshed set then reflects both the direction and the world the enterprise actually operates in.",
+    "business_purpose": "It keeps the steering numbers truthful: refreshing objectives and targets against real performance evidence stops the enterprise measuring itself against goals that no longer fit.",
+    "practical_context": "Triggered when performance evidence or environmental signals show the current objectives and targets no longer fit the direction; the strategy function carries out the refresh on the standing improvement cycle.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The strategy function reviews the performance evidence showing some targets have gone stale, reworks them, and adjusts the supporting objectives. The refreshed set is published so monitoring resumes against goals that fit."
+    }
+  },
+  "processes:process-sd-improve-duwd64": {
+    "plain_language_name": "Review Strategy Effectiveness",
+    "plain_language_description": "This work asks the blunt question of whether the strategy is actually working. The strategy function examines the current direction against the strategic intent and the performance evidence, and works out whether the intended outcomes are being produced. Its findings are committed so the next adaptation cycle starts from evidence rather than opinion.",
+    "business_purpose": "It closes the loop on strategy: a committed effectiveness review tells the enterprise whether its chosen direction is delivering, and hands the adaptation cycle findings it can act on.",
+    "practical_context": "Runs as part of the adaptation cycle whenever committed findings on the direction are needed; the strategy function performs the review against the strategic intent and the performance evidence.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The strategy function lays the strategic intent beside the performance evidence, works through where outcomes match and where they fall short, and writes up the findings. The committed review then feeds the adaptation cycle."
+    }
+  },
+  "processes:process-sd-operate-zdjchn": {
+    "plain_language_name": "Monitor Strategic Performance",
+    "plain_language_description": "While the plan is being executed, this work keeps score and keeps steering. The strategy function tracks strategic performance against the plan on a defined review cadence, picks up the environmental signals as they arrive, and steers the initiative portfolio so it stays in line with the strategic intent. Monitoring, sensing, and steering run together as one continuous duty.",
+    "business_purpose": "It keeps execution tied to intent: continuous monitoring against the plan means drift, disruption, or opportunity is spotted and steered on while it still matters.",
+    "practical_context": "A continuous duty while the plan is in execution, organised around the strategic review cycle; the strategy function monitors performance, senses signals, and steers the initiative portfolio on that cadence.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "At each review meeting the strategy function walks the performance figures against the plan, notes the fresh environmental signals, and adjusts the initiative portfolio where it has drifted from intent. The steering decisions are carried into the cycle's record."
+    }
+  },
+  "processes:process-sd-operate-ucxpz4": {
+    "plain_language_name": "Operate Strategic Review Cycle",
+    "plain_language_description": "This work is the drumbeat behind strategic steering. The strategy function runs the standing review cycle on its defined cadence, brings the right inputs to each session, and makes sure the decisions taken are recorded for the strategic record. Every other steering activity plugs into the rhythm this cycle sets.",
+    "business_purpose": "It gives strategic steering a reliable rhythm: a standing cadence with recorded inputs and decisions means reviews actually happen, produce decisions, and leave a traceable record.",
+    "practical_context": "Continuous while strategy is in operation: the strategy function convenes the review cycle on its cadence, prepares the inputs, and records the decisions each time it meets.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The strategy function circulates the review pack ahead of the scheduled session, chairs the meeting, and afterwards files the decisions taken for the strategic record. The next cycle's date and inputs are already booked before anyone leaves."
+    }
+  },
+  "processes:process-sd-operate-53y4j4": {
+    "plain_language_name": "Sense Environmental Signals",
+    "plain_language_description": "This work is how the strategy stays aware of the world outside. The strategy function continuously gathers the signals that could mean drift, disruption, or opportunity, filters out the noise, and routes what matters to the strategic review cycle. Direction-setting downstream never has to rely on stale assumptions about the environment.",
+    "business_purpose": "It acts as the strategy's early-warning sense: signals about drift, disruption, and opportunity are caught, filtered, and routed while the enterprise can still respond rather than react late.",
+    "practical_context": "Continuous while the strategy is operating; the strategy function collects and filters environmental signals as they emerge and routes the significant ones into the review cycle.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The strategy function spots a fresh signal in its regular environmental sweep, filters it against the noise, and routes it into the next strategic review session with a short note on what it could mean for the direction."
+    }
+  },
+  "processes:process-sd-operate-u6xgu5": {
+    "plain_language_name": "Steer Initiative Portfolio",
+    "plain_language_description": "Initiatives in flight rarely behave exactly as planned, and this work keeps them pointed the right way. The strategy function watches where initiatives drift against strategic performance and commits rebalancing decisions at each review cycle to correct the course. The initiative portfolio is thereby steered continuously rather than revisited only when something breaks.",
+    "business_purpose": "It keeps the delivery machinery aligned with strategy: rebalancing decisions at each review cycle pull drifting initiatives back toward the intent they were created to serve.",
+    "practical_context": "Runs whenever in-flight initiatives drift against strategic performance, with the strategy function committing rebalancing decisions as a standing item at each review cycle.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Seeing one initiative lag and another outrun its brief, the strategy function commits a rebalancing decision at the review cycle, shifting support from the lagging work to the work that is proving out. The decision is recorded and the initiative owners are briefed."
+    }
+  },
+  "processes:process-sd-retire-umxf3c": {
+    "plain_language_name": "Sunset Regulated Strategic Plan",
+    "plain_language_description": "In regulated sectors, a live strategic plan can be ordered out of service by the regulator, and this work carries that retirement out properly. The strategy and finance functions record the regulator's directive, preserve the status of the plan that replaces it, and retain the retired plan's records under the retention policy. The sunset is completed with the supervisor's acknowledgement placed on record.",
+    "business_purpose": "It makes regulator-ordered retirement clean and provable: the directive, the replacement's status, the retained records, and the supervisor's acknowledgement are all settled so the sunset stands up under continuing supervision.",
+    "practical_context": "Encountered when a competent regulator directs or forces retirement, for instance after a failed stress test or a rejected plan; the strategy and finance functions carry out the sunset under the regulator's continuing supervision.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "After the regulator rejects the plan, the strategy function logs the directive, marks the replacement plan's status, and hands the retired records to the finance function for retention under the retention policy. The supervisor's acknowledgement of the sunset is filed, and the affected business units are notified."
+    }
+  }
+}

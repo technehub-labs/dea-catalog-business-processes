@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ge-impr
 
 This is a **Business Process** (level L2), named **Score Audit Findings**, currently **candidate (yellow)**. It is part of the **Governance Review and Learning** process context, domain `ge`, lifecycle stage Improve. Its canonical ID is `processes:process-ge-improve-axtq3b`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+An audit report full of findings is only useful once those findings are weighed. Here each one is graded for how severe it is and whether it keeps coming back, then measured against the relevant standards. The patterns and quality trends that emerge are reported to the governance bodies so they can see where trouble concentrates.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Consistent scoring turns raw audit findings into comparable signals, so the governance bodies can tell serious, repeated problems from one-off noise and act on the trends.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Follows the delivery of an audit report with findings: the audit function grades each finding for severity and recurrence while the strategy function benchmarks them against standards and reports the quality trends.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* When the latest audit report lands, an audit function analyst rates each finding for severity and checks whether it recurred from last time, and the strategy function rolls the scores into a trend report for the governance bodies.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Score Audit Findings (improve stage, standardization process). Landed by CR-BP-21f.1 from the GovernanceAndExistence … |
+| `plain_language_name` | string | no | Score Audit Findings |
+| `plain_language_description` | string | no | An audit report full of findings is only useful once those findings are weighed. Here each one is graded for how severe … |
+| `business_purpose` | string | no | Consistent scoring turns raw audit findings into comparable signals, so the governance bodies can tell serious … |
+| `practical_context` | string | no | Follows the delivery of an audit report with findings: the audit function grades each finding for severity and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

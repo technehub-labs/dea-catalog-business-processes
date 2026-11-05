@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ao-desi
 
 This is a **Business Process** (level L2), named **Design Role Catalogue**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. Its canonical ID is `processes:process-ao-design-34e95r`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process creates the enterprise's organized list of roles. It groups roles into families, sets the levels within each family, and draws the accountability boundaries between them. The finished catalogue then underpins organization planning and staffing across the business.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives the enterprise a single, structured vocabulary of roles, so positions are defined consistently and accountability is never ambiguous.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs when the framed organization model calls for defined role families, levels, and accountability boundaries, led by the organization design authority ahead of organization planning.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The organization design authority sorts the enterprise's jobs into clear families, agrees the seniority levels inside each family, and marks where accountability for a domain starts and stops, producing the catalogue that planners and recruiters will work from.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Design Role Catalogue L2 process within the processes:pc-ao-design-a4hq2r Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Design the Role Catalogue |
+| `plain_language_description` | string | no | This process creates the enterprise's organized list of roles. It groups roles into families, sets the levels within … |
+| `business_purpose` | string | no | It gives the enterprise a single, structured vocabulary of roles, so positions are defined consistently and … |
+| `practical_context` | string | no | Runs when the framed organization model calls for defined role families, levels, and accountability boundaries, led by … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -220,3 +220,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Sunset a regulated entity''s supervisor-acknowledged-and-live strategic plan under the enterprise''s regulated-entity retention policy within the …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Sunset Regulated Strategic Plan'
+plain_language_description: 'In regulated sectors, a live strategic plan can be ordered out of service by the regulator, and this work carries that retirement out properly. The strategy and finance functions record the regulator''s directive, preserve the status of the plan that replaces it, and retain the retired plan''s records under the retention policy. The sunset is completed with the supervisor''s acknowledgement placed on record.'
+business_purpose: 'It makes regulator-ordered retirement clean and provable: the directive, the replacement''s status, the retained records, and the supervisor''s acknowledgement are all settled so the sunset stands up under continuing supervision.'
+practical_context: 'Encountered when a competent regulator directs or forces retirement, for instance after a failed stress test or a rejected plan; the strategy and finance functions carry out the sunset under the regulator''s continuing supervision.'
+worked_example:
+  agent_type: human
+  narrative: 'After the regulator rejects the plan, the strategy function logs the directive, marks the replacement plan''s status, and hands the retired records to the finance function for retention under the retention policy. The supervisor''s acknowledgement of the sunset is filed, and the affected business units are notified.'

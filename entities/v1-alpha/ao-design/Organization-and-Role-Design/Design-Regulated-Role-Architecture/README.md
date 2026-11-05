@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ao-desi
 
 This is a **Business Process** (level L2), named **Design Regulated Role Architecture**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. Its canonical ID is `processes:process-ao-design-2fkvhx`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the role catalogue will contain regulator-licensed roles, this process designs those entries so they satisfy the regulator as well as the business. For each licensed role it aligns authority, signing capacity, and scope with the regulator's continuing-supervision framework, and documents the competency regime, the fitness-and-propriety attestation, the supervised-training requirements, and the continuing-supervisor notification path. Done this way, the roles can move into build and activation without being re-scoped.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists to bake regulatory expectations into licensed roles at design time, so the enterprise does not discover scope problems after people are already in the jobs.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered when the role catalogue and competency framework are being extended with regulator-licensed roles, with the organization design authority aligning each entry to the regulator's framework before the role enters build and activation.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* As the organization design authority adds a new licensed advisory role to the role catalogue, it sets the role's signing authority to match what the regulator's continuing-supervision framework allows and documents the attestation, training, and supervisor-notification arrangements alongside it.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Design the regulator-tied role catalogue and competency framework entries under the enterprise regulated-entity … |
+| `plain_language_name` | string | no | Design the Regulated Role Architecture |
+| `plain_language_description` | string | no | When the role catalogue will contain regulator-licensed roles, this process designs those entries so they satisfy the … |
+| `business_purpose` | string | no | It exists to bake regulatory expectations into licensed roles at design time, so the enterprise does not discover scope … |
+| `practical_context` | string | no | Encountered when the role catalogue and competency framework are being extended with regulator-licensed roles, with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-sd-buil
 
 This is a **Business Process** (level L2), named **Build Strategic Plan**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. Its canonical ID is `processes:process-sd-build-q4nf9g`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+After the strategic choices have been evaluated and a path chosen, this work writes that choice down as a formal, versioned plan. The strategy function assembles the plan with its roadmap and the portfolio of initiatives that will carry it, and sets the resource allocation priorities within the authorised frame. The committed plan then becomes the reference the organisation executes against.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It turns an agreed direction into a durable, versioned document: without a committed plan, roadmap, and initiative portfolio, the chosen strategy stays an intention rather than something the enterprise can steer by.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs at the point in the strategy cycle where evaluated choices are ready to be written up; the strategy function drafts and commits the plan, roadmap, and initiative portfolio ahead of execution.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function drafts the plan document, pins the roadmap milestones into sequence, and lists the initiatives that will deliver each step. Resource envelopes are set within the authorised frame, and the versioned plan is committed for the organisation to work to.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Build Strategic Plan L2 process within the processes:pc-sd-build-gmzrrm Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Build Strategic Plan |
+| `plain_language_description` | string | no | After the strategic choices have been evaluated and a path chosen, this work writes that choice down as a formal … |
+| `business_purpose` | string | no | It turns an agreed direction into a durable, versioned document: without a committed plan, roadmap, and initiative … |
+| `practical_context` | string | no | Runs at the point in the strategy cycle where evaluated choices are ready to be written up; the strategy function … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

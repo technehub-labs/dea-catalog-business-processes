@@ -1,0 +1,112 @@
+{
+  "processes:process-pr-activate-6qzuve": {
+    "plain_language_name": "Onboard a New Regulated Relationship",
+    "plain_language_description": "Before a new customer or partner can start doing business with the enterprise, identity and background checks must come first. This work verifies who the applicant is, works out who ultimately owns or benefits from them, and assigns a risk level to the relationship. If everything clears, commencement is approved with the evidence recorded; if not, the refusal is documented with its reasoning.",
+    "business_purpose": "It ensures the enterprise only starts relationships it has properly checked, meeting its duty to know its counterparties while keeping a defensible record of every approval or refusal.",
+    "practical_context": "Runs whenever a new party applies in a setting where identity verification and due diligence are required before any relationship may begin; customer relationship management guides the applicant through, and the risk function clears the checks under the industry regulator's rules.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A new applicant's file lands with customer relationship management, who collect the identity documents; the risk function confirms the beneficial owners, assigns the risk classification, and signs off the documented approval before the relationship goes live."
+    }
+  },
+  "processes:process-pr-build-nygvw7": {
+    "plain_language_name": "Build Customer Acquisition Channels",
+    "plain_language_description": "With the experience and journey designs agreed, the routes that will actually bring customers in have to be constructed. This work stands up the channel infrastructure, connects it to the designed experience, and tests that the acquisition engines work end to end. It finishes with the pipes ready to deliver the first customers.",
+    "business_purpose": "Designs attract no one until channels exist; this work turns the plans into working routes to market, ready to acquire the enterprise's first customers.",
+    "practical_context": "Follows the commitment of the customer experience and journey designs: customer relationship management and the strategy function build and validate the channels, with readiness reported to the governing board.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Once the journey design is signed off, the strategy function specifies each acquisition channel, customer relationship management configures and tests the flows against the designed experience, and the governing board hears that the routes are ready for the first customers."
+    }
+  },
+  "processes:process-pr-build-4kb2pt": {
+    "plain_language_name": "Build Demand Generation Programs",
+    "plain_language_description": "A demand model on paper does not fill a pipeline, so this work builds the engine that will. The teams assemble the programmes that generate interest repeatedly, wire them into the channels, and switch them on to see the first demand arrive. Success is measured by whether the engine keeps producing demand that matches the model.",
+    "business_purpose": "It creates the repeatable machinery that turns market interest into a steady flow of prospects, rather than relying on one-off pushes.",
+    "practical_context": "Follows the commitment of the customer demand model: customer relationship management and the strategy function assemble the programmes and integrate them with the channels until initial demand starts flowing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "With the demand model committed, the strategy function plans the programme calendar, customer relationship management builds the campaign pieces into the live channels, and the first enquiries start arriving for the teams to work."
+    }
+  },
+  "processes:process-pr-conceive-emfgju": {
+    "plain_language_name": "Develop Customer Strategy",
+    "plain_language_description": "Before investing in customers, the enterprise needs a clear view of who it serves and what it offers them. This work settles which segments to target, what value will be exchanged in each, and the thesis about where demand will come from. The committed strategy then steers everything the experience and channel teams design later.",
+    "business_purpose": "It gives customer-facing work a single agreed direction, so segments, value exchange, and demand expectations are chosen deliberately instead of emerging by accident.",
+    "practical_context": "Comes up when the enterprise enters a new segment, the current strategy has drifted, or the demand thesis needs retesting; the strategy function drafts it and customer relationship management grounds it in what the customer base shows.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "As the enterprise eyes a new segment, a strategy function lead drafts the segment thesis and value exchange, customer relationship management pressure-tests it against relationship data, and the committed strategy goes to the design teams."
+    }
+  },
+  "processes:process-pr-conceive-tvst8u": {
+    "plain_language_name": "Develop Market Intelligence",
+    "plain_language_description": "Big customer bets should rest on evidence, not hunches. This work studies the market, frames the demand-side questions as hypotheses that can actually be tested, and picks the first segments worth aiming at. It ends with a plan for proving or disproving the thesis before the strategy commits.",
+    "business_purpose": "It replaces guesswork about markets and demand with testable propositions, so customer strategy is built on evidence gathered up front.",
+    "practical_context": "Runs ahead of strategy commitment whenever the enterprise considers a new market entry, notices a segment drifting, or holds a demand-side hypothesis worth testing; the strategy function and customer relationship management share the work.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Curious about a neighbouring market, the strategy function drafts the demand hypotheses and candidate segments, and customer relationship management sketches the test plan that will confirm or kill the idea before any strategy is written."
+    }
+  },
+  "processes:process-pr-design-pxydu3": {
+    "plain_language_name": "Design Customer Experience",
+    "plain_language_description": "With the customer strategy settled, someone has to decide what dealing with the enterprise will actually feel like. This work lays out the touchpoints where customers meet the enterprise, the patterns each interaction follows, and the quality bar every contact must clear. The committed design becomes the reference for whoever builds the channels and journeys.",
+    "business_purpose": "It makes the promised value exchange tangible, defining how every customer interaction should look and feel before anything is built.",
+    "practical_context": "Follows a committed segment thesis and value exchange: the strategy function frames the design, customer relationship management contributes the front-line view, and the governing board endorses the committed experience.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Working from the new segment thesis, a strategy function designer sketches each touchpoint and its interaction pattern, customer relationship management checks the flows against real front-line behaviour, and the quality criteria are fixed before build starts."
+    }
+  },
+  "processes:process-pr-design-j6fakx": {
+    "plain_language_name": "Design Customer Journey",
+    "plain_language_description": "Customers experience the enterprise as one continuous path, not a set of departments. This work maps that path end to end: the stages a customer moves through, the moments that will make or break their impression, and the handoffs where one team passes them to the next. The finished journey keeps operating and improvement teams aligned on the same route.",
+    "business_purpose": "It smooths the customer's path across teams and stages, so the enterprise can see and fix the points where experience is won or lost.",
+    "practical_context": "Follows the experience design: the strategy function and customer relationship management trace the end-to-end stages, moments-of-truth, and handoff points, keeping the governing board's oversight of the committed route.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "With the experience defined, a strategy function facilitator walks customer relationship management through each stage of the customer's path, they mark the make-or-break moments and every handoff, and the governing board endorses the route."
+    }
+  },
+  "processes:process-pr-design-cv6hjh": {
+    "plain_language_name": "Design Demand Model",
+    "plain_language_description": "Once the experience is shaped, the enterprise needs a working answer to how customer need will actually be met. This work charts the supply paths demand will travel, writes down the capacity assumptions underneath them, and names the levers that can raise or damp demand. The model then guides the build of channels and acquisition programmes.",
+    "business_purpose": "It connects the demand the enterprise wants with the supply it can deliver, so growth plans rest on stated capacity assumptions rather than hope.",
+    "practical_context": "Follows the experience design: the strategy function works out supply paths and capacity assumptions with customer relationship management, and the committed model steers the channel and acquisition build the governing board expects.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "After the experience is committed, a strategy function planner maps how a surge in interest would flow through supply, agrees the capacity assumptions with customer relationship management, and notes which levers could be pulled to smooth or stimulate demand."
+    }
+  },
+  "processes:process-pr-improve-t6uvan": {
+    "plain_language_name": "Operate Customer Retention Programs",
+    "plain_language_description": "Keeping customers is ongoing work, not a one-off campaign. This running operation watches how customers feel, spots who is drifting toward the exit, and keeps win-back lists current. The insight it produces is fed back into strategy, design, and day-to-day operation so the enterprise keeps more of the customers it has won.",
+    "business_purpose": "It turns satisfaction and churn signals into action, so the enterprise defends its existing customer base instead of only chasing new names.",
+    "practical_context": "Continuous, whenever there are active customer relationships: customer relationship management monitors satisfaction, churn risk, and win-back openings, with the strategy function absorbing the lessons into the next planning round.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "In the monthly review, customer relationship management refreshes the churn-risk and win-back lists from the latest satisfaction results, and the strategy function folds the findings into the next planning cycle."
+    }
+  },
+  "processes:process-pr-operate-bbe384": {
+    "plain_language_name": "Manage Customer Relationship",
+    "plain_language_description": "From the moment a customer finishes onboarding to renewal or win-back, someone owns the health of that relationship day to day. Attention is spread across the customer portfolio, escalations are picked up and resolved, and renewals are coordinated before they arrive. The aim is simple: the relationship keeps working for both sides over its whole life.",
+    "business_purpose": "Active relationships decay without tending; this work sustains them through attention, escalation handling, and renewal coordination so value keeps flowing both ways.",
+    "practical_context": "Ongoing from the post-onboarding handoff onward: customer relationship management watches each active relationship and steps in when an escalation, churn risk, or approaching renewal signals a change, reporting up to the governing board.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A long-standing customer raises a service escalation; customer relationship management resolves it, notes the renewal coming up in two quarters, and updates the relationship record so leadership sees the full picture."
+    }
+  },
+  "processes:process-pr-retire-bd3asa": {
+    "plain_language_name": "Close Enterprise Relationship",
+    "plain_language_description": "When a contract with a customer, supplier, or partner reaches its end, whether by expiry, termination, or a regulated offboarding requirement, the leaving has to be done properly. This work settles what is still owed in both directions, offboards the party from systems and access, and sorts out who keeps which records and rights. Everything is closed with evidence, so nothing is left hanging.",
+    "business_purpose": "It ends relationships cleanly, so obligations are fulfilled or settled, records and rights are resolved, and neither side carries unresolved liabilities forward.",
+    "practical_context": "Encountered at a relationship's agreed or mandated end, such as contract expiry, termination, or a regulated offboarding: customer relationship management handles customer exits, supplier and partner management the supply side, under the governing board's oversight.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "When a supplier contract expires without renewal, supplier and partner management settles the final invoices, revokes access and hands back the records, and files the close-out evidence for the governing board."
+    }
+  }
+}

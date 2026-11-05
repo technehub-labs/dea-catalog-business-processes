@@ -135,3 +135,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Frame Strategic Horizons L2 process within the processes:pc-sd-conceive-ucb3gx Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Frame Strategic Horizons'
+plain_language_description: 'Strategy needs a sense of time, and this work supplies it. The strategy function divides the planning cycle into bounded horizons and fixes the milestone anchors that mark each one, giving the conceived intent a structure to live in. Planning, options, and targets can then be placed against a shared timetable.'
+business_purpose: 'It gives strategic planning its calendar: bounded horizons and milestone anchors mean intent, choices, and objectives can all be timed and tracked on one shared frame.'
+practical_context: 'Runs when strategic intent has been conceived and the planning cycle needs structuring; the strategy function frames the horizons ahead of option design and plan construction.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function sketches the planning horizons, agrees the milestone anchors that close each one, and publishes the frame to the planning teams. Option designers then know exactly what window each choice has to fit.'

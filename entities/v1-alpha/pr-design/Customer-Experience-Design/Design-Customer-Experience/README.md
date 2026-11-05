@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pr-desi
 
 This is a **Business Process** (level L2), named **Design Customer Experience**, currently **candidate (yellow)**. It is part of the **Customer Experience Design** process context, domain `pr`, lifecycle stage Design. Its canonical ID is `processes:process-pr-design-pxydu3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the customer strategy settled, someone has to decide what dealing with the enterprise will actually feel like. This work lays out the touchpoints where customers meet the enterprise, the patterns each interaction follows, and the quality bar every contact must clear. The committed design becomes the reference for whoever builds the channels and journeys.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It makes the promised value exchange tangible, defining how every customer interaction should look and feel before anything is built.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Follows a committed segment thesis and value exchange: the strategy function frames the design, customer relationship management contributes the front-line view, and the governing board endorses the committed experience.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Working from the new segment thesis, a strategy function designer sketches each touchpoint and its interaction pattern, customer relationship management checks the flows against real front-line behaviour, and the quality criteria are fixed before build starts.
 
 ## 5. Header and Identity Table (generated)
 
@@ -76,6 +76,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Design Customer Experience L2 process within the processes:pc-pr-design-hrcdy4 Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Design Customer Experience |
+| `plain_language_description` | string | no | With the customer strategy settled, someone has to decide what dealing with the enterprise will actually feel like … |
+| `business_purpose` | string | no | It makes the promised value exchange tangible, defining how every customer interaction should look and feel before … |
+| `practical_context` | string | no | Follows a committed segment thesis and value exchange: the strategy function frames the design, customer relationship … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -133,3 +133,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Conceive Strategic Intent L2 process within the processes:pc-sd-conceive-ucb3gx Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Conceive Strategic Intent'
+plain_language_description: 'With the enterprise''s purpose and ambition settled, this work decides what direction the organisation will actually steer. The strategy function frames a bounded strategic intent that sits inside that purpose and ambition, giving the planning work that follows a clear heading. The intent then serves as the reference point for horizons, options, and objectives.'
+business_purpose: 'It gives the enterprise a steerable sense of direction: strategic intent translates broad purpose and ambition into a framing that later planning can design against.'
+practical_context: 'Encountered early in the strategy cycle, once purpose and ambition are defined; the strategy function conceives and frames the intent before any horizons or options are drawn.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function holds a framing session once the purpose and ambition are signed off, drafting the strategic intent in a few bounded statements. The intent is agreed and becomes the heading under which horizons and options are developed.'

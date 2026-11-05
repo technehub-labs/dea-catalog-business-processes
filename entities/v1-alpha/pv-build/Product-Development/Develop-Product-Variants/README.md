@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pv-buil
 
 This is a **Business Process** (level L2), named **Develop Product Variants**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. Its canonical ID is `processes:process-pv-build-say8tb`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once designs are agreed, this work does the hands-on construction: building out the product variants, service capability, and innovation prototypes the designs call for. Product management keeps the construction within the agreed scope so that what emerges matches the designed propositions. The result is finished variants and capability, ready for the next stage of launch preparation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It converts agreed designs into tangible product variants and supporting capability, so that what existed only on paper becomes something the business can prepare for market.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered whenever designed propositions call for construction, typically as a build phase led by product management with the work parcelled across variants, service capability, and prototypes. It bridges design sign-off and market readiness.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Product management splits the agreed designs into their product variants, assigns each to a build squad, and tracks the work against the design scope. When the variants and supporting capability are complete, they are handed on for market-readiness preparation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Develop Product Variants L2 process within the processes:pc-pv-build-ygbmxb Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Develop Product Variants |
+| `plain_language_description` | string | no | Once designs are agreed, this work does the hands-on construction: building out the product variants, service … |
+| `business_purpose` | string | no | It converts agreed designs into tangible product variants and supporting capability, so that what existed only on paper … |
+| `practical_context` | string | no | Encountered whenever designed propositions call for construction, typically as a build phase led by product management … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

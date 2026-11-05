@@ -145,3 +145,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Conduct Capability Gap Analysis L2 process within the processes:pc-ao-improve-qkmh6b Cell Charter. See trigger and outcome for the bounded work …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Conduct a Capability Gap Analysis'
+plain_language_description: 'This process compares the capabilities the enterprise has designed for against the ones its current agents actually show. Shortfalls are identified, sized, and ranked so the most important ones are addressed first. The prioritised findings feed straight into the development plan.'
+business_purpose: 'It exists to surface, early and honestly, where the workforce''s capability falls short of what the organization needs, so development effort goes where it matters most.'
+practical_context: 'Encountered whenever the competency framework must be checked against the current agent population, typically in review cycles run by the organization design authority whose output feeds the development plan.'
+worked_example:
+  agent_type: human
+  narrative: 'In a quarterly capability review, the organization design authority rates the current agent population against the competency framework''s levels, identifies where key skills fall short, and hands a prioritised gap list to the owners of the development plan.'

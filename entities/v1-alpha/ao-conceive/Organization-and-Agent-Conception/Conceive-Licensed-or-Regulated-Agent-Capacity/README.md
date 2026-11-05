@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ao-conc
 
 This is a **Business Process** (level L2), named **Conceive Licensed or Regulated Agent Capacity**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. Its canonical ID is `processes:process-ao-conceive-pnrhem`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the enterprise decides its future workforce will include regulator-licensed roles, this process works out exactly what regulated capacity is being taken on. It settles how many licensed roles are planned and in which categories, and what supervisor-controlled scope each one carries. The decisions are written up as a regulated-scope declaration, together with the fitness-and-propriety attestation regime and how the personnel record will line up with the regulator's continuing-supervision framework.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It forces the organization to be explicit about its licensed-role commitments before any role design or hiring starts, so regulatory expectations are built into capacity plans from the beginning.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered at strategy-setting time, when workforce management and the strategy function determine that the agent-capacity strategy will include regulator-licensed roles and the regulated scope must be settled before design and build work begins.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* In an annual capacity planning session, the strategy function and workforce management agree that the expansion plan includes a set of licensed advisory roles, then document the count and categories, the supervisory controls for each, and the attestation regime in a declaration that anchors later design work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Conceive the regulated-scope composition of the enterprise's agentive mix under the enterprise regulated-entity … |
+| `plain_language_name` | string | no | Conceive Licensed or Regulated Agent Capacity |
+| `plain_language_description` | string | no | When the enterprise decides its future workforce will include regulator-licensed roles, this process works out exactly … |
+| `business_purpose` | string | no | It forces the organization to be explicit about its licensed-role commitments before any role design or hiring starts … |
+| `practical_context` | string | no | Encountered at strategy-setting time, when workforce management and the strategy function determine that the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

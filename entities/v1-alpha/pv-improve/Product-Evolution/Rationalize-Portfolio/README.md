@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pv-impr
 
 This is a **Business Process** (level L2), named **Rationalize Portfolio**, currently **candidate (yellow)**. It is part of the **Product Evolution and Portfolio Rationalization** process context, domain `pv`, lifecycle stage Improve. Its canonical ID is `processes:process-pv-improve-9xvgat`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Over time the portfolio collects propositions that no longer earn their keep. This work reviews those underperformers and commits a decision for each one, either retiring it or pivoting it. Product management makes the calls within the portfolio review cycle so investment is not stranded on propositions that have stopped justifying it.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It frees investment from propositions that no longer deserve it: forcing a retire-or-pivot decision on each underperformer keeps the portfolio lean and the resources flowing to where they work harder.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Triggered when the portfolio has accumulated propositions that no longer justify their investment envelopes; product management takes the decisions within the standing portfolio review cycle.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* In the portfolio review, product management tables the propositions whose results no longer cover their investment envelopes and works through each one. Each gets a decision, retired or pivoted, and the decisions are recorded for the next planning cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Rationalize Portfolio L2 process within the processes:pc-pv-improve-wpyfx7 Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Rationalize Portfolio |
+| `plain_language_description` | string | no | Over time the portfolio collects propositions that no longer earn their keep. This work reviews those underperformers … |
+| `business_purpose` | string | no | It frees investment from propositions that no longer deserve it: forcing a retire-or-pivot decision on each … |
+| `practical_context` | string | no | Triggered when the portfolio has accumulated propositions that no longer justify their investment envelopes; product … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-sd-impr
 
 This is a **Business Process** (level L2), named **Refresh Objectives and Targets**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. Its canonical ID is `processes:process-sd-improve-aqbrm7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Objectives age, and this work brings them up to date. The strategy function takes the performance evidence and the environmental signals showing that current objectives and targets have drifted out of fit, and reworks them against what the evidence says. The refreshed set then reflects both the direction and the world the enterprise actually operates in.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It keeps the steering numbers truthful: refreshing objectives and targets against real performance evidence stops the enterprise measuring itself against goals that no longer fit.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Triggered when performance evidence or environmental signals show the current objectives and targets no longer fit the direction; the strategy function carries out the refresh on the standing improvement cycle.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function reviews the performance evidence showing some targets have gone stale, reworks them, and adjusts the supporting objectives. The refreshed set is published so monitoring resumes against goals that fit.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Refresh Objectives and Targets L2 process within the processes:pc-sd-improve-ft9k5f Cell Charter. See … |
+| `plain_language_name` | string | no | Refresh Objectives and Targets |
+| `plain_language_description` | string | no | Objectives age, and this work brings them up to date. The strategy function takes the performance evidence and the … |
+| `business_purpose` | string | no | It keeps the steering numbers truthful: refreshing objectives and targets against real performance evidence stops the … |
+| `practical_context` | string | no | Triggered when performance evidence or environmental signals show the current objectives and targets no longer fit the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

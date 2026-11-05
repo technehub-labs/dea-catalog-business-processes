@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-fa-acti
 
 This is a **Business Process** (level L2), named **Activate Billing Capability**, currently **candidate (yellow)**. It is domain `fa`, lifecycle stage Activate. Its canonical ID is `processes:process-fa-activate-bzfywk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process takes a billing or revenue-recognition capability that has cleared its regulatory approvals and makes it officially live, so the first invoices or revenue entries can be raised. The Finance & Accounting Process Owner confirms that the pricing or tariff approval is on file, that safeguards such as segregation of duties, an audit trail, and reconciliation are running, and that the supervisor with continuing oversight is formally engaged. Only once the regulator's acknowledgement is recorded does the capability move from approved on paper to actually operating.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so no organisation bills customers or books revenue under a regulated framework before the regulator has formally acknowledged it, keeping the pricing approval and the operational safeguards intact from the first transaction.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Triggered whenever a regulated billing or revenue-recognition capability is ready to go live — for example an insurance accounting transition or a utility rate taking effect — with the supervising authority, audit function, and operations function brought in alongside the process owner.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* When an insurer's new revenue-recognition framework receives its regulator's acknowledgement, the Finance & Accounting Process Owner brings in the supervising authority and the audit function to confirm the tariff approval is filed and that segregation-of-duties, audit trail, and reconciliation controls are running before the first live invoices are released.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Activate a billing or revenue-recognition capability under the enterprise's regulated-entity approval authority within … |
+| `plain_language_name` | string | no | Activate Billing Capability |
+| `plain_language_description` | string | no | This process takes a billing or revenue-recognition capability that has cleared its regulatory approvals and makes it … |
+| `business_purpose` | string | no | It exists so no organisation bills customers or books revenue under a regulated framework before the regulator has … |
+| `practical_context` | string | no | Triggered whenever a regulated billing or revenue-recognition capability is ready to go live — for example an insurance … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

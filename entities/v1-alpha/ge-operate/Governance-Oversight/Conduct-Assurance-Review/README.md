@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ge-oper
 
 This is a **Business Process** (level L2), named **Conduct Assurance Review**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. Its canonical ID is `processes:process-ge-operate-zwaes5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Each time an assurance cycle comes round or a review is mandated, this work examines the evidence that things are being done properly. Reviewers compare what is actually happening against the standards, write up what they find, and keep the bar for review quality itself steady. The findings give leadership an honest read on where assurance stands.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It supplies the repeated, standards-based checking that lets leadership trust the controls and know review quality is being maintained over time.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered whenever an assurance cycle comes due or an audit mandate arrives: the compliance function and risk function gather and measure the evidence, with findings reported to the governing board.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* At the start of the assurance cycle, a compliance function reviewer pulls the evidence pack, measures it against the standards with help from the risk function, and issues the findings report for the governing board.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Conduct Assurance Review (operate stage, standardization process). Landed by CR-BP-21f.1 from the … |
+| `plain_language_name` | string | no | Conduct Assurance Review |
+| `plain_language_description` | string | no | Each time an assurance cycle comes round or a review is mandated, this work examines the evidence that things are being … |
+| `business_purpose` | string | no | It supplies the repeated, standards-based checking that lets leadership trust the controls and know review quality is … |
+| `practical_context` | string | no | Encountered whenever an assurance cycle comes due or an audit mandate arrives: the compliance function and risk … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

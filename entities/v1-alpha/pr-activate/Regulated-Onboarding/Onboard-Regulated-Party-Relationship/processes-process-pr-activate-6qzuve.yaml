@@ -181,3 +181,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Onboard a new party relationship in a regulated context (KYC/AML/CDD): verify identity, resolve beneficial ownership, classify risk, and either authorize …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Onboard a New Regulated Relationship'
+plain_language_description: 'Before a new customer or partner can start doing business with the enterprise, identity and background checks must come first. This work verifies who the applicant is, works out who ultimately owns or benefits from them, and assigns a risk level to the relationship. If everything clears, commencement is approved with the evidence recorded; if not, the refusal is documented with its reasoning.'
+business_purpose: 'It ensures the enterprise only starts relationships it has properly checked, meeting its duty to know its counterparties while keeping a defensible record of every approval or refusal.'
+practical_context: 'Runs whenever a new party applies in a setting where identity verification and due diligence are required before any relationship may begin; customer relationship management guides the applicant through, and the risk function clears the checks under the industry regulator''s rules.'
+worked_example:
+  agent_type: human
+  narrative: 'A new applicant''s file lands with customer relationship management, who collect the identity documents; the risk function confirms the beneficial owners, assigns the risk classification, and signs off the documented approval before the relationship goes live.'

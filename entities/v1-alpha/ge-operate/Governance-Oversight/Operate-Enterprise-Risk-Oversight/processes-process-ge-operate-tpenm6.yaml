@@ -143,3 +143,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate Enterprise Risk Oversight (operate stage, core process). Landed by CR-BP-21f.1 from the GovernanceAndExistence register v2.'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Operate Enterprise Risk Oversight'
+plain_language_description: 'On a recurring cycle, this work takes the temperature of enterprise risk. The risk function runs the scheduled reviews, brings the exposures that have built up out into the open, and pairs each significant one with a mitigation. What surfaces goes straight to the governance bodies so they can steer.'
+business_purpose: 'It keeps risk visible between reporting moments, so exposures are caught and mitigated on a rhythm rather than discovered late.'
+practical_context: 'Runs each time a risk review cycle boundary is reached: the risk function executes the reviews with the compliance function alongside, and exposures and mitigations are laid before the governance bodies.'
+worked_example:
+  agent_type: human
+  narrative: 'When the quarterly risk cycle closes, the risk function leads the review sessions, flags the exposures that have grown, and brings proposed mitigations to the governing board for decision.'

@@ -1,0 +1,182 @@
+{
+  "processes:process-pv-activate-5686v7": {
+    "plain_language_name": "Transition Proposition to Service",
+    "plain_language_description": "When a product or service has passed its readiness checks, this work moves it out of its prepared state and into day-to-day operation. The proposition design authority confirms who will own the offering once it is live, that the necessary controls are in place, and that the receiving team is set up to run it. Only when ownership and readiness evidence are settled does the business start relying on it in normal operations.",
+    "business_purpose": "It exists so that nothing reaches live operation half-prepared: accountability, controls, and readiness are proven before the business starts to rely on the new offering.",
+    "practical_context": "Encountered at the end of every launch effort, when the readiness threshold has been met and go-live is authorised; the proposition design authority leads the handover with the teams who will run the offering day to day.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "At the go-live readiness meeting, the proposition design authority walks the checklist, confirms the receiving operational owner, and records that the controls are in place. The offering is then accepted into operational service, and the receiving team takes over its day-to-day running."
+    }
+  },
+  "processes:process-pv-build-8jc3y4": {
+    "plain_language_name": "Build Innovation Prototype",
+    "plain_language_description": "When an experiment needs something tangible to test an idea against, this work produces the working prototype the trial depends on. Product management scopes what the prototype must demonstrate, arranges the build, and checks that the result has enough fidelity to give the experiment a meaningful answer. The work ends when the prototype is ready to be put in front of the test.",
+    "business_purpose": "A hypothesis about a new idea can only be tested against something real, so this work gives the enterprise early, affordable evidence before any full build is committed.",
+    "practical_context": "Runs whenever a designed innovation experiment calls for a working model; product management pulls together the people who will build it, and the work sits between experiment design and the validation that follows.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Product management briefs a small build team on the hypothesis the prototype must test, agrees the minimum fidelity needed, and books a review slot. When the working model comes back, product management checks it over and clears it for the experiment."
+    }
+  },
+  "processes:process-pv-build-p9a2s9": {
+    "plain_language_name": "Build Service Capability",
+    "plain_language_description": "This work stands up whatever the business needs behind the scenes to actually deliver a designed service to customers. Product management works out the delivery procedures, quality anchors, and tooling the service depends on, and puts them in place. The capability is finished once it is ready to move into market-readiness preparation.",
+    "business_purpose": "A designed proposition is only a promise on paper until the organisation can deliver it; this work turns the design into the working delivery machinery customers will actually experience.",
+    "practical_context": "Comes up once a proposition design is settled and the delivery gap is clear; product management drives the build with the teams who will operate the service, ahead of launch preparation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Product management maps the delivery steps a new service needs, agrees the quality anchors with the operations team, and arranges the tooling setup. By the end, the service can be run end to end by the people who will deliver it, and the capability moves on to market-readiness preparation."
+    }
+  },
+  "processes:process-pv-build-say8tb": {
+    "plain_language_name": "Develop Product Variants",
+    "plain_language_description": "Once designs are agreed, this work does the hands-on construction: building out the product variants, service capability, and innovation prototypes the designs call for. Product management keeps the construction within the agreed scope so that what emerges matches the designed propositions. The result is finished variants and capability, ready for the next stage of launch preparation.",
+    "business_purpose": "It converts agreed designs into tangible product variants and supporting capability, so that what existed only on paper becomes something the business can prepare for market.",
+    "practical_context": "Encountered whenever designed propositions call for construction, typically as a build phase led by product management with the work parcelled across variants, service capability, and prototypes. It bridges design sign-off and market readiness.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Product management splits the agreed designs into their product variants, assigns each to a build squad, and tracks the work against the design scope. When the variants and supporting capability are complete, they are handed on for market-readiness preparation."
+    }
+  },
+  "processes:process-pv-build-6hjzmk": {
+    "plain_language_name": "Prepare Market Readiness",
+    "plain_language_description": "Before a built product or service can launch, this work pulls together everything the market-facing side needs. Product management arranges the go-to-market assets, settles pricing, and sets up the channels the offering will be sold through. Once those pieces are in place, the offering is ready for launch.",
+    "business_purpose": "It exists so a finished product does not go out half-dressed: pricing, channels, and go-to-market materials are readied in advance so the launch lands properly.",
+    "practical_context": "Runs in the run-up to every launch, once the build is complete; product management leads the preparation with the people who will take the offering to market.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "With the product built, product management assembles the launch pack: pricing is signed off, the sales channels are set up, and the go-to-market assets go out to the field. The launch then proceeds with everything in place."
+    }
+  },
+  "processes:process-pv-conceive-kps544": {
+    "plain_language_name": "Frame Innovation Thesis",
+    "plain_language_description": "This work decides where the organisation will concentrate its innovation effort and how far experiments may roam. The proposition design authority drafts a short thesis that names the focus areas and sets the limits experimentation must respect. The finished thesis then guides which innovation experiments get designed.",
+    "business_purpose": "It gives innovation a deliberate shape: instead of exploring everywhere at once, the enterprise agrees in advance where new ideas should be sought and what boundaries apply, so experiments serve one direction.",
+    "practical_context": "Revisited when the proposition portfolio needs fresh ground or a new wave of exploration is starting; the proposition design authority frames or reframes the thesis before any experiment design begins.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The proposition design authority runs a framing workshop: candidate focus areas are listed, debated, and narrowed to a few, and the boundaries on experimentation are written down. The resulting thesis becomes the reference point for every experiment proposed afterwards."
+    }
+  },
+  "processes:process-pv-conceive-jb4xtg": {
+    "plain_language_name": "Frame Portfolio Direction",
+    "plain_language_description": "When several propositions are all asking for investment, this work sets the portfolio-level direction that decides who gets what. The proposition design authority defines the investment envelopes and works out the priority ordering across the competing propositions. The resulting direction keeps individual proposition planning aligned with the enterprise's broader course.",
+    "business_purpose": "It stops investment being handed out piecemeal: by setting envelopes and priorities up front, the enterprise keeps each proposition's plans part of a coherent whole and backs the strongest opportunities first.",
+    "practical_context": "Encountered during portfolio planning rounds, when the proposition design authority has to arbitrate between propositions competing for the same limited investment; its output feeds directly into proposition planning.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The proposition design authority reviews the propositions seeking funding, groups them into investment envelopes, and agrees the order in which they will be backed. Each proposition team then plans inside the envelope and priority it has been given."
+    }
+  },
+  "processes:process-pv-conceive-xe9axm": {
+    "plain_language_name": "Frame Value Proposition Thesis",
+    "plain_language_description": "This is where a new offering starts life on paper. The proposition design authority commits a short thesis stating the scope of the proposition, who it is aimed at, and the value it claims to deliver, whether the offering is a product, service, solution, experience, platform, or piece of intellectual property. Once committed, the thesis drives the design work that follows.",
+    "business_purpose": "It pins down, before any design effort begins, what the proposition is for, who it serves, and what value it promises, so downstream work pursues one clear claim rather than drifting.",
+    "practical_context": "Triggered when the enterprise is establishing a new value-bearing proposition, reframing an existing one, or responding to market shifts; the proposition design authority drafts and commits the thesis ahead of design.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The proposition design authority drafts a one-page thesis for a proposed new service: the scope is drawn tightly, the target parties are named, and the core value claim is worded. After review, the thesis is committed and the design team takes it from there."
+    }
+  },
+  "processes:process-pv-design-9ckwf6": {
+    "plain_language_name": "Design Innovation Experiment",
+    "plain_language_description": "This work turns an innovation thesis into a concrete test. Product management shapes the experiment by writing the hypothesis it will check, defining what success looks like, and fixing the time allowed. The finished design is then ready for a prototype to be built against it.",
+    "business_purpose": "It makes new ideas testable: stating the hypothesis, success criteria, and timebox up front ensures each experiment answers a real question within a known budget of effort.",
+    "practical_context": "Runs whenever the innovation thesis points at something worth testing; product management designs each experiment before any prototype build starts.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Product management drafts the experiment design: the hypothesis goes down in one sentence, success criteria are agreed with those invested in the idea, and a strict timebox is set. The design is then handed over so the prototype build can begin."
+    }
+  },
+  "processes:process-pv-design-a4c76s": {
+    "plain_language_name": "Design Packaging and Configuration",
+    "plain_language_description": "This work decides how a designed proposition will be packaged and configured for the different market segments it must serve. Product management works out the packaging options and the configuration choices each segment needs, so the same underlying proposition can be offered appropriately to different audiences. The designs are then ready for product development.",
+    "business_purpose": "It exists so the offering fits its buyers: segment-appropriate packaging and configuration let one designed proposition serve different markets without being redesigned each time.",
+    "practical_context": "Encountered during proposition design, when product management must tailor packaging and configuration to the segments identified in the design; the output feeds straight into product development.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Product management sketches the packaging tiers for the new offering, a lighter configuration for smaller customers and a fuller one for larger accounts, and checks each against the segment profiles. The agreed options are documented and passed to product development."
+    }
+  },
+  "processes:process-pv-design-8v4k89": {
+    "plain_language_name": "Design Product and Service Propositions",
+    "plain_language_description": "This work shapes a framed value proposition thesis into a full design. Product management lays out the proposition's architecture, works through its packaging and configuration, and designs any innovation experiments the thesis calls for, covering products, services, solutions, experiences, and platforms alike. The completed designs hand the build stage everything it needs to start constructing.",
+    "business_purpose": "It converts a value claim into a buildable design: architecture, packaging, and configuration are worked out in advance so the build stage constructs something coherent instead of improvising.",
+    "practical_context": "Central to proposition design: whenever a thesis has been committed, product management runs this design effort before construction begins, often coordinating packaging design and experiment design in parallel.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Product management takes the committed thesis and drafts the proposition architecture, agreeing packaging and configuration options with the segment owners and setting up the experiment designs. The finished design pack is handed to the teams who will build it."
+    }
+  },
+  "processes:process-pv-improve-27r7r7": {
+    "plain_language_name": "Conduct Proposition Performance Review",
+    "plain_language_description": "This work takes a hard look at how the propositions and the portfolio around them are actually performing. Product management gathers the performance signals, spots the gaps in the portfolio, and works out which propositions need attention. Its findings are committed so that product evolution and portfolio rationalization decisions rest on evidence.",
+    "business_purpose": "It supplies the evidence behind product change: without a regular, honest review of how propositions perform, evolution and rationalization decisions would be guesses rather than informed choices.",
+    "practical_context": "Comes around whenever performance signals, portfolio gaps, or rationalization needs prompt a review, typically on a recurring cycle led by product management; the committed findings feed the next planning cycle.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Product management assembles the performance signals for each proposition, walks through them in the review meeting, and records where the portfolio has gaps or weak spots. The committed findings go to the teams planning product evolution and rationalization."
+    }
+  },
+  "processes:process-pv-improve-6c2xvf": {
+    "plain_language_name": "Evolve Products and Services",
+    "plain_language_description": "When feedback, competitors, or new technology show that an offering is falling behind, this work carries out the enhancement. Product management scopes bounded enhancements to the products and services, keeping each change aligned with what the performance review found. The offerings come out of it updated and better fitted to the market.",
+    "business_purpose": "It keeps the enterprise's offerings current: rather than letting products drift out of step with the market, this work channels feedback and pressure into planned, contained improvements.",
+    "practical_context": "Encountered whenever market feedback, competitive pressure, or technology shifts demand change; product management leads the enhancement work, anchored to the committed findings of the performance review.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Acting on the review findings, product management scopes a set of enhancements for the underperforming service, agrees the boundaries with the delivery team, and hands over the change list. The updated service then ships with improvements that trace back to the findings."
+    }
+  },
+  "processes:process-pv-improve-9xvgat": {
+    "plain_language_name": "Rationalize Portfolio",
+    "plain_language_description": "Over time the portfolio collects propositions that no longer earn their keep. This work reviews those underperformers and commits a decision for each one, either retiring it or pivoting it. Product management makes the calls within the portfolio review cycle so investment is not stranded on propositions that have stopped justifying it.",
+    "business_purpose": "It frees investment from propositions that no longer deserve it: forcing a retire-or-pivot decision on each underperformer keeps the portfolio lean and the resources flowing to where they work harder.",
+    "practical_context": "Triggered when the portfolio has accumulated propositions that no longer justify their investment envelopes; product management takes the decisions within the standing portfolio review cycle.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "In the portfolio review, product management tables the propositions whose results no longer cover their investment envelopes and works through each one. Each gets a decision, retired or pivoted, and the decisions are recorded for the next planning cycle."
+    }
+  },
+  "processes:process-pv-operate-en8rdz": {
+    "plain_language_name": "Manage Portfolio Performance",
+    "plain_language_description": "Once propositions are live, this work keeps continuous watch on how each performs against the investment thesis it was launched under. Product management maintains that visibility, spots where performance drifts, and commits rebalancing decisions when the mix needs adjusting. The portfolio is thereby kept honest and steered rather than left to drift.",
+    "business_purpose": "It gives the business a live view of which propositions are paying off and which are not, so the portfolio can be rebalanced on evidence instead of waiting for annual surprises.",
+    "practical_context": "A continuous responsibility once products are operating: product management reviews proposition performance on an ongoing basis and commits rebalancing decisions as the picture changes.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Product management walks the performance figures for each live proposition against the investment thesis behind it, flags one that is drifting, and commits a rebalancing decision to shift support toward the stronger performers."
+    }
+  },
+  "processes:process-pv-operate-cau4gv": {
+    "plain_language_name": "Manage Proposition Lifecycle",
+    "plain_language_description": "Every proposition moves through introduction, growth, maturity, and decline, and this work manages those moves deliberately. Product management watches where each proposition sits, takes the stage-transition decisions through their gates, and keeps the picture checked against portfolio performance. Nothing passes from one stage to the next without a conscious gate decision.",
+    "business_purpose": "It ensures propositions are managed according to where they actually are in their life, so growing offerings get investment and fading ones get the right attention at the right gate.",
+    "practical_context": "Ongoing whenever propositions are live: product management reviews each proposition's stage, runs the gate decisions at transitions, and monitors progress against portfolio performance.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Product management sees a service moving from growth into maturity, walks the gate decision through with the stakeholders, and records the shift to a maintenance footing. The stage transition is noted and tracked from there."
+    }
+  },
+  "processes:process-pv-operate-zyguzp": {
+    "plain_language_name": "Operate Product Catalogue",
+    "plain_language_description": "With products live in the market, this work runs the steady state. Product management keeps the product catalogue current, oversees portfolio performance, and manages each proposition through its lifecycle stages from launch to retirement. It is the ongoing stewardship that keeps the whole offering portfolio coherent while it operates.",
+    "business_purpose": "It keeps the catalogue of live offerings accurate and actively managed: customers and internal teams alike rely on a catalogue that reflects what is actually offered and at what stage.",
+    "practical_context": "The steady-state routine once developed products are in active operation; product management runs the catalogue and its portfolio duties continuously, from launch through to retirement.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Product management updates the catalogue when a new version launches, checks that the retired listing is marked accordingly, and reviews the performance figures for the live range. The catalogue stays an accurate mirror of what the business actually offers."
+    }
+  },
+  "processes:process-pv-retire-6us5am": {
+    "plain_language_name": "Transition Proposition Out of Service",
+    "plain_language_description": "When a proposition has an approved retirement decision, this work withdraws it from service in a controlled way. The proposition design authority plans the withdrawal, moves the affected stakeholders onto whatever replaces the offering, and steps the service out of operational reliance. Anything still owed after the withdrawal is identified and routed onward.",
+    "business_purpose": "It makes retirement orderly rather than abrupt: stakeholders are transitioned, reliance is wound down deliberately, and lingering obligations are caught instead of forgotten when the offering switches off.",
+    "practical_context": "Encountered once a retirement decision has been approved, with the proposition design authority running the withdrawal plan while affected teams move off the offering; the work continues until residual obligations are routed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "With retirement approved, the proposition design authority publishes the withdrawal plan, briefs the affected teams on the replacement, and schedules the final switch-off. The obligations that outlive the service are then listed and routed to their owners."
+    }
+  }
+}

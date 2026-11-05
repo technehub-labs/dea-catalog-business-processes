@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pv-oper
 
 This is a **Business Process** (level L2), named **Manage Proposition Lifecycle**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. Its canonical ID is `processes:process-pv-operate-cau4gv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Every proposition moves through introduction, growth, maturity, and decline, and this work manages those moves deliberately. Product management watches where each proposition sits, takes the stage-transition decisions through their gates, and keeps the picture checked against portfolio performance. Nothing passes from one stage to the next without a conscious gate decision.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It ensures propositions are managed according to where they actually are in their life, so growing offerings get investment and fading ones get the right attention at the right gate.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Ongoing whenever propositions are live: product management reviews each proposition's stage, runs the gate decisions at transitions, and monitors progress against portfolio performance.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Product management sees a service moving from growth into maturity, walks the gate decision through with the stakeholders, and records the shift to a maintenance footing. The stage transition is noted and tracked from there.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Manage Proposition Lifecycle L2 process within the processes:pc-pv-operate-ewpwjc Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Manage Proposition Lifecycle |
+| `plain_language_description` | string | no | Every proposition moves through introduction, growth, maturity, and decline, and this work manages those moves … |
+| `business_purpose` | string | no | It ensures propositions are managed according to where they actually are in their life, so growing offerings get … |
+| `practical_context` | string | no | Ongoing whenever propositions are live: product management reviews each proposition's stage, runs the gate decisions at … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

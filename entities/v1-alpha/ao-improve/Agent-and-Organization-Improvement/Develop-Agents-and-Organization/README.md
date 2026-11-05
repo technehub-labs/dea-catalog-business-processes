@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ao-impr
 
 This is a **Business Process** (level L2), named **Develop Agents and Organization**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. Its canonical ID is `processes:process-ao-improve-xfh8na`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process is the umbrella for improving both the agents and the organization itself when reviews show a need. It draws together engagement and alignment findings, capability gap analysis, structure reorganization, and agent performance improvement into one development effort. The work is carried out the same way whether the agents are people or artificial, and its results feed the next planning cycle.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists to make improvement of the workforce and the organization deliberate and connected, so signals from reviews translate into concrete development rather than scattered fixes.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Triggered when engagement signals, capability gaps, or structure reorganization requirements show that agents or the organization itself need to improve, with the organization design authority steering the development effort.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* After a review highlights both a skills shortfall and an engagement dip, the organization design authority brings the capability gap analysis, the engagement findings, and a proposed reorganization into one development programme for the affected teams.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Develop Agents and Organization L2 process within the processes:pc-ao-improve-qkmh6b Cell Charter. See … |
+| `plain_language_name` | string | no | Develop Agents and the Organization |
+| `plain_language_description` | string | no | This process is the umbrella for improving both the agents and the organization itself when reviews show a need. It … |
+| `business_purpose` | string | no | It exists to make improvement of the workforce and the organization deliberate and connected, so signals from reviews … |
+| `practical_context` | string | no | Triggered when engagement signals, capability gaps, or structure reorganization requirements show that agents or the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

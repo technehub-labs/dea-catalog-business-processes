@@ -141,3 +141,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Evaluate Strategic Alternatives L2 process within the processes:pc-sd-design-g3es76 Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Evaluate Strategic Alternatives'
+plain_language_description: 'With several designed options on the table, this work works out which one the enterprise should back. The strategy function compares the alternatives against the objectives and targets, and checks how each fits the designed scenarios. The evaluation ends with the preferred option committed.'
+business_purpose: 'It forces an explicit choice: comparing alternatives against objectives, targets, and scenario fit means the enterprise commits to a preferred path for stated reasons rather than by momentum.'
+practical_context: 'Runs after option and scenario design, when the strategy function must compare and choose ahead of plan construction; the preferred option feeds directly into the plan build.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function scores each designed option against the objectives and targets, walks the scenarios to see how each holds up, and recommends the strongest. The preferred option is committed and becomes the basis of the plan.'

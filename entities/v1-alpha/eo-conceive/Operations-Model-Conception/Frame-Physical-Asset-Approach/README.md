@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-conc
 
 This is a **Business Process** (level L2), named **Frame Physical Asset Approach**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. Its canonical ID is `processes:process-eo-conceive-87kx9n`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anyone designs a single building or piece of equipment, this process sets the ground rules for the physical side of the operation. The strategy and operations leads agree footprint principles for how much facility and asset capacity the business will carry, and the lifecycle envelopes within which assets will live. The framed approach then feeds blueprint design and stays coordinated with the operations planning cycle.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It turns the operations strategy into working rules for facilities and assets, footprint principles and lifecycle envelopes, so blueprint design starts from a settled position.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Met when the operations strategy needs bounded decisions on facility and asset footprints ahead of blueprint design. Strategy function and operations function carry the framing within the operations planning cycle, owned by the Enablement & Operations Process Owner.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* In an early planning round, a strategy lead and an operations manager agree the footprint principles for the facility and asset estate and mark out the lifecycle envelopes that the blueprint designers will have to respect.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Frame Physical Asset Approach L2 process within the processes:pc-eo-conceive-mxmtzq Cell Charter. See … |
+| `plain_language_name` | string | no | Frame the Physical Asset Approach |
+| `plain_language_description` | string | no | Before anyone designs a single building or piece of equipment, this process sets the ground rules for the physical side … |
+| `business_purpose` | string | no | It turns the operations strategy into working rules for facilities and assets, footprint principles and lifecycle … |
+| `practical_context` | string | no | Met when the operations strategy needs bounded decisions on facility and asset footprints ahead of blueprint design … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

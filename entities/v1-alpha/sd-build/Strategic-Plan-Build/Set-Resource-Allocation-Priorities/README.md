@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-sd-buil
 
 This is a **Business Process** (level L2), named **Set Resource Allocation Priorities**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. Its canonical ID is `processes:process-sd-build-2pkz5n`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Strategic initiatives are only actionable once they have resources, and this work decides who gets what. The strategy function sets the allocation priorities and gives each initiative a bounded envelope so the plan can be executed without open-ended commitments. The envelopes are aligned to the strategic plan, so money and effort follow the chosen direction.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It connects strategy to capacity: ranking initiatives and bounding each one's resources ensures the plan is resourced in priority order rather than by whoever asks loudest.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs during plan build, once initiatives exist and need resourcing; the strategy function sets the envelope for each initiative as part of completing the plan.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function ranks the new initiatives, assigns each a bounded resource envelope, and checks the totals line up with the plan's priorities. Initiative owners then know exactly what they can draw on before work starts.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Set Resource Allocation Priorities L2 process within the processes:pc-sd-build-gmzrrm Cell Charter. See … |
+| `plain_language_name` | string | no | Set Resource Allocation Priorities |
+| `plain_language_description` | string | no | Strategic initiatives are only actionable once they have resources, and this work decides who gets what. The strategy … |
+| `business_purpose` | string | no | It connects strategy to capacity: ranking initiatives and bounding each one's resources ensures the plan is resourced … |
+| `practical_context` | string | no | Runs during plan build, once initiatives exist and need resourcing; the strategy function sets the envelope for each … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -134,3 +134,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Build Innovation Prototype L2 process within the processes:pc-pv-build-ygbmxb Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Build Innovation Prototype'
+plain_language_description: 'When an experiment needs something tangible to test an idea against, this work produces the working prototype the trial depends on. Product management scopes what the prototype must demonstrate, arranges the build, and checks that the result has enough fidelity to give the experiment a meaningful answer. The work ends when the prototype is ready to be put in front of the test.'
+business_purpose: 'A hypothesis about a new idea can only be tested against something real, so this work gives the enterprise early, affordable evidence before any full build is committed.'
+practical_context: 'Runs whenever a designed innovation experiment calls for a working model; product management pulls together the people who will build it, and the work sits between experiment design and the validation that follows.'
+worked_example:
+  agent_type: human
+  narrative: 'Product management briefs a small build team on the hypothesis the prototype must test, agrees the minimum fidelity needed, and books a review slot. When the working model comes back, product management checks it over and clears it for the experiment.'

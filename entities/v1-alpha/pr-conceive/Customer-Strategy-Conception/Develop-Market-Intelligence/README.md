@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pr-conc
 
 This is a **Business Process** (level L2), named **Develop Market Intelligence**, currently **candidate (yellow)**. It is part of the **Customer Strategy Conception** process context, domain `pr`, lifecycle stage Conceive. Its canonical ID is `processes:process-pr-conceive-tvst8u`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Big customer bets should rest on evidence, not hunches. This work studies the market, frames the demand-side questions as hypotheses that can actually be tested, and picks the first segments worth aiming at. It ends with a plan for proving or disproving the thesis before the strategy commits.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It replaces guesswork about markets and demand with testable propositions, so customer strategy is built on evidence gathered up front.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs ahead of strategy commitment whenever the enterprise considers a new market entry, notices a segment drifting, or holds a demand-side hypothesis worth testing; the strategy function and customer relationship management share the work.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Curious about a neighbouring market, the strategy function drafts the demand hypotheses and candidate segments, and customer relationship management sketches the test plan that will confirm or kill the idea before any strategy is written.
 
 ## 5. Header and Identity Table (generated)
 
@@ -76,6 +76,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Develop Market Intelligence L2 process within the processes:pc-pr-conceive-6xztsq Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Develop Market Intelligence |
+| `plain_language_description` | string | no | Big customer bets should rest on evidence, not hunches. This work studies the market, frames the demand-side questions … |
+| `business_purpose` | string | no | It replaces guesswork about markets and demand with testable propositions, so customer strategy is built on evidence … |
+| `practical_context` | string | no | Runs ahead of strategy commitment whenever the enterprise considers a new market entry, notices a segment drifting, or … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ao-oper
 
 This is a **Business Process** (level L2), named **Operate Time and Attendance**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. Its canonical ID is `processes:process-ao-operate-dg9q4h`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process captures when and how much the workforce works, accurately and every day. Exceptions such as missing records or unusual hours are spotted and handled rather than left to accumulate. The clean attendance data then feeds payroll so people are paid for the time they actually worked.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists to keep an accurate, exception-free record of working time, because payroll execution and workforce planning both depend on it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs continuously across service delivery, with workforce management handling daily capture and exception resolution so the data is ready to feed payroll execution.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* During a normal week, workforce management reviews the captured time records, chases the few exceptions such as a missing clock-in or an unapproved overtime entry, and clears them before the payroll cut-off.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Operate Time and Attendance L2 process within the processes:pc-ao-operate-zfevmp Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Run Time and Attendance |
+| `plain_language_description` | string | no | This process captures when and how much the workforce works, accurately and every day. Exceptions such as missing … |
+| `business_purpose` | string | no | It exists to keep an accurate, exception-free record of working time, because payroll execution and workforce planning … |
+| `practical_context` | string | no | Runs continuously across service delivery, with workforce management handling daily capture and exception resolution so … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -139,3 +139,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the regulator-aligned continuing-compliance oversight of regulator-licensed roles under the enterprise regulated-entity approval authority. The trigger …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Run Regulated Performance Oversight'
+plain_language_description: 'This process maintains the compliance side of running regulator-licensed roles once they are live. It keeps continuing-supervisor notifications, conduct-rule compliance, annual fitness-and-propriety attestations, hours-of-work and rest-rule adherence, and continuing-competence tracking up to date on the regulated personnel record. The evidence stays current and auditable for as long as the roles are in live operation.'
+business_purpose: 'It exists so the enterprise can demonstrate at any time that its licensed roles are being operated within the regulator''s continuing requirements.'
+practical_context: 'Runs throughout the live operation period of regulator-licensed roles, with workforce management maintaining the notification, attestation, and tracking obligations on the regulated personnel record.'
+worked_example:
+  agent_type: human
+  narrative: 'Partway through the first year in which a controlled-function appointee went live, workforce management confirms the annual fitness-and-propriety attestation is filed, checks the hours-of-work and rest-rule records, and refreshes the continuing-competence tracking on the personnel record.'

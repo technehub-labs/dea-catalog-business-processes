@@ -151,3 +151,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Conduct Operations Performance Review L2 process within the processes:pc-eo-improve-pka6dk Cell Charter. See trigger and outcome for the bounded …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Conduct Operations Performance Review'
+plain_language_description: 'This is the structured look backwards that sets up the next round of improvement. Performance signals are gathered and read, from logistics gaps to asset utilization against target, and the findings are written up in a review. The review closes with findings committed for logistics optimization, asset utilization work and technology platform evolution, which feed the next planning cycle.'
+business_purpose: 'It exists to turn performance signals into committed findings, so the execution engine and its enabling assets evolve deliberately instead of drifting.'
+practical_context: 'Runs whenever performance signals, logistics gaps or asset utilization targets show the execution engine or its enabling assets need to evolve. The operations function conducts the review and hands its findings to the next planning cycle.'
+worked_example:
+  agent_type: human
+  narrative: 'Ahead of the planning round, an operations manager assembles the quarter''s performance signals, walks the team through the logistics gaps and asset utilization misses, and commits the findings so the right improvement work is planned next.'

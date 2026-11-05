@@ -139,3 +139,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Establish Risk and Control Apparatus (build stage, core process). Landed by CR-BP-21f.1 from the GovernanceAndExistence register v2.'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Establish Risk and Control Apparatus'
+plain_language_description: 'With the risk framework design approved, the practical machinery has to be put in place. Teams stand up the risk registers where exposures will be logged, install the monitoring tools that watch them, and draw the reporting lines that carry risk information upward. When this is done, the enterprise is equipped to start managing risk day to day.'
+business_purpose: 'It gives the organisation the concrete tools and routes, from registers to monitoring to reporting lines, that turn risk plans into working practice.'
+practical_context: 'Encountered at the point the risk framework design is approved for build: the strategy function and governing board oversee delivery of the registers, monitoring tooling, and reporting lines before routine risk operations begin.'
+worked_example:
+  agent_type: human
+  narrative: 'After the design sign-off, a strategy function coordinator sets up the risk registers, arranges access to the monitoring tools, and confirms with the governing board who reports what to whom each period.'

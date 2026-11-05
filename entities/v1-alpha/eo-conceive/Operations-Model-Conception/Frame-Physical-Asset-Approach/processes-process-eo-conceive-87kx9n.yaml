@@ -137,3 +137,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Frame Physical Asset Approach L2 process within the processes:pc-eo-conceive-mxmtzq Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Frame the Physical Asset Approach'
+plain_language_description: 'Before anyone designs a single building or piece of equipment, this process sets the ground rules for the physical side of the operation. The strategy and operations leads agree footprint principles for how much facility and asset capacity the business will carry, and the lifecycle envelopes within which assets will live. The framed approach then feeds blueprint design and stays coordinated with the operations planning cycle.'
+business_purpose: 'It turns the operations strategy into working rules for facilities and assets, footprint principles and lifecycle envelopes, so blueprint design starts from a settled position.'
+practical_context: 'Met when the operations strategy needs bounded decisions on facility and asset footprints ahead of blueprint design. Strategy function and operations function carry the framing within the operations planning cycle, owned by the Enablement & Operations Process Owner.'
+worked_example:
+  agent_type: human
+  narrative: 'In an early planning round, a strategy lead and an operations manager agree the footprint principles for the facility and asset estate and mark out the lifecycle envelopes that the blueprint designers will have to respect.'

@@ -146,3 +146,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Improve the regulator-tied capability of regulator-licensed roles under the enterprise regulated-entity approval authority. The trigger is the …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Improve Regulated Workforce Capability'
+plain_language_description: 'This process keeps people in regulator-licensed roles competent over time. It runs the regulator-mandated continuing-competence cycles, including annual fit-and-proper re-assessments, recurrent and continuing training, and any mandated remediation programmes, and records each completion on the regulated personnel record. The continuing supervisor is notified as the cycles complete, keeping the regulator''s supervision arrangements current.'
+business_purpose: 'It exists so licensed staff stay within their regulator''s competence expectations throughout their time in the role, protecting both the individuals and the enterprise''s regulatory standing.'
+practical_context: 'Encountered on the regulator''s continuing-competence cycle or whenever a remediation requirement lands, with the organization design authority overseeing cycles that must align to the regulator''s framework before being recorded on the personnel record.'
+worked_example:
+  agent_type: human
+  narrative: 'When the annual fit-and-proper re-assessment window opens, the organization design authority tracks each licensed role holder through the mandated training and assessment, records the completions on their regulated personnel record, and notifies the continuing supervisor.'

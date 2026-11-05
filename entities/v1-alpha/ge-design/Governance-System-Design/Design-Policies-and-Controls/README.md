@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ge-desi
 
 This is a **Business Process** (level L2), named **Design Policies and Controls**, currently **candidate (yellow)**. It is part of the **Governance System Design** process context, domain `ge`, lifecycle stage Design. Its canonical ID is `processes:process-ge-design-kpsj5b`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once the governance structure exists on paper, the actual rules and safeguards need shaping. This work spells out the policy documents that will be issued, the control objectives each must meet, and the compliance regime that ties them together. The committed design then guides whoever builds and runs the policies day to day.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It defines the rules and safeguards before they are written, so the enterprise ends up with coherent, testable policies rather than a pile of disconnected documents.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Follows the governance system design: with the structure agreed, the strategy function and governing board shape the policy artefacts, control objectives, and compliance regime that will drive build and daily operation.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* With the committee structure agreed, a strategy function policy lead drafts the set of policy artefacts and their control objectives, and the governing board checks each objective against the compliance regime before the design is committed.
 
 ## 5. Header and Identity Table (generated)
 
@@ -75,6 +75,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Design Policies and Controls L2 process within the processes:pc-ge-design-3f2gjr Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Design Policies and Controls |
+| `plain_language_description` | string | no | Once the governance structure exists on paper, the actual rules and safeguards need shaping. This work spells out the … |
+| `business_purpose` | string | no | It defines the rules and safeguards before they are written, so the enterprise ends up with coherent, testable policies … |
+| `practical_context` | string | no | Follows the governance system design: with the structure agreed, the strategy function and governing board shape the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

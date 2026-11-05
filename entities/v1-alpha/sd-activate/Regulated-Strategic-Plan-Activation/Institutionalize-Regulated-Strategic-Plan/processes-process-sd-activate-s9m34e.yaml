@@ -217,3 +217,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Institutionalize a regulated entity''s strategic plan under the enterprise''s regulated-entity approval authority within the processes:pc-sd-activate-ghaub8 Cell …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Institutionalize Regulated Strategic Plan'
+plain_language_description: 'In regulated sectors, a board-approved strategy is not live until the supervisor says so. This work takes the approved plan through the filing and activation steps with the competent regulator, keeps the supervisor''s acknowledgement and the filing receipt on record, and switches on the monitoring framework that tracks the plan''s obligations. From then on, the plan binds the organisation under the regulator''s continuing supervision.'
+business_purpose: 'It exists because regulated plans carry real weight: activation under supervisor acknowledgement makes the plan''s obligations binding and puts the receipts and monitoring in place that the regulator expects to see.'
+practical_context: 'Encountered whenever a board-approved strategic plan in a regulated sector must be filed, with the strategy function preparing the filing and the supervising authority, risk function, and governing board involved until the acknowledgement lands.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function submits the board-approved plan to the supervising authority, answers the review questions, and files the acknowledgement with the regulated records. The risk function then stands up the monitoring framework, and the governing board is briefed that the plan''s obligations are now binding under continuing supervision.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-sd-conc
 
 This is a **Business Process** (level L2), named **Frame Strategic Horizons**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. Its canonical ID is `processes:process-sd-conceive-xa4h2k`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Strategy needs a sense of time, and this work supplies it. The strategy function divides the planning cycle into bounded horizons and fixes the milestone anchors that mark each one, giving the conceived intent a structure to live in. Planning, options, and targets can then be placed against a shared timetable.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives strategic planning its calendar: bounded horizons and milestone anchors mean intent, choices, and objectives can all be timed and tracked on one shared frame.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs when strategic intent has been conceived and the planning cycle needs structuring; the strategy function frames the horizons ahead of option design and plan construction.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function sketches the planning horizons, agrees the milestone anchors that close each one, and publishes the frame to the planning teams. Option designers then know exactly what window each choice has to fit.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Frame Strategic Horizons L2 process within the processes:pc-sd-conceive-ucb3gx Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Frame Strategic Horizons |
+| `plain_language_description` | string | no | Strategy needs a sense of time, and this work supplies it. The strategy function divides the planning cycle into … |
+| `business_purpose` | string | no | It gives strategic planning its calendar: bounded horizons and milestone anchors mean intent, choices, and objectives … |
+| `practical_context` | string | no | Runs when strategic intent has been conceived and the planning cycle needs structuring; the strategy function frames … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

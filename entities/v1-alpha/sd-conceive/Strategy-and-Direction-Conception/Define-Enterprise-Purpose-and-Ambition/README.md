@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-sd-conc
 
 This is a **Business Process** (level L2), named **Define Enterprise Purpose and Ambition**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. Its canonical ID is `processes:process-sd-conceive-r93j3d`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This work settles the most basic questions an organisation can ask: why it exists and how far it intends to go. The strategy function anchors the enterprise purpose and the ambition that follows from it, committing both as the foundation everything else in strategy stands on. Whenever the enterprise is founded, reframed, or its mandate shifts, this is where the re-anchoring happens.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It provides the anchor for all strategic work: purpose and ambition defined up front keep later intent, choices, and plans pointing at the same destination.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Triggered when the enterprise is being established, reframed, or responding to mandate shifts; the strategy function defines and commits the purpose and ambition before any intent work begins.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function drafts the purpose statement and the ambition that follows from it, tests the wording with the leadership, and commits the pair as the enterprise anchor. Later planning then starts from that settled foundation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Define Enterprise Purpose and Ambition L2 process within the processes:pc-sd-conceive-ucb3gx Cell Charter … |
+| `plain_language_name` | string | no | Define Enterprise Purpose and Ambition |
+| `plain_language_description` | string | no | This work settles the most basic questions an organisation can ask: why it exists and how far it intends to go. The … |
+| `business_purpose` | string | no | It provides the anchor for all strategic work: purpose and ambition defined up front keep later intent, choices, and … |
+| `practical_context` | string | no | Triggered when the enterprise is being established, reframed, or responding to mandate shifts; the strategy function … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

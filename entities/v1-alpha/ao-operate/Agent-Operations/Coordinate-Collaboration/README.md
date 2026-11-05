@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ao-oper
 
 This is a **Business Process** (level L2), named **Coordinate Collaboration**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. Its canonical ID is `processes:process-ao-operate-bd7mef`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process keeps agents and teams working coherently once they are in service. It provides the shared workspaces they need and sets the interaction norms for how they engage with each other. With those in place, joint work across people and artificial agents proceeds without constant case-by-case negotiation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so cooperation across the workforce is structured rather than improvised, letting mixed teams of people and artificial agents deliver together reliably.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered day to day in service operations whenever agents and teams need shared workspaces and interaction norms, with workforce management keeping those arrangements current.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* When a new mixed team of staff and artificial agents forms around a busy service queue, workforce management sets up their shared workspace and agrees the interaction norms for handoffs, so work moves between people and agents without friction.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Coordinate Collaboration L2 process within the processes:pc-ao-operate-zfevmp Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Coordinate Collaboration |
+| `plain_language_description` | string | no | This process keeps agents and teams working coherently once they are in service. It provides the shared workspaces they … |
+| `business_purpose` | string | no | It exists so cooperation across the workforce is structured rather than improvised, letting mixed teams of people and … |
+| `practical_context` | string | no | Encountered day to day in service operations whenever agents and teams need shared workspaces and interaction norms … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

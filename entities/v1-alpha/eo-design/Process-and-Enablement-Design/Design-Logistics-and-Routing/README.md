@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-desi
 
 This is a **Business Process** (level L2), named **Design Logistics and Routing**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. Its canonical ID is `processes:process-eo-design-8s76nv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process works out how goods will physically move. The operations function chooses the transport modes, sets the routing logic that decides which way shipments travel, and positions the network nodes along the way. The design is kept in step with the delivery model so that what is promised to customers can actually be delivered.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists to give the delivery model a matching physical movement plan of transport modes, routing logic and network nodes before the network is built.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered during design work whenever the delivery model needs its transport modes, routing logic and network nodes worked out. The operations function drafts the design, coordinated with the delivery model design under the Enablement & Operations Process Owner.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations designer weighs road against rail for the main routes, writes the routing logic that sends urgent orders down the faster paths, and marks where the network nodes, depots and hubs, will sit.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Design Logistics and Routing L2 process within the processes:pc-eo-design-kxdfnz Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Design Logistics and Routing |
+| `plain_language_description` | string | no | This process works out how goods will physically move. The operations function chooses the transport modes, sets the … |
+| `business_purpose` | string | no | It exists to give the delivery model a matching physical movement plan of transport modes, routing logic and network … |
+| `practical_context` | string | no | Encountered during design work whenever the delivery model needs its transport modes, routing logic and network nodes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

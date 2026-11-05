@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ao-buil
 
 This is a **Business Process** (level L2), named **Build Contractor and Partner-Agent Pool**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. Its canonical ID is `processes:process-ao-build-b38bkg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the enterprise cannot meet surge or specialist demand by direct acquisition within the required timeframes, this process stands up a pool of contractors and partner agents instead. Potential sources are vetted before they join the pool, and agreed activation paths are set out so the pool can be brought online quickly. The result is a ready reserve that can be drawn on when demand spikes or niche skills are needed.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives the enterprise flexible extra capacity that direct acquisition alone cannot provide, shortening the time it takes to respond to surges and specialist needs.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Comes into play when direct acquisition cannot serve surge or specialist demand within the required timeframes; the governing board is the named actor and stakeholder, with the Agency & Organization Process Owner accountable.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Facing a seasonal workload spike that permanent hiring cannot cover in time, a workforce lead draws on the pre-vetted contractor pool and activates partner agents through the agreed paths, bringing the extra capacity online within days rather than months.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Build Contractor and Partner-Agent Pool L2 process within the processes:pc-ao-build-pjk4rz Cell Charter … |
+| `plain_language_name` | string | no | Build the Contractor and Partner Agent Pool |
+| `plain_language_description` | string | no | When the enterprise cannot meet surge or specialist demand by direct acquisition within the required timeframes, this … |
+| `business_purpose` | string | no | It gives the enterprise flexible extra capacity that direct acquisition alone cannot provide, shortening the time it … |
+| `practical_context` | string | no | Comes into play when direct acquisition cannot serve surge or specialist demand within the required timeframes; the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

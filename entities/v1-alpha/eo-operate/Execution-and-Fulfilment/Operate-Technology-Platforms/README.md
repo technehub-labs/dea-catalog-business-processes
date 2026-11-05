@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-oper
 
 This is a **Business Process** (level L2), named **Operate Technology Platforms**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. Its canonical ID is `processes:process-eo-operate-4njp7b`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process keeps the installed technology platforms up and serving the workloads that depend on them. Availability is managed against agreed targets, and when something goes wrong in a service window the incident is recorded and worked. It is the difference between platforms that merely exist and platforms the operation can rely on.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so operational workloads get the agreed availability from the installed platforms, with every incident recorded rather than quietly absorbed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered around the clock across the platforms' service windows, whenever operational workloads need the platforms up. Product management oversees platform operation under the Enablement & Operations Process Owner.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* During an overnight service window a platform incident is recorded and worked, and the next morning a product manager reviews the incident log and confirms availability was back at target.
 
 ## 5. Header and Identity Table (generated)
 
@@ -73,6 +73,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Operate Technology Platforms L2 process within the processes:pc-eo-operate-ydqb96 Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Operate Technology Platforms |
+| `plain_language_description` | string | no | This process keeps the installed technology platforms up and serving the workloads that depend on them. Availability is … |
+| `business_purpose` | string | no | It exists so operational workloads get the agreed availability from the installed platforms, with every incident … |
+| `practical_context` | string | no | Encountered around the clock across the platforms' service windows, whenever operational workloads need the platforms … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -135,3 +135,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Frame Portfolio Direction L2 process within the processes:pc-pv-conceive-fe9awk Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Frame Portfolio Direction'
+plain_language_description: 'When several propositions are all asking for investment, this work sets the portfolio-level direction that decides who gets what. The proposition design authority defines the investment envelopes and works out the priority ordering across the competing propositions. The resulting direction keeps individual proposition planning aligned with the enterprise''s broader course.'
+business_purpose: 'It stops investment being handed out piecemeal: by setting envelopes and priorities up front, the enterprise keeps each proposition''s plans part of a coherent whole and backs the strongest opportunities first.'
+practical_context: 'Encountered during portfolio planning rounds, when the proposition design authority has to arbitrate between propositions competing for the same limited investment; its output feeds directly into proposition planning.'
+worked_example:
+  agent_type: human
+  narrative: 'The proposition design authority reviews the propositions seeking funding, groups them into investment envelopes, and agrees the order in which they will be backed. Each proposition team then plans inside the envelope and priority it has been given.'

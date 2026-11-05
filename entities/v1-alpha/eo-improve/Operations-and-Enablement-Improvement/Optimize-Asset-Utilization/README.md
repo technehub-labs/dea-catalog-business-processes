@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-impr
 
 This is a **Business Process** (level L2), named **Optimize Asset Utilization**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. Its canonical ID is `processes:process-eo-improve-q58ecg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process makes sure the operation's assets are working where they are most needed. Maintenance and performance evidence is used to spot assets sitting underused on one hand and bottlenecks caused by overloaded ones on the other. It finishes with redeployment and reallocation decisions committed to the asset plan.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists to get more out of the assets the operation already has, by moving them from underused corners to the bottlenecks that need relief.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Comes up when maintenance or performance evidence shows assets underutilized or bottlenecked. The operations function makes the calls and commits them to the asset plan, under the Enablement & Operations Process Owner.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Reviewing the latest evidence, an operations manager spots a machine that stands idle most afternoons while a downstream bottleneck queues work, and commits a redeployment decision to the asset plan to shift the spare capacity across.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Optimize Asset Utilization L2 process within the processes:pc-eo-improve-pka6dk Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Optimize Asset Utilization |
+| `plain_language_description` | string | no | This process makes sure the operation's assets are working where they are most needed. Maintenance and performance … |
+| `business_purpose` | string | no | It exists to get more out of the assets the operation already has, by moving them from underused corners to the … |
+| `practical_context` | string | no | Comes up when maintenance or performance evidence shows assets underutilized or bottlenecked. The operations function … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

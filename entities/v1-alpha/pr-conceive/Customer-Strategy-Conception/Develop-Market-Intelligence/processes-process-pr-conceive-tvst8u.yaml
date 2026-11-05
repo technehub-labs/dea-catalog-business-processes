@@ -172,3 +172,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Develop Market Intelligence L2 process within the processes:pc-pr-conceive-6xztsq Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Develop Market Intelligence'
+plain_language_description: 'Big customer bets should rest on evidence, not hunches. This work studies the market, frames the demand-side questions as hypotheses that can actually be tested, and picks the first segments worth aiming at. It ends with a plan for proving or disproving the thesis before the strategy commits.'
+business_purpose: 'It replaces guesswork about markets and demand with testable propositions, so customer strategy is built on evidence gathered up front.'
+practical_context: 'Runs ahead of strategy commitment whenever the enterprise considers a new market entry, notices a segment drifting, or holds a demand-side hypothesis worth testing; the strategy function and customer relationship management share the work.'
+worked_example:
+  agent_type: human
+  narrative: 'Curious about a neighbouring market, the strategy function drafts the demand hypotheses and candidate segments, and customer relationship management sketches the test plan that will confirm or kill the idea before any strategy is written.'

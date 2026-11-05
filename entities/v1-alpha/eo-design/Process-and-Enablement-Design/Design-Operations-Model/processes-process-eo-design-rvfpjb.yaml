@@ -149,3 +149,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Design Operations Model L2 process within the processes:pc-eo-design-kxdfnz Cell Charter. See trigger and outcome for the bounded work this process …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Design Operations Model'
+plain_language_description: 'This is the coordinating design step that pulls four design strands into one committed whole. The delivery model design, the technology platform architecture, the facility and asset blueprint, and the logistics and routing design are each finished and then brought together into a single operations model design. Once committed, it is the basis on which the build stage is planned.'
+business_purpose: 'It exists to make sure the separate design strands of delivery, platforms, facilities and logistics add up to one coherent operations model before anything is built.'
+practical_context: 'Runs when the framed operations strategy is ready to be designed in full across its four strands. Operations function staff coordinate the work, with the Enablement & Operations Process Owner accountable for the committed design.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations design lead brings the four strands together in a review week, reconciles the platform architecture with the facility blueprint and the routing design, and commits the finished operations model for build-stage planning.'

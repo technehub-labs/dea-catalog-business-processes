@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-sd-desi
 
 This is a **Business Process** (level L2), named **Design Strategic Options**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. Its canonical ID is `processes:process-sd-design-ewvbsh`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This work turns strategic intent into a menu of genuinely different ways forward. The strategy function designs each option as a set of bounded trade-offs, what it would cost and what it would deliver, and sets the criteria against which the options will be judged. The committed option designs then go forward for evaluation and translation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It creates real choice: designing distinct options with explicit trade-offs and evaluation criteria up front lets the enterprise compare paths honestly instead of defaulting to the first idea.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs when the conceived strategic intent needs candidate paths; the strategy function designs the options and their trade-offs before any evaluation takes place.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function sketches the candidate options for the intent, writes each one's trade-offs in plain terms, and agrees the criteria the leadership will judge them on. The option designs are committed and sent for evaluation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Design Strategic Options L2 process within the processes:pc-sd-design-g3es76 Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Design Strategic Options |
+| `plain_language_description` | string | no | This work turns strategic intent into a menu of genuinely different ways forward. The strategy function designs each … |
+| `business_purpose` | string | no | It creates real choice: designing distinct options with explicit trade-offs and evaluation criteria up front lets the … |
+| `practical_context` | string | no | Runs when the conceived strategic intent needs candidate paths; the strategy function designs the options and their … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

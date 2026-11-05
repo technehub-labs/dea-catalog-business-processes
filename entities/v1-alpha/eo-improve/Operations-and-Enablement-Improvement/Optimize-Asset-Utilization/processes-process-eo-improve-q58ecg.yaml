@@ -137,3 +137,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Optimize Asset Utilization L2 process within the processes:pc-eo-improve-pka6dk Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Optimize Asset Utilization'
+plain_language_description: 'This process makes sure the operation''s assets are working where they are most needed. Maintenance and performance evidence is used to spot assets sitting underused on one hand and bottlenecks caused by overloaded ones on the other. It finishes with redeployment and reallocation decisions committed to the asset plan.'
+business_purpose: 'It exists to get more out of the assets the operation already has, by moving them from underused corners to the bottlenecks that need relief.'
+practical_context: 'Comes up when maintenance or performance evidence shows assets underutilized or bottlenecked. The operations function makes the calls and commits them to the asset plan, under the Enablement & Operations Process Owner.'
+worked_example:
+  agent_type: human
+  narrative: 'Reviewing the latest evidence, an operations manager spots a machine that stands idle most afternoons while a downstream bottleneck queues work, and commits a redeployment decision to the asset plan to shift the spare capacity across.'

@@ -141,3 +141,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Frame Risk Framework Direction (conceive stage, strategic process). Landed by CR-BP-21f.1 from the GovernanceAndExistence register v2.'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Set the Direction for the Risk Framework'
+plain_language_description: 'Before any risk framework can be built, leadership has to say how much risk the enterprise is willing to carry. This work sets that line: how ambitious or cautious the organisation will be, how much variation is tolerable, and what overall stance governance will take toward risk. Those choices then steer everyone who designs the detailed framework.'
+business_purpose: 'It gives the enterprise a shared risk appetite and limits, so later risk decisions are made within an agreed posture instead of case by case.'
+practical_context: 'Arises when a governance mandate calls for an enterprise risk posture: the governing board and strategy function, with the operations function, agree appetite, tolerance bands, and posture before detailed design begins.'
+worked_example:
+  agent_type: human
+  narrative: 'Ahead of a new mandate, the strategy function prepares options for risk appetite and tolerance bands, and the governing board debates and picks the posture that will guide the risk framework''s design.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ao-oper
 
 This is a **Business Process** (level L2), named **Operate Payroll and Benefits**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. Its canonical ID is `processes:process-ao-operate-38qyc6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process pays the workforce. Each cycle, it disburses pay and benefits accurately and on time and completes the statutory filings that go with them. Done reliably, it keeps the workforce's trust and keeps the enterprise on top of its filing obligations.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists to make sure every agent in service is paid correctly and on time, with the required statutory filings made, cycle after cycle.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs on a regular pay-cycle cadence for all agents in service, with workforce management responsible for accurate, on-time disbursement and the statutory filings each cycle.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* At the end of the pay period, workforce management reconciles the attendance data against pay records, runs the disbursement so everyone is paid accurately and on time, and completes the statutory filings the cycle requires.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Operate Payroll and Benefits L2 process within the processes:pc-ao-operate-zfevmp Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Run Payroll and Benefits |
+| `plain_language_description` | string | no | This process pays the workforce. Each cycle, it disburses pay and benefits accurately and on time and completes the … |
+| `business_purpose` | string | no | It exists to make sure every agent in service is paid correctly and on time, with the required statutory filings made … |
+| `practical_context` | string | no | Runs on a regular pay-cycle cadence for all agents in service, with workforce management responsible for accurate … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

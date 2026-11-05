@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ge-oper
 
 This is a **Business Process** (level L2), named **Operate Enterprise Risk Oversight**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. Its canonical ID is `processes:process-ge-operate-tpenm6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+On a recurring cycle, this work takes the temperature of enterprise risk. The risk function runs the scheduled reviews, brings the exposures that have built up out into the open, and pairs each significant one with a mitigation. What surfaces goes straight to the governance bodies so they can steer.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It keeps risk visible between reporting moments, so exposures are caught and mitigated on a rhythm rather than discovered late.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs each time a risk review cycle boundary is reached: the risk function executes the reviews with the compliance function alongside, and exposures and mitigations are laid before the governance bodies.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* When the quarterly risk cycle closes, the risk function leads the review sessions, flags the exposures that have grown, and brings proposed mitigations to the governing board for decision.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate Enterprise Risk Oversight (operate stage, core process). Landed by CR-BP-21f.1 from the GovernanceAndExistence … |
+| `plain_language_name` | string | no | Operate Enterprise Risk Oversight |
+| `plain_language_description` | string | no | On a recurring cycle, this work takes the temperature of enterprise risk. The risk function runs the scheduled reviews … |
+| `business_purpose` | string | no | It keeps risk visible between reporting moments, so exposures are caught and mitigated on a rhythm rather than … |
+| `practical_context` | string | no | Runs each time a risk review cycle boundary is reached: the risk function executes the reviews with the compliance … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -174,3 +174,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Design Customer Experience L2 process within the processes:pc-pr-design-hrcdy4 Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Design Customer Experience'
+plain_language_description: 'With the customer strategy settled, someone has to decide what dealing with the enterprise will actually feel like. This work lays out the touchpoints where customers meet the enterprise, the patterns each interaction follows, and the quality bar every contact must clear. The committed design becomes the reference for whoever builds the channels and journeys.'
+business_purpose: 'It makes the promised value exchange tangible, defining how every customer interaction should look and feel before anything is built.'
+practical_context: 'Follows a committed segment thesis and value exchange: the strategy function frames the design, customer relationship management contributes the front-line view, and the governing board endorses the committed experience.'
+worked_example:
+  agent_type: human
+  narrative: 'Working from the new segment thesis, a strategy function designer sketches each touchpoint and its interaction pattern, customer relationship management checks the flows against real front-line behaviour, and the quality criteria are fixed before build starts.'

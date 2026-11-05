@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-fa-conc
 
 This is a **Business Process** (level L2), named **Frame Finance Strategy**, currently **candidate (yellow)**. It is part of the **Financial Model and Funding Conception** process context, domain `fa`, lifecycle stage Conceive. Its canonical ID is `processes:process-fa-conceive-4uqqvg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This is the work of deciding, at the top of the house, how the enterprise will approach its money. The finance function and the strategy function frame the finance strategy together, settling what the monetary model will be and how funding and capital will be handled. The agreed strategy is then committed and becomes the reference point for the financial planning that follows.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise meets funding and capital decisions with one agreed finance strategy rather than by improvisation, giving every later financial plan a settled monetary model and funding approach to build on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It is triggered when the enterprise establishes a new monetary model, reframes an existing one, or responds to funding and capital shifts, and the finance and strategy functions lead the framing.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* When funding and capital conditions shift, the strategy function and the finance function meet to reframe the finance strategy, agree the monetary model, and commit the funding and capital approach that will steer the next round of financial planning.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Frame Finance Strategy L2 process within the processes:pc-fa-conceive-phabh2 Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Frame Finance Strategy |
+| `plain_language_description` | string | no | This is the work of deciding, at the top of the house, how the enterprise will approach its money. The finance function … |
+| `business_purpose` | string | no | It exists so the enterprise meets funding and capital decisions with one agreed finance strategy rather than by … |
+| `practical_context` | string | no | It is triggered when the enterprise establishes a new monetary model, reframes an existing one, or responds to funding … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

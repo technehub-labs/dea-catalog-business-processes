@@ -137,3 +137,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Frame Delivery Model Conception L2 process within the processes:pc-eo-conceive-mxmtzq Cell Charter. See trigger and outcome for the bounded work …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Frame the Delivery Model Concept'
+plain_language_description: 'Early in shaping a new operation, this process decides in broad terms how the business will reach and serve its customers. The strategy and operations leads settle which channels will be used, what service levels customers can expect, and which fulfilment patterns will get products to them. The result is a bounded delivery model concept that later design work turns into detail, kept in step with the operations strategy.'
+business_purpose: 'It gives the operations strategy a concrete delivery direction of channels, service levels and fulfilment patterns, so downstream design has something firm to work from.'
+practical_context: 'Met when the operations strategy calls for a delivery model to be conceived before design can proceed. Strategy function and operations function staff do the framing within the operations planning cycle, under the Enablement & Operations Process Owner.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy lead and an operations manager spend a planning session agreeing which channels the business will serve, the service levels promised on each, and the fulfilment pattern that ties them together, then write the concept up for the design teams.'

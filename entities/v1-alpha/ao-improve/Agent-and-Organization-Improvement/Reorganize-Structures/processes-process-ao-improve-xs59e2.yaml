@@ -139,3 +139,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Reorganize Structures L2 process within the processes:pc-ao-improve-qkmh6b Cell Charter. See trigger and outcome for the bounded work this process …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Restructure the Organization'
+plain_language_description: 'This process carries out structural change when review findings or a change of direction call for it. It sequences the transition so units, roles, and reporting lines move in a controlled order, and it records who hands over which accountabilities along the way. The reorganization stays aligned to the organization plan throughout.'
+business_purpose: 'It exists to reshape the organization deliberately rather than chaotically, so structural change lands without leaving gaps in accountability or disrupting operations.'
+practical_context: 'Encountered when review findings or direction changes require structural change, led by the organization design authority with transition sequencing and accountability handovers planned before moves begin.'
+worked_example:
+  agent_type: human
+  narrative: 'Following a review that recommended merging two support units, the organization design authority sequences the merger step by step, sets the date each accountability handover happens, and records the transitions so nothing falls between the cracks.'

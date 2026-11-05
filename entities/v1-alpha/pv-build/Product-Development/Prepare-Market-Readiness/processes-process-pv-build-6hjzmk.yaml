@@ -135,3 +135,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Prepare Market Readiness L2 process within the processes:pc-pv-build-ygbmxb Cell Charter. See trigger and outcome for the bounded work this process …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Prepare Market Readiness'
+plain_language_description: 'Before a built product or service can launch, this work pulls together everything the market-facing side needs. Product management arranges the go-to-market assets, settles pricing, and sets up the channels the offering will be sold through. Once those pieces are in place, the offering is ready for launch.'
+business_purpose: 'It exists so a finished product does not go out half-dressed: pricing, channels, and go-to-market materials are readied in advance so the launch lands properly.'
+practical_context: 'Runs in the run-up to every launch, once the build is complete; product management leads the preparation with the people who will take the offering to market.'
+worked_example:
+  agent_type: human
+  narrative: 'With the product built, product management assembles the launch pack: pricing is signed off, the sales channels are set up, and the go-to-market assets go out to the field. The launch then proceeds with everything in place.'

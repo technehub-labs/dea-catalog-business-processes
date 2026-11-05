@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-sd-impr
 
 This is a **Business Process** (level L2), named **Review Strategy Effectiveness**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. Its canonical ID is `processes:process-sd-improve-duwd64`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This work asks the blunt question of whether the strategy is actually working. The strategy function examines the current direction against the strategic intent and the performance evidence, and works out whether the intended outcomes are being produced. Its findings are committed so the next adaptation cycle starts from evidence rather than opinion.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the loop on strategy: a committed effectiveness review tells the enterprise whether its chosen direction is delivering, and hands the adaptation cycle findings it can act on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs as part of the adaptation cycle whenever committed findings on the direction are needed; the strategy function performs the review against the strategic intent and the performance evidence.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function lays the strategic intent beside the performance evidence, works through where outcomes match and where they fall short, and writes up the findings. The committed review then feeds the adaptation cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Review Strategy Effectiveness L2 process within the processes:pc-sd-improve-ft9k5f Cell Charter. See … |
+| `plain_language_name` | string | no | Review Strategy Effectiveness |
+| `plain_language_description` | string | no | This work asks the blunt question of whether the strategy is actually working. The strategy function examines the … |
+| `business_purpose` | string | no | It closes the loop on strategy: a committed effectiveness review tells the enterprise whether its chosen direction is … |
+| `practical_context` | string | no | Runs as part of the adaptation cycle whenever committed findings on the direction are needed; the strategy function … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

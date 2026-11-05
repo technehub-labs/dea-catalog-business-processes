@@ -135,3 +135,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Set Resource Allocation Priorities L2 process within the processes:pc-sd-build-gmzrrm Cell Charter. See trigger and outcome for the bounded work …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Set Resource Allocation Priorities'
+plain_language_description: 'Strategic initiatives are only actionable once they have resources, and this work decides who gets what. The strategy function sets the allocation priorities and gives each initiative a bounded envelope so the plan can be executed without open-ended commitments. The envelopes are aligned to the strategic plan, so money and effort follow the chosen direction.'
+business_purpose: 'It connects strategy to capacity: ranking initiatives and bounding each one''s resources ensures the plan is resourced in priority order rather than by whoever asks loudest.'
+practical_context: 'Runs during plan build, once initiatives exist and need resourcing; the strategy function sets the envelope for each initiative as part of completing the plan.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function ranks the new initiatives, assigns each a bounded resource envelope, and checks the totals line up with the plan''s priorities. Initiative owners then know exactly what they can draw on before work starts.'

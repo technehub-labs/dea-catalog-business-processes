@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pv-desi
 
 This is a **Business Process** (level L2), named **Design Product and Service Propositions**, currently **candidate (yellow)**. It is part of the **Proposition and Packaging Design** process context, domain `pv`, lifecycle stage Design. Its canonical ID is `processes:process-pv-design-8v4k89`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This work shapes a framed value proposition thesis into a full design. Product management lays out the proposition's architecture, works through its packaging and configuration, and designs any innovation experiments the thesis calls for, covering products, services, solutions, experiences, and platforms alike. The completed designs hand the build stage everything it needs to start constructing.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It converts a value claim into a buildable design: architecture, packaging, and configuration are worked out in advance so the build stage constructs something coherent instead of improvising.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Central to proposition design: whenever a thesis has been committed, product management runs this design effort before construction begins, often coordinating packaging design and experiment design in parallel.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Product management takes the committed thesis and drafts the proposition architecture, agreeing packaging and configuration options with the segment owners and setting up the experiment designs. The finished design pack is handed to the teams who will build it.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Design Product and Service Propositions L2 process within the processes:pc-pv-design-8dhwpn Cell Charter … |
+| `plain_language_name` | string | no | Design Product and Service Propositions |
+| `plain_language_description` | string | no | This work shapes a framed value proposition thesis into a full design. Product management lays out the proposition's … |
+| `business_purpose` | string | no | It converts a value claim into a buildable design: architecture, packaging, and configuration are worked out in advance … |
+| `practical_context` | string | no | Central to proposition design: whenever a thesis has been committed, product management runs this design effort before … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

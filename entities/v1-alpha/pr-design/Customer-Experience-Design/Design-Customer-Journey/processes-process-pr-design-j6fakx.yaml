@@ -173,3 +173,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Design Customer Journey L2 process within the processes:pc-pr-design-hrcdy4 Cell Charter. See trigger and outcome for the bounded work this process …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Design Customer Journey'
+plain_language_description: 'Customers experience the enterprise as one continuous path, not a set of departments. This work maps that path end to end: the stages a customer moves through, the moments that will make or break their impression, and the handoffs where one team passes them to the next. The finished journey keeps operating and improvement teams aligned on the same route.'
+business_purpose: 'It smooths the customer''s path across teams and stages, so the enterprise can see and fix the points where experience is won or lost.'
+practical_context: 'Follows the experience design: the strategy function and customer relationship management trace the end-to-end stages, moments-of-truth, and handoff points, keeping the governing board''s oversight of the committed route.'
+worked_example:
+  agent_type: human
+  narrative: 'With the experience defined, a strategy function facilitator walks customer relationship management through each stage of the customer''s path, they mark the make-or-break moments and every handoff, and the governing board endorses the route.'

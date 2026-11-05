@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ao-desi
 
 This is a **Business Process** (level L2), named **Design Organization Structure**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. Its canonical ID is `processes:process-ao-design-7dkbur`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process produces the concrete blueprint of how the enterprise will be organized. It works out the authority chains, defines the roles that will exist, and pulls together the role catalogue, competency framework, and agent topology that go with them. The committed design is the package the enterprise then builds its workforce from.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It turns strategic intent and the framed organization model into an actionable structure, so accountability, roles, and agent placement are all settled before people and agents are acquired.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Follows a committed organization and agent strategy, with the organization design authority producing the blueprint during design workstreams ahead of workforce build.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The organization design authority sketches the new division's reporting lines, fixes who holds which decision rights, aligns the role definitions with the competency framework and agent topology, and commits the design for the teams that will staff it.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Design Organization Structure L2 process within the processes:pc-ao-design-a4hq2r Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Design the Organization Structure |
+| `plain_language_description` | string | no | This process produces the concrete blueprint of how the enterprise will be organized. It works out the authority … |
+| `business_purpose` | string | no | It turns strategic intent and the framed organization model into an actionable structure, so accountability, roles, and … |
+| `practical_context` | string | no | Follows a committed organization and agent strategy, with the organization design authority producing the blueprint … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

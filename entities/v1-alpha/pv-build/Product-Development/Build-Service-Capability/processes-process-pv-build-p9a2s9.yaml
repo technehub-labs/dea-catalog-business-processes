@@ -135,3 +135,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Build Service Capability L2 process within the processes:pc-pv-build-ygbmxb Cell Charter. See trigger and outcome for the bounded work this process …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Build Service Capability'
+plain_language_description: 'This work stands up whatever the business needs behind the scenes to actually deliver a designed service to customers. Product management works out the delivery procedures, quality anchors, and tooling the service depends on, and puts them in place. The capability is finished once it is ready to move into market-readiness preparation.'
+business_purpose: 'A designed proposition is only a promise on paper until the organisation can deliver it; this work turns the design into the working delivery machinery customers will actually experience.'
+practical_context: 'Comes up once a proposition design is settled and the delivery gap is clear; product management drives the build with the teams who will operate the service, ahead of launch preparation.'
+worked_example:
+  agent_type: human
+  narrative: 'Product management maps the delivery steps a new service needs, agrees the quality anchors with the operations team, and arranges the tooling setup. By the end, the service can be run end to end by the people who will deliver it, and the capability moves on to market-readiness preparation.'

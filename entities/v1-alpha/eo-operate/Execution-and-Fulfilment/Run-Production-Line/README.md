@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-oper
 
 This is a **Business Process** (level L2), named **Run Production Line**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. Its canonical ID is `processes:process-eo-operate-xud3hs`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process is the line actually making things. Each production cycle, the stood-up line is run to plan, turning out the agreed output at the agreed rate, and what is produced and its quality are recorded cycle by cycle. That record keeps performance against the plan visible.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists to turn a commissioned line into planned output, cycle after cycle, with output and quality recorded so shortfalls against plan are visible.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Met on every production cycle the line works through, shift after shift once the line is stood up. Product management oversees output against plan under the Enablement & Operations Process Owner.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product manager reviews the shift's output against the plan, notes the quality record for a cycle that came in light, and asks the line team to recover the shortfall over the next cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -73,6 +73,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Run Production Line L2 process within the processes:pc-eo-operate-ydqb96 Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Run Production Line |
+| `plain_language_description` | string | no | This process is the line actually making things. Each production cycle, the stood-up line is run to plan, turning out … |
+| `business_purpose` | string | no | It exists to turn a commissioned line into planned output, cycle after cycle, with output and quality recorded so … |
+| `practical_context` | string | no | Met on every production cycle the line works through, shift after shift once the line is stood up. Product management … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

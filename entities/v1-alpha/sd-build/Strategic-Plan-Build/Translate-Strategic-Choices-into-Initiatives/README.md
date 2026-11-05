@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-sd-buil
 
 This is a **Business Process** (level L2), named **Translate Strategic Choices into Initiatives**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. Its canonical ID is `processes:process-sd-build-9admqy`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This work converts the agreed strategic direction into named pieces of work. The strategy function takes the choices captured in the plan and roadmap and defines the bounded initiatives that will deliver them, giving each an owner and a place in the sequence. With ownership, sequencing, and resourcing envelopes attached, the choices become work people can actually start.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It bridges deciding and doing: strategy only changes anything once it is broken into owned, sequenced initiatives, and this work makes that translation deliberate rather than accidental.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered straight after the plan and roadmap are built, when the strategy function turns each strategic choice into a bounded initiative with an owner and a sequence.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function works through the plan's choices one by one, drafting each as a bounded initiative with a named owner and its slot in the sequence. The initiative list is then handed over for resourcing.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Translate Strategic Choices into Initiatives L2 process within the processes:pc-sd-build-gmzrrm Cell … |
+| `plain_language_name` | string | no | Translate Strategic Choices into Initiatives |
+| `plain_language_description` | string | no | This work converts the agreed strategic direction into named pieces of work. The strategy function takes the choices … |
+| `business_purpose` | string | no | It bridges deciding and doing: strategy only changes anything once it is broken into owned, sequenced initiatives, and … |
+| `practical_context` | string | no | Encountered straight after the plan and roadmap are built, when the strategy function turns each strategic choice into … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pv-conc
 
 This is a **Business Process** (level L2), named **Frame Value Proposition Thesis**, currently **candidate (yellow)**. It is part of the **Proposition and Portfolio Conception** process context, domain `pv`, lifecycle stage Conceive. Its canonical ID is `processes:process-pv-conceive-xe9axm`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This is where a new offering starts life on paper. The proposition design authority commits a short thesis stating the scope of the proposition, who it is aimed at, and the value it claims to deliver, whether the offering is a product, service, solution, experience, platform, or piece of intellectual property. Once committed, the thesis drives the design work that follows.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It pins down, before any design effort begins, what the proposition is for, who it serves, and what value it promises, so downstream work pursues one clear claim rather than drifting.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Triggered when the enterprise is establishing a new value-bearing proposition, reframing an existing one, or responding to market shifts; the proposition design authority drafts and commits the thesis ahead of design.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The proposition design authority drafts a one-page thesis for a proposed new service: the scope is drawn tightly, the target parties are named, and the core value claim is worded. After review, the thesis is committed and the design team takes it from there.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Frame Value Proposition Thesis L2 process within the processes:pc-pv-conceive-fe9awk Cell Charter. See … |
+| `plain_language_name` | string | no | Frame Value Proposition Thesis |
+| `plain_language_description` | string | no | This is where a new offering starts life on paper. The proposition design authority commits a short thesis stating the … |
+| `business_purpose` | string | no | It pins down, before any design effort begins, what the proposition is for, who it serves, and what value it promises … |
+| `practical_context` | string | no | Triggered when the enterprise is establishing a new value-bearing proposition, reframing an existing one, or responding … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

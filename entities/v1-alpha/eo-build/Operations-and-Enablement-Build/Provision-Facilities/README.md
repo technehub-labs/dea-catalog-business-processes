@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-buil
 
 This is a **Business Process** (level L2), named **Provision Facilities**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. Its canonical ID is `processes:process-eo-build-tqybhd`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This is the work of getting buildings ready before anything can be made or delivered in them. Sites are acquired, fitted out to the blueprint, and provisioned with what the operation needs on the ground. It closes with facilities ready to serve production and delivery.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because production and delivery cannot begin until the physical facilities behind them have been secured and fitted out.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Comes up during the build stage whenever the designed blueprint requires new or refitted space before production or delivery can start. Product management runs the acquisition and fit-out, reporting to the Enablement & Operations Process Owner.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product manager secures the site, walks the fit-out against the blueprint with the trades, and accepts the building once the layout and equipment are in place for production to move in.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Provision Facilities L2 process within the processes:pc-eo-build-zwkhxc Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Provision Facilities |
+| `plain_language_description` | string | no | This is the work of getting buildings ready before anything can be made or delivered in them. Sites are acquired … |
+| `business_purpose` | string | no | It exists because production and delivery cannot begin until the physical facilities behind them have been secured and … |
+| `practical_context` | string | no | Comes up during the build stage whenever the designed blueprint requires new or refitted space before production or … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

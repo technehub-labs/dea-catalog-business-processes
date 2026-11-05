@@ -140,3 +140,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Monitor Strategic Performance L2 process within the processes:pc-sd-operate-5cs5ee Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Monitor Strategic Performance'
+plain_language_description: 'While the plan is being executed, this work keeps score and keeps steering. The strategy function tracks strategic performance against the plan on a defined review cadence, picks up the environmental signals as they arrive, and steers the initiative portfolio so it stays in line with the strategic intent. Monitoring, sensing, and steering run together as one continuous duty.'
+business_purpose: 'It keeps execution tied to intent: continuous monitoring against the plan means drift, disruption, or opportunity is spotted and steered on while it still matters.'
+practical_context: 'A continuous duty while the plan is in execution, organised around the strategic review cycle; the strategy function monitors performance, senses signals, and steers the initiative portfolio on that cadence.'
+worked_example:
+  agent_type: human
+  narrative: 'At each review meeting the strategy function walks the performance figures against the plan, notes the fresh environmental signals, and adjusts the initiative portfolio where it has drifted from intent. The steering decisions are carried into the cycle''s record.'

@@ -141,3 +141,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Design Logistics and Routing L2 process within the processes:pc-eo-design-kxdfnz Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Design Logistics and Routing'
+plain_language_description: 'This process works out how goods will physically move. The operations function chooses the transport modes, sets the routing logic that decides which way shipments travel, and positions the network nodes along the way. The design is kept in step with the delivery model so that what is promised to customers can actually be delivered.'
+business_purpose: 'It exists to give the delivery model a matching physical movement plan of transport modes, routing logic and network nodes before the network is built.'
+practical_context: 'Encountered during design work whenever the delivery model needs its transport modes, routing logic and network nodes worked out. The operations function drafts the design, coordinated with the delivery model design under the Enablement & Operations Process Owner.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations designer weighs road against rail for the main routes, writes the routing logic that sends urgent orders down the faster paths, and marks where the network nodes, depots and hubs, will sit.'

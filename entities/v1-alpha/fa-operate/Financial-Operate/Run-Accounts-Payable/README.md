@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-fa-oper
 
 This is a **Business Process** (level L2), named **Run Accounts Payable**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. Its canonical ID is `processes:process-fa-operate-wkqaqp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process is how the organisation pays its bills. As invoices and their payment due dates arrive, invoices are matched, approvals are recorded, and payments are produced to plan. Kept to plan, suppliers are paid what they are owed when they are owed it.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists to pay suppliers accurately and on schedule, with every invoice matched and approved before money leaves the organisation.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs whenever an invoice or payment due date arrives, with the compliance function matching invoices, recording approvals, and producing payments to plan.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* When an invoice arrives and its due date approaches, the compliance function matches it, records the approval, and includes it in the payment run produced to plan.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Run Accounts Payable (operate stage, core process). Landed by CR-BP-21e.1 from the FinanceAndAccounting register v2. |
+| `plain_language_name` | string | no | Run Accounts Payable |
+| `plain_language_description` | string | no | This process is how the organisation pays its bills. As invoices and their payment due dates arrive, invoices are … |
+| `business_purpose` | string | no | It exists to pay suppliers accurately and on schedule, with every invoice matched and approved before money leaves the … |
+| `practical_context` | string | no | It runs whenever an invoice or payment due date arrives, with the compliance function matching invoices, recording … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

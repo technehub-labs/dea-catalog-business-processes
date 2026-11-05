@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-oper
 
 This is a **Business Process** (level L2), named **Operate Service Delivery**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. Its canonical ID is `processes:process-eo-operate-2jnz85`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This is the steady-state running of everything the built operation depends on, day in and day out. Production lines are run to plan while logistics and inventory keep pace, technology platforms stay available, facilities and assets are maintained, and the procurement cycle keeps supplies coming. It is what turns a built capability into a service actually being delivered.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists to keep the whole execution engine of production, logistics, inventory, platforms, facilities and procurement working together in steady state so customers keep being served.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The everyday backdrop once the built operation is live, with each planning period setting the production plan the lines run to. Product management oversees the whole under the Enablement & Operations Process Owner.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* At the start of the week a product manager checks the production plan against stock and platform availability, sorts a supply delay through the procurement cycle, and keeps the lines, warehouses and platforms running to plan.
 
 ## 5. Header and Identity Table (generated)
 
@@ -73,6 +73,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Operate Service Delivery L2 process within the processes:pc-eo-operate-ydqb96 Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Run Service Delivery |
+| `plain_language_description` | string | no | This is the steady-state running of everything the built operation depends on, day in and day out. Production lines are … |
+| `business_purpose` | string | no | It exists to keep the whole execution engine of production, logistics, inventory, platforms, facilities and procurement … |
+| `practical_context` | string | no | The everyday backdrop once the built operation is live, with each planning period setting the production plan the lines … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

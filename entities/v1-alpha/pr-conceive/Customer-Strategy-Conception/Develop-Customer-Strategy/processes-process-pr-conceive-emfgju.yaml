@@ -166,3 +166,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Develop Customer Strategy L2 process within the processes:pc-pr-conceive-6xztsq Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Develop Customer Strategy'
+plain_language_description: 'Before investing in customers, the enterprise needs a clear view of who it serves and what it offers them. This work settles which segments to target, what value will be exchanged in each, and the thesis about where demand will come from. The committed strategy then steers everything the experience and channel teams design later.'
+business_purpose: 'It gives customer-facing work a single agreed direction, so segments, value exchange, and demand expectations are chosen deliberately instead of emerging by accident.'
+practical_context: 'Comes up when the enterprise enters a new segment, the current strategy has drifted, or the demand thesis needs retesting; the strategy function drafts it and customer relationship management grounds it in what the customer base shows.'
+worked_example:
+  agent_type: human
+  narrative: 'As the enterprise eyes a new segment, a strategy function lead drafts the segment thesis and value exchange, customer relationship management pressure-tests it against relationship data, and the committed strategy goes to the design teams.'

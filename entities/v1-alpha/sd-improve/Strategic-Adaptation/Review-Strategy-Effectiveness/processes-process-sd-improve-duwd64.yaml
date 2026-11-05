@@ -141,3 +141,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Review Strategy Effectiveness L2 process within the processes:pc-sd-improve-ft9k5f Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Review Strategy Effectiveness'
+plain_language_description: 'This work asks the blunt question of whether the strategy is actually working. The strategy function examines the current direction against the strategic intent and the performance evidence, and works out whether the intended outcomes are being produced. Its findings are committed so the next adaptation cycle starts from evidence rather than opinion.'
+business_purpose: 'It closes the loop on strategy: a committed effectiveness review tells the enterprise whether its chosen direction is delivering, and hands the adaptation cycle findings it can act on.'
+practical_context: 'Runs as part of the adaptation cycle whenever committed findings on the direction are needed; the strategy function performs the review against the strategic intent and the performance evidence.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function lays the strategic intent beside the performance evidence, works through where outcomes match and where they fall short, and writes up the findings. The committed review then feeds the adaptation cycle.'

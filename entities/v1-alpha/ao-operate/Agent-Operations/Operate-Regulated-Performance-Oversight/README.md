@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ao-oper
 
 This is a **Business Process** (level L2), named **Operate Regulated Performance Oversight**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. Its canonical ID is `processes:process-ao-operate-ba8scr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process maintains the compliance side of running regulator-licensed roles once they are live. It keeps continuing-supervisor notifications, conduct-rule compliance, annual fitness-and-propriety attestations, hours-of-work and rest-rule adherence, and continuing-competence tracking up to date on the regulated personnel record. The evidence stays current and auditable for as long as the roles are in live operation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise can demonstrate at any time that its licensed roles are being operated within the regulator's continuing requirements.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs throughout the live operation period of regulator-licensed roles, with workforce management maintaining the notification, attestation, and tracking obligations on the regulated personnel record.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Partway through the first year in which a controlled-function appointee went live, workforce management confirms the annual fitness-and-propriety attestation is filed, checks the hours-of-work and rest-rule records, and refreshes the continuing-competence tracking on the personnel record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the regulator-aligned continuing-compliance oversight of regulator-licensed roles under the enterprise … |
+| `plain_language_name` | string | no | Run Regulated Performance Oversight |
+| `plain_language_description` | string | no | This process maintains the compliance side of running regulator-licensed roles once they are live. It keeps … |
+| `business_purpose` | string | no | It exists so the enterprise can demonstrate at any time that its licensed roles are being operated within the … |
+| `practical_context` | string | no | Runs throughout the live operation period of regulator-licensed roles, with workforce management maintaining the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -166,3 +166,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Audit Policy Compliance L2 process within the processes:pc-ge-operate-hb2dac Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Audit Policy Compliance'
+plain_language_description: 'Having policies on the shelf proves little; the enterprise needs to know people actually follow them. On a regular schedule this work examines practice against the codified policies, records where behaviour falls short, and recommends what should change. Every non-compliance is then followed up until it has been put right.'
+business_purpose: 'It gives the governing bodies independent evidence of whether policy is being honoured, and it makes sure any shortfall is corrected rather than merely noted.'
+practical_context: 'Periodic, once policies are codified and bodies are operating: the compliance function and risk function carry out the audits and deliver findings, recommendations, and follow-up actions to the appropriate governance body.'
+worked_example:
+  agent_type: human
+  narrative: 'In the quarterly review round, a compliance function auditor samples decisions against the codified policies, the risk function helps weigh the exposures found, and the report with follow-up actions goes to the governing board.'

@@ -144,3 +144,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Frame Finance Strategy L2 process within the processes:pc-fa-conceive-phabh2 Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Frame Finance Strategy'
+plain_language_description: 'This is the work of deciding, at the top of the house, how the enterprise will approach its money. The finance function and the strategy function frame the finance strategy together, settling what the monetary model will be and how funding and capital will be handled. The agreed strategy is then committed and becomes the reference point for the financial planning that follows.'
+business_purpose: 'It exists so the enterprise meets funding and capital decisions with one agreed finance strategy rather than by improvisation, giving every later financial plan a settled monetary model and funding approach to build on.'
+practical_context: 'It is triggered when the enterprise establishes a new monetary model, reframes an existing one, or responds to funding and capital shifts, and the finance and strategy functions lead the framing.'
+worked_example:
+  agent_type: human
+  narrative: 'When funding and capital conditions shift, the strategy function and the finance function meet to reframe the finance strategy, agree the monetary model, and commit the funding and capital approach that will steer the next round of financial planning.'

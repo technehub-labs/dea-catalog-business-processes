@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ge-buil
 
 This is a **Business Process** (level L2), named **Establish Governance Bodies**, currently **candidate (yellow)**. It is part of the **Governance Body Establishment** process context, domain `ge`, lifecycle stage Build. Its canonical ID is `processes:process-ge-build-3p38us`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once the overall governance design is agreed, the actual boards and committees have to be brought into existence. That means appointing members, giving each body its charter, and agreeing when and how often it meets. The work is done when each body is ready to hold its first scheduled session.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It converts a paper design of who governs what into real, functioning bodies, so the enterprise has forums where decisions are genuinely made and recorded.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs when a governance system design has been committed: the governing board and strategy function charter each new body, name its members, and set its meeting rhythm so it can convene on a regular cycle.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* With the governance design approved, a strategy function lead works through the appointment list, the governing board confirms each new committee's charter and membership, and calendar invites go out for the bodies' recurring meetings.
 
 ## 5. Header and Identity Table (generated)
 
@@ -75,6 +75,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Establish Governance Bodies L2 process within the processes:pc-ge-build-52hjrc Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Establish Governance Bodies |
+| `plain_language_description` | string | no | Once the overall governance design is agreed, the actual boards and committees have to be brought into existence. That … |
+| `business_purpose` | string | no | It converts a paper design of who governs what into real, functioning bodies, so the enterprise has forums where … |
+| `practical_context` | string | no | Runs when a governance system design has been committed: the governing board and strategy function charter each new … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

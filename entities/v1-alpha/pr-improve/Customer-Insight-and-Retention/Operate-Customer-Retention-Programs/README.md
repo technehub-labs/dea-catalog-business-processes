@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pr-impr
 
 This is a **Business Process** (level L2), named **Operate Customer Retention Programs**, currently **candidate (yellow)**. It is part of the **Customer Insight and Retention** process context, domain `pr`, lifecycle stage Improve. Its canonical ID is `processes:process-pr-improve-t6uvan`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Keeping customers is ongoing work, not a one-off campaign. This running operation watches how customers feel, spots who is drifting toward the exit, and keeps win-back lists current. The insight it produces is fed back into strategy, design, and day-to-day operation so the enterprise keeps more of the customers it has won.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It turns satisfaction and churn signals into action, so the enterprise defends its existing customer base instead of only chasing new names.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Continuous, whenever there are active customer relationships: customer relationship management monitors satisfaction, churn risk, and win-back openings, with the strategy function absorbing the lessons into the next planning round.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* In the monthly review, customer relationship management refreshes the churn-risk and win-back lists from the latest satisfaction results, and the strategy function folds the findings into the next planning cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -76,6 +76,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Operate Customer Retention Programs L2 process within the processes:pc-pr-improve-k8phkn Cell Charter. See … |
+| `plain_language_name` | string | no | Operate Customer Retention Programs |
+| `plain_language_description` | string | no | Keeping customers is ongoing work, not a one-off campaign. This running operation watches how customers feel, spots who … |
+| `business_purpose` | string | no | It turns satisfaction and churn signals into action, so the enterprise defends its existing customer base instead of … |
+| `practical_context` | string | no | Continuous, whenever there are active customer relationships: customer relationship management monitors satisfaction … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

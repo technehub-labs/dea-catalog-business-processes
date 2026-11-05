@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ge-acti
 
 This is a **Business Process** (level L2), named **Bring Policy Instrument into Force**, currently **candidate (yellow)**. It is part of the **Governance Instrument Commencement** process context, domain `ge`, lifecycle stage Activate. Its canonical ID is `processes:process-ge-activate-wegs44`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+A policy, mandate, or charter may be formally adopted yet still change nothing day to day until it takes effect. This work confirms that every commencement condition has been met, announces the instrument so the enterprise knows it exists, and fixes the date it starts to bind. From that moment, the obligations, rights, and duties it sets out are applied across the business.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It turns an adopted decision into live obligations, so the enterprise actually operates under the rules it has signed up to rather than leaving them sitting on paper.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Triggered when an adopted instrument's commencement conditions are met: the governance design authority runs the checks and promulgation, and every affected part of the enterprise starts complying from the effectiveness date.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The governance design authority confirms that the waiting period on a newly adopted charter has elapsed, circulates the instrument to every business unit, and logs its effectiveness date, from which point duties under it are enforced.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Bring an adopted policy instrument, mandate or charter from adopted-but-dormant to in-force: verify commencement … |
+| `plain_language_name` | string | no | Bring Policy Instrument into Force |
+| `plain_language_description` | string | no | A policy, mandate, or charter may be formally adopted yet still change nothing day to day until it takes effect. This … |
+| `business_purpose` | string | no | It turns an adopted decision into live obligations, so the enterprise actually operates under the rules it has signed … |
+| `practical_context` | string | no | Triggered when an adopted instrument's commencement conditions are met: the governance design authority runs the checks … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

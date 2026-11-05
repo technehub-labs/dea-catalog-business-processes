@@ -162,3 +162,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Design Governance System L2 process within the processes:pc-ge-design-3f2gjr Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Design Governance System'
+plain_language_description: 'With the strategy agreed, the next question is what governing machinery will carry it. Here the teams work out which boards and committees are needed, what authority each one is delegated, and who holds which decision rights. The finished design is a blueprint that tells the establishment work exactly what bodies to stand up.'
+business_purpose: 'It translates strategic intent into a concrete structure of bodies, authority delegations, and decision rights, so accountability for governing is clear before anything is created.'
+practical_context: 'Runs once a governance strategy has been committed: the strategy function drafts the structure of bodies, delegations, and decision rights, and the governing board signs the design off for establishment.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function architect maps out which committees the new strategy needs, what each may decide, and what stays with the governing board, then walks the board through the delegations for approval.'

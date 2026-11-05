@@ -150,3 +150,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Conduct Proposition Performance Review L2 process within the processes:pc-pv-improve-wpyfx7 Cell Charter. See trigger and outcome for the bounded …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Conduct Proposition Performance Review'
+plain_language_description: 'This work takes a hard look at how the propositions and the portfolio around them are actually performing. Product management gathers the performance signals, spots the gaps in the portfolio, and works out which propositions need attention. Its findings are committed so that product evolution and portfolio rationalization decisions rest on evidence.'
+business_purpose: 'It supplies the evidence behind product change: without a regular, honest review of how propositions perform, evolution and rationalization decisions would be guesses rather than informed choices.'
+practical_context: 'Comes around whenever performance signals, portfolio gaps, or rationalization needs prompt a review, typically on a recurring cycle led by product management; the committed findings feed the next planning cycle.'
+worked_example:
+  agent_type: human
+  narrative: 'Product management assembles the performance signals for each proposition, walks through them in the review meeting, and records where the portfolio has gaps or weak spots. The committed findings go to the teams planning product evolution and rationalization.'

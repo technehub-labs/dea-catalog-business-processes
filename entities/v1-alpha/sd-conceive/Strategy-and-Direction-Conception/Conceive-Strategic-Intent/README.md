@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-sd-conc
 
 This is a **Business Process** (level L2), named **Conceive Strategic Intent**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. Its canonical ID is `processes:process-sd-conceive-3uredz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the enterprise's purpose and ambition settled, this work decides what direction the organisation will actually steer. The strategy function frames a bounded strategic intent that sits inside that purpose and ambition, giving the planning work that follows a clear heading. The intent then serves as the reference point for horizons, options, and objectives.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives the enterprise a steerable sense of direction: strategic intent translates broad purpose and ambition into a framing that later planning can design against.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered early in the strategy cycle, once purpose and ambition are defined; the strategy function conceives and frames the intent before any horizons or options are drawn.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function holds a framing session once the purpose and ambition are signed off, drafting the strategic intent in a few bounded statements. The intent is agreed and becomes the heading under which horizons and options are developed.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Conceive Strategic Intent L2 process within the processes:pc-sd-conceive-ucb3gx Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Conceive Strategic Intent |
+| `plain_language_description` | string | no | With the enterprise's purpose and ambition settled, this work decides what direction the organisation will actually … |
+| `business_purpose` | string | no | It gives the enterprise a steerable sense of direction: strategic intent translates broad purpose and ambition into a … |
+| `practical_context` | string | no | Encountered early in the strategy cycle, once purpose and ambition are defined; the strategy function conceives and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

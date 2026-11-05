@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pv-conc
 
 This is a **Business Process** (level L2), named **Frame Innovation Thesis**, currently **candidate (yellow)**. It is part of the **Proposition and Portfolio Conception** process context, domain `pv`, lifecycle stage Conceive. Its canonical ID is `processes:process-pv-conceive-kps544`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This work decides where the organisation will concentrate its innovation effort and how far experiments may roam. The proposition design authority drafts a short thesis that names the focus areas and sets the limits experimentation must respect. The finished thesis then guides which innovation experiments get designed.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives innovation a deliberate shape: instead of exploring everywhere at once, the enterprise agrees in advance where new ideas should be sought and what boundaries apply, so experiments serve one direction.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Revisited when the proposition portfolio needs fresh ground or a new wave of exploration is starting; the proposition design authority frames or reframes the thesis before any experiment design begins.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The proposition design authority runs a framing workshop: candidate focus areas are listed, debated, and narrowed to a few, and the boundaries on experimentation are written down. The resulting thesis becomes the reference point for every experiment proposed afterwards.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Frame Innovation Thesis L2 process within the processes:pc-pv-conceive-fe9awk Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Frame Innovation Thesis |
+| `plain_language_description` | string | no | This work decides where the organisation will concentrate its innovation effort and how far experiments may roam. The … |
+| `business_purpose` | string | no | It gives innovation a deliberate shape: instead of exploring everywhere at once, the enterprise agrees in advance where … |
+| `practical_context` | string | no | Revisited when the proposition portfolio needs fresh ground or a new wave of exploration is starting; the proposition … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -137,3 +137,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Refine Financial Controls and Policies (improve stage, management process). Landed by CR-BP-21e.1 from the FinanceAndAccounting register v2.'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Refine Financial Controls and Policies'
+plain_language_description: 'Audit findings and control incidents are the raw material for this process. When one surfaces, the finance design authority works through what went wrong and refines the financial controls and policies in response. Changes are taken through the policy review cycle, so the refinements are properly governed rather than slipped in on the side.'
+business_purpose: 'It turns audit findings and control incidents into lasting improvements in financial controls and policies, closing the gap between what went wrong and what the rules say.'
+practical_context: 'It is triggered when an audit finding or control incident surfaces, and the finance design authority refines the controls and policies through the policy review cycle.'
+worked_example:
+  agent_type: human
+  narrative: 'After an audit finding highlights a weak approval control, the finance design authority refines the affected policy and control and takes the change through the policy review cycle before it takes effect.'

@@ -139,3 +139,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Score Audit Findings (improve stage, standardization process). Landed by CR-BP-21f.1 from the GovernanceAndExistence register v2.'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Score Audit Findings'
+plain_language_description: 'An audit report full of findings is only useful once those findings are weighed. Here each one is graded for how severe it is and whether it keeps coming back, then measured against the relevant standards. The patterns and quality trends that emerge are reported to the governance bodies so they can see where trouble concentrates.'
+business_purpose: 'Consistent scoring turns raw audit findings into comparable signals, so the governance bodies can tell serious, repeated problems from one-off noise and act on the trends.'
+practical_context: 'Follows the delivery of an audit report with findings: the audit function grades each finding for severity and recurrence while the strategy function benchmarks them against standards and reports the quality trends.'
+worked_example:
+  agent_type: human
+  narrative: 'When the latest audit report lands, an audit function analyst rates each finding for severity and checks whether it recurred from last time, and the strategy function rolls the scores into a trend report for the governance bodies.'

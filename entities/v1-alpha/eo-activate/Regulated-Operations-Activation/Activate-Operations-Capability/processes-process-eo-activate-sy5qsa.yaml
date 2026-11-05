@@ -213,3 +213,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Activate an operations capability under the enterprise''s regulated-entity approval authority within the processes:pc-eo-activate-xdfscw Cell Charter. The …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Activate Operations Capability'
+plain_language_description: 'The capability is ready for live service, but the regulator must formally authorize it first. This process takes it that last mile: the authorization is put on record, the operations manuals and runbooks are brought into active use, and the everyday controls for incidents, capacity, security and compliance are switched on. It ends with the capability formally live and the supervising authority''s continuing-oversight relationship in place.'
+business_purpose: 'It exists so that a regulated service only goes live once the regulator''s authorization is on record and the controls protecting the operation are actually running.'
+practical_context: 'Encountered whenever a capability needs a regulator-issued authorization or certification before entering live service, such as an air operator certificate, payment-institution authorization, GMP certification or a rail safety case. The compliance function, operations function and product management carry the work under the Enablement & Operations Process Owner.'
+worked_example:
+  agent_type: human
+  narrative: 'A compliance lead confirms the aviation authority has issued the air operator certificate, then sits with the operations function to bring the runbooks and the incident, capacity, security and compliance controls live before the first commercial flight, and closes out the notification to the supervising authority.'

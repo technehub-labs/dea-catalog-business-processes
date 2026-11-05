@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-fa-impr
 
 This is a **Business Process** (level L2), named **Evolve Treasury and Funding Model**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. Its canonical ID is `processes:process-fa-improve-2kemkq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Markets move and funding conditions shift, and when they do this process brings the treasury and funding model back into line. The finance design authority takes the market shifts and the exposure review into account and reworks the model. The evolved model is then monitored as the reference for the organisation's future funding posture.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+A treasury model designed once does not stay right forever; this process keeps it current with market reality so funding decisions rest on an up-to-date posture.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It is triggered by a market or funding posture change, and the finance design authority evolves the model on the strength of the shifts and the exposure review.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* When market conditions change the organisation's funding posture, the finance design authority reviews the exposures, updates the treasury and funding model, and sets the monitoring that will track the new posture going forward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Evolve Treasury and Funding Model (improve stage, management process). Landed by CR-BP-21e.1 from the … |
+| `plain_language_name` | string | no | Evolve Treasury and Funding Model |
+| `plain_language_description` | string | no | Markets move and funding conditions shift, and when they do this process brings the treasury and funding model back … |
+| `business_purpose` | string | no | A treasury model designed once does not stay right forever; this process keeps it current with market reality so … |
+| `practical_context` | string | no | It is triggered by a market or funding posture change, and the finance design authority evolves the model on the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

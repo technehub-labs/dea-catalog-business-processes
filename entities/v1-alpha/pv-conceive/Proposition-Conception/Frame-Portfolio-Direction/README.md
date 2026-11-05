@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pv-conc
 
 This is a **Business Process** (level L2), named **Frame Portfolio Direction**, currently **candidate (yellow)**. It is part of the **Proposition and Portfolio Conception** process context, domain `pv`, lifecycle stage Conceive. Its canonical ID is `processes:process-pv-conceive-jb4xtg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When several propositions are all asking for investment, this work sets the portfolio-level direction that decides who gets what. The proposition design authority defines the investment envelopes and works out the priority ordering across the competing propositions. The resulting direction keeps individual proposition planning aligned with the enterprise's broader course.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It stops investment being handed out piecemeal: by setting envelopes and priorities up front, the enterprise keeps each proposition's plans part of a coherent whole and backs the strongest opportunities first.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered during portfolio planning rounds, when the proposition design authority has to arbitrate between propositions competing for the same limited investment; its output feeds directly into proposition planning.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The proposition design authority reviews the propositions seeking funding, groups them into investment envelopes, and agrees the order in which they will be backed. Each proposition team then plans inside the envelope and priority it has been given.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Frame Portfolio Direction L2 process within the processes:pc-pv-conceive-fe9awk Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Frame Portfolio Direction |
+| `plain_language_description` | string | no | When several propositions are all asking for investment, this work sets the portfolio-level direction that decides who … |
+| `business_purpose` | string | no | It stops investment being handed out piecemeal: by setting envelopes and priorities up front, the enterprise keeps each … |
+| `practical_context` | string | no | Encountered during portfolio planning rounds, when the proposition design authority has to arbitrate between … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

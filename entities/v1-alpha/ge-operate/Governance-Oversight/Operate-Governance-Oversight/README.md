@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ge-oper
 
 This is a **Business Process** (level L2), named **Operate Governance Oversight**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. Its canonical ID is `processes:process-ge-operate-hs7wf3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This is the routine running of the governance machine once it exists. Board and committee meetings happen when they should, the papers are there, risks are raised and dealt with as they arise, and the decisions taken are written down. It is the steady drumbeat that keeps oversight alive between bigger redesigns.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+A governance structure only matters if it actually runs; this work makes oversight a regular fact of enterprise life, with decisions made and recorded on schedule.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Day to day, once bodies are chartered and policies codified: the governing board and its committees convene on their cycles while the risk function and compliance function keep risk items and decision records moving.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Ahead of the monthly committee cycle, the risk function loads the standing risk items, the compliance function confirms open actions, and the governing board takes and records its decisions in the minutes.
 
 ## 5. Header and Identity Table (generated)
 
@@ -75,6 +75,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Operate Governance Oversight L2 process within the processes:pc-ge-operate-hb2dac Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Operate Governance Oversight |
+| `plain_language_description` | string | no | This is the routine running of the governance machine once it exists. Board and committee meetings happen when they … |
+| `business_purpose` | string | no | A governance structure only matters if it actually runs; this work makes oversight a regular fact of enterprise life … |
+| `practical_context` | string | no | Day to day, once bodies are chartered and policies codified: the governing board and its committees convene on their … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -150,3 +150,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Develop Agents and Organization L2 process within the processes:pc-ao-improve-qkmh6b Cell Charter. See trigger and outcome for the bounded work …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Develop Agents and the Organization'
+plain_language_description: 'This process is the umbrella for improving both the agents and the organization itself when reviews show a need. It draws together engagement and alignment findings, capability gap analysis, structure reorganization, and agent performance improvement into one development effort. The work is carried out the same way whether the agents are people or artificial, and its results feed the next planning cycle.'
+business_purpose: 'It exists to make improvement of the workforce and the organization deliberate and connected, so signals from reviews translate into concrete development rather than scattered fixes.'
+practical_context: 'Triggered when engagement signals, capability gaps, or structure reorganization requirements show that agents or the organization itself need to improve, with the organization design authority steering the development effort.'
+worked_example:
+  agent_type: human
+  narrative: 'After a review highlights both a skills shortfall and an engagement dip, the organization design authority brings the capability gap analysis, the engagement findings, and a proposed reorganization into one development programme for the affected teams.'

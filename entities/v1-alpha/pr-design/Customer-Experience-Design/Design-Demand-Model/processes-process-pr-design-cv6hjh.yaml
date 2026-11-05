@@ -174,3 +174,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Design Demand Model L2 process within the processes:pc-pr-design-hrcdy4 Cell Charter. See trigger and outcome for the bounded work this process …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Design Demand Model'
+plain_language_description: 'Once the experience is shaped, the enterprise needs a working answer to how customer need will actually be met. This work charts the supply paths demand will travel, writes down the capacity assumptions underneath them, and names the levers that can raise or damp demand. The model then guides the build of channels and acquisition programmes.'
+business_purpose: 'It connects the demand the enterprise wants with the supply it can deliver, so growth plans rest on stated capacity assumptions rather than hope.'
+practical_context: 'Follows the experience design: the strategy function works out supply paths and capacity assumptions with customer relationship management, and the committed model steers the channel and acquisition build the governing board expects.'
+worked_example:
+  agent_type: human
+  narrative: 'After the experience is committed, a strategy function planner maps how a surge in interest would flow through supply, agrees the capacity assumptions with customer relationship management, and notes which levers could be pulled to smooth or stimulate demand.'

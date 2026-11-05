@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ao-desi
 
 This is a **Business Process** (level L2), named **Design Competency Framework**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. Its canonical ID is `processes:process-ao-design-rve8j5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process defines what good capability looks like across the organization. It sets out the proficiency levels that people and agents progress through and fixes the assessment anchors that distinguish one level from the next. Once in place, the framework becomes the yardstick for spotting capability gaps and planning development.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives the enterprise a consistent way to describe and measure capability, so hiring, development, and gap analysis all judge performance against the same standard.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs during organization design, when the designed structure calls for defined proficiency levels and assessment anchors; the organization design authority leads it, and the framework then feeds ongoing capability gap monitoring.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* While designing a new operations structure, the organization design authority drafts the proficiency levels for each role family, agrees the assessment anchors that separate one level from the next, and publishes the framework that managers will later use in capability reviews.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Design Competency Framework L2 process within the processes:pc-ao-design-a4hq2r Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Design the Competency Framework |
+| `plain_language_description` | string | no | This process defines what good capability looks like across the organization. It sets out the proficiency levels that … |
+| `business_purpose` | string | no | It gives the enterprise a consistent way to describe and measure capability, so hiring, development, and gap analysis … |
+| `practical_context` | string | no | Runs during organization design, when the designed structure calls for defined proficiency levels and assessment … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

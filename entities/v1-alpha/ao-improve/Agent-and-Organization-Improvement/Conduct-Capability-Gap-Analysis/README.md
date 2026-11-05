@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ao-impr
 
 This is a **Business Process** (level L2), named **Conduct Capability Gap Analysis**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. Its canonical ID is `processes:process-ao-improve-h3vgyf`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process compares the capabilities the enterprise has designed for against the ones its current agents actually show. Shortfalls are identified, sized, and ranked so the most important ones are addressed first. The prioritised findings feed straight into the development plan.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists to surface, early and honestly, where the workforce's capability falls short of what the organization needs, so development effort goes where it matters most.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered whenever the competency framework must be checked against the current agent population, typically in review cycles run by the organization design authority whose output feeds the development plan.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* In a quarterly capability review, the organization design authority rates the current agent population against the competency framework's levels, identifies where key skills fall short, and hands a prioritised gap list to the owners of the development plan.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Conduct Capability Gap Analysis L2 process within the processes:pc-ao-improve-qkmh6b Cell Charter. See … |
+| `plain_language_name` | string | no | Conduct a Capability Gap Analysis |
+| `plain_language_description` | string | no | This process compares the capabilities the enterprise has designed for against the ones its current agents actually … |
+| `business_purpose` | string | no | It exists to surface, early and honestly, where the workforce's capability falls short of what the organization needs … |
+| `practical_context` | string | no | Encountered whenever the competency framework must be checked against the current agent population, typically in review … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

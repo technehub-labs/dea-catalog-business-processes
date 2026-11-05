@@ -137,3 +137,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Conduct Logistics Optimization L2 process within the processes:pc-eo-improve-pka6dk Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Conduct Logistics Optimization'
+plain_language_description: 'This process looks hard at how the logistics network is actually performing and then changes it for the better. Evidence on routing and network performance is reviewed to find where costs run too high or service levels slip, and improvements are worked up from that evidence. It ends with route and network changes committed into the operations planning cycle.'
+business_purpose: 'It exists to convert performance evidence about routes and the network into committed changes that lower cost or lift service levels.'
+practical_context: 'Comes around whenever routing or network performance evidence reveals a cost or service-level opportunity. The operations function conducts the optimization and commits the changes through the operations planning cycle.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations analyst notices from delivery evidence that one route consistently underperforms, reworks the routing and shifts volume to a better path, and commits the change through the operations planning cycle.'

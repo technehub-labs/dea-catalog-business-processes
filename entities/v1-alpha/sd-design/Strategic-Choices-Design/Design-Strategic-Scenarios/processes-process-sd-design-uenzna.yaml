@@ -141,3 +141,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Design Strategic Scenarios L2 process within the processes:pc-sd-design-g3es76 Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Design Strategic Scenarios'
+plain_language_description: 'Because the future is uncertain, this work builds the scenarios the strategy will be stress-tested against. The strategy function designs each scenario as a set of bounded assumptions about how the world could move, together with the signposts that would show an assumption coming true. The scenarios are then ready to support strategic plan construction.'
+business_purpose: 'It prepares the strategy for an uncertain world: scenarios with explicit assumptions and signposts let the enterprise test its direction against different futures before committing to one.'
+practical_context: 'Encountered during strategy design, when the options need stress-testing under uncertainty; the strategy function designs the scenarios ahead of plan construction.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function drafts a set of future scenarios, listing the assumptions each rests on and the signposts that would confirm or break them. The scenario pack then travels with the options into plan construction.'

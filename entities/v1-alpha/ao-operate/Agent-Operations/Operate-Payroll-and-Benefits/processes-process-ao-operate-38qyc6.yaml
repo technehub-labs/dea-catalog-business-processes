@@ -139,3 +139,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Operate Payroll and Benefits L2 process within the processes:pc-ao-operate-zfevmp Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Run Payroll and Benefits'
+plain_language_description: 'This process pays the workforce. Each cycle, it disburses pay and benefits accurately and on time and completes the statutory filings that go with them. Done reliably, it keeps the workforce''s trust and keeps the enterprise on top of its filing obligations.'
+business_purpose: 'It exists to make sure every agent in service is paid correctly and on time, with the required statutory filings made, cycle after cycle.'
+practical_context: 'Runs on a regular pay-cycle cadence for all agents in service, with workforce management responsible for accurate, on-time disbursement and the statutory filings each cycle.'
+worked_example:
+  agent_type: human
+  narrative: 'At the end of the pay period, workforce management reconciles the attendance data against pay records, runs the disbursement so everyone is paid accurately and on time, and completes the statutory filings the cycle requires.'

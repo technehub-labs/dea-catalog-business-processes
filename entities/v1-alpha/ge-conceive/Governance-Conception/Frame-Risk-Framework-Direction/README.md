@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ge-conc
 
 This is a **Business Process** (level L2), named **Frame Risk Framework Direction**, currently **candidate (yellow)**. It is part of the **Strategy and Governance Conception** process context, domain `ge`, lifecycle stage Conceive. Its canonical ID is `processes:process-ge-conceive-6qnkhh`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before any risk framework can be built, leadership has to say how much risk the enterprise is willing to carry. This work sets that line: how ambitious or cautious the organisation will be, how much variation is tolerable, and what overall stance governance will take toward risk. Those choices then steer everyone who designs the detailed framework.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives the enterprise a shared risk appetite and limits, so later risk decisions are made within an agreed posture instead of case by case.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Arises when a governance mandate calls for an enterprise risk posture: the governing board and strategy function, with the operations function, agree appetite, tolerance bands, and posture before detailed design begins.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Ahead of a new mandate, the strategy function prepares options for risk appetite and tolerance bands, and the governing board debates and picks the posture that will guide the risk framework's design.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Frame Risk Framework Direction (conceive stage, strategic process). Landed by CR-BP-21f.1 from the … |
+| `plain_language_name` | string | no | Set the Direction for the Risk Framework |
+| `plain_language_description` | string | no | Before any risk framework can be built, leadership has to say how much risk the enterprise is willing to carry. This … |
+| `business_purpose` | string | no | It gives the enterprise a shared risk appetite and limits, so later risk decisions are made within an agreed posture … |
+| `practical_context` | string | no | Arises when a governance mandate calls for an enterprise risk posture: the governing board and strategy function, with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

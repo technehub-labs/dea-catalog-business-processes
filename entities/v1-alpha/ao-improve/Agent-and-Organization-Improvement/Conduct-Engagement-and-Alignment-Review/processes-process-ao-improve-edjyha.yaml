@@ -145,3 +145,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Conduct Engagement and Alignment Review L2 process within the processes:pc-ao-improve-qkmh6b Cell Charter. See trigger and outcome for the bounded …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Conduct an Engagement and Alignment Review'
+plain_language_description: 'This process periodically checks that the enterprise''s agents remain engaged in their work and aligned with the direction the organization has set. Evidence is gathered and reviewed, and the findings are written up. Those findings then flow into the workforce planning cycle, flagging where engagement or alignment needs attention.'
+business_purpose: 'It exists to catch disengagement or drift from organizational direction before it shows up as attrition or poor performance, keeping the workforce connected to where the enterprise is heading.'
+practical_context: 'Runs on a periodic cadence while the organization is in operation, led by the organization design authority whenever fresh evidence is needed that agents stay engaged and aligned.'
+worked_example:
+  agent_type: human
+  narrative: 'Ahead of the next planning cycle, the organization design authority reviews the latest engagement evidence across teams and artificial-agent operations, notes where alignment to the current direction is weakening, and commits the findings for workforce planning to act on.'

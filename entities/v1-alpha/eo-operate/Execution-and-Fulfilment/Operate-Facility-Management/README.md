@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-oper
 
 This is a **Business Process** (level L2), named **Operate Facility Management**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. Its canonical ID is `processes:process-eo-operate-rqdte5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process keeps the buildings the operation works in safe, compliant and fit for use. Work orders are executed on schedule, and safety and compliance checks are kept current so people can work in the facilities without concern. It is the continuous caretaking that follows once facilities have been provisioned.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because provisioned facilities only stay usable if someone continuously maintains them as safe, compliant working environments.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Met every working day across the operation's sites, as scheduled work orders fall due and safety or compliance items need attention. Product management oversees the function under the Enablement & Operations Process Owner.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product manager signs off the month's facility work orders, chases the overdue safety check on one site, and confirms the compliance items are current before the month closes.
 
 ## 5. Header and Identity Table (generated)
 
@@ -73,6 +73,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Operate Facility Management L2 process within the processes:pc-eo-operate-ydqb96 Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Run Facility Management |
+| `plain_language_description` | string | no | This process keeps the buildings the operation works in safe, compliant and fit for use. Work orders are executed on … |
+| `business_purpose` | string | no | It exists because provisioned facilities only stay usable if someone continuously maintains them as safe, compliant … |
+| `practical_context` | string | no | Met every working day across the operation's sites, as scheduled work orders fall due and safety or compliance items … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

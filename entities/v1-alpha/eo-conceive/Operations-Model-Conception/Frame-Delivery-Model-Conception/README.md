@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-conc
 
 This is a **Business Process** (level L2), named **Frame Delivery Model Conception**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. Its canonical ID is `processes:process-eo-conceive-ky5wxp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Early in shaping a new operation, this process decides in broad terms how the business will reach and serve its customers. The strategy and operations leads settle which channels will be used, what service levels customers can expect, and which fulfilment patterns will get products to them. The result is a bounded delivery model concept that later design work turns into detail, kept in step with the operations strategy.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives the operations strategy a concrete delivery direction of channels, service levels and fulfilment patterns, so downstream design has something firm to work from.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Met when the operations strategy calls for a delivery model to be conceived before design can proceed. Strategy function and operations function staff do the framing within the operations planning cycle, under the Enablement & Operations Process Owner.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy lead and an operations manager spend a planning session agreeing which channels the business will serve, the service levels promised on each, and the fulfilment pattern that ties them together, then write the concept up for the design teams.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Frame Delivery Model Conception L2 process within the processes:pc-eo-conceive-mxmtzq Cell Charter. See … |
+| `plain_language_name` | string | no | Frame the Delivery Model Concept |
+| `plain_language_description` | string | no | Early in shaping a new operation, this process decides in broad terms how the business will reach and serve its … |
+| `business_purpose` | string | no | It gives the operations strategy a concrete delivery direction of channels, service levels and fulfilment patterns, so … |
+| `practical_context` | string | no | Met when the operations strategy calls for a delivery model to be conceived before design can proceed. Strategy … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

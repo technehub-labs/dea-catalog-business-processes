@@ -172,3 +172,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Operate Customer Retention Programs L2 process within the processes:pc-pr-improve-k8phkn Cell Charter. See trigger and outcome for the bounded work …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Operate Customer Retention Programs'
+plain_language_description: 'Keeping customers is ongoing work, not a one-off campaign. This running operation watches how customers feel, spots who is drifting toward the exit, and keeps win-back lists current. The insight it produces is fed back into strategy, design, and day-to-day operation so the enterprise keeps more of the customers it has won.'
+business_purpose: 'It turns satisfaction and churn signals into action, so the enterprise defends its existing customer base instead of only chasing new names.'
+practical_context: 'Continuous, whenever there are active customer relationships: customer relationship management monitors satisfaction, churn risk, and win-back openings, with the strategy function absorbing the lessons into the next planning round.'
+worked_example:
+  agent_type: human
+  narrative: 'In the monthly review, customer relationship management refreshes the churn-risk and win-back lists from the latest satisfaction results, and the strategy function folds the findings into the next planning cycle.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-conc
 
 This is a **Business Process** (level L2), named **Frame Operations Strategy**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. Its canonical ID is `processes:process-eo-conceive-xhjdr2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This is the top-level thinking that sets how the business will produce and deliver before any detailed planning starts. Prompted by a new execution engine being established, an existing one being rethought, or shifts in how customers are served, the strategy and operations functions agree the delivery direction, how technology will enable it, and what the physical asset approach will be. The outcome is a committed operations strategy that the next stage of planning builds on.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists to give the whole operations effort one committed strategy covering delivery, technology enablement and physical assets, so later design and build decisions pull in the same direction.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered when the enterprise is establishing a new execution engine, reframing an existing one, or responding to shifts in the delivery model. The strategy function and operations function lead the work under the Enablement & Operations Process Owner.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Facing a shift in how customers want to be served, a strategy lead convenes the operations function for a framing workshop, and together they commit an operations strategy covering the delivery model, the technology enablement approach and the physical asset approach.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Frame Operations Strategy L2 process within the processes:pc-eo-conceive-mxmtzq Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Frame the Operations Strategy |
+| `plain_language_description` | string | no | This is the top-level thinking that sets how the business will produce and deliver before any detailed planning starts … |
+| `business_purpose` | string | no | It exists to give the whole operations effort one committed strategy covering delivery, technology enablement and … |
+| `practical_context` | string | no | Encountered when the enterprise is establishing a new execution engine, reframing an existing one, or responding to … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

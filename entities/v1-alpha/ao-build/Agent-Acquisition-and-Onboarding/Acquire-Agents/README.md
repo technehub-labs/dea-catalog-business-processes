@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ao-buil
 
 This is a **Business Process** (level L2), named **Acquire Agents**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. Its canonical ID is `processes:process-ao-build-w2qurd`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process brings new agents into the organization once the designed structure says how many and what kind are needed. People are recruited and hired through ordinary recruitment, while artificial agents are stood up through model deployment or integration. Everyone acquired is then onboarded and connected into the organization so they are ready to start work.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists to turn the approved organization design into actual working capacity, so the enterprise has the mix of people and artificial agents it needs in place and ready to operate.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs whenever the designed organization structure calls for additional capacity that must be provisioned, onboarded, and integrated; the governing board is the named actor and stakeholder, with the Agency & Organization Process Owner accountable for the process.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A hiring manager works through an approved staffing request for a new team, runs recruitment for the people roles, and arranges deployment and integration of the artificial agents the design calls for, so that both arrive onboarded and ready before the go-live date.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Acquire and Onboard Agents L2 process within the processes:pc-ao-build-pjk4rz Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Acquire Agents |
+| `plain_language_description` | string | no | This process brings new agents into the organization once the designed structure says how many and what kind are … |
+| `business_purpose` | string | no | It exists to turn the approved organization design into actual working capacity, so the enterprise has the mix of … |
+| `practical_context` | string | no | Runs whenever the designed organization structure calls for additional capacity that must be provisioned, onboarded … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

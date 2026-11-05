@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ao-oper
 
 This is a **Business Process** (level L2), named **Operate Agent Performance**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. Its canonical ID is `processes:process-ao-operate-g4wp63`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process is the steady-state running of the workforce once agents are onboarded and in active operation. It covers coordination and collaboration, time and attendance, compensation, and learning and development, applied consistently however the work is done. The aim is that every agent, human or artificial, is supported and productive in day-to-day service.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists to keep the whole agentive workforce performing reliably in service, by running the everyday operations that performance depends on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs continuously once onboarded agents are in active operation across the organization, with workforce management responsible for the steady-state performance, coordination, compensation, and learning operations.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* In any given week, workforce management runs the routines that keep the workforce operating: coordinating collaboration across teams, processing time and attendance records, keeping compensation flowing, and scheduling development sessions.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Operate Agent Performance L2 process within the processes:pc-ao-operate-zfevmp Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Run Agent Performance |
+| `plain_language_description` | string | no | This process is the steady-state running of the workforce once agents are onboarded and in active operation. It covers … |
+| `business_purpose` | string | no | It exists to keep the whole agentive workforce performing reliably in service, by running the everyday operations that … |
+| `practical_context` | string | no | Runs continuously once onboarded agents are in active operation across the organization, with workforce management … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

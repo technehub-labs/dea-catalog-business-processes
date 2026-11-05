@@ -160,3 +160,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Operate Governance Oversight L2 process within the processes:pc-ge-operate-hb2dac Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Operate Governance Oversight'
+plain_language_description: 'This is the routine running of the governance machine once it exists. Board and committee meetings happen when they should, the papers are there, risks are raised and dealt with as they arise, and the decisions taken are written down. It is the steady drumbeat that keeps oversight alive between bigger redesigns.'
+business_purpose: 'A governance structure only matters if it actually runs; this work makes oversight a regular fact of enterprise life, with decisions made and recorded on schedule.'
+practical_context: 'Day to day, once bodies are chartered and policies codified: the governing board and its committees convene on their cycles while the risk function and compliance function keep risk items and decision records moving.'
+worked_example:
+  agent_type: human
+  narrative: 'Ahead of the monthly committee cycle, the risk function loads the standing risk items, the compliance function confirms open actions, and the governing board takes and records its decisions in the minutes.'

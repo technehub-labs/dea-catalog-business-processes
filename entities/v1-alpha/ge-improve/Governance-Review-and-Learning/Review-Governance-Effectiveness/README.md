@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ge-impr
 
 This is a **Business Process** (level L2), named **Review Governance Effectiveness**, currently **candidate (yellow)**. It is part of the **Governance Review and Learning** process context, domain `ge`, lifecycle stage Improve. Its canonical ID is `processes:process-ge-improve-mgkw59`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Boards and committees that meet on schedule are not automatically governing well. On a periodic basis, this work asks how well the governance setup is actually performing: what the measures show, what lessons the recent period taught, and what should change. Findings and recommendations go back to the governance bodies and into the next round of design and operating choices.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It holds the governance system itself up for scrutiny, so lessons learned improve how the enterprise is governed rather than being lost between cycles.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs periodically once governance bodies have been operating for a while: the audit function and strategy function measure governance performance against the strategy and hand recommendations to the governance bodies.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* At the end of the governance year, the audit function and a strategy function lead compile what the measures show about each body's performance and present the lessons and recommendations for the next cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -75,6 +75,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Review Governance Effectiveness L2 process within the processes:pc-ge-improve-c78ppp Cell Charter. See … |
+| `plain_language_name` | string | no | Review Governance Effectiveness |
+| `plain_language_description` | string | no | Boards and committees that meet on schedule are not automatically governing well. On a periodic basis, this work asks … |
+| `business_purpose` | string | no | It holds the governance system itself up for scrutiny, so lessons learned improve how the enterprise is governed rather … |
+| `practical_context` | string | no | Runs periodically once governance bodies have been operating for a while: the audit function and strategy function … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -124,3 +124,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Operate Facility Management L2 process within the processes:pc-eo-operate-ydqb96 Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Run Facility Management'
+plain_language_description: 'This process keeps the buildings the operation works in safe, compliant and fit for use. Work orders are executed on schedule, and safety and compliance checks are kept current so people can work in the facilities without concern. It is the continuous caretaking that follows once facilities have been provisioned.'
+business_purpose: 'It exists because provisioned facilities only stay usable if someone continuously maintains them as safe, compliant working environments.'
+practical_context: 'Met every working day across the operation''s sites, as scheduled work orders fall due and safety or compliance items need attention. Product management oversees the function under the Enablement & Operations Process Owner.'
+worked_example:
+  agent_type: human
+  narrative: 'A product manager signs off the month''s facility work orders, chases the overdue safety check on one site, and confirms the compliance items are current before the month closes.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ao-desi
 
 This is a **Business Process** (level L2), named **Design Agent Topology**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. Its canonical ID is `processes:process-ao-design-8fzp2b`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process decides where human agents, artificial agents, and hybrid combinations actually sit across the organization. Working from the framed organization model, it places each kind of agent where it does the most good and sets the coordination patterns that let them work together. The finished topology gives acquisition planning a concrete picture of what to acquire.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists to make agent placement a deliberate design decision rather than an accident of procurement, so human and artificial agents complement rather than duplicate each other.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Takes place once the organization model is framed, when the organization design authority must settle human, artificial, and hybrid placement decisions before acquisition planning can begin.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The organization design authority maps out a new service line, deciding which enquiry handling moves to artificial agents, which judgement-heavy work stays with people, and where hybrid pairings need defined coordination patterns, then hands the topology to acquisition planning.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Design Agent Topology L2 process within the processes:pc-ao-design-a4hq2r Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Design the Agent Topology |
+| `plain_language_description` | string | no | This process decides where human agents, artificial agents, and hybrid combinations actually sit across the … |
+| `business_purpose` | string | no | It exists to make agent placement a deliberate design decision rather than an accident of procurement, so human and … |
+| `practical_context` | string | no | Takes place once the organization model is framed, when the organization design authority must settle human … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

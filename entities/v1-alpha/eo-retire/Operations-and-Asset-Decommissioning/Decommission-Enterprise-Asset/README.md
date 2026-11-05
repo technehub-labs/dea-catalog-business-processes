@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-reti
 
 This is a **Business Process** (level L2), named **Decommission Enterprise Asset**, currently **candidate (yellow)**. It is part of the **Operations and Asset Decommissioning** process context, domain `eo`, lifecycle stage Retire. Its canonical ID is `processes:process-eo-retire-rpg6d4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process retires an asset properly rather than letting it fade out of use. The retirement is planned and approved, the asset is isolated and withdrawn from service, and it is then decommissioned and disposed of through the agreed routes. Nothing is left hanging: residual value, any data on the asset and outstanding obligations are resolved and recorded before the book is closed.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so an asset leaving service does so cleanly, withdrawn and disposed of through the right routes with its residual value, data and obligations settled on the record.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered when an operational asset reaches end of life, is superseded, or is approved for retirement. Product management steers the retirement under the Enablement & Operations Process Owner.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product manager approves the retirement plan for an asset that has been superseded, oversees its isolation and withdrawal from service, and signs off once disposal is done and the residual value, data and obligations have been resolved and recorded.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Withdraw and retire an operational asset (technology or physical): plan and approve the retirement, isolate and … |
+| `plain_language_name` | string | no | Decommission Enterprise Asset |
+| `plain_language_description` | string | no | This process retires an asset properly rather than letting it fade out of use. The retirement is planned and approved … |
+| `business_purpose` | string | no | It exists so an asset leaving service does so cleanly, withdrawn and disposed of through the right routes with its … |
+| `practical_context` | string | no | Encountered when an operational asset reaches end of life, is superseded, or is approved for retirement. Product … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -144,3 +144,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Operate Product Catalogue L2 process within the processes:pc-pv-operate-ewpwjc Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Operate Product Catalogue'
+plain_language_description: 'With products live in the market, this work runs the steady state. Product management keeps the product catalogue current, oversees portfolio performance, and manages each proposition through its lifecycle stages from launch to retirement. It is the ongoing stewardship that keeps the whole offering portfolio coherent while it operates.'
+business_purpose: 'It keeps the catalogue of live offerings accurate and actively managed: customers and internal teams alike rely on a catalogue that reflects what is actually offered and at what stage.'
+practical_context: 'The steady-state routine once developed products are in active operation; product management runs the catalogue and its portfolio duties continuously, from launch through to retirement.'
+worked_example:
+  agent_type: human
+  narrative: 'Product management updates the catalogue when a new version launches, checks that the retired listing is marked accordingly, and reviews the performance figures for the live range. The catalogue stays an accurate mirror of what the business actually offers.'

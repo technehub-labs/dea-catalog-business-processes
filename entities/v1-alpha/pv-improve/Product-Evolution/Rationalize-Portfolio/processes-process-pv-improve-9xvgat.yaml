@@ -137,3 +137,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Rationalize Portfolio L2 process within the processes:pc-pv-improve-wpyfx7 Cell Charter. See trigger and outcome for the bounded work this process …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Rationalize Portfolio'
+plain_language_description: 'Over time the portfolio collects propositions that no longer earn their keep. This work reviews those underperformers and commits a decision for each one, either retiring it or pivoting it. Product management makes the calls within the portfolio review cycle so investment is not stranded on propositions that have stopped justifying it.'
+business_purpose: 'It frees investment from propositions that no longer deserve it: forcing a retire-or-pivot decision on each underperformer keeps the portfolio lean and the resources flowing to where they work harder.'
+practical_context: 'Triggered when the portfolio has accumulated propositions that no longer justify their investment envelopes; product management takes the decisions within the standing portfolio review cycle.'
+worked_example:
+  agent_type: human
+  narrative: 'In the portfolio review, product management tables the propositions whose results no longer cover their investment envelopes and works through each one. Each gets a decision, retired or pivoted, and the decisions are recorded for the next planning cycle.'

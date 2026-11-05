@@ -141,3 +141,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Close out an enterprise relationship with a customer, supplier or partner: settle the contract, offboard the party, and resolve residual obligations, records …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Close Enterprise Relationship'
+plain_language_description: 'When a contract with a customer, supplier, or partner reaches its end, whether by expiry, termination, or a regulated offboarding requirement, the leaving has to be done properly. This work settles what is still owed in both directions, offboards the party from systems and access, and sorts out who keeps which records and rights. Everything is closed with evidence, so nothing is left hanging.'
+business_purpose: 'It ends relationships cleanly, so obligations are fulfilled or settled, records and rights are resolved, and neither side carries unresolved liabilities forward.'
+practical_context: 'Encountered at a relationship''s agreed or mandated end, such as contract expiry, termination, or a regulated offboarding: customer relationship management handles customer exits, supplier and partner management the supply side, under the governing board''s oversight.'
+worked_example:
+  agent_type: human
+  narrative: 'When a supplier contract expires without renewal, supplier and partner management settles the final invoices, revokes access and hands back the records, and files the close-out evidence for the governing board.'

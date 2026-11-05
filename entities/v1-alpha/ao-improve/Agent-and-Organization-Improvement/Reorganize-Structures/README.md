@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ao-impr
 
 This is a **Business Process** (level L2), named **Reorganize Structures**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. Its canonical ID is `processes:process-ao-improve-xs59e2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process carries out structural change when review findings or a change of direction call for it. It sequences the transition so units, roles, and reporting lines move in a controlled order, and it records who hands over which accountabilities along the way. The reorganization stays aligned to the organization plan throughout.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists to reshape the organization deliberately rather than chaotically, so structural change lands without leaving gaps in accountability or disrupting operations.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered when review findings or direction changes require structural change, led by the organization design authority with transition sequencing and accountability handovers planned before moves begin.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Following a review that recommended merging two support units, the organization design authority sequences the merger step by step, sets the date each accountability handover happens, and records the transitions so nothing falls between the cracks.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Reorganize Structures L2 process within the processes:pc-ao-improve-qkmh6b Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Restructure the Organization |
+| `plain_language_description` | string | no | This process carries out structural change when review findings or a change of direction call for it. It sequences the … |
+| `business_purpose` | string | no | It exists to reshape the organization deliberately rather than chaotically, so structural change lands without leaving … |
+| `practical_context` | string | no | Encountered when review findings or direction changes require structural change, led by the organization design … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

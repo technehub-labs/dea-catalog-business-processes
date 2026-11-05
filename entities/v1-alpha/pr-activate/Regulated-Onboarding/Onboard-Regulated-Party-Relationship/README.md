@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pr-acti
 
 This is a **Business Process** (level L2), named **Onboard Regulated Party Relationship**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Activation** process context, domain `pr`, lifecycle stage Activate. Its canonical ID is `processes:process-pr-activate-6qzuve`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before a new customer or partner can start doing business with the enterprise, identity and background checks must come first. This work verifies who the applicant is, works out who ultimately owns or benefits from them, and assigns a risk level to the relationship. If everything clears, commencement is approved with the evidence recorded; if not, the refusal is documented with its reasoning.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It ensures the enterprise only starts relationships it has properly checked, meeting its duty to know its counterparties while keeping a defensible record of every approval or refusal.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs whenever a new party applies in a setting where identity verification and due diligence are required before any relationship may begin; customer relationship management guides the applicant through, and the risk function clears the checks under the industry regulator's rules.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A new applicant's file lands with customer relationship management, who collect the identity documents; the risk function confirms the beneficial owners, assigns the risk classification, and signs off the documented approval before the relationship goes live.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Onboard a new party relationship in a regulated context (KYC/AML/CDD): verify identity, resolve beneficial ownership … |
+| `plain_language_name` | string | no | Onboard a New Regulated Relationship |
+| `plain_language_description` | string | no | Before a new customer or partner can start doing business with the enterprise, identity and background checks must come … |
+| `business_purpose` | string | no | It ensures the enterprise only starts relationships it has properly checked, meeting its duty to know its … |
+| `practical_context` | string | no | Runs whenever a new party applies in a setting where identity verification and due diligence are required before any … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

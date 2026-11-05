@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-fa-oper
 
 This is a **Business Process** (level L2), named **Run Accounts Receivable**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. Its canonical ID is `processes:process-fa-operate-sdppmp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process is how the organisation collects the money it is owed. Customer invoices go out, collections are managed, and the cash that comes back is applied to the ledger. Each customer invoice or collection event sets the routine in motion.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so that sales become cash: invoices are issued, collections are managed actively, and received money is applied to the ledger without delay.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs whenever a customer invoice or collection event is due, with the compliance function issuing invoices, managing collections, and applying cash to the ledger.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* When a customer invoice falls due, the compliance function issues or chases it, manages the collection through to payment, and applies the cash received to the ledger.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Run Accounts Receivable (operate stage, core process). Landed by CR-BP-21e.1 from the FinanceAndAccounting register v2. |
+| `plain_language_name` | string | no | Run Accounts Receivable |
+| `plain_language_description` | string | no | This process is how the organisation collects the money it is owed. Customer invoices go out, collections are managed … |
+| `business_purpose` | string | no | It exists so that sales become cash: invoices are issued, collections are managed actively, and received money is … |
+| `practical_context` | string | no | It runs whenever a customer invoice or collection event is due, with the compliance function issuing invoices, managing … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

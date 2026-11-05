@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-fa-impr
 
 This is a **Business Process** (level L2), named **Refine Financial Controls and Policies**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. Its canonical ID is `processes:process-fa-improve-cdtsbq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Audit findings and control incidents are the raw material for this process. When one surfaces, the finance design authority works through what went wrong and refines the financial controls and policies in response. Changes are taken through the policy review cycle, so the refinements are properly governed rather than slipped in on the side.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It turns audit findings and control incidents into lasting improvements in financial controls and policies, closing the gap between what went wrong and what the rules say.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It is triggered when an audit finding or control incident surfaces, and the finance design authority refines the controls and policies through the policy review cycle.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* After an audit finding highlights a weak approval control, the finance design authority refines the affected policy and control and takes the change through the policy review cycle before it takes effect.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Refine Financial Controls and Policies (improve stage, management process). Landed by CR-BP-21e.1 from the … |
+| `plain_language_name` | string | no | Refine Financial Controls and Policies |
+| `plain_language_description` | string | no | Audit findings and control incidents are the raw material for this process. When one surfaces, the finance design … |
+| `business_purpose` | string | no | It turns audit findings and control incidents into lasting improvements in financial controls and policies, closing the … |
+| `practical_context` | string | no | It is triggered when an audit finding or control incident surfaces, and the finance design authority refines the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)
