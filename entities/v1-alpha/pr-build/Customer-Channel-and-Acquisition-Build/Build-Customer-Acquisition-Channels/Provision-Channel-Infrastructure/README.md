@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-bu
 
 This is a **Activity** (level L3), named **Provision Channel Infrastructure**, currently **candidate (yellow)**. It is part of the **Customer Channel and Acquisition Build** process context, domain `pr`, lifecycle stage Build. It belongs to **Build Customer Acquisition Channels** (`processes:process-pr-build-nygvw7`). Its canonical ID is `processes:activity-pr-build-ncrg72`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity stands up the infrastructure through which customers will actually reach the enterprise. The designed experience arrives as the load the channels must carry, the infrastructure is provisioned against it and checked, and the provisioned channels are confirmed onward for the experience wiring. The shop is built before the shopkeepers move in.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the designed customer experience has real infrastructure to run on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the acquisition build once the experience and journey designs are committed, and it completes as the provisioned channel infrastructure is confirmed onward for integration.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A customer relationship management builder stands up the channel infrastructure sized to carry the designed experience, checks it, and confirms the provisioned channels onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Provision Channel Infrastructure |
+| `plain_language_description` | string | no | This activity stands up the infrastructure through which customers will actually reach the enterprise. The designed … |
+| `business_purpose` | string | no | It exists so the designed customer experience has real infrastructure to run on. |
+| `practical_context` | string | no | It opens the acquisition build once the experience and journey designs are committed, and it completes as the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

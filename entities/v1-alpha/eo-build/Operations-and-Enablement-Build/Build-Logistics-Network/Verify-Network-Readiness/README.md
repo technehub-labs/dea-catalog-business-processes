@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-bu
 
 This is a **Activity** (level L3), named **Verify Network Readiness**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Build Logistics Network** (`processes:process-eo-build-ba6ykz`). Its canonical ID is `processes:activity-eo-build-by2f8g`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity proves the assembled network — its nodes, contracted carriers, and secured capacity — can actually carry the routes the design lays out. The built network comes in with the routing logic as the test, the routes are walked end to end and gaps noted, and the readiness determination is confirmed for the record. Delivery flows are cleared to start only once this says so.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so goods begin moving on a network proven able to execute its routing, not on one that merely exists.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the logistics network build, once nodes, capacity, and carriers are all in place, and it completes when the readiness determination is confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A verification custodian walks the designed routes across the established nodes and contracted carriers, notes any gap that would break a flow, and confirms the readiness determination for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Verify Network Readiness |
+| `plain_language_description` | string | no | This activity proves the assembled network — its nodes, contracted carriers, and secured capacity — can actually carry … |
+| `business_purpose` | string | no | It exists so goods begin moving on a network proven able to execute its routing, not on one that merely exists. |
+| `practical_context` | string | no | It closes the logistics network build, once nodes, capacity, and carriers are all in place, and it completes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

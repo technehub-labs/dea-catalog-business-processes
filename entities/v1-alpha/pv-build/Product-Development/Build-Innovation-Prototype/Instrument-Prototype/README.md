@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 
 This is a **Activity** (level L3), named **Instrument Prototype**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. It belongs to **Build Innovation Prototype** (`processes:process-pv-build-8jc3y4`). Its canonical ID is `processes:activity-pv-build-zvvppc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity fits the prototype with its measuring gear, so it can report exactly what the success criteria ask about. The constructed prototype arrives as the thing to be wired, instruments are fitted to capture each required measurement, and the instrumented prototype is confirmed onward for documentation. An unmeasured prototype is just a toy; this makes it an instrument.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the prototype can actually produce the measurements the experiment will judge it by.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the prototype construction, once the artefact is built, and it completes when the fitted instruments are confirmed to capture everything the success criteria require.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management builder fits the prototype with the measuring gear its success criteria demand, checking each reading works, and confirms the instrumented prototype onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Instrument Prototype |
+| `plain_language_description` | string | no | This activity fits the prototype with its measuring gear, so it can report exactly what the success criteria ask about … |
+| `business_purpose` | string | no | It exists so the prototype can actually produce the measurements the experiment will judge it by. |
+| `practical_context` | string | no | It follows the prototype construction, once the artefact is built, and it completes when the fitted instruments are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-bu
 
 This is a **Activity** (level L3), named **Review Strategic Fit**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Translate Strategic Choices into Initiatives** (`processes:process-sd-build-9admqy`). Its canonical ID is `processes:activity-sd-build-tjdzmd`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Drafted work is only worth committing if it genuinely serves the direction. Intake brings the initiative set in, scrutiny tests each draft against what the plan and the chosen direction actually call for, and anything off-course is flagged for rework. When the fit is confirmed, downstream colleagues are notified and the fit-checked set is preserved.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It filters out initiatives that would quietly pull the enterprise off its chosen path, so only aligned work reaches commitment.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It happens after drafting, opening when the drafted initiatives are presented at intake and closing when the fit verdict is confirmed and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Two strategy function reviewers read each drafted initiative against the approved direction, return one misaligned proposal for reshaping, and the confirmation custodian records the fit outcome once every draft passes.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Review Strategic Fit |
+| `plain_language_description` | string | no | Drafted work is only worth committing if it genuinely serves the direction. Intake brings the initiative set in … |
+| `business_purpose` | string | no | It filters out initiatives that would quietly pull the enterprise off its chosen path, so only aligned work reaches … |
+| `practical_context` | string | no | It happens after drafting, opening when the drafted initiatives are presented at intake and closing when the fit … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

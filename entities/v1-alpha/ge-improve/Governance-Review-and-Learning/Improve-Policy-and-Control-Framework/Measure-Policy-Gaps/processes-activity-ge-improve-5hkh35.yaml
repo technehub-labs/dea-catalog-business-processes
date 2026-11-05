@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-improve-u3g5dh through concluding task processes:task-ge-improve-record-sucudk, whose outcome — Case file retained for Measure Policy Gaps under the records retention schedule with cryptographic integrity protection; statutory retention horizon applied …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Measure Policy Gaps'
+plain_language_description: 'This activity sizes the policy gaps that audit findings and day-to-day evidence have brought to light. The findings and compliance evidence arrive as the material, each gap is measured and entered into a bounded register, and the measured gaps are confirmed onward for the standards work. Governance improves by measurement, not by impression.'
+business_purpose: 'It exists so the framework''s improvements start from gaps that are measured and registered, not sensed.'
+practical_context: 'It opens the framework improvement when audit findings or policy gaps surface, and it completes once the measured gap register is confirmed onward for the standards update.'
+worked_example:
+  agent_type: human
+  narrative: 'An audit function analyst sizes each policy gap the audit findings and operating evidence have surfaced, enters it in the bounded register, and confirms the gaps onward.'

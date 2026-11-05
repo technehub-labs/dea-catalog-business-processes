@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 
 This is a **Activity** (level L3), named **Verify Tax Capability Readiness**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Onboard Tax and Compliance Capability** (`processes:process-fa-build-ucfjgt`). Its canonical ID is `processes:activity-fa-build-ek3cs4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity checks the newly built tax machinery ready to run day to day under the tax policy review's eye. The onboarded capability comes in with the regime requirements and the tax strategy as the yardstick, readiness is examined against them, and the determination is confirmed for steady operation. Tax compliance is cleared for its routine life here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so steady-state tax operation starts on a capability proven ready under its supervision arrangements.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the tax and compliance onboarding, once calendar, filings, and controls are in place, and it completes when the readiness determination is confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance function verifier examines the onboarded tax capability against the regime requirements and the tax strategy, and confirms the readiness determination for steady operation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Verify Tax Capability Readiness |
+| `plain_language_description` | string | no | This activity checks the newly built tax machinery ready to run day to day under the tax policy review's eye. The … |
+| `business_purpose` | string | no | It exists so steady-state tax operation starts on a capability proven ready under its supervision arrangements. |
+| `practical_context` | string | no | It closes the tax and compliance onboarding, once calendar, filings, and controls are in place, and it completes when … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

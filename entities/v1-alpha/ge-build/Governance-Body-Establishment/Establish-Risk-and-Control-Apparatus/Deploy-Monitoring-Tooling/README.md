@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-bu
 
 This is a **Activity** (level L3), named **Deploy Monitoring Tooling**, currently **candidate (yellow)**. It is part of the **Governance Body Establishment** process context, domain `ge`, lifecycle stage Build. It belongs to **Establish Risk and Control Apparatus** (`processes:process-ge-build-rx7kt5`). Its canonical ID is `processes:activity-ge-build-459rn2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity puts the watching machinery in place that the control apparatus will run on. The control objectives and the compliance regime design arrive as the requirements, the monitoring tooling is deployed against them and checked, and the deployed tooling is confirmed onward for readiness. Controls without watchmen are just words; this gives them watchmen.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the control apparatus has working monitoring tooling behind its objectives and regime.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs alongside the registers, drawing on the control objectives and compliance regime design, and it completes once the deployed tooling is confirmed onward for readiness.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function officer deploys the monitoring tooling against the control objectives and the compliance regime design, checks it runs, and confirms the deployment onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Deploy Monitoring Tooling |
+| `plain_language_description` | string | no | This activity puts the watching machinery in place that the control apparatus will run on. The control objectives and … |
+| `business_purpose` | string | no | It exists so the control apparatus has working monitoring tooling behind its objectives and regime. |
+| `practical_context` | string | no | It runs alongside the registers, drawing on the control objectives and compliance regime design, and it completes once … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

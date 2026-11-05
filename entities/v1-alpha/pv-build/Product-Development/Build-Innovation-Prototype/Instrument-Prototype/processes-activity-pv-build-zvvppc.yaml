@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-build-8jc3y4 through concluding task processes:task-pv-build-record-bk9zj5, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Instrument Prototype'
+plain_language_description: 'This activity fits the prototype with its measuring gear, so it can report exactly what the success criteria ask about. The constructed prototype arrives as the thing to be wired, instruments are fitted to capture each required measurement, and the instrumented prototype is confirmed onward for documentation. An unmeasured prototype is just a toy; this makes it an instrument.'
+business_purpose: 'It exists so the prototype can actually produce the measurements the experiment will judge it by.'
+practical_context: 'It follows the prototype construction, once the artefact is built, and it completes when the fitted instruments are confirmed to capture everything the success criteria require.'
+worked_example:
+  agent_type: human
+  narrative: 'A product management builder fits the prototype with the measuring gear its success criteria demand, checking each reading works, and confirms the instrumented prototype onward.'

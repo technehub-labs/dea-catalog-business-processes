@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-op
 
 This is a **Activity** (level L3), named **Plan Compliance Audits**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. It belongs to **Audit Policy Compliance** (`processes:process-ge-operate-hxxyc9`). Its canonical ID is `processes:activity-ge-operate-cpcway`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity lays out the periodic audits that will check the enterprise against its own codified policies. The codified policies and the operating bodies arrive as the territory to be examined, audits are planned across it and resourced, and the audit plan is confirmed onward for execution. Compliance gets examined by timetable, not by scandal.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so compliance with the codified policies is audited on a designed plan rather than by chance.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the audit cycle once policies are codified and bodies are operating, and it completes when the planned audits are confirmed onward for execution.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A compliance function auditor plans the periodic audits across the codified policies and operating bodies, resources each, and confirms the plan for execution.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Plan Compliance Audits |
+| `plain_language_description` | string | no | This activity lays out the periodic audits that will check the enterprise against its own codified policies. The … |
+| `business_purpose` | string | no | It exists so compliance with the codified policies is audited on a designed plan rather than by chance. |
+| `practical_context` | string | no | It opens the audit cycle once policies are codified and bodies are operating, and it completes when the planned audits … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

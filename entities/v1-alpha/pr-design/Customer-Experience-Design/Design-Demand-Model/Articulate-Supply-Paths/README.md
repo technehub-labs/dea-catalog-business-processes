@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-de
 
 This is a **Activity** (level L3), named **Articulate Supply Paths**, currently **candidate (yellow)**. It is part of the **Customer Experience Design** process context, domain `pr`, lifecycle stage Design. It belongs to **Design Demand Model** (`processes:process-pr-design-cv6hjh`). Its canonical ID is `processes:activity-pr-design-zst46t`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity traces the routes by which a customer's need turns into something the enterprise actually supplies. The designed experience arrives as the demand side of the equation, the supply paths are articulated from it and reviewed for practicality, and the articulated paths are confirmed onward for the capacity work. Demand's journey into supply is drawn here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise knows exactly how customer need becomes its own supply.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the demand model design once the customer experience has been designed, and it completes when the articulated supply paths are confirmed for the capacity assumptions.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function designer traces each route by which customer need converts into enterprise supply, reviews the paths for practicality, and confirms them onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Articulate Supply Paths |
+| `plain_language_description` | string | no | This activity traces the routes by which a customer's need turns into something the enterprise actually supplies. The … |
+| `business_purpose` | string | no | It exists so the enterprise knows exactly how customer need becomes its own supply. |
+| `practical_context` | string | no | It opens the demand model design once the customer experience has been designed, and it completes when the articulated … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

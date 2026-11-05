@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-ac
 
 This is a **Activity** (level L3), named **Prepare Transition Readiness**, currently **candidate (yellow)**. It is part of the **Proposition Launch and Service Transition** process context, domain `pv`, lifecycle stage Activate. It belongs to **Transition Proposition to Service** (`processes:process-pv-activate-5686v7`). Its canonical ID is `processes:activity-pv-activate-922fde`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity checks that everything needed for the handover is actually in hand — the readiness criteria met, the transition plan drawn, and the way back prepared. The proposition arrives with its readiness threshold met and its transition authorised, readiness is confirmed criterion by criterion, and the prepared state is confirmed onward for the cutover. Nothing is switched on until the exit is mapped.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the cutover happens on proven readiness, with the rollback provisioned before it is needed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the transition once a validated proposition has met its readiness threshold and been authorised for operational transition, and it completes when the confirmed readiness, plan, and rollback provisions are in place for the cutover.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management officer walks the readiness criteria one by one, sets out the transition plan and the way back if it fails, and confirms the prepared state for the cutover.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Prepare Transition Readiness |
+| `plain_language_description` | string | no | This activity checks that everything needed for the handover is actually in hand — the readiness criteria met, the … |
+| `business_purpose` | string | no | It exists so the cutover happens on proven readiness, with the rollback provisioned before it is needed. |
+| `practical_context` | string | no | It opens the transition once a validated proposition has met its readiness threshold and been authorised for … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

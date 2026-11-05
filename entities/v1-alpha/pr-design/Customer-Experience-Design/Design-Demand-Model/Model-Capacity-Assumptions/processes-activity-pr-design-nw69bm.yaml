@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-design-cv6hjh through concluding task processes:task-pr-design-record-faxp97, whose outcome — Closure case file retained for Model Capacity Assumptions under the records retention schedule with cryptographic integrity protection; cryptographic …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Model Capacity Assumptions'
+plain_language_description: 'This activity states, plainly and in structure, what the enterprise is assuming about its own capacity as demand arrives. The articulated supply paths arrive as the thing to be underwritten, assumptions are stated and organised against them, and the capacity model is confirmed onward for the levers. The demand model admits honestly what it is betting on.'
+business_purpose: 'It exists so the demand model''s capacity bets are stated openly rather than hidden in the arithmetic.'
+practical_context: 'It follows the supply paths, once the routes demand will take are drawn, and it completes when the structured capacity assumptions are confirmed onward for the levers.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function designer states and structures the capacity assumptions underpinning each supply path, and confirms the assumptions model onward.'

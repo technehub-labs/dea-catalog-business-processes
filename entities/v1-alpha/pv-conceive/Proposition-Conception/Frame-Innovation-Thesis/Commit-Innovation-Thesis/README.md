@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-co
 
 This is a **Activity** (level L3), named **Commit Innovation Thesis**, currently **candidate (yellow)**. It is part of the **Proposition and Portfolio Conception** process context, domain `pv`, lifecycle stage Conceive. It belongs to **Frame Innovation Thesis** (`processes:process-pv-conceive-kps544`). Its canonical ID is `processes:activity-pv-conceive-k87pzt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the focus areas, the option assessment, and the experimentation boundaries together into one committed thesis. The framed pieces arrive as its inputs, the whole is consolidated and ratified, and the committed thesis is confirmed as the basis for the experiment design. The enterprise's answer to where and how it will innovate becomes one owned document.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so innovation experiments proceed from one committed thesis rather than from enthusiasm.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the innovation thesis framing once areas, assessment, and boundaries are framed, and it completes when the committed innovation thesis is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian assembles the focus areas, option assessment, and experimentation boundaries into the thesis document, obtains ratification, and records the committed thesis.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Innovation Thesis |
+| `plain_language_description` | string | no | This activity draws the focus areas, the option assessment, and the experimentation boundaries together into one … |
+| `business_purpose` | string | no | It exists so innovation experiments proceed from one committed thesis rather than from enthusiasm. |
+| `practical_context` | string | no | It closes the innovation thesis framing once areas, assessment, and boundaries are framed, and it completes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

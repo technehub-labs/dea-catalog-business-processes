@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-de
 
 This is a **Activity** (level L3), named **Commit Tax Position and Strategy**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Design Tax Position and Strategy** (`processes:process-fa-design-ds4drw`). Its canonical ID is `processes:activity-fa-design-6qvdsk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the exposures, the documented stances, and the strategy together into one committed design for the enterprise's tax posture, ready for planning to pick up. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed design is confirmed onward. The enterprise's tax stance is thereby one owned decision.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so tax planning and onboarding start from one committed tax design rather than scattered positions.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the tax design, once exposures, positions, and strategy are in hand, and it completes when the committed tax design is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian assembles the exposure assessment, documented positions, and strategy into the tax design document, obtains ratification, and records the commitment for planning.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Tax Position and Strategy |
+| `plain_language_description` | string | no | This activity draws the exposures, the documented stances, and the strategy together into one committed design for the … |
+| `business_purpose` | string | no | It exists so tax planning and onboarding start from one committed tax design rather than scattered positions. |
+| `practical_context` | string | no | It closes the tax design, once exposures, positions, and strategy are in hand, and it completes when the committed tax … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

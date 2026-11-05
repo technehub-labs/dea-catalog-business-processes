@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-op
 
 This is a **Activity** (level L3), named **Administer Catalogue Pricing**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Operate Product Catalogue** (`processes:process-pv-operate-zyguzp`). Its canonical ID is `processes:activity-pv-operate-kwm3wt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Prices shown in the catalogue are looked after here: launch pricing and any later adjustments are applied within the rules that govern them, so customers always see deliberate, correct prices. Pricing material arrives at intake, is checked against the rules, applied to the catalogue, confirmed, and the change trail is archived.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It keeps catalogue prices correct and rule-abiding, protecting both the customer's trust and the value case each proposition was built on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs through steady-state catalogue operation: intake opens whenever launch pricing or rule-bound adjustments arrive, and closure comes when the administered prices and their audit trail are confirmed and filed.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* When a seasonal adjustment is due, a product management pricing administrator registers the request at intake, checks it against the pricing rules, applies the new prices to the catalogue, confirms the update, and the records custodian files the trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Administer Catalogue Pricing |
+| `plain_language_description` | string | no | Prices shown in the catalogue are looked after here: launch pricing and any later adjustments are applied within the … |
+| `business_purpose` | string | no | It keeps catalogue prices correct and rule-abiding, protecting both the customer's trust and the value case each … |
+| `practical_context` | string | no | It runs through steady-state catalogue operation: intake opens whenever launch pricing or rule-bound adjustments … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

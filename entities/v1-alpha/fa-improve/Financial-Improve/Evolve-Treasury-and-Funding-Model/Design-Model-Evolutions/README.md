@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-im
 
 This is a **Activity** (level L3), named **Design Model Evolutions**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Evolve Treasury and Funding Model** (`processes:process-fa-improve-2kemkq`). Its canonical ID is `processes:activity-fa-improve-xjewfb`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity works each reviewed exposure into a designed change to the treasury and funding model. The reviewed exposures arrive as the case for change, evolutions are designed against them and checked for coherence with the rest of the model, and the designed set is confirmed onward for commitment. The model is improved on purpose, piece by piece.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so each named treasury exposure gains a designed model change rather than a vague intention to adapt.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the exposure review, when the bounded exposures are handed over, and it completes once the designed model evolutions are confirmed for commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance design authority designer turns each reviewed exposure into a designed change to the treasury and funding model, checks the set hangs together, and confirms it for commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Model Evolutions |
+| `plain_language_description` | string | no | This activity works each reviewed exposure into a designed change to the treasury and funding model. The reviewed … |
+| `business_purpose` | string | no | It exists so each named treasury exposure gains a designed model change rather than a vague intention to adapt. |
+| `practical_context` | string | no | It follows the exposure review, when the bounded exposures are handed over, and it completes once the designed model … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

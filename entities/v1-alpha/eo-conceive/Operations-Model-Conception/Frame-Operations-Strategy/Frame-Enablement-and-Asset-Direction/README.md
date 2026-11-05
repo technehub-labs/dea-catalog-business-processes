@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-co
 
 This is a **Activity** (level L3), named **Frame Enablement and Asset Direction**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Frame Operations Strategy** (`processes:process-eo-conceive-xhjdr2`). Its canonical ID is `processes:activity-eo-conceive-ettdc2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity sketches the two companion postures the strategy needs: how technology will enable the delivery model, and how the enterprise will approach its physical assets. The bounded envelope arrives as the reference, both directions are worked out against it and checked for coherence with each other, and the pair is confirmed onward for the strategy's commitment.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the strategy carries explicit technology and physical-asset postures, not just a delivery ambition.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the bounding of the delivery envelope, when the envelope is presented for companion direction-setting, and it completes once both directions are confirmed for the strategy's commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function lead sketches the technology posture and the physical-asset posture against the bounded envelope, checks the two hang together, and confirms both with the strategy function.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Frame Enablement and Asset Direction |
+| `plain_language_description` | string | no | This activity sketches the two companion postures the strategy needs: how technology will enable the delivery model … |
+| `business_purpose` | string | no | It exists so the strategy carries explicit technology and physical-asset postures, not just a delivery ambition. |
+| `practical_context` | string | no | It follows the bounding of the delivery envelope, when the envelope is presented for companion direction-setting, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

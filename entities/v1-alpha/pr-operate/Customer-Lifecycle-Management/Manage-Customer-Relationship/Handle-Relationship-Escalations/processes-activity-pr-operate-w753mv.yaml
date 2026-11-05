@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-operate-bbe384 through concluding task processes:task-pr-operate-record-k3mhvn, whose outcome — Closure case file retained for Handle Relationship Escalations under the records retention schedule with cryptographic integrity protection; cryptographic …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Handle Relationship Escalations'
+plain_language_description: 'This activity takes the escalated complaints in hand, sorts the resolution, and keeps the customer wanting to stay. Escalations arrive from the reviews and the day''s friction, resolution is coordinated across whoever must act, and the handled escalations are confirmed onward. The relationship''s worst moments are managed into its best save stories.'
+business_purpose: 'It exists so escalated customer problems are resolved fast enough to preserve the relationship.'
+practical_context: 'It runs whenever an escalation arrives from the reviews, operations, or the customer directly, and it completes once the coordinated resolution is confirmed and the relationship preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'A customer relationship management lead takes the escalated complaint in hand, coordinates the fix across the teams involved, and closes it with the relationship intact.'

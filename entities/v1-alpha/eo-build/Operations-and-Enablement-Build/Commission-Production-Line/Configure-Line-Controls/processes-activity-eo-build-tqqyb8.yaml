@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-build-awy8dz through concluding task processes:task-eo-build-record-rdpq85, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Configure Line Controls'
+plain_language_description: 'This activity sets the line''s automation, quality checks, and safety cut-outs to the parameters the design specifies. The installed line arrives with the operations model design as the reference, each control is configured and its settings verified, and the configured controls are confirmed onward. The line now knows how fast to run, what to reject, and when to stop.'
+business_purpose: 'It exists so the line runs within its designed operating parameters from the first powered turn, with quality and safety wired in.'
+practical_context: 'It follows equipment installation, when the assembled line is presented for configuration, and it completes once the configured controls are confirmed for trials.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian sets the line''s automation, quality gates, and safety cut-outs to the design''s parameters, verifies each setting, and confirms the configured controls for trial running.'

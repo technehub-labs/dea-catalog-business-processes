@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-operate-zwzmbd through concluding task processes:task-eo-operate-record-38fc7d, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Conduct Cycle Counts'
+plain_language_description: 'This activity counts the stock on the shelves on a rotating timetable and hands any differences found to the accuracy effort. The counting timetable arrives as the schedule, counts are performed physically and their variances recorded, and the counted evidence is confirmed onward. Trust in the stock numbers is earned a section at a time.'
+business_purpose: 'It exists so the stock record is verified against physical reality continuously, not just at year-end.'
+practical_context: 'It runs to the cyclical counting timetable across the warehouse''s stock, and it completes once each count''s variances are recorded and confirmed into the accuracy work.'
+worked_example:
+  agent_type: human
+  narrative: 'A warehouse counter physically counts the scheduled section''s stock, records the variances against the system positions, and hands them to the accuracy work.'

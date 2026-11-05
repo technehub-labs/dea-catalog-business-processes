@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-de
 
 This is a **Activity** (level L3), named **Commit Plan Structure**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Design Financial Plan Structure** (`processes:process-fa-design-vk422z`). Its canonical ID is `processes:activity-fa-design-aye4mb`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the account structure, the allocation rules, and the embedded safeguards together into one committed plan structure. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed structure is confirmed as the basis for build. The enterprise's financial plan structure is thereby one decision.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so financial build starts from one committed plan structure rather than three separate designs.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the financial plan structure design, once accounts, allocation, and controls are designed, and it completes when the committed structure is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian assembles the chart design, allocation model, and controls framework into the plan structure document, obtains ratification, and records the commitment for build.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Plan Structure |
+| `plain_language_description` | string | no | This activity draws the account structure, the allocation rules, and the embedded safeguards together into one … |
+| `business_purpose` | string | no | It exists so financial build starts from one committed plan structure rather than three separate designs. |
+| `practical_context` | string | no | It closes the financial plan structure design, once accounts, allocation, and controls are designed, and it completes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

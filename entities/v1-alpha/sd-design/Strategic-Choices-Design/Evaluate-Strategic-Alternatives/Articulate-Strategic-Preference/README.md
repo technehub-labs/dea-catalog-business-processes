@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-de
 
 This is a **Activity** (level L3), named **Articulate Strategic Preference**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Evaluate Strategic Alternatives** (`processes:process-sd-design-ed7jd5`). Its canonical ID is `processes:activity-sd-design-nmbkfx`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Someone now has to say which option wins and own the costs of that answer. Intake registers the comparison results, verification tests the reading against the scores, and processing writes out the preferred option together with the trade-offs the enterprise accepts in choosing it. Confirmation circulates the stated preference and the records custodian preserves it for the final commitment.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It turns a table of scores into a defensible statement of which way the enterprise should go and what it gives up by going there.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the comparison, opening when the results are presented at intake and closing when the stated preference is confirmed and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function lead reads the comparison results, states which option the enterprise prefers and names the trade-offs accepted, and the confirmation custodian passes the stated preference to the colleagues preparing the strategic choice.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Articulate Strategic Preference |
+| `plain_language_description` | string | no | Someone now has to say which option wins and own the costs of that answer. Intake registers the comparison results … |
+| `business_purpose` | string | no | It turns a table of scores into a defensible statement of which way the enterprise should go and what it gives up by … |
+| `practical_context` | string | no | It follows the comparison, opening when the results are presented at intake and closing when the stated preference is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

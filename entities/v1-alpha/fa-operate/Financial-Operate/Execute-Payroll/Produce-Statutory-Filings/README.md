@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Produce Statutory Filings**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Execute Payroll** (`processes:process-fa-operate-zpmxzp`). Its canonical ID is `processes:activity-fa-operate-854gza`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity prepares the returns the law demands as a result of each pay run. The completed cycle arrives with its compensation and withholding figures, the statutory filings are produced from them and checked, and the filings are confirmed onward. Paying people correctly and telling the authorities about it are completed together.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every payroll cycle leaves behind the statutory filings the law requires of it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows each cycle's disbursement, working from the cycle's own figures, and it completes when the produced filings are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A compliance function payroll officer produces the statutory filings from the completed cycle's pay and withholding figures, checks them, and confirms the filings for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Produce Statutory Filings |
+| `plain_language_description` | string | no | This activity prepares the returns the law demands as a result of each pay run. The completed cycle arrives with its … |
+| `business_purpose` | string | no | It exists so every payroll cycle leaves behind the statutory filings the law requires of it. |
+| `practical_context` | string | no | It follows each cycle's disbursement, working from the cycle's own figures, and it completes when the produced filings … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-build-nmmmt6 through concluding task processes:task-eo-build-record-a85q3w, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Procure Hardware and Software'
+plain_language_description: 'This activity buys the hardware and software that the designed platform calls for. The architecture specification arrives with the sourcing rules, purchases are placed and the deliveries checked against them, and the procured items are confirmed onward for installation. The shopping stops when the design''s list is fully delivered.'
+business_purpose: 'It exists so the platform build starts from real, delivered equipment rather than a design with nothing bought.'
+practical_context: 'It opens technology acquisition, once the platform architecture and the sourcing rules are settled, and it closes when the procured items are confirmed complete and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian working for product management places the purchase orders the architecture specification lists, checks each delivery against it, and hands the procured hardware and software over for installation.'

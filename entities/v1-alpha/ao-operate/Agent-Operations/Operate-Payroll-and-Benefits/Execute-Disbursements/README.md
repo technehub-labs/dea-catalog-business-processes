@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 This is a **Activity** (level L3), named **Execute Disbursements**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Operate Payroll and Benefits** (`processes:process-ao-operate-38qyc6`). Its canonical ID is `processes:activity-ao-operate-h6hmqm`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity moves the money: it pays out what the cycle's payroll calculated, correctly and by the due date. The computed payroll arrives first, each disbursement is executed and checked as it goes, and the executed payments are confirmed for the record. This is the moment the workforce actually gets paid.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so agents receive what they are owed, accurately and on the day it falls due.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the payroll calculation and benefits administration each cycle, and it closes when the executed payments are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian releases the cycle's payments from the confirmed payroll figures, checks each disbursement landed as calculated, and confirms the executed payments went out on time.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Pay Out the Cycle's Payroll on Time |
+| `plain_language_description` | string | no | This activity moves the money: it pays out what the cycle's payroll calculated, correctly and by the due date. The … |
+| `business_purpose` | string | no | It exists so agents receive what they are owed, accurately and on the day it falls due. |
+| `practical_context` | string | no | It follows the payroll calculation and benefits administration each cycle, and it closes when the executed payments are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

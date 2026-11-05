@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-de
 
 This is a **Activity** (level L3), named **Design Policy Artifacts**, currently **candidate (yellow)**. It is part of the **Governance System Design** process context, domain `ge`, lifecycle stage Design. It belongs to **Design Policies and Controls** (`processes:process-ge-design-kpsj5b`). Its canonical ID is `processes:activity-ge-design-ka3nqz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity turns the charters already committed and the initiated policy documents into designed artefacts ready for codification. The initiated policies and the governance system design arrive as the sources, artefact designs are produced from them and checked against both, and the designs are confirmed onward for the control objectives. Policy intent gains designed form here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so committed charters and initiated policies become designed artefacts that codification can work from.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the policy and control design once the governance system is designed, and it completes when the policy artefact designs are confirmed for the control objectives.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A governance design authority designer turns the committed charters and initiated policies into designed artefacts, checks them against the governance system design, and confirms them onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Policy Artifacts |
+| `plain_language_description` | string | no | This activity turns the charters already committed and the initiated policy documents into designed artefacts ready for … |
+| `business_purpose` | string | no | It exists so committed charters and initiated policies become designed artefacts that codification can work from. |
+| `practical_context` | string | no | It opens the policy and control design once the governance system is designed, and it completes when the policy … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

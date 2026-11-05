@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Monitor Platform Availability**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Technology Platforms** (`processes:process-eo-operate-4njp7b`). Its canonical ID is `processes:activity-eo-operate-9nhpgy`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity watches the platforms' health through each service window, comparing the availability they deliver with what was promised. Health signals arrive continuously, availability is tracked against the agreed targets, and any shortfall is flagged onward. The platforms' promises are audited in real time.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise knows, window by window, whether its platforms are delivering the availability they promised.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs continuously across each service window against the agreed availability targets, and each tracked window closes when its outcome is confirmed and flagged onward where needed.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A platform custodian watches the health signals through the service window, compares delivered availability with the agreed target, and flags the shortfall when the platform dips below it.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Monitor Platform Availability |
+| `plain_language_description` | string | no | This activity watches the platforms' health through each service window, comparing the availability they deliver with … |
+| `business_purpose` | string | no | It exists so the enterprise knows, window by window, whether its platforms are delivering the availability they … |
+| `practical_context` | string | no | It runs continuously across each service window against the agreed availability targets, and each tracked window closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

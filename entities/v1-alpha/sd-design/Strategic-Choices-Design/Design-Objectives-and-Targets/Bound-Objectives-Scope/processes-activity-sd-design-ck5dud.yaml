@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-design-vdwkmh through concluding task processes:task-sd-design-record-2khy6j, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Set the Objectives Scope'
+plain_language_description: 'The chosen option needs to become measurable, and measurement starts with edges. Intake registers the option and the evaluation criteria, verification confirms both are current, and processing marks out how many objectives and targets the design will carry and where they apply. Confirmation passes the agreed scope downstream and the records custodian preserves it for drafting.'
+business_purpose: 'It keeps the measurement design focused, fixing in advance which objectives and targets the chosen option actually needs.'
+practical_context: 'It opens this process at intake when the chosen option and the evaluation criteria arrive, closing once the scope lines are confirmed and stored.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function analyst scopes the objective set with the activity owner, agreeing how many measures the chosen option needs and where they bite, and the records custodian preserves the agreed edges for the drafting team.'

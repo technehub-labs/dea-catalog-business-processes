@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-co
 
 This is a **Activity** (level L3), named **Frame Segment Thesis**, currently **candidate (yellow)**. It is part of the **Customer Strategy Conception** process context, domain `pr`, lifecycle stage Conceive. It belongs to **Develop Customer Strategy** (`processes:process-pr-conceive-emfgju`). Its canonical ID is `processes:activity-pr-conceive-3tgws4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity fixes which customers the strategy is for, and says why that ground was chosen rather than another. The strategy framing need arrives from a new segment, a drifted strategy, or a thesis to re-test, the segment is bounded and its choice argued, and the framed thesis is confirmed onward for the value exchange. Who we serve is decided before anything else.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the customer strategy names its intended customers and defends the choice.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the customer strategy framing when the enterprise enters a segment, the existing strategy drifts, or the thesis needs re-testing, and it completes once the segment thesis is confirmed onward.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function lead bounds the target customer segment and argues why that ground beats the alternatives, then confirms the thesis for the value exchange.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Frame Segment Thesis |
+| `plain_language_description` | string | no | This activity fixes which customers the strategy is for, and says why that ground was chosen rather than another. The … |
+| `business_purpose` | string | no | It exists so the customer strategy names its intended customers and defends the choice. |
+| `practical_context` | string | no | It opens the customer strategy framing when the enterprise enters a segment, the existing strategy drifts, or the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-build-3p38us through concluding task processes:task-ge-build-record-vjam3g, whose outcome — Case file retained for Constitute Bodies under the records retention schedule with cryptographic integrity protection; statutory retention horizon applied …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Constitute Bodies'
+plain_language_description: 'This activity brings the designed boards and committees formally into existence. The design of the governance system, freshly committed, arrives as the blueprint, each body is constituted per its designed mandate with members appointed, and the constituted bodies are confirmed onward for equipping. Governance stops being a diagram and becomes named bodies with people in them.'
+business_purpose: 'It exists so the governance system''s designed bodies exist formally, with their memberships in place.'
+practical_context: 'It opens the body establishment once a governance system design has been committed, and it completes as each constituted body is confirmed onward for equipping and its first cycle.'
+worked_example:
+  agent_type: human
+  narrative: 'A governing board officer constitutes each designed board and committee, appointing the members its mandate requires, and confirms the constituted bodies onward.'

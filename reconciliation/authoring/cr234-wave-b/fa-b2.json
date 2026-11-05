@@ -1,0 +1,482 @@
+{
+  "processes:activity-fa-improve-qa3vqq": {
+    "plain_language_name": "Assemble Cost Signals",
+    "plain_language_description": "This activity pulls the raw material of the review together — the cost signals, the evidence of margin squeezing, and the control findings. The scattered records arrive from their separate homes, the evidence is gathered and organised, and the assembled set is confirmed onward for the findings. The review starts from one coherent picture instead of fragments.",
+    "business_purpose": "It exists so the cost review examines one organised evidence base rather than scattered signals.",
+    "practical_context": "It opens the cost optimization review when cost signals, margin pressure, or control findings call for one, and it completes once the assembled evidence is confirmed for the findings step.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance design authority analyst gathers the cost signals, the margin-pressure evidence, and the control findings into one pack, checks it for completeness, and confirms the set for the findings step."
+    }
+  },
+  "processes:activity-fa-improve-rqws4s": {
+    "plain_language_name": "Form Cost Review Findings",
+    "plain_language_description": "This activity turns the cost evidence gathered earlier into findings the enterprise can act on. The assembled evidence arrives as the material, findings are formed and each held to what the evidence supports, and the finding set is confirmed onward for routing. The review speaks only as loudly as its numbers allow.",
+    "business_purpose": "It exists so cost conclusions are grounded in evidence and strong enough to act on.",
+    "practical_context": "It follows the evidence assembly, when the pack is presented for reading, and it completes once the finding set is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance design authority analyst reads the assembled cost evidence and forms bounded findings on where money is leaking, then confirms the finding set for routing."
+    }
+  },
+  "processes:activity-fa-improve-bxqsee": {
+    "plain_language_name": "Route Findings to Financial Tracks",
+    "plain_language_description": "This activity sends each finding on to the track that can act on it — the reporting work, the disclosure work, or the control strengthening. The formed findings arrive as the dispatch list, each is routed to its acting track with an owner attached, and the routed findings are confirmed onward for commitment. Nothing the review learned is left without a destination.",
+    "business_purpose": "It exists so every cost finding reaches the financial track equipped to act on it, with an owner who knows it is theirs.",
+    "practical_context": "It follows the forming of findings, when the finding set is handed over, and it completes once the routed findings with owners are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance design authority custodian routes each formed finding to the reporting, disclosure, or control-strengthening track that can act on it, attaching an owner to each."
+    }
+  },
+  "processes:activity-fa-improve-s2fjfj": {
+    "plain_language_name": "Commit Cost Review Outcomes",
+    "plain_language_description": "This activity draws the findings and their routings together into the review's committed record of outcomes. The routed findings arrive as its final inputs, the whole is consolidated and ratified, and the committed outcomes are confirmed as the review's standing result. The review thereby closes with decisions on the record, not observations in the air.",
+    "business_purpose": "It exists so the cost review ends as committed outcomes the financial tracks must act on, not as a filed report.",
+    "practical_context": "It closes the cost optimization review, once findings are formed and routed, and it completes when the committed outcomes are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian consolidates the findings and their routings into the review record, obtains ratification of the outcomes, and preserves the record for the next cycle."
+    }
+  },
+  "processes:activity-fa-improve-capmsa": {
+    "plain_language_name": "Monitor Market and Funding Shifts",
+    "plain_language_description": "This activity watches the market and the funding world for shifts that will eventually demand a changed model. The posture signals arrive continuously, changes worth noting are tracked as they build, and the monitored shifts are confirmed onward for the exposure review. The model's environment is watched so the model is never blindsided.",
+    "business_purpose": "It exists so treasury's model evolves in response to shifts spotted early, not to shifts discovered late.",
+    "practical_context": "It runs continuously, whenever a market or funding posture change begins to build, and each tracked shift closes once it is confirmed onward for the exposure review.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance design authority analyst tracks the funding-market signals as a posture change builds, logs the shift worth acting on, and confirms it for the exposure review."
+    }
+  },
+  "processes:activity-fa-improve-grdfaj": {
+    "plain_language_name": "Review Treasury Exposures",
+    "plain_language_description": "This activity weighs what the watched shifts now expose in treasury terms against the model as it stands. The monitored shifts arrive as the input, the exposures they create are reviewed and bounded against the current model, and the reviewed exposures are confirmed onward for the evolution design. The gap between the model and the world it lives in is made explicit.",
+    "business_purpose": "It exists so the model's evolution is aimed at exposures that are named and measured, not sensed.",
+    "practical_context": "It follows the shift monitoring, when the tracked changes are handed over, and it completes once the reviewed treasury exposures are confirmed for the evolution design.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance design authority analyst weighs the exposures the market shift has created against the current treasury model, bounds them, and confirms the review for the evolution design."
+    }
+  },
+  "processes:activity-fa-improve-xjewfb": {
+    "plain_language_name": "Design Model Evolutions",
+    "plain_language_description": "This activity works each reviewed exposure into a designed change to the treasury and funding model. The reviewed exposures arrive as the case for change, evolutions are designed against them and checked for coherence with the rest of the model, and the designed set is confirmed onward for commitment. The model is improved on purpose, piece by piece.",
+    "business_purpose": "It exists so each named treasury exposure gains a designed model change rather than a vague intention to adapt.",
+    "practical_context": "It follows the exposure review, when the bounded exposures are handed over, and it completes once the designed model evolutions are confirmed for commitment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance design authority designer turns each reviewed exposure into a designed change to the treasury and funding model, checks the set hangs together, and confirms it for commitment."
+    }
+  },
+  "processes:activity-fa-improve-4mju3t": {
+    "plain_language_name": "Commit Model Evolutions",
+    "plain_language_description": "This activity ratifies the designed changes to the model and sets the watch back up for the next shift. The designed evolutions arrive as the case, commitment is given under the standing governance, and the committed changes are confirmed into the model with monitoring resumed. Treasury's model thereby keeps pace with the world it operates in.",
+    "business_purpose": "It exists so the designed model changes become binding, and the watching for the next shift never stops.",
+    "practical_context": "It follows the evolution design, once the designed changes are in hand, and it completes when the committed evolutions are confirmed into the model and monitoring is confirmed resumed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian ratifies the designed model changes, records the commitment, and sets the monitoring watch back up for the next posture shift."
+    }
+  },
+  "processes:activity-fa-improve-6j2xpt": {
+    "plain_language_name": "Analyze Control Findings",
+    "plain_language_description": "This activity reads the audit finding or the control incident that has surfaced, and works out what refinement it actually demands. The finding or incident arrives as the trigger, its causes and scope are analyzed and the refinement need bounded, and the analysis is confirmed onward for the refinement design. A control failure becomes a design brief rather than a blame exercise.",
+    "business_purpose": "It exists so control refinements start from a bounded understanding of what actually went wrong.",
+    "practical_context": "It opens the refinement cycle when an audit finding or control incident surfaces, and it completes once the bounded analysis is confirmed for the refinement design.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance design authority analyst reads the surfaced audit finding, works out the refinement it truly demands, bounds the need, and confirms the analysis for the design step."
+    }
+  },
+  "processes:activity-fa-improve-g6x3fj": {
+    "plain_language_name": "Design Control Refinements",
+    "plain_language_description": "This activity works each analyzed finding into a designed refinement that closes it. The bounded analyses arrive as the case list, refinements are designed against the controls and policies they amend, and the designed set is confirmed onward for commitment. Every named weakness gains a specific strengthening.",
+    "business_purpose": "It exists so each analyzed control weakness gains a designed fix before the policy cycle commits it.",
+    "practical_context": "It follows the findings analysis, when the bounded needs are handed over, and it completes once the designed refinements are confirmed for commitment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance design authority designer turns each analyzed finding into a designed refinement of the affected control or policy, and confirms the designed set for commitment."
+    }
+  },
+  "processes:activity-fa-improve-nsgnav": {
+    "plain_language_name": "Commit Refinements",
+    "plain_language_description": "This activity ratifies the designed refinements through the policy review cycle that governs them. The designed set arrives as the proposal, commitment is given under the cycle's standing rules, and the committed refinements are confirmed into the controls and policies. The enterprise's financial safeguards get stronger by governed increments.",
+    "business_purpose": "It exists so control and policy changes land through the governed cycle, not as unilateral edits.",
+    "practical_context": "It follows the refinement design, once the designed set is in hand, and it completes when the committed refinements are confirmed under the policy review cycle and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian brings the designed refinements before the policy review cycle, records the commitment once given, and confirms the changes into the controls and policies."
+    }
+  },
+  "processes:activity-fa-improve-ssfp68": {
+    "plain_language_name": "Measure Refinement Effectiveness",
+    "plain_language_description": "This activity checks, finding by finding, whether the refinement made actually moved what motivated it. The committed refinements arrive with their originating findings as the yardsticks, effectiveness is measured against each, and the measurement is confirmed for the record. The refinement loop closes on evidence rather than on good intentions.",
+    "business_purpose": "It exists so the enterprise learns whether its control fixes genuinely cured the findings behind them.",
+    "practical_context": "It runs once the committed refinements have bedded in, measured against the findings that prompted them, and it completes when the effectiveness measurement is confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance design authority analyst checks each committed refinement against its originating finding, records where the weakness truly closed, and confirms the measurement for the record."
+    }
+  },
+  "processes:activity-fa-operate-zxtxzj": {
+    "plain_language_name": "Calculate Compensation",
+    "plain_language_description": "This activity works out what each person is owed for the cycle, applying the agreed pay terms, the deductions, and the statutory adjustments. The cycle boundary arrives as the trigger, compensation is calculated per person and checked as it is built, and the calculated amounts are confirmed onward for the withholdings. Payroll's arithmetic starts here, and starts right.",
+    "business_purpose": "It exists so every person's pay for the cycle is calculated correctly before anything is withheld or paid.",
+    "practical_context": "It runs at each payroll cycle boundary, and it completes once the calculated compensation is confirmed onward for the withholding computation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A compliance function payroll analyst calculates each person's compensation for the cycle from the agreed pay terms, applies the statutory adjustments, and confirms the amounts onward."
+    }
+  },
+  "processes:activity-fa-operate-eq5bc9": {
+    "plain_language_name": "Compute Withholdings",
+    "plain_language_description": "This activity works out the deductions — tax and otherwise — that come off the calculated pay. The calculated compensation arrives as the base, withholdings are computed against it per the applicable rules, and the computed deductions are confirmed onward for disbursement. What is earned and what is kept are both established before anyone is paid.",
+    "business_purpose": "It exists so the deductions owed from each person's pay are computed correctly, before payment goes out.",
+    "practical_context": "It follows the compensation calculation within the cycle, and it completes once the computed withholdings are confirmed onward for disbursement.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A compliance function payroll analyst computes the tax and other deductions against the calculated pay for every person, and confirms the withholdings for disbursement."
+    }
+  },
+  "processes:activity-fa-operate-he4rxk": {
+    "plain_language_name": "Disburse Payroll",
+    "plain_language_description": "This activity pays the take-home amounts out to each person for the cycle, routed by their chosen channel and checked as it goes. The computed net amounts arrive as the payment instructions, disbursement is executed under the reconciliation controls, and the paid cycle is confirmed for the record. The moment the whole cycle exists for is here.",
+    "business_purpose": "It exists so net pay reaches every person correctly, through their own payment channel, on time.",
+    "practical_context": "It follows the withholding computation, once the net amounts are confirmed, and it completes when the disbursed cycle is reconciled and confirmed for the record.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A compliance function payroll officer releases the cycle's net pay through each person's chosen channel, reconciles the payments as they land, and confirms the disbursed cycle."
+    }
+  },
+  "processes:activity-fa-operate-854gza": {
+    "plain_language_name": "Produce Statutory Filings",
+    "plain_language_description": "This activity prepares the returns the law demands as a result of each pay run. The completed cycle arrives with its compensation and withholding figures, the statutory filings are produced from them and checked, and the filings are confirmed onward. Paying people correctly and telling the authorities about it are completed together.",
+    "business_purpose": "It exists so every payroll cycle leaves behind the statutory filings the law requires of it.",
+    "practical_context": "It follows each cycle's disbursement, working from the cycle's own figures, and it completes when the produced filings are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A compliance function payroll officer produces the statutory filings from the completed cycle's pay and withholding figures, checks them, and confirms the filings for the record."
+    }
+  },
+  "processes:activity-fa-operate-aab8cw": {
+    "plain_language_name": "Monitor Cash Positions",
+    "plain_language_description": "This activity keeps a live eye on where the cash sits, checked against the treasury rules. Position data arrives continuously across the enterprise's accounts, the positions are tracked and compared with the policy's expectations, and any anomaly is flagged onward. Treasury never has to wonder how much money it has.",
+    "business_purpose": "It exists so the enterprise knows its cash position at all times and spots departures from policy as they happen.",
+    "practical_context": "It runs continuously as positions move, checked against the treasury policy, and each monitored position closes when it is confirmed and any anomaly flagged onward.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A treasury custodian tracks the cash positions across the accounts through the day, spots a balance drifting outside the treasury policy's expectations, and flags it onward."
+    }
+  },
+  "processes:activity-fa-operate-pg9eys": {
+    "plain_language_name": "Forecast Liquidity",
+    "plain_language_description": "This activity projects the cash ahead, from where positions stand today and what is known to be owed. The monitored positions and the known obligations arrive as the inputs, the liquidity forecast is drawn and checked against both, and the forecast is confirmed onward for the investment decisions. Tomorrow's cash needs are met because today's treasury saw them coming.",
+    "business_purpose": "It exists so liquidity needs are foreseen from positions and obligations, not discovered in the moment.",
+    "practical_context": "It runs against the monitored positions and the known obligations, and it completes once the liquidity forecast is confirmed onward for the investment decisions.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A treasury analyst projects the coming liquidity from today's monitored positions and the obligations on the books, and confirms the forecast for the investment decisions."
+    }
+  },
+  "processes:activity-fa-operate-5zesye": {
+    "plain_language_name": "Execute Investment Decisions",
+    "plain_language_description": "This activity puts idle cash to work through the investments treasury policy allows. Surplus liquidity identified against the forecast arrives as the opportunity, investments are executed within the policy's bounds, and the executed decisions are confirmed for the record. Money that would sit still earns instead, inside the rules.",
+    "business_purpose": "It exists so surplus cash is deployed productively without ever stepping outside the treasury policy.",
+    "practical_context": "It runs when the forecast shows surplus liquidity worth deploying, and it completes once the executed investments are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A treasury officer deploys the forecast surplus into investments the policy permits, checks each against its bounds, and confirms the executed decisions for the record."
+    }
+  },
+  "processes:activity-fa-operate-mumzq7": {
+    "plain_language_name": "Report Treasury Position",
+    "plain_language_description": "This activity lays out where treasury stands — positions, forecasts, and investments — for whoever depends on knowing. The accumulated picture arrives as the material, the position report is drawn from it and checked, and the report is confirmed onward to its consumers. Treasury's world becomes legible to the rest of the enterprise.",
+    "business_purpose": "It exists so the people relying on treasury's state can see it, reported rather than retold.",
+    "practical_context": "It runs on the reporting cadence once positions, forecasts, and investments have accumulated, and it completes when the treasury position report is confirmed and delivered to its consumers.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A treasury custodian draws the positions, forecasts, and investments into one position report, checks it against the underlying records, and confirms it to the consumers."
+    }
+  },
+  "processes:activity-fa-operate-48s3kx": {
+    "plain_language_name": "Monitor Tax Exposures",
+    "plain_language_description": "This activity keeps watch on what the enterprise owes in tax in the quiet stretches between filings. Operational changes arrive continuously as potential exposure events, exposures are tracked as they develop, and the monitored picture is confirmed onward for the returns. Tax surprises are caught growing, not arrived.",
+    "business_purpose": "It exists so tax exposures are seen building between filing cycles rather than surprising the return preparation.",
+    "practical_context": "It runs continuously between filing cycles as exposure events arise, and it completes once the monitored exposures are confirmed onward for the return preparation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A compliance function analyst watches for operational changes carrying tax consequences between filings, tracks the developing exposure, and confirms the picture for the return preparation."
+    }
+  },
+  "processes:activity-fa-operate-9g2b8x": {
+    "plain_language_name": "Prepare Tax Returns",
+    "plain_language_description": "This activity draws up each return the calendar brings due, from the records behind it. The filing boundary arrives as the trigger, the return is prepared from the enterprise's records and the monitored exposures, and the prepared return is confirmed onward for the payment scheduling. What is owed is stated, accurately and on time.",
+    "business_purpose": "It exists so every return due is prepared correctly from sound records, ready for payment and filing.",
+    "practical_context": "It runs at each filing boundary the compliance calendar sets, and it completes once the prepared return is confirmed onward for the payment scheduling.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A compliance function preparer draws up the return due at the filing boundary from the enterprise's records and the monitored exposures, and confirms it for payment scheduling."
+    }
+  },
+  "processes:activity-fa-operate-h7wym7": {
+    "plain_language_name": "Schedule Tax Payments",
+    "plain_language_description": "This activity sets the dates and amounts for settling what the prepared returns show as owed. The prepared returns arrive as the basis, payments are scheduled against the statutory deadlines, and the payment schedule is confirmed onward for execution and record. The enterprise's tax debts acquire dates before they acquire penalties.",
+    "business_purpose": "It exists so tax shown as owed is paid on time, by schedule rather than by scramble.",
+    "practical_context": "It follows the return preparation, when the amounts owed are stated, and it completes once the scheduled payments are confirmed onward for execution and the filing record.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A compliance function officer sets the payment dates and amounts from the prepared returns against the statutory deadlines, and confirms the schedule for execution."
+    }
+  },
+  "processes:activity-fa-operate-avuag6": {
+    "plain_language_name": "Maintain Filing Record",
+    "plain_language_description": "This activity keeps the ledger of filings current — what has been returned, what has been paid, and where the enterprise stands. Completed returns, scheduled payments, and exposure movements arrive as the inputs, the record is updated as each lands, and the current filing record is confirmed onward. Compliance status is thereby a fact on file, not a feeling.",
+    "business_purpose": "It exists so the enterprise's tax compliance position is always knowable from a maintained record.",
+    "practical_context": "It runs continuously as returns, payments, and exposure movements land, and each update closes when the current filing record is confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A compliance function custodian posts each completed return and scheduled payment to the filing record, keeps the compliance status current, and confirms the record onward."
+    }
+  },
+  "processes:activity-fa-operate-dmzn73": {
+    "plain_language_name": "Prepare Financial Statements",
+    "plain_language_description": "This activity draws up the statements each reporting milestone calls for, from the closed books. The milestone arrives with the ledger balances behind it, the statements are prepared and checked against those balances, and the prepared statements are confirmed onward for the footnotes. The enterprise's formal financial account of itself begins here.",
+    "business_purpose": "It exists so every reporting milestone produces statements that faithfully reflect the closed books.",
+    "practical_context": "It runs at each reporting or disclosure milestone, working from the closed period's balances, and it completes once the prepared statements are confirmed onward for the footnotes.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A compliance function preparer draws up the statements the milestone calls for from the closed ledger balances, checks them against the books, and confirms them for the footnotes."
+    }
+  },
+  "processes:activity-fa-operate-dv3u8j": {
+    "plain_language_name": "Prepare Footnotes and Disclosures",
+    "plain_language_description": "This activity writes the notes that tell the reader what sits behind the statement figures. The prepared statements arrive as the text to be explained, footnotes and disclosures are drafted against them and checked for completeness, and the prepared set is confirmed onward for the package review. The numbers gain their context here.",
+    "business_purpose": "It exists so the statements are accompanied by the disclosures that make them honestly readable.",
+    "practical_context": "It follows the statement preparation, working from the prepared statements, and it completes once the footnotes and disclosures are confirmed onward for the package review.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A compliance function preparer drafts the footnotes and disclosures explaining the prepared statements, checks nothing required is missing, and confirms the set for the package review."
+    }
+  },
+  "processes:activity-fa-operate-mceyb8": {
+    "plain_language_name": "Review Reporting Package",
+    "plain_language_description": "This activity gives the assembled reporting package one careful read before it goes anywhere. Statements and their footnotes arrive assembled together, the package is reviewed for accuracy and completeness, and the reviewed package is confirmed onward for delivery. The enterprise's name goes on these numbers, so someone reads them properly first.",
+    "business_purpose": "It exists so nothing leaves the enterprise under its name unchecked.",
+    "practical_context": "It runs once the statements and footnotes are assembled into the package, ahead of every delivery, and it completes when the reviewed package is confirmed onward for delivery.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A compliance function reviewer reads the assembled package end to end, checks the statements against their footnotes for accuracy and completeness, and confirms it for delivery."
+    }
+  },
+  "processes:activity-fa-operate-hxqddg": {
+    "plain_language_name": "Deliver Reports and Disclosures",
+    "plain_language_description": "This activity gets the finished, reviewed reporting out to everyone who relies on it, inside and outside. The reviewed package arrives as the release candidate, delivery is executed to each consumer, and the delivered reporting is confirmed for the record. All the preparation counts for nothing until this hands it over.",
+    "business_purpose": "It exists so the reviewed reporting actually reaches its internal and external readers.",
+    "practical_context": "It follows the package review, once the reporting is cleared for release, and it completes when the delivered reports and disclosures are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A compliance function custodian delivers the reviewed package to the internal and external consumers on its distribution list, and confirms each delivery for the record."
+    }
+  },
+  "processes:activity-fa-operate-6pk6zf": {
+    "plain_language_name": "Process Journal Entries",
+    "plain_language_description": "This activity handles the journal entries arriving day by day, posting each into the books. Entries flow in from across the operation, each is processed under the configured rules and checked as it posts, and the processed entries are confirmed onward. The ledger's daily diet is digested here.",
+    "business_purpose": "It exists so the ledger's steady stream of entries is posted correctly, rule by rule.",
+    "practical_context": "It runs continuously as entries flow into the ledger in steady state, and each posting closes when it is confirmed onward into the maintained books.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A ledger custodian processes each arriving journal entry under the configured posting rules, checks it as it posts, and confirms the processed entries onward."
+    }
+  },
+  "processes:activity-fa-operate-v4j4en": {
+    "plain_language_name": "Coordinate Subledger Flows",
+    "plain_language_description": "This activity herds the streams from the side-ledgers — payables, receivables, payroll, tax, and treasury — into the main books. The subledgers' flows arrive continuously, their passage into the ledger is coordinated and checked for completeness, and the coordinated flows are confirmed onward. The main books see everything the side books know.",
+    "business_purpose": "It exists so the general ledger receives every subledger's activity, completely and in order.",
+    "practical_context": "It runs continuously as the subledgers generate their flows, and each coordinated passage closes when it is confirmed onward into the ledger.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A ledger custodian shepherds the payables, receivables, payroll, tax, and treasury flows into the main books, checks nothing is dropped in transit, and confirms the coordinated flows."
+    }
+  },
+  "processes:activity-fa-operate-kzqaqw": {
+    "plain_language_name": "Maintain Account Integrity",
+    "plain_language_description": "This activity keeps the account structure true to the chart it was designed from, as entries pile up. The live structure is compared continuously against the chart of accounts as designed, departures are corrected as they are found, and the maintained integrity is confirmed onward. The books' skeleton never quietly warps.",
+    "business_purpose": "It exists so the ledger's account structure stays exactly what the design said it should be.",
+    "practical_context": "It runs continuously against the designed chart of accounts as the ledger operates, and each integrity pass closes when the maintained structure is confirmed onward.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A ledger custodian checks the live account structure against the designed chart of accounts, corrects the departure it finds, and confirms the maintained integrity onward."
+    }
+  },
+  "processes:activity-fa-operate-ksg7yj": {
+    "plain_language_name": "Monitor Ledger Health",
+    "plain_language_description": "This activity watches how well the books are running — how fast entries land, what error counts show, whether balances look odd — for the system the enterprise trusts as its record. Health signals arrive continuously from the operating ledger, the picture is tracked and anomalies flagged, and the monitored health is confirmed onward. The books' own vital signs are read daily.",
+    "business_purpose": "It exists so the financial system of record is checked for health as vigilantly as any machine.",
+    "practical_context": "It runs continuously across the operating ledger's signals, and each monitored health pass closes when it is confirmed and any anomaly flagged onward.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A ledger custodian reads the posting latencies, error counts, and balance anomalies from the operating ledger, flags the odd-looking balance, and confirms the health picture onward."
+    }
+  },
+  "processes:activity-fa-operate-ayt4aq": {
+    "plain_language_name": "Execute Period-End Entries",
+    "plain_language_description": "This activity puts through the entries that fence the period off — accruals, deferrals, and the adjustments between. The close boundary arrives as the trigger, the period-end entries are executed and checked against the period's activity, and the executed entries are confirmed onward for reconciliation. The period's books are made final by design, not by decree.",
+    "business_purpose": "It exists so the period ends with its proper entries booked, not with activity left hanging over the boundary.",
+    "practical_context": "It runs at each period close boundary, and it completes once the executed period-end entries are confirmed onward for the reconciliations.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A close custodian books the accruals, deferrals, and adjustments that properly end the period, checks them against the period's activity, and confirms the entries for reconciliation."
+    }
+  },
+  "processes:activity-fa-operate-5dp28t": {
+    "plain_language_name": "Execute Reconciliations",
+    "plain_language_description": "This activity checks the ledger's balances against their counterparts outside it before the close is declared done. The executed entries arrive as the starting state, reconciliations are performed across the balances and their external counterparts, and the reconciled state is confirmed onward for certification. Nothing certifies here until the books agree with the world.",
+    "business_purpose": "It exists so the close rests on balances proven against reality, not merely summed.",
+    "practical_context": "It follows the period-end entries, once the period is fenced off, and it completes when the reconciled balances are confirmed onward for the close certification.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A close custodian reconciles each ledger balance against its bank, subledger, or counterparty counterpart, resolves the differences found, and confirms the reconciled state for certification."
+    }
+  },
+  "processes:activity-fa-operate-5dufzc": {
+    "plain_language_name": "Certify Period Close",
+    "plain_language_description": "This activity gives the closed period its formal certification, releasing the numbers for reporting to begin. The reconciled period arrives as the candidate, the close is certified complete and correct under the close controls, and the certified period is confirmed onward for the reports. The books are officially shut until someone certifies this.",
+    "business_purpose": "It exists so reporting builds only on a period whose close has been formally certified.",
+    "practical_context": "It follows the reconciliations, once the balances agree with the world, and it completes when the certified close is confirmed and its record retained for the reporting step.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A close custodian certifies the reconciled period as complete and correct under the close controls, and confirms the certified close for the management reporting."
+    }
+  },
+  "processes:activity-fa-operate-bsq94u": {
+    "plain_language_name": "Produce Management Reports",
+    "plain_language_description": "This activity draws the closed period's numbers into the reports management will actually read. The certified period arrives as the source of truth, the management reports are produced from it and checked against it, and the produced reports are confirmed onward. The close's final act is making its work legible to decision-makers.",
+    "business_purpose": "It exists so management sees the closed period through reports drawn from certified numbers.",
+    "practical_context": "It follows the close certification, working from the certified period, and it completes when the produced management reports are confirmed onward for their readers.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A close custodian produces the management reports from the certified period's numbers, checks them against the certified books, and confirms the reports for their readers."
+    }
+  },
+  "processes:activity-fa-operate-f3c2rt": {
+    "plain_language_name": "Match Invoices",
+    "plain_language_description": "This activity checks each incoming invoice against the order that placed it and the receipt that confirmed it. Supplier invoices arrive continuously, each is matched against its purchase order and receipt, and the matched invoices are confirmed onward for approval. The enterprise pays only for what it ordered and actually got.",
+    "business_purpose": "It exists so no invoice is paid without proof it matches something ordered and received.",
+    "practical_context": "It runs as supplier invoices arrive, and it completes once each matched invoice is confirmed onward for the payment approval.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A payables custodian matches each arriving supplier invoice against its purchase order and the goods receipt, clears the ones that agree, and confirms them for approval."
+    }
+  },
+  "processes:activity-fa-operate-rsrcp2": {
+    "plain_language_name": "Record Payment Approvals",
+    "plain_language_description": "This activity logs the sign-offs that authorize paying an invoice once it has matched. The matched invoices arrive as the candidates, approvals are recorded under the delegation of authority, and the approved authorizations are confirmed onward for payment. Money leaves the enterprise only after this says someone accountable agreed.",
+    "business_purpose": "It exists so every payment carries a recorded, accountable approval behind it.",
+    "practical_context": "It follows the invoice matching, once invoices are cleared, and it completes when the recorded approvals are confirmed onward for the payment execution.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A payables custodian records the approving sign-off for each matched invoice under the delegation of authority, and confirms the approvals for the payment run."
+    }
+  },
+  "processes:activity-fa-operate-k9cf3b": {
+    "plain_language_name": "Execute Payments to Plan",
+    "plain_language_description": "This activity pays the approved obligations in the order the plan sets, choosing the right instrument for each settlement. Approved and authorized payments arrive as the worklist, disbursement is executed to the plan's ordering and checked as it goes, and the executed payments are confirmed for the record. Suppliers are paid as promised, by design.",
+    "business_purpose": "It exists so approved supplier obligations are settled on plan, by the right payment instrument.",
+    "practical_context": "It follows the payment approvals, working to the payment plan as due dates arrive, and it completes when the executed payments are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A payables custodian runs the approved payments in the plan's due-date order, selecting the settlement instrument each supplier expects, and confirms the executed payments."
+    }
+  },
+  "processes:activity-fa-operate-mwerdy": {
+    "plain_language_name": "Maintain Payables Record",
+    "plain_language_description": "This activity keeps a running statement of what the enterprise owes its suppliers at any moment. Matched invoices, approvals, and executed payments arrive as the inputs, the payables record is updated as each lands, and the current record is confirmed onward. The enterprise's supplier debts are always knowable to the penny.",
+    "business_purpose": "It exists so the enterprise's obligations to suppliers are always knowable from a maintained record.",
+    "practical_context": "It runs continuously as invoices, approvals, and payments land, and each update closes when the current payables record is confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A payables custodian posts each matched invoice, approval, and executed payment to the payables record, keeping the supplier position current, and confirms the record onward."
+    }
+  },
+  "processes:activity-fa-operate-hvp7jn": {
+    "plain_language_name": "Issue Customer Invoices",
+    "plain_language_description": "This activity sends out the invoices each billing moment brings due to the customers behind them. Fulfilment records and contract terms arrive as the basis, invoices are issued against them and checked for accuracy, and the issued invoices are confirmed onward for collection. The enterprise's claims on its customers begin as pieces of paper done right.",
+    "business_purpose": "It exists so every billing event produces an accurate invoice, correctly issued to the customer it names.",
+    "practical_context": "It runs at each billing event, working from the fulfilment records and contract terms, and it completes once the issued invoices are confirmed onward for collection.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A receivables custodian issues the invoice each billing event brings due, drawn from the fulfilment records and contract terms, and confirms it for the collection work."
+    }
+  },
+  "processes:activity-fa-operate-4yx8be": {
+    "plain_language_name": "Manage Collections",
+    "plain_language_description": "This activity chases the issued invoices in to cash, stepping up the pressure per the credit-control policy as they age. The issued invoices arrive as the book to collect, collection activity is managed against the payment terms, and the managed collections are confirmed onward for the cash application. Sales become money here, or the reasons why not are on record.",
+    "business_purpose": "It exists so issued invoices turn into received cash, with the credit-control policy applied as they age.",
+    "practical_context": "It runs against the issued invoices from issuance to receipt, and it completes once the managed collections are confirmed onward for the cash application.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A receivables custodian follows up the aging invoices per the credit-control policy, escalates the long-overdue account a step, and confirms the collection activity onward."
+    }
+  },
+  "processes:activity-fa-operate-rnszvv": {
+    "plain_language_name": "Apply Cash to Ledger",
+    "plain_language_description": "This activity matches the money that has arrived to the invoices it settles, clearing them on the books. Customer receipts arrive against the open invoices, cash is applied and the invoices cleared, and the applied cash is confirmed for the record. Payment and obligation are formally reunited here.",
+    "business_purpose": "It exists so received cash is correctly matched to the invoices it settles, on the books.",
+    "practical_context": "It runs as receipts arrive against open invoices, and it completes once the applied cash is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A receivables custodian applies each customer receipt to the invoices it settles, clears them on the books, and confirms the applied cash for the record."
+    }
+  },
+  "processes:activity-fa-operate-ze2sed": {
+    "plain_language_name": "Maintain Receivables Record",
+    "plain_language_description": "This activity keeps a running statement of what customers owe the enterprise at any moment. Issued invoices, collection activity, and applied cash arrive as the inputs, the receivables record is updated as each lands, and the current record is confirmed onward. The enterprise's customer debts are always knowable to the penny.",
+    "business_purpose": "It exists so the enterprise's customer obligations are always knowable from a maintained record.",
+    "practical_context": "It runs continuously as invoices, collections, and cash applications land, and each update closes when the current receivables record is confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A receivables custodian posts each issued invoice, collection action, and cash application to the receivables record, keeping the customer position current, and confirms it onward."
+    }
+  },
+  "processes:activity-fa-retire-t3uyxp": {
+    "plain_language_name": "Establish Run-Off Accounting Basis",
+    "plain_language_description": "This activity moves the books off their going-concern footing and onto the run-off statutory basis the regulator requires, reworking how value is recognized, how liabilities are measured, and which assets still count. The going-concern position, the run-off authorisation, and the controlling rule set arrive together, the transition is executed and its adjustments recorded, and the run-off statutory accounts are confirmed onward. The enterprise's financial story formally changes its ending here.",
+    "business_purpose": "It exists so the winding-down entity reports on the statutory basis its run-off regime demands from day one.",
+    "practical_context": "It opens the run-off once the authorisation is granted, transitioning the statements from going-concern to the statutory basis, and it completes when the run-off statutory accounts with basis-of-preparation disclosure are confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance officer transitions the statements from going-concern to the run-off statutory basis under the controlling rule set, records the transition adjustments, and confirms the run-off accounts."
+    }
+  },
+  "processes:activity-fa-retire-uuqbe9": {
+    "plain_language_name": "Maintain Reserving Discipline",
+    "plain_language_description": "This activity holds the line on the numbers that keep a winding-down book solvent — the reserve, the capital cushion, and the matching of assets to liabilities — reviewed on the regime's rhythm and reported to the regulator. Run-off experience, asset valuations, and liability cashflow projections arrive as the inputs, the discipline is maintained with actuarial certification, and corrective action is taken where the numbers demand it. Solvency is not an event in a run-off; it is a practice.",
+    "business_purpose": "It exists so the winding-down entity stays demonstrably solvent throughout its run-off, on the regime's reserving standard.",
+    "practical_context": "It runs throughout the run-off period to the regime's review cadence, and each maintained reserve with its actuarial certification closes when it is confirmed and reported to the regulator.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The actuarial function certifies the maintained reserve each period, and where the cashflow projections move against the book, corrective action on capital or asset matching is taken and reported to the regulator."
+    }
+  },
+  "processes:activity-fa-retire-vmpdww": {
+    "plain_language_name": "Adjudicate Policyholder Claims",
+    "plain_language_description": "This activity hears each claim from a policyholder or priority creditor, weighs it under the run-off regime's priority order, and rules — pay, part-pay, or deny — with the reasoning written down. Claim submissions and their supporting documentation arrive against the priority waterfall, each claim is validated and adjudicated, and the adjudicated register is confirmed onward. The enterprise's last promises are kept, in order, on the record.",
+    "business_purpose": "It exists so policyholders and priority creditors are paid according to the regime's priority order, each decision evidenced.",
+    "practical_context": "It runs through the run-off as claim submissions arrive against the priority waterfall, and it completes when each adjudication — payment, part-payment, or denial with rationale — is confirmed into the claim register.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A claims adjudicator validates a policyholder's submission against the documentation, rules on it under the priority waterfall, and records the decision with its rationale in the claim register."
+    }
+  },
+  "processes:activity-fa-retire-3g3m9u": {
+    "plain_language_name": "File Run-Off Closure Evidence",
+    "plain_language_description": "This activity assembles the closing evidence — the final accounts, proof the claims are cleared, the plan for what remains of the assets, and the ask to give up the licence — and files it with the regulator for acknowledgement. The final financial position arrives with the clearance certificate and the distribution plan, the submission is prepared and filed, and the regulator's acknowledgement is confirmed for the record. The run-off ends by demonstrating it has ended.",
+    "business_purpose": "It exists so the run-off closes with formal, filed evidence that everything it owed has been done.",
+    "practical_context": "It runs once the claims are adjudicated and the final position is struck, and it completes when the filed closure submission with the regulator's acknowledgement is confirmed and the residual distribution recorded.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance officer files the closure submission with the controlling regulator — final accounts, the claim clearance certificate, the residual-asset distribution plan, and the licence surrender request — and confirms the acknowledgement."
+    }
+  }
+}

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-im
 
 This is a **Activity** (level L3), named **Collect Customer Feedback**, currently **candidate (yellow)**. It is part of the **Customer Insight and Retention** process context, domain `pr`, lifecycle stage Improve. It belongs to **Operate Customer Retention Programs** (`processes:process-pr-improve-t6uvan`). Its canonical ID is `processes:activity-pr-improve-p988q3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity keeps the customer's own voice flowing in — satisfaction measures, survey results, and what service interactions reveal — drawn from the active base without pause. The active relationships arrive as the listening field, feedback is collected continuously and organised as it lands, and the collected signals are confirmed onward for the churn analysis. The enterprise hears its customers on a heartbeat, not once a year.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise's view of its customers is fed continuously by the customers themselves.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs continuously across the active customer base while the relationships are in operation, and it completes as each collected signal is confirmed onward for the churn analysis.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A customer relationship management analyst keeps satisfaction measures, survey results, and service feedback flowing in from the active base, organising each as it lands.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Collect Customer Feedback |
+| `plain_language_description` | string | no | This activity keeps the customer's own voice flowing in — satisfaction measures, survey results, and what service … |
+| `business_purpose` | string | no | It exists so the enterprise's view of its customers is fed continuously by the customers themselves. |
+| `practical_context` | string | no | It runs continuously across the active customer base while the relationships are in operation, and it completes as each … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

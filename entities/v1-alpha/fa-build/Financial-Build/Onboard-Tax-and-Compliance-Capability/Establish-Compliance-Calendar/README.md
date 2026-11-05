@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 
 This is a **Activity** (level L3), named **Establish Compliance Calendar**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Onboard Tax and Compliance Capability** (`processes:process-fa-build-ucfjgt`). Its canonical ID is `processes:activity-fa-build-b3qxke`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity lays down the timetable of filings and reports the new regime will demand. The jurisdictional obligations arrive as the raw material, the calendar is established from them and checked for completeness, and the established calendar is confirmed onward for the filings work. Every obligation gets a date before any obligation gets missed.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise's obligations under a new regime are all dated and owned before any falls due.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the tax and compliance onboarding when a new jurisdiction or regime applies, and it completes once the compliance calendar is established and confirmed onward.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance function builder lays the new regime's filing and reporting obligations onto a dated compliance calendar, checks nothing is missing, and confirms the calendar for the filings.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Establish Compliance Calendar |
+| `plain_language_description` | string | no | This activity lays down the timetable of filings and reports the new regime will demand. The jurisdictional obligations … |
+| `business_purpose` | string | no | It exists so the enterprise's obligations under a new regime are all dated and owned before any falls due. |
+| `practical_context` | string | no | It opens the tax and compliance onboarding when a new jurisdiction or regime applies, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

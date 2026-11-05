@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Conduct Cycle Counts**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Warehouse and Inventory** (`processes:process-eo-operate-zwzmbd`). Its canonical ID is `processes:activity-eo-operate-k73gbs`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity counts the stock on the shelves on a rotating timetable and hands any differences found to the accuracy effort. The counting timetable arrives as the schedule, counts are performed physically and their variances recorded, and the counted evidence is confirmed onward. Trust in the stock numbers is earned a section at a time.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the stock record is verified against physical reality continuously, not just at year-end.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs to the cyclical counting timetable across the warehouse's stock, and it completes once each count's variances are recorded and confirmed into the accuracy work.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A warehouse counter physically counts the scheduled section's stock, records the variances against the system positions, and hands them to the accuracy work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Conduct Cycle Counts |
+| `plain_language_description` | string | no | This activity counts the stock on the shelves on a rotating timetable and hands any differences found to the accuracy … |
+| `business_purpose` | string | no | It exists so the stock record is verified against physical reality continuously, not just at year-end. |
+| `practical_context` | string | no | It runs to the cyclical counting timetable across the warehouse's stock, and it completes once each count's variances … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

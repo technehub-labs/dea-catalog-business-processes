@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-de
 
 This is a **Activity** (level L3), named **Design Scenario Signposts**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Design Strategic Scenarios** (`processes:process-sd-design-uenzna`). Its canonical ID is `processes:activity-sd-design-vhcbj5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+A scenario is only useful if you can tell it is coming true. Intake brings the drafted scenarios in, verification tests the candidate indicators for observability, and processing sets out the signposts — concrete signals showing which future is actually unfolding. Confirmation passes the signpost designs downstream and the records custodian preserves them ready for commitment.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It equips each scenario with observable tells, so monitoring can spot early which assumed future is materialising and steering can react in time.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows scenario drafting, opening at intake of the drafted set and closing when the signpost designs are confirmed and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function picks observable indicators for each drafted scenario, checks with the activity owner that each tell can genuinely be seen in normal reporting, and the confirmation custodian releases the signpost designs for commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Scenario Signposts |
+| `plain_language_description` | string | no | A scenario is only useful if you can tell it is coming true. Intake brings the drafted scenarios in, verification tests … |
+| `business_purpose` | string | no | It equips each scenario with observable tells, so monitoring can spot early which assumed future is materialising and … |
+| `practical_context` | string | no | It follows scenario drafting, opening at intake of the drafted set and closing when the signpost designs are confirmed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

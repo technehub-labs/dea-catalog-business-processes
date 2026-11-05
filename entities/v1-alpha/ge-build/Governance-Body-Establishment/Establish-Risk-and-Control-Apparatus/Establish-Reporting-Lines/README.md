@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-bu
 
 This is a **Activity** (level L3), named **Establish Reporting Lines**, currently **candidate (yellow)**. It is part of the **Governance Body Establishment** process context, domain `ge`, lifecycle stage Build. It belongs to **Establish Risk and Control Apparatus** (`processes:process-ge-build-rx7kt5`). Its canonical ID is `processes:activity-ge-build-tj3qj3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the channels by which risk and control news reaches the bodies that govern. The governance integration design arrives as the wiring diagram, reporting lines are established from apparatus to bodies and checked against it, and the established lines are confirmed onward for readiness. Risk seen but unreported is risk unmanaged; this closes that gap.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so what the risk apparatus sees reliably reaches the bodies charged with acting on it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs alongside the registers and tooling, working from the governance integration design, and it completes once the established reporting lines are confirmed onward for readiness.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function officer draws the reporting channels from the apparatus up to the governing bodies per the integration design, and confirms the established lines onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Establish Reporting Lines |
+| `plain_language_description` | string | no | This activity draws the channels by which risk and control news reaches the bodies that govern. The governance … |
+| `business_purpose` | string | no | It exists so what the risk apparatus sees reliably reaches the bodies charged with acting on it. |
+| `practical_context` | string | no | It runs alongside the registers and tooling, working from the governance integration design, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

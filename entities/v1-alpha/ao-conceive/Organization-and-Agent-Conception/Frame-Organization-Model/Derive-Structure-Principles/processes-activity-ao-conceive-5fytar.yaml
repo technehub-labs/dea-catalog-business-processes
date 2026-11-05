@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-conceive-ruxjvh through concluding task processes:task-ao-conceive-record-5v86ga, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Derive the Structure Principles'
+plain_language_description: 'This activity turns the newly committed strategy for the organization and its agents into the structural ground rules the organization model will have to respect. The strategy is brought in and studied, the principles the structure must follow are derived from it, and the derived principles are confirmed with those framing the model. From then on, decisions about spans and boundaries are made inside those principles.'
+business_purpose: 'It exists so the organization model is framed from explicit strategic principles rather than from habit or ad hoc preference.'
+practical_context: 'It opens the framing of the organization model, when the committed organization and agent strategy is presented, and it closes once the derived principles are confirmed and their record preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function lead reads the newly committed strategy and draws out the structural principles it implies, such as how decision rights should sit, then confirms those principles with workforce management before reporting spans are set.'

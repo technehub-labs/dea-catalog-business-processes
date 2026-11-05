@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-de
 
 This is a **Activity** (level L3), named **Draft Strategic Options**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Design Strategic Options** (`processes:process-sd-design-ewvbsh`). Its canonical ID is `processes:activity-sd-design-eseuhe`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Inside the agreed space, the actual options take shape. The marked boundaries arrive at intake, verification checks the drafting instructions are usable, and processing writes a spread of candidate options — each one distinct, described and kept within the lines. Confirmation announces the drafted set to downstream colleagues and the working papers are preserved ahead of the criteria step.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It turns the permitted space into a genuine set of choices, giving the evaluation work something real to compare.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the design space is set, opening at intake of the bounded space and closing when the drafted options are confirmed ready for criteria framing.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Strategy function writers sketch three distinct options inside the agreed space, a verification custodian sends any that stray outside the lines back for tightening, and the confirmation custodian tells the criteria team the option set is ready.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Draft Strategic Options |
+| `plain_language_description` | string | no | Inside the agreed space, the actual options take shape. The marked boundaries arrive at intake, verification checks the … |
+| `business_purpose` | string | no | It turns the permitted space into a genuine set of choices, giving the evaluation work something real to compare. |
+| `practical_context` | string | no | It runs once the design space is set, opening at intake of the bounded space and closing when the drafted options are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

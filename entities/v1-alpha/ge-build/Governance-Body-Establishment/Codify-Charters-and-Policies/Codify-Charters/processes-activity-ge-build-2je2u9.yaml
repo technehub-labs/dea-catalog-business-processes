@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-build-mctdgc through concluding task processes:task-ge-build-record-h7b56b, whose outcome — Case file retained for Codify Charters under the records retention schedule with cryptographic integrity protection; statutory retention horizon applied where …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Codify Charters'
+plain_language_description: 'This activity writes the founding documents of the boards and committees about to be stood up. The governance system design arrives as the mandate of record, each charter is codified from it and checked against what the design intended, and the codified charters are confirmed onward for publication. A body''s authority begins in the document this activity produces.'
+business_purpose: 'It exists so every governance body is founded on a written charter matching its designed mandate.'
+practical_context: 'It runs while governance bodies are being established and their documents must exist for them to operate, and it completes once the codified charters are confirmed onward for publication.'
+worked_example:
+  agent_type: human
+  narrative: 'A governing board officer codifies each designed body''s mandate into its operative charter, checks the text against the governance system design, and confirms the charters for publication.'

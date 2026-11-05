@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 
 This is a **Activity** (level L3), named **Assemble Go-to-Market Assets**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. It belongs to **Prepare Market Readiness** (`processes:process-pv-build-6hjzmk`). Its canonical ID is `processes:activity-pv-build-d5873p`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity gathers everything the offering will need in front of customers — the materials, the messaging, the supporting artefacts — into one launch kit. The freshly built offering arrives as the thing to be sold, go-to-market assets are assembled against it and checked, and the assembled kit is confirmed onward for the pricing and channels. The product learns to speak for itself here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the offering goes to market with its complete kit of selling materials.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the market readiness preparation once the product or service is built, and it completes as the assembled go-to-market assets are confirmed onward for pricing and channel setup.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management officer assembles the launch materials and messaging the built offering needs, checks the kit, and confirms the assembled assets onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assemble Go-to-Market Assets |
+| `plain_language_description` | string | no | This activity gathers everything the offering will need in front of customers — the materials, the messaging, the … |
+| `business_purpose` | string | no | It exists so the offering goes to market with its complete kit of selling materials. |
+| `practical_context` | string | no | It opens the market readiness preparation once the product or service is built, and it completes as the assembled … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

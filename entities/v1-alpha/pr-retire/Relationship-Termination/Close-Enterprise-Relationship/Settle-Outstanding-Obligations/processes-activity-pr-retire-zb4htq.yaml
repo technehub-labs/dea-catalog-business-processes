@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-retire-bd3asa through concluding task processes:task-pr-retire-record-n6uaxd, whose outcome — Closure case file retained for Settle Outstanding Obligations under the records retention schedule with cryptographic integrity protection; cryptographic …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Settle Outstanding Obligations'
+plain_language_description: 'This activity pays off or otherwise discharges whatever the two parties still owe each other. The close-out plan and its obligation inventory arrive as the ledger to clear, each obligation is fulfilled or settled and evidenced, and the settled state is confirmed onward for the records work. Neither side walks away still holding a claim.'
+business_purpose: 'It exists so the relationship ends with no outstanding claim left on either side.'
+practical_context: 'It follows the close-out planning, working from the obligation inventory, and it completes once every obligation is fulfilled or settled and the settled state confirmed onward.'
+worked_example:
+  agent_type: human
+  narrative: 'A customer relationship management officer works the obligation inventory, paying off or discharging each item the parties still owe, and confirms the settled state onward.'

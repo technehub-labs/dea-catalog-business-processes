@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-op
 
 This is a **Activity** (level L3), named **Rebalance Portfolio Allocations**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Manage Portfolio Performance** (`processes:process-pv-operate-en8rdz`). Its canonical ID is `processes:activity-pv-operate-bzud7v`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the performance picture shows money sitting in the wrong places, product management shifts the allocations to match - moving envelope room from laggards toward the propositions doing better. The picture arrives at intake, is verified against the portfolio direction, the shifts are worked out and applied, confirmed, and the rebalancing trail is archived.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It acts on what monitoring reveals, adjusting where investment sits so the portfolio backs its best-performing propositions instead of its historically favoured ones.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows monitoring in the performance cycle: intake opens on the refreshed performance picture and closure comes when the confirmed allocations and their audit trail are on record.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Seeing one proposition consistently outperform while another drifts, a product management lead registers the picture at intake, works out a reallocation that trims the laggard's envelope, confirms the change with the portfolio owner, and the records custodian files the trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Rebalance Portfolio Allocations |
+| `plain_language_description` | string | no | When the performance picture shows money sitting in the wrong places, product management shifts the allocations to … |
+| `business_purpose` | string | no | It acts on what monitoring reveals, adjusting where investment sits so the portfolio backs its best-performing … |
+| `practical_context` | string | no | It follows monitoring in the performance cycle: intake opens on the refreshed performance picture and closure comes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

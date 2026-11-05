@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-operate-wkqaqp through concluding task processes:task-fa-operate-record-uqztnu, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Match Invoices'
+plain_language_description: 'This activity checks each incoming invoice against the order that placed it and the receipt that confirmed it. Supplier invoices arrive continuously, each is matched against its purchase order and receipt, and the matched invoices are confirmed onward for approval. The enterprise pays only for what it ordered and actually got.'
+business_purpose: 'It exists so no invoice is paid without proof it matches something ordered and received.'
+practical_context: 'It runs as supplier invoices arrive, and it completes once each matched invoice is confirmed onward for the payment approval.'
+worked_example:
+  agent_type: human
+  narrative: 'A payables custodian matches each arriving supplier invoice against its purchase order and the goods receipt, clears the ones that agree, and confirms them for approval.'

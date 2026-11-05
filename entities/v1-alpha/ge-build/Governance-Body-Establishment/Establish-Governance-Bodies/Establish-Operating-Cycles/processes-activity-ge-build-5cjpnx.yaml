@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-build-3p38us through concluding task processes:task-ge-build-record-mh6mfb, whose outcome — Case file retained for Establish Operating Cycles under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Establish Operating Cycles'
+plain_language_description: 'This activity sets the rhythm of meetings the newly constituted bodies will keep — when they gather, how often, on what standing order. The equipped bodies arrive with their charters as the guide, each body''s convening cycle is established and checked against it, and the established cycles are confirmed onward for readiness. Governance acquires its heartbeat here.'
+business_purpose: 'It exists so governance bodies convene on a designed, regular rhythm instead of gathering only when pressed.'
+practical_context: 'It follows the equipping of bodies, working from their charters, and it completes once each body''s established operating cycle is confirmed onward for the readiness verification.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function officer sets each body''s meeting rhythm from its charter — cadence, standing agenda, convening rules — and confirms the established cycles onward.'

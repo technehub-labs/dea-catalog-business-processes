@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 
 This is a **Activity** (level L3), named **Sequence Structure Transition**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Reorganize Structures** (`processes:process-ao-improve-xs59e2`). Its canonical ID is `processes:activity-ao-improve-rnkywc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity puts the bounded structural change into a controlled order of moves. The scoped change arrives first, the transition steps are arranged so each part of the organization is ready before the next move lands, and the sequenced transition is confirmed with the design authority. The filed sequence becomes the script the execution step follows.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the reorganization lands in an order that keeps the organization working while it moves, rather than disrupting everything at once.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the bounding of reorganization scope, when the scoped change is presented for ordering, and it completes once the sequenced transition is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian orders the transition so a receiving team is fully in place before handovers begin, checks each step against the bounded scope, and confirms the sequence with the design authority.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Sequence the Structure Transition |
+| `plain_language_description` | string | no | This activity puts the bounded structural change into a controlled order of moves. The scoped change arrives first, the … |
+| `business_purpose` | string | no | It exists so the reorganization lands in an order that keeps the organization working while it moves, rather than … |
+| `practical_context` | string | no | It follows the bounding of reorganization scope, when the scoped change is presented for ordering, and it completes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

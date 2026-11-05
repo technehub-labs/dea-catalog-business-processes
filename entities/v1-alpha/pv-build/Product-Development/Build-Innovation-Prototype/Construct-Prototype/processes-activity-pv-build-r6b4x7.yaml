@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-build-8jc3y4 through concluding task processes:task-pv-build-record-e9kveb, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Construct Prototype'
+plain_language_description: 'This activity builds the working artefact the designed experiment needs to test its hypothesis. The experiment design arrives as the specification, the prototype is constructed to it and checked as it takes shape, and the constructed prototype is confirmed onward for instrumentation. The idea gets a body here.'
+business_purpose: 'It exists so the innovation hypothesis has something real to be tested against.'
+practical_context: 'It opens the prototype build when the designed experiment requires a working prototype, and it completes as the constructed prototype is confirmed onward for instrumentation.'
+worked_example:
+  agent_type: human
+  narrative: 'A product management builder constructs the working prototype the experiment design specifies, checking it against the design as it takes shape, and confirms it onward.'

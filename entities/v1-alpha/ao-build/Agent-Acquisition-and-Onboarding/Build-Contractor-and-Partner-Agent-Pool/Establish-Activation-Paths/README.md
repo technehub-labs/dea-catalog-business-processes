@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 
 This is a **Activity** (level L3), named **Establish Activation Paths**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Build Contractor and Partner-Agent Pool** (`processes:process-ao-build-b38bkg`). Its canonical ID is `processes:activity-ao-build-jgtegj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity sets out how vetted pool sources will actually be engaged when the enterprise needs them. The vetted sources are taken in and checked, the routes from source to engagement are worked up, and the established paths are confirmed with the people who will use them. It closes with the paths recorded, so drawing on the pool later means following an agreed route rather than improvising one.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the vetted pool can be brought online quickly when surge or specialist demand arrives.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the vetting of pool sources, when the qualified sources are presented for engagement planning, and it completes once the established activation paths are confirmed and their record preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian for the pool build turns the vetted source list into agreed engagement routes, confirms for each source how activation would work, and files the record of the established paths for the team that will commit the pool.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Establish Activation Paths |
+| `plain_language_description` | string | no | This activity sets out how vetted pool sources will actually be engaged when the enterprise needs them. The vetted … |
+| `business_purpose` | string | no | It exists so the vetted pool can be brought online quickly when surge or specialist demand arrives. |
+| `practical_context` | string | no | It follows the vetting of pool sources, when the qualified sources are presented for engagement planning, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

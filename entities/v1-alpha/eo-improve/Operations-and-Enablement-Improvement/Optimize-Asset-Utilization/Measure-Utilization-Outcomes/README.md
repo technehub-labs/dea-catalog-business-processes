@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-im
 
 This is a **Activity** (level L3), named **Measure Utilization Outcomes**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Optimize Asset Utilization** (`processes:process-eo-improve-q58ecg`). Its canonical ID is `processes:activity-eo-improve-zxt423`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity checks, against the before picture, how asset usage actually moved after the redeployment decisions landed. The committed decisions and their baseline arrive together, outcomes are measured and compared with what the decisions intended, and the measurement is confirmed for the record. The utilization loop closes on evidence, not on hope.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise learns whether its redeployment decisions genuinely improved asset usage.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the committed decisions have taken effect, measured against the pre-decision utilization baseline, and it completes when the outcome measurement is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function analyst measures asset usage after the redeployment decisions against the before baseline, records where utilization genuinely moved, and confirms the outcome measurement.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Measure Utilization Outcomes |
+| `plain_language_description` | string | no | This activity checks, against the before picture, how asset usage actually moved after the redeployment decisions … |
+| `business_purpose` | string | no | It exists so the enterprise learns whether its redeployment decisions genuinely improved asset usage. |
+| `practical_context` | string | no | It runs once the committed decisions have taken effect, measured against the pre-decision utilization baseline, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

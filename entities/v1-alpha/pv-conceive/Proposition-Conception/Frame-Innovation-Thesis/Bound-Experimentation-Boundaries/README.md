@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-co
 
 This is a **Activity** (level L3), named **Bound Experimentation Boundaries**, currently **candidate (yellow)**. It is part of the **Proposition and Portfolio Conception** process context, domain `pv`, lifecycle stage Conceive. It belongs to **Frame Innovation Thesis** (`processes:process-pv-conceive-kps544`). Its canonical ID is `processes:activity-pv-conceive-m8x6e4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity fences the innovation in — how much may be invested, what risks may be taken, how long the enterprise will wait. The assessed option space arrives as the ambition to be contained, boundaries are drawn around investment, risk, and time and reviewed for realism, and the bounded frame is confirmed onward for the thesis commitment. Innovation runs on a leash by design.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so innovation experiments proceed inside agreed limits of money, risk, and time.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the option assessment, when the possibilities are mapped, and it completes once the experimentation boundaries are confirmed for the thesis commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A proposition design authority lead draws the limits — investment, risk, and time — around the mapped innovation possibilities, and confirms the bounded frame onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Bound Experimentation Boundaries |
+| `plain_language_description` | string | no | This activity fences the innovation in — how much may be invested, what risks may be taken, how long the enterprise … |
+| `business_purpose` | string | no | It exists so innovation experiments proceed inside agreed limits of money, risk, and time. |
+| `practical_context` | string | no | It follows the option assessment, when the possibilities are mapped, and it completes once the experimentation … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Maintain Safety and Compliance**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Facility Management** (`processes:process-eo-operate-rqdte5`). Its canonical ID is `processes:activity-eo-operate-gtt587`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity keeps the buildings on the right side of the safety and regulatory requirements they carry, day in and day out. The requirements arrive as the standing reference, daily operation is checked against them and drift corrected, and the maintained state is confirmed for the record. Safety is a condition the facility is held in, not a poster on the wall.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the facilities the enterprise occupies stay safe and lawful throughout their daily use.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs continuously across daily facility operation, checked against the regulatory and policy requirements, and each conformity pass closes when its outcome is confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A facilities custodian checks the buildings' daily operation against the safety and regulatory requirements, corrects the drift it finds, and confirms the maintained state for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Maintain Safety and Compliance |
+| `plain_language_description` | string | no | This activity keeps the buildings on the right side of the safety and regulatory requirements they carry, day in and … |
+| `business_purpose` | string | no | It exists so the facilities the enterprise occupies stay safe and lawful throughout their daily use. |
+| `practical_context` | string | no | It runs continuously across daily facility operation, checked against the regulatory and policy requirements, and each … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

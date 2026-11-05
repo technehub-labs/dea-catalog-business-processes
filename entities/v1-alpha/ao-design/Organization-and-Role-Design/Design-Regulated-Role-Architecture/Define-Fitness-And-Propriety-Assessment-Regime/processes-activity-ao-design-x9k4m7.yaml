@@ -137,3 +137,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-design-2fkvhx through concluding task processes:task-ao-design-record-sfgczh, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Define the Fitness and Propriety Assessment Regime'
+plain_language_description: 'This activity fixes, in advance of any hiring, how each licensed role''s fitness will be judged over time. The regulator-tied catalogue and the fitness matrix come in, and for each role the regime settles when assessments happen, what criteria they apply, and who attests, all framed by the expectations of the relevant regulator. The defined regime is confirmed and filed so later attestation follows designed rules rather than case-by-case judgement.'
+business_purpose: 'It exists so fitness checks for licensed roles run to a regime designed up front and framed by regulator expectations.'
+practical_context: 'It runs during regulated role architecture design, once the catalogue entries and the fitness matrix are to hand, and it completes when the defined regime is confirmed and preserved on the personnel record.'
+worked_example:
+  agent_type: human
+  narrative: 'A designer for the organization design authority sets an annual fitness assessment for a controlled-function role, names the employer as attestor, and records the criteria so re-assessments later judge everyone by the same standard.'

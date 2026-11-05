@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-ac
 
 This is a **Activity** (level L3), named **Resolve Beneficial Ownership**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Activation** process context, domain `pr`, lifecycle stage Activate. It belongs to **Onboard Regulated Party Relationship** (`processes:process-pr-activate-6qzuve`). Its canonical ID is `processes:activity-pr-activate-ncn924`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity traces the applicant entity's ownership to the living people ultimately behind it, to whatever depth the regime sets, and records the chain with its evidence. The verified identity arrives as the starting point, the ownership chain is worked through and documented, and the resolved ownership is confirmed onward for the risk classification. Shell fronts stop being effective here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise knows the natural people ultimately behind an applicant entity, evidenced to the regime's threshold.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the identity verification, working down the applicant entity's ownership, and it completes once the ownership chain is recorded with source evidence and confirmed onward.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A risk function analyst traces the applicant entity's ownership down to the natural persons ultimately in control, records each link with its evidence, and confirms the resolved chain onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Resolve Beneficial Ownership |
+| `plain_language_description` | string | no | This activity traces the applicant entity's ownership to the living people ultimately behind it, to whatever depth the … |
+| `business_purpose` | string | no | It exists so the enterprise knows the natural people ultimately behind an applicant entity, evidenced to the regime's … |
+| `practical_context` | string | no | It follows the identity verification, working down the applicant entity's ownership, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

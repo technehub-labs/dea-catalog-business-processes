@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 
 This is a **Activity** (level L3), named **Set Launch Pricing**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. It belongs to **Prepare Market Readiness** (`processes:process-pv-build-6hjzmk`). Its canonical ID is `processes:activity-pv-build-n32s5c`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity fixes what the offering will cost at launch, inside the enterprise's financial rules and its own demand model. The assembled assets arrive alongside the financial policy and demand model as the boundaries, launch pricing is set within them and justified, and the set pricing is confirmed onward for the channel configuration. The value exchange gets its number here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the offering launches at a price the financial policy and demand model both support.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs during market readiness preparation, once the demand model and financial policy are to hand, and it completes when the set launch pricing is confirmed onward for the channel setup.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management officer sets the launch price within the financial policy and the demand model's bounds, justifies the number, and confirms it onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set Launch Pricing |
+| `plain_language_description` | string | no | This activity fixes what the offering will cost at launch, inside the enterprise's financial rules and its own demand … |
+| `business_purpose` | string | no | It exists so the offering launches at a price the financial policy and demand model both support. |
+| `practical_context` | string | no | It runs during market readiness preparation, once the demand model and financial policy are to hand, and it completes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-re
 
 This is a **Activity** (level L3), named **Settle Outstanding Obligations**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Close-Out** process context, domain `pr`, lifecycle stage Retire. It belongs to **Close Enterprise Relationship** (`processes:process-pr-retire-bd3asa`). Its canonical ID is `processes:activity-pr-retire-zb4htq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity pays off or otherwise discharges whatever the two parties still owe each other. The close-out plan and its obligation inventory arrive as the ledger to clear, each obligation is fulfilled or settled and evidenced, and the settled state is confirmed onward for the records work. Neither side walks away still holding a claim.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the relationship ends with no outstanding claim left on either side.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the close-out planning, working from the obligation inventory, and it completes once every obligation is fulfilled or settled and the settled state confirmed onward.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A customer relationship management officer works the obligation inventory, paying off or discharging each item the parties still owe, and confirms the settled state onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Settle Outstanding Obligations |
+| `plain_language_description` | string | no | This activity pays off or otherwise discharges whatever the two parties still owe each other. The close-out plan and … |
+| `business_purpose` | string | no | It exists so the relationship ends with no outstanding claim left on either side. |
+| `practical_context` | string | no | It follows the close-out planning, working from the obligation inventory, and it completes once every obligation is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

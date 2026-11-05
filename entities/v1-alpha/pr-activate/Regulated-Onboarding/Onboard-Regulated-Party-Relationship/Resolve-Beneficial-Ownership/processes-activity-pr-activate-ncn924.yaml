@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-activate-6qzuve through concluding task processes:task-pr-activate-record-bvte4g, whose outcome — Closure case file retained for Resolve Beneficial Ownership under the records retention schedule with cryptographic integrity protection; cryptographic …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Resolve Beneficial Ownership'
+plain_language_description: 'This activity traces the applicant entity''s ownership to the living people ultimately behind it, to whatever depth the regime sets, and records the chain with its evidence. The verified identity arrives as the starting point, the ownership chain is worked through and documented, and the resolved ownership is confirmed onward for the risk classification. Shell fronts stop being effective here.'
+business_purpose: 'It exists so the enterprise knows the natural people ultimately behind an applicant entity, evidenced to the regime''s threshold.'
+practical_context: 'It follows the identity verification, working down the applicant entity''s ownership, and it completes once the ownership chain is recorded with source evidence and confirmed onward.'
+worked_example:
+  agent_type: human
+  narrative: 'A risk function analyst traces the applicant entity''s ownership down to the natural persons ultimately in control, records each link with its evidence, and confirms the resolved chain onward.'

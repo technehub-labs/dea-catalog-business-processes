@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-improve-6c2xvf through concluding task processes:task-pv-improve-record-uygvda, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Analyze Evolution Drivers'
+plain_language_description: 'Product management studies what outside forces are pushing the offerings to change - market feedback, moves by competitors, and shifts in technology - and states what each means for evolution. Incoming intelligence is registered at intake, checked for credibility, analysed into a driver picture, confirmed with those who will design the response, and archived.'
+business_purpose: 'It gives the evolution effort a reasoned account of why change is needed, so enhancements answer real pressures rather than hunches.'
+practical_context: 'It opens the evolution sequence: work begins when market feedback and related intelligence arrive for intake and ends when the confirmed driver analysis and its audit record are filed.'
+worked_example:
+  agent_type: human
+  narrative: 'Following a slump in one product line''s reception, product management logs the market feedback at intake, tests the supporting intelligence at verification, works out that a competitor''s new release and a technology shift are the real drivers, and confirms the analysis to the enhancement designers.'

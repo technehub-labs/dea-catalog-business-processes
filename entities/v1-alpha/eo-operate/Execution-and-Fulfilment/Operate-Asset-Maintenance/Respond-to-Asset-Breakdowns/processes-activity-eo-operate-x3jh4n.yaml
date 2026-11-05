@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-operate-j9cjzz through concluding task processes:task-eo-operate-record-bc53z6, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Respond to Asset Breakdowns'
+plain_language_description: 'This activity mobilizes when an asset fails without warning, gets it back in service, and writes up what was done. The breakdown event arrives as the trigger, the response is worked and the asset restored, and the reactive work is recorded. Unplanned failure is met with a practiced routine rather than a scramble.'
+business_purpose: 'It exists so unplanned asset failures cost the operation as little availability as possible and leave an honest record behind.'
+practical_context: 'It runs whenever a breakdown event lands, from the failure to the asset''s return to service, and it completes once the reactive work is recorded and retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A maintenance crew answers a breakdown call, restores the failed asset to service as quickly as the repair allows, and writes up the reactive work for the record.'

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-operate-g4wp63 through concluding task processes:task-ao-operate-record-38e2pr, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Review the Agent Performance Cycles'
+plain_language_description: 'This activity draws each operating period''s monitoring results and handled exceptions together into a periodic review, and commits what the review concludes. The monitored performance and the addressed exceptions arrive as its inputs, the cycle is reviewed as a whole, and the outcomes are confirmed and preserved. Each cycle''s lessons then stand ready to shape the next one.'
+business_purpose: 'It exists so agent performance is managed as a repeating cycle that learns, with each period''s outcomes committed rather than lost.'
+practical_context: 'It happens at the close of each performance cycle, once monitoring and exception handling are complete, and it finishes when the reviewed outcomes are confirmed and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A workforce management custodian assembles the cycle''s monitoring results and settled exceptions, reviews the period as a whole, and confirms the outcomes for the record ahead of the next cycle.'

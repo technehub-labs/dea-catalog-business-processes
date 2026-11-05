@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-conceive-e3u8s2 through concluding task processes:task-ao-conceive-record-64h33j, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Set How Much Agent Capacity to Commit'
+plain_language_description: 'This activity decides how much agent capacity the coming strategy should commit the enterprise to. The sensed imperatives come in and are reviewed, the capacity boundary is worked out from them, and the bounded capacity is confirmed with those drafting the strategy. It ends with a clear answer to how much agent capacity is in scope, recorded for the drafting step.'
+business_purpose: 'It exists so the strategy commits to a definite amount of agent capacity rather than an open-ended ambition.'
+practical_context: 'It follows the sensing of organization imperatives, when those imperatives are presented for capacity planning, and it closes once the bounded capacity is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function lead weighs the imperatives behind a workforce realignment and sets the amount of agent capacity the strategy will commit to, confirming the boundary with workforce management before the strategy is drafted.'

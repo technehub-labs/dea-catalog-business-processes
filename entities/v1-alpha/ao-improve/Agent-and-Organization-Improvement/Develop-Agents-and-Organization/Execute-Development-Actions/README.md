@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 
 This is a **Activity** (level L3), named **Execute Development Actions**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Develop Agents and Organization** (`processes:process-ao-improve-xfh8na`). Its canonical ID is `processes:activity-ao-improve-r6h2g7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity carries out the development plan's actions, applying them to the agents and organization the plan names, people and artificial alike. The confirmed plan arrives first, each action is executed in turn and its completion logged, and the executed set is confirmed back to the review step. It ends with the planned improvement actually done rather than promised.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the planned development genuinely happens across the mix, with each action's completion evidenced.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the development plan is confirmed, when the plan is presented for execution, and it closes when the executed actions are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian works through the development plan action by action, applies each one to the agents it names, logs completions with their audit identifiers, and confirms the executed set.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Execute the Development Actions |
+| `plain_language_description` | string | no | This activity carries out the development plan's actions, applying them to the agents and organization the plan names … |
+| `business_purpose` | string | no | It exists so the planned development genuinely happens across the mix, with each action's completion evidenced. |
+| `practical_context` | string | no | It runs once the development plan is confirmed, when the plan is presented for execution, and it closes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

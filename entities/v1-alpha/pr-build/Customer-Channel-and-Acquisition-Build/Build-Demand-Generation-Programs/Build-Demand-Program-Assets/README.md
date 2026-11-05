@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-bu
 
 This is a **Activity** (level L3), named **Build Demand Program Assets**, currently **candidate (yellow)**. It is part of the **Customer Channel and Acquisition Build** process context, domain `pr`, lifecycle stage Build. It belongs to **Build Demand Generation Programs** (`processes:process-pr-build-4kb2pt`). Its canonical ID is `processes:activity-pr-build-da7r6t`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity constructs the content, the campaigns, and the program machinery on which the demand engine will run. The committed demand model arrives as the design of what demand to make, the assets are built against it and checked, and the built assets are confirmed onward for the channel wiring. Demand is manufactured from materials prepared here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the demand engine has its fuel — real content, campaigns, and machinery built to the demand model.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the demand generation build once the demand model is committed, and it completes as the built assets are confirmed onward for the channel integration.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function builder constructs the content, campaigns, and program machinery the demand model calls for, and confirms the built assets onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Build Demand Program Assets |
+| `plain_language_description` | string | no | This activity constructs the content, the campaigns, and the program machinery on which the demand engine will run. The … |
+| `business_purpose` | string | no | It exists so the demand engine has its fuel — real content, campaigns, and machinery built to the demand model. |
+| `practical_context` | string | no | It opens the demand generation build once the demand model is committed, and it completes as the built assets are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

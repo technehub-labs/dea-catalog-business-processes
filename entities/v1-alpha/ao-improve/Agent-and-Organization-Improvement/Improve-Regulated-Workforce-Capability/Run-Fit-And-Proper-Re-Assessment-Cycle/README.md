@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 
 This is a **Activity** (level L3), named **Run Fit-And-Proper Re-Assessment Cycle**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Improve Regulated Workforce Capability** (`processes:process-ao-improve-qqxe4d`). Its canonical ID is `processes:activity-ao-improve-k9w5p8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity re-checks, at the interval each role's regulator requires, that the people holding licensed roles remain fit and proper to hold them. The live role list and the re-assessment calendar come in together, each holder is re-assessed in their turn, and the outcomes are recorded on the personnel record. What is filed proves fitness is re-examined on schedule rather than assumed from a one-time attestation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so fitness for licensed roles is re-proven on the regulator's rhythm instead of resting on a single past attestation.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs to the re-assessment calendar against the live role list, and it closes once the re-assessment outcomes are confirmed and preserved on the personnel record.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian works the re-assessment calendar for the live producer-role holders, sees each annual fitness re-check completed, and records the outcomes on the personnel file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -65,6 +65,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Run the Fit and Propriety Re-Assessment Cycle |
+| `plain_language_description` | string | no | This activity re-checks, at the interval each role's regulator requires, that the people holding licensed roles remain … |
+| `business_purpose` | string | no | It exists so fitness for licensed roles is re-proven on the regulator's rhythm instead of resting on a single past … |
+| `practical_context` | string | no | It runs to the re-assessment calendar against the live role list, and it closes once the re-assessment outcomes are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

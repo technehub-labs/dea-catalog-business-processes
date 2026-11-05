@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-co
 
 This is a **Activity** (level L3), named **Select Innovation Focus Areas**, currently **candidate (yellow)**. It is part of the **Proposition and Portfolio Conception** process context, domain `pv`, lifecycle stage Conceive. It belongs to **Frame Innovation Thesis** (`processes:process-pv-conceive-kps544`). Its canonical ID is `processes:activity-pv-conceive-f7anqj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity chooses where the enterprise will aim its innovation — the few grounds worth breaking on, beyond what it already sells. The innovation framing need arrives as the mandate, focus areas are selected and justified against it, and the selected areas are confirmed onward for the option assessment. Innovation gets its map coordinates here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so innovation effort concentrates on chosen grounds rather than scattering everywhere.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the innovation thesis framing when the enterprise needs a bounded thesis for where and how it will innovate, and it completes once the selected focus areas are confirmed for the option assessment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A proposition design authority lead selects the grounds where the enterprise will innovate beyond its current propositions, justifies each choice, and confirms the areas onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Select Innovation Focus Areas |
+| `plain_language_description` | string | no | This activity chooses where the enterprise will aim its innovation — the few grounds worth breaking on, beyond what it … |
+| `business_purpose` | string | no | It exists so innovation effort concentrates on chosen grounds rather than scattering everywhere. |
+| `practical_context` | string | no | It opens the innovation thesis framing when the enterprise needs a bounded thesis for where and how it will innovate … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

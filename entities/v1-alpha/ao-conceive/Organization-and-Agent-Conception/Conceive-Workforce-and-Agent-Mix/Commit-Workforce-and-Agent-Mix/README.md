@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 
 This is a **Activity** (level L3), named **Commit Workforce and Agent Mix**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Conceive Workforce and Agent Mix** (`processes:process-ao-conceive-z6m6p5`). Its canonical ID is `processes:activity-ao-conceive-njcgbs`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity is where the drafted workforce mix is formally accepted and passed on. The drafted mix is taken in and reviewed, its ratification is confirmed, and the committed mix is handed to the design work that will turn it into roles and structure. An audit record of the commitment is preserved so the decision can be traced later.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the conceived blend of people and artificial agents becomes a binding reference that design and acquisition must follow.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It happens at the close of mix conception, when the drafted mix is presented for ratification, and it completes once the committed mix is confirmed, handed over, and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian presents the drafted mix for the strategy function's ratification, and once it is confirmed, records the committed mix and notifies the organization and role design team that it is theirs to work from.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit the Workforce and Agent Mix |
+| `plain_language_description` | string | no | This activity is where the drafted workforce mix is formally accepted and passed on. The drafted mix is taken in and … |
+| `business_purpose` | string | no | It exists so the conceived blend of people and artificial agents becomes a binding reference that design and … |
+| `practical_context` | string | no | It happens at the close of mix conception, when the drafted mix is presented for ratification, and it completes once … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

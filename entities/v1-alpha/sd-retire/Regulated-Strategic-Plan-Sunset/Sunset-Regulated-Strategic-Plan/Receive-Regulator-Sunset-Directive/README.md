@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-re
 
 This is a **Activity** (level L3), named **Receive Regulator Sunset Directive**, currently **candidate (yellow)**. It is part of the **Sunset Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Retire. It belongs to **Sunset Regulated Strategic Plan** (`processes:process-sd-retire-umxf3c`). Its canonical ID is `processes:activity-sd-retire-z2y3pr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The sunset begins with an instruction from the supervisor. A directive or rejection notice from the regulator arrives at intake, verification confirms the document is authentic and complete, and processing records it against the regulated strategic-plan record with the issuing authority, the directive date and the retirement date it sets. Confirmation notifies downstream consumers and the records custodian preserves the recorded directive.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It anchors the whole retirement on an authenticated instruction, so the plan is sunset because the supervisor required it — not on internal whim.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens this process at intake when the regulator's notice arrives, closing once the recorded directive with its dates is confirmed and preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function registrar logs the regulator's notice against the plan record, a verification custodian confirms the issuing authority and dates before acceptance, and the finance function is told the retirement clock has started.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive Regulator Sunset Directive |
+| `plain_language_description` | string | no | The sunset begins with an instruction from the supervisor. A directive or rejection notice from the regulator arrives … |
+| `business_purpose` | string | no | It anchors the whole retirement on an authenticated instruction, so the plan is sunset because the supervisor required … |
+| `practical_context` | string | no | It opens this process at intake when the regulator's notice arrives, closing once the recorded directive with its dates … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

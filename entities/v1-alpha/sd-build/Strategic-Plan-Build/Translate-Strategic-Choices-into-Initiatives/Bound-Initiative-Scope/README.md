@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-bu
 
 This is a **Activity** (level L3), named **Bound Initiative Scope**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Translate Strategic Choices into Initiatives** (`processes:process-sd-build-9admqy`). Its canonical ID is `processes:activity-sd-build-tp9jtk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Every chosen direction needs turning into work with edges. This step registers the committed choice and the parent plan, verifies the inputs, and marks out how far each initiative may reach — what is in and what is out. The agreed scope lines are confirmed downstream and preserved so drafting stays inside them.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It stops initiative drafting from sprawling by fixing agreed edges around each piece of work the choices demand.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens at intake when the committed choice and the plan are presented, closing once the scope boundaries are confirmed and filed.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function facilitator walks the committed choice through a scoping session, agrees with the activity owner what each initiative will and will not cover, and the records custodian preserves the agreed boundaries for the drafting team.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set the Initiative Scope |
+| `plain_language_description` | string | no | Every chosen direction needs turning into work with edges. This step registers the committed choice and the parent … |
+| `business_purpose` | string | no | It stops initiative drafting from sprawling by fixing agreed edges around each piece of work the choices demand. |
+| `practical_context` | string | no | It opens at intake when the committed choice and the plan are presented, closing once the scope boundaries are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

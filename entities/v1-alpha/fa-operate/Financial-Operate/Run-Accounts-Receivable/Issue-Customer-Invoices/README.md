@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Issue Customer Invoices**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Run Accounts Receivable** (`processes:process-fa-operate-sdppmp`). Its canonical ID is `processes:activity-fa-operate-hvp7jn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity sends out the invoices each billing moment brings due to the customers behind them. Fulfilment records and contract terms arrive as the basis, invoices are issued against them and checked for accuracy, and the issued invoices are confirmed onward for collection. The enterprise's claims on its customers begin as pieces of paper done right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every billing event produces an accurate invoice, correctly issued to the customer it names.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs at each billing event, working from the fulfilment records and contract terms, and it completes once the issued invoices are confirmed onward for collection.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A receivables custodian issues the invoice each billing event brings due, drawn from the fulfilment records and contract terms, and confirms it for the collection work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Issue Customer Invoices |
+| `plain_language_description` | string | no | This activity sends out the invoices each billing moment brings due to the customers behind them. Fulfilment records … |
+| `business_purpose` | string | no | It exists so every billing event produces an accurate invoice, correctly issued to the customer it names. |
+| `practical_context` | string | no | It runs at each billing event, working from the fulfilment records and contract terms, and it completes once the issued … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

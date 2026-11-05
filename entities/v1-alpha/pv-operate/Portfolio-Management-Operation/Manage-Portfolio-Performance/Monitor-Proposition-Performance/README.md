@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-op
 
 This is a **Activity** (level L3), named **Monitor Proposition Performance**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Manage Portfolio Performance** (`processes:process-pv-operate-en8rdz`). Its canonical ID is `processes:activity-pv-operate-unuyxe`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Day to day, product management keeps watch on how each proposition is performing, measuring what comes back against the envelope it was given. Incoming telemetry arrives at intake, is checked for quality, is worked into a current performance picture, confirmed to those managing the portfolio, and archived.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It provides the steady stream of performance visibility the portfolio needs, so drift away from an investment thesis is spotted early rather than at review time.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It is the standing watch of portfolio management, opening each cycle as telemetry arrives at intake and closing when the refreshed performance picture is confirmed and filed.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Each reporting day, a product management analyst registers the latest proposition telemetry at intake, verifies odd readings at verification, refreshes the performance picture at processing, and confirms it to the portfolio lead, who uses it to spot propositions drifting past their envelopes.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Monitor Proposition Performance |
+| `plain_language_description` | string | no | Day to day, product management keeps watch on how each proposition is performing, measuring what comes back against the … |
+| `business_purpose` | string | no | It provides the steady stream of performance visibility the portfolio needs, so drift away from an investment thesis is … |
+| `practical_context` | string | no | It is the standing watch of portfolio management, opening each cycle as telemetry arrives at intake and closing when … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-operate-4xn4d6 through concluding task processes:task-fa-operate-record-wzuwxj, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Execute Period-End Entries'
+plain_language_description: 'This activity puts through the entries that fence the period off — accruals, deferrals, and the adjustments between. The close boundary arrives as the trigger, the period-end entries are executed and checked against the period''s activity, and the executed entries are confirmed onward for reconciliation. The period''s books are made final by design, not by decree.'
+business_purpose: 'It exists so the period ends with its proper entries booked, not with activity left hanging over the boundary.'
+practical_context: 'It runs at each period close boundary, and it completes once the executed period-end entries are confirmed onward for the reconciliations.'
+worked_example:
+  agent_type: human
+  narrative: 'A close custodian books the accruals, deferrals, and adjustments that properly end the period, checks them against the period''s activity, and confirms the entries for reconciliation.'

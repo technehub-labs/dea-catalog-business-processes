@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-build-p9a2s9 through concluding task processes:task-pv-build-record-t8cd38, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Integrate Service with Delivery Model'
+plain_language_description: 'This activity wires the built service capability — machinery and people together — into the enterprise''s delivery model and channels. The prepared capability arrives as the piece to be connected, integration is made across the delivery model and its channels and checked at every join, and the integrated capability is confirmed onward for readiness. The service joins the enterprise''s existing bloodstream here.'
+business_purpose: 'It exists so the new service capability reaches customers through the enterprise''s real delivery model.'
+practical_context: 'It follows the personnel preparation, once machinery and people are ready, and it completes when the integration with the delivery model and channels is confirmed onward for readiness.'
+worked_example:
+  agent_type: human
+  narrative: 'A product management builder wires the capability — mechanism and people — into the enterprise''s delivery model and channels, checking every join, and confirms the integration onward.'

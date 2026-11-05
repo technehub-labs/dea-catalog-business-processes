@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-retire-6us5am through concluding task processes:task-pv-retire-record-tgepzj, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Execute Service Withdrawal'
+plain_language_description: 'Following the agreed plan, the design authority takes the offering out of active reliance - customers and internal users are moved off until nothing operationally depends on it any more. The plan arrives at intake, is verified as current, the withdrawal is executed step by step, confirmed to dependents, and archived.'
+business_purpose: 'It is the hands-on half of retirement, turning a paper decision into an offering that is genuinely no longer relied upon.'
+practical_context: 'It runs between planning and closure in the transition sequence: intake opens on the withdrawal plan''s arrival and closure comes when the executed withdrawal is confirmed and its record preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'With the withdrawal plan approved, the proposition design authority registers it at intake, confirms dependencies are unchanged, executes the cutover dates step by step, notifies remaining users at confirmation, and the records custodian preserves the execution trail.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-op
 
 This is a **Activity** (level L3), named **Publish Catalogue to Channels**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Operate Product Catalogue** (`processes:process-pv-operate-zyguzp`). Its canonical ID is `processes:activity-pv-operate-pv7jqd`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Whatever the catalogue says, customers only see it once it reaches the channels they buy through; this work performs that hand-off, channel by channel. Channel configurations arrive at intake, are checked, the maintained catalogue is pushed out per channel, confirmation notifies dependents, and the publication trail is archived.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the gap between a correct catalogue and a sellable one, putting the maintained content in front of customers wherever they shop.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs each time the maintained catalogue is ready for release: intake opens on the channel configurations' arrival and closure comes when the published state per channel is confirmed and archived.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Ahead of a range refresh, a product management channel administrator takes the maintained catalogue at intake, verifies each channel configuration, pushes the updated listings to every sales channel at processing, confirms publication to the dependents, and files the trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Publish Catalogue to Channels |
+| `plain_language_description` | string | no | Whatever the catalogue says, customers only see it once it reaches the channels they buy through; this work performs … |
+| `business_purpose` | string | no | It closes the gap between a correct catalogue and a sellable one, putting the maintained content in front of customers … |
+| `practical_context` | string | no | It runs each time the maintained catalogue is ready for release: intake opens on the channel configurations' arrival … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

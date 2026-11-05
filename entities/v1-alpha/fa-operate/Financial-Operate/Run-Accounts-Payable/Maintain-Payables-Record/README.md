@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Maintain Payables Record**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Run Accounts Payable** (`processes:process-fa-operate-wkqaqp`). Its canonical ID is `processes:activity-fa-operate-mwerdy`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity keeps a running statement of what the enterprise owes its suppliers at any moment. Matched invoices, approvals, and executed payments arrive as the inputs, the payables record is updated as each lands, and the current record is confirmed onward. The enterprise's supplier debts are always knowable to the penny.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise's obligations to suppliers are always knowable from a maintained record.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs continuously as invoices, approvals, and payments land, and each update closes when the current payables record is confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A payables custodian posts each matched invoice, approval, and executed payment to the payables record, keeping the supplier position current, and confirms the record onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Maintain Payables Record |
+| `plain_language_description` | string | no | This activity keeps a running statement of what the enterprise owes its suppliers at any moment. Matched invoices … |
+| `business_purpose` | string | no | It exists so the enterprise's obligations to suppliers are always knowable from a maintained record. |
+| `practical_context` | string | no | It runs continuously as invoices, approvals, and payments land, and each update closes when the current payables record … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

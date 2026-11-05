@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-design-ds4drw through concluding task processes:task-fa-design-record-x6tgfa, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Document Tax Positions'
+plain_language_description: 'This activity writes down, exposure by exposure, the stance the enterprise will take and the legal footing behind it. The assessed exposures arrive with the tax law and ruling base as the reference, positions are documented against both, and the documented positions are confirmed onward for the strategy. Each stance is defensible on paper before it is lived.'
+business_purpose: 'It exists so every tax stance the enterprise takes is documented and legally grounded before it is acted on.'
+practical_context: 'It follows the exposure assessment, when the exposures and the law and ruling base are to hand, and it completes once the positions are documented and confirmed onward.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance design authority designer documents the enterprise''s stance on each assessed exposure with its legal footing in the law and ruling base, and confirms the positions for the strategy.'

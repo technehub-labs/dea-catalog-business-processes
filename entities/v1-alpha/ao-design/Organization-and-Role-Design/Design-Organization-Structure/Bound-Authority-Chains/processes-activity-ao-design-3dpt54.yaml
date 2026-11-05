@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-design-7dkbur through concluding task processes:task-ao-design-record-n46zr7, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Set the Authority Chains and Delegation Limits'
+plain_language_description: 'This activity works out, across the drafted unit arrangement, who answers to whom and how far decision rights may be passed down. The draft arrives first, chains of authority and their delegation limits are worked out and reviewed against it, and the result is confirmed with the design authority. What is filed shows every position''s line of accountability and the ceiling on what it may decide on its own.'
+business_purpose: 'It exists so decision rights are explicit and delegation stays within deliberate limits before the structure design is committed.'
+practical_context: 'It runs during structure design once the drafted unit architecture is to hand, and it closes when the bounded chains are confirmed and their audit record preserved for the review step.'
+worked_example:
+  agent_type: human
+  narrative: 'A designer for the organization design authority traces each position''s line of accountability through the drafted units, sets how far each may delegate, and files the chains for the design authority to review.'

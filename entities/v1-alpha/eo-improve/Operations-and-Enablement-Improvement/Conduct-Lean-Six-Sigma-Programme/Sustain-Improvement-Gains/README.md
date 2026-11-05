@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-im
 
 This is a **Activity** (level L3), named **Sustain Improvement Gains**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Conduct Lean Six Sigma Programme** (`processes:process-eo-improve-us272s`). Its canonical ID is `processes:activity-eo-improve-m7paec`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity holds the realized gains in place once the project teams move on, so that the improvements cannot quietly slip back. The delivered project outcomes arrive as the gains to protect, control mechanisms are put around each and checked as they bed in, and the sustained gains are confirmed for the record. Winning once is easy; keeping it is this activity's job.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the programme's improvements hold after the project teams leave, rather than decaying into old habits.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows project delivery, when the realized gains are handed over for protection, and it completes once the sustained gains are confirmed and their control mechanisms retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function lead puts control mechanisms around each delivered gain, checks they hold as the operation settles back into routine, and confirms the sustained gains for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Sustain Improvement Gains |
+| `plain_language_description` | string | no | This activity holds the realized gains in place once the project teams move on, so that the improvements cannot quietly … |
+| `business_purpose` | string | no | It exists so the programme's improvements hold after the project teams leave, rather than decaying into old habits. |
+| `practical_context` | string | no | It follows project delivery, when the realized gains are handed over for protection, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

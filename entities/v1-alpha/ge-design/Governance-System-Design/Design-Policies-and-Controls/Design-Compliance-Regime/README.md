@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-de
 
 This is a **Activity** (level L3), named **Design Compliance Regime**, currently **candidate (yellow)**. It is part of the **Governance System Design** process context, domain `ge`, lifecycle stage Design. It belongs to **Design Policies and Controls** (`processes:process-ge-design-kpsj5b`). Its canonical ID is `processes:activity-ge-design-jrb5hw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity works out how compliance will be produced and verified — attestations, monitoring, and the consequences of stepping out of line. The policy artefacts and control objectives arrive as the things to be enforced, the regime is designed around them and reviewed for teeth, and the regime design is confirmed onward for the design's commitment. Policies gain their enforcement machinery here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise's policies and controls come with a designed regime that actually enforces them.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the objectives definition, when the artefacts and objectives are to hand, and it completes once the compliance regime design is confirmed for the design's commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A governance design authority designer designs the attestations, monitoring, and consequence structure enforcing the policies and objectives, and confirms the regime design for commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Compliance Regime |
+| `plain_language_description` | string | no | This activity works out how compliance will be produced and verified — attestations, monitoring, and the consequences … |
+| `business_purpose` | string | no | It exists so the enterprise's policies and controls come with a designed regime that actually enforces them. |
+| `practical_context` | string | no | It follows the objectives definition, when the artefacts and objectives are to hand, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

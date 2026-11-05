@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-improve-t6uvan through concluding task processes:task-pr-improve-record-y23h5d, whose outcome — Closure case file retained for Maintain Win-Back Pipeline under the records retention schedule with cryptographic integrity protection; cryptographic …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Maintain Win-Back Pipeline'
+plain_language_description: 'This activity spots the customers who have drifted away or are drifting, and keeps the list of chances to win them back current. The active base and its churn history arrive as the territory, lapsed and lapsing customers are identified and their win-back chances kept live, and the maintained pipeline is confirmed onward. Departed customers are treated as recoverable, not as dead.'
+business_purpose: 'It exists so lapsed customers remain named, live opportunities rather than forgotten losses.'
+practical_context: 'It runs continuously across the base as customers lapse or begin lapping, and it completes as the maintained win-back opportunity list is confirmed onward.'
+worked_example:
+  agent_type: human
+  narrative: 'A customer relationship management officer spots the drifted and drifting customers, keeps each win-back chance current on the list, and confirms the maintained pipeline onward.'

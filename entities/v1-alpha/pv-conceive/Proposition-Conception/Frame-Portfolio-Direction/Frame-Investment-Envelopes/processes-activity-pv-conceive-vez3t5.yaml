@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-conceive-jb4xtg through concluding task processes:task-pv-conceive-record-hbuffy, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Frame Investment Envelopes'
+plain_language_description: 'This activity caps what each proposition in the ordered portfolio may receive. The priority ordering arrives as the basis of allocation, envelopes are framed around each proposition and checked against the bounded investment total, and the framed envelopes are confirmed onward for the direction''s commitment. Every proposition learns its allowance here.'
+business_purpose: 'It exists so each competing proposition gets a defined investment allowance, not an open tab.'
+practical_context: 'It follows the priority ordering, once the sequence of favour is set, and it completes when the framed investment envelopes are confirmed for the direction''s commitment.'
+worked_example:
+  agent_type: human
+  narrative: 'A proposition design authority lead caps each proposition''s investment allowance against the priority ordering and the bounded total, and confirms the framed envelopes onward.'

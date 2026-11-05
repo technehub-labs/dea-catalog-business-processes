@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 
 This is a **Activity** (level L3), named **Commit Agent Topology**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Design Agent Topology** (`processes:process-ao-design-8fzp2b`). Its canonical ID is `processes:activity-ao-design-pc9dh3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity brings the placements and coordination patterns together and fixes them as the organization's agent topology. The designed patterns arrive last, the whole topology is consolidated and reviewed, and its commitment is confirmed so downstream activation has a single authoritative reference. The committed topology is then preserved as an audit record.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so acquisition planning receives one committed picture of what agents the organization needs and how they connect.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It happens at the end of topology design, once the coordination patterns have been designed, and it closes when the committed topology is confirmed and its record retained at the agreed tier.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian assembles the decided placements and designed coordination patterns into the finished topology, obtains the organization design authority's commitment, and files the audit record that lets acquisition planning proceed.
 
 ## 5. Header and Identity Table (generated)
 
@@ -60,6 +60,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit the Agent Topology |
+| `plain_language_description` | string | no | This activity brings the placements and coordination patterns together and fixes them as the organization's agent … |
+| `business_purpose` | string | no | It exists so acquisition planning receives one committed picture of what agents the organization needs and how they … |
+| `practical_context` | string | no | It happens at the end of topology design, once the coordination patterns have been designed, and it closes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

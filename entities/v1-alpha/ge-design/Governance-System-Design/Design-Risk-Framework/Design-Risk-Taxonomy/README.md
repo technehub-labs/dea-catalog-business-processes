@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-de
 
 This is a **Activity** (level L3), named **Design Risk Taxonomy**, currently **candidate (yellow)**. It is part of the **Governance System Design** process context, domain `ge`, lifecycle stage Design. It belongs to **Design Risk Framework** (`processes:process-ge-design-pqkvdc`). Its canonical ID is `processes:activity-ge-design-q5tqn5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity sorts the enterprise's risks into their named classes, following the committed direction. The committed direction arrives as the ordering principle, the taxonomy is designed from it and reviewed for coverage, and the taxonomy is confirmed onward for the assessment scales. Every risk the enterprise faces gains its proper drawer.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so enterprise risks are classified by designed structure rather than ad hoc naming.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the risk framework design once the risk direction is committed, and it completes when the designed taxonomy is confirmed for the assessment scales.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A governance design authority designer sorts the enterprise's risks into named classes per the committed direction, reviews the taxonomy for coverage, and confirms it onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Risk Taxonomy |
+| `plain_language_description` | string | no | This activity sorts the enterprise's risks into their named classes, following the committed direction. The committed … |
+| `business_purpose` | string | no | It exists so enterprise risks are classified by designed structure rather than ad hoc naming. |
+| `practical_context` | string | no | It opens the risk framework design once the risk direction is committed, and it completes when the designed taxonomy is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

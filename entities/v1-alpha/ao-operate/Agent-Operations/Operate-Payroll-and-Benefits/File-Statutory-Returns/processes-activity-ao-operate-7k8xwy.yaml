@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-operate-38qyc6 through concluding task processes:task-ao-operate-record-pwpu3k, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'File Statutory Returns'
+plain_language_description: 'This activity prepares and files the returns the pay cycle''s rules demand, working from the payments made and the benefits administered. The executed disbursements and administered benefits come in as the inputs, each return is prepared, checked, and filed, and the filed returns are confirmed and retained. The enterprise''s filing obligations are thereby met every cycle.'
+business_purpose: 'It exists so the filings that go with paying people are completed properly, every cycle.'
+practical_context: 'It closes the pay cycle, running once payments have been executed and benefits administered, and it completes when the filed returns are confirmed and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian prepares the cycle''s returns from the executed payments and benefits records, checks each filing against the applicable rules, and files it with the confirmation step recording the outcome.'

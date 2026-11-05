@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-de
 
 This is a **Activity** (level L3), named **Design Touchpoints**, currently **candidate (yellow)**. It is part of the **Customer Experience Design** process context, domain `pr`, lifecycle stage Design. It belongs to **Design Customer Experience** (`processes:process-pr-design-pxydu3`). Its canonical ID is `processes:activity-pr-design-5vsfm6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws each spot where the customer and the enterprise will meet and interact. The defined principles arrive as the rules to design within, touchpoints are designed point by point and checked against them, and the designed touchpoints are confirmed onward for the interaction patterns. The relationship's handshake points take shape here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every meeting point between customer and enterprise is deliberately designed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the principles definition, when the ground rules are in hand, and it completes once the designed touchpoints are confirmed onward for the interaction patterns.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A customer relationship management designer draws each point where customer and enterprise will interact, checks every design against the principles, and confirms the touchpoints onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Touchpoints |
+| `plain_language_description` | string | no | This activity draws each spot where the customer and the enterprise will meet and interact. The defined principles … |
+| `business_purpose` | string | no | It exists so every meeting point between customer and enterprise is deliberately designed. |
+| `practical_context` | string | no | It follows the principles definition, when the ground rules are in hand, and it completes once the designed touchpoints … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

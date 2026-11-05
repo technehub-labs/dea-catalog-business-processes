@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-op
 
 This is a **Activity** (level L3), named **Deliver Mitigations to Bodies**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. It belongs to **Operate Enterprise Risk Oversight** (`processes:process-ge-operate-tpenm6`). Its canonical ID is `processes:activity-ge-operate-d5tfkp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity carries the proposed answers to the surfaced exposures up to the bodies charged with deciding on them. The surfaced exposures arrive with their candidate mitigations, the responses are delivered to the governance bodies and their receipt confirmed, and the delivered mitigations are recorded. Risk reaches its decision-makers here, with an answer attached.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so surfaced exposures arrive at their governance bodies with proposed mitigations attached.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the exposure surfacing, once mitigations are worked up, and it completes when the delivered mitigation responses are confirmed to the governance bodies.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A risk function officer delivers the worked-up mitigation responses for the surfaced exposures to the governance bodies, and confirms each delivery on the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Deliver Mitigations to Bodies |
+| `plain_language_description` | string | no | This activity carries the proposed answers to the surfaced exposures up to the bodies charged with deciding on them … |
+| `business_purpose` | string | no | It exists so surfaced exposures arrive at their governance bodies with proposed mitigations attached. |
+| `practical_context` | string | no | It follows the exposure surfacing, once mitigations are worked up, and it completes when the delivered mitigation … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-re
 
 This is a **Activity** (level L3), named **Plan Service Withdrawal**, currently **candidate (yellow)**. It is part of the **Proposition Retirement and Service Withdrawal** process context, domain `pv`, lifecycle stage Retire. It belongs to **Transition Proposition Out of Service** (`processes:process-pv-retire-6us5am`). Its canonical ID is `processes:activity-pv-retire-vbn7s6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anything is switched off, the design authority lays out how the exit will run: who is told and when, which dependencies must unwind first, the timetable, and how users migrate to what comes next. The approved retirement decision arrives at intake, is verified, worked into the withdrawal plan, confirmed, and archived.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It turns an approved retirement decision into a safe, sequenced exit plan, so withdrawal proceeds without stranding the people who still depend on the offering.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the out-of-service transition: intake starts when the approved retirement decision is presented, and closure comes when the confirmed plan and its audit record are filed.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Given a decision to retire an ageing service, the proposition design authority registers the decision at intake, maps the dependencies and migration routes at processing, sets notice periods and dates, confirms the plan with stakeholders, and files the planning record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Plan Service Withdrawal |
+| `plain_language_description` | string | no | Before anything is switched off, the design authority lays out how the exit will run: who is told and when, which … |
+| `business_purpose` | string | no | It turns an approved retirement decision into a safe, sequenced exit plan, so withdrawal proceeds without stranding the … |
+| `practical_context` | string | no | It opens the out-of-service transition: intake starts when the approved retirement decision is presented, and closure … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

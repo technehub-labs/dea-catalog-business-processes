@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-im
 
 This is a **Activity** (level L3), named **Report Quality Trends**, currently **candidate (yellow)**. It is part of the **Governance Review and Learning** process context, domain `ge`, lifecycle stage Improve. It belongs to **Score Audit Findings** (`processes:process-ge-improve-axtq3b`). Its canonical ID is `processes:activity-ge-improve-kngey3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity rolls the scored and measured findings into the patterns underneath them, and reports those patterns to the governance bodies. The measured findings arrive as the raw material, quality trends are drawn out and written up, and the trend report is confirmed onward to its readers. Individual findings become a direction the enterprise can steer against.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so governance bodies see the shape of their audit findings, not just a list of them.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the finding scoring once findings are scored, assessed, and measured, and it completes when the trend report is confirmed and delivered to the governance bodies.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An audit function analyst rolls the scored and measured findings into quality trend reporting, and confirms the report to the governance bodies.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Report Quality Trends |
+| `plain_language_description` | string | no | This activity rolls the scored and measured findings into the patterns underneath them, and reports those patterns to … |
+| `business_purpose` | string | no | It exists so governance bodies see the shape of their audit findings, not just a list of them. |
+| `practical_context` | string | no | It closes the finding scoring once findings are scored, assessed, and measured, and it completes when the trend report … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

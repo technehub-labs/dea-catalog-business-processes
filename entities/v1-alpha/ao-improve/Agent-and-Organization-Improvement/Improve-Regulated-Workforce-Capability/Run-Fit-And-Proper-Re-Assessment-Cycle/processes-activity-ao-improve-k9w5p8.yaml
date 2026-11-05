@@ -136,3 +136,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-improve-qqxe4d through concluding task processes:task-ao-improve-record-n8grq3, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Run the Fit and Propriety Re-Assessment Cycle'
+plain_language_description: 'This activity re-checks, at the interval each role''s regulator requires, that the people holding licensed roles remain fit and proper to hold them. The live role list and the re-assessment calendar come in together, each holder is re-assessed in their turn, and the outcomes are recorded on the personnel record. What is filed proves fitness is re-examined on schedule rather than assumed from a one-time attestation.'
+business_purpose: 'It exists so fitness for licensed roles is re-proven on the regulator''s rhythm instead of resting on a single past attestation.'
+practical_context: 'It runs to the re-assessment calendar against the live role list, and it closes once the re-assessment outcomes are confirmed and preserved on the personnel record.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian works the re-assessment calendar for the live producer-role holders, sees each annual fitness re-check completed, and records the outcomes on the personnel file.'

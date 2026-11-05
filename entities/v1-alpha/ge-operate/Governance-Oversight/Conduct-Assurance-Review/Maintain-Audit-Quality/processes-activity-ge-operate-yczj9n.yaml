@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-operate-zwaes5 through concluding task processes:task-ge-operate-record-e42zy3, whose outcome — Case file retained for Maintain Audit Quality under the records retention schedule with cryptographic integrity protection; statutory retention horizon applied …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Maintain Audit Quality'
+plain_language_description: 'This activity keeps the auditor honest — maintaining the quality of the function that does the auditing, across its cycles. Each completed cycle arrives as material for self-examination, quality is reviewed and weaknesses corrected, and the maintained quality is confirmed onward. The function that grades everyone else grades itself first.'
+business_purpose: 'It exists so the audit and assurance function stays good enough to judge everyone else.'
+practical_context: 'It runs across the assurance cycles, examining the function''s own work as each completes, and it completes when the maintained audit quality is confirmed onward for the record.'
+worked_example:
+  agent_type: human
+  narrative: 'A compliance function lead reviews the function''s own completed audit work for quality, corrects the weaknesses found, and confirms the maintained quality onward.'

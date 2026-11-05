@@ -83,3 +83,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-operate-44jsrp through concluding task processes:task-eo-operate-record-yzrg6n, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Record Inspection Results'
+plain_language_description: 'This activity writes the outcome of each inspection and test into the quality record, batch by batch. The captured measurements arrive from execution, the per-batch results are registered and checked for completeness, and the quality record is confirmed onward for disposition. What the instruments found becomes what the enterprise can prove.'
+business_purpose: 'It exists so every batch''s inspection outcome lives in the quality record as evidence, not in a notebook.'
+practical_context: 'It follows inspection execution, once a batch''s measurements are captured, and it completes when the per-batch results are registered in the quality record and confirmed onward.'
+worked_example:
+  agent_type: human
+  narrative: 'A records custodian registers each batch''s inspection and test outcomes into the quality record, checks the entries are complete, and confirms the record for the disposition step.'

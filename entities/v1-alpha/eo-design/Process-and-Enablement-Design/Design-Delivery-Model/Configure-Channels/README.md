@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-de
 
 This is a **Activity** (level L3), named **Configure Channels**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Design Delivery Model** (`processes:process-eo-design-6j5mxp`). Its canonical ID is `processes:activity-eo-design-tsyfd5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity takes each channel pattern framed during conception and works it into a bounded configuration. The conceived patterns arrive as the input, each channel is configured in detail and checked against its pattern, and the configuration set is confirmed onward for the service-level work. Channels stop being broad ideas and become specified arrangements.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the delivery model's channels move from conception sketches to bounded configurations that can actually be built.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the delivery model design, when the conceived channel patterns are presented for detailing, and it completes once the channel configuration set is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function designer works each conceived channel pattern into a detailed configuration, checks every channel against its pattern, and confirms the configuration set for the service-level step.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Configure Channels |
+| `plain_language_description` | string | no | This activity takes each channel pattern framed during conception and works it into a bounded configuration. The … |
+| `business_purpose` | string | no | It exists so the delivery model's channels move from conception sketches to bounded configurations that can actually be … |
+| `practical_context` | string | no | It opens the delivery model design, when the conceived channel patterns are presented for detailing, and it completes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

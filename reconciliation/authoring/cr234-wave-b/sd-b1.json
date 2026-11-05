@@ -1,0 +1,402 @@
+{
+ "processes:activity-sd-activate-4gefj3": {
+  "plain_language_name": "File the Strategic-Plan Submission with the Regulator",
+  "plain_language_description": "When the governing board has signed off a strategic plan, the team logs its arrival, checks it against the regulator's required filing format, and packages it for lodgement. The submission is then lodged with the competent regulator ahead of the plan coming into effect. Once lodgement is confirmed, the filed submission and its supporting evidence are kept on the regulated strategic-plan record for later retrieval.",
+  "business_purpose": "It puts a board-approved plan on official record with the regulator, opening the supervised activation journey this process exists to deliver.",
+  "practical_context": "Work starts when the approved plan is presented at intake and closes once lodgement is confirmed and the filing evidence is preserved for the record team.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function analyst logs the newly board-approved plan, a verification custodian confirms every section matches the regulator's mandated format, and the packaged submission is lodged with the industry regulator before the deadline; the records custodian then files the lodgement evidence where supervising authority reviewers can retrieve it."
+  }
+ },
+ "processes:activity-sd-activate-w83pp4": {
+  "plain_language_name": "Complete Supervisor Review and Obtain Acknowledgement on Record",
+  "plain_language_description": "The filed submission now sits with the supervising authority, and this work sees the review through to a formal answer. The team hands the reviewers what they need, tracks their questions against the review criteria, and records how each point is resolved. When the supervisor signs the acknowledgement, it is preserved on the regulated strategic-plan record so the plan's activation can proceed.",
+  "business_purpose": "It secures the supervisor's formal yes, the gate that turns a filed plan into one the entity may act on under supervision.",
+  "practical_context": "It opens when the filed submission and the review criteria are presented for intake and closes when the signed acknowledgement is issued and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A supervising authority reviewer works through the lodged plan against the published review criteria while the strategy function supply evidence on request; when the regulator is satisfied, the confirmation custodian issues the acknowledgement and the records custodian preserves it on the regulated strategic-plan record."
+  }
+ },
+ "processes:activity-sd-activate-jz6u3q": {
+  "plain_language_name": "Activate the Communications Plan Under Ongoing Regulator Supervision",
+  "plain_language_description": "With the supervisor's acknowledgement secured, attention turns to telling the outside world. The team takes in the acknowledged plan and the mandated disclosure framework, verifies the announcements are ready, and switches the communications plan on — the disclosure controls, the regulated-entity announcement and the investor-relations briefing all go live while the regulator keeps watch. Confirmation tells downstream consumers the plan is active, and the activated communications plan is preserved on the record.",
+  "business_purpose": "It makes the plan's public face live under the regulator's watchful eye, so disclosures and announcements reach the audiences the supervisor expects.",
+  "practical_context": "Entry begins at intake once the acknowledged plan and the disclosure framework are presented; closure comes when activation is confirmed and preserved on the record.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The strategy function's communications lead receives the acknowledged plan, walks the disclosure controls past the risk function, and issues the regulated-entity announcement on the agreed day; investor-relations colleagues brief the market while the records custodian preserves the activation evidence for the supervising authority."
+  }
+ },
+ "processes:activity-sd-activate-92pg6h": {
+  "plain_language_name": "Launch Operational Monitoring Framework",
+  "plain_language_description": "Activation is not complete until someone is actually watching the numbers. At intake the acknowledged plan and the mandated monitoring arrangements are registered, and verification confirms the measures, limits and early warnings match what the supervisor requires. The framework then goes live, confirmation tells the regulator-facing teams it is running, and the live framework is preserved on the regulated strategic-plan record.",
+  "business_purpose": "It stands up the day-to-day oversight machinery — measures, limits, early warnings — that keeps the activated plan observable to its supervisor.",
+  "practical_context": "It begins when the acknowledged plan and the monitoring requirements arrive at intake and ends when confirmation declares the framework live and its record preserved.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Risk function analysts register the acknowledged plan at intake, verify the early-warning indicators against the supervisor's expectations, and switch on the reporting rhythm; the operations function feeds the monthly figures while the supervising authority receives confirmation that monitoring is live."
+  }
+ },
+ "processes:activity-sd-build-c2ky47": {
+  "plain_language_name": "Set the Plan Version Boundary",
+  "plain_language_description": "Before anyone writes a page of the plan, somebody has to decide exactly which evaluated choice and which roadmap this document covers. The team registers the incoming materials, confirms they match what the build needs, and marks out the version's reach so later drafting stays inside agreed lines. Once the boundary is agreed it is confirmed to downstream colleagues and stored with its audit trail.",
+  "business_purpose": "It fixes the identity of the plan document early, so every later assembly, review and commitment refers to one clearly scoped version.",
+  "practical_context": "It opens at intake when the committed choice and the built roadmap are presented, and closes when the version boundary is confirmed and filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function planner takes in the committed choice and the finished roadmap, agrees with the activity owner where the plan version starts and stops, and hands the marked-out version to the drafting team with its audit identifiers recorded."
+  }
+ },
+ "processes:activity-sd-build-7z99jy": {
+  "plain_language_name": "Assemble Strategic Plan",
+  "plain_language_description": "This is the pull-it-together moment of the build. The bounded version, the chosen direction, the objectives, the initiatives and the resource allocation are all brought in, checked for completeness, and merged into a single plan document. When the assembled plan is confirmed, downstream reviewers are told it is ready and the working papers are preserved for audit.",
+  "business_purpose": "It turns scattered approved pieces into one coherent plan document that the process can review, commit and hand to operations.",
+  "practical_context": "It runs once the version boundary and all ingredient artifacts are presented at intake, closing when the assembled plan is confirmed as ready for review.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function plan writer gathers the bounded version, the agreed direction, the objective set, the initiative portfolio and the allocation decisions into one document; a verification custodian checks nothing is missing before the confirmation custodian announces the draft plan is ready for review."
+  }
+ },
+ "processes:activity-sd-build-mttqvf": {
+  "plain_language_name": "Review Strategic Plan",
+  "plain_language_description": "Someone now reads the assembled plan with a sceptical eye. Intake brings the document in, verification tests it line by line against the direction the enterprise chose and the version it was scoped to, and any gaps go back for rework. Once the scrutiny is satisfied, confirmation records the outcome and the reviewed plan is kept with its audit trail.",
+  "business_purpose": "It protects the process from committing a plan that quietly drifts from the direction and scope leadership actually approved.",
+  "practical_context": "It happens straight after assembly, opening at intake of the drafted document and closing when the review verdict is confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Two strategy function reviewers sit down with the assembled plan, tick each section against the approved direction and version scope, and raise one chapter for rework; after the fix, the confirmation custodian records the verdict and the records custodian archives the reviewed document."
+  }
+ },
+ "processes:activity-sd-build-y8cfhp": {
+  "plain_language_name": "Commit Strategic Plan",
+  "plain_language_description": "Everything has been checked, so the plan now becomes official. The reviewed document is brought in, a final verification confirms it is the agreed version, and the commitment is made — the plan, its roadmap and its initiative portfolio are locked for the operating part of the business to execute. Confirmation tells everyone the plan is in force and the records custodian files the commitment evidence for the long term.",
+  "business_purpose": "It gives the enterprise its official, executable plan of record, closing the build and handing a settled mandate to those who will run it.",
+  "practical_context": "It opens at intake once review is complete and closes with the commitment confirmed, downstream teams notified and the evidence archived.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The strategy function lead presents the reviewed plan for commitment, the confirmation custodian records the decision and notifies operations colleagues that the plan is in force, and the records custodian preserves the committed plan at its retention tier so future audits can retrieve it."
+  }
+ },
+ "processes:activity-sd-build-3u6qkt": {
+  "plain_language_name": "Sequence Strategic Initiatives",
+  "plain_language_description": "The initiatives exist, but order matters. This work takes the translated initiatives in, checks each one is complete, and arranges them into a deliberate sequence that respects the strategic horizons they serve. The ordered sequence is then confirmed to downstream colleagues and preserved so the milestone work can build on it.",
+  "business_purpose": "It turns a pile of initiatives into an ordered path, giving the roadmap its backbone and the planning calendar its running order.",
+  "practical_context": "It starts at intake when the translated initiatives are presented and closes when the agreed sequence is confirmed and stored for milestone anchoring.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function planner lays the translated initiatives out in a workshop, agrees the running order with the activity owner across the strategic horizons, and the confirmation custodian announces the sequence is settled for milestone anchoring."
+  }
+ },
+ "processes:activity-sd-build-yvecqq": {
+  "plain_language_name": "Anchor Roadmap Milestones",
+  "plain_language_description": "With the initiative order settled, each step needs a date to aim at. The team registers the sequence, verifies the anchors line up with the horizons, and fixes the milestones those ordered initiatives have to deliver. Confirmation spreads the anchored dates to downstream planners and the records custodian preserves them on the roadmap trail.",
+  "business_purpose": "It gives the initiative sequence concrete deliverable points, so the roadmap can be tracked and the plan build has dates to rely on.",
+  "practical_context": "It follows sequencing, opening when the initiative sequence and the horizon references arrive at intake and closing when the milestones are confirmed and filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The strategy function sets delivery dates beside each ordered initiative, checks them against the horizon plan, and once the confirmation custodian announces the anchors are fixed the records custodian files them with the roadmap working papers."
+  }
+ },
+ "processes:activity-sd-build-htapw4": {
+  "plain_language_name": "Assemble Strategic Roadmap",
+  "plain_language_description": "Now the pieces become one navigable document. Intake registers the ordered initiatives and their fixed dates, verification makes sure nothing is missing or contradictory, and processing merges them into a single roadmap that reads from first step to last. When assembly is confirmed, downstream colleagues are notified and the assembled roadmap is preserved with its audit trail.",
+  "business_purpose": "It combines order and dates into one roadmap artifact that the wider planning effort can read, challenge and ultimately commit.",
+  "practical_context": "It runs once sequencing and milestone anchoring are complete, closing when the assembled roadmap is confirmed as ready for commitment.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function roadmap writer combines the agreed initiative order and the anchored dates into one document, a verification custodian confirms the threads tie together, and the confirmation custodian tells plan-build colleagues the draft roadmap is ready."
+  }
+ },
+ "processes:activity-sd-build-jfcx27": {
+  "plain_language_name": "Commit Strategic Roadmap",
+  "plain_language_description": "The roadmap has been built and checked, and this is where it stops being a draft. The assembled document comes in at intake, a last verification confirms it carries every ordered initiative and anchor date, and the commitment is made so plan-build work can start from it. Confirmation notifies downstream consumers and the records custodian preserves the committed roadmap for the planning cycle.",
+  "business_purpose": "It finalises the roadmap as a committed input, letting the plan build proceed from a settled, auditable sequence of initiatives and dates.",
+  "practical_context": "It opens when the assembled roadmap is presented after assembly and closes when commitment is confirmed and its record preserved.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The strategy function signs the roadmap off, the confirmation custodian notifies the plan-build team that the committed sequence and dates are available, and the records custodian files the roadmap evidence so the planning cycle can cite it later."
+  }
+ },
+ "processes:activity-sd-build-sn9sky": {
+  "plain_language_name": "Set the Allocation Envelopes",
+  "plain_language_description": "Money and effort are finite, so limits come before requests. This work registers the translated initiatives and the plan they serve, checks the inputs are sound, and draws a spending and capacity envelope around each initiative. When the envelopes are confirmed, downstream colleagues are notified and the bounded limits are preserved for the allocation and prioritisation steps.",
+  "business_purpose": "It caps what each initiative may claim, keeping later allocation decisions honest and inside what the strategic plan can fund.",
+  "practical_context": "It opens at intake when the translated initiatives and the plan are presented, closing once the envelope limits are confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function budgeting lead works through the initiative list, agrees an envelope of funding and capacity for each with the activity owner, and the records custodian preserves the bounded limits ahead of the allocation round."
+  }
+ },
+ "processes:activity-sd-build-25j2m7": {
+  "plain_language_name": "Allocate Resources to Initiatives",
+  "plain_language_description": "With limits drawn, real resourcing can happen. The envelopes arrive at intake, verification checks each request fits inside its cap, and processing assigns funding, people and capacity to the initiatives accordingly. Confirmation announces the allocation to downstream consumers and the records custodian preserves the decisions for the prioritisation round.",
+  "business_purpose": "It matches concrete funding and capacity to each initiative, converting bounded limits into workable resourcing for the plan.",
+  "practical_context": "It begins once the envelopes are in place, opening at their intake and closing when the allocation is confirmed and preserved.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The strategy function fills each initiative's envelope with named funding and staff allocations, the verification custodian confirms nothing exceeds its cap, and the confirmation custodian tells downstream planners the allocation is ready to be ranked."
+  }
+ },
+ "processes:activity-sd-build-ys83dr": {
+  "plain_language_name": "Prioritize Allocation Decisions",
+  "plain_language_description": "Not every funded initiative can start at once, so ranks are needed. Intake registers the allocations, verification tests them against the envelope limits and what the plan says matters most, and processing orders the decisions into a defensible priority list. Confirmation communicates the ranking and the records custodian preserves it ahead of commitment.",
+  "business_purpose": "It ranks the resourcing choices so the strongest strategic cases are served first when envelopes are tight.",
+  "practical_context": "It follows allocation, opening when the allocation decisions are presented at intake and closing when the agreed ranking is confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Strategy function leads compare the allocated initiatives against the plan's stated priorities and the envelope headroom, agree the ranking in a short review, and the confirmation custodian communicates the order to downstream colleagues before commitment."
+  }
+ },
+ "processes:activity-sd-build-vgavkq": {
+  "plain_language_name": "Commit Allocation Priorities",
+  "plain_language_description": "The ranking is settled and now it becomes binding. The prioritized decisions come in at intake, a final verification confirms each envelope still holds, and the priorities are committed so operating teams can fund and staff against them. Confirmation notifies downstream consumers of the committed priorities and the records custodian preserves the evidence at its retention tier.",
+  "business_purpose": "It locks the resourcing ranks into a committed position, closing the process and giving operations a stable basis for spending decisions.",
+  "practical_context": "It opens once prioritisation is complete and closes with the commitment confirmed, downstream teams notified and evidence archived.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The strategy function confirms the final ranking, the confirmation custodian notifies operating teams that the committed priorities and envelopes are available, and the records custodian archives the commitment evidence so later budget rounds can retrieve it."
+  }
+ },
+ "processes:activity-sd-build-tp9jtk": {
+  "plain_language_name": "Set the Initiative Scope",
+  "plain_language_description": "Every chosen direction needs turning into work with edges. This step registers the committed choice and the parent plan, verifies the inputs, and marks out how far each initiative may reach — what is in and what is out. The agreed scope lines are confirmed downstream and preserved so drafting stays inside them.",
+  "business_purpose": "It stops initiative drafting from sprawling by fixing agreed edges around each piece of work the choices demand.",
+  "practical_context": "It opens at intake when the committed choice and the plan are presented, closing once the scope boundaries are confirmed and filed.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function facilitator walks the committed choice through a scoping session, agrees with the activity owner what each initiative will and will not cover, and the records custodian preserves the agreed boundaries for the drafting team."
+  }
+ },
+ "processes:activity-sd-build-547hm5": {
+  "plain_language_name": "Draft Strategic Initiatives",
+  "plain_language_description": "Now the chosen direction takes the shape of named pieces of work. The scope lines arrive at intake, verification checks the drafting instructions are complete, and processing writes the initiative set — each one described, shaped and kept inside its agreed edges. Confirmation announces the drafted set to downstream colleagues and the working papers are preserved for the fit review.",
+  "business_purpose": "It gives the strategic choices a concrete, workable form that can be reviewed for fit and ultimately committed.",
+  "practical_context": "It runs once scopes are set, opening at intake of the bounded scope and closing when the drafted initiatives are confirmed ready for review.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Strategy function writers draft each initiative inside its agreed boundaries, a verification custodian sends any under-specified one back for rework, and the confirmation custodian tells the reviewers the drafted set is with them."
+  }
+ },
+ "processes:activity-sd-build-tjdzmd": {
+  "plain_language_name": "Review Strategic Fit",
+  "plain_language_description": "Drafted work is only worth committing if it genuinely serves the direction. Intake brings the initiative set in, scrutiny tests each draft against what the plan and the chosen direction actually call for, and anything off-course is flagged for rework. When the fit is confirmed, downstream colleagues are notified and the fit-checked set is preserved.",
+  "business_purpose": "It filters out initiatives that would quietly pull the enterprise off its chosen path, so only aligned work reaches commitment.",
+  "practical_context": "It happens after drafting, opening when the drafted initiatives are presented at intake and closing when the fit verdict is confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Two strategy function reviewers read each drafted initiative against the approved direction, return one misaligned proposal for reshaping, and the confirmation custodian records the fit outcome once every draft passes."
+  }
+ },
+ "processes:activity-sd-build-u85tt9": {
+  "plain_language_name": "Commit Strategic Initiatives",
+  "plain_language_description": "The initiative set has survived scoping, drafting and the fit review, so it is ready to become official. Intake registers the confirmed set, a last verification checks every initiative is complete, and the commitment is made so the roadmap and resourcing work can pick them up. Confirmation tells downstream consumers the committed set is available and the records custodian preserves it with its audit identifiers.",
+  "business_purpose": "It finalises the translated choices as a committed initiative set, the handover this process owes to the sequencing and resourcing work that follows.",
+  "practical_context": "It opens after the fit review clears the set and closes when commitment is confirmed, consumers notified and evidence archived.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The strategy function lead commits the fit-checked initiative set, the confirmation custodian notifies the roadmap and allocation teams that their inputs are ready, and the records custodian files the set with retention and retrieval handles set up."
+  }
+ },
+ "processes:activity-sd-conceive-gdjvff": {
+  "plain_language_name": "Identify Intent Imperatives",
+  "plain_language_description": "Direction-setting starts with listening. Purpose signals, mandate changes and cues from the environment are brought in at intake, checked for relevance, and shaped into a clear set of imperatives that explains why bounded intent is needed now. Confirmation shares that set with downstream colleagues and the records custodian preserves it for the framing work that follows.",
+  "business_purpose": "It grounds the intent work in evidence, so the direction the enterprise frames responds to real signals rather than assumptions.",
+  "practical_context": "It opens the process at intake when purpose signals and mandate changes arrive, closing once the sensed imperatives are confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function analyst gathers mandate notes and environment cues at intake, a verification custodian filters out the noise, and the team publishes the shortlist of imperatives that the intent framing will answer to."
+  }
+ },
+ "processes:activity-sd-conceive-qu8vjv": {
+  "plain_language_name": "Frame Strategic Intent Narrative",
+  "plain_language_description": "The sensed imperatives now need one coherent story. Intake registers them, verification tests the draft wording against what the signals actually say, and processing writes the narrative that will steer direction-setting within the enterprise's purpose and horizons. Confirmation circulates the framed narrative and the records custodian preserves it for trade-off scoping.",
+  "business_purpose": "It turns scattered imperatives into a single intent story that downstream strategy development can align to.",
+  "practical_context": "It follows sensing, opening at intake of the imperative set and closing when the framed narrative is confirmed and handed on.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Strategy function writers draft the intent narrative from the confirmed imperatives, read it back against the enterprise's purpose with the activity owner, and the confirmation custodian circulates it to the trade-off team."
+  }
+ },
+ "processes:activity-sd-conceive-e6epkt": {
+  "plain_language_name": "Scope the Intent Trade-offs",
+  "plain_language_description": "Every intent forces choices, and this work maps where the tension lies. The framed narrative and the environmental signals come in at intake, verification confirms both are current, and processing sketches the trade-off space the intent will have to cross — what may be traded and what may not. Confirmation passes the mapped space downstream and the records custodian preserves it ready for commitment.",
+  "business_purpose": "It exposes the tensions the intent must cross, so commitment happens with eyes open about what is being traded.",
+  "practical_context": "It runs after framing, opening when the narrative and the signals are presented at intake and closing when the mapped trade-offs are confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A pair of strategy function colleagues walks the framed narrative against fresh environment signals, lists where growth and risk pull against each other, and the confirmation custodian passes the agreed trade-off map to the colleagues preparing commitment."
+  }
+ },
+ "processes:activity-sd-conceive-nb772h": {
+  "plain_language_name": "Commit Strategic Intent",
+  "plain_language_description": "The intent has been sensed, framed and stress-tested, so it can now be made official. Intake registers the framed narrative and the mapped trade-offs, a last verification confirms both are complete, and the commitment locks the intent in for the strategy development that follows. Confirmation notifies downstream consumers and the records custodian preserves the committed intent on the audit trail.",
+  "business_purpose": "It gives direction-setting its anchor decision, closing intent conception and feeding a settled intent into strategy development.",
+  "practical_context": "It opens once framing and trade-off scoping are done and closes with the commitment confirmed, consumers notified and evidence archived.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The strategy function lead confirms the intent and its trade-off map, the confirmation custodian tells the corporate strategy team their input is ready, and the records custodian files the committed intent for the development cycle."
+  }
+ },
+ "processes:activity-sd-conceive-28242h": {
+  "plain_language_name": "Identify Purpose Imperatives",
+  "plain_language_description": "Why does the enterprise need to state its purpose right now? This work gathers the answer at intake — founding context, reframing pressure, mandate signals — verifies which genuinely apply, and distils them into a sensed imperative set. Confirmation shares the set with downstream colleagues and the records custodian preserves it for the framing step.",
+  "business_purpose": "It establishes why purpose work is happening at all, anchoring the definition in the establishment, reframe or mandate reality behind it.",
+  "practical_context": "It opens this process at intake when establishment context and mandate signals arrive, closing once the imperatives are confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function lead collects the founding papers and the latest mandate notes at intake, the verification custodian confirms which imperatives truly apply, and the sensed set is confirmed onward to the purpose framing team."
+  }
+ },
+ "processes:activity-sd-conceive-na8erc": {
+  "plain_language_name": "Frame Purpose Statement",
+  "plain_language_description": "The imperatives say why; this work says what. Intake registers the sensed set, verification tests candidate wording against the enterprise context, and processing crafts the short statement that declares what the organisation exists to do. Confirmation circulates the wording for the ambition step and the records custodian preserves the framed statement.",
+  "business_purpose": "It gives the enterprise a plain declaration of why it exists, the anchor every later strategy artifact refers back to.",
+  "practical_context": "It follows sensing, opening at intake of the imperative set and closing when the agreed wording is confirmed and preserved.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Strategy function writers draft candidate purpose wording, test each version against the sensed imperatives with the activity owner, and settle one statement that the confirmation custodian passes to the ambition work."
+  }
+ },
+ "processes:activity-sd-conceive-9672ug": {
+  "plain_language_name": "Frame Ambition Envelope",
+  "plain_language_description": "With purpose in words, attention turns to how far the enterprise intends to reach. The purpose statement and fresh environment cues arrive at intake, verification checks they align, and processing draws the ambition envelope — the band of aspiration the organisation is willing to commit to. Confirmation hands the envelope downstream and the records custodian preserves it beside the purpose statement.",
+  "business_purpose": "It bounds how bold the enterprise intends to be, so intent and horizons are framed inside a realistic, agreed level of aspiration.",
+  "practical_context": "It runs after the purpose statement is framed, opening at its intake and closing when the drawn envelope is confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The strategy function sketches an ambition band with the governing board's guidance in view, a verification custodian checks it against the purpose wording, and the confirmation custodian releases the envelope to the intent conception team."
+  }
+ },
+ "processes:activity-sd-conceive-jmupn8": {
+  "plain_language_name": "Commit Purpose and Ambition",
+  "plain_language_description": "Purpose and ambition are framed; this step makes them official. The framed statement and envelope arrive at intake, verification confirms both are settled, and the commitment locks them in as the anchor for the intent work that follows. Confirmation notifies downstream consumers that the anchor is in place and the records custodian preserves the committed pair on the audit trail.",
+  "business_purpose": "It closes purpose definition with a committed anchor, giving strategic intent conception a fixed starting point.",
+  "practical_context": "It opens once the statement and the envelope are framed and closes with commitment confirmed, downstream teams notified and evidence archived.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The strategy function lead presents the framed purpose and ambition for commitment, the confirmation custodian notifies the intent conception team their anchor is ready, and the records custodian files the committed pair at its retention tier."
+  }
+ },
+ "processes:activity-sd-conceive-w28h46": {
+  "plain_language_name": "Synthesize Strategic Direction",
+  "plain_language_description": "All the upstream anchors exist; someone now has to fuse them into one coherent course. Intake registers the committed pieces, verification checks they tell a consistent story, and processing blends the horizons, the intent, the ambition and the purpose into a single synthesized direction. Confirmation announces that direction to downstream colleagues and the records custodian preserves the synthesis.",
+  "business_purpose": "It merges the committed anchors into one direction of travel, the raw material every trajectory choice in this process depends on.",
+  "practical_context": "It opens the process at intake once every upstream anchor is in place, closing when the synthesized direction is confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function lead brings the four committed anchors to a synthesis workshop, tests that they tell one story, and blends them into a single direction the confirmation custodian then publishes to the trajectory team."
+  }
+ },
+ "processes:activity-sd-conceive-e7z2am": {
+  "plain_language_name": "Articulate Strategic Trajectory",
+  "plain_language_description": "A direction is a bearing; a trajectory spells out the route. Intake registers the synthesized direction, verification tests the emerging wording against it, and processing writes out the trajectory in full — where the enterprise is heading and along what path. Confirmation passes the articulated trajectory downstream and the records custodian preserves it for the choice step.",
+  "business_purpose": "It converts the fused direction into an explicit trajectory that leaders can weigh and choose between.",
+  "practical_context": "It follows synthesis, opening at intake of the synthesized direction and closing when the articulated trajectory is confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Strategy function writers turn the synthesized direction into a fully spelled-out trajectory, read it back against the direction with the activity owner, and the confirmation custodian releases it to the colleagues who will choose the way forward."
+  }
+ },
+ "processes:activity-sd-conceive-uvhsrz": {
+  "plain_language_name": "Choose Strategic Trajectory",
+  "plain_language_description": "The articulated routes are on the table and one must be picked. Intake brings the candidate trajectories in, verification confirms each is complete and current, and processing makes the choice — weighing the options and settling on the trajectory the enterprise will follow. Confirmation records the decision for downstream colleagues and the records custodian preserves the chosen course.",
+  "business_purpose": "It makes the defining pick of this process, turning several possible routes into the one course the corporate strategy will carry.",
+  "practical_context": "It runs after articulation, opening when the candidate trajectories are presented at intake and closing when the choice is confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Strategy function leads compare the articulated trajectories in a decision session, settle on one with the activity owner, and the confirmation custodian records the pick for the commitment step that closes the process."
+  }
+ },
+ "processes:activity-sd-conceive-7tr4ax": {
+  "plain_language_name": "Commit Corporate Strategy",
+  "plain_language_description": "This is the closing act of strategy conception. The chosen trajectory comes in at intake alongside the settled ambition and intent, a final verification confirms the set is complete, and the corporate strategy is committed as one artifact. Confirmation notifies downstream consumers that the strategy is ready to drive design work, and the records custodian preserves the committed strategy for the long term.",
+  "business_purpose": "It seals the process with one committed corporate strategy, the mandate that lets downstream design work begin from a settled base.",
+  "practical_context": "It opens once the trajectory is chosen and closes with the commitment confirmed, downstream consumers notified and evidence archived.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The strategy function lead commits the corporate strategy, the confirmation custodian notifies design colleagues that the committed ambition, intent and trajectory are available, and the records custodian archives the strategy evidence at its retention tier."
+  }
+ },
+ "processes:activity-sd-conceive-qayekb": {
+  "plain_language_name": "Set the Horizon Timeframes",
+  "plain_language_description": "Intent needs a calendar to live on. The conceived intent and the rhythms of the environment come in at intake, verification tests the proposed windows against both, and processing draws the timeframes — the defined periods planning will run across. Confirmation releases the bounded windows downstream and the records custodian preserves them for milestone anchoring.",
+  "business_purpose": "It puts agreed date windows around the intent, giving the planning cycle the fixed periods its horizons need.",
+  "practical_context": "It opens this process at intake when the conceived intent and the environment cycles are presented, closing once the timeframes are confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function planner proposes planning windows against the conceived intent and the known environment cycles, a verification custodian checks the span is realistic, and the confirmation custodian passes the agreed periods to the milestone team."
+  }
+ },
+ "processes:activity-sd-conceive-h9ued3": {
+  "plain_language_name": "Anchor Horizon Milestones",
+  "plain_language_description": "Each agreed window now needs its marker points. Intake registers the bounded timeframes, verification checks the candidate anchors are deliverable, and processing fixes the milestones every period is expected to deliver. Confirmation shares the anchored points with downstream colleagues and the records custodian preserves them ready for the alignment step.",
+  "business_purpose": "It gives every planning window its concrete deliverable markers, so horizons become trackable commitments rather than vague spans.",
+  "practical_context": "It follows timeframe bounding, opening when the bounded windows arrive at intake and closing when the anchors are confirmed and preserved.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The strategy function sets milestone points inside each agreed window, checks they are genuinely deliverable with the activity owner, and the records custodian files the anchored set ahead of the alignment review."
+  }
+ },
+ "processes:activity-sd-conceive-6dbxtu": {
+  "plain_language_name": "Align Horizons with Intent",
+  "plain_language_description": "Windows and markers are set; the last test is whether they genuinely fit the intent. Intake brings the dated horizons in, scrutiny tests the fit against what the intent calls for, and processing adjusts any period or marker that sits oddly. Confirmation records the aligned result and the records custodian preserves it for commitment.",
+  "business_purpose": "It reconciles the calendar with the ambition, so the horizons this process commits actually serve the intent they were framed for.",
+  "practical_context": "It runs after anchoring, opening when the dated horizons are presented at intake and closing when the alignment outcome is confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Strategy function reviewers walk each window and milestone against the intent, shift one marker that lands awkwardly, and the confirmation custodian records the aligned horizons for the colleagues preparing commitment."
+  }
+ },
+ "processes:activity-sd-conceive-zz7qrg": {
+  "plain_language_name": "Commit Strategic Horizons",
+  "plain_language_description": "The horizons are bounded, marked and aligned; commitment is all that remains. Intake registers the aligned set, a final verification confirms the periods and markers are complete, and the commitment locks the horizons in for the strategy work ahead. Confirmation notifies downstream consumers and the records custodian preserves the committed horizons on the audit trail.",
+  "business_purpose": "It finalises the planning calendar as a committed artifact, closing horizon framing and equipping later strategy work with fixed periods.",
+  "practical_context": "It opens once alignment is done and closes with the commitment confirmed, downstream consumers notified and the record preserved.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The strategy function lead commits the aligned horizons, the confirmation custodian tells downstream strategy teams the committed windows and milestones are available, and the records custodian archives the evidence for the planning cycle."
+  }
+ },
+ "processes:activity-sd-design-ck5dud": {
+  "plain_language_name": "Set the Objectives Scope",
+  "plain_language_description": "The chosen option needs to become measurable, and measurement starts with edges. Intake registers the option and the evaluation criteria, verification confirms both are current, and processing marks out how many objectives and targets the design will carry and where they apply. Confirmation passes the agreed scope downstream and the records custodian preserves it for drafting.",
+  "business_purpose": "It keeps the measurement design focused, fixing in advance which objectives and targets the chosen option actually needs.",
+  "practical_context": "It opens this process at intake when the chosen option and the evaluation criteria arrive, closing once the scope lines are confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "A strategy function analyst scopes the objective set with the activity owner, agreeing how many measures the chosen option needs and where they bite, and the records custodian preserves the agreed edges for the drafting team."
+  }
+ },
+ "processes:activity-sd-design-uwqj5w": {
+  "plain_language_name": "Draft Objectives and Targets",
+  "plain_language_description": "Inside the agreed edges, the measurable ambition gets written. The scope lines arrive at intake, verification checks the drafting instructions are usable, and processing writes each objective and its target so every line is concrete and checkable. Confirmation hands the drafted set to downstream colleagues and the working papers are preserved for the ownership step.",
+  "business_purpose": "It turns the scoped intent into named objectives with concrete targets, giving the enterprise something steerable to commit.",
+  "practical_context": "It runs once scoping is done, opening at intake of the bounded scope and closing when the drafted set is confirmed ready for ownership assignment.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "Strategy function analysts draft each objective and its measurable target inside the agreed lines, a verification custodian returns any vague one for tightening, and the confirmation custodian announces the drafted set is ready for owners to be assigned."
+  }
+ },
+ "processes:activity-sd-design-xgzkpn": {
+  "plain_language_name": "Assign Target Ownership",
+  "plain_language_description": "A target nobody owns is a target that will be missed. Intake registers the drafted targets and the organisational structure, verification confirms every unit and role pairing is real, and processing names an accountable owner for each line. Confirmation announces the ownership map downstream and the records custodian preserves it ready for commitment.",
+  "business_purpose": "It puts a named accountable party behind every target, so the designed measures can actually be steered once committed.",
+  "practical_context": "It follows drafting, opening when the drafted targets and the structure are presented at intake and closing when the assignments are confirmed and stored.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The strategy function matches each drafted target to the unit or role best placed to deliver it, a verification custodian confirms the pairings against the organisational structure, and the confirmation custodian publishes the ownership map before commitment."
+  }
+ },
+ "processes:activity-sd-design-ec5thr": {
+  "plain_language_name": "Commit Objectives and Targets",
+  "plain_language_description": "Objectives are drafted and owned; this closing step makes them official. Intake registers the owned set, a last verification confirms measures and owners are all in place, and the commitment locks the objectives and targets for the plan build to consume. Confirmation notifies downstream consumers and the records custodian preserves the committed set at its retention tier.",
+  "business_purpose": "It completes the process by committing a steerable set of owned measures, the input the strategic plan build depends on.",
+  "practical_context": "It opens once ownership is assigned and closes with the commitment confirmed, downstream consumers notified and the evidence archived.",
+  "worked_example": {
+   "agent_type": "human",
+   "narrative": "The strategy function lead commits the owned objective set, the confirmation custodian notifies plan-build colleagues that the committed measures are available, and the records custodian archives the commitment evidence so later reviews can retrieve it."
+  }
+ }
+}

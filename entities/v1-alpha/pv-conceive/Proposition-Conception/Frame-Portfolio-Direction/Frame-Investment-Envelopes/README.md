@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-co
 
 This is a **Activity** (level L3), named **Frame Investment Envelopes**, currently **candidate (yellow)**. It is part of the **Proposition and Portfolio Conception** process context, domain `pv`, lifecycle stage Conceive. It belongs to **Frame Portfolio Direction** (`processes:process-pv-conceive-jb4xtg`). Its canonical ID is `processes:activity-pv-conceive-vez3t5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity caps what each proposition in the ordered portfolio may receive. The priority ordering arrives as the basis of allocation, envelopes are framed around each proposition and checked against the bounded investment total, and the framed envelopes are confirmed onward for the direction's commitment. Every proposition learns its allowance here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so each competing proposition gets a defined investment allowance, not an open tab.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the priority ordering, once the sequence of favour is set, and it completes when the framed investment envelopes are confirmed for the direction's commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A proposition design authority lead caps each proposition's investment allowance against the priority ordering and the bounded total, and confirms the framed envelopes onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Frame Investment Envelopes |
+| `plain_language_description` | string | no | This activity caps what each proposition in the ordered portfolio may receive. The priority ordering arrives as the … |
+| `business_purpose` | string | no | It exists so each competing proposition gets a defined investment allowance, not an open tab. |
+| `practical_context` | string | no | It follows the priority ordering, once the sequence of favour is set, and it completes when the framed investment … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-bu
 
 This is a **Activity** (level L3), named **Integrate Delivery Capability**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Build Delivery Capability** (`processes:process-eo-build-j9z3q4`). Its canonical ID is `processes:activity-eo-build-5acbks`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity joins the individually stood-up components into a single working whole. The components arrive one by one, their connections are built and the joined behaviour checked, and the integrated capability is confirmed onward. Pieces that each worked alone are made to work together.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise gains one delivery capability rather than a set of unconnected parts.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the component stand-ups, when the stood-up pieces are presented for joining, and it completes once the integrated capability is confirmed for verification.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian connects the stood-up production, logistics, technology, and facilities pieces into one flow, checks the joined behaviour end to end, and confirms the integrated capability.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Integrate Delivery Capability |
+| `plain_language_description` | string | no | This activity joins the individually stood-up components into a single working whole. The components arrive one by one … |
+| `business_purpose` | string | no | It exists so the enterprise gains one delivery capability rather than a set of unconnected parts. |
+| `practical_context` | string | no | It follows the component stand-ups, when the stood-up pieces are presented for joining, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-de
 
 This is a **Activity** (level L3), named **Design Tax Strategy**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Design Tax Position and Strategy** (`processes:process-fa-design-ds4drw`). Its canonical ID is `processes:activity-fa-design-mzkd3q`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity pulls the separately documented stances into one coherent tax approach. The documented positions arrive as the pieces, the strategy is designed to coordinate them and checked for consistency, and the strategy design is confirmed onward for commitment. Individual tax answers become a single, deliberate posture.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise's tax positions work together as one strategy rather than as unrelated stances.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the position documentation, when the documented positions are to hand, and it completes once the tax strategy design is confirmed for the design's commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance design authority designer draws the documented positions into one coordinated tax approach, checks the stances for consistency, and confirms the strategy design.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Tax Strategy |
+| `plain_language_description` | string | no | This activity pulls the separately documented stances into one coherent tax approach. The documented positions arrive … |
+| `business_purpose` | string | no | It exists so the enterprise's tax positions work together as one strategy rather than as unrelated stances. |
+| `practical_context` | string | no | It follows the position documentation, when the documented positions are to hand, and it completes once the tax … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

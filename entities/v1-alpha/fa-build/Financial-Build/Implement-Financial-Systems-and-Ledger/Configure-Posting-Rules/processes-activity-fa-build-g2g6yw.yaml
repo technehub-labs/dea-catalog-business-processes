@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-build-d5kb5m through concluding task processes:task-fa-build-record-86quhg, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Configure Posting Rules'
+plain_language_description: 'This activity sets the rules that decide how each transaction lands in the books. The deployed chart of accounts and the financial controls arrive as the reference, posting rules are configured against them and checked, and the configured rules are confirmed onward for the reporting work. Transactions stop being judgment calls and follow designed routes.'
+business_purpose: 'It exists so every transaction enters the ledger by designed rule, consistently and under control.'
+practical_context: 'It follows the account structure deployment, when the chart of accounts and controls are live in the systems, and it completes once the configured posting rules are confirmed and retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance function builder configures the rules routing each transaction into the books, checks them against the deployed chart of accounts and the controls, and confirms the set.'

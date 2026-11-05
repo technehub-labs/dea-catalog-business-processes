@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-de
 
 This is a **Activity** (level L3), named **Specify Proposition Components**, currently **candidate (yellow)**. It is part of the **Proposition and Packaging Design** process context, domain `pv`, lifecycle stage Design. It belongs to **Design Product and Service Propositions** (`processes:process-pv-design-8v4k89`). Its canonical ID is `processes:activity-pv-design-vrmwad`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the architecture in hand, product management spells out the individual features and service elements that will fill it. The arriving architecture is registered, checked that it is usable as a reference, and then each component is written up; once confirmed, the component specification goes to the teams who need it and the file is archived.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It populates the approved skeleton with named, describable building blocks, so packaging and configuration work has concrete pieces to arrange.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the architecture step in the design sequence: intake opens on the reference architecture's arrival, and closure is the confirmed component specification plus its preserved audit record.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management team takes the signed-off architecture for a new subscription offering and specifies each element - the core feature set and the supporting service elements - verifying the reference architecture at verification, writing the specification during processing, and handing a confirmed pack to the configuration designers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Specify Proposition Components |
+| `plain_language_description` | string | no | With the architecture in hand, product management spells out the individual features and service elements that will … |
+| `business_purpose` | string | no | It populates the approved skeleton with named, describable building blocks, so packaging and configuration work has … |
+| `practical_context` | string | no | It follows the architecture step in the design sequence: intake opens on the reference architecture's arrival, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

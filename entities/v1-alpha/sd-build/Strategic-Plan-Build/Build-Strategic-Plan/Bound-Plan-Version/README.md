@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-bu
 
 This is a **Activity** (level L3), named **Bound Plan Version**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Build Strategic Plan** (`processes:process-sd-build-q4nf9g`). Its canonical ID is `processes:activity-sd-build-c2ky47`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before anyone writes a page of the plan, somebody has to decide exactly which evaluated choice and which roadmap this document covers. The team registers the incoming materials, confirms they match what the build needs, and marks out the version's reach so later drafting stays inside agreed lines. Once the boundary is agreed it is confirmed to downstream colleagues and stored with its audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It fixes the identity of the plan document early, so every later assembly, review and commitment refers to one clearly scoped version.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens at intake when the committed choice and the built roadmap are presented, and closes when the version boundary is confirmed and filed.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function planner takes in the committed choice and the finished roadmap, agrees with the activity owner where the plan version starts and stops, and hands the marked-out version to the drafting team with its audit identifiers recorded.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set the Plan Version Boundary |
+| `plain_language_description` | string | no | Before anyone writes a page of the plan, somebody has to decide exactly which evaluated choice and which roadmap this … |
+| `business_purpose` | string | no | It fixes the identity of the plan document early, so every later assembly, review and commitment refers to one clearly … |
+| `practical_context` | string | no | It opens at intake when the committed choice and the built roadmap are presented, and closes when the version boundary … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

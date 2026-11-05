@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-conceive-r93j3d through concluding task processes:task-sd-conceive-record-b3t4c4, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Frame Ambition Envelope'
+plain_language_description: 'With purpose in words, attention turns to how far the enterprise intends to reach. The purpose statement and fresh environment cues arrive at intake, verification checks they align, and processing draws the ambition envelope — the band of aspiration the organisation is willing to commit to. Confirmation hands the envelope downstream and the records custodian preserves it beside the purpose statement.'
+business_purpose: 'It bounds how bold the enterprise intends to be, so intent and horizons are framed inside a realistic, agreed level of aspiration.'
+practical_context: 'It runs after the purpose statement is framed, opening at its intake and closing when the drawn envelope is confirmed and stored.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function sketches an ambition band with the governing board''s guidance in view, a verification custodian checks it against the purpose wording, and the confirmation custodian releases the envelope to the intent conception team.'

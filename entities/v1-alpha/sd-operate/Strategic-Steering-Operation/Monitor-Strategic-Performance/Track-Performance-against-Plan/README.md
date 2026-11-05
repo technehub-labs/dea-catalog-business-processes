@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 
 This is a **Activity** (level L3), named **Track Performance against Plan**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Monitor Strategic Performance** (`processes:process-sd-operate-zdjchn`). Its canonical ID is `processes:activity-sd-operate-v8wq5y`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Readings on their own say little; they need the plan beside them. Intake registers the collected measures, verification confirms the comparison basis is consistent, and processing lays each reading against the plan's objectives and targets to build the current position. Confirmation shares the tracked position downstream and the records custodian preserves it for the deviation check.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It maintains the running picture of where execution stands relative to the plan, the position that makes deviations visible at all.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows collection, opening at intake of each collected measure set and closing when the updated position is confirmed and preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function tracker lays the fresh readings beside the plan's objectives and targets, a verification custodian confirms the basis of comparison has not shifted, and the confirmation custodian publishes the updated position to the monitoring team.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Track Performance against Plan |
+| `plain_language_description` | string | no | Readings on their own say little; they need the plan beside them. Intake registers the collected measures, verification … |
+| `business_purpose` | string | no | It maintains the running picture of where execution stands relative to the plan, the position that makes deviations … |
+| `practical_context` | string | no | It follows collection, opening at intake of each collected measure set and closing when the updated position is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

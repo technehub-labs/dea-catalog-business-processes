@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-im
 
 This is a **Activity** (level L3), named **Commit Effectiveness Findings**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. It belongs to **Review Strategy Effectiveness** (`processes:process-sd-improve-duwd64`). Its canonical ID is `processes:activity-sd-improve-mu6upn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The findings are drafted and evidenced; this closing step makes them official. Intake registers the formulated pack, a final verification confirms nothing is unsupported, and the commitment ratifies the pack and sends it into the adaptation work that follows. Confirmation notifies downstream consumers and the records custodian preserves the committed findings at their retention tier.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It ratifies the lessons learned and puts them on the record, closing the review and feeding the next adaptation cycle with evidence-backed findings.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the findings are formulated and closes with the commitment confirmed, downstream consumers notified and evidence archived.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function lead ratifies the findings pack, the confirmation custodian routes it to the adaptation colleagues and notifies other consumers, and the records custodian archives the committed findings for the next cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Effectiveness Findings |
+| `plain_language_description` | string | no | The findings are drafted and evidenced; this closing step makes them official. Intake registers the formulated pack, a … |
+| `business_purpose` | string | no | It ratifies the lessons learned and puts them on the record, closing the review and feeding the next adaptation cycle … |
+| `practical_context` | string | no | It opens once the findings are formulated and closes with the commitment confirmed, downstream consumers notified and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

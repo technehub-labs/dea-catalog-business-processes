@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-co
 
 This is a **Activity** (level L3), named **Commit Operations Strategy**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Frame Operations Strategy** (`processes:process-eo-conceive-xhjdr2`). Its canonical ID is `processes:activity-eo-conceive-6bvv34`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity brings the assessed context, the bounded delivery envelope, and the enablement and asset directions together into one strategy and gives it formal standing. The framed pieces arrive as its inputs, the whole is consolidated and ratified, and the committed strategy is confirmed for the conception work that follows. From here, the enterprise's operations direction is a decision, not a draft.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise's production and delivery direction is a committed strategy that conception and design must follow.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the strategy framing, once the context, envelope, and companion directions are framed, and it completes when the committed strategy is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian consolidates the assessed context, the bounded envelope, and the enablement and asset directions into the strategy document, obtains ratification, and records the committed strategy for the conception teams.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Operations Strategy |
+| `plain_language_description` | string | no | This activity brings the assessed context, the bounded delivery envelope, and the enablement and asset directions … |
+| `business_purpose` | string | no | It exists so the enterprise's production and delivery direction is a committed strategy that conception and design must … |
+| `practical_context` | string | no | It closes the strategy framing, once the context, envelope, and companion directions are framed, and it completes when … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

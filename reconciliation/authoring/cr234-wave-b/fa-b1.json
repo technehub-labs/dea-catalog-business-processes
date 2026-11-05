@@ -1,0 +1,402 @@
+{
+  "processes:activity-fa-activate-63duu7": {
+    "plain_language_name": "Obtain the Acknowledged Accounting or Rate Framework",
+    "plain_language_description": "This activity obtains the regulator's formal acknowledgement of the accounting or rate framework behind the enterprise's billing, and files it on the regulated billing record. The capability description goes to the regulator in the mandated filing format, the acknowledged framework comes back and is examined, and its preserved record is confirmed onward. Invoicing and revenue recognition then stand on a framework the regulator has formally accepted.",
+    "business_purpose": "It exists so live billing rests on an accounting or rate framework the regulator has formally acknowledged, held on record.",
+    "practical_context": "It runs while the billing capability awaits its gate into live service, once the capability description and the mandated filing format are to hand, and it completes when the acknowledged framework is preserved on the regulated billing record and confirmed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An audit function officer submits the capability's framework filing to the industry regulator in the required format, receives the acknowledgement back, and has it preserved on the regulated billing record."
+    }
+  },
+  "processes:activity-fa-activate-u8sq5k": {
+    "plain_language_name": "Acquire Tariff or Pricing Approval",
+    "plain_language_description": "This activity secures the regulator's approval of the tariff or pricing the enterprise will charge under, and preserves it on the billing record. The capability description goes in with the pricing submission, the approval comes back and is examined, and the preserved approval is confirmed onward. What the enterprise may charge then stands on a regulator's signature.",
+    "business_purpose": "It exists so live invoicing charges prices or tariffs the regulator has formally approved, with the approval kept on record.",
+    "practical_context": "It runs while the billing capability is gated for live service, once the pricing submission is ready to go in, and it completes when the tariff or pricing approval is preserved on the billing record and confirmed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management officer lodges the pricing submission with the industry regulator alongside the capability description, receives the rate-case approval back, and has it preserved on the billing record."
+    }
+  },
+  "processes:activity-fa-activate-6j9me8": {
+    "plain_language_name": "Activate the Continuing-Supervisor Notification",
+    "plain_language_description": "This activity switches on the standing notifications that keep the continuing supervisor informed while the regulator oversees the billing operation. The capability's authorization and the supervisor relationship arrive as the inputs, the notification arrangements are put into active use and checked against them, and the issued notifications are recorded on the billing record. Oversight is thereby fed without having to ask.",
+    "business_purpose": "It exists so the supervising authority's ongoing oversight of billing is fed by standing notification from the first invoice onward.",
+    "practical_context": "It runs as the billing capability approaches live service, once the authorization and the supervisor relationship are in place, and it completes when the issued notifications are confirmed and retained on the billing record.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An audit function officer puts the standing notifications to the supervising authority into active use against the billing capability's authorization, and confirms the issued notification on the record."
+    }
+  },
+  "processes:activity-fa-activate-utzqpn": {
+    "plain_language_name": "Bring the Billing Operational Controls Live",
+    "plain_language_description": "This activity switches the billing operation's safeguards on and records them live — the separation of duties, the audit trail, and the reconciliations. The regulator-mandated control framework and the fresh authorization come in together, each control is brought into active use and checked against the framework, and the live state is written onto the billing record. The first invoice is raised under controls already running.",
+    "business_purpose": "It exists so billing runs under its mandated safeguards from the first transaction, not after the first failure.",
+    "practical_context": "It runs late in the billing activation, once the control framework and the authorization are to hand, and it completes when the controls' live state is confirmed on the regulated billing record and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function lead brings the separation of duties, the audit trail, and the reconciliations into active use against the mandated framework, and confirms the live state on the billing record."
+    }
+  },
+  "processes:activity-fa-build-v4regt": {
+    "plain_language_name": "Build Budget Models",
+    "plain_language_description": "This activity works the committed plan structure into working budget models for the scoped cycle. The plan structure arrives as the reference, the models are built against it and checked as they take shape, and the working models are confirmed onward for the integrations. The planning cycle's arithmetic exists in working form from here.",
+    "business_purpose": "It exists so the planning cycle runs on budget models actually built to the committed plan structure.",
+    "practical_context": "It opens the planning system build, once a cycle or tool rebuild is scoped and the plan structure is to hand, and it completes when the working budget models are confirmed onward.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance function builder turns the committed plan structure into working budget models for the scoped cycle, checking each model against the structure as it takes shape."
+    }
+  },
+  "processes:activity-fa-build-nhup75": {
+    "plain_language_name": "Build the Planning Integrations",
+    "plain_language_description": "This activity connects the planning models to the operational systems whose data they will run on. The operational data sources arrive as the feed points, integrations are built and their flows checked, and the working integrations are confirmed onward for the controls work. Budgets and forecasts start drawing on real numbers from the business.",
+    "business_purpose": "It exists so the planning systems are fed by live operational data rather than by hand-copied figures.",
+    "practical_context": "It follows the model build, when the operational data sources are identified, and it completes once the working integrations are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance function builder wires the budget models to the operational systems feeding them, checks each data flow end to end, and confirms the working integrations."
+    }
+  },
+  "processes:activity-fa-build-dsxzrc": {
+    "plain_language_name": "Implement Planning Controls",
+    "plain_language_description": "This activity puts the designed financial controls in place around the planning tools. The controls design arrives as the specification, the controls are implemented across the systems and checked against it, and the implemented planning controls are confirmed onward for readiness. The planning numbers gain protection while they are being built, not after.",
+    "business_purpose": "It exists so the budgeting and forecasting systems run under designed controls from the start.",
+    "practical_context": "It follows the model and integration work, when the financial controls design is to hand, and it completes once the implemented planning controls are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance function builder implements the designed controls across the planning systems, checks each one against the controls design, and confirms the implemented set."
+    }
+  },
+  "processes:activity-fa-build-jwt3uv": {
+    "plain_language_name": "Verify Planning System Readiness",
+    "plain_language_description": "This activity proves the assembled planning toolkit fit for the budget cycle it was built for. The built system comes in with the plan structure and controls as the yardstick, readiness is examined against them, and the readiness determination is confirmed for the operation. The planning cycle is cleared to start only once this says so.",
+    "business_purpose": "It exists so operate budgeting begins on systems proven ready, not on a toolkit that merely finished being built.",
+    "practical_context": "It closes the planning system build, once models, integrations, and controls are in place, and it completes when the readiness determination is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance function verifier examines the built planning toolkit against the plan structure and controls, and confirms the readiness determination for the budget cycle."
+    }
+  },
+  "processes:activity-fa-build-napuha": {
+    "plain_language_name": "Deploy Chart of Accounts",
+    "plain_language_description": "This activity installs the designed account structure into the live financial systems. The committed plan structure arrives as the design of record, the chart of accounts is deployed and checked against it, and the deployed structure is confirmed onward for the posting rules. The skeleton of the books goes live here.",
+    "business_purpose": "It exists so the enterprise's books stand on the account structure it designed, live in its systems.",
+    "practical_context": "It opens the financial systems implementation, when the committed plan structure is presented for deployment, and it completes once the deployed chart of accounts is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance function builder installs the designed account structure into the financial systems, checks the deployment against the committed plan structure, and confirms it for the posting rules."
+    }
+  },
+  "processes:activity-fa-build-g2g6yw": {
+    "plain_language_name": "Configure Posting Rules",
+    "plain_language_description": "This activity sets the rules that decide how each transaction lands in the books. The deployed chart of accounts and the financial controls arrive as the reference, posting rules are configured against them and checked, and the configured rules are confirmed onward for the reporting work. Transactions stop being judgment calls and follow designed routes.",
+    "business_purpose": "It exists so every transaction enters the ledger by designed rule, consistently and under control.",
+    "practical_context": "It follows the account structure deployment, when the chart of accounts and controls are live in the systems, and it completes once the configured posting rules are confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance function builder configures the rules routing each transaction into the books, checks them against the deployed chart of accounts and the controls, and confirms the set."
+    }
+  },
+  "processes:activity-fa-build-rbv7fk": {
+    "plain_language_name": "Deploy Financial Reports",
+    "plain_language_description": "This activity builds the reports the books will be expected to turn out into the live systems. The reporting requirements and disclosure needs arrive as the specification, reports are deployed against the configured ledger and checked for output, and the deployed reports are confirmed onward for readiness. The ledger can now answer the questions it was built to answer.",
+    "business_purpose": "It exists so the ledger produces the reports its readers need, as designed, from live data.",
+    "practical_context": "It follows the posting configuration, when the reporting requirements and disclosure needs are to hand, and it completes once the deployed reports are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance function builder deploys the required reports against the configured ledger, checks each renders correctly from live data, and confirms the deployed set."
+    }
+  },
+  "processes:activity-fa-build-ee89qu": {
+    "plain_language_name": "Verify Ledger Implementation",
+    "plain_language_description": "This activity proves the newly implemented books and their systems fit to run the general ledger day to day. The implemented work comes in with the plan structure and controls design as the yardstick, readiness is examined against them, and the determination is confirmed for the operation. General ledger running is cleared here or not at all.",
+    "business_purpose": "It exists so general ledger operation starts on an implementation proven against its design.",
+    "practical_context": "It closes the financial systems implementation, once accounts, posting rules, and reports are deployed, and it completes when the readiness determination is confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance function verifier examines the implemented systems against the plan structure and controls design, and confirms the readiness determination for ledger operation."
+    }
+  },
+  "processes:activity-fa-build-b3qxke": {
+    "plain_language_name": "Establish Compliance Calendar",
+    "plain_language_description": "This activity lays down the timetable of filings and reports the new regime will demand. The jurisdictional obligations arrive as the raw material, the calendar is established from them and checked for completeness, and the established calendar is confirmed onward for the filings work. Every obligation gets a date before any obligation gets missed.",
+    "business_purpose": "It exists so the enterprise's obligations under a new regime are all dated and owned before any falls due.",
+    "practical_context": "It opens the tax and compliance onboarding when a new jurisdiction or regime applies, and it completes once the compliance calendar is established and confirmed onward.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance function builder lays the new regime's filing and reporting obligations onto a dated compliance calendar, checks nothing is missing, and confirms the calendar for the filings."
+    }
+  },
+  "processes:activity-fa-build-daw35b": {
+    "plain_language_name": "Execute Filings and Registrations",
+    "plain_language_description": "This activity submits the registrations and filings that put the enterprise formally on record in the new regime. The jurisdictional requirements arrive as the checklist, each filing and registration is executed and its completion evidenced, and the completed set is confirmed onward. The enterprise exists, officially, in the new territory's books.",
+    "business_purpose": "It exists so the enterprise's formal presence in a new regime is established by completed filings, not assumed.",
+    "practical_context": "It follows the compliance calendar, when the jurisdictional requirements are enumerated, and it completes as each filing and registration is executed and confirmed onward.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance function officer submits each registration and filing the new regime requires, evidences the completions, and confirms the set for the controls work."
+    }
+  },
+  "processes:activity-fa-build-5h2xk4": {
+    "plain_language_name": "Implement Tax Controls",
+    "plain_language_description": "This activity puts the safeguards in place that the enterprise's documented tax stances call for. The documented positions arrive as the specification, the controls are implemented against them and checked, and the implemented tax controls are confirmed onward for readiness. Taking a tax position and holding it safely are joined here.",
+    "business_purpose": "It exists so each documented tax position is backed by working controls, not just by paperwork.",
+    "practical_context": "It follows the filings and registrations, when the documented positions and strategy are to hand, and it completes once the implemented tax controls are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance function builder implements the safeguards each documented tax position requires, checks them against the positions and strategy, and confirms the implemented controls."
+    }
+  },
+  "processes:activity-fa-build-ek3cs4": {
+    "plain_language_name": "Verify Tax Capability Readiness",
+    "plain_language_description": "This activity checks the newly built tax machinery ready to run day to day under the tax policy review's eye. The onboarded capability comes in with the regime requirements and the tax strategy as the yardstick, readiness is examined against them, and the determination is confirmed for steady operation. Tax compliance is cleared for its routine life here.",
+    "business_purpose": "It exists so steady-state tax operation starts on a capability proven ready under its supervision arrangements.",
+    "practical_context": "It closes the tax and compliance onboarding, once calendar, filings, and controls are in place, and it completes when the readiness determination is confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance function verifier examines the onboarded tax capability against the regime requirements and the tax strategy, and confirms the readiness determination for steady operation."
+    }
+  },
+  "processes:activity-fa-build-hkt2qs": {
+    "plain_language_name": "Negotiate Funding Lines",
+    "plain_language_description": "This activity bargains the borrowing and capital arrangements the designed financial plan calls for into agreed terms. The funding structure design arrives as the mandate, negotiations are conducted with the prospective funders and the terms worked through, and the negotiated lines are confirmed onward for documentation. The enterprise's funding stops being a requirement and becomes an agreement.",
+    "business_purpose": "It exists so the funding the financial plan requires is actually secured, on negotiated terms the enterprise can live with.",
+    "practical_context": "It opens the funding securing when the designed plan structure requires committed lines, and it completes once the negotiated funding lines are confirmed for documentation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance function lead negotiates the funding lines with the prospective funders against the designed funding structure, and confirms the agreed terms for documentation."
+    }
+  },
+  "processes:activity-fa-build-2ccp49": {
+    "plain_language_name": "Formalize the Funding Agreements",
+    "plain_language_description": "This activity puts the agreed funding terms into signed, binding paperwork. The negotiated terms arrive as the substance, the facility documentation is executed and checked against what was agreed, and the executed documents are confirmed onward. Handshake deals become commitments the enterprise can draw on.",
+    "business_purpose": "It exists so the negotiated funding lines become signed commitments the enterprise can actually draw against.",
+    "practical_context": "It follows the negotiations, when the agreed terms are to hand, and it completes once the executed facility documentation is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance function officer turns the negotiated terms into executed facility paperwork, checks every clause against what was agreed, and confirms the signed documents."
+    }
+  },
+  "processes:activity-fa-build-xf2kdw": {
+    "plain_language_name": "Stand Up Finance Function",
+    "plain_language_description": "This activity recruits and organizes the team that will run the secured funding arrangements and the financial systems day to day. The treasury operating model and plan structure arrive as the design of the function, people are brought in and roles assigned against them, and the stood-up function is confirmed onward for the module deployment. The enterprise's money acquires hands to hold it.",
+    "business_purpose": "It exists so the secured facilities and financial systems have a real, organized function to operate them.",
+    "practical_context": "It follows the funding documentation, when the treasury operating model and plan structure are to hand, and it completes once the stood-up finance function is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance function lead staffs and organizes the team to the treasury operating model, assigns the roles the plan structure implies, and confirms the stood-up function."
+    }
+  },
+  "processes:activity-fa-build-va7nxd": {
+    "plain_language_name": "Deploy ERP Finance Module",
+    "plain_language_description": "This activity installs the finance heart of the enterprise's wider system estate so the new function has its tooling. The financial systems design arrives as the specification, the ERP finance module is deployed into operational state against it, and the deployed module is confirmed for the function's use. The stood-up team gets its working toolkit.",
+    "business_purpose": "It exists so the finance function operates on a deployed ERP module built to the financial systems design.",
+    "practical_context": "It closes the funding securing, once the function is stood up, and it completes when the deployed ERP finance module is confirmed in operational state and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance function builder deploys the ERP finance module to operational state per the financial systems design, and confirms the deployment for the stood-up function's use."
+    }
+  },
+  "processes:activity-fa-conceive-hebg2g": {
+    "plain_language_name": "Assess Finance Strategy Context",
+    "plain_language_description": "This activity establishes why the enterprise needs a fresh finance direction — a new monetary model, a rethink of the existing one, or pressure from funding and capital shifts. The enterprise's state and the regulatory and market signals arrive as the material, the context is assessed and written up, and the assessed picture is confirmed onward. Everything the strategy later decides answers to this understanding of why now.",
+    "business_purpose": "It exists so the finance strategy responds to a correctly understood trigger rather than a vague sense that the money side needs attention.",
+    "practical_context": "It opens the finance strategy framing, when the enterprise faces a new monetary model, a reframe, or funding and capital shifts, and it completes once the assessed context is confirmed for the monetary framing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function lead reads the enterprise's state and the funding and capital signals, writes up why a finance strategy is needed now, and confirms the assessed context with the finance function."
+    }
+  },
+  "processes:activity-fa-conceive-n35a6c": {
+    "plain_language_name": "Frame Monetary Model",
+    "plain_language_description": "This activity settles how money itself will be handled — the currency posture, the measurement conventions, and the basis on which value is recognized. The enterprise strategy and the jurisdictional footprint arrive as the inputs, the monetary model is framed and bounded against them, and the bounded model is confirmed onward for the funding work. The enterprise's financial language is fixed here.",
+    "business_purpose": "It exists so the enterprise decides deliberately how money is represented and measured before any of it moves.",
+    "practical_context": "It follows the context assessment, when the enterprise strategy and jurisdictional footprint are to hand, and it completes once the bounded monetary model is confirmed for the funding approach.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance function lead frames the monetary model — currency posture, measurement conventions, value recognition basis — against the enterprise strategy and its jurisdictions, and confirms the bounded model."
+    }
+  },
+  "processes:activity-fa-conceive-p34u93": {
+    "plain_language_name": "Frame Funding and Capital Approach",
+    "plain_language_description": "This activity sets where the enterprise's money will come from and on what capital terms — the sources, the structure, and the posture it will take. The bounded monetary model arrives as the frame, the approach to funding and capital is worked out and reviewed against it, and the framed approach is confirmed onward for the strategy's commitment. How the enterprise is capitalized is thereby settled in principle.",
+    "business_purpose": "It exists so the enterprise commits early to how it will be funded and capitalized, within the bounds its monetary model sets.",
+    "practical_context": "It follows the monetary framing, when the bounded model is presented for the funding work, and it completes once the funding and capital approach is confirmed for the strategy's commitment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance function lead sets the funding sources, structure, and posture against the bounded monetary model, reviews the approach with the strategy function, and confirms it for commitment."
+    }
+  },
+  "processes:activity-fa-conceive-wt82fh": {
+    "plain_language_name": "Commit Finance Strategy",
+    "plain_language_description": "This activity draws the monetary model together with the funding approach into one strategy and gives it formal standing. The framed pieces arrive as its inputs, the whole is consolidated and ratified, and the committed strategy is confirmed for the design work that follows. The enterprise's money rules become one owned decision rather than two parallel drafts.",
+    "business_purpose": "It exists so the enterprise's financial direction is a committed strategy that design and build must follow.",
+    "practical_context": "It closes the finance strategy framing, once the monetary model and funding approach are framed, and it completes when the committed finance strategy is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian consolidates the monetary model and the funding approach into the strategy document, obtains ratification, and records the committed finance strategy for the design teams."
+    }
+  },
+  "processes:activity-fa-design-xycsv4": {
+    "plain_language_name": "Analyze Control and Policy Gaps",
+    "plain_language_description": "This activity takes the shortcoming in controls or policy that has surfaced and works out exactly what design work it demands. The gap identification and any audit findings arrive as the material, the gap is analyzed and its design need bounded, and the bounded analysis is confirmed onward for the objectives. Vague unease about a control becomes a specific design brief.",
+    "business_purpose": "It exists so control and policy design starts from a bounded understanding of the actual gap.",
+    "practical_context": "It opens the controls and policies design when a gap is identified or audit findings arrive, and it completes once the bounded gap analysis is confirmed for the objective design.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance design authority analyst takes the surfaced control shortcoming with its audit findings, bounds exactly what design work it demands, and confirms the analysis for the objectives."
+    }
+  },
+  "processes:activity-fa-design-2qrkhv": {
+    "plain_language_name": "Design Financial Control Objectives",
+    "plain_language_description": "This activity states what each bounded gap's control must achieve. The bounded analysis arrives with the approved financial architecture as the frame, objectives are designed gap by gap and checked against both, and the objective set is confirmed onward for the policy work. Controls gain purpose before they gain mechanics.",
+    "business_purpose": "It exists so every control eventually implemented knows precisely what outcome it exists to deliver.",
+    "practical_context": "It follows the gap analysis, when the bounded needs and the approved financial architecture are to hand, and it completes once the control objective set is confirmed for the policy design.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance design authority designer states the objective each bounded gap's control must achieve, checks the set against the approved financial architecture, and confirms it for the policies."
+    }
+  },
+  "processes:activity-fa-design-ppadqj": {
+    "plain_language_name": "Design Financial Policies",
+    "plain_language_description": "This activity turns each control objective into an actual policy people can follow. The objectives arrive with the governance posture as the context, policies are drafted against the objectives and reviewed for workability, and the policy designs are confirmed onward for commitment. Intent becomes instruction here.",
+    "business_purpose": "It exists so each control objective exists as a written policy the enterprise's people can actually operate.",
+    "practical_context": "It follows the objective design, when the objectives and governance posture are to hand, and it completes once the policy designs are confirmed for the design's commitment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance design authority designer drafts the policy that makes each control objective real, reviews the drafts for workability against the governance posture, and confirms them for commitment."
+    }
+  },
+  "processes:activity-fa-design-k8ucbk": {
+    "plain_language_name": "Commit Controls and Policies Design",
+    "plain_language_description": "This activity draws the gap analysis, the objectives, and the policies together into one design and gives it formal standing, ready for the controls to be implemented. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed design is confirmed onward. Financial control stops being analysis and becomes instruction.",
+    "business_purpose": "It exists so control implementation starts from one committed design spanning gaps, objectives, and policies.",
+    "practical_context": "It closes the controls and policies design, once analysis, objectives, and policies are in hand, and it completes when the committed design is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian assembles the gap analysis, objectives, and policies into the design document, obtains ratification, and records the committed design for control implementation."
+    }
+  },
+  "processes:activity-fa-design-drznes": {
+    "plain_language_name": "Design Chart of Accounts",
+    "plain_language_description": "This activity draws up the account structure that will organize every entry in the enterprise's books. The framed finance strategy arrives as the source, the chart of accounts is designed from it and reviewed for completeness, and the account design is confirmed onward for the allocation work. Every future transaction gains a place to live.",
+    "business_purpose": "It exists so the enterprise's financial record is organized from the start by a deliberately designed account structure.",
+    "practical_context": "It opens the financial plan structure design, when the framed finance strategy is presented, and it completes once the chart of accounts design is confirmed for the allocation model.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance design authority designer draws the account structure from the framed finance strategy, reviews it for completeness, and confirms the chart design for the allocation model."
+    }
+  },
+  "processes:activity-fa-design-xzbfxx": {
+    "plain_language_name": "Design Cost Allocation Model",
+    "plain_language_description": "This activity works out the rules by which costs are spread across the parts of the enterprise that bear them. The account structure arrives as the frame, the allocation model is designed and checked against it, and the model is confirmed onward for the controls work. Every cost gains a designed destination rather than a dispute.",
+    "business_purpose": "It exists so costs land where they belong by designed rule, not by negotiation each period.",
+    "practical_context": "It follows the account structure design, when the chart is to hand, and it completes once the cost allocation model is confirmed for the embedded controls.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance design authority designer works out the rules spreading costs to the parts of the enterprise that bear them, checks the model against the account structure, and confirms it."
+    }
+  },
+  "processes:activity-fa-design-bn5x7x": {
+    "plain_language_name": "Design Financial Controls Framework",
+    "plain_language_description": "This activity builds the safeguards directly into the account structure and allocation rules. The chart and the allocation model arrive as the structure to protect, the controls are designed into its fabric and checked against it, and the embedded controls design is confirmed onward for the structure's commitment. The plan structure arrives at build already defended.",
+    "business_purpose": "It exists so the financial plan structure carries its own safeguards, designed in rather than bolted on.",
+    "practical_context": "It follows the allocation model, once the chart and allocation rules are in hand, and it completes when the embedded controls design is confirmed for the structure's commitment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance design authority designer designs the safeguards into the account structure and allocation rules themselves, checks the coverage, and confirms the embedded controls design."
+    }
+  },
+  "processes:activity-fa-design-aye4mb": {
+    "plain_language_name": "Commit Plan Structure",
+    "plain_language_description": "This activity draws the account structure, the allocation rules, and the embedded safeguards together into one committed plan structure. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed structure is confirmed as the basis for build. The enterprise's financial plan structure is thereby one decision.",
+    "business_purpose": "It exists so financial build starts from one committed plan structure rather than three separate designs.",
+    "practical_context": "It closes the financial plan structure design, once accounts, allocation, and controls are designed, and it completes when the committed structure is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian assembles the chart design, allocation model, and controls framework into the plan structure document, obtains ratification, and records the commitment for build."
+    }
+  },
+  "processes:activity-fa-design-rh9ft4": {
+    "plain_language_name": "Assess Tax Exposures",
+    "plain_language_description": "This activity sizes up the fresh tax exposure, or the shift in jurisdictions, that has made this design work necessary. The jurisdictional change record and the operating footprint arrive as the material, exposures are assessed and bounded, and the exposure assessment is confirmed onward for the position work. What the enterprise owes, and where, is established before any stance is taken.",
+    "business_purpose": "It exists so tax design starts from exposures that are known and bounded, not discovered late.",
+    "practical_context": "It opens the tax design when a new exposure or jurisdictional change emerges, and it completes once the exposure assessment is confirmed for the position documentation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance design authority analyst reads the jurisdictional change record against the operating footprint, sizes and bounds the fresh tax exposure, and confirms the assessment."
+    }
+  },
+  "processes:activity-fa-design-x66t4r": {
+    "plain_language_name": "Document Tax Positions",
+    "plain_language_description": "This activity writes down, exposure by exposure, the stance the enterprise will take and the legal footing behind it. The assessed exposures arrive with the tax law and ruling base as the reference, positions are documented against both, and the documented positions are confirmed onward for the strategy. Each stance is defensible on paper before it is lived.",
+    "business_purpose": "It exists so every tax stance the enterprise takes is documented and legally grounded before it is acted on.",
+    "practical_context": "It follows the exposure assessment, when the exposures and the law and ruling base are to hand, and it completes once the positions are documented and confirmed onward.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance design authority designer documents the enterprise's stance on each assessed exposure with its legal footing in the law and ruling base, and confirms the positions for the strategy."
+    }
+  },
+  "processes:activity-fa-design-mzkd3q": {
+    "plain_language_name": "Design Tax Strategy",
+    "plain_language_description": "This activity pulls the separately documented stances into one coherent tax approach. The documented positions arrive as the pieces, the strategy is designed to coordinate them and checked for consistency, and the strategy design is confirmed onward for commitment. Individual tax answers become a single, deliberate posture.",
+    "business_purpose": "It exists so the enterprise's tax positions work together as one strategy rather than as unrelated stances.",
+    "practical_context": "It follows the position documentation, when the documented positions are to hand, and it completes once the tax strategy design is confirmed for the design's commitment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance design authority designer draws the documented positions into one coordinated tax approach, checks the stances for consistency, and confirms the strategy design."
+    }
+  },
+  "processes:activity-fa-design-6qvdsk": {
+    "plain_language_name": "Commit Tax Position and Strategy",
+    "plain_language_description": "This activity draws the exposures, the documented stances, and the strategy together into one committed design for the enterprise's tax posture, ready for planning to pick up. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed design is confirmed onward. The enterprise's tax stance is thereby one owned decision.",
+    "business_purpose": "It exists so tax planning and onboarding start from one committed tax design rather than scattered positions.",
+    "practical_context": "It closes the tax design, once exposures, positions, and strategy are in hand, and it completes when the committed tax design is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian assembles the exposure assessment, documented positions, and strategy into the tax design document, obtains ratification, and records the commitment for planning."
+    }
+  },
+  "processes:activity-fa-design-tsdptr": {
+    "plain_language_name": "Design Cash and Liquidity Policy",
+    "plain_language_description": "This activity sets the rules for how cash is held and liquidity assured as treasury goes about its work. The treasury policy review and the funding posture arrive as the inputs, the cash and liquidity rules are designed and reviewed against both, and the policy design is confirmed onward for the funding structure. The enterprise decides in advance how much cash it will always keep close.",
+    "business_purpose": "It exists so treasury runs on a designed cash and liquidity policy rather than on instinct in the moment.",
+    "practical_context": "It opens the treasury and funding model design when treasury policy or funding posture is reviewed, and it completes once the liquidity policy design is confirmed for the funding structure.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance design authority designer sets the rules for holding cash and assuring liquidity against the policy review and funding posture, and confirms the design for the funding structure."
+    }
+  },
+  "processes:activity-fa-design-r7eq66": {
+    "plain_language_name": "Design Funding Structure",
+    "plain_language_description": "This activity works out the make-up of the enterprise's funding — which facilities and instruments, maturing when — that the finance strategy needs behind it. The funding and capital approach arrives as the frame, the funding structure is designed and checked against it, and the structure design is confirmed onward for the operating model. The debt and capital mix becomes a drawing, not a hope.",
+    "business_purpose": "It exists so the enterprise's funding composition is designed to match the strategy's capital approach.",
+    "practical_context": "It follows the liquidity policy, when the funding and capital approach is to hand, and it completes once the funding structure design is confirmed for the operating model.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance design authority designer works out the facilities, instruments, and maturities making up the funding structure, checks the design against the capital approach, and confirms it."
+    }
+  },
+  "processes:activity-fa-design-d4rea9": {
+    "plain_language_name": "Design Treasury Operating Model",
+    "plain_language_description": "This activity works out who does what in treasury — the roles, their mandates, and the systems they will use — to put the policies into practice. The liquidity rules and the funding make-up arrive as the things to be operated, the operating model is designed around them, and the model design is confirmed onward for the model's commitment. Treasury gains hands, authority, and tools in one design.",
+    "business_purpose": "It exists so the designed treasury policies have an operating model capable of executing them day to day.",
+    "practical_context": "It follows the liquidity and funding designs, when both are to hand, and it completes once the treasury operating model design is confirmed for the model's commitment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A finance design authority designer sets treasury's roles, mandates, and systems around the liquidity policy and funding structure, and confirms the operating model design for commitment."
+    }
+  },
+  "processes:activity-fa-design-r4hzb6": {
+    "plain_language_name": "Commit Treasury and Funding Model",
+    "plain_language_description": "This activity draws the liquidity rules, the funding make-up, and the treasury way of working together into one committed model. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed model is confirmed as the basis for securing the facilities and running treasury. The enterprise's money mechanics become one owned design.",
+    "business_purpose": "It exists so treasury operations and facility securing start from one committed model rather than three designs.",
+    "practical_context": "It closes the treasury and funding model design, once liquidity, funding, and operating model are designed, and it completes when the committed model is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian assembles the liquidity policy, funding structure, and operating model into the model document, obtains ratification, and records the commitment for facility securing."
+    }
+  }
+}

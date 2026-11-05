@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-activate-s9m34e through concluding task processes:task-sd-activate-record-hqkf24, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Activate the Communications Plan Under Ongoing Regulator Supervision'
+plain_language_description: 'With the supervisor''s acknowledgement secured, attention turns to telling the outside world. The team takes in the acknowledged plan and the mandated disclosure framework, verifies the announcements are ready, and switches the communications plan on — the disclosure controls, the regulated-entity announcement and the investor-relations briefing all go live while the regulator keeps watch. Confirmation tells downstream consumers the plan is active, and the activated communications plan is preserved on the record.'
+business_purpose: 'It makes the plan''s public face live under the regulator''s watchful eye, so disclosures and announcements reach the audiences the supervisor expects.'
+practical_context: 'Entry begins at intake once the acknowledged plan and the disclosure framework are presented; closure comes when activation is confirmed and preserved on the record.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function''s communications lead receives the acknowledged plan, walks the disclosure controls past the risk function, and issues the regulated-entity announcement on the agreed day; investor-relations colleagues brief the market while the records custodian preserves the activation evidence for the supervising authority.'

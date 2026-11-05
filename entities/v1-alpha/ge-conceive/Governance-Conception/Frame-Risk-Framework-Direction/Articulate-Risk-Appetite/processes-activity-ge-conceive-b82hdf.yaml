@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-conceive-6qnkhh through concluding task processes:task-ge-conceive-record-tgr3wp, whose outcome — Case file retained for Articulate Risk Appetite under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Articulate Risk Appetite'
+plain_language_description: 'This activity states how much risk the enterprise is willing to carry, as the governance mandate calls for. The mandate arrives as the frame, the appetite is articulated within it and reviewed with those accountable, and the articulated appetite is confirmed onward for the tolerance work. How brave the enterprise intends to be becomes a declared fact.'
+business_purpose: 'It exists so the enterprise''s risk-taking has a declared appetite, stated by those accountable for it.'
+practical_context: 'It opens the risk direction framing when a governance mandate requires an enterprise risk posture, and it completes once the articulated appetite is confirmed for the tolerance work.'
+worked_example:
+  agent_type: human
+  narrative: 'A governing board lead articulates, within the governance mandate''s frame, how much risk the enterprise will carry, and confirms the stated appetite for the tolerance work.'

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-conceive-ahwvp5 through concluding task processes:task-sd-conceive-record-y2bnz5, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Choose Strategic Trajectory'
+plain_language_description: 'The articulated routes are on the table and one must be picked. Intake brings the candidate trajectories in, verification confirms each is complete and current, and processing makes the choice — weighing the options and settling on the trajectory the enterprise will follow. Confirmation records the decision for downstream colleagues and the records custodian preserves the chosen course.'
+business_purpose: 'It makes the defining pick of this process, turning several possible routes into the one course the corporate strategy will carry.'
+practical_context: 'It runs after articulation, opening when the candidate trajectories are presented at intake and closing when the choice is confirmed and stored.'
+worked_example:
+  agent_type: human
+  narrative: 'Strategy function leads compare the articulated trajectories in a decision session, settle on one with the activity owner, and the confirmation custodian records the pick for the commitment step that closes the process.'

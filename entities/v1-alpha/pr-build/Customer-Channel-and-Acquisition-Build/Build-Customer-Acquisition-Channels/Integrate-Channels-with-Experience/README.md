@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-bu
 
 This is a **Activity** (level L3), named **Integrate Channels with Experience**, currently **candidate (yellow)**. It is part of the **Customer Channel and Acquisition Build** process context, domain `pr`, lifecycle stage Build. It belongs to **Build Customer Acquisition Channels** (`processes:process-pr-build-nygvw7`). Its canonical ID is `processes:activity-pr-build-d3pku9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity joins the provisioned channels up with the designed experience — its journey and its interaction patterns — as committed. The infrastructure arrives as the frame, the designed experience is wired into it and checked at every join, and the integrated channels are confirmed onward for the engines. Customers will meet the designed experience, not a bolted-on approximation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so what customers actually encounter through the channels is the experience that was designed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the channel provisioning, once the infrastructure is in place, and it completes when the channels' integration with the designed experience is confirmed onward.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A customer relationship management builder wires the provisioned channels to the designed journey and interaction patterns, checks every join, and confirms the integrated channels.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Integrate Channels with Experience |
+| `plain_language_description` | string | no | This activity joins the provisioned channels up with the designed experience — its journey and its interaction patterns … |
+| `business_purpose` | string | no | It exists so what customers actually encounter through the channels is the experience that was designed. |
+| `practical_context` | string | no | It follows the channel provisioning, once the infrastructure is in place, and it completes when the channels' … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

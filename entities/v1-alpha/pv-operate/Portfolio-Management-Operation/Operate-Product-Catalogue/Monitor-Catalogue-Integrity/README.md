@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-op
 
 This is a **Activity** (level L3), named **Monitor Catalogue Integrity**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Operate Product Catalogue** (`processes:process-pv-operate-zyguzp`). Its canonical ID is `processes:activity-pv-operate-5gtsjg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Someone has to watch the watchable: this work checks the operated catalogue for accuracy, availability, and consistency, catching corruption before customers do. Catalogue and channel states arrive at intake, are verified, assessed into an integrity posture, confirmed, and archived.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It protects the catalogue's standing as the trusted list of what can be bought, so channels and customers are never misled by a stale or broken entry.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs as a standing vigil over steady-state operation: intake opens as catalogue and channel states arrive, and closure comes when the confirmed integrity posture and its trail are filed.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management catalogue steward registers the day's catalogue and channel states at intake, spots at verification that one channel shows an outdated price band, raises it through the posture at processing, and confirmation triggers the fix while the trail is archived.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Monitor Catalogue Integrity |
+| `plain_language_description` | string | no | Someone has to watch the watchable: this work checks the operated catalogue for accuracy, availability, and … |
+| `business_purpose` | string | no | It protects the catalogue's standing as the trusted list of what can be bought, so channels and customers are never … |
+| `practical_context` | string | no | It runs as a standing vigil over steady-state operation: intake opens as catalogue and channel states arrive, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

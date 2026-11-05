@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-design-vdwkmh through concluding task processes:task-sd-design-record-tzttw3, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Draft Objectives and Targets'
+plain_language_description: 'Inside the agreed edges, the measurable ambition gets written. The scope lines arrive at intake, verification checks the drafting instructions are usable, and processing writes each objective and its target so every line is concrete and checkable. Confirmation hands the drafted set to downstream colleagues and the working papers are preserved for the ownership step.'
+business_purpose: 'It turns the scoped intent into named objectives with concrete targets, giving the enterprise something steerable to commit.'
+practical_context: 'It runs once scoping is done, opening at intake of the bounded scope and closing when the drafted set is confirmed ready for ownership assignment.'
+worked_example:
+  agent_type: human
+  narrative: 'Strategy function analysts draft each objective and its measurable target inside the agreed lines, a verification custodian returns any vague one for tightening, and the confirmation custodian announces the drafted set is ready for owners to be assigned.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-co
 
 This is a **Activity** (level L3), named **Commit Policy Initiation**, currently **candidate (yellow)**. It is part of the **Strategy and Governance Conception** process context, domain `ge`, lifecycle stage Conceive. It belongs to **Initiate Policy and Charter** (`processes:process-ge-conceive-xp6fye`). Its canonical ID is `processes:activity-ge-conceive-5j83mc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity gives the assembled first document its formal commitment, moving the initiative on toward design and codification. The drafted document arrives as the candidate, commitment is given by those sponsoring the initiative, and the committed initiation is confirmed for the design work. The instrument now officially exists as a work in progress with backing.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the initiative proceeds to design with a committed document behind it, not a loose draft.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the initiation once the initial document is drafted, and it completes when the committed initiation is confirmed for the design and codification stages.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A governing board sponsor commits the drafted initial policy and charter document, and the confirmation moves the initiative on toward design and codification.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Policy Initiation |
+| `plain_language_description` | string | no | This activity gives the assembled first document its formal commitment, moving the initiative on toward design and … |
+| `business_purpose` | string | no | It exists so the initiative proceeds to design with a committed document behind it, not a loose draft. |
+| `practical_context` | string | no | It closes the initiation once the initial document is drafted, and it completes when the committed initiation is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

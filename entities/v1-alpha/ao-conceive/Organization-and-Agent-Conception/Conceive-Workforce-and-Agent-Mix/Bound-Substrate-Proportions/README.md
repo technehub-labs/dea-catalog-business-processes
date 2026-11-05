@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 
 This is a **Activity** (level L3), named **Bound Substrate Proportions**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Conceive Workforce and Agent Mix** (`processes:process-ao-conceive-z6m6p5`). Its canonical ID is `processes:activity-ao-conceive-4tgrxr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity fixes the proportions of people, artificial agents, and blended arrangements that the future workforce mix will aim for. The committed organization and agent strategy comes in first, the proportions are worked out and reviewed against it, and the agreed proportions are confirmed to those planning the mix. Once set, they act as the guardrails within which the detailed mix is drafted.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the organization commits deliberately to how much of its capacity is human, artificial, or hybrid before acquisition decisions are made.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows commitment of the organization and agent strategy, when the strategy is presented for mix planning, and it closes once the proportions are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function lead, working with workforce management, weighs the committed strategy and fixes how much of the coming capacity will be people, artificial agents, or blended arrangements, confirming the proportions before the mix is drafted.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set the Human, Artificial, and Hybrid Workforce Proportions |
+| `plain_language_description` | string | no | This activity fixes the proportions of people, artificial agents, and blended arrangements that the future workforce … |
+| `business_purpose` | string | no | It exists so the organization commits deliberately to how much of its capacity is human, artificial, or hybrid before … |
+| `practical_context` | string | no | It follows commitment of the organization and agent strategy, when the strategy is presented for mix planning, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

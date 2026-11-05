@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-op
 
 This is a **Activity** (level L3), named **Run Board and Committee Cycles**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. It belongs to **Operate Governance Oversight** (`processes:process-ge-operate-hs7wf3`). Its canonical ID is `processes:activity-ge-operate-bjfkws`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity keeps the boards and committees convening on their established schedules, cycle after cycle. The established cycles arrive as the timetable, each convening is run as designed with its papers prepared, and the run cycles are confirmed onward for the decisions within them. Governance's pulse is maintained here, beat by beat.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so governance bodies actually meet as their charters and cycles require.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs continuously against the established schedules as each cycle falls due, and it completes when the run cycles are confirmed onward for the decisions they carry.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A governance custodian runs each board and committee convening on its established schedule — papers out, quorum checked, session run — and confirms the cycle onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Run Board and Committee Cycles |
+| `plain_language_description` | string | no | This activity keeps the boards and committees convening on their established schedules, cycle after cycle. The … |
+| `business_purpose` | string | no | It exists so governance bodies actually meet as their charters and cycles require. |
+| `practical_context` | string | no | It runs continuously against the established schedules as each cycle falls due, and it completes when the run cycles … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

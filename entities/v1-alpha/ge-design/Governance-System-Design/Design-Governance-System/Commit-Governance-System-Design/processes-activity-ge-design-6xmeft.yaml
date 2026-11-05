@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-design-zbrg8b through concluding task processes:task-ge-design-record-umyvyq, whose outcome — Case file retained for Commit Governance System Design under the records retention schedule with cryptographic integrity protection; statutory retention …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit Governance System Design'
+plain_language_description: 'This activity draws the articulated bodies, the delegations, and the decision rights together into one design and gives it formal standing. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed design is confirmed as the basis for the establishment build. The enterprise''s governance shape becomes one owned decision.'
+business_purpose: 'It exists so governance establishment starts from one committed system design rather than three sketches.'
+practical_context: 'It closes the governance system design, once bodies, delegations, and rights are designed, and it completes when the committed design is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian assembles the body inventory, delegation design, and decision rights specification into the system design document, obtains ratification, and records the commitment.'

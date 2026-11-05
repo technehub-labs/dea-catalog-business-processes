@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 
 This is a **Activity** (level L3), named **Assemble Review Inputs**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Operate Strategic Review Cycle** (`processes:process-sd-operate-ucxpz4`). Its canonical ID is `processes:activity-sd-operate-9evxdj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Each scheduled session deserves a proper pack. The cadence arrives at intake, verification checks every item is the current version, and processing gathers the performance reports, the signal briefs and the session agenda into one pack per review. Confirmation issues the pack to attendees and the records custodian preserves it with the session record.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It makes every review session a prepared one, so decisions are taken on complete papers rather than whatever happens to be at hand.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs ahead of each scheduled session on the cadence, opening at intake of the timetable and closing when the issued pack is confirmed and preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function coordinator gathers the latest performance report, the current signal briefs and the draft agenda into the session pack, a verification custodian confirms versions are current, and the pack goes out to the review attendees in good time.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assemble Review Inputs |
+| `plain_language_description` | string | no | Each scheduled session deserves a proper pack. The cadence arrives at intake, verification checks every item is the … |
+| `business_purpose` | string | no | It makes every review session a prepared one, so decisions are taken on complete papers rather than whatever happens to … |
+| `practical_context` | string | no | It runs ahead of each scheduled session on the cadence, opening at intake of the timetable and closing when the issued … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

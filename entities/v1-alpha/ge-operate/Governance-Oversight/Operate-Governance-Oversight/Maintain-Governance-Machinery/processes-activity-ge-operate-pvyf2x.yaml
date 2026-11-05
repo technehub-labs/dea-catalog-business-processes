@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-operate-hs7wf3 through concluding task processes:task-ge-operate-record-b59ufs, whose outcome — Case file retained for Maintain Governance Machinery under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Maintain Governance Machinery'
+plain_language_description: 'This activity keeps the governance machinery oiled between and across the cycles — the calendars current, the delegations register true, the body composition right. Machinery drift arrives as changes land, each is folded into the machinery and checked, and the maintained state is confirmed onward. Governance''s engine is serviced here, so it never seizes mid-cycle.'
+business_purpose: 'It exists so the governance machinery — calendars, delegations, memberships — never drifts out of true.'
+practical_context: 'It runs between and across the cycles as machinery changes land, and it completes when the maintained machinery state is confirmed onward for the running cycles.'
+worked_example:
+  agent_type: human
+  narrative: 'A governance custodian folds each machinery change into the calendars, the delegations register, and the body composition as it lands, and confirms the maintained state onward.'

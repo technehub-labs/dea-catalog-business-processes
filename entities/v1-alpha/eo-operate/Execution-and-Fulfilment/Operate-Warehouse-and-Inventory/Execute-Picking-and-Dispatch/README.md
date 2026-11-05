@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Execute Picking and Dispatch**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Warehouse and Inventory** (`processes:process-eo-operate-zwzmbd`). Its canonical ID is `processes:activity-eo-operate-tbh9q7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity pulls the stock each demand calls for and sends it on its way, to the production floor or out for delivery. Demand requests arrive as the worklist, picking and dispatch are executed against them, and the dispatched stock is confirmed for the record. The warehouse's whole purpose is exercised here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so demand on the warehouse is fulfilled — the right stock picked and dispatched to where it is needed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs as demand requests arrive from production and delivery, and it completes when each picked and dispatched order is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A warehouse crew picks the stock each demand request names and dispatches it onward to the production floor or delivery, confirming each dispatch for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Execute Picking and Dispatch |
+| `plain_language_description` | string | no | This activity pulls the stock each demand calls for and sends it on its way, to the production floor or out for … |
+| `business_purpose` | string | no | It exists so demand on the warehouse is fulfilled — the right stock picked and dispatched to where it is needed. |
+| `practical_context` | string | no | It runs as demand requests arrive from production and delivery, and it completes when each picked and dispatched order … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

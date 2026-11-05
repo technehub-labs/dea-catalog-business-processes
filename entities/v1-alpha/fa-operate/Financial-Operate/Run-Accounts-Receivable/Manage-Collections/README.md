@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Manage Collections**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Run Accounts Receivable** (`processes:process-fa-operate-sdppmp`). Its canonical ID is `processes:activity-fa-operate-4yx8be`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity chases the issued invoices in to cash, stepping up the pressure per the credit-control policy as they age. The issued invoices arrive as the book to collect, collection activity is managed against the payment terms, and the managed collections are confirmed onward for the cash application. Sales become money here, or the reasons why not are on record.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so issued invoices turn into received cash, with the credit-control policy applied as they age.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs against the issued invoices from issuance to receipt, and it completes once the managed collections are confirmed onward for the cash application.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A receivables custodian follows up the aging invoices per the credit-control policy, escalates the long-overdue account a step, and confirms the collection activity onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -60,6 +60,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Manage Collections |
+| `plain_language_description` | string | no | This activity chases the issued invoices in to cash, stepping up the pressure per the credit-control policy as they … |
+| `business_purpose` | string | no | It exists so issued invoices turn into received cash, with the credit-control policy applied as they age. |
+| `practical_context` | string | no | It runs against the issued invoices from issuance to receipt, and it completes once the managed collections are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

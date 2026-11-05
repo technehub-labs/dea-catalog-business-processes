@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-re
 
 This is a **Activity** (level L3), named **Resolve Records and Rights**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Close-Out** process context, domain `pr`, lifecycle stage Retire. It belongs to **Close Enterprise Relationship** (`processes:process-pr-retire-bd3asa`). Its canonical ID is `processes:activity-pr-retire-5k7ngj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity settles what happens to the relationship's records, the rights either side was granted, and how the regulated data is handled — erasure duties included. The relationship's records, data, and granted rights arrive as the estate to divide, disposition is resolved for each and evidenced, and the resolved position is confirmed onward for the closure. The relationship's paper afterlife is ordered here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so records, licensed rights, and regulated data end up exactly where law and contract say they must.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the obligation settlement, once the estate to divide is clear, and it completes when the resolved records, rights, and data handling — erasure included — are confirmed onward.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A customer relationship management officer resolves the records' disposition, the licensed and IP rights, and the regulated data's erasure duties, evidencing each resolution onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Resolve Records and Rights |
+| `plain_language_description` | string | no | This activity settles what happens to the relationship's records, the rights either side was granted, and how the … |
+| `business_purpose` | string | no | It exists so records, licensed rights, and regulated data end up exactly where law and contract say they must. |
+| `practical_context` | string | no | It follows the obligation settlement, once the estate to divide is clear, and it completes when the resolved records … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

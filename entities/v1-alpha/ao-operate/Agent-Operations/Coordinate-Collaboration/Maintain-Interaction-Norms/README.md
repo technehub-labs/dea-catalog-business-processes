@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 This is a **Activity** (level L3), named **Maintain Interaction Norms**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Coordinate Collaboration** (`processes:process-ao-operate-bd7mef`). Its canonical ID is `processes:activity-ao-operate-6r6m2g`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity keeps the agreed expectations for how agents and teams engage in the shared workspaces current as collaboration runs. The provisioned workspaces come in as the starting point, the norms governing work within them are reviewed and refreshed where needed, and the maintained norms are confirmed to the users. The point is that the rules of engagement stay fit for the collaboration actually happening.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so joint work follows settled expectations instead of being renegotiated case by case every time agents and teams meet.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the collaboration workspaces are provisioned, as day-to-day collaboration throws up changes worth settling, and it closes when the maintained norms are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management custodian refreshes the engagement norms after teams are regrouped, confirms the updated expectations with the people and agents who work under them, and files the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Maintain the Interaction Norms |
+| `plain_language_description` | string | no | This activity keeps the agreed expectations for how agents and teams engage in the shared workspaces current as … |
+| `business_purpose` | string | no | It exists so joint work follows settled expectations instead of being renegotiated case by case every time agents and … |
+| `practical_context` | string | no | It runs once the collaboration workspaces are provisioned, as day-to-day collaboration throws up changes worth … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

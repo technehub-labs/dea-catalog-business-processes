@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-build-mctdgc through concluding task processes:task-ge-build-record-4k3279, whose outcome — Case file retained for Codify Policies under the records retention schedule with cryptographic integrity protection; statutory retention horizon applied where …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Codify Policies'
+plain_language_description: 'This activity turns the committed policy designs into operative documents. The policy and control designs arrive as the source, each policy is codified into its operative form and checked against its design, and the codified policies are confirmed onward for publication. What the designers intended becomes what the enterprise can read and follow.'
+business_purpose: 'It exists so designed policies exist as operative documents, not as intentions in a design file.'
+practical_context: 'It runs while the governance build assembles the bodies'' instruments, working from the policy and control designs, and it completes once the codified policies are confirmed onward for publication.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function officer codifies each committed policy design into its operative document form, checks the text against the design, and confirms the policies for publication.'

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-build-92v24c through concluding task processes:task-fa-build-record-v6f533, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Implement Planning Controls'
+plain_language_description: 'This activity puts the designed financial controls in place around the planning tools. The controls design arrives as the specification, the controls are implemented across the systems and checked against it, and the implemented planning controls are confirmed onward for readiness. The planning numbers gain protection while they are being built, not after.'
+business_purpose: 'It exists so the budgeting and forecasting systems run under designed controls from the start.'
+practical_context: 'It follows the model and integration work, when the financial controls design is to hand, and it completes once the implemented planning controls are confirmed and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance function builder implements the designed controls across the planning systems, checks each one against the controls design, and confirms the implemented set.'

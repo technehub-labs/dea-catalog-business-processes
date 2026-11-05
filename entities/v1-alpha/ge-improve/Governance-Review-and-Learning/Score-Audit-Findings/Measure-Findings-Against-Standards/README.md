@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-im
 
 This is a **Activity** (level L3), named **Measure Findings Against Standards**, currently **candidate (yellow)**. It is part of the **Governance Review and Learning** process context, domain `ge`, lifecycle stage Improve. It belongs to **Score Audit Findings** (`processes:process-ge-improve-axtq3b`). Its canonical ID is `processes:activity-ge-improve-9te97d`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity lays the scored findings alongside the codified standards, working out exactly how far short of them the enterprise has fallen. The assessed findings arrive with the codified standards as the ruler, the compliance delta is bounded finding by finding, and the measured findings are confirmed onward for the trends. Gaps become numbers here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so each finding's distance from the standard is measured, not merely asserted.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the recurrence assessment, when the codified standards are to hand as the ruler, and it completes once the measured compliance delta is confirmed onward for the trend reporting.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An audit function analyst measures each assessed finding against the codified standards, bounds the compliance delta, and confirms the measured findings for the trend reporting.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Measure Findings Against Standards |
+| `plain_language_description` | string | no | This activity lays the scored findings alongside the codified standards, working out exactly how far short of them the … |
+| `business_purpose` | string | no | It exists so each finding's distance from the standard is measured, not merely asserted. |
+| `practical_context` | string | no | It follows the recurrence assessment, when the codified standards are to hand as the ruler, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

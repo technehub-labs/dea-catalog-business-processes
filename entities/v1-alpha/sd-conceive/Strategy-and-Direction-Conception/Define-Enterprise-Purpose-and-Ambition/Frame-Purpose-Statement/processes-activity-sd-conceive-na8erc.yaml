@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-conceive-r93j3d through concluding task processes:task-sd-conceive-record-83wfqb, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Frame Purpose Statement'
+plain_language_description: 'The imperatives say why; this work says what. Intake registers the sensed set, verification tests candidate wording against the enterprise context, and processing crafts the short statement that declares what the organisation exists to do. Confirmation circulates the wording for the ambition step and the records custodian preserves the framed statement.'
+business_purpose: 'It gives the enterprise a plain declaration of why it exists, the anchor every later strategy artifact refers back to.'
+practical_context: 'It follows sensing, opening at intake of the imperative set and closing when the agreed wording is confirmed and preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'Strategy function writers draft candidate purpose wording, test each version against the sensed imperatives with the activity owner, and settle one statement that the confirmation custodian passes to the ambition work.'

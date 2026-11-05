@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-de
 
 This is a **Activity** (level L3), named **Bound Evaluation Scope**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Evaluate Strategic Alternatives** (`processes:process-sd-design-ed7jd5`). Its canonical ID is `processes:activity-sd-design-h56x3t`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before options are compared, the contest rules are fixed. The committed option designs and their criteria arrive at intake, verification confirms both are usable, and processing marks which comparisons will be run — which options, measured against which yardsticks, over what horizon. Confirmation passes the marked scope downstream and the records custodian preserves it for the comparison itself.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It keeps the comparison focused and fair by fixing in advance which alternatives are judged and by which measures.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens this process at intake when the committed option designs and criteria are presented, closing once the scope lines are confirmed and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function analyst agrees with the activity owner which option pairs the evaluation will cover and which criteria apply, a verification custodian confirms the inputs are current, and the records custodian preserves the marked scope ahead of the comparison.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set the Evaluation Scope |
+| `plain_language_description` | string | no | Before options are compared, the contest rules are fixed. The committed option designs and their criteria arrive at … |
+| `business_purpose` | string | no | It keeps the comparison focused and fair by fixing in advance which alternatives are judged and by which measures. |
+| `practical_context` | string | no | It opens this process at intake when the committed option designs and criteria are presented, closing once the scope … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

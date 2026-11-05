@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-im
 
 This is a **Activity** (level L3), named **Strengthen Compliance Posture**, currently **candidate (yellow)**. It is part of the **Governance Review and Learning** process context, domain `ge`, lifecycle stage Improve. It belongs to **Improve Policy and Control Framework** (`processes:process-ge-improve-u3g5dh`). Its canonical ID is `processes:activity-ge-improve-n9jd2z`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity tightens how the enterprise actually complies, working from the revised standards and the sized-up gaps. The updated standards arrive with the compliance regime design as the mechanism, the posture is strengthened against both, and the strengthened posture is confirmed onward for the improvement's commitment. Compliance stops being the framework's soft spot.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the framework's improved standards translate into genuinely stronger compliance.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the standards update, working from the revised standards and the sized gaps, and it completes once the strengthened compliance posture is confirmed for the improvement's commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function officer tightens the compliance operation against the revised standards and the regime design, and confirms the strengthened posture for commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Strengthen Compliance Posture |
+| `plain_language_description` | string | no | This activity tightens how the enterprise actually complies, working from the revised standards and the sized-up gaps … |
+| `business_purpose` | string | no | It exists so the framework's improved standards translate into genuinely stronger compliance. |
+| `practical_context` | string | no | It follows the standards update, working from the revised standards and the sized gaps, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

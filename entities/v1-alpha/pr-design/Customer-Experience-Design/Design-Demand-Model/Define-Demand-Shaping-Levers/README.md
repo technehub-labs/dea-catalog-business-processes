@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-de
 
 This is a **Activity** (level L3), named **Define Demand-Shaping Levers**, currently **candidate (yellow)**. It is part of the **Customer Experience Design** process context, domain `pr`, lifecycle stage Design. It belongs to **Design Demand Model** (`processes:process-pr-design-cv6hjh`). Its canonical ID is `processes:activity-pr-design-dakgz2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity names what the enterprise can pull on to steer demand along the paths it has drawn. The supply paths and capacity assumptions arrive as the system to be steered, levers are defined for each point of steering and checked for realism, and the lever set is confirmed onward for the model's commitment. When demand misbehaves, the enterprise will know which handles to pull.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so demand can be deliberately steered by named levers rather than merely endured.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the paths and assumptions, once the system to be steered is drawn, and it completes when the defined levers are confirmed onward for the model's commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A customer relationship management designer names the handles that steer demand along the drawn supply paths, checks each for realism, and confirms the lever set onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Define Demand-Shaping Levers |
+| `plain_language_description` | string | no | This activity names what the enterprise can pull on to steer demand along the paths it has drawn. The supply paths and … |
+| `business_purpose` | string | no | It exists so demand can be deliberately steered by named levers rather than merely endured. |
+| `practical_context` | string | no | It follows the paths and assumptions, once the system to be steered is drawn, and it completes when the defined levers … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-co
 
 This is a **Activity** (level L3), named **Assess Finance Strategy Context**, currently **candidate (yellow)**. It is part of the **Financial Model and Funding Conception** process context, domain `fa`, lifecycle stage Conceive. It belongs to **Frame Finance Strategy** (`processes:process-fa-conceive-4uqqvg`). Its canonical ID is `processes:activity-fa-conceive-hebg2g`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity establishes why the enterprise needs a fresh finance direction — a new monetary model, a rethink of the existing one, or pressure from funding and capital shifts. The enterprise's state and the regulatory and market signals arrive as the material, the context is assessed and written up, and the assessed picture is confirmed onward. Everything the strategy later decides answers to this understanding of why now.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the finance strategy responds to a correctly understood trigger rather than a vague sense that the money side needs attention.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the finance strategy framing, when the enterprise faces a new monetary model, a reframe, or funding and capital shifts, and it completes once the assessed context is confirmed for the monetary framing.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function lead reads the enterprise's state and the funding and capital signals, writes up why a finance strategy is needed now, and confirms the assessed context with the finance function.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assess Finance Strategy Context |
+| `plain_language_description` | string | no | This activity establishes why the enterprise needs a fresh finance direction — a new monetary model, a rethink of the … |
+| `business_purpose` | string | no | It exists so the finance strategy responds to a correctly understood trigger rather than a vague sense that the money … |
+| `practical_context` | string | no | It opens the finance strategy framing, when the enterprise faces a new monetary model, a reframe, or funding and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

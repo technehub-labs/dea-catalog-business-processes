@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-retire-mjq5hg through concluding task processes:task-ge-retire-record-7qykr3, whose outcome — Case file retained for Reduce Governance To Wind-Down Quorum under the records retention schedule with cryptographic integrity protection; statutory retention …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Reduce Governance to Wind-Down Quorum'
+plain_language_description: 'This activity trims the governance bodies down to the quorum the binding order allows, sunsets the instruments the order touches, and checks the slimmed regime can still lawfully act. The assessed scope arrives as the measure of the reduction, bodies and instruments are cut back per it, and the reduced regime is confirmed onward for the remaining unwind steps. Governance shrinks on purpose, and stays legal doing it.'
+business_purpose: 'It exists so governance shrinks to exactly what the order permits, no further, and remains fit to act.'
+practical_context: 'It follows the scope assessment, working the reduction per the controlling statute or order, and it completes when the reduced regime''s fitness to act is confirmed onward for the custodianship and filings.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function officer cuts the bodies back to the quorum the order allows, sunsets the touched instruments, and confirms the slimmed regime remains fit to lawfully act.'

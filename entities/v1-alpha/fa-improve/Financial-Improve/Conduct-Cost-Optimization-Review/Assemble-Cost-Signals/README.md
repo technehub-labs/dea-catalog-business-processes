@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-im
 
 This is a **Activity** (level L3), named **Assemble Cost Signals**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Conduct Cost Optimization Review** (`processes:process-fa-improve-emqpgr`). Its canonical ID is `processes:activity-fa-improve-qa3vqq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity pulls the raw material of the review together — the cost signals, the evidence of margin squeezing, and the control findings. The scattered records arrive from their separate homes, the evidence is gathered and organised, and the assembled set is confirmed onward for the findings. The review starts from one coherent picture instead of fragments.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the cost review examines one organised evidence base rather than scattered signals.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the cost optimization review when cost signals, margin pressure, or control findings call for one, and it completes once the assembled evidence is confirmed for the findings step.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance design authority analyst gathers the cost signals, the margin-pressure evidence, and the control findings into one pack, checks it for completeness, and confirms the set for the findings step.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assemble Cost Signals |
+| `plain_language_description` | string | no | This activity pulls the raw material of the review together — the cost signals, the evidence of margin squeezing, and … |
+| `business_purpose` | string | no | It exists so the cost review examines one organised evidence base rather than scattered signals. |
+| `practical_context` | string | no | It opens the cost optimization review when cost signals, margin pressure, or control findings call for one, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

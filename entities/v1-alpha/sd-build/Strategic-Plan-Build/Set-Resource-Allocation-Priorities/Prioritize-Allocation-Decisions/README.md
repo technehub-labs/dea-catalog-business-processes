@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-bu
 
 This is a **Activity** (level L3), named **Prioritize Allocation Decisions**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Set Resource Allocation Priorities** (`processes:process-sd-build-2pkz5n`). Its canonical ID is `processes:activity-sd-build-ys83dr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Not every funded initiative can start at once, so ranks are needed. Intake registers the allocations, verification tests them against the envelope limits and what the plan says matters most, and processing orders the decisions into a defensible priority list. Confirmation communicates the ranking and the records custodian preserves it ahead of commitment.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It ranks the resourcing choices so the strongest strategic cases are served first when envelopes are tight.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows allocation, opening when the allocation decisions are presented at intake and closing when the agreed ranking is confirmed and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Strategy function leads compare the allocated initiatives against the plan's stated priorities and the envelope headroom, agree the ranking in a short review, and the confirmation custodian communicates the order to downstream colleagues before commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Prioritize Allocation Decisions |
+| `plain_language_description` | string | no | Not every funded initiative can start at once, so ranks are needed. Intake registers the allocations, verification … |
+| `business_purpose` | string | no | It ranks the resourcing choices so the strongest strategic cases are served first when envelopes are tight. |
+| `practical_context` | string | no | It follows allocation, opening when the allocation decisions are presented at intake and closing when the agreed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

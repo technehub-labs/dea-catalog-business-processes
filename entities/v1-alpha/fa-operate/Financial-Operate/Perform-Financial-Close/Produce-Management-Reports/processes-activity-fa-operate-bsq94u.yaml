@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-operate-4xn4d6 through concluding task processes:task-fa-operate-record-th6mk2, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Produce Management Reports'
+plain_language_description: 'This activity draws the closed period''s numbers into the reports management will actually read. The certified period arrives as the source of truth, the management reports are produced from it and checked against it, and the produced reports are confirmed onward. The close''s final act is making its work legible to decision-makers.'
+business_purpose: 'It exists so management sees the closed period through reports drawn from certified numbers.'
+practical_context: 'It follows the close certification, working from the certified period, and it completes when the produced management reports are confirmed onward for their readers.'
+worked_example:
+  agent_type: human
+  narrative: 'A close custodian produces the management reports from the certified period''s numbers, checks them against the certified books, and confirms the reports for their readers.'

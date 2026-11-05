@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 
 This is a **Activity** (level L3), named **Deploy Financial Reports**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Implement Financial Systems and Ledger** (`processes:process-fa-build-d5kb5m`). Its canonical ID is `processes:activity-fa-build-rbv7fk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity builds the reports the books will be expected to turn out into the live systems. The reporting requirements and disclosure needs arrive as the specification, reports are deployed against the configured ledger and checked for output, and the deployed reports are confirmed onward for readiness. The ledger can now answer the questions it was built to answer.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the ledger produces the reports its readers need, as designed, from live data.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the posting configuration, when the reporting requirements and disclosure needs are to hand, and it completes once the deployed reports are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance function builder deploys the required reports against the configured ledger, checks each renders correctly from live data, and confirms the deployed set.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Deploy Financial Reports |
+| `plain_language_description` | string | no | This activity builds the reports the books will be expected to turn out into the live systems. The reporting … |
+| `business_purpose` | string | no | It exists so the ledger produces the reports its readers need, as designed, from live data. |
+| `practical_context` | string | no | It follows the posting configuration, when the reporting requirements and disclosure needs are to hand, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

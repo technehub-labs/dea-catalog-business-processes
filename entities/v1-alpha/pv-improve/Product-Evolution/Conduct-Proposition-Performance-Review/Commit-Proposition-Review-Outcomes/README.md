@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-im
 
 This is a **Activity** (level L3), named **Commit Proposition Review Outcomes**, currently **candidate (yellow)**. It is part of the **Product Evolution and Portfolio Rationalization** process context, domain `pv`, lifecycle stage Improve. It belongs to **Conduct Proposition Performance Review** (`processes:process-pv-improve-27r7r7`). Its canonical ID is `processes:activity-pv-improve-6hzpux`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+At the end of the review, product management gathers the agreed findings and where each one is headed, and fixes them as the outcome of record. The drafted conclusions come in at intake, are checked against the review's specification, assembled into the consolidated outcome, confirmed, and archived so what was decided cannot drift afterwards.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It turns a review's discussion into decisions of record, giving the evolution and rationalization work downstream a settled, retrievable starting point.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the review cycle: intake opens once the formed findings and routings are presented, and closure arrives with the confirmed outcome set and its preserved audit record.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* When the review meeting wraps, a product management lead registers the agreed findings, has each one checked against the review specification, consolidates them into the outcome document, confirms it to the evolution and rationalization track owners, and the records custodian archives the trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Proposition Review Outcomes |
+| `plain_language_description` | string | no | At the end of the review, product management gathers the agreed findings and where each one is headed, and fixes them … |
+| `business_purpose` | string | no | It turns a review's discussion into decisions of record, giving the evolution and rationalization work downstream a … |
+| `practical_context` | string | no | It closes the review cycle: intake opens once the formed findings and routings are presented, and closure arrives with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

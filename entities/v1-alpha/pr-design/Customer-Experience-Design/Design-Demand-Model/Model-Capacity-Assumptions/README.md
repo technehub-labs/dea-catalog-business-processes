@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-de
 
 This is a **Activity** (level L3), named **Model Capacity Assumptions**, currently **candidate (yellow)**. It is part of the **Customer Experience Design** process context, domain `pr`, lifecycle stage Design. It belongs to **Design Demand Model** (`processes:process-pr-design-cv6hjh`). Its canonical ID is `processes:activity-pr-design-nw69bm`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity states, plainly and in structure, what the enterprise is assuming about its own capacity as demand arrives. The articulated supply paths arrive as the thing to be underwritten, assumptions are stated and organised against them, and the capacity model is confirmed onward for the levers. The demand model admits honestly what it is betting on.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the demand model's capacity bets are stated openly rather than hidden in the arithmetic.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the supply paths, once the routes demand will take are drawn, and it completes when the structured capacity assumptions are confirmed onward for the levers.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function designer states and structures the capacity assumptions underpinning each supply path, and confirms the assumptions model onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Model Capacity Assumptions |
+| `plain_language_description` | string | no | This activity states, plainly and in structure, what the enterprise is assuming about its own capacity as demand … |
+| `business_purpose` | string | no | It exists so the demand model's capacity bets are stated openly rather than hidden in the arithmetic. |
+| `practical_context` | string | no | It follows the supply paths, once the routes demand will take are drawn, and it completes when the structured capacity … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

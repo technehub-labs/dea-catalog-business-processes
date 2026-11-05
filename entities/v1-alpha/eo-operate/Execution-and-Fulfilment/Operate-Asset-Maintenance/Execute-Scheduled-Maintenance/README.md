@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Execute Scheduled Maintenance**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Asset Maintenance** (`processes:process-eo-operate-j9cjzz`). Its canonical ID is `processes:activity-eo-operate-b7x5en`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity carries out the upkeep tasks the schedule calls for, on the assets it names. The scheduled tasks arrive as the worklist, crews perform each one with the parts and tooling laid on, and the completed work is confirmed for the record. Wear is caught on the timetable, before it becomes downtime.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise's assets receive their planned upkeep on time, keeping them available for the work they exist to do.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs against the maintenance schedule as each task falls due, and it closes when the completed work is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A maintenance crew works through the schedule's due tasks asset by asset, fitting the parts and tooling laid on for each, and confirms the completed work for the availability record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Execute Scheduled Maintenance |
+| `plain_language_description` | string | no | This activity carries out the upkeep tasks the schedule calls for, on the assets it names. The scheduled tasks arrive … |
+| `business_purpose` | string | no | It exists so the enterprise's assets receive their planned upkeep on time, keeping them available for the work they … |
+| `practical_context` | string | no | It runs against the maintenance schedule as each task falls due, and it closes when the completed work is confirmed and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

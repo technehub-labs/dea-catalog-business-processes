@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 
 This is a **Activity** (level L3), named **Identify Portfolio Drift**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Steer Initiative Portfolio** (`processes:process-sd-operate-u6xgu5`). Its canonical ID is `processes:activity-sd-operate-sxnm8p`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The alignment view usually shows something, and this work names it. Intake registers the assessment, scrutiny distinguishes genuine divergence from measurement noise, and processing pins down where the fleet has wandered off the course the strategy set. Confirmation communicates the drift findings downstream and the records custodian preserves them for the options work.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It turns vague unease about the initiative fleet into named, evidenced divergence the steering process can respond to.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the alignment assessment, opening at its intake and closing when the drift findings are confirmed and preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function reviewer reads the alignment view, separates two genuine departures from measurement noise, and the confirmation custodian passes the named drift findings to the colleagues drafting corrections.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Identify Portfolio Drift |
+| `plain_language_description` | string | no | The alignment view usually shows something, and this work names it. Intake registers the assessment, scrutiny … |
+| `business_purpose` | string | no | It turns vague unease about the initiative fleet into named, evidenced divergence the steering process can respond to. |
+| `practical_context` | string | no | It follows the alignment assessment, opening at its intake and closing when the drift findings are confirmed and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

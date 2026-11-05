@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-de
 
 This is a **Activity** (level L3), named **Design Service Levels**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Design Delivery Model** (`processes:process-eo-design-6j5mxp`). Its canonical ID is `processes:activity-eo-design-r8q6n4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity works the framed envelopes into measurable service levels — targets, how they are measured, and the tolerance around each. The envelopes arrive as the frame to work within, the levels are specified per channel and checked against the bounds, and the specification is confirmed onward. What customers may count on becomes a number, not an aspiration.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the framed service promises become measurable levels the operation can be held to.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the channel configuration, when the framed envelopes are to hand, and it completes once the service-level specification is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function designer turns each framed envelope into concrete targets with measures and tolerances, checks the levels stay within the bounds, and confirms the specification.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Service Levels |
+| `plain_language_description` | string | no | This activity works the framed envelopes into measurable service levels — targets, how they are measured, and the … |
+| `business_purpose` | string | no | It exists so the framed service promises become measurable levels the operation can be held to. |
+| `practical_context` | string | no | It follows the channel configuration, when the framed envelopes are to hand, and it completes once the service-level … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

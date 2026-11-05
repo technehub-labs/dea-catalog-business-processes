@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-build-nmmmt6 through concluding task processes:task-eo-build-record-efja7d, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Register Acquired Assets'
+plain_language_description: 'This activity enters the finished assets — bought, installed, and commissioned — into the enterprise''s asset record. The commissioning evidence arrives as the trigger, each asset is registered with its details, and the registered entries are confirmed and retained. From here on, the enterprise''s records show the asset exists, where it is, and that it is fit to use.'
+business_purpose: 'It exists so every asset the enterprise has paid for and stood up is formally on its books, visible to later operation.'
+practical_context: 'It closes technology acquisition, running once commissioning evidence exists, and it completes when the registered asset entries are confirmed and preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'A records custodian enters each commissioned asset into the enterprise asset record against its commissioning evidence, confirms the entries, and preserves the record for downstream operation.'

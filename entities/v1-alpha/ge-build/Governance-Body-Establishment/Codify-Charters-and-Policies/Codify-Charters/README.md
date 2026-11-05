@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-bu
 
 This is a **Activity** (level L3), named **Codify Charters**, currently **candidate (yellow)**. It is part of the **Governance Body Establishment** process context, domain `ge`, lifecycle stage Build. It belongs to **Codify Charters and Policies** (`processes:process-ge-build-mctdgc`). Its canonical ID is `processes:activity-ge-build-2je2u9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity writes the founding documents of the boards and committees about to be stood up. The governance system design arrives as the mandate of record, each charter is codified from it and checked against what the design intended, and the codified charters are confirmed onward for publication. A body's authority begins in the document this activity produces.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every governance body is founded on a written charter matching its designed mandate.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs while governance bodies are being established and their documents must exist for them to operate, and it completes once the codified charters are confirmed onward for publication.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A governing board officer codifies each designed body's mandate into its operative charter, checks the text against the governance system design, and confirms the charters for publication.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Codify Charters |
+| `plain_language_description` | string | no | This activity writes the founding documents of the boards and committees about to be stood up. The governance system … |
+| `business_purpose` | string | no | It exists so every governance body is founded on a written charter matching its designed mandate. |
+| `practical_context` | string | no | It runs while governance bodies are being established and their documents must exist for them to operate, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

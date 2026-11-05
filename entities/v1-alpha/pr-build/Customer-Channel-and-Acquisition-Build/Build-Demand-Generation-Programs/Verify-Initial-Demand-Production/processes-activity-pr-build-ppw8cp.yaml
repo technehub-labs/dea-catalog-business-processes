@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-build-4kb2pt through concluding task processes:task-pr-build-record-y4jz6q, whose outcome — Closure case file retained for Verify Initial Demand Production under the records retention schedule with cryptographic integrity protection; cryptographic …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Verify Initial Demand Production'
+plain_language_description: 'This activity proves the calibrated engine produces demand consistent with what the committed demand model predicted. The tuned engine arrives with the model as its yardstick, initial production is examined against it, and the determination is confirmed for operation. The demand machine is warranted only once its output matches the plan.'
+business_purpose: 'It exists so steady-state demand generation starts on an engine proven to produce as the model predicted.'
+practical_context: 'It closes the demand generation build once the engine is calibrated, and it completes when the initial demand production is confirmed against the committed model and retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A customer relationship management verifier checks the engine''s initial demand against what the committed model predicted, and confirms the production determination for operation.'

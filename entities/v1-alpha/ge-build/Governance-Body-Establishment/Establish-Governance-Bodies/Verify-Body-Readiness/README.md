@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-bu
 
 This is a **Activity** (level L3), named **Verify Body Readiness**, currently **candidate (yellow)**. It is part of the **Governance Body Establishment** process context, domain `ge`, lifecycle stage Build. It belongs to **Establish Governance Bodies** (`processes:process-ge-build-3p38us`). Its canonical ID is `processes:activity-ge-build-epqkej`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity proves the stood-up bodies can actually gather and use the decision rights the design gave them. The established bodies arrive with the governance system design as the yardstick, readiness is examined body by body, and the readiness determination is confirmed for their operation. Governance goes live only when its bodies have proven they can govern.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so governance bodies start operating proven able to convene and decide as designed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the body establishment once bodies are constituted, equipped, and cycling, and it completes when the readiness determination is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function verifier checks each established body can convene on its cycle and exercise its designed decision rights, and confirms the readiness determination for operation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Verify Body Readiness |
+| `plain_language_description` | string | no | This activity proves the stood-up bodies can actually gather and use the decision rights the design gave them. The … |
+| `business_purpose` | string | no | It exists so governance bodies start operating proven able to convene and decide as designed. |
+| `practical_context` | string | no | It closes the body establishment once bodies are constituted, equipped, and cycling, and it completes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

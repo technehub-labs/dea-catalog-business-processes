@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-design-ewvbsh through concluding task processes:task-sd-design-record-4bkauf, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Set the Option Design Space'
+plain_language_description: 'Leaders need to know how much room they truly have before options are sketched. The committed intent and the scoped trade-offs arrive at intake, verification confirms both are current, and processing marks out the space those two anchors permit — where options may range and where they may not. Confirmation passes the marked space downstream and the records custodian preserves it for the drafting and criteria work.'
+business_purpose: 'It fixes how far options may range before any drafting starts, so the option set is born inside what the intent and its trade-offs allow.'
+practical_context: 'It opens this process at intake when the committed intent and the scoped trade-offs are presented, closing once the marked space is confirmed and stored.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function lead takes the committed intent and the scoped trade-offs into a framing session, agrees the edges of the option space with the activity owner, and the confirmation custodian releases the marked space to the option drafting team.'

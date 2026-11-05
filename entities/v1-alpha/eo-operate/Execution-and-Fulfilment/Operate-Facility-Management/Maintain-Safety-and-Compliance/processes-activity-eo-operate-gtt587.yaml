@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-operate-rqdte5 through concluding task processes:task-eo-operate-record-whg7d3, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Maintain Safety and Compliance'
+plain_language_description: 'This activity keeps the buildings on the right side of the safety and regulatory requirements they carry, day in and day out. The requirements arrive as the standing reference, daily operation is checked against them and drift corrected, and the maintained state is confirmed for the record. Safety is a condition the facility is held in, not a poster on the wall.'
+business_purpose: 'It exists so the facilities the enterprise occupies stay safe and lawful throughout their daily use.'
+practical_context: 'It runs continuously across daily facility operation, checked against the regulatory and policy requirements, and each conformity pass closes when its outcome is confirmed and retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A facilities custodian checks the buildings'' daily operation against the safety and regulatory requirements, corrects the drift it finds, and confirms the maintained state for the record.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-co
 
 This is a **Activity** (level L3), named **Select Channel Patterns**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Frame Delivery Model Conception** (`processes:process-eo-conceive-ky5wxp`). Its canonical ID is `processes:activity-eo-conceive-8mh3xj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity chooses which channel patterns, of the options open to it, the delivery model will use to reach and serve customers. The operations strategy envelope and the customer journey designs arrive as the basis, the options are weighed and a set chosen, and the selection is confirmed onward for the service-level work. How customers will be reached is thereby settled in principle.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the delivery model commits early to how it will reach customers, before detail design begins.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the delivery model conception, once the strategy envelope and customer journey designs are to hand, and it completes when the chosen channel set is confirmed for the service-level framing.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function lead weighs the channel options against the strategy envelope and the customer journeys, picks the set the model will use, and confirms the selection with the operations function.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Select Channel Patterns |
+| `plain_language_description` | string | no | This activity chooses which channel patterns, of the options open to it, the delivery model will use to reach and serve … |
+| `business_purpose` | string | no | It exists so the delivery model commits early to how it will reach customers, before detail design begins. |
+| `practical_context` | string | no | It opens the delivery model conception, once the strategy envelope and customer journey designs are to hand, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

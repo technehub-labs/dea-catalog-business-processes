@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-improve-3fem63 through concluding task processes:task-eo-improve-record-x4tjnb, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Measure Optimization Outcomes'
+plain_language_description: 'This activity checks each committed change after the fact against the opportunity that justified it. The changes and their baseline quantifications arrive as the yardsticks, outcomes are measured and compared with what was promised, and the measurement is confirmed for the record. The optimization loop is thereby closed with evidence rather than assumption.'
+business_purpose: 'It exists so the enterprise learns whether its logistics changes actually delivered the opportunities they cited.'
+practical_context: 'It runs once the committed changes have been adopted and have had time to bite, and it completes when the outcome measurement is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function analyst measures each adopted change against the baseline quantification of its opportunity, records where the gains landed, and confirms the measurement for the record.'

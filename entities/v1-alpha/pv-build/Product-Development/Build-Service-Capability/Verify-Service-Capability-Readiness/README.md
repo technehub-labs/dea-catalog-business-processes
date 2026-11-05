@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 
 This is a **Activity** (level L3), named **Verify Service Capability Readiness**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. It belongs to **Build Service Capability** (`processes:process-pv-build-p9a2s9`). Its canonical ID is `processes:activity-pv-build-nhhc9u`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity proves the built, integrated capability can actually deliver the designed service to customers. The integrated capability arrives with the designed proposition as the yardstick, readiness is examined against it, and the determination is confirmed for market readiness preparation. The service is declared buildable-complete only on evidence.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so market readiness starts from a service capability proven able to deliver as designed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the service capability build once mechanism, personnel, and integration are in place, and it completes when the readiness determination is confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management verifier checks the integrated capability can deliver the designed service proposition to customers, and confirms the readiness determination onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Verify Service Capability Readiness |
+| `plain_language_description` | string | no | This activity proves the built, integrated capability can actually deliver the designed service to customers. The … |
+| `business_purpose` | string | no | It exists so market readiness starts from a service capability proven able to deliver as designed. |
+| `practical_context` | string | no | It closes the service capability build once mechanism, personnel, and integration are in place, and it completes when … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

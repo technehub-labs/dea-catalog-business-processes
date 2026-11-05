@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-bu
 
 This is a **Activity** (level L3), named **Calibrate Demand Programs**, currently **candidate (yellow)**. It is part of the **Customer Channel and Acquisition Build** process context, domain `pr`, lifecycle stage Build. It belongs to **Build Demand Generation Programs** (`processes:process-pr-build-4kb2pt`). Its canonical ID is `processes:activity-pr-build-ywaa6n`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity tunes the connected engine against its first responses from the market, before it settles into steady running. The initial demand response arrives as the evidence, programs are adjusted against it and re-checked, and the calibrated engine is confirmed onward for readiness. First contact with the market is used to correct aim, not to declare victory.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the demand engine's settings are corrected against real market response before steady state.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the engine integration, once initial demand response starts arriving, and it completes as the calibrated programs are confirmed onward for readiness.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function tuner adjusts the programs against the engine's first market responses — retiming, refocusing, rebalancing — and confirms the calibrated engine onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Calibrate Demand Programs |
+| `plain_language_description` | string | no | This activity tunes the connected engine against its first responses from the market, before it settles into steady … |
+| `business_purpose` | string | no | It exists so the demand engine's settings are corrected against real market response before steady state. |
+| `practical_context` | string | no | It follows the engine integration, once initial demand response starts arriving, and it completes as the calibrated … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

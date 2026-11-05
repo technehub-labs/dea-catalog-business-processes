@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-build-b38bkg through concluding task processes:task-ao-build-record-yyq4b4, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Identify Pool Demand'
+plain_language_description: 'This activity works out where the enterprise needs surge or specialist help that ordinary direct acquisition cannot supply in time. The committed structure design and capacity plan are taken in and examined, the gaps are identified and written up as pool demand, and the finding is confirmed with those planning the response. It ends with the identified pool demand recorded so the pool build can target it.'
+business_purpose: 'It exists so the contractor and partner pool is built against genuinely identified demand rather than built speculatively.'
+practical_context: 'It occurs when the committed organization structure design and capacity plan show demand that direct acquisition cannot serve within the required timeframes, and it closes once the identified demand is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function lead reviewing the capacity plan spots a seasonal surge that direct acquisition cannot staff in time, has the gap written up as identified pool demand, and confirms it with workforce management.'

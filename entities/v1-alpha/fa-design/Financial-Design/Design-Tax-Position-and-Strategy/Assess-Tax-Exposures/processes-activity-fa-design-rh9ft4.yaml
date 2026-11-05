@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-design-ds4drw through concluding task processes:task-fa-design-record-pwmm9k, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Assess Tax Exposures'
+plain_language_description: 'This activity sizes up the fresh tax exposure, or the shift in jurisdictions, that has made this design work necessary. The jurisdictional change record and the operating footprint arrive as the material, exposures are assessed and bounded, and the exposure assessment is confirmed onward for the position work. What the enterprise owes, and where, is established before any stance is taken.'
+business_purpose: 'It exists so tax design starts from exposures that are known and bounded, not discovered late.'
+practical_context: 'It opens the tax design when a new exposure or jurisdictional change emerges, and it completes once the exposure assessment is confirmed for the position documentation.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance design authority analyst reads the jurisdictional change record against the operating footprint, sizes and bounds the fresh tax exposure, and confirms the assessment.'

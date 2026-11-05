@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Disposition Nonconforming Output**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Quality Control** (`processes:process-eo-operate-44jsrp`). Its canonical ID is `processes:activity-eo-operate-gmj49n`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity takes each recorded nonconformity and rules on what happens to the output behind it — concession, rework, scrap, or sending back — containing any affected batches meanwhile. The recorded nonconformities arrive as the case list, each disposition is decided and applied, and the dispositions are confirmed for the record. Failed product meets a decision, not a shrug.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so output that fails its specification gets a deliberate, recorded fate before it can reach a customer.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once a batch's results are in the quality record and nonconformities are logged, and it completes when each disposition, including containment, is confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A quality custodian takes a batch's recorded nonconformity, contains the affected stock, rules the output to rework rather than concession, and confirms the disposition for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Disposition Nonconforming Output |
+| `plain_language_description` | string | no | This activity takes each recorded nonconformity and rules on what happens to the output behind it — concession, rework … |
+| `business_purpose` | string | no | It exists so output that fails its specification gets a deliberate, recorded fate before it can reach a customer. |
+| `practical_context` | string | no | It runs once a batch's results are in the quality record and nonconformities are logged, and it completes when each … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

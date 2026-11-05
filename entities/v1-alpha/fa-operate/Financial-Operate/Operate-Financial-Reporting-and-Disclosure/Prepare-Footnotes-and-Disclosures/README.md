@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Prepare Footnotes and Disclosures**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Operate Financial Reporting and Disclosure** (`processes:process-fa-operate-ycba3k`). Its canonical ID is `processes:activity-fa-operate-dv3u8j`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity writes the notes that tell the reader what sits behind the statement figures. The prepared statements arrive as the text to be explained, footnotes and disclosures are drafted against them and checked for completeness, and the prepared set is confirmed onward for the package review. The numbers gain their context here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the statements are accompanied by the disclosures that make them honestly readable.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the statement preparation, working from the prepared statements, and it completes once the footnotes and disclosures are confirmed onward for the package review.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A compliance function preparer drafts the footnotes and disclosures explaining the prepared statements, checks nothing required is missing, and confirms the set for the package review.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Prepare Footnotes and Disclosures |
+| `plain_language_description` | string | no | This activity writes the notes that tell the reader what sits behind the statement figures. The prepared statements … |
+| `business_purpose` | string | no | It exists so the statements are accompanied by the disclosures that make them honestly readable. |
+| `practical_context` | string | no | It follows the statement preparation, working from the prepared statements, and it completes once the footnotes and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-build-ydnzjc through concluding task processes:task-fa-build-record-cpz9t2, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Formalize the Funding Agreements'
+plain_language_description: 'This activity puts the agreed funding terms into signed, binding paperwork. The negotiated terms arrive as the substance, the facility documentation is executed and checked against what was agreed, and the executed documents are confirmed onward. Handshake deals become commitments the enterprise can draw on.'
+business_purpose: 'It exists so the negotiated funding lines become signed commitments the enterprise can actually draw against.'
+practical_context: 'It follows the negotiations, when the agreed terms are to hand, and it completes once the executed facility documentation is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance function officer turns the negotiated terms into executed facility paperwork, checks every clause against what was agreed, and confirms the signed documents.'

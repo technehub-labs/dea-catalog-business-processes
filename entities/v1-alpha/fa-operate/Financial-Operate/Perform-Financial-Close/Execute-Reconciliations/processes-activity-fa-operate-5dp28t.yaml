@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-operate-4xn4d6 through concluding task processes:task-fa-operate-record-2g5mm5, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Execute Reconciliations'
+plain_language_description: 'This activity checks the ledger''s balances against their counterparts outside it before the close is declared done. The executed entries arrive as the starting state, reconciliations are performed across the balances and their external counterparts, and the reconciled state is confirmed onward for certification. Nothing certifies here until the books agree with the world.'
+business_purpose: 'It exists so the close rests on balances proven against reality, not merely summed.'
+practical_context: 'It follows the period-end entries, once the period is fenced off, and it completes when the reconciled balances are confirmed onward for the close certification.'
+worked_example:
+  agent_type: human
+  narrative: 'A close custodian reconciles each ledger balance against its bank, subledger, or counterparty counterpart, resolves the differences found, and confirms the reconciled state for certification.'

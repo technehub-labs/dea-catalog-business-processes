@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-co
 
 This is a **Activity** (level L3), named **Articulate Strategic Trajectory**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Develop Corporate Strategy** (`processes:process-sd-conceive-ahwvp5`). Its canonical ID is `processes:activity-sd-conceive-e7z2am`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+A direction is a bearing; a trajectory spells out the route. Intake registers the synthesized direction, verification tests the emerging wording against it, and processing writes out the trajectory in full — where the enterprise is heading and along what path. Confirmation passes the articulated trajectory downstream and the records custodian preserves it for the choice step.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It converts the fused direction into an explicit trajectory that leaders can weigh and choose between.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows synthesis, opening at intake of the synthesized direction and closing when the articulated trajectory is confirmed and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Strategy function writers turn the synthesized direction into a fully spelled-out trajectory, read it back against the direction with the activity owner, and the confirmation custodian releases it to the colleagues who will choose the way forward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Articulate Strategic Trajectory |
+| `plain_language_description` | string | no | A direction is a bearing; a trajectory spells out the route. Intake registers the synthesized direction, verification … |
+| `business_purpose` | string | no | It converts the fused direction into an explicit trajectory that leaders can weigh and choose between. |
+| `practical_context` | string | no | It follows synthesis, opening at intake of the synthesized direction and closing when the articulated trajectory is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

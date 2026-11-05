@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 
 This is a **Activity** (level L3), named **Commit Competency Framework**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Design Competency Framework** (`processes:process-ao-design-rve8j5`). Its canonical ID is `processes:activity-ao-design-3ebtma`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity gathers the domains, levels, and assessment anchors into the finished competency framework and gives it formal standing. The anchored assessment arrives last, the whole framework is consolidated and reviewed, and its commitment is confirmed so the enterprise can use it as its yardstick for capability. The committed framework is then preserved as an audit record.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise holds one ratified standard for capability that gap analysis and development planning can rely on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It takes place at the close of competency framework design, once the assessment anchors are in place, and it completes when the committed framework is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian consolidates the identified domains, defined levels, and assessment anchors into the complete framework, obtains the organization design authority's commitment, and preserves the audit record that establishes the framework as the capability yardstick.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit the Competency Framework |
+| `plain_language_description` | string | no | This activity gathers the domains, levels, and assessment anchors into the finished competency framework and gives it … |
+| `business_purpose` | string | no | It exists so the enterprise holds one ratified standard for capability that gap analysis and development planning can … |
+| `practical_context` | string | no | It takes place at the close of competency framework design, once the assessment anchors are in place, and it completes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

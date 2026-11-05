@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-build-2pkz5n through concluding task processes:task-sd-build-record-mpr8gg, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Allocate Resources to Initiatives'
+plain_language_description: 'With limits drawn, real resourcing can happen. The envelopes arrive at intake, verification checks each request fits inside its cap, and processing assigns funding, people and capacity to the initiatives accordingly. Confirmation announces the allocation to downstream consumers and the records custodian preserves the decisions for the prioritisation round.'
+business_purpose: 'It matches concrete funding and capacity to each initiative, converting bounded limits into workable resourcing for the plan.'
+practical_context: 'It begins once the envelopes are in place, opening at their intake and closing when the allocation is confirmed and preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function fills each initiative''s envelope with named funding and staff allocations, the verification custodian confirms nothing exceeds its cap, and the confirmation custodian tells downstream planners the allocation is ready to be ranked.'

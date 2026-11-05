@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-de
 
 This is a **Activity** (level L3), named **Specify Interaction Patterns**, currently **candidate (yellow)**. It is part of the **Customer Experience Design** process context, domain `pr`, lifecycle stage Design. It belongs to **Design Customer Experience** (`processes:process-pr-design-pxydu3`). Its canonical ID is `processes:activity-pr-design-4as452`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity sets the house style for how interactions play out, the same way at every touchpoint. The designed touchpoints arrive as the surfaces to be governed, the patterns are specified across them and checked for consistency, and the specification is confirmed onward for the quality criteria. Customers learn the enterprise once and recognise it everywhere.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so interactions behave consistently by design, whichever touchpoint a customer uses.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the touchpoint design, when the surfaces are drawn, and it completes once the interaction pattern specification is confirmed onward for the quality criteria.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A customer relationship management designer sets the repeatable patterns for how interactions behave across every touchpoint, and confirms the specification onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Specify Interaction Patterns |
+| `plain_language_description` | string | no | This activity sets the house style for how interactions play out, the same way at every touchpoint. The designed … |
+| `business_purpose` | string | no | It exists so interactions behave consistently by design, whichever touchpoint a customer uses. |
+| `practical_context` | string | no | It follows the touchpoint design, when the surfaces are drawn, and it completes once the interaction pattern … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

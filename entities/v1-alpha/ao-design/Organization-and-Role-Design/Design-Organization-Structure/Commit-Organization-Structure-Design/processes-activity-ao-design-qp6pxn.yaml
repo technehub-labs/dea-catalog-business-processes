@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-design-7dkbur through concluding task processes:task-ao-design-record-54wxn4, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit the Organization Structure Design'
+plain_language_description: 'This activity is where the reviewed structure design is formally accepted and put to work. The reviewed design is taken in and consolidated, its ratification is confirmed with the design authority, and the committed design is handed to the role catalogue, the competency framework, and the agent topology work that accompanies it. An audit record of the commitment is preserved so the enterprise can trace its structure back to this decision.'
+business_purpose: 'It exists so the structure blueprint becomes one binding reference that the companion designs and later workforce building must follow.'
+practical_context: 'It takes place at the close of structure design, once the draft has passed review against the framed model, and it completes when the committed design is confirmed, handed over, and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian brings the reviewed design forward for the organization design authority''s ratification, records the commitment once made, and notifies the role catalogue, competency framework, and agent topology teams that the design is theirs to build from.'

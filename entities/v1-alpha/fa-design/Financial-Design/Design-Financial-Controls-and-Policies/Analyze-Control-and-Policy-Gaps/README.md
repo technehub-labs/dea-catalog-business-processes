@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-de
 
 This is a **Activity** (level L3), named **Analyze Control and Policy Gaps**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Design Financial Controls and Policies** (`processes:process-fa-design-uun4ja`). Its canonical ID is `processes:activity-fa-design-xycsv4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity takes the shortcoming in controls or policy that has surfaced and works out exactly what design work it demands. The gap identification and any audit findings arrive as the material, the gap is analyzed and its design need bounded, and the bounded analysis is confirmed onward for the objectives. Vague unease about a control becomes a specific design brief.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so control and policy design starts from a bounded understanding of the actual gap.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the controls and policies design when a gap is identified or audit findings arrive, and it completes once the bounded gap analysis is confirmed for the objective design.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance design authority analyst takes the surfaced control shortcoming with its audit findings, bounds exactly what design work it demands, and confirms the analysis for the objectives.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Analyze Control and Policy Gaps |
+| `plain_language_description` | string | no | This activity takes the shortcoming in controls or policy that has surfaced and works out exactly what design work it … |
+| `business_purpose` | string | no | It exists so control and policy design starts from a bounded understanding of the actual gap. |
+| `practical_context` | string | no | It opens the controls and policies design when a gap is identified or audit findings arrive, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

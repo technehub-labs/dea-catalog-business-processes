@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-co
 
 This is a **Activity** (level L3), named **Frame Funding and Capital Approach**, currently **candidate (yellow)**. It is part of the **Financial Model and Funding Conception** process context, domain `fa`, lifecycle stage Conceive. It belongs to **Frame Finance Strategy** (`processes:process-fa-conceive-4uqqvg`). Its canonical ID is `processes:activity-fa-conceive-p34u93`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity sets where the enterprise's money will come from and on what capital terms — the sources, the structure, and the posture it will take. The bounded monetary model arrives as the frame, the approach to funding and capital is worked out and reviewed against it, and the framed approach is confirmed onward for the strategy's commitment. How the enterprise is capitalized is thereby settled in principle.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise commits early to how it will be funded and capitalized, within the bounds its monetary model sets.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the monetary framing, when the bounded model is presented for the funding work, and it completes once the funding and capital approach is confirmed for the strategy's commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance function lead sets the funding sources, structure, and posture against the bounded monetary model, reviews the approach with the strategy function, and confirms it for commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Frame Funding and Capital Approach |
+| `plain_language_description` | string | no | This activity sets where the enterprise's money will come from and on what capital terms — the sources, the structure … |
+| `business_purpose` | string | no | It exists so the enterprise commits early to how it will be funded and capitalized, within the bounds its monetary … |
+| `practical_context` | string | no | It follows the monetary framing, when the bounded model is presented for the funding work, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

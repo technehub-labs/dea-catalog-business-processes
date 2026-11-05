@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-operate-g9zpnq through concluding task processes:task-fa-operate-record-ye7by9, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Process Journal Entries'
+plain_language_description: 'This activity handles the journal entries arriving day by day, posting each into the books. Entries flow in from across the operation, each is processed under the configured rules and checked as it posts, and the processed entries are confirmed onward. The ledger''s daily diet is digested here.'
+business_purpose: 'It exists so the ledger''s steady stream of entries is posted correctly, rule by rule.'
+practical_context: 'It runs continuously as entries flow into the ledger in steady state, and each posting closes when it is confirmed onward into the maintained books.'
+worked_example:
+  agent_type: human
+  narrative: 'A ledger custodian processes each arriving journal entry under the configured posting rules, checks it as it posts, and confirms the processed entries onward.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-ac
 
 This is a **Activity** (level L3), named **Activate Signing Authority Or Controlled-Function Designation**, currently **candidate (yellow)**. It is part of the **Licensed Workforce Mobilization** process context, domain `ao`, lifecycle stage Activate. It belongs to **Mobilize Licensed Workforce** (`processes:process-ao-activate-jqxtqn`). Its canonical ID is `processes:activity-ao-activate-sq2zfw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once a licensed individual's verified licence and designation are on the table, this activity switches on the formal authority the role carries and files it against the personnel record. The work passes through five custodian steps: the request is logged in, the designation details are checked against what was approved, the authority is set up in its final form, the people who rely on it are told it is available, and the audit trail is filed. From that point the individual's continuing supervisor is on notice, and the role's formal authority is live.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so a licensed role's signing or decision-making authority only goes live together with the notification that keeps a continuing supervisor accountable for it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It happens late in mobilizing a licensed workforce, when the verified licence and the designation are presented after licence verification and the fitness attestation, and it closes once the activation's audit record is preserved for retrieval.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management lead receives the verified licence details for a newly approved controlled-function appointee, has the designation set up on the personnel record, and issues the notification that places the continuing supervisor on notice before the appointee's first day of live work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Activate Signing Authority or Controlled-Function Designation |
+| `plain_language_description` | string | no | Once a licensed individual's verified licence and designation are on the table, this activity switches on the formal … |
+| `business_purpose` | string | no | It exists so a licensed role's signing or decision-making authority only goes live together with the notification that … |
+| `practical_context` | string | no | It happens late in mobilizing a licensed workforce, when the verified licence and the designation are presented after … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

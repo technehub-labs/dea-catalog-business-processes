@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-design-7gtead through concluding task processes:task-eo-design-record-f646er, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design Integration Patterns'
+plain_language_description: 'This activity draws the ways the platform''s specified components will connect to one another. The component specification arrives as the map of what must join, integration approaches are designed pair by pair and gathered into a catalogue, and the catalogue is confirmed onward for the topology work. No component is left an island.'
+business_purpose: 'It exists so the platform''s components connect by designed, repeatable patterns rather than ad hoc wiring.'
+practical_context: 'It follows the component specification, when the specified components are presented for connecting, and it completes once the integration catalogue is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function designer designs how each pair of specified components connects, gathers the approaches into a catalogue, and confirms it for the topology definition.'

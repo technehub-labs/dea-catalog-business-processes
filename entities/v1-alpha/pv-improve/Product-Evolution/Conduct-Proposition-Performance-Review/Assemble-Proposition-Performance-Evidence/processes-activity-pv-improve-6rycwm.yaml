@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-improve-27r7r7 through concluding task processes:task-pv-improve-record-24arc4, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Assemble Proposition Performance Evidence'
+plain_language_description: 'Before any review can judge how propositions are doing, the scattered material has to be brought together: performance records, signs of gaps in the portfolio, and the evidence rationalization choices will need. Product management registers what arrives, checks it for completeness, organizes it into one review-ready pack, confirms the pack to the review, and has it archived for traceability.'
+business_purpose: 'It gives the performance review a complete, trustworthy evidence pack, so findings rest on the full picture rather than whichever signals happened to be at hand.'
+practical_context: 'It marks the opening of the review cycle: work starts when performance records are presented for intake and ends when the confirmed evidence pack and its audit record are on file.'
+worked_example:
+  agent_type: human
+  narrative: 'Ahead of the periodic review, a product management analyst collects the performance records for every live proposition, registers them at intake, verifies nothing material is missing, assembles the pack with the portfolio gaps flagged, and the records custodian files it for the reviewers.'

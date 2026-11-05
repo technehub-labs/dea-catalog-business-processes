@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 
 This is a **Activity** (level L3), named **Identify Capability Gaps**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Conduct Capability Gap Analysis** (`processes:process-ao-improve-h3vgyf`). Its canonical ID is `processes:activity-ao-improve-eyvh62`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity reads the measured baseline against what the framework requires and names every place the population falls short. The baseline arrives first, each shortfall is worked out and recorded in its own right, and the identified gaps are confirmed with the design authority. Nothing is ranked yet; the point here is a complete, honest list of what is missing.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so shortfalls between designed and actual capability are named explicitly before anyone decides what to do about them.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the baselining of population competencies, when the measured baseline is presented, and it completes once the identified gaps are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A verification custodian compares the baseline domain by domain against the framework's requirements, records each shortfall as a named gap, and hands the list to the prioritization step.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Identify the Capability Gaps |
+| `plain_language_description` | string | no | This activity reads the measured baseline against what the framework requires and names every place the population … |
+| `business_purpose` | string | no | It exists so shortfalls between designed and actual capability are named explicitly before anyone decides what to do … |
+| `practical_context` | string | no | It follows the baselining of population competencies, when the measured baseline is presented, and it completes once … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

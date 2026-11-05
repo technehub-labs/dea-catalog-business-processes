@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Conduct Facility Inspections**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Facility Management** (`processes:process-eo-operate-rqdte5`). Its canonical ID is `processes:activity-eo-operate-qx7epe`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity walks the buildings on a regular rhythm, notes their condition, and hands anything needing attention to the work-order flow or the safety effort. The inspection cadence arrives as the timetable, rounds are carried out and their findings written up, and the findings are confirmed onward. Small defects are caught while they are still small.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise learns about facility defects from its own inspections rather than from failures.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs to the planned inspection cadence across the facilities, and it completes once each round's findings are confirmed into the work-order and safety flows.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A facilities inspector walks each building on its scheduled round, notes the condition found, and hands the defects needing attention to the work-order flow or the safety effort.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Conduct Facility Inspections |
+| `plain_language_description` | string | no | This activity walks the buildings on a regular rhythm, notes their condition, and hands anything needing attention to … |
+| `business_purpose` | string | no | It exists so the enterprise learns about facility defects from its own inspections rather than from failures. |
+| `practical_context` | string | no | It runs to the planned inspection cadence across the facilities, and it completes once each round's findings are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

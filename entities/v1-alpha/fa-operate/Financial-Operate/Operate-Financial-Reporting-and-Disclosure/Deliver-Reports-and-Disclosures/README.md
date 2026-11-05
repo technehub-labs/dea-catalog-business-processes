@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Deliver Reports and Disclosures**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Operate Financial Reporting and Disclosure** (`processes:process-fa-operate-ycba3k`). Its canonical ID is `processes:activity-fa-operate-hxqddg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity gets the finished, reviewed reporting out to everyone who relies on it, inside and outside. The reviewed package arrives as the release candidate, delivery is executed to each consumer, and the delivered reporting is confirmed for the record. All the preparation counts for nothing until this hands it over.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the reviewed reporting actually reaches its internal and external readers.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the package review, once the reporting is cleared for release, and it completes when the delivered reports and disclosures are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A compliance function custodian delivers the reviewed package to the internal and external consumers on its distribution list, and confirms each delivery for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Deliver Reports and Disclosures |
+| `plain_language_description` | string | no | This activity gets the finished, reviewed reporting out to everyone who relies on it, inside and outside. The reviewed … |
+| `business_purpose` | string | no | It exists so the reviewed reporting actually reaches its internal and external readers. |
+| `practical_context` | string | no | It follows the package review, once the reporting is cleared for release, and it completes when the delivered reports … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

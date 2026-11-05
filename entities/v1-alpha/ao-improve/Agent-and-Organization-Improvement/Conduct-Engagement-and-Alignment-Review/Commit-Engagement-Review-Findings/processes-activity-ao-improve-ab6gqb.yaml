@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-improve-edjyha through concluding task processes:task-ao-improve-record-bkgxgf, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit the Engagement Review Findings'
+plain_language_description: 'This activity gives the review''s formulated findings formal standing and sends them to work. The formulated findings are taken in and reviewed, their commitment is confirmed, and the committed findings are routed into development so the next planning cycle inherits them. The commitment is preserved as an audit record for later reference.'
+business_purpose: 'It exists so engagement and alignment conclusions become committed inputs to development planning instead of review-stage paperwork.'
+practical_context: 'It closes the engagement and alignment review, once findings have been formulated, and it completes when the committed findings are confirmed, routed, and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian brings the formulated findings forward for ratification, records the commitment, and routes them to the development planning team with the audit record on file.'

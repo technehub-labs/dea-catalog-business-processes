@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-build-w2qurd through concluding task processes:task-ao-build-record-2nmbeu, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Select and Acquire Agents'
+plain_language_description: 'This activity chooses and brings in the agents needed to fill the provisioned capacity, judging candidates on merit rather than on the kind of agent they are. The capacity to be filled is logged in and checked, the selections are made and executed as acquisitions, and the outcome is confirmed with the planners. It ends with acquired agents handed over for onboarding and the acquisition record preserved.'
+business_purpose: 'It exists so the organization fills its provisioned capacity with the right agents, whether people or artificial agents, chosen on suitability alone.'
+practical_context: 'It runs when the provisioned agent capacity is presented during acquisition, and it finishes once the acquired agents are confirmed and the acquisition record is kept for audit.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian compares candidates for a provisioned capacity slot, selects the strongest fit whether that is a person or an artificial agent, records the acquisition, and notifies the onboarding step that the acquired agents are on their way.'

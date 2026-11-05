@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-re
 
 This is a **Activity** (level L3), named **Execute Retained-Records Plan for Regulated Entity**, currently **candidate (yellow)**. It is part of the **Sunset Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Retire. It belongs to **Sunset Regulated Strategic Plan** (`processes:process-sd-retire-umxf3c`). Its canonical ID is `processes:activity-sd-retire-48khkt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Retired does not mean discarded; the retired plan's papers must be kept on schedule. Intake registers the completed sunset record and the entity's retention plan, verification reconciles the schedule against what the supervisor requires, and processing catalogues the retired plan's papers, applies the prescribed keeping periods and stores them where continuing oversight can reach them. Confirmation logs the execution against the plan record and the records custodian preserves the catalogue itself.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It keeps the retired plan's papers findable and intact for as long as the policy and the supervisor require, so history stays answerable.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the sunset record, opening at intake of the retention plan and closing when the catalogued, stored papers are confirmed and the execution logged.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The finance function records team catalogues the retired plan's papers against the retention schedule, a verification custodian reconciles the keeping periods with the supervisor's requirements, and the execution is logged where the industry regulator can inspect it.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Execute Retained-Records Plan for Regulated Entity |
+| `plain_language_description` | string | no | Retired does not mean discarded; the retired plan's papers must be kept on schedule. Intake registers the completed … |
+| `business_purpose` | string | no | It keeps the retired plan's papers findable and intact for as long as the policy and the supervisor require, so history … |
+| `practical_context` | string | no | It follows the sunset record, opening at intake of the retention plan and closing when the catalogued, stored papers … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

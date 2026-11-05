@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-retire-bd3asa through concluding task processes:task-pr-retire-record-awt2te, whose outcome — Closure case file retained for Execute Evidenced Closure under the records retention schedule with cryptographic integrity protection; cryptographic …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Execute Evidenced Closure'
+plain_language_description: 'This activity performs the closing itself — the counterparty confirms it, the evidence is captured, and the file is archived. The settled and resolved relationship arrives as ready to end, closure is executed with the counterparty''s confirmation, and the evidenced closure is confirmed for the record. The relationship ends not with a whimper but with a receipt.'
+business_purpose: 'It exists so the relationship''s end is proven — confirmed by the counterparty and archived as evidence.'
+practical_context: 'It closes the close-out once obligations are settled and records resolved, and it completes when the executed closure with counterparty confirmation and archived evidence is confirmed for the record.'
+worked_example:
+  agent_type: human
+  narrative: 'A customer relationship management officer executes the final closure with the counterparty''s confirmation, captures and archives the evidence, and confirms the closure for the record.'

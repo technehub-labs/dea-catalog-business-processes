@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-im
 
 This is a **Activity** (level L3), named **Score Finding Severity**, currently **candidate (yellow)**. It is part of the **Governance Review and Learning** process context, domain `ge`, lifecycle stage Improve. It belongs to **Score Audit Findings** (`processes:process-ge-improve-axtq3b`). Its canonical ID is `processes:activity-ge-improve-nz4rpa`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity grades how serious each delivered audit finding is, using the audit framework's rubric and the assurance thresholds. The delivered findings arrive as the intake, severity is scored finding by finding against the rubric, and the scored findings are confirmed onward for the recurrence work. Not all findings weigh the same, and now that is official.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so audit findings carry an official severity, applied by rubric rather than by mood.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the finding scoring when an audit report arrives with its findings, and it completes once each scored finding is confirmed onward for the recurrence assessment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An audit function analyst grades each delivered finding's severity against the framework rubric and the assurance thresholds, and confirms the scored findings onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -60,6 +60,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Score Finding Severity |
+| `plain_language_description` | string | no | This activity grades how serious each delivered audit finding is, using the audit framework's rubric and the assurance … |
+| `business_purpose` | string | no | It exists so audit findings carry an official severity, applied by rubric rather than by mood. |
+| `practical_context` | string | no | It opens the finding scoring when an audit report arrives with its findings, and it completes once each scored finding … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

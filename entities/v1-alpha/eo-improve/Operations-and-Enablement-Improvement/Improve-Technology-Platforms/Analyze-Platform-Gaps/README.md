@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-im
 
 This is a **Activity** (level L3), named **Analyze Platform Gaps**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Improve Technology Platforms** (`processes:process-eo-improve-babwdc`). Its canonical ID is `processes:activity-eo-improve-uvzvt8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity reads the platforms' performance records and incident history to bound where reliability, capacity, or capability falls short. The records and history arrive as the raw material, the gaps are analyzed and bounded with the worst problems named first, and the gap analysis is confirmed onward for the upgrade design. Platform pain becomes a specific, bounded worklist.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so platform improvement starts from bounded, evidenced gaps rather than from anecdotes about slowness.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the platform improvement, when the performance records and incident history are presented, and it completes once the gap analysis is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function analyst reads the platform performance records and incident history, bounds the reliability, capacity, and capability gaps, and confirms the analysis for the upgrade design.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Analyze Platform Gaps |
+| `plain_language_description` | string | no | This activity reads the platforms' performance records and incident history to bound where reliability, capacity, or … |
+| `business_purpose` | string | no | It exists so platform improvement starts from bounded, evidenced gaps rather than from anecdotes about slowness. |
+| `practical_context` | string | no | It opens the platform improvement, when the performance records and incident history are presented, and it completes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

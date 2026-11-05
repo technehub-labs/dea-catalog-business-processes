@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-co
 
 This is a **Activity** (level L3), named **Assess Innovation Option Space**, currently **candidate (yellow)**. It is part of the **Proposition and Portfolio Conception** process context, domain `pv`, lifecycle stage Conceive. It belongs to **Frame Innovation Thesis** (`processes:process-pv-conceive-kps544`). Its canonical ID is `processes:activity-pv-conceive-3ufbnz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity surveys what could actually be done inside the chosen grounds, before anything is promised. The selected focus areas arrive as the territory to explore, the option space is assessed across it and its possibilities mapped, and the assessed space is confirmed onward for the boundary setting. Ambition meets inventory here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the innovation thesis is grounded in what the focus areas genuinely offer.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the focus area selection, once the grounds are chosen, and it completes when the assessed option space is confirmed onward for the boundary setting.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A proposition design authority analyst surveys what could actually be done within the selected focus areas, maps the possibilities, and confirms the assessed space onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assess Innovation Option Space |
+| `plain_language_description` | string | no | This activity surveys what could actually be done inside the chosen grounds, before anything is promised. The selected … |
+| `business_purpose` | string | no | It exists so the innovation thesis is grounded in what the focus areas genuinely offer. |
+| `practical_context` | string | no | It follows the focus area selection, once the grounds are chosen, and it completes when the assessed option space is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

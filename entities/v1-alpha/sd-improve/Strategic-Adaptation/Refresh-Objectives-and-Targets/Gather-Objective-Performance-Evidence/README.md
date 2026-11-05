@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-im
 
 This is a **Activity** (level L3), named **Gather Objective Performance Evidence**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. It belongs to **Refresh Objectives and Targets** (`processes:process-sd-improve-aqbrm7`). Its canonical ID is `processes:activity-sd-improve-6tdndg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before objectives can be judged, the facts about them must be brought together. The monitored performance picture arrives at intake, verification checks each item is complete and attributable, and processing assembles the evidence relevant to the measures the enterprise is currently working to. Confirmation shares the gathered evidence downstream and the records custodian preserves it for the fit assessment.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It puts a complete, checked evidence base behind the refresh, so judgements about the current measures rest on facts rather than impressions.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens this process at intake when the monitored performance picture is presented, closing once the gathered evidence is confirmed and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function analyst collects the monitored performance figures bearing on each current measure, a verification custodian confirms sources and completeness, and the confirmation custodian releases the evidence pack to the fit assessment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Gather Objective Performance Evidence |
+| `plain_language_description` | string | no | Before objectives can be judged, the facts about them must be brought together. The monitored performance picture … |
+| `business_purpose` | string | no | It puts a complete, checked evidence base behind the refresh, so judgements about the current measures rest on facts … |
+| `practical_context` | string | no | It opens this process at intake when the monitored performance picture is presented, closing once the gathered evidence … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 
 This is a **Activity** (level L3), named **Define Fitness-And-Propriety Assessment Regime**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Design Regulated Role Architecture** (`processes:process-ao-design-2fkvhx`). Its canonical ID is `processes:activity-ao-design-x9k4m7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity fixes, in advance of any hiring, how each licensed role's fitness will be judged over time. The regulator-tied catalogue and the fitness matrix come in, and for each role the regime settles when assessments happen, what criteria they apply, and who attests, all framed by the expectations of the relevant regulator. The defined regime is confirmed and filed so later attestation follows designed rules rather than case-by-case judgement.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so fitness checks for licensed roles run to a regime designed up front and framed by regulator expectations.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs during regulated role architecture design, once the catalogue entries and the fitness matrix are to hand, and it completes when the defined regime is confirmed and preserved on the personnel record.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A designer for the organization design authority sets an annual fitness assessment for a controlled-function role, names the employer as attestor, and records the criteria so re-assessments later judge everyone by the same standard.
 
 ## 5. Header and Identity Table (generated)
 
@@ -65,6 +65,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Define the Fitness and Propriety Assessment Regime |
+| `plain_language_description` | string | no | This activity fixes, in advance of any hiring, how each licensed role's fitness will be judged over time. The … |
+| `business_purpose` | string | no | It exists so fitness checks for licensed roles run to a regime designed up front and framed by regulator expectations. |
+| `practical_context` | string | no | It runs during regulated role architecture design, once the catalogue entries and the fitness matrix are to hand, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

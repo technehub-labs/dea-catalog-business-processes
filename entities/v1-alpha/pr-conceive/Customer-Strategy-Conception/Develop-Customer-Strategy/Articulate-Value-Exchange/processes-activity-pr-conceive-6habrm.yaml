@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-conceive-emfgju through concluding task processes:task-pr-conceive-record-5djxpc, whose outcome — Closure case file retained for Articulate Value Exchange under the records retention schedule with cryptographic integrity protection; cryptographic …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Articulate Value Exchange'
+plain_language_description: 'This activity states plainly what each side of the relationship puts in and takes out. The framed segment arrives as the counterparty to design for, the exchange is articulated in both directions and checked for fairness, and the articulated exchange is confirmed onward for the demand thesis. The deal the enterprise offers its customers is set down here, in full.'
+business_purpose: 'It exists so the relationship''s give-and-take is stated explicitly rather than left implicit in the product.'
+practical_context: 'It follows the segment framing, once the chosen customers are fixed, and it completes when the articulated value exchange is confirmed onward for the demand thesis.'
+worked_example:
+  agent_type: human
+  narrative: 'A customer relationship management lead states what the enterprise gives its chosen customers and what it receives in return, and confirms the exchange for the demand thesis.'

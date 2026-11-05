@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-im
 
 This is a **Activity** (level L3), named **Evaluate Strategy Effectiveness**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. It belongs to **Review Strategy Effectiveness** (`processes:process-sd-improve-duwd64`). Its canonical ID is `processes:activity-sd-improve-mfk5ab`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The dossier is assembled; now comes the judgement. Intake registers the outcome picture, scrutiny weighs each line against what the strategy set out to achieve, and processing reaches a reasoned verdict on whether the current course is delivering. Confirmation communicates the evaluation downstream and the records custodian preserves it for the findings step.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It renders the honest verdict on whether the strategy is working, the judgement the findings and the next adaptation cycle depend on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows evidence assembly, opening at intake of the outcome dossier and closing when the evaluation is confirmed and preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Strategy function reviewers weigh the dossier line by line against the strategy's promises, agree a verdict in a structured session, and the confirmation custodian releases the evaluation to the findings team.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Evaluate Strategy Effectiveness |
+| `plain_language_description` | string | no | The dossier is assembled; now comes the judgement. Intake registers the outcome picture, scrutiny weighs each line … |
+| `business_purpose` | string | no | It renders the honest verdict on whether the strategy is working, the judgement the findings and the next adaptation … |
+| `practical_context` | string | no | It follows evidence assembly, opening at intake of the outcome dossier and closing when the evaluation is confirmed and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

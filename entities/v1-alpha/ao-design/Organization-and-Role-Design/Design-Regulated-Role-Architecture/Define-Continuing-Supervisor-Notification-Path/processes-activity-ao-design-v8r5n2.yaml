@@ -136,3 +136,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-design-2fkvhx through concluding task processes:task-ao-design-record-tq7syq, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Define the Continuing-Supervisor Notification Path'
+plain_language_description: 'This activity designs, for each licensed role in the catalogue, exactly how its ongoing supervisor will be kept informed. The regulator-tied entries and the supervision matrix are taken in, and the work fixes who the supervisor is, how often notices go out, what those notices contain, and how escalations run when something needs attention. The defined path is confirmed and filed so activation later simply issues the notifications this design already settled.'
+business_purpose: 'It exists so supervision arrangements are designed into each licensed role before anyone occupies it, ready for activation to trigger.'
+practical_context: 'It runs during regulated role architecture design, once the catalogue entries and the supervision matrix are presented, and it completes when the defined path is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A designer for the organization design authority pairs each licensed role with its ongoing supervisor, sets the cadence and content of the notices and the escalation arrangements, and files the path for activation to use.'

@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-build-4kb2pt through concluding task processes:task-pr-build-record-8fd24p, whose outcome — Closure case file retained for Build Demand Program Assets under the records retention schedule with cryptographic integrity protection; cryptographic …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Build Demand Program Assets'
+plain_language_description: 'This activity constructs the content, the campaigns, and the program machinery on which the demand engine will run. The committed demand model arrives as the design of what demand to make, the assets are built against it and checked, and the built assets are confirmed onward for the channel wiring. Demand is manufactured from materials prepared here.'
+business_purpose: 'It exists so the demand engine has its fuel — real content, campaigns, and machinery built to the demand model.'
+practical_context: 'It opens the demand generation build once the demand model is committed, and it completes as the built assets are confirmed onward for the channel integration.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function builder constructs the content, campaigns, and program machinery the demand model calls for, and confirms the built assets onward.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-im
 
 This is a **Activity** (level L3), named **Route Findings to Financial Tracks**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Conduct Cost Optimization Review** (`processes:process-fa-improve-emqpgr`). Its canonical ID is `processes:activity-fa-improve-bxqsee`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity sends each finding on to the track that can act on it — the reporting work, the disclosure work, or the control strengthening. The formed findings arrive as the dispatch list, each is routed to its acting track with an owner attached, and the routed findings are confirmed onward for commitment. Nothing the review learned is left without a destination.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every cost finding reaches the financial track equipped to act on it, with an owner who knows it is theirs.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the forming of findings, when the finding set is handed over, and it completes once the routed findings with owners are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance design authority custodian routes each formed finding to the reporting, disclosure, or control-strengthening track that can act on it, attaching an owner to each.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Route Findings to Financial Tracks |
+| `plain_language_description` | string | no | This activity sends each finding on to the track that can act on it — the reporting work, the disclosure work, or the … |
+| `business_purpose` | string | no | It exists so every cost finding reaches the financial track equipped to act on it, with an owner who knows it is theirs. |
+| `practical_context` | string | no | It follows the forming of findings, when the finding set is handed over, and it completes once the routed findings with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

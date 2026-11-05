@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-operate-2jnz85 through concluding task processes:task-eo-operate-record-xkptst, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Coordinate Daily Service Operations'
+plain_language_description: 'This activity draws the day''s activity across production, delivery, logistics, platforms, facilities, and buying into one shared operating plan. Current status across the engines arrives at the start of the window, the day''s activity is coordinated and reconciled against it, and the coordinated operation is confirmed onward. Six workstreams, one timetable.'
+business_purpose: 'It exists so the enterprise''s many moving parts run to one daily plan instead of six separate ones.'
+practical_context: 'It opens each operating window, when current status across the engines is gathered, and it completes once the day''s coordinated service operation is confirmed and its plan retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A service operations coordinator takes the morning status from production, delivery, logistics, platforms, facilities, and procurement, and draws the day''s work into one shared operating plan.'

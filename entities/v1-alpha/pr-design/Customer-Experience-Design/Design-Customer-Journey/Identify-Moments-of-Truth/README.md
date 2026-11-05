@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-de
 
 This is a **Activity** (level L3), named **Identify Moments of Truth**, currently **candidate (yellow)**. It is part of the **Customer Experience Design** process context, domain `pr`, lifecycle stage Design. It belongs to **Design Customer Journey** (`processes:process-pr-design-j6fakx`). Its canonical ID is `processes:activity-pr-design-kbkw3v`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity marks the make-or-break points of the journey, where a customer is won for good or lost for good. The mapped stages arrive as the terrain to examine, moments of truth are identified within them and each justified, and the identified set is confirmed onward for the handoff design. Not all journey steps matter equally; this names the ones that do.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the journey's decisive points are known and designed for, not discovered by losing customers.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the stage mapping, once the journey's chapters are drawn, and it completes when the identified moments of truth are confirmed onward for the handoff design.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A customer relationship management designer marks the points in the mapped journey where the relationship is won or lost, justifies each, and confirms the set onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Identify Moments of Truth |
+| `plain_language_description` | string | no | This activity marks the make-or-break points of the journey, where a customer is won for good or lost for good. The … |
+| `business_purpose` | string | no | It exists so the journey's decisive points are known and designed for, not discovered by losing customers. |
+| `practical_context` | string | no | It follows the stage mapping, once the journey's chapters are drawn, and it completes when the identified moments of … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

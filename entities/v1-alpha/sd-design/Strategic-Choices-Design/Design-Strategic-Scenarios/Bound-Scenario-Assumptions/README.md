@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-de
 
 This is a **Activity** (level L3), named **Bound Scenario Assumptions**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Design Strategic Scenarios** (`processes:process-sd-design-uenzna`). Its canonical ID is `processes:activity-sd-design-pw7auq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Options are only as good as the futures they are tested against, so the assumptions come first. The committed options and fresh environment cues arrive at intake, verification tests each candidate assumption for realism, and processing draws the bounded assumption set the options must be tested against. Confirmation hands the set downstream and the records custodian preserves it for scenario drafting.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It fixes the assumed future conditions up front, so the scenarios built on them are honest stress tests rather than wishful stories.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens this process at intake when the committed options and environment cues are presented, closing once the assumption set is confirmed and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function scenario lead works through the committed options against fresh environment cues, agrees the assumption set with the activity owner, and the records custodian preserves the bounded assumptions ahead of the drafting workshop.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set the Scenario Assumptions |
+| `plain_language_description` | string | no | Options are only as good as the futures they are tested against, so the assumptions come first. The committed options … |
+| `business_purpose` | string | no | It fixes the assumed future conditions up front, so the scenarios built on them are honest stress tests rather than … |
+| `practical_context` | string | no | It opens this process at intake when the committed options and environment cues are presented, closing once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

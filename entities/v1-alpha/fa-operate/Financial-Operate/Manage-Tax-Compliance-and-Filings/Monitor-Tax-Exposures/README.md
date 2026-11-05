@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Monitor Tax Exposures**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Manage Tax Compliance and Filings** (`processes:process-fa-operate-8vqvkk`). Its canonical ID is `processes:activity-fa-operate-48s3kx`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity keeps watch on what the enterprise owes in tax in the quiet stretches between filings. Operational changes arrive continuously as potential exposure events, exposures are tracked as they develop, and the monitored picture is confirmed onward for the returns. Tax surprises are caught growing, not arrived.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so tax exposures are seen building between filing cycles rather than surprising the return preparation.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs continuously between filing cycles as exposure events arise, and it completes once the monitored exposures are confirmed onward for the return preparation.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A compliance function analyst watches for operational changes carrying tax consequences between filings, tracks the developing exposure, and confirms the picture for the return preparation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Monitor Tax Exposures |
+| `plain_language_description` | string | no | This activity keeps watch on what the enterprise owes in tax in the quiet stretches between filings. Operational … |
+| `business_purpose` | string | no | It exists so tax exposures are seen building between filing cycles rather than surprising the return preparation. |
+| `practical_context` | string | no | It runs continuously between filing cycles as exposure events arise, and it completes once the monitored exposures are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

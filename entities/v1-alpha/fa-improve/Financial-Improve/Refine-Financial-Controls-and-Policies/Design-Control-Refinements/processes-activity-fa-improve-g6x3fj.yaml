@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-improve-cdtsbq through concluding task processes:task-fa-improve-record-gz5ga4, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design Control Refinements'
+plain_language_description: 'This activity works each analyzed finding into a designed refinement that closes it. The bounded analyses arrive as the case list, refinements are designed against the controls and policies they amend, and the designed set is confirmed onward for commitment. Every named weakness gains a specific strengthening.'
+business_purpose: 'It exists so each analyzed control weakness gains a designed fix before the policy cycle commits it.'
+practical_context: 'It follows the findings analysis, when the bounded needs are handed over, and it completes once the designed refinements are confirmed for commitment.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance design authority designer turns each analyzed finding into a designed refinement of the affected control or policy, and confirms the designed set for commitment.'

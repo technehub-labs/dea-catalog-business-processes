@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 
 This is a **Activity** (level L3), named **Stand Up Service Delivery Mechanism**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. It belongs to **Build Service Capability** (`processes:process-pv-build-p9a2s9`). Its canonical ID is `processes:activity-pv-build-qf7sxu`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity assembles the working machinery that will actually deliver the designed service to customers. The designed proposition arrives as the specification, the delivery mechanism is stood up against it and checked as it assembles, and the stood-up mechanism is confirmed onward for the people work. The promise acquires its production line here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the designed service proposition has a real mechanism able to deliver it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the service capability build when the designed proposition requires operational capability to reach customers, and it completes as the stood-up mechanism is confirmed onward for the personnel work.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management builder assembles the delivery machinery the designed service proposition specifies, checking it as it stands up, and confirms the mechanism onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Stand Up Service Delivery Mechanism |
+| `plain_language_description` | string | no | This activity assembles the working machinery that will actually deliver the designed service to customers. The … |
+| `business_purpose` | string | no | It exists so the designed service proposition has a real mechanism able to deliver it. |
+| `practical_context` | string | no | It opens the service capability build when the designed proposition requires operational capability to reach customers … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

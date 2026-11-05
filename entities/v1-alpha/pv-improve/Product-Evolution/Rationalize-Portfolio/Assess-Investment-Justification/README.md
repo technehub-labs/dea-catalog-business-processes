@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-im
 
 This is a **Activity** (level L3), named **Assess Investment Justification**, currently **candidate (yellow)**. It is part of the **Product Evolution and Portfolio Rationalization** process context, domain `pv`, lifecycle stage Improve. It belongs to **Rationalize Portfolio** (`processes:process-pv-improve-9xvgat`). Its canonical ID is `processes:activity-pv-improve-439c76`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Product management weighs each proposition in the portfolio against the investment envelope it consumes, asking plainly whether the return still warrants the spend. Direction and performance material is registered at intake, verified, worked into a justification assessment for every proposition, confirmed, and archived.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It supplies the honest verdict the rationalization effort needs: which propositions still merit their envelope and which have stopped earning their keep.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It is the opening step of portfolio rationalization, triggered when direction and performance evidence arrive; it closes when the confirmed justification assessments are filed.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* In the rationalization round, a product management reviewer takes the portfolio direction and latest performance evidence, registers them at intake, and works proposition by proposition through the assessment - finding, say, that a mature offering no longer earns its envelope - before confirming the assessments for option forming.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assess Investment Justification |
+| `plain_language_description` | string | no | Product management weighs each proposition in the portfolio against the investment envelope it consumes, asking plainly … |
+| `business_purpose` | string | no | It supplies the honest verdict the rationalization effort needs: which propositions still merit their envelope and … |
+| `practical_context` | string | no | It is the opening step of portfolio rationalization, triggered when direction and performance evidence arrive; it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

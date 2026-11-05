@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-de
 
 This is a **Activity** (level L3), named **Design Assessment Scales**, currently **candidate (yellow)**. It is part of the **Governance System Design** process context, domain `ge`, lifecycle stage Design. It belongs to **Design Risk Framework** (`processes:process-ge-design-pqkvdc`). Its canonical ID is `processes:activity-ge-design-fwc3b2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity builds the measuring sticks — likelihood, impact, and velocity — by which classified risks will be judged. The designed taxonomy arrives with the tolerance bands as the frame, the scales are designed against both and checked for usability, and the scale set is confirmed onward for the governance integration. Risk becomes measurable on designed instruments.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so classified risks are measured on designed, consistent scales rather than on feeling.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the taxonomy design, when the taxonomy and tolerance bands are to hand, and it completes once the assessment scale set is confirmed for the governance integration.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A governance design authority designer builds the likelihood, impact, and velocity scales against the taxonomy and tolerance bands, and confirms the scale set for the integration.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Assessment Scales |
+| `plain_language_description` | string | no | This activity builds the measuring sticks — likelihood, impact, and velocity — by which classified risks will be … |
+| `business_purpose` | string | no | It exists so classified risks are measured on designed, consistent scales rather than on feeling. |
+| `practical_context` | string | no | It follows the taxonomy design, when the taxonomy and tolerance bands are to hand, and it completes once the assessment … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

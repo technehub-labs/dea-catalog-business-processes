@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-conceive-4uqqvg through concluding task processes:task-fa-conceive-record-dna7zg, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Frame Monetary Model'
+plain_language_description: 'This activity settles how money itself will be handled — the currency posture, the measurement conventions, and the basis on which value is recognized. The enterprise strategy and the jurisdictional footprint arrive as the inputs, the monetary model is framed and bounded against them, and the bounded model is confirmed onward for the funding work. The enterprise''s financial language is fixed here.'
+business_purpose: 'It exists so the enterprise decides deliberately how money is represented and measured before any of it moves.'
+practical_context: 'It follows the context assessment, when the enterprise strategy and jurisdictional footprint are to hand, and it completes once the bounded monetary model is confirmed for the funding approach.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance function lead frames the monetary model — currency posture, measurement conventions, value recognition basis — against the enterprise strategy and its jurisdictions, and confirms the bounded model.'

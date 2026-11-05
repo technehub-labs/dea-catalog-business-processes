@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-conceive-e3u8s2 through concluding task processes:task-ao-conceive-record-xemrvs, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Sense the Organization Imperatives'
+plain_language_description: 'This activity picks up the pressures that make the enterprise need a new or reframed workforce direction, such as a shift toward artificial agents in the mix. The enterprise strategy and the signals about shifting substrates are brought in and examined, and the imperatives behind the coming change are drawn out and confirmed with the leadership. Those imperatives then set the agenda for bounding agent capacity.'
+business_purpose: 'It exists so the organization and agent strategy is framed in response to real, named pressures rather than in a vacuum.'
+practical_context: 'It happens when a new agentive fabric is being established, an existing one is being reframed, or a substrate shift calls for board-level realignment, and it closes once the sensed imperatives are confirmed and recorded.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function lead gathers the signals that artificial agents are changing how work gets done, draws out the imperatives the enterprise must respond to, and confirms them with workforce management as the input to bounding agent capacity.'

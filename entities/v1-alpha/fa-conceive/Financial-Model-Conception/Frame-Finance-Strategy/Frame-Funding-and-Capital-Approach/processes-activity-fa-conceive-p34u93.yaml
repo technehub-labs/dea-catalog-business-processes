@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-conceive-4uqqvg through concluding task processes:task-fa-conceive-record-b8wpp7, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Frame Funding and Capital Approach'
+plain_language_description: 'This activity sets where the enterprise''s money will come from and on what capital terms — the sources, the structure, and the posture it will take. The bounded monetary model arrives as the frame, the approach to funding and capital is worked out and reviewed against it, and the framed approach is confirmed onward for the strategy''s commitment. How the enterprise is capitalized is thereby settled in principle.'
+business_purpose: 'It exists so the enterprise commits early to how it will be funded and capitalized, within the bounds its monetary model sets.'
+practical_context: 'It follows the monetary framing, when the bounded model is presented for the funding work, and it completes once the funding and capital approach is confirmed for the strategy''s commitment.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance function lead sets the funding sources, structure, and posture against the bounded monetary model, reviews the approach with the strategy function, and confirms it for commitment.'

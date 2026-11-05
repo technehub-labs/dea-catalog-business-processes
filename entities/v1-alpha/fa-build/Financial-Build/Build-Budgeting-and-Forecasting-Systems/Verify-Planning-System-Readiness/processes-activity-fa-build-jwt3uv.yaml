@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-build-92v24c through concluding task processes:task-fa-build-record-bsbau9, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Verify Planning System Readiness'
+plain_language_description: 'This activity proves the assembled planning toolkit fit for the budget cycle it was built for. The built system comes in with the plan structure and controls as the yardstick, readiness is examined against them, and the readiness determination is confirmed for the operation. The planning cycle is cleared to start only once this says so.'
+business_purpose: 'It exists so operate budgeting begins on systems proven ready, not on a toolkit that merely finished being built.'
+practical_context: 'It closes the planning system build, once models, integrations, and controls are in place, and it completes when the readiness determination is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance function verifier examines the built planning toolkit against the plan structure and controls, and confirms the readiness determination for the budget cycle.'

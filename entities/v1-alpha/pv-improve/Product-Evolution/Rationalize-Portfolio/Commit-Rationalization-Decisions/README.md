@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-im
 
 This is a **Activity** (level L3), named **Commit Rationalization Decisions**, currently **candidate (yellow)**. It is part of the **Product Evolution and Portfolio Rationalization** process context, domain `pv`, lifecycle stage Improve. It belongs to **Rationalize Portfolio** (`processes:process-pv-improve-9xvgat`). Its canonical ID is `processes:activity-pv-improve-qvw5ea`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This is where the portfolio's fate for underperformers is settled: product management takes the assessed options and fixes the chosen retire-or-pivot calls as decisions of record. The option set is registered at intake, checked for completeness, assembled into the committed decision package, confirmed, and archived so the choices bind the next steps.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It converts formed options into binding rationalization decisions, so every failing proposition has an agreed, recorded way forward.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the decide half of rationalization: intake opens when the assessed options are presented and closure comes when the confirmed decisions and their audit trail are preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Faced with three propositions that failed justification, a product management lead registers the options at intake, weighs each against the assessment, commits two pivots and one retirement, confirms the decisions to the transition planners, and has the trail archived.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Rationalization Decisions |
+| `plain_language_description` | string | no | This is where the portfolio's fate for underperformers is settled: product management takes the assessed options and … |
+| `business_purpose` | string | no | It converts formed options into binding rationalization decisions, so every failing proposition has an agreed, recorded … |
+| `practical_context` | string | no | It closes the decide half of rationalization: intake opens when the assessed options are presented and closure comes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

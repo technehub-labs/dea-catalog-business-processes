@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-operate-tpenm6 through concluding task processes:task-ge-operate-record-cpjfsy, whose outcome — Case file retained for Maintain Risk Registers under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Maintain Risk Registers'
+plain_language_description: 'This activity keeps the risk registers alive — current, accurate, and actually used — across the review cycles. Register movements arrive continuously from the operation, entries are maintained as events land, and the living record is confirmed onward for the reviews. A stale register is a fiction; this prevents the fiction.'
+business_purpose: 'It exists so the enterprise''s risk registers stay a living record rather than a museum piece.'
+practical_context: 'It runs continuously across the review cycles as register events land, and each maintained update closes when it is confirmed onward for the reviews.'
+worked_example:
+  agent_type: human
+  narrative: 'A risk function custodian posts each register movement as it lands — new risks, changed scores, closed entries — keeping the record living across the cycles.'

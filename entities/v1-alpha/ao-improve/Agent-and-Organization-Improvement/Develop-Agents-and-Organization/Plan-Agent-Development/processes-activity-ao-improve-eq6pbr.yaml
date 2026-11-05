@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-improve-xfh8na through concluding task processes:task-ao-improve-record-kjdhnm, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Plan Agent Development'
+plain_language_description: 'This activity works out, driver by driver, what development actions will be taken, spanning the population of agents and the organization itself. The gathered drivers come in first, actions are matched to each one and arranged into a plan, and the plan is confirmed with the design authority. It ends with a complete development plan ready to be executed, treating people and artificial agents alike.'
+business_purpose: 'It exists so improvement is planned deliberately against named drivers rather than improvised as ad hoc initiatives.'
+practical_context: 'It follows the gathering of development drivers, when the consolidated case is presented for planning, and it completes once the development plan is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian matches a development action to each gathered driver, arranges them into one plan covering people and artificial agents alike, and confirms the plan with the design authority.'

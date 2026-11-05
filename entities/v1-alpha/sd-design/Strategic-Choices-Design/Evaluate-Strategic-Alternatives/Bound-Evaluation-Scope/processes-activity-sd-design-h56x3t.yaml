@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-design-ed7jd5 through concluding task processes:task-sd-design-record-tpsab2, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Set the Evaluation Scope'
+plain_language_description: 'Before options are compared, the contest rules are fixed. The committed option designs and their criteria arrive at intake, verification confirms both are usable, and processing marks which comparisons will be run — which options, measured against which yardsticks, over what horizon. Confirmation passes the marked scope downstream and the records custodian preserves it for the comparison itself.'
+business_purpose: 'It keeps the comparison focused and fair by fixing in advance which alternatives are judged and by which measures.'
+practical_context: 'It opens this process at intake when the committed option designs and criteria are presented, closing once the scope lines are confirmed and stored.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function analyst agrees with the activity owner which option pairs the evaluation will cover and which criteria apply, a verification custodian confirms the inputs are current, and the records custodian preserves the marked scope ahead of the comparison.'

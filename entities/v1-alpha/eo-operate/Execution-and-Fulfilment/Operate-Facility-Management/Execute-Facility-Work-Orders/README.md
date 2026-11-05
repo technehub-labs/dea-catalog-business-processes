@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Execute Facility Work Orders**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Facility Management** (`processes:process-eo-operate-rqdte5`). Its canonical ID is `processes:activity-eo-operate-q3sw3q`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity carries each issued work order — planned or urgent — through to done. The work-order book arrives as the worklist, crews and contractors perform the jobs with the parts laid on, and the completed work is confirmed for the record. The buildings get fixed by work order, not by hallway requests.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the facility work that has been scheduled is genuinely performed to completion.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs against the work-order book as jobs are issued, and it closes when each completed order is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A facilities crew works through the issued orders with the contractors and parts laid on, closes each job out fully, and confirms the completed work for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Execute Facility Work Orders |
+| `plain_language_description` | string | no | This activity carries each issued work order — planned or urgent — through to done. The work-order book arrives as the … |
+| `business_purpose` | string | no | It exists so the facility work that has been scheduled is genuinely performed to completion. |
+| `practical_context` | string | no | It runs against the work-order book as jobs are issued, and it closes when each completed order is confirmed and its … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

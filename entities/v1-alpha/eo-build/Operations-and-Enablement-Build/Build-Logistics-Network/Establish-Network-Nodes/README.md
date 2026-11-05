@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-bu
 
 This is a **Activity** (level L3), named **Establish Network Nodes**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Build Logistics Network** (`processes:process-eo-build-ba6ykz`). Its canonical ID is `processes:activity-eo-build-8x4ajc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity stands up the physical points of the logistics network — warehouses, hubs, and cross-docks — where the design places them. The node position plan arrives as the guide, each site is established in line with it and checked against it, and the established nodes are confirmed onward. The map stops being a drawing and starts being places that exist.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the network's physical points exist where the design put them, ready to carry flows.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the logistics network build, once the node position plan is settled, and it completes as the established nodes are confirmed for capacity provisioning.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian stands up each warehouse, hub, and cross-dock at its planned position, checks the sites against the node position plan, and confirms the established nodes.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Establish Network Nodes |
+| `plain_language_description` | string | no | This activity stands up the physical points of the logistics network — warehouses, hubs, and cross-docks — where the … |
+| `business_purpose` | string | no | It exists so the network's physical points exist where the design put them, ready to carry flows. |
+| `practical_context` | string | no | It opens the logistics network build, once the node position plan is settled, and it completes as the established nodes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

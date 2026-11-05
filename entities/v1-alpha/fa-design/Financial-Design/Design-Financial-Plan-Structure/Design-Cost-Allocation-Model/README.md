@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-de
 
 This is a **Activity** (level L3), named **Design Cost Allocation Model**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Design Financial Plan Structure** (`processes:process-fa-design-vk422z`). Its canonical ID is `processes:activity-fa-design-xzbfxx`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity works out the rules by which costs are spread across the parts of the enterprise that bear them. The account structure arrives as the frame, the allocation model is designed and checked against it, and the model is confirmed onward for the controls work. Every cost gains a designed destination rather than a dispute.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so costs land where they belong by designed rule, not by negotiation each period.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the account structure design, when the chart is to hand, and it completes once the cost allocation model is confirmed for the embedded controls.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance design authority designer works out the rules spreading costs to the parts of the enterprise that bear them, checks the model against the account structure, and confirms it.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Cost Allocation Model |
+| `plain_language_description` | string | no | This activity works out the rules by which costs are spread across the parts of the enterprise that bear them. The … |
+| `business_purpose` | string | no | It exists so costs land where they belong by designed rule, not by negotiation each period. |
+| `practical_context` | string | no | It follows the account structure design, when the chart is to hand, and it completes once the cost allocation model is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

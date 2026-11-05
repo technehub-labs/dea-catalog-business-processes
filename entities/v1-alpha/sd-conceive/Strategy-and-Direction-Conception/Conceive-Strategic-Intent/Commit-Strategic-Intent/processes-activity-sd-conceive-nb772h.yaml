@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-conceive-3uredz through concluding task processes:task-sd-conceive-record-f7yjgj, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit Strategic Intent'
+plain_language_description: 'The intent has been sensed, framed and stress-tested, so it can now be made official. Intake registers the framed narrative and the mapped trade-offs, a last verification confirms both are complete, and the commitment locks the intent in for the strategy development that follows. Confirmation notifies downstream consumers and the records custodian preserves the committed intent on the audit trail.'
+business_purpose: 'It gives direction-setting its anchor decision, closing intent conception and feeding a settled intent into strategy development.'
+practical_context: 'It opens once framing and trade-off scoping are done and closes with the commitment confirmed, consumers notified and evidence archived.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function lead confirms the intent and its trade-off map, the confirmation custodian tells the corporate strategy team their input is ready, and the records custodian files the committed intent for the development cycle.'

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-design-zbrg8b through concluding task processes:task-ge-design-record-ggewuh, whose outcome — Case file retained for Specify Decision Rights under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Specify Decision Rights'
+plain_language_description: 'This activity settles who gets to decide what, and with whose consultation, under the delegations just designed. The delegation design arrives as the frame, decision rights are specified body by body and role by role, and the specification is confirmed onward for the system''s commitment. Every consequential question gains a named owner.'
+business_purpose: 'It exists so every decision the governance system exists to make has a designed, named owner.'
+practical_context: 'It follows the delegation design, when the flows of authority are in hand, and it completes once the decision rights specification is confirmed for the system''s commitment.'
+worked_example:
+  agent_type: human
+  narrative: 'A governance design authority designer settles who decides what, and with whose consultation, under the designed delegations, and confirms the specification for commitment.'

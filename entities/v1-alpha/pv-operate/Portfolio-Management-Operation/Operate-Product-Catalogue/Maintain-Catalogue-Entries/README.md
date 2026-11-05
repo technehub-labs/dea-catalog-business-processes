@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-op
 
 This is a **Activity** (level L3), named **Maintain Catalogue Entries**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Operate Product Catalogue** (`processes:process-pv-operate-zyguzp`). Its canonical ID is `processes:activity-pv-operate-5yty8e`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The entries describing each live offering are kept up to date here, refreshed from the variant baselines and lifecycle states as things change. Updates arrive at intake, are verified, applied to the entries, confirmed, and archived, so the catalogue always mirrors what is actually on offer.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It keeps the catalogue's descriptions true to the offerings actually in operation, so downstream publishing and customer-facing channels describe reality.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs alongside steady-state catalogue work: intake opens as baselines or lifecycle states change, and closure comes when the updated entries and their audit trail are confirmed and filed.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* When a variant reaches a new lifecycle state, a product management catalogue administrator registers the change at intake, verifies it against the baseline, rewrites the entry at processing, confirms the corrected listing, and the trail is filed for audit.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Maintain Catalogue Entries |
+| `plain_language_description` | string | no | The entries describing each live offering are kept up to date here, refreshed from the variant baselines and lifecycle … |
+| `business_purpose` | string | no | It keeps the catalogue's descriptions true to the offerings actually in operation, so downstream publishing and … |
+| `practical_context` | string | no | It runs alongside steady-state catalogue work: intake opens as baselines or lifecycle states change, and closure comes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-im
 
 This is a **Activity** (level L3), named **Analyze Evolution Drivers**, currently **candidate (yellow)**. It is part of the **Product Evolution and Portfolio Rationalization** process context, domain `pv`, lifecycle stage Improve. It belongs to **Evolve Products and Services** (`processes:process-pv-improve-6c2xvf`). Its canonical ID is `processes:activity-pv-improve-mdkm5n`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Product management studies what outside forces are pushing the offerings to change - market feedback, moves by competitors, and shifts in technology - and states what each means for evolution. Incoming intelligence is registered at intake, checked for credibility, analysed into a driver picture, confirmed with those who will design the response, and archived.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives the evolution effort a reasoned account of why change is needed, so enhancements answer real pressures rather than hunches.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the evolution sequence: work begins when market feedback and related intelligence arrive for intake and ends when the confirmed driver analysis and its audit record are filed.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Following a slump in one product line's reception, product management logs the market feedback at intake, tests the supporting intelligence at verification, works out that a competitor's new release and a technology shift are the real drivers, and confirms the analysis to the enhancement designers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Analyze Evolution Drivers |
+| `plain_language_description` | string | no | Product management studies what outside forces are pushing the offerings to change - market feedback, moves by … |
+| `business_purpose` | string | no | It gives the evolution effort a reasoned account of why change is needed, so enhancements answer real pressures rather … |
+| `practical_context` | string | no | It opens the evolution sequence: work begins when market feedback and related intelligence arrive for intake and ends … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

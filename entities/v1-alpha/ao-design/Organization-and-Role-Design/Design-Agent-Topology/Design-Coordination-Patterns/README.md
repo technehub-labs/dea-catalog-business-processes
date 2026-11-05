@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 
 This is a **Activity** (level L3), named **Design Coordination Patterns**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Design Agent Topology** (`processes:process-ao-design-8fzp2b`). Its canonical ID is `processes:activity-ao-design-j98gk4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity works out how the placed people, artificial agents, and hybrid arrangements will work together in practice. The decided placements come in first, the handoffs and collaboration patterns between them are designed and reviewed, and the patterns are confirmed with the design authority. They are then recorded so the committed topology shows not just who sits where, but how they connect.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the placed agents do not merely coexist but interact through deliberate, designed patterns.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once substrate placements have been decided, when the placements are presented for coordination work, and it closes when the designed patterns are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A designer for the organization design authority sketches how a human reviewer and an artificial drafting agent will hand work to each other, confirms the pattern with the wider design team, and files it alongside the placement decisions.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design the Coordination Patterns |
+| `plain_language_description` | string | no | This activity works out how the placed people, artificial agents, and hybrid arrangements will work together in … |
+| `business_purpose` | string | no | It exists so the placed agents do not merely coexist but interact through deliberate, designed patterns. |
+| `practical_context` | string | no | It runs once substrate placements have been decided, when the placements are presented for coordination work, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-design-9ckwf6 through concluding task processes:task-pv-design-record-87m5m6, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Bound Experiment Timebox'
+plain_language_description: 'This activity fences the experiment in time and resources, so it cannot quietly become a project. The defined criteria arrive as the measurement window''s purpose, the timebox and resource envelope are drawn within the experimentation boundaries and checked for sufficiency, and the bounded frame is confirmed onward for the design''s commitment. Truth has a deadline here.'
+business_purpose: 'It exists so the experiment ends on schedule with its answer, inside agreed resource limits.'
+practical_context: 'It follows the success criteria, drawn within the thesis''s experimentation boundaries, and it completes once the bounded timebox and resource envelope are confirmed for the design''s commitment.'
+worked_example:
+  agent_type: human
+  narrative: 'A product management designer draws the experiment''s deadline and resource envelope within the thesis''s boundaries, checks the window suffices, and confirms the timebox onward.'

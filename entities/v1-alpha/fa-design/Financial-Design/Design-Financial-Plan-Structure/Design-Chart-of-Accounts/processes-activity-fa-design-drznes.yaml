@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-design-vk422z through concluding task processes:task-fa-design-record-qbmdnb, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design Chart of Accounts'
+plain_language_description: 'This activity draws up the account structure that will organize every entry in the enterprise''s books. The framed finance strategy arrives as the source, the chart of accounts is designed from it and reviewed for completeness, and the account design is confirmed onward for the allocation work. Every future transaction gains a place to live.'
+business_purpose: 'It exists so the enterprise''s financial record is organized from the start by a deliberately designed account structure.'
+practical_context: 'It opens the financial plan structure design, when the framed finance strategy is presented, and it completes once the chart of accounts design is confirmed for the allocation model.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance design authority designer draws the account structure from the framed finance strategy, reviews it for completeness, and confirms the chart design for the allocation model.'

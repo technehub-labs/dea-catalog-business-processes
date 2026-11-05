@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-design-7dkbur through concluding task processes:task-ao-design-record-jyk53v, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Review the Structure against the Framed Model'
+plain_language_description: 'This activity checks the drafted structure, authority detail included, against the ground rules the framed model established. The bounded chains come in as the last input, every feature of the draft is examined against the model''s structural principles, its span limits, and its coordination boundaries, and any departures are recorded for correction. The work ends with a reviewed design ready to be committed.'
+business_purpose: 'It exists so the enterprise commits a structure proven to respect the structural principles it already agreed, not one that quietly departs from them.'
+practical_context: 'It follows the setting of authority chains, before the structure design is committed, and it completes once the review outcome is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian tests the drafted structure feature by feature against the model''s principles and spans, records each departure for the design authority to correct, and issues the reviewed design for commitment.'

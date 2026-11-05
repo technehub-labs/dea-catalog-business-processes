@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 
 This is a **Activity** (level L3), named **Document Variant Baseline**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. It belongs to **Develop Product Variants** (`processes:process-pv-build-say8tb`). Its canonical ID is `processes:activity-pv-build-d86xd9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity writes down exactly what each conforming variant is — its make-up, its configuration, its known condition — pinning the reference every later change will be measured against. The conforming variants arrive as the artefacts to be pinned, baselines are documented variant by variant, and the documented baselines are confirmed onward for staging. From here, change means something.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every variant has a documented reference state for its whole lifecycle.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the conformance verification, once the conforming set is proven, and it completes when the documented variant baselines are confirmed onward for staging.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A records custodian pins down each conforming variant's composition and configuration as its documented baseline, and confirms the baselines onward for staging.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Document Variant Baseline |
+| `plain_language_description` | string | no | This activity writes down exactly what each conforming variant is — its make-up, its configuration, its known condition … |
+| `business_purpose` | string | no | It exists so every variant has a documented reference state for its whole lifecycle. |
+| `practical_context` | string | no | It follows the conformance verification, once the conforming set is proven, and it completes when the documented … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

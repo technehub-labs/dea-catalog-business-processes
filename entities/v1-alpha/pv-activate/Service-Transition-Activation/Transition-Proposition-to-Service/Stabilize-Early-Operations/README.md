@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-ac
 
 This is a **Activity** (level L3), named **Stabilize Early Operations**, currently **candidate (yellow)**. It is part of the **Proposition Launch and Service Transition** process context, domain `pv`, lifecycle stage Activate. It belongs to **Transition Proposition to Service** (`processes:process-pv-activate-5686v7`). Its canonical ID is `processes:activity-pv-activate-f29a5n`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity babysits the newly live service through its earliest, most fragile days, watching closely and fixing quickly. The executed cutover arrives as the newborn to watch, monitoring runs tightly and issues are resolved as they surface, and the stabilised service is confirmed onward for acceptance. Most launch failures are caught and killed in this window.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the service's early wobbles are caught and settled before they become outages.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs through the transition period after the cutover, watching and resolving until the service is genuinely relied upon, and it completes when the stabilised service is confirmed onward for acceptance.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management officer keeps tight watch over the newly live service, resolving each issue as it surfaces in the early days, until operation is steady enough for acceptance.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Stabilize Early Operations |
+| `plain_language_description` | string | no | This activity babysits the newly live service through its earliest, most fragile days, watching closely and fixing … |
+| `business_purpose` | string | no | It exists so the service's early wobbles are caught and settled before they become outages. |
+| `practical_context` | string | no | It runs through the transition period after the cutover, watching and resolving until the service is genuinely relied … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

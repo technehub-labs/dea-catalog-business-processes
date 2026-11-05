@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-improve-g3ngp3 through concluding task processes:task-eo-improve-record-qe8yun, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Form Review Findings'
+plain_language_description: 'This activity turns the assembled evidence into bounded conclusions about what the performance actually shows. The evidence pack arrives as the material, findings are formed and each is kept within what the evidence supports, and the finding set is confirmed onward for routing. The review speaks only as loudly as its evidence allows.'
+business_purpose: 'It exists so the review''s conclusions are bounded by evidence, strong enough to act on and disciplined enough to defend.'
+practical_context: 'It follows the evidence assembly, when the pack is presented for reading, and it completes once the finding set is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian reads the evidence pack and forms bounded findings on logistics, asset usage, and platform performance, each held to what the evidence shows, and confirms the set for routing.'

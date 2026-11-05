@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-de
 
 This is a **Activity** (level L3), named **Commit Objectives and Targets**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Design Objectives and Targets** (`processes:process-sd-design-vdwkmh`). Its canonical ID is `processes:activity-sd-design-ec5thr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Objectives are drafted and owned; this closing step makes them official. Intake registers the owned set, a last verification confirms measures and owners are all in place, and the commitment locks the objectives and targets for the plan build to consume. Confirmation notifies downstream consumers and the records custodian preserves the committed set at its retention tier.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It completes the process by committing a steerable set of owned measures, the input the strategic plan build depends on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once ownership is assigned and closes with the commitment confirmed, downstream consumers notified and the evidence archived.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function lead commits the owned objective set, the confirmation custodian notifies plan-build colleagues that the committed measures are available, and the records custodian archives the commitment evidence so later reviews can retrieve it.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Objectives and Targets |
+| `plain_language_description` | string | no | Objectives are drafted and owned; this closing step makes them official. Intake registers the owned set, a last … |
+| `business_purpose` | string | no | It completes the process by committing a steerable set of owned measures, the input the strategic plan build depends on. |
+| `practical_context` | string | no | It opens once ownership is assigned and closes with the commitment confirmed, downstream consumers notified and the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

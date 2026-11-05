@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-improve-us272s through concluding task processes:task-eo-improve-record-dedz4k, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Deliver Improvement Projects'
+plain_language_description: 'This activity carries each chosen improvement project through its structured method from charter to realized gain. The selected portfolio arrives as the worklist, projects are run phase by phase and their progress checked against the method, and the delivered projects are confirmed onward for sustainment. Problems are fixed by discipline, not heroics.'
+business_purpose: 'It exists so the programme''s selected projects are actually delivered, each to the structured method rather than to improvisation.'
+practical_context: 'It follows the project selection, when the bounded portfolio is presented for delivery, and it completes as each delivered project is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function project lead runs each selected project through the method''s phases, checks progress at every gate, and confirms the delivered projects for the sustainment step.'

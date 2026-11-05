@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-operate-wkqaqp through concluding task processes:task-fa-operate-record-ffevdf, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Maintain Payables Record'
+plain_language_description: 'This activity keeps a running statement of what the enterprise owes its suppliers at any moment. Matched invoices, approvals, and executed payments arrive as the inputs, the payables record is updated as each lands, and the current record is confirmed onward. The enterprise''s supplier debts are always knowable to the penny.'
+business_purpose: 'It exists so the enterprise''s obligations to suppliers are always knowable from a maintained record.'
+practical_context: 'It runs continuously as invoices, approvals, and payments land, and each update closes when the current payables record is confirmed and retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A payables custodian posts each matched invoice, approval, and executed payment to the payables record, keeping the supplier position current, and confirms the record onward.'

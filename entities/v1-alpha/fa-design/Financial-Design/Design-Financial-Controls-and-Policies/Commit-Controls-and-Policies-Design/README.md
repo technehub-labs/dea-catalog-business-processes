@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-de
 
 This is a **Activity** (level L3), named **Commit Controls and Policies Design**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Design Financial Controls and Policies** (`processes:process-fa-design-uun4ja`). Its canonical ID is `processes:activity-fa-design-k8ucbk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the gap analysis, the objectives, and the policies together into one design and gives it formal standing, ready for the controls to be implemented. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed design is confirmed onward. Financial control stops being analysis and becomes instruction.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so control implementation starts from one committed design spanning gaps, objectives, and policies.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the controls and policies design, once analysis, objectives, and policies are in hand, and it completes when the committed design is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian assembles the gap analysis, objectives, and policies into the design document, obtains ratification, and records the committed design for control implementation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Controls and Policies Design |
+| `plain_language_description` | string | no | This activity draws the gap analysis, the objectives, and the policies together into one design and gives it formal … |
+| `business_purpose` | string | no | It exists so control implementation starts from one committed design spanning gaps, objectives, and policies. |
+| `practical_context` | string | no | It closes the controls and policies design, once analysis, objectives, and policies are in hand, and it completes when … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

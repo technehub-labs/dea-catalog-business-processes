@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-design-8s76nv through concluding task processes:task-eo-design-record-6ts884, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Select Transport Modes'
+plain_language_description: 'This activity picks the ways goods will move — road, rail, sea, air, or a mix — and records why each choice was made. The delivery model design and the geography of demand arrive as the basis, modes are weighed and selected, and the selection with its rationale is confirmed onward for the node positioning. How freight travels is thereby settled in principle.'
+business_purpose: 'It exists so the movement of goods rests on transport modes chosen deliberately against the delivery model and geography.'
+practical_context: 'It opens the logistics and routing design, once the delivery model design and demand geography are to hand, and it completes when the mode selection is confirmed and retained with its rationale.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function designer weighs road, rail, sea, and air options against the delivery model and demand geography, picks the mode mix, and records the rationale with the selection.'

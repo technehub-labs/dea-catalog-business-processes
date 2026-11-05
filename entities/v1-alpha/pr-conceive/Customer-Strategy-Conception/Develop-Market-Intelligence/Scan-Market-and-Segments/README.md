@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-co
 
 This is a **Activity** (level L3), named **Scan Market and Segments**, currently **candidate (yellow)**. It is part of the **Customer Strategy Conception** process context, domain `pr`, lifecycle stage Conceive. It belongs to **Develop Market Intelligence** (`processes:process-pr-conceive-tvst8u`). Its canonical ID is `processes:activity-pr-conceive-h7aqez`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity sweeps the market methodically for its structure, its segments, and the signals of demand within them. The intelligence need arrives from a market entry, a segment drift, or a hypothesis to test, the scan is executed systematically and its finds gathered, and the scanned signals are confirmed onward for the hypothesis work. The enterprise looks before it leaps.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so customer strategy rests on systematically gathered market fact, not on folklore.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the market intelligence work when a market entry, segment drift, or demand hypothesis needs testing before strategy commitment, and it completes as the scanned signals are confirmed onward.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A customer relationship management analyst sweeps the market for its structure, segments, and demand signals, gathers the finds systematically, and confirms the scan onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Scan Market and Segments |
+| `plain_language_description` | string | no | This activity sweeps the market methodically for its structure, its segments, and the signals of demand within them … |
+| `business_purpose` | string | no | It exists so customer strategy rests on systematically gathered market fact, not on folklore. |
+| `practical_context` | string | no | It opens the market intelligence work when a market entry, segment drift, or demand hypothesis needs testing before … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

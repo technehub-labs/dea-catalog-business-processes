@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-operate-en8rdz through concluding task processes:task-pv-operate-record-96g28m, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Maintain Portfolio Record'
+plain_language_description: 'This is the bookkeeping backbone of portfolio management: every rebalancing action and lifecycle transition is folded in so the record always shows the propositions, their envelopes, and how allocation currently stands. Changes arrive at intake, are checked, applied to the record, confirmed, and the update trail is archived.'
+business_purpose: 'It keeps the portfolio record trustworthy and current, so monitoring, rebalancing, and reporting all reason from one reliable account.'
+practical_context: 'It runs continuously through steady-state operation: intake opens whenever a rebalancing action or transition lands, and closure comes each time the updated record and its audit trail are confirmed and filed.'
+worked_example:
+  agent_type: human
+  narrative: 'When a rebalancing decision shifts investment between two propositions, the product management record keeper registers the action at intake, applies it to the portfolio account at processing, confirms the refreshed view to the team, and files the change trail for later audit.'

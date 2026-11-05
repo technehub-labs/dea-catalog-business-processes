@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-operate-4njp7b through concluding task processes:task-eo-operate-record-gnc9jw, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Respond to Platform Incidents'
+plain_language_description: 'This activity takes each platform incident as it surfaces — sizing it up, working a way around it where possible, and restoring service — then writes it up against its window. Detected deviations arrive as the triggers, incidents are triaged and worked to restoration, and each is recorded. Platform trouble gets a practiced response, not a panic.'
+business_purpose: 'It exists so platform incidents are restored quickly and leave an honest record behind them.'
+practical_context: 'It runs whenever monitoring or users surface a platform incident, from triage to restored service, and it completes once the incident is recorded against its service window.'
+worked_example:
+  agent_type: human
+  narrative: 'A platform custodian triages the surfaced incident, works a workaround and restores service, then writes the incident up against its window for the record.'

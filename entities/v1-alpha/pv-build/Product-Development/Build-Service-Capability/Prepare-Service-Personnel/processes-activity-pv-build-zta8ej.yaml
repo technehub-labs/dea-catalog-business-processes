@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-build-p9a2s9 through concluding task processes:task-pv-build-record-9uqvkx, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Prepare Service Personnel'
+plain_language_description: 'This activity readies the people who will operate the freshly stood-up delivery mechanism. The stood-up machinery arrives as the thing to be manned, personnel are prepared — trained, briefed, practised — against it, and the prepared team is confirmed onward for the integration. The best mechanism in the world is inert without people who can run it.'
+business_purpose: 'It exists so the service delivery mechanism has trained people ready to operate it.'
+practical_context: 'It follows the mechanism stand-up, once the machinery is assembled, and it completes when the prepared personnel are confirmed onward for the delivery model integration.'
+worked_example:
+  agent_type: human
+  narrative: 'A product management lead trains and briefs the team who will run the stood-up delivery mechanism, practising them against it, and confirms the prepared personnel onward.'

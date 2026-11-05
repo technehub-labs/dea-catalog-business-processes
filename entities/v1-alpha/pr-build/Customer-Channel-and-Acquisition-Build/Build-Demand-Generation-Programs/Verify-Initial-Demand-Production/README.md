@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-bu
 
 This is a **Activity** (level L3), named **Verify Initial Demand Production**, currently **candidate (yellow)**. It is part of the **Customer Channel and Acquisition Build** process context, domain `pr`, lifecycle stage Build. It belongs to **Build Demand Generation Programs** (`processes:process-pr-build-4kb2pt`). Its canonical ID is `processes:activity-pr-build-ppw8cp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity proves the calibrated engine produces demand consistent with what the committed demand model predicted. The tuned engine arrives with the model as its yardstick, initial production is examined against it, and the determination is confirmed for operation. The demand machine is warranted only once its output matches the plan.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so steady-state demand generation starts on an engine proven to produce as the model predicted.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the demand generation build once the engine is calibrated, and it completes when the initial demand production is confirmed against the committed model and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A customer relationship management verifier checks the engine's initial demand against what the committed model predicted, and confirms the production determination for operation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Verify Initial Demand Production |
+| `plain_language_description` | string | no | This activity proves the calibrated engine produces demand consistent with what the committed demand model predicted … |
+| `business_purpose` | string | no | It exists so steady-state demand generation starts on an engine proven to produce as the model predicted. |
+| `practical_context` | string | no | It closes the demand generation build once the engine is calibrated, and it completes when the initial demand … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

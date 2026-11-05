@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-im
 
 This is a **Activity** (level L3), named **Design Bounded Enhancements**, currently **candidate (yellow)**. It is part of the **Product Evolution and Portfolio Rationalization** process context, domain `pv`, lifecycle stage Improve. It belongs to **Evolve Products and Services** (`processes:process-pv-improve-6c2xvf`). Its canonical ID is `processes:activity-pv-improve-t7vbjt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the driver analysis in hand, product management sketches changes that answer those drivers while staying deliberately small in scope. The analysis arrives at intake, is verified as a usable baseline, and each candidate change is worked into a design; confirmation releases the designs toward commitment and the trail is archived.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It shapes the response to evolution drivers into enhancements that are ambitious enough to matter but contained enough to deliver, feeding the commitment step.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs between driver analysis and commitment in the evolution sequence, opening when the analysis is presented and closing when confirmed enhancement designs are filed.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management designer takes the confirmed driver analysis, registers it at intake, drafts a modest redesign of the affected service element rather than a wholesale rebuild, has the design checked at verification, and passes the confirmed set toward the commitment step.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Bounded Enhancements |
+| `plain_language_description` | string | no | With the driver analysis in hand, product management sketches changes that answer those drivers while staying … |
+| `business_purpose` | string | no | It shapes the response to evolution drivers into enhancements that are ambitious enough to matter but contained enough … |
+| `practical_context` | string | no | It runs between driver analysis and commitment in the evolution sequence, opening when the analysis is presented and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

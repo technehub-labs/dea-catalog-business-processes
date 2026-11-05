@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-co
 
 This is a **Activity** (level L3), named **Bound Horizon Timeframes**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Frame Strategic Horizons** (`processes:process-sd-conceive-xa4h2k`). Its canonical ID is `processes:activity-sd-conceive-qayekb`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Intent needs a calendar to live on. The conceived intent and the rhythms of the environment come in at intake, verification tests the proposed windows against both, and processing draws the timeframes — the defined periods planning will run across. Confirmation releases the bounded windows downstream and the records custodian preserves them for milestone anchoring.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It puts agreed date windows around the intent, giving the planning cycle the fixed periods its horizons need.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens this process at intake when the conceived intent and the environment cycles are presented, closing once the timeframes are confirmed and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function planner proposes planning windows against the conceived intent and the known environment cycles, a verification custodian checks the span is realistic, and the confirmation custodian passes the agreed periods to the milestone team.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set the Horizon Timeframes |
+| `plain_language_description` | string | no | Intent needs a calendar to live on. The conceived intent and the rhythms of the environment come in at intake … |
+| `business_purpose` | string | no | It puts agreed date windows around the intent, giving the planning cycle the fixed periods its horizons need. |
+| `practical_context` | string | no | It opens this process at intake when the conceived intent and the environment cycles are presented, closing once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

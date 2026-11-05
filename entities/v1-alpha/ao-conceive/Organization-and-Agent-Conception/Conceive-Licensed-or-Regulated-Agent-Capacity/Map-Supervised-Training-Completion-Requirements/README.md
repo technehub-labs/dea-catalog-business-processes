@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 
 This is a **Activity** (level L3), named **Map Supervised-Training Completion Requirements**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Conceive Licensed or Regulated Agent Capacity** (`processes:process-ao-conceive-pnrhem`). Its canonical ID is `processes:activity-ao-conceive-fmxtqr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity works out in advance what supervised training each planned licensed role will require and how its completion will be evidenced and recorded. The licensing taxonomy and the training matrix come in, the training plan and the evidence class for each role are mapped, and the mapped requirements are confirmed and retained. Later mobilization steps then know precisely what training evidence to look for.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so supervised-training expectations for licensed roles are mapped before recruitment, giving activation a clear standard to check against.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It occurs while licensed capacity is being conceived, when the regulator licensing taxonomy and the training matrix are presented, and it closes once the mapped requirements are confirmed and their record preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management planner maps the supervised-training plan and the completion evidence required for a type-rating role, agrees the recording path for the completion evidence, and files the mapped requirements for use at activation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -65,6 +65,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Map Supervised-Training Completion Requirements |
+| `plain_language_description` | string | no | This activity works out in advance what supervised training each planned licensed role will require and how its … |
+| `business_purpose` | string | no | It exists so supervised-training expectations for licensed roles are mapped before recruitment, giving activation a … |
+| `practical_context` | string | no | It occurs while licensed capacity is being conceived, when the regulator licensing taxonomy and the training matrix are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

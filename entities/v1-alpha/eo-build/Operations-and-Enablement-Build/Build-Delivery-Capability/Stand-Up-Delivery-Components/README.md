@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-bu
 
 This is a **Activity** (level L3), named **Stand Up Delivery Components**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Build Delivery Capability** (`processes:process-eo-build-j9z3q4`). Its canonical ID is `processes:activity-eo-build-tq634n`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity drives the parallel stand-up of the component builds — production, logistics, technology, and facilities — that the operations model calls for. The committed model design arrives as the reference, each component's stand-up is coordinated against it and checked as it proceeds, and the stood-up components are confirmed onward. The separate builds advance in step rather than drifting apart.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the four component builds are stood up in a coordinated way that answers to the operations model, not as disconnected projects.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the delivery capability build, once the committed operations model design is to hand, and it completes as the stood-up components are confirmed for integration.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management lead keeps the four component builds moving against the committed model design, checks each stand-up as it completes, and confirms the set of stood-up components for integration.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Stand Up Delivery Components |
+| `plain_language_description` | string | no | This activity drives the parallel stand-up of the component builds — production, logistics, technology, and facilities … |
+| `business_purpose` | string | no | It exists so the four component builds are stood up in a coordinated way that answers to the operations model, not as … |
+| `practical_context` | string | no | It opens the delivery capability build, once the committed operations model design is to hand, and it completes as the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

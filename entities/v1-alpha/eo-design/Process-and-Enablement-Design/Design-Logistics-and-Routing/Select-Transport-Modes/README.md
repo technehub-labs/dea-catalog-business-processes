@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-de
 
 This is a **Activity** (level L3), named **Select Transport Modes**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Design Logistics and Routing** (`processes:process-eo-design-8s76nv`). Its canonical ID is `processes:activity-eo-design-m66m45`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity picks the ways goods will move — road, rail, sea, air, or a mix — and records why each choice was made. The delivery model design and the geography of demand arrive as the basis, modes are weighed and selected, and the selection with its rationale is confirmed onward for the node positioning. How freight travels is thereby settled in principle.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the movement of goods rests on transport modes chosen deliberately against the delivery model and geography.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the logistics and routing design, once the delivery model design and demand geography are to hand, and it completes when the mode selection is confirmed and retained with its rationale.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function designer weighs road, rail, sea, and air options against the delivery model and demand geography, picks the mode mix, and records the rationale with the selection.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Select Transport Modes |
+| `plain_language_description` | string | no | This activity picks the ways goods will move — road, rail, sea, air, or a mix — and records why each choice was made … |
+| `business_purpose` | string | no | It exists so the movement of goods rests on transport modes chosen deliberately against the delivery model and … |
+| `practical_context` | string | no | It opens the logistics and routing design, once the delivery model design and demand geography are to hand, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Receive and Verify Deliveries**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Procurement Cycle** (`processes:process-eo-operate-vzcxx7`). Its canonical ID is `processes:activity-eo-operate-9q2e4c`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity takes in what the suppliers send, checks each arrival against the order that called for it, and writes up the receipt. Deliveries arrive at the dock, goods are verified against their purchase orders, and the receipts are recorded. What was promised and what turned up are reconciled here, in person.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise only accepts, and pays for later, what it actually ordered and received in good order.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs as supplier deliveries arrive, each checked against its purchase order, and it completes when the verified receipts are recorded and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A receiving custodian checks each supplier delivery against its purchase order, verifies the goods received, and writes up the receipt for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Receive and Verify Deliveries |
+| `plain_language_description` | string | no | This activity takes in what the suppliers send, checks each arrival against the order that called for it, and writes up … |
+| `business_purpose` | string | no | It exists so the enterprise only accepts, and pays for later, what it actually ordered and received in good order. |
+| `practical_context` | string | no | It runs as supplier deliveries arrive, each checked against its purchase order, and it completes when the verified … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

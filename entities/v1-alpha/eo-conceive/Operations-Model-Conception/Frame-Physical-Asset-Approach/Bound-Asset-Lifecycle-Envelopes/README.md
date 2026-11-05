@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-co
 
 This is a **Activity** (level L3), named **Bound Asset Lifecycle Envelopes**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Frame Physical Asset Approach** (`processes:process-eo-conceive-87kx9n`). Its canonical ID is `processes:activity-eo-conceive-jgb89z`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity sets the postures the enterprise will take across an asset's life — how it acquires, renews, and retires — so later decisions fall inside agreed bounds. The footprint principles arrive as the reference, the lifecycle postures are worked out and reviewed against them, and the bounded envelopes are confirmed onward for the approach's commitment. Assets will be born, aged, and disposed of by design.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so asset decisions over their whole life happen inside deliberate postures rather than being improvised case by case.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the option assessment, when the footprint principles are in place, and it completes once the lifecycle envelopes are confirmed for the approach's commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function lead sets the acquisition, renewal, and retirement postures for assets against the footprint principles, and confirms the bounded envelopes with the strategy function.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set the Asset Lifecycle Envelopes |
+| `plain_language_description` | string | no | This activity sets the postures the enterprise will take across an asset's life — how it acquires, renews, and retires … |
+| `business_purpose` | string | no | It exists so asset decisions over their whole life happen inside deliberate postures rather than being improvised case … |
+| `practical_context` | string | no | It follows the option assessment, when the footprint principles are in place, and it completes once the lifecycle … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

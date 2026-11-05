@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-design-9ckwf6 through concluding task processes:task-pv-design-record-wypry2, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Formulate Experiment Hypothesis'
+plain_language_description: 'This activity states, in one bounded sentence, what the experiment will test. The innovation thesis arrives as the source of testable beliefs, a hypothesis is formulated from it and tightened until it can plainly fail, and the formulated hypothesis is confirmed onward for the success criteria. The experiment''s subject is pinned here, falsifiably.'
+business_purpose: 'It exists so the experiment tests one sharp, failable belief rather than a vague hope.'
+practical_context: 'It opens the experiment design when the innovation thesis requires bounded experiments to validate new propositions, and it completes once the formulated hypothesis is confirmed for the success criteria.'
+worked_example:
+  agent_type: human
+  narrative: 'A product management designer states the experiment''s belief in one bounded, failable sentence drawn from the innovation thesis, and confirms it onward.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-re
 
 This is a **Activity** (level L3), named **Execute Communications Plan for Regulated Strategic Plan Sunset**, currently **candidate (yellow)**. It is part of the **Sunset Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Retire. It belongs to **Sunset Regulated Strategic Plan** (`processes:process-sd-retire-umxf3c`). Its canonical ID is `processes:activity-sd-retire-r5tcp2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the register updated, the outside world has to be told properly. Intake registers the assembled sunset papers and the mandated communications plan, verification confirms every audience and message meets what the regulator prescribed, and processing carries the communications out — business-unit notices, external statements and the replacement plan's standing shared with the supervisor. Confirmation closes the campaign with delivery recorded and the records custodian preserves the execution evidence.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It tells everyone the sunset touches — inside and outside the entity — in the form and sequence the supervisor requires, so retirement happens without surprises.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the filings register is updated, opening at intake of the sunset papers and closing when the delivered campaign is confirmed and preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function communications lead runs the regulator-prescribed campaign, the finance function briefs the affected units on what changes for them, and the confirmation custodian records delivery of the replacement plan's standing to the supervising authority.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Run the Sunset Communications Plan |
+| `plain_language_description` | string | no | With the register updated, the outside world has to be told properly. Intake registers the assembled sunset papers and … |
+| `business_purpose` | string | no | It tells everyone the sunset touches — inside and outside the entity — in the form and sequence the supervisor … |
+| `practical_context` | string | no | It runs once the filings register is updated, opening at intake of the sunset papers and closing when the delivered … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

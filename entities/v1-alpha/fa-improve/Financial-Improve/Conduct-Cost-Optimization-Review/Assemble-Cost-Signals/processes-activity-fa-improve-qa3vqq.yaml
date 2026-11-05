@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-improve-emqpgr through concluding task processes:task-fa-improve-record-ngcaqq, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Assemble Cost Signals'
+plain_language_description: 'This activity pulls the raw material of the review together — the cost signals, the evidence of margin squeezing, and the control findings. The scattered records arrive from their separate homes, the evidence is gathered and organised, and the assembled set is confirmed onward for the findings. The review starts from one coherent picture instead of fragments.'
+business_purpose: 'It exists so the cost review examines one organised evidence base rather than scattered signals.'
+practical_context: 'It opens the cost optimization review when cost signals, margin pressure, or control findings call for one, and it completes once the assembled evidence is confirmed for the findings step.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance design authority analyst gathers the cost signals, the margin-pressure evidence, and the control findings into one pack, checks it for completeness, and confirms the set for the findings step.'

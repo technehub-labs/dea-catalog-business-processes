@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-operate-hxxyc9 through concluding task processes:task-ge-operate-record-zw7r5z, whose outcome — Case file retained for Plan Compliance Audits under the records retention schedule with cryptographic integrity protection; statutory retention horizon applied …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Plan Compliance Audits'
+plain_language_description: 'This activity lays out the periodic audits that will check the enterprise against its own codified policies. The codified policies and the operating bodies arrive as the territory to be examined, audits are planned across it and resourced, and the audit plan is confirmed onward for execution. Compliance gets examined by timetable, not by scandal.'
+business_purpose: 'It exists so compliance with the codified policies is audited on a designed plan rather than by chance.'
+practical_context: 'It opens the audit cycle once policies are codified and bodies are operating, and it completes when the planned audits are confirmed onward for execution.'
+worked_example:
+  agent_type: human
+  narrative: 'A compliance function auditor plans the periodic audits across the codified policies and operating bodies, resources each, and confirms the plan for execution.'

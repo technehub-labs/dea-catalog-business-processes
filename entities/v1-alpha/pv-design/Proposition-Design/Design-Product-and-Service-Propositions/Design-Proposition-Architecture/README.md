@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-de
 
 This is a **Activity** (level L3), named **Design Proposition Architecture**, currently **candidate (yellow)**. It is part of the **Proposition and Packaging Design** process context, domain `pv`, lifecycle stage Design. It belongs to **Design Product and Service Propositions** (`processes:process-pv-design-8v4k89`). Its canonical ID is `processes:activity-pv-design-z35bxd`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Here the shape of the offering is laid out: product management takes the committed thesis and gives it a structure that says what the proposition is made of and how its parts relate. Intake registers the incoming thesis, verification checks it is complete enough to build on, processing drafts the architecture, confirmation releases it to the teams who will populate it, and the record custodian files the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It turns an agreed value claim into a concrete skeleton for the offering, giving every later design step a structure to hang its pieces on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This is typically the first move of the design effort after the thesis is committed: work opens when the thesis is presented at intake and closes when the confirmed architecture and its audit record are filed.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Product management opens a design cycle for a new bundled offering, receives the committed thesis at intake, confirms it with the originating strategists, drafts the proposition's structure, and, once confirmation is issued, the records custodian archives the trail so later component work can trace its starting point.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Proposition Architecture |
+| `plain_language_description` | string | no | Here the shape of the offering is laid out: product management takes the committed thesis and gives it a structure that … |
+| `business_purpose` | string | no | It turns an agreed value claim into a concrete skeleton for the offering, giving every later design step a structure to … |
+| `practical_context` | string | no | This is typically the first move of the design effort after the thesis is committed: work opens when the thesis is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

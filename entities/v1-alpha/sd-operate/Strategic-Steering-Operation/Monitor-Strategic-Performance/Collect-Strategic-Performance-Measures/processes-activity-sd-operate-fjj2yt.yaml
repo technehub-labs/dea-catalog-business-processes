@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-operate-zdjchn through concluding task processes:task-sd-operate-record-jjj93s, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Collect Strategic Performance Measures'
+plain_language_description: 'Now that the plan is being executed, the numbers start flowing and someone has to catch them. Measure readings from the executing initiatives and operations arrive at intake, verification checks each is from the right source and period, and processing gathers them into the complete measure set the review cycle expects. Confirmation announces the collected set downstream and the records custodian preserves it for tracking.'
+business_purpose: 'It keeps a complete, quality-checked flow of measure readings coming in, the raw material every performance judgement downstream relies on.'
+practical_context: 'It runs continuously while the plan is in force, opening at each intake of readings and closing when the collected set is confirmed and preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'Strategy function analysts log the period''s measure readings from each executing initiative, a verification custodian rejects readings with the wrong source or period, and the confirmation custodian releases the collected set to the tracking step.'

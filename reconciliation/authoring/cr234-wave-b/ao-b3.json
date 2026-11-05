@@ -1,0 +1,202 @@
+{
+  "processes:activity-ao-operate-skjmyf": {
+    "plain_language_name": "Schedule Development Programmes",
+    "plain_language_description": "This activity turns the committed development priorities and plan into a dated programme calendar for agents in service. The plan arrives first, each programme is placed on the calendar and checked against it, and the scheduled programmes are confirmed to those who will run them. Delivery then follows a timetable rather than ad hoc invitations.",
+    "business_purpose": "It exists so development commitments become dated, deliverable sessions that agents in service can actually attend.",
+    "practical_context": "It opens the learning operation, when the committed gap priorities and development plan land for scheduling, and it closes once the scheduled programmes are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management custodian places each programme from the development plan onto the calendar, checks the dates are workable for the agents in scope, and confirms the schedule to the delivery team."
+    }
+  },
+  "processes:activity-ao-operate-f669fn": {
+    "plain_language_name": "Deliver Learning Sessions",
+    "plain_language_description": "This activity runs the learning sessions the calendar calls for, for people and artificial agents alike. The schedule comes in first, each session is delivered as planned and its running is logged, and the delivered sessions are confirmed for the record. What agents attend is thereby delivery by timetable, not by chance.",
+    "business_purpose": "It exists so the scheduled development actually reaches the agents it was planned for, on the timetable committed.",
+    "practical_context": "It follows the scheduling of development programmes, when the calendar is presented for delivery, and it completes as each delivered session is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management custodian runs each session on the calendar as planned, logs how the delivery went, and confirms the delivered sessions for completion recording."
+    }
+  },
+  "processes:activity-ao-operate-b6fecc": {
+    "plain_language_name": "Record Programme Completion",
+    "plain_language_description": "This activity writes down, agent by agent, which delivered programmes they have finished. The delivered sessions arrive as the input, each person's and each artificial agent's completions are logged and checked against the delivery record, and the recorded completions are confirmed onward. The result is an answerable file of who has finished which programme.",
+    "business_purpose": "It exists so every agent's programme completions are on file, ready to evidence readiness or compliance.",
+    "practical_context": "It follows the delivery of learning sessions, when the delivered sessions are presented for recording, and it closes once the recorded completions are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian logs each agent against the programmes they finished, checks the entries match the delivered sessions, and confirms the completions for the file."
+    }
+  },
+  "processes:activity-ao-operate-8mxujq": {
+    "plain_language_name": "Evaluate Programme Effectiveness",
+    "plain_language_description": "This activity weighs each finished programme against the shortfalls it was meant to close. The recorded completions come in as the starting evidence, effectiveness is judged programme by programme, and the evaluation is confirmed and retained. Which programmes genuinely closed their gaps becomes visible, and which did not.",
+    "business_purpose": "It exists so the enterprise learns which development programmes actually close the shortfalls they target.",
+    "practical_context": "It runs once programmes have completed and their completions are on file, and it closes when the effectiveness evaluation is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian compares each finished programme's outcomes with the gap it targeted, records how far the shortfall actually closed, and confirms the evaluation for the record."
+    }
+  },
+  "processes:activity-ao-operate-gxarb3": {
+    "plain_language_name": "Calculate the Cycle's Payroll",
+    "plain_language_description": "This activity builds the cycle's payroll figures from the time data the attendance process has checked. The validated time data arrives first, pay is calculated for every agent in the cycle, and the computed payroll is confirmed before anything is paid. Accuracy here is what the rest of the cycle's payments depend on.",
+    "business_purpose": "It exists so every payment the cycle makes starts from payroll figures worked out correctly.",
+    "practical_context": "It runs each pay cycle once the checked attendance data is handed over, and it closes when the computed payroll is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian turns the cycle's validated time data into payroll figures for every agent, checks the totals line up, and confirms the computed payroll for disbursement."
+    }
+  },
+  "processes:activity-ao-operate-8sc5gr": {
+    "plain_language_name": "Administer Benefits",
+    "plain_language_description": "This activity keeps each in-service agent's benefits entitlements straight, cycle after cycle. The standing entitlements arrive as the input, enrolments and changes are processed and the administration checked, and the administered benefits are confirmed for the record. What each agent is owed in benefits is thereby maintained correctly as service continues.",
+    "business_purpose": "It exists so the benefits side of employment stays accurate alongside pay, cycle after cycle.",
+    "practical_context": "It runs every cycle for the agents in service, alongside the payroll calculation, and it closes when the administered benefits are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian processes a joiner's benefits enrolment and a leaver's wind-down in the same cycle, checks the entitlements line up, and confirms the administered benefits for the record."
+    }
+  },
+  "processes:activity-ao-operate-h6hmqm": {
+    "plain_language_name": "Pay Out the Cycle's Payroll on Time",
+    "plain_language_description": "This activity moves the money: it pays out what the cycle's payroll calculated, correctly and by the due date. The computed payroll arrives first, each disbursement is executed and checked as it goes, and the executed payments are confirmed for the record. This is the moment the workforce actually gets paid.",
+    "business_purpose": "It exists so agents receive what they are owed, accurately and on the day it falls due.",
+    "practical_context": "It follows the payroll calculation and benefits administration each cycle, and it closes when the executed payments are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian releases the cycle's payments from the confirmed payroll figures, checks each disbursement landed as calculated, and confirms the executed payments went out on time."
+    }
+  },
+  "processes:activity-ao-operate-7k8xwy": {
+    "plain_language_name": "File Statutory Returns",
+    "plain_language_description": "This activity prepares and files the returns the pay cycle's rules demand, working from the payments made and the benefits administered. The executed disbursements and administered benefits come in as the inputs, each return is prepared, checked, and filed, and the filed returns are confirmed and retained. The enterprise's filing obligations are thereby met every cycle.",
+    "business_purpose": "It exists so the filings that go with paying people are completed properly, every cycle.",
+    "practical_context": "It closes the pay cycle, running once payments have been executed and benefits administered, and it completes when the filed returns are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian prepares the cycle's returns from the executed payments and benefits records, checks each filing against the applicable rules, and files it with the confirmation step recording the outcome."
+    }
+  },
+  "processes:activity-ao-operate-j8k5p7": {
+    "plain_language_name": "Annual Fitness and Propriety Re-Attestation",
+    "plain_language_description": "This activity renews, once a year, the fitness attestation behind every live licensed role. The live role list and the attestation calendar come in together, each holder is re-attested when their turn comes, and the outcomes are written to the personnel record. The yearly rhythm keeps fitness evidence fresh rather than letting it rest on a single past attestation.",
+    "business_purpose": "It exists so fitness evidence for licensed roles is renewed on the regulator's yearly rhythm instead of aging unexamined.",
+    "practical_context": "It runs to the annual attestation calendar against the live role list, and it closes as each re-attestation outcome is confirmed and preserved on the personnel record.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management custodian works the yearly attestation calendar for the live controlled-function holders, sees each fitness re-attestation completed, and records the outcomes on the personnel file."
+    }
+  },
+  "processes:activity-ao-operate-z4n9m2": {
+    "plain_language_name": "Audit Conduct-Rule Compliance",
+    "plain_language_description": "This activity checks how well live licensed-role holders keep to the conduct rules their roles carry, using the conduct-rule matrix for each role. The live role list and the matrix arrive together, conduct is examined against the applicable rules, and the compliance audit record is produced and retained. Where conduct falls short, the audit names it plainly on the record.",
+    "business_purpose": "It exists so the enterprise holds current, auditable evidence that its licensed roles behave within the conduct rules.",
+    "practical_context": "It runs while licensed roles are in live operation, when the role list and the conduct-rule matrix are presented, and it closes once the audit record is confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management custodian examines each live role holder's conduct against the matrix's rules, writes the findings into the compliance audit record, and files it for oversight."
+    }
+  },
+  "processes:activity-ao-operate-b5v2k9": {
+    "plain_language_name": "Track Continuing-Competence Completion",
+    "plain_language_description": "This activity keeps a running tally of each licensed role holder's continuing-competence progress against their plan. The live role list and the competence plan come in, completions are logged as they happen, and the tracking record is confirmed and retained. The tally shows who is current, who is falling behind, and by how much.",
+    "business_purpose": "It exists so the enterprise always knows where each licensed role holder stands against their continuing-competence plan.",
+    "practical_context": "It runs throughout a licensed role's live operation, logging competence completions as they land, and it closes each tracking pass when the completion record is confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management custodian logs each completed competence activity against the holder's plan, updates the running tally, and files the tracking record for oversight."
+    }
+  },
+  "processes:activity-ao-operate-8pqgha": {
+    "plain_language_name": "Track Hours-of-Work and Rest-Rule Compliance",
+    "plain_language_description": "This activity watches the working hours and rest periods of licensed role holders against the applicable rules. The live role list and the hours recording come in together, each holder's hours and rest are compared with their limits, and the compliance record is confirmed and retained. Pressure points, such as hours creeping past limits or rest being squeezed, surface here while they can still be corrected.",
+    "business_purpose": "It exists so working-time and rest limits for licensed roles are watched continuously rather than discovered after a breach.",
+    "practical_context": "It runs across the live operation of licensed roles, feeding off the hours recording as it accumulates, and it closes each pass when the compliance record is confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management custodian compares each licensed crew member's logged hours and rest against their applicable limits, records the compliance outcome, and files it for oversight."
+    }
+  },
+  "processes:activity-ao-operate-kyup4x": {
+    "plain_language_name": "Capture Time and Attendance",
+    "plain_language_description": "This activity records when and how long each agent works as they deliver service. The service delivery itself arrives as the source, time and attendance are captured day by day, and the captured records are confirmed for what follows. Everything downstream, from validation to pay, starts from what is captured here.",
+    "business_purpose": "It exists so the enterprise holds an accurate daily record of the time its agents actually work.",
+    "practical_context": "It runs day by day across the agents delivering service, and it closes each capture pass when the recorded time and attendance are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management custodian gathers each agent's worked time and attendance as service is delivered, logs the day's records with their audit identifiers, and confirms the capture."
+    }
+  },
+  "processes:activity-ao-operate-yzn584": {
+    "plain_language_name": "Validate Attendance Records",
+    "plain_language_description": "This activity checks the captured attendance entries for accuracy before anything moves toward pay. The captured records come in first, each entry is examined against expectations, and the checked records are confirmed onward, with anything questionable flagged for the exception step rather than waved through.",
+    "business_purpose": "It exists so payroll only ever receives attendance data that has been checked for accuracy.",
+    "practical_context": "It follows the daily capture of time and attendance, when the captured records are presented, and it completes once the validated records are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian examines the day's captured attendance entries for accuracy, flags the questionable ones for exception handling, and confirms the clean records onward."
+    }
+  },
+  "processes:activity-ao-operate-c7xad6": {
+    "plain_language_name": "Resolve Attendance Exceptions",
+    "plain_language_description": "This activity works through the anomalies validation flags, such as missing records or unusual hours, and settles each one. The validated records arrive as the context, exceptions are investigated and resolved under people policy, with escalation where the rules require it, and the resolutions are confirmed for the record. Nothing questionable is left standing between attendance and pay.",
+    "business_purpose": "It exists so doubtful time entries are settled deliberately before they can distort what people are paid.",
+    "practical_context": "It runs once validation has flagged its exceptions, and it closes when the resolved exceptions are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management custodian investigates a missing day's record for one agent, settles it under the applicable policy, escalates the unusual-hours case as the rules require, and confirms the resolutions."
+    }
+  },
+  "processes:activity-ao-operate-5myx8s": {
+    "plain_language_name": "Pass the Time Data to Payroll",
+    "plain_language_description": "This activity hands the cycle's settled time data over to payroll so it can calculate. The resolved exceptions and checked records come in as the final inputs, the feed is assembled and delivered for the cycle, and the handover is confirmed for the record. This is the bridge that lets attendance become pay.",
+    "business_purpose": "It exists so payroll receives, each cycle, time data that has been captured, checked, and settled.",
+    "practical_context": "It closes the time and attendance cycle, running once validation and exception resolution are done, and it completes when the feed is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian assembles the cycle's settled attendance records, hands them to payroll for calculation, and confirms the handover with its audit identifiers on file."
+    }
+  },
+  "processes:activity-ao-retire-uqgpmh": {
+    "plain_language_name": "Serve the Statutory Advance Notice",
+    "plain_language_description": "This activity serves the legally required advance notice when an employment reduction is large enough to trigger it. The authorised wind-down and the scoped workforce roster arrive first, the filings to the authorities and the individual notices are prepared and served, and the notice record is confirmed and retained. The clock on the wind-down's other legal obligations effectively starts here.",
+    "business_purpose": "It exists so a large-scale reduction meets its advance-notice law, with the filings and individual notices on record.",
+    "practical_context": "It opens the wind-down once the event is authorised and the reduction crosses the thresholds the labour law sets, and it closes when the served notices are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management custodian serves the advance notice for an authorised unit wind-down, covering the filings to the authorities and an individual notice to each affected person, and files the notice record for the consultation step."
+    }
+  },
+  "processes:activity-ao-retire-zmc7yk": {
+    "plain_language_name": "Consult Representative Bodies",
+    "plain_language_description": "This activity holds the legally required consultation with the bodies representing the affected workforce, whether that is a recognised union, a works council, or elected employee representation, in the window before any redundancy takes effect. The proposed reduction scope, its business case, and the alternatives worth consulting on come in as the ground to discuss, positions are exchanged and minuted, and the consultation outcome is confirmed and retained.",
+    "business_purpose": "It exists so the workforce's representatives genuinely take part before any redundancy takes effect, with the exchange on the record.",
+    "practical_context": "It runs in the statutory window between the served advance notice and the reduction taking effect, and it closes when the consultation outcome, covering positions, agreements, and unresolved issues, is confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management lead tables the reduction's proposed scope and the alternatives with the elected employee representatives, minutes the positions and unresolved issues, and files the consultation outcome."
+    }
+  },
+  "processes:activity-ao-retire-sqdecn": {
+    "plain_language_name": "Calculate the Statutory Liabilities and Fund Them",
+    "plain_language_description": "This activity works out what the enterprise owes each affected person under the law, in notice pay, severance, and continued benefits cover, and sets the total aside so settlement is funded when it falls due. Each person's tenure, compensation, classification, and the controlling statute come in as the inputs, an entitlement schedule is drawn per person, and the funded liability is confirmed and retained.",
+    "business_purpose": "It exists so the money owed under statute is calculated person by person and actually set aside for settlement day.",
+    "practical_context": "It runs during the wind-down once the affected population is known and ahead of the severance date, and it closes when the entitlement schedule and funded liability are confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management custodian calculates each affected person's entitlements from their tenure, compensation, and classification under the controlling statute, totals the liability, and confirms it is funded for settlement."
+    }
+  },
+  "processes:activity-ao-retire-herzuz": {
+    "plain_language_name": "Coordinate Transition Supports",
+    "plain_language_description": "This activity lines up the practical help that supplements the statutory entitlements for everyone affected: the state referral service for displaced workers, retraining, continued health cover, and help finding new work. The affected roster and the support programmes on offer arrive together, a support package is put together per person, and the offered supports, with delivery and uptake noted, are confirmed and retained.",
+    "business_purpose": "It exists so everyone affected by the wind-down is offered real help landing on their feet, beyond the money owed.",
+    "practical_context": "It runs once the affected roster is settled during the wind-down, and it closes when each person's offered supports, with delivery and uptake evidence, are confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function coordinator matches each person on the affected roster to the referral, retraining, and health-cover programmes available, records what was offered and taken up, and files the evidence."
+    }
+  }
+}

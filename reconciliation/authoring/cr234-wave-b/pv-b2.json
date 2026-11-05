@@ -1,0 +1,322 @@
+{
+  "processes:activity-pv-design-45x29p": {
+    "plain_language_name": "Commit Proposition Design",
+    "plain_language_description": "When a proposition design is ready to be locked down, product management brings the finished pieces together in one place. The package is logged in, checked against the agreed specification, assembled into its final form, confirmed, and filed so the record can be retrieved later. What leaves this work is the committed proposition design the build stage can construct from.",
+    "business_purpose": "It gives the design effort a definite end point: architecture, components, and configuration choices are gathered into a single committed design that the build stage can pick up without guesswork.",
+    "practical_context": "It runs at the close of the design effort: once the architecture, component specifications, and configuration options exist, intake opens when they are presented for consolidation, and closure comes when the confirmed design and its audit record are filed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Product management receives the completed architecture and component work for a new service proposition, verifies the pack meets the specification, assembles the committed design document, and confirms it to the build teams; the records custodian files it so any later question about what was agreed can be answered."
+    }
+  },
+  "processes:activity-pv-design-xgzh85": {
+    "plain_language_name": "Design Configuration Options",
+    "plain_language_description": "Product management works out the variants each segment will be offered, turning the component specification and the segment theses into a menu of configuration choices. Submitted materials are registered at intake, verified against the specification, and worked into the option design; confirmation tells downstream consumers the menu is ready, and the audit trail is filed.",
+    "business_purpose": "It supplies the packaged choices customers and segments will actually pick from, so the proposition ships with workable options rather than a one-size offering.",
+    "practical_context": "Entry happens when the component specification and segment theses arrive for processing; closure is the confirmed configuration option design and its filed record, ready for whoever assembles the full proposition.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management lead preparing a mid-market variant logs the incoming component specification, checks it against each segment thesis, drafts the tiered option menu, confirms it with downstream teams, and hands the file to the records custodian for retention."
+    }
+  },
+  "processes:activity-pv-design-z35bxd": {
+    "plain_language_name": "Design Proposition Architecture",
+    "plain_language_description": "Here the shape of the offering is laid out: product management takes the committed thesis and gives it a structure that says what the proposition is made of and how its parts relate. Intake registers the incoming thesis, verification checks it is complete enough to build on, processing drafts the architecture, confirmation releases it to the teams who will populate it, and the record custodian files the audit trail.",
+    "business_purpose": "It turns an agreed value claim into a concrete skeleton for the offering, giving every later design step a structure to hang its pieces on.",
+    "practical_context": "This is typically the first move of the design effort after the thesis is committed: work opens when the thesis is presented at intake and closes when the confirmed architecture and its audit record are filed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Product management opens a design cycle for a new bundled offering, receives the committed thesis at intake, confirms it with the originating strategists, drafts the proposition's structure, and, once confirmation is issued, the records custodian archives the trail so later component work can trace its starting point."
+    }
+  },
+  "processes:activity-pv-design-vrmwad": {
+    "plain_language_name": "Specify Proposition Components",
+    "plain_language_description": "With the architecture in hand, product management spells out the individual features and service elements that will fill it. The arriving architecture is registered, checked that it is usable as a reference, and then each component is written up; once confirmed, the component specification goes to the teams who need it and the file is archived.",
+    "business_purpose": "It populates the approved skeleton with named, describable building blocks, so packaging and configuration work has concrete pieces to arrange.",
+    "practical_context": "It follows the architecture step in the design sequence: intake opens on the reference architecture's arrival, and closure is the confirmed component specification plus its preserved audit record.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management team takes the signed-off architecture for a new subscription offering and specifies each element - the core feature set and the supporting service elements - verifying the reference architecture at verification, writing the specification during processing, and handing a confirmed pack to the configuration designers."
+    }
+  },
+  "processes:activity-pv-improve-6rycwm": {
+    "plain_language_name": "Assemble Proposition Performance Evidence",
+    "plain_language_description": "Before any review can judge how propositions are doing, the scattered material has to be brought together: performance records, signs of gaps in the portfolio, and the evidence rationalization choices will need. Product management registers what arrives, checks it for completeness, organizes it into one review-ready pack, confirms the pack to the review, and has it archived for traceability.",
+    "business_purpose": "It gives the performance review a complete, trustworthy evidence pack, so findings rest on the full picture rather than whichever signals happened to be at hand.",
+    "practical_context": "It marks the opening of the review cycle: work starts when performance records are presented for intake and ends when the confirmed evidence pack and its audit record are on file.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Ahead of the periodic review, a product management analyst collects the performance records for every live proposition, registers them at intake, verifies nothing material is missing, assembles the pack with the portfolio gaps flagged, and the records custodian files it for the reviewers."
+    }
+  },
+  "processes:activity-pv-improve-6hzpux": {
+    "plain_language_name": "Commit Proposition Review Outcomes",
+    "plain_language_description": "At the end of the review, product management gathers the agreed findings and where each one is headed, and fixes them as the outcome of record. The drafted conclusions come in at intake, are checked against the review's specification, assembled into the consolidated outcome, confirmed, and archived so what was decided cannot drift afterwards.",
+    "business_purpose": "It turns a review's discussion into decisions of record, giving the evolution and rationalization work downstream a settled, retrievable starting point.",
+    "practical_context": "It closes the review cycle: intake opens once the formed findings and routings are presented, and closure arrives with the confirmed outcome set and its preserved audit record.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "When the review meeting wraps, a product management lead registers the agreed findings, has each one checked against the review specification, consolidates them into the outcome document, confirms it to the evolution and rationalization track owners, and the records custodian archives the trail."
+    }
+  },
+  "processes:activity-pv-improve-sac4pb": {
+    "plain_language_name": "Form Proposition Review Findings",
+    "plain_language_description": "Product management reads the assembled evidence pack and draws the bounded conclusions the review will stand on - what is working, what is slipping, and what needs a decision. The pack is registered at intake, checked for soundness, worked into a finding set, confirmed for the reviewers, and filed with its audit trail.",
+    "business_purpose": "It converts raw review material into a clear set of findings, giving the routing step something definite to send to the evolution and rationalization tracks.",
+    "practical_context": "It runs mid-review, after the evidence pack is complete: intake opens on the pack's arrival and closure comes when the confirmed finding set is issued and archived.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management reviewer takes the evidence pack assembled for the half-yearly review, verifies it covers every live proposition, writes the conclusions - for instance, that one proposition is underperforming its envelope - and hands the confirmed finding set to the routing step with the audit record preserved."
+    }
+  },
+  "processes:activity-pv-improve-eyn4d4": {
+    "plain_language_name": "Route Findings to Evolution Tracks",
+    "plain_language_description": "Once conclusions exist, each one must reach the people who can act: product management sends the finding set along, with owners attached, to the evolution and the rationalization tracks. Intake logs the arriving findings, verification checks each is actionable and complete, processing attaches the routing, confirmation notifies the receiving owners, and the dispatch is archived.",
+    "business_purpose": "It makes sure no review conclusion dies in a drawer: every finding lands with a track and an owner who is expected to act.",
+    "practical_context": "It follows the finding step in the review sequence, opening when the finding set is presented and closing when routed findings with owners are confirmed and archived.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "After the reviewers sign off, a product management coordinator registers each conclusion at intake, confirms the evolution-bound ones go to the enhancement designers and portfolio-weakening ones to the rationalization track, notifies the named owners, and files the routing record."
+    }
+  },
+  "processes:activity-pv-improve-mdkm5n": {
+    "plain_language_name": "Analyze Evolution Drivers",
+    "plain_language_description": "Product management studies what outside forces are pushing the offerings to change - market feedback, moves by competitors, and shifts in technology - and states what each means for evolution. Incoming intelligence is registered at intake, checked for credibility, analysed into a driver picture, confirmed with those who will design the response, and archived.",
+    "business_purpose": "It gives the evolution effort a reasoned account of why change is needed, so enhancements answer real pressures rather than hunches.",
+    "practical_context": "It opens the evolution sequence: work begins when market feedback and related intelligence arrive for intake and ends when the confirmed driver analysis and its audit record are filed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Following a slump in one product line's reception, product management logs the market feedback at intake, tests the supporting intelligence at verification, works out that a competitor's new release and a technology shift are the real drivers, and confirms the analysis to the enhancement designers."
+    }
+  },
+  "processes:activity-pv-improve-b3x5kk": {
+    "plain_language_name": "Commit Enhancements",
+    "plain_language_description": "When enhancement designs are ready, product management gives them the formal go-ahead for implementation. The designs are registered at intake, checked against the specification, assembled into the committed package, confirmed to the teams who will implement, and the approval trail is archived so the decision carries forward.",
+    "business_purpose": "It is the decision point of the evolution effort, turning drafted enhancements into work that teams are actually authorised to build.",
+    "practical_context": "It closes the design-to-do sequence within evolution: intake opens when the enhancement designs are presented and closure comes when the committed package and its audit record are preserved.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management lead receives the finished enhancement designs for the flagging product line, verifies each meets the specification, assembles the commitment package, notifies the implementation teams at confirmation, and the records custodian files the approval trail."
+    }
+  },
+  "processes:activity-pv-improve-t7vbjt": {
+    "plain_language_name": "Design Bounded Enhancements",
+    "plain_language_description": "With the driver analysis in hand, product management sketches changes that answer those drivers while staying deliberately small in scope. The analysis arrives at intake, is verified as a usable baseline, and each candidate change is worked into a design; confirmation releases the designs toward commitment and the trail is archived.",
+    "business_purpose": "It shapes the response to evolution drivers into enhancements that are ambitious enough to matter but contained enough to deliver, feeding the commitment step.",
+    "practical_context": "It runs between driver analysis and commitment in the evolution sequence, opening when the analysis is presented and closing when confirmed enhancement designs are filed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management designer takes the confirmed driver analysis, registers it at intake, drafts a modest redesign of the affected service element rather than a wholesale rebuild, has the design checked at verification, and passes the confirmed set toward the commitment step."
+    }
+  },
+  "processes:activity-pv-improve-s34pap": {
+    "plain_language_name": "Measure Evolution Outcomes",
+    "plain_language_description": "After enhancements have been in place for a while, product management checks what they actually achieved, comparing results with the driver baseline recorded when the work was approved. Measurement material is registered at intake, verified against that baseline, assembled into an outcome measurement, confirmed, and archived for the next review.",
+    "business_purpose": "It closes the loop on evolution work, telling product management whether each committed enhancement delivered against the pressure that prompted it.",
+    "practical_context": "It runs once committed enhancements have had time to take effect: intake opens on the measurement material's arrival and closure comes with the confirmed outcome measurement on file.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Two quarters after an enhancement ships, a product management analyst pulls the result figures, registers them at intake, compares them with the baseline captured at approval, assembles the outcome measurement, and confirms it to the reviewers ahead of the next performance review."
+    }
+  },
+  "processes:activity-pv-improve-439c76": {
+    "plain_language_name": "Assess Investment Justification",
+    "plain_language_description": "Product management weighs each proposition in the portfolio against the investment envelope it consumes, asking plainly whether the return still warrants the spend. Direction and performance material is registered at intake, verified, worked into a justification assessment for every proposition, confirmed, and archived.",
+    "business_purpose": "It supplies the honest verdict the rationalization effort needs: which propositions still merit their envelope and which have stopped earning their keep.",
+    "practical_context": "It is the opening step of portfolio rationalization, triggered when direction and performance evidence arrive; it closes when the confirmed justification assessments are filed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "In the rationalization round, a product management reviewer takes the portfolio direction and latest performance evidence, registers them at intake, and works proposition by proposition through the assessment - finding, say, that a mature offering no longer earns its envelope - before confirming the assessments for option forming."
+    }
+  },
+  "processes:activity-pv-improve-qvw5ea": {
+    "plain_language_name": "Commit Rationalization Decisions",
+    "plain_language_description": "This is where the portfolio's fate for underperformers is settled: product management takes the assessed options and fixes the chosen retire-or-pivot calls as decisions of record. The option set is registered at intake, checked for completeness, assembled into the committed decision package, confirmed, and archived so the choices bind the next steps.",
+    "business_purpose": "It converts formed options into binding rationalization decisions, so every failing proposition has an agreed, recorded way forward.",
+    "practical_context": "It closes the decide half of rationalization: intake opens when the assessed options are presented and closure comes when the confirmed decisions and their audit trail are preserved.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Faced with three propositions that failed justification, a product management lead registers the options at intake, weighs each against the assessment, commits two pivots and one retirement, confirms the decisions to the transition planners, and has the trail archived."
+    }
+  },
+  "processes:activity-pv-improve-vaxgzn": {
+    "plain_language_name": "Form Retire-or-Pivot Options",
+    "plain_language_description": "For every proposition that failed its justification, product management works up the realistic paths - withdraw it from the market, or reshape it into something that can succeed. Each failing case arrives at intake, is checked against the assessment, is turned into a documented option set, confirmed for decision makers, and archived.",
+    "business_purpose": "It gives decision makers real, worked-through choices for weak propositions instead of a bare verdict, so rationalization decisions are deliberate rather than automatic.",
+    "practical_context": "It follows the justification assessment in the rationalization sequence, opening when failing cases are presented and closing when the confirmed option sets are filed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "After the assessments flag a declining service, a product management pair drafts its options at processing: one path retires it on a managed schedule, the other repositions it for a narrower segment; the confirmed option set goes to the deciding forum with the record preserved."
+    }
+  },
+  "processes:activity-pv-improve-k3hy7t": {
+    "plain_language_name": "Measure Rationalization Outcomes",
+    "plain_language_description": "Once retire-or-pivot decisions have been carried out, product management looks at what the portfolio actually looks like now and compares it with the picture recorded before the decisions. Outcome material is registered at intake, verified against the pre-decision baseline, assembled into a measurement, confirmed, and archived to inform the next rationalization round.",
+    "business_purpose": "It tells the portfolio's stewards whether the rationalization decisions actually improved matters, closing the loop and informing the next round of choices.",
+    "practical_context": "It runs at the end of a rationalization cycle, after decisions have taken effect; intake opens on outcome material arriving and closure comes when the confirmed measurement is archived.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A quarter after a retirement completes, a product management analyst registers the portfolio's new state at intake, checks it against the pre-decision snapshot, works out that freed investment now supports the pivoted offering, and confirms the measurement for the stewards."
+    }
+  },
+  "processes:activity-pv-operate-38waaf": {
+    "plain_language_name": "Maintain Portfolio Record",
+    "plain_language_description": "This is the bookkeeping backbone of portfolio management: every rebalancing action and lifecycle transition is folded in so the record always shows the propositions, their envelopes, and how allocation currently stands. Changes arrive at intake, are checked, applied to the record, confirmed, and the update trail is archived.",
+    "business_purpose": "It keeps the portfolio record trustworthy and current, so monitoring, rebalancing, and reporting all reason from one reliable account.",
+    "practical_context": "It runs continuously through steady-state operation: intake opens whenever a rebalancing action or transition lands, and closure comes each time the updated record and its audit trail are confirmed and filed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "When a rebalancing decision shifts investment between two propositions, the product management record keeper registers the action at intake, applies it to the portfolio account at processing, confirms the refreshed view to the team, and files the change trail for later audit."
+    }
+  },
+  "processes:activity-pv-operate-unuyxe": {
+    "plain_language_name": "Monitor Proposition Performance",
+    "plain_language_description": "Day to day, product management keeps watch on how each proposition is performing, measuring what comes back against the envelope it was given. Incoming telemetry arrives at intake, is checked for quality, is worked into a current performance picture, confirmed to those managing the portfolio, and archived.",
+    "business_purpose": "It provides the steady stream of performance visibility the portfolio needs, so drift away from an investment thesis is spotted early rather than at review time.",
+    "practical_context": "It is the standing watch of portfolio management, opening each cycle as telemetry arrives at intake and closing when the refreshed performance picture is confirmed and filed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Each reporting day, a product management analyst registers the latest proposition telemetry at intake, verifies odd readings at verification, refreshes the performance picture at processing, and confirms it to the portfolio lead, who uses it to spot propositions drifting past their envelopes."
+    }
+  },
+  "processes:activity-pv-operate-bzud7v": {
+    "plain_language_name": "Rebalance Portfolio Allocations",
+    "plain_language_description": "When the performance picture shows money sitting in the wrong places, product management shifts the allocations to match - moving envelope room from laggards toward the propositions doing better. The picture arrives at intake, is verified against the portfolio direction, the shifts are worked out and applied, confirmed, and the rebalancing trail is archived.",
+    "business_purpose": "It acts on what monitoring reveals, adjusting where investment sits so the portfolio backs its best-performing propositions instead of its historically favoured ones.",
+    "practical_context": "It follows monitoring in the performance cycle: intake opens on the refreshed performance picture and closure comes when the confirmed allocations and their audit trail are on record.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Seeing one proposition consistently outperform while another drifts, a product management lead registers the picture at intake, works out a reallocation that trims the laggard's envelope, confirms the change with the portfolio owner, and the records custodian files the trail."
+    }
+  },
+  "processes:activity-pv-operate-nzj8xu": {
+    "plain_language_name": "Report Portfolio Performance",
+    "plain_language_description": "On the reporting cadence, product management packages the performance picture into a report for the forums that steer the portfolio. Intake gathers the cycle's material, verification checks the figures, processing assembles the portfolio performance report, confirmation releases it to its consumers, and the issue is archived.",
+    "business_purpose": "It keeps the people who steer the portfolio supplied with a regular, dependable account of performance, so oversight rests on fact rather than impression.",
+    "practical_context": "It runs to a reporting cadence within steady-state operation: each cycle opens at intake when the period's material is presented and closes when the confirmed report and its audit trail are filed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "At the close of the reporting month, a product management analyst collects the period's figures at intake, verifies them at verification, assembles the report for the governance and strategy consumers, confirms its release, and archives the issue trail."
+    }
+  },
+  "processes:activity-pv-operate-xmvfj7": {
+    "plain_language_name": "Execute Gate Decisions",
+    "plain_language_description": "When a proposition reaches a stage boundary, the criteria for passing are applied and the decision is carried out - advance, hold, or turn back. The boundary material arrives at intake, is checked against the gate criteria, the decision is executed and communicated at confirmation, and the outcome is archived.",
+    "business_purpose": "It gives stage boundaries real force: a proposition moves on only when the gate says so, keeping lifecycle progression disciplined.",
+    "practical_context": "It fires whenever a proposition arrives at a stage boundary: intake opens on the boundary material's presentation and closure comes when the executed decision is confirmed and archived.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A proposition seeking to move from its early stage to the growth stage presents its case at intake; a product management gatekeeper checks it against the criteria, executes the advance decision at processing, notifies the stakeholders at confirmation, and files the gate record."
+    }
+  },
+  "processes:activity-pv-operate-89v5ty": {
+    "plain_language_name": "Maintain Lifecycle Record",
+    "plain_language_description": "Every transition and gate decision is written into the lifecycle record, so at any moment product management can see where each offering stands and how it got there. New events arrive at intake, are checked, applied to the record, confirmed, and the update trail is preserved.",
+    "business_purpose": "It keeps a faithful running history of each proposition's journey through its stages, the reference everyone relies on for position and precedent.",
+    "practical_context": "It operates continuously through lifecycle management: intake opens as transitions and gate decisions land, and closure comes when the refreshed record and audit trail are confirmed and filed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "After a gate advance is executed, the product management record keeper registers the event at intake, applies it to the proposition's history at processing, confirms the updated stage account to the team, and hands the trail to the records custodian."
+    }
+  },
+  "processes:activity-pv-operate-jpupsh": {
+    "plain_language_name": "Manage Stage Transitions",
+    "plain_language_description": "Product management steers each offering from one stage of its life to the next - the move into growth, the settling into maturity, the drift toward decline - applying the stage criteria at each step. Transition material is registered at intake, checked against the criteria, executed as a managed move, confirmed, and archived.",
+    "business_purpose": "It makes stage change a deliberate, criterion-checked event rather than something that happens by drift, keeping the lifecycle honest and legible.",
+    "practical_context": "It spans the life of each proposition: a transition opens when the case for moving stage is presented at intake and closes when the executed move is confirmed and its record filed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "When an offering's numbers show it has left its growth phase, a product management steward registers the transition case at intake, checks it against the stage criteria, executes the move into maturity, confirms it to the stakeholders, and the trail is archived."
+    }
+  },
+  "processes:activity-pv-operate-zk8rc3": {
+    "plain_language_name": "Track Lifecycle Stages",
+    "plain_language_description": "Product management keeps a live tally of where every proposition sits in its life - the stages run from introduction through growth and maturity toward decline - using the performance signals coming in. Signals arrive at intake, are verified, worked into the stage tracking record, confirmed, and archived.",
+    "business_purpose": "It keeps the stage position of every offering current, so transition management and gate decisions start from an accurate map rather than stale assumptions.",
+    "practical_context": "It is the continuous sensing half of lifecycle management: each watching cycle opens as performance signals arrive at intake and closes when the confirmed tracking record is filed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management watcher registers each proposition's latest signals at intake, confirms a once-fast grower has plateaued, updates its stage position to maturity in the tracking record, and confirms the refreshed positions to the lifecycle team."
+    }
+  },
+  "processes:activity-pv-operate-kwm3wt": {
+    "plain_language_name": "Administer Catalogue Pricing",
+    "plain_language_description": "Prices shown in the catalogue are looked after here: launch pricing and any later adjustments are applied within the rules that govern them, so customers always see deliberate, correct prices. Pricing material arrives at intake, is checked against the rules, applied to the catalogue, confirmed, and the change trail is archived.",
+    "business_purpose": "It keeps catalogue prices correct and rule-abiding, protecting both the customer's trust and the value case each proposition was built on.",
+    "practical_context": "It runs through steady-state catalogue operation: intake opens whenever launch pricing or rule-bound adjustments arrive, and closure comes when the administered prices and their audit trail are confirmed and filed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "When a seasonal adjustment is due, a product management pricing administrator registers the request at intake, checks it against the pricing rules, applies the new prices to the catalogue, confirms the update, and the records custodian files the trail."
+    }
+  },
+  "processes:activity-pv-operate-5yty8e": {
+    "plain_language_name": "Maintain Catalogue Entries",
+    "plain_language_description": "The entries describing each live offering are kept up to date here, refreshed from the variant baselines and lifecycle states as things change. Updates arrive at intake, are verified, applied to the entries, confirmed, and archived, so the catalogue always mirrors what is actually on offer.",
+    "business_purpose": "It keeps the catalogue's descriptions true to the offerings actually in operation, so downstream publishing and customer-facing channels describe reality.",
+    "practical_context": "It runs alongside steady-state catalogue work: intake opens as baselines or lifecycle states change, and closure comes when the updated entries and their audit trail are confirmed and filed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "When a variant reaches a new lifecycle state, a product management catalogue administrator registers the change at intake, verifies it against the baseline, rewrites the entry at processing, confirms the corrected listing, and the trail is filed for audit."
+    }
+  },
+  "processes:activity-pv-operate-5gtsjg": {
+    "plain_language_name": "Monitor Catalogue Integrity",
+    "plain_language_description": "Someone has to watch the watchable: this work checks the operated catalogue for accuracy, availability, and consistency, catching corruption before customers do. Catalogue and channel states arrive at intake, are verified, assessed into an integrity posture, confirmed, and archived.",
+    "business_purpose": "It protects the catalogue's standing as the trusted list of what can be bought, so channels and customers are never misled by a stale or broken entry.",
+    "practical_context": "It runs as a standing vigil over steady-state operation: intake opens as catalogue and channel states arrive, and closure comes when the confirmed integrity posture and its trail are filed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management catalogue steward registers the day's catalogue and channel states at intake, spots at verification that one channel shows an outdated price band, raises it through the posture at processing, and confirmation triggers the fix while the trail is archived."
+    }
+  },
+  "processes:activity-pv-operate-pv7jqd": {
+    "plain_language_name": "Publish Catalogue to Channels",
+    "plain_language_description": "Whatever the catalogue says, customers only see it once it reaches the channels they buy through; this work performs that hand-off, channel by channel. Channel configurations arrive at intake, are checked, the maintained catalogue is pushed out per channel, confirmation notifies dependents, and the publication trail is archived.",
+    "business_purpose": "It closes the gap between a correct catalogue and a sellable one, putting the maintained content in front of customers wherever they shop.",
+    "practical_context": "It runs each time the maintained catalogue is ready for release: intake opens on the channel configurations' arrival and closure comes when the published state per channel is confirmed and archived.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Ahead of a range refresh, a product management channel administrator takes the maintained catalogue at intake, verifies each channel configuration, pushes the updated listings to every sales channel at processing, confirms publication to the dependents, and files the trail."
+    }
+  },
+  "processes:activity-pv-retire-mqkper": {
+    "plain_language_name": "Confirm Retirement Closure",
+    "plain_language_description": "The retirement ends here: with the service withdrawn and its leftover duties routed, the design authority confirms that closure is genuinely complete, on evidence. The closed case arrives at intake, is checked against the specification, the closure record is assembled with the de-listing and archival steps finished, confirmed, and archived.",
+    "business_purpose": "It certifies that a retirement is truly finished - evidenced, archived, and struck from the catalogue - so nothing lingers half-removed.",
+    "practical_context": "It is the final act of the out-of-service transition: intake opens on the withdrawn service and routed residuals, and closure comes when the confirmed closure record and audit trail are preserved.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "When the last customer has migrated off a retired service, the proposition design authority registers the closed case at intake, checks the evidence that withdrawal and residual routing are done, completes the archival and de-listing steps, and confirms closure with the record filed."
+    }
+  },
+  "processes:activity-pv-retire-6hqeys": {
+    "plain_language_name": "Execute Service Withdrawal",
+    "plain_language_description": "Following the agreed plan, the design authority takes the offering out of active reliance - customers and internal users are moved off until nothing operationally depends on it any more. The plan arrives at intake, is verified as current, the withdrawal is executed step by step, confirmed to dependents, and archived.",
+    "business_purpose": "It is the hands-on half of retirement, turning a paper decision into an offering that is genuinely no longer relied upon.",
+    "practical_context": "It runs between planning and closure in the transition sequence: intake opens on the withdrawal plan's arrival and closure comes when the executed withdrawal is confirmed and its record preserved.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "With the withdrawal plan approved, the proposition design authority registers it at intake, confirms dependencies are unchanged, executes the cutover dates step by step, notifies remaining users at confirmation, and the records custodian preserves the execution trail."
+    }
+  },
+  "processes:activity-pv-retire-vbn7s6": {
+    "plain_language_name": "Plan Service Withdrawal",
+    "plain_language_description": "Before anything is switched off, the design authority lays out how the exit will run: who is told and when, which dependencies must unwind first, the timetable, and how users migrate to what comes next. The approved retirement decision arrives at intake, is verified, worked into the withdrawal plan, confirmed, and archived.",
+    "business_purpose": "It turns an approved retirement decision into a safe, sequenced exit plan, so withdrawal proceeds without stranding the people who still depend on the offering.",
+    "practical_context": "It opens the out-of-service transition: intake starts when the approved retirement decision is presented, and closure comes when the confirmed plan and its audit record are filed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Given a decision to retire an ageing service, the proposition design authority registers the decision at intake, maps the dependencies and migration routes at processing, sets notice periods and dates, confirms the plan with stakeholders, and files the planning record."
+    }
+  },
+  "processes:activity-pv-retire-6b3zth": {
+    "plain_language_name": "Resolve Residual Obligations",
+    "plain_language_description": "An offering can be gone and still owe things: this sweep finds the outstanding support commitments, warranties, and data-retention duties left behind and routes each to whoever must honour it. The withdrawn service and its commitments arrive at intake, are checked for completeness, identified and routed at processing, confirmed, and archived.",
+    "business_purpose": "It makes sure retirement is honest: duties that survive the offering are named and handed to owners, so obligations are honoured rather than forgotten.",
+    "practical_context": "It runs once withdrawal has taken effect: intake opens on the withdrawn service and its outstanding commitments, and closure comes when the routed duties and audit trail are confirmed and filed.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "After a retired product's final cutover, the proposition design authority registers the withdrawn service at intake, lists the support promises and retention duties still live at processing, routes each to the responsible desk, and confirms the routing with the record archived."
+    }
+  }
+}

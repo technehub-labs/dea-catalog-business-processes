@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-operate-rqdte5 through concluding task processes:task-eo-operate-record-3y9sfm, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Execute Facility Work Orders'
+plain_language_description: 'This activity carries each issued work order — planned or urgent — through to done. The work-order book arrives as the worklist, crews and contractors perform the jobs with the parts laid on, and the completed work is confirmed for the record. The buildings get fixed by work order, not by hallway requests.'
+business_purpose: 'It exists so the facility work that has been scheduled is genuinely performed to completion.'
+practical_context: 'It runs against the work-order book as jobs are issued, and it closes when each completed order is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A facilities crew works through the issued orders with the contractors and parts laid on, closes each job out fully, and confirms the completed work for the record.'

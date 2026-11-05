@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-operate-u6xgu5 through concluding task processes:task-sd-operate-record-3nc94e, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Formulate Rebalancing Options'
+plain_language_description: 'Named drift needs candidate fixes, and this work drafts them. Intake registers the drift findings, verification checks each finding carries enough detail to act on, and processing writes the corrective options — pausing, accelerating, rescoping or re-resourcing the offending initiatives. Confirmation circulates the option set downstream and the records custodian preserves it for selection.'
+business_purpose: 'It gives the drift real answers, a menu of concrete corrective moves leadership can choose between rather than a problem statement alone.'
+practical_context: 'It follows the drift check, opening at intake of the findings and closing when the corrective options are confirmed and stored.'
+worked_example:
+  agent_type: human
+  narrative: 'Strategy function planners draft corrective moves for each named departure — one initiative paused, one rescoped — and the confirmation custodian passes the option set to the colleagues preparing the decision.'

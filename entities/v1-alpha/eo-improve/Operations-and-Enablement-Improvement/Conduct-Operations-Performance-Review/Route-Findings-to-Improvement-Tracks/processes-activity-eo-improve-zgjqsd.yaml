@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-improve-g3ngp3 through concluding task processes:task-eo-improve-record-m2ube7, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Route Findings to Improvement Tracks'
+plain_language_description: 'This activity sends each finding on to the improvement track that can act on it — logistics work, asset utilization work, or platform evolution. The formed findings arrive as the dispatch list, each is routed to its acting track with an owner attached, and the routed findings are confirmed onward for commitment. Nothing the review learned is left without a destination.'
+business_purpose: 'It exists so every review finding reaches the track equipped to act on it, with an owner who knows it is theirs.'
+practical_context: 'It follows the forming of findings, when the finding set is handed over, and it completes once the routed findings with owners are confirmed and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian routes each formed finding to the logistics, asset utilization, or platform track that can act on it, attaches an owner to each, and confirms the routing.'

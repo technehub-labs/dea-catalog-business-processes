@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-im
 
 This is a **Activity** (level L3), named **Form Review Findings**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Conduct Operations Performance Review** (`processes:process-eo-improve-g3ngp3`). Its canonical ID is `processes:activity-eo-improve-rf46hj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity turns the assembled evidence into bounded conclusions about what the performance actually shows. The evidence pack arrives as the material, findings are formed and each is kept within what the evidence supports, and the finding set is confirmed onward for routing. The review speaks only as loudly as its evidence allows.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the review's conclusions are bounded by evidence, strong enough to act on and disciplined enough to defend.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the evidence assembly, when the pack is presented for reading, and it completes once the finding set is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian reads the evidence pack and forms bounded findings on logistics, asset usage, and platform performance, each held to what the evidence shows, and confirms the set for routing.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Form Review Findings |
+| `plain_language_description` | string | no | This activity turns the assembled evidence into bounded conclusions about what the performance actually shows. The … |
+| `business_purpose` | string | no | It exists so the review's conclusions are bounded by evidence, strong enough to act on and disciplined enough to defend. |
+| `practical_context` | string | no | It follows the evidence assembly, when the pack is presented for reading, and it completes once the finding set is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

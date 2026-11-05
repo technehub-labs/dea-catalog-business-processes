@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-design-ed7jd5 through concluding task processes:task-sd-design-record-e8qr6e, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Articulate Strategic Preference'
+plain_language_description: 'Someone now has to say which option wins and own the costs of that answer. Intake registers the comparison results, verification tests the reading against the scores, and processing writes out the preferred option together with the trade-offs the enterprise accepts in choosing it. Confirmation circulates the stated preference and the records custodian preserves it for the final commitment.'
+business_purpose: 'It turns a table of scores into a defensible statement of which way the enterprise should go and what it gives up by going there.'
+practical_context: 'It follows the comparison, opening when the results are presented at intake and closing when the stated preference is confirmed and stored.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function lead reads the comparison results, states which option the enterprise prefers and names the trade-offs accepted, and the confirmation custodian passes the stated preference to the colleagues preparing the strategic choice.'

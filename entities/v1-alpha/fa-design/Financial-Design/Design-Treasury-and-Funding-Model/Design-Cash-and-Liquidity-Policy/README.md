@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-de
 
 This is a **Activity** (level L3), named **Design Cash and Liquidity Policy**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Design Treasury and Funding Model** (`processes:process-fa-design-k5sgfa`). Its canonical ID is `processes:activity-fa-design-tsdptr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity sets the rules for how cash is held and liquidity assured as treasury goes about its work. The treasury policy review and the funding posture arrive as the inputs, the cash and liquidity rules are designed and reviewed against both, and the policy design is confirmed onward for the funding structure. The enterprise decides in advance how much cash it will always keep close.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so treasury runs on a designed cash and liquidity policy rather than on instinct in the moment.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the treasury and funding model design when treasury policy or funding posture is reviewed, and it completes once the liquidity policy design is confirmed for the funding structure.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance design authority designer sets the rules for holding cash and assuring liquidity against the policy review and funding posture, and confirms the design for the funding structure.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Cash and Liquidity Policy |
+| `plain_language_description` | string | no | This activity sets the rules for how cash is held and liquidity assured as treasury goes about its work. The treasury … |
+| `business_purpose` | string | no | It exists so treasury runs on a designed cash and liquidity policy rather than on instinct in the moment. |
+| `practical_context` | string | no | It opens the treasury and funding model design when treasury policy or funding posture is reviewed, and it completes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

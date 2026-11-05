@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-operate-j9cjzz through concluding task processes:task-eo-operate-record-55yn4u, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Record Asset Availability'
+plain_language_description: 'This activity keeps a running account of each asset''s availability, fed by both the planned and the unplanned work. Every maintenance event arrives as an entry, the per-asset picture is updated as events land, and the record is confirmed onward for whoever plans around asset uptime. The enterprise can say, from its own records, which assets it can rely on.'
+business_purpose: 'It exists so asset availability is known from a maintained record rather than guessed from memory.'
+practical_context: 'It runs continuously as maintenance events land, whether from scheduled work or breakdown response, and each update closes when the record entry is confirmed and retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A records custodian posts each maintenance event — planned or reactive — to the asset''s availability record, keeping the per-asset picture current for the planners.'

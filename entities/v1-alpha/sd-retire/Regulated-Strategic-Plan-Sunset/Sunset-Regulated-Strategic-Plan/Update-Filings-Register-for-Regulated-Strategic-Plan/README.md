@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-re
 
 This is a **Activity** (level L3), named **Update Filings Register for Regulated Strategic Plan**, currently **candidate (yellow)**. It is part of the **Sunset Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Retire. It belongs to **Sunset Regulated Strategic Plan** (`processes:process-sd-retire-umxf3c`). Its canonical ID is `processes:activity-sd-retire-6m38cq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The official list of lodged plans must now show the truth. Intake registers the identified pairing and the register itself, verification checks the entry to be amended, and processing marks the plan as retired on the register, records the issuing authority and the directive and retirement dates, and keeps the successor's standing visible on the same entry. Confirmation transmits the amended register to the supervisor and the records custodian preserves the update evidence.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It keeps the public record of lodged plans truthful, marking the retirement where the supervisor and every future reader can see it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows supersession identification, opening at intake of the register and pairing and closing when the transmitted update is confirmed and preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function registrar amends the register entry to mark the plan retired, enters the authority and the two dates, and the confirmation custodian transmits the amended register to the supervising authority for their records.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Update Filings Register for Regulated Strategic Plan |
+| `plain_language_description` | string | no | The official list of lodged plans must now show the truth. Intake registers the identified pairing and the register … |
+| `business_purpose` | string | no | It keeps the public record of lodged plans truthful, marking the retirement where the supervisor and every future … |
+| `practical_context` | string | no | It follows supersession identification, opening at intake of the register and pairing and closing when the transmitted … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

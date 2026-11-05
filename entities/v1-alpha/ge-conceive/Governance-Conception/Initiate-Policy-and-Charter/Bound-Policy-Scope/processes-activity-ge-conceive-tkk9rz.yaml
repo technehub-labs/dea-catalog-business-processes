@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-conceive-xp6fye through concluding task processes:task-ge-conceive-record-mwn547, whose outcome — Case file retained for Bound Policy Scope under the records retention schedule with cryptographic integrity protection; statutory retention horizon applied …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Bound Policy Scope'
+plain_language_description: 'This activity draws the boundary of what the new instrument — a policy regime, a charter, or a board mandate — will cover, and just as firmly what it will not. The governance strategy, regulatory requirement, or reorganisation arrives as the reason for the initiative, the scope is bounded against it, and the bounded scope is confirmed onward for the authority proposals. Instruments that try to govern everything end up governing nothing well.'
+business_purpose: 'It exists so a new instrument knows precisely what it governs, and what it deliberately leaves alone.'
+practical_context: 'It opens the policy and charter initiation when a new governance strategy, regulatory requirement, or reorganisation demands an instrument, and it completes once the bounded scope is confirmed for the authority proposals.'
+worked_example:
+  agent_type: human
+  narrative: 'A governing board lead bounds what the new policy regime will and will not cover against the regulatory requirement behind it, and confirms the scope for the authority proposals.'

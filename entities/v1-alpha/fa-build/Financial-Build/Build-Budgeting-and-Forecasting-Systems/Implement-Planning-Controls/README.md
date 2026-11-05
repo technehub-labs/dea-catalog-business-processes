@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 
 This is a **Activity** (level L3), named **Implement Planning Controls**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Build Budgeting and Forecasting Systems** (`processes:process-fa-build-92v24c`). Its canonical ID is `processes:activity-fa-build-dsxzrc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity puts the designed financial controls in place around the planning tools. The controls design arrives as the specification, the controls are implemented across the systems and checked against it, and the implemented planning controls are confirmed onward for readiness. The planning numbers gain protection while they are being built, not after.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the budgeting and forecasting systems run under designed controls from the start.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the model and integration work, when the financial controls design is to hand, and it completes once the implemented planning controls are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance function builder implements the designed controls across the planning systems, checks each one against the controls design, and confirms the implemented set.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Implement Planning Controls |
+| `plain_language_description` | string | no | This activity puts the designed financial controls in place around the planning tools. The controls design arrives as … |
+| `business_purpose` | string | no | It exists so the budgeting and forecasting systems run under designed controls from the start. |
+| `practical_context` | string | no | It follows the model and integration work, when the financial controls design is to hand, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

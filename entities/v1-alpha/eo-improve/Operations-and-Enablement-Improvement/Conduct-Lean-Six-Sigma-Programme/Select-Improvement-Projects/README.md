@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-im
 
 This is a **Activity** (level L3), named **Select Improvement Projects**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Conduct Lean Six Sigma Programme** (`processes:process-eo-improve-us272s`). Its canonical ID is `processes:activity-eo-improve-rdjvga`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity chooses which projects, drawn from the waste and variation evidence, the programme will take on. The performance evidence and the programme mandate arrive as the basis, candidate projects are weighed and bounded, and the chosen portfolio is confirmed onward for delivery. Improvement effort is spent deliberately rather than scattered.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the programme's effort lands on bounded projects with real waste and variation to remove.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the improvement programme, when the performance evidence and mandate are presented, and it completes once the selected portfolio is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function lead weighs the candidate projects against the waste and variation evidence and the programme mandate, bounds and selects the portfolio, and confirms it for delivery.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Select Improvement Projects |
+| `plain_language_description` | string | no | This activity chooses which projects, drawn from the waste and variation evidence, the programme will take on. The … |
+| `business_purpose` | string | no | It exists so the programme's effort lands on bounded projects with real waste and variation to remove. |
+| `practical_context` | string | no | It opens the improvement programme, when the performance evidence and mandate are presented, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

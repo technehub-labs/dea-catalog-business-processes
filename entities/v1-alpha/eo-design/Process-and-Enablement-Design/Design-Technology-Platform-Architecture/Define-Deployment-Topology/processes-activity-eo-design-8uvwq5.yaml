@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-design-7gtead through concluding task processes:task-eo-design-record-g6msaf, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Define Deployment Topology'
+plain_language_description: 'This activity settles where each component will run — which environments, how they are distributed, and where they sit geographically. The component specification and the integration catalogue arrive as the inputs, the topology is defined and checked against both, and the definition is confirmed onward for the architecture''s commitment. The platform gains a geography as well as a shape.'
+business_purpose: 'It exists so every platform component has a designed place to run, decided with the connections in mind.'
+practical_context: 'It follows the integration design, when the components and their connections are specified, and it completes once the topology definition is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function designer assigns each specified component its environments and distribution, checks the layout against the integration catalogue, and confirms the topology definition.'

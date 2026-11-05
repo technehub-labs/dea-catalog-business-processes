@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-bu
 
 This is a **Activity** (level L3), named **Provision Warehouse Capacity**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Build Logistics Network** (`processes:process-eo-build-ba6ykz`). Its canonical ID is `processes:activity-eo-build-6rz88v`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity secures the storage space each node in the network needs. The capacity sizing for the nodes arrives as the requirement, space is provisioned to match it and checked node by node, and the provisioned capacity is confirmed onward. The buildings exist; now they can actually hold what the flows will bring them.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every network node has the storage capacity its flows demand, before goods start moving.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the establishment of the network nodes, once node capacity sizing is to hand, and it completes when the provisioned capacity is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian provisions storage space to the sizing worked out for each node, checks the provisioned capacity against the requirement, and confirms it for the network verification.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Provision Warehouse Capacity |
+| `plain_language_description` | string | no | This activity secures the storage space each node in the network needs. The capacity sizing for the nodes arrives as … |
+| `business_purpose` | string | no | It exists so every network node has the storage capacity its flows demand, before goods start moving. |
+| `practical_context` | string | no | It follows the establishment of the network nodes, once node capacity sizing is to hand, and it completes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

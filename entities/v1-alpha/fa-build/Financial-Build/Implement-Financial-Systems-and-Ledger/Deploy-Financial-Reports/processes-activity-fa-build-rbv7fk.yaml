@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-build-d5kb5m through concluding task processes:task-fa-build-record-tcr27x, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Deploy Financial Reports'
+plain_language_description: 'This activity builds the reports the books will be expected to turn out into the live systems. The reporting requirements and disclosure needs arrive as the specification, reports are deployed against the configured ledger and checked for output, and the deployed reports are confirmed onward for readiness. The ledger can now answer the questions it was built to answer.'
+business_purpose: 'It exists so the ledger produces the reports its readers need, as designed, from live data.'
+practical_context: 'It follows the posting configuration, when the reporting requirements and disclosure needs are to hand, and it completes once the deployed reports are confirmed and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance function builder deploys the required reports against the configured ledger, checks each renders correctly from live data, and confirms the deployed set.'

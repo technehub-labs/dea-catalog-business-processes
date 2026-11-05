@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Match Invoices**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Run Accounts Payable** (`processes:process-fa-operate-wkqaqp`). Its canonical ID is `processes:activity-fa-operate-f3c2rt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity checks each incoming invoice against the order that placed it and the receipt that confirmed it. Supplier invoices arrive continuously, each is matched against its purchase order and receipt, and the matched invoices are confirmed onward for approval. The enterprise pays only for what it ordered and actually got.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so no invoice is paid without proof it matches something ordered and received.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs as supplier invoices arrive, and it completes once each matched invoice is confirmed onward for the payment approval.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A payables custodian matches each arriving supplier invoice against its purchase order and the goods receipt, clears the ones that agree, and confirms them for approval.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Match Invoices |
+| `plain_language_description` | string | no | This activity checks each incoming invoice against the order that placed it and the receipt that confirmed it. Supplier … |
+| `business_purpose` | string | no | It exists so no invoice is paid without proof it matches something ordered and received. |
+| `practical_context` | string | no | It runs as supplier invoices arrive, and it completes once each matched invoice is confirmed onward for the payment … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

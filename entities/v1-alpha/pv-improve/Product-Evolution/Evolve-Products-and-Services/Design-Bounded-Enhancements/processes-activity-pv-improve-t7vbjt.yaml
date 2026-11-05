@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-improve-6c2xvf through concluding task processes:task-pv-improve-record-bvs2t6, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design Bounded Enhancements'
+plain_language_description: 'With the driver analysis in hand, product management sketches changes that answer those drivers while staying deliberately small in scope. The analysis arrives at intake, is verified as a usable baseline, and each candidate change is worked into a design; confirmation releases the designs toward commitment and the trail is archived.'
+business_purpose: 'It shapes the response to evolution drivers into enhancements that are ambitious enough to matter but contained enough to deliver, feeding the commitment step.'
+practical_context: 'It runs between driver analysis and commitment in the evolution sequence, opening when the analysis is presented and closing when confirmed enhancement designs are filed.'
+worked_example:
+  agent_type: human
+  narrative: 'A product management designer takes the confirmed driver analysis, registers it at intake, drafts a modest redesign of the affected service element rather than a wholesale rebuild, has the design checked at verification, and passes the confirmed set toward the commitment step.'

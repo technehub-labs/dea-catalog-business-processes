@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-co
 
 This is a **Activity** (level L3), named **Articulate Value Exchange**, currently **candidate (yellow)**. It is part of the **Customer Strategy Conception** process context, domain `pr`, lifecycle stage Conceive. It belongs to **Develop Customer Strategy** (`processes:process-pr-conceive-emfgju`). Its canonical ID is `processes:activity-pr-conceive-6habrm`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity states plainly what each side of the relationship puts in and takes out. The framed segment arrives as the counterparty to design for, the exchange is articulated in both directions and checked for fairness, and the articulated exchange is confirmed onward for the demand thesis. The deal the enterprise offers its customers is set down here, in full.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the relationship's give-and-take is stated explicitly rather than left implicit in the product.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the segment framing, once the chosen customers are fixed, and it completes when the articulated value exchange is confirmed onward for the demand thesis.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A customer relationship management lead states what the enterprise gives its chosen customers and what it receives in return, and confirms the exchange for the demand thesis.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Articulate Value Exchange |
+| `plain_language_description` | string | no | This activity states plainly what each side of the relationship puts in and takes out. The framed segment arrives as … |
+| `business_purpose` | string | no | It exists so the relationship's give-and-take is stated explicitly rather than left implicit in the product. |
+| `practical_context` | string | no | It follows the segment framing, once the chosen customers are fixed, and it completes when the articulated value … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

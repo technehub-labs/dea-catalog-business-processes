@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-retire-wkbrsa through concluding task processes:task-fa-retire-record-8c3xgb, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Adjudicate Policyholder Claims'
+plain_language_description: 'This activity hears each claim from a policyholder or priority creditor, weighs it under the run-off regime''s priority order, and rules — pay, part-pay, or deny — with the reasoning written down. Claim submissions and their supporting documentation arrive against the priority waterfall, each claim is validated and adjudicated, and the adjudicated register is confirmed onward. The enterprise''s last promises are kept, in order, on the record.'
+business_purpose: 'It exists so policyholders and priority creditors are paid according to the regime''s priority order, each decision evidenced.'
+practical_context: 'It runs through the run-off as claim submissions arrive against the priority waterfall, and it completes when each adjudication — payment, part-payment, or denial with rationale — is confirmed into the claim register.'
+worked_example:
+  agent_type: human
+  narrative: 'A claims adjudicator validates a policyholder''s submission against the documentation, rules on it under the priority waterfall, and records the decision with its rationale in the claim register.'

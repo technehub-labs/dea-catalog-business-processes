@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-conceive-xa4h2k through concluding task processes:task-sd-conceive-record-4c6vym, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit Strategic Horizons'
+plain_language_description: 'The horizons are bounded, marked and aligned; commitment is all that remains. Intake registers the aligned set, a final verification confirms the periods and markers are complete, and the commitment locks the horizons in for the strategy work ahead. Confirmation notifies downstream consumers and the records custodian preserves the committed horizons on the audit trail.'
+business_purpose: 'It finalises the planning calendar as a committed artifact, closing horizon framing and equipping later strategy work with fixed periods.'
+practical_context: 'It opens once alignment is done and closes with the commitment confirmed, downstream consumers notified and the record preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function lead commits the aligned horizons, the confirmation custodian tells downstream strategy teams the committed windows and milestones are available, and the records custodian archives the evidence for the planning cycle.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-im
 
 This is a **Activity** (level L3), named **Maintain Win-Back Pipeline**, currently **candidate (yellow)**. It is part of the **Customer Insight and Retention** process context, domain `pr`, lifecycle stage Improve. It belongs to **Operate Customer Retention Programs** (`processes:process-pr-improve-t6uvan`). Its canonical ID is `processes:activity-pr-improve-k6eb79`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity spots the customers who have drifted away or are drifting, and keeps the list of chances to win them back current. The active base and its churn history arrive as the territory, lapsed and lapsing customers are identified and their win-back chances kept live, and the maintained pipeline is confirmed onward. Departed customers are treated as recoverable, not as dead.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so lapsed customers remain named, live opportunities rather than forgotten losses.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs continuously across the base as customers lapse or begin lapping, and it completes as the maintained win-back opportunity list is confirmed onward.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A customer relationship management officer spots the drifted and drifting customers, keeps each win-back chance current on the list, and confirms the maintained pipeline onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Maintain Win-Back Pipeline |
+| `plain_language_description` | string | no | This activity spots the customers who have drifted away or are drifting, and keeps the list of chances to win them back … |
+| `business_purpose` | string | no | It exists so lapsed customers remain named, live opportunities rather than forgotten losses. |
+| `practical_context` | string | no | It runs continuously across the base as customers lapse or begin lapping, and it completes as the maintained win-back … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

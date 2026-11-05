@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Respond to Asset Breakdowns**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Asset Maintenance** (`processes:process-eo-operate-j9cjzz`). Its canonical ID is `processes:activity-eo-operate-x3jh4n`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity mobilizes when an asset fails without warning, gets it back in service, and writes up what was done. The breakdown event arrives as the trigger, the response is worked and the asset restored, and the reactive work is recorded. Unplanned failure is met with a practiced routine rather than a scramble.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so unplanned asset failures cost the operation as little availability as possible and leave an honest record behind.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs whenever a breakdown event lands, from the failure to the asset's return to service, and it completes once the reactive work is recorded and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A maintenance crew answers a breakdown call, restores the failed asset to service as quickly as the repair allows, and writes up the reactive work for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Respond to Asset Breakdowns |
+| `plain_language_description` | string | no | This activity mobilizes when an asset fails without warning, gets it back in service, and writes up what was done. The … |
+| `business_purpose` | string | no | It exists so unplanned asset failures cost the operation as little availability as possible and leave an honest record … |
+| `practical_context` | string | no | It runs whenever a breakdown event lands, from the failure to the asset's return to service, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

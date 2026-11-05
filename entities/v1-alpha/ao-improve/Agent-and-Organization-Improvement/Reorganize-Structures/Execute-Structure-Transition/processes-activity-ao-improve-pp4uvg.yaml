@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-improve-xs59e2 through concluding task processes:task-ao-improve-record-z649dm, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Execute the Structure Transition'
+plain_language_description: 'This activity carries out the sequenced transition, moving units, roles, and agents through the change in the agreed order. The sequence comes in first, each step is executed and checked against it as the work proceeds, and the executed transition is confirmed once complete. What is filed shows the change was carried out to the plan rather than improvised along the way.'
+business_purpose: 'It exists so the planned structural change genuinely happens, in the agreed order, across every affected unit, role, and agent.'
+practical_context: 'It runs once the transition sequence is confirmed, when the sequenced steps are presented for execution, and it closes when the executed transition is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian walks the transition step by step, moves each unit and role in the agreed order, checks progress against the sequence, and confirms the executed transition for the handover recording.'

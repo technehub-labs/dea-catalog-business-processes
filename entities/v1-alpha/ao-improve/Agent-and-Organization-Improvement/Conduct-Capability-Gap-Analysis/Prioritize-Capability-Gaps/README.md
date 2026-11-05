@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 
 This is a **Activity** (level L3), named **Prioritize Capability Gaps**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Conduct Capability Gap Analysis** (`processes:process-ao-improve-h3vgyf`). Its canonical ID is `processes:activity-ao-improve-rk3g4q`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity ranks the identified shortfalls by how much each one matters to the organization's structure and direction. The gap list comes in, each entry is weighed for its impact and placed in order, and the ranking is confirmed with the design authority. The output tells development planning which shortfalls to treat first rather than presenting an undifferentiated list.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so development effort goes first to the shortfalls that hurt the organization most, rather than being spent evenly across everything found.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the capability gaps have been identified, when the gap list is presented for ranking, and it closes when the prioritized list is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian weighs each identified gap by its bearing on critical roles and the organization's direction, puts the one affecting a key role at the top, and confirms the ranking with the design authority.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Prioritize the Capability Gaps |
+| `plain_language_description` | string | no | This activity ranks the identified shortfalls by how much each one matters to the organization's structure and … |
+| `business_purpose` | string | no | It exists so development effort goes first to the shortfalls that hurt the organization most, rather than being spent … |
+| `practical_context` | string | no | It runs once the capability gaps have been identified, when the gap list is presented for ranking, and it closes when … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

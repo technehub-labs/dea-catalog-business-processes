@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-activate-6qzuve through concluding task processes:task-pr-activate-record-eenzec, whose outcome — Closure case file retained for Classify Party Risk under the records retention schedule with cryptographic integrity protection; cryptographic destruction …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Classify Party Risk'
+plain_language_description: 'This activity weighs everything already learned — who the applicant is, who really owns them, where they operate, what they will buy — into one defensible risk rating, weighed against the sectors the regime flags as risk-sensitive. The verified identity and resolved ownership arrive as its inputs, the rating is assigned and justified, and the classified applicant is confirmed onward for the decision. Due diligence becomes a single, arguable judgement here.'
+business_purpose: 'It exists so every applicant carries a defensible risk rating built from verified facts, not impressions.'
+practical_context: 'It follows the identity and ownership work, once both are verified and resolved, and it completes when the assigned risk classification is confirmed onward for the approval decision.'
+worked_example:
+  agent_type: human
+  narrative: 'A risk function officer weighs the verified identity, the resolved ownership, and the jurisdictional exposure into a defensible risk rating, and confirms the classification onward.'

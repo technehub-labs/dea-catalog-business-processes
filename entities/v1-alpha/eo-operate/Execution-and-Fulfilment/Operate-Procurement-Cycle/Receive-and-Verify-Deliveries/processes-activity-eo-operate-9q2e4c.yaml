@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-operate-vzcxx7 through concluding task processes:task-eo-operate-record-4xmkw9, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Receive and Verify Deliveries'
+plain_language_description: 'This activity takes in what the suppliers send, checks each arrival against the order that called for it, and writes up the receipt. Deliveries arrive at the dock, goods are verified against their purchase orders, and the receipts are recorded. What was promised and what turned up are reconciled here, in person.'
+business_purpose: 'It exists so the enterprise only accepts, and pays for later, what it actually ordered and received in good order.'
+practical_context: 'It runs as supplier deliveries arrive, each checked against its purchase order, and it completes when the verified receipts are recorded and retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A receiving custodian checks each supplier delivery against its purchase order, verifies the goods received, and writes up the receipt for the record.'

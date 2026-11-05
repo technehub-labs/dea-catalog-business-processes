@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-de
 
 This is a **Activity** (level L3), named **Map Journey Stages**, currently **candidate (yellow)**. It is part of the **Customer Experience Design** process context, domain `pr`, lifecycle stage Design. It belongs to **Design Customer Journey** (`processes:process-pr-design-j6fakx`). Its canonical ID is `processes:activity-pr-design-bp2kwt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity breaks the customer's whole path through the enterprise into named stages. The designed experience arrives as the terrain to be mapped, stages are drawn from first contact to last and reviewed for completeness, and the mapped stages are confirmed onward for the moments work. The journey gains its chapters here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the customer's end-to-end path is understood as deliberate, named stages.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the journey design once the customer experience has been designed, and it completes when the mapped stages are confirmed onward for the moments-of-truth work.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A customer relationship management designer breaks the customer's whole path into its named stages, reviews the map for completeness, and confirms the stages onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Map Journey Stages |
+| `plain_language_description` | string | no | This activity breaks the customer's whole path through the enterprise into named stages. The designed experience … |
+| `business_purpose` | string | no | It exists so the customer's end-to-end path is understood as deliberate, named stages. |
+| `practical_context` | string | no | It opens the journey design once the customer experience has been designed, and it completes when the mapped stages are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

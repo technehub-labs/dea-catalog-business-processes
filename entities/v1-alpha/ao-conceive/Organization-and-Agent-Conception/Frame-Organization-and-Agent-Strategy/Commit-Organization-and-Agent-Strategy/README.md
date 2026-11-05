@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 
 This is a **Activity** (level L3), named **Commit Organization and Agent Strategy**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Frame Organization and Agent Strategy** (`processes:process-ao-conceive-e3u8s2`). Its canonical ID is `processes:activity-ao-conceive-476rpj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity is where the drafted organization and agent strategy is formally ratified and put to work. The drafted strategy is taken in and reviewed, its commitment is confirmed at the level that owns the decision, and the committed strategy is handed to the framing and mix work that follows. An audit record of the commitment is preserved so the enterprise can trace its workforce direction back to this point.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise's workforce direction is a committed decision that model framing and mix conception must follow.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It occurs at the close of strategy framing, when the drafted strategy is presented for ratification, and it completes once the committed strategy is confirmed, handed on, and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian brings the drafted strategy forward for board-level ratification, records the commitment once it is made, and notifies the model framing and mix conception teams that the committed strategy is theirs to execute.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit the Organization and Agent Strategy |
+| `plain_language_description` | string | no | This activity is where the drafted organization and agent strategy is formally ratified and put to work. The drafted … |
+| `business_purpose` | string | no | It exists so the enterprise's workforce direction is a committed decision that model framing and mix conception must … |
+| `practical_context` | string | no | It occurs at the close of strategy framing, when the drafted strategy is presented for ratification, and it completes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

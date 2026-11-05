@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-activate-jqxtqn through concluding task processes:task-ao-activate-record-d494s9, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Record Supervised-Training Completion'
+plain_language_description: 'This activity makes sure the evidence that a licensed individual finished their supervised training is captured and kept on the personnel record. The training plan and the completion evidence are logged in and checked, the completion record is drawn up, its availability is confirmed to those who depend on it, and it is preserved for later audit. Without that preserved record, the individual''s readiness for live work in the licensed role cannot be demonstrated.'
+business_purpose: 'It exists so the enterprise can show from its own records that every licensed role holder completed the supervised training their role requires.'
+practical_context: 'It takes place during mobilization when the role''s training plan and the supervised-completion evidence are ready, and it closes once the completion record is held at the agreed retention tier with retrieval handles established.'
+worked_example:
+  agent_type: human
+  narrative: 'A records custodian for workforce management receives the signed-off supervised-training completion for a newly type-rated crew member, verifies it against the role''s training plan, and preserves the completion record on the personnel file.'

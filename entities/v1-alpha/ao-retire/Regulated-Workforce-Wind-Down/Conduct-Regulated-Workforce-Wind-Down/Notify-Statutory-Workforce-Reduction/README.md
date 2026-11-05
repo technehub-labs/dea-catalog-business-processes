@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-re
 
 This is a **Activity** (level L3), named **Notify Statutory Workforce Reduction**, currently **candidate (yellow)**. It is part of the **Workforce Retirement** process context, domain `ao`, lifecycle stage Retire. It belongs to **Conduct Regulated Workforce Wind-Down** (`processes:process-ao-retire-g3eyr8`). Its canonical ID is `processes:activity-ao-retire-uqgpmh`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity serves the legally required advance notice when an employment reduction is large enough to trigger it. The authorised wind-down and the scoped workforce roster arrive first, the filings to the authorities and the individual notices are prepared and served, and the notice record is confirmed and retained. The clock on the wind-down's other legal obligations effectively starts here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so a large-scale reduction meets its advance-notice law, with the filings and individual notices on record.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the wind-down once the event is authorised and the reduction crosses the thresholds the labour law sets, and it closes when the served notices are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management custodian serves the advance notice for an authorised unit wind-down, covering the filings to the authorities and an individual notice to each affected person, and files the notice record for the consultation step.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Serve the Statutory Advance Notice |
+| `plain_language_description` | string | no | This activity serves the legally required advance notice when an employment reduction is large enough to trigger it … |
+| `business_purpose` | string | no | It exists so a large-scale reduction meets its advance-notice law, with the filings and individual notices on record. |
+| `practical_context` | string | no | It opens the wind-down once the event is authorised and the reduction crosses the thresholds the labour law sets, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-re
 
 This is a **Activity** (level L3), named **Submit Statutory Dissolution Filings**, currently **candidate (yellow)**. It is part of the **Governance Unwind** process context, domain `ge`, lifecycle stage Retire. It belongs to **Effect Regulator-Mandated Governance Unwind** (`processes:process-ge-retire-mjq5hg`). Its canonical ID is `processes:activity-ge-retire-rck7n9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws up, lodges, and records the dissolution paperwork the controlling statute and the order demand — tax-status termination, corporate dissolution at the registry, charity asset notifications, receivership reports, and the surrender notice — closing the entity's official life. The reduced regime and settled custodianship arrive as the preconditions, the filings are prepared and lodged with each authority, and the recorded filings are confirmed for the record. The enterprise's official existence ends in properly filed paperwork.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the mandated dissolution is completed by properly lodged filings with every authority the law names.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the regime is reduced and custodianship is settled, and it completes when the lodged dissolution filings with each authority's record are confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance function officer lodges the dissolution filings with each authority — tax-status termination, corporate dissolution, charity notifications, receivership reports, surrender notice — and confirms them recorded.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Submit Statutory Dissolution Filings |
+| `plain_language_description` | string | no | This activity draws up, lodges, and records the dissolution paperwork the controlling statute and the order demand — … |
+| `business_purpose` | string | no | It exists so the mandated dissolution is completed by properly lodged filings with every authority the law names. |
+| `practical_context` | string | no | It runs once the regime is reduced and custodianship is settled, and it completes when the lodged dissolution filings … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

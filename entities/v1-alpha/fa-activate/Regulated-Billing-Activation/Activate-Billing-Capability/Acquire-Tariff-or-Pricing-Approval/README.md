@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-ac
 
 This is a **Activity** (level L3), named **Acquire Tariff or Pricing Approval**, currently **candidate (yellow)**. It is part of the **Activate Billing Capability** process context, domain `fa`, lifecycle stage Activate. It belongs to **Activate Billing Capability** (`processes:process-fa-activate-bzfywk`). Its canonical ID is `processes:activity-fa-activate-u8sq5k`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity secures the regulator's approval of the tariff or pricing the enterprise will charge under, and preserves it on the billing record. The capability description goes in with the pricing submission, the approval comes back and is examined, and the preserved approval is confirmed onward. What the enterprise may charge then stands on a regulator's signature.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so live invoicing charges prices or tariffs the regulator has formally approved, with the approval kept on record.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs while the billing capability is gated for live service, once the pricing submission is ready to go in, and it completes when the tariff or pricing approval is preserved on the billing record and confirmed.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management officer lodges the pricing submission with the industry regulator alongside the capability description, receives the rate-case approval back, and has it preserved on the billing record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Acquire Tariff or Pricing Approval |
+| `plain_language_description` | string | no | This activity secures the regulator's approval of the tariff or pricing the enterprise will charge under, and preserves … |
+| `business_purpose` | string | no | It exists so live invoicing charges prices or tariffs the regulator has formally approved, with the approval kept on … |
+| `practical_context` | string | no | It runs while the billing capability is gated for live service, once the pricing submission is ready to go in, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

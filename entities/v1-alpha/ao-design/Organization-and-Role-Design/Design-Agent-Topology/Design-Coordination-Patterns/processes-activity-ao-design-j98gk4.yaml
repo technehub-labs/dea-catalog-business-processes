@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-design-8fzp2b through concluding task processes:task-ao-design-record-zyg6gk, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design the Coordination Patterns'
+plain_language_description: 'This activity works out how the placed people, artificial agents, and hybrid arrangements will work together in practice. The decided placements come in first, the handoffs and collaboration patterns between them are designed and reviewed, and the patterns are confirmed with the design authority. They are then recorded so the committed topology shows not just who sits where, but how they connect.'
+business_purpose: 'It exists so the placed agents do not merely coexist but interact through deliberate, designed patterns.'
+practical_context: 'It runs once substrate placements have been decided, when the placements are presented for coordination work, and it closes when the designed patterns are confirmed and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A designer for the organization design authority sketches how a human reviewer and an artificial drafting agent will hand work to each other, confirms the pattern with the wider design team, and files it alongside the placement decisions.'

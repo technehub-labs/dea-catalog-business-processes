@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-design-k5sgfa through concluding task processes:task-fa-design-record-49ybkn, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design Funding Structure'
+plain_language_description: 'This activity works out the make-up of the enterprise''s funding — which facilities and instruments, maturing when — that the finance strategy needs behind it. The funding and capital approach arrives as the frame, the funding structure is designed and checked against it, and the structure design is confirmed onward for the operating model. The debt and capital mix becomes a drawing, not a hope.'
+business_purpose: 'It exists so the enterprise''s funding composition is designed to match the strategy''s capital approach.'
+practical_context: 'It follows the liquidity policy, when the funding and capital approach is to hand, and it completes once the funding structure design is confirmed for the operating model.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance design authority designer works out the facilities, instruments, and maturities making up the funding structure, checks the design against the capital approach, and confirms it.'

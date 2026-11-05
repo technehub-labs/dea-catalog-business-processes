@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-build-tqybhd through concluding task processes:task-eo-build-record-nn4unk, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Secure Facility Sites'
+plain_language_description: 'This activity acquires and takes control of the sites the facility blueprint calls for. The committed blueprint arrives as the requirement, sites are secured at the required positions and checked against it, and the secured sites are confirmed onward for fitting out. The operation''s buildings stop being plans and become places the enterprise controls.'
+business_purpose: 'It exists so the enterprise holds actual control of the sites its operation needs before any fitting out begins.'
+practical_context: 'It opens facility provisioning, once the facility blueprint is committed, and it completes when the secured sites are confirmed for fit-out.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian secures each site at the position the blueprint requires, checks the acquisitions against it, and confirms the secured sites for the fit-out step.'

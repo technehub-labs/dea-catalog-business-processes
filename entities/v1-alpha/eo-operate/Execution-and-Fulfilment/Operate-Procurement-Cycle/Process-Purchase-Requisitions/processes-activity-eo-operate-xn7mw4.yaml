@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-operate-vzcxx7 through concluding task processes:task-eo-operate-record-nkzbm7, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Process Purchase Requisitions'
+plain_language_description: 'This activity takes each incoming purchase request, checks it against the rules and the money set aside, and approves it for ordering. Requisitions arrive from across the operation, each is validated against policy and budget, and the approved ones are confirmed onward for ordering. Wanting something and being allowed to buy it are separated here.'
+business_purpose: 'It exists so only requests that pass the policy and budget checks become orders the enterprise commits to.'
+practical_context: 'It opens the procurement cycle, when requisitions arrive from the operation, and it completes as each validated request is approved and confirmed for ordering.'
+worked_example:
+  agent_type: human
+  narrative: 'A procurement custodian validates each incoming requisition against the purchasing rules and its budget line, approves the ones that pass, and confirms them for ordering.'

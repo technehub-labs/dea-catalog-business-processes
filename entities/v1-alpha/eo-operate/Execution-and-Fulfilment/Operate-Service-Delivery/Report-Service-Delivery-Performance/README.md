@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Report Service Delivery Performance**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Service Delivery** (`processes:process-eo-operate-2jnz85`). Its canonical ID is `processes:activity-eo-operate-x8u9ez`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity rolls the operating window's actuals up into a performance picture of the service, for the process group that owns it. Window actuals arrive as the raw material, performance is aggregated into reporting, and the service report is confirmed onward. Day-to-day firefighting becomes a trend the enterprise can steer by.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so service performance is seen as an aggregate trend by its owners, not just as one window at a time.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs on the reporting cadence once operating-window actuals have accumulated, and it completes when the service performance report is confirmed and delivered to the owning process group.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A service custodian aggregates the window actuals into service performance reporting, and confirms the report for the process group that owns the operation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Report Service Delivery Performance |
+| `plain_language_description` | string | no | This activity rolls the operating window's actuals up into a performance picture of the service, for the process group … |
+| `business_purpose` | string | no | It exists so service performance is seen as an aggregate trend by its owners, not just as one window at a time. |
+| `practical_context` | string | no | It runs on the reporting cadence once operating-window actuals have accumulated, and it completes when the service … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

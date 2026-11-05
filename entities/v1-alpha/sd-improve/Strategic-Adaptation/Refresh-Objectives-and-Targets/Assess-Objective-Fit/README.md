@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-im
 
 This is a **Activity** (level L3), named **Assess Objective Fit**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. It belongs to **Refresh Objectives and Targets** (`processes:process-sd-improve-aqbrm7`). Its canonical ID is `processes:activity-sd-improve-e2c2ue`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The evidence is in; the question is whether the current measures still make sense. Intake registers the gathered evidence, scrutiny tests each objective and its target against what performance is actually showing, and processing records a fit verdict for every line — keep, tighten, or retire. Confirmation communicates the assessment downstream and the records custodian preserves it ready for redrafting.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It separates the measures that still serve the direction from those that have gone stale, focusing the redraft where it matters.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows evidence gathering, opening at intake of the gathered evidence and closing when the fit verdicts are confirmed and preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Strategy function reviewers read each objective and target against the evidence pack, mark one measure for retirement and two for tightening, and the confirmation custodian passes the fit verdicts to the redrafting team.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assess Objective Fit |
+| `plain_language_description` | string | no | The evidence is in; the question is whether the current measures still make sense. Intake registers the gathered … |
+| `business_purpose` | string | no | It separates the measures that still serve the direction from those that have gone stale, focusing the redraft where it … |
+| `practical_context` | string | no | It follows evidence gathering, opening at intake of the gathered evidence and closing when the fit verdicts are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

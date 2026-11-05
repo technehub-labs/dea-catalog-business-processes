@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 
 This is a **Activity** (level L3), named **Verify Prototype Readiness**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. It belongs to **Build Innovation Prototype** (`processes:process-pv-build-8jc3y4`). Its canonical ID is `processes:activity-pv-build-gznqhc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity proves the finished prototype can actually run its hypothesis test inside the time the experiment allows. The documented, instrumented prototype arrives with the experiment design and timebox as the yardstick, readiness is examined against both, and the determination is confirmed for testing. The experiment starts only when the prototype is proven test-ready.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the experiment begins on a prototype proven able to test its hypothesis in time.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the prototype build once construction, instrumentation, and documentation are complete, and it completes when the readiness determination is confirmed within the experiment's timebox.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management verifier checks the instrumented prototype can run the hypothesis test inside the timebox, and confirms the readiness determination for testing.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Verify Prototype Readiness |
+| `plain_language_description` | string | no | This activity proves the finished prototype can actually run its hypothesis test inside the time the experiment allows … |
+| `business_purpose` | string | no | It exists so the experiment begins on a prototype proven able to test its hypothesis in time. |
+| `practical_context` | string | no | It closes the prototype build once construction, instrumentation, and documentation are complete, and it completes when … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

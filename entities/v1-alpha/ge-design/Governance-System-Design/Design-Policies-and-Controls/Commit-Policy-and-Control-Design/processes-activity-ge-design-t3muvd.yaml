@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-design-kpsj5b through concluding task processes:task-ge-design-record-hw8hwh, whose outcome — Case file retained for Commit Policy and Control Design under the records retention schedule with cryptographic integrity protection; statutory retention …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit Policy and Control Design'
+plain_language_description: 'This activity draws the policy artefacts, the control objectives, and the regime enforcing them together into one design and gives it formal standing. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed design is confirmed as the basis for codification and build. Governance''s rulebook design becomes one owned decision.'
+business_purpose: 'It exists so codification and build start from one committed policy and control design.'
+practical_context: 'It closes the policy and control design, once artefacts, objectives, and regime are designed, and it completes when the committed design is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian assembles the policy artefacts, control objectives, and compliance regime into the design document, obtains ratification, and records the commitment for codification.'

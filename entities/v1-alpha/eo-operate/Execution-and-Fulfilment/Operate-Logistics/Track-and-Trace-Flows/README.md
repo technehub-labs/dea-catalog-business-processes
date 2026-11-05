@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Track and Trace Flows**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Logistics** (`processes:process-eo-operate-zh9m57`). Its canonical ID is `processes:activity-eo-operate-fvtgcr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity keeps tabs on where every moving shipment is right now, logging each step of its journey. Movement events arrive as shipments progress, the tracking record is kept current from them, and the maintained visibility is confirmed onward. When someone asks where an order is, the answer comes from this record.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise always knows where its in-flight shipments are, from its own tracking record.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs continuously while shipments are in flight, logging movement events as they occur, and the tracking record closes each update when it is confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A logistics custodian logs each movement event as shipments progress through the network, keeping the tracking record current enough to answer where any order stands.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Track and Trace Flows |
+| `plain_language_description` | string | no | This activity keeps tabs on where every moving shipment is right now, logging each step of its journey. Movement events … |
+| `business_purpose` | string | no | It exists so the enterprise always knows where its in-flight shipments are, from its own tracking record. |
+| `practical_context` | string | no | It runs continuously while shipments are in flight, logging movement events as they occur, and the tracking record … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

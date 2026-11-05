@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 This is a **Activity** (level L3), named **Set Performance Expectations**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Operate Agent Performance** (`processes:process-ao-operate-g4wp63`). Its canonical ID is `processes:activity-ao-operate-duu9yw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity fixes, before each agent enters active operation, what will be expected of them in their role. The onboarded agents and their roles arrive first, the expectations for each are worked out and agreed, and the set expectations are confirmed for the record. From then on, performance in service is judged against a yardstick agreed in advance rather than invented after the fact.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so performance in service is measured against expectations agreed before the work starts, for people and artificial agents alike.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It happens as onboarded agents and their roles arrive to enter active operation, and it completes once the expectations are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management custodian sets out what will be expected of a newly onboarded analyst in their role, agrees the expectations with the receiving team, and files them before the agent's first day in service.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set the Performance Expectations |
+| `plain_language_description` | string | no | This activity fixes, before each agent enters active operation, what will be expected of them in their role. The … |
+| `business_purpose` | string | no | It exists so performance in service is measured against expectations agreed before the work starts, for people and … |
+| `practical_context` | string | no | It happens as onboarded agents and their roles arrive to enter active operation, and it completes once the expectations … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-bu
 
 This is a **Activity** (level L3), named **Draft Strategic Initiatives**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Translate Strategic Choices into Initiatives** (`processes:process-sd-build-9admqy`). Its canonical ID is `processes:activity-sd-build-547hm5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Now the chosen direction takes the shape of named pieces of work. The scope lines arrive at intake, verification checks the drafting instructions are complete, and processing writes the initiative set — each one described, shaped and kept inside its agreed edges. Confirmation announces the drafted set to downstream colleagues and the working papers are preserved for the fit review.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives the strategic choices a concrete, workable form that can be reviewed for fit and ultimately committed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once scopes are set, opening at intake of the bounded scope and closing when the drafted initiatives are confirmed ready for review.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Strategy function writers draft each initiative inside its agreed boundaries, a verification custodian sends any under-specified one back for rework, and the confirmation custodian tells the reviewers the drafted set is with them.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Draft Strategic Initiatives |
+| `plain_language_description` | string | no | Now the chosen direction takes the shape of named pieces of work. The scope lines arrive at intake, verification checks … |
+| `business_purpose` | string | no | It gives the strategic choices a concrete, workable form that can be reviewed for fit and ultimately committed. |
+| `practical_context` | string | no | It runs once scopes are set, opening at intake of the bounded scope and closing when the drafted initiatives are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

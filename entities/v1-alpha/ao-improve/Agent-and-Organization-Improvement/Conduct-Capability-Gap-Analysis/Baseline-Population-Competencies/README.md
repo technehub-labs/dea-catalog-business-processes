@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 
 This is a **Activity** (level L3), named **Baseline Population Competencies**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Conduct Capability Gap Analysis** (`processes:process-ao-improve-h3vgyf`). Its canonical ID is `processes:activity-ao-improve-2bds64`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity measures where the enterprise's agents actually stand today against the competency framework it designed. The framework and the current population are brought together, each person and artificial agent is assessed against the framework's anchors, and the results are compiled into a population baseline. The baseline is confirmed and retained so every later gap finding rests on measurement rather than impression.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so capability analysis starts from an honest, measured picture of current competence instead of assumptions.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the capability gap analysis, when the committed competency framework and the operating population are presented together, and it closes once the baseline is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A custodian working for the organization design authority runs the framework's assessment anchors across the current population, compiles the results into one baseline, and files it for the gap identification step.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Baseline the Current Competencies of the Agent Population |
+| `plain_language_description` | string | no | This activity measures where the enterprise's agents actually stand today against the competency framework it designed … |
+| `business_purpose` | string | no | It exists so capability analysis starts from an honest, measured picture of current competence instead of assumptions. |
+| `practical_context` | string | no | It opens the capability gap analysis, when the committed competency framework and the operating population are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

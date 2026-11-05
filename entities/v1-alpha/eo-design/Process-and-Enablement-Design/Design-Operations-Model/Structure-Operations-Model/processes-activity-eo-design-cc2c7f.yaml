@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-design-rvfpjb through concluding task processes:task-eo-design-record-qn6zt5, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Structure the Operations Model'
+plain_language_description: 'This activity lays out the skeleton of the new operations model, drawing on the components the committed strategy named. The strategy arrives as the source, the model''s structure is drawn from its components and checked against it, and the model structure is confirmed onward for the component integration. The shape of the operation is thereby settled first, before any strand is filled in.'
+business_purpose: 'It exists so the operations model has a deliberate skeleton, drawn from the strategy, that the four design strands can hang on.'
+practical_context: 'It opens the operations model design, when the committed operations strategy is presented for structuring, and it completes once the model structure is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function designer draws the model''s skeleton from the components the committed strategy named, checks the shape against the strategy, and confirms the structure for integration.'

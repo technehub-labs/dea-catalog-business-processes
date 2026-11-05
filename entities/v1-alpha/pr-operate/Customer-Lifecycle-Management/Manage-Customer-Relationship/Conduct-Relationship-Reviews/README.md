@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-op
 
 This is a **Activity** (level L3), named **Conduct Relationship Reviews**, currently **candidate (yellow)**. It is part of the **Customer Relationship Operations** process context, domain `pr`, lifecycle stage Operate. It belongs to **Manage Customer Relationship** (`processes:process-pr-operate-bbe384`). Its canonical ID is `processes:activity-pr-operate-2d88cr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity sits down with each active relationship on its cycle and takes its temperature — how healthy, what was promised, what is coming due. The allocated relationships arrive with their review rhythms, reviews are conducted and their findings gathered, and the conducted reviews are confirmed onward. The relationship's health is checked before it fails, not after.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so each active relationship's health and commitments are reviewed before problems compound.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs on each relationship's allocated review rhythm through the active lifecycle, and it completes when the conducted reviews are confirmed onward for the renewals and escalations.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A customer relationship management lead reviews each active relationship on its rhythm — health, promises made, milestones ahead — and confirms the review onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Conduct Relationship Reviews |
+| `plain_language_description` | string | no | This activity sits down with each active relationship on its cycle and takes its temperature — how healthy, what was … |
+| `business_purpose` | string | no | It exists so each active relationship's health and commitments are reviewed before problems compound. |
+| `practical_context` | string | no | It runs on each relationship's allocated review rhythm through the active lifecycle, and it completes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

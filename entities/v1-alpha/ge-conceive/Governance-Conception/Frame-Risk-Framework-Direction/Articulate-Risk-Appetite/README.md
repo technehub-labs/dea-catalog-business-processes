@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-co
 
 This is a **Activity** (level L3), named **Articulate Risk Appetite**, currently **candidate (yellow)**. It is part of the **Strategy and Governance Conception** process context, domain `ge`, lifecycle stage Conceive. It belongs to **Frame Risk Framework Direction** (`processes:process-ge-conceive-6qnkhh`). Its canonical ID is `processes:activity-ge-conceive-b82hdf`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity states how much risk the enterprise is willing to carry, as the governance mandate calls for. The mandate arrives as the frame, the appetite is articulated within it and reviewed with those accountable, and the articulated appetite is confirmed onward for the tolerance work. How brave the enterprise intends to be becomes a declared fact.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise's risk-taking has a declared appetite, stated by those accountable for it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the risk direction framing when a governance mandate requires an enterprise risk posture, and it completes once the articulated appetite is confirmed for the tolerance work.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A governing board lead articulates, within the governance mandate's frame, how much risk the enterprise will carry, and confirms the stated appetite for the tolerance work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Articulate Risk Appetite |
+| `plain_language_description` | string | no | This activity states how much risk the enterprise is willing to carry, as the governance mandate calls for. The mandate … |
+| `business_purpose` | string | no | It exists so the enterprise's risk-taking has a declared appetite, stated by those accountable for it. |
+| `practical_context` | string | no | It opens the risk direction framing when a governance mandate requires an enterprise risk posture, and it completes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

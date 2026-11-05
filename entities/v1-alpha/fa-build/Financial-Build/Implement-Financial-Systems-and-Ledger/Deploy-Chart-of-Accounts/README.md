@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 
 This is a **Activity** (level L3), named **Deploy Chart of Accounts**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Implement Financial Systems and Ledger** (`processes:process-fa-build-d5kb5m`). Its canonical ID is `processes:activity-fa-build-napuha`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity installs the designed account structure into the live financial systems. The committed plan structure arrives as the design of record, the chart of accounts is deployed and checked against it, and the deployed structure is confirmed onward for the posting rules. The skeleton of the books goes live here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise's books stand on the account structure it designed, live in its systems.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the financial systems implementation, when the committed plan structure is presented for deployment, and it completes once the deployed chart of accounts is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance function builder installs the designed account structure into the financial systems, checks the deployment against the committed plan structure, and confirms it for the posting rules.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Deploy Chart of Accounts |
+| `plain_language_description` | string | no | This activity installs the designed account structure into the live financial systems. The committed plan structure … |
+| `business_purpose` | string | no | It exists so the enterprise's books stand on the account structure it designed, live in its systems. |
+| `practical_context` | string | no | It opens the financial systems implementation, when the committed plan structure is presented for deployment, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

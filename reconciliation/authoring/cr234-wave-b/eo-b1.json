@@ -1,0 +1,402 @@
+{
+  "processes:activity-eo-activate-w8tgv6": {
+    "plain_language_name": "Obtain the Regulator's Operations Authorization",
+    "plain_language_description": "This activity obtains the formal approval the regulator requires before an operations capability may serve customers live. The capability description goes to the regulator in the mandated filing format, the resulting authorization or certification is examined and accepted onto the record, and the approved authorization is preserved for retrieval. From that point the capability holds the regulatory permission its live service depends on.",
+    "business_purpose": "It exists so live operations rest on a regulator-issued authorization held on the operations record, not on an assumption that permission exists.",
+    "practical_context": "It runs while the capability is awaiting its gate into live service, once the capability description and the mandated filing format are to hand, and it closes when the issued authorization is confirmed and preserved on the regulated operations record.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A compliance function officer submits the capability's filing to the industry regulator in the required format, receives the issued authorization back, and has it preserved on the regulated operations record for the activation steps that follow."
+    }
+  },
+  "processes:activity-eo-activate-wfw66c": {
+    "plain_language_name": "Activate the Continuing-Supervisor Notification",
+    "plain_language_description": "This activity switches on the standing notifications that keep the continuing supervisor informed under the regulator's ongoing oversight. The capability's authorization and the supervisor relationship arrive as the inputs, the notification arrangements are put into active use and checked against them, and the issued notifications are recorded on the operations record. From then on, oversight does not wait to be asked; it is told.",
+    "business_purpose": "It exists so the supervising authority's continuing oversight is fed by standing notification from the moment the capability goes live.",
+    "practical_context": "It runs as the capability approaches live service, once the authorization is on record and the supervisor relationship is set, and it completes when the issued notifications are confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A compliance function officer puts the standing notifications for the supervising authority into active use against the capability's fresh authorization, and confirms the issued notification on the operations record."
+    }
+  },
+  "processes:activity-eo-activate-h2dqvk": {
+    "plain_language_name": "Bring the Operational Controls Live",
+    "plain_language_description": "This activity switches the capability's everyday operational controls on and records them as live. The regulator-mandated control framework and the fresh authorization come in together, each control — incident handling, capacity, security, compliance — is brought into active use and checked against the framework, and the live state is written onto the operations record. The capability thereby runs under its controls from its first day, not after them.",
+    "business_purpose": "It exists so operational controls are demonstrably running when live service starts, as the regulator's framework requires.",
+    "practical_context": "It runs late in activation, once the authorization is on record, and it completes when the controls' live state is confirmed on the regulated operations record and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function lead brings each control in the mandated framework — incident handling, capacity, security, and compliance — into active use, checks the set against the framework, and has the live state recorded on the operations record."
+    }
+  },
+  "processes:activity-eo-activate-qmpq2e": {
+    "plain_language_name": "Bring Operations Manuals and Runbooks Live",
+    "plain_language_description": "This activity moves the approved operations manuals and runbooks from approved documents into active use. The capability's authorization and the regulator-approved manual content arrive first, the manuals and runbooks are published into the working environment and checked against what was approved, and their live state is recorded on the operations record. Staff on day one work from documents that are officially in force.",
+    "business_purpose": "It exists so the people running the capability operate from manuals and runbooks that are formally live and match what the regulator approved.",
+    "practical_context": "It runs as activation proceeds, once the authorization and the approved manual content are to hand, and it completes when the manuals' and runbooks' live state is confirmed and retained on the operations record.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function lead publishes the regulator-approved manual content into the working environment, checks the published set matches what was approved, and confirms the live state for the records step."
+    }
+  },
+  "processes:activity-eo-build-jg28xr": {
+    "plain_language_name": "Procure Hardware and Software",
+    "plain_language_description": "This activity buys the hardware and software that the designed platform calls for. The architecture specification arrives with the sourcing rules, purchases are placed and the deliveries checked against them, and the procured items are confirmed onward for installation. The shopping stops when the design's list is fully delivered.",
+    "business_purpose": "It exists so the platform build starts from real, delivered equipment rather than a design with nothing bought.",
+    "practical_context": "It opens technology acquisition, once the platform architecture and the sourcing rules are settled, and it closes when the procured items are confirmed complete and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian working for product management places the purchase orders the architecture specification lists, checks each delivery against it, and hands the procured hardware and software over for installation."
+    }
+  },
+  "processes:activity-eo-build-a5trnu": {
+    "plain_language_name": "Install Technology Assets",
+    "plain_language_description": "This activity puts the delivered hardware and software into place in the environments the architecture designates. The procured items arrive first, installation is carried out per the deployment layout, and each in-place asset is checked against its designated position. What was a delivery note becomes working equipment standing where the design said it should.",
+    "business_purpose": "It exists so the bought equipment actually stands in its designated environments, ready to be commissioned.",
+    "practical_context": "It follows procurement, when the delivered hardware and software are presented for placement, and it completes once the installed assets are confirmed in position and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian racks and configures each delivered item in its designated environment per the deployment layout, verifies the placement, and confirms the installed assets for commissioning."
+    }
+  },
+  "processes:activity-eo-build-xy53fb": {
+    "plain_language_name": "Commission Technology Assets",
+    "plain_language_description": "This activity takes the installed assets through commissioning so they are ready to carry real workloads. The in-place assets come in with the architecture's acceptance criteria, commissioning tests are run and the results checked against those criteria, and the commissioned state is confirmed onward. Equipment stops being merely present and starts being usable.",
+    "business_purpose": "It exists so the enterprise runs its workloads on assets proven ready, not on equipment that has merely been switched on.",
+    "practical_context": "It follows installation, when the in-place assets are presented with their acceptance criteria, and it closes when the commissioned assets are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian runs the commissioning tests on each installed asset, checks the results against the architecture's acceptance criteria, and confirms the commissioned set for registration."
+    }
+  },
+  "processes:activity-eo-build-6335m6": {
+    "plain_language_name": "Register Acquired Assets",
+    "plain_language_description": "This activity enters the finished assets — bought, installed, and commissioned — into the enterprise's asset record. The commissioning evidence arrives as the trigger, each asset is registered with its details, and the registered entries are confirmed and retained. From here on, the enterprise's records show the asset exists, where it is, and that it is fit to use.",
+    "business_purpose": "It exists so every asset the enterprise has paid for and stood up is formally on its books, visible to later operation.",
+    "practical_context": "It closes technology acquisition, running once commissioning evidence exists, and it completes when the registered asset entries are confirmed and preserved.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A records custodian enters each commissioned asset into the enterprise asset record against its commissioning evidence, confirms the entries, and preserves the record for downstream operation."
+    }
+  },
+  "processes:activity-eo-build-tq634n": {
+    "plain_language_name": "Stand Up Delivery Components",
+    "plain_language_description": "This activity drives the parallel stand-up of the component builds — production, logistics, technology, and facilities — that the operations model calls for. The committed model design arrives as the reference, each component's stand-up is coordinated against it and checked as it proceeds, and the stood-up components are confirmed onward. The separate builds advance in step rather than drifting apart.",
+    "business_purpose": "It exists so the four component builds are stood up in a coordinated way that answers to the operations model, not as disconnected projects.",
+    "practical_context": "It opens the delivery capability build, once the committed operations model design is to hand, and it completes as the stood-up components are confirmed for integration.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management lead keeps the four component builds moving against the committed model design, checks each stand-up as it completes, and confirms the set of stood-up components for integration."
+    }
+  },
+  "processes:activity-eo-build-5acbks": {
+    "plain_language_name": "Integrate Delivery Capability",
+    "plain_language_description": "This activity joins the individually stood-up components into a single working whole. The components arrive one by one, their connections are built and the joined behaviour checked, and the integrated capability is confirmed onward. Pieces that each worked alone are made to work together.",
+    "business_purpose": "It exists so the enterprise gains one delivery capability rather than a set of unconnected parts.",
+    "practical_context": "It follows the component stand-ups, when the stood-up pieces are presented for joining, and it completes once the integrated capability is confirmed for verification.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian connects the stood-up production, logistics, technology, and facilities pieces into one flow, checks the joined behaviour end to end, and confirms the integrated capability."
+    }
+  },
+  "processes:activity-eo-build-8ahmd5": {
+    "plain_language_name": "Verify Delivery Capability",
+    "plain_language_description": "This activity tests the assembled capability end to end against what the operations model calls for. The integrated capability comes in with the service levels, capacity envelopes, and delivery model design as the yardstick, performance is exercised and measured against it, and the verification outcome is confirmed onward. Build confidence is earned here, before anyone depends on the capability.",
+    "business_purpose": "It exists so handover to operations happens with proof, not hope, that the capability performs to its design.",
+    "practical_context": "It follows integration, when the joined capability is presented for testing, and it completes when the verification outcome is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian exercises the joined capability end to end, measures it against the agreed service levels and capacity envelopes, and confirms the verification outcome for handover."
+    }
+  },
+  "processes:activity-eo-build-fnyeud": {
+    "plain_language_name": "Hand Over Delivery Capability to Operations",
+    "plain_language_description": "This activity formally passes the checked-out delivery capability from the build side to the teams who will run it. The verified capability arrives as the handover package, acceptance is reviewed and given by the receiving side, and the accepted capability is confirmed for steady-state operation. Build responsibility ends; operational responsibility begins.",
+    "business_purpose": "It exists so the enterprise's new delivery capability changes hands cleanly, with operations accepting a capability it has seen perform.",
+    "practical_context": "It closes the delivery capability build, once verification is complete, and it finishes when the accepted capability is confirmed and its handover record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management lead presents the verified capability to the operations function's receiving team, walks them through the evidence, and records their acceptance for the move to steady-state running."
+    }
+  },
+  "processes:activity-eo-build-8x4ajc": {
+    "plain_language_name": "Establish Network Nodes",
+    "plain_language_description": "This activity stands up the physical points of the logistics network — warehouses, hubs, and cross-docks — where the design places them. The node position plan arrives as the guide, each site is established in line with it and checked against it, and the established nodes are confirmed onward. The map stops being a drawing and starts being places that exist.",
+    "business_purpose": "It exists so the network's physical points exist where the design put them, ready to carry flows.",
+    "practical_context": "It opens the logistics network build, once the node position plan is settled, and it completes as the established nodes are confirmed for capacity provisioning.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian stands up each warehouse, hub, and cross-dock at its planned position, checks the sites against the node position plan, and confirms the established nodes."
+    }
+  },
+  "processes:activity-eo-build-6rz88v": {
+    "plain_language_name": "Provision Warehouse Capacity",
+    "plain_language_description": "This activity secures the storage space each node in the network needs. The capacity sizing for the nodes arrives as the requirement, space is provisioned to match it and checked node by node, and the provisioned capacity is confirmed onward. The buildings exist; now they can actually hold what the flows will bring them.",
+    "business_purpose": "It exists so every network node has the storage capacity its flows demand, before goods start moving.",
+    "practical_context": "It follows the establishment of the network nodes, once node capacity sizing is to hand, and it completes when the provisioned capacity is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian provisions storage space to the sizing worked out for each node, checks the provisioned capacity against the requirement, and confirms it for the network verification."
+    }
+  },
+  "processes:activity-eo-build-egr964": {
+    "plain_language_name": "Contract Carriers",
+    "plain_language_description": "This activity brings the transport operators on under contract for the movement modes the design selected. The mode selections and the service-level designs arrive as the terms to strike, carrier agreements are negotiated and signed, and the contracted carriers are confirmed onward. Goods will move because someone is contractually obliged to move them.",
+    "business_purpose": "It exists so the network's movements rest on signed carrier agreements matching the designed modes and service levels.",
+    "practical_context": "It runs alongside the network's physical build, once the transport mode selections and service-level designs are settled, and it completes when the contracted carriers are confirmed and their agreements retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian negotiates and signs carrier agreements for each selected transport mode to the agreed service levels, and confirms the contracted set for network verification."
+    }
+  },
+  "processes:activity-eo-build-by2f8g": {
+    "plain_language_name": "Verify Network Readiness",
+    "plain_language_description": "This activity proves the assembled network — its nodes, contracted carriers, and secured capacity — can actually carry the routes the design lays out. The built network comes in with the routing logic as the test, the routes are walked end to end and gaps noted, and the readiness determination is confirmed for the record. Delivery flows are cleared to start only once this says so.",
+    "business_purpose": "It exists so goods begin moving on a network proven able to execute its routing, not on one that merely exists.",
+    "practical_context": "It closes the logistics network build, once nodes, capacity, and carriers are all in place, and it completes when the readiness determination is confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A verification custodian walks the designed routes across the established nodes and contracted carriers, notes any gap that would break a flow, and confirms the readiness determination for the record."
+    }
+  },
+  "processes:activity-eo-build-mymu7v": {
+    "plain_language_name": "Install Line Equipment",
+    "plain_language_description": "This activity puts each piece of planned equipment in place along the production line, following the equipment specification and the facility blueprint. The specification arrives as the guide, installation is carried out station by station and checked against it, and the installed line is confirmed onward. The line stops being floor space and becomes a sequence of machines.",
+    "business_purpose": "It exists so the production line's equipment stands in place per the specification, ready to be configured and run.",
+    "practical_context": "It opens the production line commissioning, once the equipment specification and facility blueprint are settled, and it completes when the installed line is confirmed for control configuration.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian places each piece of equipment at its planned station per the specification and blueprint, verifies the installation, and confirms the assembled line for control configuration."
+    }
+  },
+  "processes:activity-eo-build-tqqyb8": {
+    "plain_language_name": "Configure Line Controls",
+    "plain_language_description": "This activity sets the line's automation, quality checks, and safety cut-outs to the parameters the design specifies. The installed line arrives with the operations model design as the reference, each control is configured and its settings verified, and the configured controls are confirmed onward. The line now knows how fast to run, what to reject, and when to stop.",
+    "business_purpose": "It exists so the line runs within its designed operating parameters from the first powered turn, with quality and safety wired in.",
+    "practical_context": "It follows equipment installation, when the assembled line is presented for configuration, and it completes once the configured controls are confirmed for trials.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian sets the line's automation, quality gates, and safety cut-outs to the design's parameters, verifies each setting, and confirms the configured controls for trial running."
+    }
+  },
+  "processes:activity-eo-build-jpj6tj": {
+    "plain_language_name": "Run Line Trials",
+    "plain_language_description": "This activity exercises the fully set-up line through trial runs until it produces at the planned trial pace. The trial production plans arrive as the script, runs are executed and their results gathered, and the trial outcomes are confirmed onward for certification. The line proves in practice what the configuration promised on paper.",
+    "business_purpose": "It exists so the line's fitness is demonstrated by actually producing, before anyone certifies it for full production.",
+    "practical_context": "It follows control configuration, when the configured line is ready to be exercised, and it completes once the trial results are confirmed and their record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian runs the line through the scripted trial production, gathers the results as output builds toward the trial pace, and confirms the outcomes for the certification step."
+    }
+  },
+  "processes:activity-eo-build-7bmbzy": {
+    "plain_language_name": "Certify Line for Production",
+    "plain_language_description": "This activity gives the exercised line its formal sign-off to move from trials to full production. The trial results come in with the quality criteria as the standard, certification is judged against them and granted, and the production certification is confirmed and retained. From here the line is entitled to produce for real.",
+    "business_purpose": "It exists so full production starts only on a line whose trial evidence has passed the agreed quality bar.",
+    "practical_context": "It closes production line commissioning, once trial results are in hand, and it completes when the production certification is confirmed and retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian weighs the trial results against the quality criteria, grants the certification for steady-state production, and has it recorded for the operations teams taking the line on."
+    }
+  },
+  "processes:activity-eo-build-neek9x": {
+    "plain_language_name": "Secure Facility Sites",
+    "plain_language_description": "This activity acquires and takes control of the sites the facility blueprint calls for. The committed blueprint arrives as the requirement, sites are secured at the required positions and checked against it, and the secured sites are confirmed onward for fitting out. The operation's buildings stop being plans and become places the enterprise controls.",
+    "business_purpose": "It exists so the enterprise holds actual control of the sites its operation needs before any fitting out begins.",
+    "practical_context": "It opens facility provisioning, once the facility blueprint is committed, and it completes when the secured sites are confirmed for fit-out.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian secures each site at the position the blueprint requires, checks the acquisitions against it, and confirms the secured sites for the fit-out step."
+    }
+  },
+  "processes:activity-eo-build-vggmrg": {
+    "plain_language_name": "Fit Out Facilities",
+    "plain_language_description": "This activity turns the acquired shell sites into fitted workplaces to the planned layouts, applying the health-and-safety and accessibility requirements as it goes. The layout designs arrive as the guide, fit-out is carried out and checked against them, and the fitted facilities are confirmed onward. Empty buildings become places people can safely work in.",
+    "business_purpose": "It exists so the enterprise's sites become safe, accessible, correctly laid-out workplaces rather than bare shells.",
+    "practical_context": "It follows site securing, when the layouts and their safety and accessibility requirements are to hand, and it completes once the fitted facilities are confirmed for service commissioning.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian fits each secured site out to its planned layout, applies the health-and-safety and accessibility requirements throughout, and confirms the fitted facilities for service commissioning."
+    }
+  },
+  "processes:activity-eo-build-napwac": {
+    "plain_language_name": "Commission Facility Services",
+    "plain_language_description": "This activity brings the building's services — power and utilities, safety systems, and environmental controls — up to working readiness. The fitted facilities arrive with the blueprint's service specifications, each service is commissioned and tested against them, and the commissioned services are confirmed onward. A fitted building becomes a running one.",
+    "business_purpose": "It exists so the facilities' services actually work at the readiness the blueprint specifies before production or delivery depends on them.",
+    "practical_context": "It follows the fit-out, when the service specifications are to hand for the fitted facilities, and it completes once the commissioned services are confirmed for handover.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A processing custodian commissions the utilities, safety systems, and environmental controls in each fitted building, tests them against the blueprint's specifications, and confirms the services for handover."
+    }
+  },
+  "processes:activity-eo-build-ds867n": {
+    "plain_language_name": "Hand Over Facilities to Operations",
+    "plain_language_description": "This activity formally passes the ready buildings from the provisioning side to the teams who will run them day to day. The commissioned facilities arrive as the handover package, acceptance is reviewed and given, and the accepted facilities are confirmed for steady-state running. Provisioning responsibility ends; facility management responsibility begins.",
+    "business_purpose": "It exists so the enterprise's buildings change hands cleanly, with operations accepting facilities it has seen working.",
+    "practical_context": "It closes facility provisioning, once the facility services are commissioned, and it finishes when the accepted facilities are confirmed and their handover record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product management lead presents the commissioned facilities to facility management, walks through the commissioning evidence, and records acceptance for steady-state running."
+    }
+  },
+  "processes:activity-eo-conceive-8mh3xj": {
+    "plain_language_name": "Select Channel Patterns",
+    "plain_language_description": "This activity chooses which channel patterns, of the options open to it, the delivery model will use to reach and serve customers. The operations strategy envelope and the customer journey designs arrive as the basis, the options are weighed and a set chosen, and the selection is confirmed onward for the service-level work. How customers will be reached is thereby settled in principle.",
+    "business_purpose": "It exists so the delivery model commits early to how it will reach customers, before detail design begins.",
+    "practical_context": "It opens the delivery model conception, once the strategy envelope and customer journey designs are to hand, and it completes when the chosen channel set is confirmed for the service-level framing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function lead weighs the channel options against the strategy envelope and the customer journeys, picks the set the model will use, and confirms the selection with the operations function."
+    }
+  },
+  "processes:activity-eo-conceive-wprvuf": {
+    "plain_language_name": "Frame Service-Level Envelopes",
+    "plain_language_description": "This activity sets the outer limits for how fast, how well, and how reliably the service will respond once live. The chosen channel patterns arrive as the frame to bound, response, quality, and availability limits are worked out per channel and checked for coherence, and the bounded envelopes are confirmed onward. Customers' expectations are thereby fixed before anything is designed in detail.",
+    "business_purpose": "It exists so the delivery model states plainly what service customers may count on, within bounds the enterprise can keep.",
+    "practical_context": "It follows the channel selection, when the chosen patterns are presented for bounding, and it completes once the service-level envelopes are confirmed for the fulfilment framing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function lead works out the response, quality, and availability limits for each chosen channel, checks the set is deliverable, and confirms the bounded envelopes with the strategy function."
+    }
+  },
+  "processes:activity-eo-conceive-uprp7u": {
+    "plain_language_name": "Frame Fulfilment Patterns",
+    "plain_language_description": "This activity settles how products will be fulfilled — made to order, made to stock, or a blend of the two — within the bounds already set. The demand thesis and the bounded envelope arrive as the inputs, the pattern options are weighed and a set chosen, and the fulfilment approach is confirmed onward for commitment. The model now knows not just how it sells but how it supplies.",
+    "business_purpose": "It exists so the delivery model commits to a fulfilment approach that its demand thesis and service bounds can actually sustain.",
+    "practical_context": "It follows the bounding of service levels, when the demand thesis and bounded envelope are to hand, and it completes once the fulfilment pattern set is confirmed for the conception's commitment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function lead weighs make-to-order, make-to-stock, and blended options against the demand thesis and the agreed envelope, picks the fulfilment set, and confirms it with the strategy function."
+    }
+  },
+  "processes:activity-eo-conceive-ycqjxs": {
+    "plain_language_name": "Commit Delivery Model Conception",
+    "plain_language_description": "This activity gathers the channel choices, service-level bounds, and fulfilment approaches into one document and gives it formal standing. The framed pieces arrive as its inputs, the whole is consolidated and reviewed for coherence, and the committed conception is confirmed for the design work that follows. The delivery model concept thereby becomes the enterprise's agreed starting point for detail design.",
+    "business_purpose": "It exists so the enterprise holds one committed delivery model concept that detail design can be built from without relitigating the fundamentals.",
+    "practical_context": "It closes the delivery model conception, once channels, service levels, and fulfilment patterns are framed, and it completes when the committed conception is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian assembles the channel choices, service-level bounds, and fulfilment approaches into the conception document, checks it hangs together, and records the commitment for the design teams."
+    }
+  },
+  "processes:activity-eo-conceive-r26ukv": {
+    "plain_language_name": "Assess Execution Engine Context",
+    "plain_language_description": "This activity establishes why an operations strategy is needed at all — whether a new execution engine is being built, an existing one rethought, or the delivery model shifted underfoot. The engine's state and the shift signals arrive as the material, the context is assessed and written up, and the assessed picture is confirmed onward. Everything the strategy later decides traces back to this understanding of why now.",
+    "business_purpose": "It exists so the operations strategy responds to a correctly understood trigger rather than a vague sense that something must change.",
+    "practical_context": "It opens the strategy framing, when the enterprise faces a new engine, a reframe, or a delivery-model shift, and it completes once the assessed context is confirmed for the envelope bounding.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function lead reads the engine's state and the signals of a delivery-model shift, writes up why the strategy is needed now, and confirms the assessed context with the operations function."
+    }
+  },
+  "processes:activity-eo-conceive-57g5bv": {
+    "plain_language_name": "Set the Delivery Model Envelope",
+    "plain_language_description": "This activity draws the outer limits within which the delivery model must be conceived — the envelope the strategy mandates for the conception and design stages. The assessed context arrives as the basis, the envelope's bounds are worked out and reviewed against it, and the bounded envelope is confirmed onward for the enablement and asset direction. Broadly what kind of delivery machine this will be is settled here.",
+    "business_purpose": "It exists so the delivery model conceived later stays inside limits the strategy actually chose.",
+    "practical_context": "It follows the context assessment, when the assessed picture is presented for bounding, and it completes once the bounded envelope is confirmed for the companion direction-setting.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function lead draws the delivery envelope's bounds from the assessed context, checks them with the operations function, and confirms the envelope for the enablement and asset direction work."
+    }
+  },
+  "processes:activity-eo-conceive-ettdc2": {
+    "plain_language_name": "Frame Enablement and Asset Direction",
+    "plain_language_description": "This activity sketches the two companion postures the strategy needs: how technology will enable the delivery model, and how the enterprise will approach its physical assets. The bounded envelope arrives as the reference, both directions are worked out against it and checked for coherence with each other, and the pair is confirmed onward for the strategy's commitment.",
+    "business_purpose": "It exists so the strategy carries explicit technology and physical-asset postures, not just a delivery ambition.",
+    "practical_context": "It follows the bounding of the delivery envelope, when the envelope is presented for companion direction-setting, and it completes once both directions are confirmed for the strategy's commitment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function lead sketches the technology posture and the physical-asset posture against the bounded envelope, checks the two hang together, and confirms both with the strategy function."
+    }
+  },
+  "processes:activity-eo-conceive-6bvv34": {
+    "plain_language_name": "Commit Operations Strategy",
+    "plain_language_description": "This activity brings the assessed context, the bounded delivery envelope, and the enablement and asset directions together into one strategy and gives it formal standing. The framed pieces arrive as its inputs, the whole is consolidated and ratified, and the committed strategy is confirmed for the conception work that follows. From here, the enterprise's operations direction is a decision, not a draft.",
+    "business_purpose": "It exists so the enterprise's production and delivery direction is a committed strategy that conception and design must follow.",
+    "practical_context": "It closes the strategy framing, once the context, envelope, and companion directions are framed, and it completes when the committed strategy is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian consolidates the assessed context, the bounded envelope, and the enablement and asset directions into the strategy document, obtains ratification, and records the committed strategy for the conception teams."
+    }
+  },
+  "processes:activity-eo-conceive-d3jdaa": {
+    "plain_language_name": "Frame Footprint Principles",
+    "plain_language_description": "This activity settles the ground rules that will govern how much facility and asset capacity the enterprise chooses to carry and where. The operations strategy and the delivery envelope arrive as the basis, principles are drawn and reviewed against them, and the principle set is confirmed onward for the option assessment. Every later site decision inherits its logic from here.",
+    "business_purpose": "It exists so physical footprint choices follow declared principles rather than opportunistic site-by-site judgement.",
+    "practical_context": "It opens the physical asset approach framing, once the strategy and delivery envelope are to hand, and it completes when the footprint principles are confirmed for assessing the options.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function lead draws the footprint ground rules from the operations strategy and the delivery envelope, reviews them with the operations function, and confirms the principles for option assessment."
+    }
+  },
+  "processes:activity-eo-conceive-9vsfbw": {
+    "plain_language_name": "Assess Footprint Options",
+    "plain_language_description": "This activity puts the candidate site-and-capacity options side by side and weighs each against the agreed principles. The principles and the market geography arrive as the frame, options are assessed and a recommended set is drawn out, and the assessed options are confirmed onward for the lifecycle bounding. Choice among footprints becomes a reasoned comparison, not a hunch.",
+    "business_purpose": "It exists so the enterprise's footprint commitment rests on options tested against principles, with a recommendation anyone can audit.",
+    "practical_context": "It follows the framing of footprint principles, when the options and the market geography are presented, and it completes once the assessed option set is confirmed for the lifecycle bounding.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function lead weighs each candidate footprint option against the agreed principles and the market geography, draws out the recommended set, and confirms the assessment for the lifecycle bounding."
+    }
+  },
+  "processes:activity-eo-conceive-jgb89z": {
+    "plain_language_name": "Set the Asset Lifecycle Envelopes",
+    "plain_language_description": "This activity sets the postures the enterprise will take across an asset's life — how it acquires, renews, and retires — so later decisions fall inside agreed bounds. The footprint principles arrive as the reference, the lifecycle postures are worked out and reviewed against them, and the bounded envelopes are confirmed onward for the approach's commitment. Assets will be born, aged, and disposed of by design.",
+    "business_purpose": "It exists so asset decisions over their whole life happen inside deliberate postures rather than being improvised case by case.",
+    "practical_context": "It follows the option assessment, when the footprint principles are in place, and it completes once the lifecycle envelopes are confirmed for the approach's commitment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function lead sets the acquisition, renewal, and retirement postures for assets against the footprint principles, and confirms the bounded envelopes with the strategy function."
+    }
+  },
+  "processes:activity-eo-conceive-sbeur9": {
+    "plain_language_name": "Commit Physical Asset Approach",
+    "plain_language_description": "This activity draws the footprint principles, the lifecycle bounds, and the option assessment together into one approach and gives it formal standing, ready for blueprint design. The framed pieces arrive as its inputs, the whole is consolidated and ratified, and the committed approach is confirmed onward. The enterprise's physical-side thinking is thereby one decision rather than three opinions.",
+    "business_purpose": "It exists so the enterprise holds one committed physical asset approach that blueprint design must answer to.",
+    "practical_context": "It closes the physical asset approach framing, once principles, options, and lifecycle bounds are framed, and it completes when the committed approach is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian consolidates the footprint principles, the assessed options, and the lifecycle envelopes into the approach document, obtains ratification, and records the committed approach for blueprint design."
+    }
+  },
+  "processes:activity-eo-conceive-c3quwt": {
+    "plain_language_name": "Identify Platform Families",
+    "plain_language_description": "This activity picks out the families of technology platforms the operating model will lean on, recording them in a shortlist for later assessment. The operations strategy and the delivery envelope arrive as the basis, families are identified and gathered into a register, and the register is confirmed onward for the fit work. Which kinds of technology are in play is thereby settled in principle.",
+    "business_purpose": "It exists so the enterprise names, early, the kinds of platforms its operating model will depend on.",
+    "practical_context": "It opens the technology enablement framing, once the strategy and delivery envelope are to hand, and it completes when the platform family register is confirmed for the fit assessment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function lead identifies the platform families the operating model leans on from the strategy and delivery envelope, gathers them into a register, and confirms the shortlist with the operations function."
+    }
+  },
+  "processes:activity-eo-conceive-fjcmnb": {
+    "plain_language_name": "Assess Enablement Fit",
+    "plain_language_description": "This activity tests each shortlisted platform family against what the operating model demands and records where it fits well or poorly. The family register and the model's requirements arrive together, fits are assessed family by family, and the fit assessment is confirmed onward for the sourcing work. Platform enthusiasm gives way to platform evidence.",
+    "business_purpose": "It exists so platform selection later rests on demonstrated fit with the operating model rather than preference.",
+    "practical_context": "It follows the identification of platform families, when the register and the model's requirements are presented, and it completes once the fit assessment is confirmed for the sourcing framing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations function lead tests each shortlisted platform family against the operating model's requirements, records where each fits and where it falls short, and confirms the assessment for the sourcing work."
+    }
+  },
+  "processes:activity-eo-conceive-99pug6": {
+    "plain_language_name": "Frame Sourcing Principles",
+    "plain_language_description": "This activity settles the postures the enterprise will take when obtaining its platforms — build, buy, partner, or adopt open source — so later platform decisions follow agreed ground rules. The platform family register arrives as the reference, the sourcing postures are worked out and reviewed against it, and the framed principles are confirmed onward for the approach's commitment.",
+    "business_purpose": "It exists so the build-versus-buy question is answered by policy up front rather than renegotiated for every platform.",
+    "practical_context": "It follows the fit assessment, when the shortlisted families are in hand, and it completes once the sourcing principles are confirmed for the approach's commitment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function lead sets the build, buy, partner, and open-source postures against the shortlisted platform families, reviews them with the operations function, and confirms the principles for the approach's commitment."
+    }
+  },
+  "processes:activity-eo-conceive-b7qwwb": {
+    "plain_language_name": "Commit Technology Enablement Approach",
+    "plain_language_description": "This activity draws the platform shortlist, the sourcing ground rules, and the fit findings into one approach and gives it formal standing, ready for architecture design. The framed pieces arrive as its inputs, the whole is consolidated and ratified, and the committed approach is confirmed onward. The enterprise's technology-side thinking is thereby one decision rather than three threads.",
+    "business_purpose": "It exists so the enterprise holds one committed technology enablement approach that platform architecture design must answer to.",
+    "practical_context": "It closes the technology enablement framing, once families, sourcing principles, and fit findings are framed, and it completes when the committed approach is confirmed and its record retained.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A confirmation custodian consolidates the platform shortlist, sourcing principles, and fit findings into the approach document, obtains ratification, and records the committed approach for architecture design."
+    }
+  }
+}

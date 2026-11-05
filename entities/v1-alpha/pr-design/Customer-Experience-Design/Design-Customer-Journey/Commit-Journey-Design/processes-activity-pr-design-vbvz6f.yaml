@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-design-j6fakx through concluding task processes:task-pr-design-record-7ha34w, whose outcome — Closure case file retained for Commit Journey Design under the records retention schedule with cryptographic integrity protection; cryptographic destruction …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit Journey Design'
+plain_language_description: 'This activity draws the stages, the critical moments, and the handoffs together into one committed journey design. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed journey is confirmed as the customer''s authoritative path. The journey stops being three analyses and becomes one map.'
+business_purpose: 'It exists so build and operate work from one committed journey rather than from fragments.'
+practical_context: 'It closes the journey design once stages, moments, and handoffs are designed, and it completes when the committed journey design is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian assembles the stages, moments of truth, and handoffs into the journey design, obtains ratification, and records the committed journey.'

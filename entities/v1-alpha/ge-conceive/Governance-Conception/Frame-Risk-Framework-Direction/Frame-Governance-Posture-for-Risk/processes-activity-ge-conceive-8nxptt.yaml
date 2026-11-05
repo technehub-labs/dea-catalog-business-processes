@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-conceive-6qnkhh through concluding task processes:task-ge-conceive-record-sxjhv7, whose outcome — Case file retained for Frame Governance Posture for Risk under the records retention schedule with cryptographic integrity protection; statutory retention …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Frame Governance Posture for Risk'
+plain_language_description: 'This activity settles how governance will actually carry the risk stance — how it engages, supervises, and enforces it. The appetite and bands arrive as the stance to be carried, the posture is framed around them and reviewed for workability, and the framed posture is confirmed onward for the direction''s commitment. A risk position without a way of governing it is just a mood.'
+business_purpose: 'It exists so the declared risk stance comes with a governance way of carrying it.'
+practical_context: 'It follows the appetite and bands, when the stance is complete but not yet actionable, and it completes once the framed governance posture is confirmed for the direction''s commitment.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function lead frames how governance will engage, supervise, and enforce the stated risk stance, and confirms the framed posture for the direction''s commitment.'

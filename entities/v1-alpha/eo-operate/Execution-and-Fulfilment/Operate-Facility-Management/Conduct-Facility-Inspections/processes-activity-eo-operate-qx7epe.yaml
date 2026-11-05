@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-operate-rqdte5 through concluding task processes:task-eo-operate-record-8jj5eh, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Conduct Facility Inspections'
+plain_language_description: 'This activity walks the buildings on a regular rhythm, notes their condition, and hands anything needing attention to the work-order flow or the safety effort. The inspection cadence arrives as the timetable, rounds are carried out and their findings written up, and the findings are confirmed onward. Small defects are caught while they are still small.'
+business_purpose: 'It exists so the enterprise learns about facility defects from its own inspections rather than from failures.'
+practical_context: 'It runs to the planned inspection cadence across the facilities, and it completes once each round''s findings are confirmed into the work-order and safety flows.'
+worked_example:
+  agent_type: human
+  narrative: 'A facilities inspector walks each building on its scheduled round, notes the condition found, and hands the defects needing attention to the work-order flow or the safety effort.'

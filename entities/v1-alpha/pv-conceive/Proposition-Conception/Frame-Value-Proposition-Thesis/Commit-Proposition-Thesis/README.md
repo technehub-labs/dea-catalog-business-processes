@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-co
 
 This is a **Activity** (level L3), named **Commit Proposition Thesis**, currently **candidate (yellow)**. It is part of the **Proposition and Portfolio Conception** process context, domain `pv`, lifecycle stage Conceive. It belongs to **Frame Value Proposition Thesis** (`processes:process-pv-conceive-xe9axm`). Its canonical ID is `processes:activity-pv-conceive-8sq29j`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the bounded scope, the identified parties, and the value claim together into one committed thesis. The three strands arrive as its inputs, the whole is consolidated and ratified, and the committed thesis is confirmed as the proposition's founding document. What the enterprise will offer, to whom, and why becomes one owned statement.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the proposition's later design and build work from one committed founding thesis.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the proposition thesis framing once scope, parties, and claim are framed, and it completes when the committed thesis is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian assembles the scope, target parties, and value claim into the thesis document, obtains ratification, and records the committed proposition thesis.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Proposition Thesis |
+| `plain_language_description` | string | no | This activity draws the bounded scope, the identified parties, and the value claim together into one committed thesis … |
+| `business_purpose` | string | no | It exists so the proposition's later design and build work from one committed founding thesis. |
+| `practical_context` | string | no | It closes the proposition thesis framing once scope, parties, and claim are framed, and it completes when the committed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 This is a **Activity** (level L3), named **Provision Collaboration Workspaces**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Coordinate Collaboration** (`processes:process-ao-operate-bd7mef`). Its canonical ID is `processes:activity-ao-operate-pxxmge`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity sets up the shared working arrangements that agents and teams need in order to work together once in service. The operating organization and its teams arrive as the input, the workspaces each grouping needs are provisioned and made ready, and the provisioned set is confirmed for the teams involved. Joint work then has somewhere defined to happen, shared across people and artificial agents alike.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so collaboration in service has proper shared ground to happen on, rather than each grouping improvising its own.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It happens when the operating organization and its teams need shared working arrangements for joint work, and it completes once the provisioned workspaces are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management custodian sets up the shared workspace a mixed team of people and artificial agents will use, checks it is ready for joint work, and confirms it to the team.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Provision the Collaboration Workspaces |
+| `plain_language_description` | string | no | This activity sets up the shared working arrangements that agents and teams need in order to work together once in … |
+| `business_purpose` | string | no | It exists so collaboration in service has proper shared ground to happen on, rather than each grouping improvising its … |
+| `practical_context` | string | no | It happens when the operating organization and its teams need shared working arrangements for joint work, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

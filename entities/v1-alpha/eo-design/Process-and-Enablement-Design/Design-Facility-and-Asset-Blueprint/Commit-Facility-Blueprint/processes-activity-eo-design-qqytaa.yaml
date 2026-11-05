@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-design-q83tdv through concluding task processes:task-eo-design-record-64yg2c, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit Facility Blueprint'
+plain_language_description: 'This activity gathers the layout designs, the equipment specification, and the capacity model into one blueprint and gives it formal standing. The three pieces arrive as its inputs, the whole is consolidated and reviewed for coherence, and the committed blueprint is confirmed for the provisioning build. The physical side of the operation stops being separate drawings and becomes one instruction.'
+business_purpose: 'It exists so facility and asset provisioning build starts from one committed blueprint rather than scattered documents.'
+practical_context: 'It closes the facility and asset blueprint design, once layouts, equipment, and capacity are modelled, and it completes when the committed blueprint is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian assembles the layouts, equipment specification, and capacity model into the blueprint, checks it hangs together, and records the commitment for provisioning planning.'

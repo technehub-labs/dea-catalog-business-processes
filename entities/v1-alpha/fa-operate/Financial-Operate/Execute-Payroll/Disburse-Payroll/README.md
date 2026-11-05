@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Disburse Payroll**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Execute Payroll** (`processes:process-fa-operate-zpmxzp`). Its canonical ID is `processes:activity-fa-operate-he4rxk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity pays the take-home amounts out to each person for the cycle, routed by their chosen channel and checked as it goes. The computed net amounts arrive as the payment instructions, disbursement is executed under the reconciliation controls, and the paid cycle is confirmed for the record. The moment the whole cycle exists for is here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so net pay reaches every person correctly, through their own payment channel, on time.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the withholding computation, once the net amounts are confirmed, and it completes when the disbursed cycle is reconciled and confirmed for the record.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A compliance function payroll officer releases the cycle's net pay through each person's chosen channel, reconciles the payments as they land, and confirms the disbursed cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -60,6 +60,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Disburse Payroll |
+| `plain_language_description` | string | no | This activity pays the take-home amounts out to each person for the cycle, routed by their chosen channel and checked … |
+| `business_purpose` | string | no | It exists so net pay reaches every person correctly, through their own payment channel, on time. |
+| `practical_context` | string | no | It follows the withholding computation, once the net amounts are confirmed, and it completes when the disbursed cycle … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-co
 
 This is a **Activity** (level L3), named **Identify Target Parties**, currently **candidate (yellow)**. It is part of the **Proposition and Portfolio Conception** process context, domain `pv`, lifecycle stage Conceive. It belongs to **Frame Value Proposition Thesis** (`processes:process-pv-conceive-xe9axm`). Its canonical ID is `processes:activity-pv-conceive-xdfjat`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity names who the proposition is actually for. The bounded scope arrives as the frame within which parties are identified, the target parties are worked out and each justified against the scope, and the identified set is confirmed onward for the value claim. A proposition without a named audience is a speech to an empty room.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the proposition knows exactly whose lives it intends to improve.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the scope bounding, once the proposition's edges are drawn, and it completes when the identified target parties are confirmed onward for the value claim.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A proposition design authority lead names the parties the proposition serves, checking each against the bounded scope, and confirms the identified set onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Identify Target Parties |
+| `plain_language_description` | string | no | This activity names who the proposition is actually for. The bounded scope arrives as the frame within which parties … |
+| `business_purpose` | string | no | It exists so the proposition knows exactly whose lives it intends to improve. |
+| `practical_context` | string | no | It follows the scope bounding, once the proposition's edges are drawn, and it completes when the identified target … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-build-rx7kt5 through concluding task processes:task-ge-build-record-zxkgc7, whose outcome — Case file retained for Deploy Monitoring Tooling under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Deploy Monitoring Tooling'
+plain_language_description: 'This activity puts the watching machinery in place that the control apparatus will run on. The control objectives and the compliance regime design arrive as the requirements, the monitoring tooling is deployed against them and checked, and the deployed tooling is confirmed onward for readiness. Controls without watchmen are just words; this gives them watchmen.'
+business_purpose: 'It exists so the control apparatus has working monitoring tooling behind its objectives and regime.'
+practical_context: 'It runs alongside the registers, drawing on the control objectives and compliance regime design, and it completes once the deployed tooling is confirmed onward for readiness.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function officer deploys the monitoring tooling against the control objectives and the compliance regime design, checks it runs, and confirms the deployment onward.'

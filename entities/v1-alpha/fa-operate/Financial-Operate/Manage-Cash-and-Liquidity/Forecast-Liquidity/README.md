@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Forecast Liquidity**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Manage Cash and Liquidity** (`processes:process-fa-operate-2pmqb2`). Its canonical ID is `processes:activity-fa-operate-pg9eys`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity projects the cash ahead, from where positions stand today and what is known to be owed. The monitored positions and the known obligations arrive as the inputs, the liquidity forecast is drawn and checked against both, and the forecast is confirmed onward for the investment decisions. Tomorrow's cash needs are met because today's treasury saw them coming.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so liquidity needs are foreseen from positions and obligations, not discovered in the moment.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs against the monitored positions and the known obligations, and it completes once the liquidity forecast is confirmed onward for the investment decisions.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A treasury analyst projects the coming liquidity from today's monitored positions and the obligations on the books, and confirms the forecast for the investment decisions.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Forecast Liquidity |
+| `plain_language_description` | string | no | This activity projects the cash ahead, from where positions stand today and what is known to be owed. The monitored … |
+| `business_purpose` | string | no | It exists so liquidity needs are foreseen from positions and obligations, not discovered in the moment. |
+| `practical_context` | string | no | It runs against the monitored positions and the known obligations, and it completes once the liquidity forecast is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

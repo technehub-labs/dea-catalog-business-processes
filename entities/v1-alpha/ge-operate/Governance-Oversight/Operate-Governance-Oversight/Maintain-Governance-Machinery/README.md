@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-op
 
 This is a **Activity** (level L3), named **Maintain Governance Machinery**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. It belongs to **Operate Governance Oversight** (`processes:process-ge-operate-hs7wf3`). Its canonical ID is `processes:activity-ge-operate-pvyf2x`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity keeps the governance machinery oiled between and across the cycles — the calendars current, the delegations register true, the body composition right. Machinery drift arrives as changes land, each is folded into the machinery and checked, and the maintained state is confirmed onward. Governance's engine is serviced here, so it never seizes mid-cycle.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the governance machinery — calendars, delegations, memberships — never drifts out of true.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs between and across the cycles as machinery changes land, and it completes when the maintained machinery state is confirmed onward for the running cycles.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A governance custodian folds each machinery change into the calendars, the delegations register, and the body composition as it lands, and confirms the maintained state onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Maintain Governance Machinery |
+| `plain_language_description` | string | no | This activity keeps the governance machinery oiled between and across the cycles — the calendars current, the … |
+| `business_purpose` | string | no | It exists so the governance machinery — calendars, delegations, memberships — never drifts out of true. |
+| `practical_context` | string | no | It runs between and across the cycles as machinery changes land, and it completes when the maintained machinery state … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

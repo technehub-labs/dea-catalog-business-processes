@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Manage Capacity and Performance**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Technology Platforms** (`processes:process-eo-operate-4njp7b`). Its canonical ID is `processes:activity-eo-operate-vhjw3y`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity watches how demand presses on each platform's capacity and adjusts the operating settings to keep performance where it was promised. Usage and performance telemetry arrive continuously, the balance is tracked and the settings tuned as demand moves, and the maintained posture is confirmed for the record. Growth meets a platform that was readied for it.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so platform performance holds at its agreed level as demand shifts, by tuning rather than by luck.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs continuously against the usage and performance telemetry, and each tuning pass closes when the adjusted capacity posture is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A platform custodian reads the telemetry as demand climbs toward a platform's capacity, tunes the operating settings to hold performance, and confirms the adjusted posture for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Manage Capacity and Performance |
+| `plain_language_description` | string | no | This activity watches how demand presses on each platform's capacity and adjusts the operating settings to keep … |
+| `business_purpose` | string | no | It exists so platform performance holds at its agreed level as demand shifts, by tuning rather than by luck. |
+| `practical_context` | string | no | It runs continuously against the usage and performance telemetry, and each tuning pass closes when the adjusted … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

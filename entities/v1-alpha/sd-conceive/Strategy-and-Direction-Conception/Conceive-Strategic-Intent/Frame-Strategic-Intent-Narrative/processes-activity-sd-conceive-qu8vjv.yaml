@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-conceive-3uredz through concluding task processes:task-sd-conceive-record-rqnawv, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Frame Strategic Intent Narrative'
+plain_language_description: 'The sensed imperatives now need one coherent story. Intake registers them, verification tests the draft wording against what the signals actually say, and processing writes the narrative that will steer direction-setting within the enterprise''s purpose and horizons. Confirmation circulates the framed narrative and the records custodian preserves it for trade-off scoping.'
+business_purpose: 'It turns scattered imperatives into a single intent story that downstream strategy development can align to.'
+practical_context: 'It follows sensing, opening at intake of the imperative set and closing when the framed narrative is confirmed and handed on.'
+worked_example:
+  agent_type: human
+  narrative: 'Strategy function writers draft the intent narrative from the confirmed imperatives, read it back against the enterprise''s purpose with the activity owner, and the confirmation custodian circulates it to the trade-off team.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Process Journal Entries**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Operate General Ledger** (`processes:process-fa-operate-g9zpnq`). Its canonical ID is `processes:activity-fa-operate-6pk6zf`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity handles the journal entries arriving day by day, posting each into the books. Entries flow in from across the operation, each is processed under the configured rules and checked as it posts, and the processed entries are confirmed onward. The ledger's daily diet is digested here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the ledger's steady stream of entries is posted correctly, rule by rule.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs continuously as entries flow into the ledger in steady state, and each posting closes when it is confirmed onward into the maintained books.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A ledger custodian processes each arriving journal entry under the configured posting rules, checks it as it posts, and confirms the processed entries onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Process Journal Entries |
+| `plain_language_description` | string | no | This activity handles the journal entries arriving day by day, posting each into the books. Entries flow in from across … |
+| `business_purpose` | string | no | It exists so the ledger's steady stream of entries is posted correctly, rule by rule. |
+| `practical_context` | string | no | It runs continuously as entries flow into the ledger in steady state, and each posting closes when it is confirmed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

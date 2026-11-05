@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-co
 
 This is a **Activity** (level L3), named **Synthesize Strategic Direction**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Develop Corporate Strategy** (`processes:process-sd-conceive-ahwvp5`). Its canonical ID is `processes:activity-sd-conceive-w28h46`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+All the upstream anchors exist; someone now has to fuse them into one coherent course. Intake registers the committed pieces, verification checks they tell a consistent story, and processing blends the horizons, the intent, the ambition and the purpose into a single synthesized direction. Confirmation announces that direction to downstream colleagues and the records custodian preserves the synthesis.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It merges the committed anchors into one direction of travel, the raw material every trajectory choice in this process depends on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the process at intake once every upstream anchor is in place, closing when the synthesized direction is confirmed and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function lead brings the four committed anchors to a synthesis workshop, tests that they tell one story, and blends them into a single direction the confirmation custodian then publishes to the trajectory team.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Synthesize Strategic Direction |
+| `plain_language_description` | string | no | All the upstream anchors exist; someone now has to fuse them into one coherent course. Intake registers the committed … |
+| `business_purpose` | string | no | It merges the committed anchors into one direction of travel, the raw material every trajectory choice in this process … |
+| `practical_context` | string | no | It opens the process at intake once every upstream anchor is in place, closing when the synthesized direction is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

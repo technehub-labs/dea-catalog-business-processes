@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-co
 
 This is a **Activity** (level L3), named **Frame Strategic Intent Narrative**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Conceive Strategic Intent** (`processes:process-sd-conceive-3uredz`). Its canonical ID is `processes:activity-sd-conceive-qu8vjv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The sensed imperatives now need one coherent story. Intake registers them, verification tests the draft wording against what the signals actually say, and processing writes the narrative that will steer direction-setting within the enterprise's purpose and horizons. Confirmation circulates the framed narrative and the records custodian preserves it for trade-off scoping.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It turns scattered imperatives into a single intent story that downstream strategy development can align to.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows sensing, opening at intake of the imperative set and closing when the framed narrative is confirmed and handed on.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Strategy function writers draft the intent narrative from the confirmed imperatives, read it back against the enterprise's purpose with the activity owner, and the confirmation custodian circulates it to the trade-off team.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Frame Strategic Intent Narrative |
+| `plain_language_description` | string | no | The sensed imperatives now need one coherent story. Intake registers them, verification tests the draft wording against … |
+| `business_purpose` | string | no | It turns scattered imperatives into a single intent story that downstream strategy development can align to. |
+| `practical_context` | string | no | It follows sensing, opening at intake of the imperative set and closing when the framed narrative is confirmed and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-conceive-ahwvp5 through concluding task processes:task-sd-conceive-record-59brjw, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Synthesize Strategic Direction'
+plain_language_description: 'All the upstream anchors exist; someone now has to fuse them into one coherent course. Intake registers the committed pieces, verification checks they tell a consistent story, and processing blends the horizons, the intent, the ambition and the purpose into a single synthesized direction. Confirmation announces that direction to downstream colleagues and the records custodian preserves the synthesis.'
+business_purpose: 'It merges the committed anchors into one direction of travel, the raw material every trajectory choice in this process depends on.'
+practical_context: 'It opens the process at intake once every upstream anchor is in place, closing when the synthesized direction is confirmed and stored.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function lead brings the four committed anchors to a synthesis workshop, tests that they tell one story, and blends them into a single direction the confirmation custodian then publishes to the trajectory team.'

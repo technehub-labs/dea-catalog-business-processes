@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 
 This is a **Activity** (level L3), named **Construct Product Variants**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. It belongs to **Develop Product Variants** (`processes:process-pv-build-say8tb`). Its canonical ID is `processes:activity-pv-build-sk4whv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity builds out each bounded variant of the product that the designed propositions call for. The designed propositions arrive as the specification of what must exist, variants are constructed within their bounds and checked as they build, and the constructed variants are confirmed onward for conformance checking. One product becomes a family here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every variant the designed propositions require exists as a constructed reality.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the variant development when the designed propositions require bounded variant construction, and it completes as the constructed variants are confirmed onward for conformance verification.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management builder constructs each bounded variant the designed propositions call for, and confirms the constructed variants onward for conformance checking.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Construct Product Variants |
+| `plain_language_description` | string | no | This activity builds out each bounded variant of the product that the designed propositions call for. The designed … |
+| `business_purpose` | string | no | It exists so every variant the designed propositions require exists as a constructed reality. |
+| `practical_context` | string | no | It opens the variant development when the designed propositions require bounded variant construction, and it completes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

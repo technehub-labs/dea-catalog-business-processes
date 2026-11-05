@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-design-34e95r through concluding task processes:task-ao-design-record-thasb5, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Define the Role Levels'
+plain_language_description: 'This activity sets the steps of seniority that each role family will carry in the catalogue. The defined families arrive first, the leveling structure within each is worked out and reviewed for sensible progression, and the defined levels are confirmed with the design authority. The catalogue then has, for every family, a common ladder that staffing and development decisions can use.'
+business_purpose: 'It exists so each role family carries an agreed ladder of levels that the rest of the enterprise can plan careers and staffing against.'
+practical_context: 'It follows the definition of the role families, when they are presented for leveling, and it completes once the defined levels are confirmed and their record preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'A designer for the organization design authority works through a newly defined family and sets its steps from entry to senior positions, checks the progression makes sense, and confirms the levels before accountability boundaries are drawn.'

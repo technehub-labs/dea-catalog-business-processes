@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-co
 
 This is a **Activity** (level L3), named **Frame Sourcing Principles**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Frame Technology Enablement Approach** (`processes:process-eo-conceive-68mp6v`). Its canonical ID is `processes:activity-eo-conceive-99pug6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity settles the postures the enterprise will take when obtaining its platforms — build, buy, partner, or adopt open source — so later platform decisions follow agreed ground rules. The platform family register arrives as the reference, the sourcing postures are worked out and reviewed against it, and the framed principles are confirmed onward for the approach's commitment.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the build-versus-buy question is answered by policy up front rather than renegotiated for every platform.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the fit assessment, when the shortlisted families are in hand, and it completes once the sourcing principles are confirmed for the approach's commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function lead sets the build, buy, partner, and open-source postures against the shortlisted platform families, reviews them with the operations function, and confirms the principles for the approach's commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Frame Sourcing Principles |
+| `plain_language_description` | string | no | This activity settles the postures the enterprise will take when obtaining its platforms — build, buy, partner, or … |
+| `business_purpose` | string | no | It exists so the build-versus-buy question is answered by policy up front rather than renegotiated for every platform. |
+| `practical_context` | string | no | It follows the fit assessment, when the shortlisted families are in hand, and it completes once the sourcing principles … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

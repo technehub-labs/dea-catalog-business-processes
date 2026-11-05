@@ -90,3 +90,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-improve-axtq3b through concluding task processes:task-ge-improve-record-x2jbvc, whose outcome — Case file retained for Score Finding Severity under the records retention schedule with cryptographic integrity protection; statutory retention horizon applied …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Score Finding Severity'
+plain_language_description: 'This activity grades how serious each delivered audit finding is, using the audit framework''s rubric and the assurance thresholds. The delivered findings arrive as the intake, severity is scored finding by finding against the rubric, and the scored findings are confirmed onward for the recurrence work. Not all findings weigh the same, and now that is official.'
+business_purpose: 'It exists so audit findings carry an official severity, applied by rubric rather than by mood.'
+practical_context: 'It opens the finding scoring when an audit report arrives with its findings, and it completes once each scored finding is confirmed onward for the recurrence assessment.'
+worked_example:
+  agent_type: human
+  narrative: 'An audit function analyst grades each delivered finding''s severity against the framework rubric and the assurance thresholds, and confirms the scored findings onward.'

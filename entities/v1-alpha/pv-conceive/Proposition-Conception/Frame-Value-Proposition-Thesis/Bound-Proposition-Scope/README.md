@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-co
 
 This is a **Activity** (level L3), named **Bound Proposition Scope**, currently **candidate (yellow)**. It is part of the **Proposition and Portfolio Conception** process context, domain `pv`, lifecycle stage Conceive. It belongs to **Frame Value Proposition Thesis** (`processes:process-pv-conceive-xe9axm`). Its canonical ID is `processes:activity-pv-conceive-wtenjt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the boundary of the proposition now taking shape — what it is, and just as firmly what it is not. The framing need arrives from a new proposition, a reframe, or a market shift, the scope is bounded against it and its edges argued, and the bounded scope is confirmed onward for the target parties. The proposition learns its own size here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the proposition knows precisely what it covers before anyone designs or sells it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the proposition thesis framing when a new proposition is established, an existing one reframed, or a market shift demands re-conception, and it completes once the bounded scope is confirmed onward.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A proposition design authority lead draws what the new proposition covers — and what it deliberately leaves out — and confirms the bounded scope onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Bound Proposition Scope |
+| `plain_language_description` | string | no | This activity draws the boundary of the proposition now taking shape — what it is, and just as firmly what it is not … |
+| `business_purpose` | string | no | It exists so the proposition knows precisely what it covers before anyone designs or sells it. |
+| `practical_context` | string | no | It opens the proposition thesis framing when a new proposition is established, an existing one reframed, or a market … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

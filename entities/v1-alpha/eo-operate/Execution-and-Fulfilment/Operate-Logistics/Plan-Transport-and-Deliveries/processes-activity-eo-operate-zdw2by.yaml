@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-operate-zh9m57 through concluding task processes:task-eo-operate-record-4vz8ha, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Plan Transport and Deliveries'
+plain_language_description: 'This activity turns the demand for deliveries into a routed, timed plan for moving them. The delivery demand arrives against the network''s known capacity, routes and schedules are worked out and checked for feasibility, and the shipment plan is confirmed onward for execution. Every delivery starts life as a plan that fits the network.'
+business_purpose: 'It exists so goods move on routed, timed plans the network can actually deliver, rather than on wishful scheduling.'
+practical_context: 'It opens the logistics operation, when delivery demand is presented against network capacity, and it completes once the shipment plan is confirmed for execution.'
+worked_example:
+  agent_type: human
+  narrative: 'A logistics planner routes and times the day''s delivery demand across the network''s capacity, checks each route is feasible, and confirms the shipment plan for execution.'

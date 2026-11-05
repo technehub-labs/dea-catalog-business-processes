@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-co
 
 This is a **Activity** (level L3), named **Commit Corporate Strategy**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Develop Corporate Strategy** (`processes:process-sd-conceive-ahwvp5`). Its canonical ID is `processes:activity-sd-conceive-7tr4ax`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This is the closing act of strategy conception. The chosen trajectory comes in at intake alongside the settled ambition and intent, a final verification confirms the set is complete, and the corporate strategy is committed as one artifact. Confirmation notifies downstream consumers that the strategy is ready to drive design work, and the records custodian preserves the committed strategy for the long term.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It seals the process with one committed corporate strategy, the mandate that lets downstream design work begin from a settled base.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the trajectory is chosen and closes with the commitment confirmed, downstream consumers notified and evidence archived.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function lead commits the corporate strategy, the confirmation custodian notifies design colleagues that the committed ambition, intent and trajectory are available, and the records custodian archives the strategy evidence at its retention tier.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Corporate Strategy |
+| `plain_language_description` | string | no | This is the closing act of strategy conception. The chosen trajectory comes in at intake alongside the settled ambition … |
+| `business_purpose` | string | no | It seals the process with one committed corporate strategy, the mandate that lets downstream design work begin from a … |
+| `practical_context` | string | no | It opens once the trajectory is chosen and closes with the commitment confirmed, downstream consumers notified and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

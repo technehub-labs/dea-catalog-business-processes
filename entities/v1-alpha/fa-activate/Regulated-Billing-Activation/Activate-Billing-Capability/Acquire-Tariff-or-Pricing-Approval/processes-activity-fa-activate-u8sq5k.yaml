@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-activate-bzfywk through concluding task processes:task-fa-activate-record-yp9frh, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Acquire Tariff or Pricing Approval'
+plain_language_description: 'This activity secures the regulator''s approval of the tariff or pricing the enterprise will charge under, and preserves it on the billing record. The capability description goes in with the pricing submission, the approval comes back and is examined, and the preserved approval is confirmed onward. What the enterprise may charge then stands on a regulator''s signature.'
+business_purpose: 'It exists so live invoicing charges prices or tariffs the regulator has formally approved, with the approval kept on record.'
+practical_context: 'It runs while the billing capability is gated for live service, once the pricing submission is ready to go in, and it completes when the tariff or pricing approval is preserved on the billing record and confirmed.'
+worked_example:
+  agent_type: human
+  narrative: 'A workforce management officer lodges the pricing submission with the industry regulator alongside the capability description, receives the rate-case approval back, and has it preserved on the billing record.'

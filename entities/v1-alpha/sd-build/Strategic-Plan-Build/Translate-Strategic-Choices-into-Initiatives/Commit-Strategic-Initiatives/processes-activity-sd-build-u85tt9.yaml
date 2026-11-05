@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-build-9admqy through concluding task processes:task-sd-build-record-tve3ap, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit Strategic Initiatives'
+plain_language_description: 'The initiative set has survived scoping, drafting and the fit review, so it is ready to become official. Intake registers the confirmed set, a last verification checks every initiative is complete, and the commitment is made so the roadmap and resourcing work can pick them up. Confirmation tells downstream consumers the committed set is available and the records custodian preserves it with its audit identifiers.'
+business_purpose: 'It finalises the translated choices as a committed initiative set, the handover this process owes to the sequencing and resourcing work that follows.'
+practical_context: 'It opens after the fit review clears the set and closes when commitment is confirmed, consumers notified and evidence archived.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function lead commits the fit-checked initiative set, the confirmation custodian notifies the roadmap and allocation teams that their inputs are ready, and the records custodian files the set with retention and retrieval handles set up.'

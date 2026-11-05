@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 This is a **Activity** (level L3), named **Facilitate Cross-Team Interactions**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Coordinate Collaboration** (`processes:process-ao-operate-bd7mef`). Its canonical ID is `processes:activity-ao-operate-xnd6yx`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity keeps interactions flowing between the enterprise's agents and its teams, wherever they sit in the organization, working within the maintained norms of engagement. The norms come in as the footing, the cross-team interactions are enabled and supported as day-to-day work demands, and the facilitated interactions are confirmed for the record. Collaboration across team lines thereby proceeds without each exchange needing special arrangement.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so joint work across team lines proceeds smoothly in service instead of stalling at every boundary.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs in day-to-day service, once the interaction norms are maintained and cross-team work is under way, and it completes as facilitated interactions are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management custodian connects two teams and their artificial agents for a piece of joint work, keeps the exchange within the agreed norms, and confirms the interaction for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Facilitate the Cross-Team Interactions |
+| `plain_language_description` | string | no | This activity keeps interactions flowing between the enterprise's agents and its teams, wherever they sit in the … |
+| `business_purpose` | string | no | It exists so joint work across team lines proceeds smoothly in service instead of stalling at every boundary. |
+| `practical_context` | string | no | It runs in day-to-day service, once the interaction norms are maintained and cross-team work is under way, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

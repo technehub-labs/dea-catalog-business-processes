@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-design-7gtead through concluding task processes:task-eo-design-record-9gxazk, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Specify Platform Components'
+plain_language_description: 'This activity turns each platform family identified during framing into concrete components with a stated purpose. The framed enablement approach arrives as the source, components are specified family by family and checked against it, and the component specification is confirmed onward for the integration work. Platform kinds become platform parts.'
+business_purpose: 'It exists so the platform families the enterprise committed to become buildable components with clear purposes.'
+practical_context: 'It opens the platform architecture design, when the framed enablement approach is presented for detailing, and it completes once the component specification is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function designer works each identified platform family into named components with stated purposes, checks the set against the enablement approach, and confirms the specification.'

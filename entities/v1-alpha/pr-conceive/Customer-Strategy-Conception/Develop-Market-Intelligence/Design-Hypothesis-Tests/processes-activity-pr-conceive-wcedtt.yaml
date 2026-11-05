@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-conceive-tvst8u through concluding task processes:task-pr-conceive-record-bmsyqh, whose outcome — Closure case file retained for Design Hypothesis Tests under the records retention schedule with cryptographic integrity protection; cryptographic destruction …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design Hypothesis Tests'
+plain_language_description: 'This activity builds the checks that will prove or disprove each demand hypothesis. The formulated hypotheses arrive as the claims under trial, a test is designed for each and reviewed for rigour, and the test designs are confirmed onward for the thesis commitment. Every belief about the market is assigned the experiment that could kill it.'
+business_purpose: 'It exists so each demand hypothesis is paired with a test capable of proving it wrong.'
+practical_context: 'It follows the hypothesis formulation, once the claims are on the table, and it completes when the designed tests are confirmed onward for the thesis commitment.'
+worked_example:
+  agent_type: human
+  narrative: 'A customer relationship management analyst designs the check that will prove or disprove each formulated hypothesis, reviews the designs for rigour, and confirms them onward.'

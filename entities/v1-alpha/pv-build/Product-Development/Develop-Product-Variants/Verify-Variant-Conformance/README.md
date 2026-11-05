@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 
 This is a **Activity** (level L3), named **Verify Variant Conformance**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. It belongs to **Develop Product Variants** (`processes:process-pv-build-say8tb`). Its canonical ID is `processes:activity-pv-build-k47xjt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity checks each built variant against its own design and the configuration rules, before anything is declared done. The constructed variants arrive with their designs and rules as the standard, conformance is verified variant by variant and departures recorded, and the conforming set is confirmed onward for baselining. Variants earn trust by passing this gate.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so only variants proven true to their designs proceed toward market.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the variant construction, once the builds are complete, and it completes when the conformance verification is confirmed across the constructed set.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management verifier checks each built variant against its design and the configuration rules, records any departure, and confirms the conforming set onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Verify Variant Conformance |
+| `plain_language_description` | string | no | This activity checks each built variant against its own design and the configuration rules, before anything is declared … |
+| `business_purpose` | string | no | It exists so only variants proven true to their designs proceed toward market. |
+| `practical_context` | string | no | It follows the variant construction, once the builds are complete, and it completes when the conformance verification … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

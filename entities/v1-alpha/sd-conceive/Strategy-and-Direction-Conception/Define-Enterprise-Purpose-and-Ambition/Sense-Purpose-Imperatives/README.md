@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-co
 
 This is a **Activity** (level L3), named **Sense Purpose Imperatives**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Define Enterprise Purpose and Ambition** (`processes:process-sd-conceive-r93j3d`). Its canonical ID is `processes:activity-sd-conceive-28242h`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Why does the enterprise need to state its purpose right now? This work gathers the answer at intake — founding context, reframing pressure, mandate signals — verifies which genuinely apply, and distils them into a sensed imperative set. Confirmation shares the set with downstream colleagues and the records custodian preserves it for the framing step.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It establishes why purpose work is happening at all, anchoring the definition in the establishment, reframe or mandate reality behind it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens this process at intake when establishment context and mandate signals arrive, closing once the imperatives are confirmed and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function lead collects the founding papers and the latest mandate notes at intake, the verification custodian confirms which imperatives truly apply, and the sensed set is confirmed onward to the purpose framing team.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Identify Purpose Imperatives |
+| `plain_language_description` | string | no | Why does the enterprise need to state its purpose right now? This work gathers the answer at intake — founding context … |
+| `business_purpose` | string | no | It establishes why purpose work is happening at all, anchoring the definition in the establishment, reframe or mandate … |
+| `practical_context` | string | no | It opens this process at intake when establishment context and mandate signals arrive, closing once the imperatives are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

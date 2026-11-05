@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Produce Management Reports**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Perform Financial Close** (`processes:process-fa-operate-4xn4d6`). Its canonical ID is `processes:activity-fa-operate-bsq94u`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the closed period's numbers into the reports management will actually read. The certified period arrives as the source of truth, the management reports are produced from it and checked against it, and the produced reports are confirmed onward. The close's final act is making its work legible to decision-makers.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so management sees the closed period through reports drawn from certified numbers.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the close certification, working from the certified period, and it completes when the produced management reports are confirmed onward for their readers.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A close custodian produces the management reports from the certified period's numbers, checks them against the certified books, and confirms the reports for their readers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Produce Management Reports |
+| `plain_language_description` | string | no | This activity draws the closed period's numbers into the reports management will actually read. The certified period … |
+| `business_purpose` | string | no | It exists so management sees the closed period through reports drawn from certified numbers. |
+| `practical_context` | string | no | It follows the close certification, working from the certified period, and it completes when the produced management … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

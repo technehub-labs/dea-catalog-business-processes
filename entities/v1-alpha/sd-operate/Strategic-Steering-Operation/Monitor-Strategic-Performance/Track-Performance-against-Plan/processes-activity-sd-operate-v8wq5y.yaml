@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-operate-zdjchn through concluding task processes:task-sd-operate-record-exd85j, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Track Performance against Plan'
+plain_language_description: 'Readings on their own say little; they need the plan beside them. Intake registers the collected measures, verification confirms the comparison basis is consistent, and processing lays each reading against the plan''s objectives and targets to build the current position. Confirmation shares the tracked position downstream and the records custodian preserves it for the deviation check.'
+business_purpose: 'It maintains the running picture of where execution stands relative to the plan, the position that makes deviations visible at all.'
+practical_context: 'It follows collection, opening at intake of each collected measure set and closing when the updated position is confirmed and preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function tracker lays the fresh readings beside the plan''s objectives and targets, a verification custodian confirms the basis of comparison has not shifted, and the confirmation custodian publishes the updated position to the monitoring team.'

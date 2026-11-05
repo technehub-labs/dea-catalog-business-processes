@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 
 This is a **Activity** (level L3), named **Commit Organization Model Frame**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Frame Organization Model** (`processes:process-ao-conceive-ruxjvh`). Its canonical ID is `processes:activity-ao-conceive-rcyn7u`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity gathers the principles, spans, and boundaries produced during framing and fixes them as the organization model's frame. The bounded coordination boundaries come in last, the whole frame is consolidated and reviewed, and its commitment is confirmed so structure design can rely on it. The committed frame is preserved as an audit record for later reference.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the organization's structural ground rules become one committed frame that all later design work answers to.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It takes place at the end of framing the organization model, once the coordination boundaries have been marked, and it closes when the committed frame is confirmed and its record retained at the agreed tier.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian assembles the derived principles, reporting spans, and coordination boundaries into a single frame, obtains the strategy function's commitment, and files the audit record that lets structure design begin against a stable reference.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit the Organization Model Frame |
+| `plain_language_description` | string | no | This activity gathers the principles, spans, and boundaries produced during framing and fixes them as the organization … |
+| `business_purpose` | string | no | It exists so the organization's structural ground rules become one committed frame that all later design work answers … |
+| `practical_context` | string | no | It takes place at the end of framing the organization model, once the coordination boundaries have been marked, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

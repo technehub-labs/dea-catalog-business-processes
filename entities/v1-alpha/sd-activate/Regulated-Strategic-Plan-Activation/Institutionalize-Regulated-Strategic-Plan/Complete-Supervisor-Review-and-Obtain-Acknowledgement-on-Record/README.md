@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-ac
 
 This is a **Activity** (level L3), named **Complete Supervisor Review and Obtain Acknowledgement on Record**, currently **candidate (yellow)**. It is part of the **Institutionalize Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Activate. It belongs to **Institutionalize Regulated Strategic Plan** (`processes:process-sd-activate-s9m34e`). Its canonical ID is `processes:activity-sd-activate-w83pp4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The filed submission now sits with the supervising authority, and this work sees the review through to a formal answer. The team hands the reviewers what they need, tracks their questions against the review criteria, and records how each point is resolved. When the supervisor signs the acknowledgement, it is preserved on the regulated strategic-plan record so the plan's activation can proceed.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It secures the supervisor's formal yes, the gate that turns a filed plan into one the entity may act on under supervision.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens when the filed submission and the review criteria are presented for intake and closes when the signed acknowledgement is issued and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A supervising authority reviewer works through the lodged plan against the published review criteria while the strategy function supply evidence on request; when the regulator is satisfied, the confirmation custodian issues the acknowledgement and the records custodian preserves it on the regulated strategic-plan record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Complete Supervisor Review and Obtain Acknowledgement on Record |
+| `plain_language_description` | string | no | The filed submission now sits with the supervising authority, and this work sees the review through to a formal answer … |
+| `business_purpose` | string | no | It secures the supervisor's formal yes, the gate that turns a filed plan into one the entity may act on under … |
+| `practical_context` | string | no | It opens when the filed submission and the review criteria are presented for intake and closes when the signed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

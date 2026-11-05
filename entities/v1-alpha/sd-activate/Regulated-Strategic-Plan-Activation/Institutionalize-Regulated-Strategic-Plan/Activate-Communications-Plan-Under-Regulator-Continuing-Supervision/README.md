@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-ac
 
 This is a **Activity** (level L3), named **Activate Communications Plan Under Regulator Continuing Supervision**, currently **candidate (yellow)**. It is part of the **Institutionalize Regulated Strategic Plan** process context, domain `sd`, lifecycle stage Activate. It belongs to **Institutionalize Regulated Strategic Plan** (`processes:process-sd-activate-s9m34e`). Its canonical ID is `processes:activity-sd-activate-jz6u3q`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the supervisor's acknowledgement secured, attention turns to telling the outside world. The team takes in the acknowledged plan and the mandated disclosure framework, verifies the announcements are ready, and switches the communications plan on — the disclosure controls, the regulated-entity announcement and the investor-relations briefing all go live while the regulator keeps watch. Confirmation tells downstream consumers the plan is active, and the activated communications plan is preserved on the record.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It makes the plan's public face live under the regulator's watchful eye, so disclosures and announcements reach the audiences the supervisor expects.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Entry begins at intake once the acknowledged plan and the disclosure framework are presented; closure comes when activation is confirmed and preserved on the record.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function's communications lead receives the acknowledged plan, walks the disclosure controls past the risk function, and issues the regulated-entity announcement on the agreed day; investor-relations colleagues brief the market while the records custodian preserves the activation evidence for the supervising authority.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Activate the Communications Plan Under Ongoing Regulator Supervision |
+| `plain_language_description` | string | no | With the supervisor's acknowledgement secured, attention turns to telling the outside world. The team takes in the … |
+| `business_purpose` | string | no | It makes the plan's public face live under the regulator's watchful eye, so disclosures and announcements reach the … |
+| `practical_context` | string | no | Entry begins at intake once the acknowledged plan and the disclosure framework are presented; closure comes when … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Report Treasury Position**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Manage Cash and Liquidity** (`processes:process-fa-operate-2pmqb2`). Its canonical ID is `processes:activity-fa-operate-mumzq7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity lays out where treasury stands — positions, forecasts, and investments — for whoever depends on knowing. The accumulated picture arrives as the material, the position report is drawn from it and checked, and the report is confirmed onward to its consumers. Treasury's world becomes legible to the rest of the enterprise.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the people relying on treasury's state can see it, reported rather than retold.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs on the reporting cadence once positions, forecasts, and investments have accumulated, and it completes when the treasury position report is confirmed and delivered to its consumers.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A treasury custodian draws the positions, forecasts, and investments into one position report, checks it against the underlying records, and confirms it to the consumers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Report Treasury Position |
+| `plain_language_description` | string | no | This activity lays out where treasury stands — positions, forecasts, and investments — for whoever depends on knowing … |
+| `business_purpose` | string | no | It exists so the people relying on treasury's state can see it, reported rather than retold. |
+| `practical_context` | string | no | It runs on the reporting cadence once positions, forecasts, and investments have accumulated, and it completes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

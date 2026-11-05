@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Record Production Output**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Run Production Line** (`processes:process-eo-operate-xud3hs`). Its canonical ID is `processes:activity-eo-operate-94uqh7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity writes each cycle's output and its quality outcome into the production record once the cycle completes. Cycle actuals arrive from the run, output and quality are registered against the cycle, and the production record is confirmed onward. What the line made, and how well, becomes a matter of record rather than memory.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise knows from its records what each cycle produced and at what quality.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows each cycle's completion, once the run hands over its actuals, and it completes when the output and quality results are registered in the production record and confirmed onward.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A records custodian registers the completed cycle's output quantity and quality outcome into the production record, and confirms the entry for the reporting that follows.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Record Production Output |
+| `plain_language_description` | string | no | This activity writes each cycle's output and its quality outcome into the production record once the cycle completes … |
+| `business_purpose` | string | no | It exists so the enterprise knows from its records what each cycle produced and at what quality. |
+| `practical_context` | string | no | It follows each cycle's completion, once the run hands over its actuals, and it completes when the output and quality … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-operate-hs7wf3 through concluding task processes:task-ge-operate-record-bvdhyt, whose outcome — Case file retained for Record Governance Decisions under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Record Governance Decisions'
+plain_language_description: 'This activity writes down what the bodies decided, into the record of record. The made decisions arrive from the facilitated cycles, each is recorded with its terms and its rationale, and the recorded decisions are confirmed onward. Tomorrow''s enterprise can know exactly what its governance chose, and why.'
+business_purpose: 'It exists so governance decisions are preserved with their reasoning in the authoritative record.'
+practical_context: 'It follows each facilitated decision as it is made within the cycles, and it completes when the recorded decision is confirmed into the decision record of record.'
+worked_example:
+  agent_type: human
+  narrative: 'A governance custodian writes each made decision into the record of record — terms, rationale, and dissent noted — and confirms the recorded decision onward.'

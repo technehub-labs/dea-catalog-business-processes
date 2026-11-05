@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 
 This is a **Activity** (level L3), named **Bound Capacity Envelopes**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Conceive Workforce and Agent Mix** (`processes:process-ao-conceive-z6m6p5`). Its canonical ID is `processes:activity-ao-conceive-9mvxt3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the planning limits within which each part of the workforce mix has to operate. The agreed proportions are taken in and reviewed, the capacity envelope for each of them is worked out, and the envelopes are confirmed with the planners and recorded. Drafting of the mix then happens inside those envelopes rather than by open-ended ambition.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so each proportion of the planned mix comes with a workable capacity limit that acquisition and planning can be held to.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It happens once the substrate proportions have been agreed, when they are presented for envelope planning, and it closes when the envelopes are confirmed and their record kept for the drafting step.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management lead takes the agreed proportions and works out how much capacity each part of the mix may claim, confirms the envelopes with the strategy function, and files them so the mix can be drafted within agreed limits.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set the Capacity Envelopes for the Workforce Mix |
+| `plain_language_description` | string | no | This activity draws the planning limits within which each part of the workforce mix has to operate. The agreed … |
+| `business_purpose` | string | no | It exists so each proportion of the planned mix comes with a workable capacity limit that acquisition and planning can … |
+| `practical_context` | string | no | It happens once the substrate proportions have been agreed, when they are presented for envelope planning, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

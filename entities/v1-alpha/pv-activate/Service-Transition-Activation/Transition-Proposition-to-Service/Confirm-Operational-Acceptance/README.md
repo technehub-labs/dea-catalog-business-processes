@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-ac
 
 This is a **Activity** (level L3), named **Confirm Operational Acceptance**, currently **candidate (yellow)**. It is part of the **Proposition Launch and Service Transition** process context, domain `pv`, lifecycle stage Activate. It belongs to **Transition Proposition to Service** (`processes:process-pv-activate-5686v7`). Its canonical ID is `processes:activity-pv-activate-hxb9wf`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity collects the formal handover signature — the operational owner accepts the service, with the evidence attached. The stabilised service arrives as the candidate for acceptance, sign-off is obtained from the accepting owner and evidenced, and the accepted service is confirmed onward for operational life. The transition ends when someone with ownership says, in writing, that it is theirs now.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so operational reliance on the service begins with a formal, evidenced acceptance by its owner.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the transition once early operations are stabilised, and it completes when the formal acceptance with ownership sign-off and evidence is confirmed into operational service.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management officer presents the stabilised service for acceptance, obtains the operational owner's signed sign-off with the evidence attached, and confirms the accepted service into operation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Confirm Operational Acceptance |
+| `plain_language_description` | string | no | This activity collects the formal handover signature — the operational owner accepts the service, with the evidence … |
+| `business_purpose` | string | no | It exists so operational reliance on the service begins with a formal, evidenced acceptance by its owner. |
+| `practical_context` | string | no | It closes the transition once early operations are stabilised, and it completes when the formal acceptance with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

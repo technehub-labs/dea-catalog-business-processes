@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-design-uun4ja through concluding task processes:task-fa-design-record-g7kpyy, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Analyze Control and Policy Gaps'
+plain_language_description: 'This activity takes the shortcoming in controls or policy that has surfaced and works out exactly what design work it demands. The gap identification and any audit findings arrive as the material, the gap is analyzed and its design need bounded, and the bounded analysis is confirmed onward for the objectives. Vague unease about a control becomes a specific design brief.'
+business_purpose: 'It exists so control and policy design starts from a bounded understanding of the actual gap.'
+practical_context: 'It opens the controls and policies design when a gap is identified or audit findings arrive, and it completes once the bounded gap analysis is confirmed for the objective design.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance design authority analyst takes the surfaced control shortcoming with its audit findings, bounds exactly what design work it demands, and confirms the analysis for the objectives.'

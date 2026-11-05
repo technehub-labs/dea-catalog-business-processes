@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-im
 
 This is a **Activity** (level L3), named **Develop Improvement Capability**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Conduct Lean Six Sigma Programme** (`processes:process-eo-improve-us272s`). Its canonical ID is `processes:activity-eo-improve-334m2m`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity builds the practitioners, the methods, and the governance that the programme leans on. The programme standards arrive as the benchmark, people are trained and the practices stood up against it, and the built capability is confirmed onward. The enterprise thereby owns a repeatable way of improving, not just this cycle's wins.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so improvement rests on the enterprise's own trained people and methods, not on borrowed expertise each cycle.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs alongside the programme as a standing investment, benchmarked to the programme standards, and it completes when the developed capability is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function lead trains a cohort of practitioners to the programme's standards and stands up its methods and governance, then confirms the developed capability for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Develop Improvement Capability |
+| `plain_language_description` | string | no | This activity builds the practitioners, the methods, and the governance that the programme leans on. The programme … |
+| `business_purpose` | string | no | It exists so improvement rests on the enterprise's own trained people and methods, not on borrowed expertise each cycle. |
+| `practical_context` | string | no | It runs alongside the programme as a standing investment, benchmarked to the programme standards, and it completes when … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

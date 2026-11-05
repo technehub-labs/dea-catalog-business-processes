@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-design-k5sgfa through concluding task processes:task-fa-design-record-nbe5z5, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design Cash and Liquidity Policy'
+plain_language_description: 'This activity sets the rules for how cash is held and liquidity assured as treasury goes about its work. The treasury policy review and the funding posture arrive as the inputs, the cash and liquidity rules are designed and reviewed against both, and the policy design is confirmed onward for the funding structure. The enterprise decides in advance how much cash it will always keep close.'
+business_purpose: 'It exists so treasury runs on a designed cash and liquidity policy rather than on instinct in the moment.'
+practical_context: 'It opens the treasury and funding model design when treasury policy or funding posture is reviewed, and it completes once the liquidity policy design is confirmed for the funding structure.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance design authority designer sets the rules for holding cash and assuring liquidity against the policy review and funding posture, and confirms the design for the funding structure.'

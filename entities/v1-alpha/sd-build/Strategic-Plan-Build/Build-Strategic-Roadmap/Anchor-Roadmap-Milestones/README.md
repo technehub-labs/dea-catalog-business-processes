@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-bu
 
 This is a **Activity** (level L3), named **Anchor Roadmap Milestones**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. It belongs to **Build Strategic Roadmap** (`processes:process-sd-build-7n4prh`). Its canonical ID is `processes:activity-sd-build-yvecqq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the initiative order settled, each step needs a date to aim at. The team registers the sequence, verifies the anchors line up with the horizons, and fixes the milestones those ordered initiatives have to deliver. Confirmation spreads the anchored dates to downstream planners and the records custodian preserves them on the roadmap trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives the initiative sequence concrete deliverable points, so the roadmap can be tracked and the plan build has dates to rely on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows sequencing, opening when the initiative sequence and the horizon references arrive at intake and closing when the milestones are confirmed and filed.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function sets delivery dates beside each ordered initiative, checks them against the horizon plan, and once the confirmation custodian announces the anchors are fixed the records custodian files them with the roadmap working papers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Anchor Roadmap Milestones |
+| `plain_language_description` | string | no | With the initiative order settled, each step needs a date to aim at. The team registers the sequence, verifies the … |
+| `business_purpose` | string | no | It gives the initiative sequence concrete deliverable points, so the roadmap can be tracked and the plan build has … |
+| `practical_context` | string | no | It follows sequencing, opening when the initiative sequence and the horizon references arrive at intake and closing … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

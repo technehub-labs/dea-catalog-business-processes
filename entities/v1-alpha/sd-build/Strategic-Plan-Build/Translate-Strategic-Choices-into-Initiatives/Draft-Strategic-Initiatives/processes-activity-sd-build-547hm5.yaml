@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-build-9admqy through concluding task processes:task-sd-build-record-udv3xf, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Draft Strategic Initiatives'
+plain_language_description: 'Now the chosen direction takes the shape of named pieces of work. The scope lines arrive at intake, verification checks the drafting instructions are complete, and processing writes the initiative set — each one described, shaped and kept inside its agreed edges. Confirmation announces the drafted set to downstream colleagues and the working papers are preserved for the fit review.'
+business_purpose: 'It gives the strategic choices a concrete, workable form that can be reviewed for fit and ultimately committed.'
+practical_context: 'It runs once scopes are set, opening at intake of the bounded scope and closing when the drafted initiatives are confirmed ready for review.'
+worked_example:
+  agent_type: human
+  narrative: 'Strategy function writers draft each initiative inside its agreed boundaries, a verification custodian sends any under-specified one back for rework, and the confirmation custodian tells the reviewers the drafted set is with them.'

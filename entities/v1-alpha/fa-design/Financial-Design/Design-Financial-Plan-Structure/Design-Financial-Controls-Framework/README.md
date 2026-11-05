@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-de
 
 This is a **Activity** (level L3), named **Design Financial Controls Framework**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Design Financial Plan Structure** (`processes:process-fa-design-vk422z`). Its canonical ID is `processes:activity-fa-design-bn5x7x`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity builds the safeguards directly into the account structure and allocation rules. The chart and the allocation model arrive as the structure to protect, the controls are designed into its fabric and checked against it, and the embedded controls design is confirmed onward for the structure's commitment. The plan structure arrives at build already defended.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the financial plan structure carries its own safeguards, designed in rather than bolted on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the allocation model, once the chart and allocation rules are in hand, and it completes when the embedded controls design is confirmed for the structure's commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance design authority designer designs the safeguards into the account structure and allocation rules themselves, checks the coverage, and confirms the embedded controls design.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Financial Controls Framework |
+| `plain_language_description` | string | no | This activity builds the safeguards directly into the account structure and allocation rules. The chart and the … |
+| `business_purpose` | string | no | It exists so the financial plan structure carries its own safeguards, designed in rather than bolted on. |
+| `practical_context` | string | no | It follows the allocation model, once the chart and allocation rules are in hand, and it completes when the embedded … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

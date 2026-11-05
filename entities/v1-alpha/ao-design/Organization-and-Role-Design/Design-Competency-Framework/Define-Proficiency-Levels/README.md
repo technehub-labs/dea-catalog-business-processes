@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 
 This is a **Activity** (level L3), named **Define Proficiency Levels**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Design Competency Framework** (`processes:process-ao-design-rve8j5`). Its canonical ID is `processes:activity-ao-design-amjqu5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity breaks each competency domain into the steps of mastery that people and agents will progress through. The identified domains arrive first, the levels within each are defined and reviewed, and the defined levels are confirmed with the design authority. Once set, they give the framework a common vocabulary for how capable someone is in a domain.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so capability in each domain can be discussed in agreed steps rather than impressions.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows identification of the competency domains, when the domains are presented for level definition, and it completes when the defined levels are confirmed and their record preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A designer for the organization design authority splits a newly identified domain into distinct proficiency steps, checks that the steps are meaningfully different, and records the defined levels ready for assessment anchoring.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Define the Proficiency Levels |
+| `plain_language_description` | string | no | This activity breaks each competency domain into the steps of mastery that people and agents will progress through. The … |
+| `business_purpose` | string | no | It exists so capability in each domain can be discussed in agreed steps rather than impressions. |
+| `practical_context` | string | no | It follows identification of the competency domains, when the domains are presented for level definition, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

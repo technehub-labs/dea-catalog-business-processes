@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-build-awy8dz through concluding task processes:task-eo-build-record-nzgwjq, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Run Line Trials'
+plain_language_description: 'This activity exercises the fully set-up line through trial runs until it produces at the planned trial pace. The trial production plans arrive as the script, runs are executed and their results gathered, and the trial outcomes are confirmed onward for certification. The line proves in practice what the configuration promised on paper.'
+business_purpose: 'It exists so the line''s fitness is demonstrated by actually producing, before anyone certifies it for full production.'
+practical_context: 'It follows control configuration, when the configured line is ready to be exercised, and it completes once the trial results are confirmed and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian runs the line through the scripted trial production, gathers the results as output builds toward the trial pace, and confirms the outcomes for the certification step.'

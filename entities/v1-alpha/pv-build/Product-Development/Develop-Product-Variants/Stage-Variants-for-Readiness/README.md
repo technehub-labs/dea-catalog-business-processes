@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 
 This is a **Activity** (level L3), named **Stage Variants for Readiness**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. It belongs to **Develop Product Variants** (`processes:process-pv-build-say8tb`). Its canonical ID is `processes:activity-pv-build-6z6rdn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity moves the baselined variants into position for the market readiness work that follows. The documented baselines arrive as the finished stock, variants are staged for what comes next and checked into place, and the staged set is confirmed onward. Variant development ends with its products lined up at the next door.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the developed, baselined variants are formally handed to market readiness preparation.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the variant development once baselines are documented, and it completes when the staged variants are confirmed onward for market readiness preparation.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management custodian lines up the baselined variants for the market readiness work, checks each into place, and confirms the staged set onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Stage Variants for Readiness |
+| `plain_language_description` | string | no | This activity moves the baselined variants into position for the market readiness work that follows. The documented … |
+| `business_purpose` | string | no | It exists so the developed, baselined variants are formally handed to market readiness preparation. |
+| `practical_context` | string | no | It closes the variant development once baselines are documented, and it completes when the staged variants are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-operate-zpmxzp through concluding task processes:task-fa-operate-record-5qp3wn, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Compute Withholdings'
+plain_language_description: 'This activity works out the deductions — tax and otherwise — that come off the calculated pay. The calculated compensation arrives as the base, withholdings are computed against it per the applicable rules, and the computed deductions are confirmed onward for disbursement. What is earned and what is kept are both established before anyone is paid.'
+business_purpose: 'It exists so the deductions owed from each person''s pay are computed correctly, before payment goes out.'
+practical_context: 'It follows the compensation calculation within the cycle, and it completes once the computed withholdings are confirmed onward for disbursement.'
+worked_example:
+  agent_type: human
+  narrative: 'A compliance function payroll analyst computes the tax and other deductions against the calculated pay for every person, and confirms the withholdings for disbursement.'

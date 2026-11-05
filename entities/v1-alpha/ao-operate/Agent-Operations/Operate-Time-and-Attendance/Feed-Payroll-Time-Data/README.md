@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 This is a **Activity** (level L3), named **Feed Payroll Time Data**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Operate Time and Attendance** (`processes:process-ao-operate-dg9q4h`). Its canonical ID is `processes:activity-ao-operate-5myx8s`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity hands the cycle's settled time data over to payroll so it can calculate. The resolved exceptions and checked records come in as the final inputs, the feed is assembled and delivered for the cycle, and the handover is confirmed for the record. This is the bridge that lets attendance become pay.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so payroll receives, each cycle, time data that has been captured, checked, and settled.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the time and attendance cycle, running once validation and exception resolution are done, and it completes when the feed is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian assembles the cycle's settled attendance records, hands them to payroll for calculation, and confirms the handover with its audit identifiers on file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Pass the Time Data to Payroll |
+| `plain_language_description` | string | no | This activity hands the cycle's settled time data over to payroll so it can calculate. The resolved exceptions and … |
+| `business_purpose` | string | no | It exists so payroll receives, each cycle, time data that has been captured, checked, and settled. |
+| `practical_context` | string | no | It closes the time and attendance cycle, running once validation and exception resolution are done, and it completes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

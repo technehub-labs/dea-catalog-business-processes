@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-operate-ycba3k through concluding task processes:task-fa-operate-record-s59v58, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Deliver Reports and Disclosures'
+plain_language_description: 'This activity gets the finished, reviewed reporting out to everyone who relies on it, inside and outside. The reviewed package arrives as the release candidate, delivery is executed to each consumer, and the delivered reporting is confirmed for the record. All the preparation counts for nothing until this hands it over.'
+business_purpose: 'It exists so the reviewed reporting actually reaches its internal and external readers.'
+practical_context: 'It follows the package review, once the reporting is cleared for release, and it completes when the delivered reports and disclosures are confirmed and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A compliance function custodian delivers the reviewed package to the internal and external consumers on its distribution list, and confirms each delivery for the record.'

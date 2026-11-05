@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-bu
 
 This is a **Activity** (level L3), named **Verify Delivery Capability**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Build Delivery Capability** (`processes:process-eo-build-j9z3q4`). Its canonical ID is `processes:activity-eo-build-8ahmd5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity tests the assembled capability end to end against what the operations model calls for. The integrated capability comes in with the service levels, capacity envelopes, and delivery model design as the yardstick, performance is exercised and measured against it, and the verification outcome is confirmed onward. Build confidence is earned here, before anyone depends on the capability.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so handover to operations happens with proof, not hope, that the capability performs to its design.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows integration, when the joined capability is presented for testing, and it completes when the verification outcome is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A verification custodian exercises the joined capability end to end, measures it against the agreed service levels and capacity envelopes, and confirms the verification outcome for handover.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Verify Delivery Capability |
+| `plain_language_description` | string | no | This activity tests the assembled capability end to end against what the operations model calls for. The integrated … |
+| `business_purpose` | string | no | It exists so handover to operations happens with proof, not hope, that the capability performs to its design. |
+| `practical_context` | string | no | It follows integration, when the joined capability is presented for testing, and it completes when the verification … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

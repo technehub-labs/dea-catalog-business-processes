@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-improve-3fem63 through concluding task processes:task-eo-improve-record-h7w292, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Analyze Routing Performance'
+plain_language_description: 'This activity reads the performance records for routing and the wider network to surface where cost runs high or service slips. The execution records and attainment figures arrive as the raw material, the analysis bounds the opportunities and quantifies each, and the opportunity analysis is confirmed onward for the change design. The network''s weak spots become named, sized targets.'
+business_purpose: 'It exists so logistics improvement aims at opportunities the evidence actually supports, sized before any change is designed.'
+practical_context: 'It opens the logistics optimization, when the routing execution records and service attainment figures are presented, and it completes once the opportunity analysis is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function analyst reads the routing execution records and service attainment figures, bounds and sizes the cost and service opportunities, and confirms the analysis for the design step.'

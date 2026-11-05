@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-re
 
 This is a **Activity** (level L3), named **Plan Asset Retirement**, currently **candidate (yellow)**. It is part of the **Operations and Asset Decommissioning** process context, domain `eo`, lifecycle stage Retire. It belongs to **Decommission Enterprise Asset** (`processes:process-eo-retire-rpg6d4`). Its canonical ID is `processes:activity-eo-retire-6gntey`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity turns the retirement approval into a working plan — the timetable, what the asset depends on, and the safety and regulatory boundaries to respect. The approved decision arrives as the mandate, the retirement is planned against its dependencies and constraints, and the retirement plan is confirmed onward for withdrawal. Decommissioning starts with a plan, not with a wrench.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so an asset's retirement is planned against its dependencies and constraints before anything is switched off.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the decommissioning once the retirement decision is approved, and it completes when the retirement plan is confirmed for the withdrawal step.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management planner turns the approved retirement into a dated plan, mapping what the asset feeds and the safety and regulatory boundaries, and confirms the plan for withdrawal.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Plan Asset Retirement |
+| `plain_language_description` | string | no | This activity turns the retirement approval into a working plan — the timetable, what the asset depends on, and the … |
+| `business_purpose` | string | no | It exists so an asset's retirement is planned against its dependencies and constraints before anything is switched off. |
+| `practical_context` | string | no | It opens the decommissioning once the retirement decision is approved, and it completes when the retirement plan is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

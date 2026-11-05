@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-im
 
 This is a **Activity** (level L3), named **Redraft Objectives and Targets**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. It belongs to **Refresh Objectives and Targets** (`processes:process-sd-improve-aqbrm7`). Its canonical ID is `processes:activity-sd-improve-ygmzmg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The verdicts are in, so the wording gets rewritten. Intake registers the fit assessment, verification checks every verdict has a redrafting instruction, and processing rewrites the measures so they once more track the adapted course and what the evidence actually shows. Confirmation announces the redrafted set downstream and the working papers are preserved for commitment.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It rewrites the stale measures into ones that fit where the direction now points, restoring a steerable objective set.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the fit assessment, opening at intake of the verdicts and closing when the redrafted set is confirmed ready for commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Strategy function writers rewrite the flagged objectives and targets against the fit verdicts, a verification custodian sends any half-rewritten line back, and the confirmation custodian announces the refreshed set is ready for ratification.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Redraft Objectives and Targets |
+| `plain_language_description` | string | no | The verdicts are in, so the wording gets rewritten. Intake registers the fit assessment, verification checks every … |
+| `business_purpose` | string | no | It rewrites the stale measures into ones that fit where the direction now points, restoring a steerable objective set. |
+| `practical_context` | string | no | It follows the fit assessment, opening at intake of the verdicts and closing when the redrafted set is confirmed ready … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

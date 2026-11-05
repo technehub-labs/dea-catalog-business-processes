@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-co
 
 This is a **Activity** (level L3), named **Formulate Demand Hypotheses**, currently **candidate (yellow)**. It is part of the **Customer Strategy Conception** process context, domain `pr`, lifecycle stage Conceive. It belongs to **Develop Market Intelligence** (`processes:process-pr-conceive-tvst8u`). Its canonical ID is `processes:activity-pr-conceive-mnhm2f`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity shapes what the market scan found into hypotheses sharp enough to be tested. The scanned signals arrive as the raw material, demand hypotheses are formulated from them and each made falsifiable, and the formulated set is confirmed onward for the test design. Hunches become claims that can lose.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so market beliefs are stated as testable claims rather than unexamined assumptions.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the market scan, once the signals are gathered and confirmed, and it completes when the formulated demand hypotheses are confirmed onward for the test design.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function analyst shapes the scan's signals into demand hypotheses stated sharply enough to be proven wrong, and confirms the formulated set onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Formulate Demand Hypotheses |
+| `plain_language_description` | string | no | This activity shapes what the market scan found into hypotheses sharp enough to be tested. The scanned signals arrive … |
+| `business_purpose` | string | no | It exists so market beliefs are stated as testable claims rather than unexamined assumptions. |
+| `practical_context` | string | no | It follows the market scan, once the signals are gathered and confirmed, and it completes when the formulated demand … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

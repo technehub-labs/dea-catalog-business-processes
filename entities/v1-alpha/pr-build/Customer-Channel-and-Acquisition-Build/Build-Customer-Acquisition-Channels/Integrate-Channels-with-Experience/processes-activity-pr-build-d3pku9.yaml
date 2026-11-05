@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-build-nygvw7 through concluding task processes:task-pr-build-record-8mwbey, whose outcome — Closure case file retained for Integrate Channels with Experience under the records retention schedule with cryptographic integrity protection; cryptographic …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Integrate Channels with Experience'
+plain_language_description: 'This activity joins the provisioned channels up with the designed experience — its journey and its interaction patterns — as committed. The infrastructure arrives as the frame, the designed experience is wired into it and checked at every join, and the integrated channels are confirmed onward for the engines. Customers will meet the designed experience, not a bolted-on approximation.'
+business_purpose: 'It exists so what customers actually encounter through the channels is the experience that was designed.'
+practical_context: 'It follows the channel provisioning, once the infrastructure is in place, and it completes when the channels'' integration with the designed experience is confirmed onward.'
+worked_example:
+  agent_type: human
+  narrative: 'A customer relationship management builder wires the provisioned channels to the designed journey and interaction patterns, checks every join, and confirms the integrated channels.'

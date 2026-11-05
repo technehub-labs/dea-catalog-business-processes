@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-retire-rpg6d4 through concluding task processes:task-eo-retire-record-dmegua, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Resolve Residual Value and Obligations'
+plain_language_description: 'This activity salvages what the disposed asset is still worth, wipes any data it holds, and closes out the obligations left behind, all on the record. The disposed asset and its residual accounts arrive as the closing matter, value is recovered and data sanitised, and the resolved position is confirmed for the record. The asset''s story ends with nothing left owing.'
+business_purpose: 'It exists so a decommissioned asset leaves no loose ends — its value recovered, its data gone, its obligations closed.'
+practical_context: 'It runs once the asset is disposed of, against its residual accounts, and it completes when the recovered value, sanitised data, and resolved obligations are confirmed on the record.'
+worked_example:
+  agent_type: human
+  narrative: 'A custodian recovers the disposed asset''s remaining book value, sanitises the data it carried, closes out its outstanding obligations, and confirms the resolved position for the record.'

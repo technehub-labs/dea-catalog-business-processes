@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-activate-5686v7 through concluding task processes:task-pv-activate-record-whkmzs, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Execute Service Cutover'
+plain_language_description: 'This activity performs the switch that puts the proposition to work in the live operational setting. The prepared transition arrives as the authority and the script, the activation is executed step by step against it, and the executed cutover is confirmed onward for stabilisation. This is the moment the proposition stops being a project and starts being a service.'
+business_purpose: 'It exists so the proposition enters live operation through one deliberate, scripted switch.'
+practical_context: 'It follows the readiness preparation, once criteria, plan, and rollback are confirmed, and it completes when the executed cutover is confirmed onward for early-life stabilisation.'
+worked_example:
+  agent_type: human
+  narrative: 'A product management officer executes the cutover step by step against the prepared plan, confirming each step as the proposition goes live in the operational environment.'

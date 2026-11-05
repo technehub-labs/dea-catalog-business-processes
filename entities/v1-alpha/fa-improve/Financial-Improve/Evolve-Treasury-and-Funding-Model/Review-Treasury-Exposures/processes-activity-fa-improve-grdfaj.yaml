@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-improve-2kemkq through concluding task processes:task-fa-improve-record-dwrznw, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Review Treasury Exposures'
+plain_language_description: 'This activity weighs what the watched shifts now expose in treasury terms against the model as it stands. The monitored shifts arrive as the input, the exposures they create are reviewed and bounded against the current model, and the reviewed exposures are confirmed onward for the evolution design. The gap between the model and the world it lives in is made explicit.'
+business_purpose: 'It exists so the model''s evolution is aimed at exposures that are named and measured, not sensed.'
+practical_context: 'It follows the shift monitoring, when the tracked changes are handed over, and it completes once the reviewed treasury exposures are confirmed for the evolution design.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance design authority analyst weighs the exposures the market shift has created against the current treasury model, bounds them, and confirms the review for the evolution design.'

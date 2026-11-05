@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-operate-2pmqb2 through concluding task processes:task-fa-operate-record-gaegqp, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Forecast Liquidity'
+plain_language_description: 'This activity projects the cash ahead, from where positions stand today and what is known to be owed. The monitored positions and the known obligations arrive as the inputs, the liquidity forecast is drawn and checked against both, and the forecast is confirmed onward for the investment decisions. Tomorrow''s cash needs are met because today''s treasury saw them coming.'
+business_purpose: 'It exists so liquidity needs are foreseen from positions and obligations, not discovered in the moment.'
+practical_context: 'It runs against the monitored positions and the known obligations, and it completes once the liquidity forecast is confirmed onward for the investment decisions.'
+worked_example:
+  agent_type: human
+  narrative: 'A treasury analyst projects the coming liquidity from today''s monitored positions and the obligations on the books, and confirms the forecast for the investment decisions.'

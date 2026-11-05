@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-de
 
 This is a **Activity** (level L3), named **Design Packaging Formats**, currently **candidate (yellow)**. It is part of the **Proposition and Packaging Design** process context, domain `pv`, lifecycle stage Design. It belongs to **Design Packaging and Configuration** (`processes:process-pv-design-a4c76s`). Its canonical ID is `processes:activity-pv-design-su2rbe`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws up the forms the proposition will take in customers' hands — its physical or digital packaging. The designed proposition arrives as the content to be housed, packaging formats are designed for it and reviewed against the proposition's nature, and the designed formats are confirmed onward for the segment work. The proposition gains its clothes here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the proposition reaches customers in deliberately designed physical or digital forms.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the packaging design when the designed proposition requires its packaging and configuration options, and it completes once the designed formats are confirmed for the segment configurations.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management designer draws up the packaging formats — physical or digital — the proposition needs, reviews them against its nature, and confirms them onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Packaging Formats |
+| `plain_language_description` | string | no | This activity draws up the forms the proposition will take in customers' hands — its physical or digital packaging. The … |
+| `business_purpose` | string | no | It exists so the proposition reaches customers in deliberately designed physical or digital forms. |
+| `practical_context` | string | no | It opens the packaging design when the designed proposition requires its packaging and configuration options, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

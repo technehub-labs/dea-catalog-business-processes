@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-improve-27r7r7 through concluding task processes:task-pv-improve-record-pa46hc, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Route Findings to Evolution Tracks'
+plain_language_description: 'Once conclusions exist, each one must reach the people who can act: product management sends the finding set along, with owners attached, to the evolution and the rationalization tracks. Intake logs the arriving findings, verification checks each is actionable and complete, processing attaches the routing, confirmation notifies the receiving owners, and the dispatch is archived.'
+business_purpose: 'It makes sure no review conclusion dies in a drawer: every finding lands with a track and an owner who is expected to act.'
+practical_context: 'It follows the finding step in the review sequence, opening when the finding set is presented and closing when routed findings with owners are confirmed and archived.'
+worked_example:
+  agent_type: human
+  narrative: 'After the reviewers sign off, a product management coordinator registers each conclusion at intake, confirms the evolution-bound ones go to the enhancement designers and portfolio-weakening ones to the rationalization track, notifies the named owners, and files the routing record.'

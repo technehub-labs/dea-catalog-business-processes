@@ -1,0 +1,4071 @@
+{
+  "cr": "CR-BP-233",
+  "wave": "A (L2 Business Process plain-language authoring)",
+  "records_authored": 580,
+  "agent_type_distribution": {
+    "human": 580
+  },
+  "author_of_record": "Emmanuel A. Otchere",
+  "records": [
+    {
+      "id": "processes:activity-ao-activate-bsjbfc",
+      "file": "entities/v1-alpha/ao-activate/Licensed-Workforce-Mobilization/Mobilize-Licensed-Workforce/Record-Supervised-Training-Completion/processes-activity-ao-activate-bsjbfc.yaml",
+      "agent_type": "human",
+      "name_chars": 37,
+      "description_chars": 464
+    },
+    {
+      "id": "processes:activity-ao-activate-sq2zfw",
+      "file": "entities/v1-alpha/ao-activate/Licensed-Workforce-Mobilization/Mobilize-Licensed-Workforce/Activate-Signing-Authority-Or-Controlled-Function-Designation/processes-activity-ao-activate-sq2zfw.yaml",
+      "agent_type": "human",
+      "name_chars": 61,
+      "description_chars": 556
+    },
+    {
+      "id": "processes:activity-ao-activate-x9hy5e",
+      "file": "entities/v1-alpha/ao-activate/Licensed-Workforce-Mobilization/Mobilize-Licensed-Workforce/Attest-Fitness-And-Propriety/processes-activity-ao-activate-x9hy5e.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 469
+    },
+    {
+      "id": "processes:activity-ao-activate-z4yhzy",
+      "file": "entities/v1-alpha/ao-activate/Licensed-Workforce-Mobilization/Mobilize-Licensed-Workforce/Verify-Regulator-Licence-Or-Registration/processes-activity-ao-activate-z4yhzy.yaml",
+      "agent_type": "human",
+      "name_chars": 40,
+      "description_chars": 482
+    },
+    {
+      "id": "processes:activity-ao-build-4vccpu",
+      "file": "entities/v1-alpha/ao-build/Agent-Acquisition-and-Onboarding/Acquire-Agents/Select-and-Acquire-Agents/processes-activity-ao-build-4vccpu.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 406
+    },
+    {
+      "id": "processes:activity-ao-build-7xrz4d",
+      "file": "entities/v1-alpha/ao-build/Agent-Acquisition-and-Onboarding/Acquire-Agents/Provision-Agent-Capacity/processes-activity-ao-build-7xrz4d.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 390
+    },
+    {
+      "id": "processes:activity-ao-build-9bwc8j",
+      "file": "entities/v1-alpha/ao-build/Agent-Acquisition-and-Onboarding/Build-Contractor-and-Partner-Agent-Pool/Vet-Pool-Sources/processes-activity-ao-build-9bwc8j.yaml",
+      "agent_type": "human",
+      "name_chars": 16,
+      "description_chars": 350
+    },
+    {
+      "id": "processes:activity-ao-build-bufzrw",
+      "file": "entities/v1-alpha/ao-build/Agent-Acquisition-and-Onboarding/Build-Regulated-Agent-Pool/Screen-Candidates-Against-Sanctions-AML-FCRA-ADA/processes-activity-ao-build-bufzrw.yaml",
+      "agent_type": "human",
+      "name_chars": 68,
+      "description_chars": 500
+    },
+    {
+      "id": "processes:activity-ao-build-cxafrf",
+      "file": "entities/v1-alpha/ao-build/Agent-Acquisition-and-Onboarding/Build-Contractor-and-Partner-Agent-Pool/Commit-Contractor-and-Partner-Pool/processes-activity-ao-build-cxafrf.yaml",
+      "agent_type": "human",
+      "name_chars": 38,
+      "description_chars": 390
+    },
+    {
+      "id": "processes:activity-ao-build-gceqs6",
+      "file": "entities/v1-alpha/ao-build/Agent-Acquisition-and-Onboarding/Acquire-Agents/Onboard-Agents/processes-activity-ao-build-gceqs6.yaml",
+      "agent_type": "human",
+      "name_chars": 14,
+      "description_chars": 409
+    },
+    {
+      "id": "processes:activity-ao-build-jgtegj",
+      "file": "entities/v1-alpha/ao-build/Agent-Acquisition-and-Onboarding/Build-Contractor-and-Partner-Agent-Pool/Establish-Activation-Paths/processes-activity-ao-build-jgtegj.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 400
+    },
+    {
+      "id": "processes:activity-ao-build-khtsgv",
+      "file": "entities/v1-alpha/ao-build/Agent-Acquisition-and-Onboarding/Acquire-Agents/Integrate-Agents-into-Organization/processes-activity-ao-build-khtsgv.yaml",
+      "agent_type": "human",
+      "name_chars": 38,
+      "description_chars": 464
+    },
+    {
+      "id": "processes:activity-ao-build-q7m3k9",
+      "file": "entities/v1-alpha/ao-build/Agent-Acquisition-and-Onboarding/Build-Regulated-Agent-Pool/Verify-Candidates-Against-Regulator-Licence-Registry/processes-activity-ao-build-q7m3k9.yaml",
+      "agent_type": "human",
+      "name_chars": 56,
+      "description_chars": 428
+    },
+    {
+      "id": "processes:activity-ao-build-r6h2t8",
+      "file": "entities/v1-alpha/ao-build/Agent-Acquisition-and-Onboarding/Build-Regulated-Agent-Pool/Stage-Regulated-Personnel-Record/processes-activity-ao-build-r6h2t8.yaml",
+      "agent_type": "human",
+      "name_chars": 36,
+      "description_chars": 471
+    },
+    {
+      "id": "processes:activity-ao-build-w2n8p4",
+      "file": "entities/v1-alpha/ao-build/Agent-Acquisition-and-Onboarding/Build-Regulated-Agent-Pool/Attest-Fitness-And-Propriety-For-Pool/processes-activity-ao-build-w2n8p4.yaml",
+      "agent_type": "human",
+      "name_chars": 41,
+      "description_chars": 447
+    },
+    {
+      "id": "processes:activity-ao-build-yjbucg",
+      "file": "entities/v1-alpha/ao-build/Agent-Acquisition-and-Onboarding/Build-Contractor-and-Partner-Agent-Pool/Identify-Pool-Demand/processes-activity-ao-build-yjbucg.yaml",
+      "agent_type": "human",
+      "name_chars": 20,
+      "description_chars": 407
+    },
+    {
+      "id": "processes:activity-ao-conceive-36aux4",
+      "file": "entities/v1-alpha/ao-conceive/Organization-and-Agent-Conception/Frame-Organization-and-Agent-Strategy/Bound-Agent-Capacity/processes-activity-ao-conceive-36aux4.yaml",
+      "agent_type": "human",
+      "name_chars": 37,
+      "description_chars": 366
+    },
+    {
+      "id": "processes:activity-ao-conceive-476rpj",
+      "file": "entities/v1-alpha/ao-conceive/Organization-and-Agent-Conception/Frame-Organization-and-Agent-Strategy/Commit-Organization-and-Agent-Strategy/processes-activity-ao-conceive-476rpj.yaml",
+      "agent_type": "human",
+      "name_chars": 42,
+      "description_chars": 414
+    },
+    {
+      "id": "processes:activity-ao-conceive-4tgrxr",
+      "file": "entities/v1-alpha/ao-conceive/Organization-and-Agent-Conception/Conceive-Workforce-and-Agent-Mix/Bound-Substrate-Proportions/processes-activity-ao-conceive-4tgrxr.yaml",
+      "agent_type": "human",
+      "name_chars": 59,
+      "description_chars": 399
+    },
+    {
+      "id": "processes:activity-ao-conceive-5fytar",
+      "file": "entities/v1-alpha/ao-conceive/Organization-and-Agent-Conception/Frame-Organization-Model/Derive-Structure-Principles/processes-activity-ao-conceive-5fytar.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 420
+    },
+    {
+      "id": "processes:activity-ao-conceive-73s2vm",
+      "file": "entities/v1-alpha/ao-conceive/Organization-and-Agent-Conception/Conceive-Workforce-and-Agent-Mix/Draft-Workforce-and-Agent-Mix/processes-activity-ao-conceive-73s2vm.yaml",
+      "agent_type": "human",
+      "name_chars": 33,
+      "description_chars": 404
+    },
+    {
+      "id": "processes:activity-ao-conceive-9mvxt3",
+      "file": "entities/v1-alpha/ao-conceive/Organization-and-Agent-Conception/Conceive-Workforce-and-Agent-Mix/Bound-Capacity-Envelopes/processes-activity-ao-conceive-9mvxt3.yaml",
+      "agent_type": "human",
+      "name_chars": 48,
+      "description_chars": 359
+    },
+    {
+      "id": "processes:activity-ao-conceive-9p2cup",
+      "file": "entities/v1-alpha/ao-conceive/Organization-and-Agent-Conception/Frame-Organization-and-Agent-Strategy/Draft-Organization-and-Agent-Strategy/processes-activity-ao-conceive-9p2cup.yaml",
+      "agent_type": "human",
+      "name_chars": 41,
+      "description_chars": 424
+    },
+    {
+      "id": "processes:activity-ao-conceive-cqkwrm",
+      "file": "entities/v1-alpha/ao-conceive/Organization-and-Agent-Conception/Conceive-Licensed-or-Regulated-Agent-Capacity/Declare-Regulator-Licensed-Role-Mix/processes-activity-ao-conceive-cqkwrm.yaml",
+      "agent_type": "human",
+      "name_chars": 39,
+      "description_chars": 494
+    },
+    {
+      "id": "processes:activity-ao-conceive-fmxtqr",
+      "file": "entities/v1-alpha/ao-conceive/Organization-and-Agent-Conception/Conceive-Licensed-or-Regulated-Agent-Capacity/Map-Supervised-Training-Completion-Requirements/processes-activity-ao-conceive-fmxtqr.yaml",
+      "agent_type": "human",
+      "name_chars": 47,
+      "description_chars": 414
+    },
+    {
+      "id": "processes:activity-ao-conceive-fyb9vc",
+      "file": "entities/v1-alpha/ao-conceive/Organization-and-Agent-Conception/Frame-Organization-and-Agent-Strategy/Sense-Organization-Imperatives/processes-activity-ao-conceive-fyb9vc.yaml",
+      "agent_type": "human",
+      "name_chars": 34,
+      "description_chars": 414
+    },
+    {
+      "id": "processes:activity-ao-conceive-m77sb9",
+      "file": "entities/v1-alpha/ao-conceive/Organization-and-Agent-Conception/Frame-Organization-Model/Bound-Reporting-Spans/processes-activity-ao-conceive-m77sb9.yaml",
+      "agent_type": "human",
+      "name_chars": 33,
+      "description_chars": 396
+    },
+    {
+      "id": "processes:activity-ao-conceive-njcgbs",
+      "file": "entities/v1-alpha/ao-conceive/Organization-and-Agent-Conception/Conceive-Workforce-and-Agent-Mix/Commit-Workforce-and-Agent-Mix/processes-activity-ao-conceive-njcgbs.yaml",
+      "agent_type": "human",
+      "name_chars": 34,
+      "description_chars": 336
+    },
+    {
+      "id": "processes:activity-ao-conceive-rcyn7u",
+      "file": "entities/v1-alpha/ao-conceive/Organization-and-Agent-Conception/Frame-Organization-Model/Commit-Organization-Model-Frame/processes-activity-ao-conceive-rcyn7u.yaml",
+      "agent_type": "human",
+      "name_chars": 35,
+      "description_chars": 370
+    },
+    {
+      "id": "processes:activity-ao-conceive-v7g5se",
+      "file": "entities/v1-alpha/ao-conceive/Organization-and-Agent-Conception/Conceive-Licensed-or-Regulated-Agent-Capacity/Capture-Continuing-Supervisor-Notification-Path/processes-activity-ao-conceive-v7g5se.yaml",
+      "agent_type": "human",
+      "name_chars": 51,
+      "description_chars": 453
+    },
+    {
+      "id": "processes:activity-ao-conceive-vnkqzf",
+      "file": "entities/v1-alpha/ao-conceive/Organization-and-Agent-Conception/Conceive-Licensed-or-Regulated-Agent-Capacity/Document-Fitness-And-Propriety-Attestation-Regime/processes-activity-ao-conceive-vnkqzf.yaml",
+      "agent_type": "human",
+      "name_chars": 53,
+      "description_chars": 452
+    },
+    {
+      "id": "processes:activity-ao-conceive-ycwkts",
+      "file": "entities/v1-alpha/ao-conceive/Organization-and-Agent-Conception/Frame-Organization-Model/Bound-Coordination-Boundaries/processes-activity-ao-conceive-ycwkts.yaml",
+      "agent_type": "human",
+      "name_chars": 36,
+      "description_chars": 413
+    },
+    {
+      "id": "processes:activity-ao-design-3dpt54",
+      "file": "entities/v1-alpha/ao-design/Organization-and-Role-Design/Design-Organization-Structure/Bound-Authority-Chains/processes-activity-ao-design-3dpt54.yaml",
+      "agent_type": "human",
+      "name_chars": 46,
+      "description_chars": 407
+    },
+    {
+      "id": "processes:activity-ao-design-3ebtma",
+      "file": "entities/v1-alpha/ao-design/Organization-and-Role-Design/Design-Competency-Framework/Commit-Competency-Framework/processes-activity-ao-design-3ebtma.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 378
+    },
+    {
+      "id": "processes:activity-ao-design-749rxd",
+      "file": "entities/v1-alpha/ao-design/Organization-and-Role-Design/Design-Competency-Framework/Anchor-Competency-Assessment/processes-activity-ao-design-749rxd.yaml",
+      "agent_type": "human",
+      "name_chars": 53,
+      "description_chars": 365
+    },
+    {
+      "id": "processes:activity-ao-design-9fmjnt",
+      "file": "entities/v1-alpha/ao-design/Organization-and-Role-Design/Design-Role-Catalogue/Bound-Role-Accountabilities/processes-activity-ao-design-9fmjnt.yaml",
+      "agent_type": "human",
+      "name_chars": 46,
+      "description_chars": 392
+    },
+    {
+      "id": "processes:activity-ao-design-amjqu5",
+      "file": "entities/v1-alpha/ao-design/Organization-and-Role-Design/Design-Competency-Framework/Define-Proficiency-Levels/processes-activity-ao-design-amjqu5.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 359
+    },
+    {
+      "id": "processes:activity-ao-design-bnvt6w",
+      "file": "entities/v1-alpha/ao-design/Organization-and-Role-Design/Design-Organization-Structure/Draft-Organizational-Architecture/processes-activity-ao-design-bnvt6w.yaml",
+      "agent_type": "human",
+      "name_chars": 37,
+      "description_chars": 405
+    },
+    {
+      "id": "processes:activity-ao-design-cezz7p",
+      "file": "entities/v1-alpha/ao-design/Organization-and-Role-Design/Design-Role-Catalogue/Define-Role-Families/processes-activity-ao-design-cezz7p.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 358
+    },
+    {
+      "id": "processes:activity-ao-design-e63vge",
+      "file": "entities/v1-alpha/ao-design/Organization-and-Role-Design/Design-Competency-Framework/Identify-Competency-Domains/processes-activity-ao-design-e63vge.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 361
+    },
+    {
+      "id": "processes:activity-ao-design-h3q5rc",
+      "file": "entities/v1-alpha/ao-design/Organization-and-Role-Design/Design-Agent-Topology/Decide-Substrate-Placement/processes-activity-ao-design-h3q5rc.yaml",
+      "agent_type": "human",
+      "name_chars": 45,
+      "description_chars": 375
+    },
+    {
+      "id": "processes:activity-ao-design-j98gk4",
+      "file": "entities/v1-alpha/ao-design/Organization-and-Role-Design/Design-Agent-Topology/Design-Coordination-Patterns/processes-activity-ao-design-j98gk4.yaml",
+      "agent_type": "human",
+      "name_chars": 32,
+      "description_chars": 399
+    },
+    {
+      "id": "processes:activity-ao-design-jbf2v9",
+      "file": "entities/v1-alpha/ao-design/Organization-and-Role-Design/Design-Regulated-Role-Architecture/Catalogue-Regulator-Tied-Role-Entries/processes-activity-ao-design-jbf2v9.yaml",
+      "agent_type": "human",
+      "name_chars": 41,
+      "description_chars": 484
+    },
+    {
+      "id": "processes:activity-ao-design-p6pheg",
+      "file": "entities/v1-alpha/ao-design/Organization-and-Role-Design/Design-Organization-Structure/Review-Structure-against-Model/processes-activity-ao-design-p6pheg.yaml",
+      "agent_type": "human",
+      "name_chars": 45,
+      "description_chars": 411
+    },
+    {
+      "id": "processes:activity-ao-design-pc9dh3",
+      "file": "entities/v1-alpha/ao-design/Organization-and-Role-Design/Design-Agent-Topology/Commit-Agent-Topology/processes-activity-ao-design-pc9dh3.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 363
+    },
+    {
+      "id": "processes:activity-ao-design-qp6pxn",
+      "file": "entities/v1-alpha/ao-design/Organization-and-Role-Design/Design-Organization-Structure/Commit-Organization-Structure-Design/processes-activity-ao-design-qp6pxn.yaml",
+      "agent_type": "human",
+      "name_chars": 40,
+      "description_chars": 442
+    },
+    {
+      "id": "processes:activity-ao-design-tfhe6e",
+      "file": "entities/v1-alpha/ao-design/Organization-and-Role-Design/Design-Role-Catalogue/Commit-Role-Catalogue/processes-activity-ao-design-tfhe6e.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 412
+    },
+    {
+      "id": "processes:activity-ao-design-txkve5",
+      "file": "entities/v1-alpha/ao-design/Organization-and-Role-Design/Design-Role-Catalogue/Define-Role-Levels/processes-activity-ao-design-txkve5.yaml",
+      "agent_type": "human",
+      "name_chars": 22,
+      "description_chars": 386
+    },
+    {
+      "id": "processes:activity-ao-design-v8r5n2",
+      "file": "entities/v1-alpha/ao-design/Organization-and-Role-Design/Design-Regulated-Role-Architecture/Define-Continuing-Supervisor-Notification-Path/processes-activity-ao-design-v8r5n2.yaml",
+      "agent_type": "human",
+      "name_chars": 50,
+      "description_chars": 462
+    },
+    {
+      "id": "processes:activity-ao-design-vtuma6",
+      "file": "entities/v1-alpha/ao-design/Organization-and-Role-Design/Design-Agent-Topology/Classify-Placement-Candidates/processes-activity-ao-design-vtuma6.yaml",
+      "agent_type": "human",
+      "name_chars": 33,
+      "description_chars": 375
+    },
+    {
+      "id": "processes:activity-ao-design-wnqz3k",
+      "file": "entities/v1-alpha/ao-design/Organization-and-Role-Design/Design-Regulated-Role-Architecture/Align-Competency-Framework-To-Continuing-Supervision/processes-activity-ao-design-wnqz3k.yaml",
+      "agent_type": "human",
+      "name_chars": 52,
+      "description_chars": 454
+    },
+    {
+      "id": "processes:activity-ao-design-x9k4m7",
+      "file": "entities/v1-alpha/ao-design/Organization-and-Role-Design/Design-Regulated-Role-Architecture/Define-Fitness-And-Propriety-Assessment-Regime/processes-activity-ao-design-x9k4m7.yaml",
+      "agent_type": "human",
+      "name_chars": 50,
+      "description_chars": 451
+    },
+    {
+      "id": "processes:activity-ao-improve-2bds64",
+      "file": "entities/v1-alpha/ao-improve/Agent-and-Organization-Improvement/Conduct-Capability-Gap-Analysis/Baseline-Population-Competencies/processes-activity-ao-improve-2bds64.yaml",
+      "agent_type": "human",
+      "name_chars": 57,
+      "description_chars": 428
+    },
+    {
+      "id": "processes:activity-ao-improve-5tzwvk",
+      "file": "entities/v1-alpha/ao-improve/Agent-and-Organization-Improvement/Develop-Agents-and-Organization/Review-Development-Outcomes/processes-activity-ao-improve-5tzwvk.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 348
+    },
+    {
+      "id": "processes:activity-ao-improve-6fusds",
+      "file": "entities/v1-alpha/ao-improve/Agent-and-Organization-Improvement/Develop-Agents-and-Organization/Gather-Development-Drivers/processes-activity-ao-improve-6fusds.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 447
+    },
+    {
+      "id": "processes:activity-ao-improve-ab6gqb",
+      "file": "entities/v1-alpha/ao-improve/Agent-and-Organization-Improvement/Conduct-Engagement-and-Alignment-Review/Commit-Engagement-Review-Findings/processes-activity-ao-improve-ab6gqb.yaml",
+      "agent_type": "human",
+      "name_chars": 37,
+      "description_chars": 339
+    },
+    {
+      "id": "processes:activity-ao-improve-awnbw6",
+      "file": "entities/v1-alpha/ao-improve/Agent-and-Organization-Improvement/Conduct-Engagement-and-Alignment-Review/Collect-Engagement-Signals/processes-activity-ao-improve-awnbw6.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 377
+    },
+    {
+      "id": "processes:activity-ao-improve-ceqsy3",
+      "file": "entities/v1-alpha/ao-improve/Agent-and-Organization-Improvement/Conduct-Engagement-and-Alignment-Review/Assess-Agent-Alignment/processes-activity-ao-improve-ceqsy3.yaml",
+      "agent_type": "human",
+      "name_chars": 22,
+      "description_chars": 373
+    },
+    {
+      "id": "processes:activity-ao-improve-eq6pbr",
+      "file": "entities/v1-alpha/ao-improve/Agent-and-Organization-Improvement/Develop-Agents-and-Organization/Plan-Agent-Development/processes-activity-ao-improve-eq6pbr.yaml",
+      "agent_type": "human",
+      "name_chars": 22,
+      "description_chars": 400
+    },
+    {
+      "id": "processes:activity-ao-improve-evxkz9",
+      "file": "entities/v1-alpha/ao-improve/Agent-and-Organization-Improvement/Reorganize-Structures/Bound-Reorganization-Scope/processes-activity-ao-improve-evxkz9.yaml",
+      "agent_type": "human",
+      "name_chars": 35,
+      "description_chars": 413
+    },
+    {
+      "id": "processes:activity-ao-improve-eyvh62",
+      "file": "entities/v1-alpha/ao-improve/Agent-and-Organization-Improvement/Conduct-Capability-Gap-Analysis/Identify-Capability-Gaps/processes-activity-ao-improve-eyvh62.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 365
+    },
+    {
+      "id": "processes:activity-ao-improve-f2r6t4",
+      "file": "entities/v1-alpha/ao-improve/Agent-and-Organization-Improvement/Improve-Regulated-Workforce-Capability/Execute-Regulator-Mandated-Remediation/processes-activity-ao-improve-f2r6t4.yaml",
+      "agent_type": "human",
+      "name_chars": 42,
+      "description_chars": 440
+    },
+    {
+      "id": "processes:activity-ao-improve-g5bube",
+      "file": "entities/v1-alpha/ao-improve/Agent-and-Organization-Improvement/Conduct-Capability-Gap-Analysis/Commit-Gap-Priorities/processes-activity-ao-improve-g5bube.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 395
+    },
+    {
+      "id": "processes:activity-ao-improve-gtc9k8",
+      "file": "entities/v1-alpha/ao-improve/Agent-and-Organization-Improvement/Reorganize-Structures/Record-Accountability-Handovers/processes-activity-ao-improve-gtc9k8.yaml",
+      "agent_type": "human",
+      "name_chars": 35,
+      "description_chars": 377
+    },
+    {
+      "id": "processes:activity-ao-improve-k9w5p8",
+      "file": "entities/v1-alpha/ao-improve/Agent-and-Organization-Improvement/Improve-Regulated-Workforce-Capability/Run-Fit-And-Proper-Re-Assessment-Cycle/processes-activity-ao-improve-k9w5p8.yaml",
+      "agent_type": "human",
+      "name_chars": 45,
+      "description_chars": 417
+    },
+    {
+      "id": "processes:activity-ao-improve-pp4uvg",
+      "file": "entities/v1-alpha/ao-improve/Agent-and-Organization-Improvement/Reorganize-Structures/Execute-Structure-Transition/processes-activity-ao-improve-pp4uvg.yaml",
+      "agent_type": "human",
+      "name_chars": 32,
+      "description_chars": 372
+    },
+    {
+      "id": "processes:activity-ao-improve-r6h2g7",
+      "file": "entities/v1-alpha/ao-improve/Agent-and-Organization-Improvement/Develop-Agents-and-Organization/Execute-Development-Actions/processes-activity-ao-improve-r6h2g7.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 372
+    },
+    {
+      "id": "processes:activity-ao-improve-rk3g4q",
+      "file": "entities/v1-alpha/ao-improve/Agent-and-Organization-Improvement/Conduct-Capability-Gap-Analysis/Prioritize-Capability-Gaps/processes-activity-ao-improve-rk3g4q.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 377
+    },
+    {
+      "id": "processes:activity-ao-improve-rnkywc",
+      "file": "entities/v1-alpha/ao-improve/Agent-and-Organization-Improvement/Reorganize-Structures/Sequence-Structure-Transition/processes-activity-ao-improve-rnkywc.yaml",
+      "agent_type": "human",
+      "name_chars": 33,
+      "description_chars": 354
+    },
+    {
+      "id": "processes:activity-ao-improve-uudtp5",
+      "file": "entities/v1-alpha/ao-improve/Agent-and-Organization-Improvement/Improve-Regulated-Workforce-Capability/Notify-Continuing-Supervisor-Of-Improvement/processes-activity-ao-improve-uudtp5.yaml",
+      "agent_type": "human",
+      "name_chars": 51,
+      "description_chars": 450
+    },
+    {
+      "id": "processes:activity-ao-improve-x7m4n2",
+      "file": "entities/v1-alpha/ao-improve/Agent-and-Organization-Improvement/Improve-Regulated-Workforce-Capability/Run-Regulator-Mandated-Recurrent-Training/processes-activity-ao-improve-x7m4n2.yaml",
+      "agent_type": "human",
+      "name_chars": 45,
+      "description_chars": 426
+    },
+    {
+      "id": "processes:activity-ao-improve-zzszrd",
+      "file": "entities/v1-alpha/ao-improve/Agent-and-Organization-Improvement/Conduct-Engagement-and-Alignment-Review/Formulate-Engagement-Findings/processes-activity-ao-improve-zzszrd.yaml",
+      "agent_type": "human",
+      "name_chars": 33,
+      "description_chars": 357
+    },
+    {
+      "id": "processes:activity-ao-operate-5myx8s",
+      "file": "entities/v1-alpha/ao-operate/Agent-Operations/Operate-Time-and-Attendance/Feed-Payroll-Time-Data/processes-activity-ao-operate-5myx8s.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 308
+    },
+    {
+      "id": "processes:activity-ao-operate-6r6m2g",
+      "file": "entities/v1-alpha/ao-operate/Agent-Operations/Coordinate-Collaboration/Maintain-Interaction-Norms/processes-activity-ao-operate-6r6m2g.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 413
+    },
+    {
+      "id": "processes:activity-ao-operate-7k8xwy",
+      "file": "entities/v1-alpha/ao-operate/Agent-Operations/Operate-Payroll-and-Benefits/File-Statutory-Returns/processes-activity-ao-operate-7k8xwy.yaml",
+      "agent_type": "human",
+      "name_chars": 22,
+      "description_chars": 372
+    },
+    {
+      "id": "processes:activity-ao-operate-8mxujq",
+      "file": "entities/v1-alpha/ao-operate/Agent-Operations/Operate-Learning-and-Development/Evaluate-Programme-Effectiveness/processes-activity-ao-operate-8mxujq.yaml",
+      "agent_type": "human",
+      "name_chars": 32,
+      "description_chars": 324
+    },
+    {
+      "id": "processes:activity-ao-operate-8pqgha",
+      "file": "entities/v1-alpha/ao-operate/Agent-Operations/Operate-Regulated-Performance-Oversight/Track-Hours-Of-Work-And-Rest-Rule-Compliance/processes-activity-ao-operate-8pqgha.yaml",
+      "agent_type": "human",
+      "name_chars": 44,
+      "description_chars": 410
+    },
+    {
+      "id": "processes:activity-ao-operate-8sc5gr",
+      "file": "entities/v1-alpha/ao-operate/Agent-Operations/Operate-Payroll-and-Benefits/Administer-Benefits/processes-activity-ao-operate-8sc5gr.yaml",
+      "agent_type": "human",
+      "name_chars": 19,
+      "description_chars": 360
+    },
+    {
+      "id": "processes:activity-ao-operate-b5v2k9",
+      "file": "entities/v1-alpha/ao-operate/Agent-Operations/Operate-Regulated-Performance-Oversight/Track-Continuing-Competence-Completion/processes-activity-ao-operate-b5v2k9.yaml",
+      "agent_type": "human",
+      "name_chars": 38,
+      "description_chars": 331
+    },
+    {
+      "id": "processes:activity-ao-operate-b6fecc",
+      "file": "entities/v1-alpha/ao-operate/Agent-Operations/Operate-Learning-and-Development/Record-Programme-Completion/processes-activity-ao-operate-b6fecc.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 360
+    },
+    {
+      "id": "processes:activity-ao-operate-c7xad6",
+      "file": "entities/v1-alpha/ao-operate/Agent-Operations/Operate-Time-and-Attendance/Resolve-Attendance-Exceptions/processes-activity-ao-operate-c7xad6.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 390
+    },
+    {
+      "id": "processes:activity-ao-operate-duu9yw",
+      "file": "entities/v1-alpha/ao-operate/Agent-Operations/Operate-Agent-Performance/Set-Performance-Expectations/processes-activity-ao-operate-duu9yw.yaml",
+      "agent_type": "human",
+      "name_chars": 32,
+      "description_chars": 389
+    },
+    {
+      "id": "processes:activity-ao-operate-f669fn",
+      "file": "entities/v1-alpha/ao-operate/Agent-Operations/Operate-Learning-and-Development/Deliver-Learning-Sessions/processes-activity-ao-operate-f669fn.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 322
+    },
+    {
+      "id": "processes:activity-ao-operate-gxarb3",
+      "file": "entities/v1-alpha/ao-operate/Agent-Operations/Operate-Payroll-and-Benefits/Compute-Cycle-Payroll/processes-activity-ao-operate-gxarb3.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 319
+    },
+    {
+      "id": "processes:activity-ao-operate-h6hmqm",
+      "file": "entities/v1-alpha/ao-operate/Agent-Operations/Operate-Payroll-and-Benefits/Execute-Disbursements/processes-activity-ao-operate-h6hmqm.yaml",
+      "agent_type": "human",
+      "name_chars": 35,
+      "description_chars": 309
+    },
+    {
+      "id": "processes:activity-ao-operate-j8k5p7",
+      "file": "entities/v1-alpha/ao-operate/Agent-Operations/Operate-Regulated-Performance-Oversight/Annual-Fitness-And-Propriety-Re-Attestation/processes-activity-ao-operate-j8k5p7.yaml",
+      "agent_type": "human",
+      "name_chars": 43,
+      "description_chars": 366
+    },
+    {
+      "id": "processes:activity-ao-operate-k5uvhg",
+      "file": "entities/v1-alpha/ao-operate/Agent-Operations/Operate-Agent-Performance/Monitor-Agent-Performance/processes-activity-ao-operate-k5uvhg.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 415
+    },
+    {
+      "id": "processes:activity-ao-operate-kyup4x",
+      "file": "entities/v1-alpha/ao-operate/Agent-Operations/Operate-Time-and-Attendance/Capture-Time-and-Attendance/processes-activity-ao-operate-kyup4x.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 316
+    },
+    {
+      "id": "processes:activity-ao-operate-pxxmge",
+      "file": "entities/v1-alpha/ao-operate/Agent-Operations/Coordinate-Collaboration/Provision-Collaboration-Workspaces/processes-activity-ao-operate-pxxmge.yaml",
+      "agent_type": "human",
+      "name_chars": 38,
+      "description_chars": 412
+    },
+    {
+      "id": "processes:activity-ao-operate-skjmyf",
+      "file": "entities/v1-alpha/ao-operate/Agent-Operations/Operate-Learning-and-Development/Schedule-Development-Programmes/processes-activity-ao-operate-skjmyf.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 346
+    },
+    {
+      "id": "processes:activity-ao-operate-v356a4",
+      "file": "entities/v1-alpha/ao-operate/Agent-Operations/Coordinate-Collaboration/Resolve-Collaboration-Frictions/processes-activity-ao-operate-v356a4.yaml",
+      "agent_type": "human",
+      "name_chars": 35,
+      "description_chars": 352
+    },
+    {
+      "id": "processes:activity-ao-operate-vs4qaq",
+      "file": "entities/v1-alpha/ao-operate/Agent-Operations/Operate-Agent-Performance/Review-Agent-Performance-Cycles/processes-activity-ao-operate-vs4qaq.yaml",
+      "agent_type": "human",
+      "name_chars": 35,
+      "description_chars": 375
+    },
+    {
+      "id": "processes:activity-ao-operate-xnd6yx",
+      "file": "entities/v1-alpha/ao-operate/Agent-Operations/Coordinate-Collaboration/Facilitate-Cross-Team-Interactions/processes-activity-ao-operate-xnd6yx.yaml",
+      "agent_type": "human",
+      "name_chars": 38,
+      "description_chars": 456
+    },
+    {
+      "id": "processes:activity-ao-operate-yyqtzw",
+      "file": "entities/v1-alpha/ao-operate/Agent-Operations/Operate-Agent-Performance/Address-Performance-Exceptions/processes-activity-ao-operate-yyqtzw.yaml",
+      "agent_type": "human",
+      "name_chars": 34,
+      "description_chars": 358
+    },
+    {
+      "id": "processes:activity-ao-operate-yzn584",
+      "file": "entities/v1-alpha/ao-operate/Agent-Operations/Operate-Time-and-Attendance/Validate-Attendance-Records/processes-activity-ao-operate-yzn584.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 311
+    },
+    {
+      "id": "processes:activity-ao-operate-z4n9m2",
+      "file": "entities/v1-alpha/ao-operate/Agent-Operations/Operate-Regulated-Performance-Oversight/Audit-Conduct-Rule-Compliance/processes-activity-ao-operate-z4n9m2.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 374
+    },
+    {
+      "id": "processes:activity-ao-retire-herzuz",
+      "file": "entities/v1-alpha/ao-retire/Regulated-Workforce-Wind-Down/Conduct-Regulated-Workforce-Wind-Down/Coordinate-Transition-Supports/processes-activity-ao-retire-herzuz.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 426
+    },
+    {
+      "id": "processes:activity-ao-retire-sqdecn",
+      "file": "entities/v1-alpha/ao-retire/Regulated-Workforce-Wind-Down/Conduct-Regulated-Workforce-Wind-Down/Compute-Statutory-Liabilities/processes-activity-ao-retire-sqdecn.yaml",
+      "agent_type": "human",
+      "name_chars": 49,
+      "description_chars": 408
+    },
+    {
+      "id": "processes:activity-ao-retire-uqgpmh",
+      "file": "entities/v1-alpha/ao-retire/Regulated-Workforce-Wind-Down/Conduct-Regulated-Workforce-Wind-Down/Notify-Statutory-Workforce-Reduction/processes-activity-ao-retire-uqgpmh.yaml",
+      "agent_type": "human",
+      "name_chars": 34,
+      "description_chars": 397
+    },
+    {
+      "id": "processes:activity-ao-retire-zmc7yk",
+      "file": "entities/v1-alpha/ao-retire/Regulated-Workforce-Wind-Down/Conduct-Regulated-Workforce-Wind-Down/Consult-Representative-Bodies/processes-activity-ao-retire-zmc7yk.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 462
+    },
+    {
+      "id": "processes:activity-eo-activate-h2dqvk",
+      "file": "entities/v1-alpha/eo-activate/Regulated-Operations-Activation/Activate-Operations-Capability/Bring-Operational-Controls-Live-on-the-Regulated-Operations-Record/processes-activity-eo-activate-h2dqvk.yaml",
+      "agent_type": "human",
+      "name_chars": 35,
+      "description_chars": 455
+    },
+    {
+      "id": "processes:activity-eo-activate-qmpq2e",
+      "file": "entities/v1-alpha/eo-activate/Regulated-Operations-Activation/Activate-Operations-Capability/Bring-Operations-Manuals-and-Runbooks-Live/processes-activity-eo-activate-qmpq2e.yaml",
+      "agent_type": "human",
+      "name_chars": 42,
+      "description_chars": 425
+    },
+    {
+      "id": "processes:activity-eo-activate-w8tgv6",
+      "file": "entities/v1-alpha/eo-activate/Regulated-Operations-Activation/Activate-Operations-Capability/Acquire-Regulator-Issued-Operations-Authorization/processes-activity-eo-activate-w8tgv6.yaml",
+      "agent_type": "human",
+      "name_chars": 47,
+      "description_chars": 440
+    },
+    {
+      "id": "processes:activity-eo-activate-wfw66c",
+      "file": "entities/v1-alpha/eo-activate/Regulated-Operations-Activation/Activate-Operations-Capability/Activate-Continuing-Supervisor-Notification/processes-activity-eo-activate-wfw66c.yaml",
+      "agent_type": "human",
+      "name_chars": 47,
+      "description_chars": 434
+    },
+    {
+      "id": "processes:activity-eo-build-5acbks",
+      "file": "entities/v1-alpha/eo-build/Operations-and-Enablement-Build/Build-Delivery-Capability/Integrate-Delivery-Capability/processes-activity-eo-build-5acbks.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 289
+    },
+    {
+      "id": "processes:activity-eo-build-6335m6",
+      "file": "entities/v1-alpha/eo-build/Operations-and-Enablement-Build/Acquire-Technology-Assets/Register-Acquired-Assets/processes-activity-eo-build-6335m6.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 367
+    },
+    {
+      "id": "processes:activity-eo-build-6rz88v",
+      "file": "entities/v1-alpha/eo-build/Operations-and-Enablement-Build/Build-Logistics-Network/Provision-Warehouse-Capacity/processes-activity-eo-build-6rz88v.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 322
+    },
+    {
+      "id": "processes:activity-eo-build-7bmbzy",
+      "file": "entities/v1-alpha/eo-build/Operations-and-Enablement-Build/Commission-Production-Line/Certify-Line-for-Production/processes-activity-eo-build-7bmbzy.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 329
+    },
+    {
+      "id": "processes:activity-eo-build-8ahmd5",
+      "file": "entities/v1-alpha/eo-build/Operations-and-Enablement-Build/Build-Delivery-Capability/Verify-Delivery-Capability/processes-activity-eo-build-8ahmd5.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 398
+    },
+    {
+      "id": "processes:activity-eo-build-8x4ajc",
+      "file": "entities/v1-alpha/eo-build/Operations-and-Enablement-Build/Build-Logistics-Network/Establish-Network-Nodes/processes-activity-eo-build-8x4ajc.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 360
+    },
+    {
+      "id": "processes:activity-eo-build-a5trnu",
+      "file": "entities/v1-alpha/eo-build/Operations-and-Enablement-Build/Acquire-Technology-Assets/Install-Technology-Assets/processes-activity-eo-build-a5trnu.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 363
+    },
+    {
+      "id": "processes:activity-eo-build-by2f8g",
+      "file": "entities/v1-alpha/eo-build/Operations-and-Enablement-Build/Build-Logistics-Network/Verify-Network-Readiness/processes-activity-eo-build-by2f8g.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 383
+    },
+    {
+      "id": "processes:activity-eo-build-ds867n",
+      "file": "entities/v1-alpha/eo-build/Operations-and-Enablement-Build/Provision-Facilities/Hand-Over-Facilities-to-Operations/processes-activity-eo-build-ds867n.yaml",
+      "agent_type": "human",
+      "name_chars": 34,
+      "description_chars": 358
+    },
+    {
+      "id": "processes:activity-eo-build-egr964",
+      "file": "entities/v1-alpha/eo-build/Operations-and-Enablement-Build/Build-Logistics-Network/Contract-Carriers/processes-activity-eo-build-egr964.yaml",
+      "agent_type": "human",
+      "name_chars": 17,
+      "description_chars": 354
+    },
+    {
+      "id": "processes:activity-eo-build-fnyeud",
+      "file": "entities/v1-alpha/eo-build/Operations-and-Enablement-Build/Build-Delivery-Capability/Hand-Over-Delivery-Capability-to-Operations/processes-activity-eo-build-fnyeud.yaml",
+      "agent_type": "human",
+      "name_chars": 43,
+      "description_chars": 359
+    },
+    {
+      "id": "processes:activity-eo-build-jg28xr",
+      "file": "entities/v1-alpha/eo-build/Operations-and-Enablement-Build/Acquire-Technology-Assets/Procure-Hardware-and-Software/processes-activity-eo-build-jg28xr.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 332
+    },
+    {
+      "id": "processes:activity-eo-build-jpj6tj",
+      "file": "entities/v1-alpha/eo-build/Operations-and-Enablement-Build/Commission-Production-Line/Run-Line-Trials/processes-activity-eo-build-jpj6tj.yaml",
+      "agent_type": "human",
+      "name_chars": 15,
+      "description_chars": 337
+    },
+    {
+      "id": "processes:activity-eo-build-mymu7v",
+      "file": "entities/v1-alpha/eo-build/Operations-and-Enablement-Build/Commission-Production-Line/Install-Line-Equipment/processes-activity-eo-build-mymu7v.yaml",
+      "agent_type": "human",
+      "name_chars": 22,
+      "description_chars": 376
+    },
+    {
+      "id": "processes:activity-eo-build-napwac",
+      "file": "entities/v1-alpha/eo-build/Operations-and-Enablement-Build/Provision-Facilities/Commission-Facility-Services/processes-activity-eo-build-napwac.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 358
+    },
+    {
+      "id": "processes:activity-eo-build-neek9x",
+      "file": "entities/v1-alpha/eo-build/Operations-and-Enablement-Build/Provision-Facilities/Secure-Facility-Sites/processes-activity-eo-build-neek9x.yaml",
+      "agent_type": "human",
+      "name_chars": 21,
+      "description_chars": 353
+    },
+    {
+      "id": "processes:activity-eo-build-tq634n",
+      "file": "entities/v1-alpha/eo-build/Operations-and-Enablement-Build/Build-Delivery-Capability/Stand-Up-Delivery-Components/processes-activity-eo-build-tq634n.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 404
+    },
+    {
+      "id": "processes:activity-eo-build-tqqyb8",
+      "file": "entities/v1-alpha/eo-build/Operations-and-Enablement-Build/Commission-Production-Line/Configure-Line-Controls/processes-activity-eo-build-tqqyb8.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 369
+    },
+    {
+      "id": "processes:activity-eo-build-vggmrg",
+      "file": "entities/v1-alpha/eo-build/Operations-and-Enablement-Build/Provision-Facilities/Fit-Out-Facilities/processes-activity-eo-build-vggmrg.yaml",
+      "agent_type": "human",
+      "name_chars": 18,
+      "description_chars": 359
+    },
+    {
+      "id": "processes:activity-eo-build-xy53fb",
+      "file": "entities/v1-alpha/eo-build/Operations-and-Enablement-Build/Acquire-Technology-Assets/Commission-Technology-Assets/processes-activity-eo-build-xy53fb.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 364
+    },
+    {
+      "id": "processes:activity-eo-conceive-57g5bv",
+      "file": "entities/v1-alpha/eo-conceive/Operations-Model-Conception/Frame-Operations-Strategy/Bound-Delivery-Model-Envelope/processes-activity-eo-conceive-57g5bv.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 419
+    },
+    {
+      "id": "processes:activity-eo-conceive-6bvv34",
+      "file": "entities/v1-alpha/eo-conceive/Operations-Model-Conception/Frame-Operations-Strategy/Commit-Operations-Strategy/processes-activity-eo-conceive-6bvv34.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 405
+    },
+    {
+      "id": "processes:activity-eo-conceive-8mh3xj",
+      "file": "entities/v1-alpha/eo-conceive/Operations-Model-Conception/Frame-Delivery-Model-Conception/Select-Channel-Patterns/processes-activity-eo-conceive-8mh3xj.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 388
+    },
+    {
+      "id": "processes:activity-eo-conceive-99pug6",
+      "file": "entities/v1-alpha/eo-conceive/Operations-Model-Conception/Frame-Technology-Enablement-Approach/Frame-Sourcing-Principles/processes-activity-eo-conceive-99pug6.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 385
+    },
+    {
+      "id": "processes:activity-eo-conceive-9vsfbw",
+      "file": "entities/v1-alpha/eo-conceive/Operations-Model-Conception/Frame-Physical-Asset-Approach/Assess-Footprint-Options/processes-activity-eo-conceive-9vsfbw.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 378
+    },
+    {
+      "id": "processes:activity-eo-conceive-b7qwwb",
+      "file": "entities/v1-alpha/eo-conceive/Operations-Model-Conception/Frame-Technology-Enablement-Approach/Commit-Technology-Enablement-Approach/processes-activity-eo-conceive-b7qwwb.yaml",
+      "agent_type": "human",
+      "name_chars": 37,
+      "description_chars": 391
+    },
+    {
+      "id": "processes:activity-eo-conceive-c3quwt",
+      "file": "entities/v1-alpha/eo-conceive/Operations-Model-Conception/Frame-Technology-Enablement-Approach/Identify-Platform-Families/processes-activity-eo-conceive-c3quwt.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 397
+    },
+    {
+      "id": "processes:activity-eo-conceive-d3jdaa",
+      "file": "entities/v1-alpha/eo-conceive/Operations-Model-Conception/Frame-Physical-Asset-Approach/Frame-Footprint-Principles/processes-activity-eo-conceive-d3jdaa.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 379
+    },
+    {
+      "id": "processes:activity-eo-conceive-ettdc2",
+      "file": "entities/v1-alpha/eo-conceive/Operations-Model-Conception/Frame-Operations-Strategy/Frame-Enablement-and-Asset-Direction/processes-activity-eo-conceive-ettdc2.yaml",
+      "agent_type": "human",
+      "name_chars": 36,
+      "description_chars": 370
+    },
+    {
+      "id": "processes:activity-eo-conceive-fjcmnb",
+      "file": "entities/v1-alpha/eo-conceive/Operations-Model-Conception/Frame-Technology-Enablement-Approach/Assess-Enablement-Fit/processes-activity-eo-conceive-fjcmnb.yaml",
+      "agent_type": "human",
+      "name_chars": 21,
+      "description_chars": 355
+    },
+    {
+      "id": "processes:activity-eo-conceive-jgb89z",
+      "file": "entities/v1-alpha/eo-conceive/Operations-Model-Conception/Frame-Physical-Asset-Approach/Bound-Asset-Lifecycle-Envelopes/processes-activity-eo-conceive-jgb89z.yaml",
+      "agent_type": "human",
+      "name_chars": 33,
+      "description_chars": 413
+    },
+    {
+      "id": "processes:activity-eo-conceive-r26ukv",
+      "file": "entities/v1-alpha/eo-conceive/Operations-Model-Conception/Frame-Operations-Strategy/Assess-Execution-Engine-Context/processes-activity-eo-conceive-r26ukv.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 421
+    },
+    {
+      "id": "processes:activity-eo-conceive-sbeur9",
+      "file": "entities/v1-alpha/eo-conceive/Operations-Model-Conception/Frame-Physical-Asset-Approach/Commit-Physical-Asset-Approach/processes-activity-eo-conceive-sbeur9.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 398
+    },
+    {
+      "id": "processes:activity-eo-conceive-uprp7u",
+      "file": "entities/v1-alpha/eo-conceive/Operations-Model-Conception/Frame-Delivery-Model-Conception/Frame-Fulfilment-Patterns/processes-activity-eo-conceive-uprp7u.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 381
+    },
+    {
+      "id": "processes:activity-eo-conceive-wprvuf",
+      "file": "entities/v1-alpha/eo-conceive/Operations-Model-Conception/Frame-Delivery-Model-Conception/Frame-Service-Level-Envelopes/processes-activity-eo-conceive-wprvuf.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 396
+    },
+    {
+      "id": "processes:activity-eo-conceive-ycqjxs",
+      "file": "entities/v1-alpha/eo-conceive/Operations-Model-Conception/Frame-Delivery-Model-Conception/Commit-Delivery-Model-Conception/processes-activity-eo-conceive-ycqjxs.yaml",
+      "agent_type": "human",
+      "name_chars": 32,
+      "description_chars": 409
+    },
+    {
+      "id": "processes:activity-eo-design-4wmwgy",
+      "file": "entities/v1-alpha/eo-design/Process-and-Enablement-Design/Design-Delivery-Model/Design-Fulfilment-Flows/processes-activity-eo-design-4wmwgy.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 349
+    },
+    {
+      "id": "processes:activity-eo-design-53q5rz",
+      "file": "entities/v1-alpha/eo-design/Process-and-Enablement-Design/Design-Technology-Platform-Architecture/Commit-Platform-Architecture/processes-activity-eo-design-53q5rz.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 386
+    },
+    {
+      "id": "processes:activity-eo-design-65b4xh",
+      "file": "entities/v1-alpha/eo-design/Process-and-Enablement-Design/Design-Logistics-and-Routing/Commit-Logistics-Design/processes-activity-eo-design-65b4xh.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 375
+    },
+    {
+      "id": "processes:activity-eo-design-6vqzyk",
+      "file": "entities/v1-alpha/eo-design/Process-and-Enablement-Design/Design-Technology-Platform-Architecture/Design-Integration-Patterns/processes-activity-eo-design-6vqzyk.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 332
+    },
+    {
+      "id": "processes:activity-eo-design-8pd74t",
+      "file": "entities/v1-alpha/eo-design/Process-and-Enablement-Design/Design-Facility-and-Asset-Blueprint/Model-Capacity-Envelopes/processes-activity-eo-design-8pd74t.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 409
+    },
+    {
+      "id": "processes:activity-eo-design-8uvwq5",
+      "file": "entities/v1-alpha/eo-design/Process-and-Enablement-Design/Design-Technology-Platform-Architecture/Define-Deployment-Topology/processes-activity-eo-design-8uvwq5.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 389
+    },
+    {
+      "id": "processes:activity-eo-design-9msrc4",
+      "file": "entities/v1-alpha/eo-design/Process-and-Enablement-Design/Design-Operations-Model/Commit-Operations-Model-Design/processes-activity-eo-design-9msrc4.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 371
+    },
+    {
+      "id": "processes:activity-eo-design-c573pg",
+      "file": "entities/v1-alpha/eo-design/Process-and-Enablement-Design/Design-Delivery-Model/Commit-Delivery-Model-Design/processes-activity-eo-design-c573pg.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 386
+    },
+    {
+      "id": "processes:activity-eo-design-cc2c7f",
+      "file": "entities/v1-alpha/eo-design/Process-and-Enablement-Design/Design-Operations-Model/Structure-Operations-Model/processes-activity-eo-design-cc2c7f.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 391
+    },
+    {
+      "id": "processes:activity-eo-design-fcqpn4",
+      "file": "entities/v1-alpha/eo-design/Process-and-Enablement-Design/Design-Logistics-and-Routing/Position-Network-Nodes/processes-activity-eo-design-fcqpn4.yaml",
+      "agent_type": "human",
+      "name_chars": 22,
+      "description_chars": 386
+    },
+    {
+      "id": "processes:activity-eo-design-fxpw5z",
+      "file": "entities/v1-alpha/eo-design/Process-and-Enablement-Design/Design-Operations-Model/Integrate-Model-Components/processes-activity-eo-design-fxpw5z.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 379
+    },
+    {
+      "id": "processes:activity-eo-design-m29ghr",
+      "file": "entities/v1-alpha/eo-design/Process-and-Enablement-Design/Design-Technology-Platform-Architecture/Specify-Platform-Components/processes-activity-eo-design-m29ghr.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 350
+    },
+    {
+      "id": "processes:activity-eo-design-m66m45",
+      "file": "entities/v1-alpha/eo-design/Process-and-Enablement-Design/Design-Logistics-and-Routing/Select-Transport-Modes/processes-activity-eo-design-m66m45.yaml",
+      "agent_type": "human",
+      "name_chars": 22,
+      "description_chars": 360
+    },
+    {
+      "id": "processes:activity-eo-design-pze82f",
+      "file": "entities/v1-alpha/eo-design/Process-and-Enablement-Design/Design-Operations-Model/Specify-Operating-Rhythms/processes-activity-eo-design-pze82f.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 373
+    },
+    {
+      "id": "processes:activity-eo-design-qqytaa",
+      "file": "entities/v1-alpha/eo-design/Process-and-Enablement-Design/Design-Facility-and-Asset-Blueprint/Commit-Facility-Blueprint/processes-activity-eo-design-qqytaa.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 398
+    },
+    {
+      "id": "processes:activity-eo-design-r8q6n4",
+      "file": "entities/v1-alpha/eo-design/Process-and-Enablement-Design/Design-Delivery-Model/Design-Service-Levels/processes-activity-eo-design-r8q6n4.yaml",
+      "agent_type": "human",
+      "name_chars": 21,
+      "description_chars": 363
+    },
+    {
+      "id": "processes:activity-eo-design-tsyfd5",
+      "file": "entities/v1-alpha/eo-design/Process-and-Enablement-Design/Design-Delivery-Model/Configure-Channels/processes-activity-eo-design-tsyfd5.yaml",
+      "agent_type": "human",
+      "name_chars": 18,
+      "description_chars": 363
+    },
+    {
+      "id": "processes:activity-eo-design-u3j6eu",
+      "file": "entities/v1-alpha/eo-design/Process-and-Enablement-Design/Design-Facility-and-Asset-Blueprint/Design-Facility-Layouts/processes-activity-eo-design-u3j6eu.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 345
+    },
+    {
+      "id": "processes:activity-eo-design-vk83pr",
+      "file": "entities/v1-alpha/eo-design/Process-and-Enablement-Design/Design-Logistics-and-Routing/Design-Routing-Logic/processes-activity-eo-design-vk83pr.yaml",
+      "agent_type": "human",
+      "name_chars": 20,
+      "description_chars": 348
+    },
+    {
+      "id": "processes:activity-eo-design-zj5c3v",
+      "file": "entities/v1-alpha/eo-design/Process-and-Enablement-Design/Design-Facility-and-Asset-Blueprint/Specify-Equipment/processes-activity-eo-design-zj5c3v.yaml",
+      "agent_type": "human",
+      "name_chars": 17,
+      "description_chars": 349
+    },
+    {
+      "id": "processes:activity-eo-improve-334m2m",
+      "file": "entities/v1-alpha/eo-improve/Operations-and-Enablement-Improvement/Conduct-Lean-Six-Sigma-Programme/Develop-Improvement-Capability/processes-activity-eo-improve-334m2m.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 340
+    },
+    {
+      "id": "processes:activity-eo-improve-53zgb8",
+      "file": "entities/v1-alpha/eo-improve/Operations-and-Enablement-Improvement/Conduct-Operations-Performance-Review/Commit-Review-Outcomes/processes-activity-eo-improve-53zgb8.yaml",
+      "agent_type": "human",
+      "name_chars": 22,
+      "description_chars": 372
+    },
+    {
+      "id": "processes:activity-eo-improve-7cek5c",
+      "file": "entities/v1-alpha/eo-improve/Operations-and-Enablement-Improvement/Improve-Technology-Platforms/Commit-Platform-Upgrades/processes-activity-eo-improve-7cek5c.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 312
+    },
+    {
+      "id": "processes:activity-eo-improve-acbypp",
+      "file": "entities/v1-alpha/eo-improve/Operations-and-Enablement-Improvement/Optimize-Asset-Utilization/Commit-Redeployment-Decisions/processes-activity-eo-improve-acbypp.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 312
+    },
+    {
+      "id": "processes:activity-eo-improve-bwndzz",
+      "file": "entities/v1-alpha/eo-improve/Operations-and-Enablement-Improvement/Optimize-Asset-Utilization/Analyze-Asset-Utilization/processes-activity-eo-improve-bwndzz.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 354
+    },
+    {
+      "id": "processes:activity-eo-improve-ck6ghm",
+      "file": "entities/v1-alpha/eo-improve/Operations-and-Enablement-Improvement/Conduct-Logistics-Optimization/Analyze-Routing-Performance/processes-activity-eo-improve-ck6ghm.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 385
+    },
+    {
+      "id": "processes:activity-eo-improve-d9p8hv",
+      "file": "entities/v1-alpha/eo-improve/Operations-and-Enablement-Improvement/Conduct-Logistics-Optimization/Measure-Optimization-Outcomes/processes-activity-eo-improve-d9p8hv.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 359
+    },
+    {
+      "id": "processes:activity-eo-improve-gtarnw",
+      "file": "entities/v1-alpha/eo-improve/Operations-and-Enablement-Improvement/Conduct-Lean-Six-Sigma-Programme/Deliver-Improvement-Projects/processes-activity-eo-improve-gtarnw.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 353
+    },
+    {
+      "id": "processes:activity-eo-improve-hsurx5",
+      "file": "entities/v1-alpha/eo-improve/Operations-and-Enablement-Improvement/Improve-Technology-Platforms/Design-Platform-Upgrades/processes-activity-eo-improve-hsurx5.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 321
+    },
+    {
+      "id": "processes:activity-eo-improve-m7paec",
+      "file": "entities/v1-alpha/eo-improve/Operations-and-Enablement-Improvement/Conduct-Lean-Six-Sigma-Programme/Sustain-Improvement-Gains/processes-activity-eo-improve-m7paec.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 371
+    },
+    {
+      "id": "processes:activity-eo-improve-nrsv8w",
+      "file": "entities/v1-alpha/eo-improve/Operations-and-Enablement-Improvement/Conduct-Logistics-Optimization/Design-Route-and-Network-Changes/processes-activity-eo-improve-nrsv8w.yaml",
+      "agent_type": "human",
+      "name_chars": 32,
+      "description_chars": 344
+    },
+    {
+      "id": "processes:activity-eo-improve-r9dbs8",
+      "file": "entities/v1-alpha/eo-improve/Operations-and-Enablement-Improvement/Conduct-Logistics-Optimization/Commit-Logistics-Changes/processes-activity-eo-improve-r9dbs8.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 346
+    },
+    {
+      "id": "processes:activity-eo-improve-rdjvga",
+      "file": "entities/v1-alpha/eo-improve/Operations-and-Enablement-Improvement/Conduct-Lean-Six-Sigma-Programme/Select-Improvement-Projects/processes-activity-eo-improve-rdjvga.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 349
+    },
+    {
+      "id": "processes:activity-eo-improve-rf46hj",
+      "file": "entities/v1-alpha/eo-improve/Operations-and-Enablement-Improvement/Conduct-Operations-Performance-Review/Form-Review-Findings/processes-activity-eo-improve-rf46hj.yaml",
+      "agent_type": "human",
+      "name_chars": 20,
+      "description_chars": 335
+    },
+    {
+      "id": "processes:activity-eo-improve-s9zhpt",
+      "file": "entities/v1-alpha/eo-improve/Operations-and-Enablement-Improvement/Optimize-Asset-Utilization/Design-Redeployment-Options/processes-activity-eo-improve-s9zhpt.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 353
+    },
+    {
+      "id": "processes:activity-eo-improve-uvzvt8",
+      "file": "entities/v1-alpha/eo-improve/Operations-and-Enablement-Improvement/Improve-Technology-Platforms/Analyze-Platform-Gaps/processes-activity-eo-improve-uvzvt8.yaml",
+      "agent_type": "human",
+      "name_chars": 21,
+      "description_chars": 380
+    },
+    {
+      "id": "processes:activity-eo-improve-w3hsnq",
+      "file": "entities/v1-alpha/eo-improve/Operations-and-Enablement-Improvement/Improve-Technology-Platforms/Measure-Platform-Improvement/processes-activity-eo-improve-w3hsnq.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 340
+    },
+    {
+      "id": "processes:activity-eo-improve-xunaq5",
+      "file": "entities/v1-alpha/eo-improve/Operations-and-Enablement-Improvement/Conduct-Operations-Performance-Review/Assemble-Performance-Evidence/processes-activity-eo-improve-xunaq5.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 407
+    },
+    {
+      "id": "processes:activity-eo-improve-zgjqsd",
+      "file": "entities/v1-alpha/eo-improve/Operations-and-Enablement-Improvement/Conduct-Operations-Performance-Review/Route-Findings-to-Improvement-Tracks/processes-activity-eo-improve-zgjqsd.yaml",
+      "agent_type": "human",
+      "name_chars": 36,
+      "description_chars": 371
+    },
+    {
+      "id": "processes:activity-eo-improve-zxt423",
+      "file": "entities/v1-alpha/eo-improve/Operations-and-Enablement-Improvement/Optimize-Asset-Utilization/Measure-Utilization-Outcomes/processes-activity-eo-improve-zxt423.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 353
+    },
+    {
+      "id": "processes:activity-eo-operate-37uk3c",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Procurement-Cycle/Maintain-Procurement-Compliance/processes-activity-eo-operate-37uk3c.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 330
+    },
+    {
+      "id": "processes:activity-eo-operate-7xkcre",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Technology-Platforms/Execute-Scheduled-Platform-Routines/processes-activity-eo-operate-7xkcre.yaml",
+      "agent_type": "human",
+      "name_chars": 35,
+      "description_chars": 389
+    },
+    {
+      "id": "processes:activity-eo-operate-94uqh7",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Run-Production-Line/Record-Production-Output/processes-activity-eo-operate-94uqh7.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 333
+    },
+    {
+      "id": "processes:activity-eo-operate-98gzk2",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Logistics/Resolve-Logistics-Exceptions/processes-activity-eo-operate-98gzk2.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 322
+    },
+    {
+      "id": "processes:activity-eo-operate-9nhpgy",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Technology-Platforms/Monitor-Platform-Availability/processes-activity-eo-operate-9nhpgy.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 311
+    },
+    {
+      "id": "processes:activity-eo-operate-9q2e4c",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Procurement-Cycle/Receive-and-Verify-Deliveries/processes-activity-eo-operate-9q2e4c.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 313
+    },
+    {
+      "id": "processes:activity-eo-operate-9sdchy",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Warehouse-and-Inventory/Execute-Replenishment/processes-activity-eo-operate-9sdchy.yaml",
+      "agent_type": "human",
+      "name_chars": 21,
+      "description_chars": 330
+    },
+    {
+      "id": "processes:activity-eo-operate-b7x5en",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Asset-Maintenance/Execute-Scheduled-Maintenance/processes-activity-eo-operate-b7x5en.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 306
+    },
+    {
+      "id": "processes:activity-eo-operate-cc82cs",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Logistics/Execute-Shipments/processes-activity-eo-operate-cc82cs.yaml",
+      "agent_type": "human",
+      "name_chars": 17,
+      "description_chars": 322
+    },
+    {
+      "id": "processes:activity-eo-operate-eadndb",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Asset-Maintenance/Plan-Maintenance-Schedules/processes-activity-eo-operate-eadndb.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 410
+    },
+    {
+      "id": "processes:activity-eo-operate-fvtgcr",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Logistics/Track-and-Trace-Flows/processes-activity-eo-operate-fvtgcr.yaml",
+      "agent_type": "human",
+      "name_chars": 21,
+      "description_chars": 319
+    },
+    {
+      "id": "processes:activity-eo-operate-gmj49n",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Quality-Control/Disposition-Nonconforming-Output/processes-activity-eo-operate-gmj49n.yaml",
+      "agent_type": "human",
+      "name_chars": 32,
+      "description_chars": 379
+    },
+    {
+      "id": "processes:activity-eo-operate-gmkpny",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Run-Production-Line/Schedule-Production-Cycles/processes-activity-eo-operate-gmkpny.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 361
+    },
+    {
+      "id": "processes:activity-eo-operate-gtt587",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Facility-Management/Maintain-Safety-and-Compliance/processes-activity-eo-operate-gtt587.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 364
+    },
+    {
+      "id": "processes:activity-eo-operate-hpdc56",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Service-Delivery/Handle-Service-Exceptions/processes-activity-eo-operate-hpdc56.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 318
+    },
+    {
+      "id": "processes:activity-eo-operate-jdkay8",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Quality-Control/Execute-Inspection-and-Testing/processes-activity-eo-operate-jdkay8.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 382
+    },
+    {
+      "id": "processes:activity-eo-operate-k73gbs",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Warehouse-and-Inventory/Conduct-Cycle-Counts/processes-activity-eo-operate-k73gbs.yaml",
+      "agent_type": "human",
+      "name_chars": 20,
+      "description_chars": 339
+    },
+    {
+      "id": "processes:activity-eo-operate-n5fq6h",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Procurement-Cycle/Issue-Purchase-Orders/processes-activity-eo-operate-n5fq6h.yaml",
+      "agent_type": "human",
+      "name_chars": 21,
+      "description_chars": 316
+    },
+    {
+      "id": "processes:activity-eo-operate-n7pddh",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Service-Delivery/Monitor-Service-Levels/processes-activity-eo-operate-n7pddh.yaml",
+      "agent_type": "human",
+      "name_chars": 22,
+      "description_chars": 357
+    },
+    {
+      "id": "processes:activity-eo-operate-q3sw3q",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Facility-Management/Execute-Facility-Work-Orders/processes-activity-eo-operate-q3sw3q.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 307
+    },
+    {
+      "id": "processes:activity-eo-operate-qx7epe",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Facility-Management/Conduct-Facility-Inspections/processes-activity-eo-operate-qx7epe.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 354
+    },
+    {
+      "id": "processes:activity-eo-operate-rrg5cv",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Warehouse-and-Inventory/Maintain-Stock-Accuracy/processes-activity-eo-operate-rrg5cv.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 342
+    },
+    {
+      "id": "processes:activity-eo-operate-rwvgfg",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Asset-Maintenance/Record-Asset-Availability/processes-activity-eo-operate-rwvgfg.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 358
+    },
+    {
+      "id": "processes:activity-eo-operate-snhadj",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Run-Production-Line/Manage-Line-Changeovers/processes-activity-eo-operate-snhadj.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 402
+    },
+    {
+      "id": "processes:activity-eo-operate-tbh9q7",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Warehouse-and-Inventory/Execute-Picking-and-Dispatch/processes-activity-eo-operate-tbh9q7.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 312
+    },
+    {
+      "id": "processes:activity-eo-operate-ua7tgk",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Technology-Platforms/Respond-to-Platform-Incidents/processes-activity-eo-operate-ua7tgk.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 347
+    },
+    {
+      "id": "processes:activity-eo-operate-uyzanp",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Quality-Control/Record-Inspection-Results/processes-activity-eo-operate-uyzanp.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 343
+    },
+    {
+      "id": "processes:activity-eo-operate-vhjw3y",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Technology-Platforms/Manage-Capacity-and-Performance/processes-activity-eo-operate-vhjw3y.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 367
+    },
+    {
+      "id": "processes:activity-eo-operate-vs8xnq",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Run-Production-Line/Execute-Production-Run/processes-activity-eo-operate-vs8xnq.yaml",
+      "agent_type": "human",
+      "name_chars": 22,
+      "description_chars": 352
+    },
+    {
+      "id": "processes:activity-eo-operate-x3jh4n",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Asset-Maintenance/Respond-to-Asset-Breakdowns/processes-activity-eo-operate-x3jh4n.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 314
+    },
+    {
+      "id": "processes:activity-eo-operate-x59sfp",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Quality-Control/Report-Quality-Performance/processes-activity-eo-operate-x59sfp.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 386
+    },
+    {
+      "id": "processes:activity-eo-operate-x8u9ez",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Service-Delivery/Report-Service-Delivery-Performance/processes-activity-eo-operate-x8u9ez.yaml",
+      "agent_type": "human",
+      "name_chars": 35,
+      "description_chars": 330
+    },
+    {
+      "id": "processes:activity-eo-operate-xj922z",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Service-Delivery/Coordinate-Daily-Service-Operations/processes-activity-eo-operate-xj922z.yaml",
+      "agent_type": "human",
+      "name_chars": 35,
+      "description_chars": 358
+    },
+    {
+      "id": "processes:activity-eo-operate-xn7mw4",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Procurement-Cycle/Process-Purchase-Requisitions/processes-activity-eo-operate-xn7mw4.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 349
+    },
+    {
+      "id": "processes:activity-eo-operate-xzs7d8",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Facility-Management/Schedule-Facility-Work-Orders/processes-activity-eo-operate-xzs7d8.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 355
+    },
+    {
+      "id": "processes:activity-eo-operate-ywjabj",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Quality-Control/Plan-Quality-Inspection/processes-activity-eo-operate-ywjabj.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 404
+    },
+    {
+      "id": "processes:activity-eo-operate-zdw2by",
+      "file": "entities/v1-alpha/eo-operate/Execution-and-Fulfilment/Operate-Logistics/Plan-Transport-and-Deliveries/processes-activity-eo-operate-zdw2by.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 336
+    },
+    {
+      "id": "processes:activity-eo-retire-2xjudv",
+      "file": "entities/v1-alpha/eo-retire/Operations-and-Asset-Decommissioning/Decommission-Enterprise-Asset/Execute-Disposal-Routes/processes-activity-eo-retire-2xjudv.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 367
+    },
+    {
+      "id": "processes:activity-eo-retire-6gntey",
+      "file": "entities/v1-alpha/eo-retire/Operations-and-Asset-Decommissioning/Decommission-Enterprise-Asset/Plan-Asset-Retirement/processes-activity-eo-retire-6gntey.yaml",
+      "agent_type": "human",
+      "name_chars": 21,
+      "description_chars": 389
+    },
+    {
+      "id": "processes:activity-eo-retire-h2dzg3",
+      "file": "entities/v1-alpha/eo-retire/Operations-and-Asset-Decommissioning/Decommission-Enterprise-Asset/Withdraw-Asset-from-Operation/processes-activity-eo-retire-h2dzg3.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 330
+    },
+    {
+      "id": "processes:activity-eo-retire-zkt7eq",
+      "file": "entities/v1-alpha/eo-retire/Operations-and-Asset-Decommissioning/Decommission-Enterprise-Asset/Resolve-Residual-Value-and-Obligations/processes-activity-eo-retire-zkt7eq.yaml",
+      "agent_type": "human",
+      "name_chars": 38,
+      "description_chars": 367
+    },
+    {
+      "id": "processes:activity-fa-activate-63duu7",
+      "file": "entities/v1-alpha/fa-activate/Regulated-Billing-Activation/Activate-Billing-Capability/Acquire-Regulator-Acknowledged-Accounting-or-Rate-Framework/processes-activity-fa-activate-63duu7.yaml",
+      "agent_type": "human",
+      "name_chars": 52,
+      "description_chars": 453
+    },
+    {
+      "id": "processes:activity-fa-activate-6j9me8",
+      "file": "entities/v1-alpha/fa-activate/Regulated-Billing-Activation/Activate-Billing-Capability/Activate-Continuing-Supervisor-Notification-Billing/processes-activity-fa-activate-6j9me8.yaml",
+      "agent_type": "human",
+      "name_chars": 47,
+      "description_chars": 427
+    },
+    {
+      "id": "processes:activity-fa-activate-u8sq5k",
+      "file": "entities/v1-alpha/fa-activate/Regulated-Billing-Activation/Activate-Billing-Capability/Acquire-Tariff-or-Pricing-Approval/processes-activity-fa-activate-u8sq5k.yaml",
+      "agent_type": "human",
+      "name_chars": 34,
+      "description_chars": 369
+    },
+    {
+      "id": "processes:activity-fa-activate-utzqpn",
+      "file": "entities/v1-alpha/fa-activate/Regulated-Billing-Activation/Activate-Billing-Capability/Bring-Operational-Controls-Live-on-the-Regulated-Billing-Record/processes-activity-fa-activate-utzqpn.yaml",
+      "agent_type": "human",
+      "name_chars": 43,
+      "description_chars": 429
+    },
+    {
+      "id": "processes:activity-fa-build-2ccp49",
+      "file": "entities/v1-alpha/fa-build/Financial-Build/Secure-Funding-Facilities/Execute-Funding-Line-Documentation/processes-activity-fa-build-2ccp49.yaml",
+      "agent_type": "human",
+      "name_chars": 32,
+      "description_chars": 309
+    },
+    {
+      "id": "processes:activity-fa-build-5h2xk4",
+      "file": "entities/v1-alpha/fa-build/Financial-Build/Onboard-Tax-and-Compliance-Capability/Implement-Tax-Controls/processes-activity-fa-build-5h2xk4.yaml",
+      "agent_type": "human",
+      "name_chars": 22,
+      "description_chars": 336
+    },
+    {
+      "id": "processes:activity-fa-build-b3qxke",
+      "file": "entities/v1-alpha/fa-build/Financial-Build/Onboard-Tax-and-Compliance-Capability/Establish-Compliance-Calendar/processes-activity-fa-build-b3qxke.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 350
+    },
+    {
+      "id": "processes:activity-fa-build-daw35b",
+      "file": "entities/v1-alpha/fa-build/Financial-Build/Onboard-Tax-and-Compliance-Capability/Execute-Filings-and-Registrations/processes-activity-fa-build-daw35b.yaml",
+      "agent_type": "human",
+      "name_chars": 33,
+      "description_chars": 349
+    },
+    {
+      "id": "processes:activity-fa-build-dsxzrc",
+      "file": "entities/v1-alpha/fa-build/Financial-Build/Build-Budgeting-and-Forecasting-Systems/Implement-Planning-Controls/processes-activity-fa-build-dsxzrc.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 358
+    },
+    {
+      "id": "processes:activity-fa-build-ee89qu",
+      "file": "entities/v1-alpha/fa-build/Financial-Build/Implement-Financial-Systems-and-Ledger/Verify-Ledger-Implementation/processes-activity-fa-build-ee89qu.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 344
+    },
+    {
+      "id": "processes:activity-fa-build-ek3cs4",
+      "file": "entities/v1-alpha/fa-build/Financial-Build/Onboard-Tax-and-Compliance-Capability/Verify-Tax-Capability-Readiness/processes-activity-fa-build-ek3cs4.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 357
+    },
+    {
+      "id": "processes:activity-fa-build-g2g6yw",
+      "file": "entities/v1-alpha/fa-build/Financial-Build/Implement-Financial-Systems-and-Ledger/Configure-Posting-Rules/processes-activity-fa-build-g2g6yw.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 356
+    },
+    {
+      "id": "processes:activity-fa-build-hkt2qs",
+      "file": "entities/v1-alpha/fa-build/Financial-Build/Secure-Funding-Facilities/Negotiate-Funding-Lines/processes-activity-fa-build-hkt2qs.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 399
+    },
+    {
+      "id": "processes:activity-fa-build-jwt3uv",
+      "file": "entities/v1-alpha/fa-build/Financial-Build/Build-Budgeting-and-Forecasting-Systems/Verify-Planning-System-Readiness/processes-activity-fa-build-jwt3uv.yaml",
+      "agent_type": "human",
+      "name_chars": 32,
+      "description_chars": 338
+    },
+    {
+      "id": "processes:activity-fa-build-napuha",
+      "file": "entities/v1-alpha/fa-build/Financial-Build/Implement-Financial-Systems-and-Ledger/Deploy-Chart-of-Accounts/processes-activity-fa-build-napuha.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 318
+    },
+    {
+      "id": "processes:activity-fa-build-nhup75",
+      "file": "entities/v1-alpha/fa-build/Financial-Build/Build-Budgeting-and-Forecasting-Systems/Integrate-Forecasting-Integrations/processes-activity-fa-build-nhup75.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 346
+    },
+    {
+      "id": "processes:activity-fa-build-rbv7fk",
+      "file": "entities/v1-alpha/fa-build/Financial-Build/Implement-Financial-Systems-and-Ledger/Deploy-Financial-Reports/processes-activity-fa-build-rbv7fk.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 371
+    },
+    {
+      "id": "processes:activity-fa-build-v4regt",
+      "file": "entities/v1-alpha/fa-build/Financial-Build/Build-Budgeting-and-Forecasting-Systems/Build-Budget-Models/processes-activity-fa-build-v4regt.yaml",
+      "agent_type": "human",
+      "name_chars": 19,
+      "description_chars": 338
+    },
+    {
+      "id": "processes:activity-fa-build-va7nxd",
+      "file": "entities/v1-alpha/fa-build/Financial-Build/Secure-Funding-Facilities/Deploy-ERP-Finance-Module/processes-activity-fa-build-va7nxd.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 351
+    },
+    {
+      "id": "processes:activity-fa-build-xf2kdw",
+      "file": "entities/v1-alpha/fa-build/Financial-Build/Secure-Funding-Facilities/Stand-Up-Finance-Function/processes-activity-fa-build-xf2kdw.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 394
+    },
+    {
+      "id": "processes:activity-fa-conceive-hebg2g",
+      "file": "entities/v1-alpha/fa-conceive/Financial-Model-Conception/Frame-Finance-Strategy/Assess-Finance-Strategy-Context/processes-activity-fa-conceive-hebg2g.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 427
+    },
+    {
+      "id": "processes:activity-fa-conceive-n35a6c",
+      "file": "entities/v1-alpha/fa-conceive/Financial-Model-Conception/Frame-Finance-Strategy/Frame-Monetary-Model/processes-activity-fa-conceive-n35a6c.yaml",
+      "agent_type": "human",
+      "name_chars": 20,
+      "description_chars": 400
+    },
+    {
+      "id": "processes:activity-fa-conceive-p34u93",
+      "file": "entities/v1-alpha/fa-conceive/Financial-Model-Conception/Frame-Finance-Strategy/Frame-Funding-and-Capital-Approach/processes-activity-fa-conceive-p34u93.yaml",
+      "agent_type": "human",
+      "name_chars": 34,
+      "description_chars": 414
+    },
+    {
+      "id": "processes:activity-fa-conceive-wt82fh",
+      "file": "entities/v1-alpha/fa-conceive/Financial-Model-Conception/Frame-Finance-Strategy/Commit-Finance-Strategy/processes-activity-fa-conceive-wt82fh.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 363
+    },
+    {
+      "id": "processes:activity-fa-design-2qrkhv",
+      "file": "entities/v1-alpha/fa-design/Financial-Design/Design-Financial-Controls-and-Policies/Design-Financial-Control-Objectives/processes-activity-fa-design-2qrkhv.yaml",
+      "agent_type": "human",
+      "name_chars": 35,
+      "description_chars": 324
+    },
+    {
+      "id": "processes:activity-fa-design-6qvdsk",
+      "file": "entities/v1-alpha/fa-design/Financial-Design/Design-Tax-Position-and-Strategy/Commit-Tax-Position-and-Strategy/processes-activity-fa-design-6qvdsk.yaml",
+      "agent_type": "human",
+      "name_chars": 32,
+      "description_chars": 360
+    },
+    {
+      "id": "processes:activity-fa-design-aye4mb",
+      "file": "entities/v1-alpha/fa-design/Financial-Design/Design-Financial-Plan-Structure/Commit-Plan-Structure/processes-activity-fa-design-aye4mb.yaml",
+      "agent_type": "human",
+      "name_chars": 21,
+      "description_chars": 348
+    },
+    {
+      "id": "processes:activity-fa-design-bn5x7x",
+      "file": "entities/v1-alpha/fa-design/Financial-Design/Design-Financial-Plan-Structure/Design-Financial-Controls-Framework/processes-activity-fa-design-bn5x7x.yaml",
+      "agent_type": "human",
+      "name_chars": 35,
+      "description_chars": 369
+    },
+    {
+      "id": "processes:activity-fa-design-d4rea9",
+      "file": "entities/v1-alpha/fa-design/Financial-Design/Design-Treasury-and-Funding-Model/Design-Treasury-Operating-Model/processes-activity-fa-design-d4rea9.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 398
+    },
+    {
+      "id": "processes:activity-fa-design-drznes",
+      "file": "entities/v1-alpha/fa-design/Financial-Design/Design-Financial-Plan-Structure/Design-Chart-of-Accounts/processes-activity-fa-design-drznes.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 342
+    },
+    {
+      "id": "processes:activity-fa-design-k8ucbk",
+      "file": "entities/v1-alpha/fa-design/Financial-Design/Design-Financial-Controls-and-Policies/Commit-Controls-and-Policies-Design/processes-activity-fa-design-k8ucbk.yaml",
+      "agent_type": "human",
+      "name_chars": 35,
+      "description_chars": 357
+    },
+    {
+      "id": "processes:activity-fa-design-mzkd3q",
+      "file": "entities/v1-alpha/fa-design/Financial-Design/Design-Tax-Position-and-Strategy/Design-Tax-Strategy/processes-activity-fa-design-mzkd3q.yaml",
+      "agent_type": "human",
+      "name_chars": 19,
+      "description_chars": 325
+    },
+    {
+      "id": "processes:activity-fa-design-ppadqj",
+      "file": "entities/v1-alpha/fa-design/Financial-Design/Design-Financial-Controls-and-Policies/Design-Financial-Policies/processes-activity-fa-design-ppadqj.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 316
+    },
+    {
+      "id": "processes:activity-fa-design-r4hzb6",
+      "file": "entities/v1-alpha/fa-design/Financial-Design/Design-Treasury-and-Funding-Model/Commit-Treasury-and-Funding-Model/processes-activity-fa-design-r4hzb6.yaml",
+      "agent_type": "human",
+      "name_chars": 33,
+      "description_chars": 366
+    },
+    {
+      "id": "processes:activity-fa-design-r7eq66",
+      "file": "entities/v1-alpha/fa-design/Financial-Design/Design-Treasury-and-Funding-Model/Design-Funding-Structure/processes-activity-fa-design-r7eq66.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 397
+    },
+    {
+      "id": "processes:activity-fa-design-rh9ft4",
+      "file": "entities/v1-alpha/fa-design/Financial-Design/Design-Tax-Position-and-Strategy/Assess-Tax-Exposures/processes-activity-fa-design-rh9ft4.yaml",
+      "agent_type": "human",
+      "name_chars": 20,
+      "description_chars": 391
+    },
+    {
+      "id": "processes:activity-fa-design-tsdptr",
+      "file": "entities/v1-alpha/fa-design/Financial-Design/Design-Treasury-and-Funding-Model/Design-Cash-and-Liquidity-Policy/processes-activity-fa-design-tsdptr.yaml",
+      "agent_type": "human",
+      "name_chars": 32,
+      "description_chars": 390
+    },
+    {
+      "id": "processes:activity-fa-design-x66t4r",
+      "file": "entities/v1-alpha/fa-design/Financial-Design/Design-Tax-Position-and-Strategy/Document-Tax-Positions/processes-activity-fa-design-x66t4r.yaml",
+      "agent_type": "human",
+      "name_chars": 22,
+      "description_chars": 360
+    },
+    {
+      "id": "processes:activity-fa-design-xycsv4",
+      "file": "entities/v1-alpha/fa-design/Financial-Design/Design-Financial-Controls-and-Policies/Analyze-Control-and-Policy-Gaps/processes-activity-fa-design-xycsv4.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 372
+    },
+    {
+      "id": "processes:activity-fa-design-xzbfxx",
+      "file": "entities/v1-alpha/fa-design/Financial-Design/Design-Financial-Plan-Structure/Design-Cost-Allocation-Model/processes-activity-fa-design-xzbfxx.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 331
+    },
+    {
+      "id": "processes:activity-fa-improve-4mju3t",
+      "file": "entities/v1-alpha/fa-improve/Financial-Improve/Evolve-Treasury-and-Funding-Model/Commit-Model-Evolutions/processes-activity-fa-improve-4mju3t.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 345
+    },
+    {
+      "id": "processes:activity-fa-improve-6j2xpt",
+      "file": "entities/v1-alpha/fa-improve/Financial-Improve/Refine-Financial-Controls-and-Policies/Analyze-Control-Findings/processes-activity-fa-improve-6j2xpt.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 381
+    },
+    {
+      "id": "processes:activity-fa-improve-bxqsee",
+      "file": "entities/v1-alpha/fa-improve/Financial-Improve/Conduct-Cost-Optimization-Review/Route-Findings-to-Financial-Tracks/processes-activity-fa-improve-bxqsee.yaml",
+      "agent_type": "human",
+      "name_chars": 34,
+      "description_chars": 367
+    },
+    {
+      "id": "processes:activity-fa-improve-capmsa",
+      "file": "entities/v1-alpha/fa-improve/Financial-Improve/Evolve-Treasury-and-Funding-Model/Monitor-Market-and-Funding-Shifts/processes-activity-fa-improve-capmsa.yaml",
+      "agent_type": "human",
+      "name_chars": 33,
+      "description_chars": 339
+    },
+    {
+      "id": "processes:activity-fa-improve-g6x3fj",
+      "file": "entities/v1-alpha/fa-improve/Financial-Improve/Refine-Financial-Controls-and-Policies/Design-Control-Refinements/processes-activity-fa-improve-g6x3fj.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 311
+    },
+    {
+      "id": "processes:activity-fa-improve-grdfaj",
+      "file": "entities/v1-alpha/fa-improve/Financial-Improve/Evolve-Treasury-and-Funding-Model/Review-Treasury-Exposures/processes-activity-fa-improve-grdfaj.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 369
+    },
+    {
+      "id": "processes:activity-fa-improve-nsgnav",
+      "file": "entities/v1-alpha/fa-improve/Financial-Improve/Refine-Financial-Controls-and-Policies/Commit-Refinements/processes-activity-fa-improve-nsgnav.yaml",
+      "agent_type": "human",
+      "name_chars": 18,
+      "description_chars": 345
+    },
+    {
+      "id": "processes:activity-fa-improve-qa3vqq",
+      "file": "entities/v1-alpha/fa-improve/Financial-Improve/Conduct-Cost-Optimization-Review/Assemble-Cost-Signals/processes-activity-fa-improve-qa3vqq.yaml",
+      "agent_type": "human",
+      "name_chars": 21,
+      "description_chars": 361
+    },
+    {
+      "id": "processes:activity-fa-improve-rqws4s",
+      "file": "entities/v1-alpha/fa-improve/Financial-Improve/Conduct-Cost-Optimization-Review/Form-Cost-Review-Findings/processes-activity-fa-improve-rqws4s.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 316
+    },
+    {
+      "id": "processes:activity-fa-improve-s2fjfj",
+      "file": "entities/v1-alpha/fa-improve/Financial-Improve/Conduct-Cost-Optimization-Review/Commit-Cost-Review-Outcomes/processes-activity-fa-improve-s2fjfj.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 355
+    },
+    {
+      "id": "processes:activity-fa-improve-ssfp68",
+      "file": "entities/v1-alpha/fa-improve/Financial-Improve/Refine-Financial-Controls-and-Policies/Measure-Refinement-Effectiveness/processes-activity-fa-improve-ssfp68.yaml",
+      "agent_type": "human",
+      "name_chars": 32,
+      "description_chars": 347
+    },
+    {
+      "id": "processes:activity-fa-improve-xjewfb",
+      "file": "entities/v1-alpha/fa-improve/Financial-Improve/Evolve-Treasury-and-Funding-Model/Design-Model-Evolutions/processes-activity-fa-improve-xjewfb.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 352
+    },
+    {
+      "id": "processes:activity-fa-operate-48s3kx",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Manage-Tax-Compliance-and-Filings/Monitor-Tax-Exposures/processes-activity-fa-operate-48s3kx.yaml",
+      "agent_type": "human",
+      "name_chars": 21,
+      "description_chars": 319
+    },
+    {
+      "id": "processes:activity-fa-operate-4yx8be",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Run-Accounts-Receivable/Manage-Collections/processes-activity-fa-operate-4yx8be.yaml",
+      "agent_type": "human",
+      "name_chars": 18,
+      "description_chars": 367
+    },
+    {
+      "id": "processes:activity-fa-operate-5dp28t",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Perform-Financial-Close/Execute-Reconciliations/processes-activity-fa-operate-5dp28t.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 374
+    },
+    {
+      "id": "processes:activity-fa-operate-5dufzc",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Perform-Financial-Close/Certify-Period-Close/processes-activity-fa-operate-5dufzc.yaml",
+      "agent_type": "human",
+      "name_chars": 20,
+      "description_chars": 349
+    },
+    {
+      "id": "processes:activity-fa-operate-5zesye",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Manage-Cash-and-Liquidity/Execute-Investment-Decisions/processes-activity-fa-operate-5zesye.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 332
+    },
+    {
+      "id": "processes:activity-fa-operate-6pk6zf",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Operate-General-Ledger/Process-Journal-Entries/processes-activity-fa-operate-6pk6zf.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 294
+    },
+    {
+      "id": "processes:activity-fa-operate-854gza",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Execute-Payroll/Produce-Statutory-Filings/processes-activity-fa-operate-854gza.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 335
+    },
+    {
+      "id": "processes:activity-fa-operate-9g2b8x",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Manage-Tax-Compliance-and-Filings/Prepare-Tax-Returns/processes-activity-fa-operate-9g2b8x.yaml",
+      "agent_type": "human",
+      "name_chars": 19,
+      "description_chars": 333
+    },
+    {
+      "id": "processes:activity-fa-operate-aab8cw",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Manage-Cash-and-Liquidity/Monitor-Cash-Positions/processes-activity-fa-operate-aab8cw.yaml",
+      "agent_type": "human",
+      "name_chars": 22,
+      "description_chars": 317
+    },
+    {
+      "id": "processes:activity-fa-operate-avuag6",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Manage-Tax-Compliance-and-Filings/Maintain-Filing-Record/processes-activity-fa-operate-avuag6.yaml",
+      "agent_type": "human",
+      "name_chars": 22,
+      "description_chars": 360
+    },
+    {
+      "id": "processes:activity-fa-operate-ayt4aq",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Perform-Financial-Close/Execute-Period-End-Entries/processes-activity-fa-operate-ayt4aq.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 364
+    },
+    {
+      "id": "processes:activity-fa-operate-bsq94u",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Perform-Financial-Close/Produce-Management-Reports/processes-activity-fa-operate-bsq94u.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 332
+    },
+    {
+      "id": "processes:activity-fa-operate-dmzn73",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Operate-Financial-Reporting-and-Disclosure/Prepare-Financial-Statements/processes-activity-fa-operate-dmzn73.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 351
+    },
+    {
+      "id": "processes:activity-fa-operate-dv3u8j",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Operate-Financial-Reporting-and-Disclosure/Prepare-Footnotes-and-Disclosures/processes-activity-fa-operate-dv3u8j.yaml",
+      "agent_type": "human",
+      "name_chars": 33,
+      "description_chars": 334
+    },
+    {
+      "id": "processes:activity-fa-operate-eq5bc9",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Execute-Payroll/Compute-Withholdings/processes-activity-fa-operate-eq5bc9.yaml",
+      "agent_type": "human",
+      "name_chars": 20,
+      "description_chars": 349
+    },
+    {
+      "id": "processes:activity-fa-operate-f3c2rt",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Run-Accounts-Payable/Match-Invoices/processes-activity-fa-operate-f3c2rt.yaml",
+      "agent_type": "human",
+      "name_chars": 14,
+      "description_chars": 328
+    },
+    {
+      "id": "processes:activity-fa-operate-h7wym7",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Manage-Tax-Compliance-and-Filings/Schedule-Tax-Payments/processes-activity-fa-operate-h7wym7.yaml",
+      "agent_type": "human",
+      "name_chars": 21,
+      "description_chars": 334
+    },
+    {
+      "id": "processes:activity-fa-operate-he4rxk",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Execute-Payroll/Disburse-Payroll/processes-activity-fa-operate-he4rxk.yaml",
+      "agent_type": "human",
+      "name_chars": 16,
+      "description_chars": 345
+    },
+    {
+      "id": "processes:activity-fa-operate-hvp7jn",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Run-Accounts-Receivable/Issue-Customer-Invoices/processes-activity-fa-operate-hvp7jn.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 354
+    },
+    {
+      "id": "processes:activity-fa-operate-hxqddg",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Operate-Financial-Reporting-and-Disclosure/Deliver-Reports-and-Disclosures/processes-activity-fa-operate-hxqddg.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 321
+    },
+    {
+      "id": "processes:activity-fa-operate-k9cf3b",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Run-Accounts-Payable/Execute-Payments-to-Plan/processes-activity-fa-operate-k9cf3b.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 350
+    },
+    {
+      "id": "processes:activity-fa-operate-ksg7yj",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Operate-General-Ledger/Monitor-Ledger-Health/processes-activity-fa-operate-ksg7yj.yaml",
+      "agent_type": "human",
+      "name_chars": 21,
+      "description_chars": 378
+    },
+    {
+      "id": "processes:activity-fa-operate-kzqaqw",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Operate-General-Ledger/Maintain-Account-Integrity/processes-activity-fa-operate-kzqaqw.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 323
+    },
+    {
+      "id": "processes:activity-fa-operate-mceyb8",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Operate-Financial-Reporting-and-Disclosure/Review-Reporting-Package/processes-activity-fa-operate-mceyb8.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 348
+    },
+    {
+      "id": "processes:activity-fa-operate-mumzq7",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Manage-Cash-and-Liquidity/Report-Treasury-Position/processes-activity-fa-operate-mumzq7.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 334
+    },
+    {
+      "id": "processes:activity-fa-operate-mwerdy",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Run-Accounts-Payable/Maintain-Payables-Record/processes-activity-fa-operate-mwerdy.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 325
+    },
+    {
+      "id": "processes:activity-fa-operate-pg9eys",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Manage-Cash-and-Liquidity/Forecast-Liquidity/processes-activity-fa-operate-pg9eys.yaml",
+      "agent_type": "human",
+      "name_chars": 18,
+      "description_chars": 370
+    },
+    {
+      "id": "processes:activity-fa-operate-rnszvv",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Run-Accounts-Receivable/Apply-Cash-to-Ledger/processes-activity-fa-operate-rnszvv.yaml",
+      "agent_type": "human",
+      "name_chars": 20,
+      "description_chars": 299
+    },
+    {
+      "id": "processes:activity-fa-operate-rsrcp2",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Run-Accounts-Payable/Record-Payment-Approvals/processes-activity-fa-operate-rsrcp2.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 334
+    },
+    {
+      "id": "processes:activity-fa-operate-v4j4en",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Operate-General-Ledger/Coordinate-Subledger-Flows/processes-activity-fa-operate-v4j4en.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 345
+    },
+    {
+      "id": "processes:activity-fa-operate-ze2sed",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Run-Accounts-Receivable/Maintain-Receivables-Record/processes-activity-fa-operate-ze2sed.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 327
+    },
+    {
+      "id": "processes:activity-fa-operate-zxtxzj",
+      "file": "entities/v1-alpha/fa-operate/Financial-Operate/Execute-Payroll/Calculate-Compensation/processes-activity-fa-operate-zxtxzj.yaml",
+      "agent_type": "human",
+      "name_chars": 22,
+      "description_chars": 372
+    },
+    {
+      "id": "processes:activity-fa-retire-3g3m9u",
+      "file": "entities/v1-alpha/fa-retire/Regulated-Run-Off/Conclude-Regulated-Run-Off/File-Run-Off-Closure-Evidence/processes-activity-fa-retire-3g3m9u.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 473
+    },
+    {
+      "id": "processes:activity-fa-retire-t3uyxp",
+      "file": "entities/v1-alpha/fa-retire/Regulated-Run-Off/Conclude-Regulated-Run-Off/Establish-Run-Off-Accounting-Basis/processes-activity-fa-retire-t3uyxp.yaml",
+      "agent_type": "human",
+      "name_chars": 34,
+      "description_chars": 499
+    },
+    {
+      "id": "processes:activity-fa-retire-uuqbe9",
+      "file": "entities/v1-alpha/fa-retire/Regulated-Run-Off/Conclude-Regulated-Run-Off/Maintain-Reserving-Discipline/processes-activity-fa-retire-uuqbe9.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 495
+    },
+    {
+      "id": "processes:activity-fa-retire-vmpdww",
+      "file": "entities/v1-alpha/fa-retire/Regulated-Run-Off/Conclude-Regulated-Run-Off/Adjudicate-Policyholder-Claims/processes-activity-fa-retire-vmpdww.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 444
+    },
+    {
+      "id": "processes:activity-ge-activate-6uwq7f",
+      "file": "entities/v1-alpha/ge-activate/Governance-Instrument-Commencement/Bring-Policy-Instrument-into-Force/Communicate-Obligations-and-Rights/processes-activity-ge-activate-6uwq7f.yaml",
+      "agent_type": "human",
+      "name_chars": 34,
+      "description_chars": 337
+    },
+    {
+      "id": "processes:activity-ge-activate-hcg5s8",
+      "file": "entities/v1-alpha/ge-activate/Governance-Instrument-Commencement/Bring-Policy-Instrument-into-Force/Verify-Commencement-Conditions/processes-activity-ge-activate-hcg5s8.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 390
+    },
+    {
+      "id": "processes:activity-ge-activate-mqvn32",
+      "file": "entities/v1-alpha/ge-activate/Governance-Instrument-Commencement/Bring-Policy-Instrument-into-Force/Effect-Instrument-Commencement/processes-activity-ge-activate-mqvn32.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 352
+    },
+    {
+      "id": "processes:activity-ge-activate-pm38pv",
+      "file": "entities/v1-alpha/ge-activate/Governance-Instrument-Commencement/Bring-Policy-Instrument-into-Force/Establish-Enforcement-Baseline/processes-activity-ge-activate-pm38pv.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 411
+    },
+    {
+      "id": "processes:activity-ge-build-2je2u9",
+      "file": "entities/v1-alpha/ge-build/Governance-Body-Establishment/Codify-Charters-and-Policies/Codify-Charters/processes-activity-ge-build-2je2u9.yaml",
+      "agent_type": "human",
+      "name_chars": 15,
+      "description_chars": 366
+    },
+    {
+      "id": "processes:activity-ge-build-3nk745",
+      "file": "entities/v1-alpha/ge-build/Governance-Body-Establishment/Establish-Risk-and-Control-Apparatus/Establish-Risk-Registers/processes-activity-ge-build-3nk745.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 342
+    },
+    {
+      "id": "processes:activity-ge-build-459rn2",
+      "file": "entities/v1-alpha/ge-build/Governance-Body-Establishment/Establish-Risk-and-Control-Apparatus/Deploy-Monitoring-Tooling/processes-activity-ge-build-459rn2.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 363
+    },
+    {
+      "id": "processes:activity-ge-build-5cjpnx",
+      "file": "entities/v1-alpha/ge-build/Governance-Body-Establishment/Establish-Governance-Bodies/Establish-Operating-Cycles/processes-activity-ge-build-5cjpnx.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 366
+    },
+    {
+      "id": "processes:activity-ge-build-cdd75w",
+      "file": "entities/v1-alpha/ge-build/Governance-Body-Establishment/Codify-Charters-and-Policies/Codify-Standard-Artifacts/processes-activity-ge-build-cdd75w.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 377
+    },
+    {
+      "id": "processes:activity-ge-build-epqkej",
+      "file": "entities/v1-alpha/ge-build/Governance-Body-Establishment/Establish-Governance-Bodies/Verify-Body-Readiness/processes-activity-ge-build-epqkej.yaml",
+      "agent_type": "human",
+      "name_chars": 21,
+      "description_chars": 365
+    },
+    {
+      "id": "processes:activity-ge-build-f5yeny",
+      "file": "entities/v1-alpha/ge-build/Governance-Body-Establishment/Codify-Charters-and-Policies/Codify-Policies/processes-activity-ge-build-f5yeny.yaml",
+      "agent_type": "human",
+      "name_chars": 15,
+      "description_chars": 348
+    },
+    {
+      "id": "processes:activity-ge-build-fzx549",
+      "file": "entities/v1-alpha/ge-build/Governance-Body-Establishment/Codify-Charters-and-Policies/Publish-Codified-Instruments/processes-activity-ge-build-fzx549.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 350
+    },
+    {
+      "id": "processes:activity-ge-build-p29x52",
+      "file": "entities/v1-alpha/ge-build/Governance-Body-Establishment/Establish-Governance-Bodies/Equip-Bodies-with-Instruments/processes-activity-ge-build-p29x52.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 389
+    },
+    {
+      "id": "processes:activity-ge-build-ptnpmg",
+      "file": "entities/v1-alpha/ge-build/Governance-Body-Establishment/Establish-Risk-and-Control-Apparatus/Verify-Apparatus-Readiness/processes-activity-ge-build-ptnpmg.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 344
+    },
+    {
+      "id": "processes:activity-ge-build-tj3qj3",
+      "file": "entities/v1-alpha/ge-build/Governance-Body-Establishment/Establish-Risk-and-Control-Apparatus/Establish-Reporting-Lines/processes-activity-ge-build-tj3qj3.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 369
+    },
+    {
+      "id": "processes:activity-ge-build-tp3aba",
+      "file": "entities/v1-alpha/ge-build/Governance-Body-Establishment/Establish-Governance-Bodies/Constitute-Bodies/processes-activity-ge-build-tp3aba.yaml",
+      "agent_type": "human",
+      "name_chars": 17,
+      "description_chars": 378
+    },
+    {
+      "id": "processes:activity-ge-conceive-5j83mc",
+      "file": "entities/v1-alpha/ge-conceive/Governance-Conception/Initiate-Policy-and-Charter/Commit-Policy-Initiation/processes-activity-ge-conceive-5j83mc.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 367
+    },
+    {
+      "id": "processes:activity-ge-conceive-8nxptt",
+      "file": "entities/v1-alpha/ge-conceive/Governance-Conception/Frame-Risk-Framework-Direction/Frame-Governance-Posture-for-Risk/processes-activity-ge-conceive-8nxptt.yaml",
+      "agent_type": "human",
+      "name_chars": 33,
+      "description_chars": 379
+    },
+    {
+      "id": "processes:activity-ge-conceive-b82hdf",
+      "file": "entities/v1-alpha/ge-conceive/Governance-Conception/Frame-Risk-Framework-Direction/Articulate-Risk-Appetite/processes-activity-ge-conceive-b82hdf.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 353
+    },
+    {
+      "id": "processes:activity-ge-conceive-g7nxw2",
+      "file": "entities/v1-alpha/ge-conceive/Governance-Conception/Initiate-Policy-and-Charter/Draft-Initial-Policy-Document/processes-activity-ge-conceive-g7nxw2.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 366
+    },
+    {
+      "id": "processes:activity-ge-conceive-hsg4tn",
+      "file": "entities/v1-alpha/ge-conceive/Governance-Conception/Initiate-Policy-and-Charter/Propose-Authority-and-Decision-Rights/processes-activity-ge-conceive-hsg4tn.yaml",
+      "agent_type": "human",
+      "name_chars": 37,
+      "description_chars": 366
+    },
+    {
+      "id": "processes:activity-ge-conceive-j72hwy",
+      "file": "entities/v1-alpha/ge-conceive/Governance-Conception/Frame-Risk-Framework-Direction/Commit-Risk-Framework-Direction/processes-activity-ge-conceive-j72hwy.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 326
+    },
+    {
+      "id": "processes:activity-ge-conceive-tkk9rz",
+      "file": "entities/v1-alpha/ge-conceive/Governance-Conception/Initiate-Policy-and-Charter/Bound-Policy-Scope/processes-activity-ge-conceive-tkk9rz.yaml",
+      "agent_type": "human",
+      "name_chars": 18,
+      "description_chars": 445
+    },
+    {
+      "id": "processes:activity-ge-conceive-yucnbe",
+      "file": "entities/v1-alpha/ge-conceive/Governance-Conception/Frame-Risk-Framework-Direction/Define-Tolerance-Bands/processes-activity-ge-conceive-yucnbe.yaml",
+      "agent_type": "human",
+      "name_chars": 22,
+      "description_chars": 324
+    },
+    {
+      "id": "processes:activity-ge-design-6xmeft",
+      "file": "entities/v1-alpha/ge-design/Governance-System-Design/Design-Governance-System/Commit-Governance-System-Design/processes-activity-ge-design-6xmeft.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 361
+    },
+    {
+      "id": "processes:activity-ge-design-ewsksx",
+      "file": "entities/v1-alpha/ge-design/Governance-System-Design/Design-Policies-and-Controls/Define-Control-Objectives/processes-activity-ge-design-ewsksx.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 362
+    },
+    {
+      "id": "processes:activity-ge-design-feyvse",
+      "file": "entities/v1-alpha/ge-design/Governance-System-Design/Design-Risk-Framework/Commit-Risk-Framework-Design/processes-activity-ge-design-feyvse.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 342
+    },
+    {
+      "id": "processes:activity-ge-design-fwc3b2",
+      "file": "entities/v1-alpha/ge-design/Governance-System-Design/Design-Risk-Framework/Design-Assessment-Scales/processes-activity-ge-design-fwc3b2.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 372
+    },
+    {
+      "id": "processes:activity-ge-design-jrb5hw",
+      "file": "entities/v1-alpha/ge-design/Governance-System-Design/Design-Policies-and-Controls/Design-Compliance-Regime/processes-activity-ge-design-jrb5hw.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 401
+    },
+    {
+      "id": "processes:activity-ge-design-ka3nqz",
+      "file": "entities/v1-alpha/ge-design/Governance-System-Design/Design-Policies-and-Controls/Design-Policy-Artifacts/processes-activity-ge-design-ka3nqz.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 383
+    },
+    {
+      "id": "processes:activity-ge-design-q5tqn5",
+      "file": "entities/v1-alpha/ge-design/Governance-System-Design/Design-Risk-Framework/Design-Risk-Taxonomy/processes-activity-ge-design-q5tqn5.yaml",
+      "agent_type": "human",
+      "name_chars": 20,
+      "description_chars": 343
+    },
+    {
+      "id": "processes:activity-ge-design-r9wz2r",
+      "file": "entities/v1-alpha/ge-design/Governance-System-Design/Design-Governance-System/Articulate-Governance-Bodies/processes-activity-ge-design-r9wz2r.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 358
+    },
+    {
+      "id": "processes:activity-ge-design-ry86fn",
+      "file": "entities/v1-alpha/ge-design/Governance-System-Design/Design-Governance-System/Design-Authority-Delegations/processes-activity-ge-design-ry86fn.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 360
+    },
+    {
+      "id": "processes:activity-ge-design-sy338w",
+      "file": "entities/v1-alpha/ge-design/Governance-System-Design/Design-Governance-System/Specify-Decision-Rights/processes-activity-ge-design-sy338w.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 338
+    },
+    {
+      "id": "processes:activity-ge-design-t3muvd",
+      "file": "entities/v1-alpha/ge-design/Governance-System-Design/Design-Policies-and-Controls/Commit-Policy-and-Control-Design/processes-activity-ge-design-t3muvd.yaml",
+      "agent_type": "human",
+      "name_chars": 32,
+      "description_chars": 366
+    },
+    {
+      "id": "processes:activity-ge-design-u5gpsy",
+      "file": "entities/v1-alpha/ge-design/Governance-System-Design/Design-Risk-Framework/Design-Governance-Integration/processes-activity-ge-design-u5gpsy.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 429
+    },
+    {
+      "id": "processes:activity-ge-improve-5hkh35",
+      "file": "entities/v1-alpha/ge-improve/Governance-Review-and-Learning/Improve-Policy-and-Control-Framework/Measure-Policy-Gaps/processes-activity-ge-improve-5hkh35.yaml",
+      "agent_type": "human",
+      "name_chars": 19,
+      "description_chars": 343
+    },
+    {
+      "id": "processes:activity-ge-improve-68awnk",
+      "file": "entities/v1-alpha/ge-improve/Governance-Review-and-Learning/Improve-Policy-and-Control-Framework/Commit-Framework-Improvements/processes-activity-ge-improve-68awnk.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 364
+    },
+    {
+      "id": "processes:activity-ge-improve-9te97d",
+      "file": "entities/v1-alpha/ge-improve/Governance-Review-and-Learning/Score-Audit-Findings/Measure-Findings-Against-Standards/processes-activity-ge-improve-9te97d.yaml",
+      "agent_type": "human",
+      "name_chars": 34,
+      "description_chars": 353
+    },
+    {
+      "id": "processes:activity-ge-improve-a7mqxm",
+      "file": "entities/v1-alpha/ge-improve/Governance-Review-and-Learning/Improve-Policy-and-Control-Framework/Update-Policy-Standards/processes-activity-ge-improve-a7mqxm.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 330
+    },
+    {
+      "id": "processes:activity-ge-improve-adkxr6",
+      "file": "entities/v1-alpha/ge-improve/Governance-Review-and-Learning/Review-Governance-Effectiveness/Deliver-Effectiveness-Reviews/processes-activity-ge-improve-adkxr6.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 347
+    },
+    {
+      "id": "processes:activity-ge-improve-er48vd",
+      "file": "entities/v1-alpha/ge-improve/Governance-Review-and-Learning/Score-Audit-Findings/Assess-Finding-Recurrence/processes-activity-ge-improve-er48vd.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 335
+    },
+    {
+      "id": "processes:activity-ge-improve-f4qwmk",
+      "file": "entities/v1-alpha/ge-improve/Governance-Review-and-Learning/Review-Governance-Effectiveness/Capture-Lessons-Learned/processes-activity-ge-improve-f4qwmk.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 340
+    },
+    {
+      "id": "processes:activity-ge-improve-kngey3",
+      "file": "entities/v1-alpha/ge-improve/Governance-Review-and-Learning/Score-Audit-Findings/Report-Quality-Trends/processes-activity-ge-improve-kngey3.yaml",
+      "agent_type": "human",
+      "name_chars": 21,
+      "description_chars": 365
+    },
+    {
+      "id": "processes:activity-ge-improve-n9jd2z",
+      "file": "entities/v1-alpha/ge-improve/Governance-Review-and-Learning/Improve-Policy-and-Control-Framework/Strengthen-Compliance-Posture/processes-activity-ge-improve-n9jd2z.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 374
+    },
+    {
+      "id": "processes:activity-ge-improve-nfn3x5",
+      "file": "entities/v1-alpha/ge-improve/Governance-Review-and-Learning/Review-Governance-Effectiveness/Formulate-Effectiveness-Recommendations/processes-activity-ge-improve-nfn3x5.yaml",
+      "agent_type": "human",
+      "name_chars": 39,
+      "description_chars": 353
+    },
+    {
+      "id": "processes:activity-ge-improve-nz4rpa",
+      "file": "entities/v1-alpha/ge-improve/Governance-Review-and-Learning/Score-Audit-Findings/Score-Finding-Severity/processes-activity-ge-improve-nz4rpa.yaml",
+      "agent_type": "human",
+      "name_chars": 22,
+      "description_chars": 362
+    },
+    {
+      "id": "processes:activity-ge-improve-rbvv52",
+      "file": "entities/v1-alpha/ge-improve/Governance-Review-and-Learning/Review-Governance-Effectiveness/Measure-Governance-Performance/processes-activity-ge-improve-rbvv52.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 375
+    },
+    {
+      "id": "processes:activity-ge-operate-batrgt",
+      "file": "entities/v1-alpha/ge-operate/Governance-Oversight/Audit-Policy-Compliance/Execute-Compliance-Audits/processes-activity-ge-operate-batrgt.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 346
+    },
+    {
+      "id": "processes:activity-ge-operate-bjfkws",
+      "file": "entities/v1-alpha/ge-operate/Governance-Oversight/Operate-Governance-Oversight/Run-Board-and-Committee-Cycles/processes-activity-ge-operate-bjfkws.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 338
+    },
+    {
+      "id": "processes:activity-ge-operate-cpcway",
+      "file": "entities/v1-alpha/ge-operate/Governance-Oversight/Audit-Policy-Compliance/Plan-Compliance-Audits/processes-activity-ge-operate-cpcway.yaml",
+      "agent_type": "human",
+      "name_chars": 22,
+      "description_chars": 348
+    },
+    {
+      "id": "processes:activity-ge-operate-d5tfkp",
+      "file": "entities/v1-alpha/ge-operate/Governance-Oversight/Operate-Enterprise-Risk-Oversight/Deliver-Mitigations-to-Bodies/processes-activity-ge-operate-d5tfkp.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 370
+    },
+    {
+      "id": "processes:activity-ge-operate-fch6f5",
+      "file": "entities/v1-alpha/ge-operate/Governance-Oversight/Operate-Governance-Oversight/Record-Governance-Decisions/processes-activity-ge-operate-fch6f5.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 307
+    },
+    {
+      "id": "processes:activity-ge-operate-gjnh3s",
+      "file": "entities/v1-alpha/ge-operate/Governance-Oversight/Conduct-Assurance-Review/Measure-Evidence-Against-Standards/processes-activity-ge-operate-gjnh3s.yaml",
+      "agent_type": "human",
+      "name_chars": 34,
+      "description_chars": 327
+    },
+    {
+      "id": "processes:activity-ge-operate-pvyf2x",
+      "file": "entities/v1-alpha/ge-operate/Governance-Oversight/Operate-Governance-Oversight/Maintain-Governance-Machinery/processes-activity-ge-operate-pvyf2x.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 366
+    },
+    {
+      "id": "processes:activity-ge-operate-q4qn2x",
+      "file": "entities/v1-alpha/ge-operate/Governance-Oversight/Conduct-Assurance-Review/Report-Assurance-Findings/processes-activity-ge-operate-q4qn2x.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 308
+    },
+    {
+      "id": "processes:activity-ge-operate-qtwuqf",
+      "file": "entities/v1-alpha/ge-operate/Governance-Oversight/Operate-Enterprise-Risk-Oversight/Surface-Risk-Exposures/processes-activity-ge-operate-qtwuqf.yaml",
+      "agent_type": "human",
+      "name_chars": 22,
+      "description_chars": 344
+    },
+    {
+      "id": "processes:activity-ge-operate-r4ka8z",
+      "file": "entities/v1-alpha/ge-operate/Governance-Oversight/Audit-Policy-Compliance/Report-Audit-Findings/processes-activity-ge-operate-r4ka8z.yaml",
+      "agent_type": "human",
+      "name_chars": 21,
+      "description_chars": 377
+    },
+    {
+      "id": "processes:activity-ge-operate-rwpbpf",
+      "file": "entities/v1-alpha/ge-operate/Governance-Oversight/Operate-Enterprise-Risk-Oversight/Maintain-Risk-Registers/processes-activity-ge-operate-rwpbpf.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 326
+    },
+    {
+      "id": "processes:activity-ge-operate-wr4w6h",
+      "file": "entities/v1-alpha/ge-operate/Governance-Oversight/Operate-Enterprise-Risk-Oversight/Execute-Risk-Reviews/processes-activity-ge-operate-wr4w6h.yaml",
+      "agent_type": "human",
+      "name_chars": 20,
+      "description_chars": 379
+    },
+    {
+      "id": "processes:activity-ge-operate-x79d9p",
+      "file": "entities/v1-alpha/ge-operate/Governance-Oversight/Conduct-Assurance-Review/Assemble-Assurance-Evidence/processes-activity-ge-operate-x79d9p.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 325
+    },
+    {
+      "id": "processes:activity-ge-operate-yczj9n",
+      "file": "entities/v1-alpha/ge-operate/Governance-Oversight/Conduct-Assurance-Review/Maintain-Audit-Quality/processes-activity-ge-operate-yczj9n.yaml",
+      "agent_type": "human",
+      "name_chars": 22,
+      "description_chars": 340
+    },
+    {
+      "id": "processes:activity-ge-operate-yt8562",
+      "file": "entities/v1-alpha/ge-operate/Governance-Oversight/Operate-Governance-Oversight/Facilitate-Governance-Decisions/processes-activity-ge-operate-yt8562.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 362
+    },
+    {
+      "id": "processes:activity-ge-operate-zhhypw",
+      "file": "entities/v1-alpha/ge-operate/Governance-Oversight/Audit-Policy-Compliance/Track-Follow-Up-Actions/processes-activity-ge-operate-zhhypw.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 313
+    },
+    {
+      "id": "processes:activity-ge-retire-bp4237",
+      "file": "entities/v1-alpha/ge-retire/Regulated-Governance-Unwind/Effect-Regulator-Mandated-Governance-Unwind/Reduce-Governance-To-Wind-Down-Quorum/processes-activity-ge-retire-bp4237.yaml",
+      "agent_type": "human",
+      "name_chars": 37,
+      "description_chars": 419
+    },
+    {
+      "id": "processes:activity-ge-retire-k5amzf",
+      "file": "entities/v1-alpha/ge-retire/Regulated-Governance-Unwind/Effect-Regulator-Mandated-Governance-Unwind/Assess-Regulator-Or-Court-Order-Scope/processes-activity-ge-retire-k5amzf.yaml",
+      "agent_type": "human",
+      "name_chars": 37,
+      "description_chars": 446
+    },
+    {
+      "id": "processes:activity-ge-retire-rck7n9",
+      "file": "entities/v1-alpha/ge-retire/Regulated-Governance-Unwind/Effect-Regulator-Mandated-Governance-Unwind/Submit-Statutory-Dissolution-Filings/processes-activity-ge-retire-rck7n9.yaml",
+      "agent_type": "human",
+      "name_chars": 36,
+      "description_chars": 549
+    },
+    {
+      "id": "processes:activity-ge-retire-rzhc83",
+      "file": "entities/v1-alpha/ge-retire/Regulated-Governance-Unwind/Effect-Regulator-Mandated-Governance-Unwind/Assign-Retained-Records-Custodianship/processes-activity-ge-retire-rzhc83.yaml",
+      "agent_type": "human",
+      "name_chars": 37,
+      "description_chars": 486
+    },
+    {
+      "id": "processes:activity-pr-activate-ncn924",
+      "file": "entities/v1-alpha/pr-activate/Regulated-Onboarding/Onboard-Regulated-Party-Relationship/Resolve-Beneficial-Ownership/processes-activity-pr-activate-ncn924.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 395
+    },
+    {
+      "id": "processes:activity-pr-activate-p53h54",
+      "file": "entities/v1-alpha/pr-activate/Regulated-Onboarding/Onboard-Regulated-Party-Relationship/Classify-Party-Risk/processes-activity-pr-activate-p53h54.yaml",
+      "agent_type": "human",
+      "name_chars": 19,
+      "description_chars": 460
+    },
+    {
+      "id": "processes:activity-pr-activate-q9pr4m",
+      "file": "entities/v1-alpha/pr-activate/Regulated-Onboarding/Onboard-Regulated-Party-Relationship/Record-Onboarding-Decision/processes-activity-pr-activate-q9pr4m.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 455
+    },
+    {
+      "id": "processes:activity-pr-activate-y46zs2",
+      "file": "entities/v1-alpha/pr-activate/Regulated-Onboarding/Onboard-Regulated-Party-Relationship/Verify-Party-Identity/processes-activity-pr-activate-y46zs2.yaml",
+      "agent_type": "human",
+      "name_chars": 21,
+      "description_chars": 400
+    },
+    {
+      "id": "processes:activity-pr-build-d3pku9",
+      "file": "entities/v1-alpha/pr-build/Customer-Channel-and-Acquisition-Build/Build-Customer-Acquisition-Channels/Integrate-Channels-with-Experience/processes-activity-pr-build-d3pku9.yaml",
+      "agent_type": "human",
+      "name_chars": 34,
+      "description_chars": 386
+    },
+    {
+      "id": "processes:activity-pr-build-da7r6t",
+      "file": "entities/v1-alpha/pr-build/Customer-Channel-and-Acquisition-Build/Build-Demand-Generation-Programs/Build-Demand-Program-Assets/processes-activity-pr-build-da7r6t.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 352
+    },
+    {
+      "id": "processes:activity-pr-build-ncrg72",
+      "file": "entities/v1-alpha/pr-build/Customer-Channel-and-Acquisition-Build/Build-Customer-Acquisition-Channels/Provision-Channel-Infrastructure/processes-activity-pr-build-ncrg72.yaml",
+      "agent_type": "human",
+      "name_chars": 32,
+      "description_chars": 356
+    },
+    {
+      "id": "processes:activity-pr-build-p42qh7",
+      "file": "entities/v1-alpha/pr-build/Customer-Channel-and-Acquisition-Build/Build-Customer-Acquisition-Channels/Verify-Acquisition-Readiness/processes-activity-pr-build-p42qh7.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 330
+    },
+    {
+      "id": "processes:activity-pr-build-pd7paf",
+      "file": "entities/v1-alpha/pr-build/Customer-Channel-and-Acquisition-Build/Build-Demand-Generation-Programs/Integrate-Demand-Engine-with-Channels/processes-activity-pr-build-pd7paf.yaml",
+      "agent_type": "human",
+      "name_chars": 37,
+      "description_chars": 341
+    },
+    {
+      "id": "processes:activity-pr-build-ppw8cp",
+      "file": "entities/v1-alpha/pr-build/Customer-Channel-and-Acquisition-Build/Build-Demand-Generation-Programs/Verify-Initial-Demand-Production/processes-activity-pr-build-ppw8cp.yaml",
+      "agent_type": "human",
+      "name_chars": 32,
+      "description_chars": 339
+    },
+    {
+      "id": "processes:activity-pr-build-qutweg",
+      "file": "entities/v1-alpha/pr-build/Customer-Channel-and-Acquisition-Build/Build-Customer-Acquisition-Channels/Build-Acquisition-Engines/processes-activity-pr-build-qutweg.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 353
+    },
+    {
+      "id": "processes:activity-pr-build-ywaa6n",
+      "file": "entities/v1-alpha/pr-build/Customer-Channel-and-Acquisition-Build/Build-Demand-Generation-Programs/Calibrate-Demand-Programs/processes-activity-pr-build-ywaa6n.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 365
+    },
+    {
+      "id": "processes:activity-pr-conceive-3tgws4",
+      "file": "entities/v1-alpha/pr-conceive/Customer-Strategy-Conception/Develop-Customer-Strategy/Frame-Segment-Thesis/processes-activity-pr-conceive-3tgws4.yaml",
+      "agent_type": "human",
+      "name_chars": 20,
+      "description_chars": 369
+    },
+    {
+      "id": "processes:activity-pr-conceive-6habrm",
+      "file": "entities/v1-alpha/pr-conceive/Customer-Strategy-Conception/Develop-Customer-Strategy/Articulate-Value-Exchange/processes-activity-pr-conceive-6habrm.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 365
+    },
+    {
+      "id": "processes:activity-pr-conceive-8frfby",
+      "file": "entities/v1-alpha/pr-conceive/Customer-Strategy-Conception/Develop-Customer-Strategy/Formulate-Demand-Thesis/processes-activity-pr-conceive-8frfby.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 382
+    },
+    {
+      "id": "processes:activity-pr-conceive-h7aqez",
+      "file": "entities/v1-alpha/pr-conceive/Customer-Strategy-Conception/Develop-Market-Intelligence/Scan-Market-and-Segments/processes-activity-pr-conceive-h7aqez.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 377
+    },
+    {
+      "id": "processes:activity-pr-conceive-hx3r6g",
+      "file": "entities/v1-alpha/pr-conceive/Customer-Strategy-Conception/Develop-Market-Intelligence/Commit-Market-and-Demand-Thesis/processes-activity-pr-conceive-hx3r6g.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 359
+    },
+    {
+      "id": "processes:activity-pr-conceive-kbwtdj",
+      "file": "entities/v1-alpha/pr-conceive/Customer-Strategy-Conception/Develop-Customer-Strategy/Commit-Customer-Strategy/processes-activity-pr-conceive-kbwtdj.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 367
+    },
+    {
+      "id": "processes:activity-pr-conceive-mnhm2f",
+      "file": "entities/v1-alpha/pr-conceive/Customer-Strategy-Conception/Develop-Market-Intelligence/Formulate-Demand-Hypotheses/processes-activity-pr-conceive-mnhm2f.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 309
+    },
+    {
+      "id": "processes:activity-pr-conceive-wcedtt",
+      "file": "entities/v1-alpha/pr-conceive/Customer-Strategy-Conception/Develop-Market-Intelligence/Design-Hypothesis-Tests/processes-activity-pr-conceive-wcedtt.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 342
+    },
+    {
+      "id": "processes:activity-pr-design-4as452",
+      "file": "entities/v1-alpha/pr-design/Customer-Experience-Design/Design-Customer-Experience/Specify-Interaction-Patterns/processes-activity-pr-design-4as452.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 364
+    },
+    {
+      "id": "processes:activity-pr-design-5vsfm6",
+      "file": "entities/v1-alpha/pr-design/Customer-Experience-Design/Design-Customer-Experience/Design-Touchpoints/processes-activity-pr-design-5vsfm6.yaml",
+      "agent_type": "human",
+      "name_chars": 18,
+      "description_chars": 351
+    },
+    {
+      "id": "processes:activity-pr-design-9kscys",
+      "file": "entities/v1-alpha/pr-design/Customer-Experience-Design/Design-Customer-Experience/Set-Experience-Quality-Criteria/processes-activity-pr-design-9kscys.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 341
+    },
+    {
+      "id": "processes:activity-pr-design-bp2kwt",
+      "file": "entities/v1-alpha/pr-design/Customer-Experience-Design/Design-Customer-Journey/Map-Journey-Stages/processes-activity-pr-design-bp2kwt.yaml",
+      "agent_type": "human",
+      "name_chars": 18,
+      "description_chars": 326
+    },
+    {
+      "id": "processes:activity-pr-design-dakgz2",
+      "file": "entities/v1-alpha/pr-design/Customer-Experience-Design/Design-Demand-Model/Define-Demand-Shaping-Levers/processes-activity-pr-design-dakgz2.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 384
+    },
+    {
+      "id": "processes:activity-pr-design-ftrzgz",
+      "file": "entities/v1-alpha/pr-design/Customer-Experience-Design/Design-Demand-Model/Commit-Demand-Model/processes-activity-pr-design-ftrzgz.yaml",
+      "agent_type": "human",
+      "name_chars": 19,
+      "description_chars": 336
+    },
+    {
+      "id": "processes:activity-pr-design-j9s8mg",
+      "file": "entities/v1-alpha/pr-design/Customer-Experience-Design/Design-Customer-Experience/Define-Experience-Principles/processes-activity-pr-design-j9s8mg.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 380
+    },
+    {
+      "id": "processes:activity-pr-design-k9ehsu",
+      "file": "entities/v1-alpha/pr-design/Customer-Experience-Design/Design-Customer-Journey/Design-Journey-Handoffs/processes-activity-pr-design-k9ehsu.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 388
+    },
+    {
+      "id": "processes:activity-pr-design-kbkw3v",
+      "file": "entities/v1-alpha/pr-design/Customer-Experience-Design/Design-Customer-Journey/Identify-Moments-of-Truth/processes-activity-pr-design-kbkw3v.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 361
+    },
+    {
+      "id": "processes:activity-pr-design-nw69bm",
+      "file": "entities/v1-alpha/pr-design/Customer-Experience-Design/Design-Demand-Model/Model-Capacity-Assumptions/processes-activity-pr-design-nw69bm.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 356
+    },
+    {
+      "id": "processes:activity-pr-design-vbvz6f",
+      "file": "entities/v1-alpha/pr-design/Customer-Experience-Design/Design-Customer-Journey/Commit-Journey-Design/processes-activity-pr-design-vbvz6f.yaml",
+      "agent_type": "human",
+      "name_chars": 21,
+      "description_chars": 331
+    },
+    {
+      "id": "processes:activity-pr-design-zst46t",
+      "file": "entities/v1-alpha/pr-design/Customer-Experience-Design/Design-Demand-Model/Articulate-Supply-Paths/processes-activity-pr-design-zst46t.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 367
+    },
+    {
+      "id": "processes:activity-pr-improve-6atff5",
+      "file": "entities/v1-alpha/pr-improve/Customer-Insight-and-Retention/Operate-Customer-Retention-Programs/Assess-Churn-Risk/processes-activity-pr-improve-6atff5.yaml",
+      "agent_type": "human",
+      "name_chars": 17,
+      "description_chars": 378
+    },
+    {
+      "id": "processes:activity-pr-improve-jg6bv4",
+      "file": "entities/v1-alpha/pr-improve/Customer-Insight-and-Retention/Operate-Customer-Retention-Programs/Execute-Retention-Actions/processes-activity-pr-improve-jg6bv4.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 357
+    },
+    {
+      "id": "processes:activity-pr-improve-k6eb79",
+      "file": "entities/v1-alpha/pr-improve/Customer-Insight-and-Retention/Operate-Customer-Retention-Programs/Maintain-Win-Back-Pipeline/processes-activity-pr-improve-k6eb79.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 382
+    },
+    {
+      "id": "processes:activity-pr-improve-p988q3",
+      "file": "entities/v1-alpha/pr-improve/Customer-Insight-and-Retention/Operate-Customer-Retention-Programs/Collect-Customer-Feedback/processes-activity-pr-improve-p988q3.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 434
+    },
+    {
+      "id": "processes:activity-pr-operate-2d88cr",
+      "file": "entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/Manage-Customer-Relationship/Conduct-Relationship-Reviews/processes-activity-pr-operate-2d88cr.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 372
+    },
+    {
+      "id": "processes:activity-pr-operate-amg225",
+      "file": "entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/Manage-Customer-Relationship/Coordinate-Renewals/processes-activity-pr-operate-amg225.yaml",
+      "agent_type": "human",
+      "name_chars": 19,
+      "description_chars": 344
+    },
+    {
+      "id": "processes:activity-pr-operate-v9vny2",
+      "file": "entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/Manage-Customer-Relationship/Allocate-Relationship-Attention/processes-activity-pr-operate-v9vny2.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 416
+    },
+    {
+      "id": "processes:activity-pr-operate-w753mv",
+      "file": "entities/v1-alpha/pr-operate/Customer-Lifecycle-Management/Manage-Customer-Relationship/Handle-Relationship-Escalations/processes-activity-pr-operate-w753mv.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 349
+    },
+    {
+      "id": "processes:activity-pr-retire-5k7ngj",
+      "file": "entities/v1-alpha/pr-retire/Relationship-Termination/Close-Enterprise-Relationship/Resolve-Records-and-Rights/processes-activity-pr-retire-5k7ngj.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 414
+    },
+    {
+      "id": "processes:activity-pr-retire-k646h9",
+      "file": "entities/v1-alpha/pr-retire/Relationship-Termination/Close-Enterprise-Relationship/Plan-Relationship-Close-Out/processes-activity-pr-retire-k646h9.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 337
+    },
+    {
+      "id": "processes:activity-pr-retire-smrebq",
+      "file": "entities/v1-alpha/pr-retire/Relationship-Termination/Close-Enterprise-Relationship/Execute-Evidenced-Closure/processes-activity-pr-retire-smrebq.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 362
+    },
+    {
+      "id": "processes:activity-pr-retire-zb4htq",
+      "file": "entities/v1-alpha/pr-retire/Relationship-Termination/Close-Enterprise-Relationship/Settle-Outstanding-Obligations/processes-activity-pr-retire-zb4htq.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 338
+    },
+    {
+      "id": "processes:activity-pv-activate-922fde",
+      "file": "entities/v1-alpha/pv-activate/Service-Transition-Activation/Transition-Proposition-to-Service/Prepare-Transition-Readiness/processes-activity-pv-activate-922fde.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 408
+    },
+    {
+      "id": "processes:activity-pv-activate-f29a5n",
+      "file": "entities/v1-alpha/pv-activate/Service-Transition-Activation/Transition-Proposition-to-Service/Stabilize-Early-Operations/processes-activity-pv-activate-f29a5n.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 364
+    },
+    {
+      "id": "processes:activity-pv-activate-fd922j",
+      "file": "entities/v1-alpha/pv-activate/Service-Transition-Activation/Transition-Proposition-to-Service/Execute-Service-Cutover/processes-activity-pv-activate-fd922j.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 366
+    },
+    {
+      "id": "processes:activity-pv-activate-hxb9wf",
+      "file": "entities/v1-alpha/pv-activate/Service-Transition-Activation/Transition-Proposition-to-Service/Confirm-Operational-Acceptance/processes-activity-pv-activate-hxb9wf.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 406
+    },
+    {
+      "id": "processes:activity-pv-build-6z6rdn",
+      "file": "entities/v1-alpha/pv-build/Product-Development/Develop-Product-Variants/Stage-Variants-for-Readiness/processes-activity-pv-build-6z6rdn.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 329
+    },
+    {
+      "id": "processes:activity-pv-build-ak4gpq",
+      "file": "entities/v1-alpha/pv-build/Product-Development/Prepare-Market-Readiness/Certify-Market-Readiness/processes-activity-pv-build-ak4gpq.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 351
+    },
+    {
+      "id": "processes:activity-pv-build-bhepnm",
+      "file": "entities/v1-alpha/pv-build/Product-Development/Prepare-Market-Readiness/Configure-Launch-Channels/processes-activity-pv-build-bhepnm.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 340
+    },
+    {
+      "id": "processes:activity-pv-build-d5873p",
+      "file": "entities/v1-alpha/pv-build/Product-Development/Prepare-Market-Readiness/Assemble-Go-to-Market-Assets/processes-activity-pv-build-d5873p.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 392
+    },
+    {
+      "id": "processes:activity-pv-build-d86xd9",
+      "file": "entities/v1-alpha/pv-build/Product-Development/Develop-Product-Variants/Document-Variant-Baseline/processes-activity-pv-build-d86xd9.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 393
+    },
+    {
+      "id": "processes:activity-pv-build-ef63d7",
+      "file": "entities/v1-alpha/pv-build/Product-Development/Build-Innovation-Prototype/Document-Prototype-Build/processes-activity-pv-build-ef63d7.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 396
+    },
+    {
+      "id": "processes:activity-pv-build-gznqhc",
+      "file": "entities/v1-alpha/pv-build/Product-Development/Build-Innovation-Prototype/Verify-Prototype-Readiness/processes-activity-pv-build-gznqhc.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 375
+    },
+    {
+      "id": "processes:activity-pv-build-k47xjt",
+      "file": "entities/v1-alpha/pv-build/Product-Development/Develop-Product-Variants/Verify-Variant-Conformance/processes-activity-pv-build-k47xjt.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 372
+    },
+    {
+      "id": "processes:activity-pv-build-n32s5c",
+      "file": "entities/v1-alpha/pv-build/Product-Development/Prepare-Market-Readiness/Set-Launch-Pricing/processes-activity-pv-build-n32s5c.yaml",
+      "agent_type": "human",
+      "name_chars": 18,
+      "description_chars": 380
+    },
+    {
+      "id": "processes:activity-pv-build-nhhc9u",
+      "file": "entities/v1-alpha/pv-build/Product-Development/Build-Service-Capability/Verify-Service-Capability-Readiness/processes-activity-pv-build-nhhc9u.yaml",
+      "agent_type": "human",
+      "name_chars": 35,
+      "description_chars": 355
+    },
+    {
+      "id": "processes:activity-pv-build-p2ny2w",
+      "file": "entities/v1-alpha/pv-build/Product-Development/Build-Service-Capability/Integrate-Service-with-Delivery-Model/processes-activity-pv-build-p2ny2w.yaml",
+      "agent_type": "human",
+      "name_chars": 37,
+      "description_chars": 412
+    },
+    {
+      "id": "processes:activity-pv-build-qf7sxu",
+      "file": "entities/v1-alpha/pv-build/Product-Development/Build-Service-Capability/Stand-Up-Service-Delivery-Mechanism/processes-activity-pv-build-qf7sxu.yaml",
+      "agent_type": "human",
+      "name_chars": 35,
+      "description_chars": 352
+    },
+    {
+      "id": "processes:activity-pv-build-r6b4x7",
+      "file": "entities/v1-alpha/pv-build/Product-Development/Build-Innovation-Prototype/Construct-Prototype/processes-activity-pv-build-r6b4x7.yaml",
+      "agent_type": "human",
+      "name_chars": 19,
+      "description_chars": 311
+    },
+    {
+      "id": "processes:activity-pv-build-sk4whv",
+      "file": "entities/v1-alpha/pv-build/Product-Development/Develop-Product-Variants/Construct-Product-Variants/processes-activity-pv-build-sk4whv.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 358
+    },
+    {
+      "id": "processes:activity-pv-build-zta8ej",
+      "file": "entities/v1-alpha/pv-build/Product-Development/Build-Service-Capability/Prepare-Service-Personnel/processes-activity-pv-build-zta8ej.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 350
+    },
+    {
+      "id": "processes:activity-pv-build-zvvppc",
+      "file": "entities/v1-alpha/pv-build/Product-Development/Build-Innovation-Prototype/Instrument-Prototype/processes-activity-pv-build-zvvppc.yaml",
+      "agent_type": "human",
+      "name_chars": 20,
+      "description_chars": 378
+    },
+    {
+      "id": "processes:activity-pv-conceive-3ufbnz",
+      "file": "entities/v1-alpha/pv-conceive/Proposition-Conception/Frame-Innovation-Thesis/Assess-Innovation-Option-Space/processes-activity-pv-conceive-3ufbnz.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 335
+    },
+    {
+      "id": "processes:activity-pv-conceive-7fg7ft",
+      "file": "entities/v1-alpha/pv-conceive/Proposition-Conception/Frame-Portfolio-Direction/Order-Portfolio-Priorities/processes-activity-pv-conceive-7fg7ft.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 352
+    },
+    {
+      "id": "processes:activity-pv-conceive-8sq29j",
+      "file": "entities/v1-alpha/pv-conceive/Proposition-Conception/Frame-Value-Proposition-Thesis/Commit-Proposition-Thesis/processes-activity-pv-conceive-8sq29j.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 354
+    },
+    {
+      "id": "processes:activity-pv-conceive-f7anqj",
+      "file": "entities/v1-alpha/pv-conceive/Proposition-Conception/Frame-Innovation-Thesis/Select-Innovation-Focus-Areas/processes-activity-pv-conceive-f7anqj.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 349
+    },
+    {
+      "id": "processes:activity-pv-conceive-k87pzt",
+      "file": "entities/v1-alpha/pv-conceive/Proposition-Conception/Frame-Innovation-Thesis/Commit-Innovation-Thesis/processes-activity-pv-conceive-k87pzt.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 374
+    },
+    {
+      "id": "processes:activity-pv-conceive-m8x6e4",
+      "file": "entities/v1-alpha/pv-conceive/Proposition-Conception/Frame-Innovation-Thesis/Bound-Experimentation-Boundaries/processes-activity-pv-conceive-m8x6e4.yaml",
+      "agent_type": "human",
+      "name_chars": 32,
+      "description_chars": 381
+    },
+    {
+      "id": "processes:activity-pv-conceive-nwd9pr",
+      "file": "entities/v1-alpha/pv-conceive/Proposition-Conception/Frame-Portfolio-Direction/Commit-Portfolio-Direction/processes-activity-pv-conceive-nwd9pr.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 390
+    },
+    {
+      "id": "processes:activity-pv-conceive-v37tza",
+      "file": "entities/v1-alpha/pv-conceive/Proposition-Conception/Frame-Portfolio-Direction/Assess-Portfolio-Balance/processes-activity-pv-conceive-v37tza.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 400
+    },
+    {
+      "id": "processes:activity-pv-conceive-vez3t5",
+      "file": "entities/v1-alpha/pv-conceive/Proposition-Conception/Frame-Portfolio-Direction/Frame-Investment-Envelopes/processes-activity-pv-conceive-vez3t5.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 354
+    },
+    {
+      "id": "processes:activity-pv-conceive-wtenjt",
+      "file": "entities/v1-alpha/pv-conceive/Proposition-Conception/Frame-Value-Proposition-Thesis/Bound-Proposition-Scope/processes-activity-pv-conceive-wtenjt.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 358
+    },
+    {
+      "id": "processes:activity-pv-conceive-xdfjat",
+      "file": "entities/v1-alpha/pv-conceive/Proposition-Conception/Frame-Value-Proposition-Thesis/Identify-Target-Parties/processes-activity-pv-conceive-xdfjat.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 337
+    },
+    {
+      "id": "processes:activity-pv-conceive-zgnzny",
+      "file": "entities/v1-alpha/pv-conceive/Proposition-Conception/Frame-Value-Proposition-Thesis/Articulate-Value-Claim/processes-activity-pv-conceive-zgnzny.yaml",
+      "agent_type": "human",
+      "name_chars": 22,
+      "description_chars": 379
+    },
+    {
+      "id": "processes:activity-pv-design-45x29p",
+      "file": "entities/v1-alpha/pv-design/Proposition-Design/Design-Product-and-Service-Propositions/Commit-Proposition-Design/processes-activity-pv-design-45x29p.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 374
+    },
+    {
+      "id": "processes:activity-pv-design-79sehr",
+      "file": "entities/v1-alpha/pv-design/Proposition-Design/Design-Innovation-Experiment/Bound-Experiment-Timebox/processes-activity-pv-design-79sehr.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 371
+    },
+    {
+      "id": "processes:activity-pv-design-fms697",
+      "file": "entities/v1-alpha/pv-design/Proposition-Design/Design-Innovation-Experiment/Formulate-Experiment-Hypothesis/processes-activity-pv-design-fms697.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 348
+    },
+    {
+      "id": "processes:activity-pv-design-hfczjv",
+      "file": "entities/v1-alpha/pv-design/Proposition-Design/Design-Innovation-Experiment/Define-Success-Criteria/processes-activity-pv-design-hfczjv.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 339
+    },
+    {
+      "id": "processes:activity-pv-design-mhyxnp",
+      "file": "entities/v1-alpha/pv-design/Proposition-Design/Design-Innovation-Experiment/Commit-Experiment-Design/processes-activity-pv-design-mhyxnp.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 344
+    },
+    {
+      "id": "processes:activity-pv-design-raq3ha",
+      "file": "entities/v1-alpha/pv-design/Proposition-Design/Design-Packaging-and-Configuration/Define-Configuration-Rules/processes-activity-pv-design-raq3ha.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 400
+    },
+    {
+      "id": "processes:activity-pv-design-shqa4v",
+      "file": "entities/v1-alpha/pv-design/Proposition-Design/Design-Packaging-and-Configuration/Commit-Packaging-Design/processes-activity-pv-design-shqa4v.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 369
+    },
+    {
+      "id": "processes:activity-pv-design-su2rbe",
+      "file": "entities/v1-alpha/pv-design/Proposition-Design/Design-Packaging-and-Configuration/Design-Packaging-Formats/processes-activity-pv-design-su2rbe.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 370
+    },
+    {
+      "id": "processes:activity-pv-design-vrmwad",
+      "file": "entities/v1-alpha/pv-design/Proposition-Design/Design-Product-and-Service-Propositions/Specify-Proposition-Components/processes-activity-pv-design-vrmwad.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 346
+    },
+    {
+      "id": "processes:activity-pv-design-xgzh85",
+      "file": "entities/v1-alpha/pv-design/Proposition-Design/Design-Product-and-Service-Propositions/Design-Configuration-Options/processes-activity-pv-design-xgzh85.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 374
+    },
+    {
+      "id": "processes:activity-pv-design-yyrnq4",
+      "file": "entities/v1-alpha/pv-design/Proposition-Design/Design-Packaging-and-Configuration/Design-Segment-Configurations/processes-activity-pv-design-yyrnq4.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 315
+    },
+    {
+      "id": "processes:activity-pv-design-z35bxd",
+      "file": "entities/v1-alpha/pv-design/Proposition-Design/Design-Product-and-Service-Propositions/Design-Proposition-Architecture/processes-activity-pv-design-z35bxd.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 419
+    },
+    {
+      "id": "processes:activity-pv-improve-439c76",
+      "file": "entities/v1-alpha/pv-improve/Product-Evolution/Rationalize-Portfolio/Assess-Investment-Justification/processes-activity-pv-improve-439c76.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 321
+    },
+    {
+      "id": "processes:activity-pv-improve-6hzpux",
+      "file": "entities/v1-alpha/pv-improve/Product-Evolution/Conduct-Proposition-Performance-Review/Commit-Proposition-Review-Outcomes/processes-activity-pv-improve-6hzpux.yaml",
+      "agent_type": "human",
+      "name_chars": 34,
+      "description_chars": 344
+    },
+    {
+      "id": "processes:activity-pv-improve-6rycwm",
+      "file": "entities/v1-alpha/pv-improve/Product-Evolution/Conduct-Proposition-Performance-Review/Assemble-Proposition-Performance-Evidence/processes-activity-pv-improve-6rycwm.yaml",
+      "agent_type": "human",
+      "name_chars": 41,
+      "description_chars": 394
+    },
+    {
+      "id": "processes:activity-pv-improve-b3x5kk",
+      "file": "entities/v1-alpha/pv-improve/Product-Evolution/Evolve-Products-and-Services/Commit-Enhancements/processes-activity-pv-improve-b3x5kk.yaml",
+      "agent_type": "human",
+      "name_chars": 19,
+      "description_chars": 327
+    },
+    {
+      "id": "processes:activity-pv-improve-eyn4d4",
+      "file": "entities/v1-alpha/pv-improve/Product-Evolution/Conduct-Proposition-Performance-Review/Route-Findings-to-Evolution-Tracks/processes-activity-pv-improve-eyn4d4.yaml",
+      "agent_type": "human",
+      "name_chars": 34,
+      "description_chars": 381
+    },
+    {
+      "id": "processes:activity-pv-improve-k3hy7t",
+      "file": "entities/v1-alpha/pv-improve/Product-Evolution/Rationalize-Portfolio/Measure-Rationalization-Outcomes/processes-activity-pv-improve-k3hy7t.yaml",
+      "agent_type": "human",
+      "name_chars": 32,
+      "description_chars": 370
+    },
+    {
+      "id": "processes:activity-pv-improve-mdkm5n",
+      "file": "entities/v1-alpha/pv-improve/Product-Evolution/Evolve-Products-and-Services/Analyze-Evolution-Drivers/processes-activity-pv-improve-mdkm5n.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 361
+    },
+    {
+      "id": "processes:activity-pv-improve-qvw5ea",
+      "file": "entities/v1-alpha/pv-improve/Product-Evolution/Rationalize-Portfolio/Commit-Rationalization-Decisions/processes-activity-pv-improve-qvw5ea.yaml",
+      "agent_type": "human",
+      "name_chars": 32,
+      "description_chars": 352
+    },
+    {
+      "id": "processes:activity-pv-improve-s34pap",
+      "file": "entities/v1-alpha/pv-improve/Product-Evolution/Evolve-Products-and-Services/Measure-Evolution-Outcomes/processes-activity-pv-improve-s34pap.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 347
+    },
+    {
+      "id": "processes:activity-pv-improve-sac4pb",
+      "file": "entities/v1-alpha/pv-improve/Product-Evolution/Conduct-Proposition-Performance-Review/Form-Proposition-Review-Findings/processes-activity-pv-improve-sac4pb.yaml",
+      "agent_type": "human",
+      "name_chars": 32,
+      "description_chars": 320
+    },
+    {
+      "id": "processes:activity-pv-improve-t7vbjt",
+      "file": "entities/v1-alpha/pv-improve/Product-Evolution/Evolve-Products-and-Services/Design-Bounded-Enhancements/processes-activity-pv-improve-t7vbjt.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 334
+    },
+    {
+      "id": "processes:activity-pv-improve-vaxgzn",
+      "file": "entities/v1-alpha/pv-improve/Product-Evolution/Rationalize-Portfolio/Form-Retire-or-Pivot-Options/processes-activity-pv-improve-vaxgzn.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 335
+    },
+    {
+      "id": "processes:activity-pv-operate-38waaf",
+      "file": "entities/v1-alpha/pv-operate/Portfolio-Management-Operation/Manage-Portfolio-Performance/Maintain-Portfolio-Record/processes-activity-pv-operate-38waaf.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 326
+    },
+    {
+      "id": "processes:activity-pv-operate-5gtsjg",
+      "file": "entities/v1-alpha/pv-operate/Portfolio-Management-Operation/Operate-Product-Catalogue/Monitor-Catalogue-Integrity/processes-activity-pv-operate-5gtsjg.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 283
+    },
+    {
+      "id": "processes:activity-pv-operate-5yty8e",
+      "file": "entities/v1-alpha/pv-operate/Portfolio-Management-Operation/Operate-Product-Catalogue/Maintain-Catalogue-Entries/processes-activity-pv-operate-5yty8e.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 291
+    },
+    {
+      "id": "processes:activity-pv-operate-89v5ty",
+      "file": "entities/v1-alpha/pv-operate/Portfolio-Management-Operation/Manage-Proposition-Lifecycle/Maintain-Lifecycle-Record/processes-activity-pv-operate-89v5ty.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 276
+    },
+    {
+      "id": "processes:activity-pv-operate-bzud7v",
+      "file": "entities/v1-alpha/pv-operate/Portfolio-Management-Operation/Manage-Portfolio-Performance/Rebalance-Portfolio-Allocations/processes-activity-pv-operate-bzud7v.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 360
+    },
+    {
+      "id": "processes:activity-pv-operate-jpupsh",
+      "file": "entities/v1-alpha/pv-operate/Portfolio-Management-Operation/Manage-Proposition-Lifecycle/Manage-Stage-Transitions/processes-activity-pv-operate-jpupsh.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 327
+    },
+    {
+      "id": "processes:activity-pv-operate-kwm3wt",
+      "file": "entities/v1-alpha/pv-operate/Portfolio-Management-Operation/Operate-Product-Catalogue/Administer-Catalogue-Pricing/processes-activity-pv-operate-kwm3wt.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 329
+    },
+    {
+      "id": "processes:activity-pv-operate-nzj8xu",
+      "file": "entities/v1-alpha/pv-operate/Portfolio-Management-Operation/Manage-Portfolio-Performance/Report-Portfolio-Performance/processes-activity-pv-operate-nzj8xu.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 327
+    },
+    {
+      "id": "processes:activity-pv-operate-pv7jqd",
+      "file": "entities/v1-alpha/pv-operate/Portfolio-Management-Operation/Operate-Product-Catalogue/Publish-Catalogue-to-Channels/processes-activity-pv-operate-pv7jqd.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 330
+    },
+    {
+      "id": "processes:activity-pv-operate-unuyxe",
+      "file": "entities/v1-alpha/pv-operate/Portfolio-Management-Operation/Manage-Portfolio-Performance/Monitor-Proposition-Performance/processes-activity-pv-operate-unuyxe.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 307
+    },
+    {
+      "id": "processes:activity-pv-operate-xmvfj7",
+      "file": "entities/v1-alpha/pv-operate/Portfolio-Management-Operation/Manage-Proposition-Lifecycle/Execute-Gate-Decisions/processes-activity-pv-operate-xmvfj7.yaml",
+      "agent_type": "human",
+      "name_chars": 22,
+      "description_chars": 311
+    },
+    {
+      "id": "processes:activity-pv-operate-zk8rc3",
+      "file": "entities/v1-alpha/pv-operate/Portfolio-Management-Operation/Manage-Proposition-Lifecycle/Track-Lifecycle-Stages/processes-activity-pv-operate-zk8rc3.yaml",
+      "agent_type": "human",
+      "name_chars": 22,
+      "description_chars": 306
+    },
+    {
+      "id": "processes:activity-pv-retire-6b3zth",
+      "file": "entities/v1-alpha/pv-retire/Service-Transition-Retirement/Transition-Proposition-Out-of-Service/Resolve-Residual-Obligations/processes-activity-pv-retire-6b3zth.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 344
+    },
+    {
+      "id": "processes:activity-pv-retire-6hqeys",
+      "file": "entities/v1-alpha/pv-retire/Service-Transition-Retirement/Transition-Proposition-Out-of-Service/Execute-Service-Withdrawal/processes-activity-pv-retire-6hqeys.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 318
+    },
+    {
+      "id": "processes:activity-pv-retire-mqkper",
+      "file": "entities/v1-alpha/pv-retire/Service-Transition-Retirement/Transition-Proposition-Out-of-Service/Confirm-Retirement-Closure/processes-activity-pv-retire-mqkper.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 342
+    },
+    {
+      "id": "processes:activity-pv-retire-vbn7s6",
+      "file": "entities/v1-alpha/pv-retire/Service-Transition-Retirement/Transition-Proposition-Out-of-Service/Plan-Service-Withdrawal/processes-activity-pv-retire-vbn7s6.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 325
+    },
+    {
+      "id": "processes:activity-sd-activate-4gefj3",
+      "file": "entities/v1-alpha/sd-activate/Regulated-Strategic-Plan-Activation/Institutionalize-Regulated-Strategic-Plan/File-Supervisor-Acknowledged-Strategic-Plan-Submission/processes-activity-sd-activate-4gefj3.yaml",
+      "agent_type": "human",
+      "name_chars": 53,
+      "description_chars": 417
+    },
+    {
+      "id": "processes:activity-sd-activate-92pg6h",
+      "file": "entities/v1-alpha/sd-activate/Regulated-Strategic-Plan-Activation/Institutionalize-Regulated-Strategic-Plan/Launch-Operational-Monitoring-Framework/processes-activity-sd-activate-92pg6h.yaml",
+      "agent_type": "human",
+      "name_chars": 39,
+      "description_chars": 432
+    },
+    {
+      "id": "processes:activity-sd-activate-jz6u3q",
+      "file": "entities/v1-alpha/sd-activate/Regulated-Strategic-Plan-Activation/Institutionalize-Regulated-Strategic-Plan/Activate-Communications-Plan-Under-Regulator-Continuing-Supervision/processes-activity-sd-activate-jz6u3q.yaml",
+      "agent_type": "human",
+      "name_chars": 68,
+      "description_chars": 517
+    },
+    {
+      "id": "processes:activity-sd-activate-w83pp4",
+      "file": "entities/v1-alpha/sd-activate/Regulated-Strategic-Plan-Activation/Institutionalize-Regulated-Strategic-Plan/Complete-Supervisor-Review-and-Obtain-Acknowledgement-on-Record/processes-activity-sd-activate-w83pp4.yaml",
+      "agent_type": "human",
+      "name_chars": 63,
+      "description_chars": 396
+    },
+    {
+      "id": "processes:activity-sd-build-25j2m7",
+      "file": "entities/v1-alpha/sd-build/Strategic-Plan-Build/Set-Resource-Allocation-Priorities/Allocate-Resources-to-Initiatives/processes-activity-sd-build-25j2m7.yaml",
+      "agent_type": "human",
+      "name_chars": 33,
+      "description_chars": 358
+    },
+    {
+      "id": "processes:activity-sd-build-3u6qkt",
+      "file": "entities/v1-alpha/sd-build/Strategic-Plan-Build/Build-Strategic-Roadmap/Sequence-Strategic-Initiatives/processes-activity-sd-build-3u6qkt.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 328
+    },
+    {
+      "id": "processes:activity-sd-build-547hm5",
+      "file": "entities/v1-alpha/sd-build/Strategic-Plan-Build/Translate-Strategic-Choices-into-Initiatives/Draft-Strategic-Initiatives/processes-activity-sd-build-547hm5.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 384
+    },
+    {
+      "id": "processes:activity-sd-build-7z99jy",
+      "file": "entities/v1-alpha/sd-build/Strategic-Plan-Build/Build-Strategic-Plan/Assemble-Strategic-Plan/processes-activity-sd-build-7z99jy.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 366
+    },
+    {
+      "id": "processes:activity-sd-build-c2ky47",
+      "file": "entities/v1-alpha/sd-build/Strategic-Plan-Build/Build-Strategic-Plan/Bound-Plan-Version/processes-activity-sd-build-c2ky47.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 400
+    },
+    {
+      "id": "processes:activity-sd-build-htapw4",
+      "file": "entities/v1-alpha/sd-build/Strategic-Plan-Build/Build-Strategic-Roadmap/Assemble-Strategic-Roadmap/processes-activity-sd-build-htapw4.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 379
+    },
+    {
+      "id": "processes:activity-sd-build-jfcx27",
+      "file": "entities/v1-alpha/sd-build/Strategic-Plan-Build/Build-Strategic-Roadmap/Commit-Strategic-Roadmap/processes-activity-sd-build-jfcx27.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 396
+    },
+    {
+      "id": "processes:activity-sd-build-mttqvf",
+      "file": "entities/v1-alpha/sd-build/Strategic-Plan-Build/Build-Strategic-Plan/Review-Strategic-Plan/processes-activity-sd-build-mttqvf.yaml",
+      "agent_type": "human",
+      "name_chars": 21,
+      "description_chars": 351
+    },
+    {
+      "id": "processes:activity-sd-build-sn9sky",
+      "file": "entities/v1-alpha/sd-build/Strategic-Plan-Build/Set-Resource-Allocation-Priorities/Bound-Allocation-Envelopes/processes-activity-sd-build-sn9sky.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 379
+    },
+    {
+      "id": "processes:activity-sd-build-tjdzmd",
+      "file": "entities/v1-alpha/sd-build/Strategic-Plan-Build/Translate-Strategic-Choices-into-Initiatives/Review-Strategic-Fit/processes-activity-sd-build-tjdzmd.yaml",
+      "agent_type": "human",
+      "name_chars": 20,
+      "description_chars": 351
+    },
+    {
+      "id": "processes:activity-sd-build-tp9jtk",
+      "file": "entities/v1-alpha/sd-build/Strategic-Plan-Build/Translate-Strategic-Choices-into-Initiatives/Bound-Initiative-Scope/processes-activity-sd-build-tp9jtk.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 312
+    },
+    {
+      "id": "processes:activity-sd-build-u85tt9",
+      "file": "entities/v1-alpha/sd-build/Strategic-Plan-Build/Translate-Strategic-Choices-into-Initiatives/Commit-Strategic-Initiatives/processes-activity-sd-build-u85tt9.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 415
+    },
+    {
+      "id": "processes:activity-sd-build-vgavkq",
+      "file": "entities/v1-alpha/sd-build/Strategic-Plan-Build/Set-Resource-Allocation-Priorities/Commit-Allocation-Priorities/processes-activity-sd-build-vgavkq.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 380
+    },
+    {
+      "id": "processes:activity-sd-build-y8cfhp",
+      "file": "entities/v1-alpha/sd-build/Strategic-Plan-Build/Build-Strategic-Plan/Commit-Strategic-Plan/processes-activity-sd-build-y8cfhp.yaml",
+      "agent_type": "human",
+      "name_chars": 21,
+      "description_chars": 421
+    },
+    {
+      "id": "processes:activity-sd-build-ys83dr",
+      "file": "entities/v1-alpha/sd-build/Strategic-Plan-Build/Set-Resource-Allocation-Priorities/Prioritize-Allocation-Decisions/processes-activity-sd-build-ys83dr.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 357
+    },
+    {
+      "id": "processes:activity-sd-build-yvecqq",
+      "file": "entities/v1-alpha/sd-build/Strategic-Plan-Build/Build-Strategic-Roadmap/Anchor-Roadmap-Milestones/processes-activity-sd-build-yvecqq.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 343
+    },
+    {
+      "id": "processes:activity-sd-conceive-28242h",
+      "file": "entities/v1-alpha/sd-conceive/Strategy-and-Direction-Conception/Define-Enterprise-Purpose-and-Ambition/Sense-Purpose-Imperatives/processes-activity-sd-conceive-28242h.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 352
+    },
+    {
+      "id": "processes:activity-sd-conceive-6dbxtu",
+      "file": "entities/v1-alpha/sd-conceive/Strategy-and-Direction-Conception/Frame-Strategic-Horizons/Align-Horizons-with-Intent/processes-activity-sd-conceive-6dbxtu.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 335
+    },
+    {
+      "id": "processes:activity-sd-conceive-7tr4ax",
+      "file": "entities/v1-alpha/sd-conceive/Strategy-and-Direction-Conception/Develop-Corporate-Strategy/Commit-Corporate-Strategy/processes-activity-sd-conceive-7tr4ax.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 409
+    },
+    {
+      "id": "processes:activity-sd-conceive-9672ug",
+      "file": "entities/v1-alpha/sd-conceive/Strategy-and-Direction-Conception/Define-Enterprise-Purpose-and-Ambition/Frame-Ambition-Envelope/processes-activity-sd-conceive-9672ug.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 403
+    },
+    {
+      "id": "processes:activity-sd-conceive-e6epkt",
+      "file": "entities/v1-alpha/sd-conceive/Strategy-and-Direction-Conception/Conceive-Strategic-Intent/Scope-Intent-Trade-offs/processes-activity-sd-conceive-e6epkt.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 403
+    },
+    {
+      "id": "processes:activity-sd-conceive-e7z2am",
+      "file": "entities/v1-alpha/sd-conceive/Strategy-and-Direction-Conception/Develop-Corporate-Strategy/Articulate-Strategic-Trajectory/processes-activity-sd-conceive-e7z2am.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 378
+    },
+    {
+      "id": "processes:activity-sd-conceive-gdjvff",
+      "file": "entities/v1-alpha/sd-conceive/Strategy-and-Direction-Conception/Conceive-Strategic-Intent/Sense-Intent-Imperatives/processes-activity-sd-conceive-gdjvff.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 373
+    },
+    {
+      "id": "processes:activity-sd-conceive-h9ued3",
+      "file": "entities/v1-alpha/sd-conceive/Strategy-and-Direction-Conception/Frame-Strategic-Horizons/Anchor-Horizon-Milestones/processes-activity-sd-conceive-h9ued3.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 358
+    },
+    {
+      "id": "processes:activity-sd-conceive-jmupn8",
+      "file": "entities/v1-alpha/sd-conceive/Strategy-and-Direction-Conception/Define-Enterprise-Purpose-and-Ambition/Commit-Purpose-and-Ambition/processes-activity-sd-conceive-jmupn8.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 382
+    },
+    {
+      "id": "processes:activity-sd-conceive-na8erc",
+      "file": "entities/v1-alpha/sd-conceive/Strategy-and-Direction-Conception/Define-Enterprise-Purpose-and-Ambition/Frame-Purpose-Statement/processes-activity-sd-conceive-na8erc.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 355
+    },
+    {
+      "id": "processes:activity-sd-conceive-nb772h",
+      "file": "entities/v1-alpha/sd-conceive/Strategy-and-Direction-Conception/Conceive-Strategic-Intent/Commit-Strategic-Intent/processes-activity-sd-conceive-nb772h.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 400
+    },
+    {
+      "id": "processes:activity-sd-conceive-qayekb",
+      "file": "entities/v1-alpha/sd-conceive/Strategy-and-Direction-Conception/Frame-Strategic-Horizons/Bound-Horizon-Timeframes/processes-activity-sd-conceive-qayekb.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 367
+    },
+    {
+      "id": "processes:activity-sd-conceive-qu8vjv",
+      "file": "entities/v1-alpha/sd-conceive/Strategy-and-Direction-Conception/Conceive-Strategic-Intent/Frame-Strategic-Intent-Narrative/processes-activity-sd-conceive-qu8vjv.yaml",
+      "agent_type": "human",
+      "name_chars": 32,
+      "description_chars": 373
+    },
+    {
+      "id": "processes:activity-sd-conceive-uvhsrz",
+      "file": "entities/v1-alpha/sd-conceive/Strategy-and-Direction-Conception/Develop-Corporate-Strategy/Choose-Strategic-Trajectory/processes-activity-sd-conceive-uvhsrz.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 389
+    },
+    {
+      "id": "processes:activity-sd-conceive-w28h46",
+      "file": "entities/v1-alpha/sd-conceive/Strategy-and-Direction-Conception/Develop-Corporate-Strategy/Synthesize-Strategic-Direction/processes-activity-sd-conceive-w28h46.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 403
+    },
+    {
+      "id": "processes:activity-sd-conceive-zz7qrg",
+      "file": "entities/v1-alpha/sd-conceive/Strategy-and-Direction-Conception/Frame-Strategic-Horizons/Commit-Strategic-Horizons/processes-activity-sd-conceive-zz7qrg.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 371
+    },
+    {
+      "id": "processes:activity-sd-design-47gv45",
+      "file": "entities/v1-alpha/sd-design/Strategic-Choices-Design/Design-Strategic-Options/Commit-Strategic-Option-Designs/processes-activity-sd-design-47gv45.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 391
+    },
+    {
+      "id": "processes:activity-sd-design-ck5dud",
+      "file": "entities/v1-alpha/sd-design/Strategic-Choices-Design/Design-Objectives-and-Targets/Bound-Objectives-Scope/processes-activity-sd-design-ck5dud.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 379
+    },
+    {
+      "id": "processes:activity-sd-design-dgkmm5",
+      "file": "entities/v1-alpha/sd-design/Strategic-Choices-Design/Evaluate-Strategic-Alternatives/Execute-Strategic-Comparison/processes-activity-sd-design-dgkmm5.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 376
+    },
+    {
+      "id": "processes:activity-sd-design-ec5thr",
+      "file": "entities/v1-alpha/sd-design/Strategic-Choices-Design/Design-Objectives-and-Targets/Commit-Objectives-and-Targets/processes-activity-sd-design-ec5thr.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 374
+    },
+    {
+      "id": "processes:activity-sd-design-eseuhe",
+      "file": "entities/v1-alpha/sd-design/Strategic-Choices-Design/Design-Strategic-Options/Draft-Strategic-Options/processes-activity-sd-design-eseuhe.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 392
+    },
+    {
+      "id": "processes:activity-sd-design-eyax2d",
+      "file": "entities/v1-alpha/sd-design/Strategic-Choices-Design/Design-Strategic-Options/Bound-Option-Design-Space/processes-activity-sd-design-eyax2d.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 417
+    },
+    {
+      "id": "processes:activity-sd-design-h56x3t",
+      "file": "entities/v1-alpha/sd-design/Strategic-Choices-Design/Evaluate-Strategic-Alternatives/Bound-Evaluation-Scope/processes-activity-sd-design-h56x3t.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 398
+    },
+    {
+      "id": "processes:activity-sd-design-jgwe2n",
+      "file": "entities/v1-alpha/sd-design/Strategic-Choices-Design/Design-Strategic-Scenarios/Commit-Strategic-Scenarios/processes-activity-sd-design-jgwe2n.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 392
+    },
+    {
+      "id": "processes:activity-sd-design-nmbkfx",
+      "file": "entities/v1-alpha/sd-design/Strategic-Choices-Design/Evaluate-Strategic-Alternatives/Articulate-Strategic-Preference/processes-activity-sd-design-nmbkfx.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 392
+    },
+    {
+      "id": "processes:activity-sd-design-pw7auq",
+      "file": "entities/v1-alpha/sd-design/Strategic-Choices-Design/Design-Strategic-Scenarios/Bound-Scenario-Assumptions/processes-activity-sd-design-pw7auq.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 404
+    },
+    {
+      "id": "processes:activity-sd-design-r7hq2f",
+      "file": "entities/v1-alpha/sd-design/Strategic-Choices-Design/Evaluate-Strategic-Alternatives/Commit-Strategic-Preference/processes-activity-sd-design-r7hq2f.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 423
+    },
+    {
+      "id": "processes:activity-sd-design-uwqj5w",
+      "file": "entities/v1-alpha/sd-design/Strategic-Choices-Design/Design-Objectives-and-Targets/Draft-Objectives-and-Targets/processes-activity-sd-design-uwqj5w.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 368
+    },
+    {
+      "id": "processes:activity-sd-design-vhcbj5",
+      "file": "entities/v1-alpha/sd-design/Strategic-Choices-Design/Design-Strategic-Scenarios/Design-Scenario-Signposts/processes-activity-sd-design-vhcbj5.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 379
+    },
+    {
+      "id": "processes:activity-sd-design-xgzkpn",
+      "file": "entities/v1-alpha/sd-design/Strategic-Choices-Design/Design-Objectives-and-Targets/Assign-Target-Ownership/processes-activity-sd-design-xgzkpn.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 353
+    },
+    {
+      "id": "processes:activity-sd-design-xz6zgn",
+      "file": "entities/v1-alpha/sd-design/Strategic-Choices-Design/Design-Strategic-Scenarios/Draft-Strategic-Scenarios/processes-activity-sd-design-xz6zgn.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 413
+    },
+    {
+      "id": "processes:activity-sd-design-y5bn4m",
+      "file": "entities/v1-alpha/sd-design/Strategic-Choices-Design/Design-Strategic-Options/Frame-Option-Evaluation-Criteria/processes-activity-sd-design-y5bn4m.yaml",
+      "agent_type": "human",
+      "name_chars": 32,
+      "description_chars": 392
+    },
+    {
+      "id": "processes:activity-sd-improve-3pccaq",
+      "file": "entities/v1-alpha/sd-improve/Strategic-Adaptation/Review-Strategy-Effectiveness/Formulate-Effectiveness-Findings/processes-activity-sd-improve-3pccaq.yaml",
+      "agent_type": "human",
+      "name_chars": 32,
+      "description_chars": 394
+    },
+    {
+      "id": "processes:activity-sd-improve-6tdndg",
+      "file": "entities/v1-alpha/sd-improve/Strategic-Adaptation/Refresh-Objectives-and-Targets/Gather-Objective-Performance-Evidence/processes-activity-sd-improve-6tdndg.yaml",
+      "agent_type": "human",
+      "name_chars": 37,
+      "description_chars": 411
+    },
+    {
+      "id": "processes:activity-sd-improve-dhkxf6",
+      "file": "entities/v1-alpha/sd-improve/Strategic-Adaptation/Adapt-Strategic-Direction/Consolidate-Adaptation-Drivers/processes-activity-sd-improve-dhkxf6.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 409
+    },
+    {
+      "id": "processes:activity-sd-improve-dqccp5",
+      "file": "entities/v1-alpha/sd-improve/Strategic-Adaptation/Refresh-Objectives-and-Targets/Commit-Refreshed-Objectives/processes-activity-sd-improve-dqccp5.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 381
+    },
+    {
+      "id": "processes:activity-sd-improve-e2c2ue",
+      "file": "entities/v1-alpha/sd-improve/Strategic-Adaptation/Refresh-Objectives-and-Targets/Assess-Objective-Fit/processes-activity-sd-improve-e2c2ue.yaml",
+      "agent_type": "human",
+      "name_chars": 20,
+      "description_chars": 406
+    },
+    {
+      "id": "processes:activity-sd-improve-m6ww6z",
+      "file": "entities/v1-alpha/sd-improve/Strategic-Adaptation/Adapt-Strategic-Direction/Commit-Direction-Adjustment/processes-activity-sd-improve-m6ww6z.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 414
+    },
+    {
+      "id": "processes:activity-sd-improve-mfk5ab",
+      "file": "entities/v1-alpha/sd-improve/Strategic-Adaptation/Review-Strategy-Effectiveness/Evaluate-Strategy-Effectiveness/processes-activity-sd-improve-mfk5ab.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 361
+    },
+    {
+      "id": "processes:activity-sd-improve-mu6upn",
+      "file": "entities/v1-alpha/sd-improve/Strategic-Adaptation/Review-Strategy-Effectiveness/Commit-Effectiveness-Findings/processes-activity-sd-improve-mu6upn.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 386
+    },
+    {
+      "id": "processes:activity-sd-improve-pke2va",
+      "file": "entities/v1-alpha/sd-improve/Strategic-Adaptation/Review-Strategy-Effectiveness/Assemble-Effectiveness-Evidence/processes-activity-sd-improve-pke2va.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 419
+    },
+    {
+      "id": "processes:activity-sd-improve-qxsaqc",
+      "file": "entities/v1-alpha/sd-improve/Strategic-Adaptation/Adapt-Strategic-Direction/Formulate-Direction-Adjustments/processes-activity-sd-improve-qxsaqc.yaml",
+      "agent_type": "human",
+      "name_chars": 31,
+      "description_chars": 404
+    },
+    {
+      "id": "processes:activity-sd-improve-r5jbb6",
+      "file": "entities/v1-alpha/sd-improve/Strategic-Adaptation/Adapt-Strategic-Direction/Assess-Adjustment-Implications/processes-activity-sd-improve-r5jbb6.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 422
+    },
+    {
+      "id": "processes:activity-sd-improve-ygmzmg",
+      "file": "entities/v1-alpha/sd-improve/Strategic-Adaptation/Refresh-Objectives-and-Targets/Redraft-Objectives-and-Targets/processes-activity-sd-improve-ygmzmg.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 375
+    },
+    {
+      "id": "processes:activity-sd-operate-4je2y3",
+      "file": "entities/v1-alpha/sd-operate/Strategic-Steering-Operation/Operate-Strategic-Review-Cycle/Record-Review-Decisions/processes-activity-sd-operate-4je2y3.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 374
+    },
+    {
+      "id": "processes:activity-sd-operate-4yw98f",
+      "file": "entities/v1-alpha/sd-operate/Strategic-Steering-Operation/Operate-Strategic-Review-Cycle/Schedule-Review-Cadence/processes-activity-sd-operate-4yw98f.yaml",
+      "agent_type": "human",
+      "name_chars": 23,
+      "description_chars": 371
+    },
+    {
+      "id": "processes:activity-sd-operate-6en9zk",
+      "file": "entities/v1-alpha/sd-operate/Strategic-Steering-Operation/Steer-Initiative-Portfolio/Formulate-Rebalancing-Options/processes-activity-sd-operate-6en9zk.yaml",
+      "agent_type": "human",
+      "name_chars": 29,
+      "description_chars": 392
+    },
+    {
+      "id": "processes:activity-sd-operate-9evxdj",
+      "file": "entities/v1-alpha/sd-operate/Strategic-Steering-Operation/Operate-Strategic-Review-Cycle/Assemble-Review-Inputs/processes-activity-sd-operate-9evxdj.yaml",
+      "agent_type": "human",
+      "name_chars": 22,
+      "description_chars": 353
+    },
+    {
+      "id": "processes:activity-sd-operate-acwkkr",
+      "file": "entities/v1-alpha/sd-operate/Strategic-Steering-Operation/Sense-Environmental-Signals/Classify-Environmental-Signals/processes-activity-sd-operate-acwkkr.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 421
+    },
+    {
+      "id": "processes:activity-sd-operate-c4n3fr",
+      "file": "entities/v1-alpha/sd-operate/Strategic-Steering-Operation/Sense-Environmental-Signals/Filter-Environmental-Signals/processes-activity-sd-operate-c4n3fr.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 379
+    },
+    {
+      "id": "processes:activity-sd-operate-cjjgw3",
+      "file": "entities/v1-alpha/sd-operate/Strategic-Steering-Operation/Steer-Initiative-Portfolio/Assess-Initiative-Alignment/processes-activity-sd-operate-cjjgw3.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 404
+    },
+    {
+      "id": "processes:activity-sd-operate-ebntgy",
+      "file": "entities/v1-alpha/sd-operate/Strategic-Steering-Operation/Sense-Environmental-Signals/Route-Environmental-Signals/processes-activity-sd-operate-ebntgy.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 412
+    },
+    {
+      "id": "processes:activity-sd-operate-fjj2yt",
+      "file": "entities/v1-alpha/sd-operate/Strategic-Steering-Operation/Monitor-Strategic-Performance/Collect-Strategic-Performance-Measures/processes-activity-sd-operate-fjj2yt.yaml",
+      "agent_type": "human",
+      "name_chars": 38,
+      "description_chars": 425
+    },
+    {
+      "id": "processes:activity-sd-operate-k48yk5",
+      "file": "entities/v1-alpha/sd-operate/Strategic-Steering-Operation/Monitor-Strategic-Performance/Report-Strategic-Performance/processes-activity-sd-operate-k48yk5.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 368
+    },
+    {
+      "id": "processes:activity-sd-operate-m4s5cn",
+      "file": "entities/v1-alpha/sd-operate/Strategic-Steering-Operation/Operate-Strategic-Review-Cycle/Conduct-Strategic-Reviews/processes-activity-sd-operate-m4s5cn.yaml",
+      "agent_type": "human",
+      "name_chars": 25,
+      "description_chars": 384
+    },
+    {
+      "id": "processes:activity-sd-operate-sxnm8p",
+      "file": "entities/v1-alpha/sd-operate/Strategic-Steering-Operation/Steer-Initiative-Portfolio/Identify-Portfolio-Drift/processes-activity-sd-operate-sxnm8p.yaml",
+      "agent_type": "human",
+      "name_chars": 24,
+      "description_chars": 372
+    },
+    {
+      "id": "processes:activity-sd-operate-th587n",
+      "file": "entities/v1-alpha/sd-operate/Strategic-Steering-Operation/Steer-Initiative-Portfolio/Commit-Portfolio-Rebalancing/processes-activity-sd-operate-th587n.yaml",
+      "agent_type": "human",
+      "name_chars": 28,
+      "description_chars": 420
+    },
+    {
+      "id": "processes:activity-sd-operate-v8wq5y",
+      "file": "entities/v1-alpha/sd-operate/Strategic-Steering-Operation/Monitor-Strategic-Performance/Track-Performance-against-Plan/processes-activity-sd-operate-v8wq5y.yaml",
+      "agent_type": "human",
+      "name_chars": 30,
+      "description_chars": 386
+    },
+    {
+      "id": "processes:activity-sd-operate-xtgshk",
+      "file": "entities/v1-alpha/sd-operate/Strategic-Steering-Operation/Monitor-Strategic-Performance/Flag-Performance-Deviations/processes-activity-sd-operate-xtgshk.yaml",
+      "agent_type": "human",
+      "name_chars": 27,
+      "description_chars": 382
+    },
+    {
+      "id": "processes:activity-sd-operate-zsruv4",
+      "file": "entities/v1-alpha/sd-operate/Strategic-Steering-Operation/Sense-Environmental-Signals/Scan-Environmental-Sources/processes-activity-sd-operate-zsruv4.yaml",
+      "agent_type": "human",
+      "name_chars": 26,
+      "description_chars": 391
+    },
+    {
+      "id": "processes:activity-sd-retire-48khkt",
+      "file": "entities/v1-alpha/sd-retire/Regulated-Strategic-Plan-Sunset/Sunset-Regulated-Strategic-Plan/Execute-Retained-Records-Plan-for-Regulated-Entity/processes-activity-sd-retire-48khkt.yaml",
+      "agent_type": "human",
+      "name_chars": 50,
+      "description_chars": 502
+    },
+    {
+      "id": "processes:activity-sd-retire-6azc3g",
+      "file": "entities/v1-alpha/sd-retire/Regulated-Strategic-Plan-Sunset/Sunset-Regulated-Strategic-Plan/Identify-Superseded-Regulated-Strategic-Plan/processes-activity-sd-retire-6azc3g.yaml",
+      "agent_type": "human",
+      "name_chars": 44,
+      "description_chars": 458
+    },
+    {
+      "id": "processes:activity-sd-retire-6m38cq",
+      "file": "entities/v1-alpha/sd-retire/Regulated-Strategic-Plan-Sunset/Sunset-Regulated-Strategic-Plan/Update-Filings-Register-for-Regulated-Strategic-Plan/processes-activity-sd-retire-6m38cq.yaml",
+      "agent_type": "human",
+      "name_chars": 52,
+      "description_chars": 477
+    },
+    {
+      "id": "processes:activity-sd-retire-8yt6ar",
+      "file": "entities/v1-alpha/sd-retire/Regulated-Strategic-Plan-Sunset/Sunset-Regulated-Strategic-Plan/Notify-Affected-Business-Units-Under-Regulator-Continuing-Supervision/processes-activity-sd-retire-8yt6ar.yaml",
+      "agent_type": "human",
+      "name_chars": 48,
+      "description_chars": 468
+    },
+    {
+      "id": "processes:activity-sd-retire-a364uh",
+      "file": "entities/v1-alpha/sd-retire/Regulated-Strategic-Plan-Sunset/Sunset-Regulated-Strategic-Plan/Preserve-Regulator-Acknowledged-Sunset-Record/processes-activity-sd-retire-a364uh.yaml",
+      "agent_type": "human",
+      "name_chars": 45,
+      "description_chars": 525
+    },
+    {
+      "id": "processes:activity-sd-retire-r5tcp2",
+      "file": "entities/v1-alpha/sd-retire/Regulated-Strategic-Plan-Sunset/Sunset-Regulated-Strategic-Plan/Execute-Communications-Plan-for-Regulated-Strategic-Plan-Sunset/processes-activity-sd-retire-r5tcp2.yaml",
+      "agent_type": "human",
+      "name_chars": 34,
+      "description_chars": 509
+    },
+    {
+      "id": "processes:activity-sd-retire-z2y3pr",
+      "file": "entities/v1-alpha/sd-retire/Regulated-Strategic-Plan-Sunset/Sunset-Regulated-Strategic-Plan/Receive-Regulator-Sunset-Directive/processes-activity-sd-retire-z2y3pr.yaml",
+      "agent_type": "human",
+      "name_chars": 34,
+      "description_chars": 443
+    }
+  ]
+}

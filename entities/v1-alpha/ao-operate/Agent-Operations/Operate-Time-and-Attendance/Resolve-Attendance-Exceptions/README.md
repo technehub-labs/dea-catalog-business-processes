@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 This is a **Activity** (level L3), named **Resolve Attendance Exceptions**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Operate Time and Attendance** (`processes:process-ao-operate-dg9q4h`). Its canonical ID is `processes:activity-ao-operate-c7xad6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity works through the anomalies validation flags, such as missing records or unusual hours, and settles each one. The validated records arrive as the context, exceptions are investigated and resolved under people policy, with escalation where the rules require it, and the resolutions are confirmed for the record. Nothing questionable is left standing between attendance and pay.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so doubtful time entries are settled deliberately before they can distort what people are paid.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once validation has flagged its exceptions, and it closes when the resolved exceptions are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management custodian investigates a missing day's record for one agent, settles it under the applicable policy, escalates the unusual-hours case as the rules require, and confirms the resolutions.
 
 ## 5. Header and Identity Table (generated)
 
@@ -60,6 +60,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Resolve Attendance Exceptions |
+| `plain_language_description` | string | no | This activity works through the anomalies validation flags, such as missing records or unusual hours, and settles each … |
+| `business_purpose` | string | no | It exists so doubtful time entries are settled deliberately before they can distort what people are paid. |
+| `practical_context` | string | no | It runs once validation has flagged its exceptions, and it closes when the resolved exceptions are confirmed and their … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

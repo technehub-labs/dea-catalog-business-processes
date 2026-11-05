@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 
 This is a **Activity** (level L3), named **Onboard Agents**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Acquire Agents** (`processes:process-ao-build-w2qurd`). Its canonical ID is `processes:activity-ao-build-gceqs6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity takes the agents that have been acquired and brings them to readiness in the roles they were recruited or stood up for. Each arrival is logged in, the requirements of their role are checked, and the onboarding arrangements are put in place and confirmed. It finishes with the agents ready in their roles, their expected competencies addressed, and an audit record of the onboarding kept on file.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so acquired agents arrive in their roles with the competencies the roles expect, ready for integration into the organization.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs during agent acquisition once selection has produced the acquired agents, and it completes when confirmation is issued and the onboarding record is preserved for audit.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian walks a newly hired analyst and a newly deployed artificial agent through their role requirements, confirms both are onboarded with the expected competencies in place, and hands them over for integration into their teams.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Onboard Agents |
+| `plain_language_description` | string | no | This activity takes the agents that have been acquired and brings them to readiness in the roles they were recruited or … |
+| `business_purpose` | string | no | It exists so acquired agents arrive in their roles with the competencies the roles expect, ready for integration into … |
+| `practical_context` | string | no | It runs during agent acquisition once selection has produced the acquired agents, and it completes when confirmation is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

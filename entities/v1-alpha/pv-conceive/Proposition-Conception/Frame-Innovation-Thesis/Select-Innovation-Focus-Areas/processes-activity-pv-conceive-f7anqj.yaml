@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-conceive-kps544 through concluding task processes:task-pv-conceive-record-yfytjj, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Select Innovation Focus Areas'
+plain_language_description: 'This activity chooses where the enterprise will aim its innovation — the few grounds worth breaking on, beyond what it already sells. The innovation framing need arrives as the mandate, focus areas are selected and justified against it, and the selected areas are confirmed onward for the option assessment. Innovation gets its map coordinates here.'
+business_purpose: 'It exists so innovation effort concentrates on chosen grounds rather than scattering everywhere.'
+practical_context: 'It opens the innovation thesis framing when the enterprise needs a bounded thesis for where and how it will innovate, and it completes once the selected focus areas are confirmed for the option assessment.'
+worked_example:
+  agent_type: human
+  narrative: 'A proposition design authority lead selects the grounds where the enterprise will innovate beyond its current propositions, justifies each choice, and confirms the areas onward.'

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-design-rvfpjb through concluding task processes:task-eo-design-record-me779g, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Integrate Model Components'
+plain_language_description: 'This activity brings the four bounded strands — the delivery design, the platform architecture, the facility blueprint, and the routing design — into one coherent whole. The finished component designs arrive one by one, their joins are reconciled and clashes resolved, and the integrated model is confirmed onward for the rhythm work. Four good designs become one workable model.'
+business_purpose: 'It exists so the enterprise designs one operations model, not four designs that have never met each other.'
+practical_context: 'It follows the four component designs, when each bounded design is handed over complete, and it completes once the integrated model is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function designer reconciles the delivery, technology, facility, and routing designs into one model, resolves the clashes where they meet, and confirms the integrated whole for the rhythm specification.'

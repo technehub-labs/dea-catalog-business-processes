@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Apply Cash to Ledger**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Run Accounts Receivable** (`processes:process-fa-operate-sdppmp`). Its canonical ID is `processes:activity-fa-operate-rnszvv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity matches the money that has arrived to the invoices it settles, clearing them on the books. Customer receipts arrive against the open invoices, cash is applied and the invoices cleared, and the applied cash is confirmed for the record. Payment and obligation are formally reunited here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so received cash is correctly matched to the invoices it settles, on the books.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs as receipts arrive against open invoices, and it completes once the applied cash is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A receivables custodian applies each customer receipt to the invoices it settles, clears them on the books, and confirms the applied cash for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Apply Cash to Ledger |
+| `plain_language_description` | string | no | This activity matches the money that has arrived to the invoices it settles, clearing them on the books. Customer … |
+| `business_purpose` | string | no | It exists so received cash is correctly matched to the invoices it settles, on the books. |
+| `practical_context` | string | no | It runs as receipts arrive against open invoices, and it completes once the applied cash is confirmed and its record … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

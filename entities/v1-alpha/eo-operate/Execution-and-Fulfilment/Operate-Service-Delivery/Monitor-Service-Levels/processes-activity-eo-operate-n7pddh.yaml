@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-operate-2jnz85 through concluding task processes:task-eo-operate-record-prrput, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Monitor Service Levels'
+plain_language_description: 'This activity compares what the service is actually delivering with the levels it promised, and raises a flag when the two diverge. Service-level indicators arrive through each operating window, actuals are tracked against the agreed levels, and flagged deviations are confirmed onward for handling. Drift from the promise is caught while it is still drift.'
+business_purpose: 'It exists so the enterprise notices its service slipping the moment it slips, not when a customer complains.'
+practical_context: 'It runs continuously through each operating window against the agreed service levels, and each tracked deviation closes when it is flagged and confirmed for handling.'
+worked_example:
+  agent_type: human
+  narrative: 'A service custodian tracks the window''s actuals against the agreed levels, spots availability drifting below promise, and flags the deviation for the exception handlers.'

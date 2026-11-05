@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-build-nmmmt6 through concluding task processes:task-eo-build-record-97devu, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commission Technology Assets'
+plain_language_description: 'This activity takes the installed assets through commissioning so they are ready to carry real workloads. The in-place assets come in with the architecture''s acceptance criteria, commissioning tests are run and the results checked against those criteria, and the commissioned state is confirmed onward. Equipment stops being merely present and starts being usable.'
+business_purpose: 'It exists so the enterprise runs its workloads on assets proven ready, not on equipment that has merely been switched on.'
+practical_context: 'It follows installation, when the in-place assets are presented with their acceptance criteria, and it closes when the commissioned assets are confirmed and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian runs the commissioning tests on each installed asset, checks the results against the architecture''s acceptance criteria, and confirms the commissioned set for registration.'

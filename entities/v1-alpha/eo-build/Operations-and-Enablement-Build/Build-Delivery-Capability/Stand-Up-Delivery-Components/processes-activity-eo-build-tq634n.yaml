@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-build-j9z3q4 through concluding task processes:task-eo-build-record-b4hzje, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Stand Up Delivery Components'
+plain_language_description: 'This activity drives the parallel stand-up of the component builds — production, logistics, technology, and facilities — that the operations model calls for. The committed model design arrives as the reference, each component''s stand-up is coordinated against it and checked as it proceeds, and the stood-up components are confirmed onward. The separate builds advance in step rather than drifting apart.'
+business_purpose: 'It exists so the four component builds are stood up in a coordinated way that answers to the operations model, not as disconnected projects.'
+practical_context: 'It opens the delivery capability build, once the committed operations model design is to hand, and it completes as the stood-up components are confirmed for integration.'
+worked_example:
+  agent_type: human
+  narrative: 'A product management lead keeps the four component builds moving against the committed model design, checks each stand-up as it completes, and confirms the set of stood-up components for integration.'

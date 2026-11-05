@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-bu
 
 This is a **Activity** (level L3), named **Install Technology Assets**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Acquire Technology Assets** (`processes:process-eo-build-nmmmt6`). Its canonical ID is `processes:activity-eo-build-a5trnu`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity puts the delivered hardware and software into place in the environments the architecture designates. The procured items arrive first, installation is carried out per the deployment layout, and each in-place asset is checked against its designated position. What was a delivery note becomes working equipment standing where the design said it should.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the bought equipment actually stands in its designated environments, ready to be commissioned.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows procurement, when the delivered hardware and software are presented for placement, and it completes once the installed assets are confirmed in position and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian racks and configures each delivered item in its designated environment per the deployment layout, verifies the placement, and confirms the installed assets for commissioning.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Install Technology Assets |
+| `plain_language_description` | string | no | This activity puts the delivered hardware and software into place in the environments the architecture designates. The … |
+| `business_purpose` | string | no | It exists so the bought equipment actually stands in its designated environments, ready to be commissioned. |
+| `practical_context` | string | no | It follows procurement, when the delivered hardware and software are presented for placement, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

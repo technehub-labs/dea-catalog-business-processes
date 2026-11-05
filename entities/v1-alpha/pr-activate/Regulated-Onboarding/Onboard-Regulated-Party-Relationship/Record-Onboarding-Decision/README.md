@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-ac
 
 This is a **Activity** (level L3), named **Record Onboarding Decision**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Activation** process context, domain `pr`, lifecycle stage Activate. It belongs to **Onboard Regulated Party Relationship** (`processes:process-pr-activate-6qzuve`). Its canonical ID is `processes:activity-pr-activate-q9pr4m`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity puts the decision through its required approvals — no single pair of eyes suffices — and records the outcome, its reasoning, and who decided, before handing the onboarding record to whichever systems will act on it. The classified applicant arrives as the case to be judged, activation or refusal is decided and documented, and the recorded decision is confirmed onward. The relationship formally begins — or formally doesn't — at this step.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the onboarding decision is properly approved, fully reasoned, and on the record either way.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the regulated onboarding, once the risk classification is assigned, and it completes when the activation or recorded refusal is issued to the systems that open or close the relationship.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A customer relationship management approver and a second signatory rule on the classified applicant, recording the activation decision with its rationale, and issue the onboarding record to the systems.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Record Onboarding Decision |
+| `plain_language_description` | string | no | This activity puts the decision through its required approvals — no single pair of eyes suffices — and records the … |
+| `business_purpose` | string | no | It exists so the onboarding decision is properly approved, fully reasoned, and on the record either way. |
+| `practical_context` | string | no | It closes the regulated onboarding, once the risk classification is assigned, and it completes when the activation or … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

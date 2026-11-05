@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-co
 
 This is a **Activity** (level L3), named **Choose Strategic Trajectory**, currently **candidate (yellow)**. It is part of the **Purpose and Ambition Conception** process context, domain `sd`, lifecycle stage Conceive. It belongs to **Develop Corporate Strategy** (`processes:process-sd-conceive-ahwvp5`). Its canonical ID is `processes:activity-sd-conceive-uvhsrz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The articulated routes are on the table and one must be picked. Intake brings the candidate trajectories in, verification confirms each is complete and current, and processing makes the choice — weighing the options and settling on the trajectory the enterprise will follow. Confirmation records the decision for downstream colleagues and the records custodian preserves the chosen course.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It makes the defining pick of this process, turning several possible routes into the one course the corporate strategy will carry.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs after articulation, opening when the candidate trajectories are presented at intake and closing when the choice is confirmed and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Strategy function leads compare the articulated trajectories in a decision session, settle on one with the activity owner, and the confirmation custodian records the pick for the commitment step that closes the process.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Choose Strategic Trajectory |
+| `plain_language_description` | string | no | The articulated routes are on the table and one must be picked. Intake brings the candidate trajectories in … |
+| `business_purpose` | string | no | It makes the defining pick of this process, turning several possible routes into the one course the corporate strategy … |
+| `practical_context` | string | no | It runs after articulation, opening when the candidate trajectories are presented at intake and closing when the choice … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

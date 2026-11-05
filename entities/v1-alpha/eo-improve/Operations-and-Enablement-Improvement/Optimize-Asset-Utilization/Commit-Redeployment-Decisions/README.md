@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-im
 
 This is a **Activity** (level L3), named **Commit Redeployment Decisions**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Optimize Asset Utilization** (`processes:process-eo-improve-q58ecg`). Its canonical ID is `processes:activity-eo-improve-acbypp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity gives formal standing to the redeployment moves chosen from the worked-up options. The assessed options arrive as the menu, decisions are taken and ratified, and the committed decisions are confirmed into the asset plan. The operation's assets are thereby re-aimed by decision rather than by drift.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the utilization fixes become binding redeployment decisions in the asset plan, not shelved options.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the option design, once the assessed options are in hand, and it completes when the committed decisions are confirmed into the asset plan and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian reviews the assessed redeployment options, takes and ratifies the decisions, and records the commitments into the asset plan.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Redeployment Decisions |
+| `plain_language_description` | string | no | This activity gives formal standing to the redeployment moves chosen from the worked-up options. The assessed options … |
+| `business_purpose` | string | no | It exists so the utilization fixes become binding redeployment decisions in the asset plan, not shelved options. |
+| `practical_context` | string | no | It follows the option design, once the assessed options are in hand, and it completes when the committed decisions are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

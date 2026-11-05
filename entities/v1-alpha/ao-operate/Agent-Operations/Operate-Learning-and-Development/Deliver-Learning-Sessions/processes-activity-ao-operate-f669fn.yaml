@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-operate-87q5mk through concluding task processes:task-ao-operate-record-g5my4m, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Deliver Learning Sessions'
+plain_language_description: 'This activity runs the learning sessions the calendar calls for, for people and artificial agents alike. The schedule comes in first, each session is delivered as planned and its running is logged, and the delivered sessions are confirmed for the record. What agents attend is thereby delivery by timetable, not by chance.'
+business_purpose: 'It exists so the scheduled development actually reaches the agents it was planned for, on the timetable committed.'
+practical_context: 'It follows the scheduling of development programmes, when the calendar is presented for delivery, and it completes as each delivered session is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A workforce management custodian runs each session on the calendar as planned, logs how the delivery went, and confirms the delivered sessions for completion recording.'

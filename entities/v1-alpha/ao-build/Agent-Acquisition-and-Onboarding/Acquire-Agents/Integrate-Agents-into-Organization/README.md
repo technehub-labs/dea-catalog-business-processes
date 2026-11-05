@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 
 This is a **Activity** (level L3), named **Integrate Agents into Organization**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Acquire Agents** (`processes:process-ao-build-w2qurd`). Its canonical ID is `processes:activity-ao-build-khtsgv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once agents have been onboarded into their roles, this activity connects them into the teams and ways of working they will operate in. The onboarded agents are brought in and logged, their placements are checked against the team structure, the connections are put in place, and the teams involved are told the agents are ready to work with them. The work ends with the agents operating inside the organization's team arrangements rather than standing outside them.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so newly onboarded agents stop being a list of arrivals and start working as part of the organization's teams and coordination patterns.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows onboarding during agent acquisition, when the onboarded agents are presented for placement into teams, and it closes once the integrated agents are confirmed and an audit record of the integration is retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian places a batch of newly onboarded agents into their assigned teams, checks each connection against the agreed coordination patterns, and files the audit record once the teams confirm the agents are ready to collaborate.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Integrate Agents into the Organization |
+| `plain_language_description` | string | no | Once agents have been onboarded into their roles, this activity connects them into the teams and ways of working they … |
+| `business_purpose` | string | no | It exists so newly onboarded agents stop being a list of arrivals and start working as part of the organization's teams … |
+| `practical_context` | string | no | It follows onboarding during agent acquisition, when the onboarded agents are presented for placement into teams, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

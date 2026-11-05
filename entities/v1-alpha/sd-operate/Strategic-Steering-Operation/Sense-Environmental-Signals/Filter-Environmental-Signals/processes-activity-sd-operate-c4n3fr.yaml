@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-operate-53y4j4 through concluding task processes:task-sd-operate-record-yquzw9, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Filter Environmental Signals'
+plain_language_description: 'Most of what the sweep finds is noise, and this work says so. The raw feed arrives at intake, verification applies the relevance tests consistently, and processing removes the noise and keeps only observations that genuinely matter to the strategy. Confirmation passes the qualified observations downstream and the records custodian preserves the filter decisions alongside them.'
+business_purpose: 'It protects the steering process from noise, letting only observations with genuine strategic weight travel any further.'
+practical_context: 'It follows the sweep, opening at intake of each raw feed and closing when the qualified set is confirmed and preserved with its decisions.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function sift-team works the raw feed against the relevance tests, a verification custodian spot-checks rejections for consistency, and the qualified observations go onward to classification with the filter decisions attached.'

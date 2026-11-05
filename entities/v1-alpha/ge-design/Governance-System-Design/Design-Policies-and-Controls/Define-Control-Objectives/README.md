@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-de
 
 This is a **Activity** (level L3), named **Define Control Objectives**, currently **candidate (yellow)**. It is part of the **Governance System Design** process context, domain `ge`, lifecycle stage Design. It belongs to **Design Policies and Controls** (`processes:process-ge-design-kpsj5b`). Its canonical ID is `processes:activity-ge-design-ewsksx`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity states what each control must achieve for the designed policies to hold. The policy artefact designs arrive with the tolerance bands as the frame, objectives are defined against both and checked for coverage, and the objective set is confirmed onward for the compliance regime. Every policy gains the controls it deserves, stated as outcomes first.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so controls are designed against stated outcomes rather than invented mechanisms.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the artefact designs, when the designs and tolerance bands are to hand, and it completes once the control objective set is confirmed for the compliance regime.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A governance design authority designer states the outcome each control must achieve for the designed policies to hold within the tolerance bands, and confirms the objective set.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Define Control Objectives |
+| `plain_language_description` | string | no | This activity states what each control must achieve for the designed policies to hold. The policy artefact designs … |
+| `business_purpose` | string | no | It exists so controls are designed against stated outcomes rather than invented mechanisms. |
+| `practical_context` | string | no | It follows the artefact designs, when the designs and tolerance bands are to hand, and it completes once the control … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

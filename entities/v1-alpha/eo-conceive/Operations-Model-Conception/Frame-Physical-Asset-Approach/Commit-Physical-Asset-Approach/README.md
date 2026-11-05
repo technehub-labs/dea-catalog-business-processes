@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-co
 
 This is a **Activity** (level L3), named **Commit Physical Asset Approach**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Frame Physical Asset Approach** (`processes:process-eo-conceive-87kx9n`). Its canonical ID is `processes:activity-eo-conceive-sbeur9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the footprint principles, the lifecycle bounds, and the option assessment together into one approach and gives it formal standing, ready for blueprint design. The framed pieces arrive as its inputs, the whole is consolidated and ratified, and the committed approach is confirmed onward. The enterprise's physical-side thinking is thereby one decision rather than three opinions.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise holds one committed physical asset approach that blueprint design must answer to.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the physical asset approach framing, once principles, options, and lifecycle bounds are framed, and it completes when the committed approach is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian consolidates the footprint principles, the assessed options, and the lifecycle envelopes into the approach document, obtains ratification, and records the committed approach for blueprint design.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Physical Asset Approach |
+| `plain_language_description` | string | no | This activity draws the footprint principles, the lifecycle bounds, and the option assessment together into one … |
+| `business_purpose` | string | no | It exists so the enterprise holds one committed physical asset approach that blueprint design must answer to. |
+| `practical_context` | string | no | It closes the physical asset approach framing, once principles, options, and lifecycle bounds are framed, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-improve-xs59e2 through concluding task processes:task-ao-improve-record-mb7s4u, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Record the Accountability Handovers'
+plain_language_description: 'This activity logs, as the executed transition settles, every handover of accountability the change produced: which accountability moved, who gave it up, and who now holds it. The executed transition arrives as the input, each handover is recorded against it, and the handover records are confirmed and preserved. After the reorganization, the file shows exactly who owns what.'
+business_purpose: 'It exists so the enterprise can always show who holds each accountability after structural change, with the handovers on record.'
+practical_context: 'It follows the execution of the structure transition, when the completed moves are presented, and it completes once every handover is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A records custodian logs each handover from the executed transition, naming the outgoing and incoming holder for every accountability moved, and preserves the records for audit.'

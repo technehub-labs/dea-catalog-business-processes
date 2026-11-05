@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Report Quality Performance**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Quality Control** (`processes:process-eo-operate-44jsrp`). Its canonical ID is `processes:activity-eo-operate-x59sfp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity rolls the batch-level quality records up into the bigger picture — how much passes first time, how many defects — for the process group that owns the operation. The per-batch records arrive as the raw material, performance is aggregated and drawn into reporting, and the quality report is confirmed onward. Isolated batch verdicts become a trend the enterprise can manage.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise sees its quality as a trend across batches, not just as one verdict at a time.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs on the reporting cadence once batch records have accumulated, and it completes when the aggregated quality performance report is confirmed and delivered to the owning process group.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A quality custodian aggregates the per-batch records into first-pass yield and defect-rate reporting, and confirms the quality report for the process group that owns the operation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Report Quality Performance |
+| `plain_language_description` | string | no | This activity rolls the batch-level quality records up into the bigger picture — how much passes first time, how many … |
+| `business_purpose` | string | no | It exists so the enterprise sees its quality as a trend across batches, not just as one verdict at a time. |
+| `practical_context` | string | no | It runs on the reporting cadence once batch records have accumulated, and it completes when the aggregated quality … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

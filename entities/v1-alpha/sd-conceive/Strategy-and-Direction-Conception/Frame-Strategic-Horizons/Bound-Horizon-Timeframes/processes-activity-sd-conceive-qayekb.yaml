@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-conceive-xa4h2k through concluding task processes:task-sd-conceive-record-get6zv, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Set the Horizon Timeframes'
+plain_language_description: 'Intent needs a calendar to live on. The conceived intent and the rhythms of the environment come in at intake, verification tests the proposed windows against both, and processing draws the timeframes — the defined periods planning will run across. Confirmation releases the bounded windows downstream and the records custodian preserves them for milestone anchoring.'
+business_purpose: 'It puts agreed date windows around the intent, giving the planning cycle the fixed periods its horizons need.'
+practical_context: 'It opens this process at intake when the conceived intent and the environment cycles are presented, closing once the timeframes are confirmed and stored.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function planner proposes planning windows against the conceived intent and the known environment cycles, a verification custodian checks the span is realistic, and the confirmation custodian passes the agreed periods to the milestone team.'

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-build-ba6ykz through concluding task processes:task-eo-build-record-txbw3r, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Verify Network Readiness'
+plain_language_description: 'This activity proves the assembled network — its nodes, contracted carriers, and secured capacity — can actually carry the routes the design lays out. The built network comes in with the routing logic as the test, the routes are walked end to end and gaps noted, and the readiness determination is confirmed for the record. Delivery flows are cleared to start only once this says so.'
+business_purpose: 'It exists so goods begin moving on a network proven able to execute its routing, not on one that merely exists.'
+practical_context: 'It closes the logistics network build, once nodes, capacity, and carriers are all in place, and it completes when the readiness determination is confirmed and retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian walks the designed routes across the established nodes and contracted carriers, notes any gap that would break a flow, and confirms the readiness determination for the record.'

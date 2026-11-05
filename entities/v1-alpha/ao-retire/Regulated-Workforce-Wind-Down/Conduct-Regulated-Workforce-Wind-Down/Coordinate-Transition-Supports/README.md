@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-re
 
 This is a **Activity** (level L3), named **Coordinate Transition Supports**, currently **candidate (yellow)**. It is part of the **Workforce Retirement** process context, domain `ao`, lifecycle stage Retire. It belongs to **Conduct Regulated Workforce Wind-Down** (`processes:process-ao-retire-g3eyr8`). Its canonical ID is `processes:activity-ao-retire-herzuz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity lines up the practical help that supplements the statutory entitlements for everyone affected: the state referral service for displaced workers, retraining, continued health cover, and help finding new work. The affected roster and the support programmes on offer arrive together, a support package is put together per person, and the offered supports, with delivery and uptake noted, are confirmed and retained.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so everyone affected by the wind-down is offered real help landing on their feet, beyond the money owed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the affected roster is settled during the wind-down, and it closes when each person's offered supports, with delivery and uptake evidence, are confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function coordinator matches each person on the affected roster to the referral, retraining, and health-cover programmes available, records what was offered and taken up, and files the evidence.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Coordinate Transition Supports |
+| `plain_language_description` | string | no | This activity lines up the practical help that supplements the statutory entitlements for everyone affected: the state … |
+| `business_purpose` | string | no | It exists so everyone affected by the wind-down is offered real help landing on their feet, beyond the money owed. |
+| `practical_context` | string | no | It runs once the affected roster is settled during the wind-down, and it closes when each person's offered supports … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

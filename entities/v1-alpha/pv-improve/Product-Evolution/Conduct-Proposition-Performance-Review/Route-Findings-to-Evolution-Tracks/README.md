@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-im
 
 This is a **Activity** (level L3), named **Route Findings to Evolution Tracks**, currently **candidate (yellow)**. It is part of the **Product Evolution and Portfolio Rationalization** process context, domain `pv`, lifecycle stage Improve. It belongs to **Conduct Proposition Performance Review** (`processes:process-pv-improve-27r7r7`). Its canonical ID is `processes:activity-pv-improve-eyn4d4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once conclusions exist, each one must reach the people who can act: product management sends the finding set along, with owners attached, to the evolution and the rationalization tracks. Intake logs the arriving findings, verification checks each is actionable and complete, processing attaches the routing, confirmation notifies the receiving owners, and the dispatch is archived.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It makes sure no review conclusion dies in a drawer: every finding lands with a track and an owner who is expected to act.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the finding step in the review sequence, opening when the finding set is presented and closing when routed findings with owners are confirmed and archived.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* After the reviewers sign off, a product management coordinator registers each conclusion at intake, confirms the evolution-bound ones go to the enhancement designers and portfolio-weakening ones to the rationalization track, notifies the named owners, and files the routing record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Route Findings to Evolution Tracks |
+| `plain_language_description` | string | no | Once conclusions exist, each one must reach the people who can act: product management sends the finding set along … |
+| `business_purpose` | string | no | It makes sure no review conclusion dies in a drawer: every finding lands with a track and an owner who is expected to … |
+| `practical_context` | string | no | It follows the finding step in the review sequence, opening when the finding set is presented and closing when routed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

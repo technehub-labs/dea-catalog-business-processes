@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-im
 
 This is a **Activity** (level L3), named **Deliver Improvement Projects**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Conduct Lean Six Sigma Programme** (`processes:process-eo-improve-us272s`). Its canonical ID is `processes:activity-eo-improve-gtarnw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity carries each chosen improvement project through its structured method from charter to realized gain. The selected portfolio arrives as the worklist, projects are run phase by phase and their progress checked against the method, and the delivered projects are confirmed onward for sustainment. Problems are fixed by discipline, not heroics.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the programme's selected projects are actually delivered, each to the structured method rather than to improvisation.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the project selection, when the bounded portfolio is presented for delivery, and it completes as each delivered project is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function project lead runs each selected project through the method's phases, checks progress at every gate, and confirms the delivered projects for the sustainment step.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Deliver Improvement Projects |
+| `plain_language_description` | string | no | This activity carries each chosen improvement project through its structured method from charter to realized gain. The … |
+| `business_purpose` | string | no | It exists so the programme's selected projects are actually delivered, each to the structured method rather than to … |
+| `practical_context` | string | no | It follows the project selection, when the bounded portfolio is presented for delivery, and it completes as each … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

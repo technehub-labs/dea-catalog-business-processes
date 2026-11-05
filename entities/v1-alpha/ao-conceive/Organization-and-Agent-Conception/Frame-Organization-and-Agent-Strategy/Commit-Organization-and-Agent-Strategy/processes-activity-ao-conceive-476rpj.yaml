@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-conceive-e3u8s2 through concluding task processes:task-ao-conceive-record-b5duf6, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit the Organization and Agent Strategy'
+plain_language_description: 'This activity is where the drafted organization and agent strategy is formally ratified and put to work. The drafted strategy is taken in and reviewed, its commitment is confirmed at the level that owns the decision, and the committed strategy is handed to the framing and mix work that follows. An audit record of the commitment is preserved so the enterprise can trace its workforce direction back to this point.'
+business_purpose: 'It exists so the enterprise''s workforce direction is a committed decision that model framing and mix conception must follow.'
+practical_context: 'It occurs at the close of strategy framing, when the drafted strategy is presented for ratification, and it completes once the committed strategy is confirmed, handed on, and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian brings the drafted strategy forward for board-level ratification, records the commitment once it is made, and notifies the model framing and mix conception teams that the committed strategy is theirs to execute.'

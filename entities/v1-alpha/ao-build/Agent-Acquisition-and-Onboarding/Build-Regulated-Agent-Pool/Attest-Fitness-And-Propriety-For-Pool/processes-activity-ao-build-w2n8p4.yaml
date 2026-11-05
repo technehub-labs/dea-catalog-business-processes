@@ -137,3 +137,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-build-9my4jr through concluding task processes:task-ao-build-record-ae9wh9, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Attest Fitness and Propriety for the Pool'
+plain_language_description: 'This activity records the initial fitness attestation for every candidate sitting in the regulated pool. The verified candidate list and the attestation regime arrive first, each candidate is assessed against the applicable criteria by the designated attestor, and the attested list is produced and confirmed to those who depend on it. The attestations are then kept on the personnel record so the pool is demonstrably fit before anyone goes live.'
+business_purpose: 'It exists so no candidate reaches activation without the fitness attestation their regulator expects, keeping the pool defensible.'
+practical_context: 'It happens after registry verification has produced the verified candidate list, and it closes when the attested candidate list is confirmed and the attestation record is preserved on the personnel file.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian applies the employer''s fitness criteria to each verified candidate for a producer role, records who passed the initial attestation, and files the attested list with the records custodian for retention.'

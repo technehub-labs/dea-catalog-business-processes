@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-design-6j5mxp through concluding task processes:task-eo-design-record-aau6k9, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design Fulfilment Flows'
+plain_language_description: 'This activity draws the concrete order-to-delivery paths that put the framed fulfilment patterns into practice. The patterns and the channel configurations arrive as the inputs, the flows are designed end to end and checked against both, and the flow designs are confirmed onward. An order''s journey from placement to arrival is thereby fully drawn.'
+business_purpose: 'It exists so the fulfilment patterns conceived earlier become drawable paths an order can actually travel.'
+practical_context: 'It runs once the channel configurations and the fulfilment patterns are to hand, and it completes when the flow designs are confirmed and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function designer draws each order-to-delivery path through the configured channels, checks the flows honour the framed patterns, and confirms the designs for commitment.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 
 This is a **Activity** (level L3), named **Commit Organization Structure Design**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Design Organization Structure** (`processes:process-ao-design-7dkbur`). Its canonical ID is `processes:activity-ao-design-qp6pxn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity is where the reviewed structure design is formally accepted and put to work. The reviewed design is taken in and consolidated, its ratification is confirmed with the design authority, and the committed design is handed to the role catalogue, the competency framework, and the agent topology work that accompanies it. An audit record of the commitment is preserved so the enterprise can trace its structure back to this decision.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the structure blueprint becomes one binding reference that the companion designs and later workforce building must follow.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It takes place at the close of structure design, once the draft has passed review against the framed model, and it completes when the committed design is confirmed, handed over, and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian brings the reviewed design forward for the organization design authority's ratification, records the commitment once made, and notifies the role catalogue, competency framework, and agent topology teams that the design is theirs to build from.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit the Organization Structure Design |
+| `plain_language_description` | string | no | This activity is where the reviewed structure design is formally accepted and put to work. The reviewed design is taken … |
+| `business_purpose` | string | no | It exists so the structure blueprint becomes one binding reference that the companion designs and later workforce … |
+| `practical_context` | string | no | It takes place at the close of structure design, once the draft has passed review against the framed model, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

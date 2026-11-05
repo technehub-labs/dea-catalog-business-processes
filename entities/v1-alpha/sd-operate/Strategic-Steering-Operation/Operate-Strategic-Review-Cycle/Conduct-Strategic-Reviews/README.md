@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 
 This is a **Activity** (level L3), named **Conduct Strategic Reviews**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Operate Strategic Review Cycle** (`processes:process-sd-operate-ucxpz4`). Its canonical ID is `processes:activity-sd-operate-m4s5cn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The pack is in the room; now the session itself runs. Intake registers the assembled papers, verification confirms attendance and quorum, and processing chairs the session through the agenda — debating the performance report and the signal briefs toward decisions. Confirmation closes each session with its outcomes communicated and the records custodian preserves the session papers.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It is the forum where monitoring turns into steering, the live sessions where performance and signals are debated into decisions.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs on the scheduled cadence, opening when each session pack is presented at intake and closing when the session outcomes are confirmed and preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function lead chairs the quarterly session through the assembled pack, the verification custodian confirms quorum at the door, and decisions are minuted live before the confirmation custodian closes the session with outcomes announced.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Conduct Strategic Reviews |
+| `plain_language_description` | string | no | The pack is in the room; now the session itself runs. Intake registers the assembled papers, verification confirms … |
+| `business_purpose` | string | no | It is the forum where monitoring turns into steering, the live sessions where performance and signals are debated into … |
+| `practical_context` | string | no | It runs on the scheduled cadence, opening when each session pack is presented at intake and closing when the session … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-de
 
 This is a **Activity** (level L3), named **Design Governance Integration**, currently **candidate (yellow)**. It is part of the **Governance System Design** process context, domain `ge`, lifecycle stage Design. It belongs to **Design Risk Framework** (`processes:process-ge-design-pqkvdc`). Its canonical ID is `processes:activity-ge-design-u5gpsy`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity wires the risk machinery into the governance system — where it reports, how it escalates, and which body mandates carry it. The governance system design and the taxonomy and scales arrive as the two sides to join, the integration is designed and checked along both, and the integration design is confirmed onward for the framework's commitment. Risk that cannot reach its governors is merely observed, not governed.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the risk framework plugs into the governance system by designed lines rather than by hope.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the taxonomy and scales, when both and the governance system design are to hand, and it completes once the integration design is confirmed for the framework's commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A governance design authority designer wires the risk framework's reporting, escalation, and mandates into the governance system, and confirms the integration design for commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Governance Integration |
+| `plain_language_description` | string | no | This activity wires the risk machinery into the governance system — where it reports, how it escalates, and which body … |
+| `business_purpose` | string | no | It exists so the risk framework plugs into the governance system by designed lines rather than by hope. |
+| `practical_context` | string | no | It follows the taxonomy and scales, when both and the governance system design are to hand, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

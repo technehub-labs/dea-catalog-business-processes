@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-conceive-jb4xtg through concluding task processes:task-pv-conceive-record-vab978, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Assess Portfolio Balance'
+plain_language_description: 'This activity takes the portfolio''s temperature across its whole shape — how its propositions spread across risk, time horizon, and value. The competing propositions arrive as the collection to be judged, balance is assessed across the three dimensions and gaps named, and the assessed balance is confirmed onward for the prioritisation. The portfolio''s shape, good or lopsided, becomes visible here.'
+business_purpose: 'It exists so portfolio direction is set from a clear-eyed view of the collection''s balance.'
+practical_context: 'It opens the portfolio direction framing when multiple propositions compete for bounded investment, and it completes once the assessed balance is confirmed for the prioritisation.'
+worked_example:
+  agent_type: human
+  narrative: 'A proposition design authority analyst judges how the competing propositions spread across risk, horizon, and value, names the lopsidedness, and confirms the assessed balance onward.'

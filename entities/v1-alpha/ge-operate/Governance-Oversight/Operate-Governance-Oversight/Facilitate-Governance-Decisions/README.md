@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-op
 
 This is a **Activity** (level L3), named **Facilitate Governance Decisions**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. It belongs to **Operate Governance Oversight** (`processes:process-ge-operate-hs7wf3`). Its canonical ID is `processes:activity-ge-operate-yt8562`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity helps the bodies actually make the decisions their cycles exist for, working within the running cycles. The convened cycles arrive with their decision papers, the making of each decision is facilitated under its rights and delegations, and the facilitated decisions are confirmed onward for the record. Governance's whole purpose is exercised here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so governance bodies decide smoothly and properly, within their designed rights.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs within the running board and committee cycles as decision points arrive, and it completes once each facilitated decision is confirmed onward for the decision record.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A governance custodian steers each convened decision through its rights and delegations — papers in order, votes properly taken — and confirms the decision onward for recording.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Facilitate Governance Decisions |
+| `plain_language_description` | string | no | This activity helps the bodies actually make the decisions their cycles exist for, working within the running cycles … |
+| `business_purpose` | string | no | It exists so governance bodies decide smoothly and properly, within their designed rights. |
+| `practical_context` | string | no | It runs within the running board and committee cycles as decision points arrive, and it completes once each facilitated … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

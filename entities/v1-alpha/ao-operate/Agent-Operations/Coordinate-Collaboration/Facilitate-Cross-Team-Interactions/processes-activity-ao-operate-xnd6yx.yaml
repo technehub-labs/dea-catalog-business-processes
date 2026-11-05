@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-operate-bd7mef through concluding task processes:task-ao-operate-record-k2g7bk, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Facilitate the Cross-Team Interactions'
+plain_language_description: 'This activity keeps interactions flowing between the enterprise''s agents and its teams, wherever they sit in the organization, working within the maintained norms of engagement. The norms come in as the footing, the cross-team interactions are enabled and supported as day-to-day work demands, and the facilitated interactions are confirmed for the record. Collaboration across team lines thereby proceeds without each exchange needing special arrangement.'
+business_purpose: 'It exists so joint work across team lines proceeds smoothly in service instead of stalling at every boundary.'
+practical_context: 'It runs in day-to-day service, once the interaction norms are maintained and cross-team work is under way, and it completes as facilitated interactions are confirmed and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A workforce management custodian connects two teams and their artificial agents for a piece of joint work, keeps the exchange within the agreed norms, and confirms the interaction for the record.'

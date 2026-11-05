@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-improve-g3ngp3 through concluding task processes:task-eo-improve-record-yyabcd, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Assemble Performance Evidence'
+plain_language_description: 'This activity pulls the scattered operational records — performance signals, logistics shortfalls, and asset usage — into one review-ready pack. The operational records arrive from their separate homes, the evidence is gathered, organised, and checked for completeness, and the evidence pack is confirmed onward for the findings. The review starts from one coherent picture instead of a drawer of fragments.'
+business_purpose: 'It exists so the performance review examines one complete, organised evidence base rather than scattered fragments.'
+practical_context: 'It opens the performance review, when the operational records are presented for assembly, and it completes once the evidence pack is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'An intake custodian gathers the performance signals, logistics shortfall records, and asset usage data into one pack, checks it for completeness, and confirms the evidence for the findings step.'

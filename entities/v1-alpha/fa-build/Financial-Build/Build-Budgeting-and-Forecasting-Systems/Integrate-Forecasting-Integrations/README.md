@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 
 This is a **Activity** (level L3), named **Integrate Forecasting Integrations**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Build Budgeting and Forecasting Systems** (`processes:process-fa-build-92v24c`). Its canonical ID is `processes:activity-fa-build-nhup75`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity connects the planning models to the operational systems whose data they will run on. The operational data sources arrive as the feed points, integrations are built and their flows checked, and the working integrations are confirmed onward for the controls work. Budgets and forecasts start drawing on real numbers from the business.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the planning systems are fed by live operational data rather than by hand-copied figures.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the model build, when the operational data sources are identified, and it completes once the working integrations are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance function builder wires the budget models to the operational systems feeding them, checks each data flow end to end, and confirms the working integrations.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Build the Planning Integrations |
+| `plain_language_description` | string | no | This activity connects the planning models to the operational systems whose data they will run on. The operational data … |
+| `business_purpose` | string | no | It exists so the planning systems are fed by live operational data rather than by hand-copied figures. |
+| `practical_context` | string | no | It follows the model build, when the operational data sources are identified, and it completes once the working … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

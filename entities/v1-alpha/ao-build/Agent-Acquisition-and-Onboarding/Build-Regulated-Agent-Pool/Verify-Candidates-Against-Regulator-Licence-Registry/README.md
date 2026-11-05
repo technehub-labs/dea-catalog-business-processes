@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 
 This is a **Activity** (level L3), named **Verify Candidates Against Regulator Licence Registry**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Build Regulated Agent Pool** (`processes:process-ao-build-9my4jr`). Its canonical ID is `processes:activity-ao-build-q7m3k9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity confirms, candidate by candidate, that the qualifications people claim for licensed roles really are registered with the relevant regulator. The candidate list is brought in and each person's details are checked against the licence registry, with each confirmed licence record attached to the candidate it covers. The results are confirmed to the next stage and retained so the verification can be evidenced later.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise builds its licensed-candidate pool on registrations it has actually confirmed, not on credentials it has merely been told about.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs at the start of building the regulated agent pool, when the candidate list and access to the regulator registries are presented, and it closes once the verified candidate list is confirmed and its record preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A verification custodian checks each clinician's details against the state healthcare licensure registries, records the licence status found for everyone on the list, and passes the verified list on for the fitness attestation step.
 
 ## 5. Header and Identity Table (generated)
 
@@ -65,6 +65,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Verify Candidates Against the Regulator Licence Registry |
+| `plain_language_description` | string | no | This activity confirms, candidate by candidate, that the qualifications people claim for licensed roles really are … |
+| `business_purpose` | string | no | It exists so the enterprise builds its licensed-candidate pool on registrations it has actually confirmed, not on … |
+| `practical_context` | string | no | It runs at the start of building the regulated agent pool, when the candidate list and access to the regulator … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

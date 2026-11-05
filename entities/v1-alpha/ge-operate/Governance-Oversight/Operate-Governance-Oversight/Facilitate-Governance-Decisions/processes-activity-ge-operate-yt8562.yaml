@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-operate-hs7wf3 through concluding task processes:task-ge-operate-record-j5g3wb, whose outcome — Case file retained for Facilitate Governance Decisions under the records retention schedule with cryptographic integrity protection; statutory retention …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Facilitate Governance Decisions'
+plain_language_description: 'This activity helps the bodies actually make the decisions their cycles exist for, working within the running cycles. The convened cycles arrive with their decision papers, the making of each decision is facilitated under its rights and delegations, and the facilitated decisions are confirmed onward for the record. Governance''s whole purpose is exercised here.'
+business_purpose: 'It exists so governance bodies decide smoothly and properly, within their designed rights.'
+practical_context: 'It runs within the running board and committee cycles as decision points arrive, and it completes once each facilitated decision is confirmed onward for the decision record.'
+worked_example:
+  agent_type: human
+  narrative: 'A governance custodian steers each convened decision through its rights and delegations — papers in order, votes properly taken — and confirms the decision onward for recording.'

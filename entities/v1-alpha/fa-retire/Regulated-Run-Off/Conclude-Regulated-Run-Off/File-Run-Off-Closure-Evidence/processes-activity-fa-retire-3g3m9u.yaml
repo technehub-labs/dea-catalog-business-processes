@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-retire-wkbrsa through concluding task processes:task-fa-retire-record-9qjn6f, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'File Run-Off Closure Evidence'
+plain_language_description: 'This activity assembles the closing evidence — the final accounts, proof the claims are cleared, the plan for what remains of the assets, and the ask to give up the licence — and files it with the regulator for acknowledgement. The final financial position arrives with the clearance certificate and the distribution plan, the submission is prepared and filed, and the regulator''s acknowledgement is confirmed for the record. The run-off ends by demonstrating it has ended.'
+business_purpose: 'It exists so the run-off closes with formal, filed evidence that everything it owed has been done.'
+practical_context: 'It runs once the claims are adjudicated and the final position is struck, and it completes when the filed closure submission with the regulator''s acknowledgement is confirmed and the residual distribution recorded.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance officer files the closure submission with the controlling regulator — final accounts, the claim clearance certificate, the residual-asset distribution plan, and the licence surrender request — and confirms the acknowledgement.'

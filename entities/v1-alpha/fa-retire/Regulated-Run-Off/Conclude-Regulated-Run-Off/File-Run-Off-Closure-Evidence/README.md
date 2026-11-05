@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-re
 
 This is a **Activity** (level L3), named **File Run-Off Closure Evidence**, currently **candidate (yellow)**. It is part of the **Financial Run-Off** process context, domain `fa`, lifecycle stage Retire. It belongs to **Conclude Regulated Run-Off** (`processes:process-fa-retire-wkbrsa`). Its canonical ID is `processes:activity-fa-retire-3g3m9u`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity assembles the closing evidence — the final accounts, proof the claims are cleared, the plan for what remains of the assets, and the ask to give up the licence — and files it with the regulator for acknowledgement. The final financial position arrives with the clearance certificate and the distribution plan, the submission is prepared and filed, and the regulator's acknowledgement is confirmed for the record. The run-off ends by demonstrating it has ended.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the run-off closes with formal, filed evidence that everything it owed has been done.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the claims are adjudicated and the final position is struck, and it completes when the filed closure submission with the regulator's acknowledgement is confirmed and the residual distribution recorded.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance officer files the closure submission with the controlling regulator — final accounts, the claim clearance certificate, the residual-asset distribution plan, and the licence surrender request — and confirms the acknowledgement.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | File Run-Off Closure Evidence |
+| `plain_language_description` | string | no | This activity assembles the closing evidence — the final accounts, proof the claims are cleared, the plan for what … |
+| `business_purpose` | string | no | It exists so the run-off closes with formal, filed evidence that everything it owed has been done. |
+| `practical_context` | string | no | It runs once the claims are adjudicated and the final position is struck, and it completes when the filed closure … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

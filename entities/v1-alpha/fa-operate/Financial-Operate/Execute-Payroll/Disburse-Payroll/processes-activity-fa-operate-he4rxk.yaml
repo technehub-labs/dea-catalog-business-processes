@@ -90,3 +90,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-operate-zpmxzp through concluding task processes:task-fa-operate-record-477s6f, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Disburse Payroll'
+plain_language_description: 'This activity pays the take-home amounts out to each person for the cycle, routed by their chosen channel and checked as it goes. The computed net amounts arrive as the payment instructions, disbursement is executed under the reconciliation controls, and the paid cycle is confirmed for the record. The moment the whole cycle exists for is here.'
+business_purpose: 'It exists so net pay reaches every person correctly, through their own payment channel, on time.'
+practical_context: 'It follows the withholding computation, once the net amounts are confirmed, and it completes when the disbursed cycle is reconciled and confirmed for the record.'
+worked_example:
+  agent_type: human
+  narrative: 'A compliance function payroll officer releases the cycle''s net pay through each person''s chosen channel, reconciles the payments as they land, and confirms the disbursed cycle.'

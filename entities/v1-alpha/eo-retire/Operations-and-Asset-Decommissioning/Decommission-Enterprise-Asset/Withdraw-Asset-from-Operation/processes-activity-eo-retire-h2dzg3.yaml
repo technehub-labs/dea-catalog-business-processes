@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-retire-rpg6d4 through concluding task processes:task-eo-retire-record-f6ppym, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Withdraw Asset from Operation'
+plain_language_description: 'This activity powers the asset down, detaches it from everything it feeds, and cuts it off from live service. The retirement plan arrives as the guide, the shutdown and disconnection are executed safely against it, and the withdrawn asset is confirmed onward for disposal. The asset''s working life ends in an orderly, planned way.'
+business_purpose: 'It exists so a retiring asset leaves live service safely and completely, without taking any dependent operation down with it.'
+practical_context: 'It runs to the retirement plan once withdrawal is scheduled, and it completes when the asset''s safe shutdown and isolation are confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations crew follows the retirement plan to power down the asset, detach its connections, and isolate it from live service, confirming the safe withdrawal for the record.'

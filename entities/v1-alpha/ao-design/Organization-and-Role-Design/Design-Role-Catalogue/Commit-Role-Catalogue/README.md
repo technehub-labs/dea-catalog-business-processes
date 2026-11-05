@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 
 This is a **Activity** (level L3), named **Commit Role Catalogue**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Design Role Catalogue** (`processes:process-ao-design-34e95r`). Its canonical ID is `processes:activity-ao-design-tfhe6e`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity gathers the families, levels, and accountability boundaries into the finished role catalogue and gives it formal standing. The bounded accountabilities arrive as the last piece, the whole catalogue is consolidated and reviewed, and its commitment is confirmed so downstream provisioning has one authoritative list of roles to work from. The committed catalogue is then preserved as an audit record.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise holds one ratified list of roles that provisioning, planning, and staffing all answer to.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It takes place at the close of role catalogue design, once accountability boundaries are set, and it completes when the committed catalogue is confirmed, handed to provisioning, and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian consolidates the defined families, levels, and accountability boundaries into the complete catalogue, obtains the organization design authority's commitment, and files the audit record that lets provisioning begin.
 
 ## 5. Header and Identity Table (generated)
 
@@ -60,6 +60,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit the Role Catalogue |
+| `plain_language_description` | string | no | This activity gathers the families, levels, and accountability boundaries into the finished role catalogue and gives it … |
+| `business_purpose` | string | no | It exists so the enterprise holds one ratified list of roles that provisioning, planning, and staffing all answer to. |
+| `practical_context` | string | no | It takes place at the close of role catalogue design, once accountability boundaries are set, and it completes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

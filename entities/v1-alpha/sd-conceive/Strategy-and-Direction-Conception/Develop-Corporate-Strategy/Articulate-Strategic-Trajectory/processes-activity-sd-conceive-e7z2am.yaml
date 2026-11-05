@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-conceive-ahwvp5 through concluding task processes:task-sd-conceive-record-nsc2d6, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Articulate Strategic Trajectory'
+plain_language_description: 'A direction is a bearing; a trajectory spells out the route. Intake registers the synthesized direction, verification tests the emerging wording against it, and processing writes out the trajectory in full — where the enterprise is heading and along what path. Confirmation passes the articulated trajectory downstream and the records custodian preserves it for the choice step.'
+business_purpose: 'It converts the fused direction into an explicit trajectory that leaders can weigh and choose between.'
+practical_context: 'It follows synthesis, opening at intake of the synthesized direction and closing when the articulated trajectory is confirmed and stored.'
+worked_example:
+  agent_type: human
+  narrative: 'Strategy function writers turn the synthesized direction into a fully spelled-out trajectory, read it back against the direction with the activity owner, and the confirmation custodian releases it to the colleagues who will choose the way forward.'

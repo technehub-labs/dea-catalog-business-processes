@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 
 This is a **Activity** (level L3), named **Define Role Levels**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Design Role Catalogue** (`processes:process-ao-design-34e95r`). Its canonical ID is `processes:activity-ao-design-txkve5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity sets the steps of seniority that each role family will carry in the catalogue. The defined families arrive first, the leveling structure within each is worked out and reviewed for sensible progression, and the defined levels are confirmed with the design authority. The catalogue then has, for every family, a common ladder that staffing and development decisions can use.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so each role family carries an agreed ladder of levels that the rest of the enterprise can plan careers and staffing against.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the definition of the role families, when they are presented for leveling, and it completes once the defined levels are confirmed and their record preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A designer for the organization design authority works through a newly defined family and sets its steps from entry to senior positions, checks the progression makes sense, and confirms the levels before accountability boundaries are drawn.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Define the Role Levels |
+| `plain_language_description` | string | no | This activity sets the steps of seniority that each role family will carry in the catalogue. The defined families … |
+| `business_purpose` | string | no | It exists so each role family carries an agreed ladder of levels that the rest of the enterprise can plan careers and … |
+| `practical_context` | string | no | It follows the definition of the role families, when they are presented for leveling, and it completes once the defined … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

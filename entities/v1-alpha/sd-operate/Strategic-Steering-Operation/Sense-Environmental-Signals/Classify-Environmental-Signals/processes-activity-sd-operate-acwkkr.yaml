@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-operate-53y4j4 through concluding task processes:task-sd-operate-record-kz9va9, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Classify Environmental Signals'
+plain_language_description: 'Qualified observations still need meaning, so each one gets typed. Intake registers the filtered set, verification confirms the typing rules are applied evenly, and processing sorts the qualified set by type, tagging each observation as drift, as disruption, or as opportunity for the strategy in operation. Confirmation passes the typed set downstream and the records custodian preserves the classifications for routing.'
+business_purpose: 'It gives each surviving observation a name the steering process can act on, separating slow drift from sudden disruption and real openings.'
+practical_context: 'It follows filtering, opening at intake of the qualified set and closing when the typed observations are confirmed and preserved for routing.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function analyst tags each qualified observation by type against the typing rules, a verification custodian checks the tags are consistent, and the typed set is confirmed onward to the routing step.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-op
 
 This is a **Activity** (level L3), named **Execute Gate Decisions**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. It belongs to **Manage Proposition Lifecycle** (`processes:process-pv-operate-cau4gv`). Its canonical ID is `processes:activity-pv-operate-xmvfj7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When a proposition reaches a stage boundary, the criteria for passing are applied and the decision is carried out - advance, hold, or turn back. The boundary material arrives at intake, is checked against the gate criteria, the decision is executed and communicated at confirmation, and the outcome is archived.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives stage boundaries real force: a proposition moves on only when the gate says so, keeping lifecycle progression disciplined.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It fires whenever a proposition arrives at a stage boundary: intake opens on the boundary material's presentation and closure comes when the executed decision is confirmed and archived.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A proposition seeking to move from its early stage to the growth stage presents its case at intake; a product management gatekeeper checks it against the criteria, executes the advance decision at processing, notifies the stakeholders at confirmation, and files the gate record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Execute Gate Decisions |
+| `plain_language_description` | string | no | When a proposition reaches a stage boundary, the criteria for passing are applied and the decision is carried out - … |
+| `business_purpose` | string | no | It gives stage boundaries real force: a proposition moves on only when the gate says so, keeping lifecycle progression … |
+| `practical_context` | string | no | It fires whenever a proposition arrives at a stage boundary: intake opens on the boundary material's presentation and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

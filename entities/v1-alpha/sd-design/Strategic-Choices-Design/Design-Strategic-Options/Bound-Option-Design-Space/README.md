@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-de
 
 This is a **Activity** (level L3), named **Bound Option Design Space**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Design Strategic Options** (`processes:process-sd-design-ewvbsh`). Its canonical ID is `processes:activity-sd-design-eyax2d`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Leaders need to know how much room they truly have before options are sketched. The committed intent and the scoped trade-offs arrive at intake, verification confirms both are current, and processing marks out the space those two anchors permit — where options may range and where they may not. Confirmation passes the marked space downstream and the records custodian preserves it for the drafting and criteria work.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It fixes how far options may range before any drafting starts, so the option set is born inside what the intent and its trade-offs allow.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens this process at intake when the committed intent and the scoped trade-offs are presented, closing once the marked space is confirmed and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function lead takes the committed intent and the scoped trade-offs into a framing session, agrees the edges of the option space with the activity owner, and the confirmation custodian releases the marked space to the option drafting team.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set the Option Design Space |
+| `plain_language_description` | string | no | Leaders need to know how much room they truly have before options are sketched. The committed intent and the scoped … |
+| `business_purpose` | string | no | It fixes how far options may range before any drafting starts, so the option set is born inside what the intent and its … |
+| `practical_context` | string | no | It opens this process at intake when the committed intent and the scoped trade-offs are presented, closing once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

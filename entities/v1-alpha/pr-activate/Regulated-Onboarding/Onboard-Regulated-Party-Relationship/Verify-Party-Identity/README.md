@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-ac
 
 This is a **Activity** (level L3), named **Verify Party Identity**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Activation** process context, domain `pr`, lifecycle stage Activate. It belongs to **Onboard Regulated Party Relationship** (`processes:process-pr-activate-6qzuve`). Its canonical ID is `processes:activity-pr-activate-y46zs2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity proves who the applicant really is, to the standard the controlling regime sets — documents collected and checked, electronic identity verification run, independent sources brought in to corroborate. The application arrives as the trigger, identity is established piece by piece, and the verified identity is confirmed onward. Nothing else in onboarding can proceed on an unproven name.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise knows, to its regulator's standard, exactly who it is about to do business with.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the regulated onboarding when a party applies in a jurisdiction or sector mandating identity verification first, and it completes once the verified identity is confirmed onward for the ownership work.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A customer relationship management officer checks the applicant's identity documents, runs the electronic verification, and corroborates against independent sources before confirming the identity onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Verify Party Identity |
+| `plain_language_description` | string | no | This activity proves who the applicant really is, to the standard the controlling regime sets — documents collected and … |
+| `business_purpose` | string | no | It exists so the enterprise knows, to its regulator's standard, exactly who it is about to do business with. |
+| `practical_context` | string | no | It opens the regulated onboarding when a party applies in a jurisdiction or sector mandating identity verification … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

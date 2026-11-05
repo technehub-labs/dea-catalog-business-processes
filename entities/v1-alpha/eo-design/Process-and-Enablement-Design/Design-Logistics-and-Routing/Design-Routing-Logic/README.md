@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-de
 
 This is a **Activity** (level L3), named **Design Routing Logic**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. It belongs to **Design Logistics and Routing** (`processes:process-eo-design-8s76nv`). Its canonical ID is `processes:activity-eo-design-vk83pr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity writes the rules that decide which way each shipment travels across the network. The chosen modes and the service-level designs arrive as the constraints, the routing specification is drawn and checked against them, and the routing logic is confirmed onward for the design's commitment. Shipments will follow rules, not improvisation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every shipment moves by designed logic that honours the chosen modes and promised service levels.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the node positioning, when the mode selections and service-level designs are to hand, and it completes once the routing specification is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function designer draws the rules deciding each shipment's path through the positioned nodes, checks them against the mode and service constraints, and confirms the routing specification.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Routing Logic |
+| `plain_language_description` | string | no | This activity writes the rules that decide which way each shipment travels across the network. The chosen modes and the … |
+| `business_purpose` | string | no | It exists so every shipment moves by designed logic that honours the chosen modes and promised service levels. |
+| `practical_context` | string | no | It follows the node positioning, when the mode selections and service-level designs are to hand, and it completes once … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-op
 
 This is a **Activity** (level L3), named **Report Audit Findings**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. It belongs to **Audit Policy Compliance** (`processes:process-ge-operate-hxxyc9`). Its canonical ID is `processes:activity-ge-operate-r4ka8z`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity delivers what the audits found — findings, recommendations, and the follow-up actions they require — to the governance body charged with receiving them. The executed audits arrive as the source, the findings are written up and routed to the right body, and the reported findings are confirmed onward for tracking. The bodies cannot fix what they never hear about.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so audit findings reach the governance body that owns the remedy.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the audit execution, once evidence is in hand, and it completes when the reported findings and recommendations are confirmed onward to the appropriate governance body.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A compliance function auditor writes up the findings and recommendations from the executed audits, routes them to the governance body charged with the remedy, and confirms the reporting.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Report Audit Findings |
+| `plain_language_description` | string | no | This activity delivers what the audits found — findings, recommendations, and the follow-up actions they require — to … |
+| `business_purpose` | string | no | It exists so audit findings reach the governance body that owns the remedy. |
+| `practical_context` | string | no | It follows the audit execution, once evidence is in hand, and it completes when the reported findings and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

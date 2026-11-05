@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-improve-mgkw59 through concluding task processes:task-ge-improve-record-w3mv9c, whose outcome — Case file retained for Deliver Effectiveness Reviews under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Deliver Effectiveness Reviews'
+plain_language_description: 'This activity hands the finished effectiveness reviews — outcomes, lessons, and recommendations together — to the governance bodies themselves. The consolidated reviews arrive as the release candidates, delivery is executed to each body, and the delivered reviews are confirmed for the record. The people being graded finally receive their grades.'
+business_purpose: 'It exists so governance bodies actually receive the effectiveness reviews written about them.'
+practical_context: 'It closes the effectiveness review once outcomes, lessons, and recommendations are consolidated, and it completes when the delivered reviews are confirmed to the governance bodies.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function officer delivers the consolidated effectiveness reviews to each governance body, and confirms the deliveries for the record.'

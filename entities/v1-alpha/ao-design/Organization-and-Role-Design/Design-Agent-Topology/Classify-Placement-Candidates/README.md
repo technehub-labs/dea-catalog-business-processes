@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-de
 
 This is a **Activity** (level L3), named **Classify Placement Candidates**, currently **candidate (yellow)**. It is part of the **Organization and Agent Topology Design** process context, domain `ao`, lifecycle stage Design. It belongs to **Design Agent Topology** (`processes:process-ao-design-8fzp2b`). Its canonical ID is `processes:activity-ao-design-vtuma6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity sorts the roles and pieces of work in the designed structure into candidates for people, artificial agents, or a blend of both. The committed organization model frame comes in first, each role and work item is examined and typed, and the classified candidates are confirmed with the design authority. The typing then anchors the placement decisions that follow.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so placement decisions start from an explicit classification of what work could sit where, rather than from assumptions.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the design of the agent topology, when the framed organization model is presented for placement work, and it closes once the classified candidates are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A designer working for the organization design authority goes through the roles in the new structure, marks which are suited to people, artificial agents, or hybrid arrangements, and files the classification that placement decisions will build on.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Classify the Placement Candidates |
+| `plain_language_description` | string | no | This activity sorts the roles and pieces of work in the designed structure into candidates for people, artificial … |
+| `business_purpose` | string | no | It exists so placement decisions start from an explicit classification of what work could sit where, rather than from … |
+| `practical_context` | string | no | It opens the design of the agent topology, when the framed organization model is presented for placement work, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

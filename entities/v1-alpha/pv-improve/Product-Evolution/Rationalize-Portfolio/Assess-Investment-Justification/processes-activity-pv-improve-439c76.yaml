@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-improve-9xvgat through concluding task processes:task-pv-improve-record-xq3zvf, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Assess Investment Justification'
+plain_language_description: 'Product management weighs each proposition in the portfolio against the investment envelope it consumes, asking plainly whether the return still warrants the spend. Direction and performance material is registered at intake, verified, worked into a justification assessment for every proposition, confirmed, and archived.'
+business_purpose: 'It supplies the honest verdict the rationalization effort needs: which propositions still merit their envelope and which have stopped earning their keep.'
+practical_context: 'It is the opening step of portfolio rationalization, triggered when direction and performance evidence arrive; it closes when the confirmed justification assessments are filed.'
+worked_example:
+  agent_type: human
+  narrative: 'In the rationalization round, a product management reviewer takes the portfolio direction and latest performance evidence, registers them at intake, and works proposition by proposition through the assessment - finding, say, that a mature offering no longer earns its envelope - before confirming the assessments for option forming.'

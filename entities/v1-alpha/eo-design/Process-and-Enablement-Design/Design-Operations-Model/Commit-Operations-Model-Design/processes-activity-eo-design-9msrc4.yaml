@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-design-rvfpjb through concluding task processes:task-eo-design-record-mzrs35, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit Operations Model Design'
+plain_language_description: 'This activity gathers the model''s structure, its integrated component designs, and its operating rhythms into one document and gives it formal standing. The three pieces arrive as its inputs, the whole is consolidated and ratified, and the committed design is confirmed as the basis for the build stage. The operation''s blueprint is thereby one decision, owned and dated.'
+business_purpose: 'It exists so the enterprise builds its operation from one committed model design rather than from four parallel design threads.'
+practical_context: 'It closes the operations model design, once structure, integration, and rhythms are in place, and it completes when the committed design is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian assembles the model structure, integrated component designs, and rhythm specification into the design document, obtains ratification, and records the commitment for build planning.'

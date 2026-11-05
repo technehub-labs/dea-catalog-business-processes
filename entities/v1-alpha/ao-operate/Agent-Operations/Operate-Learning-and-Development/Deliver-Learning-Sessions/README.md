@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 This is a **Activity** (level L3), named **Deliver Learning Sessions**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Operate Learning and Development** (`processes:process-ao-operate-87q5mk`). Its canonical ID is `processes:activity-ao-operate-f669fn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity runs the learning sessions the calendar calls for, for people and artificial agents alike. The schedule comes in first, each session is delivered as planned and its running is logged, and the delivered sessions are confirmed for the record. What agents attend is thereby delivery by timetable, not by chance.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the scheduled development actually reaches the agents it was planned for, on the timetable committed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the scheduling of development programmes, when the calendar is presented for delivery, and it completes as each delivered session is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management custodian runs each session on the calendar as planned, logs how the delivery went, and confirms the delivered sessions for completion recording.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Deliver Learning Sessions |
+| `plain_language_description` | string | no | This activity runs the learning sessions the calendar calls for, for people and artificial agents alike. The schedule … |
+| `business_purpose` | string | no | It exists so the scheduled development actually reaches the agents it was planned for, on the timetable committed. |
+| `practical_context` | string | no | It follows the scheduling of development programmes, when the calendar is presented for delivery, and it completes as … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

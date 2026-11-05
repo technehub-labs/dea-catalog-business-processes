@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-operate-53y4j4 through concluding task processes:task-sd-operate-record-8s9f8n, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Scan Environmental Sources'
+plain_language_description: 'The environment never announces itself; it has to be watched. Intake registers the sweep of internal and external watching points, verification confirms the coverage is complete, and processing works the sources and gathers whatever looks like drift, disruption or opportunity into a raw feed. Confirmation passes the raw feed downstream and the records custodian preserves it for filtering.'
+business_purpose: 'It keeps eyes on the world outside the plan, feeding a steady stream of raw observations that drift and disruption cannot slip past.'
+practical_context: 'It runs as a standing sweep, opening at each intake of the source list and closing when the day''s raw feed is confirmed and preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'Strategy function scanners work through the agreed internal and external watching points each week, a verification custodian confirms no source was skipped, and the raw feed goes to the filtering desk for noise removal.'

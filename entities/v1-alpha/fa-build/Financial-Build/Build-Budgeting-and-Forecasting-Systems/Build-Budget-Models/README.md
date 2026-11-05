@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 
 This is a **Activity** (level L3), named **Build Budget Models**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Build Budgeting and Forecasting Systems** (`processes:process-fa-build-92v24c`). Its canonical ID is `processes:activity-fa-build-v4regt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity works the committed plan structure into working budget models for the scoped cycle. The plan structure arrives as the reference, the models are built against it and checked as they take shape, and the working models are confirmed onward for the integrations. The planning cycle's arithmetic exists in working form from here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the planning cycle runs on budget models actually built to the committed plan structure.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the planning system build, once a cycle or tool rebuild is scoped and the plan structure is to hand, and it completes when the working budget models are confirmed onward.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance function builder turns the committed plan structure into working budget models for the scoped cycle, checking each model against the structure as it takes shape.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Build Budget Models |
+| `plain_language_description` | string | no | This activity works the committed plan structure into working budget models for the scoped cycle. The plan structure … |
+| `business_purpose` | string | no | It exists so the planning cycle runs on budget models actually built to the committed plan structure. |
+| `practical_context` | string | no | It opens the planning system build, once a cycle or tool rebuild is scoped and the plan structure is to hand, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

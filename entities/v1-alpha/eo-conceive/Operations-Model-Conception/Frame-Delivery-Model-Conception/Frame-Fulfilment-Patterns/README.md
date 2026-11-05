@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-co
 
 This is a **Activity** (level L3), named **Frame Fulfilment Patterns**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Frame Delivery Model Conception** (`processes:process-eo-conceive-ky5wxp`). Its canonical ID is `processes:activity-eo-conceive-uprp7u`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity settles how products will be fulfilled — made to order, made to stock, or a blend of the two — within the bounds already set. The demand thesis and the bounded envelope arrive as the inputs, the pattern options are weighed and a set chosen, and the fulfilment approach is confirmed onward for commitment. The model now knows not just how it sells but how it supplies.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the delivery model commits to a fulfilment approach that its demand thesis and service bounds can actually sustain.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the bounding of service levels, when the demand thesis and bounded envelope are to hand, and it completes once the fulfilment pattern set is confirmed for the conception's commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function lead weighs make-to-order, make-to-stock, and blended options against the demand thesis and the agreed envelope, picks the fulfilment set, and confirms it with the strategy function.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Frame Fulfilment Patterns |
+| `plain_language_description` | string | no | This activity settles how products will be fulfilled — made to order, made to stock, or a blend of the two — within the … |
+| `business_purpose` | string | no | It exists so the delivery model commits to a fulfilment approach that its demand thesis and service bounds can actually … |
+| `practical_context` | string | no | It follows the bounding of service levels, when the demand thesis and bounded envelope are to hand, and it completes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

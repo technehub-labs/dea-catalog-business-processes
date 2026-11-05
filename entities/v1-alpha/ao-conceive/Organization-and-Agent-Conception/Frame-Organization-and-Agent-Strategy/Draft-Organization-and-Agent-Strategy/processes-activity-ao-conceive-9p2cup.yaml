@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-conceive-e3u8s2 through concluding task processes:task-ao-conceive-record-cp6w7c, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Draft the Organization and Agent Strategy'
+plain_language_description: 'This activity writes the first full version of the strategy that will steer how the enterprise organizes its workforce, including where artificial agents fit. The bounded agent capacity arrives first, the strategy is drafted from it and reviewed for coherence, and the draft is confirmed with those who will ratify it. Once accepted, it sets the direction for framing the organization model and conceiving the workforce mix.'
+business_purpose: 'It exists so the enterprise has a coherent written direction for its workforce and agents before committing to it.'
+practical_context: 'It runs after agent capacity has been bounded, when the capacity boundary is presented for strategy drafting, and it completes when the drafted strategy is confirmed and its record preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function lead turns the agreed agent capacity boundary into a draft strategy covering the organization model and the workforce mix, then confirms the draft with workforce management ahead of formal commitment.'

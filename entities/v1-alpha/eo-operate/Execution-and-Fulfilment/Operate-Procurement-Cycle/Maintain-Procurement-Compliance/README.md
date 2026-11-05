@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Maintain Procurement Compliance**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Procurement Cycle** (`processes:process-eo-operate-vzcxx7`). Its canonical ID is `processes:activity-eo-operate-37uk3c`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity watches the buying flow as it runs, catches anything drifting off policy, and settles it. The operating procurement cycle passes continuously under review, deviations from the purchasing rules are caught and resolved, and the compliant state is confirmed onward. The rules govern the buying, not the other way round.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise's day-to-day buying stays inside its own policy, with deviations caught and settled.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs continuously across the live procurement flow, checked against the purchasing policy, and each deviation it settles closes when the resolution is confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A procurement custodian watches the running purchase flow against policy, catches a requisition that slipped past a required check, resolves it, and confirms the outcome for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Maintain Procurement Compliance |
+| `plain_language_description` | string | no | This activity watches the buying flow as it runs, catches anything drifting off policy, and settles it. The operating … |
+| `business_purpose` | string | no | It exists so the enterprise's day-to-day buying stays inside its own policy, with deviations caught and settled. |
+| `practical_context` | string | no | It runs continuously across the live procurement flow, checked against the purchasing policy, and each deviation it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

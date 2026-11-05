@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-im
 
 This is a **Activity** (level L3), named **Assemble Performance Evidence**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Conduct Operations Performance Review** (`processes:process-eo-improve-g3ngp3`). Its canonical ID is `processes:activity-eo-improve-xunaq5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity pulls the scattered operational records — performance signals, logistics shortfalls, and asset usage — into one review-ready pack. The operational records arrive from their separate homes, the evidence is gathered, organised, and checked for completeness, and the evidence pack is confirmed onward for the findings. The review starts from one coherent picture instead of a drawer of fragments.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the performance review examines one complete, organised evidence base rather than scattered fragments.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the performance review, when the operational records are presented for assembly, and it completes once the evidence pack is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An intake custodian gathers the performance signals, logistics shortfall records, and asset usage data into one pack, checks it for completeness, and confirms the evidence for the findings step.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assemble Performance Evidence |
+| `plain_language_description` | string | no | This activity pulls the scattered operational records — performance signals, logistics shortfalls, and asset usage — … |
+| `business_purpose` | string | no | It exists so the performance review examines one complete, organised evidence base rather than scattered fragments. |
+| `practical_context` | string | no | It opens the performance review, when the operational records are presented for assembly, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

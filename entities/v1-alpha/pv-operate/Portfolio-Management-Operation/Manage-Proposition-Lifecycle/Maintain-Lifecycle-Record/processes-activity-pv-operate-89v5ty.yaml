@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-operate-cau4gv through concluding task processes:task-pv-operate-record-anybmt, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Maintain Lifecycle Record'
+plain_language_description: 'Every transition and gate decision is written into the lifecycle record, so at any moment product management can see where each offering stands and how it got there. New events arrive at intake, are checked, applied to the record, confirmed, and the update trail is preserved.'
+business_purpose: 'It keeps a faithful running history of each proposition''s journey through its stages, the reference everyone relies on for position and precedent.'
+practical_context: 'It operates continuously through lifecycle management: intake opens as transitions and gate decisions land, and closure comes when the refreshed record and audit trail are confirmed and filed.'
+worked_example:
+  agent_type: human
+  narrative: 'After a gate advance is executed, the product management record keeper registers the event at intake, applies it to the proposition''s history at processing, confirms the updated stage account to the team, and hands the trail to the records custodian.'

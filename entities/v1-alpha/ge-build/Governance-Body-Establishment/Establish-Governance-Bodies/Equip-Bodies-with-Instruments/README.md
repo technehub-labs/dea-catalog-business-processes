@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-bu
 
 This is a **Activity** (level L3), named **Equip Bodies with Instruments**, currently **candidate (yellow)**. It is part of the **Governance Body Establishment** process context, domain `ge`, lifecycle stage Build. It belongs to **Establish Governance Bodies** (`processes:process-ge-build-3p38us`). Its canonical ID is `processes:activity-ge-build-p29x52`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity hands each stood-up body the documents it will govern by — its charter, the policies, and the supporting standards. The published instruments arrive as the equipment, each body is equipped with its own set and checked against what its mandate requires, and the equipped bodies are confirmed onward for their cycles. A body without its instruments is a name without authority.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every constituted body holds the actual documents it is meant to operate under.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the constitution and publication of instruments, and it completes once each equipped body is confirmed onward for its operating cycles.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function officer hands each constituted body its charter, the applicable policies, and the supporting standards, checks the set against the body's mandate, and confirms the equipping.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Equip Bodies with Instruments |
+| `plain_language_description` | string | no | This activity hands each stood-up body the documents it will govern by — its charter, the policies, and the supporting … |
+| `business_purpose` | string | no | It exists so every constituted body holds the actual documents it is meant to operate under. |
+| `practical_context` | string | no | It follows the constitution and publication of instruments, and it completes once each equipped body is confirmed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

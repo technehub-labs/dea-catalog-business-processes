@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-design-vk422z through concluding task processes:task-fa-design-record-cswk42, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design Cost Allocation Model'
+plain_language_description: 'This activity works out the rules by which costs are spread across the parts of the enterprise that bear them. The account structure arrives as the frame, the allocation model is designed and checked against it, and the model is confirmed onward for the controls work. Every cost gains a designed destination rather than a dispute.'
+business_purpose: 'It exists so costs land where they belong by designed rule, not by negotiation each period.'
+practical_context: 'It follows the account structure design, when the chart is to hand, and it completes once the cost allocation model is confirmed for the embedded controls.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance design authority designer works out the rules spreading costs to the parts of the enterprise that bear them, checks the model against the account structure, and confirms it.'

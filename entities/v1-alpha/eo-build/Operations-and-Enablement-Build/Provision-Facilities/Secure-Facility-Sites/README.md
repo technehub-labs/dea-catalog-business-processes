@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-bu
 
 This is a **Activity** (level L3), named **Secure Facility Sites**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Provision Facilities** (`processes:process-eo-build-tqybhd`). Its canonical ID is `processes:activity-eo-build-neek9x`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity acquires and takes control of the sites the facility blueprint calls for. The committed blueprint arrives as the requirement, sites are secured at the required positions and checked against it, and the secured sites are confirmed onward for fitting out. The operation's buildings stop being plans and become places the enterprise controls.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise holds actual control of the sites its operation needs before any fitting out begins.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens facility provisioning, once the facility blueprint is committed, and it completes when the secured sites are confirmed for fit-out.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian secures each site at the position the blueprint requires, checks the acquisitions against it, and confirms the secured sites for the fit-out step.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Secure Facility Sites |
+| `plain_language_description` | string | no | This activity acquires and takes control of the sites the facility blueprint calls for. The committed blueprint arrives … |
+| `business_purpose` | string | no | It exists so the enterprise holds actual control of the sites its operation needs before any fitting out begins. |
+| `practical_context` | string | no | It opens facility provisioning, once the facility blueprint is committed, and it completes when the secured sites are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

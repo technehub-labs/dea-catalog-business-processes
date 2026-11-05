@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 This is a **Activity** (level L3), named **Compute Cycle Payroll**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Operate Payroll and Benefits** (`processes:process-ao-operate-38qyc6`). Its canonical ID is `processes:activity-ao-operate-gxarb3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity builds the cycle's payroll figures from the time data the attendance process has checked. The validated time data arrives first, pay is calculated for every agent in the cycle, and the computed payroll is confirmed before anything is paid. Accuracy here is what the rest of the cycle's payments depend on.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every payment the cycle makes starts from payroll figures worked out correctly.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs each pay cycle once the checked attendance data is handed over, and it closes when the computed payroll is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian turns the cycle's validated time data into payroll figures for every agent, checks the totals line up, and confirms the computed payroll for disbursement.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Calculate the Cycle's Payroll |
+| `plain_language_description` | string | no | This activity builds the cycle's payroll figures from the time data the attendance process has checked. The validated … |
+| `business_purpose` | string | no | It exists so every payment the cycle makes starts from payroll figures worked out correctly. |
+| `practical_context` | string | no | It runs each pay cycle once the checked attendance data is handed over, and it closes when the computed payroll is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

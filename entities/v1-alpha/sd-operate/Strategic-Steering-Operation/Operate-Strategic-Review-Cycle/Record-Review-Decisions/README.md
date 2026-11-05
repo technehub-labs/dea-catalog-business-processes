@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 
 This is a **Activity** (level L3), named **Record Review Decisions**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Operate Strategic Review Cycle** (`processes:process-sd-operate-ucxpz4`). Its canonical ID is `processes:activity-sd-operate-4je2y3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+A decision that is not written down did not really happen. The conducted sessions arrive at intake, verification checks every minute against what was agreed, and processing logs each decision with its owner and route to whichever process will carry it out. Confirmation notifies the receiving teams and the records custodian preserves the decision log at its retention tier.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives review sessions lasting effect, turning tabled discussion into logged, owned and routed decisions other processes can execute.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes each session on the cadence, opening at intake of the minuted outcomes and closing when the routed log is confirmed and preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function scribe logs each agreed decision with owner and due route, a verification custodian reads the log back against the minutes, and the confirmation custodian notifies the receiving teams their actions are on the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Record Review Decisions |
+| `plain_language_description` | string | no | A decision that is not written down did not really happen. The conducted sessions arrive at intake, verification checks … |
+| `business_purpose` | string | no | It gives review sessions lasting effect, turning tabled discussion into logged, owned and routed decisions other … |
+| `practical_context` | string | no | It closes each session on the cadence, opening at intake of the minuted outcomes and closing when the routed log is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

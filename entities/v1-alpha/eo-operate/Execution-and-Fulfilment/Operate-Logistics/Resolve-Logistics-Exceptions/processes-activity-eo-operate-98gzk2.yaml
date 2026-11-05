@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-operate-zh9m57 through concluding task processes:task-eo-operate-record-destdw, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Resolve Logistics Exceptions'
+plain_language_description: 'This activity steps in when a shipment goes astray — late, damaged, lost, or misrouted — and works to put the delivery promise back on track. The flagged deviations arrive as the triggers, each exception is worked to a recovery, and the handling is recorded. Plans meet reality here, and reality is brought back into line.'
+business_purpose: 'It exists so shipment deviations are recovered and the delivery commitment restored rather than quietly missed.'
+practical_context: 'It runs whenever tracking or execution flags a deviation, from the flag to the restored delivery, and it completes once the exception handling is recorded and retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A logistics custodian takes a flagged misrouted shipment, works a recovery that still honours the delivery commitment where possible, and records the handling for the file.'

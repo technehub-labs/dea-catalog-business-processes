@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-operate-zdjchn through concluding task processes:task-sd-operate-record-93ystw, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Flag Performance Deviations'
+plain_language_description: 'The tracked position shows where execution has slipped and this work makes that visible. Intake brings the position in, verification confirms the gap is real rather than a data fault, and processing raises and triages each departure from plan by severity and owner. Confirmation communicates the flagged list downstream and the records custodian preserves it for the reporting step.'
+business_purpose: 'It turns quiet gaps into explicit, triaged deviations, so underperformance is confronted early instead of surfacing at year end.'
+practical_context: 'It follows tracking, opening when the updated position is presented at intake and closing when the triaged flags are confirmed and stored.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function monitor spots two gaps in the tracked position, a verification custodian rules out a data fault before raising them, and the triaged flags go to the reporting step with severities and owners assigned.'

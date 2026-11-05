@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-conceive-xp6fye through concluding task processes:task-ge-conceive-record-3n2pyq, whose outcome — Case file retained for Propose Authority and Decision Rights under the records retention schedule with cryptographic integrity protection; statutory retention …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Propose Authority and Decision Rights'
+plain_language_description: 'This activity sets out who may decide what under the new instrument, proposing its authority and its rights. The bounded scope arrives as the territory to be empowered, authority and decision rights are proposed within it and reviewed for sense, and the proposals are confirmed onward for the drafting. The instrument''s teeth are sketched here, before they are cast.'
+business_purpose: 'It exists so the instrument''s power — who decides what — is proposed deliberately before the document is written.'
+practical_context: 'It follows the scope bounding, working within the bounded territory, and it completes once the proposed authority and decision rights are confirmed for the drafting.'
+worked_example:
+  agent_type: human
+  narrative: 'A governing board lead proposes who may decide what under the bounded instrument, reviews the authority and rights for sense, and confirms the proposals for the drafting.'

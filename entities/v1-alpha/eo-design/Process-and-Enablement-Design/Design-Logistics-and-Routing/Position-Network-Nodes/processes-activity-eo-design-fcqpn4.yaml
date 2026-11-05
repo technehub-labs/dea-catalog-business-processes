@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-design-8s76nv through concluding task processes:task-eo-design-record-sznnbz, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Position Network Nodes'
+plain_language_description: 'This activity plans where each node of the network — warehouse, hub, or cross-dock — will sit. The delivery model design and the demand geography arrive as the inputs, node positions are worked out and reviewed against the flows they must serve, and the node position plan is confirmed onward for the routing work. The physical skeleton of the network is drawn before anything is built.'
+business_purpose: 'It exists so the network''s nodes sit where the flows actually need them, decided on design rather than on available real estate.'
+practical_context: 'It follows the mode selection, when the delivery model design and demand geography are in hand, and it completes once the node position plan is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function designer works out where each warehouse, hub, and cross-dock should sit to serve the flows, reviews the positions against demand geography, and confirms the node plan.'

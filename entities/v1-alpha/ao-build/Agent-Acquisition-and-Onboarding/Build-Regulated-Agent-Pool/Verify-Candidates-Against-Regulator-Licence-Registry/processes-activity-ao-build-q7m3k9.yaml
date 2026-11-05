@@ -137,3 +137,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-build-9my4jr through concluding task processes:task-ao-build-record-4r92mc, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Verify Candidates Against the Regulator Licence Registry'
+plain_language_description: 'This activity confirms, candidate by candidate, that the qualifications people claim for licensed roles really are registered with the relevant regulator. The candidate list is brought in and each person''s details are checked against the licence registry, with each confirmed licence record attached to the candidate it covers. The results are confirmed to the next stage and retained so the verification can be evidenced later.'
+business_purpose: 'It exists so the enterprise builds its licensed-candidate pool on registrations it has actually confirmed, not on credentials it has merely been told about.'
+practical_context: 'It runs at the start of building the regulated agent pool, when the candidate list and access to the regulator registries are presented, and it closes once the verified candidate list is confirmed and its record preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'A verification custodian checks each clinician''s details against the state healthcare licensure registries, records the licence status found for everyone on the list, and passes the verified list on for the fitness attestation step.'

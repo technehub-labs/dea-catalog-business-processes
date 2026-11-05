@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 
 This is a **Activity** (level L3), named **Classify Environmental Signals**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Sense Environmental Signals** (`processes:process-sd-operate-53y4j4`). Its canonical ID is `processes:activity-sd-operate-acwkkr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Qualified observations still need meaning, so each one gets typed. Intake registers the filtered set, verification confirms the typing rules are applied evenly, and processing sorts the qualified set by type, tagging each observation as drift, as disruption, or as opportunity for the strategy in operation. Confirmation passes the typed set downstream and the records custodian preserves the classifications for routing.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives each surviving observation a name the steering process can act on, separating slow drift from sudden disruption and real openings.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows filtering, opening at intake of the qualified set and closing when the typed observations are confirmed and preserved for routing.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function analyst tags each qualified observation by type against the typing rules, a verification custodian checks the tags are consistent, and the typed set is confirmed onward to the routing step.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Classify Environmental Signals |
+| `plain_language_description` | string | no | Qualified observations still need meaning, so each one gets typed. Intake registers the filtered set, verification … |
+| `business_purpose` | string | no | It gives each surviving observation a name the steering process can act on, separating slow drift from sudden … |
+| `practical_context` | string | no | It follows filtering, opening at intake of the qualified set and closing when the typed observations are confirmed and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

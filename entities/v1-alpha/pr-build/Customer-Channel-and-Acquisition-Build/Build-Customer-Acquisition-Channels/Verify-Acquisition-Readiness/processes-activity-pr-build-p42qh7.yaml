@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-build-nygvw7 through concluding task processes:task-pr-build-record-5hchza, whose outcome — Closure case file retained for Verify Acquisition Readiness under the records retention schedule with cryptographic integrity protection; cryptographic …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Verify Acquisition Readiness'
+plain_language_description: 'This activity proves the channels and engines as built can actually bring in the first customers as designed. The assembled acquisition machinery arrives with the designs as the yardstick, readiness is examined against them, and the determination is confirmed for operation. The doors open only once this says the machinery works.'
+business_purpose: 'It exists so customer acquisition goes live proven able to acquire, not merely built.'
+practical_context: 'It closes the acquisition build once infrastructure, integration, and engines are in place, and it completes when the readiness determination is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A customer relationship management verifier proves the built channels and engines can acquire the first customers as designed, and confirms the readiness determination.'

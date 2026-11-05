@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-retire-umxf3c through concluding task processes:task-sd-retire-record-kayn5k, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Identify Superseded Regulated Strategic Plan'
+plain_language_description: 'The directive says retire; this work pins down exactly which plan on record is the one leaving. Intake registers the recorded directive and the plan record, verification confirms the retiring candidate is the acknowledged, live plan named in the instruction, and processing links it to its successor so old and new stand side by side on the record. Confirmation announces the pairing downstream and the records custodian preserves the supersession reference.'
+business_purpose: 'It establishes exactly which acknowledged, live plan is retiring and ties it to its successor, so nothing retires by mistake and nothing replaces it untracked.'
+practical_context: 'It follows the directive, opening at intake of the recorded instruction and closing when the supersession pairing is confirmed and preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function registrar matches the directive against the plan record, a verification custodian confirms the named plan is the acknowledged live one, and the successor link is preserved so reviewers can see old and new side by side.'

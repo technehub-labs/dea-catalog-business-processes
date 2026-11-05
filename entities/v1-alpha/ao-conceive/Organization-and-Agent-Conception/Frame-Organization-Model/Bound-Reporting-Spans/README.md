@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 
 This is a **Activity** (level L3), named **Bound Reporting Spans**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Frame Organization Model** (`processes:process-ao-conceive-ruxjvh`). Its canonical ID is `processes:activity-ao-conceive-m77sb9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity decides how wide reporting relationships may run anywhere in the organization model. The derived structure principles come in and are reviewed, the permitted span limits are worked out against them, and the agreed spans are confirmed to the framers of the model. The limits are then recorded so no later design step can quietly stretch a reporting line beyond what the model allows.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so reporting loads stay manageable by design, with span limits fixed before concrete roles are drawn up.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows derivation of the structure principles, when those principles are presented for span setting, and it closes once the bounded spans are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management lead takes the agreed structure principles and sets the maximum number of direct reports any position in the model may carry, confirming the limits before coordination boundaries are marked out.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set the Permitted Reporting Spans |
+| `plain_language_description` | string | no | This activity decides how wide reporting relationships may run anywhere in the organization model. The derived … |
+| `business_purpose` | string | no | It exists so reporting loads stay manageable by design, with span limits fixed before concrete roles are drawn up. |
+| `practical_context` | string | no | It follows derivation of the structure principles, when those principles are presented for span setting, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-design-pqkvdc through concluding task processes:task-ge-design-record-t3zad2, whose outcome — Case file retained for Design Risk Taxonomy under the records retention schedule with cryptographic integrity protection; statutory retention horizon applied …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design Risk Taxonomy'
+plain_language_description: 'This activity sorts the enterprise''s risks into their named classes, following the committed direction. The committed direction arrives as the ordering principle, the taxonomy is designed from it and reviewed for coverage, and the taxonomy is confirmed onward for the assessment scales. Every risk the enterprise faces gains its proper drawer.'
+business_purpose: 'It exists so enterprise risks are classified by designed structure rather than ad hoc naming.'
+practical_context: 'It opens the risk framework design once the risk direction is committed, and it completes when the designed taxonomy is confirmed for the assessment scales.'
+worked_example:
+  agent_type: human
+  narrative: 'A governance design authority designer sorts the enterprise''s risks into named classes per the committed direction, reviews the taxonomy for coverage, and confirms it onward.'

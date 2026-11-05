@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-improve-axtq3b through concluding task processes:task-ge-improve-record-2vy4rd, whose outcome — Case file retained for Assess Finding Recurrence under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Assess Finding Recurrence'
+plain_language_description: 'This activity checks whether each finding is new trouble or the same old trouble returning. The scored findings are set beside the record of findings gone before, recurrence is assessed one by one, and the assessed set is confirmed onward for the standards measurement. Repeat findings earn their own special attention from this point.'
+business_purpose: 'It exists so findings that keep coming back are recognised as repeats, and treated as such.'
+practical_context: 'It follows the severity scoring, measured against the record of findings gone before, and it completes once the assessed recurrence is confirmed onward for the standards measurement.'
+worked_example:
+  agent_type: human
+  narrative: 'An audit function analyst checks each scored finding against the historical record, marks the ones that are repeat visits, and confirms the assessed set onward.'

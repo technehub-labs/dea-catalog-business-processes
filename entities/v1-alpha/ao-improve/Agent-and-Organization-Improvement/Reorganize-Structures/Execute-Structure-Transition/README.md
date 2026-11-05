@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 
 This is a **Activity** (level L3), named **Execute Structure Transition**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Reorganize Structures** (`processes:process-ao-improve-xs59e2`). Its canonical ID is `processes:activity-ao-improve-pp4uvg`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity carries out the sequenced transition, moving units, roles, and agents through the change in the agreed order. The sequence comes in first, each step is executed and checked against it as the work proceeds, and the executed transition is confirmed once complete. What is filed shows the change was carried out to the plan rather than improvised along the way.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the planned structural change genuinely happens, in the agreed order, across every affected unit, role, and agent.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the transition sequence is confirmed, when the sequenced steps are presented for execution, and it closes when the executed transition is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian walks the transition step by step, moves each unit and role in the agreed order, checks progress against the sequence, and confirms the executed transition for the handover recording.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Execute the Structure Transition |
+| `plain_language_description` | string | no | This activity carries out the sequenced transition, moving units, roles, and agents through the change in the agreed … |
+| `business_purpose` | string | no | It exists so the planned structural change genuinely happens, in the agreed order, across every affected unit, role … |
+| `practical_context` | string | no | It runs once the transition sequence is confirmed, when the sequenced steps are presented for execution, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

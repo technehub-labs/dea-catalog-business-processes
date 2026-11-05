@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-de
 
 This is a **Activity** (level L3), named **Articulate Governance Bodies**, currently **candidate (yellow)**. It is part of the **Governance System Design** process context, domain `ge`, lifecycle stage Design. It belongs to **Design Governance System** (`processes:process-ge-design-zbrg8b`). Its canonical ID is `processes:activity-ge-design-r9wz2r`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity names and sketches each board, committee, and other body the governance system will consist of. The committed governance strategy arrives as the source, the body inventory is articulated from it and reviewed for coverage, and the articulated bodies are confirmed onward for the delegation work. The system's cast of characters is settled first.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so governance design starts by settling exactly which bodies the system comprises.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the governance system design once a governance strategy has been committed, and it completes when the articulated body inventory is confirmed for the delegation design.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A governance design authority designer names and sketches each board, committee, and other body the strategy calls for, and confirms the articulated inventory for the delegation design.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Articulate Governance Bodies |
+| `plain_language_description` | string | no | This activity names and sketches each board, committee, and other body the governance system will consist of. The … |
+| `business_purpose` | string | no | It exists so governance design starts by settling exactly which bodies the system comprises. |
+| `practical_context` | string | no | It opens the governance system design once a governance strategy has been committed, and it completes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

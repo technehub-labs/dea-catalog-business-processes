@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-de
 
 This is a **Activity** (level L3), named **Bound Objectives Scope**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Design Objectives and Targets** (`processes:process-sd-design-vdwkmh`). Its canonical ID is `processes:activity-sd-design-ck5dud`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The chosen option needs to become measurable, and measurement starts with edges. Intake registers the option and the evaluation criteria, verification confirms both are current, and processing marks out how many objectives and targets the design will carry and where they apply. Confirmation passes the agreed scope downstream and the records custodian preserves it for drafting.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It keeps the measurement design focused, fixing in advance which objectives and targets the chosen option actually needs.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens this process at intake when the chosen option and the evaluation criteria arrive, closing once the scope lines are confirmed and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function analyst scopes the objective set with the activity owner, agreeing how many measures the chosen option needs and where they bite, and the records custodian preserves the agreed edges for the drafting team.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Set the Objectives Scope |
+| `plain_language_description` | string | no | The chosen option needs to become measurable, and measurement starts with edges. Intake registers the option and the … |
+| `business_purpose` | string | no | It keeps the measurement design focused, fixing in advance which objectives and targets the chosen option actually … |
+| `practical_context` | string | no | It opens this process at intake when the chosen option and the evaluation criteria arrive, closing once the scope lines … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

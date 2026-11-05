@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-improve-babwdc through concluding task processes:task-eo-improve-record-bx5dtm, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit Platform Upgrades'
+plain_language_description: 'This activity gives the worked-up platform fixes formal standing so they are scheduled for implementation. The upgrade designs arrive as the case for each fix, the set is reviewed and ratified, and the committed upgrades are confirmed into the improvement backlog. From here the fixes are dated work, not wishes.'
+business_purpose: 'It exists so the designed platform upgrades are committed to a backlog and scheduled, rather than drifting unprioritised.'
+practical_context: 'It follows the upgrade design, once the designs are in hand, and it completes when the committed upgrades are confirmed into the backlog and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian reviews each upgrade design, ratifies the set for implementation, and records the committed upgrades into the platform improvement backlog.'

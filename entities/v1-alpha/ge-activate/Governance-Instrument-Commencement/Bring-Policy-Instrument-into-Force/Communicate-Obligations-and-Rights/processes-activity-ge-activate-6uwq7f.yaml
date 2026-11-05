@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-activate-wegs44 through concluding task processes:task-ge-activate-record-mpc6x3, whose outcome — Case file retained for Communicate Obligations and Rights under the records retention schedule with cryptographic integrity protection; statutory retention …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Communicate Obligations and Rights'
+plain_language_description: 'This activity tells everyone the new instrument binds what it now requires of them and what it gives them in return. The instrument in force arrives as the source of the message, each bound party is notified of its obligations, rights, and duties, and the notified parties are confirmed onward. Nobody can later claim they were not told.'
+business_purpose: 'It exists so every bound party knows its obligations and rights under the instrument from the moment it takes force.'
+practical_context: 'It runs as the instrument takes force, working from the instrument''s own terms, and it completes once the bound parties are notified and their notification confirmed onward.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function officer notifies each bound party of the duties and rights the newly forced instrument gives them, and confirms the notifications onward for the enforcement baseline.'

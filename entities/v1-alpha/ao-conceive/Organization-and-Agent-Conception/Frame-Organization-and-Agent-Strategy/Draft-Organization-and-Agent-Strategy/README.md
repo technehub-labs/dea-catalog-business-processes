@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 
 This is a **Activity** (level L3), named **Draft Organization and Agent Strategy**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Frame Organization and Agent Strategy** (`processes:process-ao-conceive-e3u8s2`). Its canonical ID is `processes:activity-ao-conceive-9p2cup`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity writes the first full version of the strategy that will steer how the enterprise organizes its workforce, including where artificial agents fit. The bounded agent capacity arrives first, the strategy is drafted from it and reviewed for coherence, and the draft is confirmed with those who will ratify it. Once accepted, it sets the direction for framing the organization model and conceiving the workforce mix.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise has a coherent written direction for its workforce and agents before committing to it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs after agent capacity has been bounded, when the capacity boundary is presented for strategy drafting, and it completes when the drafted strategy is confirmed and its record preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function lead turns the agreed agent capacity boundary into a draft strategy covering the organization model and the workforce mix, then confirms the draft with workforce management ahead of formal commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Draft the Organization and Agent Strategy |
+| `plain_language_description` | string | no | This activity writes the first full version of the strategy that will steer how the enterprise organizes its workforce … |
+| `business_purpose` | string | no | It exists so the enterprise has a coherent written direction for its workforce and agents before committing to it. |
+| `practical_context` | string | no | It runs after agent capacity has been bounded, when the capacity boundary is presented for strategy drafting, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

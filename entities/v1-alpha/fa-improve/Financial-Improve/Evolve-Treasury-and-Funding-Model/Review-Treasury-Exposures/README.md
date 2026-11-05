@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-im
 
 This is a **Activity** (level L3), named **Review Treasury Exposures**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Evolve Treasury and Funding Model** (`processes:process-fa-improve-2kemkq`). Its canonical ID is `processes:activity-fa-improve-grdfaj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity weighs what the watched shifts now expose in treasury terms against the model as it stands. The monitored shifts arrive as the input, the exposures they create are reviewed and bounded against the current model, and the reviewed exposures are confirmed onward for the evolution design. The gap between the model and the world it lives in is made explicit.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the model's evolution is aimed at exposures that are named and measured, not sensed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the shift monitoring, when the tracked changes are handed over, and it completes once the reviewed treasury exposures are confirmed for the evolution design.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance design authority analyst weighs the exposures the market shift has created against the current treasury model, bounds them, and confirms the review for the evolution design.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Review Treasury Exposures |
+| `plain_language_description` | string | no | This activity weighs what the watched shifts now expose in treasury terms against the model as it stands. The monitored … |
+| `business_purpose` | string | no | It exists so the model's evolution is aimed at exposures that are named and measured, not sensed. |
+| `practical_context` | string | no | It follows the shift monitoring, when the tracked changes are handed over, and it completes once the reviewed treasury … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

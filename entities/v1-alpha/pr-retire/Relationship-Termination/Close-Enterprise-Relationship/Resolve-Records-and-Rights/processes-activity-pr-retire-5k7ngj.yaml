@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-retire-bd3asa through concluding task processes:task-pr-retire-record-wa6gpu, whose outcome — Closure case file retained for Resolve Records and Rights under the records retention schedule with cryptographic integrity protection; cryptographic …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Resolve Records and Rights'
+plain_language_description: 'This activity settles what happens to the relationship''s records, the rights either side was granted, and how the regulated data is handled — erasure duties included. The relationship''s records, data, and granted rights arrive as the estate to divide, disposition is resolved for each and evidenced, and the resolved position is confirmed onward for the closure. The relationship''s paper afterlife is ordered here.'
+business_purpose: 'It exists so records, licensed rights, and regulated data end up exactly where law and contract say they must.'
+practical_context: 'It follows the obligation settlement, once the estate to divide is clear, and it completes when the resolved records, rights, and data handling — erasure included — are confirmed onward.'
+worked_example:
+  agent_type: human
+  narrative: 'A customer relationship management officer resolves the records'' disposition, the licensed and IP rights, and the regulated data''s erasure duties, evidencing each resolution onward.'

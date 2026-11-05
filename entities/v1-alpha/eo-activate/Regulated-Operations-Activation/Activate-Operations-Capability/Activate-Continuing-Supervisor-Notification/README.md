@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-ac
 
 This is a **Activity** (level L3), named **Activate Continuing-Supervisor Notification**, currently **candidate (yellow)**. It is part of the **Activate Operations Capability** process context, domain `eo`, lifecycle stage Activate. It belongs to **Activate Operations Capability** (`processes:process-eo-activate-sy5qsa`). Its canonical ID is `processes:activity-eo-activate-wfw66c`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity switches on the standing notifications that keep the continuing supervisor informed under the regulator's ongoing oversight. The capability's authorization and the supervisor relationship arrive as the inputs, the notification arrangements are put into active use and checked against them, and the issued notifications are recorded on the operations record. From then on, oversight does not wait to be asked; it is told.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the supervising authority's continuing oversight is fed by standing notification from the moment the capability goes live.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs as the capability approaches live service, once the authorization is on record and the supervisor relationship is set, and it completes when the issued notifications are confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A compliance function officer puts the standing notifications for the supervising authority into active use against the capability's fresh authorization, and confirms the issued notification on the operations record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Activate the Continuing-Supervisor Notification |
+| `plain_language_description` | string | no | This activity switches on the standing notifications that keep the continuing supervisor informed under the regulator's … |
+| `business_purpose` | string | no | It exists so the supervising authority's continuing oversight is fed by standing notification from the moment the … |
+| `practical_context` | string | no | It runs as the capability approaches live service, once the authorization is on record and the supervisor relationship … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

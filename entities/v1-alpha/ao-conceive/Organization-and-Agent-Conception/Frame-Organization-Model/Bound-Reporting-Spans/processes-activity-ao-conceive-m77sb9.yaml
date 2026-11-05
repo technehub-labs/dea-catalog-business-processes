@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-conceive-ruxjvh through concluding task processes:task-ao-conceive-record-93y2fw, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Set the Permitted Reporting Spans'
+plain_language_description: 'This activity decides how wide reporting relationships may run anywhere in the organization model. The derived structure principles come in and are reviewed, the permitted span limits are worked out against them, and the agreed spans are confirmed to the framers of the model. The limits are then recorded so no later design step can quietly stretch a reporting line beyond what the model allows.'
+business_purpose: 'It exists so reporting loads stay manageable by design, with span limits fixed before concrete roles are drawn up.'
+practical_context: 'It follows derivation of the structure principles, when those principles are presented for span setting, and it closes once the bounded spans are confirmed and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A workforce management lead takes the agreed structure principles and sets the maximum number of direct reports any position in the model may carry, confirming the limits before coordination boundaries are marked out.'

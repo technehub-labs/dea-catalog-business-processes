@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-conceive-r93j3d through concluding task processes:task-sd-conceive-record-k8q7t5, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit Purpose and Ambition'
+plain_language_description: 'Purpose and ambition are framed; this step makes them official. The framed statement and envelope arrive at intake, verification confirms both are settled, and the commitment locks them in as the anchor for the intent work that follows. Confirmation notifies downstream consumers that the anchor is in place and the records custodian preserves the committed pair on the audit trail.'
+business_purpose: 'It closes purpose definition with a committed anchor, giving strategic intent conception a fixed starting point.'
+practical_context: 'It opens once the statement and the envelope are framed and closes with commitment confirmed, downstream teams notified and evidence archived.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function lead presents the framed purpose and ambition for commitment, the confirmation custodian notifies the intent conception team their anchor is ready, and the records custodian files the committed pair at its retention tier.'

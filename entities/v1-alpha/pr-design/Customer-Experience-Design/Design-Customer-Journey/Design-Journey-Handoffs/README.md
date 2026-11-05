@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-de
 
 This is a **Activity** (level L3), named **Design Journey Handoffs**, currently **candidate (yellow)**. It is part of the **Customer Experience Design** process context, domain `pr`, lifecycle stage Design. It belongs to **Design Customer Journey** (`processes:process-pr-design-j6fakx`). Its canonical ID is `processes:activity-pr-design-k9ehsu`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity works out how the customer crosses from one stage to the next, including where work hands off between processes. The mapped stages and their moments arrive as the seams to be smoothed, handoffs are designed across them and checked for drops, and the designed handoffs are confirmed onward for the journey's commitment. The journey is stitched into one continuous experience.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the customer never feels the seams between journey stages or internal handoffs.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the moments identification, when the decisive points are marked, and it completes once the designed handoffs are confirmed for the journey's commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A customer relationship management designer designs how the customer crosses each stage boundary, including the internal handoffs, and confirms the designed handoffs onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Journey Handoffs |
+| `plain_language_description` | string | no | This activity works out how the customer crosses from one stage to the next, including where work hands off between … |
+| `business_purpose` | string | no | It exists so the customer never feels the seams between journey stages or internal handoffs. |
+| `practical_context` | string | no | It follows the moments identification, when the decisive points are marked, and it completes once the designed handoffs … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

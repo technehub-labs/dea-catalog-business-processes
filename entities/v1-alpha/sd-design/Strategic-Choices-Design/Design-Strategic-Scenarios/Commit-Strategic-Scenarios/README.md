@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-de
 
 This is a **Activity** (level L3), named **Commit Strategic Scenarios**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Design Strategic Scenarios** (`processes:process-sd-design-uenzna`). Its canonical ID is `processes:activity-sd-design-jgwe2n`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Scenarios and their signposts are complete, so the set becomes official. Intake registers the drafted scenarios and signposts, a last verification confirms the package is coherent, and the commitment locks the scenarios in for use while the plan is being executed. Confirmation notifies downstream consumers and the records custodian preserves the committed scenarios at their retention tier.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It seals the scenario work with one committed package of futures and tells, ready to steer operations under uncertainty.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once drafting and signpost design are done and closes with the commitment confirmed, consumers notified and evidence archived.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function lead commits the scenario set, the confirmation custodian notifies plan construction and steering colleagues that the committed assumptions and signposts are available, and the records custodian archives the evidence for the cycle ahead.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Strategic Scenarios |
+| `plain_language_description` | string | no | Scenarios and their signposts are complete, so the set becomes official. Intake registers the drafted scenarios and … |
+| `business_purpose` | string | no | It seals the scenario work with one committed package of futures and tells, ready to steer operations under uncertainty. |
+| `practical_context` | string | no | It opens once drafting and signpost design are done and closes with the commitment confirmed, consumers notified and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

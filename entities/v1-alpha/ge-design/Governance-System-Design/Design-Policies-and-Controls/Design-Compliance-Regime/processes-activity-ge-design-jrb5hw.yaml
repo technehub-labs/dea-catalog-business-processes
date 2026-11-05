@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-design-kpsj5b through concluding task processes:task-ge-design-record-m43jaq, whose outcome — Case file retained for Design Compliance Regime under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design Compliance Regime'
+plain_language_description: 'This activity works out how compliance will be produced and verified — attestations, monitoring, and the consequences of stepping out of line. The policy artefacts and control objectives arrive as the things to be enforced, the regime is designed around them and reviewed for teeth, and the regime design is confirmed onward for the design''s commitment. Policies gain their enforcement machinery here.'
+business_purpose: 'It exists so the enterprise''s policies and controls come with a designed regime that actually enforces them.'
+practical_context: 'It follows the objectives definition, when the artefacts and objectives are to hand, and it completes once the compliance regime design is confirmed for the design''s commitment.'
+worked_example:
+  agent_type: human
+  narrative: 'A governance design authority designer designs the attestations, monitoring, and consequence structure enforcing the policies and objectives, and confirms the regime design for commitment.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-de
 
 This is a **Activity** (level L3), named **Design Financial Control Objectives**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Design Financial Controls and Policies** (`processes:process-fa-design-uun4ja`). Its canonical ID is `processes:activity-fa-design-2qrkhv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity states what each bounded gap's control must achieve. The bounded analysis arrives with the approved financial architecture as the frame, objectives are designed gap by gap and checked against both, and the objective set is confirmed onward for the policy work. Controls gain purpose before they gain mechanics.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every control eventually implemented knows precisely what outcome it exists to deliver.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the gap analysis, when the bounded needs and the approved financial architecture are to hand, and it completes once the control objective set is confirmed for the policy design.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance design authority designer states the objective each bounded gap's control must achieve, checks the set against the approved financial architecture, and confirms it for the policies.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Financial Control Objectives |
+| `plain_language_description` | string | no | This activity states what each bounded gap's control must achieve. The bounded analysis arrives with the approved … |
+| `business_purpose` | string | no | It exists so every control eventually implemented knows precisely what outcome it exists to deliver. |
+| `practical_context` | string | no | It follows the gap analysis, when the bounded needs and the approved financial architecture are to hand, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

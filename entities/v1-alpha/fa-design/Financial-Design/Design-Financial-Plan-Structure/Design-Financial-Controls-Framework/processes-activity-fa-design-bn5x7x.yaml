@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-design-vk422z through concluding task processes:task-fa-design-record-45h64a, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design Financial Controls Framework'
+plain_language_description: 'This activity builds the safeguards directly into the account structure and allocation rules. The chart and the allocation model arrive as the structure to protect, the controls are designed into its fabric and checked against it, and the embedded controls design is confirmed onward for the structure''s commitment. The plan structure arrives at build already defended.'
+business_purpose: 'It exists so the financial plan structure carries its own safeguards, designed in rather than bolted on.'
+practical_context: 'It follows the allocation model, once the chart and allocation rules are in hand, and it completes when the embedded controls design is confirmed for the structure''s commitment.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance design authority designer designs the safeguards into the account structure and allocation rules themselves, checks the coverage, and confirms the embedded controls design.'

@@ -137,3 +137,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-conceive-pnrhem through concluding task processes:task-ao-conceive-record-27fbra, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Map Supervised-Training Completion Requirements'
+plain_language_description: 'This activity works out in advance what supervised training each planned licensed role will require and how its completion will be evidenced and recorded. The licensing taxonomy and the training matrix come in, the training plan and the evidence class for each role are mapped, and the mapped requirements are confirmed and retained. Later mobilization steps then know precisely what training evidence to look for.'
+business_purpose: 'It exists so supervised-training expectations for licensed roles are mapped before recruitment, giving activation a clear standard to check against.'
+practical_context: 'It occurs while licensed capacity is being conceived, when the regulator licensing taxonomy and the training matrix are presented, and it closes once the mapped requirements are confirmed and their record preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'A workforce management planner maps the supervised-training plan and the completion evidence required for a type-rating role, agrees the recording path for the completion evidence, and files the mapped requirements for use at activation.'

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-design-6j5mxp through concluding task processes:task-eo-design-record-7bejh9, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Configure Channels'
+plain_language_description: 'This activity takes each channel pattern framed during conception and works it into a bounded configuration. The conceived patterns arrive as the input, each channel is configured in detail and checked against its pattern, and the configuration set is confirmed onward for the service-level work. Channels stop being broad ideas and become specified arrangements.'
+business_purpose: 'It exists so the delivery model''s channels move from conception sketches to bounded configurations that can actually be built.'
+practical_context: 'It opens the delivery model design, when the conceived channel patterns are presented for detailing, and it completes once the channel configuration set is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function designer works each conceived channel pattern into a detailed configuration, checks every channel against its pattern, and confirms the configuration set for the service-level step.'

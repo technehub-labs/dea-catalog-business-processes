@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-build-q4nf9g through concluding task processes:task-sd-build-record-3zxkgy, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit Strategic Plan'
+plain_language_description: 'Everything has been checked, so the plan now becomes official. The reviewed document is brought in, a final verification confirms it is the agreed version, and the commitment is made — the plan, its roadmap and its initiative portfolio are locked for the operating part of the business to execute. Confirmation tells everyone the plan is in force and the records custodian files the commitment evidence for the long term.'
+business_purpose: 'It gives the enterprise its official, executable plan of record, closing the build and handing a settled mandate to those who will run it.'
+practical_context: 'It opens at intake once review is complete and closes with the commitment confirmed, downstream teams notified and the evidence archived.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function lead presents the reviewed plan for commitment, the confirmation custodian records the decision and notifies operations colleagues that the plan is in force, and the records custodian preserves the committed plan at its retention tier so future audits can retrieve it.'

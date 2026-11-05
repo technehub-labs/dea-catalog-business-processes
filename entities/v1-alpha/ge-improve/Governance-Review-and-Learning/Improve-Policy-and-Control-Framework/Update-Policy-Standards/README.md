@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-im
 
 This is a **Activity** (level L3), named **Update Policy Standards**, currently **candidate (yellow)**. It is part of the **Governance Review and Learning** process context, domain `ge`, lifecycle stage Improve. It belongs to **Improve Policy and Control Framework** (`processes:process-ge-improve-u3g5dh`). Its canonical ID is `processes:activity-ge-improve-a7mqxm`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity revises the policy standards so each measured gap finds its correction. The measured gaps arrive against the codified instruments as they stand, the standards are updated to close what was found, and the updated standards are confirmed onward for the posture work. The rulebook is amended where the evidence pointed.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the framework's standards are amended exactly where measured gaps showed them wanting.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the gap measurement, working from the register against the codified instruments, and it completes once the updated standards are confirmed onward for the posture work.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function officer revises the policy standards to close each measured gap in the codified instruments, and confirms the updated standards onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Update Policy Standards |
+| `plain_language_description` | string | no | This activity revises the policy standards so each measured gap finds its correction. The measured gaps arrive against … |
+| `business_purpose` | string | no | It exists so the framework's standards are amended exactly where measured gaps showed them wanting. |
+| `practical_context` | string | no | It follows the gap measurement, working from the register against the codified instruments, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

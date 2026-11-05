@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-co
 
 This is a **Activity** (level L3), named **Formulate Demand Thesis**, currently **candidate (yellow)**. It is part of the **Customer Strategy Conception** process context, domain `pr`, lifecycle stage Conceive. It belongs to **Develop Customer Strategy** (`processes:process-pr-conceive-emfgju`). Its canonical ID is `processes:activity-pr-conceive-8frfby`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity sets out the enterprise's belief about where its demand will come from and what will keep it coming. The bounded segment and articulated exchange arrive as the foundation, the demand thesis is formulated against them and reviewed for realism, and the formulated thesis is confirmed onward for the strategy's commitment. The strategy's bet on the future is stated here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the strategy carries an explicit, reviewable belief about how its demand arises and sustains.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the segment and exchange framing, once both are confirmed, and it completes when the formulated demand thesis is confirmed onward for the strategy's commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function lead sets out where demand from the chosen segment will come from and what sustains it, and confirms the demand thesis for the strategy's commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Formulate Demand Thesis |
+| `plain_language_description` | string | no | This activity sets out the enterprise's belief about where its demand will come from and what will keep it coming. The … |
+| `business_purpose` | string | no | It exists so the strategy carries an explicit, reviewable belief about how its demand arises and sustains. |
+| `practical_context` | string | no | It follows the segment and exchange framing, once both are confirmed, and it completes when the formulated demand … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

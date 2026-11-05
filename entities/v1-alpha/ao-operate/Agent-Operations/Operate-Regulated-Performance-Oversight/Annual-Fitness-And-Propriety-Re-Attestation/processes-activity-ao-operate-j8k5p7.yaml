@@ -136,3 +136,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-operate-ba8scr through concluding task processes:task-ao-operate-record-dgbssv, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Annual Fitness and Propriety Re-Attestation'
+plain_language_description: 'This activity renews, once a year, the fitness attestation behind every live licensed role. The live role list and the attestation calendar come in together, each holder is re-attested when their turn comes, and the outcomes are written to the personnel record. The yearly rhythm keeps fitness evidence fresh rather than letting it rest on a single past attestation.'
+business_purpose: 'It exists so fitness evidence for licensed roles is renewed on the regulator''s yearly rhythm instead of aging unexamined.'
+practical_context: 'It runs to the annual attestation calendar against the live role list, and it closes as each re-attestation outcome is confirmed and preserved on the personnel record.'
+worked_example:
+  agent_type: human
+  narrative: 'A workforce management custodian works the yearly attestation calendar for the live controlled-function holders, sees each fitness re-attestation completed, and records the outcomes on the personnel file.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-co
 
 This is a **Activity** (level L3), named **Draft Initial Policy Document**, currently **candidate (yellow)**. It is part of the **Strategy and Governance Conception** process context, domain `ge`, lifecycle stage Conceive. It belongs to **Initiate Policy and Charter** (`processes:process-ge-conceive-xp6fye`). Its canonical ID is `processes:activity-ge-conceive-g7nxw2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity writes the first version of the document, drawing the proposed scope and proposed authority together into one text. The bounded scope and the authority proposals arrive as its content, the initial document is drafted and reviewed as a whole, and the drafted document is confirmed onward for commitment. The instrument takes its first written body here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the initiative's proposals become one coherent first document rather than loose notes.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the scope and authority proposals, when both are confirmed, and it completes once the drafted initial document is confirmed onward for commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function officer writes the first version of the instrument from the bounded scope and the authority proposals, and confirms the drafted document for commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Draft Initial Policy Document |
+| `plain_language_description` | string | no | This activity writes the first version of the document, drawing the proposed scope and proposed authority together into … |
+| `business_purpose` | string | no | It exists so the initiative's proposals become one coherent first document rather than loose notes. |
+| `practical_context` | string | no | It follows the scope and authority proposals, when both are confirmed, and it completes once the drafted initial … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

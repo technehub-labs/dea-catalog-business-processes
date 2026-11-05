@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-improve-mgkw59 through concluding task processes:task-ge-improve-record-yq2v37, whose outcome — Case file retained for Formulate Effectiveness Recommendations under the records retention schedule with cryptographic integrity protection; statutory …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Formulate Effectiveness Recommendations'
+plain_language_description: 'This activity turns the measured performance and the captured lessons into concrete recommendations for the bodies. Both arrive as the basis, recommendations are formulated against them and each made actionable, and the formulated set is confirmed onward for delivery. Governance''s homework comes back with specific corrections, not vague encouragement.'
+business_purpose: 'It exists so governance improvement arrives as specific, actionable recommendations rather than reflections.'
+practical_context: 'It follows the lessons capture, working from the measured outcomes and captured lessons, and it completes once the formulated recommendations are confirmed onward for delivery.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function officer turns the measured performance and captured lessons into specific recommendations for each body, and confirms the formulated set onward.'

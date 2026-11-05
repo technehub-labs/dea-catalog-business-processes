@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 
 This is a **Activity** (level L3), named **Report Strategic Performance**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Monitor Strategic Performance** (`processes:process-sd-operate-zdjchn`). Its canonical ID is `processes:activity-sd-operate-k48yk5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Insight only matters when it reaches the people who steer. Intake registers the tracked position and its flagged departures, verification confirms the numbers reconcile, and processing packages them into the performance report the review cycle will debate. Confirmation delivers the report to the review cycle and the records custodian preserves it on the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It carries the monitoring picture into the review arena, closing the loop between measurement and the decisions taken on it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes each monitoring interval, opening at intake of the position and flags and closing when the issued report is confirmed and preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function packs the tracked position and flagged departures into the period report, a verification custodian reconciles the figures, and the confirmation custodian issues the report to the colleagues running the next strategic review.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Report Strategic Performance |
+| `plain_language_description` | string | no | Insight only matters when it reaches the people who steer. Intake registers the tracked position and its flagged … |
+| `business_purpose` | string | no | It carries the monitoring picture into the review arena, closing the loop between measurement and the decisions taken … |
+| `practical_context` | string | no | It closes each monitoring interval, opening at intake of the position and flags and closing when the issued report is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

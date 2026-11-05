@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-op
 
 This is a **Activity** (level L3), named **Execute Compliance Audits**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. It belongs to **Audit Policy Compliance** (`processes:process-ge-operate-hxxyc9`). Its canonical ID is `processes:activity-ge-operate-batrgt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity carries the planned audits out, testing the enterprise against its codified policies. The audit plan arrives as the worklist, each audit is executed as designed and its evidence gathered, and the executed audits are confirmed onward for the findings reporting. The policies are tested here against the enterprise's actual behaviour.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the planned compliance audits genuinely happen, and produce real evidence.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the audit planning, working the plan as each audit falls due, and it completes once the executed audits are confirmed onward for the findings reporting.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A compliance function auditor executes each planned audit against the codified policies, gathering the evidence the plan calls for, and confirms the executed audits onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Execute Compliance Audits |
+| `plain_language_description` | string | no | This activity carries the planned audits out, testing the enterprise against its codified policies. The audit plan … |
+| `business_purpose` | string | no | It exists so the planned compliance audits genuinely happen, and produce real evidence. |
+| `practical_context` | string | no | It follows the audit planning, working the plan as each audit falls due, and it completes once the executed audits are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

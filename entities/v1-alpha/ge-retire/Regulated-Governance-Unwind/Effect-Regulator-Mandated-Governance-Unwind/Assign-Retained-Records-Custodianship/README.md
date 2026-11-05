@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-re
 
 This is a **Activity** (level L3), named **Assign Retained-Records Custodianship**, currently **candidate (yellow)**. It is part of the **Governance Unwind** process context, domain `ge`, lifecycle stage Retire. It belongs to **Effect Regulator-Mandated Governance Unwind** (`processes:process-ge-retire-mjq5hg`). Its canonical ID is `processes:activity-ge-retire-rzhc83`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity hands the enterprise's retained records to a named keeper — with the arrangement for service of process held in place for the statutory retention period — and confirms both the keeper's acceptance and the regulator's or court's contentment with the arrangement. The order arrives with its custodianship requirements, the assignment is made and accepted, and the satisfied assignment is confirmed onward. Someone specific must keep the enterprise's memory; this names them.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the wound-down enterprise's retained records have a named, accepted, regulator-approved keeper.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the governance reduction, once the regime can still act to make the assignment, and it completes when the accepted, satisfied custodianship assignment is confirmed onward for the filings.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management officer assigns the retained records to the designated custodian, holds the service-of-process arrangement for the retention period, and confirms the regulator is content with the assignment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assign Retained-Records Custodianship |
+| `plain_language_description` | string | no | This activity hands the enterprise's retained records to a named keeper — with the arrangement for service of process … |
+| `business_purpose` | string | no | It exists so the wound-down enterprise's retained records have a named, accepted, regulator-approved keeper. |
+| `practical_context` | string | no | It follows the governance reduction, once the regime can still act to make the assignment, and it completes when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-retire-umxf3c through concluding task processes:task-sd-retire-record-b4mtk7, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Execute Retained-Records Plan for Regulated Entity'
+plain_language_description: 'Retired does not mean discarded; the retired plan''s papers must be kept on schedule. Intake registers the completed sunset record and the entity''s retention plan, verification reconciles the schedule against what the supervisor requires, and processing catalogues the retired plan''s papers, applies the prescribed keeping periods and stores them where continuing oversight can reach them. Confirmation logs the execution against the plan record and the records custodian preserves the catalogue itself.'
+business_purpose: 'It keeps the retired plan''s papers findable and intact for as long as the policy and the supervisor require, so history stays answerable.'
+practical_context: 'It follows the sunset record, opening at intake of the retention plan and closing when the catalogued, stored papers are confirmed and the execution logged.'
+worked_example:
+  agent_type: human
+  narrative: 'The finance function records team catalogues the retired plan''s papers against the retention schedule, a verification custodian reconciles the keeping periods with the supervisor''s requirements, and the execution is logged where the industry regulator can inspect it.'

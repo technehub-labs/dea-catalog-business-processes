@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-improve-t6uvan through concluding task processes:task-pr-improve-record-btgbbm, whose outcome — Closure case file retained for Assess Churn Risk under the records retention schedule with cryptographic integrity protection; cryptographic destruction …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Assess Churn Risk'
+plain_language_description: 'This activity reads the feedback and the behavioural signals together to grade how likely each active customer is to leave. The collected feedback arrives with the behavioural record as its companion, churn risk is scored customer by customer across the base, and the scored risks are confirmed onward for the retention actions. Leaving customers are seen before they have gone.'
+business_purpose: 'It exists so customers at risk of leaving are identified by evidence before they actually go.'
+practical_context: 'It runs continuously against the collected feedback and behaviour signals, and it completes once the scored churn risks are confirmed onward for the retention actions.'
+worked_example:
+  agent_type: human
+  narrative: 'A customer relationship management analyst reads the feedback alongside the behavioural signals, scores each active customer''s likelihood of leaving, and confirms the scored risks onward.'

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-design-uenzna through concluding task processes:task-sd-design-record-t9xxar, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit Strategic Scenarios'
+plain_language_description: 'Scenarios and their signposts are complete, so the set becomes official. Intake registers the drafted scenarios and signposts, a last verification confirms the package is coherent, and the commitment locks the scenarios in for use while the plan is being executed. Confirmation notifies downstream consumers and the records custodian preserves the committed scenarios at their retention tier.'
+business_purpose: 'It seals the scenario work with one committed package of futures and tells, ready to steer operations under uncertainty.'
+practical_context: 'It opens once drafting and signpost design are done and closes with the commitment confirmed, consumers notified and evidence archived.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function lead commits the scenario set, the confirmation custodian notifies plan construction and steering colleagues that the committed assumptions and signposts are available, and the records custodian archives the evidence for the cycle ahead.'

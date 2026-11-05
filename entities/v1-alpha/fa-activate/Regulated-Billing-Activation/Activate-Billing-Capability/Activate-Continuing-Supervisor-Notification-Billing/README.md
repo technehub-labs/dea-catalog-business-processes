@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-ac
 
 This is a **Activity** (level L3), named **Activate Continuing-Supervisor Notification (Billing)**, currently **candidate (yellow)**. It is part of the **Activate Billing Capability** process context, domain `fa`, lifecycle stage Activate. It belongs to **Activate Billing Capability** (`processes:process-fa-activate-bzfywk`). Its canonical ID is `processes:activity-fa-activate-6j9me8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity switches on the standing notifications that keep the continuing supervisor informed while the regulator oversees the billing operation. The capability's authorization and the supervisor relationship arrive as the inputs, the notification arrangements are put into active use and checked against them, and the issued notifications are recorded on the billing record. Oversight is thereby fed without having to ask.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the supervising authority's ongoing oversight of billing is fed by standing notification from the first invoice onward.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs as the billing capability approaches live service, once the authorization and the supervisor relationship are in place, and it completes when the issued notifications are confirmed and retained on the billing record.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An audit function officer puts the standing notifications to the supervising authority into active use against the billing capability's authorization, and confirms the issued notification on the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Activate the Continuing-Supervisor Notification |
+| `plain_language_description` | string | no | This activity switches on the standing notifications that keep the continuing supervisor informed while the regulator … |
+| `business_purpose` | string | no | It exists so the supervising authority's ongoing oversight of billing is fed by standing notification from the first … |
+| `practical_context` | string | no | It runs as the billing capability approaches live service, once the authorization and the supervisor relationship are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

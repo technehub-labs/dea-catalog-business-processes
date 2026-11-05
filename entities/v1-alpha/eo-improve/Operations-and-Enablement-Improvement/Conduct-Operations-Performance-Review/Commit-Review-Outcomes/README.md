@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-im
 
 This is a **Activity** (level L3), named **Commit Review Outcomes**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Conduct Operations Performance Review** (`processes:process-eo-improve-g3ngp3`). Its canonical ID is `processes:activity-eo-improve-53zgb8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the findings and their routings together into the review's record and gives the outcomes formal standing. The routed findings arrive as its final inputs, the whole is consolidated and ratified, and the committed outcomes are confirmed as the review's standing result. The review thereby closes with decisions on the record, not observations in the air.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the review ends as committed outcomes that the improvement tracks must act on, not as a filed report.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the performance review, once findings are formed and routed, and it completes when the committed outcomes are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian consolidates the findings and their routings into the review record, obtains ratification of the outcomes, and preserves the record for the next planning cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Review Outcomes |
+| `plain_language_description` | string | no | This activity draws the findings and their routings together into the review's record and gives the outcomes formal … |
+| `business_purpose` | string | no | It exists so the review ends as committed outcomes that the improvement tracks must act on, not as a filed report. |
+| `practical_context` | string | no | It closes the performance review, once findings are formed and routed, and it completes when the committed outcomes are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

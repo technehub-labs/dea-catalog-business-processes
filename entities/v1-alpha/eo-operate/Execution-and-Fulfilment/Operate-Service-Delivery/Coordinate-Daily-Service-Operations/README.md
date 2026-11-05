@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Coordinate Daily Service Operations**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Service Delivery** (`processes:process-eo-operate-2jnz85`). Its canonical ID is `processes:activity-eo-operate-xj922z`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the day's activity across production, delivery, logistics, platforms, facilities, and buying into one shared operating plan. Current status across the engines arrives at the start of the window, the day's activity is coordinated and reconciled against it, and the coordinated operation is confirmed onward. Six workstreams, one timetable.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise's many moving parts run to one daily plan instead of six separate ones.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens each operating window, when current status across the engines is gathered, and it completes once the day's coordinated service operation is confirmed and its plan retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A service operations coordinator takes the morning status from production, delivery, logistics, platforms, facilities, and procurement, and draws the day's work into one shared operating plan.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Coordinate Daily Service Operations |
+| `plain_language_description` | string | no | This activity draws the day's activity across production, delivery, logistics, platforms, facilities, and buying into … |
+| `business_purpose` | string | no | It exists so the enterprise's many moving parts run to one daily plan instead of six separate ones. |
+| `practical_context` | string | no | It opens each operating window, when current status across the engines is gathered, and it completes once the day's … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 
 This is a **Activity** (level L3), named **Flag Performance Deviations**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Monitor Strategic Performance** (`processes:process-sd-operate-zdjchn`). Its canonical ID is `processes:activity-sd-operate-xtgshk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The tracked position shows where execution has slipped and this work makes that visible. Intake brings the position in, verification confirms the gap is real rather than a data fault, and processing raises and triages each departure from plan by severity and owner. Confirmation communicates the flagged list downstream and the records custodian preserves it for the reporting step.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It turns quiet gaps into explicit, triaged deviations, so underperformance is confronted early instead of surfacing at year end.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows tracking, opening when the updated position is presented at intake and closing when the triaged flags are confirmed and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function monitor spots two gaps in the tracked position, a verification custodian rules out a data fault before raising them, and the triaged flags go to the reporting step with severities and owners assigned.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Flag Performance Deviations |
+| `plain_language_description` | string | no | The tracked position shows where execution has slipped and this work makes that visible. Intake brings the position in … |
+| `business_purpose` | string | no | It turns quiet gaps into explicit, triaged deviations, so underperformance is confronted early instead of surfacing at … |
+| `practical_context` | string | no | It follows tracking, opening when the updated position is presented at intake and closing when the triaged flags are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

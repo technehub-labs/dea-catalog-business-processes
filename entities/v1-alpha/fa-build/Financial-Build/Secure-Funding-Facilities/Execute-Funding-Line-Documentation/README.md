@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-bu
 
 This is a **Activity** (level L3), named **Execute Funding Line Documentation**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. It belongs to **Secure Funding Facilities** (`processes:process-fa-build-ydnzjc`). Its canonical ID is `processes:activity-fa-build-2ccp49`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity puts the agreed funding terms into signed, binding paperwork. The negotiated terms arrive as the substance, the facility documentation is executed and checked against what was agreed, and the executed documents are confirmed onward. Handshake deals become commitments the enterprise can draw on.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the negotiated funding lines become signed commitments the enterprise can actually draw against.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the negotiations, when the agreed terms are to hand, and it completes once the executed facility documentation is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance function officer turns the negotiated terms into executed facility paperwork, checks every clause against what was agreed, and confirms the signed documents.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Formalize the Funding Agreements |
+| `plain_language_description` | string | no | This activity puts the agreed funding terms into signed, binding paperwork. The negotiated terms arrive as the … |
+| `business_purpose` | string | no | It exists so the negotiated funding lines become signed commitments the enterprise can actually draw against. |
+| `practical_context` | string | no | It follows the negotiations, when the agreed terms are to hand, and it completes once the executed facility … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

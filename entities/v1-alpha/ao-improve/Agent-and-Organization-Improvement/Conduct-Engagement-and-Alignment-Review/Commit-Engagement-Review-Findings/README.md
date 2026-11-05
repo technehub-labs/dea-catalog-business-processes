@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 
 This is a **Activity** (level L3), named **Commit Engagement Review Findings**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Conduct Engagement and Alignment Review** (`processes:process-ao-improve-edjyha`). Its canonical ID is `processes:activity-ao-improve-ab6gqb`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity gives the review's formulated findings formal standing and sends them to work. The formulated findings are taken in and reviewed, their commitment is confirmed, and the committed findings are routed into development so the next planning cycle inherits them. The commitment is preserved as an audit record for later reference.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so engagement and alignment conclusions become committed inputs to development planning instead of review-stage paperwork.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the engagement and alignment review, once findings have been formulated, and it completes when the committed findings are confirmed, routed, and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian brings the formulated findings forward for ratification, records the commitment, and routes them to the development planning team with the audit record on file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit the Engagement Review Findings |
+| `plain_language_description` | string | no | This activity gives the review's formulated findings formal standing and sends them to work. The formulated findings … |
+| `business_purpose` | string | no | It exists so engagement and alignment conclusions become committed inputs to development planning instead of … |
+| `practical_context` | string | no | It closes the engagement and alignment review, once findings have been formulated, and it completes when the committed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-bu
 
 This is a **Activity** (level L3), named **Screen Candidates Against Sanctions / AML / FCRA / ADA**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. It belongs to **Build Regulated Agent Pool** (`processes:process-ao-build-9my4jr`). Its canonical ID is `processes:activity-ao-build-bufzrw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity runs each fitness-attested candidate through the regulator-specific clearances the enterprise must apply before they join the regulated pool. The candidate list comes in with the screening matrix, every person is checked against the sanctions, financial-crime, background, and fitness requirements that apply, and a screened candidate list with those clearances is produced. The results are confirmed to the next stage and kept as evidence that the screening happened before activation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the pool carries only candidates who have cleared the sanctions, financial-crime, background, and fitness screening that regulator-tied work demands.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the fitness attestation of the pool, when the attested candidate list and the screening matrix are presented, and it closes once the screened candidate list is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A verification custodian runs each attested candidate through the sanctions and financial-crime screening matrix, notes the clearances obtained, and hands the screened list to the records step so the evidence is preserved on the personnel file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -65,6 +65,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Screen Candidates Against Sanctions, AML, FCRA, and ADA Requirements |
+| `plain_language_description` | string | no | This activity runs each fitness-attested candidate through the regulator-specific clearances the enterprise must apply … |
+| `business_purpose` | string | no | It exists so the pool carries only candidates who have cleared the sanctions, financial-crime, background, and fitness … |
+| `practical_context` | string | no | It follows the fitness attestation of the pool, when the attested candidate list and the screening matrix are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

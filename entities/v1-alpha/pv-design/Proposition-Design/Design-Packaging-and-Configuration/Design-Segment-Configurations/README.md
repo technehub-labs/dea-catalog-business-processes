@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-de
 
 This is a **Activity** (level L3), named **Design Segment Configurations**, currently **candidate (yellow)**. It is part of the **Proposition and Packaging Design** process context, domain `pv`, lifecycle stage Design. It belongs to **Design Packaging and Configuration** (`processes:process-pv-design-a4c76s`). Its canonical ID is `processes:activity-pv-design-yyrnq4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity tailors the packaged proposition for each market segment it will meet. The designed formats arrive as the base to be varied, segment configurations are designed per market and checked against the formats, and the configured set is confirmed onward for the rules. One proposition, many fitting outfits.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so each market segment receives a configuration of the proposition suited to it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the format design, when the packaging forms are drawn, and it completes once the segment configurations are confirmed onward for the configuration rules.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management designer tailors the packaged proposition for each market segment, checking the variations against the designed formats, and confirms the set onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Segment Configurations |
+| `plain_language_description` | string | no | This activity tailors the packaged proposition for each market segment it will meet. The designed formats arrive as the … |
+| `business_purpose` | string | no | It exists so each market segment receives a configuration of the proposition suited to it. |
+| `practical_context` | string | no | It follows the format design, when the packaging forms are drawn, and it completes once the segment configurations are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-ac
 
 This is a **Activity** (level L3), named **Communicate Obligations and Rights**, currently **candidate (yellow)**. It is part of the **Governance Instrument Commencement** process context, domain `ge`, lifecycle stage Activate. It belongs to **Bring Policy Instrument into Force** (`processes:process-ge-activate-wegs44`). Its canonical ID is `processes:activity-ge-activate-6uwq7f`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity tells everyone the new instrument binds what it now requires of them and what it gives them in return. The instrument in force arrives as the source of the message, each bound party is notified of its obligations, rights, and duties, and the notified parties are confirmed onward. Nobody can later claim they were not told.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every bound party knows its obligations and rights under the instrument from the moment it takes force.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs as the instrument takes force, working from the instrument's own terms, and it completes once the bound parties are notified and their notification confirmed onward.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function officer notifies each bound party of the duties and rights the newly forced instrument gives them, and confirms the notifications onward for the enforcement baseline.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Communicate Obligations and Rights |
+| `plain_language_description` | string | no | This activity tells everyone the new instrument binds what it now requires of them and what it gives them in return … |
+| `business_purpose` | string | no | It exists so every bound party knows its obligations and rights under the instrument from the moment it takes force. |
+| `practical_context` | string | no | It runs as the instrument takes force, working from the instrument's own terms, and it completes once the bound parties … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

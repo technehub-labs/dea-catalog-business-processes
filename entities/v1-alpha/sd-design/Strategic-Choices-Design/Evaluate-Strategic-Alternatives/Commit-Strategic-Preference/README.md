@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-de
 
 This is a **Activity** (level L3), named **Commit Strategic Preference**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. It belongs to **Evaluate Strategic Alternatives** (`processes:process-sd-design-ed7jd5`). Its canonical ID is `processes:activity-sd-design-r7hq2f`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The preference is stated; this closing step makes it the enterprise's actual choice. Intake registers the articulated preference, a final verification confirms the reasoning is complete, and the commitment locks the chosen option in for the plan build to carry forward. Confirmation notifies downstream consumers that the strategic choice is made and the records custodian preserves the committed choice on the audit trail.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes evaluation by ratifying one option as the strategic choice, the decision everything in plan build depends on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens once the preference is articulated and closes with the commitment confirmed, downstream consumers notified and evidence archived.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function lead ratifies the preferred option, the confirmation custodian notifies plan-build colleagues that the committed choice is available, and the records custodian archives the decision evidence for later review.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Strategic Preference |
+| `plain_language_description` | string | no | The preference is stated; this closing step makes it the enterprise's actual choice. Intake registers the articulated … |
+| `business_purpose` | string | no | It closes evaluation by ratifying one option as the strategic choice, the decision everything in plan build depends on. |
+| `practical_context` | string | no | It opens once the preference is articulated and closes with the commitment confirmed, downstream consumers notified and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

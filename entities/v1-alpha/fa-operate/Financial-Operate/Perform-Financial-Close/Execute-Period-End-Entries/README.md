@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Execute Period-End Entries**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Perform Financial Close** (`processes:process-fa-operate-4xn4d6`). Its canonical ID is `processes:activity-fa-operate-ayt4aq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity puts through the entries that fence the period off — accruals, deferrals, and the adjustments between. The close boundary arrives as the trigger, the period-end entries are executed and checked against the period's activity, and the executed entries are confirmed onward for reconciliation. The period's books are made final by design, not by decree.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the period ends with its proper entries booked, not with activity left hanging over the boundary.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs at each period close boundary, and it completes once the executed period-end entries are confirmed onward for the reconciliations.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A close custodian books the accruals, deferrals, and adjustments that properly end the period, checks them against the period's activity, and confirms the entries for reconciliation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Execute Period-End Entries |
+| `plain_language_description` | string | no | This activity puts through the entries that fence the period off — accruals, deferrals, and the adjustments between … |
+| `business_purpose` | string | no | It exists so the period ends with its proper entries booked, not with activity left hanging over the boundary. |
+| `practical_context` | string | no | It runs at each period close boundary, and it completes once the executed period-end entries are confirmed onward for … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

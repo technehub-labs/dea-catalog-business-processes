@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-improve-h3vgyf through concluding task processes:task-ao-improve-record-ctdhgp, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit the Gap Priorities'
+plain_language_description: 'This activity is where the ranked capability shortfalls are formally accepted and set in motion. The prioritized list is taken in and reviewed, its ratification is confirmed, and the committed priorities are routed to the development planning side and to learning operations as their standing input. An audit record of the commitment is preserved so the analysis thread can be traced end to end.'
+business_purpose: 'It exists so the ranked shortfalls become a binding instruction to development planning rather than an advisory report.'
+practical_context: 'It closes the capability gap analysis, once the gaps have been ranked, and it completes when the committed priorities are confirmed, routed, and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian presents the ranked gaps for the organization design authority''s ratification, records the commitment, and routes the priorities to the development planning and learning teams.'

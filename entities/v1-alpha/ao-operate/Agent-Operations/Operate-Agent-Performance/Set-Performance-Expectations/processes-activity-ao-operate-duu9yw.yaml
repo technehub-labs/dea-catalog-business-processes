@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-operate-g4wp63 through concluding task processes:task-ao-operate-record-tc6zwy, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Set the Performance Expectations'
+plain_language_description: 'This activity fixes, before each agent enters active operation, what will be expected of them in their role. The onboarded agents and their roles arrive first, the expectations for each are worked out and agreed, and the set expectations are confirmed for the record. From then on, performance in service is judged against a yardstick agreed in advance rather than invented after the fact.'
+business_purpose: 'It exists so performance in service is measured against expectations agreed before the work starts, for people and artificial agents alike.'
+practical_context: 'It happens as onboarded agents and their roles arrive to enter active operation, and it completes once the expectations are confirmed and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A workforce management custodian sets out what will be expected of a newly onboarded analyst in their role, agrees the expectations with the receiving team, and files them before the agent''s first day in service.'

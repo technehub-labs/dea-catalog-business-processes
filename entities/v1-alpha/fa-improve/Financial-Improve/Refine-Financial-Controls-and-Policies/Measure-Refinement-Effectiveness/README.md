@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-im
 
 This is a **Activity** (level L3), named **Measure Refinement Effectiveness**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Refine Financial Controls and Policies** (`processes:process-fa-improve-cdtsbq`). Its canonical ID is `processes:activity-fa-improve-ssfp68`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity checks, finding by finding, whether the refinement made actually moved what motivated it. The committed refinements arrive with their originating findings as the yardsticks, effectiveness is measured against each, and the measurement is confirmed for the record. The refinement loop closes on evidence rather than on good intentions.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise learns whether its control fixes genuinely cured the findings behind them.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the committed refinements have bedded in, measured against the findings that prompted them, and it completes when the effectiveness measurement is confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance design authority analyst checks each committed refinement against its originating finding, records where the weakness truly closed, and confirms the measurement for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Measure Refinement Effectiveness |
+| `plain_language_description` | string | no | This activity checks, finding by finding, whether the refinement made actually moved what motivated it. The committed … |
+| `business_purpose` | string | no | It exists so the enterprise learns whether its control fixes genuinely cured the findings behind them. |
+| `practical_context` | string | no | It runs once the committed refinements have bedded in, measured against the findings that prompted them, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

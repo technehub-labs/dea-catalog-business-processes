@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-im
 
 This is a **Activity** (level L3), named **Commit Enhancements**, currently **candidate (yellow)**. It is part of the **Product Evolution and Portfolio Rationalization** process context, domain `pv`, lifecycle stage Improve. It belongs to **Evolve Products and Services** (`processes:process-pv-improve-6c2xvf`). Its canonical ID is `processes:activity-pv-improve-b3x5kk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When enhancement designs are ready, product management gives them the formal go-ahead for implementation. The designs are registered at intake, checked against the specification, assembled into the committed package, confirmed to the teams who will implement, and the approval trail is archived so the decision carries forward.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It is the decision point of the evolution effort, turning drafted enhancements into work that teams are actually authorised to build.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the design-to-do sequence within evolution: intake opens when the enhancement designs are presented and closure comes when the committed package and its audit record are preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management lead receives the finished enhancement designs for the flagging product line, verifies each meets the specification, assembles the commitment package, notifies the implementation teams at confirmation, and the records custodian files the approval trail.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Enhancements |
+| `plain_language_description` | string | no | When enhancement designs are ready, product management gives them the formal go-ahead for implementation. The designs … |
+| `business_purpose` | string | no | It is the decision point of the evolution effort, turning drafted enhancements into work that teams are actually … |
+| `practical_context` | string | no | It closes the design-to-do sequence within evolution: intake opens when the enhancement designs are presented and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

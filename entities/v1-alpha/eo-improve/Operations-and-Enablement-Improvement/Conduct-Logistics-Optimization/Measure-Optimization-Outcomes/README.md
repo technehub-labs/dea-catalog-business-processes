@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-im
 
 This is a **Activity** (level L3), named **Measure Optimization Outcomes**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. It belongs to **Conduct Logistics Optimization** (`processes:process-eo-improve-3fem63`). Its canonical ID is `processes:activity-eo-improve-d9p8hv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity checks each committed change after the fact against the opportunity that justified it. The changes and their baseline quantifications arrive as the yardsticks, outcomes are measured and compared with what was promised, and the measurement is confirmed for the record. The optimization loop is thereby closed with evidence rather than assumption.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise learns whether its logistics changes actually delivered the opportunities they cited.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once the committed changes have been adopted and have had time to bite, and it completes when the outcome measurement is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations function analyst measures each adopted change against the baseline quantification of its opportunity, records where the gains landed, and confirms the measurement for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Measure Optimization Outcomes |
+| `plain_language_description` | string | no | This activity checks each committed change after the fact against the opportunity that justified it. The changes and … |
+| `business_purpose` | string | no | It exists so the enterprise learns whether its logistics changes actually delivered the opportunities they cited. |
+| `practical_context` | string | no | It runs once the committed changes have been adopted and have had time to bite, and it completes when the outcome … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

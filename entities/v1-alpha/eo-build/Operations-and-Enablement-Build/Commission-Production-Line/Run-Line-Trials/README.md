@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-bu
 
 This is a **Activity** (level L3), named **Run Line Trials**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Commission Production Line** (`processes:process-eo-build-awy8dz`). Its canonical ID is `processes:activity-eo-build-jpj6tj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity exercises the fully set-up line through trial runs until it produces at the planned trial pace. The trial production plans arrive as the script, runs are executed and their results gathered, and the trial outcomes are confirmed onward for certification. The line proves in practice what the configuration promised on paper.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the line's fitness is demonstrated by actually producing, before anyone certifies it for full production.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows control configuration, when the configured line is ready to be exercised, and it completes once the trial results are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian runs the line through the scripted trial production, gathers the results as output builds toward the trial pace, and confirms the outcomes for the certification step.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Run Line Trials |
+| `plain_language_description` | string | no | This activity exercises the fully set-up line through trial runs until it produces at the planned trial pace. The trial … |
+| `business_purpose` | string | no | It exists so the line's fitness is demonstrated by actually producing, before anyone certifies it for full production. |
+| `practical_context` | string | no | It follows control configuration, when the configured line is ready to be exercised, and it completes once the trial … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-operate-zdjchn through concluding task processes:task-sd-operate-record-5m4q6z, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Report Strategic Performance'
+plain_language_description: 'Insight only matters when it reaches the people who steer. Intake registers the tracked position and its flagged departures, verification confirms the numbers reconcile, and processing packages them into the performance report the review cycle will debate. Confirmation delivers the report to the review cycle and the records custodian preserves it on the audit trail.'
+business_purpose: 'It carries the monitoring picture into the review arena, closing the loop between measurement and the decisions taken on it.'
+practical_context: 'It closes each monitoring interval, opening at intake of the position and flags and closing when the issued report is confirmed and preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function packs the tracked position and flagged departures into the period report, a verification custodian reconciles the figures, and the confirmation custodian issues the report to the colleagues running the next strategic review.'

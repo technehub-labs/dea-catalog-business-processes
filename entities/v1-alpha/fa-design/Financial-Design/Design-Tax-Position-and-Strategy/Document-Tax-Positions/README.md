@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-de
 
 This is a **Activity** (level L3), named **Document Tax Positions**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Design Tax Position and Strategy** (`processes:process-fa-design-ds4drw`). Its canonical ID is `processes:activity-fa-design-x66t4r`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity writes down, exposure by exposure, the stance the enterprise will take and the legal footing behind it. The assessed exposures arrive with the tax law and ruling base as the reference, positions are documented against both, and the documented positions are confirmed onward for the strategy. Each stance is defensible on paper before it is lived.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every tax stance the enterprise takes is documented and legally grounded before it is acted on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the exposure assessment, when the exposures and the law and ruling base are to hand, and it completes once the positions are documented and confirmed onward.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance design authority designer documents the enterprise's stance on each assessed exposure with its legal footing in the law and ruling base, and confirms the positions for the strategy.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Document Tax Positions |
+| `plain_language_description` | string | no | This activity writes down, exposure by exposure, the stance the enterprise will take and the legal footing behind it … |
+| `business_purpose` | string | no | It exists so every tax stance the enterprise takes is documented and legally grounded before it is acted on. |
+| `practical_context` | string | no | It follows the exposure assessment, when the exposures and the law and ruling base are to hand, and it completes once … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

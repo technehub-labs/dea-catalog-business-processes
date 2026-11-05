@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-build-w2qurd through concluding task processes:task-ao-build-record-u3n4bv, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Provision Agent Capacity'
+plain_language_description: 'This activity sets up the agent capacity that the committed organization structure has called for. The structure design is taken in and reviewed, the capacity it requires is worked out and arranged, and the provisioned capacity is confirmed back to those who planned the structure. It ends with capacity in place for the structure that needs it and an audit record of the provisioning kept.'
+business_purpose: 'It exists so selection and acquisition work against a real, provisioned amount of capacity rather than an unquantified staffing intention.'
+practical_context: 'It happens when the committed organization structure design arrives during agent acquisition, and it closes once the provisioned agent capacity is confirmed and the provisioning record is retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian takes the committed organization structure, works out the agent capacity it calls for across people and artificial agents, confirms the provisioned capacity, and files the audit record for the records custodian to preserve.'

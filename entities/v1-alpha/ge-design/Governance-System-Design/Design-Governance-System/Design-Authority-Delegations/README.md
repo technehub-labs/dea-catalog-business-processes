@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-de
 
 This is a **Activity** (level L3), named **Design Authority Delegations**, currently **candidate (yellow)**. It is part of the **Governance System Design** process context, domain `ge`, lifecycle stage Design. It belongs to **Design Governance System** (`processes:process-ge-design-zbrg8b`). Its canonical ID is `processes:activity-ge-design-ry86fn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity works out how authority passes down from mandate to body to role across the named bodies. The articulated inventory arrives as the structure to be empowered, delegations are designed along its lines and checked for gaps, and the delegation design is confirmed onward for the decision rights. Authority stops being assumed and starts being traced.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every scrap of governing authority has a designed, traceable path to the body holding it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the body articulation, when the inventory is confirmed, and it completes once the delegation design is confirmed for the decision rights specification.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A governance design authority designer traces how authority flows from mandate through each named body down to its roles, and confirms the delegation design for the decision rights.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Design Authority Delegations |
+| `plain_language_description` | string | no | This activity works out how authority passes down from mandate to body to role across the named bodies. The articulated … |
+| `business_purpose` | string | no | It exists so every scrap of governing authority has a designed, traceable path to the body holding it. |
+| `practical_context` | string | no | It follows the body articulation, when the inventory is confirmed, and it completes once the delegation design is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

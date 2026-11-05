@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-retire-umxf3c through concluding task processes:task-sd-retire-record-pc7hf2, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Preserve Regulator-Acknowledged Sunset Record'
+plain_language_description: 'The sunset is only as good as its proof, and this work secures that proof. Intake registers the executed communications and the supervisor''s response, verification confirms the acknowledgement names the authority and both dates, and processing completes the sunset record — the supervisor''s sign-off, the directive particulars, the retirement dates and the successor''s standing, all held together. Confirmation tells downstream consumers the record is complete and the records custodian preserves it for the retention period.'
+business_purpose: 'It binds the supervisor''s acknowledgement, the directive particulars and the successor''s standing into one preserved proof, so the sunset survives every later audit.'
+practical_context: 'It follows the communications campaign, opening at intake of the supervisor''s response and closing when the completed record is confirmed and preserved for retention.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function registrar assembles the acknowledgement, the authority identifier and both dates into the sunset record, a verification custodian checks nothing is missing, and the records custodian preserves the completed record where supervisor reviewers can retrieve it.'

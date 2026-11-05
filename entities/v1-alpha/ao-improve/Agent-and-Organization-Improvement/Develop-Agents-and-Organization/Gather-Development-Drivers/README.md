@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 
 This is a **Activity** (level L3), named **Gather Development Drivers**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Develop Agents and Organization** (`processes:process-ao-improve-xfh8na`). Its canonical ID is `processes:activity-ao-improve-6fusds`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity brings together, in one place, every pressure saying the agents or the organization need to develop: engagement findings, capability priorities, and reorganization requirements. The separate review outputs are taken in and compiled, the consolidated set of drivers is confirmed, and it is filed as the single case development planning will answer. Nothing is planned yet; the point is a complete picture of why development is needed.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so development responds to every improvement pressure through one consolidated view instead of fragmented, competing requests.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the development effort, when engagement findings, gap priorities, and reorganization triggers arrive, and it closes once the gathered drivers are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An intake custodian collects the committed review findings, the gap priorities, and the reorganization requirements into a single development case, and confirms the consolidated drivers for planning.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Gather the Development Drivers |
+| `plain_language_description` | string | no | This activity brings together, in one place, every pressure saying the agents or the organization need to develop … |
+| `business_purpose` | string | no | It exists so development responds to every improvement pressure through one consolidated view instead of fragmented … |
+| `practical_context` | string | no | It opens the development effort, when engagement findings, gap priorities, and reorganization triggers arrive, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

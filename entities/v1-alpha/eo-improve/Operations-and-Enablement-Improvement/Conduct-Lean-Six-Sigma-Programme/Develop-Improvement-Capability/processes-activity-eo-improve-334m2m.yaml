@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-improve-us272s through concluding task processes:task-eo-improve-record-jvxm9h, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Develop Improvement Capability'
+plain_language_description: 'This activity builds the practitioners, the methods, and the governance that the programme leans on. The programme standards arrive as the benchmark, people are trained and the practices stood up against it, and the built capability is confirmed onward. The enterprise thereby owns a repeatable way of improving, not just this cycle''s wins.'
+business_purpose: 'It exists so improvement rests on the enterprise''s own trained people and methods, not on borrowed expertise each cycle.'
+practical_context: 'It runs alongside the programme as a standing investment, benchmarked to the programme standards, and it completes when the developed capability is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function lead trains a cohort of practitioners to the programme''s standards and stands up its methods and governance, then confirms the developed capability for the record.'

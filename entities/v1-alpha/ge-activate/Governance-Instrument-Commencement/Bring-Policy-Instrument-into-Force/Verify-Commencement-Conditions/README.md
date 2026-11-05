@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-ac
 
 This is a **Activity** (level L3), named **Verify Commencement Conditions**, currently **candidate (yellow)**. It is part of the **Governance Instrument Commencement** process context, domain `ge`, lifecycle stage Activate. It belongs to **Bring Policy Instrument into Force** (`processes:process-ge-activate-wegs44`). Its canonical ID is `processes:activity-ge-activate-hcg5s8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity checks that everything the instrument demanded before coming alive — its preconditions and its procedural steps — has actually happened. The adopted instrument arrives with its commencement provisions, each is verified against what has been done, and the verified readiness is confirmed onward for the act of commencement. Nothing takes force on hope; it takes force on proof.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so an instrument only comes into force once its own conditions for doing so are demonstrably met.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the commencement when an adopted policy instrument, mandate, or charter's conditions are said to be met, and it completes once the verified readiness is confirmed for the act of commencement.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function officer walks the adopted instrument's commencement provisions one by one, confirms each precondition has been discharged, and hands the verified readiness to the commencement step.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Verify Commencement Conditions |
+| `plain_language_description` | string | no | This activity checks that everything the instrument demanded before coming alive — its preconditions and its procedural … |
+| `business_purpose` | string | no | It exists so an instrument only comes into force once its own conditions for doing so are demonstrably met. |
+| `practical_context` | string | no | It opens the commencement when an adopted policy instrument, mandate, or charter's conditions are said to be met, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-build-7n4prh through concluding task processes:task-sd-build-record-fg85f2, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Assemble Strategic Roadmap'
+plain_language_description: 'Now the pieces become one navigable document. Intake registers the ordered initiatives and their fixed dates, verification makes sure nothing is missing or contradictory, and processing merges them into a single roadmap that reads from first step to last. When assembly is confirmed, downstream colleagues are notified and the assembled roadmap is preserved with its audit trail.'
+business_purpose: 'It combines order and dates into one roadmap artifact that the wider planning effort can read, challenge and ultimately commit.'
+practical_context: 'It runs once sequencing and milestone anchoring are complete, closing when the assembled roadmap is confirmed as ready for commitment.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function roadmap writer combines the agreed initiative order and the anchored dates into one document, a verification custodian confirms the threads tie together, and the confirmation custodian tells plan-build colleagues the draft roadmap is ready.'

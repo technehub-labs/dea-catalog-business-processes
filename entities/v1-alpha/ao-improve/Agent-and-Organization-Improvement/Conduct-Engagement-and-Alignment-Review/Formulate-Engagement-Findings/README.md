@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 
 This is a **Activity** (level L3), named **Formulate Engagement Findings**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Conduct Engagement and Alignment Review** (`processes:process-ao-improve-edjyha`). Its canonical ID is `processes:activity-ao-improve-zzszrd`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the engagement evidence and the alignment assessment together into the review's written findings. The assessment arrives first, the findings are drafted from it and the evidence behind it, and the formulated findings are confirmed for commitment. The result is a clear statement of what the review established, ready to be routed onward.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the review produces clear, evidence-backed statements rather than leaving its conclusions scattered across signals and assessments.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs once agent alignment has been assessed, when the assessment is presented for drafting, and it completes when the formulated findings are confirmed and their record preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian drafts the review's findings, pairing each alignment judgement with the evidence behind it, and confirms the formulated findings ahead of formal commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Formulate the Engagement Findings |
+| `plain_language_description` | string | no | This activity draws the engagement evidence and the alignment assessment together into the review's written findings … |
+| `business_purpose` | string | no | It exists so the review produces clear, evidence-backed statements rather than leaving its conclusions scattered across … |
+| `practical_context` | string | no | It runs once agent alignment has been assessed, when the assessment is presented for drafting, and it completes when … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

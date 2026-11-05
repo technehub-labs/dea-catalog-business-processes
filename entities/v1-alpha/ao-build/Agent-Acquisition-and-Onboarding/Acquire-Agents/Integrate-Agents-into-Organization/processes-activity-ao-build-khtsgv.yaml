@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-build-w2qurd through concluding task processes:task-ao-build-record-72ph2w, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Integrate Agents into the Organization'
+plain_language_description: 'Once agents have been onboarded into their roles, this activity connects them into the teams and ways of working they will operate in. The onboarded agents are brought in and logged, their placements are checked against the team structure, the connections are put in place, and the teams involved are told the agents are ready to work with them. The work ends with the agents operating inside the organization''s team arrangements rather than standing outside them.'
+business_purpose: 'It exists so newly onboarded agents stop being a list of arrivals and start working as part of the organization''s teams and coordination patterns.'
+practical_context: 'It follows onboarding during agent acquisition, when the onboarded agents are presented for placement into teams, and it closes once the integrated agents are confirmed and an audit record of the integration is retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian places a batch of newly onboarded agents into their assigned teams, checks each connection against the agreed coordination patterns, and files the audit record once the teams confirm the agents are ready to collaborate.'

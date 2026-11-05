@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 This is a **Activity** (level L3), named **Record Programme Completion**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Operate Learning and Development** (`processes:process-ao-operate-87q5mk`). Its canonical ID is `processes:activity-ao-operate-b6fecc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity writes down, agent by agent, which delivered programmes they have finished. The delivered sessions arrive as the input, each person's and each artificial agent's completions are logged and checked against the delivery record, and the recorded completions are confirmed onward. The result is an answerable file of who has finished which programme.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every agent's programme completions are on file, ready to evidence readiness or compliance.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the delivery of learning sessions, when the delivered sessions are presented for recording, and it closes once the recorded completions are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A records custodian logs each agent against the programmes they finished, checks the entries match the delivered sessions, and confirms the completions for the file.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Record Programme Completion |
+| `plain_language_description` | string | no | This activity writes down, agent by agent, which delivered programmes they have finished. The delivered sessions arrive … |
+| `business_purpose` | string | no | It exists so every agent's programme completions are on file, ready to evidence readiness or compliance. |
+| `practical_context` | string | no | It follows the delivery of learning sessions, when the delivered sessions are presented for recording, and it closes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

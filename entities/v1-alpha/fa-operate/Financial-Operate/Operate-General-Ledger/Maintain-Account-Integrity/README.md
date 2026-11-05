@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Maintain Account Integrity**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Operate General Ledger** (`processes:process-fa-operate-g9zpnq`). Its canonical ID is `processes:activity-fa-operate-kzqaqw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity keeps the account structure true to the chart it was designed from, as entries pile up. The live structure is compared continuously against the chart of accounts as designed, departures are corrected as they are found, and the maintained integrity is confirmed onward. The books' skeleton never quietly warps.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the ledger's account structure stays exactly what the design said it should be.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs continuously against the designed chart of accounts as the ledger operates, and each integrity pass closes when the maintained structure is confirmed onward.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A ledger custodian checks the live account structure against the designed chart of accounts, corrects the departure it finds, and confirms the maintained integrity onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Maintain Account Integrity |
+| `plain_language_description` | string | no | This activity keeps the account structure true to the chart it was designed from, as entries pile up. The live … |
+| `business_purpose` | string | no | It exists so the ledger's account structure stays exactly what the design said it should be. |
+| `practical_context` | string | no | It runs continuously against the designed chart of accounts as the ledger operates, and each integrity pass closes when … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

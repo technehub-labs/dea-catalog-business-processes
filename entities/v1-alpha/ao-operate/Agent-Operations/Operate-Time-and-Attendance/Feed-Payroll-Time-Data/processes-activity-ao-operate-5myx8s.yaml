@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-operate-dg9q4h through concluding task processes:task-ao-operate-record-h98p3m, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Pass the Time Data to Payroll'
+plain_language_description: 'This activity hands the cycle''s settled time data over to payroll so it can calculate. The resolved exceptions and checked records come in as the final inputs, the feed is assembled and delivered for the cycle, and the handover is confirmed for the record. This is the bridge that lets attendance become pay.'
+business_purpose: 'It exists so payroll receives, each cycle, time data that has been captured, checked, and settled.'
+practical_context: 'It closes the time and attendance cycle, running once validation and exception resolution are done, and it completes when the feed is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A processing custodian assembles the cycle''s settled attendance records, hands them to payroll for calculation, and confirms the handover with its audit identifiers on file.'

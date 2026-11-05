@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-ac
 
 This is a **Activity** (level L3), named **Acquire Regulator-Issued Operations Authorization**, currently **candidate (yellow)**. It is part of the **Activate Operations Capability** process context, domain `eo`, lifecycle stage Activate. It belongs to **Activate Operations Capability** (`processes:process-eo-activate-sy5qsa`). Its canonical ID is `processes:activity-eo-activate-w8tgv6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity obtains the formal approval the regulator requires before an operations capability may serve customers live. The capability description goes to the regulator in the mandated filing format, the resulting authorization or certification is examined and accepted onto the record, and the approved authorization is preserved for retrieval. From that point the capability holds the regulatory permission its live service depends on.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so live operations rest on a regulator-issued authorization held on the operations record, not on an assumption that permission exists.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs while the capability is awaiting its gate into live service, once the capability description and the mandated filing format are to hand, and it closes when the issued authorization is confirmed and preserved on the regulated operations record.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A compliance function officer submits the capability's filing to the industry regulator in the required format, receives the issued authorization back, and has it preserved on the regulated operations record for the activation steps that follow.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Obtain the Regulator's Operations Authorization |
+| `plain_language_description` | string | no | This activity obtains the formal approval the regulator requires before an operations capability may serve customers … |
+| `business_purpose` | string | no | It exists so live operations rest on a regulator-issued authorization held on the operations record, not on an … |
+| `practical_context` | string | no | It runs while the capability is awaiting its gate into live service, once the capability description and the mandated … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

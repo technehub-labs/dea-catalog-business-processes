@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-design-zbrg8b through concluding task processes:task-ge-design-record-v9s4cm, whose outcome — Case file retained for Articulate Governance Bodies under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Articulate Governance Bodies'
+plain_language_description: 'This activity names and sketches each board, committee, and other body the governance system will consist of. The committed governance strategy arrives as the source, the body inventory is articulated from it and reviewed for coverage, and the articulated bodies are confirmed onward for the delegation work. The system''s cast of characters is settled first.'
+business_purpose: 'It exists so governance design starts by settling exactly which bodies the system comprises.'
+practical_context: 'It opens the governance system design once a governance strategy has been committed, and it completes when the articulated body inventory is confirmed for the delegation design.'
+worked_example:
+  agent_type: human
+  narrative: 'A governance design authority designer names and sketches each board, committee, and other body the strategy calls for, and confirms the articulated inventory for the delegation design.'

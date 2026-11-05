@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-op
 
 This is a **Activity** (level L3), named **Validate Attendance Records**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. It belongs to **Operate Time and Attendance** (`processes:process-ao-operate-dg9q4h`). Its canonical ID is `processes:activity-ao-operate-yzn584`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity checks the captured attendance entries for accuracy before anything moves toward pay. The captured records come in first, each entry is examined against expectations, and the checked records are confirmed onward, with anything questionable flagged for the exception step rather than waved through.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so payroll only ever receives attendance data that has been checked for accuracy.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the daily capture of time and attendance, when the captured records are presented, and it completes once the validated records are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A verification custodian examines the day's captured attendance entries for accuracy, flags the questionable ones for exception handling, and confirms the clean records onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Validate Attendance Records |
+| `plain_language_description` | string | no | This activity checks the captured attendance entries for accuracy before anything moves toward pay. The captured … |
+| `business_purpose` | string | no | It exists so payroll only ever receives attendance data that has been checked for accuracy. |
+| `practical_context` | string | no | It follows the daily capture of time and attendance, when the captured records are presented, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

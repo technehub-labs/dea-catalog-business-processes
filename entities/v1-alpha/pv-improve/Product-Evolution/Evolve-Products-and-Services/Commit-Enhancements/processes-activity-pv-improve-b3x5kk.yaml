@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-improve-6c2xvf through concluding task processes:task-pv-improve-record-hsh9bc, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit Enhancements'
+plain_language_description: 'When enhancement designs are ready, product management gives them the formal go-ahead for implementation. The designs are registered at intake, checked against the specification, assembled into the committed package, confirmed to the teams who will implement, and the approval trail is archived so the decision carries forward.'
+business_purpose: 'It is the decision point of the evolution effort, turning drafted enhancements into work that teams are actually authorised to build.'
+practical_context: 'It closes the design-to-do sequence within evolution: intake opens when the enhancement designs are presented and closure comes when the committed package and its audit record are preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'A product management lead receives the finished enhancement designs for the flagging product line, verifies each meets the specification, assembles the commitment package, notifies the implementation teams at confirmation, and the records custodian files the approval trail.'

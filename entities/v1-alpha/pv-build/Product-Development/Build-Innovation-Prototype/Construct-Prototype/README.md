@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 
 This is a **Activity** (level L3), named **Construct Prototype**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. It belongs to **Build Innovation Prototype** (`processes:process-pv-build-8jc3y4`). Its canonical ID is `processes:activity-pv-build-r6b4x7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity builds the working artefact the designed experiment needs to test its hypothesis. The experiment design arrives as the specification, the prototype is constructed to it and checked as it takes shape, and the constructed prototype is confirmed onward for instrumentation. The idea gets a body here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the innovation hypothesis has something real to be tested against.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the prototype build when the designed experiment requires a working prototype, and it completes as the constructed prototype is confirmed onward for instrumentation.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management builder constructs the working prototype the experiment design specifies, checking it against the design as it takes shape, and confirms it onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Construct Prototype |
+| `plain_language_description` | string | no | This activity builds the working artefact the designed experiment needs to test its hypothesis. The experiment design … |
+| `business_purpose` | string | no | It exists so the innovation hypothesis has something real to be tested against. |
+| `practical_context` | string | no | It opens the prototype build when the designed experiment requires a working prototype, and it completes as the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

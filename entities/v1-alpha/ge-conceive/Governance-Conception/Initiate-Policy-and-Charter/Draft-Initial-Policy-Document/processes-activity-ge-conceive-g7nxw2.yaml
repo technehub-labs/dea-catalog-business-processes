@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-conceive-xp6fye through concluding task processes:task-ge-conceive-record-3hj23c, whose outcome — Case file retained for Draft Initial Policy Document under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Draft Initial Policy Document'
+plain_language_description: 'This activity writes the first version of the document, drawing the proposed scope and proposed authority together into one text. The bounded scope and the authority proposals arrive as its content, the initial document is drafted and reviewed as a whole, and the drafted document is confirmed onward for commitment. The instrument takes its first written body here.'
+business_purpose: 'It exists so the initiative''s proposals become one coherent first document rather than loose notes.'
+practical_context: 'It follows the scope and authority proposals, when both are confirmed, and it completes once the drafted initial document is confirmed onward for commitment.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function officer writes the first version of the instrument from the bounded scope and the authority proposals, and confirms the drafted document for commitment.'

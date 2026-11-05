@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-co
 
 This is a **Activity** (level L3), named **Assess Execution Engine Context**, currently **candidate (yellow)**. It is part of the **Operations Model and Enablement Conception** process context, domain `eo`, lifecycle stage Conceive. It belongs to **Frame Operations Strategy** (`processes:process-eo-conceive-xhjdr2`). Its canonical ID is `processes:activity-eo-conceive-r26ukv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity establishes why an operations strategy is needed at all — whether a new execution engine is being built, an existing one rethought, or the delivery model shifted underfoot. The engine's state and the shift signals arrive as the material, the context is assessed and written up, and the assessed picture is confirmed onward. Everything the strategy later decides traces back to this understanding of why now.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the operations strategy responds to a correctly understood trigger rather than a vague sense that something must change.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the strategy framing, when the enterprise faces a new engine, a reframe, or a delivery-model shift, and it completes once the assessed context is confirmed for the envelope bounding.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function lead reads the engine's state and the signals of a delivery-model shift, writes up why the strategy is needed now, and confirms the assessed context with the operations function.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assess Execution Engine Context |
+| `plain_language_description` | string | no | This activity establishes why an operations strategy is needed at all — whether a new execution engine is being built … |
+| `business_purpose` | string | no | It exists so the operations strategy responds to a correctly understood trigger rather than a vague sense that … |
+| `practical_context` | string | no | It opens the strategy framing, when the enterprise faces a new engine, a reframe, or a delivery-model shift, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

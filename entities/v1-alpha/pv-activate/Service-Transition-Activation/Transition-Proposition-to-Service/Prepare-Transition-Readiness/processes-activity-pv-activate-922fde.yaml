@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-activate-5686v7 through concluding task processes:task-pv-activate-record-gv76zq, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Prepare Transition Readiness'
+plain_language_description: 'This activity checks that everything needed for the handover is actually in hand — the readiness criteria met, the transition plan drawn, and the way back prepared. The proposition arrives with its readiness threshold met and its transition authorised, readiness is confirmed criterion by criterion, and the prepared state is confirmed onward for the cutover. Nothing is switched on until the exit is mapped.'
+business_purpose: 'It exists so the cutover happens on proven readiness, with the rollback provisioned before it is needed.'
+practical_context: 'It opens the transition once a validated proposition has met its readiness threshold and been authorised for operational transition, and it completes when the confirmed readiness, plan, and rollback provisions are in place for the cutover.'
+worked_example:
+  agent_type: human
+  narrative: 'A product management officer walks the readiness criteria one by one, sets out the transition plan and the way back if it fails, and confirms the prepared state for the cutover.'

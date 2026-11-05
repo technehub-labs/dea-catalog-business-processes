@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-build-ydnzjc through concluding task processes:task-fa-build-record-b2fbmq, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Stand Up Finance Function'
+plain_language_description: 'This activity recruits and organizes the team that will run the secured funding arrangements and the financial systems day to day. The treasury operating model and plan structure arrive as the design of the function, people are brought in and roles assigned against them, and the stood-up function is confirmed onward for the module deployment. The enterprise''s money acquires hands to hold it.'
+business_purpose: 'It exists so the secured facilities and financial systems have a real, organized function to operate them.'
+practical_context: 'It follows the funding documentation, when the treasury operating model and plan structure are to hand, and it completes once the stood-up finance function is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance function lead staffs and organizes the team to the treasury operating model, assigns the roles the plan structure implies, and confirms the stood-up function.'

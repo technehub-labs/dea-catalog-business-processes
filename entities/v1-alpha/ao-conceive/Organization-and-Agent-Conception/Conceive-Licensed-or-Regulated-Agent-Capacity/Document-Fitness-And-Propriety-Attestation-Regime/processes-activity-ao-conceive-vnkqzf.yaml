@@ -138,3 +138,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-conceive-pnrhem through concluding task processes:task-ao-conceive-record-g2vktj, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Document the Fitness and Propriety Attestation Regime'
+plain_language_description: 'This activity writes down, ahead of any hiring, exactly how fitness and propriety will be attested for each planned licensed role. The licensing taxonomy and the attestation regime matrix are brought in, the forms of attestation and who attests are worked through, and the resulting regime is documented on the personnel record. Confirmation and retention close the work, giving later attestation steps a regime to follow rather than decisions to make.'
+business_purpose: 'It exists so fitness attestations for licensed roles follow a declared regime agreed in advance, not case-by-case judgement.'
+practical_context: 'It happens while licensed capacity is being conceived, once the regulator licensing taxonomy is available, and it completes when the documented regime is confirmed and preserved on the personnel record.'
+worked_example:
+  agent_type: human
+  narrative: 'A workforce management lead sets out when initial and periodic attestations will occur for a planned licensed role, names whether the candidate, employer, or regulator attests, and files the documented regime for the teams that will apply it.'

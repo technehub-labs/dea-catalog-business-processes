@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-build-d5kb5m through concluding task processes:task-fa-build-record-bwk7zj, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Deploy Chart of Accounts'
+plain_language_description: 'This activity installs the designed account structure into the live financial systems. The committed plan structure arrives as the design of record, the chart of accounts is deployed and checked against it, and the deployed structure is confirmed onward for the posting rules. The skeleton of the books goes live here.'
+business_purpose: 'It exists so the enterprise''s books stand on the account structure it designed, live in its systems.'
+practical_context: 'It opens the financial systems implementation, when the committed plan structure is presented for deployment, and it completes once the deployed chart of accounts is confirmed and its record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance function builder installs the designed account structure into the financial systems, checks the deployment against the committed plan structure, and confirms it for the posting rules.'

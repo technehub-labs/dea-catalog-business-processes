@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-build-ucfjgt through concluding task processes:task-fa-build-record-gacrfu, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Execute Filings and Registrations'
+plain_language_description: 'This activity submits the registrations and filings that put the enterprise formally on record in the new regime. The jurisdictional requirements arrive as the checklist, each filing and registration is executed and its completion evidenced, and the completed set is confirmed onward. The enterprise exists, officially, in the new territory''s books.'
+business_purpose: 'It exists so the enterprise''s formal presence in a new regime is established by completed filings, not assumed.'
+practical_context: 'It follows the compliance calendar, when the jurisdictional requirements are enumerated, and it completes as each filing and registration is executed and confirmed onward.'
+worked_example:
+  agent_type: human
+  narrative: 'A finance function officer submits each registration and filing the new regime requires, evidences the completions, and confirms the set for the controls work.'

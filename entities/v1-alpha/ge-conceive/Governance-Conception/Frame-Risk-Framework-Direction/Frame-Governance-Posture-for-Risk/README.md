@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-co
 
 This is a **Activity** (level L3), named **Frame Governance Posture for Risk**, currently **candidate (yellow)**. It is part of the **Strategy and Governance Conception** process context, domain `ge`, lifecycle stage Conceive. It belongs to **Frame Risk Framework Direction** (`processes:process-ge-conceive-6qnkhh`). Its canonical ID is `processes:activity-ge-conceive-8nxptt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity settles how governance will actually carry the risk stance — how it engages, supervises, and enforces it. The appetite and bands arrive as the stance to be carried, the posture is framed around them and reviewed for workability, and the framed posture is confirmed onward for the direction's commitment. A risk position without a way of governing it is just a mood.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the declared risk stance comes with a governance way of carrying it.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the appetite and bands, when the stance is complete but not yet actionable, and it completes once the framed governance posture is confirmed for the direction's commitment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function lead frames how governance will engage, supervise, and enforce the stated risk stance, and confirms the framed posture for the direction's commitment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Frame Governance Posture for Risk |
+| `plain_language_description` | string | no | This activity settles how governance will actually carry the risk stance — how it engages, supervises, and enforces it … |
+| `business_purpose` | string | no | It exists so the declared risk stance comes with a governance way of carrying it. |
+| `practical_context` | string | no | It follows the appetite and bands, when the stance is complete but not yet actionable, and it completes once the framed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

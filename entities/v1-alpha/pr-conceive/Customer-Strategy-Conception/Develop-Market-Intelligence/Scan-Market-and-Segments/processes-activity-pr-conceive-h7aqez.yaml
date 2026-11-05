@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pr-conceive-tvst8u through concluding task processes:task-pr-conceive-record-3nactg, whose outcome — Closure case file retained for Scan Market and Segments under the records retention schedule with cryptographic integrity protection; cryptographic destruction …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Scan Market and Segments'
+plain_language_description: 'This activity sweeps the market methodically for its structure, its segments, and the signals of demand within them. The intelligence need arrives from a market entry, a segment drift, or a hypothesis to test, the scan is executed systematically and its finds gathered, and the scanned signals are confirmed onward for the hypothesis work. The enterprise looks before it leaps.'
+business_purpose: 'It exists so customer strategy rests on systematically gathered market fact, not on folklore.'
+practical_context: 'It opens the market intelligence work when a market entry, segment drift, or demand hypothesis needs testing before strategy commitment, and it completes as the scanned signals are confirmed onward.'
+worked_example:
+  agent_type: human
+  narrative: 'A customer relationship management analyst sweeps the market for its structure, segments, and demand signals, gathers the finds systematically, and confirms the scan onward.'

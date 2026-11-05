@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-de
 
 This is a **Activity** (level L3), named **Formulate Experiment Hypothesis**, currently **candidate (yellow)**. It is part of the **Proposition and Packaging Design** process context, domain `pv`, lifecycle stage Design. It belongs to **Design Innovation Experiment** (`processes:process-pv-design-9ckwf6`). Its canonical ID is `processes:activity-pv-design-fms697`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity states, in one bounded sentence, what the experiment will test. The innovation thesis arrives as the source of testable beliefs, a hypothesis is formulated from it and tightened until it can plainly fail, and the formulated hypothesis is confirmed onward for the success criteria. The experiment's subject is pinned here, falsifiably.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the experiment tests one sharp, failable belief rather than a vague hope.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the experiment design when the innovation thesis requires bounded experiments to validate new propositions, and it completes once the formulated hypothesis is confirmed for the success criteria.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management designer states the experiment's belief in one bounded, failable sentence drawn from the innovation thesis, and confirms it onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Formulate Experiment Hypothesis |
+| `plain_language_description` | string | no | This activity states, in one bounded sentence, what the experiment will test. The innovation thesis arrives as the … |
+| `business_purpose` | string | no | It exists so the experiment tests one sharp, failable belief rather than a vague hope. |
+| `practical_context` | string | no | It opens the experiment design when the innovation thesis requires bounded experiments to validate new propositions … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

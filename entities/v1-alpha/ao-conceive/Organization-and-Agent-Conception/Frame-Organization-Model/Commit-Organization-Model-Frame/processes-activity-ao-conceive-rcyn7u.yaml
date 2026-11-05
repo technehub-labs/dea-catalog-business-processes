@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-conceive-ruxjvh through concluding task processes:task-ao-conceive-record-qcrv2x, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit the Organization Model Frame'
+plain_language_description: 'This activity gathers the principles, spans, and boundaries produced during framing and fixes them as the organization model''s frame. The bounded coordination boundaries come in last, the whole frame is consolidated and reviewed, and its commitment is confirmed so structure design can rely on it. The committed frame is preserved as an audit record for later reference.'
+business_purpose: 'It exists so the organization''s structural ground rules become one committed frame that all later design work answers to.'
+practical_context: 'It takes place at the end of framing the organization model, once the coordination boundaries have been marked, and it closes when the committed frame is confirmed and its record retained at the agreed tier.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian assembles the derived principles, reporting spans, and coordination boundaries into a single frame, obtains the strategy function''s commitment, and files the audit record that lets structure design begin against a stable reference.'

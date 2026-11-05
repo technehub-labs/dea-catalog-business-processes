@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-build-rx7kt5 through concluding task processes:task-ge-build-record-8etqrz, whose outcome — Case file retained for Establish Risk Registers under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Establish Risk Registers'
+plain_language_description: 'This activity stands up the registers where risks will be logged, taking their structure from the taxonomy and scales as designed. The approved risk framework design arrives as the blueprint, registers are established and populated in its shape, and the operating registers are confirmed onward for the tooling. Risk acquires its formal home.'
+business_purpose: 'It exists so enterprise risks have their designed home — registers structured to the taxonomy and scales.'
+practical_context: 'It opens the risk apparatus build once the risk framework design is approved for build, and it completes as the operating registers are confirmed onward for the tooling and reporting work.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function officer stands up the risk registers in the shape the designed taxonomy and scales give them, and confirms the operating registers onward.'

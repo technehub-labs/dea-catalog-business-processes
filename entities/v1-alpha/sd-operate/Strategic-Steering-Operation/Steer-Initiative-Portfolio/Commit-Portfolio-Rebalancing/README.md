@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-op
 
 This is a **Activity** (level L3), named **Commit Portfolio Rebalancing**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. It belongs to **Steer Initiative Portfolio** (`processes:process-sd-operate-u6xgu5`). Its canonical ID is `processes:activity-sd-operate-th587n`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The corrective menu is on the table and the picks must be made. Intake registers the options, a final verification confirms each is still feasible against current performance, and the commitment ratifies the chosen moves and hands them to the colleagues who govern the initiatives day to day. Confirmation notifies downstream consumers and the records custodian preserves the committed decisions at their retention tier.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It turns portfolio steering into reality, ratifying the corrective moves and putting them in the hands of the people who run the initiatives.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes each steering pass, opening at intake of the corrective options and closing when the ratified decisions are confirmed and archived.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function lead ratifies the corrective moves with the activity owner, the confirmation custodian hands the committed decisions to initiative governance, and the records custodian archives the decision evidence.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Portfolio Rebalancing |
+| `plain_language_description` | string | no | The corrective menu is on the table and the picks must be made. Intake registers the options, a final verification … |
+| `business_purpose` | string | no | It turns portfolio steering into reality, ratifying the corrective moves and putting them in the hands of the people … |
+| `practical_context` | string | no | It closes each steering pass, opening at intake of the corrective options and closing when the ratified decisions are … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

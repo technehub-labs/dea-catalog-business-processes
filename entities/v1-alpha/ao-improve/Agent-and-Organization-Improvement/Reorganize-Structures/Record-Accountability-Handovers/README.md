@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 
 This is a **Activity** (level L3), named **Record Accountability Handovers**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Reorganize Structures** (`processes:process-ao-improve-xs59e2`). Its canonical ID is `processes:activity-ao-improve-gtc9k8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity logs, as the executed transition settles, every handover of accountability the change produced: which accountability moved, who gave it up, and who now holds it. The executed transition arrives as the input, each handover is recorded against it, and the handover records are confirmed and preserved. After the reorganization, the file shows exactly who owns what.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise can always show who holds each accountability after structural change, with the handovers on record.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the execution of the structure transition, when the completed moves are presented, and it completes once every handover is confirmed and its record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A records custodian logs each handover from the executed transition, naming the outgoing and incoming holder for every accountability moved, and preserves the records for audit.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Record the Accountability Handovers |
+| `plain_language_description` | string | no | This activity logs, as the executed transition settles, every handover of accountability the change produced: which … |
+| `business_purpose` | string | no | It exists so the enterprise can always show who holds each accountability after structural change, with the handovers … |
+| `practical_context` | string | no | It follows the execution of the structure transition, when the completed moves are presented, and it completes once … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

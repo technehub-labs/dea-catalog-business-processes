@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-operate-cau4gv through concluding task processes:task-pv-operate-record-recnkj, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Execute Gate Decisions'
+plain_language_description: 'When a proposition reaches a stage boundary, the criteria for passing are applied and the decision is carried out - advance, hold, or turn back. The boundary material arrives at intake, is checked against the gate criteria, the decision is executed and communicated at confirmation, and the outcome is archived.'
+business_purpose: 'It gives stage boundaries real force: a proposition moves on only when the gate says so, keeping lifecycle progression disciplined.'
+practical_context: 'It fires whenever a proposition arrives at a stage boundary: intake opens on the boundary material''s presentation and closure comes when the executed decision is confirmed and archived.'
+worked_example:
+  agent_type: human
+  narrative: 'A proposition seeking to move from its early stage to the growth stage presents its case at intake; a product management gatekeeper checks it against the criteria, executes the advance decision at processing, notifies the stakeholders at confirmation, and files the gate record.'

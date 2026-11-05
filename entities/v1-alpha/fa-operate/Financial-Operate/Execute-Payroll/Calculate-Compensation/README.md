@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-op
 
 This is a **Activity** (level L3), named **Calculate Compensation**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. It belongs to **Execute Payroll** (`processes:process-fa-operate-zpmxzp`). Its canonical ID is `processes:activity-fa-operate-zxtxzj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity works out what each person is owed for the cycle, applying the agreed pay terms, the deductions, and the statutory adjustments. The cycle boundary arrives as the trigger, compensation is calculated per person and checked as it is built, and the calculated amounts are confirmed onward for the withholdings. Payroll's arithmetic starts here, and starts right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so every person's pay for the cycle is calculated correctly before anything is withheld or paid.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs at each payroll cycle boundary, and it completes once the calculated compensation is confirmed onward for the withholding computation.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A compliance function payroll analyst calculates each person's compensation for the cycle from the agreed pay terms, applies the statutory adjustments, and confirms the amounts onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -60,6 +60,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Calculate Compensation |
+| `plain_language_description` | string | no | This activity works out what each person is owed for the cycle, applying the agreed pay terms, the deductions, and the … |
+| `business_purpose` | string | no | It exists so every person's pay for the cycle is calculated correctly before anything is withheld or paid. |
+| `practical_context` | string | no | It runs at each payroll cycle boundary, and it completes once the calculated compensation is confirmed onward for the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

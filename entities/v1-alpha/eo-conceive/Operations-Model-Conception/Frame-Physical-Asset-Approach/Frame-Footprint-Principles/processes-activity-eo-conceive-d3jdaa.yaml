@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-eo-conceive-87kx9n through concluding task processes:task-eo-conceive-record-jt3c9x, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Frame Footprint Principles'
+plain_language_description: 'This activity settles the ground rules that will govern how much facility and asset capacity the enterprise chooses to carry and where. The operations strategy and the delivery envelope arrive as the basis, principles are drawn and reviewed against them, and the principle set is confirmed onward for the option assessment. Every later site decision inherits its logic from here.'
+business_purpose: 'It exists so physical footprint choices follow declared principles rather than opportunistic site-by-site judgement.'
+practical_context: 'It opens the physical asset approach framing, once the strategy and delivery envelope are to hand, and it completes when the footprint principles are confirmed for assessing the options.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function lead draws the footprint ground rules from the operations strategy and the delivery envelope, reviews them with the operations function, and confirms the principles for option assessment.'

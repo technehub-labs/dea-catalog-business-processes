@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ge-im
 
 This is a **Activity** (level L3), named **Deliver Effectiveness Reviews**, currently **candidate (yellow)**. It is part of the **Governance Review and Learning** process context, domain `ge`, lifecycle stage Improve. It belongs to **Review Governance Effectiveness** (`processes:process-ge-improve-mgkw59`). Its canonical ID is `processes:activity-ge-improve-adkxr6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity hands the finished effectiveness reviews — outcomes, lessons, and recommendations together — to the governance bodies themselves. The consolidated reviews arrive as the release candidates, delivery is executed to each body, and the delivered reviews are confirmed for the record. The people being graded finally receive their grades.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so governance bodies actually receive the effectiveness reviews written about them.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the effectiveness review once outcomes, lessons, and recommendations are consolidated, and it completes when the delivered reviews are confirmed to the governance bodies.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function officer delivers the consolidated effectiveness reviews to each governance body, and confirms the deliveries for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Deliver Effectiveness Reviews |
+| `plain_language_description` | string | no | This activity hands the finished effectiveness reviews — outcomes, lessons, and recommendations together — to the … |
+| `business_purpose` | string | no | It exists so governance bodies actually receive the effectiveness reviews written about them. |
+| `practical_context` | string | no | It closes the effectiveness review once outcomes, lessons, and recommendations are consolidated, and it completes when … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

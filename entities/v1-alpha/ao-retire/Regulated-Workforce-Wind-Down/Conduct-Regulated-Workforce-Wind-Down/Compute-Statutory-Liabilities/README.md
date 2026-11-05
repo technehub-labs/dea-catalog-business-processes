@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-re
 
 This is a **Activity** (level L3), named **Compute Statutory Liabilities**, currently **candidate (yellow)**. It is part of the **Workforce Retirement** process context, domain `ao`, lifecycle stage Retire. It belongs to **Conduct Regulated Workforce Wind-Down** (`processes:process-ao-retire-g3eyr8`). Its canonical ID is `processes:activity-ao-retire-sqdecn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity works out what the enterprise owes each affected person under the law, in notice pay, severance, and continued benefits cover, and sets the total aside so settlement is funded when it falls due. Each person's tenure, compensation, classification, and the controlling statute come in as the inputs, an entitlement schedule is drawn per person, and the funded liability is confirmed and retained.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the money owed under statute is calculated person by person and actually set aside for settlement day.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs during the wind-down once the affected population is known and ahead of the severance date, and it closes when the entitlement schedule and funded liability are confirmed and retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management custodian calculates each affected person's entitlements from their tenure, compensation, and classification under the controlling statute, totals the liability, and confirms it is funded for settlement.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Calculate the Statutory Liabilities and Fund Them |
+| `plain_language_description` | string | no | This activity works out what the enterprise owes each affected person under the law, in notice pay, severance, and … |
+| `business_purpose` | string | no | It exists so the money owed under statute is calculated person by person and actually set aside for settlement day. |
+| `practical_context` | string | no | It runs during the wind-down once the affected population is known and ahead of the severance date, and it closes when … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

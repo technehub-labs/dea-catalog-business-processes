@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-im
 
 This is a **Activity** (level L3), named **Commit Cost Review Outcomes**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. It belongs to **Conduct Cost Optimization Review** (`processes:process-fa-improve-emqpgr`). Its canonical ID is `processes:activity-fa-improve-s2fjfj`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity draws the findings and their routings together into the review's committed record of outcomes. The routed findings arrive as its final inputs, the whole is consolidated and ratified, and the committed outcomes are confirmed as the review's standing result. The review thereby closes with decisions on the record, not observations in the air.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the cost review ends as committed outcomes the financial tracks must act on, not as a filed report.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It closes the cost optimization review, once findings are formed and routed, and it completes when the committed outcomes are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A confirmation custodian consolidates the findings and their routings into the review record, obtains ratification of the outcomes, and preserves the record for the next cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Commit Cost Review Outcomes |
+| `plain_language_description` | string | no | This activity draws the findings and their routings together into the review's committed record of outcomes. The routed … |
+| `business_purpose` | string | no | It exists so the cost review ends as committed outcomes the financial tracks must act on, not as a filed report. |
+| `practical_context` | string | no | It closes the cost optimization review, once findings are formed and routed, and it completes when the committed … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

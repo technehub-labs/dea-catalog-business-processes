@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-fa-de
 
 This is a **Activity** (level L3), named **Assess Tax Exposures**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. It belongs to **Design Tax Position and Strategy** (`processes:process-fa-design-ds4drw`). Its canonical ID is `processes:activity-fa-design-rh9ft4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity sizes up the fresh tax exposure, or the shift in jurisdictions, that has made this design work necessary. The jurisdictional change record and the operating footprint arrive as the material, exposures are assessed and bounded, and the exposure assessment is confirmed onward for the position work. What the enterprise owes, and where, is established before any stance is taken.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so tax design starts from exposures that are known and bounded, not discovered late.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the tax design when a new exposure or jurisdictional change emerges, and it completes once the exposure assessment is confirmed for the position documentation.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A finance design authority analyst reads the jurisdictional change record against the operating footprint, sizes and bounds the fresh tax exposure, and confirms the assessment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assess Tax Exposures |
+| `plain_language_description` | string | no | This activity sizes up the fresh tax exposure, or the shift in jurisdictions, that has made this design work necessary … |
+| `business_purpose` | string | no | It exists so tax design starts from exposures that are known and bounded, not discovered late. |
+| `practical_context` | string | no | It opens the tax design when a new exposure or jurisdictional change emerges, and it completes once the exposure … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

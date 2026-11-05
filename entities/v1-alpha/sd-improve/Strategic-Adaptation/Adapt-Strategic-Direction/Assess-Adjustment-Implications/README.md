@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-sd-im
 
 This is a **Activity** (level L3), named **Assess Adjustment Implications**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. It belongs to **Adapt Strategic Direction** (`processes:process-sd-improve-9wgvaf`). Its canonical ID is `processes:activity-sd-improve-r5jbb6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Every candidate change ripples somewhere, and this work traces where. Intake brings the candidate adjustments in, scrutiny tests each one across the objective set, the target set, the initiative portfolio and the plan document, and processing records what would have to move if the change were made. Confirmation communicates the assessed implications downstream and the records custodian preserves them for the selection.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exposes the true cost of each candidate change before any is chosen, so the selection is made with consequences in view.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows formulation, opening when the candidate adjustments are presented at intake and closing when the implications are confirmed and stored.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Strategy function analysts walk each candidate change past the objective and target sets, the initiative portfolio and the plan document, note what would have to move, and the confirmation custodian releases the implications pack for selection.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assess Adjustment Implications |
+| `plain_language_description` | string | no | Every candidate change ripples somewhere, and this work traces where. Intake brings the candidate adjustments in … |
+| `business_purpose` | string | no | It exposes the true cost of each candidate change before any is chosen, so the selection is made with consequences in … |
+| `practical_context` | string | no | It follows formulation, opening when the candidate adjustments are presented at intake and closing when the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

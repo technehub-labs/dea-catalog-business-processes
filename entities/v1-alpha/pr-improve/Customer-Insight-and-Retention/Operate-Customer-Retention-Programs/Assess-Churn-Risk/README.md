@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-im
 
 This is a **Activity** (level L3), named **Assess Churn Risk**, currently **candidate (yellow)**. It is part of the **Customer Insight and Retention** process context, domain `pr`, lifecycle stage Improve. It belongs to **Operate Customer Retention Programs** (`processes:process-pr-improve-t6uvan`). Its canonical ID is `processes:activity-pr-improve-6atff5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity reads the feedback and the behavioural signals together to grade how likely each active customer is to leave. The collected feedback arrives with the behavioural record as its companion, churn risk is scored customer by customer across the base, and the scored risks are confirmed onward for the retention actions. Leaving customers are seen before they have gone.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so customers at risk of leaving are identified by evidence before they actually go.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs continuously against the collected feedback and behaviour signals, and it completes once the scored churn risks are confirmed onward for the retention actions.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A customer relationship management analyst reads the feedback alongside the behavioural signals, scores each active customer's likelihood of leaving, and confirms the scored risks onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Assess Churn Risk |
+| `plain_language_description` | string | no | This activity reads the feedback and the behavioural signals together to grade how likely each active customer is to … |
+| `business_purpose` | string | no | It exists so customers at risk of leaving are identified by evidence before they actually go. |
+| `practical_context` | string | no | It runs continuously against the collected feedback and behaviour signals, and it completes once the scored churn risks … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-operate-87q5mk through concluding task processes:task-ao-operate-record-r84chv, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Record Programme Completion'
+plain_language_description: 'This activity writes down, agent by agent, which delivered programmes they have finished. The delivered sessions arrive as the input, each person''s and each artificial agent''s completions are logged and checked against the delivery record, and the recorded completions are confirmed onward. The result is an answerable file of who has finished which programme.'
+business_purpose: 'It exists so every agent''s programme completions are on file, ready to evidence readiness or compliance.'
+practical_context: 'It follows the delivery of learning sessions, when the delivered sessions are presented for recording, and it closes once the recorded completions are confirmed and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A records custodian logs each agent against the programmes they finished, checks the entries match the delivered sessions, and confirms the completions for the file.'

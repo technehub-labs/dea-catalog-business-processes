@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-conceive-z6m6p5 through concluding task processes:task-ao-conceive-record-gx3wmy, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Draft the Workforce and Agent Mix'
+plain_language_description: 'This activity puts together the actual composition of the workforce mix, working inside the proportions and capacity envelopes already agreed. The envelopes arrive first, the mix is drafted against them and checked for fit, and the draft is confirmed with the people who will ratify it. It ends with a complete draft mix ready to be committed as the organization''s reference for acquisition and planning.'
+business_purpose: 'It exists so the blend of people and artificial agents is shaped deliberately within agreed limits before anything is committed.'
+practical_context: 'It runs once the capacity envelopes are in place during mix conception, and it completes when the drafted mix has been confirmed and its record preserved for the commitment step.'
+worked_example:
+  agent_type: human
+  narrative: 'A workforce management planner drafts the shape of the future mix inside the agreed envelopes, tests the draft against each proportion, and hands the confirmed draft to the strategy function for commitment.'

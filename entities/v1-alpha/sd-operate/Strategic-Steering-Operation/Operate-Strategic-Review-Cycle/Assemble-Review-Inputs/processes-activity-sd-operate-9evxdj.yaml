@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-operate-ucxpz4 through concluding task processes:task-sd-operate-record-3gefwg, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Assemble Review Inputs'
+plain_language_description: 'Each scheduled session deserves a proper pack. The cadence arrives at intake, verification checks every item is the current version, and processing gathers the performance reports, the signal briefs and the session agenda into one pack per review. Confirmation issues the pack to attendees and the records custodian preserves it with the session record.'
+business_purpose: 'It makes every review session a prepared one, so decisions are taken on complete papers rather than whatever happens to be at hand.'
+practical_context: 'It runs ahead of each scheduled session on the cadence, opening at intake of the timetable and closing when the issued pack is confirmed and preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'A strategy function coordinator gathers the latest performance report, the current signal briefs and the draft agenda into the session pack, a verification custodian confirms versions are current, and the pack goes out to the review attendees in good time.'

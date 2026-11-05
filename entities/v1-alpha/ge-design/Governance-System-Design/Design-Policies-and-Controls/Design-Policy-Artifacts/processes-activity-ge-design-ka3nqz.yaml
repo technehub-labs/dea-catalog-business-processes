@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-design-kpsj5b through concluding task processes:task-ge-design-record-nfa96w, whose outcome — Case file retained for Design Policy Artifacts under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Design Policy Artifacts'
+plain_language_description: 'This activity turns the charters already committed and the initiated policy documents into designed artefacts ready for codification. The initiated policies and the governance system design arrive as the sources, artefact designs are produced from them and checked against both, and the designs are confirmed onward for the control objectives. Policy intent gains designed form here.'
+business_purpose: 'It exists so committed charters and initiated policies become designed artefacts that codification can work from.'
+practical_context: 'It opens the policy and control design once the governance system is designed, and it completes when the policy artefact designs are confirmed for the control objectives.'
+worked_example:
+  agent_type: human
+  narrative: 'A governance design authority designer turns the committed charters and initiated policies into designed artefacts, checks them against the governance system design, and confirms them onward.'

@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-build-rx7kt5 through concluding task processes:task-ge-build-record-dmpg98, whose outcome — Case file retained for Establish Reporting Lines under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Establish Reporting Lines'
+plain_language_description: 'This activity draws the channels by which risk and control news reaches the bodies that govern. The governance integration design arrives as the wiring diagram, reporting lines are established from apparatus to bodies and checked against it, and the established lines are confirmed onward for readiness. Risk seen but unreported is risk unmanaged; this closes that gap.'
+business_purpose: 'It exists so what the risk apparatus sees reliably reaches the bodies charged with acting on it.'
+practical_context: 'It runs alongside the registers and tooling, working from the governance integration design, and it completes once the established reporting lines are confirmed onward for readiness.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations function officer draws the reporting channels from the apparatus up to the governing bodies per the integration design, and confirms the established lines onward.'

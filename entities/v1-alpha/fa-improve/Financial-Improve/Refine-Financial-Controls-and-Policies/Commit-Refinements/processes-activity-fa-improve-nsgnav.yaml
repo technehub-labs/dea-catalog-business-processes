@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-fa-improve-cdtsbq through concluding task processes:task-fa-improve-record-a4qs5p, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit Refinements'
+plain_language_description: 'This activity ratifies the designed refinements through the policy review cycle that governs them. The designed set arrives as the proposal, commitment is given under the cycle''s standing rules, and the committed refinements are confirmed into the controls and policies. The enterprise''s financial safeguards get stronger by governed increments.'
+business_purpose: 'It exists so control and policy changes land through the governed cycle, not as unilateral edits.'
+practical_context: 'It follows the refinement design, once the designed set is in hand, and it completes when the committed refinements are confirmed under the policy review cycle and their record retained.'
+worked_example:
+  agent_type: human
+  narrative: 'A confirmation custodian brings the designed refinements before the policy review cycle, records the commitment once given, and confirms the changes into the controls and policies.'

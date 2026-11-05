@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-pv-retire-6us5am through concluding task processes:task-pv-retire-record-t5vcxv, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Confirm Retirement Closure'
+plain_language_description: 'The retirement ends here: with the service withdrawn and its leftover duties routed, the design authority confirms that closure is genuinely complete, on evidence. The closed case arrives at intake, is checked against the specification, the closure record is assembled with the de-listing and archival steps finished, confirmed, and archived.'
+business_purpose: 'It certifies that a retirement is truly finished - evidenced, archived, and struck from the catalogue - so nothing lingers half-removed.'
+practical_context: 'It is the final act of the out-of-service transition: intake opens on the withdrawn service and routed residuals, and closure comes when the confirmed closure record and audit trail are preserved.'
+worked_example:
+  agent_type: human
+  narrative: 'When the last customer has migrated off a retired service, the proposition design authority registers the closed case at intake, checks the evidence that withdrawal and residual routing are done, completes the archival and de-listing steps, and confirms closure with the record filed.'

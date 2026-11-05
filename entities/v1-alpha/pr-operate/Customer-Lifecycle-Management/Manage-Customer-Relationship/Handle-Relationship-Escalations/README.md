@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pr-op
 
 This is a **Activity** (level L3), named **Handle Relationship Escalations**, currently **candidate (yellow)**. It is part of the **Customer Relationship Operations** process context, domain `pr`, lifecycle stage Operate. It belongs to **Manage Customer Relationship** (`processes:process-pr-operate-bbe384`). Its canonical ID is `processes:activity-pr-operate-w753mv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity takes the escalated complaints in hand, sorts the resolution, and keeps the customer wanting to stay. Escalations arrive from the reviews and the day's friction, resolution is coordinated across whoever must act, and the handled escalations are confirmed onward. The relationship's worst moments are managed into its best save stories.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so escalated customer problems are resolved fast enough to preserve the relationship.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs whenever an escalation arrives from the reviews, operations, or the customer directly, and it completes once the coordinated resolution is confirmed and the relationship preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A customer relationship management lead takes the escalated complaint in hand, coordinates the fix across the teams involved, and closes it with the relationship intact.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Handle Relationship Escalations |
+| `plain_language_description` | string | no | This activity takes the escalated complaints in hand, sorts the resolution, and keeps the customer wanting to stay … |
+| `business_purpose` | string | no | It exists so escalated customer problems are resolved fast enough to preserve the relationship. |
+| `practical_context` | string | no | It runs whenever an escalation arrives from the reviews, operations, or the customer directly, and it completes once … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

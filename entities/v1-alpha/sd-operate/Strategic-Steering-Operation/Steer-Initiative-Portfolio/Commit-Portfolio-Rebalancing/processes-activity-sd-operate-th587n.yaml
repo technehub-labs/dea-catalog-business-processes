@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-sd-operate-u6xgu5 through concluding task processes:task-sd-operate-record-e4yhvs, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Commit Portfolio Rebalancing'
+plain_language_description: 'The corrective menu is on the table and the picks must be made. Intake registers the options, a final verification confirms each is still feasible against current performance, and the commitment ratifies the chosen moves and hands them to the colleagues who govern the initiatives day to day. Confirmation notifies downstream consumers and the records custodian preserves the committed decisions at their retention tier.'
+business_purpose: 'It turns portfolio steering into reality, ratifying the corrective moves and putting them in the hands of the people who run the initiatives.'
+practical_context: 'It closes each steering pass, opening at intake of the corrective options and closing when the ratified decisions are confirmed and archived.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function lead ratifies the corrective moves with the activity owner, the confirmation custodian hands the committed decisions to initiative governance, and the records custodian archives the decision evidence.'

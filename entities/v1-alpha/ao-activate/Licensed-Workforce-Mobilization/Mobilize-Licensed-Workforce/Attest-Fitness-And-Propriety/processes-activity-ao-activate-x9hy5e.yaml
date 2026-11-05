@@ -89,3 +89,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ao-activate-jqxtqn through concluding task processes:task-ao-activate-record-c3era6, whose outcome — Audit record preserved at the specified retention tier; retrieval handles established per parent Activity''s evidence discipline.'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Attest Fitness and Propriety'
+plain_language_description: 'This activity captures the formal statement that a licensed individual is fit and proper for their role and files it on the personnel record. The fitness evidence is brought in and examined, the attestation is drawn up and confirmed to those who rely on it, and the attested record is kept for audit. What is filed has to match the fitness standard that applies to the role, because the attestation is made while the regulator keeps the role under continuing oversight.'
+business_purpose: 'It exists so nobody goes live in a licensed role without a documented fitness attestation backing the enterprise''s assurance to its regulator.'
+practical_context: 'It runs during the mobilization of a licensed role, once the licence has been verified and the fitness evidence is to hand, and it completes when the attested fitness record is preserved on the personnel file.'
+worked_example:
+  agent_type: human
+  narrative: 'A workforce management lead gathers the medical certification and good-standing evidence for a clinician joining a regulated team, checks it against the fitness standard for the role, and files the signed attestation on the personnel record.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Respond to Platform Incidents**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Technology Platforms** (`processes:process-eo-operate-4njp7b`). Its canonical ID is `processes:activity-eo-operate-ua7tgk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity takes each platform incident as it surfaces — sizing it up, working a way around it where possible, and restoring service — then writes it up against its window. Detected deviations arrive as the triggers, incidents are triaged and worked to restoration, and each is recorded. Platform trouble gets a practiced response, not a panic.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so platform incidents are restored quickly and leave an honest record behind them.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs whenever monitoring or users surface a platform incident, from triage to restored service, and it completes once the incident is recorded against its service window.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A platform custodian triages the surfaced incident, works a workaround and restores service, then writes the incident up against its window for the record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Respond to Platform Incidents |
+| `plain_language_description` | string | no | This activity takes each platform incident as it surfaces — sizing it up, working a way around it where possible, and … |
+| `business_purpose` | string | no | It exists so platform incidents are restored quickly and leave an honest record behind them. |
+| `practical_context` | string | no | It runs whenever monitoring or users surface a platform incident, from triage to restored service, and it completes … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

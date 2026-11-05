@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-bu
 
 This is a **Activity** (level L3), named **Procure Hardware and Software**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. It belongs to **Acquire Technology Assets** (`processes:process-eo-build-nmmmt6`). Its canonical ID is `processes:activity-eo-build-jg28xr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity buys the hardware and software that the designed platform calls for. The architecture specification arrives with the sourcing rules, purchases are placed and the deliveries checked against them, and the procured items are confirmed onward for installation. The shopping stops when the design's list is fully delivered.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the platform build starts from real, delivered equipment rather than a design with nothing bought.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens technology acquisition, once the platform architecture and the sourcing rules are settled, and it closes when the procured items are confirmed complete and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian working for product management places the purchase orders the architecture specification lists, checks each delivery against it, and hands the procured hardware and software over for installation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Procure Hardware and Software |
+| `plain_language_description` | string | no | This activity buys the hardware and software that the designed platform calls for. The architecture specification … |
+| `business_purpose` | string | no | It exists so the platform build starts from real, delivered equipment rather than a design with nothing bought. |
+| `practical_context` | string | no | It opens technology acquisition, once the platform architecture and the sourcing rules are settled, and it closes when … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

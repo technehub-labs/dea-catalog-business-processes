@@ -87,3 +87,17 @@ outputs:
   description: 'Declared per EXT-12 §9: this activity contributes to processes:process-ge-operate-zwaes5 through concluding task processes:task-ge-operate-record-b453z3, whose outcome — Case file retained for Assemble Assurance Evidence under the records retention schedule with cryptographic integrity protection; statutory retention horizon …'
   source: The activity's own concluding task (EXT-12 §9)
   mandatory: true
+
+
+# CR-BP-234 Wave B (2026-11-05): plain-language fields authored from the
+# activity's own + its child tasks' + its parent process's documented
+# content (CR-BP-230 S2; no invention; MECE against the formal definition).
+# Rendered in README Part I by the CR-BP-231 profile v3 generator.
+
+plain_language_name: 'Assemble Assurance Evidence'
+plain_language_description: 'This activity gathers in the evidence the assurance work will need, from wherever it lives. The cycle or mandate arrives as the specification, evidence is assembled against it and checked for completeness, and the assembled set is confirmed onward for the measurement. Assurance starts from everything it needs, in one place.'
+business_purpose: 'It exists so assurance examines a complete evidence base rather than whatever happens to be at hand.'
+practical_context: 'It opens the assurance review when a cycle or audit mandate arrives, and it completes once the assembled evidence is confirmed onward for the measurement.'
+worked_example:
+  agent_type: human
+  narrative: 'A compliance function custodian gathers the evidence an assurance cycle requires from its scattered sources, checks the set for completeness, and confirms it for measurement.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-eo-op
 
 This is a **Activity** (level L3), named **Plan Maintenance Schedules**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. It belongs to **Operate Asset Maintenance** (`processes:process-eo-operate-j9cjzz`). Its canonical ID is `processes:activity-eo-operate-eadndb`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity turns what the enterprise knows about each asset — its condition, how hard it is used, and the maker's guidance — into a dated plan of upkeep work. The asset register and the condition and usage data arrive as the basis, the schedule is drawn up and reviewed against them, and the finished schedule is confirmed onward for execution. Upkeep stops being reactive guesswork and becomes a timetable.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise's assets are maintained on a deliberate plan rather than attended to only once something breaks.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the maintenance operation, when the asset register and the condition and usage data are presented, and it completes once the maintenance schedule is confirmed for the execution step.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management planner reads each asset's condition and usage data alongside the maker's guidance, draws up the dated upkeep plan, and confirms the schedule for the maintenance crews.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Plan Maintenance Schedules |
+| `plain_language_description` | string | no | This activity turns what the enterprise knows about each asset — its condition, how hard it is used, and the maker's … |
+| `business_purpose` | string | no | It exists so the enterprise's assets are maintained on a deliberate plan rather than attended to only once something … |
+| `practical_context` | string | no | It opens the maintenance operation, when the asset register and the condition and usage data are presented, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

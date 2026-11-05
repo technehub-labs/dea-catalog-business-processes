@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-im
 
 This is a **Activity** (level L3), named **Review Development Outcomes**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. It belongs to **Develop Agents and Organization** (`processes:process-ao-improve-xfh8na`). Its canonical ID is `processes:activity-ao-improve-5tzwvk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity checks what the executed development actually achieved against the drivers that gave rise to it. The executed actions come in, each outcome is weighed against its originating driver, and the reviewed outcomes are confirmed for the record. What the review learns feeds the next planning cycle, so development keeps improving on itself.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise knows which development actions genuinely addressed their drivers and which need another pass.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the execution of development actions, when the completed set is presented, and it completes once the reviewed outcomes are confirmed and their record retained.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A processing custodian takes each completed action, checks whether it addressed the driver behind it, records where a gap remains, and confirms the reviewed outcomes for the next cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Review the Development Outcomes |
+| `plain_language_description` | string | no | This activity checks what the executed development actually achieved against the drivers that gave rise to it. The … |
+| `business_purpose` | string | no | It exists so the enterprise knows which development actions genuinely addressed their drivers and which need another … |
+| `practical_context` | string | no | It follows the execution of development actions, when the completed set is presented, and it completes once the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

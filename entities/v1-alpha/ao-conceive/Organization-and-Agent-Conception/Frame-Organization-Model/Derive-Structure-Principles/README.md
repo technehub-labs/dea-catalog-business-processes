@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-ao-co
 
 This is a **Activity** (level L3), named **Derive Structure Principles**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. It belongs to **Frame Organization Model** (`processes:process-ao-conceive-ruxjvh`). Its canonical ID is `processes:activity-ao-conceive-5fytar`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity turns the newly committed strategy for the organization and its agents into the structural ground rules the organization model will have to respect. The strategy is brought in and studied, the principles the structure must follow are derived from it, and the derived principles are confirmed with those framing the model. From then on, decisions about spans and boundaries are made inside those principles.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the organization model is framed from explicit strategic principles rather than from habit or ad hoc preference.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It opens the framing of the organization model, when the committed organization and agent strategy is presented, and it closes once the derived principles are confirmed and their record preserved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function lead reads the newly committed strategy and draws out the structural principles it implies, such as how decision rights should sit, then confirms those principles with workforce management before reporting spans are set.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Derive the Structure Principles |
+| `plain_language_description` | string | no | This activity turns the newly committed strategy for the organization and its agents into the structural ground rules … |
+| `business_purpose` | string | no | It exists so the organization model is framed from explicit strategic principles rather than from habit or ad hoc … |
+| `practical_context` | string | no | It opens the framing of the organization model, when the committed organization and agent strategy is presented, and it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

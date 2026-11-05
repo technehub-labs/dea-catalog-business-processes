@@ -8,19 +8,19 @@ This directory hosts the canonical Activity record for `processes:activity-pv-bu
 
 This is a **Activity** (level L3), named **Integrate Service with Delivery Model**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. It belongs to **Build Service Capability** (`processes:process-pv-build-p9a2s9`). Its canonical ID is `processes:activity-pv-build-p2ny2w`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This activity wires the built service capability — machinery and people together — into the enterprise's delivery model and channels. The prepared capability arrives as the piece to be connected, integration is made across the delivery model and its channels and checked at every join, and the integrated capability is confirmed onward for readiness. The service joins the enterprise's existing bloodstream here.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the new service capability reaches customers through the enterprise's real delivery model.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It follows the personnel preparation, once machinery and people are ready, and it completes when the integration with the delivery model and channels is confirmed onward for readiness.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product management builder wires the capability — mechanism and people — into the enterprise's delivery model and channels, checking every join, and confirms the integration onward.
 
 ## 5. Header and Identity Table (generated)
 
@@ -59,6 +59,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `composes` | array[5] | no | array of 5 item(s) |
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
+| `plain_language_name` | string | no | Integrate Service with Delivery Model |
+| `plain_language_description` | string | no | This activity wires the built service capability — machinery and people together — into the enterprise's delivery model … |
+| `business_purpose` | string | no | It exists so the new service capability reaches customers through the enterprise's real delivery model. |
+| `practical_context` | string | no | It follows the personnel preparation, once machinery and people are ready, and it completes when the integration with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 
