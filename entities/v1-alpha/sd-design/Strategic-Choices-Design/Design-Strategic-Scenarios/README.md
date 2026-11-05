@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-sd-desi
 
 This is a **Business Process** (level L2), named **Design Strategic Scenarios**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. Its canonical ID is `processes:process-sd-design-uenzna`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Because the future is uncertain, this work builds the scenarios the strategy will be stress-tested against. The strategy function designs each scenario as a set of bounded assumptions about how the world could move, together with the signposts that would show an assumption coming true. The scenarios are then ready to support strategic plan construction.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It prepares the strategy for an uncertain world: scenarios with explicit assumptions and signposts let the enterprise test its direction against different futures before committing to one.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered during strategy design, when the options need stress-testing under uncertainty; the strategy function designs the scenarios ahead of plan construction.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function drafts a set of future scenarios, listing the assumptions each rests on and the signposts that would confirm or break them. The scenario pack then travels with the options into plan construction.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Design Strategic Scenarios L2 process within the processes:pc-sd-design-g3es76 Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Design Strategic Scenarios |
+| `plain_language_description` | string | no | Because the future is uncertain, this work builds the scenarios the strategy will be stress-tested against. The … |
+| `business_purpose` | string | no | It prepares the strategy for an uncertain world: scenarios with explicit assumptions and signposts let the enterprise … |
+| `practical_context` | string | no | Encountered during strategy design, when the options need stress-testing under uncertainty; the strategy function … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-fa-buil
 
 This is a **Business Process** (level L2), named **Implement Financial Systems and Ledger**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. Its canonical ID is `processes:process-fa-build-d5kb5m`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Whenever a financial system build or change is initiated, this process stands up the systems and the ledger that finance will run on. It sets out the chart of accounts, puts the posting rules in place, and deploys the reports that accountants rely on. When the work is done, the general ledger is ready to operate.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives the enterprise a functioning general ledger and the systems around it, so every financial transaction has a defined home and the numbers taken from the ledger are consistent.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It is triggered when a financial system build or change is initiated, and the finance function does the implementation before general ledger operations begin.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* When a financial system change is initiated, the finance function configures the chart of accounts, agrees the posting rules, and deploys the standard reports so the ledger can take live transactions.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Implement Financial Systems and Ledger (build stage, core process). Landed by CR-BP-21e.1 from the FinanceAndAccounting … |
+| `plain_language_name` | string | no | Implement Financial Systems and Ledger |
+| `plain_language_description` | string | no | Whenever a financial system build or change is initiated, this process stands up the systems and the ledger that … |
+| `business_purpose` | string | no | It gives the enterprise a functioning general ledger and the systems around it, so every financial transaction has a … |
+| `practical_context` | string | no | It is triggered when a financial system build or change is initiated, and the finance function does the implementation … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

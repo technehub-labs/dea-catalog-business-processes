@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pv-desi
 
 This is a **Business Process** (level L2), named **Design Innovation Experiment**, currently **candidate (yellow)**. It is part of the **Proposition and Packaging Design** process context, domain `pv`, lifecycle stage Design. Its canonical ID is `processes:process-pv-design-9ckwf6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This work turns an innovation thesis into a concrete test. Product management shapes the experiment by writing the hypothesis it will check, defining what success looks like, and fixing the time allowed. The finished design is then ready for a prototype to be built against it.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It makes new ideas testable: stating the hypothesis, success criteria, and timebox up front ensures each experiment answers a real question within a known budget of effort.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs whenever the innovation thesis points at something worth testing; product management designs each experiment before any prototype build starts.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Product management drafts the experiment design: the hypothesis goes down in one sentence, success criteria are agreed with those invested in the idea, and a strict timebox is set. The design is then handed over so the prototype build can begin.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Design Innovation Experiment L2 process within the processes:pc-pv-design-8dhwpn Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Design Innovation Experiment |
+| `plain_language_description` | string | no | This work turns an innovation thesis into a concrete test. Product management shapes the experiment by writing the … |
+| `business_purpose` | string | no | It makes new ideas testable: stating the hypothesis, success criteria, and timebox up front ensures each experiment … |
+| `practical_context` | string | no | Runs whenever the innovation thesis points at something worth testing; product management designs each experiment … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-oper
 
 This is a **Business Process** (level L2), named **Operate Asset Maintenance**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. Its canonical ID is `processes:process-eo-operate-j9cjzz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This is the day-to-day upkeep of the equipment the operation relies on. Work is scheduled to catch wear before it fails, and reactive jobs are handled when something breaks anyway. Completed maintenance is logged so the availability of each asset is on record.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because installed assets degrade in use, and only steady scheduled and reactive maintenance keeps them available for the work they are there to do.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Faced continuously wherever installed assets are in service, as scheduled maintenance slots come due and breakdowns call for reactive work. Product management steers the maintenance operation under the Enablement & Operations Process Owner.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product manager reviews the week's maintenance schedule, brings forward the service on a machine that has been struggling, and checks that the completed work has been recorded against the asset's availability.
 
 ## 5. Header and Identity Table (generated)
 
@@ -73,6 +73,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Operate Asset Maintenance L2 process within the processes:pc-eo-operate-ydqb96 Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Run Asset Maintenance |
+| `plain_language_description` | string | no | This is the day-to-day upkeep of the equipment the operation relies on. Work is scheduled to catch wear before it … |
+| `business_purpose` | string | no | It exists because installed assets degrade in use, and only steady scheduled and reactive maintenance keeps them … |
+| `practical_context` | string | no | Faced continuously wherever installed assets are in service, as scheduled maintenance slots come due and breakdowns … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

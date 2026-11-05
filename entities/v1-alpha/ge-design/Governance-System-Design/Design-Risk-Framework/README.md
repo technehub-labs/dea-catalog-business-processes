@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ge-desi
 
 This is a **Business Process** (level L2), named **Design Risk Framework**, currently **candidate (yellow)**. It is part of the **Governance System Design** process context, domain `ge`, lifecycle stage Design. Its canonical ID is `processes:process-ge-design-pqkvdc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The agreed risk direction now has to become a working framework. This means settling the taxonomy, the shared vocabulary for the kinds of risk the enterprise faces, plus the scales used to rate them, and how the framework plugs into everyday governance. What emerges is the detailed blueprint the build stage will follow.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It turns appetite and posture into a usable framework, so risks across the enterprise get described, rated, and governed the same way.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Begins when the risk framework direction is committed: the strategy function and governing board, with the operations function, work the taxonomy, assessment scales, and governance integration into a design that hands over to the build stage.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Working from the board's chosen risk appetite, a strategy function analyst lays out the risk categories, the rating scales each will use, and where risk reporting slots into existing governance routines.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Design Risk Framework (design stage, strategic process). Landed by CR-BP-21f.1 from the GovernanceAndExistence register … |
+| `plain_language_name` | string | no | Design Risk Framework |
+| `plain_language_description` | string | no | The agreed risk direction now has to become a working framework. This means settling the taxonomy, the shared … |
+| `business_purpose` | string | no | It turns appetite and posture into a usable framework, so risks across the enterprise get described, rated, and … |
+| `practical_context` | string | no | Begins when the risk framework direction is committed: the strategy function and governing board, with the operations … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

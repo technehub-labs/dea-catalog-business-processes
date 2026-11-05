@@ -141,3 +141,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Design Innovation Experiment L2 process within the processes:pc-pv-design-8dhwpn Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Design Innovation Experiment'
+plain_language_description: 'This work turns an innovation thesis into a concrete test. Product management shapes the experiment by writing the hypothesis it will check, defining what success looks like, and fixing the time allowed. The finished design is then ready for a prototype to be built against it.'
+business_purpose: 'It makes new ideas testable: stating the hypothesis, success criteria, and timebox up front ensures each experiment answers a real question within a known budget of effort.'
+practical_context: 'Runs whenever the innovation thesis points at something worth testing; product management designs each experiment before any prototype build starts.'
+worked_example:
+  agent_type: human
+  narrative: 'Product management drafts the experiment design: the hypothesis goes down in one sentence, success criteria are agreed with those invested in the idea, and a strict timebox is set. The design is then handed over so the prototype build can begin.'

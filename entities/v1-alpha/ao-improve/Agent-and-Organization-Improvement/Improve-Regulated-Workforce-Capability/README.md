@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ao-impr
 
 This is a **Business Process** (level L2), named **Improve Regulated Workforce Capability**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. Its canonical ID is `processes:process-ao-improve-qqxe4d`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process keeps people in regulator-licensed roles competent over time. It runs the regulator-mandated continuing-competence cycles, including annual fit-and-proper re-assessments, recurrent and continuing training, and any mandated remediation programmes, and records each completion on the regulated personnel record. The continuing supervisor is notified as the cycles complete, keeping the regulator's supervision arrangements current.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so licensed staff stay within their regulator's competence expectations throughout their time in the role, protecting both the individuals and the enterprise's regulatory standing.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered on the regulator's continuing-competence cycle or whenever a remediation requirement lands, with the organization design authority overseeing cycles that must align to the regulator's framework before being recorded on the personnel record.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* When the annual fit-and-proper re-assessment window opens, the organization design authority tracks each licensed role holder through the mandated training and assessment, records the completions on their regulated personnel record, and notifies the continuing supervisor.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Improve the regulator-tied capability of regulator-licensed roles under the enterprise regulated-entity approval … |
+| `plain_language_name` | string | no | Improve Regulated Workforce Capability |
+| `plain_language_description` | string | no | This process keeps people in regulator-licensed roles competent over time. It runs the regulator-mandated … |
+| `business_purpose` | string | no | It exists so licensed staff stay within their regulator's competence expectations throughout their time in the role … |
+| `practical_context` | string | no | Encountered on the regulator's continuing-competence cycle or whenever a remediation requirement lands, with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

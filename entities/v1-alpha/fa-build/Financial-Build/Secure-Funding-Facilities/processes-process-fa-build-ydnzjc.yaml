@@ -141,3 +141,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Secure Funding Facilities L2 process within the processes:pc-fa-build-pztsp9 Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Secure Funding Facilities'
+plain_language_description: 'This process puts the money and the machinery of finance in place. It secures the committed funding lines the financial plan calls for, stands up the finance function that will run the numbers, and gets the ERP finance module deployed. With those three things delivered, the organisation is ready to start running its finances day to day.'
+business_purpose: 'Committed funding lines, a staffed finance function, and a deployed ERP finance module are the prerequisites for operating; this process turns all three from plan into reality.'
+practical_context: 'It comes into play once the designed financial plan structure requires committed funding lines, a stood-up finance function, and a deployed ERP finance module, and the finance function carries the work through.'
+worked_example:
+  agent_type: human
+  narrative: 'With the financial plan in place, the finance function commits the funding lines the plan calls for, staffs and organises the finance function, and completes the ERP finance module deployment so routine finance work can begin.'

@@ -59,19 +59,15 @@ metadata:
   - cr: CR-BP-102
     date: '2026-09-19'
     change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).
-
-# CR-BP-225 completions (2026-11-04): EXT-12 §9 task working
-# objects, from the task's own required trigger/outcome fields
-# (its documented actual use).
 inputs:
 - id: in-task-pr-retire-record-n6uaxd
-  name: 'Phase working object (presented per the task trigger)'
-  description: 'Completion confirmation issued for Settle Outstanding Obligations; record gate may retain the closure case file under the records retention schedule with …'
+  name: Phase working object (presented per the task trigger)
+  description: Completion confirmation issued for Settle Outstanding Obligations; record gate may retain the closure case file under the records retention schedule with …
   source: The task's own trigger field (EXT-12 §9 task working objects)
   mandatory: true
 outputs:
 - id: out-task-pr-retire-record-n6uaxd
-  name: 'Phase result (recorded per the task outcome)'
-  description: 'Closure case file retained for Settle Outstanding Obligations under the records retention schedule with cryptographic integrity protection; cryptographic …'
+  name: Phase result (recorded per the task outcome)
+  description: Closure case file retained for Settle Outstanding Obligations under the records retention schedule with cryptographic integrity protection; cryptographic …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true

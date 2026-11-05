@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-impr
 
 This is a **Business Process** (level L2), named **Conduct Operations Performance Review**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. Its canonical ID is `processes:process-eo-improve-g3ngp3`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This is the structured look backwards that sets up the next round of improvement. Performance signals are gathered and read, from logistics gaps to asset utilization against target, and the findings are written up in a review. The review closes with findings committed for logistics optimization, asset utilization work and technology platform evolution, which feed the next planning cycle.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists to turn performance signals into committed findings, so the execution engine and its enabling assets evolve deliberately instead of drifting.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs whenever performance signals, logistics gaps or asset utilization targets show the execution engine or its enabling assets need to evolve. The operations function conducts the review and hands its findings to the next planning cycle.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Ahead of the planning round, an operations manager assembles the quarter's performance signals, walks the team through the logistics gaps and asset utilization misses, and commits the findings so the right improvement work is planned next.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Conduct Operations Performance Review L2 process within the processes:pc-eo-improve-pka6dk Cell Charter … |
+| `plain_language_name` | string | no | Conduct Operations Performance Review |
+| `plain_language_description` | string | no | This is the structured look backwards that sets up the next round of improvement. Performance signals are gathered and … |
+| `business_purpose` | string | no | It exists to turn performance signals into committed findings, so the execution engine and its enabling assets evolve … |
+| `practical_context` | string | no | Runs whenever performance signals, logistics gaps or asset utilization targets show the execution engine or its … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

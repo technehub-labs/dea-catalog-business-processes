@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-sd-reti
 
 This is a **Business Process** (level L2), named **Sunset Regulated Strategic Plan**, currently **candidate (yellow)**. It is domain `sd`, lifecycle stage Retire. It belongs to **Regulated Strategic Plan Sunset** (`processes:group-sd-retire-7fksad`). Its canonical ID is `processes:process-sd-retire-umxf3c`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+In regulated sectors, a live strategic plan can be ordered out of service by the regulator, and this work carries that retirement out properly. The strategy and finance functions record the regulator's directive, preserve the status of the plan that replaces it, and retain the retired plan's records under the retention policy. The sunset is completed with the supervisor's acknowledgement placed on record.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It makes regulator-ordered retirement clean and provable: the directive, the replacement's status, the retained records, and the supervisor's acknowledgement are all settled so the sunset stands up under continuing supervision.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered when a competent regulator directs or forces retirement, for instance after a failed stress test or a rejected plan; the strategy and finance functions carry out the sunset under the regulator's continuing supervision.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* After the regulator rejects the plan, the strategy function logs the directive, marks the replacement plan's status, and hands the retired records to the finance function for retention under the retention policy. The supervisor's acknowledgement of the sunset is filed, and the affected business units are notified.
 
 ## 5. Header and Identity Table (generated)
 
@@ -76,6 +76,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Sunset a regulated entity's supervisor-acknowledged-and-live strategic plan under the enterprise's regulated-entity … |
+| `plain_language_name` | string | no | Sunset Regulated Strategic Plan |
+| `plain_language_description` | string | no | In regulated sectors, a live strategic plan can be ordered out of service by the regulator, and this work carries that … |
+| `business_purpose` | string | no | It makes regulator-ordered retirement clean and provable: the directive, the replacement's status, the retained … |
+| `practical_context` | string | no | Encountered when a competent regulator directs or forces retirement, for instance after a failed stress test or a … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 **Relationships**
 

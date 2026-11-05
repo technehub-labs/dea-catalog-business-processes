@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ge-buil
 
 This is a **Business Process** (level L2), named **Establish Risk and Control Apparatus**, currently **candidate (yellow)**. It is part of the **Governance Body Establishment** process context, domain `ge`, lifecycle stage Build. Its canonical ID is `processes:process-ge-build-rx7kt5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the risk framework design approved, the practical machinery has to be put in place. Teams stand up the risk registers where exposures will be logged, install the monitoring tools that watch them, and draw the reporting lines that carry risk information upward. When this is done, the enterprise is equipped to start managing risk day to day.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives the organisation the concrete tools and routes, from registers to monitoring to reporting lines, that turn risk plans into working practice.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered at the point the risk framework design is approved for build: the strategy function and governing board oversee delivery of the registers, monitoring tooling, and reporting lines before routine risk operations begin.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* After the design sign-off, a strategy function coordinator sets up the risk registers, arranges access to the monitoring tools, and confirms with the governing board who reports what to whom each period.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Establish Risk and Control Apparatus (build stage, core process). Landed by CR-BP-21f.1 from the GovernanceAndExistence … |
+| `plain_language_name` | string | no | Establish Risk and Control Apparatus |
+| `plain_language_description` | string | no | With the risk framework design approved, the practical machinery has to be put in place. Teams stand up the risk … |
+| `business_purpose` | string | no | It gives the organisation the concrete tools and routes, from registers to monitoring to reporting lines, that turn … |
+| `practical_context` | string | no | Encountered at the point the risk framework design is approved for build: the strategy function and governing board … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

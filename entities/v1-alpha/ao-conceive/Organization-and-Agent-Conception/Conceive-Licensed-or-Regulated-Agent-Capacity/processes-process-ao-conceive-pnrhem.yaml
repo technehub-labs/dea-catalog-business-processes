@@ -136,3 +136,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Conceive the regulated-scope composition of the enterprise''s agentive mix under the enterprise regulated-entity approval authority. The trigger is the …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Conceive Licensed or Regulated Agent Capacity'
+plain_language_description: 'When the enterprise decides its future workforce will include regulator-licensed roles, this process works out exactly what regulated capacity is being taken on. It settles how many licensed roles are planned and in which categories, and what supervisor-controlled scope each one carries. The decisions are written up as a regulated-scope declaration, together with the fitness-and-propriety attestation regime and how the personnel record will line up with the regulator''s continuing-supervision framework.'
+business_purpose: 'It forces the organization to be explicit about its licensed-role commitments before any role design or hiring starts, so regulatory expectations are built into capacity plans from the beginning.'
+practical_context: 'Encountered at strategy-setting time, when workforce management and the strategy function determine that the agent-capacity strategy will include regulator-licensed roles and the regulated scope must be settled before design and build work begins.'
+worked_example:
+  agent_type: human
+  narrative: 'In an annual capacity planning session, the strategy function and workforce management agree that the expansion plan includes a set of licensed advisory roles, then document the count and categories, the supervisory controls for each, and the attestation regime in a declaration that anchors later design work.'

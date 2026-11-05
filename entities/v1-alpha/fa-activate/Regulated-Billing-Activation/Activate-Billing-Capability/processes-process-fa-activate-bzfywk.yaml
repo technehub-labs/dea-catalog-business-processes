@@ -209,3 +209,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Activate a billing or revenue-recognition capability under the enterprise''s regulated-entity approval authority within the processes:pc-fa-activate-yrhcfm Cell …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Activate Billing Capability'
+plain_language_description: 'This process takes a billing or revenue-recognition capability that has cleared its regulatory approvals and makes it officially live, so the first invoices or revenue entries can be raised. The Finance & Accounting Process Owner confirms that the pricing or tariff approval is on file, that safeguards such as segregation of duties, an audit trail, and reconciliation are running, and that the supervisor with continuing oversight is formally engaged. Only once the regulator''s acknowledgement is recorded does the capability move from approved on paper to actually operating.'
+business_purpose: 'It exists so no organisation bills customers or books revenue under a regulated framework before the regulator has formally acknowledged it, keeping the pricing approval and the operational safeguards intact from the first transaction.'
+practical_context: 'Triggered whenever a regulated billing or revenue-recognition capability is ready to go live — for example an insurance accounting transition or a utility rate taking effect — with the supervising authority, audit function, and operations function brought in alongside the process owner.'
+worked_example:
+  agent_type: human
+  narrative: 'When an insurer''s new revenue-recognition framework receives its regulator''s acknowledgement, the Finance & Accounting Process Owner brings in the supervising authority and the audit function to confirm the tariff approval is filed and that segregation-of-duties, audit trail, and reconciliation controls are running before the first live invoices are released.'

@@ -142,3 +142,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Operate Agent Performance L2 process within the processes:pc-ao-operate-zfevmp Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Run Agent Performance'
+plain_language_description: 'This process is the steady-state running of the workforce once agents are onboarded and in active operation. It covers coordination and collaboration, time and attendance, compensation, and learning and development, applied consistently however the work is done. The aim is that every agent, human or artificial, is supported and productive in day-to-day service.'
+business_purpose: 'It exists to keep the whole agentive workforce performing reliably in service, by running the everyday operations that performance depends on.'
+practical_context: 'Runs continuously once onboarded agents are in active operation across the organization, with workforce management responsible for the steady-state performance, coordination, compensation, and learning operations.'
+worked_example:
+  agent_type: human
+  narrative: 'In any given week, workforce management runs the routines that keep the workforce operating: coordinating collaboration across teams, processing time and attendance records, keeping compensation flowing, and scheduling development sessions.'

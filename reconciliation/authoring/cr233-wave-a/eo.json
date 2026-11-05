@@ -1,0 +1,302 @@
+{
+  "processes:process-eo-activate-sy5qsa": {
+    "plain_language_name": "Activate Operations Capability",
+    "plain_language_description": "The capability is ready for live service, but the regulator must formally authorize it first. This process takes it that last mile: the authorization is put on record, the operations manuals and runbooks are brought into active use, and the everyday controls for incidents, capacity, security and compliance are switched on. It ends with the capability formally live and the supervising authority's continuing-oversight relationship in place.",
+    "business_purpose": "It exists so that a regulated service only goes live once the regulator's authorization is on record and the controls protecting the operation are actually running.",
+    "practical_context": "Encountered whenever a capability needs a regulator-issued authorization or certification before entering live service, such as an air operator certificate, payment-institution authorization, GMP certification or a rail safety case. The compliance function, operations function and product management carry the work under the Enablement & Operations Process Owner.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A compliance lead confirms the aviation authority has issued the air operator certificate, then sits with the operations function to bring the runbooks and the incident, capacity, security and compliance controls live before the first commercial flight, and closes out the notification to the supervising authority."
+    }
+  },
+  "processes:process-eo-build-nmmmt6": {
+    "plain_language_name": "Acquire Technology Assets",
+    "plain_language_description": "This is the buying and installing work that turns a platform design into real equipment. Hardware and software are purchased, delivered, installed and commissioned so they are ready to carry operational workloads. It kicks in once the platform architecture has been designed and the shopping list is firm.",
+    "business_purpose": "It exists because a designed platform serves no one until the hardware and software behind it have been bought, installed and brought into working order.",
+    "practical_context": "Comes into play during the build stage that follows platform design, when the architecture calls for procured and installed hardware and software. Product management steers the acquisitions under the Enablement & Operations Process Owner.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product manager works through the agreed platform architecture, raises the orders for the hardware and software on it, and follows delivery, installation and commissioning until the equipment is signed off as ready for operational workloads."
+    }
+  },
+  "processes:process-eo-build-j9z3q4": {
+    "plain_language_name": "Build Delivery Capability",
+    "plain_language_description": "This is the stand-up job that assembles everything a business needs in order to produce and deliver at scale. Production lines are stood up, the logistics network is connected, and technology assets and facilities are provisioned until the whole delivery capability exists in working form. It hands over something the operations side can start running.",
+    "business_purpose": "It turns the designed operations model into a real working delivery capability, with lines, network, assets and facilities in place, so that day-to-day running can begin.",
+    "practical_context": "Runs during the build window after the operations model has been designed, when a new delivery capability or a major extension is needed. Product management coordinates the stand-up, with the Enablement & Operations Process Owner accountable for the result.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product manager tracks the stand-up end to end, from the production line crew finishing its trial runs to the carriers being connected and the last technology assets and facilities provisioned, before handing over to the teams who will run it."
+    }
+  },
+  "processes:process-eo-build-ba6ykz": {
+    "plain_language_name": "Build Logistics Network",
+    "plain_language_description": "This process puts the physical delivery network in place before any goods move. Network nodes are established, carriers are brought on under contract, and warehouse capacity is secured so that the routes designed on paper can actually carry deliveries. It closes with a network ready to execute delivery flows.",
+    "business_purpose": "It exists because a designed routing plan is only a diagram until the nodes, carrier contracts and warehouse capacity behind it are physically in place.",
+    "practical_context": "Encountered while a delivery capability is being built, once the routing design has settled what nodes, carriers and warehouse capacity are required. Product management drives the contracting and setup under the Enablement & Operations Process Owner.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product manager shortlists carriers against the designed routes, signs the transport contracts, and confirms warehouse capacity at each network node so the first delivery flows have somewhere to run."
+    }
+  },
+  "processes:process-eo-build-awy8dz": {
+    "plain_language_name": "Commission Production Line",
+    "plain_language_description": "This process takes a production line from installed equipment to a line that actually runs. The equipment is set up and commissioned, and the line is then exercised at a trial rate to prove it works end to end. Once the trial run holds up, the line is ready to step up from test production to full rate.",
+    "business_purpose": "It exists so the operations model gets a proven working line rather than just installed machinery, able to move from trial production to full-rate output with confidence.",
+    "practical_context": "Faced whenever the designed operations model calls for a production line that does not exist yet, and a stand-up is needed before the line can produce at rate. Product management steers the commissioning under the Enablement & Operations Process Owner.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product manager watches the first trial shifts as the newly commissioned line runs at low speed, signs off the equipment checks once output looks stable, and clears the line to step up to full-rate production."
+    }
+  },
+  "processes:process-eo-build-tqybhd": {
+    "plain_language_name": "Provision Facilities",
+    "plain_language_description": "This is the work of getting buildings ready before anything can be made or delivered in them. Sites are acquired, fitted out to the blueprint, and provisioned with what the operation needs on the ground. It closes with facilities ready to serve production and delivery.",
+    "business_purpose": "It exists because production and delivery cannot begin until the physical facilities behind them have been secured and fitted out.",
+    "practical_context": "Comes up during the build stage whenever the designed blueprint requires new or refitted space before production or delivery can start. Product management runs the acquisition and fit-out, reporting to the Enablement & Operations Process Owner.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product manager secures the site, walks the fit-out against the blueprint with the trades, and accepts the building once the layout and equipment are in place for production to move in."
+    }
+  },
+  "processes:process-eo-conceive-ky5wxp": {
+    "plain_language_name": "Frame the Delivery Model Concept",
+    "plain_language_description": "Early in shaping a new operation, this process decides in broad terms how the business will reach and serve its customers. The strategy and operations leads settle which channels will be used, what service levels customers can expect, and which fulfilment patterns will get products to them. The result is a bounded delivery model concept that later design work turns into detail, kept in step with the operations strategy.",
+    "business_purpose": "It gives the operations strategy a concrete delivery direction of channels, service levels and fulfilment patterns, so downstream design has something firm to work from.",
+    "practical_context": "Met when the operations strategy calls for a delivery model to be conceived before design can proceed. Strategy function and operations function staff do the framing within the operations planning cycle, under the Enablement & Operations Process Owner.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy lead and an operations manager spend a planning session agreeing which channels the business will serve, the service levels promised on each, and the fulfilment pattern that ties them together, then write the concept up for the design teams."
+    }
+  },
+  "processes:process-eo-conceive-xhjdr2": {
+    "plain_language_name": "Frame the Operations Strategy",
+    "plain_language_description": "This is the top-level thinking that sets how the business will produce and deliver before any detailed planning starts. Prompted by a new execution engine being established, an existing one being rethought, or shifts in how customers are served, the strategy and operations functions agree the delivery direction, how technology will enable it, and what the physical asset approach will be. The outcome is a committed operations strategy that the next stage of planning builds on.",
+    "business_purpose": "It exists to give the whole operations effort one committed strategy covering delivery, technology enablement and physical assets, so later design and build decisions pull in the same direction.",
+    "practical_context": "Encountered when the enterprise is establishing a new execution engine, reframing an existing one, or responding to shifts in the delivery model. The strategy function and operations function lead the work under the Enablement & Operations Process Owner.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Facing a shift in how customers want to be served, a strategy lead convenes the operations function for a framing workshop, and together they commit an operations strategy covering the delivery model, the technology enablement approach and the physical asset approach."
+    }
+  },
+  "processes:process-eo-conceive-87kx9n": {
+    "plain_language_name": "Frame the Physical Asset Approach",
+    "plain_language_description": "Before anyone designs a single building or piece of equipment, this process sets the ground rules for the physical side of the operation. The strategy and operations leads agree footprint principles for how much facility and asset capacity the business will carry, and the lifecycle envelopes within which assets will live. The framed approach then feeds blueprint design and stays coordinated with the operations planning cycle.",
+    "business_purpose": "It turns the operations strategy into working rules for facilities and assets, footprint principles and lifecycle envelopes, so blueprint design starts from a settled position.",
+    "practical_context": "Met when the operations strategy needs bounded decisions on facility and asset footprints ahead of blueprint design. Strategy function and operations function carry the framing within the operations planning cycle, owned by the Enablement & Operations Process Owner.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "In an early planning round, a strategy lead and an operations manager agree the footprint principles for the facility and asset estate and mark out the lifecycle envelopes that the blueprint designers will have to respect."
+    }
+  },
+  "processes:process-eo-conceive-68mp6v": {
+    "plain_language_name": "Frame the Technology Enablement Approach",
+    "plain_language_description": "This process decides in broad strokes which kinds of technology will carry the operating model. Working from the operations strategy, the strategy and operations leads pick the platform families the business will rely on and set the sourcing principles for how those platforms will be obtained. The framed approach is aligned to the operations planning cycle and gives later platform architecture work its starting point.",
+    "business_purpose": "It exists so choices about enabling technology are made deliberately at strategy level, as platform families and sourcing principles, rather than emerging piecemeal later.",
+    "practical_context": "Encountered during operations strategy work, when bounded decisions are needed on which technology platforms will enable the operating model. Strategy function and operations function do the framing, with the Enablement & Operations Process Owner accountable.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "As part of a strategy refresh, a strategy lead and an operations manager agree which platform families the operating model will depend on and record the sourcing principles that will guide how those platforms are obtained, ready for the architecture work that follows."
+    }
+  },
+  "processes:process-eo-design-6j5mxp": {
+    "plain_language_name": "Design Delivery Model",
+    "plain_language_description": "Here the broad delivery concept is worked up into an actual design. The operations function specifies how each channel will be configured, the service levels attached to it, and the flows that fulfil orders through those channels. The finished design is what delivery capability planning then works from.",
+    "business_purpose": "It converts the conceived delivery model into concrete channel configurations and service levels, giving delivery capability planning something specific to build.",
+    "practical_context": "Runs whenever a conceived delivery model is ready to be turned into bounded detail. Operations function staff do the design work, with the Enablement & Operations Process Owner accountable.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations analyst takes the agreed delivery concept and designs each channel in turn, fixing the service levels customers will be promised and mapping the fulfilment flows orders will follow, then hands the design to the capability planners."
+    }
+  },
+  "processes:process-eo-design-q83tdv": {
+    "plain_language_name": "Design Facility and Asset Blueprint",
+    "plain_language_description": "This process turns the physical asset approach into drawings and numbers a builder could work from. Layouts are drawn for the facilities, equipment is specified, and capacity envelopes are set so it is clear how much each site and asset should handle. The completed blueprint is what provisioning planning then picks up.",
+    "business_purpose": "It exists so facility and asset decisions are made once, on paper, with layouts and capacity envelopes agreed before money is spent securing and fitting space.",
+    "practical_context": "Comes up when the framed physical asset approach is ready to be made concrete as layouts, equipment specifications and capacity envelopes. The operations function produces the blueprint, under the Enablement & Operations Process Owner, ahead of provisioning planning.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations planner draws the floor layout for a new facility, writes the equipment specifications against the agreed capacity envelopes, and issues the blueprint for provisioning planning."
+    }
+  },
+  "processes:process-eo-design-8s76nv": {
+    "plain_language_name": "Design Logistics and Routing",
+    "plain_language_description": "This process works out how goods will physically move. The operations function chooses the transport modes, sets the routing logic that decides which way shipments travel, and positions the network nodes along the way. The design is kept in step with the delivery model so that what is promised to customers can actually be delivered.",
+    "business_purpose": "It exists to give the delivery model a matching physical movement plan of transport modes, routing logic and network nodes before the network is built.",
+    "practical_context": "Encountered during design work whenever the delivery model needs its transport modes, routing logic and network nodes worked out. The operations function drafts the design, coordinated with the delivery model design under the Enablement & Operations Process Owner.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations designer weighs road against rail for the main routes, writes the routing logic that sends urgent orders down the faster paths, and marks where the network nodes, depots and hubs, will sit."
+    }
+  },
+  "processes:process-eo-design-rvfpjb": {
+    "plain_language_name": "Design Operations Model",
+    "plain_language_description": "This is the coordinating design step that pulls four design strands into one committed whole. The delivery model design, the technology platform architecture, the facility and asset blueprint, and the logistics and routing design are each finished and then brought together into a single operations model design. Once committed, it is the basis on which the build stage is planned.",
+    "business_purpose": "It exists to make sure the separate design strands of delivery, platforms, facilities and logistics add up to one coherent operations model before anything is built.",
+    "practical_context": "Runs when the framed operations strategy is ready to be designed in full across its four strands. Operations function staff coordinate the work, with the Enablement & Operations Process Owner accountable for the committed design.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations design lead brings the four strands together in a review week, reconciles the platform architecture with the facility blueprint and the routing design, and commits the finished operations model for build-stage planning."
+    }
+  },
+  "processes:process-eo-design-7gtead": {
+    "plain_language_name": "Design Technology Platform Architecture",
+    "plain_language_description": "This process shapes the technology the operation will run on. Working from the framed enablement approach, the operations function defines the platform components, how they will integrate with each other, and the deployment topologies they will run in. The finished architecture is what acquisition planning then works from.",
+    "business_purpose": "It turns the framed technology enablement approach into a concrete architecture of components and integration patterns, so the right platforms can be acquired.",
+    "practical_context": "Encountered when the enablement approach has been framed and platform decisions need to become buildable detail. Operations function staff draw the architecture and feed acquisition planning, under the Enablement & Operations Process Owner.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations architect maps the platform components on a whiteboard, agrees the integration patterns between them and the deployment topology they will run in, and passes the architecture to the people planning the purchases."
+    }
+  },
+  "processes:process-eo-improve-us272s": {
+    "plain_language_name": "Conduct Lean Six Sigma Programme",
+    "plain_language_description": "This process runs a structured programme of improvement projects aimed at cutting waste and variation from the operation. Instead of tackling problems one-off, projects are bundled into a programme and delivered one after another, each with a clear scope. Every project closes with a control plan so the gains hold after the team moves on.",
+    "business_purpose": "It exists because lasting waste and variation reduction needs a steady programme of bounded projects with controls, not sporadic firefighting that fades once the urgency passes.",
+    "practical_context": "Encountered as a rolling programme whenever the operation needs sustained waste and variation reduction. The operations function runs the projects, under the Enablement & Operations Process Owner.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations improvement lead kicks off the latest project in the programme, works the waste out of a bottleneck step with the local team, and closes it by committing a control plan that keeps the new method in place."
+    }
+  },
+  "processes:process-eo-improve-3fem63": {
+    "plain_language_name": "Conduct Logistics Optimization",
+    "plain_language_description": "This process looks hard at how the logistics network is actually performing and then changes it for the better. Evidence on routing and network performance is reviewed to find where costs run too high or service levels slip, and improvements are worked up from that evidence. It ends with route and network changes committed into the operations planning cycle.",
+    "business_purpose": "It exists to convert performance evidence about routes and the network into committed changes that lower cost or lift service levels.",
+    "practical_context": "Comes around whenever routing or network performance evidence reveals a cost or service-level opportunity. The operations function conducts the optimization and commits the changes through the operations planning cycle.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "An operations analyst notices from delivery evidence that one route consistently underperforms, reworks the routing and shifts volume to a better path, and commits the change through the operations planning cycle."
+    }
+  },
+  "processes:process-eo-improve-g3ngp3": {
+    "plain_language_name": "Conduct Operations Performance Review",
+    "plain_language_description": "This is the structured look backwards that sets up the next round of improvement. Performance signals are gathered and read, from logistics gaps to asset utilization against target, and the findings are written up in a review. The review closes with findings committed for logistics optimization, asset utilization work and technology platform evolution, which feed the next planning cycle.",
+    "business_purpose": "It exists to turn performance signals into committed findings, so the execution engine and its enabling assets evolve deliberately instead of drifting.",
+    "practical_context": "Runs whenever performance signals, logistics gaps or asset utilization targets show the execution engine or its enabling assets need to evolve. The operations function conducts the review and hands its findings to the next planning cycle.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Ahead of the planning round, an operations manager assembles the quarter's performance signals, walks the team through the logistics gaps and asset utilization misses, and commits the findings so the right improvement work is planned next."
+    }
+  },
+  "processes:process-eo-improve-babwdc": {
+    "plain_language_name": "Improve Technology Platforms",
+    "plain_language_description": "This process acts on what incidents and performance data say about the technology platforms the operation depends on. Where the evidence shows reliability, capacity or capability gaps, upgrades are worked up to close them. The improvements are committed to the platform improvement backlog so the fixes get scheduled rather than lost.",
+    "business_purpose": "It exists so that platform problems surface as committed upgrades on a backlog, not as recurring incidents the operation simply tolerates.",
+    "practical_context": "Encountered whenever platform performance or incident evidence reveals a reliability, capacity or capability gap. The operations function raises and shapes the improvements, with the Enablement & Operations Process Owner accountable.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "After a rough month of platform incidents, an operations specialist pulls the evidence together, pinpoints the reliability gap behind the repeat failures, and commits an upgrade to the platform improvement backlog."
+    }
+  },
+  "processes:process-eo-improve-q58ecg": {
+    "plain_language_name": "Optimize Asset Utilization",
+    "plain_language_description": "This process makes sure the operation's assets are working where they are most needed. Maintenance and performance evidence is used to spot assets sitting underused on one hand and bottlenecks caused by overloaded ones on the other. It finishes with redeployment and reallocation decisions committed to the asset plan.",
+    "business_purpose": "It exists to get more out of the assets the operation already has, by moving them from underused corners to the bottlenecks that need relief.",
+    "practical_context": "Comes up when maintenance or performance evidence shows assets underutilized or bottlenecked. The operations function makes the calls and commits them to the asset plan, under the Enablement & Operations Process Owner.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Reviewing the latest evidence, an operations manager spots a machine that stands idle most afternoons while a downstream bottleneck queues work, and commits a redeployment decision to the asset plan to shift the spare capacity across."
+    }
+  },
+  "processes:process-eo-operate-j9cjzz": {
+    "plain_language_name": "Run Asset Maintenance",
+    "plain_language_description": "This is the day-to-day upkeep of the equipment the operation relies on. Work is scheduled to catch wear before it fails, and reactive jobs are handled when something breaks anyway. Completed maintenance is logged so the availability of each asset is on record.",
+    "business_purpose": "It exists because installed assets degrade in use, and only steady scheduled and reactive maintenance keeps them available for the work they are there to do.",
+    "practical_context": "Faced continuously wherever installed assets are in service, as scheduled maintenance slots come due and breakdowns call for reactive work. Product management steers the maintenance operation under the Enablement & Operations Process Owner.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product manager reviews the week's maintenance schedule, brings forward the service on a machine that has been struggling, and checks that the completed work has been recorded against the asset's availability."
+    }
+  },
+  "processes:process-eo-operate-rqdte5": {
+    "plain_language_name": "Run Facility Management",
+    "plain_language_description": "This process keeps the buildings the operation works in safe, compliant and fit for use. Work orders are executed on schedule, and safety and compliance checks are kept current so people can work in the facilities without concern. It is the continuous caretaking that follows once facilities have been provisioned.",
+    "business_purpose": "It exists because provisioned facilities only stay usable if someone continuously maintains them as safe, compliant working environments.",
+    "practical_context": "Met every working day across the operation's sites, as scheduled work orders fall due and safety or compliance items need attention. Product management oversees the function under the Enablement & Operations Process Owner.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product manager signs off the month's facility work orders, chases the overdue safety check on one site, and confirms the compliance items are current before the month closes."
+    }
+  },
+  "processes:process-eo-operate-zh9m57": {
+    "plain_language_name": "Operate Logistics",
+    "plain_language_description": "This process is the running of the delivery network once it exists. Shipments move along the transport and delivery flows that were built into the network, serving customers and production along the way. Each shipment's outcome is recorded, with exceptions caught and handled as they happen.",
+    "business_purpose": "It exists so the built logistics network actually delivers, on time where possible, with every exception recorded and dealt with rather than discovered by the customer.",
+    "practical_context": "Lives in the daily operation, where every shipment handed to the network is a fresh instance of the process. Product management oversees delivery performance under the Enablement & Operations Process Owner.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product manager scans the morning's shipment board, sees one delivery flagged as running behind, and follows the exception handling through until the customer has a revised time and the delay is recorded against the shipment."
+    }
+  },
+  "processes:process-eo-operate-vzcxx7": {
+    "plain_language_name": "Run the Procurement Cycle",
+    "plain_language_description": "This process keeps the materials and services the operation needs flowing in. Requests become purchase orders, orders are executed within policy, and what arrives is receipted against them. Run well, it is a steady cycle that means production and delivery never stall for want of something that should have been bought.",
+    "business_purpose": "It exists to secure a steady, policy-compliant flow of purchased materials and services so the operation is never held up by missing supplies.",
+    "practical_context": "Encountered continuously as buying needs arise across the operation, from routine materials to services. Product management steers the cycle, with purchase orders raised, executed and receipted within policy under the Enablement & Operations Process Owner.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product manager approves a purchase order for materials running low, checks it sits within purchasing policy, and later confirms the receipt so the supplier can be settled against the delivery."
+    }
+  },
+  "processes:process-eo-operate-44jsrp": {
+    "plain_language_name": "Run Quality Control",
+    "plain_language_description": "This process stands between production and the customer with a checklist. Output is inspected against specification, batch by batch, and each batch receives a disposition, released or held back when it does not measure up. The inspections and their outcomes are recorded so there is always a trail of what passed and what did not.",
+    "business_purpose": "It exists because production output can only be trusted to serve customers once it has been inspected against specification and a clear disposition recorded per batch.",
+    "practical_context": "Met at every handover from production, as each batch comes off the line and needs inspecting before it can serve customers. Product management owns the quality operation under the Enablement & Operations Process Owner.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product manager learns that a batch has not passed its inspection, agrees the disposition to hold it back from customers, and arranges re-inspection before anything is released."
+    }
+  },
+  "processes:process-eo-operate-2jnz85": {
+    "plain_language_name": "Run Service Delivery",
+    "plain_language_description": "This is the steady-state running of everything the built operation depends on, day in and day out. Production lines are run to plan while logistics and inventory keep pace, technology platforms stay available, facilities and assets are maintained, and the procurement cycle keeps supplies coming. It is what turns a built capability into a service actually being delivered.",
+    "business_purpose": "It exists to keep the whole execution engine of production, logistics, inventory, platforms, facilities and procurement working together in steady state so customers keep being served.",
+    "practical_context": "The everyday backdrop once the built operation is live, with each planning period setting the production plan the lines run to. Product management oversees the whole under the Enablement & Operations Process Owner.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "At the start of the week a product manager checks the production plan against stock and platform availability, sorts a supply delay through the procurement cycle, and keeps the lines, warehouses and platforms running to plan."
+    }
+  },
+  "processes:process-eo-operate-4njp7b": {
+    "plain_language_name": "Operate Technology Platforms",
+    "plain_language_description": "This process keeps the installed technology platforms up and serving the workloads that depend on them. Availability is managed against agreed targets, and when something goes wrong in a service window the incident is recorded and worked. It is the difference between platforms that merely exist and platforms the operation can rely on.",
+    "business_purpose": "It exists so operational workloads get the agreed availability from the installed platforms, with every incident recorded rather than quietly absorbed.",
+    "practical_context": "Encountered around the clock across the platforms' service windows, whenever operational workloads need the platforms up. Product management oversees platform operation under the Enablement & Operations Process Owner.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "During an overnight service window a platform incident is recorded and worked, and the next morning a product manager reviews the incident log and confirms availability was back at target."
+    }
+  },
+  "processes:process-eo-operate-zwzmbd": {
+    "plain_language_name": "Run the Warehouse and Inventory",
+    "plain_language_description": "This process keeps the warehouse, and the numbers in it, honest. Stock is held and counted so records match reality, orders are picked as demand calls for them, and replenishment brings stock back up before it runs short. Production and delivery both depend on it being right.",
+    "business_purpose": "It exists because production and delivery both rest on accurate stock holding, picking and replenishment, and a warehouse whose records are wrong breaks both.",
+    "practical_context": "Faced daily in warehouse work, from goods arriving to counts, picks against demand and replenishment rounds. Product management oversees the operation under the Enablement & Operations Process Owner.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product manager sees the stock count drift on a fast-moving item, has the discrepancy traced and corrected, and confirms the replenishment order is in before the next day's picks fall short."
+    }
+  },
+  "processes:process-eo-operate-xud3hs": {
+    "plain_language_name": "Run Production Line",
+    "plain_language_description": "This process is the line actually making things. Each production cycle, the stood-up line is run to plan, turning out the agreed output at the agreed rate, and what is produced and its quality are recorded cycle by cycle. That record keeps performance against the plan visible.",
+    "business_purpose": "It exists to turn a commissioned line into planned output, cycle after cycle, with output and quality recorded so shortfalls against plan are visible.",
+    "practical_context": "Met on every production cycle the line works through, shift after shift once the line is stood up. Product management oversees output against plan under the Enablement & Operations Process Owner.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product manager reviews the shift's output against the plan, notes the quality record for a cycle that came in light, and asks the line team to recover the shortfall over the next cycle."
+    }
+  },
+  "processes:process-eo-retire-rpg6d4": {
+    "plain_language_name": "Decommission Enterprise Asset",
+    "plain_language_description": "This process retires an asset properly rather than letting it fade out of use. The retirement is planned and approved, the asset is isolated and withdrawn from service, and it is then decommissioned and disposed of through the agreed routes. Nothing is left hanging: residual value, any data on the asset and outstanding obligations are resolved and recorded before the book is closed.",
+    "business_purpose": "It exists so an asset leaving service does so cleanly, withdrawn and disposed of through the right routes with its residual value, data and obligations settled on the record.",
+    "practical_context": "Encountered when an operational asset reaches end of life, is superseded, or is approved for retirement. Product management steers the retirement under the Enablement & Operations Process Owner.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A product manager approves the retirement plan for an asset that has been superseded, oversees its isolation and withdrawal from service, and signs off once disposal is done and the residual value, data and obligations have been resolved and recorded."
+    }
+  }
+}

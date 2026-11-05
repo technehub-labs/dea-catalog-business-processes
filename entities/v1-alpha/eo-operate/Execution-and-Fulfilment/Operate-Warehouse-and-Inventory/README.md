@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-oper
 
 This is a **Business Process** (level L2), named **Operate Warehouse and Inventory**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. Its canonical ID is `processes:process-eo-operate-zwzmbd`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process keeps the warehouse, and the numbers in it, honest. Stock is held and counted so records match reality, orders are picked as demand calls for them, and replenishment brings stock back up before it runs short. Production and delivery both depend on it being right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because production and delivery both rest on accurate stock holding, picking and replenishment, and a warehouse whose records are wrong breaks both.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Faced daily in warehouse work, from goods arriving to counts, picks against demand and replenishment rounds. Product management oversees the operation under the Enablement & Operations Process Owner.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product manager sees the stock count drift on a fast-moving item, has the discrepancy traced and corrected, and confirms the replenishment order is in before the next day's picks fall short.
 
 ## 5. Header and Identity Table (generated)
 
@@ -73,6 +73,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Operate Warehouse and Inventory L2 process within the processes:pc-eo-operate-ydqb96 Cell Charter. See … |
+| `plain_language_name` | string | no | Run the Warehouse and Inventory |
+| `plain_language_description` | string | no | This process keeps the warehouse, and the numbers in it, honest. Stock is held and counted so records match reality … |
+| `business_purpose` | string | no | It exists because production and delivery both rest on accurate stock holding, picking and replenishment, and a … |
+| `practical_context` | string | no | Faced daily in warehouse work, from goods arriving to counts, picks against demand and replenishment rounds. Product … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

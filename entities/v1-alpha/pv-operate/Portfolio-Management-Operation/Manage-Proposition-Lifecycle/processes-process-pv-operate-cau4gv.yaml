@@ -137,3 +137,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Manage Proposition Lifecycle L2 process within the processes:pc-pv-operate-ewpwjc Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Manage Proposition Lifecycle'
+plain_language_description: 'Every proposition moves through introduction, growth, maturity, and decline, and this work manages those moves deliberately. Product management watches where each proposition sits, takes the stage-transition decisions through their gates, and keeps the picture checked against portfolio performance. Nothing passes from one stage to the next without a conscious gate decision.'
+business_purpose: 'It ensures propositions are managed according to where they actually are in their life, so growing offerings get investment and fading ones get the right attention at the right gate.'
+practical_context: 'Ongoing whenever propositions are live: product management reviews each proposition''s stage, runs the gate decisions at transitions, and monitors progress against portfolio performance.'
+worked_example:
+  agent_type: human
+  narrative: 'Product management sees a service moving from growth into maturity, walks the gate decision through with the stakeholders, and records the shift to a maintenance footing. The stage transition is noted and tracked from there.'

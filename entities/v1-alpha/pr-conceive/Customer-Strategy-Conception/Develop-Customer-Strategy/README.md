@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pr-conc
 
 This is a **Business Process** (level L2), named **Develop Customer Strategy**, currently **candidate (yellow)**. It is part of the **Customer Strategy Conception** process context, domain `pr`, lifecycle stage Conceive. Its canonical ID is `processes:process-pr-conceive-emfgju`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before investing in customers, the enterprise needs a clear view of who it serves and what it offers them. This work settles which segments to target, what value will be exchanged in each, and the thesis about where demand will come from. The committed strategy then steers everything the experience and channel teams design later.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives customer-facing work a single agreed direction, so segments, value exchange, and demand expectations are chosen deliberately instead of emerging by accident.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Comes up when the enterprise enters a new segment, the current strategy has drifted, or the demand thesis needs retesting; the strategy function drafts it and customer relationship management grounds it in what the customer base shows.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* As the enterprise eyes a new segment, a strategy function lead drafts the segment thesis and value exchange, customer relationship management pressure-tests it against relationship data, and the committed strategy goes to the design teams.
 
 ## 5. Header and Identity Table (generated)
 
@@ -76,6 +76,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Develop Customer Strategy L2 process within the processes:pc-pr-conceive-6xztsq Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Develop Customer Strategy |
+| `plain_language_description` | string | no | Before investing in customers, the enterprise needs a clear view of who it serves and what it offers them. This work … |
+| `business_purpose` | string | no | It gives customer-facing work a single agreed direction, so segments, value exchange, and demand expectations are … |
+| `practical_context` | string | no | Comes up when the enterprise enters a new segment, the current strategy has drifted, or the demand thesis needs … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

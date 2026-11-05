@@ -152,3 +152,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Operate General Ledger L2 process within the processes:pc-fa-operate-afew7e Cell Charter. See trigger and outcome for the bounded work this process …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Operate General Ledger'
+plain_language_description: 'Once the finance capability is built, this process is where the books are actually kept. The general ledger runs in steady state, with accounts payable, accounts receivable, treasury, tax compliance, financial close, and reporting all executed to the period plan. It is routine finance, kept running period after period.'
+business_purpose: 'It exists to keep the enterprise''s accounting engine running: every financial thread passes through the ledger and lands where the period plan says it should.'
+practical_context: 'It applies once the built finance capability is in active operation and steady-state accounting, treasury, tax compliance, financial close, and reporting are needed; the compliance function keeps the ledger running to the period plan.'
+worked_example:
+  agent_type: human
+  narrative: 'In an ordinary month the compliance function keeps the general ledger turning: payables and receivables posted, treasury and tax compliance handled, and the close and reporting executed to the period plan.'

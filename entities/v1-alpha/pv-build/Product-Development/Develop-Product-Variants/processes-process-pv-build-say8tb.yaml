@@ -141,3 +141,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Develop Product Variants L2 process within the processes:pc-pv-build-ygbmxb Cell Charter. See trigger and outcome for the bounded work this process …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Develop Product Variants'
+plain_language_description: 'Once designs are agreed, this work does the hands-on construction: building out the product variants, service capability, and innovation prototypes the designs call for. Product management keeps the construction within the agreed scope so that what emerges matches the designed propositions. The result is finished variants and capability, ready for the next stage of launch preparation.'
+business_purpose: 'It converts agreed designs into tangible product variants and supporting capability, so that what existed only on paper becomes something the business can prepare for market.'
+practical_context: 'Encountered whenever designed propositions call for construction, typically as a build phase led by product management with the work parcelled across variants, service capability, and prototypes. It bridges design sign-off and market readiness.'
+worked_example:
+  agent_type: human
+  narrative: 'Product management splits the agreed designs into their product variants, assigns each to a build squad, and tracks the work against the design scope. When the variants and supporting capability are complete, they are handed on for market-readiness preparation.'

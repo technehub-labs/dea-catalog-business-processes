@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pv-acti
 
 This is a **Business Process** (level L2), named **Transition Proposition to Service**, currently **candidate (yellow)**. It is part of the **Proposition Launch and Service Transition** process context, domain `pv`, lifecycle stage Activate. Its canonical ID is `processes:process-pv-activate-5686v7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When a product or service has passed its readiness checks, this work moves it out of its prepared state and into day-to-day operation. The proposition design authority confirms who will own the offering once it is live, that the necessary controls are in place, and that the receiving team is set up to run it. Only when ownership and readiness evidence are settled does the business start relying on it in normal operations.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so that nothing reaches live operation half-prepared: accountability, controls, and readiness are proven before the business starts to rely on the new offering.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered at the end of every launch effort, when the readiness threshold has been met and go-live is authorised; the proposition design authority leads the handover with the teams who will run the offering day to day.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* At the go-live readiness meeting, the proposition design authority walks the checklist, confirms the receiving operational owner, and records that the controls are in place. The offering is then accepted into operational service, and the receiving team takes over its day-to-day running.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Transition a validated proposition, product or service from a prepared state into operational service, with ownership … |
+| `plain_language_name` | string | no | Transition Proposition to Service |
+| `plain_language_description` | string | no | When a product or service has passed its readiness checks, this work moves it out of its prepared state and into … |
+| `business_purpose` | string | no | It exists so that nothing reaches live operation half-prepared: accountability, controls, and readiness are proven … |
+| `practical_context` | string | no | Encountered at the end of every launch effort, when the readiness threshold has been met and go-live is authorised; the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

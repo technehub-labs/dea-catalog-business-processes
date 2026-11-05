@@ -129,3 +129,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Run Accounts Payable (operate stage, core process). Landed by CR-BP-21e.1 from the FinanceAndAccounting register v2.'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Run Accounts Payable'
+plain_language_description: 'This process is how the organisation pays its bills. As invoices and their payment due dates arrive, invoices are matched, approvals are recorded, and payments are produced to plan. Kept to plan, suppliers are paid what they are owed when they are owed it.'
+business_purpose: 'It exists to pay suppliers accurately and on schedule, with every invoice matched and approved before money leaves the organisation.'
+practical_context: 'It runs whenever an invoice or payment due date arrives, with the compliance function matching invoices, recording approvals, and producing payments to plan.'
+worked_example:
+  agent_type: human
+  narrative: 'When an invoice arrives and its due date approaches, the compliance function matches it, records the approval, and includes it in the payment run produced to plan.'

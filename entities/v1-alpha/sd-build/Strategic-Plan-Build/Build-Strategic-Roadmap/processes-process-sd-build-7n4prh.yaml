@@ -135,3 +135,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Build Strategic Roadmap L2 process within the processes:pc-sd-build-gmzrrm Cell Charter. See trigger and outcome for the bounded work this process …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Build Strategic Roadmap'
+plain_language_description: 'This work lays out the chosen strategy as a sequence the organisation can actually follow. The strategy function orders the initiatives into a sensible flow and anchors the roadmap with milestones so progress can be tracked. The finished roadmap is then ready for the work of translating the choices into owned initiatives.'
+business_purpose: 'It makes strategy executable: sequencing initiatives and fixing milestone anchors turns a set of choices into a timed path that delivery teams can plan and report against.'
+practical_context: 'Encountered while the strategic plan is being assembled, once the choices are designed and need sequencing; the strategy function builds the roadmap before initiative translation begins.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function lines up the strategic initiatives in delivery order, sets the milestone anchors for each stretch of the roadmap, and checks the sequence hangs together. The roadmap then goes to the teams translating the choices into owned work.'

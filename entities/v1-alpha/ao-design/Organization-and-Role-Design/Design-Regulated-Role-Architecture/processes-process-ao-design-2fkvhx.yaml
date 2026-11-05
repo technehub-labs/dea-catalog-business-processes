@@ -139,3 +139,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Design the regulator-tied role catalogue and competency framework entries under the enterprise regulated-entity approval authority. The trigger is the decision …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Design the Regulated Role Architecture'
+plain_language_description: 'When the role catalogue will contain regulator-licensed roles, this process designs those entries so they satisfy the regulator as well as the business. For each licensed role it aligns authority, signing capacity, and scope with the regulator''s continuing-supervision framework, and documents the competency regime, the fitness-and-propriety attestation, the supervised-training requirements, and the continuing-supervisor notification path. Done this way, the roles can move into build and activation without being re-scoped.'
+business_purpose: 'It exists to bake regulatory expectations into licensed roles at design time, so the enterprise does not discover scope problems after people are already in the jobs.'
+practical_context: 'Encountered when the role catalogue and competency framework are being extended with regulator-licensed roles, with the organization design authority aligning each entry to the regulator''s framework before the role enters build and activation.'
+worked_example:
+  agent_type: human
+  narrative: 'As the organization design authority adds a new licensed advisory role to the role catalogue, it sets the role''s signing authority to match what the regulator''s continuing-supervision framework allows and documents the attestation, training, and supervisor-notification arrangements alongside it.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-sd-oper
 
 This is a **Business Process** (level L2), named **Operate Strategic Review Cycle**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. Its canonical ID is `processes:process-sd-operate-ucxpz4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This work is the drumbeat behind strategic steering. The strategy function runs the standing review cycle on its defined cadence, brings the right inputs to each session, and makes sure the decisions taken are recorded for the strategic record. Every other steering activity plugs into the rhythm this cycle sets.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives strategic steering a reliable rhythm: a standing cadence with recorded inputs and decisions means reviews actually happen, produce decisions, and leave a traceable record.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Continuous while strategy is in operation: the strategy function convenes the review cycle on its cadence, prepares the inputs, and records the decisions each time it meets.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function circulates the review pack ahead of the scheduled session, chairs the meeting, and afterwards files the decisions taken for the strategic record. The next cycle's date and inputs are already booked before anyone leaves.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Operate Strategic Review Cycle L2 process within the processes:pc-sd-operate-5cs5ee Cell Charter. See … |
+| `plain_language_name` | string | no | Operate Strategic Review Cycle |
+| `plain_language_description` | string | no | This work is the drumbeat behind strategic steering. The strategy function runs the standing review cycle on its … |
+| `business_purpose` | string | no | It gives strategic steering a reliable rhythm: a standing cadence with recorded inputs and decisions means reviews … |
+| `practical_context` | string | no | Continuous while strategy is in operation: the strategy function convenes the review cycle on its cadence, prepares the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

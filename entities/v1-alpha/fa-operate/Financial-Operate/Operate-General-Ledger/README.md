@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-fa-oper
 
 This is a **Business Process** (level L2), named **Operate General Ledger**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. Its canonical ID is `processes:process-fa-operate-g9zpnq`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once the finance capability is built, this process is where the books are actually kept. The general ledger runs in steady state, with accounts payable, accounts receivable, treasury, tax compliance, financial close, and reporting all executed to the period plan. It is routine finance, kept running period after period.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists to keep the enterprise's accounting engine running: every financial thread passes through the ledger and lands where the period plan says it should.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It applies once the built finance capability is in active operation and steady-state accounting, treasury, tax compliance, financial close, and reporting are needed; the compliance function keeps the ledger running to the period plan.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* In an ordinary month the compliance function keeps the general ledger turning: payables and receivables posted, treasury and tax compliance handled, and the close and reporting executed to the period plan.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Operate General Ledger L2 process within the processes:pc-fa-operate-afew7e Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Operate General Ledger |
+| `plain_language_description` | string | no | Once the finance capability is built, this process is where the books are actually kept. The general ledger runs in … |
+| `business_purpose` | string | no | It exists to keep the enterprise's accounting engine running: every financial thread passes through the ledger and … |
+| `practical_context` | string | no | It applies once the built finance capability is in active operation and steady-state accounting, treasury, tax … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -131,3 +131,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Bring an adopted policy instrument, mandate or charter from adopted-but-dormant to in-force: verify commencement conditions, promulgate the instrument, and …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Bring Policy Instrument into Force'
+plain_language_description: 'A policy, mandate, or charter may be formally adopted yet still change nothing day to day until it takes effect. This work confirms that every commencement condition has been met, announces the instrument so the enterprise knows it exists, and fixes the date it starts to bind. From that moment, the obligations, rights, and duties it sets out are applied across the business.'
+business_purpose: 'It turns an adopted decision into live obligations, so the enterprise actually operates under the rules it has signed up to rather than leaving them sitting on paper.'
+practical_context: 'Triggered when an adopted instrument''s commencement conditions are met: the governance design authority runs the checks and promulgation, and every affected part of the enterprise starts complying from the effectiveness date.'
+worked_example:
+  agent_type: human
+  narrative: 'The governance design authority confirms that the waiting period on a newly adopted charter has elapsed, circulates the instrument to every business unit, and logs its effectiveness date, from which point duties under it are enforced.'

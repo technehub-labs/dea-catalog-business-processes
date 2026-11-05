@@ -136,3 +136,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Provision Facilities L2 process within the processes:pc-eo-build-zwkhxc Cell Charter. See trigger and outcome for the bounded work this process …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Provision Facilities'
+plain_language_description: 'This is the work of getting buildings ready before anything can be made or delivered in them. Sites are acquired, fitted out to the blueprint, and provisioned with what the operation needs on the ground. It closes with facilities ready to serve production and delivery.'
+business_purpose: 'It exists because production and delivery cannot begin until the physical facilities behind them have been secured and fitted out.'
+practical_context: 'Comes up during the build stage whenever the designed blueprint requires new or refitted space before production or delivery can start. Product management runs the acquisition and fit-out, reporting to the Enablement & Operations Process Owner.'
+worked_example:
+  agent_type: human
+  narrative: 'A product manager secures the site, walks the fit-out against the blueprint with the trades, and accepts the building once the layout and equipment are in place for production to move in.'

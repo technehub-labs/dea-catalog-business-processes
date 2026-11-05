@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pr-desi
 
 This is a **Business Process** (level L2), named **Design Customer Journey**, currently **candidate (yellow)**. It is part of the **Customer Experience Design** process context, domain `pr`, lifecycle stage Design. Its canonical ID is `processes:process-pr-design-j6fakx`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Customers experience the enterprise as one continuous path, not a set of departments. This work maps that path end to end: the stages a customer moves through, the moments that will make or break their impression, and the handoffs where one team passes them to the next. The finished journey keeps operating and improvement teams aligned on the same route.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It smooths the customer's path across teams and stages, so the enterprise can see and fix the points where experience is won or lost.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Follows the experience design: the strategy function and customer relationship management trace the end-to-end stages, moments-of-truth, and handoff points, keeping the governing board's oversight of the committed route.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* With the experience defined, a strategy function facilitator walks customer relationship management through each stage of the customer's path, they mark the make-or-break moments and every handoff, and the governing board endorses the route.
 
 ## 5. Header and Identity Table (generated)
 
@@ -76,6 +76,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Design Customer Journey L2 process within the processes:pc-pr-design-hrcdy4 Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Design Customer Journey |
+| `plain_language_description` | string | no | Customers experience the enterprise as one continuous path, not a set of departments. This work maps that path end to … |
+| `business_purpose` | string | no | It smooths the customer's path across teams and stages, so the enterprise can see and fix the points where experience … |
+| `practical_context` | string | no | Follows the experience design: the strategy function and customer relationship management trace the end-to-end stages … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

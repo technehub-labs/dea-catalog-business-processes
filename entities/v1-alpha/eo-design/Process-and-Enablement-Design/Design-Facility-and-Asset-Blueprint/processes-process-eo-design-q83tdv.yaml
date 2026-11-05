@@ -141,3 +141,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Design Facility and Asset Blueprint L2 process within the processes:pc-eo-design-kxdfnz Cell Charter. See trigger and outcome for the bounded work …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Design Facility and Asset Blueprint'
+plain_language_description: 'This process turns the physical asset approach into drawings and numbers a builder could work from. Layouts are drawn for the facilities, equipment is specified, and capacity envelopes are set so it is clear how much each site and asset should handle. The completed blueprint is what provisioning planning then picks up.'
+business_purpose: 'It exists so facility and asset decisions are made once, on paper, with layouts and capacity envelopes agreed before money is spent securing and fitting space.'
+practical_context: 'Comes up when the framed physical asset approach is ready to be made concrete as layouts, equipment specifications and capacity envelopes. The operations function produces the blueprint, under the Enablement & Operations Process Owner, ahead of provisioning planning.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations planner draws the floor layout for a new facility, writes the equipment specifications against the agreed capacity envelopes, and issues the blueprint for provisioning planning.'

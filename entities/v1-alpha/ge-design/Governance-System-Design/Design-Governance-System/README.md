@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ge-desi
 
 This is a **Business Process** (level L2), named **Design Governance System**, currently **candidate (yellow)**. It is part of the **Governance System Design** process context, domain `ge`, lifecycle stage Design. Its canonical ID is `processes:process-ge-design-zbrg8b`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the strategy agreed, the next question is what governing machinery will carry it. Here the teams work out which boards and committees are needed, what authority each one is delegated, and who holds which decision rights. The finished design is a blueprint that tells the establishment work exactly what bodies to stand up.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It translates strategic intent into a concrete structure of bodies, authority delegations, and decision rights, so accountability for governing is clear before anything is created.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs once a governance strategy has been committed: the strategy function drafts the structure of bodies, delegations, and decision rights, and the governing board signs the design off for establishment.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A strategy function architect maps out which committees the new strategy needs, what each may decide, and what stays with the governing board, then walks the board through the delegations for approval.
 
 ## 5. Header and Identity Table (generated)
 
@@ -75,6 +75,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Design Governance System L2 process within the processes:pc-ge-design-3f2gjr Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Design Governance System |
+| `plain_language_description` | string | no | With the strategy agreed, the next question is what governing machinery will carry it. Here the teams work out which … |
+| `business_purpose` | string | no | It translates strategic intent into a concrete structure of bodies, authority delegations, and decision rights, so … |
+| `practical_context` | string | no | Runs once a governance strategy has been committed: the strategy function drafts the structure of bodies, delegations … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

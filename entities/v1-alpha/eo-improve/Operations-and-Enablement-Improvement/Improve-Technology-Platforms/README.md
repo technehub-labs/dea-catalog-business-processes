@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-impr
 
 This is a **Business Process** (level L2), named **Improve Technology Platforms**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. Its canonical ID is `processes:process-eo-improve-babwdc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process acts on what incidents and performance data say about the technology platforms the operation depends on. Where the evidence shows reliability, capacity or capability gaps, upgrades are worked up to close them. The improvements are committed to the platform improvement backlog so the fixes get scheduled rather than lost.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so that platform problems surface as committed upgrades on a backlog, not as recurring incidents the operation simply tolerates.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered whenever platform performance or incident evidence reveals a reliability, capacity or capability gap. The operations function raises and shapes the improvements, with the Enablement & Operations Process Owner accountable.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* After a rough month of platform incidents, an operations specialist pulls the evidence together, pinpoints the reliability gap behind the repeat failures, and commits an upgrade to the platform improvement backlog.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Improve Technology Platforms L2 process within the processes:pc-eo-improve-pka6dk Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Improve Technology Platforms |
+| `plain_language_description` | string | no | This process acts on what incidents and performance data say about the technology platforms the operation depends on … |
+| `business_purpose` | string | no | It exists so that platform problems surface as committed upgrades on a backlog, not as recurring incidents the … |
+| `practical_context` | string | no | Encountered whenever platform performance or incident evidence reveals a reliability, capacity or capability gap. The … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ao-oper
 
 This is a **Business Process** (level L2), named **Operate Learning and Development**, currently **candidate (yellow)**. It is part of the **Agent Operations and Performance** process context, domain `ao`, lifecycle stage Operate. Its canonical ID is `processes:process-ao-operate-87q5mk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process delivers the enterprise's development programmes to agents in service on a scheduled basis. Sessions and programmes run to plan, and each agent's completion is recorded as they finish. That record shows at a glance who has completed what.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists to make sure development actually reaches the workforce on schedule and that completion is evidenced per agent rather than merely promised.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs whenever development programmes are due for delivery to agents in service, with workforce management scheduling the sessions and recording completion per agent.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* At the start of a new training quarter, workforce management publishes the schedule of development programmes, agents attend their assigned sessions, and each completion is logged against the individual's record as they finish.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Operate Learning and Development L2 process within the processes:pc-ao-operate-zfevmp Cell Charter. See … |
+| `plain_language_name` | string | no | Run Learning and Development |
+| `plain_language_description` | string | no | This process delivers the enterprise's development programmes to agents in service on a scheduled basis. Sessions and … |
+| `business_purpose` | string | no | It exists to make sure development actually reaches the workforce on schedule and that completion is evidenced per … |
+| `practical_context` | string | no | Runs whenever development programmes are due for delivery to agents in service, with workforce management scheduling … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

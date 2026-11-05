@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-desi
 
 This is a **Business Process** (level L2), named **Design Operations Model**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. Its canonical ID is `processes:process-eo-design-rvfpjb`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This is the coordinating design step that pulls four design strands into one committed whole. The delivery model design, the technology platform architecture, the facility and asset blueprint, and the logistics and routing design are each finished and then brought together into a single operations model design. Once committed, it is the basis on which the build stage is planned.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists to make sure the separate design strands of delivery, platforms, facilities and logistics add up to one coherent operations model before anything is built.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs when the framed operations strategy is ready to be designed in full across its four strands. Operations function staff coordinate the work, with the Enablement & Operations Process Owner accountable for the committed design.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations design lead brings the four strands together in a review week, reconciles the platform architecture with the facility blueprint and the routing design, and commits the finished operations model for build-stage planning.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Design Operations Model L2 process within the processes:pc-eo-design-kxdfnz Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Design Operations Model |
+| `plain_language_description` | string | no | This is the coordinating design step that pulls four design strands into one committed whole. The delivery model … |
+| `business_purpose` | string | no | It exists to make sure the separate design strands of delivery, platforms, facilities and logistics add up to one … |
+| `practical_context` | string | no | Runs when the framed operations strategy is ready to be designed in full across its four strands. Operations function … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

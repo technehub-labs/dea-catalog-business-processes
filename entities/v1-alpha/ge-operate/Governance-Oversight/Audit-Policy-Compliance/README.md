@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ge-oper
 
 This is a **Business Process** (level L2), named **Audit Policy Compliance**, currently **candidate (yellow)**. It is part of the **Governance Oversight** process context, domain `ge`, lifecycle stage Operate. Its canonical ID is `processes:process-ge-operate-hxxyc9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Having policies on the shelf proves little; the enterprise needs to know people actually follow them. On a regular schedule this work examines practice against the codified policies, records where behaviour falls short, and recommends what should change. Every non-compliance is then followed up until it has been put right.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives the governing bodies independent evidence of whether policy is being honoured, and it makes sure any shortfall is corrected rather than merely noted.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Periodic, once policies are codified and bodies are operating: the compliance function and risk function carry out the audits and deliver findings, recommendations, and follow-up actions to the appropriate governance body.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* In the quarterly review round, a compliance function auditor samples decisions against the codified policies, the risk function helps weigh the exposures found, and the report with follow-up actions goes to the governing board.
 
 ## 5. Header and Identity Table (generated)
 
@@ -75,6 +75,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Audit Policy Compliance L2 process within the processes:pc-ge-operate-hb2dac Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Audit Policy Compliance |
+| `plain_language_description` | string | no | Having policies on the shelf proves little; the enterprise needs to know people actually follow them. On a regular … |
+| `business_purpose` | string | no | It gives the governing bodies independent evidence of whether policy is being honoured, and it makes sure any shortfall … |
+| `practical_context` | string | no | Periodic, once policies are codified and bodies are operating: the compliance function and risk function carry out the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

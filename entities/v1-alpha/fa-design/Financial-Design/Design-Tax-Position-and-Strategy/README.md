@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-fa-desi
 
 This is a **Business Process** (level L2), named **Design Tax Position and Strategy**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. Its canonical ID is `processes:process-fa-design-ds4drw`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When a new tax exposure appears or a jurisdiction's rules change, this process decides where the organisation stands and how it will respond. The finance design authority documents the organisation's tax positions and shapes the strategy around them. The documented positions and strategy then feed the ongoing tax planning work.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It keeps the organisation deliberate about tax: rather than reacting filing by filing, tax planning follows documented positions and a designed strategy.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It is triggered when a new tax exposure or jurisdictional change emerges, and the finance design authority designs the positions and strategy and documents them.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* When a jurisdictional change alters the organisation's tax exposure, the finance design authority documents the affected positions, adjusts the tax strategy, and passes both to tax planning.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Design Tax Position and Strategy (design stage, management process). Landed by CR-BP-21e.1 from the … |
+| `plain_language_name` | string | no | Design Tax Position and Strategy |
+| `plain_language_description` | string | no | When a new tax exposure appears or a jurisdiction's rules change, this process decides where the organisation stands … |
+| `business_purpose` | string | no | It keeps the organisation deliberate about tax: rather than reacting filing by filing, tax planning follows documented … |
+| `practical_context` | string | no | It is triggered when a new tax exposure or jurisdictional change emerges, and the finance design authority designs the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

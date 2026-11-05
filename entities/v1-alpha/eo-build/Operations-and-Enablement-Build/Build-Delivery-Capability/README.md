@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-buil
 
 This is a **Business Process** (level L2), named **Build Delivery Capability**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. Its canonical ID is `processes:process-eo-build-j9z3q4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This is the stand-up job that assembles everything a business needs in order to produce and deliver at scale. Production lines are stood up, the logistics network is connected, and technology assets and facilities are provisioned until the whole delivery capability exists in working form. It hands over something the operations side can start running.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It turns the designed operations model into a real working delivery capability, with lines, network, assets and facilities in place, so that day-to-day running can begin.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs during the build window after the operations model has been designed, when a new delivery capability or a major extension is needed. Product management coordinates the stand-up, with the Enablement & Operations Process Owner accountable for the result.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product manager tracks the stand-up end to end, from the production line crew finishing its trial runs to the carriers being connected and the last technology assets and facilities provisioned, before handing over to the teams who will run it.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Build Delivery Capability L2 process within the processes:pc-eo-build-zwkhxc Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Build Delivery Capability |
+| `plain_language_description` | string | no | This is the stand-up job that assembles everything a business needs in order to produce and deliver at scale … |
+| `business_purpose` | string | no | It turns the designed operations model into a real working delivery capability, with lines, network, assets and … |
+| `practical_context` | string | no | Runs during the build window after the operations model has been designed, when a new delivery capability or a major … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

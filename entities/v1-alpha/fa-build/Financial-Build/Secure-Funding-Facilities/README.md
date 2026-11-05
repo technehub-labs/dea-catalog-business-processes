@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-fa-buil
 
 This is a **Business Process** (level L2), named **Secure Funding Facilities**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. Its canonical ID is `processes:process-fa-build-ydnzjc`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process puts the money and the machinery of finance in place. It secures the committed funding lines the financial plan calls for, stands up the finance function that will run the numbers, and gets the ERP finance module deployed. With those three things delivered, the organisation is ready to start running its finances day to day.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Committed funding lines, a staffed finance function, and a deployed ERP finance module are the prerequisites for operating; this process turns all three from plan into reality.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It comes into play once the designed financial plan structure requires committed funding lines, a stood-up finance function, and a deployed ERP finance module, and the finance function carries the work through.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* With the financial plan in place, the finance function commits the funding lines the plan calls for, staffs and organises the finance function, and completes the ERP finance module deployment so routine finance work can begin.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Secure Funding Facilities L2 process within the processes:pc-fa-build-pztsp9 Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Secure Funding Facilities |
+| `plain_language_description` | string | no | This process puts the money and the machinery of finance in place. It secures the committed funding lines the financial … |
+| `business_purpose` | string | no | Committed funding lines, a staffed finance function, and a deployed ERP finance module are the prerequisites for … |
+| `practical_context` | string | no | It comes into play once the designed financial plan structure requires committed funding lines, a stood-up finance … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

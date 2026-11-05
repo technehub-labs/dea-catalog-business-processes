@@ -139,3 +139,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Operate Learning and Development L2 process within the processes:pc-ao-operate-zfevmp Cell Charter. See trigger and outcome for the bounded work …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Run Learning and Development'
+plain_language_description: 'This process delivers the enterprise''s development programmes to agents in service on a scheduled basis. Sessions and programmes run to plan, and each agent''s completion is recorded as they finish. That record shows at a glance who has completed what.'
+business_purpose: 'It exists to make sure development actually reaches the workforce on schedule and that completion is evidenced per agent rather than merely promised.'
+practical_context: 'Runs whenever development programmes are due for delivery to agents in service, with workforce management scheduling the sessions and recording completion per agent.'
+worked_example:
+  agent_type: human
+  narrative: 'At the start of a new training quarter, workforce management publishes the schedule of development programmes, agents attend their assigned sessions, and each completion is logged against the individual''s record as they finish.'

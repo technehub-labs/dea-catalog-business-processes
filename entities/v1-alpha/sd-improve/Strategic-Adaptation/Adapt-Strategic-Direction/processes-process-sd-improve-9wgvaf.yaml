@@ -144,3 +144,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Adapt Strategic Direction L2 process within the processes:pc-sd-improve-ft9k5f Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Adapt Strategic Direction'
+plain_language_description: 'When the evidence says the current course no longer fits, this work changes it deliberately. The strategy function adapts the strategic direction, has the objectives and targets refreshed to match, and carries the lessons of the effectiveness review into the result. The adapted direction is then ready to drive the next planning cycle.'
+business_purpose: 'It keeps strategy honest in the face of change: signals and review findings are turned into a revised direction rather than ignored, so the enterprise corrects course while the correction is still affordable.'
+practical_context: 'Encountered when environmental signals, performance monitoring, or an effectiveness review show the direction needs adjusting; the strategy function leads the adaptation ahead of the next planning cycle.'
+worked_example:
+  agent_type: human
+  narrative: 'Acting on the effectiveness review findings, the strategy function revises the strategic direction, and the objectives and targets are refreshed to match the new course. The adapted direction is tabled as the starting point of the next planning cycle.'

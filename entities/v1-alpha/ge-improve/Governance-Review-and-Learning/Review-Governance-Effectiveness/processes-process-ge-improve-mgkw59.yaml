@@ -163,3 +163,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Review Governance Effectiveness L2 process within the processes:pc-ge-improve-c78ppp Cell Charter. See trigger and outcome for the bounded work …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Review Governance Effectiveness'
+plain_language_description: 'Boards and committees that meet on schedule are not automatically governing well. On a periodic basis, this work asks how well the governance setup is actually performing: what the measures show, what lessons the recent period taught, and what should change. Findings and recommendations go back to the governance bodies and into the next round of design and operating choices.'
+business_purpose: 'It holds the governance system itself up for scrutiny, so lessons learned improve how the enterprise is governed rather than being lost between cycles.'
+practical_context: 'Runs periodically once governance bodies have been operating for a while: the audit function and strategy function measure governance performance against the strategy and hand recommendations to the governance bodies.'
+worked_example:
+  agent_type: human
+  narrative: 'At the end of the governance year, the audit function and a strategy function lead compile what the measures show about each body''s performance and present the lessons and recommendations for the next cycle.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-sd-oper
 
 This is a **Business Process** (level L2), named **Sense Environmental Signals**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. Its canonical ID is `processes:process-sd-operate-53y4j4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This work is how the strategy stays aware of the world outside. The strategy function continuously gathers the signals that could mean drift, disruption, or opportunity, filters out the noise, and routes what matters to the strategic review cycle. Direction-setting downstream never has to rely on stale assumptions about the environment.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It acts as the strategy's early-warning sense: signals about drift, disruption, and opportunity are caught, filtered, and routed while the enterprise can still respond rather than react late.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Continuous while the strategy is operating; the strategy function collects and filters environmental signals as they emerge and routes the significant ones into the review cycle.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function spots a fresh signal in its regular environmental sweep, filters it against the noise, and routes it into the next strategic review session with a short note on what it could mean for the direction.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Sense Environmental Signals L2 process within the processes:pc-sd-operate-5cs5ee Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Sense Environmental Signals |
+| `plain_language_description` | string | no | This work is how the strategy stays aware of the world outside. The strategy function continuously gathers the signals … |
+| `business_purpose` | string | no | It acts as the strategy's early-warning sense: signals about drift, disruption, and opportunity are caught, filtered … |
+| `practical_context` | string | no | Continuous while the strategy is operating; the strategy function collects and filters environmental signals as they … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

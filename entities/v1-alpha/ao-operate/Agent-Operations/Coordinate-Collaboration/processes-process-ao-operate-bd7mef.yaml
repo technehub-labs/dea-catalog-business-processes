@@ -139,3 +139,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Coordinate Collaboration L2 process within the processes:pc-ao-operate-zfevmp Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Coordinate Collaboration'
+plain_language_description: 'This process keeps agents and teams working coherently once they are in service. It provides the shared workspaces they need and sets the interaction norms for how they engage with each other. With those in place, joint work across people and artificial agents proceeds without constant case-by-case negotiation.'
+business_purpose: 'It exists so cooperation across the workforce is structured rather than improvised, letting mixed teams of people and artificial agents deliver together reliably.'
+practical_context: 'Encountered day to day in service operations whenever agents and teams need shared workspaces and interaction norms, with workforce management keeping those arrangements current.'
+worked_example:
+  agent_type: human
+  narrative: 'When a new mixed team of staff and artificial agents forms around a busy service queue, workforce management sets up their shared workspace and agrees the interaction norms for handoffs, so work moves between people and agents without friction.'

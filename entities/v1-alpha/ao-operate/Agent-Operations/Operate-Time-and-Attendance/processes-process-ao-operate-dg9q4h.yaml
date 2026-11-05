@@ -139,3 +139,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Operate Time and Attendance L2 process within the processes:pc-ao-operate-zfevmp Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Run Time and Attendance'
+plain_language_description: 'This process captures when and how much the workforce works, accurately and every day. Exceptions such as missing records or unusual hours are spotted and handled rather than left to accumulate. The clean attendance data then feeds payroll so people are paid for the time they actually worked.'
+business_purpose: 'It exists to keep an accurate, exception-free record of working time, because payroll execution and workforce planning both depend on it.'
+practical_context: 'Runs continuously across service delivery, with workforce management handling daily capture and exception resolution so the data is ready to feed payroll execution.'
+worked_example:
+  agent_type: human
+  narrative: 'During a normal week, workforce management reviews the captured time records, chases the few exceptions such as a missing clock-in or an unapproved overtime entry, and clears them before the payroll cut-off.'

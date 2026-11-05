@@ -156,3 +156,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Initiate Policy and Charter L2 process within the processes:pc-ge-conceive-b5xwpd Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Initiate Policy and Charter'
+plain_language_description: 'When a new strategy, regulation, or reorganisation calls for a fresh policy regime, someone has to put the first draft on the table. This work produces an opening policy and charter document: what it will cover, who will hold authority, and who gets to decide what. It is deliberately a starting position, rough enough for the design work that follows to refine.'
+business_purpose: 'It gets governance drafting moving early, so scope, authority, and decision rights are on paper and can be challenged and sharpened before anything is built.'
+practical_context: 'Encountered when a new governance strategy, a new regulatory requirement, or a reorganisation makes a fresh policy regime necessary; the governing board and strategy function take the lead, with the operations function contributing, and hand the committed draft to design.'
+worked_example:
+  agent_type: human
+  narrative: 'Following a reorganisation, a strategy function lead sketches the proposed scope, authority, and decision rights for the new policy regime, and the governing board reviews and commits the initial document for further design.'

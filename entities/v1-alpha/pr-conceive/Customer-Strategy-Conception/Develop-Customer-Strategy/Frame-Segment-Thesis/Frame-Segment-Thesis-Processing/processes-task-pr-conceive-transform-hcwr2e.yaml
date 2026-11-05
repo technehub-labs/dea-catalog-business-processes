@@ -61,19 +61,15 @@ metadata:
   - cr: CR-BP-102
     date: '2026-09-19'
     change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).
-
-# CR-BP-225 completions (2026-11-04): EXT-12 §9 task working
-# objects, from the task's own required trigger/outcome fields
-# (its documented actual use).
 inputs:
 - id: in-task-pr-conceive-transform-hcwr2e
-  name: 'Phase working object (presented per the task trigger)'
-  description: 'Verification certificate issued for Frame Segment Thesis; transform gate may execute the bounded work and emit the conformant artefact under the Conceive …'
+  name: Phase working object (presented per the task trigger)
+  description: Verification certificate issued for Frame Segment Thesis; transform gate may execute the bounded work and emit the conformant artefact under the Conceive …
   source: The task's own trigger field (EXT-12 §9 task working objects)
   mandatory: true
 outputs:
 - id: out-task-pr-conceive-transform-hcwr2e
-  name: 'Phase result (recorded per the task outcome)'
-  description: 'Bounded-work artefact produced for Frame Segment Thesis conforming to the Conceive schema; processing custodian passes custody to the confirmation custodian.'
+  name: Phase result (recorded per the task outcome)
+  description: Bounded-work artefact produced for Frame Segment Thesis conforming to the Conceive schema; processing custodian passes custody to the confirmation custodian.
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true

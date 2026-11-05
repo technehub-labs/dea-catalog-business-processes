@@ -132,3 +132,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Transition a validated proposition, product or service from a prepared state into operational service, with ownership, controls and operational readiness …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Transition Proposition to Service'
+plain_language_description: 'When a product or service has passed its readiness checks, this work moves it out of its prepared state and into day-to-day operation. The proposition design authority confirms who will own the offering once it is live, that the necessary controls are in place, and that the receiving team is set up to run it. Only when ownership and readiness evidence are settled does the business start relying on it in normal operations.'
+business_purpose: 'It exists so that nothing reaches live operation half-prepared: accountability, controls, and readiness are proven before the business starts to rely on the new offering.'
+practical_context: 'Encountered at the end of every launch effort, when the readiness threshold has been met and go-live is authorised; the proposition design authority leads the handover with the teams who will run the offering day to day.'
+worked_example:
+  agent_type: human
+  narrative: 'At the go-live readiness meeting, the proposition design authority walks the checklist, confirms the receiving operational owner, and records that the controls are in place. The offering is then accepted into operational service, and the receiving team takes over its day-to-day running.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pv-buil
 
 This is a **Business Process** (level L2), named **Build Service Capability**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. Its canonical ID is `processes:process-pv-build-p9a2s9`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This work stands up whatever the business needs behind the scenes to actually deliver a designed service to customers. Product management works out the delivery procedures, quality anchors, and tooling the service depends on, and puts them in place. The capability is finished once it is ready to move into market-readiness preparation.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+A designed proposition is only a promise on paper until the organisation can deliver it; this work turns the design into the working delivery machinery customers will actually experience.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Comes up once a proposition design is settled and the delivery gap is clear; product management drives the build with the teams who will operate the service, ahead of launch preparation.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Product management maps the delivery steps a new service needs, agrees the quality anchors with the operations team, and arranges the tooling setup. By the end, the service can be run end to end by the people who will deliver it, and the capability moves on to market-readiness preparation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Build Service Capability L2 process within the processes:pc-pv-build-ygbmxb Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Build Service Capability |
+| `plain_language_description` | string | no | This work stands up whatever the business needs behind the scenes to actually deliver a designed service to customers … |
+| `business_purpose` | string | no | A designed proposition is only a promise on paper until the organisation can deliver it; this work turns the design … |
+| `practical_context` | string | no | Comes up once a proposition design is settled and the delivery gap is clear; product management drives the build with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

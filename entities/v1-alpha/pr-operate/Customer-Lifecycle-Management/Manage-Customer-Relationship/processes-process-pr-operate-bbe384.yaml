@@ -240,3 +240,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Manage the day-to-day operation of an active customer relationship across its lifecycle (acquisition → onboarding → active use → renewal or win-back). The …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Manage Customer Relationship'
+plain_language_description: 'From the moment a customer finishes onboarding to renewal or win-back, someone owns the health of that relationship day to day. Attention is spread across the customer portfolio, escalations are picked up and resolved, and renewals are coordinated before they arrive. The aim is simple: the relationship keeps working for both sides over its whole life.'
+business_purpose: 'Active relationships decay without tending; this work sustains them through attention, escalation handling, and renewal coordination so value keeps flowing both ways.'
+practical_context: 'Ongoing from the post-onboarding handoff onward: customer relationship management watches each active relationship and steps in when an escalation, churn risk, or approaching renewal signals a change, reporting up to the governing board.'
+worked_example:
+  agent_type: human
+  narrative: 'A long-standing customer raises a service escalation; customer relationship management resolves it, notes the renewal coming up in two quarters, and updates the relationship record so leadership sees the full picture.'

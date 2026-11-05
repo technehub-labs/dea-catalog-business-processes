@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pr-buil
 
 This is a **Business Process** (level L2), named **Build Customer Acquisition Channels**, currently **candidate (yellow)**. It is part of the **Customer Channel and Acquisition Build** process context, domain `pr`, lifecycle stage Build. Its canonical ID is `processes:process-pr-build-nygvw7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With the experience and journey designs agreed, the routes that will actually bring customers in have to be constructed. This work stands up the channel infrastructure, connects it to the designed experience, and tests that the acquisition engines work end to end. It finishes with the pipes ready to deliver the first customers.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Designs attract no one until channels exist; this work turns the plans into working routes to market, ready to acquire the enterprise's first customers.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Follows the commitment of the customer experience and journey designs: customer relationship management and the strategy function build and validate the channels, with readiness reported to the governing board.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Once the journey design is signed off, the strategy function specifies each acquisition channel, customer relationship management configures and tests the flows against the designed experience, and the governing board hears that the routes are ready for the first customers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -75,6 +75,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Build Customer Acquisition Channels L2 process within the processes:pc-pr-build-a46hp7 Cell Charter. See … |
+| `plain_language_name` | string | no | Build Customer Acquisition Channels |
+| `plain_language_description` | string | no | With the experience and journey designs agreed, the routes that will actually bring customers in have to be … |
+| `business_purpose` | string | no | Designs attract no one until channels exist; this work turns the plans into working routes to market, ready to acquire … |
+| `practical_context` | string | no | Follows the commitment of the customer experience and journey designs: customer relationship management and the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

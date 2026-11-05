@@ -137,3 +137,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Perform Financial Close (operate stage, core process). Landed by CR-BP-21e.1 from the FinanceAndAccounting register v2.'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Perform Financial Close'
+plain_language_description: 'When a period close boundary is reached, this process shuts the books for the period. Period-end entries are posted, accounts are reconciled, and the management reports that depend on a closed period are produced. What comes out feeds straight into reporting.'
+business_purpose: 'It exists so each period ends with a clean, reconciled set of books, giving reporting numbers that can be trusted.'
+practical_context: 'It runs at every period close boundary, with the compliance function producing the period-end entries, reconciliations, and management reports.'
+worked_example:
+  agent_type: human
+  narrative: 'When the period close boundary arrives, the compliance function posts the period-end entries, works through the reconciliations, and produces the management reports that reporting depends on.'

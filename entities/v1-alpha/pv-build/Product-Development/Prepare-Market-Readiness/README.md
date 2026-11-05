@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pv-buil
 
 This is a **Business Process** (level L2), named **Prepare Market Readiness**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. Its canonical ID is `processes:process-pv-build-6hjzmk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Before a built product or service can launch, this work pulls together everything the market-facing side needs. Product management arranges the go-to-market assets, settles pricing, and sets up the channels the offering will be sold through. Once those pieces are in place, the offering is ready for launch.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so a finished product does not go out half-dressed: pricing, channels, and go-to-market materials are readied in advance so the launch lands properly.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs in the run-up to every launch, once the build is complete; product management leads the preparation with the people who will take the offering to market.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* With the product built, product management assembles the launch pack: pricing is signed off, the sales channels are set up, and the go-to-market assets go out to the field. The launch then proceeds with everything in place.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Prepare Market Readiness L2 process within the processes:pc-pv-build-ygbmxb Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Prepare Market Readiness |
+| `plain_language_description` | string | no | Before a built product or service can launch, this work pulls together everything the market-facing side needs. Product … |
+| `business_purpose` | string | no | It exists so a finished product does not go out half-dressed: pricing, channels, and go-to-market materials are readied … |
+| `practical_context` | string | no | Runs in the run-up to every launch, once the build is complete; product management leads the preparation with the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

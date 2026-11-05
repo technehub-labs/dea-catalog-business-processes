@@ -124,3 +124,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Operate Warehouse and Inventory L2 process within the processes:pc-eo-operate-ydqb96 Cell Charter. See trigger and outcome for the bounded work …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Run the Warehouse and Inventory'
+plain_language_description: 'This process keeps the warehouse, and the numbers in it, honest. Stock is held and counted so records match reality, orders are picked as demand calls for them, and replenishment brings stock back up before it runs short. Production and delivery both depend on it being right.'
+business_purpose: 'It exists because production and delivery both rest on accurate stock holding, picking and replenishment, and a warehouse whose records are wrong breaks both.'
+practical_context: 'Faced daily in warehouse work, from goods arriving to counts, picks against demand and replenishment rounds. Product management oversees the operation under the Enablement & Operations Process Owner.'
+worked_example:
+  agent_type: human
+  narrative: 'A product manager sees the stock count drift on a fast-moving item, has the discrepancy traced and corrected, and confirms the replenishment order is in before the next day''s picks fall short.'

@@ -135,3 +135,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Implement Financial Systems and Ledger (build stage, core process). Landed by CR-BP-21e.1 from the FinanceAndAccounting register v2.'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Implement Financial Systems and Ledger'
+plain_language_description: 'Whenever a financial system build or change is initiated, this process stands up the systems and the ledger that finance will run on. It sets out the chart of accounts, puts the posting rules in place, and deploys the reports that accountants rely on. When the work is done, the general ledger is ready to operate.'
+business_purpose: 'It gives the enterprise a functioning general ledger and the systems around it, so every financial transaction has a defined home and the numbers taken from the ledger are consistent.'
+practical_context: 'It is triggered when a financial system build or change is initiated, and the finance function does the implementation before general ledger operations begin.'
+worked_example:
+  agent_type: human
+  narrative: 'When a financial system change is initiated, the finance function configures the chart of accounts, agrees the posting rules, and deploys the standard reports so the ledger can take live transactions.'

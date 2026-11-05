@@ -131,3 +131,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Manage Cash and Liquidity (operate stage, management process). Landed by CR-BP-21e.1 from the FinanceAndAccounting register v2.'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Manage Cash and Liquidity'
+plain_language_description: 'This process keeps track of the enterprise''s cash and makes sure there is enough of it when it is needed. Whenever a cash position or liquidity event comes up, positions are checked, forecasts are updated, and investment decisions are weighed against the treasury policy. The result is cash that is visible today and covered for tomorrow.'
+business_purpose: 'It exists so the enterprise always knows how much cash it holds, can see what is coming, and keeps its investment decisions inside the treasury policy.'
+practical_context: 'It is triggered whenever a cash position or liquidity event occurs, and the compliance function monitors positions, forecasts, and investment decisions against the treasury policy.'
+worked_example:
+  agent_type: human
+  narrative: 'When an unexpected liquidity event lands, the compliance function checks the current cash position, refreshes the forecast, and confirms that any investment decision stays within the treasury policy.'

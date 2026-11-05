@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-fa-reti
 
 This is a **Business Process** (level L2), named **Conclude Regulated Run-Off**, currently **candidate (yellow)**. It is part of the **Financial Run-Off** process context, domain `fa`, lifecycle stage Retire. Its canonical ID is `processes:process-fa-retire-wkbrsa`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When a regulator authorises a financial entity such as an insurer to wind down, this process carries the run-off through to its conclusion. The entity moves onto a statutory accounting basis, policyholder claims are adjudicated and paid with policyholder priority respected, and reserving, capital adequacy, and asset-liability matching are maintained along the way. The run-off ends with the authorisation surrendered or the portfolio transferred and the closing certifications obtained, under the controlling regulator's supervision throughout.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so a regulated financial entity can be wound down lawfully and fairly — policyholders paid in priority, obligations maintained, and the exit certified — rather than simply abandoned.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It begins when a regulator-acknowledged run-off authorisation is granted and runs for the whole run-off period, with the industry regulator, governing board, operations function, and product management all involved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Once the regulator grants the run-off authorisation, the governing board oversees the transition to the statutory accounting basis while the operations function adjudicates and pays policyholder claims and product management handles the run-off portfolio, until the certifications allow the authorisation to be surrendered.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Conclude a regulated run-off of a financial entity (insurer, mutual, or run-off portfolio) under statutory run-off … |
+| `plain_language_name` | string | no | Conclude a Regulated Run-Off |
+| `plain_language_description` | string | no | When a regulator authorises a financial entity such as an insurer to wind down, this process carries the run-off … |
+| `business_purpose` | string | no | It exists so a regulated financial entity can be wound down lawfully and fairly — policyholders paid in priority … |
+| `practical_context` | string | no | It begins when a regulator-acknowledged run-off authorisation is granted and runs for the whole run-off period, with … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -135,3 +135,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Design Treasury and Funding Model (design stage, management process). Landed by CR-BP-21e.1 from the FinanceAndAccounting register v2.'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Design Treasury and Funding Model'
+plain_language_description: 'This process works out how the enterprise will manage its cash and fund itself. Prompted by a review of treasury policy or funding posture, the finance design authority designs the treasury and funding model, bringing cash, liquidity, and funding policy into one coordinated picture. The designed model then steers how treasury operations are run.'
+business_purpose: 'It gives treasury operations a designed model to follow, so cash, liquidity, and funding decisions are coordinated by policy rather than made case by case.'
+practical_context: 'It is carried out when treasury policy or the funding posture is reviewed, with the finance design authority doing the design work.'
+worked_example:
+  agent_type: human
+  narrative: 'During a review of the funding posture, the finance design authority reworks the treasury and funding model, aligning cash, liquidity, and funding policy so treasury operations have a coherent design to run against.'

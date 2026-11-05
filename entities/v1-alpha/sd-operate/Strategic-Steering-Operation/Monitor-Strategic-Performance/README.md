@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-sd-oper
 
 This is a **Business Process** (level L2), named **Monitor Strategic Performance**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. Its canonical ID is `processes:process-sd-operate-zdjchn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+While the plan is being executed, this work keeps score and keeps steering. The strategy function tracks strategic performance against the plan on a defined review cadence, picks up the environmental signals as they arrive, and steers the initiative portfolio so it stays in line with the strategic intent. Monitoring, sensing, and steering run together as one continuous duty.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It keeps execution tied to intent: continuous monitoring against the plan means drift, disruption, or opportunity is spotted and steered on while it still matters.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+A continuous duty while the plan is in execution, organised around the strategic review cycle; the strategy function monitors performance, senses signals, and steers the initiative portfolio on that cadence.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* At each review meeting the strategy function walks the performance figures against the plan, notes the fresh environmental signals, and adjusts the initiative portfolio where it has drifted from intent. The steering decisions are carried into the cycle's record.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Monitor Strategic Performance L2 process within the processes:pc-sd-operate-5cs5ee Cell Charter. See … |
+| `plain_language_name` | string | no | Monitor Strategic Performance |
+| `plain_language_description` | string | no | While the plan is being executed, this work keeps score and keeps steering. The strategy function tracks strategic … |
+| `business_purpose` | string | no | It keeps execution tied to intent: continuous monitoring against the plan means drift, disruption, or opportunity is … |
+| `practical_context` | string | no | A continuous duty while the plan is in execution, organised around the strategic review cycle; the strategy function … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

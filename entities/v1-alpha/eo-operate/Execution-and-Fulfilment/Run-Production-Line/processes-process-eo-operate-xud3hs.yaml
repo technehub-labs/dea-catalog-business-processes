@@ -123,3 +123,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Run Production Line L2 process within the processes:pc-eo-operate-ydqb96 Cell Charter. See trigger and outcome for the bounded work this process …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Run Production Line'
+plain_language_description: 'This process is the line actually making things. Each production cycle, the stood-up line is run to plan, turning out the agreed output at the agreed rate, and what is produced and its quality are recorded cycle by cycle. That record keeps performance against the plan visible.'
+business_purpose: 'It exists to turn a commissioned line into planned output, cycle after cycle, with output and quality recorded so shortfalls against plan are visible.'
+practical_context: 'Met on every production cycle the line works through, shift after shift once the line is stood up. Product management oversees output against plan under the Enablement & Operations Process Owner.'
+worked_example:
+  agent_type: human
+  narrative: 'A product manager reviews the shift''s output against the plan, notes the quality record for a cycle that came in light, and asks the line team to recover the shortfall over the next cycle.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-fa-buil
 
 This is a **Business Process** (level L2), named **Build Budgeting and Forecasting Systems**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. Its canonical ID is `processes:process-fa-build-92v24c`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When a new planning cycle is coming up or the budget tooling needs a rebuild, the finance function puts the budgeting and forecasting systems in place. The work covers building the planning models, wiring up the integrations that feed them, and putting the necessary controls around them. Once the work is finished, the systems are ready to carry the organisation's budgeting.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives the organisation working budgeting and forecasting systems, so plans and forecasts can be produced reliably every cycle instead of being assembled by hand.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The work starts when a planning cycle is scoped or a budget tool rebuild is agreed, and the finance function carries it through ahead of the next budgeting round.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Ahead of next year's planning round, the finance function scopes the rebuild, assembles the forecasting models, connects them to the feeds they depend on, and signs off the controls so planning can run on the new setup.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Build Budgeting and Forecasting Systems (build stage, core process). Landed by CR-BP-21e.1 from the … |
+| `plain_language_name` | string | no | Build Budgeting and Forecasting Systems |
+| `plain_language_description` | string | no | When a new planning cycle is coming up or the budget tooling needs a rebuild, the finance function puts the budgeting … |
+| `business_purpose` | string | no | It gives the organisation working budgeting and forecasting systems, so plans and forecasts can be produced reliably … |
+| `practical_context` | string | no | The work starts when a planning cycle is scoped or a budget tool rebuild is agreed, and the finance function carries it … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

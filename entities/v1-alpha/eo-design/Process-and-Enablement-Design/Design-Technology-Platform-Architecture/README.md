@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-desi
 
 This is a **Business Process** (level L2), named **Design Technology Platform Architecture**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. Its canonical ID is `processes:process-eo-design-7gtead`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process shapes the technology the operation will run on. Working from the framed enablement approach, the operations function defines the platform components, how they will integrate with each other, and the deployment topologies they will run in. The finished architecture is what acquisition planning then works from.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It turns the framed technology enablement approach into a concrete architecture of components and integration patterns, so the right platforms can be acquired.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered when the enablement approach has been framed and platform decisions need to become buildable detail. Operations function staff draw the architecture and feed acquisition planning, under the Enablement & Operations Process Owner.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations architect maps the platform components on a whiteboard, agrees the integration patterns between them and the deployment topology they will run in, and passes the architecture to the people planning the purchases.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Design Technology Platform Architecture L2 process within the processes:pc-eo-design-kxdfnz Cell Charter … |
+| `plain_language_name` | string | no | Design Technology Platform Architecture |
+| `plain_language_description` | string | no | This process shapes the technology the operation will run on. Working from the framed enablement approach, the … |
+| `business_purpose` | string | no | It turns the framed technology enablement approach into a concrete architecture of components and integration patterns … |
+| `practical_context` | string | no | Encountered when the enablement approach has been framed and platform decisions need to become buildable detail … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

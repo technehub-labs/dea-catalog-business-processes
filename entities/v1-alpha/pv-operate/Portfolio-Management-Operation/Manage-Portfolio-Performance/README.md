@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pv-oper
 
 This is a **Business Process** (level L2), named **Manage Portfolio Performance**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. Its canonical ID is `processes:process-pv-operate-en8rdz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once propositions are live, this work keeps continuous watch on how each performs against the investment thesis it was launched under. Product management maintains that visibility, spots where performance drifts, and commits rebalancing decisions when the mix needs adjusting. The portfolio is thereby kept honest and steered rather than left to drift.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives the business a live view of which propositions are paying off and which are not, so the portfolio can be rebalanced on evidence instead of waiting for annual surprises.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+A continuous responsibility once products are operating: product management reviews proposition performance on an ongoing basis and commits rebalancing decisions as the picture changes.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Product management walks the performance figures for each live proposition against the investment thesis behind it, flags one that is drifting, and commits a rebalancing decision to shift support toward the stronger performers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Manage Portfolio Performance L2 process within the processes:pc-pv-operate-ewpwjc Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Manage Portfolio Performance |
+| `plain_language_description` | string | no | Once propositions are live, this work keeps continuous watch on how each performs against the investment thesis it was … |
+| `business_purpose` | string | no | It gives the business a live view of which propositions are paying off and which are not, so the portfolio can be … |
+| `practical_context` | string | no | A continuous responsibility once products are operating: product management reviews proposition performance on an … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

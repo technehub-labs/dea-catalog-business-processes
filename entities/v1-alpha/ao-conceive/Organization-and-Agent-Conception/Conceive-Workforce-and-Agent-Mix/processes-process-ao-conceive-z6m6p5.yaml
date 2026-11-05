@@ -141,3 +141,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Conceive Workforce and Agent Mix L2 process within the processes:pc-ao-conceive-wtq4cr Cell Charter. See trigger and outcome for the bounded work …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Conceive the Workforce and Agent Mix'
+plain_language_description: 'This process decides the blend of people and artificial agents the organization will run on, once the organization and agent strategy is committed. It sets the proportions between human and artificial capacity and draws the capacity envelopes that each part of the business can plan against. The agreed mix becomes the reference point for later acquisition and planning decisions.'
+business_purpose: 'It exists to give the enterprise a deliberate answer to how much of its work is done by people versus artificial agents, instead of letting the balance drift over time.'
+practical_context: 'Follows commitment of the organization and agent strategy, typically in planning cycles where workforce management and the strategy function need agreed proportions and capacity envelopes to plan against.'
+worked_example:
+  agent_type: human
+  narrative: 'During the yearly planning round, workforce management and the strategy function sketch out how many roles stay human, where artificial agents take over volume work, and the capacity envelopes for each division, then commit the mix to guide hiring and deployment.'

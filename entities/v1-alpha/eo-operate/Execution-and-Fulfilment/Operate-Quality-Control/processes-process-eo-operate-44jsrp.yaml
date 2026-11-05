@@ -131,3 +131,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Operate Quality Control L2 process within the processes:pc-eo-operate-ydqb96 Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Run Quality Control'
+plain_language_description: 'This process stands between production and the customer with a checklist. Output is inspected against specification, batch by batch, and each batch receives a disposition, released or held back when it does not measure up. The inspections and their outcomes are recorded so there is always a trail of what passed and what did not.'
+business_purpose: 'It exists because production output can only be trusted to serve customers once it has been inspected against specification and a clear disposition recorded per batch.'
+practical_context: 'Met at every handover from production, as each batch comes off the line and needs inspecting before it can serve customers. Product management owns the quality operation under the Enablement & Operations Process Owner.'
+worked_example:
+  agent_type: human
+  narrative: 'A product manager learns that a batch has not passed its inspection, agrees the disposition to hold it back from customers, and arranges re-inspection before anything is released.'

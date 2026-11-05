@@ -59,19 +59,15 @@ metadata:
   - cr: CR-BP-102
     date: '2026-09-19'
     change: Initial L4 Task decomposition; lands under the L4 decomposition pipeline (5-phase verb-object pattern).
-
-# CR-BP-225 completions (2026-11-04): EXT-12 §9 task working
-# objects, from the task's own required trigger/outcome fields
-# (its documented actual use).
 inputs:
 - id: in-task-ge-operate-transform-2rpkbn
-  name: 'Phase working object (presented per the task trigger)'
-  description: 'Verification certificate issued for Deliver Mitigations to Bodies; transform gate may execute the bounded work and emit the conformant artefact under the …'
+  name: Phase working object (presented per the task trigger)
+  description: Verification certificate issued for Deliver Mitigations to Bodies; transform gate may execute the bounded work and emit the conformant artefact under the …
   source: The task's own trigger field (EXT-12 §9 task working objects)
   mandatory: true
 outputs:
 - id: out-task-ge-operate-transform-2rpkbn
-  name: 'Phase result (recorded per the task outcome)'
-  description: 'Bounded-work artefact produced for Deliver Mitigations to Bodies conforming to the Operate schema; processing custodian passes custody to the confirmation …'
+  name: Phase result (recorded per the task outcome)
+  description: Bounded-work artefact produced for Deliver Mitigations to Bodies conforming to the Operate schema; processing custodian passes custody to the confirmation …
   source: The task's own outcome field (EXT-12 §9)
   mandatory: true

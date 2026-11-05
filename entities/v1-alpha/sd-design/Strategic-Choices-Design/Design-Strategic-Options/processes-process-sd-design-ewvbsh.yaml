@@ -143,3 +143,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Design Strategic Options L2 process within the processes:pc-sd-design-g3es76 Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Design Strategic Options'
+plain_language_description: 'This work turns strategic intent into a menu of genuinely different ways forward. The strategy function designs each option as a set of bounded trade-offs, what it would cost and what it would deliver, and sets the criteria against which the options will be judged. The committed option designs then go forward for evaluation and translation.'
+business_purpose: 'It creates real choice: designing distinct options with explicit trade-offs and evaluation criteria up front lets the enterprise compare paths honestly instead of defaulting to the first idea.'
+practical_context: 'Runs when the conceived strategic intent needs candidate paths; the strategy function designs the options and their trade-offs before any evaluation takes place.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function sketches the candidate options for the intent, writes each one''s trade-offs in plain terms, and agrees the criteria the leadership will judge them on. The option designs are committed and sent for evaluation.'

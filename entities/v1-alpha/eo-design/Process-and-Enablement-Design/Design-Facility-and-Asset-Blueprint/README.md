@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-desi
 
 This is a **Business Process** (level L2), named **Design Facility and Asset Blueprint**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. Its canonical ID is `processes:process-eo-design-q83tdv`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process turns the physical asset approach into drawings and numbers a builder could work from. Layouts are drawn for the facilities, equipment is specified, and capacity envelopes are set so it is clear how much each site and asset should handle. The completed blueprint is what provisioning planning then picks up.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so facility and asset decisions are made once, on paper, with layouts and capacity envelopes agreed before money is spent securing and fitting space.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Comes up when the framed physical asset approach is ready to be made concrete as layouts, equipment specifications and capacity envelopes. The operations function produces the blueprint, under the Enablement & Operations Process Owner, ahead of provisioning planning.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations planner draws the floor layout for a new facility, writes the equipment specifications against the agreed capacity envelopes, and issues the blueprint for provisioning planning.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Design Facility and Asset Blueprint L2 process within the processes:pc-eo-design-kxdfnz Cell Charter. See … |
+| `plain_language_name` | string | no | Design Facility and Asset Blueprint |
+| `plain_language_description` | string | no | This process turns the physical asset approach into drawings and numbers a builder could work from. Layouts are drawn … |
+| `business_purpose` | string | no | It exists so facility and asset decisions are made once, on paper, with layouts and capacity envelopes agreed before … |
+| `practical_context` | string | no | Comes up when the framed physical asset approach is ready to be made concrete as layouts, equipment specifications and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

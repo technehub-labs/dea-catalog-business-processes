@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ao-conc
 
 This is a **Business Process** (level L2), named **Frame Organization Model**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. Its canonical ID is `processes:process-ao-conceive-ruxjvh`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process turns strategic direction into the basic shape of the organization before anyone designs concrete roles. It sets the structure principles the enterprise will follow, decides how wide reporting spans should be, and marks where coordination boundaries sit between units. With those in place, role design and structure work have a stable frame to work within.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives the enterprise a shared, explicit model of how it organizes itself, so later design decisions about roles and structures are consistent rather than ad hoc.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs once the organization and agent strategy is committed, when workforce management and the strategy function need structure principles, reporting spans, and coordination boundaries settled before role design can start.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Ahead of a growth phase, workforce management and the strategy function agree the guiding principles for how teams will be organized, set a limit on how many people report to any one manager, and mark which units need their own coordination boundaries, producing the model that role designers will follow.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Frame Organization Model L2 process within the processes:pc-ao-conceive-wtq4cr Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Frame the Organization Model |
+| `plain_language_description` | string | no | This process turns strategic direction into the basic shape of the organization before anyone designs concrete roles … |
+| `business_purpose` | string | no | It gives the enterprise a shared, explicit model of how it organizes itself, so later design decisions about roles and … |
+| `practical_context` | string | no | Runs once the organization and agent strategy is committed, when workforce management and the strategy function need … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

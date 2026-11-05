@@ -135,3 +135,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Steer Initiative Portfolio L2 process within the processes:pc-sd-operate-5cs5ee Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Steer Initiative Portfolio'
+plain_language_description: 'Initiatives in flight rarely behave exactly as planned, and this work keeps them pointed the right way. The strategy function watches where initiatives drift against strategic performance and commits rebalancing decisions at each review cycle to correct the course. The initiative portfolio is thereby steered continuously rather than revisited only when something breaks.'
+business_purpose: 'It keeps the delivery machinery aligned with strategy: rebalancing decisions at each review cycle pull drifting initiatives back toward the intent they were created to serve.'
+practical_context: 'Runs whenever in-flight initiatives drift against strategic performance, with the strategy function committing rebalancing decisions as a standing item at each review cycle.'
+worked_example:
+  agent_type: human
+  narrative: 'Seeing one initiative lag and another outrun its brief, the strategy function commits a rebalancing decision at the review cycle, shifting support from the lagging work to the work that is proving out. The decision is recorded and the initiative owners are briefed.'

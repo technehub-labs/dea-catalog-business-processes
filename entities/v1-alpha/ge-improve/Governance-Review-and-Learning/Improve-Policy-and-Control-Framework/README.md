@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ge-impr
 
 This is a **Business Process** (level L2), named **Improve Policy and Control Framework**, currently **candidate (yellow)**. It is part of the **Governance Review and Learning** process context, domain `ge`, lifecycle stage Improve. Its canonical ID is `processes:process-ge-improve-u3g5dh`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When audits turn up weaknesses or policies fall short of practice, this work closes the loop. The teams measure where the gaps are, revise the standards and controls that need tightening, and track whether the overall compliance position actually gets stronger. It is how the rulebook keeps pace with reality.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It keeps policies and controls fit for purpose, so weaknesses found in audits translate into firmer standards instead of recurring problems.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Surfaces whenever audit findings or policy gaps appear: the audit function raises what it found, and the strategy function measures the gaps and updates the standards until the compliance posture is stronger.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* After an audit flags inconsistent approvals, the audit function walks the strategy function through the findings, the gaps are measured against the standards, and the affected controls are tightened and reissued.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Improve Policy and Control Framework (improve stage, standardization process). Landed by CR-BP-21f.1 from the … |
+| `plain_language_name` | string | no | Improve Policy and Control Framework |
+| `plain_language_description` | string | no | When audits turn up weaknesses or policies fall short of practice, this work closes the loop. The teams measure where … |
+| `business_purpose` | string | no | It keeps policies and controls fit for purpose, so weaknesses found in audits translate into firmer standards instead … |
+| `practical_context` | string | no | Surfaces whenever audit findings or policy gaps appear: the audit function raises what it found, and the strategy … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

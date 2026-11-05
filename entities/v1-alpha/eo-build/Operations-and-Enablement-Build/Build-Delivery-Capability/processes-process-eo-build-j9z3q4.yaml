@@ -144,3 +144,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Build Delivery Capability L2 process within the processes:pc-eo-build-zwkhxc Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Build Delivery Capability'
+plain_language_description: 'This is the stand-up job that assembles everything a business needs in order to produce and deliver at scale. Production lines are stood up, the logistics network is connected, and technology assets and facilities are provisioned until the whole delivery capability exists in working form. It hands over something the operations side can start running.'
+business_purpose: 'It turns the designed operations model into a real working delivery capability, with lines, network, assets and facilities in place, so that day-to-day running can begin.'
+practical_context: 'Runs during the build window after the operations model has been designed, when a new delivery capability or a major extension is needed. Product management coordinates the stand-up, with the Enablement & Operations Process Owner accountable for the result.'
+worked_example:
+  agent_type: human
+  narrative: 'A product manager tracks the stand-up end to end, from the production line crew finishing its trial runs to the carriers being connected and the last technology assets and facilities provisioned, before handing over to the teams who will run it.'

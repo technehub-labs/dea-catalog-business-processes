@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-fa-oper
 
 This is a **Business Process** (level L2), named **Manage Cash and Liquidity**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. Its canonical ID is `processes:process-fa-operate-2pmqb2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process keeps track of the enterprise's cash and makes sure there is enough of it when it is needed. Whenever a cash position or liquidity event comes up, positions are checked, forecasts are updated, and investment decisions are weighed against the treasury policy. The result is cash that is visible today and covered for tomorrow.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise always knows how much cash it holds, can see what is coming, and keeps its investment decisions inside the treasury policy.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It is triggered whenever a cash position or liquidity event occurs, and the compliance function monitors positions, forecasts, and investment decisions against the treasury policy.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* When an unexpected liquidity event lands, the compliance function checks the current cash position, refreshes the forecast, and confirms that any investment decision stays within the treasury policy.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Manage Cash and Liquidity (operate stage, management process). Landed by CR-BP-21e.1 from the FinanceAndAccounting … |
+| `plain_language_name` | string | no | Manage Cash and Liquidity |
+| `plain_language_description` | string | no | This process keeps track of the enterprise's cash and makes sure there is enough of it when it is needed. Whenever a … |
+| `business_purpose` | string | no | It exists so the enterprise always knows how much cash it holds, can see what is coming, and keeps its investment … |
+| `practical_context` | string | no | It is triggered whenever a cash position or liquidity event occurs, and the compliance function monitors positions … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

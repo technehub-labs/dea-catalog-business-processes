@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pr-desi
 
 This is a **Business Process** (level L2), named **Design Demand Model**, currently **candidate (yellow)**. It is part of the **Customer Experience Design** process context, domain `pr`, lifecycle stage Design. Its canonical ID is `processes:process-pr-design-cv6hjh`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Once the experience is shaped, the enterprise needs a working answer to how customer need will actually be met. This work charts the supply paths demand will travel, writes down the capacity assumptions underneath them, and names the levers that can raise or damp demand. The model then guides the build of channels and acquisition programmes.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It connects the demand the enterprise wants with the supply it can deliver, so growth plans rest on stated capacity assumptions rather than hope.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Follows the experience design: the strategy function works out supply paths and capacity assumptions with customer relationship management, and the committed model steers the channel and acquisition build the governing board expects.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* After the experience is committed, a strategy function planner maps how a surge in interest would flow through supply, agrees the capacity assumptions with customer relationship management, and notes which levers could be pulled to smooth or stimulate demand.
 
 ## 5. Header and Identity Table (generated)
 
@@ -76,6 +76,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Design Demand Model L2 process within the processes:pc-pr-design-hrcdy4 Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Design Demand Model |
+| `plain_language_description` | string | no | Once the experience is shaped, the enterprise needs a working answer to how customer need will actually be met. This … |
+| `business_purpose` | string | no | It connects the demand the enterprise wants with the supply it can deliver, so growth plans rest on stated capacity … |
+| `practical_context` | string | no | Follows the experience design: the strategy function works out supply paths and capacity assumptions with customer … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

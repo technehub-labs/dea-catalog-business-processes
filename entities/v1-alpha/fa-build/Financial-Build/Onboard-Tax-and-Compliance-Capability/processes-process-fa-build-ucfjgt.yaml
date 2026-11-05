@@ -137,3 +137,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Onboard Tax and Compliance Capability (build stage, management process). Landed by CR-BP-21e.1 from the FinanceAndAccounting register v2.'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Onboard Tax and Compliance Capability'
+plain_language_description: 'When the organisation becomes subject to a new tax jurisdiction or compliance regime, this process gets the tax and compliance capability up and running. It puts the required filings and registrations in place and sets up the controls that keep them working. The capability it delivers then supports tax planning, with the tax policy review keeping oversight.'
+business_purpose: 'It ensures the organisation never meets a new tax obligation unprepared: filings, registrations, and controls are operational before the regime starts to bite.'
+practical_context: 'It is triggered when a new tax jurisdiction or compliance regime applies, and the finance function onboards the capability while the tax policy review supervises the result.'
+worked_example:
+  agent_type: human
+  narrative: 'After the organisation starts operating under a new tax jurisdiction, the finance function completes the registrations, sets up the recurring filings, and puts the supporting controls in place so tax planning can proceed under the tax policy review.'

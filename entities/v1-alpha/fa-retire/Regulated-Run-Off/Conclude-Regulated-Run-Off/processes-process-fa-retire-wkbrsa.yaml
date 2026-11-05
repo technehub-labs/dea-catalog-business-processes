@@ -195,3 +195,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Conclude a regulated run-off of a financial entity (insurer, mutual, or run-off portfolio) under statutory run-off obligations within the …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Conclude a Regulated Run-Off'
+plain_language_description: 'When a regulator authorises a financial entity such as an insurer to wind down, this process carries the run-off through to its conclusion. The entity moves onto a statutory accounting basis, policyholder claims are adjudicated and paid with policyholder priority respected, and reserving, capital adequacy, and asset-liability matching are maintained along the way. The run-off ends with the authorisation surrendered or the portfolio transferred and the closing certifications obtained, under the controlling regulator''s supervision throughout.'
+business_purpose: 'It exists so a regulated financial entity can be wound down lawfully and fairly — policyholders paid in priority, obligations maintained, and the exit certified — rather than simply abandoned.'
+practical_context: 'It begins when a regulator-acknowledged run-off authorisation is granted and runs for the whole run-off period, with the industry regulator, governing board, operations function, and product management all involved.'
+worked_example:
+  agent_type: human
+  narrative: 'Once the regulator grants the run-off authorisation, the governing board oversees the transition to the statutory accounting basis while the operations function adjudicates and pays policyholder claims and product management handles the run-off portfolio, until the certifications allow the authorisation to be surrendered.'

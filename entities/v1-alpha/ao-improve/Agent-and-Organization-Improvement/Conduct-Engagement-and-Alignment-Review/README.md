@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ao-impr
 
 This is a **Business Process** (level L2), named **Conduct Engagement and Alignment Review**, currently **candidate (yellow)**. It is part of the **Agent Development and Organization Improvement** process context, domain `ao`, lifecycle stage Improve. Its canonical ID is `processes:process-ao-improve-edjyha`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process periodically checks that the enterprise's agents remain engaged in their work and aligned with the direction the organization has set. Evidence is gathered and reviewed, and the findings are written up. Those findings then flow into the workforce planning cycle, flagging where engagement or alignment needs attention.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists to catch disengagement or drift from organizational direction before it shows up as attrition or poor performance, keeping the workforce connected to where the enterprise is heading.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs on a periodic cadence while the organization is in operation, led by the organization design authority whenever fresh evidence is needed that agents stay engaged and aligned.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Ahead of the next planning cycle, the organization design authority reviews the latest engagement evidence across teams and artificial-agent operations, notes where alignment to the current direction is weakening, and commits the findings for workforce planning to act on.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Conduct Engagement and Alignment Review L2 process within the processes:pc-ao-improve-qkmh6b Cell Charter … |
+| `plain_language_name` | string | no | Conduct an Engagement and Alignment Review |
+| `plain_language_description` | string | no | This process periodically checks that the enterprise's agents remain engaged in their work and aligned with the … |
+| `business_purpose` | string | no | It exists to catch disengagement or drift from organizational direction before it shows up as attrition or poor … |
+| `practical_context` | string | no | Runs on a periodic cadence while the organization is in operation, led by the organization design authority whenever … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

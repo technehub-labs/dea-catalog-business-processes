@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-sd-oper
 
 This is a **Business Process** (level L2), named **Steer Initiative Portfolio**, currently **candidate (yellow)**. It is part of the **Strategic Steering Operation** process context, domain `sd`, lifecycle stage Operate. Its canonical ID is `processes:process-sd-operate-u6xgu5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Initiatives in flight rarely behave exactly as planned, and this work keeps them pointed the right way. The strategy function watches where initiatives drift against strategic performance and commits rebalancing decisions at each review cycle to correct the course. The initiative portfolio is thereby steered continuously rather than revisited only when something breaks.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It keeps the delivery machinery aligned with strategy: rebalancing decisions at each review cycle pull drifting initiatives back toward the intent they were created to serve.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs whenever in-flight initiatives drift against strategic performance, with the strategy function committing rebalancing decisions as a standing item at each review cycle.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Seeing one initiative lag and another outrun its brief, the strategy function commits a rebalancing decision at the review cycle, shifting support from the lagging work to the work that is proving out. The decision is recorded and the initiative owners are briefed.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Steer Initiative Portfolio L2 process within the processes:pc-sd-operate-5cs5ee Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Steer Initiative Portfolio |
+| `plain_language_description` | string | no | Initiatives in flight rarely behave exactly as planned, and this work keeps them pointed the right way. The strategy … |
+| `business_purpose` | string | no | It keeps the delivery machinery aligned with strategy: rebalancing decisions at each review cycle pull drifting … |
+| `practical_context` | string | no | Runs whenever in-flight initiatives drift against strategic performance, with the strategy function committing … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

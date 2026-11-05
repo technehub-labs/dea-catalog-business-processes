@@ -188,3 +188,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Conduct a regulated workforce wind-down under statutory mass-layoff, consultation, notice, severance, and transition-support obligations within the …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Conduct Regulated Workforce Wind-Down'
+plain_language_description: 'This process handles a large-scale workforce reduction, such as a mass layoff, the decommissioning of an agent unit, or the winding down of an organizational unit, under the statutory rules such events trigger. Statutory advance notice is served, worker-representative consultation is carried out and documented, and fair-selection criteria are applied and recorded. Notice pay, severance, and benefits continuation are funded and recorded, and transition supports such as dislocated-worker referral, retraining, and health-care continuation are routed to everyone affected.'
+business_purpose: 'It exists to reduce the workforce at scale lawfully and humanely, meeting every statutory notice, consultation, and payment obligation while supporting affected people into what comes next.'
+practical_context: 'Encountered when a regulated wind-down event is authorized and the size and nature of the employment reduction triggers statutory advance-notice and consultation duties; the governing board, workforce management, and the operations function all take part.'
+worked_example:
+  agent_type: human
+  narrative: 'When the governing board authorizes closing a large business unit, workforce management serves the statutory notice on affected workers, their representatives, and the required authorities, runs the documented consultation, applies the recorded fair-selection criteria, and routes severance, benefits continuation, and retraining referrals to everyone affected.'

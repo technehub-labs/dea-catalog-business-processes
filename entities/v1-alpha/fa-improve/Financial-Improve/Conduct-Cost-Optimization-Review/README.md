@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-fa-impr
 
 This is a **Business Process** (level L2), named **Conduct Cost Optimization Review**, currently **candidate (yellow)**. It is part of the **Finance and Financial Control Improvement** process context, domain `fa`, lifecycle stage Improve. Its canonical ID is `processes:process-fa-improve-emqpgr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When cost signals, margin pressure, or control findings suggest the financial side could be run better, this process takes a structured look at costs. The finance design authority conducts the review and commits what it finds. The findings then point the way to stronger reporting, disclosure, and financial controls in the next planning cycle.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The review exists to convert concern about costs and margins into committed findings that the next planning cycle can act on.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It is triggered when cost signals, margin pressure, or control findings indicate the monetary position, reporting, or financial controls need strengthening, and the finance design authority conducts the review.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* After margin pressure shows up in the numbers, the finance design authority conducts the cost optimization review, commits the findings, and feeds them into the next planning cycle so reporting, disclosure, and financial controls can be strengthened.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Conduct Cost Optimization Review L2 process within the processes:pc-fa-improve-haqf4w Cell Charter. See … |
+| `plain_language_name` | string | no | Conduct Cost Optimization Review |
+| `plain_language_description` | string | no | When cost signals, margin pressure, or control findings suggest the financial side could be run better, this process … |
+| `business_purpose` | string | no | The review exists to convert concern about costs and margins into committed findings that the next planning cycle can … |
+| `practical_context` | string | no | It is triggered when cost signals, margin pressure, or control findings indicate the monetary position, reporting, or … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

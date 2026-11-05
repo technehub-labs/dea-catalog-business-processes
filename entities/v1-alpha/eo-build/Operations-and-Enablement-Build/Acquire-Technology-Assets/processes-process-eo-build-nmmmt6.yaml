@@ -137,3 +137,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Acquire Technology Assets L2 process within the processes:pc-eo-build-zwkhxc Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Acquire Technology Assets'
+plain_language_description: 'This is the buying and installing work that turns a platform design into real equipment. Hardware and software are purchased, delivered, installed and commissioned so they are ready to carry operational workloads. It kicks in once the platform architecture has been designed and the shopping list is firm.'
+business_purpose: 'It exists because a designed platform serves no one until the hardware and software behind it have been bought, installed and brought into working order.'
+practical_context: 'Comes into play during the build stage that follows platform design, when the architecture calls for procured and installed hardware and software. Product management steers the acquisitions under the Enablement & Operations Process Owner.'
+worked_example:
+  agent_type: human
+  narrative: 'A product manager works through the agreed platform architecture, raises the orders for the hardware and software on it, and follows delivery, installation and commissioning until the equipment is signed off as ready for operational workloads.'

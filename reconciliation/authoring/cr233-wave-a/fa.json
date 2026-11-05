@@ -1,0 +1,222 @@
+{
+  "processes:process-fa-activate-bzfywk": {
+    "plain_language_name": "Activate Billing Capability",
+    "plain_language_description": "This process takes a billing or revenue-recognition capability that has cleared its regulatory approvals and makes it officially live, so the first invoices or revenue entries can be raised. The Finance & Accounting Process Owner confirms that the pricing or tariff approval is on file, that safeguards such as segregation of duties, an audit trail, and reconciliation are running, and that the supervisor with continuing oversight is formally engaged. Only once the regulator's acknowledgement is recorded does the capability move from approved on paper to actually operating.",
+    "business_purpose": "It exists so no organisation bills customers or books revenue under a regulated framework before the regulator has formally acknowledged it, keeping the pricing approval and the operational safeguards intact from the first transaction.",
+    "practical_context": "Triggered whenever a regulated billing or revenue-recognition capability is ready to go live — for example an insurance accounting transition or a utility rate taking effect — with the supervising authority, audit function, and operations function brought in alongside the process owner.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "When an insurer's new revenue-recognition framework receives its regulator's acknowledgement, the Finance & Accounting Process Owner brings in the supervising authority and the audit function to confirm the tariff approval is filed and that segregation-of-duties, audit trail, and reconciliation controls are running before the first live invoices are released."
+    }
+  },
+  "processes:process-fa-build-92v24c": {
+    "plain_language_name": "Build Budgeting and Forecasting Systems",
+    "plain_language_description": "When a new planning cycle is coming up or the budget tooling needs a rebuild, the finance function puts the budgeting and forecasting systems in place. The work covers building the planning models, wiring up the integrations that feed them, and putting the necessary controls around them. Once the work is finished, the systems are ready to carry the organisation's budgeting.",
+    "business_purpose": "It gives the organisation working budgeting and forecasting systems, so plans and forecasts can be produced reliably every cycle instead of being assembled by hand.",
+    "practical_context": "The work starts when a planning cycle is scoped or a budget tool rebuild is agreed, and the finance function carries it through ahead of the next budgeting round.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Ahead of next year's planning round, the finance function scopes the rebuild, assembles the forecasting models, connects them to the feeds they depend on, and signs off the controls so planning can run on the new setup."
+    }
+  },
+  "processes:process-fa-build-d5kb5m": {
+    "plain_language_name": "Implement Financial Systems and Ledger",
+    "plain_language_description": "Whenever a financial system build or change is initiated, this process stands up the systems and the ledger that finance will run on. It sets out the chart of accounts, puts the posting rules in place, and deploys the reports that accountants rely on. When the work is done, the general ledger is ready to operate.",
+    "business_purpose": "It gives the enterprise a functioning general ledger and the systems around it, so every financial transaction has a defined home and the numbers taken from the ledger are consistent.",
+    "practical_context": "It is triggered when a financial system build or change is initiated, and the finance function does the implementation before general ledger operations begin.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "When a financial system change is initiated, the finance function configures the chart of accounts, agrees the posting rules, and deploys the standard reports so the ledger can take live transactions."
+    }
+  },
+  "processes:process-fa-build-ucfjgt": {
+    "plain_language_name": "Onboard Tax and Compliance Capability",
+    "plain_language_description": "When the organisation becomes subject to a new tax jurisdiction or compliance regime, this process gets the tax and compliance capability up and running. It puts the required filings and registrations in place and sets up the controls that keep them working. The capability it delivers then supports tax planning, with the tax policy review keeping oversight.",
+    "business_purpose": "It ensures the organisation never meets a new tax obligation unprepared: filings, registrations, and controls are operational before the regime starts to bite.",
+    "practical_context": "It is triggered when a new tax jurisdiction or compliance regime applies, and the finance function onboards the capability while the tax policy review supervises the result.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "After the organisation starts operating under a new tax jurisdiction, the finance function completes the registrations, sets up the recurring filings, and puts the supporting controls in place so tax planning can proceed under the tax policy review."
+    }
+  },
+  "processes:process-fa-build-ydnzjc": {
+    "plain_language_name": "Secure Funding Facilities",
+    "plain_language_description": "This process puts the money and the machinery of finance in place. It secures the committed funding lines the financial plan calls for, stands up the finance function that will run the numbers, and gets the ERP finance module deployed. With those three things delivered, the organisation is ready to start running its finances day to day.",
+    "business_purpose": "Committed funding lines, a staffed finance function, and a deployed ERP finance module are the prerequisites for operating; this process turns all three from plan into reality.",
+    "practical_context": "It comes into play once the designed financial plan structure requires committed funding lines, a stood-up finance function, and a deployed ERP finance module, and the finance function carries the work through.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "With the financial plan in place, the finance function commits the funding lines the plan calls for, staffs and organises the finance function, and completes the ERP finance module deployment so routine finance work can begin."
+    }
+  },
+  "processes:process-fa-conceive-4uqqvg": {
+    "plain_language_name": "Frame Finance Strategy",
+    "plain_language_description": "This is the work of deciding, at the top of the house, how the enterprise will approach its money. The finance function and the strategy function frame the finance strategy together, settling what the monetary model will be and how funding and capital will be handled. The agreed strategy is then committed and becomes the reference point for the financial planning that follows.",
+    "business_purpose": "It exists so the enterprise meets funding and capital decisions with one agreed finance strategy rather than by improvisation, giving every later financial plan a settled monetary model and funding approach to build on.",
+    "practical_context": "It is triggered when the enterprise establishes a new monetary model, reframes an existing one, or responds to funding and capital shifts, and the finance and strategy functions lead the framing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "When funding and capital conditions shift, the strategy function and the finance function meet to reframe the finance strategy, agree the monetary model, and commit the funding and capital approach that will steer the next round of financial planning."
+    }
+  },
+  "processes:process-fa-design-uun4ja": {
+    "plain_language_name": "Design Financial Controls and Policies",
+    "plain_language_description": "When a gap in financial controls or policies is identified, this process fills the gap on paper before anything is implemented. The finance design authority works out what the control or policy should say and how it fits the approved financial architecture. What comes out is a policy framework that is ready to be put into practice.",
+    "business_purpose": "It exists so financial safeguards are designed deliberately against the approved financial architecture, giving implementation teams a sound policy framework instead of leaving controls to be patched later.",
+    "practical_context": "It starts whenever a control or policy gap is identified, and the finance design authority does the design work within the approved financial architecture.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "After a review highlights a missing control around expense approvals, the finance design authority drafts the policy, aligns it with the approved financial architecture, and hands the finished framework over for implementation."
+    }
+  },
+  "processes:process-fa-design-vk422z": {
+    "plain_language_name": "Design Financial Plan Structure",
+    "plain_language_description": "This process turns the committed finance strategy into a concrete financial plan structure. The finance design authority lays out the chart of accounts, sets the cost allocation model, and works up the financial controls the plan needs. The completed structure is committed and clears the way for the build work that follows.",
+    "business_purpose": "It gives the finance strategy an implementable shape — a chart of accounts, a cost allocation model, and financial controls designs — so the build stage knows exactly what to construct.",
+    "practical_context": "The work begins once the framed finance strategy requires a bounded chart of accounts, cost allocation model, and financial controls designs, and the finance design authority carries out the design.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "With the finance strategy freshly committed, the finance design authority maps the chart of accounts, sets the cost allocation model, and specifies the financial controls, then commits the structure for the build stage to pick up."
+    }
+  },
+  "processes:process-fa-design-ds4drw": {
+    "plain_language_name": "Design Tax Position and Strategy",
+    "plain_language_description": "When a new tax exposure appears or a jurisdiction's rules change, this process decides where the organisation stands and how it will respond. The finance design authority documents the organisation's tax positions and shapes the strategy around them. The documented positions and strategy then feed the ongoing tax planning work.",
+    "business_purpose": "It keeps the organisation deliberate about tax: rather than reacting filing by filing, tax planning follows documented positions and a designed strategy.",
+    "practical_context": "It is triggered when a new tax exposure or jurisdictional change emerges, and the finance design authority designs the positions and strategy and documents them.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "When a jurisdictional change alters the organisation's tax exposure, the finance design authority documents the affected positions, adjusts the tax strategy, and passes both to tax planning."
+    }
+  },
+  "processes:process-fa-design-k5sgfa": {
+    "plain_language_name": "Design Treasury and Funding Model",
+    "plain_language_description": "This process works out how the enterprise will manage its cash and fund itself. Prompted by a review of treasury policy or funding posture, the finance design authority designs the treasury and funding model, bringing cash, liquidity, and funding policy into one coordinated picture. The designed model then steers how treasury operations are run.",
+    "business_purpose": "It gives treasury operations a designed model to follow, so cash, liquidity, and funding decisions are coordinated by policy rather than made case by case.",
+    "practical_context": "It is carried out when treasury policy or the funding posture is reviewed, with the finance design authority doing the design work.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "During a review of the funding posture, the finance design authority reworks the treasury and funding model, aligning cash, liquidity, and funding policy so treasury operations have a coherent design to run against."
+    }
+  },
+  "processes:process-fa-improve-emqpgr": {
+    "plain_language_name": "Conduct Cost Optimization Review",
+    "plain_language_description": "When cost signals, margin pressure, or control findings suggest the financial side could be run better, this process takes a structured look at costs. The finance design authority conducts the review and commits what it finds. The findings then point the way to stronger reporting, disclosure, and financial controls in the next planning cycle.",
+    "business_purpose": "The review exists to convert concern about costs and margins into committed findings that the next planning cycle can act on.",
+    "practical_context": "It is triggered when cost signals, margin pressure, or control findings indicate the monetary position, reporting, or financial controls need strengthening, and the finance design authority conducts the review.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "After margin pressure shows up in the numbers, the finance design authority conducts the cost optimization review, commits the findings, and feeds them into the next planning cycle so reporting, disclosure, and financial controls can be strengthened."
+    }
+  },
+  "processes:process-fa-improve-2kemkq": {
+    "plain_language_name": "Evolve Treasury and Funding Model",
+    "plain_language_description": "Markets move and funding conditions shift, and when they do this process brings the treasury and funding model back into line. The finance design authority takes the market shifts and the exposure review into account and reworks the model. The evolved model is then monitored as the reference for the organisation's future funding posture.",
+    "business_purpose": "A treasury model designed once does not stay right forever; this process keeps it current with market reality so funding decisions rest on an up-to-date posture.",
+    "practical_context": "It is triggered by a market or funding posture change, and the finance design authority evolves the model on the strength of the shifts and the exposure review.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "When market conditions change the organisation's funding posture, the finance design authority reviews the exposures, updates the treasury and funding model, and sets the monitoring that will track the new posture going forward."
+    }
+  },
+  "processes:process-fa-improve-cdtsbq": {
+    "plain_language_name": "Refine Financial Controls and Policies",
+    "plain_language_description": "Audit findings and control incidents are the raw material for this process. When one surfaces, the finance design authority works through what went wrong and refines the financial controls and policies in response. Changes are taken through the policy review cycle, so the refinements are properly governed rather than slipped in on the side.",
+    "business_purpose": "It turns audit findings and control incidents into lasting improvements in financial controls and policies, closing the gap between what went wrong and what the rules say.",
+    "practical_context": "It is triggered when an audit finding or control incident surfaces, and the finance design authority refines the controls and policies through the policy review cycle.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "After an audit finding highlights a weak approval control, the finance design authority refines the affected policy and control and takes the change through the policy review cycle before it takes effect."
+    }
+  },
+  "processes:process-fa-operate-zpmxzp": {
+    "plain_language_name": "Execute Payroll",
+    "plain_language_description": "Every payroll cycle, this process pays people. It issues the compensation owed, applies the withholdings that must be taken, and produces the statutory filings that go with each cycle. Run well it is invisible; run late or wrong, everyone notices.",
+    "business_purpose": "It exists so people are paid the right amount on time every cycle, with the required withholdings taken and the statutory filings produced as expected.",
+    "practical_context": "The work runs at each payroll cycle boundary, with the compliance function seeing that compensation, withholdings, and statutory filings are produced every time.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "When the payroll cycle boundary is reached, the compliance function checks the compensation figures, confirms the withholdings, and completes the statutory filings so everyone is paid correctly for the period."
+    }
+  },
+  "processes:process-fa-operate-2pmqb2": {
+    "plain_language_name": "Manage Cash and Liquidity",
+    "plain_language_description": "This process keeps track of the enterprise's cash and makes sure there is enough of it when it is needed. Whenever a cash position or liquidity event comes up, positions are checked, forecasts are updated, and investment decisions are weighed against the treasury policy. The result is cash that is visible today and covered for tomorrow.",
+    "business_purpose": "It exists so the enterprise always knows how much cash it holds, can see what is coming, and keeps its investment decisions inside the treasury policy.",
+    "practical_context": "It is triggered whenever a cash position or liquidity event occurs, and the compliance function monitors positions, forecasts, and investment decisions against the treasury policy.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "When an unexpected liquidity event lands, the compliance function checks the current cash position, refreshes the forecast, and confirms that any investment decision stays within the treasury policy."
+    }
+  },
+  "processes:process-fa-operate-8vqvkk": {
+    "plain_language_name": "Manage Tax Compliance and Filings",
+    "plain_language_description": "This process is what keeps the organisation's tax returns and filings on time and in order. As each filing due date approaches, returns are prepared, payments are scheduled, and tax exposures are monitored. The compliance function owns the routine so that nothing slips through.",
+    "business_purpose": "It exists so tax obligations are met reliably: returns prepared, payments scheduled, and exposures watched, with no missed due dates and no surprises.",
+    "practical_context": "It is triggered whenever a tax return or filing due date is reached, and the compliance function manages the preparation, the scheduling, and the exposure monitoring.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "With a filing due date approaching, the compliance function prepares the return, schedules the payment, and updates the exposure monitoring before the deadline passes."
+    }
+  },
+  "processes:process-fa-operate-ycba3k": {
+    "plain_language_name": "Operate Financial Reporting and Disclosure",
+    "plain_language_description": "When a reporting or disclosure milestone arrives, this process produces the financial statements and the supporting narrative that go with it. Statements are drawn up, footnotes written, and disclosures assembled for delivery. The finished package reaches internal and external stakeholders alike, all reading from the same numbers.",
+    "business_purpose": "It exists so everyone entitled to the organisation's financial results, inside and outside, receives complete statements, footnotes, and disclosures at each milestone.",
+    "practical_context": "It runs whenever a reporting or disclosure milestone arrives, with the compliance function producing the statements, footnotes, and disclosures for internal and external stakeholders.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "As the reporting milestone arrives, the compliance function finalises the statements, completes the footnotes, and assembles the disclosures for delivery to internal and external stakeholders."
+    }
+  },
+  "processes:process-fa-operate-g9zpnq": {
+    "plain_language_name": "Operate General Ledger",
+    "plain_language_description": "Once the finance capability is built, this process is where the books are actually kept. The general ledger runs in steady state, with accounts payable, accounts receivable, treasury, tax compliance, financial close, and reporting all executed to the period plan. It is routine finance, kept running period after period.",
+    "business_purpose": "It exists to keep the enterprise's accounting engine running: every financial thread passes through the ledger and lands where the period plan says it should.",
+    "practical_context": "It applies once the built finance capability is in active operation and steady-state accounting, treasury, tax compliance, financial close, and reporting are needed; the compliance function keeps the ledger running to the period plan.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "In an ordinary month the compliance function keeps the general ledger turning: payables and receivables posted, treasury and tax compliance handled, and the close and reporting executed to the period plan."
+    }
+  },
+  "processes:process-fa-operate-4xn4d6": {
+    "plain_language_name": "Perform Financial Close",
+    "plain_language_description": "When a period close boundary is reached, this process shuts the books for the period. Period-end entries are posted, accounts are reconciled, and the management reports that depend on a closed period are produced. What comes out feeds straight into reporting.",
+    "business_purpose": "It exists so each period ends with a clean, reconciled set of books, giving reporting numbers that can be trusted.",
+    "practical_context": "It runs at every period close boundary, with the compliance function producing the period-end entries, reconciliations, and management reports.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "When the period close boundary arrives, the compliance function posts the period-end entries, works through the reconciliations, and produces the management reports that reporting depends on."
+    }
+  },
+  "processes:process-fa-operate-wkqaqp": {
+    "plain_language_name": "Run Accounts Payable",
+    "plain_language_description": "This process is how the organisation pays its bills. As invoices and their payment due dates arrive, invoices are matched, approvals are recorded, and payments are produced to plan. Kept to plan, suppliers are paid what they are owed when they are owed it.",
+    "business_purpose": "It exists to pay suppliers accurately and on schedule, with every invoice matched and approved before money leaves the organisation.",
+    "practical_context": "It runs whenever an invoice or payment due date arrives, with the compliance function matching invoices, recording approvals, and producing payments to plan.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "When an invoice arrives and its due date approaches, the compliance function matches it, records the approval, and includes it in the payment run produced to plan."
+    }
+  },
+  "processes:process-fa-operate-sdppmp": {
+    "plain_language_name": "Run Accounts Receivable",
+    "plain_language_description": "This process is how the organisation collects the money it is owed. Customer invoices go out, collections are managed, and the cash that comes back is applied to the ledger. Each customer invoice or collection event sets the routine in motion.",
+    "business_purpose": "It exists so that sales become cash: invoices are issued, collections are managed actively, and received money is applied to the ledger without delay.",
+    "practical_context": "It runs whenever a customer invoice or collection event is due, with the compliance function issuing invoices, managing collections, and applying cash to the ledger.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "When a customer invoice falls due, the compliance function issues or chases it, manages the collection through to payment, and applies the cash received to the ledger."
+    }
+  },
+  "processes:process-fa-retire-wkbrsa": {
+    "plain_language_name": "Conclude a Regulated Run-Off",
+    "plain_language_description": "When a regulator authorises a financial entity such as an insurer to wind down, this process carries the run-off through to its conclusion. The entity moves onto a statutory accounting basis, policyholder claims are adjudicated and paid with policyholder priority respected, and reserving, capital adequacy, and asset-liability matching are maintained along the way. The run-off ends with the authorisation surrendered or the portfolio transferred and the closing certifications obtained, under the controlling regulator's supervision throughout.",
+    "business_purpose": "It exists so a regulated financial entity can be wound down lawfully and fairly — policyholders paid in priority, obligations maintained, and the exit certified — rather than simply abandoned.",
+    "practical_context": "It begins when a regulator-acknowledged run-off authorisation is granted and runs for the whole run-off period, with the industry regulator, governing board, operations function, and product management all involved.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Once the regulator grants the run-off authorisation, the governing board oversees the transition to the statutory accounting basis while the operations function adjudicates and pays policyholder claims and product management handles the run-off portfolio, until the certifications allow the authorisation to be surrendered."
+    }
+  }
+}

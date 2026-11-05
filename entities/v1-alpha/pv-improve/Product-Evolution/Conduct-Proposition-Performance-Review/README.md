@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pv-impr
 
 This is a **Business Process** (level L2), named **Conduct Proposition Performance Review**, currently **candidate (yellow)**. It is part of the **Product Evolution and Portfolio Rationalization** process context, domain `pv`, lifecycle stage Improve. Its canonical ID is `processes:process-pv-improve-27r7r7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This work takes a hard look at how the propositions and the portfolio around them are actually performing. Product management gathers the performance signals, spots the gaps in the portfolio, and works out which propositions need attention. Its findings are committed so that product evolution and portfolio rationalization decisions rest on evidence.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It supplies the evidence behind product change: without a regular, honest review of how propositions perform, evolution and rationalization decisions would be guesses rather than informed choices.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Comes around whenever performance signals, portfolio gaps, or rationalization needs prompt a review, typically on a recurring cycle led by product management; the committed findings feed the next planning cycle.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Product management assembles the performance signals for each proposition, walks through them in the review meeting, and records where the portfolio has gaps or weak spots. The committed findings go to the teams planning product evolution and rationalization.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Conduct Proposition Performance Review L2 process within the processes:pc-pv-improve-wpyfx7 Cell Charter … |
+| `plain_language_name` | string | no | Conduct Proposition Performance Review |
+| `plain_language_description` | string | no | This work takes a hard look at how the propositions and the portfolio around them are actually performing. Product … |
+| `business_purpose` | string | no | It supplies the evidence behind product change: without a regular, honest review of how propositions perform, evolution … |
+| `practical_context` | string | no | Comes around whenever performance signals, portfolio gaps, or rationalization needs prompt a review, typically on a … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-fa-oper
 
 This is a **Business Process** (level L2), named **Perform Financial Close**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. Its canonical ID is `processes:process-fa-operate-4xn4d6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When a period close boundary is reached, this process shuts the books for the period. Period-end entries are posted, accounts are reconciled, and the management reports that depend on a closed period are produced. What comes out feeds straight into reporting.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so each period ends with a clean, reconciled set of books, giving reporting numbers that can be trusted.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs at every period close boundary, with the compliance function producing the period-end entries, reconciliations, and management reports.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* When the period close boundary arrives, the compliance function posts the period-end entries, works through the reconciliations, and produces the management reports that reporting depends on.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Perform Financial Close (operate stage, core process). Landed by CR-BP-21e.1 from the FinanceAndAccounting register v2. |
+| `plain_language_name` | string | no | Perform Financial Close |
+| `plain_language_description` | string | no | When a period close boundary is reached, this process shuts the books for the period. Period-end entries are posted … |
+| `business_purpose` | string | no | It exists so each period ends with a clean, reconciled set of books, giving reporting numbers that can be trusted. |
+| `practical_context` | string | no | It runs at every period close boundary, with the compliance function producing the period-end entries, reconciliations … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

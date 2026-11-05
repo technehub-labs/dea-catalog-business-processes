@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-buil
 
 This is a **Business Process** (level L2), named **Commission Production Line**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. Its canonical ID is `processes:process-eo-build-awy8dz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process takes a production line from installed equipment to a line that actually runs. The equipment is set up and commissioned, and the line is then exercised at a trial rate to prove it works end to end. Once the trial run holds up, the line is ready to step up from test production to full rate.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the operations model gets a proven working line rather than just installed machinery, able to move from trial production to full-rate output with confidence.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Faced whenever the designed operations model calls for a production line that does not exist yet, and a stand-up is needed before the line can produce at rate. Product management steers the commissioning under the Enablement & Operations Process Owner.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product manager watches the first trial shifts as the newly commissioned line runs at low speed, signs off the equipment checks once output looks stable, and clears the line to step up to full-rate production.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Commission Production Line L2 process within the processes:pc-eo-build-zwkhxc Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Commission Production Line |
+| `plain_language_description` | string | no | This process takes a production line from installed equipment to a line that actually runs. The equipment is set up and … |
+| `business_purpose` | string | no | It exists so the operations model gets a proven working line rather than just installed machinery, able to move from … |
+| `practical_context` | string | no | Faced whenever the designed operations model calls for a production line that does not exist yet, and a stand-up is … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

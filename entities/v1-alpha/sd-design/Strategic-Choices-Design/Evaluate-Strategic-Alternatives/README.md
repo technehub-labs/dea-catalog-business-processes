@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-sd-desi
 
 This is a **Business Process** (level L2), named **Evaluate Strategic Alternatives**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. Its canonical ID is `processes:process-sd-design-ed7jd5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With several designed options on the table, this work works out which one the enterprise should back. The strategy function compares the alternatives against the objectives and targets, and checks how each fits the designed scenarios. The evaluation ends with the preferred option committed.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It forces an explicit choice: comparing alternatives against objectives, targets, and scenario fit means the enterprise commits to a preferred path for stated reasons rather than by momentum.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs after option and scenario design, when the strategy function must compare and choose ahead of plan construction; the preferred option feeds directly into the plan build.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function scores each designed option against the objectives and targets, walks the scenarios to see how each holds up, and recommends the strongest. The preferred option is committed and becomes the basis of the plan.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Evaluate Strategic Alternatives L2 process within the processes:pc-sd-design-g3es76 Cell Charter. See … |
+| `plain_language_name` | string | no | Evaluate Strategic Alternatives |
+| `plain_language_description` | string | no | With several designed options on the table, this work works out which one the enterprise should back. The strategy … |
+| `business_purpose` | string | no | It forces an explicit choice: comparing alternatives against objectives, targets, and scenario fit means the enterprise … |
+| `practical_context` | string | no | Runs after option and scenario design, when the strategy function must compare and choose ahead of plan construction … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

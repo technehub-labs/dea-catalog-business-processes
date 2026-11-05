@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pr-reti
 
 This is a **Business Process** (level L2), named **Close Enterprise Relationship**, currently **candidate (yellow)**. It is part of the **Enterprise Relationship Close-Out** process context, domain `pr`, lifecycle stage Retire. Its canonical ID is `processes:process-pr-retire-bd3asa`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When a contract with a customer, supplier, or partner reaches its end, whether by expiry, termination, or a regulated offboarding requirement, the leaving has to be done properly. This work settles what is still owed in both directions, offboards the party from systems and access, and sorts out who keeps which records and rights. Everything is closed with evidence, so nothing is left hanging.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It ends relationships cleanly, so obligations are fulfilled or settled, records and rights are resolved, and neither side carries unresolved liabilities forward.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered at a relationship's agreed or mandated end, such as contract expiry, termination, or a regulated offboarding: customer relationship management handles customer exits, supplier and partner management the supply side, under the governing board's oversight.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* When a supplier contract expires without renewal, supplier and partner management settles the final invoices, revokes access and hands back the records, and files the close-out evidence for the governing board.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Close out an enterprise relationship with a customer, supplier or partner: settle the contract, offboard the party, and … |
+| `plain_language_name` | string | no | Close Enterprise Relationship |
+| `plain_language_description` | string | no | When a contract with a customer, supplier, or partner reaches its end, whether by expiry, termination, or a regulated … |
+| `business_purpose` | string | no | It ends relationships cleanly, so obligations are fulfilled or settled, records and rights are resolved, and neither … |
+| `practical_context` | string | no | Encountered at a relationship's agreed or mandated end, such as contract expiry, termination, or a regulated … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

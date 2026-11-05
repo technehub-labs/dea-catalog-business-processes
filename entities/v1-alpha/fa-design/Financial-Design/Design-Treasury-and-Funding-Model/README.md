@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-fa-desi
 
 This is a **Business Process** (level L2), named **Design Treasury and Funding Model**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. Its canonical ID is `processes:process-fa-design-k5sgfa`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process works out how the enterprise will manage its cash and fund itself. Prompted by a review of treasury policy or funding posture, the finance design authority designs the treasury and funding model, bringing cash, liquidity, and funding policy into one coordinated picture. The designed model then steers how treasury operations are run.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives treasury operations a designed model to follow, so cash, liquidity, and funding decisions are coordinated by policy rather than made case by case.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It is carried out when treasury policy or the funding posture is reviewed, with the finance design authority doing the design work.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* During a review of the funding posture, the finance design authority reworks the treasury and funding model, aligning cash, liquidity, and funding policy so treasury operations have a coherent design to run against.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Design Treasury and Funding Model (design stage, management process). Landed by CR-BP-21e.1 from the … |
+| `plain_language_name` | string | no | Design Treasury and Funding Model |
+| `plain_language_description` | string | no | This process works out how the enterprise will manage its cash and fund itself. Prompted by a review of treasury policy … |
+| `business_purpose` | string | no | It gives treasury operations a designed model to follow, so cash, liquidity, and funding decisions are coordinated by … |
+| `practical_context` | string | no | It is carried out when treasury policy or the funding posture is reviewed, with the finance design authority doing the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -146,3 +146,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Design Agent Topology L2 process within the processes:pc-ao-design-a4hq2r Cell Charter. See trigger and outcome for the bounded work this process …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Design the Agent Topology'
+plain_language_description: 'This process decides where human agents, artificial agents, and hybrid combinations actually sit across the organization. Working from the framed organization model, it places each kind of agent where it does the most good and sets the coordination patterns that let them work together. The finished topology gives acquisition planning a concrete picture of what to acquire.'
+business_purpose: 'It exists to make agent placement a deliberate design decision rather than an accident of procurement, so human and artificial agents complement rather than duplicate each other.'
+practical_context: 'Takes place once the organization model is framed, when the organization design authority must settle human, artificial, and hybrid placement decisions before acquisition planning can begin.'
+worked_example:
+  agent_type: human
+  narrative: 'The organization design authority maps out a new service line, deciding which enquiry handling moves to artificial agents, which judgement-heavy work stays with people, and where hybrid pairings need defined coordination patterns, then hands the topology to acquisition planning.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-sd-desi
 
 This is a **Business Process** (level L2), named **Design Objectives and Targets**, currently **candidate (yellow)**. It is part of the **Strategic Choices Design** process context, domain `sd`, lifecycle stage Design. Its canonical ID is `processes:process-sd-design-vdwkmh`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+A chosen strategic option only becomes manageable once it has measures and owners. This work designs the objectives and targets for the committed option, giving each bounded measures and a named owner so progress can be steered. The result is a set of objectives aligned to the strategic intent and ready to be monitored.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It makes strategy steerable: objectives and targets with measures and owners turn a chosen direction into something whose progress can be watched and corrected.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered once a strategic option has been committed, when the strategy function designs the measures and ownership that make it steerable ahead of plan construction.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function translates the committed option into a handful of objectives, attaches concrete targets and measures to each, and names the owner accountable for every one. The objectives pack then feeds the plan build.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Design Objectives and Targets L2 process within the processes:pc-sd-design-g3es76 Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Design Objectives and Targets |
+| `plain_language_description` | string | no | A chosen strategic option only becomes manageable once it has measures and owners. This work designs the objectives and … |
+| `business_purpose` | string | no | It makes strategy steerable: objectives and targets with measures and owners turn a chosen direction into something … |
+| `practical_context` | string | no | Encountered once a strategic option has been committed, when the strategy function designs the measures and ownership … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

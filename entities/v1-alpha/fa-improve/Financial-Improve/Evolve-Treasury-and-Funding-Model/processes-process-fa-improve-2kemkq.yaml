@@ -137,3 +137,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Evolve Treasury and Funding Model (improve stage, management process). Landed by CR-BP-21e.1 from the FinanceAndAccounting register v2.'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Evolve Treasury and Funding Model'
+plain_language_description: 'Markets move and funding conditions shift, and when they do this process brings the treasury and funding model back into line. The finance design authority takes the market shifts and the exposure review into account and reworks the model. The evolved model is then monitored as the reference for the organisation''s future funding posture.'
+business_purpose: 'A treasury model designed once does not stay right forever; this process keeps it current with market reality so funding decisions rest on an up-to-date posture.'
+practical_context: 'It is triggered by a market or funding posture change, and the finance design authority evolves the model on the strength of the shifts and the exposure review.'
+worked_example:
+  agent_type: human
+  narrative: 'When market conditions change the organisation''s funding posture, the finance design authority reviews the exposures, updates the treasury and funding model, and sets the monitoring that will track the new posture going forward.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ao-buil
 
 This is a **Business Process** (level L2), named **Build Regulated Agent Pool**, currently **candidate (yellow)**. It is part of the **Agent Acquisition and Onboarding** process context, domain `ao`, lifecycle stage Build. Its canonical ID is `processes:process-ao-build-9my4jr`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process creates a pool of candidates for regulator-licensed roles before any of them go live. Each candidate's qualifications are verified against the regulator's licence registry, and fitness-and-propriety attestation, sanctions clearance, background screening, and fitness checks are completed and recorded on the regulated personnel record. Because the screening is done up front, candidates can later be activated into licensed roles without being screened again.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the enterprise always has pre-verified, regulator-ready candidates for licensed roles, cutting the time and risk involved in staffing regulated positions.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Starts when the enterprise decides to source candidates for regulator-licensed roles and must apply regulator-specific screening that differs from its ordinary hiring flow; the governing board is the named actor and stakeholder, with the Agency & Organization Process Owner accountable.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A resourcing specialist building a pipeline for licensed producer roles verifies each candidate's licence in the regulator's registry, completes the fitness-and-propriety attestation and the background and sanctions screening, and records the cleared candidates on the regulated personnel record ready for activation.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Build the regulator-ready licensed-candidate pool under the enterprise regulated-entity approval authority. The trigger … |
+| `plain_language_name` | string | no | Build Regulated Agent Pool |
+| `plain_language_description` | string | no | This process creates a pool of candidates for regulator-licensed roles before any of them go live. Each candidate's … |
+| `business_purpose` | string | no | It exists so the enterprise always has pre-verified, regulator-ready candidates for licensed roles, cutting the time … |
+| `practical_context` | string | no | Starts when the enterprise decides to source candidates for regulator-licensed roles and must apply regulator-specific … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

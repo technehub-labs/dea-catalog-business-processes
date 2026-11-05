@@ -146,3 +146,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Frame Organization and Agent Strategy L2 process within the processes:pc-ao-conceive-wtq4cr Cell Charter. See trigger and outcome for the bounded …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Frame the Organization and Agent Strategy'
+plain_language_description: 'This is the top-level act of deciding how the enterprise will organize its workforce, including where artificial agents fit. It is prompted when a new agentive fabric is being established, an existing one is being reframed, or a shift such as introducing artificial agents into the workforce mix calls for board-level realignment. The output is a committed strategy that bounds agent capacity, the organization model, and the workforce-and-agent mix, ready to steer design work.'
+business_purpose: 'It exists to give the whole organization one coherent direction for its workforce and agent capacity, so every later design, hiring, and deployment decision traces back to a deliberate strategic choice.'
+practical_context: 'Encountered at the start of major organization change, such as establishing a new agentive fabric, reframing an existing one, or responding to substrate shifts that require board-level realignment, with workforce management and the strategy function leading the framing.'
+worked_example:
+  agent_type: human
+  narrative: 'With artificial agents about to enter the workforce mix, the strategy function drafts a new organization and agent strategy, workforce management stress-tests the capacity implications, and the leadership commits the strategy that will steer the next design cycle.'

@@ -141,3 +141,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Design Delivery Model L2 process within the processes:pc-eo-design-kxdfnz Cell Charter. See trigger and outcome for the bounded work this process …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Design Delivery Model'
+plain_language_description: 'Here the broad delivery concept is worked up into an actual design. The operations function specifies how each channel will be configured, the service levels attached to it, and the flows that fulfil orders through those channels. The finished design is what delivery capability planning then works from.'
+business_purpose: 'It converts the conceived delivery model into concrete channel configurations and service levels, giving delivery capability planning something specific to build.'
+practical_context: 'Runs whenever a conceived delivery model is ready to be turned into bounded detail. Operations function staff do the design work, with the Enablement & Operations Process Owner accountable.'
+worked_example:
+  agent_type: human
+  narrative: 'An operations analyst takes the agreed delivery concept and designs each channel in turn, fixing the service levels customers will be promised and mapping the fulfilment flows orders will follow, then hands the design to the capability planners.'

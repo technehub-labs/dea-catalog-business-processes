@@ -134,3 +134,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Design Tax Position and Strategy (design stage, management process). Landed by CR-BP-21e.1 from the FinanceAndAccounting register v2.'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Design Tax Position and Strategy'
+plain_language_description: 'When a new tax exposure appears or a jurisdiction''s rules change, this process decides where the organisation stands and how it will respond. The finance design authority documents the organisation''s tax positions and shapes the strategy around them. The documented positions and strategy then feed the ongoing tax planning work.'
+business_purpose: 'It keeps the organisation deliberate about tax: rather than reacting filing by filing, tax planning follows documented positions and a designed strategy.'
+practical_context: 'It is triggered when a new tax exposure or jurisdictional change emerges, and the finance design authority designs the positions and strategy and documents them.'
+worked_example:
+  agent_type: human
+  narrative: 'When a jurisdictional change alters the organisation''s tax exposure, the finance design authority documents the affected positions, adjusts the tax strategy, and passes both to tax planning.'

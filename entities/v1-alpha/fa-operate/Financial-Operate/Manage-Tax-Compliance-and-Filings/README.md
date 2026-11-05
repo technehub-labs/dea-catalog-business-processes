@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-fa-oper
 
 This is a **Business Process** (level L2), named **Manage Tax Compliance and Filings**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. Its canonical ID is `processes:process-fa-operate-8vqvkk`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process is what keeps the organisation's tax returns and filings on time and in order. As each filing due date approaches, returns are prepared, payments are scheduled, and tax exposures are monitored. The compliance function owns the routine so that nothing slips through.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so tax obligations are met reliably: returns prepared, payments scheduled, and exposures watched, with no missed due dates and no surprises.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It is triggered whenever a tax return or filing due date is reached, and the compliance function manages the preparation, the scheduling, and the exposure monitoring.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* With a filing due date approaching, the compliance function prepares the return, schedules the payment, and updates the exposure monitoring before the deadline passes.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Manage Tax Compliance and Filings (operate stage, management process). Landed by CR-BP-21e.1 from the … |
+| `plain_language_name` | string | no | Manage Tax Compliance and Filings |
+| `plain_language_description` | string | no | This process is what keeps the organisation's tax returns and filings on time and in order. As each filing due date … |
+| `business_purpose` | string | no | It exists so tax obligations are met reliably: returns prepared, payments scheduled, and exposures watched, with no … |
+| `practical_context` | string | no | It is triggered whenever a tax return or filing due date is reached, and the compliance function manages the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

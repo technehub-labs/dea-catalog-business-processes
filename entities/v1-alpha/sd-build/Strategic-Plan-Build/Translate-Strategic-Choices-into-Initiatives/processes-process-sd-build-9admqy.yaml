@@ -135,3 +135,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Translate Strategic Choices into Initiatives L2 process within the processes:pc-sd-build-gmzrrm Cell Charter. See trigger and outcome for the …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Translate Strategic Choices into Initiatives'
+plain_language_description: 'This work converts the agreed strategic direction into named pieces of work. The strategy function takes the choices captured in the plan and roadmap and defines the bounded initiatives that will deliver them, giving each an owner and a place in the sequence. With ownership, sequencing, and resourcing envelopes attached, the choices become work people can actually start.'
+business_purpose: 'It bridges deciding and doing: strategy only changes anything once it is broken into owned, sequenced initiatives, and this work makes that translation deliberate rather than accidental.'
+practical_context: 'Encountered straight after the plan and roadmap are built, when the strategy function turns each strategic choice into a bounded initiative with an owner and a sequence.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function works through the plan''s choices one by one, drafting each as a bounded initiative with a named owner and its slot in the sequence. The initiative list is then handed over for resourcing.'

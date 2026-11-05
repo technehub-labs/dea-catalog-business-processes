@@ -141,3 +141,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Design Packaging and Configuration L2 process within the processes:pc-pv-design-8dhwpn Cell Charter. See trigger and outcome for the bounded work …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Design Packaging and Configuration'
+plain_language_description: 'This work decides how a designed proposition will be packaged and configured for the different market segments it must serve. Product management works out the packaging options and the configuration choices each segment needs, so the same underlying proposition can be offered appropriately to different audiences. The designs are then ready for product development.'
+business_purpose: 'It exists so the offering fits its buyers: segment-appropriate packaging and configuration let one designed proposition serve different markets without being redesigned each time.'
+practical_context: 'Encountered during proposition design, when product management must tailor packaging and configuration to the segments identified in the design; the output feeds straight into product development.'
+worked_example:
+  agent_type: human
+  narrative: 'Product management sketches the packaging tiers for the new offering, a lighter configuration for smaller customers and a fuller one for larger accounts, and checks each against the segment profiles. The agreed options are documented and passed to product development.'

@@ -145,3 +145,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Design Role Catalogue L2 process within the processes:pc-ao-design-a4hq2r Cell Charter. See trigger and outcome for the bounded work this process …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Design the Role Catalogue'
+plain_language_description: 'This process creates the enterprise''s organized list of roles. It groups roles into families, sets the levels within each family, and draws the accountability boundaries between them. The finished catalogue then underpins organization planning and staffing across the business.'
+business_purpose: 'It gives the enterprise a single, structured vocabulary of roles, so positions are defined consistently and accountability is never ambiguous.'
+practical_context: 'Runs when the framed organization model calls for defined role families, levels, and accountability boundaries, led by the organization design authority ahead of organization planning.'
+worked_example:
+  agent_type: human
+  narrative: 'The organization design authority sorts the enterprise''s jobs into clear families, agrees the seniority levels inside each family, and marks where accountability for a domain starts and stops, producing the catalogue that planners and recruiters will work from.'

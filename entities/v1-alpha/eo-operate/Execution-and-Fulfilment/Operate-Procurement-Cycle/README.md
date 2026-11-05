@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-oper
 
 This is a **Business Process** (level L2), named **Operate Procurement Cycle**, currently **candidate (yellow)**. It is part of the **Execution, Technology, and Asset Operation** process context, domain `eo`, lifecycle stage Operate. Its canonical ID is `processes:process-eo-operate-vzcxx7`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process keeps the materials and services the operation needs flowing in. Requests become purchase orders, orders are executed within policy, and what arrives is receipted against them. Run well, it is a steady cycle that means production and delivery never stall for want of something that should have been bought.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists to secure a steady, policy-compliant flow of purchased materials and services so the operation is never held up by missing supplies.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered continuously as buying needs arise across the operation, from routine materials to services. Product management steers the cycle, with purchase orders raised, executed and receipted within policy under the Enablement & Operations Process Owner.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product manager approves a purchase order for materials running low, checks it sits within purchasing policy, and later confirms the receipt so the supplier can be settled against the delivery.
 
 ## 5. Header and Identity Table (generated)
 
@@ -73,6 +73,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Operate Procurement Cycle L2 process within the processes:pc-eo-operate-ydqb96 Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Run the Procurement Cycle |
+| `plain_language_description` | string | no | This process keeps the materials and services the operation needs flowing in. Requests become purchase orders, orders … |
+| `business_purpose` | string | no | It exists to secure a steady, policy-compliant flow of purchased materials and services so the operation is never held … |
+| `practical_context` | string | no | Encountered continuously as buying needs arise across the operation, from routine materials to services. Product … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

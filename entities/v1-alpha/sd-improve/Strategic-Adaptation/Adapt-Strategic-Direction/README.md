@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-sd-impr
 
 This is a **Business Process** (level L2), named **Adapt Strategic Direction**, currently **candidate (yellow)**. It is part of the **Strategic Adaptation** process context, domain `sd`, lifecycle stage Improve. Its canonical ID is `processes:process-sd-improve-9wgvaf`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the evidence says the current course no longer fits, this work changes it deliberately. The strategy function adapts the strategic direction, has the objectives and targets refreshed to match, and carries the lessons of the effectiveness review into the result. The adapted direction is then ready to drive the next planning cycle.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It keeps strategy honest in the face of change: signals and review findings are turned into a revised direction rather than ignored, so the enterprise corrects course while the correction is still affordable.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered when environmental signals, performance monitoring, or an effectiveness review show the direction needs adjusting; the strategy function leads the adaptation ahead of the next planning cycle.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Acting on the effectiveness review findings, the strategy function revises the strategic direction, and the objectives and targets are refreshed to match the new course. The adapted direction is tabled as the starting point of the next planning cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Adapt Strategic Direction L2 process within the processes:pc-sd-improve-ft9k5f Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Adapt Strategic Direction |
+| `plain_language_description` | string | no | When the evidence says the current course no longer fits, this work changes it deliberately. The strategy function … |
+| `business_purpose` | string | no | It keeps strategy honest in the face of change: signals and review findings are turned into a revised direction rather … |
+| `practical_context` | string | no | Encountered when environmental signals, performance monitoring, or an effectiveness review show the direction needs … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

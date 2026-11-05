@@ -143,3 +143,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Conduct Assurance Review (operate stage, standardization process). Landed by CR-BP-21f.1 from the GovernanceAndExistence register v2.'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Conduct Assurance Review'
+plain_language_description: 'Each time an assurance cycle comes round or a review is mandated, this work examines the evidence that things are being done properly. Reviewers compare what is actually happening against the standards, write up what they find, and keep the bar for review quality itself steady. The findings give leadership an honest read on where assurance stands.'
+business_purpose: 'It supplies the repeated, standards-based checking that lets leadership trust the controls and know review quality is being maintained over time.'
+practical_context: 'Encountered whenever an assurance cycle comes due or an audit mandate arrives: the compliance function and risk function gather and measure the evidence, with findings reported to the governing board.'
+worked_example:
+  agent_type: human
+  narrative: 'At the start of the assurance cycle, a compliance function reviewer pulls the evidence pack, measures it against the standards with help from the risk function, and issues the findings report for the governing board.'

@@ -153,3 +153,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Establish Governance Bodies L2 process within the processes:pc-ge-build-52hjrc Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Establish Governance Bodies'
+plain_language_description: 'Once the overall governance design is agreed, the actual boards and committees have to be brought into existence. That means appointing members, giving each body its charter, and agreeing when and how often it meets. The work is done when each body is ready to hold its first scheduled session.'
+business_purpose: 'It converts a paper design of who governs what into real, functioning bodies, so the enterprise has forums where decisions are genuinely made and recorded.'
+practical_context: 'Runs when a governance system design has been committed: the governing board and strategy function charter each new body, name its members, and set its meeting rhythm so it can convene on a regular cycle.'
+worked_example:
+  agent_type: human
+  narrative: 'With the governance design approved, a strategy function lead works through the appointment list, the governing board confirms each new committee''s charter and membership, and calendar invites go out for the bodies'' recurring meetings.'

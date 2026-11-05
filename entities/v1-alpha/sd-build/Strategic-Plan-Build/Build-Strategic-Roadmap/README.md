@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-sd-buil
 
 This is a **Business Process** (level L2), named **Build Strategic Roadmap**, currently **candidate (yellow)**. It is part of the **Strategic Plan Build** process context, domain `sd`, lifecycle stage Build. Its canonical ID is `processes:process-sd-build-7n4prh`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This work lays out the chosen strategy as a sequence the organisation can actually follow. The strategy function orders the initiatives into a sensible flow and anchors the roadmap with milestones so progress can be tracked. The finished roadmap is then ready for the work of translating the choices into owned initiatives.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It makes strategy executable: sequencing initiatives and fixing milestone anchors turns a set of choices into a timed path that delivery teams can plan and report against.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered while the strategic plan is being assembled, once the choices are designed and need sequencing; the strategy function builds the roadmap before initiative translation begins.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* The strategy function lines up the strategic initiatives in delivery order, sets the milestone anchors for each stretch of the roadmap, and checks the sequence hangs together. The roadmap then goes to the teams translating the choices into owned work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Build Strategic Roadmap L2 process within the processes:pc-sd-build-gmzrrm Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Build Strategic Roadmap |
+| `plain_language_description` | string | no | This work lays out the chosen strategy as a sequence the organisation can actually follow. The strategy function orders … |
+| `business_purpose` | string | no | It makes strategy executable: sequencing initiatives and fixing milestone anchors turns a set of choices into a timed … |
+| `practical_context` | string | no | Encountered while the strategic plan is being assembled, once the choices are designed and need sequencing; the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

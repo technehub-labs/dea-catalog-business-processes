@@ -128,3 +128,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Transition a proposition, product or service out of operational service in a controlled manner: withdrawal planning, stakeholder transition, and removal from …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Transition Proposition Out of Service'
+plain_language_description: 'When a proposition has an approved retirement decision, this work withdraws it from service in a controlled way. The proposition design authority plans the withdrawal, moves the affected stakeholders onto whatever replaces the offering, and steps the service out of operational reliance. Anything still owed after the withdrawal is identified and routed onward.'
+business_purpose: 'It makes retirement orderly rather than abrupt: stakeholders are transitioned, reliance is wound down deliberately, and lingering obligations are caught instead of forgotten when the offering switches off.'
+practical_context: 'Encountered once a retirement decision has been approved, with the proposition design authority running the withdrawal plan while affected teams move off the offering; the work continues until residual obligations are routed.'
+worked_example:
+  agent_type: human
+  narrative: 'With retirement approved, the proposition design authority publishes the withdrawal plan, briefs the affected teams on the replacement, and schedules the final switch-off. The obligations that outlive the service are then listed and routed to their owners.'

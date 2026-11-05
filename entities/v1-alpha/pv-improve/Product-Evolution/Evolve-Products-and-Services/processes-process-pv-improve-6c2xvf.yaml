@@ -137,3 +137,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Evolve Products and Services L2 process within the processes:pc-pv-improve-wpyfx7 Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Evolve Products and Services'
+plain_language_description: 'When feedback, competitors, or new technology show that an offering is falling behind, this work carries out the enhancement. Product management scopes bounded enhancements to the products and services, keeping each change aligned with what the performance review found. The offerings come out of it updated and better fitted to the market.'
+business_purpose: 'It keeps the enterprise''s offerings current: rather than letting products drift out of step with the market, this work channels feedback and pressure into planned, contained improvements.'
+practical_context: 'Encountered whenever market feedback, competitive pressure, or technology shifts demand change; product management leads the enhancement work, anchored to the committed findings of the performance review.'
+worked_example:
+  agent_type: human
+  narrative: 'Acting on the review findings, product management scopes a set of enhancements for the underperforming service, agrees the boundaries with the delivery team, and hands over the change list. The updated service then ships with improvements that trace back to the findings.'

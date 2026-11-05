@@ -1,0 +1,252 @@
+{
+  "processes:process-ao-activate-jqxtqn": {
+    "plain_language_name": "Mobilize Licensed Workforce",
+    "plain_language_description": "When a licensed role has been approved for live work, this process moves the individual from approved candidate to active practitioner on the regulated personnel record. Workforce management confirms that the regulator-controlled scope of the role is intact, that the fitness-and-propriety attestation is on file, and that required supervised training is complete. The continuing supervisor is then notified so ongoing supervision starts from day one, and the individual may begin performing live work in the licensed role.",
+    "business_purpose": "It exists so that nobody performs regulated live work before their licence-backed scope, attestations, and supervision arrangements are all in place, protecting the enterprise's standing with its regulator.",
+    "practical_context": "Encountered whenever the enterprise regulated-entity approval authority approves a licensed role for live work, which spans banking controlled functions, healthcare practitioners, licensed professional services, aviation crew, and insurance producers; the Agency & Organization Process Owner is accountable, with workforce management and the supervising authority closely involved.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A workforce management lead receives confirmation that a senior controlled-function appointment has been approved, checks that the fitness-and-propriety attestation and supervised-training record are complete on the personnel file, and activates the notification that places the appointee under the continuing supervisor's oversight before the first day of live work."
+    }
+  },
+  "processes:process-ao-build-w2qurd": {
+    "plain_language_name": "Acquire Agents",
+    "plain_language_description": "This process brings new agents into the organization once the designed structure says how many and what kind are needed. People are recruited and hired through ordinary recruitment, while artificial agents are stood up through model deployment or integration. Everyone acquired is then onboarded and connected into the organization so they are ready to start work.",
+    "business_purpose": "It exists to turn the approved organization design into actual working capacity, so the enterprise has the mix of people and artificial agents it needs in place and ready to operate.",
+    "practical_context": "Runs whenever the designed organization structure calls for additional capacity that must be provisioned, onboarded, and integrated; the governing board is the named actor and stakeholder, with the Agency & Organization Process Owner accountable for the process.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A hiring manager works through an approved staffing request for a new team, runs recruitment for the people roles, and arranges deployment and integration of the artificial agents the design calls for, so that both arrive onboarded and ready before the go-live date."
+    }
+  },
+  "processes:process-ao-build-b38bkg": {
+    "plain_language_name": "Build the Contractor and Partner Agent Pool",
+    "plain_language_description": "When the enterprise cannot meet surge or specialist demand by direct acquisition within the required timeframes, this process stands up a pool of contractors and partner agents instead. Potential sources are vetted before they join the pool, and agreed activation paths are set out so the pool can be brought online quickly. The result is a ready reserve that can be drawn on when demand spikes or niche skills are needed.",
+    "business_purpose": "It gives the enterprise flexible extra capacity that direct acquisition alone cannot provide, shortening the time it takes to respond to surges and specialist needs.",
+    "practical_context": "Comes into play when direct acquisition cannot serve surge or specialist demand within the required timeframes; the governing board is the named actor and stakeholder, with the Agency & Organization Process Owner accountable.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Facing a seasonal workload spike that permanent hiring cannot cover in time, a workforce lead draws on the pre-vetted contractor pool and activates partner agents through the agreed paths, bringing the extra capacity online within days rather than months."
+    }
+  },
+  "processes:process-ao-build-9my4jr": {
+    "plain_language_name": "Build Regulated Agent Pool",
+    "plain_language_description": "This process creates a pool of candidates for regulator-licensed roles before any of them go live. Each candidate's qualifications are verified against the regulator's licence registry, and fitness-and-propriety attestation, sanctions clearance, background screening, and fitness checks are completed and recorded on the regulated personnel record. Because the screening is done up front, candidates can later be activated into licensed roles without being screened again.",
+    "business_purpose": "It exists so the enterprise always has pre-verified, regulator-ready candidates for licensed roles, cutting the time and risk involved in staffing regulated positions.",
+    "practical_context": "Starts when the enterprise decides to source candidates for regulator-licensed roles and must apply regulator-specific screening that differs from its ordinary hiring flow; the governing board is the named actor and stakeholder, with the Agency & Organization Process Owner accountable.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A resourcing specialist building a pipeline for licensed producer roles verifies each candidate's licence in the regulator's registry, completes the fitness-and-propriety attestation and the background and sanctions screening, and records the cleared candidates on the regulated personnel record ready for activation."
+    }
+  },
+  "processes:process-ao-conceive-pnrhem": {
+    "plain_language_name": "Conceive Licensed or Regulated Agent Capacity",
+    "plain_language_description": "When the enterprise decides its future workforce will include regulator-licensed roles, this process works out exactly what regulated capacity is being taken on. It settles how many licensed roles are planned and in which categories, and what supervisor-controlled scope each one carries. The decisions are written up as a regulated-scope declaration, together with the fitness-and-propriety attestation regime and how the personnel record will line up with the regulator's continuing-supervision framework.",
+    "business_purpose": "It forces the organization to be explicit about its licensed-role commitments before any role design or hiring starts, so regulatory expectations are built into capacity plans from the beginning.",
+    "practical_context": "Encountered at strategy-setting time, when workforce management and the strategy function determine that the agent-capacity strategy will include regulator-licensed roles and the regulated scope must be settled before design and build work begins.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "In an annual capacity planning session, the strategy function and workforce management agree that the expansion plan includes a set of licensed advisory roles, then document the count and categories, the supervisory controls for each, and the attestation regime in a declaration that anchors later design work."
+    }
+  },
+  "processes:process-ao-conceive-z6m6p5": {
+    "plain_language_name": "Conceive the Workforce and Agent Mix",
+    "plain_language_description": "This process decides the blend of people and artificial agents the organization will run on, once the organization and agent strategy is committed. It sets the proportions between human and artificial capacity and draws the capacity envelopes that each part of the business can plan against. The agreed mix becomes the reference point for later acquisition and planning decisions.",
+    "business_purpose": "It exists to give the enterprise a deliberate answer to how much of its work is done by people versus artificial agents, instead of letting the balance drift over time.",
+    "practical_context": "Follows commitment of the organization and agent strategy, typically in planning cycles where workforce management and the strategy function need agreed proportions and capacity envelopes to plan against.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "During the yearly planning round, workforce management and the strategy function sketch out how many roles stay human, where artificial agents take over volume work, and the capacity envelopes for each division, then commit the mix to guide hiring and deployment."
+    }
+  },
+  "processes:process-ao-conceive-ruxjvh": {
+    "plain_language_name": "Frame the Organization Model",
+    "plain_language_description": "This process turns strategic direction into the basic shape of the organization before anyone designs concrete roles. It sets the structure principles the enterprise will follow, decides how wide reporting spans should be, and marks where coordination boundaries sit between units. With those in place, role design and structure work have a stable frame to work within.",
+    "business_purpose": "It gives the enterprise a shared, explicit model of how it organizes itself, so later design decisions about roles and structures are consistent rather than ad hoc.",
+    "practical_context": "Runs once the organization and agent strategy is committed, when workforce management and the strategy function need structure principles, reporting spans, and coordination boundaries settled before role design can start.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Ahead of a growth phase, workforce management and the strategy function agree the guiding principles for how teams will be organized, set a limit on how many people report to any one manager, and mark which units need their own coordination boundaries, producing the model that role designers will follow."
+    }
+  },
+  "processes:process-ao-conceive-e3u8s2": {
+    "plain_language_name": "Frame the Organization and Agent Strategy",
+    "plain_language_description": "This is the top-level act of deciding how the enterprise will organize its workforce, including where artificial agents fit. It is prompted when a new agentive fabric is being established, an existing one is being reframed, or a shift such as introducing artificial agents into the workforce mix calls for board-level realignment. The output is a committed strategy that bounds agent capacity, the organization model, and the workforce-and-agent mix, ready to steer design work.",
+    "business_purpose": "It exists to give the whole organization one coherent direction for its workforce and agent capacity, so every later design, hiring, and deployment decision traces back to a deliberate strategic choice.",
+    "practical_context": "Encountered at the start of major organization change, such as establishing a new agentive fabric, reframing an existing one, or responding to substrate shifts that require board-level realignment, with workforce management and the strategy function leading the framing.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "With artificial agents about to enter the workforce mix, the strategy function drafts a new organization and agent strategy, workforce management stress-tests the capacity implications, and the leadership commits the strategy that will steer the next design cycle."
+    }
+  },
+  "processes:process-ao-design-8fzp2b": {
+    "plain_language_name": "Design the Agent Topology",
+    "plain_language_description": "This process decides where human agents, artificial agents, and hybrid combinations actually sit across the organization. Working from the framed organization model, it places each kind of agent where it does the most good and sets the coordination patterns that let them work together. The finished topology gives acquisition planning a concrete picture of what to acquire.",
+    "business_purpose": "It exists to make agent placement a deliberate design decision rather than an accident of procurement, so human and artificial agents complement rather than duplicate each other.",
+    "practical_context": "Takes place once the organization model is framed, when the organization design authority must settle human, artificial, and hybrid placement decisions before acquisition planning can begin.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The organization design authority maps out a new service line, deciding which enquiry handling moves to artificial agents, which judgement-heavy work stays with people, and where hybrid pairings need defined coordination patterns, then hands the topology to acquisition planning."
+    }
+  },
+  "processes:process-ao-design-rve8j5": {
+    "plain_language_name": "Design the Competency Framework",
+    "plain_language_description": "This process defines what good capability looks like across the organization. It sets out the proficiency levels that people and agents progress through and fixes the assessment anchors that distinguish one level from the next. Once in place, the framework becomes the yardstick for spotting capability gaps and planning development.",
+    "business_purpose": "It gives the enterprise a consistent way to describe and measure capability, so hiring, development, and gap analysis all judge performance against the same standard.",
+    "practical_context": "Runs during organization design, when the designed structure calls for defined proficiency levels and assessment anchors; the organization design authority leads it, and the framework then feeds ongoing capability gap monitoring.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "While designing a new operations structure, the organization design authority drafts the proficiency levels for each role family, agrees the assessment anchors that separate one level from the next, and publishes the framework that managers will later use in capability reviews."
+    }
+  },
+  "processes:process-ao-design-7dkbur": {
+    "plain_language_name": "Design the Organization Structure",
+    "plain_language_description": "This process produces the concrete blueprint of how the enterprise will be organized. It works out the authority chains, defines the roles that will exist, and pulls together the role catalogue, competency framework, and agent topology that go with them. The committed design is the package the enterprise then builds its workforce from.",
+    "business_purpose": "It turns strategic intent and the framed organization model into an actionable structure, so accountability, roles, and agent placement are all settled before people and agents are acquired.",
+    "practical_context": "Follows a committed organization and agent strategy, with the organization design authority producing the blueprint during design workstreams ahead of workforce build.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The organization design authority sketches the new division's reporting lines, fixes who holds which decision rights, aligns the role definitions with the competency framework and agent topology, and commits the design for the teams that will staff it."
+    }
+  },
+  "processes:process-ao-design-2fkvhx": {
+    "plain_language_name": "Design the Regulated Role Architecture",
+    "plain_language_description": "When the role catalogue will contain regulator-licensed roles, this process designs those entries so they satisfy the regulator as well as the business. For each licensed role it aligns authority, signing capacity, and scope with the regulator's continuing-supervision framework, and documents the competency regime, the fitness-and-propriety attestation, the supervised-training requirements, and the continuing-supervisor notification path. Done this way, the roles can move into build and activation without being re-scoped.",
+    "business_purpose": "It exists to bake regulatory expectations into licensed roles at design time, so the enterprise does not discover scope problems after people are already in the jobs.",
+    "practical_context": "Encountered when the role catalogue and competency framework are being extended with regulator-licensed roles, with the organization design authority aligning each entry to the regulator's framework before the role enters build and activation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "As the organization design authority adds a new licensed advisory role to the role catalogue, it sets the role's signing authority to match what the regulator's continuing-supervision framework allows and documents the attestation, training, and supervisor-notification arrangements alongside it."
+    }
+  },
+  "processes:process-ao-design-34e95r": {
+    "plain_language_name": "Design the Role Catalogue",
+    "plain_language_description": "This process creates the enterprise's organized list of roles. It groups roles into families, sets the levels within each family, and draws the accountability boundaries between them. The finished catalogue then underpins organization planning and staffing across the business.",
+    "business_purpose": "It gives the enterprise a single, structured vocabulary of roles, so positions are defined consistently and accountability is never ambiguous.",
+    "practical_context": "Runs when the framed organization model calls for defined role families, levels, and accountability boundaries, led by the organization design authority ahead of organization planning.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The organization design authority sorts the enterprise's jobs into clear families, agrees the seniority levels inside each family, and marks where accountability for a domain starts and stops, producing the catalogue that planners and recruiters will work from."
+    }
+  },
+  "processes:process-ao-improve-h3vgyf": {
+    "plain_language_name": "Conduct a Capability Gap Analysis",
+    "plain_language_description": "This process compares the capabilities the enterprise has designed for against the ones its current agents actually show. Shortfalls are identified, sized, and ranked so the most important ones are addressed first. The prioritised findings feed straight into the development plan.",
+    "business_purpose": "It exists to surface, early and honestly, where the workforce's capability falls short of what the organization needs, so development effort goes where it matters most.",
+    "practical_context": "Encountered whenever the competency framework must be checked against the current agent population, typically in review cycles run by the organization design authority whose output feeds the development plan.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "In a quarterly capability review, the organization design authority rates the current agent population against the competency framework's levels, identifies where key skills fall short, and hands a prioritised gap list to the owners of the development plan."
+    }
+  },
+  "processes:process-ao-improve-edjyha": {
+    "plain_language_name": "Conduct an Engagement and Alignment Review",
+    "plain_language_description": "This process periodically checks that the enterprise's agents remain engaged in their work and aligned with the direction the organization has set. Evidence is gathered and reviewed, and the findings are written up. Those findings then flow into the workforce planning cycle, flagging where engagement or alignment needs attention.",
+    "business_purpose": "It exists to catch disengagement or drift from organizational direction before it shows up as attrition or poor performance, keeping the workforce connected to where the enterprise is heading.",
+    "practical_context": "Runs on a periodic cadence while the organization is in operation, led by the organization design authority whenever fresh evidence is needed that agents stay engaged and aligned.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Ahead of the next planning cycle, the organization design authority reviews the latest engagement evidence across teams and artificial-agent operations, notes where alignment to the current direction is weakening, and commits the findings for workforce planning to act on."
+    }
+  },
+  "processes:process-ao-improve-xfh8na": {
+    "plain_language_name": "Develop Agents and the Organization",
+    "plain_language_description": "This process is the umbrella for improving both the agents and the organization itself when reviews show a need. It draws together engagement and alignment findings, capability gap analysis, structure reorganization, and agent performance improvement into one development effort. The work is carried out the same way whether the agents are people or artificial, and its results feed the next planning cycle.",
+    "business_purpose": "It exists to make improvement of the workforce and the organization deliberate and connected, so signals from reviews translate into concrete development rather than scattered fixes.",
+    "practical_context": "Triggered when engagement signals, capability gaps, or structure reorganization requirements show that agents or the organization itself need to improve, with the organization design authority steering the development effort.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "After a review highlights both a skills shortfall and an engagement dip, the organization design authority brings the capability gap analysis, the engagement findings, and a proposed reorganization into one development programme for the affected teams."
+    }
+  },
+  "processes:process-ao-improve-qqxe4d": {
+    "plain_language_name": "Improve Regulated Workforce Capability",
+    "plain_language_description": "This process keeps people in regulator-licensed roles competent over time. It runs the regulator-mandated continuing-competence cycles, including annual fit-and-proper re-assessments, recurrent and continuing training, and any mandated remediation programmes, and records each completion on the regulated personnel record. The continuing supervisor is notified as the cycles complete, keeping the regulator's supervision arrangements current.",
+    "business_purpose": "It exists so licensed staff stay within their regulator's competence expectations throughout their time in the role, protecting both the individuals and the enterprise's regulatory standing.",
+    "practical_context": "Encountered on the regulator's continuing-competence cycle or whenever a remediation requirement lands, with the organization design authority overseeing cycles that must align to the regulator's framework before being recorded on the personnel record.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "When the annual fit-and-proper re-assessment window opens, the organization design authority tracks each licensed role holder through the mandated training and assessment, records the completions on their regulated personnel record, and notifies the continuing supervisor."
+    }
+  },
+  "processes:process-ao-improve-xs59e2": {
+    "plain_language_name": "Restructure the Organization",
+    "plain_language_description": "This process carries out structural change when review findings or a change of direction call for it. It sequences the transition so units, roles, and reporting lines move in a controlled order, and it records who hands over which accountabilities along the way. The reorganization stays aligned to the organization plan throughout.",
+    "business_purpose": "It exists to reshape the organization deliberately rather than chaotically, so structural change lands without leaving gaps in accountability or disrupting operations.",
+    "practical_context": "Encountered when review findings or direction changes require structural change, led by the organization design authority with transition sequencing and accountability handovers planned before moves begin.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Following a review that recommended merging two support units, the organization design authority sequences the merger step by step, sets the date each accountability handover happens, and records the transitions so nothing falls between the cracks."
+    }
+  },
+  "processes:process-ao-operate-bd7mef": {
+    "plain_language_name": "Coordinate Collaboration",
+    "plain_language_description": "This process keeps agents and teams working coherently once they are in service. It provides the shared workspaces they need and sets the interaction norms for how they engage with each other. With those in place, joint work across people and artificial agents proceeds without constant case-by-case negotiation.",
+    "business_purpose": "It exists so cooperation across the workforce is structured rather than improvised, letting mixed teams of people and artificial agents deliver together reliably.",
+    "practical_context": "Encountered day to day in service operations whenever agents and teams need shared workspaces and interaction norms, with workforce management keeping those arrangements current.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "When a new mixed team of staff and artificial agents forms around a busy service queue, workforce management sets up their shared workspace and agrees the interaction norms for handoffs, so work moves between people and agents without friction."
+    }
+  },
+  "processes:process-ao-operate-g4wp63": {
+    "plain_language_name": "Run Agent Performance",
+    "plain_language_description": "This process is the steady-state running of the workforce once agents are onboarded and in active operation. It covers coordination and collaboration, time and attendance, compensation, and learning and development, applied consistently however the work is done. The aim is that every agent, human or artificial, is supported and productive in day-to-day service.",
+    "business_purpose": "It exists to keep the whole agentive workforce performing reliably in service, by running the everyday operations that performance depends on.",
+    "practical_context": "Runs continuously once onboarded agents are in active operation across the organization, with workforce management responsible for the steady-state performance, coordination, compensation, and learning operations.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "In any given week, workforce management runs the routines that keep the workforce operating: coordinating collaboration across teams, processing time and attendance records, keeping compensation flowing, and scheduling development sessions."
+    }
+  },
+  "processes:process-ao-operate-87q5mk": {
+    "plain_language_name": "Run Learning and Development",
+    "plain_language_description": "This process delivers the enterprise's development programmes to agents in service on a scheduled basis. Sessions and programmes run to plan, and each agent's completion is recorded as they finish. That record shows at a glance who has completed what.",
+    "business_purpose": "It exists to make sure development actually reaches the workforce on schedule and that completion is evidenced per agent rather than merely promised.",
+    "practical_context": "Runs whenever development programmes are due for delivery to agents in service, with workforce management scheduling the sessions and recording completion per agent.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "At the start of a new training quarter, workforce management publishes the schedule of development programmes, agents attend their assigned sessions, and each completion is logged against the individual's record as they finish."
+    }
+  },
+  "processes:process-ao-operate-38qyc6": {
+    "plain_language_name": "Run Payroll and Benefits",
+    "plain_language_description": "This process pays the workforce. Each cycle, it disburses pay and benefits accurately and on time and completes the statutory filings that go with them. Done reliably, it keeps the workforce's trust and keeps the enterprise on top of its filing obligations.",
+    "business_purpose": "It exists to make sure every agent in service is paid correctly and on time, with the required statutory filings made, cycle after cycle.",
+    "practical_context": "Runs on a regular pay-cycle cadence for all agents in service, with workforce management responsible for accurate, on-time disbursement and the statutory filings each cycle.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "At the end of the pay period, workforce management reconciles the attendance data against pay records, runs the disbursement so everyone is paid accurately and on time, and completes the statutory filings the cycle requires."
+    }
+  },
+  "processes:process-ao-operate-ba8scr": {
+    "plain_language_name": "Run Regulated Performance Oversight",
+    "plain_language_description": "This process maintains the compliance side of running regulator-licensed roles once they are live. It keeps continuing-supervisor notifications, conduct-rule compliance, annual fitness-and-propriety attestations, hours-of-work and rest-rule adherence, and continuing-competence tracking up to date on the regulated personnel record. The evidence stays current and auditable for as long as the roles are in live operation.",
+    "business_purpose": "It exists so the enterprise can demonstrate at any time that its licensed roles are being operated within the regulator's continuing requirements.",
+    "practical_context": "Runs throughout the live operation period of regulator-licensed roles, with workforce management maintaining the notification, attestation, and tracking obligations on the regulated personnel record.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Partway through the first year in which a controlled-function appointee went live, workforce management confirms the annual fitness-and-propriety attestation is filed, checks the hours-of-work and rest-rule records, and refreshes the continuing-competence tracking on the personnel record."
+    }
+  },
+  "processes:process-ao-operate-dg9q4h": {
+    "plain_language_name": "Run Time and Attendance",
+    "plain_language_description": "This process captures when and how much the workforce works, accurately and every day. Exceptions such as missing records or unusual hours are spotted and handled rather than left to accumulate. The clean attendance data then feeds payroll so people are paid for the time they actually worked.",
+    "business_purpose": "It exists to keep an accurate, exception-free record of working time, because payroll execution and workforce planning both depend on it.",
+    "practical_context": "Runs continuously across service delivery, with workforce management handling daily capture and exception resolution so the data is ready to feed payroll execution.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "During a normal week, workforce management reviews the captured time records, chases the few exceptions such as a missing clock-in or an unapproved overtime entry, and clears them before the payroll cut-off."
+    }
+  },
+  "processes:process-ao-retire-g3eyr8": {
+    "plain_language_name": "Conduct Regulated Workforce Wind-Down",
+    "plain_language_description": "This process handles a large-scale workforce reduction, such as a mass layoff, the decommissioning of an agent unit, or the winding down of an organizational unit, under the statutory rules such events trigger. Statutory advance notice is served, worker-representative consultation is carried out and documented, and fair-selection criteria are applied and recorded. Notice pay, severance, and benefits continuation are funded and recorded, and transition supports such as dislocated-worker referral, retraining, and health-care continuation are routed to everyone affected.",
+    "business_purpose": "It exists to reduce the workforce at scale lawfully and humanely, meeting every statutory notice, consultation, and payment obligation while supporting affected people into what comes next.",
+    "practical_context": "Encountered when a regulated wind-down event is authorized and the size and nature of the employment reduction triggers statutory advance-notice and consultation duties; the governing board, workforce management, and the operations function all take part.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "When the governing board authorizes closing a large business unit, workforce management serves the statutory notice on affected workers, their representatives, and the required authorities, runs the documented consultation, applies the recorded fair-selection criteria, and routes severance, benefits continuation, and retraining referrals to everyone affected."
+    }
+  }
+}

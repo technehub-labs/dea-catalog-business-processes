@@ -140,3 +140,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Improve Policy and Control Framework (improve stage, standardization process). Landed by CR-BP-21f.1 from the GovernanceAndExistence register v2.'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Improve Policy and Control Framework'
+plain_language_description: 'When audits turn up weaknesses or policies fall short of practice, this work closes the loop. The teams measure where the gaps are, revise the standards and controls that need tightening, and track whether the overall compliance position actually gets stronger. It is how the rulebook keeps pace with reality.'
+business_purpose: 'It keeps policies and controls fit for purpose, so weaknesses found in audits translate into firmer standards instead of recurring problems.'
+practical_context: 'Surfaces whenever audit findings or policy gaps appear: the audit function raises what it found, and the strategy function measures the gaps and updates the standards until the compliance posture is stronger.'
+worked_example:
+  agent_type: human
+  narrative: 'After an audit flags inconsistent approvals, the audit function walks the strategy function through the findings, the gaps are measured against the standards, and the affected controls are tightened and reissued.'

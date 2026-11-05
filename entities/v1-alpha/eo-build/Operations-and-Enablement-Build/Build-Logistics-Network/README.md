@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-buil
 
 This is a **Business Process** (level L2), named **Build Logistics Network**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. Its canonical ID is `processes:process-eo-build-ba6ykz`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process puts the physical delivery network in place before any goods move. Network nodes are established, carriers are brought on under contract, and warehouse capacity is secured so that the routes designed on paper can actually carry deliveries. It closes with a network ready to execute delivery flows.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a designed routing plan is only a diagram until the nodes, carrier contracts and warehouse capacity behind it are physically in place.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered while a delivery capability is being built, once the routing design has settled what nodes, carriers and warehouse capacity are required. Product management drives the contracting and setup under the Enablement & Operations Process Owner.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product manager shortlists carriers against the designed routes, signs the transport contracts, and confirms warehouse capacity at each network node so the first delivery flows have somewhere to run.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Build Logistics Network L2 process within the processes:pc-eo-build-zwkhxc Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Build Logistics Network |
+| `plain_language_description` | string | no | This process puts the physical delivery network in place before any goods move. Network nodes are established, carriers … |
+| `business_purpose` | string | no | It exists because a designed routing plan is only a diagram until the nodes, carrier contracts and warehouse capacity … |
+| `practical_context` | string | no | Encountered while a delivery capability is being built, once the routing design has settled what nodes, carriers and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

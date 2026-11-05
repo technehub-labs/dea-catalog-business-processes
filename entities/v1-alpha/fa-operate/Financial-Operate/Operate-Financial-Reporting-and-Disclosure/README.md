@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-fa-oper
 
 This is a **Business Process** (level L2), named **Operate Financial Reporting and Disclosure**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. Its canonical ID is `processes:process-fa-operate-ycba3k`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When a reporting or disclosure milestone arrives, this process produces the financial statements and the supporting narrative that go with it. Statements are drawn up, footnotes written, and disclosures assembled for delivery. The finished package reaches internal and external stakeholders alike, all reading from the same numbers.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so everyone entitled to the organisation's financial results, inside and outside, receives complete statements, footnotes, and disclosures at each milestone.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It runs whenever a reporting or disclosure milestone arrives, with the compliance function producing the statements, footnotes, and disclosures for internal and external stakeholders.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* As the reporting milestone arrives, the compliance function finalises the statements, completes the footnotes, and assembles the disclosures for delivery to internal and external stakeholders.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate Financial Reporting and Disclosure (operate stage, core process). Landed by CR-BP-21e.1 from the … |
+| `plain_language_name` | string | no | Operate Financial Reporting and Disclosure |
+| `plain_language_description` | string | no | When a reporting or disclosure milestone arrives, this process produces the financial statements and the supporting … |
+| `business_purpose` | string | no | It exists so everyone entitled to the organisation's financial results, inside and outside, receives complete … |
+| `practical_context` | string | no | It runs whenever a reporting or disclosure milestone arrives, with the compliance function producing the statements … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

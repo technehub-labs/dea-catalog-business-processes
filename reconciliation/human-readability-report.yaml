@@ -1,16 +1,15 @@
 gate: HUM-001..007 (CR-BP-232)
 records_checked: 3723
-findings_total: 18615
+findings_total: 17890
 findings_by_rule:
-  HUM-001: 3723
-  HUM-002: 3723
-  HUM-003: 3723
-  HUM-004: 3723
-  HUM-006: 3723
+  HUM-001: 3578
+  HUM-002: 3578
+  HUM-003: 3578
+  HUM-004: 3578
+  HUM-006: 3578
 findings_by_level:
   L4: 14500
   L3: 2900
-  L2: 725
   L1: 245
   L0: 245
 posture: advisory (blocks under --strict; flips blocking at wave closure CR-BP-236,
@@ -497,26 +496,6 @@ findings:
   level: L3
   diagnostic: '`worked_example` not authored'
 - rule: HUM-001
-  record_id: processes:process-ao-activate-jqxtqn
-  level: L2
-  diagnostic: '`plain_language_name` not authored'
-- rule: HUM-002
-  record_id: processes:process-ao-activate-jqxtqn
-  level: L2
-  diagnostic: '`plain_language_description` not authored'
-- rule: HUM-003
-  record_id: processes:process-ao-activate-jqxtqn
-  level: L2
-  diagnostic: '`business_purpose` not authored'
-- rule: HUM-004
-  record_id: processes:process-ao-activate-jqxtqn
-  level: L2
-  diagnostic: '`practical_context` not authored'
-- rule: HUM-006
-  record_id: processes:process-ao-activate-jqxtqn
-  level: L2
-  diagnostic: '`worked_example` not authored'
-- rule: HUM-001
   record_id: processes:group-ao-activate-jjx738
   level: L1
   diagnostic: '`plain_language_name` not authored'
@@ -1037,26 +1016,6 @@ findings:
   level: L3
   diagnostic: '`worked_example` not authored'
 - rule: HUM-001
-  record_id: processes:process-ao-build-w2qurd
-  level: L2
-  diagnostic: '`plain_language_name` not authored'
-- rule: HUM-002
-  record_id: processes:process-ao-build-w2qurd
-  level: L2
-  diagnostic: '`plain_language_description` not authored'
-- rule: HUM-003
-  record_id: processes:process-ao-build-w2qurd
-  level: L2
-  diagnostic: '`business_purpose` not authored'
-- rule: HUM-004
-  record_id: processes:process-ao-build-w2qurd
-  level: L2
-  diagnostic: '`practical_context` not authored'
-- rule: HUM-006
-  record_id: processes:process-ao-build-w2qurd
-  level: L2
-  diagnostic: '`worked_example` not authored'
-- rule: HUM-001
   record_id: processes:task-ao-build-record-8jdc4m
   level: L4
   diagnostic: '`plain_language_name` not authored'
@@ -1537,26 +1496,6 @@ findings:
   level: L3
   diagnostic: '`worked_example` not authored'
 - rule: HUM-001
-  record_id: processes:process-ao-build-b38bkg
-  level: L2
-  diagnostic: '`plain_language_name` not authored'
-- rule: HUM-002
-  record_id: processes:process-ao-build-b38bkg
-  level: L2
-  diagnostic: '`plain_language_description` not authored'
-- rule: HUM-003
-  record_id: processes:process-ao-build-b38bkg
-  level: L2
-  diagnostic: '`business_purpose` not authored'
-- rule: HUM-004
-  record_id: processes:process-ao-build-b38bkg
-  level: L2
-  diagnostic: '`practical_context` not authored'
-- rule: HUM-006
-  record_id: processes:process-ao-build-b38bkg
-  level: L2
-  diagnostic: '`worked_example` not authored'
-- rule: HUM-001
   record_id: processes:task-ao-build-record-ae9wh9
   level: L4
   diagnostic: '`plain_language_name` not authored'
@@ -2035,26 +1974,6 @@ findings:
 - rule: HUM-006
   record_id: processes:activity-ao-build-q7m3k9
   level: L3
-  diagnostic: '`worked_example` not authored'
-- rule: HUM-001
-  record_id: processes:process-ao-build-9my4jr
-  level: L2
-  diagnostic: '`plain_language_name` not authored'
-- rule: HUM-002
-  record_id: processes:process-ao-build-9my4jr
-  level: L2
-  diagnostic: '`plain_language_description` not authored'
-- rule: HUM-003
-  record_id: processes:process-ao-build-9my4jr
-  level: L2
-  diagnostic: '`business_purpose` not authored'
-- rule: HUM-004
-  record_id: processes:process-ao-build-9my4jr
-  level: L2
-  diagnostic: '`practical_context` not authored'
-- rule: HUM-006
-  record_id: processes:process-ao-build-9my4jr
-  level: L2
   diagnostic: '`worked_example` not authored'
 - rule: HUM-001
   record_id: processes:group-ao-build-m6fmyx
@@ -2577,26 +2496,6 @@ findings:
   level: L3
   diagnostic: '`worked_example` not authored'
 - rule: HUM-001
-  record_id: processes:process-ao-conceive-pnrhem
-  level: L2
-  diagnostic: '`plain_language_name` not authored'
-- rule: HUM-002
-  record_id: processes:process-ao-conceive-pnrhem
-  level: L2
-  diagnostic: '`plain_language_description` not authored'
-- rule: HUM-003
-  record_id: processes:process-ao-conceive-pnrhem
-  level: L2
-  diagnostic: '`business_purpose` not authored'
-- rule: HUM-004
-  record_id: processes:process-ao-conceive-pnrhem
-  level: L2
-  diagnostic: '`practical_context` not authored'
-- rule: HUM-006
-  record_id: processes:process-ao-conceive-pnrhem
-  level: L2
-  diagnostic: '`worked_example` not authored'
-- rule: HUM-001
   record_id: processes:task-ao-conceive-record-4npvpq
   level: L4
   diagnostic: '`plain_language_name` not authored'
@@ -3075,26 +2974,6 @@ findings:
 - rule: HUM-006
   record_id: processes:activity-ao-conceive-73s2vm
   level: L3
-  diagnostic: '`worked_example` not authored'
-- rule: HUM-001
-  record_id: processes:process-ao-conceive-z6m6p5
-  level: L2
-  diagnostic: '`plain_language_name` not authored'
-- rule: HUM-002
-  record_id: processes:process-ao-conceive-z6m6p5
-  level: L2
-  diagnostic: '`plain_language_description` not authored'
-- rule: HUM-003
-  record_id: processes:process-ao-conceive-z6m6p5
-  level: L2
-  diagnostic: '`business_purpose` not authored'
-- rule: HUM-004
-  record_id: processes:process-ao-conceive-z6m6p5
-  level: L2
-  diagnostic: '`practical_context` not authored'
-- rule: HUM-006
-  record_id: processes:process-ao-conceive-z6m6p5
-  level: L2
   diagnostic: '`worked_example` not authored'
 - rule: HUM-001
   record_id: processes:task-ao-conceive-record-35mq4u
@@ -3577,26 +3456,6 @@ findings:
   level: L3
   diagnostic: '`worked_example` not authored'
 - rule: HUM-001
-  record_id: processes:process-ao-conceive-ruxjvh
-  level: L2
-  diagnostic: '`plain_language_name` not authored'
-- rule: HUM-002
-  record_id: processes:process-ao-conceive-ruxjvh
-  level: L2
-  diagnostic: '`plain_language_description` not authored'
-- rule: HUM-003
-  record_id: processes:process-ao-conceive-ruxjvh
-  level: L2
-  diagnostic: '`business_purpose` not authored'
-- rule: HUM-004
-  record_id: processes:process-ao-conceive-ruxjvh
-  level: L2
-  diagnostic: '`practical_context` not authored'
-- rule: HUM-006
-  record_id: processes:process-ao-conceive-ruxjvh
-  level: L2
-  diagnostic: '`worked_example` not authored'
-- rule: HUM-001
   record_id: processes:task-ao-conceive-record-64h33j
   level: L4
   diagnostic: '`plain_language_name` not authored'
@@ -4075,26 +3934,6 @@ findings:
 - rule: HUM-006
   record_id: processes:activity-ao-conceive-fyb9vc
   level: L3
-  diagnostic: '`worked_example` not authored'
-- rule: HUM-001
-  record_id: processes:process-ao-conceive-e3u8s2
-  level: L2
-  diagnostic: '`plain_language_name` not authored'
-- rule: HUM-002
-  record_id: processes:process-ao-conceive-e3u8s2
-  level: L2
-  diagnostic: '`plain_language_description` not authored'
-- rule: HUM-003
-  record_id: processes:process-ao-conceive-e3u8s2
-  level: L2
-  diagnostic: '`business_purpose` not authored'
-- rule: HUM-004
-  record_id: processes:process-ao-conceive-e3u8s2
-  level: L2
-  diagnostic: '`practical_context` not authored'
-- rule: HUM-006
-  record_id: processes:process-ao-conceive-e3u8s2
-  level: L2
   diagnostic: '`worked_example` not authored'
 - rule: HUM-001
   record_id: processes:group-ao-conceive-bwjhgd
@@ -4617,26 +4456,6 @@ findings:
   level: L3
   diagnostic: '`worked_example` not authored'
 - rule: HUM-001
-  record_id: processes:process-ao-design-8fzp2b
-  level: L2
-  diagnostic: '`plain_language_name` not authored'
-- rule: HUM-002
-  record_id: processes:process-ao-design-8fzp2b
-  level: L2
-  diagnostic: '`plain_language_description` not authored'
-- rule: HUM-003
-  record_id: processes:process-ao-design-8fzp2b
-  level: L2
-  diagnostic: '`business_purpose` not authored'
-- rule: HUM-004
-  record_id: processes:process-ao-design-8fzp2b
-  level: L2
-  diagnostic: '`practical_context` not authored'
-- rule: HUM-006
-  record_id: processes:process-ao-design-8fzp2b
-  level: L2
-  diagnostic: '`worked_example` not authored'
-- rule: HUM-001
   record_id: processes:task-ao-design-record-bn4ud5
   level: L4
   diagnostic: '`plain_language_name` not authored'
@@ -5115,26 +4934,6 @@ findings:
 - rule: HUM-006
   record_id: processes:activity-ao-design-e63vge
   level: L3
-  diagnostic: '`worked_example` not authored'
-- rule: HUM-001
-  record_id: processes:process-ao-design-rve8j5
-  level: L2
-  diagnostic: '`plain_language_name` not authored'
-- rule: HUM-002
-  record_id: processes:process-ao-design-rve8j5
-  level: L2
-  diagnostic: '`plain_language_description` not authored'
-- rule: HUM-003
-  record_id: processes:process-ao-design-rve8j5
-  level: L2
-  diagnostic: '`business_purpose` not authored'
-- rule: HUM-004
-  record_id: processes:process-ao-design-rve8j5
-  level: L2
-  diagnostic: '`practical_context` not authored'
-- rule: HUM-006
-  record_id: processes:process-ao-design-rve8j5
-  level: L2
   diagnostic: '`worked_example` not authored'
 - rule: HUM-001
   record_id: processes:task-ao-design-record-n46zr7
@@ -5617,26 +5416,6 @@ findings:
   level: L3
   diagnostic: '`worked_example` not authored'
 - rule: HUM-001
-  record_id: processes:process-ao-design-7dkbur
-  level: L2
-  diagnostic: '`plain_language_name` not authored'
-- rule: HUM-002
-  record_id: processes:process-ao-design-7dkbur
-  level: L2
-  diagnostic: '`plain_language_description` not authored'
-- rule: HUM-003
-  record_id: processes:process-ao-design-7dkbur
-  level: L2
-  diagnostic: '`business_purpose` not authored'
-- rule: HUM-004
-  record_id: processes:process-ao-design-7dkbur
-  level: L2
-  diagnostic: '`practical_context` not authored'
-- rule: HUM-006
-  record_id: processes:process-ao-design-7dkbur
-  level: L2
-  diagnostic: '`worked_example` not authored'
-- rule: HUM-001
   record_id: processes:task-ao-design-record-uj2gvu
   level: L4
   diagnostic: '`plain_language_name` not authored'
@@ -6117,26 +5896,6 @@ findings:
   level: L3
   diagnostic: '`worked_example` not authored'
 - rule: HUM-001
-  record_id: processes:process-ao-design-2fkvhx
-  level: L2
-  diagnostic: '`plain_language_name` not authored'
-- rule: HUM-002
-  record_id: processes:process-ao-design-2fkvhx
-  level: L2
-  diagnostic: '`plain_language_description` not authored'
-- rule: HUM-003
-  record_id: processes:process-ao-design-2fkvhx
-  level: L2
-  diagnostic: '`business_purpose` not authored'
-- rule: HUM-004
-  record_id: processes:process-ao-design-2fkvhx
-  level: L2
-  diagnostic: '`practical_context` not authored'
-- rule: HUM-006
-  record_id: processes:process-ao-design-2fkvhx
-  level: L2
-  diagnostic: '`worked_example` not authored'
-- rule: HUM-001
   record_id: processes:task-ao-design-record-d4f56k
   level: L4
   diagnostic: '`plain_language_name` not authored'
@@ -6615,26 +6374,6 @@ findings:
 - rule: HUM-006
   record_id: processes:activity-ao-design-txkve5
   level: L3
-  diagnostic: '`worked_example` not authored'
-- rule: HUM-001
-  record_id: processes:process-ao-design-34e95r
-  level: L2
-  diagnostic: '`plain_language_name` not authored'
-- rule: HUM-002
-  record_id: processes:process-ao-design-34e95r
-  level: L2
-  diagnostic: '`plain_language_description` not authored'
-- rule: HUM-003
-  record_id: processes:process-ao-design-34e95r
-  level: L2
-  diagnostic: '`business_purpose` not authored'
-- rule: HUM-004
-  record_id: processes:process-ao-design-34e95r
-  level: L2
-  diagnostic: '`practical_context` not authored'
-- rule: HUM-006
-  record_id: processes:process-ao-design-34e95r
-  level: L2
   diagnostic: '`worked_example` not authored'
 - rule: HUM-001
   record_id: processes:group-ao-design-pjrfr9
@@ -7157,26 +6896,6 @@ findings:
   level: L3
   diagnostic: '`worked_example` not authored'
 - rule: HUM-001
-  record_id: processes:process-ao-improve-h3vgyf
-  level: L2
-  diagnostic: '`plain_language_name` not authored'
-- rule: HUM-002
-  record_id: processes:process-ao-improve-h3vgyf
-  level: L2
-  diagnostic: '`plain_language_description` not authored'
-- rule: HUM-003
-  record_id: processes:process-ao-improve-h3vgyf
-  level: L2
-  diagnostic: '`business_purpose` not authored'
-- rule: HUM-004
-  record_id: processes:process-ao-improve-h3vgyf
-  level: L2
-  diagnostic: '`practical_context` not authored'
-- rule: HUM-006
-  record_id: processes:process-ao-improve-h3vgyf
-  level: L2
-  diagnostic: '`worked_example` not authored'
-- rule: HUM-001
   record_id: processes:task-ao-improve-record-rngcnt
   level: L4
   diagnostic: '`plain_language_name` not authored'
@@ -7657,26 +7376,6 @@ findings:
   level: L3
   diagnostic: '`worked_example` not authored'
 - rule: HUM-001
-  record_id: processes:process-ao-improve-edjyha
-  level: L2
-  diagnostic: '`plain_language_name` not authored'
-- rule: HUM-002
-  record_id: processes:process-ao-improve-edjyha
-  level: L2
-  diagnostic: '`plain_language_description` not authored'
-- rule: HUM-003
-  record_id: processes:process-ao-improve-edjyha
-  level: L2
-  diagnostic: '`business_purpose` not authored'
-- rule: HUM-004
-  record_id: processes:process-ao-improve-edjyha
-  level: L2
-  diagnostic: '`practical_context` not authored'
-- rule: HUM-006
-  record_id: processes:process-ao-improve-edjyha
-  level: L2
-  diagnostic: '`worked_example` not authored'
-- rule: HUM-001
   record_id: processes:task-ao-improve-record-veznhx
   level: L4
   diagnostic: '`plain_language_name` not authored'
@@ -8016,4 +7715,304 @@ findings:
   record_id: processes:task-ao-improve-verify-utajp3
   level: L4
   diagnostic: '`worked_example` not authored'
-truncated: 16615
+- rule: HUM-001
+  record_id: processes:activity-ao-improve-eq6pbr
+  level: L3
+  diagnostic: '`plain_language_name` not authored'
+- rule: HUM-002
+  record_id: processes:activity-ao-improve-eq6pbr
+  level: L3
+  diagnostic: '`plain_language_description` not authored'
+- rule: HUM-003
+  record_id: processes:activity-ao-improve-eq6pbr
+  level: L3
+  diagnostic: '`business_purpose` not authored'
+- rule: HUM-004
+  record_id: processes:activity-ao-improve-eq6pbr
+  level: L3
+  diagnostic: '`practical_context` not authored'
+- rule: HUM-006
+  record_id: processes:activity-ao-improve-eq6pbr
+  level: L3
+  diagnostic: '`worked_example` not authored'
+- rule: HUM-001
+  record_id: processes:task-ao-improve-record-yurkk9
+  level: L4
+  diagnostic: '`plain_language_name` not authored'
+- rule: HUM-002
+  record_id: processes:task-ao-improve-record-yurkk9
+  level: L4
+  diagnostic: '`plain_language_description` not authored'
+- rule: HUM-003
+  record_id: processes:task-ao-improve-record-yurkk9
+  level: L4
+  diagnostic: '`business_purpose` not authored'
+- rule: HUM-004
+  record_id: processes:task-ao-improve-record-yurkk9
+  level: L4
+  diagnostic: '`practical_context` not authored'
+- rule: HUM-006
+  record_id: processes:task-ao-improve-record-yurkk9
+  level: L4
+  diagnostic: '`worked_example` not authored'
+- rule: HUM-001
+  record_id: processes:task-ao-improve-confirm-yr75z3
+  level: L4
+  diagnostic: '`plain_language_name` not authored'
+- rule: HUM-002
+  record_id: processes:task-ao-improve-confirm-yr75z3
+  level: L4
+  diagnostic: '`plain_language_description` not authored'
+- rule: HUM-003
+  record_id: processes:task-ao-improve-confirm-yr75z3
+  level: L4
+  diagnostic: '`business_purpose` not authored'
+- rule: HUM-004
+  record_id: processes:task-ao-improve-confirm-yr75z3
+  level: L4
+  diagnostic: '`practical_context` not authored'
+- rule: HUM-006
+  record_id: processes:task-ao-improve-confirm-yr75z3
+  level: L4
+  diagnostic: '`worked_example` not authored'
+- rule: HUM-001
+  record_id: processes:task-ao-improve-intake-8amy9h
+  level: L4
+  diagnostic: '`plain_language_name` not authored'
+- rule: HUM-002
+  record_id: processes:task-ao-improve-intake-8amy9h
+  level: L4
+  diagnostic: '`plain_language_description` not authored'
+- rule: HUM-003
+  record_id: processes:task-ao-improve-intake-8amy9h
+  level: L4
+  diagnostic: '`business_purpose` not authored'
+- rule: HUM-004
+  record_id: processes:task-ao-improve-intake-8amy9h
+  level: L4
+  diagnostic: '`practical_context` not authored'
+- rule: HUM-006
+  record_id: processes:task-ao-improve-intake-8amy9h
+  level: L4
+  diagnostic: '`worked_example` not authored'
+- rule: HUM-001
+  record_id: processes:task-ao-improve-transform-nesd2t
+  level: L4
+  diagnostic: '`plain_language_name` not authored'
+- rule: HUM-002
+  record_id: processes:task-ao-improve-transform-nesd2t
+  level: L4
+  diagnostic: '`plain_language_description` not authored'
+- rule: HUM-003
+  record_id: processes:task-ao-improve-transform-nesd2t
+  level: L4
+  diagnostic: '`business_purpose` not authored'
+- rule: HUM-004
+  record_id: processes:task-ao-improve-transform-nesd2t
+  level: L4
+  diagnostic: '`practical_context` not authored'
+- rule: HUM-006
+  record_id: processes:task-ao-improve-transform-nesd2t
+  level: L4
+  diagnostic: '`worked_example` not authored'
+- rule: HUM-001
+  record_id: processes:task-ao-improve-verify-26k6rq
+  level: L4
+  diagnostic: '`plain_language_name` not authored'
+- rule: HUM-002
+  record_id: processes:task-ao-improve-verify-26k6rq
+  level: L4
+  diagnostic: '`plain_language_description` not authored'
+- rule: HUM-003
+  record_id: processes:task-ao-improve-verify-26k6rq
+  level: L4
+  diagnostic: '`business_purpose` not authored'
+- rule: HUM-004
+  record_id: processes:task-ao-improve-verify-26k6rq
+  level: L4
+  diagnostic: '`practical_context` not authored'
+- rule: HUM-006
+  record_id: processes:task-ao-improve-verify-26k6rq
+  level: L4
+  diagnostic: '`worked_example` not authored'
+- rule: HUM-001
+  record_id: processes:activity-ao-improve-5tzwvk
+  level: L3
+  diagnostic: '`plain_language_name` not authored'
+- rule: HUM-002
+  record_id: processes:activity-ao-improve-5tzwvk
+  level: L3
+  diagnostic: '`plain_language_description` not authored'
+- rule: HUM-003
+  record_id: processes:activity-ao-improve-5tzwvk
+  level: L3
+  diagnostic: '`business_purpose` not authored'
+- rule: HUM-004
+  record_id: processes:activity-ao-improve-5tzwvk
+  level: L3
+  diagnostic: '`practical_context` not authored'
+- rule: HUM-006
+  record_id: processes:activity-ao-improve-5tzwvk
+  level: L3
+  diagnostic: '`worked_example` not authored'
+- rule: HUM-001
+  record_id: processes:task-ao-improve-record-mxacts
+  level: L4
+  diagnostic: '`plain_language_name` not authored'
+- rule: HUM-002
+  record_id: processes:task-ao-improve-record-mxacts
+  level: L4
+  diagnostic: '`plain_language_description` not authored'
+- rule: HUM-003
+  record_id: processes:task-ao-improve-record-mxacts
+  level: L4
+  diagnostic: '`business_purpose` not authored'
+- rule: HUM-004
+  record_id: processes:task-ao-improve-record-mxacts
+  level: L4
+  diagnostic: '`practical_context` not authored'
+- rule: HUM-006
+  record_id: processes:task-ao-improve-record-mxacts
+  level: L4
+  diagnostic: '`worked_example` not authored'
+- rule: HUM-001
+  record_id: processes:task-ao-improve-confirm-9c7p8d
+  level: L4
+  diagnostic: '`plain_language_name` not authored'
+- rule: HUM-002
+  record_id: processes:task-ao-improve-confirm-9c7p8d
+  level: L4
+  diagnostic: '`plain_language_description` not authored'
+- rule: HUM-003
+  record_id: processes:task-ao-improve-confirm-9c7p8d
+  level: L4
+  diagnostic: '`business_purpose` not authored'
+- rule: HUM-004
+  record_id: processes:task-ao-improve-confirm-9c7p8d
+  level: L4
+  diagnostic: '`practical_context` not authored'
+- rule: HUM-006
+  record_id: processes:task-ao-improve-confirm-9c7p8d
+  level: L4
+  diagnostic: '`worked_example` not authored'
+- rule: HUM-001
+  record_id: processes:task-ao-improve-intake-8z5x37
+  level: L4
+  diagnostic: '`plain_language_name` not authored'
+- rule: HUM-002
+  record_id: processes:task-ao-improve-intake-8z5x37
+  level: L4
+  diagnostic: '`plain_language_description` not authored'
+- rule: HUM-003
+  record_id: processes:task-ao-improve-intake-8z5x37
+  level: L4
+  diagnostic: '`business_purpose` not authored'
+- rule: HUM-004
+  record_id: processes:task-ao-improve-intake-8z5x37
+  level: L4
+  diagnostic: '`practical_context` not authored'
+- rule: HUM-006
+  record_id: processes:task-ao-improve-intake-8z5x37
+  level: L4
+  diagnostic: '`worked_example` not authored'
+- rule: HUM-001
+  record_id: processes:task-ao-improve-transform-5ru9b8
+  level: L4
+  diagnostic: '`plain_language_name` not authored'
+- rule: HUM-002
+  record_id: processes:task-ao-improve-transform-5ru9b8
+  level: L4
+  diagnostic: '`plain_language_description` not authored'
+- rule: HUM-003
+  record_id: processes:task-ao-improve-transform-5ru9b8
+  level: L4
+  diagnostic: '`business_purpose` not authored'
+- rule: HUM-004
+  record_id: processes:task-ao-improve-transform-5ru9b8
+  level: L4
+  diagnostic: '`practical_context` not authored'
+- rule: HUM-006
+  record_id: processes:task-ao-improve-transform-5ru9b8
+  level: L4
+  diagnostic: '`worked_example` not authored'
+- rule: HUM-001
+  record_id: processes:task-ao-improve-verify-7v378y
+  level: L4
+  diagnostic: '`plain_language_name` not authored'
+- rule: HUM-002
+  record_id: processes:task-ao-improve-verify-7v378y
+  level: L4
+  diagnostic: '`plain_language_description` not authored'
+- rule: HUM-003
+  record_id: processes:task-ao-improve-verify-7v378y
+  level: L4
+  diagnostic: '`business_purpose` not authored'
+- rule: HUM-004
+  record_id: processes:task-ao-improve-verify-7v378y
+  level: L4
+  diagnostic: '`practical_context` not authored'
+- rule: HUM-006
+  record_id: processes:task-ao-improve-verify-7v378y
+  level: L4
+  diagnostic: '`worked_example` not authored'
+- rule: HUM-001
+  record_id: processes:activity-ao-improve-f2r6t4
+  level: L3
+  diagnostic: '`plain_language_name` not authored'
+- rule: HUM-002
+  record_id: processes:activity-ao-improve-f2r6t4
+  level: L3
+  diagnostic: '`plain_language_description` not authored'
+- rule: HUM-003
+  record_id: processes:activity-ao-improve-f2r6t4
+  level: L3
+  diagnostic: '`business_purpose` not authored'
+- rule: HUM-004
+  record_id: processes:activity-ao-improve-f2r6t4
+  level: L3
+  diagnostic: '`practical_context` not authored'
+- rule: HUM-006
+  record_id: processes:activity-ao-improve-f2r6t4
+  level: L3
+  diagnostic: '`worked_example` not authored'
+- rule: HUM-001
+  record_id: processes:task-ao-improve-record-t8tmaf
+  level: L4
+  diagnostic: '`plain_language_name` not authored'
+- rule: HUM-002
+  record_id: processes:task-ao-improve-record-t8tmaf
+  level: L4
+  diagnostic: '`plain_language_description` not authored'
+- rule: HUM-003
+  record_id: processes:task-ao-improve-record-t8tmaf
+  level: L4
+  diagnostic: '`business_purpose` not authored'
+- rule: HUM-004
+  record_id: processes:task-ao-improve-record-t8tmaf
+  level: L4
+  diagnostic: '`practical_context` not authored'
+- rule: HUM-006
+  record_id: processes:task-ao-improve-record-t8tmaf
+  level: L4
+  diagnostic: '`worked_example` not authored'
+- rule: HUM-001
+  record_id: processes:task-ao-improve-confirm-kjasgm
+  level: L4
+  diagnostic: '`plain_language_name` not authored'
+- rule: HUM-002
+  record_id: processes:task-ao-improve-confirm-kjasgm
+  level: L4
+  diagnostic: '`plain_language_description` not authored'
+- rule: HUM-003
+  record_id: processes:task-ao-improve-confirm-kjasgm
+  level: L4
+  diagnostic: '`business_purpose` not authored'
+- rule: HUM-004
+  record_id: processes:task-ao-improve-confirm-kjasgm
+  level: L4
+  diagnostic: '`practical_context` not authored'
+- rule: HUM-006
+  record_id: processes:task-ao-improve-confirm-kjasgm
+  level: L4
+  diagnostic: '`worked_example` not authored'
+truncated: 15890

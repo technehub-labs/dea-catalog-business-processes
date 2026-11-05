@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-buil
 
 This is a **Business Process** (level L2), named **Acquire Technology Assets**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Build** process context, domain `eo`, lifecycle stage Build. Its canonical ID is `processes:process-eo-build-nmmmt6`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This is the buying and installing work that turns a platform design into real equipment. Hardware and software are purchased, delivered, installed and commissioned so they are ready to carry operational workloads. It kicks in once the platform architecture has been designed and the shopping list is firm.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because a designed platform serves no one until the hardware and software behind it have been bought, installed and brought into working order.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Comes into play during the build stage that follows platform design, when the architecture calls for procured and installed hardware and software. Product management steers the acquisitions under the Enablement & Operations Process Owner.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A product manager works through the agreed platform architecture, raises the orders for the hardware and software on it, and follows delivery, installation and commissioning until the equipment is signed off as ready for operational workloads.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Acquire Technology Assets L2 process within the processes:pc-eo-build-zwkhxc Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Acquire Technology Assets |
+| `plain_language_description` | string | no | This is the buying and installing work that turns a platform design into real equipment. Hardware and software are … |
+| `business_purpose` | string | no | It exists because a designed platform serves no one until the hardware and software behind it have been bought … |
+| `practical_context` | string | no | Comes into play during the build stage that follows platform design, when the architecture calls for procured and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

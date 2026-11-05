@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-fa-buil
 
 This is a **Business Process** (level L2), named **Onboard Tax and Compliance Capability**, currently **candidate (yellow)**. It is part of the **Finance Capability and System Build** process context, domain `fa`, lifecycle stage Build. Its canonical ID is `processes:process-fa-build-ucfjgt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the organisation becomes subject to a new tax jurisdiction or compliance regime, this process gets the tax and compliance capability up and running. It puts the required filings and registrations in place and sets up the controls that keep them working. The capability it delivers then supports tax planning, with the tax policy review keeping oversight.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It ensures the organisation never meets a new tax obligation unprepared: filings, registrations, and controls are operational before the regime starts to bite.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It is triggered when a new tax jurisdiction or compliance regime applies, and the finance function onboards the capability while the tax policy review supervises the result.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* After the organisation starts operating under a new tax jurisdiction, the finance function completes the registrations, sets up the recurring filings, and puts the supporting controls in place so tax planning can proceed under the tax policy review.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Onboard Tax and Compliance Capability (build stage, management process). Landed by CR-BP-21e.1 from the … |
+| `plain_language_name` | string | no | Onboard Tax and Compliance Capability |
+| `plain_language_description` | string | no | When the organisation becomes subject to a new tax jurisdiction or compliance regime, this process gets the tax and … |
+| `business_purpose` | string | no | It ensures the organisation never meets a new tax obligation unprepared: filings, registrations, and controls are … |
+| `practical_context` | string | no | It is triggered when a new tax jurisdiction or compliance regime applies, and the finance function onboards the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

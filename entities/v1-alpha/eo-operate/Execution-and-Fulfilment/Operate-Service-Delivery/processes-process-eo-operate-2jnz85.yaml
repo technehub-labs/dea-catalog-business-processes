@@ -127,3 +127,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Operate Service Delivery L2 process within the processes:pc-eo-operate-ydqb96 Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Run Service Delivery'
+plain_language_description: 'This is the steady-state running of everything the built operation depends on, day in and day out. Production lines are run to plan while logistics and inventory keep pace, technology platforms stay available, facilities and assets are maintained, and the procurement cycle keeps supplies coming. It is what turns a built capability into a service actually being delivered.'
+business_purpose: 'It exists to keep the whole execution engine of production, logistics, inventory, platforms, facilities and procurement working together in steady state so customers keep being served.'
+practical_context: 'The everyday backdrop once the built operation is live, with each planning period setting the production plan the lines run to. Product management oversees the whole under the Enablement & Operations Process Owner.'
+worked_example:
+  agent_type: human
+  narrative: 'At the start of the week a product manager checks the production plan against stock and platform availability, sorts a supply delay through the procurement cycle, and keeps the lines, warehouses and platforms running to plan.'

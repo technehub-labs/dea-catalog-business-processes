@@ -203,3 +203,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Mobilize a licensed or regulated workforce under the enterprise regulated-entity approval authority within the processes:pc-ao-activate-kusw2u Cell Charter …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Mobilize Licensed Workforce'
+plain_language_description: 'When a licensed role has been approved for live work, this process moves the individual from approved candidate to active practitioner on the regulated personnel record. Workforce management confirms that the regulator-controlled scope of the role is intact, that the fitness-and-propriety attestation is on file, and that required supervised training is complete. The continuing supervisor is then notified so ongoing supervision starts from day one, and the individual may begin performing live work in the licensed role.'
+business_purpose: 'It exists so that nobody performs regulated live work before their licence-backed scope, attestations, and supervision arrangements are all in place, protecting the enterprise''s standing with its regulator.'
+practical_context: 'Encountered whenever the enterprise regulated-entity approval authority approves a licensed role for live work, which spans banking controlled functions, healthcare practitioners, licensed professional services, aviation crew, and insurance producers; the Agency & Organization Process Owner is accountable, with workforce management and the supervising authority closely involved.'
+worked_example:
+  agent_type: human
+  narrative: 'A workforce management lead receives confirmation that a senior controlled-function appointment has been approved, checks that the fitness-and-propriety attestation and supervised-training record are complete on the personnel file, and activates the notification that places the appointee under the continuing supervisor''s oversight before the first day of live work.'

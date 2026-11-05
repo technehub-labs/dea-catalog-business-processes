@@ -130,3 +130,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Run Accounts Receivable (operate stage, core process). Landed by CR-BP-21e.1 from the FinanceAndAccounting register v2.'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Run Accounts Receivable'
+plain_language_description: 'This process is how the organisation collects the money it is owed. Customer invoices go out, collections are managed, and the cash that comes back is applied to the ledger. Each customer invoice or collection event sets the routine in motion.'
+business_purpose: 'It exists so that sales become cash: invoices are issued, collections are managed actively, and received money is applied to the ledger without delay.'
+practical_context: 'It runs whenever a customer invoice or collection event is due, with the compliance function issuing invoices, managing collections, and applying cash to the ledger.'
+worked_example:
+  agent_type: human
+  narrative: 'When a customer invoice falls due, the compliance function issues or chases it, manages the collection through to payment, and applies the cash received to the ledger.'

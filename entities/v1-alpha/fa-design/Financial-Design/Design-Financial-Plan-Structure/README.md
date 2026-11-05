@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-fa-desi
 
 This is a **Business Process** (level L2), named **Design Financial Plan Structure**, currently **candidate (yellow)**. It is part of the **Financial Planning and Accounting Architecture Design** process context, domain `fa`, lifecycle stage Design. Its canonical ID is `processes:process-fa-design-vk422z`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process turns the committed finance strategy into a concrete financial plan structure. The finance design authority lays out the chart of accounts, sets the cost allocation model, and works up the financial controls the plan needs. The completed structure is committed and clears the way for the build work that follows.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gives the finance strategy an implementable shape — a chart of accounts, a cost allocation model, and financial controls designs — so the build stage knows exactly what to construct.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The work begins once the framed finance strategy requires a bounded chart of accounts, cost allocation model, and financial controls designs, and the finance design authority carries out the design.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* With the finance strategy freshly committed, the finance design authority maps the chart of accounts, sets the cost allocation model, and specifies the financial controls, then commits the structure for the build stage to pick up.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Design Financial Plan Structure L2 process within the processes:pc-fa-design-4j8evh Cell Charter. See … |
+| `plain_language_name` | string | no | Design Financial Plan Structure |
+| `plain_language_description` | string | no | This process turns the committed finance strategy into a concrete financial plan structure. The finance design … |
+| `business_purpose` | string | no | It gives the finance strategy an implementable shape — a chart of accounts, a cost allocation model, and financial … |
+| `practical_context` | string | no | The work begins once the framed finance strategy requires a bounded chart of accounts, cost allocation model, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

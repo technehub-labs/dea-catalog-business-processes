@@ -145,3 +145,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Frame Operations Strategy L2 process within the processes:pc-eo-conceive-mxmtzq Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Frame the Operations Strategy'
+plain_language_description: 'This is the top-level thinking that sets how the business will produce and deliver before any detailed planning starts. Prompted by a new execution engine being established, an existing one being rethought, or shifts in how customers are served, the strategy and operations functions agree the delivery direction, how technology will enable it, and what the physical asset approach will be. The outcome is a committed operations strategy that the next stage of planning builds on.'
+business_purpose: 'It exists to give the whole operations effort one committed strategy covering delivery, technology enablement and physical assets, so later design and build decisions pull in the same direction.'
+practical_context: 'Encountered when the enterprise is establishing a new execution engine, reframing an existing one, or responding to shifts in the delivery model. The strategy function and operations function lead the work under the Enablement & Operations Process Owner.'
+worked_example:
+  agent_type: human
+  narrative: 'Facing a shift in how customers want to be served, a strategy lead convenes the operations function for a framing workshop, and together they commit an operations strategy covering the delivery model, the technology enablement approach and the physical asset approach.'

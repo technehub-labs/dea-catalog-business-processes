@@ -141,3 +141,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Operate Strategic Review Cycle L2 process within the processes:pc-sd-operate-5cs5ee Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Operate Strategic Review Cycle'
+plain_language_description: 'This work is the drumbeat behind strategic steering. The strategy function runs the standing review cycle on its defined cadence, brings the right inputs to each session, and makes sure the decisions taken are recorded for the strategic record. Every other steering activity plugs into the rhythm this cycle sets.'
+business_purpose: 'It gives strategic steering a reliable rhythm: a standing cadence with recorded inputs and decisions means reviews actually happen, produce decisions, and leave a traceable record.'
+practical_context: 'Continuous while strategy is in operation: the strategy function convenes the review cycle on its cadence, prepares the inputs, and records the decisions each time it meets.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function circulates the review pack ahead of the scheduled session, chairs the meeting, and afterwards files the decisions taken for the strategic record. The next cycle''s date and inputs are already booked before anyone leaves.'

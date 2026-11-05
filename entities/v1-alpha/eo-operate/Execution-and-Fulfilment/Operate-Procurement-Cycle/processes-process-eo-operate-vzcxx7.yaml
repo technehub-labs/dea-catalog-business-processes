@@ -124,3 +124,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Operate Procurement Cycle L2 process within the processes:pc-eo-operate-ydqb96 Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Run the Procurement Cycle'
+plain_language_description: 'This process keeps the materials and services the operation needs flowing in. Requests become purchase orders, orders are executed within policy, and what arrives is receipted against them. Run well, it is a steady cycle that means production and delivery never stall for want of something that should have been bought.'
+business_purpose: 'It exists to secure a steady, policy-compliant flow of purchased materials and services so the operation is never held up by missing supplies.'
+practical_context: 'Encountered continuously as buying needs arise across the operation, from routine materials to services. Product management steers the cycle, with purchase orders raised, executed and receipted within policy under the Enablement & Operations Process Owner.'
+worked_example:
+  agent_type: human
+  narrative: 'A product manager approves a purchase order for materials running low, checks it sits within purchasing policy, and later confirms the receipt so the supplier can be settled against the delivery.'

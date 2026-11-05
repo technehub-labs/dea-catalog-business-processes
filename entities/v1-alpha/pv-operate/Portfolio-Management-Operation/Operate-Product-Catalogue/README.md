@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pv-oper
 
 This is a **Business Process** (level L2), named **Operate Product Catalogue**, currently **candidate (yellow)**. It is part of the **Portfolio Management and Proposition Lifecycle Operation** process context, domain `pv`, lifecycle stage Operate. Its canonical ID is `processes:process-pv-operate-zyguzp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+With products live in the market, this work runs the steady state. Product management keeps the product catalogue current, oversees portfolio performance, and manages each proposition through its lifecycle stages from launch to retirement. It is the ongoing stewardship that keeps the whole offering portfolio coherent while it operates.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It keeps the catalogue of live offerings accurate and actively managed: customers and internal teams alike rely on a catalogue that reflects what is actually offered and at what stage.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The steady-state routine once developed products are in active operation; product management runs the catalogue and its portfolio duties continuously, from launch through to retirement.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Product management updates the catalogue when a new version launches, checks that the retired listing is marked accordingly, and reviews the performance figures for the live range. The catalogue stays an accurate mirror of what the business actually offers.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Operate Product Catalogue L2 process within the processes:pc-pv-operate-ewpwjc Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Operate Product Catalogue |
+| `plain_language_description` | string | no | With products live in the market, this work runs the steady state. Product management keeps the product catalogue … |
+| `business_purpose` | string | no | It keeps the catalogue of live offerings accurate and actively managed: customers and internal teams alike rely on a … |
+| `practical_context` | string | no | The steady-state routine once developed products are in active operation; product management runs the catalogue and its … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

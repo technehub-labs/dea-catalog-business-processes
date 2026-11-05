@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ao-acti
 
 This is a **Business Process** (level L2), named **Mobilize Licensed Workforce**, currently **candidate (yellow)**. It is part of the **Licensed Workforce Mobilization** process context, domain `ao`, lifecycle stage Activate. Its canonical ID is `processes:process-ao-activate-jqxtqn`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When a licensed role has been approved for live work, this process moves the individual from approved candidate to active practitioner on the regulated personnel record. Workforce management confirms that the regulator-controlled scope of the role is intact, that the fitness-and-propriety attestation is on file, and that required supervised training is complete. The continuing supervisor is then notified so ongoing supervision starts from day one, and the individual may begin performing live work in the licensed role.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so that nobody performs regulated live work before their licence-backed scope, attestations, and supervision arrangements are all in place, protecting the enterprise's standing with its regulator.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered whenever the enterprise regulated-entity approval authority approves a licensed role for live work, which spans banking controlled functions, healthcare practitioners, licensed professional services, aviation crew, and insurance producers; the Agency & Organization Process Owner is accountable, with workforce management and the supervising authority closely involved.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A workforce management lead receives confirmation that a senior controlled-function appointment has been approved, checks that the fitness-and-propriety attestation and supervised-training record are complete on the personnel file, and activates the notification that places the appointee under the continuing supervisor's oversight before the first day of live work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Mobilize a licensed or regulated workforce under the enterprise regulated-entity approval authority within the … |
+| `plain_language_name` | string | no | Mobilize Licensed Workforce |
+| `plain_language_description` | string | no | When a licensed role has been approved for live work, this process moves the individual from approved candidate to … |
+| `business_purpose` | string | no | It exists so that nobody performs regulated live work before their licence-backed scope, attestations, and supervision … |
+| `practical_context` | string | no | Encountered whenever the enterprise regulated-entity approval authority approves a licensed role for live work, which … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

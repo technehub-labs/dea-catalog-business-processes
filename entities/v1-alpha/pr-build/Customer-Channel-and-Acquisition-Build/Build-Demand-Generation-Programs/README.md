@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pr-buil
 
 This is a **Business Process** (level L2), named **Build Demand Generation Programs**, currently **candidate (yellow)**. It is part of the **Customer Channel and Acquisition Build** process context, domain `pr`, lifecycle stage Build. Its canonical ID is `processes:process-pr-build-4kb2pt`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+A demand model on paper does not fill a pipeline, so this work builds the engine that will. The teams assemble the programmes that generate interest repeatedly, wire them into the channels, and switch them on to see the first demand arrive. Success is measured by whether the engine keeps producing demand that matches the model.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It creates the repeatable machinery that turns market interest into a steady flow of prospects, rather than relying on one-off pushes.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Follows the commitment of the customer demand model: customer relationship management and the strategy function assemble the programmes and integrate them with the channels until initial demand starts flowing.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* With the demand model committed, the strategy function plans the programme calendar, customer relationship management builds the campaign pieces into the live channels, and the first enquiries start arriving for the teams to work.
 
 ## 5. Header and Identity Table (generated)
 
@@ -75,6 +75,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Build Demand Generation Programs L2 process within the processes:pc-pr-build-a46hp7 Cell Charter. See … |
+| `plain_language_name` | string | no | Build Demand Generation Programs |
+| `plain_language_description` | string | no | A demand model on paper does not fill a pipeline, so this work builds the engine that will. The teams assemble the … |
+| `business_purpose` | string | no | It creates the repeatable machinery that turns market interest into a steady flow of prospects, rather than relying on … |
+| `practical_context` | string | no | Follows the commitment of the customer demand model: customer relationship management and the strategy function … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

@@ -124,3 +124,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Operate Logistics L2 process within the processes:pc-eo-operate-ydqb96 Cell Charter. See trigger and outcome for the bounded work this process …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Operate Logistics'
+plain_language_description: 'This process is the running of the delivery network once it exists. Shipments move along the transport and delivery flows that were built into the network, serving customers and production along the way. Each shipment''s outcome is recorded, with exceptions caught and handled as they happen.'
+business_purpose: 'It exists so the built logistics network actually delivers, on time where possible, with every exception recorded and dealt with rather than discovered by the customer.'
+practical_context: 'Lives in the daily operation, where every shipment handed to the network is a fresh instance of the process. Product management oversees delivery performance under the Enablement & Operations Process Owner.'
+worked_example:
+  agent_type: human
+  narrative: 'A product manager scans the morning''s shipment board, sees one delivery flagged as running behind, and follows the exception handling through until the customer has a revised time and the delay is recorded against the shipment.'

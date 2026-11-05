@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pv-buil
 
 This is a **Business Process** (level L2), named **Build Innovation Prototype**, currently **candidate (yellow)**. It is part of the **Product Development and Market Readiness Build** process context, domain `pv`, lifecycle stage Build. Its canonical ID is `processes:process-pv-build-8jc3y4`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When an experiment needs something tangible to test an idea against, this work produces the working prototype the trial depends on. Product management scopes what the prototype must demonstrate, arranges the build, and checks that the result has enough fidelity to give the experiment a meaningful answer. The work ends when the prototype is ready to be put in front of the test.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+A hypothesis about a new idea can only be tested against something real, so this work gives the enterprise early, affordable evidence before any full build is committed.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs whenever a designed innovation experiment calls for a working model; product management pulls together the people who will build it, and the work sits between experiment design and the validation that follows.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Product management briefs a small build team on the hypothesis the prototype must test, agrees the minimum fidelity needed, and books a review slot. When the working model comes back, product management checks it over and clears it for the experiment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Build Innovation Prototype L2 process within the processes:pc-pv-build-ygbmxb Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Build Innovation Prototype |
+| `plain_language_description` | string | no | When an experiment needs something tangible to test an idea against, this work produces the working prototype the trial … |
+| `business_purpose` | string | no | A hypothesis about a new idea can only be tested against something real, so this work gives the enterprise early … |
+| `practical_context` | string | no | Runs whenever a designed innovation experiment calls for a working model; product management pulls together the people … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

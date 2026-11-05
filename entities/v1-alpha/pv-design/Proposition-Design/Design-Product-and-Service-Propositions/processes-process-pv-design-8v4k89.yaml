@@ -148,3 +148,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Design Product and Service Propositions L2 process within the processes:pc-pv-design-8dhwpn Cell Charter. See trigger and outcome for the bounded …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Design Product and Service Propositions'
+plain_language_description: 'This work shapes a framed value proposition thesis into a full design. Product management lays out the proposition''s architecture, works through its packaging and configuration, and designs any innovation experiments the thesis calls for, covering products, services, solutions, experiences, and platforms alike. The completed designs hand the build stage everything it needs to start constructing.'
+business_purpose: 'It converts a value claim into a buildable design: architecture, packaging, and configuration are worked out in advance so the build stage constructs something coherent instead of improvising.'
+practical_context: 'Central to proposition design: whenever a thesis has been committed, product management runs this design effort before construction begins, often coordinating packaging design and experiment design in parallel.'
+worked_example:
+  agent_type: human
+  narrative: 'Product management takes the committed thesis and drafts the proposition architecture, agreeing packaging and configuration options with the segment owners and setting up the experiment designs. The finished design pack is handed to the teams who will build it.'

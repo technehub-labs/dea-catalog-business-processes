@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ao-reti
 
 This is a **Business Process** (level L2), named **Conduct Regulated Workforce Wind-Down**, currently **candidate (yellow)**. It is part of the **Workforce Retirement** process context, domain `ao`, lifecycle stage Retire. Its canonical ID is `processes:process-ao-retire-g3eyr8`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process handles a large-scale workforce reduction, such as a mass layoff, the decommissioning of an agent unit, or the winding down of an organizational unit, under the statutory rules such events trigger. Statutory advance notice is served, worker-representative consultation is carried out and documented, and fair-selection criteria are applied and recorded. Notice pay, severance, and benefits continuation are funded and recorded, and transition supports such as dislocated-worker referral, retraining, and health-care continuation are routed to everyone affected.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists to reduce the workforce at scale lawfully and humanely, meeting every statutory notice, consultation, and payment obligation while supporting affected people into what comes next.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered when a regulated wind-down event is authorized and the size and nature of the employment reduction triggers statutory advance-notice and consultation duties; the governing board, workforce management, and the operations function all take part.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* When the governing board authorizes closing a large business unit, workforce management serves the statutory notice on affected workers, their representatives, and the required authorities, runs the documented consultation, applies the recorded fair-selection criteria, and routes severance, benefits continuation, and retraining referrals to everyone affected.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Conduct a regulated workforce wind-down under statutory mass-layoff, consultation, notice, severance, and … |
+| `plain_language_name` | string | no | Conduct Regulated Workforce Wind-Down |
+| `plain_language_description` | string | no | This process handles a large-scale workforce reduction, such as a mass layoff, the decommissioning of an agent unit, or … |
+| `business_purpose` | string | no | It exists to reduce the workforce at scale lawfully and humanely, meeting every statutory notice, consultation, and … |
+| `practical_context` | string | no | Encountered when a regulated wind-down event is authorized and the size and nature of the employment reduction triggers … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

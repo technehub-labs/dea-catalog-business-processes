@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ao-conc
 
 This is a **Business Process** (level L2), named **Frame Organization and Agent Strategy**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. Its canonical ID is `processes:process-ao-conceive-e3u8s2`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This is the top-level act of deciding how the enterprise will organize its workforce, including where artificial agents fit. It is prompted when a new agentive fabric is being established, an existing one is being reframed, or a shift such as introducing artificial agents into the workforce mix calls for board-level realignment. The output is a committed strategy that bounds agent capacity, the organization model, and the workforce-and-agent mix, ready to steer design work.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists to give the whole organization one coherent direction for its workforce and agent capacity, so every later design, hiring, and deployment decision traces back to a deliberate strategic choice.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered at the start of major organization change, such as establishing a new agentive fabric, reframing an existing one, or responding to substrate shifts that require board-level realignment, with workforce management and the strategy function leading the framing.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* With artificial agents about to enter the workforce mix, the strategy function drafts a new organization and agent strategy, workforce management stress-tests the capacity implications, and the leadership commits the strategy that will steer the next design cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Frame Organization and Agent Strategy L2 process within the processes:pc-ao-conceive-wtq4cr Cell Charter … |
+| `plain_language_name` | string | no | Frame the Organization and Agent Strategy |
+| `plain_language_description` | string | no | This is the top-level act of deciding how the enterprise will organize its workforce, including where artificial agents … |
+| `business_purpose` | string | no | It exists to give the whole organization one coherent direction for its workforce and agent capacity, so every later … |
+| `practical_context` | string | no | Encountered at the start of major organization change, such as establishing a new agentive fabric, reframing an … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

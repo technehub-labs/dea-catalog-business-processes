@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-impr
 
 This is a **Business Process** (level L2), named **Conduct Logistics Optimization**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. Its canonical ID is `processes:process-eo-improve-3fem63`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process looks hard at how the logistics network is actually performing and then changes it for the better. Evidence on routing and network performance is reviewed to find where costs run too high or service levels slip, and improvements are worked up from that evidence. It ends with route and network changes committed into the operations planning cycle.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists to convert performance evidence about routes and the network into committed changes that lower cost or lift service levels.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Comes around whenever routing or network performance evidence reveals a cost or service-level opportunity. The operations function conducts the optimization and commits the changes through the operations planning cycle.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations analyst notices from delivery evidence that one route consistently underperforms, reworks the routing and shifts volume to a better path, and commits the change through the operations planning cycle.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Conduct Logistics Optimization L2 process within the processes:pc-eo-improve-pka6dk Cell Charter. See … |
+| `plain_language_name` | string | no | Conduct Logistics Optimization |
+| `plain_language_description` | string | no | This process looks hard at how the logistics network is actually performing and then changes it for the better … |
+| `business_purpose` | string | no | It exists to convert performance evidence about routes and the network into committed changes that lower cost or lift … |
+| `practical_context` | string | no | Comes around whenever routing or network performance evidence reveals a cost or service-level opportunity. The … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

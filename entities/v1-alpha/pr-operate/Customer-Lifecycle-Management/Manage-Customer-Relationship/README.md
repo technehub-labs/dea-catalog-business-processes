@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pr-oper
 
 This is a **Business Process** (level L2), named **Manage Customer Relationship**, currently **candidate (yellow)**. It is part of the **Customer Relationship Operations** process context, domain `pr`, lifecycle stage Operate. Its canonical ID is `processes:process-pr-operate-bbe384`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+From the moment a customer finishes onboarding to renewal or win-back, someone owns the health of that relationship day to day. Attention is spread across the customer portfolio, escalations are picked up and resolved, and renewals are coordinated before they arrive. The aim is simple: the relationship keeps working for both sides over its whole life.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Active relationships decay without tending; this work sustains them through attention, escalation handling, and renewal coordination so value keeps flowing both ways.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Ongoing from the post-onboarding handoff onward: customer relationship management watches each active relationship and steps in when an escalation, churn risk, or approaching renewal signals a change, reporting up to the governing board.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* A long-standing customer raises a service escalation; customer relationship management resolves it, notes the renewal coming up in two quarters, and updates the relationship record so leadership sees the full picture.
 
 ## 5. Header and Identity Table (generated)
 
@@ -75,6 +75,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[2] | no | array of 2 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Manage the day-to-day operation of an active customer relationship across its lifecycle (acquisition → onboarding → … |
+| `plain_language_name` | string | no | Manage Customer Relationship |
+| `plain_language_description` | string | no | From the moment a customer finishes onboarding to renewal or win-back, someone owns the health of that relationship day … |
+| `business_purpose` | string | no | Active relationships decay without tending; this work sustains them through attention, escalation handling, and renewal … |
+| `practical_context` | string | no | Ongoing from the post-onboarding handoff onward: customer relationship management watches each active relationship and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

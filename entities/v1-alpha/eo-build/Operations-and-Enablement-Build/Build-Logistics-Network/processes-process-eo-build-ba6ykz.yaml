@@ -137,3 +137,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Build Logistics Network L2 process within the processes:pc-eo-build-zwkhxc Cell Charter. See trigger and outcome for the bounded work this process …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Build Logistics Network'
+plain_language_description: 'This process puts the physical delivery network in place before any goods move. Network nodes are established, carriers are brought on under contract, and warehouse capacity is secured so that the routes designed on paper can actually carry deliveries. It closes with a network ready to execute delivery flows.'
+business_purpose: 'It exists because a designed routing plan is only a diagram until the nodes, carrier contracts and warehouse capacity behind it are physically in place.'
+practical_context: 'Encountered while a delivery capability is being built, once the routing design has settled what nodes, carriers and warehouse capacity are required. Product management drives the contracting and setup under the Enablement & Operations Process Owner.'
+worked_example:
+  agent_type: human
+  narrative: 'A product manager shortlists carriers against the designed routes, signs the transport contracts, and confirms warehouse capacity at each network node so the first delivery flows have somewhere to run.'

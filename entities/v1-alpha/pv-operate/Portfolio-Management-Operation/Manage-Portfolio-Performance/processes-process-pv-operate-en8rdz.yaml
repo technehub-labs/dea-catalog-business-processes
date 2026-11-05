@@ -137,3 +137,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Manage Portfolio Performance L2 process within the processes:pc-pv-operate-ewpwjc Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Manage Portfolio Performance'
+plain_language_description: 'Once propositions are live, this work keeps continuous watch on how each performs against the investment thesis it was launched under. Product management maintains that visibility, spots where performance drifts, and commits rebalancing decisions when the mix needs adjusting. The portfolio is thereby kept honest and steered rather than left to drift.'
+business_purpose: 'It gives the business a live view of which propositions are paying off and which are not, so the portfolio can be rebalanced on evidence instead of waiting for annual surprises.'
+practical_context: 'A continuous responsibility once products are operating: product management reviews proposition performance on an ongoing basis and commits rebalancing decisions as the picture changes.'
+worked_example:
+  agent_type: human
+  narrative: 'Product management walks the performance figures for each live proposition against the investment thesis behind it, flags one that is drifting, and commits a rebalancing decision to shift support toward the stronger performers.'

@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ao-conc
 
 This is a **Business Process** (level L2), named **Conceive Workforce and Agent Mix**, currently **candidate (yellow)**. It is part of the **Agent Capacity and Organization Conception** process context, domain `ao`, lifecycle stage Conceive. Its canonical ID is `processes:process-ao-conceive-z6m6p5`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process decides the blend of people and artificial agents the organization will run on, once the organization and agent strategy is committed. It sets the proportions between human and artificial capacity and draws the capacity envelopes that each part of the business can plan against. The agreed mix becomes the reference point for later acquisition and planning decisions.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists to give the enterprise a deliberate answer to how much of its work is done by people versus artificial agents, instead of letting the balance drift over time.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Follows commitment of the organization and agent strategy, typically in planning cycles where workforce management and the strategy function need agreed proportions and capacity envelopes to plan against.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* During the yearly planning round, workforce management and the strategy function sketch out how many roles stay human, where artificial agents take over volume work, and the capacity envelopes for each division, then commit the mix to guide hiring and deployment.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Conceive Workforce and Agent Mix L2 process within the processes:pc-ao-conceive-wtq4cr Cell Charter. See … |
+| `plain_language_name` | string | no | Conceive the Workforce and Agent Mix |
+| `plain_language_description` | string | no | This process decides the blend of people and artificial agents the organization will run on, once the organization and … |
+| `business_purpose` | string | no | It exists to give the enterprise a deliberate answer to how much of its work is done by people versus artificial … |
+| `practical_context` | string | no | Follows commitment of the organization and agent strategy, typically in planning cycles where workforce management and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

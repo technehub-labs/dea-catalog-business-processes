@@ -148,3 +148,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Frame Organization Model L2 process within the processes:pc-ao-conceive-wtq4cr Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Frame the Organization Model'
+plain_language_description: 'This process turns strategic direction into the basic shape of the organization before anyone designs concrete roles. It sets the structure principles the enterprise will follow, decides how wide reporting spans should be, and marks where coordination boundaries sit between units. With those in place, role design and structure work have a stable frame to work within.'
+business_purpose: 'It gives the enterprise a shared, explicit model of how it organizes itself, so later design decisions about roles and structures are consistent rather than ad hoc.'
+practical_context: 'Runs once the organization and agent strategy is committed, when workforce management and the strategy function need structure principles, reporting spans, and coordination boundaries settled before role design can start.'
+worked_example:
+  agent_type: human
+  narrative: 'Ahead of a growth phase, workforce management and the strategy function agree the guiding principles for how teams will be organized, set a limit on how many people report to any one manager, and mark which units need their own coordination boundaries, producing the model that role designers will follow.'

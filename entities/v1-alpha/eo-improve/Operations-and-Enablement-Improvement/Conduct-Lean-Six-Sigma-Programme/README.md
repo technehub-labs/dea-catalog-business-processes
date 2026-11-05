@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-impr
 
 This is a **Business Process** (level L2), named **Conduct Lean Six Sigma Programme**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Improvement** process context, domain `eo`, lifecycle stage Improve. Its canonical ID is `processes:process-eo-improve-us272s`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This process runs a structured programme of improvement projects aimed at cutting waste and variation from the operation. Instead of tackling problems one-off, projects are bundled into a programme and delivered one after another, each with a clear scope. Every project closes with a control plan so the gains hold after the team moves on.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists because lasting waste and variation reduction needs a steady programme of bounded projects with controls, not sporadic firefighting that fades once the urgency passes.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered as a rolling programme whenever the operation needs sustained waste and variation reduction. The operations function runs the projects, under the Enablement & Operations Process Owner.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations improvement lead kicks off the latest project in the programme, works the waste out of a bottleneck step with the local team, and closes it by committing a control plan that keeps the new method in place.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Conduct Lean Six Sigma Programme L2 process within the processes:pc-eo-improve-pka6dk Cell Charter. See … |
+| `plain_language_name` | string | no | Conduct Lean Six Sigma Programme |
+| `plain_language_description` | string | no | This process runs a structured programme of improvement projects aimed at cutting waste and variation from the … |
+| `business_purpose` | string | no | It exists because lasting waste and variation reduction needs a steady programme of bounded projects with controls, not … |
+| `practical_context` | string | no | Encountered as a rolling programme whenever the operation needs sustained waste and variation reduction. The operations … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

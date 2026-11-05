@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-eo-desi
 
 This is a **Business Process** (level L2), named **Design Delivery Model**, currently **candidate (yellow)**. It is part of the **Operations and Enablement Design** process context, domain `eo`, lifecycle stage Design. Its canonical ID is `processes:process-eo-design-6j5mxp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Here the broad delivery concept is worked up into an actual design. The operations function specifies how each channel will be configured, the service levels attached to it, and the flows that fulfil orders through those channels. The finished design is what delivery capability planning then works from.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It converts the conceived delivery model into concrete channel configurations and service levels, giving delivery capability planning something specific to build.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Runs whenever a conceived delivery model is ready to be turned into bounded detail. Operations function staff do the design work, with the Enablement & Operations Process Owner accountable.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* An operations analyst takes the agreed delivery concept and designs each channel in turn, fixing the service levels customers will be promised and mapping the fulfilment flows orders will follow, then hands the design to the capability planners.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Design Delivery Model L2 process within the processes:pc-eo-design-kxdfnz Cell Charter. See trigger and … |
+| `plain_language_name` | string | no | Design Delivery Model |
+| `plain_language_description` | string | no | Here the broad delivery concept is worked up into an actual design. The operations function specifies how each channel … |
+| `business_purpose` | string | no | It converts the conceived delivery model into concrete channel configurations and service levels, giving delivery … |
+| `practical_context` | string | no | Runs whenever a conceived delivery model is ready to be turned into bounded detail. Operations function staff do the … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

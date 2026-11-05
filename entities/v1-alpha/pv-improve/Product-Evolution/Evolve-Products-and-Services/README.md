@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pv-impr
 
 This is a **Business Process** (level L2), named **Evolve Products and Services**, currently **candidate (yellow)**. It is part of the **Product Evolution and Portfolio Rationalization** process context, domain `pv`, lifecycle stage Improve. Its canonical ID is `processes:process-pv-improve-6c2xvf`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When feedback, competitors, or new technology show that an offering is falling behind, this work carries out the enhancement. Product management scopes bounded enhancements to the products and services, keeping each change aligned with what the performance review found. The offerings come out of it updated and better fitted to the market.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It keeps the enterprise's offerings current: rather than letting products drift out of step with the market, this work channels feedback and pressure into planned, contained improvements.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered whenever market feedback, competitive pressure, or technology shifts demand change; product management leads the enhancement work, anchored to the committed findings of the performance review.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Acting on the review findings, product management scopes a set of enhancements for the underperforming service, agrees the boundaries with the delivery team, and hands over the change list. The updated service then ships with improvements that trace back to the findings.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Evolve Products and Services L2 process within the processes:pc-pv-improve-wpyfx7 Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Evolve Products and Services |
+| `plain_language_description` | string | no | When feedback, competitors, or new technology show that an offering is falling behind, this work carries out the … |
+| `business_purpose` | string | no | It keeps the enterprise's offerings current: rather than letting products drift out of step with the market, this work … |
+| `practical_context` | string | no | Encountered whenever market feedback, competitive pressure, or technology shifts demand change; product management … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

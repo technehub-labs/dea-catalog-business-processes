@@ -141,3 +141,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Design Objectives and Targets L2 process within the processes:pc-sd-design-g3es76 Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Design Objectives and Targets'
+plain_language_description: 'A chosen strategic option only becomes manageable once it has measures and owners. This work designs the objectives and targets for the committed option, giving each bounded measures and a named owner so progress can be steered. The result is a set of objectives aligned to the strategic intent and ready to be monitored.'
+business_purpose: 'It makes strategy steerable: objectives and targets with measures and owners turn a chosen direction into something whose progress can be watched and corrected.'
+practical_context: 'Encountered once a strategic option has been committed, when the strategy function designs the measures and ownership that make it steerable ahead of plan construction.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function translates the committed option into a handful of objectives, attaches concrete targets and measures to each, and names the owner accountable for every one. The objectives pack then feeds the plan build.'

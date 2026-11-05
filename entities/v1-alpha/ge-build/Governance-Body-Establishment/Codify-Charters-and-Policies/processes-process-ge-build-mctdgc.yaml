@@ -153,3 +153,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Codify Charters and Policies L2 process within the processes:pc-ge-build-52hjrc Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Codify Charters and Policies'
+plain_language_description: 'As new boards and committees stand up, the rules they will run by need to be written down in one consistent set. The team drafts and organises the charters, policies, and standard documents each body needs, then publishes them where members can find them. By the end, every governance body has its own rulebook ready to hand.'
+business_purpose: 'Written, well-organised rules give governance bodies a common reference, so decisions and duties rest on documents everyone can consult rather than on memory or habit.'
+practical_context: 'Encountered whenever governance bodies are being established: the governing board and strategy function commission and shape the drafting so each body can start operating with its charter and policies in place.'
+worked_example:
+  agent_type: human
+  narrative: 'While a new committee is being formed, a strategy function lead drafts its charter and standing policies, the governing board reviews the wording, and the finished documents are filed in a shared library the members can open at their first meeting.'

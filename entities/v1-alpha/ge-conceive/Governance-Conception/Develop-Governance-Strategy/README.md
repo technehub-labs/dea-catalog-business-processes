@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ge-conc
 
 This is a **Business Process** (level L2), named **Develop Governance Strategy**, currently **deprecated (orange)**. It is part of the **Strategy and Governance Conception** process context, domain `ge`, lifecycle stage Conceive. Its canonical ID is `processes:process-ge-conceive-e6jx6s`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When the enterprise takes on a new mandate or the ground shifts beneath it, the board needs a fresh answer to how the business will be governed. Here the strategy function works with the board to define what the mandate covers, the posture the enterprise will take, and the policy direction that follows. The result is a committed strategy document the rest of the governance work can build on.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It sets the direction for everything downstream: without an agreed governance strategy, bodies, policies, and oversight would be designed against unclear aims.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Comes into play when a new mandate is established, an existing one is reframed, or a regulatory or strategic shift forces board-level realignment; the governing board and strategy function lead it with input from the operations function.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* After a regulatory shift forces a rethink, a strategy function director drafts the governance strategy covering mandate bounds, posture, and policy direction, and the governing board debates and commits it at a strategy session.
 
 ## 5. Header and Identity Table (generated)
 
@@ -77,6 +77,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Develop Governance Strategy L2 process within the processes:pc-ge-conceive-b5xwpd Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Develop Governance Strategy |
+| `plain_language_description` | string | no | When the enterprise takes on a new mandate or the ground shifts beneath it, the board needs a fresh answer to how the … |
+| `business_purpose` | string | no | It sets the direction for everything downstream: without an agreed governance strategy, bodies, policies, and oversight … |
+| `practical_context` | string | no | Comes into play when a new mandate is established, an existing one is reframed, or a regulatory or strategic shift … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

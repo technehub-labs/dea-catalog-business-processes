@@ -1,0 +1,182 @@
+{
+  "processes:process-ge-activate-wegs44": {
+    "plain_language_name": "Bring Policy Instrument into Force",
+    "plain_language_description": "A policy, mandate, or charter may be formally adopted yet still change nothing day to day until it takes effect. This work confirms that every commencement condition has been met, announces the instrument so the enterprise knows it exists, and fixes the date it starts to bind. From that moment, the obligations, rights, and duties it sets out are applied across the business.",
+    "business_purpose": "It turns an adopted decision into live obligations, so the enterprise actually operates under the rules it has signed up to rather than leaving them sitting on paper.",
+    "practical_context": "Triggered when an adopted instrument's commencement conditions are met: the governance design authority runs the checks and promulgation, and every affected part of the enterprise starts complying from the effectiveness date.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "The governance design authority confirms that the waiting period on a newly adopted charter has elapsed, circulates the instrument to every business unit, and logs its effectiveness date, from which point duties under it are enforced."
+    }
+  },
+  "processes:process-ge-build-mctdgc": {
+    "plain_language_name": "Codify Charters and Policies",
+    "plain_language_description": "As new boards and committees stand up, the rules they will run by need to be written down in one consistent set. The team drafts and organises the charters, policies, and standard documents each body needs, then publishes them where members can find them. By the end, every governance body has its own rulebook ready to hand.",
+    "business_purpose": "Written, well-organised rules give governance bodies a common reference, so decisions and duties rest on documents everyone can consult rather than on memory or habit.",
+    "practical_context": "Encountered whenever governance bodies are being established: the governing board and strategy function commission and shape the drafting so each body can start operating with its charter and policies in place.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "While a new committee is being formed, a strategy function lead drafts its charter and standing policies, the governing board reviews the wording, and the finished documents are filed in a shared library the members can open at their first meeting."
+    }
+  },
+  "processes:process-ge-build-3p38us": {
+    "plain_language_name": "Establish Governance Bodies",
+    "plain_language_description": "Once the overall governance design is agreed, the actual boards and committees have to be brought into existence. That means appointing members, giving each body its charter, and agreeing when and how often it meets. The work is done when each body is ready to hold its first scheduled session.",
+    "business_purpose": "It converts a paper design of who governs what into real, functioning bodies, so the enterprise has forums where decisions are genuinely made and recorded.",
+    "practical_context": "Runs when a governance system design has been committed: the governing board and strategy function charter each new body, name its members, and set its meeting rhythm so it can convene on a regular cycle.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "With the governance design approved, a strategy function lead works through the appointment list, the governing board confirms each new committee's charter and membership, and calendar invites go out for the bodies' recurring meetings."
+    }
+  },
+  "processes:process-ge-build-rx7kt5": {
+    "plain_language_name": "Establish Risk and Control Apparatus",
+    "plain_language_description": "With the risk framework design approved, the practical machinery has to be put in place. Teams stand up the risk registers where exposures will be logged, install the monitoring tools that watch them, and draw the reporting lines that carry risk information upward. When this is done, the enterprise is equipped to start managing risk day to day.",
+    "business_purpose": "It gives the organisation the concrete tools and routes, from registers to monitoring to reporting lines, that turn risk plans into working practice.",
+    "practical_context": "Encountered at the point the risk framework design is approved for build: the strategy function and governing board oversee delivery of the registers, monitoring tooling, and reporting lines before routine risk operations begin.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "After the design sign-off, a strategy function coordinator sets up the risk registers, arranges access to the monitoring tools, and confirms with the governing board who reports what to whom each period."
+    }
+  },
+  "processes:process-ge-conceive-e6jx6s": {
+    "plain_language_name": "Develop Governance Strategy",
+    "plain_language_description": "When the enterprise takes on a new mandate or the ground shifts beneath it, the board needs a fresh answer to how the business will be governed. Here the strategy function works with the board to define what the mandate covers, the posture the enterprise will take, and the policy direction that follows. The result is a committed strategy document the rest of the governance work can build on.",
+    "business_purpose": "It sets the direction for everything downstream: without an agreed governance strategy, bodies, policies, and oversight would be designed against unclear aims.",
+    "practical_context": "Comes into play when a new mandate is established, an existing one is reframed, or a regulatory or strategic shift forces board-level realignment; the governing board and strategy function lead it with input from the operations function.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "After a regulatory shift forces a rethink, a strategy function director drafts the governance strategy covering mandate bounds, posture, and policy direction, and the governing board debates and commits it at a strategy session."
+    }
+  },
+  "processes:process-ge-conceive-6qnkhh": {
+    "plain_language_name": "Set the Direction for the Risk Framework",
+    "plain_language_description": "Before any risk framework can be built, leadership has to say how much risk the enterprise is willing to carry. This work sets that line: how ambitious or cautious the organisation will be, how much variation is tolerable, and what overall stance governance will take toward risk. Those choices then steer everyone who designs the detailed framework.",
+    "business_purpose": "It gives the enterprise a shared risk appetite and limits, so later risk decisions are made within an agreed posture instead of case by case.",
+    "practical_context": "Arises when a governance mandate calls for an enterprise risk posture: the governing board and strategy function, with the operations function, agree appetite, tolerance bands, and posture before detailed design begins.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Ahead of a new mandate, the strategy function prepares options for risk appetite and tolerance bands, and the governing board debates and picks the posture that will guide the risk framework's design."
+    }
+  },
+  "processes:process-ge-conceive-xp6fye": {
+    "plain_language_name": "Initiate Policy and Charter",
+    "plain_language_description": "When a new strategy, regulation, or reorganisation calls for a fresh policy regime, someone has to put the first draft on the table. This work produces an opening policy and charter document: what it will cover, who will hold authority, and who gets to decide what. It is deliberately a starting position, rough enough for the design work that follows to refine.",
+    "business_purpose": "It gets governance drafting moving early, so scope, authority, and decision rights are on paper and can be challenged and sharpened before anything is built.",
+    "practical_context": "Encountered when a new governance strategy, a new regulatory requirement, or a reorganisation makes a fresh policy regime necessary; the governing board and strategy function take the lead, with the operations function contributing, and hand the committed draft to design.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Following a reorganisation, a strategy function lead sketches the proposed scope, authority, and decision rights for the new policy regime, and the governing board reviews and commits the initial document for further design."
+    }
+  },
+  "processes:process-ge-design-zbrg8b": {
+    "plain_language_name": "Design Governance System",
+    "plain_language_description": "With the strategy agreed, the next question is what governing machinery will carry it. Here the teams work out which boards and committees are needed, what authority each one is delegated, and who holds which decision rights. The finished design is a blueprint that tells the establishment work exactly what bodies to stand up.",
+    "business_purpose": "It translates strategic intent into a concrete structure of bodies, authority delegations, and decision rights, so accountability for governing is clear before anything is created.",
+    "practical_context": "Runs once a governance strategy has been committed: the strategy function drafts the structure of bodies, delegations, and decision rights, and the governing board signs the design off for establishment.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "A strategy function architect maps out which committees the new strategy needs, what each may decide, and what stays with the governing board, then walks the board through the delegations for approval."
+    }
+  },
+  "processes:process-ge-design-kpsj5b": {
+    "plain_language_name": "Design Policies and Controls",
+    "plain_language_description": "Once the governance structure exists on paper, the actual rules and safeguards need shaping. This work spells out the policy documents that will be issued, the control objectives each must meet, and the compliance regime that ties them together. The committed design then guides whoever builds and runs the policies day to day.",
+    "business_purpose": "It defines the rules and safeguards before they are written, so the enterprise ends up with coherent, testable policies rather than a pile of disconnected documents.",
+    "practical_context": "Follows the governance system design: with the structure agreed, the strategy function and governing board shape the policy artefacts, control objectives, and compliance regime that will drive build and daily operation.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "With the committee structure agreed, a strategy function policy lead drafts the set of policy artefacts and their control objectives, and the governing board checks each objective against the compliance regime before the design is committed."
+    }
+  },
+  "processes:process-ge-design-pqkvdc": {
+    "plain_language_name": "Design Risk Framework",
+    "plain_language_description": "The agreed risk direction now has to become a working framework. This means settling the taxonomy, the shared vocabulary for the kinds of risk the enterprise faces, plus the scales used to rate them, and how the framework plugs into everyday governance. What emerges is the detailed blueprint the build stage will follow.",
+    "business_purpose": "It turns appetite and posture into a usable framework, so risks across the enterprise get described, rated, and governed the same way.",
+    "practical_context": "Begins when the risk framework direction is committed: the strategy function and governing board, with the operations function, work the taxonomy, assessment scales, and governance integration into a design that hands over to the build stage.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Working from the board's chosen risk appetite, a strategy function analyst lays out the risk categories, the rating scales each will use, and where risk reporting slots into existing governance routines."
+    }
+  },
+  "processes:process-ge-improve-u3g5dh": {
+    "plain_language_name": "Improve Policy and Control Framework",
+    "plain_language_description": "When audits turn up weaknesses or policies fall short of practice, this work closes the loop. The teams measure where the gaps are, revise the standards and controls that need tightening, and track whether the overall compliance position actually gets stronger. It is how the rulebook keeps pace with reality.",
+    "business_purpose": "It keeps policies and controls fit for purpose, so weaknesses found in audits translate into firmer standards instead of recurring problems.",
+    "practical_context": "Surfaces whenever audit findings or policy gaps appear: the audit function raises what it found, and the strategy function measures the gaps and updates the standards until the compliance posture is stronger.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "After an audit flags inconsistent approvals, the audit function walks the strategy function through the findings, the gaps are measured against the standards, and the affected controls are tightened and reissued."
+    }
+  },
+  "processes:process-ge-improve-mgkw59": {
+    "plain_language_name": "Review Governance Effectiveness",
+    "plain_language_description": "Boards and committees that meet on schedule are not automatically governing well. On a periodic basis, this work asks how well the governance setup is actually performing: what the measures show, what lessons the recent period taught, and what should change. Findings and recommendations go back to the governance bodies and into the next round of design and operating choices.",
+    "business_purpose": "It holds the governance system itself up for scrutiny, so lessons learned improve how the enterprise is governed rather than being lost between cycles.",
+    "practical_context": "Runs periodically once governance bodies have been operating for a while: the audit function and strategy function measure governance performance against the strategy and hand recommendations to the governance bodies.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "At the end of the governance year, the audit function and a strategy function lead compile what the measures show about each body's performance and present the lessons and recommendations for the next cycle."
+    }
+  },
+  "processes:process-ge-improve-axtq3b": {
+    "plain_language_name": "Score Audit Findings",
+    "plain_language_description": "An audit report full of findings is only useful once those findings are weighed. Here each one is graded for how severe it is and whether it keeps coming back, then measured against the relevant standards. The patterns and quality trends that emerge are reported to the governance bodies so they can see where trouble concentrates.",
+    "business_purpose": "Consistent scoring turns raw audit findings into comparable signals, so the governance bodies can tell serious, repeated problems from one-off noise and act on the trends.",
+    "practical_context": "Follows the delivery of an audit report with findings: the audit function grades each finding for severity and recurrence while the strategy function benchmarks them against standards and reports the quality trends.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "When the latest audit report lands, an audit function analyst rates each finding for severity and checks whether it recurred from last time, and the strategy function rolls the scores into a trend report for the governance bodies."
+    }
+  },
+  "processes:process-ge-operate-hxxyc9": {
+    "plain_language_name": "Audit Policy Compliance",
+    "plain_language_description": "Having policies on the shelf proves little; the enterprise needs to know people actually follow them. On a regular schedule this work examines practice against the codified policies, records where behaviour falls short, and recommends what should change. Every non-compliance is then followed up until it has been put right.",
+    "business_purpose": "It gives the governing bodies independent evidence of whether policy is being honoured, and it makes sure any shortfall is corrected rather than merely noted.",
+    "practical_context": "Periodic, once policies are codified and bodies are operating: the compliance function and risk function carry out the audits and deliver findings, recommendations, and follow-up actions to the appropriate governance body.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "In the quarterly review round, a compliance function auditor samples decisions against the codified policies, the risk function helps weigh the exposures found, and the report with follow-up actions goes to the governing board."
+    }
+  },
+  "processes:process-ge-operate-zwaes5": {
+    "plain_language_name": "Conduct Assurance Review",
+    "plain_language_description": "Each time an assurance cycle comes round or a review is mandated, this work examines the evidence that things are being done properly. Reviewers compare what is actually happening against the standards, write up what they find, and keep the bar for review quality itself steady. The findings give leadership an honest read on where assurance stands.",
+    "business_purpose": "It supplies the repeated, standards-based checking that lets leadership trust the controls and know review quality is being maintained over time.",
+    "practical_context": "Encountered whenever an assurance cycle comes due or an audit mandate arrives: the compliance function and risk function gather and measure the evidence, with findings reported to the governing board.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "At the start of the assurance cycle, a compliance function reviewer pulls the evidence pack, measures it against the standards with help from the risk function, and issues the findings report for the governing board."
+    }
+  },
+  "processes:process-ge-operate-tpenm6": {
+    "plain_language_name": "Operate Enterprise Risk Oversight",
+    "plain_language_description": "On a recurring cycle, this work takes the temperature of enterprise risk. The risk function runs the scheduled reviews, brings the exposures that have built up out into the open, and pairs each significant one with a mitigation. What surfaces goes straight to the governance bodies so they can steer.",
+    "business_purpose": "It keeps risk visible between reporting moments, so exposures are caught and mitigated on a rhythm rather than discovered late.",
+    "practical_context": "Runs each time a risk review cycle boundary is reached: the risk function executes the reviews with the compliance function alongside, and exposures and mitigations are laid before the governance bodies.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "When the quarterly risk cycle closes, the risk function leads the review sessions, flags the exposures that have grown, and brings proposed mitigations to the governing board for decision."
+    }
+  },
+  "processes:process-ge-operate-hs7wf3": {
+    "plain_language_name": "Operate Governance Oversight",
+    "plain_language_description": "This is the routine running of the governance machine once it exists. Board and committee meetings happen when they should, the papers are there, risks are raised and dealt with as they arise, and the decisions taken are written down. It is the steady drumbeat that keeps oversight alive between bigger redesigns.",
+    "business_purpose": "A governance structure only matters if it actually runs; this work makes oversight a regular fact of enterprise life, with decisions made and recorded on schedule.",
+    "practical_context": "Day to day, once bodies are chartered and policies codified: the governing board and its committees convene on their cycles while the risk function and compliance function keep risk items and decision records moving.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "Ahead of the monthly committee cycle, the risk function loads the standing risk items, the compliance function confirms open actions, and the governing board takes and records its decisions in the minutes."
+    }
+  },
+  "processes:process-ge-retire-mjq5hg": {
+    "plain_language_name": "Wind Down Governance on a Regulator or Court Order",
+    "plain_language_description": "When a regulator or court orders the enterprise to dissolve or give up its authorisation, governance cannot simply stop; it has to be unwound in an orderly, supervised way. The remaining bodies shrink to the quorum the order allows, the policy instruments are retired one by one, and the required statutory dissolution filings go in. Custodians are named for the records that must be retained, and the process ends with dissolution, surrender of the authorisation, or the court's decree entered.",
+    "business_purpose": "It ensures the enterprise exits lawfully and traceably, satisfying the regulator or court that every governance duty was closed out under supervision rather than abandoned.",
+    "practical_context": "Rare and exceptional, triggered only by a binding regulator or court order such as a mandatory wind-down, revocation, or receivership; the operations function and finance function execute the steps under the industry regulator's supervision.",
+    "worked_example": {
+      "agent_type": "human",
+      "narrative": "After a cease-and-desist order arrives, the operations function cuts the governing bodies back to the permitted wind-down quorum, the finance function submits the statutory dissolution filings, and the industry regulator watches each step through to decree entry."
+    }
+  }
+}

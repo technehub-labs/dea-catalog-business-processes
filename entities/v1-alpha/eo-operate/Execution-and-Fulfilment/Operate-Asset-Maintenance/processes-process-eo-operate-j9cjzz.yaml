@@ -124,3 +124,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Operate Asset Maintenance L2 process within the processes:pc-eo-operate-ydqb96 Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Run Asset Maintenance'
+plain_language_description: 'This is the day-to-day upkeep of the equipment the operation relies on. Work is scheduled to catch wear before it fails, and reactive jobs are handled when something breaks anyway. Completed maintenance is logged so the availability of each asset is on record.'
+business_purpose: 'It exists because installed assets degrade in use, and only steady scheduled and reactive maintenance keeps them available for the work they are there to do.'
+practical_context: 'Faced continuously wherever installed assets are in service, as scheduled maintenance slots come due and breakdowns call for reactive work. Product management steers the maintenance operation under the Enablement & Operations Process Owner.'
+worked_example:
+  agent_type: human
+  narrative: 'A product manager reviews the week''s maintenance schedule, brings forward the service on a machine that has been struggling, and checks that the completed work has been recorded against the asset''s availability.'

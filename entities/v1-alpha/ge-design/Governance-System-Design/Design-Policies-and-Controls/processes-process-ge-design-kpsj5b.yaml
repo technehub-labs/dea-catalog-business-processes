@@ -162,3 +162,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Design Policies and Controls L2 process within the processes:pc-ge-design-3f2gjr Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Design Policies and Controls'
+plain_language_description: 'Once the governance structure exists on paper, the actual rules and safeguards need shaping. This work spells out the policy documents that will be issued, the control objectives each must meet, and the compliance regime that ties them together. The committed design then guides whoever builds and runs the policies day to day.'
+business_purpose: 'It defines the rules and safeguards before they are written, so the enterprise ends up with coherent, testable policies rather than a pile of disconnected documents.'
+practical_context: 'Follows the governance system design: with the structure agreed, the strategy function and governing board shape the policy artefacts, control objectives, and compliance regime that will drive build and daily operation.'
+worked_example:
+  agent_type: human
+  narrative: 'With the committee structure agreed, a strategy function policy lead drafts the set of policy artefacts and their control objectives, and the governing board checks each objective against the compliance regime before the design is committed.'

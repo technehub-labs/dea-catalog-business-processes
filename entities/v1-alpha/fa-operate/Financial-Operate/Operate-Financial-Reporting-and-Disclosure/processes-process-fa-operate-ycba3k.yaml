@@ -137,3 +137,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate Financial Reporting and Disclosure (operate stage, core process). Landed by CR-BP-21e.1 from the FinanceAndAccounting register v2.'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Operate Financial Reporting and Disclosure'
+plain_language_description: 'When a reporting or disclosure milestone arrives, this process produces the financial statements and the supporting narrative that go with it. Statements are drawn up, footnotes written, and disclosures assembled for delivery. The finished package reaches internal and external stakeholders alike, all reading from the same numbers.'
+business_purpose: 'It exists so everyone entitled to the organisation''s financial results, inside and outside, receives complete statements, footnotes, and disclosures at each milestone.'
+practical_context: 'It runs whenever a reporting or disclosure milestone arrives, with the compliance function producing the statements, footnotes, and disclosures for internal and external stakeholders.'
+worked_example:
+  agent_type: human
+  narrative: 'As the reporting milestone arrives, the compliance function finalises the statements, completes the footnotes, and assembles the disclosures for delivery to internal and external stakeholders.'

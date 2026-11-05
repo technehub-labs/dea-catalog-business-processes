@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-pv-desi
 
 This is a **Business Process** (level L2), named **Design Packaging and Configuration**, currently **candidate (yellow)**. It is part of the **Proposition and Packaging Design** process context, domain `pv`, lifecycle stage Design. Its canonical ID is `processes:process-pv-design-a4c76s`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+This work decides how a designed proposition will be packaged and configured for the different market segments it must serve. Product management works out the packaging options and the configuration choices each segment needs, so the same underlying proposition can be offered appropriately to different audiences. The designs are then ready for product development.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so the offering fits its buyers: segment-appropriate packaging and configuration let one designed proposition serve different markets without being redesigned each time.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered during proposition design, when product management must tailor packaging and configuration to the segments identified in the design; the output feeds straight into product development.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Product management sketches the packaging tiers for the new offering, a lighter configuration for smaller customers and a fuller one for larger accounts, and checks each against the segment profiles. The agreed options are documented and passed to product development.
 
 ## 5. Header and Identity Table (generated)
 
@@ -74,6 +74,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[2] | no | array of 2 item(s) |
 | `definition` | string | no | Operate the Design Packaging and Configuration L2 process within the processes:pc-pv-design-8dhwpn Cell Charter. See … |
+| `plain_language_name` | string | no | Design Packaging and Configuration |
+| `plain_language_description` | string | no | This work decides how a designed proposition will be packaged and configured for the different market segments it must … |
+| `business_purpose` | string | no | It exists so the offering fits its buyers: segment-appropriate packaging and configuration let one designed proposition … |
+| `practical_context` | string | no | Encountered during proposition design, when product management must tailor packaging and configuration to the segments … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

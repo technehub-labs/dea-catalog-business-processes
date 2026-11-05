@@ -134,3 +134,17 @@ outputs:
 # CR-BP-225 completions (2026-11-04): promoted verbatim from the record's
 # documented description (CR-BP-220 derivation method; no invention).
 definition: 'Operate the Sense Environmental Signals L2 process within the processes:pc-sd-operate-5cs5ee Cell Charter. See trigger and outcome for the bounded work this …'
+
+
+# CR-BP-233 Wave A (2026-11-05): plain-language fields authored from the
+# record's own documented content (CR-BP-230 S2; no invention; MECE against
+# the formal definition). Rendered in README Part I by the CR-BP-231
+# profile v3 generator.
+
+plain_language_name: 'Sense Environmental Signals'
+plain_language_description: 'This work is how the strategy stays aware of the world outside. The strategy function continuously gathers the signals that could mean drift, disruption, or opportunity, filters out the noise, and routes what matters to the strategic review cycle. Direction-setting downstream never has to rely on stale assumptions about the environment.'
+business_purpose: 'It acts as the strategy''s early-warning sense: signals about drift, disruption, and opportunity are caught, filtered, and routed while the enterprise can still respond rather than react late.'
+practical_context: 'Continuous while the strategy is operating; the strategy function collects and filters environmental signals as they emerge and routes the significant ones into the review cycle.'
+worked_example:
+  agent_type: human
+  narrative: 'The strategy function spots a fresh signal in its regular environmental sweep, filters it against the noise, and routes it into the next strategic review session with a short note on what it could mean for the direction.'

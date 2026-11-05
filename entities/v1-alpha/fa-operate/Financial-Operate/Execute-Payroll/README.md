@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-fa-oper
 
 This is a **Business Process** (level L2), named **Execute Payroll**, currently **candidate (yellow)**. It is part of the **Accounting, Reporting, and Treasury Operation** process context, domain `fa`, lifecycle stage Operate. Its canonical ID is `processes:process-fa-operate-zpmxzp`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Every payroll cycle, this process pays people. It issues the compensation owed, applies the withholdings that must be taken, and produces the statutory filings that go with each cycle. Run well it is invisible; run late or wrong, everyone notices.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It exists so people are paid the right amount on time every cycle, with the required withholdings taken and the statutory filings produced as expected.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+The work runs at each payroll cycle boundary, with the compliance function seeing that compensation, withholdings, and statutory filings are produced every time.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* When the payroll cycle boundary is reached, the compliance function checks the compensation figures, confirms the withholdings, and completes the statutory filings so everyone is paid correctly for the period.
 
 ## 5. Header and Identity Table (generated)
 
@@ -72,6 +72,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Execute Payroll (operate stage, core process). Landed by CR-BP-21e.1 from the FinanceAndAccounting register v2. |
+| `plain_language_name` | string | no | Execute Payroll |
+| `plain_language_description` | string | no | Every payroll cycle, this process pays people. It issues the compensation owed, applies the withholdings that must be … |
+| `business_purpose` | string | no | It exists so people are paid the right amount on time every cycle, with the required withholdings taken and the … |
+| `practical_context` | string | no | The work runs at each payroll cycle boundary, with the compliance function seeing that compensation, withholdings, and … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)

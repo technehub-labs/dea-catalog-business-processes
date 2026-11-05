@@ -8,19 +8,19 @@ This directory hosts the canonical Process record for `processes:process-ge-conc
 
 This is a **Business Process** (level L2), named **Initiate Policy and Charter**, currently **candidate (yellow)**. It is part of the **Strategy and Governance Conception** process context, domain `ge`, lifecycle stage Conceive. Its canonical ID is `processes:process-ge-conceive-xp6fye`.
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+When a new strategy, regulation, or reorganisation calls for a fresh policy regime, someone has to put the first draft on the table. This work produces an opening policy and charter document: what it will cover, who will hold authority, and who gets to decide what. It is deliberately a starting position, rough enough for the design work that follows to refine.
 
 ## 2. Why It Matters (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+It gets governance drafting moving early, so scope, authority, and decision rights are on paper and can be challenged and sharpened before anything is built.
 
 ## 3. Where You'd Encounter It (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+Encountered when a new governance strategy, a new regulatory requirement, or a reorganisation makes a fresh policy regime necessary; the governing board and strategy function take the lead, with the operations function contributing, and hand the committed draft to design.
 
 ## 4. Worked Example (provided)
 
-_(plain-language narrative to be authored in the two-layer documentation waves, CR-BP-233..236)_
+*Example (carried out by a person):* Following a reorganisation, a strategy function lead sketches the proposed scope, authority, and decision rights for the new policy regime, and the governing board reviews and commits the initial document for further design.
 
 ## 5. Header and Identity Table (generated)
 
@@ -75,6 +75,11 @@ _(plain-language narrative to be authored in the two-layer documentation waves, 
 | `inputs` | array[1] | no | array of 1 item(s) |
 | `outputs` | array[1] | no | array of 1 item(s) |
 | `definition` | string | no | Operate the Initiate Policy and Charter L2 process within the processes:pc-ge-conceive-b5xwpd Cell Charter. See trigger … |
+| `plain_language_name` | string | no | Initiate Policy and Charter |
+| `plain_language_description` | string | no | When a new strategy, regulation, or reorganisation calls for a fresh policy regime, someone has to put the first draft … |
+| `business_purpose` | string | no | It gets governance drafting moving early, so scope, authority, and decision rights are on paper and can be challenged … |
+| `practical_context` | string | no | Encountered when a new governance strategy, a new regulatory requirement, or a reorganisation makes a fresh policy … |
+| `worked_example` | object | no | object: agent_type, narrative |
 
 
 ## 9. Hierarchical Decomposition (Path Scheme) (generated)
